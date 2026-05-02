@@ -35,43 +35,43 @@ personas: []
 provider_name: Perforce
 provider_slug: perforce
 search_terms:
-- transition a review to a new state (approve, reject, etc.)
+- get review
 - get details of a specific swarm project
-- create comment
-- create review
-- list reviews
-- get project
-- list activity stream entries
-- list activity
-- code reviews
 - swarm projects
+- create a new code review from a changelist
+- create review
+- review comments
 - transition review state
-- collaboration
-- get version
-- review details
+- list activity
+- list reviews
+- create comment
+- delete project
 - list comments
+- list activity entries
+- get swarm server version information
+- delete a swarm project
 - list code reviews
 - create a new code review
-- code review
-- create a new code review from a changelist
-- delete a swarm project
-- list swarm projects
-- add a comment to a review or changelist
-- get swarm server version information
-- list projects
-- delete project
-- devops
-- activity stream
-- list activity entries
-- list comments on reviews and changelists
-- get review
-- perforce
-- update a review description or author
-- list code reviews in helix swarm
-- get details of a specific code review
-- review comments
-- get review details
 - update review
+- transition a review to a new state (approve, reject, etc.)
+- add a comment to a review or changelist
+- code reviews
+- get review details
+- activity stream
+- get version
+- list projects
+- list activity stream entries
+- list swarm projects
+- update a review description or author
+- get details of a specific code review
+- code review
+- list code reviews in helix swarm
+- review details
+- get project
+- collaboration
+- perforce
+- devops
+- list comments on reviews and changelists
 slug: code-review-collaboration
 source_filename: code-review-collaboration.yaml
 source_heading: Capability Spec

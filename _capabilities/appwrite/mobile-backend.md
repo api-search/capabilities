@@ -11,25 +11,25 @@ provider_name: Appwrite
 provider_slug: appwrite
 search_terms:
 - list project users
-- applications
-- database and file storage management
-- backend-as-a-service
-- backends
-- mobile
-- lists file storage buckets configured in the appwrite backend
-- administrator managing appwrite project users and configuration
-- appwrite
+- cloud function deployment and execution
 - list storage buckets
 - developer building ios, android, or web apps with appwrite
-- user authentication and account management
-- configure and manage a mobile app backend with appwrite
-- list databases
-- creates a new user account in the appwrite backend for a mobile app
-- cloud function deployment and execution
-- provision user
 - open source
-- developer tools
+- applications
+- appwrite
 - lists appwrite databases available in the backend project
+- provision user
+- creates a new user account in the appwrite backend for a mobile app
+- mobile
+- user authentication and account management
+- database and file storage management
+- backends
+- backend-as-a-service
+- configure and manage a mobile app backend with appwrite
+- administrator managing appwrite project users and configuration
+- lists file storage buckets configured in the appwrite backend
+- list databases
+- developer tools
 - lists all registered users in the appwrite project backend
 slug: mobile-backend
 source_filename: mobile-backend.yaml

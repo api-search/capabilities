@@ -110,72 +110,72 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- pipe management
-- sql
-- call procedure
-- create function
-- list data loading stages
-- get statement status
-- cancel a running statement
-- execute task
-- submit statement
-- create a scheduled task
-- create procedure
-- create a stage
-- create stage
-- execute a function
-- create pipe
-- create stream
-- refresh pipe
-- call a stored procedure
-- create a pipe for continuous ingestion
-- create a function
-- list pipes
-- create task
-- resume a suspended task
-- list scheduled tasks
-- list procedures
-- database
-- get a query result
-- list user defined functions
-- snowflake
-- stream management
-- get status of a submitted statement
-- list change data capture streams
-- list functions
-- data sharing
-- submit a sql statement
-- create a stream
-- refresh a pipe
-- get query result
-- suspend task
-- list files in a stage
-- create a pipe
-- create a task
-- submit sql
-- list stored procedures
-- task management
-- execute function
-- create a stored procedure
-- list stages
-- cancel statement
-- data pipelines
-- submit a sql statement for execution
-- list stage files
-- data lakes
 - list streams
-- list udfs
+- submit statement
+- list procedures
+- data lakes
+- create procedure
+- data pipelines
 - data engineering
+- create a stream
+- cancel statement
+- list files in a stage
+- list stored procedures
+- list scheduled tasks
+- snowflake
+- create a scheduled task
+- call procedure
+- list pipes
 - list tasks
-- stage management
-- resume task
-- sql statement execution
-- suspend a running task
-- create a cdc stream
+- list functions
 - data warehousing
+- stream management
+- create a stage
+- resume task
+- refresh a pipe
+- execute task
+- cancel a running statement
+- execute a function
+- create a pipe
+- create a function
+- database
+- list stage files
+- create a pipe for continuous ingestion
+- suspend task
+- execute function
+- submit a sql statement for execution
+- get query result
+- refresh pipe
+- get statement status
+- create function
+- get a query result
+- create stream
 - list data ingestion pipes
-- execute a task immediately
+- create stage
+- pipe management
+- list stages
+- get status of a submitted statement
+- resume a suspended task
+- suspend a running task
 - etl
+- list user defined functions
+- stage management
+- task management
+- list change data capture streams
+- execute a task immediately
+- call a stored procedure
+- create pipe
+- submit sql
+- sql
+- sql statement execution
+- create a task
+- data sharing
+- list data loading stages
+- create a stored procedure
+- submit a sql statement
+- create task
+- create a cdc stream
+- list udfs
 slug: data-engineering
 source_filename: data-engineering.yaml
 source_heading: Capability Spec

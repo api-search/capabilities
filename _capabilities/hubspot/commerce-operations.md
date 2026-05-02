@@ -12,59 +12,59 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- listsubscriptions
-- payments
-- hubspot archive a batch of commerce payments
-- batchcreatecommercepayments
-- hubspot update a commerce payment
-- hubspot batch create subscriptions
-- analytics
-- commerce
-- createsubscription
-- customer service
-- content
-- searchsubscriptions
-- createcommercepayment
-- searchcommercepayments
-- batcharchivecommercepayments
 - hubspot list commerce payments
-- hubspot get a subscription
-- hubspot update a batch of commerce payments
-- getcommercepaymentbyid
-- crm
-- email marketing
-- hubspot create a commerce payment
-- operations
-- hubspot create a batch of commerce payments
-- hubspot
-- listsubscriptionassociations
-- getsubscription
-- hubspot update a subscription
-- updatecommercepaymentbyid
-- marketing automation
-- updatesubscription
-- hubspot batch read subscriptions
-- hubspot list subscription associations
-- archivecommercepaymentbyid
-- batchupdatesubscriptions
-- hubspot retrieve a commerce payment
-- hubspot archive a subscription
-- batchupdatecommercepayments
-- hubspot archive a commerce payment
-- hubspot search subscriptions
+- batchcreatecommercepayments
+- searchcommercepayments
+- createcommercepayment
 - hubspot read a batch of commerce payments
-- batchreadsubscriptions
-- deletesubscription
-- hubspot create a subscription
-- subscriptions
-- batchreadcommercepayments
-- listcommercepayments
-- hubspot batch update subscriptions
-- hubspot list subscriptions
-- hubspot search commerce payments
-- sales
+- hubspot update a subscription
+- getcommercepaymentbyid
 - batchcreatesubscriptions
+- hubspot update a batch of commerce payments
+- hubspot search commerce payments
+- analytics
+- email marketing
+- sales
+- updatesubscription
+- hubspot create a subscription
+- searchsubscriptions
+- listcommercepayments
+- listsubscriptionassociations
+- hubspot archive a commerce payment
+- listsubscriptions
+- hubspot archive a subscription
+- customer service
+- hubspot retrieve a commerce payment
+- hubspot search subscriptions
+- updatecommercepaymentbyid
+- batchreadcommercepayments
 - marketing
+- hubspot create a batch of commerce payments
+- createsubscription
+- hubspot archive a batch of commerce payments
+- commerce
+- batchupdatesubscriptions
+- hubspot batch create subscriptions
+- batcharchivecommercepayments
+- deletesubscription
+- content
+- operations
+- marketing automation
+- hubspot batch read subscriptions
+- hubspot batch update subscriptions
+- batchupdatecommercepayments
+- archivecommercepaymentbyid
+- hubspot list subscription associations
+- crm
+- batchreadsubscriptions
+- subscriptions
+- getsubscription
+- hubspot
+- hubspot create a commerce payment
+- hubspot get a subscription
+- hubspot update a commerce payment
+- payments
+- hubspot list subscriptions
 slug: commerce-operations
 source_filename: commerce-operations.yaml
 source_heading: Capability Spec

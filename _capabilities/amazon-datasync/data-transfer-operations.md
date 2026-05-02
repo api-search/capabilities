@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon DataSync
 provider_slug: amazon-datasync
 search_terms:
-- migration
-- automation
-- hybrid cloud
 - storage
+- migration
+- hybrid cloud
+- automation
 - data transfer
 slug: data-transfer-operations
 source_filename: data-transfer-operations.yaml

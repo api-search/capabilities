@@ -11,48 +11,48 @@ personas: []
 provider_name: Amazon CodeBuild
 provider_slug: amazon-codebuild
 search_terms:
-- stop build
 - list report groups
-- create project
-- continuous integration and delivery pipeline management.
-- manages build infrastructure and pipelines.
-- list codebuild report groups
-- delete a codebuild project
-- get builds
-- list all codebuild projects
-- start and monitor builds
+- access build and test reports
+- list builds for a specific codebuild project
+- update an existing codebuild project configuration
+- list codebuild test and coverage reports
 - manage codebuild build projects
-- build automation
+- ci/cd
+- update project
+- build project management and build execution workflows.
+- amazon
+- stop a running codebuild build
+- Developer
+- delete a codebuild project
+- DevOps Engineer
 - continuous integration
+- start and monitor builds
+- get details about specific builds
+- automated compilation, testing, and artifact production.
+- start a new build for a codebuild project
+- delete project
+- get builds
+- testing
+- stop build
+- manages build infrastructure and pipelines.
+- aws
+- list builds
+- continuous integration and delivery pipeline management.
+- list reports
+- create project
+- get projects
+- list all codebuild projects
+- list codebuild report groups
+- start build
+- list all builds or builds for a specific project
+- runs and monitors builds for their projects.
+- list projects
 - list builds for project
 - build
-- stop a running codebuild build
-- build project management and build execution workflows.
-- list projects
-- delete project
-- list builds
-- testing
-- devops
-- access build and test reports
-- get details about specific codebuild projects
-- update project
-- ci/cd
-- list codebuild test and coverage reports
 - create a new codebuild build project
-- list all builds or builds for a specific project
-- get projects
-- get details about specific builds
-- list reports
-- update an existing codebuild project configuration
-- aws
-- runs and monitors builds for their projects.
-- DevOps Engineer
-- amazon
-- list builds for a specific codebuild project
-- automated compilation, testing, and artifact production.
-- Developer
-- start a new build for a codebuild project
-- start build
+- devops
+- get details about specific codebuild projects
+- build automation
 slug: amazon-codebuild-cicd
 source_filename: amazon-codebuild-cicd.yaml
 source_heading: Capability Spec

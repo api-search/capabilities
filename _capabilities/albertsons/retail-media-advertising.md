@@ -35,48 +35,48 @@ personas: []
 provider_name: albertsons
 provider_slug: albertsons
 search_terms:
-- analytics
-- create a new advertising campaign.
-- campaign detail retrieval.
-- grocery
-- retail
-- campaigns
-- advertising campaign management.
-- manages advertising campaigns and budgets on behalf of consumer brands advertising in the albertsons network.
-- list performance metrics
-- get campaign
-- advertising
-- list all advertising campaigns on the albertsons media collective with status, budget, and targeting details.
-- create campaign
-- generate report
-- plans and optimizes retail media campaigns, analyzes performance metrics, and generates reports for advertising clients.
-- create a new advertising campaign with budget, audience targeting, and scheduling on albertsons media collective.
-- get detailed information about a specific advertising campaign by its identifier.
-- digital advertising within retail environments, leveraging shopper purchase data for targeting.
-- performance analytics
-- albertsons
-- audience targeting segments.
-- custom performance report generation.
-- retail media
-- generate a custom performance report.
-- food
-- consumer goods
-- unified retail media advertising workflow for campaign management, audience targeting, performance analytics, and reporting.
-- audience targeting
-- generate a custom performance report for advertising campaigns with configurable dimensions, metrics, and date ranges.
-- Media Planner
-- campaign performance metrics.
-- list all advertising campaigns with status and budget details.
 - pharmacy
+- campaigns
+- unified retail media advertising workflow for campaign management, audience targeting, performance analytics, and reporting.
+- analytics
+- retail media
+- audience targeting
+- generate report
+- digital advertising within retail environments, leveraging shopper purchase data for targeting.
 - campaign creation, management, and performance optimization for brands.
-- list audiences
+- campaign performance metrics.
+- Media Planner
 - list campaigns
-- retrieve near-real-time advertising performance metrics including impressions, clicks, conversions, and return on ad spend.
-- retrieve near-real-time performance metrics.
-- Brand Manager
-- list audience segments for campaign targeting.
-- get campaign details by identifier.
 - list audience targeting segments available on albertsons media collective based on shopper purchase behavior.
+- custom performance report generation.
+- generate a custom performance report.
+- performance analytics
+- create a new advertising campaign with budget, audience targeting, and scheduling on albertsons media collective.
+- retrieve near-real-time advertising performance metrics including impressions, clicks, conversions, and return on ad spend.
+- get campaign details by identifier.
+- get campaign
+- list audience segments for campaign targeting.
+- albertsons
+- food
+- generate a custom performance report for advertising campaigns with configurable dimensions, metrics, and date ranges.
+- list all advertising campaigns on the albertsons media collective with status, budget, and targeting details.
+- advertising campaign management.
+- audience targeting segments.
+- advertising
+- get detailed information about a specific advertising campaign by its identifier.
+- manages advertising campaigns and budgets on behalf of consumer brands advertising in the albertsons network.
+- grocery
+- Brand Manager
+- create a new advertising campaign.
+- list audiences
+- list all advertising campaigns with status and budget details.
+- consumer goods
+- campaign detail retrieval.
+- plans and optimizes retail media campaigns, analyzes performance metrics, and generates reports for advertising clients.
+- retail
+- retrieve near-real-time performance metrics.
+- create campaign
+- list performance metrics
 slug: retail-media-advertising
 source_filename: retail-media-advertising.yaml
 source_heading: Capability Spec

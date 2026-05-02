@@ -50,46 +50,46 @@ provider_name: Google Cloud Platform
 provider_slug: google-cloud-platform
 search_terms:
 - create a project
-- create project
-- get project details
-- api management
-- delete a project
-- get project
-- search projects
-- create folder
-- list folders under a parent
-- list folders
-- get folder
-- google cloud
-- folder management
-- update a project
-- create tag key
-- project management
-- delete a folder
-- resource management
-- governance
-- get organization
-- search for organizations
-- create a folder
-- list projects
-- delete project
 - get folder details
+- google cloud
 - update project
-- infrastructure
-- list tag keys for resource tagging
-- list tag keys
-- create a new google cloud project
-- create a new tag key
-- get organization details
-- single project operations
-- delete folder
+- get organization
+- get folder
+- create a folder
 - organization operations
-- delete a google cloud project
-- search organizations
-- cloud computing
+- delete folder
+- folder management
+- create a new tag key
+- api management
+- create tag key
+- infrastructure
+- delete project
 - platform as a service
-- list google cloud projects under a parent
 - search for projects matching a query
+- list tag keys
+- delete a google cloud project
+- cloud computing
+- search projects
+- search for organizations
+- resource management
+- create project
+- single project operations
+- list folders
+- list google cloud projects under a parent
+- list folders under a parent
+- list tag keys for resource tagging
+- delete a folder
+- project management
+- list projects
+- get organization details
+- get project details
+- search organizations
+- update a project
+- get project
+- create folder
+- governance
+- create a new google cloud project
+- delete a project
 slug: resource-hierarchy-management
 source_filename: resource-hierarchy-management.yaml
 source_heading: Capability Spec

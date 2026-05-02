@@ -35,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- get historical end-of-day data
-- list universes
-- search instruments
-- reference data
-- bloomberg
-- get catalog
-- list available bloomberg data catalogs
-- list catalogs
-- field list management
-- get reference data
-- list distributions
-- list security universes
-- reference data access
-- market data
-- financial data
-- get reference data for securities via http api
+- list field lists for data requests
+- trading
 - get data catalog details
-- create a bloomberg data request
+- list completed data distributions
 - list available data catalogs
+- data catalog browsing
+- market data
+- portfolio management
+- search instruments
 - get historical data for securities
 - order management
-- trading
-- get historical data
-- security universe management
-- list completed data distributions
-- list field lists for data requests
-- search available bloomberg data fields
-- portfolio management
-- create a security universe for data requests
 - get reference data for securities
-- get intraday bar data
+- list security universes
+- create universe
 - get intraday bars
+- reference data access
+- list universes
+- create a bloomberg data request
+- bloomberg
 - financial analytics
+- list distributions
+- get historical end-of-day data
+- create a security universe for data requests
+- historical data access
+- create data request
+- list catalogs
+- get catalog
+- financial data
 - data distributions
 - search fields
+- get historical data
 - list field lists
-- create universe
+- reference data
+- get reference data for securities via http api
+- get reference data
 - search for securities and instruments
-- create data request
-- historical data access
-- data catalog browsing
+- field list management
+- search available bloomberg data fields
+- list available bloomberg data catalogs
+- get intraday bar data
+- security universe management
 slug: market-data-and-analytics
 source_filename: market-data-and-analytics.yaml
 source_heading: Capability Spec

@@ -58,56 +58,56 @@ personas: []
 provider_name: Salesforce Marketing Cloud
 provider_slug: salesforce-marketing-cloud
 search_terms:
-- update an existing journey specification
-- create journey
-- digital marketing
-- publish a journey to activate customer entry
-- update journey
-- delete a contact from marketing cloud
-- retrieve a contact by contact key
-- list journeys
-- attribute set definitions
-- single journey operations
-- journey publishing
-- search contacts
-- delete journey
-- list attribute sets
-- email marketing
-- create a new customer journey
-- list customer journeys with filtering and pagination
-- create contacts
-- list all journeys
-- customer journey
-- create one or more contacts in marketing cloud
-- email
-- create one or more contacts
-- personalization
-- marketing automation
-- contact search
-- delete a contact
-- retrieve a journey by id
-- automation
-- delete contact
-- update a contact
-- get a journey
-- update a journey
-- contact management
-- publish a journey
-- get a contact
-- single contact operations
-- search contacts by criteria
-- get contact
-- update contact
-- search for contacts using filter criteria
-- salesforce
-- publish journey
 - update an existing contact's attributes
-- get journey
+- contact search
+- create journey
+- email marketing
+- single contact operations
+- contact management
+- delete a contact
 - list all contact attribute set definitions
-- create a journey
-- delete a journey
+- list customer journeys with filtering and pagination
+- update a journey
+- list all journeys
+- delete journey
+- customer journey
+- delete a contact from marketing cloud
+- single journey operations
+- search for contacts using filter criteria
+- get a contact
+- publish journey
+- retrieve a journey by id
+- search contacts by criteria
+- email
+- attribute set definitions
+- get journey
+- publish a journey to activate customer entry
 - journey management
+- create contacts
+- publish a journey
+- retrieve a contact by contact key
+- digital marketing
 - marketing
+- get contact
+- create a journey
+- create a new customer journey
+- update an existing journey specification
+- personalization
+- create one or more contacts in marketing cloud
+- marketing automation
+- delete contact
+- journey publishing
+- automation
+- salesforce
+- update journey
+- update contact
+- create one or more contacts
+- update a contact
+- list attribute sets
+- search contacts
+- get a journey
+- list journeys
+- delete a journey
 slug: marketing-automation
 source_filename: marketing-automation.yaml
 source_heading: Capability Spec

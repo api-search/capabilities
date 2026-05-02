@@ -10,8 +10,8 @@ provider_name: BJ's Wholesale Club
 provider_slug: bjs-wholesale-club
 search_terms:
 - membership
-- wholesale
 - retail
+- wholesale
 - ecommerce
 slug: bjs-wholesale-club
 source_filename: bjs-wholesale-club.yaml

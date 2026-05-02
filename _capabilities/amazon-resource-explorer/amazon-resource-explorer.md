@@ -21,19 +21,19 @@ personas: []
 provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
-- amazon resource explorer resources
-- cloud operations
-- list resources
-- aws cloud resource management
-- aws
-- inventory
 - list amazon resource explorer resources
-- discovery
-- amazon resource explorer
+- amazon resource explorer resources
+- aws cloud resource management
 - automation workflow for amazon resource explorer
-- operations
 - resource management
+- cloud operations
+- operations
+- discovery
+- inventory
+- amazon resource explorer
+- aws
 - engineer managing amazon resource explorer resources
+- list resources
 slug: amazon-resource-explorer
 source_filename: amazon-resource-explorer.yaml
 source_heading: Capability Spec

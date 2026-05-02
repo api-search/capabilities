@@ -54,56 +54,56 @@ personas: []
 provider_name: 1Factory
 provider_slug: 1factory
 search_terms:
-- analytics
-- quality
-- manage part master records and assembly relationships.
-- Quality Engineer
 - list capas
-- list part masters
-- list ncrs
+- manufacturing, receiving, supplier, and customer inspections.
+- analytics
+- list all manufacturing first article inspections.
 - list all manufacturing inspections.
 - Supplier Quality Manager
-- monitors manufacturing inspections and work order quality status
-- supplier qualification and performance management
-- list all non-conformance reports for quality issue tracking.
-- supplier management and qualification tracking.
+- list all corrective and preventive actions.
+- Production Manager
+- manage part master records and assembly relationships.
 - quality management system records including ncrs, capas, and complaints.
 - list manufacturing inspections
+- create or update a part master entry.
+- list all supplier records.
+- list fai manufacturing
+- quality management system records
+- quality
+- suppliers
+- list all suppliers.
+- list suppliers
+- list receiving inspections
+- create a new manufacturing inspection record.
+- list all quality complaints from customers.
+- monitoring
+- create or update a part master record.
+- manages supplier qualifications, receiving inspections, and supplier capas
+- list all quality complaints.
 - end-to-end quality management workflow covering inspections, fai, suppliers, and qms
-- manufacturing
-- list all non-conformance reports.
+- Quality Engineer
+- create part master
+- supplier management and qualification tracking.
+- list part masters
+- list ncrs
 - create manufacturing inspection
+- manages inspection plans, reviews ncrs/capas, and tracks quality metrics
+- monitors manufacturing inspections and work order quality status
+- all types of quality inspections (manufacturing, receiving, supplier, customer)
+- part master data and inspection planning
+- data collection
+- manufacturing
+- list all manufacturing inspections with optional filters.
+- list all part masters in the 1factory account.
+- list all part master records in the 1factory account.
+- inspections
 - list complaints
 - first article inspection records.
-- list all quality complaints from customers.
-- suppliers
-- manages inspection plans, reviews ncrs/capas, and tracks quality metrics
-- list fai manufacturing
-- list all suppliers.
-- list all supplier records.
-- create or update a part master entry.
-- list all quality complaints.
-- list all part master records in the 1factory account.
-- part master data and inspection planning
-- list all manufacturing first article inspections.
-- monitoring
-- create a new manufacturing inspection record.
-- list manufacturing fai
-- all types of quality inspections (manufacturing, receiving, supplier, customer)
-- manages supplier qualifications, receiving inspections, and supplier capas
-- list all corrective and preventive actions.
-- list receiving inspections
-- create part master
-- list suppliers
-- quality management system records
-- list all part masters in the 1factory account.
-- data collection
-- inspections
-- manufacturing, receiving, supplier, and customer inspections.
-- create or update a part master record.
-- list all manufacturing inspections with optional filters.
-- Production Manager
+- list all non-conformance reports for quality issue tracking.
 - list all receiving inspections.
+- supplier qualification and performance management
+- list all non-conformance reports.
+- list manufacturing fai
 slug: 1factory-quality-management
 source_filename: 1factory-quality-management.yaml
 source_heading: Capability Spec

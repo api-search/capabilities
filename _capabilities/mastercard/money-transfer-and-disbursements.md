@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get conversion rate
-- payments
-- create a funding transaction via mastercard send
-- verify account eligibility for mastercard send
-- mastercard send
-- mastercard
-- get currency conversion rate
+- p2p transfers
+- get currency conversion rate for cross-border transactions
+- cross-border
+- create a disbursement
 - process direct transaction
 - verify send account
-- financial services
-- disbursement transactions
 - money transfer
-- create disbursement
-- validate account details before transfer
-- validate account
-- create a disbursement
-- cross-border payment processing
-- fraud detection
-- currency conversion rates
-- p2p transfers
-- create cross border payment
-- cross-border
-- create p2p transfer
-- get account information for a send recipient
-- credit cards
-- create a cross-border international payment
-- create funding
-- get currency conversion rate for cross-border transactions
+- create a cross-border payment
+- create a funding transaction via mastercard send
+- get currency conversion rate
 - create a disbursement to send money to a recipient
+- get account information for a send recipient
+- mastercard send
+- process a direct service transaction
+- cross-border payment processing
+- get conversion rate
 - digital identity
+- currency conversion rates
+- disbursement transactions
+- create a person-to-person transfer
+- disbursements
+- create funding
+- funding transactions
+- mastercard
+- validate account
+- credit cards
+- fraud detection
+- financial services
+- create a cross-border international payment
+- create p2p transfer
+- validate account details before transfer
+- verify account eligibility for mastercard send
 - get account info
+- create disbursement
+- create a person-to-person money transfer
 - create a funding transaction
 - open banking
-- disbursements
-- create a person-to-person money transfer
-- create a person-to-person transfer
-- create a cross-border payment
-- funding transactions
-- process a direct service transaction
+- payments
+- create cross border payment
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

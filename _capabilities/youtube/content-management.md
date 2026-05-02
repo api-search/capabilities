@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- playlists
-- list captions
-- delete caption
-- delete a video
-- google
-- update video metadata
-- update playlist
-- manage youtube playlists
-- manage items within playlists
-- manage video captions
-- upload a new video to youtube
 - media
-- create playlist
-- upload video
-- update video
+- update a caption track
+- manage youtube videos
+- delete a video
 - list videos
-- list videos matching criteria
-- list playlist items
-- delete a caption track
-- upload a new caption track
 - content management
-- video
-- streaming
-- delete playlist
-- videos
-- upload a new video
+- list youtube videos matching criteria
 - list items in a playlist
 - delete a video from youtube
-- delete video
-- add playlist item
-- add a video to a playlist
-- list caption tracks for a video
-- delete a playlist
-- upload a caption track
-- remove playlist item
 - list youtube playlists
-- update a caption track
-- captions
-- create a new playlist
-- remove a video from a playlist
-- upload caption
-- list youtube videos matching criteria
 - update playlist details
-- manage youtube videos
+- remove playlist item
+- update video
+- video
+- streaming
+- delete a playlist
+- captions
+- update video metadata
+- list caption tracks for a video
+- remove a video from a playlist
+- list playlist items
+- create playlist
+- delete video
+- list captions
+- upload a new caption track
 - social
-- list playlists
-- update caption
+- upload caption
 - youtube
+- manage items within playlists
+- add playlist item
+- delete a caption track
+- playlists
+- upload a new video to youtube
+- list videos matching criteria
+- upload video
+- update caption
+- manage youtube playlists
+- manage video captions
+- create a new playlist
+- upload a new video
+- delete caption
+- google
+- delete playlist
+- update playlist
+- upload a caption track
+- add a video to a playlist
+- videos
+- list playlists
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

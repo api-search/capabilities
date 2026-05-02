@@ -70,47 +70,47 @@ provider_slug: peoplesoft
 search_terms:
 - job posting details
 - approve, deny, or push back an hr approval request.
-- search jobs
-- campus solutions
-- peopletools platform services.
-- recruiting
-- list payroll runs
-- list pending approvals
-- get job details
-- crm
-- human resources
-- individual employee details
-- list employees
-- peoplesoft
-- retrieve benefit enrollment records.
+- human capital management.
+- submit application
 - hr approval requests
-- retrieve details for a specific job posting.
 - campus solutions.
-- payroll run history and status
-- financial and supply chain management.
+- peopletools platform services.
+- benefit enrollment records
+- supply chain management
 - candidate applications
 - retrieve pending hr approval requests.
+- individual employee details
 - retrieve payroll run history and status.
-- human capital management.
-- list benefit enrollments
-- search available job postings.
-- submit application
+- submit a candidate application for a job posting.
 - talent management
-- supply chain management
-- employee records
+- list pending approvals
+- peoplesoft
 - hcm
-- financial management
-- benefit enrollment records
+- search jobs
+- financial and supply chain management.
+- list employees
+- erp
+- human resources
+- payroll
+- list payroll runs
+- retrieve benefit enrollment records.
+- retrieve employee records with optional department and status filters.
 - individual approval operations
 - job postings
+- recruiting
+- search available job postings.
+- get job details
+- employee records
+- financial management
 - enterprise software
-- erp
-- payroll
-- retrieve details for a specific employee.
-- retrieve employee records with optional department and status filters.
-- submit a candidate application for a job posting.
-- get employee
+- payroll run history and status
 - process approval
+- crm
+- retrieve details for a specific job posting.
+- retrieve details for a specific employee.
+- campus solutions
+- get employee
+- list benefit enrollments
 slug: human-resources
 source_filename: human-resources.yaml
 source_heading: Capability Spec

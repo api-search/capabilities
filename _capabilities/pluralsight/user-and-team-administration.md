@@ -114,64 +114,64 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- list teams in the plan
-- plan team listing (legacy rest, deprecated)
-- retrieve account and plan details
-- list license users
-- list users in the plan. deprecated - migrate to graphql user management api.
-- send a new user invitation. deprecated - migrate to graphql user management api.
-- team administration
-- flow integration management and connection status
-- update flow users
-- get repos
-- education
-- list pending user invitations. deprecated - migrate to graphql user management api.
-- list flow teams
-- platform administration
-- account and plan details including subscription tier
-- update flow user accounts
-- list flow workspace users
-- list flow integrations and check connection status with external tools and services.
-- list pending user invitations
-- technology
-- list users in the plan
-- retrieve repository data and metadata
-- user management
-- licensing
-- query and manage teams including creating teams, managing membership, assigning managers, and configuring team permissions.
-- skills assessment
-- update, merge, hide, or perform bulk operations on flow user accounts.
-- create a new user invitation
-- team management including creating teams, managing membership, and permissions
-- list integrations
-- list teams in the plan. deprecated - migrate to graphql teams api.
-- flow engineering team management
-- retrieve account and plan details including subscription tier and configuration.
-- retrieve repository data and metadata across connected source control systems.
-- connected repository data and metadata
 - query and manage users via graphql
-- query and manage teams via graphql
-- flow workspace user management
-- courses
+- plan team listing (legacy rest, deprecated)
+- video training
+- list flow users
+- account and plan details including subscription tier
+- flow integration management and connection status
+- list flow integrations and check connection status with external tools and services.
+- update flow user accounts
+- technology
+- team administration
+- update flow users
+- manage users
 - user invitation management (legacy rest, deprecated)
 - query plan info
-- manage users
-- list flow engineering teams
-- list flow integrations and connection status
-- query and manage users including listing users, inviting members, editing user details, removing users, and canceling invitations.
-- create invitation
-- list invitations
-- engineering metrics
-- list flow users in the workspace.
-- learning
-- video training
-- user management including listing, inviting, editing, and removing users
-- list flow engineering teams and team membership data.
 - manage teams
-- list flow users
-- plan user listing (legacy rest, deprecated)
+- user management including listing, inviting, editing, and removing users
 - list license teams
+- list flow users in the workspace.
+- platform administration
+- retrieve account and plan details including subscription tier and configuration.
+- skills assessment
+- team management including creating teams, managing membership, and permissions
+- list invitations
+- connected repository data and metadata
+- create invitation
+- list pending user invitations
+- list flow workspace users
+- query and manage teams including creating teams, managing membership, assigning managers, and configuring team permissions.
+- get repos
+- list teams in the plan. deprecated - migrate to graphql teams api.
+- update, merge, hide, or perform bulk operations on flow user accounts.
+- retrieve repository data and metadata
+- list users in the plan. deprecated - migrate to graphql user management api.
+- flow workspace user management
+- retrieve repository data and metadata across connected source control systems.
+- plan user listing (legacy rest, deprecated)
+- flow engineering team management
+- list integrations
+- list users in the plan
+- list flow teams
+- courses
+- user management
+- licensing
+- query and manage teams via graphql
+- engineering metrics
+- retrieve account and plan details
+- send a new user invitation. deprecated - migrate to graphql user management api.
 - pluralsight
+- list license users
+- list pending user invitations. deprecated - migrate to graphql user management api.
+- learning
+- education
+- query and manage users including listing users, inviting members, editing user details, removing users, and canceling invitations.
+- list flow engineering teams and team membership data.
+- list teams in the plan
+- create a new user invitation
+- list flow integrations and connection status
+- list flow engineering teams
 slug: user-and-team-administration
 source_filename: user-and-team-administration.yaml
 source_heading: Capability Spec

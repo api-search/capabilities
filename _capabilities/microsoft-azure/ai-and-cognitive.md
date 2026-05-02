@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- platform as a service
-- openai create completion
-- create text embeddings
-- cognitive list models
-- api management
-- openai create image
-- cognitive services accounts
-- list model deployments
-- cognitive list accounts
+- openai create embedding
+- transcribe audio to text
+- openai
+- create chat completion
 - openai create chat completion
 - generate speech from text
-- list cognitive accounts
-- transcribe audio to text
-- cloud
-- embedding operations
-- cognitive services
-- infrastructure as a service
-- create chat completion
-- create a chat completion using azure openai
-- openai
-- ai
-- create a text completion
 - list openai models
-- chat completion operations
-- generate images from text
-- create embedding
-- list cognitive services accounts
+- create a chat completion using azure openai
 - openai create speech
 - t1
-- openai list models
-- enterprise
-- openai create translation
-- translate audio to english
-- openai create embedding
-- model listing
 - list available openai models
-- create a chat completion
-- cloud computing
-- openai create transcription
-- openai list deployments
-- list available ai models
+- list cognitive services accounts
+- enterprise
+- api management
+- openai create completion
+- chat completion operations
 - azure
+- list available ai models
+- platform as a service
+- openai create image
+- embedding operations
+- list cognitive accounts
+- openai list models
+- cloud computing
+- ai
+- create a text completion
+- list model deployments
+- cognitive list models
+- openai create transcription
+- translate audio to english
+- cognitive list accounts
+- cloud
+- model listing
+- openai list deployments
+- cognitive services accounts
+- generate images from text
+- openai create translation
+- create a chat completion
+- create text embeddings
+- infrastructure as a service
+- create embedding
+- cognitive services
 slug: ai-and-cognitive
 source_filename: ai-and-cognitive.yaml
 source_heading: Capability Spec

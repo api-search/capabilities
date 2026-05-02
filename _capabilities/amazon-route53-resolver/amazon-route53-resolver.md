@@ -21,18 +21,18 @@ personas: []
 provider_name: Amazon Route 53 Resolver
 provider_slug: amazon-route53-resolver
 search_terms:
+- dns
+- networking
 - engineer managing amazon route53 resolver resources
-- list resources
+- aws cloud resource management
+- amazon route53 resolver
+- automation workflow for amazon route53 resolver
+- hybrid cloud
+- list amazon route53 resolver resources
 - cloud operations
 - aws
-- amazon route53 resolver
-- list amazon route53 resolver resources
-- hybrid cloud
-- automation workflow for amazon route53 resolver
-- dns
 - amazon route53 resolver resources
-- aws cloud resource management
-- networking
+- list resources
 slug: amazon-route53-resolver
 source_filename: amazon-route53-resolver.yaml
 source_heading: Capability Spec

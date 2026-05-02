@@ -18,32 +18,32 @@ personas: []
 provider_name: Apache Pig
 provider_slug: apache-pig
 search_terms:
-- submit pig script
 - kill a running pig job
-- list pig jobs
-- validate script
-- hadoop
-- list all pig data processing jobs
-- apache pig
-- builds etl pipelines using pig latin scripts
-- big data
-- Data Analyst
-- get status and details of a pig job
-- runs ad-hoc data analysis jobs on hadoop clusters
-- submit job
-- data analysis
-- list jobs
-- scripting
-- validate a pig latin script for syntax errors
-- apache
-- Data Engineer
-- submit a pig latin script for execution
-- open source
-- get job
 - kill job
+- get job
 - get job logs
 - get execution logs for a pig job
+- open source
+- runs ad-hoc data analysis jobs on hadoop clusters
+- get status and details of a pig job
+- list all pig data processing jobs
+- big data
+- validate a pig latin script for syntax errors
+- Data Analyst
+- validate script
+- list pig jobs
+- Data Engineer
+- submit job
+- hadoop
+- builds etl pipelines using pig latin scripts
 - etl
+- data analysis
+- apache
+- scripting
+- submit pig script
+- apache pig
+- list jobs
+- submit a pig latin script for execution
 slug: pig-workflow
 source_filename: pig-workflow.yaml
 source_heading: Capability Spec

@@ -19,31 +19,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- appending firmographic data to crm records for sales and marketing
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
+- sales enablement
+- sic
+- search companies test
+- firmographic data
+- naics
+- Marketing Analyst
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 - crm enrichment
 - search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- company data
-- Marketing Analyst
-- segments and scores prospects using naics, sic, and financial data
-- crm
-- search for business entities and retrieve firmographic data.
-- search companies test
-- naics
-- business intelligence
-- search business entities by name, address, phone, or url.
-- sales enablement
-- firmographic data retrieval and company lookup
-- Sales Representative
-- sic
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- Data Engineer
-- uses firmographic data to qualify leads and enrich crm account records
 - business intelligence and crm enrichment workflow combining company search and test endpoints
 - test search returning fake data without consuming api credits.
-- search companies
-- firmographic data
+- Sales Representative
+- uses firmographic data to qualify leads and enrich crm account records
 - test company search returning fake firmographic data.
+- firmographic data retrieval and company lookup
+- company data
+- Data Engineer
+- search business entities by name, address, phone, or url.
+- search for business entities and retrieve firmographic data.
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
+- search companies
+- crm
+- business intelligence
+- segments and scores prospects using naics, sic, and financial data
+- appending firmographic data to crm records for sales and marketing
 slug: bizapi-business-intelligence
 source_filename: bizapi-business-intelligence.yaml
 source_heading: Capability Spec

@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- create a custom compliance control for use in frameworks and assessments.
-- create assessment report
-- amazon audit manager
-- update audit manager settings including sns notifications and default report destination.
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- list frameworks
-- list assessments
-- get complete details of a compliance assessment including control status.
+- get settings
+- compliance
+- list all compliance assessments to understand current audit coverage.
 - create a new compliance assessment using a regulatory framework.
+- create assessment
+- audit
+- get assessment
+- risk management
+- list all assessments
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- list available frameworks
+- generate a compliance assessment report from collected evidence.
+- update audit manager settings including sns notifications and default report destination.
+- get audit manager account settings including default destinations and process owners.
+- list assessment reports
+- amazon audit manager
+- get complete details of a compliance assessment including control status.
+- compliance assessment management
+- create a new assessment
+- update settings
+- list frameworks
+- compliance framework management
+- list assessments
+- list controls
 - create control
 - list generated assessment reports for compliance documentation.
-- list assessment reports
-- get settings
-- create a new assessment
-- risk management
-- update settings
-- compliance assessment management
-- list controls
-- list all assessments
-- compliance framework management
-- compliance
-- list available frameworks
-- list all compliance assessments to understand current audit coverage.
-- audit
+- create a custom compliance control for use in frameworks and assessments.
+- create assessment report
 - aws
-- create assessment
-- generate a compliance assessment report from collected evidence.
-- get assessment
 - list compliance controls available for building assessments.
-- get audit manager account settings including default destinations and process owners.
 slug: compliance-auditing
 source_filename: compliance-auditing.yaml
 source_heading: Capability Spec

@@ -35,43 +35,43 @@ personas: []
 provider_name: AhaSend
 provider_slug: ahasend
 search_terms:
-- infrastructure engineer monitoring email delivery health and managing domains
-- manage event webhooks
-- smtp
-- deliverability
-- list configured sending domains and their dns verification status
-- send message
-- list webhooks
-- get deliverability stats
-- list messages
-- application developer integrating transactional email into their application
-- transactional email
-- list suppressed addresses
-- email delivery statistics
-- get transactional email deliverability statistics and metrics
-- webhooks
-- email
-- list domains
-- send emails, manage domains, configure webhooks, and monitor delivery statistics
-- send a transactional email message via ahasend
 - list email messages
-- send a transactional email
-- manage email suppressions
-- manage sending domains
-- send email
-- configuring and validating sending domains
+- list configured sending domains and their dns verification status
+- infrastructure engineer monitoring email delivery health and managing domains
+- transactional email
 - list sent email messages with delivery status
-- send and retrieve transactional email messages
-- get deliverability statistics
-- list configured webhooks for email event notifications
-- list suppressed email addresses (bounces, complaints, unsubscribes)
-- sending and tracking transactional emails
-- DevOps Engineer
-- list suppressions
-- developer tools
-- webhook and route configuration for email events
-- Developer
+- manage sending domains
 - managing email suppression lists
+- webhook and route configuration for email events
+- send emails, manage domains, configure webhooks, and monitor delivery statistics
+- list suppressed email addresses (bounces, complaints, unsubscribes)
+- Developer
+- DevOps Engineer
+- list webhooks
+- send message
+- email
+- configuring and validating sending domains
+- email delivery statistics
+- application developer integrating transactional email into their application
+- list domains
+- manage event webhooks
+- manage email suppressions
+- list configured webhooks for email event notifications
+- list suppressed addresses
+- webhooks
+- get deliverability stats
+- send and retrieve transactional email messages
+- send a transactional email message via ahasend
+- get deliverability statistics
+- send a transactional email
+- list suppressions
+- smtp
+- get transactional email deliverability statistics and metrics
+- deliverability
+- list messages
+- send email
+- developer tools
+- sending and tracking transactional emails
 slug: email-operations
 source_filename: email-operations.yaml
 source_heading: Capability Spec

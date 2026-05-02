@@ -10,8 +10,8 @@ provider_name: Amazon Textract
 provider_slug: amazon-textract
 search_terms:
 - ocr
-- machine learning
 - document processing
+- machine learning
 slug: amazon-textract-capability
 source_filename: amazon-textract-capability.yaml
 source_heading: Capability Spec

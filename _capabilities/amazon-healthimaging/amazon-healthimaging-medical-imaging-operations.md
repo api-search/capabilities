@@ -9,8 +9,8 @@ personas: []
 provider_name: Amazon HealthImaging
 provider_slug: amazon-healthimaging
 search_terms:
-- hipaa
 - healthcare
+- hipaa
 - machine learning
 - medical imaging
 - dicom

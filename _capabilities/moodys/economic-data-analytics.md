@@ -15,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- retrieve a single time series by mnemonic
-- analytics
-- download order
-- create a new data order
-- kyc
-- list vintages
-- entity verification
-- create basket
-- list vintages for a series
-- retrieve multiple time series
-- get series
-- search for available series
-- get basket
-- create order
-- moody's
-- list file types
-- create a new data basket
-- delete a basket
-- forecasting
-- risk
-- list baskets
-- delete basket
-- list all orders
-- get order
-- list frequencies
-- list available data frequencies
-- list supported output file types
-- update basket
-- download completed order output
-- get order status and details
-- compliance
-- credit risk
-- insurance
-- climate risk
-- retrieve a time series
-- get multi series
-- search series
-- check health
-- financial analytics
-- check data buffet api health
-- list all data baskets
-- economic data
-- get basket details
-- list orders
-- screening
 - time series data
+- list all orders
+- create order
+- climate risk
+- retrieve a single time series by mnemonic
+- create a new data order
+- analytics
+- update basket
+- list vintages for a series
+- compliance
+- get multi series
+- list baskets
+- list vintages
+- forecasting
 - update a basket
+- kyc
+- economic data
+- check data buffet api health
+- search series
+- get series
+- list supported output file types
+- get basket
+- risk
+- create a new data basket
+- list orders
+- entity verification
+- financial analytics
+- download order
+- screening
+- get order status and details
+- list all data baskets
+- download completed order output
+- delete basket
+- moody's
+- search for available series
+- get basket details
+- retrieve multiple time series
+- list available data frequencies
+- get order
+- create basket
+- delete a basket
+- list file types
+- insurance
+- retrieve a time series
+- check health
+- credit risk
+- list frequencies
 slug: economic-data-analytics
 source_filename: economic-data-analytics.yaml
 source_heading: Capability Spec

@@ -43,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- list models
-- create batch
-- delete a batch.
-- create a batch of message requests.
-- create message batch
-- model details.
-- get batch
-- get model metadata.
-- cancel message batch
-- create a message.
-- get model
-- list available models.
-- count message tokens.
-- create a message batch.
-- claude
-- delete message batch
-- artificial intelligence
-- list all message batches.
-- ai
-- get batch status.
-- individual batch management.
-- count message tokens
-- message operations.
-- send a message to claude and receive a response.
-- delete batch
 - model discovery.
 - list batches
-- count tokens
-- machine learning
-- natural language processing
-- count tokens in a message.
-- delete a completed batch.
-- messaging
-- token counting.
-- cancel an in-progress batch.
-- generative ai
-- get completed batch results.
-- retrieve message batch
-- chatbot
-- get message batch status and details.
-- large language models
-- anthropic
-- list message batches
 - list available claude models.
-- conversational ai
-- retrieve message batch results
-- batch management.
-- create message
+- count message tokens
 - list message batches.
+- model details.
+- claude
+- delete a completed batch.
+- generative ai
+- delete a batch.
+- token counting.
+- messaging
+- artificial intelligence
+- delete batch
+- conversational ai
+- list available models.
+- anthropic
+- create a message batch.
+- machine learning
+- delete message batch
+- get message batch status and details.
+- individual batch management.
+- get completed batch results.
+- create batch
+- retrieve message batch results
+- ai
+- count tokens in a message.
+- count message tokens.
+- cancel an in-progress batch.
+- batch management.
+- natural language processing
+- large language models
+- create a batch of message requests.
+- retrieve message batch
+- cancel message batch
+- list all message batches.
+- count tokens
+- get model metadata.
+- chatbot
+- message operations.
+- create message
+- send a message to claude and receive a response.
+- create a message.
+- create message batch
+- list message batches
+- list models
+- get model
+- get batch status.
+- get batch
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

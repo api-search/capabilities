@@ -11,12 +11,12 @@ provider_name: Amazon CloudTrail
 provider_slug: amazon-cloudtrail
 search_terms:
 - audit
-- amazon cloudtrail
-- security
 - compliance
-- cloudtrail
-- amazon web services
+- amazon cloudtrail
 - governance
+- amazon web services
+- security
+- cloudtrail
 - Security Analyst
 slug: audit-trail-management
 source_filename: audit-trail-management.yaml

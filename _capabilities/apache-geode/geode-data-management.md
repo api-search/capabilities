@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- developers using geode as a fast data store for applications
-- apache geode
-- in-memory data grid
-- execute an oql query
-- caching
-- list all server-side functions available in the cluster
-- distributed systems
-- execute an oql query against geode regions
-- Application Developer
-- list all regions in the apache geode data grid
-- list available functions
-- data grid
-- platform engineering
-- list functions
-- list geode functions
-- oql query execution
-- execute query
-- get all keys stored in a geode region
-- server-side function execution
-- Platform Engineer
-- region crud operations, oql queries, and function execution
-- execute oql query
-- list all geode regions
-- manage in-memory data with regions, queries, and functions
-- get region keys
-- engineers managing the geode cluster infrastructure
-- apache
-- list regions
-- geode region management
-- open source
-- list geode regions
-- in-memory
-- high-performance in-memory data caching and distribution
 - data management
+- list geode functions
+- data grid
+- manage in-memory data with regions, queries, and functions
+- developers using geode as a fast data store for applications
+- region crud operations, oql queries, and function execution
+- geode region management
+- Application Developer
+- server-side function execution
+- list functions
+- list all regions in the apache geode data grid
+- distributed systems
+- execute an oql query
+- get all keys stored in a geode region
+- list geode regions
+- open source
+- Platform Engineer
+- list regions
+- list all geode regions
+- high-performance in-memory data caching and distribution
+- in-memory
+- in-memory data grid
+- list available functions
+- engineers managing the geode cluster infrastructure
+- execute an oql query against geode regions
+- caching
+- execute query
+- execute oql query
+- platform engineering
+- apache
+- oql query execution
+- get region keys
+- apache geode
+- list all server-side functions available in the cluster
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

@@ -23,30 +23,30 @@ personas: []
 provider_name: Apache Kylin
 provider_slug: apache-kylin
 search_terms:
-- analytics
-- list models
-- sql
-- list all kylin projects and their configurations
-- olap
-- cube
-- execute sql query
-- list data models in a kylin project
-- cancel a running kylin cube build job
-- list cube build jobs and their statuses
-- engineers who build and manage kylin cubes for bi tool consumption
-- big data
-- execute query
-- Data Analyst
-- list projects
-- big data analytics
-- business intelligence
-- analysts who execute olap sql queries over large hadoop datasets
-- list jobs
-- BI Engineer
-- execute a sql query on apache kylin to retrieve olap analytics results
-- open source
-- apache kylin
 - cancel job
+- list cube build jobs and their statuses
+- analytics
+- BI Engineer
+- engineers who build and manage kylin cubes for bi tool consumption
+- cancel a running kylin cube build job
+- open source
+- execute sql query
+- big data
+- execute a sql query on apache kylin to retrieve olap analytics results
+- analysts who execute olap sql queries over large hadoop datasets
+- Data Analyst
+- big data analytics
+- execute query
+- list projects
+- olap
+- sql
+- apache kylin
+- business intelligence
+- cube
+- list jobs
+- list data models in a kylin project
+- list models
+- list all kylin projects and their configurations
 slug: olap-analytics
 source_filename: olap-analytics.yaml
 source_heading: Capability Spec

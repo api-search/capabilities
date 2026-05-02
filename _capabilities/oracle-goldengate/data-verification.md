@@ -27,46 +27,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- get details of out-of-sync data
-- create a new comparison job
-- data quality
-- real-time replication
-- get goldengate process performance metrics for monitoring replication health
-- get server info
-- run job
-- list compare groups
+- get out of sync data
 - oracle goldengate
-- repair job
-- replication process metrics
-- cdc
-- repair out-of-sync data identified by a comparison job
-- data integration
-- database
-- list connections
-- list compare groups for data verification
+- compliance
+- get server info
+- create connection
+- get comparison job statistics
 - execute a comparison job
+- replication process metrics
+- repair job
+- enterprise
+- data verification
+- real-time replication
+- list connections
+- list process metrics
+- create job
+- database
+- repair out-of-sync data identified by a comparison job
 - list groups
 - create a new compare group
-- get veridata server information
-- compliance
-- list jobs
-- compare groups
-- list comparison jobs
-- get comparison job statistics
-- get job statistics
-- list process metrics
-- list veridata database connections
-- get out of sync data
-- enterprise
-- create a new veridata database connection
-- database connections for verification
-- comparison jobs
-- create group
-- data synchronization
-- create connection
-- create job
-- data verification
 - list replication process performance metrics
+- cdc
+- create a new veridata database connection
+- get goldengate process performance metrics for monitoring replication health
+- create group
+- comparison jobs
+- compare groups
+- get veridata server information
+- data quality
+- run job
+- data integration
+- list veridata database connections
+- data synchronization
+- get details of out-of-sync data
+- list comparison jobs
+- list compare groups for data verification
+- list compare groups
+- create a new comparison job
+- list jobs
+- database connections for verification
+- get job statistics
 slug: data-verification
 source_filename: data-verification.yaml
 source_heading: Capability Spec

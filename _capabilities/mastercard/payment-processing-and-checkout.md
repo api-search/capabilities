@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create unified session
-- process cloud transaction
-- payments
-- create installment plan
-- mastercard
-- get payment details
-- financial services
-- payment processing
-- create a new checkout session for a merchant
-- register contactless reader
-- unified checkout sessions
-- checkout session management
-- fraud detection
-- generate a merchant-presented qr code for payment
-- create an installment plan
-- get payment
-- qr code payment acceptance
-- retrieve payment transaction details
-- process a cloud commerce transaction
 - create a unified checkout session supporting multiple payment methods
-- e-commerce
-- credit cards
-- create checkout session
-- generate a merchant qr code for payment
-- buy-now-pay-later installment plans
-- register a contactless reader device
-- digital identity
-- process payment
-- create a new checkout session
-- process a payment through the mastercard gateway
-- open banking
-- generate qr code
-- create a unified checkout session
-- merchant
-- create a buy-now-pay-later installment plan
 - process a payment through the gateway
+- merchant
+- generate a merchant qr code for payment
+- process payment
+- create unified session
 - checkout
+- create installment plan
+- buy-now-pay-later installment plans
+- create checkout session
+- register a contactless reader device
+- e-commerce
+- register contactless reader
+- generate qr code
+- process a cloud commerce transaction
+- create a new checkout session
+- create a buy-now-pay-later installment plan
+- digital identity
+- checkout session management
+- qr code payment acceptance
+- get payment
+- payment processing
+- create a unified checkout session
+- mastercard
+- credit cards
+- fraud detection
+- financial services
+- unified checkout sessions
+- create an installment plan
+- generate a merchant-presented qr code for payment
+- create a new checkout session for a merchant
+- retrieve payment transaction details
+- process a payment through the mastercard gateway
+- get payment details
+- process cloud transaction
+- open banking
+- payments
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

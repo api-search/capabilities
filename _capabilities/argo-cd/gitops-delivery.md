@@ -43,55 +43,55 @@ personas: []
 provider_name: Argo CD
 provider_slug: argo-cd
 search_terms:
-- delete application
-- automated application deployment and lifecycle management
-- remove an application
-- cncf
-- kubernetes
-- trigger application sync from git
-- kubernetes cluster registry
-- get detailed status of an argo cd application including resource tree
-- create application
-- delete an argo cd application and optionally cascade delete resources
-- end-to-end gitops continuous delivery combining application lifecycle, cluster management, and repository configuration
-- manages the argo cd platform, clusters, and project rbac
-- containers
-- list all kubernetes clusters registered with argo cd
-- argo cd
-- list all git repositories configured in argo cd
-- deploy a new application from git
-- list applications
-- list all deployed applications
-- list configured git repositories
-- single application management
-- list all argo cd projects
-- list repositories
-- deploy a new application by creating an argo cd application resource
 - trigger an argo cd application sync to reconcile desired git state
+- argo cd
+- remove an application
+- git repository configuration
+- gitops application lifecycle management
+- create application
+- get application
+- manages the argo cd platform, clusters, and project rbac
+- delete an argo cd application and optionally cascade delete resources
+- trigger application sync from git
+- cncf
+- list all deployed applications
+- kubernetes
+- DevOps Engineer
+- list configured git repositories
 - sync application
-- platform engineering
+- deploy a new application from git
+- list all git repositories configured in argo cd
+- deployment
+- open source
+- continuous delivery
+- Platform Engineer
+- gitops
+- container orchestration platform
+- deploy a new application by creating an argo cd application resource
+- list applications
 - list clusters
-- list accounts
+- single application management
+- git as single source of truth for infrastructure and application state
+- automated application deployment and lifecycle management
+- list all argo cd applications with their sync and health status
+- delete application
+- application synchronization
+- get detailed status of an argo cd application including resource tree
+- platform engineering
+- list all argo cd projects and their rbac policies
 - list projects
 - deploys and manages applications using gitops workflows
-- container orchestration platform
-- gitops application lifecycle management
-- list all argo cd applications with their sync and health status
-- Platform Engineer
-- project and rbac management
-- git repository configuration
-- list registered kubernetes clusters
 - list all argo cd user accounts
-- application synchronization
-- get application
-- git as single source of truth for infrastructure and application state
-- continuous delivery
-- DevOps Engineer
-- open source
+- containers
+- end-to-end gitops continuous delivery combining application lifecycle, cluster management, and repository configuration
+- list all kubernetes clusters registered with argo cd
+- list accounts
+- list registered kubernetes clusters
+- project and rbac management
+- list repositories
+- list all argo cd projects
+- kubernetes cluster registry
 - get application details and sync status
-- deployment
-- list all argo cd projects and their rbac policies
-- gitops
 slug: gitops-delivery
 source_filename: gitops-delivery.yaml
 source_heading: Capability Spec

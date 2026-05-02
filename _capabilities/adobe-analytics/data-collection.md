@@ -36,42 +36,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- analytics
-- list available dimensions to validate event data mapping.
-- digital marketing
-- list metrics to validate event data mapping.
+- list report suites
+- dimension discovery for event mapping.
 - list report suites to identify collection targets.
-- get details for a report suite to verify collection configuration.
+- batch event upload.
+- analytics
 - adobe
-- adobe analytics
-- list metrics
-- get report suite
 - list dimensions
 - server side
-- report suite details.
-- get report suite details.
-- batch event upload.
-- list report suites to identify data collection targets.
-- validate events
-- dimension discovery for event mapping.
-- list available metrics to validate event data mapping.
-- business intelligence
-- metric discovery for event mapping.
-- customer intelligence
-- report suite discovery for data collection targeting.
+- adobe analytics
 - upload a gzip-compressed csv file of batched analytics event data.
+- report suite discovery for data collection targeting.
+- list metrics to validate event data mapping.
+- bulk data insertion
+- customer intelligence
+- digital marketing
+- marketing
+- validate a batch events file without ingesting data.
+- get details for a report suite to verify collection configuration.
+- metric discovery for event mapping.
 - web analytics
+- data collection
+- list report suites to identify data collection targets.
+- get report suite details.
 - validate event files.
 - upload a batch events file.
-- validate a batch events file without ingesting data.
 - events
+- list available dimensions to validate event data mapping.
+- list metrics
+- business intelligence
+- validate events
 - upload events
-- list report suites
+- get report suite
 - validate a batch events file without ingesting.
+- report suite details.
+- list available metrics to validate event data mapping.
 - list dimensions to validate event data mapping.
-- data collection
-- bulk data insertion
-- marketing
 slug: data-collection
 source_filename: data-collection.yaml
 source_heading: Capability Spec

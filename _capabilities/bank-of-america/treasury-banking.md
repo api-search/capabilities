@@ -18,39 +18,39 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
-- list account transactions
-- payments
-- treasury
-- list available bank of america account statements
-- initiate a payment
-- payment initiation and tracking across 350+ payment types
 - corporate treasury operations including account management, payments, and reporting
+- payments
 - get account balances
-- get the current status of a bank of america payment
-- finance
-- list bank of america cashpro accounts for the authenticated client
-- get current and available balances for a cashpro account
-- get payment status
-- cashpro
-- bank of america
-- initiate payment
 - corporate cash management, balance reporting, and liquidity
-- Corporate Treasurer
-- list accounts
-- analyst managing day-to-day treasury operations and reporting
-- Treasury Analyst
-- account management
-- corporate banking
-- list transactions for a bank of america account within a date range
-- ERP Integration
-- system integration connecting erp/tms to bank of america cashpro apis
-- executive responsible for corporate cash and liquidity management
 - list bofa accounts
+- get current and available balances for a cashpro account
+- payment initiation and tracking across 350+ payment types
+- executive responsible for corporate cash and liquidity management
+- treasury
+- list bank of america cashpro accounts for the authenticated client
+- corporate banking
 - payment management
+- initiate payment
+- ERP Integration
 - initiate a payment through bank of america cashpro (supports 350+ payment types)
-- list cashpro accounts
+- analyst managing day-to-day treasury operations and reporting
+- initiate a payment
+- finance
 - list statements
+- list account transactions
+- account management
+- cashpro
+- list accounts
+- list cashpro accounts
+- list available bank of america account statements
+- bank of america
+- Treasury Analyst
+- system integration connecting erp/tms to bank of america cashpro apis
+- Corporate Treasurer
+- list transactions for a bank of america account within a date range
 - banking
+- get payment status
+- get the current status of a bank of america payment
 slug: treasury-banking
 source_filename: treasury-banking.yaml
 source_heading: Capability Spec

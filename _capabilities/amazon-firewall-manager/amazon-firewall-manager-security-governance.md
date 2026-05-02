@@ -11,11 +11,11 @@ provider_name: Amazon Firewall Manager
 provider_slug: amazon-firewall-manager
 search_terms:
 - aws organizations
+- compliance
+- multi-account
+- security
 - firewall
 - network security
-- security
-- multi-account
-- compliance
 slug: amazon-firewall-manager-security-governance
 source_filename: amazon-firewall-manager-security-governance.yaml
 source_heading: Capability Spec

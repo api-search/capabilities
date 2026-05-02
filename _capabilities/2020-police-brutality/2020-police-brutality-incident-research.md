@@ -25,33 +25,33 @@ personas: []
 provider_name: 2020 Police Brutality
 provider_slug: 2020-police-brutality
 search_terms:
-- export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
-- get incidents v2
-- journalism
-- all documented police brutality incidents from 2020 protests.
-- export all incidents as csv for spreadsheet and data analysis.
-- uses data for advocacy, public education, and political campaigns
-- list all documented police brutality incidents.
-- civil rights
-- policing
-- all incidents in csv format for data analysis.
-- investigates and reports on documented police brutality incidents
-- export incidents csv
-- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
-- list incidents
 - documented evidence of police brutality during 2020 protests
-- Legal Professional
+- export all incidents as csv for spreadsheet and data analysis.
+- get incidents v2
+- Activist
 - brutality
-- get all incidents
-- research workflow for journalists, prosecutors, and activists
+- investigates and reports on documented police brutality incidents
+- list incidents
 - Journalist
-- public data
+- research workflow for journalists, prosecutors, and activists
+- retrieve all police brutality incidents in the v2 data format with improved schema consistency.
+- list all documented police brutality incidents.
+- policing
+- Legal Professional
+- all documented police brutality incidents from 2020 protests.
 - conducts academic or policy research on police use of force patterns
 - research
+- export incidents csv
+- export all documented police brutality incidents as csv for use in spreadsheets, databases, and data analysis tools.
 - retrieve all documented police brutality incidents from the 2020 george floyd protests. returns location, date, description, tags, and source links for each incident.
-- Researcher
-- Activist
+- public data
+- all incidents in csv format for data analysis.
+- get all incidents
+- journalism
 - uses incident documentation for prosecution or civil litigation
+- Researcher
+- uses data for advocacy, public education, and political campaigns
+- civil rights
 slug: 2020-police-brutality-incident-research
 source_filename: 2020-police-brutality-incident-research.yaml
 source_heading: Capability Spec

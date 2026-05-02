@@ -31,42 +31,42 @@ personas: []
 provider_name: Argo Workflows
 provider_slug: argo-workflows
 search_terms:
-- runs ml training, data processing, and etl workflows on kubernetes
-- cncf
-- kubernetes
-- containers
-- manages argo workflows platform, templates, and scheduling
-- list workflow templates
-- list archived workflow runs
 - list cron workflows
-- list historical archived workflow executions
-- list workflows
-- create workflow
-- reusable workflow templates
-- list scheduled cron workflows in a namespace
-- workflow engine
-- submit a new argo workflow to a kubernetes namespace
-- workflow lifecycle management
-- list archived workflows
-- workflow execution history
-- scheduled cron workflows
-- list all workflow templates
-- list reusable workflow templates in a namespace
-- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
-- container orchestration platform
-- machine learning
-- Platform Engineer
-- parallel data transformation, ml training, and etl
-- list all argo workflows in a kubernetes namespace with status
-- container-native workflow execution and lifecycle management
-- submit a new workflow
-- Data Engineer
-- list all workflows in a namespace
-- argo workflows
 - data engineering
+- workflow execution history
+- list archived workflow runs
+- container-native workflow execution and lifecycle management
+- list all workflows in a namespace
+- cncf
+- argo workflows
+- end-to-end container-native workflow orchestration combining lifecycle management, templates, scheduling, and history
+- kubernetes
 - open source
-- data processing
+- machine learning
 - list all cron workflows
+- Platform Engineer
+- list all workflow templates
+- container orchestration platform
+- scheduled cron workflows
+- list archived workflows
+- workflow engine
+- submit a new workflow
+- reusable workflow templates
+- list reusable workflow templates in a namespace
+- Data Engineer
+- list scheduled cron workflows in a namespace
+- list workflow templates
+- runs ml training, data processing, and etl workflows on kubernetes
+- containers
+- create workflow
+- workflow lifecycle management
+- manages argo workflows platform, templates, and scheduling
+- list workflows
+- parallel data transformation, ml training, and etl
+- submit a new argo workflow to a kubernetes namespace
+- data processing
+- list all argo workflows in a kubernetes namespace with status
+- list historical archived workflow executions
 slug: workflow-orchestration
 source_filename: workflow-orchestration.yaml
 source_heading: Capability Spec

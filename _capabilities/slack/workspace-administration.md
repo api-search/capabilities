@@ -34,41 +34,41 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- team information.
-- get team info
-- list user groups
-- get workspace information.
-- list users
+- admin controls
 - administration
 - get dnd status
-- migrate enterprise ids.
-- user management
-- collaboration
-- list admin
-- slack
+- list users.
 - admin controls.
-- list workspace users.
-- get team info.
-- user management.
-- migrate ids
-- access admin controls.
-- test authentication.
-- get do not disturb status.
 - get team
+- list admin
+- user group management.
+- get workspace information.
+- auth test
+- get team info
+- t1
+- messaging
+- enterprise
+- list workspace users.
 - list admin resources.
 - list groups
-- user group management.
-- admin controls
-- productivity
-- messaging
-- t1
-- enterprise
-- list user groups.
-- team communication
-- list users.
-- chat
-- auth test
 - bots
+- migrate enterprise ids.
+- get do not disturb status.
+- migrate ids
+- slack
+- team information.
+- chat
+- team communication
+- user management.
+- user management
+- get team info.
+- list user groups.
+- list user groups
+- test authentication.
+- collaboration
+- access admin controls.
+- productivity
+- list users
 slug: workspace-administration
 source_filename: workspace-administration.yaml
 source_heading: Capability Spec

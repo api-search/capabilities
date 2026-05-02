@@ -67,67 +67,67 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- experiment management api listDeployments
-- analytics
-- experiment management api listVersions
-- experiment management api listExperiments
-- experimentation
 - amplitude get an experiment
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- experiment management api getFlag
-- amplitude update a flag
-- getExperiment
-- experiment management api createExperiment
-- data governance
-- identity management
-- getFlag
-- experiment management api getExperiment
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- amplitude evaluate variants for a user
-- amplitude get a deployment
-- experiment management api getDeployment
-- user behavior
-- amplitude create a flag
-- updateExperiment
-- createExperiment
-- product analytics
-- amplitude list all deployments
-- listFlags
-- a/b testing
-- listExperiments
-- experiment evaluation api evaluateVariants
-- export raw event data and manage behavioral cohorts. for data analysts.
-- runs experiments and feature flags
-- amplitude
-- listVersions
-- manages privacy and compliance
-- evaluateVariants
-- amplitude list all flags
-- experiment evaluation api getFlags
-- experiment management api updateFlag
-- experiment management api updateExperiment
-- amplitude update an experiment
-- experiment management api createFlag
-- experiment evaluation api evaluateVariantsGet
-- amplitude list all experiments
-- manage event schemas and chart annotations. for data governance teams.
-- listDeployments
 - amplitude list flag and experiment versions
-- amplitude evaluate variants for a user via get
-- evaluateVariantsGet
-- unified workflow for sending events and identifying users. for data engineers.
-- privacy compliance
-- updateFlag
-- getFlags
-- analyzes data and manages cohorts
-- feature flags
-- createFlag
-- amplitude create an experiment
-- ingests and exports event data
-- getDeployment
-- amplitude get a flag
-- amplitude get flag configurations
+- amplitude update a flag
+- experiment evaluation api evaluateVariantsGet
+- analytics
 - experiment management api listFlags
+- getDeployment
+- amplitude list all flags
+- experiment management api updateFlag
+- ingests and exports event data
+- privacy compliance
+- product analytics
+- amplitude evaluate variants for a user via get
+- listDeployments
+- experiment management api getDeployment
+- manage event schemas and chart annotations. for data governance teams.
+- amplitude list all experiments
+- amplitude evaluate variants for a user
+- a/b testing
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- amplitude create a flag
+- user behavior
+- createExperiment
+- experiment management api getExperiment
+- amplitude create an experiment
+- experiment management api getFlag
+- experiment management api listExperiments
+- listExperiments
+- experiment evaluation api getFlags
+- identity management
+- export raw event data and manage behavioral cohorts. for data analysts.
+- feature flags
+- evaluateVariants
+- experiment management api updateExperiment
+- amplitude get a deployment
+- listFlags
+- amplitude update an experiment
+- unified workflow for sending events and identifying users. for data engineers.
+- updateExperiment
+- amplitude list all deployments
+- createFlag
+- amplitude get flag configurations
+- amplitude get a flag
+- listVersions
+- experiment management api createExperiment
+- analyzes data and manages cohorts
+- experiment evaluation api evaluateVariants
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- runs experiments and feature flags
+- getFlag
+- evaluateVariantsGet
+- experiment management api listVersions
+- experimentation
+- experiment management api createFlag
+- updateFlag
+- data governance
+- experiment management api listDeployments
+- getExperiment
+- amplitude
+- getFlags
+- manages privacy and compliance
 slug: amplitude-experimentation
 source_filename: amplitude-experimentation.yaml
 source_heading: Capability Spec

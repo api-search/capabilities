@@ -20,26 +20,26 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - process a payment in the community pass ecosystem
-- community pass payments
-- payments
-- mastercard
-- create digital identity
-- verify a digital identity
-- financial services
 - digital identity management
-- community pass
-- fraud detection
-- create a digital identity in the community pass ecosystem
-- process community payment
-- create a digital identity
-- create identity
-- credit cards
-- verify digital identity
-- digital identity
 - process payment
+- create a digital identity
+- community pass
+- verify a digital identity
+- community pass payments
+- digital identity
+- verify digital identity
+- process community payment
+- create digital identity
+- mastercard
+- credit cards
 - financial inclusion
-- open banking
+- fraud detection
+- financial services
 - process a community pass payment
+- create identity
+- open banking
+- create a digital identity in the community pass ecosystem
+- payments
 slug: community-pass-and-inclusion
 source_filename: community-pass-and-inclusion.yaml
 source_heading: Capability Spec

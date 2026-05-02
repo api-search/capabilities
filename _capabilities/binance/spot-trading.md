@@ -9,22 +9,22 @@ personas: []
 provider_name: Binance
 provider_slug: binance
 search_terms:
-- finance
-- buy and sell cryptocurrency spot pairs on the binance exchange
 - real-time and historical price, depth, and trade data
-- trading
-- cryptocurrency trader executing spot orders on binance
-- deposits, withdrawals, and asset management
-- trade on margin with borrowed assets
-- defi
-- api key management, account balances, and commission rates
-- place and manage spot orders and retrieve market data on binance
-- market data
 - blockchain
+- trading
 - exchange
-- trade usd-m and coin-m perpetual futures contracts
-- cryptocurrency
+- trade on margin with borrowed assets
+- deposits, withdrawals, and asset management
+- finance
+- defi
 - developer building algorithmic trading strategies on binance
+- market data
+- trade usd-m and coin-m perpetual futures contracts
+- cryptocurrency trader executing spot orders on binance
+- place and manage spot orders and retrieve market data on binance
+- cryptocurrency
+- api key management, account balances, and commission rates
+- buy and sell cryptocurrency spot pairs on the binance exchange
 slug: spot-trading
 source_filename: spot-trading.yaml
 source_heading: Capability Spec

@@ -10,10 +10,10 @@ provider_name: Apache HttpComponents
 provider_slug: apache-http
 search_terms:
 - apache
-- http client
-- sdk
-- open source
 - java
+- open source
+- sdk
+- http client
 slug: http-client-integration
 source_filename: http-client-integration.yaml
 source_heading: Capability Spec

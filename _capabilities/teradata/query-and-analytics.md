@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- available systems.
-- analytics
-- sql
-- query sessions.
+- data management
 - execute a sql query against teradata vantage.
-- manage querygrid data fabric infrastructure.
-- create session
-- list available vantage systems.
-- create a new query session on a vantage system.
-- cloud
+- query
+- analytics
+- executes queries and analyzes data across vantage systems.
+- system and fabric configuration management.
 - Application Developer
+- data warehousing
+- sql queries.
+- manages data fabric infrastructure and cross-system connectivity.
+- list query systems
+- integrates applications with teradata via rest apis.
+- create session
+- enterprise
+- execute sql queries and analytics.
+- execute a sql query.
+- administers querygrid systems, nodes, and software.
+- sql query execution and session management.
+- database
+- machine learning
 - list cross-system query summaries from querygrid.
 - teradata
-- list available vantage systems for query execution.
-- executes queries and analyzes data across vantage systems.
-- database
+- list querygrid queries
+- Data Analyst
+- manage querygrid data fabric infrastructure.
+- create a new query session on a vantage system.
 - Platform Administrator
-- get query status
+- Data Engineer
+- cloud
 - create a query session.
 - execute query
-- execute sql queries and analytics.
-- Data Analyst
-- manages data fabric infrastructure and cross-system connectivity.
-- machine learning
-- list query systems
-- enterprise
-- get the status and results of a submitted query.
-- sql query execution and session management.
-- query
-- Data Engineer
+- available systems.
+- list available vantage systems for query execution.
+- query sessions.
+- list available vantage systems.
+- sql
+- get query status
 - health monitoring and issue detection.
-- administers querygrid systems, nodes, and software.
-- sql queries.
-- integrates applications with teradata via rest apis.
-- data warehousing
-- data management
-- system and fabric configuration management.
-- list querygrid queries
-- execute a sql query.
+- get the status and results of a submitted query.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec

@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- secret management.
-- individual key management.
-- get a secret value.
-- list keys
-- decrypt data using a key.
-- create a new certificate.
-- get key
-- sign
-- create a key.
-- get a secret.
-- list secrets in the vault.
-- set a secret.
-- create certificate
-- secrets management
-- create key
-- verify a signature.
-- get a key.
-- list certificates.
-- certificates
-- get a certificate.
-- delete certificate
-- key management
-- encrypt data using a key.
-- delete a key.
-- list certificates
-- get secret
-- key management.
-- create a new cryptographic key.
-- encrypt
-- get key details.
 - list keys.
-- list cryptographic keys in the vault.
-- decrypt
-- get certificate
+- get secret
+- delete key
+- list certificates
 - list certificates in the vault.
 - verify
-- key vault
-- cloud security
-- cryptography
-- delete a secret.
-- sign a digest using a key.
-- list secrets.
+- list certificates.
+- certificates
+- encrypt data using a key.
+- sign
+- create certificate
 - delete secret
-- individual secret management.
-- security
-- delete a certificate.
-- set a secret value.
-- list secrets
-- certificate management.
-- set secret
-- delete key
+- delete a secret.
+- create a new certificate.
+- get certificate
+- secrets management
+- create a key.
+- list secrets.
 - azure
+- certificate management.
+- secret management.
+- set a secret value.
+- verify a signature.
+- create key
+- key management.
+- cloud security
+- list secrets
+- key management
+- set a secret.
+- get key
+- decrypt data using a key.
+- set secret
+- get key details.
+- get a certificate.
+- get a secret.
+- create a new cryptographic key.
+- list cryptographic keys in the vault.
+- delete a certificate.
+- key vault
+- list keys
+- encrypt
+- decrypt
+- individual key management.
+- delete a key.
+- security
+- get a secret value.
+- cryptography
+- delete certificate
+- sign a digest using a key.
+- individual secret management.
+- list secrets in the vault.
+- get a key.
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

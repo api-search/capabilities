@@ -30,31 +30,31 @@ personas: []
 provider_name: Google Slides
 provider_slug: google-slides
 search_terms:
-- create presentation
-- apply batch updates.
-- google
-- get a page thumbnail.
-- get a thumbnail image of a presentation page.
-- get presentation
-- get page thumbnail
-- collaboration
-- get a presentation by id.
-- access individual pages and thumbnails.
-- get a specific page.
-- batch update presentation
-- create a new presentation.
-- content creation
-- get a specific page from a presentation.
-- create and manage presentations.
-- productivity
-- google workspace
-- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
-- get page
-- presentations
-- batch update
-- create a new blank google slides presentation.
 - slides
+- get presentation
+- access individual pages and thumbnails.
+- batch update presentation
+- get a presentation by id.
+- content creation
+- presentations
+- create presentation
+- get page
+- get a thumbnail image of a presentation page.
 - get a presentation by id with all slides, masters, and layouts.
+- create a new blank google slides presentation.
+- apply batch updates.
+- create and manage presentations.
+- get a specific page.
+- google workspace
+- create a new presentation.
+- google
+- get page thumbnail
+- apply batch updates to a presentation (add slides, insert text, create shapes, embed images).
+- get a specific page from a presentation.
+- collaboration
+- productivity
+- batch update
+- get a page thumbnail.
 slug: presentation-management
 source_filename: presentation-management.yaml
 source_heading: Capability Spec

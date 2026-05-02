@@ -26,34 +26,34 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- optimize fixed income portfolio.
-- financial
-- run fi calculation
-- get fi calculations.
 - optimize fi portfolio
-- batch fixed income analytics.
-- fixed income
-- fixed income terms and conditions.
-- investment analytics
-- get s&p global evaluated prices.
-- get terms
-- get fixed income terms and conditions.
-- market data
-- financial data
-- get evaluated prices
-- factset
-- get terms conditions
-- portfolio analytics
-- bond analytics
-- s&p global evaluated prices.
 - get fi calc
-- get evaluated prices.
-- get terms and conditions.
-- research
+- market data
 - credit analysis
-- fixed income calculations.
-- batch fi analytics
+- get terms and conditions.
+- financial
+- factset
 - run fixed income calculation.
+- batch fixed income analytics.
+- get s&p global evaluated prices.
+- optimize fixed income portfolio.
+- investment analytics
+- get terms
+- s&p global evaluated prices.
+- research
+- get terms conditions
+- run fi calculation
+- fixed income calculations.
+- financial data
+- fixed income terms and conditions.
+- get evaluated prices
+- batch fi analytics
+- fixed income
+- get fixed income terms and conditions.
+- portfolio analytics
+- get evaluated prices.
+- bond analytics
+- get fi calculations.
 slug: fixed-income
 source_filename: fixed-income.yaml
 source_heading: Capability Spec

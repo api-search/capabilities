@@ -10,13 +10,13 @@ personas: []
 provider_name: Amazon FreeRTOS
 provider_slug: amazon-freertos
 search_terms:
+- firmware
 - iot
 - embedded systems
-- aws
-- firmware
-- ota updates
 - microcontrollers
 - rtos
+- ota updates
+- aws
 slug: amazon-freertos-device-management
 source_filename: amazon-freertos-device-management.yaml
 source_heading: Capability Spec

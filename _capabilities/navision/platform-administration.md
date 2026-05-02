@@ -48,72 +48,72 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- extension management
-- get environment settings
-- uninstall an extension
-- create automation company
-- list rapidstart configuration packages
-- list automation companies
-- delete automation company
-- list users
 - administration
 - create environment
-- company management
-- list configuration packages
-- restore environment
-- dynamics 365
 - create a new company
-- list scheduled background jobs
-- get scheduled upgrade information
-- list installed apps in an environment
-- install extension
-- list scheduled jobs
 - restore an environment from a point in time
-- user management
-- copy an environment
-- business management
-- finance
-- inventory
-- dynamics nav
-- uninstall extension
-- list installed apps
-- list environments
-- storage quotas
-- list security groups
-- get allowed quotas and limits
-- get user
-- update user
-- business central
-- list published extensions
+- create automation company
 - get quotas
-- navision
-- update user properties
-- delete a company
-- automation
-- get environment details
-- microsoft
-- single environment
-- get allowed quotas
-- list permission sets
-- get environment storage
-- get environment
-- get environment storage usage
-- list business central users
-- create a new environment
-- list all environments
-- list extensions
-- copy environment
-- get a user by id
-- list features
-- environment management
-- delete an environment
-- delete environment
 - list companies
-- permission sets
-- install an extension
-- erp
+- update user properties
 - list all business central environments
+- list business central users
+- uninstall an extension
+- navision
+- list environments
+- get environment storage
+- storage quotas
+- copy an environment
+- list configuration packages
+- microsoft
+- list security groups
+- get scheduled upgrade information
+- extension management
+- environment management
+- permission sets
+- company management
+- dynamics 365
+- single environment
+- delete automation company
 - get scheduled upgrade
+- get environment
+- install an extension
+- install extension
+- delete a company
+- get user
+- business management
+- inventory
+- erp
+- list permission sets
+- restore environment
+- copy environment
+- dynamics nav
+- list extensions
+- user management
+- finance
+- create a new environment
+- automation
+- get environment settings
+- delete an environment
+- get a user by id
+- list scheduled jobs
+- list rapidstart configuration packages
+- list features
+- list published extensions
+- get allowed quotas and limits
+- update user
+- get allowed quotas
+- get environment details
+- list all environments
+- list installed apps
+- delete environment
+- uninstall extension
+- list automation companies
+- list installed apps in an environment
+- list scheduled background jobs
+- get environment storage usage
+- list users
+- business central
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

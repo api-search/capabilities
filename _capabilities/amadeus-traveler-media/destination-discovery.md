@@ -24,39 +24,39 @@ personas: []
 provider_name: Amadeus Traveler Media
 provider_slug: amadeus-traveler-media
 search_terms:
-- tourism
-- get attraction details
-- get poi
-- search attractions
-- discovery
-- points of interest
-- hotel sentiment ratings.
-- content
-- points of interest discovery.
-- search pois
 - media
-- travel
-- retrieve detailed information about a specific tourist attraction or point of interest.
-- content manager building rich destination guides with attractions and ratings.
-- find attractions and points of interest near a location.
-- Travel App Developer
-- destination
-- get hotel sentiment ratings.
-- amadeus
-- Destination Content Manager
 - photos
-- destinations
-- hotels
-- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
-- developer building destination discovery and travel planning applications.
-- hotel ratings and traveler sentiment data.
-- get details for a specific point of interest.
-- individual point of interest details.
-- retrieve sentiment-based ratings for hotels derived from traveler reviews, covering location, comfort, service, food, and facilities categories.
+- find attractions and points of interest near a location.
 - discover destinations with pois, hotel ratings, and recommendations.
+- search pois
+- get hotel sentiment ratings.
+- search attractions
+- retrieve sentiment-based ratings for hotels derived from traveler reviews, covering location, comfort, service, food, and facilities categories.
+- Destination Content Manager
+- tourism
 - get hotel sentiment ratings
-- tourist attractions, pois, and destination information.
+- Travel App Developer
+- points of interest discovery.
+- hotel sentiment ratings.
+- travel
+- hotel ratings and traveler sentiment data.
 - get hotel ratings
+- destinations
+- destination
+- get details for a specific point of interest.
+- tourist attractions, pois, and destination information.
+- amadeus
+- hotels
+- individual point of interest details.
+- content manager building rich destination guides with attractions and ratings.
+- discovery
+- find tourist attractions, museums, restaurants, and other points of interest near a geographic location.
+- content
+- retrieve detailed information about a specific tourist attraction or point of interest.
+- points of interest
+- get attraction details
+- developer building destination discovery and travel planning applications.
+- get poi
 slug: destination-discovery
 source_filename: destination-discovery.yaml
 source_heading: Capability Spec

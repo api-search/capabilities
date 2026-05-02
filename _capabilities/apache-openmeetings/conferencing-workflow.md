@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
+- list all user groups
+- conferencing
+- apache openmeetings
+- close room
+- create a new room
+- get upcoming meetings
+- manages users, groups, and system health
+- login
+- calendar and scheduling
+- web conferencing
+- conference room management
+- System Administrator
+- list all registered users
+- open source
+- list upcoming
+- manages conference rooms, invites participants, and handles recordings
+- authenticate a user to openmeetings
+- list groups
+- close a conference room
+- whiteboard
+- check system health status
 - session recordings
+- user management
+- get room hash
+- unified workflow for managing conferencing sessions
+- Meeting Organizer
+- list rooms
+- list recordings
+- get recordings by type
+- list all public conference rooms
+- apache
+- list public rooms
 - create a new conference room
 - generate a secure room access hash
-- create room
-- list users
-- list recordings
-- whiteboard
-- collaboration
-- user management
-- get upcoming meetings
-- close a conference room
 - get upcoming calendar meetings
-- list session recordings
-- list rooms
-- check system health status
 - video conferencing
-- get recordings by type
-- list all user groups
-- manages users, groups, and system health
-- apache openmeetings
-- list all registered users
-- list all public conference rooms
-- list groups
-- login
-- list public rooms
-- create a new room
-- conference room management
-- manages conference rooms, invites participants, and handles recordings
-- close room
-- unified workflow for managing conferencing sessions
-- apache
-- get room hash
-- list upcoming
+- collaboration
 - check health
-- Meeting Organizer
-- System Administrator
-- open source
-- calendar and scheduling
-- authenticate a user to openmeetings
-- conferencing
-- web conferencing
+- list users
+- list session recordings
+- create room
 slug: conferencing-workflow
 source_filename: conferencing-workflow.yaml
 source_heading: Capability Spec

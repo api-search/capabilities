@@ -78,76 +78,76 @@ personas: []
 provider_name: Citrix NetScaler
 provider_slug: citrix-netscaler
 search_terms:
-- create a content switching virtual server
-- network administration
-- bind a backend service to a load balancing virtual server
-- list statistics for all lb virtual servers
-- delete cs vserver
-- save the running netscaler configuration to persistent storage
-- get lb vserver service bindings
-- save ns config
-- list statistics for all content switching virtual servers
-- get netscaler appliance configuration
-- list cs vservers
-- unbind a service from a load balancing virtual server
-- api gateway
+- list all load balancing virtual servers
+- get service bindings for an lb virtual server
 - update a content switching virtual server
-- unbind service from lb vserver
-- update lb vserver
-- update a load balancing virtual server
-- load balancing virtual server statistics
-- create cs vserver
-- get cs vserver
-- save running configuration to disk
-- single content switching virtual server
-- get statistics for an lb virtual server
-- get all service bindings for a load balancing virtual server
-- delete a content switching virtual server
-- service bindings for a load balancing virtual server
-- application delivery controller
-- create lb vserver
-- list all content switching virtual servers
-- list statistics for all cs virtual servers
-- bind service to lb vserver
-- update a load balancing virtual server configuration
-- get details of a specific content switching virtual server
-- get performance statistics for a specific lb virtual server
-- ssl offloading
-- single load balancing virtual server
-- citrix
-- get lb vserver stats
-- get a specific load balancing virtual server
-- netscaler
-- load balancing virtual servers
-- bind a service to an lb virtual server
-- content switching virtual servers
-- get cs vserver stats
-- get lb vserver
-- delete a load balancing virtual server
-- get netscaler configuration
+- update cs vserver
 - delete lb vserver
-- create a new load balancing virtual server
-- get details of a specific load balancing virtual server
-- content switching virtual server statistics
+- get a content switching virtual server
+- get lb vserver stats
+- list lb vservers
+- get statistics for a specific content switching virtual server
+- service bindings for a load balancing virtual server
+- load balancing virtual servers
+- get a specific load balancing virtual server
+- create cs vserver
+- save ns config
+- create a content switching virtual server
+- content switching virtual servers
+- list lb vserver stats
+- get details of a specific content switching virtual server
+- unbind service from lb vserver
+- get cs vserver stats
+- bind service to lb vserver
+- list performance statistics for all lb virtual servers
+- single load balancing virtual server
+- get all service bindings for a load balancing virtual server
+- list statistics for all cs virtual servers
+- list cs vserver stats
+- bind a backend service to a load balancing virtual server
+- get performance statistics for a specific lb virtual server
+- update lb vserver
+- unbind a service from a load balancing virtual server
+- get lb vserver
+- delete cs vserver
 - application security
-- web application firewall
+- get cs vserver
+- list statistics for all content switching virtual servers
 - load balancing
 - list all load balancing virtual servers on the netscaler
-- list lb vservers
-- list lb vserver stats
-- create a load balancing virtual server
-- update cs vserver
-- get a content switching virtual server
-- statistics for a specific lb virtual server
-- get service bindings for an lb virtual server
-- adc management
-- list cs vserver stats
-- list performance statistics for all lb virtual servers
-- get ns config
-- get statistics for a specific content switching virtual server
-- traffic management
 - appliance configuration
-- list all load balancing virtual servers
+- citrix
+- get lb vserver service bindings
+- bind a service to an lb virtual server
+- get details of a specific load balancing virtual server
+- get netscaler configuration
+- list statistics for all lb virtual servers
+- update a load balancing virtual server
+- list cs vservers
+- content switching virtual server statistics
+- web application firewall
+- create a load balancing virtual server
+- application delivery controller
+- ssl offloading
+- delete a load balancing virtual server
+- load balancing virtual server statistics
+- adc management
+- update a load balancing virtual server configuration
+- save running configuration to disk
+- create lb vserver
+- api gateway
+- traffic management
+- get statistics for an lb virtual server
+- list all content switching virtual servers
+- get ns config
+- create a new load balancing virtual server
+- single content switching virtual server
+- statistics for a specific lb virtual server
+- save the running netscaler configuration to persistent storage
+- delete a content switching virtual server
+- network administration
+- get netscaler appliance configuration
+- netscaler
 slug: adc-management
 source_filename: adc-management.yaml
 source_heading: Capability Spec

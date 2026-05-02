@@ -22,24 +22,24 @@ provider_name: Azure DevOps
 provider_slug: azure-dev-ops
 search_terms:
 - list pipeline resources
-- list all resources
-- cloud
-- list pipelines
-- list
-- list organization resources
-- list organizations
-- project management
-- list repository resources
-- resource management
-- list projects
-- devops
-- ci/cd
 - version control
-- azure resource management
-- list project resources
-- list repositorys
-- azure
+- ci/cd
 - management
+- list pipelines
+- azure
+- list organization resources
+- list project resources
+- azure resource management
+- list repositorys
+- list
+- list all resources
+- resource management
+- cloud
+- project management
+- list projects
+- list repository resources
+- list organizations
+- devops
 slug: azure-dev-ops-management
 source_filename: azure-dev-ops-management.yaml
 source_heading: Capability Spec

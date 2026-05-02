@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon MediaConnect
 provider_slug: amazon-mediaconnect
 search_terms:
-- Broadcast Engineer
-- start flow
 - engineer managing live video workflows
-- list all bridges
-- stop a mediaconnect flow
-- manage bridges
-- start a mediaconnect flow
-- broadcasting
-- delete a flow
-- list gateways
-- list flows
-- manage entitlements
 - media
+- live video
+- start flow
+- list all bridges
+- list gateways
+- describe flow
+- Broadcast Engineer
+- get flow details
 - list entitlements
 - list all flows
+- list all mediaconnect bridges
+- manage entitlements
+- broadcasting
+- list all entitlements
+- list bridges
+- live video transport workflow for broadcast engineers
+- list all flow entitlements
+- list all mediaconnect flows for live video transport
+- create a new mediaconnect flow
+- delete a flow
+- live video transport and distribution
+- create a new flow
+- media transport
+- start a mediaconnect flow
+- manage bridges
+- list flows
+- list all mediaconnect gateways
+- delete flow
+- manage live video flows
+- get details of a specific flow
+- create flow
+- stop a mediaconnect flow
 - manage individual flow
 - stop flow
-- list all mediaconnect gateways
-- list all entitlements
-- delete flow
-- live video
-- create flow
-- list all mediaconnect bridges
-- live video transport and distribution
-- get flow details
-- flows
-- get details of a specific flow
-- create a new flow
-- live video transport workflow for broadcast engineers
-- create a new mediaconnect flow
 - aws
-- list bridges
-- list all mediaconnect flows for live video transport
-- list all flow entitlements
-- manage live video flows
-- describe flow
-- media transport
+- flows
 slug: amazon-mediaconnect-live-video-transport
 source_filename: amazon-mediaconnect-live-video-transport.yaml
 source_heading: Capability Spec

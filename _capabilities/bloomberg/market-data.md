@@ -41,46 +41,46 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- search for fields.
-- analytics
-- data license
-- subscribe market bar
-- look up field metadata.
-- request intraday bars.
-- bloomberg
-- intraday tick queries.
-- financial services
-- execution management
-- request historical data.
-- intraday bar request
-- request reference data for securities and fields.
-- subscribe market data
-- news
-- field discovery.
-- search the bloomberg api data dictionary for fields.
-- subscribe to interval-based real-time bars.
-- request end-of-day historical data for securities.
-- market data
-- request reference data.
-- reference data request
-- field search request
-- subscribe to streaming real-time market data.
 - subscribe to custom vwap stream.
-- intraday tick request
 - trading
-- intraday bar queries.
-- business intelligence
-- field info request
-- request intraday ticks.
-- quantitative analysis
+- analytics
+- field search request
 - reference data queries.
+- request reference data for securities and fields.
 - request intraday ohlc bars for a security.
-- enterprise
-- historical data queries.
+- intraday tick queries.
+- market data
 - request raw intraday tick data for a security.
-- transaction cost analysis
+- request intraday bars.
+- subscribe to interval-based real-time bars.
+- intraday bar request
+- news
+- enterprise
 - historical data request
+- subscribe market bar
+- bloomberg
+- execution management
+- data license
+- subscribe to streaming real-time market data.
+- reference data request
+- look up field metadata.
+- field info request
+- search for fields.
+- intraday bar queries.
+- intraday tick request
+- field discovery.
+- transaction cost analysis
 - subscribe market vwap
+- historical data queries.
+- financial services
+- quantitative analysis
+- request intraday ticks.
+- subscribe market data
+- request historical data.
+- request end-of-day historical data for securities.
+- request reference data.
+- business intelligence
+- search the bloomberg api data dictionary for fields.
 - look up metadata for bloomberg field mnemonics.
 slug: market-data
 source_filename: market-data.yaml

@@ -21,34 +21,34 @@ provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
 - analytics
+- retrieve learning activity reports.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- job posting, recruiting, and applicant tracking.
 - sales intelligence, lead management, and crm integration.
-- archives communications for regulatory compliance.
-- marketing
-- business
-- social media
-- recruiting
-- careers
-- employee development tracking and content access.
-- posts jobs and manages candidates through ats integrations.
+- linkedin
 - tracks employee learning activity and completions.
 - data portability and advertiser transparency for dma.
-- linkedin
-- uses sales navigator for lead generation and crm sync.
-- message archiving and regulatory communications governance.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- authentication, sharing, and verification for consumer apps.
-- retrieve learning activity reports.
-- reporting
-- learning
-- integrates linkedin authentication and sharing into applications.
-- b2b advertising, audience targeting, and campaign analytics.
-- get ad analytics
-- retrieve ad analytics by various pivots.
-- get learning activity reports
-- job posting, recruiting, and applicant tracking.
-- professional networking
+- archives communications for regulatory compliance.
 - retrieve ad analytics by various pivots and dimensions.
+- professional networking
+- b2b advertising, audience targeting, and campaign analytics.
+- employee development tracking and content access.
 - retrieve learning activity reports aggregated by account, group, individual, or content.
+- message archiving and regulatory communications governance.
+- marketing
+- get learning activity reports
+- uses sales navigator for lead generation and crm sync.
+- get ad analytics
+- social media
+- integrates linkedin authentication and sharing into applications.
+- recruiting
+- learning
+- posts jobs and manages candidates through ats integrations.
+- retrieve ad analytics by various pivots.
+- careers
+- business
+- authentication, sharing, and verification for consumer apps.
+- reporting
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

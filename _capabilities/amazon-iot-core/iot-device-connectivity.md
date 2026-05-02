@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Core
 provider_slug: amazon-iot-core
 search_terms:
-- get thing
-- amazon iot core delete thing
-- create thing
-- message routing
-- amazon iot core create policy
-- list things
-- create policy
-- mqtt
-- iot
-- delete thing
-- amazon iot core create topic rule
-- attach policy
-- manages amazon iot core resources and operations
-- device management
-- IoT Developer
+- Solutions Architect
 - managed cloud service for iot device connectivity and message routing.
 - list rules
-- amazon iot core create thing
-- amazon iot core resources
-- amazon iot core get thing
-- Solutions Architect
-- aws
 - amazon iot core list things
 - amazon iot core list rules
+- manages amazon iot core resources and operations
+- amazon iot core get thing
+- message routing
 - create topic rule
+- amazon iot core resources
+- amazon iot core delete thing
+- delete thing
+- amazon iot core create thing
+- mqtt
 - amazon iot core attach policy
+- attach policy
+- IoT Developer
+- create thing
+- list things
+- create policy
+- iot
+- get thing
+- device management
+- amazon iot core create policy
+- aws
+- amazon iot core create topic rule
 slug: iot-device-connectivity
 source_filename: iot-device-connectivity.yaml
 source_heading: Capability Spec

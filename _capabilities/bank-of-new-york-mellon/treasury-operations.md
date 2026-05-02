@@ -11,34 +11,34 @@ provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
 - payments
-- treasury
-- get account balances
-- get current and available balances for a bny mellon account
-- list bny mellon treasury accounts for the authenticated client
-- institutional investor or fund manager using bny custody and treasury services
-- Institutional Client
 - list bny accounts
+- get account balances
 - get the status and details of a bny mellon payment
-- get payment status
-- institutional treasury operations including accounts, payments, and funds transfers
-- wire transfers
+- initiate funds transfer
+- executive managing corporate liquidity and treasury operations
+- bny mellon
+- wire, ach, swift, and chips payment execution
 - institutional banking
+- treasury
+- list transactions
+- asset servicing
+- institutional investor or fund manager using bny custody and treasury services
 - list transactions for a bny mellon account
 - initiate payment
-- wire, ach, swift, and chips payment execution
-- Corporate Treasurer
-- Treasury Analyst
 - initiate a payment (wire, ach, swift, chips) through bny mellon
-- asset servicing
-- bny mellon
-- executive managing corporate liquidity and treasury operations
-- analyst executing treasury transactions and reporting
-- internal funds transfers and liquidity management
+- institutional treasury operations including accounts, payments, and funds transfers
 - initiate a funds transfer between bny mellon accounts
-- initiate funds transfer
-- list transactions
+- wire transfers
+- internal funds transfers and liquidity management
 - institutional account management and cash positioning
 - banking
+- Treasury Analyst
+- Corporate Treasurer
+- get current and available balances for a bny mellon account
+- Institutional Client
+- analyst executing treasury transactions and reporting
+- get payment status
+- list bny mellon treasury accounts for the authenticated client
 slug: treasury-operations
 source_filename: treasury-operations.yaml
 source_heading: Capability Spec

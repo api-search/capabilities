@@ -59,63 +59,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list all employees
-- create customer
-- general journals
-- get customer
-- sales invoices
+- customer management
 - create item
-- create sales order
-- list general journals
-- get a customer by id
-- dynamics 365
-- finance
-- list purchase invoices
-- list general ledger accounts
-- list sales orders
-- create a new inventory item
-- list sales invoices
-- business management
-- inventory
-- dynamics nav
-- company information
-- list available companies
-- business central
-- create a new vendor
-- navision
-- list journals
-- list vendors
-- list purchase orders
-- list accounts
 - list all sales orders
-- create a new sales order
+- list all vendors
+- purchasing
+- list available companies
+- list companies
+- sales
+- list customers
+- list inventory items
+- list all purchase orders
+- list all items
+- create a sales order
+- list items
+- navision
+- microsoft
+- create a customer
+- list sales orders
+- general ledger accounts
 - create purchase order
+- dynamics 365
+- inventory
+- list all customers
+- create vendor
+- business management
+- list purchase invoices
+- list employees
+- erp
+- single customer
+- create a new vendor
+- get a customer
+- dynamics nav
+- create a new customer
+- list vendors
+- sales invoices
+- list journals
+- finance
+- vendor management
 - purchase orders
 - sales orders
-- list inventory items
-- customer management
-- create a customer
-- microsoft
-- list customers
-- purchasing
-- create a new customer
-- create a sales order
-- create vendor
-- inventory items
-- list all customers
-- general ledger accounts
-- list all items
-- get a customer
+- general journals
+- create customer
+- list general ledger accounts
+- get a customer by id
+- list general journals
+- company information
+- list all employees
+- create sales order
 - create a new purchase order
-- single customer
-- list companies
-- list items
-- erp
-- list all vendors
-- list all purchase orders
-- vendor management
-- sales
-- list employees
+- get customer
+- list sales invoices
+- create a new inventory item
+- list accounts
+- list purchase orders
+- create a new sales order
+- inventory items
+- business central
 slug: business-operations
 source_filename: business-operations.yaml
 source_heading: Capability Spec

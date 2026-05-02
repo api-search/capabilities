@@ -55,49 +55,49 @@ provider_name: Oracle
 provider_slug: oracle
 search_terms:
 - manage compute instances
-- list vnic attachments
-- list instance console connections
-- list available compute shapes
-- instance action
-- update instance details
-- launch instance
-- perform an action on an instance (start, stop, reset)
-- list volume attachments in a compartment
-- compute
-- manage compute images
-- update image
-- cloud
-- terminate instance
 - list shapes
-- list console connections
-- get image
+- get details of a specific instance
+- get image details
+- launch a new compute instance
+- enterprise
+- get details of a specific image
+- infrastructure
 - database
 - delete a custom image
+- get image
+- create image
+- perform an action on an instance (start, stop, reset)
+- update image
+- delete image
 - terminate an instance
-- get details of a specific image
-- manage a specific compute instance
+- list compute instances in a compartment
+- instance action
+- list vnic attachments in a compartment
+- manage compute images
+- list images
+- list volume attachments in a compartment
+- update instance
+- get instance
+- cloud
 - get instance details
+- update instance details
+- saas
+- list console connections
+- oracle
+- list instance console connections
+- manage a specific image
+- update image details
+- list volume attachments
+- compute
+- manage a specific compute instance
+- list vnic attachments
 - create a custom image from an instance
 - list instances
-- manage a specific image
-- saas
-- get details of a specific instance
-- infrastructure
-- get instance
-- create image
-- get image details
-- enterprise
-- create a custom image
-- list compute instances in a compartment
-- update instance
-- list vnic attachments in a compartment
-- launch a new compute instance
-- delete image
-- update image details
+- terminate instance
 - list compute images
-- list images
-- list volume attachments
-- oracle
+- list available compute shapes
+- create a custom image
+- launch instance
 slug: cloud-compute
 source_filename: cloud-compute.yaml
 source_heading: Capability Spec

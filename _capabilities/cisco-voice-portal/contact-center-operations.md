@@ -45,47 +45,47 @@ personas: []
 provider_name: Cisco Voice Portal
 provider_slug: cisco-voice-portal
 search_terms:
+- list active vxml sessions
+- list call detail records
+- list deployed applications
+- list deployed vxml applications
+- list call detail records from the reporting server
+- list dialed number patterns
 - list managed devices
+- individual call details
+- list configured dialed number patterns
+- voice
+- application management
+- system health
+- get details of a specific active call
+- call detail records
 - get real-time call statistics
 - list devices
 - cisco
-- list all active calls on the cvp call server
-- check cvp call server health status
-- list applications
-- list active vxml sessions
-- list sessions
-- list cdrs
-- get health
-- ivr
-- list configured dialed number patterns
-- list active sessions
-- list dialed number patterns
-- contact center
-- call detail records
-- list call detail records
-- real-time statistics
-- get call details
-- device management
-- voice portal
-- individual call details
-- active call management
-- list active calls
-- list vxml applications
-- vxml
-- system health
-- voice
-- telephony
-- list deployed cvp applications
-- list deployed vxml applications
-- get statistics
 - get call server health
+- list all active calls on the cvp call server
+- list deployed cvp applications
 - get call
-- list call detail records from the reporting server
+- check cvp call server health status
+- list vxml applications
+- list active sessions
+- list applications
+- voice portal
+- list cdrs
+- vxml
+- active call management
+- list sessions
 - vxml session monitoring
-- application management
-- get details of a specific active call
+- telephony
+- device management
+- list active calls
 - list managed cvp devices
-- list deployed applications
+- get statistics
+- ivr
+- get call details
+- contact center
+- get health
+- real-time statistics
 slug: contact-center-operations
 source_filename: contact-center-operations.yaml
 source_heading: Capability Spec

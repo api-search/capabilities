@@ -11,49 +11,49 @@ personas: []
 provider_name: Amazon CodePipeline
 provider_slug: amazon-codepipeline
 search_terms:
-- list action executions for a pipeline
-- update pipeline
-- get the structure and details of a pipeline
-- update the structure of a pipeline
-- delete pipeline
-- release manager persona.
-- stop pipeline execution
-- list pipelines in the account
-- list executions for a pipeline
-- start pipeline execution
-- list webhooks
-- devops engineer persona.
-- get pipeline execution
-- platform engineer persona.
-- list pipelines
 - get details about a pipeline execution
 - unified workflow for devops and release engineering teams to create and manage delivery pipelines, trigger pipeline executions, monitor pipeline statu
-- release automation
-- create pipeline
-- Release Manager
-- retry all failed actions in a pipeline stage
-- get pipeline
-- list action executions
-- stop an in-progress pipeline execution
-- get pipeline state
-- devops
-- unified workflow for devops and release engineering teams to create and manage delivery pipelines, t
-- get the current state of each stage in a pipeline
-- submit approval or rejection for a manual approval action
-- Platform Engineer
-- ci/cd
-- put approval result
-- delete a pipeline
-- list pipeline executions
-- aws
-- continuous delivery
-- DevOps Engineer
-- amazon
 - pipeline
-- create a new delivery pipeline
+- list pipelines in the account
+- list action executions for a pipeline
+- delete pipeline
 - start a pipeline execution
+- get pipeline execution
 - list pipeline webhooks
+- ci/cd
+- amazon
+- release manager persona.
+- list executions for a pipeline
+- list pipelines
+- get pipeline state
+- list webhooks
+- DevOps Engineer
+- retry all failed actions in a pipeline stage
+- delete a pipeline
+- continuous delivery
+- Platform Engineer
+- update pipeline
+- unified workflow for devops and release engineering teams to create and manage delivery pipelines, t
+- release automation
+- get the current state of each stage in a pipeline
+- Release Manager
+- update the structure of a pipeline
+- create pipeline
+- devops engineer persona.
+- list pipeline executions
+- put approval result
+- platform engineer persona.
+- stop an in-progress pipeline execution
+- submit approval or rejection for a manual approval action
+- start pipeline execution
+- create a new delivery pipeline
+- list action executions
 - retry stage execution
+- get the structure and details of a pipeline
+- devops
+- stop pipeline execution
+- aws
+- get pipeline
 slug: amazon-codepipeline-release-pipeline
 source_filename: amazon-codepipeline-release-pipeline.yaml
 source_heading: Capability Spec

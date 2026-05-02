@@ -31,49 +31,49 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- cloud native
-- list all event triggers
-- faas
-- list all action packages
-- list actions
-- activation history
-- event driven
 - fire an event trigger
-- fire trigger
-- list packages
-- list all actions
-- manages serverless deployments and ci/cd pipelines
-- delete action
-- Platform Administrator
-- apache openwhisk
-- event-driven architecture
-- serverless function actions
-- action packages
-- invoke an action
-- serverless computing
-- list triggers
-- list all trigger-to-action rules
-- invoke action
-- invoke a serverless action/function
-- list rules
-- create a new serverless action
-- event triggers
 - builds event-driven applications using serverless functions
-- list all serverless functions/actions
-- create action
-- get details of a specific activation
-- Backend Developer
-- apache
+- invoke action
+- activation history
+- event-driven
+- list triggers
+- serverless computing
+- list rules
+- serverless
 - delete a serverless action
-- manages namespaces, limits, and platform configuration
-- list activations
 - list activation history
 - DevOps Engineer
-- functions
+- invoke a serverless action/function
+- list all action packages
 - open source
+- Backend Developer
+- invoke an action
+- list all event triggers
+- action packages
+- list activations
+- event-driven architecture
+- list all actions
+- delete action
+- fire trigger
+- apache openwhisk
+- serverless function actions
+- create action
+- Platform Administrator
+- create a new serverless action
+- manages serverless deployments and ci/cd pipelines
+- manages namespaces, limits, and platform configuration
+- list all serverless functions/actions
+- apache
+- list packages
+- event driven
+- cloud native
+- functions
+- event triggers
+- list all trigger-to-action rules
+- get details of a specific activation
+- list actions
 - functions as a service
-- event-driven
-- serverless
+- faas
 - get activation
 slug: serverless-workflow
 source_filename: serverless-workflow.yaml

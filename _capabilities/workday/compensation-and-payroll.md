@@ -44,51 +44,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- list all pay groups
-- payroll list pay slips
-- list plans
-- payroll get pay group details
 - list compensation scorecards
-- payroll get pay group
-- benefits change
-- benefits get eligible plans
-- submit a compensation change request
-- list benefit elections
-- comp request change
-- benefit plans
-- list dependents
-- comp request one time payment
-- list all benefit plans
-- get eligible benefit plans for a worker
-- comp list grades
-- submit a benefits change request
-- compensation
+- payroll get pay group details
+- benefits
 - comp list scorecards
+- submit a benefits change request
+- comp list grades
+- list payroll inputs
+- list pay slips
+- benefits change
+- payroll list inputs
+- workday
+- request a one-time payment
+- list pay groups
 - benefits list elections
+- get pay group details
+- hcm
+- list compensation plans
+- comp request change
+- list benefit plans
+- benefit plans
 - get a pay group by id
+- submit a compensation change request
+- cloud computing
+- list all benefit plans
 - pay groups
+- compensation
+- benefits list dependents
+- comp list plans
+- list dependents
+- payroll
+- list benefit elections
 - saas
 - list compensation grades
-- list pay slips
-- benefits list dependents
-- benefits
-- comp list plans
-- compensation plans
-- list compensation plans
-- payroll list pay groups
 - benefits list plans
-- payroll list inputs
-- request a one-time payment
-- list benefit plans
+- get eligible benefit plans for a worker
+- compensation plans
+- benefits get eligible plans
 - financial management
-- hcm
-- list pay groups
 - enterprise software
-- cloud computing
-- payroll
-- get pay group details
-- workday
-- list payroll inputs
+- list all pay groups
+- payroll list pay groups
+- comp request one time payment
+- payroll get pay group
+- payroll list pay slips
+- list plans
 slug: compensation-and-payroll
 source_filename: compensation-and-payroll.yaml
 source_heading: Capability Spec

@@ -11,8 +11,8 @@ provider_slug: amazon-deadline-cloud
 search_terms:
 - compute
 - rendering
-- visual effects
 - media
+- visual effects
 slug: render-farm-operations
 source_filename: render-farm-operations.yaml
 source_heading: Capability Spec

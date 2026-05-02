@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list recent query executions in an athena workgroup.
-- analytics
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- list tables in an athena database to understand available data.
-- sql
-- start a sql query execution
-- list query executions
-- list named queries
-- list databases in an athena data catalog to explore available schemas.
-- check the status of a running or completed athena query execution.
-- get query execution
 - list athena workgroups to understand available query isolation environments.
+- run a sql query against s3 data using amazon athena for serverless analytics.
 - amazon athena
-- named query management
-- create a named query
+- analytics
+- get query results
+- list query executions
+- list work groups
 - sql query management
-- create named query
+- list data catalogs registered with athena to discover available data sources.
+- named query management
+- serverless
 - list saved named queries available in an athena workgroup.
-- download the results of a completed athena sql query.
-- list table metadata
-- list databases
 - start query execution
 - aws
-- list work groups
-- list data catalogs
-- list data catalogs registered with athena to discover available data sources.
 - save a sql query as a named query for reuse in athena.
-- serverless
-- get query results
+- list data catalogs
+- get query execution
+- list tables in an athena database to understand available data.
+- list recent query executions in an athena workgroup.
+- list named queries
+- list table metadata
+- create a named query
+- start a sql query execution
+- sql
+- download the results of a completed athena sql query.
+- list databases
+- create named query
+- check the status of a running or completed athena query execution.
+- list databases in an athena data catalog to explore available schemas.
 slug: sql-analytics
 source_filename: sql-analytics.yaml
 source_heading: Capability Spec

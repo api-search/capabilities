@@ -37,69 +37,69 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- analytics
-- ingesting events from servers, apps, and offline sources.
-- google
-- export
-- create and list audience exports
-- list ga4 properties
-- query users from an audience export
-- privacy officer
-- list ga4 properties to identify available audiences
-- segmenting and exporting user populations for analysis and activation.
-- get audience export details
-- data analyst
-- implements server-side event tracking and offline data collection.
-- data
-- implements privacy-compliant data handling and deletion workflows.
-- get metadata about a specific audience export
-- connects advertising platforms and implements server-side tracking.
-- measures campaign performance, segments audiences, and tracks conversions.
-- analytics administrator
-- manages data privacy compliance including gdpr deletion requests.
-- audiences
-- server-side event tracking with data stream and secret management.
-- create, export, and query ga4 audience segments.
-- integrates ga4 with other platforms and manages infrastructure.
-- get audience export
-- create an audience export
-- segmentation
-- query audience export
-- list all audience exports for a property
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- user data deletion, access auditing, and data collection acknowledgement.
-- backend engineer
-- setting up and maintaining ga4 account and property structure.
+- builds automated reporting pipelines and dashboards from ga4 data.
 - compliance team
-- retrieve users from a completed audience export
+- google analytics
+- get audience export details
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- audits data access and monitors configuration changes.
+- sets up and maintains ga4 accounts, properties, and configurations.
+- marketing team
+- analytics
+- create an audience export
+- segmenting and exporting user populations for analysis and activation.
+- attribution
 - manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- get a specific audience export
+- retrieve users from an audience export
+- privacy officer
+- implements server-side event tracking and offline data collection.
+- create audience export
+- list properties for audience context
+- data
+- retrieve users from a completed audience export
+- create an audience export for a ga4 property
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- query users from an audience export
+- data protection engineer
 - connecting ga4 with advertising, app, and measurement platforms.
 - machine learning
-- extracts insights from ga4 data through reports and explorations.
-- builds automated reporting pipelines and dashboards from ga4 data.
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- data protection engineer
-- audits data access and monitors configuration changes.
-- list properties for audience context
-- reporting
-- web analytics
-- retrieve users from an audience export
 - metrics
-- marketing team
-- querying and analyzing ga4 event data through various report types.
-- managing data privacy, deletion, and access auditing.
-- marketing ops
-- create audience export
+- extracts insights from ga4 data through reports and explorations.
+- server-side event tracking with data stream and secret management.
+- list all audience exports for a property
 - list audience exports
-- create an audience export for a ga4 property
-- attribution
-- bi engineer
-- platform engineer
-- list properties
-- sets up and maintains ga4 accounts, properties, and configurations.
-- google analytics
+- manages data privacy compliance including gdpr deletion requests.
 - marketing
+- list properties
+- list ga4 properties to identify available audiences
+- measures campaign performance, segments audiences, and tracks conversions.
+- get a specific audience export
+- implements privacy-compliant data handling and deletion workflows.
+- platform engineer
+- managing data privacy, deletion, and access auditing.
+- user data deletion, access auditing, and data collection acknowledgement.
+- audiences
+- querying and analyzing ga4 event data through various report types.
+- analytics administrator
+- web analytics
+- ingesting events from servers, apps, and offline sources.
+- create, export, and query ga4 audience segments.
+- bi engineer
+- integrates ga4 with other platforms and manages infrastructure.
+- connects advertising platforms and implements server-side tracking.
+- get audience export
+- export
+- list ga4 properties
+- marketing ops
+- google
+- segmentation
+- query audience export
+- create and list audience exports
+- setting up and maintaining ga4 account and property structure.
+- reporting
+- get metadata about a specific audience export
+- backend engineer
+- data analyst
 slug: audience-management
 source_filename: audience-management.yaml
 source_heading: Capability Spec

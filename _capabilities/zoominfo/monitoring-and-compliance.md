@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- get api usage data.
-- validate a webhook target url is reachable.
-- b2b data
 - update webhook
-- check compliance
 - get subscription types
-- get usage
-- validate target url
-- data
-- webhook target url validation.
-- update an existing webhook subscription.
-- list webhooks
-- company data
-- sales intelligence
-- check data compliance status for specified contacts.
-- api usage
-- validate a webhook target url.
-- zoominfo
-- list all webhook subscriptions.
-- marketing intelligence
-- get available webhook subscription types.
-- list all configured webhook subscriptions.
-- webhooks
-- lead generation
-- b2b
-- create webhook
-- individual webhook management.
-- contacts
-- monitoring
-- contact database
+- b2b data
 - compliance
-- create a new webhook subscription.
-- available webhook subscription types.
-- create a new webhook subscription for data change notifications.
-- api usage tracking.
-- get api usage data and consumption metrics.
+- get usage
+- list all configured webhook subscriptions.
+- api usage
+- list all webhook subscriptions.
+- contacts
+- data
 - delete a webhook subscription.
 - check compliance status for specified contacts.
-- webhook subscription management.
-- data compliance operations.
+- list webhooks
 - delete webhook
+- api usage tracking.
+- validate target url
+- create webhook
+- monitoring
+- individual webhook management.
+- update an existing webhook subscription.
+- check compliance
+- validate a webhook target url.
+- data compliance operations.
+- sales intelligence
+- get api usage data and consumption metrics.
+- company data
+- webhooks
+- zoominfo
+- get available webhook subscription types.
+- lead generation
+- contact database
+- validate a webhook target url is reachable.
+- marketing intelligence
+- b2b
+- get api usage data.
+- webhook subscription management.
+- available webhook subscription types.
+- create a new webhook subscription for data change notifications.
+- check data compliance status for specified contacts.
+- webhook target url validation.
+- create a new webhook subscription.
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

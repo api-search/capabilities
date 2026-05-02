@@ -11,25 +11,25 @@ personas: []
 provider_name: AWS Step Functions
 provider_slug: aws-step-functions
 search_terms:
-- workflows
-- start_execution
-- create_state_machine
-- stop a running state machine execution
-- ipaas
-- create a new step functions state machine
 - stop_execution
-- state machine
-- delete a step functions state machine
-- start an execution of a state machine
-- orchestration
-- list_state_machines
-- list executions for a state machine
-- list all step functions state machines
-- list_executions
-- get details about a state machine execution
-- describe_execution
-- serverless
 - delete_state_machine
+- create_state_machine
+- delete a step functions state machine
+- get details about a state machine execution
+- create a new step functions state machine
+- serverless
+- describe_execution
+- list executions for a state machine
+- start_execution
+- state machine
+- stop a running state machine execution
+- list_executions
+- start an execution of a state machine
+- workflows
+- list all step functions state machines
+- list_state_machines
+- orchestration
+- ipaas
 slug: orchestration-workflow
 source_filename: orchestration-workflow.yaml
 source_heading: Capability Spec

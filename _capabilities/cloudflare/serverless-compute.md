@@ -42,78 +42,78 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- list message queues.
-- list worker deployments.
+- edge
+- delete a queue.
+- workers list deployments
+- object storage
+- edge computing
+- pull messages from a queue.
+- workers list scripts
+- pages rollback deployment
 - list pages deployments
-- list queues
+- list worker routes.
+- list deployments
+- pages create project
+- list durable object namespaces
 - list worker secrets.
-- rollback a pages deployment.
-- api gateway
-- containers
-- pages get project
-- dns
-- list all workers for an account.
+- serverless
+- queues pull messages
+- artificial intelligence
+- cloudflare
+- pages deployment management.
+- pages list projects
+- deployment
+- queues list queues
+- cdn
+- list worker scripts
+- list pages projects.
+- list queues
+- upload a worker script.
+- list all workers.
+- list durable objects in a namespace.
+- create a message queue.
+- queues delete queue
+- ddos protection
+- platform
+- real-time communication
+- list queues.
+- ai gateway
+- list worker scripts.
+- workers create deployment
+- worker deployment management.
+- list pages projects
+- list workers
+- create a pages project.
+- workers list routes
+- cloud
+- workers list workers
 - queue management.
 - workers upload script
-- workers list routes
-- edge
-- cloud
-- worker deployment management.
-- durable objects list namespaces
-- get pages project details.
-- queues send message
-- list worker routes.
-- pull messages from a queue.
-- workers list workers
-- list pages projects.
-- artificial intelligence
-- real-time communication
-- list all workers.
-- pages create project
-- list durable object namespaces.
-- pages rollback deployment
-- ddos protection
-- durable objects list objects
-- object storage
-- create a worker deployment.
-- upload a worker script.
-- queues delete queue
-- create a pages project.
+- pages get project
 - pages list deployments
-- pages list projects
-- web performance
-- queues pull messages
-- list deployments
+- durable objects list objects
 - list pages deployments.
-- workers create deployment
-- ai gateway
-- list queues.
+- worker script management.
+- list all workers for an account.
+- send a message to a queue.
+- queues send message
+- api gateway
+- delete a worker script.
+- dns
+- get pages project details.
+- containers
+- list durable object namespaces.
+- durable object namespace management.
+- create a worker deployment.
+- list message queues.
+- web performance
+- rollback a pages deployment.
+- security
+- durable objects list namespaces
+- workers delete script
+- list worker deployments.
 - pages project management.
 - queues create queue
-- send a message to a queue.
-- list durable objects in a namespace.
-- list workers
-- workers list scripts
-- pages deployment management.
-- list worker scripts
-- workers delete script
-- cloudflare
-- durable object namespace management.
-- list pages projects
-- worker script management.
-- edge computing
-- delete a queue.
-- security
-- workers list deployments
-- queues list queues
-- create a message queue.
-- platform
-- deployment
-- list durable object namespaces
-- cdn
-- list worker scripts.
-- delete a worker script.
-- serverless
 - workers list secrets
 slug: serverless-compute
 source_filename: serverless-compute.yaml

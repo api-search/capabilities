@@ -28,41 +28,41 @@ personas: []
 provider_name: Argo
 provider_slug: argo
 search_terms:
-- cncf
-- kubernetes
-- list applications
-- workflows create
-- uses argo tools for ci/cd and gitops workflows
-- list workflows
-- create workflow
-- list all argo cd applications with sync and health status
-- workflow engine
-- applications list
-- list all argo workflows in a namespace
-- complete argo project platform combining workflows and cd for devops teams
-- sync application
-- platform engineering
-- list all workflows
-- gitops application management
-- applications sync
-- container-native workflow execution
-- container orchestration platform
-- Platform Engineer
 - progressive delivery
-- ci/cd
-- workflows list
-- manages kubernetes platform tools including argo workflows and argo cd
-- submit a new workflow
-- DevOps Engineer
-- submit a new argo workflow
-- sync an application from git
+- list all argo workflows in a namespace
 - git-driven deployment and infrastructure management
-- open source
-- trigger an argo cd application sync from git
-- list argo cd applications
-- gitops
-- argo
 - workflow management
+- applications sync
+- ci/cd
+- cncf
+- list all argo cd applications with sync and health status
+- kubernetes
+- applications list
+- workflows list
+- DevOps Engineer
+- workflows create
+- sync application
+- open source
+- Platform Engineer
+- container-native workflow execution
+- gitops
+- container orchestration platform
+- list applications
+- workflow engine
+- submit a new workflow
+- trigger an argo cd application sync from git
+- gitops application management
+- list all workflows
+- submit a new argo workflow
+- list argo cd applications
+- platform engineering
+- complete argo project platform combining workflows and cd for devops teams
+- manages kubernetes platform tools including argo workflows and argo cd
+- create workflow
+- list workflows
+- argo
+- sync an application from git
+- uses argo tools for ci/cd and gitops workflows
 slug: argo-platform
 source_filename: argo-platform.yaml
 source_heading: Capability Spec

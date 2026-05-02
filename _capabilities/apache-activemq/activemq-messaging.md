@@ -23,34 +23,34 @@ personas: []
 provider_name: Apache ActiveMQ
 provider_slug: apache-activemq
 search_terms:
-- send a message to a queue or topic.
-- developers integrating applications with activemq for asynchronous messaging.
-- message broker
-- monitor broker jmx attributes.
-- java
-- receive message
-- send message
-- read broker metric
-- mqtt
-- read a broker jmx mbean attribute.
-- Application Developer
-- receive a message from an activemq queue or topic.
-- stomp
-- Platform Operator
-- jms
-- monitoring
 - produce and consume messages.
-- apache activemq
-- messaging
+- receive a message from an activemq queue or topic.
+- message broker
+- receive message
+- Application Developer
+- read a broker jmx mbean attribute.
 - read a jmx mbean attribute from the activemq broker for monitoring.
-- unified messaging and monitoring capability for activemq.
-- send a message to an activemq queue or topic.
-- amqp
-- apache
 - broker management
-- operators monitoring and managing activemq broker health and performance.
+- amqp
+- messaging
+- java
+- unified messaging and monitoring capability for activemq.
+- send message
 - open source
+- monitoring
+- jms
+- apache activemq
+- read broker metric
+- Platform Operator
+- operators monitoring and managing activemq broker health and performance.
+- send a message to an activemq queue or topic.
+- developers integrating applications with activemq for asynchronous messaging.
+- mqtt
 - receive a message from a queue or topic.
+- send a message to a queue or topic.
+- apache
+- stomp
+- monitor broker jmx attributes.
 slug: activemq-messaging
 source_filename: activemq-messaging.yaml
 source_heading: Capability Spec

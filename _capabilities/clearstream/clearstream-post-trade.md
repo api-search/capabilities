@@ -9,16 +9,16 @@ personas: []
 provider_name: Clearstream
 provider_slug: clearstream
 search_terms:
-- capital markets
-- post-trade infrastructure
-- custody
-- iso 15022
 - settlement
-- securities
+- post-trade infrastructure
+- iso 15022
 - iso 20022
+- capital markets
+- collateral management
+- securities
+- custody
 - swift
 - financial services
-- collateral management
 slug: clearstream-post-trade
 source_filename: clearstream-post-trade.yaml
 source_heading: Capability Spec

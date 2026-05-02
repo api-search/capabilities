@@ -10,24 +10,24 @@ personas: []
 provider_name: Amazon License Manager
 provider_slug: amazon-license-manager
 search_terms:
-- workflow
-- creates a license configuration.
-- license configurations list license configurations
-- aws
-- manages resources and configurations
-- license configurations get license configuration
-- amazon license manager
-- license configurations create license configuratio
-- lists the license configurations for your account.
-- integrates api into applications
-- compliance
-- unified workflow for amazon license manager resource management
-- cost management
-- license management
-- software licensing
 - Developer
-- Administrator
+- lists the license configurations for your account.
+- workflow
 - gets detailed information about the specified license configuration.
+- creates a license configuration.
+- Administrator
+- compliance
+- software licensing
+- cost management
+- license configurations create license configuratio
+- license configurations list license configurations
+- license management
+- amazon license manager
+- license configurations get license configuration
+- manages resources and configurations
+- aws
+- integrates api into applications
+- unified workflow for amazon license manager resource management
 slug: amazon-license-manager-workflow
 source_filename: amazon-license-manager-workflow.yaml
 source_heading: Capability Spec

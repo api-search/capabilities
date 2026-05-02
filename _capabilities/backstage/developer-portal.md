@@ -23,35 +23,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- delete catalog entity
-- create location
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- list all registered catalog locations
-- engineer building and maintaining the internal developer platform and backstage configuration
-- delete an entity from the software catalog
-- list all entities in the backstage software catalog including components, apis, resources, systems, and users
-- list locations
-- central inventory of all software components, apis, and resources
-- register a new catalog location
-- register a new catalog location (github repo url, yaml file) to ingest entities
-- software developer using backstage to discover services, bootstrap projects, and read documentation
 - scaffolding, documentation, and search to accelerate development
-- register catalog location
-- software catalog entities
+- list locations
 - list entities
-- list catalog entities
 - list all catalog entities
-- Platform Engineer
-- catalog locations
+- engineer building and maintaining the internal developer platform and backstage configuration
 - get a specific catalog entity by kind, namespace, and name
-- software catalog
-- list catalog locations
-- developer portal
-- get catalog entity
-- open source
-- backstage
+- software catalog entities
 - Developer
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
+- software catalog
+- open source
+- Platform Engineer
+- delete catalog entity
+- developer portal
 - internal developer platform
+- register catalog location
+- list all registered catalog locations
+- register a new catalog location (github repo url, yaml file) to ingest entities
+- register a new catalog location
+- delete an entity from the software catalog
+- get catalog entity
+- list catalog entities
+- central inventory of all software components, apis, and resources
+- list catalog locations
+- create location
+- list all entities in the backstage software catalog including components, apis, resources, systems, and users
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- backstage
+- catalog locations
 slug: developer-portal
 source_filename: developer-portal.yaml
 source_heading: Capability Spec

@@ -75,69 +75,69 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- connect product catalog
-- retrieves information about a registered phone number.
 - deregisters a phone number.
-- lists product catalogs.
-- remove assigned user
-- deregister phone numbers.
-- get business account
-- requests a verification code.
+- two-step verification pin management.
 - disconnects a product catalog from a waba.
-- business profile
-- get phone number
-- user assignments for a waba.
-- user management
-- sets or updates the two-step verification pin.
-- individual phone number information.
-- assign user
-- product catalog management.
-- register phone number
-- verifies a phone number.
-- sets or updates the two-step verification pin for a phone number.
-- connects a product catalog to a waba.
-- disconnects a product catalog.
 - request verification code
 - deregisters a phone number from the cloud api.
-- lists product catalogs connected to a waba.
-- verifies a phone number using a verification code.
-- whatsapp
-- retrieves the whatsapp business profile.
-- lists all phone numbers associated with a waba.
-- removes an assigned user.
-- retrieves information about a whatsapp business account.
-- connects a product catalog.
-- registers a phone number for cloud api.
-- lists all users assigned to a waba.
-- register phone numbers.
-- retrieves the whatsapp business profile for a phone number.
-- removes a user from a waba.
-- disconnect product catalog
-- registers a phone number for use with the cloud api.
-- two-step verification pin management.
-- set two step verification
-- request verification codes for registration.
 - requests a verification code via sms or voice call for phone registration.
-- assigns a user to a waba.
-- account management
-- list product catalogs
-- list assigned users
-- updates the whatsapp business profile.
-- phone numbers
+- retrieves information about a registered phone number.
 - assigns a user with specific tasks to a waba.
-- list phone numbers
-- whatsapp business account information.
+- requests a verification code.
+- connect product catalog
 - verify phone numbers.
-- deregister phone number
-- get business profile
-- updates the whatsapp business profile for a phone number.
-- lists assigned users.
-- product catalogs
+- lists all users assigned to a waba.
+- phone numbers
+- list phone numbers
+- lists all phone numbers associated with a waba.
+- updates the whatsapp business profile.
+- removes a user from a waba.
+- assign user
+- list assigned users
+- sets or updates the two-step verification pin.
+- lists product catalogs connected to a waba.
+- sets or updates the two-step verification pin for a phone number.
+- deregister phone numbers.
 - verify code
-- registration
+- register phone number
+- business profile
+- assigns a user to a waba.
+- register phone numbers.
+- individual phone number information.
+- verifies a phone number using a verification code.
+- disconnect product catalog
+- set two step verification
 - whatsapp business profile management.
+- product catalog management.
+- user management
+- disconnects a product catalog.
+- product catalogs
+- retrieves the whatsapp business profile for a phone number.
+- get business account
+- deregister phone number
+- list product catalogs
+- lists product catalogs.
+- connects a product catalog.
+- registers a phone number for use with the cloud api.
+- registers a phone number for cloud api.
+- request verification codes for registration.
+- removes an assigned user.
+- retrieves the whatsapp business profile.
+- account management
+- verifies a phone number.
+- registration
+- get business profile
+- whatsapp
+- whatsapp business account information.
+- retrieves information about a whatsapp business account.
+- lists assigned users.
 - update business profile
+- get phone number
+- user assignments for a waba.
+- updates the whatsapp business profile for a phone number.
 - phone numbers associated with a waba.
+- connects a product catalog to a waba.
+- remove assigned user
 slug: account-and-phone-management
 source_filename: account-and-phone-management.yaml
 source_heading: Capability Spec

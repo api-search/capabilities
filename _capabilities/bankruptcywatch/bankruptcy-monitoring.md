@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- get case docket
-- list all active bankruptcy monitoring alerts
-- lending
-- file proof of claim
-- get detailed information about a specific bankruptcy case
-- Loan Officer
+- list claims register for a bankruptcy case
 - retrieve docket entries for a bankruptcy case
-- bankruptcy case research, claims management, and automated monitoring
-- lender monitoring borrowers for bankruptcy filings
-- legal
-- pacer
-- create a bankruptcy monitoring alert for a debtor or entity
-- bankruptcywatch
-- business or individual owed money by a bankruptcy filer
-- creditor
-- search bankruptcy cases
-- court data
-- bankruptcy
-- compliance
-- automated alerts for bankruptcy filings
 - create bankruptcy monitor
+- compliance
+- creditor
+- business or individual owed money by a bankruptcy filer
 - list monitors
 - search for bankruptcy cases across all us bankruptcy court districts
-- Bankruptcy Attorney
+- create a bankruptcy monitoring alert for a debtor or entity
 - get bankruptcy case
-- list case claims
+- bankruptcy case research, claims management, and automated monitoring
+- Loan Officer
+- automated alerts for bankruptcy filings
 - file a proof of claim for a bankruptcy case
-- Creditor
-- attorney managing creditor representation in bankruptcy proceedings
-- list claims register for a bankruptcy case
+- list all active bankruptcy monitoring alerts
+- lending
+- pacer
+- lender monitoring borrowers for bankruptcy filings
+- get detailed information about a specific bankruptcy case
+- legal
+- list case claims
+- file proof of claim
 - us bankruptcy court cases and proceedings
+- search bankruptcy cases
+- get case docket
+- Bankruptcy Attorney
+- attorney managing creditor representation in bankruptcy proceedings
+- bankruptcywatch
+- bankruptcy
+- court data
+- Creditor
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

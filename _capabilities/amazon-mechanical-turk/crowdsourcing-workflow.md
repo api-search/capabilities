@@ -34,52 +34,52 @@ personas: []
 provider_name: Amazon Mechanical Turk
 provider_slug: amazon-mechanical-turk
 search_terms:
-- reject assignment
-- create and manage human intelligence tasks.
-- send a bonus payment to a worker for exceptional task completion.
-- notify workers
-- create hit
-- send a bonus payment to a worker.
-- approve a completed worker assignment and release payment.
-- list qualification types used to filter and target the right worker pool.
-- data scientist using mturk for data labeling, annotation, and validation tasks.
-- list assignments
-- labor
-- create a new human intelligence task for crowdsourced annotation, transcription, or research.
-- list qualification types
-- reject a completed worker assignment with feedback.
-- get the current prepaid balance available in the mturk requester account.
-- mechanical turk
 - send bonus
-- list assignments for hit
-- managing account balance and prepaid funds.
-- tasks
-- creating and managing hits for crowdsourced work.
-- get hit
-- get account balance
-- approve assignment
-- account balance and status.
-- get detailed information about a specific hit including status and completion metrics.
-- send notification messages to specific workers.
-- create a new hit for crowdsourced task execution.
-- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
-- academic or market researcher coordinating human intelligence tasks for studies and surveys.
-- manage worker bonuses and notifications.
-- Data Scientist
-- managing worker qualifications, blocks, bonuses, and notifications.
-- machine learning
-- list all worker assignments submitted for a specific hit for review.
+- reject assignment
+- list qualification types
 - list hits
-- crowdsourcing
-- review and manage worker assignment submissions.
-- get the current prepaid balance in the mturk account.
-- list all active and reviewable hits in the requester account.
-- Researcher
-- human intelligence
-- amazon
-- approve a completed assignment and release payment.
-- list all hits in the requester account.
+- send notification messages to specific workers.
+- create a new human intelligence task for crowdsourced annotation, transcription, or research.
+- creating and managing hits for crowdsourced work.
+- create and manage human intelligence tasks.
 - list all assignments submitted for a hit.
+- create hit
+- list all hits in the requester account.
+- list all worker assignments submitted for a specific hit for review.
+- notify workers
+- reject a completed worker assignment with feedback.
+- amazon
+- managing account balance and prepaid funds.
+- academic or market researcher coordinating human intelligence tasks for studies and surveys.
+- send a bonus payment to a worker for exceptional task completion.
+- get detailed information about a specific hit including status and completion metrics.
+- get the current prepaid balance available in the mturk requester account.
+- get account balance
+- tasks
+- machine learning
+- labor
+- create a new hit for crowdsourced task execution.
+- approve a completed assignment and release payment.
+- review and manage worker assignment submissions.
+- send a bonus payment to a worker.
+- list qualification types used to filter and target the right worker pool.
+- workflow for data scientists and researchers to manage hits and worker assignments on amazon mechanical turk.
+- Data Scientist
+- account balance and status.
+- list assignments for hit
+- list assignments
+- list all active and reviewable hits in the requester account.
+- approve assignment
+- human intelligence
+- get hit
+- managing worker qualifications, blocks, bonuses, and notifications.
+- Researcher
+- mechanical turk
+- data scientist using mturk for data labeling, annotation, and validation tasks.
+- crowdsourcing
+- approve a completed worker assignment and release payment.
+- manage worker bonuses and notifications.
+- get the current prepaid balance in the mturk account.
 slug: crowdsourcing-workflow
 source_filename: crowdsourcing-workflow.yaml
 source_heading: Capability Spec

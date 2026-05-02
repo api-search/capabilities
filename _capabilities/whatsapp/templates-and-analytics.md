@@ -35,33 +35,33 @@ personas: []
 provider_name: WhatsApp
 provider_slug: whatsapp
 search_terms:
-- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
-- analytics
-- retrieves conversation analytics.
-- template performance analytics.
-- update message template
-- conversation analytics and reporting.
 - get conversation analytics
-- create message template
-- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
-- retrieves template analytics.
-- message template management.
-- deletes a message template. deleting by name removes all language variants.
-- whatsapp
-- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
-- creates a new message template. templates must be approved by meta before use.
-- deletes a message template.
-- reporting
-- list message templates
-- delete message template
-- lists all message templates for a waba.
-- updates an existing message template.
-- individual message template management.
-- creates a new message template.
-- message templates
 - lists all message templates for a whatsapp business account. supports filtering by name, language, status, and category.
-- get template analytics
+- analytics
+- create message template
+- retrieves template analytics.
+- creates a new message template. templates must be approved by meta before use.
+- conversation analytics and reporting.
+- deletes a message template. deleting by name removes all language variants.
+- retrieves conversation analytics for a waba with configurable time range, granularity, and dimensional breakdown.
+- retrieves analytics for specific message templates including sent, delivered, read, clicked, and cost metrics.
+- individual message template management.
+- updates an existing message template. only approved or paused templates can be edited. edits re-trigger the approval process.
+- message templates
 - marketing
+- updates an existing message template.
+- template performance analytics.
+- delete message template
+- update message template
+- message template management.
+- whatsapp
+- retrieves conversation analytics.
+- get template analytics
+- lists all message templates for a waba.
+- reporting
+- creates a new message template.
+- deletes a message template.
+- list message templates
 slug: templates-and-analytics
 source_filename: templates-and-analytics.yaml
 source_heading: Capability Spec

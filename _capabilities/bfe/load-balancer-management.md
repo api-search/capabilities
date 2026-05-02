@@ -23,35 +23,35 @@ personas: []
 provider_name: BFE
 provider_slug: bfe
 search_terms:
-- get metrics
-- traffic management
-- get available monitoring metric categories
-- cncf
-- dynamic configuration management and reload
-- trigger hot reload of bfe routing rules and configuration
-- baidu
-- reload config
-- get categories
-- engineer managing bfe load balancer deployments and configuration
-- hot reload bfe configuration
-- reload bfe config
-- get bfe metrics
-- get metric categories
-- monitoring
-- trigger a hot reload of bfe routing and load balancing configuration without restart
-- metrics, logging, and distributed tracing
-- bfe
-- retrieve available metric categories
-- get bfe runtime metrics and performance counters
-- load balancer
-- configuration
-- retrieve bfe load balancer runtime metrics and performance counters for monitoring
-- open source
-- list available bfe metric categories for targeted monitoring
-- layer 7 load balancing and traffic routing
-- retrieve bfe runtime monitoring metrics
-- management
 - networking
+- engineer managing bfe load balancer deployments and configuration
+- load balancer
+- get metrics
+- get bfe runtime metrics and performance counters
+- cncf
+- management
+- reload config
+- retrieve bfe load balancer runtime metrics and performance counters for monitoring
+- trigger a hot reload of bfe routing and load balancing configuration without restart
+- bfe
+- layer 7 load balancing and traffic routing
+- open source
+- monitoring
+- hot reload bfe configuration
+- get metric categories
+- retrieve available metric categories
+- reload bfe config
+- get categories
+- retrieve bfe runtime monitoring metrics
+- baidu
+- configuration
+- list available bfe metric categories for targeted monitoring
+- get available monitoring metric categories
+- traffic management
+- metrics, logging, and distributed tracing
+- dynamic configuration management and reload
+- get bfe metrics
+- trigger hot reload of bfe routing rules and configuration
 slug: load-balancer-management
 source_filename: load-balancer-management.yaml
 source_heading: Capability Spec

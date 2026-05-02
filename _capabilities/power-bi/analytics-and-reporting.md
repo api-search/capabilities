@@ -47,67 +47,67 @@ personas: []
 provider_name: Power BI
 provider_slug: power-bi
 search_terms:
-- get gateway details
-- analytics
-- get dataset
-- get report pages
-- power bi
-- create workspace
-- get dashboard tiles
-- export a report
-- clone report
-- create a dataset
-- list gateways
-- create a new dashboard
-- list all power bi reports
-- dataset management
-- get report
-- get workspace users
-- get pages for a report
-- dashboard management
-- get gateway
-- list workspaces
 - create dashboard
-- create a new workspace
-- list workspace users
+- get report details by id
 - list all reports
-- report management
-- list all dashboards
+- get gateway details
+- export a report
+- analytics
 - individual dataset operations
-- create a dashboard
+- list workspaces
+- list all power bi datasets
+- delete a dataset
 - get refresh history
-- get dashboard
-- list all workspaces
-- list datasets
-- list data gateways
-- list dashboards
-- workspace management
+- get gateway datasources
+- list gateways
+- list all power bi reports
 - list all datasets
-- business intelligence
+- clone a report
+- list dashboards
+- list data gateways
 - gateway management
-- create dataset
 - trigger a dataset refresh
 - get dataset refresh history
-- export report
-- data analysis
-- get tiles for a dashboard
-- reporting
-- get gateway datasources
-- delete dataset
-- get report details by id
-- dashboards
-- list reports
-- refresh dataset
-- get datasources
 - get datasources for a dataset
-- clone a report
-- get dataset details by id
-- delete a dataset
+- get datasources
+- get pages for a report
 - get dashboard details
-- list all power bi datasets
+- list all workspaces
 - get dataset details
-- create a new dataset
 - visualization
+- create a dataset
+- dashboards
+- clone report
+- get dashboard tiles
+- get report
+- dataset management
+- list datasets
+- refresh dataset
+- dashboard management
+- list reports
+- create a dashboard
+- get dataset details by id
+- list workspace users
+- create a new dataset
+- get tiles for a dashboard
+- get gateway
+- data analysis
+- list all dashboards
+- delete dataset
+- create a new workspace
+- get workspace users
+- business intelligence
+- create workspace
+- get dashboard
+- export report
+- reporting
+- workspace management
+- power bi
+- get report pages
+- report management
+- create a new dashboard
+- create dataset
+- get dataset
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

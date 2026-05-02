@@ -51,45 +51,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- remove a site from search console.
-- get site
+- seo
+- inspect a url for index status and rich results.
+- query search traffic data.
 - analytics
 - manage search console sites.
-- query search analytics
-- get sitemap details.
-- inspect urls for indexing status.
-- google
-- list all search console sites for the authenticated user.
+- add site
+- inspect a url for index status, crawl info, mobile usability, and rich results.
 - query search analytics data with filters.
-- list sitemaps for a site.
-- manage sitemaps.
+- get details for a specific site.
+- list all search console sites for the authenticated user.
+- list all search console sites.
+- get details for a specific search console site.
+- query search analytics
+- list sitemaps
+- submit a sitemap.
+- delete site
+- get sitemap details.
 - get details for a specific sitemap.
+- webmaster tools
+- delete sitemap
+- remove a site from search console.
+- inspect url
+- inspect urls for indexing status.
+- get site
+- get sitemap
+- webmaster
+- query search traffic data with filters and dimensions.
+- list sites
+- search console
+- add a site to search console.
+- manage sitemaps.
 - search
+- delete a previously submitted sitemap.
+- google
+- list sitemaps for a site.
+- submit sitemap
+- delete a sitemap.
 - submit a sitemap for crawling.
 - list sitemaps submitted for a site.
-- delete sitemap
-- get details for a specific site.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- get sitemap
-- delete site
-- seo
-- submit sitemap
-- delete a previously submitted sitemap.
-- list sites
-- webmaster tools
-- add site
-- list all search console sites.
-- query search traffic data with filters and dimensions.
-- inspect a url for index status and rich results.
-- webmaster
-- delete a sitemap.
-- add a site to search console.
-- search console
-- list sitemaps
-- inspect url
-- query search traffic data.
-- get details for a specific search console site.
-- submit a sitemap.
 slug: seo-management
 source_filename: seo-management.yaml
 source_heading: Capability Spec

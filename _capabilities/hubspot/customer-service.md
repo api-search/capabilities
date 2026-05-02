@@ -35,43 +35,43 @@ provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
 - support tickets
-- analytics
-- individual ticket
-- update a support ticket
-- archive ticket
-- update ticket
-- look up a contact for ticket context
-- commerce
-- customer service
-- content
-- conversations
-- support
-- list associations
-- search tickets
-- search contacts
 - associate a ticket with a contact or company
-- get a support ticket by id
-- crm
+- support
 - email marketing
-- get ticket
-- operations
-- create ticket
-- create a new support ticket
-- hubspot
-- list tickets
-- tickets
-- service
-- marketing automation
-- archive a support ticket
-- list all support tickets
-- list associations for a crm object
+- get a support ticket by id
+- analytics
 - contact lookup
-- get contact
-- search tickets with filters
-- create association
-- search contacts to find the customer
+- update a support ticket
+- list tickets
+- list associations for a crm object
+- search tickets
 - sales
+- individual ticket
+- create ticket
+- list all support tickets
+- search tickets with filters
+- customer service
+- tickets
+- archive ticket
+- search contacts to find the customer
 - marketing
+- get contact
+- list associations
+- archive a support ticket
+- commerce
+- operations
+- content
+- marketing automation
+- look up a contact for ticket context
+- create a new support ticket
+- service
+- crm
+- create association
+- update ticket
+- hubspot
+- search contacts
+- get ticket
+- conversations
 slug: customer-service
 source_filename: customer-service.yaml
 source_heading: Capability Spec

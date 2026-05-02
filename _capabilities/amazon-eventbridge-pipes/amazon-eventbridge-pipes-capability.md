@@ -50,35 +50,35 @@ personas: []
 provider_name: Amazon EventBridge Pipes
 provider_slug: amazon-eventbridge-pipes
 search_terms:
-- DeletePipe
-- amazon eventbridge pipes stoppipe
-- amazon eventbridge pipes listpipes
-- UpdatePipe
-- StartPipe
-- amazon eventbridge pipes listtagsforresource
-- amazon eventbridge pipes describepipe
-- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
-- UntagResource
-- operations teams managing amazon eventbridge pipes infrastructure
-- integration
 - amazon eventbridge pipes deletepipe
-- amazon eventbridge pipes updatepipe
-- ListPipes
-- amazon eventbridge pipes createpipe
-- developers building applications using amazon eventbridge pipes
-- DescribePipe
-- TagResource
-- CreatePipe
-- amazon eventbridge pipes untagresource
-- messaging
-- amazon web services
-- amazon eventbridge pipes startpipe
-- StopPipe
-- ListTagsForResource
+- integration
+- DeletePipe
 - event-driven
-- point-to-point integration between event producers and consumers
+- amazon eventbridge pipes untagresource
+- DescribePipe
 - serverless
+- messaging
+- point-to-point integration between event producers and consumers
+- amazon eventbridge pipes describepipe
+- UpdatePipe
+- StopPipe
+- amazon eventbridge pipes stoppipe
+- amazon eventbridge pipes startpipe
+- UntagResource
+- CreatePipe
 - amazon eventbridge pipes tagresource
+- amazon eventbridge pipes listtagsforresource
+- amazon web services
+- operations teams managing amazon eventbridge pipes infrastructure
+- amazon eventbridge pipes listpipes
+- StartPipe
+- amazon eventbridge pipes createpipe
+- ListPipes
+- ListTagsForResource
+- amazon eventbridge pipes updatepipe
+- TagResource
+- unified capability for managing amazon eventbridge pipes resources. combines amazon eventbridge pipes apis for integration engineer workflows in event processing.
+- developers building applications using amazon eventbridge pipes
 slug: amazon-eventbridge-pipes-capability
 source_filename: amazon-eventbridge-pipes-capability.yaml
 source_heading: Capability Spec

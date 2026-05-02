@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- delete a user.
-- organizational unit management.
-- get group details.
-- individual user management.
-- create org unit
-- list users
-- make user admin
-- list users in the google workspace domain.
-- get group
-- create a new group.
-- update a user.
-- undelete a deleted user.
-- user management
-- collaboration
-- delete a group.
-- patch user
-- list groups.
-- delete user
-- video conferencing
-- create a group.
-- patch user properties.
-- get user
-- update user
 - list org units
-- individual group management.
-- undelete user
-- email
-- list groups in the domain.
-- list users in the domain.
-- sign out user
+- update a user.
 - update a group.
-- domain administration
-- delete group
-- create a new user in the domain.
-- list groups
-- productivity
-- google workspace
-- update group
-- create user
-- create an organizational unit.
-- make a user an admin.
 - user account management.
-- sign out a user from all sessions.
-- group management
-- create a new user.
-- create group
-- get user details.
+- delete a user.
+- list users in the google workspace domain.
 - group management.
-- list organizational units.
+- create user
+- organizational unit management.
+- list users in the domain.
+- make a user an admin.
+- create org unit
+- get group details.
 - storage
 - calendar
+- email
+- productivity
+- get group
+- list groups
+- domain administration
+- update group
+- get user
+- individual user management.
+- delete user
+- undelete a deleted user.
+- individual group management.
+- create a new user.
+- create group
+- user management
+- group management
+- create a new group.
+- patch user properties.
+- sign out user
+- list groups.
+- list organizational units.
+- list groups in the domain.
+- update user
+- create an organizational unit.
+- create a new user in the domain.
+- google workspace
+- patch user
+- delete a group.
+- delete group
+- create a group.
+- make user admin
+- sign out a user from all sessions.
+- collaboration
+- video conferencing
+- get user details.
+- list users
+- undelete user
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

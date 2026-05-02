@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- list models
-- Developer
-- api gateway
-- AI Engineer
-- speech
-- api key management and model discovery
-- embeddings
-- ai engineer evaluating and comparing models for ml pipelines
-- generate vector embeddings for semantic search and rag applications
-- artificial intelligence
 - create chat completion
+- ai engineer evaluating and comparing models for ml pipelines
+- discover all 400+ available ai models on aimlapi platform
+- api key management and model discovery
+- generate embeddings
+- artificial intelligence
+- generate vector embeddings for semantic search and rag applications
+- Developer
+- generate a chat response from any of 400+ ai language models via aimlapi
 - list available models
+- speech
+- generate an image
+- machine learning
+- create image
+- generate image
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- embeddings
+- list all models
+- create embeddings
+- api gateway
+- chat completions via 400+ llms
 - developer integrating ai capabilities into applications via aimlapi
 - image generation
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- create embedding
-- generate a chat response from any of 400+ ai language models via aimlapi
-- machine learning
-- create embeddings
-- generate embeddings
-- generate an image
-- discover all 400+ available ai models on aimlapi platform
+- AI Engineer
 - video generation
-- create image
-- ai models
-- generate an image from a text prompt using aimlapi image generation models
-- chat completions via 400+ llms
-- list all models
-- developer tools
-- create a chat completion
-- ai model inference across modalities
-- generate image
 - llm
+- ai model inference across modalities
+- list models
+- create a chat completion
+- developer tools
+- generate an image from a text prompt using aimlapi image generation models
+- create embedding
+- ai models
 slug: ai-model-operations
 source_filename: ai-model-operations.yaml
 source_heading: Capability Spec

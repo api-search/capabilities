@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- list channels
-- list channel subscriptions
-- create comment
-- google
-- subscribe to channel
-- moderation
-- manage channel information
-- unsubscribe from a youtube channel
-- subscribe to a channel
 - media
-- update comment
-- manage comment threads
-- list comment threads
-- update comment thread
-- manage individual comments
-- video
-- streaming
-- list comments
-- update a comment
-- manage channel subscriptions
-- set moderation status on comments
-- delete a comment
-- videos
-- subscribe to a youtube channel
-- list youtube channels
-- unsubscribe from a channel
-- update channel
-- list comments on a video or channel
-- subscribe
-- set moderation status
 - unsubscribe
-- community
-- unsubscribe from channel
-- social
-- update an existing comment
-- update channel settings
-- subscriptions
-- create a new comment thread
-- comments
-- delete comment
-- create comment thread
+- delete a comment
+- unsubscribe from a channel
 - update a comment thread
-- youtube
-- list subscriptions
 - post a new comment
+- list comments on a video or channel
+- community
+- create a new comment thread
+- manage channel subscriptions
+- comments
+- subscribe to channel
+- video
+- set moderation status on comments
+- streaming
+- create comment
+- subscribe to a youtube channel
+- list comments
+- update comment
+- subscribe to a channel
+- list channel subscriptions
+- unsubscribe from a youtube channel
+- update channel
+- manage individual comments
+- social
+- moderation
+- delete comment
+- youtube
+- manage channel information
+- list youtube channels
+- manage comment threads
+- unsubscribe from channel
+- subscribe
+- list channels
+- create comment thread
+- update a comment
+- list comment threads
+- google
+- subscriptions
+- update channel settings
+- update comment thread
+- set moderation status
+- videos
+- list subscriptions
+- update an existing comment
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

@@ -26,27 +26,27 @@ personas: []
 provider_name: Docusign
 provider_slug: docusign
 search_terms:
-- documents
-- workflows
-- digital transaction management
-- create and send an envelope
 - retrieve envelope details
-- esignature
-- list envelopes in the docusign account
-- electronic signatures
-- list available agreement templates
-- docusign
-- agreements
-- list envelopes
-- create envelope
-- get envelope
-- individual envelope operations
-- envelope lifecycle management
-- create and optionally send an agreement envelope
-- list templates
-- template management
 - contracts
+- list templates
+- individual envelope operations
 - retrieve details of a specific envelope
+- create and optionally send an agreement envelope
+- list envelopes
+- digital transaction management
+- list available agreement templates
+- create envelope
+- documents
+- esignature
+- docusign
+- template management
+- workflows
+- list envelopes in the docusign account
+- agreements
+- electronic signatures
+- envelope lifecycle management
+- create and send an envelope
+- get envelope
 slug: agreement-workflows
 source_filename: agreement-workflows.yaml
 source_heading: Capability Spec

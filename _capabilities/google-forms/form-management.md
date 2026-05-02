@@ -38,51 +38,51 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- Form Administrator
-- google
-- create form
-- set publish settings
-- get a google form's structure and settings
-- create forms, collect responses, monitor changes
-- list responses
-- create a new google form with a title
-- create a notification watch
-- delete watch
-- get response
-- list form responses
-- watch notification operations
-- create watch
-- questionnaires
-- get form details
-- forms
-- google forms
-- form crud operations
-- notifications
-- set up a pub/sub watch for form changes or new responses
-- get a single response
-- Data Analyst
-- responses
-- extend a watch's expiration by seven days
-- list watches
-- create a new form
-- form response operations
-- managing surveys, questions, and notification watches
-- google workspace
-- batch update form
-- analyzes form responses and collects data
-- delete a watch to stop notifications
 - renew watch
-- get form
-- apply batch updates to a form (add/remove/modify items)
-- get a single form response by id
-- surveys
-- delete a watch
-- creating and managing forms for data collection
-- data collection
+- batch update form
+- set publish settings
+- form crud operations
 - list all active watches for a form
-- update form publish settings
+- responses
+- form response operations
+- google forms
+- set up a pub/sub watch for form changes or new responses
+- Form Administrator
+- extend a watch's expiration by seven days
+- managing surveys, questions, and notification watches
+- surveys
+- create forms, collect responses, monitor changes
+- create a new form
+- get a google form's structure and settings
+- notifications
+- Data Analyst
+- delete a watch to stop notifications
+- forms
+- get a single response
+- watch notification operations
+- get a single form response by id
+- create a notification watch
+- data collection
+- analyzes form responses and collects data
+- list responses
+- delete a watch
+- create a new google form with a title
 - creates and manages forms, monitors responses
+- get form details
+- update form publish settings
+- google workspace
+- create watch
+- google
+- questionnaires
+- list form responses
+- apply batch updates to a form (add/remove/modify items)
 - list all responses for a form
+- creating and managing forms for data collection
+- list watches
+- get form
+- get response
+- create form
+- delete watch
 slug: form-management
 source_filename: form-management.yaml
 source_heading: Capability Spec

@@ -28,52 +28,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- mfg get discrete job by id
-- create a discrete job.
-- get bom by id.
-- get onhand quantities
-- inv get inventory items
-- list boms.
-- manufacturing
-- list discrete jobs.
-- on-hand quantity management.
-- retrieve deliveries.
-- get discrete jobs
-- retrieve on-hand quantities.
-- inv get deliveries
 - mfg get bills of material
-- inventory item management.
-- production
-- supply chain
-- inv get onhand quantities
-- mfg get discrete jobs
-- bom management.
-- mfg create discrete job
-- discrete job management.
-- retrieve sales orders.
-- mfg complete assembly
-- business applications
-- mfg get routings
-- inv get sales orders
-- e-business suite
-- enterprise
-- retrieve routings.
-- list on-hand quantities.
-- retrieve discrete jobs.
-- mfg get bill of material by id
-- retrieve wip operations.
-- get inventory items
 - list inventory items.
+- list discrete jobs.
+- complete an assembly.
+- on-hand quantity management.
+- retrieve wip operations.
+- supply chain
 - mfg get wip operations
 - retrieve inventory items.
-- get bills of material
-- get discrete job by id.
-- erp
-- issue material to a job.
-- retrieve bills of material.
+- mfg get routings
+- get inventory items
+- enterprise
+- create a discrete job.
+- inv get sales orders
 - mfg issue material
-- complete an assembly.
+- production
+- issue material to a job.
+- list boms.
+- retrieve on-hand quantities.
+- get bills of material
+- erp
+- business applications
+- get discrete jobs
+- retrieve bills of material.
+- inv get onhand quantities
+- inv get deliveries
 - oracle
+- get discrete job by id.
+- manufacturing
+- retrieve discrete jobs.
+- mfg get discrete job by id
+- inventory item management.
+- retrieve routings.
+- mfg get discrete jobs
+- mfg get bill of material by id
+- bom management.
+- mfg create discrete job
+- retrieve sales orders.
+- get onhand quantities
+- retrieve deliveries.
+- get bom by id.
+- inv get inventory items
+- e-business suite
+- mfg complete assembly
+- list on-hand quantities.
+- discrete job management.
 slug: manufacturing-operations
 source_filename: manufacturing-operations.yaml
 source_heading: Capability Spec

@@ -35,39 +35,39 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list organization groups
-- list groups in an organization
-- identity
-- code
-- list users
 - administration
-- list organization audit events
-- organization management
-- list atlassian organizations
-- policy management
-- list policies
-- list all atlassian organizations
-- collaboration
-- user management
+- list organization groups
 - list organization domains
-- list organizations
-- audit events
-- list domains
 - get organization
-- list groups
-- list organization users
-- productivity
-- software development
-- list domains in an organization
-- group management
-- list users in an organization
-- list organization policies
-- get organization details
-- platform
-- list audit events
+- identity
 - list events
-- atlassian
+- organization management
+- list audit events
 - domain management
+- list atlassian organizations
+- list groups
+- software development
+- platform
+- list groups in an organization
+- list organization users
+- list domains in an organization
+- list domains
+- list organization policies
+- policy management
+- list all atlassian organizations
+- user management
+- group management
+- atlassian
+- audit events
+- list users in an organization
+- code
+- list organization audit events
+- list organizations
+- get organization details
+- list policies
+- collaboration
+- productivity
+- list users
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

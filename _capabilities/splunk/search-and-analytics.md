@@ -31,64 +31,64 @@ personas: []
 provider_name: Splunk
 provider_slug: splunk
 search_terms:
+- delete index
+- logging
+- get untransformed events from a search job.
 - analytics
-- list all splunk indexes.
-- update index settings.
-- send a json event via http event collector.
-- get index
-- control a search job (pause, unpause, finalize, cancel).
+- list monitor inputs
 - list http event collector tokens.
-- delete search job
-- create search job
+- list current search jobs.
+- control search job
+- update index settings.
+- list all splunk indexes.
+- send event
+- create a new spl search job.
 - list search jobs
 - create index
-- create http input token
-- create a new spl search job.
-- get untransformed events from a search job.
-- search
-- logging
-- event ingestion via hec.
-- delete index
-- index management.
-- siem
-- list indexes.
-- get search job status and details.
-- check hec indexing acknowledgment status.
-- list monitor inputs
-- list indexes
 - get index details and settings.
-- delete a search job.
-- export search results directly without creating a job.
-- check ack status
-- create a file monitor data input.
-- data ingestion
-- search job management.
-- list search jobs.
-- monitoring
-- data analysis
-- send event
-- export search results
-- machine data
-- list http input tokens
-- create monitor input
-- get search events
-- control search job
-- get results from a completed search job.
-- create a new splunk index.
-- security
-- delete an index.
-- list file monitor data inputs.
-- create an http event collector token.
-- create an index.
-- get search job
-- list current search jobs.
-- splunk
-- observability
 - send an event.
-- platform
-- create a search job.
+- create a new splunk index.
+- index management.
+- list file monitor data inputs.
+- list indexes.
+- send a json event via http event collector.
+- create a file monitor data input.
+- export search results
+- search job management.
+- create monitor input
+- get results from a completed search job.
 - update index
+- monitoring
+- list search jobs.
+- delete a search job.
+- list http input tokens
+- create an http event collector token.
+- check ack status
+- platform
+- create http input token
+- check hec indexing acknowledgment status.
+- control a search job (pause, unpause, finalize, cancel).
+- create search job
+- delete search job
+- get search job
+- data ingestion
+- create an index.
+- event ingestion via hec.
+- get search job status and details.
+- search
+- data analysis
+- observability
+- get index
+- machine data
 - get search results
+- siem
+- splunk
+- security
+- get search events
+- create a search job.
+- delete an index.
+- list indexes
+- export search results directly without creating a job.
 slug: search-and-analytics
 source_filename: search-and-analytics.yaml
 source_heading: Capability Spec

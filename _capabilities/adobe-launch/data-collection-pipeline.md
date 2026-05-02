@@ -31,39 +31,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- send an interactive event to edge network
-- list secrets for a property
-- list event forwarding rules for a property
-- start media session
-- list secrets for authenticating with forwarding destinations
-- send interactive event
-- create a new event forwarding property
-- end media session
-- send batch events to edge network
-- event forwarding
-- adobe launch
-- list server-side event forwarding properties
-- create event forwarding property
-- secrets for event forwarding destinations
-- create a new event forwarding rule
-- event forwarding rules
-- create secret
-- edge network
-- send batch events to adobe edge network
 - list event forwarding properties
-- send an interactive event to adobe edge network
-- create a secret for an event forwarding destination
-- start a media tracking session
-- send batch events
+- send batch events to edge network
+- event forwarding rules
+- create a new event forwarding rule
+- end media session
 - end a media tracking session
+- event forwarding
+- create a new event forwarding property
+- list secrets for a property
+- start media session
 - create event forwarding rule
-- marketing technology
-- edge network data ingestion
-- server-side event forwarding properties
+- list secrets for authenticating with forwarding destinations
+- edge network
 - list secrets
+- list server-side event forwarding properties
+- create a secret for an event forwarding destination
+- server-side event forwarding properties
+- adobe launch
+- edge network data ingestion
 - data collection
-- list event forwarding rules
 - tag management
+- create event forwarding property
+- list event forwarding rules
+- start a media tracking session
+- send an interactive event to adobe edge network
+- send interactive event
+- marketing technology
+- send an interactive event to edge network
+- send batch events to adobe edge network
+- secrets for event forwarding destinations
+- send batch events
+- create secret
+- list event forwarding rules for a property
 slug: data-collection-pipeline
 source_filename: data-collection-pipeline.yaml
 source_heading: Capability Spec

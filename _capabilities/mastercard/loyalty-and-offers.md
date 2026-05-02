@@ -36,53 +36,53 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get personalized merchant offers for a cardholder
-- create a loyalty program user
-- payments
-- submit a loyalty insurance claim
-- mastercard
-- check cardholder benefit eligibility
-- create loyalty user
-- personalized offers
-- financial services
-- loyalty
-- list experiences
-- get loyalty user
-- get personalized offers
-- priceless experiences
-- allocate a benefit to a cardholder
-- fraud detection
-- allocate benefit
-- get merchant offer content and promotional materials
-- list promotions
-- offers
-- list priceless experiences
-- get loyalty points balance
-- create a charitable donation
-- priceless
 - activate an offer for a cardholder
+- allocate a benefit to a cardholder
+- get loyalty user
 - enroll in promotion
-- credit cards
-- list available priceless experiences
-- create donation
-- enroll a cardholder in a loyalty promotion
-- get points balance
-- loyalty promotions
+- create loyalty user
 - get loyalty user details
-- digital identity
-- list available loyalty promotions
-- check cardholder benefit eligibility by pan
-- apply loyalty rewards as payment
-- open banking
-- check eligibility
-- check benefit eligibility
-- pay with rewards
+- priceless experiences
+- get merchant offer content and promotional materials
+- list priceless experiences
 - benefit eligibility checks
-- rewards
-- get merchant offer content
-- activate offer
+- list available priceless experiences
+- loyalty
+- allocate benefit
 - submit insurance claim
 - get personalized offers for a cardholder
+- priceless
+- check benefit eligibility
+- digital identity
+- offers
+- check eligibility
+- get loyalty points balance
+- enroll a cardholder in a loyalty promotion
+- get merchant offer content
+- create donation
+- loyalty promotions
+- mastercard
+- check cardholder benefit eligibility by pan
+- credit cards
+- fraud detection
+- financial services
+- rewards
+- create a loyalty program user
+- get points balance
+- list experiences
+- apply loyalty rewards as payment
+- list available loyalty promotions
+- create a charitable donation
+- check cardholder benefit eligibility
+- get personalized offers
+- get personalized merchant offers for a cardholder
+- list promotions
+- submit a loyalty insurance claim
+- activate offer
+- personalized offers
+- pay with rewards
+- open banking
+- payments
 slug: loyalty-and-offers
 source_filename: loyalty-and-offers.yaml
 source_heading: Capability Spec

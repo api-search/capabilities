@@ -9,13 +9,13 @@ personas: []
 provider_name: Apache Hive
 provider_slug: apache-hive
 search_terms:
-- big data
 - apache
 - sql
-- data warehouse
 - open source
+- data warehouse
 - hadoop
 - etl
+- big data
 slug: hive-data-querying
 source_filename: hive-data-querying.yaml
 source_heading: Capability Spec

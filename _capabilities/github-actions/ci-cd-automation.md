@@ -75,89 +75,89 @@ personas: []
 provider_name: GitHub Actions
 provider_slug: github-actions
 search_terms:
-- delete a repository secret
-- actions
-- get a specific workflow
-- dispatch
-- delete runner
-- list self-hosted runners for a repository
-- github
-- list repository workflows
-- list repository variables
-- rerun workflow
-- list workflow runs
-- repository variables
-- ci/cd
-- get run
-- delete run
-- create a repository variable
-- re-run a workflow
-- trigger a workflow
-- list workflow artifacts for a repository
-- list runners
-- list self-hosted runners
-- self-hosted runners
-- list workflows
-- delete a specific cache entry
-- single workflow
-- get workflow
-- trigger a workflow dispatch
-- get an artifact
-- delete a workflow artifact
-- remove a self-hosted runner from a repository
-- cancel
-- get a specific workflow by id or filename
-- list jobs
-- trigger workflow
-- cancel run
-- delete artifact
-- re-run only the failed jobs from a workflow run
-- list actions caches for a repository
-- list secrets
-- create or update secret
-- workflow runs
-- workflows
-- create or update a repository secret
-- list repository secrets (names only, not values)
-- get details of a specific workflow run
-- get a specific job from a workflow run
-- get runner
-- rerun
-- create variable
-- trigger a workflow dispatch event
-- rerun failed jobs
-- enable workflow
-- get a specific self-hosted runner
-- jobs for a workflow run
-- enable a workflow
-- workflow artifacts
-- cancel a workflow run
-- get job
-- list variables
-- delete a repository variable
-- list artifacts
-- list caches
-- delete a workflow run
-- disable workflow
-- action caches
-- repository secrets
-- delete variable
-- get a workflow run
-- disable a workflow
-- delete an artifact
-- list repository secrets
-- list workflow runs for a repository
-- devops
-- cancel a running workflow
-- automation
-- get artifact
-- delete cache
-- get details of a specific artifact
-- list jobs for a workflow run
 - delete secret
-- list runs
-- single workflow run
+- list self-hosted runners for a repository
+- list workflow artifacts for a repository
+- list actions caches for a repository
+- delete a repository variable
 - single artifact
+- list caches
+- get a specific self-hosted runner
+- list secrets
+- delete an artifact
+- workflows
+- automation
+- action caches
+- delete run
+- trigger a workflow dispatch event
+- cancel
+- delete runner
+- dispatch
+- delete a specific cache entry
+- actions
+- single workflow run
+- delete a workflow artifact
+- get workflow
+- remove a self-hosted runner from a repository
+- trigger a workflow
+- jobs for a workflow run
+- get a workflow run
+- delete variable
+- get an artifact
+- repository secrets
+- rerun failed jobs
+- enable a workflow
+- list repository workflows
+- get a specific job from a workflow run
+- github
+- delete a repository secret
+- re-run only the failed jobs from a workflow run
+- trigger a workflow dispatch
+- get runner
+- list runs
+- get a specific workflow
+- workflow artifacts
+- list workflows
+- list workflow runs for a repository
+- trigger workflow
+- single workflow
+- get a specific workflow by id or filename
+- create or update a repository secret
+- ci/cd
+- get artifact
+- disable workflow
+- self-hosted runners
+- workflow runs
+- create a repository variable
+- get run
+- delete cache
+- list workflow runs
+- list jobs
+- list runners
+- devops
+- rerun workflow
+- cancel a workflow run
+- disable a workflow
+- get job
+- repository variables
+- rerun
+- re-run a workflow
+- list repository secrets (names only, not values)
+- cancel run
+- get details of a specific artifact
+- get details of a specific workflow run
+- list jobs for a workflow run
+- create variable
+- list artifacts
+- delete a workflow run
+- list repository variables
+- delete artifact
+- enable workflow
+- cancel a running workflow
+- list variables
+- list self-hosted runners
+- list repository secrets
+- create or update secret
 slug: ci-cd-automation
 source_filename: ci-cd-automation.yaml
 source_heading: Capability Spec

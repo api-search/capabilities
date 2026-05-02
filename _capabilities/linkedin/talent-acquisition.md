@@ -66,57 +66,57 @@ provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
 - create or update job posting
-- sales intelligence, lead management, and crm integration.
-- delete candidates
 - delete synced applications.
-- archives communications for regulatory compliance.
-- get customer ats integration details.
-- create or update entity acl.
-- business
-- social media
-- create resume upload url
-- create or update a job posting.
-- recruiting
-- careers
-- employee development tracking and content access.
-- delete synced candidates.
-- posts jobs and manages candidates through ats integrations.
-- job posting
-- tracks employee learning activity and completions.
-- data portability and advertiser transparency for dma.
-- retrieve candidate matches.
-- provision a child application.
-- linkedin
-- uses sales navigator for lead generation and crm sync.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- job posting, recruiting, and applicant tracking.
 - sync job applications.
-- sync candidates to linkedin.
-- sync candidates
+- provision a child application.
+- talent acquisition
+- get exported candidates
+- get child application credentials.
+- sales intelligence, lead management, and crm integration.
+- get exported candidate profiles.
+- linkedin
+- tracks employee learning activity and completions.
+- retrieve candidate matches.
+- get customer ats integration details.
+- update customer integrations
 - retrieve recruiter seatholders.
-- get child application
-- get seatholders
+- create resume upload url
+- archives communications for regulatory compliance.
+- data portability and advertiser transparency for dma.
+- professional networking
+- sync candidates to linkedin.
+- create or update a job posting.
+- delete synced candidates.
 - update customer ats integrations.
 - get job posting task status
-- get customer integrations
-- manages b2b ad campaigns and audience targeting on linkedin.
-- authentication, sharing, and verification for consumer apps.
-- check job posting task status.
-- talent acquisition
-- get child application credentials.
-- update customer integrations
-- delete applications
-- integrates linkedin authentication and sharing into applications.
-- create resume upload url.
 - b2b advertising, audience targeting, and campaign analytics.
-- get exported candidates
-- get candidate matches
-- get exported candidate profiles.
-- upsert entity acl
-- provision child application
-- job posting, recruiting, and applicant tracking.
-- professional networking
-- sync applications
+- employee development tracking and content access.
 - message archiving and regulatory communications governance.
 - marketing
+- check job posting task status.
+- get child application
+- sync candidates
+- upsert entity acl
+- uses sales navigator for lead generation and crm sync.
+- sync applications
+- job posting
+- get customer integrations
+- social media
+- provision child application
+- create or update entity acl.
+- integrates linkedin authentication and sharing into applications.
+- delete candidates
+- recruiting
+- posts jobs and manages candidates through ats integrations.
+- careers
+- create resume upload url.
+- business
+- get seatholders
+- authentication, sharing, and verification for consumer apps.
+- delete applications
+- get candidate matches
 slug: talent-acquisition
 source_filename: talent-acquisition.yaml
 source_heading: Capability Spec

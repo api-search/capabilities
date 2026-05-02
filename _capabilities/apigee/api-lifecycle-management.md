@@ -24,46 +24,46 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- analytics
-- manage api developers.
-- api management
-- api gateway
-- manager packaging api products and managing developer relationships.
-- integrations
+- list products
+- list api proxies.
 - list proxies
-- monetization
 - list all registered api developers in the organization.
-- list developers.
-- api hub
-- engineer managing api proxies, deployments, and policies in apigee.
+- analytics
+- integrations
+- manage api products.
+- api governance
 - google cloud
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- list api products.
+- hybrid
+- engineer managing api proxies, deployments, and policies in apigee.
+- list all environments (e.g., dev, staging, prod) in the organization.
 - list environments
+- list all api products packaged for developer consumption.
+- api management
+- enterprise
+- list all api proxies in an apigee organization.
+- microservices
+- api lifecycle
+- list hub apis
+- Platform Architect
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list all apis catalogued in apigee api hub for discovery and governance.
+- developer portal
+- list api products.
+- apigee
+- architect overseeing api platform strategy and governance across the organization.
+- list developers
 - API Governance Lead
 - list api proxies
-- list all api proxies in an apigee organization.
-- hybrid
-- Platform Architect
-- list hub apis
-- api governance
-- list products
-- list all apis catalogued in apigee api hub for discovery and governance.
-- list all environments (e.g., dev, staging, prod) in the organization.
-- architect overseeing api platform strategy and governance across the organization.
-- enterprise
+- manager packaging api products and managing developer relationships.
+- api gateway
 - list api products
-- list all api products packaged for developer consumption.
-- microservices
-- developer portal
-- manage api products.
-- apigee
-- manage api proxies.
+- list developers.
+- api hub
 - API Product Manager
-- api lifecycle
-- list api proxies.
-- list developers
 - API Platform Engineer
+- manage api proxies.
+- monetization
+- manage api developers.
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

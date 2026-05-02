@@ -66,44 +66,44 @@ personas: []
 provider_name: Amazon EventBridge
 provider_slug: amazon-eventbridge
 search_terms:
-- amazon eventbridge describe rule
-- amazon eventbridge put events
-- serverless
-- ListRules
-- amazon eventbridge put rule
-- amazon eventbridge list archives
-- PutEvents
-- ListTargetsByRule
-- event bus
-- amazon eventbridge list event buses
-- operations teams managing amazon eventbridge infrastructure
-- CreateArchive
-- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
-- DescribeEventBus
-- CreateEventBus
-- PutTargets
-- integration
-- amazon eventbridge delete rule
-- developers building applications using amazon eventbridge
-- PutRule
-- ListEventBuses
-- amazon eventbridge describe event bus
-- amazon eventbridge list rules
-- DescribeRule
-- DeleteEventBus
-- amazon web services
-- serverless event bus for connecting applications with real-time data
-- events
-- amazon eventbridge remove targets
-- RemoveTargets
-- ListArchives
-- amazon eventbridge create archive
-- amazon eventbridge create event bus
-- DeleteRule
 - amazon eventbridge delete event bus
-- amazon eventbridge put targets
+- ListTargetsByRule
+- amazon eventbridge remove targets
+- developers building applications using amazon eventbridge
+- integration
+- CreateEventBus
 - event-driven
+- amazon eventbridge list archives
+- serverless
+- DescribeEventBus
+- operations teams managing amazon eventbridge infrastructure
+- amazon eventbridge put targets
+- ListArchives
+- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
+- amazon eventbridge list rules
+- event bus
+- RemoveTargets
+- amazon eventbridge create event bus
+- DeleteEventBus
+- amazon eventbridge describe rule
+- amazon web services
+- DescribeRule
 - amazon eventbridge list targets by rule
+- PutEvents
+- PutTargets
+- DeleteRule
+- ListEventBuses
+- serverless event bus for connecting applications with real-time data
+- PutRule
+- amazon eventbridge put events
+- CreateArchive
+- events
+- amazon eventbridge create archive
+- amazon eventbridge list event buses
+- ListRules
+- amazon eventbridge describe event bus
+- amazon eventbridge put rule
+- amazon eventbridge delete rule
 slug: amazon-eventbridge-capability
 source_filename: amazon-eventbridge-capability.yaml
 source_heading: Capability Spec

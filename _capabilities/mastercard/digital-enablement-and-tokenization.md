@@ -31,43 +31,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- delete a token
-- payments
-- digital payments
-- mastercard
 - bulk tokenization operations
-- register token requestor
-- submit a bulk tokenization request for a card portfolio
-- enroll an issuer in click to pay
-- check digitization eligibility
+- submit bulk tokenization request
 - enroll issuer click to pay
-- pre-digitization eligibility
 - mdes
-- financial services
-- tokenize a payment card
-- get token details
+- push provision
 - check if a card is eligible for digitization
-- push provision a token to a digital wallet
-- fraud detection
-- tokenize a payment card via mdes
+- register token requestor
+- pre-digitization eligibility
 - push provision a token to a wallet
 - check card eligibility for digitization
-- credit cards
-- tokenization
-- tokenize card
-- suspend an active token
-- push provision to wallet
-- register a new token requestor
+- digital payments
+- check digitization eligibility
 - digital identity
+- suspend an active token
+- push provision a token to a digital wallet
+- get token details
+- token lifecycle management
+- enroll an issuer in click to pay
+- submit a bulk tokenization request for a card portfolio
+- mastercard
+- credit cards
+- tokenize card
+- tokenization
+- push provisioning to wallets
+- suspend token
 - click to pay
-- open banking
+- delete a token
+- register a new token requestor
+- financial services
+- push provision to wallet
+- fraud detection
+- tokenize a payment card via mdes
 - delete token
 - submit bulk tokenization
-- suspend token
-- token lifecycle management
-- push provision
-- submit bulk tokenization request
-- push provisioning to wallets
+- tokenize a payment card
+- open banking
+- payments
 slug: digital-enablement-and-tokenization
 source_filename: digital-enablement-and-tokenization.yaml
 source_heading: Capability Spec

@@ -10,36 +10,36 @@ personas: []
 provider_name: Amazon CodeGuru Profiler
 provider_slug: amazon-codeguru-profiler
 search_terms:
+- list profile times
+- list profiling groups
+- get aggregated profile data
+- submit profiling agent data
+- amazon
+- Developer
+- DevOps Engineer
+- get optimization recommendations for a profiling group
+- machine learning
+- Platform Engineer
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- developer persona.
+- list profile collection times for a profiling group
 - get details about a profiling group
 - create profiling group
-- Developer
-- list findings reports
-- list profiling groups
-- devops engineer persona.
-- platform engineer persona.
 - profiling
-- application performance
-- list findings reports for a profiling group
+- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
+- devops engineer persona.
+- list findings reports
+- platform engineer persona.
 - get recommendations
 - post agent profile
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, an
-- devops
-- machine learning
-- list profiling groups in the account
-- Platform Engineer
-- get profile
-- get aggregated profile data
-- developer persona.
-- list profile times
 - describe profiling group
-- aws
-- DevOps Engineer
-- amazon
-- list profile collection times for a profiling group
+- get profile
+- application performance
 - create a new profiling group
-- get optimization recommendations for a profiling group
-- submit profiling agent data
-- unified workflow for devops teams to manage profiling groups, retrieve cpu and heap profile data, and act on performance recommendations for productio
+- list profiling groups in the account
+- devops
+- list findings reports for a profiling group
+- aws
 slug: amazon-codeguru-profiler-application-performance
 source_filename: amazon-codeguru-profiler-application-performance.yaml
 source_heading: Capability Spec

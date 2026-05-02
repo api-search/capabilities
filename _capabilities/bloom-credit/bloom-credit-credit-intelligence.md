@@ -9,12 +9,12 @@ personas: []
 provider_name: Bloom Credit
 provider_slug: bloom-credit
 search_terms:
-- fintech
+- personal finance
+- credit scores
 - lending
 - credit bureau
-- credit scores
+- fintech
 - credit reports
-- personal finance
 slug: bloom-credit-credit-intelligence
 source_filename: bloom-credit-credit-intelligence.yaml
 source_heading: Capability Spec

@@ -78,54 +78,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- container service management
-- fetch warehouse
-- sql
-- containers
-- create warehouse
-- get service logs
-- compute
-- create alert
-- list compute pools
-- create image repository
-- warehouse management
-- create a service
-- list image repositories
-- create a monitoring alert
-- list alerts
-- fetch warehouse details
-- list monitoring alerts
-- resume a suspended service
-- database
-- create a compute pool
-- list virtual warehouses
-- execute alert
-- create a container service
-- snowflake
-- create service
-- compute pool management
-- data sharing
-- execute an alert
-- list warehouses
-- create an image repository
-- get service status
-- delete a warehouse
-- delete warehouse
-- list services
-- infrastructure
-- create compute pool
-- alert management
-- fetch service status
-- suspend service
-- create an alert
-- create a virtual warehouse
-- suspend a running service
-- list container services
 - data lakes
-- data warehousing
+- list warehouses
+- execute an alert
 - fetch service logs
-- create a warehouse
+- execute alert
+- create a compute pool
+- create a virtual warehouse
+- snowflake
+- list image repositories
+- data warehousing
+- warehouse management
+- fetch warehouse details
+- infrastructure
+- create alert
+- database
+- suspend service
+- list services
+- alert management
 - resume service
+- create image repository
+- fetch service status
+- list monitoring alerts
+- container service management
+- list alerts
+- create a container service
+- compute pool management
+- create service
+- delete a warehouse
+- create an image repository
+- create compute pool
+- fetch warehouse
+- create an alert
+- suspend a running service
+- create warehouse
+- list compute pools
+- get service status
+- resume a suspended service
+- containers
+- sql
+- compute
+- create a warehouse
+- delete warehouse
+- get service logs
+- data sharing
+- create a monitoring alert
+- list container services
+- create a service
+- list virtual warehouses
 slug: compute-and-services
 source_filename: compute-and-services.yaml
 source_heading: Capability Spec

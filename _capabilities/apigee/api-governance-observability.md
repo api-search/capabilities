@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list api specifications tracked in the apigee registry.
-- analytics
-- list catalogued apis
 - list api specs
-- api management
-- api gateway
-- manager packaging api products and managing developer relationships.
+- analytics
 - integrations
-- monetization
-- list observed shadow apis.
-- discover shadow apis
-- api hub
-- engineer managing api proxies, deployments, and policies in apigee.
-- list observed apis
-- google cloud
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- API Governance Lead
-- api discovery
-- hybrid
-- api catalog from api hub.
-- Platform Architect
-- discover undocumented shadow apis in google cloud infrastructure using apim.
 - api governance
-- list all apis in the apigee api hub catalog.
-- architect overseeing api platform strategy and governance across the organization.
+- google cloud
+- api catalog
+- list observed shadow apis.
+- hybrid
+- engineer managing api proxies, deployments, and policies in apigee.
 - enterprise
-- list all catalogued apis.
+- api management
+- discover shadow apis
+- list all apis in the apigee api hub catalog.
+- api catalog from api hub.
 - microservices
+- Platform Architect
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
 - developer portal
 - apigee
-- list apis
-- api catalog
+- architect overseeing api platform strategy and governance across the organization.
+- API Governance Lead
 - shadow apis discovered via apim.
+- list observed apis
+- manager packaging api products and managing developer relationships.
+- api gateway
+- list catalogued apis
+- list apis
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- list all catalogued apis.
+- list api specifications tracked in the apigee registry.
+- api discovery
+- api hub
 - API Product Manager
 - API Platform Engineer
+- monetization
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml
 source_heading: Capability Spec

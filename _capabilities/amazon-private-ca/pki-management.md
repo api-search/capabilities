@@ -35,46 +35,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- certificate management
-- revoke a certificate
-- get certificate authority details
-- manages pki infrastructure, ca hierarchies, and certificate policies
-- certificate authority
-- retrieve a certificate
-- list certificate authorities
-- private pki infrastructure management workflow
-- iot
-- certificates
-- get details about a specific certificate authority
-- pki
-- issues certificates for internal services and manages certificate lifecycle
+- issue a new certificate
 - issue a new x.509 certificate from a certificate authority
-- Security Engineer
-- revoke an issued certificate
-- certificate authority hierarchy management
-- tls
-- x.509
-- describe ca
+- certificate management
+- certificates
+- list all certificate authorities
+- manages pki infrastructure, ca hierarchies, and certificate policies
+- amazon
+- retrieve an issued certificate by arn
 - list cas
 - get certificate
-- list all certificate authorities
-- create a new private certificate authority
-- Platform Engineer
+- Security Engineer
 - revoke certificate
-- list all private certificate authorities
-- issue certificate
+- list certificate authorities
+- Platform Engineer
+- certificate lifecycle management
 - create a new private certificate authority in the ca hierarchy
 - create certificate authority
-- retrieve an issued certificate by arn
-- aws
-- security
-- issue a new certificate
-- amazon
+- tls
+- get details about a specific certificate authority
 - describe certificate authority
+- certificate authority hierarchy management
+- list all private certificate authorities
+- private pki infrastructure management workflow
+- retrieve a certificate
 - create ca
-- certificate lifecycle management
-- individual certificate operations
+- get certificate authority details
+- create a new private certificate authority
+- certificate authority
+- issue certificate
+- revoke a certificate
 - individual certificate authority operations
+- iot
+- issues certificates for internal services and manages certificate lifecycle
+- describe ca
+- individual certificate operations
+- x.509
+- security
+- pki
+- revoke an issued certificate
+- aws
 slug: pki-management
 source_filename: pki-management.yaml
 source_heading: Capability Spec

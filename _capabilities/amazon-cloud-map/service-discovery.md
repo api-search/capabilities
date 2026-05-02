@@ -26,36 +26,36 @@ personas: []
 provider_name: Amazon Cloud Map
 provider_slug: amazon-cloud-map
 search_terms:
-- engineers managing service registries and microservice infrastructure
-- register an instance with a cloud map service
-- dynamic microservice registration and discovery
-- manage service discovery namespaces
-- dns
 - list namespaces
-- dynamic service registry and health-based routing
-- discover healthy service instances by namespace and service name
-- cloud map
-- list all namespaces
-- list all instances registered with a specific cloud map service
-- devops practitioners automating service registration and health monitoring
-- create a service
-- discover service instances
-- list all cloud map service discovery namespaces
-- create service
-- create a new cloud map service within a namespace
-- devops
-- service discovery
-- Platform Engineer
-- list instances
-- list services
-- list services registered in cloud map
-- amazon web services
-- discover instances
-- discover healthy instances
-- microservices
-- manage services
-- DevOps Engineer
 - register instance
+- discover instances
+- dynamic microservice registration and discovery
+- devops practitioners automating service registration and health monitoring
+- manage services
+- discover healthy service instances by namespace and service name
+- dynamic service registry and health-based routing
+- DevOps Engineer
+- list all namespaces
+- cloud map
+- list all instances registered with a specific cloud map service
+- microservices
+- Platform Engineer
+- list services
+- engineers managing service registries and microservice infrastructure
+- list all cloud map service discovery namespaces
+- manage service discovery namespaces
+- create service
+- amazon web services
+- create a new cloud map service within a namespace
+- dns
+- service discovery
+- register an instance with a cloud map service
+- list instances
+- discover healthy instances
+- devops
+- discover service instances
+- create a service
+- list services registered in cloud map
 slug: service-discovery
 source_filename: service-discovery.yaml
 source_heading: Capability Spec

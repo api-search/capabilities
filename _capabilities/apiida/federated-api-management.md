@@ -20,33 +20,33 @@ personas: []
 provider_name: APIIDA
 provider_slug: apiida
 search_terms:
-- validate api specification
-- api management
-- api gateway
-- list gateways
-- gateway
-- list managed gateways
-- list all broadcom layer7 gateways registered in the gateway manager.
-- list all apis managed across the apiida federated control plane.
-- deploy a validated api to one or more gateway environments.
-- list all managed gateways.
-- Enterprise Architect
-- layer7
-- governance
-- get gateway metrics
 - list all managed apis.
-- architect overseeing multi-gateway api strategy and governance.
-- enterprise
+- list managed gateways
+- list all managed gateways.
 - federated
-- deploy api to gateways
-- list apis
+- list gateways
+- Enterprise Architect
+- enterprise
+- api management
 - list managed apis
 - validate an openapi proxy specification before deployment.
-- apiida
-- get monitoring and performance metrics for a specific gateway.
+- deploy a validated api to one or more gateway environments.
+- layer7
 - federated api management
+- list all apis managed across the apiida federated control plane.
+- api gateway
+- gateway
+- list apis
+- deploy api to gateways
 - engineer managing apis across multiple gateways using apiida's federated control plane.
+- get monitoring and performance metrics for a specific gateway.
+- list all broadcom layer7 gateways registered in the gateway manager.
+- apiida
 - API Platform Engineer
+- architect overseeing multi-gateway api strategy and governance.
+- get gateway metrics
+- governance
+- validate api specification
 slug: federated-api-management
 source_filename: federated-api-management.yaml
 source_heading: Capability Spec

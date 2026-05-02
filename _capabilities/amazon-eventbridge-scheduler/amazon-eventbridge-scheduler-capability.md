@@ -58,39 +58,39 @@ personas: []
 provider_name: Amazon EventBridge Scheduler
 provider_slug: amazon-eventbridge-scheduler
 search_terms:
-- amazon eventbridge scheduler updateschedule
-- amazon eventbridge scheduler createschedule
-- fully managed scheduling service for running tasks at scale
-- amazon eventbridge scheduler createschedulegroup
-- developers building applications using amazon eventbridge scheduler
-- amazon eventbridge scheduler listschedulegroups
-- amazon eventbridge scheduler deleteschedulegroup
 - DeleteScheduleGroup
-- amazon eventbridge scheduler deleteschedule
-- amazon eventbridge scheduler tagresource
+- event-driven
 - unified capability for managing amazon eventbridge scheduler resources. combines amazon eventbridge scheduler apis for devops engineer workflows in task scheduling.
-- GetScheduleGroup
-- UntagResource
-- amazon eventbridge scheduler getschedulegroup
-- DeleteSchedule
-- ListSchedules
 - CreateSchedule
-- CreateScheduleGroup
+- serverless
+- amazon eventbridge scheduler getschedulegroup
+- fully managed scheduling service for running tasks at scale
+- GetScheduleGroup
+- UpdateSchedule
+- amazon eventbridge scheduler tagresource
 - amazon eventbridge scheduler untagresource
+- amazon eventbridge scheduler getschedule
+- UntagResource
+- DeleteSchedule
+- amazon eventbridge scheduler createschedulegroup
+- ListSchedules
+- CreateScheduleGroup
+- amazon eventbridge scheduler listtagsforresource
 - cron
-- TagResource
+- GetSchedule
 - amazon web services
+- amazon eventbridge scheduler listschedules
+- amazon eventbridge scheduler updateschedule
 - operations teams managing amazon eventbridge scheduler infrastructure
 - scheduling
-- UpdateSchedule
-- ListScheduleGroups
+- developers building applications using amazon eventbridge scheduler
 - ListTagsForResource
-- amazon eventbridge scheduler listschedules
-- event-driven
-- amazon eventbridge scheduler listtagsforresource
-- GetSchedule
-- serverless
-- amazon eventbridge scheduler getschedule
+- TagResource
+- amazon eventbridge scheduler createschedule
+- amazon eventbridge scheduler deleteschedulegroup
+- ListScheduleGroups
+- amazon eventbridge scheduler deleteschedule
+- amazon eventbridge scheduler listschedulegroups
 slug: amazon-eventbridge-scheduler-capability
 source_filename: amazon-eventbridge-scheduler-capability.yaml
 source_heading: Capability Spec
