@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a capability using naftikocapability crd + argocd gitops + continuous compliance (ccf-style) for the european-banking platform team.
 - example
+- api integration
+- a capability using naftikocapability crd + argocd gitops + continuous compliance (ccf-style) for the european-banking platform team.
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: gitops-ccf-european-banking-capability
 source_filename: gitops-ccf-european-banking-capability.yaml
 source_heading: Capability Spec

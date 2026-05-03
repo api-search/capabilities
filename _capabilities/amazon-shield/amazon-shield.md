@@ -14,18 +14,18 @@ personas: []
 provider_name: Amazon Shield
 provider_slug: amazon-shield
 search_terms:
-- networking
 - automation workflow for amazon shield
-- engineer managing amazon shield resources
 - aws cloud resource management
-- cloud operations
 - list amazon shield resources
-- security
-- ddos protection
-- amazon shield
+- networking
+- engineer managing amazon shield resources
 - aws
-- list resources
+- security
+- amazon shield
+- ddos protection
 - amazon shield resources
+- cloud operations
+- list resources
 slug: amazon-shield
 source_filename: amazon-shield.yaml
 source_heading: Capability Spec

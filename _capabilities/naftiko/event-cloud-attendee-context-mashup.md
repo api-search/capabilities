@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- a composite mcp tool that mashes event cloud attendee + session + registration endpoints into one business-case-driven agent surface (per jeff's "composite tools, not 1:1 mirrors").
+- api integration
+- naftiko
 - governance
+- mcp
+- a composite mcp tool that mashes event cloud attendee + session + registration endpoints into one business-case-driven agent surface (per jeff's "composite tools, not 1:1 mirrors").
+- capabilities
+- ai
 slug: event-cloud-attendee-context-mashup
 source_filename: event-cloud-attendee-context-mashup.yaml
 source_heading: Capability Spec

@@ -47,70 +47,70 @@ provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
 - get a compliance job by id
+- stream user compliance events in real-time
+- manages user relationships, follows, and interaction strategies.
 - data management
-- stream labels compliance events in real-time
+- stream post compliance events
 - labels compliance stream
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- brand manager
-- data compliance, deletion tracking, and regulatory event monitoring.
-- compliance
-- createComplianceJobs
-- compliance officer
+- handles customer inquiries and issues via direct messages and replies.
+- community manager
 - create a new compliance job
-- user compliance stream
-- stream likes compliance events
-- social media manager
-- marketing team
-- manage user relationships, direct messages, spaces, and community interactions.
-- social monitoring, search, trending topics, and sentiment analysis.
+- streamPostsCompliance
+- likes compliance stream
+- advertising
+- compliance
+- customer support
+- compliance officer
+- streamLabelsCompliance
+- user relationships, direct messaging, spaces, and community interaction.
+- post compliance stream
+- researcher
+- streamUsersCompliance
 - x api
 - monitors brand mentions, sentiment, and competitive landscape.
-- user relationships, direct messaging, spaces, and community interaction.
-- manages brand presence, campaigns, and content strategy.
-- get a compliance job by its id
-- customer support
-- streaming
-- handles customer inquiries and issues via direct messages and replies.
-- produces original posts, threads, and media content on x.
-- extracts insights from social data through search, streaming, and analytics.
-- stream post compliance events
-- likes compliance stream
-- streamLikesCompliance
-- list compliance jobs
-- post compliance stream
-- data engineer
-- manages user relationships, follows, and interaction strategies.
-- get a specific compliance job
-- researcher
-- stream user compliance events in real-time
-- streamLabelsCompliance
-- stream post compliance events in real-time
-- creates, schedules, and analyzes social media content across platforms.
-- stream user compliance events
-- stream labels compliance events
-- manages data pipelines, streaming ingestion, and compliance data flows.
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- social media
-- getComplianceJobs
-- advertising
-- content
-- streamPostsCompliance
-- streamUsersCompliance
-- real-time data
-- conducts academic or market research using x data archives.
-- ensures data handling meets regulatory and platform compliance requirements.
-- create and list compliance jobs
-- getComplianceJobsById
-- monitor conversations, search posts, analyze trends, and extract insights.
-- platform operations
-- post creation, editing, media management, and content analytics.
-- community manager
 - content creator
-- microblogging
-- engagement specialist
-- stream likes compliance events in real-time
+- get a specific compliance job
+- social media manager
+- creates, schedules, and analyzes social media content across platforms.
+- manage user relationships, direct messages, spaces, and community interactions.
 - builds and maintains communities through engagement and moderation.
+- conducts academic or market research using x data archives.
+- user compliance stream
+- post creation, editing, media management, and content analytics.
+- real-time data
+- manages brand presence, campaigns, and content strategy.
+- content
+- social media
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- stream likes compliance events in real-time
+- stream labels compliance events
+- getComplianceJobs
+- create and list compliance jobs
+- ensures data handling meets regulatory and platform compliance requirements.
+- social monitoring, search, trending topics, and sentiment analysis.
+- data compliance, deletion tracking, and regulatory event monitoring.
+- getComplianceJobsById
+- microblogging
+- stream likes compliance events
+- stream labels compliance events in real-time
 - data analyst
+- manages data pipelines, streaming ingestion, and compliance data flows.
+- get a compliance job by its id
+- stream user compliance events
+- streamLikesCompliance
+- produces original posts, threads, and media content on x.
+- createComplianceJobs
+- extracts insights from social data through search, streaming, and analytics.
+- platform operations
+- monitor conversations, search posts, analyze trends, and extract insights.
+- stream post compliance events in real-time
+- marketing team
+- brand manager
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- list compliance jobs
+- engagement specialist
+- data engineer
+- streaming
 slug: compliance-and-data
 source_filename: compliance-and-data.yaml
 source_heading: Capability Spec

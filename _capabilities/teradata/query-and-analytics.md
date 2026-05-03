@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- data management
-- execute a sql query against teradata vantage.
-- query
-- analytics
-- executes queries and analyzes data across vantage systems.
-- system and fabric configuration management.
-- Application Developer
-- data warehousing
-- sql queries.
+- health monitoring and issue detection.
 - manages data fabric infrastructure and cross-system connectivity.
-- list query systems
-- integrates applications with teradata via rest apis.
-- create session
-- enterprise
-- execute sql queries and analytics.
-- execute a sql query.
 - administers querygrid systems, nodes, and software.
-- sql query execution and session management.
-- database
-- machine learning
-- list cross-system query summaries from querygrid.
-- teradata
-- list querygrid queries
-- Data Analyst
-- manage querygrid data fabric infrastructure.
-- create a new query session on a vantage system.
+- sql queries.
+- execute a sql query against teradata vantage.
+- data management
+- list query systems
+- list available vantage systems for query execution.
 - Platform Administrator
 - Data Engineer
-- cloud
-- create a query session.
-- execute query
-- available systems.
-- list available vantage systems for query execution.
-- query sessions.
-- list available vantage systems.
-- sql
-- get query status
-- health monitoring and issue detection.
 - get the status and results of a submitted query.
+- manage querygrid data fabric infrastructure.
+- enterprise
+- executes queries and analyzes data across vantage systems.
+- get query status
+- cloud
+- teradata
+- create session
+- execute a sql query.
+- create a new query session on a vantage system.
+- list cross-system query summaries from querygrid.
+- execute sql queries and analytics.
+- list available vantage systems.
+- Data Analyst
+- sql
+- analytics
+- query
+- available systems.
+- create a query session.
+- data warehousing
+- database
+- Application Developer
+- execute query
+- system and fabric configuration management.
+- sql query execution and session management.
+- list querygrid queries
+- machine learning
+- integrates applications with teradata via rest apis.
+- query sessions.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec

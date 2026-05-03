@@ -40,56 +40,56 @@ personas: []
 provider_name: availity
 provider_slug: availity
 search_terms:
-- healthcare
-- list eligibilities
-- claim status inquiries
-- verify patient insurance eligibility and benefits before service delivery
-- search claims by service date or member id for revenue tracking
-- track the status of a submitted prior authorization request
-- determine if a payer requires prior authorization before service delivery
-- manages claim submission, status tracking, and patient billing
-- list claim status inquiries
-- submit prior authorization
-- Billing Specialist
-- verify eligibility
-- submit a claim status inquiry to check adjudication status
-- integrates availity apis into electronic health record and practice management systems
-- submit a prior authorization request for a scheduled procedure
-- check if authorization is required
-- real-time insurance coverage and benefits verification
-- patient cost estimation and price transparency
-- claims
-- list payers
-- member eligibility verification
-- unified workflow combining eligibility, claims, and authorization for rcm teams
-- claim status tracking and attachment submission
-- availity
-- check auth required
-- list supported payers
-- find health plan payers available for transactions
-- get claim detail
-- list claim statuses
-- track authorization status
-- oversees end-to-end revenue cycle including authorization, eligibility, and claim adjudication
-- submit authorization
-- check claim status
-- supported health plan payers
-- eligibility
-- list eligibility history
-- prior authorization requests
-- revenue cycle
-- submit claim status inquiry
 - lookup supported payers
-- list eligibility inquiries
-- service review and authorization request management
-- verify member eligibility
-- verify member insurance coverage and benefits
-- search claims summary
-- Revenue Cycle Manager
+- Billing Specialist
 - submit prior authorization request
-- get detailed claim information including adjudication and payment amounts
+- verify patient insurance eligibility and benefits before service delivery
 - list previous eligibility inquiries for audit and follow-up
+- find health plan payers available for transactions
+- submit authorization
+- submit prior authorization
+- integrates availity apis into electronic health record and practice management systems
+- list payers
+- verify eligibility
+- track authorization status
+- list eligibility inquiries
+- prior authorization requests
+- list supported payers
+- submit a claim status inquiry to check adjudication status
+- search claims summary
+- claim status inquiries
+- list claim statuses
+- claims
+- submit a prior authorization request for a scheduled procedure
 - check prior auth required
+- oversees end-to-end revenue cycle including authorization, eligibility, and claim adjudication
+- check claim status
+- healthcare
+- get claim detail
+- eligibility
+- determine if a payer requires prior authorization before service delivery
+- check if authorization is required
+- track the status of a submitted prior authorization request
+- search claims by service date or member id for revenue tracking
+- get detailed claim information including adjudication and payment amounts
+- list eligibilities
+- list eligibility history
+- unified workflow combining eligibility, claims, and authorization for rcm teams
+- check auth required
+- submit claim status inquiry
+- verify member eligibility
+- member eligibility verification
+- list claim status inquiries
+- claim status tracking and attachment submission
+- Revenue Cycle Manager
+- patient cost estimation and price transparency
+- supported health plan payers
+- manages claim submission, status tracking, and patient billing
+- revenue cycle
+- availity
+- service review and authorization request management
+- verify member insurance coverage and benefits
+- real-time insurance coverage and benefits verification
 slug: availity-revenue-cycle-management
 source_filename: availity-revenue-cycle-management.yaml
 source_heading: Capability Spec

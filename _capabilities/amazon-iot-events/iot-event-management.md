@@ -15,32 +15,32 @@ personas: []
 provider_name: Amazon IoT Events
 provider_slug: amazon-iot-events
 search_terms:
-- Solutions Architect
-- list alarms
-- detect and respond to events from iot sensors and applications.
 - amazon iot events create input
-- amazon iot events resources
-- create alarm model
-- state machine
-- aws
-- amazon iot events list alarms
-- event detection
-- amazon iot events create detector model
+- describe detector model
 - amazon iot events list detector models
-- list inputs
-- amazon iot events list inputs
-- IoT Developer
+- state machine
+- Solutions Architect
+- amazon iot events resources
+- create detector model
+- detect and respond to events from iot sensors and applications.
 - automation
 - manages amazon iot events resources and operations
-- iot
-- create detector model
 - amazon iot events create alarm model
 - list detector models
+- iot
+- aws
+- list alarms
+- event detection
 - amazon iot events describe alarm model
-- amazon iot events describe detector model
+- amazon iot events list alarms
+- create alarm model
 - create input
-- describe detector model
+- list inputs
+- IoT Developer
 - describe alarm model
+- amazon iot events list inputs
+- amazon iot events create detector model
+- amazon iot events describe detector model
 slug: iot-event-management
 source_filename: iot-event-management.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- a built -shaped capability used as the apidays nyc re-engagement hook — designed for booth conversation, not screen-share.
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a built -shaped capability used as the apidays nyc re-engagement hook — designed for booth conversation, not screen-share.
 - governance
+- mcp
+- capabilities
+- ai
 slug: apidays-nyc-booth-capability
 source_filename: apidays-nyc-booth-capability.yaml
 source_heading: Capability Spec

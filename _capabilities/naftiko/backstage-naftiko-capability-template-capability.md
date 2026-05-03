@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
+- a capability that ships a backstage software template bundling the naftikocapability crd scaffold, so developers spin up a new governed capability from inside the developer portal without leaving backstage.
+- example op
+- example
 - api integration
 - spec-driven integration
-- capabilities
 - naftiko
-- mcp
-- example op
-- a capability that ships a backstage software template bundling the naftikocapability crd scaffold, so developers spin up a new governed capability from inside the developer portal without leaving backstage.
-- example
 - governance
+- mcp
+- capabilities
+- ai
 slug: backstage-naftiko-capability-template-capability
 source_filename: backstage-naftiko-capability-template-capability.yaml
 source_heading: Capability Spec

@@ -9,12 +9,12 @@ personas: []
 provider_name: Alpha Vantage
 provider_slug: alpha-vantage
 search_terms:
-- economic data
-- market data
 - technical indicators
-- stocks
 - financial
 - sentiment analysis
+- economic data
+- market data
+- stocks
 slug: financial-data-analytics
 source_filename: financial-data-analytics.yaml
 source_heading: Capability Spec

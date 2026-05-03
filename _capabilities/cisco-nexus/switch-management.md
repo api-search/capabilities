@@ -42,62 +42,62 @@ personas: []
 provider_name: Cisco Nexus Dashboard
 provider_slug: cisco-nexus
 search_terms:
-- get interface details
-- single vlan operations
-- delete a vlan bridge domain from the switch
-- networking
-- get svi
-- network management
-- get configuration and operational state of a physical interface
-- vlan management
-- list interfaces
-- create or modify a vlan bridge domain
-- list static routes
-- configure features
-- get system information
-- interface management
-- get interface
-- create vlan
-- delete vlan
-- get nexus switch system information including hostname, serial, and nx-os version
-- configure svi
-- single interface operations
-- apply system-level configuration changes
-- configure interface
-- list all vlan bridge domains on the switch
-- configure system
+- sdn
 - infrastructure
+- list static routes
+- configure static route
+- networking
+- get system information
+- network management
+- list all static routes
 - list vlans
 - data center
-- get a specific static route by vrf and prefix
-- sdn
-- get the full bgp configuration tree
-- get switch virtual interface configuration
-- get bgp config
-- configure static route
-- static route management
-- network automation
 - get system info
-- list all vlans
-- delete a vlan
-- nexus
-- get static route
+- create or modify a vlan bridge domain
 - get vlan details
+- get switch virtual interface configuration
+- get the full bgp configuration tree
+- create vlan
 - list all physical interfaces
+- configure interface
+- single vlan operations
+- list interfaces
+- single interface operations
+- delete a vlan
 - list all physical ethernet interfaces on the switch
-- create or modify a switch virtual interface for layer 3 routing
-- get vlan
-- list all ipv4 static routes across all vrfs
-- switches
-- create a vlan
-- create or modify ipv4 static routes
-- list routes
-- enable or disable nx-os features (interface-vlan, bgp, ospf, lacp)
-- get vlan bridge domain details
-- system information
-- list all static routes
-- cisco
+- list all vlan bridge domains on the switch
+- configure system
+- network automation
 - configure a physical ethernet interface (admin state, speed, vlan, etc.)
+- get vlan
+- get bgp config
+- get interface
+- create a vlan
+- delete a vlan bridge domain from the switch
+- apply system-level configuration changes
+- switches
+- cisco
+- delete vlan
+- interface management
+- list all vlans
+- list routes
+- get a specific static route by vrf and prefix
+- get configuration and operational state of a physical interface
+- get interface details
+- get nexus switch system information including hostname, serial, and nx-os version
+- get svi
+- vlan management
+- create or modify ipv4 static routes
+- nexus
+- create or modify a switch virtual interface for layer 3 routing
+- list all ipv4 static routes across all vrfs
+- get vlan bridge domain details
+- configure svi
+- enable or disable nx-os features (interface-vlan, bgp, ospf, lacp)
+- static route management
+- system information
+- configure features
+- get static route
 slug: switch-management
 source_filename: switch-management.yaml
 source_heading: Capability Spec

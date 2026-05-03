@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
 - 'implements guide-use-cases #6 (rightsize a set of microservices) as the apidays talking point.'
+- api integration
+- naftiko
+- governance
+- mcp
+- capabilities
+- ai
 slug: microservice-rightsize-capability
 source_filename: microservice-rightsize-capability.yaml
 source_heading: Capability Spec

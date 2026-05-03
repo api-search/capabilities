@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability over bloomberg aim portfolio positions, packaged as an agent skill folder with explicit safety + effect tags for the financial-advisor agent context.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a capability over bloomberg aim portfolio positions, packaged as an agent skill folder with explicit safety + effect tags for the financial-advisor agent context.
+- capabilities
+- ai
 slug: nwm-bloomberg-aim-portfolio-position-agent-skill
 source_filename: nwm-bloomberg-aim-portfolio-position-agent-skill.yaml
 source_heading: Capability Spec

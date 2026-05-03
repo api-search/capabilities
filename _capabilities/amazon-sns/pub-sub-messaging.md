@@ -31,53 +31,53 @@ personas: []
 provider_name: Amazon SNS
 provider_slug: amazon-sns
 search_terms:
-- list subscriptions for a specific topic
-- publish
-- unsubscribe
-- publish a message to a topic or endpoint
-- list subscriptions
-- create a subscription to a topic
-- list subscriptions by topic
-- list tags for an sns resource
-- amazon
-- unsubscribe from a topic
-- topic management
-- push notifications
-- messaging
-- get sms attributes
 - create topic
-- email
+- list all sns topics
+- list tags
+- create a subscription to a topic
 - sms
-- message publishing
+- check phone opted out
+- get subscription attributes
+- get topic attributes
+- subscribe
+- publish a message to a topic or endpoint
+- create a platform application for mobile push
+- create a new sns topic
+- get sms attributes
+- push notifications
+- pub/sub
+- messaging
+- publish batch
+- add tags to an sns resource
+- check if a phone number has opted out of sms
+- publish up to 10 messages in a batch
+- aws
+- unsubscribe
+- list subscriptions by topic
+- email
+- get attributes of an sns topic
+- publish a message to a topic
+- delete topic
+- list all subscriptions
+- topic management
+- get attributes of a subscription
 - get sms messaging attributes
 - create platform application
-- check phone opted out
-- set topic attributes
 - notifications
-- publish up to 10 messages in a batch
-- check if a phone number has opted out of sms
-- add tags to an sns resource
-- delete an sns topic
-- delete topic
-- pub/sub
-- get topic attributes
-- publish batch
-- get attributes of an sns topic
-- create a platform application for mobile push
-- set attributes on an sns topic
-- create a subscription
-- list tags
-- create a new sns topic
-- publish a message to a topic
-- list all sns topics
-- subscribe
-- get subscription attributes
-- subscription management
 - list topics
+- publish
+- message publishing
+- amazon
+- delete an sns topic
+- list tags for an sns resource
+- subscription management
+- list subscriptions
+- create a subscription
+- set attributes on an sns topic
+- set topic attributes
+- unsubscribe from a topic
+- list subscriptions for a specific topic
 - tag resource
-- get attributes of a subscription
-- list all subscriptions
-- aws
 slug: pub-sub-messaging
 source_filename: pub-sub-messaging.yaml
 source_heading: Capability Spec

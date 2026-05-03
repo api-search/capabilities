@@ -80,74 +80,74 @@ personas:
 provider_name: Better Stack
 provider_slug: better-stack
 search_terms:
-- list incidents with optional date and filter parameters
-- acknowledge an active incident to indicate someone is working on it
-- get availability metrics for a monitor
-- uptime and availability monitoring for services and scheduled jobs
-- create a new uptime monitor
-- resolve incident
-- single incident operations
-- create a new uptime monitor for a url or api
-- list monitors
-- engineer on-call rotation responsible for responding to incidents
-- monitor management for uptime checks
-- acknowledge incident
-- update a monitor
-- create a manual incident
-- monitor detection, incident acknowledgement, and resolution workflow for sre teams
-- list all incidents
+- delete an incident
 - acknowledge an active incident
-- list all uptime monitors to check what is being monitored
-- uptime
-- on-call
+- observability
 - create monitor
-- better stack
+- engineer on-call rotation responsible for responding to incidents
+- resolve an incident
+- resolve an active incident once the issue is fixed
+- single incident operations
 - incident response
+- acknowledge an active incident to indicate someone is working on it
 - get monitor details
+- create a manual incident
+- site reliability engineer managing infrastructure uptime and incident response
+- update monitor
+- create heartbeat
+- resolve incident
+- platform
+- list all heartbeats
+- create a new uptime monitor for a url or api
+- communicating service health to customers and stakeholders
+- list all heartbeat monitors for scheduled jobs
+- list incidents with optional date and filter parameters
+- monitor management for uptime checks
+- incidents
+- sre engineer
+- uptime
+- sre
+- get monitor availability summary
+- monitor availability metrics
+- list all uptime monitors to check what is being monitored
+- get monitor availability
+- delete incident
+- resolve an active incident
+- on-call
+- list monitors
 - monitoring
 - list all uptime monitors
-- incidents
-- list incidents
-- platform
-- delete a monitor
-- sre engineer
-- delete an incident
-- heartbeat monitor management
-- resolve an active incident once the issue is fixed
-- status
-- get incident
 - get details for a specific uptime monitor
-- heartbeats
-- delete incident
-- detection, acknowledgement, and resolution of service incidents
-- monitor availability metrics
-- logs
-- create incident
-- list heartbeats
-- communicating service health to customers and stakeholders
 - get details for a specific incident
-- on call engineer
-- site reliability engineer managing infrastructure uptime and incident response
-- create a heartbeat monitor
-- incident management
-- update monitor
-- resolve an active incident
-- sre
-- get availability for a heartbeat monitor
-- observability
-- get heartbeat availability
-- get monitor
-- list all heartbeats
-- list all heartbeat monitors for scheduled jobs
-- create heartbeat
-- get monitor availability summary
-- get incident details
-- resolve an incident
-- get monitor availability
 - delete monitor
-- single monitor operations
-- managing team access and membership
+- list heartbeats
+- list incidents
+- create a heartbeat monitor
+- create incident
+- get availability for a heartbeat monitor
 - acknowledge an incident
+- get heartbeat availability
+- delete a monitor
+- managing team access and membership
+- list all incidents
+- heartbeats
+- get incident
+- get incident details
+- get availability metrics for a monitor
+- single monitor operations
+- heartbeat monitor management
+- uptime and availability monitoring for services and scheduled jobs
+- create a new uptime monitor
+- status
+- acknowledge incident
+- better stack
+- on call engineer
+- detection, acknowledgement, and resolution of service incidents
+- update a monitor
+- get monitor
+- monitor detection, incident acknowledgement, and resolution workflow for sre teams
+- incident management
+- logs
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

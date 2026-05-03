@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list api specs
-- analytics
-- integrations
-- api governance
-- google cloud
-- api catalog
-- list observed shadow apis.
-- hybrid
-- engineer managing api proxies, deployments, and policies in apigee.
-- enterprise
-- api management
-- discover shadow apis
-- list all apis in the apigee api hub catalog.
-- api catalog from api hub.
-- microservices
-- Platform Architect
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- developer portal
+- api discovery
 - apigee
+- api governance
+- list catalogued apis
 - architect overseeing api platform strategy and governance across the organization.
-- API Governance Lead
-- shadow apis discovered via apim.
+- api gateway
+- enterprise
+- discover shadow apis
+- microservices
 - list observed apis
 - manager packaging api products and managing developer relationships.
-- api gateway
-- list catalogued apis
-- list apis
 - discover undocumented shadow apis in google cloud infrastructure using apim.
-- list all catalogued apis.
-- list api specifications tracked in the apigee registry.
-- api discovery
-- api hub
+- shadow apis discovered via apim.
+- Platform Architect
+- api catalog
+- API Governance Lead
+- list api specs
+- list all apis in the apigee api hub catalog.
+- analytics
+- monetization
+- api management
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list observed shadow apis.
 - API Product Manager
 - API Platform Engineer
-- monetization
+- integrations
+- google cloud
+- engineer managing api proxies, deployments, and policies in apigee.
+- api hub
+- hybrid
+- list apis
+- api catalog from api hub.
+- list all catalogued apis.
+- list api specifications tracked in the apigee registry.
+- developer portal
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml
 source_heading: Capability Spec

@@ -19,31 +19,31 @@ personas: []
 provider_name: BizAPI
 provider_slug: bizapi
 search_terms:
-- sales enablement
-- sic
-- search companies test
-- firmographic data
 - naics
-- Marketing Analyst
-- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
-- crm enrichment
-- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
-- business intelligence and crm enrichment workflow combining company search and test endpoints
 - test search returning fake data without consuming api credits.
-- Sales Representative
-- uses firmographic data to qualify leads and enrich crm account records
-- test company search returning fake firmographic data.
-- firmographic data retrieval and company lookup
-- company data
-- Data Engineer
-- search business entities by name, address, phone, or url.
-- search for business entities and retrieve firmographic data.
-- integrates bizapi into data pipelines for crm and data warehouse enrichment
-- search companies
-- crm
-- business intelligence
+- firmographic data
 - segments and scores prospects using naics, sic, and financial data
+- Data Engineer
+- search for business entities and retrieve firmographic data including duns numbers, naics codes, sic codes, employee counts, sales volume, and corporate hierarchy.
+- integrates bizapi into data pipelines for crm and data warehouse enrichment
+- uses firmographic data to qualify leads and enrich crm account records
+- search for business entities and retrieve firmographic data.
+- sic
+- crm
+- sales enablement
+- company data
+- test company search returning fake firmographic data.
+- search companies test
+- search companies
+- business intelligence and crm enrichment workflow combining company search and test endpoints
+- firmographic data retrieval and company lookup
+- Sales Representative
+- search business entities by name, address, phone, or url.
 - appending firmographic data to crm records for sales and marketing
+- crm enrichment
+- Marketing Analyst
+- business intelligence
+- test company search that returns fake firmographic data without consuming api credits. use for development and testing.
 slug: bizapi-business-intelligence
 source_filename: bizapi-business-intelligence.yaml
 source_heading: Capability Spec

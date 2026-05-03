@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- list users in a workmail organization.
-- administration
-- handles day-to-day email user and group management.
-- group management.
-- list all workmail organizations.
-- list users in an organization.
-- create user
-- list email distribution groups in an organization.
+- business communication
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- IT Administrator
 - mobile device access control and compliance
 - mobile device access control.
-- business communication
 - list all amazon workmail organizations in the account.
-- enterprise
-- manages workmail infrastructure, user provisioning, and security policies.
 - calendar
-- email
-- exchange
-- list mobile device access rules
-- list groups
 - it administration of email infrastructure
-- list mobile device access control rules.
-- workmail organization management.
-- create a new email user.
-- create a new workmail user with mailbox.
-- Email Operations
+- enterprise
 - list organizations
-- IT Administrator
-- list email groups.
-- enterprise email provisioning and management
-- list mobile device access rules.
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- user provisioning and management.
-- list users
 - aws
+- create user
+- email
+- manages workmail infrastructure, user provisioning, and security policies.
+- list email groups.
+- list email distribution groups in an organization.
+- list mobile device access rules
+- list all workmail organizations.
+- exchange
+- create a new workmail user with mailbox.
+- handles day-to-day email user and group management.
+- group management.
+- administration
+- user provisioning and management.
+- create a new email user.
+- list users
+- list groups
+- Email Operations
+- list users in a workmail organization.
+- workmail organization management.
+- list mobile device access control rules.
+- list users in an organization.
+- list mobile device access rules.
+- enterprise email provisioning and management
 slug: email-management
 source_filename: email-management.yaml
 source_heading: Capability Spec

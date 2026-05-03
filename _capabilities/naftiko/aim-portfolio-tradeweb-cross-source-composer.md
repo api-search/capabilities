@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a composite capability that joins aim + valuation service (bval) + tradeweb into one shaped portfolio-context object.
 - example
+- api integration
+- naftiko
+- capabilities
 - governance
+- mcp
+- a composite capability that joins aim + valuation service (bval) + tradeweb into one shaped portfolio-context object.
+- ai
 slug: aim-portfolio-tradeweb-cross-source-composer
 source_filename: aim-portfolio-tradeweb-cross-source-composer.yaml
 source_heading: Capability Spec

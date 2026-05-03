@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- 'a capability built specifically for the analyst review brief, optimized to be probed in a 30-minute review window: vs code extension + backstage scaffold + downloadable agent skill.'
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- 'a capability built specifically for the analyst review brief, optimized to be probed in a 30-minute review window: vs code extension + backstage scaffold + downloadable agent skill.'
+- mcp
+- capabilities
+- ai
 slug: devx-redmonk-review-walkthrough
 source_filename: devx-redmonk-review-walkthrough.yaml
 source_heading: Capability Spec

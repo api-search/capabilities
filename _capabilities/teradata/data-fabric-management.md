@@ -27,53 +27,53 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- administration
-- data management
-- analytics
-- executes queries and analyzes data across vantage systems.
-- list all data centers.
-- Application Developer
-- system and fabric configuration management.
-- data warehousing
-- list all data fabric configurations.
+- health monitoring and issue detection.
 - manages data fabric infrastructure and cross-system connectivity.
-- list all registered systems.
-- system management.
-- integrates applications with teradata via rest apis.
-- enterprise
-- execute sql queries and analytics.
-- run a diagnostic check on querygrid systems.
-- list issues
-- list bridges
 - administers querygrid systems, nodes, and software.
-- sql query execution and session management.
-- database
-- machine learning
-- list all connectors for system integration.
-- bridge management.
-- teradata
-- data center management.
-- run diagnostic check
-- issue monitoring.
+- configuration
+- list data centers
 - list all bridges.
-- Data Analyst
-- manage querygrid data fabric infrastructure.
-- list all configured data centers.
+- data management
+- list all registered systems.
+- data center management.
 - Platform Administrator
 - Data Engineer
-- cloud
-- configuration
-- data fabric
-- list data centers
-- list all current issues in the querygrid environment.
-- list all bridges connecting systems.
-- list systems
-- sql
-- health monitoring and issue detection.
-- list connectors
-- list all registered systems in querygrid.
-- list fabrics
 - list all current issues.
+- manage querygrid data fabric infrastructure.
+- issue monitoring.
+- list all connectors for system integration.
+- enterprise
+- executes queries and analyzes data across vantage systems.
+- list all bridges connecting systems.
+- cloud
+- teradata
+- data fabric
+- list all data fabric configurations.
+- list connectors
+- list fabrics
+- execute sql queries and analytics.
+- list all registered systems in querygrid.
+- list all data centers.
+- list all current issues in the querygrid environment.
+- system management.
+- bridge management.
+- list all configured data centers.
+- Data Analyst
+- list issues
+- sql
+- analytics
+- run diagnostic check
+- administration
+- data warehousing
+- database
+- Application Developer
+- list systems
+- system and fabric configuration management.
+- list bridges
+- sql query execution and session management.
+- machine learning
+- integrates applications with teradata via rest apis.
+- run a diagnostic check on querygrid systems.
 slug: data-fabric-management
 source_filename: data-fabric-management.yaml
 source_heading: Capability Spec

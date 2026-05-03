@@ -26,35 +26,35 @@ personas: []
 provider_name: Amazon Athena
 provider_slug: amazon-athena
 search_terms:
-- list athena workgroups to understand available query isolation environments.
-- run a sql query against s3 data using amazon athena for serverless analytics.
-- amazon athena
-- analytics
-- get query results
-- list query executions
-- list work groups
-- sql query management
-- list data catalogs registered with athena to discover available data sources.
-- named query management
-- serverless
-- list saved named queries available in an athena workgroup.
-- start query execution
-- aws
-- save a sql query as a named query for reuse in athena.
-- list data catalogs
-- get query execution
-- list tables in an athena database to understand available data.
-- list recent query executions in an athena workgroup.
-- list named queries
-- list table metadata
-- create a named query
-- start a sql query execution
-- sql
-- download the results of a completed athena sql query.
 - list databases
-- create named query
-- check the status of a running or completed athena query execution.
+- start a sql query execution
+- start query execution
+- amazon athena
+- create a named query
+- sql query management
+- get query results
+- list named queries
 - list databases in an athena data catalog to explore available schemas.
+- named query management
+- list data catalogs
+- aws
+- list work groups
+- list recent query executions in an athena workgroup.
+- save a sql query as a named query for reuse in athena.
+- list query executions
+- list data catalogs registered with athena to discover available data sources.
+- list saved named queries available in an athena workgroup.
+- list tables in an athena database to understand available data.
+- sql
+- analytics
+- serverless
+- list table metadata
+- download the results of a completed athena sql query.
+- check the status of a running or completed athena query execution.
+- run a sql query against s3 data using amazon athena for serverless analytics.
+- create named query
+- list athena workgroups to understand available query isolation environments.
+- get query execution
 slug: sql-analytics
 source_filename: sql-analytics.yaml
 source_heading: Capability Spec

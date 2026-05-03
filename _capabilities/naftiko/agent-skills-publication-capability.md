@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- wraps an publication api as a capability with the agent skills adapter, packaged as a downloadable skill folder via control api and installed via cli.
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- wraps an publication api as a capability with the agent skills adapter, packaged as a downloadable skill folder via control api and installed via cli.
 - governance
+- mcp
+- capabilities
+- ai
 slug: agent-skills-publication-capability
 source_filename: agent-skills-publication-capability.yaml
 source_heading: Capability Spec

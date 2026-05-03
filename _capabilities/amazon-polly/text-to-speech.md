@@ -42,48 +42,48 @@ personas: []
 provider_name: Amazon Polly
 provider_slug: amazon-polly
 search_terms:
-- start an asynchronous speech synthesis task
-- text-to-speech
-- list lexicons
-- start an asynchronous synthesis task for long text with s3 output
-- start synthesis task
-- list available voices by language and engine
-- Application Developer
 - list tasks
-- amazon
-- voice
-- get the content of a pronunciation lexicon
-- generative ai
-- list pronunciation lexicons
-- convert text to lifelike speech audio using amazon polly
+- list synthesis tasks
 - list voices
-- list available amazon polly voices filterable by language and engine type
-- list and monitor asynchronous speech synthesis tasks
-- machine learning
-- neural engine
-- get lexicon
-- synthesize speech
-- start task
-- speech synthesis
-- create or update a custom pronunciation lexicon
-- ai
-- available synthesis voices
-- create lexicon
 - custom pronunciation lexicons
 - builds voice-enabled applications using polly speech synthesis
-- creates audio content from written text using polly
-- Content Creator
-- asynchronous synthesis tasks
-- list synthesis tasks
-- convert text to speech audio
-- create or update a pronunciation lexicon
-- ssml
-- voice applications
-- speech synthesis from text
-- list custom pronunciation lexicons for controlling how words are spoken
+- get the content of a pronunciation lexicon
+- generative ai
+- list available voices by language and engine
+- start task
+- start synthesis task
+- start an asynchronous speech synthesis task
+- convert text to lifelike speech audio using amazon polly
+- get lexicon
 - aws
+- list pronunciation lexicons
+- speech synthesis from text
 - tts
+- voice applications
+- ai
+- neural engine
+- ssml
+- synthesize speech
+- create or update a custom pronunciation lexicon
+- creates audio content from written text using polly
+- list available amazon polly voices filterable by language and engine type
+- voice
+- text-to-speech
+- create or update a pronunciation lexicon
+- start an asynchronous synthesis task for long text with s3 output
 - multi-channel text-to-speech synthesis workflow
+- amazon
+- create lexicon
+- Application Developer
+- list and monitor asynchronous speech synthesis tasks
+- available synthesis voices
+- list lexicons
+- asynchronous synthesis tasks
+- machine learning
+- Content Creator
+- list custom pronunciation lexicons for controlling how words are spoken
+- convert text to speech audio
+- speech synthesis
 slug: text-to-speech
 source_filename: text-to-speech.yaml
 source_heading: Capability Spec

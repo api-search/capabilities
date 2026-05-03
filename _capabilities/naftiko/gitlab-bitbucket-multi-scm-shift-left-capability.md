@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- a capability that fans out across github + gitlab + bitbucket scan results from and exposes a unified mcp shift-left view.
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability that fans out across github + gitlab + bitbucket scan results from and exposes a unified mcp shift-left view.
 - governance
+- mcp
+- capabilities
+- ai
 slug: gitlab-bitbucket-multi-scm-shift-left-capability
 source_filename: gitlab-bitbucket-multi-scm-shift-left-capability.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability over a p&g kafka topic family (supply-chain events) exposing typed event reads as mcp tools for ai ops assistants.
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability over a p&g kafka topic family (supply-chain events) exposing typed event reads as mcp tools for ai ops assistants.
 - governance
+- mcp
+- capabilities
+- ai
 slug: kafka-event-driven-supply-chain-mcp
 source_filename: kafka-event-driven-supply-chain-mcp.yaml
 source_heading: Capability Spec

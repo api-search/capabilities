@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
 - a capability that exposes -internal naftiko capabilities as mcp servers inside github copilot's vs code extension window — the developer-onboarding fleet entry-point.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: github-copilot-mcp-developer-onboarding-capability
 source_filename: github-copilot-mcp-developer-onboarding-capability.yaml
 source_heading: Capability Spec

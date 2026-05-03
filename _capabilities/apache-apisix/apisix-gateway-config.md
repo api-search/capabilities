@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- update route
-- authentication
-- list all gateway routes.
+- nginx
+- configuration
 - list all apisix gateway routes.
-- create route
+- authentication
+- create a new apisix route for traffic routing.
+- delete an apisix route.
+- Platform Engineer
+- create a new api consumer with authentication plugins.
+- api gateway
+- delete route
+- list all backend upstream configurations.
 - list consumers
-- list all api consumers and their plugin configs.
-- create consumer
-- create an api consumer.
+- create a new gateway route.
+- open source
+- API Gateway Administrator
 - update an existing apisix route.
 - kubernetes
-- delete an apisix route.
-- open source
-- route, upstream, consumer, and ssl management workflow.
-- Platform Engineer
-- create upstream
 - create a new backend upstream with load balancing config.
-- create a backend upstream.
-- delete route
-- lua
-- list all backend upstream configurations.
-- engineers deploying and managing api gateway infrastructure.
-- administrators configuring routes, consumers, and security policies.
-- configuration
+- list all gateway routes.
 - list api consumers.
-- api gateway
-- API Gateway Administrator
-- list backend upstreams.
-- traffic management
-- create a new apisix route for traffic routing.
-- apache
-- nginx
-- cloud native
+- create a backend upstream.
+- list all api consumers and their plugin configs.
 - list upstreams
-- create a new api consumer with authentication plugins.
+- create consumer
+- route, upstream, consumer, and ssl management workflow.
+- lua
+- cloud native
+- create route
 - list routes
-- create a new gateway route.
+- create an api consumer.
 - apache apisix
+- update route
+- create upstream
+- administrators configuring routes, consumers, and security policies.
+- traffic management
+- list backend upstreams.
+- engineers deploying and managing api gateway infrastructure.
+- apache
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

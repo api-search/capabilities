@@ -36,43 +36,43 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- list compliance reports
-- get overall health status
-- vulnerability management
-- compliance
-- health monitoring
-- ibm websphere
-- get individual server health
-- list available fixes
-- list security users
-- middleware
-- list servers managed by websphere automation
-- vulnerability tracking and remediation
-- list known vulnerabilities
-- fix and patch management
-- list known security vulnerabilities
-- resolve vulnerability
-- get overall environment health
-- application server
-- get vulnerability details
-- enterprise java
-- microservices
-- list managed servers
-- get vulnerability
-- apply fix
-- get server health
-- compliance reporting
-- list vulnerabilities
-- list fixes
-- list available security fixes
 - security user management
-- get overall health
-- cloud native
-- apply a fix to managed servers
-- j2ee
+- vulnerability management
+- application server
+- middleware
+- health monitoring
+- fix and patch management
+- compliance
+- get server health
+- get vulnerability
+- list compliance reports
 - security
-- list users
+- list security users
+- microservices
+- list known vulnerabilities
+- list fixes
 - initiate vulnerability resolution
+- compliance reporting
+- get individual server health
+- vulnerability tracking and remediation
+- get overall health
+- apply a fix to managed servers
+- cloud native
+- get overall health status
+- ibm websphere
+- resolve vulnerability
+- list vulnerabilities
+- enterprise java
+- get overall environment health
+- apply fix
+- list users
+- list available security fixes
+- list servers managed by websphere automation
+- list managed servers
+- j2ee
+- list available fixes
+- list known security vulnerabilities
+- get vulnerability details
 slug: security-and-compliance
 source_filename: security-and-compliance.yaml
 source_heading: Capability Spec

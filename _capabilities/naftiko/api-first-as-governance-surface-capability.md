@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability annotated against the sdi "specification as governance surface" framing as the api-first program reading.
-- naftiko
-- capabilities
-- mcp
 - example op
 - example
+- api integration
+- a capability annotated against the sdi "specification as governance surface" framing as the api-first program reading.
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: api-first-as-governance-surface-capability
 source_filename: api-first-as-governance-surface-capability.yaml
 source_heading: Capability Spec

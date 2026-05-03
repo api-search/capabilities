@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability that consumes a -generated agent skill manifest and exposes a single mcp tool that injects it on-demand into a coding agent's context.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- a capability that consumes a -generated agent skill manifest and exposes a single mcp tool that injects it on-demand into a coding agent's context.
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: on-demand-agent-skills-injection-capability
 source_filename: on-demand-agent-skills-injection-capability.yaml
 source_heading: Capability Spec

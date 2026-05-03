@@ -27,46 +27,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- get out of sync data
-- oracle goldengate
-- compliance
-- get server info
-- create connection
-- get comparison job statistics
-- execute a comparison job
-- replication process metrics
-- repair job
-- enterprise
-- data verification
-- real-time replication
-- list connections
-- list process metrics
-- create job
-- database
-- repair out-of-sync data identified by a comparison job
-- list groups
-- create a new compare group
-- list replication process performance metrics
 - cdc
 - create a new veridata database connection
-- get goldengate process performance metrics for monitoring replication health
+- list replication process performance metrics
 - create group
-- comparison jobs
-- compare groups
-- get veridata server information
-- data quality
-- run job
-- data integration
-- list veridata database connections
-- data synchronization
-- get details of out-of-sync data
-- list comparison jobs
-- list compare groups for data verification
-- list compare groups
-- create a new comparison job
 - list jobs
-- database connections for verification
+- create a new comparison job
+- compliance
+- create connection
+- enterprise
+- real-time replication
+- repair job
+- list compare groups
+- compare groups
+- comparison jobs
+- list compare groups for data verification
+- execute a comparison job
+- data quality
+- list process metrics
+- replication process metrics
+- get goldengate process performance metrics for monitoring replication health
+- list comparison jobs
+- oracle goldengate
+- get comparison job statistics
+- create a new compare group
+- get details of out-of-sync data
+- get server info
+- list veridata database connections
+- data verification
+- list groups
+- data integration
+- database
+- get out of sync data
+- create job
+- list connections
+- run job
 - get job statistics
+- repair out-of-sync data identified by a comparison job
+- database connections for verification
+- get veridata server information
+- data synchronization
 slug: data-verification
 source_filename: data-verification.yaml
 source_heading: Capability Spec

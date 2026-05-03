@@ -68,47 +68,47 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- human capital management.
-- create case
-- list cases
-- campus solutions.
-- send a notification via email, text, or in-app channels.
-- sales
-- peopletools platform services.
-- list customers
-- support and service cases
+- list opportunities
 - fulfill intent
-- supply chain management
-- retrieve notifications for the current user.
-- retrieve customer records.
-- case management
-- customer records
-- send notification
-- peoplesoft
-- retrieve sales opportunities.
-- individual customer details
 - hcm
 - retrieve available chatbot intents.
-- customer engagement
-- financial and supply chain management.
-- erp
-- list intents
-- sales opportunities
-- chatbot intents
 - retrieve support and service cases.
-- notification management
-- list opportunities
-- get customer
-- create a new support or service case.
-- financial management
-- enterprise software
-- crm
-- chatbot intent fulfillments
-- campus solutions
 - retrieve details for a specific customer.
+- individual customer details
 - chatbot
-- process a chatbot intent fulfillment request.
+- customer engagement
+- create a new support or service case.
 - list notifications
+- human capital management.
+- sales
+- retrieve sales opportunities.
+- notification management
+- create case
+- list cases
+- process a chatbot intent fulfillment request.
+- crm
+- erp
+- list customers
+- chatbot intents
+- list intents
+- get customer
+- send a notification via email, text, or in-app channels.
+- campus solutions
+- supply chain management
+- support and service cases
+- enterprise software
+- retrieve notifications for the current user.
+- send notification
+- peoplesoft
+- campus solutions.
+- financial management
+- retrieve customer records.
+- case management
+- peopletools platform services.
+- financial and supply chain management.
+- customer records
+- chatbot intent fulfillments
+- sales opportunities
 slug: customer-engagement
 source_filename: customer-engagement.yaml
 source_heading: Capability Spec

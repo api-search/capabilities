@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
+- naftiko
 - a capability that explicitly bridges the api/eventdriven/datapipelines gap surfaced in signals — wraps an existing -shaped rest api and exposes both rest + mcp with event-driven adapters layered on.
+- governance
+- mcp
+- capabilities
+- ai
 slug: event-driven-gap-capability
 source_filename: event-driven-gap-capability.yaml
 source_heading: Capability Spec

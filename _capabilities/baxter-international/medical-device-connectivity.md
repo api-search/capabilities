@@ -10,10 +10,10 @@ provider_name: Baxter International
 provider_slug: baxter-international
 search_terms:
 - healthcare
-- medical devices
-- infusion pumps
-- patient monitoring
 - connected health
+- infusion pumps
+- medical devices
+- patient monitoring
 slug: medical-device-connectivity
 source_filename: medical-device-connectivity.yaml
 source_heading: Capability Spec

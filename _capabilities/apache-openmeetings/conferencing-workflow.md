@@ -30,47 +30,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- list all user groups
-- conferencing
-- apache openmeetings
-- close room
-- create a new room
-- get upcoming meetings
-- manages users, groups, and system health
-- login
-- calendar and scheduling
-- web conferencing
-- conference room management
-- System Administrator
-- list all registered users
-- open source
-- list upcoming
-- manages conference rooms, invites participants, and handles recordings
-- authenticate a user to openmeetings
-- list groups
-- close a conference room
-- whiteboard
-- check system health status
-- session recordings
-- user management
 - get room hash
-- unified workflow for managing conferencing sessions
-- Meeting Organizer
-- list rooms
-- list recordings
-- get recordings by type
-- list all public conference rooms
-- apache
-- list public rooms
 - create a new conference room
+- Meeting Organizer
+- authenticate a user to openmeetings
+- check system health status
+- manages conference rooms, invites participants, and handles recordings
+- unified workflow for managing conferencing sessions
+- list rooms
+- apache openmeetings
+- get recordings by type
+- open source
 - generate a secure room access hash
-- get upcoming calendar meetings
+- list recordings
+- list all user groups
+- conference room management
 - video conferencing
-- collaboration
-- check health
-- list users
-- list session recordings
+- whiteboard
+- create a new room
+- get upcoming calendar meetings
+- list public rooms
+- web conferencing
+- System Administrator
+- session recordings
+- list upcoming
+- close a conference room
 - create room
+- manages users, groups, and system health
+- conferencing
+- close room
+- list users
+- calendar and scheduling
+- list all registered users
+- list groups
+- get upcoming meetings
+- login
+- user management
+- collaboration
+- list all public conference rooms
+- list session recordings
+- check health
+- apache
 slug: conferencing-workflow
 source_filename: conferencing-workflow.yaml
 source_heading: Capability Spec

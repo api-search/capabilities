@@ -35,43 +35,43 @@ provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
 - data management
-- list all rows in an excel table.
-- cell range operations.
-- manage worksheets.
-- add a new data row to an excel table.
-- add table row
-- business users automating excel-based reporting.
-- get a cell range.
-- read cell values from a specified range.
-- list worksheets
-- microsoft 365
-- list all worksheets in the workbook.
-- spreadsheet automation
-- chart operations.
 - microsoft
-- microsoft excel
-- get range
-- update cell values in a specified range.
-- create a new worksheet.
-- list all charts in a worksheet.
-- Data Analyst
-- automate excel workbook operations.
-- automation
-- spreadsheets
-- data analysis
-- analysts working with excel workbooks for data processing.
-- manage table rows.
-- list table rows
-- list all worksheets.
-- office
-- create worksheet
-- list charts
-- Business Analyst
-- list rows in a table.
-- add a row to a table.
-- create a new worksheet in the workbook.
 - list charts.
+- automate excel workbook operations.
+- chart operations.
+- list rows in a table.
 - update range
+- automation
+- microsoft 365
+- list worksheets
+- business users automating excel-based reporting.
+- office
+- manage table rows.
+- cell range operations.
+- create worksheet
+- list all charts in a worksheet.
+- Business Analyst
+- get range
+- spreadsheet automation
+- read cell values from a specified range.
+- create a new worksheet.
+- list all worksheets.
+- Data Analyst
+- add a new data row to an excel table.
+- data analysis
+- list all worksheets in the workbook.
+- microsoft excel
+- list all rows in an excel table.
+- list table rows
+- manage worksheets.
+- list charts
+- analysts working with excel workbooks for data processing.
+- create a new worksheet in the workbook.
+- update cell values in a specified range.
+- spreadsheets
+- get a cell range.
+- add a row to a table.
+- add table row
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec

@@ -9,14 +9,14 @@ personas: []
 provider_name: Blender
 provider_slug: blender
 search_terms:
-- rendering
-- 3d
-- modeling
-- open source
 - vfx
-- animation
+- open source
 - game development
+- 3d
 - python
+- animation
+- rendering
+- modeling
 slug: blender-python-api
 source_filename: blender-python-api.yaml
 source_heading: Capability Spec

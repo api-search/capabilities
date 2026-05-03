@@ -78,54 +78,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- data lakes
-- list warehouses
-- execute an alert
-- fetch service logs
-- execute alert
-- create a compute pool
-- create a virtual warehouse
-- snowflake
-- list image repositories
-- data warehousing
-- warehouse management
-- fetch warehouse details
 - infrastructure
-- create alert
-- database
-- suspend service
-- list services
-- alert management
-- resume service
-- create image repository
-- fetch service status
-- list monitoring alerts
-- container service management
-- list alerts
-- create a container service
-- compute pool management
-- create service
-- delete a warehouse
+- compute
+- list container services
 - create an image repository
-- create compute pool
-- fetch warehouse
-- create an alert
-- suspend a running service
 - create warehouse
-- list compute pools
+- create a container service
+- list image repositories
+- get service logs
+- list monitoring alerts
+- create a virtual warehouse
+- create a service
+- suspend a running service
+- fetch warehouse details
+- execute alert
+- compute pool management
+- create alert
+- alert management
+- create a warehouse
+- suspend service
+- fetch service status
+- fetch service logs
 - get service status
-- resume a suspended service
+- list warehouses
+- create compute pool
+- data lakes
+- data sharing
+- delete warehouse
+- create service
+- warehouse management
+- list virtual warehouses
 - containers
 - sql
-- compute
-- create a warehouse
-- delete warehouse
-- get service logs
-- data sharing
+- delete a warehouse
+- fetch warehouse
+- snowflake
+- list compute pools
+- list services
+- data warehousing
+- database
+- create an alert
+- create a compute pool
+- list alerts
+- execute an alert
+- resume a suspended service
+- container service management
+- resume service
+- create image repository
 - create a monitoring alert
-- list container services
-- create a service
-- list virtual warehouses
 slug: compute-and-services
 source_filename: compute-and-services.yaml
 source_heading: Capability Spec

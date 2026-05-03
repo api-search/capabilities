@@ -15,34 +15,34 @@ personas: []
 provider_name: Amazon IoT FleetWise
 provider_slug: amazon-iot-fleetwise
 search_terms:
-- amazon iot fleetwise create fleet
-- create signal catalog
-- amazon iot fleetwise list signal catalogs
-- amazon iot fleetwise create signal catalog
-- vehicle data
-- amazon iot fleetwise list fleets
-- vehicle telematics
-- list campaigns
-- manages amazon iot fleetwise resources and operations
-- list vehicles
-- collect, transform, and transfer vehicle data to the cloud.
-- amazon iot fleetwise create campaign
 - create fleet
-- create vehicle
-- amazon iot fleetwise create vehicle
-- list fleets
-- telematics
-- IoT Developer
-- automotive
-- list signal catalogs
 - connected vehicles
-- iot
-- Automotive Engineer
+- amazon iot fleetwise list fleets
+- telematics
 - amazon iot fleetwise list campaigns
-- amazon iot fleetwise list vehicles
-- amazon iot fleetwise resources
-- create campaign
+- create signal catalog
+- Automotive Engineer
+- create vehicle
+- amazon iot fleetwise create fleet
+- iot
 - aws
+- amazon iot fleetwise list signal catalogs
+- collect, transform, and transfer vehicle data to the cloud.
+- list vehicles
+- create campaign
+- automotive
+- IoT Developer
+- vehicle data
+- vehicle telematics
+- amazon iot fleetwise resources
+- amazon iot fleetwise create vehicle
+- amazon iot fleetwise list vehicles
+- list signal catalogs
+- list fleets
+- amazon iot fleetwise create campaign
+- manages amazon iot fleetwise resources and operations
+- amazon iot fleetwise create signal catalog
+- list campaigns
 slug: vehicle-fleet-management
 source_filename: vehicle-fleet-management.yaml
 source_heading: Capability Spec

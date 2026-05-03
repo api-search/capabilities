@@ -34,45 +34,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- builds integrations, automation workflows, and uses the api directly
-- list deals
-- list all company accounts in activecampaign crm
-- email marketing
-- retrieve a specific deal by id
-- email, sms, and multi-channel marketing automation
-- list all sales deals in activecampaign crm
-- accounts
-- Growth Engineer
-- sales
-- create account
-- get deal
-- manages email campaigns, automations, and contact segmentation
-- create a new company account in activecampaign crm
-- Sales Representative
-- create a new deal
-- Account Manager
-- cross-channel contact engagement and personalization
-- sales automation
-- create a new account
-- Marketing Manager
-- Revenue Operations
-- create a new sales deal in activecampaign crm
-- sales deal management
-- marketing automation
-- Email Marketer
 - deals
-- crm
-- company account management
-- create deal
-- list all accounts
-- list accounts
-- manage sales pipeline, deals, accounts, and tasks
-- crm, pipeline management, and revenue operations
+- create a new company account in activecampaign crm
+- cross-channel contact engagement and personalization
+- list all company accounts in activecampaign crm
+- list all sales deals in activecampaign crm
 - tracks deals, manages accounts, and uses crm features
-- orchestrate contact journeys, campaigns, automations, and list management
-- list all deals
+- create a new deal
+- create a new sales deal in activecampaign crm
+- list all accounts
+- sales
 - activecampaign
+- sales deal management
+- create a new account
+- marketing automation
+- manage sales pipeline, deals, accounts, and tasks
+- list all deals
+- sales automation
+- Revenue Operations
+- email, sms, and multi-channel marketing automation
+- list deals
+- crm, pipeline management, and revenue operations
+- crm
 - customer experience
+- accounts
+- orchestrate contact journeys, campaigns, automations, and list management
+- list accounts
+- Account Manager
+- builds integrations, automation workflows, and uses the api directly
+- retrieve a specific deal by id
+- company account management
+- create account
+- manages email campaigns, automations, and contact segmentation
+- email marketing
+- Growth Engineer
+- create deal
+- Sales Representative
+- get deal
+- Marketing Manager
+- Email Marketer
 slug: crm-sales
 source_filename: crm-sales.yaml
 source_heading: Capability Spec

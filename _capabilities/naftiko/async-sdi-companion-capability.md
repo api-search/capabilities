@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a capability paired with framework-wiki/spec-driven-integration.md as the standalone read, freeing her from needing to schedule.
 - example
+- api integration
+- naftiko
 - governance
+- a capability paired with framework-wiki/spec-driven-integration.md as the standalone read, freeing her from needing to schedule.
+- mcp
+- capabilities
+- ai
 slug: async-sdi-companion-capability
 source_filename: async-sdi-companion-capability.yaml
 source_heading: Capability Spec

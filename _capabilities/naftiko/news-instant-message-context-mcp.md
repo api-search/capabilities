@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a capability that joins news headlines + instant messaging (ib) thread context into one mcp-callable agent tool for an internal trading-floor assistant.
 - example
+- api integration
+- naftiko
+- a capability that joins news headlines + instant messaging (ib) thread context into one mcp-callable agent tool for an internal trading-floor assistant.
 - governance
+- mcp
+- capabilities
+- ai
 slug: news-instant-message-context-mcp
 source_filename: news-instant-message-context-mcp.yaml
 source_heading: Capability Spec

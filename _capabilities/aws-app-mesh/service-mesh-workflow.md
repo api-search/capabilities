@@ -34,42 +34,42 @@ personas: []
 provider_name: AWS App Mesh
 provider_slug: aws-app-mesh
 search_terms:
-- list virtual routers and their routing rules
+- list virtual nodes in a service mesh
 - networking
-- list virtual services in a mesh
-- list virtual nodes in a mesh
-- virtual gateway management
-- list virtual routers
-- virtual router management
-- list all service meshes
-- list meshes
+- virtual node management
 - list virtual services
+- Platform Engineer
+- aws app mesh
+- list virtual services in a mesh
+- list virtual nodes
+- service mesh
+- list virtual gateways for ingress traffic management
+- list virtual services in a service mesh
+- aws
 - list virtual routers in a mesh
+- list virtual gateways in a mesh
+- list virtual nodes in a mesh
+- envoy
 - microservices
 - service mesh lifecycle management
-- Platform Engineer
-- manages service mesh infrastructure and inter-service communication
-- deprecated
-- managing gateway routing for external traffic ingress
-- create a new service mesh
-- service mesh
-- create mesh
 - configuring routing rules for service-to-service communication
-- list virtual gateways
-- list virtual services in a service mesh
-- create a new app mesh service mesh
-- list virtual nodes
-- creating and configuring service meshes and their components
-- list virtual gateways for ingress traffic management
-- virtual service management
-- envoy
-- list virtual gateways in a mesh
-- manage app mesh service meshes, virtual nodes, services, routers, and gateways
-- list virtual nodes in a service mesh
-- virtual node management
-- aws app mesh
 - list all app mesh service meshes in the aws account
-- aws
+- list meshes
+- creating and configuring service meshes and their components
+- create mesh
+- managing gateway routing for external traffic ingress
+- manage app mesh service meshes, virtual nodes, services, routers, and gateways
+- create a new service mesh
+- create a new app mesh service mesh
+- list virtual routers and their routing rules
+- list all service meshes
+- virtual service management
+- deprecated
+- virtual gateway management
+- manages service mesh infrastructure and inter-service communication
+- list virtual gateways
+- list virtual routers
+- virtual router management
 slug: service-mesh-workflow
 source_filename: service-mesh-workflow.yaml
 source_heading: Capability Spec

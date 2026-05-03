@@ -10,10 +10,10 @@ provider_name: Amazon VPC
 provider_slug: amazon-vpc
 search_terms:
 - networking
-- security
-- private cloud
-- subnets
 - vpc
+- security
+- subnets
+- private cloud
 slug: amazon-vpc-capability
 source_filename: amazon-vpc-capability.yaml
 source_heading: Capability Spec

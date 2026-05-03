@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- 'implements guide-use-cases #2 (rightsize ai context) against a verbose graph endpoint, used as the basis for the follow-on stories and shorts.'
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- 'implements guide-use-cases #2 (rightsize ai context) against a verbose graph endpoint, used as the basis for the follow-on stories and shorts.'
+- capabilities
+- ai
 slug: m365-rightsize-copilot-context-capability
 source_filename: m365-rightsize-copilot-context-capability.yaml
 source_heading: Capability Spec

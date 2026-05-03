@@ -30,50 +30,50 @@ personas: []
 provider_name: Amazon Lookout for Vision
 provider_slug: amazon-lookout-for-vision
 search_terms:
-- start inspection model
-- list all inspection projects
-- detect anomalies
+- get model status
 - inspect image
-- stop a running model to reduce costs when not actively inspecting
-- anomaly detection
-- amazon
-- check the training status and performance metrics of an inspection model
-- train inspection model
-- runs inspection models on product images to detect defects in real time
-- stop inspection model
-- create a visual inspection project
-- machine learning
-- create inspection project
-- list all trained inspection models in a project
-- visual inspection
-- list all visual inspection projects
-- builds and trains computer vision models for automated defect detection
-- Manufacturing Engineer
-- create project
-- computer vision
-- list trained models
-- train model
-- inspection projects
-- running anomaly detection on product images
-- quality inspection
-- workflow for building and deploying computer vision models for quality inspection
 - manufacturing
-- detect visual anomalies in an image
+- create project
+- list all visual inspection projects
+- quality inspection
+- start inspection model
+- builds and trains computer vision models for automated defect detection
+- inspection projects
+- stop a running model to reduce costs when not actively inspecting
+- train inspection model
+- list all inspection projects
+- create inspection project
+- train a computer vision model for defect detection
+- runs inspection models on product images to detect defects in real time
 - list projects
+- run anomaly detection on a product image to identify defects
+- Manufacturing Engineer
+- computer vision
+- create a visual inspection project
+- train a new inspection model
+- workflow for building and deploying computer vision models for quality inspection
+- run anomaly detection on images
+- list all trained inspection models in a project
+- Quality Inspector
+- list trained models
+- detect visual anomalies in an image
+- visual inspection
+- managing training and test datasets
+- check the training status and performance metrics of an inspection model
+- amazon
+- list models
+- stop inspection model
+- running anomaly detection on product images
 - create a new visual quality inspection project
+- train model
+- machine learning
+- detect anomalies
+- list inspection models
 - training and lifecycle management of computer vision models
 - list inspection projects
-- list inspection models
-- train a computer vision model for defect detection
-- run anomaly detection on a product image to identify defects
-- start a trained model to enable real-time inspection
 - visual inspection models
-- run anomaly detection on images
-- get model status
-- list models
-- managing training and test datasets
-- Quality Inspector
-- train a new inspection model
+- anomaly detection
+- start a trained model to enable real-time inspection
 slug: visual-inspection-workflow
 source_filename: visual-inspection-workflow.yaml
 source_heading: Capability Spec

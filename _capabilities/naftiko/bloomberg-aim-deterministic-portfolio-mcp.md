@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- spec-driven integration
-- capabilities
-- naftiko
 - a capability over bloomberg aim portfolio positions exposing typed, deterministic mcp reads for the ai-data-enterprise-tech opening artifact.
-- mcp
 - example op
 - example
+- api integration
+- spec-driven integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: bloomberg-aim-deterministic-portfolio-mcp
 source_filename: bloomberg-aim-deterministic-portfolio-mcp.yaml
 source_heading: Capability Spec

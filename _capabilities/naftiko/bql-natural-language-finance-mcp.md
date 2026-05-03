@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
+- example op
+- example
+- api integration
 - naftiko
 - mcp
-- example op
-- a capability that exposes query language (bql) as a natural-language mcp tool for an analyst agent.
-- example
 - governance
+- a capability that exposes query language (bql) as a natural-language mcp tool for an analyst agent.
+- capabilities
+- ai
 slug: bql-natural-language-finance-mcp
 source_filename: bql-natural-language-finance-mcp.yaml
 source_heading: Capability Spec

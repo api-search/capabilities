@@ -38,53 +38,53 @@ personas: []
 provider_name: Allianz
 provider_slug: allianz-docs
 search_terms:
+- financial services
+- create self service policy
+- send quote email
+- unified workflow for partners embedding allianz insurance into customer journeys
+- complete a policy application via staff-assisted workflow
+- insurance certificate retrieval resources
+- insurance policy completion resources
+- embedded insurance product distribution through partner apis
+- quoting
+- submit a customer insurance lead to the allianz sales team for follow-up
+- get certificate
+- Partner Developer
+- Financial Institution Integration Team
+- asset management
+- individual quote detail and rating factor resources
+- submit lead referral
+- create a staff-assisted insurance price estimate for home, landlord, or car insurance
+- price estimation and quote generation for end customers
+- get quote rating factors
+- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
+- policy completion and certificate management
+- retrieve the status and summary of an existing insurance quote
+- create a self-service policy completion session for customer
+- get certificate of currency
+- create a staff-assisted insurance quote for a customer
+- get the detailed premium breakdown and rating factors for an insurance quote
+- retrieve a certificate of currency for a policy
+- get quote summary
+- retrieve an insurance certificate of currency for a bound policy
+- submit lead
+- developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
+- insurance
+- insurance quoting and estimation resources
+- insurance lead referral resources
+- email a quote to a customer for their review
+- complete an insurance policy application on behalf of a customer
+- create assisted quote
+- submit a customer lead to the allianz sales team
+- australia
+- partner integration
+- embedded insurance
+- complete policy assisted
+- get the rating factors behind a quote premium
 - email an insurance quote to a customer for asynchronous review
 - create a self-service quote session for a customer to complete via internet banking
-- insurance certificate retrieval resources
-- retrieve a certificate of currency for a policy
-- create assisted quote
-- get the current status and details of a quote
-- submit a customer insurance lead to the allianz sales team for follow-up
-- insurance policy completion resources
-- policy completion and certificate management
-- partner integration
-- complete policy assisted
-- submit lead referral
-- get certificate
-- insurance lead referral resources
-- submit lead
-- complete a policy application via staff-assisted workflow
-- create a staff-assisted insurance price estimate for home, landlord, or car insurance
-- get quote summary
 - create self service quote
-- embedded insurance
-- price estimation and quote generation for end customers
-- create a self-service policy completion session for customer
-- complete an insurance policy application on behalf of a customer
-- asset management
-- Financial Institution Integration Team
-- retrieve the status and summary of an existing insurance quote
-- get the detailed premium breakdown and rating factors for an insurance quote
-- submit a customer lead to the allianz sales team
-- embedded insurance product distribution through partner apis
-- developer at a financial institution, broker, or retailer integrating allianz insurance products into their platform
-- retrieve an insurance certificate of currency for a bound policy
-- send quote email
-- financial services
-- get the rating factors behind a quote premium
-- Partner Developer
-- quoting
-- create a staff-assisted insurance quote for a customer
-- technical team at banks or lenders embedding insurance offers at the point of sale for mortgages or vehicle loans
-- insurance
-- email a quote to a customer for their review
-- individual quote detail and rating factor resources
-- get quote rating factors
-- insurance quoting and estimation resources
-- get certificate of currency
-- create self service policy
-- unified workflow for partners embedding allianz insurance into customer journeys
-- australia
+- get the current status and details of a quote
 slug: insurance-partner-integration
 source_filename: insurance-partner-integration.yaml
 source_heading: Capability Spec

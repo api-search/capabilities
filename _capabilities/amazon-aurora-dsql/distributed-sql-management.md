@@ -18,27 +18,27 @@ provider_name: Amazon Aurora DSQL
 provider_slug: amazon-aurora-dsql
 search_terms:
 - update cluster
-- update the configuration of an aurora dsql cluster.
-- postgresql
 - amazon aurora dsql
-- distributed sql
-- serverless
-- list all clusters
-- create multi region clusters
-- delete cluster
-- create a new aurora dsql cluster for distributed sql workloads.
-- create cluster
-- distributed sql cluster management
-- list clusters
-- get the current status and configuration of an aurora dsql cluster.
-- delete an aurora dsql cluster when it is no longer needed.
-- create linked aurora dsql clusters across multiple aws regions for global distribution.
-- list all aurora dsql clusters to understand available databases.
-- create a new cluster
-- get the postgresql-compatible connection endpoint for an aurora dsql cluster.
-- get cluster
 - get cluster endpoint
+- create cluster
+- list clusters
+- create a new aurora dsql cluster for distributed sql workloads.
+- distributed sql cluster management
 - aws
+- list all aurora dsql clusters to understand available databases.
+- update the configuration of an aurora dsql cluster.
+- create a new cluster
+- get the current status and configuration of an aurora dsql cluster.
+- create linked aurora dsql clusters across multiple aws regions for global distribution.
+- delete an aurora dsql cluster when it is no longer needed.
+- serverless
+- get cluster
+- list all clusters
+- get the postgresql-compatible connection endpoint for an aurora dsql cluster.
+- delete cluster
+- create multi region clusters
+- postgresql
+- distributed sql
 slug: distributed-sql-management
 source_filename: distributed-sql-management.yaml
 source_heading: Capability Spec

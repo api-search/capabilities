@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- data management
-- single spreadsheet operations
-- append values
-- create a new google sheets spreadsheet
-- get spreadsheet details by id
-- apply batch updates to a spreadsheet
-- append rows of data to a spreadsheet
-- batch update values
 - get values
-- copy a sheet to another spreadsheet
-- clear values from a range
-- get spreadsheet
 - read values from multiple ranges at once
-- write values to a spreadsheet range
-- write values to multiple ranges at once
-- productivity
+- search developer metadata
+- copy a sheet to another spreadsheet
+- data management
+- batch get values
+- get spreadsheet
+- search developer metadata matching filters
 - create a new spreadsheet
+- automation
+- spreadsheet lifecycle operations
+- single spreadsheet operations
+- batch update spreadsheet
+- read values from a range
+- update values
+- google sheets
+- batch clear values
+- clear values from a spreadsheet range
+- get developer metadata
+- productivity
+- append rows of data to a spreadsheet
+- write values to multiple ranges at once
+- batch update values
+- copy sheet
+- get developer metadata by id
+- get spreadsheet details
 - append values to a range
 - create spreadsheet
-- search developer metadata
-- get developer metadata
+- read values from a spreadsheet range
+- clear values from a range
+- get spreadsheet details by id
+- google workspace
+- create a new google sheets spreadsheet
+- write values to a range
+- append values
+- write values to a spreadsheet range
+- spreadsheets
 - cell value read and write operations
 - clear values
-- google sheets
-- batch get values
-- automation
-- read values from a range
-- spreadsheets
-- read values from a spreadsheet range
-- get spreadsheet details
-- batch update spreadsheet
-- update values
-- google workspace
-- clear values from a spreadsheet range
-- write values to a range
 - clear values from multiple ranges
-- batch clear values
-- spreadsheet lifecycle operations
-- search developer metadata matching filters
-- get developer metadata by id
-- copy sheet
+- apply batch updates to a spreadsheet
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

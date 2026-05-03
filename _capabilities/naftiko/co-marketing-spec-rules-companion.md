@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a reference capability tied to a co-authored guide based on framework-wiki/specification-rules — the partnership format that fits her product-marketing role.
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a reference capability tied to a co-authored guide based on framework-wiki/specification-rules — the partnership format that fits her product-marketing role.
+- capabilities
+- ai
 slug: co-marketing-spec-rules-companion
 source_filename: co-marketing-spec-rules-companion.yaml
 source_heading: Capability Spec

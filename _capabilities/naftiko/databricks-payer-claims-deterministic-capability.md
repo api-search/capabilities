@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- a capability over azure databricks-hosted claims data, exposing read-only deterministic mcp tools with hipaa-shaped governance + pii detection.
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability over azure databricks-hosted claims data, exposing read-only deterministic mcp tools with hipaa-shaped governance + pii detection.
 - governance
+- mcp
+- capabilities
+- ai
 slug: databricks-payer-claims-deterministic-capability
 source_filename: databricks-payer-claims-deterministic-capability.yaml
 source_heading: Capability Spec

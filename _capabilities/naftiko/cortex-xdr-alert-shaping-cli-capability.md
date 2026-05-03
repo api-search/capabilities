@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
 - a cli-runnable capability wrapping the cortex xdr alerts api, returning a shaped agent context object — designed to bypass the docker container startup blocker.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: cortex-xdr-alert-shaping-cli-capability
 source_filename: cortex-xdr-alert-shaping-cli-capability.yaml
 source_heading: Capability Spec

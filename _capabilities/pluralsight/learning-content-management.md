@@ -110,53 +110,53 @@ personas: []
 provider_name: Pluralsight
 provider_slug: pluralsight
 search_terms:
-- query the program catalog
-- query learning paths
+- channels
+- learning content
+- structured sequences of courses organized around skills and roles
 - query learning path catalog data including structured sequences of courses and content organized around specific skills and roles.
-- query the general content catalog including videos, guides, interactive courses, and other content types.
-- video training
-- content management
-- query programs
-- query content tags and taxonomy data
-- technology
 - query and manage content channels including creating channels, managing members and groups, organizing content sections, and tracking channel progress.
 - query lab catalog and activity data
-- query labs
-- retrieve the full public course catalog
-- resolve content slugs to internal identifiers
-- query the program catalog including structured learning programs and curriculum offerings.
 - query the course catalog
-- content tags and taxonomy for categorization
-- get public course catalog
-- query content tags and taxonomy data used to categorize and organize learning content.
-- skills assessment
-- learning content
-- public course catalog accessible without authentication
-- query the general content catalog
-- course catalog with titles, descriptions, authors, and metadata
-- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
-- query tags
-- structured sequences of courses organized around skills and roles
-- manage channels
-- learning paths
-- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
-- structured learning programs and curriculum offerings
-- courses
-- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
-- query content catalog
-- engineering metrics
-- query course catalog
-- pluralsight
-- channels
-- hands-on labs and practical exercises
-- learning
-- education
-- content channels for organizing and curating learning content
-- query content slugs
-- query and manage content channels
+- resolve content slugs to internal identifiers
+- query labs
+- query programs
 - resolve content slugs to internal identifiers for content lookup by human-readable url slugs.
-- query learning path catalog data
 - general content catalog including videos, guides, and interactive courses
+- learning paths
+- retrieve the full public course catalog including course ids, titles, durations, release dates, and retirement status.
+- manage channels
+- query and manage content channels
+- query course catalog information including titles, descriptions, authors, duration, release dates, and retirement status.
+- query the program catalog including structured learning programs and curriculum offerings.
+- course catalog with titles, descriptions, authors, and metadata
+- query tags
+- learning
+- query the general content catalog
+- query the program catalog
+- retrieve the full public course catalog
+- courses
+- technology
+- query lab catalog and lab activity data for hands-on learning experiences and practical exercises.
+- query content tags and taxonomy data
+- hands-on labs and practical exercises
+- education
+- structured learning programs and curriculum offerings
+- skills assessment
+- query content catalog
+- query learning paths
+- pluralsight
+- query content tags and taxonomy data used to categorize and organize learning content.
+- query learning path catalog data
+- query course catalog
+- content channels for organizing and curating learning content
+- get public course catalog
+- engineering metrics
+- public course catalog accessible without authentication
+- content management
+- video training
+- query the general content catalog including videos, guides, interactive courses, and other content types.
+- content tags and taxonomy for categorization
+- query content slugs
 slug: learning-content-management
 source_filename: learning-content-management.yaml
 source_heading: Capability Spec

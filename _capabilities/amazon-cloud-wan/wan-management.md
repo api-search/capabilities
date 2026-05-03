@@ -10,13 +10,13 @@ personas: []
 provider_name: Amazon Cloud WAN
 provider_slug: amazon-cloud-wan
 search_terms:
-- networking
-- Network Engineer
-- wide area network
 - cloud wan
-- amazon web services
+- wide area network
+- networking
 - sd-wan
+- Network Engineer
 - amazon cloud wan
+- amazon web services
 slug: wan-management
 source_filename: wan-management.yaml
 source_heading: Capability Spec

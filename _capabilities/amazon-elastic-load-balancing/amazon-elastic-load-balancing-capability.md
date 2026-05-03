@@ -62,41 +62,41 @@ personas: []
 provider_name: Amazon Elastic Load Balancing
 provider_slug: amazon-elastic-load-balancing
 search_terms:
-- networking
 - createListener
-- amazon elastic load balancing describe target health
+- load balancing
+- networking
+- createRule
+- amazon elastic load balancing describe target groups
+- describeListeners
+- developers building applications using amazon elastic load balancing
+- amazon web services
+- amazon elastic load balancing register targets with a target group
+- amazon elastic load balancing describe load balancers
+- modifyLoadBalancerAttributes
+- unified capability for managing amazon elastic load balancing resources. combines amazon elastic load balancing apis for cloud architect workflows in network traffic management.
 - amazon elastic load balancing delete a load balancer
 - scalability
-- createTargetGroup
-- amazon elastic load balancing describe load balancers
-- describeTargetHealth
-- describeTargetGroups
-- operations teams managing amazon elastic load balancing infrastructure
-- distribute incoming traffic across multiple targets for high availability
-- describeLoadBalancers
-- modifyLoadBalancerAttributes
-- describeListeners
-- createRule
-- amazon elastic load balancing describe listener rules
-- developers building applications using amazon elastic load balancing
-- amazon elastic load balancing create a load balancer
-- load balancing
-- createLoadBalancer
-- amazon elastic load balancing create a listener
-- amazon elastic load balancing register targets with a target group
-- amazon elastic load balancing create a listener rule
+- deregisterTargets
 - amazon elastic load balancing modify load balancer attributes
-- amazon elastic load balancing create a target group
-- amazon elastic load balancing deregister targets from a target group
-- amazon web services
-- deleteLoadBalancer
 - amazon elastic load balancing describe listeners
 - high availability
-- unified capability for managing amazon elastic load balancing resources. combines amazon elastic load balancing apis for cloud architect workflows in network traffic management.
-- amazon elastic load balancing describe target groups
+- describeTargetGroups
+- deleteLoadBalancer
+- describeLoadBalancers
+- amazon elastic load balancing create a load balancer
+- amazon elastic load balancing create a listener
 - registerTargets
+- amazon elastic load balancing describe listener rules
+- amazon elastic load balancing describe target health
 - describeRules
-- deregisterTargets
+- createLoadBalancer
+- operations teams managing amazon elastic load balancing infrastructure
+- amazon elastic load balancing create a target group
+- amazon elastic load balancing deregister targets from a target group
+- createTargetGroup
+- distribute incoming traffic across multiple targets for high availability
+- amazon elastic load balancing create a listener rule
+- describeTargetHealth
 slug: amazon-elastic-load-balancing-capability
 source_filename: amazon-elastic-load-balancing-capability.yaml
 source_heading: Capability Spec

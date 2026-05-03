@@ -32,60 +32,60 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- create an ap invoice.
-- po get purchase order by id
-- po get requisitions
-- financials
-- list suppliers.
-- get ap invoice by id.
-- ar create invoice
-- get journals
-- enterprise
-- purchase order management.
-- retrieve suppliers.
-- ap create invoice
-- po create purchase order
-- create a journal entry.
-- get ar invoices
-- list purchase orders.
-- supplier management.
-- ce get bank accounts
-- po get purchase orders
-- retrieve payments.
-- po get suppliers
-- list journal entries.
-- gl get journals
-- erp
-- retrieve requisitions.
-- business applications
-- retrieve bank accounts.
-- retrieve general ledger journal entries.
-- retrieve ap invoices.
-- ar get invoices
-- get purchase orders
-- ap invoice management.
-- retrieve receipts.
-- journal entry management.
-- create a purchase order.
 - get ap invoices
-- ar invoice management.
-- create an ar invoice.
-- retrieve fixed assets.
-- oracle
-- ap get invoice by id
-- list ap invoices.
-- procurement
-- get purchase order by id.
-- gl create journal
+- get ar invoices
+- list journal entries.
+- ar get invoices
+- po get requisitions
+- po get purchase orders
+- retrieve bank accounts.
+- supplier management.
+- list purchase orders.
 - ap get invoices
-- retrieve purchase orders.
-- list ar invoices.
+- po get purchase order by id
 - e-business suite
-- get suppliers
-- ar get receipts
-- retrieve ar invoices.
-- ap get payments
 - fa get assets
+- po create purchase order
+- retrieve ar invoices.
+- ar create invoice
+- financials
+- journal entry management.
+- list ar invoices.
+- ar get receipts
+- enterprise
+- get ap invoice by id.
+- po get suppliers
+- create a purchase order.
+- retrieve fixed assets.
+- business applications
+- retrieve payments.
+- create an ar invoice.
+- get purchase order by id.
+- ce get bank accounts
+- erp
+- procurement
+- ap create invoice
+- retrieve general ledger journal entries.
+- ap get payments
+- retrieve receipts.
+- gl create journal
+- purchase order management.
+- oracle
+- ar invoice management.
+- gl get journals
+- create a journal entry.
+- retrieve ap invoices.
+- create an ap invoice.
+- retrieve purchase orders.
+- get suppliers
+- get journals
+- ap invoice management.
+- retrieve suppliers.
+- retrieve requisitions.
+- ap get invoice by id
+- get purchase orders
+- list ap invoices.
+- list suppliers.
 slug: financial-operations
 source_filename: financial-operations.yaml
 source_heading: Capability Spec

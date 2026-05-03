@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability annotated with the sdi "deterministic foundation for agents" framing, designed to be the lead artifact when ai risk officers join the conversation.
-- naftiko
-- capabilities
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability annotated with the sdi "deterministic foundation for agents" framing, designed to be the lead artifact when ai risk officers join the conversation.
 - governance
+- mcp
+- capabilities
+- ai
 slug: deterministic-agent-foundation
 source_filename: deterministic-agent-foundation.yaml
 source_heading: Capability Spec

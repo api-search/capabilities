@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a capability that fronts a tyk-managed bnp banking api as a naftiko capability with forward proxy + trusted-header security — letting bnp's api-first program add agent-shaped mcp without bypassing the gateway.
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability that fronts a tyk-managed bnp banking api as a naftiko capability with forward proxy + trusted-header security — letting bnp's api-first program add agent-shaped mcp without bypassing the gateway.
 - governance
+- mcp
+- capabilities
+- ai
 slug: bnp-tyk-gateway-mirrored-banking-capability
 source_filename: bnp-tyk-gateway-mirrored-banking-capability.yaml
 source_heading: Capability Spec

@@ -14,24 +14,24 @@ personas: []
 provider_name: Azure Networking Services
 provider_slug: azure-networking-services
 search_terms:
-- networking
-- list subnets
-- list all resources
-- list loadbalancer resources
-- resource management
-- list subnet resources
-- list networkinterface resources
-- microsoft
 - infrastructure
-- cloud
+- list subnets
+- networking
+- list all resources
+- list
+- list loadbalancer resources
+- list subnet resources
 - azure
+- cloud
 - list load balancers
+- azure resource management
+- microsoft
+- management
+- resource management
+- list networkinterface resources
+- list virtualnetwork resources
 - list virtual networks
 - list network interfaces
-- azure resource management
-- list virtualnetwork resources
-- management
-- list
 slug: azure-networking-services-management
 source_filename: azure-networking-services-management.yaml
 source_heading: Capability Spec

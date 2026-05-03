@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a reference capability exercising capability-driven mocking against capability specs () plus runtime execution (naftiko) — explicit partnership-boundary artifact.
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a reference capability exercising capability-driven mocking against capability specs () plus runtime execution (naftiko) — explicit partnership-boundary artifact.
+- capabilities
+- ai
 slug: adjacency-capability-driven-mocking-reference
 source_filename: adjacency-capability-driven-mocking-reference.yaml
 source_heading: Capability Spec

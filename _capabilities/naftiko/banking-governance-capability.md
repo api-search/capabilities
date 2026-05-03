@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- 'a capability built specifically to show banking-grade governance: labels on info, tags on consumes (data sensitivity, billing), kyverno admission control, nist/soc2/pci/gdpr continuous compliance.'
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- 'a capability built specifically to show banking-grade governance: labels on info, tags on consumes (data sensitivity, billing), kyverno admission control, nist/soc2/pci/gdpr continuous compliance.'
 - governance
+- mcp
+- capabilities
+- ai
 slug: banking-governance-capability
 source_filename: banking-governance-capability.yaml
 source_heading: Capability Spec

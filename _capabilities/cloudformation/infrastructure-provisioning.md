@@ -75,81 +75,81 @@ personas: []
 provider_name: AWS CloudFormation
 provider_slug: cloudformation
 search_terms:
-- update stack
-- stack drift detection
-- cloud control
-- list resources by type
-- template validation
-- list exports
-- stack resources
-- get resource request status
-- describe stacks
-- single stack operations
-- detect drift
-- stack events
-- describe change set
-- delete a resource
-- update a stack
-- list stack exports
-- get the template for a stack
-- cloudformation
-- execute a change set
-- validate a template
-- describe a change set
-- list stack sets
-- create a cloud resource
-- describe stack events
-- cancel an in-progress resource operation
-- list resources in a stack
+- list stacks
+- list all stacks
+- list stack resources
 - describe cloudformation stacks
-- cloud resources
-- infrastructure as code
-- create resource
-- create stack
-- stack management
+- list exports
 - create a stack
-- cloudformation stack operations
-- get a resource
-- detect drift on a stack
-- create a cloudformation stack
-- create a cloud resource via cloud control
-- get template
+- list resources in a stack
+- stack resources
+- change set operations
+- list stack exports
+- execute change set
+- create a change set
+- cloud control resource operations
+- stack management
+- cloudformation
+- automation
+- infrastructure as code
+- create a cloud resource
+- list resources
+- create stack
+- update resource
+- update a cloud resource via cloud control
+- single stack operations
 - delete a stack
-- delete stack
-- validate template
-- describe a stack
-- provisioning
-- list types
+- stack events
+- validate a template
 - delete a cloud resource via cloud control
+- get a resource
+- aws
+- get resource
+- validate a cloudformation template
 - create change set
+- create a change set for a stack
+- describe stack events
+- describe change set
+- validate template
+- get template
+- detect drift
+- cancel an in-progress resource operation
+- detect drift on a stack
+- cloud resources
+- iac
+- describe a stack
+- single change set
+- execute a change set
+- provisioning
+- delete stack
+- list resources by type
+- describe stacks
+- cloudformation stack operations
+- describe a change set
+- cloud control
+- single resource operations
+- list types
+- update stack
+- get resource request status
+- get stack events
 - delete resource
 - cancel resource request
-- update resource
-- list resources of a specified type
-- read a cloud resource via cloud control
-- automation
-- get stack events
 - detect stack drift
-- describe stack
-- list stack resources
-- list stacks
-- cloud control resource operations
-- list resources
-- create a change set for a stack
-- update a cloud resource via cloud control
-- single resource operations
-- get resource
-- list registry extension types
-- iac
-- single change set
-- execute change set
+- delete a resource
+- read a cloud resource via cloud control
+- list stack sets
+- update a stack
+- template validation
+- create resource
+- stack drift detection
 - get status of a resource operation
-- validate a cloudformation template
-- change set operations
+- list resources of a specified type
 - update a resource
-- create a change set
-- aws
-- list all stacks
+- list registry extension types
+- create a cloudformation stack
+- create a cloud resource via cloud control
+- get the template for a stack
+- describe stack
 slug: infrastructure-provisioning
 source_filename: infrastructure-provisioning.yaml
 source_heading: Capability Spec

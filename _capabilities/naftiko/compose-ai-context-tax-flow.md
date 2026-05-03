@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- compose ai context use case (#5) wrapping tax + invoice + customer endpoints into one shaped context object for an ai assistant.
 - example
+- api integration
+- naftiko
+- compose ai context use case (#5) wrapping tax + invoice + customer endpoints into one shaped context object for an ai assistant.
 - governance
+- mcp
+- capabilities
+- ai
 slug: compose-ai-context-tax-flow
 source_filename: compose-ai-context-tax-flow.yaml
 source_heading: Capability Spec

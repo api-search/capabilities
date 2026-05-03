@@ -27,40 +27,40 @@ personas: []
 provider_name: Android
 provider_slug: android
 search_terms:
-- reviews
-- get review
-- check subscription purchase validity and expiry
-- google play
-- tv
-- android
 - in-app product purchases
-- check in-app product purchase and consumption status
-- list cancelled, refunded, or charged-back purchases
-- create a new subscription product
-- voided purchases
-- list user reviews from google play store
-- list reviews
-- create subscription
-- machine learning
-- app reviews
-- ai
-- list subscription products
-- sdk
 - list app reviews
-- list all subscription products for an app
-- list voided purchases
-- mobile development
-- automotive
-- get purchase subscription
-- subscription products
-- google
-- wearables
-- get a specific user review with comments
 - get product purchase status
+- wearables
+- android
+- get a specific user review with comments
+- list user reviews from google play store
+- list all subscription products for an app
+- google play
+- check subscription purchase validity and expiry
+- create a new subscription product
 - subscriptions
+- get review
+- mobile development
+- google
+- list subscription products
+- reviews
 - get purchase product
+- ai
+- subscription products
+- app reviews
+- get purchase subscription
+- list cancelled, refunded, or charged-back purchases
+- automotive
 - monetization
+- sdk
+- check in-app product purchase and consumption status
+- tv
+- list voided purchases
+- list reviews
+- machine learning
 - list subscriptions
+- create subscription
+- voided purchases
 slug: app-monetization
 source_filename: app-monetization.yaml
 source_heading: Capability Spec

@@ -70,63 +70,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
+- dashboards
+- delete a look.
+- list all dashboards.
+- list all saved looks.
+- data analytics
+- create a user.
+- query management.
+- create a query.
+- run query
+- bi platform
+- create a new user.
+- create query
+- individual dashboard management.
+- update a look.
+- run a look and return results.
+- update a user.
+- get dashboard
+- create user
+- individual look management.
+- run a saved query.
 - create dashboard
+- create a dashboard.
+- look management.
+- individual query operations.
+- get user details.
+- list dashboards
+- search for looks by title.
+- get query
+- get dashboard details.
+- dashboard management.
+- get query details.
+- looker
+- delete user
+- list all looks.
+- update a dashboard.
+- update look
+- delete a dashboard.
+- analytics
+- search for dashboards.
+- delete a user.
+- run look
+- delete look
+- list users
+- update dashboard
+- user management.
+- search looks
+- get user
+- data visualization
+- create a new dashboard.
+- business intelligence
+- list looks
+- delete dashboard
 - list all users.
 - get look
-- search for dashboards.
-- delete a look.
-- create a query.
-- get query details.
-- list looks
-- analytics
-- update look
-- run look
-- update a user.
-- delete a user.
-- query management.
-- create user
-- update dashboard
-- list dashboards
-- data visualization
-- run query
-- dashboard management.
-- individual look management.
-- create query
-- run a saved query.
-- bi platform
-- dashboards
-- search dashboards
-- search for looks by title.
-- get user
-- create a new dashboard.
-- delete user
-- individual dashboard management.
-- create a new user.
-- list users
-- user management.
-- update a dashboard.
-- run a look and return results.
-- get query
-- search looks
-- list all dashboards.
-- list all looks.
-- list all saved looks.
-- delete a dashboard.
-- individual query operations.
 - update user
-- data analytics
 - get look details.
-- delete look
-- look management.
-- business intelligence
-- looker
-- delete dashboard
-- get dashboard
-- create a user.
-- create a dashboard.
-- get user details.
-- get dashboard details.
-- update a look.
+- search dashboards
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- insurance-adjacent capability showing tags-on-exposedoperation (agent safety policy, effect classification) for ai-safe operations on financial data.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- insurance-adjacent capability showing tags-on-exposedoperation (agent safety policy, effect classification) for ai-safe operations on financial data.
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: nwm-agent-safety-tagged-capability
 source_filename: nwm-agent-safety-tagged-capability.yaml
 source_heading: Capability Spec

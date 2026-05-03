@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- a capability that activates compliance frameworks (nist/soc2/pci/gdpr) + continuous compliance (ccf-style), framed for audit + advisory practice.
+- api integration
+- naftiko
 - governance
+- mcp
+- a capability that activates compliance frameworks (nist/soc2/pci/gdpr) + continuous compliance (ccf-style), framed for audit + advisory practice.
+- capabilities
+- ai
 slug: ccf-continuous-compliance-capability
 source_filename: ccf-continuous-compliance-capability.yaml
 source_heading: Capability Spec

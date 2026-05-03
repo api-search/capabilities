@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- a capability annotated against sdi "deterministic foundation for agents" as the agentic-care thought-leadership hook.
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability annotated against sdi "deterministic foundation for agents" as the agentic-care thought-leadership hook.
 - governance
+- mcp
+- capabilities
+- ai
 slug: deterministic-agentic-care-capability
 source_filename: deterministic-agentic-care-capability.yaml
 source_heading: Capability Spec

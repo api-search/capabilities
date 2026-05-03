@@ -47,58 +47,58 @@ personas: []
 provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
-- list keys.
-- get secret
-- delete key
-- list certificates
-- list certificates in the vault.
-- verify
-- list certificates.
-- certificates
-- encrypt data using a key.
-- sign
-- create certificate
 - delete secret
-- delete a secret.
-- create a new certificate.
-- get certificate
-- secrets management
-- create a key.
-- list secrets.
-- azure
-- certificate management.
-- secret management.
-- set a secret value.
-- verify a signature.
-- create key
-- key management.
-- cloud security
-- list secrets
-- key management
-- set a secret.
-- get key
-- decrypt data using a key.
-- set secret
-- get key details.
 - get a certificate.
-- get a secret.
+- get key
+- encrypt
+- get secret
+- list secrets in the vault.
+- secret management.
+- key management
+- list certificates.
+- verify
+- set a secret value.
+- encrypt data using a key.
+- delete a secret.
+- get key details.
+- sign a digest using a key.
+- get a secret value.
+- security
+- decrypt data using a key.
+- secrets management
+- verify a signature.
+- create a key.
+- get certificate
+- certificates
+- individual key management.
+- individual secret management.
 - create a new cryptographic key.
-- list cryptographic keys in the vault.
+- decrypt
+- get a key.
+- certificate management.
+- delete key
+- delete certificate
+- get a secret.
+- cryptography
+- azure
+- create a new certificate.
+- list certificates in the vault.
 - delete a certificate.
 - key vault
-- list keys
-- encrypt
-- decrypt
-- individual key management.
+- list cryptographic keys in the vault.
+- list keys.
+- list secrets.
+- cloud security
+- create certificate
+- set a secret.
+- list secrets
 - delete a key.
-- security
-- get a secret value.
-- cryptography
-- delete certificate
-- sign a digest using a key.
-- individual secret management.
-- list secrets in the vault.
-- get a key.
+- sign
+- set secret
+- key management.
+- list certificates
+- list keys
+- create key
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

@@ -38,48 +38,48 @@ personas: []
 provider_name: Airtable
 provider_slug: airtable
 search_terms:
-- create records in a table.
-- databases
-- reads and analyzes airtable data programmatically.
-- no-code
-- managing the structure of bases, tables, and fields.
-- manages users, audit logs, and shares across the organization.
-- airtable bases and schemas.
-- real-time event-driven integrations via webhooks.
-- data
+- get the schema of an airtable base with all tables and fields.
 - records
-- create records
-- airtable table records.
-- Developer
-- list all airtable bases the user has access to.
-- list all accessible bases.
+- create records in a table.
+- airtable bases and schemas.
 - applications
-- database
-- a specific airtable record.
-- list bases
-- list records from a table.
 - create one or more records in an airtable table.
-- creating, reading, updating, and deleting data records.
-- update a record.
-- Data Analyst
-- list records
+- list bases
+- integrates airtable with external systems via the rest api.
+- create records
+- manages users, audit logs, and shares across the organization.
+- list records from an airtable table with optional filtering.
+- low-code
+- airtable table records.
 - get base schema
 - read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
-- get the schema of an airtable base with all tables and fields.
-- integrates airtable with external systems via the rest api.
-- delete record
-- update record
-- delete an airtable record permanently.
-- airtable
-- spreadsheets
-- delete a record.
-- user management, audit logs, and access control.
+- update a record.
+- managing the structure of bases, tables, and fields.
 - schema
-- collaboration
-- low-code
-- productivity
-- list records from an airtable table with optional filtering.
+- delete an airtable record permanently.
 - update specific fields in an airtable record.
+- productivity
+- list records from a table.
+- Developer
+- Data Analyst
+- reads and analyzes airtable data programmatically.
+- list records
+- user management, audit logs, and access control.
+- delete a record.
+- delete record
+- database
+- airtable
+- databases
+- creating, reading, updating, and deleting data records.
+- no-code
+- list all airtable bases the user has access to.
+- spreadsheets
+- collaboration
+- list all accessible bases.
+- real-time event-driven integrations via webhooks.
+- a specific airtable record.
+- update record
+- data
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

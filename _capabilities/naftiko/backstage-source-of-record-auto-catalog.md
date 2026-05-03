@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability that walks github + datadog + servicenow as systems-of-record and auto-publishes backstage catalog entities so developers never enter catalog data manually (mark's stated zero-manual-work principle).
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a capability that walks github + datadog + servicenow as systems-of-record and auto-publishes backstage catalog entities so developers never enter catalog data manually (mark's stated zero-manual-work principle).
+- capabilities
+- ai
 slug: backstage-source-of-record-auto-catalog
 source_filename: backstage-source-of-record-auto-catalog.yaml
 source_heading: Capability Spec

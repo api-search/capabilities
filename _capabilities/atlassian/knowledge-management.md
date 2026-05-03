@@ -22,31 +22,31 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list spaces
-- list confluence templates
-- list confluence users
-- content management
-- content search
-- list templates
-- list confluence groups
-- search confluence content using cql
-- software development
-- list groups
-- list confluence spaces
-- platform
 - list confluence content
-- atlassian
-- list content
-- knowledge management
 - confluence
-- code
-- list confluence pages and blog posts
+- list templates
 - search confluence content
-- collaboration
-- productivity
-- list users
-- space management
 - search content
+- platform
+- code
+- list confluence users
+- space management
+- list confluence spaces
+- knowledge management
+- productivity
+- list spaces
+- atlassian
+- list confluence pages and blog posts
+- list content
+- list users
+- list groups
+- list confluence templates
+- content management
+- list confluence groups
+- collaboration
+- content search
+- software development
+- search confluence content using cql
 slug: knowledge-management
 source_filename: knowledge-management.yaml
 source_heading: Capability Spec

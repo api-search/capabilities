@@ -55,53 +55,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
-- get iam policy.
+- get object metadata.
+- get bucket iam policy
 - object storage
 - data management
-- update object
-- get bucket iam policy
-- delete bucket
-- blob storage
-- google cloud
-- list storage buckets in a project.
-- data
-- file storage
-- storage
-- individual object management.
-- update object metadata.
-- get bucket iam policy.
-- get bucket details.
-- object management.
-- list objects
-- individual bucket management.
-- delete object
-- delete a storage bucket.
-- compose objects
-- list buckets
-- compose multiple objects into one.
-- backup
 - copy an object to another location.
-- get object metadata.
-- get object
-- list objects.
-- delete an object.
 - archival
-- create bucket
-- update a bucket.
-- bucket iam management.
-- copy object
-- list objects in a bucket.
 - create a bucket.
-- delete a bucket.
-- bucket management.
-- set bucket iam policy.
-- update bucket
-- get bucket
-- set iam policy.
-- create a new storage bucket.
-- cloud storage
-- list buckets.
 - set bucket iam policy
+- get bucket details.
+- set iam policy.
+- list objects in a bucket.
+- delete a bucket.
+- individual object management.
+- compose multiple objects into one.
+- storage
+- get bucket
+- list storage buckets in a project.
+- bucket iam management.
+- delete object
+- file storage
+- update object metadata.
+- cloud storage
+- get iam policy.
+- copy object
+- get object
+- list buckets.
+- set bucket iam policy.
+- list buckets
+- update bucket
+- update a bucket.
+- blob storage
+- individual bucket management.
+- object management.
+- update object
+- google cloud
+- delete an object.
+- delete a storage bucket.
+- delete bucket
+- compose objects
+- create a new storage bucket.
+- get bucket iam policy.
+- bucket management.
+- list objects
+- list objects.
+- backup
+- create bucket
+- data
 slug: cloud-storage
 source_filename: cloud-storage.yaml
 source_heading: Capability Spec

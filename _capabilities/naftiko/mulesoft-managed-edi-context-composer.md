@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability that joins mulesoft-managed edi flows + a salesforce einstein lookup and returns one composed context object — the integration-sprawl rightsizer for an ai assistant.
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- a capability that joins mulesoft-managed edi flows + a salesforce einstein lookup and returns one composed context object — the integration-sprawl rightsizer for an ai assistant.
+- mcp
+- capabilities
+- ai
 slug: mulesoft-managed-edi-context-composer
 source_filename: mulesoft-managed-edi-context-composer.yaml
 source_heading: Capability Spec

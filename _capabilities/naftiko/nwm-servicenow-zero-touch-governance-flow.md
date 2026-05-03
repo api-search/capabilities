@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a capability that fires naftiko governance findings into servicenow change/incident records as advisory + blocking gates, so the policy actually has a system of action.
 - example
+- a capability that fires naftiko governance findings into servicenow change/incident records as advisory + blocking gates, so the policy actually has a system of action.
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: nwm-servicenow-zero-touch-governance-flow
 source_filename: nwm-servicenow-zero-touch-governance-flow.yaml
 source_heading: Capability Spec

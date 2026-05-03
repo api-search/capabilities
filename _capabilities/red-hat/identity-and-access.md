@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- list roles.
-- keycloak
-- red hat
-- access management
-- delete a user from a realm.
-- hybrid cloud
-- terminate a user session.
-- create user
-- list roles in a realm.
-- identity
-- realm roles.
-- kubernetes
-- enterprise
-- get realm details.
-- realm users.
-- open source
-- list clients.
-- list groups
-- list identity providers
-- realm clients.
-- list external identity providers.
-- get user
-- list all realms.
-- delete user
-- keycloak realms.
-- list client applications in a realm.
-- list all keycloak realms.
-- cloud
-- get realm configuration details.
-- create client
-- list clients
-- linux
-- list groups.
-- list identity providers.
-- realm groups.
-- register a new client application.
-- list roles
-- containers
-- list users in a realm.
-- get realm
 - delete session
-- list groups in a realm.
-- list realms
-- list realm roles
-- create a user.
-- create a new user in a realm.
-- identity providers.
-- list users.
-- get user details.
-- list users
+- list groups.
+- list roles.
+- identity
+- list external identity providers.
+- hybrid cloud
+- keycloak realms.
 - specific realm.
+- list clients.
+- create a new user in a realm.
+- realm users.
+- list realm roles
+- list clients
+- access management
+- register a new client application.
+- get realm
+- list users.
+- enterprise
+- list realms
+- open source
+- create user
+- list all keycloak realms.
+- get realm configuration details.
+- cloud
+- kubernetes
+- get realm details.
+- get user details.
+- delete a user from a realm.
+- list all realms.
+- identity providers.
+- keycloak
+- delete user
+- containers
+- realm clients.
+- list groups in a realm.
+- red hat
+- list users in a realm.
+- create client
+- list users
+- linux
+- list groups
+- list roles
+- list identity providers
+- get user
+- list client applications in a realm.
+- realm groups.
+- list roles in a realm.
+- realm roles.
+- list identity providers.
+- create a user.
+- terminate a user session.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

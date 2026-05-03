@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability sized to be the topic of a podcast episode pitch — a specific topic she can say yes to.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability sized to be the topic of a podcast episode pitch — a specific topic she can say yes to.
 - governance
+- mcp
+- capabilities
+- ai
 slug: compose-ai-context-podcast-pitch
 source_filename: compose-ai-context-podcast-pitch.yaml
 source_heading: Capability Spec

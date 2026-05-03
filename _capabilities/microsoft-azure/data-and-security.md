@@ -30,54 +30,54 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- list certificates
-- list items in a container
-- blob get properties
-- blob storage
-- list resource providers
-- cosmos db database management
-- blob storage operations
-- download a blob
-- list containers in a database
-- list subscription tags
-- list blobs
-- cosmos list items
-- cosmos db
 - resource manager
-- blob list blobs
-- list cryptographic keys
-- api management
-- enterprise
-- key vault secret management
-- arm list resources
-- azure
-- keyvault list secrets
-- arm list resource groups
-- platform as a service
-- cosmos list containers
-- cloud computing
-- arm list subscriptions
-- list secrets
-- cloud
-- list azure subscriptions
-- keyvault list certificates
-- list cosmos db databases
-- get a secret value
-- arm list tags
-- list resource groups
-- key vault
-- arm list providers
-- keyvault get secret
-- subscription management
-- list blobs in a container
-- get blob properties
 - list databases
-- cosmos list databases
-- list resources in a subscription
-- blob download
+- cloud computing
 - keyvault list keys
+- key vault secret management
+- blob storage operations
+- arm list resources
+- download a blob
+- blob download
+- list resource groups
+- list resource providers
+- cosmos db
+- blob list blobs
+- list blobs in a container
+- enterprise
+- get a secret value
+- list azure subscriptions
+- cloud
+- cosmos list items
+- arm list providers
+- cosmos list databases
+- keyvault get secret
+- keyvault list certificates
+- azure
+- blob get properties
+- arm list tags
+- get blob properties
+- blob storage
+- arm list subscriptions
+- list resources in a subscription
+- arm list resource groups
+- api management
+- key vault
+- cosmos list containers
+- list cryptographic keys
+- list containers in a database
 - t1
+- list cosmos db databases
+- list blobs
+- platform as a service
+- list subscription tags
+- subscription management
 - list subscriptions
+- list secrets
+- list items in a container
+- keyvault list secrets
+- cosmos db database management
+- list certificates
 - infrastructure as a service
 slug: data-and-security
 source_filename: data-and-security.yaml

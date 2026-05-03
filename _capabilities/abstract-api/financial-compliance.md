@@ -34,62 +34,62 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- web scraping
-- compliance analyst
 - currency conversion, vat compliance, and banking validation for financial applications
-- company enrichment
-- detection and blocking of fraudulent users, transactions, and bot activity
-- validate a vat number
-- email validation
-- convert an amount from one currency to another
-- contacts
-- validate a vat number and retrieve associated company details
-- exchange rates, vat validation, and iban validation for financial compliance
-- phone validation
-- abstract api
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- get the latest exchange rates for 80+ currencies
-- avatars
-- ip geolocation
-- validate an iban number
-- finance engineer
-- vat validation
-- ip intelligence
-- get live rates
-- financial compliance
-- convert currency amounts
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- timezones
-- data engineer
-- validate iban
-- developer building payment, billing, and financial compliance systems
-- validate a vat number and get company details
 - validate an iban and get bank details
-- screenshots
-- security engineer
-- iban validation
-- validate vat
-- finance
-- public holidays
-- image processing
-- convert an amount from one currency to another using live rates
-- exchange rates
-- get live exchange rates
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- engineer building fraud detection and threat intelligence systems
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- currencies
-- fraud analyst
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- retrieve current exchange rates
-- product engineer
-- validate an iban number and retrieve bank and account details
-- developer building user onboarding and personalization features
-- engineer building data pipelines and enrichment workflows
-- convert currency
 - get vat rates
-- validate vat number
+- convert an amount from one currency to another using live rates
+- exchange rates, vat validation, and iban validation for financial compliance
+- public holidays
+- company enrichment
+- validate an iban number and retrieve bank and account details
+- timezones
+- convert currency
+- detection and blocking of fraudulent users, transactions, and bot activity
+- fraud analyst
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- engineer building data pipelines and enrichment workflows
 - get current vat rates for a country
+- get live exchange rates
+- engineer building fraud detection and threat intelligence systems
+- get live rates
+- ip geolocation
+- convert currency amounts
+- security engineer
+- contacts
+- developer building user onboarding and personalization features
+- get the latest exchange rates for 80+ currencies
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- validate a vat number and retrieve associated company details
+- finance engineer
+- currencies
+- ip intelligence
+- product engineer
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- screenshots
+- validate iban
+- financial compliance
+- retrieve current exchange rates
+- iban validation
+- avatars
+- validate a vat number
+- compliance analyst
+- web scraping
+- finance
+- convert an amount from one currency to another
+- vat validation
+- validate vat
+- exchange rates
+- validate vat number
+- phone validation
+- validate a vat number and get company details
+- developer building payment, billing, and financial compliance systems
+- abstract api
+- email validation
+- image processing
+- validate an iban number
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- data engineer
 slug: financial-compliance
 source_filename: financial-compliance.yaml
 source_heading: Capability Spec

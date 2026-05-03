@@ -9,12 +9,12 @@ personas: []
 provider_name: BlackRock
 provider_slug: blackrock
 search_terms:
+- risk analytics
+- fintech
+- portfolio management
 - asset management
 - investment management
-- fintech
 - finance
-- portfolio management
-- risk analytics
 slug: blackrock-aladdin
 source_filename: blackrock-aladdin.yaml
 source_heading: Capability Spec

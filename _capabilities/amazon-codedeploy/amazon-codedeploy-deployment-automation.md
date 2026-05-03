@@ -11,43 +11,43 @@ personas: []
 provider_name: Amazon CodeDeploy
 provider_slug: amazon-codedeploy
 search_terms:
+- manages deployment infrastructure.
 - create a new deployment
-- coordinates application releases.
-- create application
-- stop an in-progress deployment
-- list codedeploy applications
-- list deployments
-- ci/cd
-- get deployment information for a target instance
-- stop deployment
-- amazon
-- create and monitor deployments
-- managing software release processes and rollbacks.
-- DevOps Engineer
-- deployment
-- list deployments for an application and deployment group
-- create a codedeploy application
 - list deployment groups for an application
-- list applications
+- stop deployment
+- get deployment information for a target instance
 - application deployment to ec2, lambda, ecs, and on-premises servers.
-- release management
+- list applications
 - get deployment instance
-- Release Manager
-- get deployment
+- create and monitor deployments
+- stop an in-progress deployment
+- devops
+- blue/green deployment
 - get details about a specific deployment
-- list deployment groups
+- create deployment
+- coordinates application releases.
+- aws
+- manage codedeploy applications
+- managing software release processes and rollbacks.
+- get deployment
+- list instances in a deployment
+- automated application deployment to compute targets.
+- create a deployment group for an application
+- list codedeploy applications
+- release management
+- create application
+- create a codedeploy application
+- Release Manager
+- create deployment group
+- amazon
+- deployment
+- ci/cd
+- list deployments for an application and deployment group
+- list deployments
 - list deployment instances
 - manage deployment groups
-- manages deployment infrastructure.
-- create deployment group
-- manage codedeploy applications
-- list instances in a deployment
-- create a deployment group for an application
-- create deployment
-- devops
-- automated application deployment to compute targets.
-- aws
-- blue/green deployment
+- list deployment groups
+- DevOps Engineer
 slug: amazon-codedeploy-deployment-automation
 source_filename: amazon-codedeploy-deployment-automation.yaml
 source_heading: Capability Spec

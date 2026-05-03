@@ -1,0 +1,258 @@
+---
+api_specs:
+- filename: runway-video-generation-openapi.yml
+  format: yaml
+  label: runway-video
+  slug: runway-video
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/runway/refs/heads/main/openapi/runway-video-generation-openapi.yml
+- filename: runway-image-generation-openapi.yml
+  format: yaml
+  label: runway-image
+  slug: runway-image
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/runway/refs/heads/main/openapi/runway-image-generation-openapi.yml
+- filename: runway-characters-openapi.yml
+  format: yaml
+  label: runway-characters
+  slug: runway-characters
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/runway/refs/heads/main/openapi/runway-characters-openapi.yml
+categories: []
+consumed_apis:
+- runway-video
+- runway-image
+- runway-characters
+description: Comprehensive generative media production capability for Runway. Enables creative professionals, developers, and AI workflows to generate videos from text or images, animate characters with motion capture (Act Two), sync faces to audio (lip sync), enhance video quality (upscale, frame interpolation), generate sound effects, produce images from text, and build real-time conversational avatar experiences. Combines Runway's video generation, image generation, and characters APIs into unified creative production workflows.
+layout: capability
+name: Runway Generative Media Production
+operations:
+- description: Generate video from text prompt
+  method: POST
+  name: create-text-to-video
+  path: /v1/text-to-video
+- description: Generate video from image
+  method: POST
+  name: create-image-to-video
+  path: /v1/image-to-video
+- description: Transform video with text guidance
+  method: POST
+  name: create-video-to-video
+  path: /v1/video-to-video
+- description: Animate character using Act Two model
+  method: POST
+  name: create-character-performance
+  path: /v1/character-performance
+- description: Animate face to speak audio
+  method: POST
+  name: create-lip-sync
+  path: /v1/lip-sync
+- description: Upscale video quality
+  method: POST
+  name: create-video-upscale
+  path: /v1/video-upscale
+- description: Interpolate video frames
+  method: POST
+  name: create-frame-interpolation
+  path: /v1/frame-interpolation
+- description: Generate sound effects for video
+  method: POST
+  name: create-sound-effect
+  path: /v1/sound-effects
+- description: Generate image from text prompt
+  method: POST
+  name: create-text-to-image
+  path: /v1/text-to-image
+- description: Get task status and output URLs
+  method: GET
+  name: get-task
+  path: /v1/tasks/{id}
+- description: Create a conversational avatar
+  method: POST
+  name: create-avatar
+  path: /v1/avatars
+- description: Start a realtime avatar session
+  method: POST
+  name: create-session
+  path: /v1/sessions
+personas: []
+provider_name: Runway
+provider_slug: runway
+search_terms:
+- create lip sync
+- generate image from text prompt
+- characters
+- start avatar session
+- avatar realtime webrtc sessions
+- interpolate video frames
+- enhance video resolution and quality using runway's upscale model
+- create frame interpolation
+- transform video
+- create video to video
+- create conversational avatar
+- runway
+- generative ai
+- character animation from reference performance
+- conversational avatar management
+- video-to-video transformation
+- text-to-video generation
+- generate sound effects for video
+- generate video from text
+- generate video from image
+- video resolution enhancement
+- animate character
+- transform an existing video using a text prompt as guidance with the gen-4 aleph model
+- upload avatar knowledge
+- animate face to speak audio
+- lip sync face to audio
+- get task status and output urls
+- start a realtime avatar session
+- animate a face in an image or video to match provided audio - supports 28+ languages
+- create session
+- check generation task
+- start a real-time webrtc session connecting a user to a runway avatar for live conversation
+- webrtc
+- image generation
+- upscale video quality
+- create text to video
+- transform video with text guidance
+- create a conversational avatar
+- cancel a pending or running runway generation task
+- upscale video
+- generate a video from a text prompt using runway gen-4.5, veo 3.1, or veo 3.1 fast models. returns a task id to poll for completion.
+- generate video from text prompt
+- upload a knowledge document that an avatar can reference during live conversations
+- avatars
+- cancel generation task
+- generate a high-quality image from a text prompt using runway gen-4 image or gemini 3 pro image
+- text-to-image generation
+- artificial intelligence
+- get task
+- create avatar
+- generate a video from an input image, optionally guided by a text prompt. supports gen-4, gen-4 turbo, gen-4.5, and aleph models.
+- interpolate frames
+- animate a character image or video using a reference performance video with the act two model
+- video generation
+- create text to image
+- ai sound effect generation
+- generation task status and management
+- generate image from text
+- sync lips to audio
+- create sound effect
+- increase video frame rate and smoothness through ai frame interpolation
+- image-to-video generation
+- video frame rate enhancement
+- check the status of a runway generation task and retrieve output urls when completed
+- machine learning
+- animate character using act two model
+- generate sound effects
+- generate ai sound effects from a text description, optionally synchronized to a video
+- create a custom runway conversational avatar from a reference image with defined personality and voice
+- create video upscale
+- creative tools
+- create image to video
+- create character performance
+slug: generative-media-production
+source_filename: generative-media-production.yaml
+source_heading: Capability Spec
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Runway Generative Media Production\"\n  description: >-\n    Comprehensive generative media production capability for Runway. Enables creative\n    professionals, developers, and AI workflows to generate videos from text or images,\n    animate characters with motion capture (Act Two), sync faces to audio (lip sync),\n    enhance video quality (upscale, frame interpolation), generate sound effects, produce\n    images from text, and build real-time conversational avatar experiences. Combines\n    Runway's video generation, image generation, and characters APIs into unified\n    creative production workflows.\n  tags:\n    - Runway\n    - Video Generation\n    - Image Generation\n    - Generative AI\n    - Artificial Intelligence\n    - Creative Tools\n    - Avatars\n    - Characters\n    - Machine Learning\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      RUNWAY_API_KEY: RUNWAY_API_KEY\n\
+  \ncapability:\n  consumes:\n    - import: runway-video\n      location: ./shared/runway-video-generation.yaml\n    - import: runway-image\n      location: ./shared/runway-image-generation.yaml\n    - import: runway-characters\n      location: ./shared/runway-characters.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: generative-media-api\n      description: \"Unified REST API for Runway generative media production workflows.\"\n      resources:\n        # Video Generation\n        - path: /v1/text-to-video\n          name: text-to-video\n          description: \"Text-to-video generation\"\n          operations:\n            - method: POST\n              name: create-text-to-video\n              description: \"Generate video from text prompt\"\n              call: \"runway-video.create-text-to-video\"\n              with:\n                model: \"rest.model\"\n                promptText: \"rest.promptText\"\n                duration: \"rest.duration\"\n        \
+  \        ratio: \"rest.ratio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/image-to-video\n          name: image-to-video\n          description: \"Image-to-video generation\"\n          operations:\n            - method: POST\n              name: create-image-to-video\n              description: \"Generate video from image\"\n              call: \"runway-video.create-image-to-video\"\n              with:\n                model: \"rest.model\"\n                promptImage: \"rest.promptImage\"\n                promptText: \"rest.promptText\"\n                duration: \"rest.duration\"\n                ratio: \"rest.ratio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/video-to-video\n          name: video-to-video\n          description: \"Video-to-video transformation\"\n          operations:\n            - method: POST\n        \
+  \      name: create-video-to-video\n              description: \"Transform video with text guidance\"\n              call: \"runway-video.create-video-to-video\"\n              with:\n                model: \"rest.model\"\n                promptVideo: \"rest.promptVideo\"\n                promptText: \"rest.promptText\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/character-performance\n          name: character-performance\n          description: \"Character animation from reference performance\"\n          operations:\n            - method: POST\n              name: create-character-performance\n              description: \"Animate character using Act Two model\"\n              call: \"runway-video.create-character-performance\"\n              with:\n                model: \"rest.model\"\n                character: \"rest.character\"\n                reference: \"rest.reference\"\n              outputParameters:\n\
+  \                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/lip-sync\n          name: lip-sync\n          description: \"Lip sync face to audio\"\n          operations:\n            - method: POST\n              name: create-lip-sync\n              description: \"Animate face to speak audio\"\n              call: \"runway-video.create-lip-sync\"\n              with:\n                model: \"rest.model\"\n                input: \"rest.input\"\n                audio: \"rest.audio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/video-upscale\n          name: video-upscale\n          description: \"Video resolution enhancement\"\n          operations:\n            - method: POST\n              name: create-video-upscale\n              description: \"Upscale video quality\"\n              call: \"runway-video.create-video-upscale\"\n              with:\n                model: \"rest.model\"\
+  \n                videoUri: \"rest.videoUri\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/frame-interpolation\n          name: frame-interpolation\n          description: \"Video frame rate enhancement\"\n          operations:\n            - method: POST\n              name: create-frame-interpolation\n              description: \"Interpolate video frames\"\n              call: \"runway-video.create-frame-interpolation\"\n              with:\n                model: \"rest.model\"\n                videoUri: \"rest.videoUri\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/sound-effects\n          name: sound-effects\n          description: \"AI sound effect generation\"\n          operations:\n            - method: POST\n              name: create-sound-effect\n              description: \"Generate sound effects for video\"\n         \
+  \     call: \"runway-video.create-sound-effect\"\n              with:\n                model: \"rest.model\"\n                promptText: \"rest.promptText\"\n                videoUri: \"rest.videoUri\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # Image Generation\n        - path: /v1/text-to-image\n          name: text-to-image\n          description: \"Text-to-image generation\"\n          operations:\n            - method: POST\n              name: create-text-to-image\n              description: \"Generate image from text prompt\"\n              call: \"runway-image.create-text-to-image\"\n              with:\n                model: \"rest.model\"\n                promptText: \"rest.promptText\"\n                ratio: \"rest.ratio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # Task Management (shared by video and image)\n        - path: /v1/tasks/{id}\n\
+  \          name: task\n          description: \"Generation task status and management\"\n          operations:\n            - method: GET\n              name: get-task\n              description: \"Get task status and output URLs\"\n              call: \"runway-video.get-task\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # Avatars and Characters\n        - path: /v1/avatars\n          name: avatars\n          description: \"Conversational avatar management\"\n          operations:\n            - method: POST\n              name: create-avatar\n              description: \"Create a conversational avatar\"\n              call: \"runway-characters.create-avatar\"\n              with:\n                name: \"rest.name\"\n                referenceImage: \"rest.referenceImage\"\n                personality: \"rest.personality\"\n                voice: \"rest.voice\"\n   \
+  \           outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/sessions\n          name: sessions\n          description: \"Avatar realtime WebRTC sessions\"\n          operations:\n            - method: POST\n              name: create-session\n              description: \"Start a realtime avatar session\"\n              call: \"runway-characters.create-session\"\n              with:\n                model: \"rest.model\"\n                avatar: \"rest.avatar\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: generative-media-mcp\n      transport: http\n      description: \"MCP server for AI-assisted generative media production using Runway APIs.\"\n      tools:\n        # Video Generation\n        - name: generate-video-from-text\n          description: \"Generate a video from a text prompt using Runway Gen-4.5, Veo 3.1, or\
+  \ Veo 3.1 Fast models. Returns a task ID to poll for completion.\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-text-to-video\"\n          with:\n            model: \"tools.model\"\n            promptText: \"tools.promptText\"\n            duration: \"tools.duration\"\n            ratio: \"tools.ratio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: generate-video-from-image\n          description: \"Generate a video from an input image, optionally guided by a text prompt. Supports Gen-4, Gen-4 Turbo, Gen-4.5, and Aleph models.\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-image-to-video\"\n          with:\n            model: \"tools.model\"\n            promptImage: \"tools.promptImage\"\n            promptText: \"tools.promptText\"\n            duration: \"tools.duration\"\n         \
+  \   ratio: \"tools.ratio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: transform-video\n          description: \"Transform an existing video using a text prompt as guidance with the Gen-4 Aleph model\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-video-to-video\"\n          with:\n            model: \"tools.model\"\n            promptVideo: \"tools.promptVideo\"\n            promptText: \"tools.promptText\"\n            ratio: \"tools.ratio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: animate-character\n          description: \"Animate a character image or video using a reference performance video with the Act Two model\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-character-performance\"\n          with:\n            model:\
+  \ \"tools.model\"\n            character: \"tools.character\"\n            reference: \"tools.reference\"\n            ratio: \"tools.ratio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: sync-lips-to-audio\n          description: \"Animate a face in an image or video to match provided audio - supports 28+ languages\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-lip-sync\"\n          with:\n            model: \"tools.model\"\n            input: \"tools.input\"\n            audio: \"tools.audio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: upscale-video\n          description: \"Enhance video resolution and quality using Runway's upscale model\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-video-upscale\"\n          with:\n \
+  \           model: \"tools.model\"\n            videoUri: \"tools.videoUri\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: interpolate-frames\n          description: \"Increase video frame rate and smoothness through AI frame interpolation\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-frame-interpolation\"\n          with:\n            model: \"tools.model\"\n            videoUri: \"tools.videoUri\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: generate-sound-effects\n          description: \"Generate AI sound effects from a text description, optionally synchronized to a video\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-video.create-sound-effect\"\n          with:\n            model: \"tools.model\"\n            promptText: \"tools.promptText\"\
+  \n            videoUri: \"tools.videoUri\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # Image Generation\n        - name: generate-image-from-text\n          description: \"Generate a high-quality image from a text prompt using Runway Gen-4 Image or Gemini 3 Pro Image\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-image.create-text-to-image\"\n          with:\n            model: \"tools.model\"\n            promptText: \"tools.promptText\"\n            ratio: \"tools.ratio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # Task Management (shared)\n        - name: check-generation-task\n          description: \"Check the status of a Runway generation task and retrieve output URLs when completed\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"runway-video.get-task\"\n        \
+  \  with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: cancel-generation-task\n          description: \"Cancel a pending or running Runway generation task\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"runway-video.delete-task\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # Avatar and Character\n        - name: create-conversational-avatar\n          description: \"Create a custom Runway conversational avatar from a reference image with defined personality and voice\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-characters.create-avatar\"\n          with:\n            name: \"tools.name\"\n            referenceImage: \"tools.referenceImage\"\n            personality:\
+  \ \"tools.personality\"\n            voice: \"tools.voice\"\n            openingMessage: \"tools.openingMessage\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-avatar-session\n          description: \"Start a real-time WebRTC session connecting a user to a Runway avatar for live conversation\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-characters.create-session\"\n          with:\n            model: \"tools.model\"\n            avatar: \"tools.avatar\"\n            maxSessionDurationSeconds: \"tools.maxSessionDurationSeconds\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: upload-avatar-knowledge\n          description: \"Upload a knowledge document that an avatar can reference during live conversations\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"runway-characters.create-document\"\
+  \n          with:\n            name: \"tools.name\"\n            content: \"tools.content\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/runway/refs/heads/main/capabilities/generative-media-production.yaml
+tags:
+- Runway
+- Video Generation
+- Image Generation
+- Generative AI
+- Artificial Intelligence
+- Creative Tools
+- Avatars
+- Characters
+- Machine Learning
+tools:
+- description: Generate a video from a text prompt using Runway Gen-4.5, Veo 3.1, or Veo 3.1 Fast models. Returns a task ID to poll for completion.
+  hints:
+    openWorld: false
+    readOnly: false
+  name: generate-video-from-text
+- description: Generate a video from an input image, optionally guided by a text prompt. Supports Gen-4, Gen-4 Turbo, Gen-4.5, and Aleph models.
+  hints:
+    openWorld: false
+    readOnly: false
+  name: generate-video-from-image
+- description: Transform an existing video using a text prompt as guidance with the Gen-4 Aleph model
+  hints:
+    openWorld: false
+    readOnly: false
+  name: transform-video
+- description: Animate a character image or video using a reference performance video with the Act Two model
+  hints:
+    openWorld: false
+    readOnly: false
+  name: animate-character
+- description: Animate a face in an image or video to match provided audio - supports 28+ languages
+  hints:
+    openWorld: false
+    readOnly: false
+  name: sync-lips-to-audio
+- description: Enhance video resolution and quality using Runway's upscale model
+  hints:
+    openWorld: false
+    readOnly: false
+  name: upscale-video
+- description: Increase video frame rate and smoothness through AI frame interpolation
+  hints:
+    openWorld: false
+    readOnly: false
+  name: interpolate-frames
+- description: Generate AI sound effects from a text description, optionally synchronized to a video
+  hints:
+    openWorld: false
+    readOnly: false
+  name: generate-sound-effects
+- description: Generate a high-quality image from a text prompt using Runway Gen-4 Image or Gemini 3 Pro Image
+  hints:
+    openWorld: false
+    readOnly: false
+  name: generate-image-from-text
+- description: Check the status of a Runway generation task and retrieve output URLs when completed
+  hints:
+    openWorld: true
+    readOnly: true
+  name: check-generation-task
+- description: Cancel a pending or running Runway generation task
+  hints:
+    destructive: true
+    idempotent: true
+    readOnly: false
+  name: cancel-generation-task
+- description: Create a custom Runway conversational avatar from a reference image with defined personality and voice
+  hints:
+    openWorld: false
+    readOnly: false
+  name: create-conversational-avatar
+- description: Start a real-time WebRTC session connecting a user to a Runway avatar for live conversation
+  hints:
+    openWorld: false
+    readOnly: false
+  name: start-avatar-session
+- description: Upload a knowledge document that an avatar can reference during live conversations
+  hints:
+    openWorld: false
+    readOnly: false
+  name: upload-avatar-knowledge
+---

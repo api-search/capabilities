@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability shaped to the ehds cross-border patient-care + research data-sharing flow with consent + provenance tags.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability shaped to the ehds cross-border patient-care + research data-sharing flow with consent + provenance tags.
 - governance
+- mcp
+- capabilities
+- ai
 slug: halmstad-ehds-cross-border-care-context-capability
 source_filename: halmstad-ehds-cross-border-care-context-capability.yaml
 source_heading: Capability Spec

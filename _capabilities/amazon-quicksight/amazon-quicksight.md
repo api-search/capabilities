@@ -21,21 +21,21 @@ personas: []
 provider_name: Amazon QuickSight
 provider_slug: amazon-quicksight
 search_terms:
-- visualization
 - aws cloud resource management
-- bi
 - amazon quicksight resources
-- list amazon quicksight resources
-- analytics
-- business intelligence
-- engineer managing amazon quicksight resources
 - dashboards
-- machine learning
-- amazon quicksight
 - reporting
-- automation workflow for amazon quicksight
-- cloud operations
 - aws
+- automation workflow for amazon quicksight
+- machine learning
+- business intelligence
+- analytics
+- amazon quicksight
+- bi
+- engineer managing amazon quicksight resources
+- list amazon quicksight resources
+- cloud operations
+- visualization
 - list resources
 slug: amazon-quicksight
 source_filename: amazon-quicksight.yaml

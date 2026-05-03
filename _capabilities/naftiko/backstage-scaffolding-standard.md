@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- spec-driven integration
-- capabilities
-- naftiko
-- mcp
+- a capability scaffolded from a backstage template, intended as the "scaffolding standard a p&g enterprise-integration org could mandate."
 - example op
 - example
+- api integration
+- spec-driven integration
+- naftiko
 - governance
-- a capability scaffolded from a backstage template, intended as the "scaffolding standard a p&g enterprise-integration org could mandate."
+- mcp
+- capabilities
+- ai
 slug: backstage-scaffolding-standard
 source_filename: backstage-scaffolding-standard.yaml
 source_heading: Capability Spec

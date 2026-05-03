@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability that wraps a dynamics 365 (sales/service) endpoint as both an isv-style m365 copilot extension and an mcp tool, demonstrating sébastien's "two developer paths" pattern (line-of-business and isv).
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a capability that wraps a dynamics 365 (sales/service) endpoint as both an isv-style m365 copilot extension and an mcp tool, demonstrating sébastien's "two developer paths" pattern (line-of-business and isv).
+- capabilities
+- ai
 slug: m365-dynamics-365-copilot-extension-capability
 source_filename: m365-dynamics-365-copilot-extension-capability.yaml
 source_heading: Capability Spec

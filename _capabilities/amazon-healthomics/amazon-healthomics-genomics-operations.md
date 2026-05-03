@@ -10,10 +10,10 @@ provider_name: Amazon HealthOmics
 provider_slug: amazon-healthomics
 search_terms:
 - healthcare
+- genomics
+- life sciences
 - bioinformatics
 - cloud computing
-- life sciences
-- genomics
 slug: amazon-healthomics-genomics-operations
 source_filename: amazon-healthomics-genomics-operations.yaml
 source_heading: Capability Spec

@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon AppSync
 provider_slug: amazon-appsync
 search_terms:
-- graphql api management
-- create a new graphql api with the specified authentication type and configuration.
-- list functions
-- serverless
-- get complete details of a graphql api including authentication configuration and endpoints.
-- api management
-- amazon appsync
-- create graphql api
 - list resolvers
-- list all graphql apis
-- list data sources
-- upload a new graphql schema
-- get graphql api
-- upload a new graphql schema definition to an appsync api.
-- create function
-- graphql schema management
-- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
-- list graphql apis
-- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
-- create a graphql api
-- start schema creation
-- create a resolver that maps a graphql field to a data source operation.
 - list all data sources connected to a graphql api.
-- graphql
-- create a reusable pipeline function for use in pipeline resolvers.
-- create data source
+- connect a data source (dynamodb, lambda, opensearch, http) to a graphql api.
+- list all resolvers for a specific graphql type to understand field-to-data-source mappings.
+- get complete details of a graphql api including authentication configuration and endpoints.
+- create a resolver that maps a graphql field to a data source operation.
 - list reusable pipeline functions available for composing complex resolvers.
-- list all appsync graphql apis to understand available apis and their configurations.
-- create resolver
+- create a graphql api
+- upload a new graphql schema definition to an appsync api.
 - aws
+- graphql api management
+- amazon appsync
+- list all graphql apis
+- get graphql api
+- create resolver
+- list graphql apis
+- list functions
+- create a reusable pipeline function for use in pipeline resolvers.
+- start schema creation
+- upload a new graphql schema
+- serverless
+- api management
+- create graphql api
+- list all appsync graphql apis to understand available apis and their configurations.
+- graphql
+- list data sources
+- create data source
+- create a new graphql api with the specified authentication type and configuration.
+- graphql schema management
+- create function
 slug: graphql-api-management
 source_filename: graphql-api-management.yaml
 source_heading: Capability Spec

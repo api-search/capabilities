@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- list claims register for a bankruptcy case
-- retrieve docket entries for a bankruptcy case
-- create bankruptcy monitor
-- compliance
-- creditor
-- business or individual owed money by a bankruptcy filer
-- list monitors
-- search for bankruptcy cases across all us bankruptcy court districts
 - create a bankruptcy monitoring alert for a debtor or entity
-- get bankruptcy case
-- bankruptcy case research, claims management, and automated monitoring
-- Loan Officer
+- creditor
+- compliance
+- court data
+- file proof of claim
 - automated alerts for bankruptcy filings
-- file a proof of claim for a bankruptcy case
-- list all active bankruptcy monitoring alerts
-- lending
-- pacer
-- lender monitoring borrowers for bankruptcy filings
 - get detailed information about a specific bankruptcy case
+- us bankruptcy court cases and proceedings
+- pacer
+- bankruptcywatch
+- Creditor
+- lender monitoring borrowers for bankruptcy filings
+- lending
+- list monitors
+- attorney managing creditor representation in bankruptcy proceedings
+- Bankruptcy Attorney
+- search for bankruptcy cases across all us bankruptcy court districts
+- bankruptcy case research, claims management, and automated monitoring
+- business or individual owed money by a bankruptcy filer
+- create bankruptcy monitor
+- retrieve docket entries for a bankruptcy case
+- get bankruptcy case
+- list claims register for a bankruptcy case
+- file a proof of claim for a bankruptcy case
+- Loan Officer
+- get case docket
 - legal
 - list case claims
-- file proof of claim
-- us bankruptcy court cases and proceedings
-- search bankruptcy cases
-- get case docket
-- Bankruptcy Attorney
-- attorney managing creditor representation in bankruptcy proceedings
-- bankruptcywatch
 - bankruptcy
-- court data
-- Creditor
+- list all active bankruptcy monitoring alerts
+- search bankruptcy cases
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

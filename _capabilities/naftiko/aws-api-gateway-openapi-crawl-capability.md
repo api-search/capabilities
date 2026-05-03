@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
 - a capability that pulls openapi specs out of an aws api gateway account (and kong + apigee), normalizes them, and republishes the enriched specs back to a portal and to mcp for ide-injected developer tooling.
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: aws-api-gateway-openapi-crawl-capability
 source_filename: aws-api-gateway-openapi-crawl-capability.yaml
 source_heading: Capability Spec

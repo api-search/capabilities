@@ -12,25 +12,25 @@ provider_name: Amazon S3 API
 provider_slug: aws-s3
 search_terms:
 - object storage
+- delete an s3 bucket
 - data management
 - copy_object
-- upload_object
 - download an object from s3
-- delete_bucket
-- delete an object from s3
-- storage
-- copy an object within or between s3 buckets
-- create_bucket
-- list all s3 buckets in the account
-- list_objects
-- upload an object to s3
-- delete_object
 - get_object
-- list_buckets
-- delete an s3 bucket
-- cloud storage
+- storage
+- delete_object
+- copy an object within or between s3 buckets
 - list objects in an s3 bucket
+- create_bucket
+- cloud storage
+- upload an object to s3
+- delete an object from s3
+- list all s3 buckets in the account
+- upload_object
 - create a new s3 bucket
+- list_objects
+- list_buckets
+- delete_bucket
 slug: object-storage-workflow
 source_filename: object-storage-workflow.yaml
 source_heading: Capability Spec

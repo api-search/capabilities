@@ -26,31 +26,31 @@ personas: []
 provider_name: Apple Pay
 provider_slug: apple-pay
 search_terms:
-- apple pay merchant validation and payment session
-- validate apple pay merchant
-- register apple pay domain
-- merchant domain management for apple pay
-- engineer building payment processing infrastructure supporting multiple payment methods
-- checkout
-- registering and managing merchant identity and domains for apple pay
-- registers a merchant domain to accept apple pay on the web payments
-- e-commerce
-- apple
-- validates merchant identity with apple and returns a payment session object for completing checkout
-- initiating and completing apple pay payment authorizations
-- validate merchant
-- Payment Integration Engineer
-- contactless payments
-- end-to-end apple pay checkout integration with merchant validation and payment token handling
-- register domain
 - E Commerce Developer
-- mobile payments
-- validates merchant and obtains apple pay payment session
-- apple pay
-- register a domain for apple pay on the web
-- digital wallet
+- validates merchant identity with apple and returns a payment session object for completing checkout
 - developer integrating apple pay into a web or mobile checkout experience
+- registers a merchant domain to accept apple pay on the web payments
+- validates merchant and obtains apple pay payment session
+- register apple pay domain
+- digital wallet
+- apple pay merchant validation and payment session
+- e-commerce
+- engineer building payment processing infrastructure supporting multiple payment methods
+- validate apple pay merchant
+- register domain
+- end-to-end apple pay checkout integration with merchant validation and payment token handling
 - payments
+- checkout
+- mobile payments
+- Payment Integration Engineer
+- apple
+- contactless payments
+- initiating and completing apple pay payment authorizations
+- apple pay
+- registering and managing merchant identity and domains for apple pay
+- register a domain for apple pay on the web
+- merchant domain management for apple pay
+- validate merchant
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

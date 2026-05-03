@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- p2p transfers
-- get currency conversion rate for cross-border transactions
-- cross-border
 - create a disbursement
-- process direct transaction
-- verify send account
+- financial services
+- create a person-to-person money transfer
 - money transfer
-- create a cross-border payment
-- create a funding transaction via mastercard send
-- get currency conversion rate
-- create a disbursement to send money to a recipient
-- get account information for a send recipient
-- mastercard send
-- process a direct service transaction
-- cross-border payment processing
-- get conversion rate
-- digital identity
-- currency conversion rates
-- disbursement transactions
 - create a person-to-person transfer
-- disbursements
-- create funding
-- funding transactions
-- mastercard
-- validate account
+- get currency conversion rate
 - credit cards
 - fraud detection
-- financial services
-- create a cross-border international payment
-- create p2p transfer
-- validate account details before transfer
-- verify account eligibility for mastercard send
-- get account info
-- create disbursement
-- create a person-to-person money transfer
-- create a funding transaction
-- open banking
-- payments
+- disbursements
+- process a direct service transaction
+- process direct transaction
 - create cross border payment
+- create a disbursement to send money to a recipient
+- create a funding transaction
+- funding transactions
+- create a cross-border international payment
+- create disbursement
+- validate account
+- payments
+- cross-border payment processing
+- verify send account
+- mastercard
+- get account info
+- get account information for a send recipient
+- get currency conversion rate for cross-border transactions
+- mastercard send
+- get conversion rate
+- create a funding transaction via mastercard send
+- p2p transfers
+- disbursement transactions
+- verify account eligibility for mastercard send
+- create p2p transfer
+- currency conversion rates
+- create funding
+- digital identity
+- cross-border
+- open banking
+- create a cross-border payment
+- validate account details before transfer
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability over a public fhir/cms interoperability final rule endpoint, mirrored behind their kong gateway with pii detection + https gates.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- a capability over a public fhir/cms interoperability final rule endpoint, mirrored behind their kong gateway with pii detection + https gates.
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: kong-gateway-fhir-mirror-capability
 source_filename: kong-gateway-fhir-mirror-capability.yaml
 source_heading: Capability Spec

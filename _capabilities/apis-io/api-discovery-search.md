@@ -18,29 +18,29 @@ personas: []
 provider_name: APIs.io
 provider_slug: apis-io
 search_terms:
-- a developer searching for apis to integrate into their applications
-- finding apis in the directory by keyword or topic
-- api indexing
-- api directory
-- apis.io
 - search for apis in the directory and submit new apis for indexing
-- search engine
-- submit a new api to the apis.io index by providing a valid apis.json document. the api will be reviewed and added to the searchable directory.
-- submitting new apis to the directory for indexing and discovery
-- api rating
-- search apis
-- an api owner or provider submitting their api for discovery in the index
-- submit api
-- submit a new api to the directory
-- API Developer
-- search for apis by keyword or phrase
-- search and submit apis in the directory
-- api search
-- API Producer
-- search across the apis.io directory for apis matching a keyword or phrase. returns api names, descriptions, tags, quality scores, and links.
-- api aggregation
 - api discovery
+- submitting new apis to the directory for indexing and discovery
 - apis.json
+- submit api
+- submit a new api to the apis.io index by providing a valid apis.json document. the api will be reviewed and added to the searchable directory.
+- api aggregation
+- API Producer
+- search and submit apis in the directory
+- a developer searching for apis to integrate into their applications
+- api rating
+- api search
+- submit a new api to the directory
+- search for apis by keyword or phrase
+- search engine
+- apis.io
+- finding apis in the directory by keyword or topic
+- api directory
+- an api owner or provider submitting their api for discovery in the index
+- search across the apis.io directory for apis matching a keyword or phrase. returns api names, descriptions, tags, quality scores, and links.
+- api indexing
+- API Developer
+- search apis
 slug: api-discovery-search
 source_filename: api-discovery-search.yaml
 source_heading: Capability Spec

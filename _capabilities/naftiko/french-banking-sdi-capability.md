@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - a french-banking capability with sdi methodology language in the spec, paired with a compliance frameworks (gdpr) governance layer.
 - governance
+- mcp
+- capabilities
+- ai
 slug: french-banking-sdi-capability
 source_filename: french-banking-sdi-capability.yaml
 source_heading: Capability Spec

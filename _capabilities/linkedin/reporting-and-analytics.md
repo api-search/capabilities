@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- analytics
-- retrieve learning activity reports.
-- manages b2b ad campaigns and audience targeting on linkedin.
-- job posting, recruiting, and applicant tracking.
-- sales intelligence, lead management, and crm integration.
-- linkedin
-- tracks employee learning activity and completions.
-- data portability and advertiser transparency for dma.
-- archives communications for regulatory compliance.
 - retrieve ad analytics by various pivots and dimensions.
-- professional networking
-- b2b advertising, audience targeting, and campaign analytics.
-- employee development tracking and content access.
-- retrieve learning activity reports aggregated by account, group, individual, or content.
+- data portability and advertiser transparency for dma.
+- careers
+- manages b2b ad campaigns and audience targeting on linkedin.
 - message archiving and regulatory communications governance.
-- marketing
-- get learning activity reports
-- uses sales navigator for lead generation and crm sync.
+- b2b advertising, audience targeting, and campaign analytics.
+- authentication, sharing, and verification for consumer apps.
+- learning
+- tracks employee learning activity and completions.
+- retrieve learning activity reports.
 - get ad analytics
 - social media
-- integrates linkedin authentication and sharing into applications.
+- employee development tracking and content access.
 - recruiting
-- learning
-- posts jobs and manages candidates through ats integrations.
-- retrieve ad analytics by various pivots.
-- careers
+- archives communications for regulatory compliance.
+- marketing
+- professional networking
+- linkedin
+- analytics
 - business
-- authentication, sharing, and verification for consumer apps.
+- uses sales navigator for lead generation and crm sync.
+- retrieve ad analytics by various pivots.
+- integrates linkedin authentication and sharing into applications.
+- sales intelligence, lead management, and crm integration.
 - reporting
+- posts jobs and manages candidates through ats integrations.
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- get learning activity reports
+- job posting, recruiting, and applicant tracking.
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

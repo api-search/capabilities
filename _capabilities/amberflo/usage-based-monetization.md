@@ -43,53 +43,53 @@ personas: []
 provider_name: Amberflo
 provider_slug: amberflo
 search_terms:
-- ingest usage events for metering
-- Finance Team
-- manage prepaid credit orders
-- list invoices
-- billing
 - finops
-- metering
-- monitors revenue, invoices, and billing analytics
-- list customers
-- usage event tracking and aggregation
-- manage meter definitions for tracking usage
-- query usage data
-- list all customer accounts in amberflo
-- query aggregated usage data for a meter
-- ai and cloud cost governance
-- create a new meter definition to track usage events
-- list all customers
-- list all meter definitions for usage tracking
-- retrieve customer invoices
-- create a prepaid order for a customer
-- usage-based billing
-- ingest meter events
-- integrates metering sdk and ingests usage events
-- create a new customer account
 - create a prepaid credit order for a customer
 - query aggregated usage data
+- query aggregated usage data for a meter
+- manage meter definitions for tracking usage
+- integrates metering sdk and ingests usage events
 - list invoices for a specific customer
-- API Developer
-- Product Manager
+- list invoices
+- query usage data
+- manage customer accounts
+- manages pricing models and billing configuration
+- create prepaid order
+- usage-based billing
+- create customer
+- list all customer accounts in amberflo
+- end-to-end workflow combining metering and billing apis
+- Finance Team
+- list invoices for a customer
+- amberflo
+- manage prepaid credit orders
+- customer billing and subscription management
+- ai cost management
+- retrieve customer invoices
+- ingest events
+- list customers
 - query usage
+- monitors revenue, invoices, and billing analytics
+- usage event tracking and aggregation
+- list all meter definitions for usage tracking
+- create a prepaid order for a customer
+- create a new meter definition to track usage events
+- list all meter definitions
+- monetization
+- ai and cloud cost governance
+- create a new customer account
+- list meter definitions
+- create a new meter definition
 - create meter definition
 - create a new customer account in amberflo
-- ai cost management
-- create customer
-- manages pricing models and billing configuration
-- manage customer accounts
-- ingest events
-- amberflo
-- list invoices for a customer
-- end-to-end workflow combining metering and billing apis
-- list all meter definitions
-- create prepaid order
-- list meter definitions
-- monetization
+- Product Manager
+- ingest meter events
+- API Developer
+- ingest usage events for metering
+- list all customers
+- billing
+- metering
 - ingest meter events to track usage
-- customer billing and subscription management
-- create a new meter definition
 slug: usage-based-monetization
 source_filename: usage-based-monetization.yaml
 source_heading: Capability Spec

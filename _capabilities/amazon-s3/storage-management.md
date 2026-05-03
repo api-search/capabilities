@@ -77,90 +77,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- get public access block
-- list tables in a namespace
-- get table
-- data storage
-- storage management
-- delete object
-- create job
-- list namespaces in a table bucket
-- create an s3 bucket
-- copy an object within s3
 - s3 buckets
-- get access point
-- copy object
-- delete an s3 bucket
-- get details of an s3 table bucket
-- get details of a table
-- list s3 batch operations jobs
-- list s3 access points
-- list s3 table buckets
-- delete bucket
-- delete multiple objects from an s3 bucket
+- get table
+- list objects in a bucket
 - list access points
-- get public access block settings for the account
-- archive
-- list objects
-- get details of a batch operations job
-- list storage lens
-- get configuration of an s3 access point
-- delete objects
-- get an access point
-- objects in a bucket
-- s3 access points
-- get encryption configuration for an s3 bucket
+- list s3 batch operations jobs
 - single object
-- get lifecycle configuration for an s3 bucket
-- upload an object
+- get an access point
+- list table buckets
+- list tables
+- upload an object to s3
+- copy an object within s3
+- get object
+- delete an object from s3
+- put object
+- amazon
+- head bucket
+- get table bucket
+- list all s3 buckets owned by the account
+- list s3 storage lens configurations
+- get details of an s3 table bucket
 - s3 batch operations jobs
+- delete an s3 bucket
+- single access point
+- get details of a batch operations job
+- single s3 bucket
+- upload an object
+- list jobs
+- list tables in a namespace
+- objects in a bucket
+- list s3 access points for the account
+- get configuration of an s3 access point
+- delete object
+- get details of a table
+- list storage lens
+- get public access block
+- archive
+- create a batch operations job
+- get bucket lifecycle
+- list all s3 buckets
+- retrieve an object from s3
+- get lifecycle configuration for an s3 bucket
+- list objects
+- check if a bucket exists
+- list batch jobs
+- data storage
+- delete objects
+- storage management
+- list namespaces in a table bucket
+- s3
+- create an s3 bucket
+- aws
+- scalable storage
+- delete multiple objects from an s3 bucket
 - cloud storage
 - list batch operations jobs
-- get bucket encryption
-- single s3 bucket
-- list all s3 buckets owned by the account
-- describe job
-- scalable storage
-- list s3 access points for the account
-- amazon
-- s3
-- get versioning configuration for an s3 bucket
-- tables in a table bucket
-- head bucket
-- get object
-- get an object
-- upload an object to s3
-- create bucket
-- single batch operations job
-- list jobs
-- create a new s3 bucket
-- single access point
-- object storage
-- get table bucket
-- list objects in a bucket
-- list namespaces
-- delete an object from s3
-- get bucket lifecycle
-- list table buckets
+- get public access block settings for the account
 - list buckets
-- backup
 - get bucket versioning
-- list tables
-- list s3 storage lens configurations
-- put object
-- delete an object
-- check if a bucket exists
-- create a batch operations job
-- s3 table buckets
-- list storage lens configurations
-- retrieve an object from s3
-- list batch jobs
-- storage lens configurations
-- list all s3 buckets
-- list objects in an s3 bucket
-- describe batch job
+- get bucket encryption
 - list storage lens configs
-- aws
+- create a new s3 bucket
+- list storage lens configurations
+- tables in a table bucket
+- delete bucket
+- s3 access points
+- get encryption configuration for an s3 bucket
+- backup
+- create bucket
+- get access point
+- object storage
+- describe batch job
+- describe job
+- delete an object
+- get an object
+- list objects in an s3 bucket
+- list s3 table buckets
+- storage lens configurations
+- get versioning configuration for an s3 bucket
+- copy object
+- create job
+- list namespaces
+- list s3 access points
+- single batch operations job
+- s3 table buckets
 slug: storage-management
 source_filename: storage-management.yaml
 source_heading: Capability Spec

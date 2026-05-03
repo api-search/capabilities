@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability that joins a market-data shape with bloomberg + tradeweb sample inputs and returns a deterministic, schema-strict output for an ai risk reviewer.
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability that joins a market-data shape with bloomberg + tradeweb sample inputs and returns a deterministic, schema-strict output for an ai risk reviewer.
 - governance
+- mcp
+- capabilities
+- ai
 slug: bloomberg-tradeweb-cross-source-deterministic-bridge
 source_filename: bloomberg-tradeweb-cross-source-deterministic-bridge.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- spec-driven integration
-- capabilities
-- naftiko
 - a capability deployed via naftikocapability crd + argocd gitops with a fully-loaded runbook — the un-sticker artifact.
-- mcp
+- spec-driven integration
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: argocd-gitops-naftikocapability-runbook
 source_filename: argocd-gitops-naftikocapability-runbook.yaml
 source_heading: Capability Spec

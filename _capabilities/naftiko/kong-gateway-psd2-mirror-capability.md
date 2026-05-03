@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability that fronts psd2 / open banking surface behind their kong gateway, exposing mcp without bypassing the gateway and tagged gdpr.
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability that fronts psd2 / open banking surface behind their kong gateway, exposing mcp without bypassing the gateway and tagged gdpr.
 - governance
+- mcp
+- capabilities
+- ai
 slug: kong-gateway-psd2-mirror-capability
 source_filename: kong-gateway-psd2-mirror-capability.yaml
 source_heading: Capability Spec

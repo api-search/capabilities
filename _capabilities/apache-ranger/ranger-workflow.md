@@ -9,20 +9,20 @@ personas: []
 provider_name: Apache Ranger
 provider_slug: apache-ranger
 search_terms:
-- audit logging and regulatory compliance
-- apache
-- officer reviewing audit logs for compliance reporting
-- access control and policy enforcement
-- open source
-- hadoop
-- workflow for reviewing access audit logs
-- end-to-end workflow for creating and managing security policies
-- authorization
-- security
 - access control
+- open source
+- officer reviewing audit logs for compliance reporting
+- audit logging and regulatory compliance
+- hadoop
+- end-to-end workflow for creating and managing security policies
+- apache
+- security
 - policy management
+- authorization
 - engineer integrating ranger with hadoop services
 - administrator managing access control policies
+- access control and policy enforcement
+- workflow for reviewing access audit logs
 slug: ranger-workflow
 source_filename: ranger-workflow.yaml
 source_heading: Capability Spec

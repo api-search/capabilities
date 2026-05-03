@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
+- naftiko
 - a capability that exposes naftiko-managed capabilities via google's a2a (agent-to-agent) protocol in addition to mcp, so cross-vendor agent calls land on the same governed capability.
+- governance
+- mcp
+- capabilities
+- ai
 slug: a2a-protocol-agent-bridge-capability
 source_filename: a2a-protocol-agent-bridge-capability.yaml
 source_heading: Capability Spec

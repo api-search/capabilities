@@ -28,51 +28,51 @@ personas: []
 provider_name: Facebook
 provider_slug: facebook
 search_terms:
-- send a whatsapp message.
-- list messenger conversations.
 - list whatsapp message templates.
-- messenger
+- customer communication
+- performance tracking and insights.
+- Conversational Commerce
+- manage advertising campaigns and performance.
+- manage content across facebook, instagram, and threads.
+- content publishing
 - list templates
-- create whatsapp template
+- advertising
+- send messenger message
+- social networking
+- messaging
+- list messenger conversations.
+- list whatsapp templates
+- customer messaging across messenger and whatsapp.
+- creates and publishes visual and text content.
+- list messenger conversations
+- Customer Support
+- create a whatsapp message template.
+- facebook
+- social media
+- manages day-to-day ad campaign optimization.
+- Social Media Manager
+- messenger messaging.
+- send a message via whatsapp business.
+- conversation management.
 - list conversations
 - direct messaging and customer communication.
-- send a message via facebook messenger.
-- manages day-to-day ad campaign optimization.
-- messaging
-- content publishing
-- list messenger conversations
-- handles customer inquiries via messaging channels.
-- customer communication
-- create a whatsapp message template.
-- whatsapp messaging.
-- send messenger message
-- manage content across facebook, instagram, and threads.
-- social networking
-- Customer Support
-- creates and publishes visual and text content.
-- plans and executes advertising campaigns.
-- messenger messaging.
+- create whatsapp template
 - Ad Operations
-- Conversational Commerce
-- Marketing Manager
-- send whatsapp message
-- social media
-- campaign management and audience targeting.
-- list whatsapp templates
-- Content Creator
-- advertising
-- send a message via whatsapp business.
-- performance tracking and insights.
+- plans and executes advertising campaigns.
 - whatsapp template management.
-- manages content and engagement across meta platforms.
-- Social Media Manager
-- whatsapp
-- facebook
-- publishing and managing content across platforms.
 - send a messenger message.
-- conversation management.
-- customer messaging across messenger and whatsapp.
-- manage advertising campaigns and performance.
+- publishing and managing content across platforms.
+- send a whatsapp message.
+- send whatsapp message
+- whatsapp
+- Content Creator
+- handles customer inquiries via messaging channels.
+- campaign management and audience targeting.
+- messenger
+- Marketing Manager
+- whatsapp messaging.
+- send a message via facebook messenger.
+- manages content and engagement across meta platforms.
 slug: messaging-and-communication
 source_filename: messaging-and-communication.yaml
 source_heading: Capability Spec

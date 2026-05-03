@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- 'a small, runnable capability + use-case briefing pair (use cases #1 + #2) packaged as the avenga introduction artifact.'
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- 'a small, runnable capability + use-case briefing pair (use cases #1 + #2) packaged as the avenga introduction artifact.'
+- capabilities
+- ai
 slug: avenga-introduction-primer-capability
 source_filename: avenga-introduction-primer-capability.yaml
 source_heading: Capability Spec

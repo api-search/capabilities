@@ -50,47 +50,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- update webhook
-- get subscription types
-- b2b data
-- compliance
-- get usage
-- list all configured webhook subscriptions.
-- api usage
-- list all webhook subscriptions.
-- contacts
-- data
-- delete a webhook subscription.
-- check compliance status for specified contacts.
-- list webhooks
-- delete webhook
 - api usage tracking.
-- validate target url
+- list all configured webhook subscriptions.
 - create webhook
-- monitoring
-- individual webhook management.
-- update an existing webhook subscription.
-- check compliance
-- validate a webhook target url.
-- data compliance operations.
-- sales intelligence
-- get api usage data and consumption metrics.
-- company data
-- webhooks
 - zoominfo
-- get available webhook subscription types.
-- lead generation
-- contact database
-- validate a webhook target url is reachable.
-- marketing intelligence
-- b2b
-- get api usage data.
+- individual webhook management.
 - webhook subscription management.
-- available webhook subscription types.
-- create a new webhook subscription for data change notifications.
 - check data compliance status for specified contacts.
+- compliance
+- create a new webhook subscription for data change notifications.
+- webhooks
+- sales intelligence
+- get available webhook subscription types.
+- contact database
+- delete a webhook subscription.
 - webhook target url validation.
+- update an existing webhook subscription.
+- get subscription types
 - create a new webhook subscription.
+- validate a webhook target url.
+- update webhook
+- b2b
+- contacts
+- b2b data
+- monitoring
+- validate a webhook target url is reachable.
+- list all webhook subscriptions.
+- list webhooks
+- company data
+- available webhook subscription types.
+- check compliance
+- get usage
+- delete webhook
+- check compliance status for specified contacts.
+- marketing intelligence
+- api usage
+- validate target url
+- data compliance operations.
+- get api usage data.
+- lead generation
+- data
+- get api usage data and consumption metrics.
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

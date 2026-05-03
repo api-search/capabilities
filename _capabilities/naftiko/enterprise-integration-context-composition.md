@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- compose ai context (#5) capability stitching marketing + ops + supply-chain apis into one composed context object — the integration story that addresses enterprise-integration sprawl.
 - example
+- api integration
+- compose ai context (#5) capability stitching marketing + ops + supply-chain apis into one composed context object — the integration story that addresses enterprise-integration sprawl.
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: enterprise-integration-context-composition
 source_filename: enterprise-integration-context-composition.yaml
 source_heading: Capability Spec

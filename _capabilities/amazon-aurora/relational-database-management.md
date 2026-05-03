@@ -17,34 +17,34 @@ personas: []
 provider_name: Amazon Aurora
 provider_slug: amazon-aurora
 search_terms:
-- restore an aurora db cluster from a snapshot for disaster recovery.
-- modify db cluster
-- postgresql
-- start a stopped aurora db cluster to resume database operations.
-- list available aurora db cluster snapshots for backup management.
+- modify the configuration of an existing aurora db cluster.
 - stop db cluster
+- create db instance
+- list available aurora db cluster snapshots for backup management.
+- create db cluster snapshot
+- stop an aurora db cluster to reduce costs when not in use.
+- start a stopped aurora db cluster to resume database operations.
+- create db cluster
+- aws
+- describe db clusters
+- list all db instances in aurora clusters.
+- create a snapshot of an aurora db cluster for backup or cloning.
+- relational database
+- list all aurora db clusters to understand available databases and their status.
+- start db cluster
 - amazon aurora
+- aurora db cluster management
+- describe db instances
 - list aurora db clusters
 - restore db cluster from snapshot
-- relational database
-- create db cluster
-- create db cluster snapshot
-- list all db instances in aurora clusters.
-- modify the configuration of an existing aurora db cluster.
-- mysql
-- aurora db cluster management
-- create a new aurora db cluster
-- list all aurora db clusters to understand available databases and their status.
-- create a snapshot of an aurora db cluster for backup or cloning.
-- start db cluster
-- describe db cluster snapshots
-- stop an aurora db cluster to reduce costs when not in use.
-- describe db clusters
 - create a new aurora mysql or postgresql compatible db cluster.
+- modify db cluster
 - add a new read replica or writer instance to an aurora db cluster.
-- create db instance
-- aws
-- describe db instances
+- restore an aurora db cluster from a snapshot for disaster recovery.
+- create a new aurora db cluster
+- mysql
+- postgresql
+- describe db cluster snapshots
 slug: relational-database-management
 source_filename: relational-database-management.yaml
 source_heading: Capability Spec

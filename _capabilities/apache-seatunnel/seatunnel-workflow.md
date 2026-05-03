@@ -10,17 +10,17 @@ provider_name: Apache SeaTunnel
 provider_slug: apache-seatunnel
 search_terms:
 - data integration
-- apache
 - engineer managing seatunnel clusters
 - extract, transform, load pipeline processing
-- end-to-end data synchronization from source to sink
-- engineer designing and operating data pipelines
-- streaming
-- open source
-- etl
 - elt
 - batch
+- etl
+- open source
+- engineer designing and operating data pipelines
 - moving and transforming data between systems
+- streaming
+- apache
+- end-to-end data synchronization from source to sink
 slug: seatunnel-workflow
 source_filename: seatunnel-workflow.yaml
 source_heading: Capability Spec

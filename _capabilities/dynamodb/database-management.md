@@ -53,61 +53,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- scan an entire table or index.
-- list tables.
-- query
-- get items in a transaction.
-- key-value
-- put item
-- item operations.
-- get item
-- delete item
-- dynamodb
 - update item
-- describe a table.
-- query items by primary key.
-- create a new dynamodb table.
-- transact get items
-- write items in a transaction.
-- batch get item
-- serverless
-- create table
-- table management.
-- delete table
-- transact write items
-- query operations.
-- list on-demand backups.
-- database
-- update a table.
-- scan a table.
-- get multiple items from one or more tables.
-- database management
-- batch write item
-- delete an item.
-- describe table
-- list tables
-- create or replace an item.
-- cloud
-- scan
-- delete a table.
-- list dynamodb tables.
-- create backup
-- describe a dynamodb table.
 - document store
-- nosql
-- get an item by primary key.
-- put or delete multiple items in batch.
-- managed service
-- create a table.
 - delete a dynamodb table.
+- batch write item
+- database management
+- transact write items
+- transact get items
+- table management.
+- create an on-demand backup.
 - individual table management.
+- scan
+- managed service
+- nosql
+- scan a table.
+- aws
+- write items in a transaction.
+- delete item
+- create a table.
+- cloud
+- update a table.
+- list dynamodb tables.
+- item operations.
+- query items by primary key.
+- list tables.
+- put item
+- delete a table.
+- create or replace an item.
+- describe table
+- key-value
+- dynamodb
+- list tables
+- delete an item.
+- describe a table.
+- create backup
+- create a new dynamodb table.
+- batch get item
+- delete table
+- query
+- put or delete multiple items in batch.
+- list backups
+- serverless
+- get an item.
+- get an item by primary key.
+- get multiple items from one or more tables.
+- get item
+- database
+- list on-demand backups.
+- create table
+- update an item.
+- scan an entire table or index.
+- query operations.
+- describe a dynamodb table.
 - query items.
 - update table
-- update an item.
-- create an on-demand backup.
-- list backups
-- aws
-- get an item.
+- get items in a transaction.
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

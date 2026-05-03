@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
 - a capability composition wrapping multiple apis as one reusable capability — the second of her two named asks.
+- api integration
+- naftiko
+- governance
+- mcp
+- capabilities
+- ai
 slug: api-reusability-composition
 source_filename: api-reusability-composition.yaml
 source_heading: Capability Spec

@@ -58,67 +58,67 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- mute a monitor
-- get a monitor
-- visualizations
-- submitMetrics
-- analytics
-- active metrics
-- list monitors
-- unmute monitor
-- get csm hosts and containers coverage
-- t1
-- GetDashboardListItems
-- query scalar metric data
-- update a monitor
-- alerting
-- GetCSMHostsAndContainersCoverageAnalysis
-- validate a monitor configuration
+- infrastructure
 - query timeseries metric data
 - add dashboards to a dashboard list
-- list all monitors
-- monitor management
-- list active metrics
-- dashboard list items
-- query scalar
-- infrastructure
-- deleteMonitor
 - create monitor
 - dashboards
-- host coverage
-- monitoring
-- add dashboard list items
-- create a monitor
-- fetch dashboards in a dashboard list
-- metrics
-- platform
-- delete a monitor
-- get hosts coverage
-- get dashboard list items
-- get dashboards in a list
-- submit metric data points
-- edit an existing monitor
-- datadog
-- listMonitors
-- listActiveMetrics
-- getMonitor
-- query timeseries
-- queryMetricsTimeseries
-- muteMonitor
 - unmute a monitor to resume notifications
-- submit metrics
-- validate monitor
-- update monitor
-- updateMonitor
-- mute monitor
-- createMonitor
-- query timeseries data
+- create a monitor
+- query scalar metric data
 - get a monitor by id
-- get monitor
 - mute a monitor to suppress notifications
-- individual monitor operations
-- create a new monitor
+- get monitor
+- query scalar
+- listMonitors
+- deleteMonitor
+- muteMonitor
+- monitor management
+- active metrics
+- updateMonitor
+- update monitor
+- get csm hosts and containers coverage
+- add dashboard list items
+- listActiveMetrics
+- platform
+- createMonitor
+- mute monitor
+- unmute monitor
+- GetCSMHostsAndContainersCoverageAnalysis
+- query timeseries
+- list monitors
+- validate a monitor configuration
+- monitoring
+- submit metrics
+- get hosts coverage
+- host coverage
 - delete monitor
+- create a new monitor
+- get dashboards in a list
+- delete a monitor
+- submitMetrics
+- GetDashboardListItems
+- edit an existing monitor
+- list active metrics
+- dashboard list items
+- fetch dashboards in a dashboard list
+- get dashboard list items
+- datadog
+- analytics
+- t1
+- visualizations
+- mute a monitor
+- list all monitors
+- metrics
+- alerting
+- getMonitor
+- get a monitor
+- individual monitor operations
+- update a monitor
+- queryMetricsTimeseries
+- submit metric data points
+- validate monitor
+- query timeseries data
 slug: monitoring-and-alerting
 source_filename: monitoring-and-alerting.yaml
 source_heading: Capability Spec

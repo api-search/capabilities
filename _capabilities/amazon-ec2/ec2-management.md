@@ -50,46 +50,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- describeInstanceStatus
-- amazon ec2 reboot instances
-- stop instances
-- terminateInstances
-- amazon ec2 start stopped instances
-- workflow capability for cloud compute management.
-- stopInstances
-- terminate instances
-- describe instance status
-- amazon ec2 terminate instances
-- amazon ec2 stop running instances
-- amazon ec2 describe ec2 instances
-- runInstances
-- deregisterImage
-- describe instances
-- describe images
-- cloud compute management business domain for amazon ec2.
 - infrastructure
-- create image
-- amazon ec2
-- amazon ec2 create an ami from an instance
-- rebootInstances
-- amazon ec2 deregister an ami
-- amazon ec2 describe amis
-- cloud computing
-- deregister image
-- amazon ec2 launch ec2 instances
-- reboot instances
-- iaas
-- run instances
 - compute
-- start instances
+- create image
+- terminate instances
 - startInstances
-- describeImages
-- engineers managing amazon ec2 resources on aws.
-- amazon ec2 describe instance status
-- virtual machines
-- createImage
+- rebootInstances
+- deregisterImage
 - describeInstances
+- amazon ec2 create an ami from an instance
+- start instances
+- describe instances
+- engineers managing amazon ec2 resources on aws.
+- stopInstances
+- amazon ec2 describe ec2 instances
+- describe instance status
+- cloud compute management business domain for amazon ec2.
 - aws
+- amazon ec2 start stopped instances
+- virtual machines
+- workflow capability for cloud compute management.
+- amazon ec2 describe amis
+- stop instances
+- amazon ec2 deregister an ami
+- describe images
+- amazon ec2 reboot instances
+- amazon ec2 stop running instances
+- terminateInstances
+- reboot instances
+- amazon ec2 terminate instances
+- describeInstanceStatus
+- deregister image
+- createImage
+- describeImages
+- amazon ec2 describe instance status
+- iaas
+- amazon ec2 launch ec2 instances
+- cloud computing
+- run instances
+- runInstances
+- amazon ec2
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec

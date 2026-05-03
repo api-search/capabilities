@@ -31,43 +31,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- bulk tokenization operations
-- submit bulk tokenization request
-- enroll issuer click to pay
+- tokenization
+- submit bulk tokenization
+- push provisioning to wallets
+- financial services
+- check digitization eligibility
+- check card eligibility for digitization
+- push provision a token to a wallet
+- suspend an active token
+- suspend token
+- delete a token
+- pre-digitization eligibility
+- credit cards
+- fraud detection
+- get token details
 - mdes
-- push provision
 - check if a card is eligible for digitization
 - register token requestor
-- pre-digitization eligibility
-- push provision a token to a wallet
-- check card eligibility for digitization
+- push provision
 - digital payments
-- check digitization eligibility
-- digital identity
-- suspend an active token
-- push provision a token to a digital wallet
-- get token details
-- token lifecycle management
-- enroll an issuer in click to pay
-- submit a bulk tokenization request for a card portfolio
-- mastercard
-- credit cards
-- tokenize card
-- tokenization
-- push provisioning to wallets
-- suspend token
-- click to pay
-- delete a token
-- register a new token requestor
-- financial services
-- push provision to wallet
-- fraud detection
-- tokenize a payment card via mdes
-- delete token
-- submit bulk tokenization
 - tokenize a payment card
-- open banking
+- submit a bulk tokenization request for a card portfolio
+- push provision a token to a digital wallet
 - payments
+- tokenize a payment card via mdes
+- click to pay
+- mastercard
+- enroll an issuer in click to pay
+- push provision to wallet
+- bulk tokenization operations
+- enroll issuer click to pay
+- tokenize card
+- token lifecycle management
+- register a new token requestor
+- submit bulk tokenization request
+- delete token
+- digital identity
+- open banking
 slug: digital-enablement-and-tokenization
 source_filename: digital-enablement-and-tokenization.yaml
 source_heading: Capability Spec

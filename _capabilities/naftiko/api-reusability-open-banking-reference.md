@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- 'a reference capability tying open banking to guide-use-cases #9 (capability-first api reusability) as the thought-leadership angle.'
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- 'a reference capability tying open banking to guide-use-cases #9 (capability-first api reusability) as the thought-leadership angle.'
+- capabilities
+- ai
 slug: api-reusability-open-banking-reference
 source_filename: api-reusability-open-banking-reference.yaml
 source_heading: Capability Spec

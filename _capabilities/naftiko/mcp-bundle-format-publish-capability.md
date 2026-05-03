@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a capability that publishes naftiko-governed capability set in the november 2025 mcp bundle format spec so they can be installed into any compliant agent runtime as a unit.
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability that publishes naftiko-governed capability set in the november 2025 mcp bundle format spec so they can be installed into any compliant agent runtime as a unit.
 - governance
+- mcp
+- capabilities
+- ai
 slug: mcp-bundle-format-publish-capability
 source_filename: mcp-bundle-format-publish-capability.yaml
 source_heading: Capability Spec

@@ -42,48 +42,48 @@ personas: []
 provider_name: Amazon Security Lake
 provider_slug: amazon-security-lake
 search_terms:
-- list all security data lake configurations
-- security data centralization and threat analysis
-- list all configured log sources
-- data lake infrastructure management and subscriber access control
-- list subscribers
-- threat detection
-- create data lake
-- engineers who configure and manage security data lakes, log sources, and subscriber access
-- security leaders who consume security data for threat intelligence and compliance reporting
-- list all amazon security lake data lake configurations
-- create a subscriber for security lake data access
-- list all security lake data subscribers
-- delete a security lake subscriber
 - ocsf
-- create subscriber
-- create a new amazon security lake data lake
-- amazon security lake
-- add a custom third-party log source to security lake
-- list all data lake subscribers
-- get details about a specific security lake subscriber
-- Security Data Engineer
-- add custom log source
-- add a native aws log source
-- data lake
 - list data lakes
-- add aws log source
-- CISO
-- create a new security data lake
-- get subscriber
-- list log sources
-- get data lake source status across accounts and regions
-- list all log sources configured in security lake
-- centralized security data lake lifecycle including data lake configuration, log source management, and subscriber access
-- create a new subscriber for data access
-- get data lake sources
-- data subscriber access management
 - enable a native aws log source in security lake
-- siem
+- threat detection
+- create subscriber
+- list all log sources configured in security lake
+- list all configured log sources
+- security leaders who consume security data for threat intelligence and compliance reporting
+- add a native aws log source
+- add aws log source
+- list all amazon security lake data lake configurations
+- data lake
+- create data lake
+- security data centralization and threat analysis
+- data lake infrastructure management and subscriber access control
+- get details about a specific security lake subscriber
 - security
-- security data lake lifecycle management
+- create a new subscriber for data access
 - security log source management
+- add custom log source
+- delete a security lake subscriber
+- create a new security data lake
+- amazon security lake
+- Security Data Engineer
+- engineers who configure and manage security data lakes, log sources, and subscriber access
+- list subscribers
+- list all data lake subscribers
+- data subscriber access management
+- get subscriber
+- CISO
 - delete subscriber
+- create a subscriber for security lake data access
+- siem
+- centralized security data lake lifecycle including data lake configuration, log source management, and subscriber access
+- add a custom third-party log source to security lake
+- create a new amazon security lake data lake
+- list all security lake data subscribers
+- security data lake lifecycle management
+- get data lake source status across accounts and regions
+- list all security data lake configurations
+- get data lake sources
+- list log sources
 slug: security-data-lake
 source_filename: security-data-lake.yaml
 source_heading: Capability Spec

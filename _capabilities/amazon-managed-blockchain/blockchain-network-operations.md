@@ -36,33 +36,33 @@ provider_slug: amazon-managed-blockchain
 search_terms:
 - blockchain
 - list blockchain networks
-- list all members of a blockchain network
-- hyperledger fabric
-- create network
-- list peer nodes
-- amazon
-- create a peer node to participate in a blockchain network
-- Blockchain Architect
 - create a peer node
-- create a member
-- list members
-- create node
 - create peer node
-- peer nodes
-- create blockchain network
-- create member
-- distributed ledger
-- blockchain networks
-- create a new hyperledger fabric or ethereum blockchain network
 - list all peer nodes in a blockchain network
-- Blockchain Developer
 - ethereum
-- list networks
 - list network members
-- list all amazon managed blockchain networks
+- Blockchain Developer
 - create a blockchain network
-- invite network member
+- list members
+- create a peer node to participate in a blockchain network
+- list peer nodes
+- list all amazon managed blockchain networks
+- create a new hyperledger fabric or ethereum blockchain network
+- create blockchain network
+- create a member
+- list all members of a blockchain network
+- create member
+- list networks
+- peer nodes
+- blockchain networks
+- amazon
+- create network
+- Blockchain Architect
+- create node
 - network members
+- distributed ledger
+- invite network member
+- hyperledger fabric
 - list nodes
 - invite an aws account to join a blockchain network as a member
 slug: blockchain-network-operations

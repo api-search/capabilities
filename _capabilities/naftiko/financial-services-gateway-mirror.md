@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
 - a -fronted financial-services capability collection — wraps -managed apis as naftiko capabilities, exposes as mcp, layers billing-granularity + retry-safety tags on consumed operations.
+- mcp
+- capabilities
+- ai
 slug: financial-services-gateway-mirror
 source_filename: financial-services-gateway-mirror.yaml
 source_heading: Capability Spec

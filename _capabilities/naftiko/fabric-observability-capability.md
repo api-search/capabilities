@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- a capability wired into cross-engine observability dashboards + federation across fabrics, used to argue the fabric-wide visibility story.
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability wired into cross-engine observability dashboards + federation across fabrics, used to argue the fabric-wide visibility story.
 - governance
+- mcp
+- capabilities
+- ai
 slug: fabric-observability-capability
 source_filename: fabric-observability-capability.yaml
 source_heading: Capability Spec

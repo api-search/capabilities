@@ -22,39 +22,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- diagnose
-- crop advisory
-- account credit management.
-- list supported crops
-- field specialists diagnosing plant health issues in crops
-- Crop Advisor
+- agricultural consultants providing plant health recommendations
 - credit balance and api usage monitoring
+- check remaining api credits for plant diagnosis requests.
+- check credit balance
+- developers building crop advisory and farm management applications
+- agriculture
+- Agronomist
+- diagnose plant disease
+- Crop Advisor
+- diagnose plant diseases and pests from an uploaded image.
+- list all crop types supported by agrio's ai diagnosis service.
 - supported crop types for diagnosis
+- crop advisory
+- list crops
+- plant disease
 - disease and pest identification from plant images
 - list all supported crop types.
-- list all crop types supported by agrio's ai diagnosis service.
-- crop protection
-- agrio
-- plant health diagnosis.
-- ai diagnosis
-- diagnose plant disease
-- Agronomist
-- get credit
 - ai
-- ai-powered plant disease diagnosis and crop advisory
-- Precision Agriculture Developer
+- ai diagnosis
 - get current credit balance.
-- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
-- list crops
-- check remaining api credits for plant diagnosis requests.
-- agriculture
-- plant disease
 - pest detection
-- diagnose plant diseases and pests from an uploaded image.
-- developers building crop advisory and farm management applications
-- check credit balance
+- get credit
+- field specialists diagnosing plant health issues in crops
+- plant health diagnosis.
+- diagnose
+- Precision Agriculture Developer
+- account credit management.
+- list supported crops
+- ai-powered plant disease diagnosis and crop advisory
+- crop protection
+- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
 - supported crop catalog.
-- agricultural consultants providing plant health recommendations
+- agrio
 slug: crop-protection
 source_filename: crop-protection.yaml
 source_heading: Capability Spec

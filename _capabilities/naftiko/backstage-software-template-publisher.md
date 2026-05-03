@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
+- naftiko
 - publishes the naftiko spec-driven integration backstage template into a backstage catalog daniel can demo at apidays munich.
+- governance
+- mcp
+- capabilities
+- ai
 slug: backstage-software-template-publisher
 source_filename: backstage-software-template-publisher.yaml
 source_heading: Capability Spec

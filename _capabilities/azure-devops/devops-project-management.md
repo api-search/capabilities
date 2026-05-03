@@ -60,48 +60,48 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-devops
 search_terms:
-- update work item
-- get a pipeline by id
-- create a new work item
-- individual work item operations
-- query work items
-- ci/cd
-- get work items batch
-- work item field definitions
-- single pipeline
-- get a pipeline run
-- run pipeline
-- list pipelines
-- update a work item
-- list all pipelines in a project
-- work items
-- list runs for a pipeline
-- azure
-- get work item
-- list work item fields
-- create a new pipeline
-- query work items using wiql
-- azure devops
-- list pipeline runs
-- wiql query execution
-- get multiple work items by ids
-- trigger a pipeline run
-- single pipeline run
-- pipelines
-- pipeline runs
-- create pipeline
-- get details of a pipeline run
-- project management
-- get pipeline
-- work item batch and creation
-- get pipeline run
-- list all work item field definitions
 - list fields
-- get a work item by id
-- list all pipelines
+- query work items using wiql
+- work item field definitions
+- list runs for a pipeline
+- create a new work item
+- wiql query execution
+- update work item
+- get details of a pipeline run
+- get a pipeline run
+- list all work item field definitions
 - devops
-- create work item
+- create a new pipeline
+- get a pipeline by id
+- work items
+- get work items batch
+- get multiple work items by ids
 - pipeline definitions
+- update a work item
+- list pipelines
+- get a work item by id
+- get pipeline
+- list work item fields
+- get pipeline run
+- trigger a pipeline run
+- create pipeline
+- project management
+- list all pipelines
+- single pipeline
+- pipeline runs
+- azure
+- azure devops
+- get work item
+- run pipeline
+- list all pipelines in a project
+- list pipeline runs
+- pipelines
+- ci/cd
+- work item batch and creation
+- individual work item operations
+- single pipeline run
+- query work items
+- create work item
 slug: devops-project-management
 source_filename: devops-project-management.yaml
 source_heading: Capability Spec

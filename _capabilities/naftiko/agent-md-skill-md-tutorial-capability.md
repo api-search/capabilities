@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a single capability used as the running example in framework-wiki tutorial-part-1, with the ai assistance angle (agent.md, skill.md prompts) highlighted.
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a single capability used as the running example in framework-wiki tutorial-part-1, with the ai assistance angle (agent.md, skill.md prompts) highlighted.
+- capabilities
+- ai
 slug: agent-md-skill-md-tutorial-capability
 source_filename: agent-md-skill-md-tutorial-capability.yaml
 source_heading: Capability Spec

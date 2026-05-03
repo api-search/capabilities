@@ -27,43 +27,43 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- batch processing
-- operators managing the flink cluster and ensuring job reliability
-- metrics, checkpoints, and cluster health monitoring
-- data engineering
-- get job
-- get details of a specific job
-- get job metrics
-- engineers submitting and monitoring flink streaming and batch jobs
-- list taskmanagers
-- job management
-- list all flink jobs
-- open source
-- stateful computing
-- stream processing
-- list all taskmanagers
-- monitoring
-- get performance metrics for a flink job
-- big data
-- shutdown cluster
-- Platform Operator
-- flink job management
-- get metrics for a flink job
-- list all taskmanagers in the flink cluster
-- job performance metrics
-- Data Engineer
-- taskmanager management
-- shut down the flink cluster
-- real-time analytics
-- get detailed status and information for a specific flink job
-- apache
-- list flink jobs
-- list all flink streaming and batch jobs
-- apache flink
-- list jobs
 - get flink job
+- get job
+- list all flink streaming and batch jobs
+- list jobs
+- operators managing the flink cluster and ensuring job reliability
+- Platform Operator
+- stateful computing
+- Data Engineer
+- data engineering
+- get metrics for a flink job
+- shutdown cluster
+- job management
+- list taskmanagers
 - manage and monitor flink streaming and batch jobs
+- open source
+- taskmanager management
+- get performance metrics for a flink job
+- engineers submitting and monitoring flink streaming and batch jobs
+- flink job management
+- get details of a specific job
+- real-time analytics
+- monitoring
+- big data
+- stream processing
+- shut down the flink cluster
+- batch processing
+- list all taskmanagers in the flink cluster
+- apache flink
+- get detailed status and information for a specific flink job
+- metrics, checkpoints, and cluster health monitoring
+- list all flink jobs
+- list flink jobs
+- get job metrics
+- job performance metrics
 - job submission, tracking, and lifecycle management
+- apache
+- list all taskmanagers
 slug: flink-job-management
 source_filename: flink-job-management.yaml
 source_heading: Capability Spec

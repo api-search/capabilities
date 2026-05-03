@@ -18,38 +18,38 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
-- corporate treasury operations including account management, payments, and reporting
-- payments
-- get account balances
+- executive responsible for corporate cash and liquidity management
+- bank of america
+- account management
+- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- list bank of america cashpro accounts for the authenticated client
+- list account transactions
+- list available bank of america account statements
+- ERP Integration
+- Corporate Treasurer
+- payment initiation and tracking across 350+ payment types
+- banking
+- cashpro
+- Treasury Analyst
 - corporate cash management, balance reporting, and liquidity
 - list bofa accounts
-- get current and available balances for a cashpro account
-- payment initiation and tracking across 350+ payment types
-- executive responsible for corporate cash and liquidity management
-- treasury
-- list bank of america cashpro accounts for the authenticated client
-- corporate banking
-- payment management
-- initiate payment
-- ERP Integration
-- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- payments
 - analyst managing day-to-day treasury operations and reporting
-- initiate a payment
-- finance
-- list statements
-- list account transactions
-- account management
-- cashpro
-- list accounts
-- list cashpro accounts
-- list available bank of america account statements
-- bank of america
-- Treasury Analyst
-- system integration connecting erp/tms to bank of america cashpro apis
-- Corporate Treasurer
-- list transactions for a bank of america account within a date range
-- banking
 - get payment status
+- get current and available balances for a cashpro account
+- list accounts
+- treasury
+- initiate a payment
+- list statements
+- payment management
+- finance
+- get account balances
+- list cashpro accounts
+- initiate payment
+- corporate banking
+- system integration connecting erp/tms to bank of america cashpro apis
+- corporate treasury operations including account management, payments, and reporting
+- list transactions for a bank of america account within a date range
 - get the current status of a bank of america payment
 slug: treasury-banking
 source_filename: treasury-banking.yaml

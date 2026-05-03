@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- a capability deployed via the naftikocapability crd that simultaneously exposes mcp tools/resources/prompts, demonstrating mcp-as-platform-resource end-to-end.
+- api integration
+- naftiko
+- mcp
 - governance
+- a capability deployed via the naftikocapability crd that simultaneously exposes mcp tools/resources/prompts, demonstrating mcp-as-platform-resource end-to-end.
+- capabilities
+- ai
 slug: mcp-as-k8s-resource-demo
 source_filename: mcp-as-k8s-resource-demo.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability that wires the apigee + 42 crunch publish pipeline into the naftiko capability publish flow, so capability yamls cannot reach production without passing both gates and emit a per-publish audit record back to api governance layer.
-- naftiko
-- capabilities
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- a capability that wires the apigee + 42 crunch publish pipeline into the naftiko capability publish flow, so capability yamls cannot reach production without passing both gates and emit a per-publish audit record back to api governance layer.
+- capabilities
+- ai
 slug: apigee-42crunch-publish-gate-capability
 source_filename: apigee-42crunch-publish-gate-capability.yaml
 source_heading: Capability Spec

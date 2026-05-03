@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- update build information.
-- remove a beta tester.
+- list all builds.
+- create beta tester
+- developer
+- list all apps in app store connect.
+- create group
+- read build
+- list apps
+- create a beta group.
+- delete beta tester
+- create beta group
+- testflight
 - read beta tester
 - delete beta group
-- list all beta groups.
-- app management.
-- create a new beta group.
-- technology
+- add a new beta tester.
+- list all apps.
 - create tester
-- get details of a specific app.
-- create a beta group.
-- list beta groups
-- update a beta group.
-- delete a beta group.
-- testflight
-- apple
-- delete beta tester
+- build management.
+- list all beta testers.
+- technology
+- update app metadata.
+- modify build
 - list beta testers
+- create a new beta group.
+- list builds
+- modify beta group
+- update a beta group.
+- app management.
+- add a beta tester.
+- delete a beta group.
+- beta group management.
+- list beta groups.
+- update build information.
+- get beta tester details.
+- apple
+- modify app
+- get build details.
+- app store
+- mobile
+- list beta groups
+- macos
+- list all beta groups.
 - list groups
+- beta tester management.
+- app management
 - read app
 - read beta group
-- modify beta group
-- list builds
-- list all apps in app store connect.
-- list beta testers.
-- beta tester management.
-- get beta group details.
-- modify app
-- create group
 - ios
-- mobile
-- app management
-- update app metadata.
-- get beta tester details.
-- build management.
-- developer
-- add a beta tester.
+- remove a beta tester.
+- get beta group details.
+- get details of a specific app.
 - list testers
-- create beta group
-- add a new beta tester.
-- beta group management.
-- create beta tester
-- list apps
-- list all apps.
-- read build
-- list all builds.
-- list all beta testers.
-- modify build
-- get build details.
-- list beta groups.
-- macos
-- app store
+- list beta testers.
 slug: app-lifecycle
 source_filename: app-lifecycle.yaml
 source_heading: Capability Spec

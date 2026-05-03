@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- spec-driven integration
-- capabilities
-- naftiko
-- mcp
-- example op
 - a capability over the blpapi / data license surface with billing-granularity + sensitivity tags on consumes — the customer-facing shape for an external -customer agent build.
+- spec-driven integration
+- example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: blpapi-data-license-billing-tagged-capability
 source_filename: blpapi-data-license-billing-tagged-capability.yaml
 source_heading: Capability Spec

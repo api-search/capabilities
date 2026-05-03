@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- a capability annotated against the sdi "deterministic foundation for agents" framing, used as the ai-data-enterprise-tech opening artifact.
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability annotated against the sdi "deterministic foundation for agents" framing, used as the ai-data-enterprise-tech opening artifact.
 - governance
+- mcp
+- capabilities
+- ai
 slug: deterministic-agent-foundation-2
 source_filename: deterministic-agent-foundation-2.yaml
 source_heading: Capability Spec

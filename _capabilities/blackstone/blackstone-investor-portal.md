@@ -9,11 +9,11 @@ personas: []
 provider_name: Blackstone
 provider_slug: blackstone
 search_terms:
-- real estate
-- investment management
-- alternative assets
-- finance
 - private equity
+- alternative assets
+- investment management
+- real estate
+- finance
 slug: blackstone-investor-portal
 source_filename: blackstone-investor-portal.yaml
 source_heading: Capability Spec

@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon Audit Manager
 provider_slug: amazon-audit-manager
 search_terms:
-- get settings
-- compliance
-- list all compliance assessments to understand current audit coverage.
-- create a new compliance assessment using a regulatory framework.
-- create assessment
-- audit
-- get assessment
-- risk management
-- list all assessments
-- list available compliance frameworks such as soc 2, pci dss, and hipaa.
-- list available frameworks
-- generate a compliance assessment report from collected evidence.
-- update audit manager settings including sns notifications and default report destination.
-- get audit manager account settings including default destinations and process owners.
-- list assessment reports
-- amazon audit manager
-- get complete details of a compliance assessment including control status.
 - compliance assessment management
-- create a new assessment
-- update settings
-- list frameworks
-- compliance framework management
-- list assessments
+- audit
 - list controls
-- create control
-- list generated assessment reports for compliance documentation.
+- get settings
+- amazon audit manager
+- generate a compliance assessment report from collected evidence.
+- compliance
+- update audit manager settings including sns notifications and default report destination.
 - create a custom compliance control for use in frameworks and assessments.
-- create assessment report
+- create a new compliance assessment using a regulatory framework.
+- list all compliance assessments to understand current audit coverage.
+- risk management
+- list available frameworks
 - aws
+- list assessments
+- list generated assessment reports for compliance documentation.
+- compliance framework management
+- list frameworks
+- get complete details of a compliance assessment including control status.
 - list compliance controls available for building assessments.
+- create assessment report
+- list assessment reports
+- list available compliance frameworks such as soc 2, pci dss, and hipaa.
+- get assessment
+- create a new assessment
+- create control
+- update settings
+- list all assessments
+- get audit manager account settings including default destinations and process owners.
+- create assessment
 slug: compliance-auditing
 source_filename: compliance-auditing.yaml
 source_heading: Capability Spec

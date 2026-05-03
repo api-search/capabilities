@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb update an item in a table
-- amazon dynamodb put an item into a table
-- listTables
-- query
-- engineers managing amazon dynamodb resources on aws.
-- key-value
-- put item
-- get item
-- delete item
-- createTable
-- amazon dynamodb
 - update item
-- putItem
-- serverless
-- create table
-- delete table
-- updateItem
-- amazon dynamodb update a dynamodb table
-- workflow capability for nosql database operations.
-- database
-- amazon dynamodb describe a dynamodb table
-- describeTable
-- deleteTable
-- describe table
-- updateTable
-- list tables
 - getItem
-- amazon dynamodb delete a dynamodb table
-- amazon dynamodb create a dynamodb table
 - nosql database operations business domain for amazon dynamodb.
-- amazon dynamodb query items in a table or index
 - document store
+- amazon dynamodb
+- updateTable
+- amazon dynamodb update a dynamodb table
 - nosql
-- deleteItem
-- update table
-- amazon dynamodb list dynamodb tables
-- amazon dynamodb get an item from a table
-- amazon dynamodb delete an item from a table
+- updateItem
+- deleteTable
+- putItem
 - aws
+- listTables
+- delete item
+- amazon dynamodb delete a dynamodb table
+- put item
+- describe table
+- key-value
+- amazon dynamodb query items in a table or index
+- amazon dynamodb delete an item from a table
+- list tables
+- amazon dynamodb update an item in a table
+- deleteItem
+- createTable
+- amazon dynamodb describe a dynamodb table
+- engineers managing amazon dynamodb resources on aws.
+- delete table
+- query
+- serverless
+- amazon dynamodb get an item from a table
+- get item
+- database
+- amazon dynamodb create a dynamodb table
+- amazon dynamodb list dynamodb tables
+- create table
+- workflow capability for nosql database operations.
+- describeTable
+- update table
+- amazon dynamodb put an item into a table
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec

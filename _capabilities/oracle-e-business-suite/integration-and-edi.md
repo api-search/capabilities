@@ -27,50 +27,50 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- edi get inbound transactions
-- authenticate and obtain session token.
-- end the current session.
-- edi get trading partner by id
-- edi get outbound transactions
-- integration
-- login
-- list inbound transactions.
-- get trading partners
-- authenticate.
-- import an inbound edi transaction.
-- retrieve code conversion mappings.
-- initialize responsibility context.
-- isg get service wadl
-- soa gateway
-- trading partner management.
-- outbound edi transactions.
-- list outbound transactions.
-- edi get trading partners
-- enterprise
-- list trading partners.
-- edi extract outbound transaction
-- retrieve outbound edi transactions.
-- edi
-- inbound edi transactions.
-- erp
-- get outbound transactions
-- business applications
-- retrieve trading partners.
-- get inbound transactions
-- get wadl for a rest service.
-- oracle
-- isg initialize
 - invoke a rest method on a service.
+- edi
+- trading partner management.
 - edi import inbound transaction
-- edi get code conversions
-- get trading partner by id.
-- e-business suite
-- isg invoke rest method
-- authentication.
-- isg logout
+- edi get outbound transactions
 - extract an outbound edi transaction.
+- get wadl for a rest service.
+- e-business suite
+- inbound edi transactions.
+- edi extract outbound transaction
+- edi get inbound transactions
+- enterprise
 - isg login
+- list trading partners.
+- retrieve outbound edi transactions.
+- business applications
+- get inbound transactions
+- get outbound transactions
+- isg logout
+- edi get trading partner by id
+- import an inbound edi transaction.
 - retrieve inbound edi transactions.
+- authenticate.
+- erp
+- outbound edi transactions.
+- end the current session.
+- retrieve trading partners.
+- edi get trading partners
+- oracle
+- authentication.
+- list inbound transactions.
+- login
+- integration
+- list outbound transactions.
+- authenticate and obtain session token.
+- soa gateway
+- isg get service wadl
+- initialize responsibility context.
+- isg invoke rest method
+- retrieve code conversion mappings.
+- get trading partner by id.
+- edi get code conversions
+- isg initialize
+- get trading partners
 slug: integration-and-edi
 source_filename: integration-and-edi.yaml
 source_heading: Capability Spec

@@ -42,62 +42,62 @@ personas: []
 provider_name: Amazon Directory Service
 provider_slug: amazon-directory-service
 search_terms:
-- directory snapshots for backup and restore
-- list certificates
-- restore from snapshot
-- share a directory with another aws account for multi-account access
-- list directory snapshots
-- identity engineer provisioning and managing active directory in aws
-- authentication
-- hybrid cloud
-- describe domain controllers
-- create a trust relationship
-- list trust relationships established for aws managed microsoft ad directories
-- list domain controllers provisioned for an aws managed microsoft ad directory
-- cloud architect designing hybrid identity solutions with aws directory service
-- restore a directory to a previous state using a snapshot
-- list certificates registered for ldaps or client certificate authentication
-- create a simple ad directory powered by samba 4
-- identity management
-- list registered certificates
-- list manual snapshots of a directory for backup and restore purposes
-- create snapshot
-- trust relationships between directories
-- create trust
-- list directories shared from your account or shared with your account
-- delete an aws directory service directory
-- create microsoft ad
-- certificate management, ldaps, and audit logging
-- get the directory service limits for the current aws account and region
-- delete directory
-- create a trust relationship between aws managed microsoft ad and an on-premises directory
-- trust relationships and shared directory access across accounts
-- directory services
-- create a manual directory snapshot
-- Identity Engineer
-- managed active directory instances
-- active directory
 - describe trusts
-- get directory limits
-- create an aws managed microsoft active directory in the aws cloud
-- end-to-end active directory lifecycle management using amazon directory service
-- describe snapshots
-- Cloud Architect
-- list all aws managed microsoft ad and simple ad directories in the account
-- list shared directories
-- create a manual snapshot of a directory for backup
-- certificates for directory authentication
-- share directory
-- list trust relationships
-- amazon directory service
-- create an aws managed microsoft ad directory
-- describe shared directories
-- provisioning and managing microsoft ad and simple ad directories
 - list all managed directories
-- describe directories
+- trust relationships between directories
+- directory snapshots for backup and restore
+- authentication
+- describe snapshots
+- create a trust relationship between aws managed microsoft ad and an on-premises directory
+- active directory
+- create an aws managed microsoft active directory in the aws cloud
+- create a manual snapshot of a directory for backup
+- get the directory service limits for the current aws account and region
+- hybrid cloud
+- create an aws managed microsoft ad directory
 - directories shared with other aws accounts
+- list shared directories
+- list certificates registered for ldaps or client certificate authentication
+- create microsoft ad
+- describe directories
+- directory services
+- restore a directory to a previous state using a snapshot
+- trust relationships and shared directory access across accounts
 - aws
+- list manual snapshots of a directory for backup and restore purposes
+- create trust
+- delete an aws directory service directory
+- Identity Engineer
+- create a simple ad directory powered by samba 4
+- Cloud Architect
+- certificates for directory authentication
+- delete directory
+- provisioning and managing microsoft ad and simple ad directories
+- create a manual directory snapshot
+- describe shared directories
+- get directory limits
+- certificate management, ldaps, and audit logging
 - create directory
+- list trust relationships established for aws managed microsoft ad directories
+- amazon directory service
+- list registered certificates
+- identity management
+- managed active directory instances
+- create a trust relationship
+- list directory snapshots
+- share a directory with another aws account for multi-account access
+- cloud architect designing hybrid identity solutions with aws directory service
+- list domain controllers provisioned for an aws managed microsoft ad directory
+- describe domain controllers
+- create snapshot
+- list directories shared from your account or shared with your account
+- end-to-end active directory lifecycle management using amazon directory service
+- share directory
+- list all aws managed microsoft ad and simple ad directories in the account
+- list certificates
+- list trust relationships
+- restore from snapshot
+- identity engineer provisioning and managing active directory in aws
 slug: active-directory-management
 source_filename: active-directory-management.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
-- a capability layered on top of the data api showing typed outputparameters + tags-on-consumes (data sensitivity, billing granularity) as the -customer-facing pattern.
 - example
+- api integration
+- naftiko
+- a capability layered on top of the data api showing typed outputparameters + tags-on-consumes (data sensitivity, billing granularity) as the -customer-facing pattern.
 - governance
+- mcp
+- capabilities
+- ai
 slug: data-api-capability
 source_filename: data-api-capability.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
 - composable capability collection that wraps a representative client api as a "digital product," with multiple `consumes` operations stitched into one externally-shaped capability and governance tags carrying provenance.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: api-as-digital-product-collection
 source_filename: api-as-digital-product-collection.yaml
 source_heading: Capability Spec

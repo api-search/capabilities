@@ -24,30 +24,30 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get environmental impact score
-- get impact score
-- environmental cause donations
-- calculate carbon footprint from transactions
-- carbon footprint calculations
-- esg
-- environmental impact scoring
-- digital identity
-- carbon footprint
-- calculate the carbon footprint of payment transactions
-- sustainability
-- create a donation to environmental causes
-- mastercard
-- credit cards
-- create environmental donation
-- fraud detection
-- calculate carbon footprint
-- environmental impact
 - financial services
-- open banking
-- create a donation to support environmental causes
+- get environmental impact score
+- calculate carbon footprint from transactions
+- credit cards
+- fraud detection
+- environmental impact scoring
 - get the environmental impact score for a transaction using the aland index
-- donate to environment
+- create a donation to environmental causes
+- create a donation to support environmental causes
+- carbon footprint
+- get impact score
+- sustainability
 - payments
+- environmental cause donations
+- mastercard
+- create environmental donation
+- esg
+- carbon footprint calculations
+- calculate the carbon footprint of payment transactions
+- calculate carbon footprint
+- donate to environment
+- environmental impact
+- digital identity
+- open banking
 slug: sustainability
 source_filename: sustainability.yaml
 source_heading: Capability Spec

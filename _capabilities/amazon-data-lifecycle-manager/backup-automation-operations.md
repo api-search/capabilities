@@ -10,11 +10,11 @@ provider_name: Amazon Data Lifecycle Manager
 provider_slug: amazon-data-lifecycle-manager
 search_terms:
 - storage
+- ebs snapshots
 - lifecycle management
 - compliance
-- automation
-- ebs snapshots
 - backup
+- automation
 slug: backup-automation-operations
 source_filename: backup-automation-operations.yaml
 source_heading: Capability Spec

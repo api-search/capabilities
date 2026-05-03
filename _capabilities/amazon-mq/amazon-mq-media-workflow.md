@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MQ
 provider_slug: amazon-mq
 search_terms:
-- media
-- create configuration
-- list configurations
-- createtags
 - createbroker
-- describeuser
-- listconfigurations
-- create broker
-- create user
-- Media Developer
+- list tags
 - Broadcast Engineer
 - createuser
-- media processing
 - broadcasting
-- listtags
-- listbrokers
-- aws media processing and delivery
-- create tags
-- amazon mq media processing workflow
-- list tags
-- manage media processing jobs
-- describe user
-- workflow
-- engineer managing broadcast media workflows
-- createconfiguration
 - list jobs
-- list brokers
+- Media Developer
+- workflow
+- manage media processing jobs
+- list configurations
+- create broker
+- createconfiguration
 - developer building media processing applications
 - aws
+- create user
+- engineer managing broadcast media workflows
+- list brokers
+- create tags
+- media
+- listtags
+- aws media processing and delivery
+- describeuser
+- listbrokers
+- amazon mq media processing workflow
+- describe user
+- createtags
+- create configuration
+- media processing
+- listconfigurations
 slug: amazon-mq-media-workflow
 source_filename: amazon-mq-media-workflow.yaml
 source_heading: Capability Spec

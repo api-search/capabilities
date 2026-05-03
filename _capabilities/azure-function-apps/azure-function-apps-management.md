@@ -22,25 +22,25 @@ personas: []
 provider_name: Azure Function Apps
 provider_slug: azure-function-apps
 search_terms:
-- list configurations
-- list deployments
-- list functions
-- management
-- serverless
-- azure
-- azure resource management
-- list deployment resources
-- list
-- list all resources
-- resource management
-- cloud
-- list function resources
-- list functionapp resources
 - compute
-- list configuration resources
 - list function apps
-- functions
+- list functionapp resources
+- list configurations
+- list all resources
+- cloud
 - faas
+- list deployment resources
+- list function resources
+- list functions
+- azure
+- serverless
+- management
+- resource management
+- functions
+- list deployments
+- list
+- azure resource management
+- list configuration resources
 slug: azure-function-apps-management
 source_filename: azure-function-apps-management.yaml
 source_heading: Capability Spec

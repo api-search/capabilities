@@ -33,40 +33,40 @@ personas: []
 provider_name: Apache EventMesh
 provider_slug: apache-event-mesh
 search_terms:
-- publish cloud event
-- event-driven
-- topic management and event publishing via cloudevents
-- publish events
-- publish a cloudevent to an eventmesh topic
-- serverless
-- Developer
-- messaging
 - create topic
-- open source
-- create subscription
-- cloudevents
-- publish event
-- subscribe a consumer to an eventmesh topic
-- subscribe to eventmesh topics
-- Platform Engineer
-- list all eventmesh topics
-- subscribe to topic
-- manage event subscriptions
-- list eventmesh topics
-- manage eventmesh topics
-- apache eventmesh
-- pub-sub
-- create a new eventmesh topic
-- application developers building event-driven services on eventmesh
-- create eventmesh topic
-- platform engineering
-- list all topics registered in eventmesh
-- publish a cloudevent
-- apache
-- pub-sub, request-reply, and broadcast messaging patterns
-- list topics
-- engineers managing the eventmesh cluster and messaging infrastructure
 - manage topics, subscriptions, and publish cloudevents
+- subscribe to topic
+- list all topics registered in eventmesh
+- Platform Engineer
+- publish events
+- messaging
+- open source
+- apache
+- topic management and event publishing via cloudevents
+- platform engineering
+- publish cloud event
+- manage eventmesh topics
+- publish a cloudevent to an eventmesh topic
+- application developers building event-driven services on eventmesh
+- create a new eventmesh topic
+- publish event
+- Developer
+- pub-sub, request-reply, and broadcast messaging patterns
+- apache eventmesh
+- cloudevents
+- list all eventmesh topics
+- event-driven
+- serverless
+- list topics
+- subscribe to eventmesh topics
+- pub-sub
+- manage event subscriptions
+- create eventmesh topic
+- engineers managing the eventmesh cluster and messaging infrastructure
+- publish a cloudevent
+- create subscription
+- subscribe a consumer to an eventmesh topic
+- list eventmesh topics
 slug: eventmesh-event-streaming
 source_filename: eventmesh-event-streaming.yaml
 source_heading: Capability Spec

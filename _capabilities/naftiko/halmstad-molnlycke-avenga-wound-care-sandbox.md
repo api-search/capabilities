@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
 - a self-contained runnable sandbox that mocks a mölnlycke wound-care device data source and exposes openehr + fhir via the avenga-introduction-ready capability.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: halmstad-molnlycke-avenga-wound-care-sandbox
 source_filename: halmstad-molnlycke-avenga-wound-care-sandbox.yaml
 source_heading: Capability Spec

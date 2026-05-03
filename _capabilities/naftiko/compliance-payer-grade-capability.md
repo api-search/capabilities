@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- a capability activating compliance frameworks (nist/soc2/gdpr, hipaa-adjacent) + rbac + audit trails + continuous compliance.
+- api integration
+- naftiko
 - governance
+- mcp
+- a capability activating compliance frameworks (nist/soc2/gdpr, hipaa-adjacent) + rbac + audit trails + continuous compliance.
+- capabilities
+- ai
 slug: compliance-payer-grade-capability
 source_filename: compliance-payer-grade-capability.yaml
 source_heading: Capability Spec

@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a unified checkout session supporting multiple payment methods
-- process a payment through the gateway
-- merchant
-- generate a merchant qr code for payment
-- process payment
-- create unified session
-- checkout
-- create installment plan
-- buy-now-pay-later installment plans
-- create checkout session
-- register a contactless reader device
-- e-commerce
-- register contactless reader
-- generate qr code
-- process a cloud commerce transaction
-- create a new checkout session
-- create a buy-now-pay-later installment plan
-- digital identity
-- checkout session management
-- qr code payment acceptance
-- get payment
-- payment processing
 - create a unified checkout session
-- mastercard
+- financial services
+- get payment
+- buy-now-pay-later installment plans
+- unified checkout sessions
 - credit cards
 - fraud detection
-- financial services
-- unified checkout sessions
-- create an installment plan
 - generate a merchant-presented qr code for payment
-- create a new checkout session for a merchant
-- retrieve payment transaction details
-- process a payment through the mastercard gateway
 - get payment details
-- process cloud transaction
-- open banking
+- payment processing
+- generate qr code
+- e-commerce
+- retrieve payment transaction details
 - payments
+- checkout
+- merchant
+- mastercard
+- create a new checkout session for a merchant
+- process a payment through the gateway
+- process cloud transaction
+- process a payment through the mastercard gateway
+- create installment plan
+- create unified session
+- checkout session management
+- qr code payment acceptance
+- create an installment plan
+- register a contactless reader device
+- create checkout session
+- create a new checkout session
+- generate a merchant qr code for payment
+- process payment
+- create a buy-now-pay-later installment plan
+- register contactless reader
+- create a unified checkout session supporting multiple payment methods
+- process a cloud commerce transaction
+- digital identity
+- open banking
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

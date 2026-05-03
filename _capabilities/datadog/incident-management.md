@@ -57,65 +57,65 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- mute a monitor
-- search events
-- get monitor status
-- get a monitor
-- unmute a monitor after incident resolution
-- visualizations
-- analytics
-- list monitors
-- updateIncident
-- unmute monitor
-- list events for correlation
-- update an existing incident
-- monitors
-- update incident
-- list events
-- list incident teams
-- mute a monitor during incident response
-- post an event during incident
-- post an event
-- create event
-- dashboards
-- monitoring
-- list incidents
-- createIncident
-- platform
-- individual monitor
 - delete an incident
-- datadog
-- get incident
-- create a new incident
-- listIncidents
-- createEvent
-- delete incident
-- listMonitors
-- searchEvents
-- getMonitor
-- create incident
 - listEvents
-- get a specific event
-- muteMonitor
-- get an incident
-- event correlation
-- getIncident
-- incident management
-- create an incident
-- get event
-- mute monitor during incident
-- individual incident operations
+- dashboards
+- update an existing incident
 - search events related to incident
-- mute monitor
 - list monitors to check alert status
-- monitor status
+- post an event
+- searchEvents
+- list events for correlation
+- post an event during incident
+- listMonitors
 - events
-- get monitor
-- deleteIncident
-- update an incident
-- get incident details
-- t1
+- muteMonitor
+- list incident teams
+- createIncident
+- get a specific event
+- create a new incident
+- platform
 - incidents
+- get monitor status
+- get an incident
+- monitors
+- mute monitor
+- unmute monitor
+- getIncident
+- delete incident
+- list monitors
+- list events
+- listIncidents
+- monitoring
+- individual incident operations
+- update an incident
+- list incidents
+- create incident
+- mute a monitor during incident response
+- createEvent
+- updateIncident
+- update incident
+- deleteIncident
+- analytics
+- t1
+- datadog
+- visualizations
+- mute a monitor
+- monitor status
+- get incident details
+- get incident
+- unmute a monitor after incident resolution
+- search events
+- create event
+- event correlation
+- getMonitor
+- get a monitor
+- get monitor
+- get event
+- individual monitor
+- incident management
+- mute monitor during incident
+- create an incident
 slug: incident-management
 source_filename: incident-management.yaml
 source_heading: Capability Spec

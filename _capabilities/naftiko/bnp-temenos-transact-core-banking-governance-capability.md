@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - a capability over temenos transact (the core banking system) with full governance ruleset + argocd gitops reconciliation, framed for bnp's regulatory-compliance language.
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: bnp-temenos-transact-core-banking-governance-capability
 source_filename: bnp-temenos-transact-core-banking-governance-capability.yaml
 source_heading: Capability Spec

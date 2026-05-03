@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
+- naftiko
 - 'a capability that exposes "code mode" rightsizing pattern as a naftiko mcp tool: feed it a base openapi + a target task, get back the right-sized agent context.'
+- governance
+- mcp
+- capabilities
+- ai
 slug: code-mode-context-window-capability
 source_filename: code-mode-context-window-capability.yaml
 source_heading: Capability Spec

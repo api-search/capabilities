@@ -21,27 +21,27 @@ personas: []
 provider_name: Azure Synapse Analytics
 provider_slug: azure-synapse
 search_terms:
-- list pipeline resources
-- analytics
-- list workspaces
-- list bigdatapool resources
-- list sql pools
-- management
-- list pipelines
-- apache spark
-- azure
-- azure resource management
-- big data
 - list big data pools
-- list
-- list all resources
-- list sqlpool resources
-- resource management
-- cloud
-- data warehouse
-- etl
 - list workspace resources
+- list bigdatapool resources
+- list all resources
+- etl
+- cloud
+- list pipelines
+- big data
+- azure
 - sql
+- analytics
+- management
+- list workspaces
+- resource management
+- list sqlpool resources
+- list
+- list sql pools
+- data warehouse
+- list pipeline resources
+- azure resource management
+- apache spark
 slug: azure-synapse-management
 source_filename: azure-synapse-management.yaml
 source_heading: Capability Spec

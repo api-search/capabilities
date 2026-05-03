@@ -58,64 +58,64 @@ provider_name: BetterCloud
 provider_slug: bettercloud
 search_terms:
 - deprovision a user
-- suspend a departing or at-risk user across all saas apps
-- trigger a workflow for a set of users (e.g., offboarding)
+- saas management
+- create group
+- update user attributes like department or title
+- fully deprovision a user removing all saas application access
+- list all automation workflows
+- list all groups
 - compliance
-- list all connected saas application integrations
-- run a workflow
-- automation workflow management
-- it operations
-- create a group
+- list users across all connected saas applications
 - add group member
+- trigger a workflow for a set of users (e.g., offboarding)
+- onboarding, management, and offboarding of users across saas
+- automation
+- it operations
+- user discovery and management
+- individual user operations
+- update user attributes
+- enterprise
+- add a user to a group
+- deprovision user
 - it admin managing saas access and user lifecycle
+- list integrations
+- security
+- onboarding
 - it administrator
+- security engineer
+- list all workflows
+- audit event log
+- suspend user
 - get user details
 - list events
-- enterprise
-- run workflow
-- list audit events
-- individual user operations
-- add a user to a group
-- list groups
-- trigger workflow execution
-- fully deprovision a user removing all saas application access
-- onboarding
-- get user
-- workflow automation for it operations
-- audit trails and policy enforcement
-- security team member managing compliance and access policies
-- create group
-- security engineer
-- list integrations
-- saas management
-- audit event log
-- onboarding, management, and offboarding of users across saas
-- group management
-- list all workflows
-- list users across all connected saas applications
-- workflows
-- list all automation workflows
-- automation
-- suspend user
-- list all groups from connected directory services
-- deprovision user
-- saas application connectivity
-- bettercloud
 - offboarding
-- update user
 - list all users
-- user lifecycle
-- list workflows
-- get full details for a specific user including saas access
+- group management
 - list audit events for compliance investigation
-- user onboarding and offboarding across saas applications
+- security team member managing compliance and access policies
+- audit trails and policy enforcement
 - suspend a user
-- security
-- list all groups
-- user discovery and management
-- update user attributes
+- suspend a departing or at-risk user across all saas apps
+- create a group
+- list workflows
+- automation workflow management
+- get full details for a specific user including saas access
 - list users
-- update user attributes like department or title
+- list groups
+- list all groups from connected directory services
+- bettercloud
+- get user
+- trigger workflow execution
+- run workflow
+- run a workflow
+- update user
+- user onboarding and offboarding across saas applications
+- list all connected saas application integrations
+- saas application connectivity
+- workflows
+- user lifecycle
+- workflow automation for it operations
+- list audit events
 slug: saas-lifecycle-management
 source_filename: saas-lifecycle-management.yaml
 source_heading: Capability Spec

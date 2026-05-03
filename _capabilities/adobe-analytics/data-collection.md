@@ -36,41 +36,41 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- list report suites
-- dimension discovery for event mapping.
-- list report suites to identify collection targets.
-- batch event upload.
-- analytics
-- adobe
 - list dimensions
-- server side
-- adobe analytics
-- upload a gzip-compressed csv file of batched analytics event data.
-- report suite discovery for data collection targeting.
-- list metrics to validate event data mapping.
-- bulk data insertion
-- customer intelligence
-- digital marketing
-- marketing
-- validate a batch events file without ingesting data.
-- get details for a report suite to verify collection configuration.
-- metric discovery for event mapping.
-- web analytics
 - data collection
 - list report suites to identify data collection targets.
-- get report suite details.
-- validate event files.
-- upload a batch events file.
+- metric discovery for event mapping.
 - events
-- list available dimensions to validate event data mapping.
 - list metrics
-- business intelligence
+- get details for a report suite to verify collection configuration.
 - validate events
+- list available dimensions to validate event data mapping.
+- validate event files.
+- web analytics
+- upload a gzip-compressed csv file of batched analytics event data.
+- digital marketing
+- report suite discovery for data collection targeting.
+- adobe
 - upload events
+- dimension discovery for event mapping.
 - get report suite
-- validate a batch events file without ingesting.
-- report suite details.
+- marketing
 - list available metrics to validate event data mapping.
+- analytics
+- list metrics to validate event data mapping.
+- report suite details.
+- server side
+- validate a batch events file without ingesting data.
+- validate a batch events file without ingesting.
+- list report suites
+- customer intelligence
+- upload a batch events file.
+- adobe analytics
+- bulk data insertion
+- business intelligence
+- get report suite details.
+- batch event upload.
+- list report suites to identify collection targets.
 - list dimensions to validate event data mapping.
 slug: data-collection
 source_filename: data-collection.yaml

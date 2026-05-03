@@ -9,13 +9,13 @@ personas: []
 provider_name: Barclays
 provider_slug: barclays
 search_terms:
+- payments
 - uk banking
-- finance
 - banking
+- psd2
 - credit cards
 - open banking
-- payments
-- psd2
+- finance
 slug: open-banking
 source_filename: open-banking.yaml
 source_heading: Capability Spec

@@ -54,50 +54,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- manage compute instances
-- list shapes
-- get details of a specific instance
-- get image details
-- launch a new compute instance
-- enterprise
-- get details of a specific image
+- create a custom image from an instance
 - infrastructure
-- database
-- delete a custom image
-- get image
+- list available compute shapes
+- compute
 - create image
-- perform an action on an instance (start, stop, reset)
-- update image
-- delete image
-- terminate an instance
-- list compute instances in a compartment
-- instance action
-- list vnic attachments in a compartment
 - manage compute images
-- list images
+- list vnic attachments in a compartment
+- saas
 - list volume attachments in a compartment
 - update instance
-- get instance
-- cloud
-- get instance details
-- update instance details
-- saas
-- list console connections
-- oracle
-- list instance console connections
-- manage a specific image
-- update image details
-- list volume attachments
-- compute
-- manage a specific compute instance
-- list vnic attachments
-- create a custom image from an instance
-- list instances
-- terminate instance
+- instance action
+- list images
+- delete image
 - list compute images
-- list available compute shapes
-- create a custom image
+- get image
+- enterprise
+- get instance details
+- manage a specific compute instance
+- cloud
+- list shapes
+- get image details
 - launch instance
+- update instance details
+- manage a specific image
+- terminate instance
+- launch a new compute instance
+- update image
+- get instance
+- get details of a specific image
+- list vnic attachments
+- oracle
+- create a custom image
+- update image details
+- list instance console connections
+- list console connections
+- database
+- list compute instances in a compartment
+- manage compute instances
+- terminate an instance
+- get details of a specific instance
+- list volume attachments
+- list instances
+- perform an action on an instance (start, stop, reset)
+- delete a custom image
 slug: cloud-compute
 source_filename: cloud-compute.yaml
 source_heading: Capability Spec

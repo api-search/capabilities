@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- spec-driven integration
-- capabilities
-- naftiko
-- mcp
+- a capability over a hugging face inference endpoint with pii detection + agent-safety tags + datadog metrics — the ml-output-shaping podcast topic.
 - example op
 - example
-- a capability over a hugging face inference endpoint with pii detection + agent-safety tags + datadog metrics — the ml-output-shaping podcast topic.
+- api integration
+- spec-driven integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: hugging-face-model-inference-governed-capability
 source_filename: hugging-face-model-inference-governed-capability.yaml
 source_heading: Capability Spec

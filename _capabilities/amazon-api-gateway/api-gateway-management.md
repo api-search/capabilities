@@ -22,25 +22,25 @@ personas: []
 provider_name: Amazon API Gateway
 provider_slug: amazon-api-gateway
 search_terms:
-- http api
-- list rest apis
-- developer creating and managing rest apis on amazon api gateway.
-- amazon
-- serverless
-- api management
+- websocket
 - list rest apis.
 - Platform Engineer
-- create a new rest api in amazon api gateway.
-- websocket
-- API Developer
-- rest api
+- list rest apis
 - api gateway
-- engineer managing api infrastructure and deployments across environments.
-- gateway
-- list all rest apis configured in amazon api gateway.
-- create rest api
+- http api
 - aws
 - manage api gateway rest apis, resources, stages, and deployments.
+- serverless
+- api management
+- rest api
+- list all rest apis configured in amazon api gateway.
+- create a new rest api in amazon api gateway.
+- amazon
+- developer creating and managing rest apis on amazon api gateway.
+- engineer managing api infrastructure and deployments across environments.
+- gateway
+- create rest api
+- API Developer
 slug: api-gateway-management
 source_filename: api-gateway-management.yaml
 source_heading: Capability Spec

@@ -10,11 +10,11 @@ provider_name: Alloy Automation
 provider_slug: alloy-automation
 search_terms:
 - unified api
-- integrations
 - ipaas
 - embedded integrations
 - workflows
 - automation
+- integrations
 slug: integration-platform
 source_filename: integration-platform.yaml
 source_heading: Capability Spec

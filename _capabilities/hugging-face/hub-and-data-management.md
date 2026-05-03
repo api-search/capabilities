@@ -47,76 +47,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- list spaces
-- create repo
-- data management
-- list and search models
-- list and search datasets on the hub.
-- get the list of splits for a dataset.
-- list all available dataset tags grouped by type.
-- get rows from a dataset split with pagination.
-- list all available model tags grouped by type.
-- get model details
-- manage datasets on the hub
-- get model information at a specific revision or branch.
-- get model revision
-- whoami
-- get detailed information about a specific model.
-- get information about the authenticated user.
-- check dataset validity
-- get model information
-- delete repo
-- update settings for a repository.
-- preview dataset rows
-- get dataset details
-- get dataset parquet
-- list and search ml models on the hugging face hub.
-- filter dataset
-- check if a dataset is valid and available on the hub.
-- get dataset splits
-- get dataset information
-- get the first rows of a dataset split for preview.
-- list and search spaces on the hub.
-- hugging face
-- get detailed information about a specific space.
-- get parquet file urls for a dataset.
-- get dataset rows
-- manage spaces on the hub
-- list datasets
-- update repo settings
-- get size information for a dataset.
-- get authenticated user info
-- datasets
-- search rows
-- models
+- search dataset
 - create a new repository
-- create a new model, dataset, or space repository on the hub.
-- list and search spaces
-- hub
-- get rows
+- get the first rows of a dataset split for preview.
+- manage datasets on the hub
+- data management
 - list and search datasets
-- search rows in a dataset
+- get model information at a specific revision or branch.
+- check dataset validity
+- list and search models
+- search dataset rows
+- list and search spaces on the hub.
+- get dataset
+- list all available model tags grouped by type.
+- list dataset tags
+- get dataset details
+- list all available dataset tags grouped by type.
+- preview dataset rows
+- whoami
 - user information
-- delete a repository from the hub.
+- get information about the authenticated user.
+- get rows
 - get statistical information about a dataset split.
+- filter dataset
 - get space
 - create repositories
-- get rows from a dataset
-- list model tags
-- get dataset size
-- list dataset tags
-- get detailed information about a specific dataset.
+- hugging face
+- manage spaces on the hub
+- delete a repository from the hub.
+- get dataset parquet
 - filter dataset rows using a condition.
-- get dataset statistics
-- manage models on the hub
-- search dataset rows
-- get croissant metadata for a dataset.
-- search dataset
-- list models
-- get croissant metadata
 - get model
+- get detailed information about a specific space.
+- get dataset information
+- get detailed information about a specific dataset.
+- list model tags
+- get model details
+- get dataset size
+- list and search ml models on the hugging face hub.
+- get model revision
+- get size information for a dataset.
+- list spaces
+- get dataset statistics
+- get rows from a dataset
+- list and search spaces
+- get dataset rows
+- create a new model, dataset, or space repository on the hub.
+- datasets
+- search rows
+- get croissant metadata for a dataset.
+- models
+- search rows in a dataset
+- get dataset splits
+- hub
+- get parquet file urls for a dataset.
+- get rows from a dataset split with pagination.
+- list models
+- list and search datasets on the hub.
+- list datasets
+- delete repo
+- manage models on the hub
+- get detailed information about a specific model.
+- get the list of splits for a dataset.
+- get model information
+- create repo
+- update repo settings
+- check if a dataset is valid and available on the hub.
+- get croissant metadata
+- get authenticated user info
+- update settings for a repository.
 - search for rows matching a query in a dataset.
-- get dataset
 slug: hub-and-data-management
 source_filename: hub-and-data-management.yaml
 source_heading: Capability Spec

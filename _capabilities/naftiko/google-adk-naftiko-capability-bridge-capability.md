@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
 - a capability that bridges google's agent development kit (adk) into naftiko capability layer so adk-built agents call governed capabilities through the same mcp surface as microsoft-built agents.
+- naftiko
+- governance
+- mcp
+- capabilities
+- ai
 slug: google-adk-naftiko-capability-bridge-capability
 source_filename: google-adk-naftiko-capability-bridge-capability.yaml
 source_heading: Capability Spec

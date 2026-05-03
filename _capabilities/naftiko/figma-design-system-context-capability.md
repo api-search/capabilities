@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- a capability that consumes figma design system (files, components, tokens) and exposes the design-system context as rest + mcp tools so ai-assisted ui work in copilot/claude grounds against the actual brand library instead of hallucinating component names.
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- a capability that consumes figma design system (files, components, tokens) and exposes the design-system context as rest + mcp tools so ai-assisted ui work in copilot/claude grounds against the actual brand library instead of hallucinating component names.
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: figma-design-system-context-capability
 source_filename: figma-design-system-context-capability.yaml
 source_heading: Capability Spec

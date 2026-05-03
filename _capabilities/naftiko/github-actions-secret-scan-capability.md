@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
 - governance
 - a capability that consumes github-scan webhook + github actions api and exposes a single mcp tool returning shaped per-repo secret findings + remediation suggestions for an ai security assistant.
+- mcp
+- capabilities
+- ai
 slug: github-actions-secret-scan-capability
 source_filename: github-actions-secret-scan-capability.yaml
 source_heading: Capability Spec

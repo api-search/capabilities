@@ -11,8 +11,8 @@ provider_slug: amazon-healthimaging
 search_terms:
 - healthcare
 - hipaa
-- machine learning
 - medical imaging
+- machine learning
 - dicom
 slug: amazon-healthimaging-medical-imaging-operations
 source_filename: amazon-healthimaging-medical-imaging-operations.yaml

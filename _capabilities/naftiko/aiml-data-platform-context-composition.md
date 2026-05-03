@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
+- naftiko
 - a -global-tech-shaped capability across ai/ml + data platform apis implementing compose ai context.
+- governance
+- mcp
+- capabilities
+- ai
 slug: aiml-data-platform-context-composition
 source_filename: aiml-data-platform-context-composition.yaml
 source_heading: Capability Spec

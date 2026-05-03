@@ -54,57 +54,57 @@ personas: []
 provider_name: Amazon Pinpoint
 provider_slug: amazon-pinpoint
 search_terms:
-- list audience segments for targeting campaigns and journeys
-- create a new pinpoint application
-- campaigns
-- create a new pinpoint application for customer engagement
-- create journey
-- analytics
-- journeys
-- send messages
 - multi-channel customer engagement workflow
-- Growth Engineer
-- pinpoint application management
-- manages campaigns, segments, and journeys
-- amazon
-- voice
-- push notifications
-- messaging
-- create a new marketing campaign
-- list automated customer journey workflows
-- list campaigns
-- email
-- sms
-- list segments
 - communications
-- marketing campaign management
-- create segment
-- customer engagement
-- audience segment management
-- marketing
-- Marketing Manager
-- create a new customer journey
+- sms
 - list campaigns for an application
-- create a new multi-channel marketing campaign
-- list customer journeys
-- list marketing campaigns for a pinpoint application
-- list all pinpoint applications
-- list apps
-- send transactional messages (confirmations, alerts, notifications) to customer endpoints
-- create a multi-step automated customer engagement journey
-- integrates messaging apis and manages endpoints
-- segmentation
-- create audience segment
-- list audience segments
 - customer journey workflow management
-- create a new audience segment
-- send transactional messages to customer endpoints
-- create campaign
-- send transactional messages
-- create app
-- list journeys
-- aws
+- list apps
+- create a new marketing campaign
+- create segment
 - create a new customer audience segment based on attributes or imported data
+- campaigns
+- create journey
+- messaging
+- customer engagement
+- list automated customer journey workflows
+- push notifications
+- list marketing campaigns for a pinpoint application
+- list segments
+- list all pinpoint applications
+- audience segment management
+- send transactional messages to customer endpoints
+- send transactional messages (confirmations, alerts, notifications) to customer endpoints
+- create a new customer journey
+- create a new pinpoint application
+- aws
+- integrates messaging apis and manages endpoints
+- email
+- create a new multi-channel marketing campaign
+- send transactional messages
+- marketing
+- marketing campaign management
+- create campaign
+- analytics
+- pinpoint application management
+- journeys
+- voice
+- create app
+- create a new audience segment
+- create a multi-step automated customer engagement journey
+- Growth Engineer
+- amazon
+- send messages
+- list audience segments for targeting campaigns and journeys
+- list customer journeys
+- create audience segment
+- create a new pinpoint application for customer engagement
+- Marketing Manager
+- segmentation
+- list audience segments
+- list campaigns
+- list journeys
+- manages campaigns, segments, and journeys
 slug: customer-engagement
 source_filename: customer-engagement.yaml
 source_heading: Capability Spec

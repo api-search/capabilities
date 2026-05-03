@@ -42,38 +42,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- get profile information about the authenticated user.
+- revoke an oauth access or refresh token.
 - tokens
 - oauth 2.0 authorization code flow initiation.
-- oauth
 - authentication
-- gitlab
-- exchange token
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- oauth token exchange and creation.
 - identity
-- authorize oauth
+- source control
+- token revocation.
+- exchange token
+- revoke an existing oauth access or refresh token.
+- platform
+- initiate the device authorization grant flow.
+- get information about the current access token.
+- code
+- revoke token
+- get profile information about the currently authenticated user.
 - device authorization grant flow for input-constrained devices.
+- initiate the device authorization grant flow for input-constrained devices.
+- initiate the oauth 2.0 authorization code flow.
+- authenticated user profile information.
+- get token info
+- gitlab
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- authorize device
+- token introspection and validation.
 - get user info
+- get information about the current oauth access token including scopes and expiration.
+- oauth
+- get profile information about the authenticated user.
 - exchange an authorization code, device code, or refresh token for an access token.
 - software development
-- platform
-- get profile information about the currently authenticated user.
-- token introspection and validation.
-- initiate the device authorization grant flow for input-constrained devices.
-- revoke token
-- source control
-- revoke an existing oauth access or refresh token.
-- get token info
-- authorize device
-- authenticated user profile information.
-- oauth token exchange and creation.
-- get information about the current oauth access token including scopes and expiration.
-- code
-- initiate the oauth 2.0 authorization code flow.
-- initiate the device authorization grant flow.
-- token revocation.
-- revoke an oauth access or refresh token.
-- get information about the current access token.
+- authorize oauth
 slug: authentication-and-identity
 source_filename: authentication-and-identity.yaml
 source_heading: Capability Spec

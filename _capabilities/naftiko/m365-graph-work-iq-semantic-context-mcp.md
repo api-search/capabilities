@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- a capability over graph + work iq that returns one semantic context object joining mail, files, teams, and people for the m365 copilot agent path.
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
+- api integration
+- naftiko
+- a capability over graph + work iq that returns one semantic context object joining mail, files, teams, and people for the m365 copilot agent path.
 - governance
+- mcp
+- capabilities
+- ai
 slug: m365-graph-work-iq-semantic-context-mcp
 source_filename: m365-graph-work-iq-semantic-context-mcp.yaml
 source_heading: Capability Spec

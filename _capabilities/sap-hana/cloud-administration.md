@@ -39,53 +39,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- update instance configuration.
-- administration
-- analytics
+- instance lifecycle management.
+- get database metrics.
+- get metrics
+- update an instance.
+- delete instance
+- update instance
 - list all sap hana cloud instances.
 - provision a new instance.
-- delete instance
-- alert monitoring.
-- get metrics
-- create a new instance mapping.
-- get instance details.
-- retrieve database performance metrics.
-- list inventory
-- sap hana
-- list all instances in the inventory.
-- update an instance.
-- list instance mappings.
-- instance lifecycle management.
-- create instance
-- delete an instance mapping.
-- enterprise
-- retrieve consumption metering data.
-- get details of a specific instance.
-- database
-- list alert events.
-- list alert rules for an instance.
-- monitoring
-- list mappings
-- list alerts
-- delete an instance.
-- in-memory
-- update instance
-- get instance
-- cloud
-- performance metrics.
-- get database metrics.
-- update alert rules for an instance.
-- delete a service instance permanently.
-- individual instance operations.
-- list triggered alert events for an instance.
-- update alert rules
-- get metering
-- create mapping
-- list alert rules
-- list instances
-- delete mapping
 - provision a new sap hana cloud instance.
+- get details of a specific instance.
+- alert monitoring.
 - list all sap hana cloud service instances.
+- enterprise
+- list mappings
+- delete mapping
+- update instance configuration.
+- cloud
+- update alert rules for an instance.
+- update alert rules
+- list alert events.
+- delete an instance.
+- create a new instance mapping.
+- list alert rules for an instance.
+- list instance mappings.
+- monitoring
+- list inventory
+- list triggered alert events for an instance.
+- get instance
+- analytics
+- list alert rules
+- individual instance operations.
+- administration
+- delete a service instance permanently.
+- delete an instance mapping.
+- performance metrics.
+- in-memory
+- sap hana
+- create instance
+- database
+- create mapping
+- list alerts
+- list instances
+- get instance details.
+- get metering
+- retrieve database performance metrics.
+- retrieve consumption metering data.
+- list all instances in the inventory.
 slug: cloud-administration
 source_filename: cloud-administration.yaml
 source_heading: Capability Spec

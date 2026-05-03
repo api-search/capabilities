@@ -20,36 +20,36 @@ personas: []
 provider_name: Amadeus Solutions
 provider_slug: amadeus-solutions
 search_terms:
-- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- gds
+- Travel Chatbot Developer
+- OTA Developer
+- travel
+- flight offer discovery and comparison.
+- confirm flight price
+- developer building conversational travel assistants for flight search.
+- amadeus
+- confirm price
+- advanced flight search with complex criteria using request body for multi-city and detailed filters.
+- price confirmation and validation before booking.
+- travel technology
+- search available flights by origin, destination, and date.
+- search
+- search flights
+- complete flight shopping flow from search through price confirmation.
+- confirm current price and availability.
+- search flights advanced
 - developer building online travel agency flight search and booking flows.
 - airlines
-- travel technology
-- developer building conversational travel assistants for flight search.
-- search for available flight offers.
-- price confirmation and validation before booking.
-- shopping
-- travel
-- confirm current price and availability.
-- Travel Chatbot Developer
-- confirm flight price
-- upsell, seat selection, and add-on services.
-- confirm price
-- amadeus
-- complete flight shopping flow from search through price confirmation.
-- hotels
-- advanced flight search with complex criteria using request body for multi-city and detailed filters.
-- confirm pricing for a selected flight offer.
-- flight offer discovery and comparison.
-- search
-- confirm the current price and availability of a selected flight offer before creating a booking.
-- search flights advanced
-- booking
 - flights
-- search flights
-- search available flights by origin, destination, and date.
+- upsell, seat selection, and add-on services.
+- confirm pricing for a selected flight offer.
+- confirm the current price and availability of a selected flight offer before creating a booking.
+- search for available flight offers.
 - pricing
-- gds
-- OTA Developer
+- search for available flights between two airports on a given date, with options for cabin class and passenger count.
+- shopping
+- hotels
+- booking
 slug: flight-shopping
 source_filename: flight-shopping.yaml
 source_heading: Capability Spec

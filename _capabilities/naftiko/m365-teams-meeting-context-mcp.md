@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
-- spec-driven integration
-- capabilities
-- naftiko
 - a capability over teams meetings + chats that returns a single semantic meeting-context object (attendees, decisions, action items, linked files) as an mcp tool, the work iq pattern applied to teams specifically.
-- mcp
+- spec-driven integration
 - example op
 - example
+- api integration
+- naftiko
 - governance
+- mcp
+- capabilities
+- ai
 slug: m365-teams-meeting-context-mcp
 source_filename: m365-teams-meeting-context-mcp.yaml
 source_heading: Capability Spec

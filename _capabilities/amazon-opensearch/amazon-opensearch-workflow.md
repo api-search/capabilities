@@ -14,18 +14,18 @@ personas: []
 provider_name: Amazon OpenSearch Service API
 provider_slug: amazon-opensearch
 search_terms:
-- list openapi.yml
-- Developer
-- core api workflow
 - primary amazon opensearch service api resources
-- search
+- core api workflow
 - elasticsearch
-- analytics
 - list and manage openapi.yml resources
-- developer using amazon opensearch service api apis
+- aws
+- Developer
+- search
 - list amazon opensearch service api resources
 - amazon opensearch service api
-- aws
+- list openapi.yml
+- analytics
+- developer using amazon opensearch service api apis
 - list resources
 slug: amazon-opensearch-workflow
 source_filename: amazon-opensearch-workflow.yaml

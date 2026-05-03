@@ -11,35 +11,35 @@ personas: []
 provider_name: Amazon CodeGuru Security
 provider_slug: amazon-codeguru-security
 search_terms:
-- create scan
-- get findings
-- get details about multiple findings
 - unified workflow for security and devops teams to create security scans, retrieve findings, track vu
+- get details about a security scan
+- get scan
+- sast
+- list scans
+- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
+- get security findings from a scan
+- security engineer persona.
+- developer tools
+- list security scans
+- devsecops
+- aws
+- security
+- create scan
+- DevSecOps Engineer
+- get metrics summary
+- list findings across all scans in the account
+- get security metrics summary
+- Developer
+- get details about multiple findings
+- create a new security scan
+- Security Engineer
+- devsecops engineer persona.
 - batch get findings
 - amazon
-- security engineer persona.
-- Developer
-- devsecops
-- get security findings from a scan
-- Security Engineer
-- get scan
-- list scans
 - developer persona.
-- devsecops engineer persona.
-- aws
-- list findings across all scans in the account
-- list security scans
-- sast
-- create a new security scan
-- list findings by account
-- DevSecOps Engineer
-- unified workflow for security and devops teams to create security scans, retrieve findings, track vulnerabilities by severity, and manage remediation
-- get security metrics summary
-- security
-- get details about a security scan
-- developer tools
 - code analysis
-- get metrics summary
+- list findings by account
+- get findings
 slug: amazon-codeguru-security-security-scanning
 source_filename: amazon-codeguru-security-security-scanning.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- ai
-- api integration
 - spec-driven integration
-- capabilities
-- naftiko
-- mcp
 - example op
 - example
-- governance
+- api integration
+- naftiko
 - a capability wrapping a public developer portal endpoint (markets / onyx public data) plus fred as a backing public source, governance-tagged for banking compliance.
+- governance
+- mcp
+- capabilities
+- ai
 slug: developer-portal-public-market-data-mcp
 source_filename: developer-portal-public-market-data-mcp.yaml
 source_heading: Capability Spec
