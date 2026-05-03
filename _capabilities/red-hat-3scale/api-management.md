@@ -43,45 +43,45 @@ personas: []
 provider_name: Red Hat 3scale
 provider_slug: red-hat-3scale
 search_terms:
-- get developer account details
-- authorize an api call against 3scale usage limits
 - delete a developer account
-- developer account applications
-- developer account management
+- list applications
 - list all developer accounts registered in the 3scale developer portal
-- api gateway
-- authorize api call
+- api call authorization
+- individual developer account
+- delete developer account
 - authorize and report api usage
 - authorize and report api usage in one call
-- individual developer account
-- list account applications
-- enterprise
-- delete a developer account and all associated applications
+- developer account applications
+- authorize an api call and simultaneously report usage to 3scale
+- traffic management
+- api management
+- get developer account details
+- get developer account
+- list api applications and credentials for a developer account
 - create developer account
 - get account
-- get details of a specific developer account including subscriptions
-- api call authorization
-- create a new developer account
-- subscribe account to an application plan
-- list accounts
-- authorize an api call and simultaneously report usage to 3scale
-- list developer accounts
-- create application
-- delete developer account
-- red hat
-- subscribe a developer account to an api application plan
-- api management
 - create account
-- create a new developer account for api access
-- list applications for a developer account
-- delete account
+- api gateway
+- red hat
+- authorize an api call against 3scale usage limits
+- authorize api call
+- developer account management
+- enterprise
+- list accounts
+- list developer accounts
+- delete a developer account and all associated applications
 - authorize and report
-- get developer account
-- traffic management
-- list applications
-- list api applications and credentials for a developer account
+- get details of a specific developer account including subscriptions
+- list applications for a developer account
 - authorize an api call by checking application usage limits in 3scale
+- delete account
 - developer portal
+- subscribe a developer account to an api application plan
+- list account applications
+- subscribe account to an application plan
+- create a new developer account for api access
+- create a new developer account
+- create application
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

@@ -66,44 +66,44 @@ personas: []
 provider_name: Amazon EventBridge
 provider_slug: amazon-eventbridge
 search_terms:
-- amazon eventbridge put targets
-- RemoveTargets
-- amazon eventbridge list archives
-- amazon eventbridge delete rule
-- amazon eventbridge list rules
-- ListTargetsByRule
-- DeleteRule
-- serverless event bus for connecting applications with real-time data
-- events
-- ListRules
-- amazon web services
-- DescribeRule
-- amazon eventbridge create archive
-- CreateArchive
-- amazon eventbridge create event bus
-- ListEventBuses
 - PutRule
-- amazon eventbridge put rule
-- DeleteEventBus
 - operations teams managing amazon eventbridge infrastructure
-- CreateEventBus
-- amazon eventbridge describe event bus
-- amazon eventbridge delete event bus
-- serverless
-- event-driven
-- amazon eventbridge put events
-- amazon eventbridge list targets by rule
+- amazon eventbridge delete rule
+- CreateArchive
+- DeleteRule
 - amazon eventbridge describe rule
-- amazon eventbridge remove targets
-- integration
-- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
-- amazon eventbridge list event buses
-- DescribeEventBus
-- PutTargets
+- RemoveTargets
 - developers building applications using amazon eventbridge
-- PutEvents
-- event bus
+- serverless event bus for connecting applications with real-time data
+- amazon eventbridge delete event bus
+- CreateEventBus
+- ListEventBuses
+- amazon eventbridge put targets
+- integration
+- ListRules
+- amazon eventbridge remove targets
+- amazon eventbridge list targets by rule
+- DeleteEventBus
 - ListArchives
+- DescribeRule
+- event bus
+- amazon web services
+- events
+- amazon eventbridge describe event bus
+- PutEvents
+- amazon eventbridge list archives
+- amazon eventbridge create archive
+- DescribeEventBus
+- amazon eventbridge list event buses
+- ListTargetsByRule
+- amazon eventbridge create event bus
+- amazon eventbridge put events
+- amazon eventbridge put rule
+- event-driven
+- amazon eventbridge list rules
+- serverless
+- unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
+- PutTargets
 slug: amazon-eventbridge-capability
 source_filename: amazon-eventbridge-capability.yaml
 source_heading: Capability Spec

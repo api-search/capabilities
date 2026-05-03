@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- a capability that consumes microsoft agent 365 identity claims and signs them into existing api governance layer, producing a per-call audit record for agent calls.
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability that consumes microsoft agent 365 identity claims and signs them into existing api governance layer, producing a per-call audit record for agent calls.
 slug: microsoft-agent-365-identity-bridge
 source_filename: microsoft-agent-365-identity-bridge.yaml
 source_heading: Capability Spec

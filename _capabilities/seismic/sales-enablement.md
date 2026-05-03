@@ -41,53 +41,53 @@ personas: []
 provider_name: Seismic
 provider_slug: seismic
 search_terms:
-- list reports.
-- get user analytics
-- list generation jobs
-- track document generation jobs.
-- livedocs
-- list livedoc templates.
-- sales rep adoption analytics.
-- get a shareable url for delivering content to prospects.
-- document generation
-- get details of a specific livedoc template.
-- browse available sales content in seismic.
-- check the status of an async livedoc generation job.
-- list seismic platform users.
-- get analytics on content delivered to buyers.
-- get content url
-- list users.
-- search content
-- list available document templates.
-- list generation jobs.
-- get user analytics.
-- get sales rep adoption and usage analytics.
-- list livedoc templates
-- sales enablement
-- get required input fields for a livedoc template.
-- generate livedoc
-- generate a personalized livedoc.
-- get generation job
-- list available livedoc templates for document generation.
-- get livedoc template
-- generate personalized sales documents.
-- list crm data sources available for livedoc generation.
-- browse sales content.
-- list content items.
 - search seismic content library.
-- list reports
-- list users
-- list data sources
-- reporting
+- list users.
+- generate personalized sales documents.
 - generate a personalized sales document by merging data into a seismic livedoc template.
-- user management
-- get livedoc template inputs
-- get delivery analytics
-- seismic
-- list content items
+- sales rep adoption analytics.
+- list reports.
+- list reports
+- browse sales content.
+- get analytics on content delivered to buyers.
+- get livedoc template
+- get details of a specific livedoc template.
+- list generation jobs
+- list generation jobs.
+- analytics reports.
+- get user analytics
 - manage users.
 - list available seismic analytics reports.
-- analytics reports.
+- list seismic platform users.
+- list livedoc templates
+- list users
+- list available livedoc templates for document generation.
+- get a shareable url for delivering content to prospects.
+- user management
+- reporting
+- livedocs
+- track document generation jobs.
+- document generation
+- get delivery analytics
+- generate livedoc
+- get livedoc template inputs
+- list data sources
+- list available document templates.
+- check the status of an async livedoc generation job.
+- get generation job
+- list crm data sources available for livedoc generation.
+- list content items
+- get content url
+- list content items.
+- get required input fields for a livedoc template.
+- sales enablement
+- search content
+- seismic
+- generate a personalized livedoc.
+- list livedoc templates.
+- get sales rep adoption and usage analytics.
+- get user analytics.
+- browse available sales content in seismic.
 slug: sales-enablement
 source_filename: sales-enablement.yaml
 source_heading: Capability Spec

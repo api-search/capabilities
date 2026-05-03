@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - a capability that ingests azure devops build + release events and auto-fills backstage entity techdocs/ci annotations for the relevant service.
-- governance
-- mcp
-- capabilities
 - ai
+- mcp
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: azure-devops-pipeline-to-backstage-entity
 source_filename: azure-devops-pipeline-to-backstage-entity.yaml
 source_heading: Capability Spec

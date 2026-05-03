@@ -32,44 +32,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
+- animation
+- list hosts
+- list all render host machines
+- monitor and manage render jobs, hosts, and shows using opencue
+- film
+- render wrangler
+- standards
+- open source
 - vfx
-- get job
-- list and manage render hosts
-- list and manage render shows (productions)
-- list jobs
+- get render job
+- rendering
+- production staff responsible for monitoring and managing render farm operations
 - technical director building and maintaining vfx production pipeline tools
 - monitoring and management of distributed render farm resources and jobs
-- list render hosts
-- monitor and manage render jobs, hosts, and shows using opencue
-- list render jobs for a show
-- production staff responsible for monitoring and managing render farm operations
-- open source
-- list all active shows (productions) in the render farm
-- color management
-- get details for a specific render job
-- list and manage render jobs
-- list all render host machines
-- render wrangler
-- pipeline td
-- get or kill a specific render job
-- film
-- list shows
-- linux foundation
-- list hosts
-- get render job
-- vfx pipeline
 - list render jobs
-- animation
-- academy software foundation
-- opencue
-- rendering
-- standards
-- render farm
-- get detailed status and frame counts for a specific render job
-- list all render host machines and their current utilization
 - list all active shows in the render farm
-- visual effects
+- list jobs
+- opencue
+- list and manage render hosts
+- list all render host machines and their current utilization
+- list shows
+- academy software foundation
+- list all active shows (productions) in the render farm
 - list render jobs for a specific show with optional state filtering
+- linux foundation
+- list and manage render jobs
+- get details for a specific render job
+- get or kill a specific render job
+- get detailed status and frame counts for a specific render job
+- color management
+- vfx pipeline
+- visual effects
+- list render jobs for a show
+- get job
+- pipeline td
+- render farm
+- list render hosts
+- list and manage render shows (productions)
 slug: render-farm-management
 source_filename: render-farm-management.yaml
 source_heading: Capability Spec

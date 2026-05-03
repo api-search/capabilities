@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon Control Tower
 provider_slug: amazon-control-tower
 search_terms:
-- landing zone
-- controls
 - security
-- governance
 - multi-account
 - compliance
+- landing zone
+- controls
+- governance
 slug: governance-operations
 source_filename: governance-operations.yaml
 source_heading: Capability Spec

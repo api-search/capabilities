@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
-- a capability that fans out to every ai-spend source touches (microsoft, google, anthropic, open router, vendor-specific dashboards) and returns one cross-platform ai cost-of-ownership view by capability, team, and agent.
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- a capability that fans out to every ai-spend source touches (microsoft, google, anthropic, open router, vendor-specific dashboards) and returns one cross-platform ai cost-of-ownership view by capability, team, and agent.
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: finops-ai-cross-platform-cost-capability
 source_filename: finops-ai-cross-platform-cost-capability.yaml
 source_heading: Capability Spec

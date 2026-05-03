@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a composed capability (capability-consuming-capability) that fans out to dealer + customer apis and returns one shaped context object for the assistant.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- a composed capability (capability-consuming-capability) that fans out to dealer + customer apis and returns one shaped context object for the assistant.
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: dealer-customer-context-composition
 source_filename: dealer-customer-context-composition.yaml
 source_heading: Capability Spec

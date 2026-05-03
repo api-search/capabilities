@@ -31,40 +31,40 @@ personas: []
 provider_name: SAP Business Intelligence
 provider_slug: sap-bi
 search_terms:
-- list info providers
-- datasphere list spaces
-- sap
-- data source connections.
-- list datasphere spaces.
-- datasphere browse catalog
-- browse the datasphere data catalog for available datasets and views.
-- list sap datasphere spaces the user has access to.
-- get metadata for a specific bw/4hana infoprovider.
-- bw get info provider
-- browse the datasphere data catalog.
-- datasphere
-- get configuration of a specific datasphere space.
-- list all data source connections configured in datasphere.
-- datasphere list connections
-- browse catalog
-- datasphere spaces.
-- list spaces
-- list data source connections.
 - get info provider
-- data catalog.
+- datasphere list spaces
+- list connections
 - bw list info providers
 - analytics
-- datasphere get space
-- get infoprovider details.
-- list all infoproviders (infocubes, dsos, compositeproviders) in sap bw/4hana.
-- single infoprovider.
-- bw/4hana infoproviders.
-- list connections
-- data warehouse
-- reporting
-- data visualization
-- business intelligence
+- data catalog.
+- list datasphere spaces.
 - list infoproviders in bw/4hana.
+- bw/4hana infoproviders.
+- get metadata for a specific bw/4hana infoprovider.
+- list all data source connections configured in datasphere.
+- business intelligence
+- datasphere list connections
+- list spaces
+- list data source connections.
+- get configuration of a specific datasphere space.
+- datasphere get space
+- datasphere browse catalog
+- list info providers
+- list all infoproviders (infocubes, dsos, compositeproviders) in sap bw/4hana.
+- list sap datasphere spaces the user has access to.
+- sap
+- reporting
+- datasphere spaces.
+- get infoprovider details.
+- browse catalog
+- data source connections.
+- browse the datasphere data catalog for available datasets and views.
+- browse the datasphere data catalog.
+- data visualization
+- bw get info provider
+- datasphere
+- single infoprovider.
+- data warehouse
 slug: data-warehouse-access
 source_filename: data-warehouse-access.yaml
 source_heading: Capability Spec

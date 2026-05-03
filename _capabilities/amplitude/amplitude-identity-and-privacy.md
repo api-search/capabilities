@@ -81,78 +81,78 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- feature flags
-- createScimGroup
-- createScimUser
-- mapUser
-- privacy compliance
+- amplitude get a scim user
+- scim api deleteScimUser
+- identity management
+- deleteScimGroup
+- scim api createScimUser
 - amplitude
-- identity
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- runs experiments and feature flags
-- getScimGroup
-- dsar api getDsarRequestStatus
-- privacy
-- scim api getScimGroup
+- analytics
+- amplitude create a scim group
+- dsar api createDeletionRequest
+- dsar api listDeletionRequests
+- manage event schemas and chart annotations. for data governance teams.
+- createScimUser
+- user mapping api unmapUser
+- updateScimUser
 - scim api getScimUser
-- amplitude delete a scim group
+- deleteScimUser
+- listScimUsers
+- unmapUser
+- mapUser
+- amplitude replace a scim user
+- getDsarRequestStatus
+- runs experiments and feature flags
+- replaceScimUser
+- amplitude create a scim user
+- scim api createScimGroup
+- amplitude list scim users
+- amplitude get dsar request status
+- getScimGroup
 - listDeletionRequests
 - amplitude delete a scim user
-- updateScimUser
-- amplitude list scim groups
-- scim api listScimUsers
-- amplitude request user data deletion
-- replaceScimUser
-- amplitude update a scim user
-- amplitude unmap user identities
-- amplitude replace a scim user
+- amplitude update a scim group
 - createDsarRequest
-- scim api updateScimUser
+- amplitude list deletion requests
+- listScimGroups
+- dsar api createDsarRequest
+- dsar api getDsarRequestStatus
+- export raw event data and manage behavioral cohorts. for data analysts.
 - scim api updateScimGroup
 - scim provisioning and privacy compliance. for it admins and compliance teams.
-- deleteScimGroup
-- user mapping api unmapUser
-- scim api deleteScimGroup
-- amplitude create a scim group
-- amplitude create a data subject access request
-- amplitude get dsar request status
-- createDeletionRequest
-- dsar api createDsarRequest
-- scim api createScimGroup
-- unified workflow for sending events and identifying users. for data engineers.
-- manages privacy and compliance
-- deleteScimUser
 - product analytics
-- a/b testing
-- scim api createScimUser
-- getDsarRequestStatus
-- getScimUser
 - user behavior
-- identity management
+- scim api listScimGroups
+- manages privacy and compliance
+- scim api replaceScimUser
+- user mapping api mapUser
+- unified workflow for sending events and identifying users. for data engineers.
+- identity
+- amplitude list scim groups
+- getScimUser
+- analyzes data and manages cohorts
+- scim api listScimUsers
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- feature flags
+- amplitude create a data subject access request
+- privacy
+- amplitude update a scim user
+- amplitude request user data deletion
+- data governance
+- scim api getScimGroup
+- ingests and exports event data
+- scim api deleteScimGroup
+- experimentation
 - amplitude get a scim group
 - updateScimGroup
-- analyzes data and manages cohorts
-- analytics
-- experimentation
-- data governance
+- amplitude delete a scim group
+- privacy compliance
+- amplitude unmap user identities
+- a/b testing
+- createScimGroup
+- scim api updateScimUser
 - amplitude map user identities
-- export raw event data and manage behavioral cohorts. for data analysts.
-- amplitude list deletion requests
-- dsar api listDeletionRequests
-- amplitude update a scim group
-- unmapUser
-- ingests and exports event data
-- dsar api createDeletionRequest
-- scim api deleteScimUser
-- scim api listScimGroups
-- manage event schemas and chart annotations. for data governance teams.
-- listScimGroups
-- scim api replaceScimUser
-- listScimUsers
-- amplitude create a scim user
-- user mapping api mapUser
-- amplitude list scim users
-- amplitude get a scim user
+- createDeletionRequest
 slug: amplitude-identity-and-privacy
 source_filename: amplitude-identity-and-privacy.yaml
 source_heading: Capability Spec

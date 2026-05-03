@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a capability over network apis (ericsson-aggregated carrier-network surfaces — number verification, location, device status) exposing carrier-grade governed reads as mcp.
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- a capability over network apis (ericsson-aggregated carrier-network surfaces — number verification, location, device status) exposing carrier-grade governed reads as mcp.
+- capabilities
+- example op
+- governance
 slug: network-api-aggregation-capability
 source_filename: network-api-aggregation-capability.yaml
 source_heading: Capability Spec

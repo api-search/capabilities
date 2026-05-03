@@ -49,53 +49,53 @@ personas: []
 provider_name: Salesloft
 provider_slug: salesloft
 search_terms:
-- list opportunities
-- single opportunity
-- list tasks
-- list call recordings and outcomes from salesloft
-- get details for a specific opportunity
-- list sales opportunities and pipeline in salesloft
-- opportunities
-- list all tasks
-- submit a buyer signal to rhythm
-- list all emails
-- create signal
+- revenue intelligence
 - automation
-- conversations
-- sales
+- buyer intent signals for rhythm
+- submit a buyer intent signal to salesloft rhythm to prioritize follow-up
+- list sales opportunities and pipeline in salesloft
+- analytics
+- email activity tracking
+- create a follow-up task
 - call recordings and outcomes
-- list all calls
+- conversations
 - signals
-- crm
+- list emails sent through salesloft for activity tracking
+- create a follow-up task for a sales rep
+- create a webhook subscription to receive salesloft events
+- sales team users
+- list emails
+- revenue
+- list pending sales tasks and follow-ups
+- tasks and follow-ups
+- create webhook subscription
+- opportunities
+- salesloft
+- list webhook subscriptions
+- single opportunity
+- list call recordings and outcomes from salesloft
+- list opportunities
+- list users
+- get opportunity by id
+- fetch opportunity
+- list all tasks
+- list tasks
+- submit buyer signal
+- sales
+- list webhook subscriptions for salesloft event notifications
+- sales opportunities and pipeline
 - ai
 - list sales team members in salesloft
-- sales opportunities and pipeline
-- email activity tracking
-- submit a buyer intent signal to salesloft rhythm to prioritize follow-up
-- sales team users
-- revenue
-- list all users
-- create task
-- analytics
-- create a follow-up task
-- salesloft
-- tasks and follow-ups
-- fetch opportunity
-- list all opportunities
-- buyer intent signals for rhythm
-- list emails
-- list users
-- create a webhook subscription to receive salesloft events
-- list emails sent through salesloft for activity tracking
-- create webhook subscription
-- list webhook subscriptions for salesloft event notifications
-- list pending sales tasks and follow-ups
-- list webhook subscriptions
-- get opportunity by id
+- create signal
+- list all emails
 - list calls
-- submit buyer signal
-- create a follow-up task for a sales rep
-- revenue intelligence
+- list all users
+- list all calls
+- get details for a specific opportunity
+- crm
+- list all opportunities
+- create task
+- submit a buyer signal to rhythm
 slug: revenue-intelligence
 source_filename: revenue-intelligence.yaml
 source_heading: Capability Spec

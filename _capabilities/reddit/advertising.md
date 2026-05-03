@@ -27,33 +27,33 @@ personas: []
 provider_name: Reddit
 provider_slug: reddit
 search_terms:
-- list custom audiences
+- list advertising campaigns
+- research a subreddit community to assess ad targeting potential
+- marketing
 - create an advertising campaign
-- get subreddit trending
+- get reddit ads account details and configuration
+- get subreddit info
+- list custom targeting audiences for retargeting campaigns
 - advertising
 - research a subreddit community for ad targeting
-- communities
-- get trending posts from a subreddit to understand audience interests
-- research a subreddit community to assess ad targeting potential
-- content
-- create a new reddit advertising campaign with budget and objective
-- social media
-- get ads account
-- get subreddit info
+- get subreddit trending
 - list custom targeting audiences
-- marketing
-- create campaign
-- list all advertising campaigns for an account
-- list advertising campaigns
-- research subreddit
-- reddit
+- social news
+- content
+- get trending posts from a subreddit to understand audience interests
+- list custom audiences
+- get ads account
 - campaign lifecycle management
 - subreddit research for targeting
-- get reddit ads account details and configuration
-- list custom targeting audiences for retargeting campaigns
-- social news
+- create a new reddit advertising campaign with budget and objective
+- reddit
+- social media
+- list all advertising campaigns for an account
+- research subreddit
+- communities
 - list campaigns
 - custom audience management
+- create campaign
 slug: advertising
 source_filename: advertising.yaml
 source_heading: Capability Spec

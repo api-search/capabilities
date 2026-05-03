@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
 - a capability that ingests an arazzo workflow from ai studio and exposes the workflow as a single composed mcp tool — the apidays nyc co-branded financial-services artifact.
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: ai-studio-arazzo-financial-workflow-capability
 source_filename: ai-studio-arazzo-financial-workflow-capability.yaml
 source_heading: Capability Spec

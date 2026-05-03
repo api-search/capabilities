@@ -14,79 +14,8 @@ description: 'Continuous integration and continuous delivery — source-to-deplo
 
   '
 domain: developer-tools
-implementation_count: 12
+implementation_count: 7
 implementations:
-- capability_name: Amazon CodeBuild CI/CD
-  capability_slug: amazon-codebuild-cicd
-  capability_url: https://capabilities.apis.io/capabilities/amazon-codebuild/amazon-codebuild-cicd/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon CodeBuild
-  provider_slug: amazon-codebuild
-  tags:
-  - Amazon
-  - CI/CD
-  - Build Automation
-  - DevOps
-  - Continuous Integration
-  tool_count: 12
-- capability_name: Amazon CodeCatalyst Developer Collaboration
-  capability_slug: amazon-codecatalyst-developer-collaboration
-  capability_url: https://capabilities.apis.io/capabilities/amazon-codecatalyst/amazon-codecatalyst-developer-collaboration/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon CodeCatalyst
-  provider_slug: amazon-codecatalyst
-  tags:
-  - Amazon
-  - Developer Collaboration
-  - CI/CD
-  - Project Management
-  - DevOps
-  tool_count: 10
-- capability_name: Amazon CodeDeploy Deployment Automation
-  capability_slug: amazon-codedeploy-deployment-automation
-  capability_url: https://capabilities.apis.io/capabilities/amazon-codedeploy/amazon-codedeploy-deployment-automation/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon CodeDeploy
-  provider_slug: amazon-codedeploy
-  tags:
-  - Amazon
-  - Deployment
-  - DevOps
-  - CI/CD
-  - Release Management
-  tool_count: 10
-- capability_name: Amazon CodePipeline Release Pipeline Automation
-  capability_slug: amazon-codepipeline-release-pipeline
-  capability_url: https://capabilities.apis.io/capabilities/amazon-codepipeline/amazon-codepipeline-release-pipeline/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon CodePipeline
-  provider_slug: amazon-codepipeline
-  tags:
-  - Amazon
-  - CI/CD
-  - Continuous Delivery
-  - DevOps
-  - Pipeline
-  - Release Automation
-  tool_count: 14
-- capability_name: Amazon CodeStar Project Management
-  capability_slug: project-management
-  capability_url: https://capabilities.apis.io/capabilities/amazon-codestar/project-management/
-  consumed_api_count: 1
-  operation_count: 9
-  provider_name: Amazon CodeStar
-  provider_slug: amazon-codestar
-  tags:
-  - Amazon
-  - Developer Tools
-  - DevOps
-  - Project Management
-  - Team Collaboration
-  tool_count: 12
 - capability_name: Amazon Proton Platform Engineering
   capability_slug: platform-engineering
   capability_url: https://capabilities.apis.io/capabilities/amazon-proton/platform-engineering/
@@ -188,7 +117,7 @@ implementations:
   tool_count: 18
 layout: category
 name: CI/CD
-provider_count: 12
+provider_count: 7
 related:
 - container-orchestration
 - automation

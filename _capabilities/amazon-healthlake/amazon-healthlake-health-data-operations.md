@@ -10,10 +10,10 @@ provider_name: Amazon HealthLake
 provider_slug: amazon-healthlake
 search_terms:
 - health data
-- healthcare
-- hipaa
-- cloud computing
 - fhir
+- healthcare
+- cloud computing
+- hipaa
 slug: amazon-healthlake-health-data-operations
 source_filename: amazon-healthlake-health-data-operations.yaml
 source_heading: Capability Spec

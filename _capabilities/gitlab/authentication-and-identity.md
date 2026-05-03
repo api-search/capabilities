@@ -42,38 +42,38 @@ personas: []
 provider_name: GitLab
 provider_slug: gitlab
 search_terms:
-- revoke an oauth access or refresh token.
-- tokens
-- oauth 2.0 authorization code flow initiation.
-- authentication
-- oauth token exchange and creation.
-- identity
-- source control
-- token revocation.
-- exchange token
-- revoke an existing oauth access or refresh token.
-- platform
-- initiate the device authorization grant flow.
-- get information about the current access token.
 - code
-- revoke token
-- get profile information about the currently authenticated user.
-- device authorization grant flow for input-constrained devices.
-- initiate the device authorization grant flow for input-constrained devices.
-- initiate the oauth 2.0 authorization code flow.
-- authenticated user profile information.
-- get token info
-- gitlab
-- initiate the oauth 2.0 authorization code flow with optional pkce support.
-- authorize device
-- token introspection and validation.
-- get user info
-- get information about the current oauth access token including scopes and expiration.
-- oauth
-- get profile information about the authenticated user.
-- exchange an authorization code, device code, or refresh token for an access token.
-- software development
 - authorize oauth
+- get profile information about the currently authenticated user.
+- authorize device
+- oauth 2.0 authorization code flow initiation.
+- exchange token
+- initiate the device authorization grant flow.
+- software development
+- oauth token exchange and creation.
+- get user info
+- authentication
+- gitlab
+- token revocation.
+- get information about the current oauth access token including scopes and expiration.
+- initiate the oauth 2.0 authorization code flow with optional pkce support.
+- token introspection and validation.
+- revoke an existing oauth access or refresh token.
+- oauth
+- revoke token
+- revoke an oauth access or refresh token.
+- identity
+- authenticated user profile information.
+- exchange an authorization code, device code, or refresh token for an access token.
+- get token info
+- platform
+- device authorization grant flow for input-constrained devices.
+- get information about the current access token.
+- source control
+- initiate the oauth 2.0 authorization code flow.
+- tokens
+- initiate the device authorization grant flow for input-constrained devices.
+- get profile information about the authenticated user.
 slug: authentication-and-identity
 source_filename: authentication-and-identity.yaml
 source_heading: Capability Spec

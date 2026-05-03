@@ -27,26 +27,26 @@ personas: []
 provider_name: Google Marketing Platform Admin
 provider_slug: google-marketing-platform
 search_terms:
-- list analytics links
+- marketing
+- organization management
+- analytics
 - google marketing platform
-- list organizations
+- list google marketing platform organizations.
+- create an analytics account link.
+- individual analytics link management.
 - list analytics account links.
-- set property service level
+- create analytics link
+- list analytics links
+- platform administration
+- list marketing platform organizations.
+- organization management.
 - analytics account link management.
 - delete analytics link
-- list google marketing platform organizations.
-- marketing
-- list analytics account links for an organization.
-- analytics
-- create analytics link
-- set analytics property service level (standard or 360).
-- create an analytics account link.
-- list marketing platform organizations.
-- individual analytics link management.
-- platform administration
-- organization management
+- list organizations
 - delete an analytics account link.
-- organization management.
+- set analytics property service level (standard or 360).
+- list analytics account links for an organization.
+- set property service level
 slug: marketing-analytics
 source_filename: marketing-analytics.yaml
 source_heading: Capability Spec

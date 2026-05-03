@@ -35,47 +35,47 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
+- search fields
+- list security universes
+- get reference data for securities
+- field list management
+- bloomberg
+- reference data access
+- list universes
+- data distributions
+- search available bloomberg data fields
+- market data
+- list available data catalogs
+- create universe
 - get intraday bars
+- list field lists
 - get reference data
 - get historical end-of-day data
-- list available data catalogs
-- get reference data for securities via http api
-- create data request
-- portfolio management
-- get intraday bar data
-- get historical data
-- list security universes
-- financial analytics
-- get reference data for securities
-- create universe
-- list field lists for data requests
-- field list management
-- search available bloomberg data fields
-- get catalog
-- get data catalog details
-- list catalogs
-- get historical data for securities
-- market data
-- bloomberg
-- search fields
-- data distributions
-- reference data access
 - historical data access
+- search instruments
+- create data request
+- trading
 - create a bloomberg data request
 - search for securities and instruments
-- search instruments
-- trading
-- list field lists
-- financial data
 - order management
-- list universes
-- list available bloomberg data catalogs
 - list completed data distributions
-- reference data
+- get intraday bar data
+- list catalogs
+- get reference data for securities via http api
+- data catalog browsing
+- financial data
+- get historical data
+- list field lists for data requests
+- get data catalog details
 - list distributions
+- list available bloomberg data catalogs
+- portfolio management
+- financial analytics
+- reference data
+- get catalog
+- get historical data for securities
 - security universe management
 - create a security universe for data requests
-- data catalog browsing
 slug: market-data-and-analytics
 source_filename: market-data-and-analytics.yaml
 source_heading: Capability Spec

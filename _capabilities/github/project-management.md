@@ -64,81 +64,81 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- projects
-- list project columns
-- searchIssuesAndPullRequests
-- milestone management
-- source control
-- github
-- create a project card
-- issues
-- get a project
-- createProjectColumn
-- create an issue comment
-- list timeline events for an issue
-- milestones
-- label management
-- list labels
-- list columns
-- listLabelsForRepository
-- create card
-- project operations
-- lock issue
-- create a column
-- platform
-- list issue comments
-- search
-- updateAnIssue
-- create issue
+- getAnIssue
+- update project
 - code
-- createMilestone
-- list cards
-- create issue comment
+- github
+- list labels
 - createLabel
-- add labels to an issue
+- update a project
+- t1
+- lock issue
+- listLabelsForRepository
+- pipelines
+- list project columns
+- lock an issue
+- listMilestones
+- updateProject
 - add labels
 - create a project column
-- create milestone
-- updateProject
-- move card
+- label management
+- software development
+- milestones
+- search issues
+- createMilestone
+- create issue comment
 - issue management
-- createAnIssue
 - get an issue
-- project management
-- list issues
-- create an issue
-- individual issue operations
-- update an issue
+- list project cards
+- get a project
 - getProject
-- issue and pr search
-- getAnIssue
-- get project
-- t1
-- search issues and pull requests
 - listRepositoryIssues
-- update issue
-- create a milestone
-- project column management
-- lock an issue
-- update a project
+- list issue comments
+- add assignees to an issue
 - listProjectColumns
-- update project
-- create column
-- create a label
+- search issues and pull requests
+- create an issue comment
+- project management
+- milestone management
+- create an issue
+- search
+- create a column
+- issues
+- update issue
+- issue and pr search
+- get issue
+- list columns
+- projects
 - create label
 - move a project card
-- listMilestones
-- list timeline events
-- pipelines
-- search labels
-- add assignees
-- add assignees to an issue
-- search issues
-- get issue
-- list project cards
-- software development
-- list repository issues
+- createProjectColumn
+- update an issue
+- project operations
+- create column
+- create milestone
 - list milestones
+- individual issue operations
+- list timeline events for an issue
+- create a milestone
+- list repository issues
+- create issue
+- add assignees
+- move card
+- list timeline events
+- create a project card
+- create card
+- platform
+- searchIssuesAndPullRequests
+- search labels
+- updateAnIssue
+- source control
+- list cards
+- get project
+- add labels to an issue
+- project column management
+- createAnIssue
+- create a label
+- list issues
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

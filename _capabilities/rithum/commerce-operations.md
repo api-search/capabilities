@@ -65,60 +65,60 @@ personas: []
 provider_name: Rithum
 provider_slug: rithum
 search_terms:
-- dropship
-- create a new event stream
-- update supplier product catalog items
-- update supplier product catalog with new or changed items
-- cancel order item
-- create stream
-- event stream management for real-time data
-- shipment management
-- get order
-- stream event consumption
-- create a new event stream for order, inventory, or catalog events
-- create order
-- commerce
-- list orders
-- cancel an order item
-- individual order detail
-- get a specific order by id
 - acknowledge receipt of an order
-- update catalog
-- list orders available for supplier fulfillment
-- ecommerce
-- update supplier inventory quantities for catalog items
-- marketplace
-- retail
-- create a shipment record for a fulfilled order
-- rithum
-- create invoice
-- cancel an order item (supplier or retailer)
-- list streams
-- create a shipment record for a fulfilled order with tracking
-- product catalog synchronization
-- create shipment
-- list supplier orders available for fulfillment
-- acknowledge order
-- order cancellation
-- create retailer order
 - supply chain
-- order acknowledgment
-- order management for retailers and suppliers
-- invoice processing
-- retrieve events from a stream
-- submit an invoice for a fulfilled supplier order
-- get stream events
-- submit a consumer order to the dsco platform
-- update inventory
-- acknowledge receipt of a supplier order
-- retrieve events from a stream starting at a checkpoint position
-- submit a consumer dropship or marketplace order
-- update supplier inventory quantities
-- list all event stream definitions for real-time data consumption
-- submit an invoice for a fulfilled order
-- cancel order
 - inventory level management
+- list streams
+- cancel an order item
+- create a new event stream
+- get stream events
+- marketplace
+- invoice processing
+- update supplier inventory quantities for catalog items
+- create order
+- order acknowledgment
+- create a new event stream for order, inventory, or catalog events
+- retrieve events from a stream starting at a checkpoint position
+- list supplier orders available for fulfillment
+- list all event stream definitions for real-time data consumption
+- cancel an order item (supplier or retailer)
+- event stream management for real-time data
+- update catalog
+- get a specific order by id
+- dropship
+- submit an invoice for a fulfilled order
+- individual order detail
+- submit a consumer dropship or marketplace order
+- product catalog synchronization
+- create a shipment record for a fulfilled order with tracking
+- order cancellation
+- update supplier inventory quantities
+- get order
+- commerce
+- cancel order item
+- update supplier product catalog items
+- retrieve events from a stream
+- create shipment
+- list orders available for supplier fulfillment
+- retail
+- acknowledge order
+- stream event consumption
+- create retailer order
+- ecommerce
+- update inventory
 - list all event streams
+- list orders
+- cancel order
+- shipment management
+- rithum
+- create a shipment record for a fulfilled order
+- create stream
+- create invoice
+- update supplier product catalog with new or changed items
+- acknowledge receipt of a supplier order
+- submit an invoice for a fulfilled supplier order
+- order management for retailers and suppliers
+- submit a consumer order to the dsco platform
 slug: commerce-operations
 source_filename: commerce-operations.yaml
 source_heading: Capability Spec

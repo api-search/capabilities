@@ -85,79 +85,79 @@ personas: []
 provider_name: Resend
 provider_slug: resend
 search_terms:
-- update email
-- transactional email sending
-- list contacts in a specific audience
-- audiences
-- send a transactional email to one or more recipients
-- list domains
-- list sending domains
-- create a new contact audience
-- create a new broadcast email campaign
-- remove a sending domain
-- create a new broadcast campaign
-- create broadcast
-- list all contact audiences
-- add contact to audience
-- list contacts
-- list all configured sending domains
-- create contact
-- developer tools
-- send up to 100 emails in a single batch operation
-- send broadcast
-- send batch emails
-- get email
-- add a contact to an audience for marketing emails
-- list broadcasts
-- marketing email
-- get the status and details of a sent email by id
-- list all audiences
-- email
-- list all broadcast campaigns
-- list all configured email sending domains
-- add a new sending domain
-- contact audiences for marketing emails
-- list api keys
-- list contacts in an audience
-- send a transactional email
-- create a new audience
-- broadcasts
-- create domain
-- single domain management
-- list audiences
-- get domain
-- cancel a scheduled email before it is sent
-- add a new email sending domain
 - retrieve a single sent email
-- email domain configuration
-- verify dns records for a sending domain
-- email broadcast campaigns
-- send or schedule a broadcast campaign to an audience
-- create sending domain
-- update domain
+- list api keys
+- add a contact to an audience for marketing emails
+- get email status
+- broadcasts
+- send up to 100 emails in a single batch operation
+- list all contact audiences
+- send up to 100 emails in a single batch
 - single email management
+- send transactional email
+- list all broadcast campaigns
+- add a new email sending domain
+- send or schedule a broadcast campaign to an audience
 - transactional email
 - send email
 - delete domain
-- cancel scheduled email
-- get details for a domain
-- create audience
-- audience contacts
-- send transactional email
-- send up to 100 emails in a single batch
-- verify domain
-- list all api keys for the account
-- batch email sending
-- update domain tracking settings
-- send broadcast campaign
-- send or schedule a broadcast
-- update a scheduled email
 - add a contact to an audience
-- send or schedule a broadcast campaign
+- send a transactional email to one or more recipients
+- verify domain
+- send a transactional email
+- verify dns records for a sending domain
+- create sending domain
+- transactional email sending
+- add contact to audience
+- marketing email
 - cancel a scheduled email
-- get email status
-- cancel email
+- single domain management
+- get the status and details of a sent email by id
+- update email
+- audiences
+- get domain
+- create a new broadcast email campaign
+- batch email sending
+- create audience
+- update domain
+- get email
+- contact audiences for marketing emails
+- create a new contact audience
 - list all email broadcast campaigns
+- cancel email
+- list domains
+- add a new sending domain
+- update domain tracking settings
+- audience contacts
+- list all configured sending domains
+- email domain configuration
+- create broadcast
+- send or schedule a broadcast campaign
+- list all configured email sending domains
+- developer tools
+- cancel scheduled email
+- remove a sending domain
+- list contacts in an audience
+- email broadcast campaigns
+- list broadcasts
+- list sending domains
+- list all api keys for the account
+- cancel a scheduled email before it is sent
+- update a scheduled email
+- send or schedule a broadcast
+- create contact
+- email
+- list contacts in a specific audience
+- get details for a domain
+- list all audiences
+- list contacts
+- create a new audience
+- send broadcast
+- send batch emails
+- send broadcast campaign
+- create domain
+- create a new broadcast campaign
+- list audiences
 slug: email-delivery
 source_filename: email-delivery.yaml
 source_heading: Capability Spec

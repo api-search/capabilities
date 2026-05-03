@@ -11,8 +11,8 @@ provider_slug: amazon-datazone
 search_terms:
 - data sharing
 - data management
-- data catalog
 - analytics
+- data catalog
 - data governance
 slug: data-catalog-operations
 source_filename: data-catalog-operations.yaml

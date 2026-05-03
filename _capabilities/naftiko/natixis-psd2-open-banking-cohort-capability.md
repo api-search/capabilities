@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- a capability over bpce's psd2 / natixis open api portal endpoints, paired with bnp-cohort messaging as the shared french-tier-1-bank artifact pattern.
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability over bpce's psd2 / natixis open api portal endpoints, paired with bnp-cohort messaging as the shared french-tier-1-bank artifact pattern.
+- example op
+- governance
 slug: natixis-psd2-open-banking-cohort-capability
 source_filename: natixis-psd2-open-banking-cohort-capability.yaml
 source_heading: Capability Spec

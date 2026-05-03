@@ -29,38 +29,38 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- financial services
-- create a chargeback
-- transaction clarity for dispute resolution
-- disputes
-- get settlement rate
-- credit cards
-- fraud detection
-- lookup transaction clarity
-- look up transaction details for dispute resolution
-- settlement
-- create retrieval
-- create a retrieval request in mastercom
-- create retrieval request
-- look up transaction details to aid dispute resolution
-- lookup transaction for dispute
-- payments
-- mastercard
-- retrieve chargebacks
-- authorize a transaction through core processing
-- get chargebacks
-- chargebacks
-- get currency conversion rate for settlement
-- create a chargeback in mastercom
-- create a retrieval request
 - mastercom
-- chargeback management
+- credit cards
+- create a retrieval request
+- get settlement rate
+- create a retrieval request in mastercom
 - digital identity
+- retrieve chargebacks
+- create a chargeback in mastercom
+- chargeback management
+- look up transaction details for dispute resolution
+- transaction clarity for dispute resolution
+- mastercard
+- financial services
 - open banking
-- authorize transaction
+- chargebacks
+- get chargebacks
+- lookup transaction clarity
+- payments
 - retrieve chargebacks from mastercom
+- authorize transaction
+- create a chargeback
+- create retrieval
 - create chargeback
 - retrieval request management
+- lookup transaction for dispute
+- disputes
+- look up transaction details to aid dispute resolution
+- authorize a transaction through core processing
+- settlement
+- get currency conversion rate for settlement
+- fraud detection
+- create retrieval request
 slug: disputes-and-settlement
 source_filename: disputes-and-settlement.yaml
 source_heading: Capability Spec

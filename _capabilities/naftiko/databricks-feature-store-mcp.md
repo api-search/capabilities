@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - mcp
-- governance
-- a capability over azure databricks feature store, exposing typed model-feature retrieval as mcp for the ai assistant flows john is architecting.
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability over azure databricks feature store, exposing typed model-feature retrieval as mcp for the ai assistant flows john is architecting.
+- example op
+- governance
 slug: databricks-feature-store-mcp
 source_filename: databricks-feature-store-mcp.yaml
 source_heading: Capability Spec

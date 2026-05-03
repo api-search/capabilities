@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- observability
-- list batch jobs
-- get batch job
-- list jakarta batch job instances
-- get recent liberty log messages
-- log management
-- get liveness
-- middleware
-- get batch job instance details
-- batch job monitoring
-- get liberty logging configuration
-- get liberty metrics
-- performance data
-- microservices
-- get open liberty overall health
-- get liberty health
 - get was performance monitoring data
-- get was health
+- list batch jobs
 - get all open liberty metrics
-- get open liberty overall health status
-- get readiness
-- monitoring
-- cloud native
+- metrics collection
 - ibm websphere
 - list batch job instances
-- get liberty log messages
-- get all metrics
-- enterprise java
-- health check endpoints
-- get log messages
-- get log config
-- get was server health
-- check if liberty server is alive
-- metrics collection
-- check if liberty server is ready for traffic
-- metrics
-- get liberty admin metrics
+- monitoring
 - j2ee
-- application server
-- get was server health status
+- get open liberty overall health status
+- batch job monitoring
+- get batch job instance details
+- get liberty admin metrics
+- get liberty health
+- get liveness
+- cloud native
+- get liberty metrics
+- get liberty log messages
+- get recent liberty log messages
+- get log config
 - get performance data
+- get batch job
+- enterprise java
+- get was health
+- metrics
+- get readiness
+- check if liberty server is ready for traffic
+- get was server health
+- get log messages
+- get was server health status
+- microservices
+- list jakarta batch job instances
+- health check endpoints
+- observability
+- get all metrics
+- get open liberty overall health
+- performance data
+- check if liberty server is alive
+- application server
+- get liberty logging configuration
+- middleware
+- log management
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

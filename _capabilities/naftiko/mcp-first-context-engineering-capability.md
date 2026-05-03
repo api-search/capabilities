@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability implementing the capability-first context engineering use case (#8) — design tools as mcp first, then map to apis.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability implementing the capability-first context engineering use case (#8) — design tools as mcp first, then map to apis.
+- example op
+- governance
 slug: mcp-first-context-engineering-capability
 source_filename: mcp-first-context-engineering-capability.yaml
 source_heading: Capability Spec

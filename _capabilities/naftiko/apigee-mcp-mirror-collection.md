@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a collection that mirrors the -apigee-managed apis as naftiko capabilities so each becomes mcp-callable without bypassing the existing gateway.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- a collection that mirrors the -apigee-managed apis as naftiko capabilities so each becomes mcp-callable without bypassing the existing gateway.
+- capabilities
+- example op
+- governance
 slug: apigee-mcp-mirror-collection
 source_filename: apigee-mcp-mirror-collection.yaml
 source_heading: Capability Spec

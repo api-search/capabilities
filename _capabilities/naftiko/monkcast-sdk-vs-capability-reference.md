@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - naftiko
 - a side-by-side reference capability that pairs a generated sdk with a naftiko-exposed capability over the same upstream api, illustrating "capabilities are the new abstraction layer."
-- governance
-- mcp
+- api integration
+- spec-driven integration
 - capabilities
-- ai
+- example op
+- governance
 slug: monkcast-sdk-vs-capability-reference
 source_filename: monkcast-sdk-vs-capability-reference.yaml
 source_heading: Capability Spec

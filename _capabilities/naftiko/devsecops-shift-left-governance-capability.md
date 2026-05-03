@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a capability where the naftiko spectral ruleset + blocking rules (auth required, https only, destructive-ops gate) + pii surface detection are wired in as the shift-left governance story.
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- a capability where the naftiko spectral ruleset + blocking rules (auth required, https only, destructive-ops gate) + pii surface detection are wired in as the shift-left governance story.
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: devsecops-shift-left-governance-capability
 source_filename: devsecops-shift-left-governance-capability.yaml
 source_heading: Capability Spec

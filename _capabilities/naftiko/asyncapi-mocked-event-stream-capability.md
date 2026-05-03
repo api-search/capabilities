@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability where mocks an asyncapi-described event stream and the same yaml drives the naftiko engine's consume side, joining capability + event-driven mocking on one artifact.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability where mocks an asyncapi-described event stream and the same yaml drives the naftiko engine's consume side, joining capability + event-driven mocking on one artifact.
+- example op
+- governance
 slug: asyncapi-mocked-event-stream-capability
 source_filename: asyncapi-mocked-event-stream-capability.yaml
 source_heading: Capability Spec

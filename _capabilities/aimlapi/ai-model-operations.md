@@ -27,39 +27,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- create image
-- generate an image from a text prompt using aimlapi image generation models
-- create chat completion
-- api gateway
-- ai engineer evaluating and comparing models for ml pipelines
-- developer tools
-- list available models
-- llm
-- create embedding
-- api key management and model discovery
-- generate a chat response from any of 400+ ai language models via aimlapi
-- generate vector embeddings for semantic search and rag applications
+- developer integrating ai capabilities into applications via aimlapi
 - image generation
 - chat completions via 400+ llms
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- list all models
-- embeddings
-- Developer
-- ai model inference across modalities
-- artificial intelligence
-- create a chat completion
-- create embeddings
-- discover all 400+ available ai models on aimlapi platform
-- video generation
-- ai models
+- create chat completion
 - list models
-- AI Engineer
-- machine learning
-- generate image
+- generate a chat response from any of 400+ ai language models via aimlapi
+- list available models
+- ai engineer evaluating and comparing models for ml pipelines
+- generate an image from a text prompt using aimlapi image generation models
+- generate vector embeddings for semantic search and rag applications
+- create a chat completion
 - speech
+- create embeddings
+- create embedding
+- list all models
+- discover all 400+ available ai models on aimlapi platform
+- create image
+- video generation
+- api gateway
+- embeddings
+- generate image
+- Developer
+- developer tools
+- artificial intelligence
+- api key management and model discovery
+- ai models
+- ai model inference across modalities
+- machine learning
 - generate embeddings
 - generate an image
-- developer integrating ai capabilities into applications via aimlapi
+- llm
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- AI Engineer
 slug: ai-model-operations
 source_filename: ai-model-operations.yaml
 source_heading: Capability Spec

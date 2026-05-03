@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability that takes a naftiko-published openapi spec, generates microcks sandboxes via git, and returns runnable mock urls as mcp-callable tools.
-- governance
 - mcp
-- capabilities
 - ai
+- a capability that takes a naftiko-published openapi spec, generates microcks sandboxes via git, and returns runnable mock urls as mcp-callable tools.
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: microcks-sandbox-bridge-capability
 source_filename: microcks-sandbox-bridge-capability.yaml
 source_heading: Capability Spec

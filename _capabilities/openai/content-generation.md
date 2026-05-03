@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- generate vector embeddings for text input
-- create speech
-- edit an existing image with a text prompt
-- create image
-- list all available openai models
-- create chat completion
-- generate speech
-- openai
-- images create
-- models list
-- images create variation
-- create embedding
-- text to speech
-- text embeddings
-- audio create translation
-- embeddings create
 - image generation
-- audio create speech
-- ai
-- create a variation of an existing image
-- transcribe audio to text using whisper
-- artificial intelligence
-- create a chat completion
-- create embeddings
+- create chat completion
+- openai
+- list models
 - t1
 - large language models
+- create speech
+- generate a conversational response using gpt models
+- create a variation of an existing image
+- generate speech
+- translate audio to english text
+- create a chat completion
+- audio create speech
+- audio create translation
+- create embeddings
+- create embedding
+- models list
+- chat completion
+- generate an image from a text prompt using dall-e
+- images create
+- transcribe audio to text using whisper
+- generate vector embeddings for text input
+- create image
+- text embeddings
+- edit an existing image with a text prompt
+- get details of a specific model
+- images create variation
+- list all available openai models
+- text to speech
+- artificial intelligence
+- chat create completion
+- embeddings create
+- generate an image
+- ai
+- generate audio from text using tts models
+- audio create transcription
+- models get
+- content generation
 - images edit
 - available models
-- list models
-- translate audio to english text
-- models get
-- generate an image from a text prompt using dall-e
-- content generation
-- chat create completion
-- generate a conversational response using gpt models
-- generate audio from text using tts models
-- get details of a specific model
-- audio create transcription
-- generate an image
-- chat completion
 slug: content-generation
 source_filename: content-generation.yaml
 source_heading: Capability Spec

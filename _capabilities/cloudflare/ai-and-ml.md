@@ -29,64 +29,64 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- list vectorize indexes.
-- object storage
 - gateway create gateway
-- vectorize index management.
-- ai gateway
-- create a vectorize index.
-- vectorize delete index
-- create chat completion
-- api gateway
-- real-time communication
-- create a text completion.
-- ai create embeddings
-- list ai gateways.
-- list vectorize indexes
-- platform
-- delete a vectorize index.
-- edge
-- cloud
-- serverless
-- security
-- generate text embeddings.
-- text embeddings.
-- chat completions.
-- ai gateway management.
-- gateway list gateways
-- ai create chat completion
-- ai create response
 - get ai gateway details.
-- gateway get gateway
-- vectorize query vectors
-- vectorize insert vectors
-- cdn
+- create chat completion
+- ai create chat completion
+- create a vectorize index.
+- security
 - web performance
-- list ai gateway instances.
-- vectorize list indexes
-- containers
-- dns
-- artificial intelligence
-- insert vectors into an index.
-- list ai gateway logs.
-- create embeddings
-- create an ai response.
-- ddos protection
-- ai create text completion
-- vectorize create index
-- edge computing
-- vector database
-- gateway delete gateway
-- list ai gateways
-- run an ai model.
-- ai execute model
-- create an ai gateway.
-- gateway list logs
-- delete an ai gateway.
-- machine learning
-- cloudflare
-- perform similarity query.
 - create a chat completion.
+- create a text completion.
+- vector database
+- list ai gateways
+- gateway list logs
+- cloudflare
+- create embeddings
+- list ai gateways.
+- dns
+- vectorize insert vectors
+- ai gateway
+- gateway get gateway
+- vectorize index management.
+- list ai gateway logs.
+- edge
+- list ai gateway instances.
+- chat completions.
+- ai create text completion
+- insert vectors into an index.
+- cloud
+- api gateway
+- list vectorize indexes.
+- vectorize create index
+- list vectorize indexes
+- cdn
+- text embeddings.
+- artificial intelligence
+- perform similarity query.
+- real-time communication
+- containers
+- vectorize delete index
+- vectorize list indexes
+- gateway delete gateway
+- machine learning
+- object storage
+- delete a vectorize index.
+- ai gateway management.
+- platform
+- create an ai gateway.
+- ai execute model
+- ai create embeddings
+- ai create response
+- ddos protection
+- gateway list gateways
+- vectorize query vectors
+- edge computing
+- serverless
+- generate text embeddings.
+- delete an ai gateway.
+- run an ai model.
+- create an ai response.
 slug: ai-and-ml
 source_filename: ai-and-ml.yaml
 source_heading: Capability Spec

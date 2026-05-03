@@ -35,46 +35,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- tls
-- list certificate authorities
-- certificate management
-- revoke an issued certificate
-- Platform Engineer
-- create ca
-- create a new private certificate authority
-- get certificate authority details
-- issue certificate
-- retrieve a certificate
-- x.509
-- revoke a certificate
-- issues certificates for internal services and manages certificate lifecycle
-- list all certificate authorities
-- iot
-- aws
-- list cas
-- describe ca
-- security
-- pki
-- certificate authority hierarchy management
-- certificate lifecycle management
-- get certificate
-- certificates
-- revoke certificate
-- issue a new x.509 certificate from a certificate authority
-- retrieve an issued certificate by arn
-- Security Engineer
 - certificate authority
-- get details about a specific certificate authority
-- private pki infrastructure management workflow
-- list all private certificate authorities
-- amazon
-- individual certificate operations
-- create certificate authority
+- Platform Engineer
+- revoke a certificate
+- security
+- issues certificates for internal services and manages certificate lifecycle
+- tls
+- certificate management
+- list all certificate authorities
+- revoke an issued certificate
 - individual certificate authority operations
-- describe certificate authority
+- issue certificate
+- Security Engineer
 - manages pki infrastructure, ca hierarchies, and certificate policies
+- list all private certificate authorities
+- x.509
+- create a new private certificate authority
+- aws
+- describe ca
+- certificate lifecycle management
+- retrieve an issued certificate by arn
 - issue a new certificate
+- retrieve a certificate
+- amazon
+- create ca
+- individual certificate operations
+- revoke certificate
+- certificate authority hierarchy management
+- create certificate authority
+- private pki infrastructure management workflow
+- pki
+- list cas
+- certificates
+- describe certificate authority
+- get details about a specific certificate authority
+- issue a new x.509 certificate from a certificate authority
+- iot
+- get certificate
 - create a new private certificate authority in the ca hierarchy
+- list certificate authorities
+- get certificate authority details
 slug: pki-management
 source_filename: pki-management.yaml
 source_heading: Capability Spec

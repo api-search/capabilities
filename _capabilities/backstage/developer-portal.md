@@ -23,35 +23,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- register catalog location
+- software catalog entities
 - Platform Engineer
-- list locations
-- get a specific catalog entity by kind, namespace, and name
 - backstage
-- list all catalog entities
-- internal developer platform
-- list catalog locations
-- register a new catalog location
+- list entities
+- create location
 - open source
-- engineer building and maintaining the internal developer platform and backstage configuration
-- delete an entity from the software catalog
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
 - delete catalog entity
 - get catalog entity
-- central inventory of all software components, apis, and resources
-- scaffolding, documentation, and search to accelerate development
+- list locations
+- internal developer platform
 - software developer using backstage to discover services, bootstrap projects, and read documentation
-- software catalog entities
-- software catalog
-- Developer
-- catalog locations
-- list all entities in the backstage software catalog including components, apis, resources, systems, and users
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
 - list all registered catalog locations
-- list entities
-- list catalog entities
+- software catalog
+- list all entities in the backstage software catalog including components, apis, resources, systems, and users
 - register a new catalog location (github repo url, yaml file) to ingest entities
-- create location
+- engineer building and maintaining the internal developer platform and backstage configuration
+- Developer
+- register catalog location
+- list catalog locations
+- get a specific catalog entity by kind, namespace, and name
+- scaffolding, documentation, and search to accelerate development
+- list catalog entities
+- catalog locations
 - developer portal
+- list all catalog entities
+- register a new catalog location
+- delete an entity from the software catalog
+- central inventory of all software components, apis, and resources
 slug: developer-portal
 source_filename: developer-portal.yaml
 source_heading: Capability Spec

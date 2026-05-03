@@ -65,54 +65,54 @@ personas: []
 provider_name: Replit
 provider_slug: replit
 search_terms:
-- list repl deployments
-- get deployment details and status.
-- get detailed information about a specific repl.
-- get repl details.
-- list user repls
-- update a repl's title, description, or privacy setting.
-- create repl deployment
-- list all repls for the authenticated user.
-- manage a specific deployment.
-- get current user
-- version control
-- browse public repls for a user.
-- deployments
-- permanently delete a repl.
-- repls
-- code
-- list deployments for a repl.
-- public user profile.
 - update repl
-- get deployment
-- create a new repl.
-- remove a deployment from production.
-- check the status and details of a deployment.
-- delete deployment
-- update repl metadata.
-- deploy a repl to production hosting.
-- create and manage replit coding environments.
-- browse public repls for any replit user.
-- delete a repl permanently.
-- create repl
-- development environment
-- list repls
-- create a new repl coding environment with the specified language.
-- get repl
-- list public repls for a user.
-- compiling
-- delete repl
-- list all repls accessible to the authenticated user.
-- deploy repl
-- deploy a repl to production.
-- get the authenticated user's profile.
-- get user
-- get, update, or delete a specific repl.
-- current authenticated user profile.
-- deploy repls to production hosting.
-- get the authenticated user's replit profile.
+- list repl deployments
+- code
 - get a user's public profile.
+- get deployment
+- create and manage replit coding environments.
+- list repls
+- deploy repl
+- list deployments for a repl.
+- deploy a repl to production.
+- update a repl's title, description, or privacy setting.
+- create a new repl coding environment with the specified language.
+- compiling
+- delete a repl permanently.
+- manage a specific deployment.
+- list user repls
+- update repl metadata.
+- deployments
+- get deployment details and status.
+- current authenticated user profile.
+- get user
+- get detailed information about a specific repl.
+- create repl deployment
+- browse public repls for a user.
+- create a new repl.
+- version control
+- delete deployment
+- get the authenticated user's profile.
 - programming languages
+- get repl details.
+- get repl
+- get current user
+- deploy a repl to production hosting.
+- create repl
+- deploy repls to production hosting.
+- list public repls for a user.
+- list all repls accessible to the authenticated user.
+- permanently delete a repl.
+- development environment
+- public user profile.
+- get the authenticated user's replit profile.
+- delete repl
+- list all repls for the authenticated user.
+- check the status and details of a deployment.
+- get, update, or delete a specific repl.
+- browse public repls for any replit user.
+- remove a deployment from production.
+- repls
 slug: development-workflow
 source_filename: development-workflow.yaml
 source_heading: Capability Spec

@@ -59,57 +59,57 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- get vpc details
-- infrastructure
+- create a private network within a vpc
 - load balancing
-- networking
-- private network management
-- get vpc
-- list backends
+- get details of a specific load balancer
+- storage
+- delete vpc
+- get load balancer details
+- delete load balancer
+- european cloud
+- list scaleway load balancers
+- network isolation
+- list backend server pools for a load balancer
 - list load balancer backends
+- subnet management
+- list vpcs
+- create a new scaleway vpc
+- get details of a specific vpc
+- list private networks
+- create vpc
+- delete a vpc
+- list load balancers
+- create a load balancer
 - list private networks within vpcs
-- scaleway
 - manage a specific load balancer
 - list subnets in a region
-- list private networks
-- delete vpc
-- network isolation
-- list scaleway load balancers
-- storage
-- create private network
+- get vpc
 - load balancer backend management
-- list scaleway virtual private clouds
-- create a private network within a vpc
-- list load balancers
 - kubernetes
-- list vpcs
-- subnet management
-- ai
-- get details of a specific vpc
-- get load balancer
-- list subnets
-- create a vpc
-- create vpc
-- create a new scaleway vpc
-- create a new load balancer
-- containers
-- get load balancer details
-- serverless
-- list backend server pools for a load balancer
-- delete load balancer
-- create a load balancer
-- delete a vpc
 - load balancer management
-- database
+- private network management
+- list backends
 - vpc
-- create a private network
+- database
+- networking
 - delete a load balancer
-- european cloud
+- containers
+- create a private network
 - virtual private cloud management
+- create private network
+- ai
+- scaleway
+- create a new load balancer
+- list scaleway virtual private clouds
+- create a vpc
+- get vpc details
+- infrastructure
+- serverless
+- get load balancer
 - manage a specific vpc
-- get details of a specific load balancer
 - cloud computing
 - create load balancer
+- list subnets
 slug: networking
 source_filename: networking.yaml
 source_heading: Capability Spec

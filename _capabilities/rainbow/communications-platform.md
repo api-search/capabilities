@@ -43,50 +43,50 @@ personas: []
 provider_name: Rainbow
 provider_slug: rainbow
 search_terms:
-- send and retrieve chat messages
-- video
-- communications
-- send message
-- get message history for a specific rainbow conversation
-- list group chat rooms
-- unified communications
-- get contact
-- messaging
-- presence
-- update presence status in rainbow (online, away, busy, dnd)
-- update presence
-- update presence status
-- list bubbles
-- chat
-- send a message to a contact or group
-- user presence management
-- cpaas
-- send a chat message to a rainbow contact (1-to-1) or into a group bubble. supports text messages via rest api.
-- individual contact profiles
 - get own profile
-- search rainbow enterprise directory for contacts by name, email, or phone
-- contacts
-- list group chat rooms (bubbles) the user belongs to in rainbow
-- telephony
-- create bubble
-- get conversation messages
-- get the authenticated rainbow user's own profile
-- search contacts
-- get contact profile and presence
-- list conversations
-- create a new rainbow group chat room (bubble) with optional members
-- list and manage conversations
-- voice
 - get rainbow contact profile including presence status and contact details
-- group chat rooms
-- authenticated user's profile
-- list user conversations
-- collaboration
-- get my profile
-- contact directory search
 - list recent conversations for the authenticated rainbow user
+- video
+- create bubble
+- send a chat message to a rainbow contact (1-to-1) or into a group bubble. supports text messages via rest api.
+- list conversations
+- send message
+- get contact profile and presence
+- get my profile
+- list user conversations
+- user presence management
+- unified communications
+- create a new rainbow group chat room (bubble) with optional members
+- voice
+- presence
+- get message history for a specific rainbow conversation
+- contacts
+- update presence
+- get contact
+- update presence status
+- group chat rooms
+- get the authenticated rainbow user's own profile
+- telephony
+- chat
 - create a new group chat room
+- messaging
+- communications
+- collaboration
+- update presence status in rainbow (online, away, busy, dnd)
+- list group chat rooms
+- contact directory search
+- get conversation messages
+- search rainbow enterprise directory for contacts by name, email, or phone
 - search rainbow directory
+- list group chat rooms (bubbles) the user belongs to in rainbow
+- list bubbles
+- authenticated user's profile
+- send and retrieve chat messages
+- cpaas
+- send a message to a contact or group
+- search contacts
+- individual contact profiles
+- list and manage conversations
 slug: communications-platform
 source_filename: communications-platform.yaml
 source_heading: Capability Spec

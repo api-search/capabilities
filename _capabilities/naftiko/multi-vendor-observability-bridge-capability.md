@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability that fans out to existing observability stack (new relic + datadog + dynatrace + google cloud logging) plus opentelemetry traces and returns a unified agent-driven-api-call view, sized for the gartner-hasn't-caught-up gap john flagged.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability that fans out to existing observability stack (new relic + datadog + dynatrace + google cloud logging) plus opentelemetry traces and returns a unified agent-driven-api-call view, sized for the gartner-hasn't-caught-up gap john flagged.
 slug: multi-vendor-observability-bridge-capability
 source_filename: multi-vendor-observability-bridge-capability.yaml
 source_heading: Capability Spec

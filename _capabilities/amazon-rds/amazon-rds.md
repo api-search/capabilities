@@ -21,20 +21,20 @@ personas: []
 provider_name: Amazon RDS
 provider_slug: amazon-rds
 search_terms:
-- aws cloud resource management
 - amazon rds resources
-- database service
-- relational databases
-- automation workflow for amazon rds
-- aws
-- list resources
-- dbaas
-- list amazon rds resources
-- managed databases
-- cloud databases
-- engineer managing amazon rds resources
 - amazon rds
 - cloud operations
+- list resources
+- list amazon rds resources
+- aws cloud resource management
+- relational databases
+- engineer managing amazon rds resources
+- managed databases
+- database service
+- aws
+- cloud databases
+- dbaas
+- automation workflow for amazon rds
 slug: amazon-rds
 source_filename: amazon-rds.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- a accounting-api capability (rest + mcp dual exposure) wrapping a representative endpoint, brought as the apidays nyc follow-on artifact.
-- capabilities
 - ai
+- naftiko
+- a accounting-api capability (rest + mcp dual exposure) wrapping a representative endpoint, brought as the apidays nyc follow-on artifact.
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: accounting-rest-mcp-capability
 source_filename: accounting-rest-mcp-capability.yaml
 source_heading: Capability Spec

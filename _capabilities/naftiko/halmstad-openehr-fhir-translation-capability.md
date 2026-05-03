@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability that consumes legacy ehr records (hl7v2 / x12) and exposes an openehr-conformant + fhir-conformant output, with pii detection + https gates wired in.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability that consumes legacy ehr records (hl7v2 / x12) and exposes an openehr-conformant + fhir-conformant output, with pii detection + https gates wired in.
+- example op
+- governance
 slug: halmstad-openehr-fhir-translation-capability
 source_filename: halmstad-openehr-fhir-translation-capability.yaml
 source_heading: Capability Spec

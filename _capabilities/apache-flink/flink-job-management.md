@@ -27,42 +27,42 @@ personas: []
 provider_name: Apache Flink
 provider_slug: apache-flink
 search_terms:
-- get flink job
-- get job
-- list all flink streaming and batch jobs
-- list jobs
-- operators managing the flink cluster and ensuring job reliability
-- Platform Operator
-- stateful computing
-- Data Engineer
-- data engineering
-- get metrics for a flink job
-- shutdown cluster
-- job management
-- list taskmanagers
 - manage and monitor flink streaming and batch jobs
-- open source
-- taskmanager management
-- get performance metrics for a flink job
-- engineers submitting and monitoring flink streaming and batch jobs
-- flink job management
-- get details of a specific job
-- real-time analytics
-- monitoring
-- big data
-- stream processing
-- shut down the flink cluster
 - batch processing
-- list all taskmanagers in the flink cluster
+- shutdown cluster
+- Platform Operator
+- job management
+- taskmanager management
 - apache flink
-- get detailed status and information for a specific flink job
-- metrics, checkpoints, and cluster health monitoring
-- list all flink jobs
+- big data
+- monitoring
+- open source
+- stateful computing
 - list flink jobs
-- get job metrics
-- job performance metrics
+- list all flink streaming and batch jobs
+- stream processing
+- get flink job
+- real-time analytics
+- engineers submitting and monitoring flink streaming and batch jobs
+- data engineering
+- metrics, checkpoints, and cluster health monitoring
+- Data Engineer
+- list jobs
+- get metrics for a flink job
+- list all taskmanagers in the flink cluster
+- get details of a specific job
+- flink job management
+- list taskmanagers
+- operators managing the flink cluster and ensuring job reliability
 - job submission, tracking, and lifecycle management
 - apache
+- get performance metrics for a flink job
+- get detailed status and information for a specific flink job
+- get job metrics
+- get job
+- list all flink jobs
+- job performance metrics
+- shut down the flink cluster
 - list all taskmanagers
 slug: flink-job-management
 source_filename: flink-job-management.yaml

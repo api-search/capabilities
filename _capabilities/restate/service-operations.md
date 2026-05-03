@@ -66,69 +66,69 @@ personas: []
 provider_name: Restate
 provider_slug: restate
 search_terms:
-- register and manage service deployments
-- cancel invocation
-- forcefully kill an invocation
-- purge completed invocations
-- purge invocation
-- invocations
-- list all kafka subscriptions configured in restate
+- list services
 - get service metadata and handlers
 - durable execution
-- force kill invocations
-- kill invocation
-- list all restate service deployments registered with the cluster
-- list all handlers for a service
-- kafka subscriptions for event-driven invocations
-- create deployment
-- orchestration
-- deployments
-- cancel active invocations
-- microservices
-- get deployment
-- individual service management
-- service registry and metadata
-- modify service configuration
-- list all kafka subscriptions
-- register a new service deployment
-- list all registered service deployments
-- get service
 - service handler inspection
+- purge a completed invocation
+- get deployment
+- list all restate service deployments registered with the cluster
+- cancel invocation
+- list all registered services
 - cancel an in-flight invocation
 - get cluster health status
-- create a kafka subscription
-- get details and services of a specific restate deployment
-- update restate service configuration such as public access
-- kafka
-- delete deployment
-- list all durable handlers for a restate service
-- purge a completed restate invocation and free its associated state
-- register a new service endpoint with restate so it can receive invocations
-- operations
-- delete a deployment
-- create a kafka subscription to trigger restate handlers on incoming messages
-- list all services registered in restate
-- individual deployment management
-- list service handlers
-- check the health status of the restate cluster
-- list services
-- purge a completed invocation
-- cluster health and version
-- distributed systems
-- register deployment
-- services
-- cancel an in-flight restate invocation by id
-- list deployments
-- modify service
-- get deployment details
 - list subscriptions
-- get metadata and handler list for a specific restate service
-- cluster health
+- list all services registered in restate
+- create deployment
+- list all handlers for a service
+- kill invocation
+- delete a deployment
+- get details and services of a specific restate deployment
+- service registry and metadata
 - remove a service deployment from restate
-- create subscription
-- workflows
-- list all registered services
+- get deployment details
+- operations
+- individual service management
+- deployments
 - force kill a restate invocation (immediate termination)
+- individual deployment management
+- cluster health and version
+- purge completed invocations
+- check the health status of the restate cluster
+- register deployment
+- delete deployment
+- cancel an in-flight restate invocation by id
+- workflows
+- create a kafka subscription
+- create subscription
+- kafka
+- distributed systems
+- list all registered service deployments
+- cancel active invocations
+- cluster health
+- services
+- modify service
+- update restate service configuration such as public access
+- force kill invocations
+- get service
+- list deployments
+- microservices
+- purge a completed restate invocation and free its associated state
+- purge invocation
+- list all kafka subscriptions configured in restate
+- orchestration
+- register a new service deployment
+- register a new service endpoint with restate so it can receive invocations
+- get metadata and handler list for a specific restate service
+- list service handlers
+- invocations
+- modify service configuration
+- kafka subscriptions for event-driven invocations
+- register and manage service deployments
+- list all durable handlers for a restate service
+- create a kafka subscription to trigger restate handlers on incoming messages
+- forcefully kill an invocation
+- list all kafka subscriptions
 slug: service-operations
 source_filename: service-operations.yaml
 source_heading: Capability Spec

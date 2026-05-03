@@ -47,56 +47,56 @@ personas: []
 provider_name: Salesforce Service Cloud
 provider_slug: salesforce-service-cloud
 search_terms:
-- contact management for service
-- create a new customer service case with subject, description, priority, and contact
-- ticketing
-- delete a case record
-- service cloud
-- get contact
-- update case status or details
 - get case
-- help desk
-- get customer service case details by id
-- create contact
-- query cases using soql for filtering by status, priority, account, or agent
-- get account information for service context
-- salesforce
-- get account details
-- customer service
-- update case status
-- send chat message
-- create a new customer service case
-- create case
-- individual contact
-- crm
-- get account
-- case lifecycle management
-- end chat session
-- account for service context
-- initiate live chat
-- close a customer service case by updating status to closed
-- live chat initiation
-- send a message in an active live chat session
-- query
-- initiate a live chat session with a service agent
-- get a contact
-- support
-- create a new contact record for a customer
-- update case status, priority, or description
-- individual case operations
-- update case
-- get contact details for a customer
-- initiate a live chat session
-- create a contact
-- get case details
-- query cases
 - soql query
+- query cases
+- create a contact
+- get a contact
 - query service data
+- initiate a live chat session
+- update case status or details
+- get account information for service context
 - case management
 - delete a case
+- end chat session
+- send a message in an active live chat session
+- create a new customer service case with subject, description, priority, and contact
+- live chat initiation
+- get contact details for a customer
+- salesforce
+- create a new contact record for a customer
+- initiate a live chat session with a service agent
 - end an active live chat session
-- delete case
+- get contact
+- create case
+- get account
+- update case status
+- send chat message
+- help desk
+- service cloud
+- initiate live chat
+- account for service context
+- update case status, priority, or description
+- get account details
+- close a customer service case by updating status to closed
+- delete a case record
 - close case
+- query
+- get customer service case details by id
+- update case
+- customer service
+- create contact
+- contact management for service
+- individual case operations
+- individual contact
+- support
+- delete case
+- get case details
+- create a new customer service case
+- query cases using soql for filtering by status, priority, account, or agent
+- ticketing
+- crm
+- case lifecycle management
 slug: case-management
 source_filename: case-management.yaml
 source_heading: Capability Spec

@@ -1,0 +1,249 @@
+---
+api_specs:
+- filename: visteon-phoenix-openapi.yml
+  format: yaml
+  label: visteon-phoenix
+  slug: visteon-phoenix
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/visteon/refs/heads/main/openapi/visteon-phoenix-openapi.yml
+categories: []
+consumed_apis:
+- visteon-phoenix
+description: Workflow capability for automotive connected cockpit applications built on the Visteon Phoenix platform. Combines audio, phone, media, navigation, vehicle data, and screen management APIs into a unified interface for in-vehicle infotainment experience. Used by automotive app developers and OEM integration teams to build context-aware, multi-domain cockpit applications.
+layout: capability
+name: Visteon Connected Cockpit
+operations:
+- description: Get current vehicle speed, fuel, odometer, and HVAC data
+  method: GET
+  name: get-vehicle-data
+  path: /v1/vehicle/data
+- description: Get current audio playback status
+  method: GET
+  name: get-audio-status
+  path: /v1/audio/status
+- description: Get current volume level
+  method: GET
+  name: get-volume
+  path: /v1/audio/volume
+- description: Set master volume level
+  method: PUT
+  name: set-volume
+  path: /v1/audio/volume
+- description: List all available audio input sources
+  method: GET
+  name: list-audio-sources
+  path: /v1/audio/sources
+- description: Get Bluetooth phone connection and call status
+  method: GET
+  name: get-phone-status
+  path: /v1/phone/status
+- description: List active phone calls
+  method: GET
+  name: list-calls
+  path: /v1/phone/calls
+- description: Initiate an outgoing phone call
+  method: POST
+  name: make-call
+  path: /v1/phone/calls
+- description: Browse media library from connected devices
+  method: GET
+  name: browse-media-library
+  path: /v1/media/library
+- description: Get currently playing media track
+  method: GET
+  name: get-now-playing
+  path: /v1/media/now-playing
+- description: Get active navigation route with ETA
+  method: GET
+  name: get-active-route
+  path: /v1/navigation/route
+- description: Start navigation to a destination
+  method: POST
+  name: start-navigation
+  path: /v1/navigation/route
+- description: Cancel the active navigation route
+  method: DELETE
+  name: cancel-navigation
+  path: /v1/navigation/route
+- description: Search points of interest near vehicle
+  method: GET
+  name: search-poi
+  path: /v1/navigation/search
+- description: List all cockpit display screens
+  method: GET
+  name: list-displays
+  path: /v1/screen/displays
+personas: []
+provider_name: Visteon
+provider_slug: visteon
+search_terms:
+- available audio sources
+- phone call management
+- list audio sources
+- infotainment
+- list displays
+- navigation
+- automotive
+- visteon
+- get real-time vehicle telemetry including speed, fuel level, odometer, and hvac settings
+- get current audio playback status
+- navigation route management
+- cockpit display management
+- vehicle telemetry and status
+- list all available audio input sources (fm, am, bluetooth, usb, aux)
+- get bluetooth phone connection status and active call information
+- start turn-by-turn navigation to a specified destination
+- list all cockpit display screens
+- cancel the active navigation route
+- volume control
+- set volume
+- set master volume level
+- get phone status
+- get currently playing media track
+- initiate an outgoing phone call
+- list all cockpit display screens and their configuration
+- hmi
+- start navigation to a destination
+- get now playing
+- get currently playing media track with artist, album, and duration
+- media content library
+- browse media library from connected devices
+- browse media library
+- initiate an outgoing phone call from the vehicle
+- search for points of interest near the vehicle location
+- get volume
+- audio system state
+- make call
+- browse music, video, and photo media from connected devices
+- list all available audio input sources
+- list active and on-hold phone calls
+- get bluetooth phone connection and call status
+- start navigation
+- cancel the currently active navigation route
+- get vehicle data
+- get audio status
+- vehicle data
+- get current vehicle speed, fuel, odometer, and hvac data
+- list active phone calls
+- get current audio system playback status and active source
+- currently playing media
+- get current volume level and mute state
+- get the active navigation route with eta and remaining distance
+- get current volume level
+- search poi
+- list calls
+- connected car
+- search points of interest near vehicle
+- get active navigation route with eta
+- phone connection status
+- points of interest search
+- iot
+- audio
+- get active route
+- cancel navigation
+- set the master audio volume level
+slug: connected-cockpit
+source_filename: connected-cockpit.yaml
+source_heading: Capability Spec
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Visteon Connected Cockpit\"\n  description: >-\n    Workflow capability for automotive connected cockpit applications built on the\n    Visteon Phoenix platform. Combines audio, phone, media, navigation, vehicle data,\n    and screen management APIs into a unified interface for in-vehicle infotainment\n    experience. Used by automotive app developers and OEM integration teams to build\n    context-aware, multi-domain cockpit applications.\n  tags:\n    - Audio\n    - Automotive\n    - Connected Car\n    - HMI\n    - Infotainment\n    - Navigation\n    - Vehicle Data\n    - Visteon\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      VISTEON_PHOENIX_API_KEY: VISTEON_PHOENIX_API_KEY\n\ncapability:\n  consumes:\n    - import: visteon-phoenix\n      location: ./shared/visteon-phoenix.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: visteon-cockpit-api\n    \
+  \  description: \"Unified REST API for Visteon connected cockpit applications.\"\n      resources:\n        - path: /v1/vehicle/data\n          name: vehicle-data\n          description: \"Vehicle telemetry and status\"\n          operations:\n            - method: GET\n              name: get-vehicle-data\n              description: \"Get current vehicle speed, fuel, odometer, and HVAC data\"\n              call: \"visteon-phoenix.get-vehicle-data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audio/status\n          name: audio-status\n          description: \"Audio system state\"\n          operations:\n            - method: GET\n              name: get-audio-status\n              description: \"Get current audio playback status\"\n              call: \"visteon-phoenix.get-audio-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audio/volume\n\
+  \          name: volume\n          description: \"Volume control\"\n          operations:\n            - method: GET\n              name: get-volume\n              description: \"Get current volume level\"\n              call: \"visteon-phoenix.get-volume\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: set-volume\n              description: \"Set master volume level\"\n              call: \"visteon-phoenix.set-volume\"\n              with:\n                level: \"rest.level\"\n                mute: \"rest.mute\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audio/sources\n          name: audio-sources\n          description: \"Available audio sources\"\n          operations:\n            - method: GET\n              name: list-audio-sources\n              description: \"List all available audio input sources\"\
+  \n              call: \"visteon-phoenix.list-audio-sources\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/phone/status\n          name: phone-status\n          description: \"Phone connection status\"\n          operations:\n            - method: GET\n              name: get-phone-status\n              description: \"Get Bluetooth phone connection and call status\"\n              call: \"visteon-phoenix.get-phone-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/phone/calls\n          name: calls\n          description: \"Phone call management\"\n          operations:\n            - method: GET\n              name: list-calls\n              description: \"List active phone calls\"\n              call: \"visteon-phoenix.list-calls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
+  \            - method: POST\n              name: make-call\n              description: \"Initiate an outgoing phone call\"\n              call: \"visteon-phoenix.make-call\"\n              with:\n                number: \"rest.number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/media/library\n          name: media-library\n          description: \"Media content library\"\n          operations:\n            - method: GET\n              name: browse-media-library\n              description: \"Browse media library from connected devices\"\n              call: \"visteon-phoenix.browse-media-library\"\n              with:\n                type: \"rest.type\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/media/now-playing\n          name: now-playing\n          description:\
+  \ \"Currently playing media\"\n          operations:\n            - method: GET\n              name: get-now-playing\n              description: \"Get currently playing media track\"\n              call: \"visteon-phoenix.get-now-playing\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/navigation/route\n          name: navigation-route\n          description: \"Navigation route management\"\n          operations:\n            - method: GET\n              name: get-active-route\n              description: \"Get active navigation route with ETA\"\n              call: \"visteon-phoenix.get-active-route\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: start-navigation\n              description: \"Start navigation to a destination\"\n              call: \"visteon-phoenix.start-navigation\"\n              with:\n    \
+  \            destination: \"rest.destination\"\n                avoidTolls: \"rest.avoidTolls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: cancel-navigation\n              description: \"Cancel the active navigation route\"\n              call: \"visteon-phoenix.cancel-navigation\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/navigation/search\n          name: poi-search\n          description: \"Points of interest search\"\n          operations:\n            - method: GET\n              name: search-poi\n              description: \"Search points of interest near vehicle\"\n              call: \"visteon-phoenix.search-poi\"\n              with:\n                query: \"rest.query\"\n                lat: \"rest.lat\"\n                lon: \"rest.lon\"\n                radius: \"rest.radius\"\n          \
+  \    outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/screen/displays\n          name: displays\n          description: \"Cockpit display management\"\n          operations:\n            - method: GET\n              name: list-displays\n              description: \"List all cockpit display screens\"\n              call: \"visteon-phoenix.list-displays\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: visteon-cockpit-mcp\n      transport: http\n      description: \"MCP server for AI-assisted automotive cockpit control and telemetry.\"\n      tools:\n        - name: get-vehicle-data\n          description: \"Get real-time vehicle telemetry including speed, fuel level, odometer, and HVAC settings\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.get-vehicle-data\"\n\
+  \          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-audio-status\n          description: \"Get current audio system playback status and active source\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.get-audio-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-volume\n          description: \"Get current volume level and mute state\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.get-volume\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: set-volume\n          description: \"Set the master audio volume level\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"visteon-phoenix.set-volume\"\n          with:\n            level: \"tools.level\"\
+  \n            mute: \"tools.mute\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-audio-sources\n          description: \"List all available audio input sources (FM, AM, Bluetooth, USB, aux)\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.list-audio-sources\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-phone-status\n          description: \"Get Bluetooth phone connection status and active call information\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.get-phone-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-calls\n          description: \"List active and on-hold phone calls\"\n          hints:\n            readOnly: true\n            idempotent: true\n        \
+  \  call: \"visteon-phoenix.list-calls\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: make-call\n          description: \"Initiate an outgoing phone call from the vehicle\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"visteon-phoenix.make-call\"\n          with:\n            number: \"tools.number\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: browse-media-library\n          description: \"Browse music, video, and photo media from connected devices\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.browse-media-library\"\n          with:\n            type: \"tools.type\"\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-now-playing\n\
+  \          description: \"Get currently playing media track with artist, album, and duration\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.get-now-playing\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-active-route\n          description: \"Get the active navigation route with ETA and remaining distance\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.get-active-route\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-navigation\n          description: \"Start turn-by-turn navigation to a specified destination\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"visteon-phoenix.start-navigation\"\n          with:\n            destination: \"tools.destination\"\n            avoidTolls: \"\
+  tools.avoidTolls\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cancel-navigation\n          description: \"Cancel the currently active navigation route\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"visteon-phoenix.cancel-navigation\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-poi\n          description: \"Search for points of interest near the vehicle location\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.search-poi\"\n          with:\n            query: \"tools.query\"\n            lat: \"tools.lat\"\n            lon: \"tools.lon\"\n            radius: \"tools.radius\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-displays\n          description:\
+  \ \"List all cockpit display screens and their configuration\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"visteon-phoenix.list-displays\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/visteon/refs/heads/main/capabilities/connected-cockpit.yaml
+tags:
+- Audio
+- Automotive
+- Connected Car
+- HMI
+- Infotainment
+- Navigation
+- Vehicle Data
+- Visteon
+tools:
+- description: Get real-time vehicle telemetry including speed, fuel level, odometer, and HVAC settings
+  hints:
+    idempotent: true
+    readOnly: true
+  name: get-vehicle-data
+- description: Get current audio system playback status and active source
+  hints:
+    idempotent: true
+    readOnly: true
+  name: get-audio-status
+- description: Get current volume level and mute state
+  hints:
+    idempotent: true
+    readOnly: true
+  name: get-volume
+- description: Set the master audio volume level
+  hints:
+    idempotent: true
+    readOnly: false
+  name: set-volume
+- description: List all available audio input sources (FM, AM, Bluetooth, USB, aux)
+  hints:
+    idempotent: true
+    readOnly: true
+  name: list-audio-sources
+- description: Get Bluetooth phone connection status and active call information
+  hints:
+    idempotent: true
+    readOnly: true
+  name: get-phone-status
+- description: List active and on-hold phone calls
+  hints:
+    idempotent: true
+    readOnly: true
+  name: list-calls
+- description: Initiate an outgoing phone call from the vehicle
+  hints:
+    idempotent: false
+    readOnly: false
+  name: make-call
+- description: Browse music, video, and photo media from connected devices
+  hints:
+    idempotent: true
+    readOnly: true
+  name: browse-media-library
+- description: Get currently playing media track with artist, album, and duration
+  hints:
+    idempotent: true
+    readOnly: true
+  name: get-now-playing
+- description: Get the active navigation route with ETA and remaining distance
+  hints:
+    idempotent: true
+    readOnly: true
+  name: get-active-route
+- description: Start turn-by-turn navigation to a specified destination
+  hints:
+    idempotent: false
+    readOnly: false
+  name: start-navigation
+- description: Cancel the currently active navigation route
+  hints:
+    destructive: true
+    idempotent: true
+    readOnly: false
+  name: cancel-navigation
+- description: Search for points of interest near the vehicle location
+  hints:
+    idempotent: true
+    readOnly: true
+  name: search-poi
+- description: List all cockpit display screens and their configuration
+  hints:
+    idempotent: true
+    readOnly: true
+  name: list-displays
+---

@@ -13,7 +13,7 @@ description: 'Threat detection, vulnerability management, firewall and WAF rules
 
   '
 domain: security
-implementation_count: 22
+implementation_count: 20
 implementations:
 - capability_name: 1Password Secrets Management
   capability_slug: 1password-secrets-management
@@ -72,36 +72,6 @@ implementations:
   - Monitoring
   - MSP
   tool_count: 10
-- capability_name: Amazon Certificate Manager Certificate Lifecycle Management
-  capability_slug: certificate-lifecycle-management
-  capability_url: https://capabilities.apis.io/capabilities/amazon-certificate-manager/certificate-lifecycle-management/
-  consumed_api_count: 1
-  operation_count: 4
-  provider_name: Amazon Certificate Manager
-  provider_slug: amazon-certificate-manager
-  tags:
-  - Amazon Web Services
-  - Certificates
-  - SSL
-  - TLS
-  - Security
-  - DevOps
-  tool_count: 4
-- capability_name: Amazon CodeGuru Security Application Security Scanning
-  capability_slug: amazon-codeguru-security-security-scanning
-  capability_url: https://capabilities.apis.io/capabilities/amazon-codeguru-security/amazon-codeguru-security-security-scanning/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon CodeGuru Security
-  provider_slug: amazon-codeguru-security
-  tags:
-  - Amazon
-  - Security
-  - SAST
-  - Code Analysis
-  - DevSecOps
-  - Developer Tools
-  tool_count: 7
 - capability_name: Amazon Firewall Manager Security Governance
   capability_slug: amazon-firewall-manager-security-governance
   capability_url: https://capabilities.apis.io/capabilities/amazon-firewall-manager/amazon-firewall-manager-security-governance/
@@ -310,7 +280,7 @@ implementations:
   - Security
   - Access Control
   - Administration
-  tool_count: 15
+  tool_count: 21
 - capability_name: WebSphere Security and Compliance
   capability_slug: security-and-compliance
   capability_url: https://capabilities.apis.io/capabilities/websphere/security-and-compliance/
@@ -326,7 +296,7 @@ implementations:
   tool_count: 9
 layout: category
 name: Security
-provider_count: 22
+provider_count: 20
 related:
 - compliance
 - identity-access

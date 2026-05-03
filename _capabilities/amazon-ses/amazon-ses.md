@@ -21,22 +21,22 @@ personas: []
 provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
-- aws cloud resource management
-- list amazon ses resources
+- email
 - email deliverability
-- email service
-- aws
+- cloud operations
+- amazon ses resources
+- list resources
+- automation workflow for amazon ses
 - marketing email
+- aws cloud resource management
+- engineer managing amazon ses resources
+- aws
+- list amazon ses resources
+- notifications
+- email service
+- transactional email
 - amazon ses
 - smtp
-- automation workflow for amazon ses
-- email
-- transactional email
-- notifications
-- amazon ses resources
-- cloud operations
-- engineer managing amazon ses resources
-- list resources
 slug: amazon-ses
 source_filename: amazon-ses.yaml
 source_heading: Capability Spec

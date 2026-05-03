@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - mcp
-- governance
-- a capability over the iata ndc airline-distribution surface that returns one shaped agent-context object for an customer-service ai assistant.
-- capabilities
 - ai
+- a capability over the iata ndc airline-distribution surface that returns one shaped agent-context object for an customer-service ai assistant.
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: iata-ndc-shopping-context-capability
 source_filename: iata-ndc-shopping-context-capability.yaml
 source_heading: Capability Spec

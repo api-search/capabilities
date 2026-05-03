@@ -16,7 +16,7 @@ description: 'Capabilities that operate API gateways and developer-platform infr
 
   '
 domain: developer-tools
-implementation_count: 12
+implementation_count: 10
 implementations:
 - capability_name: Aklivity Kafka API Gateway
   capability_slug: kafka-api-gateway
@@ -33,31 +33,6 @@ implementations:
   - Multi-Protocol
   - Real-Time
   tool_count: 2
-- capability_name: Amazon API Gateway Management
-  capability_slug: api-gateway-management
-  capability_url: https://capabilities.apis.io/capabilities/amazon-api-gateway/api-gateway-management/
-  consumed_api_count: 1
-  operation_count: 1
-  provider_name: Amazon API Gateway
-  provider_slug: amazon-api-gateway
-  tags:
-  - Amazon
-  - API Gateway
-  - API Management
-  tool_count: 2
-- capability_name: GraphQL Api Management Workflow
-  capability_slug: graphql-api-management
-  capability_url: https://capabilities.apis.io/capabilities/amazon-appsync/graphql-api-management/
-  consumed_api_count: 0
-  operation_count: 3
-  provider_name: Amazon AppSync
-  provider_slug: amazon-appsync
-  tags:
-  - Amazon AppSync
-  - GraphQL
-  - API Management
-  - Serverless
-  tool_count: 10
 - capability_name: Apache APISIX Gateway Configuration
   capability_slug: apisix-gateway-config
   capability_url: https://capabilities.apis.io/capabilities/apache-apisix/apisix-gateway-config/
@@ -181,7 +156,7 @@ implementations:
   tool_count: 16
 layout: category
 name: API Management
-provider_count: 10
+provider_count: 8
 related:
 - ci-cd
 - identity-access

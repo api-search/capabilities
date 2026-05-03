@@ -16,7 +16,7 @@ description: 'Travel distribution and booking — GDS access (Amadeus, Sabre, Tr
 
   '
 domain: travel
-implementation_count: 8
+implementation_count: 3
 implementations:
 - capability_name: AeroDataBox Flight Tracking
   capability_slug: flight-tracking
@@ -32,83 +32,6 @@ implementations:
   - Travel
   - Airport Operations
   tool_count: 6
-- capability_name: Amadeus Full Travel Booking
-  capability_slug: travel-booking
-  capability_url: https://capabilities.apis.io/capabilities/amadeus/travel-booking/
-  consumed_api_count: 2
-  operation_count: 2
-  provider_name: Amadeus
-  provider_slug: amadeus
-  tags:
-  - Amadeus
-  - Flights
-  - Hotels
-  - Transfers
-  - Booking
-  - Travel
-  tool_count: 2
-- capability_name: Amadeus Hotel Media Discovery
-  capability_slug: hotel-media-discovery
-  capability_url: https://capabilities.apis.io/capabilities/amadeus-media/hotel-media-discovery/
-  consumed_api_count: 2
-  operation_count: 4
-  provider_name: Amadeus Media
-  provider_slug: amadeus-media
-  tags:
-  - Amadeus
-  - Hotels
-  - Media
-  - Content
-  - Travel
-  - Images
-  tool_count: 4
-- capability_name: Amadeus Travel Booking
-  capability_slug: travel-booking
-  capability_url: https://capabilities.apis.io/capabilities/amadeus-reservations/travel-booking/
-  consumed_api_count: 3
-  operation_count: 6
-  provider_name: Amadeus Reservations
-  provider_slug: amadeus-reservations
-  tags:
-  - Amadeus
-  - Booking
-  - Flights
-  - Hotels
-  - Transfers
-  - Travel
-  tool_count: 6
-- capability_name: Amadeus Flight Shopping
-  capability_slug: flight-shopping
-  capability_url: https://capabilities.apis.io/capabilities/amadeus-solutions/flight-shopping/
-  consumed_api_count: 2
-  operation_count: 2
-  provider_name: Amadeus Solutions
-  provider_slug: amadeus-solutions
-  tags:
-  - Amadeus
-  - Flights
-  - Shopping
-  - Search
-  - Pricing
-  - Travel
-  tool_count: 3
-- capability_name: Amadeus Destination Discovery
-  capability_slug: destination-discovery
-  capability_url: https://capabilities.apis.io/capabilities/amadeus-traveler-media/destination-discovery/
-  consumed_api_count: 2
-  operation_count: 3
-  provider_name: Amadeus Traveler Media
-  provider_slug: amadeus-traveler-media
-  tags:
-  - Amadeus
-  - Destinations
-  - Discovery
-  - Hotels
-  - Media
-  - Points of Interest
-  - Tourism
-  - Travel
-  tool_count: 3
 - capability_name: American Airlines Flight Operations
   capability_slug: flight-operations
   capability_url: https://capabilities.apis.io/capabilities/american-airlines/flight-operations/
@@ -143,7 +66,7 @@ implementations:
   tool_count: 7
 layout: category
 name: Travel & Booking
-provider_count: 8
+provider_count: 3
 related:
 - payments
 - customer-engagement

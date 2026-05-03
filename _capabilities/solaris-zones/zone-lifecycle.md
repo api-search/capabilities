@@ -46,60 +46,60 @@ personas: []
 provider_name: Solaris Zones
 provider_slug: solaris-zones
 search_terms:
-- zones
-- gracefully shutdown a zone.
 - zone inventory and creation.
-- verify zone configuration integrity.
-- lifecycle management
-- operating systems
-- boot the zone.
-- statsstore
+- migrate a zone to another host.
 - gracefully shutdown.
+- delete a zone.
+- gracefully shutdown a zone.
+- delete a solaris zone.
+- kernel zones
+- clone a solaris zone.
+- create zone
+- zone state operations.
+- list all zones.
+- boot a zone.
+- create a new zone.
+- boot the zone.
+- shutdown a zone.
+- migrate to another host.
+- get solaris zone details.
+- rad
+- solaris
+- get zone details.
+- reboot a zone.
+- get zone
+- operating systems
+- individual zone operations.
+- migrate zone
 - list all solaris zones with status.
+- reboot the zone.
+- install zone
+- uninstall a solaris zone.
+- containers
+- oracle
+- resource management
+- statsstore
+- boot zone
+- get current zone state.
+- install a solaris zone.
+- migrate a zone.
 - create a new solaris zone.
 - delete zone
-- solaris
-- halt zone
-- boot a zone.
-- migrate to another host.
-- boot zone
-- get zone details.
-- zone state operations.
-- delete a solaris zone.
-- reboot the zone.
-- individual zone operations.
-- install a solaris zone.
-- get zone
-- reboot a zone.
+- reboot zone
+- lifecycle management
 - reboot a solaris zone.
-- migrate zone
-- containers
-- shutdown a zone.
-- migrate a zone.
-- install zone
+- zones
+- halt a zone immediately.
+- halt zone
+- list zones
+- get zone state
+- clone zone
+- verify zone configuration integrity.
 - verify zone
 - uninstall zone
-- kernel zones
-- oracle
-- rad
-- resource management
-- virtualization
-- create zone
-- list zones
-- uninstall a solaris zone.
-- get current zone state.
-- list all zones.
-- delete a zone.
 - shutdown zone
-- reboot zone
-- get solaris zone details.
-- create a new zone.
 - boot a solaris zone.
-- clone zone
-- clone a solaris zone.
-- halt a zone immediately.
-- migrate a zone to another host.
-- get zone state
+- virtualization
 slug: zone-lifecycle
 source_filename: zone-lifecycle.yaml
 source_heading: Capability Spec

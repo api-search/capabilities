@@ -16,16 +16,16 @@ provider_slug: amazon-s3-glacier
 search_terms:
 - list amazon s3 glacier resources
 - amazon s3 glacier
-- engineer managing amazon s3 glacier resources
-- aws cloud resource management
-- storage
-- automation workflow for amazon s3 glacier
-- aws
-- archive
-- amazon s3 glacier resources
-- backup
 - cloud operations
+- amazon s3 glacier resources
+- storage
 - list resources
+- aws cloud resource management
+- backup
+- aws
+- engineer managing amazon s3 glacier resources
+- archive
+- automation workflow for amazon s3 glacier
 slug: amazon-s3-glacier
 source_filename: amazon-s3-glacier.yaml
 source_heading: Capability Spec

@@ -38,40 +38,40 @@ personas: []
 provider_name: Sendbird
 provider_slug: sendbird
 search_terms:
-- list channels
-- send a message to a customer in a support channel.
-- send message
-- send a message.
-- ban a disruptive user from a channel.
-- manage a specific user.
-- list users (customers and agents).
-- list group channels.
-- sendbird
-- manage support users and customers.
-- create a support channel.
-- customer support
-- messaging
-- create a new user.
-- chat
-- create channel
 - create user
-- mute user
-- get details of a specific customer or agent.
-- get user details.
-- ban user
-- manage channel messages.
-- send support message
-- list messages in a channel.
-- list messages in a support conversation channel.
-- create support channel
-- list customers and agents in the sendbird application.
-- list users
-- manage support conversation channels.
+- ban a disruptive user from a channel.
+- send message
 - temporarily mute a user in a channel.
-- list all support conversation channels.
-- create a new support conversation channel between a customer and agent.
+- get user details.
+- list group channels.
 - get user
+- list users (customers and agents).
+- create support channel
+- list channels
+- send support message
+- manage channel messages.
+- list messages in a support conversation channel.
+- sendbird
+- chat
+- messaging
+- manage support users and customers.
+- list users
+- send a message to a customer in a support channel.
+- create a new user.
 - list messages
+- list all support conversation channels.
+- mute user
+- create a new support conversation channel between a customer and agent.
+- get details of a specific customer or agent.
+- create channel
+- customer support
+- list messages in a channel.
+- create a support channel.
+- manage support conversation channels.
+- ban user
+- list customers and agents in the sendbird application.
+- send a message.
+- manage a specific user.
 slug: customer-support-messaging
 source_filename: customer-support-messaging.yaml
 source_heading: Capability Spec

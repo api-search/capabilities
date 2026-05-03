@@ -38,45 +38,45 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
+- image generation
 - video
+- text-to-image generation
 - photography
-- generate similar images
-- generative fill operations
-- graphics
-- ai object compositing
-- generative ai
-- generate video
+- expand an image beyond its original boundaries using generative ai
 - similar image generation from reference
-- get the status of an async generation job
-- expand image
-- generate composite
+- graphics
+- generate video
+- generative image expansion
 - generate a video from a text prompt
 - generate a short video clip from a text prompt
-- image generation
-- generate images visually similar to a reference image
+- generate composite
 - generate an ai object and composite it into a scene image
-- get job status
-- fill a masked region of an image with ai-generated content
-- get the status of an asynchronous firefly generation job
 - adobe
-- design
-- fill a masked region with ai-generated content
-- text-to-image generation
-- generate and composite an ai object into a scene
-- ai video generation
-- video generation
-- expand an image beyond its original boundaries using generative ai
+- expand image
 - firefly
-- creative
-- fill image
-- generate one or more images from a text prompt using adobe firefly
-- content generation
+- get job status
+- generate and composite an ai object into a scene
+- ai object compositing
 - generate images from a text prompt
+- video generation
+- generative fill operations
+- generate one or more images from a text prompt using adobe firefly
+- generate similar images
+- get the status of an async generation job
+- generative ai
+- get the status of an asynchronous firefly generation job
+- design
 - generate images similar to a reference image
-- generative image expansion
-- expand an image beyond its boundaries
+- fill a masked region with ai-generated content
 - generation job status
+- generate images visually similar to a reference image
+- fill a masked region of an image with ai-generated content
+- content generation
+- fill image
+- ai video generation
+- expand an image beyond its boundaries
 - generate images
+- creative
 slug: ai-content-generation
 source_filename: ai-content-generation.yaml
 source_heading: Capability Spec

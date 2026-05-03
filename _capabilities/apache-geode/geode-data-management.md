@@ -22,40 +22,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- data grid
-- server-side function execution
-- list all server-side functions available in the cluster
-- data management
-- get all keys stored in a geode region
-- execute an oql query against geode regions
-- get region keys
-- Platform Engineer
-- list all geode regions
-- execute oql query
-- list available functions
-- developers using geode as a fast data store for applications
 - list regions
-- open source
+- execute an oql query against geode regions
 - list geode regions
-- list all regions in the apache geode data grid
-- execute an oql query
-- platform engineering
-- engineers managing the geode cluster infrastructure
-- manage in-memory data with regions, queries, and functions
-- list functions
-- in-memory data grid
-- geode region management
-- caching
-- in-memory
-- distributed systems
-- Application Developer
-- execute query
-- apache geode
-- high-performance in-memory data caching and distribution
-- oql query execution
+- Platform Engineer
 - list geode functions
+- open source
+- server-side function execution
+- get all keys stored in a geode region
 - region crud operations, oql queries, and function execution
+- execute query
+- list functions
+- Application Developer
+- manage in-memory data with regions, queries, and functions
+- execute an oql query
+- in-memory data grid
+- execute oql query
+- platform engineering
+- geode region management
+- distributed systems
+- developers using geode as a fast data store for applications
+- list all server-side functions available in the cluster
 - apache
+- data management
+- high-performance in-memory data caching and distribution
+- engineers managing the geode cluster infrastructure
+- data grid
+- caching
+- list available functions
+- get region keys
+- list all geode regions
+- oql query execution
+- in-memory
+- list all regions in the apache geode data grid
+- apache geode
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

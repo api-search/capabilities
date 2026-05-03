@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability composition demo where multiple -internal apis become one consumable capability — the de-dup story for a team lead persona.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability composition demo where multiple -internal apis become one consumable capability — the de-dup story for a team lead persona.
 slug: multi-api-composition-capability
 source_filename: multi-api-composition-capability.yaml
 source_heading: Capability Spec

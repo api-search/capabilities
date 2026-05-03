@@ -35,41 +35,41 @@ personas: []
 provider_name: RubyGems
 provider_slug: rubygems
 search_terms:
-- get gem
-- get timeframe versions
-- get gem versions released in a timeframe
-- discovery
-- get latest version
-- get the latest version of a gem
-- ruby
-- get all gem versions
-- get latest gem version
-- get gem owners
-- list all published versions of a gem
-- developer tools
-- get the latest published version number of a ruby gem
-- open source
-- search for gems
-- get gem info
 - list gems depending on a specific gem
-- package manager
+- get all gem versions released within a given timeframe (up to 7 days)
+- list all published versions of a ruby gem with metadata
+- open source
+- get gem
+- search for gems
 - get gem details
+- get detailed metadata for a specific ruby gem
+- package manager
+- rubygems
+- get timeframe versions
+- list the owners of a specific ruby gem
 - get detailed gem metadata
 - search rubygems.org for ruby gems by name or description
-- get detailed metadata for a specific ruby gem
-- find which ruby gems depend on a given gem (downstream impact analysis)
-- get gems that depend on this gem
-- get recently released versions
-- list gem versions
-- list the owners of a specific ruby gem
-- search rubygems.org for gems by name or description
-- gems
-- recently released gem versions
-- search gems
-- rubygems
-- list all published versions of a ruby gem with metadata
-- get all gem versions released within a given timeframe (up to 7 days)
+- get gem owners
 - get reverse dependencies
+- get the latest published version number of a ruby gem
+- developer tools
+- get all gem versions
+- gems
+- list all published versions of a gem
+- get gem info
+- get the latest version of a gem
+- discovery
+- recently released gem versions
+- ruby
+- get gem versions released in a timeframe
+- get gems that depend on this gem
+- get latest gem version
+- get latest version
+- list gem versions
+- search gems
+- get recently released versions
+- find which ruby gems depend on a given gem (downstream impact analysis)
+- search rubygems.org for gems by name or description
 slug: gem-discovery
 source_filename: gem-discovery.yaml
 source_heading: Capability Spec

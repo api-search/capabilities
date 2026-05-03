@@ -45,40 +45,40 @@ personas: []
 provider_name: Rancher
 provider_slug: rancher
 search_terms:
-- infrastructure
-- create a new project.
-- cluster management
 - create cluster
-- create project
-- list clusters
-- open source
-- list all nodes across clusters.
-- platform engineering
-- kubernetes
-- list projects
-- provision a new kubernetes cluster through rancher. specify name, provider, and kubernetes version.
 - suse
-- single cluster.
-- create a new rancher project within a cluster to organize namespaces.
-- list all kubernetes clusters managed by rancher, including their state, provider, and kubernetes version.
+- cluster management
+- list projects
+- open source
 - retrieve details for a specific rancher-managed cluster by id.
-- containers
-- kubernetes clusters managed by rancher.
-- list all nodes across rancher-managed clusters, including hostname, state, and roles.
-- multi-cluster
+- create project
+- provision a new kubernetes cluster through rancher. specify name, provider, and kubernetes version.
+- remove a cluster from rancher.
+- kubernetes
+- single cluster.
+- list nodes
 - get cluster details.
+- create a new project.
+- platform engineering
+- list all nodes across rancher-managed clusters, including hostname, state, and roles.
 - get cluster
 - cluster nodes.
-- list all clusters.
-- list all projects.
-- remove a cluster from rancher.
+- containers
 - provision a new cluster.
-- rancher
-- remove a cluster from rancher management. this deregisters or destroys the cluster.
-- delete cluster
-- list all rancher projects, which group namespaces within clusters for tenancy and policy.
-- list nodes
 - rancher projects.
+- list all rancher projects, which group namespaces within clusters for tenancy and policy.
+- list clusters
+- list all kubernetes clusters managed by rancher, including their state, provider, and kubernetes version.
+- kubernetes clusters managed by rancher.
+- list all projects.
+- list all clusters.
+- list all nodes across clusters.
+- rancher
+- create a new rancher project within a cluster to organize namespaces.
+- delete cluster
+- infrastructure
+- remove a cluster from rancher management. this deregisters or destroys the cluster.
+- multi-cluster
 slug: cluster-lifecycle
 source_filename: cluster-lifecycle.yaml
 source_heading: Capability Spec

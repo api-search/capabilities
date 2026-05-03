@@ -10,8 +10,8 @@ provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
 - security
-- vpn
 - networking
+- vpn
 slug: amazon-vpn-capability
 source_filename: amazon-vpn-capability.yaml
 source_heading: Capability Spec

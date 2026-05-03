@@ -52,40 +52,40 @@ personas: []
 provider_name: Sabre
 provider_slug: sabre
 search_terms:
-- gds
-- search available hotels near an airport, city, or coordinates with real-time rates
-- get hotel reservation
-- create a hotel reservation
-- cancel a hotel reservation
-- travel
-- search air fares
-- air shopping
-- cancel a hotel reservation subject to the property's cancellation policy
-- re-shop a previously selected air itinerary to confirm current pricing before booking
-- get room rates for a specific hotel property
-- hotel room rates
-- hotel reservation management
-- hotel availability search
-- cancel hotel reservation
+- reshop air fares
+- get detailed room types and rate plans for a specific hotel property
 - re-shop itinerary for current pricing before booking
-- search for lowest air fares across sabre gds
-- hotel reservation details
-- book a hotel room and create a reservation in sabre gds
-- airlines
-- search for lowest air fares with sabre bargain finder max for any origin-destination-date combination
-- create hotel reservation
-- retrieve details of an existing hotel reservation by confirmation number
+- cancel a hotel reservation
 - get hotel reservation details
+- hotels
+- hotel room rates
+- book a hotel room and create a reservation in sabre gds
+- create hotel reservation
+- hotel availability search
+- cancel a hotel reservation subject to the property's cancellation policy
+- airlines
+- air fare search
+- get room rates for a specific hotel property
+- retrieve details of an existing hotel reservation by confirmation number
 - search available hotels with rates and availability
+- hotel reservation management
+- air shopping
+- re-shop a previously selected air itinerary to confirm current pricing before booking
+- create a hotel reservation
+- get hotel reservation
+- search air fares
+- search available hotels near an airport, city, or coordinates with real-time rates
 - car rental
 - get hotel rates
-- get detailed room types and rate plans for a specific hotel property
-- search hotels
-- reshop air fares
+- cancel hotel reservation
+- search for lowest air fares with sabre bargain finder max for any origin-destination-date combination
+- search for lowest air fares across sabre gds
+- hotel reservation details
 - re-shop air fare pricing
-- hotels
+- gds
+- search hotels
+- travel
 - booking
-- air fare search
 slug: travel-booking
 source_filename: travel-booking.yaml
 source_heading: Capability Spec

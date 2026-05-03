@@ -59,63 +59,63 @@ personas: []
 provider_name: Microsoft Dynamics NAV
 provider_slug: navision
 search_terms:
-- list all purchase orders
-- create item
-- business central
-- general ledger accounts
-- list journals
-- create vendor
-- list items
-- microsoft
-- list all vendors
-- company information
-- sales
-- list all items
-- dynamics 365
-- customer management
-- create customer
-- sales orders
-- create a new vendor
-- create a new inventory item
-- create a new customer
-- list vendors
-- get a customer by id
-- list all employees
-- business management
-- sales invoices
-- list all sales orders
-- vendor management
-- erp
-- list customers
-- create a new purchase order
-- list sales orders
-- general journals
-- inventory
-- list available companies
-- create sales order
-- inventory items
-- get customer
-- get a customer
-- list purchase orders
-- list accounts
-- list general ledger accounts
-- finance
-- list companies
-- list inventory items
-- create a new sales order
-- navision
-- purchase orders
-- list purchase invoices
-- list employees
 - purchasing
-- create purchase order
-- dynamics nav
-- create a sales order
+- list journals
+- list all vendors
+- create sales order
 - list sales invoices
+- list purchase invoices
 - single customer
-- list all customers
-- list general journals
+- sales invoices
+- create a sales order
 - create a customer
+- navision
+- business central
+- list all items
+- list inventory items
+- list all employees
+- erp
+- get a customer
+- general ledger accounts
+- purchase orders
+- list all sales orders
+- inventory
+- list companies
+- company information
+- list vendors
+- create a new purchase order
+- list general journals
+- finance
+- create item
+- create a new sales order
+- list employees
+- general journals
+- list accounts
+- create a new inventory item
+- business management
+- vendor management
+- list customers
+- list items
+- create a new customer
+- list available companies
+- list purchase orders
+- list all purchase orders
+- dynamics nav
+- microsoft
+- sales
+- sales orders
+- get customer
+- list general ledger accounts
+- create customer
+- customer management
+- dynamics 365
+- inventory items
+- list all customers
+- create purchase order
+- create a new vendor
+- create vendor
+- list sales orders
+- get a customer by id
 slug: business-operations
 source_filename: business-operations.yaml
 source_heading: Capability Spec

@@ -30,35 +30,35 @@ personas: []
 provider_name: Ryder System
 provider_slug: ryder-system
 search_terms:
-- list all vehicles in the ryder-managed fleet with specifications
-- fleet invoices
-- get detailed vehicle information and specifications
-- get maintenance history for a specific vehicle
 - vehicle service history
-- list locations
-- logistics
-- ryder service locations
-- get service history
-- fleet vehicle catalog
-- get maintenance and repair history for a specific fleet vehicle
-- service history
-- list fleet vehicles
-- vehicles
-- get detailed information and specifications for a specific fleet vehicle
-- trucking
-- transportation
-- list fleet invoices with line items, amounts, and payment status
-- list ryder service center locations with services and hours
-- list all vehicles in the fleet with specifications
-- list ryder service center locations with available services and business hours
-- fleet management
-- get vehicle
 - supply chain
-- invoices
+- ryder service locations
 - single vehicle details
-- list fleet invoices with line items and payment status
+- get maintenance and repair history for a specific fleet vehicle
+- list locations
+- trucking
 - locations
+- get service history
+- get vehicle
+- vehicles
+- list fleet invoices with line items and payment status
 - list invoices
+- get detailed vehicle information and specifications
+- fleet vehicle catalog
+- list fleet vehicles
+- transportation
+- service history
+- list ryder service center locations with available services and business hours
+- list all vehicles in the fleet with specifications
+- logistics
+- list all vehicles in the ryder-managed fleet with specifications
+- get maintenance history for a specific vehicle
+- fleet management
+- get detailed information and specifications for a specific fleet vehicle
+- list fleet invoices with line items, amounts, and payment status
+- invoices
+- fleet invoices
+- list ryder service center locations with services and hours
 slug: fleet-operations
 source_filename: fleet-operations.yaml
 source_heading: Capability Spec

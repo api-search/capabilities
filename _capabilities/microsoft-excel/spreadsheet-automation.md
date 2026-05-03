@@ -34,44 +34,44 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- data management
-- microsoft
-- list charts.
-- automate excel workbook operations.
-- chart operations.
-- list rows in a table.
-- update range
-- automation
-- microsoft 365
-- list worksheets
-- business users automating excel-based reporting.
-- office
-- manage table rows.
-- cell range operations.
-- create worksheet
-- list all charts in a worksheet.
-- Business Analyst
-- get range
-- spreadsheet automation
-- read cell values from a specified range.
-- create a new worksheet.
 - list all worksheets.
-- Data Analyst
-- add a new data row to an excel table.
-- data analysis
-- list all worksheets in the workbook.
-- microsoft excel
+- automation
 - list all rows in an excel table.
-- list table rows
-- manage worksheets.
-- list charts
-- analysts working with excel workbooks for data processing.
 - create a new worksheet in the workbook.
+- Business Analyst
+- spreadsheet automation
+- create a new worksheet.
 - update cell values in a specified range.
-- spreadsheets
-- get a cell range.
+- manage table rows.
+- Data Analyst
 - add a row to a table.
+- update range
+- spreadsheets
+- microsoft 365
+- read cell values from a specified range.
+- automate excel workbook operations.
+- office
+- data analysis
+- business users automating excel-based reporting.
+- list worksheets
+- microsoft excel
+- list charts.
+- get a cell range.
+- get range
+- data management
+- list all charts in a worksheet.
+- list rows in a table.
+- list charts
+- microsoft
 - add table row
+- add a new data row to an excel table.
+- list table rows
+- cell range operations.
+- analysts working with excel workbooks for data processing.
+- create worksheet
+- manage worksheets.
+- chart operations.
+- list all worksheets in the workbook.
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec

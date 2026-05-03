@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- api discovery
 - apigee
-- api governance
-- list catalogued apis
-- architect overseeing api platform strategy and governance across the organization.
-- api gateway
-- enterprise
-- discover shadow apis
-- microservices
-- list observed apis
-- manager packaging api products and managing developer relationships.
-- discover undocumented shadow apis in google cloud infrastructure using apim.
 - shadow apis discovered via apim.
-- Platform Architect
-- api catalog
-- API Governance Lead
-- list api specs
 - list all apis in the apigee api hub catalog.
+- manager packaging api products and managing developer relationships.
 - analytics
-- monetization
-- api management
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- list observed shadow apis.
-- API Product Manager
-- API Platform Engineer
+- api governance
 - integrations
-- google cloud
-- engineer managing api proxies, deployments, and policies in apigee.
-- api hub
-- hybrid
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- Platform Architect
+- api discovery
+- api management
+- API Platform Engineer
+- discover shadow apis
 - list apis
+- list observed apis
+- hybrid
+- list catalogued apis
+- api gateway
+- api catalog
+- list api specs
+- engineer managing api proxies, deployments, and policies in apigee.
+- enterprise
 - api catalog from api hub.
+- google cloud
+- discover undocumented shadow apis in google cloud infrastructure using apim.
+- architect overseeing api platform strategy and governance across the organization.
 - list all catalogued apis.
-- list api specifications tracked in the apigee registry.
+- microservices
+- list observed shadow apis.
 - developer portal
+- API Governance Lead
+- api hub
+- API Product Manager
+- monetization
+- list api specifications tracked in the apigee registry.
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml
 source_heading: Capability Spec

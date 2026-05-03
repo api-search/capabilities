@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability whose `exposes` block is annotated to show the deterministic adapter layer (typed outputparameters, jsonpath shaping, governance rules) versus what an agent would otherwise hallucinate against the same api.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability whose `exposes` block is annotated to show the deterministic adapter layer (typed outputparameters, jsonpath shaping, governance rules) versus what an agent would otherwise hallucinate against the same api.
 slug: deterministic-foundation-for-agents-demo
 source_filename: deterministic-foundation-for-agents-demo.yaml
 source_heading: Capability Spec

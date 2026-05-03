@@ -30,38 +30,38 @@ personas: []
 provider_name: SAP Commerce Cloud
 provider_slug: sap-commerce-cloud
 search_terms:
-- get product details.
-- single product.
-- sap
-- single order.
-- get order
-- get detailed product information including price, stock, images, and reviews.
-- commerce
-- find physical store locations for click-and-collect or in-store assistance.
-- list orders
-- get order details.
-- store locator.
-- get product
-- b2b
-- add a product to the customer's shopping cart.
-- omnichannel
-- customer experience
-- add to cart
-- ecommerce
-- retail
-- b2c
-- order management.
-- find nearby stores.
-- get cart
 - find stores
-- search the product catalog.
-- search products
-- list user order history.
-- get the customer's current shopping cart contents and totals.
-- list order history for a customer.
+- b2c
+- get product details.
 - product catalog search.
+- omnichannel
+- store locator.
+- get the customer's current shopping cart contents and totals.
+- add to cart
+- find physical store locations for click-and-collect or in-store assistance.
 - get details and status of a specific order.
+- search products
+- find nearby stores.
 - search the sap commerce cloud product catalog using keywords or facets.
+- search the product catalog.
+- b2b
+- get cart
+- single product.
+- get order
+- sap
+- commerce
+- list order history for a customer.
+- order management.
+- single order.
+- retail
+- ecommerce
+- get product
+- get detailed product information including price, stock, images, and reviews.
+- list orders
+- add a product to the customer's shopping cart.
+- list user order history.
+- customer experience
+- get order details.
 slug: shopping-and-checkout
 source_filename: shopping-and-checkout.yaml
 source_heading: Capability Spec

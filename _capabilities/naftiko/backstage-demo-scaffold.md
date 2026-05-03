@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a capability scaffolded entirely from the naftiko templates for backstage workflow, intended as daniel's 2-minute live-demo sequence at apidays munich (choose template → generated repo → running engine).
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- a capability scaffolded entirely from the naftiko templates for backstage workflow, intended as daniel's 2-minute live-demo sequence at apidays munich (choose template → generated repo → running engine).
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: backstage-demo-scaffold
 source_filename: backstage-demo-scaffold.yaml
 source_heading: Capability Spec

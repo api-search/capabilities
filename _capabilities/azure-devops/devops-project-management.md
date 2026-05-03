@@ -60,48 +60,48 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-devops
 search_terms:
-- list fields
-- query work items using wiql
-- work item field definitions
-- list runs for a pipeline
-- create a new work item
-- wiql query execution
-- update work item
-- get details of a pipeline run
-- get a pipeline run
-- list all work item field definitions
-- devops
-- create a new pipeline
-- get a pipeline by id
-- work items
-- get work items batch
-- get multiple work items by ids
-- pipeline definitions
-- update a work item
-- list pipelines
-- get a work item by id
-- get pipeline
-- list work item fields
-- get pipeline run
-- trigger a pipeline run
-- create pipeline
-- project management
-- list all pipelines
-- single pipeline
 - pipeline runs
-- azure
-- azure devops
-- get work item
-- run pipeline
-- list all pipelines in a project
-- list pipeline runs
+- work items
 - pipelines
-- ci/cd
-- work item batch and creation
-- individual work item operations
-- single pipeline run
-- query work items
+- pipeline definitions
+- azure devops
+- list pipelines
+- get a pipeline by id
+- trigger a pipeline run
+- list pipeline runs
+- list all pipelines
+- list all pipelines in a project
+- azure
 - create work item
+- wiql query execution
+- single pipeline
+- get work items batch
+- get work item
+- list work item fields
+- project management
+- run pipeline
+- get pipeline run
+- query work items
+- get pipeline
+- list all work item field definitions
+- single pipeline run
+- individual work item operations
+- work item field definitions
+- list fields
+- create a new pipeline
+- get a pipeline run
+- work item batch and creation
+- create a new work item
+- update work item
+- query work items using wiql
+- get multiple work items by ids
+- get a work item by id
+- ci/cd
+- list runs for a pipeline
+- devops
+- update a work item
+- get details of a pipeline run
+- create pipeline
 slug: devops-project-management
 source_filename: devops-project-management.yaml
 source_heading: Capability Spec

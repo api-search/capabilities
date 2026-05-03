@@ -1,0 +1,153 @@
+---
+api_specs:
+- filename: walk-score-openapi.yml
+  format: yaml
+  label: walk-score-api
+  slug: walk-score-api
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/walk-score/refs/heads/main/openapi/walk-score-openapi.yml
+- filename: walk-score-transit-openapi.yml
+  format: yaml
+  label: walk-score-transit
+  slug: walk-score-transit
+  spec_type: OpenAPI
+  url: https://raw.githubusercontent.com/api-evangelist/walk-score/refs/heads/main/openapi/walk-score-transit-openapi.yml
+categories: []
+consumed_apis:
+- walk-score-api
+- walk-score-transit
+description: Workflow capability combining Walk Score and Transit APIs for comprehensive location intelligence. Enables applications to assess any location's walkability, transit accessibility, and bikeability in a unified workflow. Used by real estate platforms, city planners, commute calculators, and property search applications to provide complete transportation accessibility scoring.
+layout: capability
+name: Walk Score Location Intelligence
+operations:
+- description: Get all walkability scores for a location
+  method: GET
+  name: get-walk-score
+  path: /v1/scores
+- description: Get Transit Score with route summary for a city location
+  method: GET
+  name: get-transit-score
+  path: /v1/transit-scores
+- description: Get transit stops near a location
+  method: GET
+  name: search-transit-stops
+  path: /v1/transit-stops
+- description: Get all routes and stops within one mile
+  method: GET
+  name: search-transit-network
+  path: /v1/transit-network
+- description: Get transit stop details
+  method: GET
+  name: get-transit-stop
+  path: /v1/transit-stops/{stopId}
+- description: Get transit route details and geometry
+  method: GET
+  name: get-transit-route
+  path: /v1/transit-routes/{routeId}
+- description: Get all cities supported by Transit API
+  method: GET
+  name: list-supported-cities
+  path: /v1/cities
+personas: []
+provider_name: Walk Score
+provider_slug: walk-score
+search_terms:
+- get the list of all cities supported by the walk score transit api
+- get transit network within one mile
+- get walk score, transit score, and bike score for a location
+- walk score
+- get a specific transit stop
+- get transit score with route summary for a city location
+- get walk score, transit score, and bike score for any address or coordinates. returns walkability, transit accessibility, and bikeability in one call.
+- location intelligence
+- find nearby transit stops
+- find public transit stops near any location with route details
+- get transit stop details
+- get transit route
+- urban planning
+- get details for a specific transit stop by id
+- get transit network
+- get details for a transit route including stops and route geometry
+- list cities with transit score support
+- get walk score
+- get transit stop
+- get detailed transit score with route count summary for a city location
+- list supported cities
+- location
+- get all transit routes and stops within one mile of a location
+- list transit cities
+- get all routes and stops within one mile
+- get transit stops near a location
+- get all walkability scores for a location
+- get transit route details
+- transportation
+- search transit stops
+- get detailed transit score for a city location
+- transit
+- get location scores
+- search transit network
+- get transit score
+- get a specific transit route
+- bikeability
+- walkability
+- real estate
+- get all cities supported by transit api
+- get transit route details and geometry
+slug: location-intelligence
+source_filename: location-intelligence.yaml
+source_heading: Capability Spec
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Walk Score Location Intelligence\"\n  description: >-\n    Workflow capability combining Walk Score and Transit APIs for comprehensive\n    location intelligence. Enables applications to assess any location's walkability,\n    transit accessibility, and bikeability in a unified workflow. Used by real estate\n    platforms, city planners, commute calculators, and property search applications\n    to provide complete transportation accessibility scoring.\n  tags:\n    - Walk Score\n    - Location Intelligence\n    - Walkability\n    - Transit\n    - Bikeability\n    - Real Estate\n    - Urban Planning\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      WALKSCORE_API_KEY: WALKSCORE_API_KEY\n\ncapability:\n  consumes:\n    - import: walk-score-api\n      location: ./shared/walk-score.yaml\n    - import: walk-score-transit\n      location: ./shared/walk-score-transit.yaml\n\n  exposes:\n\
+  \    - type: rest\n      port: 8080\n      namespace: walk-score-location-intelligence-api\n      description: \"Unified REST API for Walk Score location intelligence and transit data.\"\n      resources:\n        - path: /v1/scores\n          name: scores\n          description: \"Get Walk Score, Transit Score, and Bike Score for a location\"\n          operations:\n            - method: GET\n              name: get-walk-score\n              description: \"Get all walkability scores for a location\"\n              call: \"walk-score-api.get-walk-score\"\n              with:\n                lat: \"rest.lat\"\n                lon: \"rest.lon\"\n                address: \"rest.address\"\n                transit: \"rest.transit\"\n                bike: \"rest.bike\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transit-scores\n          name: transit-scores\n          description: \"Get detailed Transit Score for\
+  \ a city location\"\n          operations:\n            - method: GET\n              name: get-transit-score\n              description: \"Get Transit Score with route summary for a city location\"\n              call: \"walk-score-transit.get-transit-score\"\n              with:\n                lat: \"rest.lat\"\n                lon: \"rest.lon\"\n                city: \"rest.city\"\n                state: \"rest.state\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transit-stops\n          name: transit-stops\n          description: \"Find nearby transit stops\"\n          operations:\n            - method: GET\n              name: search-transit-stops\n              description: \"Get transit stops near a location\"\n              call: \"walk-score-transit.search-transit-stops\"\n              with:\n                lat: \"rest.lat\"\n                lon: \"rest.lon\"\n              outputParameters:\n    \
+  \            - type: array\n                  mapping: \"$.\"\n        - path: /v1/transit-network\n          name: transit-network\n          description: \"Get transit network within one mile\"\n          operations:\n            - method: GET\n              name: search-transit-network\n              description: \"Get all routes and stops within one mile\"\n              call: \"walk-score-transit.search-transit-network\"\n              with:\n                lat: \"rest.lat\"\n                lon: \"rest.lon\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transit-stops/{stopId}\n          name: transit-stop-detail\n          description: \"Get a specific transit stop\"\n          operations:\n            - method: GET\n              name: get-transit-stop\n              description: \"Get transit stop details\"\n              call: \"walk-score-transit.get-transit-stop\"\n              with:\n             \
+  \   stopId: \"rest.stopId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/transit-routes/{routeId}\n          name: transit-route-detail\n          description: \"Get a specific transit route\"\n          operations:\n            - method: GET\n              name: get-transit-route\n              description: \"Get transit route details and geometry\"\n              call: \"walk-score-transit.get-transit-route\"\n              with:\n                routeId: \"rest.routeId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cities\n          name: supported-cities\n          description: \"List cities with transit score support\"\n          operations:\n            - method: GET\n              name: list-supported-cities\n              description: \"Get all cities supported by Transit API\"\n              call: \"walk-score-transit.list-supported-cities\"\
+  \n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: walk-score-location-intelligence-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Walk Score location intelligence workflows.\"\n      tools:\n        - name: get-location-scores\n          description: >-\n            Get Walk Score, Transit Score, and Bike Score for any address or coordinates.\n            Returns walkability, transit accessibility, and bikeability in one call.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"walk-score-api.get-walk-score\"\n          with:\n            lat: \"tools.lat\"\n            lon: \"tools.lon\"\n            address: \"tools.address\"\n            transit: \"tools.transit\"\n            bike: \"tools.bike\"\n            format: \"json\"\n          outputParameters:\n            - type: object\n              mapping: \"\
+  $.\"\n        - name: get-transit-score\n          description: \"Get detailed Transit Score with route count summary for a city location\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"walk-score-transit.get-transit-score\"\n          with:\n            lat: \"tools.lat\"\n            lon: \"tools.lon\"\n            city: \"tools.city\"\n            state: \"tools.state\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: find-nearby-transit-stops\n          description: \"Find public transit stops near any location with route details\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"walk-score-transit.search-transit-stops\"\n          with:\n            lat: \"tools.lat\"\n            lon: \"tools.lon\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n        - name: get-transit-network\n          description:\
+  \ \"Get all transit routes and stops within one mile of a location\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"walk-score-transit.search-transit-network\"\n          with:\n            lat: \"tools.lat\"\n            lon: \"tools.lon\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-transit-stop-details\n          description: \"Get details for a specific transit stop by ID\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"walk-score-transit.get-transit-stop\"\n          with:\n            stopId: \"tools.stopId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-transit-route-details\n          description: \"Get details for a transit route including stops and route geometry\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"\
+  walk-score-transit.get-transit-route\"\n          with:\n            routeId: \"tools.routeId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-transit-cities\n          description: \"Get the list of all cities supported by the Walk Score Transit API\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"walk-score-transit.list-supported-cities\"\n          outputParameters:\n            - type: array\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/walk-score/refs/heads/main/capabilities/location-intelligence.yaml
+tags:
+- Walk Score
+- Location Intelligence
+- Walkability
+- Transit
+- Bikeability
+- Real Estate
+- Urban Planning
+tools:
+- description: Get Walk Score, Transit Score, and Bike Score for any address or coordinates. Returns walkability, transit accessibility, and bikeability in one call.
+  hints:
+    openWorld: true
+    readOnly: true
+  name: get-location-scores
+- description: Get detailed Transit Score with route count summary for a city location
+  hints:
+    openWorld: true
+    readOnly: true
+  name: get-transit-score
+- description: Find public transit stops near any location with route details
+  hints:
+    openWorld: true
+    readOnly: true
+  name: find-nearby-transit-stops
+- description: Get all transit routes and stops within one mile of a location
+  hints:
+    openWorld: true
+    readOnly: true
+  name: get-transit-network
+- description: Get details for a specific transit stop by ID
+  hints:
+    openWorld: false
+    readOnly: true
+  name: get-transit-stop-details
+- description: Get details for a transit route including stops and route geometry
+  hints:
+    openWorld: false
+    readOnly: true
+  name: get-transit-route-details
+- description: Get the list of all cities supported by the Walk Score Transit API
+  hints:
+    openWorld: false
+    readOnly: true
+  name: list-transit-cities
+---

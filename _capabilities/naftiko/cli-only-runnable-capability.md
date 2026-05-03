@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- capabilities
-- governance
 - mcp
-- a capability designed to be exercised entirely via the naftiko cli (no docker daemon), demonstrating local validation, mcp test, and lint without any container runtime.
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability designed to be exercised entirely via the naftiko cli (no docker daemon), demonstrating local validation, mcp test, and lint without any container runtime.
 slug: cli-only-runnable-capability
 source_filename: cli-only-runnable-capability.yaml
 source_heading: Capability Spec

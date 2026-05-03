@@ -10,10 +10,10 @@ provider_name: BB&T Corp (Truist)
 provider_slug: bbandt-corp
 search_terms:
 - financial services
-- banking
-- truist
-- bb&t
 - open banking
+- bb&t
+- truist
+- banking
 slug: open-banking
 source_filename: open-banking.yaml
 source_heading: Capability Spec

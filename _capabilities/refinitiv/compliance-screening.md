@@ -35,41 +35,41 @@ personas: []
 provider_name: Refinitiv
 provider_slug: refinitiv
 search_terms:
-- search for organizations and instruments using permid for pre-screening entity research.
-- resolve screening result
-- create a case and screen against world-check.
-- list screening groups
-- compliance
 - get case
-- extract and tag financial entities from document text using intelligent tagging.
-- create and screen
-- refinitiv
-- screening
-- screen entity
-- screening group configuration.
-- delete a screening case.
-- resolve and annotate a world-check screening match result with risk determination.
-- get screening case
-- tag document entities
 - list available world-check screening groups and their configurations.
-- entity screening cases.
-- screen a company or individual against the world-check risk intelligence database for kyc and aml compliance.
-- intelligent entity tagging.
-- aml
-- search entities
-- list groups
-- search for organizations and instruments.
-- world-check
-- retrieve the current status and results of a world-check screening case.
-- tag text with financial entities.
-- get screening case details.
-- kyc
-- due diligence
 - list available screening groups.
-- entity search via permid.
-- tag content
-- delete case
 - case details.
+- search for organizations and instruments using permid for pre-screening entity research.
+- entity screening cases.
+- tag document entities
+- search for organizations and instruments.
+- delete a screening case.
+- tag text with financial entities.
+- world-check
+- tag content
+- retrieve the current status and results of a world-check screening case.
+- refinitiv
+- due diligence
+- get screening case
+- kyc
+- list screening groups
+- extract and tag financial entities from document text using intelligent tagging.
+- screening
+- compliance
+- resolve and annotate a world-check screening match result with risk determination.
+- screening group configuration.
+- screen entity
+- create a case and screen against world-check.
+- intelligent entity tagging.
+- list groups
+- entity search via permid.
+- get screening case details.
+- delete case
+- resolve screening result
+- search entities
+- create and screen
+- screen a company or individual against the world-check risk intelligence database for kyc and aml compliance.
+- aml
 slug: compliance-screening
 source_filename: compliance-screening.yaml
 source_heading: Capability Spec

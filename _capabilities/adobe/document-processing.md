@@ -39,73 +39,73 @@ personas: []
 provider_name: Adobe
 provider_slug: adobe
 search_terms:
-- create pdf from supported formats
-- extract pdf
-- split pdf
-- reorder pages
 - upload and manage document assets
-- generate documents from templates with dynamic data
-- work management
-- linearize pdf
-- pdf
 - automation
-- generative ai
-- extract text, tables, and figures from a pdf
-- delete pages
-- reorder pages within a pdf
-- rotate pages in a pdf
-- remove password protection from a pdf
-- insert pages from one pdf into another
-- delete an uploaded asset
-- export pdf to docx, pptx, xlsx, or images
-- protect pdf
-- get asset
-- digital asset management
-- e-commerce
 - apply ocr to make scanned pdfs searchable
-- pdf content extraction
-- extract structured content from pdf
-- e-signatures
-- auto-tag pdf for accessibility compliance
-- check the status of an asynchronous pdf operation
-- delete an asset
-- get job status
-- optimize pdf for fast web viewing
+- pdf conversion operations
+- marketing
+- upload a document for processing
+- export pdf to docx, pptx, xlsx, or images
+- combine multiple pdfs into a single document
+- ocr pdf
+- reorder pages
+- delete pages
 - get pdf properties
 - get pdf metadata and document properties
-- upload a document for processing
-- compress a pdf to reduce file size
-- adobe
-- pdf conversion operations
-- delete specific pages from a pdf
-- replace pages in a pdf with pages from another
-- marketing
-- ocr pdf
-- generate document
-- combine multiple pdfs into a single document
-- compress pdf
-- analytics
-- pdf export operations
-- combine pdf
-- remove protection
-- create pdf
-- replace pages
-- add password protection to a pdf
-- create a pdf from supported file formats
-- experience cloud
-- document services
-- delete asset
-- auto tag pdf
-- creative cloud
-- upload asset
 - insert pages
-- export pdf
-- rotate pages
-- job status
-- get asset download uri
+- analytics
+- delete an uploaded asset
+- add password protection to a pdf
+- document services
+- e-commerce
+- extract pdf
 - documents
+- compress a pdf to reduce file size
+- rotate pages
+- insert pages from one pdf into another
+- remove protection
+- adobe
 - split a pdf into multiple documents
+- delete asset
+- export pdf
+- get job status
+- generate document
+- extract text, tables, and figures from a pdf
+- delete an asset
+- auto-tag pdf for accessibility compliance
+- get asset download uri
+- create pdf
+- auto tag pdf
 - export pdf to other formats
+- get asset
+- create a pdf from supported file formats
+- combine pdf
+- split pdf
+- job status
+- e-signatures
+- digital asset management
+- replace pages in a pdf with pages from another
+- generative ai
+- delete specific pages from a pdf
+- extract structured content from pdf
+- linearize pdf
+- rotate pages in a pdf
+- pdf content extraction
+- optimize pdf for fast web viewing
+- replace pages
+- check the status of an asynchronous pdf operation
+- create pdf from supported formats
+- generate documents from templates with dynamic data
+- experience cloud
+- creative cloud
+- pdf
+- upload asset
+- pdf export operations
+- reorder pages within a pdf
+- compress pdf
+- protect pdf
+- work management
+- remove password protection from a pdf
 slug: document-processing
 source_filename: document-processing.yaml
 source_heading: Capability Spec

@@ -11,36 +11,36 @@ provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
 - create a bankruptcy monitoring alert for a debtor or entity
-- creditor
-- compliance
-- court data
+- Bankruptcy Attorney
+- file a proof of claim for a bankruptcy case
+- retrieve docket entries for a bankruptcy case
 - file proof of claim
-- automated alerts for bankruptcy filings
-- get detailed information about a specific bankruptcy case
-- us bankruptcy court cases and proceedings
+- list all active bankruptcy monitoring alerts
 - pacer
 - bankruptcywatch
-- Creditor
-- lender monitoring borrowers for bankruptcy filings
-- lending
-- list monitors
-- attorney managing creditor representation in bankruptcy proceedings
-- Bankruptcy Attorney
-- search for bankruptcy cases across all us bankruptcy court districts
-- bankruptcy case research, claims management, and automated monitoring
-- business or individual owed money by a bankruptcy filer
-- create bankruptcy monitor
-- retrieve docket entries for a bankruptcy case
-- get bankruptcy case
 - list claims register for a bankruptcy case
-- file a proof of claim for a bankruptcy case
-- Loan Officer
+- create bankruptcy monitor
+- court data
+- lending
+- search for bankruptcy cases across all us bankruptcy court districts
+- Creditor
+- business or individual owed money by a bankruptcy filer
 - get case docket
-- legal
-- list case claims
+- compliance
+- list monitors
 - bankruptcy
-- list all active bankruptcy monitoring alerts
+- creditor
+- list case claims
+- get bankruptcy case
+- legal
+- Loan Officer
+- attorney managing creditor representation in bankruptcy proceedings
 - search bankruptcy cases
+- us bankruptcy court cases and proceedings
+- automated alerts for bankruptcy filings
+- lender monitoring borrowers for bankruptcy filings
+- get detailed information about a specific bankruptcy case
+- bankruptcy case research, claims management, and automated monitoring
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

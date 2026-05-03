@@ -43,53 +43,53 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- list channels
-- send a message.
-- manage teams collaboration workflows.
-- create call
 - IT Administrator
-- create a meeting.
-- create a channel.
-- send channel message
-- Team Lead
-- initiate a call.
-- microsoft 365
-- list messages.
-- team leads managing channels, members, and communication.
-- create online meeting
-- create channel
-- it admins managing teams infrastructure and policies.
-- microsoft teams
-- create an online meeting.
-- chat
-- meeting management.
-- create a new channel.
-- send a message to a channel.
-- list joined teams
-- video conferencing
-- create a new team.
-- list channels.
-- developers building teams integrations and bots.
-- productivity
-- Developer
-- list all teams the user has joined.
-- list joined teams.
-- create team
-- add a member to a team.
-- list all members of a team.
-- messaging.
-- team management.
-- member management.
-- list channels in a team.
-- list messages from a channel.
-- communication
 - channel management.
-- add team member
-- list channel messages
-- collaboration
-- create a team.
-- list members.
+- create a new channel.
 - list team members
+- it admins managing teams infrastructure and policies.
+- create a new team.
+- list all teams the user has joined.
+- add team member
+- meeting management.
+- create an online meeting.
+- create a channel.
+- list channels in a team.
+- list channels.
+- list channel messages
+- productivity
+- list channels
+- list messages.
+- send channel message
+- team leads managing channels, members, and communication.
+- microsoft 365
+- communication
+- member management.
+- add a member to a team.
+- manage teams collaboration workflows.
+- create online meeting
+- video conferencing
+- create a team.
+- chat
+- list joined teams
+- collaboration
+- Developer
+- Team Lead
+- list messages from a channel.
+- microsoft teams
+- list joined teams.
+- create channel
+- create a meeting.
+- create call
+- messaging.
+- developers building teams integrations and bots.
+- send a message to a channel.
+- list all members of a team.
+- send a message.
+- list members.
+- team management.
+- initiate a call.
+- create team
 slug: team-collaboration
 source_filename: team-collaboration.yaml
 source_heading: Capability Spec

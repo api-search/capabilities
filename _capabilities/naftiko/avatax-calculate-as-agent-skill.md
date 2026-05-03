@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
-- wraps the avatax `/transactions/createoradjust` endpoint as a downloadable agent skill folder + mcp tool, with shaped jurisdiction-aware output for an ai checkout assistant.
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- wraps the avatax `/transactions/createoradjust` endpoint as a downloadable agent skill folder + mcp tool, with shaped jurisdiction-aware output for an ai checkout assistant.
+- example op
+- governance
 slug: avatax-calculate-as-agent-skill
 source_filename: avatax-calculate-as-agent-skill.yaml
 source_heading: Capability Spec

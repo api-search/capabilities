@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - a capability that exposes a power automate / power platform flow as a single mcp tool with shaped output, so a copilot agent can call a curated org flow without re-implementing it.
 - naftiko
-- governance
-- mcp
+- api integration
+- spec-driven integration
 - capabilities
-- ai
+- example op
+- governance
 slug: m365-power-platform-flow-as-capability
 source_filename: m365-power-platform-flow-as-capability.yaml
 source_heading: Capability Spec

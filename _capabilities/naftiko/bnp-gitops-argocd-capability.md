@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
 - a capability deployed via gitops (argocd/flux) with the naftikocapability crd, framed for bnp's argocd + regulatory-compliance language.
-- api integration
-- naftiko
-- governance
-- mcp
-- capabilities
 - ai
+- mcp
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: bnp-gitops-argocd-capability
 source_filename: bnp-gitops-argocd-capability.yaml
 source_heading: Capability Spec

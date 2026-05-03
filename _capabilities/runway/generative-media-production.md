@@ -79,79 +79,79 @@ personas: []
 provider_name: Runway
 provider_slug: runway
 search_terms:
-- create lip sync
-- generate image from text prompt
-- characters
-- start avatar session
-- avatar realtime webrtc sessions
-- interpolate video frames
-- enhance video resolution and quality using runway's upscale model
-- create frame interpolation
-- transform video
-- create video to video
-- create conversational avatar
-- runway
-- generative ai
-- character animation from reference performance
-- conversational avatar management
-- video-to-video transformation
-- text-to-video generation
-- generate sound effects for video
-- generate video from text
-- generate video from image
-- video resolution enhancement
-- animate character
-- transform an existing video using a text prompt as guidance with the gen-4 aleph model
-- upload avatar knowledge
-- animate face to speak audio
-- lip sync face to audio
-- get task status and output urls
-- start a realtime avatar session
-- animate a face in an image or video to match provided audio - supports 28+ languages
-- create session
-- check generation task
-- start a real-time webrtc session connecting a user to a runway avatar for live conversation
-- webrtc
-- image generation
-- upscale video quality
-- create text to video
-- transform video with text guidance
-- create a conversational avatar
-- cancel a pending or running runway generation task
-- upscale video
-- generate a video from a text prompt using runway gen-4.5, veo 3.1, or veo 3.1 fast models. returns a task id to poll for completion.
-- generate video from text prompt
-- upload a knowledge document that an avatar can reference during live conversations
-- avatars
-- cancel generation task
-- generate a high-quality image from a text prompt using runway gen-4 image or gemini 3 pro image
-- text-to-image generation
-- artificial intelligence
-- get task
-- create avatar
-- generate a video from an input image, optionally guided by a text prompt. supports gen-4, gen-4 turbo, gen-4.5, and aleph models.
-- interpolate frames
-- animate a character image or video using a reference performance video with the act two model
-- video generation
-- create text to image
-- ai sound effect generation
-- generation task status and management
-- generate image from text
-- sync lips to audio
 - create sound effect
-- increase video frame rate and smoothness through ai frame interpolation
-- image-to-video generation
+- image generation
 - video frame rate enhancement
 - check the status of a runway generation task and retrieve output urls when completed
-- machine learning
-- animate character using act two model
-- generate sound effects
-- generate ai sound effects from a text description, optionally synchronized to a video
+- text-to-image generation
+- increase video frame rate and smoothness through ai frame interpolation
+- video resolution enhancement
 - create a custom runway conversational avatar from a reference image with defined personality and voice
-- create video upscale
-- creative tools
-- create image to video
+- start a real-time webrtc session connecting a user to a runway avatar for live conversation
+- interpolate frames
 - create character performance
+- create frame interpolation
+- start a realtime avatar session
+- generation task status and management
+- animate face to speak audio
+- video-to-video transformation
+- text-to-video generation
+- enhance video resolution and quality using runway's upscale model
+- webrtc
+- animate character using act two model
+- upload a knowledge document that an avatar can reference during live conversations
+- generate a high-quality image from a text prompt using runway gen-4 image or gemini 3 pro image
+- create video to video
+- sync lips to audio
+- generate video from image
+- ai sound effect generation
+- create conversational avatar
+- video generation
+- upload avatar knowledge
+- avatar realtime webrtc sessions
+- generate a video from an input image, optionally guided by a text prompt. supports gen-4, gen-4 turbo, gen-4.5, and aleph models.
+- start avatar session
+- lip sync face to audio
+- generate sound effects for video
+- generate ai sound effects from a text description, optionally synchronized to a video
+- animate a face in an image or video to match provided audio - supports 28+ languages
+- creative tools
+- image-to-video generation
+- artificial intelligence
+- interpolate video frames
+- get task
+- create session
+- generate video from text
+- transform video
+- get task status and output urls
+- cancel a pending or running runway generation task
+- generative ai
+- animate character
+- generate video from text prompt
+- characters
+- transform an existing video using a text prompt as guidance with the gen-4 aleph model
+- machine learning
+- create text to image
+- animate a character image or video using a reference performance video with the act two model
+- generate sound effects
+- character animation from reference performance
+- cancel generation task
+- conversational avatar management
+- create video upscale
+- generate image from text prompt
+- create avatar
+- create a conversational avatar
+- upscale video
+- generate a video from a text prompt using runway gen-4.5, veo 3.1, or veo 3.1 fast models. returns a task id to poll for completion.
+- generate image from text
+- upscale video quality
+- transform video with text guidance
+- check generation task
+- create image to video
+- create lip sync
+- runway
+- avatars
+- create text to video
 slug: generative-media-production
 source_filename: generative-media-production.yaml
 source_heading: Capability Spec

@@ -9,8 +9,8 @@ personas: []
 provider_name: Amazon Verified Access
 provider_slug: amazon-verified-access
 search_terms:
-- security
 - zero trust
+- security
 - access management
 slug: amazon-verified-access-capability
 source_filename: amazon-verified-access-capability.yaml

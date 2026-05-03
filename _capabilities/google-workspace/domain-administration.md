@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- create an organizational unit.
 - list groups.
-- create group
-- sign out user
-- get group
-- make a user an admin.
-- list org units
-- individual group management.
-- calendar
-- create a new user.
-- update a user.
-- undelete user
 - storage
-- domain administration
 - create user
-- create org unit
+- make a user an admin.
+- delete user
+- sign out user
 - list users in the domain.
-- email
 - get user details.
 - update a group.
-- get group details.
-- sign out a user from all sessions.
-- user account management.
-- video conferencing
-- delete a group.
-- delete group
-- organizational unit management.
-- productivity
-- delete user
-- group management
 - create a group.
+- get group details.
+- list org units
 - list users in the google workspace domain.
-- list organizational units.
-- create a new user in the domain.
 - individual user management.
-- group management.
-- update group
-- delete a user.
-- list groups in the domain.
-- list users
-- list groups
-- google workspace
-- create a new group.
-- patch user
 - get user
+- calendar
+- productivity
+- create group
+- undelete user
+- create a new user in the domain.
+- group management
+- individual group management.
+- list groups in the domain.
+- google workspace
+- domain administration
+- user account management.
+- patch user
+- video conferencing
+- collaboration
+- list users
+- undelete a deleted user.
+- create a new group.
 - user management
 - update user
-- collaboration
-- undelete a deleted user.
-- patch user properties.
+- create a new user.
+- update a user.
+- delete a group.
+- organizational unit management.
+- create org unit
+- update group
+- group management.
+- sign out a user from all sessions.
+- create an organizational unit.
+- delete group
+- delete a user.
 - make user admin
+- email
+- patch user properties.
+- list groups
+- list organizational units.
+- get group
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

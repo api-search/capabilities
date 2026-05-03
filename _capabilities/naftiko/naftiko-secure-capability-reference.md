@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- a "secure capability" reference where scanning + naftiko's per-endpoint auth and tags-on-exposes (data sensitivity, deprecation) co-demo on a shared capability.
-- api integration
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a "secure capability" reference where scanning + naftiko's per-endpoint auth and tags-on-exposes (data sensitivity, deprecation) co-demo on a shared capability.
 slug: naftiko-secure-capability-reference
 source_filename: naftiko-secure-capability-reference.yaml
 source_heading: Capability Spec

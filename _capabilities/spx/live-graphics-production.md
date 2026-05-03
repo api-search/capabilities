@@ -1,0 +1,192 @@
+---
+categories: []
+consumed_apis:
+- spx-graphics
+description: Unified capability for live video production graphics control using SPX-GC. Enables broadcast operators, stream producers, and automation systems to control graphics rundowns, trigger template playback, manage files, persist state for sports scoring and timing, and invoke custom SPX extension logic — all through a unified REST API and MCP server.
+layout: capability
+name: SPX Live Graphics Production
+operations:
+- description: Load a rundown file into the SPX system
+  method: POST
+  name: load-rundown
+  path: /v1/rundowns
+- description: Set focus to the first rundown item
+  method: POST
+  name: focus-first-item
+  path: /v1/rundowns/focus/first
+- description: Advance focus to the next rundown item
+  method: POST
+  name: focus-next-item
+  path: /v1/rundowns/focus/next
+- description: Move focus to the previous rundown item
+  method: POST
+  name: focus-previous-item
+  path: /v1/rundowns/focus/previous
+- description: Play the currently focused rundown item
+  method: POST
+  name: play-item
+  path: /v1/items/play
+- description: Stop the currently focused rundown item
+  method: POST
+  name: stop-item
+  path: /v1/items/stop
+- description: Issue continue command to the focused item
+  method: POST
+  name: continue-item
+  path: /v1/items/continue
+- description: Update template field values for a specific item
+  method: PUT
+  name: update-item
+  path: /v1/items/{id}
+- description: Play/stop/continue a template directly
+  method: POST
+  name: direct-play-out
+  path: /v1/playout
+- description: List files in a given ASSETS subfolder
+  method: GET
+  name: get-file-list
+  path: /v1/files
+- description: Call a function in a registered SPX extension
+  method: POST
+  name: invoke-extension-function
+  path: /v1/extensions
+personas: []
+provider_name: SPX Graphics
+provider_slug: spx
+search_terms:
+- advance the focused graphic animation
+- list asset files
+- continue item
+- video production
+- get file list
+- directly play, continue, or stop a graphics template without needing it in a rundown. useful for ad-hoc graphics or automated triggers.
+- graphics
+- issue a continue command to advance the currently focused graphic to its next animation state or page.
+- play graphic
+- list files in a given assets subfolder
+- load a rundown file into spx. specify the project and rundown name in 'projectname/rundownname' format.
+- set focus to the first rundown item
+- update data fields for a rundown item
+- advance focus to the next rundown item
+- update graphic data
+- stop and remove the currently focused graphic from the live output.
+- direct template playout without rundown
+- call a function in a registered spx extension
+- issue continue command to the focused item
+- stop graphic
+- update template field values for a specific item
+- stop the focused graphic
+- broadcast
+- move rundown focus backward
+- media
+- invoke custom spx extension functions
+- load a rundown file into the spx system
+- move the rundown focus back to the previous item.
+- load rundown
+- direct playout
+- play/stop/continue a template directly
+- list files available in a given subfolder of the spx assets directory. useful for populating template dropdowns or media selection.
+- update item
+- play item
+- continue graphic
+- direct play out
+- move rundown focus forward
+- invoke extension function
+- live production
+- focus previous item
+- move focus to the previous rundown item
+- move the rundown focus to the very first item.
+- focus next item
+- trigger playback of the currently focused rundown item, making the graphic visible in the live output.
+- focus first item
+- play the currently focused rundown item
+- move rundown focus to the first item
+- streaming
+- browse media asset files
+- advance the rundown focus to the next item.
+- update the text, images, or other template field values for a specific rundown item identified by project, rundown, and item index.
+- trigger playback of the focused graphic
+- call a named function in a custom spx extension. used for advanced graphics like sports scoring, live timing, and custom data-driven graphics.
+- stop the currently focused rundown item
+- stop item
+- load and manage spx rundowns
+slug: live-graphics-production
+source_filename: live-graphics-production.yaml
+source_heading: Capability Spec
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SPX Live Graphics Production\"\n  description: >-\n    Unified capability for live video production graphics control using SPX-GC.\n    Enables broadcast operators, stream producers, and automation systems to control\n    graphics rundowns, trigger template playback, manage files, persist state for\n    sports scoring and timing, and invoke custom SPX extension logic — all through\n    a unified REST API and MCP server.\n  tags:\n    - Broadcast\n    - Graphics\n    - Live Production\n    - Media\n    - Streaming\n    - Video Production\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPX_API_KEY: SPX_API_KEY\n\ncapability:\n  consumes:\n    - import: spx-graphics\n      location: ./shared/spx-graphics-control.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: live-graphics-api\n      description: \"Unified REST API for live graphics production control\
+  \ via SPX-GC.\"\n      resources:\n        - path: /v1/rundowns\n          name: rundowns\n          description: \"Load and manage SPX rundowns\"\n          operations:\n            - method: POST\n              name: load-rundown\n              description: \"Load a rundown file into the SPX system\"\n              call: \"spx-graphics.load-rundown\"\n              with:\n                file: \"rest.file\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/rundowns/focus/first\n          name: focus-first\n          description: \"Move rundown focus to the first item\"\n          operations:\n            - method: POST\n              name: focus-first-item\n              description: \"Set focus to the first rundown item\"\n              call: \"spx-graphics.focus-first-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/rundowns/focus/next\n\
+  \          name: focus-next\n          description: \"Move rundown focus forward\"\n          operations:\n            - method: POST\n              name: focus-next-item\n              description: \"Advance focus to the next rundown item\"\n              call: \"spx-graphics.focus-next-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/rundowns/focus/previous\n          name: focus-previous\n          description: \"Move rundown focus backward\"\n          operations:\n            - method: POST\n              name: focus-previous-item\n              description: \"Move focus to the previous rundown item\"\n              call: \"spx-graphics.focus-previous-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items/play\n          name: item-play\n          description: \"Trigger playback of the focused graphic\"\n          operations:\n\
+  \            - method: POST\n              name: play-item\n              description: \"Play the currently focused rundown item\"\n              call: \"spx-graphics.play-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items/stop\n          name: item-stop\n          description: \"Stop the focused graphic\"\n          operations:\n            - method: POST\n              name: stop-item\n              description: \"Stop the currently focused rundown item\"\n              call: \"spx-graphics.stop-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items/continue\n          name: item-continue\n          description: \"Advance the focused graphic animation\"\n          operations:\n            - method: POST\n              name: continue-item\n              description: \"Issue continue command to the focused item\"\n           \
+  \   call: \"spx-graphics.continue-item\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/items/{id}\n          name: item-update\n          description: \"Update data fields for a rundown item\"\n          operations:\n            - method: PUT\n              name: update-item\n              description: \"Update template field values for a specific item\"\n              call: \"spx-graphics.update-item\"\n              with:\n                project: \"rest.project\"\n                rundown: \"rest.rundown\"\n                item: \"rest.id\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/playout\n          name: direct-playout\n          description: \"Direct template playout without rundown\"\n          operations:\n            - method: POST\n              name: direct-play-out\n              description:\
+  \ \"Play/stop/continue a template directly\"\n              call: \"spx-graphics.direct-play-out\"\n              with:\n                command: \"rest.command\"\n                template: \"rest.template\"\n                fields: \"rest.fields\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/files\n          name: assets\n          description: \"Browse media asset files\"\n          operations:\n            - method: GET\n              name: get-file-list\n              description: \"List files in a given ASSETS subfolder\"\n              call: \"spx-graphics.get-file-list\"\n              with:\n                folder: \"rest.folder\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extensions\n          name: extensions\n          description: \"Invoke custom SPX extension functions\"\n          operations:\n            - method: POST\n\
+  \              name: invoke-extension-function\n              description: \"Call a function in a registered SPX extension\"\n              call: \"spx-graphics.invoke-extension-function\"\n              with:\n                extension: \"rest.extension\"\n                function: \"rest.function\"\n                params: \"rest.params\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: live-graphics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted live graphics production control.\"\n      tools:\n        - name: load-rundown\n          description: >-\n            Load a rundown file into SPX. Specify the project and rundown name\n            in 'ProjectName/RundownName' format.\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"spx-graphics.load-rundown\"\n          with:\n            file: \"tools.file\"\n\
+  \          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: focus-first-item\n          description: \"Move the rundown focus to the very first item.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"spx-graphics.focus-first-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: focus-next-item\n          description: \"Advance the rundown focus to the next item.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"spx-graphics.focus-next-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: focus-previous-item\n          description: \"Move the rundown focus back to the previous item.\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"spx-graphics.focus-previous-item\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: play-graphic\n          description: >-\n            Trigger playback of the currently focused rundown item, making the\n            graphic visible in the live output.\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"spx-graphics.play-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stop-graphic\n          description: >-\n            Stop and remove the currently focused graphic from the live output.\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"spx-graphics.stop-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: continue-graphic\n          description: >-\n            Issue a continue command to advance the currently focused graphic\n            to its next animation state or page.\n   \
+  \       hints:\n            readOnly: false\n            destructive: false\n          call: \"spx-graphics.continue-item\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-graphic-data\n          description: >-\n            Update the text, images, or other template field values for a specific\n            rundown item identified by project, rundown, and item index.\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"spx-graphics.update-item\"\n          with:\n            project: \"tools.project\"\n            rundown: \"tools.rundown\"\n            item: \"tools.item\"\n            fields: \"tools.fields\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: direct-playout\n          description: >-\n            Directly play, continue, or stop a graphics template without needing\n            it in a rundown. Useful for ad-hoc\
+  \ graphics or automated triggers.\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"spx-graphics.direct-play-out\"\n          with:\n            command: \"tools.command\"\n            template: \"tools.template\"\n            fields: \"tools.fields\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-asset-files\n          description: >-\n            List files available in a given subfolder of the SPX ASSETS directory.\n            Useful for populating template dropdowns or media selection.\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"spx-graphics.get-file-list\"\n          with:\n            folder: \"tools.folder\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: invoke-extension-function\n          description: >-\n            Call a named function in a custom SPX extension.\
+  \ Used for advanced\n            graphics like sports scoring, live timing, and custom data-driven graphics.\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"spx-graphics.invoke-extension-function\"\n          with:\n            extension: \"tools.extension\"\n            function: \"tools.function\"\n            params: \"tools.params\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/spx/refs/heads/main/capabilities/live-graphics-production.yaml
+tags:
+- Broadcast
+- Graphics
+- Live Production
+- Media
+- Streaming
+- Video Production
+tools:
+- description: Load a rundown file into SPX. Specify the project and rundown name in 'ProjectName/RundownName' format.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: load-rundown
+- description: Move the rundown focus to the very first item.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: focus-first-item
+- description: Advance the rundown focus to the next item.
+  hints:
+    idempotent: false
+    readOnly: false
+  name: focus-next-item
+- description: Move the rundown focus back to the previous item.
+  hints:
+    idempotent: false
+    readOnly: false
+  name: focus-previous-item
+- description: Trigger playback of the currently focused rundown item, making the graphic visible in the live output.
+  hints:
+    destructive: false
+    readOnly: false
+  name: play-graphic
+- description: Stop and remove the currently focused graphic from the live output.
+  hints:
+    destructive: false
+    readOnly: false
+  name: stop-graphic
+- description: Issue a continue command to advance the currently focused graphic to its next animation state or page.
+  hints:
+    destructive: false
+    readOnly: false
+  name: continue-graphic
+- description: Update the text, images, or other template field values for a specific rundown item identified by project, rundown, and item index.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: update-graphic-data
+- description: Directly play, continue, or stop a graphics template without needing it in a rundown. Useful for ad-hoc graphics or automated triggers.
+  hints:
+    destructive: false
+    readOnly: false
+  name: direct-playout
+- description: List files available in a given subfolder of the SPX ASSETS directory. Useful for populating template dropdowns or media selection.
+  hints:
+    idempotent: true
+    readOnly: true
+  name: list-asset-files
+- description: Call a named function in a custom SPX extension. Used for advanced graphics like sports scoring, live timing, and custom data-driven graphics.
+  hints:
+    destructive: false
+    readOnly: false
+  name: invoke-extension-function
+---

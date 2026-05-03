@@ -13,7 +13,7 @@ description: 'Identity management, authentication, authorization, single sign-on
 
   '
 domain: security
-implementation_count: 15
+implementation_count: 13
 implementations:
 - capability_name: Microsoft Active Directory Identity Management Operations
   capability_slug: identity-management-operations
@@ -29,21 +29,6 @@ implementations:
   - User Management
   - Zero Trust
   tool_count: 10
-- capability_name: Amazon Cognito User Authentication
-  capability_slug: user-authentication
-  capability_url: https://capabilities.apis.io/capabilities/amazon-cognito/user-authentication/
-  consumed_api_count: 2
-  operation_count: 7
-  provider_name: Amazon Cognito
-  provider_slug: amazon-cognito
-  tags:
-  - Amazon
-  - Authentication
-  - Identity
-  - User Management
-  - OAuth
-  - Federated Identity
-  tool_count: 12
 - capability_name: Amazon IAM - Access Management
   capability_slug: iam-access-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iam/iam-access-management/
@@ -111,19 +96,6 @@ implementations:
   - Identity Management
   - User Management
   tool_count: 10
-- capability_name: Azure AD Identity and Access Management
-  capability_slug: identity-and-access
-  capability_url: https://capabilities.apis.io/capabilities/azure-active-directory/identity-and-access/
-  consumed_api_count: 1
-  operation_count: 12
-  provider_name: Azure Active Directory
-  provider_slug: azure-active-directory
-  tags:
-  - Microsoft Entra
-  - Identity
-  - Access Management
-  - Azure Active Directory
-  tool_count: 17
 - capability_name: Dynatrace Identity And Access
   capability_slug: identity-and-access
   capability_url: https://capabilities.apis.io/capabilities/dynatrace/identity-and-access/
@@ -223,7 +195,7 @@ implementations:
   tool_count: 10
 layout: category
 name: Identity & Access
-provider_count: 15
+provider_count: 13
 related:
 - security
 - compliance

@@ -63,63 +63,63 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- create secret
-- api key management
-- get a secret from secret manager
-- policies
-- delete secret
-- infrastructure
-- create group
-- identity
-- manage a specific api key
-- scaleway
-- api keys
-- get secret
-- create policy
-- secret management
-- permissions
-- iam
-- get api key details
-- delete a secret from secret manager
-- list iam api keys
-- delete a secret
-- storage
-- list api keys
-- create an iam policy
-- security
-- list iam users
-- create a new iam api key
-- create a new secret in secret manager
-- kubernetes
-- get api key
-- list iam groups
-- ai
-- manage a specific secret
-- list iam users in the organization
-- list scaleway iam api keys
-- create an iam group
-- group management
-- containers
 - list policies
-- create api key
-- list secrets in secret manager
-- serverless
-- delete an api key
+- list api keys
+- security
+- storage
+- access control
+- create secret
+- european cloud
+- list iam groups
+- policies
+- create an iam policy
+- delete an iam api key
+- list scaleway iam api keys
 - access policy management
+- delete a secret from secret manager
+- create group
+- list iam policies
+- delete a secret
+- kubernetes
+- group management
+- get secret details
+- list secrets
+- get api key details
+- secret management
 - create an iam api key
 - list users
-- get secret details
-- access control
-- delete api key
-- list groups
-- database
-- list iam policies
-- delete an iam api key
-- user management
-- list secrets
-- european cloud
+- create policy
+- api key management
+- create api key
+- delete an api key
 - create a secret
+- user management
+- identity
+- manage a specific secret
+- list secrets in secret manager
+- database
+- containers
+- get api key
+- list iam users
+- get secret
+- list iam api keys
+- list iam users in the organization
+- create a new secret in secret manager
+- delete api key
+- scaleway
+- ai
+- iam
+- list groups
+- manage a specific api key
+- get a secret from secret manager
+- create an iam group
+- permissions
+- serverless
+- delete secret
+- infrastructure
 - cloud computing
+- api keys
+- create a new iam api key
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability over a snowflake-hosted financial-services dataset that exposes governed read mcp tools with pii surface detection + data-classification tags as the zero-touch-governance runtime.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability over a snowflake-hosted financial-services dataset that exposes governed read mcp tools with pii surface detection + data-classification tags as the zero-touch-governance runtime.
 slug: nwm-snowflake-policy-tagged-data-mcp
 source_filename: nwm-snowflake-policy-tagged-data-mcp.yaml
 source_heading: Capability Spec

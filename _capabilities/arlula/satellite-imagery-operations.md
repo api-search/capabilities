@@ -9,10 +9,10 @@ personas: []
 provider_name: Arlula
 provider_slug: arlula
 search_terms:
-- imagery
 - earth observation
-- geospatial
 - remote sensing
+- geospatial
+- imagery
 - satellites
 slug: satellite-imagery-operations
 source_filename: satellite-imagery-operations.yaml

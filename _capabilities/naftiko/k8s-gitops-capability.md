@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - mcp
-- governance
-- a capability deployed via naftiko operator for kubernetes + naftikocapability crd + gitops (argocd/flux) — devops/platform engineer's native language.
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- a capability deployed via naftiko operator for kubernetes + naftikocapability crd + gitops (argocd/flux) — devops/platform engineer's native language.
+- governance
 slug: k8s-gitops-capability
 source_filename: k8s-gitops-capability.yaml
 source_heading: Capability Spec

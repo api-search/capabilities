@@ -34,62 +34,62 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- currency conversion, vat compliance, and banking validation for financial applications
-- validate an iban and get bank details
-- get vat rates
-- convert an amount from one currency to another using live rates
-- exchange rates, vat validation, and iban validation for financial compliance
-- public holidays
-- company enrichment
-- validate an iban number and retrieve bank and account details
-- timezones
-- convert currency
-- detection and blocking of fraudulent users, transactions, and bot activity
-- fraud analyst
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- engineer building data pipelines and enrichment workflows
-- get current vat rates for a country
-- get live exchange rates
-- engineer building fraud detection and threat intelligence systems
-- get live rates
-- ip geolocation
-- convert currency amounts
-- security engineer
-- contacts
-- developer building user onboarding and personalization features
-- get the latest exchange rates for 80+ currencies
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- validate a vat number and retrieve associated company details
-- finance engineer
-- currencies
-- ip intelligence
-- product engineer
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- screenshots
-- validate iban
-- financial compliance
-- retrieve current exchange rates
-- iban validation
-- avatars
-- validate a vat number
-- compliance analyst
-- web scraping
-- finance
-- convert an amount from one currency to another
-- vat validation
 - validate vat
-- exchange rates
-- validate vat number
-- phone validation
-- validate a vat number and get company details
-- developer building payment, billing, and financial compliance systems
+- web scraping
+- convert an amount from one currency to another using live rates
+- get live exchange rates
+- detection and blocking of fraudulent users, transactions, and bot activity
 - abstract api
+- financial compliance
+- iban validation
+- convert an amount from one currency to another
+- phone validation
 - email validation
-- image processing
+- retrieve current exchange rates
+- vat validation
+- get vat rates
+- developer building payment, billing, and financial compliance systems
+- avatars
+- security engineer
+- product engineer
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- exchange rates, vat validation, and iban validation for financial compliance
+- fraud analyst
+- company enrichment
+- contacts
 - validate an iban number
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
 - data engineer
+- currencies
+- get live rates
+- validate a vat number and get company details
+- currency conversion, vat compliance, and banking validation for financial applications
+- image processing
+- convert currency amounts
+- validate vat number
+- finance
+- validate an iban number and retrieve bank and account details
+- exchange rates
+- screenshots
+- validate a vat number
+- engineer building fraud detection and threat intelligence systems
+- developer building user onboarding and personalization features
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- get the latest exchange rates for 80+ currencies
+- validate a vat number and retrieve associated company details
+- compliance analyst
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- engineer building data pipelines and enrichment workflows
+- ip geolocation
+- validate iban
+- get current vat rates for a country
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- timezones
+- public holidays
+- ip intelligence
+- finance engineer
+- validate an iban and get bank details
+- convert currency
 slug: financial-compliance
 source_filename: financial-compliance.yaml
 source_heading: Capability Spec

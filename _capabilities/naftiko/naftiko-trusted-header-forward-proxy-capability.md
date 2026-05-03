@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - naftiko
 - a capability deployed behind a gateway using naftiko's forward proxy with trusted-header security, illustrating the clean partnership boundary ( = gateway, naftiko = capability/mcp).
-- governance
-- mcp
+- api integration
+- spec-driven integration
 - capabilities
-- ai
+- example op
+- governance
 slug: naftiko-trusted-header-forward-proxy-capability
 source_filename: naftiko-trusted-header-forward-proxy-capability.yaml
 source_heading: Capability Spec

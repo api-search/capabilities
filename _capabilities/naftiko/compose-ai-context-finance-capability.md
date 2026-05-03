@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
 - compose ai context (#5) showing accounting + finance + customer apis as multi-source context for an ai assistant.
 - governance
-- mcp
-- capabilities
-- ai
 slug: compose-ai-context-finance-capability
 source_filename: compose-ai-context-finance-capability.yaml
 source_heading: Capability Spec

@@ -9,12 +9,12 @@ personas: []
 provider_name: Agromonitoring
 provider_slug: agromonitoring
 search_terms:
-- vegetation indices
-- remote sensing
 - agriculture
-- weather
 - precision agriculture
+- remote sensing
+- vegetation indices
 - satellite imagery
+- weather
 slug: crop-monitoring
 source_filename: crop-monitoring.yaml
 source_heading: Capability Spec

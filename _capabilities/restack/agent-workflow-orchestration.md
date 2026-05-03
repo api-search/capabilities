@@ -37,32 +37,32 @@ personas: []
 provider_name: Restack
 provider_slug: restack
 search_terms:
-- check restack server health
-- health check
-- schedule agent
-- get the current status and output of a workflow run
-- server health monitoring
 - automation
-- track workflow execution status and retrieve results
-- track agent execution status and retrieve results
-- orchestration
-- schedule an ai agent by name with typed input parameters
-- enterprise
-- schedule ai agents for asynchronous execution
-- schedule long-running workflows that persist state
-- schedule an ai agent on restack for asynchronous execution. returns a runid to track progress.
 - ai agents
+- get the current status and output of an agent run
 - get workflow run
-- get the current status and output of a restack workflow run by name and run id.
+- schedule agent
+- schedule long-running workflows that persist state
+- schedule a workflow by name with typed input parameters
+- schedule workflow
 - get the current status and output of a restack agent run by name and run id.
+- server health monitoring
+- get the current status and output of a workflow run
+- track agent execution status and retrieve results
+- schedule ai agents for asynchronous execution
 - check the health status of the restack server.
 - get agent run
-- python
-- schedule workflow
-- schedule a workflow by name with typed input parameters
-- get the current status and output of an agent run
-- schedule a long-running workflow on restack. workflows persist state across days, months, or years.
 - workflows
+- health check
+- enterprise
+- schedule a long-running workflow on restack. workflows persist state across days, months, or years.
+- schedule an ai agent on restack for asynchronous execution. returns a runid to track progress.
+- python
+- schedule an ai agent by name with typed input parameters
+- track workflow execution status and retrieve results
+- check restack server health
+- orchestration
+- get the current status and output of a restack workflow run by name and run id.
 slug: agent-workflow-orchestration
 source_filename: agent-workflow-orchestration.yaml
 source_heading: Capability Spec

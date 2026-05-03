@@ -42,45 +42,45 @@ personas: []
 provider_name: RapidAPI
 provider_slug: rapidapi
 search_terms:
-- single api listing.
-- create a new api listing.
-- hub users.
-- api gateway
-- list all organizations in the enterprise hub.
-- update an existing api listing configuration, description, or settings.
-- platform
-- enterprise
-- get api details.
-- list organizations
-- update api
-- api listings in the enterprise hub.
-- api design
+- api subscriptions.
+- list all subscriptions.
+- api testing
 - delete an api listing.
+- get api
+- update api
 - list all organizations.
+- list subscriptions
+- administration
 - marketplace
 - remove an api listing from the enterprise hub. this action is irreversible.
-- rapidapi
-- delete api
-- api testing
-- list all apis in the hub.
-- api management
-- list all api listings in the rapidapi enterprise hub. use to audit, discover, or report on available apis.
-- administration
-- list all subscriptions.
-- api marketplace
-- list users
-- api subscriptions.
 - retrieve details for a specific api listing including versions, endpoints, and pricing plans.
-- list all api subscriptions to monitor adoption and revenue.
-- get api
-- list all users in the enterprise hub to manage access and roles.
-- update an api listing.
-- list subscriptions
-- hub organizations.
-- list all users.
+- api marketplace
+- api management
 - list apis
-- publish a new api listing to the enterprise hub marketplace.
+- api design
+- single api listing.
+- list all users.
+- list all organizations in the enterprise hub.
+- hub users.
+- rapidapi
+- api gateway
+- list users
+- enterprise
 - create api
+- publish a new api listing to the enterprise hub marketplace.
+- list organizations
+- update an existing api listing configuration, description, or settings.
+- hub organizations.
+- api listings in the enterprise hub.
+- list all apis in the hub.
+- delete api
+- platform
+- list all users in the enterprise hub to manage access and roles.
+- create a new api listing.
+- update an api listing.
+- list all api subscriptions to monitor adoption and revenue.
+- get api details.
+- list all api listings in the rapidapi enterprise hub. use to audit, discover, or report on available apis.
 slug: hub-management
 source_filename: hub-management.yaml
 source_heading: Capability Spec

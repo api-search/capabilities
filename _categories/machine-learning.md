@@ -13,7 +13,7 @@ description: 'Capabilities for ML/AI services — model training, inference endp
 
   '
 domain: ai-ml
-implementation_count: 13
+implementation_count: 12
 implementations:
 - capability_name: AMD AI GPU Computing
   capability_slug: ai-gpu-computing
@@ -44,19 +44,6 @@ implementations:
   - Embeddings
   - Developer Tools
   - API Gateway
-  tool_count: 4
-- capability_name: Human Review Workflow
-  capability_slug: human-review-workflow
-  capability_url: https://capabilities.apis.io/capabilities/amazon-augmented-ai/human-review-workflow/
-  consumed_api_count: 0
-  operation_count: 2
-  provider_name: Amazon Augmented AI
-  provider_slug: amazon-augmented-ai
-  tags:
-  - Amazon Augmented AI
-  - Human In The Loop
-  - Machine Learning
-  - AI Review
   tool_count: 4
 - capability_name: Amazon Neptune Analytics and Machine Learning
   capability_slug: neptune-analytics-ml
@@ -193,10 +180,10 @@ implementations:
   - Cortex
   - AI
   - Machine Learning
-  tool_count: 10
+  tool_count: 20
 layout: category
 name: Machine Learning & AI
-provider_count: 12
+provider_count: 11
 related:
 - analytics
 - document-processing

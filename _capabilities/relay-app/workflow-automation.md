@@ -45,50 +45,50 @@ personas: []
 provider_name: Relay App
 provider_slug: relay-app
 search_terms:
-- get the status and details of a workflow run.
-- approve step
-- workflow inventory management.
-- approve a paused human-in-the-loop workflow step to continue execution.
-- cancel a running or paused workflow.
-- list relay workflows
-- workflow
 - automation
+- cancel a workflow run.
+- list all available workflows in the relay.app account.
+- approve a paused workflow step.
+- individual workflow management.
+- workflow run status and management.
+- workflow run history for a specific workflow.
+- ai automation
+- get the status and details of a workflow run.
+- list workflows
+- get run status
+- workflow
+- integration
+- get relay workflow
 - list workflow runs
 - webhooks
-- list run instances for a workflow.
-- get configuration and status details of a specific relay.app workflow.
-- cancel workflow run
-- trigger a relay.app workflow via webhook with optional json payload data.
+- list all available workflows.
+- trigger relay workflow
 - get the current status and details of a workflow run.
-- ai automation
-- human-in-the-loop approval for paused workflows.
+- trigger workflow
+- cancel a running or paused workflow.
+- cancel run
+- approve a paused human-in-the-loop workflow step to continue execution.
+- trigger a workflow run via webhook.
+- get configuration and status details of a specific relay.app workflow.
 - relay app
+- ai
+- workflow inventory management.
+- get run
+- cancel a currently running or paused workflow run.
+- cancel workflow run
+- list run instances for a workflow.
+- approve workflow step
+- list run history for a specific workflow, with optional status filtering.
+- trigger a relay.app workflow via webhook with optional json payload data.
+- human in the loop
+- workflow automation
+- human-in-the-loop approval for paused workflows.
+- list relay workflows
+- no-code
+- get details of a specific workflow.
+- approve step
 - get workflow
 - webhook-based workflow triggering.
-- ai
-- trigger a workflow run via webhook.
-- cancel run
-- human in the loop
-- list all available workflows in the relay.app account.
-- trigger workflow
-- list run history for a specific workflow, with optional status filtering.
-- list workflows
-- individual workflow management.
-- get run
-- workflow automation
-- cancel a currently running or paused workflow run.
-- integration
-- list all available workflows.
-- approve a paused workflow step.
-- approve workflow step
-- workflow run status and management.
-- no-code
-- trigger relay workflow
-- cancel a workflow run.
-- get relay workflow
-- get run status
-- workflow run history for a specific workflow.
-- get details of a specific workflow.
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

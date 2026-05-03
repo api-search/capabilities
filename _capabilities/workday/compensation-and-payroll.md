@@ -44,51 +44,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- comp request change
 - cloud computing
-- hcm
-- comp list scorecards
-- list dependents
-- get pay group details
-- saas
-- list payroll inputs
-- compensation plans
-- payroll list pay groups
-- list benefit elections
-- pay groups
-- comp list grades
+- benefits change
 - list pay groups
-- benefit plans
-- payroll
-- list benefit plans
-- list plans
-- payroll get pay group details
-- get a pay group by id
-- list compensation grades
-- list compensation scorecards
-- payroll list pay slips
-- comp list plans
-- list compensation plans
-- submit a compensation change request
-- comp request one time payment
-- list all pay groups
 - workday
-- benefits
-- enterprise software
+- compensation
+- comp list plans
+- payroll list pay groups
+- list dependents
+- saas
+- hcm
+- list all benefit plans
+- list compensation scorecards
+- submit a benefits change request
+- benefits list elections
+- payroll list inputs
+- benefits list dependents
+- list payroll inputs
+- submit a compensation change request
 - benefits get eligible plans
 - benefits list plans
-- payroll list inputs
-- payroll get pay group
-- benefits list dependents
-- financial management
-- benefits list elections
-- get eligible benefit plans for a worker
+- enterprise software
 - request a one-time payment
-- compensation
-- list all benefit plans
-- submit a benefits change request
 - list pay slips
-- benefits change
+- comp request one time payment
+- list plans
+- compensation plans
+- comp request change
+- list all pay groups
+- pay groups
+- list benefit elections
+- payroll
+- get a pay group by id
+- payroll get pay group details
+- payroll get pay group
+- financial management
+- comp list grades
+- list benefit plans
+- comp list scorecards
+- list compensation plans
+- list compensation grades
+- get eligible benefit plans for a worker
+- benefits
+- get pay group details
+- benefit plans
+- payroll list pay slips
 slug: compensation-and-payroll
 source_filename: compensation-and-payroll.yaml
 source_heading: Capability Spec

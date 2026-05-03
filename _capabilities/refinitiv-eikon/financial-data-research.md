@@ -46,54 +46,54 @@ personas: []
 provider_name: Refinitiv Eikon
 provider_slug: refinitiv-eikon
 search_terms:
-- news
-- detailed esg measures.
-- get pricing snapshot
-- get current real-time or delayed pricing snapshot for one or more instruments.
-- refinitiv eikon
-- search across instruments, organizations, and economic indicators on the refinitiv data platform.
-- retrieve historical intraday pricing summaries.
-- full news story content.
-- retrieve esg scores.
-- retrieve esg (environmental, social, governance) scores for financial instruments.
-- symbology
-- search for instruments and organizations.
-- retrieve historical interday pricing data for a financial instrument using its ric code.
-- lookup symbology
-- get intraday pricing
 - esg scores for instruments.
-- retrieve detailed esg measures.
-- instrument identifier concordance.
-- historical interday pricing data for an instrument.
-- map between different instrument identifier types (isin, cusip, sedol, ric, permid).
-- real-time data
+- lookup symbology
 - research
-- search and retrieve financial news headlines from reuters and other sources.
-- market data
-- map between instrument identifier types.
-- retrieve financial news headlines.
-- get esg measures
-- retrieve the full content of a financial news story by its story id.
-- esg
-- search instruments
-- trading
-- financial news headlines.
-- analytics
-- financial data
-- retrieve a full news story.
-- historical intraday pricing data.
-- retrieve detailed esg measures and underlying data points for instruments.
-- instrument and entity search.
+- instrument identifier concordance.
+- map between different instrument identifier types (isin, cusip, sedol, ric, permid).
+- get intraday pricing
+- search for instruments and organizations.
 - real-time pricing snapshots.
-- retrieve historical intraday pricing at minute or hourly intervals.
-- get interday pricing
-- get pricing snapshots
-- retrieve current pricing snapshots.
-- get news story
-- retrieve historical interday pricing summaries.
+- analytics
 - get esg scores
 - get news headlines
+- financial news headlines.
+- market data
+- get current real-time or delayed pricing snapshot for one or more instruments.
+- historical intraday pricing data.
+- retrieve esg scores.
+- retrieve historical interday pricing summaries.
+- retrieve detailed esg measures.
+- search across instruments, organizations, and economic indicators on the refinitiv data platform.
 - financial news
+- retrieve the full content of a financial news story by its story id.
+- retrieve historical intraday pricing at minute or hourly intervals.
+- search instruments
+- search and retrieve financial news headlines from reuters and other sources.
+- detailed esg measures.
+- trading
+- esg
+- retrieve historical intraday pricing summaries.
+- news
+- symbology
+- get news story
+- instrument and entity search.
+- get pricing snapshot
+- retrieve esg (environmental, social, governance) scores for financial instruments.
+- retrieve detailed esg measures and underlying data points for instruments.
+- get pricing snapshots
+- financial data
+- retrieve a full news story.
+- retrieve financial news headlines.
+- get esg measures
+- get interday pricing
+- retrieve current pricing snapshots.
+- historical interday pricing data for an instrument.
+- refinitiv eikon
+- full news story content.
+- retrieve historical interday pricing data for a financial instrument using its ric code.
+- map between instrument identifier types.
+- real-time data
 slug: financial-data-research
 source_filename: financial-data-research.yaml
 source_heading: Capability Spec

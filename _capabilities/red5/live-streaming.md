@@ -34,45 +34,45 @@ personas: []
 provider_name: Red5
 provider_slug: red5
 search_terms:
+- get detailed statistics for a live stream including bitrate, frame rate, and subscriber count
+- get app stats
 - video
-- stop stream recording
-- live stream management
-- list live streams
-- get stream statistics
-- get server health
-- start recording
-- check red5 pro server health and get version information
-- start stream recording
-- list streaming apps
-- get statistics for a specific streaming application scope
-- streaming application management
-- get stream stats
-- real-time
-- rtmp
-- webrtc
-- live streaming
 - get stream
-- individual stream management
-- get detailed red5 pro server configuration and status
 - list all active live streams in a streaming application
+- list streams
+- list applications
+- get stream stats
+- stop stream recording
+- individual stream management
+- start recording
 - list active streams in an application
-- stop recording
+- streaming application management
+- webrtc
+- live stream management
 - start recording a stream
 - media
-- start recording a live stream to disk storage
-- red5
-- list all streaming applications deployed on the red5 pro server
-- list streams
-- get server info
-- get app stats
-- get detailed statistics for a live stream including bitrate, frame rate, and subscriber count
 - stop an active stream recording and finalize the recording file
-- get server information and status
-- stop recording a stream
-- list deployed streaming applications
-- list applications
 - server health and information
+- get server information and status
+- stop recording
+- get statistics for a specific streaming application scope
+- list live streams
+- rtmp
+- list deployed streaming applications
+- live streaming
+- check red5 pro server health and get version information
+- get stream statistics
+- real-time
+- get server health
+- red5
 - streaming
+- get server info
+- get detailed red5 pro server configuration and status
+- start stream recording
+- stop recording a stream
+- list all streaming applications deployed on the red5 pro server
+- list streaming apps
+- start recording a live stream to disk storage
 slug: live-streaming
 source_filename: live-streaming.yaml
 source_heading: Capability Spec

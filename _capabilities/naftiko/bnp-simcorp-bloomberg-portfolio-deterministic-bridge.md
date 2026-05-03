@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - a composed capability over simcorp dimension + bloomberg aim that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.
-- governance
-- mcp
-- capabilities
 - ai
+- mcp
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: bnp-simcorp-bloomberg-portfolio-deterministic-bridge
 source_filename: bnp-simcorp-bloomberg-portfolio-deterministic-bridge.yaml
 source_heading: Capability Spec

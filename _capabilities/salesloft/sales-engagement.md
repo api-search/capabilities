@@ -73,64 +73,64 @@ personas: []
 provider_name: Salesloft
 provider_slug: salesloft
 search_terms:
-- delete person
-- list cadence memberships
-- people
-- cadences
-- list all people
-- single person operations
-- list all accounts
-- update account
-- enroll people in cadences
-- list contacts and prospects in salesloft
-- automation
-- get account by id
-- sales
 - get cadence by id
-- create a new account
-- enroll a person in a cadence
-- get details for a specific person
-- enroll a person in a sales cadence for structured outreach
-- delete a person
-- update person
-- list available sales cadences/outreach sequences
-- engagement
-- create a new company account in salesloft
-- create person
-- list all cadences
-- list current cadence enrollments
-- single account operations
-- crm
+- automation
+- update an account
 - manage contacts and prospects
-- delete an account
+- update account
+- get person by id
+- enroll people in cadences
+- update person
 - accounts
 - enroll person
-- ai
-- manage company accounts
-- get details for a specific cadence
-- enroll person in cadence
-- revenue
-- list accounts
-- fetch account
-- sales cadences and outreach sequences
-- get details for a specific account
-- update an account
-- list cadence enrollments
-- salesloft
-- list cadences
-- create account
-- fetch person
-- get person by id
-- add a new contact/prospect to salesloft
-- delete account
-- update account details in salesloft
-- single cadence operations
-- list people
 - create a new person
-- fetch cadence
-- update a person
+- get details for a specific cadence
+- list cadences
+- enroll person in cadence
+- list cadence memberships
+- enroll a person in a cadence
 - list salesloft accounts to find target companies
+- cadences
+- add a new contact/prospect to salesloft
+- create a new account
+- list available sales cadences/outreach sequences
+- fetch person
+- revenue
+- salesloft
+- manage company accounts
+- create a new company account in salesloft
+- single cadence operations
+- delete person
+- get details for a specific person
+- list contacts and prospects in salesloft
+- create account
+- get details for a specific account
+- fetch account
+- create person
+- list current cadence enrollments
+- list accounts
+- delete a person
+- sales cadences and outreach sequences
+- update account details in salesloft
+- sales
+- ai
+- delete account
+- list all people
+- single account operations
+- single person operations
+- update a person
+- list all cadences
+- engagement
+- fetch cadence
+- list cadence enrollments
+- list people
+- people
+- crm
+- get account by id
+- list all accounts
+- enroll a person in a sales cadence for structured outreach
 - update person/contact details
+- delete an account
 slug: sales-engagement
 source_filename: sales-engagement.yaml
 source_heading: Capability Spec

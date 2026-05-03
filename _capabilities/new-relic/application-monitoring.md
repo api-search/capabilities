@@ -52,51 +52,51 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- developer
-- manage deployments
-- analysis
-- infrastructure
-- observability
-- get application metrics
-- get application metrics data
-- query metric data for an application
-- send custom events for application tracking
-- get application details
-- update application
-- query metric data points for an application
-- update application settings
-- list available metric names
-- send events
-- record a new deployment
-- record a new deployment for an application
-- devops
-- create deployment
-- platform
-- get application
-- deployments
-- send custom events
-- get application hosts
-- get applications
-- get deployments
-- list deployment records for an application
-- monitoring
 - list all monitored applications
-- list deployments for an application
-- application monitoring
-- analytics
-- list application hosts
-- list application metrics
-- new relic
-- get or update an application
-- list available metric names for an application
-- performance
-- query metric data
-- get details of a specific application
-- get key transactions
 - list hosts for an application
-- apm
-- list key transactions
+- query metric data points for an application
 - list applications
+- get or update an application
+- send events
+- monitoring
+- get deployments
+- list available metric names for an application
+- apm
+- create deployment
+- analytics
+- developer
+- get application metrics
+- get application hosts
+- deployments
+- get application details
+- manage deployments
+- list key transactions
+- new relic
+- get applications
+- application monitoring
+- get application
+- query metric data
+- send custom events
+- list application hosts
+- list deployments for an application
+- send custom events for application tracking
+- list application metrics
+- analysis
+- performance
+- get application metrics data
+- get details of a specific application
+- list deployment records for an application
+- observability
+- platform
+- list available metric names
+- update application settings
+- get key transactions
+- query metric data for an application
+- infrastructure
+- devops
+- record a new deployment
+- update application
+- record a new deployment for an application
 slug: application-monitoring
 source_filename: application-monitoring.yaml
 source_heading: Capability Spec

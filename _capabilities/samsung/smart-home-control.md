@@ -66,69 +66,69 @@ personas: []
 provider_name: Samsung
 provider_slug: samsung
 search_terms:
-- list all rooms in a smartthings location.
+- subscribe to device capability events.
+- create a new smartthings location.
 - execute capability commands on a device (e.g., switch.on, lock.lock, thermostat.setcoolingsetpoint).
-- scenes
-- automations
-- list scenes
-- smart tv
-- wearables
-- room management within a location.
-- individual device management.
-- device control
-- smart home
-- get device status
-- list locations
-- get the current real-time status of all device attributes (e.g., switch state, temperature, lock status).
-- subscribe to smartthings device capability events for real-time updates.
-- list all smartthings locations (homes, offices) accessible to the user.
-- create a new smartthings automation rule that triggers device actions based on conditions.
-- list rooms
+- list all smartthings connected devices. use to discover available iot devices in a location.
+- create location
 - list all rooms within a smartthings location.
-- smartthings location management.
+- list subscriptions
+- get the current real-time status of all device attributes (e.g., switch state, temperature, lock status).
+- execute scene
+- individual device management.
+- get device status
+- list all smartthings scenes.
+- mobile
+- execute commands on a smartthings device to control it (e.g., turn on a light, lock a door, set thermostat).
+- list locations
 - developer platform
+- execute device commands
+- smartthings location management.
+- list smartthings automation rules.
+- wearables
+- locations
+- scenes
+- smartthings
+- list scenes
+- activate a smartthings scene, applying its saved device configuration.
+- get details for a specific smartthings device including its components and capabilities.
+- create room
+- consumer electronics
+- smart tv
 - list devices
+- real-time device attribute status.
+- room management within a location.
+- samsung
+- list all rooms in a smartthings location.
+- scene activation.
+- create subscription
+- list smartthings scenes (saved device state configurations like 'movie time' or 'away mode').
+- subscribe to smartthings device capability events for real-time updates.
+- rules
+- create a new smartthings automation rule that triggers device actions based on conditions.
+- connected iot device inventory and status.
+- scene (saved device state configuration) management.
+- list active event subscriptions.
+- create a new room within a location.
+- create a new automation rule.
+- device control
+- activate a smartthings scene to apply a saved configuration to multiple devices at once.
+- list all smartthings locations.
+- get details for a specific connected device.
 - iot
 - create rule
-- get details for a specific smartthings device including its components and capabilities.
-- execute device commands
-- list all smartthings connected devices, optionally filtered by location or capability.
-- device capability command execution.
-- smartthings
-- create a new room within a location.
-- scene activation.
-- execute commands on a smartthings device to control it (e.g., turn on a light, lock a door, set thermostat).
-- create a new automation rule.
-- list smartthings scenes (saved device state configurations like 'movie time' or 'away mode').
-- device event subscriptions for real-time automation.
+- list all smartthings locations (homes, offices) accessible to the user.
 - get current attribute values for all device components and capabilities.
-- list smartthings automation rules (if-this-then-that conditions).
-- create a new smartthings location.
+- automations
 - list rules
-- real-time device attribute status.
-- create location
-- execute scene
-- activate a smartthings scene, applying its saved device configuration.
-- activate a smartthings scene to apply a saved configuration to multiple devices at once.
-- mobile
-- create room
 - automation rule management.
-- list all smartthings locations.
-- list active event subscriptions.
-- connected iot device inventory and status.
-- list all smartthings connected devices. use to discover available iot devices in a location.
+- list all smartthings connected devices, optionally filtered by location or capability.
 - get device
-- rules
-- subscribe to device capability events.
-- list subscriptions
-- consumer electronics
-- list all smartthings scenes.
-- create subscription
-- samsung
-- locations
-- get details for a specific connected device.
-- list smartthings automation rules.
-- scene (saved device state configuration) management.
+- device event subscriptions for real-time automation.
+- device capability command execution.
+- list smartthings automation rules (if-this-then-that conditions).
+- list rooms
+- smart home
 slug: smart-home-control
 source_filename: smart-home-control.yaml
 source_heading: Capability Spec

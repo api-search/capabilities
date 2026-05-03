@@ -83,89 +83,89 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- branch operations
-- list tags
+- getPullRequest
+- github
 - compare commits
-- create a release
-- submit a review for a pull request
-- create a pull request
-- repositories
-- platform
-- list public repositories
-- code
-- updateRepository
-- compareTwoCommits
-- update a pull request
-- release management
+- listPullRequests
 - t1
-- get a pull request
-- update branch protection
-- merge pull request
-- request reviewers
-- merge branch
-- get repository content
 - update pull request
-- create review
-- submit review
+- merge branch
+- getBranch
+- code review
+- software development
+- merge pull request
+- search repositories
+- commit operations
+- branches
+- listPublicRepositories
+- getRepository
+- create release
+- searchRepositories
+- create a review
+- list pull requests
+- createRelease
+- get a repository
+- code
+- request reviewers for a pull request
+- list tags
+- getRepositoryContent
+- list reviews for a pull request
+- pipelines
+- list pr files
+- list pull request files
+- list reviews
+- submit a review for a pull request
+- updatePullRequest
+- merge a branch
+- compareTwoCommits
+- list public repositories
+- get a pull request
+- get a commit
+- create or update file
+- create a review for a pull request
+- get pull request
+- create a pull request
+- release management
+- branch operations
+- get branch
+- request reviewers
+- get content
+- update a repository
 - mergePullRequest
 - pull request merge
-- get content
-- get a branch
-- list pull requests
-- create or update file contents
-- code review management
-- create or update file
-- request reviewers for a pull request
-- create pull request
-- listPublicRepositories
-- list commits
-- list repository tags
-- listCommits
-- search repositories
-- list pr files
-- github
-- get pull request
-- repository listing and search
-- get branch
-- updatePullRequest
-- getPullRequest
-- getBranch
-- list releases
-- createOrUpdateFileContents
-- update a repository
-- commit operations
-- repository content management
-- create a review for a pull request
-- merge a branch
-- listPullRequests
-- list reviews
-- compare two commits
-- get a commit
-- list pull request files
-- list reviews for a pull request
-- createPullRequest
-- pull requests
-- source control
-- createRelease
-- individual pull request operations
-- merge a pull request
-- searchRepositories
-- getRepository
-- branches
-- create a review
-- get commit
-- repository management
 - listReleases
-- code review
-- listReviewsForPullRequest
+- repository content management
+- create pull request
+- pull requests
 - get repository
-- getRepositoryContent
-- pipelines
-- pull request management
+- list releases
+- code review management
+- get a branch
+- merge a pull request
+- compare two commits
+- list commits
+- updateRepository
+- create review
+- update branch protection
+- source control
+- get commit
+- createPullRequest
+- createOrUpdateFileContents
 - createReviewForPullRequest
-- get a repository
-- create release
-- software development
+- create a release
+- update a pull request
+- repository listing and search
+- individual pull request operations
+- list repository tags
+- repositories
+- repository management
+- submit review
+- platform
+- get repository content
+- pull request management
+- create or update file contents
+- listCommits
+- listReviewsForPullRequest
 slug: source-control
 source_filename: source-control.yaml
 source_heading: Capability Spec

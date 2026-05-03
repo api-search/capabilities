@@ -77,90 +77,90 @@ personas: []
 provider_name: Amazon S3
 provider_slug: amazon-s3
 search_terms:
-- s3 buckets
-- get table
-- list objects in a bucket
-- list access points
-- list s3 batch operations jobs
+- list batch jobs
+- describe batch job
+- delete bucket
+- get details of an s3 table bucket
 - single object
-- get an access point
-- list table buckets
-- list tables
-- upload an object to s3
-- copy an object within s3
-- get object
+- get details of a table
 - delete an object from s3
-- put object
+- list jobs
+- get configuration of an s3 access point
+- get public access block settings for the account
+- list s3 access points
 - amazon
+- delete an object
+- retrieve an object from s3
+- get access point
+- s3
+- cloud storage
 - head bucket
 - get table bucket
-- list all s3 buckets owned by the account
-- list s3 storage lens configurations
-- get details of an s3 table bucket
-- s3 batch operations jobs
-- delete an s3 bucket
-- single access point
-- get details of a batch operations job
-- single s3 bucket
-- upload an object
-- list jobs
-- list tables in a namespace
-- objects in a bucket
-- list s3 access points for the account
-- get configuration of an s3 access point
-- delete object
-- get details of a table
-- list storage lens
-- get public access block
-- archive
-- create a batch operations job
-- get bucket lifecycle
-- list all s3 buckets
-- retrieve an object from s3
-- get lifecycle configuration for an s3 bucket
-- list objects
-- check if a bucket exists
-- list batch jobs
-- data storage
-- delete objects
-- storage management
-- list namespaces in a table bucket
-- s3
-- create an s3 bucket
-- aws
-- scalable storage
-- delete multiple objects from an s3 bucket
-- cloud storage
-- list batch operations jobs
-- get public access block settings for the account
-- list buckets
-- get bucket versioning
-- get bucket encryption
-- list storage lens configs
-- create a new s3 bucket
-- list storage lens configurations
-- tables in a table bucket
-- delete bucket
-- s3 access points
-- get encryption configuration for an s3 bucket
 - backup
-- create bucket
-- get access point
-- object storage
-- describe batch job
-- describe job
-- delete an object
-- get an object
-- list objects in an s3 bucket
-- list s3 table buckets
+- copy an object within s3
+- list all s3 buckets owned by the account
+- s3 batch operations jobs
+- data storage
+- list objects
+- list storage lens
+- upload an object
 - storage lens configurations
-- get versioning configuration for an s3 bucket
-- copy object
-- create job
+- list s3 table buckets
+- list access points
+- list s3 batch operations jobs
+- get object
+- get lifecycle configuration for an s3 bucket
+- list all s3 buckets
+- list batch operations jobs
 - list namespaces
-- list s3 access points
-- single batch operations job
+- get versioning configuration for an s3 bucket
+- object storage
+- single s3 bucket
+- get table
+- list s3 access points for the account
+- archive
+- scalable storage
+- list buckets
+- copy object
+- delete multiple objects from an s3 bucket
+- get bucket versioning
+- list table buckets
+- get encryption configuration for an s3 bucket
 - s3 table buckets
+- create an s3 bucket
+- create a batch operations job
+- list storage lens configurations
+- upload an object to s3
+- delete objects
+- objects in a bucket
+- single batch operations job
+- s3 access points
+- list objects in an s3 bucket
+- create bucket
+- create a new s3 bucket
+- get details of a batch operations job
+- get bucket encryption
+- list s3 storage lens configurations
+- get an object
+- list storage lens configs
+- get bucket lifecycle
+- list tables
+- describe job
+- tables in a table bucket
+- put object
+- s3 buckets
+- aws
+- list namespaces in a table bucket
+- get an access point
+- list objects in a bucket
+- delete object
+- check if a bucket exists
+- list tables in a namespace
+- storage management
+- single access point
+- delete an s3 bucket
+- get public access block
+- create job
 slug: storage-management
 source_filename: storage-management.yaml
 source_heading: Capability Spec

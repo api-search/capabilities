@@ -30,55 +30,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- resource manager
-- list databases
 - cloud computing
-- keyvault list keys
-- key vault secret management
-- blob storage operations
-- arm list resources
-- download a blob
 - blob download
-- list resource groups
-- list resource providers
-- cosmos db
+- t1
+- list blobs
+- list cryptographic keys
+- arm list tags
+- keyvault list secrets
+- list subscriptions
+- keyvault list keys
+- blob storage operations
+- resource manager
+- arm list subscriptions
+- infrastructure as a service
+- arm list resource groups
+- azure
 - blob list blobs
-- list blobs in a container
-- enterprise
+- api management
+- subscription management
+- platform as a service
+- download a blob
+- list resources in a subscription
 - get a secret value
-- list azure subscriptions
-- cloud
+- cosmos db database management
+- list resource providers
+- list secrets
+- blob get properties
+- key vault secret management
+- blob storage
+- list containers in a database
+- keyvault get secret
+- key vault
 - cosmos list items
 - arm list providers
-- cosmos list databases
-- keyvault get secret
-- keyvault list certificates
-- azure
-- blob get properties
-- arm list tags
-- get blob properties
-- blob storage
-- arm list subscriptions
-- list resources in a subscription
-- arm list resource groups
-- api management
-- key vault
-- cosmos list containers
-- list cryptographic keys
-- list containers in a database
-- t1
-- list cosmos db databases
-- list blobs
-- platform as a service
 - list subscription tags
-- subscription management
-- list subscriptions
-- list secrets
-- list items in a container
-- keyvault list secrets
-- cosmos db database management
+- cloud
+- cosmos list containers
+- enterprise
+- get blob properties
+- keyvault list certificates
+- list blobs in a container
+- cosmos db
+- list databases
+- arm list resources
 - list certificates
-- infrastructure as a service
+- list azure subscriptions
+- list items in a container
+- list cosmos db databases
+- list resource groups
+- cosmos list databases
 slug: data-and-security
 source_filename: data-and-security.yaml
 source_heading: Capability Spec

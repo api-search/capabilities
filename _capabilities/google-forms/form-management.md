@@ -38,51 +38,51 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- get a single response
-- list all active watches for a form
-- apply batch updates to a form (add/remove/modify items)
-- update form publish settings
-- renew watch
-- delete a watch
-- set publish settings
-- create form
-- analyzes form responses and collects data
-- get a google form's structure and settings
-- managing surveys, questions, and notification watches
-- delete watch
-- create a new google form with a title
-- delete a watch to stop notifications
-- get form details
 - list all responses for a form
+- delete a watch to stop notifications
+- get form
+- get form details
+- get response
+- get a google form's structure and settings
+- analyzes form responses and collects data
+- creating and managing forms for data collection
+- create a new google form with a title
+- Data Analyst
+- list all active watches for a form
 - batch update form
+- Form Administrator
+- update form publish settings
+- data collection
+- create watch
+- renew watch
+- managing surveys, questions, and notification watches
+- create a notification watch
+- list watches
+- responses
+- questionnaires
+- google workspace
+- get a single response
+- list form responses
+- set up a pub/sub watch for form changes or new responses
+- set publish settings
 - google
 - list responses
-- get response
-- forms
-- list watches
-- get a single form response by id
-- get form
-- create forms, collect responses, monitor changes
-- set up a pub/sub watch for form changes or new responses
-- creating and managing forms for data collection
-- create a new form
-- Data Analyst
-- extend a watch's expiration by seven days
-- surveys
-- create a notification watch
-- notifications
-- Form Administrator
 - creates and manages forms, monitors responses
-- list form responses
-- google workspace
+- get a single form response by id
 - google forms
-- form response operations
-- form crud operations
-- questionnaires
-- data collection
-- responses
 - watch notification operations
-- create watch
+- create form
+- surveys
+- create forms, collect responses, monitor changes
+- delete a watch
+- form response operations
+- delete watch
+- apply batch updates to a form (add/remove/modify items)
+- form crud operations
+- create a new form
+- forms
+- notifications
+- extend a watch's expiration by seven days
 slug: form-management
 source_filename: form-management.yaml
 source_heading: Capability Spec

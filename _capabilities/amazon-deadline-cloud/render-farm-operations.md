@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon Deadline Cloud
 provider_slug: amazon-deadline-cloud
 search_terms:
-- visual effects
 - media
 - compute
 - rendering
+- visual effects
 slug: render-farm-operations
 source_filename: render-farm-operations.yaml
 source_heading: Capability Spec

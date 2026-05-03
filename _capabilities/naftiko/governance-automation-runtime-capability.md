@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - naftiko
 - a capability whose governance ruleset (spectral rules, kyverno admission control, naftikogovernancefactretriever, naftikoscorecardcard) is wired in as the runtime for automation-of-governance thesis.
-- governance
-- mcp
+- api integration
+- spec-driven integration
 - capabilities
-- ai
+- example op
+- governance
 slug: governance-automation-runtime-capability
 source_filename: governance-automation-runtime-capability.yaml
 source_heading: Capability Spec

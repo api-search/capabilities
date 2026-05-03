@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- office 365 / graph capabilities exposing mcp tools, with output shaping (typed outputparameters + jsonpath) so each tool returns task-ready context.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- office 365 / graph capabilities exposing mcp tools, with output shaping (typed outputparameters + jsonpath) so each tool returns task-ready context.
+- capabilities
+- example op
+- governance
 slug: m365-graph-copilot-capability-collection
 source_filename: m365-graph-copilot-capability-collection.yaml
 source_heading: Capability Spec

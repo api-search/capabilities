@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- example
+- mcp
+- ai
+- naftiko
+- api integration
 - a composite capability over invoices + bank feeds that returns one shaped accounting-context object for an smb ai assistant.
 - spec-driven integration
-- example op
-- example
-- api integration
-- naftiko
-- governance
-- mcp
 - capabilities
-- ai
+- example op
+- governance
 slug: invoices-bank-feeds-compose-context-capability
 source_filename: invoices-bank-feeds-compose-context-capability.yaml
 source_heading: Capability Spec

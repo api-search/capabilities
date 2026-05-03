@@ -30,37 +30,37 @@ personas: []
 provider_name: SAP BRIM (Billing and Revenue Innovation Management)
 provider_slug: sap-brim-billing-and-revenue-innovation-management
 search_terms:
-- get subscription
-- customer accounts.
-- usage-based pricing
-- get full lifecycle details of a specific subscription.
-- list all available subscription plans in the brim catalog.
-- sap
-- subscription management.
-- get customer account details.
-- list all subscriptions with filtering.
-- enterprise
-- list plans
-- revenue management
-- list available subscription plans.
-- suspend an active subscription (e.g., for non-payment).
 - list customer subscriptions with filtering by status, plan, or customer.
-- get subscription details.
-- list customers
-- cancel and terminate a customer subscription.
-- order to cash
+- list subscriptions
 - list customers.
+- customer accounts.
+- list available subscription plans.
+- get customer account details.
+- cancel and terminate a customer subscription.
+- subscription management
+- order to cash
+- subscription management.
+- get full lifecycle details of a specific subscription.
+- get subscription details.
+- get subscription
+- list all subscriptions with filtering.
+- revenue management
+- list plans
+- get customer account details and subscription history.
+- sap
+- create subscription
+- enterprise
+- list customers
+- suspend an active subscription (e.g., for non-payment).
+- single customer account.
 - get customer
+- usage-based pricing
+- suspend subscription
+- list all available subscription plans in the brim catalog.
+- billing
+- single subscription.
 - create a new subscription for a customer on a selected plan.
 - subscription plan catalog.
-- single subscription.
-- suspend subscription
-- subscription management
-- list subscriptions
-- get customer account details and subscription history.
-- create subscription
-- billing
-- single customer account.
 - cancel subscription
 slug: subscription-lifecycle-management
 source_filename: subscription-lifecycle-management.yaml

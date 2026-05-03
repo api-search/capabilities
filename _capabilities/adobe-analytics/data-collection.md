@@ -36,42 +36,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- list dimensions
-- data collection
-- list report suites to identify data collection targets.
-- metric discovery for event mapping.
-- events
-- list metrics
-- get details for a report suite to verify collection configuration.
-- validate events
-- list available dimensions to validate event data mapping.
 - validate event files.
-- web analytics
-- upload a gzip-compressed csv file of batched analytics event data.
-- digital marketing
-- report suite discovery for data collection targeting.
-- adobe
-- upload events
-- dimension discovery for event mapping.
-- get report suite
 - marketing
-- list available metrics to validate event data mapping.
-- analytics
-- list metrics to validate event data mapping.
-- report suite details.
 - server side
-- validate a batch events file without ingesting data.
 - validate a batch events file without ingesting.
-- list report suites
-- customer intelligence
-- upload a batch events file.
-- adobe analytics
-- bulk data insertion
-- business intelligence
-- get report suite details.
-- batch event upload.
+- analytics
 - list report suites to identify collection targets.
+- customer intelligence
+- report suite discovery for data collection targeting.
+- report suite details.
+- validate events
+- list report suites to identify data collection targets.
+- bulk data insertion
+- list metrics
+- get report suite
+- adobe
+- list available metrics to validate event data mapping.
+- business intelligence
+- data collection
+- metric discovery for event mapping.
+- upload events
+- digital marketing
+- list available dimensions to validate event data mapping.
+- events
+- get details for a report suite to verify collection configuration.
+- list dimensions
+- list report suites
+- adobe analytics
+- validate a batch events file without ingesting data.
+- list metrics to validate event data mapping.
+- get report suite details.
+- upload a batch events file.
+- upload a gzip-compressed csv file of batched analytics event data.
+- batch event upload.
 - list dimensions to validate event data mapping.
+- dimension discovery for event mapping.
+- web analytics
 slug: data-collection
 source_filename: data-collection.yaml
 source_heading: Capability Spec

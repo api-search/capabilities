@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a composed customer-360 capability over + mulesoft + marketing cloud that returns one shaped agent context object.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a composed customer-360 capability over + mulesoft + marketing cloud that returns one shaped agent context object.
+- example op
+- governance
 slug: mulesoft-marketing-cloud-customer-360-bridge
 source_filename: mulesoft-marketing-cloud-customer-360-bridge.yaml
 source_heading: Capability Spec

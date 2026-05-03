@@ -50,49 +50,49 @@ personas: []
 provider_name: SAP API Management
 provider_slug: sap-api-management
 search_terms:
-- get api proxy
 - list api products
-- list all key-value maps
-- api proxy lifecycle operations
-- delete an api proxy
-- sap
-- get api proxy details
-- api product catalog management
-- create key value map
 - list api proxies
-- list all api products
-- create a new key-value map
-- enterprise
-- list all api proxies
-- list all api products in the developer portal
-- governance
-- api lifecycle
 - create a new api proxy
+- list applications
+- get api proxy details
+- create a new api product
+- delete an api proxy from sap api management
+- single api proxy operations
+- list all api products
+- developer application management
+- list all developer applications consuming api products
+- list all api proxies in sap api management
+- api management
+- list key value maps
+- create a new runtime key-value map for api policies
+- get api proxy
+- list all registered api providers
+- create a new api product bundle for the developer portal
+- list all developer applications
+- list all api products in the developer portal
+- list all api proxies
+- list all key-value maps
+- list all key-value maps for policy configuration
+- create key value map
+- sap
+- enterprise
+- backend api provider management
+- list all backend api providers registered in sap api management
+- create a new key-value map
+- governance
+- get details for a specific sap api management proxy
 - sap btp
+- api lifecycle
+- api product catalog management
+- api proxy lifecycle operations
+- developer portal
+- create api proxy
+- delete an api proxy
+- list api providers
 - create a new api proxy in sap api management
 - create api product
-- delete api proxy
-- backend api provider management
 - runtime configuration key-value maps
-- list api providers
-- list key value maps
-- create a new api product bundle for the developer portal
-- api management
-- list all registered api providers
-- list all developer applications consuming api products
-- single api proxy operations
-- list all backend api providers registered in sap api management
-- list all developer applications
-- create a new api product
-- developer application management
-- delete an api proxy from sap api management
-- create api proxy
-- get details for a specific sap api management proxy
-- list all key-value maps for policy configuration
-- create a new runtime key-value map for api policies
-- list all api proxies in sap api management
-- list applications
-- developer portal
+- delete api proxy
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

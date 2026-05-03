@@ -34,43 +34,43 @@ personas: []
 provider_name: Amazon WorkSpaces Web
 provider_slug: amazon-workspaces-web
 search_terms:
-- list browser settings
 - list network settings.
+- list user settings configurations for portals.
 - IT Administrator
-- secure browser
-- trust store management.
-- create a portal.
-- create a new secure browser portal.
-- browser policy management.
-- list all workspaces web secure browser portals.
-- list ssl certificate trust stores.
-- aws
 - virtual desktop
+- user settings management.
+- browser policy management.
+- trust store management.
+- administration
+- create a new secure browser portal.
+- configures browser policies and access controls.
+- portal and resource provisioning
 - network configuration management.
-- zero trust
-- list browser policy settings for portals.
-- portal management.
 - Security Engineer
 - list network settings for portal connectivity.
-- configures browser policies and access controls.
-- list user settings
-- administration
+- list browser settings
 - manages workspaces web portals and configurations.
-- portal and resource provisioning
-- list trust stores.
-- list browser settings.
-- list network settings
-- user settings management.
-- secure remote browser access infrastructure
-- end user computing
+- zero trust
 - list secure browser portals.
-- list user settings.
-- list user settings configurations for portals.
+- list browser settings.
+- secure remote browser access infrastructure
 - create portal
+- aws
+- list all workspaces web secure browser portals.
+- browser policy and access control enforcement
+- list browser policy settings for portals.
+- list user settings
+- create a portal.
+- list network settings
+- list trust stores.
+- portal management.
+- list ssl certificate trust stores.
+- secure browser
 - list trust stores
 - workflow for it administrators to manage workspaces web portals and their associated security and network configurations.
-- browser policy and access control enforcement
+- end user computing
 - list portals
+- list user settings.
 slug: secure-browser-management
 source_filename: secure-browser-management.yaml
 source_heading: Capability Spec

@@ -52,42 +52,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- process approval
-- admissions
-- hcm
-- list students
-- retrieve student records.
-- list classes
-- retrieve details for a specific student.
-- human capital management.
-- financial aid awards
-- list admission applications
-- approve, deny, or push back a campus approval request.
-- list financial aid awards
-- financial aid
-- higher education
-- admission applications
-- individual approval operations
-- crm
-- campus approval requests
-- erp
-- list pending approvals
-- individual student details
-- campus solutions
-- supply chain management
-- retrieve pending campus approval requests.
-- enterprise software
-- get student
-- campus solutions.
-- peoplesoft
-- financial management
-- retrieve class schedule and enrollment data.
-- retrieve financial aid award data.
-- student records
-- class schedule and enrollment data
 - peopletools platform services.
-- financial and supply chain management.
 - retrieve admission applications.
+- campus solutions
+- list pending approvals
+- retrieve details for a specific student.
+- higher education
+- list students
+- hcm
+- peoplesoft
+- erp
+- financial aid
+- list admission applications
+- list financial aid awards
+- student records
+- retrieve financial aid award data.
+- enterprise software
+- class schedule and enrollment data
+- get student
+- financial aid awards
+- individual approval operations
+- human capital management.
+- campus solutions.
+- approve, deny, or push back a campus approval request.
+- financial and supply chain management.
+- retrieve student records.
+- admission applications
+- financial management
+- admissions
+- retrieve class schedule and enrollment data.
+- process approval
+- individual student details
+- supply chain management
+- crm
+- list classes
+- campus approval requests
+- retrieve pending campus approval requests.
 slug: campus-administration
 source_filename: campus-administration.yaml
 source_heading: Capability Spec

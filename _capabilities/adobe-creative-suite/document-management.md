@@ -59,61 +59,61 @@ personas: []
 provider_name: Adobe Creative Suite
 provider_slug: adobe-creative-suite
 search_terms:
+- export a pdf to word, excel, powerpoint, rtf, or text
 - video
 - photography
-- document management
-- get metadata and download uri for an uploaded asset
-- linearize pdf
-- ocr processing operations
-- graphics
-- auto-tag a pdf for accessibility compliance
-- upload an asset for pdf operations
-- pdf
-- asset upload and management for pdf operations
-- pdf export to other formats
-- linearize a pdf for fast web viewing
-- pdf combination operations
+- combine multiple pdfs into a single document
+- ocr pdf
 - create a pdf from word, excel, powerpoint, or html
-- delete an uploaded asset
+- graphics
+- asset upload and management for pdf operations
 - combine multiple pdfs into one
-- accessibility
-- get asset
-- pdf creation from other formats
-- upload an asset for use in pdf operations
-- permanently delete an uploaded asset
-- compress a pdf to reduce its file size
-- ocr
-- apply ocr to a scanned pdf
-- apply ocr to a scanned pdf to make text searchable
+- delete an uploaded asset
+- operation status polling
+- pdf export to other formats
 - accessibility tagging operations
 - compress a pdf to reduce file size
-- adobe
 - get the status of a pdf operation
-- get operation status
-- design
-- ocr pdf
-- generate document
-- generate a document by merging json data into a template
-- combine multiple pdfs into a single document
-- compress pdf
-- document conversion
-- generate a document from a template and data
-- create pdf
-- pdf compression operations
-- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
-- creative
-- get the status of a pdf services operation job
-- get asset metadata and download uri
+- upload an asset for use in pdf operations
+- adobe
 - delete asset
-- auto tag pdf
-- upload asset
-- individual asset operations
 - export pdf
-- combine pdfs
-- export a pdf to word, excel, powerpoint, rtf, or text
-- pdf linearization for web optimization
+- compress a pdf to reduce its file size
+- generate document
 - template-based document generation
-- operation status polling
+- create pdf
+- linearize a pdf for fast web viewing
+- auto tag pdf
+- get asset
+- upload an asset for pdf operations
+- document conversion
+- accessibility
+- apply ocr to a scanned pdf to make text searchable
+- combine pdfs
+- pdf compression operations
+- generate a document from a template and data
+- auto-tag a pdf for accessibility compliance
+- design
+- linearize pdf
+- auto-tag a pdf for accessibility compliance (pdf/ua and wcag)
+- ocr
+- get asset metadata and download uri
+- generate a document by merging json data into a template
+- get the status of a pdf services operation job
+- pdf creation from other formats
+- pdf combination operations
+- document management
+- apply ocr to a scanned pdf
+- individual asset operations
+- get metadata and download uri for an uploaded asset
+- pdf
+- upload asset
+- permanently delete an uploaded asset
+- ocr processing operations
+- compress pdf
+- get operation status
+- creative
+- pdf linearization for web optimization
 slug: document-management
 source_filename: document-management.yaml
 source_heading: Capability Spec

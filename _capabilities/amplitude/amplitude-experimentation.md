@@ -67,67 +67,67 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- feature flags
-- experiment management api createFlag
-- amplitude list all flags
-- amplitude create an experiment
-- amplitude evaluate variants for a user via get
-- amplitude get a deployment
-- experiment management api createExperiment
-- experiment management api getDeployment
-- privacy compliance
-- amplitude
-- amplitude get flag configurations
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- updateExperiment
-- runs experiments and feature flags
-- listVersions
-- experiment evaluation api evaluateVariants
-- amplitude create a flag
-- experiment management api getFlag
-- experiment management api listExperiments
-- experiment management api updateFlag
-- createFlag
-- evaluateVariantsGet
-- amplitude get an experiment
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- experiment management api updateExperiment
-- unified workflow for sending events and identifying users. for data engineers.
-- manages privacy and compliance
-- listFlags
-- product analytics
-- listExperiments
-- a/b testing
-- experiment management api listDeployments
-- amplitude update an experiment
-- experiment management api listVersions
-- identity management
-- user behavior
-- createExperiment
-- analyzes data and manages cohorts
-- amplitude list flag and experiment versions
-- analytics
-- experimentation
-- data governance
-- amplitude update a flag
 - experiment management api getExperiment
-- export raw event data and manage behavioral cohorts. for data analysts.
-- getFlag
-- amplitude evaluate variants for a user
-- experiment evaluation api getFlags
-- amplitude list all experiments
-- experiment evaluation api evaluateVariantsGet
-- ingests and exports event data
-- getDeployment
-- evaluateVariants
-- getFlags
-- getExperiment
-- manage event schemas and chart annotations. for data governance teams.
+- amplitude update a flag
+- listFlags
+- amplitude list flag and experiment versions
+- experiment evaluation api evaluateVariants
+- identity management
 - amplitude get a flag
+- getFlag
+- amplitude get flag configurations
+- createExperiment
+- experiment evaluation api evaluateVariantsGet
+- experiment management api createFlag
+- experiment management api updateFlag
+- analytics
+- amplitude list all flags
+- manage event schemas and chart annotations. for data governance teams.
+- experiment management api createExperiment
+- amplitude create an experiment
+- amplitude evaluate variants for a user
+- amplitude list all experiments
+- updateExperiment
+- experiment management api listVersions
+- getExperiment
+- runs experiments and feature flags
+- experiment evaluation api getFlags
+- a/b testing
+- evaluateVariantsGet
+- amplitude evaluate variants for a user via get
+- experiment management api getDeployment
 - updateFlag
-- listDeployments
+- amplitude get an experiment
+- getFlags
+- export raw event data and manage behavioral cohorts. for data analysts.
+- scim provisioning and privacy compliance. for it admins and compliance teams.
 - experiment management api listFlags
+- experiment management api listExperiments
+- product analytics
+- amplitude create a flag
+- user behavior
+- manages privacy and compliance
+- analyzes data and manages cohorts
+- unified workflow for sending events and identifying users. for data engineers.
+- getDeployment
+- feature flags
+- createFlag
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- experiment management api getFlag
+- listDeployments
+- listExperiments
+- data governance
+- ingests and exports event data
 - amplitude list all deployments
+- experimentation
+- amplitude update an experiment
+- evaluateVariants
+- privacy compliance
+- amplitude get a deployment
+- experiment management api listDeployments
+- experiment management api updateExperiment
+- amplitude
+- listVersions
 slug: amplitude-experimentation
 source_filename: amplitude-experimentation.yaml
 source_heading: Capability Spec

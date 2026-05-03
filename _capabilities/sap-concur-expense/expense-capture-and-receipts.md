@@ -38,43 +38,43 @@ personas: []
 provider_name: SAP Concur Expense
 provider_slug: sap-concur-expense
 search_terms:
-- delete a quick expense that is no longer needed.
-- list unassigned quick expenses
-- get receipt image
-- travel
-- sap
-- delete receipt image
-- capture a new quick expense
-- get details of a specific quick expense by id.
-- sap concur
 - receipt image management
-- delete quick expense
-- list receipts
-- capture a new quick expense on-the-go. provide the expense type, date, amount, currency, and optional vendor and comment. the expense can later be promoted to a full expense report entry.
-- list quick expenses
-- retrieve the download url for a specific receipt image. the url is temporary and expires after a short period.
-- get quick expense
-- quick expense capture without a formal report
-- list receipt images attached to expense entries. optionally filter by entry id to find receipts for a specific expense.
-- delete receipt
-- expense management
-- delete a receipt image
-- delete a quick expense
-- create quick expense
-- get receipt image url
+- reimbursement
 - single quick expense
-- expense capture
-- list all quick expenses the user has captured that have not yet been assigned to a formal expense report.
-- mobile
+- delete a quick expense
+- list receipts
+- list receipt images attached to expense entries. optionally filter by entry id to find receipts for a specific expense.
 - receipts
 - list receipt images
-- single receipt image
-- financial management
-- reporting
+- mobile
+- capture a new quick expense
+- list unassigned quick expenses
+- retrieve the download url for a specific receipt image. the url is temporary and expires after a short period.
+- delete receipt image
+- get quick expense
+- list quick expenses
 - get a quick expense by id
+- list all quick expenses the user has captured that have not yet been assigned to a formal expense report.
+- sap concur
+- quick expense capture without a formal report
+- sap
+- reporting
+- delete a receipt image
+- delete quick expense
+- expense capture
+- delete receipt
+- get receipt image url
+- get details of a specific quick expense by id.
+- delete a quick expense that is no longer needed.
+- financial management
+- expense management
+- travel
 - delete a receipt image that was uploaded in error.
-- reimbursement
 - get receipt
+- capture a new quick expense on-the-go. provide the expense type, date, amount, currency, and optional vendor and comment. the expense can later be promoted to a full expense report entry.
+- single receipt image
+- get receipt image
+- create quick expense
 slug: expense-capture-and-receipts
 source_filename: expense-capture-and-receipts.yaml
 source_heading: Capability Spec

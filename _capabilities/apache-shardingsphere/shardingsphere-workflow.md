@@ -9,20 +9,20 @@ personas: []
 provider_name: Apache ShardingSphere
 provider_slug: apache-shardingsphere
 search_terms:
-- developer using shardingsphere transparent sharding
-- sharding
+- transparent sql routing and federation
 - engineer deploying shardingsphere proxy
-- database
-- configure database sharding and read-write splitting
-- open source
-- dba managing distributed database topology
-- horizontal scaling and data distribution across databases
-- apache
+- sharding
 - read-write splitting
 - register databases and physical data sources
-- sql
-- transparent sql routing and federation
+- database
 - distributed sql
+- sql
+- open source
+- apache
+- configure database sharding and read-write splitting
+- dba managing distributed database topology
+- horizontal scaling and data distribution across databases
+- developer using shardingsphere transparent sharding
 slug: shardingsphere-workflow
 source_filename: shardingsphere-workflow.yaml
 source_heading: Capability Spec

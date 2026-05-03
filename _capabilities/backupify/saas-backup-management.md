@@ -22,35 +22,35 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- list domains
-- list all backupify saas backup domains with customer ids and subscription information
+- datto
 - IT Administrator
-- saas backup domains
-- microsoft 365
-- bulk seat management
-- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- bulk change seat licenses
-- data protection
-- list backup domains
-- domain and seat management for backupify cloud-to-cloud backup
-- managed service provider technician managing backup coverage across customer accounts
-- cloud backup
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- bulk seat change
 - saas backup
 - list seats
-- customer backup seats
-- bulk license/unlicense/pause seats
-- datto
-- backupify
-- list backup seats
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- MSP Technician
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
-- google workspace
-- list all backup customer domains
-- bulk seat change
+- list backup domains
 - cloud-to-cloud backup and recovery for saas platforms
-- msp
 - list seats for a customer
+- bulk change seat licenses
+- bulk license/unlicense/pause seats
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
+- bulk seat management
+- microsoft 365
+- customer backup seats
+- cloud backup
+- google workspace
+- list domains
+- managed service provider technician managing backup coverage across customer accounts
+- data protection
+- list all backup customer domains
+- list all backupify saas backup domains with customer ids and subscription information
+- license, unlicense, or pause up to 100 backup seats for a customer in a single operation
+- msp
+- MSP Technician
+- list backup seats
+- backupify
+- saas backup domains
+- domain and seat management for backupify cloud-to-cloud backup
 slug: saas-backup-management
 source_filename: saas-backup-management.yaml
 source_heading: Capability Spec

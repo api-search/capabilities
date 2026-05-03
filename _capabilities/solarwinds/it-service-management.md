@@ -28,34 +28,34 @@ personas: []
 provider_name: SolarWinds
 provider_slug: solarwinds
 search_terms:
-- infrastructure
-- list hardware assets
-- observability
-- log management
-- create a new incident
-- ip address management
-- it management
-- asset management
-- query infrastructure
 - solarwinds
-- list changes
-- list incidents
-- list service requests
-- service desk
-- create incident
-- application monitoring
-- database monitoring
-- list service desk incidents
-- get incident details
 - get incident
-- list assets
-- list change requests
-- network monitoring
-- itsm
-- service request management
+- list hardware assets
+- it management
+- create incident
+- query infrastructure
+- list service requests
+- asset management
+- service desk
+- list changes
+- application monitoring
 - change management
+- list incidents
+- list service desk incidents
 - incident management
+- get incident details
+- create a new incident
+- observability
+- itsm
 - query orion infrastructure data via swql
+- database monitoring
+- network monitoring
+- ip address management
+- service request management
+- list change requests
+- infrastructure
+- list assets
+- log management
 slug: it-service-management
 source_filename: it-service-management.yaml
 source_heading: Capability Spec

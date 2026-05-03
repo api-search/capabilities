@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a federated capability across datadog + splunk + new relic exposed as one fabric-wide observability mcp tool.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a federated capability across datadog + splunk + new relic exposed as one fabric-wide observability mcp tool.
+- example op
+- governance
 slug: datadog-splunk-observability-fabric-capability
 source_filename: datadog-splunk-observability-fabric-capability.yaml
 source_heading: Capability Spec

@@ -41,35 +41,35 @@ personas: []
 provider_name: Salesforce Automation System
 provider_slug: salesforce-automation-system
 search_terms:
-- submit, approve, reject, or recall approval requests.
-- salesforce flow definitions and invocation.
-- list all approval process configurations.
-- execute a soql query to retrieve processinstance, flowinterview, or workflowrule records from salesforce.
-- workflow
 - automation
-- get flow
-- process builder
-- get the metadata for a specific salesforce flow version by record id.
-- flow
-- salesforce
-- get flow version
-- get a flow version record by id.
-- list all approval process definitions configured in the salesforce org.
-- invoke an autolaunched flow with input variables.
-- query salesforce flow definitions. returns active and draft flows with their api names, labels, and statuses.
-- invoke flow
-- crm
-- approval process management.
-- query automation records
-- submit a record for approval, approve or reject an approval request, or recall an in-progress approval.
 - query processinstance, flowinterview, or workflowrule records.
-- list flows
-- invoke a salesforce autolaunched flow with input variables. returns output variable values from the flow execution.
 - list approval processes
-- query automation-related salesforce records.
-- query active and draft flow definitions.
+- submit, approve, reject, or recall approval requests.
+- get a flow version record by id.
+- invoke a salesforce autolaunched flow with input variables. returns output variable values from the flow execution.
+- get flow
 - approval process
+- get the metadata for a specific salesforce flow version by record id.
+- query active and draft flow definitions.
+- salesforce
+- workflow
+- flow
+- query salesforce flow definitions. returns active and draft flows with their api names, labels, and statuses.
+- list all approval process configurations.
+- submit a record for approval, approve or reject an approval request, or recall an in-progress approval.
+- execute a soql query to retrieve processinstance, flowinterview, or workflowrule records from salesforce.
+- list flows
+- invoke flow
+- approval process management.
+- query automation-related salesforce records.
+- query automation records
 - submit approval
+- list all approval process definitions configured in the salesforce org.
+- process builder
+- get flow version
+- crm
+- invoke an autolaunched flow with input variables.
+- salesforce flow definitions and invocation.
 slug: process-automation
 source_filename: process-automation.yaml
 source_heading: Capability Spec

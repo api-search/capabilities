@@ -43,47 +43,47 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- infrastructure
-- create a database backup
-- list db instances
-- get database instance details
-- create db instance
-- scaleway
-- delete db instance
-- get details of a specific database instance
-- storage
-- manage a specific database instance
-- kubernetes
-- create a new managed postgresql, mysql, or redis instance
-- email notification management
-- list available database engine versions
-- get db instance
-- send notification email
-- ai
-- list database backups
-- create db backup
-- send a database alert or notification email
-- delete a managed database instance
-- send database alerts or notifications via transactional email
-- available database engines
-- list managed database instances
-- containers
-- list db backups
-- notifications
-- serverless
-- database instance management
-- delete a database instance
-- database
-- list database engines
-- redis
-- european cloud
-- list scaleway managed database instances
 - cloud computing
-- backup
-- mysql
-- database backup management
+- delete a database instance
+- create a new managed postgresql, mysql, or redis instance
+- storage
+- list db backups
+- european cloud
+- list managed database instances
+- get details of a specific database instance
+- list scaleway managed database instances
+- manage a specific database instance
+- list database engines
 - postgresql
+- delete db instance
+- database backup management
+- get database instance details
+- list database backups
+- database instance management
+- kubernetes
+- create a database backup
+- get db instance
+- mysql
+- send database alerts or notifications via transactional email
+- database
+- delete a managed database instance
+- list db instances
+- containers
+- send notification email
 - create a managed database instance
+- ai
+- create db backup
+- scaleway
+- redis
+- create db instance
+- send a database alert or notification email
+- list available database engine versions
+- backup
+- available database engines
+- serverless
+- infrastructure
+- notifications
+- email notification management
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

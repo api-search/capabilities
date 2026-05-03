@@ -64,63 +64,63 @@ personas: []
 provider_name: ScanSource
 provider_slug: scansource
 search_terms:
-- get carrier tracking for an order
-- invoice pdf download
-- real-time product availability
-- aidc
-- get sales order summary
-- invoice summary and management
-- cancel a pending order
+- get real-time pricing for products
+- point of sale
+- get product pricing
+- create sales order
+- product detail
+- get detailed specifications and information for a specific product
+- order tracking
+- get product availability
+- partner integration
 - get invoice summary
+- e-commerce
+- create a new sales order with line items and ship-to address
+- cancel sales order
+- inventory
 - get comprehensive details for a specific sales order including all line items and pricing
+- search products
+- check real-time inventory availability
 - get comprehensive order details
-- get invoice summary for a customer
-- search for products in the scansource catalog
+- real-time product pricing
+- distribution
 - get sales order detail
-- get a summary of sales orders for a customer with optional date range filtering
-- download invoice as pdf
-- get carrier tracking and delivery status for an order
+- aidc
 - shipping quote generation
 - get comprehensive invoice details including line items and serial numbers
-- e-commerce
-- product detail
-- create a new sales order with line items and ship-to address
-- get real-time pricing for products
-- get detailed specifications and information for a specific product
-- product search and catalog
-- distribution
-- barcode
-- check real-time inventory availability
-- sales order creation and summary
-- get order tracking
-- inventory
-- create sales order
-- get product pricing
-- get real-time pricing for up to 40 products for a customer
-- search for products in the scansource catalog by text, manufacturer, or category
-- cancel a pending sales order that has not yet shipped
-- check real-time inventory availability for up to 40 products
-- invoice detail
-- cancel sales order
-- generate shipping quote options and costs before placing an order
-- order management
-- get a summary of invoices for a customer with optional date range filtering
-- order tracking
-- get invoice detail
-- search products
-- get product availability
-- sales order detail and management
-- create a new sales order
-- scansource
-- get invoice pdf
-- point of sale
-- get shipping quote
 - generate shipping quote before ordering
-- get comprehensive invoice details
-- partner integration
-- real-time product pricing
-- get detailed product information
 - get product detail
+- get shipping quote
+- order management
+- barcode
+- invoice pdf download
+- download invoice as pdf
+- create a new sales order
+- sales order creation and summary
+- get carrier tracking for an order
+- invoice summary and management
+- get comprehensive invoice details
+- search for products in the scansource catalog
+- get invoice summary for a customer
+- get invoice detail
+- real-time product availability
+- sales order detail and management
+- invoice detail
+- scansource
+- search for products in the scansource catalog by text, manufacturer, or category
+- generate shipping quote options and costs before placing an order
+- cancel a pending sales order that has not yet shipped
+- cancel a pending order
+- get invoice pdf
+- get order tracking
+- get a summary of sales orders for a customer with optional date range filtering
+- get real-time pricing for up to 40 products for a customer
+- get detailed product information
+- get a summary of invoices for a customer with optional date range filtering
+- check real-time inventory availability for up to 40 products
+- get sales order summary
+- get carrier tracking and delivery status for an order
+- product search and catalog
 slug: partner-commerce
 source_filename: partner-commerce.yaml
 source_heading: Capability Spec

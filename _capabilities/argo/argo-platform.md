@@ -28,41 +28,41 @@ personas: []
 provider_name: Argo
 provider_slug: argo
 search_terms:
-- workflows create
-- applications sync
-- workflows list
-- applications list
-- sync an application from git
-- create workflow
-- gitops
 - submit a new workflow
-- workflow management
+- workflows create
 - Platform Engineer
+- workflow management
+- list applications
 - manages kubernetes platform tools including argo workflows and argo cd
-- trigger an argo cd application sync from git
-- uses argo tools for ci/cd and gitops workflows
-- list all argo workflows in a namespace
-- complete argo project platform combining workflows and cd for devops teams
 - open source
-- platform engineering
-- kubernetes
-- container-native workflow execution
-- git-driven deployment and infrastructure management
-- container orchestration platform
-- list all workflows
+- complete argo project platform combining workflows and cd for devops teams
+- gitops
+- create workflow
 - list workflows
 - gitops application management
-- argo
-- progressive delivery
+- kubernetes
 - submit a new argo workflow
-- ci/cd
-- sync application
-- workflow engine
-- list all argo cd applications with sync and health status
 - cncf
-- list applications
-- DevOps Engineer
+- platform engineering
+- sync application
+- uses argo tools for ci/cd and gitops workflows
 - list argo cd applications
+- container orchestration platform
+- list all workflows
+- sync an application from git
+- applications sync
+- container-native workflow execution
+- progressive delivery
+- list all argo cd applications with sync and health status
+- applications list
+- git-driven deployment and infrastructure management
+- workflows list
+- list all argo workflows in a namespace
+- argo
+- trigger an argo cd application sync from git
+- workflow engine
+- ci/cd
+- DevOps Engineer
 slug: argo-platform
 source_filename: argo-platform.yaml
 source_heading: Capability Spec

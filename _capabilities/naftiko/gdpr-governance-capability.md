@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- a capability with compliance frameworks (gdpr) + governance + tags-on-exposes (network topology, data sensitivity) — the dutch-banking pitch.
-- api integration
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability with compliance frameworks (gdpr) + governance + tags-on-exposes (network topology, data sensitivity) — the dutch-banking pitch.
+- example op
+- governance
 slug: gdpr-governance-capability
 source_filename: gdpr-governance-capability.yaml
 source_heading: Capability Spec

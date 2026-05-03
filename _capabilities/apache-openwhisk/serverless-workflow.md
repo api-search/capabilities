@@ -31,50 +31,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
+- get details of a specific activation
+- list packages
+- fire trigger
+- list all serverless functions/actions
+- list triggers
+- action packages
+- list activation history
 - serverless computing
-- create action
-- list all event triggers
-- list all trigger-to-action rules
+- open source
+- functions
+- builds event-driven applications using serverless functions
+- create a new serverless action
+- fire an event trigger
+- cloud native
+- list activations
+- event-driven architecture
 - Platform Administrator
 - apache openwhisk
-- get activation
-- event triggers
-- invoke action
-- manages serverless deployments and ci/cd pipelines
-- get details of a specific activation
-- list all actions
-- open source
-- list packages
-- delete a serverless action
 - invoke a serverless action/function
-- create a new serverless action
-- faas
-- serverless function actions
-- list all serverless functions/actions
-- list all action packages
-- list activations
-- event driven
-- list activation history
-- delete action
-- list actions
 - manages namespaces, limits, and platform configuration
-- cloud native
-- builds event-driven applications using serverless functions
-- list rules
-- list triggers
 - invoke an action
-- fire an event trigger
-- serverless
-- event-driven
-- functions
-- event-driven architecture
-- action packages
-- activation history
-- functions as a service
-- fire trigger
-- DevOps Engineer
 - Backend Developer
+- list all actions
+- get activation
+- manages serverless deployments and ci/cd pipelines
+- activation history
+- faas
+- event driven
 - apache
+- invoke action
+- delete action
+- list all trigger-to-action rules
+- delete a serverless action
+- list all event triggers
+- create action
+- list rules
+- event-driven
+- functions as a service
+- serverless
+- serverless function actions
+- event triggers
+- list actions
+- DevOps Engineer
+- list all action packages
 slug: serverless-workflow
 source_filename: serverless-workflow.yaml
 source_heading: Capability Spec

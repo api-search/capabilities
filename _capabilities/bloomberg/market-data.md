@@ -41,47 +41,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- news
-- request raw intraday tick data for a security.
-- financial services
-- search the bloomberg api data dictionary for fields.
-- look up metadata for bloomberg field mnemonics.
-- field discovery.
-- historical data queries.
-- request intraday ticks.
-- subscribe to custom vwap stream.
-- look up field metadata.
-- request historical data.
-- request reference data.
-- intraday tick queries.
-- search for fields.
-- enterprise
-- reference data request
-- field info request
-- market data
-- bloomberg
-- subscribe to streaming real-time market data.
-- subscribe market data
-- transaction cost analysis
-- request reference data for securities and fields.
-- data license
 - intraday bar queries.
-- field search request
-- intraday bar request
-- intraday tick request
-- trading
-- analytics
-- subscribe to interval-based real-time bars.
-- historical data request
-- request intraday ohlc bars for a security.
-- execution management
-- business intelligence
-- quantitative analysis
-- subscribe market vwap
+- bloomberg
 - request end-of-day historical data for securities.
-- reference data queries.
+- subscribe to interval-based real-time bars.
+- analytics
+- search the bloomberg api data dictionary for fields.
+- field discovery.
+- field search request
+- market data
+- data license
+- transaction cost analysis
+- request intraday ohlc bars for a security.
+- financial services
+- business intelligence
 - subscribe market bar
+- historical data request
+- request raw intraday tick data for a security.
+- trading
+- subscribe market data
+- historical data queries.
+- reference data queries.
+- request historical data.
+- intraday tick request
+- news
+- enterprise
+- field info request
+- subscribe market vwap
+- look up field metadata.
+- intraday tick queries.
+- subscribe to streaming real-time market data.
+- search for fields.
+- look up metadata for bloomberg field mnemonics.
+- quantitative analysis
+- request reference data.
+- execution management
+- request intraday ticks.
+- reference data request
 - request intraday bars.
+- subscribe to custom vwap stream.
+- request reference data for securities and fields.
+- intraday bar request
 slug: market-data
 source_filename: market-data.yaml
 source_heading: Capability Spec

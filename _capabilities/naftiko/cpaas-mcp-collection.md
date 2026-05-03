@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
-- a capability collection wrapping communications apis (sms, voice, video) with mcp exposure — agent-callable communications as the entry-point demo.
 - mcp
-- capabilities
 - ai
+- a capability collection wrapping communications apis (sms, voice, video) with mcp exposure — agent-callable communications as the entry-point demo.
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: cpaas-mcp-collection
 source_filename: cpaas-mcp-collection.yaml
 source_heading: Capability Spec

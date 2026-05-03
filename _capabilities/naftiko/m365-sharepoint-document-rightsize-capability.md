@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- capabilities
-- governance
 - mcp
-- a capability over sharepoint document search that rightsizes the response to a token-budgeted copilot context object.
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability over sharepoint document search that rightsizes the response to a token-budgeted copilot context object.
+- example op
+- governance
 slug: m365-sharepoint-document-rightsize-capability
 source_filename: m365-sharepoint-document-rightsize-capability.yaml
 source_heading: Capability Spec

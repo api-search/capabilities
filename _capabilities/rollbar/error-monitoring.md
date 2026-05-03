@@ -53,47 +53,47 @@ personas: []
 provider_name: Rollbar
 provider_slug: rollbar
 search_terms:
-- report a new error or exception to rollbar for tracking
-- list teams
-- report a new error or exception to rollbar
-- list all rollbar projects in the account
-- list all teams in the rollbar account
-- list errors
-- error item management and triage
-- get detailed information about a specific error item including stack trace and metadata
-- incident response
-- resolve error
-- devops
-- debugging
-- get a specific error occurrence with full stack trace
-- webhook notification configuration
-- update error status (resolve, mute, activate)
-- rollbar project administration
-- list tracked error items filtered by status, level, or environment
-- individual error occurrence retrieval
-- list projects
-- list all individual error occurrences in the project
-- update error status
-- get current webhook notification configuration
-- error tracking
-- rollbar
-- monitoring
-- list notification rules
-- get detailed information about a specific error item
-- list occurrences
-- list all tracked error items with filtering by status and severity
-- list individual error occurrences with full details and stack traces
-- application performance
-- get notification config
-- get error
-- individual error item management
-- get webhook notification configuration
-- mark an error item as resolved
 - report error
+- individual error occurrence retrieval
+- error tracking
+- webhook notification configuration
+- get notification config
+- list projects
+- incident response
+- monitoring
+- list all rollbar projects in the account
+- list occurrences
 - get occurrence
-- get a specific error occurrence including full stack trace, request data, and context
-- list all rollbar projects
+- resolve error
+- get current webhook notification configuration
+- debugging
+- application performance
+- list teams
+- list all tracked error items with filtering by status and severity
+- get detailed information about a specific error item including stack trace and metadata
+- update error status (resolve, mute, activate)
 - list all notification rules
+- list all individual error occurrences in the project
+- report a new error or exception to rollbar
+- rollbar
+- list all rollbar projects
+- list errors
+- rollbar project administration
+- list all teams in the rollbar account
+- get a specific error occurrence including full stack trace, request data, and context
+- report a new error or exception to rollbar for tracking
+- get detailed information about a specific error item
+- update error status
+- list tracked error items filtered by status, level, or environment
+- error item management and triage
+- get error
+- list notification rules
+- devops
+- list individual error occurrences with full details and stack traces
+- get webhook notification configuration
+- get a specific error occurrence with full stack trace
+- mark an error item as resolved
+- individual error item management
 slug: error-monitoring
 source_filename: error-monitoring.yaml
 source_heading: Capability Spec

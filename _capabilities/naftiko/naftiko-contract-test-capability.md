@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability where the same yaml drives a mock + the naftiko engine, so dev/test/prod share one artifact.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- a capability where the same yaml drives a mock + the naftiko engine, so dev/test/prod share one artifact.
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: naftiko-contract-test-capability
 source_filename: naftiko-contract-test-capability.yaml
 source_heading: Capability Spec

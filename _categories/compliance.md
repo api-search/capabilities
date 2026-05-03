@@ -11,7 +11,7 @@ description: 'Capabilities for compliance posture — audit trails, policy enfor
 
   '
 domain: governance
-implementation_count: 16
+implementation_count: 13
 implementations:
 - capability_name: Adobe Captivate Learning Management
   capability_slug: learning-management
@@ -44,49 +44,6 @@ implementations:
   - Data Quality
   - Search
   tool_count: 9
-- capability_name: Allianz Standards Compliance Workflow
-  capability_slug: standards-compliance-workflow
-  capability_url: https://capabilities.apis.io/capabilities/allianz-technology-standards/standards-compliance-workflow/
-  consumed_api_count: 1
-  operation_count: 4
-  provider_name: Allianz Technology Standards
-  provider_slug: allianz-technology-standards
-  tags:
-  - Technology Standards
-  - API Design
-  - Compliance
-  - Enterprise Architecture
-  - Governance
-  tool_count: 5
-- capability_name: Compliance Auditing Workflow
-  capability_slug: compliance-auditing
-  capability_url: https://capabilities.apis.io/capabilities/amazon-audit-manager/compliance-auditing/
-  consumed_api_count: 0
-  operation_count: 3
-  provider_name: Amazon Audit Manager
-  provider_slug: amazon-audit-manager
-  tags:
-  - Amazon Audit Manager
-  - Compliance
-  - Audit
-  - Risk Management
-  tool_count: 10
-- capability_name: Amazon Config Compliance and Governance
-  capability_slug: compliance-governance
-  capability_url: https://capabilities.apis.io/capabilities/amazon-config/compliance-governance/
-  consumed_api_count: 1
-  operation_count: 7
-  provider_name: Amazon Config
-  provider_slug: amazon-config
-  tags:
-  - Amazon
-  - Compliance
-  - Configuration Management
-  - Governance
-  - Security
-  - Auditing
-  - Remediation
-  tool_count: 10
 - capability_name: Amazon Macie - Data Security Operations
   capability_slug: data-security-operations
   capability_url: https://capabilities.apis.io/capabilities/amazon-macie/data-security-operations/
@@ -242,7 +199,7 @@ implementations:
   tool_count: 8
 layout: category
 name: Compliance
-provider_count: 16
+provider_count: 13
 related:
 - security
 - identity-access

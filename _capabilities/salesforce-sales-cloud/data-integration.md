@@ -35,47 +35,47 @@ personas: []
 provider_name: Salesforce Sales Cloud
 provider_slug: salesforce-sales-cloud
 search_terms:
-- get api limits
-- list all bulk data ingest jobs and their statuses
-- bulk data ingest job management
-- check api rate limits before running bulk operations
 - list bulk ingest jobs
-- create a bulk ingest job
-- extract data with soql
 - create bulk ingest job
-- events
-- extract salesforce data using soql for integration pipelines
-- get bulk job status
-- list bulk query jobs
-- salesforce
 - change data capture
-- sales
-- list ingest jobs
-- get status and results of a bulk ingest job
-- customer management
-- etl
-- enterprise
-- cloud
-- create a new bulk data ingest job for large dataset loading
-- get ingest job
-- get bulk ingest job
-- extract data soql
-- crm
 - create a bulk query job
-- soql data extraction
-- create a bulk query job to extract large datasets via soql
-- bulk query job management
-- create query job
-- query
-- sales cloud
-- data integration
+- extract data with soql
+- create a new bulk data ingest job for large dataset loading
 - close bulk ingest job
-- bulk loading
-- create bulk query job
-- create ingest job
-- list query jobs
-- individual job management
+- create a bulk ingest job
 - close or abort a bulk ingest job
+- individual job management
+- bulk query job management
+- check api rate limits before running bulk operations
+- list ingest jobs
+- get bulk ingest job
+- salesforce
+- create query job
+- get bulk job status
+- list query jobs
+- get api limits
+- extract salesforce data using soql for integration pipelines
+- cloud
+- etl
+- create bulk query job
+- get status and results of a bulk ingest job
+- data integration
+- bulk data ingest job management
+- enterprise
+- events
+- extract data soql
+- query
+- create a bulk query job to extract large datasets via soql
+- sales
+- bulk loading
+- soql data extraction
+- customer management
+- sales cloud
+- create ingest job
+- crm
+- get ingest job
+- list all bulk data ingest jobs and their statuses
+- list bulk query jobs
 slug: data-integration
 source_filename: data-integration.yaml
 source_heading: Capability Spec

@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon Data Exchange
 provider_slug: amazon-data-exchange
 search_terms:
+- third-party data
+- data marketplace
 - subscriptions
 - analytics
 - data exchange
-- third-party data
-- data marketplace
 slug: data-marketplace-operations
 source_filename: data-marketplace-operations.yaml
 source_heading: Capability Spec

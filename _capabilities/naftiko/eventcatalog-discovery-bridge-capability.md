@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability that consumes eventcatalog inventory and exposes the event + schema-registry payload as mcp tools the ai assistant can query alongside rest endpoints, so event-driven and request-response surfaces are equally discoverable.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability that consumes eventcatalog inventory and exposes the event + schema-registry payload as mcp tools the ai assistant can query alongside rest endpoints, so event-driven and request-response surfaces are equally discoverable.
 slug: eventcatalog-discovery-bridge-capability
 source_filename: eventcatalog-discovery-bridge-capability.yaml
 source_heading: Capability Spec

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability that handles on-behalf-of token propagation across agent-to-agent calls, using okta + auth0 standards work to keep identity continuous through multi-step agent flows alongside the existing microsoft agent 365 bridge.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability that handles on-behalf-of token propagation across agent-to-agent calls, using okta + auth0 standards work to keep identity continuous through multi-step agent flows alongside the existing microsoft agent 365 bridge.
 slug: okta-auth0-obo-token-propagation-capability
 source_filename: okta-auth0-obo-token-propagation-capability.yaml
 source_heading: Capability Spec

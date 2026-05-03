@@ -21,24 +21,24 @@ personas: []
 provider_name: Azure Container Registry
 provider_slug: azure-container-registry
 search_terms:
-- list tasks
-- list registry resources
-- container images
-- list all resources
-- cloud
-- list task resources
-- list webhook resources
-- containers
-- azure
-- list webhooks
-- docker
-- registry
-- management
-- resource management
-- list replications
-- list replication resources
-- list
 - azure resource management
+- list registry resources
+- management
+- docker
+- azure
+- list all resources
+- list replication resources
+- list task resources
+- registry
+- list
+- cloud
+- container images
+- list replications
+- list webhooks
+- containers
+- resource management
+- list tasks
+- list webhook resources
 - list registrys
 slug: azure-container-registry-management
 source_filename: azure-container-registry-management.yaml

@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- health monitoring and issue detection.
-- manages data fabric infrastructure and cross-system connectivity.
-- administers querygrid systems, nodes, and software.
-- sql queries.
+- list cross-system query summaries from querygrid.
+- integrates applications with teradata via rest apis.
+- get query status
+- data warehousing
+- analytics
 - execute a sql query against teradata vantage.
-- data management
-- list query systems
+- administers querygrid systems, nodes, and software.
+- execute query
+- Data Analyst
 - list available vantage systems for query execution.
 - Platform Administrator
+- Application Developer
+- list available vantage systems.
 - Data Engineer
 - get the status and results of a submitted query.
-- manage querygrid data fabric infrastructure.
-- enterprise
-- executes queries and analyzes data across vantage systems.
-- get query status
 - cloud
+- sql query execution and session management.
+- sql queries.
+- enterprise
+- database
 - teradata
+- sql
 - create session
+- create a query session.
+- query
+- list querygrid queries
+- manage querygrid data fabric infrastructure.
+- executes queries and analyzes data across vantage systems.
+- data management
+- query sessions.
+- machine learning
+- execute sql queries and analytics.
+- health monitoring and issue detection.
+- list query systems
 - execute a sql query.
 - create a new query session on a vantage system.
-- list cross-system query summaries from querygrid.
-- execute sql queries and analytics.
-- list available vantage systems.
-- Data Analyst
-- sql
-- analytics
-- query
-- available systems.
-- create a query session.
-- data warehousing
-- database
-- Application Developer
-- execute query
 - system and fabric configuration management.
-- sql query execution and session management.
-- list querygrid queries
-- machine learning
-- integrates applications with teradata via rest apis.
-- query sessions.
+- manages data fabric infrastructure and cross-system connectivity.
+- available systems.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec

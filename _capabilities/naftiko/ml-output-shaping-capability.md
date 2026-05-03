@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability featuring capability composition + typed outputparameters + jsonpath as the ml pipeline context-shaping story.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability featuring capability composition + typed outputparameters + jsonpath as the ml pipeline context-shaping story.
+- example op
+- governance
 slug: ml-output-shaping-capability
 source_filename: ml-output-shaping-capability.yaml
 source_heading: Capability Spec

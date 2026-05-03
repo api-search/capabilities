@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a bnp-paribas-flavored api-first capability collection wrapping representative banking apis, exposed rest + mcp, governance-tagged for banking compliance.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a bnp-paribas-flavored api-first capability collection wrapping representative banking apis, exposed rest + mcp, governance-tagged for banking compliance.
+- example op
+- governance
 slug: bnp-api-first-banking-capability-collection
 source_filename: bnp-api-first-banking-capability-collection.yaml
 source_heading: Capability Spec

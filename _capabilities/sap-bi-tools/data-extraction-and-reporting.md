@@ -39,44 +39,44 @@ personas: []
 provider_name: SAP BI Tools
 provider_slug: sap-bi-tools
 search_terms:
-- browse reports
-- list providers
-- data export
-- sap
-- extract fact data
 - extract master data (dimension members) from an analytics model.
-- businessobjects report repository.
-- bi user inbox.
-- extract fact data from a planning model.
-- get fact data
-- list completed report instances in the user's bi inbox.
-- model master data.
-- data export namespaces.
-- list inbox items
-- list available namespaces for data export.
-- schedule a businessobjects report for immediate execution.
-- get master data
-- search reports
-- schedule a report for execution.
-- extract fact data (transactional records) from an analytics model.
-- analytics
-- get odata metadata describing the structure of a planning model.
-- list analytics models available for data export from sap analytics cloud.
-- model fact data.
-- model providers for data export.
-- extract master data (dimension members) from a model.
-- browse reports in the infostore repository.
-- list export models
-- list namespaces
-- get model metadata
-- reporting
-- extract master data
 - search for businessobjects reports and documents in the cms repository.
-- data visualization
-- schedule report
+- analytics
+- data export namespaces.
+- list completed report instances in the user's bi inbox.
+- browse reports
+- schedule a report for execution.
+- browse reports in the infostore repository.
+- data export
+- extract master data (dimension members) from a model.
 - business intelligence
-- list available models (providers) for data export.
+- schedule report
+- get odata metadata describing the structure of a planning model.
+- businessobjects report repository.
+- get master data
+- model fact data.
+- list analytics models available for data export from sap analytics cloud.
+- model master data.
+- model providers for data export.
+- list available namespaces for data export.
+- sap
+- extract fact data (transactional records) from an analytics model.
+- get model metadata
+- list namespaces
+- reporting
 - list completed report instances in the bi inbox.
+- list export models
+- get fact data
+- bi user inbox.
+- extract fact data
+- list providers
+- schedule a businessobjects report for immediate execution.
+- extract master data
+- data visualization
+- list available models (providers) for data export.
+- search reports
+- list inbox items
+- extract fact data from a planning model.
 slug: data-extraction-and-reporting
 source_filename: data-extraction-and-reporting.yaml
 source_heading: Capability Spec

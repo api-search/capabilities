@@ -31,38 +31,38 @@ personas: []
 provider_name: Rainbow.AI
 provider_slug: rainbow-ai
 search_terms:
-- get map snapshot
-- geospatial
-- get nowcast
-- nowcast
+- retrieve a precipitation map tile at a specific zoom level and xyz tile coordinates for embedding in map visualizations.
 - get a static precipitation map image for a geographic bounding box, useful for report generation or preview thumbnails.
-- xyz precipitation map tiles for visualization
-- get the list of available weather tile timestamps for building animated precipitation visualizations.
-- get available tile timestamps
-- get static precipitation map image
-- tiles
-- get precipitation forecast for the next 4 hours
 - get weather map tile
-- mapping
-- get real-time weather radar reflectivity data showing current precipitation intensity and type for a location.
+- nowcast
+- xyz precipitation map tiles for visualization
+- get timestamps for animated weather map
+- tiles
+- get nowcast
+- geospatial
+- get static precipitation map image
+- get map tile
+- radar
 - get radar data
+- get precipitation nowcast
+- minute-by-minute precipitation forecasts for any location
+- get the list of available weather tile timestamps for building animated precipitation visualizations.
+- get real-time weather radar reflectivity data showing current precipitation intensity and type for a location.
+- get precipitation forecast for the next 4 hours
+- get weather map tile for a specific zoom and coordinate
+- real-time radar observations
+- get map snapshot
+- precipitation
 - available tile timestamps for animation
+- get available timestamps
+- get available tile timestamps
+- forecasting
+- get minute-by-minute precipitation forecast for any global location for the next 4 hours at 1 km resolution.
+- get precipitation map snapshot
+- mapping
+- get current radar reflectivity data
 - weather
 - static precipitation map images for a bounding box
-- get available timestamps
-- get timestamps for animated weather map
-- get precipitation nowcast
-- get current radar reflectivity data
-- radar
-- get map tile
-- minute-by-minute precipitation forecasts for any location
-- real-time radar observations
-- precipitation
-- get weather map tile for a specific zoom and coordinate
-- get minute-by-minute precipitation forecast for any global location for the next 4 hours at 1 km resolution.
-- forecasting
-- retrieve a precipitation map tile at a specific zoom level and xyz tile coordinates for embedding in map visualizations.
-- get precipitation map snapshot
 slug: weather-intelligence
 source_filename: weather-intelligence.yaml
 source_heading: Capability Spec

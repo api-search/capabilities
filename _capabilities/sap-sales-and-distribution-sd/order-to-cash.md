@@ -57,52 +57,52 @@ personas: []
 provider_name: SAP Sales and Distribution (SD)
 provider_slug: sap-sales-and-distribution-sd
 search_terms:
-- get billing document
-- sap
-- create pricing condition
+- get pricing condition
 - get a specific sales order by number
-- create a new outbound delivery
-- sales
-- get a specific billing document
-- single sales order operations
-- create outbound delivery
-- list pricing conditions
 - pricing condition management
-- post goods issue for delivery
-- post goods issue
-- sales order management
-- update a sales order
-- list outbound deliveries from sap s/4hana
-- list outbound deliveries
-- get a specific billing document or invoice
-- list all sales orders
-- s/4hana
-- list billing documents and invoices from sap s/4hana
-- list pricing condition records
-- erp
-- get a specific sales order
-- list billing documents
-- distribution
-- list sales orders
-- cancel billing document
 - create sales order
+- list billing documents and invoices from sap s/4hana
 - get a specific pricing condition record
 - get sales order
-- create a new pricing condition record
-- create a new sales order in sap s/4hana
-- get pricing condition
-- create a new sales order
-- odata
-- cancel a billing document
-- order-to-cash
-- post goods issue for an outbound delivery
-- update sales order
-- single billing document operations
-- outbound delivery management
+- get a specific sales order
+- list outbound deliveries from sap s/4hana
+- erp
 - list sales orders from sap s/4hana sd
+- list all sales orders
+- update sales order
+- odata
+- create outbound delivery
+- post goods issue for delivery
+- list outbound deliveries
+- list pricing condition records
+- distribution
+- create pricing condition
+- get billing document
+- sap
+- s/4hana
+- sales order management
+- create a new sales order
+- single sales order operations
+- single billing document operations
+- get a specific billing document
+- create a new outbound delivery
+- order-to-cash
+- cancel billing document
+- create a new pricing condition record
 - sales and distribution
-- post goods issue to confirm shipment of outbound delivery
+- update a sales order
 - billing document management
+- sales
+- post goods issue
+- get a specific billing document or invoice
+- list billing documents
+- list pricing conditions
+- cancel a billing document
+- post goods issue to confirm shipment of outbound delivery
+- post goods issue for an outbound delivery
+- list sales orders
+- create a new sales order in sap s/4hana
+- outbound delivery management
 slug: order-to-cash
 source_filename: order-to-cash.yaml
 source_heading: Capability Spec

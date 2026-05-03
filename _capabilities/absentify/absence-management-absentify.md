@@ -10,9 +10,9 @@ provider_name: Absentify
 provider_slug: absentify
 search_terms:
 - leave management
-- microsoft teams
 - absence management
 - human resources
+- microsoft teams
 - hr
 slug: absence-management-absentify
 source_filename: absence-management-absentify.yaml

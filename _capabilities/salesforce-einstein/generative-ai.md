@@ -39,53 +39,53 @@ personas: []
 provider_name: Salesforce Einstein
 provider_slug: salesforce-einstein
 search_terms:
-- create prompt template
-- start a new conversation session with an einstein bot for customer service.
-- bot conversation sessions.
-- generate a multi-turn chat response using einstein gpt.
-- list all available einstein prompt templates.
-- create bot conversation
-- send a raw prompt to einstein gpt for direct llm completion.
-- send a raw prompt for llm completion.
-- generative ai
-- einstein bot definitions.
-- list bots
-- list available prompt templates.
-- chat-style ai generation.
-- salesforce
-- chat
-- predictive analytics
-- generate salesforce content using an einstein prompt template.
-- list prompt templates
-- create session
-- direct llm prompt completions.
 - chat with einstein gpt
-- generate a multi-turn chat response.
-- chatbots
-- generate content
-- crm
-- list all configured einstein bots.
-- computer vision
-- gpt
-- create a new einstein prompt template for content generation.
 - create a new prompt template.
-- artificial intelligence
-- send a message to an active einstein bot conversation session.
-- large language models
-- list einstein bots
-- natural language processing
 - create a new conversation session with a bot.
-- list all einstein bots configured in the salesforce org.
-- salesforce einstein
+- generate a multi-turn chat response.
+- start a new conversation session with an einstein bot for customer service.
+- einstein bot definitions.
+- large language models
+- list available prompt templates.
+- list bots
+- computer vision
+- list all available einstein prompt templates.
+- list einstein bots
+- list prompt templates
+- send a raw prompt for llm completion.
+- create prompt template
+- direct llm prompt completions.
+- bot conversation sessions.
+- generate salesforce content using an einstein prompt template.
+- salesforce
+- natural language processing
+- chat-style ai generation.
+- chatbots
+- send a raw prompt to einstein gpt for direct llm completion.
+- chat
 - send bot message
-- machine learning
-- content generation
-- complete prompt
-- ai content generation from prompt templates.
-- conversational ai
-- generate salesforce content
+- send a message to an active einstein bot conversation session.
+- create a new einstein prompt template for content generation.
+- generate content
+- salesforce einstein
 - manage einstein prompt templates.
+- ai content generation from prompt templates.
+- create session
+- artificial intelligence
+- generative ai
+- create bot conversation
+- machine learning
+- list all configured einstein bots.
+- generate salesforce content
+- generate a multi-turn chat response using einstein gpt.
+- gpt
+- conversational ai
+- complete prompt
 - generate salesforce content (emails, summaries, case notes) using an einstein prompt template.
+- list all einstein bots configured in the salesforce org.
+- crm
+- content generation
+- predictive analytics
 slug: generative-ai
 source_filename: generative-ai.yaml
 source_heading: Capability Spec

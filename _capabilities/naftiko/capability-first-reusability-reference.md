@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - mcp
-- governance
-- 'a reference capability tied to guide-use-cases #9 (capability-first api reusability), used as the dual-track proposal anchor.'
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- 'a reference capability tied to guide-use-cases #9 (capability-first api reusability), used as the dual-track proposal anchor.'
+- governance
 slug: capability-first-reusability-reference
 source_filename: capability-first-reusability-reference.yaml
 source_heading: Capability Spec

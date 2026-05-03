@@ -69,65 +69,65 @@ personas: []
 provider_name: SafeLine
 provider_slug: safeline
 search_terms:
-- security policy groups
+- acl
+- get acl rule execution logs
+- list ssl certificates
+- list whitelisted ip addresses
+- security
+- list security policy groups
+- system information
+- get generated security reports showing attack statistics and traffic analysis
+- open source
+- acl whitelist management
+- create a new acl rule to block or allow traffic based on ip, url, or headers
+- add to acl whitelist
+- create policy group
+- list policy groups
 - web application firewall
 - acl rule execution logs
-- add to acl whitelist
-- create a new api token for safeline management automation
-- list policy groups
-- add ip or cidr to whitelist
-- get security reports
-- create a new acl rule
-- create website
-- api gateway
-- get acl rule execution logs
-- waf
-- list all web applications protected by safeline waf with their configuration
-- open source
-- get safeline system node information including cpu, memory, and version
-- reverse proxy
-- list all websites protected by safeline waf
-- toggle website protection
-- list all ssl/tls certificates managed by safeline
-- add a new website to waf protection
-- get safeline node system information
-- list access control rules for blocking or allowing specific traffic patterns
-- security
-- list api tokens for programmatic access to safeline management
-- list ssl certificates
-- add an ip address or cidr block to the acl whitelist
-- list security policy groups with their rule counts
-- enable or disable waf protection for a specific website
-- list api tokens
 - security reports
-- list whitelisted ip addresses
-- ssl certificate management
-- acl
-- access control list rules
-- list acl whitelist
-- create a new acl rule to block or allow traffic based on ip, url, or headers
-- create acl rule
-- list traffic acl rules
-- list ip addresses and cidr blocks in the acl whitelist
-- get acl execution logs
-- add a new web application to safeline waf protection
-- list websites
-- list acl rules
-- create policy group
-- list security policy groups
-- get node info
+- security policy groups
 - enable or disable website protection
+- get acl execution logs
+- add an ip address or cidr block to the acl whitelist
+- waf
+- add a new web application to safeline waf protection
+- create acl rule
+- list api tokens for programmatic access to safeline management
+- access control list rules
+- list acl rules
+- list all websites protected by safeline waf
+- list traffic acl rules
+- list api tokens
+- create website
+- get safeline node system information
+- get security reports
+- ssl certificate management
+- create a new acl rule
+- create a new api token for safeline management automation
+- create api token
+- api gateway
+- reverse proxy
+- list access control rules for blocking or allowing specific traffic patterns
+- list security policy groups with their rule counts
+- list all ssl/tls certificates managed by safeline
+- get report results
+- add ip or cidr to whitelist
+- get node info
 - protected website management
 - create a security policy group
-- create api token
 - list ssl certificates configured in safeline
-- get logs of triggered acl rules showing blocked/allowed requests and source ips
-- create a new security policy group for organizing waf rules
-- get generated security reports showing attack statistics and traffic analysis
-- system information
-- get report results
-- acl whitelist management
+- list ip addresses and cidr blocks in the acl whitelist
+- list all web applications protected by safeline waf with their configuration
+- enable or disable waf protection for a specific website
+- toggle website protection
 - proxy
+- get safeline system node information including cpu, memory, and version
+- list websites
+- get logs of triggered acl rules showing blocked/allowed requests and source ips
+- add a new website to waf protection
+- create a new security policy group for organizing waf rules
+- list acl whitelist
 slug: waf-protection-management
 source_filename: waf-protection-management.yaml
 source_heading: Capability Spec

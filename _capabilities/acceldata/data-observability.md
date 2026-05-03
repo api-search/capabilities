@@ -10,12 +10,12 @@ provider_name: Acceldata
 provider_slug: acceldata
 search_terms:
 - data pipeline
-- observability
-- data management
-- ai agents
 - data observability
-- intelligence
+- observability
+- ai agents
 - data quality
+- data management
+- intelligence
 slug: data-observability
 source_filename: data-observability.yaml
 source_heading: Capability Spec

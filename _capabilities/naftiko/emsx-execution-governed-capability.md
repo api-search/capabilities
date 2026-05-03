@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - naftiko
 - a capability over emsx (execution management) with explicit safety + effect tags + write-gate governance — the governance-automation runtime for the order-flow path.
-- governance
-- mcp
+- api integration
+- spec-driven integration
 - capabilities
-- ai
+- example op
+- governance
 slug: emsx-execution-governed-capability
 source_filename: emsx-execution-governed-capability.yaml
 source_heading: Capability Spec

@@ -25,63 +25,63 @@ personas: []
 provider_name: Cloudflare
 provider_slug: cloudflare
 search_terms:
-- list logpush jobs
-- observability
-- object storage
-- ai gateway
-- logpush list dataset fields
-- turnstile delete widget
-- logpush list jobs
-- create a logpush job.
-- turnstile create widget
-- logpush create job
-- delete a turnstile widget.
-- api gateway
-- dns list records
-- real-time communication
 - dns delete record
-- logpush get job
-- platform
-- execute batch dns operations.
-- logpush delete job
-- edge
-- dns update record
-- get dns record details.
-- security
-- cloud
-- dns get record
-- dns get dnssec
-- logpush job management.
-- dns create record
-- cdn
-- web performance
-- list dns records for a zone.
-- turnstile list widgets
-- containers
-- dns
-- artificial intelligence
-- create a dns record.
 - list dns records
-- dns batch records
-- delete a logpush job.
-- ddos protection
-- edge computing
-- serverless
-- list turnstile widgets.
-- delete a dns record.
-- dns record management.
 - verify a turnstile token.
+- security
+- turnstile create widget
+- create a logpush job.
+- logpush job management.
 - turnstile verify token
-- list logpush jobs.
-- turnstile widget management.
-- get logpush job details.
-- get dnssec settings.
-- list dataset fields.
-- create a turnstile widget.
+- turnstile delete widget
+- web performance
+- dns batch records
 - cloudflare
-- update a dns record.
+- delete a turnstile widget.
+- dns
+- ai gateway
+- logpush delete job
+- logpush list dataset fields
+- turnstile list widgets
+- create a dns record.
+- edge
+- list logpush jobs.
+- get dns record details.
+- dns update record
+- delete a dns record.
+- cloud
+- list dns records for a zone.
+- dns create record
+- execute batch dns operations.
 - list turnstile widgets
+- api gateway
+- create a turnstile widget.
+- cdn
+- dns get record
+- list logpush jobs
+- get logpush job details.
+- artificial intelligence
+- real-time communication
+- logpush list jobs
+- logpush get job
+- containers
+- dns get dnssec
+- dns record management.
+- logpush create job
+- delete a logpush job.
+- object storage
+- update a dns record.
+- observability
+- platform
+- list turnstile widgets.
 - list dns records.
+- list dataset fields.
+- ddos protection
+- get dnssec settings.
+- edge computing
+- dns list records
+- serverless
+- turnstile widget management.
 slug: dns-and-security
 source_filename: dns-and-security.yaml
 source_heading: Capability Spec

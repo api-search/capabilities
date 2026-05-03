@@ -30,34 +30,34 @@ provider_name: Factset
 provider_slug: factset
 search_terms:
 - quantitative research
-- get factor library data.
-- financial
-- list screens
-- factset
-- execute formula queries.
-- list factors
-- screening
-- run formula
-- formula-based data retrieval.
-- universal screening.
-- run screen
 - research
+- run screen
+- investment analytics
+- financial
+- run universal screening.
 - market data
-- factor analysis
-- list factor library resources.
-- run quant engine
-- get factors
-- financial data
+- list screens
+- universal screening.
 - factor library data.
 - portfolio analytics
 - run quant engine computations.
-- investment analytics
-- list quant
-- run universal screening.
-- quant engine computations.
+- get factor library data.
 - list screening resources.
+- run formula
+- factor analysis
+- factset
+- list quant
+- screening
+- quant engine computations.
+- list factor library resources.
+- financial data
 - list quant engine resources.
+- execute formula queries.
+- list factors
 - list formulas
+- run quant engine
+- formula-based data retrieval.
+- get factors
 slug: quantitative-research
 source_filename: quantitative-research.yaml
 source_heading: Capability Spec

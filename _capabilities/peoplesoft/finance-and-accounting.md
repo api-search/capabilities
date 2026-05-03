@@ -67,50 +67,50 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- list expense reports
-- process approval
-- hcm
-- retrieve accounts receivable items.
-- accounts payable vouchers
-- retrieve forecast data and projections.
-- retrieve pending finance approval requests.
-- accounts receivable items
 - list ar items
-- list budgets
-- expense reports
-- forecast data and projections
-- list forecasts
+- peopletools platform services.
+- list pending approvals
+- budget definitions and data
+- campus solutions
+- accounts receivable items
+- list analytics reports
+- retrieve general ledger journal entries.
+- accounting
 - finance approval requests
-- human capital management.
-- general ledger
-- approve, deny, or push back a finance approval request.
+- list forecasts
 - retrieve performance analytics reports.
+- performance analytics reports
+- hcm
+- peoplesoft
+- erp
+- retrieve accounts payable vouchers.
+- retrieve forecast data and projections.
+- list budgets
+- enterprise software
+- general ledger
+- finance
 - individual approval operations
+- list journal entries
+- list expense reports
+- human capital management.
+- retrieve expense reports.
+- retrieve accounts receivable items.
+- list vouchers
+- campus solutions.
+- financial and supply chain management.
+- accounts payable vouchers
+- financial management
+- budgeting
+- retrieve budget definitions and data.
+- retrieve pending finance approval requests.
+- forecasting
+- process approval
+- supply chain management
+- approve, deny, or push back a finance approval request.
 - crm
 - general ledger journal entries
-- retrieve budget definitions and data.
-- erp
-- budgeting
-- retrieve general ledger journal entries.
-- budget definitions and data
-- list pending approvals
-- campus solutions
-- retrieve expense reports.
-- supply chain management
-- list vouchers
-- list journal entries
-- enterprise software
-- finance
-- campus solutions.
-- performance analytics reports
-- peoplesoft
-- retrieve accounts payable vouchers.
-- financial management
-- list analytics reports
-- forecasting
-- peopletools platform services.
-- financial and supply chain management.
-- accounting
+- expense reports
+- forecast data and projections
 slug: finance-and-accounting
 source_filename: finance-and-accounting.yaml
 source_heading: Capability Spec

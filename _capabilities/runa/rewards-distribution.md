@@ -46,53 +46,53 @@ personas: []
 provider_name: Runa
 provider_slug: runa
 search_terms:
-- get balance
-- list supported countries
-- list all product categories available in the runa catalog (e.g., retail, dining, gaming)
-- payouts
-- supported countries
+- list product categories for catalog filtering
+- b2c
 - list countries
-- digital reward orders
-- get account balance
-- send reward
-- browse available gift cards and payout products
-- account balance
-- specific reward order
-- list countries supported by runa
-- rewards
+- list supported countries
 - runa
+- gift cards
+- get denomination options and redemption instructions for a specific runa product
+- product details
+- specific reward order
+- get reward status
+- digital reward orders
+- check the fulfillment status of a reward order and retrieve the payout url
+- get reward order status and payout url
+- rewards
+- list all digital reward orders placed with the runa account
+- estimate reward cost
+- get product details
+- get the current runa account balance to check available funds before sending rewards
+- get account balance
+- incentives
+- list all reward orders
+- product categories
+- list product categories
+- account balance
+- payments
+- estimate the cost of sending a digital reward before placing the order
+- create and send a digital reward to a recipient
+- list all countries where runa can deliver digital rewards
+- browse available reward products
+- browse available gift cards and payout products in the runa catalog
+- send reward
+- estimate reward
+- list countries supported by runa
+- browse catalog
+- list categories
+- get balance
+- create and send a digital reward or gift card to a recipient via runa
+- supported countries
+- get current account balance
+- estimate cost before sending a reward
+- payouts
+- list all product categories available in the runa catalog (e.g., retail, dining, gaming)
+- browse available gift cards and payout products
+- get product
+- get product denominations and redemption info
 - list rewards
 - loyalty
-- get denomination options and redemption instructions for a specific runa product
-- get reward order status and payout url
-- gift cards
-- get product
-- list all digital reward orders placed with the runa account
-- list categories
-- get product denominations and redemption info
-- payments
-- product categories
-- get current account balance
-- browse catalog
-- product details
-- get the current runa account balance to check available funds before sending rewards
-- b2c
-- create and send a digital reward to a recipient
-- estimate reward cost
-- estimate cost before sending a reward
-- list product categories
-- check the fulfillment status of a reward order and retrieve the payout url
-- get product details
-- browse available gift cards and payout products in the runa catalog
-- list all reward orders
-- browse available reward products
-- list all countries where runa can deliver digital rewards
-- estimate the cost of sending a digital reward before placing the order
-- incentives
-- get reward status
-- estimate reward
-- list product categories for catalog filtering
-- create and send a digital reward or gift card to a recipient via runa
 slug: rewards-distribution
 source_filename: rewards-distribution.yaml
 source_heading: Capability Spec

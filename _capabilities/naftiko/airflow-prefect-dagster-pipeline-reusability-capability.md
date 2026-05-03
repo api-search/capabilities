@@ -14,15 +14,15 @@ provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
 - a capability composition over the airflow + prefect + dagster pipeline trio that exposes shared steps as reusable capabilities — the api-reusability ask, made concrete on actual data stack.
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
-- mcp
-- capabilities
 - ai
+- mcp
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: airflow-prefect-dagster-pipeline-reusability-capability
 source_filename: airflow-prefect-dagster-pipeline-reusability-capability.yaml
 source_heading: Capability Spec

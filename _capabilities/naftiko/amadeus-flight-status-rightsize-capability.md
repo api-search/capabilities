@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- 'a capability over amadeus / flightaware-style flight-status apis implementing use case #2 (rightsize ai context) for an airline-it api-sprawl scenario.'
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- 'a capability over amadeus / flightaware-style flight-status apis implementing use case #2 (rightsize ai context) for an airline-it api-sprawl scenario.'
+- capabilities
+- example op
+- governance
 slug: amadeus-flight-status-rightsize-capability
 source_filename: amadeus-flight-status-rightsize-capability.yaml
 source_heading: Capability Spec

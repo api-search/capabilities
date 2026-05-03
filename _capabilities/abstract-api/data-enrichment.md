@@ -30,60 +30,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- geolocation
-- currency conversion, vat compliance, and banking validation for financial applications
-- public holidays
-- convert time between zones
-- exchange rates, vat validation, and iban validation for financial compliance
 - geolocate an ip address
-- company enrichment
-- get current timezone
-- get current time and timezone information for any location
-- get current timezone for a location
-- retrieve timezone and current time for a location
-- timezones
-- detection and blocking of fraudulent users, transactions, and bot activity
-- fraud analyst
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- engineer building data pipelines and enrichment workflows
-- engineer building fraud detection and threat intelligence systems
-- ip geolocation
-- get company details from domain or email
-- security engineer
-- contacts
-- developer building user onboarding and personalization features
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- finance engineer
-- enrich company data
-- currencies
-- ip intelligence
-- product engineer
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- screenshots
-- convert date/time from one timezone to another
-- data enrichment
-- avatars
-- iban validation
-- geolocate an ip address to get country, city, timezone, and currency data
-- get location data for an ip address
-- retrieve company name, industry, headcount, logo, and location from a domain or email
-- enrich company data from domain
-- compliance analyst
-- geolocate ip
 - web scraping
-- vat validation
-- get timezone
-- exchange rates
-- phone validation
-- geolocate ip address
-- developer building payment, billing, and financial compliance systems
+- enrich company data
+- retrieve company name, industry, headcount, logo, and location from a domain or email
+- detection and blocking of fraudulent users, transactions, and bot activity
 - abstract api
+- get timezone
+- geolocation
+- iban validation
+- phone validation
 - email validation
-- image processing
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- vat validation
+- developer building payment, billing, and financial compliance systems
+- get current time and timezone information for any location
+- security engineer
+- product engineer
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
+- company enrichment
+- get current timezone for a location
+- fraud analyst
+- exchange rates, vat validation, and iban validation for financial compliance
+- contacts
 - data engineer
+- currencies
+- currency conversion, vat compliance, and banking validation for financial applications
+- image processing
+- enrich company data from domain
+- convert date/time from one timezone to another
+- convert time between zones
+- exchange rates
 - enrich company
+- screenshots
+- data enrichment
+- engineer building fraud detection and threat intelligence systems
+- developer building user onboarding and personalization features
+- get company details from domain or email
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- geolocate an ip address to get country, city, timezone, and currency data
+- geolocate ip address
+- retrieve timezone and current time for a location
+- compliance analyst
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- engineer building data pipelines and enrichment workflows
+- get location data for an ip address
+- ip geolocation
+- get current timezone
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- timezones
+- geolocate ip
+- public holidays
+- ip intelligence
+- finance engineer
+- avatars
 slug: data-enrichment
 source_filename: data-enrichment.yaml
 source_heading: Capability Spec

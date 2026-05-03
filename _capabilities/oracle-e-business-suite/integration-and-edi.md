@@ -27,49 +27,49 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- invoke a rest method on a service.
-- edi
-- trading partner management.
-- edi import inbound transaction
-- edi get outbound transactions
-- extract an outbound edi transaction.
-- get wadl for a rest service.
-- e-business suite
-- inbound edi transactions.
-- edi extract outbound transaction
-- edi get inbound transactions
-- enterprise
-- isg login
-- list trading partners.
-- retrieve outbound edi transactions.
-- business applications
-- get inbound transactions
-- get outbound transactions
-- isg logout
-- edi get trading partner by id
-- import an inbound edi transaction.
-- retrieve inbound edi transactions.
-- authenticate.
-- erp
-- outbound edi transactions.
-- end the current session.
-- retrieve trading partners.
-- edi get trading partners
-- oracle
-- authentication.
-- list inbound transactions.
-- login
-- integration
-- list outbound transactions.
-- authenticate and obtain session token.
-- soa gateway
-- isg get service wadl
-- initialize responsibility context.
-- isg invoke rest method
 - retrieve code conversion mappings.
-- get trading partner by id.
 - edi get code conversions
+- edi get outbound transactions
+- retrieve inbound edi transactions.
+- isg login
+- edi import inbound transaction
+- invoke a rest method on a service.
+- retrieve trading partners.
+- trading partner management.
+- authenticate and obtain session token.
+- erp
+- get inbound transactions
+- integration
+- edi get trading partner by id
+- isg invoke rest method
+- isg logout
+- end the current session.
+- list outbound transactions.
+- edi get inbound transactions
+- e-business suite
 - isg initialize
+- isg get service wadl
+- retrieve outbound edi transactions.
+- inbound edi transactions.
+- initialize responsibility context.
+- enterprise
+- get trading partner by id.
+- authentication.
+- oracle
+- list inbound transactions.
+- import an inbound edi transaction.
+- list trading partners.
+- login
+- outbound edi transactions.
+- edi get trading partners
+- soa gateway
+- get outbound transactions
+- get wadl for a rest service.
+- edi
+- extract an outbound edi transaction.
+- authenticate.
+- edi extract outbound transaction
+- business applications
 - get trading partners
 slug: integration-and-edi
 source_filename: integration-and-edi.yaml

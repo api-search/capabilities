@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- compose ai context (#5) using + a complementary system (e.g., marketing cloud or an external billing api) as the orchestration example.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- compose ai context (#5) using + a complementary system (e.g., marketing cloud or an external billing api) as the orchestration example.
+- example op
+- governance
 slug: customer360-context-composition
 source_filename: customer360-context-composition.yaml
 source_heading: Capability Spec

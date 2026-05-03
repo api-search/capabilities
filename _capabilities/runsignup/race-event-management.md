@@ -46,55 +46,55 @@ personas: []
 provider_name: RunSignup
 provider_slug: runsignup
 search_terms:
-- participant registration management
-- get race
-- sports
-- age and gender division management
-- team registration management
-- get results
-- get donations
-- list registered participants
-- get registered teams
-- retrieve registered participants for a race, optionally filtered by event
-- get divisions
-- submit official race results with finish times and placements for participants
 - get donation and fundraising data for a race
-- get bib chip assignments
-- get race donations
-- get races
-- search and list upcoming races
-- submit race results
-- get bib number and rfid chip assignments for timing operations
-- event management
-- fundraising
-- search races
-- get full race information including events
-- get race results
-- get participants
-- individual race details
-- get comprehensive details about a specific race including all events, registration status, and settings
-- get bib number and chip assignments
-- post results
-- fundraising and donation data
-- timing
-- race results retrieval and submission
-- get bib chip
-- retrieve official race results including finish times and placements
-- get teams registered for a race event
+- get race
 - running
-- get age and gender divisions configured for race results scoring
-- get race teams
-- results
-- race discovery and search
-- bib and chip assignment data
-- get race divisions
+- race results retrieval and submission
+- age and gender division management
 - get teams
-- race registration
-- search and discover upcoming races on runsignup by name, location, or state
+- get bib chip
+- list registered participants
+- individual race details
+- get participants
+- search and list upcoming races
+- get race donations
+- retrieve registered participants for a race, optionally filtered by event
+- get bib chip assignments
+- get race divisions
+- get donations
+- get bib number and rfid chip assignments for timing operations
+- get age and gender divisions configured for race results scoring
 - fitness
-- runsignup
 - get race participants
+- submit official race results with finish times and placements for participants
+- results
+- post results
+- participant registration management
+- event management
+- runsignup
+- get registered teams
+- timing
+- search races
+- fundraising and donation data
+- race discovery and search
+- race registration
 - get race details
+- get teams registered for a race event
+- get race teams
+- bib and chip assignment data
+- get race results
+- team registration management
+- submit race results
+- search and discover upcoming races on runsignup by name, location, or state
+- get races
+- get divisions
+- fundraising
+- get comprehensive details about a specific race including all events, registration status, and settings
+- get full race information including events
+- get bib number and chip assignments
+- sports
+- retrieve official race results including finish times and placements
+- get results
 slug: race-event-management
 source_filename: race-event-management.yaml
 source_heading: Capability Spec

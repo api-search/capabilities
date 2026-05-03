@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability that wraps a servicenow operation as both a native isv agent installed inside m365 copilot and an mcp tool, demonstrating sébastien's agent-to-agent isv path.
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- a capability that wraps a servicenow operation as both a native isv agent installed inside m365 copilot and an mcp tool, demonstrating sébastien's agent-to-agent isv path.
+- example op
+- governance
 slug: m365-servicenow-isv-agent-bridge-capability
 source_filename: m365-servicenow-isv-agent-bridge-capability.yaml
 source_heading: Capability Spec

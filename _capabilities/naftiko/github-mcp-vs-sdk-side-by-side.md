@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- capabilities
-- governance
 - mcp
-- a capability that wraps the github rest api as both a generated sdk call path and a naftiko-exposed mcp tool over the same operation, used as the visual proof of "capabilities are the new abstraction layer."
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
+- a capability that wraps the github rest api as both a generated sdk call path and a naftiko-exposed mcp tool over the same operation, used as the visual proof of "capabilities are the new abstraction layer."
 slug: github-mcp-vs-sdk-side-by-side
 source_filename: github-mcp-vs-sdk-side-by-side.yaml
 source_heading: Capability Spec

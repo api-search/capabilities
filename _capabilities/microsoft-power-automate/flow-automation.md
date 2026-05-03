@@ -39,50 +39,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- flow management
-- list available connectors in an environment
-- Platform Administrator
-- microsoft
-- workflow
+- manage flows, environments, and connectors
 - automation
-- get flow
-- turn off flow
-- connector management
-- get flow details
-- stop/deactivate a flow
 - delete a flow
 - get details of a specific connector
-- update flow
-- delete flow
-- low-code
-- flow lifecycle management
-- environment management
-- get connector
-- list connectors
-- creating, running, and managing automation flows
-- manage flows, environments, and connectors
-- update a flow's properties
-- business process
-- create a new automation flow
-- manages environments, connectors, and permissions
-- rpa
-- create a flow
-- list flows
-- list environments
-- get details of a specific flow
-- start/activate a flow
-- create flow
-- managing environments and available connectors
-- Automation Engineer
-- integration
 - list flows in an environment
-- creates and manages automation flows
-- list all environments
-- microsoft power automate
-- power platform
 - list all power automate environments
-- update a flow
+- creating, running, and managing automation flows
+- managing environments and available connectors
+- manages environments, connectors, and permissions
+- get flow
+- business process
+- low-code
+- stop/deactivate a flow
+- Platform Administrator
+- get connector
+- integration
+- list available connectors in an environment
+- update a flow's properties
+- power platform
+- connector management
+- flow management
 - turn on flow
+- list flows
+- delete flow
+- list environments
+- create a new automation flow
+- turn off flow
+- microsoft
+- Automation Engineer
+- creates and manages automation flows
+- get flow details
+- list all environments
+- rpa
+- environment management
+- create a flow
+- list connectors
+- start/activate a flow
+- update a flow
+- create flow
+- get details of a specific flow
+- update flow
+- workflow
+- microsoft power automate
+- flow lifecycle management
 slug: flow-automation
 source_filename: flow-automation.yaml
 source_heading: Capability Spec

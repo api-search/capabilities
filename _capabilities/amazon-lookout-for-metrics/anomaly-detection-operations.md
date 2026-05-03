@@ -55,69 +55,69 @@ personas: []
 provider_name: Amazon Lookout for Metrics
 provider_slug: amazon-lookout-for-metrics
 search_terms:
-- detection feedback
-- list anomaly detectors
-- activate an anomaly detector to begin monitoring metrics
-- update detector
 - get feedback
-- monitoring and assessment of metric data quality
-- get configuration and status details of an anomaly detector
-- list all configured anomaly alerts
-- list all alerts
-- configuration and management of anomaly alert notifications
-- activate anomaly detector
-- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
-- get full details of a specific anomaly group including contributing metrics
-- anomaly alerts
-- create alert
-- create a new anomaly detector for a set of business metrics
-- get anomaly group
-- create detector
-- single anomaly detector
-- submit feedback on anomaly detections to improve ml model accuracy
-- list detectors
-- deactivate anomaly detector
-- get detector details
-- list all metrics that contributed to an anomaly group
 - Operations Engineer
-- get anomaly
-- single anomaly group
-- anomaly group results
-- monitoring
-- retrieve previously submitted anomaly detection feedback
-- create a new anomaly detector
-- put feedback
-- operations
-- update detector configuration
-- get detector
+- get anomaly group
+- activate an anomaly detector to begin monitoring metrics
 - delete a detector
-- list summaries of detected anomaly groups for investigation
-- submit anomaly feedback
-- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
-- amazon
-- list all configured anomaly detectors
-- metrics
+- create a new anomaly detector for a set of business metrics
+- activate anomaly detector
+- list all anomaly detectors
 - manage anomaly detectors
+- monitoring
 - delete detector
+- get anomaly
+- workflow for managing anomaly detectors, monitoring anomalies, configuring alerts, and providing feedback
+- submit feedback on anomaly detections to improve ml model accuracy
+- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
+- list all configured anomaly detectors
 - list anomalies
-- get anomaly group details
+- monitoring and assessment of metric data quality
+- ml-powered detection of anomalies in business and operational metrics
+- operations
 - create an alert
+- stop an anomaly detector from monitoring metrics
+- update detector configuration
+- list anomaly group summaries
+- get full details of a specific anomaly group including contributing metrics
+- business intelligence
+- submit feedback
+- create a new anomaly detector
+- create detector
+- get detector details
 - list alerts
 - get anomaly feedback
-- machine learning
-- submit feedback
-- create anomaly detector
-- describe anomaly detector
-- list all anomaly detectors
-- monitors anomaly alerts, investigates anomaly groups, and manages detector lifecycle
+- create alert
+- list summaries of detected anomaly groups for investigation
+- submit anomaly feedback
+- list all alerts
+- detection feedback
 - create an alert to receive notifications when anomalies are detected
-- Data Scientist
+- get configuration and status details of an anomaly detector
+- amazon
+- metrics
+- configuration and management of anomaly alert notifications
+- manages anomaly detector configuration, metric sets, and feedback to improve ml model accuracy
+- machine learning
+- update detector
+- single anomaly detector
+- list all metrics that contributed to an anomaly group
+- retrieve previously submitted anomaly detection feedback
+- anomaly alerts
 - list anomaly group related metrics
-- ml-powered detection of anomalies in business and operational metrics
-- list anomaly group summaries
-- business intelligence
 - anomaly detection
-- stop an anomaly detector from monitoring metrics
+- put feedback
+- list all configured anomaly alerts
+- describe anomaly detector
+- create anomaly detector
+- single anomaly group
+- anomaly group results
+- list detectors
+- list anomaly detectors
+- get anomaly group details
+- deactivate anomaly detector
+- Data Scientist
+- get detector
 slug: anomaly-detection-operations
 source_filename: anomaly-detection-operations.yaml
 source_heading: Capability Spec

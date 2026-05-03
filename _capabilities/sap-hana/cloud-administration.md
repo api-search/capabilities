@@ -39,53 +39,53 @@ personas: []
 provider_name: SAP HANA
 provider_slug: sap-hana
 search_terms:
-- instance lifecycle management.
-- get database metrics.
-- get metrics
-- update an instance.
-- delete instance
-- update instance
-- list all sap hana cloud instances.
-- provision a new instance.
-- provision a new sap hana cloud instance.
-- get details of a specific instance.
-- alert monitoring.
-- list all sap hana cloud service instances.
-- enterprise
-- list mappings
-- delete mapping
-- update instance configuration.
-- cloud
-- update alert rules for an instance.
-- update alert rules
-- list alert events.
-- delete an instance.
-- create a new instance mapping.
-- list alert rules for an instance.
-- list instance mappings.
-- monitoring
-- list inventory
-- list triggered alert events for an instance.
-- get instance
-- analytics
 - list alert rules
-- individual instance operations.
+- monitoring
+- alert monitoring.
 - administration
-- delete a service instance permanently.
-- delete an instance mapping.
-- performance metrics.
-- in-memory
-- sap hana
+- list inventory
+- analytics
 - create instance
-- database
+- delete an instance mapping.
+- list alert events.
+- performance metrics.
+- list all sap hana cloud service instances.
+- update instance configuration.
+- provision a new instance.
+- delete instance
+- update an instance.
 - create mapping
-- list alerts
-- list instances
 - get instance details.
-- get metering
-- retrieve database performance metrics.
+- list alerts
+- get metrics
 - retrieve consumption metering data.
+- get database metrics.
+- cloud
+- individual instance operations.
+- get metering
+- list mappings
+- create a new instance mapping.
+- enterprise
+- database
+- instance lifecycle management.
+- delete an instance.
+- list alert rules for an instance.
+- delete a service instance permanently.
+- list instance mappings.
 - list all instances in the inventory.
+- list all sap hana cloud instances.
+- delete mapping
+- provision a new sap hana cloud instance.
+- sap hana
+- list instances
+- update alert rules
+- update instance
+- list triggered alert events for an instance.
+- in-memory
+- get details of a specific instance.
+- get instance
+- retrieve database performance metrics.
+- update alert rules for an instance.
 slug: cloud-administration
 source_filename: cloud-administration.yaml
 source_heading: Capability Spec

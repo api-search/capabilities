@@ -42,50 +42,50 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforcecom
 search_terms:
-- records
-- get field definitions for a salesforce object type
-- data management
-- get a salesforce record by sobject type and id
-- query records
 - automation
-- update fields on an existing salesforce crm record
-- delete a salesforce crm record (moves to recycle bin, recoverable)
-- salesforce
-- sales
-- delete a salesforce record
-- update fields on a salesforce record
-- create a new salesforce record
-- cloud
-- get record
-- create a new salesforce crm record (account, contact, lead, opportunity, case)
 - read, update, and delete individual records
-- execute a soql query
 - soql query execution
-- crm
-- ai
-- query salesforce records using soql (e.g., select id, name from account where industry = 'technology')
-- get field definitions and schema metadata for a salesforce object type
-- sobject field metadata
 - marketing
-- get org limits
-- retrieve a specific salesforce crm record by object type and id
-- get current salesforce org limits and api usage
-- query
-- create new records by sobject type
-- check current salesforce org api call limits and remaining usage
-- describe sobject
-- delete record
-- org api usage limits
+- get a salesforce record by sobject type and id
 - execute a sosl search across multiple object types
-- check api limits
-- execute query
+- update fields on an existing salesforce crm record
 - create record
-- search across multiple salesforce object types using sosl full-text search
-- sosl cross-object search
+- query records
+- execute query
+- get field definitions for a salesforce object type
 - search records
+- salesforce
+- get field definitions and schema metadata for a salesforce object type
+- create new records by sobject type
+- describe sobject
+- search across multiple salesforce object types using sosl full-text search
+- get current salesforce org limits and api usage
 - get field metadata
+- delete record
 - update record
+- delete a salesforce record
+- cloud
+- update fields on a salesforce record
+- org api usage limits
+- check current salesforce org api call limits and remaining usage
+- retrieve a specific salesforce crm record by object type and id
+- data management
+- query
+- create a new salesforce crm record (account, contact, lead, opportunity, case)
+- records
+- get org limits
+- sales
+- ai
+- sobject field metadata
+- execute a soql query
+- get record
+- create a new salesforce record
+- sosl cross-object search
+- delete a salesforce crm record (moves to recycle bin, recoverable)
+- crm
+- check api limits
 - execute search
+- query salesforce records using soql (e.g., select id, name from account where industry = 'technology')
 slug: crm-data-management
 source_filename: crm-data-management.yaml
 source_heading: Capability Spec

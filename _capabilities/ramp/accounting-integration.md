@@ -33,36 +33,36 @@ personas: []
 provider_name: Ramp
 provider_slug: ramp
 search_terms:
-- list vendor records used for bill pay and accounting integrations.
-- bill pay records.
-- list audit events for compliance reporting and accounting review.
-- list bill pay records for accounts payable workflows.
-- audit events for compliance and accounting review.
-- list bills
-- list accounting accounts
-- general ledger accounts.
-- accounts payable
+- vendor records for accounting integrations.
 - reimbursements
-- list vendors
-- expense management
-- list general ledger accounts configured in ramp for accounting system mapping.
-- ramp
+- list all bills pending accounting review.
+- list all general ledger accounts.
+- list card statements for period-end close and reconciliation.
+- list audit events
+- accounts payable
+- accounting
+- vendors
+- list accounting accounts
 - spend management
-- bill pay
+- ramp
+- audit events for compliance and accounting review.
+- list bill pay records for accounts payable workflows.
+- list bills
+- list vendors
+- list all vendor records.
+- list audit events for compliance reporting and accounting review.
+- finance
+- list general ledger accounts configured in ramp for accounting system mapping.
 - list gl accounts
+- general ledger accounts.
+- list vendor records used for bill pay and accounting integrations.
+- list audit events.
+- bill pay
+- expense management
+- list statements
+- bill pay records.
 - corporate cards
 - list accounting vendors
-- vendor records for accounting integrations.
-- vendors
-- list statements
-- list all bills pending accounting review.
-- finance
-- list card statements for period-end close and reconciliation.
-- list all general ledger accounts.
-- list all vendor records.
-- list audit events.
-- list audit events
-- accounting
 slug: accounting-integration
 source_filename: accounting-integration.yaml
 source_heading: Capability Spec

@@ -10,10 +10,10 @@ provider_name: Blackstone
 provider_slug: blackstone
 search_terms:
 - private equity
+- finance
 - alternative assets
 - investment management
 - real estate
-- finance
 slug: blackstone-investor-portal
 source_filename: blackstone-investor-portal.yaml
 source_heading: Capability Spec

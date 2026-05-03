@@ -11,20 +11,20 @@ personas: []
 provider_name: Oracle Cloud Infrastructure
 provider_slug: oracle-cloud
 search_terms:
-- manages security and compliance
-- platform as a service
-- cloud computing
-- workflow for building and deploying containerized and serverless applications on oci. used by application developers.
 - workflow for managing databases, data storage, and data processing across oci. used by data engineers and dbas.
-- enterprise cloud
-- oracle
 - data platform
+- manages security and compliance
+- enterprise cloud
+- platform as a service
 - builds cloud-native applications
-- manages oci infrastructure resources
 - unified workflow for managing compute instances, networking, and storage resources across oci. used by cloud administrators and devops engineers.
 - workflow for managing identity, access control, and monitoring across oci. used by security engineers.
+- manages oci infrastructure resources
 - oracle cloud
+- workflow for building and deploying containerized and serverless applications on oci. used by application developers.
+- oracle
 - manages databases and data pipelines
+- cloud computing
 - infrastructure as a service
 slug: data-platform
 source_filename: data-platform.yaml

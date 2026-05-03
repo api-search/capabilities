@@ -39,45 +39,45 @@ personas: []
 provider_name: RubyGems
 provider_slug: rubygems
 search_terms:
-- create webhook
-- remove owner
-- test webhook
-- webhook subscriptions for gem push events
-- list owned gems
-- list owners
-- add a new owner to a ruby gem by email address
-- ruby
-- list gem owners
-- remove a gem version from the index
-- add a gem owner
-- register a webhook to receive notifications when a gem is pushed
-- developer tools
-- open source
-- yank a gem version
-- package manager
-- gem ownership management
-- remove an owner from a ruby gem by email address
-- push gem
-- list all gems owned by the authenticated rubygems user
-- remove gem owner
 - remove a specific ruby gem version from the rubygems.org index
+- webhook subscriptions for gem push events
 - add owner
-- create a webhook
-- list webhooks
-- gem publishing operations
-- list all owners of a specific gem
-- publish gem
-- gems
-- yank gem
-- publishing
-- ci/cd
+- list all gems owned by the authenticated rubygems user
 - add gem owner
-- submit a built ruby gem (.gem file) to rubygems.org for publishing
-- submit a built gem to rubygems.org
-- rubygems
+- yank gem
+- open source
+- list gem owners
 - list all webhook subscriptions for the authenticated user
-- test fire a webhook to verify it is receiving notifications correctly
+- list all owners of a specific gem
 - remove a gem owner
+- remove a gem version from the index
+- publishing
+- create webhook
+- package manager
+- remove an owner from a ruby gem by email address
+- rubygems
+- yank a gem version
+- list owners
+- remove gem owner
+- push gem
+- list owned gems
+- submit a built gem to rubygems.org
+- developer tools
+- list webhooks
+- gems
+- test webhook
+- create a webhook
+- add a new owner to a ruby gem by email address
+- remove owner
+- gem ownership management
+- add a gem owner
+- ruby
+- register a webhook to receive notifications when a gem is pushed
+- ci/cd
+- gem publishing operations
+- submit a built ruby gem (.gem file) to rubygems.org for publishing
+- test fire a webhook to verify it is receiving notifications correctly
+- publish gem
 slug: gem-publishing
 source_filename: gem-publishing.yaml
 source_heading: Capability Spec

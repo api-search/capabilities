@@ -29,51 +29,51 @@ provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
 - production
-- get onhand quantities
-- inv get deliveries
-- manufacturing
-- e-business suite
-- retrieve inventory items.
-- inv get inventory items
-- get discrete jobs
-- list on-hand quantities.
-- issue material to a job.
-- enterprise
-- mfg complete assembly
-- on-hand quantity management.
-- create a discrete job.
-- get bom by id.
-- inv get onhand quantities
-- mfg issue material
-- retrieve bills of material.
-- mfg get wip operations
-- erp
-- mfg get bills of material
-- discrete job management.
-- list inventory items.
-- list boms.
-- mfg get bill of material by id
-- get discrete job by id.
-- list discrete jobs.
-- retrieve wip operations.
-- retrieve sales orders.
-- oracle
 - retrieve routings.
-- complete an assembly.
-- inventory item management.
-- bom management.
+- mfg get bill of material by id
 - supply chain
-- retrieve on-hand quantities.
-- retrieve deliveries.
-- mfg get discrete jobs
+- mfg get wip operations
 - mfg get discrete job by id
-- inv get sales orders
-- mfg get routings
-- get bills of material
+- manufacturing
+- mfg get discrete jobs
+- retrieve on-hand quantities.
+- list inventory items.
+- erp
+- on-hand quantity management.
+- inv get inventory items
 - get inventory items
 - retrieve discrete jobs.
-- business applications
+- get bills of material
+- mfg get routings
+- inv get deliveries
+- discrete job management.
+- e-business suite
+- list boms.
+- get bom by id.
+- inv get sales orders
+- mfg complete assembly
+- retrieve sales orders.
+- get discrete jobs
+- list discrete jobs.
+- complete an assembly.
+- inventory item management.
+- mfg issue material
+- inv get onhand quantities
+- enterprise
+- oracle
+- list on-hand quantities.
+- create a discrete job.
+- get discrete job by id.
+- bom management.
+- retrieve wip operations.
+- retrieve bills of material.
 - mfg create discrete job
+- issue material to a job.
+- retrieve deliveries.
+- business applications
+- retrieve inventory items.
+- mfg get bills of material
+- get onhand quantities
 slug: manufacturing-operations
 source_filename: manufacturing-operations.yaml
 source_heading: Capability Spec

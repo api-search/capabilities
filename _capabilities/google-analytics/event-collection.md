@@ -41,73 +41,73 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- server-side event tracking with data stream and secret management.
-- segmenting and exporting user populations for analysis and activation.
-- validate events without sending
+- bi engineer
+- acknowledge user data collection terms (required before creating secrets)
+- google analytics
+- builds automated reporting pipelines and dashboards from ga4 data.
 - validate event payloads
-- send events to google analytics
-- privacy officer
-- validate event payloads without sending to google analytics
-- list api secrets for measurement protocol authentication
-- create data stream
-- analytics administrator
-- backend engineer
-- manage api secrets for measurement protocol
-- events
+- server side
 - implements privacy-compliant data handling and deletion workflows.
 - send events
-- integrates ga4 with other platforms and manages infrastructure.
-- ingesting events from servers, apps, and offline sources.
-- builds automated reporting pipelines and dashboards from ga4 data.
-- validate events
-- google analytics
-- attribution
-- sets up and maintains ga4 accounts, properties, and configurations.
-- implements server-side event tracking and offline data collection.
+- connecting ga4 with advertising, app, and measurement platforms.
 - managing data privacy, deletion, and access auditing.
-- google
-- create a measurement protocol secret
-- data protection engineer
-- web analytics
-- list measurement protocol secrets
-- tracking
-- compliance team
-- setting up and maintaining ga4 account and property structure.
-- send events via measurement protocol
-- acknowledge user data collection
-- create a new data stream for event collection
-- data analyst
-- analytics
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- server side
+- data
 - extracts insights from ga4 data through reports and explorations.
-- create, export, and query ga4 audience segments.
-- send events to google analytics via measurement protocol
-- measurement protocol
-- querying and analyzing ga4 event data through various report types.
+- integrates ga4 with other platforms and manages infrastructure.
+- create data stream
+- connects advertising platforms and implements server-side tracking.
+- analytics
 - list data streams
 - create a data stream
+- attribution
 - list data streams for configuring event collection
-- create measurement protocol secret
-- acknowledge user data collection terms (required before creating secrets)
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- marketing team
-- manage data streams for event collection
-- bi engineer
+- validate event payloads without sending to google analytics
+- validate events
+- measurement protocol
 - user data deletion, access auditing, and data collection acknowledgement.
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- compliance team
+- data protection engineer
+- tracking
+- list measurement protocol secrets
+- create a new data stream for event collection
 - measures campaign performance, segments audiences, and tracks conversions.
-- reporting
-- machine learning
-- manages data privacy compliance including gdpr deletion requests.
-- connecting ga4 with advertising, app, and measurement platforms.
-- create an api secret for measurement protocol authentication
-- connects advertising platforms and implements server-side tracking.
-- audits data access and monitors configuration changes.
+- querying and analyzing ga4 event data through various report types.
+- manage data streams for event collection
+- create a measurement protocol secret
+- create, export, and query ga4 audience segments.
+- analytics administrator
 - platform engineer
-- data
+- setting up and maintaining ga4 account and property structure.
+- segmenting and exporting user populations for analysis and activation.
+- backend engineer
+- validate events without sending
+- send events to google analytics via measurement protocol
+- acknowledge user data collection
+- marketing team
 - marketing ops
+- manages data privacy compliance including gdpr deletion requests.
+- google
+- events
+- list api secrets for measurement protocol authentication
 - metrics
+- reporting
+- data analyst
+- audits data access and monitors configuration changes.
+- machine learning
+- create measurement protocol secret
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- sets up and maintains ga4 accounts, properties, and configurations.
+- implements server-side event tracking and offline data collection.
+- server-side event tracking with data stream and secret management.
+- send events via measurement protocol
+- ingesting events from servers, apps, and offline sources.
+- create an api secret for measurement protocol authentication
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- privacy officer
+- manage api secrets for measurement protocol
+- send events to google analytics
+- web analytics
 slug: event-collection
 source_filename: event-collection.yaml
 source_heading: Capability Spec

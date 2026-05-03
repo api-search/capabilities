@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- nginx
-- configuration
 - list all apisix gateway routes.
-- authentication
-- create a new apisix route for traffic routing.
-- delete an apisix route.
+- update route
 - Platform Engineer
 - create a new api consumer with authentication plugins.
-- api gateway
-- delete route
-- list all backend upstream configurations.
-- list consumers
-- create a new gateway route.
-- open source
-- API Gateway Administrator
-- update an existing apisix route.
-- kubernetes
-- create a new backend upstream with load balancing config.
-- list all gateway routes.
-- list api consumers.
-- create a backend upstream.
-- list all api consumers and their plugin configs.
-- list upstreams
-- create consumer
-- route, upstream, consumer, and ssl management workflow.
 - lua
-- cloud native
-- create route
-- list routes
-- create an api consumer.
-- apache apisix
-- update route
-- create upstream
-- administrators configuring routes, consumers, and security policies.
-- traffic management
-- list backend upstreams.
+- delete route
 - engineers deploying and managing api gateway infrastructure.
+- open source
+- update an existing apisix route.
+- create route
+- create consumer
+- cloud native
+- create a new gateway route.
+- traffic management
+- create upstream
+- nginx
+- authentication
+- list all api consumers and their plugin configs.
+- kubernetes
+- list backend upstreams.
+- create a new backend upstream with load balancing config.
+- route, upstream, consumer, and ssl management workflow.
+- list routes
+- configuration
+- API Gateway Administrator
+- list consumers
+- api gateway
+- create an api consumer.
+- list upstreams
+- delete an apisix route.
+- administrators configuring routes, consumers, and security policies.
 - apache
+- create a new apisix route for traffic routing.
+- list all backend upstream configurations.
+- list all gateway routes.
+- create a backend upstream.
+- apache apisix
+- list api consumers.
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

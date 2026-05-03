@@ -29,28 +29,28 @@ personas: []
 provider_name: Reflect
 provider_slug: reflect
 search_terms:
-- trigger a test run.
-- end-to-end tests
-- testing
 - automation
-- list all automated end-to-end tests.
-- test execution triggers.
-- run test
+- list tests
+- list all automated end-to-end tests available in the reflect account.
+- trigger a reflect automated test execution, with optional overrides for target hostnames, parameters, cookies, headers, and session storage.
 - get execution status
 - ai testing
-- automated testing
-- end-to-end testing
-- reflect
-- trigger a reflect automated test execution, with optional overrides for target hostnames, parameters, cookies, headers, and session storage.
-- list all automated end-to-end tests available in the reflect account.
-- artificial intelligence
-- qa
-- list tests
-- test execution status.
-- check test execution status.
-- ci/cd
+- trigger a test run.
+- end-to-end tests
 - check the current status of a reflect test execution and retrieve per-test results.
+- list all automated end-to-end tests.
+- end-to-end testing
+- automated testing
+- reflect
+- artificial intelligence
 - available tests catalog.
+- qa
+- test execution triggers.
+- run test
+- check test execution status.
+- test execution status.
+- ci/cd
+- testing
 slug: test-automation
 source_filename: test-automation.yaml
 source_heading: Capability Spec

@@ -103,86 +103,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- list all users in microsoft entra directory.
-- update service principal properties.
-- identity
-- get service principal details.
-- individual group management.
-- microsoft
-- delete service principal
-- directory management
-- list groups and roles a user belongs to.
-- create a new user in the directory.
-- create application
-- update group properties.
-- delete application
-- update group
-- delete a user.
-- list groups
-- create service principal
-- get user
-- list applications
-- list user group memberships.
-- update application properties.
-- entra
-- create group
-- authentication
-- azure ad
-- get application details.
-- list group members.
-- individual service principal management.
-- get application
 - security
-- identity governance
-- get user details.
-- get group details.
-- user account management.
-- network security
-- delete a group.
-- microsoft entra
-- list all groups.
-- delete an application registration.
-- list service principals
-- list users
-- create a new group.
-- application registration management.
-- list members of a group.
-- user group membership.
-- create a new service principal.
-- get group
-- list all groups in the directory.
-- add group member
-- update user properties.
-- list all users in the directory.
-- create a new user.
-- remove a member from a group.
 - create user
-- delete group
-- individual application management.
+- list all application registrations.
+- entra
 - delete user
-- get user properties by id.
-- delete a service principal.
-- delete an application.
-- list group members
+- add a member to a group.
+- get user details.
+- get user
+- group membership management.
+- zero trust
+- create group
+- remove group member
+- individual group management.
+- application registration management.
+- update user properties.
+- add group member
+- list service principals
+- create a new user.
+- azure ad
+- group management.
+- create a new service principal.
+- microsoft
+- list user group memberships.
+- individual application management.
+- update application
+- create application
+- list all service principals.
+- list groups and roles a user belongs to.
+- authentication
+- directory management
+- delete an application registration.
+- user account management.
 - get service principal
 - update user
-- delete a user from the directory.
-- group membership management.
-- update application
-- update service principal.
-- list all service principals.
-- access management
-- register a new application.
-- list user memberships
+- update group
+- list all groups.
+- delete group
+- microsoft entra
+- list groups
+- get service principal details.
+- delete a service principal.
+- delete application
+- get user properties by id.
+- identity governance
 - service principal management.
-- zero trust
 - individual user management.
-- group management.
-- list all application registrations.
-- remove group member
-- update service principal
+- individual service principal management.
+- delete a user from the directory.
+- network security
+- list members of a group.
+- get application details.
+- register a new application.
+- identity
+- delete a group.
+- list all users in the directory.
 - list all applications.
-- add a member to a group.
+- update application properties.
+- update service principal
+- list all users in microsoft entra directory.
+- list all groups in the directory.
+- user group membership.
+- get group
+- list group members
+- update service principal properties.
+- list applications
+- list group members.
+- list user memberships
+- get group details.
+- create service principal
+- create a new user in the directory.
+- get application
+- delete service principal
+- list users
+- create a new group.
+- remove a member from a group.
+- access management
+- delete a user.
+- update group properties.
+- delete an application.
+- update service principal.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

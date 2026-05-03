@@ -71,106 +71,106 @@ personas:
 provider_name: X (Twitter)
 provider_slug: twitter
 search_terms:
-- get list posts
-- posts
-- initialize a chunked media upload
-- create lists
-- bookmark a post
-- updateLists
-- handles customer inquiries and issues via direct messages and replies.
-- get analytics data for a specific post
-- initializeMediaUpload
-- getMediaUploadStatus
-- user relationships, direct messaging, spaces, and community interaction.
-- researcher
-- x api
-- content creator
-- manage user relationships, direct messages, spaces, and community interactions.
 - builds and maintains communities through engagement and moderation.
-- post creation, editing, media management, and content analytics.
-- content
-- create, manage, and analyze posts, media, bookmarks, and lists.
-- ensures data handling meets regulatory and platform compliance requirements.
-- manage a specific post
-- createLists
-- finalize a chunked media upload
-- deleteUsersBookmark
-- upload media
-- monitor conversations, search posts, analyze trends, and extract insights.
-- brand manager
-- manage compliance jobs, data streams, and real-time compliance monitoring.
-- upload media for posts (simple upload for small files)
-- getListsMembers
-- create a new post (tweet) on x
-- compliance officer
-- getListsById
-- delete a post by its id
+- manage list members
 - create a new list
-- real-time data
-- manages brand presence, campaigns, and content strategy.
-- createPosts
+- get posts from a list timeline
+- initialize a chunked media upload
 - createUsersBookmark
-- deletePostById
-- get analytics for a post
+- getListsPosts
+- createLists
 - data compliance, deletion tracking, and regulatory event monitoring.
-- upload media for posts
-- get the processing status of an uploaded media
-- retrieve multiple posts by their ids
-- produces original posts, threads, and media content on x.
-- platform operations
-- get a list by its id
-- marketing team
-- streaming
-- retrieve posts by ids
-- manages user relationships, follows, and interaction strategies.
-- deleteLists
-- createMediaMetadata
-- monitors brand mentions, sentiment, and competitive landscape.
-- social media manager
-- creates, schedules, and analyzes social media content across platforms.
-- delete a list
-- getPostsByIds
-- update a list's name or description
-- finalizeMediaUpload
-- social monitoring, search, trending topics, and sentiment analysis.
-- media
-- create a new list on x
-- marketing
-- microblogging
-- data analyst
-- get the members of a list
-- manage user bookmarks
-- publishing
+- bookmark a post
+- get list posts
 - extracts insights from social data through search, streaming, and analytics.
+- create a new post
+- manage user relationships, direct messages, spaces, and community interactions.
+- marketing team
+- upload media for posts (simple upload for small files)
+- get analytics for a post
+- getUsersBookmarks
+- retrieve multiple posts by their ids
+- data analyst
+- customer support
+- create, manage, and analyze posts, media, bookmarks, and lists.
+- append a chunk to an in-progress media upload
+- produces original posts, threads, and media content on x.
+- streaming
+- manage compliance jobs, data streams, and real-time compliance monitoring.
+- content creator
+- real-time data
+- marketing
+- get the members of a list
+- get posts from a list's timeline
+- x api
+- microblogging
+- advertising
+- social media manager
+- get a list by its id
+- initializeMediaUpload
+- get bookmarked posts for the authenticated user
+- manages user relationships, follows, and interaction strategies.
+- researcher
+- manage user bookmarks
+- createPosts
+- ensures data handling meets regulatory and platform compliance requirements.
+- getListsById
+- handles customer inquiries and issues via direct messages and replies.
+- post creation, editing, media management, and content analytics.
+- user relationships, direct messaging, spaces, and community interaction.
+- social media
+- finalize a chunked media upload
+- platform operations
 - get bookmarked posts
+- manages brand presence, campaigns, and content strategy.
+- get post analytics
 - mediaUpload
-- finalize chunked upload
+- updateLists
+- publishing
+- create and retrieve posts
+- upload media for posts
 - create or update metadata (alt text) for uploaded media
-- delete a post
+- deleteUsersBookmark
+- finalize chunked upload
+- initialize chunked upload
+- getListsMembers
 - engagement specialist
 - data engineer
-- getUsersBookmarks
-- initialize chunked upload
-- community manager
-- create and retrieve posts
-- manage list members
-- get bookmarked posts for the authenticated user
-- remove a bookmark
-- advertising
-- get posts from a list timeline
-- customer support
+- content
+- brand manager
+- delete a list
 - addListsMember
-- conducts academic or market research using x data archives.
-- create a new post
-- social media
-- appendMediaUpload
-- add a member to a list
-- get post analytics
-- append a chunk to an in-progress media upload
+- get analytics data for a specific post
+- monitor conversations, search posts, analyze trends, and extract insights.
+- getPostsByIds
+- deletePostById
+- get the processing status of an uploaded media
 - manages data pipelines, streaming ingestion, and compliance data flows.
-- get posts from a list's timeline
 - getPostsAnalytics
-- getListsPosts
+- finalizeMediaUpload
+- social monitoring, search, trending topics, and sentiment analysis.
+- createMediaMetadata
+- deleteLists
+- create a new list on x
+- monitors brand mentions, sentiment, and competitive landscape.
+- appendMediaUpload
+- delete a post
+- manage a specific post
+- conducts academic or market research using x data archives.
+- remove a bookmark
+- create lists
+- getMediaUploadStatus
+- retrieve posts by ids
+- posts
+- media
+- delete a post by its id
+- creates, schedules, and analyzes social media content across platforms.
+- update a list's name or description
+- create a new post (tweet) on x
+- community manager
+- upload media
+- add a member to a list
+- compliance officer
 slug: content-publishing
 source_filename: content-publishing.yaml
 source_heading: Capability Spec

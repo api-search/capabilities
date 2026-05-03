@@ -27,33 +27,33 @@ personas: []
 provider_name: Azure Service Bus
 provider_slug: azure-service-bus
 search_terms:
-- cloud infrastructure
-- list all namespaces
-- get namespace details
-- list topics within a service bus namespace
-- get namespace
-- messaging
-- service bus
-- pub/sub
-- enterprise
-- cloud
-- pub/sub topics
+- list azure service bus namespaces in a subscription
 - create or update a service bus namespace
-- message broker
-- create or update namespace
-- service bus namespaces
-- list queues within a service bus namespace
-- get details of a specific service bus namespace
+- list all namespaces
+- queues
+- list topics
 - delete namespace
 - azure
+- get details of a specific service bus namespace
 - namespace details
-- list topics
-- list azure service bus namespaces in a subscription
-- queues
+- pub/sub topics
+- list topics within a service bus namespace
+- get namespace details
+- cloud
+- messaging
+- cloud infrastructure
+- service bus
+- enterprise
 - list namespaces
-- list queues
-- delete a service bus namespace
 - message queues
+- list queues within a service bus namespace
+- message broker
+- create or update namespace
+- list queues
+- service bus namespaces
+- delete a service bus namespace
+- get namespace
+- pub/sub
 slug: messaging-management
 source_filename: messaging-management.yaml
 source_heading: Capability Spec

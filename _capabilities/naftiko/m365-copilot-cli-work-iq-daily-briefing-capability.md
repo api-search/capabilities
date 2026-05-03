@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- governance
 - mcp
+- ai
+- naftiko
+- api integration
+- spec-driven integration
 - a capability that wraps work iq as an mcp tool consumed from the copilot cli to produce a daily "what changed that impacts my work" briefing across meetings, chats, emails, and tasks.
 - capabilities
-- ai
+- example op
+- governance
 slug: m365-copilot-cli-work-iq-daily-briefing-capability
 source_filename: m365-copilot-cli-work-iq-daily-briefing-capability.yaml
 source_heading: Capability Spec

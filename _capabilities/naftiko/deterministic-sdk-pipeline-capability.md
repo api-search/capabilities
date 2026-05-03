@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- a capability where the spec is the source of truth for both the engine runtime and the downstream sdk pipeline, demonstrating the deterministic flow end-to-end.
-- example op
 - example
+- mcp
+- ai
+- naftiko
 - api integration
 - spec-driven integration
-- naftiko
-- governance
-- mcp
 - capabilities
-- ai
+- example op
+- governance
+- a capability where the spec is the source of truth for both the engine runtime and the downstream sdk pipeline, demonstrating the deterministic flow end-to-end.
 slug: deterministic-sdk-pipeline-capability
 source_filename: deterministic-sdk-pipeline-capability.yaml
 source_heading: Capability Spec

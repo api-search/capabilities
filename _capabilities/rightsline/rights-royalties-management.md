@@ -38,42 +38,42 @@ personas: []
 provider_name: Rightsline
 provider_slug: rightsline
 search_terms:
-- individual rights record
 - royalties
-- update right
-- get audit trail
-- get record change history
-- entertainment
-- rights management
 - get rights record by id
-- get the change history and audit trail for a specific rights or royalty record
-- execute a rightsline workflow action on one or more records (e.g., generate delivery request)
-- rightsline
-- content availability checking
-- execute workflow action
-- delete a rights record
-- validate content availability for a territory and platform
-- update an existing rights record's terms, dates, or territory
-- update a rights record
-- media
+- rights management
+- get full details of a rights or license record including territory and window
+- entertainment
+- get right
+- get audit trail
 - list rights
 - delete right
-- check availability
-- audit trail
-- check whether content is available for distribution in a territory and platform window
-- create right
-- get full details of a rights or license record including territory and window
-- rights and license management
-- workflow automation
-- list rights and license records, optionally filtered by modification date
-- availability
 - content management
-- get right
+- individual rights record
+- availability
+- update right
 - execute workflow
+- get record change history
+- media
+- rightsline
+- update an existing rights record's terms, dates, or territory
+- content availability checking
 - workflows
+- get the change history and audit trail for a specific rights or royalty record
+- list rights and license records, optionally filtered by modification date
+- update a rights record
+- execute a rightsline workflow action on one or more records (e.g., generate delivery request)
+- check whether content is available for distribution in a territory and platform window
+- validate content availability for a territory and platform
 - execute workflow action on records
+- rights and license management
 - create a new rights record for a content title, territory, and platform
 - list rights and license records
+- execute workflow action
+- audit trail
+- check availability
+- delete a rights record
+- workflow automation
+- create right
 slug: rights-royalties-management
 source_filename: rights-royalties-management.yaml
 source_heading: Capability Spec

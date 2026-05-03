@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- bss
-- customer billing invoices
-- list subscriptions for a customer
-- browse the service catalog and available plans
-- onboard a new customer
-- telecom
-- Customer Care Agent
-- product and service catalog
-- amdocs
-- mvno
-- saas
-- add a service subscription to a customer account
-- add a service subscription
-- list all customer accounts
-- onboard a new telecom customer
-- telecom customer account management
-- create customer
-- customer management
-- Billing Team
-- list invoices for a customer
-- handles customer inquiries and account management
 - customer subscription management
-- list customers
-- manages invoicing, payments, and revenue assurance
-- retrieve billing invoices for a customer
-- list products
-- oss
-- list telecom customer accounts
-- manages telco bss operations and system configuration
-- 5g
-- unified bss workflow for customer onboarding, billing, and service management
+- add a service subscription to a customer account
+- telecom customer account management
+- onboard a new telecom customer
 - list subscriptions
+- oss
+- saas
 - browse available products and plans
-- BSS Operator
+- unified bss workflow for customer onboarding, billing, and service management
+- Customer Care Agent
+- add a service subscription
+- bss
+- telecom
+- browse the service catalog and available plans
+- Billing Team
+- retrieve billing invoices for a customer
+- list all customer accounts
+- list invoices
+- mvno
+- 5g
 - create subscription
 - list service subscriptions for a customer
+- manages invoicing, payments, and revenue assurance
+- amdocs
+- product and service catalog
+- onboard a new customer
+- list customers
+- customer billing invoices
+- list telecom customer accounts
+- list products
+- create customer
+- customer management
+- BSS Operator
+- manages telco bss operations and system configuration
 - billing
-- list invoices
+- list subscriptions for a customer
+- list invoices for a customer
+- handles customer inquiries and account management
 slug: telco-customer-management
 source_filename: telco-customer-management.yaml
 source_heading: Capability Spec

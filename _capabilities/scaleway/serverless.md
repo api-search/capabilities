@@ -67,62 +67,62 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- infrastructure
-- list triggers for serverless containers
+- create a serverless function
+- list serverless function namespaces
+- create container
+- storage
+- european cloud
+- functions
+- delete a serverless container
+- function namespace management
+- get function details
+- list functions
+- database
+- delete function
+- list cron triggers
+- get container
+- container trigger management
+- get details of a serverless container
+- container namespace management
+- list function namespaces
+- kubernetes
+- get details of a serverless function
+- list container triggers
+- list serverless containers
+- serverless function management
+- create container namespace
+- manage a specific serverless container
+- cron schedule management
+- deploy a serverless container
+- delete container
+- faas
+- create cron
+- list serverless container namespaces
+- list container namespaces
+- containers
+- serverless container management
+- create function
+- create a cron trigger
 - list cron triggers for serverless functions
 - manage a specific function
-- delete container
-- scaleway
-- create cron
-- create a cron trigger
-- manage a specific serverless container
-- create a serverless function
-- container namespace management
 - get container details
-- list crons
-- delete a serverless function
-- create container namespace
-- list containers
-- storage
-- deploy a serverless container
-- faas
-- list container namespaces
-- kubernetes
-- list serverless containers
-- get container
-- list functions
-- create a new serverless function
-- ai
-- list cron triggers
-- list serverless functions
-- create container
-- containers
-- list serverless function namespaces
-- container trigger management
-- cron schedule management
-- delete function
-- list function namespaces
-- event-driven
-- serverless
 - list deployed serverless containers
-- get details of a serverless function
-- functions
-- create a cron schedule for a serverless function
-- list container triggers
-- serverless function management
-- function namespace management
-- create a container namespace
-- database
-- get details of a serverless container
+- ai
+- scaleway
 - get function
+- event-driven
+- infrastructure
+- create a container namespace
+- serverless
+- delete a serverless function
+- list crons
+- list serverless functions
 - deploy a new serverless container
-- list serverless container namespaces
-- european cloud
+- create a new serverless function
 - cloud computing
-- serverless container management
-- delete a serverless container
-- create function
-- get function details
+- create a cron schedule for a serverless function
+- list triggers for serverless containers
+- list containers
 slug: serverless
 source_filename: serverless.yaml
 source_heading: Capability Spec

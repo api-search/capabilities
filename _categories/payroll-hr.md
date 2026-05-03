@@ -14,7 +14,7 @@ description: 'HRIS, payroll, time tracking, leave management, benefits administr
 
   '
 domain: hr
-implementation_count: 8
+implementation_count: 7
 implementations:
 - capability_name: Absence.io Absence Management
   capability_slug: absence-management
@@ -42,19 +42,6 @@ implementations:
   - Connected Worker
   - Training Management
   tool_count: 6
-- capability_name: Allianz Employee Engagement Workflow
-  capability_slug: employee-engagement-workflow
-  capability_url: https://capabilities.apis.io/capabilities/allianz-engagement-survey/employee-engagement-workflow/
-  consumed_api_count: 1
-  operation_count: 7
-  provider_name: Allianz Engagement Survey
-  provider_slug: allianz-engagement-survey
-  tags:
-  - Human Resources
-  - Employee Experience
-  - Surveys
-  - Analytics
-  tool_count: 8
 - capability_name: Oracle EBS Workforce Management
   capability_slug: workforce-management
   capability_url: https://capabilities.apis.io/capabilities/oracle-e-business-suite/workforce-management/
@@ -122,7 +109,7 @@ implementations:
   tool_count: 16
 layout: category
 name: Payroll & HR
-provider_count: 6
+provider_count: 5
 related:
 - recruiting-ats
 - identity-access

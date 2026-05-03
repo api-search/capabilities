@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
+- mcp
+- ai
 - naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
 - a capability that mirrors a object across rest + graphql + hosted mcp and exposes the same agent surface so governance lives in one openapi doc — kris's exact methodology argument.
 - governance
-- mcp
-- capabilities
-- ai
 slug: hosted-mcp-multi-modal-mirror
 source_filename: hosted-mcp-multi-modal-mirror.yaml
 source_heading: Capability Spec

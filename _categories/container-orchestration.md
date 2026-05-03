@@ -186,7 +186,7 @@ implementations:
   - Compute
   - Containers
   - Infrastructure
-  tool_count: 17
+  tool_count: 34
 - capability_name: Spot Compute Optimization
   capability_slug: compute-optimization
   capability_url: https://capabilities.apis.io/capabilities/spot/compute-optimization/

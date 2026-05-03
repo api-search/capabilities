@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
 - a "documentation capability" that exposes capability metadata (specs, tags, lifecycle) via rest + mcp for backstage catalog enrichment.
-- api integration
-- naftiko
-- governance
-- mcp
-- capabilities
 - ai
+- mcp
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: backstage-catalog-documentation-capability
 source_filename: backstage-catalog-documentation-capability.yaml
 source_heading: Capability Spec

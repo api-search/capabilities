@@ -45,53 +45,53 @@ personas: []
 provider_name: Microsoft Power Platform APIs
 provider_slug: power-platform
 search_terms:
-- list installable application packages for the tenant
-- list flow runs for an environment
-- get environment details
-- microsoft
-- install an application package in an environment
-- list billing policies for the tenant
-- list billing policies
-- single environment operations
-- delete a power platform environment
-- create billing policy
-- list flow runs
-- list all billing policies
 - list packages
-- application package management
-- create a billing policy
-- billing policy management
-- update an existing billing policy
-- low-code
-- environment management
-- list power automate flow runs by workflow id
-- install application package
-- governance
-- list application packages available in an environment
-- list application packages
-- get details for a specific billing policy
-- get details for a specific power platform environment
-- list environments
-- dataverse
+- list flow runs
 - administration
-- get billing policy
-- create a new billing policy linking azure subscription
-- update billing policy
 - get environment
+- list power automate flow runs by workflow id
+- low-code
+- get environment details
+- list application packages available in an environment
+- list flow runs for an environment
+- list installable application packages for the tenant
 - list application packages for an environment
-- flow run monitoring
-- get install status
-- copilot studio
-- list all power platform environments in the tenant
-- list all environments
-- delete an environment
-- delete environment
 - check the installation status of an application package
-- no-code
-- power platform
 - list tenant packages
+- delete an environment
+- update billing policy
+- power platform
+- install an application package in an environment
+- create billing policy
+- update an existing billing policy
+- application package management
+- get details for a specific power platform environment
 - power pages
+- copilot studio
+- list environments
+- get install status
+- governance
+- list billing policies for the tenant
+- microsoft
+- billing policy management
+- create a new billing policy linking azure subscription
+- get billing policy
+- single environment operations
+- list all billing policies
+- delete environment
+- list application packages
+- list all environments
+- install application package
+- environment management
+- create a billing policy
+- delete a power platform environment
+- get details for a specific billing policy
+- list billing policies
+- list all power platform environments in the tenant
+- no-code
 - business applications
+- flow run monitoring
+- dataverse
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

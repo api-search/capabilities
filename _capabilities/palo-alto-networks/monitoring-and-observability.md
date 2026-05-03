@@ -133,180 +133,180 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- palo alto networks
-- bpa report check details.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- red team operator
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- tenant operator
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- list email destinations
-- individual log forwarding profile operations.
-- log forwarding profile status.
-- query aggregated threat monitoring data.
-- list monitoring tenants.
-- list monitored agents from autonomous dem.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- list monitored applications
-- researches threat actors, malware campaigns, and vulnerability trends.
-- create syslog destination
-- query aggregated application monitoring data with filters, time ranges, and grouping.
-- query application data
-- list all log forwarding profiles.
-- saas security admin
-- monitoring
-- query aggregated license monitoring data with filters, time ranges, and grouping.
-- get test results
-- compliance team
-- application experience scores from autonomous dem.
-- list syslog destinations
-- sd wan operator
-- sase
-- executes containment, eradication, and recovery actions during security incidents.
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- query aggregated url monitoring data with filters, time ranges, and grouping.
-- threat hunter
-- list monitored applications.
-- https destination management for log forwarding profiles.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- update a specific log forwarding profile by id.
-- get agent and endpoint scores.
-- data protection analyst
-- get application scores
-- proactively searches for threats and iocs across telemetry data.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- submit a bpa request for a device.
-- investigates security incidents, triages alerts, and coordinates response actions.
-- get dem metrics
-- secure access service edge with remote networking, sd-wan, and zero trust access.
+- list monitored agents.
 - delete a specific log forwarding profile by id.
-- manages enterprise browser policies and secure browsing configurations.
-- create email destination
-- performance metrics from autonomous dem.
-- list monitored applications from autonomous dem.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- log forwarding profile status.
+- investigates dlp incidents and manages sensitive data protection policies.
+- bpa report check details.
+- firewall admin
+- get the status of a log forwarding profile.
+- bpa request status.
+- best practice assessment
+- get dem application scores
+- list monitored applications
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- get synthetic test results from autonomous dem.
+- get dem agent scores
+- manages service accounts, roles, and access policies for platform api access.
+- get performance metrics.
+- list email destinations
+- query aggregated threat monitoring data.
+- ai runtime security scanning and automated red teaming for ai applications.
+- threat intelligence
+- list monitoring tenants
+- list https destinations for a log forwarding profile.
+- delete log forwarding profile
+- get performance metrics from autonomous dem.
+- get test results
+- iam admin
+- threat intel analyst
+- malware researcher
+- list all log forwarding profiles.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- get bpa request status
+- network security engineer
+- proactively searches for threats and iocs across telemetry data.
+- soar
+- get agent scores
+- query aggregated application monitoring data with filters, time ranges, and grouping.
+- digital experience monitoring, log management, and best practice assessment.
+- application experience scores from autonomous dem.
+- get log forwarding status
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- get agent and endpoint scores from autonomous dem.
+- create log forwarding profile
+- sase
+- get a bpa report.
+- get dem metrics
+- query aggregated license monitoring data with filters, time ranges, and grouping.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- sase admin
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- query application data
+- list monitored applications.
+- query bandwidth data
+- get application experience scores from autonomous dem.
+- create https destination
+- list email destinations for a log forwarding profile.
+- list dem agents
+- digital experience
+- get dem test results
+- vulnerability manager
+- analyzes suspicious files and samples for malware characteristics.
+- soc analyst
+- get agent and endpoint scores.
+- syslog destination management for log forwarding profiles.
+- cloud security engineer
+- synthetic test results from autonomous dem.
 - observability
+- tenant operator
 - incident responder
-- cloud security posture management, compliance monitoring, and workload protection.
+- monitored applications from autonomous dem.
+- create a new log forwarding profile.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- query aggregated license monitoring data.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- update a specific log forwarding profile by id.
+- notifications
+- subscription manager
+- palo alto networks
+- sre
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- manages multi-tenant security operations at scale for managed service providers.
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- list log forwarding profiles
+- get bpa report check details.
+- list monitored agents from autonomous dem.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- get a specific log forwarding profile by id.
+- list https destinations
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- xdr
+- query aggregated url monitoring data.
+- agent and endpoint scores from autonomous dem.
+- email destination management for log forwarding profiles.
+- investigates security incidents, triages alerts, and coordinates response actions.
+- network security
+- researches threat actors, malware campaigns, and vulnerability trends.
+- list monitored agents
 - get synthetic test results.
 - ai security engineer
-- delete log forwarding profile
-- get a bpa report.
-- get bpa report
-- bpa request operations.
-- monitored agents from autonomous dem.
-- manage enterprise browser policies, user sessions, and deployments.
-- list monitoring tenants
-- create an https destination for a log forwarding profile.
-- compliance officer
-- designs and implements network security architectures and policies.
-- query bandwidth data
-- sase admin
-- network operations
-- list syslog destinations for a log forwarding profile.
-- list email destinations for a log forwarding profile.
-- malware researcher
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- network security
-- investigates dlp incidents and manages sensitive data protection policies.
-- list all tenants available for monitoring.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- digital experience
-- subscription manager
-- threat intelligence
-- email destination management for log forwarding profiles.
-- logging
-- list dem agents
-- get bpa report check details.
-- manages multi-tenant security operations at scale for managed service providers.
-- data loss prevention, saas security monitoring, and identity security posture.
-- get performance metrics
-- query aggregated url monitoring data.
+- list syslog destinations
+- create email destination
 - get bpa report checks
-- list monitored agents.
-- get dem agent scores
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- create https destination
-- best practice assessment
-- check the status of a bpa request.
-- list https destinations
-- synthetic test results from autonomous dem.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- get agent and endpoint scores from autonomous dem.
-- get synthetic test results from autonomous dem.
-- create a syslog destination for a log forwarding profile.
-- designs sase and sd-wan network architectures for secure remote access.
-- conducts automated adversarial testing against ai systems and llm applications.
-- analyzes suspicious files and samples for malware characteristics.
-- query license data
-- list monitored agents
-- xdr
-- list https destinations for a log forwarding profile.
-- network architect
-- get application experience scores from autonomous dem.
+- monitored agents from autonomous dem.
+- individual log forwarding profile operations.
 - cybersecurity
+- red team operator
 - secures ai applications with runtime scanning and vulnerability assessment.
-- get a specific log forwarding profile by id.
-- sre
-- firewall admin
-- update log forwarding profile
-- soc analyst
-- vulnerability manager
-- network security engineer
-- agent and endpoint scores from autonomous dem.
-- mssp operator
-- manages service accounts, roles, and access policies for platform api access.
-- query threat data
-- query url data
-- monitors network health, performance, and digital experience metrics.
+- list all tenants available for monitoring.
+- network operations
 - firewall
-- list log forwarding profiles
-- get log forwarding status
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- query aggregated threat monitoring data with filters, time ranges, and grouping.
-- list dem applications
-- enterprise it
-- ai runtime security scanning and automated red teaming for ai applications.
-- submit a bpa request.
-- soar
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- submit bpa request
-- get agent scores
-- identity and access management, tenant hierarchies, and subscription management.
-- get dem application scores
-- log forwarding profile management.
-- manages logging infrastructure, integrations, and platform automation.
+- create an https destination for a log forwarding profile.
+- update log forwarding profile
+- designs and implements network security architectures and policies.
+- https destination management for log forwarding profiles.
+- sd wan operator
+- monitors network health, performance, and digital experience metrics.
+- check the status of a bpa request.
+- query url data
 - query aggregated bandwidth monitoring data.
-- iam admin
-- get bpa request status
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- get dem test results
-- bpa report retrieval.
-- threat intel analyst
-- monitored applications from autonomous dem.
-- get performance metrics.
-- create log forwarding profile
-- create an email destination for a log forwarding profile.
-- get the status of a log forwarding profile.
-- query aggregated application monitoring data.
-- query aggregated bandwidth monitoring data with filters, time ranges, and grouping.
-- get application experience scores.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- browser security admin
-- notifications
-- digital experience monitoring, log management, and best practice assessment.
-- syslog destination management for log forwarding profiles.
-- get performance metrics from autonomous dem.
-- cloud security
-- create a new log forwarding profile.
-- query aggregated license monitoring data.
-- cloud security engineer
+- log forwarding profile management.
+- submit a bpa request for a device.
 - get log forwarding profile
-- bpa request status.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- monitoring
+- cloud security posture management, compliance monitoring, and workload protection.
+- query aggregated application monitoring data.
+- query threat data
+- bpa request operations.
+- browser security admin
+- conducts automated adversarial testing against ai systems and llm applications.
+- submit a bpa request.
+- compliance team
+- get application scores
+- list dem applications
+- list monitoring tenants.
+- manage enterprise browser policies, user sessions, and deployments.
+- list syslog destinations for a log forwarding profile.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- bpa report retrieval.
+- query aggregated bandwidth monitoring data with filters, time ranges, and grouping.
 - platform engineer
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- get application experience scores.
+- saas security admin
+- submit bpa request
+- designs sase and sd-wan network architectures for secure remote access.
+- identity and access management, tenant hierarchies, and subscription management.
+- query aggregated threat monitoring data with filters, time ranges, and grouping.
+- create a syslog destination for a log forwarding profile.
+- network architect
+- query aggregated url monitoring data with filters, time ranges, and grouping.
+- list monitored applications from autonomous dem.
+- get performance metrics
+- data protection analyst
+- create an email destination for a log forwarding profile.
+- cloud security
+- manages logging infrastructure, integrations, and platform automation.
+- logging
+- mssp operator
+- manages enterprise browser policies and secure browsing configurations.
+- get bpa report
+- threat hunter
+- executes containment, eradication, and recovery actions during security incidents.
+- data loss prevention, saas security monitoring, and identity security posture.
+- create syslog destination
+- query license data
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
 - enterprise browser policy management and secure browsing.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- compliance officer
+- enterprise it
+- performance metrics from autonomous dem.
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

@@ -15,53 +15,53 @@ personas: []
 provider_name: Moody's
 provider_slug: moodys
 search_terms:
-- list supported output file types
-- delete a basket
-- credit risk
-- entity verification
-- list vintages for a series
-- retrieve a single time series by mnemonic
-- get order
-- create a new data order
-- compliance
-- create order
-- get basket details
-- download completed order output
-- get multi series
-- list vintages
-- financial analytics
-- list frequencies
-- list orders
-- create basket
-- screening
-- get order status and details
-- download order
-- retrieve a time series
-- update a basket
-- create a new data basket
-- search for available series
-- moody's
-- get basket
-- get series
-- retrieve multiple time series
-- analytics
-- check data buffet api health
-- economic data
-- search series
-- time series data
-- delete basket
-- list file types
-- risk
-- list all orders
-- climate risk
-- list available data frequencies
 - insurance
-- forecasting
-- kyc
-- list baskets
-- check health
+- get order status and details
+- retrieve multiple time series
+- time series data
 - list all data baskets
+- create a new data basket
+- search series
 - update basket
+- list vintages
+- download completed order output
+- get series
+- analytics
+- list baskets
+- create order
+- entity verification
+- risk
+- search for available series
+- list frequencies
+- get basket
+- economic data
+- delete basket
+- climate risk
+- update a basket
+- delete a basket
+- check health
+- kyc
+- create basket
+- moody's
+- retrieve a time series
+- create a new data order
+- list all orders
+- get order
+- list vintages for a series
+- credit risk
+- check data buffet api health
+- compliance
+- screening
+- download order
+- list supported output file types
+- list file types
+- get multi series
+- get basket details
+- forecasting
+- retrieve a single time series by mnemonic
+- financial analytics
+- list available data frequencies
+- list orders
 slug: economic-data-analytics
 source_filename: economic-data-analytics.yaml
 source_heading: Capability Spec

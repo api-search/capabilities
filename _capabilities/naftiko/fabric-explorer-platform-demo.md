@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
 - a capability bundle wired into naftikofabricexplorerpage + federation across fabrics, framed as -terminal-grade for api platform leadership.
-- governance
-- mcp
-- capabilities
 - ai
+- mcp
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- governance
 slug: fabric-explorer-platform-demo
 source_filename: fabric-explorer-platform-demo.yaml
 source_heading: Capability Spec

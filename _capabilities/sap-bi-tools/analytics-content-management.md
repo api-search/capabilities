@@ -35,39 +35,39 @@ personas: []
 provider_name: SAP BI Tools
 provider_slug: sap-bi-tools
 search_terms:
-- list calendar events and planning tasks.
-- import a content package from the content network into the local tenant.
-- sap
-- list all analytics stories on the sap analytics cloud tenant.
-- get details of a specific analytics story by id.
-- list resources
-- get story
-- publish content item
-- single content network item.
-- list file repository resources (stories, models, folders).
-- import content item
-- list calendars
-- list repository resources (stories, models, folders).
-- get a content item by id.
-- planning calendars.
-- list planning calendar events and collaborative tasks.
-- list all analytics stories on the tenant.
-- analytics
-- list stories
-- get content item
-- list content network items.
-- list content items in the sap analytics cloud content network.
-- file repository resources.
-- reporting
-- content management
-- data visualization
-- analytics story management.
-- single analytics story.
-- business intelligence
 - get a story by id.
-- list content items
-- content network items.
+- list content items in the sap analytics cloud content network.
+- single analytics story.
+- list stories
+- planning calendars.
+- import content item
+- analytics
+- list repository resources (stories, models, folders).
+- content management
+- get details of a specific analytics story by id.
+- list planning calendar events and collaborative tasks.
+- get a content item by id.
+- list all analytics stories on the sap analytics cloud tenant.
+- business intelligence
+- list resources
+- list content network items.
+- publish content item
+- sap
+- list calendars
+- import a content package from the content network into the local tenant.
+- analytics story management.
+- list calendar events and planning tasks.
+- reporting
+- list file repository resources (stories, models, folders).
+- single content network item.
 - publish a local analytics artifact to the content network for sharing.
+- content network items.
+- list content items
+- data visualization
+- get story
+- get content item
+- file repository resources.
+- list all analytics stories on the tenant.
 slug: analytics-content-management
 source_filename: analytics-content-management.yaml
 source_heading: Capability Spec

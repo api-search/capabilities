@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- naftiko
-- a capability over azure machine learning feature store endpoints that returns typed, shaped feature payloads for an ai/ml pipeline agent.
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- a capability over azure machine learning feature store endpoints that returns typed, shaped feature payloads for an ai/ml pipeline agent.
+- capabilities
+- example op
+- governance
 slug: azure-ml-feature-store-shaped-mcp
 source_filename: azure-ml-feature-store-shaped-mcp.yaml
 source_heading: Capability Spec

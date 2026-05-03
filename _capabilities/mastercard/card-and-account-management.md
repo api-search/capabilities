@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- card management
-- financial services
-- look up bin information
-- get account catalog
-- request updated card credentials for card-on-file
-- get card details
-- account management
-- request updated card credentials
-- create fulfillment order
-- credit cards
-- issuers
-- fraud detection
-- issue a new card
 - manage account
-- manage a payment account
-- create a physical card fulfillment order
-- payment account management
-- validate account details
-- manage payment account
-- retrieve account catalog data
-- validate account
-- payments
-- list bins
-- look up bin information for a card
-- submit pan event
-- mastercard
-- get payment account reference
-- manage a payment account lifecycle
-- open banking
-- issue a new mastercard card
-- get billing updates
+- credit cards
 - automatic billing updates
-- bin lookup
-- lookup bin
+- payment account management
+- get account catalog
+- list bins
 - digital identity
 - query payment account reference to link tokens to accounts
-- list available mastercard bins
-- submit pan-related event for account level management
-- card issuance and management
 - issue card
+- card issuance and management
+- list available mastercard bins
+- mastercard
+- get billing updates
+- manage payment account
+- financial services
+- open banking
+- submit pan event
+- create a physical card fulfillment order
+- payments
+- create fulfillment order
+- request updated card credentials for card-on-file
+- account management
+- request updated card credentials
+- get payment account reference
+- look up bin information
+- manage a payment account
+- retrieve account catalog data
+- submit pan-related event for account level management
+- issue a new mastercard card
+- bin lookup
+- issuers
+- lookup bin
+- issue a new card
+- card management
+- manage a payment account lifecycle
+- look up bin information for a card
+- fraud detection
+- validate account details
+- get card details
+- validate account
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

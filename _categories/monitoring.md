@@ -15,7 +15,7 @@ description: 'Capabilities for runtime visibility — metrics, logs, traces, ale
 
   '
 domain: operations
-implementation_count: 28
+implementation_count: 26
 implementations:
 - capability_name: ADT Home Security Management
   capability_slug: home-security-management
@@ -46,31 +46,6 @@ implementations:
   - Open Data
   - Monitoring
   tool_count: 3
-- capability_name: Allianz Cloud Platform Operations
-  capability_slug: cloud-platform-operations
-  capability_url: https://capabilities.apis.io/capabilities/allianz-future-cloud-platform/cloud-platform-operations/
-  consumed_api_count: 1
-  operation_count: 6
-  provider_name: Allianz Future Cloud Platform
-  provider_slug: allianz-future-cloud-platform
-  tags:
-  - Cloud Platform
-  - DevOps
-  - Platform Engineering
-  - Kubernetes
-  - Observability
-  tool_count: 8
-- capability_name: Amazon CloudWatch Observability and Monitoring
-  capability_slug: observability
-  capability_url: https://capabilities.apis.io/capabilities/amazon-cloudwatch/observability/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon CloudWatch
-  provider_slug: amazon-cloudwatch
-  tags:
-  - Amazon Web Services
-  - Amazon CloudWatch
-  tool_count: 0
 - capability_name: Amazon Health Dashboard Operations Monitoring
   capability_slug: amazon-health-dashboard-operations-monitoring
   capability_url: https://capabilities.apis.io/capabilities/amazon-health-dashboard/amazon-health-dashboard-operations-monitoring/
@@ -406,7 +381,7 @@ implementations:
   tool_count: 10
 layout: category
 name: Monitoring & Observability
-provider_count: 26
+provider_count: 24
 related:
 - incident-management
 - analytics

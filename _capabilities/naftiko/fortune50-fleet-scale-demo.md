@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- example op
 - example
-- api integration
-- a capability authored to deploy via naftikocapability crd + capabilityclass, paired with a backstage template, used to demonstrate "thousands of capabilities under one fleet."
-- naftiko
-- governance
 - mcp
-- capabilities
 - ai
+- naftiko
+- api integration
+- spec-driven integration
+- capabilities
+- example op
+- a capability authored to deploy via naftikocapability crd + capabilityclass, paired with a backstage template, used to demonstrate "thousands of capabilities under one fleet."
+- governance
 slug: fortune50-fleet-scale-demo
 source_filename: fortune50-fleet-scale-demo.yaml
 source_heading: Capability Spec

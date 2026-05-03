@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- get analytics
-- integration analytics.
-- create workflow
-- SaaS Product Manager
-- saas
-- Integration Developer
-- list workflows.
-- ipaas
-- browse and manage integrations.
-- create a new automation workflow connecting two or more integrated platforms.
-- list all connectors.
 - integration platform
-- list integrations
-- list connectors
-- list all integration workflows configured in the embedded marketplace.
-- list all integrations.
-- browse pre-built connectors.
-- manage workflows.
-- managing native integrations within saas products.
-- apifuse
-- embedded integrations
-- get analytics data.
+- get analytics
 - create a workflow.
-- developer implementing and automating embedded integration workflows.
+- get analytics data.
 - marketplace
-- list workflows
+- browse and manage integrations.
 - integrations
-- workflow automation
-- product manager building native integrations into a saas product.
-- browse all available embedded integrations, optionally filtered by category.
+- saas
 - retrieve integration usage analytics including total tasks, active integrations, and active users.
+- list all integration workflows configured in the embedded marketplace.
+- create workflow
+- list workflows
+- integration analytics.
+- list workflows.
 - list all pre-built connectors available for embedding into your saas product.
+- managing native integrations within saas products.
+- Integration Developer
+- apifuse
+- list integrations
+- browse pre-built connectors.
+- embedded integrations
+- product manager building native integrations into a saas product.
+- list all connectors.
+- developer implementing and automating embedded integration workflows.
+- ipaas
+- create a new automation workflow connecting two or more integrated platforms.
+- browse all available embedded integrations, optionally filtered by category.
+- list all integrations.
+- list connectors
+- workflow automation
+- manage workflows.
+- SaaS Product Manager
 slug: embedded-integration-management
 source_filename: embedded-integration-management.yaml
 source_heading: Capability Spec

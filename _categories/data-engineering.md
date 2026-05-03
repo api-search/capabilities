@@ -15,7 +15,7 @@ description: 'Capabilities for ingesting, transforming, and loading data — ETL
 
   '
 domain: data
-implementation_count: 18
+implementation_count: 17
 implementations:
 - capability_name: Adobe Experience Cloud Customer Data Platform
   capability_slug: customer-data-platform
@@ -61,20 +61,6 @@ implementations:
   - Data Engineering
   - Apache
   tool_count: 10
-- capability_name: Amazon AppFlow Data Integration
-  capability_slug: data-integration
-  capability_url: https://capabilities.apis.io/capabilities/amazon-appflow/data-integration/
-  consumed_api_count: 1
-  operation_count: 9
-  provider_name: Amazon AppFlow
-  provider_slug: amazon-appflow
-  tags:
-  - Amazon AppFlow
-  - Data Integration
-  - ETL
-  - SaaS
-  - Data Engineering
-  tool_count: 19
 - capability_name: Amazon Glue Data Integration
   capability_slug: amazon-glue-data-integration
   capability_url: https://capabilities.apis.io/capabilities/amazon-glue/amazon-glue-data-integration/
@@ -250,7 +236,7 @@ implementations:
   - Data Engineering
   - ETL
   - Data Pipelines
-  tool_count: 24
+  tool_count: 31
 - capability_name: Snowflake Data Management
   capability_slug: data-management
   capability_url: https://capabilities.apis.io/capabilities/snowflake/data-management/
@@ -262,10 +248,10 @@ implementations:
   - Snowflake
   - Data Management
   - Data Engineering
-  tool_count: 26
+  tool_count: 31
 layout: category
 name: Data Engineering
-provider_count: 17
+provider_count: 16
 related:
 - analytics
 - object-storage

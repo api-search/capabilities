@@ -41,43 +41,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- create a private vpc endpoint for an aws service or endpoint service
-- networking
-- private vpc connectivity workflow
-- reject vpc endpoint connection requests
-- endpoint services
-- Platform Engineer
-- list endpoints
-- list pending and active connections to endpoint services
-- consumes endpoint services and manages vpc endpoints for internal services
-- endpoint connection management
-- manages vpc endpoint services and private connectivity architecture
-- list vpc endpoints in the account
-- list endpoint services
-- reject endpoint connections
-- create a vpc endpoint service
-- aws
-- accept endpoint connections
-- security
-- vpc endpoint consumer management
-- list vpc endpoints
 - accept connections
-- zero trust
-- create a vpc endpoint
-- vpc endpoint service provider management
-- Network Engineer
-- create vpc endpoint
-- create endpoint service
-- list endpoint connections
-- list vpc endpoint services
-- amazon
+- Platform Engineer
+- security
+- list endpoint services
 - accept pending vpc endpoint connection requests
-- vpc
 - list connections
-- list available vpc endpoint services for private connectivity
-- private connectivity
+- consumes endpoint services and manages vpc endpoints for internal services
+- create a vpc endpoint
 - create a vpc endpoint service backed by a load balancer
+- create endpoint service
+- endpoint services
+- zero trust
+- create a private vpc endpoint for an aws service or endpoint service
+- reject endpoint connections
+- aws
+- list vpc endpoints in the account
+- accept endpoint connections
+- reject vpc endpoint connection requests
+- vpc
+- amazon
+- list vpc endpoint services
+- networking
+- Network Engineer
+- private vpc connectivity workflow
+- list endpoint connections
+- list available vpc endpoint services for private connectivity
+- manages vpc endpoint services and private connectivity architecture
+- create vpc endpoint
+- list endpoints
+- list vpc endpoints
+- list pending and active connections to endpoint services
 - create endpoint
+- vpc endpoint service provider management
+- endpoint connection management
+- vpc endpoint consumer management
+- create a vpc endpoint service
+- private connectivity
 slug: private-connectivity
 source_filename: private-connectivity.yaml
 source_heading: Capability Spec

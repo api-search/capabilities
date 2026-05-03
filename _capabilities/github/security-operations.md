@@ -59,75 +59,75 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- dependabot
-- listCodeScanningAnalysesForRepository
-- update a secret scanning alert (resolve, reopen)
-- vulnerability management
-- check vulnerability alerts
-- source control
-- github
-- updateCodeScanningAlert
-- individual secret scanning alert
-- list dependabot secrets
-- get a secret scanning alert
-- get code scanning default setup configuration
-- get code scanning analysis
-- update code scanning default setup
-- listDependabotAlertsForRepository
-- list secret scanning alerts
-- secret scanning
-- code scanning analyses
-- getDependabotAlert
-- check vulnerability alert status
-- check if vulnerability alerts are enabled
-- code scanning alert management
-- platform
-- list code scanning analyses
-- update dependabot alert
-- code scanning
-- update code scanning alert
-- security
-- updateSecretScanningAlert
-- code
-- getSecretScanningAlert
-- enableVulnerabilityAlerts
-- getCodeScanningAlert
-- listCodeScanningAlertsForRepository
-- individual code scanning alert
-- individual dependabot alert
-- listSecretScanningAlertsForRepository
-- update a secret scanning alert
-- list code scanning alerts
-- get dependabot alert
-- checkIfVulnerabilityAlertsAreEnabledForRepository
-- get default setup
-- update default setup
 - update a dependabot alert (dismiss, reopen)
-- update a dependabot alert
-- vulnerability alert settings
-- upload sarif analysis data
-- update secret scanning alert
-- update a code scanning alert
-- update a code scanning alert (dismiss, reopen)
-- list locations for a secret scanning alert
-- t1
-- get a dependabot alert
-- list code scanning alerts for a repository
-- get a code scanning analysis
-- get secret scanning alert
-- get a code scanning alert
-- list dependabot alerts
+- getCodeScanningAlert
 - updateDependabotAlert
+- upload sarif analysis data
+- github
+- list dependabot alerts
+- update a secret scanning alert (resolve, reopen)
+- code
+- t1
+- security
+- get code scanning analysis
 - pipelines
-- list analyses
-- secret scanning alert management
-- enable vulnerability alerts
-- software development
-- list secret scanning locations
+- update code scanning alert
 - upload sarif
+- list code scanning alerts
+- check vulnerability alert status
+- get secret scanning alert
+- listCodeScanningAlertsForRepository
+- check vulnerability alerts
+- dependabot
+- update a code scanning alert
+- update a dependabot alert
+- listCodeScanningAnalysesForRepository
+- listSecretScanningAlertsForRepository
+- list code scanning analyses
+- software development
+- individual secret scanning alert
+- update a code scanning alert (dismiss, reopen)
+- individual dependabot alert
+- get code scanning default setup configuration
+- getDependabotAlert
+- enableVulnerabilityAlerts
+- enable vulnerability alerts
+- get a secret scanning alert
+- secret scanning alert management
+- updateSecretScanningAlert
+- get default setup
 - disable vulnerability alerts
-- dependabot alert management
+- get a code scanning analysis
+- secret scanning
+- update code scanning default setup
+- list secret scanning alerts
+- update a secret scanning alert
+- update secret scanning alert
+- list code scanning alerts for a repository
+- updateCodeScanningAlert
+- list locations for a secret scanning alert
+- get a dependabot alert
+- get a code scanning alert
+- check if vulnerability alerts are enabled
+- update default setup
+- list dependabot secrets
+- listDependabotAlertsForRepository
+- code scanning alert management
+- individual code scanning alert
+- platform
+- vulnerability management
+- code scanning
+- vulnerability alert settings
+- checkIfVulnerabilityAlertsAreEnabledForRepository
+- get dependabot alert
+- list secret scanning locations
 - get code scanning alert
+- code scanning analyses
+- dependabot alert management
+- update dependabot alert
+- source control
+- getSecretScanningAlert
+- list analyses
 slug: security-operations
 source_filename: security-operations.yaml
 source_heading: Capability Spec

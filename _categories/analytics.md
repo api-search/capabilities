@@ -14,7 +14,7 @@ description: 'Capabilities that ingest, transform, and query datasets to produce
 
   '
 domain: data
-implementation_count: 32
+implementation_count: 30
 implementations:
 - capability_name: Adobe Analytics Data Collection
   capability_slug: data-collection
@@ -59,34 +59,6 @@ implementations:
   - Personalization
   - Journey Orchestration
   tool_count: 10
-- capability_name: SQL Analytics Workflow
-  capability_slug: sql-analytics
-  capability_url: https://capabilities.apis.io/capabilities/amazon-athena/sql-analytics/
-  consumed_api_count: 0
-  operation_count: 4
-  provider_name: Amazon Athena
-  provider_slug: amazon-athena
-  tags:
-  - Amazon Athena
-  - SQL
-  - Analytics
-  - Serverless
-  tool_count: 10
-- capability_name: Amazon Clean Rooms Secure Data Collaboration
-  capability_slug: secure-data-collaboration
-  capability_url: https://capabilities.apis.io/capabilities/amazon-clean-rooms/secure-data-collaboration/
-  consumed_api_count: 1
-  operation_count: 9
-  provider_name: Amazon Clean Rooms
-  provider_slug: amazon-clean-rooms
-  tags:
-  - Amazon Web Services
-  - Clean Rooms
-  - Data Collaboration
-  - Privacy
-  - Analytics
-  - Marketing
-  tool_count: 9
 - capability_name: Amazon Redshift Data Warehouse Analytics
   capability_slug: data-warehouse-analytics
   capability_url: https://capabilities.apis.io/capabilities/amazon-redshift/data-warehouse-analytics/
@@ -451,7 +423,7 @@ implementations:
   tool_count: 14
 layout: category
 name: Analytics
-provider_count: 31
+provider_count: 29
 related:
 - data-engineering
 - monitoring

@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- list channels
+- youtube
 - video
-- manage individual comments
-- manage channel information
-- update comment thread
 - subscribe
-- update an existing comment
-- update a comment thread
-- manage channel subscriptions
-- unsubscribe from a youtube channel
-- update comment
-- manage comment threads
-- subscribe to a channel
 - delete comment
-- list comments
-- community
+- list subscriptions
+- list youtube channels
+- manage channel information
+- subscribe to a youtube channel
 - create a new comment thread
+- manage channel subscriptions
+- subscribe to channel
 - unsubscribe from a channel
-- subscriptions
+- set moderation status on comments
+- videos
+- moderation
+- community
+- update channel settings
+- create comment
 - create comment thread
+- unsubscribe from channel
+- list channel subscriptions
+- list channels
+- update comment thread
+- list comments on a video or channel
+- set moderation status
 - unsubscribe
+- post a new comment
+- media
+- update comment
 - google
 - update a comment
-- comments
-- create comment
-- media
-- update channel settings
-- unsubscribe from channel
-- update channel
-- list channel subscriptions
-- moderation
-- videos
+- subscriptions
+- manage comment threads
 - delete a comment
-- post a new comment
+- comments
 - social
-- list subscriptions
-- subscribe to channel
-- list youtube channels
-- list comments on a video or channel
+- unsubscribe from a youtube channel
+- update a comment thread
+- update channel
+- update an existing comment
+- manage individual comments
+- subscribe to a channel
 - list comment threads
-- set moderation status on comments
-- subscribe to a youtube channel
-- youtube
-- set moderation status
 - streaming
+- list comments
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

@@ -85,73 +85,73 @@ personas: []
 provider_name: Retool
 provider_slug: retool
 search_terms:
-- create group
-- update an application's metadata.
-- update app
-- create a new user account in the retool organization.
-- list all users in the retool organization with pagination.
-- manage a specific user.
-- list all organizational folders for apps, resources, and workflows.
-- create folder
+- manage a specific application.
+- internal tools
+- retool
+- create a new permission group.
 - list apps
-- manage users in the retool organization.
-- delete an application permanently.
-- manage group membership.
-- delete app
-- update user profile or admin status.
-- add group member
-- low code
+- list all data source resources.
 - list folders
-- list resources
+- list all users with pagination support.
+- create a new user and add to the organization.
+- create user
+- list all data source resource connections in the organization.
+- manage group membership.
+- list all retool applications in the organization.
+- administration
+- delete user
+- create a new retool application.
+- create a new permission group for access control.
+- create a new folder.
+- no code
+- list all folders.
+- update user profile or admin status.
+- create app
+- list all permission groups in the organization.
+- get user
+- delete app
+- manage users in the retool organization.
+- create group
 - permanently remove a user.
 - list all groups in the organization.
+- add a user to a group.
+- list resources
+- permanently delete a retool application.
+- admin panel
+- dashboard
+- remove group member
+- get app
 - manage retool applications.
-- retrieve a user by uuid.
+- delete an application permanently.
+- update app
 - retrieve an application by id.
 - retrieve a specific user by their uuid.
-- permanently remove a user from the organization.
-- permanently delete a retool application.
-- create user
-- create a new permission group.
-- list all data source resource connections in the organization.
-- update a user's name, admin status, or disable their account.
-- add a user to a permission group.
-- remove a user from a group.
-- create a new folder.
-- create a new user and add to the organization.
-- get app
-- list all permission groups in the organization.
-- list all folders.
-- create a new organizational folder.
-- delete user
-- retrieve a specific retool application by id.
-- administration
-- remove a user from a permission group.
-- create app
-- list all retool applications in the organization.
-- create a new application.
+- add group member
+- list all users in the retool organization with pagination.
 - list users
-- manage permission groups.
-- list groups
-- add a user to a group.
-- remove a specific user from a group.
-- internal tools
-- remove group member
-- view data source connections.
-- create a new retool application.
-- list all applications.
-- manage a specific application.
-- get user
-- admin panel
 - user management
 - update user
-- retool
-- list all data source resources.
+- manage permission groups.
+- remove a user from a permission group.
+- update an application's metadata.
+- update a user's name, admin status, or disable their account.
+- list all applications.
+- retrieve a user by uuid.
+- view data source connections.
+- remove a user from a group.
+- create folder
+- add a user to a permission group.
+- remove a specific user from a group.
+- list groups
 - manage organizational folders.
-- dashboard
-- no code
-- create a new permission group for access control.
-- list all users with pagination support.
+- create a new application.
+- low code
+- list all organizational folders for apps, resources, and workflows.
+- permanently remove a user from the organization.
+- create a new organizational folder.
+- retrieve a specific retool application by id.
+- manage a specific user.
+- create a new user account in the retool organization.
 slug: org-administration
 source_filename: org-administration.yaml
 source_heading: Capability Spec

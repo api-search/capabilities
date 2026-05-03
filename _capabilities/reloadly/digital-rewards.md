@@ -51,61 +51,61 @@ personas: []
 provider_name: Reloadly
 provider_slug: reloadly
 search_terms:
-- place gift card order
-- mobile network operators for airtime
 - list gift card discounts
-- individual gift card order
-- airtime top-up transactions
-- gift card product catalog
-- get account balance
-- send airtime top-up reward
-- get order
-- list gift card products
-- order a digital gift card reward for a recipient
-- list gift card order transaction history
-- get details for a specific gift card product including denominations
-- rewards
-- list discount rates available on gift card products
-- loyalty
-- airtime top-up orders
-- auto detect operator
+- list gift card transactions
+- get gift card order and codes
+- list gift card discount rates
+- send topup
+- get gift card account balance
 - list airtime top-up transaction history
-- list mobile network operators
-- get gift card
-- send a mobile airtime top-up reward to a phone number
-- get gift card order
-- airtime
-- automatically identify the mobile operator for a phone number
 - gift cards
 - check the current account balance for gift card purchases
-- browse the gift card product catalog filtered by country and currency
-- browse mobile network operators for airtime top-ups by country
-- payments
-- digital rewards
-- get gift card product details
 - list operators
-- send topup
+- account balances
+- browse the gift card product catalog filtered by country and currency
 - list airtime transactions
 - retrieve gift card order details and redemption codes
-- mobile top-up
-- send airtime topup
-- list gift card discount rates
-- list available gift card products
+- get gift card product details
 - get gift card balance
-- account balances
-- get gift card order and codes
+- individual gift card order
+- rewards
+- all reward transactions
+- automatically identify the mobile operator for a phone number
+- get account balance
+- order a digital gift card reward for a recipient
+- get gift card order
+- incentives
+- list gift card products
+- send airtime topup
+- payments
 - place a gift card reward order
 - list gift cards
-- list gift card transactions
-- list discounts
 - gift card orders
+- get order
 - individual gift card product
-- incentives
+- send a mobile airtime top-up reward to a phone number
+- airtime
+- list gift card order transaction history
+- list available gift card products
 - get gift card product
+- digital rewards
+- list mobile network operators
+- airtime top-up orders
+- airtime top-up transactions
+- get details for a specific gift card product including denominations
+- auto detect operator
+- mobile network operators for airtime
 - available discount rates on gift cards
-- all reward transactions
 - reloadly
-- get gift card account balance
+- place gift card order
+- mobile top-up
+- gift card product catalog
+- send airtime top-up reward
+- get gift card
+- browse mobile network operators for airtime top-ups by country
+- list discounts
+- list discount rates available on gift card products
+- loyalty
 slug: digital-rewards
 source_filename: digital-rewards.yaml
 source_heading: Capability Spec
