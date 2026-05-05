@@ -10,37 +10,37 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- create a bankruptcy monitoring alert for a debtor or entity
-- Bankruptcy Attorney
-- file a proof of claim for a bankruptcy case
-- retrieve docket entries for a bankruptcy case
-- file proof of claim
-- list all active bankruptcy monitoring alerts
-- pacer
-- bankruptcywatch
-- list claims register for a bankruptcy case
-- create bankruptcy monitor
-- court data
-- lending
-- search for bankruptcy cases across all us bankruptcy court districts
-- Creditor
-- business or individual owed money by a bankruptcy filer
 - get case docket
-- compliance
+- lending
+- list claims register for a bankruptcy case
+- file a proof of claim for a bankruptcy case
 - list monitors
-- bankruptcy
-- creditor
-- list case claims
+- Bankruptcy Attorney
+- retrieve docket entries for a bankruptcy case
 - get bankruptcy case
-- legal
-- Loan Officer
 - attorney managing creditor representation in bankruptcy proceedings
-- search bankruptcy cases
-- us bankruptcy court cases and proceedings
-- automated alerts for bankruptcy filings
-- lender monitoring borrowers for bankruptcy filings
-- get detailed information about a specific bankruptcy case
+- create a bankruptcy monitoring alert for a debtor or entity
+- Creditor
+- creditor
+- pacer
 - bankruptcy case research, claims management, and automated monitoring
+- us bankruptcy court cases and proceedings
+- legal
+- bankruptcy
+- search bankruptcy cases
+- Loan Officer
+- create bankruptcy monitor
+- automated alerts for bankruptcy filings
+- court data
+- list case claims
+- search for bankruptcy cases across all us bankruptcy court districts
+- business or individual owed money by a bankruptcy filer
+- get detailed information about a specific bankruptcy case
+- lender monitoring borrowers for bankruptcy filings
+- compliance
+- list all active bankruptcy monitoring alerts
+- file proof of claim
+- bankruptcywatch
 slug: bankruptcy-monitoring
 source_filename: bankruptcy-monitoring.yaml
 source_heading: Capability Spec

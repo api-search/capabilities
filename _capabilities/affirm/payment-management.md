@@ -56,61 +56,61 @@ personas:
 provider_name: affirm
 provider_slug: affirm
 search_terms:
-- get details of a specific affirm payment dispute.
-- dispute management.
-- retrieve or update a checkout session.
-- handling of customer chargebacks and disputes.
-- store checkout
-- get promotional financing terms.
-- create an affirm bnpl checkout session for a customer purchase.
-- merchant engineer
-- affirm
-- refund a transaction.
-- authorize an affirm transaction using a checkout token.
-- refund a captured affirm transaction partially or fully.
-- void transaction
-- capture transaction
 - refund a captured transaction.
-- list all disputes.
-- capture a transaction.
-- void an authorized affirm transaction before capture.
-- get affirm promotional financing terms and messaging for a purchase amount.
-- merchant operations team member managing transaction reconciliation and dispute resolution.
-- submit dispute evidence
-- buy now pay later
-- list transactions
-- read a checkout session.
 - submit evidence to contest an affirm payment dispute.
-- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
-- capture an authorized transaction.
-- payments
 - capture an authorized affirm transaction to collect funds.
-- refund transaction
-- list disputes
-- payment transaction management.
-- get promo
+- specific dispute operations.
+- affirm
+- capture an authorized transaction.
+- checkout
 - promotional messaging.
-- transactions
-- get promo messaging
-- authorize transaction
+- buy now pay later
+- payment transaction management.
 - get dispute details.
-- authorize a transaction.
-- payment ops
-- checkout session management.
+- read checkout
+- list all disputes.
+- get promo messaging
+- merchant operations team member managing transaction reconciliation and dispute resolution.
+- create an affirm bnpl checkout session for a customer purchase.
 - read an affirm checkout session by token.
-- list all transactions.
-- disputes
-- displaying financing terms and promotional messaging to customers.
-- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
+- list disputes
 - get dispute
 - list all affirm payment disputes for a merchant.
-- create an affirm checkout session.
+- void an authorized affirm transaction before capture.
+- get promo
+- disputes
+- checkout session management.
+- authorize a transaction.
+- full bnpl payment lifecycle from checkout through capture, refund, and dispute management.
+- get affirm promotional financing terms and messaging for a purchase amount.
+- refund transaction
+- payments
+- read a checkout session.
+- backend developer integrating affirm bnpl into a merchant's e-commerce checkout.
+- capture a transaction.
+- refund a captured affirm transaction partially or fully.
 - list all affirm payment transactions for reconciliation.
+- void transaction
+- retrieve or update a checkout session.
+- list transactions
+- merchant engineer
+- create an affirm checkout session.
+- authorize an affirm transaction using a checkout token.
+- list all transactions.
+- refund a transaction.
+- get details of a specific affirm payment dispute.
+- get promotional financing terms.
+- transactions
+- store checkout
 - initiation and management of customer financing sessions.
-- specific dispute operations.
+- handling of customer chargebacks and disputes.
+- displaying financing terms and promotional messaging to customers.
+- authorize transaction
+- dispute management.
+- submit dispute evidence
+- capture transaction
+- payment ops
 - authorization, capture, void, and refund of payment transactions.
-- checkout
-- read checkout
 slug: payment-management
 source_filename: payment-management.yaml
 source_heading: Capability Spec

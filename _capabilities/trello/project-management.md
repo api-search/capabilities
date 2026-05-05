@@ -101,72 +101,72 @@ personas: []
 provider_name: trello
 provider_slug: trello
 search_terms:
-- trello webhooks
-- project board detail
-- create a webhook to receive real-time notifications when trello resources change.
-- task cards
-- get list
-- update board settings
-- get cards in list
-- get all trello boards accessible to a specific member.
-- create board
-- get a trello board by id including metadata and settings.
-- get board cards
-- create a new trello board for a project or team workflow.
-- cards in a list
-- get board
-- search trello
-- create webhook
-- get webhook
-- lists on a board
-- get board lists
-- search all trello resources
-- get a specific trello card including description, labels, due date, and members.
-- get member boards
-- project management
-- atlassian
-- get card
-- search
-- update a trello card to change name, description, due date, or move to another list.
-- get all cards on a board to review the full task backlog or sprint.
-- create a new project board
-- create list
-- kanban
-- collaboration
-- get board details
-- board team members
-- task management
-- delete a board
-- delete card
 - create a list
-- update card
-- get all lists on a board (workflow columns like to do, in progress, done).
-- webhook detail
-- get board members
-- get list cards
-- cards
-- trello boards for project organization
-- get all cards on a board
-- workflow lists (columns)
-- get all cards in a specific trello list (workflow column).
-- delete webhook
-- create card
-- create a task card
-- task card detail
-- permanently delete a trello card.
+- get board cards
+- update board settings
 - boards
-- list detail
-- team member
-- get member
-- member's boards
-- create a new workflow column (list) on a trello board.
-- search across trello for boards, cards, or members matching a query.
-- create a new task card on a trello list with name, description, and due date.
+- create a task card
+- trello webhooks
 - get all team members with access to a board.
-- all cards on a board
+- delete card
+- search all trello resources
+- get board details
+- search trello
+- get webhook
+- get card
+- task card detail
+- task cards
+- update a trello card to change name, description, due date, or move to another list.
+- create a new trello board for a project or team workflow.
+- lists on a board
+- task management
+- get a specific trello card including description, labels, due date, and members.
+- create card
+- get all cards in a specific trello list (workflow column).
+- search across trello for boards, cards, or members matching a query.
 - delete board
+- board team members
+- cards in a list
+- get cards in list
+- create webhook
+- get all cards on a board to review the full task backlog or sprint.
+- delete webhook
+- get list cards
+- create a new task card on a trello list with name, description, and due date.
+- get list
+- atlassian
+- member's boards
+- get a trello board by id including metadata and settings.
+- list detail
+- permanently delete a trello card.
+- workflow lists (columns)
+- get all cards on a board
+- get all trello boards accessible to a specific member.
+- create a new project board
+- create board
+- get board members
+- trello boards for project organization
+- team member
+- all cards on a board
+- cards
+- create a new workflow column (list) on a trello board.
+- project board detail
+- search
 - update list
+- get board lists
+- webhook detail
+- get all lists on a board (workflow columns like to do, in progress, done).
+- project management
 - update board
+- get board
+- get member boards
+- create a webhook to receive real-time notifications when trello resources change.
+- update card
+- kanban
+- create list
+- get member
+- delete a board
+- collaboration
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

@@ -73,80 +73,80 @@ personas: []
 provider_name: Smartcar
 provider_slug: smartcar
 search_terms:
-- mobility
-- get current battery percentage and estimated range
-- check if the ev is plugged in and its current charging state
-- stop ev charging session
-- automotive
-- vehicle attributes and metadata
-- get make, model, year, and vin for a connected vehicle
-- lock or unlock vehicle doors remotely
-- set navigation destination
-- get battery level
-- connected vehicles
-- list connections
-- list vehicle connections
-- get the current odometer reading in kilometers
-- get current gps coordinates of the vehicle
-- set charge limit
-- control charge
-- get charge limit
-- get odometer
-- get fuel tank
-- get active obd-ii diagnostic trouble codes
-- start charging
 - get fuel tank level, liters remaining, and estimated driving range
-- send a gps navigation destination to the vehicle's nav system
-- check current lock status of all vehicle doors and windows
-- get vehicle location
-- set destination
-- unlock vehicle
-- ice vehicle fuel status
-- read the vehicle's current odometer value in kilometers
-- get lock status
-- get the current maximum battery charge limit setting
-- vehicle odometer reading
-- vehicle navigation
-- get the current maximum charge limit
-- get current lock status of doors, windows, and storage
-- get current gps latitude and longitude of the vehicle
-- get vehicle
-- get diagnostic codes
-- get fuel level
-- get current charging state and plug-in status
-- read active obd-ii diagnostic trouble codes for vehicle health assessment
-- set the maximum battery charge percentage limit (0.5 to 1.0)
-- vehicle diagnostics
-- remotely unlock the vehicle's doors
-- start or stop ev charging
-- get remaining engine oil life percentage to assess maintenance needs
-- remotely lock the vehicle's doors
-- lock vehicle
-- stop charging
-- set maximum battery charge level
-- ev charge limit management
-- list all connected vehicles authorized via smartcar
-- ev battery status and range
-- get fuel level, amount remaining, and estimated range
+- vehicle attributes and metadata
 - vehicle lock/unlock status and control
-- get charge status
-- ev management
-- get location
-- get vehicle info
-- telematics
-- get vehicle make, model, year, and vin
-- smartcar
-- vehicle gps location
 - start ev charging session
-- fleet management
-- get current battery charge percentage and estimated range for an ev
-- get engine oil life
-- iot
-- list all authorized vehicle connections
-- set a navigation destination in the vehicle
-- control security
-- manage vehicle connections and authorizations
+- vehicle diagnostics
+- list connections
+- ev charge limit management
+- list vehicle connections
+- get the current maximum battery charge limit setting
+- get current lock status of doors, windows, and storage
+- check current lock status of all vehicle doors and windows
+- stop charging
 - ev charging status and control
+- set charge limit
+- get current gps latitude and longitude of the vehicle
+- unlock vehicle
+- get current battery percentage and estimated range
+- get location
+- telematics
+- vehicle gps location
+- get fuel level
+- set a navigation destination in the vehicle
+- lock vehicle
+- send a gps navigation destination to the vehicle's nav system
+- get fuel tank
+- control security
+- list all connected vehicles authorized via smartcar
+- read active obd-ii diagnostic trouble codes for vehicle health assessment
+- mobility
+- get active obd-ii diagnostic trouble codes
+- get current battery charge percentage and estimated range for an ev
+- get diagnostic codes
+- read the vehicle's current odometer value in kilometers
+- ev management
+- get vehicle location
+- get engine oil life
+- get remaining engine oil life percentage to assess maintenance needs
+- ev battery status and range
+- ice vehicle fuel status
+- start or stop ev charging
+- set maximum battery charge level
+- get odometer
+- get vehicle
+- set the maximum battery charge percentage limit (0.5 to 1.0)
+- check if the ev is plugged in and its current charging state
+- automotive
+- get the current maximum charge limit
+- get the current odometer reading in kilometers
+- manage vehicle connections and authorizations
+- vehicle odometer reading
+- get lock status
+- start charging
+- get current gps coordinates of the vehicle
+- control charge
+- set navigation destination
+- remotely unlock the vehicle's doors
+- get battery level
+- lock or unlock vehicle doors remotely
+- remotely lock the vehicle's doors
+- connected vehicles
+- iot
+- get charge status
+- list all authorized vehicle connections
+- get fuel level, amount remaining, and estimated range
+- smartcar
+- vehicle navigation
+- set destination
+- get charge limit
+- get make, model, year, and vin for a connected vehicle
+- get vehicle info
+- stop ev charging session
+- get current charging state and plug-in status
+- get vehicle make, model, year, and vin
+- fleet management
 slug: connected-vehicle-management
 source_filename: connected-vehicle-management.yaml
 source_heading: Capability Spec

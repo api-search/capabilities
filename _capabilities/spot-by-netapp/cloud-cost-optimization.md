@@ -62,80 +62,80 @@ personas: []
 provider_name: Spot by NetApp
 provider_slug: spot-by-netapp
 search_terms:
-- cost management
-- spot elastigroup intelligent auto-scaling groups
-- finops
-- list elastigroups
-- cost optimization
-- list all spot accounts associated with the organization.
-- get current instance status and health for an aws elastigroup.
-- get ocean costs
-- scale down an aws elastigroup by removing a specified number of instances.
-- get container rightsizing recommendations
-- get ocean cluster costs
-- delete an aws elastigroup and terminate associated instances.
-- create a new aws elastigroup with spot instance optimization for a workload.
-- list all ocean kubernetes clusters on aws for container cost optimization.
-- update an aws elastigroup's configuration including capacity, instance types, or strategy.
-- spot account management
-- create ocean cluster aws
-- azure
 - auto scaling
-- get ocean cluster
-- account activity audit log
-- get elastigroup aws
-- delete elastigroup aws
-- ocean kubernetes clusters
-- get cost breakdown and savings for an ocean kubernetes cluster.
-- delete ocean cluster
-- get elastigroup
-- get ocean cluster details
-- kubernetes
-- list all ocean clusters on aws
-- overall cloud cost savings summary
-- get ocean cluster details including auto-scaler config and capacity.
-- get elastigroup details
-- aws
-- container rightsizing recommendations
-- get container rightsizing recommendations to eliminate over-provisioning and reduce costs.
-- list all aws elastigroups
-- gcp
-- cloud optimization
-- individual ocean cluster
-- list all aws elastigroup intelligent auto-scaling groups. each elastigroup uses spot instances to reduce compute costs 60-90%.
-- scale up elastigroup
-- get rightsizing suggestions
-- list elastigroups aws
-- list accounts
-- get elastigroup cost and savings
-- get ocean cluster cost breakdown and savings
-- get audit log events
-- list ocean clusters
-- scale down elastigroup
-- list ocean clusters aws
-- get elastigroup instance status
-- get elastigroup status
-- delete elastigroup
 - ocean cluster cost analysis
-- get cost analysis and savings data for an aws elastigroup over a time period.
-- get cloud cost savings summary
-- get ocean cluster aws
-- retrieve audit log events recording api and console activity for compliance and troubleshooting.
-- elastigroup cost analysis
-- scale up an aws elastigroup by adding a specified number of instances.
-- get audit log
-- create a new ocean cluster for kubernetes cost optimization on aws.
-- elastigroup instance status
+- list all aws elastigroup intelligent auto-scaling groups. each elastigroup uses spot instances to reduce compute costs 60-90%.
+- cost optimization
+- finops
+- aws
+- cloud optimization
+- ocean kubernetes clusters
+- get ocean cluster cost breakdown and savings
+- container rightsizing recommendations
+- account activity audit log
+- get ocean costs
+- overall cloud cost savings summary
+- get audit log events
 - get rightsizing
-- create elastigroup aws
-- get cost summary
-- list spot accounts
-- get details for a specific aws elastigroup including capacity, strategy, and instance type configuration.
-- spot instances
+- list accounts
+- scale up an aws elastigroup by adding a specified number of instances.
+- scale down elastigroup
+- list all ocean kubernetes clusters on aws for container cost optimization.
+- list elastigroups aws
+- get ocean cluster details including auto-scaler config and capacity.
+- scale up elastigroup
+- get cost analysis and savings data for an aws elastigroup over a time period.
 - individual elastigroup
+- get audit log
+- get container rightsizing recommendations to eliminate over-provisioning and reduce costs.
+- get ocean cluster
+- individual ocean cluster
+- spot account management
+- get container rightsizing recommendations
 - get elastigroup costs
-- get overall cloud cost savings summary showing actual vs. potential spend and total savings percentage from spot optimization.
+- get ocean cluster details
+- elastigroup instance status
+- get elastigroup instance status
+- get cloud cost savings summary
+- get elastigroup status
+- list all ocean clusters on aws
+- get elastigroup aws
 - update elastigroup aws
+- get overall cloud cost savings summary showing actual vs. potential spend and total savings percentage from spot optimization.
+- azure
+- list ocean clusters aws
+- get elastigroup details
+- get cost summary
+- create a new ocean cluster for kubernetes cost optimization on aws.
+- elastigroup cost analysis
+- spot elastigroup intelligent auto-scaling groups
+- delete elastigroup aws
+- get current instance status and health for an aws elastigroup.
+- get ocean cluster aws
+- create a new aws elastigroup with spot instance optimization for a workload.
+- get rightsizing suggestions
+- scale down an aws elastigroup by removing a specified number of instances.
+- update an aws elastigroup's configuration including capacity, instance types, or strategy.
+- get ocean cluster costs
+- get cost breakdown and savings for an ocean kubernetes cluster.
+- get details for a specific aws elastigroup including capacity, strategy, and instance type configuration.
+- list all spot accounts associated with the organization.
+- delete ocean cluster
+- delete an aws elastigroup and terminate associated instances.
+- create ocean cluster aws
+- retrieve audit log events recording api and console activity for compliance and troubleshooting.
+- list elastigroups
+- delete elastigroup
+- spot instances
+- get elastigroup cost and savings
+- list all aws elastigroups
+- list ocean clusters
+- get elastigroup
+- kubernetes
+- create elastigroup aws
+- gcp
+- cost management
+- list spot accounts
 slug: cloud-cost-optimization
 source_filename: cloud-cost-optimization.yaml
 source_heading: Capability Spec

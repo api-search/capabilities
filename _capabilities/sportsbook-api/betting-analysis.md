@@ -41,41 +41,41 @@ personas: []
 provider_name: Sportsbook API
 provider_slug: sportsbook-api
 search_terms:
-- positive expected value bets
-- gambling
-- list all sportsbooks
-- expected value
-- get arbitrage
-- get real-time betting odds from fanduel, draftkings, betmgm, and 7+ more sportsbooks. filter by sport (football/basketball/baseball/hockey/soccer) and league (nfl/nba/mlb/nhl/epl).
+- get real-time betting odds for a sport and league
+- sports betting
 - 'list all sportsbooks aggregated: fanduel, draftkings, betmgm, kalshi, thescore, fanatics, betrivers, polymarket, bovada, betonline.'
-- list supported sports
-- find middling opportunities where betting both sides of a game at different lines creates a scenario where both bets can win.
-- nfl
-- real-time odds from 10+ sportsbooks
-- sports data
-- supported sports and leagues
-- odds
 - get odds
-- list sports
-- aggregated sportsbooks
-- find guaranteed profit arbitrage opportunities across sportsbooks. returns events where betting both sides locks in a risk-free profit.
-- arbitrage
-- middling opportunities
-- mlb
 - find middling betting opportunities
+- middling opportunities
+- find guaranteed profit arbitrage opportunities across sportsbooks. returns events where betting both sides locks in a risk-free profit.
+- get middles
+- real-time odds from 10+ sportsbooks
+- list supported sports
+- 'list all sports covered: football (nfl, ncaaf, ufl, cfl), basketball (nba, wnba), baseball (mlb), hockey (nhl), and soccer (epl, mls, la liga).'
+- odds comparison
+- sports data
 - list bookmakers
 - find positive expected value bets by comparing sportsbook odds to no-vig fair odds consensus. returns bets with above-average long-term profitability.
-- nhl
-- get real-time betting odds for a sport and league
-- nba
-- odds comparison
-- 'list all sports covered: football (nfl, ncaaf, ufl, cfl), basketball (nba, wnba), baseball (mlb), hockey (nhl), and soccer (epl, mls, la liga).'
-- arbitrage opportunities across sportsbooks
-- get positive ev
+- get arbitrage
 - find bets with positive expected value
+- list sports
+- get real-time betting odds from fanduel, draftkings, betmgm, and 7+ more sportsbooks. filter by sport (football/basketball/baseball/hockey/soccer) and league (nfl/nba/mlb/nhl/epl).
 - find guaranteed profit arbitrage opportunities
-- sports betting
-- get middles
+- expected value
+- mlb
+- gambling
+- positive expected value bets
+- nfl
+- nhl
+- get positive ev
+- supported sports and leagues
+- odds
+- find middling opportunities where betting both sides of a game at different lines creates a scenario where both bets can win.
+- list all sportsbooks
+- arbitrage
+- arbitrage opportunities across sportsbooks
+- nba
+- aggregated sportsbooks
 slug: betting-analysis
 source_filename: betting-analysis.yaml
 source_heading: Capability Spec

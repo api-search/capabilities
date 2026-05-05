@@ -57,52 +57,52 @@ personas: []
 provider_name: United Airlines
 provider_slug: united-airlines
 search_terms:
-- get real-time departure, arrival, and gate status for a united flight
-- get united airlines schedules for a specific route and date range
-- get real-time status for a flight
-- exchange flights on an existing booking
-- create booking
-- add ancillary services to booking
-- list bookings
-- get flight status
-- change flights on an existing booking
-- search flight offers
-- retrieve details of a specific united airlines booking
-- list all bookings
-- airlines
-- shopping
-- get detailed pricing for a specific offer
-- real-time flight status
-- individual booking operations
-- search flights
-- flight exchange operations
-- cancel booking
-- add seat, bag, or upgrade to a booking
-- flight offer search and pricing
-- create a new flight booking
-- flight schedule information
-- ndc
-- get booking details
-- get flight schedules
-- fortune 100
-- book united airlines flights for one or more passengers
-- get flight schedules for a route
-- cancel a united airlines flight booking
-- cancel a booking
-- get booking
-- add seat selection, checked bag, or upgrade to a booking
-- corporate travel
-- exchange booking
-- list existing flight bookings with optional status and date filters
-- search for available united airlines flights with pricing, bundles, and cabin options
-- search for available united airlines flights with continuous pricing
-- flight booking
-- booking creation and management
-- get detailed pricing and availability for a specific flight offer
-- travel
 - add ancillary
+- add seat, bag, or upgrade to a booking
+- flight schedule information
+- search flights
+- individual booking operations
+- book united airlines flights for one or more passengers
+- cancel a booking
+- ndc
 - get flight offer
+- fortune 100
+- get real-time departure, arrival, and gate status for a united flight
+- travel
+- real-time flight status
+- exchange flights on an existing booking
+- create a new flight booking
+- cancel a united airlines flight booking
+- list bookings
+- list existing flight bookings with optional status and date filters
+- get real-time status for a flight
+- get flight status
+- exchange booking
+- retrieve details of a specific united airlines booking
+- get detailed pricing and availability for a specific flight offer
+- create booking
 - loyalty
+- add seat selection, checked bag, or upgrade to a booking
+- get booking details
+- search for available united airlines flights with pricing, bundles, and cabin options
+- corporate travel
+- search flight offers
+- shopping
+- get united airlines schedules for a specific route and date range
+- get detailed pricing for a specific offer
+- change flights on an existing booking
+- list all bookings
+- search for available united airlines flights with continuous pricing
+- get flight schedules
+- flight offer search and pricing
+- booking creation and management
+- flight exchange operations
+- flight booking
+- add ancillary services to booking
+- cancel booking
+- airlines
+- get booking
+- get flight schedules for a route
 slug: flight-booking
 source_filename: flight-booking.yaml
 source_heading: Capability Spec

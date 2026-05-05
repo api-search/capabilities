@@ -54,56 +54,56 @@ personas: []
 provider_name: SSH
 provider_slug: ssh
 search_terms:
-- register a new ssh public key
-- list registered ssh public keys with optional user and type filtering
-- certificate authority
-- get ssh key details
-- security
-- register a new ssh public key in the system
-- access control
-- get authorized keys
-- list keys
-- list known ssh hosts and their verified public keys
-- known hosts management
-- remote access
-- list issued ssh certificates
-- add a key to user authorized_keys
-- sign a public key to create a certificate
 - ssh certificate management
+- individual key management
+- list keys
+- remote access
+- known hosts management
+- security
+- get ssh key details including fingerprint and last use
+- register a new ssh public key in the system
+- register a new ssh public key
+- delete key
+- delete a registered ssh key
+- delete an ssh key
+- list registered ssh public keys
+- get authorized keys
+- add a host to known_hosts
+- get authorized keys for a user
 - sign certificate
 - cryptography
-- get key
-- add key
-- ssh
-- network security
-- generate key pair
-- key management
-- get ssh key details including fingerprint and last use
-- delete a registered ssh key
-- add an ssh public key to a user's authorized_keys
-- ssh key registration
-- add a host to known_hosts
-- secure shell
-- list known ssh hosts
-- sign an ssh public key with the ca to create a short-lived certificate
-- individual key management
-- generate a new ssh key pair
-- delete an ssh key
-- list certificates
-- add authorized key
-- generate a new ssh key pair (ed25519 recommended)
 - get all authorized ssh keys for a user
-- system administration
-- delete key
-- user authorized keys
+- add an ssh public key to a user's authorized_keys
+- secure shell
+- add a key to user authorized_keys
+- list certificates
+- sign an ssh public key with the ca to create a short-lived certificate
+- access control
+- list registered ssh public keys with optional user and type filtering
+- add a host and its public key to the known_hosts database
+- ssh
+- generate a new ssh key pair
+- certificate authority
+- network security
 - add known host
 - infrastructure
 - list issued ssh certificates with principals and validity periods
-- list registered ssh public keys
-- get authorized keys for a user
-- key pair generation
-- add a host and its public key to the known_hosts database
+- system administration
+- key management
+- list known ssh hosts and their verified public keys
+- user authorized keys
 - list known hosts
+- add authorized key
+- get ssh key details
+- key pair generation
+- get key
+- sign a public key to create a certificate
+- ssh key registration
+- list known ssh hosts
+- add key
+- generate a new ssh key pair (ed25519 recommended)
+- list issued ssh certificates
+- generate key pair
 slug: key-management
 source_filename: key-management.yaml
 source_heading: Capability Spec

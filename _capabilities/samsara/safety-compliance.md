@@ -33,37 +33,37 @@ personas: []
 provider_name: Samsara
 provider_slug: samsara
 search_terms:
-- inspection
-- driver vehicle inspection reports (dvir)
-- dvir
-- list safety events
-- list dvirs
-- list hours of service eld logs for regulatory compliance reporting
-- asset tracking
-- connected operations
+- hours of service
+- submit a dvir inspection report
 - driver safety event monitoring and scoring
-- list hos logs for eld compliance
-- list driver safety events including harsh braking, speeding, and camera events for a time range
-- submit a driver vehicle inspection report (dvir) with defects
-- hours of service eld compliance logs
-- list all dvir vehicle inspection reports
-- compliance
+- connected operations
+- list hours of service eld logs for regulatory compliance reporting
 - maintenance
 - list safety events for a time range
-- samsara
-- submit a dvir inspection report
-- transportation
-- create dvir
-- list all dvir inspection reports
+- dvir
 - telematics
+- list all dvir vehicle inspection reports
+- list all dvir inspection reports
+- list hos logs for eld compliance
+- samsara
+- eld
+- inspection
+- transportation
+- list dvirs
+- asset tracking
+- logistics
+- hours of service eld compliance logs
+- driver vehicle inspection reports (dvir)
 - safety
 - list hos logs
-- logistics
+- submit a driver vehicle inspection report (dvir) with defects
+- list driver safety events including harsh braking, speeding, and camera events for a time range
+- create dvir
+- compliance
+- iot
+- list safety events
 - gps tracking
 - fleet management
-- hours of service
-- iot
-- eld
 slug: safety-compliance
 source_filename: safety-compliance.yaml
 source_heading: Capability Spec

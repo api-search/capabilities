@@ -9,8 +9,8 @@ personas: []
 provider_name: Amazon Verified Permissions
 provider_slug: amazon-verified-permissions
 search_terms:
-- permissions
 - authorization
+- permissions
 - security
 slug: amazon-verified-permissions-capability
 source_filename: amazon-verified-permissions-capability.yaml

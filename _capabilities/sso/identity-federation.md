@@ -26,36 +26,36 @@ personas: []
 provider_name: SSO
 provider_slug: sso
 search_terms:
-- single sign-on
-- openid provider configuration discovery
-- saml
 - security
-- exchange token
-- get provider signing keys
-- json web key set for signature verification
-- get openid provider configuration metadata
-- get authenticated user profile
-- get user info
-- authentication
-- exchange an oidc/oauth 2.0 authorization code for access token, id token, and refresh token
-- get discovery
-- exchange an authorization code or refresh token for access and id tokens
-- identity federation
-- discover oidc provider configuration
-- oauth
-- get the authenticated user's identity claims from the userinfo endpoint
+- get jwks
 - exchange authorization code
-- retrieve openid provider configuration metadata including endpoints, supported features, and algorithms
-- identity
-- sso
-- authorization
-- get public keys for verifying id token signatures
+- get user info
 - retrieve the openid provider's json web key set (jwks) for verifying id token signatures
 - token exchange and refresh
-- oidc
+- single sign-on
+- identity federation
+- oauth
+- json web key set for signature verification
+- get authenticated user profile
+- discover oidc provider configuration
+- exchange an oidc/oauth 2.0 authorization code for access token, id token, and refresh token
+- get provider signing keys
 - authenticated user profile claims
+- oidc
+- get the authenticated user's identity claims from the userinfo endpoint
+- get discovery
+- get public keys for verifying id token signatures
+- retrieve openid provider configuration metadata including endpoints, supported features, and algorithms
+- sso
+- saml
 - retrieve the authenticated user's identity claims (name, email, sub, etc.) from the oidc userinfo endpoint
-- get jwks
+- authentication
+- authorization
+- exchange token
+- get openid provider configuration metadata
+- identity
+- exchange an authorization code or refresh token for access and id tokens
+- openid provider configuration discovery
 slug: identity-federation
 source_filename: identity-federation.yaml
 source_heading: Capability Spec

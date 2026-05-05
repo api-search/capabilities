@@ -69,70 +69,70 @@ personas: []
 provider_name: Shovels
 provider_slug: shovels
 search_terms:
-- sales intelligence
-- search and retrieve qualified contractor profiles
-- get employee contact list for a contractor
-- search for cities to get geo_id values
-- search for us states to resolve geo_id values.
-- search permits
-- search addresses
-- all permits associated with a contractor
-- property data
-- get tags
-- get the list of employees and decision makers at a contractor company, including names, titles, phone numbers, and email addresses for sales outreach.
-- search contractors by geography, specialty, and quality metrics
-- search for city names to resolve geo_id values for use in permit and contractor searches.
-- get address metrics
-- get resident contact information for an address
-- get a specific permit by id
-- get contractor
-- search contractors
-- get details for a specific building permit by id.
-- market analytics
-- full contractor profile with metrics
-- get all available permit classification tags (solar, roofing, hvac, electrical, plumbing, adu, etc.) for use as filter values in permit and contractor searches.
-- get permit tags
-- contractors
-- address search and lookup
-- retrieve the complete permit history for a contractor, showing all projects undertaken, job values, locations, and permit statuses.
-- get contractor permits
-- residents at a permit address
-- available permit classification tags
-- get resident contact information for a specific address, useful for homeowner outreach related to nearby permit activity.
-- search for us property addresses that have at least one associated permit. returns address records with geo_id values needed for metric queries.
-- get current permit activity metrics for a geographic area including permit count, active permits, average job value, and contractor count.
-- decision makers and employees at a contractor company
-- get detailed contractor profile by id
-- lead generation
-- search building permits by geography and date range. filter by permit type (tags), property type, status, and job value range to identify market opportunities and active construction activity.
-- performance metrics for a contractor
-- get detailed profile for a specific contractor by id, including business details, contact information, license, classification, and permit statistics.
-- retrieve permit history for a contractor
 - building permit search for market research
-- get contractor employees
-- individual permit details
-- get all available permit type tags for filtering
-- get address residents
-- market intelligence
-- search addresses that have associated permits
-- get permit
-- market activity metrics for a geography
-- search states
-- search for licensed contractors in a geographic area filtered by specialty, date range, and quality metrics like inspection pass rate. returns contractor profiles with contact information and permit statistics.
-- get contractor metrics
-- construction
-- search for us states to get geo_id values
-- search building permits by geography, type, and date range
-- get current permit activity metrics for a geographic area
-- get market metrics
-- city lookup for geo_id resolution
-- building permits
 - get permit performance metrics for a contractor
-- state lookup for geo_id resolution
+- city lookup for geo_id resolution
+- search states
+- get resident contact information for a specific address, useful for homeowner outreach related to nearby permit activity.
+- get address metrics
+- search building permits by geography, type, and date range
+- get detailed profile for a specific contractor by id, including business details, contact information, license, classification, and permit statistics.
+- construction
+- lead generation
+- get a specific permit by id
+- market activity metrics for a geography
+- search for cities to get geo_id values
+- get all available permit type tags for filtering
 - real estate
-- get residents
-- search cities
 - get performance metrics for a contractor including inspection pass rate, average job value, total job value, and active permit count.
+- get contractor permits
+- search for us property addresses that have at least one associated permit. returns address records with geo_id values needed for metric queries.
+- individual permit details
+- get address residents
+- get contractor employees
+- get current permit activity metrics for a geographic area including permit count, active permits, average job value, and contractor count.
+- get permit tags
+- get residents
+- search and retrieve qualified contractor profiles
+- full contractor profile with metrics
+- get details for a specific building permit by id.
+- contractors
+- decision makers and employees at a contractor company
+- get current permit activity metrics for a geographic area
+- retrieve the complete permit history for a contractor, showing all projects undertaken, job values, locations, and permit statuses.
+- get the list of employees and decision makers at a contractor company, including names, titles, phone numbers, and email addresses for sales outreach.
+- get employee contact list for a contractor
+- get detailed contractor profile by id
+- address search and lookup
+- available permit classification tags
+- get tags
+- search permits
+- residents at a permit address
+- search building permits by geography and date range. filter by permit type (tags), property type, status, and job value range to identify market opportunities and active construction activity.
+- get contractor metrics
+- search cities
+- search for us states to get geo_id values
+- get contractor
+- get market metrics
+- get resident contact information for an address
+- state lookup for geo_id resolution
+- retrieve permit history for a contractor
+- search contractors by geography, specialty, and quality metrics
+- get permit
+- search for city names to resolve geo_id values for use in permit and contractor searches.
+- search for us states to resolve geo_id values.
+- performance metrics for a contractor
+- search addresses
+- get all available permit classification tags (solar, roofing, hvac, electrical, plumbing, adu, etc.) for use as filter values in permit and contractor searches.
+- search contractors
+- all permits associated with a contractor
+- building permits
+- search addresses that have associated permits
+- property data
+- search for licensed contractors in a geographic area filtered by specialty, date range, and quality metrics like inspection pass rate. returns contractor profiles with contact information and permit statistics.
+- market intelligence
+- market analytics
+- sales intelligence
 slug: contractor-intelligence
 source_filename: contractor-intelligence.yaml
 source_heading: Capability Spec

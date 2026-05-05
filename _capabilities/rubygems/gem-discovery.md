@@ -35,41 +35,41 @@ personas: []
 provider_name: RubyGems
 provider_slug: rubygems
 search_terms:
-- list gems depending on a specific gem
-- get all gem versions released within a given timeframe (up to 7 days)
-- list all published versions of a ruby gem with metadata
-- open source
-- get gem
-- search for gems
-- get gem details
-- get detailed metadata for a specific ruby gem
-- package manager
-- rubygems
-- get timeframe versions
-- list the owners of a specific ruby gem
-- get detailed gem metadata
-- search rubygems.org for ruby gems by name or description
-- get gem owners
-- get reverse dependencies
-- get the latest published version number of a ruby gem
-- developer tools
-- get all gem versions
-- gems
-- list all published versions of a gem
-- get gem info
-- get the latest version of a gem
-- discovery
-- recently released gem versions
 - ruby
-- get gem versions released in a timeframe
-- get gems that depend on this gem
-- get latest gem version
-- get latest version
-- list gem versions
-- search gems
-- get recently released versions
+- get timeframe versions
+- get detailed metadata for a specific ruby gem
 - find which ruby gems depend on a given gem (downstream impact analysis)
+- list all published versions of a ruby gem with metadata
+- get all gem versions released within a given timeframe (up to 7 days)
+- search for gems
+- gems
+- rubygems
+- open source
+- discovery
+- get detailed gem metadata
+- list the owners of a specific ruby gem
+- recently released gem versions
+- list gems depending on a specific gem
+- get gem owners
+- package manager
+- get latest version
+- get the latest version of a gem
+- get gem
+- developer tools
+- list all published versions of a gem
+- get all gem versions
+- get gem info
+- search gems
+- get reverse dependencies
+- list gem versions
 - search rubygems.org for gems by name or description
+- get recently released versions
+- get gems that depend on this gem
+- get the latest published version number of a ruby gem
+- search rubygems.org for ruby gems by name or description
+- get gem versions released in a timeframe
+- get latest gem version
+- get gem details
 slug: gem-discovery
 source_filename: gem-discovery.yaml
 source_heading: Capability Spec

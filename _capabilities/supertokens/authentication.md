@@ -102,97 +102,97 @@ personas: []
 provider_name: SuperTokens
 provider_slug: supertokens
 search_terms:
-- reset password using token
-- delete user
-- create a new authenticated session for a user
-- remove sessions
-- reset password
-- signup
-- generate email verification token
+- delete a user permanently
+- email verification
+- list users
+- remove a role from a user
+- assign a role to a user for rbac
+- create or update a tenant
+- create passwordless otp or magic link
+- assign role
+- list all configured tenants in a multi-tenant deployment
+- create session
+- create email verification token
+- update user metadata
+- update custom metadata for a user (shallow merge)
+- get session
+- retrieve custom metadata stored for a user
+- create reset token
+- session lifecycle management
 - list all tenants
-- create or update tenant
-- create verification token
+- remove role
+- create passwordless code
+- reset password using token
+- multi-tenant configuration
+- identity
+- password reset flow
+- authenticate user by consuming a passwordless otp or magic link
+- sign in with email and password
 - verify an access token and get session data
 - create or configure a tenant in a multi-tenant setup
-- create session
-- consume code
-- revoke sessions by handle or user id
-- consume code to authenticate user
-- email/password sign-up
-- refresh a session using a refresh token
-- create passwordless otp or magic link
-- user role management
-- update custom metadata for a user (shallow merge)
-- update user metadata
-- revoke sessions for a user or specific session handles
+- permanently delete a user and all their data
+- verify and retrieve session data from an access token
+- get user roles
+- create a new authentication session
+- create a new user account with email and password
+- user metadata storage
+- oauth
+- third-party oauth authentication
+- generate password reset token
+- refresh session
+- create code
 - signin
+- list all users
+- authorization
+- verify a user's email address using their verification token
+- get user metadata
+- reset password
+- revoke sessions for a user or specific session handles
+- consume passwordless code
 - create new user with email and password
-- remove a role from a user
-- sign in with email and password
+- assign role to user
+- thirdparty signinup
+- check email verification status
+- create or update tenant
+- sign in or create user via oauth provider (google, github, apple, etc.)
+- session management
+- passwordless
+- check whether a user's email has been verified
+- supertokens
+- user role management
+- list tenants
+- is email verified
+- consume code to authenticate user
+- assign a role to a user
+- self-hosted
+- authentication
+- passwordless authentication
+- node.js
+- create verification token
+- list all users with pagination
+- open source
+- generate a passwordless otp or magic link for sign in
+- refresh a session using a refresh token
+- authenticate a user with email and password
+- get roles assigned to a user
+- email/password sign-in
+- get all roles assigned to a user
+- remove sessions
+- signup
+- verify email
+- delete user
+- generate email verification token
+- refresh an authentication session using a refresh token
+- revoke sessions by handle or user id
+- consume code
+- multi-tenancy
+- create a new authenticated session for a user
+- social login
+- verify email with token
 - generate an email verification token to send to the user
 - sign in or up via oauth provider
-- open source
-- create or update a tenant
-- verify email
-- authenticate a user with email and password
-- list tenants
-- email/password sign-in
-- assign a role to a user
-- authentication
-- social login
-- create reset token
-- verify a user's email address using their verification token
-- multi-tenant configuration
-- oauth
 - user management
-- verify email with token
-- authenticate user by consuming a passwordless otp or magic link
-- check email verification status
-- refresh an authentication session using a refresh token
-- third-party oauth authentication
-- passwordless
-- assign role to user
-- list all users with pagination
-- node.js
-- delete a user permanently
-- generate password reset token
-- user metadata storage
-- get session
-- thirdparty signinup
-- retrieve custom metadata stored for a user
-- create passwordless code
-- multi-tenancy
-- sign in or create user via oauth provider (google, github, apple, etc.)
-- session lifecycle management
-- identity
-- permanently delete a user and all their data
-- list all configured tenants in a multi-tenant deployment
-- get user roles
-- refresh session
-- get roles assigned to a user
-- list all users
-- remove role
-- create code
-- supertokens
-- create a new user account with email and password
-- self-hosted
-- consume passwordless code
-- assign role
-- password reset flow
-- generate a passwordless otp or magic link for sign in
-- is email verified
-- create email verification token
-- get user metadata
-- list users
-- assign a role to a user for rbac
-- authorization
-- passwordless authentication
-- check whether a user's email has been verified
-- verify and retrieve session data from an access token
-- session management
-- email verification
-- create a new authentication session
-- get all roles assigned to a user
+- email/password sign-up
 slug: authentication
 source_filename: authentication.yaml
 source_heading: Capability Spec

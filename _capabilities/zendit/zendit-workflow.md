@@ -90,73 +90,73 @@ personas: []
 provider_name: Zendit
 provider_slug: zendit
 search_terms:
-- api get esim plans
-- zendit get brand redemption instructions
-- zendit create topup purchase
-- list voucher offers
-- zendit get topup purchase
-- gift cards
-- list esim offers
-- zendit get esim plans
-- api create esim refund
-- api get balance
-- zendit get voucher offer
-- esim
-- api get brand
-- api get voucher offer
-- create esim refund
-- list topup purchases
-- zendit list voucher offers
-- zendit list topup purchases
-- zendit create esim refund
-- get topup offer
-- api get esim qr code
-- api get esim refund
-- get esim plans
-- api get esim purchase
-- list topup offers
-- prepaid
-- get brand redemption instructions
-- zendit create esim purchase
-- get esim refund
-- api list esim offers
-- api get esim offer
-- api get topup purchase
-- get voucher offer
 - api list topup purchases
-- payments
-- zendit list brands
-- get esim offer
-- operations for api
-- zendit get topup offer
-- list esim purchases
-- zendit get brand
-- zendit list esim purchases
-- zendit get esim purchase
-- api list esim purchases
-- get balance
-- api list brands
-- create topup purchase
-- get brand
-- zendit list esim offers
-- list brands
-- api get topup offer
 - mobile top-up
-- zendit get balance
-- api list topup offers
-- api list voucher offers
-- get esim qr code
-- zendit get esim refund
-- create esim purchase
-- get esim purchase
-- zendit list topup offers
+- api get esim purchase
 - api get brand redemption instructions
-- zendit
-- zendit get esim qr code
+- api list esim purchases
 - api create esim purchase
-- api create topup purchase
+- zendit get esim purchase
+- get voucher offer
+- api get esim qr code
+- api list voucher offers
+- list topup offers
+- list voucher offers
+- zendit get esim refund
+- api list brands
+- api create esim refund
+- esim
+- zendit get topup purchase
+- api get balance
+- list topup purchases
+- get esim purchase
+- get brand redemption instructions
+- api list esim offers
+- get esim offer
+- list esim offers
+- get esim plans
+- zendit
+- api get esim plans
+- api get esim refund
+- get brand
+- gift cards
+- zendit list topup purchases
+- get balance
+- list brands
+- zendit list brands
+- api get brand
+- create esim purchase
+- get esim refund
+- api list topup offers
+- api get esim offer
+- create topup purchase
+- get esim qr code
+- api get topup offer
+- payments
+- zendit get brand
+- zendit create esim purchase
+- create esim refund
+- zendit get brand redemption instructions
+- get topup offer
+- api get voucher offer
+- zendit list topup offers
+- operations for api
+- zendit get balance
+- zendit create topup purchase
 - get topup purchase
+- zendit get esim qr code
+- api create topup purchase
+- zendit get topup offer
+- zendit list esim purchases
+- zendit get esim plans
+- zendit get voucher offer
+- api get topup purchase
+- zendit list voucher offers
+- list esim purchases
+- prepaid
 - zendit get esim offer
+- zendit list esim offers
+- zendit create esim refund
 slug: zendit-workflow
 source_filename: zendit-workflow.yaml
 source_heading: Capability Spec

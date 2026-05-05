@@ -38,44 +38,44 @@ personas: []
 provider_name: western-union
 provider_slug: western-union
 search_terms:
-- check balance
-- get batch
-- get batch status and summary.
-- create a new payment batch.
-- list payments
-- foreign exchange
-- delete payment batch
-- delete batch
-- get fx quote
-- delete an uncommitted payment batch. cannot delete batches that have already been submitted for processing.
-- create a new payment batch for grouping international payments. payments can be added to the batch before committing for processing.
-- financial services
-- create payment
-- add payment to batch
-- list all payments in a batch.
-- get batch status
-- payments
-- add an international payment to an existing batch. specify recipient details, bank account, amount, and currency. supports 130+ currencies in 200+ countries.
-- delete an uncommitted batch.
-- create batch
-- money transfer
 - get the current status of a payment batch including counts of received vs. accepted payments and aggregate currency amounts.
-- create payment batch
-- check available balance for a currency.
+- create a new payment batch.
 - add an international payment to a batch.
-- get holding balance
+- create a new payment batch for grouping international payments. payments can be added to the batch before committing for processing.
+- list payments
+- get batch status
+- add an international payment to an existing batch. specify recipient details, bank account, amount, and currency. supports 130+ currencies in 200+ countries.
 - check holding balance for a specific currency.
 - generate fx rate quotes before initiating payments.
-- generate a foreign exchange rate quote.
-- check the holding balance for a specific currency in the western union account before initiating payments.
 - international
-- create and manage payment batches.
-- batch payments
+- money transfer
 - add and list payments within a batch.
-- list all payments within a batch and their current statuses (received, accepted, rejected, processed).
-- list batch payments
+- delete an uncommitted batch.
+- get fx quote
+- create batch
+- create payment
+- get batch status and summary.
+- delete batch
 - create quote
+- check the holding balance for a specific currency in the western union account before initiating payments.
+- check balance
+- foreign exchange
+- list all payments within a batch and their current statuses (received, accepted, rejected, processed).
+- list all payments in a batch.
+- payments
+- batch payments
+- generate a foreign exchange rate quote.
+- list batch payments
+- delete payment batch
+- create and manage payment batches.
+- get batch
+- check available balance for a currency.
+- add payment to batch
 - get a foreign exchange rate quote from western union for converting between currencies. returns rate, inverted rate, and settlement amount. valid for 5 minutes.
+- get holding balance
+- create payment batch
+- financial services
+- delete an uncommitted payment batch. cannot delete batches that have already been submitted for processing.
 slug: international-payments
 source_filename: international-payments.yaml
 source_heading: Capability Spec

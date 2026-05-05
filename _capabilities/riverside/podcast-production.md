@@ -57,50 +57,50 @@ personas: []
 provider_name: Riverside
 provider_slug: riverside
 search_terms:
-- get a recording with tracks and metadata
-- video
-- list all registrants for a webinar session
-- register participant
-- list recordings, optionally filtered by studio, project, or date range
-- retrieve a single recording with tracks and transcription status
-- list all workspace productions with their studios and projects
-- permanently delete a recording and all its files
-- register webinar participant
-- get recording
 - recording
 - individual export
-- list all exports in the workspace
-- get export
-- media
-- register a participant for a webinar
-- list webinar registrants
-- delete recording
-- production workspace management
-- content creation
-- recording management
-- download transcription
-- transcription file access
-- list recordings
-- export management
-- download transcription file in srt or txt format
-- list all recordings with optional studio, project, or date filters
-- riverside
-- webinar registration
-- video recording
-- download a recording transcription in srt or txt format
 - list all webinar registrants
-- delete an export
 - permanently delete a recording
-- delete export
-- get details for a specific export
-- list exports
-- individual recording
-- register a participant for a scheduled webinar
-- list registrants
-- podcast
-- audio
-- list productions
+- permanently delete a recording and all its files
 - list all productions with associated studios and projects
+- get recording
+- list recordings, optionally filtered by studio, project, or date range
+- podcast
+- get a recording with tracks and metadata
+- list recordings
+- delete recording
+- get export
+- list all workspace productions with their studios and projects
+- download a recording transcription in srt or txt format
+- delete an export
+- riverside
+- list productions
+- media
+- recording management
+- get details for a specific export
+- register a participant for a webinar
+- list registrants
+- transcription file access
+- list all registrants for a webinar session
+- download transcription file in srt or txt format
+- audio
+- list all exports in the workspace
+- retrieve a single recording with tracks and transcription status
+- list webinar registrants
+- register webinar participant
+- video recording
+- list exports
+- register participant
+- production workspace management
+- video
+- export management
+- content creation
+- list all recordings with optional studio, project, or date filters
+- register a participant for a scheduled webinar
+- individual recording
+- download transcription
+- webinar registration
+- delete export
 slug: podcast-production
 source_filename: podcast-production.yaml
 source_heading: Capability Spec

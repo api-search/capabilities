@@ -43,49 +43,49 @@ personas: []
 provider_name: Texas Instruments
 provider_slug: texas-instruments
 search_terms:
-- supply chain
-- get quality certifications and reliability data
-- ti part quality and reliability certifications
-- ti part lookup with inventory, pricing, and specifications
-- create order
-- full ti product catalog
-- get product quality
-- get order status
-- financial documents and invoices
-- get invoices for an order
-- place order
-- get full product catalog
-- get shipment tracking information and carrier details for a ti order
-- inventory
 - get inventory and pricing for a ti part number
-- place a new order
-- place a new order for ti semiconductors with specified line items
-- get quality certifications (rohs, aec-q100, msl) and reliability data for a ti part
-- texas instruments
-- get product specifications
-- retrieve invoices and financial documents for a ti order
-- ordering
-- get order
-- get product quality certifications
-- electronics
-- semiconductors
-- get shipment tracking information
-- order status and details
-- get shipments
-- get parametric and technical specifications
-- get order details
-- procurement
-- get product specs
+- get order status
 - shipment tracking via asn
+- financial documents and invoices
+- get order details
+- get product quality certifications
 - ti store order management
-- get real-time inventory availability and pricing breaks for a ti part number
-- get invoices
-- track shipment
-- check the status and details of a placed ti order
-- get technical parametric specifications for a ti semiconductor part
 - get catalog
+- get real-time inventory availability and pricing breaks for a ti part number
 - ti part technical specifications and parametric data
+- ti part quality and reliability certifications
+- full ti product catalog
+- place order
+- get order
+- get quality certifications and reliability data
+- get technical parametric specifications for a ti semiconductor part
+- place a new order for ti semiconductors with specified line items
+- procurement
+- ordering
+- texas instruments
+- retrieve invoices and financial documents for a ti order
+- check the status and details of a placed ti order
+- get parametric and technical specifications
+- supply chain
+- get full product catalog
+- get shipments
 - get product inventory
+- get shipment tracking information and carrier details for a ti order
+- electronics
+- ti part lookup with inventory, pricing, and specifications
+- get product specs
+- inventory
+- place a new order
+- create order
+- get shipment tracking information
+- get invoices
+- get invoices for an order
+- order status and details
+- get product quality
+- get product specifications
+- track shipment
+- get quality certifications (rohs, aec-q100, msl) and reliability data for a ti part
+- semiconductors
 slug: semiconductor-procurement
 source_filename: semiconductor-procurement.yaml
 source_heading: Capability Spec

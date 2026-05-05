@@ -93,86 +93,86 @@ personas: []
 provider_name: Windmill
 provider_slug: windmill
 search_terms:
-- procode api composition
-- list completed jobs in a windmill workspace
-- list all available windmill workspaces
-- delete script
-- jobs
 - create schedule
-- individual job operations
-- schedules
-- webhooks
+- list users
+- create a new flow
+- variable management
 - list jobs
-- workflows
+- list schedules
+- windmill
+- list users in a windmill workspace
+- create a new script in a windmill workspace
+- get a specific completed job by id
+- list all scripts in a windmill workspace
 - cancel a queued job in a windmill workspace
-- get script
-- job execution
-- list scripts
-- create a new windmill workspace
-- get a script by path
-- create a new variable in a windmill workspace
-- automation
-- internal tools
-- create a new resource
 - create a new schedule
+- job execution
+- get a specific flow by path from a windmill workspace
+- run script
+- get job
+- jobs
+- schedules
+- list all available windmill workspaces
+- create a new variable in a windmill workspace
+- list workspaces
+- create a new script
+- list all flows in a workspace
+- procode api composition
+- flow management
+- create script
+- webhooks
+- delete script
+- get a specific script by path from a windmill workspace
+- list scripts
+- create variable
+- get flow
 - get a flow by path
 - list users in workspace
-- open source
-- list completed jobs
-- windmill
-- variable management
-- list all resources
+- individual job operations
 - get a completed job
-- create script
-- list resources
-- list all schedules
-- user management
-- job listing and monitoring
-- create a new resource in a windmill workspace
 - resource management
-- get a specific script by path from a windmill workspace
-- create a new flow
-- list all flows in a windmill workspace
-- list all resources in a windmill workspace
-- list workspaces
-- get a specific flow by path from a windmill workspace
+- list completed jobs
 - workflow engine
-- create flow
-- list all flows in a workspace
-- create a new flow in a windmill workspace
-- individual script operations
-- run a script by path
-- create variable
-- create a new script
-- cancel job
-- list variables
-- list contextual variables
-- list all scripts in a workspace
-- get a specific completed job by id
-- script management and execution
-- list flows
-- list all scripts in a windmill workspace
-- list schedules
-- create resource
-- create workspace
-- individual flow operations
-- run script
-- execute a script by path in a windmill workspace
-- scripts
-- list all schedules in a windmill workspace
-- list users in a windmill workspace
-- get flow
-- delete a script by path
-- create a new schedule in a windmill workspace
-- workspace administration
-- schedule management
-- create a new variable
-- flow management
-- list users
-- list all workspaces
-- get job
 - create a new workspace
-- create a new script in a windmill workspace
+- list all scripts in a workspace
+- list all schedules in a windmill workspace
+- run a script by path
+- internal tools
+- list all workspaces
+- job listing and monitoring
+- list variables
+- create a new resource
+- create a new schedule in a windmill workspace
+- create a new flow in a windmill workspace
+- create a new windmill workspace
+- individual flow operations
+- workflows
+- execute a script by path in a windmill workspace
+- get script
+- list contextual variables
+- schedule management
+- list all resources
+- individual script operations
+- list flows
+- list completed jobs in a windmill workspace
+- open source
+- delete a script by path
+- list all schedules
+- scripts
+- create flow
+- workspace administration
+- list all flows in a windmill workspace
+- create resource
+- cancel job
+- create a new variable
+- list all resources in a windmill workspace
+- create a new resource in a windmill workspace
+- list resources
+- get a script by path
+- script management and execution
+- user management
+- automation
+- create workspace
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

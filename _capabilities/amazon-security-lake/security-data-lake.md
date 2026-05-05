@@ -42,48 +42,48 @@ personas: []
 provider_name: Amazon Security Lake
 provider_slug: amazon-security-lake
 search_terms:
-- enable a native aws log source in security lake
-- get details about a specific security lake subscriber
-- get data lake source status across accounts and regions
-- data subscriber access management
-- security
-- list subscribers
-- security log source management
-- list log sources
-- list all log sources configured in security lake
-- list data lakes
-- siem
-- add a native aws log source
-- Security Data Engineer
-- security data lake lifecycle management
-- list all amazon security lake data lake configurations
-- delete subscriber
-- security data centralization and threat analysis
-- list all data lake subscribers
-- get subscriber
-- security leaders who consume security data for threat intelligence and compliance reporting
+- list all security data lake configurations
 - create data lake
 - create a new subscriber for data access
-- create a new amazon security lake data lake
-- get data lake sources
-- CISO
-- ocsf
-- create a subscriber for security lake data access
-- centralized security data lake lifecycle including data lake configuration, log source management, and subscriber access
-- amazon security lake
+- security
 - list all security lake data subscribers
+- create a subscriber for security lake data access
 - list all configured log sources
+- list all amazon security lake data lake configurations
+- list data lakes
 - delete a security lake subscriber
-- create subscriber
-- list all security data lake configurations
-- create a new security data lake
-- add custom log source
+- security data lake lifecycle management
+- create a new amazon security lake data lake
+- delete subscriber
 - threat detection
 - add aws log source
-- data lake infrastructure management and subscriber access control
+- Security Data Engineer
+- security data centralization and threat analysis
+- siem
+- security leaders who consume security data for threat intelligence and compliance reporting
+- list subscribers
+- get data lake source status across accounts and regions
+- ocsf
 - data lake
-- add a custom third-party log source to security lake
+- add a native aws log source
+- data lake infrastructure management and subscriber access control
 - engineers who configure and manage security data lakes, log sources, and subscriber access
+- get details about a specific security lake subscriber
+- amazon security lake
+- add custom log source
+- add a custom third-party log source to security lake
+- create a new security data lake
+- create subscriber
+- list all log sources configured in security lake
+- get data lake sources
+- centralized security data lake lifecycle including data lake configuration, log source management, and subscriber access
+- get subscriber
+- data subscriber access management
+- list all data lake subscribers
+- list log sources
+- security log source management
+- CISO
+- enable a native aws log source in security lake
 slug: security-data-lake
 source_filename: security-data-lake.yaml
 source_heading: Capability Spec

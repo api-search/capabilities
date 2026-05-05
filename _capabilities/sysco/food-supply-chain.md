@@ -42,42 +42,42 @@ personas: []
 provider_name: Sysco
 provider_slug: sysco
 search_terms:
-- get delivery
-- list delivery schedules and tracking information for sysco orders.
-- list deliveries
-- create a new food distribution order.
-- supply chain
-- get detailed product information including nutrition and availability.
-- list food distribution orders with status filtering.
-- delivery tracking and scheduling.
-- delivery tracking
-- create order
 - list pricing
-- retrieve contract pricing for sysco food products.
-- food product catalog.
-- retrieve contract pricing for food products.
-- get tracking details and estimated arrival for a specific sysco delivery.
-- list food distribution orders with optional status and date filtering.
-- wholesale
-- place a new sysco food distribution order with products and delivery date.
-- fortune 100
-- order management
-- get order
-- get tracking details for a specific delivery.
-- get details for a specific order.
-- browse the sysco food product catalog by category, keyword, or brand.
-- food distribution
 - list products
-- get product
-- food service
-- list orders
 - sysco
-- list scheduled and completed deliveries with tracking information.
-- get detailed information about a sysco food product by product id.
-- food distribution orders.
+- fortune 100
+- get detailed product information including nutrition and availability.
+- list deliveries
+- place a new sysco food distribution order with products and delivery date.
+- get delivery
+- get order
 - browse the sysco food product catalog with category and keyword filtering.
-- get the status and details of a specific sysco order.
+- food service
+- retrieve contract pricing for sysco food products.
+- wholesale
+- create a new food distribution order.
+- browse the sysco food product catalog by category, keyword, or brand.
+- food distribution orders.
+- food distribution
+- supply chain
+- delivery tracking
+- delivery tracking and scheduling.
+- retrieve contract pricing for food products.
+- get details for a specific order.
+- get product
 - contract pricing.
+- list orders
+- get detailed information about a sysco food product by product id.
+- create order
+- list scheduled and completed deliveries with tracking information.
+- get tracking details for a specific delivery.
+- get tracking details and estimated arrival for a specific sysco delivery.
+- food product catalog.
+- order management
+- list delivery schedules and tracking information for sysco orders.
+- list food distribution orders with optional status and date filtering.
+- get the status and details of a specific sysco order.
+- list food distribution orders with status filtering.
 slug: food-supply-chain
 source_filename: food-supply-chain.yaml
 source_heading: Capability Spec

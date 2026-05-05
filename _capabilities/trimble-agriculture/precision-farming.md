@@ -61,54 +61,54 @@ personas: []
 provider_name: Trimble Agriculture
 provider_slug: trimble-agriculture
 search_terms:
-- variable-rate prescription management
-- list crop zones for an organization and season
-- create a work order for farm operators
-- create prescription
-- list farm work orders and their completion status
-- work order planning and dispatch
-- precision agriculture
-- list all fields in a farm with their boundaries
-- add a new farm to an organization
-- list crop zones for a growing season
-- equipment activities
-- download as-applied data for compliance and analysis
-- list work orders
-- list work orders with status filtering
 - download as-applied field data for compliance and productivity analysis
-- farming
-- agriculture
-- trimble agriculture
-- list farms
-- list prescriptions
-- upload a prescription for trimble display delivery
-- add a new farm to a trimble agriculture organization
+- work orders
 - in-field equipment activities from precision ag displays
-- list crop zones
-- as-applied data from field operations
-- list all farms for an organization
-- get as applied data
-- list variable-rate prescription files for crop zones
-- list fields
-- list all fields in a farm
-- list in-field equipment activities (planting, spraying, harvesting)
-- field management
+- create a work order for farm operators
+- farming
+- trimble agriculture
 - prescriptions
-- create a new field with boundary
 - crop zone tracking by season
-- create field
-- farm registry
-- create a work order to assign field jobs to farm operators
-- list all farms for a trimble agriculture organization
+- list all fields in a farm
 - telematics
-- list equipment activities (planting, spraying, harvesting)
+- list work orders with status filtering
+- as-applied data from field operations
 - create work order
 - create farm
-- work orders
+- precision agriculture
+- create a new field with boundary
+- field management
 - list prescription files
-- upload a variable-rate prescription to send to trimble field displays
-- iot
+- download as-applied data for compliance and analysis
+- list all fields in a farm with their boundaries
+- list crop zones for a growing season
+- equipment activities
+- create prescription
+- work order planning and dispatch
+- list equipment activities (planting, spraying, harvesting)
+- add a new farm to a trimble agriculture organization
+- list farms
+- list variable-rate prescription files for crop zones
+- list crop zones
 - list equipment activities
+- variable-rate prescription management
+- create field
+- create a work order to assign field jobs to farm operators
+- agriculture
+- list prescriptions
+- get as applied data
+- upload a variable-rate prescription to send to trimble field displays
+- upload a prescription for trimble display delivery
+- list all farms for an organization
+- list in-field equipment activities (planting, spraying, harvesting)
+- add a new farm to an organization
+- list farm work orders and their completion status
+- iot
+- list all farms for a trimble agriculture organization
+- farm registry
+- list fields
+- list crop zones for an organization and season
+- list work orders
 slug: precision-farming
 source_filename: precision-farming.yaml
 source_heading: Capability Spec

@@ -77,72 +77,72 @@ personas: []
 provider_name: Samsara
 provider_slug: samsara
 search_terms:
-- get a specific vehicle by id
-- create a new driver
-- list addresses
-- list tags
-- list all drivers
-- subscribe to fleet event webhooks
-- get real-time gps locations for fleet vehicles
 - gps
-- create driver
-- list all vehicles in the fleet
-- driver profile management
-- create route
-- individual driver details
-- get driver
-- asset management
-- create a new dispatch route with stops for a driver
-- individual vehicle details
-- list all drivers in the organization
-- create webhook
-- asset tracking
-- dispatch
-- get vehicle locations feed
-- list all non-powered assets (trailers, equipment)
-- driver management
-- connected operations
-- list routes
-- list drivers
-- list all addresses and geofences
-- get vehicle
-- list all dispatch routes
-- create a new driver profile in the organization
-- routes
-- list all addresses and geofence locations
-- non-powered asset tracking (trailers, equipment)
-- list all tags
-- location and geofence management
-- list all webhook subscriptions
-- get details for a specific vehicle by id
-- create address
-- create tag
-- create a new dispatch route
-- list webhooks
-- create a new address with geofence for fleet operations
-- samsara
-- create an address with geofence
-- event webhook subscription management
-- vehicle fleet inventory and management
-- get a specific driver by id
-- list all vehicles in the fleet, optionally filtered by tag
-- transportation
-- create an organizational tag
-- telematics
-- safety
-- get details for a specific driver by id
 - organizational tags for fleet grouping
-- get vehicle locations
+- get driver
+- connected operations
+- create an address with geofence
+- asset management
+- list drivers
+- get a specific driver by id
+- create driver
+- driver profile management
+- telematics
+- list assets
+- get details for a specific driver by id
+- list all non-powered assets (trailers, equipment)
+- list all drivers in the organization
 - list all tracked assets
+- create a new dispatch route with stops for a driver
+- list all vehicles in the fleet, optionally filtered by tag
+- routes
+- dispatch route planning and tracking
+- create webhook
+- samsara
+- list all vehicles in the fleet
+- list addresses
+- list all dispatch routes
+- create an organizational tag
+- list vehicles
+- list all addresses and geofences
+- create a new driver profile in the organization
+- real-time and historical vehicle gps locations
+- create route
+- eld
+- transportation
+- subscribe to fleet event webhooks
+- create tag
+- list all tags
+- get real-time gps locations for fleet vehicles
+- get vehicle
+- create address
+- event webhook subscription management
+- asset tracking
+- logistics
+- location and geofence management
+- non-powered asset tracking (trailers, equipment)
+- individual driver details
+- create a new driver
+- safety
+- list all webhook subscriptions
+- vehicle fleet inventory and management
+- dispatch
+- get vehicle locations
+- list routes
+- get vehicle locations feed
+- get a specific vehicle by id
+- create a new dispatch route
+- driver management
+- list all drivers
+- iot
+- get details for a specific vehicle by id
+- list all addresses and geofence locations
+- create a new address with geofence for fleet operations
+- list webhooks
+- individual vehicle details
+- list tags
 - gps tracking
 - fleet management
-- logistics
-- list vehicles
-- iot
-- real-time and historical vehicle gps locations
-- list assets
-- dispatch route planning and tracking
-- eld
 slug: fleet-operations
 source_filename: fleet-operations.yaml
 source_heading: Capability Spec

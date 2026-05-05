@@ -44,49 +44,49 @@ personas: []
 provider_name: VTEX
 provider_slug: vtex
 search_terms:
-- send invoice
-- get full order details
-- update sku inventory
-- warehouse management
-- fulfillment
-- marketplace
-- list available shipping carriers
+- list vtex orders with optional filtering by status, date range, and other criteria
+- sku inventory levels
+- get inventory
+- send invoice for a fulfilled order
 - e-commerce
 - get product details
-- operations
-- cancel an order
-- order invoice management
-- list all configured warehouses
-- shipping carrier configuration
-- sku inventory levels
-- list warehouses
-- cancel a vtex order
-- get product details from the vtex catalog
-- payments
-- order cancellation
-- product catalog operations
-- order management
-- list orders with filtering by status and date
 - commerce
-- get order
 - update inventory quantity for a sku at a specific warehouse
-- list all shipping carriers configured in the vtex account
-- send invoice for a fulfilled order
-- get full details of a vtex order including items, payment, and shipping status
-- retail
-- get inventory
-- list all warehouses configured in the vtex account
-- single order operations
 - vtex
-- get product
-- list orders
+- list all configured warehouses
+- get product details from the vtex catalog
+- cancel an order
+- list warehouses
+- get order
+- order cancellation
+- shipping carrier configuration
+- warehouse management
+- send invoice notification for a fulfilled vtex order to trigger shipping
+- operations
+- get full order details
+- get inventory levels for a sku
+- order invoice management
+- product catalog operations
 - cancel order
+- payments
+- update sku inventory
+- retail
 - get current inventory levels for a sku across all warehouses
+- list orders with filtering by status and date
+- send invoice
+- single order operations
+- get product
+- list available shipping carriers
+- list orders
+- list all shipping carriers configured in the vtex account
+- cancel a vtex order
+- get full details of a vtex order including items, payment, and shipping status
+- order management
+- fulfillment
+- list all warehouses configured in the vtex account
+- marketplace
 - list carriers
 - get sku inventory
-- send invoice notification for a fulfilled vtex order to trigger shipping
-- list vtex orders with optional filtering by status, date range, and other criteria
-- get inventory levels for a sku
 slug: store-operations
 source_filename: store-operations.yaml
 source_heading: Capability Spec

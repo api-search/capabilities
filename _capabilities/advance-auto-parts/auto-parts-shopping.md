@@ -22,43 +22,43 @@ personas: []
 provider_name: Advance Auto Parts
 provider_slug: advance-auto-parts
 search_terms:
-- supply chain
-- automotive
-- search auto parts
-- get vehicle years
 - find advance auto parts store locations near a zip code or city.
-- unified workflow for automotive parts discovery, fitment lookup, inventory, and ordering
+- parts catalog
+- search parts
 - e-commerce
-- check inventory
-- professional mechanic using the api to source parts for repair jobs
-- fleet operations manager ordering parts for vehicle maintenance programs
+- check part inventory at stores.
+- fleet manager
 - diy customer
-- part details.
-- automotive technician
-- do-it-yourself automotive enthusiast sourcing parts for self-repairs
-- get part
+- search for automotive parts by keyword, part number, or vehicle year/make/model.
+- search for automotive parts.
 - check if an automotive part is in stock at nearby advance auto parts stores.
 - find nearby stores
-- fleet manager
-- check part availability
-- search parts
-- parts catalog
-- search for automotive parts.
-- check part inventory at stores.
-- lookup vehicle models
-- parts catalog search.
-- advance auto parts
-- get part details
-- search for automotive parts by keyword, part number, or vehicle year/make/model.
-- get the range of supported vehicle model years for parts catalog lookups.
-- retail
 - get available vehicle makes for a given model year for fitment-based part search.
+- check part availability
 - lookup vehicle makes
-- get automotive part details.
-- store inventory.
-- get available vehicle models for a year and make for fitment-based part search.
+- fleet operations manager ordering parts for vehicle maintenance programs
+- part details.
 - get full specifications, fitment notes, and pricing for a specific automotive part.
 - loyalty
+- get part
+- get the range of supported vehicle model years for parts catalog lookups.
+- search auto parts
+- check inventory
+- professional mechanic using the api to source parts for repair jobs
+- supply chain
+- retail
+- get part details
+- parts catalog search.
+- unified workflow for automotive parts discovery, fitment lookup, inventory, and ordering
+- get available vehicle models for a year and make for fitment-based part search.
+- do-it-yourself automotive enthusiast sourcing parts for self-repairs
+- automotive
+- advance auto parts
+- automotive technician
+- get automotive part details.
+- lookup vehicle models
+- store inventory.
+- get vehicle years
 slug: auto-parts-shopping
 source_filename: auto-parts-shopping.yaml
 source_heading: Capability Spec

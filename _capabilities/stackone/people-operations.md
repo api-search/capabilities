@@ -50,50 +50,50 @@ personas: []
 provider_name: StackOne
 provider_slug: stackone
 search_terms:
-- hris
-- single candidate
-- get detailed information for a specific employee
-- list open jobs
-- list applications
-- recruitment candidates
-- update employee
-- list all employees from a connected hris system (bamboohr, workday, etc.)
-- integrations
-- update employee details
-- get employee by id
-- list all employees
-- unified api
+- create a new employee record in the connected hris system
+- create a new employee
 - list candidates
-- create time off
-- submit a time off request
-- list jobs
-- get candidate details
-- list time off requests from the connected hris system
-- single employee
-- list time off requests
-- recruitment
-- time off requests
-- list employees
-- job applications
-- human resources
 - update employee information in the connected hris system
-- employee management across hris systems
-- get employee
-- get candidate
 - list recruitment candidates from the connected ats system
 - ipaas
-- list job applications across the connected ats system
-- list candidates from ats
-- get full profile for a recruitment candidate
-- list open job positions from the connected ats system
-- list time off
+- list employees
+- get employee by id
+- list jobs
 - create employee
-- list job applications
+- get employee
+- human resources
+- submit a time off request
+- list all employees from a connected hris system (bamboohr, workday, etc.)
+- list open job positions from the connected ats system
 - submit a time off request for an employee
 - people operations
+- create time off
+- update employee details
+- list all employees
+- get detailed information for a specific employee
+- single employee
+- time off requests
+- list job applications
+- list candidates from ats
+- list job applications across the connected ats system
+- integrations
+- list applications
+- list time off requests
+- get candidate details
+- unified api
+- recruitment candidates
+- job applications
+- employee management across hris systems
+- list open jobs
+- recruitment
+- list time off requests from the connected hris system
+- get full profile for a recruitment candidate
+- single candidate
+- list time off
+- hris
 - open job positions
-- create a new employee
-- create a new employee record in the connected hris system
+- get candidate
+- update employee
 slug: people-operations
 source_filename: people-operations.yaml
 source_heading: Capability Spec

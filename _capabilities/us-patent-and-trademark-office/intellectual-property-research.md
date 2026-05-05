@@ -47,54 +47,54 @@ personas: []
 provider_name: US Patent and Trademark Office
 provider_slug: us-patent-and-trademark-office
 search_terms:
-- get the full list of uspto patent application status codes and their meanings
-- patent application detail
-- search ptab trial proceedings
-- get ptab proceeding
 - open data
-- search ptab proceedings
-- search ptab inter partes review (ipr), post-grant review (pgr), and covered business method (cbm) proceedings
-- search ptab final written decisions and institution decisions
-- get patent documents
-- get full patent application record
-- get the current prosecution status and owner information for a trademark application or registration
-- trademark case documents
-- list all documents filed in a trademark case including office actions and responses
-- list patent status codes
-- list trademark documents
-- federal government
-- search ptab trial decisions
 - legal research
-- search patents
-- bulk data products
-- list all office actions, responses, and other documents filed in a patent application
 - patent application search and retrieval
-- browse bulk datasets
-- search ptab decisions
-- search patent applications by query and filters
-- get ptab proceeding by trial number
-- trademarks
-- get complete details for a specific patent application including inventors, assignees, and status
-- intellectual property
-- ptab proceeding detail
-- get patent application
-- get trademark status
-- list patent documents
-- get trademark case status by serial or registration number
-- browse available uspto bulk data products for economic research and analysis
 - get patent
-- patent application documents
-- list datasets
-- browse available uspto bulk data products
-- list documents for a trademark case
-- ptab inter partes review and post-grant review proceedings
 - trademark case status
+- federal government
 - get full details of a ptab trial including petitioner, respondent, and claim dispositions
-- search patent applications
-- patents
-- list documents for a patent application
-- ptab trial final written decisions
+- patent application detail
+- bulk data products
+- list patent status codes
+- get full patent application record
+- get the full list of uspto patent application status codes and their meanings
+- search ptab decisions
+- list datasets
+- intellectual property
 - search uspto patent applications by keyword, inventor, assignee, or classification
+- patent application documents
+- get trademark case status by serial or registration number
+- ptab trial final written decisions
+- list all documents filed in a trademark case including office actions and responses
+- search ptab trial decisions
+- list all office actions, responses, and other documents filed in a patent application
+- get patent documents
+- get complete details for a specific patent application including inventors, assignees, and status
+- trademark case documents
+- search patent applications
+- ptab inter partes review and post-grant review proceedings
+- get ptab proceeding
+- search ptab final written decisions and institution decisions
+- ptab proceeding detail
+- get the current prosecution status and owner information for a trademark application or registration
+- get ptab proceeding by trial number
+- patents
+- search ptab inter partes review (ipr), post-grant review (pgr), and covered business method (cbm) proceedings
+- get trademark status
+- browse available uspto bulk data products
+- search patents
+- list documents for a trademark case
+- search patent applications by query and filters
+- list patent documents
+- search ptab trial proceedings
+- browse bulk datasets
+- browse available uspto bulk data products for economic research and analysis
+- list documents for a patent application
+- list trademark documents
+- trademarks
+- search ptab proceedings
+- get patent application
 slug: intellectual-property-research
 source_filename: intellectual-property-research.yaml
 source_heading: Capability Spec

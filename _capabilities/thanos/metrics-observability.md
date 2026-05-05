@@ -38,46 +38,46 @@ personas: []
 provider_name: Thanos
 provider_slug: thanos
 search_terms:
-- label name discovery
-- list labels
-- get alerting and recording rules configured in thanos ruler
-- store endpoint health
-- monitoring
-- inspect connected thanos store endpoints, health status, and data time ranges
-- thanos
-- get series
-- find time series matching label selectors
-- list all available metric label names across thanos stores
-- find series
 - get active alerts
-- range promql metric queries over time
-- execute an instant promql query for current metric values
-- time series database
-- get rules
-- get alerts
-- get connected thanos store information and health
-- get stores
-- get alerting and recording rules
-- instant promql metric queries
-- metrics
-- time series discovery
-- get all available metric label names
-- range query
-- find time series in thanos matching label selectors for service discovery
-- get all currently firing and pending alerts from thanos
-- execute a promql range query for historical metric data
-- inspect stores
-- instant query
-- get all currently active alerts
-- observability
-- execute a promql range query to analyze metric trends over time in thanos
 - get labels
-- promql
+- get alerts
+- get all currently active alerts
+- get alerting and recording rules configured in thanos ruler
+- get alerting and recording rules
+- label name discovery
+- get all currently firing and pending alerts from thanos
+- get series
+- execute a promql range query for historical metric data
 - prometheus
+- get all available metric label names
+- list labels
+- store endpoint health
+- thanos
+- instant query
 - active alert monitoring
-- sre
-- execute an instant promql query to get current metric values from thanos
+- observability
+- range promql metric queries over time
+- time series discovery
+- inspect stores
 - alerting and recording rules
+- execute an instant promql query for current metric values
+- get connected thanos store information and health
+- execute a promql range query to analyze metric trends over time in thanos
+- find time series matching label selectors
+- promql
+- instant promql metric queries
+- execute an instant promql query to get current metric values from thanos
+- sre
+- get rules
+- get stores
+- find time series in thanos matching label selectors for service discovery
+- monitoring
+- find series
+- metrics
+- range query
+- inspect connected thanos store endpoints, health status, and data time ranges
+- time series database
+- list all available metric label names across thanos stores
 slug: metrics-observability
 source_filename: metrics-observability.yaml
 source_heading: Capability Spec

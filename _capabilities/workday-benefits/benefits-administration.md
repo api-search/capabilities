@@ -38,38 +38,38 @@ personas: []
 provider_name: Workday Benefits
 provider_slug: workday-benefits
 search_terms:
-- list workday benefit plans including health, dental, vision, life, and retirement options
-- get benefit plan
-- create a new workday benefit enrollment for an employee
-- get a benefit plan
-- create dependent
-- list time off plans
 - workday
-- create enrollment
-- list dependents
-- hr
-- list workday benefit qualifying life events and open enrollment windows
-- hcm
-- employee benefits
-- add a dependent
-- get employee benefits
+- list time off plans
+- get a complete summary of all active benefit enrollments for an employee
+- get benefit plan
+- list workday employee dependents and beneficiaries
 - list workday benefit enrollments with optional filtering by employee or plan
-- get a specific workday benefit enrollment by id
-- create benefit enrollment
-- get a specific workday benefit plan with coverage options and costs
+- create dependent
 - enterprise
-- get benefit enrollment
-- list benefit events
+- hcm
+- benefit plans
+- get a specific workday benefit enrollment by id
 - list benefit plans
-- list workday time off and leave plans with accrual information
+- hr
+- list workday benefit plans including health, dental, vision, life, and retirement options
 - benefits
 - add a new dependent or beneficiary for an employee
-- benefit enrollments
+- get benefit enrollment
+- create a new workday benefit enrollment for an employee
+- list workday time off and leave plans with accrual information
+- get a benefit plan
+- create enrollment
+- get a specific workday benefit plan with coverage options and costs
+- add a dependent
+- employee benefits
+- list workday benefit qualifying life events and open enrollment windows
+- list benefit events
 - dependents
-- benefit plans
+- benefit enrollments
+- get employee benefits
 - list benefit enrollments
-- list workday employee dependents and beneficiaries
-- get a complete summary of all active benefit enrollments for an employee
+- create benefit enrollment
+- list dependents
 slug: benefits-administration
 source_filename: benefits-administration.yaml
 source_heading: Capability Spec

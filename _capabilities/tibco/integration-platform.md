@@ -39,52 +39,52 @@ personas: []
 provider_name: TIBCO
 provider_slug: tibco
 search_terms:
-- tci list deployments
-- list api packages
-- list mashery api packages and plans
-- get details for a specific tibco cloud integration app
-- get tci integration app details
-- list connections
-- analytics
-- list all tci integration applications
-- list tci connections
-- api management
-- list integration apps
-- individual mashery api service
 - connector connections
 - list tibco cloud integration connector connections
-- tci get app
-- integration
 - list tibco cloud integration applications (flogo and business studio)
-- get api service
-- tci list apps
-- enterprise software
-- mashery list packages
-- cloud
-- list mashery api services
-- messaging
-- get details for a specific mashery api service including endpoints
-- list api services
-- list mashery api packages
-- tibco cloud integration applications
-- list mashery managed api services
-- tibco
-- mashery get api service
-- list tibco cloud integration running deployments
-- list tci deployments
-- mashery api packages
-- get integration app
 - app deployments
-- flogo
-- list deployments
+- list connections
 - ipaas
-- mashery managed api services
-- individual integration app
-- get mashery api service details
+- get details for a specific tibco cloud integration app
+- integration
+- list mashery api packages and plans
+- cloud
 - mashery list api services
-- tci list connections
-- real-time data
+- tibco
 - cloud integration
+- list tibco cloud integration running deployments
+- analytics
+- tci get app
+- real-time data
+- mashery list packages
+- get mashery api service details
+- enterprise software
+- list api services
+- list all tci integration applications
+- get integration app
+- list deployments
+- list mashery api packages
+- mashery managed api services
+- api management
+- list mashery api services
+- tci list connections
+- list mashery managed api services
+- individual integration app
+- mashery api packages
+- flogo
+- individual mashery api service
+- get details for a specific mashery api service including endpoints
+- mashery get api service
+- get api service
+- list api packages
+- list tci connections
+- list integration apps
+- tci list deployments
+- get tci integration app details
+- tci list apps
+- list tci deployments
+- tibco cloud integration applications
+- messaging
 slug: integration-platform
 source_filename: integration-platform.yaml
 source_heading: Capability Spec

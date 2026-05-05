@@ -34,45 +34,45 @@ personas: []
 provider_name: Stytch
 provider_slug: stytch
 search_terms:
-- passwordless
-- discover stytch b2b organizations a user can access
-- security
-- identity management
-- retrieve a stytch b2b organization by id
-- create organization
-- create member
-- list sso connections for an organization
-- saas
-- get an organization
-- invite a new member to a stytch b2b organization
-- organization (tenant) management
-- send a stytch magic link to authenticate a b2b organization member
-- authentication
-- create a b2b organization
-- create a new stytch b2b organization (tenant) for a saas customer
-- list sso connections
-- sso connection management
-- authenticate b2b session
-- b2b
-- remove a member from a stytch b2b organization
-- send b2b magic link
-- validate a stytch b2b member session token
-- stytch
-- discover organizations
-- identity
-- developer tools
-- sso
-- get organization
-- delete member
-- individual organization
-- list members
-- list members of a stytch b2b organization
-- send a magic link to a member
 - multi-tenant
+- saas
+- identity management
+- security
 - organization member management
-- list sso (saml/oidc) connections for a stytch b2b organization
 - b2b magic link authentication
+- remove a member from a stytch b2b organization
+- sso connection management
+- list members
+- create a new stytch b2b organization (tenant) for a saas customer
+- stytch
+- list sso connections
+- discover stytch b2b organizations a user can access
+- passwordless
+- get an organization
 - invite a member
+- authenticate b2b session
+- retrieve a stytch b2b organization by id
+- validate a stytch b2b member session token
+- developer tools
+- create member
+- send a stytch magic link to authenticate a b2b organization member
+- delete member
+- b2b
+- create organization
+- individual organization
+- discover organizations
+- list members of a stytch b2b organization
+- sso
+- list sso (saml/oidc) connections for a stytch b2b organization
+- organization (tenant) management
+- create a b2b organization
+- send a magic link to a member
+- authentication
+- invite a new member to a stytch b2b organization
+- get organization
+- identity
+- send b2b magic link
+- list sso connections for an organization
 slug: b2b-identity-management
 source_filename: b2b-identity-management.yaml
 source_heading: Capability Spec

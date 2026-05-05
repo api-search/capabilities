@@ -46,50 +46,50 @@ personas: []
 provider_name: rockwell-factorytalk
 provider_slug: rockwell-factorytalk
 search_terms:
-- apply recipe
-- get historical trend data for a process variable tag over a time range
-- list tags
-- rockwell automation
-- list recipes
-- list currently active and unacknowledged alarms on the production line
-- write tag values
-- list active and unacknowledged alarms
-- list all process variable tags defined in the project
-- read tag values
-- write values to one or more process variable tags to control machine state
-- manufacturing
-- read current values for one or more process variable tags in real-time
-- industrial automation
-- historical alarm event data
-- list all available production recipes
-- list all available production recipes and their parameters
-- apply a recipe to write configured tag values to a machine
-- apply a recipe to a production unit
-- acknowledge an active alarm with an operator comment
-- hmi
-- list active alarms
-- process variable tag monitoring
-- get tag metadata
-- get metadata and current value for a specific process variable tag
-- alarm acknowledgment operations
-- apply a production recipe to a machine or unit, writing all configured tag values
-- write values to one or more process variable tags
-- scada
-- historical trend data for process variables
-- production recipe management
-- list alarms
-- alarm monitoring and management
-- acknowledge an active alarm with optional comment
-- get alarm history
-- list all process variable tags defined in the factorytalk optix project
-- real-time tag value read and write operations
-- process control
 - acknowledge alarm
-- read current values for one or more tags
+- industrial automation
+- process control
+- get metadata and current value for a specific process variable tag
+- list currently active and unacknowledged alarms on the production line
+- scada
+- list all available production recipes
+- real-time tag value read and write operations
+- list all process variable tags defined in the project
 - get historical trend data for a tag
+- alarm monitoring and management
+- list active and unacknowledged alarms
+- hmi
+- write tag values
+- apply a recipe to a production unit
+- production recipe management
+- process variable tag monitoring
+- acknowledge an active alarm with optional comment
+- read current values for one or more tags
+- apply a recipe to write configured tag values to a machine
+- list all process variable tags defined in the factorytalk optix project
+- get tag metadata
 - retrieve alarm event history for a time range to investigate recurring issues
-- get trend data
+- list recipes
+- apply a production recipe to a machine or unit, writing all configured tag values
+- read current values for one or more process variable tags in real-time
+- write values to one or more process variable tags to control machine state
+- rockwell automation
 - get alarm history within a time range
+- historical trend data for process variables
+- get alarm history
+- write values to one or more process variable tags
+- get historical trend data for a process variable tag over a time range
+- list active alarms
+- historical alarm event data
+- manufacturing
+- read tag values
+- list alarms
+- acknowledge an active alarm with an operator comment
+- alarm acknowledgment operations
+- get trend data
+- list tags
+- list all available production recipes and their parameters
+- apply recipe
 slug: industrial-operations
 source_filename: industrial-operations.yaml
 source_heading: Capability Spec

@@ -41,39 +41,39 @@ personas: []
 provider_name: Veracode
 provider_slug: veracode
 search_terms:
-- search veracode users by name, email, role, or type
-- security testing
-- list all teams
-- users
-- identity management
-- access control
-- create user
-- search users by term or type
-- list all available roles
-- application security
-- sca
-- administration
-- devsecops
-- veracode
-- sast
-- list roles
-- create a new user or api service account in the veracode organization
-- list all teams in the veracode organization
-- team management
-- user account management
-- search users
-- list teams
-- list all users in the veracode organization
-- dast
-- user search
-- list users
-- list all available roles for role-based access control
-- create a new user or api service account
-- create a new team in the veracode organization
-- list all users in the organization
-- create a new team
-- role management
 - create team
+- veracode
+- role management
+- devsecops
+- list users
+- identity management
+- list all available roles
+- sast
+- list all users in the veracode organization
+- user account management
+- create user
+- security testing
+- list roles
+- user search
+- list all teams in the veracode organization
+- application security
+- list all users in the organization
+- search users by term or type
+- administration
+- search users
+- search veracode users by name, email, role, or type
+- users
+- access control
+- create a new team
+- create a new user or api service account in the veracode organization
+- list teams
+- dast
+- team management
+- sca
+- list all available roles for role-based access control
+- list all teams
+- create a new team in the veracode organization
+- create a new user or api service account
 slug: security-administration
 source_filename: security-administration.yaml
 source_heading: Capability Spec

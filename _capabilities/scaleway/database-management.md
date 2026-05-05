@@ -43,47 +43,47 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
+- database instance management
+- redis
+- send a database alert or notification email
+- delete db instance
+- containers
+- list db instances
+- get database instance details
+- get db instance
+- create a new managed postgresql, mysql, or redis instance
+- send database alerts or notifications via transactional email
+- serverless
+- send notification email
+- ai
+- get details of a specific database instance
+- mysql
+- storage
+- create db backup
+- list db backups
 - cloud computing
 - delete a database instance
-- create a new managed postgresql, mysql, or redis instance
-- storage
-- list db backups
+- available database engines
+- database
+- create a managed database instance
+- list scaleway managed database instances
+- database backup management
+- list database engines
+- scaleway
+- postgresql
+- list database backups
+- notifications
+- infrastructure
+- email notification management
+- manage a specific database instance
+- create a database backup
+- list available database engine versions
 - european cloud
 - list managed database instances
-- get details of a specific database instance
-- list scaleway managed database instances
-- manage a specific database instance
-- list database engines
-- postgresql
-- delete db instance
-- database backup management
-- get database instance details
-- list database backups
-- database instance management
-- kubernetes
-- create a database backup
-- get db instance
-- mysql
-- send database alerts or notifications via transactional email
-- database
 - delete a managed database instance
-- list db instances
-- containers
-- send notification email
-- create a managed database instance
-- ai
-- create db backup
-- scaleway
-- redis
-- create db instance
-- send a database alert or notification email
-- list available database engine versions
+- kubernetes
 - backup
-- available database engines
-- serverless
-- infrastructure
-- notifications
-- email notification management
+- create db instance
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

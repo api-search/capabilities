@@ -29,33 +29,33 @@ personas: []
 provider_name: Spin.AI
 provider_slug: spin-ai
 search_terms:
-- entity backup status management
-- spin ai
-- saas security
-- get all entities
-- disable entity backup
-- activate entity backup
-- enable backup for one or more entities by setting their status to active.
-- get all backup entities
-- search and filter backup entities by type (user/group/drive), status (active/archived/disabled), and platform. use for auditing backup coverage gaps.
-- retrieve all users, groups, and drives managed by spinone backup. filter by platform (google_workspace, microsoft_365, salesforce, slack).
-- microsoft 365
-- update backup status for entities
-- archive entity backup
-- google workspace
-- filter backup entities
-- filter entities
-- data protection
-- ransomware
-- compliance
-- backup entity management
-- filter entities by type, status, and platform
 - filtered entity retrieval
 - retrieve all backup entities
+- update entity status
+- update backup status for entities
+- filter entities by type, status, and platform
+- filter entities
+- google workspace
+- archive one or more entities in spinone — backup stops but existing data is retained.
+- data protection
+- enable backup for one or more entities by setting their status to active.
+- get all entities
+- entity backup status management
+- get all backup entities
+- archive entity backup
+- retrieve all users, groups, and drives managed by spinone backup. filter by platform (google_workspace, microsoft_365, salesforce, slack).
+- ransomware
+- search and filter backup entities by type (user/group/drive), status (active/archived/disabled), and platform. use for auditing backup coverage gaps.
+- microsoft 365
+- saas security
+- filter backup entities
+- activate entity backup
+- compliance
+- disable entity backup
 - disable backup for one or more entities — backup stops and data retention ceases.
 - backup
-- update entity status
-- archive one or more entities in spinone — backup stops but existing data is retained.
+- spin ai
+- backup entity management
 slug: saas-data-protection
 source_filename: saas-data-protection.yaml
 source_heading: Capability Spec

@@ -1,40 +1,50 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that joins a market-data shape with Bloomberg + Tradeweb sample inputs and returns a deterministic, schema-strict output for an AI risk reviewer.
+description: A bridge capability joining Bloomberg AIM/BVAL with Tradeweb liquidity into one deterministic cross-source object for portfolio/risk agents.
 layout: capability
 name: Bloomberg Tradeweb Cross Source Deterministic Bridge
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: get-cross-source
+  path: /securities/{{security_id}}/cross-source
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- api integration
 - spec-driven integration
+- tradeweb
+- get valuations
+- mcp
 - capabilities
-- a capability that joins a market-data shape with bloomberg + tradeweb sample inputs and returns a deterministic, schema-strict output for an ai risk reviewer.
-- example op
+- bloomberg
+- naftiko
+- get cross source
+- api integration
+- get liquidity
 - governance
+- ai
+- bridge
 slug: bloomberg-tradeweb-cross-source-deterministic-bridge
 source_filename: bloomberg-tradeweb-cross-source-deterministic-bridge.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bloomberg Tradeweb Cross Source Deterministic Bridge\n  description: A capability that joins a market-data shape with Bloomberg + Tradeweb sample inputs and returns a deterministic, schema-strict output for an AI risk reviewer.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bloomberg-tradeweb-cross-source-deterministic-bridge-rest\n    description: REST API for Bloomberg Tradeweb Cross Source Deterministic Bridge.\n\
-  \    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bloomberg-tradeweb-cross-source-deterministic-bridge-mcp\n    description: MCP server exposing Bloomberg Tradeweb Cross Source Deterministic Bridge for AI agents.\n    tools:\n    - name: example\n      description: A capability that joins a market-data shape with Bloomberg + Tradeweb sample inputs and returns a deterministic, schema-strict output for an AI risk reviewer.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bloomberg-tradeweb-cross-source-deterministic-bridge-skills\n    description: Agent Skill bundle for Bloomberg Tradeweb Cross Source Deterministic Bridge.\n    skills:\n    - name: bloomberg-tradeweb-cross-source-deterministic-bridge\n      description: A\
-  \ capability that joins a market-data shape with Bloomberg + Tradeweb sample inputs and returns a deterministic, schema-strict output for an AI risk reviewer.\n      location: file:///opt/naftiko/skills/bloomberg-tradeweb-cross-source-deterministic-bridge\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that joins a market-data shape with Bloomberg + Tradeweb sample inputs and returns a deterministic, schema-strict output for an AI risk reviewer.\n        from:\n          sourceNamespace: bloomberg-tradeweb-cross-source-deterministic-bridge-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bloomberg Tradeweb Cross Source Deterministic Bridge\n  description: A bridge capability joining Bloomberg AIM/BVAL with Tradeweb liquidity into one deterministic cross-source object for portfolio/risk agents.\n  tags: [Naftiko, Bloomberg, Tradeweb, Bridge]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: bloomberg-env\n  keys: {BLOOMBERG_TOKEN: BLOOMBERG_TOKEN}\n- namespace: tradeweb-env\n  keys: {TRADEWEB_TOKEN: TRADEWEB_TOKEN}\ncapability:\n  consumes:\n  - namespace: bval\n    type: http\n    baseUri: https://api.bloomberg.com\n    authentication: {type: bearer, token: '{{BLOOMBERG_TOKEN}}'}\n    resources:\n    - {name: valuations, path: /eap/bval/v1/valuations, operations: [{name: get-valuations, method: POST}]}\n  - namespace: tradeweb\n    type: http\n    baseUri: https://api.tradeweb.com\n    authentication: {type: bearer, token: '{{TRADEWEB_TOKEN}}'}\n    resources:\n    - name: liquidity\n      path:\
+  \ /v1/liquidity/{{security_id}}\n      operations:\n      - {name: get-liquidity, method: GET, inputParameters: [{name: security_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bloomberg-tradeweb-cross-source-deterministic-bridge-rest\n    description: REST surface for cross-source valuation+liquidity.\n    resources:\n    - name: cross-source\n      path: /securities/{{security_id}}/cross-source\n      operations:\n      - {method: GET, name: get-cross-source, inputParameters: [{name: security_id, in: path, type: string}], call: bval.get-valuations}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bloomberg-tradeweb-cross-source-deterministic-bridge-mcp\n    description: MCP for cross-source bridge.\n    tools:\n    - {name: get-valuations, hints: {readOnly: true}, call: bval.get-valuations}\n    - name: get-liquidity\n      hints: {readOnly: true}\n      inputParameters: [{name: security_id, type: string, required:\
+  \ true}]\n      call: tradeweb.get-liquidity\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bloomberg-tradeweb-cross-source-deterministic-bridge-skills\n    description: Skill for cross-source bridge.\n    skills:\n    - name: bloomberg-tradeweb-cross-source-deterministic-bridge\n      description: Cross-source valuation + liquidity.\n      location: file:///opt/naftiko/skills/bloomberg-tradeweb-cross-source-deterministic-bridge\n      allowed-tools: get-valuations,get-liquidity\n      tools:\n      - {name: get-valuations, from: {sourceNamespace: bloomberg-tradeweb-cross-source-deterministic-bridge-mcp, action: get-valuations}}\n      - {name: get-liquidity, from: {sourceNamespace: bloomberg-tradeweb-cross-source-deterministic-bridge-mcp, action: get-liquidity}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/bloomberg-tradeweb-cross-source-deterministic-bridge.yaml
 tags:
 - Naftiko
+- Bloomberg
+- Tradeweb
+- Bridge
 tools:
-- description: A capability that joins a market-data shape with Bloomberg + Tradeweb sample inputs and returns a deterministic, schema-strict output for an AI risk reviewer.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-valuations
+- description: ''
+  hints:
+    readOnly: true
+  name: get-liquidity
 ---

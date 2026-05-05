@@ -45,41 +45,41 @@ personas: []
 provider_name: Software AG
 provider_slug: software-ag
 search_terms:
-- activate an api to expose it to api consumers
-- integration platform
-- deactivate api
-- software ag
-- get api
-- create a new api from spec file or url
+- developer portal
+- ipaas
 - applications consuming the api
-- api management
-- list apis
+- get a specific api definition
+- deactivate an api to remove it from consumer visibility
+- api deactivation control
+- activate an api to make it available to consumers
+- deactivate an api to hide it from consumers
+- publish api
+- create api
 - individual api management
 - publish an api to the webmethods developer portal for consumer discovery
-- enterprise integration
 - list all apis registered in the api gateway
-- get full details of a specific api including its openapi definition
-- manage apis in the webmethods api gateway
-- api deactivation control
-- api gateway
-- list all apis registered in the webmethods api gateway with optional filtering
-- activate an api to make it available to consumers
-- create api
-- api activation control
-- list all applications consuming this api
-- deactivate an api to hide it from consumers
-- list all consumer applications subscribed to a specific api
-- deactivate an api to remove it from consumer visibility
-- ipaas
-- api portal publishing
-- get a specific api definition
-- developer portal
-- create a new api in the api gateway from an openapi, swagger, raml, or wsdl spec
+- get api
 - webmethods
-- publish an api to the webmethods developer portal
+- get full details of a specific api including its openapi definition
+- list all apis registered in the webmethods api gateway with optional filtering
+- list all consumer applications subscribed to a specific api
+- api portal publishing
+- enterprise integration
+- list apis
+- api management
+- manage apis in the webmethods api gateway
+- api activation control
+- create a new api in the api gateway from an openapi, swagger, raml, or wsdl spec
+- create a new api from spec file or url
+- list all applications consuming this api
 - activate api
+- api gateway
+- software ag
+- deactivate api
+- publish an api to the webmethods developer portal
 - list api applications
-- publish api
+- activate an api to expose it to api consumers
+- integration platform
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

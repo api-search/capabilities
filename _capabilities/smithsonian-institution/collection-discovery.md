@@ -30,43 +30,43 @@ personas: []
 provider_name: Smithsonian Institution
 provider_slug: smithsonian-institution
 search_terms:
-- get available terms for search faceting
 - open data
-- search by subject category
-- research
-- get aggregate statistics about the smithsonian collections including total object counts, online media counts, and open access availability
-- search collections
-- search smithsonian art and design collections specifically
-- get complete metadata for a specific smithsonian collection item including description, media images, provenance, and classification data
-- museums
 - get collection statistics and metrics
-- smithsonian institution
-- search smithsonian history and cultural collections
-- get terms
-- browse facet terms
-- get available facet values for filtering searches by culture, place, object type, date, topic, or museum unit
-- category-filtered search
-- cultural heritage
-- full-text collection search
-- search by category
-- get metrics
-- search science and technology
-- search facet terms
-- education
-- search across all 22 million smithsonian collection items including artworks, natural history specimens, cultural objects, and archival materials
-- natural history
-- search smithsonian science and technology collections
-- search history and culture
-- get detailed metadata for a collection item
-- search across all smithsonian collections
 - individual collection item
-- get collection item
-- search art and design
-- collections
+- search across all smithsonian collections
 - collection statistics
-- get item
-- art
+- full-text collection search
+- research
+- get metrics
+- search collections
+- natural history
+- category-filtered search
 - get collection stats
+- search smithsonian science and technology collections
+- museums
+- search by category
+- search by subject category
+- search smithsonian history and cultural collections
+- browse facet terms
+- get collection item
+- art
+- get terms
+- get aggregate statistics about the smithsonian collections including total object counts, online media counts, and open access availability
+- get available terms for search faceting
+- search facet terms
+- get complete metadata for a specific smithsonian collection item including description, media images, provenance, and classification data
+- collections
+- search smithsonian art and design collections specifically
+- get detailed metadata for a collection item
+- search across all 22 million smithsonian collection items including artworks, natural history specimens, cultural objects, and archival materials
+- education
+- search science and technology
+- get item
+- search history and culture
+- cultural heritage
+- search art and design
+- smithsonian institution
+- get available facet values for filtering searches by culture, place, object type, date, topic, or museum unit
 slug: collection-discovery
 source_filename: collection-discovery.yaml
 source_heading: Capability Spec

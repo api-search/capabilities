@@ -10,25 +10,25 @@ personas: []
 provider_name: Amazon Lake Formation
 provider_slug: amazon-lake-formation
 search_terms:
-- resources list resources
-- registers an amazon s3 path as a data lake location managed by lake formation.
-- resources register resource
-- access control
-- lists the resources registered as managed by lake formation.
-- analytics
-- retrieves the current data access role for the given resource registered in lake formation.
-- amazon lake formation
-- integrates api into applications
 - manages resources and configurations
+- integrates api into applications
 - aws
-- resources describe resource
-- unified workflow for amazon lake formation resource management
-- Developer
 - s3
+- analytics
+- Developer
+- retrieves the current data access role for the given resource registered in lake formation.
+- workflow
+- registers an amazon s3 path as a data lake location managed by lake formation.
+- resources describe resource
+- data lake
+- access control
 - Administrator
 - data governance
-- data lake
-- workflow
+- resources register resource
+- unified workflow for amazon lake formation resource management
+- resources list resources
+- amazon lake formation
+- lists the resources registered as managed by lake formation.
 slug: amazon-lake-formation-workflow
 source_filename: amazon-lake-formation-workflow.yaml
 source_heading: Capability Spec

@@ -57,65 +57,65 @@ personas: []
 provider_name: Smartproxy
 provider_slug: smartproxy
 search_terms:
-- get traffic usage for a specific sub-user
-- smartproxy
-- web scraping
-- update a proxy sub-user's password or traffic limit
-- get allocated traffic
-- list all available proxy endpoints with hostnames, ports, and protocols
-- traffic usage monitoring
-- add whitelisted ips
-- get whitelisted ips
-- proxies
-- list proxy endpoints by type
-- create sub user
-- delete proxy sub user
-- get total traffic allocation
-- get traffic consumption metrics for a specific proxy sub-user
-- get total traffic gb allocated and consumed across all sub-users
-- list all ip addresses whitelisted for credential-free proxy authentication
+- account management
+- get subscriptions
+- get active subscription plans and usage limits
+- filtered endpoint discovery
 - list proxy sub users
-- create a new proxy sub-user with specified service type and optional traffic limit
-- list all available proxy endpoints
-- create proxy sub user
-- traffic management
-- update proxy sub user
-- create a new proxy sub-user
+- manage specific sub-user
 - subscription management
-- list all proxy sub-user accounts with their service types and traffic status
+- proxies
+- list all ip addresses whitelisted for credential-free proxy authentication
+- smartproxy
+- permanently delete a proxy sub-user account
+- get proxy endpoints filtered by connection type (random, sticky, datacenter, mobile)
+- list proxy endpoints by type
+- create proxy sub user
 - datacenter proxies
+- create sub user
+- list all proxy sub-user accounts with their service types and traffic status
+- update a proxy sub-user's password or traffic limit
+- web scraping
+- get allocated traffic
+- delete proxy sub user
+- update proxy sub user
+- list all available proxy endpoints
+- get sub users
+- add whitelisted ips
+- list all available proxy endpoints with hostnames, ports, and protocols
 - data collection
-- list proxy endpoints
-- delete a proxy sub-user account
+- network infrastructure
+- get sub user traffic
+- remove an ip address from the proxy authentication whitelist
+- proxy endpoint discovery
+- list all whitelisted ip addresses
+- get proxy endpoints filtered by type
+- create a new proxy sub-user with specified service type and optional traffic limit
+- traffic management
+- create a new proxy sub-user
+- get total traffic gb allocated and consumed across all sub-users
+- get total traffic allocation
 - list whitelisted ips
 - get active subscription plans, traffic limits, and validity dates
-- network infrastructure
-- delete sub user
-- list all proxy sub-user accounts
-- overall traffic allocation
-- get subscriptions
-- get proxy endpoints filtered by connection type (random, sticky, datacenter, mobile)
-- residential proxies
-- account management
-- permanently delete a proxy sub-user account
-- get sub users
-- filtered endpoint discovery
+- list proxy endpoints
+- get whitelisted ips
 - ip whitelist management
 - mobile proxies
-- add one or more ip addresses to the proxy authentication whitelist
-- add ip addresses to the whitelist
-- get sub user traffic
-- manage specific sub-user
-- get endpoints by type
-- get endpoints
-- get proxy endpoints filtered by type
-- get total traffic allocation across all sub-users
-- proxy endpoint discovery
-- remove an ip address from the proxy authentication whitelist
-- list all whitelisted ip addresses
+- delete a proxy sub-user account
+- residential proxies
 - remove whitelisted ip
+- list all proxy sub-user accounts
 - manage proxy sub-user accounts
-- get active subscription plans and usage limits
+- add one or more ip addresses to the proxy authentication whitelist
+- get endpoints
+- add ip addresses to the whitelist
+- get traffic consumption metrics for a specific proxy sub-user
+- get traffic usage for a specific sub-user
+- get endpoints by type
+- overall traffic allocation
+- get total traffic allocation across all sub-users
+- delete sub user
+- traffic usage monitoring
 slug: proxy-account-management
 source_filename: proxy-account-management.yaml
 source_heading: Capability Spec

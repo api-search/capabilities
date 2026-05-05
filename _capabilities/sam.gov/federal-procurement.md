@@ -29,31 +29,31 @@ personas: []
 provider_name: SAM.gov
 provider_slug: sam.gov
 search_terms:
-- get list of cities for vendor address validation
-- vendor registration
-- location services
-- zip code validation against sam.gov data
-- look up and validate city names against sam.gov for vendor address submission
-- get list of states for vendor address validation
-- federal government
-- contracts
-- government
-- validated city data from sam.gov
-- look up and validate us states and international provinces against sam.gov
-- location validation
-- lookup cities
-- validate a zip code for sam.gov submission
-- gsa
-- validate zip code
-- lookup states
-- sam.gov
-- get cities
 - validated state and province data from sam.gov
-- federal procurement
-- procurement
-- get states
-- entity management
+- federal government
 - validate a zip code against sam.gov location data for vendor registration accuracy
+- government
+- get cities
+- gsa
+- vendor registration
+- look up and validate city names against sam.gov for vendor address submission
+- look up and validate us states and international provinces against sam.gov
+- zip code validation against sam.gov data
+- validate a zip code for sam.gov submission
+- procurement
+- location services
+- get list of cities for vendor address validation
+- validated city data from sam.gov
+- validate zip code
+- entity management
+- federal procurement
+- lookup states
+- contracts
+- location validation
+- get states
+- get list of states for vendor address validation
+- lookup cities
+- sam.gov
 slug: federal-procurement
 source_filename: federal-procurement.yaml
 source_heading: Capability Spec

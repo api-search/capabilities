@@ -1,40 +1,49 @@
 ---
 categories: []
 consumed_apis: []
-description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+description: A capability composing ESB / iPaaS endpoints (MuleSoft, Boomi) into a unified integration context for enterprise agents.
 layout: capability
 name: Enterprise Integration Context Composition
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-integrations
+  path: /integrations
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- api integration
 - spec-driven integration
+- mulesoft
+- integration
+- mcp
 - capabilities
-- example op
-- compose ai context (#5) capability stitching marketing + ops + supply-chain apis into one composed context object — the integration story that addresses enterprise-integration sprawl.
+- list integrations
+- naftiko
+- get integration
+- boomi
+- api integration
 - governance
+- ai
 slug: enterprise-integration-context-composition
 source_filename: enterprise-integration-context-composition.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Enterprise Integration Context Composition\n  description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: enterprise-integration-context-composition-rest\n    description: REST API for Enterprise Integration Context Composition.\n  \
-  \  resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: enterprise-integration-context-composition-mcp\n    description: MCP server exposing Enterprise Integration Context Composition for AI agents.\n    tools:\n    - name: example\n      description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: enterprise-integration-context-composition-skills\n    description: Agent Skill bundle for Enterprise Integration Context Composition.\n    skills:\n    - name: enterprise-integration-context-composition\n      description: Compose AI Context (#5) capability\
-  \ stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.\n      location: file:///opt/naftiko/skills/enterprise-integration-context-composition\n      allowed-tools: example\n      tools:\n      - name: example\n        description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.\n        from:\n          sourceNamespace: enterprise-integration-context-composition-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Enterprise Integration Context Composition\n  description: A capability composing ESB / iPaaS endpoints (MuleSoft, Boomi) into a unified integration context for enterprise agents.\n  tags: [Naftiko, MuleSoft, Boomi, Integration]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: mulesoft-env\n  keys: {MULESOFT_TOKEN: MULESOFT_TOKEN}\ncapability:\n  consumes:\n  - namespace: mulesoft\n    type: http\n    baseUri: https://anypoint.mulesoft.com\n    authentication: {type: bearer, token: '{{MULESOFT_TOKEN}}'}\n    resources:\n    - {name: applications, path: /cloudhub/api/v2/applications, operations: [{name: list-applications, method: GET}]}\n    - name: application\n      path: /cloudhub/api/v2/applications/{{domain}}\n      operations:\n      - {name: get-application, method: GET, inputParameters: [{name: domain, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: enterprise-integration-context-composition-rest\n\
+  \    description: REST surface for integration context.\n    resources:\n    - {name: integrations, path: /integrations, operations: [{method: GET, name: list-integrations, call: mulesoft.list-applications}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: enterprise-integration-context-composition-mcp\n    description: MCP for integration context.\n    tools:\n    - {name: list-integrations, hints: {readOnly: true}, call: mulesoft.list-applications}\n    - name: get-integration\n      hints: {readOnly: true}\n      inputParameters: [{name: domain, type: string, required: true}]\n      call: mulesoft.get-application\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: enterprise-integration-context-composition-skills\n    description: Skill for enterprise integration context.\n    skills:\n    - name: enterprise-integration-context-composition\n      description: Enterprise integration context.\n      location: file:///opt/naftiko/skills/enterprise-integration-context-composition\n\
+  \      allowed-tools: list-integrations,get-integration\n      tools:\n      - {name: list-integrations, from: {sourceNamespace: enterprise-integration-context-composition-mcp, action: list-integrations}}\n      - {name: get-integration, from: {sourceNamespace: enterprise-integration-context-composition-mcp, action: get-integration}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/enterprise-integration-context-composition.yaml
 tags:
 - Naftiko
+- MuleSoft
+- Boomi
+- Integration
 tools:
-- description: Compose AI Context (#5) capability stitching marketing + ops + supply-chain APIs into one composed context object — the integration story that addresses enterprise-integration sprawl.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-integrations
+- description: ''
+  hints:
+    readOnly: true
+  name: get-integration
 ---

@@ -51,45 +51,45 @@ personas: []
 provider_name: Google Search Console
 provider_slug: google-search-console
 search_terms:
-- get details for a specific search console site.
-- inspect a url for index status, crawl info, mobile usability, and rich results.
-- get details for a specific sitemap.
-- list sitemaps for a site.
-- submit sitemap
-- list sites
-- delete a previously submitted sitemap.
-- submit a sitemap for crawling.
-- analytics
-- inspect a url for index status and rich results.
-- get sitemap details.
-- add a site to search console.
-- add site
 - webmaster tools
-- manage sitemaps.
-- get details for a specific site.
-- delete sitemap
-- inspect url
-- search
-- list sitemaps submitted for a site.
-- google
-- manage search console sites.
-- query search analytics
-- query search traffic data.
-- list sitemaps
-- inspect urls for indexing status.
-- delete a sitemap.
-- submit a sitemap.
-- list all search console sites.
+- list sites
 - search console
-- list all search console sites for the authenticated user.
-- query search traffic data with filters and dimensions.
-- query search analytics data with filters.
-- seo
-- delete site
-- get sitemap
+- manage search console sites.
+- inspect url
 - remove a site from search console.
+- analytics
+- list sitemaps
+- google
+- delete a sitemap.
+- inspect a url for index status, crawl info, mobile usability, and rich results.
+- delete site
+- list sitemaps for a site.
+- inspect a url for index status and rich results.
+- list sitemaps submitted for a site.
 - webmaster
+- delete a previously submitted sitemap.
 - get site
+- delete sitemap
+- list all search console sites.
+- inspect urls for indexing status.
+- get details for a specific search console site.
+- query search analytics data with filters.
+- query search traffic data.
+- add site
+- seo
+- search
+- manage sitemaps.
+- query search analytics
+- list all search console sites for the authenticated user.
+- submit sitemap
+- get sitemap
+- add a site to search console.
+- get details for a specific sitemap.
+- submit a sitemap for crawling.
+- get sitemap details.
+- query search traffic data with filters and dimensions.
+- submit a sitemap.
+- get details for a specific site.
 slug: seo-management
 source_filename: seo-management.yaml
 source_heading: Capability Spec

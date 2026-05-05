@@ -9,16 +9,16 @@ personas: []
 provider_name: Urban Outfitters
 provider_slug: urban-outfitters
 search_terms:
-- retail
-- independent fashion and lifestyle brands selling through the uo mrkt marketplace
 - end-to-end retail commerce workflow combining affiliate marketing and marketplace seller management for the urban outfitters ecosystem
+- content creators, bloggers, and influencers promoting urban outfitters products for commission
+- independent fashion and lifestyle brands selling through the uo mrkt marketplace
+- developers integrating urban outfitters affiliate or marketplace apis into applications
+- apparel
 - ecommerce
+- retail
+- marketplace
 - affiliate
 - fashion
-- marketplace
-- developers integrating urban outfitters affiliate or marketplace apis into applications
-- content creators, bloggers, and influencers promoting urban outfitters products for commission
-- apparel
 slug: retail-commerce
 source_filename: retail-commerce.yaml
 source_heading: Capability Spec

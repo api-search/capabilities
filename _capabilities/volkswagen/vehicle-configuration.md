@@ -53,64 +53,64 @@ personas: []
 provider_name: Volkswagen
 provider_slug: volkswagen
 search_terms:
-- list vehicle types.
-- list configurable options.
-- get available config choices
-- list countries
-- get wltp fuel and emissions data.
-- get configuration images
-- automotive
-- get order information
-- get car price and specs
-- list vw brands
-- configurator
-- get price and specs for a configuration.
-- check if a combination of selected options forms a buildable vehicle.
-- list supported markets.
-- list vw group brands (volkswagen, audi, seat, skoda, cupra, etc.) available in a market.
-- browse vehicle models for a vw group brand in a specific market.
-- get type options
-- vehicle configuration
-- list models for a brand.
-- get all configurable options for a vehicle type (colors, wheels, interiors, packages).
 - fix car config
-- get which options are available, unavailable, or required for the current configuration.
-- volkswagen
-- get image urls showing the configured vehicle with selected exterior color and options.
-- get full pricing, standard equipment list, and technical specifications for a configuration.
-- check buildability
-- vw group brands in a market.
-- list vw markets
-- list models by brand
-- get car images
-- vehicles
-- list options by type
-- get vehicle image urls.
+- validate a vehicle configuration.
 - product data
-- vehicle images for configuration.
-- check if configuration is buildable.
-- list types by model
-- explore trim levels and engine variants for a vehicle model.
 - list brands available in the country.
-- models by brand and market.
-- fix an invalid configuration by finding the nearest buildable option combination.
+- get order data for configuration.
+- list models for a brand.
+- get configuration images
+- volkswagen
+- list models by brand
+- get all configurable options for a vehicle type (colors, wheels, interiors, packages).
+- vehicle configuration
+- list vehicle types.
+- get order information
+- list vw group brands (volkswagen, audi, seat, skoda, cupra, etc.) available in a market.
+- list types by model
+- list countries
+- vw group brands in a market.
+- get type options
+- explore trim levels and engine variants for a vehicle model.
+- browse vehicle models for a vw group brand in a specific market.
+- get car images
+- list all countries where volkswagen okapi vehicle configuration is available.
+- list supported markets.
+- list vw markets
+- get full pricing, standard equipment list, and technical specifications for a configuration.
+- vehicle images for configuration.
+- configurator
+- get car price and specs
+- browse vehicle models
 - automobiles
 - get wltp fuel consumption and co2 emissions data for a vehicle configuration.
-- get order data for configuration.
-- get car emissions
-- list all countries where volkswagen okapi vehicle configuration is available.
-- validate car config
-- browse vehicle models
-- sales
-- list brands by country
-- cars
 - get wltp data
-- wltp emissions data.
-- list countries where vw okapi is available.
-- explore vehicle types
+- get wltp fuel and emissions data.
 - vehicle types by model.
-- validate a vehicle configuration.
+- get which options are available, unavailable, or required for the current configuration.
+- automotive
+- list vw brands
+- list configurable options.
+- wltp emissions data.
 - configurable options for a type.
+- check if a combination of selected options forms a buildable vehicle.
+- check buildability
+- list options by type
+- explore vehicle types
+- get car emissions
+- sales
+- fix an invalid configuration by finding the nearest buildable option combination.
+- get available config choices
+- cars
+- get image urls showing the configured vehicle with selected exterior color and options.
+- list countries where vw okapi is available.
+- check if configuration is buildable.
+- get price and specs for a configuration.
+- get vehicle image urls.
+- validate car config
+- list brands by country
+- vehicles
+- models by brand and market.
 slug: vehicle-configuration
 source_filename: vehicle-configuration.yaml
 source_heading: Capability Spec

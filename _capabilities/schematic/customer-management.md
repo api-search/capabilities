@@ -42,45 +42,45 @@ personas: []
 provider_name: Schematic
 provider_slug: schematic
 search_terms:
-- finops
-- track usage event
-- get the most-used product features by usage count
-- feature management
-- create or update a company record using external identifiers (stripe id, salesforce id, etc.)
-- submit a usage event for metered feature consumption tracking
-- list customer companies
 - saas
-- entitlements
-- get plan adoption and growth metrics
-- usage event tracking
-- get plan growth
 - usage tracking
-- create or update a user record
-- customer company records
-- get summary analytics across features, plans, and companies
-- list companies
-- pricing
-- get analytics summary
-- create event
-- upsert user
+- finops
 - list users
-- metering
-- feature flags
-- get top features by usage
-- customer users
-- create or update a user
-- get top features
-- get insights summary
 - list customer companies in schematic
-- customer management
-- track a usage event
+- create event
 - billing
 - usage analytics
-- list users associated with companies
 - get plan growth metrics
-- schematic
+- usage event tracking
+- get top features
+- create or update a user
+- track usage event
+- get summary analytics across features, plans, and companies
+- feature management
 - create or update a company by external keys
+- schematic
+- metering
+- get analytics summary
+- list customer companies
+- track a usage event
+- feature flags
+- customer company records
+- customer users
+- upsert user
+- submit a usage event for metered feature consumption tracking
+- get plan adoption and growth metrics
 - upsert company
+- list companies
+- get top features by usage
+- list users associated with companies
+- create or update a company record using external identifiers (stripe id, salesforce id, etc.)
+- create or update a user record
+- entitlements
+- get insights summary
+- customer management
+- pricing
+- get the most-used product features by usage count
+- get plan growth
 slug: customer-management
 source_filename: customer-management.yaml
 source_heading: Capability Spec

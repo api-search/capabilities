@@ -58,51 +58,51 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- youtube
-- video
-- subscribe
-- delete comment
-- list subscriptions
-- list youtube channels
-- manage channel information
-- subscribe to a youtube channel
-- create a new comment thread
-- manage channel subscriptions
-- subscribe to channel
-- unsubscribe from a channel
-- set moderation status on comments
-- videos
-- moderation
 - community
-- update channel settings
-- create comment
-- create comment thread
-- unsubscribe from channel
-- list channel subscriptions
-- list channels
-- update comment thread
-- list comments on a video or channel
-- set moderation status
-- unsubscribe
-- post a new comment
-- media
-- update comment
-- google
-- update a comment
-- subscriptions
-- manage comment threads
-- delete a comment
-- comments
+- subscribe to channel
 - social
-- unsubscribe from a youtube channel
-- update a comment thread
-- update channel
-- update an existing comment
-- manage individual comments
-- subscribe to a channel
-- list comment threads
-- streaming
+- manage comment threads
+- create a new comment thread
 - list comments
+- create comment
+- post a new comment
+- subscribe
+- videos
+- comments
+- list comment threads
+- update channel
+- update channel settings
+- google
+- manage channel subscriptions
+- subscriptions
+- streaming
+- list youtube channels
+- unsubscribe from a youtube channel
+- list channels
+- manage individual comments
+- update comment
+- delete a comment
+- set moderation status
+- list channel subscriptions
+- media
+- unsubscribe
+- unsubscribe from channel
+- delete comment
+- set moderation status on comments
+- update a comment thread
+- create comment thread
+- update an existing comment
+- youtube
+- unsubscribe from a channel
+- manage channel information
+- subscribe to a channel
+- video
+- list subscriptions
+- list comments on a video or channel
+- moderation
+- subscribe to a youtube channel
+- update comment thread
+- update a comment
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

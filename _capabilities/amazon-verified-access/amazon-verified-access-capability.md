@@ -10,8 +10,8 @@ provider_name: Amazon Verified Access
 provider_slug: amazon-verified-access
 search_terms:
 - zero trust
-- security
 - access management
+- security
 slug: amazon-verified-access-capability
 source_filename: amazon-verified-access-capability.yaml
 source_heading: Capability Spec

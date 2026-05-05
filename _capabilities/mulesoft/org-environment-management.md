@@ -25,23 +25,23 @@ personas: []
 provider_name: MuleSoft
 provider_slug: mulesoft
 search_terms:
-- list environments within an organization
-- get details for a specific organization
-- list all environments (production, sandbox, design) within an anypoint organization
-- api gateway
 - create a new environment within a mulesoft anypoint organization
-- api management
-- list all accessible anypoint platform organizations
 - get details for a specific anypoint environment including type and client id
-- get details for a specific environment
-- list all mulesoft anypoint organizations accessible to the authenticated user
-- create environment
-- enterprise
-- get details for a specific anypoint organization including entitlements and settings
-- integration
-- get organization
-- get environment
 - list organizations
+- get details for a specific anypoint organization including entitlements and settings
+- list all mulesoft anypoint organizations accessible to the authenticated user
+- get details for a specific organization
+- get organization
+- create environment
+- api gateway
+- integration
+- api management
+- get details for a specific environment
+- list all environments (production, sandbox, design) within an anypoint organization
+- get environment
+- enterprise
+- list environments within an organization
+- list all accessible anypoint platform organizations
 - list environments
 slug: org-environment-management
 source_filename: org-environment-management.yaml

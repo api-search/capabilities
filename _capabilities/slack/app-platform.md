@@ -31,44 +31,44 @@ personas: []
 provider_name: Slack
 provider_slug: slack
 search_terms:
-- automation
-- list apps
-- t1
-- complete a workflow function.
-- test api connectivity.
-- get bot info
-- app management.
-- manage workflows
-- list installed apps.
-- open a view.
-- bots
-- workflow management.
-- view management.
-- list workflows
-- productivity
-- open a dialog.
-- open dialog
-- list workflows.
-- complete function
-- slack
-- manage voice/video calls.
-- open a modal view.
-- rtm connect
-- chat
-- collaboration
-- connect to real-time messaging.
-- messaging
-- manage calls
-- list apps.
-- api test
 - get bot information.
-- team communication
-- manage assistant
 - platform
-- app development
-- manage ai assistant threads.
-- manage workflows.
+- slack
+- workflow management.
+- connect to real-time messaging.
+- bots
+- get bot info
+- list apps.
+- manage voice/video calls.
+- list installed apps.
+- open a modal view.
+- open a dialog.
+- list workflows.
+- t1
+- open dialog
+- api test
+- view management.
+- open a view.
+- chat
 - open view
+- list workflows
+- manage assistant
+- manage workflows.
+- list apps
+- rtm connect
+- app management.
+- complete a workflow function.
+- manage calls
+- manage workflows
+- complete function
+- team communication
+- app development
+- test api connectivity.
+- automation
+- productivity
+- manage ai assistant threads.
+- collaboration
+- messaging
 slug: app-platform
 source_filename: app-platform.yaml
 source_heading: Capability Spec

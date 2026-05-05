@@ -29,32 +29,32 @@ personas: []
 provider_name: Traceable
 provider_slug: traceable
 search_terms:
-- api testing
-- download openapi specification discovered by traceable for a service or domain
-- security
 - execute mcp tool
-- query traceable for discovered api endpoints with risk scores and authentication status
-- api protection
-- execute graphql query for security analytics
-- api discovery
+- security
+- query discovered apis
+- execute traceable mcp tools for ai-assisted security analysis
+- query traceable for api threat actor activity, attack patterns, and incidents
+- download discovered api specification
+- observability
+- api testing
 - download api spec
-- graphql
+- api discovery
+- threat detection
+- execute graphql queries for api discovery, vulnerabilities, and threat data
+- execute graphql query
 - execute an mcp security analysis tool
 - query vulnerabilities
-- execute traceable mcp tools for ai-assisted security analysis
-- execute graphql queries for api discovery, vulnerabilities, and threat data
-- observability
-- query discovered apis
-- execute graphql query
-- vulnerability management
-- query threat activity
-- threat detection
-- security operations
-- execute a traceable mcp tool for ai-assisted security analysis
-- api security
 - download api specifications discovered by traceable
-- download discovered api specification
-- query traceable for api threat actor activity, attack patterns, and incidents
+- security operations
+- query traceable for discovered api endpoints with risk scores and authentication status
+- vulnerability management
+- graphql
+- api protection
+- api security
+- execute graphql query for security analytics
+- download openapi specification discovered by traceable for a service or domain
+- query threat activity
+- execute a traceable mcp tool for ai-assisted security analysis
 - query traceable for api vulnerability findings with owasp classification and severity
 slug: api-security-operations
 source_filename: api-security-operations.yaml

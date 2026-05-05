@@ -31,40 +31,40 @@ personas: []
 provider_name: Amazon WorkMail
 provider_slug: amazon-workmail
 search_terms:
-- IT Administrator
-- create user
-- administration
 - list all amazon workmail organizations in the account.
-- manages workmail infrastructure, user provisioning, and security policies.
-- business communication
+- group management.
+- list organizations
+- list all workmail organizations.
+- aws
+- list users
+- create a new workmail user with mailbox.
+- create user
 - list email distribution groups in an organization.
+- list mobile device access control rules.
+- enterprise
+- manages workmail infrastructure, user provisioning, and security policies.
+- mobile device access control and compliance
+- workmail organization management.
+- email
+- list email groups.
+- create a new email user.
+- enterprise email provisioning and management
+- administration
+- exchange
+- list mobile device access rules
+- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
+- Email Operations
+- handles day-to-day email user and group management.
+- list mobile device access rules.
+- IT Administrator
+- business communication
+- user provisioning and management.
+- mobile device access control.
 - list users in an organization.
 - list users in a workmail organization.
 - calendar
-- handles day-to-day email user and group management.
-- mobile device access control.
-- Email Operations
-- list all workmail organizations.
-- aws
-- exchange
-- create a new email user.
-- workflow for it administrators to manage workmail organizations, users, groups, and mobile device access policies.
-- create a new workmail user with mailbox.
-- list users
-- enterprise
 - it administration of email infrastructure
-- workmail organization management.
-- user provisioning and management.
-- list organizations
-- group management.
-- list mobile device access rules
-- list mobile device access rules.
-- list mobile device access control rules.
-- enterprise email provisioning and management
-- email
-- mobile device access control and compliance
 - list groups
-- list email groups.
 slug: email-management
 source_filename: email-management.yaml
 source_heading: Capability Spec

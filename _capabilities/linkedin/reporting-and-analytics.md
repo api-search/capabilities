@@ -20,35 +20,35 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- marketing
-- retrieve learning activity reports aggregated by account, group, individual, or content.
-- sales intelligence, lead management, and crm integration.
-- retrieve ad analytics by various pivots.
-- uses sales navigator for lead generation and crm sync.
-- integrates linkedin authentication and sharing into applications.
-- analytics
-- get ad analytics
-- employee development tracking and content access.
-- get learning activity reports
-- data portability and advertiser transparency for dma.
-- business
-- manages b2b ad campaigns and audience targeting on linkedin.
-- tracks employee learning activity and completions.
-- message archiving and regulatory communications governance.
-- retrieve ad analytics by various pivots and dimensions.
 - professional networking
-- posts jobs and manages candidates through ats integrations.
-- recruiting
-- b2b advertising, audience targeting, and campaign analytics.
-- reporting
-- archives communications for regulatory compliance.
-- linkedin
 - authentication, sharing, and verification for consumer apps.
-- social media
-- careers
+- archives communications for regulatory compliance.
+- sales intelligence, lead management, and crm integration.
+- data portability and advertiser transparency for dma.
+- marketing
+- integrates linkedin authentication and sharing into applications.
+- linkedin
+- analytics
+- employee development tracking and content access.
+- retrieve learning activity reports aggregated by account, group, individual, or content.
+- posts jobs and manages candidates through ats integrations.
 - retrieve learning activity reports.
 - learning
+- b2b advertising, audience targeting, and campaign analytics.
+- careers
+- social media
+- manages b2b ad campaigns and audience targeting on linkedin.
 - job posting, recruiting, and applicant tracking.
+- message archiving and regulatory communications governance.
+- retrieve ad analytics by various pivots.
+- recruiting
+- get learning activity reports
+- retrieve ad analytics by various pivots and dimensions.
+- get ad analytics
+- uses sales navigator for lead generation and crm sync.
+- tracks employee learning activity and completions.
+- business
+- reporting
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

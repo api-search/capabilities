@@ -56,55 +56,55 @@ personas: []
 provider_name: Sigstore
 provider_slug: sigstore
 search_terms:
-- transparency log
-- certificate authority
-- get log entry
-- rekor get log entry
-- security
-- fulcio get trust bundle
-- create signing certificate
-- software supply chain
-- transparency log entries for signed artifacts
-- transparency log status and tree information
-- open source
 - devsecops
-- submit a signed artifact to the rekor transparency log to create an immutable audit record
-- request a short-lived x.509 signing certificate from fulcio using oidc identity token
-- search transparency log by artifact metadata
-- retrieve a specific rekor transparency log entry by uuid, including the inclusion proof
-- get the fulcio ca configuration including all supported oidc identity providers
-- cryptography
-- search log entries
-- search transparency log entries by uuid or log index
-- issue a short-lived x.509 signing certificate via fulcio
-- get the supported oidc identity providers for keyless signing
-- code signing
-- get ca configuration
-- fulcio get configuration
-- rekor get log info
-- retrieve the fulcio ca trust bundle
-- create log entry
-- retrieve a specific log entry including inclusion proof
-- get trust bundle
-- retrieve multiple rekor log entries by uuids or log indexes
-- containers
-- get log info
-- ca trust bundle for certificate verification
-- fulcio ca oidc issuer configuration
-- rekor search entries
-- get current rekor transparency log tree size and signed tree head information
-- get current log tree information and size
-- add a signed artifact to the rekor transparency log
-- search the rekor index to find log entries for a specific artifact hash or signer email
-- fulcio create signing certificate
-- retrieve the fulcio ca root and intermediate certificates for offline verification
-- search artifact
 - rekor search artifact
-- find log entries by artifact hash or signer identity
-- pki
-- rekor create log entry
+- create log entry
+- get current rekor transparency log tree size and signed tree head information
 - individual transparency log entry
+- containers
+- security
+- search log entries
+- search artifact
+- fulcio get configuration
+- get ca configuration
+- get log entry
+- open source
+- search transparency log by artifact metadata
+- fulcio get trust bundle
+- ca trust bundle for certificate verification
+- retrieve multiple rekor log entries by uuids or log indexes
+- get the fulcio ca configuration including all supported oidc identity providers
+- create signing certificate
+- cryptography
+- transparency log
+- rekor create log entry
+- fulcio create signing certificate
+- rekor get log info
 - short-lived signing certificate issuance
+- fulcio ca oidc issuer configuration
+- submit a signed artifact to the rekor transparency log to create an immutable audit record
+- get current log tree information and size
+- search the rekor index to find log entries for a specific artifact hash or signer email
+- code signing
+- issue a short-lived x.509 signing certificate via fulcio
+- retrieve a specific rekor transparency log entry by uuid, including the inclusion proof
+- transparency log status and tree information
+- request a short-lived x.509 signing certificate from fulcio using oidc identity token
+- retrieve a specific log entry including inclusion proof
+- search transparency log entries by uuid or log index
+- rekor search entries
+- certificate authority
+- get trust bundle
+- rekor get log entry
+- retrieve the fulcio ca root and intermediate certificates for offline verification
+- get log info
+- add a signed artifact to the rekor transparency log
+- transparency log entries for signed artifacts
+- software supply chain
+- find log entries by artifact hash or signer identity
+- get the supported oidc identity providers for keyless signing
+- retrieve the fulcio ca trust bundle
+- pki
 slug: software-supply-chain-security
 source_filename: software-supply-chain-security.yaml
 source_heading: Capability Spec

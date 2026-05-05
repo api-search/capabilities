@@ -82,78 +82,78 @@ personas: []
 provider_name: Super Micro Computer
 provider_slug: super-micro-computer
 search_terms:
-- get temperature sensor readings and fan speeds for a chassis
-- list all chassis in the data center
-- update account
-- reset manager
-- server management
-- list firmware inventory
-- servers
-- bmc manager management
-- restart the bmc management controller
-- hardware
 - list current firmware versions
-- firmware lifecycle management
 - reset system
-- get a specific bmc manager
-- create an event notification subscription
-- list all bmc user accounts and their roles
-- delete a bmc user account
-- ipmi
-- event notification subscriptions
-- list all bmc user accounts
-- subscribe to server events via webhook
-- create event subscription
-- initiate a bios or bmc firmware update from a specified uri
-- list all event subscriptions
-- chassis inventory
-- get bmc manager details including firmware version
-- chassis power data
-- system power control
-- get account
-- reset or power cycle a computer system
-- get real-time power consumption and supply status for a chassis
-- get chassis power
-- create account
-- cloud
-- update a user account
-- get chassis
-- computer system inventory and management
-- get a specific chassis
-- supermicro
-- list event subscriptions
-- list all computer systems managed by this bmc
-- list all server event notification subscriptions
-- list accounts
-- delete a user account
-- chassis thermal data
-- get manager
-- get health status and details of a specific computer system
-- list chassis
-- list all computer systems
-- get chassis thermal
-- get temperature and fan speed data
-- list current firmware versions for bios, bmc, and components
-- get system
-- create a new bmc user account with specified role
-- data center
-- get details of a specific computer system
-- bmc
-- list all chassis
-- delete account
-- list managers
-- redfish
-- list systems
-- get power consumption and supply data
-- list all bmc managers
-- perform firmware update
-- initiate firmware update
-- get a specific user account
-- infrastructure
-- fortune 500
+- list firmware inventory
 - reset or power cycle a server (on, forceoff, gracefulrestart, etc.)
+- bmc
+- get account
+- list accounts
+- get health status and details of a specific computer system
+- initiate a bios or bmc firmware update from a specified uri
+- cloud
+- list managers
+- list all bmc user accounts
+- list all bmc managers
+- get bmc manager details including firmware version
+- get details of a specific computer system
+- restart the bmc management controller
+- computer system inventory and management
+- get manager
+- create account
+- reset or power cycle a computer system
+- chassis inventory
+- list all server event notification subscriptions
+- get chassis power
+- get chassis
+- bmc manager management
+- perform firmware update
+- list all computer systems managed by this bmc
+- get system
+- get chassis thermal
+- chassis power data
+- servers
+- fortune 500
+- server management
+- list all chassis in the data center
+- get a specific bmc manager
+- reset manager
+- list chassis
+- chassis thermal data
+- event notification subscriptions
+- list current firmware versions for bios, bmc, and components
+- list event subscriptions
+- list all bmc user accounts and their roles
+- delete account
+- list all event subscriptions
+- data center
+- ipmi
+- get real-time power consumption and supply status for a chassis
+- list all computer systems
+- system power control
+- infrastructure
+- firmware lifecycle management
+- supermicro
+- get temperature and fan speed data
+- delete a user account
+- create a new bmc user account with specified role
+- delete a bmc user account
+- subscribe to server events via webhook
+- update account
+- update a user account
+- list all chassis
+- list systems
+- create an event notification subscription
+- create event subscription
+- initiate firmware update
 - bmc user account management
 - create a new bmc user account
+- get power consumption and supply data
+- get a specific user account
+- redfish
+- get temperature sensor readings and fan speeds for a chassis
+- hardware
+- get a specific chassis
 slug: server-management
 source_filename: server-management.yaml
 source_heading: Capability Spec

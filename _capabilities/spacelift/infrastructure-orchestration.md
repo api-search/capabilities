@@ -34,36 +34,36 @@ personas: []
 provider_name: Spacelift
 provider_slug: spacelift
 search_terms:
-- list policies
-- infrastructure deployment runs
+- list stacks
+- shared environment variable contexts
 - finops
-- list all governance policies in the account
-- list all worker pools and their worker health status
-- trigger a new deployment run on a stack
-- list all worker pools and their current worker status
-- trigger run
-- list all governance policies (opa/rego) enforcing infrastructure deployment rules
+- infrastructure stacks managed by spacelift
 - gitops
 - terraform
-- create run
-- list stacks
-- platform engineering
-- list all shared contexts containing environment variables and files for stacks
 - governance policies (opa/rego)
-- worker pools for running infrastructure jobs
-- list worker pools
-- list all infrastructure stacks with state and configuration
-- list all spacelift infrastructure stacks with their current state, repository, and deployment configuration
-- create a new infrastructure stack in spacelift connected to a source repository
-- infrastructure stacks managed by spacelift
-- list all shared contexts available for stack attachment
-- trigger a new infrastructure deployment run on a spacelift stack
-- shared environment variable contexts
-- devops
-- create a new infrastructure stack
-- infrastructure as code
-- create stack
+- trigger a new deployment run on a stack
+- list all shared contexts containing environment variables and files for stacks
+- list all worker pools and their worker health status
 - list contexts
+- create stack
+- platform engineering
+- list all worker pools and their current worker status
+- list all governance policies in the account
+- create run
+- devops
+- infrastructure deployment runs
+- create a new infrastructure stack
+- worker pools for running infrastructure jobs
+- create a new infrastructure stack in spacelift connected to a source repository
+- list all shared contexts available for stack attachment
+- list worker pools
+- list all spacelift infrastructure stacks with their current state, repository, and deployment configuration
+- list all infrastructure stacks with state and configuration
+- infrastructure as code
+- list policies
+- trigger a new infrastructure deployment run on a spacelift stack
+- list all governance policies (opa/rego) enforcing infrastructure deployment rules
+- trigger run
 slug: infrastructure-orchestration
 source_filename: infrastructure-orchestration.yaml
 source_heading: Capability Spec

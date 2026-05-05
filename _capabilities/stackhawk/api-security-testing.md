@@ -42,44 +42,44 @@ personas: []
 provider_name: StackHawk
 provider_slug: stackhawk
 search_terms:
-- list security scan history for an application environment
-- scan details
-- list policies
-- list all security vulnerabilities discovered in a scan
-- application security
-- list applications
-- get scan details
-- check the current status of a running or completed scan
-- devsecops
-- single security finding
-- list all scans for an application
-- list scan policies
-- trigger a new dast security scan for an application via stackhawk perch
-- dast
-- scans for an application
-- get detailed results for a specific security scan
-- list all security findings
-- list security scan policies configured for an organization
-- trigger a new dast scan
-- scan status
 - managed applications
-- get scan
-- get perch scan status
+- single security finding
+- trigger a new dast scan
+- devsecops
+- check the current status of a running or completed scan
 - get scan status
-- get finding details
+- list security scan policies configured for an organization
+- security testing
+- get perch scan status
+- list findings
+- application security
+- list scan policies
+- list all applications
 - get status of a running scan
 - scan policies
-- list scans
+- scan details
 - get finding
-- list all applications configured in stackhawk for security testing
-- vulnerability management
-- security findings from a scan
-- list findings
-- api security
+- list applications
 - get full details for a specific security vulnerability finding
+- trigger a new dast security scan for an application via stackhawk perch
+- list all security findings
+- vulnerability management
+- get scan details
+- list all applications configured in stackhawk for security testing
+- dast
+- api security
+- get scan
+- list all scans for an application
+- list all security vulnerabilities discovered in a scan
+- scans for an application
+- list scans
+- get finding details
+- list policies
+- scan status
+- security findings from a scan
 - trigger scan
-- security testing
-- list all applications
+- get detailed results for a specific security scan
+- list security scan history for an application environment
 slug: api-security-testing
 source_filename: api-security-testing.yaml
 source_heading: Capability Spec

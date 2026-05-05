@@ -34,41 +34,41 @@ personas: []
 provider_name: Sendbird
 provider_slug: sendbird
 search_terms:
-- get the profile of a community member.
-- register member
-- list messages in a room.
-- list chat rooms
-- manage community chat rooms.
-- temporarily mute a community member.
-- create a new chat room.
-- list room messages
-- list community members
-- register a new community member in sendbird.
-- list community members.
-- moderation
 - community
-- post a message to a room.
-- ban a member from a community channel for violation of rules.
-- list messages in a community chat room.
 - create room
+- register member
+- social
+- manage community chat rooms.
 - manage messages in a chat room.
-- list members of the sendbird community.
-- chat
-- list all community chat rooms and channels.
+- list room messages
+- manage community members.
+- moderate ban member
+- register a new community member in sendbird.
+- get member profile
 - register a new community member.
-- post a message to a community chat room.
-- list chat rooms.
+- list members
 - create a new community chat room or group channel.
 - create chat room
+- list chat rooms.
+- list messages in a community chat room.
+- post a message to a community chat room.
+- list messages in a room.
 - post message
-- social
-- moderate ban member
-- list members
-- get member profile
+- list community members.
+- list members of the sendbird community.
+- chat
 - moderate mute member
+- temporarily mute a community member.
+- list community members
 - sendbird
-- manage community members.
+- create a new chat room.
+- ban a member from a community channel for violation of rules.
+- list all community chat rooms and channels.
 - list rooms
+- get the profile of a community member.
+- post a message to a room.
+- moderation
+- list chat rooms
 slug: community-chat
 source_filename: community-chat.yaml
 source_heading: Capability Spec

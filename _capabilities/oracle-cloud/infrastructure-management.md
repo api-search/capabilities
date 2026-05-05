@@ -13,20 +13,20 @@ provider_name: Oracle Cloud Infrastructure
 provider_slug: oracle-cloud
 search_terms:
 - workflow for managing databases, data storage, and data processing across oci. used by data engineers and dbas.
-- manages security and compliance
-- platform as a service
-- enterprise cloud
-- infrastructure management
 - builds cloud-native applications
-- unified workflow for managing compute instances, networking, and storage resources across oci. used by cloud administrators and devops engineers.
-- workflow for managing identity, access control, and monitoring across oci. used by security engineers.
-- manages oci infrastructure resources
-- oracle cloud
-- workflow for building and deploying containerized and serverless applications on oci. used by application developers.
 - oracle
 - manages databases and data pipelines
-- cloud computing
+- unified workflow for managing compute instances, networking, and storage resources across oci. used by cloud administrators and devops engineers.
+- oracle cloud
+- manages security and compliance
+- platform as a service
 - infrastructure as a service
+- enterprise cloud
+- workflow for managing identity, access control, and monitoring across oci. used by security engineers.
+- cloud computing
+- infrastructure management
+- workflow for building and deploying containerized and serverless applications on oci. used by application developers.
+- manages oci infrastructure resources
 slug: infrastructure-management
 source_filename: infrastructure-management.yaml
 source_heading: Capability Spec

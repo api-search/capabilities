@@ -27,42 +27,42 @@ personas: []
 provider_name: Amazon Redshift
 provider_slug: amazon-redshift
 search_terms:
-- execute multiple sql statements in a batch transaction
-- describe the columns of a table
-- big data
-- execute statement
-- get details about a sql statement execution
-- analytics
-- retrieve results from a completed sql statement
-- describe table
-- list tables
-- get statement result
-- table metadata
-- aws
-- list databases in a redshift cluster or workgroup
-- cloud
-- list tables in a schema
-- etl
-- database metadata
-- list schemas
-- list schemas in a database
 - amazon
-- batch execute statement
-- sql statement execution
-- sql
-- list sql statements
-- cancel statement
-- execute a sql statement
+- execute multiple sql statements in a batch transaction
 - cancel a running sql statement
-- list databases
-- machine learning
-- execute a sql statement asynchronously against redshift
-- list statements
-- describe statement
-- serverless
-- data lake
+- aws
+- retrieve results from a completed sql statement
+- list sql statements
+- sql statement execution
+- execute a sql statement
+- table metadata
+- batch execute statement
 - data warehouse
+- cloud
 - list sql statement executions
+- serverless
+- database metadata
+- analytics
+- list schemas
+- cancel statement
+- etl
+- get statement result
+- execute a sql statement asynchronously against redshift
+- describe table
+- list databases
+- data lake
+- get details about a sql statement execution
+- describe the columns of a table
+- machine learning
+- execute statement
+- list databases in a redshift cluster or workgroup
+- list tables in a schema
+- describe statement
+- list schemas in a database
+- big data
+- list tables
+- sql
+- list statements
 slug: data-warehouse-analytics
 source_filename: data-warehouse-analytics.yaml
 source_heading: Capability Spec

@@ -69,65 +69,65 @@ personas: []
 provider_name: SafeLine
 provider_slug: safeline
 search_terms:
-- acl
-- get acl rule execution logs
-- list ssl certificates
-- list whitelisted ip addresses
-- security
-- list security policy groups
-- system information
-- get generated security reports showing attack statistics and traffic analysis
-- open source
-- acl whitelist management
-- create a new acl rule to block or allow traffic based on ip, url, or headers
-- add to acl whitelist
-- create policy group
-- list policy groups
-- web application firewall
+- ssl certificate management
+- add an ip address or cidr block to the acl whitelist
 - acl rule execution logs
-- security reports
-- security policy groups
+- create acl rule
+- get safeline node system information
+- create a new acl rule to block or allow traffic based on ip, url, or headers
 - enable or disable website protection
 - get acl execution logs
-- add an ip address or cidr block to the acl whitelist
-- waf
-- add a new web application to safeline waf protection
-- create acl rule
-- list api tokens for programmatic access to safeline management
-- access control list rules
-- list acl rules
-- list all websites protected by safeline waf
-- list traffic acl rules
-- list api tokens
-- create website
-- get safeline node system information
-- get security reports
-- ssl certificate management
-- create a new acl rule
+- security
 - create a new api token for safeline management automation
-- create api token
-- api gateway
-- reverse proxy
-- list access control rules for blocking or allowing specific traffic patterns
-- list security policy groups with their rule counts
 - list all ssl/tls certificates managed by safeline
-- get report results
 - add ip or cidr to whitelist
-- get node info
-- protected website management
-- create a security policy group
-- list ssl certificates configured in safeline
-- list ip addresses and cidr blocks in the acl whitelist
-- list all web applications protected by safeline waf with their configuration
-- enable or disable waf protection for a specific website
-- toggle website protection
-- proxy
-- get safeline system node information including cpu, memory, and version
-- list websites
-- get logs of triggered acl rules showing blocked/allowed requests and source ips
+- web application firewall
+- list ssl certificates
+- list security policy groups with their rule counts
 - add a new website to waf protection
-- create a new security policy group for organizing waf rules
+- acl
+- open source
+- create a new acl rule
+- security policy groups
+- create a security policy group
+- create policy group
+- create website
+- list acl rules
+- list security policy groups
+- waf
+- security reports
+- list api tokens for programmatic access to safeline management
 - list acl whitelist
+- acl whitelist management
+- add to acl whitelist
+- get report results
+- get security reports
+- list all web applications protected by safeline waf with their configuration
+- list access control rules for blocking or allowing specific traffic patterns
+- get acl rule execution logs
+- list policy groups
+- get node info
+- get generated security reports showing attack statistics and traffic analysis
+- create api token
+- access control list rules
+- list ssl certificates configured in safeline
+- list websites
+- toggle website protection
+- system information
+- list ip addresses and cidr blocks in the acl whitelist
+- add a new web application to safeline waf protection
+- get safeline system node information including cpu, memory, and version
+- list api tokens
+- get logs of triggered acl rules showing blocked/allowed requests and source ips
+- proxy
+- api gateway
+- create a new security policy group for organizing waf rules
+- enable or disable waf protection for a specific website
+- list traffic acl rules
+- list all websites protected by safeline waf
+- reverse proxy
+- list whitelisted ip addresses
+- protected website management
 slug: waf-protection-management
 source_filename: waf-protection-management.yaml
 source_heading: Capability Spec

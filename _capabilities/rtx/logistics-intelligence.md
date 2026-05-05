@@ -22,28 +22,28 @@ personas: []
 provider_name: RTX
 provider_slug: rtx
 search_terms:
+- government
 - raytheon
+- list analytics
+- analytics
+- rtx
+- list all analytics jobs and their current status in rtx eagle
+- list data sources
+- list all configured intelligence data sources
+- military
+- list analytics jobs
+- intelligence
+- list generated intelligence reports
+- analytics jobs for logistics data
+- logistics
+- intelligence and logistics data sources
 - list analytics jobs and statuses
+- defense
+- list generated intelligence and logistics reports available for review
 - aerospace
 - list reports
-- analytics
-- military
-- list generated intelligence reports
-- rtx
-- intelligence and logistics data sources
-- government
-- list all analytics jobs and their current status in rtx eagle
-- list generated intelligence and logistics reports available for review
-- analytics jobs for logistics data
-- list analytics jobs
-- list analytics
-- list all configured intelligence data sources
 - list all intelligence and logistics data sources configured in the rtx eagle platform
-- list data sources
 - intelligence and logistics reports
-- logistics
-- defense
-- intelligence
 slug: logistics-intelligence
 source_filename: logistics-intelligence.yaml
 source_heading: Capability Spec

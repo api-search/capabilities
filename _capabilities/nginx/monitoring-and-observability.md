@@ -67,74 +67,74 @@ personas: []
 provider_name: NGINX
 provider_slug: nginx
 search_terms:
-- get cluster zone synchronization status
+- get cache hit/miss/bypass statistics for all http cache zones
+- get nginx plus instance status including version, build name, and process information
+- get statistics for a specific http server zone
+- get all http cache zone statistics
+- get request rate limiting statistics for all http limit_req zones
+- get stub status
+- get detailed statistics for a specific http server zone
+- get stream server zones
+- nginx plus instance information
+- get health and statistics for all stream upstream groups
+- get http limit conn zones
+- reverse proxy
+- get connection limiting statistics for all http limit_conn zones
+- get all http connection limit zone statistics
 - get statistics for all stream (tcp/udp) server zones
+- get http location zones
+- get http server zone
+- get http caches
+- get basic nginx status metrics including active connections and request counters from stub_status
+- open source
+- basic nginx status metrics from stub_status module
+- get basic nginx status metrics
+- http upstream health and statistics
+- observability
+- http server zone statistics
+- http request rate limit zone statistics
+- client connection statistics
+- get statistics for all http location zones
 - get nginx info
 - load balancer
-- monitoring
-- get health status and traffic statistics for all http upstream server groups
-- get all http cache zone statistics
-- get all http request rate limit zone statistics
-- get statistics for all http server zones including requests, responses, and traffic volume
-- open source
-- cluster zone synchronization status
-- get stub status
-- get basic nginx status metrics
-- cloud native
-- http cache zone statistics
-- get nginx plus instance status and version
-- health checks
-- get http request statistics
-- get http request processing statistics including total and current request counts
 - get http upstreams
-- nginx
-- basic nginx status metrics from stub_status module
-- get all http server zone statistics
-- get stream zone sync
-- get http server zone
-- http connection limit zone statistics
-- get health and statistics for all stream upstream groups
-- get connection limiting statistics for all http limit_conn zones
-- web server
-- get request rate limiting statistics for all http limit_req zones
-- get connections
-- get stream upstreams
-- stream server zone statistics
-- get client connection statistics
-- get stream server zones
-- get statistics for all http location zones
-- api gateway
-- get health status and traffic statistics for all stream upstream groups
-- http request processing statistics
-- reverse proxy
 - http location zone statistics
-- get cache hit/miss/bypass statistics for all http cache zones
-- metrics
-- http request rate limit zone statistics
-- get all http connection limit zone statistics
-- get basic nginx status metrics including active connections and request counters from stub_status
-- stream upstream health and statistics
-- caching
-- http upstream health and statistics
-- get nginx plus instance status including version, build name, and process information
-- observability
-- get http requests
-- get all http location zone statistics
-- individual http server zone statistics
-- client connection statistics
-- http server zone statistics
-- nginx plus instance information
+- get client connection statistics
 - get health and statistics for all http upstream groups
+- get health status and traffic statistics for all http upstream server groups
+- get nginx plus instance status and version
+- get all http request rate limit zone statistics
+- cloud native
+- get health status and traffic statistics for all stream upstream groups
+- nginx
 - get detailed client connection statistics including active, idle, accepted, and dropped counts
-- get cluster zone synchronization status including pending records and sync traffic
-- get statistics for a specific http server zone
-- get http limit conn zones
-- get detailed statistics for a specific http server zone
-- get http caches
 - get http limit req zones
-- get http server zones
+- get connections
+- http request processing statistics
+- get cluster zone synchronization status including pending records and sync traffic
+- caching
 - get all stream server zone statistics
-- get http location zones
+- individual http server zone statistics
+- get http request statistics
+- monitoring
+- get stream upstreams
+- http connection limit zone statistics
+- cluster zone synchronization status
+- get cluster zone synchronization status
+- get http requests
+- health checks
+- metrics
+- get statistics for all http server zones including requests, responses, and traffic volume
+- get all http server zone statistics
+- web server
+- stream upstream health and statistics
+- api gateway
+- get http server zones
+- get stream zone sync
+- http cache zone statistics
+- get http request processing statistics including total and current request counts
+- stream server zone statistics
+- get all http location zone statistics
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

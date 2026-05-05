@@ -61,65 +61,65 @@ personas: []
 provider_name: Spring Boot 3
 provider_slug: spring-boot-3
 search_terms:
-- framework
-- set logger level at runtime
-- list all @scheduled tasks with their cron expressions or fixed-rate intervals
-- java
-- get measurements for a named metric
-- list all available micrometer metrics registered in this application
-- monitoring
-- application and component health status
-- get environment
-- jvm thread diagnostics
-- get thread dump
-- get app info
-- get info
-- get component health
-- micrometer metrics list
-- get scheduled tasks
-- logger configuration
-- get jvm thread dump
-- list metrics
-- get logger
-- list all scheduled tasks
 - spring boot
-- check the overall health of the spring boot application including database, cache, and infrastructure components
-- application build and git metadata
+- get overall application health
+- get measurements for a named metric
+- scheduled task registry
 - inspect all application environment properties and their sources to diagnose configuration issues
+- jvm thread diagnostics
+- micrometer metrics list
+- set logger level at runtime
 - check health status for a specific component like db, redis, diskspace, or rabbit
-- lookup property
-- single metric measurements with tag filtering
+- framework
+- get thread dump
 - list all available metric names
-- platform engineering
-- check component health
-- get application information
-- get a jvm thread dump to diagnose deadlocks, high cpu usage, or thread starvation
-- check app health
-- get application build version, git commit hash, and runtime environment information
+- list loggers
+- get all environment properties
 - enterprise
+- get current measurements for a metric such as jvm.memory.used, http.server.requests, or hikaricp.connections.active
+- get application build version, git commit hash, and runtime environment information
+- get a jvm thread dump to diagnose deadlocks, high cpu usage, or thread starvation
+- inspect environment
+- application and component health status
+- get scheduled tasks
+- get logger configuration
+- observability
+- get environment
+- get logger
+- single metric measurements with tag filtering
+- platform engineering
+- individual component health
+- get app info
+- individual logger management
+- set logger level
+- microservices
+- get health
+- list all available micrometer metrics registered in this application
+- check app health
+- list all loggers with their levels
+- list all scheduled tasks
+- sre
+- lookup property
+- list metrics
+- get health for a specific component
+- logger configuration
+- monitoring
 - get metric
-- look up the value and origin of a specific configuration property by key
+- check the overall health of the spring boot application including database, cache, and infrastructure components
+- check component health
+- list all loggers with their configured and effective log levels for debugging
+- list all @scheduled tasks with their cron expressions or fixed-rate intervals
+- get component health
+- application build and git metadata
 - temporarily set the log level for a logger (trace, debug, info, warn, error) without restarting
 - rest api
-- get the current log level configuration for a specific logger class or package
-- list all loggers with their levels
-- list all loggers with their configured and effective log levels for debugging
-- microservices
-- individual logger management
+- get application information
+- look up the value and origin of a specific configuration property by key
 - application environment and configuration
-- observability
-- get all environment properties
-- list loggers
-- set logger level
-- get overall application health
-- get health for a specific component
-- get current measurements for a metric such as jvm.memory.used, http.server.requests, or hikaricp.connections.active
-- inspect environment
-- sre
-- individual component health
-- scheduled task registry
-- get health
-- get logger configuration
+- get jvm thread dump
+- get info
+- get the current log level configuration for a specific logger class or package
+- java
 slug: application-observability
 source_filename: application-observability.yaml
 source_heading: Capability Spec

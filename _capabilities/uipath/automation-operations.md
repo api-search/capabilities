@@ -51,80 +51,80 @@ personas: []
 provider_name: UiPath
 provider_slug: uipath
 search_terms:
-- Document Processing Specialist
-- configures and manages document understanding models and extraction pipelines
-- automation
-- list shared assets
-- list all queue definitions
-- list automation jobs with filtering
-- automation operations
-- Automation Operator
-- ocr, classify, and extract data from documents
 - list automation alerts
-- manage automation pipeline, users, licenses, and quality
-- robots
-- develops and deploys automation workflows using uipath studio and python sdk
-- manages users, groups, licenses, and organizational settings
-- manage robots, jobs, queues, and assets in orchestrator
-- automation job management
-- list robots
-- RPA Developer
-- QA Engineer
-- test management and automated quality verification
-- list entity records
-- jobs
-- list shared automation assets like credentials and variables
-- list all registered robots
-- stop job
-- Platform Administrator
-- list assets
-- add a new transaction item to an automation queue
-- list alerts
-- automation robot management
-- create a new shared asset
-- list automation jobs with optional filtering and pagination
-- list jobs
-- creates and manages test projects, test cases, and execution reports
-- queue transaction item management
-- start automation jobs
-- transaction queue management
-- create data record
-- shared asset management
-- automation data storage records
-- list all registered automation robots and their status
-- intelligent processing of structured and unstructured documents
-- orchestrator
-- list system and automation alerts for monitoring
-- robotic process automation
-- artificial intelligence
-- uipath
-- stop a running automation job
-- list queue transaction items
-- list data records
-- add queue item
+- create asset
 - oversees the automation program pipeline, prioritization, and roi tracking
-- list records from a data service entity
-- day-to-day monitoring and management of running automations
-- CoE Manager
-- platform configuration including users, groups, and licenses
-- list queues
+- robotic process automation
+- list jobs
+- monitors and manages running automations, robots, queues, and alerts
+- robots
+- list all transaction queue definitions
+- orchestrator
+- uipath
+- list queue items
+- shared asset management
+- automation operations
+- automation robot management
+- list assets
+- list shared assets
 - list data entity records
+- manage automation pipeline, users, licenses, and quality
+- Platform Administrator
+- automation job management
+- queue transaction item management
+- QA Engineer
+- list queue transaction items
+- document processing
+- stop job
+- creates and manages test projects, test cases, and execution reports
+- list automation jobs with filtering
+- manage robots, jobs, queues, and assets in orchestrator
+- enterprise automation
+- artificial intelligence
+- core rpa automation lifecycle from development to execution
+- list all registered robots
+- oversight of the automation program including pipeline, compliance, and quality
+- list all registered automation robots and their status
+- platform configuration including users, groups, and licenses
+- RPA Developer
+- orchestration
+- list entity records
+- list automation jobs with optional filtering and pagination
+- list system and automation alerts for monitoring
+- start jobs
+- list robots
+- list alerts
 - start one or more uipath automation jobs
 - system and automation alerts
-- rpa
-- monitors and manages running automations, robots, queues, and alerts
-- enterprise automation
+- list records from a data service entity
 - create a new record in a data service entity
-- create asset
-- list all transaction queue definitions
-- orchestration
-- oversight of the automation program including pipeline, compliance, and quality
-- core rpa automation lifecycle from development to execution
-- list queue items
-- add item to queue
+- jobs
+- list all queue definitions
+- create data record
+- list queues
+- create a new shared asset
+- develops and deploys automation workflows using uipath studio and python sdk
+- configures and manages document understanding models and extraction pipelines
 - testing
-- start jobs
-- document processing
+- list data records
+- list shared automation assets like credentials and variables
+- day-to-day monitoring and management of running automations
+- rpa
+- add a new transaction item to an automation queue
+- CoE Manager
+- start automation jobs
+- manages users, groups, licenses, and organizational settings
+- test management and automated quality verification
+- add item to queue
+- Automation Operator
+- intelligent processing of structured and unstructured documents
+- transaction queue management
+- automation
+- add queue item
+- ocr, classify, and extract data from documents
+- automation data storage records
+- stop a running automation job
+- Document Processing Specialist
 slug: automation-operations
 source_filename: automation-operations.yaml
 source_heading: Capability Spec

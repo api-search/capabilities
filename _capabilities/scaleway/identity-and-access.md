@@ -63,63 +63,63 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- list policies
-- list api keys
-- security
-- storage
-- access control
-- create secret
-- european cloud
-- list iam groups
-- policies
-- create an iam policy
-- delete an iam api key
-- list scaleway iam api keys
-- access policy management
 - delete a secret from secret manager
-- create group
-- list iam policies
-- delete a secret
-- kubernetes
-- group management
-- get secret details
-- list secrets
-- get api key details
-- secret management
-- create an iam api key
-- list users
-- create policy
 - api key management
-- create api key
-- delete an api key
-- create a secret
-- user management
-- identity
-- manage a specific secret
+- list secrets
 - list secrets in secret manager
-- database
 - containers
+- list users
 - get api key
-- list iam users
-- get secret
-- list iam api keys
-- list iam users in the organization
-- create a new secret in secret manager
-- delete api key
-- scaleway
-- ai
-- iam
-- list groups
-- manage a specific api key
-- get a secret from secret manager
-- create an iam group
-- permissions
-- serverless
-- delete secret
-- infrastructure
-- cloud computing
+- manage a specific secret
+- security
+- create secret
+- list scaleway iam api keys
 - api keys
+- list iam policies
+- serverless
+- permissions
+- access policy management
+- ai
+- list groups
+- delete secret
+- get api key details
+- storage
+- create group
+- create a secret
+- policies
+- create an iam api key
+- list iam users
+- cloud computing
+- list iam users in the organization
+- iam
+- database
+- create api key
+- get secret details
+- create a new secret in secret manager
+- group management
+- access control
+- create an iam group
+- scaleway
+- delete api key
+- get secret
+- list iam groups
 - create a new iam api key
+- infrastructure
+- delete a secret
+- secret management
+- manage a specific api key
+- delete an iam api key
+- european cloud
+- create an iam policy
+- create policy
+- user management
+- list api keys
+- list iam api keys
+- list policies
+- kubernetes
+- identity
+- get a secret from secret manager
+- delete an api key
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

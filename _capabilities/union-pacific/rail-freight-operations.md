@@ -57,57 +57,57 @@ personas: []
 provider_name: Union Pacific
 provider_slug: union-pacific
 search_terms:
-- get case
-- order rail car equipment for a shipment from origin to destination
-- active rail shipment tracking
-- view union pacific network facilities, yards, and terminals with location details
-- look up waybill details for shipments
+- search available rail car equipment by type and specifications
+- create intermodal reservation
+- list available service lanes
+- release held rail car equipment for a shipment
 - coordinates equipment ordering, intermodal reservations, and terminal operations
-- list intermodal departures
-- supply chain
+- track active shipments with real-time location and etas
+- view scheduled intermodal train departures and available capacity
+- list available intermodal service lanes and transit times between terminals
+- trains
+- look up waybill details for shipments
+- order rail car equipment
 - track active rail shipments showing current location and estimated arrival times
-- list equipment
-- list cases
-- list waybills
 - list intermodal lanes
+- get case
+- list equipment
+- list shipments
+- order equipment
+- view union pacific network facilities, yards, and terminals with location details
+- list cases
+- get details for a specific exception case
+- create an intermodal terminal reservation
+- active rail shipment tracking
+- supply chain
+- get shipment
+- list locations
+- logistics
+- railroads
+- get tracking details for a specific shipment
+- analyzes freight patterns, plans intermodal routes, and tracks performance
+- get details for a specific supply chain exception case
+- list intermodal departures
+- view exception cases for shipments that are off course or experiencing delays
+- list waybills
+- view up network facility locations
 - rail equipment search and management
 - get detailed tracking information for a specific rail shipment
-- supply chain exception case management
-- list shipments
-- create an intermodal terminal reservation
-- manages rail freight shipments and oversees supply chain exception handling
-- track active shipments with real-time location and etas
-- get details for a specific supply chain exception case
-- list locations
-- view scheduled intermodal train departures and available capacity
-- reserve space on an intermodal train between up terminals
-- available intermodal service lanes
-- view exception cases for shipments that are off course or experiencing delays
-- search available rail car equipment by type and specifications
-- union pacific network locations
-- list available service lanes
-- union pacific
-- release held equipment for a shipment
-- get details for a specific exception case
-- order equipment
-- analyzes freight patterns, plans intermodal routes, and tracks performance
-- get tracking details for a specific shipment
-- shipping
-- list available intermodal service lanes and transit times between terminals
-- order rail car equipment
-- release held rail car equipment for a shipment
-- create intermodal reservation
-- logistics
-- get shipment
-- search available rail equipment
-- view up network facility locations
-- release shipment
 - end-to-end rail freight workflow from equipment ordering through shipment tracking and exception management
-- railroads
-- trains
-- intermodal terminal reservation management
-- freight
+- order rail car equipment for a shipment from origin to destination
+- search available rail equipment
 - view exception cases for off-course shipments
+- release shipment
+- available intermodal service lanes
+- union pacific
+- freight
+- supply chain exception case management
+- release held equipment for a shipment
+- manages rail freight shipments and oversees supply chain exception handling
+- shipping
+- reserve space on an intermodal train between up terminals
+- union pacific network locations
+- intermodal terminal reservation management
 slug: rail-freight-operations
 source_filename: rail-freight-operations.yaml
 source_heading: Capability Spec

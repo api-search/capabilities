@@ -52,55 +52,55 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforce
 search_terms:
-- list api versions
-- marketing
-- list all sobject types in the org.
-- get the app switcher menu items available to the current user.
-- metadata
-- list available salesforce rest api versions.
-- list sobjects
-- salesforce api version information.
-- analytics
-- get picklist values
-- get object info
-- full sobject metadata.
-- platform administration
-- get user info
-- get app switcher menu
-- get lookup records
-- salesforce
-- get picklist values for all picklist fields on an object for a given record type.
-- get full metadata for a salesforce sobject type including all fields.
-- get ui-ready metadata about a salesforce object.
-- get list views for a salesforce object.
-- get list views
-- cloud
-- get full metadata for an sobject type.
+- app switcher menu items.
+- platform
 - get picklist values for all picklist fields on an object.
 - get the authenticated user's profile information.
-- oauth
-- app switcher menu items.
-- picklist value retrieval.
-- commerce
-- identity
-- enterprise
-- ui-ready object metadata.
-- search lookup field records for typeahead.
-- customer service
-- get org limits
-- get current api limit usage and remaining quotas for the org.
-- org api limits.
-- list all sobject types available in the salesforce org.
-- ai
-- sales
-- platform
 - get the app switcher menu items.
+- commerce
+- get user info
+- org api limits.
+- marketing
+- cloud
+- enterprise
+- get the app switcher menu items available to the current user.
+- customer service
+- get list views for a salesforce object.
+- ai
+- list all sobject types available in the salesforce org.
+- list sobjects
+- get full metadata for an sobject type.
+- get object info
+- analytics
+- metadata
+- platform administration
 - authenticated user information.
-- sobject type listing.
-- get current api limit usage and quotas.
-- get ui-ready metadata for an object.
-- crm
+- oauth
 - full describe sobject
+- list available salesforce rest api versions.
+- get current api limit usage and remaining quotas for the org.
+- get picklist values
+- get picklist values for all picklist fields on an object for a given record type.
+- get ui-ready metadata for an object.
+- ui-ready object metadata.
+- get list views
+- salesforce
+- get current api limit usage and quotas.
+- list all sobject types in the org.
+- list api versions
+- get app switcher menu
+- get ui-ready metadata about a salesforce object.
+- get org limits
+- crm
+- full sobject metadata.
+- sobject type listing.
+- search lookup field records for typeahead.
+- get lookup records
+- salesforce api version information.
+- sales
+- get full metadata for a salesforce sobject type including all fields.
+- identity
+- picklist value retrieval.
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

@@ -37,39 +37,39 @@ personas: []
 provider_name: Spring Cloud
 provider_slug: spring-cloud
 search_terms:
-- java
-- deploy a new route to the spring cloud gateway for routing traffic to a microservice
-- list gateway routes
-- remove a gateway route, stopping traffic routing to that service
-- refresh gateway
-- force synchronization of the gateway route cache with current configuration
-- cloud native
-- individual gateway route operations
 - api gateway route management
+- remove gateway route
 - delete gateway route
-- create a new gateway route
+- java
+- list all configured gateway routes
+- get details of a specific gateway route by id including predicates, filters, and destination uri
+- inspect gateway routes
+- deploy a new route to the spring cloud gateway for routing traffic to a microservice
+- gateway cache management
+- force synchronization of the gateway route cache with current configuration
 - service discovery
-- deploy gateway route
+- get route by id
 - refresh route cache
 - inspect all spring cloud gateway routes to understand current traffic routing configuration
-- get details of a specific gateway route by id including predicates, filters, and destination uri
-- api gateway
+- refresh gateway
 - platform engineering
-- distributed systems
-- spring framework
-- microservices
-- gateway cache management
-- get route by id
-- get gateway route
-- inspect gateway routes
-- spring cloud
-- list all configured gateway routes
-- sync gateway config
-- circuit breaker
-- devops
-- delete a gateway route
+- remove a gateway route, stopping traffic routing to that service
 - create gateway route
-- remove gateway route
+- delete a gateway route
+- list gateway routes
+- microservices
+- devops
+- cloud native
+- distributed systems
+- sync gateway config
+- create a new gateway route
+- individual gateway route operations
+- circuit breaker
+- deploy gateway route
+- api gateway
+- spring cloud
+- spring framework
+- get gateway route
 slug: microservice-platform
 source_filename: microservice-platform.yaml
 source_heading: Capability Spec

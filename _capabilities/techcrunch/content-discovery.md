@@ -46,52 +46,52 @@ personas: []
 provider_name: TechCrunch
 provider_slug: techcrunch
 search_terms:
-- list all techcrunch content tags
-- list tags
-- techcrunch authors and contributors
-- list techcrunch authors and journalists
-- techcrunch content tags
-- get category
-- get a specific category
 - get author
-- technology news
-- get profile for a specific techcrunch author
-- single article retrieval
-- search articles
-- startups
-- list media attachments
-- list techcrunch articles with filtering and pagination
-- get post
-- list articles
 - wordpress
-- single category
-- media
-- content
-- list all content tags
-- search across all techcrunch content
-- list all content categories
-- rss
-- list all techcrunch authors
-- media attachments
-- full-text content search
-- search techcrunch articles by keyword, topic, or company name
-- get article
-- list recent techcrunch articles with optional filters by category, tag, author, or date
 - news
+- techcrunch content categories
+- list recent techcrunch articles with optional filters by category, tag, author, or date
+- get a specific category
+- startups
+- full-text content search
+- list authors
+- search techcrunch articles by keyword, topic, or company name
+- list all techcrunch content tags
+- list techcrunch authors and journalists
+- venture capital
+- search articles
+- get article
+- get profile for a specific techcrunch author
+- get category
+- search content
 - list media
+- single article retrieval
+- media
+- get post
 - list categories
+- techcrunch authors and contributors
+- techcrunch content tags
+- content
+- list all content categories
+- get a specific techcrunch article
+- single author profile
+- list techcrunch articles with filtering and pagination
+- single category
+- get details for a specific content category
+- rss
+- get an author profile
+- techcrunch technology news articles
+- list articles
 - get the full content of a specific techcrunch article by id
 - list all techcrunch content categories (startups, ai, security, etc.)
-- techcrunch content categories
+- list all techcrunch authors
+- media attachments
+- list media attachments
+- search across all techcrunch content
+- technology news
+- list tags
+- list all content tags
 - list posts
-- list authors
-- techcrunch technology news articles
-- get an author profile
-- venture capital
-- single author profile
-- search content
-- get a specific techcrunch article
-- get details for a specific content category
 slug: content-discovery
 source_filename: content-discovery.yaml
 source_heading: Capability Spec

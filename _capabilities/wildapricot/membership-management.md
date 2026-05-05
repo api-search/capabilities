@@ -57,60 +57,60 @@ personas: []
 provider_name: WildApricot
 provider_slug: wildapricot
 search_terms:
-- staff member managing day-to-day association operations
-- membership tiers and pricing
-- list payments
-- wildapricot
-- get a contact by id
-- invoicing, payment processing, and donation management
-- list all events for a wildapricot organization, including upcoming and past events.
-- list payment records for a wildapricot organization.
-- email campaign drafting, scheduling, and delivery
-- event management
-- list all events
-- create a new contact/member record in a wildapricot organization.
-- membership management
-- list event registrations for a wildapricot organization to see who registered for which events.
-- list outstanding and paid invoices for a wildapricot organization.
-- list events
-- get contact
-- associations
-- list event registrations
-- invoice management
-- event registration management
-- payments
-- create event
-- retrieve all contacts/members for a wildapricot organization account.
-- list invoices
-- list donation records for a wildapricot organization.
-- Nonprofit Operations
-- Membership Coordinator
-- member lifecycle from registration through renewal and lapse
-- payment records
-- list registrations
-- events
-- list membership levels
-- list all contacts/members
-- event planning, registration management, and attendee tracking
 - create a new contact/member
-- individual contact/member
-- team member managing member recruitment, renewals, and engagement
-- add member
-- create contact
-- retrieve full details for a specific wildapricot member including membership status, level, and contact fields.
-- list members
-- donation records
-- list contacts
-- list all membership levels
-- member and contact management
+- membership management
+- invoice management
 - create a new event
-- retrieve all membership levels with their pricing, renewal terms, and access privileges.
-- list donations
-- get member
-- Association Administrator
+- list donation records for a wildapricot organization.
+- list payments
+- create event
+- retrieve full details for a specific wildapricot member including membership status, level, and contact fields.
+- create contact
+- list all contacts/members
+- list outstanding and paid invoices for a wildapricot organization.
 - full membership lifecycle management including members, events, billing, and donations
+- retrieve all membership levels with their pricing, renewal terms, and access privileges.
+- event planning, registration management, and attendee tracking
+- invoicing, payment processing, and donation management
+- email campaign drafting, scheduling, and delivery
+- list members
+- list all events
+- list events
+- get a contact by id
+- membership tiers and pricing
 - operations team automating financial and administrative workflows
+- list membership levels
+- list invoices
+- list event registrations for a wildapricot organization to see who registered for which events.
+- donation records
+- add member
 - nonprofit
+- member lifecycle from registration through renewal and lapse
+- get member
+- list event registrations
+- event management
+- payments
+- member and contact management
+- wildapricot
+- Association Administrator
+- associations
+- list donations
+- list contacts
+- list registrations
+- Membership Coordinator
+- get contact
+- retrieve all contacts/members for a wildapricot organization account.
+- payment records
+- individual contact/member
+- events
+- Nonprofit Operations
+- staff member managing day-to-day association operations
+- team member managing member recruitment, renewals, and engagement
+- list payment records for a wildapricot organization.
+- event registration management
+- list all membership levels
+- list all events for a wildapricot organization, including upcoming and past events.
+- create a new contact/member record in a wildapricot organization.
 slug: membership-management
 source_filename: membership-management.yaml
 source_heading: Capability Spec

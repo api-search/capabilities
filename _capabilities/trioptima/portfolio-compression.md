@@ -42,53 +42,53 @@ personas: []
 provider_name: Trioptima
 provider_slug: trioptima
 search_terms:
-- derivatives
-- submit risk constraints
-- get risk constraints
-- get compression results for a completed cycle including notional reduction percentage, list of terminated trades, and replacement trades created by the optimization algorithm.
-- submit or replace the participant's trade population for a compression cycle. provide an array of trades with uti, notional, currency, maturity, fixed rate, pay/receive direction, and clearing house.
-- confirm compression results
-- submit delta ladder (dv01 by tenor bucket) risk constraints for a compression cycle. the optimization algorithm will preserve the aggregate risk profile within the specified tolerances.
-- capital optimization
-- get details for a specific compression cycle
-- submit risk
-- confirm results
-- list available trireduce compression cycles. filter by status (open, submission, optimization, completed) or type (cleared, bilateral) to find cycles relevant to the participant.
-- get schedule, status, and participant count for a cycle
-- confirm acceptance of compression results to proceed to settlement. all cycle participants must confirm before terminations and new trades are processed. set confirmed=false to reject with an optional comment.
-- compression results and settlement confirmation
-- portfolio compression
-- get cycle details
-- confirm or reject compression results for settlement
-- get the delta ladder risk constraints submitted for a compression cycle.
-- financial services
-- get cycle
-- list trades
-- osttra
-- list trades submitted by the participant for a given compression cycle.
-- list available compression cycles, optionally filtered by status
-- list compression cycles
-- submit trade population for compression
-- compression
-- risk management
-- cme group
 - get full details for a specific compression cycle including submission deadline, optimization date, settlement date, and participant count.
 - reconciliation
-- discover and monitor compression cycles
-- get submitted delta ladder risk constraints
-- risk constraint management
-- list trades submitted for a compression cycle
-- list submitted trades
-- trade submission and review
-- submit delta ladder risk constraints
-- get compression results including notional reduction and new trades
-- list cycles
-- submit trades for compression
-- get risk
-- post-trade services
-- get compression results
-- submit trades
+- list available trireduce compression cycles. filter by status (open, submission, optimization, completed) or type (cleared, bilateral) to find cycles relevant to the participant.
 - get results
+- get submitted delta ladder risk constraints
+- compression
+- portfolio compression
+- list compression cycles
+- submit trades for compression
+- risk management
+- get schedule, status, and participant count for a cycle
+- submit trades
+- get risk
+- get details for a specific compression cycle
+- confirm results
+- get the delta ladder risk constraints submitted for a compression cycle.
+- confirm acceptance of compression results to proceed to settlement. all cycle participants must confirm before terminations and new trades are processed. set confirmed=false to reject with an optional comment.
+- cme group
+- list trades submitted for a compression cycle
+- submit delta ladder risk constraints
+- get risk constraints
+- list available compression cycles, optionally filtered by status
+- risk constraint management
+- derivatives
+- submit risk
+- discover and monitor compression cycles
+- osttra
+- get cycle details
+- get compression results including notional reduction and new trades
+- get compression results
+- get compression results for a completed cycle including notional reduction percentage, list of terminated trades, and replacement trades created by the optimization algorithm.
+- post-trade services
+- submit trade population for compression
+- get cycle
+- confirm or reject compression results for settlement
+- compression results and settlement confirmation
+- list submitted trades
+- capital optimization
+- submit risk constraints
+- list cycles
+- submit or replace the participant's trade population for a compression cycle. provide an array of trades with uti, notional, currency, maturity, fixed rate, pay/receive direction, and clearing house.
+- submit delta ladder (dv01 by tenor bucket) risk constraints for a compression cycle. the optimization algorithm will preserve the aggregate risk profile within the specified tolerances.
+- list trades submitted by the participant for a given compression cycle.
+- financial services
+- confirm compression results
+- trade submission and review
+- list trades
 slug: portfolio-compression
 source_filename: portfolio-compression.yaml
 source_heading: Capability Spec

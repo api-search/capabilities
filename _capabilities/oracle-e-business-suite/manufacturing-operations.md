@@ -28,52 +28,52 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
+- mfg get discrete job by id
+- retrieve wip operations.
+- mfg get routings
+- get bills of material
+- get discrete jobs
+- retrieve deliveries.
+- inv get deliveries
+- get onhand quantities
+- enterprise
+- inv get onhand quantities
+- e-business suite
+- complete an assembly.
+- mfg issue material
+- retrieve on-hand quantities.
+- on-hand quantity management.
+- oracle
+- issue material to a job.
+- inv get inventory items
+- get bom by id.
+- retrieve inventory items.
+- get discrete job by id.
+- mfg get bills of material
+- retrieve discrete jobs.
+- erp
+- mfg complete assembly
 - production
 - retrieve routings.
-- mfg get bill of material by id
-- supply chain
-- mfg get wip operations
-- mfg get discrete job by id
-- manufacturing
-- mfg get discrete jobs
-- retrieve on-hand quantities.
-- list inventory items.
-- erp
-- on-hand quantity management.
-- inv get inventory items
-- get inventory items
-- retrieve discrete jobs.
-- get bills of material
-- mfg get routings
-- inv get deliveries
-- discrete job management.
-- e-business suite
-- list boms.
-- get bom by id.
-- inv get sales orders
-- mfg complete assembly
-- retrieve sales orders.
-- get discrete jobs
-- list discrete jobs.
-- complete an assembly.
-- inventory item management.
-- mfg issue material
-- inv get onhand quantities
-- enterprise
-- oracle
-- list on-hand quantities.
 - create a discrete job.
-- get discrete job by id.
-- bom management.
-- retrieve wip operations.
-- retrieve bills of material.
-- mfg create discrete job
-- issue material to a job.
-- retrieve deliveries.
+- supply chain
+- list inventory items.
+- inv get sales orders
 - business applications
-- retrieve inventory items.
-- mfg get bills of material
-- get onhand quantities
+- bom management.
+- mfg get wip operations
+- get inventory items
+- list on-hand quantities.
+- list discrete jobs.
+- manufacturing
+- discrete job management.
+- retrieve bills of material.
+- mfg get bill of material by id
+- mfg create discrete job
+- inventory item management.
+- list boms.
+- retrieve sales orders.
+- mfg get discrete jobs
 slug: manufacturing-operations
 source_filename: manufacturing-operations.yaml
 source_heading: Capability Spec

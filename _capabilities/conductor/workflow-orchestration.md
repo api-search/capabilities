@@ -46,59 +46,59 @@ personas: []
 provider_name: Conductor
 provider_slug: conductor
 search_terms:
-- automation
-- search for workflow executions.
-- list task definitions
-- list all workflow definitions.
-- workflow execution management.
-- create event handler
-- create new task definitions.
-- pause a running workflow.
-- workflow orchestration
-- get task definition
-- conductor
-- create task definitions
-- pause workflow
+- terminate a running workflow.
+- get a task definition.
 - resume workflow
-- state
-- search workflows
-- start a new workflow execution.
-- create an event handler.
-- start workflow
-- create workflow definition
-- individual workflow definition.
-- create a workflow definition.
-- get workflow execution status.
-- delete workflow execution
 - resume a paused workflow.
-- workflows
-- list all event handlers.
+- list task definitions
+- create task definitions.
+- list event handlers
+- create new task definitions.
+- list all task definitions.
+- start workflow
+- workflow execution management.
+- create task definitions
 - terminate workflow
+- delete a workflow definition.
+- delete workflow execution
 - update task
 - task management
-- list all task definitions.
 - get workflow execution
-- get a workflow definition.
-- task definition management.
-- create task definitions.
+- individual workflow definition.
+- delete workflow definition
+- pause a running workflow.
 - get a workflow definition by name.
-- workflow definition management.
-- list event handlers
-- list workflow definitions
-- tasks
-- start a new workflow.
-- orchestration
-- terminate a running workflow.
-- poll for task
-- poll for a task to execute.
+- create a new workflow definition.
 - get workflow definition
 - update task execution status.
-- get a task definition.
-- delete a workflow definition.
-- create a new workflow definition.
-- delete a workflow execution.
+- list workflow definitions
 - individual workflow execution.
-- delete workflow definition
+- start a new workflow execution.
+- conductor
+- create a workflow definition.
+- get a workflow definition.
+- search workflows
+- orchestration
+- get workflow execution status.
+- list all workflow definitions.
+- task definition management.
+- start a new workflow.
+- tasks
+- create an event handler.
+- state
+- get task definition
+- poll for a task to execute.
+- delete a workflow execution.
+- search for workflow executions.
+- create workflow definition
+- poll for task
+- workflow orchestration
+- list all event handlers.
+- automation
+- create event handler
+- workflows
+- workflow definition management.
+- pause workflow
 slug: workflow-orchestration
 source_filename: workflow-orchestration.yaml
 source_heading: Capability Spec

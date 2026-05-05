@@ -17,23 +17,23 @@ personas: []
 provider_name: Xweather
 provider_slug: xweather
 search_terms:
-- alerts
-- observations
-- company
-- get_site_alerts
-- air quality
-- data
-- operations manager
-- get_site_forecast
-- get forecast for a site.
 - maritime
-- weather
-- get severe weather alerts for a site.
-- forecasts
-- get current conditions for a site.
+- data
+- observations
 - get_site_conditions
+- forecasts
+- air quality
+- get forecast for a site.
 - lightning
+- alerts
+- get_site_alerts
+- company
+- weather
 - severe weather
+- operations manager
+- get severe weather alerts for a site.
+- get current conditions for a site.
+- get_site_forecast
 slug: operational-weather-monitoring
 source_filename: operational-weather-monitoring.yaml
 source_heading: Capability Spec

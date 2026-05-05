@@ -41,43 +41,43 @@ personas: []
 provider_name: Signal
 provider_slug: signal
 search_terms:
-- security
-- pre-key bundle management for signal protocol
-- register account
-- send message
-- end-to-end encryption
-- open source
-- account configuration
 - list linked devices
-- signal protocol
-- register a new signal account with a phone number (for self-hosted deployments)
-- configure signal account capabilities such as voice, video, and push notification settings
-- user profile management
 - send end-to-end encrypted messages to a destination account
-- list all devices linked to the account
-- cryptography
-- encryption
+- send encrypted message
+- register a new signal account with a phone number (for self-hosted deployments)
+- security
+- get pre-key bundle for initiating a signal protocol session
+- send message
+- account identity
+- open source
+- set account attributes
+- get pre key bundle
 - get profile
-- get the signal profile for a user by their account uuid
+- configure account capabilities and settings
+- encryption
+- cryptography
 - list devices
-- messaging
+- pre-key bundle management for signal protocol
+- list all devices linked to the account
+- user profile management
+- register account
+- end-to-end encryption
+- get signal user profile
+- configure signal account capabilities such as voice, video, and push notification settings
+- list all devices linked to the signal account including device ids and last seen timestamps
+- send end-to-end encrypted signal protocol messages to a destination account uuid
+- get user profile
+- get the signal profile for a user by their account uuid
 - encrypted message delivery
 - get account identity
-- send encrypted message
-- linked device management
-- privacy
-- get the signal account identity including uuid and phone number for the authenticated user
-- get the current signal account identity
-- list all devices linked to the signal account including device ids and last seen timestamps
-- configure account capabilities and settings
 - retrieve pre-key bundle for establishing a new signal protocol encrypted session with a contact
-- get pre-key bundle for initiating a signal protocol session
-- send end-to-end encrypted signal protocol messages to a destination account uuid
-- set account attributes
-- get signal user profile
-- get user profile
-- get pre key bundle
-- account identity
+- signal protocol
+- linked device management
+- account configuration
+- get the current signal account identity
+- get the signal account identity including uuid and phone number for the authenticated user
+- messaging
+- privacy
 slug: secure-messaging
 source_filename: secure-messaging.yaml
 source_heading: Capability Spec

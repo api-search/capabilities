@@ -30,38 +30,38 @@ personas: []
 provider_name: Warner Music Group
 provider_slug: warner-music-group
 search_terms:
+- sync licensing
+- warner music group
+- get artist profile and catalog information from the wmg roster
+- get detailed information about a wmg recording using its isrc code
+- list submitted music license requests and their approval status
+- publishing
+- music catalog discovery
+- streaming
+- search wmg catalog for recordings and compositions
+- entertainment
+- get artist
+- individual track details
+- search catalog
+- catalog
+- music licensing
+- license request management
+- list license requests
+- list licenses
+- search the warner music group catalog for recordings and compositions by artist, title, or genre
+- licensing
+- submit a new music license request
+- artist profile data
 - rights management
 - get track
-- warner music group
-- artist profile data
-- music
-- entertainment
-- search wmg catalog for recordings and compositions
-- licensing
-- get artist
-- publishing
-- sync licensing
-- music catalog discovery
-- individual track details
-- license request management
-- request license
-- catalog
-- get track by isrc
-- request sync license
 - search wmg catalog
-- submit a synchronization license request for use in film, tv, or advertising
-- get artist information and catalog summary
-- list submitted music license requests and their approval status
-- get detailed information about a wmg recording using its isrc code
+- music
 - get track details by isrc code
-- submit a new music license request
-- search the warner music group catalog for recordings and compositions by artist, title, or genre
-- get artist profile and catalog information from the wmg roster
-- search catalog
-- list licenses
-- streaming
-- music licensing
-- list license requests
+- get artist information and catalog summary
+- request sync license
+- request license
+- submit a synchronization license request for use in film, tv, or advertising
+- get track by isrc
 slug: music-licensing
 source_filename: music-licensing.yaml
 source_heading: Capability Spec

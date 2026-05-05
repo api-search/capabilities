@@ -41,43 +41,43 @@ personas: []
 provider_name: Spring Security
 provider_slug: spring-security
 search_terms:
-- validate an oauth2 access or refresh token and retrieve its claims and status
-- java
-- saml
 - security
+- validate an oauth2 access or refresh token and retrieve its claims and status
 - openid connect
-- oauth2 access token management
+- revoke token
+- get provider config
+- jwt
+- token revocation
+- get signing keys
 - issue access token
-- retrieve openid connect identity claims for the currently authenticated user
-- retrieve jwks for jwt signature verification
-- retrieve the json web key set for verifying jwt-format tokens
 - authenticated user identity claims
+- validate token
+- oidc provider configuration discovery
 - public signing key set for jwt verification
+- revoke an oauth2 token to prevent further use
+- retrieve openid connect provider configuration
+- issue an oauth2 access token using the specified grant type
+- retrieve jwks for jwt signature verification
+- get user claims
+- oauth2
+- revoke an active access or refresh token
+- retrieve openid connect identity claims for the currently authenticated user
+- retrieve the json web key set for verifying jwt-format tokens
+- get oidc claims for the authenticated user
 - issue an oauth2 access token using authorization_code, client_credentials, or refresh_token grant
 - discover oidc provider
+- saml
 - authentication
-- validate token
-- token validation and metadata retrieval
-- revoke an oauth2 token to prevent further use
-- get user claims
-- revoke token
-- get oidc claims for the authenticated user
-- identity
-- spring
-- oauth2
 - authorization
-- retrieve openid connect provider metadata for automated client configuration
-- spring framework
-- oidc provider configuration discovery
-- jwt
-- retrieve openid connect provider configuration
-- token revocation
-- revoke an active access or refresh token
+- token validation and metadata retrieval
 - validate an oauth2 token and retrieve its metadata
-- get provider config
-- get signing keys
 - get user identity
-- issue an oauth2 access token using the specified grant type
+- oauth2 access token management
+- spring
+- spring framework
+- retrieve openid connect provider metadata for automated client configuration
+- identity
+- java
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

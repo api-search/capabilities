@@ -51,64 +51,64 @@ personas: []
 provider_name: wellcare-health-plans
 provider_slug: wellcare-health-plans
 search_terms:
-- get member claims
-- search in-network providers by specialty or name.
-- fhir
-- provider directory
-- member demographic and identity.
-- get member coverage
-- get a wellcare member's demographic profile and contact information.
-- patient access
-- insurance plan information.
-- get member medications
-- get active diagnoses and conditions for a wellcare member.
-- get coverage for a member.
-- care delivery locations.
-- member insurance coverage and enrollment.
-- search facilities
-- get historical claims and eob data for a wellcare member. supports up to 5 years of history.
-- in-network facilities.
-- get member profile by fhir patient id.
-- search for in-network wellcare providers by name or specialty.
-- get member encounters
-- search in network providers
-- search for in-network hospitals, clinics, and healthcare facilities.
-- get member care encounters
-- find network facilities
-- find care locations by zip code.
-- find care locations near zip
-- get member claims history
-- get insurance coverage and enrollment details for a wellcare member.
-- in-network providers.
-- search locations
-- get member immunization history
-- medicare
-- get current and historical medication prescriptions for a wellcare member.
-- get plan information
-- healthcare
-- search in-network hospitals and clinics.
 - get immunization records and history for a wellcare member.
-- search providers
-- member active medications.
-- get eob claims for a member.
-- care coordination
-- find wellcare in-network care delivery locations near a zip code.
 - managed care
-- get care visit and encounter history for a wellcare member.
-- get conditions for a member.
-- get medication requests for a member.
-- get wellcare insurance plan details including network and benefit information.
-- member care encounters.
-- member claims history.
+- in-network providers.
+- in-network facilities.
+- get member coverage
+- get coverage for a member.
+- medicare
 - get member profile
-- get member
+- get wellcare insurance plan details including network and benefit information.
+- search for in-network wellcare providers by name or specialty.
+- get a wellcare member's demographic profile and contact information.
+- member insurance coverage and enrollment.
+- search providers
+- fhir
+- healthcare
+- get member encounters
+- care delivery locations.
+- member demographic and identity.
+- member care encounters.
 - search insurance plans.
-- get care encounters for a member.
-- get member active conditions
+- find network facilities
 - medicaid
-- member clinical conditions.
-- search plans
+- find care locations by zip code.
 - get member conditions
+- get active diagnoses and conditions for a wellcare member.
+- search for in-network hospitals, clinics, and healthcare facilities.
+- insurance plan information.
+- get member claims history
+- get member care encounters
+- get medication requests for a member.
+- member active medications.
+- get historical claims and eob data for a wellcare member. supports up to 5 years of history.
+- get member profile by fhir patient id.
+- search in-network hospitals and clinics.
+- get member active conditions
+- search locations
+- search plans
+- search facilities
+- get member immunization history
+- get current and historical medication prescriptions for a wellcare member.
+- get care visit and encounter history for a wellcare member.
+- search in network providers
+- provider directory
+- care coordination
+- get member claims
+- find wellcare in-network care delivery locations near a zip code.
+- patient access
+- member clinical conditions.
+- get conditions for a member.
+- member claims history.
+- get plan information
+- search in-network providers by specialty or name.
+- find care locations near zip
+- get member
+- get insurance coverage and enrollment details for a wellcare member.
+- get eob claims for a member.
+- get member medications
+- get care encounters for a member.
 slug: member-care-coordination
 source_filename: member-care-coordination.yaml
 source_heading: Capability Spec

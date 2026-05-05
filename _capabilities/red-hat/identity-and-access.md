@@ -43,57 +43,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- list all realms.
-- realm roles.
-- list groups.
-- list identity providers
-- delete a user from a realm.
-- list users.
-- create user
-- list identity providers.
-- open source
-- delete user
-- list realm roles
-- list groups in a realm.
 - keycloak realms.
-- list roles in a realm.
-- get user details.
-- terminate a user session.
-- list realms
-- hybrid cloud
-- list clients.
-- list roles
-- register a new client application.
-- get user
-- get realm details.
-- get realm configuration details.
-- identity providers.
-- linux
-- kubernetes
-- get realm
-- realm users.
-- create client
-- cloud
-- delete session
-- red hat
-- list users in a realm.
-- list users
-- keycloak
-- enterprise
-- identity
-- access management
-- containers
-- list all keycloak realms.
-- realm clients.
 - create a new user in a realm.
-- realm groups.
-- list groups
+- list users
+- terminate a user session.
+- get realm configuration details.
+- keycloak
 - list external identity providers.
+- containers
 - specific realm.
+- get realm
+- identity providers.
+- create user
+- get user
+- cloud
+- realm roles.
+- enterprise
+- open source
 - create a user.
-- list roles.
+- list roles
+- delete session
+- list realms
+- list groups in a realm.
+- create client
 - list client applications in a realm.
+- list roles in a realm.
+- get realm details.
+- access management
+- list users.
+- realm users.
+- realm clients.
+- realm groups.
 - list clients
+- register a new client application.
+- delete user
+- list clients.
+- list identity providers.
+- linux
+- list users in a realm.
+- hybrid cloud
+- list groups.
+- red hat
+- delete a user from a realm.
+- list all realms.
+- list roles.
+- list realm roles
+- kubernetes
+- get user details.
+- identity
+- list identity providers
+- list groups
+- list all keycloak realms.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

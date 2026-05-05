@@ -18,32 +18,32 @@ personas: []
 provider_name: Total System Services
 provider_slug: total-system-services
 search_terms:
-- individual transaction
-- get transaction status
-- capture a previously authorized payment
-- card issuing
-- authorize a card payment without capturing funds
-- authorize payment
-- transaction management
-- process sale
-- merchant services
-- list transactions
-- financial services
-- capture payment
-- list merchant transactions with optional date and status filters
-- payments
-- transactions
-- process a full or partial refund for a settled transaction
-- get transaction
-- void payment
-- credit card
-- refund payment
 - void an authorized or captured payment before settlement
-- look up the status and details of a specific transaction
+- list merchant transactions with optional date and status filters
+- credit card
 - fintech
+- get transaction
+- process a full or partial refund for a settled transaction
+- authorize a card payment without capturing funds
 - list payment transactions
-- process a complete card sale (authorization + capture)
+- individual transaction
+- capture payment
 - payment processing
+- get transaction status
+- process a complete card sale (authorization + capture)
+- void payment
+- transaction management
+- card issuing
+- payments
+- refund payment
+- list transactions
+- authorize payment
+- merchant services
+- capture a previously authorized payment
+- look up the status and details of a specific transaction
+- process sale
+- transactions
+- financial services
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

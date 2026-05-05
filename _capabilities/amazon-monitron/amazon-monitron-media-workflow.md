@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon Monitron
 provider_slug: amazon-monitron
 search_terms:
-- broadcasting
-- update project
-- Broadcast Engineer
 - get project admin user
-- list projects
-- amazon monitron associate project admin user
-- amazon monitron create project
-- amazon monitron media processing workflow
-- manage media processing jobs
-- create project
-- delete project
-- amazon monitron get project admin user
-- aws media processing and delivery
-- amazon monitron list projects
-- media processing
+- amazon monitron update project
 - aws
+- aws media processing and delivery
+- amazon monitron get project
 - list jobs
-- media
-- developer building media processing applications
-- amazon monitron delete project
-- list project admin users
+- manage media processing jobs
+- workflow
+- amazon monitron get project admin user
 - Media Developer
 - amazon monitron list project admin users
-- amazon monitron update project
-- engineer managing broadcast media workflows
+- amazon monitron associate project admin user
 - associate project admin user
+- list projects
+- list project admin users
+- media
+- update project
+- media processing
+- engineer managing broadcast media workflows
+- amazon monitron delete project
+- delete project
+- Broadcast Engineer
+- broadcasting
+- amazon monitron create project
+- developer building media processing applications
+- amazon monitron list projects
+- create project
 - get project
-- workflow
-- amazon monitron get project
+- amazon monitron media processing workflow
 slug: amazon-monitron-media-workflow
 source_filename: amazon-monitron-media-workflow.yaml
 source_heading: Capability Spec

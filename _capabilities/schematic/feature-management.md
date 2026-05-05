@@ -50,50 +50,50 @@ personas: []
 provider_name: Schematic
 provider_slug: schematic
 search_terms:
-- feature entitlements for plans
+- check multiple feature flags at once for a company/user
+- create a new product feature in schematic
+- saas
 - finops
 - bulk check multiple feature flags
-- add feature entitlement to a plan
-- product feature definitions
-- create a new product feature
-- list plan feature entitlements
-- list all product features
-- check a feature flag for a company/user
-- list feature entitlements associated with plans
-- entitlements
-- saas
-- list all product features defined in schematic
-- feature flags for runtime evaluation
-- check multiple feature flags at once for a company/user
-- list feature flags in schematic
-- check flags bulk
-- create a feature flag
-- create a new product feature in schematic
-- create plan entitlement
 - create flag
-- list plan entitlements
-- check flag
-- check whether a feature flag is enabled for a company and user context
-- pricing
-- create feature
-- plans
-- create plan
-- list feature flags
-- list subscription plans
-- list plans
-- metering
+- list feature flags in schematic
 - feature flag evaluation
-- feature flags
-- list flags
-- list features
-- create a subscription plan
-- add a feature entitlement to a subscription plan
-- create a new subscription plan
-- subscription plan management
+- list plans
 - billing
-- schematic
+- list flags
+- create plan
+- list all product features defined in schematic
+- list feature flags
+- check a feature flag for a company/user
+- check whether a feature flag is enabled for a company and user context
 - feature management
+- list features
+- schematic
+- metering
+- list feature entitlements associated with plans
+- feature flags
+- feature flags for runtime evaluation
+- create a new subscription plan
+- list plan entitlements
+- add a feature entitlement to a subscription plan
+- plans
+- create plan entitlement
+- product feature definitions
+- list subscription plans
+- create a subscription plan
+- check flags bulk
+- create a new product feature
+- feature entitlements for plans
+- list all product features
+- list plan feature entitlements
+- entitlements
+- create feature
 - list subscription plans in schematic
+- subscription plan management
+- pricing
+- create a feature flag
+- check flag
+- add feature entitlement to a plan
 slug: feature-management
 source_filename: feature-management.yaml
 source_heading: Capability Spec

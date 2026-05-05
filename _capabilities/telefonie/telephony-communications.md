@@ -48,39 +48,39 @@ personas: []
 provider_name: Telefonie
 provider_slug: telefonie
 search_terms:
-- voice call management
-- create a new multi-party conference call room
-- create conference
-- initiate an outbound voice call
-- list sent and received sms and mms messages
 - multi-party conference management
-- send message
-- sms and mms messaging
+- initiate call
 - create a new conference room
-- voice
 - list conferences
-- list sms and mms messages
-- sms
-- list voice calls with optional status and direction filtering
-- telephony
-- make call
-- messaging
 - communications
-- send an sms or mms message to a phone number
-- call recording
-- send an sms or mms message
 - number provisioning
-- send sms
-- list messages
+- sms
 - list all conferences
-- voip
-- list all active and completed conference calls
-- cpaas
+- send an sms or mms message to a phone number
+- send message
+- create a new multi-party conference call room
+- sms and mms messaging
+- list sent and received sms and mms messages
+- telephony
+- list sms and mms messages
 - list calls
 - telecommunications
 - initiate an outbound phone call to a specified number
-- initiate call
+- call recording
+- create conference
+- voip
 - list voice calls with filtering options
+- list all active and completed conference calls
+- list voice calls with optional status and direction filtering
+- send an sms or mms message
+- voice
+- make call
+- initiate an outbound voice call
+- cpaas
+- voice call management
+- send sms
+- list messages
+- messaging
 slug: telephony-communications
 source_filename: telephony-communications.yaml
 source_heading: Capability Spec

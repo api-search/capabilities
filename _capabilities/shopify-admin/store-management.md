@@ -89,78 +89,78 @@ personas: []
 provider_name: Shopify Admin API
 provider_slug: shopify-admin
 search_terms:
-- list orders filtered by status, financial status, or fulfillment status
-- create product
-- retrieve store settings including currency, timezone, and plan details
-- store management
-- store settings and configuration
-- list all store locations
-- inventory tracking across locations
-- update an existing product's details
-- list inventory levels
-- retrieve a customer by id
-- retrieve a product by id
-- update order notes and tags
-- retrieve a specific order with full line item and shipping details
-- cancel an order specifying the reason (customer, fraud, inventory, declined, other)
-- delete product
-- orders
-- admin
-- customers
-- create a new product in the store
-- individual product management
-- list customers with optional email filtering
-- individual customer management
-- list all products with optional status filtering
-- list locations
 - list all active webhook subscriptions
-- create webhook
-- inventory
-- update order
-- update an existing customer's profile information
-- list all products in the shopify store with optional status filtering
-- update customer information
-- products
-- list orders with financial and fulfillment status filtering
-- order management and fulfillment
-- order cancellation
-- list all webhook subscriptions
-- store location management
-- get order
-- commerce
-- subscribe to store events via webhook
-- cancel an order with a reason
-- create a new product with title, description, vendor, and variants
-- create a new customer account with email and profile information
-- subscribe to shopify store events by creating a webhook
-- get shop
-- list webhooks
-- retrieve a specific product by its id
-- list customers
-- product catalog management
-- customer relationship management
-- event subscription management
-- list inventory levels for items and locations
-- retrieve a specific customer's profile and order history
-- check inventory quantities for products across store locations
-- permanently delete a product from the store
+- create product
+- individual customer management
+- update an existing product's details
 - list products
-- get customer
-- list all customers with optional email address filtering
 - ecommerce
-- update product details
-- remove a product from the store
-- get product
-- create customer
-- create a new customer account
-- list orders
-- cancel order
-- update customer
-- list all fulfillment locations for the store
+- list customers
+- subscribe to store events via webhook
+- retrieve a specific order with full line item and shipping details
+- list all products with optional status filtering
+- list customers with optional email filtering
+- commerce
+- list all customers with optional email address filtering
+- store management
+- subscribe to shopify store events by creating a webhook
+- customer relationship management
+- individual product management
+- update an existing customer's profile information
+- inventory tracking across locations
+- get order
+- order cancellation
 - update product
-- individual order management
-- retrieve an order by id
 - retrieve store configuration and settings
+- create a new product in the store
+- create a new customer account
+- customers
+- order management and fulfillment
+- admin
+- list inventory levels for items and locations
+- create webhook
+- list all products in the shopify store with optional status filtering
+- update customer
+- products
+- check inventory quantities for products across store locations
+- retrieve store settings including currency, timezone, and plan details
+- retrieve a specific product by its id
+- retrieve an order by id
+- event subscription management
+- individual order management
+- update order
+- cancel order
+- get customer
+- get shop
+- list locations
+- permanently delete a product from the store
+- delete product
+- list orders filtered by status, financial status, or fulfillment status
+- get product
+- update product details
+- list all store locations
+- list orders
+- orders
+- inventory
+- create a new product with title, description, vendor, and variants
+- retrieve a product by id
+- store settings and configuration
+- product catalog management
+- cancel an order with a reason
+- retrieve a customer by id
+- list all webhook subscriptions
+- retrieve a specific customer's profile and order history
+- list orders with financial and fulfillment status filtering
+- update order notes and tags
+- create customer
+- update customer information
+- cancel an order specifying the reason (customer, fraud, inventory, declined, other)
+- store location management
+- create a new customer account with email and profile information
+- list inventory levels
+- list webhooks
+- list all fulfillment locations for the store
+- remove a product from the store
 slug: store-management
 source_filename: store-management.yaml
 source_heading: Capability Spec

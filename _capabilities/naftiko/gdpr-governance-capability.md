@@ -1,40 +1,51 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.
+description: A governance capability that enforces GDPR data-subject rights (access, erasure, portability) on top of any consumer API.
 layout: capability
 name: Gdpr Governance Capability
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: create-dsr
+  path: /dsr
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- spec-driven integration
+- create dsr
+- list dsr
+- gdpr
 - mcp
-- ai
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a capability with compliance frameworks (gdpr) + governance + tags-on-exposes (network topology, data sensitivity) — the dutch-banking pitch.
-- example op
 - governance
+- ai
+- privacy
+- get dsr
 slug: gdpr-governance-capability
 source_filename: gdpr-governance-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Gdpr Governance Capability\n  description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: gdpr-governance-capability-rest\n    description: REST API for Gdpr Governance Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method:\
-  \ GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: gdpr-governance-capability-mcp\n    description: MCP server exposing Gdpr Governance Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: gdpr-governance-capability-skills\n    description: Agent Skill bundle for Gdpr Governance Capability.\n    skills:\n    - name: gdpr-governance-capability\n      description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.\n      location: file:///opt/naftiko/skills/gdpr-governance-capability\n      allowed-tools: example\n\
-  \      tools:\n      - name: example\n        description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.\n        from:\n          sourceNamespace: gdpr-governance-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Gdpr Governance Capability\n  description: A governance capability that enforces GDPR data-subject rights (access, erasure, portability) on top of any consumer API.\n  tags: [Naftiko, GDPR, Privacy]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: onetrust-env\n  keys: {ONETRUST_HOST: ONETRUST_HOST, ONETRUST_TOKEN: ONETRUST_TOKEN}\ncapability:\n  consumes:\n  - namespace: onetrust\n    type: http\n    baseUri: https://{{ONETRUST_HOST}}\n    authentication: {type: bearer, token: '{{ONETRUST_TOKEN}}'}\n    resources:\n    - {name: dsr-requests, path: /api/datasubject/v3/requests, operations: [{name: create-dsr-request, method: POST}, {name: list-dsr-requests, method: GET}]}\n    - name: dsr-request\n      path: /api/datasubject/v3/requests/{{request_id}}\n      operations:\n      - {name: get-dsr-request, method: GET, inputParameters: [{name: request_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n\
+  \    port: 8080\n    namespace: gdpr-governance-capability-rest\n    description: REST surface for GDPR DSR requests.\n    resources:\n    - {name: dsr, path: /dsr, operations: [{method: POST, name: create-dsr, call: onetrust.create-dsr-request}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: gdpr-governance-capability-mcp\n    description: MCP for GDPR DSR.\n    tools:\n    - {name: create-dsr, call: onetrust.create-dsr-request}\n    - {name: list-dsr, hints: {readOnly: true}, call: onetrust.list-dsr-requests}\n    - name: get-dsr\n      hints: {readOnly: true}\n      inputParameters: [{name: request_id, type: string, required: true}]\n      call: onetrust.get-dsr-request\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: gdpr-governance-capability-skills\n    description: Skill for GDPR governance.\n    skills:\n    - name: gdpr-governance-capability\n      description: GDPR data-subject-rights governance.\n      location: file:///opt/naftiko/skills/gdpr-governance-capability\n\
+  \      allowed-tools: create-dsr,list-dsr,get-dsr\n      tools:\n      - {name: create-dsr, from: {sourceNamespace: gdpr-governance-capability-mcp, action: create-dsr}}\n      - {name: list-dsr, from: {sourceNamespace: gdpr-governance-capability-mcp, action: list-dsr}}\n      - {name: get-dsr, from: {sourceNamespace: gdpr-governance-capability-mcp, action: get-dsr}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/gdpr-governance-capability.yaml
 tags:
 - Naftiko
+- GDPR
+- Privacy
 tools:
-- description: A capability with Compliance Frameworks (GDPR) + governance + tags-on-Exposes (network topology, data sensitivity) — the Dutch-banking pitch.
+- description: ''
+  hints: {}
+  name: create-dsr
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-dsr
+- description: ''
+  hints:
+    readOnly: true
+  name: get-dsr
 ---

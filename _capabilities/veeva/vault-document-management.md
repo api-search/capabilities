@@ -62,57 +62,57 @@ personas: []
 provider_name: veeva
 provider_slug: veeva
 search_terms:
-- execute vql queries across vault data
-- delete a vault document and all its versions
-- regulatory
 - get, update, or delete a specific vault document
-- create a new vault object record
-- update document
-- retrieve a single vault object record
-- retrieve metadata and properties for a specific vault document by id
-- veeva
-- list documents
-- clinical
-- create a new controlled document in vault with lifecycle and type
-- update a vault document's field values
-- create object record
-- delete a vault object record
-- execute vql query
-- delete object record
 - delete document
-- get object record
-- run a vql query to search documents, objects, users, or workflows in vault
-- update field values on a vault object record
-- update field values on an existing vault document
-- get, update, or delete a specific vault object record
-- list all active users in the vault
-- vault
-- run a vql query to retrieve documents, objects, or user data
-- retrieve metadata for a specific vault document
-- list vault users
-- update object record
-- execute a lifecycle action on a document (approve, submit for review, archive)
+- document management
 - list and create vault object records (studies, products, sites)
+- retrieve metadata and properties for a specific vault document by id
 - list users
-- get document
-- list all vault documents accessible to the authenticated user
-- retrieve a single vault object record by object type and record id
-- create a new vault object record for studies, products, sites, or custom objects
-- perform lifecycle actions on a vault document
+- create a new vault document record
+- run a vql query to search documents, objects, users, or workflows in vault
+- vault
 - list records for a vault business object
-- list object records
+- create a new vault object record for studies, products, sites, or custom objects
+- retrieve a single vault object record
+- execute vql queries across vault data
+- run a vql query to retrieve documents, objects, or user data
+- execute a lifecycle action on a document (approve, submit for review, archive)
+- clinical
+- create object record
+- retrieve metadata for a specific vault document
 - list and create vault documents
+- list all vault documents accessible to the authenticated user
+- create a new controlled document in vault with lifecycle and type
+- delete a vault document and all its versions
+- get document
+- list object records
 - life sciences
 - qms
-- create a new vault document record
-- document management
-- execute a lifecycle action (approve, submit for review, archive)
-- update fields on a vault object record
-- permanently delete a vault document and all its versions
-- list records for a vault business object (studies, products, sites, etc.)
 - perform document action
+- list records for a vault business object (studies, products, sites, etc.)
+- list vault users
 - create document
+- get object record
+- create a new vault object record
+- update a vault document's field values
+- execute a lifecycle action (approve, submit for review, archive)
 - pharma
+- get, update, or delete a specific vault object record
+- update object record
+- delete a vault object record
+- list all active users in the vault
+- update field values on an existing vault document
+- veeva
+- update document
+- delete object record
+- execute vql query
+- list documents
+- update fields on a vault object record
+- retrieve a single vault object record by object type and record id
+- update field values on a vault object record
+- permanently delete a vault document and all its versions
+- perform lifecycle actions on a vault document
+- regulatory
 slug: vault-document-management
 source_filename: vault-document-management.yaml
 source_heading: Capability Spec

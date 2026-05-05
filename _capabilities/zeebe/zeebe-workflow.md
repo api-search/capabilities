@@ -74,64 +74,64 @@ personas: []
 provider_name: Zeebe
 provider_slug: zeebe
 search_terms:
-- zeebe migrate a process instance
-- fail job
-- api publish message
-- api deploy resources
-- java
-- zeebe throw error for a job
-- migrate process instance
-- api throw error
-- delete resource
-- zeebe fail a job
-- api get topology
-- workflow orchestration
 - api cancel process instance
-- deploy resources
-- cloud native
-- api fail job
-- create process instance
-- zeebe publish a message
-- zeebe deploy resources
-- activate jobs
-- throw error
-- api complete job
-- api delete resource
-- zeebe broadcast a signal
-- get topology
-- assign user task
-- zeebe delete a resource
-- api broadcast signal
-- operations for api
-- zeebe resolve an incident
-- zeebe update job retries
-- distributed systems
-- zeebe complete a job
-- complete user task
-- complete job
-- bpmn
-- process automation
 - api assign user task
-- update job retries
-- zeebe assign a user task
-- microservices
-- camunda
-- api activate jobs
+- zeebe throw error for a job
+- api fail job
+- zeebe broadcast a signal
 - zeebe create a process instance
-- zeebe activate jobs
-- zeebe
-- api complete user task
-- api create process instance
-- zeebe get cluster topology
-- broadcast signal
 - resolve incident
-- cancel process instance
+- api get topology
 - api update job retries
+- zeebe resolve an incident
+- zeebe deploy resources
+- zeebe assign a user task
+- api throw error
+- bpmn
+- broadcast signal
+- assign user task
 - api resolve incident
-- zeebe complete a user task
-- api migrate process instance
-- zeebe cancel a process instance
+- fail job
+- process automation
+- deploy resources
+- api activate jobs
+- complete user task
+- zeebe update job retries
+- api delete resource
+- zeebe get cluster topology
+- api create process instance
+- api complete user task
+- api complete job
+- delete resource
+- get topology
+- microservices
+- zeebe migrate a process instance
+- api publish message
+- cloud native
 - publish message
+- distributed systems
+- cancel process instance
+- migrate process instance
+- api broadcast signal
+- create process instance
+- zeebe fail a job
+- zeebe
+- api deploy resources
+- api migrate process instance
+- complete job
+- zeebe complete a job
+- operations for api
+- zeebe delete a resource
+- throw error
+- zeebe complete a user task
+- workflow orchestration
+- activate jobs
+- zeebe activate jobs
+- zeebe cancel a process instance
+- zeebe publish a message
+- camunda
+- update job retries
+- java
 slug: zeebe-workflow
 source_filename: zeebe-workflow.yaml
 source_heading: Capability Spec

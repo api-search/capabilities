@@ -49,53 +49,53 @@ personas: []
 provider_name: Varian Medical Systems
 provider_slug: varian-medical-systems
 search_terms:
-- get cancer diagnoses and conditions for an oncology patient
-- get detailed demographics for a specific oncology patient
-- fhir
-- chemotherapy and medication orders
-- get lab results
-- search care plans
-- radiation therapy
-- radiation therapy and clinical procedures
-- get cancer diagnoses
-- get oncology care plans and treatment plans for a patient
-- search for oncology care plans
-- search observations
-- varian
-- get patient
-- get chemotherapy and medication orders for an oncology patient
-- individual patient demographics
-- search for procedures including radiation therapy treatments
-- medical devices
+- cancer diagnoses and clinical conditions
+- search diagnostic reports
 - search for diagnostic reports including pathology
-- search for clinical observations and lab results
-- oncology patient demographics
-- get laboratory results and clinical observations for a patient
-- get pathology and diagnostic reports for an oncology patient
-- pathology and imaging reports
+- get lab results
 - labs, vitals, and clinical measurements
-- health it
-- interoperability
+- get radiation therapy procedures and treatment history for a patient
+- search for procedures including radiation therapy treatments
+- get patient
+- search for oncology patients in varian aria by name or mrn
+- radiation therapy
+- get chemotherapy and medication orders for an oncology patient
+- clinical data
+- search care plans
+- search for clinical observations and lab results
+- search observations
+- get laboratory results and clinical observations for a patient
 - search conditions
 - get pathology reports
-- get patient by fhir resource id
-- healthcare
-- search for oncology patients by name, mrn, or birth date
-- search diagnostic reports
-- clinical data
-- oncology treatment care plans
-- search patients
-- search for oncology patients in varian aria by name or mrn
-- oncology
-- get radiation procedures
 - get treatment plans
-- search for medication orders including chemotherapy
-- get radiation therapy procedures and treatment history for a patient
-- search for patient conditions and cancer diagnoses
-- get chemotherapy orders
-- cancer diagnoses and clinical conditions
-- search procedures
+- fhir
+- healthcare
 - search medication requests
+- individual patient demographics
+- get pathology and diagnostic reports for an oncology patient
+- get oncology care plans and treatment plans for a patient
+- search for oncology care plans
+- search procedures
+- search for medication orders including chemotherapy
+- radiation therapy and clinical procedures
+- oncology patient demographics
+- varian
+- chemotherapy and medication orders
+- oncology treatment care plans
+- oncology
+- get detailed demographics for a specific oncology patient
+- get chemotherapy orders
+- pathology and imaging reports
+- search patients
+- get radiation procedures
+- health it
+- interoperability
+- medical devices
+- search for oncology patients by name, mrn, or birth date
+- get patient by fhir resource id
+- search for patient conditions and cancer diagnoses
+- get cancer diagnoses
+- get cancer diagnoses and conditions for an oncology patient
 slug: oncology-clinical-data
 source_filename: oncology-clinical-data.yaml
 source_heading: Capability Spec

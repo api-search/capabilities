@@ -202,114 +202,114 @@ personas: []
 provider_name: Axway
 provider_slug: axway
 search_terms:
-- axway get provider marketplaces
-- security
-- org findOneSubscription
-- entitlement operations
-- provider find
-- org domainAssociateSubdomain
-- provider findOnboarding
-- provider update
-- axway create consumer oidc idp
-- org domainConsolidate
-- org operations
-- axway initiates oauth 2.0 auth
-- axway update org member association
-- org userFind
-- axway remove consumer idp
-- provider operations
-- organization
-- org userFindOne
-- axway find environment
-- axway associate subdomain to parent domain idp
+- org domainAssociateConfirm
 - axway find organization environments
-- axway get members
-- provider oauthConfirm
-- axway find subscriptions
-- axway sets the primary contract for the org
-- provider oauthCallback
-- provider idpCreateSAML
-- axway get organization
-- env remove
-- provider remove
-- axway create environment
-- env create
-- axway update provider marketplace
+- axway start domain ownership process
+- axway remove consumer idp
+- axway initiates oauth 2.0 auth
+- axway find subscription
+- entitlement find
+- axway find consumer organization
+- axway update consumer idp
 - org userCreate
-- domain operations
-- org domainDissociate
-- axway get all domains
-- provider create
-- axway create provider marketplace
+- axway get provider marketplaces
+- axway update org member association
+- org remove
+- axway remove domain association
+- axway delete organization
+- org findOne
 - org stats
+- axway trigger domain association flow
+- axway get marketplace activity
+- integration
+- enterprise
 - axway enable idp for a domain
 - org domainCreate
-- axway oauth 2.0 auth signup confirmation
-- env operations
-- axway get entitlement meta
-- axway update consumer organization
-- org domainAssociate
-- env update
-- provider consumerFind
-- org domainRemove
-- provider consumerUpdate
-- entitlement find
-- subscription operations
-- axway start domain ownership process
-- axway confirm domain idp association
-- org findOne
-- provider idpUpdate
-- axway
-- axway delete organization
-- provider consumerFindOne
-- org domainEnable
-- axway delete provider marketplace
-- axway consolidate domain users
-- provider consumerRemove
-- provider activity
-- provider idpCreateOIDC
-- org domainConfirm
-- axway find consumer organizations
-- axway update organization
-- org domainAssociateConfirm
-- axway get organization stats
-- provider consumerCreate
-- axway create consumer saml v2.0 idp
-- org userUpdate
-- axway get provider marketplace onboarding settings
-- axway concludes oauth 2.0 auth
-- provider findOne
-- axway confirm domain ownership
-- axway find subscription
-- axway remove domain association
-- org findSubscriptions
-- org userPrimary
-- env find
-- org domainFind
-- axway get org user
-- axway update environment
-- administration
-- axway add user
-- axway remove user
-- axway find environments
-- api management
-- provider idpRemove
-- integration
-- axway get provider marketplace
-- env findOne
+- env remove
 - axway create consumer organization
-- enterprise
-- org update
-- org remove
-- axway delete environment
-- org findEnvs
-- axway update consumer idp
-- axway delete a consumer organization
-- org userRemove
-- axway trigger domain association flow
-- axway find consumer organization
-- axway get marketplace activity
+- provider consumerFind
+- axway remove user
+- axway get org user
+- domain operations
+- entitlement operations
+- provider oauthConfirm
+- org domainAssociateSubdomain
+- provider consumerFindOne
+- subscription operations
+- axway find environments
+- env update
+- env operations
+- axway find environment
+- org domainDissociate
 - provider oauthAuthorize
+- axway add user
+- provider oauthCallback
+- axway get organization
+- org domainConfirm
+- provider idpCreateSAML
+- axway update organization
+- org domainAssociate
+- org userUpdate
+- axway get organization stats
+- provider idpCreateOIDC
+- env findOne
+- axway delete environment
+- security
+- org findEnvs
+- provider activity
+- axway associate subdomain to parent domain idp
+- axway
+- provider create
+- org domainRemove
+- axway sets the primary contract for the org
+- org userPrimary
+- org update
+- administration
+- axway confirm domain ownership
+- axway consolidate domain users
+- axway get provider marketplace onboarding settings
+- axway create provider marketplace
+- org findSubscriptions
+- api management
+- org userFindOne
+- organization
+- axway concludes oauth 2.0 auth
+- org domainEnable
+- axway find consumer organizations
+- axway oauth 2.0 auth signup confirmation
+- axway update provider marketplace
+- axway find subscriptions
+- provider find
+- axway confirm domain idp association
+- provider findOne
+- provider update
+- org operations
+- org domainConsolidate
+- provider operations
+- org userRemove
+- axway update environment
+- axway create environment
+- axway delete a consumer organization
+- org findOneSubscription
+- axway get provider marketplace
+- provider findOnboarding
+- env find
+- axway create consumer saml v2.0 idp
+- axway get all domains
+- axway get entitlement meta
+- provider idpUpdate
+- provider consumerUpdate
+- provider idpRemove
+- provider consumerCreate
+- axway get members
+- axway delete provider marketplace
+- org domainFind
+- axway update consumer organization
+- env create
+- provider consumerRemove
+- axway create consumer oidc idp
+- provider remove
+- org userFind
 slug: organization-management
 source_filename: organization-management.yaml
 source_heading: Capability Spec

@@ -9,8 +9,8 @@ personas: []
 provider_name: Airbus OneAtlas
 provider_slug: airbus-oneatlas
 search_terms:
-- satellites
 - imagery
+- satellites
 slug: oneatlas-geospatial-data-access
 source_filename: oneatlas-geospatial-data-access.yaml
 source_heading: Capability Spec

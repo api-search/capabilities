@@ -69,58 +69,58 @@ personas: []
 provider_name: UpKeep
 provider_slug: upkeep
 search_terms:
-- preventive maintenance
-- meter tracking
-- get asset details and history
-- create a new pm schedule
-- list maintenance requests submitted by requestors
-- submit a maintenance request
-- update a work order status or assignment
-- list parts
-- update work order
-- get work order
-- asset management
-- update a work order status, priority, or assignment
-- list maintenance work orders with optional status and priority filters
-- list work orders
-- list parts in inventory
-- create request
-- list requests
-- upkeep
-- list work orders with optional filters
-- create preventive maintenance
-- create a new preventive maintenance schedule
-- list assets with location filter
-- submit a new maintenance request
-- list pm schedules
-- facility management
-- maintenance management
-- get asset
-- parts and inventory
-- list preventive maintenances
-- preventive maintenance schedules
-- get details and maintenance history for a specific asset
-- list meters
-- list maintenance requests
-- register a new asset in the system
-- list parts and inventory items
-- create a new maintenance work order
-- asset tracking and management
-- work order management
-- get work order details
-- create work order
-- maintenance request intake
-- cmms
-- list preventive maintenance schedules
-- individual work order operations
-- create asset
-- individual asset operations
-- work orders
-- list meters for asset condition tracking
-- list facility assets, optionally filtered by location
-- get full details of a specific work order
-- list assets
 - register a new asset
+- submit a new maintenance request
+- list parts and inventory items
+- list preventive maintenances
+- work orders
+- list parts
+- create asset
+- list requests
+- update a work order status or assignment
+- list maintenance work orders with optional status and priority filters
+- asset management
+- get asset
+- get details and maintenance history for a specific asset
+- list work orders with optional filters
+- list preventive maintenance schedules
+- update a work order status, priority, or assignment
+- list assets
+- list pm schedules
+- create request
+- create work order
+- get work order details
+- maintenance request intake
+- maintenance management
+- list meters for asset condition tracking
+- get work order
+- individual work order operations
+- upkeep
+- work order management
+- create preventive maintenance
+- list assets with location filter
+- submit a maintenance request
+- create a new pm schedule
+- list parts in inventory
+- parts and inventory
+- meter tracking
+- get full details of a specific work order
+- create a new preventive maintenance schedule
+- individual asset operations
+- register a new asset in the system
+- list maintenance requests
+- asset tracking and management
+- get asset details and history
+- preventive maintenance schedules
+- list meters
+- list facility assets, optionally filtered by location
+- create a new maintenance work order
+- list maintenance requests submitted by requestors
+- facility management
+- update work order
+- cmms
+- preventive maintenance
+- list work orders
 slug: maintenance-operations
 source_filename: maintenance-operations.yaml
 source_heading: Capability Spec

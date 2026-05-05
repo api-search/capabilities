@@ -18,35 +18,35 @@ personas: []
 provider_name: Apidog
 provider_slug: apidog
 search_terms:
-- import openapi specification into apidog project.
-- Platform Engineer
-- engineer automating api specification workflows via ci/cd integration.
-- api testing
-- managing the complete lifecycle of api specifications from design to deployment.
-- apidog
-- import openapi spec
-- import an openapi/swagger specification into an apidog project for design-first development.
-- API Developer
-- import a postman collection into apidog for converting to openapi-based workflows.
-- import
-- api design
-- import postman collection
-- export
-- import openapi
-- export openapi specification from apidog project.
-- export openapi
-- collaboration
-- export openapi spec
-- developer building and managing apis using apidog's design-first platform.
-- export an openapi specification from an apidog project for sharing or ci/cd integration.
-- documentation
-- unified workflow for managing api specifications lifecycle.
-- api lifecycle
-- mocking
 - platform
 - design-first
+- export openapi specification from apidog project.
+- api lifecycle
+- export openapi spec
 - export api specifications to standard formats.
+- export
+- import an openapi/swagger specification into an apidog project for design-first development.
+- Platform Engineer
+- managing the complete lifecycle of api specifications from design to deployment.
+- export openapi
+- apidog
+- import openapi specification into apidog project.
+- api testing
+- developer building and managing apis using apidog's design-first platform.
+- import a postman collection into apidog for converting to openapi-based workflows.
+- import openapi
+- mocking
+- unified workflow for managing api specifications lifecycle.
+- api design
+- import postman collection
+- import
+- export an openapi specification from an apidog project for sharing or ci/cd integration.
+- documentation
+- import openapi spec
 - import api specifications from various formats.
+- collaboration
+- engineer automating api specification workflows via ci/cd integration.
+- API Developer
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

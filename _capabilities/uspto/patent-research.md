@@ -45,47 +45,47 @@ personas: []
 provider_name: USPTO
 provider_slug: uspto
 search_terms:
-- patent research
-- regulatory
 - open data
-- ptab trial proceedings search
-- search ptab trials
-- search uspto patent applications by keyword, inventor, assignee, or cpc class
+- uspto
 - search recorded patent assignments and ownership transfers
+- get ptab trial details
 - government
-- get ptab trial
-- search patents
-- get full details for a granted patent
-- trademark status lookup
+- ptab
+- intellectual property
+- retrieve full patent application details
+- search the uspto patent database by keyword, inventor name, assignee, cpc classification code, filing date range, or patent type. use for prior art searches and patent landscape analysis.
 - due diligence
 - get trademark application status and prosecution history
-- search ptab inter partes review (ipr), post-grant review (pgr), and covered business method (cbm) trials. useful for patent validity research and litigation monitoring.
-- retrieve a granted patent
-- trademarks
-- search patent assignments
-- look up the current status and prosecution history for a uspto trademark application by serial number. use for trademark clearance research.
-- retrieve complete details for a patent application including claims, inventors, assignees, cpc classifications, and prosecution history.
-- intellectual property
-- get patent application
-- get complete patent application with claims, inventors, and prosecution history
-- search the uspto patent database by keyword, inventor name, assignee, cpc classification code, filing date range, or patent type. use for prior art searches and patent landscape analysis.
-- get trademark status
-- get complete ptab trial information including contested claims, grounds of challenge, prior art references, and filed documents.
-- get complete ptab trial information
-- search ptab ipr, pgr, and cbm proceedings
-- prior art
-- search recorded patent assignments to trace ownership history and current ownership of patents. useful for m&a due diligence and freedom-to-operate analysis.
-- ptab
-- get granted patent
-- retrieve full patent application details
-- uspto
-- patent assignment search
-- get patent application details
-- search patent applications
-- patents
 - search patent applications and granted patents
-- get ptab trial details
+- get ptab trial
+- get granted patent
+- ptab trial proceedings search
+- search patent applications
+- retrieve a granted patent
 - retrieve full details for a granted uspto patent including claims, grant date, expiration date, and complete bibliographic data.
+- patent research
+- get complete patent application with claims, inventors, and prosecution history
+- get patent application details
+- search recorded patent assignments to trace ownership history and current ownership of patents. useful for m&a due diligence and freedom-to-operate analysis.
+- search ptab trials
+- patents
+- search uspto patent applications by keyword, inventor, assignee, or cpc class
+- get trademark status
+- search patents
+- retrieve complete details for a patent application including claims, inventors, assignees, cpc classifications, and prosecution history.
+- look up the current status and prosecution history for a uspto trademark application by serial number. use for trademark clearance research.
+- search ptab ipr, pgr, and cbm proceedings
+- get complete ptab trial information including contested claims, grounds of challenge, prior art references, and filed documents.
+- patent assignment search
+- get full details for a granted patent
+- trademark status lookup
+- get complete ptab trial information
+- prior art
+- search patent assignments
+- search ptab inter partes review (ipr), post-grant review (pgr), and covered business method (cbm) trials. useful for patent validity research and litigation monitoring.
+- trademarks
+- get patent application
+- regulatory
 slug: patent-research
 source_filename: patent-research.yaml
 source_heading: Capability Spec

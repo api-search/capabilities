@@ -49,53 +49,53 @@ personas: []
 provider_name: Salesloft
 provider_slug: salesloft
 search_terms:
-- revenue intelligence
-- automation
-- buyer intent signals for rhythm
-- submit a buyer intent signal to salesloft rhythm to prioritize follow-up
-- list sales opportunities and pipeline in salesloft
-- analytics
-- email activity tracking
-- create a follow-up task
-- call recordings and outcomes
-- conversations
-- signals
-- list emails sent through salesloft for activity tracking
-- create a follow-up task for a sales rep
-- create a webhook subscription to receive salesloft events
-- sales team users
-- list emails
-- revenue
-- list pending sales tasks and follow-ups
-- tasks and follow-ups
-- create webhook subscription
-- opportunities
-- salesloft
-- list webhook subscriptions
-- single opportunity
-- list call recordings and outcomes from salesloft
-- list opportunities
-- list users
-- get opportunity by id
-- fetch opportunity
-- list all tasks
-- list tasks
-- submit buyer signal
-- sales
-- list webhook subscriptions for salesloft event notifications
-- sales opportunities and pipeline
-- ai
 - list sales team members in salesloft
-- create signal
-- list all emails
-- list calls
-- list all users
+- signals
+- list webhook subscriptions for salesloft event notifications
 - list all calls
-- get details for a specific opportunity
-- crm
+- list pending sales tasks and follow-ups
+- revenue intelligence
 - list all opportunities
+- list users
+- salesloft
+- fetch opportunity
+- call recordings and outcomes
+- list sales opportunities and pipeline in salesloft
+- create a webhook subscription to receive salesloft events
+- create signal
 - create task
+- ai
+- list emails sent through salesloft for activity tracking
+- analytics
+- list all tasks
+- opportunities
+- submit a buyer intent signal to salesloft rhythm to prioritize follow-up
+- revenue
+- sales opportunities and pipeline
+- create a follow-up task
+- list calls
+- list call recordings and outcomes from salesloft
+- list all emails
 - submit a buyer signal to rhythm
+- list emails
+- get details for a specific opportunity
+- list webhook subscriptions
+- list all users
+- sales team users
+- conversations
+- create a follow-up task for a sales rep
+- crm
+- email activity tracking
+- get opportunity by id
+- single opportunity
+- tasks and follow-ups
+- sales
+- submit buyer signal
+- automation
+- list tasks
+- create webhook subscription
+- list opportunities
+- buyer intent signals for rhythm
 slug: revenue-intelligence
 source_filename: revenue-intelligence.yaml
 source_heading: Capability Spec

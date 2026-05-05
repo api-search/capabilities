@@ -35,41 +35,41 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- list applications
+- get application
+- platform
 - incident response
-- monitoring
-- apm
-- analytics
-- list alert conditions for a specific policy
-- list applications for incident context
-- alerts
-- get alerts events
-- list alert incidents, optionally filtered to only open ones
+- list applications for context
+- list alert incidents
 - get application details
-- get application details for incident context
+- analysis
 - new relic
+- get application details for incident context
+- analytics
+- list applications for incident context
+- observability
+- get alerts events
 - get application details for incident investigation
+- alerts
+- performance
+- list alert violations
+- apm
+- devops
+- incidents
+- list alert incidents, optionally filtered to only open ones
 - get applications
+- list applications
+- list alert violations, optionally filtered to only open ones
+- sre
+- infrastructure
+- get alerts violations
+- get alerts conditions
+- monitoring
+- list alert events filtered by product or entity type
 - list alert conditions for a policy
 - get alerts incidents
-- list alert violations
-- get application
-- get alerts conditions
+- list alert conditions for a specific policy
 - list alert conditions
-- list alert violations, optionally filtered to only open ones
-- analysis
-- performance
-- list applications for context
-- list alert events filtered by product or entity type
-- observability
-- platform
-- get alerts violations
 - list alert events
-- list alert incidents
-- devops
-- infrastructure
-- sre
-- incidents
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

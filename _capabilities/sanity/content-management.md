@@ -39,45 +39,45 @@ personas: []
 provider_name: Sanity
 provider_slug: sanity
 search_terms:
-- list tokens
-- list projects
-- update document
-- content management
-- update an existing document in sanity content lake
-- list all accessible sanity projects
-- apply create, update, patch, or delete mutations
-- developer platform
-- configure a webhook to receive sanity content change notifications
-- sanity
-- project administration
-- execute a groq query against a dataset
-- dataset management for a project
-- create webhook
-- delete document
-- list webhooks for a project
+- query sanity content lake documents using groq syntax
 - create a new document in sanity content lake
-- create a new webhook
-- groq
-- list all sanity projects accessible with the current token
-- mutate documents
 - query documents
-- webhook configuration for content events
-- query content lake documents using groq
-- list webhooks
+- delete document
 - structured content
-- list datasets in a project
-- api token management
+- configure a webhook to receive sanity content change notifications
+- developer platform
 - list datasets
-- query content
+- list api tokens for a project
+- project administration
+- delete a document from sanity content lake
+- create webhook
+- execute a groq query against a dataset
+- apply create, update, patch, or delete mutations
+- list projects
+- webhook configuration for content events
+- api token management
+- list tokens
+- mutate documents
+- list datasets in a project
+- create document
+- sanity
+- query content lake documents using groq
+- create a new webhook
+- dataset management for a project
+- groq
+- update an existing document in sanity content lake
+- write operations on content lake documents
+- real-time
+- list all sanity projects accessible with the current token
+- update document
+- headless cms
+- list webhooks for a project
 - list datasets in a sanity project
 - sanity project management
-- real-time
-- query sanity content lake documents using groq syntax
-- headless cms
-- list api tokens for a project
-- write operations on content lake documents
-- delete a document from sanity content lake
-- create document
+- content management
+- list webhooks
+- list all accessible sanity projects
+- query content
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

@@ -38,45 +38,45 @@ personas: []
 provider_name: Stytch
 provider_slug: stytch
 search_terms:
-- send magic link
-- authenticate with a one-time passcode
-- passwordless
-- security
-- send a stytch magic link to a user's email for passwordless login
-- authenticate session
-- revoke a session
-- validate a stytch consumer session token or jwt
-- send sms otp
-- magic links
-- get user
-- session revocation
-- authentication
-- send a one-time passcode via sms
-- send a stytch sms one-time passcode to a phone number
-- search users
-- complete stytch magic link authentication using the token from the email
-- retrieve a stytch user record by id
-- get a user
-- session validation
-- otp
-- authenticate magic link
-- authenticate otp codes
-- stytch
 - search stytch users
-- authenticate with a magic link token
-- identity
-- send otp sms
-- developer tools
-- revoke an active stytch consumer session (logout)
-- revoke session
-- authenticate magic link tokens
-- send a magic link for authentication
-- consumer
-- authenticate a user with a stytch one-time passcode
+- send sms otp
+- security
 - validate a session token
+- send a stytch magic link to a user's email for passwordless login
+- authenticate a user with a stytch one-time passcode
+- authenticate otp codes
+- get user
+- validate a stytch consumer session token or jwt
+- magic links
+- send otp sms
 - authenticate otp
-- user records
+- stytch
+- revoke an active stytch consumer session (logout)
+- send magic link
+- session revocation
+- get a user
+- passwordless
+- developer tools
+- complete stytch magic link authentication using the token from the email
+- search users
+- authenticate session
 - send email magic links
+- authenticate magic link
+- session validation
+- send a stytch sms one-time passcode to a phone number
+- authenticate with a one-time passcode
+- revoke a session
+- send a one-time passcode via sms
+- retrieve a stytch user record by id
+- send a magic link for authentication
+- revoke session
+- authentication
+- consumer
+- authenticate with a magic link token
+- user records
+- otp
+- authenticate magic link tokens
+- identity
 slug: passwordless-authentication
 source_filename: passwordless-authentication.yaml
 source_heading: Capability Spec

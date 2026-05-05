@@ -62,71 +62,71 @@ personas: []
 provider_name: Strava
 provider_slug: strava
 search_terms:
-- list starred segments
-- running
-- get activity detail
-- list routes created by the athlete
-- list segments starred by the athlete
-- get usage and details for a specific bike or pair of shoes
-- get detailed activity data
-- get the athlete's heart rate and power training zones
-- get time-series data (gps track, heart rate, power, cadence, speed) for deep performance analysis
-- get segment details
-- get time-series data streams for performance analysis
-- cycling
-- get athlete
-- list athlete's workout activities, optionally filtered by date range
-- heart rate and power training zones
-- list athlete's club memberships
-- fitness
-- list clubs
-- get details about a specific strava segment including grade and climb category
-- get the athlete's training zones
-- athlete routes
-- athlete activity statistics
-- list activities
-- workout activity list and creation
-- list athlete's recent activities with date filtering
-- get leaderboard
-- list routes
 - get athlete stats
-- list the athlete's club memberships for social training context
-- get details about a bike or shoe
-- list the athlete's starred segments for quick access
-- authenticated athlete profile and statistics
-- list planned routes created by the athlete
-- get activity
-- get the authenticated athlete's profile
-- get activity streams
-- get year-to-date and all-time activity totals
-- get details about a specific segment
-- get athlete zones
-- get laps
-- get segment leaderboard
-- activity data streams
-- strava segment details
-- get the authenticated athlete's profile including name, location, and gear
+- get time-series data (gps track, heart rate, power, cadence, speed) for deep performance analysis
+- workout activity list and creation
 - athlete club memberships
-- athlete gear details
 - get the competitive leaderboard for a segment, optionally filtered by gender or following
-- get zones
-- get stats
-- individual activity detail
-- get gear
-- get year-to-date and all-time totals for rides, runs, and swims
-- get gear details
-- activity lap splits
-- sports
-- get lap split data to analyze pacing and consistency
-- get leaderboard for a segment
-- fitness tracking
-- athlete's starred segments
 - get athlete profile
-- get segment
-- segment competitive leaderboard
-- get full details of a specific workout including performance metrics
-- get activity laps
+- get the athlete's heart rate and power training zones
+- get laps
+- list activities
+- get activity detail
+- cycling
+- get time-series data streams for performance analysis
+- get the athlete's training zones
+- running
+- list starred segments
+- get details about a bike or shoe
+- get athlete zones
 - get lap split data for an activity
+- list athlete's club memberships
+- get segment
+- get lap split data to analyze pacing and consistency
+- list the athlete's club memberships for social training context
+- get athlete
+- get stats
+- get full details of a specific workout including performance metrics
+- athlete activity statistics
+- get gear
+- strava segment details
+- get the authenticated athlete's profile
+- get leaderboard for a segment
+- get segment details
+- list the athlete's starred segments for quick access
+- get year-to-date and all-time totals for rides, runs, and swims
+- list athlete's workout activities, optionally filtered by date range
+- list clubs
+- get activity laps
+- individual activity detail
+- list athlete's recent activities with date filtering
+- get segment leaderboard
+- sports
+- fitness tracking
+- fitness
+- get the authenticated athlete's profile including name, location, and gear
+- list segments starred by the athlete
+- activity data streams
+- get leaderboard
+- activity lap splits
+- athlete's starred segments
+- list routes
+- get details about a specific segment
+- segment competitive leaderboard
+- athlete gear details
+- athlete routes
+- get gear details
+- authenticated athlete profile and statistics
+- get activity streams
+- get zones
+- list planned routes created by the athlete
+- get detailed activity data
+- list routes created by the athlete
+- get usage and details for a specific bike or pair of shoes
+- heart rate and power training zones
+- get year-to-date and all-time activity totals
+- get activity
+- get details about a specific strava segment including grade and climb category
 slug: fitness-tracking
 source_filename: fitness-tracking.yaml
 source_heading: Capability Spec

@@ -38,37 +38,37 @@ personas: []
 provider_name: western-digital
 provider_slug: western-digital
 search_terms:
-- get metadata for a file or folder.
-- create a shareable link for one or more files.
-- nas
-- upload a new file or create a folder on my cloud home.
-- download the binary content of a file.
-- create file
-- permanently delete a file or folder from my cloud home.
-- permanently delete a file or folder.
-- search for files within a specified parent folder on my cloud home. useful for locating files in nested directory structures.
-- search for files by parent folder.
 - browse and manage files and folders on the nas device.
-- create a shareable url for one or more files on my cloud home. optionally set an expiration date.
-- file management
-- list files
-- upload and download file content.
-- sharing
-- list files and folders in a my cloud home directory. pass "root" as folder_id to list the root directory.
-- create and manage file share links.
-- search files within a specified parent folder.
-- get file
-- get metadata (name, size, type, dates) for a specific file or folder.
-- download file
-- search files by parent
-- cloud storage
-- consumer
-- operate on a specific file or folder.
-- upload a file or create a folder.
 - download the content of a file stored on my cloud home.
-- create share
-- list files and folders in a directory.
+- search for files within a specified parent folder on my cloud home. useful for locating files in nested directory structures.
+- get metadata (name, size, type, dates) for a specific file or folder.
+- search files by parent
+- upload and download file content.
 - delete file
+- create a shareable url for one or more files on my cloud home. optionally set an expiration date.
+- search for files by parent folder.
+- sharing
+- download the binary content of a file.
+- cloud storage
+- list files
+- upload a file or create a folder.
+- download file
+- permanently delete a file or folder.
+- create share
+- nas
+- permanently delete a file or folder from my cloud home.
+- list files and folders in a directory.
+- get file
+- create and manage file share links.
+- create a shareable link for one or more files.
+- upload a new file or create a folder on my cloud home.
+- operate on a specific file or folder.
+- consumer
+- get metadata for a file or folder.
+- file management
+- create file
+- list files and folders in a my cloud home directory. pass "root" as folder_id to list the root directory.
+- search files within a specified parent folder.
 slug: cloud-storage-management
 source_filename: cloud-storage-management.yaml
 source_heading: Capability Spec

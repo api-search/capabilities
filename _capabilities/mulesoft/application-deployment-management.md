@@ -21,24 +21,24 @@ personas: []
 provider_name: MuleSoft
 provider_slug: mulesoft
 search_terms:
-- list all cloudhub applications with their runtime status and configuration
-- get configuration and runtime details for a specific cloudhub application
-- list applications
-- deploy a new mule application to cloudhub
-- api management
-- get the current runtime status of a cloudhub application
-- list all deployed cloudhub applications
-- check the current deployment and runtime status of a cloudhub application
-- integration
 - get application
-- update configuration or redeploy a cloudhub application
-- get application status
-- api gateway
-- enterprise
 - get details for a specific cloudhub application
+- get configuration and runtime details for a specific cloudhub application
+- integration
+- enterprise
 - deploy application
 - delete application
+- get application status
 - update application
+- list all deployed cloudhub applications
+- list applications
+- check the current deployment and runtime status of a cloudhub application
+- api management
+- update configuration or redeploy a cloudhub application
+- get the current runtime status of a cloudhub application
+- api gateway
+- deploy a new mule application to cloudhub
+- list all cloudhub applications with their runtime status and configuration
 - delete and undeploy a cloudhub application permanently
 slug: application-deployment-management
 source_filename: application-deployment-management.yaml

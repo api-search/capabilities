@@ -9,11 +9,11 @@ personas: []
 provider_name: The Open Movie Database
 provider_slug: the-open-movie-database
 search_terms:
-- entertainment
+- television
 - metadata
 - imdb
 - movies
-- television
+- entertainment
 slug: movie-lookup
 source_filename: movie-lookup.yaml
 source_heading: Capability Spec

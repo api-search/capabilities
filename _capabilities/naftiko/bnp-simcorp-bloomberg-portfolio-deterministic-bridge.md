@@ -1,40 +1,44 @@
 ---
 categories: []
 consumed_apis: []
-description: A composed capability over SimCorp Dimension + Bloomberg AIM that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.
+description: A bridge capability for BNP Paribas joining SimCorp Dimension and Bloomberg AIM into one deterministic portfolio object.
 layout: capability
 name: Bnp Simcorp Bloomberg Portfolio Deterministic Bridge
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: get-bridged-portfolio
+  path: /portfolios/{{portfolio_id}}
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- a composed capability over simcorp dimension + bloomberg aim that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.
-- ai
+- get bridged portfolio
+- spec-driven integration
+- simcorp
+- bnp
 - mcp
+- capabilities
+- bloomberg
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
 - governance
+- ai
 slug: bnp-simcorp-bloomberg-portfolio-deterministic-bridge
 source_filename: bnp-simcorp-bloomberg-portfolio-deterministic-bridge.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bnp Simcorp Bloomberg Portfolio Deterministic Bridge\n  description: A composed capability over SimCorp Dimension + Bloomberg AIM that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-rest\n    description: REST API for Bnp Simcorp Bloomberg Portfolio Deterministic Bridge.\n\
-  \    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-mcp\n    description: MCP server exposing Bnp Simcorp Bloomberg Portfolio Deterministic Bridge for AI agents.\n    tools:\n    - name: example\n      description: A composed capability over SimCorp Dimension + Bloomberg AIM that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-skills\n    description: Agent Skill bundle for Bnp Simcorp Bloomberg Portfolio Deterministic Bridge.\n    skills:\n    - name: bnp-simcorp-bloomberg-portfolio-deterministic-bridge\n      description: A\
-  \ composed capability over SimCorp Dimension + Bloomberg AIM that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.\n      location: file:///opt/naftiko/skills/bnp-simcorp-bloomberg-portfolio-deterministic-bridge\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A composed capability over SimCorp Dimension + Bloomberg AIM that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.\n        from:\n          sourceNamespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bnp Simcorp Bloomberg Portfolio Deterministic Bridge\n  description: A bridge capability for BNP Paribas joining SimCorp Dimension and Bloomberg AIM into one deterministic portfolio object.\n  tags: [Naftiko, BNP, SimCorp, Bloomberg]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: simcorp-env\n  keys: {SIMCORP_HOST: SIMCORP_HOST, SIMCORP_TOKEN: SIMCORP_TOKEN}\n- namespace: bloomberg-env\n  keys: {BLOOMBERG_TOKEN: BLOOMBERG_TOKEN}\ncapability:\n  consumes:\n  - namespace: simcorp\n    type: http\n    baseUri: https://{{SIMCORP_HOST}}\n    authentication: {type: bearer, token: '{{SIMCORP_TOKEN}}'}\n    resources:\n    - name: portfolio\n      path: /api/v1/portfolios/{{portfolio_id}}\n      operations:\n      - {name: get-simcorp-portfolio, method: GET, inputParameters: [{name: portfolio_id, in: path}]}\n  - namespace: aim\n    type: http\n    baseUri: https://api.bloomberg.com\n    authentication: {type: bearer,\
+  \ token: '{{BLOOMBERG_TOKEN}}'}\n    resources:\n    - name: aim-portfolio\n      path: /eap/aim/v1/portfolios/{{portfolio_id}}\n      operations:\n      - {name: get-aim-portfolio, method: GET, inputParameters: [{name: portfolio_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-rest\n    description: REST surface for SimCorp+AIM bridge.\n    resources:\n    - name: portfolio\n      path: /portfolios/{{portfolio_id}}\n      operations:\n      - {method: GET, name: get-bridged-portfolio, inputParameters: [{name: portfolio_id, in: path, type: string}], call: simcorp.get-simcorp-portfolio}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-mcp\n    description: MCP for SimCorp+AIM bridge.\n    tools:\n    - name: get-bridged-portfolio\n      hints: {readOnly: true}\n      inputParameters: [{name: portfolio_id, type: string,\
+  \ required: true}]\n      call: simcorp.get-simcorp-portfolio\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-skills\n    description: Skill for SimCorp+AIM bridge.\n    skills:\n    - name: bnp-simcorp-bloomberg-portfolio-deterministic-bridge\n      description: SimCorp + Bloomberg AIM bridged portfolio.\n      location: file:///opt/naftiko/skills/bnp-simcorp-bloomberg-portfolio-deterministic-bridge\n      allowed-tools: get-bridged-portfolio\n      tools:\n      - {name: get-bridged-portfolio, from: {sourceNamespace: bnp-simcorp-bloomberg-portfolio-deterministic-bridge-mcp, action: get-bridged-portfolio}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/bnp-simcorp-bloomberg-portfolio-deterministic-bridge.yaml
 tags:
 - Naftiko
+- BNP
+- SimCorp
+- Bloomberg
 tools:
-- description: A composed capability over SimCorp Dimension + Bloomberg AIM that returns a deterministic, schema-strict portfolio context object for an investment-bank agent.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-bridged-portfolio
 ---

@@ -29,29 +29,29 @@ personas: []
 provider_name: CCH Tagetik
 provider_slug: tagetik
 search_terms:
-- query financial consolidation data across entities, periods, and scenarios
-- retrieve financial records filtered by year, period, scenario, and entity
-- query cch tagetik analytical workspace data for budget, forecast, and planning scenarios
-- analytics
-- retrieve analytical workspace records
-- financial consolidation
-- retrieve available entity sets and their properties
-- odata service metadata for entity discovery
-- odata
-- query analytical workspace data for planning and analysis
-- financial planning
-- query financial data
-- esg
-- financial close
-- reporting
-- corporate performance management
-- get odata metadata
-- query cch tagetik financial consolidation data with filters for year, period, scenario (actual/budget/forecast), entity, and account
-- budgeting
-- discover available cch tagetik entity sets, dimensions, and data models in a given database
-- forecasting
-- query analytical data
 - financial reporting
+- discover available cch tagetik entity sets, dimensions, and data models in a given database
+- retrieve available entity sets and their properties
+- get odata metadata
+- financial close
+- corporate performance management
+- analytics
+- odata service metadata for entity discovery
+- forecasting
+- budgeting
+- query cch tagetik analytical workspace data for budget, forecast, and planning scenarios
+- reporting
+- esg
+- query cch tagetik financial consolidation data with filters for year, period, scenario (actual/budget/forecast), entity, and account
+- financial planning
+- query analytical workspace data for planning and analysis
+- retrieve financial records filtered by year, period, scenario, and entity
+- query analytical data
+- financial consolidation
+- retrieve analytical workspace records
+- odata
+- query financial consolidation data across entities, periods, and scenarios
+- query financial data
 slug: financial-reporting
 source_filename: financial-reporting.yaml
 source_heading: Capability Spec

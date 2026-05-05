@@ -22,30 +22,30 @@ personas: []
 provider_name: Sinch
 provider_slug: sinch
 search_terms:
-- numbers
-- list active numbers
-- verification
-- voice
-- manage active phone numbers
-- search for available phone numbers
-- search available numbers
-- sms
-- messaging
-- communications
-- brands
-- compliance
-- search phone numbers
-- list all active phone numbers
-- rent phone number
-- provisioning
 - search for available phone numbers by country code and type (local, toll-free, mobile)
-- registration
+- list active numbers
+- communications
+- sms
+- provisioning
+- brands
+- numbers
+- verification
 - search for available numbers by country and type
+- search for available phone numbers
+- phone numbers
+- list all active phone numbers
+- manage active phone numbers
 - list all phone numbers currently rented in the project
+- registration
+- search phone numbers
+- voice
+- search available numbers
+- compliance
+- rent phone number
 - rent a phone number matching the specified country and type requirements
 - cpaas
-- phone numbers
 - rent a phone number matching specified criteria
+- messaging
 slug: number-management
 source_filename: number-management.yaml
 source_heading: Capability Spec

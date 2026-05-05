@@ -85,79 +85,79 @@ personas: []
 provider_name: Resend
 provider_slug: resend
 search_terms:
-- retrieve a single sent email
-- list api keys
-- add a contact to an audience for marketing emails
-- get email status
-- broadcasts
-- send up to 100 emails in a single batch operation
-- list all contact audiences
-- send up to 100 emails in a single batch
-- single email management
-- send transactional email
-- list all broadcast campaigns
 - add a new email sending domain
-- send or schedule a broadcast campaign to an audience
-- transactional email
-- send email
-- delete domain
-- add a contact to an audience
-- send a transactional email to one or more recipients
-- verify domain
-- send a transactional email
-- verify dns records for a sending domain
-- create sending domain
-- transactional email sending
-- add contact to audience
-- marketing email
-- cancel a scheduled email
-- single domain management
-- get the status and details of a sent email by id
-- update email
-- audiences
-- get domain
-- create a new broadcast email campaign
-- batch email sending
-- create audience
-- update domain
-- get email
-- contact audiences for marketing emails
-- create a new contact audience
-- list all email broadcast campaigns
-- cancel email
-- list domains
-- add a new sending domain
-- update domain tracking settings
-- audience contacts
-- list all configured sending domains
-- email domain configuration
-- create broadcast
-- send or schedule a broadcast campaign
-- list all configured email sending domains
-- developer tools
-- cancel scheduled email
-- remove a sending domain
 - list contacts in an audience
-- email broadcast campaigns
-- list broadcasts
-- list sending domains
-- list all api keys for the account
-- cancel a scheduled email before it is sent
-- update a scheduled email
-- send or schedule a broadcast
-- create contact
-- email
-- list contacts in a specific audience
-- get details for a domain
-- list all audiences
-- list contacts
-- create a new audience
+- list all configured email sending domains
+- audience contacts
+- verify dns records for a sending domain
 - send broadcast
-- send batch emails
+- contact audiences for marketing emails
+- send or schedule a broadcast campaign to an audience
+- marketing email
+- list all email broadcast campaigns
+- transactional email sending
+- create contact
 - send broadcast campaign
+- get details for a domain
+- cancel scheduled email
+- create broadcast
+- list all api keys for the account
+- list contacts in a specific audience
+- email
+- create a new audience
+- send or schedule a broadcast
+- update domain tracking settings
+- add contact to audience
 - create domain
-- create a new broadcast campaign
+- add a contact to an audience
+- send up to 100 emails in a single batch operation
+- create sending domain
+- developer tools
+- delete domain
+- list domains
+- get email
+- update domain
+- batch email sending
+- send up to 100 emails in a single batch
+- transactional email
+- add a new sending domain
+- create a new contact audience
+- verify domain
+- list all broadcast campaigns
+- single email management
+- send or schedule a broadcast campaign
+- list all configured sending domains
+- list contacts
+- list sending domains
+- update email
+- broadcasts
+- create audience
+- send a transactional email to one or more recipients
 - list audiences
+- email broadcast campaigns
+- send transactional email
+- create a new broadcast email campaign
+- create a new broadcast campaign
+- list all audiences
+- retrieve a single sent email
+- email domain configuration
+- list broadcasts
+- cancel email
+- cancel a scheduled email before it is sent
+- add a contact to an audience for marketing emails
+- list all contact audiences
+- audiences
+- cancel a scheduled email
+- get domain
+- remove a sending domain
+- get email status
+- get the status and details of a sent email by id
+- send batch emails
+- update a scheduled email
+- list api keys
+- send email
+- send a transactional email
+- single domain management
 slug: email-delivery
 source_filename: email-delivery.yaml
 source_heading: Capability Spec

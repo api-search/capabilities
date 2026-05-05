@@ -103,100 +103,100 @@ personas: []
 provider_name: Confluence
 provider_slug: confluence
 search_terms:
-- knowledge base
-- label information
-- get a specific confluence space by its id.
-- get a label by id
-- list footer comments
-- get blog post
-- manage blog posts
-- delete a blog post
-- get space
-- get a specific attachment by its id.
-- delete attachment
-- get a specific label by its id.
-- delete a confluence page by id.
-- get a comment by id
-- get page labels
-- list spaces
-- delete a comment by id.
-- list footer comments for a page
-- individual blog post operations
-- list child pages of a specific page for navigating content hierarchies.
-- update a comment
-- get all labels applied to a specific page.
-- get comment
-- confluence
-- child page navigation
-- create footer comment
-- update an existing comment.
-- update blog post
-- list inline comments
-- manage comments
-- create a new confluence page in a space.
-- update an existing blog post.
-- list pages in space
-- delete comment
-- get a specific blog post by its id.
-- manage confluence pages
-- page comment management
-- delete a blog post by id.
-- update a page
-- list footer comments on a specific page.
-- get a specific confluence page by its id.
-- create a new blog post
-- list blog posts
-- create a new confluence blog post.
-- get a space by id
-- collaboration
-- list pages in a space
-- documentation
-- pages within a space
-- create a footer comment on a page or blog post.
-- list all pages belonging to a specific space.
-- get a blog post by id
-- individual page operations
-- list all confluence pages with optional filtering by space, status, and title.
-- delete blog post
-- page attachment management
-- get an attachment by id
-- create blog post
-- wiki
-- get label
-- manage confluence spaces
-- manage attachments
-- get labels for a page
-- delete an attachment by id.
-- get page
 - list all blog posts
-- list pages
-- create inline comment
-- list all file attachments on a specific page.
-- list child pages
-- create page
-- list all confluence spaces.
+- page label management
+- delete a comment by id.
+- individual page operations
+- update an existing confluence page title and body.
+- wiki
 - list all blog posts with optional space filtering.
+- create inline comment
+- get a specific attachment by its id.
+- list all file attachments on a specific page.
+- create a new page
 - list page attachments
-- get a page by id
+- delete comment
 - individual space operations
 - list all spaces
-- page label management
-- content management
+- individual blog post operations
+- manage confluence spaces
+- delete an attachment by id.
+- update an existing blog post.
+- update an existing comment.
+- get blog post
 - get a specific comment by its id.
-- update page
-- create a new page
-- get attachment
-- delete an attachment
-- create an inline comment on a specific text selection in a page.
 - list inline comments on a specific page.
-- delete a page
-- update an existing confluence page title and body.
-- update comment
+- delete blog post
+- page comment management
+- knowledge base
+- get label
+- manage confluence pages
+- create blog post
+- create a new confluence blog post.
+- get a specific confluence page by its id.
+- get attachment
+- manage comments
+- get a specific label by its id.
+- list footer comments
+- delete a blog post
+- list child pages of a specific page for navigating content hierarchies.
+- get all labels applied to a specific page.
+- manage attachments
+- update a page
+- list pages
+- get page
+- collaboration
+- get a blog post by id
+- confluence
+- create a footer comment on a page or blog post.
+- page attachment management
+- get a specific blog post by its id.
+- delete an attachment
 - delete page
-- delete a comment
-- list all pages with optional filtering
-- update a blog post
+- list blog posts
+- create a new blog post
+- delete a page
+- get page labels
+- get comment
+- update comment
+- get a specific confluence space by its id.
+- update page
+- get a page by id
+- delete a blog post by id.
+- child page navigation
+- get a space by id
+- create an inline comment on a specific text selection in a page.
+- documentation
 - list attachments for a page
+- content management
+- update a comment
+- get a label by id
+- update a blog post
+- create footer comment
+- list child pages
+- list all confluence pages with optional filtering by space, status, and title.
+- delete attachment
+- list all pages with optional filtering
+- list all confluence spaces.
+- get space
+- delete a comment
+- get labels for a page
+- list all pages belonging to a specific space.
+- delete a confluence page by id.
+- list pages in space
+- create page
+- get an attachment by id
+- get a comment by id
+- pages within a space
+- list footer comments on a specific page.
+- list spaces
+- create a new confluence page in a space.
+- manage blog posts
+- list footer comments for a page
+- update blog post
+- list pages in a space
+- label information
+- list inline comments
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

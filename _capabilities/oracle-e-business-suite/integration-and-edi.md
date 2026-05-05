@@ -27,49 +27,49 @@ personas: []
 provider_name: Oracle E-Business Suite
 provider_slug: oracle-e-business-suite
 search_terms:
-- retrieve code conversion mappings.
-- edi get code conversions
-- edi get outbound transactions
-- retrieve inbound edi transactions.
-- isg login
-- edi import inbound transaction
-- invoke a rest method on a service.
-- retrieve trading partners.
-- trading partner management.
-- authenticate and obtain session token.
-- erp
-- get inbound transactions
-- integration
-- edi get trading partner by id
-- isg invoke rest method
-- isg logout
-- end the current session.
-- list outbound transactions.
-- edi get inbound transactions
-- e-business suite
-- isg initialize
-- isg get service wadl
-- retrieve outbound edi transactions.
-- inbound edi transactions.
-- initialize responsibility context.
-- enterprise
-- get trading partner by id.
-- authentication.
-- oracle
-- list inbound transactions.
-- import an inbound edi transaction.
-- list trading partners.
-- login
-- outbound edi transactions.
-- edi get trading partners
-- soa gateway
-- get outbound transactions
-- get wadl for a rest service.
-- edi
-- extract an outbound edi transaction.
-- authenticate.
 - edi extract outbound transaction
+- get trading partner by id.
+- retrieve inbound edi transactions.
+- integration
+- invoke a rest method on a service.
+- retrieve outbound edi transactions.
+- isg logout
+- enterprise
+- list outbound transactions.
+- e-business suite
+- get inbound transactions
+- oracle
+- retrieve trading partners.
+- edi get code conversions
+- get wadl for a rest service.
+- import an inbound edi transaction.
+- edi get trading partners
+- end the current session.
+- inbound edi transactions.
+- erp
+- login
+- isg initialize
+- isg invoke rest method
+- edi get inbound transactions
+- retrieve code conversion mappings.
+- authentication.
 - business applications
+- edi import inbound transaction
+- isg get service wadl
+- list trading partners.
+- authenticate and obtain session token.
+- initialize responsibility context.
+- edi get outbound transactions
+- edi
+- authenticate.
+- get outbound transactions
+- outbound edi transactions.
+- list inbound transactions.
+- extract an outbound edi transaction.
+- trading partner management.
+- edi get trading partner by id
+- isg login
+- soa gateway
 - get trading partners
 slug: integration-and-edi
 source_filename: integration-and-edi.yaml

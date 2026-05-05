@@ -20,42 +20,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- list neptune analytics graphs for in-memory graph analysis
-- graph database management, querying, and data streaming
-- property graph
-- neptune analytics graph management
-- manages neptune clusters, instances, and infrastructure
-- data streaming
-- sparql
 - ML Engineer
-- list neptune analytics graphs
-- writes gremlin, sparql, and opencypher queries against neptune
+- performs graph analytics and builds ml models on graph data
+- aws
+- neptune
+- graph database
+- list neptune ml training jobs
+- bulk loading
+- trains and deploys neptune ml graph neural network models
+- list ml training jobs
 - graph analytics, vector search, and ml model training and inference
-- create ml inference endpoint
-- graph analytics
+- property graph
+- gremlin
+- neptune analytics graph management
 - create a neptune analytics graph for graph analytics workloads
 - list ml jobs
-- trains and deploys neptune ml graph neural network models
+- graph database management, querying, and data streaming
+- sparql
 - list analytics graphs
-- list neptune ml graph neural network training jobs
-- gremlin
-- aws
-- performs graph analytics and builds ml models on graph data
-- neptune
-- rdf
-- neptune ml training job management
+- create ml inference endpoint
 - database
+- data streaming
+- Data Scientist
+- rdf
+- list neptune analytics graphs
+- graph analytics
+- Graph Database Administrator
+- list neptune analytics graphs for in-memory graph analysis
+- writes gremlin, sparql, and opencypher queries against neptune
 - create analytics graph
 - machine learning
-- list neptune ml training jobs
-- Graph Database Administrator
-- bulk loading
-- Data Scientist
-- graph database
-- amazon neptune
-- list ml training jobs
+- neptune ml training job management
 - Graph Developer
+- list neptune ml graph neural network training jobs
 - create a neptune ml inference endpoint for predictions
+- amazon neptune
+- manages neptune clusters, instances, and infrastructure
 slug: neptune-analytics-ml
 source_filename: neptune-analytics-ml.yaml
 source_heading: Capability Spec

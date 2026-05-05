@@ -19,30 +19,30 @@ personas: []
 provider_name: Vonage
 provider_slug: vonage
 search_terms:
-- send message
-- omnichannel
 - send messages via any supported channel (whatsapp, messenger, viber, rcs, mms, sms).
 - send an sms text message to a phone number.
 - vonage
-- send an rcs rich message to a phone number.
-- verification
-- voice
 - sms
-- communication
-- send rcs message
+- send message
 - video conferencing
-- messaging
-- whatsapp
-- send a viber service message to a phone number.
-- send sms
-- send viber message
+- verification
+- send a message via the unified messages api.
+- send rcs message
 - send whatsapp message
 - send an sms message to a recipient.
-- send a message via the unified messages api.
-- send sms messages via legacy sms api.
 - telecommunications
-- send a whatsapp message to a phone number.
+- omnichannel
 - notifications
+- whatsapp
+- communication
+- send a whatsapp message to a phone number.
+- send a viber service message to a phone number.
+- send sms messages via legacy sms api.
+- voice
+- send viber message
+- send sms
+- messaging
+- send an rcs rich message to a phone number.
 slug: messaging-and-notifications
 source_filename: messaging-and-notifications.yaml
 source_heading: Capability Spec

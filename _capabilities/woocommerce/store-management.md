@@ -39,62 +39,62 @@ personas: []
 provider_name: WooCommerce
 provider_slug: woocommerce
 search_terms:
-- get woocommerce sales analytics for a time period.
-- update the status of a woocommerce order (e.g., processing, completed, refunded).
 - create product
-- full product catalog management.
-- store management
-- woocommerce
-- order lifecycle management.
-- list coupons
-- list customers.
-- list woocommerce products with optional filtering by status, category, or keyword.
-- browse the public woocommerce storefront product catalog.
-- create order
-- browse products
-- open source
-- orders
-- get sales report
-- Operations Manager
-- operations
-- Store Administrator
-- building custom storefronts using woocommerce as a headless backend
-- browse storefront products
-- list woocommerce orders filtered by status, customer, or date range.
-- Headless Architect
-- list woocommerce discount coupons.
-- products
-- wordpress
-- public storefront product browsing.
-- customer management.
-- browse storefront products.
-- get detailed information about a specific woocommerce product.
-- create a new product.
-- Frontend Developer
-- get complete details of a specific woocommerce order including items and billing.
-- headless storefront capability with public store api and admin rest api
-- get order
-- list woocommerce customers, optionally searching by name or email.
-- list orders with filtering by status and customer.
-- designing headless commerce architecture with woocommerce apis
-- list customers
-- get sales report for a period.
-- create a new order.
-- list products
 - get a specific customer's profile and order history.
-- get customer
-- ecommerce
-- get product
-- update order status
-- update a woocommerce product's details, pricing, or status.
-- list orders
-- complete store management combining rest api and store api
-- list all products with filtering.
 - create a new woocommerce product with pricing and inventory details.
-- managing product catalog, orders, customers, and store configuration
-- processing orders, managing fulfillment, and reviewing sales analytics
+- get woocommerce sales analytics for a time period.
+- Headless Architect
+- wordpress
+- list products
+- ecommerce
+- list customers
+- create a new product.
+- update a woocommerce product's details, pricing, or status.
+- store management
+- list orders with filtering by status and customer.
+- browse storefront products
+- list coupons
+- get complete details of a specific woocommerce order including items and billing.
+- open source
+- get order
+- browse storefront products.
 - update product
+- list all products with filtering.
+- create a new order.
+- list woocommerce discount coupons.
+- full product catalog management.
 - sales reports and analytics.
+- operations
+- managing product catalog, orders, customers, and store configuration
+- products
+- Store Administrator
+- get customer
+- get detailed information about a specific woocommerce product.
+- browse products
+- get sales report for a period.
+- Operations Manager
+- browse the public woocommerce storefront product catalog.
+- customer management.
+- Frontend Developer
+- list customers.
+- get product
+- list woocommerce customers, optionally searching by name or email.
+- list orders
+- orders
+- public storefront product browsing.
+- get sales report
+- create order
+- list woocommerce products with optional filtering by status, category, or keyword.
+- update the status of a woocommerce order (e.g., processing, completed, refunded).
+- processing orders, managing fulfillment, and reviewing sales analytics
+- order lifecycle management.
+- designing headless commerce architecture with woocommerce apis
+- list woocommerce orders filtered by status, customer, or date range.
+- woocommerce
+- complete store management combining rest api and store api
+- headless storefront capability with public store api and admin rest api
+- update order status
+- building custom storefronts using woocommerce as a headless backend
 slug: store-management
 source_filename: store-management.yaml
 source_heading: Capability Spec

@@ -38,59 +38,59 @@ personas: []
 provider_name: Amazon DMS
 provider_slug: amazon-dms
 search_terms:
-- create a new dms replication instance to process migration tasks
-- test the connection between a replication instance and an endpoint
-- end-to-end database migration lifecycle using aws dms
-- list all endpoints
-- list registered ssl certificates
-- list sns event subscriptions for migration notifications
-- list ssl certificates for encrypted database migration connections
-- cloud architect designing database migration strategy and infrastructure
-- stop a running database migration replication task
-- replication instances and network configuration
-- Cloud Architect
-- describe table statistics
-- delete replication instance
-- ssl certificates for encrypted migration
-- describe replication instances
-- aws
-- list all dms replication instances used for database migration processing
-- delete a dms replication instance
-- create a new replication task to migrate data between source and target
-- list replication tasks and their current migration status
-- create a source or target database endpoint for migration
-- database engineer managing migration projects and monitoring replication tasks
-- test connection
-- source and target database endpoint management
-- migration
-- Database Engineer
-- data replication
-- describe endpoints
-- describe replication tasks
-- start or resume a database migration replication task
-- database
 - database migration
-- replication tasks for migration
-- create a new replication task
+- data replication
+- create a new dms replication instance to process migration tasks
+- ssl certificates for encrypted migration
+- aws
 - create replication task
-- replication instances for migration processing
-- start replication task
-- list all replication instances
-- list per-table migration statistics for a replication task
-- list all source and target database endpoints configured for migration
-- describe connections
-- describe certificates
-- create replication instance
-- amazon dms
-- list connections between replication instances and endpoints
-- create endpoint
+- delete replication instance
+- describe replication tasks
+- list all dms replication instances used for database migration processing
 - create a new replication instance
+- end-to-end database migration lifecycle using aws dms
+- database engineer managing migration projects and monitoring replication tasks
+- create a new replication task
 - source and target database endpoints
+- create replication instance
+- migration
+- list all source and target database endpoints configured for migration
+- test connection
+- describe endpoints
+- list ssl certificates for encrypted database migration connections
+- stop a running database migration replication task
+- delete a dms replication instance
+- list sns event subscriptions for migration notifications
+- amazon dms
+- start replication task
 - describe event subscriptions
-- list all replication tasks
-- replication task lifecycle and monitoring
+- source and target database endpoint management
+- create a source or target database endpoint for migration
+- start or resume a database migration replication task
+- replication instances for migration processing
+- database
 - create a source or target endpoint
 - stop replication task
+- replication task lifecycle and monitoring
+- list per-table migration statistics for a replication task
+- list all replication tasks
+- list replication tasks and their current migration status
+- create endpoint
+- list all replication instances
+- describe table statistics
+- describe replication instances
+- create a new replication task to migrate data between source and target
+- test the connection between a replication instance and an endpoint
+- Cloud Architect
+- replication instances and network configuration
+- list registered ssl certificates
+- Database Engineer
+- describe certificates
+- list all endpoints
+- cloud architect designing database migration strategy and infrastructure
+- describe connections
+- replication tasks for migration
+- list connections between replication instances and endpoints
 slug: database-migration-management
 source_filename: database-migration-management.yaml
 source_heading: Capability Spec

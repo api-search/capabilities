@@ -45,43 +45,43 @@ personas: []
 provider_name: Sportradar
 provider_slug: sportradar
 search_terms:
-- get nba daily schedule
-- get an nba player's profile and statistics.
-- get a soccer match summary including scoreline, timeline, lineups, and incidents.
-- get nba game summary
-- 'get the nba game schedule for a specific date (format: yyyy/mm/dd).'
-- data
-- soccer competition information.
-- nfl game summaries.
 - get nba standings for a season.
-- get the nba schedule for a specific date.
-- nba game schedules by date.
-- get soccer competition details.
+- get soccer match summary with timeline and lineups.
+- get complete nfl game summary with play-by-play drives and statistics.
+- get nba game summary
 - get complete nfl game summary.
-- get current nba league standings by season year.
-- get complete nba game summary.
 - sports data
+- data
+- nba league standings.
+- get soccer competition info
+- get nba standings
+- get the nba schedule for a specific date.
+- soccer competition information.
+- esports
 - get nba player profile
-- get complete nba game box score and statistics by game id.
-- get details about a soccer league or competition by sportradar competition id.
-- media
+- get complete nba game summary.
 - statistics
 - get soccer match summary
-- get career statistics and biographical info for an nba player.
-- esports
-- get soccer competition info
+- nfl game summaries.
+- get nba daily schedule
+- media
+- get an nba player's profile and statistics.
 - soccer match summaries.
-- get nba standings
-- real-time
-- nba league standings.
-- nba game summaries and box scores.
-- get soccer match summary with timeline and lineups.
-- fantasy sports
-- sports
-- get nba schedule
-- get complete nfl game summary with play-by-play drives and statistics.
-- get nfl game summary
 - nba player profiles.
+- fantasy sports
+- get nba schedule
+- sports
+- get soccer competition details.
+- get career statistics and biographical info for an nba player.
+- get nfl game summary
+- get a soccer match summary including scoreline, timeline, lineups, and incidents.
+- real-time
+- nba game schedules by date.
+- get details about a soccer league or competition by sportradar competition id.
+- nba game summaries and box scores.
+- 'get the nba game schedule for a specific date (format: yyyy/mm/dd).'
+- get current nba league standings by season year.
+- get complete nba game box score and statistics by game id.
 slug: sports-data-intelligence
 source_filename: sports-data-intelligence.yaml
 source_heading: Capability Spec

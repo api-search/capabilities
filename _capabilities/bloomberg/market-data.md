@@ -41,47 +41,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- intraday bar queries.
+- news
+- subscribe market vwap
+- intraday bar request
+- subscribe to custom vwap stream.
+- market data
+- request intraday bars.
+- request intraday ticks.
+- reference data queries.
 - bloomberg
-- request end-of-day historical data for securities.
+- look up field metadata.
 - subscribe to interval-based real-time bars.
+- enterprise
+- business intelligence
+- intraday tick queries.
 - analytics
+- subscribe market data
+- request reference data for securities and fields.
+- subscribe to streaming real-time market data.
+- request end-of-day historical data for securities.
+- request intraday ohlc bars for a security.
 - search the bloomberg api data dictionary for fields.
+- subscribe market bar
+- reference data request
+- transaction cost analysis
+- intraday tick request
+- historical data request
+- intraday bar queries.
+- search for fields.
+- data license
+- execution management
+- trading
+- look up metadata for bloomberg field mnemonics.
 - field discovery.
 - field search request
-- market data
-- data license
-- transaction cost analysis
-- request intraday ohlc bars for a security.
-- financial services
-- business intelligence
-- subscribe market bar
-- historical data request
-- request raw intraday tick data for a security.
-- trading
-- subscribe market data
-- historical data queries.
-- reference data queries.
-- request historical data.
-- intraday tick request
-- news
-- enterprise
 - field info request
-- subscribe market vwap
-- look up field metadata.
-- intraday tick queries.
-- subscribe to streaming real-time market data.
-- search for fields.
-- look up metadata for bloomberg field mnemonics.
-- quantitative analysis
+- request raw intraday tick data for a security.
+- request historical data.
+- historical data queries.
+- financial services
 - request reference data.
-- execution management
-- request intraday ticks.
-- reference data request
-- request intraday bars.
-- subscribe to custom vwap stream.
-- request reference data for securities and fields.
-- intraday bar request
+- quantitative analysis
 slug: market-data
 source_filename: market-data.yaml
 source_heading: Capability Spec

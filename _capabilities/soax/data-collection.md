@@ -48,52 +48,52 @@ personas: []
 provider_name: SOAX
 provider_slug: soax
 search_terms:
-- web scraping
-- available mobile carriers for mobile proxy targeting
+- extract rendered web content from any public url
+- fetch fully rendered html, screenshots, or markdown from any public web page
+- list all regions/states available for soax geo-targeted proxy selection
+- search engine result page data
+- list mobile carriers
+- data extraction
+- e-commerce product pricing and inventory data
+- ecommerce
+- list all ip addresses whitelisted in soax proxy package slots
+- extract fully rendered html, screenshots, or markdown from any public web page with automatic captcha bypass and anti-bot protection
 - extract real-time price, stock, and product details from e-commerce pages
-- available cities for geo-targeted proxy selection
-- list proxy cities
-- proxy management
-- list wifi isps
-- list all cities available for proxy geo-targeting
 - list cities
-- extract structured search results from google, bing, or other search engines
-- list proxy regions
-- fetch web content
-- anti-bot bypass
-- serp
+- soax
+- list mobile carriers available for soax mobile proxy targeting
 - datacenter proxies
+- web scraping
+- list mobile carriers available for mobile proxy selection
+- fetch content
+- extract real-time pricing, stock levels, and product details from e-commerce websites
+- list all whitelisted ips in proxy package slots
 - fetch product
 - data collection
-- extract structured search engine results from google, bing, or other search engines with geo-targeting
-- fetch ecommerce data
-- list whitelisted ips
-- fetch serp data
-- e-commerce product pricing and inventory data
-- geo targeting
-- extract real-time pricing, stock levels, and product details from e-commerce websites
+- available cities for geo-targeted proxy selection
+- list proxy regions
 - fetch serp
-- list all ip addresses whitelisted in soax proxy package slots
-- residential proxies
-- data extraction
-- extract rendered web content from any public url
-- extract fully rendered html, screenshots, or markdown from any public web page with automatic captcha bypass and anti-bot protection
-- soax
-- fetch content
-- list mobile carriers
-- mobile proxies
-- fetch fully rendered html, screenshots, or markdown from any public web page
-- search engine result page data
+- extract structured search engine results from google, bing, or other search engines with geo-targeting
 - list all cities available for soax geo-targeted proxy selection
-- list mobile carriers available for soax mobile proxy targeting
-- list all regions/states available for soax geo-targeted proxy selection
-- ecommerce
-- list wifi isps available for soax residential proxy targeting
-- proxy
+- proxy management
+- list whitelisted ips
+- extract structured search results from google, bing, or other search engines
+- geo targeting
+- serp
+- list all cities available for proxy geo-targeting
+- mobile proxies
+- residential proxies
+- available mobile carriers for mobile proxy targeting
+- fetch serp data
 - manage ip whitelist for proxy authentication
+- proxy
+- list wifi isps available for soax residential proxy targeting
+- fetch ecommerce data
+- list proxy cities
 - list carriers
-- list all whitelisted ips in proxy package slots
-- list mobile carriers available for mobile proxy selection
+- anti-bot bypass
+- fetch web content
+- list wifi isps
 slug: data-collection
 source_filename: data-collection.yaml
 source_heading: Capability Spec

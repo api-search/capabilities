@@ -46,52 +46,52 @@ personas: []
 provider_name: Webflow API and Documentation
 provider_slug: webflow-api-and-documentation-webflow
 search_terms:
-- sites
+- cms
+- delete an item from a webflow cms collection
+- publish a webflow site to custom domains
+- list sites
+- ecommerce
+- list all items in a webflow cms collection
+- delete cms item
+- create item
+- register a webhook to receive webflow site events
 - create cms item
 - list cms collections in a webflow site
-- webflow site management
-- list sites
-- delete item
-- list webhooks for a site
-- content management
-- update cms item
-- register a webhook to receive webflow site events
-- publish a webflow site to make changes live
-- publishing
-- publish cms items to make them live on the webflow site
-- cms collection management
-- webhook management
-- list all available webflow sites
-- create webhook
-- create a webhook for webflow events
-- delete an item from a webflow cms collection
-- publish site
-- update a cms item
-- cms item management
-- create item
-- list items in a cms collection
-- update item
-- update an existing webflow cms content item
-- list webhooks
-- webflow
 - create a new content item in a webflow cms collection
-- delete cms item
-- list items
-- publish a webflow site to custom domains
-- create a new cms item
+- update item
+- webflow site management
+- publish site
+- list webhooks for a site
+- create a webhook for webflow events
+- publishing
 - list webhooks registered for a webflow site
-- list cms collections for a site
-- ecommerce
-- list all webflow sites available with the api key
-- single cms item operations
-- delete a cms item
 - web development
-- publish a webflow site
+- list all webflow sites available with the api key
+- create webhook
+- delete a cms item
+- update a cms item
+- list items
+- webflow
+- single cms item operations
 - no-code
-- list all items in a webflow cms collection
-- cms
-- list collections
+- list cms collections for a site
+- publish a webflow site
+- update cms item
+- delete item
+- publish a webflow site to make changes live
+- list all available webflow sites
+- webhook management
+- create a new cms item
+- list items in a cms collection
+- cms collection management
+- sites
+- publish cms items to make them live on the webflow site
+- cms item management
+- content management
 - publish cms items
+- list collections
+- list webhooks
+- update an existing webflow cms content item
 slug: cms-management
 source_filename: cms-management.yaml
 source_heading: Capability Spec

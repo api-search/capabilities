@@ -46,46 +46,46 @@ personas: []
 provider_name: Spiceworks
 provider_slug: spiceworks
 search_terms:
-- create a new help desk support ticket
-- it management
-- get ticket
-- get full ticket details including comments
-- ticket comment management
-- add ticket comment
-- list tickets
-- add a comment to a ticket
-- user and technician management
-- add comment
-- individual ticket operations
-- update ticket
-- list all managed it devices
-- community
-- update ticket status, priority, or assignee
-- inventory
-- list platform users and technicians
-- list all help desk tickets
-- it device inventory
-- create ticket
-- individual device details
-- create a new help desk ticket
-- get hardware specs, software inventory, and network details for a device
-- help desk
-- list devices
-- list help desk tickets, optionally filtered by status or assignee
-- list users
-- list all comments on a ticket
-- list spiceworks users and technicians
-- get device hardware, software, and network details
-- get full details of a help desk ticket including all comments
-- help desk ticket management
-- list all managed it devices from the spiceworks inventory
-- ticketing
 - get device
+- list spiceworks users and technicians
+- community
 - list comments
+- list users
 - it operations
+- help desk
+- it device inventory
+- get full details of a help desk ticket including all comments
+- list help desk tickets, optionally filtered by status or assignee
+- individual ticket operations
 - enterprise it
-- spiceworks
+- add comment
+- it management
+- create a new help desk ticket
+- get full ticket details including comments
+- create a new help desk support ticket
 - add a public or internal comment to a help desk ticket
+- help desk ticket management
+- create ticket
+- list devices
+- list all help desk tickets
+- individual device details
+- list all managed it devices from the spiceworks inventory
+- add a comment to a ticket
+- get ticket
+- update ticket
+- get device hardware, software, and network details
+- spiceworks
+- list all comments on a ticket
+- ticket comment management
+- inventory
+- ticketing
+- list tickets
+- list all managed it devices
+- add ticket comment
+- update ticket status, priority, or assignee
+- get hardware specs, software inventory, and network details for a device
+- user and technician management
+- list platform users and technicians
 slug: it-management
 source_filename: it-management.yaml
 source_heading: Capability Spec

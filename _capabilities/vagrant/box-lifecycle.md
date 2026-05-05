@@ -42,43 +42,43 @@ personas: []
 provider_name: Vagrant
 provider_slug: vagrant
 search_terms:
-- delete box
-- update box
-- get a specific vagrant box
-- get details for a specific vagrant box
-- get a specific box version
-- create a new version for a box
-- update a vagrant box metadata
-- create a new vagrant box in the registry
-- search and create vagrant boxes
-- update a vagrant box
-- get box
-- release a box version
-- publish a box version to make it available for download
-- search boxes
 - vagrant
-- cloud
-- create a new version for a vagrant box
-- box version management
-- create a new vagrant box
-- search the vagrant box catalog
-- individual box management
-- hashicorp
-- boxes
-- release version
-- individual version management
-- search the public vagrant box catalog
-- development environments
 - delete a vagrant box
-- create box
-- publish a box version
+- update box
 - get a specific box version details
-- ci/cd
-- devops
-- infrastructure
-- create version
+- release a box version
+- get box
+- cloud
+- create a new vagrant box
+- box version management
+- individual box management
+- create a new version for a box
 - get version
+- get a specific box version
+- search the vagrant box catalog
+- publish a box version to make it available for download
+- release version
+- publish a box version
+- create a new vagrant box in the registry
+- devops
+- update a vagrant box metadata
+- get a specific vagrant box
+- update a vagrant box
+- ci/cd
+- infrastructure
+- search and create vagrant boxes
+- individual version management
 - virtualization
+- search the public vagrant box catalog
+- get details for a specific vagrant box
+- boxes
+- delete box
+- create box
+- search boxes
+- hashicorp
+- create a new version for a vagrant box
+- development environments
+- create version
 slug: box-lifecycle
 source_filename: box-lifecycle.yaml
 source_heading: Capability Spec

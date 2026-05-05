@@ -34,42 +34,42 @@ personas: []
 provider_name: Redfin
 provider_slug: redfin
 search_terms:
-- get below-the-fold property details with mls data, history, and school info.
-- home values
-- search properties by region, price range, property type, and filters.
 - commute time estimates for the property.
-- property data
-- get neighborhood demographics, walkability, and school ratings.
-- neighborhoods
 - primary listing details for a property.
-- get historical redfin estimate data showing value trends over time.
-- gis
-- get neighborhood stats
-- 'get core listing details for a property: price, beds, baths, square footage, and status.'
-- get property details
+- property research
+- get commute info
+- get below-the-fold property details with mls data, history, and school info.
 - get property estimate
-- get mls data, sales history, tax records, and schools for a property.
-- get commute time estimates (drive, transit, bike, walk) for a property.
-- redfin
 - search properties
-- historical redfin estimate (avm) valuations.
-- get property history
-- get historical redfin estimate (avm) showing property value trends over time.
+- real estate
+- csv export
+- search and browse property listings.
+- get drive, transit, bike, and walk commute estimates.
+- get redfin estimate
 - detailed mls data, history, schools, and similar homes.
 - get neighborhood statistics including walkability, transit, and school ratings.
-- get drive, transit, bike, and walk commute estimates.
-- listings
-- neighborhood statistics and location context.
-- property research
-- csv export
-- get redfin estimate
-- get commute info
-- get property summary
 - 'get above-the-fold details: price, beds, baths, address, and status.'
+- get mls data, sales history, tax records, and schools for a property.
+- historical redfin estimate (avm) valuations.
 - housing market
 - search redfin property listings by region, price range, and property type filters.
-- real estate
-- search and browse property listings.
+- gis
+- get property summary
+- get historical redfin estimate data showing value trends over time.
+- search properties by region, price range, property type, and filters.
+- 'get core listing details for a property: price, beds, baths, square footage, and status.'
+- get historical redfin estimate (avm) showing property value trends over time.
+- redfin
+- get property history
+- home values
+- get commute time estimates (drive, transit, bike, walk) for a property.
+- get neighborhood demographics, walkability, and school ratings.
+- neighborhood statistics and location context.
+- listings
+- get neighborhood stats
+- property data
+- get property details
+- neighborhoods
 slug: property-research
 source_filename: property-research.yaml
 source_heading: Capability Spec

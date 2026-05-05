@@ -56,63 +56,63 @@ personas: []
 provider_name: Volcano
 provider_slug: volcano
 search_terms:
-- list batch jobs
-- manage scheduling queues for resource partitioning.
-- inspect a specific podgroup.
-- batch processing
-- create a new volcano queue for multi-tenant resource partitioning.
-- inspect scheduling queue
-- list volcano batch jobs in a kubernetes namespace (ml training, spark, hpc).
-- inspect batch job
-- inspect or manage a specific queue.
-- batch scheduling
-- list namespaced podgroups
-- submit a new batch workload (ml training, hpc, spark).
-- delete queue
-- manage podgroups for gang scheduling.
-- cloud native
 - get podgroup status.
-- submit a new distributed batch workload to volcano (pytorch, tensorflow, spark, mpi).
-- submit batch job
-- list podgroups
-- list all volcano jobs in a namespace.
-- list all volcano scheduling queues and their resource allocations.
-- create queue
-- list cluster jobs
-- kubernetes
-- cancel batch job
-- cncf
-- manage volcano batch jobs.
-- inspect and manage a specific batch job.
-- get namespaced podgroup
-- get job status and configuration.
-- cancel and remove a batch job.
-- get queue configuration and status.
-- get namespaced job
-- hpc
-- list namespaced jobs
-- get the status of a podgroup to check gang-scheduling progress.
-- create a new scheduling queue.
-- get queue
-- list all scheduling queues.
-- get detailed status and phase of a volcano batch job.
-- create scheduling queue
-- machine learning
-- list all volcano batch jobs across all namespaces in the cluster.
-- scheduling
-- list scheduling queues
-- delete namespaced job
-- volcano
-- list queues
-- incubating
-- create a podgroup for gang-scheduled workloads.
-- create namespaced podgroup
 - delete a scheduling queue.
-- cancel and delete a volcano batch job and its associated pods.
+- list podgroups
 - inspect podgroup
+- list all volcano scheduling queues and their resource allocations.
+- list all volcano jobs in a namespace.
+- create scheduling queue
+- list namespaced jobs
 - list podgroups in a namespace.
-- create namespaced job
+- get detailed status and phase of a volcano batch job.
+- delete queue
+- create queue
+- hpc
+- create namespaced podgroup
+- cancel batch job
+- manage volcano batch jobs.
 - get configuration, capacity, and status of a volcano scheduling queue.
+- batch processing
+- get namespaced job
+- scheduling
+- manage scheduling queues for resource partitioning.
+- inspect and manage a specific batch job.
+- get queue configuration and status.
+- batch scheduling
+- inspect or manage a specific queue.
+- inspect a specific podgroup.
+- get the status of a podgroup to check gang-scheduling progress.
+- list scheduling queues
+- cancel and remove a batch job.
+- cloud native
+- list all scheduling queues.
+- list namespaced podgroups
+- manage podgroups for gang scheduling.
+- list batch jobs
+- create a new volcano queue for multi-tenant resource partitioning.
+- create a new scheduling queue.
+- delete namespaced job
+- get namespaced podgroup
+- machine learning
+- list queues
+- create namespaced job
+- submit a new batch workload (ml training, hpc, spark).
+- list volcano batch jobs in a kubernetes namespace (ml training, spark, hpc).
+- cancel and delete a volcano batch job and its associated pods.
+- cncf
+- get queue
+- list cluster jobs
+- submit batch job
+- inspect batch job
+- get job status and configuration.
+- volcano
+- list all volcano batch jobs across all namespaces in the cluster.
+- inspect scheduling queue
+- submit a new distributed batch workload to volcano (pytorch, tensorflow, spark, mpi).
+- kubernetes
+- create a podgroup for gang-scheduled workloads.
+- incubating
 - list podgroups used for gang-scheduling coordination in a namespace.
 slug: batch-workload-management
 source_filename: batch-workload-management.yaml

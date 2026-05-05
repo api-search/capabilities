@@ -18,27 +18,27 @@ personas: []
 provider_name: VS Code Marketplace
 provider_slug: vs-code-marketplace
 search_terms:
+- get information about a vs code extension publisher, including their extensions.
+- search extensions by keyword, tag, publisher, or extension id.
+- get details for a specific vs code extension by its publisher.name id (e.g., ms-python.python).
+- search extensions
+- search extensions by category
+- search vs code marketplace for extensions with a specific tag.
+- developer tools
 - search vs code marketplace for extensions by keyword, tag, or category. returns extension metadata, install counts, and ratings.
-- visual studio code
-- search vs code marketplace for extensions in a specific category (e.g., debuggers, themes, linters).
-- marketplace
+- search extensions by tag
+- search trending extensions
 - ide
+- visual studio code
+- search and discover vs code extensions.
+- get publisher
+- search vs code marketplace for extensions in a specific category (e.g., debuggers, themes, linters).
+- extensions
 - find the most popular and trending vs code extensions sorted by install count.
 - get extension by id
-- search extensions by keyword, tag, publisher, or extension id.
-- search vs code marketplace for extensions with a specific tag.
-- get publisher
-- get information about a vs code extension publisher, including their extensions.
-- extensions
-- get details for a specific vs code extension by its publisher.name id (e.g., ms-python.python).
-- developer tools
-- search extensions
 - microsoft
+- marketplace
 - get publisher information.
-- search and discover vs code extensions.
-- search extensions by tag
-- search extensions by category
-- search trending extensions
 - retrieve details about a specific extension publisher.
 slug: extension-discovery
 source_filename: extension-discovery.yaml

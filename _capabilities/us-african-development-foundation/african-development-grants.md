@@ -10,15 +10,15 @@ provider_name: US African Development Foundation
 provider_slug: us-african-development-foundation
 search_terms:
 - journalists and oversight staff monitoring usadf spending
-- research and tracking workflow for usadf grant awards, recipient organizations, and open funding opportunities for african grassroots enterprises
-- african enterprises and ngos seeking usadf funding
-- grants
-- researchers and analysts studying usadf grant patterns and development impact
-- economic development
-- africa
-- international development
 - federal government
+- economic development
+- researchers and analysts studying usadf grant patterns and development impact
+- africa
+- grants
+- international development
+- african enterprises and ngos seeking usadf funding
 - nonprofit
+- research and tracking workflow for usadf grant awards, recipient organizations, and open funding opportunities for african grassroots enterprises
 slug: african-development-grants
 source_filename: african-development-grants.yaml
 source_heading: Capability Spec

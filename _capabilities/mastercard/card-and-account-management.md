@@ -34,46 +34,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- manage account
+- account management
+- create fulfillment order
+- request updated card credentials
+- lookup bin
+- validate account details
+- look up bin information
+- issue a new card
 - credit cards
+- get card details
+- open banking
+- manage a payment account
 - automatic billing updates
 - payment account management
 - get account catalog
-- list bins
-- digital identity
 - query payment account reference to link tokens to accounts
-- issue card
-- card issuance and management
-- list available mastercard bins
-- mastercard
+- retrieve account catalog data
+- submit pan event
 - get billing updates
 - manage payment account
-- financial services
-- open banking
-- submit pan event
-- create a physical card fulfillment order
-- payments
-- create fulfillment order
-- request updated card credentials for card-on-file
-- account management
-- request updated card credentials
-- get payment account reference
-- look up bin information
-- manage a payment account
-- retrieve account catalog data
-- submit pan-related event for account level management
-- issue a new mastercard card
-- bin lookup
-- issuers
-- lookup bin
-- issue a new card
+- list available mastercard bins
 - card management
-- manage a payment account lifecycle
+- payments
 - look up bin information for a card
-- fraud detection
-- validate account details
-- get card details
+- manage a payment account lifecycle
+- create a physical card fulfillment order
+- request updated card credentials for card-on-file
+- issue card
+- card issuance and management
+- manage account
+- digital identity
 - validate account
+- list bins
+- mastercard
+- issue a new mastercard card
+- get payment account reference
+- financial services
+- submit pan-related event for account level management
+- fraud detection
+- issuers
+- bin lookup
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

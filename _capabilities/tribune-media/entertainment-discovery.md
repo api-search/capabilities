@@ -65,75 +65,75 @@ personas: []
 provider_name: Tribune Media
 provider_slug: tribune-media
 search_terms:
-- get the tv programming grid for a lineup
-- broadcasting
-- get movies airing on a tv lineup
-- new show airings on a lineup
-- get celebrity airings
-- get sports league airings
-- find tv lineups (cable, satellite, ota) available for a postal code
-- get movie airings
-- entertainment
-- get detailed metadata for a program
-- get celebrity details and biography
-- find which celebrities are appearing on talk shows today
-- get organization airings
-- search for tv shows, movies, specials, or sports programs by keyword
+- celebrity information
+- get talk show airings
+- get detailed metadata for a tv program or movie by tms id
+- find movies currently playing at nearby theatres with showtimes
+- find new episodes and series premieres airing on a tv lineup
+- get new show airings
+- celebrity talk show appearances
+- get celebrity info
+- get program genres
 - search programs
-- find upcoming tv appearances for a celebrity
-- tv lineup and channel information
-- tv programming grid schedule
+- get movie showings
 - get movies on tv
+- content discovery
+- movies
+- find which celebrities are appearing on talk shows today
+- celebrity
+- get live sports
 - get all tv airings for a sports league or organization (mlb, nfl, nba, etc.)
 - get tv shows featuring a celebrity
-- get the full list of tv program genre categories
-- movies currently showing in theatres
-- get tv lineups
-- celebrity
-- sports organization airings (mlb, nba, nfl, etc.)
-- get new episodes and premieres airing on a lineup
-- get program
-- get movies in local theatres with showtimes
-- get program details
-- get celebrity tv appearances
-- get program genres
-- media
-- movies airing on tv
-- detailed program metadata
-- get talk show airings
-- get new show airings
-- get the full tv programming grid showing what is on across all channels
-- find movies airing on tv channels for a lineup
-- get tv lineups available for a postal code
-- content discovery
-- get talk show guests
-- tv program search and discovery
-- get detailed metadata for a tv program or movie by tms id
+- find tv lineups (cable, satellite, ota) available for a postal code
 - get live sports events airing on tv for a specific sport
-- search for tv programs, movies, and shows
-- get celebrity info
-- celebrity tv appearances
-- movies
-- get live sports events for a sport on a lineup
-- get all airings for a sports organization
-- get celebrities appearing on talk shows
-- live sports events on tv
-- television
-- find new episodes and series premieres airing on a tv lineup
-- get biography and details for a celebrity by their tms person id
-- celebrity information
-- get tv grid
-- get movie showings
-- sports
-- get celebrity
-- get movie theatre showings
-- celebrity talk show appearances
-- get sport event airings
-- find movies currently playing at nearby theatres with showtimes
 - get lineups
-- tribune media
-- get live sports
+- tv lineup and channel information
+- get all airings for a sports organization
+- tv program search and discovery
+- get celebrities appearing on talk shows
+- get celebrity tv appearances
+- tv programming grid schedule
+- get organization airings
+- get movie theatre showings
+- entertainment
+- get sports league airings
+- television
+- media
+- get program details
+- sports organization airings (mlb, nba, nfl, etc.)
+- get movies airing on a tv lineup
+- get live sports events for a sport on a lineup
+- get celebrity airings
+- movies currently showing in theatres
+- get the full tv programming grid showing what is on across all channels
+- sports
+- movies airing on tv
+- get tv grid
+- get celebrity details and biography
+- new show airings on a lineup
+- live sports events on tv
+- get sport event airings
+- get talk show guests
+- get celebrity
+- get biography and details for a celebrity by their tms person id
+- get movies in local theatres with showtimes
+- get program
+- get detailed metadata for a program
+- search for tv programs, movies, and shows
+- detailed program metadata
+- get movie airings
+- broadcasting
 - programming guide
+- get the tv programming grid for a lineup
+- get the full list of tv program genre categories
+- search for tv shows, movies, specials, or sports programs by keyword
+- get tv lineups available for a postal code
+- get new episodes and premieres airing on a lineup
+- find movies airing on tv channels for a lineup
+- get tv lineups
+- celebrity tv appearances
+- find upcoming tv appearances for a celebrity
+- tribune media
 slug: entertainment-discovery
 source_filename: entertainment-discovery.yaml
 source_heading: Capability Spec

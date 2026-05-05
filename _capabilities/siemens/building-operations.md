@@ -46,58 +46,58 @@ personas: []
 provider_name: Siemens
 provider_slug: siemens
 search_terms:
-- get point value
-- automation
-- facilities management
-- alarm acknowledgment
-- list all building automation data points (sensors, setpoints, actuators)
-- bacnet
-- historical trend data queries
-- list building automation schedules
-- list equipment
-- manufacturing
-- list building automation schedules controlling system operation times and setpoints
-- get a building data point
-- list building points
-- get point
-- digital twin
-- list building equipment including hvac, chillers, and ahus
-- building automation schedules
-- get the current real-time value of a building sensor or setpoint
-- list points
-- acknowledge a building alarm
-- list all building data points
-- building automation
-- get trend
-- building data points monitoring
-- get historical trend data for a building data point
-- energy management
-- list building equipment including hvac units, chillers, air handling units, and boilers
-- get details of a specific building data point
-- electrification
-- list alarms
-- smart buildings
-- acknowledge a building alarm to indicate it has been noted
-- industry
-- set point value
-- list building alarms including hvac faults and equipment alerts
-- industrial iot
 - building alarm monitoring
-- individual data point operations
-- iot
-- real-time point value read/write
-- get point current value
-- get building point
-- set value of a writable data point (setpoint or command)
 - acknowledge alarm
-- get historical trend
-- list building alarms filtered by status and severity
-- building equipment listing
-- hvac
+- energy management
+- list building equipment including hvac, chillers, and ahus
+- get details of a specific building data point
+- smart buildings
+- get building point
+- facilities management
+- bacnet
+- get point
+- acknowledge a building alarm to indicate it has been noted
+- set point value
 - list schedules
 - get current real-time value of a data point
-- get historical trend data for a building sensor or setpoint over a time range
+- set value of a writable data point (setpoint or command)
 - control a building system by setting a setpoint or actuator command
+- industry
+- list points
+- get historical trend data for a building data point
+- list equipment
+- acknowledge a building alarm
+- list all building data points
+- real-time point value read/write
+- get a building data point
+- building data points monitoring
+- get point current value
+- hvac
+- get point value
+- list building alarms filtered by status and severity
+- get trend
+- individual data point operations
+- list all building automation data points (sensors, setpoints, actuators)
+- get historical trend
+- historical trend data queries
+- industrial iot
+- get historical trend data for a building sensor or setpoint over a time range
+- electrification
+- digital twin
+- alarm acknowledgment
+- list building automation schedules controlling system operation times and setpoints
+- list building automation schedules
+- manufacturing
+- building automation schedules
+- list building alarms including hvac faults and equipment alerts
+- get the current real-time value of a building sensor or setpoint
+- list alarms
+- building equipment listing
+- iot
+- list building equipment including hvac units, chillers, air handling units, and boilers
+- automation
+- building automation
+- list building points
 slug: building-operations
 source_filename: building-operations.yaml
 source_heading: Capability Spec

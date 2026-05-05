@@ -1,40 +1,49 @@
 ---
 categories: []
 consumed_apis: []
-description: A side-by-side reference capability that pairs a generated SDK with a Naftiko-exposed capability over the same upstream API, illustrating "Capabilities Are the New Abstraction Layer."
+description: A reference capability used in the MonkCast podcast comparing raw SDK use vs Naftiko-capability use, with the same target API exposed both ways.
 layout: capability
 name: Monkcast Sdk Vs Capability Reference
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-customers
+  path: /customers
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- a side-by-side reference capability that pairs a generated sdk with a naftiko-exposed capability over the same upstream api, illustrating "capabilities are the new abstraction layer."
-- api integration
 - spec-driven integration
+- get customer
+- list customers
+- mcp
 - capabilities
-- example op
+- reference
+- naftiko
+- sdk
+- api integration
 - governance
+- ai
+- monkcast
 slug: monkcast-sdk-vs-capability-reference
 source_filename: monkcast-sdk-vs-capability-reference.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Monkcast Sdk Vs Capability Reference\n  description: A side-by-side reference capability that pairs a generated SDK with a Naftiko-exposed capability over the same upstream API, illustrating \"Capabilities Are the New Abstraction Layer.\"\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: monkcast-sdk-vs-capability-reference-rest\n    description: REST API for Monkcast Sdk Vs Capability Reference.\n    resources:\n  \
-  \  - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: monkcast-sdk-vs-capability-reference-mcp\n    description: MCP server exposing Monkcast Sdk Vs Capability Reference for AI agents.\n    tools:\n    - name: example\n      description: A side-by-side reference capability that pairs a generated SDK with a Naftiko-exposed capability over the same upstream API, illustrating \"Capabilities Are the New Abstraction Layer.\"\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: monkcast-sdk-vs-capability-reference-skills\n    description: Agent Skill bundle for Monkcast Sdk Vs Capability Reference.\n    skills:\n    - name: monkcast-sdk-vs-capability-reference\n      description: A side-by-side reference capability that pairs a generated SDK with a Naftiko-exposed\
-  \ capability over the same upstream API, illustrating \"Capabilities Are the New Abstraction Layer.\"\n      location: file:///opt/naftiko/skills/monkcast-sdk-vs-capability-reference\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A side-by-side reference capability that pairs a generated SDK with a Naftiko-exposed capability over the same upstream API, illustrating \"Capabilities Are the New Abstraction Layer.\"\n        from:\n          sourceNamespace: monkcast-sdk-vs-capability-reference-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Monkcast Sdk Vs Capability Reference\n  description: A reference capability used in the MonkCast podcast comparing raw SDK use vs Naftiko-capability use, with the same target API exposed both ways.\n  tags: [Naftiko, MonkCast, SDK, Reference]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: stripe-env\n  keys: {STRIPE_API_KEY: STRIPE_API_KEY}\ncapability:\n  consumes:\n  - namespace: stripe\n    type: http\n    baseUri: https://api.stripe.com\n    authentication: {type: bearer, token: '{{STRIPE_API_KEY}}'}\n    resources:\n    - {name: customers, path: /v1/customers, operations: [{name: list-customers, method: GET}]}\n    - name: customer\n      path: /v1/customers/{{customer_id}}\n      operations:\n      - {name: get-customer, method: GET, inputParameters: [{name: customer_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: monkcast-sdk-vs-capability-reference-rest\n\
+  \    description: REST surface for the SDK-vs-capability reference.\n    resources:\n    - {name: customers, path: /customers, operations: [{method: GET, name: list-customers, call: stripe.list-customers}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: monkcast-sdk-vs-capability-reference-mcp\n    description: MCP for the reference.\n    tools:\n    - {name: list-customers, hints: {readOnly: true}, call: stripe.list-customers}\n    - name: get-customer\n      hints: {readOnly: true}\n      inputParameters: [{name: customer_id, type: string, required: true}]\n      call: stripe.get-customer\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: monkcast-sdk-vs-capability-reference-skills\n    description: Skill for the reference.\n    skills:\n    - name: monkcast-sdk-vs-capability-reference\n      description: SDK-vs-capability reference.\n      location: file:///opt/naftiko/skills/monkcast-sdk-vs-capability-reference\n      allowed-tools: list-customers,get-customer\n\
+  \      tools:\n      - {name: list-customers, from: {sourceNamespace: monkcast-sdk-vs-capability-reference-mcp, action: list-customers}}\n      - {name: get-customer, from: {sourceNamespace: monkcast-sdk-vs-capability-reference-mcp, action: get-customer}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/monkcast-sdk-vs-capability-reference.yaml
 tags:
 - Naftiko
+- MonkCast
+- SDK
+- Reference
 tools:
-- description: A side-by-side reference capability that pairs a generated SDK with a Naftiko-exposed capability over the same upstream API, illustrating "Capabilities Are the New Abstraction Layer."
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-customers
+- description: ''
+  hints:
+    readOnly: true
+  name: get-customer
 ---

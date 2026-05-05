@@ -42,47 +42,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- write values to a spreadsheet range
-- automation
-- search developer metadata
-- spreadsheet lifecycle operations
-- read values from a range
-- google sheets
-- batch clear values
-- update values
+- copy a sheet to another spreadsheet
 - clear values from a range
-- cell value read and write operations
-- get values
-- clear values
-- append values to a range
-- single spreadsheet operations
-- create spreadsheet
-- create a new google sheets spreadsheet
-- spreadsheets
-- productivity
-- get spreadsheet details
-- search developer metadata matching filters
 - get spreadsheet details by id
-- create a new spreadsheet
+- append rows of data to a spreadsheet
+- search developer metadata matching filters
+- batch clear values
 - batch get values
-- read values from a spreadsheet range
-- get developer metadata by id
+- search developer metadata
+- create spreadsheet
+- apply batch updates to a spreadsheet
+- clear values from multiple ranges
+- spreadsheets
+- append values
+- get spreadsheet
 - google workspace
 - read values from multiple ranges at once
-- apply batch updates to a spreadsheet
-- get spreadsheet
-- data management
-- batch update spreadsheet
-- write values to a range
-- append rows of data to a spreadsheet
-- clear values from a spreadsheet range
 - write values to multiple ranges at once
-- copy a sheet to another spreadsheet
-- clear values from multiple ranges
-- get developer metadata
-- copy sheet
 - batch update values
-- append values
+- create a new spreadsheet
+- get values
+- single spreadsheet operations
+- get developer metadata
+- update values
+- write values to a range
+- get spreadsheet details
+- data management
+- write values to a spreadsheet range
+- clear values
+- spreadsheet lifecycle operations
+- read values from a range
+- read values from a spreadsheet range
+- create a new google sheets spreadsheet
+- cell value read and write operations
+- get developer metadata by id
+- google sheets
+- automation
+- batch update spreadsheet
+- productivity
+- append values to a range
+- copy sheet
+- clear values from a spreadsheet range
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

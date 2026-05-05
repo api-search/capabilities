@@ -44,57 +44,57 @@ personas: []
 provider_name: U.S. Geological Survey
 provider_slug: u-s-geological-survey
 search_terms:
-- Researcher
-- retrieve earthquake events from the usgs comcat catalog.
-- return the number of earthquakes matching query parameters.
-- get a single usgs water monitoring location.
-- geological
-- count earthquakes
-- researcher studying seismic activity, geological hazards, or earth processes using usgs earthquake and geophysical data.
-- retrieve a specific usgs monitoring location by identifier.
-- earthquake
-- count earthquake events without returning full data.
-- get water monitoring site
-- search recent earthquakes
-- geoscience
-- retrieve groundwater level (depth to water table) observations from usgs groundwater monitoring wells. use parameter code 72019 for depth to water below land surface.
-- locate usgs stream gages, groundwater monitoring wells, and other water quality monitoring stations by state, watershed (huc), or geographic bounding box.
-- federal government
-- earth science
-- retrieve streamflow, stage, or other water quality time series.
-- usgs water monitoring stations (stream gages, groundwater wells).
-- hydrology
-- count the number of earthquakes matching specified criteria without retrieving full event data. useful for trend analysis and statistical queries.
-- count earthquakes by criteria
-- streamflow, groundwater, water quality, and flood monitoring
-- natural hazard evaluation including earthquakes, floods, and landslides
-- water resources scientist analyzing streamflow, groundwater levels, and water quality using usgs monitoring data.
-- water
-- natural resources
-- Geoscientist
-- retrieve streamflow (discharge in ft³/s) time series from a usgs stream gage. specify parameter code 00060 for discharge, 00065 for gage height, or other usgs parameter codes.
-- government or public safety official monitoring earthquakes and flood conditions for emergency response planning.
-- list earthquake catalogs
-- search the usgs earthquake catalog for recent seismic events. filter by time range, location (bounding box or circle), magnitude, depth, and alert level. returns geojson with event properties and geometry.
-- unified workflow for earthquake researchers, hydrologists, emergency managers, and scientists to access usgs earthquake catalog and water monitoring data.
-- usgs
-- get monitoring location
-- academic or agency researcher using usgs data for geological, hydrological, or environmental studies.
-- get streamflow data
 - list all available usgs earthquake catalog sources used to filter earthquake queries.
-- get monitoring locations
-- real-time and historical seismic event data and hazard assessment
-- 'retrieve details for a specific usgs water monitoring site using its identifier (format: usgs-sitenumber, e.g., usgs-11169025).'
-- Emergency Manager
-- hazard assessment
-- search usgs earthquake catalog data.
-- get water observations
-- find water monitoring sites
-- time series water data from usgs monitoring locations.
-- get groundwater levels
 - find usgs water monitoring locations by state or bounding box.
-- Hydrologist
+- federal government
+- get water observations
+- unified workflow for earthquake researchers, hydrologists, emergency managers, and scientists to access usgs earthquake catalog and water monitoring data.
+- Researcher
+- retrieve a specific usgs monitoring location by identifier.
 - query earthquakes
+- retrieve earthquake events from the usgs comcat catalog.
+- locate usgs stream gages, groundwater monitoring wells, and other water quality monitoring stations by state, watershed (huc), or geographic bounding box.
+- get water monitoring site
+- count earthquake events without returning full data.
+- natural resources
+- search the usgs earthquake catalog for recent seismic events. filter by time range, location (bounding box or circle), magnitude, depth, and alert level. returns geojson with event properties and geometry.
+- usgs water monitoring stations (stream gages, groundwater wells).
+- streamflow, groundwater, water quality, and flood monitoring
+- get monitoring location
+- 'retrieve details for a specific usgs water monitoring site using its identifier (format: usgs-sitenumber, e.g., usgs-11169025).'
+- get groundwater levels
+- government or public safety official monitoring earthquakes and flood conditions for emergency response planning.
+- count earthquakes
+- search recent earthquakes
+- real-time and historical seismic event data and hazard assessment
+- geoscience
+- count earthquakes by criteria
+- get monitoring locations
+- natural hazard evaluation including earthquakes, floods, and landslides
+- geological
+- water resources scientist analyzing streamflow, groundwater levels, and water quality using usgs monitoring data.
+- return the number of earthquakes matching query parameters.
+- earthquake
+- Hydrologist
+- water
+- find water monitoring sites
+- retrieve groundwater level (depth to water table) observations from usgs groundwater monitoring wells. use parameter code 72019 for depth to water below land surface.
+- Geoscientist
+- earth science
+- researcher studying seismic activity, geological hazards, or earth processes using usgs earthquake and geophysical data.
+- get streamflow data
+- search usgs earthquake catalog data.
+- Emergency Manager
+- get a single usgs water monitoring location.
+- usgs
+- time series water data from usgs monitoring locations.
+- hydrology
+- academic or agency researcher using usgs data for geological, hydrological, or environmental studies.
+- hazard assessment
+- list earthquake catalogs
+- retrieve streamflow, stage, or other water quality time series.
+- count the number of earthquakes matching specified criteria without retrieving full event data. useful for trend analysis and statistical queries.
+- retrieve streamflow (discharge in ft³/s) time series from a usgs stream gage. specify parameter code 00060 for discharge, 00065 for gage height, or other usgs parameter codes.
 slug: geoscience-data-access
 source_filename: geoscience-data-access.yaml
 source_heading: Capability Spec

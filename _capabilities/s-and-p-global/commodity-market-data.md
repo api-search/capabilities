@@ -26,37 +26,37 @@ personas: []
 provider_name: S&P Global
 provider_slug: s-and-p-global
 search_terms:
-- list available commodity symbols with metadata
-- get current prices
-- get symbols modified since a date for incremental sync
-- analytics
-- energy markets
-- get price history
-- commodity symbol reference data
-- get list of commodity symbols with updated price assessments since a given date. use for incremental data sync to keep commodity price databases current.
-- market data
 - list symbols
-- symbols modified since a date
-- get historical commodity prices
 - list commodity symbols
-- current commodity price assessments
-- trading
-- historical commodity price assessments
-- get historical commodity price assessments for a date range. use for time series analysis, backtesting, and trend analysis in energy and commodity markets.
-- get the latest price assessments for platts commodity symbols (e.g., pcaas00 for dated brent crude oil). returns current value, unit of measure, currency, and assessment date.
-- market intelligence
-- get current commodity prices
-- credit ratings
-- get modified commodity symbols
-- list available platts commodity symbols with descriptions, units, and assessment frequency. filter by commodity name (crude oil, natural gas, lng, etc.).
-- financial data
-- s&p global
-- capital markets
-- get current price assessments for specified commodity symbols
-- commodity insights
+- energy markets
 - get modified symbols
-- fortune 500
+- market data
+- commodity insights
+- get price history
+- get historical commodity prices
+- capital markets
+- commodity symbol reference data
+- get current commodity prices
+- analytics
+- get current prices
+- financial data
+- get current price assessments for specified commodity symbols
+- current commodity price assessments
+- symbols modified since a date
 - get historical price assessments over a date range
+- get modified commodity symbols
+- fortune 500
+- list available commodity symbols with metadata
+- get the latest price assessments for platts commodity symbols (e.g., pcaas00 for dated brent crude oil). returns current value, unit of measure, currency, and assessment date.
+- get list of commodity symbols with updated price assessments since a given date. use for incremental data sync to keep commodity price databases current.
+- s&p global
+- trading
+- get historical commodity price assessments for a date range. use for time series analysis, backtesting, and trend analysis in energy and commodity markets.
+- historical commodity price assessments
+- market intelligence
+- list available platts commodity symbols with descriptions, units, and assessment frequency. filter by commodity name (crude oil, natural gas, lng, etc.).
+- get symbols modified since a date for incremental sync
+- credit ratings
 slug: commodity-market-data
 source_filename: commodity-market-data.yaml
 source_heading: Capability Spec

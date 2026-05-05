@@ -54,57 +54,57 @@ personas: []
 provider_name: Toolhouse
 provider_slug: toolhouse
 search_terms:
-- create a new agent studio chat session for interactive agent development.
-- tools
-- manage ai agents.
-- ai agents
+- agent infrastructure
+- get agent run logs
 - agent studio chat sessions.
-- list api keys
 - list studio chats
-- list all api keys for the authenticated user.
-- tool bundles for grouping tools.
-- list all available tools in the toolhouse tool library.
-- list all agent studio chat sessions.
-- list historical execution runs for toolhouse agents with pagination.
-- list all tool bundles configured for the authenticated user.
-- get a specific agent.
-- list all agent execution runs.
 - list all api keys for the authenticated toolhouse user.
-- get details and status of a specific agent run.
-- retrieve the execution logs for a specific toolhouse agent run.
-- get agent
-- backend as a service
-- subscribe to a paid toolhouse agent to enable access.
-- create agent
-- create bundle
-- list agent runs
-- get the full configuration and details of a specific toolhouse agent.
-- get the details, status, and results of a specific toolhouse agent run.
-- list agents
-- get agent run
-- create a new tool bundle grouping specific tools together.
-- list all available tools.
-- subscribe to agent
-- create or update an ai agent.
-- toolhouse
-- available tools in the toolhouse library.
-- get details of a specific agent.
-- list all toolhouse ai agents for the authenticated user.
+- list all agent studio chat sessions for visual agent development.
+- list all agent studio chat sessions.
+- tools
 - create a new tool bundle.
 - list bundles
-- api key management.
-- get agent run logs
-- mcp
-- start a new agent studio chat session.
-- get a specific agent run.
-- create or update a toolhouse ai agent definition with tools, bundles, and system prompt.
-- create studio chat
-- list all agent studio chat sessions for visual agent development.
-- list all agents for the authenticated user.
-- list all tool bundles.
-- agent infrastructure
-- agent execution history.
 - list tools
+- list all tool bundles configured for the authenticated user.
+- list agents
+- backend as a service
+- get the details, status, and results of a specific toolhouse agent run.
+- create agent
+- toolhouse
+- get details of a specific agent.
+- get the full configuration and details of a specific toolhouse agent.
+- create bundle
+- list agent runs
+- available tools in the toolhouse library.
+- get agent
+- create studio chat
+- create or update an ai agent.
+- manage ai agents.
+- start a new agent studio chat session.
+- ai agents
+- list all available tools in the toolhouse tool library.
+- create a new agent studio chat session for interactive agent development.
+- mcp
+- list historical execution runs for toolhouse agents with pagination.
+- retrieve the execution logs for a specific toolhouse agent run.
+- get a specific agent.
+- list all api keys for the authenticated user.
+- subscribe to a paid toolhouse agent to enable access.
+- get a specific agent run.
+- list all agents for the authenticated user.
+- agent execution history.
+- list all available tools.
+- subscribe to agent
+- get details and status of a specific agent run.
+- list all toolhouse ai agents for the authenticated user.
+- create or update a toolhouse ai agent definition with tools, bundles, and system prompt.
+- get agent run
+- list api keys
+- tool bundles for grouping tools.
+- api key management.
+- list all tool bundles.
+- create a new tool bundle grouping specific tools together.
+- list all agent execution runs.
 slug: agent-management
 source_filename: agent-management.yaml
 source_heading: Capability Spec

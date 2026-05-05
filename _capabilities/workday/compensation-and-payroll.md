@@ -44,51 +44,51 @@ personas: []
 provider_name: Workday
 provider_slug: workday
 search_terms:
-- cloud computing
-- benefits change
-- list pay groups
-- workday
-- compensation
-- comp list plans
-- payroll list pay groups
-- list dependents
-- saas
-- hcm
 - list all benefit plans
-- list compensation scorecards
-- submit a benefits change request
-- benefits list elections
-- payroll list inputs
-- benefits list dependents
-- list payroll inputs
-- submit a compensation change request
-- benefits get eligible plans
-- benefits list plans
-- enterprise software
-- request a one-time payment
-- list pay slips
-- comp request one time payment
-- list plans
-- compensation plans
-- comp request change
-- list all pay groups
-- pay groups
-- list benefit elections
-- payroll
-- get a pay group by id
+- workday
 - payroll get pay group details
-- payroll get pay group
-- financial management
-- comp list grades
-- list benefit plans
-- comp list scorecards
-- list compensation plans
-- list compensation grades
-- get eligible benefit plans for a worker
-- benefits
-- get pay group details
-- benefit plans
+- list pay groups
 - payroll list pay slips
+- benefits get eligible plans
+- saas
+- list plans
+- payroll get pay group
+- hcm
+- comp list grades
+- list compensation plans
+- benefit plans
+- list compensation scorecards
+- list benefit plans
+- list payroll inputs
+- get eligible benefit plans for a worker
+- benefits list plans
+- benefits
+- payroll
+- comp list plans
+- benefits list elections
+- comp list scorecards
+- submit a compensation change request
+- cloud computing
+- compensation
+- enterprise software
+- comp request change
+- payroll list inputs
+- payroll list pay groups
+- pay groups
+- benefits list dependents
+- request a one-time payment
+- list compensation grades
+- get a pay group by id
+- benefits change
+- list pay slips
+- submit a benefits change request
+- list benefit elections
+- compensation plans
+- financial management
+- list dependents
+- list all pay groups
+- get pay group details
+- comp request one time payment
 slug: compensation-and-payroll
 source_filename: compensation-and-payroll.yaml
 source_heading: Capability Spec

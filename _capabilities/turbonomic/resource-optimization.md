@@ -69,75 +69,75 @@ personas: []
 provider_name: IBM Turbonomic
 provider_slug: turbonomic
 search_terms:
-- get action
-- list policies
-- pending optimization actions from the realtime market
-- workload automation
-- single optimization action
-- list automation and placement policies governing turbonomic action execution
-- get entity actions
-- optimization actions for a specific entity
 - list entities
-- get entity
-- list pending actions
-- ibm
-- create a new automation policy
-- get actions
-- get entities
-- list entity groups used for scoped policy and reporting in turbonomic
-- hybrid cloud
-- discovery targets and integrations
-- get historical cpu, memory, and storage utilization statistics for an entity
-- list all automation policies
-- get all pending optimization actions
-- get entity details by uuid
-- entity groups for scoped management
-- get targets
-- get details for a specific managed entity by uuid
-- cloud management
-- create group
-- get groups
-- workload optimization
-- create a new entity group for targeted policy application or cost reporting
-- kubernetes
-- get or execute a specific optimization action
-- resource optimization
-- list resource and hardware templates for capacity planning
-- list all discovery targets (cloud accounts, hypervisors, kubernetes clusters)
-- resource utilization statistics
-- get topology
-- get infrastructure topology definitions
-- list targets
-- list all discovery targets
-- get entity stats
-- list all entity groups
-- create policy
-- delete an entity group from turbonomic
-- multi-cloud
-- get templates
-- list all managed entities with optional type filtering
 - get pending optimization actions for an entity
 - application resource management
-- automation and placement policies
-- list all resource templates
 - managed infrastructure entities
-- get resource utilization statistics for an entity
-- infrastructure topology and supply chains
-- single entity details
+- single optimization action
+- list all discovery targets
+- cloud management
+- create a new entity group for targeted policy application or cost reporting
+- multi-cloud
 - delete group
-- list templates
 - cloud cost optimization
-- get optimization actions recommended for a specific entity
-- list groups
-- list all pending ai-recommended optimization actions from the realtime market
-- create a new entity group
-- execute a specific turbonomic optimization action to right-size or move a workload
-- get infrastructure topology and supply chain relationships
+- get entity
+- list templates
+- list all managed entities with optional type filtering
+- list all discovery targets (cloud accounts, hypervisors, kubernetes clusters)
 - execute action
 - create a new automation policy to control how turbonomic executes actions
-- resource and hardware templates
 - get policies
+- get groups
+- discovery targets and integrations
+- workload optimization
+- create group
+- list all resource templates
+- list resource and hardware templates for capacity planning
+- list entity groups used for scoped policy and reporting in turbonomic
+- single entity details
+- create a new entity group
 - list managed infrastructure entities (vms, containers, applications) in turbonomic
+- get entity details by uuid
+- resource optimization
+- get infrastructure topology and supply chain relationships
+- list automation and placement policies governing turbonomic action execution
+- optimization actions for a specific entity
+- list all pending ai-recommended optimization actions from the realtime market
+- get entity actions
+- resource and hardware templates
+- list all entity groups
+- get or execute a specific optimization action
+- get templates
+- get topology
+- get details for a specific managed entity by uuid
+- entity groups for scoped management
+- get resource utilization statistics for an entity
+- get targets
+- execute a specific turbonomic optimization action to right-size or move a workload
+- workload automation
+- ibm
+- get action
+- automation and placement policies
+- list all automation policies
+- get all pending optimization actions
+- create a new automation policy
+- hybrid cloud
+- resource utilization statistics
+- get historical cpu, memory, and storage utilization statistics for an entity
+- list targets
+- create policy
+- pending optimization actions from the realtime market
+- get entity stats
+- get infrastructure topology definitions
+- get optimization actions recommended for a specific entity
+- delete an entity group from turbonomic
+- list policies
+- kubernetes
+- list pending actions
+- infrastructure topology and supply chains
+- get actions
+- get entities
+- list groups
 slug: resource-optimization
 source_filename: resource-optimization.yaml
 source_heading: Capability Spec

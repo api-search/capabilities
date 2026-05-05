@@ -27,31 +27,31 @@ provider_name: Secureworks
 provider_slug: secureworks
 search_terms:
 - query the endpoint asset inventory including hostname, ip addresses, os, agent version, and isolation status
-- investigation management
 - incident response
-- query threat intelligence
-- threat intelligence indicators
-- query endpoint assets
-- mdr
-- create investigation
 - query active and closed security investigations in taegis xdr including priority, status, and assigned alerts
-- xdr
-- query security investigations
-- create a new security investigation in taegis xdr to track and coordinate incident response
-- query threat intelligence data
-- threat intelligence
+- query security alerts with graphql filters
 - security alert queries
 - query investigations
-- query security alerts with graphql filters
-- query endpoint assets and agents
-- cybersecurity
+- query endpoint assets
+- threat intelligence
+- xdr
 - endpoint asset inventory
-- query alerts
-- query xdr alerts
-- threat detection
-- query security alerts from taegis xdr including severity, status, mitre technique, and affected assets
-- security operations
+- cybersecurity
 - query threat intelligence indicators (ips, domains, urls, file hashes) for malicious activity assessment
+- threat detection
+- query security investigations
+- mdr
+- query security alerts from taegis xdr including severity, status, mitre technique, and affected assets
+- query threat intelligence data
+- security operations
+- investigation management
+- create investigation
+- query xdr alerts
+- query threat intelligence
+- query alerts
+- create a new security investigation in taegis xdr to track and coordinate incident response
+- query endpoint assets and agents
+- threat intelligence indicators
 slug: threat-detection-response
 source_filename: threat-detection-response.yaml
 source_heading: Capability Spec

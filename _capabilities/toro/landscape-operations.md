@@ -63,62 +63,62 @@ personas: []
 provider_name: Toro
 provider_slug: toro
 search_terms:
-- smart connected products
-- create a new customer record for a landscape contractor
-- list payments
-- process a customer payment for an invoice
-- list equipment
-- create a new landscaping job for a customer
-- list crew and job schedules for a date range
-- customer account management
-- list all crews and their members
-- schedule a job for a crew
-- list landscaping equipment
-- landscaping job management
-- golf
-- process a payment
-- equipment
-- operations
-- individual customer management
-- crew management
-- process payment
-- create a new invoice
-- list customer invoices with optional status filter
-- list all crews
-- create a new landscaping job
-- list all landscaping equipment in the fleet
-- invoice management
-- list jobs
-- get details for a specific customer
-- list landscaping jobs and work orders with optional status and date filters
-- landscaping
-- list invoices
-- list crews
 - irrigation
+- list landscaping jobs
 - business management
-- list all landscape contractor customers
-- schedule job
-- create a new invoice for a customer or completed job
+- customer account management
+- individual customer management
+- landscaping job management
+- invoice management
 - list customers
-- create a new customer
-- scheduling
-- create schedule entry
+- get a customer by id
+- list payments
+- list jobs
+- list schedules
 - list job schedules
+- crew management
+- create schedule entry
+- create job
+- create a new invoice
+- crew and job scheduling
+- create invoice
+- process payment
+- scheduling
+- process a customer payment for an invoice
+- invoicing
+- list invoices
+- list equipment
+- payment processing
+- list customer invoices with optional status filter
+- schedule a job for a crew
+- equipment fleet tracking
+- operations
+- golf
+- landscaping
+- equipment
+- turf management
+- list crew and job schedules for a date range
+- smart connected products
+- create a new invoice for a customer or completed job
 - assign a job to a crew on a specific date
 - get customer
-- list landscaping jobs
-- crew and job scheduling
-- create customer
-- fleet management
-- equipment fleet tracking
+- list all crews and their members
 - list all customers
-- turf management
-- list schedules
-- create invoice
-- invoicing
-- payment processing
-- create job
-- get a customer by id
+- create a new customer
+- create a new landscaping job for a customer
+- schedule job
+- create a new landscaping job
+- list all crews
+- list landscaping jobs and work orders with optional status and date filters
+- create customer
+- process a payment
+- create a new customer record for a landscape contractor
+- list all landscape contractor customers
+- list all landscaping equipment in the fleet
+- get details for a specific customer
+- list crews
+- list landscaping equipment
+- fleet management
 slug: landscape-operations
 source_filename: landscape-operations.yaml
 source_heading: Capability Spec

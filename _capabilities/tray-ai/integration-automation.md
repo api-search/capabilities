@@ -71,78 +71,78 @@ personas: []
 provider_name: Tray.ai
 provider_slug: tray-ai
 search_terms:
-- get solutions
-- automation
-- get solution instances for embedded users
-- get operations and input/output schemas for a specific connector version
-- list platform authentications
-- create a new platform authentication for a third-party service
-- connectors
-- get operations and schemas for a specific connector version
-- list triggers
-- list all platform authentications for third-party services
-- get connector version
-- delete a platform authentication by id
-- manage platform organization users
-- list all workspaces in the tray.ai organization
-- embedded integration
-- list all available tray.ai triggers for real-time data from third-party services
-- get all published solutions available for embedding
-- manage trigger subscriptions
-- create an external embedded user in the tray.ai application
-- delete a platform authentication
-- integration
-- manage platform workspaces
-- get connector version with available operations
-- execute a tray.ai connector operation to interact with a third-party service
-- create an external user in the embedded application
-- create solution instance
-- manage embedded external users
-- get solution instances
-- list all organization users
-- get or delete a specific authentication
-- call connector
-- list all available triggers
-- execute a tray.ai connector operation against a third-party service
-- update solution instance
-- list users
-- get published solutions for embedding
-- update an existing solution instance (enable, disable, reconfigure)
-- list all workspaces in the organization
-- create authentication
-- create subscription
-- export tray.ai workflows for environment promotion (staging to production)
-- create a trigger subscription
-- list all available tray.ai service connectors (700+ integrations)
-- list authentications
-- get embedded solutions
-- export workflows
-- import tray.ai workflows from exported data into the embedded account
-- create platform authentication
-- discover and invoke tray.ai service connectors
-- get authentication
-- execute a connector operation
-- get all published solutions available in the embedded application
-- list workspaces
-- list all users in the tray.ai organization
-- list all platform authentications
-- ipaas
-- create a solution instance from a published solution for an embedded end user
-- manage trigger subscriptions for real-time events
-- import workflows
 - platform
-- list all available tray.ai service connectors
+- manage trigger subscriptions for real-time events
+- execute a tray.ai connector operation to interact with a third-party service
+- delete a platform authentication by id
+- create an external embedded user in the tray.ai application
+- ipaas
+- export workflows
+- list users
+- create platform authentication
+- integration
+- get operations and schemas for a specific connector version
+- discover and invoke tray.ai service connectors
+- list all organization users
+- list all available tray.ai triggers for real-time data from third-party services
+- create subscription
+- create solution instance
 - create embedded user
-- manage solution instances for embedded users
-- get a specific authentication by id
-- list connectors
+- import tray.ai workflows from exported data into the embedded account
+- get or delete a specific authentication
+- execute a connector operation
+- get all published solutions available for embedding
+- list all workspaces in the tray.ai organization
+- list authentications
+- create authentication
+- list all platform authentications for third-party services
 - create a solution instance for an embedded end user
-- workflow automation
-- delete authentication
+- get a specific authentication by id
+- get operations and input/output schemas for a specific connector version
+- embedded integration
+- call connector
+- get connector version
+- create a new platform authentication
+- manage platform organization users
+- get authentication
+- list all workspaces in the organization
 - create a trigger subscription to receive real-time data from a third-party service
+- export tray.ai workflows for environment promotion (staging to production)
+- connectors
+- get solutions
+- list connectors
+- create a trigger subscription
+- get all published solutions available in the embedded application
+- create an external user in the embedded application
+- create a solution instance from a published solution for an embedded end user
+- delete authentication
+- get embedded solutions
+- list all available tray.ai service connectors
+- list all users in the tray.ai organization
+- update an existing solution instance (enable, disable, reconfigure)
+- import workflows
+- list all platform authentications
+- manage platform workspaces
+- manage embedded external users
+- list all available tray.ai service connectors (700+ integrations)
+- get solution instances
+- delete a platform authentication
+- manage solution instances for embedded users
+- list workspaces
+- manage trigger subscriptions
+- get solution instances for embedded users
+- list triggers
+- list all available triggers
+- create a new platform authentication for a third-party service
+- update solution instance
+- get published solutions for embedding
+- execute a tray.ai connector operation against a third-party service
+- get connector version with available operations
+- automation
 - manage third-party service authentications
 - delete platform authentication
-- create a new platform authentication
+- workflow automation
+- list platform authentications
 slug: integration-automation
 source_filename: integration-automation.yaml
 source_heading: Capability Spec

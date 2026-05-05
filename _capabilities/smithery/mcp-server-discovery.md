@@ -34,46 +34,46 @@ personas: []
 provider_name: Smithery
 provider_slug: smithery
 search_terms:
-- list skills
-- list servers
-- ai agents
+- search and browse available skills
+- list releases for a server
 - list the release history and versions for an mcp server
-- individual skill details
-- get skill
-- list server releases
-- large language models
-- server release history
-- search for reusable prompt-based skills that extend ai agent capabilities
-- search the smithery registry for mcp servers by name, description, or capabilities using full-text and semantic search
-- get skill details
-- get full server details including tools and resources
 - search skills
-- check registry health
-- check service health status
-- registry
-- check health
-- get server details
-- search and browse mcp servers in the registry
-- list releases
-- developer tools
-- get detailed information about a specific smithery skill
-- artificial intelligence
 - smithery
 - mcp server registry search and discovery
-- list releases for a server
-- mcp
+- list skills
 - discovery
-- individual mcp server details
-- search and browse available skills
-- create a service token for machine-to-machine api authentication
 - create service token
-- reusable ai skills
-- service health
-- get server
-- check whether the smithery registry service is operational
-- search servers
 - model context protocol
+- get skill details
+- list releases
+- search for reusable prompt-based skills that extend ai agent capabilities
+- get detailed information about a specific smithery skill
 - get complete details about a specific mcp server including its tools, resources, connection methods, and configuration
+- get skill
+- developer tools
+- artificial intelligence
+- registry
+- check service health status
+- reusable ai skills
+- create a service token for machine-to-machine api authentication
+- search servers
+- check registry health
+- ai agents
+- get server
+- list server releases
+- mcp
+- individual mcp server details
+- search and browse mcp servers in the registry
+- search the smithery registry for mcp servers by name, description, or capabilities using full-text and semantic search
+- check whether the smithery registry service is operational
+- large language models
+- list servers
+- get full server details including tools and resources
+- check health
+- service health
+- server release history
+- individual skill details
+- get server details
 slug: mcp-server-discovery
 source_filename: mcp-server-discovery.yaml
 source_heading: Capability Spec

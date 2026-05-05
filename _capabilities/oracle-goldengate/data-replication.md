@@ -57,72 +57,72 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- create a new replicat process
-- issue a command (start, stop, kill) to an extract
-- create a new extract process
-- list credential domains
-- extract process management across core and big data deployments
-- list all configured data streams
-- list replicats
-- data synchronization
-- distribution path management
-- list all data streams
-- bigdata list replicats
-- credential store management
-- create data stream
-- replicat process management
-- get extract
-- list all extract processes
-- list all big data replicat processes
-- list data streams
-- delete extract
-- get service health details
-- list all extract processes from the core goldengate deployment
-- list available big data target types (kafka, hdfs, mongodb, etc.)
-- cdc
-- get a specific extract process
-- create a new data stream for downstream distribution
-- delete an extract process
-- list available big data target types
-- core create extract
 - create extract
-- core get replicat
-- execute a ggsci-style goldengate command
-- core create replicat
-- list credential store domains
-- issue a command to a replicat process
-- list extracts
-- get details of a specific extract process
-- bigdata get replicat
-- get configuration of a specific data stream
-- core list extracts
-- data integration
 - data replication
-- individual extract operations
-- core issue replicat command
-- list data distribution paths
-- database
-- list big data replicats
-- enterprise
-- list all replicat processes
-- available big data target types
-- oracle goldengate
-- list data target types
-- big data replicat processes
-- real-time replication
-- get details of a specific replicat process
-- execute command
-- list distribution paths
-- get a big data replicat process
-- get data stream
-- data stream management
-- get performance metrics for all running processes
-- service health
-- list process metrics
-- get service health
+- list all big data replicat processes
+- list available big data target types
 - core list replicats
-- core issue extract command
+- list available big data target types (kafka, hdfs, mongodb, etc.)
+- execute a ggsci-style goldengate command
+- enterprise
+- list all extract processes
+- core issue replicat command
+- list all extract processes from the core goldengate deployment
+- data integration
+- core create extract
+- core list extracts
+- big data replicat processes
+- create a new replicat process
+- credential store management
+- get a big data replicat process
+- get a specific extract process
+- list credential domains
+- data stream management
+- oracle goldengate
+- individual extract operations
+- list all replicat processes
+- list big data replicats
+- create a new extract process
+- execute command
+- issue a command (start, stop, kill) to an extract
+- distribution path management
+- list all configured data streams
+- list process metrics
+- database
+- bigdata get replicat
+- get service health
+- get performance metrics for all running processes
+- replicat process management
+- core create replicat
+- data synchronization
+- real-time replication
+- list replicats
+- get details of a specific replicat process
+- get data stream
+- available big data target types
+- extract process management across core and big data deployments
+- get configuration of a specific data stream
+- bigdata list replicats
+- list data target types
+- list data distribution paths
+- list data streams
+- issue a command to a replicat process
+- cdc
+- list distribution paths
+- get extract
+- delete extract
+- delete an extract process
+- service health
+- list all data streams
 - core get extract
+- core issue extract command
+- core get replicat
+- create a new data stream for downstream distribution
+- list extracts
+- list credential store domains
+- get service health details
+- get details of a specific extract process
+- create data stream
 slug: data-replication
 source_filename: data-replication.yaml
 source_heading: Capability Spec

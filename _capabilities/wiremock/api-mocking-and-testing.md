@@ -58,78 +58,78 @@ personas: []
 provider_name: WireMock
 provider_slug: wiremock
 search_terms:
-- check recording status.
 - list all registered stub mappings. use this to see what api endpoints are currently mocked.
-- reset all
-- list scenarios
-- get a specific logged request by uuid.
-- reset all stub mappings and the request journal to clean default state.
-- find logged requests closest to matching a specific request pattern.
-- import a batch of stub mappings from a json definition.
-- update settings
-- count how many requests matching specific criteria were received.
-- get a stub mapping by uuid.
-- mock server
-- remove all stub mappings.
-- list all scenarios and their current state.
-- list all requests logged in the request journal since the last reset.
-- start recording
-- get requests that didn't match any stub.
-- stop recording and retrieve the captured stub mappings.
-- manage a specific stub mapping.
-- get unmatched requests
-- access a specific logged request.
-- list all stateful scenarios and their current state for stateful mock testing.
-- list requests
-- take a snapshot of current request traffic as stub mappings.
-- get request
-- update stub mapping
-- take snapshot
-- register a new stub mapping to mock an api endpoint.
-- check whether wiremock is currently recording (neverstarted, recording, or stopped).
-- stubs
-- find logged requests matching specific url and method criteria.
-- get stub mapping
 - stop recording
-- create and manage stub mappings that define mock api behavior.
-- list stub mappings
-- delete all requests
-- find stub mappings by metadata
-- reset all scenario states back to their initial state.
-- create stub mapping
-- inspect unmatched requests for debugging.
-- count requests
-- reset scenarios
-- delete stub mapping
-- get a specific stub mapping by its uuid to inspect its request/response configuration.
-- manage stateful test scenarios.
-- update an existing stub mapping to change its request matcher or response.
-- get the current recording status.
-- get recording status
-- list all registered stub mappings.
-- delete a stub mapping.
-- api mocking
-- create a new stub mapping to mock an api endpoint with a specific request pattern and response.
-- remove a specific stub mapping by uuid.
-- update global wiremock server settings such as fixed response delay.
-- start recording real api traffic as stub mappings from a target base url.
-- integration testing
-- access the request journal.
-- find requests
-- wiremock
-- find near misses for request
-- find stub mappings that are closest to matching a specific request — helps debug near misses.
-- mocking
-- clear the request journal.
 - platform
-- delete all stub mappings
 - get requests that did not match any stub mapping — useful for debugging missing stubs.
-- find stub mappings that match specific metadata criteria.
-- list all requests logged in the journal.
+- list requests
+- create stub mapping
+- start recording
+- count requests
 - import stub mappings
-- testing
-- update a stub mapping.
+- find stub mappings that match specific metadata criteria.
+- remove a specific stub mapping by uuid.
+- clear the request journal.
+- update settings
+- delete all requests
+- get recording status
+- get a specific logged request by uuid.
+- get a stub mapping by uuid.
+- list all requests logged in the journal.
+- access a specific logged request.
+- find near misses for request
+- create and manage stub mappings that define mock api behavior.
+- manage stateful test scenarios.
+- delete a stub mapping.
+- list stub mappings
+- integration testing
+- create a new stub mapping to mock an api endpoint with a specific request pattern and response.
 - find near misses for pattern
+- check whether wiremock is currently recording (neverstarted, recording, or stopped).
+- register a new stub mapping to mock an api endpoint.
+- find logged requests closest to matching a specific request pattern.
+- mock server
+- list all stateful scenarios and their current state for stateful mock testing.
+- reset all stub mappings and the request journal to clean default state.
+- update global wiremock server settings such as fixed response delay.
+- import a batch of stub mappings from a json definition.
+- reset all scenario states back to their initial state.
+- wiremock
+- find stub mappings by metadata
+- delete all stub mappings
+- stubs
+- manage a specific stub mapping.
+- delete stub mapping
+- access the request journal.
+- update stub mapping
+- update an existing stub mapping to change its request matcher or response.
+- find requests
+- reset scenarios
+- remove all stub mappings.
+- take a snapshot of current request traffic as stub mappings.
+- list all requests logged in the request journal since the last reset.
+- mocking
+- get request
+- get stub mapping
+- get requests that didn't match any stub.
+- get unmatched requests
+- list scenarios
+- start recording real api traffic as stub mappings from a target base url.
+- api mocking
+- testing
+- reset all
+- find stub mappings that are closest to matching a specific request — helps debug near misses.
+- list all registered stub mappings.
+- inspect unmatched requests for debugging.
+- check recording status.
+- get a specific stub mapping by its uuid to inspect its request/response configuration.
+- list all scenarios and their current state.
+- find logged requests matching specific url and method criteria.
+- count how many requests matching specific criteria were received.
+- stop recording and retrieve the captured stub mappings.
+- update a stub mapping.
+- get the current recording status.
+- take snapshot
 slug: api-mocking-and-testing
 source_filename: api-mocking-and-testing.yaml
 source_heading: Capability Spec

@@ -61,55 +61,55 @@ personas: []
 provider_name: UtilityAPI
 provider_slug: utilityapi
 search_terms:
-- individual meter details
-- billing summaries
 - list all utility meters for authorized customers
-- enable ongoing monitoring for a meter
+- list authorizations
+- revoke a customer's utility data authorization
+- list meter usage intervals
+- trigger data collection for a utility meter
+- list bills
+- customer authorizations
+- get meter
+- green button
+- billing
+- list webhook events for monitoring data updates
+- clean energy
 - revoke a customer authorization
+- revoke authorization
+- list utility billing history for a meter
+- list events
+- list customer billing accounts
+- trigger data collection for a meter
+- list webhook events
+- list meter usage interval data for energy analysis
+- meter data
+- list intervals
+- enable ongoing data monitoring for a utility meter
+- webhook events
+- meter usage interval data
+- list billing accounts
+- list all customer authorizations
+- get details for a specific utility meter
+- billing summaries
+- trigger meter data collection
+- list customer utility data authorizations
+- list billing summaries
+- list utility meters for authorized customers
+- billing data
+- enable ongoing monitoring for a meter
+- enable meter monitoring
+- list utility bills for authorized meters
+- utility billing data
+- ev charging
+- collect meter data
+- get a specific utility meter
 - utilities
+- energy
+- list meters
+- monitor meter data
+- individual meter details
+- list billing summaries for energy cost analysis
 - utility meter access for authorized customers
 - customer billing accounts
-- revoke a customer's utility data authorization
-- customer authorizations
-- billing data
-- collect meter data
-- list billing summaries
-- enable meter monitoring
-- list events
-- enable ongoing data monitoring for a utility meter
-- list bills
-- get details for a specific utility meter
-- list utility meters for authorized customers
-- green button
-- list all customer authorizations
-- list meter usage interval data for energy analysis
-- trigger data collection for a utility meter
-- trigger meter data collection
-- energy
-- list webhook events
-- list customer utility data authorizations
-- ev charging
-- list billing summaries for energy cost analysis
-- list customer billing accounts
-- list meters
-- list meter usage intervals
-- utility billing data
-- list intervals
-- get a specific utility meter
-- webhook events
-- list authorizations
-- list utility bills for authorized meters
-- revoke authorization
-- billing
-- trigger data collection for a meter
-- monitor meter data
-- meter usage interval data
-- get meter
-- list webhook events for monitoring data updates
-- list billing accounts
-- meter data
-- clean energy
-- list utility billing history for a meter
 slug: energy-data-access
 source_filename: energy-data-access.yaml
 source_heading: Capability Spec

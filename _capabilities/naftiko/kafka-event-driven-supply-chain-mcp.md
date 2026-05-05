@@ -1,40 +1,54 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability over a P&G Kafka topic family (supply-chain events) exposing typed event reads as MCP tools for AI ops assistants.
+description: A capability over Kafka topics for supply-chain events (order, shipment, exception) exposed as MCP tools for agent flows.
 layout: capability
 name: Kafka Event Driven Supply Chain Mcp
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: emit-order
+  path: /events/orders
+- description: ''
+  method: POST
+  name: emit-shipment
+  path: /events/shipments
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- spec-driven integration
+- supply chain
+- governance
 - mcp
 - ai
+- kafka
+- emit shipment
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a capability over a p&g kafka topic family (supply-chain events) exposing typed event reads as mcp tools for ai ops assistants.
-- example op
-- governance
+- emit order
+- consume events
 slug: kafka-event-driven-supply-chain-mcp
 source_filename: kafka-event-driven-supply-chain-mcp.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Kafka Event Driven Supply Chain Mcp\n  description: A capability over a P&G Kafka topic family (supply-chain events) exposing typed event reads as MCP tools for AI ops assistants.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: kafka-event-driven-supply-chain-mcp-rest\n    description: REST API for Kafka Event Driven Supply Chain Mcp.\n    resources:\n    - name: example\n      path: /example\n      operations:\n \
-  \     - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: kafka-event-driven-supply-chain-mcp-mcp\n    description: MCP server exposing Kafka Event Driven Supply Chain Mcp for AI agents.\n    tools:\n    - name: example\n      description: A capability over a P&G Kafka topic family (supply-chain events) exposing typed event reads as MCP tools for AI ops assistants.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: kafka-event-driven-supply-chain-mcp-skills\n    description: Agent Skill bundle for Kafka Event Driven Supply Chain Mcp.\n    skills:\n    - name: kafka-event-driven-supply-chain-mcp\n      description: A capability over a P&G Kafka topic family (supply-chain events) exposing typed event reads as MCP tools for AI ops assistants.\n      location: file:///opt/naftiko/skills/kafka-event-driven-supply-chain-mcp\n\
-  \      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability over a P&G Kafka topic family (supply-chain events) exposing typed event reads as MCP tools for AI ops assistants.\n        from:\n          sourceNamespace: kafka-event-driven-supply-chain-mcp-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Kafka Event Driven Supply Chain Mcp\n  description: A capability over Kafka topics for supply-chain events (order, shipment, exception) exposed as MCP tools for agent flows.\n  tags: [Naftiko, Kafka, Supply Chain]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: kafka-env\n  keys: {KAFKA_REST_HOST: KAFKA_REST_HOST, KAFKA_REST_TOKEN: KAFKA_REST_TOKEN}\ncapability:\n  consumes:\n  - namespace: kafka\n    type: http\n    baseUri: https://{{KAFKA_REST_HOST}}\n    authentication: {type: bearer, token: '{{KAFKA_REST_TOKEN}}'}\n    resources:\n    - name: order-events\n      path: /topics/orders/records\n      operations: [{name: produce-order-event, method: POST}]\n    - name: shipment-events\n      path: /topics/shipments/records\n      operations: [{name: produce-shipment-event, method: POST}]\n    - name: consumer-records\n      path: /consumers/{{group}}/instances/{{instance}}/records\n      operations:\n      - {name:\
+  \ consume-records, method: GET, inputParameters: [{name: group, in: path}, {name: instance, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: kafka-event-driven-supply-chain-mcp-rest\n    description: REST surface for supply-chain events.\n    resources:\n    - {name: orders, path: /events/orders, operations: [{method: POST, name: emit-order, call: kafka.produce-order-event}]}\n    - {name: shipments, path: /events/shipments, operations: [{method: POST, name: emit-shipment, call: kafka.produce-shipment-event}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: kafka-event-driven-supply-chain-mcp-mcp\n    description: MCP for supply-chain events.\n    tools:\n    - {name: emit-order, call: kafka.produce-order-event}\n    - {name: emit-shipment, call: kafka.produce-shipment-event}\n    - name: consume-events\n      hints: {readOnly: true}\n      inputParameters: [{name: group, type: string, required: true}, {name: instance, type:\
+  \ string, required: true}]\n      call: kafka.consume-records\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: kafka-event-driven-supply-chain-mcp-skills\n    description: Skill for supply-chain events.\n    skills:\n    - name: kafka-event-driven-supply-chain-mcp\n      description: Kafka supply-chain events.\n      location: file:///opt/naftiko/skills/kafka-event-driven-supply-chain-mcp\n      allowed-tools: emit-order,emit-shipment,consume-events\n      tools:\n      - {name: emit-order, from: {sourceNamespace: kafka-event-driven-supply-chain-mcp-mcp, action: emit-order}}\n      - {name: emit-shipment, from: {sourceNamespace: kafka-event-driven-supply-chain-mcp-mcp, action: emit-shipment}}\n      - {name: consume-events, from: {sourceNamespace: kafka-event-driven-supply-chain-mcp-mcp, action: consume-events}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/kafka-event-driven-supply-chain-mcp.yaml
 tags:
 - Naftiko
+- Kafka
+- Supply Chain
 tools:
-- description: A capability over a P&G Kafka topic family (supply-chain events) exposing typed event reads as MCP tools for AI ops assistants.
+- description: ''
+  hints: {}
+  name: emit-order
+- description: ''
+  hints: {}
+  name: emit-shipment
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: consume-events
 ---

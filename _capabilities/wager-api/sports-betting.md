@@ -53,54 +53,54 @@ personas: []
 provider_name: Wager API
 provider_slug: wager-api
 search_terms:
-- get championship and season futures odds including super bowl, nba finals, and more
-- get player roster information
-- get depth charts
-- player statistics
-- get game schedules and results for a sport with scores and status
 - get player props
-- get player prop odds
-- get current player injury reports with status, practice participation, and return timeline
-- player props
-- real-time game odds
+- sports betting
 - futures
+- get player prop odds
+- sports odds
+- get player proposition odds for passing yards, points, home runs, and other stats
+- get current injury reports
+- get player projections
+- player injury reports
+- sports data
+- get current player injury reports with status, practice participation, and return timeline
+- get games
 - get game odds
-- get team depth charts showing starter and backup designations by position
 - player proposition odds
-- get player statistics including season totals and game-by-game log
-- nfl
 - team depth charts
+- get player projections for upcoming games
+- get championship and season futures odds including super bowl, nba finals, and more
+- get depth charts
+- get player stats
+- get team depth charts showing starter and backup designations by position
+- get injury reports
+- ncaa
+- get game schedules and results for a sport with scores and status
+- get player roster information
+- fantasy sports
+- get player statistics including season totals and game-by-game log
+- get futures odds
+- mlb
+- get futures and championship odds
+- get players
+- player props
+- player roster information
+- nfl
+- odds
+- player statistical projections
+- wager api
+- real-time game odds
+- nhl
+- get player stats and game log
 - get statistical projections for a player's upcoming games for model building
 - get team depth charts
-- ncaa
-- get real-time game odds for spreads, moneylines, and totals
-- sports data
-- wager api
-- player injury reports
-- odds
-- get players
-- get games
-- sports odds
-- get player projections for upcoming games
-- get player stats and game log
-- get injury reports
-- mlb
 - game schedules and results
-- championship and season futures
-- get player projections
-- nhl
-- get player stats
-- player roster information
-- nba
-- get current injury reports
-- fantasy sports
-- get futures odds
-- get game schedules and results
-- get player proposition odds for passing yards, points, home runs, and other stats
-- player statistical projections
-- get futures and championship odds
 - get real-time game odds for any sport including spreads, moneylines, totals, and alternate lines. supports nfl, ncaa, nba, mlb, nhl, soccer, tennis, and golf.
-- sports betting
+- get game schedules and results
+- get real-time game odds for spreads, moneylines, and totals
+- championship and season futures
+- nba
+- player statistics
 slug: sports-betting
 source_filename: sports-betting.yaml
 source_heading: Capability Spec

@@ -1,40 +1,47 @@
 ---
 categories: []
 consumed_apis: []
-description: A French-banking capability with SDI methodology language in the spec, paired with a Compliance Frameworks (GDPR) governance layer.
+description: A capability over the French Service Discovery Integration (SDI) for banking — AsyncAPI/OpenAPI service registry exposed through Naftiko.
 layout: capability
 name: French Banking Sdi Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-services
+  path: /services
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- sdi
+- spec-driven integration
+- list services
 - mcp
-- ai
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a french-banking capability with sdi methodology language in the spec, paired with a compliance frameworks (gdpr) governance layer.
-- example op
+- french banking
 - governance
+- get service spec
+- ai
 slug: french-banking-sdi-capability
 source_filename: french-banking-sdi-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: French Banking Sdi Capability\n  description: A French-banking capability with SDI methodology language in the spec, paired with a Compliance Frameworks (GDPR) governance layer.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: french-banking-sdi-capability-rest\n    description: REST API for French Banking Sdi Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method:\
-  \ GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: french-banking-sdi-capability-mcp\n    description: MCP server exposing French Banking Sdi Capability for AI agents.\n    tools:\n    - name: example\n      description: A French-banking capability with SDI methodology language in the spec, paired with a Compliance Frameworks (GDPR) governance layer.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: french-banking-sdi-capability-skills\n    description: Agent Skill bundle for French Banking Sdi Capability.\n    skills:\n    - name: french-banking-sdi-capability\n      description: A French-banking capability with SDI methodology language in the spec, paired with a Compliance Frameworks (GDPR) governance layer.\n      location: file:///opt/naftiko/skills/french-banking-sdi-capability\n      allowed-tools: example\n\
-  \      tools:\n      - name: example\n        description: A French-banking capability with SDI methodology language in the spec, paired with a Compliance Frameworks (GDPR) governance layer.\n        from:\n          sourceNamespace: french-banking-sdi-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: French Banking Sdi Capability\n  description: A capability over the French Service Discovery Integration (SDI) for banking — AsyncAPI/OpenAPI service registry exposed through Naftiko.\n  tags: [Naftiko, French Banking, SDI]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: sdi-env\n  keys: {SDI_HOST: SDI_HOST, SDI_TOKEN: SDI_TOKEN}\ncapability:\n  consumes:\n  - namespace: sdi\n    type: http\n    baseUri: https://{{SDI_HOST}}\n    authentication: {type: bearer, token: '{{SDI_TOKEN}}'}\n    resources:\n    - {name: services, path: /sdi/services, operations: [{name: list-services, method: GET}]}\n    - name: service-spec\n      path: /sdi/services/{{service_id}}/spec\n      operations:\n      - {name: get-service-spec, method: GET, inputParameters: [{name: service_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: french-banking-sdi-capability-rest\n    description: REST\
+  \ surface for French banking SDI.\n    resources:\n    - {name: services, path: /services, operations: [{method: GET, name: list-services, call: sdi.list-services}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: french-banking-sdi-capability-mcp\n    description: MCP for French banking SDI.\n    tools:\n    - {name: list-services, hints: {readOnly: true}, call: sdi.list-services}\n    - name: get-service-spec\n      hints: {readOnly: true}\n      inputParameters: [{name: service_id, type: string, required: true}]\n      call: sdi.get-service-spec\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: french-banking-sdi-capability-skills\n    description: Skill for French banking SDI.\n    skills:\n    - name: french-banking-sdi-capability\n      description: French banking SDI registry.\n      location: file:///opt/naftiko/skills/french-banking-sdi-capability\n      allowed-tools: list-services,get-service-spec\n      tools:\n      - {name: list-services,\
+  \ from: {sourceNamespace: french-banking-sdi-capability-mcp, action: list-services}}\n      - {name: get-service-spec, from: {sourceNamespace: french-banking-sdi-capability-mcp, action: get-service-spec}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/french-banking-sdi-capability.yaml
 tags:
 - Naftiko
+- French Banking
+- SDI
 tools:
-- description: A French-banking capability with SDI methodology language in the spec, paired with a Compliance Frameworks (GDPR) governance layer.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-services
+- description: ''
+  hints:
+    readOnly: true
+  name: get-service-spec
 ---

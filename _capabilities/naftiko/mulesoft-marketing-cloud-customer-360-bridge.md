@@ -1,40 +1,44 @@
 ---
 categories: []
 consumed_apis: []
-description: A composed Customer-360 capability over + MuleSoft + Marketing Cloud that returns one shaped agent context object.
+description: A bridge capability composing MuleSoft + Salesforce Marketing Cloud into a Customer 360 view for marketing-ops agents.
 layout: capability
 name: Mulesoft Marketing Cloud Customer 360 Bridge
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: get-contact-360
+  path: /customers/{{contact_key}}/360
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- customer 360
+- spec-driven integration
+- mulesoft
 - mcp
-- ai
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a composed customer-360 capability over + mulesoft + marketing cloud that returns one shaped agent context object.
-- example op
 - governance
+- get contact 360
+- ai
+- marketing cloud
 slug: mulesoft-marketing-cloud-customer-360-bridge
 source_filename: mulesoft-marketing-cloud-customer-360-bridge.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Mulesoft Marketing Cloud Customer 360 Bridge\n  description: A composed Customer-360 capability over + MuleSoft + Marketing Cloud that returns one shaped agent context object.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: mulesoft-marketing-cloud-customer-360-bridge-rest\n    description: REST API for Mulesoft Marketing Cloud Customer 360 Bridge.\n    resources:\n    - name: example\n      path: /example\n      operations:\n\
-  \      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: mulesoft-marketing-cloud-customer-360-bridge-mcp\n    description: MCP server exposing Mulesoft Marketing Cloud Customer 360 Bridge for AI agents.\n    tools:\n    - name: example\n      description: A composed Customer-360 capability over + MuleSoft + Marketing Cloud that returns one shaped agent context object.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: mulesoft-marketing-cloud-customer-360-bridge-skills\n    description: Agent Skill bundle for Mulesoft Marketing Cloud Customer 360 Bridge.\n    skills:\n    - name: mulesoft-marketing-cloud-customer-360-bridge\n      description: A composed Customer-360 capability over + MuleSoft + Marketing Cloud that returns one shaped agent context object.\n      location: file:///opt/naftiko/skills/mulesoft-marketing-cloud-customer-360-bridge\n\
-  \      allowed-tools: example\n      tools:\n      - name: example\n        description: A composed Customer-360 capability over + MuleSoft + Marketing Cloud that returns one shaped agent context object.\n        from:\n          sourceNamespace: mulesoft-marketing-cloud-customer-360-bridge-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Mulesoft Marketing Cloud Customer 360 Bridge\n  description: A bridge capability composing MuleSoft + Salesforce Marketing Cloud into a Customer 360 view for marketing-ops agents.\n  tags: [Naftiko, MuleSoft, Marketing Cloud, Customer 360]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: salesforce-mc-env\n  keys: {SFMC_HOST: SFMC_HOST, SFMC_TOKEN: SFMC_TOKEN}\ncapability:\n  consumes:\n  - namespace: sfmc\n    type: http\n    baseUri: https://{{SFMC_HOST}}\n    authentication: {type: bearer, token: '{{SFMC_TOKEN}}'}\n    resources:\n    - name: contact\n      path: '/contacts/v1/contacts/{{contact_key}}'\n      operations:\n      - {name: get-mc-contact, method: GET, inputParameters: [{name: contact_key, in: path}]}\n    - {name: data-extensions, path: '/data/v1/customobjectdata/key/{{key}}/rowset', operations: [{name: get-data-extension-rows, method: GET, inputParameters: [{name: key, in: path}]}]}\n  exposes:\n\
+  \  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: mulesoft-marketing-cloud-customer-360-bridge-rest\n    description: REST surface for Marketing Cloud Customer 360.\n    resources:\n    - {name: contact-360, path: '/customers/{{contact_key}}/360', operations: [{method: GET, name: get-contact-360, inputParameters: [{name: contact_key, in: path, type: string}], call: sfmc.get-mc-contact}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: mulesoft-marketing-cloud-customer-360-bridge-mcp\n    description: MCP for Marketing Cloud bridge.\n    tools:\n    - name: get-contact-360\n      hints: {readOnly: true}\n      inputParameters: [{name: contact_key, type: string, required: true}]\n      call: sfmc.get-mc-contact\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: mulesoft-marketing-cloud-customer-360-bridge-skills\n    description: Skill for Marketing Cloud bridge.\n    skills:\n    - name: mulesoft-marketing-cloud-customer-360-bridge\n\
+  \      description: Marketing Cloud Customer 360.\n      location: file:///opt/naftiko/skills/mulesoft-marketing-cloud-customer-360-bridge\n      allowed-tools: get-contact-360\n      tools:\n      - {name: get-contact-360, from: {sourceNamespace: mulesoft-marketing-cloud-customer-360-bridge-mcp, action: get-contact-360}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/mulesoft-marketing-cloud-customer-360-bridge.yaml
 tags:
 - Naftiko
+- MuleSoft
+- Marketing Cloud
+- Customer 360
 tools:
-- description: A composed Customer-360 capability over + MuleSoft + Marketing Cloud that returns one shaped agent context object.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-contact-360
 ---

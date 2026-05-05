@@ -71,76 +71,76 @@ personas: []
 provider_name: Workday Tracking System
 provider_slug: workday-tracking-system
 search_terms:
-- timesheets for a worker
-- list leave of absence records for a worker
-- request time off
-- get the work schedule for a worker
-- get the current work schedule assigned to a worker
-- list accrual balance overrides for a worker
-- assign work schedule
-- assign a work schedule to a worker
 - workday
 - work schedule for a worker
 - time off requests for a worker
-- list time blocks for a worker
-- create clock event
-- hr
-- request leave
-- submit a time off request for a worker
-- get schedule
+- list time blocks recorded by a workday worker in a date range
+- time blocks recorded by a worker
+- list timesheets for a worker
+- delete a reported time block
+- list time off balances
+- record a clock-in or clock-out event
+- time off plan balances for a worker
+- create a new time block entry for a worker
+- list time clock events (punches) for a worker
+- get the current work schedule assigned to a worker
+- enterprise
 - hcm
-- workforce management
-- absence management
-- list leaves
-- list timesheets for a worker for a period
-- get details of a specific time block
-- request time off for a worker
-- a specific time block
+- list time off requests for a worker
 - update time block
+- time clock events for a worker
+- hr
+- list clock events
+- get the work schedule for a worker
+- list time clock events for a worker
+- request time off
+- request leave
+- create clock event
+- scheduling
+- assign a work schedule to a worker
+- request leave of absence
+- payroll
+- delete a time block
+- submit a time off request for a worker
+- list time blocks for a worker
+- a specific time block
+- delete time block
+- human capital management
+- assign work schedule
+- get a specific time block
+- list leaves
+- create time block
+- assign schedule
+- list leave of absence records for a worker
+- list accrual overrides
+- absence management
+- list time off for a worker
+- timesheets for a worker
+- submit a leave of absence request for a worker
+- list timesheets for a worker for a period
+- time tracking
+- request a leave of absence
+- get details of a specific time block
+- list time blocks
+- update a time block
+- list leaves of absence
+- get time off plan balances for a worker
+- create a new time block for a worker
+- update an existing time block
+- get time off balances for a worker
+- list timesheets
+- get schedule
+- workforce management
+- record a clock-in or clock-out event from a time device
+- list leaves of absence for a worker
+- list accrual balance overrides for a worker
+- attendance
+- request time off for a worker
+- get time block
+- list time off
+- get work schedule
 - timesheets
 - leave of absence records for a worker
-- request a leave of absence
-- list timesheets for a worker
-- record a clock-in or clock-out event
-- list leaves of absence for a worker
-- delete a time block
-- get work schedule
-- get a specific time block
-- get time off plan balances for a worker
-- list time off balances
-- list accrual overrides
-- create a new time block entry for a worker
-- create time block
-- submit a leave of absence request for a worker
-- get time block
-- delete time block
-- get time off balances for a worker
-- time off plan balances for a worker
-- record a clock-in or clock-out event from a time device
-- assign schedule
-- list time clock events (punches) for a worker
-- enterprise
-- list time clock events for a worker
-- time clock events for a worker
-- create a new time block for a worker
-- time tracking
-- delete a reported time block
-- scheduling
-- payroll
-- list time off for a worker
-- list time blocks recorded by a workday worker in a date range
-- attendance
-- list time off
-- list leaves of absence
-- request leave of absence
-- list time blocks
-- list clock events
-- update an existing time block
-- human capital management
-- list timesheets
-- update a time block
-- time blocks recorded by a worker
-- list time off requests for a worker
 slug: workforce-time-management
 source_filename: workforce-time-management.yaml
 source_heading: Capability Spec

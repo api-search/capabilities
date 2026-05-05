@@ -35,48 +35,48 @@ personas: []
 provider_name: Unity
 provider_slug: unity
 search_terms:
-- join game lobby
-- get ticket status
-- create a new game lobby
-- online gaming
-- individual lobby operations
-- create game lobby
-- lobby discovery
-- enter the matchmaking queue for a game session
-- game lobby management
-- cancel an active matchmaking ticket
-- game development
-- search available lobbies
-- create ticket
-- game services
-- search for available public game lobbies
-- cloud gaming
-- unity
-- enter matchmaking queue
-- cancel ticket
-- cancel matchmaking
 - get lobby
-- get the current state of a game lobby
-- game server hosting
-- create a new multiplayer game lobby
-- get matchmaking status
-- join an existing game lobby by id
-- check matchmaking status
-- delete and close a game lobby
-- matchmaking queue management
-- get lobby details
-- start matchmaking
-- list matchmaking queues
-- list all configured matchmaking queues
-- real-time 3d
-- matchmaking
-- create lobby
-- multiplayer
-- search lobbies
 - individual matchmaking ticket
-- close game lobby
-- lobby
+- join an existing game lobby by id
+- list matchmaking queues
+- create a new game lobby
+- get matchmaking status
+- create lobby
+- cancel ticket
+- get ticket status
+- multiplayer
+- real-time 3d
+- cloud gaming
+- create ticket
+- individual lobby operations
+- join game lobby
+- unity
+- game services
+- enter matchmaking queue
+- online gaming
+- search lobbies
+- create a new multiplayer game lobby
+- check matchmaking status
 - check if a match has been found for a matchmaking ticket
+- create game lobby
+- enter the matchmaking queue for a game session
+- matchmaking
+- delete and close a game lobby
+- game lobby management
+- cancel matchmaking
+- search available lobbies
+- get the current state of a game lobby
+- close game lobby
+- lobby discovery
+- cancel an active matchmaking ticket
+- get lobby details
+- search for available public game lobbies
+- game development
+- lobby
+- matchmaking queue management
+- game server hosting
+- start matchmaking
+- list all configured matchmaking queues
 slug: multiplayer-services
 source_filename: multiplayer-services.yaml
 source_heading: Capability Spec

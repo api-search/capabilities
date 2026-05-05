@@ -23,36 +23,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- list timeline events for an incident
-- automation
-- Operations Engineer
-- list active and recent incidents
-- get incident
-- create incident
-- create a new incident response plan with escalation contacts
-- automated incident response plans and escalation
-- create response plan
-- monitors system reliability and coordinates incident resolution
-- operations
-- list active incidents
-- update incident
-- get details of a specific incident
-- list response plans
-- aws
-- manage incident response plans
-- list incidents
-- creating, tracking, and resolving operational incidents
-- manage active incidents
-- start a new incident and trigger response plan
-- incident management
 - Site Reliability Engineer
-- list all incident response plans
-- manages incident response plans and responds to operational incidents
-- create a new incident
-- list timeline events
+- aws
+- get incident
 - list all response plans
-- update the summary or status of an active incident
+- create response plan
+- incident management
+- list active incidents
+- automated incident response plans and escalation
+- monitors system reliability and coordinates incident resolution
+- start a new incident and trigger response plan
+- operations
+- create a new incident response plan with escalation contacts
+- creating, tracking, and resolving operational incidents
+- list timeline events
+- list timeline events for an incident
 - devops
+- manage active incidents
+- Operations Engineer
+- list response plans
+- manage incident response plans
+- list active and recent incidents
+- list incidents
+- create a new incident
+- get details of a specific incident
+- list all incident response plans
+- automation
+- update the summary or status of an active incident
+- update incident
+- manages incident response plans and responds to operational incidents
+- create incident
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

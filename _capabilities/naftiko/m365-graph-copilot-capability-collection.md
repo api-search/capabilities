@@ -1,40 +1,63 @@
 ---
 categories: []
 consumed_apis: []
-description: Office 365 / Graph capabilities exposing MCP tools, with output shaping (typed outputParameters + JSONPath) so each tool returns task-ready context.
+description: A Microsoft 365 capability over Microsoft Graph that exposes a shaped subset of M365 data for AI agents (Copilot, ADK).
 layout: capability
 name: M365 Graph Copilot Capability Collection
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: get-me
+  path: /me
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- list chats
+- spec-driven integration
+- get me
+- governance
+- graph
 - mcp
 - ai
-- naftiko
-- api integration
-- spec-driven integration
-- office 365 / graph capabilities exposing mcp tools, with output shaping (typed outputparameters + jsonpath) so each tool returns task-ready context.
 - capabilities
-- example op
-- governance
+- naftiko
+- microsoft 365
+- api integration
+- list messages
+- list drive items
+- list events
 slug: m365-graph-copilot-capability-collection
 source_filename: m365-graph-copilot-capability-collection.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: M365 Graph Copilot Capability Collection\n  description: Office 365 / Graph capabilities exposing MCP tools, with output shaping (typed outputParameters + JSONPath) so each tool returns task-ready context.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: m365-graph-copilot-capability-collection-rest\n    description: REST API for M365 Graph Copilot Capability Collection.\n    resources:\n    - name: example\n      path:\
-  \ /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: m365-graph-copilot-capability-collection-mcp\n    description: MCP server exposing M365 Graph Copilot Capability Collection for AI agents.\n    tools:\n    - name: example\n      description: Office 365 / Graph capabilities exposing MCP tools, with output shaping (typed outputParameters + JSONPath) so each tool returns task-ready context.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: m365-graph-copilot-capability-collection-skills\n    description: Agent Skill bundle for M365 Graph Copilot Capability Collection.\n    skills:\n    - name: m365-graph-copilot-capability-collection\n      description: Office 365 / Graph capabilities exposing MCP tools, with output shaping (typed outputParameters + JSONPath) so each tool\
-  \ returns task-ready context.\n      location: file:///opt/naftiko/skills/m365-graph-copilot-capability-collection\n      allowed-tools: example\n      tools:\n      - name: example\n        description: Office 365 / Graph capabilities exposing MCP tools, with output shaping (typed outputParameters + JSONPath) so each tool returns task-ready context.\n        from:\n          sourceNamespace: m365-graph-copilot-capability-collection-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: M365 Graph Copilot Capability Collection\n  description: A Microsoft 365 capability over Microsoft Graph that exposes a shaped subset of M365 data for AI agents (Copilot, ADK).\n  tags: [Naftiko, Microsoft 365, Graph]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: msgraph-env\n  description: Microsoft Graph OAuth bearer (delegated or app-only).\n  keys: {MSGRAPH_TOKEN: MSGRAPH_TOKEN}\ncapability:\n  consumes:\n  - namespace: msgraph\n    type: http\n    baseUri: https://graph.microsoft.com\n    authentication: {type: bearer, token: '{{MSGRAPH_TOKEN}}'}\n    resources:\n    - {name: me, path: /v1.0/me, operations: [{name: get-me, method: GET}]}\n    - {name: messages, path: /v1.0/me/messages, operations: [{name: list-messages, method: GET}]}\n    - {name: events, path: /v1.0/me/events, operations: [{name: list-events, method: GET}]}\n    - {name: chats, path: /v1.0/me/chats, operations: [{name: list-chats, method:\
+  \ GET}]}\n    - {name: drive-items, path: /v1.0/me/drive/root/children, operations: [{name: list-drive-items, method: GET}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: m365-graph-copilot-capability-collection-rest\n    description: REST surface over a shaped Microsoft Graph subset.\n    resources:\n    - {name: me, path: /me, operations: [{method: GET, name: get-me, call: msgraph.get-me}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: m365-graph-copilot-capability-collection-mcp\n    description: MCP for shaped M365 access.\n    tools:\n    - {name: get-me, hints: {readOnly: true}, call: msgraph.get-me}\n    - {name: list-messages, hints: {readOnly: true}, call: msgraph.list-messages}\n    - {name: list-events, hints: {readOnly: true}, call: msgraph.list-events}\n    - {name: list-chats, hints: {readOnly: true}, call: msgraph.list-chats}\n    - {name: list-drive-items, hints: {readOnly: true}, call: msgraph.list-drive-items}\n\
+  \  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: m365-graph-copilot-capability-collection-skills\n    description: Skill bundle for shaped M365 access.\n    skills:\n    - name: m365-graph-copilot-capability-collection\n      description: Shaped Microsoft Graph capability.\n      location: file:///opt/naftiko/skills/m365-graph-copilot-capability-collection\n      allowed-tools: get-me,list-messages,list-events,list-chats,list-drive-items\n      tools:\n      - {name: get-me, from: {sourceNamespace: m365-graph-copilot-capability-collection-mcp, action: get-me}}\n      - {name: list-messages, from: {sourceNamespace: m365-graph-copilot-capability-collection-mcp, action: list-messages}}\n      - {name: list-events, from: {sourceNamespace: m365-graph-copilot-capability-collection-mcp, action: list-events}}\n      - {name: list-chats, from: {sourceNamespace: m365-graph-copilot-capability-collection-mcp, action: list-chats}}\n      - {name: list-drive-items, from: {sourceNamespace:\
+  \ m365-graph-copilot-capability-collection-mcp, action: list-drive-items}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/m365-graph-copilot-capability-collection.yaml
 tags:
 - Naftiko
+- Microsoft 365
+- Graph
 tools:
-- description: Office 365 / Graph capabilities exposing MCP tools, with output shaping (typed outputParameters + JSONPath) so each tool returns task-ready context.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-me
+- description: ''
+  hints:
+    readOnly: true
+  name: list-messages
+- description: ''
+  hints:
+    readOnly: true
+  name: list-events
+- description: ''
+  hints:
+    readOnly: true
+  name: list-chats
+- description: ''
+  hints:
+    readOnly: true
+  name: list-drive-items
 ---

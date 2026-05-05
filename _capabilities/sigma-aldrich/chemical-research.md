@@ -34,45 +34,45 @@ personas: []
 provider_name: Sigma-Aldrich
 provider_slug: sigma-aldrich
 search_terms:
-- get product pricing
-- find sigma-aldrich products by cas registry number (e.g., 7732-18-5 for water)
-- chemistry
-- chemical catalog
-- research
-- cheminformatics
-- get safety data sheet
-- product lookup by cas number
-- search by chemical structure
-- product catalog search
-- get sds
-- biochemistry
-- get ghs safety data sheet for a product
-- get pricing
-- life science
-- search sigma-aldrich product catalog by keyword, name, or formula
-- get product details
-- product pricing and availability
-- product lookup by catalog number
-- search for chemicals by structure using smiles or inchi notation with exact, substructure, or similarity matching
-- get current pricing and stock availability for a sigma-aldrich product by country
-- search products
-- search by chemical structure using smiles or inchi
-- laboratory
-- search chemicals
-- find products by cas registry number
-- get product by cas
-- chemical structure search
-- lims
-- get product pricing and stock availability
-- procurement
-- search the sigma-aldrich catalog for chemicals, reagents, and biochemicals by name, formula, or keyword
 - get detailed information about a sigma-aldrich product by catalog number
-- safety
-- safety data sheet retrieval
-- get product
-- lookup by cas number
-- search by structure
+- laboratory
+- search for chemicals by structure using smiles or inchi notation with exact, substructure, or similarity matching
+- biochemistry
+- get pricing
+- get product details
+- product catalog search
 - get product details by sigma-aldrich catalog number
+- research
+- product lookup by cas number
+- safety data sheet retrieval
+- chemical catalog
+- search by chemical structure using smiles or inchi
+- get sds
+- cheminformatics
+- search sigma-aldrich product catalog by keyword, name, or formula
+- chemistry
+- search chemicals
+- get product by cas
+- find products by cas registry number
+- life science
+- procurement
+- product pricing and availability
+- search by structure
+- get product pricing
+- get ghs safety data sheet for a product
+- chemical structure search
+- get product
+- find sigma-aldrich products by cas registry number (e.g., 7732-18-5 for water)
+- product lookup by catalog number
+- get current pricing and stock availability for a sigma-aldrich product by country
+- safety
+- lims
+- lookup by cas number
+- get safety data sheet
+- search the sigma-aldrich catalog for chemicals, reagents, and biochemicals by name, formula, or keyword
+- get product pricing and stock availability
+- search products
+- search by chemical structure
 - retrieve the ghs safety data sheet for a sigma-aldrich chemical product for regulatory compliance
 slug: chemical-research
 source_filename: chemical-research.yaml

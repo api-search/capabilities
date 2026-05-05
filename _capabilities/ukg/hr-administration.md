@@ -21,52 +21,52 @@ personas: []
 provider_name: UKG
 provider_slug: ukg
 search_terms:
-- creates and manages workforce schedules and shift assignments
-- get pay statement history
-- get pay rates for an employee
-- views own records, timecards, benefits, and pay statements
-- hr
-- hcm
-- list locations
-- list all employees
-- manages employee records, org structure, and hr transactions
-- list all employee records with demographics and job data
-- processes payroll, manages pay rates, and reviews pay statements
-- workforce management
-- get a specific employee record by id
 - list all work locations
-- employee records
-- manages benefits enrollment, plan administration, and compliance
-- get pay rates
-- pay processing, compensation management, and pay statement history
-- get benefits elections for an employee
-- workforce schedules, shift management, and coverage planning
-- vacation, sick, and pto accrual policy management
-- time and attendance
-- core hr functions including employee records, hiring, and organizational management
-- hr administration
-- list employees
-- timekeeping, scheduling, and accrual management for hourly and salaried employees
-- list all departments in the organization
-- get employee pay statement history
-- clock punches, timecards, and time approval workflows
-- list pay statements
-- get employee
-- scheduling
-- payroll
-- employee benefits elections
-- ukg
-- manages employee schedules, timecards, and attendance
-- get employee jobs
-- list departments
-- get job assignment information for an employee
-- employee pay statements
-- employees
-- benefits
 - get benefits elections
+- clock punches, timecards, and time approval workflows
+- vacation, sick, and pto accrual policy management
+- list employees
+- list all departments in the organization
+- hcm
+- get employee pay statement history
+- get employee
+- get pay rates for an employee
+- hr
+- get pay statement history
+- list pay statements
+- manages benefits enrollment, plan administration, and compliance
+- core hr functions including employee records, hiring, and organizational management
+- pay processing, compensation management, and pay statement history
+- ukg
+- scheduling
+- benefits
+- payroll
+- workforce schedules, shift management, and coverage planning
+- list all employees
+- hr administration
+- employee records
 - human capital management
-- benefits enrollment, elections, and plan administration
+- employee benefits elections
+- get employee jobs
+- manages employee schedules, timecards, and attendance
 - employee records, benefits, payroll, and organizational management
+- time and attendance
+- list locations
+- processes payroll, manages pay rates, and reviews pay statements
+- creates and manages workforce schedules and shift assignments
+- list all employee records with demographics and job data
+- workforce management
+- list departments
+- get a specific employee record by id
+- employees
+- get benefits elections for an employee
+- views own records, timecards, benefits, and pay statements
+- employee pay statements
+- benefits enrollment, elections, and plan administration
+- timekeeping, scheduling, and accrual management for hourly and salaried employees
+- get pay rates
+- manages employee records, org structure, and hr transactions
+- get job assignment information for an employee
 slug: hr-administration
 source_filename: hr-administration.yaml
 source_heading: Capability Spec

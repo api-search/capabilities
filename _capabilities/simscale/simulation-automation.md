@@ -93,83 +93,83 @@ personas: []
 provider_name: SimScale
 provider_slug: simscale
 search_terms:
-- engineering
-- get mesh operation
-- create mesh operation
-- create and start a new simulation computation run.
-- cfd
-- list mesh operations in a project.
-- list all simulations defined within a project.
-- list all mesh generation operations in a project.
-- create storage
-- create and start a new simulation run.
-- get geometry
-- list simulations
-- list simulation runs
-- simulation setup and management.
-- list mesh operations
-- get simulation results
-- single simulation operations.
-- mesh generation operations.
-- simulation project lifecycle management.
-- check the status of a mesh generation operation.
-- delete a simulation project and all associated data.
-- get project
-- simulation results retrieval.
-- list all simulations in a project.
-- start mesh operation
-- get simulation
-- create simulation run
-- retrieve results and download links for a completed simulation run.
-- create a new simulation specification.
-- list all simulation projects.
-- single geometry operations.
-- create a new engineering simulation project in simscale.
-- simulation
-- get project details.
-- update project metadata.
-- check the status and progress of a simulation run.
-- file storage for geometry uploads.
-- create a mesh generation operation.
-- single simulation run status.
-- get simulation run status and progress.
-- cad geometry management.
-- update project
-- cae
-- get completed simulation results and download links.
-- trigger the execution of a mesh generation operation.
-- delete project
-- create simulation
-- import geometry
-- trigger mesh generation execution.
-- import a cad geometry file (step, iges, stl, parasolid) into a project.
-- list all runs for a simulation.
-- get simulation run
-- list all cae simulation projects in the simscale account.
-- delete a project.
-- cloud simulation
-- check the import status of a cad geometry file.
-- list all cad geometries imported into a project.
-- list projects
-- import a cad geometry file.
-- start mesh generation.
-- create project
-- single project operations.
-- get simulation specification and status.
-- list all execution runs for a simulation.
-- simulation automation
-- create a new simulation project.
 - create a new cfd, fea, or thermal simulation for a geometry.
-- create upload storage and get presigned url.
-- create a file storage location for uploading a cad geometry file.
-- fea
+- list all simulations defined within a project.
+- delete a project.
 - list geometries in a project.
-- get the full specification and validation status of a simulation.
-- get details of a specific simulation project.
-- create a mesh generation operation for a cad geometry.
+- retrieve results and download links for a completed simulation run.
+- single simulation run status.
+- list projects
+- list all runs for a simulation.
+- import a cad geometry file.
+- delete a simulation project and all associated data.
 - list geometries
-- get geometry import status and details.
+- check the status and progress of a simulation run.
+- list all mesh generation operations in a project.
+- list simulation runs
+- create project
+- update project metadata.
+- import geometry
+- get simulation results
+- single geometry operations.
+- list mesh operations
+- trigger mesh generation execution.
+- create a mesh generation operation for a cad geometry.
+- cad geometry management.
+- create a file storage location for uploading a cad geometry file.
+- simulation
+- get mesh operation
+- update project
+- engineering
+- create and start a new simulation run.
+- start mesh operation
+- delete project
 - simulation execution runs.
+- create a new engineering simulation project in simscale.
+- cae
+- get simulation run status and progress.
+- list all simulation projects.
+- create storage
+- get details of a specific simulation project.
+- get the full specification and validation status of a simulation.
+- list all cae simulation projects in the simscale account.
+- get completed simulation results and download links.
+- list all execution runs for a simulation.
+- import a cad geometry file (step, iges, stl, parasolid) into a project.
+- check the status of a mesh generation operation.
+- get geometry
+- list all cad geometries imported into a project.
+- simulation results retrieval.
+- create a new simulation project.
+- file storage for geometry uploads.
+- single project operations.
+- get simulation run
+- create and start a new simulation computation run.
+- create upload storage and get presigned url.
+- create simulation
+- check the import status of a cad geometry file.
+- get project
+- list mesh operations in a project.
+- list all simulations in a project.
+- start mesh generation.
+- cfd
+- get geometry import status and details.
+- list simulations
+- get simulation specification and status.
+- get simulation
+- fea
+- create a new simulation specification.
+- single simulation operations.
+- simulation project lifecycle management.
+- cloud simulation
+- create a mesh generation operation.
+- simulation setup and management.
+- create simulation run
+- mesh generation operations.
+- create mesh operation
+- get project details.
+- trigger the execution of a mesh generation operation.
+- simulation automation
 slug: simulation-automation
 source_filename: simulation-automation.yaml
 source_heading: Capability Spec

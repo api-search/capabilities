@@ -37,35 +37,35 @@ personas: []
 provider_name: US Bureau of Labor Statistics
 provider_slug: us-bureau-of-labor-statistics
 search_terms:
-- retrieve time series data for one or more bls series ids
 - open data
-- consumer price index
-- wages
-- query time series
-- get series data
-- list all bls survey programs and abbreviations
-- get survey
-- get time series data for a specific series
-- survey metadata
-- federal government
 - retrieve historical data for a specific bls series
-- query bls statistical time series data
+- federal government
+- survey metadata
+- list all bls survey programs and abbreviations
 - get metadata for a specific bls survey
-- list all bls survey programs to discover available data types
-- economic data
-- most popular bls series
-- bls survey catalog
-- list surveys
+- get detailed metadata for a specific bls survey program
+- query bls statistical time series data
 - get the 25 most popular bls series identifiers
 - labor statistics
-- get popular series
-- retrieve historical data for a single bls series id (e.g., lns14000000 for unemployment rate, cuur0000sa0 for cpi)
-- employment
-- get the 25 most popular bls series ids, useful for discovering commonly referenced economic indicators like unemployment rate and cpi
+- economic data
+- list surveys
 - query bls time series data for employment, unemployment, cpi, wages, or any other bls statistical series by series id and date range
-- get survey details
-- get detailed metadata for a specific bls survey program
 - unemployment
+- wages
+- get popular series
+- employment
+- retrieve historical data for a single bls series id (e.g., lns14000000 for unemployment rate, cuur0000sa0 for cpi)
+- get time series data for a specific series
+- consumer price index
+- bls survey catalog
+- most popular bls series
+- retrieve time series data for one or more bls series ids
+- get survey details
+- get survey
+- get series data
+- query time series
+- get the 25 most popular bls series ids, useful for discovering commonly referenced economic indicators like unemployment rate and cpi
+- list all bls survey programs to discover available data types
 slug: labor-statistics-data
 source_filename: labor-statistics-data.yaml
 source_heading: Capability Spec

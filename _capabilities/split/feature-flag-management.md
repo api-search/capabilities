@@ -63,52 +63,52 @@ personas: []
 provider_name: Split
 provider_slug: split
 search_terms:
-- account users.
-- change request approval workflows.
-- feature flags within a workspace.
-- administration
-- list all feature flags in a split workspace, optionally filtered by tag.
-- kill feature flag
-- get treatments
-- list all feature flags in a workspace.
-- list segments
-- feature flag targeting definitions per environment.
-- evaluate a feature flag for a customer key and return the treatment value.
-- restore feature flag
-- targeting segments within a workspace.
-- list change requests for feature flag modifications.
+- evaluate a feature flag treatment for a customer key.
+- list pending change requests for feature flag modifications requiring approval.
 - rollouts
+- list users
+- restore feature flag
+- get treatments
+- list all segments in a workspace.
+- list all users in the account.
+- feature flags within a workspace.
+- list feature flags
 - split workspaces (projects).
-- list all targeting segments in a split workspace.
-- list all deployment environments within a split workspace.
+- account users.
+- feature management
+- get treatment
+- experimentation
+- evaluate multiple feature flags for a customer key in a single request.
 - list all split workspaces accessible to the admin api key.
 - list all accessible split workspaces.
-- feature flag treatment evaluations.
-- retrieve the full targeting definition of a feature flag in a specific environment, including treatments and rules.
-- list pending change requests for feature flag modifications requiring approval.
-- get feature flag definition
-- list feature flags
-- list users
-- record a custom event for experimentation and metrics measurement.
-- feature flags
-- environments within a split workspace.
-- list environments
-- list all environments in a workspace.
-- list workspaces
-- list all users in the account.
-- sdks
 - restore a previously killed feature flag to normal targeting rule evaluation.
-- evaluate a feature flag treatment for a customer key.
-- list all users in the split account.
-- experimentation
+- kill feature flag
+- feature flags
+- list segments
+- administration
 - get a feature flag's targeting definition in an environment.
-- list all segments in a workspace.
-- list change requests
+- change request approval workflows.
+- list all deployment environments within a split workspace.
+- get feature flag definition
+- list change requests for feature flag modifications.
+- targeting segments within a workspace.
+- list environments
 - track event
-- evaluate multiple feature flags for a customer key in a single request.
-- get treatment
-- feature management
+- list workspaces
+- list all feature flags in a workspace.
 - kill a feature flag in an environment, forcing all traffic to receive the default treatment. use as an emergency shut-off.
+- list all users in the split account.
+- list all environments in a workspace.
+- environments within a split workspace.
+- retrieve the full targeting definition of a feature flag in a specific environment, including treatments and rules.
+- list all targeting segments in a split workspace.
+- evaluate a feature flag for a customer key and return the treatment value.
+- feature flag treatment evaluations.
+- list change requests
+- feature flag targeting definitions per environment.
+- record a custom event for experimentation and metrics measurement.
+- sdks
+- list all feature flags in a split workspace, optionally filtered by tag.
 slug: feature-flag-management
 source_filename: feature-flag-management.yaml
 source_heading: Capability Spec

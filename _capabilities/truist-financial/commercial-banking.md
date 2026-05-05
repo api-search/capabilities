@@ -36,40 +36,40 @@ provider_name: Truist Financial
 provider_slug: truist-financial
 search_terms:
 - get details for a specific commercial transaction.
-- get details for a specific commercial account transaction including ach trace numbers, wire reference numbers, and check numbers.
 - individual commercial transaction
-- accounts
-- commercial banking
-- list commercial transactions
-- retrieve commercial account transactions with filtering by date range and payment type (ach, wire, check, book transfer).
-- get commercial account balances
-- individual commercial account
-- get consolidated balance summary across all commercial accounts.
-- consolidated commercial account balance summary
-- get commercial account
-- commercial deposit accounts
-- financial services
-- open banking
-- wire transfer
-- get a consolidated balance summary across all commercial accounts for the organization.
-- banking
-- list commercial accounts
-- payments
-- transactions
-- get ledger, available, collected, and float balances for a commercial account. used for daily balance reporting and intraday cash position monitoring.
-- commercial account transaction history
-- get details for a specific commercial deposit account.
-- list commercial transactions including ach, wires, and checks.
-- get details for a specific commercial account.
-- ach
-- treasury
-- get commercial transaction
-- commercial account balance data
-- get commercial account summary
-- fortune 500
 - personal banking
-- list all commercial deposit accounts for the organization.
+- get commercial account balances
+- consolidated commercial account balance summary
+- list commercial transactions
+- get a consolidated balance summary across all commercial accounts for the organization.
+- open banking
+- treasury
+- retrieve commercial account transactions with filtering by date range and payment type (ach, wire, check, book transfer).
+- get commercial transaction
+- accounts
+- get details for a specific commercial deposit account.
+- commercial deposit accounts
+- get commercial account
+- individual commercial account
+- get details for a specific commercial account transaction including ach trace numbers, wire reference numbers, and check numbers.
+- get ledger, available, collected, and float balances for a commercial account. used for daily balance reporting and intraday cash position monitoring.
+- fortune 500
+- payments
+- get consolidated balance summary across all commercial accounts.
+- commercial account balance data
 - get ledger, available, collected, and float balances for a commercial account.
+- banking
+- get details for a specific commercial account.
+- list commercial transactions including ach, wires, and checks.
+- commercial account transaction history
+- transactions
+- commercial banking
+- list all commercial deposit accounts for the organization.
+- financial services
+- ach
+- wire transfer
+- get commercial account summary
+- list commercial accounts
 slug: commercial-banking
 source_filename: commercial-banking.yaml
 source_heading: Capability Spec

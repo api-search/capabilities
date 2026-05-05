@@ -90,70 +90,70 @@ personas: []
 provider_name: Zapier
 provider_slug: zapier
 search_terms:
-- zapier get zap templates
-- v2 authorize list
-- partner api v1 zap templates list
-- zapier get apps [v2]
-- get authentications
-- zapier create an action run
-- create action run
+- create zap guess
+- partner api v1 profiles me list
+- zapier retrieve action run
 - v2 whitelabel apps list
-- v1 apps list
-- partner api v1 zaps list
+- partner api get fields outputs
+- test action
+- zapier get zap templates
+- get authentications
+- partner api get actions
+- ipaas
+- get choices
+- zapier get apps [v2]
+- partner api create zap guess
+- get v2 apps
+- get zap runs
+- create action run
+- zapier user profile
+- partner api create action run
 - v1 categories list
-- retrieve action run
-- partner api v2 authorize list
+- zapier get zaps [v1]
+- partner api v1 categories list
+- partner api get authentications
+- zapier create an action run
+- partner api v1 zaps list
+- create authentication
+- zapier guess a zap [beta]
 - zapier get input fields
+- partner api get v2 zaps
+- zapier step test
+- zapier get output fields
+- v1 zaps list
+- zapier create authentication
 - zapier get categories
+- v2 authorize list
+- zapier get actions
+- get fields inputs
+- get fields outputs
+- partner api v2 authorize list
+- partner api v2 whitelabel apps list
 - integrations
+- v1 zap templates list
+- partner api create authentication
+- partner api get choices
+- operations for partner-api
+- zapier create account
+- v1 apps list
+- partner api retrieve action run
+- partner api test action
+- v1 profiles me list
+- zapier get choices
+- zapier
+- partner api v1 zap templates list
+- retrieve action run
+- zapier get zap runs
+- partner api v1 apps list
+- zapier get apps [v1]
+- zapier get whitelabel apps [v2]
+- zapier get zaps [v2]
+- partner api get fields inputs
+- get v2 zaps
+- partner api get zap runs
+- partner api get v2 apps
 - get actions
 - zapier get authentications
-- partner api test action
-- zapier get whitelabel apps [v2]
-- zapier get choices
-- partner api create authentication
-- partner api create action run
-- partner api get choices
-- partner api get v2 apps
-- partner api v2 whitelabel apps list
-- v1 profiles me list
-- get fields outputs
-- partner api v1 profiles me list
-- partner api create zap guess
-- partner api v1 categories list
-- zapier user profile
-- test action
-- create zap guess
-- get zap runs
-- partner api retrieve action run
-- zapier get actions
-- zapier retrieve action run
-- partner api get fields inputs
-- zapier get apps [v1]
-- create authentication
-- zapier get zap runs
-- operations for partner-api
-- zapier create authentication
-- partner api get authentications
-- partner api get zap runs
-- partner api get v2 zaps
-- partner api get actions
-- partner api v1 apps list
-- zapier create account
-- get choices
-- zapier guess a zap [beta]
-- ipaas
-- zapier get zaps [v1]
-- get fields inputs
-- get v2 apps
-- partner api get fields outputs
-- zapier
-- zapier step test
-- v1 zap templates list
-- zapier get output fields
-- zapier get zaps [v2]
-- get v2 zaps
-- v1 zaps list
 slug: zapier-workflow
 source_filename: zapier-workflow.yaml
 source_heading: Capability Spec

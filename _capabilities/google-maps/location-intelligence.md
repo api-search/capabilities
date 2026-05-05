@@ -36,43 +36,43 @@ personas: []
 provider_name: Google Maps Platform
 provider_slug: google-maps
 search_terms:
-- get place predictions for input text
-- google maps
-- navigation
-- directions
-- address to coordinate conversion and reverse geocoding
-- geolocation
-- get a photo for a place by place id and photo reference
-- places
-- geocode an address to coordinates or reverse geocode coordinates to an address
-- geocode
 - text-based place search
 - search places nearby
-- get place details
-- get directions
+- search for places using a text query
+- environment
+- geocoding
+- search for places near a specific location with type filters
+- address to coordinate conversion and reverse geocoding
+- get place autocomplete predictions as the user types
 - get place photo
-- get detailed information about a place including address, rating, hours, and reviews
+- get detailed information about a place
+- places
+- location
+- get a photo for a place by place id and photo reference
+- maps
 - solar
 - routing
-- place details retrieval
-- place autocomplete predictions
+- google maps
+- get place details
 - get directions between two or more locations
-- location
+- place autocomplete predictions
 - geocode an address or reverse geocode coordinates
-- search places text
-- get place autocomplete predictions as the user types
-- environment
-- search for places near a specific location with type filters
-- search for places using a natural language text query like 'pizza in new york'
-- maps
-- geocoding
-- autocomplete places
-- search for places using a text query
-- get detailed information about a place
-- get directions between two or more locations with support for driving, walking, bicycling, and transit
 - route computation between locations
+- geocode an address to coordinates or reverse geocode coordinates to an address
+- geocode
+- search places text
+- search for places using a natural language text query like 'pizza in new york'
+- get directions
+- get place predictions for input text
+- directions
+- navigation
+- geolocation
 - search for places near a location
+- autocomplete places
+- get directions between two or more locations with support for driving, walking, bicycling, and transit
 - location-based place search
+- get detailed information about a place including address, rating, hours, and reviews
+- place details retrieval
 slug: location-intelligence
 source_filename: location-intelligence.yaml
 source_heading: Capability Spec

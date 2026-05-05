@@ -37,34 +37,34 @@ personas: []
 provider_name: Taddy API
 provider_slug: taddy-api
 search_terms:
-- retrieve episode metadata and full transcript
-- get top podcasts for a country
-- get episode details with transcript
+- search and discover podcast series
 - get api requests remaining
+- get podcast series
+- comics
+- content discovery
+- get episode details with transcript
+- webhooks
+- check how many api requests remain in the current billing period
+- get top podcasts for a country
+- podcasts
+- get full metadata for a podcast series including genre, language, host information, and episode count
+- retrieve episode metadata and full transcript
+- discover the most popular podcasts in a specific country
+- search for podcasts by keyword
 - check api quota
 - get top charts
-- get full metadata for a podcast series including genre, language, host information, and episode count
-- discover the most popular podcasts in a specific country
-- graphql
-- top charting podcasts by country
-- comics
-- webhooks
-- retrieve a podcast episode with full transcript, chapters, and contributor information
 - media
-- check how many api requests remain in the current billing period
-- podcasts
-- search for podcast series by topic, name, or keyword
-- check remaining api request quota for the month
-- content discovery
-- get podcast series
-- search and discover podcast series
 - transcripts
-- get detailed podcast series information
-- search for podcasts by keyword
-- api usage quota status
-- get full podcast series metadata
-- search podcasts
 - audio
+- get detailed podcast series information
+- check remaining api request quota for the month
+- retrieve a podcast episode with full transcript, chapters, and contributor information
+- graphql
+- search podcasts
+- get full podcast series metadata
+- top charting podcasts by country
+- search for podcast series by topic, name, or keyword
+- api usage quota status
 - get podcast episode
 slug: podcast-discovery
 source_filename: podcast-discovery.yaml

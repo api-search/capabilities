@@ -45,46 +45,46 @@ personas: []
 provider_name: SourceForge
 provider_slug: sourceforge
 search_terms:
-- wiki page access
+- list webhooks for a project tool
 - get details about a sourceforge project including its description, tools, and metadata. use to understand a project before performing operations.
-- search issues in a project tracker with text queries. use to find specific bugs, features, or tickets by keyword.
-- retrieve a specific wiki page from a project. use to read project documentation, installation guides, or release notes.
+- issue tracking
+- repository webhook management
+- search tickets with query filtering
+- wiki
+- list project issues
+- list all wiki pages for a project. use to discover available documentation and project resources.
 - open source
+- create a new bug report or feature request in a project tracker. use for automated issue filing from monitoring systems or ci/cd pipelines.
+- list wiki pages
+- retrieve a specific wiki page from a project. use to read project documentation, installation guides, or release notes.
+- get details for a sourceforge project
+- search issues in a project tracker with text queries. use to find specific bugs, features, or tickets by keyword.
+- create ticket
+- ticket search
+- get wiki page
+- developer tools
+- create a new issue or bug report
+- create project issue
+- get project info
+- sourceforge
+- list all wiki pages for a project
+- wiki page access
+- search tickets
+- get a specific wiki page by title
+- list all tickets in the project tracker
+- search project issues
+- project management
 - individual wiki page
 - list tickets
-- list project issues
-- issue tracking
-- search tickets
-- create a new bug report or feature request in a project tracker. use for automated issue filing from monitoring systems or ci/cd pipelines.
-- list webhooks for a project tool
-- list all wiki pages for a project. use to discover available documentation and project resources.
-- wiki
-- list all issues and bug reports in a project tracker. use for project health assessment and triage workflows.
-- get a specific wiki page by title
-- create ticket
-- project management
-- list wiki pages
-- search project issues
-- list all tickets in the project tracker
-- list project webhooks
-- get project info
-- collaboration
-- developer tools
-- list webhooks
-- repository webhook management
-- ticket search
-- create a new issue or bug report
-- get details for a sourceforge project
-- get wiki page
-- list webhooks configured for a project tool. use to audit repository integrations and ci/cd pipeline connections.
+- code hosting
 - issue and bug tracking
-- sourceforge
 - project information and management
 - get project
-- list all wiki pages for a project
-- search tickets with query filtering
-- code hosting
-- create project issue
+- list webhooks
+- list all issues and bug reports in a project tracker. use for project health assessment and triage workflows.
+- collaboration
+- list project webhooks
+- list webhooks configured for a project tool. use to audit repository integrations and ci/cd pipeline connections.
 slug: project-management
 source_filename: project-management.yaml
 source_heading: Capability Spec

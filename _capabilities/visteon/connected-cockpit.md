@@ -77,71 +77,71 @@ personas: []
 provider_name: Visteon
 provider_slug: visteon
 search_terms:
-- available audio sources
-- phone call management
-- list audio sources
-- infotainment
-- list displays
-- navigation
-- automotive
-- visteon
-- get real-time vehicle telemetry including speed, fuel level, odometer, and hvac settings
-- get current audio playback status
-- navigation route management
-- cockpit display management
-- vehicle telemetry and status
-- list all available audio input sources (fm, am, bluetooth, usb, aux)
-- get bluetooth phone connection status and active call information
-- start turn-by-turn navigation to a specified destination
-- list all cockpit display screens
-- cancel the active navigation route
-- volume control
-- set volume
-- set master volume level
-- get phone status
-- get currently playing media track
-- initiate an outgoing phone call
-- list all cockpit display screens and their configuration
-- hmi
-- start navigation to a destination
-- get now playing
-- get currently playing media track with artist, album, and duration
-- media content library
-- browse media library from connected devices
-- browse media library
-- initiate an outgoing phone call from the vehicle
-- search for points of interest near the vehicle location
-- get volume
-- audio system state
-- make call
-- browse music, video, and photo media from connected devices
-- list all available audio input sources
-- list active and on-hold phone calls
-- get bluetooth phone connection and call status
-- start navigation
-- cancel the currently active navigation route
-- get vehicle data
-- get audio status
 - vehicle data
-- get current vehicle speed, fuel, odometer, and hvac data
-- list active phone calls
-- get current audio system playback status and active source
-- currently playing media
-- get current volume level and mute state
-- get the active navigation route with eta and remaining distance
-- get current volume level
-- search poi
-- list calls
-- connected car
-- search points of interest near vehicle
-- get active navigation route with eta
-- phone connection status
-- points of interest search
-- iot
-- audio
-- get active route
-- cancel navigation
 - set the master audio volume level
+- get current vehicle speed, fuel, odometer, and hvac data
+- search points of interest near vehicle
+- get current audio playback status
+- media content library
+- set volume
+- get audio status
+- search for points of interest near the vehicle location
+- get now playing
+- connected car
+- get vehicle data
+- browse media library from connected devices
+- start navigation to a destination
+- start turn-by-turn navigation to a specified destination
+- get current volume level and mute state
+- volume control
+- phone connection status
+- hmi
+- vehicle telemetry and status
+- get volume
+- list calls
+- search poi
+- get real-time vehicle telemetry including speed, fuel level, odometer, and hvac settings
+- get bluetooth phone connection status and active call information
+- get active route
+- get currently playing media track with artist, album, and duration
+- list all cockpit display screens and their configuration
+- list active phone calls
+- cockpit display management
+- infotainment
+- visteon
+- start navigation
+- audio
+- phone call management
+- list active and on-hold phone calls
+- available audio sources
+- get current volume level
+- get bluetooth phone connection and call status
+- browse media library
+- cancel the active navigation route
+- list audio sources
+- get phone status
+- initiate an outgoing phone call
+- currently playing media
+- automotive
+- points of interest search
+- cancel navigation
+- browse music, video, and photo media from connected devices
+- navigation route management
+- get active navigation route with eta
+- cancel the currently active navigation route
+- make call
+- get current audio system playback status and active source
+- get the active navigation route with eta and remaining distance
+- audio system state
+- navigation
+- list all available audio input sources
+- get currently playing media track
+- set master volume level
+- list all cockpit display screens
+- initiate an outgoing phone call from the vehicle
+- iot
+- list displays
+- list all available audio input sources (fm, am, bluetooth, usb, aux)
 slug: connected-cockpit
 source_filename: connected-cockpit.yaml
 source_heading: Capability Spec

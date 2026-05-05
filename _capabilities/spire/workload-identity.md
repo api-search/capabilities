@@ -40,34 +40,34 @@ personas: []
 provider_name: SPIRE
 provider_slug: spire
 search_terms:
-- spire component liveness probe.
-- security
-- check if the spire component is ready to serve requests.
-- health
-- retrieve the oidc provider configuration document.
-- cloud native
-- get liveness
-- zero trust
-- check if the spire component is ready to serve identity requests.
 - retrieve the json web key set containing public keys for verifying jwt-svids issued by spire.
-- authentication
-- get oidc configuration
-- json web key set for jwt-svid verification.
-- check spire liveness
-- get openid configuration
-- check if the spire component process is alive and running.
+- security
+- get jwks
 - graduated
-- check if the spire component process is alive.
-- check spire readiness
-- identity
+- check if the spire component process is alive and running.
+- spire component liveness probe.
+- json web key set for jwt-svid verification.
 - get readiness
-- retrieve the oidc discovery document describing spire's identity provider configuration for jwt-svid validation.
+- get oidc configuration
+- get openid configuration
+- check spire readiness
 - openid connect discovery document from spire.
+- get jwt signing keys
+- check if the spire component is ready to serve identity requests.
+- retrieve the oidc discovery document describing spire's identity provider configuration for jwt-svid validation.
+- check if the spire component process is alive.
+- cloud native
 - oidc
 - retrieve public keys used to verify jwt-svids.
-- get jwks
-- get jwt signing keys
+- check spire liveness
+- get liveness
+- retrieve the oidc provider configuration document.
+- zero trust
+- authentication
+- health
+- check if the spire component is ready to serve requests.
 - spire component readiness probe.
+- identity
 slug: workload-identity
 source_filename: workload-identity.yaml
 source_heading: Capability Spec

@@ -10,10 +10,10 @@ provider_name: Baker Hughes
 provider_slug: baker-hughes
 search_terms:
 - industrial iot
-- digital energy
 - oil and gas
-- asset performance management
 - energy technology
+- asset performance management
+- digital energy
 slug: baker-hughes-industrial-platform
 source_filename: baker-hughes-industrial-platform.yaml
 source_heading: Capability Spec

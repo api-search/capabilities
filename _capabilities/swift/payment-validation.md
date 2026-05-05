@@ -34,46 +34,46 @@ personas: []
 provider_name: SWIFT
 provider_slug: swift
 search_terms:
-- get national id
-- get bic for iban
-- gpi
-- iso 20022
-- get bic
-- validate bic
-- look up lei details
-- validate lei
+- get iban details
 - get lei
 - look up national clearing code or routing number details and associated bics
-- validate and look up bic details
+- validate a bic
+- get bic details
+- get national id
+- validate iban format, check digits, country code, and bban structure
+- validate an iban
+- validate a bic is registered and active in the swift network
+- swift
+- look up national clearing codes
 - iban validation
-- get iban details
+- check whether a bic is reachable via sepa ct, dd, or instant schemes
+- validate a legal entity identifier is active in gleif
+- look up iban details including associated bic, bank code, and account structure
+- payments
+- validate lei
+- financial messaging
+- banking
+- validate iban
+- validation
+- get lei details
+- validate bic
+- look up bic details including institution name, country, and swift connectivity
 - cross-border payments
-- look up iban details and bic
+- validate and look up bic details
+- get bic sepa reachability
+- gpi
+- get iban
+- get bic
+- get bic for iban
+- reference data
+- iso 20022
 - financial services
 - look up legal entity identifier details and gleif registration status
-- check whether a bic is reachable via sepa ct, dd, or instant schemes
-- get bic details
-- banking
-- resolve the bic routing code for a given iban
-- payments
 - bic validation
-- get iban
-- validate a bic
-- get bic sepa reachability
-- financial messaging
-- get lei details
-- look up national clearing codes
-- validation
-- validate an iban
+- look up iban details and bic
+- look up lei details
+- resolve the bic routing code for a given iban
 - get national id details
-- validate a legal entity identifier is active in gleif
-- swift
-- validate iban
-- look up bic details including institution name, country, and swift connectivity
-- validate iban format, check digits, country code, and bban structure
-- reference data
-- validate a bic is registered and active in the swift network
-- look up iban details including associated bic, bank code, and account structure
 slug: payment-validation
 source_filename: payment-validation.yaml
 source_heading: Capability Spec

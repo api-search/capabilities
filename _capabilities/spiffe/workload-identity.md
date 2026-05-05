@@ -14,20 +14,20 @@ personas: []
 provider_name: SPIFFE
 provider_slug: spiffe
 search_terms:
+- retrieve the spiffe trust bundle for a trust domain
+- spiffe
 - federation
+- mtls
+- authentication
+- cloud native
+- security
+- graduated
 - workload identity
 - spiffe trust bundle management
-- retrieve the spiffe trust bundle for a trust domain
-- cloud native
-- zero trust
-- security
-- mtls
-- graduated
 - identity
-- spiffe
-- authentication
-- get trust bundle
 - retrieve the spiffe trust bundle (jwks) for a given trust domain. used to validate x.509-svids and jwt-svids issued by that trust domain.
+- get trust bundle
+- zero trust
 slug: workload-identity
 source_filename: workload-identity.yaml
 source_heading: Capability Spec

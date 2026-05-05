@@ -32,29 +32,29 @@ personas: []
 provider_name: Springer Nature
 provider_slug: springer-nature
 search_terms:
+- search open access springer nature content
 - search springer nature open access articles and chapters that are freely available. returns metadata with links to full-text html and pdf content.
-- open access
-- academic publishing
 - research
-- search open access
-- search springer nature publication metadata
-- find all springer nature publications by a specific author name
-- scientific publishing
 - search all springer nature publications by keyword, author, doi, issn, or subject
 - find articles published in a specific springer nature journal by issn
-- find publications by author
-- search open access articles
-- search open access springer nature content
-- find publications by doi
-- scholarly content
-- look up a specific springer nature publication by its doi
+- literature discovery
+- search publications
 - bibliometrics
 - 'search springer nature''s 14m+ scholarly publications. use field qualifiers: doi:10.1007/..., title:machine learning, author:smith, issn:0028-4793, subject:computer science, onlinedatefrom:2024-01-01'
-- search publications
 - search freely available open access articles and chapters
+- scholarly content
+- academic publishing
 - full text
+- find publications by author
+- search open access articles
+- find publications by doi
+- search open access
+- scientific publishing
+- open access
+- find all springer nature publications by a specific author name
+- search springer nature publication metadata
+- look up a specific springer nature publication by its doi
 - find journal articles
-- literature discovery
 slug: scholarly-research
 source_filename: scholarly-research.yaml
 source_heading: Capability Spec

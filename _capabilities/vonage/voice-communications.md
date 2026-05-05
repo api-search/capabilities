@@ -35,38 +35,38 @@ provider_name: Vonage
 provider_slug: vonage
 search_terms:
 - vonage
+- sms
+- list voice calls, optionally filtered by status.
+- ivr
+- stop tts
 - update call
-- get status and details of a specific call by uuid.
+- video conferencing
 - verification
+- list voice calls with optional status filter.
+- create call
+- create an outbound voice call to a phone number.
+- list calls
+- play a text-to-speech message into an active call.
+- mute an active call.
 - play tts
+- text-to-speech in active calls.
+- stop text-to-speech in a call.
+- telecommunications
+- modify an in-progress call.
+- hangup call
+- play text-to-speech audio in a call.
+- voip
+- get status and details of a specific call by uuid.
+- communication
 - mute call
+- hang up an active voice call.
+- create an outbound voice call.
 - get call
 - voice
-- create an outbound voice call.
-- mute an active call.
-- hangup call
-- list and create voice calls.
-- list voice calls, optionally filtered by status.
-- communication
-- sms
-- play text-to-speech audio in a call.
-- text-to-speech in active calls.
-- play a text-to-speech message into an active call.
-- video conferencing
-- messaging
-- stop tts
-- ivr
-- modify an in-progress call.
 - manage a specific call.
-- voip
-- create an outbound voice call to a phone number.
 - get details of a specific call.
-- stop text-to-speech in a call.
-- hang up an active voice call.
-- create call
-- list calls
-- telecommunications
-- list voice calls with optional status filter.
+- list and create voice calls.
+- messaging
 slug: voice-communications
 source_filename: voice-communications.yaml
 source_heading: Capability Spec

@@ -41,37 +41,37 @@ personas: []
 provider_name: Tivo
 provider_slug: tivo
 search_terms:
-- music
-- get content episodes
-- entertainment
-- metadata
-- get complete metadata for a content item by id
-- get posters, backdrops, and stills for a content item
-- person profiles and filmography
-- list all seasons of a tv series with episode counts and season metadata
-- search entertainment content by flexible metadata fields
-- search tivo's entertainment catalog for movies, tv series, or episodes by title, genre, year, or type
-- list tv series episodes with air dates, titles, and descriptions, optionally filtered by season
-- get all seasons for a tv series
-- retrieve full tivo metadata for a content item using its rovi, tmdb, or eidr identifier
 - lookup content by id
-- full metadata for a specific content item
-- get episodes for a tv series with optional season filter
-- content discovery
-- get posters, backdrops, stills, and promotional images for a tivo content item
-- movies
-- season listing for a tv series
-- get content seasons
-- television
-- entertainment imagery for a content item
-- get biography, birth information, filmography credits, and images for an actor, director, or writer
-- get content images
-- search for movies, tv shows, and other entertainment content
-- streaming
-- search content
+- get complete metadata for a content item by id
 - lookup person
+- content discovery
+- movies
+- get content episodes
+- get content seasons
+- search tivo's entertainment catalog for movies, tv series, or episodes by title, genre, year, or type
+- metadata
+- list all seasons of a tv series with episode counts and season metadata
+- streaming
 - episode listing for a tv series
+- search content
+- entertainment
+- entertainment imagery for a content item
+- television
+- list tv series episodes with air dates, titles, and descriptions, optionally filtered by season
+- search for movies, tv shows, and other entertainment content
 - get biography and credits for a cast or crew member
+- retrieve full tivo metadata for a content item using its rovi, tmdb, or eidr identifier
+- get episodes for a tv series with optional season filter
+- get biography, birth information, filmography credits, and images for an actor, director, or writer
+- season listing for a tv series
+- music
+- search entertainment content by flexible metadata fields
+- person profiles and filmography
+- get content images
+- get posters, backdrops, stills, and promotional images for a tivo content item
+- get posters, backdrops, and stills for a content item
+- full metadata for a specific content item
+- get all seasons for a tv series
 slug: entertainment-metadata
 source_filename: entertainment-metadata.yaml
 source_heading: Capability Spec

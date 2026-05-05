@@ -50,56 +50,56 @@ personas: []
 provider_name: Trefle
 provider_slug: trefle
 search_terms:
-- search species by name
-- list species
 - open data
-- browse geographic distribution zones
-- list plant species with pagination
-- search the trefle database for plant species by common or scientific name
-- list plant genera
-- browse and discover plant species
-- plants
-- list all plant genera in the trefle botanical taxonomy
-- search plants
-- browse plant genus taxonomy
-- list geographic distribution zones used in trefle plant range data
-- science
-- browse plant family taxonomy
-- get plants in region
-- get basic information about a plant by trefle id or slug
+- list all distribution zones
+- get species
 - get species detail
-- get full species data including morphology and distribution
-- agriculture
-- list plants
-- list families
-- list all plant families
-- list plant families
-- list all plant families in the trefle botanical taxonomy
+- search plants by common or scientific name
+- list distributions
 - get plant details
 - get comprehensive species data
-- get plant
-- get plants by distribution
-- data api
-- browse species with detailed botanical data
-- get comprehensive species data including morphology, growth requirements, and distribution
-- list all distribution zones
-- ecology
-- search trefle plant species by name for detailed botanical data
-- botany
-- list all plant genera
-- list species with taxonomy and growth data
-- get plants native or established in a geographic zone
-- search plants by common or scientific name
-- get species
 - get plants in a specific region
-- get a specific plant by id or slug
-- get plant species native or established in a specific geographic region
-- list distributions
-- list genus
-- search for plants by name
-- search species
+- get basic information about a plant by trefle id or slug
+- science
+- list species with taxonomy and growth data
+- data api
 - list distribution zones
+- list genus
+- list plant families
+- search the trefle database for plant species by common or scientific name
+- ecology
+- list all plant genera
 - list plant species from trefle with optional pagination
+- get plants in region
+- get plants native or established in a geographic zone
+- list plants
+- search for plants by name
+- list geographic distribution zones used in trefle plant range data
+- plants
+- search species
+- list families
+- list all plant families
+- agriculture
+- get plant species native or established in a specific geographic region
+- get plants by distribution
+- list plant genera
+- get full species data including morphology and distribution
+- search plants
+- list plant species with pagination
+- list all plant genera in the trefle botanical taxonomy
+- get a specific plant by id or slug
+- browse species with detailed botanical data
+- list species
+- get plant
+- list all plant families in the trefle botanical taxonomy
+- botany
+- browse geographic distribution zones
+- search trefle plant species by name for detailed botanical data
+- browse plant family taxonomy
+- browse and discover plant species
+- search species by name
+- browse plant genus taxonomy
+- get comprehensive species data including morphology, growth requirements, and distribution
 slug: botanical-data
 source_filename: botanical-data.yaml
 source_heading: Capability Spec

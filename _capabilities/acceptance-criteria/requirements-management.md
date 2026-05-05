@@ -9,13 +9,13 @@ personas: []
 provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
-- agile
 - gherkin
-- requirements
-- behavior driven development
-- quality assurance
 - testing
+- agile
+- quality assurance
 - user stories
+- behavior driven development
+- requirements
 slug: requirements-management
 source_filename: requirements-management.yaml
 source_heading: Capability Spec

@@ -92,79 +92,79 @@ personas: []
 provider_name: Windstream Holdings
 provider_slug: windstream-holdings
 search_terms:
-- terminate call
-- broadband
-- list acds/queues for a tenant
-- search contact center calls
-- list windstream system users
-- create user
-- terminate an active voice call
-- create a new auto-attendant with menu options
-- initiate an outbound voice call from an extension
-- update extension configuration
-- active call management across voice and contact center
-- agents
-- contact center call management
-- list active voice calls in windstream
-- list auto-attendant (ivr) configurations
-- list acd queues for a contact center tenant
-- get current presence state of a contact center agent
-- list cc calls
-- unified communications
-- list tenants
-- get voice call details
-- get voice call
-- update extension configuration (forwarding, dnd, etc.)
-- update contact center agent presence state
-- sd-wan
-- managed services
-- voice
-- list active voice calls
-- make an outbound voice call
-- get agent state
-- contact center
-- get extension details
-- create an auto-attendant
-- search contact center calls by criteria
-- get extension
 - windstream
-- telecom
-- search cc calls
+- list acd queues for a contact center tenant
 - auto-attendant management
-- list contact center tenants
-- terminate voice call
-- make outbound call
 - execute a control action (transfer, hold, terminate) on a voice call
 - ucaas
-- update agent presence state
-- make call
-- list extensions
-- list users
-- list contact center calls
-- create a new user
 - call management
-- extension management
+- list users
 - tenant management
-- acd queue management
-- agent state management
-- user management
-- get details of a specific windstream extension
+- update contact center agent presence state
+- get current presence state of a contact center agent
+- terminate call
+- update extension configuration (forwarding, dnd, etc.)
 - search contact center calls by number or date range
-- control voice call
-- get current agent state
-- list queues
-- update extension
-- individual call operations
-- list auto attendants
-- create auto attendant
-- list all extensions configured in windstream
-- list voice calls
+- create user
+- get extension details
 - individual extension operations
-- list all extensions
-- update agent state
-- terminate an active call
+- terminate voice call
+- terminate an active voice call
+- broadband
+- search cc calls
 - list all auto-attendants
+- list cc calls
+- managed services
+- get agent state
+- list active voice calls
+- list extensions
+- create a new auto-attendant with menu options
+- update extension
+- agent state management
+- list windstream system users
+- get current agent state
+- list all extensions configured in windstream
+- list active voice calls in windstream
+- individual call operations
+- active call management across voice and contact center
+- get voice call
+- list all extensions
+- update agent presence state
+- update agent state
+- extension management
+- list tenants
+- list auto attendants
+- create a new user
+- initiate an outbound voice call from an extension
+- make outbound call
+- list contact center tenants
+- search contact center calls
+- contact center
+- create an auto-attendant
+- unified communications
+- create auto attendant
+- list queues
+- terminate an active call
+- get voice call details
+- search contact center calls by criteria
+- voice
+- make call
+- acd queue management
+- get details of a specific windstream extension
+- list auto-attendant (ivr) configurations
+- agents
+- list voice calls
+- user management
+- list acds/queues for a tenant
+- list contact center calls
+- control voice call
 - network communications
+- contact center call management
+- sd-wan
+- telecom
+- get extension
+- update extension configuration
+- make an outbound voice call
 slug: unified-communications
 source_filename: unified-communications.yaml
 source_heading: Capability Spec

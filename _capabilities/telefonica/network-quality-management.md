@@ -26,32 +26,32 @@ personas: []
 provider_name: Telefónica
 provider_slug: telefonica
 search_terms:
+- terminate a qod session.
+- list all active quality on demand sessions.
+- roaming
+- quality on demand sessions.
+- location services
+- telecommunications
+- fraud prevention
+- network management
 - telefónica
 - get qod session details.
-- terminate a qod session.
-- location services
-- mobile network
-- terminate an active quality on demand session.
-- quality on demand sessions.
-- roaming
-- camara
-- get status and details for a specific quality on demand session.
-- authentication
-- list qod sessions
-- list all active quality on demand sessions.
-- open gateway
-- a specific qod session.
-- quality of service
-- delete qod session
-- network management
-- get qod session
-- create a quality on demand session to guarantee network bandwidth and latency for a device.
-- telecommunications
 - list active qod sessions.
-- create qod session
-- fraud prevention
+- list qod sessions
 - create a qod session for guaranteed network quality.
+- quality of service
+- get status and details for a specific quality on demand session.
+- camara
+- terminate an active quality on demand session.
+- authentication
+- get qod session
+- a specific qod session.
 - iot
+- delete qod session
+- open gateway
+- mobile network
+- create qod session
+- create a quality on demand session to guarantee network bandwidth and latency for a device.
 slug: network-quality-management
 source_filename: network-quality-management.yaml
 source_heading: Capability Spec

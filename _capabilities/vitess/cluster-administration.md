@@ -61,60 +61,60 @@ personas: []
 provider_name: Vitess
 provider_slug: vitess
 search_terms:
-- list all keyspaces across clusters
-- list all vtgate proxy instances and their configured keyspaces
-- cluster management
-- vitess keyspaces (logical databases)
-- list all vttablet instances with type (primary/replica), shard, keyspace, and state
-- list all registered vitess clusters and their identifiers
-- get cluster topology
-- get schemas
 - get schema
-- registered vitess clusters
-- vitess
-- cloud native
-- vreplication workflows
-- list all tablet backups to audit backup coverage and find latest backup per shard
-- schema for a specific keyspace
-- get table definitions and index information for a specific keyspace
-- get keyspaces
-- get cells
-- get detailed information about a specific tablet including health and replication status
-- list all tablet backups
-- list all vitess keyspaces (logical databases) and their sharding configuration
-- list database schemas for all keyspaces across clusters
-- cncf
-- get complete topology for a cluster
-- individual tablet details
-- vttablet instances
-- full cluster topology
-- get tablet
-- get backups
-- mysql
-- get gates
-- get workflows
-- sharding
-- get the complete topology of a vitess cluster including all keyspaces, shards, and tablets
-- graduated
-- backups
-- get tablets
-- database
-- distributed systems
-- tablet backup inventory
-- list vreplication workflows including movetables, reshard, and materialize operations
-- list all keyspace schemas
-- vtgate proxy instances
-- list all vreplication workflows
-- get details of a specific tablet by alias
-- list all registered vitess clusters
-- database schemas for all keyspaces
-- get clusters
-- availability zones and data centers
-- list all vttablet instances with cluster and shard info
-- get table definitions for a keyspace
-- list all cells (availability zones and data center locations) across clusters
-- list all vtgate instances
 - list all cells across clusters
+- get the complete topology of a vitess cluster including all keyspaces, shards, and tablets
+- get backups
+- list all vttablet instances with type (primary/replica), shard, keyspace, and state
+- vtgate proxy instances
+- list all vitess keyspaces (logical databases) and their sharding configuration
+- list all vreplication workflows
+- schema for a specific keyspace
+- graduated
+- list all vtgate instances
+- list all vttablet instances with cluster and shard info
+- availability zones and data centers
+- get clusters
+- get schemas
+- backups
+- get detailed information about a specific tablet including health and replication status
+- get tablets
+- list all keyspaces across clusters
+- cluster management
+- get keyspaces
+- get cluster topology
+- full cluster topology
+- mysql
+- list all cells (availability zones and data center locations) across clusters
+- vitess
+- list all vtgate proxy instances and their configured keyspaces
+- database
+- individual tablet details
+- vreplication workflows
+- cloud native
+- distributed systems
+- list all registered vitess clusters
+- vttablet instances
+- tablet backup inventory
+- get complete topology for a cluster
+- get gates
+- list all tablet backups to audit backup coverage and find latest backup per shard
+- get cells
+- list all keyspace schemas
+- list all registered vitess clusters and their identifiers
+- cncf
+- database schemas for all keyspaces
+- registered vitess clusters
+- sharding
+- get table definitions for a keyspace
+- get table definitions and index information for a specific keyspace
+- get tablet
+- vitess keyspaces (logical databases)
+- get details of a specific tablet by alias
+- list all tablet backups
+- get workflows
+- list vreplication workflows including movetables, reshard, and materialize operations
+- list database schemas for all keyspaces across clusters
 slug: cluster-administration
 source_filename: cluster-administration.yaml
 source_heading: Capability Spec

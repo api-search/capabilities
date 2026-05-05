@@ -46,51 +46,51 @@ personas: []
 provider_name: Webflow
 provider_slug: webflow
 search_terms:
-- sites
+- cms
+- list sites
+- ecommerce
+- create a cms item
+- list all items in a webflow cms collection
+- delete cms item
+- create a webhook
+- list all webflow sites
+- create item
 - create cms item
 - list cms collections in a webflow site
+- create a new content item in a webflow cms collection
+- update item
+- create a webhook to receive webflow site events
 - webflow site management
-- list sites
-- delete item
-- content management
-- update cms item
-- publish a webflow site to make changes live
+- publish site
+- webhook event subscriptions
 - publishing
+- web development
+- create webhook
+- delete a cms item
+- list registered webhooks for a webflow site
+- update a cms item
+- list items
+- list cms items
+- update an existing webflow cms item
+- webflow
+- single cms item operations
+- no-code
+- publish a webflow site
+- publish site to all domains
+- update cms item
+- delete item
+- publish a webflow site to make changes live
+- cms collection management
+- sites
 - publish cms items to make them live on the webflow site
 - delete a cms item permanently
-- publish site to all domains
-- cms collection management
-- create a cms item
-- create webhook
-- cms
-- publish site
-- update a cms item
-- list all webflow sites
 - cms item management
-- create item
-- update item
-- list cms collections
-- list webhooks
-- webflow
-- create a new content item in a webflow cms collection
-- delete cms item
-- list items
-- webhook event subscriptions
-- create a webhook
-- list all webflow sites accessible with the api key
-- list registered webhooks for a webflow site
-- update an existing webflow cms item
-- ecommerce
-- single cms item operations
-- delete a cms item
-- create a webhook to receive webflow site events
-- web development
-- publish a webflow site
-- no-code
-- list all items in a webflow cms collection
-- list cms items
-- list collections
+- content management
 - publish cms items
+- list cms collections
+- list collections
+- list webhooks
+- list all webflow sites accessible with the api key
 slug: cms-and-ecommerce
 source_filename: cms-and-ecommerce.yaml
 source_heading: Capability Spec

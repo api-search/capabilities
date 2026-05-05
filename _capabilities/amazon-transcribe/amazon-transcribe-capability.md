@@ -10,8 +10,8 @@ provider_name: Amazon Transcribe
 provider_slug: amazon-transcribe
 search_terms:
 - speech recognition
-- transcription
 - audio processing
+- transcription
 - speech-to-text
 - machine learning
 slug: amazon-transcribe-capability

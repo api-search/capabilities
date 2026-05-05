@@ -54,64 +54,64 @@ personas: []
 provider_name: SAP Concur Expense
 provider_slug: sap-concur-expense
 search_terms:
-- create expense entry
-- reimbursement
-- single expense report operations
-- get expense entry
-- delete a draft expense report that has not been submitted.
-- list reports
 - delete report
-- receipts
-- list expense reports with optional filtering by approval status (a_pend, a_appr, a_file) or payment status (p_notp, p_proc, p_paid).
-- list entries
 - list configurations
-- expense group policy configuration
-- approval workflow
-- create a new expense report
-- update an expense report
-- list expense reports with status filtering
-- create entry
-- expense report management
-- list all expense line items within a specific expense report. requires the reportid parameter.
-- retrieve a specific expense entry with full details.
-- add a new expense line item to a draft expense report. requires report id, expense type code, transaction date, amount, and currency.
-- list expense group configurations
-- update an existing draft expense report's name or purpose.
-- delete expense report
-- list expense group policy configurations showing available expense types, payment types, and approval workflow settings.
-- delete expense entry
-- list expense entries for a report
-- get entry
-- sap concur
-- create report
-- get an expense report by id
-- delete entry
-- reimbursement payment batch tracking
-- list payment batches for reimbursement
-- list expense group configurations and policies
 - retrieve full details of a specific expense report including status, totals, and owner information.
-- update expense report
-- create a new expense report for an employee. requires a report name and optional business purpose and policy id.
-- remove an expense entry from a draft expense report.
-- reporting
-- get expense report
+- get an expense report by id
 - list expense reports
-- sap
-- create expense report
-- list payment batches containing approved expense reports ready for employee reimbursement. useful for erp payment reconciliation.
-- delete an expense entry
-- get report
-- add an expense entry to a report
-- financial management
-- expense management
-- get an expense entry by id
-- list expense entries
+- update an existing draft expense report's name or purpose.
+- list expense group policy configurations showing available expense types, payment types, and approval workflow settings.
+- create a new expense report for an employee. requires a report name and optional business purpose and policy id.
 - expense entry line items
-- travel
-- single expense entry
-- delete a draft expense report
+- update expense report
+- list payment batches for reimbursement
+- sap concur
+- receipts
 - update report
+- get an expense entry by id
+- list expense group configurations and policies
+- approval workflow
+- retrieve a specific expense entry with full details.
+- list expense entries for a report
+- reporting
+- expense report management
+- list payment batches containing approved expense reports ready for employee reimbursement. useful for erp payment reconciliation.
+- add a new expense line item to a draft expense report. requires report id, expense type code, transaction date, amount, and currency.
+- expense management
+- list entries
+- add an expense entry to a report
+- delete an expense entry
+- reimbursement
+- single expense entry
 - list payment batches
+- expense group policy configuration
+- create entry
+- create expense report
+- reimbursement payment batch tracking
+- delete entry
+- delete a draft expense report that has not been submitted.
+- create expense entry
+- update an expense report
+- get report
+- get entry
+- remove an expense entry from a draft expense report.
+- delete expense entry
+- list expense reports with status filtering
+- list expense reports with optional filtering by approval status (a_pend, a_appr, a_file) or payment status (p_notp, p_proc, p_paid).
+- create a new expense report
+- single expense report operations
+- delete a draft expense report
+- sap
+- list reports
+- financial management
+- create report
+- get expense report
+- list all expense line items within a specific expense report. requires the reportid parameter.
+- list expense group configurations
+- delete expense report
+- list expense entries
+- get expense entry
+- travel
 slug: expense-reporting-and-approval
 source_filename: expense-reporting-and-approval.yaml
 source_heading: Capability Spec

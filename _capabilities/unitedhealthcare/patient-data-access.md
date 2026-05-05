@@ -26,54 +26,54 @@ personas: []
 provider_name: UnitedHealthcare
 provider_slug: unitedhealthcare
 search_terms:
-- care management professional accessing member health history for care coordination
-- fhir
-- prior authorization, provider directory, and point-of-care clinical support
-- provider directory
-- coverage details.
-- get insurance coverage
-- fhir-based patient data access workflow for claims history, coverage, and provider directory
-- patient access
-- member-facing health data access and patient portal integration
-- list coverage
-- billing specialist
-- health data exchange
-- health insurance
-- physician or clinical staff verifying eligibility and managing prior authorizations at point of care
-- get member demographics
-- claims
-- get claims history
-- get patient
-- get a member's unitedhealthcare insurance coverage details including plan name, effective dates, and benefit periods.
-- eligibility
-- find in network providers
-- fhir explanationofbenefit claims history.
-- list eobs
-- clinical staff coordinating prior authorization requests and tracking approval status
-- retrieve unitedhealthcare member demographics from the fhir patient resource.
-- patient demographics.
 - prior auth coordinator
-- list practitioners
-- retrieve a member's claims history as fhir explanationofbenefit resources including service dates, amounts billed, and payment status.
-- healthcare provider workflow for eligibility, claims, prior authorization, and provider directory
-- unitedhealthcare member accessing their health data through patient portals or apps
-- list coverage.
-- get fhir patient resource.
-- claims submission, eligibility verification, and payment management workflows
-- healthcare
+- get member demographics
 - care coordinator
-- provider directory search.
-- search unitedhealthcare's fhir provider directory for in-network physicians and organizations by name, specialty, or state.
-- fhir-based interoperability for health information exchange
-- search providers.
-- unitedhealthcare
-- healthcare provider
-- list eob claims history.
-- patient
-- cms interoperability
 - developer building patient-facing applications using fhir interoperability apis
+- search unitedhealthcare's fhir provider directory for in-network physicians and organizations by name, specialty, or state.
+- get insurance coverage
+- get patient
+- search providers.
 - medical billing staff managing claim submission, status inquiry, and revenue cycle workflows
+- get fhir patient resource.
+- get a member's unitedhealthcare insurance coverage details including plan name, effective dates, and benefit periods.
+- healthcare provider workflow for eligibility, claims, prior authorization, and provider directory
+- list eobs
+- unitedhealthcare
+- patient
+- member-facing health data access and patient portal integration
+- list practitioners
+- unitedhealthcare member accessing their health data through patient portals or apps
+- fhir
+- healthcare
+- claims submission, eligibility verification, and payment management workflows
+- physician or clinical staff verifying eligibility and managing prior authorizations at point of care
+- claims
+- list eob claims history.
 - health app developer
+- billing specialist
+- health insurance
+- find in network providers
+- coverage details.
+- fhir-based patient data access workflow for claims history, coverage, and provider directory
+- retrieve unitedhealthcare member demographics from the fhir patient resource.
+- get claims history
+- care management professional accessing member health history for care coordination
+- clinical staff coordinating prior authorization requests and tracking approval status
+- fhir-based interoperability for health information exchange
+- retrieve a member's claims history as fhir explanationofbenefit resources including service dates, amounts billed, and payment status.
+- list coverage
+- provider directory
+- health data exchange
+- eligibility
+- patient access
+- cms interoperability
+- prior authorization, provider directory, and point-of-care clinical support
+- patient demographics.
+- provider directory search.
+- healthcare provider
+- fhir explanationofbenefit claims history.
+- list coverage.
 slug: patient-data-access
 source_filename: patient-data-access.yaml
 source_heading: Capability Spec

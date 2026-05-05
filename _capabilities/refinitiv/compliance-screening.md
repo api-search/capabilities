@@ -35,41 +35,41 @@ personas: []
 provider_name: Refinitiv
 provider_slug: refinitiv
 search_terms:
-- get case
 - list available world-check screening groups and their configurations.
-- list available screening groups.
-- case details.
-- search for organizations and instruments using permid for pre-screening entity research.
-- entity screening cases.
-- tag document entities
 - search for organizations and instruments.
-- delete a screening case.
-- tag text with financial entities.
-- world-check
-- tag content
-- retrieve the current status and results of a world-check screening case.
-- refinitiv
-- due diligence
-- get screening case
-- kyc
-- list screening groups
-- extract and tag financial entities from document text using intelligent tagging.
-- screening
-- compliance
-- resolve and annotate a world-check screening match result with risk determination.
-- screening group configuration.
-- screen entity
-- create a case and screen against world-check.
-- intelligent entity tagging.
-- list groups
-- entity search via permid.
 - get screening case details.
-- delete case
-- resolve screening result
-- search entities
-- create and screen
+- case details.
+- screening group configuration.
+- intelligent entity tagging.
+- get screening case
+- list screening groups
 - screen a company or individual against the world-check risk intelligence database for kyc and aml compliance.
+- entity search via permid.
+- search for organizations and instruments using permid for pre-screening entity research.
+- retrieve the current status and results of a world-check screening case.
+- due diligence
+- refinitiv
+- get case
+- screen entity
+- search entities
+- kyc
 - aml
+- delete a screening case.
+- tag content
+- delete case
+- world-check
+- tag document entities
+- tag text with financial entities.
+- create and screen
+- screening
+- entity screening cases.
+- create a case and screen against world-check.
+- compliance
+- extract and tag financial entities from document text using intelligent tagging.
+- resolve screening result
+- resolve and annotate a world-check screening match result with risk determination.
+- list groups
+- list available screening groups.
 slug: compliance-screening
 source_filename: compliance-screening.yaml
 source_heading: Capability Spec

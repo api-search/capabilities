@@ -1,40 +1,46 @@
 ---
 categories: []
 consumed_apis: []
-description: A reference capability tied to a co-authored guide based on framework-wiki/Specification-Rules — the partnership format that fits her product-marketing role.
+description: A companion capability that runs Spectral rules co-developed with co-marketing partners against a target OpenAPI spec.
 layout: capability
 name: Co Marketing Spec Rules Companion
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: lint-spec
+  path: /lint
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- api integration
 - spec-driven integration
+- co-marketing
+- mcp
 - capabilities
-- example op
+- naftiko
+- spectral
+- api integration
+- lint spec
 - governance
-- a reference capability tied to a co-authored guide based on framework-wiki/specification-rules — the partnership format that fits her product-marketing role.
+- ai
+- get ruleset
 slug: co-marketing-spec-rules-companion
 source_filename: co-marketing-spec-rules-companion.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Co Marketing Spec Rules Companion\n  description: A reference capability tied to a co-authored guide based on framework-wiki/Specification-Rules — the partnership format that fits her product-marketing role.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: co-marketing-spec-rules-companion-rest\n    description: REST API for Co Marketing Spec Rules Companion.\n    resources:\n    - name: example\n      path: /example\n\
-  \      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: co-marketing-spec-rules-companion-mcp\n    description: MCP server exposing Co Marketing Spec Rules Companion for AI agents.\n    tools:\n    - name: example\n      description: A reference capability tied to a co-authored guide based on framework-wiki/Specification-Rules — the partnership format that fits her product-marketing role.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: co-marketing-spec-rules-companion-skills\n    description: Agent Skill bundle for Co Marketing Spec Rules Companion.\n    skills:\n    - name: co-marketing-spec-rules-companion\n      description: A reference capability tied to a co-authored guide based on framework-wiki/Specification-Rules — the partnership format that fits her product-marketing role.\n\
-  \      location: file:///opt/naftiko/skills/co-marketing-spec-rules-companion\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A reference capability tied to a co-authored guide based on framework-wiki/Specification-Rules — the partnership format that fits her product-marketing role.\n        from:\n          sourceNamespace: co-marketing-spec-rules-companion-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Co Marketing Spec Rules Companion\n  description: A companion capability that runs Spectral rules co-developed with co-marketing partners against a target OpenAPI spec.\n  tags: [Naftiko, Spectral, Co-Marketing]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: stoplight-env\n  keys: {STOPLIGHT_TOKEN: STOPLIGHT_TOKEN}\ncapability:\n  consumes:\n  - namespace: stoplight\n    type: http\n    baseUri: https://api.stoplight.io\n    authentication: {type: bearer, token: '{{STOPLIGHT_TOKEN}}'}\n    resources:\n    - {name: lint, path: '/v1/projects/{{project_id}}/lint', operations: [{name: lint-spec, method: POST, inputParameters: [{name: project_id, in: path}]}]}\n    - name: ruleset\n      path: '/v1/rulesets/{{ruleset_id}}'\n      operations:\n      - {name: get-ruleset, method: GET, inputParameters: [{name: ruleset_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: co-marketing-spec-rules-companion-rest\n\
+  \    description: REST surface for running co-marketing Spectral rules.\n    resources:\n    - {name: lint, path: /lint, operations: [{method: POST, name: lint-spec, call: stoplight.lint-spec}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: co-marketing-spec-rules-companion-mcp\n    description: MCP for running co-marketing rules.\n    tools:\n    - {name: lint-spec, call: stoplight.lint-spec}\n    - name: get-ruleset\n      hints: {readOnly: true}\n      inputParameters: [{name: ruleset_id, type: string, required: true}]\n      call: stoplight.get-ruleset\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: co-marketing-spec-rules-companion-skills\n    description: Skill for co-marketing rules.\n    skills:\n    - name: co-marketing-spec-rules-companion\n      description: Co-marketing Spectral rules companion.\n      location: file:///opt/naftiko/skills/co-marketing-spec-rules-companion\n      allowed-tools: lint-spec,get-ruleset\n      tools:\n\
+  \      - {name: lint-spec, from: {sourceNamespace: co-marketing-spec-rules-companion-mcp, action: lint-spec}}\n      - {name: get-ruleset, from: {sourceNamespace: co-marketing-spec-rules-companion-mcp, action: get-ruleset}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/co-marketing-spec-rules-companion.yaml
 tags:
 - Naftiko
+- Spectral
+- Co-Marketing
 tools:
-- description: A reference capability tied to a co-authored guide based on framework-wiki/Specification-Rules — the partnership format that fits her product-marketing role.
+- description: ''
+  hints: {}
+  name: lint-spec
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-ruleset
 ---

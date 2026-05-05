@@ -22,25 +22,25 @@ personas: []
 provider_name: Starwood Hotels and Resorts
 provider_slug: starwood-hotels-and-resorts
 search_terms:
-- check hotel availability
-- hotels
-- availability
-- get hotel
-- check hotel room availability and rates
-- hospitality
-- get complete hotel property details
-- check available room types and rates for a starwood hotel on specific travel dates. returns room categories, nightly rates, total stay price, and spg award night options.
-- get hotel details
-- search starwood hotel properties by destination location and travel dates. returns hotels with rates, spg category, amenities, and starpoints redemption options.
-- get hotel availability
-- search hotels
-- travel
-- booking
 - search and discover starwood hotel properties
-- get available rooms, rates, and spg point redemption options
-- get detailed information for a starwood hotel
+- search hotels
+- hotels
+- get hotel availability
 - get comprehensive information about a specific starwood hotel property including address, amenities, dining, and contact information.
+- get hotel details
 - search starwood hotels by location and travel dates
+- check available room types and rates for a starwood hotel on specific travel dates. returns room categories, nightly rates, total stay price, and spg award night options.
+- check hotel availability
+- availability
+- get detailed information for a starwood hotel
+- check hotel room availability and rates
+- get hotel
+- search starwood hotel properties by destination location and travel dates. returns hotels with rates, spg category, amenities, and starpoints redemption options.
+- get complete hotel property details
+- hospitality
+- get available rooms, rates, and spg point redemption options
+- booking
+- travel
 slug: hotel-booking
 source_filename: hotel-booking.yaml
 source_heading: Capability Spec

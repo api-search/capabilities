@@ -74,91 +74,91 @@ personas: []
 provider_name: RAWG
 provider_slug: rawg
 search_terms:
-- video games
-- list game stores
-- list digital and physical game storefronts (steam, gog, epic games store, etc.)
-- list game series
-- games in the same series
-- search games
-- where to buy the game
-- list all game tags
-- game discovery
-- find visually similar games for recommendation (enterprise tier)
-- list the individual creators and developers who built a game
-- get full game details
-- list all gaming platforms (pc, playstation, xbox, nintendo switch, etc.)
-- get similar games
-- game publishers
-- game tags
-- list game development studios
-- database
-- list games
-- list all game genres
-- find other games that are part of the same franchise or series
-- gaming
-- list all gaming platforms
-- game storefronts
-- list individual game creators, designers, and artists
-- list store purchase links
-- list tags
-- list stores
-- list all job roles and positions in game development
-- list game dlcs
-- list game development studios and companies
-- get comprehensive metadata for a specific game including ratings, platforms, genres, website, and community data
-- metadata
-- list game reddit posts
-- get creator details
-- list platforms
-- list game trailers
-- list game purchase links
-- games
-- list developers
-- game creators
-- list dlcs and game editions
-- dlcs and editions for a game
-- list genres
-- game trailers and videos
-- list game community posts
-- complete game metadata
-- find where to buy a game across digital storefronts (steam, epic, playstation store, etc.)
-- list parent platform families (playstation, xbox, nintendo, etc.)
-- list creator roles
-- rawg
-- list all community game tags (singleplayer, open-world, co-op, etc.)
-- list parent platforms
-- game subreddit posts
-- list game publishing companies
-- game developers
-- list game development team
-- gaming platforms
-- list game achievements
-- get the profile and credits of an individual game creator
-- video game genres
-- list storefronts
-- list game storefronts
 - list recent reddit posts for the game
-- list games in the series
-- game screenshots
-- get screenshot images for a game
-- get game details
-- video game search and filtering
-- list game additions
-- entertainment
+- list game development team
+- list all gaming platforms (pc, playstation, xbox, nintendo switch, etc.)
+- find where to buy a game across digital storefronts (steam, epic, playstation store, etc.)
 - list game publishers
-- list creators
-- get game
-- list individual game creators
-- list all achievements available in a game
-- search and filter the rawg game catalog by title, platform, genre, developer, publisher, tag, release date, or metacritic score
+- list game community posts
+- metadata
+- list all game genres
+- get screenshot images for a game
+- complete game metadata
+- game achievements
+- list digital and physical game storefronts (steam, gog, epic games store, etc.)
+- entertainment
+- game screenshots
+- game discovery
+- list game achievements
 - search and filter games across the rawg database
 - list all video game genres (action, rpg, strategy, etc.)
-- get recent reddit community posts and discussions about a game
-- game achievements
+- game trailers and videos
+- list genres
+- list creator roles
+- game developers
+- game publishers
+- list game dlcs
 - list dlcs, game editions, and companion apps for a game
-- list game screenshots
-- get official trailers and video content for a game
+- find other games that are part of the same franchise or series
+- list the individual creators and developers who built a game
+- get game
+- list all achievements available in a game
+- list game development studios and companies
+- game storefronts
+- dlcs and editions for a game
+- list all job roles and positions in game development
+- list creators
+- list parent platform families (playstation, xbox, nintendo, etc.)
+- list game publishing companies
+- get full game details
+- list store purchase links
+- list game reddit posts
+- video games
+- list stores
+- get similar games
+- list individual game creators
+- list all gaming platforms
+- list game purchase links
+- list parent platforms
+- list game trailers
+- search and filter the rawg game catalog by title, platform, genre, developer, publisher, tag, release date, or metacritic score
+- video game genres
 - list publishers
+- get recent reddit community posts and discussions about a game
+- get creator details
+- get official trailers and video content for a game
+- gaming platforms
+- list all game tags
+- list storefronts
+- get the profile and credits of an individual game creator
+- list developers
+- get comprehensive metadata for a specific game including ratings, platforms, genres, website, and community data
+- game subreddit posts
+- list games
+- get game details
+- list games in the series
+- find visually similar games for recommendation (enterprise tier)
+- list game additions
+- where to buy the game
+- game tags
+- list individual game creators, designers, and artists
+- games
+- database
+- list game series
+- list game screenshots
+- list game stores
+- list game development studios
+- list dlcs and game editions
+- list game storefronts
+- video game search and filtering
+- search games
+- gaming
+- game creators
+- list platforms
+- list all community game tags (singleplayer, open-world, co-op, etc.)
+- games in the same series
+- list tags
+- rawg
 slug: game-discovery
 source_filename: game-discovery.yaml
 source_heading: Capability Spec

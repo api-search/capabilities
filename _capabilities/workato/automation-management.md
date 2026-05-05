@@ -61,73 +61,73 @@ personas: []
 provider_name: Workato
 provider_slug: workato
 search_terms:
-- automation
-- start recipe
-- start a workato recipe to begin processing triggers
-- get a recipe
-- list recipes
-- ai agents
-- list skills
-- list ai skills
-- create recipe
-- get health status report for a workato recipe
-- list workato automation recipes with optional filtering
-- data tables
-- list tools configured on a workato mcp server
-- get recipe
-- api management
-- stop a recipe
-- list mcp servers
-- ai genies
-- mcp servers
-- create a new workato knowledge base
-- list knowledge bases
-- integration
-- automation recipes
-- list data tables
-- create a new workato ai genie
-- create genie
-- start a recipe
-- list server tools
-- create a new workato automation recipe
-- stop recipe
-- b2b
-- workato
-- list ai genies
-- consume messages from a workato event stream topic
-- embedded ipaas
-- list workato mcp servers exposing api tools for ai agents
-- consume events
 - get a specific workato ai genie by id
-- publish a message to a workato event stream topic
-- enterprise
-- publish events
-- delete a recipe
-- stop a running workato recipe
-- list ai skills available for workato genies
-- publish message to topic
-- delete recipe
-- publish event
-- list workato knowledge bases for ai-powered lookups
-- create a new recipe
-- list genies
-- ai skills
-- get genie
+- stop a recipe
 - ipaas
-- list workato data tables for structured data storage
-- agentic
+- start a workato recipe to begin processing triggers
+- list workato knowledge bases for ai-powered lookups
+- integration
+- mcp servers
+- list server tools
 - create mcp server
-- knowledge bases
-- orchestration
+- enterprise
+- list genies
+- create genie
+- delete a recipe
 - single recipe management
-- get recipe health
-- get a specific workato recipe by id
-- create a new workato mcp server for exposing api tools
+- list ai genies
+- list skills
+- list workato data tables for structured data storage
 - workflow
-- list workato ai genies for agentic automation
-- create knowledge base
-- list automation recipes
+- list workato mcp servers exposing api tools for ai agents
+- publish event
+- ai skills
+- start a recipe
+- agentic
+- start recipe
+- list recipes
+- knowledge bases
+- b2b
+- get genie
+- consume messages from a workato event stream topic
+- get recipe
+- create a new workato automation recipe
+- ai agents
+- orchestration
+- workato
 - publish message
+- list ai skills available for workato genies
+- create a new workato knowledge base
+- publish message to topic
+- create a new workato mcp server for exposing api tools
+- list knowledge bases
+- publish events
+- list data tables
+- list workato automation recipes with optional filtering
+- api management
+- list mcp servers
+- list automation recipes
+- create recipe
+- embedded ipaas
+- create a new recipe
+- create knowledge base
+- get recipe health
+- stop a running workato recipe
+- list tools configured on a workato mcp server
+- get a specific workato recipe by id
+- get a recipe
+- create a new workato ai genie
+- publish a message to a workato event stream topic
+- ai genies
+- consume events
+- stop recipe
+- list workato ai genies for agentic automation
+- list ai skills
+- delete recipe
+- automation
+- data tables
+- automation recipes
+- get health status report for a workato recipe
 slug: automation-management
 source_filename: automation-management.yaml
 source_heading: Capability Spec

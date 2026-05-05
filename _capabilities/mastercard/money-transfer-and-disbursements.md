@@ -38,45 +38,45 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- mastercard send
-- create disbursement
-- cross-border payment processing
-- disbursements
-- create a cross-border international payment
-- credit cards
-- verify send account
-- process a direct service transaction
-- digital identity
-- create p2p transfer
 - create a person-to-person money transfer
+- create a disbursement
+- disbursements
+- p2p transfers
 - validate account details before transfer
-- create a funding transaction via mastercard send
+- get conversion rate
+- verify account eligibility for mastercard send
+- funding transactions
+- money transfer
+- credit cards
+- open banking
+- process a direct service transaction
+- cross-border payment processing
+- get currency conversion rate
+- verify send account
+- create a cross-border payment
+- currency conversion rates
+- fraud detection
+- get account information for a send recipient
+- create p2p transfer
+- disbursement transactions
+- cross-border
+- payments
+- process direct transaction
+- create disbursement
+- get account info
+- mastercard send
+- digital identity
+- create a person-to-person transfer
+- create a cross-border international payment
+- create funding
+- get currency conversion rate for cross-border transactions
+- validate account
 - create a funding transaction
 - mastercard
 - financial services
-- open banking
-- get currency conversion rate for cross-border transactions
-- payments
-- create a disbursement to send money to a recipient
-- create a person-to-person transfer
-- money transfer
-- currency conversion rates
-- get account info
-- verify account eligibility for mastercard send
-- get currency conversion rate
 - create cross border payment
-- cross-border
-- create a cross-border payment
-- create funding
-- disbursement transactions
-- create a disbursement
-- get account information for a send recipient
-- process direct transaction
-- get conversion rate
-- fraud detection
-- p2p transfers
-- funding transactions
-- validate account
+- create a funding transaction via mastercard send
+- create a disbursement to send money to a recipient
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

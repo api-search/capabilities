@@ -57,56 +57,56 @@ personas: []
 provider_name: Sentry
 provider_slug: sentry
 search_terms:
+- error monitoring
+- list organizations
+- assign issue
+- update issue priority
+- retrieve issue
+- list releases for a sentry organization with optional filtering by project or version
+- list and filter issues for an organization
+- browse and search issues within an organization
+- list issue events
+- list raw error events for a sentry issue including full stack traces. set full=true to get complete stack trace data for debugging.
+- list all sentry organizations accessible to the api token
+- debugging
+- create a new sentry release to track a deployment. associate commits for automatic issue attribution. upload source maps separately after release creation.
+- list and inspect sentry organizations
+- application performance management
+- track releases and deployments
+- list releases
+- observability
+- retrieve raw error events for a specific issue
+- get details for a specific project
+- developer tools
+- update issue status, priority, or assignee
+- list projects
+- retrieve project
+- assign a sentry issue to a user or team. provide the username or team slug as the assignedto value.
 - search and filter sentry issues. use the query parameter with sentry query syntax (e.g., 'is:unresolved assigned:me', 'level:error'). use statsperiod to control the time window (14d, 24h, 1h).
 - list alert rules
-- site reliability engineering
-- mark a sentry issue as resolved. sets status to 'resolved'. use when a developer confirms the bug has been fixed and deployed.
-- browse projects within an organization
-- list projects
-- list and inspect sentry organizations
-- update issue status, priority, or assignee
-- list all projects in a sentry organization
-- list releases for a sentry organization with optional filtering by project or version
-- debugging
-- track releases and deployments
-- manage metric and issue alert rules
-- retrieve a specific project
-- create a new sentry release to track a deployment. associate commits for automatic issue attribution. upload source maps separately after release creation.
-- list and filter issues for an organization
-- get full details, stats, and metadata for a specific sentry issue by id
-- retrieve raw error events for a specific issue
-- update issue
-- assign issue
-- list raw error events for a sentry issue including full stack traces. set full=true to get complete stack trace data for debugging.
 - get detailed information about a specific issue
-- list error events bound to a specific issue
-- get details for a specific project
-- list releases
-- developer tools
-- retrieve or update a specific issue
-- list all sentry organizations accessible to the authenticated token
-- resolve issue
-- assign a sentry issue to a user or team. provide the username or team slug as the assignedto value.
-- create release
-- update issue priority
-- list organizations
-- get details for a specific sentry project by slug
-- retrieve issue
-- retrieve project
-- application performance management
-- observability
-- list issue events
-- error monitoring
-- change the priority of a sentry issue (critical, high, medium, low)
-- create a new release for deployment tracking
-- list all metric and issue alert rules configured for a sentry organization
-- list all sentry organizations accessible to the api token
-- browse and search issues within an organization
-- list releases for a sentry organization
 - devops
+- site reliability engineering
+- update issue
+- list issues
+- get full details, stats, and metadata for a specific sentry issue by id
+- retrieve a specific project
+- manage metric and issue alert rules
+- list releases for a sentry organization
+- mark a sentry issue as resolved. sets status to 'resolved'. use when a developer confirms the bug has been fixed and deployed.
+- create release
 - list all alert rules for a sentry organization
 - list organization issues
-- list issues
+- get details for a specific sentry project by slug
+- resolve issue
+- create a new release for deployment tracking
+- list all metric and issue alert rules configured for a sentry organization
+- list all sentry organizations accessible to the authenticated token
+- list error events bound to a specific issue
+- list all projects in a sentry organization
+- browse projects within an organization
+- change the priority of a sentry issue (critical, high, medium, low)
+- retrieve or update a specific issue
 slug: error-monitoring
 source_filename: error-monitoring.yaml
 source_heading: Capability Spec

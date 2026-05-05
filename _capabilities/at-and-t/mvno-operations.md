@@ -42,68 +42,68 @@ personas: []
 provider_name: AT&T
 provider_slug: at-and-t
 search_terms:
-- activate subscriber
-- App Developer
-- reserve phone number
-- broadband
-- wireline
-- MVNO Operator
-- mvno business operator managing at&t-powered mobile subscribers and services
-- reserve phone numbers from the at&t number pool prior to subscriber activation
-- mobile network connectivity and subscriber management
-- get port order status
-- get port order
-- list number portability orders with optional state filtering
-- subscriber balance management
-- mobile
-- speech
-- mobile virtual network operator services on at&t infrastructure
-- Telecom Engineer
-- activate a new mvno subscriber on at&t network
-- port order status
-- list portability orders
-- Enterprise Developer
-- sms notifications and in-app messaging for mobile apps and enterprise systems
-- at&t
-- reserve number
-- topup balance
-- tm forum
-- topup subscriber balance
-- get portability order status
-- retrieve subscriber's service plan, features, and account profile
-- list devices
-- engineer integrating at&t network services with bss/oss systems via tm forum apis
-- sms and mms messaging services for consumer and enterprise applications
-- activate a new subscriber on the at&t mvno network with a service plan
-- mvno
-- developer building enterprise notification, alerting, or communication systems
 - subscriber management
-- messaging
-- submit number portability order
 - number portability
-- check the current status of a number portability order
-- enterprise
-- get subscriber service plan and profile
-- list devices and sims for subscriber
+- activate a new mvno subscriber on at&t network
+- App Developer
+- sms and mms messaging services for consumer and enterprise applications
 - complete mvno subscriber lifecycle and number portability management
-- get subscriber profile
-- mobile or web application developer embedding messaging into consumer apps
-- phone number reservation
-- port number in
-- add prepaid data or voice balance to a subscriber's account
-- add balance to subscriber account
-- subscriber activation and management
-- reserve phone numbers for subscriber assignment
-- create port order
-- number portability operations
-- subscriber plan profile
-- telecommunications
-- subscriber device inventory
-- submit a number portability order to bring a subscriber's existing number to at&t mvno
-- list subscriber devices
-- list all devices and sim cards associated with a subscriber
-- wireless
 - list port orders
+- mobile
+- subscriber activation and management
+- reserve phone numbers from the at&t number pool prior to subscriber activation
+- reserve number
+- speech
+- MVNO Operator
+- enterprise
+- add prepaid data or voice balance to a subscriber's account
+- subscriber balance management
+- mobile or web application developer embedding messaging into consumer apps
+- create port order
+- broadband
+- get portability order status
+- mvno
+- topup balance
+- list number portability orders with optional state filtering
+- activate subscriber
+- list devices
+- get port order
+- list all devices and sim cards associated with a subscriber
+- port number in
+- Enterprise Developer
+- port order status
+- subscriber plan profile
+- submit number portability order
+- subscriber device inventory
+- number portability operations
+- Telecom Engineer
+- telecommunications
+- wireless
+- add balance to subscriber account
+- check the current status of a number portability order
+- wireline
+- developer building enterprise notification, alerting, or communication systems
+- mobile network connectivity and subscriber management
+- get subscriber profile
+- get port order status
+- submit a number portability order to bring a subscriber's existing number to at&t mvno
+- activate a new subscriber on the at&t mvno network with a service plan
+- mvno business operator managing at&t-powered mobile subscribers and services
+- get subscriber service plan and profile
+- list subscriber devices
+- sms notifications and in-app messaging for mobile apps and enterprise systems
+- mobile virtual network operator services on at&t infrastructure
+- phone number reservation
+- engineer integrating at&t network services with bss/oss systems via tm forum apis
+- topup subscriber balance
+- list portability orders
+- list devices and sims for subscriber
+- reserve phone number
+- reserve phone numbers for subscriber assignment
+- retrieve subscriber's service plan, features, and account profile
+- at&t
+- tm forum
+- messaging
 slug: mvno-operations
 source_filename: mvno-operations.yaml
 source_heading: Capability Spec

@@ -31,39 +31,39 @@ personas: []
 provider_name: Typesense
 provider_slug: typesense
 search_terms:
-- perform semantic vector similarity search in typesense
-- list all typesense search collections
-- search engine
-- execute multiple typesense searches across different collections in one request
-- typo tolerance
-- open source
-- search collection
-- index document
-- search documents in a collection with faceting and filtering
-- index a new document into a typesense collection
-- typesense
-- multi vector search
-- full-text search
-- search
-- execute multiple searches across collections
 - perform vector similarity search
-- create a new typesense collection with a defined schema
-- multi search
-- vector search
-- ai search
-- get schema and statistics for a typesense collection
-- search documents in a typesense collection with full-text, filters, and facets
-- collection management
-- discovery
-- semantic vector search
-- list all search collections
-- multi-collection search
-- get collection
-- create a new search collection
-- create collection
-- execute multiple vector searches simultaneously across typesense collections
 - full-text document search
+- execute multiple searches across collections
+- vector search
+- get collection
+- search documents in a collection with faceting and filtering
+- semantic vector search
+- create a new search collection
+- create a new typesense collection with a defined schema
+- search collection
+- execute multiple vector searches simultaneously across typesense collections
+- typesense
+- get schema and statistics for a typesense collection
+- index document
+- full-text search
+- search documents in a typesense collection with full-text, filters, and facets
+- multi vector search
+- index a new document into a typesense collection
+- open source
+- discovery
+- perform semantic vector similarity search in typesense
+- multi-collection search
+- multi search
+- collection management
+- typo tolerance
+- search engine
+- search
+- list all typesense search collections
+- ai search
 - list collections
+- create collection
+- list all search collections
+- execute multiple typesense searches across different collections in one request
 slug: search-and-discovery
 source_filename: search-and-discovery.yaml
 source_heading: Capability Spec

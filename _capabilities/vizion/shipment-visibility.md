@@ -30,36 +30,36 @@ personas: []
 provider_name: Vizion
 provider_slug: vizion
 search_terms:
-- ocean freight
-- list container subscriptions
-- create reference
-- subscribe to real-time tracking for a container. provide the container id and carrier scac code (e.g. mscu for msc, maeu for maersk). optionally supply a webhook url for push updates.
-- supply chain
-- list all active container tracking subscriptions in the account.
-- get reference status and metadata.
-- container tracking subscriptions.
-- get the current tracking status for a specific container reference, including whether it is actively receiving updates.
-- 'retrieve all tracking milestone events for a container: loading, departure, transshipment, arrival, customs clearance, and delivery events.'
-- container tracking milestone events.
-- get reference
 - vizion
-- webhooks
-- subscribe to tracking for a container.
-- track container
-- retrieve all tracking events for a container.
-- cancel tracking for a container and remove the reference. no further updates will be sent.
-- list tracking events
 - list references
-- individual container reference details.
+- get shipment milestones
+- webhooks
 - cancel container tracking
-- shipping
 - delete reference
 - get container status
-- logistics
 - list all active container tracking references.
+- list container subscriptions
+- cancel tracking for a container and remove the reference. no further updates will be sent.
+- 'retrieve all tracking milestone events for a container: loading, departure, transshipment, arrival, customs clearance, and delivery events.'
+- list all active container tracking subscriptions in the account.
+- individual container reference details.
+- subscribe to real-time tracking for a container. provide the container id and carrier scac code (e.g. mscu for msc, maeu for maersk). optionally supply a webhook url for push updates.
+- container tracking milestone events.
+- list tracking events
+- container tracking subscriptions.
+- subscribe to tracking for a container.
+- retrieve all tracking events for a container.
+- supply chain
 - container tracking
-- get shipment milestones
+- logistics
+- get reference status and metadata.
+- get the current tracking status for a specific container reference, including whether it is actively receiving updates.
 - cancel tracking and remove reference.
+- get reference
+- ocean freight
+- shipping
+- create reference
+- track container
 slug: shipment-visibility
 source_filename: shipment-visibility.yaml
 source_heading: Capability Spec

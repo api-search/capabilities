@@ -50,60 +50,60 @@ personas: []
 provider_name: TD SYNNEX
 provider_slug: td-synnex
 search_terms:
-- technology distribution
-- technology product catalog
+- it distribution
+- get report data
+- list products
+- list customers
+- business intelligence reports
 - access report data
-- customer subscription management
+- add a new end customer to the platform
+- fortune 100
+- technology distribution
+- subscription management
+- list available business intelligence reports
+- streamone ion
+- list all end customers in the td synnex partner account
+- list customer subscriptions
+- access business intelligence report data for distribution analytics
+- cloud
+- end customer account management
+- get order
+- get details for a specific end customer including cloud profiles
+- msp
+- td synnex
+- cloud distribution
+- streamone
+- list available business intelligence reports for distribution analytics
+- create a new technology product order
+- reseller
+- get details for a specific order
+- browse available technology products in the td synnex distribution catalog
+- get customer
+- list all active cloud software subscriptions for a customer
+- list all end customers in the partner account
+- report data access
+- product order management
+- single order management
+- b2b
+- technology product catalog
+- add a new end customer to the td synnex streamone platform
+- get product
+- list orders
 - browse available technology products
+- create order
+- single customer management
+- get status and details for a specific technology product order
 - list all orders for the account
 - list subscriptions
-- get report data
-- get details for a specific end customer including cloud profiles
-- create order
-- list reports
-- get details for a specific order
-- td synnex
-- get detailed information for a specific technology product including pricing
-- report data access
-- subscription management
-- it distribution
-- list all technology product orders for the partner account
-- list customer subscriptions
-- product order management
-- get details for a specific customer
-- b2b
-- list all active cloud software subscriptions for a customer
-- reseller
-- fortune 100
-- cloud
-- list available business intelligence reports for distribution analytics
-- order management
-- single order management
-- get order
-- list all end customers in the td synnex partner account
-- cloud distribution
-- list customers
-- msp
-- create a new technology product order
-- get status and details for a specific technology product order
-- create a new technology product order for an end customer
-- single customer management
-- list all end customers in the partner account
-- streamone ion
-- add a new end customer to the platform
-- business intelligence reports
-- list products
-- get customer
-- list available business intelligence reports
 - create customer
-- get product
-- access business intelligence report data for distribution analytics
-- list orders
-- add a new end customer to the td synnex streamone platform
-- browse available technology products in the td synnex distribution catalog
-- end customer account management
-- streamone
+- get details for a specific customer
+- order management
+- list reports
 - list cloud subscriptions for a customer
+- get detailed information for a specific technology product including pricing
+- customer subscription management
+- list all technology product orders for the partner account
+- create a new technology product order for an end customer
 slug: cloud-distribution
 source_filename: cloud-distribution.yaml
 source_heading: Capability Spec

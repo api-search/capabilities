@@ -37,40 +37,40 @@ personas: []
 provider_name: US Department of Commerce
 provider_slug: us-department-of-commerce
 search_terms:
-- latest news from the us department of commerce
-- get a specific commerce department news article
 - open data
-- blog posts from commerce department officials and bureaus
-- get the full content of a specific commerce department blog post. returns author, body text, date, and topic tags.
-- get blog post
-- list recent news articles from the us department of commerce. use to monitor agency announcements, trade policy updates, economic reports, and bureau news from noaa, census, bea, ita, and nist.
-- list commerce news
-- standards
-- list blog posts from commerce department officials and bureaus. blog posts provide policy commentary, program updates, and feature stories.
-- list commerce department images
-- federal government
-- trade
-- list images and media assets published by the commerce department. useful for finding official images for news stories and publications.
-- economic data
-- content
 - media images from commerce department
-- list commerce images
-- list blogs
-- commerce
-- news
-- list commerce blog posts
-- list recent commerce department news articles
-- get news article
-- get the full text of a specific commerce department news article by id. returns title, body, date, tags, and featured image.
-- list news
-- list commerce department blog posts
-- single commerce department news article
-- single commerce department blog post
-- get commerce blog post
-- climate
 - get commerce news article
+- news
+- federal government
+- get news article
+- list commerce department images
+- get the full text of a specific commerce department news article by id. returns title, body, date, tags, and featured image.
+- commerce
+- get blog post
+- list commerce blog posts
+- list blogs
+- list images and media assets published by the commerce department. useful for finding official images for news stories and publications.
+- list commerce images
+- get a specific commerce department news article
+- blog posts from commerce department officials and bureaus
+- economic data
 - get a specific commerce department blog post
+- trade
+- list blog posts from commerce department officials and bureaus. blog posts provide policy commentary, program updates, and feature stories.
+- get the full content of a specific commerce department blog post. returns author, body text, date, and topic tags.
+- single commerce department news article
+- list commerce department blog posts
+- single commerce department blog post
+- list commerce news
+- get commerce blog post
+- content
+- standards
+- climate
+- list recent commerce department news articles
+- latest news from the us department of commerce
+- list news
 - list images
+- list recent news articles from the us department of commerce. use to monitor agency announcements, trade policy updates, economic reports, and bureau news from noaa, census, bea, ita, and nist.
 slug: commerce-content
 source_filename: commerce-content.yaml
 source_heading: Capability Spec

@@ -42,53 +42,53 @@ personas: []
 provider_name: UCSC Genomic Data
 provider_slug: ucsc-genomic-data
 search_terms:
+- list tracks
 - biology
+- retrieve annotation data from a specific track for a region.
+- dna sequences
 - find genome
-- get track data
-- annotation
-- research
-- chromosome listings for a genome assembly.
-- list all publicly available ucsc track hubs.
-- list genome assemblies
-- get chromosomes and their sizes for a genome assembly.
-- search genome browser
-- bioinformatics
-- genome assembly search.
-- get track annotations
-- search for genome assemblies by name or accession.
-- list all publicly available track hubs.
-- list all annotation tracks available for a specific genome assembly.
 - search track data, names, and descriptions in the genome browser.
+- list all genome assemblies available in the ucsc genome browser.
+- research
+- get track annotations
+- bioinformatics
+- open science
+- ucsc
+- genomics
+- list public hubs
+- list all publicly available ucsc track hubs.
+- list chromosomes and their sizes for a genome.
+- genome assembly search.
+- list ucsc genomes
+- annotation track data retrieval.
+- get annotation data from a specific track for a genomic region.
+- ucsc genome assembly listings.
+- retrieve dna sequence for a genomic region.
 - genome browser search.
 - list public track hubs
-- get annotation data from a specific track for a genomic region.
-- public track hubs.
 - list annotation tracks
-- retrieve annotation data from a specific track for a region.
+- list all publicly available track hubs.
 - dna sequence retrieval.
-- genomics
-- annotation tracks for a genome assembly.
-- get dna sequence
-- list tracks
-- list chromosomes and their sizes for a genome.
-- open science
-- search for genome assemblies by organism name, accession, or keywords.
-- get chromosomes
+- list genome assemblies
 - search genomes
-- retrieve dna sequence from a genome for a specified chromosomal region.
-- list all annotation tracks for a genome.
-- list ucsc genomes
-- list all ucsc genome browser assemblies.
-- search track data, names, and descriptions in the ucsc genome browser.
-- list all genome assemblies available in the ucsc genome browser.
-- ucsc genome assembly listings.
-- annotation track data retrieval.
-- ucsc
-- dna
+- search for genome assemblies by name or accession.
 - list chromosomes
-- list public hubs
-- dna sequences
-- retrieve dna sequence for a genomic region.
+- public track hubs.
+- search track data, names, and descriptions in the ucsc genome browser.
+- search genome browser
+- retrieve dna sequence from a genome for a specified chromosomal region.
+- dna
+- get track data
+- list all annotation tracks available for a specific genome assembly.
+- chromosome listings for a genome assembly.
+- list all ucsc genome browser assemblies.
+- annotation
+- get chromosomes
+- list all annotation tracks for a genome.
+- get chromosomes and their sizes for a genome assembly.
+- annotation tracks for a genome assembly.
+- search for genome assemblies by organism name, accession, or keywords.
+- get dna sequence
 slug: genomic-research
 source_filename: genomic-research.yaml
 source_heading: Capability Spec

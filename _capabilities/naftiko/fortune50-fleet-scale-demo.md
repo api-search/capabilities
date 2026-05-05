@@ -1,40 +1,47 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability authored to deploy via NaftikoCapability CRD + CapabilityClass, paired with a Backstage template, used to demonstrate "thousands of capabilities under one fleet."
+description: A demo capability simulating Fortune 50 fleet-scale deployment of Naftiko capabilities — bulk capability registration and parallel deploys.
 layout: capability
 name: Fortune50 Fleet Scale Demo
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: bulk-register-capabilities
+  path: /bulk-register
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- demo
+- fortune 50
+- trigger deployment
+- spec-driven integration
+- scale
 - mcp
-- ai
+- capabilities
+- bulk register capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
-- a capability authored to deploy via naftikocapability crd + capabilityclass, paired with a backstage template, used to demonstrate "thousands of capabilities under one fleet."
 - governance
+- ai
 slug: fortune50-fleet-scale-demo
 source_filename: fortune50-fleet-scale-demo.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Fortune50 Fleet Scale Demo\n  description: A capability authored to deploy via NaftikoCapability CRD + CapabilityClass, paired with a Backstage template, used to demonstrate \"thousands of capabilities under one fleet.\"\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: fortune50-fleet-scale-demo-rest\n    description: REST API for Fortune50 Fleet Scale Demo.\n    resources:\n    - name: example\n      path: /example\n\
-  \      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: fortune50-fleet-scale-demo-mcp\n    description: MCP server exposing Fortune50 Fleet Scale Demo for AI agents.\n    tools:\n    - name: example\n      description: A capability authored to deploy via NaftikoCapability CRD + CapabilityClass, paired with a Backstage template, used to demonstrate \"thousands of capabilities under one fleet.\"\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: fortune50-fleet-scale-demo-skills\n    description: Agent Skill bundle for Fortune50 Fleet Scale Demo.\n    skills:\n    - name: fortune50-fleet-scale-demo\n      description: A capability authored to deploy via NaftikoCapability CRD + CapabilityClass, paired with a Backstage template, used to demonstrate \"thousands of capabilities under one fleet.\"\
-  \n      location: file:///opt/naftiko/skills/fortune50-fleet-scale-demo\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability authored to deploy via NaftikoCapability CRD + CapabilityClass, paired with a Backstage template, used to demonstrate \"thousands of capabilities under one fleet.\"\n        from:\n          sourceNamespace: fortune50-fleet-scale-demo-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Fortune50 Fleet Scale Demo\n  description: A demo capability simulating Fortune 50 fleet-scale deployment of Naftiko capabilities — bulk capability registration and parallel deploys.\n  tags: [Naftiko, Fortune 50, Demo, Scale]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: naftiko-env\n  keys: {NAFTIKO_API_KEY: NAFTIKO_API_KEY}\ncapability:\n  consumes:\n  - namespace: naftiko-control\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication: {type: bearer, token: '{{NAFTIKO_API_KEY}}'}\n    resources:\n    - {name: capabilities-bulk, path: /v1/capabilities/bulk, operations: [{name: bulk-register, method: POST}]}\n    - {name: deployments, path: /v1/deployments, operations: [{name: trigger-deployment, method: POST}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: fortune50-fleet-scale-demo-rest\n    description: REST surface for fleet-scale demo.\n    resources:\n\
+  \    - {name: bulk, path: /bulk-register, operations: [{method: POST, name: bulk-register-capabilities, call: naftiko-control.bulk-register}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: fortune50-fleet-scale-demo-mcp\n    description: MCP for fleet-scale demo.\n    tools:\n    - {name: bulk-register-capabilities, call: naftiko-control.bulk-register}\n    - {name: trigger-deployment, call: naftiko-control.trigger-deployment}\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: fortune50-fleet-scale-demo-skills\n    description: Skill for fleet-scale demo.\n    skills:\n    - name: fortune50-fleet-scale-demo\n      description: Fortune 50 fleet-scale demo.\n      location: file:///opt/naftiko/skills/fortune50-fleet-scale-demo\n      allowed-tools: bulk-register-capabilities,trigger-deployment\n      tools:\n      - {name: bulk-register-capabilities, from: {sourceNamespace: fortune50-fleet-scale-demo-mcp, action: bulk-register-capabilities}}\n \
+  \     - {name: trigger-deployment, from: {sourceNamespace: fortune50-fleet-scale-demo-mcp, action: trigger-deployment}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/fortune50-fleet-scale-demo.yaml
 tags:
 - Naftiko
+- Fortune 50
+- Demo
+- Scale
 tools:
-- description: A capability authored to deploy via NaftikoCapability CRD + CapabilityClass, paired with a Backstage template, used to demonstrate "thousands of capabilities under one fleet."
-  hints:
-    readOnly: true
-  name: example
+- description: ''
+  hints: {}
+  name: bulk-register-capabilities
+- description: ''
+  hints: {}
+  name: trigger-deployment
 ---

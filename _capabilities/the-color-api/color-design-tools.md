@@ -25,20 +25,20 @@ personas: []
 provider_name: The Color API
 provider_slug: the-color-api
 search_terms:
-- get color info
-- generate a color scheme using a specified color-wheel mode.
-- get color scheme
-- design tokens
 - generate color scheme
 - colors
 - utilities
-- generate harmonious color palettes from a seed color.
-- identify any color by hex, rgb, hsl, or cmyk input and receive full format conversions, nearest color name, contrast recommendation, and image swatch urls.
-- identify color
-- get comprehensive color data including all format conversions, named color, and contrast.
-- generate a harmonious color palette from a seed color using color-wheel theory. supports monochrome, monochrome-dark, monochrome-light, analogic, complement, analogic-complement, triad, and quad modes.
-- design
 - identify a color and get all format conversions and naming information.
+- generate a color scheme using a specified color-wheel mode.
+- identify any color by hex, rgb, hsl, or cmyk input and receive full format conversions, nearest color name, contrast recommendation, and image swatch urls.
+- get color info
+- generate harmonious color palettes from a seed color.
+- identify color
+- design tokens
+- design
+- generate a harmonious color palette from a seed color using color-wheel theory. supports monochrome, monochrome-dark, monochrome-light, analogic, complement, analogic-complement, triad, and quad modes.
+- get comprehensive color data including all format conversions, named color, and contrast.
+- get color scheme
 slug: color-design-tools
 source_filename: color-design-tools.yaml
 source_heading: Capability Spec

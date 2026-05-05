@@ -1,40 +1,48 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability over Azure Databricks-hosted claims data, exposing read-only deterministic MCP tools with HIPAA-shaped governance + PII detection.
+description: A deterministic capability over a Databricks payer-claims dataset — same query input yields same shaped result, suitable for audit-graded payer flows.
 layout: capability
 name: Databricks Payer Claims Deterministic Capability
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: query-claims
+  path: /claims/query
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- a capability over azure databricks-hosted claims data, exposing read-only deterministic mcp tools with hipaa-shaped governance + pii detection.
-- ai
+- healthcare
+- spec-driven integration
+- query claims
+- governance
 - mcp
+- payer
+- databricks
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
-- governance
+- get claim result
+- ai
 slug: databricks-payer-claims-deterministic-capability
 source_filename: databricks-payer-claims-deterministic-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Databricks Payer Claims Deterministic Capability\n  description: A capability over Azure Databricks-hosted claims data, exposing read-only deterministic MCP tools with HIPAA-shaped governance + PII detection.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: databricks-payer-claims-deterministic-capability-rest\n    description: REST API for Databricks Payer Claims Deterministic Capability.\n    resources:\n    - name:\
-  \ example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: databricks-payer-claims-deterministic-capability-mcp\n    description: MCP server exposing Databricks Payer Claims Deterministic Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability over Azure Databricks-hosted claims data, exposing read-only deterministic MCP tools with HIPAA-shaped governance + PII detection.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: databricks-payer-claims-deterministic-capability-skills\n    description: Agent Skill bundle for Databricks Payer Claims Deterministic Capability.\n    skills:\n    - name: databricks-payer-claims-deterministic-capability\n      description: A capability over Azure Databricks-hosted claims data, exposing\
-  \ read-only deterministic MCP tools with HIPAA-shaped governance + PII detection.\n      location: file:///opt/naftiko/skills/databricks-payer-claims-deterministic-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability over Azure Databricks-hosted claims data, exposing read-only deterministic MCP tools with HIPAA-shaped governance + PII detection.\n        from:\n          sourceNamespace: databricks-payer-claims-deterministic-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Databricks Payer Claims Deterministic Capability\n  description: A deterministic capability over a Databricks payer-claims dataset — same query input yields same shaped result, suitable for audit-graded payer flows.\n  tags: [Naftiko, Databricks, Payer, Healthcare]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: databricks-env\n  keys: {DATABRICKS_HOST: DATABRICKS_HOST, DATABRICKS_TOKEN: DATABRICKS_TOKEN, DATABRICKS_WAREHOUSE_ID: DATABRICKS_WAREHOUSE_ID}\ncapability:\n  consumes:\n  - namespace: databricks\n    type: http\n    baseUri: https://{{DATABRICKS_HOST}}\n    authentication: {type: bearer, token: '{{DATABRICKS_TOKEN}}'}\n    resources:\n    - {name: sql-statements, path: /api/2.0/sql/statements, operations: [{name: execute-sql, method: POST}]}\n    - name: sql-statement\n      path: /api/2.0/sql/statements/{{statement_id}}\n      operations:\n      - {name: get-statement-result, method: GET, inputParameters:\
+  \ [{name: statement_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: databricks-payer-claims-deterministic-capability-rest\n    description: REST surface for deterministic payer-claims queries.\n    resources:\n    - {name: claims, path: /claims/query, operations: [{method: POST, name: query-claims, call: databricks.execute-sql}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: databricks-payer-claims-deterministic-capability-mcp\n    description: MCP for payer-claims queries.\n    tools:\n    - {name: query-claims, call: databricks.execute-sql}\n    - name: get-claim-result\n      hints: {readOnly: true}\n      inputParameters: [{name: statement_id, type: string, required: true}]\n      call: databricks.get-statement-result\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: databricks-payer-claims-deterministic-capability-skills\n    description: Skill for payer claims.\n    skills:\n    - name:\
+  \ databricks-payer-claims-deterministic-capability\n      description: Deterministic payer-claims queries.\n      location: file:///opt/naftiko/skills/databricks-payer-claims-deterministic-capability\n      allowed-tools: query-claims,get-claim-result\n      tools:\n      - {name: query-claims, from: {sourceNamespace: databricks-payer-claims-deterministic-capability-mcp, action: query-claims}}\n      - {name: get-claim-result, from: {sourceNamespace: databricks-payer-claims-deterministic-capability-mcp, action: get-claim-result}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/databricks-payer-claims-deterministic-capability.yaml
 tags:
 - Naftiko
+- Databricks
+- Payer
+- Healthcare
 tools:
-- description: A capability over Azure Databricks-hosted claims data, exposing read-only deterministic MCP tools with HIPAA-shaped governance + PII detection.
+- description: ''
+  hints: {}
+  name: query-claims
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-claim-result
 ---

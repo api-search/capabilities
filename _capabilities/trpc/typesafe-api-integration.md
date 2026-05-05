@@ -26,30 +26,30 @@ personas: []
 provider_name: tRPC
 provider_slug: trpc
 search_terms:
-- invoke a trpc mutation procedure
-- end-to-end type safety
-- query procedure
-- trpc
 - trpc procedure proxy
-- api composition
-- typescript
-- rpc
-- invoke a trpc query procedure
+- end-to-end type safety
+- check trpc server health
+- invoke a trpc query procedure by path. queries are read-only and use http get. the procedure name uses dot notation for nested routers (e.g., 'user.getuser', 'post.list').
+- api framework
+- invoke a trpc mutation procedure
 - execute multiple trpc procedures in a single http request. trpc clients use batching automatically via httpbatchlink.
+- backend integration
+- rpc
+- batch procedures
 - server health check
 - health check
-- batch procedures
-- backend integration
+- query procedure
 - mutation procedure
-- execute multiple procedures at once
-- check trpc server health
 - type safety
-- bff
-- invoke a trpc query procedure by path. queries are read-only and use http get. the procedure name uses dot notation for nested routers (e.g., 'user.getuser', 'post.list').
-- batch multiple trpc procedure calls
-- invoke a trpc mutation procedure by path. mutations cause side effects and use http post. the procedure name uses dot notation (e.g., 'user.createuser', 'post.delete').
-- api framework
 - check the health of a trpc server
+- bff
+- execute multiple procedures at once
+- typescript
+- invoke a trpc mutation procedure by path. mutations cause side effects and use http post. the procedure name uses dot notation (e.g., 'user.createuser', 'post.delete').
+- api composition
+- invoke a trpc query procedure
+- batch multiple trpc procedure calls
+- trpc
 slug: typesafe-api-integration
 source_filename: typesafe-api-integration.yaml
 source_heading: Capability Spec

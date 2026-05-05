@@ -53,50 +53,50 @@ personas: []
 provider_name: Microsoft Visio API
 provider_slug: visio
 search_terms:
-- list all pages in the embedded visio diagram
-- structured business data embedded in a shape
-- individual shape on a visio page
-- sharepoint
-- get the currently active visio page
-- get the active visio document properties and settings
-- list shapes
-- list shape hyperlinks
 - extract all structured data items from a shape
-- hyperlinks attached to a shape
-- get the active visio document and its settings
-- get details of a specific shape including text and bounding box
-- microsoft 365
 - list shape comments
-- shapes on a visio page
-- diagrams
-- extract business data items stored in a shape
-- flowcharts
-- visualization
-- get active page
 - list all pages in the visio diagram
-- office add-ins
-- get page
-- read comments attached to a visio shape
-- list pages
-- get a specific shape by id
-- collaboration
-- get document
-- list all shapes on the specified page
-- enterprise
-- list all shapes on a named visio page
-- get the currently active page in the visio diagram
-- visio diagram pages
-- get shape
-- list shape data items
-- list all hyperlinks on a shape
-- list all comments on a shape
-- current visio document
-- comments on a shape
+- structured business data embedded in a shape
 - currently active visio page
-- list hyperlinks embedded in a visio shape
-- individual visio page
-- get a specific visio page by name
+- enterprise
+- list all pages in the embedded visio diagram
+- get active page
+- get the currently active visio page
+- visio diagram pages
+- office add-ins
+- list all hyperlinks on a shape
 - business process
+- shapes on a visio page
+- list shape data items
+- list all comments on a shape
+- extract business data items stored in a shape
+- comments on a shape
+- current visio document
+- sharepoint
+- get document
+- diagrams
+- list all shapes on the specified page
+- list hyperlinks embedded in a visio shape
+- individual shape on a visio page
+- get page
+- get the active visio document properties and settings
+- microsoft 365
+- individual visio page
+- get details of a specific shape including text and bounding box
+- visualization
+- list all shapes on a named visio page
+- hyperlinks attached to a shape
+- get a specific visio page by name
+- list shape hyperlinks
+- list shapes
+- get the currently active page in the visio diagram
+- get shape
+- read comments attached to a visio shape
+- get a specific shape by id
+- get the active visio document and its settings
+- list pages
+- collaboration
+- flowcharts
 slug: diagram-automation
 source_filename: diagram-automation.yaml
 source_heading: Capability Spec

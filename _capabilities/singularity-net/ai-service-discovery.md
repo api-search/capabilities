@@ -53,47 +53,47 @@ personas: []
 provider_name: SingularityNET
 provider_slug: singularity-net
 search_terms:
-- list services
-- web3
-- get channel
-- channel extension.
-- list org services
-- list all ai services published by a specific organization.
-- get full service metadata including pricing and grpc endpoints.
-- list all ai service publishing organizations on the singularitynet network.
-- ai service provider organizations.
-- search and browse ai services on the singularitynet marketplace by keyword or tag.
-- decentralized ai
-- get full metadata for a specific ai service including pricing, endpoints, and api specification.
-- ai service marketplace.
-- service endpoint groups.
-- open payment channel
-- get service endpoint groups and pricing.
-- service discovery
-- single organization details.
 - open an mpe payment channel to fund ai service calls.
+- list organizations
 - services by organization.
 - payment channel management.
-- open a multi-party escrow payment channel with asi tokens to fund ai service calls.
-- add asi token funds or extend the expiration of an existing payment channel.
-- get organization profile and contact information.
-- add funds or extend channel expiration.
-- artificial intelligence
-- get organization
-- list organizations
-- list all ai service publishing organizations on the network.
-- get payment channel balance and expiration status.
-- search and browse all ai services on the marketplace.
-- get details about a specific ai service provider organization.
-- get service
-- extend channel
-- get service endpoint groups, grpc daemon addresses, and pricing for an ai service.
-- single payment channel.
-- list service groups
-- check the balance and expiration of a payment channel.
-- ai marketplace
 - single ai service metadata.
+- get payment channel balance and expiration status.
+- list org services
+- list all ai services published by a specific organization.
+- get service
+- get details about a specific ai service provider organization.
+- list all ai service publishing organizations on the network.
+- check the balance and expiration of a payment channel.
+- add asi token funds or extend the expiration of an existing payment channel.
+- ai marketplace
+- decentralized ai
+- service discovery
+- open payment channel
+- list service groups
+- get organization profile and contact information.
 - blockchain
+- artificial intelligence
+- single payment channel.
+- web3
+- channel extension.
+- get full service metadata including pricing and grpc endpoints.
+- single organization details.
+- list services
+- get service endpoint groups, grpc daemon addresses, and pricing for an ai service.
+- ai service provider organizations.
+- search and browse ai services on the singularitynet marketplace by keyword or tag.
+- get channel
+- search and browse all ai services on the marketplace.
+- service endpoint groups.
+- get service endpoint groups and pricing.
+- get organization
+- open a multi-party escrow payment channel with asi tokens to fund ai service calls.
+- add funds or extend channel expiration.
+- ai service marketplace.
+- extend channel
+- get full metadata for a specific ai service including pricing, endpoints, and api specification.
+- list all ai service publishing organizations on the singularitynet network.
 slug: ai-service-discovery
 source_filename: ai-service-discovery.yaml
 source_heading: Capability Spec

@@ -1,40 +1,54 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that fans out to existing observability stack (New Relic + Datadog + Dynatrace + Google Cloud Logging) plus OpenTelemetry traces and returns a unified agent-driven-API-call view, sized for the Gartner-hasn't-caught-up gap John flagged.
+description: A bridge across Datadog, New Relic, and Splunk that exposes a unified observability query surface.
 layout: capability
 name: Multi Vendor Observability Bridge Capability
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: query-unified
+  path: /query
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- api integration
+- query splunk
 - spec-driven integration
+- query newrelic
+- query unified
+- mcp
 - capabilities
-- example op
+- query datadog
+- new relic
+- naftiko
+- splunk
+- api integration
+- datadog
 - governance
-- a capability that fans out to existing observability stack (new relic + datadog + dynatrace + google cloud logging) plus opentelemetry traces and returns a unified agent-driven-api-call view, sized for the gartner-hasn't-caught-up gap john flagged.
+- ai
 slug: multi-vendor-observability-bridge-capability
 source_filename: multi-vendor-observability-bridge-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Multi Vendor Observability Bridge Capability\n  description: A capability that fans out to existing observability stack (New Relic + Datadog + Dynatrace + Google Cloud Logging) plus OpenTelemetry traces and returns a unified agent-driven-API-call view, sized for the Gartner-hasn't-caught-up gap John flagged.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: multi-vendor-observability-bridge-capability-rest\n    description:\
-  \ REST API for Multi Vendor Observability Bridge Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: multi-vendor-observability-bridge-capability-mcp\n    description: MCP server exposing Multi Vendor Observability Bridge Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability that fans out to existing observability stack (New Relic + Datadog + Dynatrace + Google Cloud Logging) plus OpenTelemetry traces and returns a unified agent-driven-API-call view, sized for the Gartner-hasn't-caught-up gap John flagged.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: multi-vendor-observability-bridge-capability-skills\n    description: Agent Skill bundle for Multi Vendor Observability Bridge\
-  \ Capability.\n    skills:\n    - name: multi-vendor-observability-bridge-capability\n      description: A capability that fans out to existing observability stack (New Relic + Datadog + Dynatrace + Google Cloud Logging) plus OpenTelemetry traces and returns a unified agent-driven-API-call view, sized for the Gartner-hasn't-caught-up gap John flagged.\n      location: file:///opt/naftiko/skills/multi-vendor-observability-bridge-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that fans out to existing observability stack (New Relic + Datadog + Dynatrace + Google Cloud Logging) plus OpenTelemetry traces and returns a unified agent-driven-API-call view, sized for the Gartner-hasn't-caught-up gap John flagged.\n        from:\n          sourceNamespace: multi-vendor-observability-bridge-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Multi Vendor Observability Bridge Capability\n  description: A bridge across Datadog, New Relic, and Splunk that exposes a unified observability query surface.\n  tags: [Naftiko, Datadog, New Relic, Splunk]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: datadog-env\n  keys: {DD_API_KEY: DD_API_KEY}\n- namespace: newrelic-env\n  keys: {NR_API_KEY: NR_API_KEY, NR_ACCOUNT_ID: NR_ACCOUNT_ID}\n- namespace: splunk-env\n  keys: {SPLUNK_HOST: SPLUNK_HOST, SPLUNK_TOKEN: SPLUNK_TOKEN}\ncapability:\n  consumes:\n  - namespace: datadog\n    type: http\n    baseUri: https://api.datadoghq.com\n    authentication: {type: bearer, token: '{{DD_API_KEY}}'}\n    resources:\n    - {name: query, path: /api/v1/query, operations: [{name: query-dd, method: GET}]}\n  - namespace: newrelic\n    type: http\n    baseUri: https://api.newrelic.com\n    authentication: {type: bearer, token: '{{NR_API_KEY}}'}\n    resources:\n    - {name: nrql,\
+  \ path: /graphql, operations: [{name: query-nrql, method: POST}]}\n  - namespace: splunk\n    type: http\n    baseUri: https://{{SPLUNK_HOST}}\n    authentication: {type: bearer, token: '{{SPLUNK_TOKEN}}'}\n    resources:\n    - {name: search-jobs, path: /services/search/jobs, operations: [{name: query-splunk, method: POST}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: multi-vendor-observability-bridge-capability-rest\n    description: REST surface for unified observability query.\n    resources:\n    - {name: query, path: /query, operations: [{method: POST, name: query-unified, call: datadog.query-dd}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: multi-vendor-observability-bridge-capability-mcp\n    description: MCP for unified observability.\n    tools:\n    - {name: query-datadog, hints: {readOnly: true}, call: datadog.query-dd}\n    - {name: query-newrelic, hints: {readOnly: true}, call: newrelic.query-nrql}\n    - {name:\
+  \ query-splunk, call: splunk.query-splunk}\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: multi-vendor-observability-bridge-capability-skills\n    description: Skill for multi-vendor observability.\n    skills:\n    - name: multi-vendor-observability-bridge-capability\n      description: Multi-vendor observability bridge.\n      location: file:///opt/naftiko/skills/multi-vendor-observability-bridge-capability\n      allowed-tools: query-datadog,query-newrelic,query-splunk\n      tools:\n      - {name: query-datadog, from: {sourceNamespace: multi-vendor-observability-bridge-capability-mcp, action: query-datadog}}\n      - {name: query-newrelic, from: {sourceNamespace: multi-vendor-observability-bridge-capability-mcp, action: query-newrelic}}\n      - {name: query-splunk, from: {sourceNamespace: multi-vendor-observability-bridge-capability-mcp, action: query-splunk}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/multi-vendor-observability-bridge-capability.yaml
 tags:
 - Naftiko
+- Datadog
+- New Relic
+- Splunk
 tools:
-- description: A capability that fans out to existing observability stack (New Relic + Datadog + Dynatrace + Google Cloud Logging) plus OpenTelemetry traces and returns a unified agent-driven-API-call view, sized for the Gartner-hasn't-caught-up gap John flagged.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: query-datadog
+- description: ''
+  hints:
+    readOnly: true
+  name: query-newrelic
+- description: ''
+  hints: {}
+  name: query-splunk
 ---

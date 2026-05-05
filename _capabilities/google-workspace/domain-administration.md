@@ -58,57 +58,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- list groups.
-- storage
-- create user
-- make a user an admin.
-- delete user
-- sign out user
-- list users in the domain.
-- get user details.
-- update a group.
-- create a group.
-- get group details.
-- list org units
-- list users in the google workspace domain.
-- individual user management.
-- get user
-- calendar
-- productivity
-- create group
-- undelete user
-- create a new user in the domain.
-- group management
-- individual group management.
-- list groups in the domain.
-- google workspace
-- domain administration
-- user account management.
-- patch user
-- video conferencing
-- collaboration
-- list users
-- undelete a deleted user.
-- create a new group.
-- user management
-- update user
-- create a new user.
-- update a user.
-- delete a group.
-- organizational unit management.
-- create org unit
-- update group
 - group management.
-- sign out a user from all sessions.
-- create an organizational unit.
-- delete group
-- delete a user.
 - make user admin
-- email
+- list users
+- sign out a user from all sessions.
+- undelete user
 - patch user properties.
-- list groups
-- list organizational units.
+- delete group
+- create user
+- get user
+- individual group management.
+- create a new group.
+- create a new user in the domain.
+- email
+- update a user.
+- video conferencing
+- storage
+- create group
+- google workspace
+- update user
+- delete a user.
+- create an organizational unit.
+- list org units
+- organizational unit management.
+- create a group.
+- create a new user.
+- update a group.
+- get group details.
+- list users in the google workspace domain.
+- delete user
+- group management
+- sign out user
+- update group
+- individual user management.
 - get group
+- list users in the domain.
+- create org unit
+- delete a group.
+- make a user an admin.
+- list groups.
+- domain administration
+- patch user
+- user management
+- list organizational units.
+- list groups in the domain.
+- calendar
+- get user details.
+- productivity
+- user account management.
+- collaboration
+- undelete a deleted user.
+- list groups
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

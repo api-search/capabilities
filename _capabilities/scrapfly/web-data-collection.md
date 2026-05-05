@@ -25,32 +25,32 @@ personas: []
 provider_name: Scrapfly
 provider_slug: scrapfly
 search_terms:
-- capture element screenshot
-- web scraping
-- capture full page screenshot
-- capture a screenshot of a specific html element using a css selector. useful for extracting visual data from specific page components.
-- web page screenshot capture
-- proxies
 - scrape any webpage and return its content. supports anti-bot bypass, javascript rendering for dynamic sites, proxy rotation across 190+ countries, and output in html, markdown, or plain text format.
-- browser automation
-- scrape with session
-- data collection
-- web page scraping with anti-bot bypass
-- scrape a webpage and extract structured data using an ai prompt. returns structured json data extracted from the page content.
 - data extraction
-- scrape with cache
 - capture a full-page screenshot of any website. useful for visual verification, archiving, or accessibility testing.
-- screenshots
+- anti-bot
 - scrape a webpage with session persistence, maintaining cookies and browser fingerprint across multiple requests to the same site.
+- scrape url
+- scrape a webpage and extract structured data using an ai prompt. returns structured json data extracted from the page content.
+- browser automation
+- proxies
+- capture a screenshot of a specific html element using a css selector. useful for extracting visual data from specific page components.
+- ai
+- capture element screenshot
+- extract structured data
+- web scraping
+- data collection
+- scrape with session
+- capture screenshot
+- scrape with cache
+- capture full page screenshot
+- scrape webpage
+- web page scraping with anti-bot bypass
 - scrape a url with caching enabled to avoid redundant requests. ideal for repeatedly accessed urls that don't change frequently.
 - scrape a url with configurable rendering and extraction
-- extract structured data
-- ai
-- scrape url
-- anti-bot
-- capture screenshot
+- web page screenshot capture
+- screenshots
 - capture a screenshot of a webpage or element
-- scrape webpage
 slug: web-data-collection
 source_filename: web-data-collection.yaml
 source_heading: Capability Spec

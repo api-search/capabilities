@@ -54,59 +54,59 @@ personas: []
 provider_name: Remitian
 provider_slug: remitian
 search_terms:
-- automation
-- list tax payments filtered by jurisdiction, status, and date range for reconciliation
-- list tax payments with filtering
-- list payments
-- get payment requirements, accepted tax types, and routing for a jurisdiction
-- initiate payment
-- accounting
-- validate payment
-- register a webhook endpoint to receive real-time payment status events
-- get jurisdiction
-- remitian
-- list client accounts registered for tax payment processing
-- individual tax payment
-- register a new client account with bank connection for tax payments
-- confirm payment
-- create webhook
-- browse supported tax jurisdictions by country and type
-- confirm a validated payment — irreversible, routes to tax authority
-- list active webhook subscriptions for payment event notifications
-- register a new client account
-- list webhook subscriptions
-- client tax payment accounts
-- list audit logs
-- browse supported tax jurisdictions
-- payment validation
-- retrieve bank-grade audit logs for payment compliance and reconciliation
-- validate payment against jurisdiction rules
-- list jurisdictions
-- payments
-- webhooks
-- tax payment lifecycle management
-- payment confirmation
-- create account
-- cancel a payment that has not yet been confirmed or processed
-- list registered client accounts
-- list payment audit log entries
-- list accounts
-- payment event webhook subscriptions
-- list webhooks
-- run jurisdiction-specific validation to check payment readiness
-- create a webhook subscription
-- supported tax jurisdictions
-- cancel payment
-- initiate a new tax payment
-- confirm payment for processing
-- embedded payments
-- get complete payment details including validation results and status
-- get payment
-- fintech
-- tax
 - initiate a tax payment to a jurisdiction from a client account
-- bank-grade payment audit logs
+- list active webhook subscriptions for payment event notifications
+- list payments
+- register a new client account
+- individual tax payment
+- fintech
+- list accounts
+- get complete payment details including validation results and status
+- cancel a payment that has not yet been confirmed or processed
+- register a new client account with bank connection for tax payments
+- retrieve bank-grade audit logs for payment compliance and reconciliation
+- webhooks
+- accounting
+- initiate payment
+- cancel payment
+- list registered client accounts
+- create account
+- confirm payment
+- supported tax jurisdictions
+- payment validation
+- list tax payments filtered by jurisdiction, status, and date range for reconciliation
+- get jurisdiction
+- create webhook
+- browse supported tax jurisdictions
+- embedded payments
+- client tax payment accounts
+- create a webhook subscription
+- get payment requirements, accepted tax types, and routing for a jurisdiction
+- payments
+- confirm payment for processing
+- list webhook subscriptions
+- register a webhook endpoint to receive real-time payment status events
+- run jurisdiction-specific validation to check payment readiness
+- payment event webhook subscriptions
+- list tax payments with filtering
 - get full payment details and status
+- list client accounts registered for tax payment processing
+- bank-grade payment audit logs
+- get payment
+- initiate a new tax payment
+- browse supported tax jurisdictions by country and type
+- list payment audit log entries
+- tax
+- tax payment lifecycle management
+- remitian
+- automation
+- validate payment
+- validate payment against jurisdiction rules
+- payment confirmation
+- list jurisdictions
+- list webhooks
+- list audit logs
+- confirm a validated payment — irreversible, routes to tax authority
 slug: tax-payment-automation
 source_filename: tax-payment-automation.yaml
 source_heading: Capability Spec

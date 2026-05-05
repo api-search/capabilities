@@ -77,75 +77,75 @@ personas: []
 provider_name: Zeebe
 provider_slug: zeebe
 search_terms:
-- delete a deployed resource (process, decision, or form) from zeebe
-- fail job
-- deploy bpmn, dmn, or form resources
-- java
-- publish message
-- create and start a new process instance
-- migrate process instance
-- delete resource
-- throw a bpmn error from a job to trigger error boundary event handling
-- workflow orchestration
-- broadcast a named signal to all matching signal catch events in running processes
-- cancel a running process instance
-- deploy resources
-- complete a user task with optional output variables
-- cloud native
-- assign user tasks
-- create process instance
-- activate jobs
-- throw error
-- complete a user task
-- mark a job as completed
-- throw a bpmn error for boundary event handling
-- get current cluster topology
-- deploy process definitions and resources
-- activate and lock jobs of a given type for a worker to process
-- deploy bpmn process definitions, dmn decisions, or forms to the zeebe engine
-- cancel a specific process instance
-- get topology
-- assign user task
-- get the current zeebe cluster topology showing brokers, partitions, and health
-- report a job failure to trigger retry logic or incident creation
-- broadcast signals to process subscriptions
-- process instance lifecycle management
-- complete a job
-- activate jobs for worker processing
-- distributed systems
-- create and start a new bpmn process instance with optional input variables
-- complete a job with output variables after worker processing
-- complete user task
-- bpmn
-- process automation
-- migrate a process instance
-- complete job
 - update job retries
-- update the remaining retry count for a job
-- migrate a running process instance to a newer version of the process definition
-- cancel a running process instance and all its subprocesses
-- update job retry count
-- microservices
+- delete a deployed resource (process, decision, or form) from zeebe
+- complete a user task
+- resolve incident
+- report a job failure to trigger retry logic or incident creation
+- bpmn
+- cancel a running process instance
+- broadcast signal
+- assign user tasks
+- assign user task
+- deploy process definitions and resources
+- fail job
+- process automation
+- deploy resources
 - update the retry count for a job
-- camunda
 - resolve process incidents
-- resolve an incident to allow the failed operation to be retried
-- assign a user task to a specific user
+- deploy bpmn process definitions, dmn decisions, or forms to the zeebe engine
+- broadcast signals to process subscriptions
+- complete user task
+- broadcast a signal
+- activate and lock jobs of a given type for a worker to process
+- complete a job with output variables after worker processing
+- broadcast a named signal to all matching signal catch events in running processes
+- complete a job
+- mark a job as completed
+- assign a user task to a specific user for completion
+- publish a message for correlation with waiting process subscriptions
+- create and start a new bpmn process instance with optional input variables
+- cancel a running process instance and all its subprocesses
+- update the remaining retry count for a job
+- cluster topology and health
 - throw a bpmn error from a job
 - publish a message for correlation
-- resolve an incident to retry the failed operation
+- delete resource
+- activate jobs for worker processing
+- get topology
+- cancel a specific process instance
+- update job retry count
+- complete a user task with optional output variables
+- cloud native
+- distributed systems
+- publish message
 - report a job failure
-- publish messages for process correlation
-- broadcast signal
-- resolve incident
-- cluster topology and health
+- throw a bpmn error for boundary event handling
+- microservices
 - cancel process instance
-- migrate a process instance to a new version
+- publish messages for process correlation
+- migrate process instance
+- create and start a new process instance
+- create process instance
 - complete user tasks
-- broadcast a signal
-- publish a message for correlation with waiting process subscriptions
-- assign a user task to a specific user for completion
+- get the current zeebe cluster topology showing brokers, partitions, and health
+- complete job
+- migrate a running process instance to a newer version of the process definition
+- resolve an incident to allow the failed operation to be retried
+- get current cluster topology
+- throw error
 - activate available jobs for a worker
+- workflow orchestration
+- process instance lifecycle management
+- assign a user task to a specific user
+- activate jobs
+- migrate a process instance
+- deploy bpmn, dmn, or form resources
+- resolve an incident to retry the failed operation
+- throw a bpmn error from a job to trigger error boundary event handling
+- camunda
+- migrate a process instance to a new version
+- java
 slug: process-orchestration
 source_filename: process-orchestration.yaml
 source_heading: Capability Spec

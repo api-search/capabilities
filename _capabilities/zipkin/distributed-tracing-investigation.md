@@ -9,14 +9,14 @@ personas: []
 provider_name: Zipkin
 provider_slug: zipkin
 search_terms:
-- operates production systems and investigates incidents.
-- observability
-- distributed tracing
-- instruments services and consumes traces during development.
-- open source
 - sre investigation of latency or errors via traces and dependencies.
 - microservices
+- operates production systems and investigates incidents.
 - operates the tracing infrastructure (zipkin server and storage).
+- observability
+- instruments services and consumes traces during development.
+- distributed tracing
+- open source
 slug: distributed-tracing-investigation
 source_filename: distributed-tracing-investigation.yaml
 source_heading: Capability Spec

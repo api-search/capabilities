@@ -44,61 +44,61 @@ personas: []
 provider_name: Statorium
 provider_slug: statorium
 search_terms:
-- get football team
-- get football player
-- basketball
-- nfl game listings.
-- list football matches
-- football league standings.
-- list football/soccer matches filtered by league, date, team, or live status.
-- get nfl game
-- list all accessible football leagues.
-- get nfl standings by conference and division.
-- soccer
-- football league listings.
-- get basketball game
-- list matches
-- get full football match details including lineups, events, stats, and head-to-head history.
-- nfl
-- get football league standings table.
-- live scores
-- get nfl standings
-- get football match
-- list nfl news
-- sports data
-- get football player profile and statistics.
-- get football standings
-- get basketball game box score and quarter-by-quarter breakdown.
-- list basketball games
-- nfl news feed.
-- statistics
-- get nfl game details including quarter scores and team statistics.
-- list football leagues
-- get football team details including squad and statistics.
-- list basketball games.
-- list all accessible football and soccer leagues.
-- list football matches filtered by league, date, or status.
-- get match
-- basketball game listings.
-- get basketball league standings.
-- nfl standings.
-- get football match details with lineups and head-to-head.
-- list latest nfl news.
-- list nfl games filtered by week, season, team, or status.
-- football match listings and live scores.
 - list basketball games filtered by league, date, or status.
-- nba
+- football league standings.
+- get football match details with lineups and head-to-head.
 - list nfl games
-- list nfl games filtered by week, season, or team.
-- get nfl standings by division.
 - get the current standings table for a football league.
-- individual football match details.
-- sports
-- football
-- get standings
-- get basketball standings
-- get the latest nfl news linked to specific players or teams.
+- list football matches
+- get football team
+- list all accessible football and soccer leagues.
+- list football leagues
+- get nfl game
+- get full football match details including lineups, events, stats, and head-to-head history.
+- list basketball games
+- sports data
+- get basketball game
+- football match listings and live scores.
+- list matches
+- get nfl standings by conference and division.
+- list nfl games filtered by week, season, team, or status.
+- get match
+- nfl game listings.
+- basketball game listings.
 - american football
+- statistics
+- get nfl standings by division.
+- list all accessible football leagues.
+- basketball
+- soccer
+- get football standings
+- get basketball league standings.
+- get basketball standings
+- list basketball games.
+- get standings
+- list nfl news
+- sports
+- list football/soccer matches filtered by league, date, team, or live status.
+- get football league standings table.
+- football league listings.
+- list latest nfl news.
+- nfl news feed.
+- individual football match details.
+- get football player
+- list nfl games filtered by week, season, or team.
+- list football matches filtered by league, date, or status.
+- nfl
+- nfl standings.
+- get the latest nfl news linked to specific players or teams.
+- get nfl game details including quarter scores and team statistics.
+- get basketball game box score and quarter-by-quarter breakdown.
+- live scores
+- get football match
+- get nfl standings
+- nba
+- football
+- get football player profile and statistics.
+- get football team details including squad and statistics.
 slug: sports-data
 source_filename: sports-data.yaml
 source_heading: Capability Spec

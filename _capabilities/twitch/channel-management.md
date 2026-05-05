@@ -34,40 +34,40 @@ personas: []
 provider_name: Twitch
 provider_slug: twitch
 search_terms:
-- broadcasting
-- create a clip from a broadcaster's live stream
-- video
-- entertainment
-- moderation
-- get channel information and configuration for a broadcaster
 - get the current chat settings for a broadcaster's channel
-- get chat settings
-- create clip
-- get channel information
-- send chat message
-- chat
-- send a message to channel chat
-- twitch
-- create a new poll on a broadcaster's channel
-- subscriber information
-- get channel subscriber information
-- channel polls management
-- get chat settings for a broadcaster
-- create a new poll
 - get broadcaster subscriptions
-- send a message to a twitch channel chat
-- gaming
-- channel management
-- channel configuration
-- create poll
-- chat configuration
-- get polls
-- get active and past polls for a broadcaster
-- get active and past polls
-- streaming
+- send a message to channel chat
+- create a clip from a broadcaster's live stream
+- get channel subscriber information
 - chat message sending
+- create clip
+- channel management
+- get chat settings
+- get active and past polls for a broadcaster
+- chat configuration
+- get channel information
+- channel polls management
+- streaming
+- get chat settings for a broadcaster
+- create poll
+- chat
+- entertainment
+- create a new poll
+- send a message to a twitch channel chat
+- get active and past polls
+- get channel information and configuration for a broadcaster
+- channel configuration
+- gaming
 - live video
+- send chat message
+- get polls
+- broadcasting
+- video
 - get subscriber information for a broadcaster's channel
+- subscriber information
+- moderation
+- create a new poll on a broadcaster's channel
+- twitch
 slug: channel-management
 source_filename: channel-management.yaml
 source_heading: Capability Spec

@@ -24,39 +24,39 @@ personas: []
 provider_name: Wolfram|Alpha
 provider_slug: wolfram-alpha
 search_terms:
-- get spoken result
-- Chatbot Engineer
-- voice-optimized computational results.
-- get a wolfram|alpha answer formatted for text-to-speech.
-- get short factual answer
-- building ai applications and llm integrations using wolfram knowledge
-- get spoken answer
-- wolfram alpha
-- building chatbots and voice assistants with factual answer capabilities
-- natural language processing
-- Search Engineer
-- augmenting search platforms with computational intelligence
-- search
-- Platform Developer
-- get short answer
-- query wolfram|alpha for llm-optimized computational results.
-- combines llm api, short answers, and spoken results for ai applications
-- artificial intelligence
-- llm-optimized computational knowledge queries.
 - query wolfram for llm
-- concise plain-text factual answers.
-- query wolfram|alpha for computational knowledge results optimized for llm processing. returns structured text with interpretation and data.
-- get a wolfram|alpha answer formatted for voice delivery. returns natural language text ready for text-to-speech synthesis.
-- ai
-- AI Developer
-- get a concise plain-text answer from wolfram|alpha.
-- integrating wolfram computational capabilities into educational platforms
-- query llm
 - llm
-- get a single concise plain-text factual answer from wolfram|alpha. ideal for chatbot responses and ai assistant integrations.
-- full and llm apis for search platforms and educational tools
 - chatbot
+- concise plain-text factual answers.
+- combines llm api, short answers, and spoken results for ai applications
+- Chatbot Engineer
+- get a concise plain-text answer from wolfram|alpha.
+- query wolfram|alpha for llm-optimized computational results.
+- Search Engineer
+- ai
+- augmenting search platforms with computational intelligence
+- get short answer
+- AI Developer
+- full and llm apis for search platforms and educational tools
+- get spoken result
+- natural language processing
+- get a wolfram|alpha answer formatted for text-to-speech.
+- artificial intelligence
+- query wolfram|alpha for computational knowledge results optimized for llm processing. returns structured text with interpretation and data.
+- voice-optimized computational results.
+- get a single concise plain-text factual answer from wolfram|alpha. ideal for chatbot responses and ai assistant integrations.
+- Platform Developer
+- query llm
+- building chatbots and voice assistants with factual answer capabilities
+- integrating wolfram computational capabilities into educational platforms
+- get spoken answer
+- building ai applications and llm integrations using wolfram knowledge
+- search
+- llm-optimized computational knowledge queries.
+- get short factual answer
+- get a wolfram|alpha answer formatted for voice delivery. returns natural language text ready for text-to-speech synthesis.
 - computational knowledge
+- wolfram alpha
 slug: ai-knowledge-integration
 source_filename: ai-knowledge-integration.yaml
 source_heading: Capability Spec

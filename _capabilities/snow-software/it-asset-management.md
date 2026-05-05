@@ -39,39 +39,39 @@ personas: []
 provider_name: Snow Software
 provider_slug: snow-software
 search_terms:
-- finops
-- list all discovered saas applications
-- list configured license policies
-- saas application usage kpis
-- organization-wide saas portfolio overview
-- license compliance
-- get upgrade options for a software license
-- saas management
 - get application users
-- get license policies
+- finops
 - get application kpis
-- get key performance indicators for a specific saas application including usage and spend
-- get applications
-- get saas overview
-- get users with access to a specific saas application for license right-sizing
-- snow software
-- users with access to a saas application
-- get saas application kpis
-- get applications overview kpis
-- get organization-wide saas portfolio kpis, total spend, and application count
-- get saas portfolio overview
+- get saas application users
 - get license upgrades
-- get saas applications
-- list all saas applications discovered in the snow atlas portfolio
-- get computer license tracking
-- list all software license policies configured in snow atlas
+- list configured license policies
 - it asset management
+- get computer license tracking
+- track which computers are using a license
+- software asset management
+- get key performance indicators for a specific saas application including usage and spend
+- get applications overview kpis
+- users with access to a saas application
+- get license policies
+- get saas applications
+- saas management
+- get saas overview
+- list all software license policies configured in snow atlas
+- get saas portfolio overview
+- get applications
+- list all discovered saas applications
+- saas application usage kpis
 - get available upgrade paths for a snow atlas software license
 - cloud license management
-- software asset management
-- get saas application users
+- list all saas applications discovered in the snow atlas portfolio
+- get users with access to a specific saas application for license right-sizing
+- get organization-wide saas portfolio kpis, total spend, and application count
+- get saas application kpis
+- organization-wide saas portfolio overview
+- get upgrade options for a software license
+- snow software
 - get computer-level tracking for a specific software license in snow atlas
-- track which computers are using a license
+- license compliance
 slug: it-asset-management
 source_filename: it-asset-management.yaml
 source_heading: Capability Spec

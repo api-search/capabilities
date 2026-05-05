@@ -45,49 +45,49 @@ personas: []
 provider_name: Unisys
 provider_slug: unisys
 search_terms:
-- retrieve stealth network role configurations for use in isolation requests
+- endpoint un-isolation operations
+- stealth network role management
 - retrieve stealth network role configurations
-- endpoint isolation
-- security
+- isolate a compromised or suspected endpoint from the stealth zero trust network
 - incident response
-- combined endpoint and user un-isolation
-- simultaneously restore both an endpoint and user to normal stealth network access
+- remove isolation from a user
+- security
+- get stealth roles
+- isolate endpoint
+- isolate user
+- retrieve stealth network role configurations for use in isolation requests
+- isolate machine and user
 - enterprise technology
+- combined endpoint and user isolation
+- unisolate machine and user
+- endpoint isolation operations
+- cybersecurity
+- unisys
+- combined endpoint and user un-isolation
+- restore a previously isolated endpoint to normal stealth network access
+- remove isolation from an endpoint
+- endpoint isolation
+- isolate a compromised or suspected user from the stealth zero trust network
+- end-to-end security incident response using stealth dynamic isolation — from detecting threats to containing and restoring endpoints and users
 - it services
 - unisolate user
-- zero trust
-- remove isolation from an endpoint
-- restore a previously isolated endpoint to normal stealth network access
-- network security
-- isolate machine and user
-- unisolate endpoint
-- unisys
-- isolate an endpoint from the stealth network
-- automated security orchestration platform triggering stealth isolation in response to siem alerts
-- combined endpoint and user isolation
-- endpoint isolation operations
-- isolate endpoint
-- isolate both an endpoint and user simultaneously
-- isolate user
-- remove isolation from a user
-- end-to-end security incident response using stealth dynamic isolation — from detecting threats to containing and restoring endpoints and users
-- responds to security incidents by isolating compromised endpoints and users in real time
-- cybersecurity
-- endpoint un-isolation operations
-- get stealth roles
-- stealth
-- stealth network role management
-- user un-isolation operations
-- restore a previously isolated user to normal stealth network access
-- simultaneously isolate both an endpoint and user in response to a security incident
-- remove isolation from both endpoint and user
-- isolate a compromised or suspected user from the stealth zero trust network
-- user isolation operations
 - performs coordinated containment of security incidents requiring simultaneous isolation
 - security operations
-- isolate a compromised or suspected endpoint from the stealth zero trust network
-- unisolate machine and user
+- network security
+- user isolation operations
+- zero trust
+- simultaneously restore both an endpoint and user to normal stealth network access
+- automated security orchestration platform triggering stealth isolation in response to siem alerts
+- isolate an endpoint from the stealth network
 - isolate a user from the stealth network
+- remove isolation from both endpoint and user
+- user un-isolation operations
+- isolate both an endpoint and user simultaneously
+- stealth
+- unisolate endpoint
+- simultaneously isolate both an endpoint and user in response to a security incident
+- restore a previously isolated user to normal stealth network access
+- responds to security incidents by isolating compromised endpoints and users in real time
 slug: zero-trust-security
 source_filename: zero-trust-security.yaml
 source_heading: Capability Spec

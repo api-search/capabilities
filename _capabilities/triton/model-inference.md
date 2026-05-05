@@ -73,70 +73,70 @@ personas: []
 provider_name: Triton Inference Server
 provider_slug: triton
 search_terms:
-- inference
-- unload a model from triton
-- list models
-- model unload
-- check if triton server is ready to accept inference requests
-- load or reload a model from the repository
-- load or reload a model from the repository into triton
-- open source
-- get triton server name, version, and extensions
-- server live
-- get model metadata including tensor definitions
-- check if a specific model is ready to accept inference requests
-- get current global request tracing configuration
-- submit an inference request to a model
-- list all models available in the repository
-- get triton server name, version, and supported extensions
-- run inference against a loaded model with input tensors
-- individual model operations
-- server ready
-- model repository and management
-- get log settings
-- model load
 - get current logging settings
-- model infer
-- unload model from server
+- load or reload a model from the repository into triton
 - get inference statistics for all loaded models
-- update request tracing levels and sampling rate
-- update trace settings
-- get the full configuration for a specific model
-- get current server logging configuration
-- update log settings
-- update request tracing configuration
-- nvidia
-- unload a model from triton to free resources
-- model config
-- load model into server
-- server metadata
 - run model inference
-- model inference statistics
-- statistics for all models
-- all model statistics
-- machine learning
-- check if triton server is alive
+- list models
 - logging configuration
-- get metadata for a specific model including input/output tensor shapes
-- model configuration
-- ai
-- get full model configuration
-- check if triton inference server is alive
-- model metadata
+- load model into server
+- nvidia
 - server and model health status
 - get inference statistics for a specific model
-- list all models available in the triton model repository
-- model serving
-- model statistics
 - get trace settings
-- get current global trace settings
+- model infer
+- list all models available in the repository
+- get metadata for a specific model including input/output tensor shapes
 - model ready
-- trace configuration
+- individual model operations
+- ai
 - update server logging configuration
-- deep learning
+- check if triton server is ready to accept inference requests
+- get current global request tracing configuration
+- open source
+- get triton server name, version, and extensions
+- model configuration
+- update log settings
+- get current server logging configuration
+- all model statistics
+- load or reload a model from the repository
+- list all models available in the triton model repository
+- model statistics
 - update server logging level and format
+- server ready
+- run inference against a loaded model with input tensors
 - kserve
 - server metadata and information
+- server live
+- model load
+- trace configuration
+- update trace settings
+- model unload
+- get the full configuration for a specific model
+- model inference statistics
+- update request tracing levels and sampling rate
+- server metadata
+- model repository and management
+- model config
+- check if triton server is alive
+- get full model configuration
+- unload a model from triton
+- check if triton inference server is alive
+- inference
+- machine learning
+- get current global trace settings
+- get log settings
+- unload a model from triton to free resources
+- model metadata
+- submit an inference request to a model
+- get triton server name, version, and supported extensions
+- model serving
+- get model metadata including tensor definitions
+- unload model from server
+- deep learning
+- check if a specific model is ready to accept inference requests
+- update request tracing configuration
+- statistics for all models
 slug: model-inference
 source_filename: model-inference.yaml
 source_heading: Capability Spec

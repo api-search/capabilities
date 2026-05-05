@@ -64,66 +64,66 @@ personas: []
 provider_name: Traiana
 provider_slug: traiana
 search_terms:
-- trade submission and lifecycle management.
-- intraday netting sessions.
-- settlement instruction management.
-- list trades processed through the harmony network with filtering by asset class and status.
-- submit a new trade for post-trade processing through the harmony network.
-- list compression runs.
-- list credit limits
-- list credit breaches
-- current credit utilization.
-- foreign exchange
-- get netting results
-- list settlement instructions for payment and delivery scheduling.
-- get results of a completed netting session showing net positions and settlement obligations.
-- get credit utilization
-- list credit limits.
-- trade matching results.
-- list trade matching results to monitor confirmation status.
-- list allocations
-- create an intraday netting session to reduce bilateral settlement obligations.
-- initiate a trade compression run to reduce notional exposure and counterparty count.
-- confirm trade
-- get current credit utilization.
-- create netting session
-- list trades
-- list settlement instructions.
-- create credit limit
-- trade compression
-- list settlements
-- list compression runs
-- risk management
-- get details of a specific trade including its matching status and lifecycle state.
-- credit risk
 - list credit limit breach events for risk oversight.
+- list trade matching results to monitor confirmation status.
+- submit a new trade for post-trade processing through the harmony network.
+- create an intraday netting session to reduce bilateral settlement obligations.
 - create a netting session.
-- list trade matching results.
-- list trades processed through the harmony network.
-- list trade allocations.
-- submit a trade for post-trade processing.
-- list all credit limits across prime-brokered, cleared, and bilateral counterparty relationships.
-- create a new compression run.
-- trade allocation management.
-- get current credit utilization showing available headroom across all counterparties.
-- submit a trade allocation.
-- credit limit management and monitoring.
-- list netting sessions.
-- submit allocation
-- list match results
-- trade compression runs.
-- trade matching
-- settlement
-- netting
-- create a new credit limit.
+- list credit limits.
 - fintech
-- list netting sessions
-- post-trade processing
+- list credit limits
+- list compression runs
+- list match results
+- trade matching results.
 - list trade allocations for block trade splitting and reporting.
-- confirm a matched trade to complete the confirmation workflow.
+- netting
+- submit a trade allocation.
+- risk management
+- create credit limit
+- list compression runs.
+- get details of a specific trade including its matching status and lifecycle state.
+- list credit breaches
 - create compression run
-- get trade
+- initiate a trade compression run to reduce notional exposure and counterparty count.
+- settlement instruction management.
+- get netting results
+- foreign exchange
+- list settlement instructions.
+- confirm a matched trade to complete the confirmation workflow.
+- confirm trade
+- trade matching
+- list trade allocations.
+- intraday netting sessions.
+- get current credit utilization showing available headroom across all counterparties.
+- create netting session
+- settlement
+- submit allocation
+- trade allocation management.
+- get current credit utilization.
+- trade compression
+- list netting sessions.
+- list trade matching results.
+- trade compression runs.
+- trade submission and lifecycle management.
+- submit a trade for post-trade processing.
+- credit risk
+- create a new compression run.
+- list all credit limits across prime-brokered, cleared, and bilateral counterparty relationships.
+- list allocations
+- credit limit management and monitoring.
 - submit trade
+- list settlements
+- list trades processed through the harmony network.
+- list trades processed through the harmony network with filtering by asset class and status.
+- get trade
+- list settlement instructions for payment and delivery scheduling.
+- post-trade processing
+- get credit utilization
+- list netting sessions
+- get results of a completed netting session showing net positions and settlement obligations.
+- create a new credit limit.
+- list trades
+- current credit utilization.
 slug: post-trade-processing
 source_filename: post-trade-processing.yaml
 source_heading: Capability Spec

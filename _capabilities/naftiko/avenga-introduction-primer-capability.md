@@ -1,40 +1,47 @@
 ---
 categories: []
 consumed_apis: []
-description: 'A small, runnable capability + use-case briefing pair (Use Cases #1 + #2) packaged as the Avenga introduction artifact.'
+description: A primer capability used to onboard Avenga consultants to Naftiko — wraps a representative HR/People-Ops API as a capability.
 layout: capability
 name: Avenga Introduction Primer Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-employees
+  path: /employees
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- 'a small, runnable capability + use-case briefing pair (use cases #1 + #2) packaged as the avenga introduction artifact.'
-- api integration
 - spec-driven integration
+- primer
+- list employees
+- avenga
+- ai
+- mcp
 - capabilities
-- example op
+- naftiko
+- api integration
 - governance
+- get employee
 slug: avenga-introduction-primer-capability
 source_filename: avenga-introduction-primer-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Avenga Introduction Primer Capability\n  description: 'A small, runnable capability + use-case briefing pair (Use Cases #1 + #2) packaged as the Avenga introduction artifact.'\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: avenga-introduction-primer-capability-rest\n    description: REST API for Avenga Introduction Primer Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n \
-  \     - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: avenga-introduction-primer-capability-mcp\n    description: MCP server exposing Avenga Introduction Primer Capability for AI agents.\n    tools:\n    - name: example\n      description: 'A small, runnable capability + use-case briefing pair (Use Cases #1 + #2) packaged as the Avenga introduction artifact.'\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: avenga-introduction-primer-capability-skills\n    description: Agent Skill bundle for Avenga Introduction Primer Capability.\n    skills:\n    - name: avenga-introduction-primer-capability\n      description: 'A small, runnable capability + use-case briefing pair (Use Cases #1 + #2) packaged as the Avenga introduction artifact.'\n      location: file:///opt/naftiko/skills/avenga-introduction-primer-capability\n\
-  \      allowed-tools: example\n      tools:\n      - name: example\n        description: 'A small, runnable capability + use-case briefing pair (Use Cases #1 + #2) packaged as the Avenga introduction artifact.'\n        from:\n          sourceNamespace: avenga-introduction-primer-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Avenga Introduction Primer Capability\n  description: A primer capability used to onboard Avenga consultants to Naftiko — wraps a representative HR/People-Ops API as a capability.\n  tags: [Naftiko, Avenga, Primer]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: bamboohr-env\n  keys: {BAMBOOHR_SUBDOMAIN: BAMBOOHR_SUBDOMAIN, BAMBOOHR_TOKEN: BAMBOOHR_TOKEN}\ncapability:\n  consumes:\n  - namespace: bamboohr\n    type: http\n    baseUri: https://api.bamboohr.com\n    authentication: {type: bearer, token: '{{BAMBOOHR_TOKEN}}'}\n    resources:\n    - {name: employees, path: '/api/gateway.php/{{BAMBOOHR_SUBDOMAIN}}/v1/employees/directory', operations: [{name: list-employees, method: GET}]}\n    - name: employee\n      path: '/api/gateway.php/{{BAMBOOHR_SUBDOMAIN}}/v1/employees/{{employee_id}}'\n      operations:\n      - {name: get-employee, method: GET, inputParameters: [{name: employee_id, in: path}]}\n  exposes:\n\
+  \  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: avenga-introduction-primer-capability-rest\n    description: REST surface for the Avenga primer.\n    resources:\n    - {name: employees, path: /employees, operations: [{method: GET, name: list-employees, call: bamboohr.list-employees}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: avenga-introduction-primer-capability-mcp\n    description: MCP for the primer demo.\n    tools:\n    - {name: list-employees, hints: {readOnly: true}, call: bamboohr.list-employees}\n    - name: get-employee\n      hints: {readOnly: true}\n      inputParameters: [{name: employee_id, type: string, required: true}]\n      call: bamboohr.get-employee\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: avenga-introduction-primer-capability-skills\n    description: Skill bundle for the primer.\n    skills:\n    - name: avenga-introduction-primer-capability\n      description: Avenga onboarding primer.\n\
+  \      location: file:///opt/naftiko/skills/avenga-introduction-primer-capability\n      allowed-tools: list-employees,get-employee\n      tools:\n      - {name: list-employees, from: {sourceNamespace: avenga-introduction-primer-capability-mcp, action: list-employees}}\n      - {name: get-employee, from: {sourceNamespace: avenga-introduction-primer-capability-mcp, action: get-employee}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/avenga-introduction-primer-capability.yaml
 tags:
 - Naftiko
+- Avenga
+- Primer
 tools:
-- description: 'A small, runnable capability + use-case briefing pair (Use Cases #1 + #2) packaged as the Avenga introduction artifact.'
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-employees
+- description: ''
+  hints:
+    readOnly: true
+  name: get-employee
 ---

@@ -58,54 +58,54 @@ provider_name: United Natural Foods (UNFI)
 provider_slug: united-natural-foods
 search_terms:
 - create product
-- fill rate metrics
-- get fill rate metrics by product
-- supply chain
-- update supplier contact and warehouse information
-- analytics
-- submit shipment tracking and fulfillment details for an order
-- inventory and waste analytics
-- get inventory insights
-- get product details
-- purchase order management
-- list purchase orders with status and date filters
-- individual order operations
-- submit a new product to unfi catalog
-- browse the unfi product catalog with filters for category, brand, and certification
-- retrieve supplier profile including contacts and warehouses
-- get sales insights
-- order fulfillment submission
-- wholesale
-- update supplier
-- supplier portal
-- sales analytics and reporting
-- get order
-- submit a new product listing to the unfi catalog
 - natural foods
-- update product listing
-- get details for a specific unfi product
-- list purchase orders
+- get details for a specific unfi purchase order
+- update supplier
+- list products
+- get product details
 - get order details
+- get fill rate performance metrics for supplier products
+- submit shipment and tracking details
+- submit a new product to unfi catalog
+- list purchase orders
+- analytics
+- get order
+- order fulfillment submission
+- update product
+- wholesale
+- inventory and waste analytics
+- individual order operations
+- update an existing product listing in the unfi catalog
+- list purchase orders with status and date filters
+- submit a new product listing to the unfi catalog
+- submit shipment tracking and fulfillment details for an order
+- get sales data across unfi network
+- fortune 500
+- supplier portal
+- food distribution
+- sales analytics and reporting
+- retrieve sales analytics across unfi's national distribution network
+- fill rate metrics
+- supply chain
+- update product listing
+- get inventory levels and food waste data
+- update supplier contact and warehouse information
+- submit fulfillment
+- list products in unfi catalog
+- get product
+- get fill rate metrics by product
+- browse the unfi product catalog with filters for category, brand, and certification
+- list orders
 - product catalog management
 - get inventory levels, voids, and food waste dashboard data
-- get supplier
-- food distribution
-- list products
-- list products in unfi catalog
-- update an existing product listing in the unfi catalog
-- submit shipment and tracking details
-- get fill rate performance metrics for supplier products
-- get product
-- get inventory levels and food waste data
-- get sales data across unfi network
+- get sales insights
 - individual product operations
-- list orders
-- submit fulfillment
-- fortune 500
-- get details for a specific unfi purchase order
+- purchase order management
 - get fill rates
-- update product
-- retrieve sales analytics across unfi's national distribution network
+- retrieve supplier profile including contacts and warehouses
+- get supplier
+- get details for a specific unfi product
+- get inventory insights
 slug: supplier-management
 source_filename: supplier-management.yaml
 source_heading: Capability Spec

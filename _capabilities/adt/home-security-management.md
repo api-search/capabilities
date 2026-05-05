@@ -39,54 +39,54 @@ personas: []
 provider_name: ADT
 provider_slug: adt
 search_terms:
-- automation
-- residential customer managing their home security system
-- list recorded video clips from an adt camera.
-- disarm system
-- security
-- access control
-- list all adt security systems associated with the account.
-- create an access code.
-- arm stay
-- monitoring
-- retrieve recent security events, alarm history, and activity log.
-- arm system
-- arm an adt security system in away mode (all zones active).
-- security devices.
-- unified workflow for managing adt smart home security
-- create temporary access code
-- disarm a security system.
-- arm away
-- get system status
-- list security systems
-- create a temporary access code for contractors or guests with optional expiry time.
-- list events
-- arm an adt security system in stay mode (perimeter zones only).
-- check the current arming status of an adt security system.
-- list all access codes configured for an adt security system.
-- list security events.
-- list devices
-- access code management.
-- list access codes.
-- disarm an adt security system.
-- manager overseeing multiple residential properties
-- business security administrator managing multi-site deployments
 - homeowner
-- arm a security system.
-- security events.
 - list video clips
-- list devices in a system.
-- home security
-- create access code
-- adt
-- list access codes
-- security system management.
 - property manager
-- list systems
+- list security systems
+- disarm an adt security system.
+- security
+- arm stay
 - get security events
-- iot
+- list devices in a system.
+- security events.
+- disarm a security system.
+- list events
+- arm a security system.
+- list access codes
+- create temporary access code
+- list all access codes configured for an adt security system.
+- adt
+- arm system
+- security system management.
+- retrieve recent security events, alarm history, and activity log.
 - list all security systems.
+- residential customer managing their home security system
+- create a temporary access code for contractors or guests with optional expiry time.
+- security devices.
+- list devices
+- business security administrator managing multi-site deployments
+- list security events.
+- list access codes.
+- check the current arming status of an adt security system.
+- create access code
+- create an access code.
+- get system status
+- arm away
+- arm an adt security system in away mode (all zones active).
+- access control
+- unified workflow for managing adt smart home security
 - smart home
+- monitoring
+- home security
+- arm an adt security system in stay mode (perimeter zones only).
+- list systems
+- manager overseeing multiple residential properties
+- iot
+- access code management.
+- automation
+- list recorded video clips from an adt camera.
+- list all adt security systems associated with the account.
+- disarm system
 - list all security devices (sensors, cameras, locks) in an adt system.
 slug: home-security-management
 source_filename: home-security-management.yaml

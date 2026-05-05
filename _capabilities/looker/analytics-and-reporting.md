@@ -70,63 +70,63 @@ personas: []
 provider_name: Looker
 provider_slug: looker
 search_terms:
+- get query details.
+- search for looks by title.
+- delete look
 - update dashboard
 - get look
-- delete dashboard
-- run a saved query.
-- bi platform
+- list users
+- update look
+- delete a look.
+- list all dashboards.
+- run a look and return results.
 - create user
-- search looks
-- delete user
-- list looks
-- list all saved looks.
+- get user
+- get query
+- delete a dashboard.
+- list all looks.
+- business intelligence
+- individual query operations.
 - analytics
-- get look details.
+- dashboard management.
+- create a user.
+- update a user.
 - create a query.
-- get dashboard
+- search dashboards
+- create query
 - run look
+- update user
+- data visualization
+- data analytics
+- delete a user.
 - dashboards
 - run query
-- run a look and return results.
-- look management.
-- get query
-- get user details.
-- get user
-- business intelligence
-- search for looks by title.
-- list all users.
-- delete a dashboard.
-- list all dashboards.
+- get dashboard
 - list dashboards
-- create a dashboard.
-- query management.
-- data analytics
-- looker
-- list users
-- create a new dashboard.
-- search for dashboards.
-- get dashboard details.
-- update user
-- create a new user.
-- update a user.
-- delete look
-- individual query operations.
-- create dashboard
-- dashboard management.
-- update a dashboard.
-- get query details.
-- individual look management.
-- delete a user.
-- delete a look.
-- update a look.
-- create query
-- individual dashboard management.
-- data visualization
-- search dashboards
-- create a user.
-- list all looks.
-- update look
 - user management.
+- search for dashboards.
+- search looks
+- create a new user.
+- delete dashboard
+- delete user
+- get dashboard details.
+- list looks
+- query management.
+- create dashboard
+- individual look management.
+- get look details.
+- create a new dashboard.
+- update a look.
+- bi platform
+- looker
+- run a saved query.
+- create a dashboard.
+- list all users.
+- get user details.
+- list all saved looks.
+- individual dashboard management.
+- update a dashboard.
+- look management.
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

@@ -41,35 +41,35 @@ personas: []
 provider_name: Salesforce Automation System
 provider_slug: salesforce-automation-system
 search_terms:
-- automation
-- query processinstance, flowinterview, or workflowrule records.
-- list approval processes
-- submit, approve, reject, or recall approval requests.
-- get a flow version record by id.
-- invoke a salesforce autolaunched flow with input variables. returns output variable values from the flow execution.
-- get flow
-- approval process
-- get the metadata for a specific salesforce flow version by record id.
-- query active and draft flow definitions.
-- salesforce
-- workflow
-- flow
-- query salesforce flow definitions. returns active and draft flows with their api names, labels, and statuses.
-- list all approval process configurations.
 - submit a record for approval, approve or reject an approval request, or recall an in-progress approval.
-- execute a soql query to retrieve processinstance, flowinterview, or workflowrule records from salesforce.
+- invoke a salesforce autolaunched flow with input variables. returns output variable values from the flow execution.
+- query processinstance, flowinterview, or workflowrule records.
 - list flows
-- invoke flow
-- approval process management.
+- approval process
+- workflow
 - query automation-related salesforce records.
-- query automation records
-- submit approval
+- invoke an autolaunched flow with input variables.
+- query salesforce flow definitions. returns active and draft flows with their api names, labels, and statuses.
 - list all approval process definitions configured in the salesforce org.
-- process builder
+- salesforce flow definitions and invocation.
+- list all approval process configurations.
+- get flow
+- approval process management.
+- list approval processes
+- flow
+- salesforce
+- submit, approve, reject, or recall approval requests.
+- get the metadata for a specific salesforce flow version by record id.
+- submit approval
+- query automation records
+- get a flow version record by id.
 - get flow version
 - crm
-- invoke an autolaunched flow with input variables.
-- salesforce flow definitions and invocation.
+- invoke flow
+- execute a soql query to retrieve processinstance, flowinterview, or workflowrule records from salesforce.
+- process builder
+- automation
+- query active and draft flow definitions.
 slug: process-automation
 source_filename: process-automation.yaml
 source_heading: Capability Spec

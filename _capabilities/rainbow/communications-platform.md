@@ -43,50 +43,50 @@ personas: []
 provider_name: Rainbow
 provider_slug: rainbow
 search_terms:
-- get own profile
-- get rainbow contact profile including presence status and contact details
-- list recent conversations for the authenticated rainbow user
-- video
-- create bubble
-- send a chat message to a rainbow contact (1-to-1) or into a group bubble. supports text messages via rest api.
-- list conversations
-- send message
+- send a message to a contact or group
+- contact directory search
+- list bubbles
+- list group chat rooms (bubbles) the user belongs to in rainbow
+- communications
+- create a new group chat room
+- update presence status
+- create a new rainbow group chat room (bubble) with optional members
 - get contact profile and presence
 - get my profile
-- list user conversations
-- user presence management
-- unified communications
-- create a new rainbow group chat room (bubble) with optional members
-- voice
-- presence
+- send message
+- search contacts
 - get message history for a specific rainbow conversation
-- contacts
-- update presence
-- get contact
-- update presence status
-- group chat rooms
 - get the authenticated rainbow user's own profile
 - telephony
+- list conversations
 - chat
-- create a new group chat room
-- messaging
-- communications
-- collaboration
-- update presence status in rainbow (online, away, busy, dnd)
-- list group chat rooms
-- contact directory search
-- get conversation messages
-- search rainbow enterprise directory for contacts by name, email, or phone
-- search rainbow directory
-- list group chat rooms (bubbles) the user belongs to in rainbow
-- list bubbles
-- authenticated user's profile
-- send and retrieve chat messages
-- cpaas
-- send a message to a contact or group
-- search contacts
+- presence
+- get rainbow contact profile including presence status and contact details
+- update presence
 - individual contact profiles
+- search rainbow enterprise directory for contacts by name, email, or phone
+- send and retrieve chat messages
+- get conversation messages
+- create bubble
+- user presence management
+- update presence status in rainbow (online, away, busy, dnd)
+- list recent conversations for the authenticated rainbow user
+- group chat rooms
+- send a chat message to a rainbow contact (1-to-1) or into a group bubble. supports text messages via rest api.
+- unified communications
+- list group chat rooms
+- search rainbow directory
+- get contact
+- get own profile
+- voice
+- video
 - list and manage conversations
+- cpaas
+- authenticated user's profile
+- contacts
+- list user conversations
+- collaboration
+- messaging
 slug: communications-platform
 source_filename: communications-platform.yaml
 source_heading: Capability Spec

@@ -48,37 +48,37 @@ personas: []
 provider_name: Telefon
 provider_slug: telefon
 search_terms:
-- voice call management
+- list conferences
+- communications
+- number provisioning
+- sms
+- send an sms or mms message globally
 - initiate an outbound phone call to a number
-- create a conference room
-- create conference
-- initiate an outbound voice call
-- list sent and received sms and mms messages
 - send message
 - sms and mms messaging
-- conference call management
-- list voice calls with optional status and direction filters
-- create a new conference call room
-- voice
-- list conferences
-- sms
+- list sent and received sms and mms messages
 - telephony
-- make call
-- messaging
-- communications
-- list active and completed conferences
-- call recording
-- send an sms or mms message
-- number provisioning
-- send sms
-- list messages
-- voip
 - create call
+- list calls
+- list voice calls with optional status and direction filters
+- conference call management
+- create a conference room
+- call recording
+- create conference
+- voip
+- global coverage
+- list active and completed conferences
+- send an sms or mms message
+- voice
+- make call
+- create a new conference call room
+- initiate an outbound voice call
 - list voice calls
 - cpaas
-- list calls
-- send an sms or mms message globally
-- global coverage
+- voice call management
+- send sms
+- list messages
+- messaging
 slug: telephony-platform
 source_filename: telephony-platform.yaml
 source_heading: Capability Spec

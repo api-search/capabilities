@@ -1,40 +1,45 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability implementing the Capability-First Context Engineering use case (#8) — design tools as MCP first, then map to APIs.
+description: A capability designed MCP-first — context engineering surface (token budget, ranking, retrieval) exposed as primary MCP tools.
 layout: capability
 name: Mcp First Context Engineering Capability
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: build-context
+  path: /context/build
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- api integration
+- context engineering
 - spec-driven integration
+- get context build
+- mcp
 - capabilities
-- a capability implementing the capability-first context engineering use case (#8) — design tools as mcp first, then map to apis.
-- example op
+- naftiko
+- build context
+- api integration
 - governance
+- ai
 slug: mcp-first-context-engineering-capability
 source_filename: mcp-first-context-engineering-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Mcp First Context Engineering Capability\n  description: A capability implementing the Capability-First Context Engineering use case (#8) — design tools as MCP first, then map to APIs.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: mcp-first-context-engineering-capability-rest\n    description: REST API for Mcp First Context Engineering Capability.\n    resources:\n    - name: example\n      path: /example\n     \
-  \ operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: mcp-first-context-engineering-capability-mcp\n    description: MCP server exposing Mcp First Context Engineering Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability implementing the Capability-First Context Engineering use case (#8) — design tools as MCP first, then map to APIs.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: mcp-first-context-engineering-capability-skills\n    description: Agent Skill bundle for Mcp First Context Engineering Capability.\n    skills:\n    - name: mcp-first-context-engineering-capability\n      description: A capability implementing the Capability-First Context Engineering use case (#8) — design tools as MCP first, then map to APIs.\n      location: file:///opt/naftiko/skills/mcp-first-context-engineering-capability\n\
-  \      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability implementing the Capability-First Context Engineering use case (#8) — design tools as MCP first, then map to APIs.\n        from:\n          sourceNamespace: mcp-first-context-engineering-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Mcp First Context Engineering Capability\n  description: A capability designed MCP-first — context engineering surface (token budget, ranking, retrieval) exposed as primary MCP tools.\n  tags: [Naftiko, MCP, Context Engineering]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: naftiko-env\n  keys: {NAFTIKO_API_KEY: NAFTIKO_API_KEY}\ncapability:\n  consumes:\n  - namespace: naftiko-context\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication: {type: bearer, token: '{{NAFTIKO_API_KEY}}'}\n    resources:\n    - {name: context-builds, path: /v1/context/builds, operations: [{name: build-context, method: POST}]}\n    - name: context-build\n      path: /v1/context/builds/{{build_id}}\n      operations:\n      - {name: get-context-build, method: GET, inputParameters: [{name: build_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: mcp-first-context-engineering-capability-rest\n\
+  \    description: REST surface for MCP-first context engineering.\n    resources:\n    - {name: build, path: /context/build, operations: [{method: POST, name: build-context, call: naftiko-context.build-context}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: mcp-first-context-engineering-capability-mcp\n    description: MCP for context engineering.\n    tools:\n    - {name: build-context, call: naftiko-context.build-context}\n    - name: get-context-build\n      hints: {readOnly: true}\n      inputParameters: [{name: build_id, type: string, required: true}]\n      call: naftiko-context.get-context-build\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: mcp-first-context-engineering-capability-skills\n    description: Skill for context engineering.\n    skills:\n    - name: mcp-first-context-engineering-capability\n      description: MCP-first context engineering.\n      location: file:///opt/naftiko/skills/mcp-first-context-engineering-capability\n\
+  \      allowed-tools: build-context,get-context-build\n      tools:\n      - {name: build-context, from: {sourceNamespace: mcp-first-context-engineering-capability-mcp, action: build-context}}\n      - {name: get-context-build, from: {sourceNamespace: mcp-first-context-engineering-capability-mcp, action: get-context-build}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/mcp-first-context-engineering-capability.yaml
 tags:
 - Naftiko
+- MCP
+- Context Engineering
 tools:
-- description: A capability implementing the Capability-First Context Engineering use case (#8) — design tools as MCP first, then map to APIs.
+- description: ''
+  hints: {}
+  name: build-context
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-context-build
 ---

@@ -57,51 +57,51 @@ personas: []
 provider_name: Trabex
 provider_slug: trabex
 search_terms:
-- aes filing
-- create company
-- submit an export shipment for compliance processing
-- aes filing submission
-- create a company record
-- screen multiple parties simultaneously
-- retrieve aes filing history
-- retrieve a specific shipment with compliance details
-- get shipment documents
-- retrieve aes filing history and status
-- get companies
-- individual shipment operations
 - bulk restricted party screening
-- batch screen parties
-- export control
-- retrieve compliance details for a specific trabex shipment
-- get aes filings
-- retrieve export compliance documents for a trabex shipment
+- restricted party screening
 - screen party
+- submit electronic export information to aes for a shipment
 - submit aes filing
+- submit an export shipment for compliance processing
+- aes filing management
+- retrieve export documents for a shipment
+- retrieve aes filing history
+- trade compliance
+- batch screen parties
+- screen a trading party against denied party lists
+- retrieve compliance details for a specific trabex shipment
+- screen multiple trading parties simultaneously against compliance lists
+- export control
+- retrieve aes filing history and status
+- screen multiple parties simultaneously
+- get shipment documents
+- individual shipment operations
+- create a company record
+- retrieve export shipments with compliance status
+- aes filing submission
+- get shipment
+- logistics
+- retrieve a specific shipment with compliance details
+- retrieve company records
 - create a company record in trabex for use in compliance workflows
+- get shipments
+- submit aes filing for a shipment
+- trading party management
+- create company
+- shipment management
+- get companies
+- retrieve export shipments with compliance status from trabex
+- screen a trading party against denied party and sanctions lists
+- export shipment management and compliance processing
+- get aes filings
+- retrieve trading party company records from trabex
+- restricted party screening operations
 - compliance
 - export compliance documents
-- get shipments
-- create shipment
-- screen a trading party against denied party lists
-- submit aes filing for a shipment
-- retrieve company records
-- screen a trading party against denied party and sanctions lists
-- submit electronic export information to aes for a shipment
-- retrieve export documents for a shipment
-- logistics
-- get shipment
-- aes filing management
-- retrieve export shipments with compliance status
-- shipment management
-- trade compliance
-- screen multiple trading parties simultaneously against compliance lists
-- restricted party screening
-- restricted party screening operations
 - submit a new export shipment for trabex compliance processing
-- trading party management
-- retrieve trading party company records from trabex
-- retrieve export shipments with compliance status from trabex
-- export shipment management and compliance processing
+- create shipment
+- retrieve export compliance documents for a trabex shipment
+- aes filing
 slug: export-compliance
 source_filename: export-compliance.yaml
 source_heading: Capability Spec

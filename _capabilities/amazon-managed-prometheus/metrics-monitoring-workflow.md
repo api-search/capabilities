@@ -23,32 +23,32 @@ personas: []
 provider_name: Amazon Managed Service for Prometheus
 provider_slug: amazon-managed-prometheus
 search_terms:
-- create prometheus workspace
-- prometheus workspaces
-- create prometheus recording and alerting rules namespace
-- monitoring
-- list all prometheus workspaces
-- SRE
-- create recording rules
-- create alert manager
-- list all prometheus rule group namespaces
-- alert manager configuration
-- configure alert manager
-- list prometheus workspaces
-- create a workspace
-- alerting
-- get workspace details and prometheus remote write endpoint url
 - amazon
+- alerting
 - list rule groups
 - containers
-- configure alert manager for prometheus alerting notifications
-- list workspaces
 - create a new prometheus workspace for storing container metrics
-- describe prometheus workspace
-- observability
 - prometheus
-- create workspace
+- create a workspace
+- configure alert manager for prometheus alerting notifications
+- observability
+- configure alert manager
+- create prometheus workspace
 - DevOps Engineer
+- create alert manager
+- create recording rules
+- list prometheus workspaces
+- prometheus workspaces
+- create prometheus recording and alerting rules namespace
+- list all prometheus workspaces
+- monitoring
+- list workspaces
+- get workspace details and prometheus remote write endpoint url
+- alert manager configuration
+- SRE
+- list all prometheus rule group namespaces
+- create workspace
+- describe prometheus workspace
 slug: metrics-monitoring-workflow
 source_filename: metrics-monitoring-workflow.yaml
 source_heading: Capability Spec

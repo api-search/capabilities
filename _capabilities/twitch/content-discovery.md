@@ -35,42 +35,42 @@ personas: []
 provider_name: Twitch
 provider_slug: twitch
 search_terms:
-- get streams
-- video
-- query detailed game information from igdb
-- entertainment
-- query game platforms
+- channel information and search
 - live stream discovery
-- get top games
+- get the most popular games on twitch
+- get vods and highlight videos from a broadcaster
+- get the most popular game categories on twitch right now
+- content discovery
+- game and category discovery
+- query game database
+- query gaming platform information from igdb
+- vod and highlight videos
+- search for twitch channels by name
+- get games
+- streaming
 - search for twitch channels
-- query games
-- get clips from a broadcaster or game
 - content clips
 - get clips
-- get games
-- search for twitch channels by name
-- get videos from a broadcaster or game
-- get the most popular games on twitch
-- get the most popular game categories on twitch right now
-- twitch
-- content discovery
-- get active live streams filtered by game, language, or user
-- get game information by id or name
-- get videos
-- channel information and search
-- find active live streams on twitch by game, language, or user
-- game and category discovery
-- search channels
-- get vods and highlight videos from a broadcaster
-- gaming
-- query gaming platform information from igdb
-- detailed game metadata from igdb
+- entertainment
+- get streams
 - get video clips from a broadcaster or game category
-- vod and highlight videos
-- streaming
-- query game database
-- query the igdb game database for detailed game metadata
+- get clips from a broadcaster or game
+- query detailed game information from igdb
+- gaming
 - live video
+- video
+- get active live streams filtered by game, language, or user
+- query the igdb game database for detailed game metadata
+- get videos
+- get videos from a broadcaster or game
+- find active live streams on twitch by game, language, or user
+- get top games
+- get game information by id or name
+- search channels
+- query games
+- query game platforms
+- detailed game metadata from igdb
+- twitch
 slug: content-discovery
 source_filename: content-discovery.yaml
 source_heading: Capability Spec

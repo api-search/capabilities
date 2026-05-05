@@ -42,52 +42,52 @@ personas: []
 provider_name: Towers Watson
 provider_slug: towers-watson
 search_terms:
-- actuarial
 - submit hr case
-- get employee total rewards
-- get total compensation and rewards statement for an employee
-- employee benefits enrollment
-- get benefits enrollment
+- consulting
+- total compensation and rewards
 - list all employees in the hr portal with optional department and status filters
-- create hr content
-- list cases
-- get details and status for a specific hr service case
-- total rewards
-- publish hr content
-- list hr content
-- employee experience
-- hr content and communications
-- get total rewards statement
-- list all employees
-- list content
-- list hr content articles, announcements, and policies
-- get hr portal profile for a specific employee
-- insurance brokerage
+- list employees
 - hr service cases
 - create a new case
-- create case
-- risk management
-- get hr case
-- get employee benefits
-- get employee profile
-- employee management
-- list hr service cases with optional status and category filters
-- list employees
-- create content
+- get employee
 - human resources
+- employee benefits enrollment
+- actuarial
+- risk management
+- publish hr content
+- human capital
+- benefits
+- list hr content
+- list all employees
+- list cases
 - get benefits summary
 - individual employee
-- get employee
-- human capital
+- submit a new hr service case or employee inquiry
+- get hr portal profile for a specific employee
+- employee management
+- list content
+- create hr content
+- get total rewards statement
+- list hr content articles, announcements, and policies
+- create content
+- get employee total rewards
+- get hr case
+- create case
+- hr content and communications
+- get total compensation and rewards statement for an employee
+- get details and status for a specific hr service case
 - get total rewards
 - hr technology
 - list hr cases
-- consulting
-- submit a new hr service case or employee inquiry
-- benefits
-- create and publish a new hr content item or announcement
+- list hr service cases with optional status and category filters
+- get employee benefits
+- get benefits enrollment
+- insurance brokerage
 - get current benefits enrollment summary for an employee
-- total compensation and rewards
+- total rewards
+- employee experience
+- create and publish a new hr content item or announcement
+- get employee profile
 slug: employee-experience
 source_filename: employee-experience.yaml
 source_heading: Capability Spec

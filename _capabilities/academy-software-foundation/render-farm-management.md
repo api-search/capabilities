@@ -33,43 +33,43 @@ provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
 - animation
-- list hosts
-- list all render host machines
-- monitor and manage render jobs, hosts, and shows using opencue
-- film
-- render wrangler
-- standards
-- open source
-- vfx
-- get render job
-- rendering
-- production staff responsible for monitoring and managing render farm operations
-- technical director building and maintaining vfx production pipeline tools
-- monitoring and management of distributed render farm resources and jobs
-- list render jobs
-- list all active shows in the render farm
-- list jobs
-- opencue
-- list and manage render hosts
 - list all render host machines and their current utilization
-- list shows
-- academy software foundation
-- list all active shows (productions) in the render farm
 - list render jobs for a specific show with optional state filtering
+- list shows
+- monitoring and management of distributed render farm resources and jobs
+- list jobs
+- list and manage render hosts
+- list and manage render shows (productions)
+- monitor and manage render jobs, hosts, and shows using opencue
+- open source
+- list render jobs
+- list all active shows (productions) in the render farm
+- render wrangler
+- list all render host machines
+- technical director building and maintaining vfx production pipeline tools
 - linux foundation
-- list and manage render jobs
-- get details for a specific render job
-- get or kill a specific render job
-- get detailed status and frame counts for a specific render job
-- color management
-- vfx pipeline
-- visual effects
-- list render jobs for a show
-- get job
+- list all active shows in the render farm
 - pipeline td
+- get details for a specific render job
+- list render jobs for a show
+- academy software foundation
+- list and manage render jobs
+- list hosts
 - render farm
 - list render hosts
-- list and manage render shows (productions)
+- vfx pipeline
+- visual effects
+- standards
+- get job
+- color management
+- film
+- get or kill a specific render job
+- get render job
+- rendering
+- vfx
+- production staff responsible for monitoring and managing render farm operations
+- get detailed status and frame counts for a specific render job
+- opencue
 slug: render-farm-management
 source_filename: render-farm-management.yaml
 source_heading: Capability Spec

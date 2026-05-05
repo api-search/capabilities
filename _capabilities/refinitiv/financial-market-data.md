@@ -42,36 +42,36 @@ personas: []
 provider_name: Refinitiv
 provider_slug: refinitiv
 search_terms:
+- news
+- market data
 - esg scores for instruments.
+- get interday pricing
+- historical interday pricing summaries.
+- get news headlines
+- get esg scores
+- retrieve esg pillar scores for financial instruments.
+- historical intraday pricing summaries.
+- analytics
+- search and retrieve financial news from reuters and other sources.
+- convert instrument identifiers between isin, cusip, sedol, ric, and permid.
+- financial data
+- refinitiv
+- get pricing snapshot
+- financial news headlines.
+- retrieve historical daily/weekly/monthly ohlcv pricing for a financial instrument by ric.
+- convert symbology
+- esg
+- real-time pricing snapshots.
+- retrieve historical intraday pricing at 1, 5, 30, or 60 minute intervals.
+- get esg measures
+- search instruments
+- get pricing snapshots
 - convert between identifier types.
+- search for instruments.
+- detailed esg measures.
+- get current real-time or delayed pricing snapshot for one or more instruments.
 - search for instruments, organizations, and economic indicators.
 - get intraday pricing
-- analytics
-- real-time pricing snapshots.
-- get esg scores
-- get news headlines
-- financial news headlines.
-- market data
-- get current real-time or delayed pricing snapshot for one or more instruments.
-- retrieve historical daily/weekly/monthly ohlcv pricing for a financial instrument by ric.
-- refinitiv
-- search instruments
-- detailed esg measures.
-- esg
-- news
-- convert instrument identifiers between isin, cusip, sedol, ric, and permid.
-- convert symbology
-- get pricing snapshot
-- search and retrieve financial news from reuters and other sources.
-- get pricing snapshots
-- financial data
-- get esg measures
-- historical intraday pricing summaries.
-- get interday pricing
-- search for instruments.
-- retrieve historical intraday pricing at 1, 5, 30, or 60 minute intervals.
-- historical interday pricing summaries.
-- retrieve esg pillar scores for financial instruments.
 slug: financial-market-data
 source_filename: financial-market-data.yaml
 source_heading: Capability Spec

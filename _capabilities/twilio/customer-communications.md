@@ -36,44 +36,44 @@ personas: []
 provider_name: Twilio
 provider_slug: twilio
 search_terms:
-- check verification
-- fetch details of a specific message
-- fetch message
-- phone
-- video
-- t1
-- initiate an outbound voice call
-- send message
-- send a verification code to a user via sms, voice, or email
-- make and manage voice calls
 - send an sms or mms message to a customer
-- verification
-- check a verification code
-- make an outbound call
-- voice
 - start verification
-- customer engagement
-- contact center
-- authentication
-- sms
-- start a verification
-- make call
-- messaging
+- list voice calls for the account
 - communications
-- send verification codes
+- make and manage voice calls
+- check a verification code
+- sms
+- check verification
+- send message
+- twilio
+- email
+- verification
+- customer engagement
+- verify a code submitted by a user to complete 2fa
+- make an outbound call
+- fetch message
+- list calls
+- t1
+- send a verification code to a user via sms, voice, or email
+- check verification codes
+- send and manage sms/mms messages
+- notifications
+- contact center
 - list sms/mms messages for the account
 - send an sms or mms message
+- voice
+- make call
+- authentication
+- video
+- send verification codes
+- initiate an outbound voice call
+- iot
+- fetch details of a specific message
+- phone
 - send sms
 - list messages
-- check verification codes
-- verify a code submitted by a user to complete 2fa
-- email
-- list voice calls for the account
-- send and manage sms/mms messages
-- list calls
-- twilio
-- iot
-- notifications
+- messaging
+- start a verification
 slug: customer-communications
 source_filename: customer-communications.yaml
 source_heading: Capability Spec

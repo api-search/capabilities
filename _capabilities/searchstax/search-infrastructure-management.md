@@ -46,47 +46,47 @@ personas: []
 provider_name: SearchStax
 provider_slug: searchstax
 search_terms:
-- solr deployment management
-- get deployment
-- search infrastructure
-- list all solr deployments in the searchstax account with their status and configuration
-- create an on-demand backup of a solr deployment
-- create deployment
-- delete a deployment
-- site search
-- create deployment backup
-- get billable usage data for dedicated solr deployments in a specific month
-- deployment node management
-- deployments
-- provision a new managed solr deployment on aws, azure, or google cloud
-- solr
 - cloud management
 - provision a new solr deployment
-- create backup
-- full-text search
-- list all solr deployments
-- check the operational health status of a solr deployment (ok, warn, or error)
-- check deployment health status
-- get usage data for a billing period
-- search
-- list nodes
-- delete deployment
 - list all available backups for a solr deployment
-- get deployment health
-- list all nodes in a deployment
-- list backups
+- list deployment backups
+- full-text search
 - get usage
+- get deployment
+- search infrastructure
+- get deployment configuration and status
+- solr deployment management
+- get billable usage data for dedicated solr deployments in a specific month
+- get usage data for a billing period
+- get full configuration and status details for a specific solr deployment
+- deployment health monitoring
+- create backup
+- list deployments
+- site search
 - usage and billing reporting
 - list all solr and zookeeper nodes in a deployment with their addresses and status
-- get full configuration and status details for a specific solr deployment
-- list deployments
-- specific deployment operations
-- deployment health monitoring
-- delete a solr deployment and optionally retain its backups
-- backup and restore operations
+- deployments
 - devops
-- get deployment configuration and status
-- list deployment backups
+- create deployment backup
+- backup and restore operations
+- delete deployment
+- create deployment
+- get deployment health
+- delete a solr deployment and optionally retain its backups
+- check the operational health status of a solr deployment (ok, warn, or error)
+- create an on-demand backup of a solr deployment
+- search
+- delete a deployment
+- solr
+- list nodes
+- deployment node management
+- list backups
+- list all nodes in a deployment
+- specific deployment operations
+- provision a new managed solr deployment on aws, azure, or google cloud
+- list all solr deployments
+- list all solr deployments in the searchstax account with their status and configuration
+- check deployment health status
 - managed search
 slug: search-infrastructure-management
 source_filename: search-infrastructure-management.yaml

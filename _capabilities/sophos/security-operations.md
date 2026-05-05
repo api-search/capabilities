@@ -25,24 +25,24 @@ personas: []
 provider_name: Sophos
 provider_slug: sophos
 search_terms:
-- security events from sophos central
+- cybersecurity
+- incident response
+- siem
+- sophos
+- list security alerts from sophos central within the last 24 hours
+- list security alerts
 - retrieve security alerts from sophos central. use for threat detection, incident triage, and monitoring active security events. supports cursor pagination and date filtering.
-- endpoint protection
-- security alerts from sophos central
+- list alerts
 - security
 - list security events
-- incident response
-- sophos
-- list events
-- threat detection
-- cybersecurity
-- security operations
-- list alerts
 - list security events from sophos central within the last 24 hours
+- threat detection
+- security operations
+- security alerts from sophos central
 - retrieve security events from sophos central. use for siem integration, log analysis, and security monitoring. supports filtering by event type exclusions and date ranges.
-- list security alerts
-- list security alerts from sophos central within the last 24 hours
-- siem
+- security events from sophos central
+- endpoint protection
+- list events
 slug: security-operations
 source_filename: security-operations.yaml
 source_heading: Capability Spec

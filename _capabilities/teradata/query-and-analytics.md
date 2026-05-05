@@ -24,45 +24,45 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- list cross-system query summaries from querygrid.
-- integrates applications with teradata via rest apis.
-- get query status
 - data warehousing
-- analytics
-- execute a sql query against teradata vantage.
-- administers querygrid systems, nodes, and software.
-- execute query
-- Data Analyst
-- list available vantage systems for query execution.
-- Platform Administrator
-- Application Developer
-- list available vantage systems.
-- Data Engineer
-- get the status and results of a submitted query.
-- cloud
-- sql query execution and session management.
-- sql queries.
-- enterprise
-- database
-- teradata
-- sql
-- create session
-- create a query session.
-- query
-- list querygrid queries
-- manage querygrid data fabric infrastructure.
-- executes queries and analyzes data across vantage systems.
-- data management
-- query sessions.
-- machine learning
-- execute sql queries and analytics.
-- health monitoring and issue detection.
-- list query systems
-- execute a sql query.
-- create a new query session on a vantage system.
-- system and fabric configuration management.
-- manages data fabric infrastructure and cross-system connectivity.
 - available systems.
+- execute a sql query.
+- cloud
+- enterprise
+- Platform Administrator
+- query sessions.
+- analytics
+- query
+- create session
+- Data Engineer
+- execute query
+- list available vantage systems for query execution.
+- teradata
+- sql queries.
+- get query status
+- execute sql queries and analytics.
+- sql query execution and session management.
+- Data Analyst
+- administers querygrid systems, nodes, and software.
+- database
+- list query systems
+- list querygrid queries
+- health monitoring and issue detection.
+- data management
+- get the status and results of a submitted query.
+- execute a sql query against teradata vantage.
+- executes queries and analyzes data across vantage systems.
+- machine learning
+- manage querygrid data fabric infrastructure.
+- list cross-system query summaries from querygrid.
+- list available vantage systems.
+- manages data fabric infrastructure and cross-system connectivity.
+- system and fabric configuration management.
+- Application Developer
+- create a query session.
+- integrates applications with teradata via rest apis.
+- sql
+- create a new query session on a vantage system.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec

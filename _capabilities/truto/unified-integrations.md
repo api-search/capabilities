@@ -57,61 +57,61 @@ personas: []
 provider_name: Truto
 provider_slug: truto
 search_terms:
+- provision an mcp server for an integrated account so ai agents can directly access the integration's tools.
+- list time off requests from a connected hris provider with employee and status filtering.
+- saas
+- list candidates
+- list hris groups.
+- list employees
+- crm contacts
+- hris employees
+- list jobs
+- create contact
+- create mcp server
+- crm opportunities
+- get employee
+- ats job postings
+- create integrated account
+- list candidate profiles from a connected ats provider.
+- list job postings from a connected ats (greenhouse, lever, workable, etc.) with status and department filtering.
+- list job applications from a connected ats with job, candidate, and status filtering.
+- list timeoff requests
+- embedded integrations
+- list integrated accounts
+- create integrated account.
+- list applications from connected ats.
 - generate a link token to initiate a customer-facing connection flow for a specific integration (e.g., bamboohr, greenhouse, salesforce).
+- list employees from connected hris.
+- list sales opportunities from a connected crm with account, stage, and status filtering.
+- create contact in connected crm.
+- list contacts from connected crm.
+- create a new contact in the connected crm provider.
+- ai agents
+- create link token for customer connection flow.
+- list opportunities from connected crm.
+- list candidates from connected ats.
+- list applications
+- hris groups and departments
+- mcp
+- create link token
+- ats candidates
+- unified api
+- list contacts
+- integrated accounts management
+- ats
+- crm
+- list jobs from connected ats.
+- ats applications
+- list crm contacts from a connected provider (salesforce, hubspot, pipedrive, etc.).
+- list employees from a connected hris provider (bamboohr, workday, rippling, etc.) with status and department filtering.
+- list all integrated accounts connected to your truto tenant, showing which third-party apps each customer has connected.
+- link token generation
+- list integrated accounts.
+- get a single employee record by id from a connected hris provider.
 - integration platform
 - hris
-- list applications from connected ats.
-- create link token
-- ai agents
-- list candidate profiles from a connected ats provider.
-- list employees from connected hris.
-- list applications
-- list crm contacts from a connected provider (salesforce, hubspot, pipedrive, etc.).
-- list hris groups.
-- hris groups and departments
-- crm contacts
-- saas
-- integrated accounts management
-- list employees from a connected hris provider (bamboohr, workday, rippling, etc.) with status and department filtering.
-- crm opportunities
-- list all integrated accounts connected to your truto tenant, showing which third-party apps each customer has connected.
-- ats job postings
-- list job postings from a connected ats (greenhouse, lever, workable, etc.) with status and department filtering.
-- create a new contact in the connected crm provider.
-- unified api
-- list candidates
-- list candidates from connected ats.
-- list sales opportunities from a connected crm with account, stage, and status filtering.
-- list jobs
-- get a single employee record by id from a connected hris provider.
-- list timeoff requests
-- list opportunities
-- create integrated account
-- hris employees
-- provision an mcp server for an integrated account so ai agents can directly access the integration's tools.
-- list employees
-- list time off requests from a connected hris provider with employee and status filtering.
-- link token generation
-- get employee
-- list job applications from a connected ats with job, candidate, and status filtering.
-- embedded integrations
-- create contact
-- mcp
-- list contacts
-- create mcp server
-- list contacts from connected crm.
-- ats
 - list groups
-- ats applications
-- list opportunities from connected crm.
-- ats candidates
-- create integrated account.
-- crm
-- create link token for customer connection flow.
-- list integrated accounts.
-- list jobs from connected ats.
-- create contact in connected crm.
-- list integrated accounts
+- list opportunities
 slug: unified-integrations
 source_filename: unified-integrations.yaml
 source_heading: Capability Spec

@@ -45,45 +45,45 @@ personas: []
 provider_name: VNC
 provider_slug: vnc
 search_terms:
-- list cloud addresses
-- inspect cloud address
 - rotate cloud address password
-- verify configuration changes have propagated.
-- update groups and access control for a cloud address.
-- reset the password for a cloud address.
+- retrieve full configuration details for a cloud address.
+- vnc
 - remote access
+- inspect cloud address
+- it operations
+- manage vnc cloud addresses for device connectivity.
+- cloud
+- device management
+- list cloud addresses
+- reset cloud address password
+- check propagation status of a cloud address.
+- deprovision cloud address
+- update group membership and access control for a cloud address.
+- create cloud address
 - provision a new vnc cloud address for a device to join vnc cloud.
 - list all cloud addresses provisioned in the vnc account.
-- reset cloud address password
-- reconfigure cloud address
-- remote desktop
-- check address propagation
-- permanently remove a cloud address from the account.
-- vnc
-- provision a new cloud address for a device.
-- delete cloud address
-- get cloud address
-- retrieve full configuration details for a cloud address.
-- cloud
-- retrieve details of a cloud address.
-- update cloud address
-- device management
-- networking
-- inspect and manage a specific cloud address.
-- deprovision cloud address
-- provision cloud address
-- check cloud address ready
-- reset the cloud password for a specific address.
-- verify whether recent changes to a cloud address have been fully propagated.
-- generate a new cloud password for a cloud address.
+- reset the password for a cloud address.
+- update groups and access control for a cloud address.
 - list all provisioned cloud addresses.
-- update group membership and access control for a cloud address.
-- check propagation status of a cloud address.
-- manage vnc cloud addresses for device connectivity.
-- it operations
-- deprovision and remove a cloud address.
+- reconfigure cloud address
+- reset the cloud password for a specific address.
+- permanently remove a cloud address from the account.
 - screen sharing
-- create cloud address
+- provision a new cloud address for a device.
+- inspect and manage a specific cloud address.
+- retrieve details of a cloud address.
+- get cloud address
+- networking
+- check cloud address ready
+- update cloud address
+- verify configuration changes have propagated.
+- delete cloud address
+- generate a new cloud password for a cloud address.
+- check address propagation
+- provision cloud address
+- deprovision and remove a cloud address.
+- verify whether recent changes to a cloud address have been fully propagated.
+- remote desktop
 slug: remote-access-management
 source_filename: remote-access-management.yaml
 source_heading: Capability Spec

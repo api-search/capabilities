@@ -50,61 +50,61 @@ personas: []
 provider_name: TheSportsDB
 provider_slug: thesportsdb
 search_terms:
-- list all sports in the database.
-- free
 - open data
-- search for teams.
-- search for sports teams by name or short name across all sports and countries.
-- get upcoming team events
-- all sports categories.
-- get detailed information for a specific sports team including badge, stadium, and social links.
-- get player
-- sports leagues.
-- recent team events.
-- get next 5 events for a team.
-- get recent team events
-- get all events/matches for a league in a specific season.
-- list all sports leagues available in thesportsdb.
-- get standings for a league.
-- get player details by id.
-- get the current league standings/table for a specific sports league season.
-- get recent events
-- players
-- team details.
-- list sports
-- get last 5 events for a team.
-- league season events.
-- get detailed biography and career data for a specific athlete.
-- get league standings
+- list all sports leagues.
+- list all teams in a specific sports league (by league name, sport, or country).
 - search players
-- list all sports categories available in thesportsdb.
-- get team details by id.
-- get the last 5 completed matches/games for a specific sports team with scores.
-- events
+- get last 5 events for a team.
+- list teams in league
 - search teams
+- get team
+- league season events.
+- get recent team events
+- list all sports in the database.
+- leagues
+- get the next 5 upcoming matches/games for a specific sports team.
+- list all sports categories available in thesportsdb.
+- get player details by id.
+- get upcoming events
+- teams
+- league standings table.
+- get league events
+- get league standings
+- list leagues
+- list sports
+- all sports categories.
+- get standings for a league.
+- get all events/matches for a league in a specific season.
+- get detailed biography and career data for a specific athlete.
+- get team details by id.
 - search for sports players/athletes by name or team.
 - database
-- get team
-- search players by name or team.
-- leagues
-- list leagues
-- standings
-- search for players.
-- search sports teams by name.
-- league standings table.
-- get all events for a league season.
-- sports
-- get upcoming events
-- list teams in league
-- upcoming team events.
-- teams
-- get the next 5 upcoming matches/games for a specific sports team.
-- get league season events
-- get league events
+- get the current league standings/table for a specific sports league season.
+- get upcoming team events
 - get standings
+- get league season events
+- sports leagues.
+- team details.
+- sports
+- players
+- get the last 5 completed matches/games for a specific sports team with scores.
+- search for sports teams by name or short name across all sports and countries.
+- get all events for a league season.
+- search players by name or team.
+- list all sports leagues available in thesportsdb.
+- recent team events.
 - player details.
-- list all teams in a specific sports league (by league name, sport, or country).
-- list all sports leagues.
+- search sports teams by name.
+- events
+- standings
+- free
+- search for players.
+- upcoming team events.
+- get next 5 events for a team.
+- get detailed information for a specific sports team including badge, stadium, and social links.
+- get recent events
+- search for teams.
+- get player
 slug: sports-data
 source_filename: sports-data.yaml
 source_heading: Capability Spec

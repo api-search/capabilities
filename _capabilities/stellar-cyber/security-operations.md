@@ -69,63 +69,63 @@ personas: []
 provider_name: Stellar Cyber
 provider_slug: stellar-cyber
 search_terms:
-- get case
-- soc
-- threat hunting
-- list watchlists
-- security
 - incident response
-- create playbook
-- retrieve security alerts from stellar cyber open xdr. use for alert triage and identifying threats requiring investigation.
-- list cases
-- list reports
-- list all ath playbooks
-- ingest custom security event documents into stellar cyber for analysis and correlation.
-- list sensors
-- list all sensors registered with stellar cyber. use to check sensor health and coverage across the environment.
-- siem
-- security alert management
-- update a security case status, priority, or other attributes. use to progress cases through investigation workflows.
-- list available security reports. use for compliance reporting and security posture reviews.
-- create a new security case in stellar cyber. use when an alert or event requires formal investigation and tracking.
-- retrieve security cases from stellar cyber. use for investigating ongoing incidents and tracking case status.
-- security case management operations
-- xdr
-- list all registered sensors
-- ingest events
-- retrieve all automated response playbooks. use to review available automation workflows for threat response.
-- list alerts
-- retrieve all watchlists
-- retrieve security alerts with filtering
-- security sensor monitoring
-- create a new ath playbook response action for automated threat response.
-- create case
-- ingest security event documents
-- security event ingestion
-- generate a new security report for compliance or executive reporting.
-- retrieve details of a specific case
-- create report
-- threat watchlist management
-- cybersecurity
-- list security cases with optional status filtering
 - stellar cyber
-- create a new watchlist for tracking threat indicators such as malicious ips, domains, or file hashes.
-- update case
-- create watchlist
-- security reporting
-- create a watchlist for threat tracking
-- retrieve all threat watchlists. use to check what indicators and entities are currently being monitored.
-- ai
-- individual case operations
-- create a new security case for investigation
-- generate a new security report
-- update case status and attributes
-- soar
-- create a new automated response playbook
 - get detailed information about a specific security case by id.
 - automated response playbooks
+- security
+- create watchlist
+- create a new ath playbook response action for automated threat response.
+- create a new automated response playbook
+- ai
+- list security cases with optional status filtering
+- xdr
+- soar
+- retrieve security alerts from stellar cyber open xdr. use for alert triage and identifying threats requiring investigation.
+- cybersecurity
+- soc
 - list playbooks
+- generate a new security report
+- get case
+- retrieve all watchlists
+- threat watchlist management
+- ingest events
+- retrieve details of a specific case
+- list cases
+- update case
+- create a new security case for investigation
+- update case status and attributes
+- list watchlists
+- list all ath playbooks
+- list all registered sensors
+- security alert management
+- update a security case status, priority, or other attributes. use to progress cases through investigation workflows.
+- siem
+- individual case operations
+- create a watchlist for threat tracking
+- retrieve all threat watchlists. use to check what indicators and entities are currently being monitored.
+- list alerts
+- ingest custom security event documents into stellar cyber for analysis and correlation.
+- list all sensors registered with stellar cyber. use to check sensor health and coverage across the environment.
+- list available security reports. use for compliance reporting and security posture reviews.
+- retrieve security cases from stellar cyber. use for investigating ongoing incidents and tracking case status.
+- security event ingestion
+- retrieve security alerts with filtering
+- create case
 - retrieve available security reports
+- security case management operations
+- list sensors
+- create playbook
+- retrieve all automated response playbooks. use to review available automation workflows for threat response.
+- security sensor monitoring
+- threat hunting
+- create a new security case in stellar cyber. use when an alert or event requires formal investigation and tracking.
+- list reports
+- create a new watchlist for tracking threat indicators such as malicious ips, domains, or file hashes.
+- create report
+- generate a new security report for compliance or executive reporting.
+- security reporting
+- ingest security event documents
 slug: security-operations
 source_filename: security-operations.yaml
 source_heading: Capability Spec

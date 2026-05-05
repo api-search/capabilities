@@ -69,65 +69,65 @@ personas: []
 provider_name: Tech Data
 provider_slug: tech-data
 search_terms:
-- customer subscription management
-- create a new order
-- shopping cart management
-- create a new shopping cart for order building
-- create a new product order for a customer
-- list all orders for the account
-- add a product to a shopping cart
-- list subscriptions
-- get report data
-- product catalog
-- create order
-- list reports
-- get details for a specific order
-- e-commerce
-- cancel an unprocessed order
-- cancel an order
-- list shopping carts
-- checkout cart
-- list available reports
-- distribution
-- list customer subscriptions
-- single customer operations
-- add cart item
-- get data from a billing or business report
-- reseller
-- browse the td synnex product catalog
-- cloud
-- create a new end customer
-- order management
-- business and billing reports
-- report data retrieval
-- list available billing and business reports
-- list all orders
-- get customer details
-- get order
+- create a new cart
 - list carts
-- list all end customers
 - list all end customers for the reseller account
+- get report data
+- checkout cart
+- e-commerce
+- list products
 - list customers
 - get order details
-- partner
+- get details for a specific end customer
+- list customer subscriptions
+- cloud
+- check out a cart to create an order
+- end customer account management
+- cancel an order
+- add cart item
+- get order
+- single customer operations
+- list available reports
+- list available billing and business reports
+- create a new product order for a customer
+- business and billing reports
+- list all orders
+- list all end customers
+- get data for a report
+- reseller
 - list active subscriptions for a customer
-- create a new cart
-- information technology
-- list products
+- shopping cart management
+- get details for a specific order
+- get data from a billing or business report
+- cancel order
 - get customer
+- create cart
+- cancel an unprocessed order
 - single order operations
+- get product
+- partner
+- report data retrieval
+- list orders
+- create a new end customer account
+- get customer details
+- create order
+- list all orders for the account
+- browse the td synnex product catalog
+- add a product to a shopping cart
+- list subscriptions
 - create customer
 - browse available products
-- create cart
-- get data for a report
-- list orders
-- cancel order
-- get product
-- end customer account management
-- get details for a specific end customer
-- create a new end customer account
+- list shopping carts
+- information technology
+- order management
+- create a new order
+- list reports
 - get details for a specific product
-- check out a cart to create an order
+- create a new end customer
+- product catalog
+- distribution
+- customer subscription management
+- create a new shopping cart for order building
 slug: cloud-distribution
 source_filename: cloud-distribution.yaml
 source_heading: Capability Spec

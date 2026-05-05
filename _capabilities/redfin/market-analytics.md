@@ -43,48 +43,48 @@ personas: []
 provider_name: Redfin
 provider_slug: redfin
 search_terms:
-- get market trend data for a region including prices, volume, and days on market.
-- home values
-- property data
-- regional market trends from stingray api.
-- state-level housing market tracker download.
-- get zip code market data
-- download neighborhood housing market tracker dataset (compressed tsv).
-- gis
 - get state market data
-- market analytics
-- national housing market tracker download.
 - get neighborhood market data
-- county-level housing market tracker download.
-- download redfin national housing market tracker dataset with all key metrics.
-- download redfin metro msa housing market tracker dataset.
-- get region trends
-- download redfin state-level housing market tracker dataset.
-- download county-level housing market tracker dataset (compressed tsv).
-- download national housing market tracker dataset (compressed tsv).
-- redfin
-- statistics
 - neighborhood-level housing market tracker download.
-- get metro market data
-- listings
-- download zip code housing market tracker dataset (compressed tsv).
-- download redfin city-level housing market tracker dataset.
-- city-level housing market tracker download.
-- csv export
-- download metro msa housing market tracker dataset (compressed tsv).
-- housing market
-- data science
-- get national market data
-- download state-level housing market tracker dataset (compressed tsv).
+- download national housing market tracker dataset (compressed tsv).
 - download city-level housing market tracker dataset (compressed tsv).
-- zip code-level housing market tracker download.
-- download redfin zip code housing market tracker dataset (most granular).
+- get region trends
+- download county-level housing market tracker dataset (compressed tsv).
 - get city market data
-- metro-level housing market tracker download.
-- get county market data
-- download redfin neighborhood-level housing market tracker dataset.
+- download neighborhood housing market tracker dataset (compressed tsv).
 - real estate
+- csv export
+- get zip code market data
+- download redfin metro msa housing market tracker dataset.
+- download redfin national housing market tracker dataset with all key metrics.
+- get metro market data
+- download state-level housing market tracker dataset (compressed tsv).
+- get national market data
+- housing market
+- statistics
+- download redfin neighborhood-level housing market tracker dataset.
+- city-level housing market tracker download.
+- data science
+- get county market data
+- gis
+- download redfin city-level housing market tracker dataset.
+- national housing market tracker download.
+- download metro msa housing market tracker dataset (compressed tsv).
+- state-level housing market tracker download.
+- redfin
+- zip code-level housing market tracker download.
+- download zip code housing market tracker dataset (compressed tsv).
+- county-level housing market tracker download.
+- download redfin state-level housing market tracker dataset.
+- home values
+- metro-level housing market tracker download.
 - 'get housing market trends for a specific region: prices, volume, days on market, inventory.'
+- download redfin zip code housing market tracker dataset (most granular).
+- regional market trends from stingray api.
+- property data
+- market analytics
+- listings
+- get market trend data for a region including prices, volume, and days on market.
 slug: market-analytics
 source_filename: market-analytics.yaml
 source_heading: Capability Spec

@@ -36,26 +36,26 @@ personas: []
 provider_name: US Citizenship and Immigration Services
 provider_slug: us-citizenship-and-immigration-services
 search_terms:
-- get foia request status
-- case management
-- retrieve current immigration case status and history by receipt number
-- status of a submitted foia request
-- citizenship
 - federal government
-- legal services
-- immigration
-- submit a new foia or privacy act request for alien file records
 - foia
-- get case status
-- submit a freedom of information act (foia) or privacy act request for uscis alien file records on behalf of a client. returns a request number for status tracking.
-- foia and privacy act requests for alien file records
-- check the processing status of a previously submitted uscis foia or privacy act request using the request number.
-- case status
-- retrieve the current immigration case status and complete history for a uscis receipt number. returns status in english and spanish with full historical timeline.
-- uscis
-- submit foia request
-- immigration case status by receipt number
 - check the status of a submitted foia request
+- submit a freedom of information act (foia) or privacy act request for uscis alien file records on behalf of a client. returns a request number for status tracking.
+- immigration case status by receipt number
+- retrieve the current immigration case status and complete history for a uscis receipt number. returns status in english and spanish with full historical timeline.
+- citizenship
+- submit foia request
+- retrieve current immigration case status and history by receipt number
+- get foia request status
+- uscis
+- check the processing status of a previously submitted uscis foia or privacy act request using the request number.
+- status of a submitted foia request
+- legal services
+- get case status
+- case management
+- case status
+- submit a new foia or privacy act request for alien file records
+- foia and privacy act requests for alien file records
+- immigration
 slug: immigration-case-management
 source_filename: immigration-case-management.yaml
 source_heading: Capability Spec

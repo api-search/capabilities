@@ -71,76 +71,76 @@ personas: []
 provider_name: Oracle WebLogic Server APIs
 provider_slug: weblogic
 search_terms:
-- get server jvm metrics
-- create cluster
-- list servers
-- start edit
-- test connectivity for a jdbc data source
-- get server jvm and thread pool metrics
-- cluster management
-- list all server configurations in the domain
-- test a jdbc data source connection
-- managed server configuration and lifecycle
-- jdbc data source management and monitoring
 - create a new managed server configuration
-- cancel the current edit session and discard changes
-- activate pending configuration changes across the domain
 - start server
-- jms
-- get server configuration
-- cancel edit
-- list all cluster configurations
-- jdbc
-- middleware
-- shut down a managed server
-- weblogic
-- create a new cluster configuration
-- list all managed servers in the weblogic domain
-- start a configuration edit session to make domain changes
-- get configuration for a specific weblogic managed server
-- gracefully shut down a managed server
-- create a new managed server configuration in the domain
-- cancel edit session
-- create server
-- get health status of a weblogic server
-- get server thread pool
-- domain administration
-- start a managed server in the weblogic domain
-- resume a suspended managed server
-- resume server
-- stop server
-- enterprise
-- server lifecycle
-- get jvm heap and garbage collection metrics for a server
-- list all clusters in the weblogic domain
-- oracle
-- delete server
 - get server health status
-- shutdown server
-- get server metrics
-- list data sources
-- get thread pool throughput and queue metrics for a server
-- list all jdbc data source configurations and metrics
-- test data source
-- query diagnostics
-- delete a server configuration
-- list clusters
-- start a managed server
-- suspend a managed server (pause new requests)
-- get server health
-- start a configuration edit session
-- suspend server
-- query weblogic diagnostic data using wldf
+- start a managed server in the weblogic domain
+- cancel edit session
+- start edit
+- get server jvm metrics
+- list all server configurations in the domain
+- create server
+- enterprise
+- jms
+- gracefully shut down a managed server
 - application server
-- cancel the current edit session
-- get server
 - start edit session
-- list all jdbc data source metrics
-- cluster configuration management
-- activate changes
+- server lifecycle
+- cluster management
 - delete a managed server configuration from the domain
+- oracle
+- shut down a managed server
+- list all jdbc data source metrics
+- list data sources
+- test connectivity for a jdbc data source
+- jdbc
+- start a managed server
+- get server metrics
 - activate pending configuration changes
+- get jvm heap and garbage collection metrics for a server
+- list all cluster configurations
+- cancel the current edit session
+- query diagnostics
+- middleware
+- shutdown server
+- query weblogic diagnostic data using wldf
+- list all managed servers in the weblogic domain
+- suspend a managed server (pause new requests)
+- stop server
+- delete server
+- create a new managed server configuration in the domain
+- cancel the current edit session and discard changes
+- get server jvm and thread pool metrics
+- get server
+- start a configuration edit session
+- list all jdbc data source configurations and metrics
+- create cluster
+- get configuration for a specific weblogic managed server
+- test data source
+- delete a server configuration
+- get server configuration
+- resume a suspended managed server
+- get health status of a weblogic server
+- get thread pool throughput and queue metrics for a server
+- cluster configuration management
+- activate pending configuration changes across the domain
+- create a new cluster configuration
+- activate changes
+- weblogic
+- list servers
+- list clusters
+- resume server
+- jdbc data source management and monitoring
+- start a configuration edit session to make domain changes
+- cancel edit
+- domain administration
 - java ee
+- get server thread pool
+- test a jdbc data source connection
+- suspend server
+- get server health
+- managed server configuration and lifecycle
+- list all clusters in the weblogic domain
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

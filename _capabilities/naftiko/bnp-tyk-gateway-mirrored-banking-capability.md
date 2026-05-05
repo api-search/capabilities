@@ -1,40 +1,48 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that fronts a Tyk-managed BNP banking API as a Naftiko capability with Forward Proxy + Trusted-Header Security — letting BNP's API-First program add agent-shaped MCP without bypassing the gateway.
+description: A capability mirroring BNP banking APIs through a Tyk gateway with rate-limit and quota-policy enforcement.
 layout: capability
 name: Bnp Tyk Gateway Mirrored Banking Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-mirrored-apis
+  path: /apis
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- spec-driven integration
+- tyk
+- bnp
+- create key
 - mcp
-- ai
+- list mirrored apis
+- gateway
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
 - governance
-- a capability that fronts a tyk-managed bnp banking api as a naftiko capability with forward proxy + trusted-header security — letting bnp's api-first program add agent-shaped mcp without bypassing the gateway.
+- ai
 slug: bnp-tyk-gateway-mirrored-banking-capability
 source_filename: bnp-tyk-gateway-mirrored-banking-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bnp Tyk Gateway Mirrored Banking Capability\n  description: A capability that fronts a Tyk-managed BNP banking API as a Naftiko capability with Forward Proxy + Trusted-Header Security — letting BNP's API-First program add agent-shaped MCP without bypassing the gateway.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bnp-tyk-gateway-mirrored-banking-capability-rest\n    description: REST API for Bnp Tyk Gateway Mirrored\
-  \ Banking Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bnp-tyk-gateway-mirrored-banking-capability-mcp\n    description: MCP server exposing Bnp Tyk Gateway Mirrored Banking Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability that fronts a Tyk-managed BNP banking API as a Naftiko capability with Forward Proxy + Trusted-Header Security — letting BNP's API-First program add agent-shaped MCP without bypassing the gateway.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bnp-tyk-gateway-mirrored-banking-capability-skills\n    description: Agent Skill bundle for Bnp Tyk Gateway Mirrored Banking Capability.\n    skills:\n    - name: bnp-tyk-gateway-mirrored-banking-capability\n\
-  \      description: A capability that fronts a Tyk-managed BNP banking API as a Naftiko capability with Forward Proxy + Trusted-Header Security — letting BNP's API-First program add agent-shaped MCP without bypassing the gateway.\n      location: file:///opt/naftiko/skills/bnp-tyk-gateway-mirrored-banking-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that fronts a Tyk-managed BNP banking API as a Naftiko capability with Forward Proxy + Trusted-Header Security — letting BNP's API-First program add agent-shaped MCP without bypassing the gateway.\n        from:\n          sourceNamespace: bnp-tyk-gateway-mirrored-banking-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bnp Tyk Gateway Mirrored Banking Capability\n  description: A capability mirroring BNP banking APIs through a Tyk gateway with rate-limit and quota-policy enforcement.\n  tags: [Naftiko, BNP, Tyk, Gateway]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: tyk-env\n  keys: {TYK_HOST: TYK_HOST, TYK_TOKEN: TYK_TOKEN}\ncapability:\n  consumes:\n  - namespace: tyk\n    type: http\n    baseUri: https://{{TYK_HOST}}\n    authentication: {type: bearer, token: '{{TYK_TOKEN}}'}\n    resources:\n    - {name: apis, path: /api/apis, operations: [{name: list-apis, method: GET}]}\n    - name: api\n      path: /api/apis/{{api_id}}\n      operations:\n      - {name: get-api, method: GET, inputParameters: [{name: api_id, in: path}]}\n    - name: keys\n      path: /api/keys\n      operations: [{name: create-key, method: POST}]\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bnp-tyk-gateway-mirrored-banking-capability-rest\n\
+  \    description: REST surface listing mirrored Tyk APIs.\n    resources:\n    - {name: apis, path: /apis, operations: [{method: GET, name: list-mirrored-apis, call: tyk.list-apis}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bnp-tyk-gateway-mirrored-banking-capability-mcp\n    description: MCP for Tyk-mirrored banking ops.\n    tools:\n    - {name: list-mirrored-apis, hints: {readOnly: true}, call: tyk.list-apis}\n    - name: create-key\n      call: tyk.create-key\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bnp-tyk-gateway-mirrored-banking-capability-skills\n    description: Skill for Tyk-mirrored banking.\n    skills:\n    - name: bnp-tyk-gateway-mirrored-banking-capability\n      description: Tyk-mirrored BNP banking.\n      location: file:///opt/naftiko/skills/bnp-tyk-gateway-mirrored-banking-capability\n      allowed-tools: list-mirrored-apis,create-key\n      tools:\n      - {name: list-mirrored-apis, from: {sourceNamespace: bnp-tyk-gateway-mirrored-banking-capability-mcp,\
+  \ action: list-mirrored-apis}}\n      - {name: create-key, from: {sourceNamespace: bnp-tyk-gateway-mirrored-banking-capability-mcp, action: create-key}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/bnp-tyk-gateway-mirrored-banking-capability.yaml
 tags:
 - Naftiko
+- BNP
+- Tyk
+- Gateway
 tools:
-- description: A capability that fronts a Tyk-managed BNP banking API as a Naftiko capability with Forward Proxy + Trusted-Header Security — letting BNP's API-First program add agent-shaped MCP without bypassing the gateway.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-mirrored-apis
+- description: ''
+  hints: {}
+  name: create-key
 ---

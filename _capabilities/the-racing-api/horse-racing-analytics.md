@@ -45,60 +45,60 @@ personas: []
 provider_name: The Racing API
 provider_slug: the-racing-api
 search_terms:
-- list racecards
-- list regions
-- list courses
-- get free racecards
-- search horses
-- horse search and form data
-- search trainers
-- get free-tier racecards for basic race information
-- get todays results
-- betting
-- analytics
-- get jockey course analysis
-- get racecards for today or tomorrow
-- get sire offspring performance statistics by race class
-- get big race cards
-- get today's or tomorrow's race cards with runners, odds, and form
-- get full historical race results for a specific horse
-- search sires
-- search for a sire by name for breeding analysis
-- get historical race results filtered by date, region, course, or race type
-- search owners
-- historical race results
-- horse racing
-- get trainer results
-- get jockey results
-- search for a jockey by name
-- get jockey performance statistics broken down by course
-- get all race results from today
-- list all racing courses
-- statistics
-- get historical riding results for a jockey
-- list results
-- search for a horse owner by name
-- list all available racing courses with ids and regions
-- jockey search and statistics
-- search jockeys
-- list all racing regions with region codes
 - get historical results for a specific horse
-- racing courses and regions
+- search for a sire by name for breeding analysis
 - today's and future race entry cards
-- search for a horse by name to find its id for detailed form queries
-- get sire class analysis
-- racecards
-- trainer search and statistics
+- get free-tier racecards for basic race information
+- search owners
+- get racecards for today or tomorrow
+- list results
+- search for horses by name
+- analytics
+- get todays results
+- get historical training results for a trainer
+- get trainer results
+- horse racing
+- get historical race results filtered by date, region, course, or race type
+- get all race results from today
+- get horse results
+- search jockeys
+- historical race results
+- search for trainers by name
 - individual horse form and history
 - get racecards for major featured races
-- search for horses by name
-- get historical race results with filters
-- sports
-- search for trainers by name
+- list all racing courses
+- statistics
+- search for a jockey by name
+- get jockey performance statistics broken down by course
+- horse search and form data
 - search for a trainer by name
-- get historical training results for a trainer
-- get horse results
+- get jockey results
+- list regions
 - search for jockeys by name
+- sports
+- racing courses and regions
+- get big race cards
+- list racecards
+- betting
+- get jockey course analysis
+- trainer search and statistics
+- list all available racing courses with ids and regions
+- get sire class analysis
+- get sire offspring performance statistics by race class
+- search for a horse owner by name
+- search sires
+- list courses
+- get free racecards
+- get historical race results with filters
+- get today's or tomorrow's race cards with runners, odds, and form
+- get full historical race results for a specific horse
+- get historical riding results for a jockey
+- list all racing regions with region codes
+- search trainers
+- jockey search and statistics
+- search horses
+- search for a horse by name to find its id for detailed form queries
+- racecards
 slug: horse-racing-analytics
 source_filename: horse-racing-analytics.yaml
 source_heading: Capability Spec

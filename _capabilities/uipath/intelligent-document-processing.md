@@ -35,70 +35,70 @@ personas: []
 provider_name: UiPath
 provider_slug: uipath
 search_terms:
+- data extraction
+- extract document
+- list du projects
+- list document understanding projects
+- classify a document to identify its type (invoice, contract, form, etc.)
+- list available ml extractors for a document understanding project
+- ocr
+- list available document understanding projects
+- oversees the automation program pipeline, prioritization, and roi tracking
+- robotic process automation
+- list jobs
+- monitors and manages running automations, robots, queues, and alerts
+- uipath
+- get document extraction results
 - automation jobs for document processing
-- Document Processing Specialist
-- configures and manages document understanding models and extraction pipelines
-- automation
-- extract document data
-- classify document
-- list projects
 - digitize a document using ocr to extract text content
 - manage automation pipeline, users, licenses, and quality
-- ocr, classify, and extract data from documents
-- Automation Operator
-- develops and deploys automation workflows using uipath studio and python sdk
-- document data extraction
-- list available ml extractors for a document understanding project
-- list du projects
-- manages users, groups, licenses, and organizational settings
-- document ocr digitization
-- list orchestrator automation jobs for document processing workflows
-- manage robots, jobs, queues, and assets in orchestrator
-- RPA Developer
-- QA Engineer
-- document processing
-- test management and automated quality verification
-- document understanding projects
-- extraction result retrieval
-- get extraction result
 - Platform Administrator
+- core rpa automation lifecycle from development to execution
+- QA Engineer
+- document understanding
+- document classification
+- document ocr digitization
+- document processing
+- get extraction result
+- classify document
+- creates and manages test projects, test cases, and execution reports
+- document understanding projects
+- orchestrator list jobs
+- manage robots, jobs, queues, and assets in orchestrator
+- extract document data
+- artificial intelligence
+- intelligent document processing
+- enterprise automation
+- list projects
+- RPA Developer
+- classify a document type
+- orchestration
+- platform configuration including users, groups, and licenses
+- ocr digitize a document
 - extract structured data fields from a document using an ml extractor
 - list extractors
-- document classification
-- get document extraction results
-- retrieve the results of an asynchronous data extraction request
-- list jobs
-- creates and manages test projects, test cases, and execution reports
-- data extraction
-- digitize document
-- intelligent processing of structured and unstructured documents
-- intelligent document processing
-- list document processing jobs
-- robotic process automation
-- artificial intelligence
-- uipath
-- oversees the automation program pipeline, prioritization, and roi tracking
-- extract structured data from document
 - machine learning
-- orchestrator list jobs
-- day-to-day monitoring and management of running automations
-- ocr
-- CoE Manager
-- platform configuration including users, groups, and licenses
-- classify a document type
-- extract document
-- monitors and manages running automations, robots, queues, and alerts
-- enterprise automation
-- list document understanding projects
-- orchestration
-- list available document understanding projects
-- oversight of the automation program including pipeline, compliance, and quality
-- ocr digitize a document
-- core rpa automation lifecycle from development to execution
-- classify a document to identify its type (invoice, contract, form, etc.)
+- extract structured data from document
+- develops and deploys automation workflows using uipath studio and python sdk
+- configures and manages document understanding models and extraction pipelines
+- list document processing jobs
 - testing
+- day-to-day monitoring and management of running automations
+- digitize document
 - rpa
-- document understanding
+- CoE Manager
+- retrieve the results of an asynchronous data extraction request
+- manages users, groups, licenses, and organizational settings
+- list orchestrator automation jobs for document processing workflows
+- test management and automated quality verification
+- extraction result retrieval
+- Automation Operator
+- intelligent processing of structured and unstructured documents
+- automation
+- oversight of the automation program including pipeline, compliance, and quality
+- ocr, classify, and extract data from documents
+- document data extraction
+- Document Processing Specialist
 slug: intelligent-document-processing
 source_filename: intelligent-document-processing.yaml
 source_heading: Capability Spec

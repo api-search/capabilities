@@ -53,51 +53,51 @@ personas: []
 provider_name: regal-entertainment-group
 provider_slug: regal-entertainment-group
 search_terms:
-- list movies
-- theatre details
-- list theatres
-- purchase tickets for a showtime and optionally earn regal crown club credits
-- movie details
-- get full details for a specific movie including cast, runtime, and rating
-- get theatre
-- entertainment
-- loyalty member profile
-- ticket purchasing
 - showtime schedules
-- find regal theatre locations near a geographic coordinate or by state
-- get loyalty member details and credit balance
-- purchase tickets
-- loyalty credit management
-- purchase tickets for a showtime
-- get movie
-- list currently playing and upcoming movies
-- add loyalty credits to a member account
-- theatre
-- get loyalty member
-- get details for a specific theatre
-- find nearby theatres
-- add loyalty credits
-- list showtimes
-- retrieve a ticket order with barcodes and confirmation code
-- get details for a ticket order
-- get details for a specific movie
-- look up showtimes for a movie at a theatre on a given date
-- cinema
-- get regal crown club member status, tier, and credit balance
-- movies
-- ticket order details
-- browse movies currently playing and upcoming at regal cinemas
-- award regal crown club credits to a member after a qualifying purchase
-- list showtimes by movie, theatre, or date
-- showtimes
-- locate nearby regal theatres
 - get details for a specific regal theatre including amenities and screen count
-- ticketing
-- list theatres with optional proximity search
-- fortune 500
-- get ticket order
-- loyalty
+- cinema
+- purchase tickets for a showtime and optionally earn regal crown club credits
 - browse movies now playing and coming soon
+- showtimes
+- movies
+- get ticket order
+- purchase tickets for a showtime
+- award regal crown club credits to a member after a qualifying purchase
+- ticket order details
+- theatre details
+- list theatres with optional proximity search
+- get details for a ticket order
+- get loyalty member
+- look up showtimes for a movie at a theatre on a given date
+- theatre
+- list currently playing and upcoming movies
+- loyalty credit management
+- list theatres
+- loyalty member profile
+- get details for a specific theatre
+- locate nearby regal theatres
+- movie details
+- get loyalty member details and credit balance
+- loyalty
+- entertainment
+- fortune 500
+- list showtimes by movie, theatre, or date
+- list showtimes
+- add loyalty credits to a member account
+- get theatre
+- ticketing
+- get movie
+- browse movies currently playing and upcoming at regal cinemas
+- find regal theatre locations near a geographic coordinate or by state
+- find nearby theatres
+- list movies
+- get regal crown club member status, tier, and credit balance
+- get details for a specific movie
+- add loyalty credits
+- get full details for a specific movie including cast, runtime, and rating
+- purchase tickets
+- retrieve a ticket order with barcodes and confirmation code
+- ticket purchasing
 slug: cinema-ticketing
 source_filename: cinema-ticketing.yaml
 source_heading: Capability Spec

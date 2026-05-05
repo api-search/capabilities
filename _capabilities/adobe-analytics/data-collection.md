@@ -36,42 +36,42 @@ personas: []
 provider_name: Adobe Analytics
 provider_slug: adobe-analytics
 search_terms:
-- validate event files.
-- marketing
-- server side
-- validate a batch events file without ingesting.
-- analytics
-- list report suites to identify collection targets.
-- customer intelligence
-- report suite discovery for data collection targeting.
-- report suite details.
-- validate events
-- list report suites to identify data collection targets.
-- bulk data insertion
-- list metrics
-- get report suite
-- adobe
-- list available metrics to validate event data mapping.
-- business intelligence
-- data collection
-- metric discovery for event mapping.
-- upload events
-- digital marketing
-- list available dimensions to validate event data mapping.
-- events
-- get details for a report suite to verify collection configuration.
-- list dimensions
-- list report suites
-- adobe analytics
-- validate a batch events file without ingesting data.
-- list metrics to validate event data mapping.
-- get report suite details.
 - upload a batch events file.
-- upload a gzip-compressed csv file of batched analytics event data.
-- batch event upload.
-- list dimensions to validate event data mapping.
-- dimension discovery for event mapping.
+- adobe
+- validate a batch events file without ingesting data.
+- list available metrics to validate event data mapping.
 - web analytics
+- list metrics to validate event data mapping.
+- list available dimensions to validate event data mapping.
+- marketing
+- adobe analytics
+- business intelligence
+- get report suite
+- analytics
+- validate event files.
+- list report suites to identify data collection targets.
+- upload events
+- upload a gzip-compressed csv file of batched analytics event data.
+- server side
+- report suite details.
+- list report suites
+- get details for a report suite to verify collection configuration.
+- data collection
+- validate a batch events file without ingesting.
+- validate events
+- digital marketing
+- list metrics
+- report suite discovery for data collection targeting.
+- dimension discovery for event mapping.
+- bulk data insertion
+- batch event upload.
+- events
+- list dimensions
+- get report suite details.
+- list dimensions to validate event data mapping.
+- list report suites to identify collection targets.
+- metric discovery for event mapping.
+- customer intelligence
 slug: data-collection
 source_filename: data-collection.yaml
 source_heading: Capability Spec

@@ -57,62 +57,62 @@ personas: []
 provider_name: RescueGroups.org
 provider_slug: rescuegroups-org
 search_terms:
-- single adoptable animal
-- lookup animal colors
-- look up all available animal species classifications
-- list adoptable animals
-- search animals
-- list all rescue organizations
-- list species
-- list all animal species
-- animals
-- lookup animal species
-- get org pet list
-- animal welfare
-- look up all available animal coat pattern classifications
-- get organization details
-- search animals by criteria
-- rescue
-- get animal
-- list all animal coat patterns
-- list available adoptable animals with optional filtering
-- look up all available animal breed classifications
-- list breeds
-- get complete details for a specific adoptable animal by id
-- list all animal colors
-- rescue organizations and shelters
-- animal color reference data
-- get a pet list by keystring
-- search
-- organization pet lists
-- lookup animal breeds
-- get pet list
-- get a rescue organization's pet list by keystring
-- get details for a single rescue organization
 - lookup animal patterns
-- organizations
-- get organization
-- list all available animal breeds
-- animal species reference data
 - list organizations
-- single rescue organization
-- animal coat pattern reference data
-- find rescue organizations and shelters near a location
-- get details for a specific rescue organization including adoption process and service areas
 - list colors
-- get animal details
-- list patterns
-- list animals
-- pet adoption
-- advanced animal search
 - animal breed reference data
-- search and list adoptable animals
 - search animals with breed, species, location, and geodistance filters
-- list all available adoptable animals
+- get a pet list by keystring
+- single adoptable animal
+- get a rescue organization's pet list by keystring
+- list available adoptable animals with optional filtering
 - find rescue organizations
-- look up all available animal color classifications
-- get details for a single adoptable animal
+- get complete details for a specific adoptable animal by id
+- search and list adoptable animals
+- animals
+- search animals
+- advanced animal search
+- list all animal species
+- animal species reference data
+- animal welfare
 - search adoptable animals by breed, species, age, size, location, and distance
+- get details for a single adoptable animal
+- list all animal colors
+- organization pet lists
+- animal coat pattern reference data
+- list all rescue organizations
+- rescue
+- search animals by criteria
+- list all available adoptable animals
+- look up all available animal breed classifications
+- lookup animal breeds
+- lookup animal species
+- organizations
+- find rescue organizations and shelters near a location
+- look up all available animal color classifications
+- search
+- look up all available animal coat pattern classifications
+- single rescue organization
+- get animal
+- list breeds
+- list patterns
+- get details for a specific rescue organization including adoption process and service areas
+- get organization details
+- list species
+- get pet list
+- list all available animal breeds
+- list adoptable animals
+- get org pet list
+- animal color reference data
+- get organization
+- list all animal coat patterns
+- rescue organizations and shelters
+- get animal details
+- get details for a single rescue organization
+- list animals
+- lookup animal colors
+- pet adoption
+- look up all available animal species classifications
 slug: pet-adoption-search
 source_filename: pet-adoption-search.yaml
 source_heading: Capability Spec

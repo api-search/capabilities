@@ -35,44 +35,44 @@ personas: []
 provider_name: Amdocs
 provider_slug: amdocs
 search_terms:
-- customer subscription management
-- add a service subscription to a customer account
-- telecom customer account management
-- onboard a new telecom customer
-- list subscriptions
-- oss
 - saas
-- browse available products and plans
+- list products
+- list customers
+- list invoices for a customer
+- bss
+- telecom customer account management
+- billing
+- onboard a new customer
+- product and service catalog
+- create subscription
+- manages telco bss operations and system configuration
+- amdocs
+- add a service subscription to a customer account
 - unified bss workflow for customer onboarding, billing, and service management
+- retrieve billing invoices for a customer
+- list invoices
+- Billing Team
+- oss
+- mvno
+- browse the service catalog and available plans
+- customer billing invoices
+- onboard a new telecom customer
 - Customer Care Agent
 - add a service subscription
-- bss
-- telecom
-- browse the service catalog and available plans
-- Billing Team
-- retrieve billing invoices for a customer
-- list all customer accounts
-- list invoices
-- mvno
-- 5g
-- create subscription
 - list service subscriptions for a customer
-- manages invoicing, payments, and revenue assurance
-- amdocs
-- product and service catalog
-- onboard a new customer
-- list customers
-- customer billing invoices
-- list telecom customer accounts
-- list products
-- create customer
-- customer management
 - BSS Operator
-- manages telco bss operations and system configuration
-- billing
-- list subscriptions for a customer
-- list invoices for a customer
+- list telecom customer accounts
 - handles customer inquiries and account management
+- browse available products and plans
+- manages invoicing, payments, and revenue assurance
+- list subscriptions for a customer
+- list all customer accounts
+- create customer
+- list subscriptions
+- 5g
+- customer management
+- telecom
+- customer subscription management
 slug: telco-customer-management
 source_filename: telco-customer-management.yaml
 source_heading: Capability Spec

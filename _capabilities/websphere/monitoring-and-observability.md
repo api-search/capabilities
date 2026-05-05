@@ -41,47 +41,47 @@ personas: []
 provider_name: IBM WebSphere
 provider_slug: websphere
 search_terms:
-- get was performance monitoring data
-- list batch jobs
-- get all open liberty metrics
+- get all metrics
+- performance data
 - metrics collection
-- ibm websphere
-- list batch job instances
-- monitoring
-- j2ee
-- get open liberty overall health status
-- batch job monitoring
-- get batch job instance details
-- get liberty admin metrics
-- get liberty health
-- get liveness
-- cloud native
-- get liberty metrics
-- get liberty log messages
-- get recent liberty log messages
-- get log config
-- get performance data
-- get batch job
+- list jakarta batch job instances
 - enterprise java
-- get was health
-- metrics
+- get was performance monitoring data
+- get liberty logging configuration
+- get recent liberty log messages
+- list batch job instances
+- get batch job instance details
+- application server
 - get readiness
-- check if liberty server is ready for traffic
+- get all open liberty metrics
+- observability
+- middleware
+- microservices
+- list batch jobs
+- cloud native
+- check if liberty server is alive
+- get liberty health
+- get liberty admin metrics
+- batch job monitoring
 - get was server health
+- get liberty log messages
+- get liveness
+- get batch job
+- j2ee
+- get log config
+- monitoring
+- get performance data
+- check if liberty server is ready for traffic
+- metrics
+- get open liberty overall health
+- get was health
+- log management
+- ibm websphere
 - get log messages
 - get was server health status
-- microservices
-- list jakarta batch job instances
+- get liberty metrics
 - health check endpoints
-- observability
-- get all metrics
-- get open liberty overall health
-- performance data
-- check if liberty server is alive
-- application server
-- get liberty logging configuration
-- middleware
-- log management
+- get open liberty overall health status
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec

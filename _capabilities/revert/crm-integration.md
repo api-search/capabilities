@@ -65,55 +65,55 @@ personas: []
 provider_name: Revert
 provider_slug: revert
 search_terms:
-- search contacts by criteria
+- get oauth connection status for a tenant
+- create lead
 - get details of a specific crm contact by id
-- create company
-- search contacts using filter criteria
+- create a new deal/opportunity in the crm
 - revert
+- create a new company/account in the crm
+- unified lead management
+- create contact
+- search contacts using filter criteria
+- list all contacts from the tenant's connected crm (salesforce, hubspot, zoho, pipedrive, or close)
 - update contact
-- list all companies from the tenant's crm
+- search contacts
+- list all companies/accounts from the tenant's crm
 - open source
 - list all deals/opportunities in the crm pipeline
-- integrations
-- individual contact operations
 - unified deal/opportunity pipeline management
-- create a new contact in the tenant's crm
-- list all leads from the tenant's crm
-- salesforce
-- create deal
-- unified api
-- list companies
-- search crm contacts using filter criteria
-- get contact
-- create a new company/account in the crm
-- unified company/account management
-- list all companies/accounts from the tenant's crm
-- list all deals/opportunities from the tenant's crm
 - hubspot
-- unified contact management across all connected crms
-- get oauth connection status and details for a tenant
-- list deals
-- list leads
-- get connection status
-- create contact
-- list all leads in the crm
-- list all contacts from the tenant's connected crm
+- individual contact operations
+- list all companies from the tenant's crm
 - update an existing contact
-- create lead
-- list contacts
-- list all contacts from the tenant's connected crm (salesforce, hubspot, zoho, pipedrive, or close)
-- unified lead management
-- update an existing crm contact
-- get a specific contact by id
-- create a new deal/opportunity in the crm
-- create a new lead in the crm
-- tenant oauth connection management
-- search contacts
-- get oauth connection status for a tenant
-- create a new deal/opportunity in the crm pipeline
-- crm
-- get connection
+- search contacts by criteria
+- list deals
+- create deal
+- get connection status
 - pipedrive
+- create a new contact in the tenant's crm
+- list all leads in the crm
+- list leads
+- integrations
+- salesforce
+- tenant oauth connection management
+- unified contact management across all connected crms
+- create company
+- get connection
+- list contacts
+- list companies
+- unified api
+- crm
+- get contact
+- list all leads from the tenant's crm
+- get oauth connection status and details for a tenant
+- update an existing crm contact
+- create a new deal/opportunity in the crm pipeline
+- unified company/account management
+- create a new lead in the crm
+- list all contacts from the tenant's connected crm
+- list all deals/opportunities from the tenant's crm
+- get a specific contact by id
+- search crm contacts using filter criteria
 slug: crm-integration
 source_filename: crm-integration.yaml
 source_heading: Capability Spec

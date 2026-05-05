@@ -1,40 +1,45 @@
 ---
 categories: []
 consumed_apis: []
-description: Publishes the Naftiko Spec-Driven Integration Backstage template into a Backstage catalog Daniel can demo at apidays Munich.
+description: A capability that publishes a Naftiko capability YAML as a Backstage software template, available in the developer portal.
 layout: capability
 name: Backstage Software Template Publisher
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: publish-template
+  path: /publish
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- publisher
+- refresh catalog
+- backstage
+- spec-driven integration
 - mcp
 - ai
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- publishes the naftiko spec-driven integration backstage template into a backstage catalog daniel can demo at apidays munich.
-- capabilities
-- example op
 - governance
+- publish template
 slug: backstage-software-template-publisher
 source_filename: backstage-software-template-publisher.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Backstage Software Template Publisher\n  description: Publishes the Naftiko Spec-Driven Integration Backstage template into a Backstage catalog Daniel can demo at apidays Munich.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: backstage-software-template-publisher-rest\n    description: REST API for Backstage Software Template Publisher.\n    resources:\n    - name: example\n      path: /example\n      operations:\n\
-  \      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: backstage-software-template-publisher-mcp\n    description: MCP server exposing Backstage Software Template Publisher for AI agents.\n    tools:\n    - name: example\n      description: Publishes the Naftiko Spec-Driven Integration Backstage template into a Backstage catalog Daniel can demo at apidays Munich.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: backstage-software-template-publisher-skills\n    description: Agent Skill bundle for Backstage Software Template Publisher.\n    skills:\n    - name: backstage-software-template-publisher\n      description: Publishes the Naftiko Spec-Driven Integration Backstage template into a Backstage catalog Daniel can demo at apidays Munich.\n      location: file:///opt/naftiko/skills/backstage-software-template-publisher\n\
-  \      allowed-tools: example\n      tools:\n      - name: example\n        description: Publishes the Naftiko Spec-Driven Integration Backstage template into a Backstage catalog Daniel can demo at apidays Munich.\n        from:\n          sourceNamespace: backstage-software-template-publisher-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Backstage Software Template Publisher\n  description: A capability that publishes a Naftiko capability YAML as a Backstage software template, available in the developer portal.\n  tags: [Naftiko, Backstage, Publisher]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: backstage-env\n  keys: {BACKSTAGE_HOST: BACKSTAGE_HOST, BACKSTAGE_TOKEN: BACKSTAGE_TOKEN}\ncapability:\n  consumes:\n  - namespace: backstage\n    type: http\n    baseUri: https://{{BACKSTAGE_HOST}}\n    authentication: {type: bearer, token: '{{BACKSTAGE_TOKEN}}'}\n    resources:\n    - {name: locations, path: /api/catalog/locations, operations: [{name: register-location, method: POST}]}\n    - {name: catalog-refresh, path: /api/catalog/refresh, operations: [{name: refresh-catalog, method: POST}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: backstage-software-template-publisher-rest\n    description: REST surface\
+  \ for publishing software templates to Backstage.\n    resources:\n    - {name: publish, path: /publish, operations: [{method: POST, name: publish-template, call: backstage.register-location}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: backstage-software-template-publisher-mcp\n    description: MCP for template publication.\n    tools:\n    - {name: publish-template, call: backstage.register-location}\n    - {name: refresh-catalog, call: backstage.refresh-catalog}\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: backstage-software-template-publisher-skills\n    description: Skill for publishing templates.\n    skills:\n    - name: backstage-software-template-publisher\n      description: Publish capability YAML as Backstage template.\n      location: file:///opt/naftiko/skills/backstage-software-template-publisher\n      allowed-tools: publish-template,refresh-catalog\n      tools:\n      - {name: publish-template, from: {sourceNamespace:\
+  \ backstage-software-template-publisher-mcp, action: publish-template}}\n      - {name: refresh-catalog, from: {sourceNamespace: backstage-software-template-publisher-mcp, action: refresh-catalog}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/backstage-software-template-publisher.yaml
 tags:
 - Naftiko
+- Backstage
+- Publisher
 tools:
-- description: Publishes the Naftiko Spec-Driven Integration Backstage template into a Backstage catalog Daniel can demo at apidays Munich.
-  hints:
-    readOnly: true
-  name: example
+- description: ''
+  hints: {}
+  name: publish-template
+- description: ''
+  hints: {}
+  name: refresh-catalog
 ---

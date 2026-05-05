@@ -52,56 +52,56 @@ personas: []
 provider_name: Scalr
 provider_slug: scalr
 search_terms:
-- create a scalr environment
-- list account roles
-- finops
-- list servers
-- opa
-- environment management (account-level)
-- list global images
-- get environment
-- list cloud servers managed by scalr farm role
-- policy
-- role definitions
-- list global roles
-- list global variables available across all scalr environments
-- execute farm action
-- list cloud provider credentials configured in scalr
-- list images available globally across all scalr accounts
-- gitops
-- scalr
 - get environment details
+- role definitions
+- finops
+- gitops
+- create environment
 - terraform
 - global variables
-- list farms
-- cloud management farms (user-level)
-- list servers in a farm role
-- create a new scalr farm
-- execute farm lifecycle actions
-- kubernetes
-- cloud provider credentials
-- list scalr environments
-- cloud servers managed by scalr
-- opentofu
-- list scalr farms
-- manage a specific environment
-- list roles defined in scalr account
-- list scalr cloud management farms
-- list roles defined globally in scalr
-- execute a farm lifecycle action (launch, suspend, terminate)
-- list environments
-- create a new scalr environment
-- get details of a specific scalr environment
-- list scalr environments within an account
-- create environment
-- create farm
-- list cloud credentials
 - execute a lifecycle action on a scalr farm (launch, suspend, terminate)
-- devops
-- create a scalr farm
+- list scalr environments
+- execute farm lifecycle actions
+- list servers in a farm role
+- list cloud credentials
+- list scalr cloud management farms
+- create a new scalr farm
+- list images available globally across all scalr accounts
+- cloud provider credentials
+- execute farm action
 - list roles
-- infrastructure as code
+- create farm
+- list roles defined in scalr account
+- list account roles
+- list scalr environments within an account
 - list global variables
+- list cloud servers managed by scalr farm role
+- create a new scalr environment
+- manage a specific environment
+- create a scalr farm
+- list scalr farms
+- scalr
+- get environment
+- get details of a specific scalr environment
+- list global roles
+- list farms
+- opentofu
+- opa
+- devops
+- environment management (account-level)
+- list environments
+- list roles defined globally in scalr
+- create a scalr environment
+- list servers
+- list global images
+- list global variables available across all scalr environments
+- execute a farm lifecycle action (launch, suspend, terminate)
+- infrastructure as code
+- kubernetes
+- policy
+- cloud servers managed by scalr
+- cloud management farms (user-level)
+- list cloud provider credentials configured in scalr
 slug: infrastructure-as-code
 source_filename: infrastructure-as-code.yaml
 source_heading: Capability Spec

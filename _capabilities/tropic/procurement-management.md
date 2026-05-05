@@ -78,71 +78,71 @@ personas: []
 provider_name: Tropic
 provider_slug: tropic
 search_terms:
-- get a specific procurement request by id
-- list contracts
-- saas procurement
-- list procurement requests
-- cost optimization
-- update a contract
-- list procurement requests with optional status filter
-- approve a pending procurement request
-- tropic
-- procurement request management
-- create a new vendor contract in tropic
-- spend management
-- reject a pending request
-- list organization users
-- create request
-- saas management
-- list requests
-- create webhook
-- get request
-- supplier relationship management
-- create a new supplier profile
-- delete contract
-- reject a pending procurement request with a reason
-- create a new webhook subscription for procurement events
-- benchmarking
-- list webhook subscriptions
-- list configured webhook subscriptions
-- contract lifecycle management
-- create a new contract record
-- create supplier
-- update supplier
-- individual contract operations
-- list all suppliers
-- reject request
-- submit a new procurement request
-- get a request by id
-- get contract
-- list users
-- renewals
-- user management
 - approval workflows
-- create contract
-- get a contract by id
-- delete a contract
-- list webhooks
-- update contract details (status, renewal date, value)
-- create a new supplier
-- approve request
-- get a supplier by id
-- create a webhook subscription
-- update a supplier
-- procurement
-- list all supplier profiles
-- get supplier
-- list suppliers
-- event webhook management
-- list all contracts with optional status and supplier filters
-- get a specific contract by id
-- update contract
-- list all contracts with optional filters
-- contract management
-- get a specific supplier by id
+- list organization users
 - list organization users in tropic
+- list requests
+- update supplier
+- tropic
+- update a supplier
 - approve a pending request
+- list users
+- create a new vendor contract in tropic
+- delete contract
+- update contract details (status, renewal date, value)
+- cost optimization
+- list suppliers
+- renewals
+- update contract
+- list all contracts with optional status and supplier filters
+- create a new webhook subscription for procurement events
+- saas procurement
+- procurement request management
+- contract lifecycle management
+- benchmarking
+- create request
+- approve request
+- reject a pending procurement request with a reason
+- spend management
+- create a new contract record
+- get a request by id
+- create webhook
+- delete a contract
+- procurement
+- get a supplier by id
+- submit a new procurement request
+- saas management
+- reject a pending request
+- event webhook management
+- get a contract by id
+- create a webhook subscription
+- list all suppliers
+- list contracts
+- individual contract operations
+- get contract
+- supplier relationship management
+- get request
+- list webhook subscriptions
+- get a specific contract by id
+- list configured webhook subscriptions
+- create a new supplier
+- list procurement requests
+- get a specific procurement request by id
+- update a contract
+- reject request
+- list all supplier profiles
+- list procurement requests with optional status filter
+- contract management
+- user management
+- create contract
+- approve a pending procurement request
+- get supplier
 - supplier management
+- list webhooks
+- list all contracts with optional filters
+- create a new supplier profile
+- get a specific supplier by id
+- create supplier
 slug: procurement-management
 source_filename: procurement-management.yaml
 source_heading: Capability Spec

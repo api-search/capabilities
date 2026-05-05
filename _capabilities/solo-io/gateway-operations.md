@@ -59,82 +59,82 @@ personas: []
 provider_name: Solo.io
 provider_slug: solo-io
 search_terms:
-- list usage plans
-- automation
-- list api keys
-- resiliency
-- get virtual service
-- check control plane health
-- management
-- solo.io
-- security
-- get portal api schema
-- list all upstream backend services registered with gloo gateway, optionally filtered by namespace
-- envoy proxy
-- list gateways
-- get details of a specific upstream service including health checks and tls config
+- developer portal
+- list portal apis
 - list all gateway resources defining listener addresses, ports, and tls
 - check health status of gloo gateway control plane and its components
-- compiled envoy proxy configurations
-- analytics
-- retrieve the openapi or graphql schema for a portal api
-- delegated route table management
-- list compiled envoy proxy configurations generated from gateway resources
-- control plane health
-- cloud native
-- list route tables used for delegated routing configuration across teams
-- traffic management
-- api management
-- list all upstream backend services
-- get gateway
-- ai gateway
-- developer portal api catalog
-- list all virtual services
-- get details of a specific portal api including schema and usage plans
-- permanently delete an api key, revoking access to the associated api product
+- platform
 - list all gateways
-- list apis in developer portal
-- list all route tables
-- developer portal usage plans
-- get route table
-- list virtual services
 - gateways
-- api gateway
-- service mesh
+- list all upstream backend services registered with gloo gateway, optionally filtered by namespace
+- security
+- solo.io
 - gateway listener management
+- retrieve the openapi or graphql schema for a portal api
+- list usage plans
+- list available usage plans with rate limits and api product access
+- analytics
+- gateway health check
+- list apis in developer portal
+- create a new api key for accessing an api product under a usage plan
+- list compiled envoy proxy configurations generated from gateway resources
+- service mesh
+- individual upstream details
+- list all route tables
+- check control plane health
+- list route tables used for delegated routing configuration across teams
 - health check
+- get gateway listener configuration including tls settings and virtual service bindings
+- get portal api
+- observability
+- list api keys for the authenticated portal user
+- traffic control
+- list all virtual services with domains, routing rules, and security policies
+- get proxy
+- get upstream
+- permanently delete an api key, revoking access to the associated api product
+- list proxies
 - create api key
 - list upstreams
-- individual upstream details
-- get upstream
-- list all virtual services with domains, routing rules, and security policies
-- get compiled proxy configuration with all listeners, routes, and clusters
-- individual virtual service configuration
-- list route tables
-- traffic control
-- list all apis published in the gloo developer portal
-- get gateway listener configuration including tls settings and virtual service bindings
-- get full virtual service configuration including routes, rate limiting, and authentication
-- observability
-- get route table with all routes, matchers, and upstream destinations
-- developer portal
-- delete api key
-- gateway health check
-- backend upstream service management
+- cloud native
 - get upstream details
-- list proxies
-- get proxy
-- get portal api
-- list api keys for the authenticated portal user
-- platform
-- list available usage plans with rate limits and api product access
-- create a new api key for accessing an api product under a usage plan
-- list portal apis
-- monetization
-- list all proxies
-- get virtual service details
-- developer api key management
+- get portal api schema
+- developer portal api catalog
+- get virtual service
+- individual virtual service configuration
+- compiled envoy proxy configurations
+- traffic management
 - virtual service routing rules
+- list gateways
+- control plane health
+- api management
+- developer portal usage plans
+- delete api key
+- ai gateway
+- backend upstream service management
+- get details of a specific portal api including schema and usage plans
+- envoy proxy
+- monetization
+- get full virtual service configuration including routes, rate limiting, and authentication
+- list all proxies
+- resiliency
+- list virtual services
+- delegated route table management
+- get details of a specific upstream service including health checks and tls config
+- api gateway
+- get route table with all routes, matchers, and upstream destinations
+- get virtual service details
+- list api keys
+- get gateway
+- list route tables
+- list all upstream backend services
+- developer api key management
+- get route table
+- get compiled proxy configuration with all listeners, routes, and clusters
+- automation
+- management
+- list all apis published in the gloo developer portal
+- list all virtual services
 slug: gateway-operations
 source_filename: gateway-operations.yaml
 source_heading: Capability Spec

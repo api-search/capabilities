@@ -39,53 +39,53 @@ personas: []
 provider_name: vLex
 provider_slug: vlex
 search_terms:
-- anonymization
-- anonymize pii in legal text.
-- legal citation detection.
-- anonymize text
-- classify document
-- extract legal key phrases
-- search documents
-- legal text classification.
-- classification
-- get legal document
-- classify legal text into practice areas.
-- search the vlex corpus of 100+ million legal documents across global jurisdictions. supports natural language queries. filter by jurisdiction (e.g. us, gb), document type (case_law, statute), and date range.
-- extract key legal phrases, terms of art, and important concepts from a legal document.
-- detect legal citations using vcite.
-- legal document retrieval.
-- detect citations
 - legal research
-- citation detection
-- natural language processing
-- detect and parse legal citations in text using vcite. supports citation formats from 20+ jurisdictions. returns structured citation data with links to referenced documents.
-- legal tech
-- extract document entities
-- semantic search across 100m+ legal documents.
-- identify all named entities (persons, organizations, locations, dates) in a legal text without modifying it. useful for document review and entity mapping.
-- key phrase extraction.
-- get document
-- search the vlex legal corpus.
+- text anonymization.
+- get a full legal document by vlex id.
 - extract key phrases
-- compliance
 - classify legal text
+- legal citation detection.
+- anonymize legal document
+- anonymization
+- classify legal text into practice areas.
+- case law
+- legal document retrieval.
+- anonymize text
+- extract entities
+- semantic search across 100m+ legal documents.
+- classify a legal text into practice areas (e.g. employment law, contract law, ip) using vlex's icenet algorithm. returns confidence-ranked classifications.
+- ai
 - anonymize personally identifiable information (pii) in a legal document. replaces names, organizations, and other sensitive entities with tokens. pre-trained on legal corpora for high accuracy.
 - extract named entities without modifying text.
-- privacy
-- named entity extraction.
-- classify a legal text into practice areas (e.g. employment law, contract law, ip) using vlex's icenet algorithm. returns confidence-ranked classifications.
-- retrieve the full text and metadata of a legal document by its vlex id.
-- vlex
-- case law
+- extract legal key phrases
+- detect legal citations using vcite.
 - detect legal citations
-- search legal documents
-- ai
-- nlp
-- anonymize legal document
-- get a full legal document by vlex id.
+- identify all named entities (persons, organizations, locations, dates) in a legal text without modifying it. useful for document review and entity mapping.
+- classify document
+- search documents
+- vlex
+- natural language processing
+- extract key legal phrases, terms of art, and important concepts from a legal document.
+- classification
+- get document
+- legal tech
 - extract key legal phrases from text.
-- extract entities
-- text anonymization.
+- retrieve the full text and metadata of a legal document by its vlex id.
+- get legal document
+- anonymize pii in legal text.
+- search legal documents
+- extract document entities
+- legal text classification.
+- citation detection
+- key phrase extraction.
+- detect and parse legal citations in text using vcite. supports citation formats from 20+ jurisdictions. returns structured citation data with links to referenced documents.
+- search the vlex corpus of 100+ million legal documents across global jurisdictions. supports natural language queries. filter by jurisdiction (e.g. us, gb), document type (case_law, statute), and date range.
+- compliance
+- detect citations
+- named entity extraction.
+- nlp
+- search the vlex legal corpus.
+- privacy
 slug: legal-ai-workflow
 source_filename: legal-ai-workflow.yaml
 source_heading: Capability Spec

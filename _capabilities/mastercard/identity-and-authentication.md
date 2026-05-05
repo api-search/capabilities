@@ -33,42 +33,42 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- get identity intelligence insights for an account
-- credit cards
-- create auth consent
-- create an authentication consent request
 - get identity insights for a transaction
-- digital identity
-- verify identity
-- verification
 - submit trust verification
+- credit cards
+- identity insights for transactions
+- open banking
+- create an authentication consent request
+- verification
+- get transaction insights
+- verify a consumer identity using mastercard id
+- kyc
+- authentication consent management
+- fraud detection
+- get account insights
+- create authentication consent
+- create consent
+- initiate authentication
+- payments
+- create auth consent
+- verify identity
+- identity insights for accounts
+- get identity intelligence insights for a transaction
+- get authentication consent status
+- get account identity insights
+- submit identity verification as a trust provider
+- verify a consumer identity
+- digital identity
+- get identity intelligence insights for an account
+- authentication
+- get consent status
+- get transaction identity insights
+- get identity insights for an account
 - mastercard
 - financial services
-- open banking
-- identity insights for accounts
-- authentication
-- authentication consent management
-- get identity insights for an account
-- get account identity insights
-- payments
-- kyc
-- identity verification
-- initiate authentication
 - identity
-- verify a consumer identity using mastercard id
-- create authentication consent
-- get transaction insights
-- get consent status
-- identity insights for transactions
-- verify a consumer identity
-- get authentication consent status
-- get identity intelligence insights for a transaction
-- submit identity verification as a trust provider
-- get transaction identity insights
-- get account insights
-- fraud detection
 - initiate strong customer authentication
-- create consent
+- identity verification
 slug: identity-and-authentication
 source_filename: identity-and-authentication.yaml
 source_heading: Capability Spec

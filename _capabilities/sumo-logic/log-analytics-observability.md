@@ -69,62 +69,62 @@ personas: []
 provider_name: Sumo Logic
 provider_slug: sumo-logic
 search_terms:
-- access key management
-- security
-- execute a sumo logic log search query with time range
-- create user
-- monitoring
-- delete user
-- alerting monitors
-- analytics
-- role-based access control
-- create a new dashboard
-- create a new role
-- list all alerting monitors
-- list all dashboards
-- siem
-- create search job
-- get user
-- create a new monitor
-- list access keys
-- create a new access key
-- individual user management
-- user account management
-- create a new role with specific capabilities and filter predicates
-- list ingestion budgets for data volume management
-- create a new alerting monitor with query and trigger conditions
-- create a new observability dashboard
-- list all access keys
-- list all api access keys
-- list dashboards
-- log search execution
-- dashboard management
-- create access key
-- list users
-- create a new user
-- list ingest budgets
-- create role
-- get a specific sumo logic user by id
-- list all users in the sumo logic organization
-- run log search
-- list monitors
-- list all sumo logic dashboards
-- delete a sumo logic user
-- run a log search query
-- create dashboard
 - delete a user
-- create monitor
+- alerting monitors
+- list all dashboards
+- create role
+- access key management
+- list users
+- security
+- list monitors
+- role-based access control
+- list all alerting monitors
+- user account management
+- get user
+- create user
+- create search job
+- log search execution
+- analytics
+- create a new access key
+- execute a sumo logic log search query with time range
 - logging
-- create a new api access key
-- observability
-- list all users in the organization
-- list all roles for access control management
-- devops
-- list all monitors
-- create a new sumo logic user
 - list roles
+- list all monitors
+- create monitor
+- list all roles for access control management
+- observability
+- list all users in the sumo logic organization
+- dashboard management
+- list all users in the organization
+- create a new observability dashboard
+- list ingestion budgets for data volume management
+- list dashboards
+- delete a sumo logic user
 - list all roles
+- create a new role with specific capabilities and filter predicates
+- list all api access keys
+- siem
+- devops
+- create a new alerting monitor with query and trigger conditions
+- delete user
+- create a new user
+- create dashboard
+- individual user management
+- create a new monitor
+- create a new dashboard
+- create a new sumo logic user
+- get a specific sumo logic user by id
+- list access keys
+- create access key
+- monitoring
+- run log search
+- create a new api access key
+- list ingest budgets
+- run a log search query
+- list all sumo logic dashboards
 - get a user by id
+- list all access keys
+- create a new role
 slug: log-analytics-observability
 source_filename: log-analytics-observability.yaml
 source_heading: Capability Spec

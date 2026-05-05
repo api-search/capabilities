@@ -45,41 +45,41 @@ personas: []
 provider_name: Travelers
 provider_slug: travelers
 search_terms:
-- retrieve a previously generated commercial insurance quote
-- list policies
-- insurance
-- list business insurance claims with optional status and date filtering
-- commercial insurance
-- get policy
-- request a commercial insurance quote for business owner policy or workers compensation
-- get details of a specific commercial insurance policy
-- retrieve a previously generated quote
-- submit a new business insurance claim
-- get the status and details of a specific claim
 - policy management
-- business insurance claims management
-- claims
-- get details of a specific policy
-- get claim
 - request a commercial lines insurance quote
-- list commercial insurance policies for the organization
-- check the status and details of an existing insurance claim
-- quoting
-- property casualty
-- commercial insurance quoting
-- request quote
-- get quote
-- list all commercial insurance policies
-- get claim status
-- commercial insurance policy management
 - report insurance claim
-- submit a new business insurance claim to travelers
-- request commercial quote
+- get details of a specific policy
 - fintech
-- list claims
-- fortune 500
+- property casualty
+- commercial insurance
+- list commercial insurance policies for the organization
+- retrieve a previously generated quote
+- retrieve a previously generated commercial insurance quote
+- quoting
 - report claim
+- get details of a specific commercial insurance policy
+- commercial insurance quoting
+- list claims
+- claims
+- get the status and details of a specific claim
+- submit a new business insurance claim to travelers
+- list all commercial insurance policies
+- request commercial quote
+- fortune 500
+- get quote
+- insurance
+- check the status and details of an existing insurance claim
+- commercial insurance policy management
+- business insurance claims management
+- request quote
+- request a commercial insurance quote for business owner policy or workers compensation
+- list business insurance claims with optional status and date filtering
+- list policies
+- get claim
+- get claim status
 - list business insurance claims
+- get policy
+- submit a new business insurance claim
 slug: commercial-insurance-workflow
 source_filename: commercial-insurance-workflow.yaml
 source_heading: Capability Spec

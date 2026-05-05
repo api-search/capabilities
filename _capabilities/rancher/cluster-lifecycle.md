@@ -45,40 +45,40 @@ personas: []
 provider_name: Rancher
 provider_slug: rancher
 search_terms:
-- create cluster
-- suse
-- cluster management
-- list projects
+- kubernetes clusters managed by rancher.
+- create a new rancher project within a cluster to organize namespaces.
+- list all rancher projects, which group namespaces within clusters for tenancy and policy.
+- containers
+- multi-cluster
+- provision a new cluster.
+- list all nodes across clusters.
 - open source
-- retrieve details for a specific rancher-managed cluster by id.
-- create project
-- provision a new kubernetes cluster through rancher. specify name, provider, and kubernetes version.
-- remove a cluster from rancher.
-- kubernetes
-- single cluster.
-- list nodes
-- get cluster details.
-- create a new project.
-- platform engineering
+- cluster management
 - list all nodes across rancher-managed clusters, including hostname, state, and roles.
 - get cluster
-- cluster nodes.
-- containers
-- provision a new cluster.
-- rancher projects.
-- list all rancher projects, which group namespaces within clusters for tenancy and policy.
-- list clusters
-- list all kubernetes clusters managed by rancher, including their state, provider, and kubernetes version.
-- kubernetes clusters managed by rancher.
-- list all projects.
-- list all clusters.
-- list all nodes across clusters.
 - rancher
-- create a new rancher project within a cluster to organize namespaces.
-- delete cluster
-- infrastructure
+- retrieve details for a specific rancher-managed cluster by id.
 - remove a cluster from rancher management. this deregisters or destroys the cluster.
-- multi-cluster
+- cluster nodes.
+- platform engineering
+- list projects
+- create cluster
+- list all clusters.
+- remove a cluster from rancher.
+- list all projects.
+- infrastructure
+- single cluster.
+- list nodes
+- list clusters
+- rancher projects.
+- create a new project.
+- delete cluster
+- list all kubernetes clusters managed by rancher, including their state, provider, and kubernetes version.
+- suse
+- get cluster details.
+- create project
+- kubernetes
+- provision a new kubernetes cluster through rancher. specify name, provider, and kubernetes version.
 slug: cluster-lifecycle
 source_filename: cluster-lifecycle.yaml
 source_heading: Capability Spec

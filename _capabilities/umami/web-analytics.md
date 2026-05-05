@@ -21,46 +21,46 @@ personas: []
 provider_name: Umami
 provider_slug: umami
 search_terms:
-- reviews overall analytics and manages website configuration
+- get analytics metrics broken down by a dimension such as url, browser, country, device, or referrer
+- privacy
+- list all tracked websites
 - website listings
-- get summarized analytics statistics for a website including pageviews, visitors, visits, and bounce rate
+- web analytics
+- get metrics by dimension
+- get metrics
+- user account management (self-hosted admin only)
+- get pageview time series data for a website bucketed by time unit
+- open source
+- analytics
+- get website analytics statistics
+- list all teams in umami
+- website analytics
+- umami
+- get stats
+- website metrics by dimension
+- get website stats
+- custom event collection and analysis
+- reviews overall analytics and manages website configuration
+- accessing and analyzing website statistics, metrics, and pageviews
+- dashboards
+- get website pageviews
+- managing tracked websites, their configuration, and team access
+- get active visitors
+- analyzes website traffic, referrers, and campaign performance
+- monitors site performance, integrates tracking, and manages websites
+- get the number of visitors currently active on a website
+- track website performance, visitor behavior, and real-time analytics
+- get website metrics
+- website statistics
+- list teams
+- list websites
+- list sessions
+- cookieless tracking
+- list visitor sessions for a website with browser, os, device, and country details
+- exports and analyzes raw session and event data for bi reporting
 - list all websites being tracked in umami
 - session data, active visitors, and behavioral tracking
-- list visitor sessions for a website with browser, os, device, and country details
-- list all teams in umami
-- website statistics
-- open source
-- get active visitors
-- get website stats
-- analytics
-- website analytics
-- dashboards
-- get metrics by dimension
-- exports and analyzes raw session and event data for bi reporting
-- cookieless tracking
-- analyzes website traffic, referrers, and campaign performance
-- list teams
-- list all tracked websites
-- get metrics
-- umami
-- get analytics metrics broken down by a dimension such as url, browser, country, device, or referrer
-- list sessions
-- accessing and analyzing website statistics, metrics, and pageviews
-- get website pageviews
-- monitors site performance, integrates tracking, and manages websites
-- user account management (self-hosted admin only)
-- privacy
-- website metrics by dimension
-- get stats
-- get website metrics
-- track website performance, visitor behavior, and real-time analytics
-- get website analytics statistics
-- managing tracked websites, their configuration, and team access
-- get pageview time series data for a website bucketed by time unit
-- custom event collection and analysis
-- list websites
-- web analytics
-- get the number of visitors currently active on a website
+- get summarized analytics statistics for a website including pageviews, visitors, visits, and bounce rate
 slug: web-analytics
 source_filename: web-analytics.yaml
 source_heading: Capability Spec

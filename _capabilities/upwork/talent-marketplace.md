@@ -42,56 +42,56 @@ personas: []
 provider_name: Upwork
 provider_slug: upwork
 search_terms:
-- search for job postings
-- list contracts
-- list messages in a contract messaging room
-- send message
-- search for freelancers
-- Agency Manager
-- marketplace
-- talent acquisition
-- execute a custom graphql query against the upwork api
-- list all upwork contracts with optional status filtering
-- finding and evaluating freelancers and jobs
-- manager overseeing multiple freelancer contracts
-- get detailed information for a specific upwork contract
-- jobs
-- talent acquisition and freelancer management workflow
-- send a message in a contract messaging room
-- developer integrating upwork data into custom applications
-- contracts
-- individual contract
-- talent
-- individual job operations
-- upwork
-- contract messaging
-- send a message
-- get detailed information for a specific upwork job posting
-- freelancer profile
-- get contract
-- freelancer search
-- Developer
-- search upwork job postings by keywords, skills, and budget
-- freelancing
-- get freelancer
-- get freelancer profile
-- list messages
-- business professional finding and hiring freelancers
-- search jobs
-- list messages in a room
-- get job details
-- execute graphql
 - Hiring Manager
-- search for freelancers on upwork by skills, rate, and availability
-- job search and management
-- get job
-- get contract details
-- contract management
+- talent acquisition and freelancer management workflow
+- freelancer search
+- get freelancer
+- business professional finding and hiring freelancers
+- hiring
+- manager overseeing multiple freelancer contracts
+- get freelancer profile
+- send message
+- list messages in a contract messaging room
+- list messages in a room
+- send a message
+- Developer
+- finding and evaluating freelancers and jobs
+- list all upwork contracts with optional status filtering
+- managing active and completed contracts
+- get detailed information for a specific upwork contract
 - contract communication
 - retrieve the full profile for a specific upwork freelancer
-- hiring
-- managing active and completed contracts
+- search for freelancers on upwork by skills, rate, and availability
+- send a message in a contract messaging room
+- get job details
+- execute graphql
+- talent
+- talent acquisition
+- freelancing
+- list contracts
+- individual contract
+- get contract
+- search upwork job postings by keywords, skills, and budget
+- get job
 - search freelancers
+- jobs
+- execute a custom graphql query against the upwork api
+- job search and management
+- freelancer profile
+- upwork
+- search for freelancers
+- contract messaging
+- get detailed information for a specific upwork job posting
+- individual job operations
+- Agency Manager
+- search for job postings
+- get contract details
+- contracts
+- developer integrating upwork data into custom applications
+- contract management
+- search jobs
+- marketplace
+- list messages
 slug: talent-marketplace
 source_filename: talent-marketplace.yaml
 source_heading: Capability Spec

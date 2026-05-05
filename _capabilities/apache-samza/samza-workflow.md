@@ -9,17 +9,17 @@ personas: []
 provider_name: Apache Samza
 provider_slug: apache-samza
 search_terms:
-- big data
-- kafka
-- hadoop
-- streaming
 - engineer building and operating stream processing pipelines
-- open source
-- apache
-- real-time stream processing on distributed infrastructure
-- engineer managing yarn/samza infrastructure
 - lifecycle management of samza stream processing jobs
 - stream processing
+- big data
+- engineer managing yarn/samza infrastructure
+- streaming
+- kafka
+- apache
+- hadoop
+- real-time stream processing on distributed infrastructure
+- open source
 slug: samza-workflow
 source_filename: samza-workflow.yaml
 source_heading: Capability Spec

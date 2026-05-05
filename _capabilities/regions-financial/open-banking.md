@@ -45,46 +45,46 @@ personas: []
 provider_name: regions-financial
 provider_slug: regions-financial
 search_terms:
-- individual account details
-- account aggregation
-- list consents
-- wealth management
-- initiate payment
-- list all accounts for the authenticated customer
-- get status for a specific payment
-- list all bank accounts including checking, savings, credit cards, and loans for the customer
-- get the authenticated customer's profile including name and contact information
-- personal finance
-- list active data sharing consents the customer has granted to third parties
-- list transactions
+- consumer banking
+- get the authenticated customer's profile
+- retrieve transaction history for an account with optional date filtering
+- get account
+- payment initiation
+- list accounts
 - account transaction history
 - open banking
-- financial services
-- authenticated customer profile
-- banking
+- initiate payment
 - payment status
-- initiate an ach payment, wire transfer, or internal account transfer
-- get current customer
-- get account
-- retrieve transaction history for an account
-- get the authenticated customer's profile
-- payments
-- customer account listing and details
-- payment initiation
-- initiate a payment or internal transfer
-- retrieve transaction history for an account with optional date filtering
-- list accounts
-- revoke a specific data sharing consent previously granted to a third party
+- list consents
 - revoke consent
+- authenticated customer profile
+- wealth management
+- initiate a payment or internal transfer
+- fortune 500
+- get status for a specific payment
+- get balance and full details for a specific regions account
+- list active data sharing consents the customer has granted to third parties
+- payments
+- list all bank accounts including checking, savings, credit cards, and loans for the customer
+- customer account listing and details
+- banking
+- list transactions
+- get balance and details for a specific account
+- retrieve transaction history for an account
+- get current customer
 - fdx
 - list active data sharing consents
-- check the status of a previously initiated payment
+- revoke a specific data sharing consent previously granted to a third party
+- initiate an ach payment, wire transfer, or internal account transfer
+- individual account details
+- account aggregation
 - get payment
-- consumer banking
-- get balance and details for a specific account
+- get the authenticated customer's profile including name and contact information
+- check the status of a previously initiated payment
+- personal finance
+- financial services
 - consent management
-- fortune 500
-- get balance and full details for a specific regions account
+- list all accounts for the authenticated customer
 slug: open-banking
 source_filename: open-banking.yaml
 source_heading: Capability Spec

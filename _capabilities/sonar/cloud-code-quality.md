@@ -30,43 +30,43 @@ personas: []
 provider_name: Sonar
 provider_slug: sonar
 search_terms:
-- sonarqube
-- search projects
-- security
-- find bugs
-- search projects in an organization
-- project discovery
-- check if a project passes its quality gate
-- search issues
-- discover sonarcloud organizations connected to devops platforms
-- 'get code quality metrics for a project: coverage, bugs, vulnerabilities, code smells'
-- get quality gate status
-- get component measures
-- sonar
-- cloud
-- search for projects in a sonarcloud organization to audit or monitor
-- list quality gates
-- search organizations
-- code quality
-- organization discovery
-- static analysis
-- quality gate results for ci/cd
-- check quality gate
 - code quality metrics
-- get code metrics
-- list quality gate definitions for a sonarcloud organization
 - find reliability bugs in a sonarcloud project
+- search code issues
+- discover sonarcloud organizations connected to devops platforms
+- find security issues
+- check if a project passes its quality gate — required for ci/cd release decisions
+- 'get code quality metrics for a project: coverage, bugs, vulnerabilities, code smells'
+- security
+- get code metrics
+- cloud
+- get quality gate status
+- search issues
+- find bugs
+- search all code issues with full filtering (severity, type, status, rule)
+- check if a project passes its quality gate
+- static analysis
+- get component measures
+- list quality gates
+- organization discovery
+- search for sonarcloud organizations
+- sonarcloud
+- sonar
+- search organizations
+- list quality gate definitions for a sonarcloud organization
+- devops
+- get project code quality metrics
+- search projects
+- ci/cd
 - find security vulnerabilities and hotspots in a sonarcloud project
 - code issues
-- sonarcloud
-- ci/cd
-- search for sonarcloud organizations
-- devops
-- search all code issues with full filtering (severity, type, status, rule)
-- check if a project passes its quality gate — required for ci/cd release decisions
-- find security issues
-- search code issues
-- get project code quality metrics
+- sonarqube
+- quality gate results for ci/cd
+- search for projects in a sonarcloud organization to audit or monitor
+- project discovery
+- check quality gate
+- search projects in an organization
+- code quality
 slug: cloud-code-quality
 source_filename: cloud-code-quality.yaml
 source_heading: Capability Spec

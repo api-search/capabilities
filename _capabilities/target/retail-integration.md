@@ -42,48 +42,48 @@ personas: []
 provider_name: target
 provider_slug: target
 search_terms:
-- find stores
-- list products by tcins, category, or brand
-- get full order details including line items
-- list stores
-- orders
-- get full product details including price, images, and ratings by tcin
-- e-commerce
-- get target store details
-- inventory
-- search products
-- find target stores near a zip code or geographic coordinates
 - stores
-- browse and search target product catalog
-- get full product details by tcin
-- manage partner orders
-- get store details
-- products
-- check product availability for ship-to-home, in-store pickup, and drive-up
-- get target store hours, features, and contact information
-- fortune 100
-- get fulfillment availability across all channels
-- list partner orders filtered by status and date range
-- list target products by tcins or category filters
-- get order
-- search target's product catalog by keyword, category, price range, or brand
-- find target stores by location
-- search products by keyword with filters
-- check product availability
-- get full details of a target partner order including line items
-- target
-- check product fulfillment options
-- get order details
-- get product fulfillment
-- list nearby target stores
-- retail
+- e-commerce
 - list products
-- get product
-- list orders with status and date filters
+- get order details
+- list nearby target stores
 - get store hours, features, and contact info
-- list orders
+- fortune 100
+- list products by tcins, category, or brand
+- manage partner orders
+- get order
+- browse and search target product catalog
 - get detailed product information
+- get full product details by tcin
+- get fulfillment availability across all channels
+- products
+- find target stores by location
+- get target store details
+- list partner orders filtered by status and date range
 - get store
+- get full product details including price, images, and ratings by tcin
+- get full order details including line items
+- retail
+- target
+- get product
+- check product fulfillment options
+- list orders
+- orders
+- inventory
+- check product availability
+- get product fulfillment
+- list target products by tcins or category filters
+- get full details of a target partner order including line items
+- check product availability for ship-to-home, in-store pickup, and drive-up
+- search products by keyword with filters
+- list stores
+- search products
+- search target's product catalog by keyword, category, price range, or brand
+- get target store hours, features, and contact information
+- get store details
+- find stores
+- find target stores near a zip code or geographic coordinates
+- list orders with status and date filters
 slug: retail-integration
 source_filename: retail-integration.yaml
 source_heading: Capability Spec

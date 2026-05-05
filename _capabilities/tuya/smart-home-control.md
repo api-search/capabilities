@@ -30,40 +30,40 @@ personas: []
 provider_name: Tuya
 provider_slug: tuya
 search_terms:
-- automation
-- retrieve a specific device
-- control device
-- control a device
-- query device operation logs
-- get details and current state of a specific iot device
-- get device status
-- get operation logs for a device
-- update device name
-- tuya
-- cloud platform
-- list all iot devices registered to the tuya project
-- list devices
-- get current status of all data points
-- get device data point status
-- get the current value of all data points for a device (e.g., switch state, brightness, temperature)
+- get device
 - send control commands to a device
 - get device logs
+- get details and current state of a specific iot device
 - device management
-- remove and deregister a device from the cloud account
-- list all devices in the project
-- device control
-- industrial iot
+- retrieve a specific device
+- query device operation logs
+- update device name
 - devices
-- get device details and current state
+- list all devices in the project
+- tuya
+- list devices
 - send control commands to an iot device. specify code/value pairs for data points (e.g., switch_led=true, bright_value=500)
 - list and search iot devices
-- update the friendly display name of a device
 - query operation and event logs for a device over a time range
-- get device
-- send commands
-- iot
+- get device data point status
+- industrial iot
 - remove device
+- send commands
+- get the current value of all data points for a device (e.g., switch state, brightness, temperature)
 - smart home
+- get device details and current state
+- update the friendly display name of a device
+- remove and deregister a device from the cloud account
+- get operation logs for a device
+- device control
+- iot
+- control device
+- cloud platform
+- control a device
+- automation
+- list all iot devices registered to the tuya project
+- get device status
+- get current status of all data points
 slug: smart-home-control
 source_filename: smart-home-control.yaml
 source_heading: Capability Spec

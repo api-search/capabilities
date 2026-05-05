@@ -34,46 +34,46 @@ personas: []
 provider_name: OpenAI
 provider_slug: openai
 search_terms:
-- image generation
-- create chat completion
-- openai
-- list models
-- t1
-- large language models
-- create speech
-- generate a conversational response using gpt models
-- create a variation of an existing image
-- generate speech
-- translate audio to english text
 - create a chat completion
-- audio create speech
-- audio create translation
-- create embeddings
-- create embedding
-- models list
-- chat completion
-- generate an image from a text prompt using dall-e
-- images create
-- transcribe audio to text using whisper
-- generate vector embeddings for text input
-- create image
-- text embeddings
-- edit an existing image with a text prompt
-- get details of a specific model
-- images create variation
-- list all available openai models
-- text to speech
-- artificial intelligence
-- chat create completion
-- embeddings create
-- generate an image
+- list models
+- images edit
 - ai
-- generate audio from text using tts models
+- text embeddings
+- list all available openai models
 - audio create transcription
 - models get
-- content generation
-- images edit
+- translate audio to english text
+- openai
+- text to speech
+- t1
+- generate vector embeddings for text input
+- chat create completion
+- images create variation
 - available models
+- generate speech
+- chat completion
+- artificial intelligence
+- transcribe audio to text using whisper
+- create embedding
+- generate an image from a text prompt using dall-e
+- content generation
+- get details of a specific model
+- generate a conversational response using gpt models
+- generate audio from text using tts models
+- images create
+- embeddings create
+- models list
+- create image
+- large language models
+- audio create speech
+- generate an image
+- create speech
+- audio create translation
+- create chat completion
+- image generation
+- create embeddings
+- edit an existing image with a text prompt
+- create a variation of an existing image
 slug: content-generation
 source_filename: content-generation.yaml
 source_heading: Capability Spec

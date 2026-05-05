@@ -53,54 +53,54 @@ personas: []
 provider_name: The Cat API
 provider_slug: the-cat-api
 search_terms:
-- browse image categories.
-- search cat breeds by name.
-- cast an upvote or downvote on an image.
 - list all cat images saved as favourites by the current user.
-- animals
-- cast an upvote (1) or downvote (0) on a cat image.
-- search for cat images, optionally filtered by breed or category.
+- get image
+- retrieve details and metadata for a specific cat image by id.
+- save a cat image to the user's favourites collection.
+- search cat images
+- list all available cat image categories for filtering searches.
 - create vote
+- content discovery
+- list user votes
+- search for cat images, optionally filtered by breed or category.
+- search cat images with optional breed and category filters.
+- search cat breeds by name.
+- cats
+- list all votes cast by the current user on cat images.
+- animals
+- save favourite
+- search for cat breeds by name to find breed-specific information.
+- search breeds
+- manage user favourite images.
+- vote on image
+- images
+- list all image categories.
+- list all cat breeds with detailed characteristics, personality ratings, and origin information.
+- browse image categories.
+- cast an upvote or downvote on an image.
+- save a cat image as a favourite.
+- media
+- list categories
+- search images
+- browse and search cat breeds.
 - list all cat breeds with characteristics.
+- list user favourites
+- search breeds by name.
+- get cat image
+- retrieve a specific cat image.
+- get details for a specific cat image.
+- list breeds
+- list favourites
 - list the user's favourite cat images.
 - cast and track votes on cat images.
-- list all available cat image categories for filtering searches.
-- images
-- list breeds
-- save a cat image as a favourite.
-- save a cat image to the user's favourites collection.
-- list user favourites
-- list all votes cast by the current user on cat images.
-- search cat images
-- save cat favourite
-- media
-- search images
-- list all image categories.
-- get details for a specific cat image.
-- content discovery
-- get image
-- list favourites
-- manage user favourite images.
-- search cat breeds
-- list categories
-- search for cat breeds by name to find breed-specific information.
-- retrieve details and metadata for a specific cat image by id.
-- vote on image
-- list all cat breeds with detailed characteristics, personality ratings, and origin information.
-- list user votes
-- retrieve a specific cat image.
-- browse and search cat breeds.
-- get cat image
-- list all user votes.
-- search breeds
-- search and retrieve cat images.
-- list votes
 - list image categories
-- cats
-- search breeds by name.
-- save favourite
-- search cat images with optional breed and category filters.
+- search cat breeds
+- cast an upvote (1) or downvote (0) on a cat image.
+- list all user votes.
 - list cat breeds
+- search and retrieve cat images.
+- save cat favourite
+- list votes
 slug: cat-content-discovery
 source_filename: cat-content-discovery.yaml
 source_heading: Capability Spec

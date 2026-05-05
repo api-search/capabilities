@@ -44,51 +44,51 @@ personas: []
 provider_name: Datadog
 provider_slug: datadog
 search_terms:
-- submitLogs
-- t1
-- aggregateLogs
-- monitoring
-- post an event
-- analytics
-- get a log index
 - aggregate log data
-- get a specific event
-- listLogIndexes
-- dashboards
-- search log events
-- logs
-- log indexes
 - search events
-- search log events with query language
+- platform
+- get log index
+- submitLogs
+- create event
+- compute aggregations over log events
+- get a log index
+- search log events
+- listEvents
+- post an event to correlate with log data
+- list events for correlation with logs
+- list events
+- get a specific event
+- analytics
+- getLogIndex
+- get event
+- listLogIndexes
+- searchEvents
+- search events alongside log analysis
+- log indexes
+- dashboards
+- t1
+- submit logs
+- datadog
+- get a specific log index configuration
 - send log entries to datadog
 - search logs
-- searchEvents
-- send log entries
-- list events
-- event correlation
-- get event
-- search
-- get log index
-- create event
-- list events for correlation with logs
-- aggregate logs
-- submit logs
-- events
-- listEvents
-- search events alongside log analysis
-- createEvent
-- platform
-- compute aggregations over log events
-- getLogIndex
-- post an event to correlate with log data
-- visualizations
-- datadog
-- log analytics
-- individual log index
-- searchLogs
-- get a specific log index configuration
-- list configured log indexes
 - list log indexes
+- individual log index
+- search log events with query language
+- list configured log indexes
+- visualizations
+- search
+- aggregateLogs
+- aggregate logs
+- searchLogs
+- monitoring
+- logs
+- send log entries
+- events
+- post an event
+- createEvent
+- log analytics
+- event correlation
 slug: log-analytics
 source_filename: log-analytics.yaml
 source_heading: Capability Spec

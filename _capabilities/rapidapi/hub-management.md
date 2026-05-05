@@ -42,45 +42,45 @@ personas: []
 provider_name: RapidAPI
 provider_slug: rapidapi
 search_terms:
-- api subscriptions.
-- list all subscriptions.
-- api testing
-- delete an api listing.
-- get api
-- update api
-- list all organizations.
-- list subscriptions
-- administration
-- marketplace
-- remove an api listing from the enterprise hub. this action is irreversible.
-- retrieve details for a specific api listing including versions, endpoints, and pricing plans.
-- api marketplace
-- api management
-- list apis
-- api design
-- single api listing.
-- list all users.
-- list all organizations in the enterprise hub.
+- platform
+- list organizations
 - hub users.
-- rapidapi
-- api gateway
 - list users
 - enterprise
-- create api
-- publish a new api listing to the enterprise hub marketplace.
-- list organizations
-- update an existing api listing configuration, description, or settings.
-- hub organizations.
-- api listings in the enterprise hub.
-- list all apis in the hub.
-- delete api
-- platform
-- list all users in the enterprise hub to manage access and roles.
-- create a new api listing.
-- update an api listing.
-- list all api subscriptions to monitor adoption and revenue.
-- get api details.
+- list all organizations.
 - list all api listings in the rapidapi enterprise hub. use to audit, discover, or report on available apis.
+- get api details.
+- api listings in the enterprise hub.
+- rapidapi
+- create api
+- single api listing.
+- api testing
+- remove an api listing from the enterprise hub. this action is irreversible.
+- list all api subscriptions to monitor adoption and revenue.
+- delete api
+- get api
+- administration
+- list all apis in the hub.
+- list all subscriptions.
+- hub organizations.
+- retrieve details for a specific api listing including versions, endpoints, and pricing plans.
+- api marketplace
+- update an api listing.
+- publish a new api listing to the enterprise hub marketplace.
+- update api
+- list apis
+- api management
+- api design
+- create a new api listing.
+- api subscriptions.
+- list all organizations in the enterprise hub.
+- delete an api listing.
+- list subscriptions
+- list all users in the enterprise hub to manage access and roles.
+- api gateway
+- marketplace
+- list all users.
+- update an existing api listing configuration, description, or settings.
 slug: hub-management
 source_filename: hub-management.yaml
 source_heading: Capability Spec

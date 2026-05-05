@@ -31,44 +31,44 @@ personas: []
 provider_name: Salesforce Experience Cloud
 provider_slug: salesforce-experience-cloud
 search_terms:
-- get news feed
-- list delivery content
-- feeds
-- post to community feed
-- post to the community feed.
-- list topics
-- create a new community topic.
-- community topics.
-- list discussion topics in an experience cloud community.
-- create community topic
-- get community news feed
-- post a message or content to an experience cloud community feed.
-- list cms content items for delivery to headless frontend applications.
-- digital experience
-- partner portal
-- community social feed.
-- create topic
-- chatter
-- salesforce experience cloud
-- retrieve the latest news feed posts for an experience cloud community.
-- post feed element
-- list community topics.
-- topics
-- social
-- list community topics
-- content delivery
-- list cms content for delivery
-- headless cms
-- list cms content for delivery.
-- get the news feed for a community.
-- engagement
-- cms content delivery for headless frontends.
-- experience cloud
-- create a new discussion topic in an experience cloud community.
-- crm
 - cms
-- communities
+- post feed element
+- social
+- community social feed.
+- post to community feed
+- get news feed
 - customer portal
+- list community topics.
+- post a message or content to an experience cloud community feed.
+- create community topic
+- communities
+- create a new discussion topic in an experience cloud community.
+- get community news feed
+- get the news feed for a community.
+- topics
+- experience cloud
+- list cms content for delivery.
+- cms content delivery for headless frontends.
+- create a new community topic.
+- digital experience
+- list topics
+- partner portal
+- list cms content items for delivery to headless frontend applications.
+- list delivery content
+- salesforce experience cloud
+- list community topics
+- create topic
+- list discussion topics in an experience cloud community.
+- feeds
+- crm
+- retrieve the latest news feed posts for an experience cloud community.
+- headless cms
+- post to the community feed.
+- content delivery
+- chatter
+- community topics.
+- list cms content for delivery
+- engagement
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

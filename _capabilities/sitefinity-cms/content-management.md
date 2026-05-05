@@ -34,31 +34,31 @@ personas: []
 provider_name: Sitefinity CMS
 provider_slug: sitefinity-cms
 search_terms:
-- list blog posts from sitefinity cms
-- sitefinity
-- content management
-- manage sitefinity blog posts
-- create blog post
-- publishing
-- list blog posts from sitefinity cms with optional odata filtering
-- create a new blog post in sitefinity cms
-- create news item
-- list events
-- create a new news content item in sitefinity cms
-- create event
-- list blog posts
-- list news items
-- list events from sitefinity cms with optional odata filtering
-- list news items from sitefinity cms with optional odata filtering
-- manage sitefinity event content
-- list events from sitefinity cms
 - create a new event in sitefinity cms
-- create a new news item in sitefinity cms
-- list news items from sitefinity cms
-- manage sitefinity news content
-- headless cms
 - rest
 - .net
+- create event
+- manage sitefinity news content
+- list events
+- publishing
+- list blog posts
+- create blog post
+- create news item
+- list blog posts from sitefinity cms with optional odata filtering
+- manage sitefinity blog posts
+- list news items
+- create a new news item in sitefinity cms
+- create a new blog post in sitefinity cms
+- list events from sitefinity cms with optional odata filtering
+- create a new news content item in sitefinity cms
+- headless cms
+- sitefinity
+- manage sitefinity event content
+- content management
+- list news items from sitefinity cms
+- list blog posts from sitefinity cms
+- list news items from sitefinity cms with optional odata filtering
+- list events from sitefinity cms
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

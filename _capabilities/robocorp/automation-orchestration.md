@@ -90,82 +90,82 @@ personas: []
 provider_name: Robocorp
 provider_slug: robocorp
 search_terms:
-- list worker groups
-- automation
+- define a new automation process with steps and schedules
+- delete worker
+- list secrets
+- worker group organization
 - create worker group
+- get a specific worker
 - list all webhooks
+- create asset
+- workspace management
 - create secret
 - list all configured webhooks for process event notifications
-- list process runs
-- get workspace
+- list assets
 - open source
-- list work items in the queue with optional state filter
-- get a specific worker
-- worker group organization
-- list all task packages
-- start a new process run
-- create task package
-- deploy a new task package from zip, github, or gitlab source
-- worker agent management
-- create work item
-- robocorp
-- list all assets
-- list secret names in the vault
-- create webhook
-- list all automation workers and their status
-- list vault secret names (secret values are never returned)
-- process execution runs
-- individual worker
-- list all runs for a process
-- start process run
-- work item queue management
-- add a new work item to the queue
-- vault secret management
-- remove a worker from the workspace
 - list all workers in the workspace
-- list secrets
-- define a new automation process with steps and schedules
-- add a new work item to the process queue
-- list all deployed task packages in the workspace
-- asset storage
-- create a process webhook
-- list all stored assets in the workspace
-- create a new asset
-- get workspace details
-- delete worker
-- create a new worker group for organizing automation workers
-- trigger a new execution run for an automation process
-- list webhooks
-- get details and status for a specific worker
-- list work items
-- list workers
+- add a new work item to the queue
 - list all worker groups
 - automation process management
-- create a new automation process
-- list task packages
-- task package deployment
-- list all worker groups for organizing workers
-- create process
-- list work items in the queue
-- python
-- remove a worker
-- list processes
-- create a new vault secret
-- list all automation processes defined in the workspace
-- orchestration
-- list all automation processes
-- create asset
-- webhook configuration
-- workflow automation
-- get workspace configuration and details
-- list all execution runs for an automation process
+- list all runs for a process
+- create task package
 - workflow
-- list assets
-- create a new worker group
+- vault secret management
+- get details and status for a specific worker
+- remove a worker
+- start a new process run
+- create a new worker group for organizing automation workers
+- list all execution runs for an automation process
+- list processes
+- list process runs
+- robocorp
+- create webhook
+- deploy a new task package from zip, github, or gitlab source
+- create a new asset
 - get worker
+- trigger a new execution run for an automation process
+- list all deployed task packages in the workspace
+- list all automation processes defined in the workspace
+- list all assets
+- remove a worker from the workspace
+- list vault secret names (secret values are never returned)
+- list work items in the queue with optional state filter
+- get workspace configuration and details
+- orchestration
+- get workspace
+- create a process webhook
+- python
+- create work item
+- individual worker
+- list work items
+- work item queue management
+- process execution runs
+- webhook configuration
+- list all stored assets in the workspace
+- create process
+- list worker groups
+- start process run
+- get workspace details
+- list all automation workers and their status
 - rpa
-- workspace management
+- create a new automation process
+- asset storage
+- task package deployment
+- list all task packages
 - deploy a new task package
+- list task packages
+- list work items in the queue
+- automation
+- list workers
+- list webhooks
+- list all automation processes
+- list secret names in the vault
+- create a new worker group
+- worker agent management
+- workflow automation
+- create a new vault secret
+- list all worker groups for organizing workers
+- add a new work item to the process queue
 slug: automation-orchestration
 source_filename: automation-orchestration.yaml
 source_heading: Capability Spec

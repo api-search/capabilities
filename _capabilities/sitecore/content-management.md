@@ -55,51 +55,51 @@ personas: []
 provider_name: sitecore
 provider_slug: sitecore
 search_terms:
-- list content hub entities (assets)
-- get a specific content hub digital asset by id
-- list all xm cloud sites
-- list sites
-- create publishing job
-- list pages for an xm cloud site
-- content management
-- get details of a specific site collection
-- list xm cloud content publishing jobs
-- publishing
 - manage content publishing workflows
-- list pages for a site
-- create a new xm cloud site collection
-- manage xm cloud sites
-- list publishing jobs
-- create and queue a content publishing job to experience edge
-- list all sites in the tenant
-- get details of a site collection
-- create a new page in a site
-- manage xm cloud site collections
-- list all site collections in xm cloud tenant
-- list pages
-- list content publishing jobs
-- search content hub assets using query language
-- get site
-- create a new page within an xm cloud site
+- manage content hub digital assets
+- get collection
+- list sites
+- list pages for an xm cloud site
+- create publishing job
 - list content hub digital assets
 - get asset
-- digital asset management
-- create page
-- list all xm cloud site collections
-- create site
-- search assets
-- create and queue a publishing job
-- get collection
-- headless cms
-- create collection
-- manage pages within xm cloud sites
-- get details of a specific xm cloud site
-- sitecore
+- manage xm cloud sites
+- list pages for a site
 - list assets
-- manage content hub digital assets
-- manage a specific site collection
-- list collections
+- sitecore
+- list xm cloud content publishing jobs
+- search assets
+- manage pages within xm cloud sites
+- digital asset management
+- list all xm cloud sites
+- create a new page in a site
+- list all xm cloud site collections
+- publishing
+- create site
+- list all site collections in xm cloud tenant
+- get details of a site collection
+- list content publishing jobs
+- get site
+- list all sites in the tenant
+- create a new xm cloud site collection
 - create a new xm cloud site
+- list content hub entities (assets)
+- list publishing jobs
+- create a new page within an xm cloud site
+- create page
+- create and queue a content publishing job to experience edge
+- manage xm cloud site collections
+- search content hub assets using query language
+- headless cms
+- create and queue a publishing job
+- content management
+- get details of a specific site collection
+- manage a specific site collection
+- get a specific content hub digital asset by id
+- list collections
+- list pages
+- create collection
+- get details of a specific xm cloud site
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

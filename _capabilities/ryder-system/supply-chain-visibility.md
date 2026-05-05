@@ -48,54 +48,54 @@ provider_name: Ryder System
 provider_slug: ryder-system
 search_terms:
 - decline a load tender from ryder
-- confirm shipment
-- supply chain
-- list shipments with current status
-- list shipments with current status and tracking information
-- submit a load event update (pickup, delivery, delay, exception)
-- load tracking
-- load tenders (carrier)
-- get shipment status
-- submit location update
-- list shipments
-- list load tenders assigned to the carrier from ryder
-- single load tender
-- get detailed information for a specific shipment
-- decline load
-- submit shipment requirements to ryder
-- trucking
-- carrier management
-- shipment tracking status
-- get detailed information for a specific carrier load tender
-- submit a real-time vehicle location update for tracking
-- submit vehicle location update
-- accept a load tender from ryder
-- get real-time tracking status for a shipment
-- list loads
-- vehicle location tracking
-- update shipment
-- list carrier loads
-- submit load event
-- create shipment
 - submit ship confirmation when goods are shipped
-- submit ship confirmation with actual ship date and tracking number
-- accept load
-- ship confirmations
-- transportation
-- list carrier load tenders
-- single shipment
-- get real-time tracking status and location for a shipment
-- get load
-- get carrier load
-- logistics
-- get shipment
-- fleet management
-- shipment management
-- update shipment details
-- get load tender details
-- update shipment pickup date or special instructions
-- get shipment details
 - submit new shipment requirements to ryder transportation management
+- single shipment
+- shipment tracking status
+- submit load event
+- get shipment details
+- update shipment details
+- get real-time tracking status and location for a shipment
+- trucking
+- get carrier load
+- list carrier load tenders
+- accept load
+- list load tenders assigned to the carrier from ryder
+- submit shipment requirements to ryder
+- submit location update
+- list carrier loads
+- submit a load event update (pickup, delivery, delay, exception)
+- list shipments
+- list loads
+- transportation
+- update shipment
+- load tracking
+- submit ship confirmation with actual ship date and tracking number
+- fleet management
+- supply chain
+- get shipment
+- get real-time tracking status for a shipment
+- ship confirmations
+- logistics
+- confirm shipment
+- update shipment pickup date or special instructions
+- submit a real-time vehicle location update for tracking
+- load tenders (carrier)
+- carrier management
+- shipment management
+- get load tender details
+- accept a load tender from ryder
+- list shipments with current status and tracking information
+- single load tender
+- list shipments with current status
+- decline load
+- get detailed information for a specific carrier load tender
+- vehicle location tracking
+- submit vehicle location update
+- get detailed information for a specific shipment
+- get shipment status
+- create shipment
+- get load
 slug: supply-chain-visibility
 source_filename: supply-chain-visibility.yaml
 source_heading: Capability Spec

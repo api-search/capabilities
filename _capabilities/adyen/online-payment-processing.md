@@ -40,51 +40,51 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- adyen
-- initiate and manage payments.
-- authorise a payment via classic adyen payments api.
-- capture an authorised payment.
-- e-commerce
-- capture a previously authorised payment.
-- create checkout session
-- refund a completed payment using its psp reference.
-- cancel an authorised payment.
-- create payment
-- financial services
-- capture payment
-- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
-- refund a payment.
-- payments
-- marketplace and platform fund management.
-- capture authorised payments.
-- list payment methods
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- manages merchant accounts, terminals, and dispute responses.
-- cancel authorised payments.
-- cancel an authorised payment before capture.
-- create a checkout session.
-- chargeback and dispute handling.
-- create a payment via checkout api.
-- create an adyen checkout session for hosted payment flows.
-- builds marketplace and fintech platforms using adyen balance platform.
 - online and in-person payment acceptance.
-- refund payment
-- list available payment methods.
-- cancel payment
-- list available payment methods for a shopper based on their context.
-- online payments
-- create checkout sessions for hosted payment flows.
+- e-commerce
 - authorise a payment via classic payments api.
-- authorise a payment.
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- initiate a payment via adyen checkout api.
+- create an adyen checkout session for hosted payment flows.
+- cancel an authorised payment before capture.
 - fintech
-- authorise payment
-- refund completed payments.
-- builds payment integrations using adyen apis and sdks.
-- get available payment methods for a shopper.
-- merchant account and balance platform configuration.
+- manages merchant accounts, terminals, and dispute responses.
 - checkout
+- cancel payment
+- capture payment
+- initiate a payment via adyen checkout api.
+- create payment
+- merchant account and balance platform configuration.
+- capture a previously authorised payment.
+- refund a completed payment using its psp reference.
+- get available payment methods for a shopper.
+- authorise a payment via classic adyen payments api.
+- create a checkout session.
+- list available payment methods.
+- initiate and manage payments.
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
+- refund a payment.
+- adyen
+- 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
+- payments
+- cancel authorised payments.
+- refund payment
+- marketplace and platform fund management.
+- online payments
+- list available payment methods for a shopper based on their context.
+- refund completed payments.
+- list payment methods
+- create checkout session
+- authorise a payment.
+- chargeback and dispute handling.
+- authorise payment
+- capture authorised payments.
+- create checkout sessions for hosted payment flows.
+- capture an authorised payment.
+- financial services
+- create a payment via checkout api.
+- builds marketplace and fintech platforms using adyen balance platform.
+- builds payment integrations using adyen apis and sdks.
+- cancel an authorised payment.
 slug: online-payment-processing
 source_filename: online-payment-processing.yaml
 source_heading: Capability Spec

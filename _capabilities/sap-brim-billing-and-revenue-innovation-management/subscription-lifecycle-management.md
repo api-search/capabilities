@@ -30,38 +30,38 @@ personas: []
 provider_name: SAP BRIM (Billing and Revenue Innovation Management)
 provider_slug: sap-brim-billing-and-revenue-innovation-management
 search_terms:
-- list customer subscriptions with filtering by status, plan, or customer.
-- list subscriptions
-- list customers.
-- customer accounts.
-- list available subscription plans.
+- get customer account details and subscription history.
+- list customers
+- list plans
+- subscription management
+- billing
+- list all subscriptions with filtering.
+- single subscription.
+- list all available subscription plans in the brim catalog.
+- enterprise
+- create subscription
+- revenue management
+- get full lifecycle details of a specific subscription.
 - get customer account details.
 - cancel and terminate a customer subscription.
-- subscription management
-- order to cash
-- subscription management.
-- get full lifecycle details of a specific subscription.
-- get subscription details.
-- get subscription
-- list all subscriptions with filtering.
-- revenue management
-- list plans
-- get customer account details and subscription history.
-- sap
-- create subscription
-- enterprise
-- list customers
-- suspend an active subscription (e.g., for non-payment).
-- single customer account.
-- get customer
-- usage-based pricing
-- suspend subscription
-- list all available subscription plans in the brim catalog.
-- billing
-- single subscription.
-- create a new subscription for a customer on a selected plan.
+- customer accounts.
 - subscription plan catalog.
+- list available subscription plans.
 - cancel subscription
+- suspend an active subscription (e.g., for non-payment).
+- get subscription details.
+- get customer
+- get subscription
+- list customers.
+- order to cash
+- list customer subscriptions with filtering by status, plan, or customer.
+- usage-based pricing
+- create a new subscription for a customer on a selected plan.
+- list subscriptions
+- sap
+- suspend subscription
+- subscription management.
+- single customer account.
 slug: subscription-lifecycle-management
 source_filename: subscription-lifecycle-management.yaml
 source_heading: Capability Spec

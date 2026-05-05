@@ -60,59 +60,59 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- delete an endpoint
-- create a new dedicated inference endpoint.
-- get logs
-- scale an endpoint to zero replicas.
-- list available cloud providers and hardware options.
-- get metrics for an endpoint.
-- list all endpoints
-- update endpoint configuration
-- list all dedicated inference endpoints for a namespace.
-- get info
-- get endpoint metrics
-- individual endpoint operations
-- check if the tgi server is healthy and responding.
-- operations
-- get information about the deployed model and tgi server.
-- cloud providers
-- delete a dedicated inference endpoint.
-- update an existing endpoint configuration.
-- resume a paused endpoint.
-- check tgi server health
-- manage inference endpoints
-- pause an endpoint
-- get metrics
-- mlops
-- get prometheus metrics from the tgi server.
 - resume an endpoint
-- get endpoint logs
-- get tgi server info
+- manage inference endpoints
 - pause a running endpoint
-- hugging face
-- get details of a specific endpoint.
-- health check
-- tgi server info
-- tgi metrics
-- tgi health check
-- list providers
-- list endpoints
-- get endpoint details
 - get endpoint
-- delete endpoint
-- scale to zero
-- get logs for an endpoint.
-- deployment
-- create a new endpoint
-- create endpoint
-- pause endpoint
-- resume a paused endpoint
-- resume endpoint
+- resume a paused endpoint.
+- get prometheus metrics from the tgi server.
+- tgi server info
 - tgi server health
-- infrastructure
-- list available cloud providers
-- pause a running endpoint to stop billing.
+- delete a dedicated inference endpoint.
+- resume endpoint
+- get metrics
+- resume a paused endpoint
+- create a new endpoint
+- pause endpoint
+- pause an endpoint
+- hugging face
+- mlops
 - update endpoint
+- check tgi server health
+- delete an endpoint
+- health check
+- get information about the deployed model and tgi server.
+- operations
+- get metrics for an endpoint.
+- get endpoint logs
+- scale an endpoint to zero replicas.
+- scale to zero
+- tgi health check
+- pause a running endpoint to stop billing.
+- create a new dedicated inference endpoint.
+- list endpoints
+- list all dedicated inference endpoints for a namespace.
+- get tgi server info
+- create endpoint
+- infrastructure
+- cloud providers
+- update an existing endpoint configuration.
+- update endpoint configuration
+- check if the tgi server is healthy and responding.
+- deployment
+- list available cloud providers and hardware options.
+- list available cloud providers
+- delete endpoint
+- get logs for an endpoint.
+- tgi metrics
+- get details of a specific endpoint.
+- list all endpoints
+- individual endpoint operations
+- get logs
+- get info
+- get endpoint details
+- list providers
+- get endpoint metrics
 slug: deployment-and-operations
 source_filename: deployment-and-operations.yaml
 source_heading: Capability Spec

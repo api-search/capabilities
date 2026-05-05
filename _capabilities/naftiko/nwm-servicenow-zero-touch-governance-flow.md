@@ -1,40 +1,52 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that fires Naftiko governance findings into ServiceNow change/incident records as advisory + blocking gates, so the policy actually has a system of action.
+description: A Northwestern Mutual ServiceNow flow that auto-creates a governance ticket on every Naftiko-detected control failure.
 layout: capability
 name: Nwm Servicenow Zero Touch Governance Flow
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: create-governance-incident
+  path: /incidents
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- servicenow
+- list incidents
+- spec-driven integration
+- get incident
 - mcp
-- ai
-- a capability that fires naftiko governance findings into servicenow change/incident records as advisory + blocking gates, so the policy actually has a system of action.
+- capabilities
+- create governance incident
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
+- nwm
 - governance
+- ai
 slug: nwm-servicenow-zero-touch-governance-flow
 source_filename: nwm-servicenow-zero-touch-governance-flow.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Nwm Servicenow Zero Touch Governance Flow\n  description: A capability that fires Naftiko governance findings into ServiceNow change/incident records as advisory + blocking gates, so the policy actually has a system of action.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: nwm-servicenow-zero-touch-governance-flow-rest\n    description: REST API for Nwm Servicenow Zero Touch Governance Flow.\n    resources:\n    -\
-  \ name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: nwm-servicenow-zero-touch-governance-flow-mcp\n    description: MCP server exposing Nwm Servicenow Zero Touch Governance Flow for AI agents.\n    tools:\n    - name: example\n      description: A capability that fires Naftiko governance findings into ServiceNow change/incident records as advisory + blocking gates, so the policy actually has a system of action.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: nwm-servicenow-zero-touch-governance-flow-skills\n    description: Agent Skill bundle for Nwm Servicenow Zero Touch Governance Flow.\n    skills:\n    - name: nwm-servicenow-zero-touch-governance-flow\n      description: A capability that fires Naftiko governance findings into ServiceNow\
-  \ change/incident records as advisory + blocking gates, so the policy actually has a system of action.\n      location: file:///opt/naftiko/skills/nwm-servicenow-zero-touch-governance-flow\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that fires Naftiko governance findings into ServiceNow change/incident records as advisory + blocking gates, so the policy actually has a system of action.\n        from:\n          sourceNamespace: nwm-servicenow-zero-touch-governance-flow-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Nwm Servicenow Zero Touch Governance Flow\n  description: A Northwestern Mutual ServiceNow flow that auto-creates a governance ticket on every Naftiko-detected control failure.\n  tags: [Naftiko, NWM, ServiceNow, Governance]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: servicenow-env\n  keys: {SN_HOST: SN_HOST, SN_USER: SN_USER, SN_PASSWORD: SN_PASSWORD}\ncapability:\n  consumes:\n  - namespace: servicenow\n    type: http\n    baseUri: https://{{SN_HOST}}\n    authentication: {type: basic, username: '{{SN_USER}}', password: '{{SN_PASSWORD}}'}\n    resources:\n    - {name: incidents, path: /api/now/table/incident, operations: [{name: create-incident, method: POST}, {name: list-incidents, method: GET}]}\n    - name: incident\n      path: /api/now/table/incident/{{sys_id}}\n      operations:\n      - {name: get-incident, method: GET, inputParameters: [{name: sys_id, in: path}]}\n  exposes:\n  - type: rest\n   \
+  \ address: 0.0.0.0\n    port: 8080\n    namespace: nwm-servicenow-zero-touch-governance-flow-rest\n    description: REST surface for zero-touch governance.\n    resources:\n    - {name: incident, path: /incidents, operations: [{method: POST, name: create-governance-incident, call: servicenow.create-incident}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: nwm-servicenow-zero-touch-governance-flow-mcp\n    description: MCP for zero-touch governance.\n    tools:\n    - {name: create-governance-incident, call: servicenow.create-incident}\n    - {name: list-incidents, hints: {readOnly: true}, call: servicenow.list-incidents}\n    - name: get-incident\n      hints: {readOnly: true}\n      inputParameters: [{name: sys_id, type: string, required: true}]\n      call: servicenow.get-incident\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: nwm-servicenow-zero-touch-governance-flow-skills\n    description: Skill for zero-touch governance.\n    skills:\n\
+  \    - name: nwm-servicenow-zero-touch-governance-flow\n      description: Zero-touch ServiceNow governance flow.\n      location: file:///opt/naftiko/skills/nwm-servicenow-zero-touch-governance-flow\n      allowed-tools: create-governance-incident,list-incidents,get-incident\n      tools:\n      - {name: create-governance-incident, from: {sourceNamespace: nwm-servicenow-zero-touch-governance-flow-mcp, action: create-governance-incident}}\n      - {name: list-incidents, from: {sourceNamespace: nwm-servicenow-zero-touch-governance-flow-mcp, action: list-incidents}}\n      - {name: get-incident, from: {sourceNamespace: nwm-servicenow-zero-touch-governance-flow-mcp, action: get-incident}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/nwm-servicenow-zero-touch-governance-flow.yaml
 tags:
 - Naftiko
+- NWM
+- ServiceNow
+- Governance
 tools:
-- description: A capability that fires Naftiko governance findings into ServiceNow change/incident records as advisory + blocking gates, so the policy actually has a system of action.
+- description: ''
+  hints: {}
+  name: create-governance-incident
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-incidents
+- description: ''
+  hints:
+    readOnly: true
+  name: get-incident
 ---

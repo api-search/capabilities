@@ -45,40 +45,40 @@ personas: []
 provider_name: Threads
 provider_slug: threads-api
 search_terms:
-- create a new threads post with text, image, or video and reply controls
-- get all user's reply posts on threads
+- meta
+- create a new thread post with reply control
+- publish thread
+- social
+- account-level insights
 - list replies
-- get all user replies
+- get publishing limit
+- social networks
+- get all user threads with pagination
 - analytics
-- content management
-- get threads user profile information
-- thread posts listing
-- get threads account analytics including views, likes, replies, and followers
-- publishing
-- create thread
-- get account analytics and metrics
+- get all user's reply posts on threads
+- create a new threads post with text, image, or video and reply controls
+- get profile
 - get threads user profile information including username and biography
 - publish a created threads media container
-- social networks
-- get profile
 - check publishing quota and rate limits
-- media
-- publishing quota
-- user profile information
-- list threads
-- user reply posts
-- create a new thread post with reply control
-- social
-- publish thread containers
-- publish thread
-- get publishing limit
-- get all user threads with pagination
-- account-level insights
-- get account insights
-- meta
+- publishing
 - get all user's threads posts with pagination support
-- check publishing quota and rate limit status
+- get threads user profile information
+- get account insights
+- user reply posts
+- list threads
+- media
+- create thread
+- thread posts listing
+- get threads account analytics including views, likes, replies, and followers
+- get account analytics and metrics
+- publish thread containers
 - publish a created thread media container
+- get all user replies
+- publishing quota
+- content management
+- user profile information
+- check publishing quota and rate limit status
 slug: social-publishing
 source_filename: social-publishing.yaml
 source_heading: Capability Spec

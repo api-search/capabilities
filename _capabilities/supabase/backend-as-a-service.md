@@ -69,81 +69,81 @@ personas: []
 provider_name: Supabase
 provider_slug: supabase
 search_terms:
-- update rows in a table matching filter criteria
-- supabase
+- register a new user
+- manage supabase projects
+- postgresql function invocation
+- list secrets
+- list organizations
+- list all organizations the user belongs to
+- project health status
 - query table rows
+- insert rows
+- get project health and service status
+- get the api keys (anon, service_role) for a project
+- list users
+- create function
+- real time
+- get api keys
+- user login
+- create bucket
+- get user
+- list all storage buckets in the project
+- list functions
+- edge functions
+- backend as a service
+- open source
+- register a new user with email and password
+- organization management
+- sign in a user and get jwt access token
+- invoke a postgresql function
 - storage
-- create a new supabase project
-- list projects
+- create a new project
+- storage bucket management
+- get details for a specific project
+- get project details
+- supabase
 - create a new storage bucket
 - list all edge functions for a project
-- list all projects
-- full stack
-- list buckets
-- open source
-- organization management
-- manage supabase projects
-- create bucket
-- real time
-- postgresql
-- insert rows
-- list secrets stored for a project
-- list functions
-- list all users in the project (admin)
-- select rows
-- create project
+- list projects
 - create a storage bucket
-- get user
-- backend as a service
-- get project health and service status
-- authentication
-- get the api keys (anon, service_role) for a project
+- database
+- user registration
+- create a new supabase project
+- get project health status
+- list all users in the project (admin)
+- query rows from a database table with filtering and pagination
+- sign up
+- invoke function
+- postgresql
+- sign in
+- list all users
+- sign in a user
 - list all supabase projects
-- list all storage buckets
-- call a postgresql stored function via rpc
-- list all storage buckets in the project
-- user login
+- list all projects
+- deploy a new edge function to a project
+- list secrets stored for a project
+- get the currently authenticated user's profile
+- create signed url
+- database crud operations
+- get project health
+- insert one or more rows into a database table
+- full stack
+- list all organizations
+- manage a specific project
+- authentication
 - get project api keys
 - user management (admin)
-- get project health
-- database crud operations
-- list secrets
-- list all organizations
-- register a new user with email and password
-- invoke a postgresql function
-- create a signed url for temporary access to a private file
-- list users
-- get api keys
-- get details for a specific project
-- register a new user
-- list all organizations the user belongs to
-- get the currently authenticated user's profile
-- query rows from a database table with filtering and pagination
-- create signed url
-- database
-- sign up
-- get project details
-- create function
-- list organizations
-- manage a specific project
-- create a new project
-- insert one or more rows into a database table
-- retrieve project api keys
-- get project health status
+- list all storage buckets
+- list buckets
 - update rows
-- sign in a user and get jwt access token
-- sign in a user
-- list all users
-- deploy a new edge function to a project
-- edge functions
-- invoke function
-- postgresql function invocation
+- create a signed url for temporary access to a private file
+- call a postgresql stored function via rpc
+- create project
 - get project
-- sign in
-- storage bucket management
-- project health status
-- user registration
+- update rows in a table matching filter criteria
 - get health
+- select rows
+- retrieve project api keys
 slug: backend-as-a-service
 source_filename: backend-as-a-service.yaml
 source_heading: Capability Spec

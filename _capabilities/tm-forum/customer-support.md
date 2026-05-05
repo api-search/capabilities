@@ -39,60 +39,60 @@ personas: []
 provider_name: TM Forum
 provider_slug: tm-forum
 search_terms:
-- trouble ticket
-- update trouble ticket status, severity, or resolution
-- manages customer and party master data across systems
-- create a new customer trouble ticket
-- CRM Admin
-- standards
-- network operations center engineer managing network incidents
 - open apis
-- customer accounts
-- oss
-- unified party/customer data management across bss systems
-- product, service, and resource catalog management
-- Master Data Manager
-- product, service, and resource ordering
-- NOC Engineer
-- retrieve a specific customer account by id
-- Support Agent
-- update trouble ticket
 - trouble ticket and incident management
-- create a new trouble ticket
+- retrieve a specific customer account by id
+- CRM Admin
+- designs and implements bss systems using tm forum open apis
+- list customers
+- Support Agent
 - product, service, and resource inventory
 - bss
-- list trouble tickets
-- customer and party lifecycle management
-- retrieve a specific trouble ticket by id
-- tm forum
-- BSS Architect
-- manages product ordering and fulfillment workflows
-- list or find customer accounts
-- individual trouble ticket
-- end-to-end flow from product catalog through ordering to billing
 - individual customer account
-- get trouble ticket
-- create trouble ticket
-- list customers
-- trouble tickets
+- customer and party lifecycle management
+- individual trouble ticket
+- update trouble ticket
+- list customer accounts
+- telco
 - Order Manager
+- create a new customer account
+- oss
+- product, service, and resource ordering
+- NOC Engineer
+- trouble tickets
+- handles customer trouble tickets and incident resolution
+- update customer
+- network operations center engineer managing network incidents
+- manages product ordering and fulfillment workflows
+- update trouble ticket status, severity, or resolution
+- create trouble ticket
+- partially update a customer account
+- telecommunications
+- Master Data Manager
 - get customer
 - customer-reported issue lifecycle from ticket creation to resolution
-- create customer
-- customer management
+- BSS Architect
+- standards
 - support
-- list customer accounts
-- telecommunications
-- create a new customer account
-- retrieve a trouble ticket
-- partially update a customer account
-- update customer
+- unified party/customer data management across bss systems
+- end-to-end flow from product catalog through ordering to billing
+- list or find customer accounts
+- get trouble ticket
+- retrieve a specific trouble ticket by id
 - retrieve a customer account
-- update a trouble ticket status
+- trouble ticket
+- list trouble tickets
+- create customer
+- create a new customer trouble ticket
+- retrieve a trouble ticket
 - list or find trouble tickets
-- designs and implements bss systems using tm forum open apis
-- telco
-- handles customer trouble tickets and incident resolution
+- manages customer and party master data across systems
+- customer accounts
+- customer management
+- update a trouble ticket status
+- product, service, and resource catalog management
+- create a new trouble ticket
+- tm forum
 slug: customer-support
 source_filename: customer-support.yaml
 source_heading: Capability Spec

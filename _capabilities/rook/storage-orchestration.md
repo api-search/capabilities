@@ -47,46 +47,46 @@ provider_name: Rook
 provider_slug: rook
 search_terms:
 - manage s3-compatible buckets in ceph object storage
-- create a new s3-compatible bucket in rook ceph object storage
-- delete an object from rook ceph object storage
-- storage
-- list all s3 buckets in the ceph object storage gateway managed by rook
-- delete an empty ceph bucket managed by rook
-- list objects
-- list buckets
-- manage objects within a ceph bucket
-- delete bucket
-- file storage
-- list all s3 buckets in the ceph object storage gateway
-- delete an object from ceph object storage
-- check bucket
-- cloud native
-- retrieve object metadata without downloading
-- kubernetes
-- check bucket existence and access permissions
-- delete an empty s3 bucket
-- put object
-- list objects in a rook ceph bucket with optional prefix filter and pagination
-- cncf
-- retrieve metadata of a ceph object without downloading the content
-- get object
-- upload an object to rook ceph object storage
-- download an object from ceph object storage
 - graduated
-- download an object from rook ceph object storage
-- ceph
-- single object operations
-- create a new s3 bucket in ceph object storage
-- delete object
-- object storage
-- block storage
-- get object metadata
-- orchestration
-- head object
-- upload an object to ceph object storage
-- single bucket operations
-- list objects in a bucket with optional prefix and pagination
+- list objects in a rook ceph bucket with optional prefix filter and pagination
 - create bucket
+- get object
+- object storage
+- download an object from rook ceph object storage
+- delete bucket
+- storage
+- check bucket existence and access permissions
+- get object metadata
+- list objects in a bucket with optional prefix and pagination
+- list all s3 buckets in the ceph object storage gateway managed by rook
+- block storage
+- delete an empty s3 bucket
+- check bucket
+- retrieve object metadata without downloading
+- file storage
+- cloud native
+- retrieve metadata of a ceph object without downloading the content
+- head object
+- orchestration
+- list all s3 buckets in the ceph object storage gateway
+- manage objects within a ceph bucket
+- delete an object from rook ceph object storage
+- single object operations
+- delete object
+- ceph
+- put object
+- create a new s3-compatible bucket in rook ceph object storage
+- cncf
+- upload an object to rook ceph object storage
+- list objects
+- download an object from ceph object storage
+- single bucket operations
+- delete an object from ceph object storage
+- delete an empty ceph bucket managed by rook
+- kubernetes
+- create a new s3 bucket in ceph object storage
+- list buckets
+- upload an object to ceph object storage
 slug: storage-orchestration
 source_filename: storage-orchestration.yaml
 source_heading: Capability Spec

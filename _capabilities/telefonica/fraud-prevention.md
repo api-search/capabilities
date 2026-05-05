@@ -29,39 +29,39 @@ personas: []
 provider_name: Telefónica
 provider_slug: telefonica
 search_terms:
-- telefónica
-- verify that a user's device is present within a specified geographic area using network data.
-- get device phone number
-- location services
-- match kyc
-- mobile network
-- get the phone number associated with the user's current device connection (for passwordless login).
-- get the date of the most recent sim swap for detailed fraud investigation.
-- validate identity data against carrier records.
-- check sim swap
-- financial services
-- camara
-- authentication
-- verify that a user's phone number matches their device's sim card connection using telefónica carrier data.
-- device location verification.
-- open gateway
-- kyc
-- identity verification
-- phone number verification using carrier data.
-- verify phone number
-- verify device is within a geographic area.
-- validate user identity data (name, birthdate, address, email) against telefónica carrier records for kyc compliance.
+- verify location
 - kyc identity data matching.
+- match kyc identity
+- verify that a user's phone number matches their device's sim card connection using telefónica carrier data.
 - verify a phone number matches the device's sim connection.
-- check for recent sim swap on a phone number.
+- verify that a user's device is present within a specified geographic area using network data.
+- kyc
+- check sim swap
+- get the phone number associated with the user's current device connection (for passwordless login).
+- validate identity data against carrier records.
+- validate user identity data (name, birthdate, address, email) against telefónica carrier records for kyc compliance.
+- phone number verification using carrier data.
 - sim swap fraud detection.
+- location services
+- telecommunications
 - fraud prevention
 - check if a sim swap fraud attempt occurred recently on a phone number.
-- telecommunications
-- match kyc identity
-- verify device location
+- verify phone number
+- verify device is within a geographic area.
 - get sim swap date
-- verify location
+- check for recent sim swap on a phone number.
+- telefónica
+- get the date of the most recent sim swap for detailed fraud investigation.
+- verify device location
+- camara
+- authentication
+- open gateway
+- mobile network
+- get device phone number
+- financial services
+- match kyc
+- device location verification.
+- identity verification
 slug: fraud-prevention
 source_filename: fraud-prevention.yaml
 source_heading: Capability Spec

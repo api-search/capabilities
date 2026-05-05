@@ -43,58 +43,58 @@ personas: []
 provider_name: Unified.to
 provider_slug: unified-to
 search_terms:
-- hris
-- create a new candidate
-- list hris payslips
-- create a new candidate in a connected ats integration
-- list ats jobs
-- list hr groups and departments from a connected hris integration
-- Finance Operations Engineer
-- candidate profiles from ats integrations
-- list job applications from a connected ats integration
-- create a new employee record
-- integrations
-- hr
-- list ats applications
-- list ats interviews
-- developers building invoicing automation, expense management, and accounting sync
-- unified.to
-- Revenue Operations Developer
-- CRM Integrator
-- unified api
-- crm contact, company, and deal management across 47+ integrations
-- list candidates
-- create ats candidate
-- HR Technology Developer
-- list hris employees
-- hris and ats management across 296+ hr and recruiting integrations
-- developers building sales tools, crm sync, and revenue reporting integrations
-- People Operations Engineer
-- recruiting
-- list open job postings from a connected ats integration (greenhouse, lever, etc.)
-- list hris groups
-- list open job postings
-- list employees from a connected hris integration (workday, bamboohr, adp, etc.)
-- job applications from ats integrations
-- job postings from ats integrations
-- list candidates from a connected ats integration
-- Fintech Developer
-- list hr groups and departments
-- create hris employee
-- list ats candidates
-- list employees from an hris integration
-- ats
-- accounting, invoicing, and payment management across 41+ integrations
-- create a new employee record in a connected hris integration
-- list employee payslips
 - employee data across hris integrations
-- employee payslip data
-- list job applications
-- employees
+- list candidates from a connected ats integration
+- candidate profiles from ats integrations
+- list candidates
+- list job applications from a connected ats integration
+- list hris employees
+- CRM Integrator
+- accounting, invoicing, and payment management across 41+ integrations
 - list employee payslips from a connected hris integration
 - developers building hr workflows, employee onboarding, and recruiting automation
+- list hr groups and departments
+- crm contact, company, and deal management across 47+ integrations
+- list ats interviews
+- list employee payslips
+- hr
+- list ats candidates
 - hr groups and departments
+- create a new employee record in a connected hris integration
+- job postings from ats integrations
+- create hris employee
+- developers building invoicing automation, expense management, and accounting sync
+- list employees from a connected hris integration (workday, bamboohr, adp, etc.)
+- employee payslip data
+- list hr groups and departments from a connected hris integration
+- People Operations Engineer
+- unified.to
+- list job applications
+- developers building sales tools, crm sync, and revenue reporting integrations
+- list hris groups
+- list ats jobs
+- integrations
+- list employees from an hris integration
+- create a new employee record
+- list open job postings
+- recruiting
+- unified api
+- list hris payslips
+- ats
 - list scheduled interviews from a connected ats integration
+- list ats applications
+- employees
+- Finance Operations Engineer
+- create ats candidate
+- job applications from ats integrations
+- Revenue Operations Developer
+- HR Technology Developer
+- list open job postings from a connected ats integration (greenhouse, lever, etc.)
+- hris and ats management across 296+ hr and recruiting integrations
+- hris
+- Fintech Developer
+- create a new candidate in a connected ats integration
+- create a new candidate
 slug: hr-and-talent
 source_filename: hr-and-talent.yaml
 source_heading: Capability Spec

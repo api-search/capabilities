@@ -58,73 +58,73 @@ personas: []
 provider_name: Weather.gov
 provider_slug: weather-gov
 search_terms:
-- list currently active nws weather alerts
-- get alerts by area
-- list nws radar stations
 - open data
-- latest station observation
-- monitoring
-- list sigmet/airmet advisories
-- get the forecast for a nws forecast zone
-- get office info
-- list observations
-- active weather alerts
-- united states
-- get forecast for a grid point
-- list active alerts
-- location metadata lookup
-- get count of active alerts
-- get point
-- alerts
-- list radar stations
-- weather forecasts by grid point
-- get the latest weather observation from a station
 - hourly weather forecasts
-- get historical observations from a weather station
-- get office headlines
-- government
-- list observation stations
-- get hourly forecast for a grid point
-- list sigmets
-- get active alerts for a specific nws zone
-- get latest observation
-- get point metadata
-- list alerts
-- get information about a nws forecast office
-- list nws forecast zones, optionally filtered by area or type
-- get hourly weather forecast for a grid point
 - get latest observation for a station
-- list nws forecast zones
-- weather alerts and warnings
-- nws forecast zones
-- aviation weather advisories
-- get text products
-- list sigmet/airmet aviation weather advisories
-- nws text products
-- list nws text products
-- list stations
-- get metadata for a lat/lon point
-- get active alerts for a specific state or marine area
-- get alert count
-- list currently active weather alerts
-- get alerts by zone
-- get forecast metadata for a latitude/longitude location
-- get forecast
-- count of active alerts
-- list weather alerts from the national weather service
-- list products
+- list nws forecast zones, optionally filtered by area or type
 - observation stations
+- latest station observation
+- list products
+- list active alerts
+- get point
+- government
+- weather alerts and warnings
+- weather forecasts by grid point
+- list nws text products
+- get the latest weather observation from a station
+- list sigmets
+- get hourly weather forecast for a grid point
+- location metadata lookup
+- get active alerts for a specific nws zone
+- get point metadata
 - forecasting
-- list all weather alerts
+- nws text products
 - list nws weather observation stations
-- get zone forecast
-- query nws text weather products
-- list zones
-- get news headlines from a nws forecast office
 - get weather forecast for a grid point
-- weather
-- get hourly forecast
+- get office info
+- list zones
+- get metadata for a lat/lon point
+- list sigmet/airmet aviation weather advisories
+- get information about a nws forecast office
+- list currently active weather alerts
+- alerts
+- get zone forecast
+- get office headlines
+- get forecast metadata for a latitude/longitude location
+- query nws text weather products
+- get forecast
+- get forecast for a grid point
+- list weather alerts from the national weather service
 - radar stations
+- list alerts
+- count of active alerts
+- get count of active alerts
+- get alerts by zone
+- list nws radar stations
+- list observations
+- aviation weather advisories
+- get alert count
+- united states
+- get historical observations from a weather station
+- list sigmet/airmet advisories
+- monitoring
+- get hourly forecast
+- list observation stations
+- get alerts by area
+- list all weather alerts
+- get latest observation
+- active weather alerts
+- list nws forecast zones
+- list radar stations
+- get active alerts for a specific state or marine area
+- list stations
+- get news headlines from a nws forecast office
+- get hourly forecast for a grid point
+- get the forecast for a nws forecast zone
+- weather
+- list currently active nws weather alerts
+- get text products
+- nws forecast zones
 slug: weather-monitoring
 source_filename: weather-monitoring.yaml
 source_heading: Capability Spec

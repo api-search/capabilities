@@ -60,48 +60,48 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: azure-devops
 search_terms:
-- pipeline runs
-- work items
-- pipelines
-- pipeline definitions
-- azure devops
-- list pipelines
-- get a pipeline by id
-- trigger a pipeline run
-- list pipeline runs
-- list all pipelines
-- list all pipelines in a project
-- azure
-- create work item
-- wiql query execution
-- single pipeline
-- get work items batch
-- get work item
-- list work item fields
-- project management
-- run pipeline
-- get pipeline run
-- query work items
-- get pipeline
-- list all work item field definitions
-- single pipeline run
-- individual work item operations
-- work item field definitions
-- list fields
-- create a new pipeline
-- get a pipeline run
-- work item batch and creation
-- create a new work item
-- update work item
-- query work items using wiql
-- get multiple work items by ids
 - get a work item by id
-- ci/cd
-- list runs for a pipeline
-- devops
-- update a work item
-- get details of a pipeline run
+- pipeline runs
+- single pipeline run
+- trigger a pipeline run
+- pipeline definitions
+- query work items using wiql
 - create pipeline
+- create a new work item
+- get work item
+- run pipeline
+- get work items batch
+- work item field definitions
+- work item batch and creation
+- list pipeline runs
+- pipelines
+- list work item fields
+- azure
+- update a work item
+- get multiple work items by ids
+- get pipeline run
+- get a pipeline by id
+- devops
+- list all work item field definitions
+- update work item
+- create work item
+- ci/cd
+- get a pipeline run
+- list all pipelines
+- project management
+- get details of a pipeline run
+- single pipeline
+- wiql query execution
+- individual work item operations
+- list all pipelines in a project
+- azure devops
+- work items
+- list pipelines
+- list runs for a pipeline
+- get pipeline
+- list fields
+- query work items
+- create a new pipeline
 slug: devops-project-management
 source_filename: devops-project-management.yaml
 source_heading: Capability Spec

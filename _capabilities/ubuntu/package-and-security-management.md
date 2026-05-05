@@ -31,40 +31,40 @@ personas: []
 provider_name: Ubuntu
 provider_slug: ubuntu
 search_terms:
-- query ubuntu cves
-- list ubuntu security notices for vulnerabilities.
-- get snap details
-- ubuntu security notices.
-- security
-- package management
-- open source
-- search for snap packages in the snap store.
-- ubuntu cve vulnerability database.
-- search for snap packages in the canonical snap store.
-- list all available snap store categories.
-- get detailed information about a snap.
-- canonical
-- get detailed information about a specific snap package.
-- linux
-- list ubuntu security notices for a specific release.
-- query cves affecting ubuntu packages.
-- get snap info
-- list all available snap categories.
-- cloud
-- snap
-- ubuntu
-- snap store categories.
-- enterprise
 - snap package search and discovery.
-- cve
-- list security notices
-- individual snap package details.
+- query cves affecting ubuntu packages.
 - containers
-- list snap categories
-- devops
+- search for snap packages in the canonical snap store.
+- security
+- cloud
+- enterprise
+- open source
+- get detailed information about a snap.
 - list cves
+- list all available snap categories.
+- list ubuntu security notices for a specific release.
+- cve
+- snap
+- list security notices
+- query ubuntu cves
+- ubuntu
+- ubuntu cve vulnerability database.
 - search snaps
+- get snap info
+- devops
+- list ubuntu security notices for vulnerabilities.
+- individual snap package details.
 - query cves affecting ubuntu packages by package name, priority, or keyword.
+- search for snap packages in the snap store.
+- linux
+- list snap categories
+- list all available snap store categories.
+- get detailed information about a specific snap package.
+- ubuntu security notices.
+- get snap details
+- canonical
+- package management
+- snap store categories.
 slug: package-and-security-management
 source_filename: package-and-security-management.yaml
 source_heading: Capability Spec

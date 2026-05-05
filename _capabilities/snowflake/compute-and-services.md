@@ -78,54 +78,54 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list services
-- warehouse management
-- compute pool management
-- list container services
-- fetch service status
-- execute alert
-- suspend a running service
-- data warehousing
 - list monitoring alerts
-- snowflake
 - list image repositories
-- data lakes
-- create an alert
+- data warehousing
+- create a container service
+- suspend service
+- containers
+- container service management
+- fetch service logs
+- resume service
+- resume a suspended service
+- create an image repository
 - create a warehouse
 - alert management
-- container service management
-- delete a warehouse
-- resume service
-- list alerts
-- delete warehouse
-- create image repository
 - list warehouses
-- create warehouse
-- create alert
-- create a virtual warehouse
-- create service
-- create compute pool
-- create an image repository
-- get service status
-- fetch warehouse
-- database
-- fetch service logs
-- fetch warehouse details
+- create an alert
 - create a monitoring alert
-- containers
-- sql
-- data sharing
-- compute
-- list virtual warehouses
-- create a container service
-- create a compute pool
-- infrastructure
-- create a service
 - execute an alert
-- list compute pools
-- resume a suspended service
-- suspend service
+- delete warehouse
+- suspend a running service
 - get service logs
+- create warehouse
+- warehouse management
+- create service
+- create a virtual warehouse
+- create image repository
+- create compute pool
+- fetch warehouse
+- snowflake
+- list container services
+- database
+- create a compute pool
+- list services
+- fetch service status
+- execute alert
+- list alerts
+- compute
+- list compute pools
+- data lakes
+- create a service
+- delete a warehouse
+- infrastructure
+- create alert
+- get service status
+- fetch warehouse details
+- data sharing
+- sql
+- compute pool management
+- list virtual warehouses
 slug: compute-and-services
 source_filename: compute-and-services.yaml
 source_heading: Capability Spec

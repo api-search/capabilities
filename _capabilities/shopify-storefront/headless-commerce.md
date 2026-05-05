@@ -57,53 +57,53 @@ personas: []
 provider_name: Shopify Storefront API
 provider_slug: shopify-storefront
 search_terms:
-- browse product collections
-- headless
-- get products
-- create a new shopping cart
-- browse all available products
-- search products by keyword
-- add one or more product variants to an existing cart
-- list products in a specific collection
-- get authenticated customer data
-- add to cart
-- cart creation
-- graphql
-- customer account
 - get collection products
-- search products
-- get product by handle
-- remove specific line items from a shopping cart
-- remove from cart
-- products
-- get collections
-- get cart
-- cart
-- product search
-- commerce
-- create a new shopping cart, optionally with initial product variant line items
-- cart line item management
-- list all products within a specific collection by handle
-- products within a collection
-- product collection catalog
-- product detail page data
-- browse all products available in the storefront catalog
-- search the product catalog by keyword, title, tag, or type
-- add items to cart
-- get full product details by url handle
-- storefront
-- get customer
-- ecommerce
-- product catalog browsing and search
-- create cart
-- remove items from cart
-- retrieve complete product details including variants and images by url handle
-- retrieve authenticated customer profile and recent order history
+- list products in a specific collection
 - retrieve a shopping cart with line items and pricing totals
-- get cart contents and cost summary
+- ecommerce
+- add to cart
+- commerce
+- add one or more product variants to an existing cart
+- product catalog browsing and search
+- get products
+- remove from cart
 - checkout
+- get product by handle
+- get collections
+- product detail page data
+- browse all available products
+- customer account
+- retrieve complete product details including variants and images by url handle
+- list all products within a specific collection by handle
+- cart creation
+- get cart contents and cost summary
+- products
+- storefront
+- search products by keyword
+- browse all products available in the storefront catalog
+- get cart
+- get customer
 - cart retrieval
+- search the product catalog by keyword, title, tag, or type
+- product collection catalog
+- create cart
+- create a new shopping cart, optionally with initial product variant line items
+- graphql
+- headless
+- add items to cart
 - browse product collections available in the storefront
+- cart line item management
+- create a new shopping cart
+- products within a collection
+- retrieve authenticated customer profile and recent order history
+- get full product details by url handle
+- remove specific line items from a shopping cart
+- browse product collections
+- product search
+- search products
+- remove items from cart
+- get authenticated customer data
+- cart
 slug: headless-commerce
 source_filename: headless-commerce.yaml
 source_heading: Capability Spec

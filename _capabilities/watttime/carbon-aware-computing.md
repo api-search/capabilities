@@ -42,54 +42,54 @@ personas: []
 provider_name: WattTime
 provider_slug: watttime
 search_terms:
-- geojson grid region boundaries for visualization.
 - look up the grid region for geographic coordinates.
-- historical emissions data for analysis and reporting.
-- get a download url for multi-year historical emissions data as a csv file.
-- electricity grid
-- get historical emissions data (up to 32-day window).
-- authenticate with the watttime api.
-- carbon-aware computing
-- find grid region
-- emissions
-- get geojson boundaries for grid regions.
-- get geojson boundaries for all accessible grid regions for map visualization.
-- get all accessible grid regions and available model versions.
-- get real-time and forecast emissions for a grid region.
-- retrieve previously generated forecast data for a historical period. use for back-testing carbon-aware scheduling algorithms.
-- get forecast historical
-- get grid maps
-- authenticate
-- watttime
-- download multi-year historical emissions csv data.
-- download historical data
-- get download url for historical emissions dataset.
-- identify the electric grid balancing authority for a geographic location by latitude and longitude.
-- sustainability
-- get historical forecast data for algorithm validation.
-- historically generated forecasts for back-testing.
-- real-time emissions data and short-term forecast.
-- energy
-- get the current real-time marginal emissions forecast for a grid region, updated every 5 minutes. use for deciding whether now is a good time to run a workload.
-- get region from location
-- obtain a watttime api access token.
-- get my access
-- get historical marginal emissions data for a grid region over a time window (max 32 days). use for reporting past emissions impact.
-- login
-- get forecast
-- get historical data
-- list all grid regions accessible under the current watttime subscription, with model versions.
-- carbon
-- get forecast history
-- list accessible regions
-- get historical emissions
-- identify the grid region for a location.
-- climate
-- download emissions dataset
-- list accessible grid regions and models.
-- authenticate with the watttime api to obtain an access token for subsequent calls.
 - get realtime emissions
+- get real-time and forecast emissions for a grid region.
+- get my access
+- identify the electric grid balancing authority for a geographic location by latitude and longitude.
+- authenticate with the watttime api to obtain an access token for subsequent calls.
+- historical emissions data for analysis and reporting.
+- get region from location
+- get historical forecast data for algorithm validation.
+- identify the grid region for a location.
 - clean energy
+- download emissions dataset
+- real-time emissions data and short-term forecast.
+- get geojson boundaries for all accessible grid regions for map visualization.
+- download multi-year historical emissions csv data.
+- get historical emissions data (up to 32-day window).
+- emissions
+- get historical emissions
+- get grid maps
+- authenticate with the watttime api.
+- get geojson boundaries for grid regions.
+- get a download url for multi-year historical emissions data as a csv file.
+- get the current real-time marginal emissions forecast for a grid region, updated every 5 minutes. use for deciding whether now is a good time to run a workload.
+- retrieve previously generated forecast data for a historical period. use for back-testing carbon-aware scheduling algorithms.
+- login
+- list accessible regions
+- get forecast
+- geojson grid region boundaries for visualization.
+- climate
+- get all accessible grid regions and available model versions.
+- get historical data
+- watttime
+- get forecast history
+- historically generated forecasts for back-testing.
+- electricity grid
+- get download url for historical emissions dataset.
+- obtain a watttime api access token.
+- sustainability
+- energy
+- carbon-aware computing
+- carbon
+- download historical data
+- get historical marginal emissions data for a grid region over a time window (max 32 days). use for reporting past emissions impact.
+- list accessible grid regions and models.
+- get forecast historical
+- find grid region
+- list all grid regions accessible under the current watttime subscription, with model versions.
+- authenticate
 slug: carbon-aware-computing
 source_filename: carbon-aware-computing.yaml
 source_heading: Capability Spec

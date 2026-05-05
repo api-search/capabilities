@@ -62,65 +62,65 @@ personas: []
 provider_name: Roblox Engine API
 provider_slug: roblox-engine-api
 search_terms:
+- data store management
+- delete a data store entry
+- set a data store entry
+- list memberships
+- update restriction
+- ban a player from accessing a universe (set user restriction)
+- set or update a data store entry value
+- get details about a specific place within a universe
+- get details about a roblox experience including settings and metadata
+- roblox
+- metaverse
+- group membership
+- broadcast a message to all active servers in a universe
+- get user
+- update experience settings
+- retrieve a player or game data store entry by key
+- player moderation
+- list group members and roles
 - check player restriction status
 - get place
-- data store management
-- get a roblox group
-- metaverse
-- publish message
-- data store entry management
-- player moderation
-- broadcast a message to all active servers in a universe
-- list data stores
-- list all data stores available in a universe
-- get user
-- get a roblox user
-- get universe
 - get details about a place
-- cross-server messaging
+- set data store entry
+- list group memberships
+- update the settings for a roblox experience
+- get restriction
 - experience universe management
+- open cloud
+- get information about a roblox player by user id
+- ban player
+- list members and their roles in a roblox group
+- check if a player is banned or restricted from a universe
+- publish message
+- user information
+- ban or unban a player
+- get details about a roblox experience
+- publish a message to all universe servers
+- set entry
+- delete entry
+- gaming
+- get a roblox user
+- experiences
+- get universe
+- update universe
+- get group
+- list data stores
+- get entry
+- list all data stores available in a universe
+- get data store entry
+- get user restriction
+- place management
+- get a data store entry
+- cross-server messaging
+- get a roblox group
 - game development
 - community group management
-- update the settings for a roblox experience
-- retrieve a player or game data store entry by key
-- list group memberships
-- set entry
-- set data store entry
-- get a data store entry
-- publish a message to all universe servers
-- set a data store entry
-- update universe
-- get entry
-- delete entry
-- group membership
-- list memberships
-- get information about a roblox player by user id
-- check if a player is banned or restricted from a universe
-- list group members and roles
-- get data store entry
-- set or update a data store entry value
-- get details about a roblox experience including settings and metadata
-- ban player
-- update experience settings
-- update restriction
-- get details about a specific place within a universe
-- delete data store entry
-- gaming
-- place management
-- get restriction
-- roblox
-- get information about a roblox community group
-- list members and their roles in a roblox group
-- experiences
+- data store entry management
 - list all data stores in a universe
-- ban or unban a player
-- get user restriction
-- ban a player from accessing a universe (set user restriction)
-- get group
-- get details about a roblox experience
-- user information
-- delete a data store entry
-- open cloud
+- get information about a roblox community group
+- delete data store entry
 slug: experience-management
 source_filename: experience-management.yaml
 source_heading: Capability Spec

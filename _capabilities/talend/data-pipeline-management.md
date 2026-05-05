@@ -64,54 +64,54 @@ personas: []
 provider_name: Talend
 provider_slug: talend
 search_terms:
-- list task execution history filtered by task id, status, or time range
-- get execution status
-- pipelines
+- run a multi-step data integration plan from start or resume from a failed step
 - list connections
+- talend
+- list plans
+- get execution status
+- check execution status
+- list available remote engines
 - check the current status of a task or plan execution
+- list data integration tasks, optionally filtered by workspace id
+- data integration
+- data engineering
+- manage data source connections
+- manage deployment environments
+- list execution plans composed of multiple data integration tasks
+- list remote talend execution engines with their status and capabilities
+- trigger execution of a talend data integration task in a specified environment
+- run a data integration plan
+- list tasks, optionally filtered by workspace
+- list task execution history filtered by task id, status, or time range
+- pipelines
+- list remote engines
+- list task executions
+- etl
+- list all workspaces in the account
+- run a data integration task
+- list all environments
+- orchestration
+- trigger and monitor plan executions
+- list all plans
+- api management
 - get execution status and details
 - pipeline management
-- list remote talend execution engines with their status and capabilities
-- list execution plans composed of multiple data integration tasks
-- api management
-- manage talend cloud workspaces
-- data engineering
-- run a multi-step data integration plan from start or resume from a failed step
-- list data integration tasks, optionally filtered by workspace id
+- list task execution history
+- list environments
 - manage data integration tasks
 - list all connections
-- run a data integration task
-- etl
-- list all plans
-- list plans
-- data integration
-- view remote engine status
-- trigger execution of a talend data integration task in a specified environment
-- list task executions
-- list all workspaces in the account
-- list task execution history
-- list tasks, optionally filtered by workspace
-- list tasks
-- list environments
+- manage talend cloud workspaces
+- list workspaces
+- list all talend cloud workspaces available in the account
+- trigger and monitor task executions
+- manage execution plans
+- list deployment environments (development, staging, production)
+- list data source and destination connections configured in talend
+- data quality
 - execute task
 - execute plan
-- list workspaces
-- list available remote engines
-- trigger and monitor task executions
-- check execution status
-- list all environments
-- data quality
-- talend
-- list remote engines
-- manage data source connections
-- list deployment environments (development, staging, production)
-- trigger and monitor plan executions
-- orchestration
-- manage deployment environments
-- list all talend cloud workspaces available in the account
-- list data source and destination connections configured in talend
-- manage execution plans
-- run a data integration plan
+- view remote engine status
+- list tasks
 slug: data-pipeline-management
 source_filename: data-pipeline-management.yaml
 source_heading: Capability Spec

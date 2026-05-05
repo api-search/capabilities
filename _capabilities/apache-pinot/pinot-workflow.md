@@ -18,39 +18,39 @@ personas: []
 provider_name: Apache Pinot
 provider_slug: apache-pinot
 search_terms:
-- get pinot cluster status and information
-- Platform Engineer
-- open source
-- analytics
 - get schema
-- list segments
-- apache pinot
-- get a specific schema definition
-- manages pinot cluster, tables, and schemas
-- list all registered schemas
-- olap
-- list tables
-- list all tables in the pinot cluster
-- create table
-- Data Analyst
-- create a new pinot table
-- execute a sql query against pinot tables
-- real-time olap
 - execute sql query
-- list schemas
-- database
-- sql
 - queries pinot for real-time analytics and dashboards
-- apache
-- query
-- get cluster info
-- real-time
-- distributed databases
+- open source
+- get a specific schema definition
+- analytics
 - get the configuration of a specific table
-- query sql
+- Platform Engineer
+- list schemas
+- query
+- create table
+- execute a sql query against pinot tables
+- list segments
+- Data Analyst
+- database
 - get table
-- low latency
+- query sql
+- create a new pinot table
+- distributed databases
+- manages pinot cluster, tables, and schemas
+- real-time
+- get pinot cluster status and information
+- olap
+- list all registered schemas
+- list tables
+- apache pinot
+- real-time olap
+- apache
+- get cluster info
+- sql
+- list all tables in the pinot cluster
 - list all segments for a table
+- low latency
 slug: pinot-workflow
 source_filename: pinot-workflow.yaml
 source_heading: Capability Spec

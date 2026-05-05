@@ -38,40 +38,40 @@ personas: []
 provider_name: Synnex
 provider_slug: synnex
 search_terms:
-- technology distribution
-- supply chain
-- list subscriptions
-- create a new cloud product order for a customer.
-- create order
-- end customer account management.
-- list reports
-- td synnex
-- cloud marketplace
-- create a new end customer account.
-- subscription management
 - it distribution
+- list products
+- list customers
+- fortune 100
+- subscription management
+- end customer account management.
+- list orders for the reseller account.
+- create a new cloud product order for a customer.
+- list available usage and billing reports for the reseller account.
+- technology distribution
+- list active cloud subscriptions for an end customer.
+- create a new end customer account in the td synnex cloud marketplace.
 - create a new cloud product order for an end customer through td synnex.
+- td synnex
+- list all end customers for the reseller account.
+- cloud product catalog.
+- usage and billing reports.
+- create a new end customer account.
+- supply chain
+- browse available cloud products and skus.
 - list available usage and billing reports.
 - browse the td synnex cloud product catalog with filtering by vendor and category.
-- list orders for the reseller account.
-- fortune 100
-- order management
-- list cloud product orders for the reseller account.
-- order management.
-- list customers
-- browse available cloud products and skus.
-- usage and billing reports.
-- list available usage and billing reports for the reseller account.
-- list all end customers for the reseller account.
-- list cloud subscriptions for an end customer.
-- create a new end customer account in the td synnex cloud marketplace.
-- list products
-- list active cloud subscriptions for an end customer.
-- create customer
+- cloud subscription management.
 - list orders
 - list end customers managed by the reseller in the td synnex cloud marketplace.
-- cloud subscription management.
-- cloud product catalog.
+- list cloud product orders for the reseller account.
+- create order
+- order management.
+- list subscriptions
+- create customer
+- cloud marketplace
+- order management
+- list reports
+- list cloud subscriptions for an end customer.
 slug: cloud-marketplace
 source_filename: cloud-marketplace.yaml
 source_heading: Capability Spec

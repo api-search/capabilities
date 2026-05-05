@@ -34,51 +34,51 @@ personas: []
 provider_name: APIs.guru
 provider_slug: apis-guru
 search_terms:
-- Platform Engineer
-- services for a specific provider
-- all apis in the directory
-- get provider services
-- open source
-- api directory
-- api discovery
-- directory metrics and statistics
-- api providers in the directory
-- get service api definition
-- discover, browse, and retrieve api definitions from the apis.guru directory
-- list all apis in the apis.guru directory with their openapi definition links and metadata
-- 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
-- list all service names for a provider that has multiple services
-- list apis
-- API Developer
 - community
-- graphql
-- list all api providers
-- get metrics
-- get api definition
-- get provider apis
-- a platform or devx engineer building api catalogs, portals, or governance tooling
-- get directory metrics
+- services for a specific provider
 - specific api version spec
-- api catalog
+- discover, browse, and retrieve api definitions from the apis.guru directory
+- get directory metrics
 - retrieve the openapi definition for a specific api version from the directory
-- a developer building integrations who needs to discover and retrieve api specifications
-- list service names for a provider
-- statistics and health metrics for the apis.guru directory
-- get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
-- list all api provider domain names available in the apis.guru directory
-- apis for a specific provider
-- openapi
-- list all apis in the apis.guru directory
-- list providers
-- get directory-wide metrics
-- list api providers
-- list all apis
-- get api spec
-- retrieve the openapi definition for a specific service api version (for multi-service providers)
+- api providers in the directory
+- get metrics
 - finding and retrieving api definitions from public directories
-- get all apis for a provider
-- get a specific api version definition
 - apis.guru
+- open source
+- Platform Engineer
+- retrieve the openapi definition for a specific service api version (for multi-service providers)
+- get provider services
+- all apis in the directory
+- api discovery
+- get directory-wide metrics
+- list service names for a provider
+- apis for a specific provider
+- get provider apis
+- get api spec
+- get service api definition
+- list all apis
+- api catalog
+- get a specific api version definition
+- 'get metrics for the apis.guru directory: total api count, endpoints, providers, and weekly additions'
+- list api providers
+- get api definition
+- openapi
+- list apis
+- directory metrics and statistics
+- get all apis for a provider
+- a developer building integrations who needs to discover and retrieve api specifications
+- list all api provider domain names available in the apis.guru directory
+- graphql
+- list all apis in the apis.guru directory
+- statistics and health metrics for the apis.guru directory
+- api directory
+- list all api providers
+- list all apis in the apis.guru directory with their openapi definition links and metadata
+- a platform or devx engineer building api catalogs, portals, or governance tooling
+- list all service names for a provider that has multiple services
+- API Developer
+- get all api definitions for a specific provider by domain name (e.g. 'stripe.com', 'twilio.com')
+- list providers
 slug: api-discovery
 source_filename: api-discovery.yaml
 source_heading: Capability Spec

@@ -37,32 +37,32 @@ personas: []
 provider_name: Spaceflight News API
 provider_slug: spaceflight-news-api
 search_terms:
-- formal spaceflight mission reports from agencies
-- list the latest spaceflight news articles from 43+ sources; supports filtering by news site or keyword search
-- monitoring
-- spaceflight news articles aggregated from 43+ sources
-- list reports
-- get info
-- get api version and list of all supported news sources
-- list spaceflight blog posts
-- list articles
-- media
-- list spaceflight mission reports
-- get article
-- get a spaceflight news article by id
-- list blogs
 - news
-- get a specific spaceflight news article by its id
-- spaceflight
-- get api info
-- spaceflight blog posts with in-depth coverage
-- list the latest spaceflight news articles with optional filtering
-- list spaceflight blog posts providing in-depth coverage of launches and missions
-- list formal spaceflight mission reports published by space agencies and organizations
-- get spaceflight news api version and the complete list of aggregated news sources
-- single spaceflight news article
-- api metadata and news source list
 - space
+- list formal spaceflight mission reports published by space agencies and organizations
+- list blogs
+- spaceflight news articles aggregated from 43+ sources
+- list spaceflight blog posts
+- spaceflight blog posts with in-depth coverage
+- get article
+- spaceflight
+- get a spaceflight news article by id
+- list the latest spaceflight news articles from 43+ sources; supports filtering by news site or keyword search
+- media
+- single spaceflight news article
+- get a specific spaceflight news article by its id
+- list spaceflight blog posts providing in-depth coverage of launches and missions
+- list the latest spaceflight news articles with optional filtering
+- formal spaceflight mission reports from agencies
+- get api version and list of all supported news sources
+- monitoring
+- list articles
+- list spaceflight mission reports
+- get api info
+- api metadata and news source list
+- list reports
+- get spaceflight news api version and the complete list of aggregated news sources
+- get info
 slug: space-news-monitoring
 source_filename: space-news-monitoring.yaml
 source_heading: Capability Spec

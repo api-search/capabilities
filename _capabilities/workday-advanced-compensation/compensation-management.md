@@ -54,47 +54,47 @@ personas: []
 provider_name: Workday Advanced Compensation
 provider_slug: workday-advanced-compensation
 search_terms:
-- get employee compensation
-- create a new compensation plan
-- get a specific workday compensation plan by id
-- single compensation plan
-- bonus plans
 - workday
-- create a new workday compensation plan
-- hr
-- hcm
-- get compensation plan
-- compensation reviews
-- list workday equity and stock compensation plans
-- stock plans
-- list compensation reviews
-- update an employee's compensation including merit increases or off-cycle adjustments
-- get an employee's current compensation package including base pay, bonuses, and equity
-- advanced compensation
-- list bonus plans
-- employee compensation
+- merit plans
 - update employee compensation
-- list workday compensation grades and their pay ranges
-- list workday merit increase plans and guidelines
-- compensation plans
+- list bonus plans
+- stock plans
+- get compensation grade
+- enterprise
 - compensation grades
+- employee compensation
+- hcm
+- list compensation plans
+- list workday merit increase plans and guidelines
+- update an employee's compensation including merit increases or off-cycle adjustments
+- hr
+- list stock plans
+- benefits
+- single compensation plan
+- list merit plans
+- list compensation reviews
+- create a new compensation plan
+- list workday equity and stock compensation plans
 - list workday compensation budgets and track allocations
 - get a specific workday compensation grade with pay range details
-- enterprise
-- get a compensation plan
-- compensation budgets
-- list merit plans
-- list workday compensation plans with optional filtering by type or status
-- list stock plans
-- list compensation plans
+- list workday compensation grades and their pay ranges
+- advanced compensation
+- get employee compensation
 - create compensation plan
-- list compensation grades
 - list compensation budgets
-- list workday bonus and incentive compensation plans
-- benefits
 - list workday compensation review cycles and their status
-- get compensation grade
-- merit plans
+- bonus plans
+- list compensation grades
+- list workday compensation plans with optional filtering by type or status
+- get a compensation plan
+- get a specific workday compensation plan by id
+- get compensation plan
+- compensation reviews
+- compensation plans
+- create a new workday compensation plan
+- get an employee's current compensation package including base pay, bonuses, and equity
+- list workday bonus and incentive compensation plans
+- compensation budgets
 slug: compensation-management
 source_filename: compensation-management.yaml
 source_heading: Capability Spec

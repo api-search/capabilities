@@ -59,57 +59,57 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- create a private network within a vpc
-- load balancing
-- get details of a specific load balancer
-- storage
-- delete vpc
-- get load balancer details
-- delete load balancer
-- european cloud
-- list scaleway load balancers
-- network isolation
-- list backend server pools for a load balancer
-- list load balancer backends
-- subnet management
-- list vpcs
-- create a new scaleway vpc
-- get details of a specific vpc
-- list private networks
-- create vpc
-- delete a vpc
-- list load balancers
-- create a load balancer
-- list private networks within vpcs
-- manage a specific load balancer
-- list subnets in a region
-- get vpc
-- load balancer backend management
-- kubernetes
-- load balancer management
-- private network management
-- list backends
-- vpc
-- database
-- networking
-- delete a load balancer
-- containers
-- create a private network
-- virtual private cloud management
-- create private network
-- ai
-- scaleway
-- create a new load balancer
-- list scaleway virtual private clouds
-- create a vpc
-- get vpc details
-- infrastructure
-- serverless
-- get load balancer
-- manage a specific vpc
-- cloud computing
 - create load balancer
+- list subnets in a region
+- list backend server pools for a load balancer
+- get load balancer
+- containers
+- network isolation
 - list subnets
+- virtual private cloud management
+- subnet management
+- manage a specific load balancer
+- list scaleway virtual private clouds
+- serverless
+- get vpc
+- create a vpc
+- ai
+- delete a load balancer
+- load balancer backend management
+- list load balancers
+- list load balancer backends
+- storage
+- create vpc
+- list vpcs
+- list scaleway load balancers
+- get vpc details
+- cloud computing
+- load balancing
+- load balancer management
+- database
+- get load balancer details
+- list backends
+- delete load balancer
+- create a load balancer
+- networking
+- scaleway
+- create a private network within a vpc
+- get details of a specific vpc
+- infrastructure
+- list private networks
+- manage a specific vpc
+- european cloud
+- create private network
+- delete vpc
+- list private networks within vpcs
+- vpc
+- private network management
+- create a new scaleway vpc
+- get details of a specific load balancer
+- kubernetes
+- create a new load balancer
+- create a private network
+- delete a vpc
 slug: networking
 source_filename: networking.yaml
 source_heading: Capability Spec

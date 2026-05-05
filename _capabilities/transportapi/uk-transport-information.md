@@ -37,40 +37,40 @@ personas: []
 provider_name: TransportAPI
 provider_slug: transportapi
 search_terms:
-- get live bus departures for a stop
-- find uk bus stops, train stations, and transport access points by name or location
-- multimodal journey planning
-- plan uk journey
-- analytics
-- search places
-- search uk transport places
-- get uk bus timetable
-- transport
-- plan a multimodal journey across great britain by bus, train, or tram
-- real-time train departure boards
-- bus
-- get train live departures
-- get live train departures for a station
-- transport stops and access points
-- get uk bus departures
-- get scheduled uk bus timetable for a stop
-- get scheduled timetable for a bus stop
-- get live uk train departures for a station using its crs code
-- get bus live departures
-- get live uk bus departure times for a stop using its atco code
-- get uk train departures
-- plan journey
-- get bus timetable
-- real-time bus departure boards
-- plan a multimodal journey across great britain
-- journey planning
-- rail
-- real-time
-- uk transport
-- public transit
-- find transport stops and stations
-- uk
 - scheduled bus timetables
+- rail
+- get scheduled timetable for a bus stop
+- find transport stops and stations
+- get uk bus departures
+- public transit
+- plan journey
+- search uk transport places
+- get live train departures for a station
+- get live uk bus departure times for a stop using its atco code
+- get uk bus timetable
+- analytics
+- get scheduled uk bus timetable for a stop
+- get live bus departures for a stop
+- search places
+- uk transport
+- get bus live departures
+- get train live departures
+- uk
+- plan uk journey
+- get live uk train departures for a station using its crs code
+- plan a multimodal journey across great britain
+- bus
+- get uk train departures
+- multimodal journey planning
+- transport stops and access points
+- real-time
+- real-time bus departure boards
+- get bus timetable
+- real-time train departure boards
+- plan a multimodal journey across great britain by bus, train, or tram
+- find uk bus stops, train stations, and transport access points by name or location
+- journey planning
+- transport
 slug: uk-transport-information
 source_filename: uk-transport-information.yaml
 source_heading: Capability Spec

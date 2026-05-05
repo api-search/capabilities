@@ -40,46 +40,46 @@ personas: []
 provider_name: Squarespace
 provider_slug: squarespace
 search_terms:
+- e-commerce
+- individual customer profile
+- retrieve all customer profiles with optional filters
+- commerce
+- get a specific financial transaction
+- webhooks
+- get transaction
+- marketing
+- list all configured webhook subscriptions for the merchant site.
 - individual transaction
 - retrieve a specific financial transaction by id.
-- marketing
-- get a specific customer profile
-- customer, subscriber, and donor profiles
 - analytics
-- retrieve a specific customer profile by id.
-- list all configured webhook subscriptions for the merchant site.
-- retrieve financial transactions with optional date filters
-- squarespace
-- e-commerce
-- get a specific financial transaction
-- delete a webhook subscription
-- list transactions
-- individual customer profile
-- financial transaction records
-- create webhook subscription
-- list webhook subscriptions
-- get profile
-- webhooks
-- retrieve customer, subscriber, and donor profiles from squarespace. filter by customer status or email address.
-- payments
 - finance
-- list all webhook subscriptions
-- commerce
-- get transaction
-- reporting
-- create a new webhook subscription
-- webhook event subscriptions
-- create a new webhook subscription to receive real-time notifications for squarespace commerce events (order created, order updated, etc).
-- individual webhook subscription
-- retrieve financial transaction records for orders and donations. supports date range filtering for reconciliation workflows.
-- retail
 - event notifications
-- list profiles
-- retrieve all customer profiles with optional filters
+- get profile
+- webhook event subscriptions
 - website builder
-- crm
+- create a new webhook subscription
 - delete webhook subscription
+- retrieve customer, subscriber, and donor profiles from squarespace. filter by customer status or email address.
+- retrieve a specific customer profile by id.
+- delete a webhook subscription
+- payments
+- retail
+- retrieve financial transactions with optional date filters
+- create a new webhook subscription to receive real-time notifications for squarespace commerce events (order created, order updated, etc).
+- list transactions
+- list webhook subscriptions
+- get a specific customer profile
+- individual webhook subscription
+- crm
+- retrieve financial transaction records for orders and donations. supports date range filtering for reconciliation workflows.
+- squarespace
+- list all webhook subscriptions
+- list profiles
+- customer, subscriber, and donor profiles
+- financial transaction records
 - delete a webhook subscription by id.
+- create webhook subscription
+- reporting
 slug: customer-and-reporting
 source_filename: customer-and-reporting.yaml
 source_heading: Capability Spec

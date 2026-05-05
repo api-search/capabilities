@@ -51,60 +51,60 @@ personas: []
 provider_name: Trustwell
 provider_slug: trustwell
 search_terms:
-- list traceability lot records.
-- recall management
-- list food recall and withdrawal events with status filtering.
-- get allergen definitions.
-- food formulation queries
-- list supply chain suppliers.
-- supply chain
-- food formulation
-- food safety
-- create quality incident.
-- nutrition
-- create recall event.
-- add a new supplier to the foodlogiq supply chain network.
-- query food formulation data including nutrients and allergens.
-- list food quality incidents with severity and status filtering for quality monitoring.
-- generate and retrieve nutrition label images for us, canadian, eu, mexican, and australian regulatory formats.
-- quality incidents
-- get all standard and custom nutrient definitions from genesis foods.
-- list recalls
-- create a food quality incident report for a supplier or product safety issue.
-- initiate a food product recall or withdrawal event (voluntary, mock, or regulatory).
-- get regulatory standards by country.
-- regulatory standards
-- query labels
-- list lots
-- list fsma 204-compliant traceability lot records for farm-to-fork supply chain tracking.
-- nutrition labeling
-- query allergens
-- get all allergen definitions for allergen declaration and labeling compliance.
-- list quality incidents
-- create supplier
 - quality management
-- allergen definitions
 - query regulations
-- list recall events.
-- list food supply chain suppliers with status and compliance information.
-- query nutrients
-- compliance
-- food technology
-- create quality incident
-- food labeling
-- food industry
-- list suppliers
-- get nutrient definitions.
-- list quality incidents.
-- traceability
-- supply chain suppliers
-- fsma 204 traceability lots
-- recall events
-- create recall
-- query foods
+- create a food quality incident report for a supplier or product safety issue.
 - get regulatory standards, nutrition claims, and labeling requirements by country and regulatory authority.
+- food industry
+- query food formulation data including nutrients and allergens.
+- list suppliers
+- list quality incidents
+- list food recall and withdrawal events with status filtering.
+- food labeling
 - nutrient definitions
+- list food supply chain suppliers with status and compliance information.
+- recall events
+- fsma 204 traceability lots
+- query foods
+- get all standard and custom nutrient definitions from genesis foods.
+- regulatory standards
+- list fsma 204-compliant traceability lot records for farm-to-fork supply chain tracking.
+- list supply chain suppliers.
+- food safety
+- create recall
+- list lots
+- generate and retrieve nutrition label images for us, canadian, eu, mexican, and australian regulatory formats.
+- food technology
+- quality incidents
+- list food quality incidents with severity and status filtering for quality monitoring.
+- nutrition
+- get regulatory standards by country.
+- list traceability lot records.
+- list recall events.
+- supply chain suppliers
+- create recall event.
 - query food formulation data including nutrient content, allergen declarations, and label information from genesis foods.
+- initiate a food product recall or withdrawal event (voluntary, mock, or regulatory).
+- supply chain
+- list recalls
+- list quality incidents.
+- query allergens
+- get nutrient definitions.
+- query nutrients
+- allergen definitions
+- query labels
+- food formulation queries
+- food formulation
+- get all allergen definitions for allergen declaration and labeling compliance.
+- get allergen definitions.
+- nutrition labeling
+- create quality incident
+- compliance
+- create quality incident.
+- add a new supplier to the foodlogiq supply chain network.
+- recall management
+- traceability
+- create supplier
 slug: food-safety-management
 source_filename: food-safety-management.yaml
 source_heading: Capability Spec

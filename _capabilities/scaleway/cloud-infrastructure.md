@@ -64,73 +64,73 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- execute instance lifecycle actions
-- cloud computing
-- create cluster
-- add a node pool to a kubernetes cluster
-- security
-- storage
-- list all scaleway virtual machine instances in a zone
-- manage a specific kubernetes cluster
-- create secret
-- european cloud
-- create instance
-- list nodes in a kubernetes cluster
-- list secrets in scaleway secret manager
-- execute a lifecycle action (poweron, poweroff, reboot)
-- create a node pool
-- list available os images for scaleway instances
-- delete instance
-- create a new scaleway virtual machine instance
-- kubernetes
-- execute instance action
-- create a kubernetes cluster
-- get instance details
-- kubernetes cluster management
-- list scaleway managed kubernetes clusters
-- get a secret from scaleway secret manager
+- virtual machine instance management
 - list secrets
-- delete a scaleway instance
-- list nodes
-- secret management
-- get cluster details
+- manage a specific kubernetes cluster
+- execute a lifecycle action on an instance (poweron, poweroff, reboot)
+- containers
+- list nodes in a kubernetes cluster
+- security
+- delete a secret from scaleway secret manager
+- download kubeconfig for a scaleway kubernetes cluster
+- delete an instance
+- create secret
+- create a node pool
+- list node pools
+- add a node pool to a kubernetes cluster
+- serverless
+- ai
 - list kubernetes clusters
 - get details of a specific scaleway instance
-- delete a secret from scaleway secret manager
-- create a secret
-- create a new instance
-- list node pools
-- list instance images
+- delete secret
+- storage
 - get cluster
-- database
-- list all instances in a zone
-- cluster access credentials
+- execute instance action
+- create a secret
+- get details of a scaleway kubernetes cluster
+- list secrets in scaleway secret manager
+- delete instance
+- get a secret from scaleway secret manager
+- list instances
+- cloud computing
+- manage a specific instance
+- get cluster kubeconfig
 - cluster node pool management
 - create a new managed kubernetes cluster on scaleway
-- virtual machine instance management
-- delete a scaleway kubernetes cluster
-- containers
-- get secret
-- execute a lifecycle action on an instance (poweron, poweroff, reboot)
-- download kubeconfig for a scaleway kubernetes cluster
-- list clusters
-- ai
-- scaleway
-- compute
-- list instances
-- create a new secret in scaleway secret manager
-- manage a specific instance
-- delete cluster
-- get details of a scaleway kubernetes cluster
-- create node pool
-- devops
-- get cluster kubeconfig
 - list node pools in a kubernetes cluster
-- infrastructure
-- delete secret
+- list all instances in a zone
+- list scaleway managed kubernetes clusters
+- database
+- get cluster details
+- delete a scaleway instance
+- devops
+- create instance
+- create a new secret in scaleway secret manager
+- list available os images for scaleway instances
+- create cluster
+- compute
+- scaleway
+- create a new instance
 - get instance
-- serverless
-- delete an instance
+- get secret
+- infrastructure
+- secret management
+- list nodes
+- european cloud
+- execute instance lifecycle actions
+- list clusters
+- delete a scaleway kubernetes cluster
+- create a new scaleway virtual machine instance
+- create node pool
+- delete cluster
+- kubernetes cluster management
+- list instance images
+- get instance details
+- kubernetes
+- list all scaleway virtual machine instances in a zone
+- create a kubernetes cluster
+- cluster access credentials
+- execute a lifecycle action (poweron, poweroff, reboot)
 slug: cloud-infrastructure
 source_filename: cloud-infrastructure.yaml
 source_heading: Capability Spec

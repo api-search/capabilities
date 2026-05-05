@@ -37,52 +37,52 @@ personas: []
 provider_name: U.S. Treasury Fiscal Data
 provider_slug: u-s-treasury-fiscal-data
 search_terms:
-- Researcher
-- Financial Journalist
-- retrieve mts data showing monthly federal budget activity.
-- unified workflow for economists, policy analysts, financial journalists, and researchers to access u.s. treasury federal financial data for analysis and reporting.
-- get treasury interest rates
-- national debt
-- academic or government economist analyzing federal fiscal trends, national debt trajectories, and interest rate impacts on the economy.
-- retrieve official u.s. treasury foreign currency exchange rates used for federal reporting purposes. data updated quarterly. filter by country name or currency using the filter parameter (e.g., 'country:eq:japan'). covers approximately 170 countries.
-- government or think-tank analyst using treasury fiscal data to assess budget policy proposals, deficit projections, and debt sustainability.
 - federal government
 - average interest rates on u.s. treasury securities.
-- get national debt
-- retrieve monthly average interest rates for treasury securities by type.
-- monthly treasury statement budget receipts and outlays.
+- retrieve official u.s. treasury foreign currency exchange rates used for federal reporting purposes. data updated quarterly. filter by country name or currency using the filter parameter (e.g., 'country:eq:japan'). covers approximately 170 countries.
+- get interest rates
+- Researcher
+- get monthly treasury
+- u.s. national debt data from the debt to the penny dataset.
+- reporter or journalist tracking daily debt figures, exchange rates, and treasury financial statements for news coverage and data stories.
+- economics
+- get monthly treasury statement
+- Financial Journalist
+- get daily treasury statement
+- retrieve dts data showing daily treasury account activity.
+- federal government receipts, outlays, surplus/deficit from the monthly treasury statement
+- treasury
+- finance
+- retrieve official treasury reporting rates of exchange by country and quarter.
+- daily treasury statement account balances and transactions.
+- academic or policy researcher using treasury fiscal data for economic research, historical analysis, and quantitative studies.
+- national debt
+- Economist
+- Budget Analyst
 - retrieve monthly average interest rates for u.s. treasury securities by security type (bills, notes, bonds, tips, etc.). useful for tracking borrowing costs and monetary policy analysis. filter by security_desc to get rates for a specific security type.
 - retrieve daily treasury statement (dts) data showing federal government cash flows including deposits, withdrawals, and account balances. the dts is published each business day by the bureau of the fiscal service. use filter to query by date or account type.
-- get monthly treasury
-- get monthly treasury statement
-- federal government receipts, outlays, surplus/deficit from the monthly treasury statement
-- treasury foreign currency exchange rates.
-- interest rates and outstanding amounts for u.s. treasury bills, notes, bonds, and other securities
-- government data
-- Economist
-- daily treasury statement account balances and transactions.
-- total u.s. public debt outstanding including debt held by public and intragovernmental holdings
-- exchange rates
-- economics
-- retrieve official treasury reporting rates of exchange by country and quarter.
-- finance
-- federal finance
-- get interest rates
 - Policy Analyst
+- treasury foreign currency exchange rates.
+- government or think-tank analyst using treasury fiscal data to assess budget policy proposals, deficit projections, and debt sustainability.
+- retrieve monthly average interest rates for treasury securities by type.
+- government data
+- unified workflow for economists, policy analysts, financial journalists, and researchers to access u.s. treasury federal financial data for analysis and reporting.
+- interest rates and outstanding amounts for u.s. treasury bills, notes, bonds, and other securities
 - get daily treasury
-- retrieve current and historical u.s. public debt outstanding.
-- academic or policy researcher using treasury fiscal data for economic research, historical analysis, and quantitative studies.
-- retrieve dts data showing daily treasury account activity.
-- treasury
-- reporter or journalist tracking daily debt figures, exchange rates, and treasury financial statements for news coverage and data stories.
-- u.s. national debt data from the debt to the penny dataset.
 - retrieve monthly treasury statement (mts) data with consolidated federal budget receipts, outlays, and surplus/deficit by classification. published monthly by the bureau of the fiscal service. essential for budget analysis and deficit tracking.
-- get daily treasury statement
-- federal or state budget analyst using treasury data for fiscal planning, appropriations analysis, and government financial reporting.
-- get exchange rates
-- retrieve current and historical u.s. national debt data from the treasury debt to the penny dataset. returns total public debt outstanding, debt held by the public, and intragovernmental holdings. data updated daily. use filter parameter like 'record_date:gte:2024-01-01' to limit results by date.
+- get treasury interest rates
+- retrieve mts data showing monthly federal budget activity.
+- get national debt
+- academic or government economist analyzing federal fiscal trends, national debt trajectories, and interest rate impacts on the economy.
 - official treasury foreign currency exchange rates for federal reporting purposes
-- Budget Analyst
+- monthly treasury statement budget receipts and outlays.
+- total u.s. public debt outstanding including debt held by public and intragovernmental holdings
+- retrieve current and historical u.s. public debt outstanding.
+- federal finance
+- get exchange rates
+- exchange rates
+- retrieve current and historical u.s. national debt data from the treasury debt to the penny dataset. returns total public debt outstanding, debt held by the public, and intragovernmental holdings. data updated daily. use filter parameter like 'record_date:gte:2024-01-01' to limit results by date.
+- federal or state budget analyst using treasury data for fiscal planning, appropriations analysis, and government financial reporting.
 slug: fiscal-data-intelligence
 source_filename: fiscal-data-intelligence.yaml
 source_heading: Capability Spec

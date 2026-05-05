@@ -58,58 +58,58 @@ provider_name: Speakeasy
 provider_slug: speakeasy
 search_terms:
 - list all organizations the authenticated user belongs to
-- get workspaces for a user
-- retrieve usage snippets
-- generate suggestions for improving an openapi document
-- create a new speakeasy organization
-- get workspace
-- create organization
+- platform
+- list organizations
+- get organizations for a user
+- list and manage speakeasy workspaces
+- create workspace token
 - list artifact namespaces in the registry
-- create a new speakeasy workspace within an organization
-- generate openapi improvement suggestions
-- list workspace tokens
-- get details for a specific workspace by id
-- list all workspaces accessible to the authenticated user
-- list artifact namespaces in the speakeasy registry containing spec revisions
+- get a specific organization
 - terraform
-- create a new api token for a workspace
-- list artifact namespaces
 - suggest openapi improvements
 - get a specific workspace by id
-- get a specific organization
-- get organizations for a user
-- code generation
-- get information about the authenticated user including email and workspaces
-- get current user
-- create a token for a particular workspace
-- retrieve sdk code samples for namespaces
-- get tokens for a particular workspace
-- list and manage speakeasy workspaces
-- list namespaces
-- validate the current speakeasy api key and retrieve workspace details
-- get organization
-- openapi
-- validate api key
-- list organizations
-- retrieve sdk code samples for a specific namespace and revision
-- list api tokens for a specific workspace
-- documentation
-- list workspaces
-- mcp
-- sdks
-- ai
 - list organizations for the authenticated user
-- platform
-- validate api key and check access
-- validate the current api key
-- create workspace token
-- suggest openapi
-- get code samples
-- create workspace
+- retrieve sdk code samples for namespaces
+- generate suggestions for improving an openapi document
+- list namespaces
 - get details for a specific organization by id
-- testing
+- validate the current speakeasy api key and retrieve workspace details
+- ai
+- get details for a specific workspace by id
+- get current user
+- suggest openapi
+- create a new api token for a workspace
+- list artifact namespaces
+- create a new speakeasy organization
+- list api tokens for a specific workspace
+- list artifact namespaces in the speakeasy registry containing spec revisions
 - manage workspace access tokens
+- get information about the authenticated user including email and workspaces
+- validate the current api key
+- retrieve sdk code samples for a specific namespace and revision
+- validate api key and check access
+- get code samples
+- create a new speakeasy workspace within an organization
+- openapi
+- get workspace
+- mcp
+- retrieve usage snippets
+- create organization
+- get tokens for a particular workspace
+- testing
+- list workspaces
+- list all workspaces accessible to the authenticated user
+- documentation
+- create a token for a particular workspace
+- get organization
+- validate api key
+- generate openapi improvement suggestions
+- code generation
+- list workspace tokens
+- create workspace
+- sdks
 - generate ai-powered suggestions for improving an openapi document
+- get workspaces for a user
 slug: sdk-platform-management
 source_filename: sdk-platform-management.yaml
 source_heading: Capability Spec

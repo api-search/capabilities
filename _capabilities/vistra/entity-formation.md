@@ -37,34 +37,34 @@ personas: []
 provider_name: Vistra
 provider_slug: vistra
 search_terms:
-- notify that a document upload has completed
-- submit a new company incorporation request
-- list all incorporation requests with their current processing status
-- generate document upload url
-- notify vistra that a document upload to the pre-signed url has completed
-- check the status and details of a specific incorporation request by id
-- generate a pre-signed url for document upload
-- bvi
-- complete document upload
-- document upload completion notification
-- document upload url generation
-- finance
-- vistra
-- compliance
-- generate a pre-signed s3 url for uploading a supporting document for an incorporation request
-- corporate services
 - get status of a specific incorporation request
-- individual incorporation request
-- legal
-- list all submitted incorporation requests
-- create incorporation
 - incorporation
-- list incorporations
-- entity management
+- individual incorporation request
+- notify vistra that a document upload to the pre-signed url has completed
+- vistra
+- list all incorporation requests with their current processing status
+- generate a pre-signed s3 url for uploading a supporting document for an incorporation request
 - get incorporation
-- submit a company incorporation request to vistra for bvi entity formation
-- fortune 500
+- generate a pre-signed url for document upload
+- finance
 - company incorporation requests
+- list incorporations
+- complete document upload
+- document upload url generation
+- corporate services
+- notify that a document upload has completed
+- fortune 500
+- create incorporation
+- list all submitted incorporation requests
+- legal
+- generate document upload url
+- bvi
+- check the status and details of a specific incorporation request by id
+- submit a new company incorporation request
+- entity management
+- document upload completion notification
+- compliance
+- submit a company incorporation request to vistra for bvi entity formation
 slug: entity-formation
 source_filename: entity-formation.yaml
 source_heading: Capability Spec

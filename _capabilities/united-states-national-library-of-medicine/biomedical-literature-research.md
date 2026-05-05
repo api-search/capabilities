@@ -44,41 +44,41 @@ personas: []
 provider_name: United States National Library of Medicine
 provider_slug: united-states-national-library-of-medicine
 search_terms:
-- search ncbi database
-- fetch full pubmed article records by pmid
-- nlm
-- retrieve a specific clinical trial
-- get pubmed articles
-- get trial
-- search trials
+- search pubmed
 - federal government
 - get pubmed summaries
-- genomics
+- search pubmed biomedical literature database
+- get complete clinical trial record by nct id
+- pubmed
 - search pubmed for articles by query, author, or topic
 - search clinicaltrials.gov for clinical trials
-- get complete clinical trial record by nct id
-- literature
-- healthcare
-- search any ncbi entrez database (nuccore, protein, snp, taxonomy, sra, etc.)
-- pubmed
-- search clinical trials by condition, intervention, or status
-- get pubmed document summaries including title, authors, and journal for pmids
-- search ncbi gene database
-- retrieve pubmed article records
-- search genes
-- biomedical research
-- search ncbi gene database for gene records
 - search ncbi gene database for gene records by symbol, name, or description
-- retrieve pubmed article abstracts for a list of pmids
-- get pubmed abstracts
-- search clinical trials
-- search pubmed
-- search clinicaltrials.gov for trials by condition, intervention, phase, or status
-- clinical trials
-- search pubmed biomedical literature database
-- search pubmed for biomedical literature articles by topic, author, or keywords
+- biomedical research
+- literature
+- genomics
+- healthcare
+- retrieve pubmed article records
 - retrieve complete protocol, eligibility, and results for a clinical trial by nct id
+- get trial
+- get pubmed abstracts
+- fetch full pubmed article records by pmid
+- get pubmed articles
+- retrieve a specific clinical trial
+- search ncbi gene database
+- search genes
+- search clinicaltrials.gov for trials by condition, intervention, phase, or status
 - get clinical trial details
+- search clinical trials by condition, intervention, or status
+- search any ncbi entrez database (nuccore, protein, snp, taxonomy, sra, etc.)
+- retrieve pubmed article abstracts for a list of pmids
+- search ncbi database
+- nlm
+- get pubmed document summaries including title, authors, and journal for pmids
+- search ncbi gene database for gene records
+- search trials
+- search pubmed for biomedical literature articles by topic, author, or keywords
+- clinical trials
+- search clinical trials
 slug: biomedical-literature-research
 source_filename: biomedical-literature-research.yaml
 source_heading: Capability Spec

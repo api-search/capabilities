@@ -26,31 +26,31 @@ personas: []
 provider_name: Reuters
 provider_slug: reuters
 search_terms:
-- retrieve the full content of a reuters item including body, byline, subjects, and available media renditions.
 - list the most recent editorial items from a reuters content channel.
-- business
-- journalism
-- list channels
-- discover and browse reuters content channels.
-- search
-- media
-- retrieve specific reuters content items.
-- retrieve the full details and renditions of a content item.
-- 'list available reuters content channels. filter by category: txt (text), pix (images), vid (video), gfx (graphics).'
-- search reuters content by keyword, channel, and media type.
-- finance
-- wire service
 - news
-- list items
-- list available reuters content channels, optionally filtered by category.
-- search reuters editorial content.
-- content delivery
 - search reuters editorial content by keyword. supports field-specific queries like headline:election or body:markets.
-- get item
+- retrieve specific reuters content items.
+- search reuters editorial content.
+- wire service
+- retrieve the full details and renditions of a content item.
+- finance
 - browse content items from reuters channels.
+- retrieve the full content of a reuters item including body, byline, subjects, and available media renditions.
+- search reuters content by keyword, channel, and media type.
+- list channels
+- list items
+- 'list available reuters content channels. filter by category: txt (text), pix (images), vid (video), gfx (graphics).'
+- list available reuters content channels, optionally filtered by category.
 - reuters
-- list the most recent items from a reuters channel.
+- media
 - search items
+- list the most recent items from a reuters channel.
+- search
+- get item
+- content delivery
+- business
+- discover and browse reuters content channels.
+- journalism
 slug: content-delivery
 source_filename: content-delivery.yaml
 source_heading: Capability Spec

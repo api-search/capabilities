@@ -48,38 +48,38 @@ personas: []
 provider_name: Telefoon
 provider_slug: telefoon
 search_terms:
+- eu data residency
+- initiate call
+- list conferences
+- number provisioning
+- belgium
+- sms
+- list eu voice calls with optional status and direction filters
+- gdpr compliant
+- initiate an outbound eu call with multi-language tts support
+- send message
+- telephony
+- list calls
+- make eu call
+- send an sms in european markets with branded sender id and gdpr consent reference for compliance
+- eu conference calls
+- europe
+- send eu sms
 - create a conference room
 - create conference
-- send message
-- gdpr compliant
-- create a new eu conference call room
 - list eu sms messages sent or received
-- voice
-- list conferences
-- initiate an outbound call via eu networks with multi-language tts (nl-nl, fr-be, de-de, en-gb)
-- list eu voice calls with optional status and direction filters
-- sms
-- eu voice call management
-- eu conference calls
-- eu data residency
-- telephony
-- netherlands
-- messaging
-- send eu sms
 - gdpr-compliant sms messaging
-- number provisioning
-- list messages
-- make eu call
+- netherlands
 - list eu conference calls
-- belgium
-- initiate an outbound eu call with multi-language tts support
+- initiate an outbound call via eu networks with multi-language tts (nl-nl, fr-be, de-de, en-gb)
+- voice
+- eu voice call management
+- create a new eu conference call room
 - list voice calls
 - cpaas
-- list calls
+- list messages
+- messaging
 - send an sms with optional branded sender id and gdpr consent reference
-- europe
-- send an sms in european markets with branded sender id and gdpr consent reference for compliance
-- initiate call
 slug: eu-communications
 source_filename: eu-communications.yaml
 source_heading: Capability Spec

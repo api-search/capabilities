@@ -47,61 +47,61 @@ personas: []
 provider_name: Airbyte
 provider_slug: airbyte
 search_terms:
-- data pipeline
-- trigger an airbyte sync job for a connection.
-- create a new data source.
-- trigger a sync job.
-- connectors
-- list all airbyte data destination connectors.
-- list airbyte workspaces.
-- data
-- open source
-- list connections
-- create source
-- airbyte
-- list all destinations.
-- create a new destination.
-- manage workspaces.
-- trigger job
-- delete source
-- list sync jobs
-- data engineering
-- get job status
-- builds and maintains data pipelines using airbyte connectors and connections.
-- manage data destination connectors.
-- elt
-- create a new connection.
 - list workspaces.
-- check the status of an airbyte sync job.
-- Data Engineer
+- create a new airbyte data destination connector.
+- list connections
+- manage data source connectors.
+- list all destinations.
+- list sync jobs.
+- trigger a sync job.
+- list sync jobs
 - list jobs
+- user, workspace, and organizational management.
+- create a new data source.
+- elt
+- data integration
+- list all data sources.
+- data engineering
+- manage airbyte sources, destinations, connections, and sync jobs.
+- open source
+- data
+- manages airbyte workspaces, users, permissions, and organizational settings.
+- create an airbyte connection between a source and destination.
+- trigger an airbyte sync job for a connection.
+- moving data between sources and destinations.
+- Data Engineer
+- list all airbyte data destination connectors.
+- trigger job
+- list sources
+- list all airbyte data source connectors.
+- list airbyte connections between sources and destinations.
+- list airbyte sync jobs with optional status filtering.
 - monitoring and operating sync pipelines.
 - etl
-- list all airbyte data source connectors.
-- list destinations
-- data integration
+- get job status
 - list all connections.
-- manage airbyte sources, destinations, connections, and sync jobs.
-- list all data sources.
-- create a new airbyte data source connector.
-- list airbyte sync jobs with optional status filtering.
-- manage data source connectors.
-- create connection
-- manages airbyte workspaces, users, permissions, and organizational settings.
-- user, workspace, and organizational management.
-- create destination
-- list workspaces
-- create a new airbyte data destination connector.
-- trigger sync
-- list airbyte connections between sources and destinations.
-- Platform Admin
-- moving data between sources and destinations.
-- delete an airbyte source connector.
-- manage source-to-destination connections.
-- list sync jobs.
 - monitor and trigger sync jobs.
-- list sources
-- create an airbyte connection between a source and destination.
+- connectors
+- manage source-to-destination connections.
+- delete an airbyte source connector.
+- list destinations
+- create connection
+- create destination
+- create a new airbyte data source connector.
+- check the status of an airbyte sync job.
+- create source
+- create a new destination.
+- list airbyte workspaces.
+- delete source
+- builds and maintains data pipelines using airbyte connectors and connections.
+- list workspaces
+- manage data destination connectors.
+- airbyte
+- Platform Admin
+- create a new connection.
+- manage workspaces.
+- trigger sync
+- data pipeline
 slug: data-pipeline-management
 source_filename: data-pipeline-management.yaml
 source_heading: Capability Spec

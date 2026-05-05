@@ -38,37 +38,37 @@ personas: []
 provider_name: tidb
 provider_slug: tidb
 search_terms:
-- list all tidb cloud clusters across projects
-- cluster management
-- query with natural language
-- distributed sql
-- cluster backups
-- chat2query
-- get detailed configuration and status for a specific tidb cloud cluster
-- list cluster backups
-- individual cluster details
-- create a manual backup for a tidb cloud cluster
-- create backup
-- list imports
-- get details for a specific cluster
 - list backups for a cluster
 - cloud
-- tidb
-- list backups
-- list data import tasks for a tidb cloud cluster
-- database
-- get cluster
-- data import tasks
-- execute a natural language query against a tidb database
-- tidb cloud cluster management
-- data access
-- list data import tasks for a cluster
-- list all tidb cloud clusters
-- list all backups for a tidb cloud cluster
-- list clusters
-- list import tasks
+- create a manual backup for a tidb cloud cluster
+- cluster management
 - execute a natural language instruction against a tidb cloud database. the ai generates and runs sql automatically. ideal for ad-hoc analysis.
+- data access
+- get cluster
+- tidb
+- list all tidb cloud clusters
+- query with natural language
+- get details for a specific cluster
+- data import tasks
+- create backup
+- chat2query
+- database
+- list all backups for a tidb cloud cluster
+- list cluster backups
+- get detailed configuration and status for a specific tidb cloud cluster
+- tidb cloud cluster management
+- cluster backups
+- list clusters
+- list backups
 - ai-powered sql queries
+- list imports
+- individual cluster details
+- distributed sql
+- execute a natural language query against a tidb database
+- list import tasks
+- list all tidb cloud clusters across projects
+- list data import tasks for a cluster
+- list data import tasks for a tidb cloud cluster
 slug: database-operations
 source_filename: database-operations.yaml
 source_heading: Capability Spec

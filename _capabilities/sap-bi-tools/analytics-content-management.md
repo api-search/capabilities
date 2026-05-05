@@ -35,39 +35,39 @@ personas: []
 provider_name: SAP BI Tools
 provider_slug: sap-bi-tools
 search_terms:
-- get a story by id.
-- list content items in the sap analytics cloud content network.
-- single analytics story.
-- list stories
-- planning calendars.
-- import content item
-- analytics
 - list repository resources (stories, models, folders).
-- content management
-- get details of a specific analytics story by id.
-- list planning calendar events and collaborative tasks.
-- get a content item by id.
-- list all analytics stories on the sap analytics cloud tenant.
-- business intelligence
-- list resources
-- list content network items.
-- publish content item
-- sap
-- list calendars
-- import a content package from the content network into the local tenant.
-- analytics story management.
-- list calendar events and planning tasks.
-- reporting
-- list file repository resources (stories, models, folders).
-- single content network item.
-- publish a local analytics artifact to the content network for sharing.
-- content network items.
-- list content items
-- data visualization
+- planning calendars.
+- list stories
 - get story
-- get content item
+- business intelligence
+- analytics
 - file repository resources.
+- single analytics story.
+- import a content package from the content network into the local tenant.
+- list content network items.
+- analytics story management.
+- data visualization
+- list file repository resources (stories, models, folders).
+- list content items in the sap analytics cloud content network.
+- reporting
+- list calendars
+- list calendar events and planning tasks.
+- get details of a specific analytics story by id.
 - list all analytics stories on the tenant.
+- get a content item by id.
+- list content items
+- publish a local analytics artifact to the content network for sharing.
+- get a story by id.
+- content network items.
+- publish content item
+- list resources
+- single content network item.
+- import content item
+- content management
+- sap
+- list all analytics stories on the sap analytics cloud tenant.
+- get content item
+- list planning calendar events and collaborative tasks.
 slug: analytics-content-management
 source_filename: analytics-content-management.yaml
 source_heading: Capability Spec

@@ -40,56 +40,56 @@ personas: []
 provider_name: Best Buy
 provider_slug: best-buy
 search_terms:
-- get top trending products by view velocity
-- find stores
-- get detailed product information for a specific best buy sku including price, availability, and specs
-- list stores
-- store location, hours, and services
-- find best buy stores near a location using postal code or gps coordinates
-- get the top trending best buy products by category or across the entire catalog
-- find best buy stores near a location
-- Partner
-- get also bought
-- get trending
-- get detailed product information by sku
-- find best buy stores with proximity search
-- get store details including hours and services
-- e-commerce
-- get products frequently viewed alongside this sku
-- behavioral recommendations and trending data
-- get products frequently purchased with this sku
-- get also bought products
-- get trending best buy products
-- recommendations
-- search the best buy product catalog by keyword, price range, or product attributes
-- search products
-- stores
-- authorized best buy commerce partner building shopping experiences
-- developer building retail integrations and shopping applications
-- products
-- get most viewed products
-- consumer electronics
-- get a specific best buy store
-- get the most viewed best buy products in the last 48 hours
-- Developer
-- get hours, services, and contact information for a specific best buy store
-- get also viewed products
-- get a specific best buy product by sku
-- get also viewed
-- get also-viewed product recommendations
 - search and filter best buy products with keyword search and attribute filtering
-- best buy
-- get products frequently purchased together with a specific sku for bundle recommendations
-- retail
-- list products
-- get also-bought product recommendations
-- product search, store lookup, and recommendations
-- search and browse the best buy product catalog
-- get product
-- get trending products
-- product search, filtering, and attribute retrieval
-- get store
+- stores
 - get products frequently viewed alongside a specific sku for cross-sell discovery
+- e-commerce
+- list products
+- product search, store lookup, and recommendations
+- get products frequently purchased with this sku
+- find best buy stores near a location
+- get also bought products
+- get products frequently purchased together with a specific sku for bundle recommendations
+- product search, filtering, and attribute retrieval
+- get products frequently viewed alongside this sku
+- search and browse the best buy product catalog
+- Developer
+- get the top trending best buy products by category or across the entire catalog
+- Partner
+- get a specific best buy product by sku
+- authorized best buy commerce partner building shopping experiences
+- get also-viewed product recommendations
+- get also viewed
+- recommendations
+- consumer electronics
+- products
+- get trending products
+- get also viewed products
+- find best buy stores with proximity search
+- get detailed product information by sku
+- store location, hours, and services
+- get store
+- retail
+- get also-bought product recommendations
+- get trending
+- behavioral recommendations and trending data
+- get product
+- get most viewed products
+- developer building retail integrations and shopping applications
+- best buy
+- search the best buy product catalog by keyword, price range, or product attributes
+- get the most viewed best buy products in the last 48 hours
+- get store details including hours and services
+- get also bought
+- get hours, services, and contact information for a specific best buy store
+- get a specific best buy store
+- get top trending products by view velocity
+- get trending best buy products
+- list stores
+- search products
+- find stores
+- find best buy stores near a location using postal code or gps coordinates
+- get detailed product information for a specific best buy sku including price, availability, and specs
 slug: retail-discovery
 source_filename: retail-discovery.yaml
 source_heading: Capability Spec

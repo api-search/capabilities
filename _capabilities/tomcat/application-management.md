@@ -45,40 +45,40 @@ personas: []
 provider_name: Apache Tomcat
 provider_slug: tomcat
 search_terms:
-- get jvm memory and system info
-- java
-- server information
-- list applications
-- get thread dump
-- open source
-- list all deployed web applications on apache tomcat
-- get jvm thread dump
-- reload a tomcat application to pick up web-inf/classes and lib changes
-- reload application
 - get apache tomcat server os, jvm, and version information
-- start application
-- get a full jvm thread dump from apache tomcat for diagnostics
-- web server
+- apache tomcat
+- get thread dump
+- get jvm memory and system info
+- start a stopped web application on tomcat
 - jvm information
 - stop a running web application on tomcat (makes it unavailable)
-- servlet container
-- stop application
-- list all deployed web applications
-- apache tomcat
-- start a stopped application
-- web application listing
-- apache
-- stop a running application
-- thread dump
-- get vm info
-- start a stopped web application on tomcat
 - application server
-- reload an application
+- start a stopped application
+- open source
+- get vm info
 - get server os and jvm information
+- list all deployed web applications on apache tomcat
+- servlet container
+- server information
+- list all deployed web applications
 - get jvm memory usage and system properties from apache tomcat
-- deployment
-- get server info
 - devops
+- web application listing
+- start application
+- list applications
+- thread dump
+- get a full jvm thread dump from apache tomcat for diagnostics
+- stop a running application
+- reload an application
+- stop application
+- deployment
+- reload a tomcat application to pick up web-inf/classes and lib changes
+- web server
+- reload application
+- apache
+- get jvm thread dump
+- get server info
+- java
 slug: application-management
 source_filename: application-management.yaml
 source_heading: Capability Spec

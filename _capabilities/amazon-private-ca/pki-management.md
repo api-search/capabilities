@@ -35,46 +35,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- certificate authority
-- Platform Engineer
-- revoke a certificate
-- security
-- issues certificates for internal services and manages certificate lifecycle
-- tls
-- certificate management
-- list all certificate authorities
-- revoke an issued certificate
-- individual certificate authority operations
-- issue certificate
-- Security Engineer
-- manages pki infrastructure, ca hierarchies, and certificate policies
-- list all private certificate authorities
 - x.509
-- create a new private certificate authority
+- list cas
+- amazon
 - aws
-- describe ca
-- certificate lifecycle management
-- retrieve an issued certificate by arn
+- revoke an issued certificate
+- describe certificate authority
+- security
 - issue a new certificate
 - retrieve a certificate
-- amazon
-- create ca
-- individual certificate operations
-- revoke certificate
-- certificate authority hierarchy management
-- create certificate authority
-- private pki infrastructure management workflow
-- pki
-- list cas
-- certificates
-- describe certificate authority
-- get details about a specific certificate authority
 - issue a new x.509 certificate from a certificate authority
-- iot
-- get certificate
+- issues certificates for internal services and manages certificate lifecycle
+- certificate lifecycle management
+- individual certificate authority operations
+- Platform Engineer
+- create a new private certificate authority
+- revoke a certificate
+- create certificate authority
 - create a new private certificate authority in the ca hierarchy
-- list certificate authorities
+- tls
+- retrieve an issued certificate by arn
+- describe ca
+- create ca
+- certificate management
+- certificate authority hierarchy management
+- manages pki infrastructure, ca hierarchies, and certificate policies
+- list all certificate authorities
+- certificate authority
+- certificates
+- private pki infrastructure management workflow
+- individual certificate operations
 - get certificate authority details
+- Security Engineer
+- get certificate
+- list certificate authorities
+- iot
+- list all private certificate authorities
+- get details about a specific certificate authority
+- issue certificate
+- revoke certificate
+- pki
 slug: pki-management
 source_filename: pki-management.yaml
 source_heading: Capability Spec

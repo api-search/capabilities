@@ -1,0 +1,212 @@
+---
+categories: []
+consumed_apis:
+- gravitee-management
+description: API management workflow for platform engineers and API producers to manage Gravitee APIs, plans, subscriptions, applications, and platform configuration through the Management API.
+layout: capability
+name: Gravitee API Management
+operations:
+- description: List all APIs.
+  method: GET
+  name: list-apis
+  path: /v1/apis
+- description: Create a new API definition.
+  method: POST
+  name: create-api
+  path: /v1/apis
+- description: Get an API by ID.
+  method: GET
+  name: get-api
+  path: /v1/apis/{apiId}
+- description: Delete an API.
+  method: DELETE
+  name: delete-api
+  path: /v1/apis/{apiId}
+- description: Deploy an API definition to the gateway.
+  method: POST
+  name: deploy-api
+  path: /v1/apis/{apiId}/lifecycle
+- description: Start an API on the gateway.
+  method: POST
+  name: start-api
+  path: /v1/apis/{apiId}/lifecycle
+- description: Stop an API on the gateway.
+  method: POST
+  name: stop-api
+  path: /v1/apis/{apiId}/lifecycle
+- description: List plans for an API.
+  method: GET
+  name: list-api-plans
+  path: /v1/apis/{apiId}/plans
+- description: List subscriptions for an API.
+  method: GET
+  name: list-api-subscriptions
+  path: /v1/apis/{apiId}/subscriptions
+- description: List all applications.
+  method: GET
+  name: list-applications
+  path: /v1/applications
+- description: List platform users.
+  method: GET
+  name: list-users
+  path: /v1/users
+- description: Get platform-wide configuration.
+  method: GET
+  name: get-configuration
+  path: /v1/configuration
+- description: List platform audit events.
+  method: GET
+  name: list-audit-events
+  path: /v1/audit
+personas: []
+provider_name: Gravitee
+provider_slug: gravitee
+search_terms:
+- create a new gravitee api definition.
+- get platform-wide configuration.
+- list users
+- platform configuration.
+- list all applications registered on the platform.
+- create plan
+- create application
+- update a gravitee api definition.
+- start a gravitee api on the gateway.
+- list audit events
+- list platform audit events.
+- open source
+- api lifecycle controls.
+- list subscriptions for an api.
+- stop a gravitee api on the gateway.
+- create a new api definition.
+- create api
+- deploy an api definition to the gateway.
+- get an api by id.
+- delete api
+- get api
+- list platform users.
+- platform users.
+- administration
+- list plans defined for an api.
+- api definitions.
+- list plans for an api.
+- list api subscriptions
+- delete an api.
+- stop an api on the gateway.
+- start api
+- get platform-wide configuration settings.
+- list applications
+- update api
+- list apis
+- list all applications.
+- api management
+- audit events.
+- single api definition.
+- graphql
+- list all apis.
+- create a new plan for an api.
+- get a gravitee api definition by id.
+- subscriptions for an api.
+- start an api on the gateway.
+- get configuration
+- register a new application.
+- list api plans
+- stop api
+- application registry.
+- plans for an api.
+- gravitee
+- list all apis on the gravitee platform.
+- api gateway
+- deploy api
+- delete a gravitee api definition.
+- deploy a gravitee api to the gateway.
+slug: api-management
+source_filename: api-management.yaml
+source_heading: Capability Spec
+source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Gravitee API Management\"\n  description: \"API management workflow for platform engineers and API producers to manage Gravitee APIs, plans, subscriptions, applications, and platform configuration through the Management API.\"\n  tags:\n    - Gravitee\n    - API Management\n    - Administration\n  created: \"2026-05-04\"\n  modified: \"2026-05-04\"\n\nbinds:\n  - namespace: env\n    keys:\n      GRAVITEE_MANAGEMENT_URL: GRAVITEE_MANAGEMENT_URL\n      GRAVITEE_MANAGEMENT_TOKEN: GRAVITEE_MANAGEMENT_TOKEN\n\ncapability:\n  consumes:\n    - import: gravitee-management\n      location: ./shared/gravitee-management.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gravitee-api-management-api\n      description: \"Unified REST API for Gravitee API management operations.\"\n      resources:\n        - path: /v1/apis\n          name: apis\n          description: \"API definitions.\"\n          operations:\n      \
+  \      - method: GET\n              name: list-apis\n              description: \"List all APIs.\"\n              call: \"gravitee-management.list-apis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-api\n              description: \"Create a new API definition.\"\n              call: \"gravitee-management.create-api\"\n              with:\n                name: \"rest.name\"\n                description: \"rest.description\"\n                version: \"rest.version\"\n                definitionVersion: \"rest.definitionVersion\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/apis/{apiId}\n          name: api\n          description: \"Single API definition.\"\n          operations:\n            - method: GET\n              name: get-api\n              description: \"Get\
+  \ an API by ID.\"\n              call: \"gravitee-management.get-api\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-api\n              description: \"Delete an API.\"\n              call: \"gravitee-management.delete-api\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/apis/{apiId}/lifecycle\n          name: api-lifecycle\n          description: \"API lifecycle controls.\"\n          operations:\n            - method: POST\n              name: deploy-api\n              description: \"Deploy an API definition to the gateway.\"\n              call: \"gravitee-management.deploy-api\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n          \
+  \      - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: start-api\n              description: \"Start an API on the gateway.\"\n              call: \"gravitee-management.start-api\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: stop-api\n              description: \"Stop an API on the gateway.\"\n              call: \"gravitee-management.stop-api\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/apis/{apiId}/plans\n          name: api-plans\n          description: \"Plans for an API.\"\n          operations:\n            - method: GET\n              name: list-api-plans\n              description: \"List plans for an API.\"\n              call: \"\
+  gravitee-management.list-api-plans\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/apis/{apiId}/subscriptions\n          name: api-subscriptions\n          description: \"Subscriptions for an API.\"\n          operations:\n            - method: GET\n              name: list-api-subscriptions\n              description: \"List subscriptions for an API.\"\n              call: \"gravitee-management.list-api-subscriptions\"\n              with:\n                apiId: \"rest.apiId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications\n          name: applications\n          description: \"Application registry.\"\n          operations:\n            - method: GET\n              name: list-applications\n              description: \"List all applications.\"\n              call: \"\
+  gravitee-management.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"Platform users.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List platform users.\"\n              call: \"gravitee-management.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/configuration\n          name: configuration\n          description: \"Platform configuration.\"\n          operations:\n            - method: GET\n              name: get-configuration\n              description: \"Get platform-wide configuration.\"\n              call: \"gravitee-management.get-configuration\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/audit\n          name:\
+  \ audit\n          description: \"Audit events.\"\n          operations:\n            - method: GET\n              name: list-audit-events\n              description: \"List platform audit events.\"\n              call: \"gravitee-management.list-audit-events\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: gravitee-api-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Gravitee API management.\"\n      tools:\n        - name: list-apis\n          description: \"List all APIs on the Gravitee platform.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.list-apis\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-api\n          description: \"Get a Gravitee API definition by ID.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.get-api\"\
+  \n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-api\n          description: \"Create a new Gravitee API definition.\"\n          hints:\n            readOnly: false\n          call: \"gravitee-management.create-api\"\n          with:\n            name: \"tools.name\"\n            description: \"tools.description\"\n            version: \"tools.version\"\n            definitionVersion: \"tools.definitionVersion\"\n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-api\n          description: \"Update a Gravitee API definition.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"gravitee-management.update-api\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n             \
+  \ mapping: \"$.\"\n        - name: delete-api\n          description: \"Delete a Gravitee API definition.\"\n          hints:\n            destructive: true\n          call: \"gravitee-management.delete-api\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deploy-api\n          description: \"Deploy a Gravitee API to the gateway.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"gravitee-management.deploy-api\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-api\n          description: \"Start a Gravitee API on the gateway.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"gravitee-management.start-api\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n\
+  \            - type: object\n              mapping: \"$.\"\n        - name: stop-api\n          description: \"Stop a Gravitee API on the gateway.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"gravitee-management.stop-api\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-api-plans\n          description: \"List plans defined for an API.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.list-api-plans\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-plan\n          description: \"Create a new plan for an API.\"\n          hints:\n            readOnly: false\n          call: \"gravitee-management.create-plan\"\n          with:\n            apiId: \"tools.apiId\"\n       \
+  \     name: \"tools.name\"\n            security: \"tools.security\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-api-subscriptions\n          description: \"List subscriptions for an API.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.list-api-subscriptions\"\n          with:\n            apiId: \"tools.apiId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-applications\n          description: \"List all applications registered on the platform.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.list-applications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-application\n          description: \"Register a new application.\"\n          hints:\n            readOnly: false\n          call: \"gravitee-management.create-application\"\
+  \n          with:\n            name: \"tools.name\"\n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List platform users.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-configuration\n          description: \"Get platform-wide configuration settings.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.get-configuration\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-audit-events\n          description: \"List platform audit events.\"\n          hints:\n            readOnly: true\n          call: \"gravitee-management.list-audit-events\"\n          outputParameters:\n            - type: object\n          \
+  \    mapping: \"$.\"\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/gravitee/refs/heads/main/capabilities/api-management.yaml
+tags:
+- Gravitee
+- API Management
+- Administration
+tools:
+- description: List all APIs on the Gravitee platform.
+  hints:
+    readOnly: true
+  name: list-apis
+- description: Get a Gravitee API definition by ID.
+  hints:
+    readOnly: true
+  name: get-api
+- description: Create a new Gravitee API definition.
+  hints:
+    readOnly: false
+  name: create-api
+- description: Update a Gravitee API definition.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: update-api
+- description: Delete a Gravitee API definition.
+  hints:
+    destructive: true
+  name: delete-api
+- description: Deploy a Gravitee API to the gateway.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: deploy-api
+- description: Start a Gravitee API on the gateway.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: start-api
+- description: Stop a Gravitee API on the gateway.
+  hints:
+    idempotent: true
+    readOnly: false
+  name: stop-api
+- description: List plans defined for an API.
+  hints:
+    readOnly: true
+  name: list-api-plans
+- description: Create a new plan for an API.
+  hints:
+    readOnly: false
+  name: create-plan
+- description: List subscriptions for an API.
+  hints:
+    readOnly: true
+  name: list-api-subscriptions
+- description: List all applications registered on the platform.
+  hints:
+    readOnly: true
+  name: list-applications
+- description: Register a new application.
+  hints:
+    readOnly: false
+  name: create-application
+- description: List platform users.
+  hints:
+    readOnly: true
+  name: list-users
+- description: Get platform-wide configuration settings.
+  hints:
+    readOnly: true
+  name: get-configuration
+- description: List platform audit events.
+  hints:
+    readOnly: true
+  name: list-audit-events
+---

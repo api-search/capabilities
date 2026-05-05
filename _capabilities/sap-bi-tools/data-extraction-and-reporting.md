@@ -39,44 +39,44 @@ personas: []
 provider_name: SAP BI Tools
 provider_slug: sap-bi-tools
 search_terms:
-- extract master data (dimension members) from an analytics model.
-- search for businessobjects reports and documents in the cms repository.
-- analytics
-- data export namespaces.
-- list completed report instances in the user's bi inbox.
-- browse reports
-- schedule a report for execution.
-- browse reports in the infostore repository.
-- data export
-- extract master data (dimension members) from a model.
-- business intelligence
+- search reports
 - schedule report
-- get odata metadata describing the structure of a planning model.
-- businessobjects report repository.
 - get master data
-- model fact data.
-- list analytics models available for data export from sap analytics cloud.
-- model master data.
-- model providers for data export.
-- list available namespaces for data export.
-- sap
-- extract fact data (transactional records) from an analytics model.
+- schedule a businessobjects report for immediate execution.
 - get model metadata
+- schedule a report for execution.
+- extract master data (dimension members) from an analytics model.
 - list namespaces
-- reporting
-- list completed report instances in the bi inbox.
-- list export models
+- business intelligence
+- list available models (providers) for data export.
+- analytics
+- extract fact data (transactional records) from an analytics model.
+- model providers for data export.
 - get fact data
 - bi user inbox.
-- extract fact data
-- list providers
-- schedule a businessobjects report for immediate execution.
-- extract master data
-- data visualization
-- list available models (providers) for data export.
-- search reports
-- list inbox items
 - extract fact data from a planning model.
+- data visualization
+- list inbox items
+- list completed report instances in the bi inbox.
+- businessobjects report repository.
+- model master data.
+- extract fact data
+- list export models
+- list completed report instances in the user's bi inbox.
+- extract master data (dimension members) from a model.
+- list analytics models available for data export from sap analytics cloud.
+- data export
+- search for businessobjects reports and documents in the cms repository.
+- extract master data
+- browse reports
+- browse reports in the infostore repository.
+- sap
+- get odata metadata describing the structure of a planning model.
+- list available namespaces for data export.
+- model fact data.
+- reporting
+- data export namespaces.
+- list providers
 slug: data-extraction-and-reporting
 source_filename: data-extraction-and-reporting.yaml
 source_heading: Capability Spec

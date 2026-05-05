@@ -33,33 +33,33 @@ personas: []
 provider_name: United States Fire Administration
 provider_slug: united-states-fire-administration
 search_terms:
-- federal government
 - get field-level data dictionary for a dataset
-- disaster analysis
-- fire safety
-- list disaster summaries
-- get dataset fields
-- get data dictionary and field descriptions for a specific openfema dataset
-- list dataset fields
-- fema
-- discover available openfema datasets and their metadata
 - list openfema datasets
-- public safety
+- federal government
 - get disaster declarations with authorized assistance programs
+- list dataset fields
+- list all available openfema datasets
+- list datasets
+- discover available openfema datasets and their metadata
+- get fire disaster declarations
+- list disaster summaries
 - get field descriptions for a specific dataset
 - list fema fire disaster declarations with optional filters
-- list datasets
-- get summarized disaster declarations showing which fema assistance programs were authorized
-- get disaster program summaries
+- disaster analysis
+- get data dictionary and field descriptions for a specific openfema dataset
 - list fire disasters
-- list all available datasets on the openfema platform with descriptions and last update times
-- get fire disaster declarations
-- fire-type fema disaster declarations
-- list all available openfema datasets
-- usfa
-- emergency management
-- retrieve fema fire disaster declarations filtered by state, date, or other criteria
+- get summarized disaster declarations showing which fema assistance programs were authorized
+- get dataset fields
 - summarized disaster declarations with program details
+- get disaster program summaries
+- fire-type fema disaster declarations
+- usfa
+- public safety
+- fire safety
+- list all available datasets on the openfema platform with descriptions and last update times
+- fema
+- retrieve fema fire disaster declarations filtered by state, date, or other criteria
+- emergency management
 slug: fire-incident-data
 source_filename: fire-incident-data.yaml
 source_heading: Capability Spec

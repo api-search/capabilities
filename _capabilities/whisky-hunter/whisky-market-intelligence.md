@@ -22,27 +22,27 @@ personas: []
 provider_name: Whisky Hunter
 provider_slug: whisky-hunter
 search_terms:
-- get aggregated auction trading volumes, bid statistics, and lot counts across all 28 tracked platforms.
-- list all whisky distilleries tracked in the database. returns names and slugs that can be used with get-distillery-data to research specific distillery auction performance.
-- auctions
-- distilleries
 - market data
-- whisky
-- collectors
-- get auctions data
-- list distilleries
-- get historical whisky auction data for a specific distillery, including trading volumes, lot counts, and winning bid statistics over time. use the slug from list-distilleries (e.g., 'macallan', 'ardbeg', 'yamazaki').
+- distilleries
 - list all tracked distilleries with their slugs for further data queries.
-- market intelligence
+- list all whisky distilleries tracked in the database. returns names and slugs that can be used with get-distillery-data to research specific distillery auction performance.
+- collectors
 - spirits
-- all distilleries tracked in the whisky hunter database.
+- get auctions data
+- investors
 - aggregated whisky auction statistics across all tracked platforms.
 - get historical auction trading volumes and price statistics for a distillery.
-- get distillery data
+- all distilleries tracked in the whisky hunter database.
+- whisky
+- list distilleries
+- get historical whisky auction data for a specific distillery, including trading volumes, lot counts, and winning bid statistics over time. use the slug from list-distilleries (e.g., 'macallan', 'ardbeg', 'yamazaki').
 - historical auction data for a specific distillery.
-- price research
-- investors
 - get aggregated whisky auction statistics across all 28 tracked platforms including trading volumes, winning bid ranges, and lot counts. useful for understanding overall market activity and trends.
+- get distillery data
+- auctions
+- price research
+- get aggregated auction trading volumes, bid statistics, and lot counts across all 28 tracked platforms.
+- market intelligence
 slug: whisky-market-intelligence
 source_filename: whisky-market-intelligence.yaml
 source_heading: Capability Spec

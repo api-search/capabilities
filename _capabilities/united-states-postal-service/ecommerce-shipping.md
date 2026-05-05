@@ -40,62 +40,62 @@ personas: []
 provider_name: United States Postal Service
 provider_slug: united-states-postal-service
 search_terms:
-- cancel carrier pickup
-- validate address
-- search base rates
-- get city and state name for a zip code.
-- customer-facing delivery inquiry and address validation support
-- search total postage rates with fees.
-- validate and standardize a us shipping address to usps specifications.
-- fulfillment
-- get carrier pickup
-- validate address for shipping.
-- ecommerce developer
-- e-commerce
-- postal service
-- look up zip code for a street address.
-- validate and standardize a shipping address.
-- schedule carrier pickup.
-- retrieve details of a scheduled usps carrier pickup by confirmation number.
-- cancel a pickup.
-- government
-- customer service agent
-- agent assisting customers with package status and delivery inquiries
-- cancel pickup
-- package tracking and delivery status monitoring for customer service and logistics
-- get total usps postage rates including extra service fees for a complete shipping configuration.
-- developer integrating usps shipping into an online store or marketplace
-- validate shipping address
-- get zip code.
-- package tracking
-- package tracking and delivery status monitoring
-- e-commerce shipping lifecycle from address validation through rate shopping to pickup scheduling
-- schedule a free usps carrier pickup at a residential or commercial address.
-- logistics manager
-- address validation
-- manage an existing pickup.
-- search usps base postage rates for a domestic shipment by weight, dimensions, and mail class.
-- schedule a usps carrier pickup.
-- manager monitoring shipment delivery performance and address quality
-- get total postage rates including all fees.
-- order fulfillment and shipping label generation operations
-- get pickup details.
-- search base postage rates.
-- shipping
-- operations manager overseeing fulfillment and carrier pickup scheduling
-- schedule carrier pickup
-- search total rates
-- look up zip code by address.
-- logistics
-- get city state
-- schedule pickup
-- get base postage rates for a shipment.
-- get pickup
-- cancel a previously scheduled usps carrier pickup.
-- shipping manager
-- get zip code
 - usps
+- agent assisting customers with package status and delivery inquiries
+- address validation
+- search base postage rates.
+- get total usps postage rates including extra service fees for a complete shipping configuration.
+- e-commerce
+- validate shipping address
+- get zip code
+- cancel a pickup.
+- search total postage rates with fees.
+- government
+- validate and standardize a shipping address.
+- logistics manager
+- get pickup
+- schedule carrier pickup.
+- schedule carrier pickup
+- validate address
+- validate address for shipping.
+- cancel pickup
+- customer-facing delivery inquiry and address validation support
 - online retail shipping and fulfillment operations
+- search base rates
+- postal service
+- e-commerce shipping lifecycle from address validation through rate shopping to pickup scheduling
+- order fulfillment and shipping label generation operations
+- package tracking
+- get pickup details.
+- look up zip code by address.
+- schedule a usps carrier pickup.
+- get base postage rates for a shipment.
+- look up zip code for a street address.
+- search usps base postage rates for a domestic shipment by weight, dimensions, and mail class.
+- shipping manager
+- logistics
+- schedule pickup
+- manager monitoring shipment delivery performance and address quality
+- package tracking and delivery status monitoring
+- get city and state name for a zip code.
+- get carrier pickup
+- ecommerce developer
+- customer service agent
+- get city state
+- retrieve details of a scheduled usps carrier pickup by confirmation number.
+- cancel carrier pickup
+- developer integrating usps shipping into an online store or marketplace
+- operations manager overseeing fulfillment and carrier pickup scheduling
+- get zip code.
+- validate and standardize a us shipping address to usps specifications.
+- schedule a free usps carrier pickup at a residential or commercial address.
+- shipping
+- fulfillment
+- get total postage rates including all fees.
+- cancel a previously scheduled usps carrier pickup.
+- search total rates
+- package tracking and delivery status monitoring for customer service and logistics
+- manage an existing pickup.
 slug: ecommerce-shipping
 source_filename: ecommerce-shipping.yaml
 source_heading: Capability Spec

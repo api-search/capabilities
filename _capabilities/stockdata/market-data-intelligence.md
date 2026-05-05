@@ -49,48 +49,48 @@ personas: []
 provider_name: StockData
 provider_slug: stockdata
 search_terms:
-- search for financial entities (stocks, etfs, indices, crypto, currencies) by name, symbol, industry, or country.
-- get split-adjusted intraday data with minute or hour resolution.
-- historical stock split events.
-- get financial news
-- identify trending entities by news volume and sentiment.
-- historical end-of-day stock data.
-- get stock dividends
+- news
+- get split-adjusted historical intraday ohlcv data at minute or hour intervals. use for chart data, technical analysis, or volatility studies.
+- market data
+- get global financial news with entity-level sentiment scoring. use to gauge market sentiment, find relevant news for a stock, or analyze news impact on securities.
+- search for financial entities by name, symbol, type, or industry.
+- real-time stock prices for us-listed equities.
+- retrieve historical dividend payment records.
+- get intraday data
+- finance
 - identify the most-talked-about financial entities in recent news. use for market awareness, discovering momentum stocks, or monitoring news flow across sectors.
-- get historical end-of-day ohlcv data at daily to yearly intervals.
+- financial data
+- get intraday adjusted
+- search entities
 - financial entity search.
+- get financial news
+- search for financial entities (stocks, etfs, indices, crypto, currencies) by name, symbol, industry, or country.
+- retrieve historical stock split records.
+- get historical end-of-day ohlcv data at daily to yearly intervals.
+- stock market
+- historical stock split events.
+- historical dividend payments.
+- get trending entities
+- get dividends
+- get historical eod data
+- get stock splits
+- historical end-of-day stock data.
+- trending financial entities by news volume.
+- get split-adjusted intraday data with minute or hour resolution.
+- identify trending entities by news volume and sentiment.
+- get stock dividends
+- get historical end-of-day ohlcv data for long-term trend analysis, backtesting, and performance attribution.
+- get stock quote
+- algorithmic trading
+- get real-time prices for one or more us-listed stocks.
+- get financial news with entity-level sentiment scoring.
 - sentiment analysis
 - get real-time stock prices for us-listed equities. use when a user asks about current stock prices, market cap, or trading volume.
-- get intraday data
-- market data
-- search for financial entities by name, symbol, type, or industry.
 - get historical dividend records. use for calculating total return, dividend yield analysis, or income-focused portfolio research.
-- retrieve historical stock split records.
-- get financial news with entity-level sentiment scoring.
-- finance
-- get global financial news with entity-level sentiment scoring. use to gauge market sentiment, find relevant news for a stock, or analyze news impact on securities.
 - global financial news with sentiment analysis.
-- news
-- historical dividend payments.
-- get stock splits
-- algorithmic trading
 - retrieve historical stock split information. use for adjusting historical price series or understanding share dilution events.
-- get real-time prices for one or more us-listed stocks.
-- get dividends
-- get split-adjusted historical intraday ohlcv data at minute or hour intervals. use for chart data, technical analysis, or volatility studies.
 - historical intraday ohlcv data.
 - get end of day data
-- financial data
-- real-time stock prices for us-listed equities.
-- get intraday adjusted
-- get stock quote
-- get historical eod data
-- search entities
-- retrieve historical dividend payment records.
-- get trending entities
-- get historical end-of-day ohlcv data for long-term trend analysis, backtesting, and performance attribution.
-- trending financial entities by news volume.
-- stock market
 slug: market-data-intelligence
 source_filename: market-data-intelligence.yaml
 source_heading: Capability Spec

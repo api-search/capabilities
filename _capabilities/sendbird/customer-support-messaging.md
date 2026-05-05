@@ -38,40 +38,40 @@ personas: []
 provider_name: Sendbird
 provider_slug: sendbird
 search_terms:
+- list customers and agents in the sendbird application.
+- list users (customers and agents).
+- customer support
+- manage channel messages.
+- list users
+- send a message.
 - create user
-- ban a disruptive user from a channel.
+- manage a specific user.
+- get user
+- list messages in a support conversation channel.
 - send message
 - temporarily mute a user in a channel.
-- get user details.
-- list group channels.
-- get user
-- list users (customers and agents).
-- create support channel
-- list channels
-- send support message
-- manage channel messages.
-- list messages in a support conversation channel.
-- sendbird
-- chat
-- messaging
-- manage support users and customers.
-- list users
-- send a message to a customer in a support channel.
-- create a new user.
-- list messages
-- list all support conversation channels.
 - mute user
-- create a new support conversation channel between a customer and agent.
-- get details of a specific customer or agent.
-- create channel
-- customer support
-- list messages in a channel.
+- manage support users and customers.
 - create a support channel.
-- manage support conversation channels.
+- create a new support conversation channel between a customer and agent.
+- list channels
 - ban user
-- list customers and agents in the sendbird application.
-- send a message.
-- manage a specific user.
+- chat
+- create a new user.
+- get details of a specific customer or agent.
+- send support message
+- send a message to a customer in a support channel.
+- list group channels.
+- create channel
+- sendbird
+- ban a disruptive user from a channel.
+- manage support conversation channels.
+- list messages in a channel.
+- create support channel
+- list all support conversation channels.
+- get user details.
+- list messages
+- messaging
 slug: customer-support-messaging
 source_filename: customer-support-messaging.yaml
 source_heading: Capability Spec

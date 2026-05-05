@@ -70,69 +70,69 @@ personas: []
 provider_name: RouterOS
 provider_slug: routeros
 search_terms:
-- named address lists for use in firewall rules
-- list all address list entries
-- get dns server configuration
-- router
+- add a static route with destination network and gateway
+- get current dns server addresses and cache configuration
+- list wireless clients
+- list all ip addresses assigned to router interfaces
+- list interfaces
+- list all network interfaces with running status, type, and mac address
+- manage ip address assignments on router interfaces
 - list all routes in the routing table
+- list entries in named firewall address lists
+- list all ip addresses configured on router interfaces
+- list all connected wireless clients with signal strength, mac address, and uptime
+- update dns server addresses
+- add a new firewall filter rule
+- firewall nat rules for masquerading and port forwarding
 - connected wireless client monitoring
 - get cpu, memory, storage, and uptime information
-- add route
-- network interface status and configuration
-- add ip address
-- list all dhcp leases including client hostnames and mac addresses
-- static and dynamic routing table entries
-- add address list entry
-- add a packet filter rule specifying chain, action, source/destination addresses
-- dns
-- update dns server addresses
-- list all currently connected wireless clients with signal strength
-- list routing table entries; optionally filter by active routes only
-- firewall nat rules for masquerading and port forwarding
-- list entries in named firewall address lists
-- routers
-- list all network interfaces with status
-- assign an ip address to a router interface
-- list ip addresses
-- list all dhcp leases showing client hostname, mac address, and assigned ip
-- list routes
-- dns resolver configuration
-- get routeros device cpu load, memory usage, uptime, and version information
-- dhcp
-- list firewall nat
-- manage ip address assignments on router interfaces
-- mikrotik
-- list all connected wireless clients with signal strength, mac address, and uptime
-- firewall packet filter rules
-- add an ip address to a named firewall list
-- add a new firewall filter rule
-- list dhcp leases
-- get system resource
-- networking
-- list address lists
-- assign a new ip address to a router interface (cidr notation required)
-- get current dns server addresses and cache configuration
-- network management
-- device resource utilization and hardware information
-- list wireless clients
-- block or classify an ip by adding it to a named firewall address list
-- firewall
-- list all nat rules
-- list firewall filter rules; filter by chain (input/forward/output) or action
-- list nat rules for masquerading, source nat, and destination nat
-- add firewall filter
-- list all ip addresses assigned to router interfaces
-- add a static route with destination network and gateway
-- list all ip addresses configured on router interfaces
-- list interfaces
-- routeros
 - dhcp server lease table
-- list firewall filters
-- list all network interfaces with running status, type, and mac address
+- block or classify an ip by adding it to a named firewall address list
+- list routing table entries; optionally filter by active routes only
 - get dns settings
-- update dns settings
+- get dns server configuration
+- list all network interfaces with status
+- list firewall filters
+- list all address list entries
+- device resource utilization and hardware information
+- named address lists for use in firewall rules
+- add ip address
+- add an ip address to a named firewall list
+- list firewall nat
+- network interface status and configuration
 - add a static route
+- list all currently connected wireless clients with signal strength
+- firewall packet filter rules
+- list nat rules for masquerading, source nat, and destination nat
+- list all nat rules
+- list address lists
+- static and dynamic routing table entries
+- network management
+- list ip addresses
+- routers
+- list all dhcp leases showing client hostname, mac address, and assigned ip
+- dhcp
+- networking
+- routeros
+- mikrotik
+- add route
+- get routeros device cpu load, memory usage, uptime, and version information
+- list all dhcp leases including client hostnames and mac addresses
+- list firewall filter rules; filter by chain (input/forward/output) or action
+- add a packet filter rule specifying chain, action, source/destination addresses
+- add firewall filter
+- assign an ip address to a router interface
+- add address list entry
+- get system resource
+- list routes
+- list dhcp leases
 - list all firewall filter rules by chain and action
+- firewall
+- dns resolver configuration
+- assign a new ip address to a router interface (cidr notation required)
+- dns
+- update dns settings
+- router
 slug: network-management
 source_filename: network-management.yaml
 source_heading: Capability Spec

@@ -77,67 +77,67 @@ personas: []
 provider_name: Silverpop
 provider_slug: silverpop
 search_terms:
-- contact management within a database.
-- add a new contact to a database.
-- get aggregate performance metrics for a sent campaign (opens, clicks, unsubscribes, bounces).
-- get campaign opens
-- get campaign clicks
-- update a contact's attributes.
-- schedule a campaign for delivery.
-- single campaign operations.
-- get campaign aggregate performance metrics.
-- get a specific contact's profile and custom fields.
-- get details of a specific email campaign.
-- update contact
-- get campaign open event data.
-- list programs
-- get detailed click-through event records for a campaign.
 - schedule campaign
-- remove contact
-- contact database management.
-- list contacts in a specific database with pagination.
-- get program details and status.
-- get campaign click event data.
-- list all marketing automation programs.
-- email marketing
-- remove a contact from a database.
-- marketing automation programs.
-- get program
-- get contact
-- list all email campaigns with optional status filtering.
-- list contacts in a database.
-- campaign scheduling.
-- update a contact's attributes and custom fields.
-- list all email campaigns.
-- add contact
 - contact management
-- digital marketing
-- reporting
-- get campaign summary
-- campaign management
-- campaign performance summary.
-- list databases
-- get campaign details.
-- list all contact databases (lists) in the silverpop account.
-- create a new email campaign mailing.
-- get a contact's details.
-- marketing automation
-- campaign click events.
-- add a new contact to a silverpop database.
-- list all contact databases.
-- list contacts
-- schedule a campaign for delivery at a specific date and time.
-- single program operations.
+- list contacts in a specific database with pagination.
+- get aggregate performance metrics for a sent campaign (opens, clicks, unsubscribes, bounces).
+- contact management within a database.
+- list all marketing automation programs.
 - get detailed open event records for a campaign.
-- email campaign management.
+- update a contact's attributes and custom fields.
+- get campaign summary
+- update contact
 - get details and status of a specific marketing automation program.
-- create a new email campaign.
-- remove (opt-out) a contact from a database.
-- campaign open events.
 - list campaigns
-- single contact operations.
-- get campaign
+- get campaign opens
+- list all contact databases.
+- get detailed click-through event records for a campaign.
+- marketing automation
+- get campaign aggregate performance metrics.
+- get campaign click event data.
+- marketing automation programs.
+- remove (opt-out) a contact from a database.
+- email campaign management.
+- campaign performance summary.
+- create a new email campaign.
+- schedule a campaign for delivery.
+- get campaign clicks
+- get details of a specific email campaign.
 - create campaign
+- add a new contact to a silverpop database.
+- campaign management
+- get program details and status.
+- get campaign
+- single program operations.
+- remove a contact from a database.
+- list databases
+- get a specific contact's profile and custom fields.
+- single contact operations.
+- schedule a campaign for delivery at a specific date and time.
+- digital marketing
+- campaign open events.
+- get campaign details.
+- list contacts
+- update a contact's attributes.
+- campaign click events.
+- get a contact's details.
+- get contact
+- list contacts in a database.
+- create a new email campaign mailing.
+- remove contact
+- get program
+- contact database management.
+- add contact
+- campaign scheduling.
+- list all email campaigns.
+- list programs
+- add a new contact to a database.
+- list all email campaigns with optional status filtering.
+- get campaign open event data.
+- reporting
+- list all contact databases (lists) in the silverpop account.
+- email marketing
+- single campaign operations.
 slug: email-marketing
 source_filename: email-marketing.yaml
 source_heading: Capability Spec

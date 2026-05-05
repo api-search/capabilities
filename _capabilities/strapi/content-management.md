@@ -72,69 +72,69 @@ personas: []
 provider_name: Strapi
 provider_slug: strapi
 search_terms:
-- list content entries with filtering and pagination
-- create admin user
-- update an existing content entry
-- create a new webhook configuration
-- list administrator accounts
-- open source
-- get a single content entry
-- content management
-- list webhook configurations
-- find entries
-- delete a content entry permanently
-- list all webhook configurations
-- node.js
-- create a new administrator
-- list user roles and their permissions
-- list roles
-- create webhook
-- login user
-- list admin users
 - authenticate an end-user and obtain a jwt token
+- cms
+- register a new end-user account
+- node.js
+- list admin roles
+- list all files in the strapi media library
+- list users
+- list all api tokens configured in strapi
+- delete a content entry
+- create a new webhook configuration
+- update a content entry
+- list admin users
+- list administrator roles
+- list all files in the media library
+- register user
+- list content entries for a content-type with filtering and pagination
+- update an existing content entry
+- list all administrator roles
+- end-user account management
+- open source
+- list roles
+- list all registered end-user accounts
+- create a new content entry
+- list media files
+- administrator role management
+- create admin user
+- create a new api token
+- create webhook
+- user authentication
+- get a single content entry by document id
+- list all webhook configurations
+- get authenticated user
+- list registered end-users
+- list content entries with filtering and pagination
+- administrator user management
+- api token management
+- list all api tokens
+- get a single content entry
+- login user
+- list all administrator accounts
+- create api token
+- find entries
+- create entry
+- single content entry management
+- create a new webhook
+- delete entry
+- find one entry
 - media library management
 - authenticate a user
-- list all administrator roles
-- list api tokens
-- content entry collection management
-- create entry
-- list all files in the media library
-- list registered end-users
-- list admin roles
-- delete a content entry
-- update a content entry
-- get a single content entry by document id
-- create a new webhook
-- list administrator roles
-- create api token
-- list all administrator accounts
-- list users
-- administrator role management
-- delete entry
 - get the currently authenticated user's profile
-- get authenticated user
-- list webhooks
+- list user roles and their permissions
+- list webhook configurations
 - create a new administrator account
-- api token management
-- list content entries for a content-type with filtering and pagination
-- update entry
-- list all api tokens
-- find one entry
-- create a new content entry
-- create a new api token
-- register a new end-user account
-- list all api tokens configured in strapi
 - headless cms
-- administrator user management
-- list all files in the strapi media library
-- list all registered end-user accounts
+- list api tokens
+- list administrator accounts
+- create a new administrator
 - webhook configuration management
-- cms
-- end-user account management
-- list media files
-- user authentication
-- single content entry management
-- register user
+- delete a content entry permanently
+- content management
+- content entry collection management
+- list webhooks
+- update entry
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

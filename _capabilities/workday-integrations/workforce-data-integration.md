@@ -40,53 +40,53 @@ personas: []
 provider_name: Workday Integrations
 provider_slug: workday-integrations
 search_terms:
-- list prism analytics datasets
-- execute a workday raas report and return data
-- create a prism dataset
-- position records
-- workday
-- analytics
-- create a new prism analytics dataset
-- integrations
-- hr
-- get field metadata for a workday report
-- hcm
-- organizational structure
-- erp
-- get worker benefits
-- integration
-- list job profiles in workday
-- list workday organizational structures
-- publish a prism analytics dataset for reporting
-- list positions
-- list prism datasets
-- enterprise software
-- report-as-a-service data access
-- cloud
-- finance
-- get benefit enrollments for a worker
-- get report metadata
-- upload external data to a prism analytics dataset
 - workforce data
-- worker record access
-- get compensation data for a worker
-- get worker details
-- prism analytics dataset management
-- list workers
+- workday
+- execute a workday raas report and return data
 - list organizations
-- list datasets
-- get detailed information about a specific worker
-- get report
-- get worker compensation
-- publish dataset
-- create dataset
-- upload data to dataset
-- list job profiles
-- execute and retrieve report data
-- list workday position records
-- get worker
+- get worker details
+- integration
+- report-as-a-service data access
 - individual worker data
+- list positions
+- list datasets
+- list job profiles
+- cloud
+- hcm
+- get worker compensation
+- hr
+- analytics
+- get benefit enrollments for a worker
+- list workday organizational structures
+- get field metadata for a workday report
+- finance
+- publish dataset
+- upload data to dataset
+- get worker
+- get detailed information about a specific worker
+- list job profiles in workday
+- get report metadata
+- enterprise software
+- erp
+- execute and retrieve report data
+- worker record access
+- position records
 - list workday workers including employees and contingent workers
+- list workday position records
+- integrations
+- prism analytics dataset management
+- create a new prism analytics dataset
+- get worker benefits
+- upload external data to a prism analytics dataset
+- list prism analytics datasets
+- publish a prism analytics dataset for reporting
+- get report
+- list prism datasets
+- get compensation data for a worker
+- create dataset
+- list workers
+- create a prism dataset
+- organizational structure
 slug: workforce-data-integration
 source_filename: workforce-data-integration.yaml
 source_heading: Capability Spec

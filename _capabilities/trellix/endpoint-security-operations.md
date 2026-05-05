@@ -60,56 +60,56 @@ personas: []
 provider_name: Trellix
 provider_slug: trellix
 search_terms:
-- edr response reactions
-- threat hunting
-- epo execute query
-- managed endpoint devices from epo
-- incident response
-- list detected threats
-- epo list events
-- detected threats from edr
-- list detections
-- list managed devices
-- security alerts
-- list searches
-- list active searches
-- epo list devices
-- xdr
-- create a real-time search across endpoints to hunt for indicators of compromise.
-- execute response reaction
-- list threat events
-- threat events from epo
-- list events
-- create an epo response action on a managed device (quarantine, run scan, apply policy).
-- list alerts
-- create real-time search
-- threat intelligence
-- endpoint security
-- list devices
-- epo create response action
-- edr create reaction
-- real-time endpoint searches
-- create response action
-- epo response actions
-- edr list alerts
 - endpoint detections
-- cybersecurity
-- edr list detections
-- execute an edr response reaction on an endpoint (isolate, collect artifacts, terminate process).
-- cloud security
-- edr create search
+- incident response
+- managed endpoint devices from epo
+- epo response actions
 - list managed endpoint devices from epo saas for asset inventory and status checks.
+- list threat events
+- edr list detections
+- threat intelligence
+- edr list alerts
+- cloud security
+- list events
+- xdr
+- create reaction
+- cybersecurity
+- list detections
+- epo list events
 - list security alerts from edr for soc triage and prioritization.
 - list threats detected by trellix edr for incident investigation and triage.
-- list endpoint detections from edr for threat hunting and analysis.
+- create a real-time search across endpoints to hunt for indicators of compromise.
 - threat detection
-- list threat events from epo saas for incident correlation and reporting.
-- security operations
-- edr list threats
+- list devices
+- list searches
+- edr response reactions
 - list threats
-- execute a saved epo query for security reporting and compliance checks.
-- create reaction
+- detected threats from edr
+- list detected threats
+- list alerts
+- list managed devices
+- endpoint security
+- epo list devices
+- security operations
+- create response action
+- edr list threats
+- epo create response action
+- edr create search
 - create search
+- execute an edr response reaction on an endpoint (isolate, collect artifacts, terminate process).
+- list active searches
+- execute response reaction
+- edr create reaction
+- threat hunting
+- list endpoint detections from edr for threat hunting and analysis.
+- real-time endpoint searches
+- create real-time search
+- create an epo response action on a managed device (quarantine, run scan, apply policy).
+- threat events from epo
+- list threat events from epo saas for incident correlation and reporting.
+- epo execute query
+- execute a saved epo query for security reporting and compliance checks.
+- security alerts
 slug: endpoint-security-operations
 source_filename: endpoint-security-operations.yaml
 source_heading: Capability Spec

@@ -37,32 +37,32 @@ personas: []
 provider_name: Restack
 provider_slug: restack
 search_terms:
-- automation
-- ai agents
-- get the current status and output of an agent run
-- get workflow run
-- schedule agent
-- schedule long-running workflows that persist state
-- schedule a workflow by name with typed input parameters
 - schedule workflow
-- get the current status and output of a restack agent run by name and run id.
-- server health monitoring
-- get the current status and output of a workflow run
-- track agent execution status and retrieve results
-- schedule ai agents for asynchronous execution
-- check the health status of the restack server.
-- get agent run
-- workflows
-- health check
-- enterprise
-- schedule a long-running workflow on restack. workflows persist state across days, months, or years.
 - schedule an ai agent on restack for asynchronous execution. returns a runid to track progress.
-- python
-- schedule an ai agent by name with typed input parameters
-- track workflow execution status and retrieve results
+- get workflow run
 - check restack server health
+- schedule agent
+- check the health status of the restack server.
+- enterprise
+- track agent execution status and retrieve results
+- track workflow execution status and retrieve results
+- health check
+- get the current status and output of an agent run
+- schedule ai agents for asynchronous execution
+- ai agents
 - orchestration
+- get the current status and output of a restack agent run by name and run id.
+- python
 - get the current status and output of a restack workflow run by name and run id.
+- schedule long-running workflows that persist state
+- schedule a long-running workflow on restack. workflows persist state across days, months, or years.
+- server health monitoring
+- schedule an ai agent by name with typed input parameters
+- get agent run
+- schedule a workflow by name with typed input parameters
+- automation
+- get the current status and output of a workflow run
+- workflows
 slug: agent-workflow-orchestration
 source_filename: agent-workflow-orchestration.yaml
 source_heading: Capability Spec

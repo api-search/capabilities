@@ -30,35 +30,35 @@ personas: []
 provider_name: Ryder System
 provider_slug: ryder-system
 search_terms:
-- vehicle service history
-- supply chain
-- ryder service locations
-- single vehicle details
-- get maintenance and repair history for a specific fleet vehicle
-- list locations
-- trucking
-- locations
 - get service history
-- get vehicle
-- vehicles
-- list fleet invoices with line items and payment status
-- list invoices
-- get detailed vehicle information and specifications
-- fleet vehicle catalog
-- list fleet vehicles
-- transportation
-- service history
-- list ryder service center locations with available services and business hours
-- list all vehicles in the fleet with specifications
-- logistics
-- list all vehicles in the ryder-managed fleet with specifications
-- get maintenance history for a specific vehicle
-- fleet management
-- get detailed information and specifications for a specific fleet vehicle
-- list fleet invoices with line items, amounts, and payment status
-- invoices
 - fleet invoices
+- invoices
+- get maintenance history for a specific vehicle
+- trucking
 - list ryder service center locations with services and hours
+- service history
+- single vehicle details
+- list invoices
+- locations
+- transportation
+- list fleet vehicles
+- list all vehicles in the fleet with specifications
+- list fleet invoices with line items, amounts, and payment status
+- get maintenance and repair history for a specific fleet vehicle
+- supply chain
+- get vehicle
+- list all vehicles in the ryder-managed fleet with specifications
+- list locations
+- logistics
+- get detailed information and specifications for a specific fleet vehicle
+- get detailed vehicle information and specifications
+- vehicle service history
+- list ryder service center locations with available services and business hours
+- list fleet invoices with line items and payment status
+- ryder service locations
+- fleet vehicle catalog
+- vehicles
+- fleet management
 slug: fleet-operations
 source_filename: fleet-operations.yaml
 source_heading: Capability Spec

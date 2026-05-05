@@ -53,44 +53,44 @@ personas: []
 provider_name: Veli
 provider_slug: veli
 search_terms:
-- get or close a specific portfolio
-- get details for a specific investment strategy
-- get current portfolio details including status, total value, and strategy information
-- close portfolio
-- create a new investment portfolio based on a strategy
-- view current asset positions in a portfolio
-- get portfolio
-- rebalance portfolio
-- list investment portfolios for a user or filtered by strategy
-- browse available crypto investment strategies
-- get portfolio performance metrics
-- trigger a rebalance to restore target strategy allocations
-- get positions
-- defi
-- list portfolios for a user or filtered by strategy
-- get portfolio performance metrics including returns, gains/losses, and allocation for a time period (1d, 7d, 30d, 90d, 1y, all)
-- crypto
-- list portfolios
-- get portfolio performance metrics and returns for a time period
-- get strategy details including allocations and historical performance
-- get portfolio details including status and current value
-- browse available crypto investment strategies, optionally filtered by category (index, theme, custom) or risk level (low, medium, high)
-- trigger a portfolio rebalance to restore target asset allocations defined by the investment strategy
-- trigger portfolio rebalancing
-- finance
-- investment
-- get current asset positions in a portfolio with quantities, prices, and market values
-- list available crypto investment strategies filtered by category and risk level
 - get full details for a specific crypto investment strategy including asset allocations and performance history
-- close and liquidate an investment portfolio
-- get strategy
+- get current asset positions in a portfolio with quantities, prices, and market values
+- list portfolios
+- get portfolio performance metrics
+- investment
+- get current portfolio details including status, total value, and strategy information
+- get positions
 - list strategies
-- portfolio management
-- get performance
-- get current asset positions with quantities and market values
+- trigger a rebalance to restore target strategy allocations
+- get portfolio
+- defi
+- trigger portfolio rebalancing
+- get strategy
+- finance
 - create portfolio
+- get portfolio performance metrics and returns for a time period
 - create a new crypto investment portfolio for a user based on a chosen strategy and initial investment amount
+- trigger a portfolio rebalance to restore target asset allocations defined by the investment strategy
+- rebalance portfolio
+- get details for a specific investment strategy
+- get portfolio details including status and current value
+- list investment portfolios for a user or filtered by strategy
+- get performance
+- get strategy details including allocations and historical performance
+- list available crypto investment strategies filtered by category and risk level
+- create a new investment portfolio based on a strategy
+- get portfolio performance metrics including returns, gains/losses, and allocation for a time period (1d, 7d, 30d, 90d, 1y, all)
+- close portfolio
+- browse available crypto investment strategies, optionally filtered by category (index, theme, custom) or risk level (low, medium, high)
+- get current asset positions with quantities and market values
+- list portfolios for a user or filtered by strategy
 - manage investment portfolios
+- browse available crypto investment strategies
+- close and liquidate an investment portfolio
+- get or close a specific portfolio
+- portfolio management
+- crypto
+- view current asset positions in a portfolio
 slug: crypto-investment
 source_filename: crypto-investment.yaml
 source_heading: Capability Spec

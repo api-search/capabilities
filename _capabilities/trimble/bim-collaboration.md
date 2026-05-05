@@ -9,15 +9,15 @@ personas: []
 provider_name: Trimble
 provider_slug: trimble
 search_terms:
-- collaboration
-- agriculture
-- fleet management
 - gps
-- mapping
-- geospatial
-- construction
-- transportation
 - bim
+- geospatial
+- mapping
+- agriculture
+- transportation
+- construction
+- collaboration
+- fleet management
 slug: bim-collaboration
 source_filename: bim-collaboration.yaml
 source_heading: Capability Spec

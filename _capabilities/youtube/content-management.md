@@ -71,54 +71,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- youtube
-- video
-- list videos
-- update video
-- captions
-- delete a caption track
-- list caption tracks for a video
-- create playlist
-- content management
-- manage youtube playlists
-- create a new playlist
-- upload video
-- delete a video from youtube
-- remove a video from a playlist
-- delete caption
-- videos
-- update playlist details
-- upload caption
-- list youtube videos matching criteria
-- media
-- list videos matching criteria
-- remove playlist item
-- update playlist
-- update a caption track
-- manage video captions
-- google
-- list captions
-- delete a playlist
-- upload a new video to youtube
-- list youtube playlists
-- update caption
-- upload a new caption track
-- upload a caption track
-- list playlist items
 - social
-- delete playlist
-- playlists
-- manage youtube videos
-- list playlists
-- delete a video
-- manage items within playlists
+- remove playlist item
+- manage video captions
 - delete video
-- streaming
-- upload a new video
-- add playlist item
-- update video metadata
-- add a video to a playlist
+- delete a video
+- list youtube playlists
+- create a new playlist
+- videos
+- update caption
 - list items in a playlist
+- list youtube videos matching criteria
+- list captions
+- manage youtube playlists
+- upload video
+- upload caption
+- captions
+- upload a new video
+- google
+- upload a new caption track
+- streaming
+- update a caption track
+- list videos matching criteria
+- upload a caption track
+- update video metadata
+- remove a video from a playlist
+- media
+- list playlists
+- list videos
+- add a video to a playlist
+- delete a video from youtube
+- youtube
+- manage items within playlists
+- list playlist items
+- list caption tracks for a video
+- video
+- update video
+- update playlist details
+- delete playlist
+- update playlist
+- delete a playlist
+- add playlist item
+- content management
+- playlists
+- delete caption
+- manage youtube videos
+- create playlist
+- delete a caption track
+- upload a new video to youtube
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

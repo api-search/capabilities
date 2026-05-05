@@ -29,32 +29,32 @@ personas: []
 provider_name: The New York Times
 provider_slug: the-new-york-times
 search_terms:
-- books
 - new york times
-- research
-- nyt article archive by year and month.
-- search articles
-- publishing
-- retrieve all nyt articles published in a specific year and month, going back to 1851.
-- journalism
-- monitor the nyt newswire for recently published articles by section in real-time.
-- get all nyt articles for a specific year and month.
-- media
-- top stories from a specific nyt section.
 - get top stories from the specified nyt section.
 - news
-- news discovery
-- search nyt articles from 1851 to today using keywords, date ranges, and section filters.
-- movies
-- get articles by month
-- get top stories by section
-- search nyt articles by keyword, date range, and facets.
-- articles
 - get articles currently featured on a specific nyt section front page.
-- get recently published nyt articles in real-time.
-- get newswire content
+- research
+- get top stories by section
+- movies
 - search nyt articles using keywords, filters, and facets.
+- get all nyt articles for a specific year and month.
+- get recently published nyt articles in real-time.
+- monitor the nyt newswire for recently published articles by section in real-time.
+- nyt article archive by year and month.
+- publishing
+- news discovery
+- search articles
+- books
+- media
 - real-time nyt article stream.
+- get articles by month
+- articles
+- top stories from a specific nyt section.
+- retrieve all nyt articles published in a specific year and month, going back to 1851.
+- search nyt articles by keyword, date range, and facets.
+- search nyt articles from 1851 to today using keywords, date ranges, and section filters.
+- get newswire content
+- journalism
 slug: article-research
 source_filename: article-research.yaml
 source_heading: Capability Spec

@@ -37,38 +37,38 @@ personas: []
 provider_name: Tempo
 provider_slug: tempo
 search_terms:
-- grafana
-- query error rate
-- find traces with errors in a time window
-- discover all available trace attribute keys for building queries
-- monitoring
-- query metrics
-- tag value discovery
-- trace-based metrics
-- find traces exceeding a minimum duration threshold
-- generate time-series metrics from trace data
-- search for traces matching a traceql query (e.g. find slow requests, errors)
-- debugging
-- search traces with traceql query
-- list all tag keys present in trace data
-- list tag values
-- list all values for a trace attribute (e.g. all service names)
-- get a complete distributed trace by its trace id
 - trace search using traceql
+- get a complete distributed trace by its trace id
+- debugging
+- search traces
+- trace-based metrics
+- tag key discovery
+- grafana
+- list tag values
+- tag value discovery
+- retrieve a complete distributed trace to see all service calls and latencies
+- find traces exceeding a minimum duration threshold
+- observability
+- generate error rate metrics for a service over time
+- performance
 - opentelemetry
 - trace retrieval by id
-- get trace
+- query error rate
 - find slow traces
-- search traces
+- list all tag keys present in trace data
+- search for traces matching a traceql query (e.g. find slow requests, errors)
 - list distinct values for a tag key
-- tag key discovery
-- performance
-- find error traces
-- observability
 - distributed tracing
+- query metrics
+- list all values for a trace attribute (e.g. all service names)
+- discover all available trace attribute keys for building queries
+- monitoring
+- generate time-series metrics from trace data
+- find error traces
 - list tag keys
-- retrieve a complete distributed trace to see all service calls and latencies
-- generate error rate metrics for a service over time
+- find traces with errors in a time window
+- search traces with traceql query
+- get trace
 slug: distributed-tracing
 source_filename: distributed-tracing.yaml
 source_heading: Capability Spec

@@ -27,38 +27,38 @@ personas: []
 provider_name: Salesforce Einstein
 provider_slug: salesforce-einstein
 search_terms:
-- analyze the sentiment (positive/negative/neutral) of a text document.
-- computer vision
-- list einstein vision image datasets for the account.
-- analyze text sentiment.
+- classify image
+- classify an image using a trained einstein vision model.
+- predictive analytics
 - detect the intent expressed in a text document for customer service routing.
-- train a new einstein vision model on an image dataset.
+- salesforce einstein
+- list einstein vision image datasets for the account.
+- sentiment analysis.
+- computer vision
+- language analyze sentiment
 - list vision datasets
-- vision train model
-- sentiment analysis
+- vision training datasets.
+- natural language processing
+- artificial intelligence
+- analyze text sentiment.
 - list all vision datasets.
 - salesforce
-- classify an image using a trained model.
-- detect intent
-- natural language processing
-- vision list datasets
-- intent detection.
 - vision classify image
-- classify an image using a trained einstein vision model.
-- analyze sentiment
-- image classification predictions.
-- vision training datasets.
-- sentiment analysis.
-- artificial intelligence
-- image recognition
-- salesforce einstein
-- detect intent in text.
+- detect intent
+- train a new einstein vision model on an image dataset.
 - machine learning
-- language analyze sentiment
-- language detect intent
+- vision train model
 - crm
-- classify image
-- predictive analytics
+- vision list datasets
+- classify an image using a trained model.
+- language detect intent
+- image recognition
+- image classification predictions.
+- intent detection.
+- sentiment analysis
+- analyze the sentiment (positive/negative/neutral) of a text document.
+- analyze sentiment
+- detect intent in text.
 slug: ai-analytics
 source_filename: ai-analytics.yaml
 source_heading: Capability Spec

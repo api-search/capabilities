@@ -1,40 +1,51 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability paired with framework-wiki/Spec-Driven-Integration.md as the standalone read, freeing her from needing to schedule.
+description: A companion capability for AsyncAPI Service Discovery Integration (SDI) — pulls AsyncAPI documents from a registry and exposes channel browse + subscribe-test as agent tools.
 layout: capability
 name: Async Sdi Companion Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-services
+  path: /services
+- description: ''
+  method: GET
+  name: get-asyncapi-doc
+  path: /services/{{service_id}}/asyncapi.yaml
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- a capability paired with framework-wiki/spec-driven-integration.md as the standalone read, freeing her from needing to schedule.
-- api integration
+- sdi
 - spec-driven integration
+- list services
+- asyncapi
+- mcp
 - capabilities
-- example op
+- naftiko
+- api integration
 - governance
+- ai
+- get asyncapi doc
 slug: async-sdi-companion-capability
 source_filename: async-sdi-companion-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Async Sdi Companion Capability\n  description: A capability paired with framework-wiki/Spec-Driven-Integration.md as the standalone read, freeing her from needing to schedule.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: async-sdi-companion-capability-rest\n    description: REST API for Async Sdi Companion Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method:\
-  \ GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: async-sdi-companion-capability-mcp\n    description: MCP server exposing Async Sdi Companion Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability paired with framework-wiki/Spec-Driven-Integration.md as the standalone read, freeing her from needing to schedule.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: async-sdi-companion-capability-skills\n    description: Agent Skill bundle for Async Sdi Companion Capability.\n    skills:\n    - name: async-sdi-companion-capability\n      description: A capability paired with framework-wiki/Spec-Driven-Integration.md as the standalone read, freeing her from needing to schedule.\n      location: file:///opt/naftiko/skills/async-sdi-companion-capability\n      allowed-tools: example\n\
-  \      tools:\n      - name: example\n        description: A capability paired with framework-wiki/Spec-Driven-Integration.md as the standalone read, freeing her from needing to schedule.\n        from:\n          sourceNamespace: async-sdi-companion-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Async Sdi Companion Capability\n  description: A companion capability for AsyncAPI Service Discovery Integration (SDI) — pulls AsyncAPI documents from a registry and exposes channel browse + subscribe-test as agent tools.\n  tags: [Naftiko, AsyncAPI, SDI]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: asyncapi-env\n  description: AsyncAPI registry/host URL and token.\n  keys: {ASYNCAPI_HOST: ASYNCAPI_HOST, ASYNCAPI_TOKEN: ASYNCAPI_TOKEN}\ncapability:\n  consumes:\n  - namespace: asyncapi\n    type: http\n    baseUri: https://{{ASYNCAPI_HOST}}\n    authentication: {type: bearer, token: '{{ASYNCAPI_TOKEN}}'}\n    resources:\n    - {name: services, path: /sdi/services, operations: [{name: list-services, method: GET}]}\n    - name: service-asyncapi\n      path: /sdi/services/{{service_id}}/asyncapi.yaml\n      operations:\n      - {name: get-asyncapi-doc, method: GET, inputParameters: [{name: service_id, in: path}]}\n\
+  \  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: async-sdi-companion-capability-rest\n    description: REST surface for browsing AsyncAPI services.\n    resources:\n    - {name: services, path: /services, operations: [{method: GET, name: list-services, call: asyncapi.list-services}]}\n    - name: service-doc\n      path: /services/{{service_id}}/asyncapi.yaml\n      operations:\n      - method: GET\n        name: get-asyncapi-doc\n        inputParameters: [{name: service_id, in: path, type: string}]\n        call: asyncapi.get-asyncapi-doc\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: async-sdi-companion-capability-mcp\n    description: MCP for AsyncAPI SDI browsing.\n    tools:\n    - {name: list-services, hints: {readOnly: true}, call: asyncapi.list-services}\n    - name: get-asyncapi-doc\n      hints: {readOnly: true}\n      inputParameters: [{name: service_id, type: string, required: true}]\n      call: asyncapi.get-asyncapi-doc\n\
+  \  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: async-sdi-companion-capability-skills\n    description: Skill bundle for AsyncAPI SDI.\n    skills:\n    - name: async-sdi-companion-capability\n      description: AsyncAPI SDI browse companion.\n      location: file:///opt/naftiko/skills/async-sdi-companion-capability\n      allowed-tools: list-services,get-asyncapi-doc\n      tools:\n      - {name: list-services, from: {sourceNamespace: async-sdi-companion-capability-mcp, action: list-services}}\n      - {name: get-asyncapi-doc, from: {sourceNamespace: async-sdi-companion-capability-mcp, action: get-asyncapi-doc}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/async-sdi-companion-capability.yaml
 tags:
 - Naftiko
+- AsyncAPI
+- SDI
 tools:
-- description: A capability paired with framework-wiki/Spec-Driven-Integration.md as the standalone read, freeing her from needing to schedule.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-services
+- description: ''
+  hints:
+    readOnly: true
+  name: get-asyncapi-doc
 ---

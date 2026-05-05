@@ -37,34 +37,34 @@ personas: []
 provider_name: Yoast
 provider_slug: yoast
 search_terms:
-- get page with seo
-- list all wordpress pages with seo metadata
-- list pages with seo
-- wordpress posts with yoast seo data
-- list wordpress posts with their complete yoast seo metadata
-- list all wordpress posts with seo metadata
-- metadata
-- retrieve full seo metadata for any url including meta tags, schema.org, open graph, and twitter card data
-- wordpress pages with yoast seo data
-- schema
-- single post with seo data
 - yoast
+- single page with seo data
+- schema
 - wordpress
-- get post with seo
-- get seo head
-- list posts with seo
-- get a wordpress post with full seo metadata including canonical, robots, and structured data
-- get full seo head metadata for a url including schema.org, og, and twitter card
+- get page with seo
+- wordpress posts with yoast seo data
 - get a single wordpress page with full seo metadata
+- metadata
 - retrieve seo metadata for any url
-- content optimization
+- list all wordpress posts with seo metadata
+- list pages with seo
+- list wordpress pages with their complete yoast seo metadata
+- get a single wordpress post with full seo metadata
+- list posts with seo
+- get full seo head metadata for a url including schema.org, og, and twitter card
 - get a wordpress page with full seo metadata including canonical, robots, and structured data
+- retrieve full seo metadata for any url including meta tags, schema.org, open graph, and twitter card data
+- list all wordpress pages with seo metadata
 - seo
 - content audit
+- get a wordpress post with full seo metadata including canonical, robots, and structured data
+- get seo head
+- wordpress pages with yoast seo data
+- list wordpress posts with their complete yoast seo metadata
 - headless cms
-- get a single wordpress post with full seo metadata
-- list wordpress pages with their complete yoast seo metadata
-- single page with seo data
+- content optimization
+- single post with seo data
+- get post with seo
 slug: seo-metadata
 source_filename: seo-metadata.yaml
 source_heading: Capability Spec

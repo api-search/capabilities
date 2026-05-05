@@ -54,59 +54,59 @@ personas: []
 provider_name: Spinnaker
 provider_slug: spinnaker
 search_terms:
-- search resources
-- invoke pipeline
-- pipeline execution control
-- list pipeline executions
-- pause a running pipeline
-- cluster management
-- cancel a pipeline execution
-- list applications
-- pipelines
-- list all pipeline configurations for a spinnaker application
-- list all clusters for a spinnaker application across cloud accounts
-- resource search
-- list pipeline configs
-- get application configuration and cluster summary
-- continuous delivery
-- resume a pipeline execution
-- pipeline execution history
-- pause a running pipeline execution — it can be resumed later
-- deployments
-- pause a pipeline execution
-- pause pipeline
-- list load balancers
-- get configuration and cluster summary for a spinnaker application
-- list recent pipeline executions
-- load balancer management
-- get full status, stage details, and outputs of a specific pipeline execution
-- application management
-- search
-- get pipeline execution
 - get application
-- list all spinnaker applications
-- get pipeline execution status and stage details
-- cancel a running pipeline
-- resume a paused pipeline
-- trigger a spinnaker pipeline execution by application and pipeline name
-- search across all spinnaker-managed resources by keyword and optional type
-- cancel pipeline
-- cloud infrastructure
-- multi-cloud
-- list load balancers associated with a spinnaker application
-- resume pipeline
-- list load balancers for an application
-- search spinnaker resources
-- resume a paused pipeline execution
-- containers
-- cancel a running pipeline execution
-- application details
+- get application configuration and cluster summary
+- list pipeline executions
 - list clusters for an application
-- spinnaker
-- list recent pipeline execution history with status for an application
-- list clusters
-- trigger a pipeline by name
+- containers
+- cloud infrastructure
+- get pipeline execution status and stage details
+- resume pipeline
+- multi-cloud
+- pipeline execution history
+- pause pipeline
+- get full status, stage details, and outputs of a specific pipeline execution
+- cancel a running pipeline
+- cluster management
+- continuous delivery
+- invoke pipeline
+- list load balancers
+- pipelines
+- list pipeline configs
+- list load balancers for an application
+- search across all spinnaker-managed resources by keyword and optional type
+- pause a pipeline execution
+- load balancer management
+- cancel a running pipeline execution
+- deployments
 - devops
+- application management
+- cancel pipeline
+- resource search
+- list all spinnaker applications
+- resume a paused pipeline
+- spinnaker
+- list applications
+- list recent pipeline executions
+- pipeline execution control
+- get configuration and cluster summary for a spinnaker application
+- list all pipeline configurations for a spinnaker application
+- get pipeline execution
+- search
+- trigger a spinnaker pipeline execution by application and pipeline name
+- list load balancers associated with a spinnaker application
+- search resources
+- resume a pipeline execution
+- list all clusters for a spinnaker application across cloud accounts
+- list clusters
+- pause a running pipeline execution — it can be resumed later
+- list recent pipeline execution history with status for an application
+- pause a running pipeline
+- cancel a pipeline execution
+- trigger a pipeline by name
+- resume a paused pipeline execution
+- search spinnaker resources
+- application details
 slug: continuous-delivery
 source_filename: continuous-delivery.yaml
 source_heading: Capability Spec

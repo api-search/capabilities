@@ -61,63 +61,63 @@ personas: []
 provider_name: The Movie Database
 provider_slug: the-movie-database
 search_terms:
-- get movie recommendations
+- search movies by title with optional year filter.
+- get popular movies
 - search all media
-- entertainment
+- search for movies by title with optional year and language filters.
 - get complete movie details by tmdb id.
-- movie recommendations.
-- get trending
+- get trending movies, tv series, or people for today or this week.
+- discover movies by genre
+- get top rated movies on tmdb.
+- search tv
 - get tv details
+- get profile for an actor or crew member.
+- discover movies filtered by genre, minimum rating, sort order, and release year.
+- movies
+- search for movies by title.
+- get movie recommendations
+- detailed tv series information.
+- movie recommendations.
+- search movies
+- get movie details
+- search multi
+- get the cast and crew for a tv series.
+- get the cast and crew for a movie.
+- get full details for a tv series including seasons, networks, and episode counts.
+- get movie credits
+- streaming
+- discover movies
+- get profile, biography, and filmography for an actor, director, or crew member.
+- discover movies by genre and other filters.
+- get currently popular movies.
+- entertainment
+- get trending content
+- television
+- get tv credits
+- search movies, tv series, and people simultaneously.
+- popular movies list.
+- cross-media search across movies, tv, and people.
+- person profile information.
+- trending content for the day or week.
+- get trending
+- detailed movie information.
+- get a list of currently popular movies on tmdb.
 - get top rated movies
 - get person profile
-- search tv
-- get the cast and crew for a tv series.
-- get trending movies, tv series, or people for today or this week.
-- get profile, biography, and filmography for an actor, director, or crew member.
-- discover movies by genre
-- detailed tv series information.
-- search for tv series.
-- get full details for a tv series including seasons, networks, and episode counts.
-- get top rated movies on tmdb.
-- search movies
-- discover movies filtered by genre, minimum rating, sort order, and release year.
-- top-rated movies list.
-- trending content for the day or week.
-- get tv credits
-- cross-media search across movies, tv, and people.
 - get recommendations based on a movie.
-- get recommended movies based on a seed movie.
-- search for movies by title with optional year and language filters.
+- search tv series
+- get trending movies, tv, and people.
+- get complete tv series details by tmdb id.
+- get person details
+- get full movie details including genres, production companies, budget, revenue, and ratings.
+- search across movies, tv series, and people simultaneously with a single query.
+- discover movies using genre, rating, and release year filters.
+- people
 - search tv series by title.
 - search for tv series by title.
-- get the cast and crew for a movie.
-- get full movie details including genres, production companies, budget, revenue, and ratings.
-- get person details
-- movies
-- person profile information.
-- get popular movies
-- get profile for an actor or crew member.
-- get a list of currently popular movies on tmdb.
-- detailed movie information.
-- television
-- search across movies, tv series, and people simultaneously with a single query.
-- search movies, tv series, and people simultaneously.
-- search for movies by title.
-- get movie details
-- popular movies list.
-- get complete tv series details by tmdb id.
-- streaming
-- get trending movies, tv, and people.
-- search movies by title with optional year filter.
-- get trending content
-- search multi
-- people
-- discover movies
-- get currently popular movies.
-- discover movies using genre, rating, and release year filters.
-- discover movies by genre and other filters.
-- search tv series
-- get movie credits
+- get recommended movies based on a seed movie.
+- search for tv series.
+- top-rated movies list.
 slug: entertainment-discovery
 source_filename: entertainment-discovery.yaml
 source_heading: Capability Spec

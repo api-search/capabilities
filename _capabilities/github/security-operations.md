@@ -59,75 +59,75 @@ personas: []
 provider_name: GitHub
 provider_slug: github
 search_terms:
-- update a dependabot alert (dismiss, reopen)
-- getCodeScanningAlert
-- updateDependabotAlert
-- upload sarif analysis data
-- github
-- list dependabot alerts
-- update a secret scanning alert (resolve, reopen)
-- code
-- t1
-- security
-- get code scanning analysis
-- pipelines
-- update code scanning alert
-- upload sarif
-- list code scanning alerts
-- check vulnerability alert status
-- get secret scanning alert
-- listCodeScanningAlertsForRepository
-- check vulnerability alerts
-- dependabot
-- update a code scanning alert
-- update a dependabot alert
-- listCodeScanningAnalysesForRepository
-- listSecretScanningAlertsForRepository
-- list code scanning analyses
-- software development
-- individual secret scanning alert
-- update a code scanning alert (dismiss, reopen)
-- individual dependabot alert
-- get code scanning default setup configuration
-- getDependabotAlert
-- enableVulnerabilityAlerts
-- enable vulnerability alerts
-- get a secret scanning alert
-- secret scanning alert management
-- updateSecretScanningAlert
-- get default setup
-- disable vulnerability alerts
-- get a code scanning analysis
-- secret scanning
-- update code scanning default setup
-- list secret scanning alerts
-- update a secret scanning alert
-- update secret scanning alert
-- list code scanning alerts for a repository
-- updateCodeScanningAlert
-- list locations for a secret scanning alert
-- get a dependabot alert
-- get a code scanning alert
-- check if vulnerability alerts are enabled
-- update default setup
-- list dependabot secrets
-- listDependabotAlertsForRepository
-- code scanning alert management
-- individual code scanning alert
 - platform
-- vulnerability management
-- code scanning
-- vulnerability alert settings
+- update a code scanning alert
+- check vulnerability alerts
+- list code scanning alerts for a repository
+- upload sarif
 - checkIfVulnerabilityAlertsAreEnabledForRepository
+- security
+- get a code scanning analysis
+- update a secret scanning alert
 - get dependabot alert
-- list secret scanning locations
-- get code scanning alert
-- code scanning analyses
-- dependabot alert management
-- update dependabot alert
+- individual dependabot alert
+- update secret scanning alert
+- code scanning
+- list dependabot alerts
 - source control
+- list secret scanning alerts
+- update a secret scanning alert (resolve, reopen)
+- listCodeScanningAnalysesForRepository
+- update code scanning default setup
+- get code scanning default setup configuration
+- update default setup
+- pipelines
+- update a dependabot alert
+- list secret scanning locations
+- code scanning alert management
+- list locations for a secret scanning alert
+- t1
+- get a dependabot alert
+- upload sarif analysis data
+- secret scanning alert management
+- individual secret scanning alert
+- github
+- getDependabotAlert
 - getSecretScanningAlert
+- code
+- secret scanning
+- check if vulnerability alerts are enabled
 - list analyses
+- dependabot alert management
+- list code scanning analyses
+- vulnerability management
+- disable vulnerability alerts
+- listDependabotAlertsForRepository
+- getCodeScanningAlert
+- get a code scanning alert
+- code scanning analyses
+- vulnerability alert settings
+- listSecretScanningAlertsForRepository
+- check vulnerability alert status
+- update a code scanning alert (dismiss, reopen)
+- update code scanning alert
+- get code scanning analysis
+- software development
+- enable vulnerability alerts
+- get secret scanning alert
+- get default setup
+- list code scanning alerts
+- updateCodeScanningAlert
+- update a dependabot alert (dismiss, reopen)
+- updateSecretScanningAlert
+- enableVulnerabilityAlerts
+- update dependabot alert
+- listCodeScanningAlertsForRepository
+- get a secret scanning alert
+- updateDependabotAlert
+- list dependabot secrets
+- dependabot
+- individual code scanning alert
+- get code scanning alert
 slug: security-operations
 source_filename: security-operations.yaml
 source_heading: Capability Spec

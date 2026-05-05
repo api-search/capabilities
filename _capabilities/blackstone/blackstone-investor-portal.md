@@ -11,8 +11,8 @@ provider_slug: blackstone
 search_terms:
 - private equity
 - finance
-- alternative assets
 - investment management
+- alternative assets
 - real estate
 slug: blackstone-investor-portal
 source_filename: blackstone-investor-portal.yaml

@@ -57,52 +57,52 @@ personas: []
 provider_name: Sorry
 provider_slug: sorry
 search_terms:
-- list notices
-- add subscriber
-- create a new status page
-- publish incident update
-- list all components for a status page. use to identify affected components before creating incident notices.
-- create notice
-- list subscribers
-- publish a new status update to an existing incident notice. use to keep customers informed as the incident investigation progresses.
-- list status pages
-- monitoring
-- add a component to a status page
-- add a new subscriber to receive status page notifications via email or sms.
-- list notice updates
-- publish an update to an active incident notice
-- list all notices for a status page
-- list all status pages in the account
-- list all status pages in the sorry account. use to find page ids for subsequent operations during incident response.
-- component management
-- incident and maintenance notices
-- create an incident notice on a status page to notify customers of an unplanned outage or service degradation. use for incident declaration.
-- customer communication
-- add a subscriber to a status page
-- incident status updates
-- create incident notice
-- list pages
 - subscriber management
-- incident management
-- developer tools
-- list all updates for a notice
-- list all subscribers for a status page
-- create page
-- create component
-- create subscriber
-- list subscribers for a status page. use to understand notification reach before publishing a major incident notice.
+- component management
 - create notice update
-- list all notices for a status page. use to find active incidents or review recent maintenance windows.
+- incident management
+- list all status pages in the account
+- create incident notice
+- incident status updates
+- create component
 - create an incident or maintenance notice
-- update incident state
-- sorry
-- devops
-- list components
 - status pages
-- notifications
+- list status pages
+- list all updates for a notice
+- publish an update to an active incident notice
+- list subscribers for a status page. use to understand notification reach before publishing a major incident notice.
+- create a new status page
+- list all subscribers for a status page
+- developer tools
+- list all components for a status page. use to identify affected components before creating incident notices.
+- add subscriber
+- update incident state
+- publish a new status update to an existing incident notice. use to keep customers informed as the incident investigation progresses.
+- devops
+- list subscribers
+- customer communication
 - status page management
-- list components for a status page
+- create notice
+- publish incident update
+- add a new subscriber to receive status page notifications via email or sms.
+- notifications
+- add a component to a status page
+- create page
+- create an incident notice on a status page to notify customers of an unplanned outage or service degradation. use for incident declaration.
+- sorry
+- list notices
+- create subscriber
+- monitoring
+- list notice updates
+- list all notices for a status page. use to find active incidents or review recent maintenance windows.
 - update the state or details of an existing incident notice. use to progress an incident through monitoring, resolved, or completed states.
+- add a subscriber to a status page
+- list all status pages in the sorry account. use to find page ids for subsequent operations during incident response.
+- list all notices for a status page
+- incident and maintenance notices
+- list pages
+- list components for a status page
+- list components
 slug: incident-communications
 source_filename: incident-communications.yaml
 source_heading: Capability Spec

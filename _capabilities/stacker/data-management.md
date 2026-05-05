@@ -42,42 +42,42 @@ personas: []
 provider_name: Stacker
 provider_slug: stacker
 search_terms:
-- update record fields
-- bulk record operations
-- list objects
-- create or update up to 1000 records
-- delete a record
-- create record
-- list all objects for a given stack
-- permanently delete a stacker record
-- low-code
-- search records
-- list all accounts accessible by the integration key
-- get a single stacker record by sid
-- application development
-- stacker accounts
-- search and filter records
-- delete record
-- bulk upsert records
-- get a record by sid
-- create a new record in a stacker object
-- update record
-- update one or more fields on an existing stacker record
-- list accounts
-- create a new record
-- single record operations
-- data management
-- create or update up to 1000 stacker records in a single operation
-- records
-- search, filter, and paginate records within a stacker object
-- records within a stacker object
 - list all objects (tables) in a stacker application stack
-- get record
-- workflow automation
-- no-code
-- portals
+- low-code
+- create a new record
+- search, filter, and paginate records within a stacker object
+- single record operations
+- list accounts
+- records
+- records within a stacker object
+- create or update up to 1000 stacker records in a single operation
 - objects (tables) in a stacker stack
+- list all objects for a given stack
+- search and filter records
+- get a single stacker record by sid
+- search records
+- portals
+- permanently delete a stacker record
+- stacker accounts
+- get a record by sid
+- update record
+- bulk record operations
+- bulk upsert records
+- update one or more fields on an existing stacker record
+- no-code
+- list all accounts accessible by the integration key
+- data management
+- delete record
+- create record
+- create a new record in a stacker object
+- create or update up to 1000 records
+- application development
 - list all stacker accounts accessible via the integration key
+- get record
+- delete a record
+- list objects
+- workflow automation
+- update record fields
 slug: data-management
 source_filename: data-management.yaml
 source_heading: Capability Spec

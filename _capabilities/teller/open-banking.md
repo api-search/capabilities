@@ -49,48 +49,48 @@ personas: []
 provider_name: Teller
 provider_slug: teller
 search_terms:
-- account holder identity and ownership information
-- list supported institutions
-- accounts
-- teller
-- get routing number and account number
-- list all supported banks and credit unions
-- list bank accounts with beneficial owner identity information
-- get a bank account by id
-- list transactions with optional date filtering and pagination
-- list transactions
-- open banking
-- unified api
-- banking
-- get details for a specific bank account
-- get a transaction by id
-- get account
-- bank accounts accessible via the current enrollment
-- identity verification
-- single transaction record
-- get account balances
-- transactions
-- get account details
-- get transaction
-- list accounts
-- list transactions for a bank account with date range filtering
-- list identity
-- supported financial institutions
-- get available and ledger balances
-- financial data
-- list all authorized bank accounts
-- list all bank accounts authorized in the current teller enrollment
-- get routing number and full account number for a bank account
-- transaction history for a bank account
-- get a specific transaction record by id
 - sensitive account number and routing details
-- list institutions
+- single transaction record
+- list all authorized bank accounts
+- get account
+- get account details
 - fintech
-- single bank account resource
-- list accounts with beneficial owner identity information
-- real-time account balance data
-- list all us financial institutions supported by teller
+- list accounts
+- list all bank accounts authorized in the current teller enrollment
+- get transaction
+- list institutions
+- open banking
+- get routing number and full account number for a bank account
+- get a transaction by id
 - get real-time available and ledger balances for a bank account
+- list all us financial institutions supported by teller
+- transaction history for a bank account
+- get a bank account by id
+- financial data
+- accounts
+- list identity
+- real-time account balance data
+- get a specific transaction record by id
+- list all supported banks and credit unions
+- list transactions with optional date filtering and pagination
+- list accounts with beneficial owner identity information
+- list bank accounts with beneficial owner identity information
+- single bank account resource
+- bank accounts accessible via the current enrollment
+- account holder identity and ownership information
+- teller
+- list supported institutions
+- banking
+- supported financial institutions
+- list transactions
+- unified api
+- get routing number and account number
+- list transactions for a bank account with date range filtering
+- get available and ledger balances
+- get details for a specific bank account
+- transactions
+- get account balances
+- identity verification
 slug: open-banking
 source_filename: open-banking.yaml
 source_heading: Capability Spec

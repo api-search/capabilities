@@ -44,78 +44,78 @@ personas: []
 provider_name: UiPath
 provider_slug: uipath
 search_terms:
-- automation idea pipeline management
-- Document Processing Specialist
-- configures and manages document understanding models and extraction pipelines
-- automation
-- test project management
-- query audit log events
 - center of excellence
-- create user
-- query audit events
-- list automation ideas
-- manage automation pipeline, users, licenses, and quality
-- ocr, classify, and extract data from documents
-- Automation Operator
-- licensing
-- develops and deploys automation workflows using uipath studio and python sdk
-- submit a new automation idea to the automation hub pipeline
-- manages users, groups, licenses, and organizational settings
-- manage robots, jobs, queues, and assets in orchestrator
+- test project management
+- get license allocation
+- list test execution history for quality reporting
+- create test case
+- oversees the automation program pipeline, prioritization, and roi tracking
+- robotic process automation
 - list automation ideas in the automation hub pipeline
+- monitors and manages running automations, robots, queues, and alerts
+- create user
+- get user
+- submit a new automation idea
+- uipath
+- get details of an organization user
+- Platform Administrator
 - automation governance
-- RPA Developer
-- list automation ideas in the pipeline
-- create automation idea
+- manage automation pipeline, users, licenses, and quality
+- Document Processing Specialist
+- core rpa automation lifecycle from development to execution
 - QA Engineer
+- automation
 - get the overall automation pipeline status and metrics
-- test management and automated quality verification
+- list test projects for qa governance
+- document processing
 - platform administration
+- platform user management
+- creates and manages test projects, test cases, and execution reports
+- ocr, classify, and extract data from documents
+- list organization groups
+- manage robots, jobs, queues, and assets in orchestrator
+- enterprise automation
+- artificial intelligence
+- create a new user in the uipath organization
+- list test executions
+- get automation pipeline
+- list test projects
+- RPA Developer
+- create automation idea
+- orchestration
+- query organization audit log for compliance and governance
+- platform configuration including users, groups, and licenses
+- list automation ideas
+- create a platform user
+- licensing
+- query audit log events
+- test execution results
+- automation pipeline overview
+- develops and deploys automation workflows using uipath studio and python sdk
+- configures and manages document understanding models and extraction pipelines
+- testing
+- day-to-day monitoring and management of running automations
+- rpa
+- quality assurance
+- automation idea pipeline management
+- platform group management
+- CoE Manager
+- manages users, groups, licenses, and organizational settings
+- submit a new automation idea to the automation hub pipeline
+- test management and automated quality verification
+- Automation Operator
+- intelligent processing of structured and unstructured documents
+- organization audit log
+- list organization groups and memberships
+- get pipeline
+- get automation pipeline status
+- oversight of the automation program including pipeline, compliance, and quality
 - create a new test case in a test project
 - list automations
-- get user
-- list organization groups and memberships
-- Platform Administrator
-- list test execution history for quality reporting
-- platform group management
-- get pipeline
-- list test projects
-- list test executions
-- get license allocation for an organization group
-- creates and manages test projects, test cases, and execution reports
-- create a platform user
-- create a new user in the uipath organization
-- submit a new automation idea
-- organization audit log
-- platform user management
-- get automation pipeline
-- intelligent processing of structured and unstructured documents
-- artificial intelligence
-- robotic process automation
-- automation pipeline overview
-- test execution results
-- uipath
-- list organization groups
-- create test case
-- quality assurance
-- oversees the automation program pipeline, prioritization, and roi tracking
-- day-to-day monitoring and management of running automations
-- CoE Manager
-- platform configuration including users, groups, and licenses
-- query organization audit log for compliance and governance
+- list automation ideas in the pipeline
+- query audit events
 - list groups
-- monitors and manages running automations, robots, queues, and alerts
-- enterprise automation
-- get details of an organization user
-- get automation pipeline status
-- orchestration
-- list test projects for qa governance
-- oversight of the automation program including pipeline, compliance, and quality
-- get license allocation
-- core rpa automation lifecycle from development to execution
-- testing
-- rpa
-- document processing
+- get license allocation for an organization group
 slug: automation-governance
 source_filename: automation-governance.yaml
 source_heading: Capability Spec

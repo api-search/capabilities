@@ -22,26 +22,26 @@ personas: []
 provider_name: StackOne
 provider_slug: stackone
 search_terms:
+- ipaas
+- create a new contact
+- crm contacts
+- create contact
 - marketing
 - list contacts from the connected crm system (salesforce, hubspot, etc.)
-- proxy a custom request to any connected provider api
-- crm contacts
-- integrations
-- proxy request
-- campaigns
-- create a new contact
-- marketing campaigns
-- create a new contact in the connected crm system
-- customer engagement
-- unified api
-- list marketing campaigns from the connected platform (mailchimp, braze, etc.)
-- list marketing campaigns
-- create contact
-- ipaas
-- list contacts
-- list crm contacts
-- crm
 - list campaigns
+- campaigns
+- customer engagement
+- marketing campaigns
+- list crm contacts
+- integrations
+- unified api
+- list marketing campaigns
+- list contacts
+- crm
+- proxy request
+- create a new contact in the connected crm system
+- list marketing campaigns from the connected platform (mailchimp, braze, etc.)
+- proxy a custom request to any connected provider api
 slug: customer-engagement
 source_filename: customer-engagement.yaml
 source_heading: Capability Spec

@@ -49,50 +49,50 @@ personas: []
 provider_name: VKS Integrations
 provider_slug: vks-integrations
 search_terms:
-- list all published vks guidebooks (work instruction manuals). search by name to find instructions for a specific assembly or process.
-- push a new work order from erp or mes into vks. link it to a guidebook by id, and include part number and expected production quantity.
-- individual work order.
-- list operational steps for a work order.
-- list work instructions
-- operations management
-- list operations
-- manufacturing
-- update work order
-- retrieve production data, smart form responses, and traceability records.
-- production data
-- get work order
-- get work order details.
-- work instruction guidebooks.
-- list work orders
-- erp integration
-- update work order status
-- get production data
-- retrieve production data records for quality management and traceability. includes smart form responses, actual quantities, worker ids, and completion times.
-- production data and quality records.
-- list manufacturing work orders. filter by status (planned, in_progress, completed, on_hold) to find active or completed orders.
-- individual guidebook.
-- get guidebook
-- list all work orders, optionally filtered by status.
-- get guidebook with step-by-step instructions.
-- quality management
-- create a new work order from an erp or mes system.
-- list production data
-- list operation steps
-- get full details for a manufacturing work order including status, assigned worker, quantities, and timestamps.
-- work instructions
 - list all published guidebooks.
-- update the status of a work order (planned → in_progress → completed) or reassign it to a different worker.
-- create work order
-- list the operational steps for a work order and their completion status.
-- list guidebooks
-- manufacturing work order management.
+- create a new work order from an erp or mes system.
+- individual guidebook.
 - work orders
-- get a vks guidebook with its complete step-by-step work instructions, smart forms, and media attachments.
-- vks
-- get work instructions
+- quality management
+- production data and quality records.
+- list the operational steps for a work order and their completion status.
+- get full details for a manufacturing work order including status, assigned worker, quantities, and timestamps.
 - mes
-- update work order status or assignment.
+- get production data
+- get guidebook with step-by-step instructions.
+- individual work order.
+- work instruction guidebooks.
+- update work order status
+- list production data
+- create work order
+- vks
+- retrieve production data records for quality management and traceability. includes smart form responses, actual quantities, worker ids, and completion times.
+- list operational steps for a work order.
 - work order operational steps.
+- list operations
+- get work order details.
+- get guidebook
+- get work order
+- work instructions
+- manufacturing work order management.
+- list all published vks guidebooks (work instruction manuals). search by name to find instructions for a specific assembly or process.
+- update work order status or assignment.
+- list guidebooks
+- list operation steps
+- manufacturing
+- operations management
+- production data
+- retrieve production data, smart form responses, and traceability records.
+- list work instructions
+- get work instructions
+- list all work orders, optionally filtered by status.
+- list manufacturing work orders. filter by status (planned, in_progress, completed, on_hold) to find active or completed orders.
+- erp integration
+- update the status of a work order (planned → in_progress → completed) or reassign it to a different worker.
+- update work order
+- push a new work order from erp or mes into vks. link it to a guidebook by id, and include part number and expected production quantity.
+- get a vks guidebook with its complete step-by-step work instructions, smart forms, and media attachments.
+- list work orders
 slug: manufacturing-operations
 source_filename: manufacturing-operations.yaml
 source_heading: Capability Spec

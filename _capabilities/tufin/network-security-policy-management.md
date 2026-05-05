@@ -51,71 +51,71 @@ personas: []
 provider_name: Tufin
 provider_slug: tufin
 search_terms:
-- firewall management
-- security policy change tickets
-- get details for a specific security change ticket
-- get device rules
-- update a workflow task
-- get risk analysis findings
-- check path
-- tufin
-- policy orchestration
-- get ticket
-- check if traffic is allowed between source and destination ip addresses
-- list change tickets
-- get risk findings
-- check network path
-- list security change tickets
-- check if traffic is allowed between network endpoints
-- firewall rules for a network device
-- create change ticket
-- get change ticket
-- zero trust
-- search network objects
-- create ticket
-- single security change ticket
 - approve change task
-- network security
+- check path
+- risk analysis and policy compliance findings
+- list all network devices (firewalls) managed by tufin securetrack
+- get tickets
+- check network path
+- list all network devices in securetrack
+- search network objects
+- create change ticket
+- get details for a specific security change ticket
+- submit a security change request
+- cloud security
+- submit a new firewall rule change request to securechange workflow
+- firewall rules for a network device
+- update task
+- risk management
+- update a workflow task
+- get risk
+- get change ticket
+- list security policy change tickets in securechange
+- create ticket
+- list devices
+- get firewall rules for a device
+- search for network objects (ips, ranges, groups) across all managed devices
+- tufin
+- get risk analysis findings
+- get a specific change ticket
+- check if traffic is allowed between network endpoints
+- get firewall rules for a specific network device
+- check if traffic is allowed between source and destination ip addresses
+- get ticket tasks
+- network topology path analysis
+- approve or update a workflow task in a security change ticket
+- list security change tickets
+- get devices
+- get ticket
 - search services
-- get workflow tasks for a change ticket
-- network devices managed by securetrack
-- search objects
+- get risk findings
+- single security change ticket
+- list device revisions
+- search for network objects
+- network security
+- zero trust
+- security policy management
+- get device rules
 - change management
+- search for service definitions across managed devices
+- list change tickets
+- network devices managed by securetrack
+- firewall management
+- get task
+- compliance
+- get topology map
+- get workflow tasks for a change ticket
 - get security risk analysis findings including policy violations and unused rules
 - get policy revision history for a network device
-- list device revisions
-- network topology path analysis
-- risk management
-- list devices
-- risk analysis and policy compliance findings
-- approve or update a workflow task in a security change ticket
-- get a specific change ticket
-- get a workflow task
-- get firewall rules for a device
 - workflow task in a change ticket
-- get firewall rules for a specific network device
-- update task
-- get ticket tasks
-- retrieve the full network topology map from securetrack
-- list all network devices (firewalls) managed by tufin securetrack
-- compliance
-- list all network devices in securetrack
-- search for network objects
-- get task
-- list security policy change tickets in securechange
-- cloud security
+- policy orchestration
 - network topology
-- get topology map
-- submit a new firewall rule change request to securechange workflow
-- security policy management
-- network objects across managed devices
+- search objects
 - workflow automation
-- get risk
-- get devices
-- search for network objects (ips, ranges, groups) across all managed devices
-- search for service definitions across managed devices
-- get tickets
-- submit a security change request
+- security policy change tickets
+- retrieve the full network topology map from securetrack
+- get a workflow task
+- network objects across managed devices
 slug: network-security-policy-management
 source_filename: network-security-policy-management.yaml
 source_heading: Capability Spec

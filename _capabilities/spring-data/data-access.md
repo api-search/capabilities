@@ -41,46 +41,46 @@ personas: []
 provider_name: Spring Data
 provider_slug: spring-data
 search_terms:
-- create a new entity in the repository
-- run a repository-defined query
-- framework
-- java
 - list entities
-- create a new entity in a spring data repository
-- get entity
-- create entity
-- list resources with pagination and sorting
-- delete resource
-- access individual repository entities
-- search repository
-- discover all spring data rest repositories available in the running application
-- execute repository query methods
-- list resources
-- delete an entity from a spring data repository by id
-- execute a custom query method on a spring data repository
-- database
-- spring
-- discover repositories
-- retrieve a specific entity from a repository by its id
-- delete entity
-- data access
-- access a repository collection
-- mongodb
-- orm
-- list all exported repositories in the application
-- hateoas
 - redis
-- discover all available spring data rest repositories
-- retrieve a specific entity by id
+- orm
 - rest
-- search entities
-- jpa
-- create resource
+- create a new entity in a spring data repository
+- framework
+- retrieve a specific entity by id
+- get entity
+- data access
+- hateoas
+- access individual repository entities
 - delete an entity from the repository
-- list repositories
-- list entities from a spring data repository with pagination and sorting
-- hypermedia
+- search entities
+- create entity
+- access a repository collection
+- list resources with pagination and sorting
 - get resource
+- delete resource
+- run a repository-defined query
+- delete entity
+- database
+- create resource
+- execute repository query methods
+- discover repositories
+- list entities from a spring data repository with pagination and sorting
+- delete an entity from a spring data repository by id
+- hypermedia
+- list repositories
+- create a new entity in the repository
+- mongodb
+- list resources
+- discover all spring data rest repositories available in the running application
+- list all exported repositories in the application
+- search repository
+- execute a custom query method on a spring data repository
+- spring
+- retrieve a specific entity from a repository by its id
+- jpa
+- discover all available spring data rest repositories
+- java
 slug: data-access
 source_filename: data-access.yaml
 source_heading: Capability Spec

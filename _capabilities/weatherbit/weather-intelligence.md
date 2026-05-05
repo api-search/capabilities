@@ -46,56 +46,56 @@ personas: []
 provider_name: Weatherbit
 provider_slug: weatherbit
 search_terms:
+- get air quality forecast
+- hourly weather forecasts
+- get daily forecast
+- get 240-hour hourly weather forecast
+- get current airquality
+- get climate normals
+- get energy forecast
+- get alerts
+- get agricultural weather forecast
+- get 16-day daily weather forecast
+- historical weather observations
+- get agweather forecast
+- get current air quality including pollutants and aqi
+- get hourly air quality forecast
+- get historical daily weather observations
+- daily weather forecasts
+- agricultural weather data
+- get severe weather alerts for a location
+- forecasting
+- air quality forecasts
+- historical climate normals
+- get agricultural weather forecast for farming applications
+- alerts
 - get history daily
+- agricultural
+- get historical climate normals and averages
 - get current air quality conditions
+- get historical daily observations
+- get current air quality
+- current weather conditions
+- severe weather alerts
+- get energy weather forecast with degree days
+- get agricultural weather
 - get severe alerts
 - get normals
-- get current air quality including pollutants and aqi
-- agricultural
-- get agweather forecast
-- agricultural weather data
-- get 240-hour hourly weather forecast
-- get air quality forecast
-- get current weather conditions for any location
-- historical weather observations
-- alerts
-- hourly weather forecasts
-- get energy forecast
-- get historical daily observations
-- get 16-day daily weather forecast
-- air quality
-- severe weather alerts
-- get historical daily weather observations
-- get hourly weather forecast
-- get alerts
-- get severe weather alerts for a location
-- historical climate normals
-- get current air quality
-- get climate normals
 - get current weather
-- daily weather forecasts
-- get historical climate normals and averages
-- get climate normals for a location
-- current weather conditions
-- get energy weather forecast with degree days
-- get daily forecast
-- get agricultural weather forecast for farming applications
-- current air quality
-- get airquality forecast
-- get hourly air quality forecast
-- get historical weather
-- get current weather for a location
-- get daily weather forecast
-- historical data
-- air quality forecasts
-- get agricultural weather
-- forecasting
-- get current airquality
-- get agricultural weather forecast
-- agricultural weather
-- weather
+- get hourly weather forecast
+- air quality
 - get hourly forecast
+- get historical weather
+- get airquality forecast
 - get 72-hour air quality forecast
+- get current weather conditions for any location
+- agricultural weather
+- historical data
+- get current weather for a location
+- current air quality
+- get climate normals for a location
+- weather
+- get daily weather forecast
 slug: weather-intelligence
 source_filename: weather-intelligence.yaml
 source_heading: Capability Spec

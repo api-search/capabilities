@@ -1,40 +1,49 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability over the BLPAPI / Data License surface with billing-granularity + sensitivity tags on Consumes — the customer-facing shape for an external -customer agent build.
+description: A capability over BLPAPI Data License that tags every read with billing metadata so per-team attribution is automatic.
 layout: capability
 name: Blpapi Data License Billing Tagged Capability
 operations:
-- description: ''
-  method: GET
-  name: example-op
-  path: /example
+- description: Submit a billing-tagged BLPAPI request.
+  method: POST
+  name: query-tagged
+  path: /query
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- get response
+- spec-driven integration
+- query tagged
 - mcp
-- ai
+- billing
+- capabilities
+- bloomberg
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a capability over the blpapi / data license surface with billing-granularity + sensitivity tags on consumes — the customer-facing shape for an external -customer agent build.
-- example op
+- blpapi
 - governance
+- ai
+- submit a billing-tagged blpapi request.
 slug: blpapi-data-license-billing-tagged-capability
 source_filename: blpapi-data-license-billing-tagged-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Blpapi Data License Billing Tagged Capability\n  description: A capability over the BLPAPI / Data License surface with billing-granularity + sensitivity tags on Consumes — the customer-facing shape for an external -customer agent build.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: blpapi-data-license-billing-tagged-capability-rest\n    description: REST API for Blpapi Data License Billing Tagged Capability.\n  \
-  \  resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: blpapi-data-license-billing-tagged-capability-mcp\n    description: MCP server exposing Blpapi Data License Billing Tagged Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability over the BLPAPI / Data License surface with billing-granularity + sensitivity tags on Consumes — the customer-facing shape for an external -customer agent build.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: blpapi-data-license-billing-tagged-capability-skills\n    description: Agent Skill bundle for Blpapi Data License Billing Tagged Capability.\n    skills:\n    - name: blpapi-data-license-billing-tagged-capability\n      description: A capability over the BLPAPI\
-  \ / Data License surface with billing-granularity + sensitivity tags on Consumes — the customer-facing shape for an external -customer agent build.\n      location: file:///opt/naftiko/skills/blpapi-data-license-billing-tagged-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability over the BLPAPI / Data License surface with billing-granularity + sensitivity tags on Consumes — the customer-facing shape for an external -customer agent build.\n        from:\n          sourceNamespace: blpapi-data-license-billing-tagged-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Blpapi Data License Billing Tagged Capability\n  description: A capability over BLPAPI Data License that tags every read with billing metadata so per-team attribution is automatic.\n  tags: [Naftiko, Bloomberg, BLPAPI, Billing]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: bloomberg-env\n  keys: {BLOOMBERG_TOKEN: BLOOMBERG_TOKEN}\ncapability:\n  consumes:\n  - namespace: blpapi\n    type: http\n    baseUri: https://api.bloomberg.com\n    authentication: {type: bearer, token: '{{BLOOMBERG_TOKEN}}'}\n    resources:\n    - {name: requests, path: /eap/dl/v1/requests, operations: [{name: create-data-request, method: POST}]}\n    - name: request\n      path: /eap/dl/v1/requests/{{request_id}}\n      operations:\n      - {name: get-request, method: GET, inputParameters: [{name: request_id, in: path}]}\n    - name: responses\n      path: /eap/dl/v1/responses/{{response_id}}\n      operations:\n      - {name: get-response,\
+  \ method: GET, inputParameters: [{name: response_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: blpapi-data-license-billing-tagged-capability-rest\n    description: REST surface for billing-tagged BLPAPI data reads.\n    resources:\n    - {name: query, path: /query, operations: [{method: POST, name: query-tagged, description: Submit a billing-tagged BLPAPI request., call: blpapi.create-data-request}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: blpapi-data-license-billing-tagged-capability-mcp\n    description: MCP for tagged BLPAPI reads.\n    tools:\n    - {name: query-tagged, call: blpapi.create-data-request}\n    - name: get-response\n      hints: {readOnly: true}\n      inputParameters: [{name: response_id, type: string, required: true}]\n      call: blpapi.get-response\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: blpapi-data-license-billing-tagged-capability-skills\n    description:\
+  \ Skill for billing-tagged BLPAPI.\n    skills:\n    - name: blpapi-data-license-billing-tagged-capability\n      description: Billing-tagged BLPAPI Data License reads.\n      location: file:///opt/naftiko/skills/blpapi-data-license-billing-tagged-capability\n      allowed-tools: query-tagged,get-response\n      tools:\n      - {name: query-tagged, from: {sourceNamespace: blpapi-data-license-billing-tagged-capability-mcp, action: query-tagged}}\n      - {name: get-response, from: {sourceNamespace: blpapi-data-license-billing-tagged-capability-mcp, action: get-response}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/blpapi-data-license-billing-tagged-capability.yaml
 tags:
 - Naftiko
+- Bloomberg
+- BLPAPI
+- Billing
 tools:
-- description: A capability over the BLPAPI / Data License surface with billing-granularity + sensitivity tags on Consumes — the customer-facing shape for an external -customer agent build.
+- description: ''
+  hints: {}
+  name: query-tagged
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-response
 ---

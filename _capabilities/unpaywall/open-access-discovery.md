@@ -25,24 +25,24 @@ personas: []
 provider_name: Unpaywall
 provider_slug: unpaywall
 search_terms:
-- doi
-- open access lookup by doi
+- get open access status and full-text links for an article
+- search articles by title with optional oa filter
+- check if a scholarly article (identified by doi) has a free, legal open access version and return all available full-text links with license, host type (publisher/repository), and version information.
+- search open access articles
+- unpaywall
+- check open access
+- libraries
+- get oa status
+- research
 - academic
 - title-based article search
-- libraries
-- search open access articles
-- open access
-- check open access
-- scholarly articles
-- research
-- unpaywall
-- get oa status
-- get open access status and full-text links for an article
-- search the unpaywall database by article title to find scholarly articles and their open access status. optionally filter to only open access results. returns up to 50 results per page with relevance scores.
-- science
-- search articles by title with optional oa filter
 - search articles
-- check if a scholarly article (identified by doi) has a free, legal open access version and return all available full-text links with license, host type (publisher/repository), and version information.
+- scholarly articles
+- open access lookup by doi
+- doi
+- science
+- open access
+- search the unpaywall database by article title to find scholarly articles and their open access status. optionally filter to only open access results. returns up to 50 results per page with relevance scores.
 slug: open-access-discovery
 source_filename: open-access-discovery.yaml
 source_heading: Capability Spec

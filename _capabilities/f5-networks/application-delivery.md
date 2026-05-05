@@ -89,79 +89,79 @@ personas: []
 provider_name: F5 Networks
 provider_slug: f5-networks
 search_terms:
-- add a pool member
-- automation
-- delete a virtual server
-- create pool
-- load balancing
-- create a node
-- security
-- create a new pool
-- list http profiles
-- get details of a specific node
-- update pool
-- manage backend nodes
-- update a node
-- list all backend nodes
-- create virtual server
-- delete a node
-- manage a specific virtual server
-- update virtual server
-- f5
-- get pool
-- list all pools
-- list all server pools
-- update a pool member
-- add pool member
-- get virtual server details
-- get details of a specific virtual server
-- create a new backend node
-- get node details
-- kubernetes
-- nginx
-- waf
-- list all virtual servers
-- create a new virtual server
-- list nodes
-- manage a specific node
-- update pool member
-- remove a pool member
-- manage virtual servers that direct client traffic
-- list tcp profiles
-- list virtual servers
-- list pools
-- api gateway
-- get details of a specific pool
-- get details of a pool member
-- multi-cloud
-- get node
-- delete pool
-- list all virtual servers on the big-ip
 - add a member to a pool
-- create node
-- update node
-- network management
-- get pool member
-- list all nodes
-- list client ssl profiles
-- list http traffic profiles
-- get virtual server
-- delete a pool
-- get pool details
-- update a virtual server
-- manage a specific pool
-- update a pool
-- list tcp traffic profiles
-- list pool members
-- delete node
-- list members of a pool
-- edge computing
 - manage server pools
-- view traffic profiles
-- manage pool members
-- application delivery
-- delete virtual server
+- manage a specific pool
+- manage backend nodes
 - delete pool member
+- list http profiles
+- security
+- update node
+- list all server pools
+- get pool member
+- multi-cloud
+- get virtual server details
+- f5
+- get details of a specific pool
+- create a new pool
+- edge computing
+- get details of a specific node
+- update virtual server
+- list tcp profiles
+- update a pool member
+- delete node
+- update a virtual server
+- view traffic profiles
+- application delivery
+- delete a virtual server
+- waf
+- list virtual servers
+- load balancing
+- get pool
+- add pool member
+- get details of a specific virtual server
+- list http traffic profiles
+- delete pool
+- list members of a pool
+- list all pools
+- delete virtual server
+- create a node
+- network management
+- update a pool
+- create a new virtual server
+- get node details
+- manage virtual servers that direct client traffic
+- manage a specific virtual server
+- nginx
+- list pools
+- get node
+- manage pool members
+- list all virtual servers on the big-ip
+- delete a pool
+- list nodes
+- update pool member
+- create a new backend node
+- manage a specific node
+- list all backend nodes
+- create node
+- create virtual server
+- update a node
+- api gateway
+- list all virtual servers
+- get virtual server
+- list pool members
+- get pool details
+- add a pool member
+- list all nodes
+- delete a node
+- remove a pool member
+- get details of a pool member
+- list client ssl profiles
+- automation
+- update pool
+- kubernetes
+- list tcp traffic profiles
+- create pool
 slug: application-delivery
 source_filename: application-delivery.yaml
 source_heading: Capability Spec

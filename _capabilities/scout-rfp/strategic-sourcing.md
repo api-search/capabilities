@@ -61,56 +61,56 @@ personas: []
 provider_name: Scout RFP
 provider_slug: scout-rfp
 search_terms:
-- update event
-- supply chain
-- list available event templates
-- list supplier bids submitted for an rfp event
-- workday
-- event templates for creating standardized sourcing events
-- list worksheets for an event
-- individual event management
-- rfp
-- create line item
 - individual bid details
-- list line items for an event worksheet
-- get bid details
-- list all sourcing events
-- get details of a specific sourcing event by id
-- sourcing
-- list events
-- get event
-- list line items (products/services being sourced) in an event worksheet
-- update sourcing event
-- delete event
-- list bids
-- create event
-- get event details
-- list available event templates for creating standardized rfps
-- create sourcing event
-- list all sourcing events (rfps, rfis, auctions) with optional filtering
-- list worksheets
-- add a line item to a worksheet
+- list all bids for an event
+- workday
+- worksheets within sourcing events
+- line items within event worksheets
+- sourcing events (rfps, rfis, auctions)
+- list available event templates
 - get bid
 - supplier bids for rfp events
-- list sourcing events
-- list worksheets within a sourcing event
-- sourcing events (rfps, rfis, auctions)
-- delete a sourcing event
-- strategic sourcing
-- line items within event worksheets
-- procurement
-- update properties of an existing sourcing event
-- get details of a specific supplier bid
-- list event templates
-- list line items
-- create a new sourcing event (rfp or rfi) from an existing template
-- get sourcing event
+- list all sourcing events (rfps, rfis, auctions) with optional filtering
 - add a line item to a sourcing event worksheet
-- update event details
-- supplier management
+- create event
+- create a new sourcing event (rfp or rfi) from an existing template
+- list available event templates for creating standardized rfps
+- list bids
+- get bid details
+- individual event management
+- create sourcing event
+- create line item
+- list events
+- get event
+- get event details
+- list worksheets within a sourcing event
+- get details of a specific supplier bid
+- procurement
+- list line items
+- list event templates
 - create a new sourcing event from a template
-- worksheets within sourcing events
-- list all bids for an event
+- supply chain
+- delete event
+- list all sourcing events
+- list worksheets
+- list sourcing events
+- add a line item to a worksheet
+- list line items (products/services being sourced) in an event worksheet
+- get sourcing event
+- list supplier bids submitted for an rfp event
+- strategic sourcing
+- update properties of an existing sourcing event
+- delete a sourcing event
+- list line items for an event worksheet
+- event templates for creating standardized sourcing events
+- rfp
+- update sourcing event
+- update event
+- supplier management
+- update event details
+- sourcing
+- get details of a specific sourcing event by id
+- list worksheets for an event
 slug: strategic-sourcing
 source_filename: strategic-sourcing.yaml
 source_heading: Capability Spec

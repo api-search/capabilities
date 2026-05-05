@@ -85,80 +85,80 @@ personas: []
 provider_name: AWS Step Functions
 provider_slug: step-functions
 search_terms:
-- activity task polling and completion
-- automation
-- start and wait for express workflow result
-- stop a running state machine execution. optionally specify an error code and cause for the stoppage.
-- start sync execution
+- state machine
+- create a new state machine with asl definition
+- validate an amazon states language definition
+- state machine lifecycle management
+- publish a new immutable version
+- list published versions
 - get the status, input, and output of a specific state machine execution.
-- list state machine versions
+- aws
+- stop a running state machine execution. optionally specify an error code and cause for the stoppage.
+- retrieve the execution event log
+- create activity
+- redrive a failed or aborted execution from where it left off, using the same input.
 - execution inspection
-- describe a specific state machine
-- create a routing alias (e.g., prod, staging)
-- start a new asynchronous execution
-- get the full definition and configuration of a specific state machine.
-- publish an immutable version of the current state machine definition. versions are referenced by aliases for safe deployments.
-- list all aws step functions state machines in the current account and region.
-- stop execution
+- stop a running execution
 - get execution history
+- start and wait for express workflow result
+- report that an activity task has failed to step functions so the workflow can apply retry logic or transition to a fail state.
+- list executions for a state machine
+- stop execution
+- list executions for a state machine, optionally filtered by status (running, succeeded, failed, timed_out, aborted).
+- serverless
+- start a new asynchronous execution
+- list activities
 - synchronous express workflow execution
+- create state machine
+- list all aws step functions state machines in the current account and region.
+- get execution status and i/o
+- workflow
+- state machine alias management for deployment routing
+- describe a specific state machine
+- describe execution
+- create alias
+- list all state machines in the account
+- get state machine configuration and definition
+- validate state machine definitions before deployment
+- execution event history
+- stop running executions
+- list aliases
+- report successful completion of an activity task to step functions. the task token comes from getactivitytask.
+- state machine execution management
+- activity task polling and completion
+- get activity task
+- list state machines
+- send task failure
+- start an asynchronous aws step functions state machine execution with optional json input.
+- list state machine versions
+- serverless orchestration
+- create a new aws step functions state machine with an amazon states language definition and iam role arn.
+- poll for a task from an activity queue
+- get the full definition and configuration of a specific state machine.
+- orchestration
+- create a routing alias (e.g., prod, staging)
+- publish an immutable version of the current state machine definition. versions are referenced by aliases for safe deployments.
+- list all step functions activity resources used for worker-based tasks.
+- step functions
+- create an activity for worker-based task processing
+- start sync execution
+- list all activity resources
+- start and wait for the result of an express (synchronous) workflow execution. returns output when the execution completes.
+- state machine version management
+- publish version
+- start execution
+- activity worker management
+- list executions
 - describe state machine
 - retrieve the complete event history for a state machine execution, showing all state transitions and task results.
-- validate an amazon states language definition
-- send task failure
-- report that an activity task has failed to step functions so the workflow can apply retry logic or transition to a fail state.
-- publish version
-- send task success
-- serverless orchestration
-- list all step functions activity resources used for worker-based tasks.
-- activity worker management
-- create activity
-- list published versions
-- list activities
-- redrive execution
 - api composition
-- retrieve the execution event log
-- list all aliases for a state machine
-- report successful completion of an activity task to step functions. the task token comes from getactivitytask.
-- publish a new immutable version
-- aws
-- list aliases
-- start an asynchronous aws step functions state machine execution with optional json input.
-- validate an amazon states language (asl) definition without creating a state machine. use before deploying to check for syntax errors.
-- get execution status and i/o
-- state machine execution management
-- create an activity for worker-based task processing
-- validate state machine definitions before deployment
-- list state machines
-- create state machine
-- publish state machine version
-- list executions
 - validate state machine definition
-- list all state machines in the account
-- poll for a task from an activity queue
-- start execution
-- stop a running execution
-- redrive a failed or aborted execution from where it left off, using the same input.
-- step functions
-- state machine lifecycle management
-- create a new state machine with asl definition
-- list all activity resources
-- stop running executions
-- state machine alias management for deployment routing
-- orchestration
-- state machine
-- list executions for a state machine
-- describe execution
-- get activity task
-- create a new aws step functions state machine with an amazon states language definition and iam role arn.
-- execution event history
-- state machine version management
-- get state machine configuration and definition
-- serverless
-- create alias
-- start and wait for the result of an express (synchronous) workflow execution. returns output when the execution completes.
-- list executions for a state machine, optionally filtered by status (running, succeeded, failed, timed_out, aborted).
-- workflow
+- automation
+- send task success
+- redrive execution
+- publish state machine version
+- validate an amazon states language (asl) definition without creating a state machine. use before deploying to check for syntax errors.
+- list all aliases for a state machine
 slug: workflow-orchestration
 source_filename: workflow-orchestration.yaml
 source_heading: Capability Spec

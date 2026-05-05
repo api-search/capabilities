@@ -35,44 +35,44 @@ personas: []
 provider_name: Apache APISIX
 provider_slug: apache-apisix
 search_terms:
-- list all apisix gateway routes.
-- update route
-- Platform Engineer
-- create a new api consumer with authentication plugins.
-- lua
-- delete route
-- engineers deploying and managing api gateway infrastructure.
-- open source
-- update an existing apisix route.
-- create route
-- create consumer
-- cloud native
-- create a new gateway route.
-- traffic management
-- create upstream
-- nginx
-- authentication
-- list all api consumers and their plugin configs.
-- kubernetes
-- list backend upstreams.
-- create a new backend upstream with load balancing config.
 - route, upstream, consumer, and ssl management workflow.
-- list routes
-- configuration
-- API Gateway Administrator
-- list consumers
-- api gateway
-- create an api consumer.
-- list upstreams
-- delete an apisix route.
 - administrators configuring routes, consumers, and security policies.
-- apache
+- lua
+- list all apisix gateway routes.
+- API Gateway Administrator
+- create an api consumer.
+- open source
+- Platform Engineer
+- delete route
 - create a new apisix route for traffic routing.
-- list all backend upstream configurations.
-- list all gateway routes.
-- create a backend upstream.
+- update an existing apisix route.
+- list backend upstreams.
+- create a new gateway route.
 - apache apisix
+- create a backend upstream.
 - list api consumers.
+- list all gateway routes.
+- create upstream
+- update route
+- create route
+- list all api consumers and their plugin configs.
+- list upstreams
+- cloud native
+- create a new api consumer with authentication plugins.
+- list all backend upstream configurations.
+- traffic management
+- nginx
+- create consumer
+- configuration
+- engineers deploying and managing api gateway infrastructure.
+- list consumers
+- create a new backend upstream with load balancing config.
+- list routes
+- authentication
+- api gateway
+- apache
+- kubernetes
+- delete an apisix route.
 slug: apisix-gateway-config
 source_filename: apisix-gateway-config.yaml
 source_heading: Capability Spec

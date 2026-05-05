@@ -45,39 +45,39 @@ personas: []
 provider_name: StepZen
 provider_slug: stepzen
 search_terms:
-- deploy a new graphql api endpoint
-- list api keys
+- get details of a specific stepzen graphql endpoint including url, status, and configuration.
+- api key management
+- get endpoint
+- get account
+- list all api keys
+- backend integration
+- create a new api key for endpoint access
+- data federation
+- list all deployed stepzen graphql api endpoints in the account. use to see what apis are currently deployed and their status.
+- delete a deployed graphql endpoint
 - graphql endpoint deployment and management
-- ibm
+- deploy a new stepzen graphql endpoint from a schema folder. use to publish a new graphql api making it accessible to clients.
+- create api key
+- rest to graphql
 - delete a deployed stepzen graphql endpoint. this removes the endpoint and makes it inaccessible to clients.
+- create a new api key for accessing stepzen graphql endpoints. specify a descriptive name and key type (admin or user).
+- list endpoints
+- deploy a new graphql api endpoint
 - account information and usage
+- api management
+- create endpoint
+- graphql
+- ibm
+- delete endpoint
+- get details of a specific endpoint
+- list all deployed graphql api endpoints
+- api gateway
+- list api keys
+- retrieve account details and monthly usage statistics
+- list all api keys in the stepzen account. keys are used to authenticate requests to deployed graphql endpoints.
 - individual endpoint operations
 - stepzen
-- api management
-- graphql
 - retrieve stepzen account details including plan, endpoint count, and api request usage statistics for the current month.
-- get account
-- create a new api key for accessing stepzen graphql endpoints. specify a descriptive name and key type (admin or user).
-- data federation
-- api gateway
-- api key management
-- create api key
-- retrieve account details and monthly usage statistics
-- backend integration
-- get details of a specific endpoint
-- get details of a specific stepzen graphql endpoint including url, status, and configuration.
-- list all api keys in the stepzen account. keys are used to authenticate requests to deployed graphql endpoints.
-- create a new api key for endpoint access
-- list all deployed stepzen graphql api endpoints in the account. use to see what apis are currently deployed and their status.
-- list endpoints
-- list all deployed graphql api endpoints
-- get endpoint
-- delete endpoint
-- rest to graphql
-- create endpoint
-- deploy a new stepzen graphql endpoint from a schema folder. use to publish a new graphql api making it accessible to clients.
-- list all api keys
-- delete a deployed graphql endpoint
 slug: graphql-api-management
 source_filename: graphql-api-management.yaml
 source_heading: Capability Spec

@@ -1,40 +1,49 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that pulls OpenAPI specs out of an AWS API Gateway account (and Kong + Apigee), normalizes them, and republishes the enriched specs back to a portal AND to MCP for IDE-injected developer tooling.
+description: A capability that crawls every AWS API Gateway in an account and exports each REST API as an OpenAPI 3.0 doc, so the spec inventory updates automatically with no manual upload.
 layout: capability
 name: Aws Api Gateway Openapi Crawl Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-gateway-specs
+  path: /gateway-specs
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- export rest api
+- spec-driven integration
+- aws
+- list gateway specs
+- openapi
+- api gateway
 - mcp
-- ai
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a capability that pulls openapi specs out of an aws api gateway account (and kong + apigee), normalizes them, and republishes the enriched specs back to a portal and to mcp for ide-injected developer tooling.
-- example op
 - governance
+- ai
+- list rest apis
 slug: aws-api-gateway-openapi-crawl-capability
 source_filename: aws-api-gateway-openapi-crawl-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Aws Api Gateway Openapi Crawl Capability\n  description: A capability that pulls OpenAPI specs out of an AWS API Gateway account (and Kong + Apigee), normalizes them, and republishes the enriched specs back to a portal AND to MCP for IDE-injected developer tooling.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: aws-api-gateway-openapi-crawl-capability-rest\n    description: REST API for Aws Api Gateway Openapi Crawl\
-  \ Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: aws-api-gateway-openapi-crawl-capability-mcp\n    description: MCP server exposing Aws Api Gateway Openapi Crawl Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability that pulls OpenAPI specs out of an AWS API Gateway account (and Kong + Apigee), normalizes them, and republishes the enriched specs back to a portal AND to MCP for IDE-injected developer tooling.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: aws-api-gateway-openapi-crawl-capability-skills\n    description: Agent Skill bundle for Aws Api Gateway Openapi Crawl Capability.\n    skills:\n    - name: aws-api-gateway-openapi-crawl-capability\n      description:\
-  \ A capability that pulls OpenAPI specs out of an AWS API Gateway account (and Kong + Apigee), normalizes them, and republishes the enriched specs back to a portal AND to MCP for IDE-injected developer tooling.\n      location: file:///opt/naftiko/skills/aws-api-gateway-openapi-crawl-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that pulls OpenAPI specs out of an AWS API Gateway account (and Kong + Apigee), normalizes them, and republishes the enriched specs back to a portal AND to MCP for IDE-injected developer tooling.\n        from:\n          sourceNamespace: aws-api-gateway-openapi-crawl-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Aws Api Gateway Openapi Crawl Capability\n  description: A capability that crawls every AWS API Gateway in an account and exports each REST API as an OpenAPI 3.0 doc, so the spec inventory updates automatically with no manual upload.\n  tags: [Naftiko, AWS, API Gateway, OpenAPI]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: aws-env\n  description: AWS credentials with API Gateway describe/export permissions.\n  keys: {AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY, AWS_REGION: AWS_REGION}\ncapability:\n  consumes:\n  - namespace: apigateway\n    type: http\n    baseUri: https://apigateway.{{AWS_REGION}}.amazonaws.com\n    authentication: {type: aws-sig-v4, accessKeyId: '{{AWS_ACCESS_KEY_ID}}', secretKey: '{{AWS_SECRET_ACCESS_KEY}}', region: '{{AWS_REGION}}', service: apigateway}\n    resources:\n    - {name: rest-apis, path: /restapis, operations: [{name: list-rest-apis, method:\
+  \ GET}]}\n    - name: rest-api-export\n      path: /restapis/{{rest_api_id}}/stages/{{stage_name}}/exports/oas30\n      operations:\n      - {name: export-rest-api, method: GET, inputParameters: [{name: rest_api_id, in: path}, {name: stage_name, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: aws-api-gateway-openapi-crawl-capability-rest\n    description: REST surface that lists API Gateway REST APIs and exports each as OpenAPI.\n    resources:\n    - {name: gateway-specs, path: /gateway-specs, operations: [{method: GET, name: list-gateway-specs, call: apigateway.list-rest-apis}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: aws-api-gateway-openapi-crawl-capability-mcp\n    description: MCP exposing the API Gateway crawl as agent tools.\n    tools:\n    - {name: list-rest-apis, hints: {readOnly: true}, call: apigateway.list-rest-apis}\n    - name: export-rest-api\n      hints: {readOnly: true}\n      inputParameters:\
+  \ [{name: rest_api_id, type: string, required: true}, {name: stage_name, type: string, required: true}]\n      call: apigateway.export-rest-api\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: aws-api-gateway-openapi-crawl-capability-skills\n    description: Skill bundle for the API Gateway crawl.\n    skills:\n    - name: aws-api-gateway-openapi-crawl-capability\n      description: Crawl API Gateway and export OpenAPI.\n      location: file:///opt/naftiko/skills/aws-api-gateway-openapi-crawl-capability\n      allowed-tools: list-rest-apis,export-rest-api\n      tools:\n      - {name: list-rest-apis, from: {sourceNamespace: aws-api-gateway-openapi-crawl-capability-mcp, action: list-rest-apis}}\n      - {name: export-rest-api, from: {sourceNamespace: aws-api-gateway-openapi-crawl-capability-mcp, action: export-rest-api}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/aws-api-gateway-openapi-crawl-capability.yaml
 tags:
 - Naftiko
+- API Gateway
+- OpenAPI
 tools:
-- description: A capability that pulls OpenAPI specs out of an AWS API Gateway account (and Kong + Apigee), normalizes them, and republishes the enriched specs back to a portal AND to MCP for IDE-injected developer tooling.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-rest-apis
+- description: ''
+  hints:
+    readOnly: true
+  name: export-rest-api
 ---

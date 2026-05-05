@@ -58,67 +58,67 @@ personas: []
 provider_name: Waste Management
 provider_slug: waste-management
 search_terms:
-- environmental services
-- get details for a specific invoice.
-- list services
-- get planned services
-- get account overview
-- invoice history and billing records.
-- check if the wm customer is enrolled in paperless billing or autopay.
-- get the breakdown of fuel surcharges, environmental fees, and regulatory recovery fees on services.
-- get the estimated arrival window for a wm truck on a scheduled service day.
-- get upcoming pickup schedule.
-- list all invoices with optional date range.
-- update contacts
-- customer billing and notification preferences.
-- full invoice details with line items and fees.
-- update paperless billing or autopay enrollment.
-- get today's planned service schedule.
-- customer account overview with balance and profile.
-- current balance due on the account.
-- list all active waste and recycling collection services for the customer.
 - list service fees
-- estimated time of arrival for a service.
-- update contact name, email, or phone number on the wm customer account.
-- update billing or service contact information.
-- services scheduled for pickup today.
-- enroll or unenroll the wm customer in paperless billing or automatic payment.
-- list planned services
-- get paperless billing and autopay preferences.
-- service scheduling
-- get customer account overview including balance and contact details.
-- get the current amount due on the wm customer account.
-- find out when the next garbage and recycling pickup is scheduled.
-- next scheduled garbage and recycling pickup.
-- get the full breakdown of a specific wm invoice including fees and line items.
-- sustainability
-- get the wm customer account overview including balance due and contact information.
-- list invoices
 - account management
-- waste management
-- get the current balance due.
-- check which waste collection services are scheduled for pickup today.
-- get eta for today's scheduled pickup.
-- get balance
-- list billing and service contacts on the wm customer account.
-- get service eta
-- update preferences
-- customer service
-- solid waste
-- list billing and service contacts.
-- billing and service contact management.
-- get next pickup
-- list contacts
-- get preferences
-- billing
-- all waste and recycling services for the account.
-- list all services for the customer.
-- get the types of materials (garbage, recycling, yard waste) collected for each service.
-- fortune 500
-- list service materials
+- update paperless billing or autopay enrollment.
 - recycling
-- list wm billing invoices, optionally filtered by date range.
+- get next pickup
+- update billing or service contact information.
+- get planned services
+- billing
 - get invoice details
+- customer service
+- current balance due on the account.
+- get eta for today's scheduled pickup.
+- update contact name, email, or phone number on the wm customer account.
+- check if the wm customer is enrolled in paperless billing or autopay.
+- environmental services
+- list invoices
+- get today's planned service schedule.
+- full invoice details with line items and fees.
+- customer account overview with balance and profile.
+- list all invoices with optional date range.
+- list billing and service contacts.
+- get the current amount due on the wm customer account.
+- get balance
+- fortune 500
+- solid waste
+- get preferences
+- waste management
+- list all services for the customer.
+- list services
+- billing and service contact management.
+- customer billing and notification preferences.
+- list wm billing invoices, optionally filtered by date range.
+- list billing and service contacts on the wm customer account.
+- list planned services
+- get the current balance due.
+- services scheduled for pickup today.
+- update preferences
+- get service eta
+- get customer account overview including balance and contact details.
+- estimated time of arrival for a service.
+- get the types of materials (garbage, recycling, yard waste) collected for each service.
+- get the wm customer account overview including balance due and contact information.
+- list contacts
+- list all active waste and recycling collection services for the customer.
+- all waste and recycling services for the account.
+- find out when the next garbage and recycling pickup is scheduled.
+- get paperless billing and autopay preferences.
+- update contacts
+- sustainability
+- enroll or unenroll the wm customer in paperless billing or automatic payment.
+- get details for a specific invoice.
+- get the full breakdown of a specific wm invoice including fees and line items.
+- check which waste collection services are scheduled for pickup today.
+- get account overview
+- get the breakdown of fuel surcharges, environmental fees, and regulatory recovery fees on services.
+- get upcoming pickup schedule.
+- invoice history and billing records.
+- get the estimated arrival window for a wm truck on a scheduled service day.
+- list service materials
+- service scheduling
+- next scheduled garbage and recycling pickup.
 slug: customer-service
 source_filename: customer-service.yaml
 source_heading: Capability Spec

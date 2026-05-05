@@ -70,46 +70,46 @@ personas: []
 provider_name: Axway
 provider_slug: axway
 search_terms:
-- axway create oidc idp
 - provider idpCreateSAML
-- saml
-- org idpUpdate
-- security
-- provider idpUpdate
-- axway remove organization idp config
-- axway get public idp signing or encryption certificate
-- axway
-- org idpRemove
-- provider idpFind
-- api management
-- provider idpRemove
 - org idpCreateOIDC
-- org idpDownloadDescriptor
-- org idpAssociate
-- integration
-- axway update organizations custom idp
-- axway associate with another organizations idp
-- org idpFind
-- axway get all organization idps
 - provider idpCreateOIDC
-- axway create consumer oidc idp
-- axway reload saml validating certificates
-- axway get idp
-- idp operations
+- org idpFind
+- provider idpFind
+- security
+- integration
+- org idpDownloadDescriptor
 - enterprise
-- axway get consumer idp
-- sso
-- org idpReloadKeys
-- axway remove consumer idp
-- axway create consumer saml v2.0 idp
+- axway get public idp signing or encryption certificate
 - org idpFindOne
-- axway update consumer idp
-- axway create saml v2.0 idp
-- oidc
-- org idpDownloadCert
-- identity provider
-- axway get idp descriptor
 - org idpCreateSAML
+- axway remove consumer idp
+- org idpUpdate
+- axway
+- axway create saml v2.0 idp
+- org idpAssociate
+- axway update organizations custom idp
+- axway create consumer saml v2.0 idp
+- axway update consumer idp
+- idp operations
+- axway remove organization idp config
+- axway associate with another organizations idp
+- org idpRemove
+- org idpReloadKeys
+- axway get all organization idps
+- oidc
+- axway get consumer idp
+- provider idpUpdate
+- axway create oidc idp
+- api management
+- org idpDownloadCert
+- provider idpRemove
+- axway get idp descriptor
+- sso
+- axway reload saml validating certificates
+- saml
+- axway get idp
+- axway create consumer oidc idp
+- identity provider
 slug: identity-provider-management
 source_filename: identity-provider-management.yaml
 source_heading: Capability Spec

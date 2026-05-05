@@ -22,27 +22,27 @@ personas: []
 provider_name: Synopsys
 provider_slug: synopsys
 search_terms:
-- query eda tool license entitlements for a synopsys cloud customer.
-- software security
-- eda product license entitlements.
-- license file generation and download.
-- download a previously generated license file.
 - application security testing
-- query available eda tool entitlements for a customer.
-- download license
-- license management
-- cloud platform
+- synopsys
+- eda tools
 - get entitlements
 - generate a license file for a specific eda tool entitlement.
-- software composition analysis
-- synopsys
-- download a previously generated eda tool license file.
-- eda tools
-- generate a license file for a customer entitlement.
-- download generated license files.
-- semiconductor design
-- static analysis
+- eda product license entitlements.
 - generate license
+- license file generation and download.
+- query eda tool license entitlements for a synopsys cloud customer.
+- static analysis
+- download a previously generated eda tool license file.
+- software composition analysis
+- download generated license files.
+- query available eda tool entitlements for a customer.
+- software security
+- generate a license file for a customer entitlement.
+- license management
+- download license
+- download a previously generated license file.
+- cloud platform
+- semiconductor design
 slug: eda-license-management
 source_filename: eda-license-management.yaml
 source_heading: Capability Spec

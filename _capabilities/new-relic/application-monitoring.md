@@ -52,51 +52,51 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- list all monitored applications
-- list hosts for an application
-- query metric data points for an application
-- list applications
-- get or update an application
-- send events
-- monitoring
-- get deployments
-- list available metric names for an application
-- apm
-- create deployment
-- analytics
-- developer
-- get application metrics
-- get application hosts
-- deployments
-- get application details
-- manage deployments
-- list key transactions
-- new relic
-- get applications
-- application monitoring
 - get application
-- query metric data
-- send custom events
+- developer
 - list application hosts
-- list deployments for an application
-- send custom events for application tracking
-- list application metrics
-- analysis
-- performance
-- get application metrics data
-- get details of a specific application
-- list deployment records for an application
-- observability
 - platform
-- list available metric names
-- update application settings
-- get key transactions
-- query metric data for an application
-- infrastructure
-- devops
-- record a new deployment
-- update application
+- query metric data
+- get application details
+- query metric data points for an application
+- analysis
+- new relic
+- analytics
+- get application metrics
 - record a new deployment for an application
+- list hosts for an application
+- update application settings
+- list application metrics
+- get deployments
+- observability
+- list key transactions
+- list available metric names
+- update application
+- list all monitored applications
+- performance
+- send custom events for application tracking
+- deployments
+- apm
+- query metric data for an application
+- list available metric names for an application
+- devops
+- create deployment
+- application monitoring
+- list applications
+- get applications
+- get application metrics data
+- send custom events
+- infrastructure
+- record a new deployment
+- monitoring
+- list deployment records for an application
+- list deployments for an application
+- get application hosts
+- send events
+- get key transactions
+- get or update an application
+- get details of a specific application
+- manage deployments
 slug: application-monitoring
 source_filename: application-monitoring.yaml
 source_heading: Capability Spec

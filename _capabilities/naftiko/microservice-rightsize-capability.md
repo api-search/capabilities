@@ -1,40 +1,42 @@
 ---
 categories: []
 consumed_apis: []
-description: 'Implements Guide-Use-Cases #6 (Rightsize a set of microservices) as the apidays talking point.'
+description: A capability that right-sizes microservice responses for AI consumption — drops verbose fields, normalizes shapes, returns a token-budgeted view.
 layout: capability
 name: Microservice Rightsize Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: get-rightsized
+  path: /rightsized/{{resource}}/{{id}}
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- 'implements guide-use-cases #6 (rightsize a set of microservices) as the apidays talking point.'
-- api integration
+- rightsize
 - spec-driven integration
+- get rightsized
+- mcp
 - capabilities
-- example op
+- naftiko
+- api integration
 - governance
+- ai
+- microservice
 slug: microservice-rightsize-capability
 source_filename: microservice-rightsize-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Microservice Rightsize Capability\n  description: 'Implements Guide-Use-Cases #6 (Rightsize a set of microservices) as the apidays talking point.'\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: microservice-rightsize-capability-rest\n    description: REST API for Microservice Rightsize Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n\
-  \        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: microservice-rightsize-capability-mcp\n    description: MCP server exposing Microservice Rightsize Capability for AI agents.\n    tools:\n    - name: example\n      description: 'Implements Guide-Use-Cases #6 (Rightsize a set of microservices) as the apidays talking point.'\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: microservice-rightsize-capability-skills\n    description: Agent Skill bundle for Microservice Rightsize Capability.\n    skills:\n    - name: microservice-rightsize-capability\n      description: 'Implements Guide-Use-Cases #6 (Rightsize a set of microservices) as the apidays talking point.'\n      location: file:///opt/naftiko/skills/microservice-rightsize-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: 'Implements Guide-Use-Cases\
-  \ #6 (Rightsize a set of microservices) as the apidays talking point.'\n        from:\n          sourceNamespace: microservice-rightsize-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Microservice Rightsize Capability\n  description: A capability that right-sizes microservice responses for AI consumption — drops verbose fields, normalizes shapes, returns a token-budgeted view.\n  tags: [Naftiko, Microservice, Rightsize]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: target-env\n  keys: {TARGET_HOST: TARGET_HOST, TARGET_TOKEN: TARGET_TOKEN}\ncapability:\n  consumes:\n  - namespace: target\n    type: http\n    baseUri: https://{{TARGET_HOST}}\n    authentication: {type: bearer, token: '{{TARGET_TOKEN}}'}\n    resources:\n    - name: resource\n      path: /api/v1/{{resource}}/{{id}}\n      operations:\n      - {name: get-resource, method: GET, inputParameters: [{name: resource, in: path}, {name: id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: microservice-rightsize-capability-rest\n    description: Right-sized microservice surface.\n    resources:\n\
+  \    - name: rightsized\n      path: /rightsized/{{resource}}/{{id}}\n      operations:\n      - {method: GET, name: get-rightsized, inputParameters: [{name: resource, in: path, type: string}, {name: id, in: path, type: string}], call: target.get-resource}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: microservice-rightsize-capability-mcp\n    description: MCP for right-sized microservice.\n    tools:\n    - name: get-rightsized\n      hints: {readOnly: true}\n      inputParameters: [{name: resource, type: string, required: true}, {name: id, type: string, required: true}]\n      call: target.get-resource\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: microservice-rightsize-capability-skills\n    description: Skill for right-sized microservice.\n    skills:\n    - name: microservice-rightsize-capability\n      description: Microservice rightsize.\n      location: file:///opt/naftiko/skills/microservice-rightsize-capability\n      allowed-tools:\
+  \ get-rightsized\n      tools:\n      - {name: get-rightsized, from: {sourceNamespace: microservice-rightsize-capability-mcp, action: get-rightsized}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/microservice-rightsize-capability.yaml
 tags:
 - Naftiko
+- Microservice
+- Rightsize
 tools:
-- description: 'Implements Guide-Use-Cases #6 (Rightsize a set of microservices) as the apidays talking point.'
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-rightsized
 ---

@@ -46,64 +46,64 @@ personas: []
 provider_name: Torii
 provider_slug: torii
 search_terms:
-- audit
-- list apps
-- cost optimization
-- users
-- it management
-- update a saas contract with new renewal date, status, or annual cost.
-- provision scim user
-- list scim users
-- update contract details including renewal date and cost.
-- list users provisioned via scim 2.0 in torii.
-- apps
-- retrieve available field metadata for contracts in torii.
-- sync custom app data
-- contracts
-- saas management
-- get file upload url
-- retrieve available field metadata for saas applications in torii.
-- retrieve available field metadata for users in torii.
+- get user metadata
+- list torii workflow automation execution history and status.
 - discover and manage saas applications.
-- provision a new user via scim 2.0.
+- retrieve available field metadata for users in torii.
+- cost optimization
+- list workflow action execution history.
+- list users
+- sync custom app data
+- shadow it
+- update contract
 - torii
 - get app metadata
-- provision a new user into torii via scim 2.0 protocol.
-- workflow automation history.
-- user management and visibility.
-- get full details of a saas contract including cost and renewal date.
-- admin audit logs for compliance.
-- discover all saas applications in use across the organization, including shadow it, managed apps, and closed apps.
-- list all users and their app access.
-- get user metadata
-- list workflow action execution history.
 - deprovision (delete) a user from torii via scim 2.0.
-- get a specific saas contract with renewal details.
-- discover apps
-- list all users in the organization with their saas app access details.
-- list torii workflow automation execution history and status.
-- list users
-- get contract
-- get contract metadata
-- compliance
-- retrieve admin audit log entries for compliance review — up to 1,000 per request.
-- delete scim user
-- retrieve admin audit log entries for compliance review.
-- sync custom integration
 - get a secure temporary s3 url for uploading files to torii.
-- governance
 - list provisioned users via scim 2.0.
 - provision user
-- get audit logs
-- list all apps discovered in the organization, including shadow it.
-- scim 2.0 user provisioning.
-- list workflow executions
-- update contract
+- it management
+- update contract details including renewal date and cost.
+- retrieve available field metadata for contracts in torii.
 - saas contract management.
-- shadow it
-- push user and license data from a custom app into torii.
-- custom app data ingestion.
+- list workflow executions
+- list all users in the organization with their saas app access details.
+- get a specific saas contract with renewal details.
+- get audit logs
+- discover all saas applications in use across the organization, including shadow it, managed apps, and closed apps.
 - push user and license data from a custom application into torii for visibility.
+- provision a new user into torii via scim 2.0 protocol.
+- get contract metadata
+- saas management
+- scim 2.0 user provisioning.
+- retrieve available field metadata for saas applications in torii.
+- update a saas contract with new renewal date, status, or annual cost.
+- list apps
+- audit
+- push user and license data from a custom app into torii.
+- users
+- delete scim user
+- sync custom integration
+- get contract
+- get file upload url
+- governance
+- provision a new user via scim 2.0.
+- list scim users
+- retrieve admin audit log entries for compliance review — up to 1,000 per request.
+- workflow automation history.
+- user management and visibility.
+- retrieve admin audit log entries for compliance review.
+- list users provisioned via scim 2.0 in torii.
+- provision scim user
+- contracts
+- compliance
+- discover apps
+- admin audit logs for compliance.
+- list all users and their app access.
+- list all apps discovered in the organization, including shadow it.
+- get full details of a saas contract including cost and renewal date.
+- apps
+- custom app data ingestion.
 slug: saas-governance
 source_filename: saas-governance.yaml
 source_heading: Capability Spec

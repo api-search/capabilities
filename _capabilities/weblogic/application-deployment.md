@@ -58,55 +58,55 @@ personas: []
 provider_name: Oracle WebLogic Server APIs
 provider_slug: weblogic
 search_terms:
-- redeploy an application
-- get deployment
+- undeploy an application
 - undeploy
+- get deployment metrics and servlet statistics
+- libraries
+- redeploy an application
+- enterprise
+- get an application deployment
+- application server
+- deploy application
+- list all application deployments with their runtime metrics
+- oracle
+- get deployment
+- get details for a specific application deployment
+- deploy an application archive to weblogic at runtime
+- start a stopped or prepared application on weblogic
+- deploy
+- delete library
+- shared library deployment management
+- remove a shared library from weblogic
+- start a deployed application
+- middleware
+- get runtime metrics for a deployed application
+- list libraries
+- list deployments
+- list all application deployments on weblogic
+- create a shared library deployment
+- devops
+- applications
+- list all deployments monitoring
+- start application
+- list all application deployments
+- stop a deployed application
+- undeploy and remove an application from weblogic
+- undeploy application
+- list all shared library deployments on weblogic
+- redeploy
+- stop application
+- redeploy an application (update in-place) on weblogic
+- deploy a new shared library to weblogic
+- weblogic
+- deployment
+- deploy an application at runtime
+- java ee
+- stop a running application on weblogic (keeps it deployed)
 - get deployment metrics
 - application deployment lifecycle management
 - redeploy application
-- undeploy and remove an application from weblogic
-- list all application deployments
-- list all application deployments with their runtime metrics
-- list all deployments monitoring
 - list all shared library deployments
-- get deployment metrics and servlet statistics
-- start application
-- deploy a new shared library to weblogic
-- get runtime metrics for a deployed application
-- remove a shared library from weblogic
-- weblogic
-- delete library
-- undeploy an application
-- stop application
-- libraries
-- applications
-- deploy an application archive to weblogic at runtime
-- deploy an application at runtime
-- stop a deployed application
-- enterprise
-- list libraries
-- create a shared library deployment
-- oracle
-- start a deployed application
-- list deployments
-- redeploy
-- stop a running application on weblogic (keeps it deployed)
-- shared library deployment management
-- deploy application
-- application server
-- list all application deployments on weblogic
 - create library
-- redeploy an application (update in-place) on weblogic
-- deployment
-- devops
-- deploy
-- get an application deployment
-- middleware
-- start a stopped or prepared application on weblogic
-- get details for a specific application deployment
-- undeploy application
-- list all shared library deployments on weblogic
-- java ee
 slug: application-deployment
 source_filename: application-deployment.yaml
 source_heading: Capability Spec

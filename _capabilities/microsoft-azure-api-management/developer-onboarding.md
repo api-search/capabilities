@@ -10,15 +10,15 @@ provider_name: Microsoft Azure API Management
 provider_slug: microsoft-azure-api-management
 search_terms:
 - developer experience
-- microsoft azure
 - api gateway
-- api management
 - ai gateway
 - subscriptions
-- enterprise
-- self service
-- onboarding
 - api discovery
+- api management
+- microsoft azure
+- enterprise
+- onboarding
+- self service
 slug: developer-onboarding
 source_filename: developer-onboarding.yaml
 source_heading: Capability Spec

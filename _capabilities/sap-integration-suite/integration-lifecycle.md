@@ -71,77 +71,77 @@ personas: []
 provider_name: SAP Integration Suite
 provider_slug: sap-integration-suite
 search_terms:
-- list api products
-- list api proxies
-- list all developers
-- remove a deployed integration flow from the runtime
-- deploy an integration flow to runtime
-- list applications
-- get api proxy details
-- delete an api proxy from sap api management
-- undeploy runtime artifact
-- list all api products
-- get api product
-- list all deployed runtime artifacts
-- get runtime artifact status
-- get a specific message processing log entry by guid
-- list all api products in the sap api management developer portal
-- api management
-- integration flows
-- undeploy a runtime artifact
-- single api proxy configuration
-- get a specific message log
-- deployed integration flow runtime artifacts
-- get api proxy
-- list all service endpoints registered in sap integration suite
-- get a specific sap integration package by id
-- developer applications and subscriptions
-- api products bundling api proxies
-- get the deployment status of a specific integration flow
-- list all api proxies in the sap api management tenant
-- list all developer applications
-- deploy integration flow
-- list all api proxies
-- list all developers registered in the sap api management portal
-- enterprise integration
-- get a specific api proxy configuration by name
-- list runtime artifacts
-- integration service endpoints
-- get runtime artifact
-- sap
-- list message processing logs, optionally filtered by status or flow name
-- get a specific integration package
-- get message processing log
-- message processing audit logs
-- list all integration packages in the sap cloud integration tenant
-- list all developer applications registered in the api portal
-- list developers
-- get integration package
-- single integration package details
-- list service endpoints
-- deploy an integration flow artifact to the sap integration suite runtime
-- sap btp
-- ipaas
-- list integration packages
-- list all integration packages
-- developer accounts in api portal
-- create api proxy
-- delete an api proxy
-- get a specific api product by name
-- event mesh
-- list message processing logs
-- sap integration suite
-- create a new api proxy in sap api management
-- single runtime artifact status
-- list and retrieve integration packages
-- single message processing log
-- list all service endpoints
-- devops
-- list all deployed runtime integration artifacts and their status
-- api management proxy configurations
-- trigger integration flow deployment
 - delete api proxy
+- list developers
+- get a specific message processing log entry by guid
+- list all developers registered in the sap api management portal
+- ipaas
+- integration flows
+- deploy integration flow
+- get a specific message log
+- list all api proxies in the sap api management tenant
+- event mesh
+- list all integration packages in the sap cloud integration tenant
+- trigger integration flow deployment
+- get a specific sap integration package by id
+- sap btp
+- api products bundling api proxies
 - cloud integration
+- list integration packages
+- get a specific integration package
+- list all integration packages
+- create api proxy
+- list api proxies
+- single api proxy configuration
+- list all developers
+- list message processing logs, optionally filtered by status or flow name
+- get api proxy
+- list all deployed runtime integration artifacts and their status
+- list all developer applications
+- single integration package details
+- undeploy a runtime artifact
+- list and retrieve integration packages
+- get api product
+- list runtime artifacts
+- enterprise integration
+- list all service endpoints registered in sap integration suite
+- devops
+- get api proxy details
+- get integration package
+- deploy an integration flow artifact to the sap integration suite runtime
+- delete an api proxy
+- list applications
+- single message processing log
+- api management proxy configurations
+- get a specific api product by name
+- list message processing logs
+- api management
+- create a new api proxy in sap api management
+- integration service endpoints
+- list service endpoints
+- undeploy runtime artifact
+- remove a deployed integration flow from the runtime
+- deployed integration flow runtime artifacts
+- deploy an integration flow to runtime
+- list all api proxies
+- get the deployment status of a specific integration flow
+- list all service endpoints
+- sap integration suite
+- list api products
+- list all deployed runtime artifacts
+- developer applications and subscriptions
+- developer accounts in api portal
+- get message processing log
+- get a specific api proxy configuration by name
+- list all api products in the sap api management developer portal
+- sap
+- message processing audit logs
+- list all api products
+- get runtime artifact status
+- list all developer applications registered in the api portal
+- single runtime artifact status
+- delete an api proxy from sap api management
+- get runtime artifact
 slug: integration-lifecycle
 source_filename: integration-lifecycle.yaml
 source_heading: Capability Spec

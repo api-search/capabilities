@@ -30,39 +30,39 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- list atm countries
-- credit cards
 - search atm locations
-- digital identity
-- search for mastercard atm locations
-- search places
-- search for atm locations
-- submit acquirer transaction
-- mastercard
-- list merchant countries
-- financial services
-- open banking
-- merchant location search
-- locations
-- search track merchants
-- search for merchants in the mastercard track network
-- search merchant locations
-- payments
 - search for merchant places
-- places location intelligence
-- merchant
-- search for merchant places with location intelligence
-- acquirer
-- track merchant data
-- search for merchant locations
-- atm location search
-- list countries with mastercard atms
-- list countries with merchant locations
-- track
-- search for mastercard merchant locations
-- fraud detection
 - submit a transaction as an acquirer
+- places location intelligence
+- credit cards
+- open banking
+- search track merchants
+- search for atm locations
+- track
+- list countries with merchant locations
+- search places
+- locations
+- acquirer
+- search for merchant locations
+- submit acquirer transaction
+- search for mastercard merchant locations
+- merchant
+- search for merchants in the mastercard track network
+- list countries with mastercard atms
+- search for merchant places with location intelligence
+- list atm countries
+- payments
+- track merchant data
+- merchant location search
 - search for merchants in track
+- list merchant countries
+- search for mastercard atm locations
+- atm location search
+- digital identity
+- search merchant locations
+- mastercard
+- financial services
+- fraud detection
 slug: merchant-services-and-locations
 source_filename: merchant-services-and-locations.yaml
 source_heading: Capability Spec

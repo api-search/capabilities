@@ -85,72 +85,72 @@ personas: []
 provider_name: Retool
 provider_slug: retool
 search_terms:
-- manage a specific application.
-- internal tools
-- retool
-- create a new permission group.
-- list apps
 - list all data source resources.
-- list folders
-- list all users with pagination support.
-- create a new user and add to the organization.
-- create user
-- list all data source resource connections in the organization.
-- manage group membership.
-- list all retool applications in the organization.
-- administration
-- delete user
-- create a new retool application.
-- create a new permission group for access control.
-- create a new folder.
-- no code
-- list all folders.
-- update user profile or admin status.
-- create app
-- list all permission groups in the organization.
-- get user
-- delete app
-- manage users in the retool organization.
-- create group
-- permanently remove a user.
-- list all groups in the organization.
-- add a user to a group.
-- list resources
-- permanently delete a retool application.
-- admin panel
-- dashboard
-- remove group member
-- get app
-- manage retool applications.
 - delete an application permanently.
-- update app
-- retrieve an application by id.
-- retrieve a specific user by their uuid.
-- add group member
-- list all users in the retool organization with pagination.
 - list users
-- user management
-- update user
-- manage permission groups.
-- remove a user from a permission group.
-- update an application's metadata.
-- update a user's name, admin status, or disable their account.
-- list all applications.
-- retrieve a user by uuid.
-- view data source connections.
-- remove a user from a group.
-- create folder
-- add a user to a permission group.
-- remove a specific user from a group.
-- list groups
-- manage organizational folders.
-- create a new application.
-- low code
-- list all organizational folders for apps, resources, and workflows.
-- permanently remove a user from the organization.
-- create a new organizational folder.
-- retrieve a specific retool application by id.
+- list all users with pagination support.
+- manage users in the retool organization.
+- list all folders.
+- create user
+- get user
 - manage a specific user.
+- retrieve a user by uuid.
+- manage organizational folders.
+- manage permission groups.
+- permanently remove a user from the organization.
+- create a new retool application.
+- list all data source resource connections in the organization.
+- remove a specific user from a group.
+- update user profile or admin status.
+- admin panel
+- internal tools
+- retrieve a specific user by their uuid.
+- create group
+- list all users in the retool organization with pagination.
+- create a new user and add to the organization.
+- update user
+- view data source connections.
+- low code
+- remove group member
+- add group member
+- create a new application.
+- add a user to a permission group.
+- permanently delete a retool application.
+- list all organizational folders for apps, resources, and workflows.
+- create a new organizational folder.
+- create a new permission group.
+- no code
+- administration
+- manage group membership.
+- create a new permission group for access control.
+- retrieve a specific retool application by id.
+- update an application's metadata.
+- list apps
+- remove a user from a permission group.
+- delete user
+- permanently remove a user.
+- add a user to a group.
+- list all applications.
+- update app
+- update a user's name, admin status, or disable their account.
+- list all retool applications in the organization.
+- delete app
+- dashboard
+- list folders
+- create app
+- retrieve an application by id.
+- list resources
+- list all groups in the organization.
+- get app
+- remove a user from a group.
+- manage a specific application.
+- create folder
+- create a new folder.
+- user management
+- retool
+- manage retool applications.
+- list all permission groups in the organization.
+- list groups
 - create a new user account in the retool organization.
 slug: org-administration
 source_filename: org-administration.yaml

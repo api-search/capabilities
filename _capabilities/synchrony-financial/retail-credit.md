@@ -43,52 +43,52 @@ personas: []
 provider_name: Synchrony Financial
 provider_slug: synchrony-financial
 search_terms:
-- retail finance
-- create reversal
-- create refund
-- credit
-- retrieve the decision for a submitted credit application.
-- reverse or void a prior synchrony credit transaction.
-- authorize a purchase transaction on a synchrony credit account.
-- process a payment to reduce a customer's synchrony credit balance.
-- submit a full credit card application for instant decision.
-- get application decision
-- credit transaction refunds.
-- transaction reversals and voids.
-- process a refund to a customer's synchrony credit account.
-- create payment
-- run a soft-pull quickscreen preapproval to instantly offer credit to a customer by name and address.
-- create preauthorization
-- process a payment to a customer's synchrony credit account.
-- process payment
 - run a quickscreen preapproval to offer instant credit to a customer.
-- refund a prior synchrony credit transaction to the customer's account.
-- financial services
-- full credit card application submissions.
-- authorize a retail credit purchase transaction on a synchrony account.
-- authorize purchase
-- payments
-- consumer finance
-- void or reverse a prior synchrony credit transaction before settlement.
-- process refund
-- retail credit
-- retrieve the credit decision for a previously submitted application.
-- reverse transaction
-- place an authorization hold on a synchrony credit account.
-- credit application decisions.
-- credit purchase authorizations.
-- submit a full synchrony credit card application for an instant credit decision.
-- synchrony financial
-- create purchase
+- authorize a purchase transaction on a synchrony credit account.
 - credit hold preauthorizations.
-- submit application
-- submit credit preapproval
-- credit authorization
-- place an authorization hold on a synchrony credit account for future capture.
-- credit account payments.
+- process a payment to reduce a customer's synchrony credit balance.
+- refund a prior synchrony credit transaction to the customer's account.
+- create purchase
 - submit credit application
+- process refund
+- process a payment to a customer's synchrony credit account.
+- credit application decisions.
+- synchrony financial
+- create preauthorization
+- process payment
+- authorize a retail credit purchase transaction on a synchrony account.
+- credit authorization
+- create payment
+- authorize purchase
+- create refund
+- place an authorization hold on a synchrony credit account.
+- submit credit preapproval
 - soft-pull credit preapproval checks.
+- place an authorization hold on a synchrony credit account for future capture.
+- reverse or void a prior synchrony credit transaction.
 - submit preapproval
+- retail credit
+- submit a full synchrony credit card application for an instant credit decision.
+- full credit card application submissions.
+- get application decision
+- credit
+- consumer finance
+- transaction reversals and voids.
+- retail finance
+- payments
+- credit transaction refunds.
+- create reversal
+- void or reverse a prior synchrony credit transaction before settlement.
+- credit account payments.
+- reverse transaction
+- retrieve the decision for a submitted credit application.
+- submit a full credit card application for instant decision.
+- retrieve the credit decision for a previously submitted application.
+- process a refund to a customer's synchrony credit account.
+- submit application
+- financial services
+- credit purchase authorizations.
+- run a soft-pull quickscreen preapproval to instantly offer credit to a customer by name and address.
 slug: retail-credit
 source_filename: retail-credit.yaml
 source_heading: Capability Spec

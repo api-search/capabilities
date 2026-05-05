@@ -42,52 +42,52 @@ personas: []
 provider_name: TrueFoundry
 provider_slug: truefoundry
 search_terms:
+- generate vector embeddings for text. used for semantic search, rag pipelines, and similarity comparisons across 1000+ embedding models.
+- llm
 - generate images from text prompts
-- image generation
-- create chat completion
 - list models
-- rerank a list of documents by their relevance to a query. used in rag pipelines to improve retrieval quality.
-- list all available models
-- rerank documents
-- create a batch job
-- create moderation
-- available model catalog
-- ai platform
-- list files uploaded to truefoundry
-- create embeddings
-- generate a chat completion using any model available in truefoundry ai gateway (gpt-4o, claude, gemini, mistral, etc.). supports streaming, tool calling, and all openai-compatible parameters.
-- batch request management
-- ai gateway
-- chat completion
-- check text content for policy violations
-- kubernetes
-- reranking
-- file management
-- mlops
-- check content for policy violations
-- llm gateway
-- list files
-- list all llm models available in truefoundry ai gateway
-- embeddings
 - enterprise ai
-- create batch
+- create a batch job
 - truefoundry
-- text embedding generation
-- moderate content
-- document reranking
-- generate images from text prompts using ai image models
+- list uploaded files
+- available model catalog
+- list files
+- mlops
+- create batch
+- ai image generation
 - rerank documents by query relevance
+- rerank a list of documents by their relevance to a query. used in rag pipelines to improve retrieval quality.
+- reranking
+- llm gateway
+- chat completion
+- text embedding generation
+- rerank documents
+- embeddings
+- document reranking
 - chat completions
 - generate vector embeddings
-- generate chat completion from any supported model
-- ai image generation
-- list uploaded files
-- llm
-- create a batch job for async processing of multiple llm requests
-- generate vector embeddings for text. used for semantic search, rag pipelines, and similarity comparisons across 1000+ embedding models.
-- generate images
+- check content for policy violations
 - content moderation
+- create moderation
+- list all available models
+- check text content for policy violations
+- create a batch job for async processing of multiple llm requests
+- ai gateway
+- generate a chat completion using any model available in truefoundry ai gateway (gpt-4o, claude, gemini, mistral, etc.). supports streaming, tool calling, and all openai-compatible parameters.
+- generate images from text prompts using ai image models
+- moderate content
+- list all llm models available in truefoundry ai gateway
 - chat completion for llm conversations
+- batch request management
+- image generation
+- create chat completion
+- create embeddings
+- generate chat completion from any supported model
+- file management
+- kubernetes
+- ai platform
+- generate images
+- list files uploaded to truefoundry
 slug: llm-operations
 source_filename: llm-operations.yaml
 source_heading: Capability Spec

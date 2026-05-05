@@ -18,39 +18,39 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
-- initiate a payment through bank of america cashpro (supports 350+ payment types)
-- list cashpro accounts
-- list transactions for a bank of america account within a date range
+- account management
 - corporate banking
+- cashpro
+- list accounts
+- executive responsible for corporate cash and liquidity management
 - initiate payment
-- system integration connecting erp/tms to bank of america cashpro apis
+- list bank of america cashpro accounts for the authenticated client
+- treasury
+- corporate treasury operations including account management, payments, and reporting
+- finance
+- corporate cash management, balance reporting, and liquidity
+- list bofa accounts
+- bank of america
+- list cashpro accounts
+- analyst managing day-to-day treasury operations and reporting
+- Treasury Analyst
+- initiate a payment through bank of america cashpro (supports 350+ payment types)
+- payment initiation and tracking across 350+ payment types
+- list available bank of america account statements
 - Corporate Treasurer
+- payment management
+- payments
+- list transactions for a bank of america account within a date range
+- get current and available balances for a cashpro account
+- system integration connecting erp/tms to bank of america cashpro apis
+- initiate a payment
+- banking
+- ERP Integration
+- get payment status
+- list statements
 - get the current status of a bank of america payment
 - list account transactions
-- corporate cash management, balance reporting, and liquidity
-- banking
-- cashpro
-- initiate a payment
-- payments
-- account management
 - get account balances
-- get current and available balances for a cashpro account
-- finance
-- corporate treasury operations including account management, payments, and reporting
-- bank of america
-- list accounts
-- payment initiation and tracking across 350+ payment types
-- ERP Integration
-- list bofa accounts
-- treasury
-- list bank of america cashpro accounts for the authenticated client
-- Treasury Analyst
-- list statements
-- get payment status
-- list available bank of america account statements
-- payment management
-- analyst managing day-to-day treasury operations and reporting
-- executive responsible for corporate cash and liquidity management
 slug: treasury-banking
 source_filename: treasury-banking.yaml
 source_heading: Capability Spec

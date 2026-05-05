@@ -70,67 +70,67 @@ personas: []
 provider_name: Unum
 provider_slug: unum
 search_terms:
-- submit a new leave request
-- submit a new eoi application
-- insurance
+- update member
+- get leave request
+- list eoi submissions for a group
+- individual member operations
+- update eligibility for a member
+- individual billing invoice
+- list leave requests for a group
+- submit a new leave or absence request for a member
+- list eligible members for an employer group
+- submit new member eligibility to unum
 - get details and status of a leave request
-- submit a new enrollment election
+- get billing invoice
+- list members
+- get eoi submission
+- unum
+- individual leave request operations
+- submit a new eoi application
+- leave management
+- list enrollments
+- life insurance
+- list benefit enrollment elections for a group
+- create leave request
+- get premium billing invoice details
+- list evidence of insurability submissions for a group
+- insurance
+- create member
+- hr integration
+- get leave request details
 - leave and absence requests
 - list enrollment elections for a group
-- individual leave request operations
-- list leave requests
-- create eoi submission
-- create member
+- terminate member
+- list premium billing invoices for an employer group
+- disability insurance
 - create enrollment
-- individual member operations
-- get eligibility details for a specific member
-- submit member eligibility information
-- get premium billing invoice details
-- hr integration
-- get status and decision for an eoi submission
+- submit a new evidence of insurability application
+- create eoi submission
+- submit a new benefit enrollment election for a member
+- get eoi submission status and details
 - individual eoi submission
-- get eoi submission
-- update member
+- list billing invoices for an employer group
+- premium billing invoices
+- submit member eligibility information
+- list eoi submissions
+- get billing invoice details
+- member eligibility management
+- terminate eligibility for a member
 - benefit enrollment elections
 - eligibility
-- list evidence of insurability submissions for a group
-- get leave request
-- create leave request
-- list benefit enrollment elections for a group
-- list premium billing invoices for an employer group
 - benefits administration
-- list eoi submissions for a group
-- get billing invoice details
+- list leave requests
 - get eligibility details for a member
-- get eoi submission status and details
-- submit a new evidence of insurability application
-- disability insurance
-- premium billing invoices
-- submit a new benefit enrollment election for a member
-- terminate member eligibility
-- list eligible members for an employer group
-- list billing invoices
 - update existing member eligibility information
-- update eligibility for a member
-- list enrollments
-- list billing invoices for an employer group
-- life insurance
+- terminate member eligibility
+- get eligibility details for a specific member
 - evidence of insurability submissions
-- leave management
-- individual billing invoice
-- list members
-- get leave request details
-- list eoi submissions
-- get billing invoice
-- unum
-- terminate member
-- get member
-- terminate eligibility for a member
+- get status and decision for an eoi submission
 - list leave and absence requests for a group
-- submit new member eligibility to unum
-- submit a new leave or absence request for a member
-- list leave requests for a group
-- member eligibility management
+- list billing invoices
+- get member
+- submit a new leave request
+- submit a new enrollment election
 slug: benefits-administration
 source_filename: benefits-administration.yaml
 source_heading: Capability Spec

@@ -42,45 +42,45 @@ personas: []
 provider_name: TikTok
 provider_slug: tiktok
 search_terms:
-- get ad groups
-- list custom audiences available for ad targeting
-- get advertising performance report
-- video
-- marketing
-- get ad groups for a campaign
-- get ads
-- create ad group
-- create a new ad
-- e-commerce
 - create a new tiktok advertising campaign
-- advertising
-- campaigns
-- create ad
-- create a new tiktok ad creative
-- performance reporting
-- get individual ads
 - list custom targeting audiences
-- retrieve individual tiktok ads
-- content
-- retrieve advertising campaigns
-- commerce
-- list custom audiences
+- e-commerce
 - campaign lifecycle management
-- retrieve tiktok advertising campaigns for an advertiser
-- create a new ad group
-- performance
-- get tiktok advertising performance metrics and analytics
-- get report
-- tiktok
-- create a new ad group within a tiktok campaign
-- retrieve ad groups for a tiktok campaign
-- social media
-- create a new advertising campaign
-- individual ad management
+- retrieve advertising campaigns
+- create a new tiktok ad creative
 - get campaigns
-- ad group management
+- commerce
+- marketing
+- create a new ad
+- campaigns
 - custom audience management
+- tiktok
+- individual ad management
+- create a new ad group
+- list custom audiences
+- get ad groups for a campaign
 - create campaign
+- ad group management
+- get individual ads
+- performance reporting
+- performance
+- social media
+- get ads
+- advertising
+- retrieve ad groups for a tiktok campaign
+- content
+- get tiktok advertising performance metrics and analytics
+- create ad group
+- list custom audiences available for ad targeting
+- get report
+- create a new advertising campaign
+- video
+- create ad
+- retrieve individual tiktok ads
+- get ad groups
+- get advertising performance report
+- create a new ad group within a tiktok campaign
+- retrieve tiktok advertising campaigns for an advertiser
 slug: advertising-management
 source_filename: advertising-management.yaml
 source_heading: Capability Spec

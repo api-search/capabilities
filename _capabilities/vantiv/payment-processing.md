@@ -49,53 +49,53 @@ personas: []
 provider_name: Vantiv
 provider_slug: vantiv
 search_terms:
-- capture a previously authorized payment to initiate settlement
-- tokenize a card number for secure storage and future transactions
-- process an ach/echeck payment using bank account details
-- tokenize a card number for secure storage
-- process a recurring billing charge against a stored card token
-- create recurring transaction
-- process a complete card sale (authorization and capture in one step)
-- process echeck payment
-- card authorization management
-- authorize card
-- vantiv
 - register token
-- create capture
-- process sale
-- tokenize card
-- capture an authorized transaction for settlement
+- process recurring charge
+- tokenize a card number for secure storage and future transactions
+- tokenize a card number for secure storage
+- ecommerce
+- create void
 - chargebacks
+- authorize a credit card payment to verify funds availability
+- fintech
+- capture authorized funds
+- capture an authorized transaction for settlement
+- vantiv
 - authorize a card and hold funds
 - cancel a pending unsettled transaction
-- capture payment
-- issue a full or partial refund to a cardholder
-- recurring billing transactions
-- card tokenization via vault
 - create authorization
-- create credit
-- process a recurring billing charge
-- payments
-- card sale transactions
+- create capture
+- create recurring transaction
+- recurring billing transactions
 - finance
-- authorize a credit card payment to verify funds availability
-- process a card sale (authorize and capture)
-- capture authorized funds
-- create void
-- process an ach bank payment
-- void payment
+- process a recurring billing charge
 - ach/echeck payments
-- refund management
-- void pending transactions
-- refund payment
-- ecommerce
-- process recurring charge
-- issue a refund to a cardholder
-- create sale
-- create echeck sale
-- fintech
-- cancel a pending transaction before it settles
+- process an ach bank payment
+- process a complete card sale (authorization and capture in one step)
+- issue a full or partial refund to a cardholder
 - payment processing
+- void payment
+- process echeck payment
+- process an ach/echeck payment using bank account details
+- create echeck sale
+- process a recurring billing charge against a stored card token
+- create credit
+- card tokenization via vault
+- process a card sale (authorize and capture)
+- authorize card
+- issue a refund to a cardholder
+- cancel a pending transaction before it settles
+- payments
+- void pending transactions
+- card authorization management
+- refund payment
+- refund management
+- capture payment
+- card sale transactions
+- create sale
+- process sale
+- tokenize card
+- capture a previously authorized payment to initiate settlement
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

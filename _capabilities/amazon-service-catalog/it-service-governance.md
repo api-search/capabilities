@@ -39,35 +39,35 @@ provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
 - create product
-- it governance
-- browse approved products
-- self-service product provisioning
-- create an it service portfolio
-- self-service
-- describe portfolio
-- terminate and decommission a provisioned product
-- create a new it service catalog portfolio
-- self-service provision an approved it product
 - provision an approved product
+- list portfolios
+- terminate provisioned product
+- it governance
+- add a product to the catalog
+- provision product
+- create portfolio
+- self-service
+- service catalog
+- terminate and decommission a provisioned product
+- cloud governance
+- add a new product to the it service catalog
+- browse and search approved it products
+- self-service product provisioning
+- describe provisioned product
+- it service portfolio management
+- check the status of a provisioned product
+- approved product catalog
+- describe portfolio
+- get details about an it service portfolio
+- amazon service catalog
+- compliance
+- create a new it service catalog portfolio
+- list all it service portfolios
 - search products
 - list all it service catalog portfolios
-- get details about an it service portfolio
-- provision product
-- list portfolios
-- browse and search approved it products
-- list all it service portfolios
-- service catalog
-- compliance
-- approved product catalog
-- add a new product to the it service catalog
-- check the status of a provisioned product
-- cloud governance
-- describe provisioned product
-- add a product to the catalog
-- amazon service catalog
-- terminate provisioned product
-- create portfolio
-- it service portfolio management
+- create an it service portfolio
+- self-service provision an approved it product
+- browse approved products
 slug: it-service-governance
 source_filename: it-service-governance.yaml
 source_heading: Capability Spec

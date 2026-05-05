@@ -39,45 +39,45 @@ personas: []
 provider_name: Trellix Web Gateway
 provider_slug: trellix-web-gateway
 search_terms:
-- get traffic logs
-- list appliances
-- top accessed urls
-- get logs
-- system and audit logs
-- get system logs
-- get traffic statistics
-- threat protection
-- traffic statistics for capacity and monitoring
-- web traffic logs for forensic analysis
-- retrieve security events for investigation
+- threat statistics for security reporting
 - web security
-- get web traffic statistics for capacity planning and anomaly detection.
-- retrieve security events from web gateway including malware detections and policy violations. use for incident investigation and threat hunting.
-- network security
-- retrieve web gateway system and audit logs for compliance and change tracking.
-- enterprise security
-- url filtering
-- get top urls
-- get threat statistics to understand attack patterns, malware trends, and security posture over time.
-- get top accessed urls to identify potential policy violations or unusual browsing patterns.
-- ssl inspection
-- web gateway appliance health
-- list appliances and health status
 - retrieve web traffic logs for forensic analysis, compliance auditing, and user behavior investigation.
-- cybersecurity
+- get security events
+- system and audit logs
 - get threat statistics
 - malware protection
+- list appliances and health status
+- get system logs
+- get web traffic statistics for capacity planning and anomaly detection.
+- top accessed urls
+- get top accessed urls to identify potential policy violations or unusual browsing patterns.
+- cybersecurity
+- enterprise security
+- retrieve security events for investigation
+- retrieve web gateway system and audit logs for compliance and change tracking.
+- get threat statistics to understand attack patterns, malware trends, and security posture over time.
+- threat detection
+- web gateway
 - get top categories
 - retrieve traffic logs
-- data loss prevention
-- threat detection
-- security operations
-- get security events
-- list web gateway appliances and check their operational health status.
+- retrieve security events from web gateway including malware detections and policy violations. use for incident investigation and threat hunting.
+- threat protection
 - security events and threat detections
+- get traffic statistics
+- get top urls
+- web gateway appliance health
 - get top url categories to understand web browsing patterns and policy effectiveness.
-- threat statistics for security reporting
-- web gateway
+- security operations
+- ssl inspection
+- network security
+- list appliances
+- web traffic logs for forensic analysis
+- url filtering
+- get traffic logs
+- traffic statistics for capacity and monitoring
+- list web gateway appliances and check their operational health status.
+- get logs
+- data loss prevention
 slug: web-security-operations
 source_filename: web-security-operations.yaml
 source_heading: Capability Spec

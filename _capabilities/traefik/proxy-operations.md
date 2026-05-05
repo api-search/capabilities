@@ -57,57 +57,57 @@ personas: []
 provider_name: Traefik
 provider_slug: traefik
 search_terms:
-- list all http backend services.
-- list all http middlewares showing type, configuration, and which routers use them.
-- list all tcp routers for non-http traffic routing.
-- load balancer
-- get overview
-- tcp backend services.
-- open source
-- list all http routers with routing rules, entry points, middleware chains, and service assignments.
-- traefik routing configuration overview.
-- http backend services.
-- traefik
-- list all http backend services showing load balancer configuration and server health.
-- list all configured entry points.
-- list all tcp backend services.
-- list tcp services
-- list udp routers
-- get the current traefik version, codename, and start date.
-- liveness health check.
-- get routing overview
-- kubernetes
-- get the current traefik version and codename.
-- perform a liveness health check against the traefik instance.
-- configuration
-- check health
-- list all udp routers for udp traffic routing.
-- udp routing configuration.
-- api gateway
-- list all configured traefik entry points showing which ports and protocols are exposed.
-- reverse proxy
-- list http services
-- list all tcp services.
-- tcp routing configuration.
-- ping
-- traefik version information.
-- list all udp routers.
-- list entry points
-- list all http middlewares.
-- get overview statistics for all routing configuration.
-- list http middlewares
-- observability
-- http middleware chain configurations.
-- http router rules and configuration.
-- list all tcp routers.
-- traefik health check.
-- get a high-level overview of all traefik routing configuration including router and service counts.
 - list http routers
+- list udp routers
+- traefik
+- tcp routing configuration.
+- list all http backend services showing load balancer configuration and server health.
+- ping
+- udp routing configuration.
+- http router rules and configuration.
+- list all tcp backend services.
+- get overview
+- reverse proxy
+- tcp backend services.
+- traefik health check.
+- open source
+- list entry points
 - network entry points.
-- get traefik version
+- list all tcp routers.
+- list tcp services
 - get version
-- list tcp routers
+- observability
+- list all http middlewares showing type, configuration, and which routers use them.
+- list all udp routers for udp traffic routing.
+- list http services
+- list all configured traefik entry points showing which ports and protocols are exposed.
+- http backend services.
 - list all http routers.
+- get the current traefik version, codename, and start date.
+- get overview statistics for all routing configuration.
+- traefik routing configuration overview.
+- configuration
+- list all http routers with routing rules, entry points, middleware chains, and service assignments.
+- traefik version information.
+- list all tcp services.
+- get routing overview
+- get a high-level overview of all traefik routing configuration including router and service counts.
+- list tcp routers
+- liveness health check.
+- check health
+- list http middlewares
+- api gateway
+- get the current traefik version and codename.
+- list all http backend services.
+- perform a liveness health check against the traefik instance.
+- list all configured entry points.
+- kubernetes
+- load balancer
+- list all tcp routers for non-http traffic routing.
+- http middleware chain configurations.
+- get traefik version
+- list all http middlewares.
+- list all udp routers.
 slug: proxy-operations
 source_filename: proxy-operations.yaml
 source_heading: Capability Spec

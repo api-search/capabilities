@@ -41,48 +41,48 @@ personas: []
 provider_name: Telesign
 provider_slug: telesign
 search_terms:
-- create otp verification processes
-- score phone number
-- submit otp code to complete verification
-- assess fraud risk for a phone number
-- score a phone number for fraud risk
-- send an sms message
-- get sms delivery status by reference id
-- check verification status
-- send an otp to a phone number to initiate identity verification
-- send an sms message for alerts, notifications, or otp delivery
-- verification
-- complete verification
-- complete otp verification
-- send otp to initiate a verification flow
-- telesign
-- track sms delivery status
-- look up phone number intelligence for risk assessment
-- send sms notifications and alerts
-- authentication
-- send sms notification
-- sms
-- check whether a verification otp has been successfully submitted
-- submit the otp code entered by the user to complete verification
-- mfa
-- identity verification
-- look up carrier, location, and phone type data for a number
-- communications
-- score a phone number for fraud risk using telesign intelligence
-- phone intelligence
+- get verification
 - get carrier, location, and type data for a phone number
-- get or update a verification process
-- send sms
+- communications
+- score phone number
+- check the delivery status of a previously sent sms message
 - get sms delivery status
 - create verification
-- get verification
-- score phone for fraud
+- telesign
+- complete otp verification
+- sms
 - create otp verification
-- check the delivery status of a previously sent sms message
-- lookup phone intelligence
-- get sms status
-- fraud prevention
+- send an sms message for alerts, notifications, or otp delivery
+- phone intelligence
+- score phone for fraud
+- check verification status
+- create otp verification processes
+- verification
+- send an sms message
+- send otp to initiate a verification flow
+- get sms delivery status by reference id
 - get verification status
+- send sms notifications and alerts
+- look up carrier, location, and phone type data for a number
+- score a phone number for fraud risk using telesign intelligence
+- get or update a verification process
+- lookup phone intelligence
+- assess fraud risk for a phone number
+- fraud prevention
+- send sms notification
+- track sms delivery status
+- get sms status
+- check whether a verification otp has been successfully submitted
+- complete verification
+- look up phone number intelligence for risk assessment
+- score a phone number for fraud risk
+- authentication
+- mfa
+- submit otp code to complete verification
+- send an otp to a phone number to initiate identity verification
+- send sms
+- submit the otp code entered by the user to complete verification
+- identity verification
 slug: identity-verification
 source_filename: identity-verification.yaml
 source_heading: Capability Spec

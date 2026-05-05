@@ -70,74 +70,74 @@ personas: []
 provider_name: Reolink
 provider_slug: reolink
 search_terms:
-- set time
-- get hdd info
 - get reolink camera device information including model, firmware, and hardware details
-- search recorded footage
-- get recording schedule and configuration settings for a channel
-- get device date and time settings
-- motion detection alarm settings
-- get saved ptz preset positions for a camera channel
-- capture snapshots
-- ptz control
-- get device info
-- configure motion detection settings
-- ptz movement control
-- get ai detection configuration and sensitivity settings for a channel
-- get ai state
-- set ai config
-- capture a snapshot image from the camera
-- camera channel status
-- ptz preset positions
-- set ir lights
-- recording configuration
-- get the online/offline status of all camera channels on the nvr
-- set motion alarm
-- reboot camera
-- get motion detection configuration
-- reboot the reolink camera or nvr device
-- configure infrared led mode (auto/on/off) for night vision
-- get current ai object detection state (person, vehicle, animal) for a channel
-- get channel status
-- capture a jpeg snapshot from a specific camera channel
-- surveillance
-- get ptz presets
-- search recordings
-- get motion alarm
 - get saved ptz preset positions
-- get infrared led settings for night vision on a camera channel
-- get current ai detection state (person, vehicle, animal)
+- reboot the reolink camera or nvr device
 - get time
-- ai object detection state
-- search recordings by date and time range
-- get camera device information and firmware details
-- control camera pan, tilt, and zoom
-- device system information
+- get hdd info
+- get ai detection configuration and sensitivity settings for a channel
 - configure infrared led mode
-- ai detection
-- get ai config
-- capture snapshot
+- get saved ptz preset positions for a camera channel
 - storage drive information
-- get storage drive capacity and status for the camera or nvr
-- infrared led control
-- search camera recordings by date/time range and channel
-- get recording settings
-- get ir lights
-- get status of all camera channels
-- get infrared led settings
 - 'control ptz camera movement: pan left/right, tilt up/down, zoom in/out, or go to preset'
-- ptz move
-- get motion detection alarm configuration for a camera channel
-- ptz
-- security cameras
-- get hard drive storage information
-- iot
-- get recording schedule and settings
+- reboot camera
 - device time configuration
+- configure motion detection settings
+- get ai state
+- capture a snapshot image from the camera
+- ptz move
+- get hard drive storage information
+- get motion alarm
+- get infrared led settings for night vision on a camera channel
+- infrared led control
+- get ir lights
+- set time
+- ptz movement control
+- get infrared led settings
+- get recording settings
+- get recording schedule and configuration settings for a channel
+- get the online/offline status of all camera channels on the nvr
+- get current ai object detection state (person, vehicle, animal) for a channel
+- motion detection alarm settings
+- ai detection
+- get motion detection alarm configuration for a camera channel
+- get device info
+- camera channel status
+- ptz
+- set motion alarm
 - configure ai object detection parameters (person/vehicle/animal sensitivity) for a channel
-- configure motion detection sensitivity, zones, and schedule for a channel
+- get device date and time settings
+- device system information
+- capture a jpeg snapshot from a specific camera channel
+- control camera pan, tilt, and zoom
+- get ptz presets
+- recording configuration
+- search recorded footage
+- search recordings
+- get camera device information and firmware details
+- ptz preset positions
 - smart home
+- set ir lights
 - set device date and time
+- ptz control
+- search recordings by date and time range
+- security cameras
+- surveillance
+- get current ai detection state (person, vehicle, animal)
+- capture snapshots
+- get ai config
+- get channel status
+- configure motion detection sensitivity, zones, and schedule for a channel
+- capture snapshot
+- get status of all camera channels
+- iot
+- get motion detection configuration
+- configure infrared led mode (auto/on/off) for night vision
+- search camera recordings by date/time range and channel
+- get storage drive capacity and status for the camera or nvr
+- ai object detection state
+- set ai config
+- get recording schedule and settings
 slug: camera-management
 source_filename: camera-management.yaml
 source_heading: Capability Spec

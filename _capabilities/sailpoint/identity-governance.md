@@ -101,84 +101,84 @@ personas: []
 provider_name: SailPoint
 provider_slug: sailpoint
 search_terms:
-- roles for organizational access management.
-- security
-- get a certification by id.
-- decide certification
 - identity profiles for users in the organization.
-- delete identity profile
-- list access review items
-- approve or revoke access certification items.
-- delete access profile
-- certifications
-- list access review items for a certification campaign.
-- identity security
-- delete an identity profile.
-- list access profiles grouping entitlements.
-- delete an access profile.
-- create a new access profile.
+- create role
+- get a certification by id.
 - access governance
-- get a public identity by id.
-- finalize certification decisions.
-- list role identities
-- access review items within a certification.
-- sign off and finalize a certification.
+- identity management
+- update an identity profile.
+- roles for organizational access management.
+- list roles
+- delete an access profile.
+- create identity profile
+- manage a specific access profile.
+- list access profiles grouping entitlements.
 - make approve or revoke decisions on certification access items.
+- list public identities with filtering and pagination.
+- get role
+- list identities assigned to a role.
+- list identity profiles
+- sign off certification
+- get a specific certification by id.
+- manage a specific identity profile.
+- delete role
+- decide certification
+- identity security
+- certifications
+- delete a role.
+- make decisions on certification items.
+- finalize and sign off a completed certification review.
+- access profiles grouping entitlements for provisioning.
+- delete identity profile
+- delete an identity profile.
+- get access profile
+- create a new role.
+- list role identities
+- get an access profile by id.
+- list public identities in sailpoint identity security cloud with filtering.
+- identity profiles defining source-to-identity attribute mappings.
+- retrieve a specific identity.
+- create a new role in identity security cloud.
+- list identity profiles defining source attribute mappings.
+- list identities
+- identities assigned to a role.
+- security
+- list certifications
+- get a role by id.
+- list access review items for a certification campaign.
+- list identity campaign certifications for compliance review.
+- roles
 - list access profiles
 - sailpoint
-- manage a specific certification.
-- update identity profile
-- manage a specific identity profile.
-- get a role by id.
-- list organizational roles for access management.
-- create access profile
-- roles
-- list identities assigned to a role.
+- access review items within a certification.
 - list identity profiles.
-- identities assigned to a role.
-- manage a specific access profile.
-- list certifications
-- list public identities with filtering and pagination.
-- create a new identity profile.
-- list public identities in sailpoint identity security cloud with filtering.
-- list identities
-- access certifications for compliance reviews.
-- manage a specific role.
-- compliance
-- get certification
-- list identity campaign certifications for compliance review.
-- finalize and sign off a completed certification review.
-- get an identity profile by id.
-- list access profiles.
-- list identity profiles defining source attribute mappings.
-- create a new role.
-- get role
-- iam
 - get a specific identity by id.
-- update an identity profile.
-- list roles
-- sign off certification
-- identity management
-- list access review items for a certification.
-- create identity profile
-- delete a role.
-- get access profile
-- retrieve a specific identity.
-- delete role
+- finalize certification decisions.
 - decide certification items
-- list identity profiles
-- get an access profile by id.
-- create role
-- make decisions on certification items.
-- identity profiles defining source-to-identity attribute mappings.
-- get identity
-- get identity profile
-- list roles.
-- get a specific certification by id.
+- iam
+- create access profile
+- list access profiles.
+- compliance
 - list identities assigned to a specific role.
-- create a new role in identity security cloud.
-- access profiles grouping entitlements for provisioning.
+- get identity profile
+- list access review items for a certification.
+- manage a specific certification.
+- get an identity profile by id.
+- sign off and finalize a certification.
+- get identity
+- get a public identity by id.
+- get certification
+- delete access profile
+- manage a specific role.
+- access certifications for compliance reviews.
+- create a new identity profile.
+- update identity profile
+- create a new access profile.
+- list organizational roles for access management.
 - list identity campaign certifications.
+- list roles.
+- list access review items
+- approve or revoke access certification items.
 slug: identity-governance
 source_filename: identity-governance.yaml
 source_heading: Capability Spec

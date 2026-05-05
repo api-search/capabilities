@@ -43,49 +43,49 @@ personas: []
 provider_name: VTEX
 provider_slug: vtex
 search_terms:
-- list all promotions
-- create a new coupon
 - create product
-- product management
-- create a new sku variant for an existing product
-- get sku by id
-- create a new sku
-- list promotions
-- list coupons
-- marketplace
-- get sku
-- e-commerce
-- create a new product entry in the vtex catalog
-- get full details of a specific vtex promotion
-- get product details from the vtex catalog by product id
 - single sku operations
-- promotion and discount management
-- get full product category tree
-- list all active promotions and discount configurations in vtex
-- catalog
-- single product operations
-- pricing
-- create coupon
-- payments
-- retrieve the full product category hierarchy from the vtex catalog
-- create a new discount coupon for a vtex promotion
-- create sku
-- list all coupons
-- commerce
-- merchandising
-- coupon management
+- create a new sku variant for an existing product
+- e-commerce
 - get product by id
-- retail
-- create a new product in the catalog
-- promotions
-- sku management
-- get promotion
-- product category management
+- retrieve the full product category hierarchy from the vtex catalog
+- commerce
 - vtex
+- create a new sku
+- merchandising
+- sku management
+- list coupons
+- list all discount coupons configured in vtex
+- create a new coupon
+- create coupon
+- get full details of a specific vtex promotion
+- list all coupons
+- list all active promotions and discount configurations in vtex
+- get sku details by sku id
+- get product details from the vtex catalog by product id
+- create a new discount coupon for a vtex promotion
+- get promotion
+- create a new product in the catalog
+- list all promotions
+- catalog
+- payments
+- retail
+- create a new product entry in the vtex catalog
+- promotion and discount management
 - get product
 - get category tree
-- list all discount coupons configured in vtex
-- get sku details by sku id
+- single product operations
+- create sku
+- get sku
+- product management
+- coupon management
+- get sku by id
+- promotions
+- marketplace
+- pricing
+- product category management
+- get full product category tree
+- list promotions
 slug: catalog-management
 source_filename: catalog-management.yaml
 source_heading: Capability Spec

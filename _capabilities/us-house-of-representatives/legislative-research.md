@@ -49,55 +49,55 @@ personas: []
 provider_name: US House of Representatives
 provider_slug: us-house-of-representatives
 search_terms:
-- get detailed information for a specific congressional committee including subcommittees, bill count, and recent reports.
-- 'get the complete legislative action history for a congressional bill. shows all actions taken: introduction, committee referrals, markups, floor votes, and presidential action.'
-- list congressional bills with optional date filters
-- get details for a specific bill
-- members
-- get member sponsored legislation
-- committees
-- list current and historical members of congress
-- federal government
-- get details for a member of congress
-- look up a member of congress by bioguide id. returns name, state, party, chamber, district, contact info, and service history.
-- track bill progress
-- list bills
-- single member of congress
-- 'list all bills introduced in a specific congress (e.g., 118 or 119). filter by bill type: hr (house bills), s (senate bills), hjres, sjres, hconres, sconres, hres, sres.'
-- legislation
-- members of congress
 - congress
-- get legislative action history for a bill
-- list bills by congress
-- get comprehensive details for a specific congressional bill including title, sponsors, cosponsors, committees, subjects, and current status. specify congress number (e.g., 119), type (hr, s), and bill number.
-- search recent bills
-- legislation sponsored by a member
+- get all bills sponsored by a specific member of congress. useful for analyzing a legislator's legislative priorities and activity.
 - list house committees
-- list committees
-- get member legislation
-- list house of representatives committees for a specific congress. returns committee names, system codes, and types for the house chamber.
-- congressional bills and resolutions
-- legislative data
+- committees
+- federal government
+- legislation sponsored by a member
 - get committee details
-- list current members of the us house of representatives and senate. returns each member's name, state, party, chamber, and district.
+- list bills
+- members of congress
+- get committee
+- get member legislation
+- search recent bills
+- civic tech
+- look up a member of congress by bioguide id. returns name, state, party, chamber, district, contact info, and service history.
+- list recent congressional bills from congress.gov. filter by date range to find bills introduced or updated within a specific window. returns bill number, title, sponsor, and latest action.
+- list congressional bills with optional date filters
 - single congressional bill
 - list members
-- bills
-- get bill details
-- list congressional committees
-- legislative actions on a bill
-- list recent congressional bills from congress.gov. filter by date range to find bills introduced or updated within a specific window. returns bill number, title, sponsor, and latest action.
-- get all bills sponsored by a specific member of congress. useful for analyzing a legislator's legislative priorities and activity.
-- list current members
-- get bill actions
-- civic tech
-- get bills sponsored by a member
-- single congressional committee
-- get member
-- get committee
+- legislative data
 - congressional committees
+- list bills by congress
+- list current members
+- get details for a member of congress
+- get bill actions
+- track bill progress
+- single congressional committee
+- list current and historical members of congress
+- get bill details
 - find member of congress
+- get bills sponsored by a member
+- get comprehensive details for a specific congressional bill including title, sponsors, cosponsors, committees, subjects, and current status. specify congress number (e.g., 119), type (hr, s), and bill number.
+- congressional bills and resolutions
+- list current members of the us house of representatives and senate. returns each member's name, state, party, chamber, and district.
+- legislative actions on a bill
+- bills
+- legislation
+- get legislative action history for a bill
+- get details for a specific bill
+- get member sponsored legislation
+- list committees
+- members
+- get detailed information for a specific congressional committee including subcommittees, bill count, and recent reports.
+- list congressional committees
+- list house of representatives committees for a specific congress. returns committee names, system codes, and types for the house chamber.
 - get bill
+- 'list all bills introduced in a specific congress (e.g., 118 or 119). filter by bill type: hr (house bills), s (senate bills), hjres, sjres, hconres, sconres, hres, sres.'
+- 'get the complete legislative action history for a congressional bill. shows all actions taken: introduction, committee referrals, markups, floor votes, and presidential action.'
+- single member of congress
+- get member
 slug: legislative-research
 source_filename: legislative-research.yaml
 source_heading: Capability Spec

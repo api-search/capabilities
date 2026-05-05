@@ -25,26 +25,26 @@ personas: []
 provider_name: APIPark
 provider_slug: apipark
 search_terms:
-- list services
-- list all api services published on the apipark developer platform
-- list subscribers
-- list all api subscribers on the platform
-- list ai models
-- open source
-- list all api services published on the platform
-- api management
-- ai gateway
-- list teams
-- create service
-- api gateway
-- list all ai models available on the apipark platform including provider and capabilities
-- publish a new api service on the apipark platform
-- list all ai models available on the platform
 - developer portal
 - llm
-- list all teams registered on the platform
-- list all teams registered on the apipark platform with their members and permissions
+- list all ai models available on the platform
+- open source
+- list ai models
+- create service
+- list all api subscribers on the platform
+- list services
+- list subscribers
+- publish a new api service on the apipark platform
+- ai gateway
+- api management
+- list all api services published on the apipark developer platform
 - list all api subscribers and their active subscriptions on the apipark platform
+- list all teams registered on the apipark platform with their members and permissions
+- list teams
+- list all api services published on the platform
+- api gateway
+- list all ai models available on the apipark platform including provider and capabilities
+- list all teams registered on the platform
 slug: platform-management
 source_filename: platform-management.yaml
 source_heading: Capability Spec

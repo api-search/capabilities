@@ -36,39 +36,39 @@ personas: []
 provider_name: Walmart
 provider_slug: walmart
 search_terms:
+- get inventory
+- list all marketplace orders
+- get released orders
+- product catalog search
+- search the walmart product catalog
+- commerce
+- item inventory management
+- get order
+- list all catalog items
+- get orders released and ready for fulfillment
+- get current inventory quantity for a walmart item by sku
+- list items
 - seller operations
 - list all walmart marketplace seller orders
-- marketplace
-- item catalog management
-- product catalog search
-- customer order management
-- orders
-- list all items in the walmart marketplace seller catalog
-- get a specific order by purchase order id
-- update inventory count for an item
-- item inventory management
-- inventory
-- update the inventory quantity for a walmart marketplace item
-- catalog
-- get released orders
-- get current inventory quantity for a walmart item by sku
-- list all marketplace orders
-- list all catalog items
-- get order
-- commerce
-- walmart
-- search the walmart product catalog
-- list items
 - search catalog
-- get full details of a specific walmart order by purchase order id
+- get a specific order by purchase order id
+- customer order management
+- catalog
 - retail
-- get inventory
-- get current inventory for an item
+- update the inventory quantity for a walmart marketplace item
+- item catalog management
+- list all items in the walmart marketplace seller catalog
+- get full details of a specific walmart order by purchase order id
 - single order operations
-- get orders released and ready for fulfillment
-- update inventory
-- search the walmart product catalog by keyword
+- update inventory count for an item
 - list orders
+- orders
+- inventory
+- get current inventory for an item
+- walmart
+- update inventory
+- marketplace
+- search the walmart product catalog by keyword
 slug: marketplace-seller-operations
 source_filename: marketplace-seller-operations.yaml
 source_heading: Capability Spec

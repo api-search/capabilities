@@ -69,65 +69,65 @@ personas: []
 provider_name: United Rentals
 provider_slug: united-rentals
 search_terms:
-- get full details for a specific rental order
-- initiate the return of rented equipment
-- create an equipment rental reservation linked to a purchase order
-- supply chain
+- get full details for a specific rental invoice
+- rental reservation management
+- invoice management
+- check if equipment is available for a specific date range and location
+- get equipment
+- branch location search
+- get invoice details
+- list rental orders
+- construction
 - get details and rental rates for specific equipment
+- extend the end date of an active equipment rental
+- create a rental reservation
+- submit payment for an invoice
+- check equipment availability
+- extend an active rental
+- list rentals
 - list equipment
+- list invoices
+- browse the united rentals equipment catalog by category, type, and location
+- return rental
+- list rental invoices filtered by status or purchase order number
+- fleet overview and worksite management
+- get full details for a specific rental order
+- list active and historical rental orders by job site or status
+- initiate equipment return
+- get equipment details and pricing
+- procurement
+- get invoice
+- individual rental operations
+- fortune 500
+- list invoices for payment processing
+- extend rental
+- pay invoice
+- initiate the return of rented equipment
+- individual invoice operations
+- supply chain
+- get real-time fleet overview across all active rentals and job sites
+- list locations
+- rental extension
+- get rental
+- equipment return
+- get fleet
+- create an equipment rental reservation linked to a purchase order
+- submit payment (ach, credit card, or check) for a rental invoice
+- invoice payment
+- get rental details
+- equipment catalog and availability
+- create rental
 - check availability for a date range
 - equipment availability check
-- create rental
-- get equipment details and pricing
-- extend an active rental
-- initiate equipment return
-- rental extension
-- list locations
-- erp integration
-- get fleet
-- equipment catalog and availability
-- submit payment for an invoice
-- get equipment
-- extend rental
-- list rental invoices filtered by status or purchase order number
-- invoice payment
-- invoice management
-- get real-time fleet status
-- find nearby united rentals branches
-- get rental
-- get rental details
-- branch location search
-- get full details for a specific rental invoice
-- list active and historical rental orders by job site or status
-- list invoices
-- extend the end date of an active equipment rental
-- fleet overview and worksite management
-- equipment return
-- submit payment (ach, credit card, or check) for a rental invoice
-- individual invoice operations
-- procurement
-- construction
-- check equipment availability
-- browse equipment catalog by category and location
-- get real-time fleet overview across all active rentals and job sites
-- rental reservation management
-- create a rental reservation
-- individual rental operations
-- return rental
-- browse the united rentals equipment catalog by category, type, and location
 - equipment rental
-- list invoices for payment processing
-- fleet management
-- individual equipment details
-- get invoice
-- pay invoice
-- check if equipment is available for a specific date range and location
-- fortune 500
-- list rentals
-- procure to pay
-- list rental orders
+- browse equipment catalog by category and location
+- get real-time fleet status
+- erp integration
 - find united rentals branch locations near a zip code or in a state
-- get invoice details
+- individual equipment details
+- procure to pay
+- find nearby united rentals branches
+- fleet management
 slug: equipment-rental
 source_filename: equipment-rental.yaml
 source_heading: Capability Spec

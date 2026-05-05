@@ -41,43 +41,43 @@ personas: []
 provider_name: Amazon PrivateLink
 provider_slug: amazon-privatelink
 search_terms:
-- accept connections
-- Platform Engineer
-- security
 - list endpoint services
-- accept pending vpc endpoint connection requests
-- list connections
-- consumes endpoint services and manages vpc endpoints for internal services
-- create a vpc endpoint
-- create a vpc endpoint service backed by a load balancer
-- create endpoint service
-- endpoint services
-- zero trust
-- create a private vpc endpoint for an aws service or endpoint service
-- reject endpoint connections
-- aws
-- list vpc endpoints in the account
-- accept endpoint connections
-- reject vpc endpoint connection requests
-- vpc
+- accept connections
 - amazon
-- list vpc endpoint services
-- networking
-- Network Engineer
-- private vpc connectivity workflow
-- list endpoint connections
-- list available vpc endpoint services for private connectivity
-- manages vpc endpoint services and private connectivity architecture
-- create vpc endpoint
-- list endpoints
-- list vpc endpoints
-- list pending and active connections to endpoint services
-- create endpoint
 - vpc endpoint service provider management
-- endpoint connection management
-- vpc endpoint consumer management
-- create a vpc endpoint service
+- list connections
+- list available vpc endpoint services for private connectivity
+- aws
+- create a private vpc endpoint for an aws service or endpoint service
+- list vpc endpoints
+- security
 - private connectivity
+- private vpc connectivity workflow
+- create a vpc endpoint service
+- Platform Engineer
+- Network Engineer
+- list vpc endpoint services
+- reject endpoint connections
+- create endpoint service
+- create a vpc endpoint
+- accept pending vpc endpoint connection requests
+- reject vpc endpoint connection requests
+- accept endpoint connections
+- list endpoint connections
+- consumes endpoint services and manages vpc endpoints for internal services
+- create vpc endpoint
+- manages vpc endpoint services and private connectivity architecture
+- list endpoints
+- list pending and active connections to endpoint services
+- networking
+- endpoint services
+- create endpoint
+- zero trust
+- list vpc endpoints in the account
+- endpoint connection management
+- create a vpc endpoint service backed by a load balancer
+- vpc
+- vpc endpoint consumer management
 slug: private-connectivity
 source_filename: private-connectivity.yaml
 source_heading: Capability Spec

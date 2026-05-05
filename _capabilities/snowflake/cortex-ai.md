@@ -63,46 +63,46 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- list search services
-- list models
-- semantic search
-- query a cortex search service
-- list cortex search services
 - data warehousing
-- ask analyst
-- create notebook
-- execute notebook
-- execute a notebook
-- notebook management
-- snowflake
-- generate verified query suggestions
-- data lakes
-- send feedback on an analyst response
-- llm complete
-- llm inference
-- run llm inference completion
-- natural language data analytics
-- send analyst message
-- list available llm models
-- list available cortex llm models
-- list notebooks
-- database
-- create a notebook
-- cortex
-- sql
-- send analyst feedback
-- machine learning
-- ai
-- query a search service
-- complete
 - generate query suggestions
+- list models
+- ask analyst
+- cortex
+- send feedback on an analyst response
+- list cortex search services
+- ai
+- natural language data analytics
 - ask a question about your data
+- generate verified query suggestions
+- execute a notebook
+- send analyst feedback
 - list llm models
-- data sharing
-- query search
-- run llm completion
-- ask a question about your data using natural language
+- create a notebook
+- query a cortex search service
+- list search services
+- notebook management
 - available models
+- semantic search
+- llm inference
+- execute notebook
+- snowflake
+- send analyst message
+- database
+- run llm completion
+- create notebook
+- query search
+- ask a question about your data using natural language
+- run llm inference completion
+- data lakes
+- machine learning
+- list available cortex llm models
+- complete
+- llm complete
+- data sharing
+- query a search service
+- list notebooks
+- list available llm models
+- sql
 slug: cortex-ai
 source_filename: cortex-ai.yaml
 source_heading: Capability Spec

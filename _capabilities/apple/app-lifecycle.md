@@ -34,58 +34,58 @@ personas: []
 provider_name: Apple
 provider_slug: apple
 search_terms:
-- list all beta groups.
-- read app
-- list apps
-- build management.
-- list all builds.
-- add a beta tester.
-- delete a beta group.
-- get build details.
-- macos
-- app store
-- create beta group
-- list beta testers
-- list beta groups
-- update build information.
-- developer
-- app management.
-- app management
-- update app metadata.
-- mobile
-- read beta group
-- list builds
-- beta tester management.
-- create group
-- testflight
-- update a beta group.
-- delete beta group
-- read beta tester
-- delete beta tester
-- list beta testers.
-- get beta tester details.
-- create a beta group.
-- create a new beta group.
-- apple
-- list all apps.
-- add a new beta tester.
-- ios
-- create beta tester
-- get beta group details.
-- technology
 - read build
-- modify beta group
-- list all apps in app store connect.
+- developer
+- add a beta tester.
+- beta tester management.
+- get build details.
+- read beta group
+- mobile
+- list beta testers.
+- list all builds.
+- delete beta group
 - get details of a specific app.
-- create tester
-- list groups
-- list all beta testers.
-- remove a beta tester.
-- list beta groups.
-- list testers
 - modify build
-- modify app
+- modify beta group
+- app management
+- delete a beta group.
+- get beta group details.
+- read app
+- add a new beta tester.
+- create beta group
+- create group
+- list all beta testers.
+- macos
+- create tester
+- delete beta tester
+- ios
+- app store
+- update app metadata.
+- create beta tester
+- list apps
+- list beta testers
+- create a beta group.
+- update a beta group.
+- testflight
+- list all apps in app store connect.
+- list all beta groups.
+- technology
 - beta group management.
+- list all apps.
+- app management.
+- create a new beta group.
+- read beta tester
+- get beta tester details.
+- list builds
+- apple
+- modify app
+- list beta groups.
+- list beta groups
+- build management.
+- update build information.
+- remove a beta tester.
+- list testers
+- list groups
 slug: app-lifecycle
 source_filename: app-lifecycle.yaml
 source_heading: Capability Spec

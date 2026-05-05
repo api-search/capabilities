@@ -49,40 +49,40 @@ personas: []
 provider_name: Scalable Inference Serving
 provider_slug: scalable-inference-serving
 search_terms:
-- inference
 - model tensor specifications and version information
-- model readiness status
-- scalability
-- get server metadata
-- submit inference requests to a model
-- submit input tensors to a deployed model and receive inference output tensors. use get-model-metadata first to discover the correct input names, shapes, and datatypes.
-- get model version metadata
-- model version-specific metadata
-- check if all models are ready for inference
 - run inference
-- get inference server name, version, and supported protocol extensions
-- kubernetes
-- check if a specific model is ready for inference
-- inference server metadata and capabilities
-- cncf
-- mlops
-- get model metadata
-- check if all models are loaded and the inference server is ready
-- check if the inference server is live
-- run model inference
-- machine learning
-- check server readiness
-- get model input/output tensor specifications, available versions, and serving platform
-- ai
-- model serving
-- check if the kserve inference server is live and able to receive requests
-- run model version inference
-- deployment
 - llm
-- check server liveness
-- submit inference requests to a specific model version
-- check model readiness
+- run model inference
+- get model metadata
+- get server metadata
+- check if a specific model is ready for inference
+- check if all models are ready for inference
+- model version-specific metadata
+- ai
+- mlops
+- inference server metadata and capabilities
+- get model input/output tensor specifications, available versions, and serving platform
+- check if the inference server is live
+- check server readiness
+- model readiness status
 - run inference against a pinned model version for a/b testing, canary evaluation, or version-specific integration
+- scalability
+- submit inference requests to a specific model version
+- get inference server name, version, and supported protocol extensions
+- check server liveness
+- run model version inference
+- submit inference requests to a model
+- inference
+- machine learning
+- get model version metadata
+- check if all models are loaded and the inference server is ready
+- model serving
+- cncf
+- deployment
+- check model readiness
+- submit input tensors to a deployed model and receive inference output tensors. use get-model-metadata first to discover the correct input names, shapes, and datatypes.
+- check if the kserve inference server is live and able to receive requests
+- kubernetes
 slug: model-inference-operations
 source_filename: model-inference-operations.yaml
 source_heading: Capability Spec

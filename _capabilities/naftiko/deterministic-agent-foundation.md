@@ -1,40 +1,48 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability annotated with the SDI "Deterministic Foundation for Agents" framing, designed to be the lead artifact when AI risk officers join the conversation.
+description: A foundational capability defining the deterministic-agent contract — same input, same context, same shaped output, with the contract surfaced as REST + MCP.
 layout: capability
 name: Deterministic Agent Foundation
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: start-agent-run
+  path: /run
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- spec-driven integration
+- agent
+- deterministic
+- get agent run
 - mcp
-- ai
-- a capability annotated with the sdi "deterministic foundation for agents" framing, designed to be the lead artifact when ai risk officers join the conversation.
+- foundation
+- capabilities
+- start agent run
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
 - governance
+- ai
 slug: deterministic-agent-foundation
 source_filename: deterministic-agent-foundation.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Deterministic Agent Foundation\n  description: A capability annotated with the SDI \"Deterministic Foundation for Agents\" framing, designed to be the lead artifact when AI risk officers join the conversation.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: deterministic-agent-foundation-rest\n    description: REST API for Deterministic Agent Foundation.\n    resources:\n    - name: example\n      path: /example\n\
-  \      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: deterministic-agent-foundation-mcp\n    description: MCP server exposing Deterministic Agent Foundation for AI agents.\n    tools:\n    - name: example\n      description: A capability annotated with the SDI \"Deterministic Foundation for Agents\" framing, designed to be the lead artifact when AI risk officers join the conversation.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: deterministic-agent-foundation-skills\n    description: Agent Skill bundle for Deterministic Agent Foundation.\n    skills:\n    - name: deterministic-agent-foundation\n      description: A capability annotated with the SDI \"Deterministic Foundation for Agents\" framing, designed to be the lead artifact when AI risk officers join the conversation.\n  \
-  \    location: file:///opt/naftiko/skills/deterministic-agent-foundation\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability annotated with the SDI \"Deterministic Foundation for Agents\" framing, designed to be the lead artifact when AI risk officers join the conversation.\n        from:\n          sourceNamespace: deterministic-agent-foundation-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Deterministic Agent Foundation\n  description: A foundational capability defining the deterministic-agent contract — same input, same context, same shaped output, with the contract surfaced as REST + MCP.\n  tags: [Naftiko, Deterministic, Agent, Foundation]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: naftiko-env\n  keys: {NAFTIKO_API_KEY: NAFTIKO_API_KEY}\ncapability:\n  consumes:\n  - namespace: naftiko-control\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication: {type: bearer, token: '{{NAFTIKO_API_KEY}}'}\n    resources:\n    - {name: agent-runs, path: /v1/agent-runs, operations: [{name: start-agent-run, method: POST}]}\n    - name: agent-run\n      path: /v1/agent-runs/{{run_id}}\n      operations:\n      - {name: get-agent-run, method: GET, inputParameters: [{name: run_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: deterministic-agent-foundation-rest\n\
+  \    description: REST surface for the deterministic-agent contract.\n    resources:\n    - {name: run, path: /run, operations: [{method: POST, name: start-agent-run, call: naftiko-control.start-agent-run}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: deterministic-agent-foundation-mcp\n    description: MCP for deterministic-agent runs.\n    tools:\n    - {name: start-agent-run, call: naftiko-control.start-agent-run}\n    - name: get-agent-run\n      hints: {readOnly: true}\n      inputParameters: [{name: run_id, type: string, required: true}]\n      call: naftiko-control.get-agent-run\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: deterministic-agent-foundation-skills\n    description: Skill for deterministic-agent foundation.\n    skills:\n    - name: deterministic-agent-foundation\n      description: Deterministic-agent foundation.\n      location: file:///opt/naftiko/skills/deterministic-agent-foundation\n      allowed-tools: start-agent-run,get-agent-run\n\
+  \      tools:\n      - {name: start-agent-run, from: {sourceNamespace: deterministic-agent-foundation-mcp, action: start-agent-run}}\n      - {name: get-agent-run, from: {sourceNamespace: deterministic-agent-foundation-mcp, action: get-agent-run}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/deterministic-agent-foundation.yaml
 tags:
 - Naftiko
+- Deterministic
+- Agent
+- Foundation
 tools:
-- description: A capability annotated with the SDI "Deterministic Foundation for Agents" framing, designed to be the lead artifact when AI risk officers join the conversation.
+- description: ''
+  hints: {}
+  name: start-agent-run
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-agent-run
 ---

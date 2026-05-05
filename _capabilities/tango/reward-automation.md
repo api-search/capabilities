@@ -54,57 +54,57 @@ personas: []
 provider_name: Tango
 provider_slug: tango
 search_terms:
-- check the current balance of a reward funding account
+- rewards as a service
 - track a specific reward order
-- place and track reward deliveries
-- list all reward program customers
+- list reward countries
+- list customers
+- create a reward funding account
+- get account
 - register a new reward program customer
-- gift cards
-- get current exchange rates
+- manage reward program customers
+- get catalog
 - list supported reward delivery countries
-- browse the full tango global digital reward catalog with 3,100+ gift cards and incentives
-- get reward order
-- browse reward catalog
 - manage reward funding accounts
-- create order
-- list reward orders
+- get order
+- browse the full tango global digital reward catalog with 3,100+ gift cards and incentives
+- list all reward line items including fulfillment credentials like gift card codes and redemption urls
+- list all reward orders
+- digital rewards
+- create account
+- get current exchange rates
+- send reward
+- browse available digital rewards
+- place and track reward deliveries
+- get current currency exchange rates for international reward delivery
 - get account balance and details
+- gift cards
+- loyalty
+- list line items
+- list reward orders
+- get reward order
+- register a new reward program customer in tango
+- list all reward line items with credentials
+- list all reward program customers in the tango platform
+- check the current balance of a reward funding account
 - get account balance
 - incentives
-- list all reward orders
-- manage reward program customers
-- list all countries where digital rewards can be delivered
-- get account
-- view detailed reward delivery records
-- send a digital reward to a recipient
-- rewards as a service
-- browse available digital rewards
-- create account
-- get order
-- send reward
-- currency exchange rates for international rewards
-- list all reward line items including fulfillment credentials like gift card codes and redemption urls
-- digital rewards
-- list customers
 - list reward orders placed through the account, optionally filtered by date range
-- catalog management
-- get status and fulfillment details for a specific reward order
-- countries where digital rewards are available
-- list reward countries
-- list all reward program customers in the tango platform
-- register a new reward program customer in tango
-- list line items
-- send a digital gift card or reward to a recipient by email. specify the product utid, amount, recipient name and email, and sender details.
-- create customer
-- create a reward funding account
-- list orders
-- list all reward line items with credentials
 - get reward order status and fulfillment details
-- get exchange rates
-- get current currency exchange rates for international reward delivery
-- get catalog
-- loyalty
+- list orders
 - retrieve the full digital reward catalog
+- create order
+- browse reward catalog
+- countries where digital rewards are available
+- create customer
+- send a digital gift card or reward to a recipient by email. specify the product utid, amount, recipient name and email, and sender details.
+- get status and fulfillment details for a specific reward order
+- list all reward program customers
+- send a digital reward to a recipient
+- view detailed reward delivery records
+- list all countries where digital rewards can be delivered
+- catalog management
+- get exchange rates
+- currency exchange rates for international rewards
 slug: reward-automation
 source_filename: reward-automation.yaml
 source_heading: Capability Spec

@@ -89,83 +89,83 @@ personas: []
 provider_name: Shuffle
 provider_slug: shuffle
 search_terms:
-- create a webhook trigger that will start a specified workflow when the webhook url receives an http request (e.g., from a siem alert).
-- list apps
-- security
-- list security notifications
-- create a security notification
-- create a new security automation workflow
-- schedule workflow
-- individual workflow operations
-- webhook trigger management
-- trigger workflow execution with security event data
-- stop a running workflow execution
-- list all users in the shuffle organization.
-- workflows
-- list files
-- create a scheduled trigger for a workflow
-- list all app authentication configurations
-- list authentications
-- abort a running workflow execution
 - list organizations
-- list security notifications in the shuffle organization, filterable by status, type, and severity.
-- execute a security automation workflow
-- orchestration
-- security tool app integrations
-- list all users in the organization
-- create a new security automation workflow in shuffle. the workflow starts as a draft and can be configured with actions and triggers.
-- soar
-- organization user management
-- automation
-- create a webhook trigger to start a workflow from external systems
-- open source
-- delete a workflow
-- organization notifications for security events
-- individual webhook operations
-- get the execution history for a workflow, showing past runs with their status (executing, finished, aborted, failed) and timestamps.
-- get executions
-- search apps
-- remove a webhook trigger from the organization.
-- list all files in the organization
-- get workflow executions
-- list all files stored in the shuffle organization file store.
-- list all security tool apps available in the shuffle organization, including built-in apps and custom integrations.
-- get workflow details and configuration
-- app credential configurations
-- list all security automation workflows in the shuffle organization, including their names, descriptions, status, and tags.
-- create a security notification in the shuffle platform.
-- get execution history for a workflow
-- list app authentications
-- get workflow
-- incident response
-- abort a currently running workflow execution. use when a security automation is running incorrectly or needs to be stopped.
-- delete workflow
-- workflow execution history
-- get the full configuration of a specific shuffle security automation workflow including all actions, triggers, and variables.
-- trigger execution of a shuffle security automation workflow with optional input data (e.g., alert json, incident details). returns an execution id for status polling.
-- delete webhook
-- workflow file storage
-- abort execution
-- remove a webhook trigger
-- organization management
-- create webhook
-- create workflow
-- list workflows
-- search for security tool apps by name or category
-- list all configured app authentication credentials in the organization, showing which tools are connected to shuffle.
-- execute workflow
-- schedule workflows to run on a cron interval
-- search the global app library
-- search the shuffle global app library for security tool integrations by name or category (e.g., siem, edr, ticketing).
-- list all organizations
-- list notifications
-- security automation workflow management
 - list users
+- list files
+- execute workflow
+- create a webhook trigger that will start a specified workflow when the webhook url receives an http request (e.g., from a siem alert).
 - create notification
+- create webhook
 - list all organizations accessible to the authenticated user.
+- abort a running workflow execution
+- trigger execution of a shuffle security automation workflow with optional input data (e.g., alert json, incident details). returns an execution id for status polling.
+- list apps
+- webhook trigger management
+- organization notifications for security events
+- create a webhook trigger to start a workflow from external systems
+- app credential configurations
+- list notifications
+- schedule workflow
+- schedule workflows to run on a cron interval
+- security tool app integrations
+- abort execution
+- list all app authentication configurations
+- search the global app library
+- get the execution history for a workflow, showing past runs with their status (executing, finished, aborted, failed) and timestamps.
+- get workflow
+- list security notifications in the shuffle organization, filterable by status, type, and severity.
+- create a security notification in the shuffle platform.
+- organization user management
+- delete workflow
+- list security notifications
+- get workflow details and configuration
+- create a new security automation workflow in shuffle. the workflow starts as a draft and can be configured with actions and triggers.
+- security
+- abort a currently running workflow execution. use when a security automation is running incorrectly or needs to be stopped.
+- trigger workflow execution with security event data
+- organization management
+- workflow file storage
+- workflow execution history
+- list workflows
+- create a new security automation workflow
+- security automation workflow management
+- create a scheduled trigger for a workflow
+- orchestration
 - list all available security tool apps
-- list all security automation workflows
+- delete a workflow
+- list all users in the shuffle organization.
+- list all security tool apps available in the shuffle organization, including built-in apps and custom integrations.
+- list all organizations
+- list all files in the organization
+- list all files stored in the shuffle organization file store.
+- get executions
+- workflows
+- list all security automation workflows in the shuffle organization, including their names, descriptions, status, and tags.
+- incident response
+- remove a webhook trigger from the organization.
+- create workflow
+- stop a running workflow execution
 - create a scheduled trigger to run a workflow automatically at a specified cron interval (e.g., every hour, daily at midnight).
+- open source
+- soar
+- list authentications
+- delete webhook
+- list all users in the organization
+- list all security automation workflows
+- list all configured app authentication credentials in the organization, showing which tools are connected to shuffle.
+- individual workflow operations
+- execute a security automation workflow
+- get the full configuration of a specific shuffle security automation workflow including all actions, triggers, and variables.
+- get execution history for a workflow
+- search apps
+- get workflow executions
+- search for security tool apps by name or category
+- create a security notification
+- automation
+- individual webhook operations
+- search the shuffle global app library for security tool integrations by name or category (e.g., siem, edr, ticketing).
+- list app authentications
+- remove a webhook trigger
 slug: security-workflow-automation
 source_filename: security-workflow-automation.yaml
 source_heading: Capability Spec

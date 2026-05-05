@@ -35,50 +35,50 @@ personas: []
 provider_name: S&P Global
 provider_slug: s-and-p-global
 search_terms:
+- list symbols
+- list commodity symbols
+- get the full canonical entity record for a keid including aliases, cross-references (ticker, cusip, isin, lei, s&p global company id).
+- energy markets
+- market data
+- search for financial entities
+- commodity insights
+- get price history
+- get historical commodity prices
+- get entity
+- capital markets
+- commodity symbol reference data
+- link entity
+- analytics
+- get current prices
+- financial data
+- get current price assessments for specified commodity symbols
+- list available commodity symbols
 - canonical entity record
+- search entities
+- current commodity price assessments
+- link financial entity
+- search for financial entities (companies, instruments, funds, indices) by name or identifier. returns ranked candidates with confidence scores.
+- get historical price assessments over a date range
+- entity search by name or identifier
+- get modified commodity symbols
+- entity resolution and linking
+- resolve entity mentions to canonical keids
+- fortune 500
 - get list of commodity symbols with updated price assessments since a given date. use for incremental data sync.
 - get entity record by keid with cross-references
-- get current prices
-- get entity
-- analytics
-- energy markets
-- get price history
-- commodity symbol reference data
-- market data
-- list symbols
-- get historical commodity prices
-- resolve entity mentions to canonical keids
-- list commodity symbols
-- current commodity price assessments
-- trading
-- search for financial entities
-- historical commodity price assessments
-- get historical commodity price assessments for a date range. use for time series analysis, backtesting, and trend analysis in energy and commodity markets.
-- entity resolution and linking
 - get the latest price assessments for platts commodity symbols (e.g., pcaas00 for dated brent crude oil). returns current value, unit of measure, currency, and assessment date.
-- market intelligence
-- entity resolution
-- get current commodity prices
-- get the full canonical entity record for a keid including aliases, cross-references (ticker, cusip, isin, lei, s&p global company id).
-- credit ratings
-- financial data
-- list available platts commodity symbols with descriptions, units, and assessment frequency. filter by commodity name (crude oil, natural gas, lng, etc.).
-- entity search by name or identifier
 - s&p global
-- get modified commodity symbols
-- link financial entity
+- trading
+- get historical commodity price assessments for a date range. use for time series analysis, backtesting, and trend analysis in energy and commodity markets.
 - search financial entities
-- get current price assessments for specified commodity symbols
-- commodity insights
-- capital markets
-- get entity by keid
-- search for financial entities (companies, instruments, funds, indices) by name or identifier. returns ranked candidates with confidence scores.
-- search entities
-- list available commodity symbols
+- historical commodity price assessments
 - resolve a financial entity mention (company name, ticker, cusip, isin) to its canonical kensho entity identifier (keid) with confidence scores and cross-references.
-- fortune 500
-- get historical price assessments over a date range
-- link entity
+- market intelligence
+- list available platts commodity symbols with descriptions, units, and assessment frequency. filter by commodity name (crude oil, natural gas, lng, etc.).
+- entity resolution
+- get entity by keid
+- get current commodity prices
+- credit ratings
 slug: financial-data-analytics
 source_filename: financial-data-analytics.yaml
 source_heading: Capability Spec

@@ -22,21 +22,21 @@ provider_name: Amazon SES
 provider_slug: amazon-ses
 search_terms:
 - email
-- email deliverability
-- cloud operations
-- amazon ses resources
-- list resources
-- automation workflow for amazon ses
-- marketing email
-- aws cloud resource management
-- engineer managing amazon ses resources
-- aws
-- list amazon ses resources
-- notifications
-- email service
 - transactional email
+- list resources
+- list amazon ses resources
 - amazon ses
+- email deliverability
+- aws
+- marketing email
+- amazon ses resources
+- automation workflow for amazon ses
+- aws cloud resource management
+- email service
 - smtp
+- notifications
+- engineer managing amazon ses resources
+- cloud operations
 slug: amazon-ses
 source_filename: amazon-ses.yaml
 source_heading: Capability Spec

@@ -57,50 +57,50 @@ personas: []
 provider_name: WegoWise
 provider_slug: wegowise
 search_terms:
-- get latest meter reading
-- supported utility companies for automated data import
-- get the most recent utility reading for a meter
-- list buildings
-- list all utility meters associated with a building
-- get latest datum
 - manually add a utility usage datapoint to a meter
-- list all buildings in the portfolio
-- list utility companies available for automated meter data import
-- monthly energy and water usage data
-- list apartment units in a building
-- create meter datapoint
-- get building energy data
-- benchmarking
-- list apartments
-- list all apartment units within a building
-- list data-only meters
-- sustainability
-- multifamily
-- building energy
-- get building
-- create data meter
+- building portfolio management
 - create a meter connected to a utility company for automated data import
 - get detailed information about a specific building including size and type
-- list data meters
-- property management
-- list utility meters for a building
-- get meter raw data
-- list all utility companies supported for data import
+- get latest meter reading
+- create data meter
 - utility data
-- list utility companies
-- energy efficiency
-- building portfolio management
+- property management
+- multifamily
+- list all utility companies supported for data import
+- list buildings
 - list data-only meters for automated utility data import
-- list building meters
-- get raw utility datapoints for a meter
-- create a meter with utility credentials for automated import
-- get raw utility usage datapoints for a meter including billing period data
-- get most recent meter reading
-- wegowise
-- get normalized monthly energy usage data for a building - use for benchmarking and trend analysis
-- list all buildings in the wegowise portfolio with metadata
 - get normalized monthly energy usage data for benchmarking
+- create meter datapoint
+- list utility meters for a building
+- list apartments
+- list data meters
 - get building details and metadata
+- get normalized monthly energy usage data for a building - use for benchmarking and trend analysis
+- get the most recent utility reading for a meter
+- energy efficiency
+- get most recent meter reading
+- list building meters
+- list utility companies
+- get latest datum
+- building energy
+- get building
+- sustainability
+- list data-only meters
+- create a meter with utility credentials for automated import
+- get raw utility datapoints for a meter
+- list all apartment units within a building
+- get raw utility usage datapoints for a meter including billing period data
+- list apartment units in a building
+- wegowise
+- get building energy data
+- list all buildings in the wegowise portfolio with metadata
+- monthly energy and water usage data
+- supported utility companies for automated data import
+- list utility companies available for automated meter data import
+- get meter raw data
+- list all buildings in the portfolio
+- benchmarking
+- list all utility meters associated with a building
 slug: building-energy-benchmarking
 source_filename: building-energy-benchmarking.yaml
 source_heading: Capability Spec

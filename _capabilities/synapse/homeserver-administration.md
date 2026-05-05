@@ -42,53 +42,53 @@ personas: []
 provider_name: Synapse
 provider_slug: synapse
 search_terms:
-- create a new registration token
-- list tokens
-- matrix
-- server information
-- users
-- decentralized
-- create user
-- get server version
-- administration
-- list all registration tokens and their usage status
-- synapse
-- create token
-- create a new user or modify an existing user account on the homeserver
-- federation
-- list all members of a room
-- list all members of a specific matrix room
-- get user
-- user account management
-- open-source
-- room membership management
-- get detailed information about a specific matrix user
-- individual user operations
-- room administration
-- chat
-- homeserver
-- messaging
-- collaboration
-- list users
-- list registration tokens
-- list all rooms on the homeserver
-- list all rooms hosted on the synapse homeserver with member counts
-- create a new registration token for controlled user sign-up
-- list all local users registered on the synapse homeserver
 - get the current synapse homeserver version and python version
-- real-time
-- get room members
-- create registration token
-- registration token management
-- get synapse server version
+- list users
+- list all rooms hosted on the synapse homeserver with member counts
+- create token
+- list all local users registered on the synapse homeserver
+- get detailed information about a specific matrix user
 - get room
+- create or modify user
+- get server version
+- user account management
+- get user
+- create user
+- decentralized
+- get room members
+- messaging
+- matrix
+- registration token management
+- get version
+- room administration
+- create registration token
+- open-source
+- list all users on the homeserver
+- server information
+- chat
 - create or modify a user account
 - get user details
-- create or modify user
-- get detailed information about a specific matrix room
+- list all registration tokens and their usage status
+- administration
+- users
+- list registration tokens
+- list tokens
+- individual user operations
+- create a new user or modify an existing user account on the homeserver
+- room membership management
+- real-time
+- federation
 - list rooms
-- get version
-- list all users on the homeserver
+- create a new registration token for controlled user sign-up
+- homeserver
+- synapse
+- list all members of a room
+- create a new registration token
+- get detailed information about a specific matrix room
+- list all rooms on the homeserver
+- collaboration
+- get synapse server version
+- list all members of a specific matrix room
 slug: homeserver-administration
 source_filename: homeserver-administration.yaml
 source_heading: Capability Spec

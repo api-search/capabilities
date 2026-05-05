@@ -50,51 +50,51 @@ personas: []
 provider_name: SSL/TLS
 provider_slug: ssl-tls
 search_terms:
-- certificate authority
-- request certificate
-- security
-- get ssl/tls certificate details including pem, chain, and metadata
-- renew certificate
-- tls
-- get certificate order status including domain validation challenges
-- list ssl/tls certificates with optional status, domain, and expiry filtering
-- certificate management
 - ssl/tls
-- domain validation status
-- list domains and validation status
-- cryptography
-- initiate renewal for an existing ssl/tls certificate
-- https
-- get certificates expiring within n days
-- get expiring certificates
-- request a new ssl/tls certificate for domain validation
-- certificate orders
-- order details and challenges
-- download certificate
-- list domains
-- download certificate in pem or pkcs12 format
-- get order
-- revoke a certificate with reason code
-- get order details with challenge status
-- request a new ssl/tls certificate for one or more domains
-- revoke certificate
+- security
 - list domains and their certificate validation status
-- list certificates
-- certificate renewal
 - get ssl/tls certificates expiring within the next n days for proactive renewal
-- list certificates with optional status and domain filtering
-- certificate revocation
-- initiate certificate renewal
-- pki
-- list certificate orders
-- certificates
-- revoke an ssl/tls certificate with a reason code
-- list orders
+- request certificate
 - get certificate details and pem data
-- certificate details
-- download ssl/tls certificate in pem or pkcs12 format
-- get certificate
+- domain validation status
+- certificate renewal
+- list certificate orders
+- get order
+- list certificates with optional status and domain filtering
+- order details and challenges
+- tls
+- revoke a certificate with reason code
 - expiry monitoring
+- get certificates expiring within n days
+- request a new ssl/tls certificate for domain validation
+- get order details with challenge status
+- cryptography
+- list domains
+- https
+- list ssl/tls certificates with optional status, domain, and expiry filtering
+- certificate details
+- list certificates
+- get ssl/tls certificate details including pem, chain, and metadata
+- certificate management
+- download certificate in pem or pkcs12 format
+- certificate authority
+- list domains and validation status
+- certificates
+- list orders
+- initiate renewal for an existing ssl/tls certificate
+- request a new ssl/tls certificate for one or more domains
+- download certificate
+- initiate certificate renewal
+- get expiring certificates
+- get certificate
+- revoke an ssl/tls certificate with a reason code
+- certificate revocation
+- download ssl/tls certificate in pem or pkcs12 format
+- certificate orders
+- renew certificate
+- get certificate order status including domain validation challenges
+- revoke certificate
+- pki
 slug: certificate-lifecycle
 source_filename: certificate-lifecycle.yaml
 source_heading: Capability Spec

@@ -61,55 +61,55 @@ personas: []
 provider_name: Sonatype
 provider_slug: sonatype
 search_terms:
-- list scan reports for a specific application
-- security
-- list applications
-- get spdx report
-- search for a component by hash or purl to get vulnerability and policy data
-- software supply chain
+- get application
+- register a new application
+- get application details from sonatype lifecycle
+- list policy waivers for an owner
+- list policy waivers
 - generate spdx sbom
 - devsecops
-- list reports
-- get vulnerability
-- policy
-- list waivers
-- get application details from sonatype lifecycle
 - list all applications in portfolio
-- list policy violations
-- get application details by id
-- software bill of materials generation
-- list application reports
-- get application
-- scan reports and compliance metrics
-- register a new application
-- list reports for all applications
-- list policy waivers
+- security
+- search for a component by hash or purl
 - list policy violations for an application
-- search component
-- sbom
+- software bill of materials generation
+- application portfolio management
+- create application
 - vulnerability intelligence
 - get detailed vulnerability information by cve or sonatype reference id
-- search for a component by hash or purl
-- list violations
-- compliance
-- generate spdx sbom for a scan
-- application portfolio management
-- software composition analysis
-- get vulnerability details by cve or reference id
-- generate an spdx software bill of materials for an application scan
-- policy violation monitoring
-- policy waiver management
-- vulnerability management
-- sonatype
-- remove an application from portfolio
-- get application reports
-- register a new application in sonatype lifecycle
-- list policy waivers for an owner
 - delete application
+- get application details by id
+- policy violation monitoring
+- list waivers
+- generate an spdx software bill of materials for an application scan
+- list reports for all applications
 - get reports for a specific application
-- component and vulnerability search
+- list violations
+- get spdx report
+- register a new application in sonatype lifecycle
+- sonatype
+- generate spdx sbom for a scan
 - list all applications in the sonatype lifecycle portfolio
-- create application
+- software composition analysis
+- list application reports
+- scan reports and compliance metrics
+- list applications
+- component and vulnerability search
+- policy waiver management
+- get vulnerability details by cve or reference id
+- vulnerability management
+- search component
+- get vulnerability
+- list policy violations
+- get application reports
+- list scan reports for a specific application
+- sbom
+- compliance
+- search for a component by hash or purl to get vulnerability and policy data
+- list reports
+- remove an application from portfolio
+- software supply chain
+- policy
 slug: software-supply-chain-security
 source_filename: software-supply-chain-security.yaml
 source_heading: Capability Spec

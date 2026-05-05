@@ -30,43 +30,43 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- get balance account
-- create payment instrument
+- online and in-person payment acceptance.
+- marketplaces
+- transfers
+- get account holder
+- fintech
+- manages merchant accounts, terminals, and dispute responses.
+- create balance account
+- get balance account details.
+- balance platform
+- merchant account and balance platform configuration.
+- get account holder details.
+- manage balance accounts.
+- issue a virtual or physical payment card for an account holder.
+- manage payment instruments including virtual and physical cards.
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
+- create an account holder.
 - adyen
 - create a payment instrument (card).
-- get balance account details.
-- get account holder
 - create a balance account for an account holder.
-- balance platform
-- issue card
-- marketplaces
-- manage account holders on the balance platform.
-- manage payment instruments including virtual and physical cards.
-- financial services
-- get balance and details of a balance account.
-- transfers
-- create a balance account.
 - 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
 - payments
 - marketplace and platform fund management.
-- issue a virtual or physical payment card for an account holder.
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- manages merchant accounts, terminals, and dispute responses.
-- create a new account holder on the adyen balance platform.
-- get account holder details.
-- chargeback and dispute handling.
-- retrieve details of an account holder.
-- builds marketplace and fintech platforms using adyen balance platform.
-- online and in-person payment acceptance.
-- manage balance accounts.
-- create balance account
 - create account holder
-- create an account holder.
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- fintech
-- builds payment integrations using adyen apis and sdks.
-- merchant account and balance platform configuration.
+- create payment instrument
+- create a balance account.
+- retrieve details of an account holder.
+- issue card
+- chargeback and dispute handling.
+- manage account holders on the balance platform.
 - issuing
+- get balance and details of a balance account.
+- financial services
+- builds marketplace and fintech platforms using adyen balance platform.
+- builds payment integrations using adyen apis and sdks.
+- get balance account
+- create a new account holder on the adyen balance platform.
 slug: balance-platform
 source_filename: balance-platform.yaml
 source_heading: Capability Spec

@@ -41,43 +41,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- create a unified checkout session supporting multiple payment methods
-- credit cards
-- create a new checkout session for a merchant
-- process a payment through the mastercard gateway
-- create a buy-now-pay-later installment plan
-- digital identity
-- generate a merchant qr code for payment
-- e-commerce
-- create checkout session
-- mastercard
-- process payment
-- financial services
-- open banking
-- process cloud transaction
-- generate qr code
-- register contactless reader
-- unified checkout sessions
-- payments
-- generate a merchant-presented qr code for payment
-- buy-now-pay-later installment plans
-- create a unified checkout session
-- create unified session
-- merchant
-- get payment details
-- checkout session management
-- process a cloud commerce transaction
-- create a new checkout session
-- retrieve payment transaction details
-- create an installment plan
-- qr code payment acceptance
-- get payment
-- fraud detection
 - process a payment through the gateway
-- checkout
-- payment processing
+- e-commerce
+- create unified session
+- qr code payment acceptance
+- create an installment plan
 - create installment plan
+- checkout
+- register contactless reader
+- credit cards
+- generate qr code
+- open banking
+- process payment
+- generate a merchant-presented qr code for payment
+- process a payment through the mastercard gateway
+- payment processing
 - register a contactless reader device
+- get payment details
+- create a new checkout session for a merchant
+- buy-now-pay-later installment plans
+- process a cloud commerce transaction
+- merchant
+- generate a merchant qr code for payment
+- retrieve payment transaction details
+- payments
+- unified checkout sessions
+- create checkout session
+- create a new checkout session
+- checkout session management
+- get payment
+- digital identity
+- process cloud transaction
+- mastercard
+- financial services
+- create a buy-now-pay-later installment plan
+- fraud detection
+- create a unified checkout session supporting multiple payment methods
+- create a unified checkout session
 slug: payment-processing-and-checkout
 source_filename: payment-processing-and-checkout.yaml
 source_heading: Capability Spec

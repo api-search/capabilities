@@ -47,59 +47,59 @@ personas: []
 provider_name: Temenos
 provider_slug: temenos
 search_terms:
-- cancel a pending securities order
-- place a security order
-- wealth management clients
-- investment portfolio management
-- cancel security order
-- list banking accounts associated with a wealth client
-- investment management
-- place a buy or sell order for a security
-- wealth management
-- securities order execution
-- create a new investment portfolio for a client
-- place order
-- get portfolio valuation
-- digital banking
-- place security order
-- financial services
-- list client accounts
-- open banking
-- get valuation
-- banking
 - list available securities
-- cloud banking
-- list portfolios
-- list investment portfolios
-- core banking
-- payments
-- list positions
-- list client banking accounts
-- list portfolio positions
-- securities trading
-- create a new investment portfolio
-- list available securities for investment
-- list accounts
-- securities reference data
-- private banking
-- list pending and executed security orders
-- get account balances for a wealth client's banking account
-- list securities
-- client banking accounts (from transact)
-- portfolio valuation
-- get client account balances
-- portfolio management
-- list current holdings positions in a portfolio
-- portfolio holdings positions
-- list orders
-- fintech
-- list security orders
 - list wealth management clients
+- core banking
+- list portfolios
+- list current holdings positions in a portfolio
+- cancel a pending securities order
+- list client accounts
+- wealth management clients
+- list pending and executed security orders
+- list accounts
+- fintech
+- list positions
+- get portfolio valuation
+- open banking
 - get the current market value and performance of a portfolio
-- list clients
+- place order
+- list client banking accounts
+- list banking accounts associated with a wealth client
 - create portfolio
+- securities reference data
+- list investment portfolios
 - list positions in a portfolio
+- list securities
+- place security order
+- cancel security order
+- wealth management
+- private banking
+- list portfolio positions
+- place a buy or sell order for a security
+- client banking accounts (from transact)
+- get valuation
+- securities trading
+- get client account balances
+- portfolio valuation
+- list clients
+- place a security order
+- payments
+- banking
 - list investment portfolios for wealth clients
+- create a new investment portfolio for a client
+- list orders
+- cloud banking
+- investment portfolio management
+- portfolio holdings positions
+- digital banking
+- investment management
+- securities order execution
+- create a new investment portfolio
+- get account balances for a wealth client's banking account
+- financial services
+- portfolio management
+- list security orders
+- list available securities for investment
 slug: wealth-management
 source_filename: wealth-management.yaml
 source_heading: Capability Spec

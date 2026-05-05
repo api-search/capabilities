@@ -58,63 +58,63 @@ personas: []
 provider_name: Restream
 provider_slug: restream
 search_terms:
-- get channel
-- list event history
-- rtmp stream key and srt url
-- get stream key for broadcasting
-- scheduled upcoming events
-- individual channel management
-- get stream key
-- get details for a specific streaming channel
-- list all currently active live streaming events
-- get stream key for a specific event
-- get the authenticated user's restream account profile
-- get a specific event
-- list historical completed live streaming events
-- list platforms
-- individual event management
-- list all connected streaming destination channels
-- completed event history
-- update channel settings
-- list channels
-- get channel meta
-- broadcast
-- list in progress events
-- get event
-- list all supported streaming destination platforms
-- list upcoming live events
-- list currently active live events
-- get the stream key for a specific event
 - channel stream metadata
 - get channel stream metadata
-- enable or disable a channel, or update its display name
-- multistreaming
-- get a specific channel
-- chat
+- get stream key
 - retrieve the rtmp stream key and srt url for broadcasting
-- event-specific stream key
-- events
-- restream
+- list all currently active live streaming events
+- get channel meta
+- get stream key for a specific event
 - live streaming
-- update channel stream title and description
-- currently streaming events
-- channels
-- streaming platform directory
-- list historical events
+- get a specific channel
 - list all scheduled upcoming live stream events
-- list all streaming platforms supported by restream for multistreaming destinations
+- list in progress events
+- update channel stream title and description
+- individual event management
 - update channel
-- get event stream key
+- streaming platform directory
+- get a specific event
+- get stream metadata (title, description) for a channel
 - get details for a specific live streaming event
-- connected streaming channels
+- get event
+- restream
+- broadcast
+- update channel settings
+- update the stream title and description for a channel
+- get details for a specific streaming channel
+- event-specific stream key
+- list all streaming platforms supported by restream for multistreaming destinations
+- list historical completed live streaming events
+- list all supported streaming destination platforms
+- update channel meta
+- list channels
+- chat
+- get event stream key
+- enable or disable a channel, or update its display name
+- list event history
+- scheduled upcoming events
+- currently streaming events
 - list upcoming events
+- list historical events
+- get the stream key for a specific event
+- get user profile
+- channels
+- connected streaming channels
+- list platforms
+- get channel
+- events
+- video streaming
+- list all connected streaming destination channels
+- completed event history
+- list upcoming live events
+- rtmp stream key and srt url
 - content delivery
 - list all connected streaming channels
-- video streaming
-- get user profile
-- update the stream title and description for a channel
-- get stream metadata (title, description) for a channel
-- update channel meta
+- individual channel management
+- list currently active live events
+- get the authenticated user's restream account profile
+- get stream key for broadcasting
+- multistreaming
 slug: multistream-management
 source_filename: multistream-management.yaml
 source_heading: Capability Spec

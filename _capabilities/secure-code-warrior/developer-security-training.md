@@ -46,50 +46,50 @@ personas: []
 provider_name: Secure Code Warrior
 provider_slug: secure-code-warrior
 search_terms:
-- developer training
+- get developer leaderboard
+- training time metrics
+- training progress reporting
+- devsecops
+- list users
+- get training progress per developer
+- list all courses
+- security training
+- create user
+- enroll a new developer in the secure code warrior security training platform
+- get detailed training progress for all developers including realm, level, and quest completion
+- developer training leaderboard
+- get audit log
 - get system audit log
 - appsec
-- list all teams
-- list all platform users
 - application security
-- list courses
-- create user
-- security training
-- enroll a new developer in the secure code warrior security training platform
-- devsecops
-- get training progress
-- get total time developers have spent on security training, assessments, courses, and tournaments
+- security education
+- list all assessments
+- get time spent
+- developer training
+- list assessments
+- get time spent on training activities
+- list all platform users
+- list all security training teams within the organization
 - get developer security training leaderboard showing points, completions, and rank changes
-- get training progress per developer
-- developer training leaderboard
-- secure coding
 - security training courses
-- training progress reporting
-- security assessments
-- team management
-- system audit log
-- list teams
-- get detailed training progress for all developers including realm, level, and quest completion
+- create a new user
+- list security knowledge assessments with their status, language coverage, and difficulty levels
+- list all developers enrolled in secure code warrior security training
+- get training progress
 - get developer leaderboard with training stats
 - retrieve platform audit log showing user actions and administrative changes
-- list security knowledge assessments with their status, language coverage, and difficulty levels
-- get time spent
-- list users
-- create a new user
-- user management
-- list assessments
-- training time metrics
-- reporting
-- get time spent on training activities
-- list all assessments
-- security education
-- list all security training teams within the organization
-- list all courses
-- get audit log
+- list teams
+- system audit log
+- team management
+- list courses
 - list available secure coding courses organized by language and security topic
-- get developer leaderboard
-- list all developers enrolled in secure code warrior security training
+- secure coding
+- list all teams
+- user management
 - get developers progress
+- get total time developers have spent on security training, assessments, courses, and tournaments
+- security assessments
+- reporting
 slug: developer-security-training
 source_filename: developer-security-training.yaml
 source_heading: Capability Spec

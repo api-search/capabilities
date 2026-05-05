@@ -1,40 +1,51 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability deployed via Naftiko Operator for Kubernetes + NaftikoCapability CRD + GitOps (ArgoCD/Flux) — DevOps/Platform Engineer's native language.
+description: A capability over a Kubernetes cluster's API server for GitOps-driven capability deployments — read-only deployments + scaling exposed as governed actions.
 layout: capability
 name: K8S Gitops Capability
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-deployments
+  path: /deployments
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- mcp
-- ai
-- naftiko
-- api integration
+- list deployments
 - spec-driven integration
+- get deployment
+- gitops
+- scale deployment
+- mcp
 - capabilities
-- example op
-- a capability deployed via naftiko operator for kubernetes + naftikocapability crd + gitops (argocd/flux) — devops/platform engineer's native language.
+- naftiko
+- kubernetes
+- api integration
 - governance
+- ai
 slug: k8s-gitops-capability
 source_filename: k8s-gitops-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: K8s Gitops Capability\n  description: A capability deployed via Naftiko Operator for Kubernetes + NaftikoCapability CRD + GitOps (ArgoCD/Flux) — DevOps/Platform Engineer's native language.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: k8s-gitops-capability-rest\n    description: REST API for K8s Gitops Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n\
-  \        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: k8s-gitops-capability-mcp\n    description: MCP server exposing K8s Gitops Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability deployed via Naftiko Operator for Kubernetes + NaftikoCapability CRD + GitOps (ArgoCD/Flux) — DevOps/Platform Engineer's native language.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: k8s-gitops-capability-skills\n    description: Agent Skill bundle for K8s Gitops Capability.\n    skills:\n    - name: k8s-gitops-capability\n      description: A capability deployed via Naftiko Operator for Kubernetes + NaftikoCapability CRD + GitOps (ArgoCD/Flux) — DevOps/Platform Engineer's native language.\n      location: file:///opt/naftiko/skills/k8s-gitops-capability\n      allowed-tools: example\n      tools:\n \
-  \     - name: example\n        description: A capability deployed via Naftiko Operator for Kubernetes + NaftikoCapability CRD + GitOps (ArgoCD/Flux) — DevOps/Platform Engineer's native language.\n        from:\n          sourceNamespace: k8s-gitops-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: K8s Gitops Capability\n  description: A capability over a Kubernetes cluster's API server for GitOps-driven capability deployments — read-only deployments + scaling exposed as governed actions.\n  tags: [Naftiko, Kubernetes, GitOps]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: k8s-env\n  keys: {K8S_HOST: K8S_HOST, K8S_TOKEN: K8S_TOKEN, K8S_NAMESPACE: K8S_NAMESPACE}\ncapability:\n  consumes:\n  - namespace: k8s\n    type: http\n    baseUri: 'https://{{K8S_HOST}}'\n    authentication: {type: bearer, token: '{{K8S_TOKEN}}'}\n    resources:\n    - {name: deployments, path: '/apis/apps/v1/namespaces/{{K8S_NAMESPACE}}/deployments', operations: [{name: list-deployments, method: GET}]}\n    - name: deployment\n      path: '/apis/apps/v1/namespaces/{{K8S_NAMESPACE}}/deployments/{{name}}'\n      operations:\n      - {name: get-deployment, method: GET, inputParameters: [{name: name, in: path}]}\n      - {name: patch-deployment,\
+  \ method: PATCH, inputParameters: [{name: name, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: k8s-gitops-capability-rest\n    description: REST surface for K8s deploys.\n    resources:\n    - {name: deployments, path: /deployments, operations: [{method: GET, name: list-deployments, call: k8s.list-deployments}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: k8s-gitops-capability-mcp\n    description: MCP for K8s deploys.\n    tools:\n    - {name: list-deployments, hints: {readOnly: true}, call: k8s.list-deployments}\n    - name: get-deployment\n      hints: {readOnly: true}\n      inputParameters: [{name: name, type: string, required: true}]\n      call: k8s.get-deployment\n    - name: scale-deployment\n      inputParameters: [{name: name, type: string, required: true}]\n      call: k8s.patch-deployment\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: k8s-gitops-capability-skills\n    description:\
+  \ Skill for K8s GitOps.\n    skills:\n    - name: k8s-gitops-capability\n      description: Kubernetes GitOps deploys.\n      location: file:///opt/naftiko/skills/k8s-gitops-capability\n      allowed-tools: list-deployments,get-deployment,scale-deployment\n      tools:\n      - {name: list-deployments, from: {sourceNamespace: k8s-gitops-capability-mcp, action: list-deployments}}\n      - {name: get-deployment, from: {sourceNamespace: k8s-gitops-capability-mcp, action: get-deployment}}\n      - {name: scale-deployment, from: {sourceNamespace: k8s-gitops-capability-mcp, action: scale-deployment}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/k8s-gitops-capability.yaml
 tags:
 - Naftiko
+- Kubernetes
+- GitOps
 tools:
-- description: A capability deployed via Naftiko Operator for Kubernetes + NaftikoCapability CRD + GitOps (ArgoCD/Flux) — DevOps/Platform Engineer's native language.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-deployments
+- description: ''
+  hints:
+    readOnly: true
+  name: get-deployment
+- description: ''
+  hints: {}
+  name: scale-deployment
 ---

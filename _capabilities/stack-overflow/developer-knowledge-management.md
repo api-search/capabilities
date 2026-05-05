@@ -47,57 +47,57 @@ personas: []
 provider_name: Stack Overflow
 provider_slug: stack-overflow
 search_terms:
-- knowledge base
-- create team question
-- code
-- create a new knowledge article in a stack overflow for teams workspace
-- search questions
-- get stack overflow programming tags
-- create a new internal knowledge base question
-- answers
-- get tags
-- get top-voted or most-active stack overflow questions by programming language or topic tag
-- create a new question in a stack overflow for teams internal knowledge base
-- search advanced
-- browse programming tags
-- get team questions
-- find similar
-- search stack overflow for programming questions, solutions, and code examples by keyword or technology tag
-- create a new internal documentation article
-- get knowledge articles from a stack overflow for teams workspace
-- search stack overflow questions by title text and tags
-- knowledge management
-- search
-- programming
-- browse stack overflow tags to explore programming languages, frameworks, and technologies
-- search stack overflow questions
-- developer community
-- search stackoverflow
-- advanced stack overflow question search
-- stack overflow
-- get internal knowledge base questions
-- developer tools
-- advanced stack overflow search with filters for accepted answers, minimum answers, tags, and view count
-- find similar questions before asking new ones
-- advanced search stackoverflow
-- advanced search with acceptance and filter options
-- browse programming technology tags
-- find existing similar questions to avoid duplicates
-- get internal documentation articles
 - find similar stackoverflow questions
+- browse programming tags
+- find similar
+- create a new internal documentation article
+- get internal documentation articles
+- advanced stack overflow search with filters for accepted answers, minimum answers, tags, and view count
+- create a new question in a stack overflow for teams internal knowledge base
+- get team questions
+- advanced search with acceptance and filter options
+- questions
+- programming
+- advanced stack overflow question search
+- answers
+- advanced search stackoverflow
+- create team article
+- teams
+- knowledge base
+- create a new knowledge article in a stack overflow for teams workspace
+- browse stack overflow questions
+- get stack overflow programming tags
+- developer tools
+- search questions
+- get knowledge articles from a stack overflow for teams workspace
+- internal team knowledge articles
+- get tags
+- code
+- search stackoverflow
+- search advanced
+- search
+- find similar questions before asking new ones
+- browse programming technology tags
+- browse stack overflow tags to explore programming languages, frameworks, and technologies
+- knowledge management
+- search stack overflow questions by title text and tags
+- internal team q&a questions
+- developer community
+- get top-voted or most-active stack overflow questions by programming language or topic tag
+- search stack overflow questions
+- stack overflow
+- get questions
+- get questions from stack overflow sorted by activity, votes, or creation date
+- q&a
+- find existing stack overflow questions similar to a given title to avoid duplicates
+- create a new internal knowledge base question
+- search stack overflow for programming questions, solutions, and code examples by keyword or technology tag
 - get top stackoverflow questions
 - get questions from an internal stack overflow for teams knowledge base
-- get questions
-- teams
-- internal team knowledge articles
-- find existing stack overflow questions similar to a given title to avoid duplicates
+- create team question
+- get internal knowledge base questions
+- find existing similar questions to avoid duplicates
 - get team articles
-- q&a
-- create team article
-- get questions from stack overflow sorted by activity, votes, or creation date
-- questions
-- internal team q&a questions
-- browse stack overflow questions
 slug: developer-knowledge-management
 source_filename: developer-knowledge-management.yaml
 source_heading: Capability Spec

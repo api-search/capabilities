@@ -39,47 +39,47 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- stream conversion events
-- marketing
-- fetch existing conversion rules.
-- subscribe lead notifications
-- get the user's sponsored accounts.
-- get lead by id
-- sales intelligence, lead management, and crm integration.
-- conversions
-- uses sales navigator for lead generation and crm sync.
-- fetch full lead data by id.
-- integrates linkedin authentication and sharing into applications.
-- create conversion rule
-- employee development tracking and content access.
-- data portability and advertiser transparency for dma.
-- stream conversion events.
-- business
-- manages b2b ad campaigns and audience targeting on linkedin.
-- pull lead form responses.
-- validate organization role
-- tracks employee learning activity and completions.
-- message archiving and regulatory communications governance.
-- subscribe for lead notification webhooks.
-- get lead forms for a sponsored account.
-- lead generation
 - professional networking
-- posts jobs and manages candidates through ats integrations.
-- recruiting
-- create a new conversion rule.
-- get sponsored accounts
-- b2b advertising, audience targeting, and campaign analytics.
-- demand generation
-- get lead form responses
-- archives communications for regulatory compliance.
-- linkedin
 - authentication, sharing, and verification for consumer apps.
-- get lead forms
-- social media
-- careers
-- validate user's organization role for lead access.
-- job posting, recruiting, and applicant tracking.
 - get conversion rules
+- archives communications for regulatory compliance.
+- sales intelligence, lead management, and crm integration.
+- data portability and advertiser transparency for dma.
+- marketing
+- lead generation
+- linkedin
+- employee development tracking and content access.
+- demand generation
+- subscribe for lead notification webhooks.
+- fetch existing conversion rules.
+- create a new conversion rule.
+- conversions
+- posts jobs and manages candidates through ats integrations.
+- stream conversion events.
+- fetch full lead data by id.
+- b2b advertising, audience targeting, and campaign analytics.
+- get lead form responses
+- careers
+- social media
+- create conversion rule
+- get the user's sponsored accounts.
+- get lead forms
+- manages b2b ad campaigns and audience targeting on linkedin.
+- job posting, recruiting, and applicant tracking.
+- message archiving and regulatory communications governance.
+- validate organization role
+- subscribe lead notifications
+- get lead forms for a sponsored account.
+- get sponsored accounts
+- recruiting
+- get lead by id
+- pull lead form responses.
+- uses sales navigator for lead generation and crm sync.
+- validate user's organization role for lead access.
+- tracks employee learning activity and completions.
+- stream conversion events
+- business
+- integrates linkedin authentication and sharing into applications.
 slug: lead-generation-and-conversions
 source_filename: lead-generation-and-conversions.yaml
 source_heading: Capability Spec

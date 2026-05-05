@@ -9,12 +9,12 @@ personas: []
 provider_name: Zluri
 provider_slug: zluri
 search_terms:
+- uses zluri for access governance, reviews, and compliance.
 - saas management
-- operates the saas data pipeline into zluri.
+- owns saas visibility, governance, and cost control.
 - push entity and activity data from custom systems into zluri.
 - access management
-- owns saas visibility, governance, and cost control.
-- uses zluri for access governance, reviews, and compliance.
+- operates the saas data pipeline into zluri.
 slug: saas-data-sync
 source_filename: saas-data-sync.yaml
 source_heading: Capability Spec

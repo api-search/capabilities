@@ -38,44 +38,44 @@ personas: []
 provider_name: SnapLogic
 provider_slug: snaplogic
 search_terms:
-- automation
-- stop a running pipeline execution
 - list pipeline executions
-- get asset privileges
-- dataops
-- management
-- monitoring
-- get execution
-- pipeline execution performance metrics
-- delete a snaplogic project or project space
-- stop execution
-- integrations
-- create project
-- delete project
-- api management
-- retrieve pipeline execution performance metrics and concurrency stats for the snaplogic org
-- integration
-- get metrics
-- get pipeline execution
-- asset access control management
-- data integration
-- create a new snaplogic project or project space
-- stop pipeline execution
-- list executions
-- grant access permissions to a user or group for a snaplogic project
-- get execution metrics
-- stop a running snaplogic pipeline execution by its runtime uuid
-- get privileges
-- get the status and details of a specific snaplogic pipeline execution
-- grant asset access
 - ipaas
-- ai
-- get current user's access privileges for a snaplogic project or asset path
+- get privileges
+- integration
+- grant access permissions to a user or group for a snaplogic project
 - snaplogic
-- get or control a specific execution
-- list all running and recent pipeline executions in the snaplogic organization
+- stop execution
+- get metrics
+- data integration
+- ai
+- retrieve pipeline execution performance metrics and concurrency stats for the snaplogic org
+- grant asset access
+- get execution
+- get current user's access privileges for a snaplogic project or asset path
+- create a new snaplogic project or project space
+- get asset privileges
 - list all pipeline executions
+- dataops
+- stop pipeline execution
+- get the status and details of a specific snaplogic pipeline execution
+- list all running and recent pipeline executions in the snaplogic organization
+- asset access control management
+- delete a snaplogic project or project space
+- integrations
+- pipeline execution performance metrics
+- get or control a specific execution
+- api management
+- get pipeline execution
+- get execution metrics
 - project lifecycle management
+- delete project
+- monitoring
+- list executions
+- automation
+- stop a running snaplogic pipeline execution by its runtime uuid
+- create project
+- management
+- stop a running pipeline execution
 slug: pipeline-operations
 source_filename: pipeline-operations.yaml
 source_heading: Capability Spec

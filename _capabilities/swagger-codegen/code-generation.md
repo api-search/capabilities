@@ -33,35 +33,35 @@ personas: []
 provider_name: Swagger Codegen
 provider_slug: swagger-codegen
 search_terms:
+- generate code
+- generate model
+- generator
 - generate intermediate model json for debugging
-- list all available client sdk generator languages for v3 openapi specs
-- available generator languages and types
-- get language options
+- swagger
+- get all configurable options for a specific swagger codegen generator language
 - open source
 - list available generator languages for a type and version
-- generate client sdk
-- list languages
-- generator options per language
-- generate a client sdk in the specified language from an openapi specification
 - list server languages
-- generate server stub
-- list client languages
-- sdk
-- generate the intermediate bundle model json for a generation request — useful for debugging templates
-- code generation
-- generate model
+- generate client sdk
+- list all available client sdk generator languages for v3 openapi specs
 - generate a server stub in the specified framework from an openapi specification
-- generator
+- list client languages
+- generate server stub
+- intermediate model inspection
 - openapi
 - generate a client sdk or server stub from an openapi spec
-- generate code
 - list options
+- list languages
 - get configurable generation options for a language
-- client libraries
 - list all available server stub generator languages for v3 openapi specs
-- intermediate model inspection
-- get all configurable options for a specific swagger codegen generator language
-- swagger
+- generator options per language
+- available generator languages and types
+- get language options
+- generate a client sdk in the specified language from an openapi specification
+- code generation
+- generate the intermediate bundle model json for a generation request — useful for debugging templates
+- sdk
+- client libraries
 slug: code-generation
 source_filename: code-generation.yaml
 source_heading: Capability Spec

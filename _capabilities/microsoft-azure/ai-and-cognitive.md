@@ -28,48 +28,48 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- list available ai models
-- create chat completion
-- openai
-- generate images from text
-- list model deployments
-- t1
-- openai list deployments
-- openai create image
-- model listing
-- infrastructure as a service
-- create text embeddings
-- azure
 - create a chat completion
-- list cognitive accounts
-- api management
-- platform as a service
-- create embedding
-- cognitive list accounts
-- openai create translation
 - transcribe audio to text
-- openai create transcription
-- openai list models
-- cloud
-- list available openai models
-- list openai models
-- embedding operations
+- openai create translation
 - chat completion operations
-- enterprise
-- openai create speech
+- create text embeddings
+- list openai models
+- list cognitive accounts
+- cognitive list accounts
 - generate speech from text
 - cognitive services accounts
-- openai create completion
-- openai create chat completion
-- ai
-- cognitive services
-- create a text completion
-- translate audio to english
 - cognitive list models
-- create a chat completion using azure openai
-- openai create embedding
+- ai
+- cloud
+- enterprise
 - list cognitive services accounts
+- platform as a service
+- openai
+- openai create transcription
+- translate audio to english
+- list available ai models
+- azure
+- t1
+- openai create chat completion
 - cloud computing
+- openai create speech
+- openai list deployments
+- create embedding
+- list available openai models
+- infrastructure as a service
+- generate images from text
+- api management
+- openai create image
+- create a text completion
+- openai list models
+- model listing
+- create a chat completion using azure openai
+- cognitive services
+- create chat completion
+- embedding operations
+- openai create completion
+- openai create embedding
+- list model deployments
 slug: ai-and-cognitive
 source_filename: ai-and-cognitive.yaml
 source_heading: Capability Spec

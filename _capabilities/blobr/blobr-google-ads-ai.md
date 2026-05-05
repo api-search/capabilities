@@ -9,9 +9,9 @@ personas: []
 provider_name: Blobr
 provider_slug: blobr
 search_terms:
-- advertising
 - marketing automation
 - ai agents
+- advertising
 - ppc
 - google ads
 slug: blobr-google-ads-ai

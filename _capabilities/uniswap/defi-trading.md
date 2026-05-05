@@ -63,71 +63,71 @@ provider_name: Uniswap
 provider_slug: uniswap
 search_terms:
 - check the status of a submitted swap or bridge transaction
-- check if a wallet has sufficient token approval for a swap transaction
-- limit order quotes and execution
-- get pool information
-- claim accumulated fees from an lp position
-- get the best available quote for swapping one token for another, including gas estimates and price impact
-- liquidity provider position lifecycle management
-- cryptocurrency
-- decrease lp position
-- list gasless orders
-- add more liquidity to an existing lp position
-- claim accumulated trading fees from a liquidity position
-- get swap quote
-- unified defi trading workflow combining swap quotes, execution, gasless orders, lp management, and token discovery for developers building on uniswap.
-- swaps
-- remove liquidity from an existing position
-- list all tokens available for swapping or bridging from a given token
-- exchange tokens at best available price via amm routing
-- developers building dapps, wallets, and defi protocols that embed uniswap swap functionality. primarily uses the trading api for quotes and swap execution.
-- get the status of a swap or bridge transaction
-- provide and manage concentrated liquidity in uniswap pools
-- defi
-- list swappable tokens
-- create a new v3 or v4 liquidity position
-- DeFi Developer
-- liquidity pool discovery and information
-- claim lp fees
-- list uniswapx gasless orders for a wallet with optional status filtering
-- Trading Bot Engineer
-- get quotes for token swaps and bridges
-- trading
-- check token approval status before executing swaps
-- uniswap
-- get a quote for a limit order that executes when price conditions are met
-- liquidity
-- create swap transaction
-- get a limit order quote for a token pair
-- execute token swaps
-- LP Manager
-- get limit order quote
-- liquidity providers managing concentrated lp positions on v3/v4, optimizing fee income through active position management (create, rebalance, close).
-- get detailed information about a uniswap liquidity pool including tvl, fees, and tick data
 - get the best quote for a token swap or cross-chain bridge
+- create a new concentrated liquidity position in a uniswap v3 or v4 pool
+- check token approval
+- list all tokens available for swapping or bridging from a given token
+- swaps
+- defi
+- list tokens available for swapping or bridging
+- uniswap
+- gasless uniswapx order management
+- decrease lp position
+- liquidity provider position lifecycle management
+- liquidity
+- LP Manager
+- add more liquidity to an existing lp position
+- get a limit order quote for a token pair
+- increase lp position
+- liquidity provider
+- blockchain
+- execute token swaps
+- get the best available quote for swapping one token for another, including gas estimates and price impact
+- decentralized exchange
+- limit order quotes and execution
+- submit a gasless uniswapx intent order where fillers compete to fill it
+- create swap transaction
+- sign-and-submit intent orders filled by competing fillers
+- generate the calldata needed to execute a token swap on-chain
+- list gasless orders
+- create a new v3 or v4 liquidity position
+- fetch information about a uniswap pool
+- provide and manage concentrated liquidity in uniswap pools
+- get pool information
+- get quotes for token swaps and bridges
+- DeFi Developer
+- developers building dapps, wallets, and defi protocols that embed uniswap swap functionality. primarily uses the trading api for quotes and swap execution.
+- get swap status
+- list gasless orders with optional filtering
+- remove liquidity from an existing position
+- get the status of a swap or bridge transaction
+- create lp position
+- claim accumulated trading fees from a liquidity position
+- liquidity providers managing concentrated lp positions on v3/v4, optimizing fee income through active position management (create, rebalance, close).
+- check if a wallet has sufficient token approval for a swap transaction
+- trading
+- get detailed information about a uniswap liquidity pool including tvl, fees, and tick data
+- get swap quote
 - generate calldata for executing a token swap
 - add liquidity to an existing position
-- sign-and-submit intent orders filled by competing fillers
-- list tokens available for swapping or bridging
-- submit a gasless uniswapx intent order where fillers compete to fill it
-- get swap status
+- list uniswapx gasless orders for a wallet with optional status filtering
+- liquidity pool discovery and information
+- exchange tokens at best available price via amm routing
+- claim lp fees
+- Trading Bot Engineer
+- get limit order quote
+- cryptocurrency
+- get a quote for a limit order that executes when price conditions are met
+- check token approval status before executing swaps
+- create gasless order
+- claim accumulated fees from an lp position
 - remove liquidity from an lp position
 - submit a gasless uniswapx intent order
-- gasless uniswapx order management
-- increase lp position
-- decentralized exchange
-- generate the calldata needed to execute a token swap on-chain
-- liquidity provider
-- check token approval
-- check if token approval is required for a swap
-- create a new concentrated liquidity position in a uniswap v3 or v4 pool
-- engineers building automated trading systems, arbitrage bots, and mev strategies using uniswap's liquidity. uses gasless uniswapx orders and limit orders for automated execution.
 - token discovery for swaps and bridges
-- create gasless order
-- list gasless orders with optional filtering
-- fetch information about a uniswap pool
-- blockchain
-- create lp position
+- unified defi trading workflow combining swap quotes, execution, gasless orders, lp management, and token discovery for developers building on uniswap.
+- check if token approval is required for a swap
+- engineers building automated trading systems, arbitrage bots, and mev strategies using uniswap's liquidity. uses gasless uniswapx orders and limit orders for automated execution.
+- list swappable tokens
 slug: defi-trading
 source_filename: defi-trading.yaml
 source_heading: Capability Spec

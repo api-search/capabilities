@@ -38,51 +38,51 @@ personas: []
 provider_name: Tenet Healthcare
 provider_slug: tenet-healthcare
 search_terms:
-- list clinical observations (vitals, labs, imaging)
-- list lab results
-- get laboratory test results for a patient
-- patient medication prescriptions
-- list patient medications
-- fhir
-- search appointments by patient, date, or practitioner
-- list clinical documents including discharge summaries, notes, and radiology reports
+- hospitals
 - clinical observations and test results
-- list medications
-- list current medication prescriptions for a patient
-- list patient conditions
-- list observations
-- list clinical documents
-- list documents
-- appointment scheduling
 - clinical document references
-- list clinical documents (notes, reports, summaries)
-- list scheduled appointments for a patient, with optional status and date filters
-- list vital signs
-- list appointments for a patient
-- get patient
-- patient diagnoses and health conditions
-- list patient diagnoses and health conditions
-- patient care
-- revenue cycle management
-- search appointments
-- list patient appointments
-- ambulatory surgery centers
-- patient appointments
-- list appointments
-- healthcare
 - list active diagnoses and health conditions for a patient
-- get patient demographic and administrative information
-- patient demographic record
+- get patient
+- patient medication prescriptions
+- list clinical observations (vitals, labs, imaging)
 - clinical data
 - search appointments across the tenet health network by patient, date, or facility
-- care coordination
-- list patient medication prescriptions
-- get vital sign observations for a patient (blood pressure, heart rate, temperature, etc.)
-- list conditions
+- search appointments
+- list clinical documents (notes, reports, summaries)
+- list appointments for a patient
 - appointment search
-- fortune 500
-- hospitals
+- list patient medication prescriptions
+- fhir
+- healthcare
+- list clinical documents including discharge summaries, notes, and radiology reports
+- patient appointments
+- patient diagnoses and health conditions
+- patient demographic record
+- list scheduled appointments for a patient, with optional status and date filters
+- get patient demographic and administrative information
+- list patient diagnoses and health conditions
 - get a patient's demographic and administrative information
+- get laboratory test results for a patient
+- list current medication prescriptions for a patient
+- fortune 500
+- ambulatory surgery centers
+- list clinical documents
+- list medications
+- list patient medications
+- list observations
+- list patient conditions
+- search appointments by patient, date, or practitioner
+- appointment scheduling
+- care coordination
+- list vital signs
+- get vital sign observations for a patient (blood pressure, heart rate, temperature, etc.)
+- list lab results
+- list conditions
+- list documents
+- list patient appointments
+- list appointments
+- patient care
+- revenue cycle management
 slug: patient-care
 source_filename: patient-care.yaml
 source_heading: Capability Spec

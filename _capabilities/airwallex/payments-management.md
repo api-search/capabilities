@@ -9,13 +9,13 @@ personas: []
 provider_name: Airwallex
 provider_slug: airwallex
 search_terms:
-- multi-currency
-- foreign exchange
-- fintech
-- global
-- embedded finance
 - cross-border payments
+- global
 - payments
+- multi-currency
+- fintech
+- embedded finance
+- foreign exchange
 slug: payments-management
 source_filename: payments-management.yaml
 source_heading: Capability Spec

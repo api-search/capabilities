@@ -85,59 +85,59 @@ personas: []
 provider_name: Songstats
 provider_slug: songstats
 search_terms:
-- music
-- search for artists by name
-- get historical streaming stats for a track
-- track analytics and data
-- tracks
-- get current streaming stats for an artist
-- artists
-- analytics
-- get artist audience details
-- get artist historic stats
+- artist analytics and data
+- search for tracks by title or artist
 - get basic information about a music artist by songstats id or spotify id
-- get top playlists featuring an artist
-- get artist top playlists
-- get basic information about a record label
-- get current streaming stats for a track
-- get track historic stats
+- search for music artists by name
+- get artist audience details
+- get label catalog
+- get label stats
+- get current streaming stats for an artist
 - get historical streaming stats for an artist over a date range
 - get detailed audience demographics for an artist in a specific country
-- get track catalog for a record label
-- labels
-- get detailed audience insights for an artist by country
-- get track stats
-- get label info
-- search for tracks by title or artist
-- get artist stats
-- get top performing tracks for an artist
-- get current streaming stats for an artist across platforms
-- songstats
-- get artist catalog
-- get artist info
-- get audience demographics for an artist
-- search artists
 - get historical streaming stats for a track over a date range
-- search for music tracks by title or artist name
-- get track info
-- get label catalog
-- search for music artists by name
-- get artist audience
-- get artist top tracks
-- get basic information about a track
-- get full track catalog for an artist
-- get current streaming stats for a record label
+- labels
 - get the full track catalog for a record label
-- search tracks
-- playlists
+- analytics
+- get track catalog for a record label
+- track analytics and data
+- get historical streaming stats for a track
+- get top playlists featuring an artist
 - record label analytics and data
-- get label stats
-- search labels
+- get artist info
 - streaming
-- get historical streaming stats for an artist
+- get current streaming stats for a track
+- search tracks
+- get artist historic stats
+- get track stats
+- search labels
+- get artist stats
+- tracks
+- get track historic stats
+- search artists
 - get basic information about an artist
-- artist analytics and data
+- get artist audience
+- search for artists by name
+- get historical streaming stats for an artist
 - search for record labels by name
+- artists
+- get basic information about a track
+- get current streaming stats for a record label
+- get artist catalog
+- search for music tracks by title or artist name
+- get basic information about a record label
+- get artist top playlists
+- get audience demographics for an artist
+- get track info
+- songstats
+- music
+- get detailed audience insights for an artist by country
+- get top performing tracks for an artist
+- get label info
+- get artist top tracks
+- playlists
+- get current streaming stats for an artist across platforms
+- get full track catalog for an artist
 slug: music-analytics
 source_filename: music-analytics.yaml
 source_heading: Capability Spec

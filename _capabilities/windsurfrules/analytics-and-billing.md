@@ -41,42 +41,42 @@ personas: []
 provider_name: Windsurf
 provider_slug: windsurfrules
 search_terms:
-- credit balance management
-- ai agents
-- coding standards
-- query cascade analytics
-- get current usage configuration and feature flags for the team
-- per-user analytics
-- analytics
-- ide
 - get credit balance
-- get user-level analytics and acceptance rates
 - update usage configuration, model access controls, and feature flags
-- update usage configuration settings
-- get user analytics
-- developer workflow
-- get usage config
-- usage configuration
-- get cascade analytics
-- query user analytics
-- query completion analytics
-- code completion analytics
-- update usage config
-- check current team credit balance and usage for windsurf enterprise
+- query code completion usage analytics
+- query windsurf code completion usage analytics for the team
+- billing
 - enterprise
 - get per-user code completion analytics and acceptance rates
-- get usage configuration settings
-- query windsurf code completion usage analytics for the team
-- windsurf
-- ai copilot
-- ai coding
-- get team credit balance
 - cascade ai agent analytics
-- billing
+- query user analytics
+- analytics
+- get usage configuration settings
+- get cascade analytics
 - teams
-- get cascade ai agent usage metrics including lines generated
+- get usage config
 - get cascade ai usage analytics
-- query code completion usage analytics
+- get user analytics
+- update usage config
+- ide
+- ai agents
+- get current usage configuration and feature flags for the team
+- windsurf
+- update usage configuration settings
+- credit balance management
+- coding standards
+- usage configuration
+- query cascade analytics
+- query completion analytics
+- get team credit balance
+- code completion analytics
+- per-user analytics
+- ai coding
+- get user-level analytics and acceptance rates
+- developer workflow
+- check current team credit balance and usage for windsurf enterprise
+- ai copilot
+- get cascade ai agent usage metrics including lines generated
 slug: analytics-and-billing
 source_filename: analytics-and-billing.yaml
 source_heading: Capability Spec

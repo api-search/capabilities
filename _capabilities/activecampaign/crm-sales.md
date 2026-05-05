@@ -34,45 +34,45 @@ personas: []
 provider_name: ActiveCampaign
 provider_slug: activecampaign
 search_terms:
-- deals
-- Growth Engineer
-- create a new deal
-- activecampaign
-- list all company accounts in activecampaign crm
-- accounts
-- cross-channel contact engagement and personalization
-- create a new sales deal in activecampaign crm
-- manages email campaigns, automations, and contact segmentation
-- sales deal management
-- create a new account
-- company account management
-- create deal
-- Sales Representative
-- orchestrate contact journeys, campaigns, automations, and list management
-- Marketing Manager
 - email marketing
-- sales automation
-- Email Marketer
-- Revenue Operations
-- list all deals
-- email, sms, and multi-channel marketing automation
-- create a new company account in activecampaign crm
-- create account
-- builds integrations, automation workflows, and uses the api directly
-- Account Manager
 - list accounts
-- list deals
-- sales
-- marketing automation
-- manage sales pipeline, deals, accounts, and tasks
-- tracks deals, manages accounts, and uses crm features
-- retrieve a specific deal by id
+- Marketing Manager
+- deals
+- email, sms, and multi-channel marketing automation
+- cross-channel contact engagement and personalization
 - get deal
-- list all sales deals in activecampaign crm
+- sales deal management
+- manages email campaigns, automations, and contact segmentation
+- marketing automation
+- create account
+- accounts
+- retrieve a specific deal by id
 - crm, pipeline management, and revenue operations
+- list deals
+- activecampaign
+- create deal
+- manage sales pipeline, deals, accounts, and tasks
+- builds integrations, automation workflows, and uses the api directly
 - customer experience
+- create a new deal
+- create a new account
+- tracks deals, manages accounts, and uses crm features
+- list all deals
+- Email Marketer
+- company account management
+- sales automation
+- create a new sales deal in activecampaign crm
+- list all sales deals in activecampaign crm
 - crm
+- Sales Representative
+- Growth Engineer
 - list all accounts
+- sales
+- orchestrate contact journeys, campaigns, automations, and list management
+- Account Manager
+- create a new company account in activecampaign crm
+- Revenue Operations
+- list all company accounts in activecampaign crm
 slug: crm-sales
 source_filename: crm-sales.yaml
 source_heading: Capability Spec

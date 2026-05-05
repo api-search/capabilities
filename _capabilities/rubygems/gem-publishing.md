@@ -39,45 +39,45 @@ personas: []
 provider_name: RubyGems
 provider_slug: rubygems
 search_terms:
-- remove a specific ruby gem version from the rubygems.org index
-- webhook subscriptions for gem push events
 - add owner
-- list all gems owned by the authenticated rubygems user
-- add gem owner
-- yank gem
-- open source
-- list gem owners
-- list all webhook subscriptions for the authenticated user
 - list all owners of a specific gem
-- remove a gem owner
-- remove a gem version from the index
+- ruby
+- create a webhook
+- list all webhook subscriptions for the authenticated user
+- test webhook
+- add a new owner to a ruby gem by email address
+- submit a built ruby gem (.gem file) to rubygems.org for publishing
+- list owners
+- gems
+- remove gem owner
+- yank gem
+- rubygems
+- add a gem owner
+- open source
+- remove an owner from a ruby gem by email address
+- yank a gem version
+- remove owner
+- webhook subscriptions for gem push events
 - publishing
+- list owned gems
+- remove a specific ruby gem version from the rubygems.org index
 - create webhook
 - package manager
-- remove an owner from a ruby gem by email address
-- rubygems
-- yank a gem version
-- list owners
-- remove gem owner
-- push gem
-- list owned gems
-- submit a built gem to rubygems.org
 - developer tools
-- list webhooks
-- gems
-- test webhook
-- create a webhook
-- add a new owner to a ruby gem by email address
-- remove owner
-- gem ownership management
-- add a gem owner
-- ruby
 - register a webhook to receive notifications when a gem is pushed
+- add gem owner
 - ci/cd
-- gem publishing operations
-- submit a built ruby gem (.gem file) to rubygems.org for publishing
+- gem ownership management
+- list gem owners
 - test fire a webhook to verify it is receiving notifications correctly
+- remove a gem owner
 - publish gem
+- gem publishing operations
+- list webhooks
+- list all gems owned by the authenticated rubygems user
+- push gem
+- remove a gem version from the index
+- submit a built gem to rubygems.org
 slug: gem-publishing
 source_filename: gem-publishing.yaml
 source_heading: Capability Spec

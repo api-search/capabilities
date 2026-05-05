@@ -54,71 +54,71 @@ personas: []
 provider_name: Toyota
 provider_slug: toyota
 search_terms:
-- list connected vehicles
-- send remote command
-- get recent trips
-- get vehicle status
-- automotive
-- get dealer service and maintenance history for the vehicle
-- get recent driving trip history including distance and route
-- find vehicle
-- remotely stop the vehicle's climate system
-- connected vehicles
-- vehicle health
-- get vehicle alerts
-- get vehicle maintenance alerts, recall notices, and system messages
-- check vehicle health including warning lights and oil level
-- get ev battery and charging status
-- personal mobility
-- get vehicle location
-- trip history
-- sound horn
-- automobiles
-- get electric status
-- get trips
-- check vehicle status
-- remote control
-- get vehicle health
 - get service history
-- climate commands
-- list all toyota/lexus connected vehicles registered to the account
-- check vehicle health
-- remotely start the vehicle's climate system before you get in
-- vehicles
-- lock doors
-- get trip history
-- stop climate
-- remotely unlock the vehicle's doors
-- sound the vehicle horn to help locate the vehicle
-- get door and ignition status
-- remotely lock the vehicle's doors
-- electric vehicles
-- remote commands
-- get current climate control settings and whether it is running
-- get parking location
-- get climate status
-- list my vehicles
-- service history
-- get vehicle notifications
-- send climate command
-- find where the vehicle is parked using gps coordinates
-- check ev battery level, electric range, and whether the vehicle is charging
-- ev/hybrid battery data
-- telematics
-- check if vehicle doors are locked and ignition status
-- check ev battery
-- cars
-- vehicle gps location
-- connected car
-- fleet management
-- get vehicle health status
-- ev
-- start climate
 - climate control
+- get vehicle alerts
+- sound horn
+- check vehicle health including warning lights and oil level
+- stop climate
+- get current climate control settings and whether it is running
+- get trip history
+- start climate
 - vehicle real-time status
-- start or stop climate
+- vehicle gps location
+- lock doors
+- telematics
+- send climate command
+- service history
+- ev
+- get trips
+- electric vehicles
+- connected car
+- get recent driving trip history including distance and route
+- send remote command
+- get vehicle notifications
+- get recent trips
+- list connected vehicles
+- get electric status
+- check vehicle health
+- get vehicle maintenance alerts, recall notices, and system messages
+- remote control
+- get vehicle status
+- list my vehicles
+- check ev battery
+- trip history
+- sound the vehicle horn to help locate the vehicle
+- find vehicle
+- get climate status
+- check ev battery level, electric range, and whether the vehicle is charging
+- automobiles
+- check if vehicle doors are locked and ignition status
+- remote commands
+- get vehicle health
 - vehicle notifications
+- get dealer service and maintenance history for the vehicle
+- remotely start the vehicle's climate system before you get in
+- personal mobility
+- vehicle health
+- automotive
+- climate commands
+- start or stop climate
+- list all toyota/lexus connected vehicles registered to the account
+- remotely stop the vehicle's climate system
+- get parking location
+- find where the vehicle is parked using gps coordinates
+- ev/hybrid battery data
 - unlock doors
+- remotely unlock the vehicle's doors
+- remotely lock the vehicle's doors
+- connected vehicles
+- cars
+- get ev battery and charging status
+- check vehicle status
+- get vehicle health status
+- get door and ignition status
+- get vehicle location
+- vehicles
+- fleet management
 slug: connected-vehicle
 source_filename: connected-vehicle.yaml
 source_heading: Capability Spec

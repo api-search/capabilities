@@ -75,52 +75,52 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- trigger index build
-- retrieve available peoplesoft query definitions.
-- peopletools platform services.
-- campus solutions
-- budget definitions and data
-- list analytics reports
-- list queries
-- pivot grid definitions
-- analytics
 - trigger a search index build or incremental update.
-- execute query
-- dashboards
-- list forecasts
-- retrieve performance analytics reports.
-- performance analytics reports
-- hcm
-- peoplesoft
-- retrieve available pivot grid definitions.
-- erp
-- execute a peoplesoft query by name.
-- get pivot grid data
-- execute a full-text search across peoplesoft indexed content.
-- retrieve forecast data and projections.
-- search
-- list budgets
 - forecast data and projections
-- enterprise software
-- pivot grid data
-- search index operations
-- reporting
-- query
-- full-text search results
 - human capital management.
-- campus solutions.
-- financial and supply chain management.
-- financial management
-- query execution
-- retrieve budget definitions and data.
-- execute a peoplesoft query by name and retrieve results.
-- search content
-- retrieve data for a specific pivot grid.
 - supply chain management
-- crm
+- peoplesoft
+- get pivot grid data
+- retrieve data for a specific pivot grid.
+- pivot grid definitions
+- hcm
+- execute a peoplesoft query by name and retrieve results.
+- trigger index build
+- analytics
+- retrieve forecast data and projections.
+- query execution
+- query
+- financial and supply chain management.
 - peoplesoft query definitions
+- execute query
+- list budgets
+- list forecasts
+- dashboards
+- campus solutions.
+- pivot grid data
+- retrieve available peoplesoft query definitions.
+- search content
+- enterprise software
+- erp
+- retrieve performance analytics reports.
+- campus solutions
+- list queries
+- full-text search results
+- execute a peoplesoft query by name.
+- search
 - list pivot grids
+- crm
+- retrieve budget definitions and data.
 - retrieve data for a specific pivot grid with optional filters.
+- peopletools platform services.
+- list analytics reports
+- search index operations
+- budget definitions and data
+- retrieve available pivot grid definitions.
+- financial management
+- performance analytics reports
+- execute a full-text search across peoplesoft indexed content.
+- reporting
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

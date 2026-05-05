@@ -62,69 +62,69 @@ personas: []
 provider_name: Vanta
 provider_slug: vanta
 search_terms:
-- individual vendor management
-- list tests
+- soc 2
+- endpoint device compliance monitoring
+- update vendor risk level and review status
+- add a new third-party vendor to vanta for security review tracking
+- list endpoint devices that are failing compliance checks
+- list personnel with security training completion and overdue task status
+- list failing controls
 - query automated test results for compliance evidence
+- security
+- list vendors
+- create vendor
+- list security vulnerabilities with severity and remediation status filters
+- vanta
+- list compliance evidence documents
+- automated compliance test results
+- list people with security task and training status
+- cybersecurity
+- query compliance controls with optional framework and status filters to identify gaps
+- risk management
+- compliance framework status and management
+- update a vendor's risk level or review status after security assessment
+- list controls
+- add a new vendor for security review
+- get all critical severity open vulnerabilities for immediate remediation
+- query controls with status and framework filters
+- compliance controls oversight
+- list compliance frameworks (soc 2, iso 27001, hipaa, pci dss, gdpr) and their readiness status
+- upload compliance evidence document
+- update vendor review
+- list vendors and security review status
+- get all failing controls to prioritize remediation efforts
+- list compliance evidence documents uploaded to vanta
 - iso 27001
+- query automated compliance test results to identify evidence gaps
+- list all configured integrations and their connection health
+- hipaa
+- individual vendor management
+- get detailed information about a specific vendor's security review
+- list vulnerabilities
+- list computers
+- list integrations
+- list critical vulnerabilities
+- governance
+- upload document
+- integration status monitoring
+- list configured integrations and connection status
+- third-party vendor security reviews
+- update vendor
 - compliance evidence document management
 - personnel security task tracking
-- list frameworks
-- update vendor risk level and review status
-- list failing controls
-- list computers
-- security
-- query compliance controls with optional framework and status filters to identify gaps
-- soc 2
-- list configured integrations and connection status
-- list documents
-- get vendor details and security review status
-- query automated compliance test results to identify evidence gaps
-- list people with security task and training status
-- query controls with status and framework filters
-- add a new vendor for security review
-- list vendors and security review status
-- list all configured compliance frameworks and their readiness
-- automated compliance test results
-- get detailed information about a specific vendor's security review
-- list all configured integrations and their connection health
-- list vendors
-- list controls
-- list vulnerabilities with severity and sla filters
-- risk management
-- list vulnerabilities
-- integration status monitoring
-- list critical vulnerabilities
-- compliance framework status and management
-- list personnel with security training completion and overdue task status
-- update vendor review
-- get vendor
-- endpoint device compliance monitoring
 - list non compliant computers
-- compliance
-- cybersecurity
-- list compliance frameworks (soc 2, iso 27001, hipaa, pci dss, gdpr) and their readiness status
-- get all critical severity open vulnerabilities for immediate remediation
-- upload document
-- list integrations
-- upload compliance evidence document
-- query third-party vendors and their security review status
-- update a vendor's risk level or review status after security assessment
-- get all failing controls to prioritize remediation efforts
-- governance
-- hipaa
-- vanta
-- third-party vendor security reviews
-- list compliance evidence documents
-- list compliance evidence documents uploaded to vanta
-- compliance controls oversight
-- vulnerability tracking and remediation management
-- update vendor
-- list security vulnerabilities with severity and remediation status filters
-- list endpoint devices that are failing compliance checks
-- add a new third-party vendor to vanta for security review tracking
-- create vendor
-- list people
+- get vendor details and security review status
 - list monitored computers and compliance status
+- compliance
+- list all configured compliance frameworks and their readiness
+- list frameworks
+- list documents
+- vulnerability tracking and remediation management
+- list people
+- list tests
+- get vendor
+- list vulnerabilities with severity and sla filters
+- query third-party vendors and their security review status
 slug: compliance-management
 source_filename: compliance-management.yaml
 source_heading: Capability Spec

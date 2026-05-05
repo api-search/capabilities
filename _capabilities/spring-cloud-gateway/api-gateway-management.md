@@ -53,59 +53,59 @@ personas: []
 provider_name: Spring Cloud Gateway
 provider_slug: spring-cloud-gateway
 search_terms:
-- remove route from gateway
-- update route
-- available filter factories
-- load balancing
-- route cache management
-- list route predicate factories
-- delete route
-- list predicate factories
-- list route filter factories
-- get route
-- modify an existing gateway route's destination uri, matching predicates, or applied filters without downtime
-- create route
-- spring webflux
-- rate limiting
-- gateway route management
-- list filter factories
-- inspect all currently configured gateway routes including predicates, filters, uris, ordering, and metadata
-- discover all available routepredicatefactory options for defining traffic routing rules
-- inspect route
-- remove a gateway route, stopping traffic forwarding for matching requests
-- audit all global filters applied to every request, including their execution order
-- inspect a specific gateway route definition by id
-- sync route config
 - update route definition
-- create a new gateway route
-- audit global filters
-- list routes
+- inspect route
 - discover all available gatewayfilter factory options for configuring request/response transformation
-- remove route
-- synchronize the gateway route cache with the current configuration source
-- refresh route configuration cache
-- api gateway
-- platform engineering
-- routing
-- list global filters
-- spring
-- refresh routes
-- list all gateway routes
-- modify route
 - discover predicate options
-- deploy a new gateway route with path/host/method predicates and filters such as stripprefix, addrequestheader, circuitbreaker, requestratelimiter
-- discover filter options
-- microservices
+- modify route
+- rate limiting
+- synchronize the gateway route cache with the current configuration source
+- gateway route management
+- delete route
 - filter management
 - route management
-- available predicate factories
 - get route by id
+- list route filter factories
+- audit global filters
+- list route predicate factories
+- routing
+- get route
+- update route
+- load balancing
+- inspect a specific gateway route definition by id
 - deploy route
-- circuit breaker
+- create route
+- platform engineering
+- inspect all currently configured gateway routes including predicates, filters, uris, ordering, and metadata
+- microservices
 - devops
+- refresh route configuration cache
+- list predicate factories
+- remove a gateway route, stopping traffic forwarding for matching requests
+- available filter factories
+- create a new gateway route
+- refresh routes
+- list routes
+- remove route from gateway
 - individual route operations
+- sync route config
+- list all gateway routes
+- remove route
+- audit all global filters applied to every request, including their execution order
+- circuit breaker
+- available predicate factories
+- spring webflux
+- api gateway
+- discover all available routepredicatefactory options for defining traffic routing rules
 - spring cloud
+- route cache management
 - inspect all routes
+- discover filter options
+- spring
+- deploy a new gateway route with path/host/method predicates and filters such as stripprefix, addrequestheader, circuitbreaker, requestratelimiter
+- modify an existing gateway route's destination uri, matching predicates, or applied filters without downtime
+- list global filters
+- list filter factories
 slug: api-gateway-management
 source_filename: api-gateway-management.yaml
 source_heading: Capability Spec

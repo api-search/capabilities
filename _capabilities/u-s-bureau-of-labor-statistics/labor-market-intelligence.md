@@ -37,55 +37,55 @@ personas: []
 provider_name: U.S. Bureau of Labor Statistics
 provider_slug: u-s-bureau-of-labor-statistics
 search_terms:
-- get cpi inflation
-- retrieve metadata and description for a specific bls survey.
-- developer or data engineer integrating bls data into dashboards, data pipelines, and economic applications.
-- government or think tank analyst using bls indicators to inform employment policy, inflation monitoring, and economic forecasting.
-- query multiple bls time series in a single request.
-- get employment statistics
-- labor market
-- access the most widely used bls economic indicator series.
-- get survey
-- get detailed metadata for a specific bls survey program using its abbreviation (e.g., cps for current population survey, ces for current employment statistics, ap for average price data).
-- federal government
-- employment, unemployment, wages, and workforce statistics
-- get time series
-- get unemployment rate
-- academic and policy research using government economic data
-- retrieve current employment statistics (ces) data including total nonfarm employment, industry employment, and average hourly earnings.
-- get details for a specific bls survey program.
-- get multiple indicators
-- list all available bls survey programs with their abbreviations. use this to discover which surveys are available before querying specific series ids.
-- retrieve multiple bls economic indicators in a single api call. supports up to 50 series for comparative analysis across employment, wages, prices, and productivity metrics.
-- economic data
-- get popular indicators
-- list surveys
-- retrieve data for multiple economic indicators simultaneously.
-- list all available bls survey programs and their abbreviations.
-- Data Engineer
-- academic or government economist analyzing labor market trends, wages, employment, and economic cycles using bls time series data.
-- get the 25 most popular bls economic time series, optionally filtered by survey type (cps, ces, ap, etc.) to discover commonly used economic benchmark series.
-- statistics
-- labor
-- Economist
-- list bls surveys
 - access bls time series data by series id.
-- Policy Analyst
-- unified workflow for economists, researchers, and policy analysts to access bls labor market data for employment analysis, inflation monitoring, and economic research.
 - economic research
-- reporter using bls data to contextualize economic news stories about unemployment, inflation, wages, and job market trends.
-- data-driven analysis of labor and economic policy
-- list the 25 most popular bls economic time series.
-- retrieve consumer price index (cpi) data for measuring inflation. use cuur0000sa0 for cpi-u all items, or specify a different cpi series for category-specific inflation (food, energy, housing).
-- policy analysis
-- employment
-- inflation
-- discover available bls survey programs.
-- bureau of labor statistics
-- get survey details
-- get multiple economic indicators
-- retrieve u.s. unemployment rate time series data. use series id lns14000000 for the national seasonally adjusted unemployment rate, or specify a different series id for demographic breakdowns.
 - retrieve historical economic indicator data for a bls series.
+- federal government
+- retrieve multiple bls economic indicators in a single api call. supports up to 50 series for comparative analysis across employment, wages, prices, and productivity metrics.
+- list the 25 most popular bls economic time series.
+- get details for a specific bls survey program.
+- policy analysis
+- retrieve consumer price index (cpi) data for measuring inflation. use cuur0000sa0 for cpi-u all items, or specify a different cpi series for category-specific inflation (food, energy, housing).
+- list all available bls survey programs with their abbreviations. use this to discover which surveys are available before querying specific series ids.
+- data-driven analysis of labor and economic policy
+- list all available bls survey programs and their abbreviations.
+- inflation
+- access the most widely used bls economic indicator series.
+- academic or government economist analyzing labor market trends, wages, employment, and economic cycles using bls time series data.
+- Data Engineer
+- economic data
+- list surveys
+- retrieve u.s. unemployment rate time series data. use series id lns14000000 for the national seasonally adjusted unemployment rate, or specify a different series id for demographic breakdowns.
+- list bls surveys
+- Economist
+- statistics
+- get detailed metadata for a specific bls survey program using its abbreviation (e.g., cps for current population survey, ces for current employment statistics, ap for average price data).
+- get popular indicators
+- get multiple indicators
+- get multiple economic indicators
+- employment
+- Policy Analyst
+- reporter using bls data to contextualize economic news stories about unemployment, inflation, wages, and job market trends.
+- get cpi inflation
+- get employment statistics
+- retrieve data for multiple economic indicators simultaneously.
+- retrieve current employment statistics (ces) data including total nonfarm employment, industry employment, and average hourly earnings.
+- unified workflow for economists, researchers, and policy analysts to access bls labor market data for employment analysis, inflation monitoring, and economic research.
+- labor
+- labor market
+- employment, unemployment, wages, and workforce statistics
+- retrieve metadata and description for a specific bls survey.
+- academic and policy research using government economic data
+- government or think tank analyst using bls indicators to inform employment policy, inflation monitoring, and economic forecasting.
+- get survey details
+- bureau of labor statistics
+- get survey
+- get the 25 most popular bls economic time series, optionally filtered by survey type (cps, ces, ap, etc.) to discover commonly used economic benchmark series.
+- query multiple bls time series in a single request.
+- get time series
+- developer or data engineer integrating bls data into dashboards, data pipelines, and economic applications.
+- discover available bls survey programs.
+- get unemployment rate
 slug: labor-market-intelligence
 source_filename: labor-market-intelligence.yaml
 source_heading: Capability Spec

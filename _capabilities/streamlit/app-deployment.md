@@ -42,44 +42,44 @@ personas: []
 provider_name: Streamlit
 provider_slug: streamlit
 search_terms:
-- web applications
-- list apps
 - list accessible workspaces
-- update secrets
-- update app secrets
-- open source
-- restart a deployed app
-- list streamlit community cloud workspaces
-- app deployment and listing
-- deploy a new app from github
-- app restart operation
-- list the secret keys configured for a streamlit app (values not returned)
-- get app secret keys
-- delete app
-- get current status and details of a streamlit app
-- get app secrets
+- app secrets management
 - restart a streamlit app — use after updating secrets
-- get app
-- update secrets for a streamlit app in toml format
+- get current status and details of a streamlit app
+- workspace management
+- app restart operation
 - restart app
 - cloud
-- single app management
-- app secrets management
-- get secrets
-- delete a deployed streamlit app permanently
-- list all deployed streamlit apps
-- get app status
-- machine learning
-- get app details and status
-- list workspaces
-- deploy app
-- delete an app
-- python
-- data science
-- deployment
-- list all streamlit apps deployed in the workspace
 - deploy a new streamlit app from a github repository
-- workspace management
+- list streamlit community cloud workspaces
+- open source
+- get app secret keys
+- get app secrets
+- web applications
+- update secrets for a streamlit app in toml format
+- delete an app
+- get app status
+- update secrets
+- data science
+- list all deployed streamlit apps
+- list apps
+- delete a deployed streamlit app permanently
+- single app management
+- python
+- app deployment and listing
+- delete app
+- machine learning
+- list all streamlit apps deployed in the workspace
+- deploy app
+- list workspaces
+- deploy a new app from github
+- deployment
+- get app details and status
+- restart a deployed app
+- get secrets
+- get app
+- list the secret keys configured for a streamlit app (values not returned)
+- update app secrets
 slug: app-deployment
 source_filename: app-deployment.yaml
 source_heading: Capability Spec

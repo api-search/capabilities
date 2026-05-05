@@ -17,31 +17,31 @@ personas: []
 provider_name: Workday Integration
 provider_slug: workday-integration
 search_terms:
-- list open job requisitions
 - workday
-- hcm
 - list available employee benefit plans
-- erp
-- list all workday workers
-- integration
-- hire-to-retire
-- list candidates
-- list job requisitions
-- list organizational units
-- finance
-- recruiting
-- enterprise
-- list workers
 - list organizations
-- payroll
-- list employee benefit enrollments
-- list benefit plans
-- list recruiting candidates
+- list candidates
+- integration
+- enterprise
+- hcm
 - list compensation plans
+- list benefit plans
+- list job requisitions
+- finance
+- list employee benefit enrollments
 - benefits
-- list benefit enrollments
+- list organizational units
+- payroll
 - get worker
+- hire-to-retire
+- erp
+- list recruiting candidates
+- list open job requisitions
+- recruiting
 - get details for a specific worker
+- list benefit enrollments
+- list workers
+- list all workday workers
 slug: hire-to-retire
 source_filename: hire-to-retire.yaml
 source_heading: Capability Spec

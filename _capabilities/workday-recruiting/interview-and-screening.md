@@ -42,64 +42,64 @@ personas: []
 provider_name: Workday Recruiting
 provider_slug: workday-recruiting
 search_terms:
-- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
-- interview feedback
-- hiring needs, evergreen requisitions, and position management.
-- interviewer
-- recruiting configuration and reference data.
-- list interview feedback
-- recruiter
-- sourcer
-- talent acquisition
-- workday
-- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
-- list background checks
-- candidate-to-requisition links, stage progression, and offers.
-- saas
-- get details of a specific interview
-- pre-hire records and high-volume bulk applicant import.
-- hcm
-- background checks
-- list available background check packages for screening
-- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
-- submit interview feedback
-- recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
-- submit background check
-- recruiting admin
-- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
-- schedule interview
-- get an interview
-- list interviews
-- pre-hire background screening and check packages.
 - external staffing partner that submits candidates against open requisitions through the agency portal.
-- interview scheduling and interviewer feedback collection.
-- list background check results for candidates
+- workday
+- saas
+- load background check results from an external screening provider
+- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
 - get interview
-- submit overall rating, competency ratings, and hiring recommendation for an interview
-- builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
-- public publication of requisitions to internal and external career sites.
-- hiring manager
-- recruiting
-- recruiting agency
-- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
-- list background check packages
-- human resources
-- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
-- eeo, ofccp, and veteran self-identification reference values.
-- compliance analyst
-- external agency relationships and candidate submissions.
-- individual interview
-- recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
+- sourcer
 - drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
+- interview scheduling and interviewer feedback collection.
+- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
+- submit interview feedback
+- hcm
+- list available background check packages for screening
+- list background check results for candidates
+- recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
+- compliance analyst
+- public publication of requisitions to internal and external career sites.
+- schedule interview
+- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
+- human resources
+- recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
+- list feedback submitted by interviewers for a specific interview
+- submit background check
+- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
+- get an interview
+- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
+- list interview feedback
+- talent acquisition
+- hiring needs, evergreen requisitions, and position management.
+- pre-hire background screening and check packages.
+- recruiter
+- background check packages
+- get details of a specific interview
+- external agency relationships and candidate submissions.
+- recruiting agency
+- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
+- recruiting
+- list scheduled interviews with filters by application or date range
 - submit a background check
 - candidate profiles, attachments, photos, assessments, and referrals.
 - schedule a new interview for a job application
-- list feedback submitted by interviewers for a specific interview
-- list scheduled interviews with filters by application or date range
+- background checks
+- interview feedback
+- hiring manager
 - schedule an interview
-- background check packages
-- load background check results from an external screening provider
+- list interviews
+- list background check packages
+- submit overall rating, competency ratings, and hiring recommendation for an interview
+- recruiting configuration and reference data.
+- individual interview
+- candidate-to-requisition links, stage progression, and offers.
+- interviewer
+- builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
 - interviews
+- list background checks
+- eeo, ofccp, and veteran self-identification reference values.
+- pre-hire records and high-volume bulk applicant import.
+- recruiting admin
 slug: interview-and-screening
 source_filename: interview-and-screening.yaml
 source_heading: Capability Spec

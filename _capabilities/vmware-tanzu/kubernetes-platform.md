@@ -50,56 +50,56 @@ personas: []
 provider_name: VMware Tanzu
 provider_slug: vmware-tanzu
 search_terms:
-- delete global namespace
-- individual global namespace.
-- vsphere
-- resource groups for policy.
-- individual cluster operations.
-- list tanzu clusters
-- get details for a specific global namespace, including cluster configurations and status.
-- list all global namespaces in tanzu service mesh. global namespaces connect workloads across multiple clusters into a single virtual network.
-- create resource group
-- get tanzu cluster
-- onboard a cluster to tanzu service mesh.
-- onboard cluster
-- list clusters onboarded to tanzu service mesh.
-- vmware tanzu
-- get global namespace
-- create a resource group to enforce policies across a set of namespaces, services, or pods.
-- list resource groups.
-- get detailed status for a specific tanzu service mesh cluster, including phase, k8s version, and namespace count.
-- cloud native
-- remove a cluster from tsm.
-- delete a global namespace.
-- create a global namespace to connect workloads across multiple kubernetes clusters. enables consistent traffic routing and mtls security.
 - global namespaces
+- create a resource group to enforce policies across a set of namespaces, services, or pods.
 - remove cluster
-- kubernetes
+- clusters
+- create a resource group.
+- create a global namespace to connect workloads across multiple kubernetes clusters. enables consistent traffic routing and mtls security.
+- containers
+- resource groups for policy.
+- vmware tanzu
+- list resource groups.
+- multi-cloud
+- list all kubernetes clusters onboarded to tanzu service mesh. shows cluster state, cloud provider, region, and tsm agent version.
+- enterprise
+- get cluster details and status.
+- service mesh
+- list all global namespaces in tanzu service mesh. global namespaces connect workloads across multiple clusters into a single virtual network.
+- get cluster
+- list resource groups used for policy enforcement and monitoring across clusters.
+- list global namespaces.
+- onboard a cluster to tanzu service mesh.
+- get tanzu cluster
 - delete a global namespace from tanzu service mesh.
+- global namespace management.
+- onboard kubernetes cluster
+- create resource group
+- delete a global namespace.
+- delete global namespace
+- cloud native
+- onboard cluster
+- list global namespaces
+- create global namespace
+- remove a kubernetes cluster from tanzu service mesh management.
+- onboard a kubernetes cluster to tanzu service mesh. installs the tsm agent and enables service mesh management.
+- list clusters onboarded to tanzu service mesh.
+- list clusters
+- individual global namespace.
 - remove kubernetes cluster
 - kubernetes cluster management.
-- remove a kubernetes cluster from tanzu service mesh management.
-- onboard kubernetes cluster
-- global namespace management.
-- list resource groups used for policy enforcement and monitoring across clusters.
-- onboard a kubernetes cluster to tanzu service mesh. installs the tsm agent and enables service mesh management.
-- get global namespace details.
-- service mesh
-- create a resource group.
-- list global namespaces
-- multi-cloud
-- enterprise
-- list global namespaces.
-- get cluster
-- list all kubernetes clusters onboarded to tanzu service mesh. shows cluster state, cloud provider, region, and tsm agent version.
-- create a global namespace spanning clusters.
-- containers
-- create global namespace
-- clusters
-- list clusters
-- list resource groups
-- get cluster details and status.
+- remove a cluster from tsm.
 - vmware
+- vsphere
+- list resource groups
+- get global namespace
+- get details for a specific global namespace, including cluster configurations and status.
+- individual cluster operations.
+- get detailed status for a specific tanzu service mesh cluster, including phase, k8s version, and namespace count.
+- get global namespace details.
+- kubernetes
+- list tanzu clusters
+- create a global namespace spanning clusters.
 slug: kubernetes-platform
 source_filename: kubernetes-platform.yaml
 source_heading: Capability Spec

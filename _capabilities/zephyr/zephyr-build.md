@@ -9,12 +9,12 @@ personas: []
 provider_name: Zephyr Project
 provider_slug: zephyr
 search_terms:
-- rtos
-- linux foundation
-- open source
 - edge
+- linux foundation
 - iot
+- open source
 - embedded
+- rtos
 slug: zephyr-build
 source_filename: zephyr-build.yaml
 source_heading: Capability Spec

@@ -64,70 +64,70 @@ personas: []
 provider_name: Tanium
 provider_slug: tanium
 search_terms:
-- list packages
-- get saved question results
-- get latest results for a saved question
-- security
-- get question results
-- list all saved questions
-- incident response
-- live endpoint investigation connections
-- endpoint targeting groups
-- list all data delivery connections for exporting endpoint data to siem and other systems
-- list saved questions
-- list threat alerts from threat response
-- list investigations
-- list threat alerts detected by tanium threat response
-- start endpoint investigation
-- list sensors
-- threat response security alerts
 - list data connections
-- ask a question to all managed endpoints
-- saved endpoint questions for recurring data collection
-- get results collected from endpoints for a question
-- query endpoint state using natural language questions
-- list all endpoint sensors available for data collection in questions
-- endpoint deployment packages
-- list all computer groups for endpoint targeting
-- retrieve endpoint question results
-- get recorder events from an endpoint connection (process, network, file events)
-- list all available deployment packages
 - list threat alerts
-- ask question
-- list alerts
-- list all available deployment packages on the tanium server
-- create a data delivery connection
-- deploy action
-- deploy actions and packages to endpoints
-- ask endpoint question
-- ask a natural language question to all tanium-managed endpoints (e.g., 'get running processes from all machines')
-- endpoint data collection sensors
-- get endpoint events
-- unified endpoint management
-- get endpoint data results for a question by id
-- compliance
-- list active endpoint investigation connections
-- create a data delivery connection to export tanium endpoint data to a downstream system
+- get results collected from endpoints for a question
+- incident response
 - results from saved questions
-- create data connection
-- deploy package to endpoints
-- get the latest collected results from a saved recurring question
-- get process tree
+- deploy actions and packages to endpoints
+- list all computer groups for endpoint targeting
+- get endpoint data results for a question by id
 - patch management
-- deploy a package action to targeted endpoints
-- data export connections to downstream systems
-- threat detection
-- list all saved questions configured for recurring endpoint data collection
-- start a live investigation connection to an endpoint for incident response
-- list all computer groups for endpoint targeting in actions and questions
-- list computer groups
-- deploy a package action to a targeted group of endpoints
-- endpoint management
+- endpoint deployment packages
+- security
+- list active endpoint investigation connections
+- live endpoint investigation connections
 - start a live endpoint investigation connection
-- get the full process ancestry tree for a suspicious process on an endpoint
-- list data delivery connections
-- start investigation
+- ask a natural language question to all tanium-managed endpoints (e.g., 'get running processes from all machines')
 - list all endpoint sensors
+- list all saved questions
+- list all available deployment packages on the tanium server
+- get the full process ancestry tree for a suspicious process on an endpoint
+- create a data delivery connection to export tanium endpoint data to a downstream system
+- query endpoint state using natural language questions
+- start endpoint investigation
+- list all endpoint sensors available for data collection in questions
+- ask question
+- threat detection
+- threat response security alerts
+- endpoint targeting groups
+- deploy package to endpoints
+- list packages
+- endpoint management
+- list investigations
+- saved endpoint questions for recurring data collection
+- list saved questions
+- list alerts
+- start a live investigation connection to an endpoint for incident response
+- get question results
+- list all available deployment packages
+- ask a question to all managed endpoints
+- list computer groups
+- deploy a package action to targeted endpoints
+- list threat alerts from threat response
+- get recorder events from an endpoint connection (process, network, file events)
+- deploy a package action to a targeted group of endpoints
+- endpoint data collection sensors
+- unified endpoint management
+- get saved question results
+- list data delivery connections
+- list sensors
+- retrieve endpoint question results
+- list all computer groups for endpoint targeting in actions and questions
+- start investigation
+- list threat alerts detected by tanium threat response
+- get process tree
+- compliance
+- data export connections to downstream systems
+- deploy action
+- get latest results for a saved question
+- create a data delivery connection
+- get endpoint events
+- list all data delivery connections for exporting endpoint data to siem and other systems
+- create data connection
+- list all saved questions configured for recurring endpoint data collection
+- get the latest collected results from a saved recurring question
+- ask endpoint question
 slug: endpoint-management
 source_filename: endpoint-management.yaml
 source_heading: Capability Spec

@@ -64,63 +64,63 @@ personas: []
 provider_name: StoneX
 provider_slug: stonex
 search_terms:
-- payments list payments
-- get details and current status of a specific payment.
-- institutional
-- get account positions
-- get indicative fx exchange rates for a currency pair. use for pre-payment rate discovery or treasury rate monitoring.
-- list payments
-- list institutional clearing accounts. use to discover available accounts for trading or reporting.
-- get indicative fx rates for a currency pair.
-- payments get payment
-- clearing
-- list documents
+- clearing get positions
+- initiate a cross-border payment in 140+ currencies.
+- clearing list accounts
 - futures
 - fx
-- individual payment operations.
-- financial services
-- create payment
-- list trades
-- cross-border payment initiation and tracking.
-- list clearing documents.
-- trade submission and management.
-- clearing list documents
-- payments create payment
-- payments
-- submit a trade for clearing and settlement through stonex. use for programmatic trade entry or algorithmic trading workflows.
-- risk management
-- trading
-- get current open positions for a clearing account. use for risk management, p&l monitoring, or portfolio reporting.
-- get cash, margin, and p&l balances for a clearing account. use for margin monitoring, risk management, or daily reconciliation.
-- get account balances
-- finance
-- clearing get positions
-- list clearing accounts.
-- get fx rates
-- institutional clearing accounts.
-- initiate a cross-border payment in 140+ currencies.
-- list accounts
-- list trades with filters.
-- account position data.
-- get details of a specific payment.
-- clearing documents.
-- clearing list accounts
-- clearing submit trade
-- clearing list trades
-- list clearing documents including trade confirmations and statements. use for compliance, audit, or client reporting.
-- list payments with status and date filters.
-- list trades with account, status, and date filters. use for trade reconciliation, settlement monitoring, or reporting.
-- get current positions for a clearing account.
-- initiate a cross-border payment through stonex in 140+ currencies. use for corporate treasury fx payments, international supplier payments, or global settlements.
-- account balance data.
+- payments get payment
 - clearing get balances
-- get payment
-- payments get fx rates
-- get cash, margin, and p&l balances.
-- foreign exchange rate queries.
+- list payments
+- get indicative fx rates for a currency pair.
+- clearing submit trade
 - list cross-border payments with status and date filters. use to monitor payment pipeline, reconcile transactions, or generate reports.
-- submit trade
+- list accounts
+- list trades with account, status, and date filters. use for trade reconciliation, settlement monitoring, or reporting.
+- list trades with filters.
+- finance
+- risk management
+- create payment
+- account position data.
+- list clearing accounts.
+- get current open positions for a clearing account. use for risk management, p&l monitoring, or portfolio reporting.
+- submit a trade for clearing and settlement through stonex. use for programmatic trade entry or algorithmic trading workflows.
+- trade submission and management.
+- get current positions for a clearing account.
+- get cash, margin, and p&l balances.
+- clearing documents.
+- get details of a specific payment.
+- get cash, margin, and p&l balances for a clearing account. use for margin monitoring, risk management, or daily reconciliation.
+- payments get fx rates
+- initiate a cross-border payment through stonex in 140+ currencies. use for corporate treasury fx payments, international supplier payments, or global settlements.
+- list institutional clearing accounts. use to discover available accounts for trading or reporting.
+- clearing list trades
+- payments create payment
+- cross-border payment initiation and tracking.
+- payments
+- payments list payments
 - submit a trade for clearing and settlement.
+- institutional clearing accounts.
+- foreign exchange rate queries.
+- clearing list documents
+- get account positions
+- trading
+- get details and current status of a specific payment.
+- institutional
+- list clearing documents.
+- list clearing documents including trade confirmations and statements. use for compliance, audit, or client reporting.
+- get payment
+- get fx rates
+- individual payment operations.
+- clearing
+- submit trade
+- list payments with status and date filters.
+- list documents
+- get indicative fx exchange rates for a currency pair. use for pre-payment rate discovery or treasury rate monitoring.
+- financial services
+- account balance data.
+- list trades
+- get account balances
 slug: financial-services
 source_filename: financial-services.yaml
 source_heading: Capability Spec

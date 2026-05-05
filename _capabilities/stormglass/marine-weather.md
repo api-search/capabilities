@@ -53,57 +53,57 @@ personas: []
 provider_name: Stormglass
 provider_slug: stormglass
 search_terms:
-- get tide extremes
-- get land elevation or ocean depth (bathymetry) for any coordinate. positive values indicate land elevation; negative values indicate ocean depth in meters.
+- list all available tide monitoring stations globally
+- get high and low tide events
+- marine environment conditions
+- get solar radiation
 - astronomy
-- bio
-- solar radiation data
-- topographic and bathymetric elevation data
-- retrieve marine environment data for any ocean coordinate. returns wave height, wave direction, swell, water temperature, and currents.
-- get marine environment data including waves and currents
-- get bio
-- get predicted high tide and low tide events for a coastal location. returns tide timestamps, heights, and tide type (high/low).
-- atmospheric weather forecast data
-- hourly sea level data
+- get chlorophyll, oxygen, and nutrient data
+- 'get astronomical data for any location: sunrise, sunset, moonrise, moonset, moon phase, civil/nautical/astronomical dawn and dusk.'
+- get land elevation or ocean depth
+- tidal forecast data
+- tide monitoring stations
 - get biological and oceanographic data for marine research. returns chlorophyll, dissolved oxygen, salinity, ph, nutrients, and phytoplankton data.
-- get sea level
-- ocean
-- astronomical event data
-- get uv index and solar radiation data
-- tides
-- get elevation
-- biological oceanographic data
-- solar
-- get weather
-- retrieve solar radiation data including uv index and downward short-wave radiation flux for any location. useful for solar energy assessment and uv exposure planning.
-- marine
-- get hourly sea level height for coastal planning and navigation
 - retrieve hourly atmospheric weather forecast for any global coordinate. returns temperature, wind, humidity, pressure, cloud cover, and precipitation.
 - wind
-- tidal forecast data
-- get weather forecast
-- get chlorophyll, oxygen, and nutrient data
-- list all available tide monitoring stations globally
-- get hourly weather forecast for a coordinate
-- elevation
-- get marine conditions
-- marine environment conditions
-- get marine
-- list all available tide stations
-- get high and low tide events
-- get hourly sea level relative to datum
 - list tide stations
-- get solar radiation
-- get bio ocean data
+- solar radiation data
 - forecasting
+- get hourly sea level relative to datum
+- ocean
+- get predicted high tide and low tide events for a coastal location. returns tide timestamps, heights, and tide type (high/low).
+- bio
+- get weather
+- get marine
+- solar
+- retrieve marine environment data for any ocean coordinate. returns wave height, wave direction, swell, water temperature, and currents.
+- biological oceanographic data
+- astronomical event data
+- get bio ocean data
 - get solar
-- 'get astronomical data for any location: sunrise, sunset, moonrise, moonset, moon phase, civil/nautical/astronomical dawn and dusk.'
-- tide monitoring stations
+- list all available tide stations
+- get hourly sea level height for coastal planning and navigation
+- topographic and bathymetric elevation data
+- marine
+- elevation
+- get bio
+- get land elevation or ocean depth (bathymetry) for any coordinate. positive values indicate land elevation; negative values indicate ocean depth in meters.
 - climate
-- get sunrise, sunset, and moon data
-- weather
-- get land elevation or ocean depth
+- tides
+- get elevation
+- get sea level
+- get hourly weather forecast for a coordinate
+- retrieve solar radiation data including uv index and downward short-wave radiation flux for any location. useful for solar energy assessment and uv exposure planning.
+- get weather forecast
+- get marine environment data including waves and currents
+- get tide extremes
+- atmospheric weather forecast data
+- get uv index and solar radiation data
+- hourly sea level data
 - get astronomy
+- get marine conditions
+- weather
+- get sunrise, sunset, and moon data
 slug: marine-weather
 source_filename: marine-weather.yaml
 source_heading: Capability Spec

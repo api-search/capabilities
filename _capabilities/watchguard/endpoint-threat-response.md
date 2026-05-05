@@ -63,69 +63,69 @@ personas: []
 provider_name: WatchGuard
 provider_slug: watchguard
 search_terms:
-- sub-accounts managed by a service provider.
-- activate device or license
-- get company risk summary
-- list operators for an account.
-- isolate or release endpoint devices.
+- create operators
 - remove network isolation.
-- get devices protection status
-- get detected risks
-- watchguard
-- create new operator users.
-- list all watchguard managed endpoint devices with protection status.
-- create new watchguard cloud operator users.
-- get detected risks by type.
-- security posture overview.
-- get watchguard endpoint detected risks broken down by type and device.
-- get recent activations
-- initiate immediate security scans.
-- get watchguard cloud account information and status.
-- start an immediate malware scan on watchguard endpoint devices.
-- isolate compromised watchguard endpoint devices from the network.
-- zero trust
 - remove network isolation from devices.
+- threat response
+- get company risk summary
+- device and license activation.
 - list watchguard cloud operator users for an account.
-- get managed accounts
-- get protection status for all endpoint devices.
-- get risk summary by severity level.
-- network security
 - get account
-- remove network isolation from watchguard endpoint devices after remediation.
-- get a watchguard endpoint security overview for 1, 7, or 30 days.
-- watchguard cloud operator management.
-- endpoint security
-- get security overview
-- list devices
-- isolate devices from the network.
-- list all managed sub-accounts in watchguard cloud.
-- mfa
-- managed endpoint devices.
-- list all managed sub-accounts.
-- start immediate scan
-- get operators
-- get recent watchguard device and license activation history.
 - protection status for all managed devices.
+- isolate devices from the network.
+- watchguard cloud account information.
+- get devices protection status
+- isolate compromised watchguard endpoint devices from the network.
+- isolate or release endpoint devices.
 - device management
 - company-wide risk summary.
-- device and license activation.
+- get risk summary by severity level.
+- start an immediate malware scan on watchguard endpoint devices.
 - cloud security
-- remove device isolation
+- watchguard
+- get watchguard cloud account information and status.
+- get security overview
+- managed endpoint devices.
+- get detected risks by type.
 - list all managed endpoint devices.
-- firewall
-- create operators
-- threat response
-- activate hardware devices or software licenses.
-- get company-wide endpoint security risk summary by severity level.
-- isolate devices
-- activate watchguard hardware devices or software license keys.
-- detected risk details.
-- watchguard cloud account information.
-- start an immediate malware scan.
-- get the protection status of all watchguard managed endpoint devices.
-- risk assessment
-- get watchguard cloud account details.
+- get protection status for all endpoint devices.
 - get security overview summary.
+- get a watchguard endpoint security overview for 1, 7, or 30 days.
+- activate hardware devices or software licenses.
+- list devices
+- get watchguard endpoint detected risks broken down by type and device.
+- list operators for an account.
+- detected risk details.
+- get company-wide endpoint security risk summary by severity level.
+- security posture overview.
+- get the protection status of all watchguard managed endpoint devices.
+- get recent activations
+- endpoint security
+- isolate devices
+- watchguard cloud operator management.
+- create new watchguard cloud operator users.
+- network security
+- zero trust
+- get managed accounts
+- list all managed sub-accounts in watchguard cloud.
+- create new operator users.
+- remove device isolation
+- risk assessment
+- get detected risks
+- get recent watchguard device and license activation history.
+- activate watchguard hardware devices or software license keys.
+- sub-accounts managed by a service provider.
+- list all watchguard managed endpoint devices with protection status.
+- get operators
+- firewall
+- mfa
+- list all managed sub-accounts.
+- remove network isolation from watchguard endpoint devices after remediation.
+- start immediate scan
+- initiate immediate security scans.
+- activate device or license
+- start an immediate malware scan.
+- get watchguard cloud account details.
 slug: endpoint-threat-response
 source_filename: endpoint-threat-response.yaml
 source_heading: Capability Spec

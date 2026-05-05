@@ -66,44 +66,44 @@ personas: []
 provider_name: Amazon EventBridge
 provider_slug: amazon-eventbridge
 search_terms:
-- PutRule
-- operations teams managing amazon eventbridge infrastructure
-- amazon eventbridge delete rule
-- CreateArchive
-- DeleteRule
 - amazon eventbridge describe rule
-- RemoveTargets
-- developers building applications using amazon eventbridge
-- serverless event bus for connecting applications with real-time data
-- amazon eventbridge delete event bus
-- CreateEventBus
-- ListEventBuses
-- amazon eventbridge put targets
-- integration
-- ListRules
-- amazon eventbridge remove targets
-- amazon eventbridge list targets by rule
-- DeleteEventBus
-- ListArchives
-- DescribeRule
 - event bus
-- amazon web services
-- events
-- amazon eventbridge describe event bus
-- PutEvents
-- amazon eventbridge list archives
-- amazon eventbridge create archive
-- DescribeEventBus
+- amazon eventbridge list rules
+- ListArchives
+- integration
+- serverless
 - amazon eventbridge list event buses
-- ListTargetsByRule
+- amazon eventbridge delete event bus
+- amazon eventbridge put targets
+- amazon web services
+- amazon eventbridge list targets by rule
+- amazon eventbridge create archive
+- amazon eventbridge remove targets
+- event-driven
 - amazon eventbridge create event bus
+- RemoveTargets
+- PutTargets
+- ListRules
+- amazon eventbridge list archives
 - amazon eventbridge put events
 - amazon eventbridge put rule
-- event-driven
-- amazon eventbridge list rules
-- serverless
+- DescribeRule
+- amazon eventbridge delete rule
+- CreateArchive
+- operations teams managing amazon eventbridge infrastructure
+- amazon eventbridge describe event bus
+- DeleteRule
 - unified capability for managing amazon eventbridge resources. combines amazon eventbridge apis for integration engineer workflows in event-driven architecture.
-- PutTargets
+- DescribeEventBus
+- CreateEventBus
+- DeleteEventBus
+- developers building applications using amazon eventbridge
+- serverless event bus for connecting applications with real-time data
+- events
+- PutRule
+- PutEvents
+- ListEventBuses
+- ListTargetsByRule
 slug: amazon-eventbridge-capability
 source_filename: amazon-eventbridge-capability.yaml
 source_heading: Capability Spec

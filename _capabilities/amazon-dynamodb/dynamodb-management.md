@@ -50,45 +50,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb delete an item from a table
-- amazon dynamodb
-- delete table
-- amazon dynamodb update a dynamodb table
-- delete item
-- amazon dynamodb delete a dynamodb table
-- key-value
-- getItem
-- amazon dynamodb describe a dynamodb table
-- describe table
-- list tables
-- create table
-- amazon dynamodb query items in a table or index
-- document store
-- amazon dynamodb list dynamodb tables
-- engineers managing amazon dynamodb resources on aws.
+- updateItem
 - aws
-- putItem
-- amazon dynamodb put an item into a table
-- deleteTable
-- update table
-- update item
-- database
-- createTable
-- query
-- nosql
-- workflow capability for nosql database operations.
-- nosql database operations business domain for amazon dynamodb.
-- describeTable
-- put item
-- amazon dynamodb create a dynamodb table
-- amazon dynamodb get an item from a table
-- get item
-- listTables
 - amazon dynamodb update an item in a table
+- amazon dynamodb create a dynamodb table
 - updateTable
 - serverless
-- updateItem
+- amazon dynamodb get an item from a table
+- amazon dynamodb describe a dynamodb table
+- amazon dynamodb list dynamodb tables
+- nosql
+- update table
+- update item
+- document store
+- getItem
+- query
+- putItem
+- amazon dynamodb update a dynamodb table
+- create table
+- nosql database operations business domain for amazon dynamodb.
+- database
+- describe table
+- listTables
+- amazon dynamodb delete an item from a table
+- createTable
+- delete item
 - deleteItem
+- amazon dynamodb query items in a table or index
+- describeTable
+- amazon dynamodb
+- get item
+- amazon dynamodb delete a dynamodb table
+- workflow capability for nosql database operations.
+- engineers managing amazon dynamodb resources on aws.
+- deleteTable
+- list tables
+- amazon dynamodb put an item into a table
+- delete table
+- key-value
+- put item
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec

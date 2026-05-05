@@ -69,61 +69,61 @@ personas: []
 provider_name: Rely.io
 provider_slug: rely
 search_terms:
-- catalog automation rules
-- list blueprints
-- individual blueprint schema
-- get blueprint details
 - individual scorecard
-- list entities
-- create entity
-- get entity
-- list all engineering scorecards tracking service standards
-- list all automation rules configured in the portal
-- get blueprint
-- developer experience
-- get scorecard
-- list automations
-- create blueprint
-- list all catalog entities of a specific blueprint type (services, teams, deployments)
-- create a new automation rule triggered by catalog changes
-- engineering scorecards
-- list all blueprint schemas
-- self-service actions
-- create a scorecard
 - get entity details
-- self-service developer actions
-- create a new blueprint schema for a catalog entity type
-- software catalog
-- get a specific blueprint schema and its property definitions
-- update a catalog entity's properties and relations
-- update entity
-- list all self-service developer actions available in the portal
-- platform engineering
-- get details for a specific catalog entity
-- get a specific scorecard with all its rules
-- create a new blueprint schema
-- service catalog
-- list all blueprint schemas defining catalog entity types
-- create an automation rule
-- list all automations
-- create a new catalog entity such as a service or team
-- create a catalog entity
-- software catalog blueprint schemas
-- create a new engineering scorecard with rules and thresholds
-- internal developer portal
-- individual catalog entity
-- get scorecard details
-- list all scorecards
-- create automation
-- create action
-- create a self-service action
+- list entities
 - create scorecard
-- list scorecards
+- software catalog
+- list all automations
+- get entity
 - list actions
+- list all automation rules configured in the portal
+- create a new automation rule triggered by catalog changes
+- create a scorecard
+- get a specific scorecard with all its rules
+- service catalog
+- update entity
+- create a catalog entity
+- create blueprint
+- create entity
+- create a new catalog entity such as a service or team
+- list all blueprint schemas defining catalog entity types
+- get scorecard details
+- create a self-service action
+- list all blueprint schemas
+- engineering scorecards
+- platform engineering
+- list all scorecards
+- self-service actions
+- get a specific blueprint schema and its property definitions
+- catalog automation rules
+- self-service developer actions
 - create a new self-service action for developer workflows
-- rely.io
+- list scorecards
 - list all self-service actions
+- get blueprint
+- create a new blueprint schema for a catalog entity type
+- rely.io
+- list all self-service developer actions available in the portal
+- create a new blueprint schema
+- update a catalog entity's properties and relations
+- get blueprint details
 - catalog entities of a blueprint type
+- list all catalog entities of a specific blueprint type (services, teams, deployments)
+- get details for a specific catalog entity
+- developer experience
+- internal developer portal
+- create action
+- get scorecard
+- create automation
+- list blueprints
+- individual catalog entity
+- create an automation rule
+- software catalog blueprint schemas
+- individual blueprint schema
+- list all engineering scorecards tracking service standards
+- create a new engineering scorecard with rules and thresholds
+- list automations
 slug: platform-engineering
 source_filename: platform-engineering.yaml
 source_heading: Capability Spec

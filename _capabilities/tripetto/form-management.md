@@ -49,41 +49,41 @@ personas: []
 provider_name: Tripetto
 provider_slug: tripetto
 search_terms:
-- automation
-- delete a form and all responses
-- update form
-- list forms
-- get form
-- manage a specific form
-- access collected form responses
-- list all tripetto forms in the account
-- create and list tripetto forms
-- delete a form and all its collected responses
-- retrieve a specific form definition by id
-- retrieve a specific form by id
+- list form webhooks
 - webhooks
-- list all forms in the tripetto account
-- list all configured webhooks for a form
-- sdk
-- create form webhook
-- list form responses
+- manage webhook integrations for a form
+- retrieve a specific form definition by id
+- get form
+- add a webhook endpoint to receive form responses
+- delete a form and all responses
+- create a new smart form with conditional logic
 - update form name or definition
 - list all responses for a specific form
-- add a webhook endpoint to deliver form responses to external services
-- form builder
-- create form
-- update an existing form definition
-- surveys
-- list form webhooks
-- manage webhook integrations for a form
+- update form
 - list webhook integrations configured for a form
-- delete form
-- create a new smart form with conditional logic
-- add a webhook endpoint to receive form responses
+- no-code
 - list responses collected for a specific form
+- list form responses
+- update an existing form definition
+- delete form
+- delete a form and all its collected responses
+- list all tripetto forms in the account
+- access collected form responses
+- create and list tripetto forms
+- surveys
+- create form
 - forms
 - create a new smart form with a json definition
-- no-code
+- create form webhook
+- list forms
+- retrieve a specific form by id
+- automation
+- manage a specific form
+- list all configured webhooks for a form
+- list all forms in the tripetto account
+- sdk
+- add a webhook endpoint to deliver form responses to external services
+- form builder
 slug: form-management
 source_filename: form-management.yaml
 source_heading: Capability Spec

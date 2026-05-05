@@ -21,16 +21,16 @@ personas: []
 provider_name: Zestful
 provider_slug: zestful
 search_terms:
-- recipes
-- parse a list of raw recipe ingredient strings (up to 100 per request) into structured data with quantity, unit, product name, preparation notes, and usda fooddata central database matches.
-- parse a list of raw recipe ingredient strings into structured json data. extracts quantity, measurement unit, product name, preparation notes, and matches each ingredient against the usda fooddata central database. supports up to 100 ingredients per request. use for building searchable recipes, shopping list generation, and nutritional analysis.
-- food
 - parse ingredients
-- usda
-- ingredients
-- parsers
+- parse a list of raw recipe ingredient strings into structured json data. extracts quantity, measurement unit, product name, preparation notes, and matches each ingredient against the usda fooddata central database. supports up to 100 ingredients per request. use for building searchable recipes, shopping list generation, and nutritional analysis.
+- recipes
+- food
 - parse raw recipe ingredient strings into structured data
+- parse a list of raw recipe ingredient strings (up to 100 per request) into structured data with quantity, unit, product name, preparation notes, and usda fooddata central database matches.
+- ingredients
 - parse recipe ingredients
+- parsers
+- usda
 slug: recipe-data-enrichment
 source_filename: recipe-data-enrichment.yaml
 source_heading: Capability Spec

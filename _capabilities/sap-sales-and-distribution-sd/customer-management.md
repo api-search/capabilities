@@ -31,37 +31,37 @@ personas: []
 provider_name: SAP Sales and Distribution (SD)
 provider_slug: sap-sales-and-distribution-sd
 search_terms:
+- list customers
 - list credit limits
 - list all customers / business partners
-- erp
-- odata
-- list credit management accounts
-- get credit account details for a specific business partner
-- distribution
-- list all business partners and customers from sap s/4hana
-- credit management account operations
-- get credit account
-- get a specific business partner / customer by number
-- list credit management accounts from sap s/4hana
-- sap
-- s/4hana
-- get a specific customer / business partner
-- list customers
 - list credit limits for customers
-- customer credit limits
-- sales and distribution
-- sales
-- update an existing business partner / customer
-- get customer
-- create customer
-- customer management
-- customer / business partner management
-- create a new customer / business partner
-- update customer
 - create a new business partner / customer record
-- credit management
+- s/4hana
 - list credit accounts
+- get credit account
+- update customer
+- erp
+- credit management
+- customer credit limits
+- list all business partners and customers from sap s/4hana
+- get a specific business partner / customer by number
+- get customer
+- list credit management accounts from sap s/4hana
+- list credit management accounts
+- customer / business partner management
+- get credit account details for a specific business partner
+- create a new customer / business partner
+- update an existing business partner / customer
+- sales and distribution
+- create customer
+- sales
 - single customer / business partner
+- sap
+- odata
+- credit management account operations
+- customer management
+- distribution
+- get a specific customer / business partner
 slug: customer-management
 source_filename: customer-management.yaml
 source_heading: Capability Spec

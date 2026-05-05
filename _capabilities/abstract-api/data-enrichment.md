@@ -30,60 +30,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- geolocate an ip address
-- web scraping
-- enrich company data
-- retrieve company name, industry, headcount, logo, and location from a domain or email
-- detection and blocking of fraudulent users, transactions, and bot activity
+- engineer building fraud detection and threat intelligence systems
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
 - abstract api
 - get timezone
-- geolocation
-- iban validation
-- phone validation
-- email validation
-- vat validation
-- developer building payment, billing, and financial compliance systems
-- get current time and timezone information for any location
-- security engineer
-- product engineer
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- company enrichment
-- get current timezone for a location
-- fraud analyst
-- exchange rates, vat validation, and iban validation for financial compliance
-- contacts
-- data engineer
-- currencies
-- currency conversion, vat compliance, and banking validation for financial applications
-- image processing
-- enrich company data from domain
-- convert date/time from one timezone to another
-- convert time between zones
-- exchange rates
-- enrich company
-- screenshots
-- data enrichment
-- engineer building fraud detection and threat intelligence systems
-- developer building user onboarding and personalization features
-- get company details from domain or email
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- geolocate an ip address to get country, city, timezone, and currency data
-- geolocate ip address
-- retrieve timezone and current time for a location
-- compliance analyst
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- engineer building data pipelines and enrichment workflows
-- get location data for an ip address
-- ip geolocation
-- get current timezone
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- geolocate an ip address
 - timezones
-- geolocate ip
+- developer building user onboarding and personalization features
+- compliance analyst
+- enrich company data
+- email validation
 - public holidays
-- ip intelligence
-- finance engineer
+- get company details from domain or email
+- convert time between zones
+- web scraping
+- phone validation
+- get current timezone for a location
+- convert date/time from one timezone to another
+- vat validation
+- engineer building data pipelines and enrichment workflows
+- iban validation
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- data enrichment
+- enrich company data from domain
+- retrieve company name, industry, headcount, logo, and location from a domain or email
+- geolocate an ip address to get country, city, timezone, and currency data
+- developer building payment, billing, and financial compliance systems
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- retrieve timezone and current time for a location
+- fraud analyst
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- currency conversion, vat compliance, and banking validation for financial applications
+- enrich company
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- security engineer
 - avatars
+- ip intelligence
+- get current time and timezone information for any location
+- currencies
+- get current timezone
+- finance engineer
+- geolocate ip
+- image processing
+- data engineer
+- contacts
+- detection and blocking of fraudulent users, transactions, and bot activity
+- exchange rates
+- geolocation
+- product engineer
+- geolocate ip address
+- company enrichment
+- ip geolocation
+- screenshots
+- get location data for an ip address
+- exchange rates, vat validation, and iban validation for financial compliance
 slug: data-enrichment
 source_filename: data-enrichment.yaml
 source_heading: Capability Spec

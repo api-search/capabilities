@@ -26,34 +26,34 @@ personas: []
 provider_name: US Army
 provider_slug: us-army
 search_terms:
-- search army news
 - open data
-- get a single army news article
-- get army article
-- list upcoming us army public events and activities
+- army press releases and official news
 - search and list army news articles
+- news
 - army public events
 - federal government
-- army
+- search us army news articles by keyword, subject tag, or date range
+- list upcoming us army public events and activities
 - list army press releases
 - list events
-- list articles
-- media
-- army press releases and official news
-- get article
-- list army events
-- list army news and press releases
-- news
-- retrieve a specific army article by id
-- list army public events
-- list news
-- list and search army news articles
-- public affairs
 - retrieve a specific us army news article by its unique identifier
-- search us army news articles by keyword, subject tag, or date range
-- defense
 - military
+- get army article
+- get article
+- media
+- public affairs
+- retrieve a specific army article by id
+- defense
 - list official us army press releases and news announcements
+- list articles
+- list news
+- list army public events
+- get a single army news article
+- list army events
+- search army news
+- list and search army news articles
+- army
+- list army news and press releases
 slug: army-public-information
 source_filename: army-public-information.yaml
 source_heading: Capability Spec

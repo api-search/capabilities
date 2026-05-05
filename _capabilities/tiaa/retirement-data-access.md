@@ -60,59 +60,59 @@ personas: []
 provider_name: TIAA
 provider_slug: tiaa
 search_terms:
-- list plan participants in sia
-- list available tiaa tax forms (1099-r, 5498) for a given tax year
-- insurance
-- individual account details
+- get details for a specific tiaa account including current balance and status
 - get income projection
-- get customer profile
-- open finance
-- investment management
-- list all tiaa retirement and brokerage accounts for the authenticated customer
-- wealth management
-- plan administration
-- retirement
-- investment positions and holdings
+- list tax forms
+- list available tax forms
+- get participant details
+- list plan participants
+- get plan details
+- get account
 - get sia plan configuration
-- get income projection for a participant
+- list accounts
+- list available tiaa tax forms (1099-r, 5498) for a given tax year
+- fintech
+- list positions
+- tiaa
+- get the authenticated customer's tiaa profile and contact information
+- account transaction history
+- customer profile
+- retirement
+- get sia account details and balance for a specific plan participant
+- finance
+- get projected lifetime monthly and annual income for a participant at a given retirement age
+- financial data
+- investment positions and holdings
 - list investment positions
 - lifetime income projections
-- plan participants
-- list participants
-- get projected lifetime monthly and annual income for a participant at a given retirement age
-- list transactions
-- account transaction history
-- get sia plan configuration, eligibility rules, and allocation limits
-- get participant details
-- list current investment positions and holdings in a tiaa account
-- plan configuration
-- get account
-- list positions
-- customer profile
-- get sia account details and balance for a specific plan participant
-- list tax forms
-- finance
-- tiaa
-- list available tax forms
-- get the authenticated customer's tiaa profile and contact information
-- list investment positions in a retirement account
-- list accounts
-- get specific retirement account details
-- fdx
-- tax documents
-- list participants enrolled in the secure income account for a plan
-- financial data
+- wealth management
+- list all tiaa retirement and brokerage accounts for the authenticated customer
+- open finance
+- list plan participants in sia
+- plan administration
+- get customer profile information
+- insurance
 - list transactions for a retirement account
+- list current investment positions and holdings in a tiaa account
+- get plan
 - get customer
 - list all tiaa retirement accounts
-- get customer profile information
-- list plan participants
-- fintech
-- get plan details
-- get plan
+- get specific retirement account details
+- list transactions
+- list participants
 - customer retirement accounts
+- get income projection for a participant
+- fdx
+- get customer profile
+- list participants enrolled in the secure income account for a plan
+- get sia plan configuration, eligibility rules, and allocation limits
+- plan configuration
+- individual account details
 - list transaction history for a tiaa account within a date range
-- get details for a specific tiaa account including current balance and status
+- plan participants
+- list investment positions in a retirement account
+- investment management
+- tax documents
 slug: retirement-data-access
 source_filename: retirement-data-access.yaml
 source_heading: Capability Spec

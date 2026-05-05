@@ -57,64 +57,64 @@ personas: []
 provider_name: Spring Boot
 provider_slug: spring-boot
 search_terms:
+- spring boot
 - application metrics overview
-- list caches
+- list all application caches
+- list all micrometer metric names available on this spring boot instance
+- get logger level by name
 - set logger level at runtime
 - framework
-- java
-- get application info
-- embedded server
-- monitoring
-- detailed metric measurements
-- get environment
-- get all active environment properties including system, application.properties, profile-specific, and command-line overrides
-- get component health
-- get health status for a specific component (db, redis, diskspace)
-- environment properties
-- get logger level by name
-- list all micrometer metric names available on this spring boot instance
-- list metrics
-- get environment properties
-- get jvm metrics including memory usage, garbage collection, thread counts, and cpu usage
-- get logger
-- check the overall health of a spring boot application including all health indicator components (database, cache, disk space, custom indicators)
-- spring boot
-- list all application caches
-- component-level health status
-- check health status for a specific application component (db, redis, diskspace, custom)
-- get measurements for a specific metric
-- get application metadata including build version, git commit info, and custom info contributors
 - list all available metric names
-- check component health
-- health check
-- get comprehensive application health status
-- metrics
-- get metric
-- cache management
-- dynamically adjust a logger's log level at runtime (trace, debug, info, warn, error, off) without application restart
-- auto configuration
-- spring
-- list all loggers and their levels
-- adjust log level
-- get jvm metrics
-- rest api
-- microservices
-- individual logger management
-- observability
 - list loggers
 - get all environment properties
-- check application health
+- check health status for a specific application component (db, redis, diskspace, custom)
+- get application info
 - list all registered loggers and their current configured and effective log levels
-- set logger level
-- list available metrics
 - evict all application caches to force a full cache refresh
+- embedded server
+- get measurements for a specific metric
 - web development
-- logger configuration management
-- devops
+- adjust log level
+- auto configuration
+- observability
+- health check
 - application health monitoring
+- get health status for a specific component (db, redis, diskspace)
+- get environment
+- get logger
+- list available metrics
+- list all loggers and their levels
+- individual logger management
+- get all active environment properties including system, application.properties, profile-specific, and command-line overrides
+- set logger level
+- microservices
+- devops
+- detailed metric measurements
+- get application metadata including build version, git commit info, and custom info contributors
 - sre
+- environment properties
+- list metrics
+- get jvm metrics
+- cache management
+- monitoring
+- get metric
+- check the overall health of a spring boot application including all health indicator components (database, cache, disk space, custom indicators)
+- check component health
+- metrics
+- logger configuration management
+- get comprehensive application health status
+- get environment properties
+- dynamically adjust a logger's log level at runtime (trace, debug, info, warn, error, off) without application restart
+- get component health
+- list caches
+- rest api
+- get jvm metrics including memory usage, garbage collection, thread counts, and cpu usage
 - evict all caches
+- check application health
+- spring
+- component-level health status
 - get health
+- java
 slug: application-monitoring
 source_filename: application-monitoring.yaml
 source_heading: Capability Spec

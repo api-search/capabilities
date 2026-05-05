@@ -54,53 +54,53 @@ personas: []
 provider_name: Togai
 provider_slug: togai
 search_terms:
-- list accounts for a customer
-- list price plans
-- customer lifecycle management
-- list invoices for an account
-- ingest usage events into togai for metering and billing
-- create a new customer in togai billing system
-- list credits for an account
+- account management
 - list invoices for a togai account
-- create a new usage-based price plan in togai
 - saas
-- create a new billing customer
-- create a new account
+- invoice management
 - list all price plans
+- grant billing credits to a togai account
+- list customers
+- price plan management
 - individual customer operations
+- billing
+- list accounts
+- get details of a specific togai customer
+- list usage meters
+- fintech
+- revenue management
+- create a new billing customer
 - usage event ingestion
+- create a new price plan
+- list price plans
+- create account
+- list accounts for a customer
+- ingest usage events for metering
+- ingest events
+- list invoices
+- create a new customer in togai billing system
+- metering
+- list invoices for an account
+- credit management
+- create a new account
+- list all billing customers in togai
+- get customer
+- ingest usage events into togai for metering and billing
+- list all togai price plans
+- customer lifecycle management
+- list credits for an account
+- list usage meters for a togai event schema
+- grant credit to an account
+- usage-based pricing
+- grant credit
+- get customer details
+- list credits
+- create a new usage-based price plan in togai
+- create customer
+- togai
+- list all billing customers
 - create price plan
 - list accounts for a togai customer
-- grant credit
-- ingest events
-- list usage meters for a togai event schema
-- ingest usage events for metering
-- invoice management
-- revenue management
-- create account
-- list invoices
-- account management
-- get customer details
-- create a new price plan
-- list accounts
-- metering
-- price plan management
-- list customers
-- list all billing customers
-- list credits
-- list usage meters
-- get customer
-- togai
-- usage-based pricing
-- create customer
-- get details of a specific togai customer
-- billing
-- grant billing credits to a togai account
-- list all togai price plans
-- fintech
-- credit management
-- grant credit to an account
-- list all billing customers in togai
 slug: usage-based-billing
 source_filename: usage-based-billing.yaml
 source_heading: Capability Spec

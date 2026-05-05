@@ -41,38 +41,38 @@ personas: []
 provider_name: The News API
 provider_slug: the-news-api
 search_terms:
-- search the complete historical and live news archive.
-- get top news stories filtered by keyword, category, and date.
-- research
-- monitoring
-- full news archive search.
-- search the complete worldwide news archive including historical articles. use for in-depth topic research across all time periods.
-- list available news sources filtered by language and category to discover publishing domains covered by the api.
-- get top news stories globally or filtered by keyword, category, country, language, and date range. use boolean operators (+, |, -, ") for advanced search.
-- get similar news
-- find news articles similar to a given article uuid. useful for discovering related coverage and building content clusters.
-- available news sources.
-- retrieve a specific news article by its uuid to get full metadata.
-- get news sources
-- latest news headlines by category and country.
-- search all news
-- search
-- media
 - get latest headlines organized by category.
+- full news archive search.
+- news
+- search the complete historical and live news archive.
+- find news articles similar to a given article uuid. useful for discovering related coverage and building content clusters.
+- research
+- international
+- get similar news
+- get headlines
+- search all news
+- retrieve a specific news article by its uuid to get full metadata.
+- discover available news sources by language and category.
+- top stories with search and filtering.
+- media
+- get news sources
+- search the complete worldwide news archive including historical articles. use for in-depth topic research across all time periods.
+- specific article by uuid.
+- articles
+- headlines
+- get top stories
+- articles similar to a reference article.
+- search
+- get news articles similar to the given article.
+- monitoring
+- available news sources.
+- latest news headlines by category and country.
+- get article by uuid
+- get top news stories globally or filtered by keyword, category, country, language, and date range. use boolean operators (+, |, -, ") for advanced search.
+- list available news sources filtered by language and category to discover publishing domains covered by the api.
+- get top news stories filtered by keyword, category, and date.
 - get the latest news headlines organized by category (general, business, tech, sports, health, etc.) for specified countries and languages.
 - get a specific news article by uuid.
-- get news articles similar to the given article.
-- news
-- get top stories
-- get article by uuid
-- headlines
-- get headlines
-- articles
-- top stories with search and filtering.
-- international
-- articles similar to a reference article.
-- specific article by uuid.
-- discover available news sources by language and category.
 slug: news-monitoring
 source_filename: news-monitoring.yaml
 source_heading: Capability Spec

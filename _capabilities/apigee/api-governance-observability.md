@@ -20,41 +20,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- apigee
-- shadow apis discovered via apim.
-- list all apis in the apigee api hub catalog.
-- manager packaging api products and managing developer relationships.
-- analytics
-- api governance
-- integrations
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- Platform Architect
-- api discovery
-- api management
-- API Platform Engineer
-- discover shadow apis
-- list apis
-- list observed apis
-- hybrid
-- list catalogued apis
-- api gateway
-- api catalog
-- list api specs
-- engineer managing api proxies, deployments, and policies in apigee.
-- enterprise
-- api catalog from api hub.
-- google cloud
-- discover undocumented shadow apis in google cloud infrastructure using apim.
-- architect overseeing api platform strategy and governance across the organization.
-- list all catalogued apis.
-- microservices
-- list observed shadow apis.
 - developer portal
+- manager packaging api products and managing developer relationships.
+- list observed apis
+- list catalogued apis
+- engineer managing api proxies, deployments, and policies in apigee.
+- shadow apis discovered via apim.
+- enterprise
+- apigee
+- analytics
+- discover shadow apis
+- google cloud
+- api discovery
 - API Governance Lead
-- api hub
-- API Product Manager
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list all apis in the apigee api hub catalog.
+- Platform Architect
+- API Platform Engineer
+- api catalog
+- hybrid
+- microservices
+- architect overseeing api platform strategy and governance across the organization.
+- integrations
+- api governance
+- list apis
+- api management
+- discover undocumented shadow apis in google cloud infrastructure using apim.
 - monetization
+- api catalog from api hub.
+- list observed shadow apis.
 - list api specifications tracked in the apigee registry.
+- api gateway
+- API Product Manager
+- list all catalogued apis.
+- list api specs
+- api hub
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml
 source_heading: Capability Spec

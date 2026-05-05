@@ -35,49 +35,49 @@ provider_name: Verisk
 provider_slug: verisk
 search_terms:
 - get comprehensive property risk assessment
-- insurance
-- lookup property by address
-- property lookup by address
+- unified underwriting workflow combining property risk, fire protection classification, catastrophe scoring, and claims benchmarking
+- industry claims benchmarking and loss performance data
+- property-level risk data including construction and hazard scores
+- policy underwriting and risk assessment for p&c insurance
+- get risk scores
+- catastrophe peril exposure scores
 - get iso fire protection, building code effectiveness, flood zone, earthquake zone, and wind zone risk scores for properties or portfolios
-- property data
-- iso fire protection classification
+- get industry claims benchmarking metrics
 - analytics
-- get claims benchmarks
-- resolve a street address to a property record and retrieve verisk risk data for underwriting
-- get industry claims benchmarking data for loss frequency, severity, combined ratio, and loss ratio by line of business and state
+- property risk
+- risk management
+- property lookup by address
+- get iso public protection classification (ppc) grade for a geographic location to assess fire suppression capability
+- underwriting
+- lookup property by address
+- get peril scores
+- industry claims benchmarking
 - p&c insurance underwriters who evaluate property risk and price policies
 - catastrophe modeling
 - claims
-- get risk scores for properties or portfolios
-- lookup property risk data by street address
-- get risk scores
-- get iso ppc grade for a location
-- underwriting
-- property risk assessment by property id
-- lookup property
-- get iso public protection classification (ppc) grade for a geographic location to assess fire suppression capability
-- policy underwriting and risk assessment for p&c insurance
-- risk management
-- Property Actuary
-- get peril scores
-- get industry claims benchmarking metrics
-- unified underwriting workflow combining property risk, fire protection classification, catastrophe scoring, and claims benchmarking
-- insurance risk scores for underwriting
-- natural hazard peril scoring and catastrophe exposure analysis
-- industry claims benchmarking and loss performance data
-- get property risk
-- get catastrophe peril scores for locations
-- industry claims benchmarking
-- property risk
-- Catastrophe Risk Manager
-- actuaries who model property loss costs and catastrophe exposures
-- property-level risk data including construction and hazard scores
-- catastrophe peril exposure scores
-- get comprehensive property risk assessment including construction, fire protection, and hazard scores for underwriting a specific property
-- get catastrophe exposure scores for hurricane, tornado, hail, wildfire, earthquake, and flood perils for a list of locations
-- Insurance Underwriter
-- risk managers overseeing portfolio catastrophe exposure and pml estimates
 - get fire protection class
+- get iso ppc grade for a location
+- insurance
+- iso fire protection classification
+- property risk assessment by property id
+- get catastrophe peril scores for locations
+- get catastrophe exposure scores for hurricane, tornado, hail, wildfire, earthquake, and flood perils for a list of locations
+- get industry claims benchmarking data for loss frequency, severity, combined ratio, and loss ratio by line of business and state
+- lookup property
+- actuaries who model property loss costs and catastrophe exposures
+- get comprehensive property risk assessment including construction, fire protection, and hazard scores for underwriting a specific property
+- Catastrophe Risk Manager
+- lookup property risk data by street address
+- get risk scores for properties or portfolios
+- insurance risk scores for underwriting
+- Insurance Underwriter
+- get property risk
+- resolve a street address to a property record and retrieve verisk risk data for underwriting
+- get claims benchmarks
+- risk managers overseeing portfolio catastrophe exposure and pml estimates
+- property data
+- natural hazard peril scoring and catastrophe exposure analysis
+- Property Actuary
 slug: insurance-underwriting
 source_filename: insurance-underwriting.yaml
 source_heading: Capability Spec

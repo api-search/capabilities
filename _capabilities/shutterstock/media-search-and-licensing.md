@@ -93,97 +93,97 @@ personas: []
 provider_name: Shutterstock
 provider_slug: shutterstock
 search_terms:
-- stock video search and discovery
-- get detailed metadata for a specific stock image
-- search shutterstock stock video clips
-- get video
-- license one or more shutterstock video clips for download.
-- license one or more shutterstock music tracks for download.
-- get similar images
-- license audio
-- videos
-- get user
-- search editorial images for news and documentary use
-- stock images
-- search images
-- get subscriptions
-- search shutterstock stock photos, illustrations, and vectors
-- get detailed metadata for a specific shutterstock image by id.
-- get image
-- list all available shutterstock image categories
-- list previously licensed images in the user's account history.
-- collections
-- search shutterstock's editorial image library for news, sports, entertainment, and documentary photography. requires country code.
-- license one or more shutterstock stock images for download using a subscription allotment or on-demand purchase. returns download urls.
-- list image categories
-- audio licensing operations
-- creative content
-- create a new image collection to organize saved assets.
-- license images
-- music and audio track search
-- create a new image collection
-- search keyword suggestions for images
-- license one or more stock images for download
-- editorial news and event photography
-- get search keyword suggestions for image discovery based on a partial query string.
-- get image suggestions
-- list active user subscriptions and allotments
-- search shutterstock's library of royalty-free music tracks and audio content by keyword, genre, mood, and duration.
-- ai-generated keyword suggestions from uploaded images
-- get detailed metadata for a specific shutterstock video clip by id.
-- search videos
-- search shutterstock's library of 350m+ stock photos, illustrations, and vectors by keyword, color, orientation, category, and more. returns image metadata including preview urls and asset details.
-- visually similar image recommendations
-- list categories
-- get authenticated user account details
-- get ai-suggested keywords for an uploaded image
-- get detailed metadata for a specific stock video
-- image licensing operations
-- list user image collections
-- license one or more stock videos for download
-- stock media
-- audio
-- get details about the authenticated shutterstock user account.
-- list all available shutterstock image content categories for filtering.
-- list collections
-- available image content categories
-- computer vision
-- photos
-- find shutterstock stock images that are visually similar to a specified image id. useful for finding alternative options or creating visual consistency.
-- stock image search and discovery
-- get keyword suggestions for image searches
-- search editorial images
-- user account details
-- license videos
-- find similar images by upload
-- use computer vision to find shutterstock images visually similar to an uploaded reference image. requires an asset_id from the cv image upload endpoint.
-- individual video details
-- find images visually similar to an uploaded reference image
-- create collection
-- video licensing operations
 - editorial
-- licensing
-- search audio
-- user media collection management
-- use shutterstock's ai to extract relevant keywords from an uploaded image, useful for finding related stock content.
-- get ai keywords
-- images
+- search shutterstock's library of royalty-free music tracks and audio content by keyword, genre, mood, and duration.
+- stock media
+- license one or more shutterstock stock images for download using a subscription allotment or on-demand purchase. returns download urls.
+- get user
+- get suggestions
+- audio licensing operations
+- list previously licensed images in the user's account history.
+- find stock images visually similar to a reference image
+- get image suggestions
 - individual image details
 - list the authenticated user's image collections.
+- get search keyword suggestions for image discovery based on a partial query string.
 - media
-- list previously licensed images
-- find stock images visually similar to a reference image
-- license one or more music tracks
-- search shutterstock music tracks and audio content
-- list image licenses
-- search editorial
+- license audio
+- collections
+- search images
+- get keyword suggestions for image searches
+- licensing
+- get similar images
+- license one or more stock images for download
 - get keywords
-- get suggestions
-- search shutterstock's library of stock video clips by keyword, resolution, duration, and category.
-- list active shutterstock subscriptions and remaining download allotments.
-- find similar images
-- computer vision visual similarity search
+- list active user subscriptions and allotments
+- search keyword suggestions for images
+- stock video search and discovery
+- video licensing operations
+- find shutterstock stock images that are visually similar to a specified image id. useful for finding alternative options or creating visual consistency.
+- user account details
+- list collections
+- create collection
 - user subscription information
+- get subscriptions
+- get detailed metadata for a specific stock video
+- search shutterstock stock video clips
+- use computer vision to find shutterstock images visually similar to an uploaded reference image. requires an asset_id from the cv image upload endpoint.
+- videos
+- search editorial
+- search audio
+- license one or more shutterstock music tracks for download.
+- available image content categories
+- list user image collections
+- images
+- ai-generated keyword suggestions from uploaded images
+- search videos
+- list categories
+- get detailed metadata for a specific stock image
+- license videos
+- visually similar image recommendations
+- user media collection management
+- list all available shutterstock image categories
+- get video
+- stock images
+- photos
+- search shutterstock music tracks and audio content
+- music and audio track search
+- get details about the authenticated shutterstock user account.
+- license one or more shutterstock video clips for download.
+- license images
+- find similar images by upload
+- computer vision
+- get ai-suggested keywords for an uploaded image
+- get detailed metadata for a specific shutterstock video clip by id.
+- creative content
+- individual video details
+- list active shutterstock subscriptions and remaining download allotments.
+- audio
+- use shutterstock's ai to extract relevant keywords from an uploaded image, useful for finding related stock content.
+- computer vision visual similarity search
+- search editorial images for news and documentary use
+- list image categories
+- search shutterstock's library of 350m+ stock photos, illustrations, and vectors by keyword, color, orientation, category, and more. returns image metadata including preview urls and asset details.
+- list image licenses
+- search editorial images
+- editorial news and event photography
+- create a new image collection
+- stock image search and discovery
+- list all available shutterstock image content categories for filtering.
+- get image
+- create a new image collection to organize saved assets.
+- search shutterstock stock photos, illustrations, and vectors
+- search shutterstock's library of stock video clips by keyword, resolution, duration, and category.
+- image licensing operations
+- list previously licensed images
+- license one or more music tracks
+- license one or more stock videos for download
+- find images visually similar to an uploaded reference image
+- get authenticated user account details
+- get detailed metadata for a specific shutterstock image by id.
+- find similar images
+- search shutterstock's editorial image library for news, sports, entertainment, and documentary photography. requires country code.
+- get ai keywords
 slug: media-search-and-licensing
 source_filename: media-search-and-licensing.yaml
 source_heading: Capability Spec

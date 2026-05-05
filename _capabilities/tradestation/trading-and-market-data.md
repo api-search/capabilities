@@ -77,80 +77,80 @@ personas: []
 provider_name: TradeStation
 provider_slug: tradestation
 search_terms:
-- symbol details and metadata
-- retrieve available option expiration dates for an underlying symbol
-- preview estimated commissions, costs, and margin requirements before placing an order
-- retrieve symbol metadata including exchange, category, and contract specifications
-- preview order costs before placing
-- calculate the risk/reward profile for an option strategy
-- retrieve open positions
-- place a group order
-- accounts
-- active account orders
-- retrieve active orders for one or more tradestation accounts
-- get quotes
-- retrieve current account balances
-- brokerage account information
-- cryptocurrency
-- retrieve option strike prices
+- retrieve historical filled, cancelled, and rejected orders
+- order cost preview
 - futures
+- stocks
+- market data
+- get positions
+- get quotes
+- get option expirations
+- place a group order
+- brokerage account information
+- retrieve tradestation brokerage accounts and account metadata
+- options
+- retrieve option strike prices
+- retrieve real-time bid, ask, last price, and volume for symbols
+- retrieve available cryptocurrency trading pairs on tradestation
+- get balances
+- order placement and management
+- place order
 - confirm order
 - place order group
-- brokerage
-- market data
-- place order
-- modify an existing order
-- option expiration dates
-- get positions
-- place a new order
-- retrieve real-time quote snapshots
-- options
-- get balances
-- calculate option risk reward
-- retrieve current cash, equity, buying power, and margin balances for accounts
-- get symbols
-- real-time market quotes
 - place a new stock, option, futures, or crypto order on tradestation
-- retrieve symbol information
-- cryptocurrency trading pairs
-- retrieve all brokerage accounts
-- trading
-- retrieve tradestation brokerage accounts and account metadata
-- retrieve cryptocurrency trading pairs
 - finance
-- retrieve real-time bid, ask, last price, and volume for symbols
-- get bars
-- retrieve available strike prices for options on an underlying symbol
-- cancel an existing open tradestation order
-- get wallets
-- retrieve historical filled, cancelled, and rejected orders
-- get accounts
-- retrieve historical ohlc bar chart data for a symbol
-- retrieve available cryptocurrency trading pairs on tradestation
-- historical bar chart data
-- retrieve cryptocurrency wallet balances for a tradestation account
-- option strike prices
-- get orders
-- cancel an existing order
-- retrieve option expiration dates
-- account positions
-- manage existing orders
-- get crypto pairs
-- order execution
-- retrieve active orders
-- get option strikes
-- place a bracket, oco, or oso group order on tradestation
-- stocks
-- cancel order
-- retrieve ohlc bar chart history
-- replace order
-- order placement and management
-- order cost preview
-- group order placement (bracket, oco, oso)
-- retrieve open positions including market value, unrealized p/l, and asset type
 - account balance information
-- get option expirations
+- preview estimated commissions, costs, and margin requirements before placing an order
+- retrieve all brokerage accounts
+- preview order costs before placing
+- accounts
+- order execution
+- option strike prices
+- retrieve current account balances
+- calculate the risk/reward profile for an option strategy
+- retrieve historical ohlc bar chart data for a symbol
+- get option strikes
+- get wallets
+- retrieve current cash, equity, buying power, and margin balances for accounts
+- retrieve open positions
+- retrieve active orders
+- get crypto pairs
+- retrieve open positions including market value, unrealized p/l, and asset type
+- retrieve available strike prices for options on an underlying symbol
+- replace order
+- cancel order
+- get orders
+- group order placement (bracket, oco, oso)
+- active account orders
+- retrieve symbol information
+- retrieve available option expiration dates for an underlying symbol
+- retrieve cryptocurrency wallet balances for a tradestation account
+- get symbols
+- option expiration dates
+- brokerage
+- retrieve symbol metadata including exchange, category, and contract specifications
+- place a bracket, oco, or oso group order on tradestation
+- get bars
+- symbol details and metadata
+- trading
+- place a new order
+- cancel an existing open tradestation order
+- retrieve real-time quote snapshots
+- manage existing orders
+- cryptocurrency
 - get historical orders
+- calculate option risk reward
+- cancel an existing order
+- real-time market quotes
+- get accounts
+- retrieve cryptocurrency trading pairs
+- account positions
+- historical bar chart data
+- modify an existing order
+- cryptocurrency trading pairs
+- retrieve ohlc bar chart history
+- retrieve active orders for one or more tradestation accounts
+- retrieve option expiration dates
 slug: trading-and-market-data
 source_filename: trading-and-market-data.yaml
 source_heading: Capability Spec

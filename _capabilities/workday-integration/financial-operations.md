@@ -17,28 +17,28 @@ personas: []
 provider_name: Workday Integration
 provider_slug: workday-integration
 search_terms:
-- cash management
-- list accounting journal entries
 - workday
-- accounting
-- hcm
-- list bank accounts
-- erp
-- get details of a journal entry
-- list transactions
-- integration
-- list financial cost centers
-- finance
-- enterprise
-- list journal entries
-- procurement
-- get journal entry
-- payroll
-- financial management
-- list general ledger accounts
-- list cost centers
-- list ledger accounts
 - list bank transactions
+- integration
+- enterprise
+- get journal entry
+- hcm
+- accounting
+- cash management
+- finance
+- list ledger accounts
+- payroll
+- list journal entries
+- get details of a journal entry
+- procurement
+- erp
+- list financial cost centers
+- list transactions
+- list general ledger accounts
+- list bank accounts
+- financial management
+- list cost centers
+- list accounting journal entries
 slug: financial-operations
 source_filename: financial-operations.yaml
 source_heading: Capability Spec

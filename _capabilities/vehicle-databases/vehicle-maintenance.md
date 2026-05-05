@@ -41,35 +41,35 @@ personas: []
 provider_name: Vehicle Databases
 provider_slug: vehicle-databases
 search_terms:
-- automotive
-- get nhtsa recall information for a vehicle
-- get oem maintenance schedule
-- find vehicles with engine options by make, model, and year
-- get technical service bulletins
-- get service items, fluid specifications, and part numbers for a vehicle at a specific mileage interval
-- decode a vin to vehicle details
-- get oem technical service bulletins (tsbs) for a vehicle, optionally filtered by category
-- decode a 17-character vin to full vehicle specification
-- look up vehicles by make, model, and year to get vehicle identifiers
-- vehicles
-- list service items
-- decode a 17-character vin to identify make, model, year, engine, and trim
-- get maintenance schedule
-- decode vin
-- lookup vehicle
+- get tsbs
 - maintenance
 - get recalls
-- recalls
+- get service items, fluid specifications, and part numbers for a vehicle at a specific mileage interval
 - get complete oem maintenance schedule with service intervals
-- list service items with fluid specs for a specific mileage
-- check nhtsa safety recalls
-- look up vehicles by make, model, and year
-- check for nhtsa safety recalls affecting a specific vehicle
-- fleet management
-- get tsbs
-- get service items for a maintenance interval
+- look up vehicles by make, model, and year to get vehicle identifiers
 - get the complete oem maintenance schedule for a vehicle, optionally filtered by current mileage
+- get maintenance schedule
+- recalls
+- check nhtsa safety recalls
+- get service items for a maintenance interval
+- decode vin
+- lookup vehicle
+- find vehicles with engine options by make, model, and year
+- get oem maintenance schedule
+- list service items with fluid specs for a specific mileage
+- automotive
+- get oem technical service bulletins (tsbs) for a vehicle, optionally filtered by category
 - get oem technical service bulletins for a vehicle
+- get nhtsa recall information for a vehicle
+- decode a 17-character vin to identify make, model, year, engine, and trim
+- check for nhtsa safety recalls affecting a specific vehicle
+- get technical service bulletins
+- decode a 17-character vin to full vehicle specification
+- look up vehicles by make, model, and year
+- decode a vin to vehicle details
+- list service items
+- vehicles
+- fleet management
 slug: vehicle-maintenance
 source_filename: vehicle-maintenance.yaml
 source_heading: Capability Spec

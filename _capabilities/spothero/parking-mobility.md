@@ -49,47 +49,47 @@ personas: []
 provider_name: SpotHero
 provider_slug: spothero
 search_terms:
-- cancel parking reservation
-- book parking
-- check real-time parking availability and pricing at a specific facility for a time period.
+- reservations
+- create reservation
+- create a parking reservation at a facility. returns confirmation code and barcode for facility access.
+- check parking availability
+- get facility rates
+- individual reservation operations
+- search parking
+- book a parking reservation at a facility
+- mobility
+- get hourly, daily, and event rates for a facility
+- get hourly, daily, event, and monthly pricing rates for a parking facility.
+- get facility
+- get parking facility details, amenities, and directions
 - real-time parking availability at a facility
-- navigation
-- list parking reservations filtered by status, date range, or facility.
+- transportation
+- cancel parking reservation
+- cancel a parking reservation. refund eligibility depends on facility policy and cancellation timing.
+- get facility availability
+- get parking rates
+- detailed information about a parking facility
+- search for available parking near a location or address for a given time period. returns facility names, prices, availability, and amenities.
+- spothero
+- check if parking is available at a facility for a time period
+- parking
+- list reservations
 - parking reservation management
+- cancel a parking reservation
+- search for available parking by location and time
+- search for available parking near a destination
+- list parking reservations filtered by status, date range, or facility.
+- get reservation
+- get details for a specific reservation
 - pricing rates for a parking facility
 - list parking reservations with optional filters
-- mobility
-- get facility
-- book a parking reservation at a facility
-- search for available parking near a destination
-- search parking
-- get parking rates
-- get parking facility
-- check parking availability
-- get hourly, daily, event, and monthly pricing rates for a parking facility.
-- create reservation
-- individual reservation operations
-- get facility rates
-- get parking facility details, amenities, and directions
-- search for available parking near a location or address for a given time period. returns facility names, prices, availability, and amenities.
-- cancel a parking reservation
-- cancel a parking reservation. refund eligibility depends on facility policy and cancellation timing.
-- get hourly, daily, and event rates for a facility
+- book parking
+- navigation
 - cancel reservation
-- transportation
-- list reservations
-- get details for a specific reservation
 - get detailed information about a specific parking facility including address, amenities, operating hours, and entry/exit instructions.
-- reservations
-- get facility availability
-- search for available parking by location and time
-- check if parking is available at a facility for a time period
-- detailed information about a parking facility
-- spothero
-- create a parking reservation at a facility. returns confirmation code and barcode for facility access.
+- get parking facility
+- check real-time parking availability and pricing at a specific facility for a time period.
 - get full details for a parking reservation including status, barcode, and confirmation code.
-- parking
-- get reservation
 slug: parking-mobility
 source_filename: parking-mobility.yaml
 source_heading: Capability Spec

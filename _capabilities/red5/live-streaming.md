@@ -34,45 +34,45 @@ personas: []
 provider_name: Red5
 provider_slug: red5
 search_terms:
-- get detailed statistics for a live stream including bitrate, frame rate, and subscriber count
 - get app stats
-- video
-- get stream
-- list all active live streams in a streaming application
-- list streams
-- list applications
-- get stream stats
-- stop stream recording
-- individual stream management
+- stop recording
 - start recording
 - list active streams in an application
-- streaming application management
-- webrtc
-- live stream management
-- start recording a stream
-- media
-- stop an active stream recording and finalize the recording file
-- server health and information
-- get server information and status
-- stop recording
-- get statistics for a specific streaming application scope
-- list live streams
-- rtmp
-- list deployed streaming applications
-- live streaming
-- check red5 pro server health and get version information
-- get stream statistics
-- real-time
-- get server health
-- red5
-- streaming
-- get server info
-- get detailed red5 pro server configuration and status
-- start stream recording
-- stop recording a stream
-- list all streaming applications deployed on the red5 pro server
 - list streaming apps
+- get stream statistics
+- live streaming
+- get detailed red5 pro server configuration and status
+- server health and information
 - start recording a live stream to disk storage
+- start recording a stream
+- individual stream management
+- list live streams
+- live stream management
+- streaming
+- stop an active stream recording and finalize the recording file
+- media
+- list streams
+- list all streaming applications deployed on the red5 pro server
+- start stream recording
+- webrtc
+- list applications
+- stop stream recording
+- streaming application management
+- stop recording a stream
+- real-time
+- check red5 pro server health and get version information
+- get server information and status
+- list deployed streaming applications
+- rtmp
+- get detailed statistics for a live stream including bitrate, frame rate, and subscriber count
+- video
+- get stream
+- get stream stats
+- red5
+- get server health
+- list all active live streams in a streaming application
+- get server info
+- get statistics for a specific streaming application scope
 slug: live-streaming
 source_filename: live-streaming.yaml
 source_heading: Capability Spec

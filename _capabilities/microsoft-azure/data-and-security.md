@@ -30,55 +30,55 @@ personas: []
 provider_name: Microsoft Azure
 provider_slug: microsoft-azure
 search_terms:
-- cloud computing
-- blob download
-- t1
-- list blobs
-- list cryptographic keys
-- arm list tags
-- keyvault list secrets
-- list subscriptions
-- keyvault list keys
-- blob storage operations
-- resource manager
-- arm list subscriptions
-- infrastructure as a service
-- arm list resource groups
-- azure
-- blob list blobs
-- api management
-- subscription management
-- platform as a service
-- download a blob
-- list resources in a subscription
-- get a secret value
-- cosmos db database management
-- list resource providers
 - list secrets
-- blob get properties
-- key vault secret management
-- blob storage
-- list containers in a database
-- keyvault get secret
-- key vault
+- cosmos db
+- cosmos db database management
+- list cosmos db databases
 - cosmos list items
-- arm list providers
-- list subscription tags
+- subscription management
+- list items in a container
 - cloud
-- cosmos list containers
 - enterprise
 - get blob properties
-- keyvault list certificates
-- list blobs in a container
-- cosmos db
-- list databases
+- arm list tags
+- keyvault get secret
 - arm list resources
-- list certificates
-- list azure subscriptions
-- list items in a container
-- list cosmos db databases
-- list resource groups
+- blob storage
+- platform as a service
+- key vault
+- blob storage operations
 - cosmos list databases
+- azure
+- blob list blobs
+- cosmos list containers
+- cloud computing
+- t1
+- list subscription tags
+- get a secret value
+- arm list providers
+- download a blob
+- list certificates
+- list containers in a database
+- keyvault list secrets
+- list cryptographic keys
+- list databases
+- arm list subscriptions
+- list resource providers
+- key vault secret management
+- infrastructure as a service
+- keyvault list keys
+- api management
+- list azure subscriptions
+- arm list resource groups
+- resource manager
+- blob get properties
+- keyvault list certificates
+- list subscriptions
+- list resource groups
+- list blobs
+- list resources in a subscription
+- list blobs in a container
+- blob download
 slug: data-and-security
 source_filename: data-and-security.yaml
 source_heading: Capability Spec

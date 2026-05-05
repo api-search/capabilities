@@ -41,39 +41,39 @@ personas: []
 provider_name: Vendr
 provider_slug: vendr
 search_terms:
-- define and structure purchase requirements
-- procurement workflow event subscriptions
-- parse purchase scope
-- get price benchmark
-- remove an event subscription
-- fair price estimates based on real contract data
-- get price estimate
 - get a fair price estimate and negotiation insights for a software purchase based on 200,000+ real contracts
 - saas
-- delete event subscription
-- subscribe to procurement workflow events
-- create event subscription
-- negotiation
-- remove a procurement event subscription
-- search products
-- browse and search software products in the vendr catalog
-- pricing
-- list all active event subscriptions
-- list event subscriptions
-- create purchase scope
-- unsubscribe from events
-- procurement
-- search for software products and vendors in the vendr catalog
-- get fair price estimate and negotiation insights
 - parse natural language purchase requirements (e.g. '10 seats of slack pro annual') into structured scope
-- software spend management
-- parse natural language purchase requirements into structured scope
-- subscribe to procurement workflow events (deal closed, workflow updated, pricing changed)
-- vendr
-- list all active procurement workflow event subscriptions
-- subscribe to events
-- search for software products and vendors
 - manage individual event subscriptions
+- define and structure purchase requirements
+- parse natural language purchase requirements into structured scope
+- parse purchase scope
+- remove an event subscription
+- procurement
+- create purchase scope
+- fair price estimates based on real contract data
+- list all active procurement workflow event subscriptions
+- negotiation
+- procurement workflow event subscriptions
+- search for software products and vendors in the vendr catalog
+- list event subscriptions
+- software spend management
+- subscribe to procurement workflow events
+- vendr
+- get price estimate
+- remove a procurement event subscription
+- delete event subscription
+- get fair price estimate and negotiation insights
+- list all active event subscriptions
+- get price benchmark
+- subscribe to procurement workflow events (deal closed, workflow updated, pricing changed)
+- browse and search software products in the vendr catalog
+- search for software products and vendors
+- subscribe to events
+- create event subscription
+- search products
+- unsubscribe from events
+- pricing
 slug: saas-procurement-intelligence
 source_filename: saas-procurement-intelligence.yaml
 source_heading: Capability Spec

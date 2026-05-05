@@ -31,39 +31,39 @@ personas: []
 provider_name: Unity
 provider_slug: unity
 search_terms:
-- individual player operations
-- player game data
-- friends
-- delete player
-- get player
-- query player data with field-based filters
-- save player game data
-- list all player accounts in the project
-- get player details
-- get player game data
-- get a player's saved game data from the cloud
-- list all players
-- player management
-- get details for a specific player account
-- game development
-- authentication
-- get player account
-- game services
-- cloud gaming
-- permanently delete a player account
-- unity
-- query player data
-- player account management
-- identity
-- save player data
-- update player game data
-- delete player account
-- update a player's saved game data in the cloud
 - social
-- list players
+- get player details
+- player management
+- get player account
 - get player data
+- query player data
+- player game data
 - multiplayer
+- delete player account
 - real-time 3d
+- cloud gaming
+- list players
+- permanently delete a player account
+- query player data with field-based filters
+- player account management
+- get details for a specific player account
+- update a player's saved game data in the cloud
+- update player game data
+- delete player
+- unity
+- game services
+- save player game data
+- individual player operations
+- list all players
+- get player game data
+- save player data
+- friends
+- authentication
+- get a player's saved game data from the cloud
+- list all player accounts in the project
+- game development
+- identity
+- get player
 slug: player-identity
 source_filename: player-identity.yaml
 source_heading: Capability Spec

@@ -30,33 +30,33 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- send events
-- monitoring
-- send log records to new relic
-- send distributed trace spans to new relic
-- apm
-- analytics
-- send custom events to a new relic account
-- telemetry
+- platform
 - send metrics
-- ops engineering
-- new relic
-- send custom events
+- send metric data to new relic
 - send traces
-- send trace spans
 - analysis
-- send metric data
-- send logs
-- performance
 - send dimensional metric data to new relic
-- send custom events to new relic
+- send distributed trace spans to new relic
+- new relic
+- send logs
+- analytics
+- send log data
+- send metric data
 - observability
 - data ingestion
-- platform
+- send log records to new relic
+- telemetry
+- performance
+- apm
 - devops
-- send metric data to new relic
+- send custom events to new relic
+- send custom events to a new relic account
+- ops engineering
+- send custom events
+- send trace spans
 - infrastructure
-- send log data
+- monitoring
+- send events
 slug: telemetry-ingestion
 source_filename: telemetry-ingestion.yaml
 source_heading: Capability Spec

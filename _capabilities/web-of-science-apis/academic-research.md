@@ -39,51 +39,51 @@ personas: []
 provider_name: Web of Science APIs
 provider_slug: web-of-science-apis
 search_terms:
-- individual document
-- citations
-- search web of science literature using advanced query syntax (e.g., ts=climate change and py=2020-2024)
-- research
-- search documents
-- discover research papers related to a given article based on shared references
-- science
-- find journal
-- get references
-- journal search
-- get document by uid
-- look up a journal in web of science by issn or name to get impact metrics
-- get citation report
-- find all papers that have cited a specific article (forward citation tracking)
-- search literature
-- get full bibliographic details for a specific web of science document by uid
-- related records
-- get detailed information about a journal including jcr profile and categories
-- get document reference list
-- get citing articles
-- search journals by issn or name
-- search journals
-- find related research
-- generate a bibliometric citation report including h-index and year-by-year citation counts
-- get the complete reference list of a paper (backward citation tracking)
-- run advanced web of science search with full field tag syntax for comprehensive literature review
-- citation report
-- get related records
-- scholarly
-- get document
-- retrieve a full web of science record directly by its unique identifier
-- generate citation report
-- bibliometrics
-- search web of science documents
-- get record by uid
-- academic
-- get journal details
-- literature review
-- get citation report for query
-- get paper details
-- document references
-- find citing papers
-- advanced search
 - document search
+- find all papers that have cited a specific article (forward citation tracking)
+- get citing articles
+- retrieve a full web of science record directly by its unique identifier
+- get references
+- literature review
+- research
+- science
+- get citation report
+- find journal
+- related records
+- get record by uid
+- find related research
+- scholarly
+- search journals
+- citation report
+- bibliometrics
+- search documents
+- search web of science documents
+- get document reference list
+- get document
+- get document by uid
+- citations
+- get detailed information about a journal including jcr profile and categories
+- get journal details
+- search literature
+- run advanced web of science search with full field tag syntax for comprehensive literature review
+- search journals by issn or name
+- search web of science literature using advanced query syntax (e.g., ts=climate change and py=2020-2024)
+- generate a bibliometric citation report including h-index and year-by-year citation counts
+- discover research papers related to a given article based on shared references
+- advanced search
+- journal search
+- find citing papers
+- individual document
+- get the complete reference list of a paper (backward citation tracking)
+- generate citation report
+- get citation report for query
 - articles citing a document
+- get full bibliographic details for a specific web of science document by uid
+- academic
+- document references
+- get paper details
+- get related records
+- look up a journal in web of science by issn or name to get impact metrics
 slug: academic-research
 source_filename: academic-research.yaml
 source_heading: Capability Spec

@@ -46,54 +46,54 @@ personas: []
 provider_name: Sync Labs
 provider_slug: sync-labs
 search_terms:
-- get batch
-- batch processing
-- video
+- batch video generation
+- submit multiple videos for batch lip-sync processing (up to 500 videos)
+- content localization
+- available ai models
 - list models
-- list uploaded video and audio assets
-- list all lip-sync generation jobs with their statuses and output urls
-- create an ai lip-sync generation
+- lip sync
+- get batch status
+- list uploaded assets
+- create generation
+- check the status of a lip-sync generation and get the output video url when complete
 - list all available sync labs ai models with quality/speed/cost tradeoffs
+- get batch status and results
+- list assets
+- batch processing
+- get generation
+- create batch
+- uploaded media assets
+- list all generation jobs
+- estimate cost
+- individual generation status and result
+- create an ai lip-sync generation
+- list batches
+- estimate generation cost
+- artificial intelligence
+- single video generation
+- individual batch status
+- submit a batch of lip-sync generations
+- media
+- create batch dubbing
+- cost estimation
+- create lipsync video
+- list generations
+- visual ai
 - get generation status
+- get batch
+- list all lip-sync generation jobs with their statuses and output urls
+- list all batch jobs
+- get a cost estimate before submitting a lip-sync generation to avoid surprises
+- list available lip-sync ai models
+- video
 - list available models
 - list previously uploaded video and audio assets available for reuse
-- available ai models
-- uploaded media assets
-- create lipsync video
-- cost estimation
-- submit multiple videos for batch lip-sync processing (up to 500 videos)
-- list batches
-- estimate cost
-- estimate generation cost
-- generate a lip-synced video by combining source video with new audio track
-- check the status of a lip-sync generation and get the output video url when complete
-- get batch status
-- get batch status and results
-- media
-- lip sync
-- list all generation jobs
-- list uploaded assets
-- submit a batch of lip-sync generations
-- create batch
 - check the progress and results of a batch dubbing job
-- create generation
-- create batch dubbing
-- artificial intelligence
-- dubbing
-- content localization
-- batch video generation
-- individual batch status
-- get generation
-- individual generation status and result
-- get a cost estimate before submitting a lip-sync generation to avoid surprises
-- list all batch jobs
-- sync labs
-- visual ai
-- list assets
-- list generations
-- single video generation
+- list uploaded video and audio assets
 - get generation status and output video url
-- list available lip-sync ai models
+- generate a lip-synced video by combining source video with new audio track
+- dubbing
+- sync labs
 slug: video-dubbing
 source_filename: video-dubbing.yaml
 source_heading: Capability Spec

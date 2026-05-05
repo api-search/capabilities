@@ -11,11 +11,11 @@ provider_slug: amazon-fraud-detector
 search_terms:
 - real-time
 - financial security
-- financial services
-- security
-- fraud detection
 - aws
+- security
+- financial services
 - machine learning
+- fraud detection
 slug: amazon-fraud-detector-real-time-detection
 source_filename: amazon-fraud-detector-real-time-detection.yaml
 source_heading: Capability Spec

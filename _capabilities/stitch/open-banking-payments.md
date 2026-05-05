@@ -37,34 +37,34 @@ personas: []
 provider_name: Stitch
 provider_slug: stitch
 search_terms:
-- create disbursement
-- initiate a pay by bank payment in south africa or nigeria. returns a payment url to redirect the customer for bank authorization.
-- initiate payment
-- payment status retrieval.
-- initiate a pay by bank payment for a customer.
-- list bank accounts
 - get current status of a payment initiation request.
-- list bank accounts linked by the user.
+- fintech
 - open banking
-- unified api
-- linked user bank accounts.
-- africa
-- check the status of a payment initiation request (pending, complete, cancelled, or error). use to poll for payment completion.
-- payments
+- initiate payment
+- payment initiation requests.
+- financial data
+- payment status retrieval.
 - send an outbound payment disbursement to a beneficiary bank account. use for marketplace payouts, refunds, or mass payments.
+- africa
+- linked user bank accounts.
+- check the status of a payment initiation request (pending, complete, cancelled, or error). use to poll for payment completion.
+- initiate a pay by bank payment for a customer.
+- retrieve transaction history for a linked bank account. supports relay-style cursor pagination via first/after parameters.
+- nigeria
+- get account transactions
+- payments
+- create disbursement
+- list bank accounts linked by the user.
+- unified api
+- south africa
+- outbound payment disbursements.
 - bank account transactions.
 - get transactions for a linked bank account.
-- create an outbound disbursement to a bank account.
-- nigeria
-- financial data
-- retrieve transaction history for a linked bank account. supports relay-style cursor pagination via first/after parameters.
-- south africa
-- fintech
 - list bank accounts linked by the user. use to show available accounts for payment or data analysis.
 - get payment status
-- get account transactions
-- outbound payment disbursements.
-- payment initiation requests.
+- list bank accounts
+- initiate a pay by bank payment in south africa or nigeria. returns a payment url to redirect the customer for bank authorization.
+- create an outbound disbursement to a bank account.
 slug: open-banking-payments
 source_filename: open-banking-payments.yaml
 source_heading: Capability Spec

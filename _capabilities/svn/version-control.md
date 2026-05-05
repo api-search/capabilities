@@ -41,37 +41,37 @@ personas: []
 provider_name: Subversion
 provider_slug: svn
 search_terms:
-- retrieve the content of a file or directory listing from svn
-- subversion
-- open source
-- delete a file or directory in an active commit
-- upload file
-- svn
-- create commit
-- file and directory access
-- create a new commit transaction
-- browse the svn repository root and see available projects
-- schedule a file or directory for deletion in an active svn commit
-- start a new svn commit transaction to stage file changes
-- version control
-- browse repository
-- get file content or directory listing at head
-- get repository root
-- retrieve the historical content of a file at a specific svn revision number
-- commit transaction lifecycle
 - historical file access by revision
-- apache
-- get file
-- retrieve file content at a specific historical revision
-- repository root information and metadata
-- get repository root listing and metadata
-- upload file content as part of an active commit
-- webdav
-- get file at revision
-- source control
+- delete a file or directory in an active commit
 - upload a file to an active svn commit transaction
-- repository
 - delete file
+- get file content or directory listing at head
+- repository root information and metadata
+- repository
+- source control
+- open source
+- get repository root
+- schedule a file or directory for deletion in an active svn commit
+- version control
+- get file at revision
+- create commit
+- upload file
+- subversion
+- retrieve file content at a specific historical revision
+- retrieve the historical content of a file at a specific svn revision number
+- svn
+- get file
+- file and directory access
+- get repository root listing and metadata
+- create a new commit transaction
+- webdav
+- start a new svn commit transaction to stage file changes
+- browse the svn repository root and see available projects
+- apache
+- retrieve the content of a file or directory listing from svn
+- browse repository
+- commit transaction lifecycle
+- upload file content as part of an active commit
 slug: version-control
 source_filename: version-control.yaml
 source_heading: Capability Spec

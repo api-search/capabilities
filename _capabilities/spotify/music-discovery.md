@@ -66,83 +66,83 @@ personas: []
 provider_name: Spotify
 provider_slug: spotify
 search_terms:
-- get track
-- get the tracks in a playlist with pagination support.
-- skip to the next track in the playback queue.
-- get the playback queue
-- album details
-- pause playback
-- get current user's playlists
-- artist profile
-- add tracks to playlist
-- search
-- get current playback state
-- personalized track recommendations
-- search for tracks, albums, artists, and playlists
-- get playlist items
-- playback
-- get albums released by an artist, including singles, compilations, and appearances.
-- get queue
-- get an album's metadata including tracklist, release date, and label.
-- user's top artists and tracks
-- get an artist's profile including genres, popularity, and follower count.
-- streaming
-- search music
-- search the spotify music catalog
-- music
-- add to playlist
-- skip to next
-- track metadata
-- get recommendations
-- get tracks in a playlist
-- playback queue
-- get artist
-- get my playlists
-- spotify
-- get user's top artists or tracks
-- add one or more tracks to a spotify playlist by their uris.
-- podcasts
-- get playlist tracks
-- add a track or episode to the spotify playback queue by uri.
-- get detailed metadata for a spotify track including artists, album, duration, and audio features.
-- get personalized track recommendations based on seed artists, tracks, and genres. supports audio feature targeting (tempo, energy, danceability).
-- playlist track management
-- discovery
-- audio
-- get playback queue
-- get artist details
 - get playlist
-- get top items
-- get playback state
-- get the authenticated user's top tracks over short, medium, or long term.
+- get artist details
+- add one or more tracks to a spotify playlist by their uris.
+- user's top artists and tracks
+- get track details
+- skip to the next track in the playback queue.
+- recommendations
+- search the spotify catalog for tracks, albums, artists, playlists, shows, or episodes. use type='track,album,artist' to search multiple types at once.
+- get current playback state
+- get artist
+- add tracks to a playlist
+- start or resume playback
+- get my playlists
+- get all playlists owned or followed by the authenticated user.
+- get top artists
+- search the spotify music catalog
+- get track
+- get playlist metadata and tracks
+- playlist track management
+- music
 - get top tracks
 - get album
-- get album details and tracks
+- search for tracks, albums, artists, and playlists
+- playback queue
 - get artist albums
-- get top artists
-- play music
-- add to queue
-- start or resume playback
-- playback state
-- playlists
+- add a track or episode to the spotify playback queue by uri.
 - get the tracks currently in the spotify playback queue.
-- get all playlists owned or followed by the authenticated user.
 - pause spotify playback on the current active device.
-- get track recommendations from seeds
-- add tracks to a playlist
-- add a track to the queue
-- get track details
-- recommendations
-- get the current spotify playback state including track, device, position, and shuffle/repeat settings.
-- get playlist details including all tracks, description, and owner.
 - current user's playlists
-- get the authenticated user's top artists over short, medium, or long term.
-- search the spotify catalog for tracks, albums, artists, playlists, shows, or episodes. use type='track,album,artist' to search multiple types at once.
+- search
+- get detailed metadata for a spotify track including artists, album, duration, and audio features.
+- get album details and tracks
+- get recommendations
+- get queue
+- search music
+- get playback state
+- personalized track recommendations
+- skip to next
+- get current user's playlists
+- track metadata
+- get playlist details including all tracks, description, and owner.
 - playlist details
-- get playlist metadata and tracks
-- personalization
-- start playback
+- album details
+- podcasts
+- spotify
+- add to queue
+- streaming
+- artist profile
+- get albums released by an artist, including singles, compilations, and appearances.
+- audio
+- get playlist tracks
 - start or resume spotify playback. can play a specific context (album, playlist, artist) or list of track uris.
+- get playlist items
+- get track recommendations from seeds
+- get top items
+- get user's top artists or tracks
+- playback state
+- add to playlist
+- pause playback
+- get the authenticated user's top tracks over short, medium, or long term.
+- get the playback queue
+- discovery
+- play music
+- get playback queue
+- get the authenticated user's top artists over short, medium, or long term.
+- add a track to the queue
+- get the tracks in a playlist with pagination support.
+- get an album's metadata including tracklist, release date, and label.
+- personalization
+- get the current spotify playback state including track, device, position, and shuffle/repeat settings.
+- playback
+- get personalized track recommendations based on seed artists, tracks, and genres. supports audio feature targeting (tempo, energy, danceability).
+- playlists
+- start playback
+- get an artist's profile including genres, popularity, and follower count.
+- get tracks in a playlist
+- add tracks to playlist
 slug: music-discovery
 source_filename: music-discovery.yaml
 source_heading: Capability Spec

@@ -34,59 +34,59 @@ personas: []
 provider_name: UnitedHealth Group
 provider_slug: unitedhealth
 search_terms:
-- member
-- drug coverage and formulary management
-- fhir
-- unitedhealth group
-- get member coverage details.
-- health data interoperability
+- get member fhir patient resource.
 - get member coverage
-- search the unitedhealth group provider directory for in-network physicians, specialists, and organizations by name, npi, specialty, or state.
-- find in network provider
-- list member claims as eobs.
 - search provider directory.
 - get insurance coverage
-- cms-mandated fhir r4 data exchange for patient health records and claims
-- retrieve a unitedhealth group member's fhir patient record with demographics and identifiers.
-- provider directory.
-- health insurance
-- fhir r4 health data interoperability workflow for member access, claims, coverage, conditions, providers, and formulary
-- claims
-- list member conditions
-- member-facing health data access and transparency
-- cms patient access
-- member coverage.
-- member demographics.
-- retrieve a member's complete claims history as fhir explanationofbenefit resources including services, diagnoses, and payment details.
-- get member claims history
-- optum
-- network provider search and directory services
-- da vinci
-- get member health record
-- interoperability
-- member conditions.
-- healthcare
-- check drug formulary
-- search providers
-- get a member's unitedhealth group insurance coverage including plan name, group number, and benefit period.
-- care manager
-- list member conditions.
-- get member fhir patient resource.
-- drug formulary.
-- check unitedhealth group drug formulary coverage tier, prior authorization requirements, and quantity limits for a medication.
+- health data interoperability
 - provider
-- list member claims
-- provider using directory and formulary apis for patient care support
+- check drug formulary
+- get a member's unitedhealth group insurance coverage including plan name, group number, and benefit period.
+- member
+- find in network provider
+- search providers
+- fhir
 - developer building fhir-compliant applications using unitedhealth group interoperability apis
-- member accessing their own health data through fhir patient access apis
-- member claims history.
+- healthcare
+- drug formulary.
 - retrieve a member's health conditions and diagnoses from unitedhealth group clinical records and claims data.
-- get member
-- search drug formulary.
-- care management professional accessing member health data for population health and care coordination
-- search formulary
-- health app developer
+- member-facing health data access and transparency
+- member coverage.
 - get member conditions
+- claims
+- network provider search and directory services
+- list member conditions
+- get member claims history
+- health app developer
+- health insurance
+- search drug formulary.
+- fhir r4 health data interoperability workflow for member access, claims, coverage, conditions, providers, and formulary
+- provider using directory and formulary apis for patient care support
+- search the unitedhealth group provider directory for in-network physicians, specialists, and organizations by name, npi, specialty, or state.
+- retrieve a unitedhealth group member's fhir patient record with demographics and identifiers.
+- member demographics.
+- list member conditions.
+- member conditions.
+- care manager
+- unitedhealth group
+- member accessing their own health data through fhir patient access apis
+- list member claims as eobs.
+- cms patient access
+- cms-mandated fhir r4 data exchange for patient health records and claims
+- drug coverage and formulary management
+- get member health record
+- care management professional accessing member health data for population health and care coordination
+- optum
+- list member claims
+- member claims history.
+- provider directory.
+- retrieve a member's complete claims history as fhir explanationofbenefit resources including services, diagnoses, and payment details.
+- interoperability
+- search formulary
+- get member
+- get member coverage details.
+- da vinci
+- check unitedhealth group drug formulary coverage tier, prior authorization requirements, and quantity limits for a medication.
 slug: health-data-interoperability
 source_filename: health-data-interoperability.yaml
 source_heading: Capability Spec

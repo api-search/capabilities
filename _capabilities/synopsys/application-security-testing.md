@@ -34,39 +34,39 @@ personas: []
 provider_name: Synopsys
 provider_slug: synopsys
 search_terms:
-- list security scan runs for a project or branch with status tracking.
-- software security
-- security issues from scans.
-- sca
-- list projects
-- application security testing
-- devsecops
-- sast
-- security report generation.
-- get details for a specific security issue.
 - generate report
-- list all application security projects in the synopsys polaris platform.
 - list scan runs with status and issue counts.
-- application security project management.
+- devsecops
+- list security issues found by polaris scans.
+- application security testing
+- sast
+- synopsys
+- get details for a specific security issue.
+- eda tools
 - generate a security report (pdf, json, or csv) for a polaris project.
-- get issue
-- list security issues discovered by polaris scans, filterable by severity and type.
-- get details for a specific security project.
-- list all application security projects.
+- list all application security projects in the synopsys polaris platform.
+- security issues from scans.
+- security report generation.
+- list security scan runs for a project or branch with status tracking.
+- static analysis
+- get details for a specific polaris security project including branches.
+- list projects
 - software composition analysis
 - generate security report
-- list security issues found by polaris scans.
+- get details for a specific security project.
+- list issues
+- software security
+- get issue
+- sca
+- application security project management.
 - generate a security report for a project.
-- synopsys
 - list scans
-- get details for a specific polaris security project including branches.
+- list all application security projects.
+- semiconductor design
+- list security issues discovered by polaris scans, filterable by severity and type.
+- get project
 - get full details for a specific security issue including cwe, file path, and line number.
 - security scan management.
-- eda tools
-- get project
-- semiconductor design
-- static analysis
-- list issues
 slug: application-security-testing
 source_filename: application-security-testing.yaml
 source_heading: Capability Spec

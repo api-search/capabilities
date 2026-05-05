@@ -14,25 +14,25 @@ personas: []
 provider_name: Vector
 provider_slug: vector
 search_terms:
-- data pipeline
-- vector
-- check if the vector pipeline is running and healthy.
-- monitoring
-- check the health status of a running vector observability pipeline instance. returns ok:true when healthy.
-- open source
-- logs
-- rust
-- vector pipeline health status.
-- engineer responsible for operating and monitoring observability data pipelines.
-- collecting, transforming, and routing logs, metrics, and traces.
-- metrics
 - traces
-- observability
 - get vector health
-- health monitoring workflow for vector pipeline instances.
-- devops
+- open source
+- rust
+- observability
+- collecting, transforming, and routing logs, metrics, and traces.
+- engineer responsible for operating and monitoring observability data pipelines.
 - DevOps Engineer
+- vector pipeline health status.
+- vector
+- devops
+- health monitoring workflow for vector pipeline instances.
+- check the health status of a running vector observability pipeline instance. returns ok:true when healthy.
+- monitoring
+- logs
+- metrics
+- check if the vector pipeline is running and healthy.
 - get health
+- data pipeline
 slug: pipeline-monitoring
 source_filename: pipeline-monitoring.yaml
 source_heading: Capability Spec

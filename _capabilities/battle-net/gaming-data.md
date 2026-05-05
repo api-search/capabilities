@@ -9,20 +9,20 @@ personas: []
 provider_name: Battle.net
 provider_slug: battle-net
 search_terms:
-- diablo
-- oauth token management
-- starcraft
-- gaming
-- players using deck-building tools and card databases
-- blizzard
-- competitive rankings and season data
-- authenticated player-specific data
-- games
-- developers building companion apps, stat trackers, or tools for blizzard games
 - hearthstone
+- authenticated player-specific data
 - world of warcraft
-- players tracking character progress, gear, and achievements
+- players using deck-building tools and card databases
 - static and dynamic game reference data
+- players tracking character progress, gear, and achievements
+- oauth token management
+- diablo
+- competitive rankings and season data
+- blizzard
+- gaming
+- developers building companion apps, stat trackers, or tools for blizzard games
+- starcraft
+- games
 slug: gaming-data
 source_filename: gaming-data.yaml
 source_heading: Capability Spec

@@ -38,46 +38,46 @@ personas: []
 provider_name: Steelcase
 provider_slug: steelcase
 search_terms:
+- check room availability for a given time window.
 - room availability across a time window.
-- facilities management
-- create booking
-- smart office
 - get bookings
-- list bookings
-- create a new conference room booking for a meeting.
-- cancel an existing booking.
-- conference rooms available for booking.
-- get status
-- list conference rooms filtered by building, floor, or minimum capacity.
-- get details about a specific conference room including capacity and equipment.
-- conference room bookings.
-- office 365
 - get conference room details.
-- get system status
-- check the health and connectivity status of the roomwizard system.
-- individual room details.
+- get room
+- cancel an existing booking.
+- facilities management
+- office furniture
+- conference room bookings.
+- cancel an existing conference room booking.
+- workplace
+- list conference rooms filtered by building, floor, or minimum capacity.
+- create a new room booking.
 - get room details
+- conference rooms
+- smart office
+- list bookings
+- list all conference rooms filtered by building, floor, or minimum capacity.
+- cancel a booking.
+- check which conference rooms are available during a specified time window.
+- create booking
+- get roomwizard connector health status.
+- list existing bookings for a room or date range.
+- get system status
+- retrieve bookings for a room or date range.
+- get details about a specific conference room including capacity and equipment.
+- get status
+- room scheduling
+- system status.
+- individual room details.
+- check the health and connectivity status of the roomwizard system.
+- check availability
+- create a new conference room booking for a meeting.
+- conference rooms available for booking.
+- list rooms
+- office 365
+- iot
+- calendaring
 - get availability
 - cancel booking
-- cancel a booking.
-- list existing bookings for a room or date range.
-- room scheduling
-- create a new room booking.
-- cancel an existing conference room booking.
-- check room availability for a given time window.
-- office furniture
-- list all conference rooms filtered by building, floor, or minimum capacity.
-- workplace
-- check which conference rooms are available during a specified time window.
-- conference rooms
-- get roomwizard connector health status.
-- system status.
-- check availability
-- get room
-- calendaring
-- iot
-- retrieve bookings for a room or date range.
-- list rooms
 slug: room-scheduling
 source_filename: room-scheduling.yaml
 source_heading: Capability Spec

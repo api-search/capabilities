@@ -1,40 +1,52 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that activates Compliance Frameworks (NIST/SOC2/PCI/GDPR) + Continuous Compliance (CCF-style), framed for audit + advisory practice.
+description: A capability over the Continuous Compliance Framework (CCF) that runs continuous control checks against capability deployments and emits compliance events.
 layout: capability
 name: Ccf Continuous Compliance Capability
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: assess
+  path: /assess
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- spec-driven integration
+- get assessment
+- run assessment
+- governance
+- list controls
+- compliance
 - mcp
-- ai
+- ccf
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a capability that activates compliance frameworks (nist/soc2/pci/gdpr) + continuous compliance (ccf-style), framed for audit + advisory practice.
-- example op
-- governance
+- assess
+- ai
 slug: ccf-continuous-compliance-capability
 source_filename: ccf-continuous-compliance-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Ccf Continuous Compliance Capability\n  description: A capability that activates Compliance Frameworks (NIST/SOC2/PCI/GDPR) + Continuous Compliance (CCF-style), framed for audit + advisory practice.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: ccf-continuous-compliance-capability-rest\n    description: REST API for Ccf Continuous Compliance Capability.\n    resources:\n    - name: example\n      path: /example\n\
-  \      operations:\n      - method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: ccf-continuous-compliance-capability-mcp\n    description: MCP server exposing Ccf Continuous Compliance Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability that activates Compliance Frameworks (NIST/SOC2/PCI/GDPR) + Continuous Compliance (CCF-style), framed for audit + advisory practice.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: ccf-continuous-compliance-capability-skills\n    description: Agent Skill bundle for Ccf Continuous Compliance Capability.\n    skills:\n    - name: ccf-continuous-compliance-capability\n      description: A capability that activates Compliance Frameworks (NIST/SOC2/PCI/GDPR) + Continuous Compliance (CCF-style), framed for audit + advisory practice.\n      location:\
-  \ file:///opt/naftiko/skills/ccf-continuous-compliance-capability\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that activates Compliance Frameworks (NIST/SOC2/PCI/GDPR) + Continuous Compliance (CCF-style), framed for audit + advisory practice.\n        from:\n          sourceNamespace: ccf-continuous-compliance-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Ccf Continuous Compliance Capability\n  description: A capability over the Continuous Compliance Framework (CCF) that runs continuous control checks against capability deployments and emits compliance events.\n  tags: [Naftiko, CCF, Compliance]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: ccf-env\n  keys: {CCF_HOST: CCF_HOST, CCF_TOKEN: CCF_TOKEN}\ncapability:\n  consumes:\n  - namespace: ccf\n    type: http\n    baseUri: https://{{CCF_HOST}}\n    authentication: {type: bearer, token: '{{CCF_TOKEN}}'}\n    resources:\n    - {name: controls, path: /api/v1/controls, operations: [{name: list-controls, method: GET}]}\n    - {name: assessments, path: /api/v1/assessments, operations: [{name: run-assessment, method: POST}]}\n    - name: assessment\n      path: /api/v1/assessments/{{assessment_id}}\n      operations:\n      - {name: get-assessment, method: GET, inputParameters: [{name: assessment_id, in: path}]}\n \
+  \ exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: ccf-continuous-compliance-capability-rest\n    description: REST surface for continuous compliance checks.\n    resources:\n    - {name: assess, path: /assess, operations: [{method: POST, name: assess, call: ccf.run-assessment}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: ccf-continuous-compliance-capability-mcp\n    description: MCP for continuous compliance.\n    tools:\n    - {name: list-controls, hints: {readOnly: true}, call: ccf.list-controls}\n    - {name: run-assessment, call: ccf.run-assessment}\n    - name: get-assessment\n      hints: {readOnly: true}\n      inputParameters: [{name: assessment_id, type: string, required: true}]\n      call: ccf.get-assessment\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: ccf-continuous-compliance-capability-skills\n    description: Skill for continuous compliance.\n    skills:\n    - name: ccf-continuous-compliance-capability\n\
+  \      description: CCF continuous compliance.\n      location: file:///opt/naftiko/skills/ccf-continuous-compliance-capability\n      allowed-tools: list-controls,run-assessment,get-assessment\n      tools:\n      - {name: list-controls, from: {sourceNamespace: ccf-continuous-compliance-capability-mcp, action: list-controls}}\n      - {name: run-assessment, from: {sourceNamespace: ccf-continuous-compliance-capability-mcp, action: run-assessment}}\n      - {name: get-assessment, from: {sourceNamespace: ccf-continuous-compliance-capability-mcp, action: get-assessment}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/ccf-continuous-compliance-capability.yaml
 tags:
 - Naftiko
+- CCF
+- Compliance
 tools:
-- description: A capability that activates Compliance Frameworks (NIST/SOC2/PCI/GDPR) + Continuous Compliance (CCF-style), framed for audit + advisory practice.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-controls
+- description: ''
+  hints: {}
+  name: run-assessment
+- description: ''
+  hints:
+    readOnly: true
+  name: get-assessment
 ---

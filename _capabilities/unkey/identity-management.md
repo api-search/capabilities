@@ -37,33 +37,33 @@ personas: []
 provider_name: Unkey
 provider_slug: unkey
 search_terms:
-- access control
-- identity collection operations
-- single identity operations
-- retrieve an identity by its id or external id
-- create identity
-- analytics
-- rate limiting
-- developer platform
-- delete an identity
-- get an identity by id
-- authentication
+- multi-tenant
 - list identities
+- get an identity by id
+- retrieve an identity by its id or external id
+- delete an identity
+- identity collection operations
+- developer platform
 - delete an identity and disassociate its grouped keys
-- unkey
-- identity
+- api keys
+- rate limiting
+- get identity
+- analytics
+- list all identities in the workspace with pagination
+- single identity operations
 - update metadata for an existing identity
+- identities
+- update identity
+- access control
+- list all identities
+- authentication
+- update identity metadata
 - delete identity
 - create a new identity to group api keys under a single external user or organization
-- get identity
-- list all identities in the workspace with pagination
-- identities
-- list all identities
-- update identity metadata
-- update identity
-- multi-tenant
+- unkey
+- create identity
+- identity
 - create a new identity for grouping api keys
-- api keys
 slug: identity-management
 source_filename: identity-management.yaml
 source_heading: Capability Spec

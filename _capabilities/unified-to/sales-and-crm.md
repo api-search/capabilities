@@ -30,43 +30,43 @@ personas: []
 provider_name: Unified.to
 provider_slug: unified-to
 search_terms:
+- list contacts from a crm integration
+- create a new deal in a crm integration
+- CRM Integrator
+- developers building hr workflows, employee onboarding, and recruiting automation
+- list companies from a crm integration
 - deals
-- create a new contact in a connected crm integration
+- create a new contact in a crm integration
+- list companies from a connected crm integration
+- create crm deal
+- crm contact, company, and deal management across 47+ integrations
 - list contacts from a connected crm integration (salesforce, hubspot, pipedrive, etc.)
-- Finance Operations Engineer
-- integrations
-- crm contact management across all integrations
+- crm company management across all integrations
 - developers building invoicing automation, expense management, and accounting sync
+- crm contact management across all integrations
+- list crm contacts
+- People Operations Engineer
 - unified.to
+- developers building sales tools, crm sync, and revenue reporting integrations
+- integrations
+- list deals and opportunities from a connected crm integration
+- list deals from a crm integration
+- unified api
+- crm
+- crm deal and opportunity management
 - create crm contact
 - Revenue Operations Developer
-- CRM Integrator
-- unified api
-- list deals from a crm integration
-- list companies from a connected crm integration
-- crm contact, company, and deal management across 47+ integrations
-- contacts
-- HR Technology Developer
-- create a new deal or opportunity in a connected crm integration
-- hris and ats management across 296+ hr and recruiting integrations
-- crm company management across all integrations
-- list companies from a crm integration
-- developers building sales tools, crm sync, and revenue reporting integrations
-- People Operations Engineer
-- list crm companies
-- list contacts from a crm integration
-- Fintech Developer
-- create a new deal in a crm integration
+- Finance Operations Engineer
 - sales
-- list deals and opportunities from a connected crm integration
-- crm deal and opportunity management
-- accounting, invoicing, and payment management across 41+ integrations
+- HR Technology Developer
+- create a new contact in a connected crm integration
+- create a new deal or opportunity in a connected crm integration
+- list crm companies
+- hris and ats management across 296+ hr and recruiting integrations
+- Fintech Developer
+- contacts
 - list crm deals
-- create crm deal
-- list crm contacts
-- crm
-- create a new contact in a crm integration
-- developers building hr workflows, employee onboarding, and recruiting automation
+- accounting, invoicing, and payment management across 41+ integrations
 slug: sales-and-crm
 source_filename: sales-and-crm.yaml
 source_heading: Capability Spec

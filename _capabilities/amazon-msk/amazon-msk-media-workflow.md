@@ -14,35 +14,35 @@ personas: []
 provider_name: Amazon MSK
 provider_slug: amazon-msk
 search_terms:
-- broadcasting
-- create cluster
-- Broadcast Engineer
-- amazon msk media processing workflow
-- listconfigurations
-- list configurations
-- manage media processing jobs
-- aws media processing and delivery
-- batchassociatescramsecret
-- listclustersv2
-- createclusterv2
-- media processing
-- create cluster v2
-- aws
-- list jobs
 - batch associate scram secret
-- media
-- batchdisassociatescramsecret
-- listclusters
-- developer building media processing applications
-- listscramsecrets
-- list clusters v2
-- Media Developer
-- createcluster
-- engineer managing broadcast media workflows
-- list clusters
-- list scram secrets
 - batch disassociate scram secret
+- list configurations
+- list scram secrets
+- aws
+- aws media processing and delivery
+- list jobs
+- manage media processing jobs
+- batchdisassociatescramsecret
+- list clusters v2
+- create cluster v2
 - workflow
+- Media Developer
+- amazon msk media processing workflow
+- media
+- listclusters
+- listscramsecrets
+- listclustersv2
+- create cluster
+- media processing
+- engineer managing broadcast media workflows
+- Broadcast Engineer
+- broadcasting
+- list clusters
+- batchassociatescramsecret
+- developer building media processing applications
+- createcluster
+- createclusterv2
+- listconfigurations
 slug: amazon-msk-media-workflow
 source_filename: amazon-msk-media-workflow.yaml
 source_heading: Capability Spec

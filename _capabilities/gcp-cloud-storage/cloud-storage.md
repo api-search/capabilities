@@ -55,53 +55,53 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: gcp-cloud-storage
 search_terms:
+- delete an object.
+- copy object
+- update object metadata.
+- get bucket iam policy.
+- bucket iam management.
+- get object metadata.
+- set bucket iam policy.
+- update a bucket.
+- create bucket
+- get object
+- bucket management.
+- cloud storage
+- object storage
+- set iam policy.
+- delete bucket
+- update bucket
+- data
+- get iam policy.
+- list storage buckets in a project.
+- update object
+- list objects in a bucket.
+- google cloud
+- blob storage
+- individual object management.
+- storage
+- copy an object to another location.
+- get bucket iam policy
+- delete a storage bucket.
+- object management.
+- individual bucket management.
+- file storage
+- create a bucket.
+- list objects.
+- data management
+- set bucket iam policy
+- delete object
+- backup
+- compose objects
+- delete a bucket.
+- create a new storage bucket.
 - compose multiple objects into one.
 - get bucket
-- get object metadata.
-- copy an object to another location.
-- storage
-- data
 - list objects
-- set bucket iam policy
-- bucket iam management.
-- list buckets
-- copy object
-- compose objects
-- update object
-- delete bucket
-- file storage
-- get iam policy.
-- list objects.
-- delete an object.
-- get bucket iam policy
-- bucket management.
-- set iam policy.
-- archival
-- list buckets.
-- update a bucket.
-- get object
-- blob storage
-- create a bucket.
-- google cloud
-- set bucket iam policy.
-- data management
-- delete a bucket.
-- cloud storage
-- delete a storage bucket.
-- individual bucket management.
-- object management.
-- object storage
-- delete object
-- list objects in a bucket.
-- get bucket iam policy.
-- update object metadata.
-- update bucket
-- individual object management.
 - get bucket details.
-- backup
-- create a new storage bucket.
-- create bucket
-- list storage buckets in a project.
+- list buckets.
+- list buckets
+- archival
 slug: cloud-storage
 source_filename: cloud-storage.yaml
 source_heading: Capability Spec

@@ -1,40 +1,46 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability layered on top of the Data API showing typed outputParameters + tags-on-Consumes (data sensitivity, billing granularity) as the -customer-facing pattern.
+description: A capability that exposes a data warehouse over a uniform Data API surface — query, schema, and lineage as REST + MCP.
 layout: capability
 name: Data Api Capability
 operations:
 - description: ''
-  method: GET
-  name: example-op
-  path: /example
+  method: POST
+  name: run-sql
+  path: /query
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- snowflake
+- spec-driven integration
+- run sql
 - mcp
-- ai
+- capabilities
+- get statement
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- a capability layered on top of the data api showing typed outputparameters + tags-on-consumes (data sensitivity, billing granularity) as the -customer-facing pattern.
-- example op
+- data api
 - governance
+- ai
 slug: data-api-capability
 source_filename: data-api-capability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Data Api Capability\n  description: A capability layered on top of the Data API showing typed outputParameters + tags-on-Consumes (data sensitivity, billing granularity) as the -customer-facing pattern.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: data-api-capability-rest\n    description: REST API for Data Api Capability.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method:\
-  \ GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: data-api-capability-mcp\n    description: MCP server exposing Data Api Capability for AI agents.\n    tools:\n    - name: example\n      description: A capability layered on top of the Data API showing typed outputParameters + tags-on-Consumes (data sensitivity, billing granularity) as the -customer-facing pattern.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: data-api-capability-skills\n    description: Agent Skill bundle for Data Api Capability.\n    skills:\n    - name: data-api-capability\n      description: A capability layered on top of the Data API showing typed outputParameters + tags-on-Consumes (data sensitivity, billing granularity) as the -customer-facing pattern.\n      location: file:///opt/naftiko/skills/data-api-capability\n      allowed-tools:\
-  \ example\n      tools:\n      - name: example\n        description: A capability layered on top of the Data API showing typed outputParameters + tags-on-Consumes (data sensitivity, billing granularity) as the -customer-facing pattern.\n        from:\n          sourceNamespace: data-api-capability-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Data Api Capability\n  description: A capability that exposes a data warehouse over a uniform Data API surface — query, schema, and lineage as REST + MCP.\n  tags: [Naftiko, Data API, Snowflake]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: snowflake-env\n  keys: {SNOWFLAKE_ACCOUNT: SNOWFLAKE_ACCOUNT, SNOWFLAKE_TOKEN: SNOWFLAKE_TOKEN}\ncapability:\n  consumes:\n  - namespace: snowflake\n    type: http\n    baseUri: https://{{SNOWFLAKE_ACCOUNT}}.snowflakecomputing.com\n    authentication: {type: bearer, token: '{{SNOWFLAKE_TOKEN}}'}\n    resources:\n    - {name: statements, path: /api/v2/statements, operations: [{name: run-sql, method: POST}]}\n    - name: statement\n      path: /api/v2/statements/{{statement_handle}}\n      operations:\n      - {name: get-statement, method: GET, inputParameters: [{name: statement_handle, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace:\
+  \ data-api-capability-rest\n    description: REST surface for the data API.\n    resources:\n    - {name: query, path: /query, operations: [{method: POST, name: run-sql, call: snowflake.run-sql}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: data-api-capability-mcp\n    description: MCP for data API.\n    tools:\n    - {name: run-sql, call: snowflake.run-sql}\n    - name: get-statement\n      hints: {readOnly: true}\n      inputParameters: [{name: statement_handle, type: string, required: true}]\n      call: snowflake.get-statement\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: data-api-capability-skills\n    description: Skill for data API.\n    skills:\n    - name: data-api-capability\n      description: Data API over warehouse.\n      location: file:///opt/naftiko/skills/data-api-capability\n      allowed-tools: run-sql,get-statement\n      tools:\n      - {name: run-sql, from: {sourceNamespace: data-api-capability-mcp, action: run-sql}}\n\
+  \      - {name: get-statement, from: {sourceNamespace: data-api-capability-mcp, action: get-statement}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/data-api-capability.yaml
 tags:
 - Naftiko
+- Data API
+- Snowflake
 tools:
-- description: A capability layered on top of the Data API showing typed outputParameters + tags-on-Consumes (data sensitivity, billing granularity) as the -customer-facing pattern.
+- description: ''
+  hints: {}
+  name: run-sql
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: get-statement
 ---

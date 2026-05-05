@@ -48,43 +48,43 @@ personas: []
 provider_name: Vercel
 provider_slug: vercel
 search_terms:
-- ai gateways
+- llm
+- gateways
 - list models
-- generate web app
-- generate a full-stack web app from a prompt
-- create a chat completion using any model
-- list ai models
-- get the code files and preview url for a v0 generated application
-- get generated app
 - iterate on a generated app with follow-up instructions
 - create text embeddings
-- manage generated applications
-- iterate app
-- ai-generated web applications via v0
 - refine a v0 generated application with follow-up instructions (e.g., add dark mode, fix responsive layout, add authentication)
+- iterate web app
+- chat with model
+- get generated app
+- ai
+- list ai models
+- ai-generated web applications via v0
+- ai gateways
+- create text embeddings for semantic search or retrieval using any embedding model
+- observability
+- send a chat completion request to any ai model via the vercel ai gateway
+- developer tools
+- vercel
+- generate a full-stack next.js web application from a natural language description using v0
+- ai chat completions via unified gateway
+- list all ai models available via the vercel ai gateway (anthropic, openai, google, meta, mistral, and more)
+- ai models available via vercel ai gateway
+- iterate app
+- create a chat completion using any model
 - create embedding
 - ai gateway
-- vercel
-- ai models available via vercel ai gateway
-- get app
-- ai chat completions via unified gateway
-- gateways
-- code generation
-- chat with model
-- create completion
-- developer tools
-- generate a full-stack next.js web application from a natural language description using v0
-- get generated app code and preview
-- text embeddings for semantic search
-- ai
-- generate app
-- send a chat completion request to any ai model via the vercel ai gateway
-- iterate web app
-- list all ai models available via the vercel ai gateway (anthropic, openai, google, meta, mistral, and more)
-- observability
+- get the code files and preview url for a v0 generated application
 - list all ai models available across providers
-- create text embeddings for semantic search or retrieval using any embedding model
-- llm
+- text embeddings for semantic search
+- generate web app
+- get app
+- generate a full-stack web app from a prompt
+- manage generated applications
+- code generation
+- get generated app code and preview
+- create completion
+- generate app
 slug: ai-development
 source_filename: ai-development.yaml
 source_heading: Capability Spec

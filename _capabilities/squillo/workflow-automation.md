@@ -58,56 +58,56 @@ personas: []
 provider_name: Squillo
 provider_slug: squillo
 search_terms:
-- integration platform
-- automation
-- create a new squillo workflow automation definition
-- it process automation
-- activate a squillo workflow to enable its triggers
-- manually trigger a squillo workflow execution
-- create variable
-- get execution
-- execution details
-- workflow definitions
-- delete a workflow
-- manually execute a workflow with optional input data
-- available integration connectors
+- individual workflow management
 - manually trigger a workflow
-- list variables
-- list squillo workflow execution history with filtering by status and date
-- get detailed squillo execution results including step outputs and errors
-- create workflow
 - list available squillo integration connectors by category
-- list workflows
-- delete workflow
-- activate a workflow to enable its triggers
-- create a workflow variable or secret
-- workflow execution history
-- squillo
-- execute workflow
-- software as a utility
-- list all workflow definitions
-- activate or deactivate a workflow
-- activate workflow
-- list available integration connectors
-- get details for a specific squillo workflow including steps and triggers
+- list workflow variables
 - list all squillo workflow definitions with optional status filter
-- list executions
+- update workflow
+- manually execute a workflow with optional input data
+- squillo
+- create workflow
+- workflow definitions
+- get details for a specific squillo workflow including steps and triggers
+- activate a squillo workflow to enable its triggers
+- list squillo workflow execution history with filtering by status and date
+- get execution
+- available integration connectors
+- workflow
+- execute workflow
+- workflow variables and secrets
+- workflow execution history
+- get workflow
+- create variable
+- list workflows
+- activate or deactivate a workflow
+- list all workflow definitions
+- manually trigger a squillo workflow execution
+- list connectors
+- no-code
+- activate a workflow to enable its triggers
+- list variables
+- software as a utility
+- list squillo workflow variables and secrets
+- execution details
+- delete a workflow
+- get workflow details
+- get detailed squillo execution results including step outputs and errors
+- it process automation
+- create a new workflow definition
 - delete a squillo workflow definition and its execution history
 - list workflow execution history
-- update a workflow
-- update workflow
-- get workflow details
-- create a new workflow definition
+- create a workflow variable or secret
+- delete workflow
+- list executions
 - get execution details with step results
-- list connectors
+- create a new squillo workflow automation definition
+- integration platform
+- automation
+- list available integration connectors
+- update a workflow
 - workflow automation
-- no-code
-- workflow variables and secrets
-- list workflow variables
-- list squillo workflow variables and secrets
-- workflow
-- individual workflow management
-- get workflow
+- activate workflow
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

@@ -50,51 +50,51 @@ provider_name: Treblle
 provider_slug: treblle
 search_terms:
 - list all treblle api monitoring projects in the workspace
-- get analytics
-- security
-- get request detail
-- list projects
-- get or delete a specific project
-- monitoring
-- analytics
-- create a new api monitoring project
-- api governance checks
-- get full details of a specific api request including headers, body, and errors
-- get api analytics
-- manage api monitoring projects
-- developer experience
-- get a specific api request detail
-- create project
-- insights
+- platform
 - list requests
-- get details of a specific treblle monitoring project
-- get request
-- run governance check
-- list api request logs with filtering
+- get api analytics
+- list discovered endpoints
+- security
 - get project analytics and metrics
+- api performance analytics
 - list auto-discovered endpoints from live traffic
+- create a new treblle api monitoring project
+- analytics
 - get api request logs with filtering by status code, date range, or search term
 - auto-discovered api endpoints
-- get auto-discovered api endpoints detected from live traffic
-- artificial intelligence
-- api performance analytics
-- get project details
-- list discovered endpoints
-- documentation
-- get api performance analytics including request counts, error rates, and response times
-- governance
-- run 30+ automated governance tests against an openapi specification, scoring design, security, and performance
-- run automated governance tests against an openapi spec
-- list all api monitoring projects
+- run governance check
+- get full details of a specific api request including headers, body, and errors
+- get details of a specific treblle monitoring project
 - observability
-- platform
-- list endpoints
-- create a new treblle api monitoring project
-- get full request/response details
 - browse api request logs
-- get project
-- api intelligence
+- api governance checks
+- get project details
+- artificial intelligence
+- list projects
+- manage api monitoring projects
+- get auto-discovered api endpoints detected from live traffic
+- get analytics
+- get api performance analytics including request counts, error rates, and response times
+- run automated governance tests against an openapi spec
+- list endpoints
+- get request
+- governance
+- list all api monitoring projects
+- developer experience
+- monitoring
 - testing
+- create a new api monitoring project
+- documentation
+- get a specific api request detail
+- get or delete a specific project
+- get full request/response details
+- insights
+- list api request logs with filtering
+- create project
+- get project
+- get request detail
+- api intelligence
+- run 30+ automated governance tests against an openapi specification, scoring design, security, and performance
 slug: api-observability
 source_filename: api-observability.yaml
 source_heading: Capability Spec

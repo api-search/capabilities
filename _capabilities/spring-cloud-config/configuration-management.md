@@ -26,39 +26,39 @@ personas: []
 provider_name: Spring Cloud Config
 provider_slug: spring-cloud-config
 search_terms:
-- java
-- get configuration by label
-- verify encryption ready
-- configuration management
-- get externalized configuration for application and profile
-- application configuration by profile
-- trigger configuration refresh via webhook
-- gitops
-- send a configuration change notification to trigger spring cloud bus refresh events across all subscribed microservices
-- fetch the complete externalized configuration for a microservice from the central config server, resolving all property sources (git, environment, defaults)
-- encrypt a configuration secret for safe git storage
-- get configuration
-- fetch service configuration
-- fetch configuration by branch
-- fetch configuration for a microservice pinned to a specific git branch, tag, or commit hash for canary or blue-green deployment validation
-- encrypt a sensitive configuration value (password, api key, token) for secure storage in git with {cipher} prefix notation
-- externalized configuration
 - verify that the config server has encryption keys configured and is ready for {cipher} property decryption
-- platform engineering
+- configuration management
+- gitops
 - encrypt sensitive value
+- notify config change
+- fetch the complete externalized configuration for a microservice from the central config server, resolving all property sources (git, environment, defaults)
+- externalized configuration
+- fetch service configuration
+- fetch configuration for a microservice pinned to a specific git branch, tag, or commit hash for canary or blue-green deployment validation
+- application configuration by profile and git label
+- platform engineering
+- microservices
 - distributed systems
+- devops
+- get configuration by label
+- encrypt a configuration secret for safe git storage
+- get configuration for specific branch/tag/commit
+- configuration secret encryption
+- application configuration by profile
+- get configuration
+- fetch configuration by branch
+- verify encryption ready
+- send a configuration change notification to trigger spring cloud bus refresh events across all subscribed microservices
+- git
+- encrypt secret
+- spring cloud
+- get externalized configuration for application and profile
+- configuration refresh trigger
+- encrypt a sensitive configuration value (password, api key, token) for secure storage in git with {cipher} prefix notation
 - spring
 - trigger refresh
-- configuration refresh trigger
-- notify config change
-- git
-- application configuration by profile and git label
-- encrypt secret
-- microservices
-- configuration secret encryption
-- get configuration for specific branch/tag/commit
-- devops
-- spring cloud
+- trigger configuration refresh via webhook
+- java
 slug: configuration-management
 source_filename: configuration-management.yaml
 source_heading: Capability Spec

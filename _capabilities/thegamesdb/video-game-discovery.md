@@ -37,43 +37,43 @@ personas: []
 provider_name: TheGamesDB
 provider_slug: thegamesdb
 search_terms:
-- list all game publishers in the database
-- video games
+- list developers
+- list all platforms
+- get games by platform
+- get game artwork
+- get game
+- list all gaming platforms
+- search for video games by name (e.g. halo, mario, zelda)
+- search for a gaming platform by name
+- get game details by id
+- search platforms by name
+- game metadata and details
 - metadata
 - get complete game details by game id
-- search games
-- list platforms
-- game artwork and images
-- get artwork and images for a game (boxart, screenshots, fanart)
-- get game
-- game metadata and details
-- list all game genres in the database
-- list all game developers in the database
-- search for games by name
-- artwork
-- search for video games by name (e.g. halo, mario, zelda)
-- get game images
-- gaming platforms
-- get games by platform
-- search games by name
-- search for a gaming platform by name
-- search platforms by name
-- database
-- search and browse video games
-- get game artwork
-- get game details by id
-- game genres
-- get artwork for a game
-- list developers
 - list all game genres
-- list all platforms
-- gaming
-- list all gaming platforms
-- find all games for a specific gaming platform
-- get game by id
-- list genres
-- list publishers
 - list all gaming platforms in the database with their ids
+- get game by id
+- list publishers
+- search for games by name
+- database
+- list all game genres in the database
+- search and browse video games
+- get game images
+- artwork
+- search games
+- gaming
+- search games by name
+- game artwork and images
+- list genres
+- list platforms
+- find all games for a specific gaming platform
+- list all game publishers in the database
+- get artwork and images for a game (boxart, screenshots, fanart)
+- gaming platforms
+- video games
+- game genres
+- list all game developers in the database
+- get artwork for a game
 slug: video-game-discovery
 source_filename: video-game-discovery.yaml
 source_heading: Capability Spec

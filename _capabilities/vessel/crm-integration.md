@@ -61,64 +61,64 @@ personas: []
 provider_name: Vessel
 provider_slug: vessel
 search_terms:
+- create a contact
+- crm leads
+- create a new note in the user's connected crm.
+- ipaas
+- create contact
+- get all users
+- deals
+- create crm deal
+- vessel
+- list all company accounts from the user's connected crm.
+- list all deals/opportunities from the user's connected crm. returns deal name, amount, stage, close date, and assigned owner.
+- sales engagement
+- hubspot
+- get all accounts
+- create account
+- get all deals
+- accounts
+- get crm contacts
+- get all leads
+- list all users from the user's connected crm.
+- create deal
+- embedded integrations
+- list all leads from the user's connected crm.
+- get crm tasks
+- create a deal
+- crm deals and opportunities
+- list all notes from the user's connected crm.
+- get all tasks
+- get all notes
+- create a note
+- create note
+- create crm note
+- list all contacts from the user's connected crm. works with salesforce, hubspot, zoho, pipedrive, close, freshsales, microsoft dynamics, and affinity. all dates are iso 8601, all ids are normalized to strings.
+- salesforce
+- get crm leads
+- integrations
+- crm notes and activity log
+- tasks
+- crm tasks
+- crm contacts unified across all connected crm systems
+- unified api
+- crm users
+- get all contacts
 - list all tasks from the user's connected crm.
 - get crm users
-- get crm notes
-- deals
-- crm contacts unified across all connected crm systems
-- create a contact
-- crm users
-- get all deals
-- get all accounts
-- accounts
-- create a new contact in the user's connected crm with first name, last name, email, phone, and company information.
-- list all notes from the user's connected crm.
-- leads
-- vessel
-- get all leads
-- integrations
-- crm company accounts
-- list all leads from the user's connected crm.
-- get crm accounts
-- get crm contacts
-- create an account
-- create crm contact
-- salesforce
-- create deal
-- list all contacts from the user's connected crm. works with salesforce, hubspot, zoho, pipedrive, close, freshsales, microsoft dynamics, and affinity. all dates are iso 8601, all ids are normalized to strings.
-- unified api
-- get crm leads
-- contacts
-- create a new deal/opportunity in the user's connected crm.
-- crm leads
-- list all company accounts from the user's connected crm.
-- crm notes and activity log
-- create a deal
-- create account
-- get all contacts
-- gtm
-- create a new note in the user's connected crm.
-- hubspot
-- crm tasks
-- create note
-- embedded integrations
-- create crm note
-- create contact
-- create a note
-- ipaas
-- tasks
-- create crm deal
-- list all deals/opportunities from the user's connected crm. returns deal name, amount, stage, close date, and assigned owner.
-- get crm deals
-- get all users
-- notes
-- get crm tasks
 - crm
-- get all notes
-- list all users from the user's connected crm.
-- get all tasks
-- sales engagement
-- crm deals and opportunities
+- get crm notes
+- create a new deal/opportunity in the user's connected crm.
+- gtm
+- create crm contact
+- create a new contact in the user's connected crm with first name, last name, email, phone, and company information.
+- leads
+- crm company accounts
+- create an account
+- get crm accounts
+- notes
+- contacts
+- get crm deals
 slug: crm-integration
 source_filename: crm-integration.yaml
 source_heading: Capability Spec

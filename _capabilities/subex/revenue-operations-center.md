@@ -38,39 +38,39 @@ personas: []
 provider_name: Subex
 provider_slug: subex
 search_terms:
-- get a fraud case
-- subscriber risk scoring
-- get the fraud risk score for a telecom subscriber by their msisdn
-- analytics
-- list cdr and billing reconciliation runs
-- update the status or assignment of a revenue leakage alert
-- individual fraud case
 - get details of a specific revenue leakage alert
-- telecom
-- get analytics summary
 - subex
-- list revenue leakage alerts
-- update leakage alert
-- get subscriber fraud risk score
-- individual leakage alert
-- fraud management
-- get details of a specific telecom fraud case
-- list telecom fraud cases with optional fraud type and status filters
-- get a leakage alert
-- get subscriber risk score
-- list subex revenue leakage alerts with optional severity and type filters
-- get fraud case
-- revenue leakage alerts
-- list fraud cases
+- analytics
 - revenue analytics
-- revenue assurance
+- get a fraud case
 - get summary analytics for revenue assurance and fraud kpis
-- list reconciliation runs
+- revenue leakage alerts
+- list revenue leakage alerts
+- get subscriber risk score
+- get the fraud risk score for a telecom subscriber by their msisdn
+- get analytics summary
+- update leakage alert
+- subscriber risk scoring
+- revenue assurance
+- list fraud cases
+- list cdr and billing reconciliation runs
 - fraud case management
-- bss/oss
+- get a leakage alert
 - list leakage alerts
+- fraud management
+- get subscriber fraud risk score
 - get leakage alert
+- get fraud case
+- individual fraud case
+- list subex revenue leakage alerts with optional severity and type filters
+- list reconciliation runs
+- get details of a specific telecom fraud case
+- individual leakage alert
 - cdr reconciliation
+- update the status or assignment of a revenue leakage alert
+- telecom
+- list telecom fraud cases with optional fraud type and status filters
+- bss/oss
 slug: revenue-operations-center
 source_filename: revenue-operations-center.yaml
 source_heading: Capability Spec

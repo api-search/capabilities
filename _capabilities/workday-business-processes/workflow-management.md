@@ -38,37 +38,37 @@ personas: []
 provider_name: Workday Business Processes
 provider_slug: workday-business-processes
 search_terms:
-- get process instance
-- get a process instance
-- list workday business process type definitions available for initiation
-- business processes
-- start a new process
-- deny inbox item
+- list all steps in a business process instance with completion status
 - workday
-- hcm
-- deny a workday business process inbox item to reject the workflow step
-- list process steps
-- list process definitions
-- approve a workday business process inbox item to advance the workflow
-- workflows
-- cancel a running business process instance with a reason
+- start a new process
 - list process instances
-- initiate process
+- approve a workday business process inbox item to advance the workflow
 - enterprise
-- get a specific workday business process definition with step details
-- process instances
+- approve inbox item
+- hcm
+- get a process instance
+- cancel a running business process instance with a reason
+- business processes
+- get process definition
+- list inbox items
+- list process definitions
+- deny inbox item
+- list workday business process type definitions available for initiation
+- cancel process instance
+- initiate process
+- approvals
+- get the current status, steps, and progress of a business process instance
 - initiate a new workday business process for hire, termination, or other workflow
 - inbox items
-- list workday inbox items pending action for a user or worker
-- business process definitions
-- get the current status, steps, and progress of a business process instance
-- list all steps in a business process instance with completion status
+- get a specific workday business process definition with step details
+- deny a workday business process inbox item to reject the workflow step
 - list workday business process instances with status and progress tracking
-- approve inbox item
-- approvals
-- list inbox items
-- cancel process instance
-- get process definition
+- business process definitions
+- list process steps
+- process instances
+- list workday inbox items pending action for a user or worker
+- workflows
+- get process instance
 slug: workflow-management
 source_filename: workflow-management.yaml
 source_heading: Capability Spec

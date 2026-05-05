@@ -77,66 +77,66 @@ personas: []
 provider_name: Sage
 provider_slug: sage
 search_terms:
-- create sales invoice
-- list configured tax rates
 - create product
-- get full details of a sales invoice including line items and payment status
-- individual sales invoice
-- list sales invoices
-- list purchase invoices
-- create a new purchase invoice (supplier bill) in sage accounting
-- update contact
-- list chart of accounts (ledger accounts) for financial reporting
-- record a payment received against a sales invoice
-- customer and supplier contact management
-- accounting
-- list customers and suppliers
 - chart of accounts
-- list customers and suppliers in sage accounting
-- hr
-- get sales invoice
-- individual contact operations
-- list purchase invoices (supplier bills) with filtering options
-- list bank accounts
-- erp
-- list products and services
-- create a new customer or supplier
-- record sales payment
-- get contact
-- create a new product or service
-- create a new customer or supplier contact in sage accounting
-- payments
-- create purchase invoice
-- list sales invoices with filtering by customer, status, and date
-- finance
-- get contact details
-- list configured tax rates for invoice line items
-- cloud software
-- create a new product or service in sage accounting
-- business management
-- sales invoice payments
-- product and service catalog
-- list tax rates
-- create a new purchase invoice
-- create a new sales invoice
-- list products and services in the sage catalog
-- get sales invoice details
-- payroll
-- create contact
-- get details for a specific contact including balance and outstanding amounts
-- list contacts
-- list products
-- bank account management
-- tax rates
-- record a payment received for a sales invoice
 - create a new sales invoice with line items, due date, and customer reference
-- list bank accounts connected to the sage accounting business
-- sales invoice management
-- invoicing
+- create a new product or service in sage accounting
+- list products and services
+- business management
+- list sales invoices with filtering by customer, status, and date
+- list products
+- list configured tax rates
+- cloud software
 - purchase invoice (supplier bill) management
-- list ledger accounts
+- record a payment received against a sales invoice
+- create contact
+- list products and services in the sage catalog
+- create sales invoice
+- product and service catalog
+- update contact
+- get details for a specific contact including balance and outstanding amounts
+- accounting
+- hr
+- list bank accounts connected to the sage accounting business
+- finance
 - update contact details
+- list configured tax rates for invoice line items
+- individual contact operations
+- list ledger accounts
+- tax rates
+- invoicing
+- create a new sales invoice
+- payroll
+- sales invoice management
+- create a new product or service
+- individual sales invoice
+- create a new purchase invoice (supplier bill) in sage accounting
+- list customers and suppliers in sage accounting
+- list sales invoices
+- erp
 - list sales invoices filtered by customer, status, or date range
+- customer and supplier contact management
+- create a new customer or supplier
+- record a payment received for a sales invoice
+- bank account management
+- list purchase invoices (supplier bills) with filtering options
+- payments
+- get full details of a sales invoice including line items and payment status
+- list chart of accounts (ledger accounts) for financial reporting
+- list purchase invoices
+- get contact details
+- list contacts
+- get sales invoice
+- create a new purchase invoice
+- get sales invoice details
+- create purchase invoice
+- get contact
+- list tax rates
+- create a new customer or supplier contact in sage accounting
+- sales invoice payments
+- list bank accounts
+- record sales payment
+- list customers and suppliers
 slug: accounting-and-finance
 source_filename: accounting-and-finance.yaml
 source_heading: Capability Spec

@@ -69,61 +69,61 @@ personas: []
 provider_name: Trelica
 provider_slug: trelica
 search_terms:
-- list contracts
-- list users of an application for license optimization. identify inactive users and reduce spend.
-- list users for license optimization analysis
-- single employee record
-- it management
-- list applications
-- update an employee record for department transfers, role changes, or offboarding.
-- update person
-- get detailed information about a specific saas application including user count and cost.
-- get contract details and renewal dates
-- list all saas applications in the portfolio. use for application discovery, spend analysis, and license optimization.
-- saas management
-- list contracts for renewal planning
-- list it automation workflows for onboarding, offboarding, and access management.
-- list workflows
-- get person
-- list all saas applications in the portfolio
-- list people for access review and offboarding
-- license management
-- onboard a new employee
-- list audit logs
-- it automation workflows
-- user directory via scim
+- software contracts and renewal management
 - get application
-- get employee details and application access
-- get contract details including renewal date and annual value for negotiation planning.
-- get contract
+- single employee record
+- it automation workflows
+- single saas application detail
+- list all saas applications in the portfolio
+- get application details and metadata
+- list all saas applications in the portfolio. use for application discovery, spend analysis, and license optimization.
 - list users
+- list users via scim 2.0 for provisioning integrations and directory sync.
+- single contract record
+- software and hardware assets
 - list managed assets
 - create person
+- get person
+- list users for license optimization analysis
+- list assets
+- it management
 - discovered and managed saas applications
-- software and hardware assets
-- software contracts and renewal management
-- get application details and metadata
-- list audit events for compliance reporting
-- list application users
-- audit trail for compliance and governance
-- list software and hardware assets for asset management and compliance.
-- list users for provisioning workflows
-- list employees for access reviews, onboarding/offboarding, and license right-sizing.
-- list users via scim 2.0 for provisioning integrations and directory sync.
+- software asset management
+- user directory via scim
+- list contracts for renewal planning
+- update employee record during lifecycle events
+- get contract details including renewal date and annual value for negotiation planning.
 - employees and their saas access
+- list it automation workflows for onboarding, offboarding, and access management.
+- update an employee record for department transfers, role changes, or offboarding.
+- list application users
+- get detailed information about a specific saas application including user count and cost.
+- saas management
+- get employee details including their saas application access and licenses.
+- list workflows
+- list automation workflows
+- get contract details and renewal dates
+- list users of an application for license optimization. identify inactive users and reduce spend.
+- list employees for access reviews, onboarding/offboarding, and license right-sizing.
+- list software contracts for renewal planning and spend management.
+- list users for provisioning workflows
+- list software and hardware assets for asset management and compliance.
+- list applications
+- list contracts
+- get contract
+- list audit log entries for compliance reporting, change tracking, and governance.
+- update person
+- onboard a new employee
+- list people for access review and offboarding
+- license management
+- audit trail for compliance and governance
+- get employee details and application access
 - onboard a new employee and initialize their software access workflow.
 - contract management
-- single saas application detail
-- single contract record
-- list automation workflows
-- get employee details including their saas application access and licenses.
-- list people
-- update employee record during lifecycle events
-- software asset management
-- list audit log entries for compliance reporting, change tracking, and governance.
-- list assets
 - users and license utilization for an application
-- list software contracts for renewal planning and spend management.
+- list people
+- list audit logs
+- list audit events for compliance reporting
 slug: saas-management
 source_filename: saas-management.yaml
 source_heading: Capability Spec

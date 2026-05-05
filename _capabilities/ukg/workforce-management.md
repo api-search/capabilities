@@ -21,55 +21,55 @@ personas: []
 provider_name: UKG
 provider_slug: ukg
 search_terms:
-- creates and manages workforce schedules and shift assignments
-- timekeeping
-- get accruals
-- views own records, timecards, benefits, and pay statements
-- get hcm employee record with full demographic and job data
-- hr
-- hcm
-- processes payroll, manages pay rates, and reviews pay statements
-- manages employee records, org structure, and hr transactions
-- workforce management
-- employee accrual balances
-- employee records
-- manages benefits enrollment, plan administration, and compliance
-- pay processing, compensation management, and pay statement history
-- workforce schedules, shift management, and coverage planning
-- list all wfm employee records
-- list workforce schedules for a location and date range
-- create punch
 - vacation, sick, and pto accrual policy management
-- time and attendance
-- core hr functions including employee records, hiring, and organizational management
-- list employees
-- timekeeping, scheduling, and accrual management for hourly and salaried employees
-- get employee accruals
-- get employee shifts
-- employee timecards
-- get timecard records for an employee within a date range
-- get employee pay statement history
-- list pay statements
 - clock punches, timecards, and time approval workflows
+- get accruals
+- employee accrual balances
+- list all wfm employee records
+- list employees
+- get timecards
+- list schedules
+- get employee pay statement history
+- hcm
+- hr
+- list pay statements
+- manages benefits enrollment, plan administration, and compliance
+- get employee timecards
 - scheduling
-- get vacation, sick, and pto accrual balances for an employee
+- ukg
+- create punch
+- timekeeping
+- core hr functions including employee records, hiring, and organizational management
+- pay processing, compensation management, and pay statement history
+- benefits
 - payroll
+- workforce schedules, shift management, and coverage planning
 - list wfm employees
 - get employee punches
-- get employee timecards
-- ukg
-- get timecards
+- employee records
+- human capital management
 - manages employee schedules, timecards, and attendance
-- submit a clock punch for an employee
 - get hcm employee
-- list schedules
+- employee records, benefits, payroll, and organizational management
+- time and attendance
+- get clock punch records for an employee
+- employee timecards
+- list workforce schedules for a location and date range
+- processes payroll, manages pay rates, and reviews pay statements
+- creates and manages workforce schedules and shift assignments
+- workforce management
+- submit a clock punch for an employee
+- get hcm employee record with full demographic and job data
+- views own records, timecards, benefits, and pay statements
+- get employee shifts
+- get vacation, sick, and pto accrual balances for an employee
+- benefits enrollment, elections, and plan administration
+- get timecard records for an employee within a date range
+- timekeeping, scheduling, and accrual management for hourly and salaried employees
+- get employee accruals
+- manages employee records, org structure, and hr transactions
 - accruals
 - get scheduled shifts for a specific employee
-- human capital management
-- benefits enrollment, elections, and plan administration
-- get clock punch records for an employee
-- benefits
-- employee records, benefits, payroll, and organizational management
 slug: workforce-management
 source_filename: workforce-management.yaml
 source_heading: Capability Spec

@@ -51,47 +51,47 @@ provider_name: Rutter
 provider_slug: rutter
 search_terms:
 - get a specific invoice by id
-- list all accounts from connected accounting platform
-- list chart of accounts from connected accounting platform
-- list all connected accounting platforms
-- list connections
-- accounting
 - chart of accounts
-- list bills from connected accounting platform
-- create bill
-- list vendor bills from connected accounting platform
-- platform connections management
-- get a specific connection by id
-- list transactions
-- create a new invoice in connected accounting platform
-- unified api
+- reconciliation
+- list connections
+- list all connected accounting platforms
+- invoices
 - list bills
 - list expenses from connected accounting platform
-- expense records
-- list financial transactions from connected platform
-- b2b
-- list expense records from connected accounting platform
-- payments
-- list invoices
+- get a specific connection by id
 - commerce
-- list financial transactions from connected accounting platform
-- reconciliation
 - list accounts
-- list all connected accounting platforms (quickbooks, xero, netsuite, etc.)
-- bills (vendor invoices)
-- create a new invoice in the connected accounting platform
-- create a new bill in connected accounting platform
-- list expenses
-- single invoice
-- financial data
-- get details for a specific accounting platform connection
-- get invoice
-- create invoice
-- get connection
 - create a new vendor bill in the connected accounting platform
-- list invoices from connected accounting platform
+- bills (vendor invoices)
+- accounting
+- list expenses
+- list financial transactions from connected accounting platform
+- list all connected accounting platforms (quickbooks, xero, netsuite, etc.)
+- create invoice
+- list bills from connected accounting platform
+- financial data
 - financial transactions
-- invoices
+- list invoices
+- list expense records from connected accounting platform
+- list chart of accounts from connected accounting platform
+- create a new invoice in connected accounting platform
+- create bill
+- get invoice
+- expense records
+- list all accounts from connected accounting platform
+- single invoice
+- payments
+- b2b
+- list vendor bills from connected accounting platform
+- create a new invoice in the connected accounting platform
+- list transactions
+- list financial transactions from connected platform
+- get connection
+- unified api
+- platform connections management
+- list invoices from connected accounting platform
+- get details for a specific accounting platform connection
+- create a new bill in connected accounting platform
 slug: financial-data-sync
 source_filename: financial-data-sync.yaml
 source_heading: Capability Spec

@@ -48,59 +48,59 @@ personas: []
 provider_name: Trustpilot
 provider_slug: trustpilot
 search_terms:
-- get all business unit reviews
-- get review
-- send review invitations to customers.
-- consumer reviews
-- create review reply
-- ratings
-- get reviews for a business unit with star and language filtering.
-- get available email invitation templates for review requests.
-- get latest reviews
-- remove a company reply from a review.
-- invitations
-- send email invitations
-- create review invitation links
-- set tags on a review to categorize it by topic, campaign, or issue type.
-- trust
-- product reviews
-- reviews
-- search business units
-- search trustpilot business units
-- search for business units by name or domain.
-- get details for a specific review.
-- generate a unique review invitation link to share with customers.
-- business unit trust profile
-- get tags for a review.
-- set review tags
-- get public reviews for a business with filtering by stars and language.
-- send review email invitations
-- get business unit reviews
-- review tag management
-- create a unique review invitation link.
-- get company trust profile including trustscore and review counts.
-- individual review details
-- send email review invitations to customers after purchase or service delivery.
-- delete review reply
-- get reviews
 - get the most recent reviews in a specific language.
-- create invitation link
-- post a company reply to a customer review on trustpilot.
-- get tags assigned to a review for categorization and filtering.
+- get public reviews for a business with filtering by stars and language.
+- remove a company reply from a review.
+- send email review invitations to customers after purchase or service delivery.
 - get the trustscore, star rating distribution, and contact details for a business.
+- create review reply
+- invitations
+- get review tags
+- consumer reviews
+- product reviews
+- create invitation link
+- get available email invitation templates for review requests.
+- reviews
 - retrieve all reviews for a business using cursor pagination for large review sets.
 - latest reviews in a language
-- get the most recent reviews in a specific language across trustpilot.
-- review reply management
-- business profiles
-- post a company reply to a review.
-- get review tags
-- get business unit profile
-- get details of a specific trustpilot review including rating, text, and consumer info.
-- business unit reviews
-- customer experience
-- get invitation templates
+- search business units
+- get company trust profile including trustscore and review counts.
 - search for businesses on trustpilot to find their profile and trust score.
+- set tags on a review to categorize it by topic, campaign, or issue type.
+- get tags assigned to a review for categorization and filtering.
+- get business unit reviews
+- get review
+- search for business units by name or domain.
+- get all business unit reviews
+- business unit reviews
+- ratings
+- customer experience
+- get reviews for a business unit with star and language filtering.
+- review reply management
+- get invitation templates
+- send review email invitations
+- post a company reply to a review.
+- get tags for a review.
+- business unit trust profile
+- get latest reviews
+- business profiles
+- get details of a specific trustpilot review including rating, text, and consumer info.
+- review tag management
+- search trustpilot business units
+- delete review reply
+- send email invitations
+- individual review details
+- generate a unique review invitation link to share with customers.
+- get business unit profile
+- trust
+- create review invitation links
+- create a unique review invitation link.
+- get reviews
+- send review invitations to customers.
+- post a company reply to a customer review on trustpilot.
+- set review tags
+- get the most recent reviews in a specific language across trustpilot.
+- get details for a specific review.
 slug: review-management
 source_filename: review-management.yaml
 source_heading: Capability Spec

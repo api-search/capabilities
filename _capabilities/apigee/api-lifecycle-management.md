@@ -24,46 +24,46 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- list api products
-- list all apis catalogued in apigee api hub for discovery and governance.
-- list api proxies
-- apigee
+- developer portal
+- list developers
 - manage api products.
 - manager packaging api products and managing developer relationships.
-- list api products.
+- list products
+- api lifecycle
+- engineer managing api proxies, deployments, and policies in apigee.
+- manage api developers.
+- enterprise
+- apigee
 - analytics
-- api governance
-- integrations
+- api hub
+- list api proxies
+- list developers.
+- google cloud
+- list all api proxies in an apigee organization.
+- API Governance Lead
+- list all registered api developers in the organization.
 - leader establishing api standards, cataloguing apis, and discovering shadow apis.
 - Platform Architect
-- api management
 - API Platform Engineer
-- hybrid
-- list all api proxies in an apigee organization.
-- manage api proxies.
-- list api proxies.
-- list all environments (e.g., dev, staging, prod) in the organization.
-- api gateway
-- engineer managing api proxies, deployments, and policies in apigee.
-- enterprise
-- list hub apis
-- google cloud
-- list developers
-- list environments
-- architect overseeing api platform strategy and governance across the organization.
-- list all api products packaged for developer consumption.
-- microservices
-- api lifecycle
-- list products
-- developer portal
 - list proxies
-- API Governance Lead
-- manage api developers.
-- api hub
-- API Product Manager
-- list all registered api developers in the organization.
+- list all api products packaged for developer consumption.
+- hybrid
+- microservices
+- architect overseeing api platform strategy and governance across the organization.
+- integrations
+- api governance
+- api management
+- list all apis catalogued in apigee api hub for discovery and governance.
+- list api products.
+- list environments
+- list api proxies.
 - monetization
-- list developers.
+- list api products
+- api gateway
+- API Product Manager
+- list all environments (e.g., dev, staging, prod) in the organization.
+- manage api proxies.
+- list hub apis
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

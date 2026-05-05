@@ -41,35 +41,35 @@ personas: []
 provider_name: Shopper Approved
 provider_slug: shopper-approved
 search_terms:
-- retrieve a specific customer review
-- submit a completed order to trigger review request
-- get review
-- update review
-- list product reviews across the catalog
-- list reviews
-- get site stats
-- ratings
-- get overall site rating, review count, and star distribution
-- submit order
-- individual review management
-- list product reviews
-- reviews
-- submit a completed order to trigger a review collection email at a specified follow-up date
-- google seller ratings
-- retrieve a specific customer review by its order id
-- get overall site review statistics including average rating and count by star level
-- order submission for review collection
-- list customer reviews with date range and pagination
-- list customer site reviews with optional date range filtering and page navigation
-- social proof
-- update a review's follow-up date or cancel the review request
-- product-specific reviews for pdp display
-- customer feedback
-- reschedule or cancel a review follow-up
 - ecommerce
+- update review
 - site review statistics for dashboards and reporting
-- list product-level reviews for display on product detail pages
+- list product reviews across the catalog
+- submit order
+- get site stats
 - customer site reviews for display and analysis
+- get overall site review statistics including average rating and count by star level
+- reviews
+- update a review's follow-up date or cancel the review request
+- list reviews
+- list customer reviews with date range and pagination
+- submit a completed order to trigger a review collection email at a specified follow-up date
+- customer feedback
+- get review
+- ratings
+- list customer site reviews with optional date range filtering and page navigation
+- retrieve a specific customer review by its order id
+- social proof
+- individual review management
+- order submission for review collection
+- google seller ratings
+- list product reviews
+- get overall site rating, review count, and star distribution
+- reschedule or cancel a review follow-up
+- submit a completed order to trigger review request
+- list product-level reviews for display on product detail pages
+- retrieve a specific customer review
+- product-specific reviews for pdp display
 slug: review-management
 source_filename: review-management.yaml
 source_heading: Capability Spec

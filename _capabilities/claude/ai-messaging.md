@@ -43,55 +43,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- get batch
-- send a message to claude and receive a response.
-- list models
-- list available models.
-- large language models
-- get model
-- delete batch
-- get batch status.
-- count tokens
-- claude
-- cancel an in-progress batch.
-- delete a batch.
-- list available claude models.
-- list batches
-- individual batch management.
-- delete message batch
-- natural language processing
-- model details.
-- retrieve message batch results
-- messaging
-- token counting.
 - anthropic
-- get model metadata.
-- create batch
-- count tokens in a message.
-- create a message.
-- artificial intelligence
-- retrieve message batch
 - list message batches
-- list all message batches.
-- create a batch of message requests.
-- get message batch status and details.
-- generative ai
-- count message tokens
 - delete a completed batch.
-- batch management.
-- create message batch
-- model discovery.
-- machine learning
-- get completed batch results.
-- ai
-- message operations.
-- create message
-- cancel message batch
 - chatbot
-- create a message batch.
-- conversational ai
+- individual batch management.
+- list all message batches.
+- list models
+- create a message.
+- get model metadata.
+- create message
+- ai
 - list message batches.
+- delete a batch.
+- create batch
+- generative ai
+- token counting.
+- delete batch
+- list batches
+- create a batch of message requests.
+- count tokens in a message.
+- natural language processing
+- artificial intelligence
+- create a message batch.
+- retrieve message batch results
+- cancel message batch
+- get message batch status and details.
+- message operations.
+- conversational ai
+- get batch status.
 - count message tokens.
+- get completed batch results.
+- claude
+- count tokens
+- retrieve message batch
+- machine learning
+- get batch
+- model discovery.
+- large language models
+- send a message to claude and receive a response.
+- create message batch
+- cancel an in-progress batch.
+- delete message batch
+- count message tokens
+- model details.
+- get model
+- list available models.
+- batch management.
+- messaging
+- list available claude models.
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

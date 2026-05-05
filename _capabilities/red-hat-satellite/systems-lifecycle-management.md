@@ -67,67 +67,67 @@ personas: []
 provider_name: Red Hat Satellite
 provider_slug: red-hat-satellite
 search_terms:
-- update host attributes.
-- list lifecycle environments.
-- list hosts
-- individual content view management.
-- list all organizations.
-- list subscriptions
-- delete a content view.
-- register a new host with satellite.
-- systems management
-- content management
-- get details for a specific host.
-- list content views in an organization.
-- list lifecycle environments for an organization.
-- configuration management
-- content view management.
-- delete host
-- red hat satellite
-- subscription management
-- update host
-- show content view
-- list all managed hosts.
-- host power action
-- subscription management.
-- organization management.
-- create lifecycle environment
-- delete a host.
-- show host
-- publish content view
-- get content view details.
-- execute a power action on a host (start, stop, reboot).
-- update content view
-- delete content view
-- lifecycle environment management.
-- get details for a content view.
-- host management endpoints.
-- list all hosts registered with satellite.
-- list subscriptions for an organization.
-- list organizations
-- list lifecycle environments
 - create a new lifecycle environment.
-- create a lifecycle environment.
-- update a content view.
-- create content view
-- host management
-- create host
-- list content views
-- show details for a specific organization.
-- patch management
-- delete a host from satellite.
-- list all content views.
-- lifecycle management
-- list subscriptions.
-- publish a new version of a content view.
-- promote content view version
+- list organizations
+- list all hosts registered with satellite.
+- configuration management
+- show content view
+- update host
 - individual host management.
-- promote a content view version to a lifecycle environment.
-- show organization
-- get host details.
+- create a lifecycle environment.
+- systems management
+- create lifecycle environment
+- patch management
+- delete a host.
+- content view management.
+- delete content view
+- subscription management
+- list subscriptions for an organization.
+- organization management.
+- delete a host from satellite.
+- host power action
+- publish a new version of a content view.
+- list all organizations.
+- list all managed hosts.
+- create content view
+- list content views in an organization.
+- host management endpoints.
+- get details for a content view.
+- list lifecycle environments for an organization.
+- promote content view version
+- publish content view
+- host management
+- update content view
+- list content views
+- show host
 - register a new host.
+- list lifecycle environments
+- update host attributes.
+- list hosts
+- lifecycle environment management.
+- show organization
+- get content view details.
+- list subscriptions.
+- delete a content view.
+- individual content view management.
+- create host
+- update a content view.
+- delete host
+- get host details.
+- show details for a specific organization.
+- get details for a specific host.
+- lifecycle management
+- register a new host with satellite.
+- execute a power action on a host (start, stop, reboot).
+- list subscriptions
 - list organizations.
+- list lifecycle environments.
 - create a new content view.
+- content management
+- list all content views.
+- subscription management.
+- promote a content view version to a lifecycle environment.
+- red hat satellite
 slug: systems-lifecycle-management
 source_filename: systems-lifecycle-management.yaml
 source_heading: Capability Spec

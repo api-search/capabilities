@@ -9,21 +9,21 @@ personas: []
 provider_name: Basetrip
 provider_slug: basetrip
 search_terms:
-- Trip Planner
-- travel planning, booking, and destination information
-- Travel App Developer
-- developer building travel booking or trip planning apps
-- individual or business planning international travel
 - safety
-- countries
 - embed country, city, safety, cost, visa, and health data into travel platforms
-- cities
-- travel
-- Travel Content Publisher
-- visa
-- travel safety ratings and advisories
+- countries
 - health
+- visa
 - content creator embedding destination guides with live data
+- Trip Planner
+- Travel Content Publisher
+- cities
+- developer building travel booking or trip planning apps
+- Travel App Developer
+- travel planning, booking, and destination information
+- individual or business planning international travel
+- travel
+- travel safety ratings and advisories
 slug: travel-intelligence
 source_filename: travel-intelligence.yaml
 source_heading: Capability Spec

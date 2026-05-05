@@ -23,35 +23,35 @@ personas: []
 provider_name: Backstage
 provider_slug: backstage
 search_terms:
-- software catalog entities
-- Platform Engineer
-- backstage
+- developer portal
+- list catalog entities
 - list entities
-- create location
-- open source
-- unified workflow for managing entities, locations, scaffolding, documentation, and search
-- delete catalog entity
 - get catalog entity
-- list locations
-- internal developer platform
-- software developer using backstage to discover services, bootstrap projects, and read documentation
-- list all registered catalog locations
-- software catalog
+- list catalog locations
 - list all entities in the backstage software catalog including components, apis, resources, systems, and users
+- software catalog
 - register a new catalog location (github repo url, yaml file) to ingest entities
-- engineer building and maintaining the internal developer platform and backstage configuration
+- open source
+- Platform Engineer
 - Developer
 - register catalog location
-- list catalog locations
-- get a specific catalog entity by kind, namespace, and name
-- scaffolding, documentation, and search to accelerate development
-- list catalog entities
 - catalog locations
-- developer portal
+- delete catalog entity
 - list all catalog entities
-- register a new catalog location
-- delete an entity from the software catalog
+- engineer building and maintaining the internal developer platform and backstage configuration
+- scaffolding, documentation, and search to accelerate development
 - central inventory of all software components, apis, and resources
+- backstage
+- list locations
+- list all registered catalog locations
+- get a specific catalog entity by kind, namespace, and name
+- create location
+- delete an entity from the software catalog
+- software developer using backstage to discover services, bootstrap projects, and read documentation
+- register a new catalog location
+- software catalog entities
+- unified workflow for managing entities, locations, scaffolding, documentation, and search
+- internal developer platform
 slug: developer-portal
 source_filename: developer-portal.yaml
 source_heading: Capability Spec

@@ -45,46 +45,46 @@ provider_name: Squarespace
 provider_slug: squarespace
 search_terms:
 - create product
-- retrieve all orders with optional date and status filters
+- list inventory
+- e-commerce
+- list products
 - retrieve all orders from a squarespace merchant site. supports filtering by fulfillment status and modification date range.
+- adjust inventory
+- commerce
 - marketing
+- webhooks
+- delete a product from the catalog
+- retrieve all products in the catalog
+- individual product management
+- bulk inventory adjustment
+- stock level management
+- get order
+- apply incremental stock quantity adjustments to product variants.
+- website builder
+- products
+- get a specific product
+- retrieve a specific product by its id.
+- retrieve current stock levels for all product variants.
+- retrieve details of a specific order by its id.
+- create a new product
+- payments
+- retrieve all products in the squarespace catalog. optionally filter by product type (physical, service, gift_card, digital).
+- retail
+- delete product
+- retrieve inventory levels for all variants
+- get product
+- list orders
+- orders
+- inventory
+- retrieve a specific order by id
+- squarespace
+- individual order details
 - apply stock quantity adjustments
 - order history and management
-- list inventory
 - product catalog
-- orders
-- delete product
-- retrieve all products in the squarespace catalog. optionally filter by product type (physical, service, gift_card, digital).
-- squarespace
-- e-commerce
-- individual product management
-- stock level management
-- inventory
-- apply incremental stock quantity adjustments to product variants.
-- webhooks
-- products
-- delete a product from the squarespace catalog.
-- delete a product from the catalog
-- payments
-- individual order details
-- retrieve a specific product by its id.
-- create a new product
-- get order
-- commerce
-- retrieve details of a specific order by its id.
-- retrieve all products in the catalog
-- bulk inventory adjustment
-- adjust inventory
-- retail
-- list products
-- retrieve current stock levels for all product variants.
-- retrieve a specific order by id
-- get product
-- retrieve inventory levels for all variants
-- list orders
 - create a new product in the squarespace catalog.
-- get a specific product
-- website builder
+- retrieve all orders with optional date and status filters
+- delete a product from the squarespace catalog.
 slug: commerce-management
 source_filename: commerce-management.yaml
 source_heading: Capability Spec

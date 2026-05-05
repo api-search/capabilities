@@ -45,47 +45,47 @@ personas: []
 provider_name: TravelCenters of America
 provider_slug: travelcenters-of-america
 search_terms:
-- check shower facility availability and wait times at travel centers
-- fuel
-- fleet fuel code management
-- get real-time truck parking availability
-- search documents
-- get shower availability
-- list fleet fuel authorization codes for ta/petro locations
-- travel centers
-- get parking availability
-- get pricing
-- truck service work orders
-- search service records, invoices, and maintenance documents
-- get current diesel, gasoline, and def pricing
-- check real-time truck parking availability at travel centers
-- list locations
-- list work orders
 - driver services
-- trucking
-- locations
-- get fuel pricing
-- find travel centers
+- get pricing
 - check parking availability
 - list fuel codes
-- shower facility availability
-- search service documents
-- find ta, petro, or ta express travel centers near a location
 - truck parking availability
+- find ta, petro, or ta express travel centers near a location
+- travel centers
+- trucking
+- search service records, invoices, and maintenance documents
 - fuel prices at travel centers
-- get shower availability and wait times
-- find travel centers by proximity, brand, or state
-- search truck service records, invoices, and maintenance documents
 - list truck service work orders
+- get shower availability
+- search documents
+- search service documents
+- locations
 - check shower availability
-- retail
-- service documentation search
-- travel center location discovery
-- list fuel codes for the fleet
-- fleet management
-- truck service
+- list fleet fuel authorization codes for ta/petro locations
+- check shower facility availability and wait times at travel centers
+- get real-time truck parking availability
+- get current diesel, gasoline, and def pricing
+- fuel
+- list locations
+- get parking availability
 - get current diesel, gasoline, and def pricing at travel centers
+- retail
+- travel center location discovery
+- get shower availability and wait times
+- get fuel pricing
+- shower facility availability
+- find travel centers
 - list truck service work orders for fleet vehicles
+- fleet fuel code management
+- check real-time truck parking availability at travel centers
+- service documentation search
+- list fuel codes for the fleet
+- search truck service records, invoices, and maintenance documents
+- truck service
+- find travel centers by proximity, brand, or state
+- truck service work orders
+- list work orders
+- fleet management
 slug: fleet-and-driver-services
 source_filename: fleet-and-driver-services.yaml
 source_heading: Capability Spec

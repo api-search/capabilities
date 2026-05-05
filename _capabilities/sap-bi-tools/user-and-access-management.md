@@ -26,34 +26,34 @@ personas: []
 provider_name: SAP BI Tools
 provider_slug: sap-bi-tools
 search_terms:
-- scim
-- get details of a specific user account.
-- single user.
-- get a user by id.
+- create team
+- create a new team for organizing users and managing content access.
+- list users
 - identity management
+- provision a new user in sap analytics cloud via scim 2.0.
 - create user
+- get user
+- business intelligence
+- analytics
+- get details of a specific user account.
+- team management via scim 2.0.
+- update user
+- data visualization
+- list all teams.
+- update an existing user's profile and role assignments.
 - deprovision a user from sap analytics cloud.
 - delete user
 - list all teams (groups) configured in sap analytics cloud.
-- analytics
-- update an existing user's profile and role assignments.
-- get user
-- business intelligence
-- list all provisioned users.
-- delete a user account.
+- single user.
 - list teams
-- list all users provisioned in sap analytics cloud.
-- team management via scim 2.0.
-- create a new team for organizing users and managing content access.
-- list users
+- delete a user account.
 - sap
-- update user
-- reporting
-- list all teams.
-- provision a new user in sap analytics cloud via scim 2.0.
+- scim
 - user management via scim 2.0.
-- data visualization
-- create team
+- get a user by id.
+- list all users provisioned in sap analytics cloud.
+- list all provisioned users.
+- reporting
 slug: user-and-access-management
 source_filename: user-and-access-management.yaml
 source_heading: Capability Spec

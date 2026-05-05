@@ -1,40 +1,44 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability that exposes Query Language (BQL) as a natural-language MCP tool for an analyst agent.
+description: A capability over Bloomberg Query Language (BQL) that lets agents issue natural-language finance queries; the capability translates to BQL and returns shaped results.
 layout: capability
 name: Bql Natural Language Finance Mcp
 operations:
-- description: ''
-  method: GET
-  name: example-op
-  path: /example
+- description: Translate a natural-language finance question to BQL and return shaped results.
+  method: POST
+  name: ask-finance
+  path: /ask
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
+- finance
+- ask a finance question in plain english; returns shaped bql results.
+- spec-driven integration
+- governance
+- ask finance
 - mcp
-- ai
+- translate a natural-language finance question to bql and return shaped results.
+- capabilities
+- bloomberg
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
-- governance
-- a capability that exposes query language (bql) as a natural-language mcp tool for an analyst agent.
+- bql
+- ai
 slug: bql-natural-language-finance-mcp
 source_filename: bql-natural-language-finance-mcp.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bql Natural Language Finance Mcp\n  description: A capability that exposes Query Language (BQL) as a natural-language MCP tool for an analyst agent.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bql-natural-language-finance-mcp-rest\n    description: REST API for Bql Natural Language Finance Mcp.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - method: GET\n        name: example-op\n\
-  \        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bql-natural-language-finance-mcp-mcp\n    description: MCP server exposing Bql Natural Language Finance Mcp for AI agents.\n    tools:\n    - name: example\n      description: A capability that exposes Query Language (BQL) as a natural-language MCP tool for an analyst agent.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bql-natural-language-finance-mcp-skills\n    description: Agent Skill bundle for Bql Natural Language Finance Mcp.\n    skills:\n    - name: bql-natural-language-finance-mcp\n      description: A capability that exposes Query Language (BQL) as a natural-language MCP tool for an analyst agent.\n      location: file:///opt/naftiko/skills/bql-natural-language-finance-mcp\n      allowed-tools: example\n      tools:\n      - name: example\n        description: A capability that exposes\
-  \ Query Language (BQL) as a natural-language MCP tool for an analyst agent.\n        from:\n          sourceNamespace: bql-natural-language-finance-mcp-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Bql Natural Language Finance Mcp\n  description: A capability over Bloomberg Query Language (BQL) that lets agents issue natural-language finance queries; the capability translates to BQL and returns shaped results.\n  tags: [Naftiko, Bloomberg, BQL, Finance]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: bloomberg-env\n  keys: {BLOOMBERG_TOKEN: BLOOMBERG_TOKEN}\ncapability:\n  consumes:\n  - namespace: bql\n    type: http\n    baseUri: https://api.bloomberg.com\n    authentication: {type: bearer, token: '{{BLOOMBERG_TOKEN}}'}\n    resources:\n    - {name: bql, path: /eap/bql/v1/query, operations: [{name: run-bql-query, method: POST, description: Run a BQL expression.}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: bql-natural-language-finance-mcp-rest\n    description: REST surface for natural-language finance queries.\n    resources:\n    - {name: ask, path: /ask, operations:\
+  \ [{method: POST, name: ask-finance, description: Translate a natural-language finance question to BQL and return shaped results., call: bql.run-bql-query}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: bql-natural-language-finance-mcp-mcp\n    description: MCP for NL→BQL queries.\n    tools:\n    - {name: ask-finance, description: Ask a finance question in plain English; returns shaped BQL results., call: bql.run-bql-query}\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: bql-natural-language-finance-mcp-skills\n    description: Skill for NL→BQL.\n    skills:\n    - name: bql-natural-language-finance-mcp\n      description: NL→BQL finance queries.\n      location: file:///opt/naftiko/skills/bql-natural-language-finance-mcp\n      allowed-tools: ask-finance\n      tools:\n      - {name: ask-finance, from: {sourceNamespace: bql-natural-language-finance-mcp-mcp, action: ask-finance}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/bql-natural-language-finance-mcp.yaml
 tags:
 - Naftiko
+- Bloomberg
+- BQL
+- Finance
 tools:
-- description: A capability that exposes Query Language (BQL) as a natural-language MCP tool for an analyst agent.
-  hints:
-    readOnly: true
-  name: example
+- description: Ask a finance question in plain English; returns shaped BQL results.
+  hints: {}
+  name: ask-finance
 ---

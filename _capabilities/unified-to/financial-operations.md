@@ -34,46 +34,46 @@ personas: []
 provider_name: Unified.to
 provider_slug: unified-to
 search_terms:
-- Finance Operations Engineer
-- list invoices from a connected accounting integration
-- accounting
-- integrations
-- list accounting accounts
-- list accounts from chart of accounts
-- financial
-- list payments from a connected accounting integration
-- developers building invoicing automation, expense management, and accounting sync
-- unified.to
-- Revenue Operations Developer
-- create a new invoice
-- CRM Integrator
-- unified api
-- crm contact, company, and deal management across 47+ integrations
-- HR Technology Developer
-- list financial transactions from a connected accounting integration
-- hris and ats management across 296+ hr and recruiting integrations
-- list financial transactions
 - invoice management
-- payments
-- create a new invoice in a connected accounting integration
-- chart of accounts management
-- People Operations Engineer
-- developers building sales tools, crm sync, and revenue reporting integrations
-- list invoices
-- list accounting payments
-- list accounting contacts (customers and vendors) from a connected accounting integration
-- list accounting contacts
-- create accounting invoice
-- list chart of accounts from a connected accounting integration (quickbooks, xero, etc.)
-- Fintech Developer
-- accounting customer and vendor contacts
-- accounting, invoicing, and payment management across 41+ integrations
-- list accounting invoices
-- developers building hr workflows, employee onboarding, and recruiting automation
-- list accounting transactions
-- payment management
+- list financial transactions
 - invoices
+- CRM Integrator
+- developers building hr workflows, employee onboarding, and recruiting automation
+- accounting
+- list accounting transactions
+- list invoices from a connected accounting integration
+- list payments from a connected accounting integration
+- list accounting payments
+- crm contact, company, and deal management across 47+ integrations
+- create a new invoice
+- financial
+- chart of accounts management
+- list invoices
+- list financial transactions from a connected accounting integration
+- developers building invoicing automation, expense management, and accounting sync
+- list accounting accounts
+- create a new invoice in a connected accounting integration
+- People Operations Engineer
+- unified.to
+- developers building sales tools, crm sync, and revenue reporting integrations
+- payment management
+- payments
+- list accounting contacts (customers and vendors) from a connected accounting integration
+- integrations
+- list accounts from chart of accounts
+- unified api
+- accounting customer and vendor contacts
+- Revenue Operations Developer
+- Finance Operations Engineer
+- list chart of accounts from a connected accounting integration (quickbooks, xero, etc.)
+- HR Technology Developer
+- list accounting invoices
+- list accounting contacts
+- hris and ats management across 296+ hr and recruiting integrations
+- Fintech Developer
 - financial transaction history
+- create accounting invoice
+- accounting, invoicing, and payment management across 41+ integrations
 slug: financial-operations
 source_filename: financial-operations.yaml
 source_heading: Capability Spec

@@ -46,48 +46,48 @@ personas: []
 provider_name: Tray.io
 provider_slug: tray-io
 search_terms:
-- automation
-- browse all available tray.io connectors
-- get operations and schemas for a connector version
-- ai agents
-- connectors
+- list organization users
+- ipaas
+- list organization workspaces
+- list users
+- integration
 - get operations and schemas for a specific connector version
-- list triggers
+- list all service authentications
+- get connector version details and operations
+- list all available triggers for real-time service events
+- create subscription
+- list all available tray.io service connectors (700+ integrations)
+- browse all available tray.io connectors
+- list all available tray.io service connectors
+- execute a connector operation
+- create a new service authentication for a connector
+- get operations and schemas for a connector version
+- list authentications
+- create authentication
+- list all workspaces
+- call connector
 - get connector version
 - create a new service authentication
-- list all available triggers for real-time service events
-- list all users in the tray.io organization
 - execute a tray.io connector operation against a third-party service
-- list organization users
-- manage trigger subscriptions
-- integration
-- api aggregation
-- browse available triggers
-- call connector
-- list all available tray.io service connectors
-- manage service authentications
-- list all available triggers
-- list all stored service authentications
-- list users
-- list all available tray.io service connectors (700+ integrations)
-- get connector version details and operations
-- create authentication
-- create subscription
-- list all workspaces
-- create a trigger subscription to receive real-time events
-- create a trigger subscription
-- list authentications
-- list all workspaces in the tray.io organization
-- execute a tray.io connector operation
-- execute a connector operation
-- list workspaces
-- ipaas
-- list all users
+- connectors
 - list connectors
+- list all stored service authentications
+- create a trigger subscription
+- execute a tray.io connector operation
+- list all workspaces in the tray.io organization
+- ai agents
+- api aggregation
+- list all users
+- list workspaces
+- manage trigger subscriptions
+- manage service authentications
+- create a trigger subscription to receive real-time events
+- list triggers
+- list all available triggers
+- list all users in the tray.io organization
+- browse available triggers
+- automation
 - workflow automation
-- list all service authentications
-- list organization workspaces
-- create a new service authentication for a connector
 slug: integration-platform
 source_filename: integration-platform.yaml
 source_heading: Capability Spec

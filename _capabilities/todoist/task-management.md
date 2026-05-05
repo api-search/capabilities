@@ -50,49 +50,49 @@ personas: []
 provider_name: Todoist
 provider_slug: todoist
 search_terms:
-- list labels
-- list todoist tasks, optionally filtered by project, label, or filter expression
-- list projects
-- list comments on a todoist task
-- list all projects
-- label management
-- get task by id
-- list tasks with optional project and label filters
-- task completion
-- create project
 - comment management
+- list comments
 - create comment
-- single task operations
-- productivity
-- create a new task in todoist with content, due date, priority, and labels
 - task management operations
-- list task comments
-- project management
-- add a comment to a task
-- list all personal labels in todoist
-- list all labels
-- close task
+- complete a task
+- label management
+- workspace management
+- create task
+- list tasks with optional project and label filters
 - create a new todoist project
+- todoist
+- list labels
+- list task comments
+- task management
 - list all todoist projects
 - collaboration
-- add a comment to a todoist task
-- list all workspaces
-- to-do
-- task management
-- get task
-- list all todoist workspaces for the authenticated user
-- list tasks
+- add a comment to a task
 - create a new project
-- complete a task
-- list workspaces
-- create a new task
+- list all workspaces
+- list projects
+- list all todoist workspaces for the authenticated user
+- add a comment to a todoist task
+- get task by id
 - tasks
-- mark a todoist task as completed
-- list comments
+- to-do
 - get details of a specific todoist task by id
-- create task
-- todoist
-- workspace management
+- list all projects
+- mark a todoist task as completed
+- project management
+- single task operations
+- list workspaces
+- list all personal labels in todoist
+- create a new task
+- get task
+- list todoist tasks, optionally filtered by project, label, or filter expression
+- list comments on a todoist task
+- task completion
+- create a new task in todoist with content, due date, priority, and labels
+- close task
+- productivity
+- create project
+- list all labels
+- list tasks
 slug: task-management
 source_filename: task-management.yaml
 source_heading: Capability Spec

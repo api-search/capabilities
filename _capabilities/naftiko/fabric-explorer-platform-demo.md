@@ -1,40 +1,47 @@
 ---
 categories: []
 consumed_apis: []
-description: A capability bundle wired into NaftikoFabricExplorerPage + Federation Across Fabrics, framed as -Terminal-grade for API platform leadership.
+description: A demo capability over Microsoft Fabric exposing the platform explorer (workspaces, items, lakehouses) as a Naftiko capability.
 layout: capability
 name: Fabric Explorer Platform Demo
 operations:
 - description: ''
   method: GET
-  name: example-op
-  path: /example
+  name: list-workspaces
+  path: /workspaces
 personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- example
-- a capability bundle wired into naftikofabricexplorerpage + federation across fabrics, framed as -terminal-grade for api platform leadership.
-- ai
+- demo
+- list workspaces
+- spec-driven integration
+- microsoft fabric
+- list workspace items
 - mcp
+- capabilities
 - naftiko
 - api integration
-- spec-driven integration
-- capabilities
-- example op
 - governance
+- ai
 slug: fabric-explorer-platform-demo
 source_filename: fabric-explorer-platform-demo.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Fabric Explorer Platform Demo\n  description: A capability bundle wired into NaftikoFabricExplorerPage + Federation Across Fabrics, framed as -Terminal-grade for API platform leadership.\n  tags:\n  - Naftiko\n  created: '2026-05-01'\n  modified: '2026-05-01'\nbinds:\n- namespace: naftiko-env\n  description: Naftiko credentials.\n  keys:\n    NAFTIKO_API_KEY: NAFTIKO_API_KEY\ncapability:\n  consumes:\n  - namespace: naftiko\n    type: http\n    baseUri: https://api.naftiko.com\n    authentication:\n      type: bearer\n      token: '{{NAFTIKO_API_KEY}}'\n    resources:\n    - name: example\n      path: /example\n      operations:\n      - name: example-op\n        method: GET\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: fabric-explorer-platform-demo-rest\n    description: REST API for Fabric Explorer Platform Demo.\n    resources:\n    - name: example\n      path: /example\n      operations:\n      -\
-  \ method: GET\n        name: example-op\n        call: naftiko.example-op\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: fabric-explorer-platform-demo-mcp\n    description: MCP server exposing Fabric Explorer Platform Demo for AI agents.\n    tools:\n    - name: example\n      description: A capability bundle wired into NaftikoFabricExplorerPage + Federation Across Fabrics, framed as -Terminal-grade for API platform leadership.\n      hints:\n        readOnly: true\n      call: naftiko.example-op\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: fabric-explorer-platform-demo-skills\n    description: Agent Skill bundle for Fabric Explorer Platform Demo.\n    skills:\n    - name: fabric-explorer-platform-demo\n      description: A capability bundle wired into NaftikoFabricExplorerPage + Federation Across Fabrics, framed as -Terminal-grade for API platform leadership.\n      location: file:///opt/naftiko/skills/fabric-explorer-platform-demo\n   \
-  \   allowed-tools: example\n      tools:\n      - name: example\n        description: A capability bundle wired into NaftikoFabricExplorerPage + Federation Across Fabrics, framed as -Terminal-grade for API platform leadership.\n        from:\n          sourceNamespace: fabric-explorer-platform-demo-mcp\n          action: example\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  title: Fabric Explorer Platform Demo\n  description: A demo capability over Microsoft Fabric exposing the platform explorer (workspaces, items, lakehouses) as a Naftiko capability.\n  tags: [Naftiko, Microsoft Fabric, Demo]\n  created: '2026-05-01'\n  modified: '2026-05-04'\nbinds:\n- namespace: fabric-env\n  keys: {FABRIC_TOKEN: FABRIC_TOKEN}\ncapability:\n  consumes:\n  - namespace: fabric\n    type: http\n    baseUri: https://api.fabric.microsoft.com\n    authentication: {type: bearer, token: '{{FABRIC_TOKEN}}'}\n    resources:\n    - {name: workspaces, path: /v1/workspaces, operations: [{name: list-workspaces, method: GET}]}\n    - name: workspace-items\n      path: /v1/workspaces/{{workspace_id}}/items\n      operations:\n      - {name: list-workspace-items, method: GET, inputParameters: [{name: workspace_id, in: path}]}\n  exposes:\n  - type: rest\n    address: 0.0.0.0\n    port: 8080\n    namespace: fabric-explorer-platform-demo-rest\n\
+  \    description: REST surface for Fabric platform explorer.\n    resources:\n    - {name: workspaces, path: /workspaces, operations: [{method: GET, name: list-workspaces, call: fabric.list-workspaces}]}\n  - type: mcp\n    address: 0.0.0.0\n    port: 3010\n    namespace: fabric-explorer-platform-demo-mcp\n    description: MCP for Fabric explorer.\n    tools:\n    - {name: list-workspaces, hints: {readOnly: true}, call: fabric.list-workspaces}\n    - name: list-workspace-items\n      hints: {readOnly: true}\n      inputParameters: [{name: workspace_id, type: string, required: true}]\n      call: fabric.list-workspace-items\n  - type: skill\n    address: 0.0.0.0\n    port: 3011\n    namespace: fabric-explorer-platform-demo-skills\n    description: Skill for Fabric explorer.\n    skills:\n    - name: fabric-explorer-platform-demo\n      description: Microsoft Fabric platform explorer demo.\n      location: file:///opt/naftiko/skills/fabric-explorer-platform-demo\n      allowed-tools: list-workspaces,list-workspace-items\n\
+  \      tools:\n      - {name: list-workspaces, from: {sourceNamespace: fabric-explorer-platform-demo-mcp, action: list-workspaces}}\n      - {name: list-workspace-items, from: {sourceNamespace: fabric-explorer-platform-demo-mcp, action: list-workspace-items}}\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/naftiko/refs/heads/main/capabilities/fabric-explorer-platform-demo.yaml
 tags:
 - Naftiko
+- Microsoft Fabric
+- Demo
 tools:
-- description: A capability bundle wired into NaftikoFabricExplorerPage + Federation Across Fabrics, framed as -Terminal-grade for API platform leadership.
+- description: ''
   hints:
     readOnly: true
-  name: example
+  name: list-workspaces
+- description: ''
+  hints:
+    readOnly: true
+  name: list-workspace-items
 ---

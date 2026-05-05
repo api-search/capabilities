@@ -41,44 +41,44 @@ personas: []
 provider_name: Unkey
 provider_slug: unkey
 search_terms:
-- list overrides
-- list all rate limit overrides for a namespace
-- apply multi rate limit
-- access control
-- set a custom rate limit override for a specific identifier
-- apply rate limiting to identifiers
-- analytics
-- api protection
-- set rate limit override
-- rate limiting
-- apply multiple rate limit checks in one request
-- delete a rate limit override
-- remove a rate limit override for a specific identifier
-- developer platform
-- get override
-- authentication
-- get rate limit override for an identifier
-- list rate limit overrides
-- delete rate limit override
-- rate limit override management
 - apply rate limiting check for a single identifier
-- unkey
+- multi limit
+- single override operations
 - get the rate limit override configuration for a specific identifier
+- delete a rate limit override
+- developer platform
+- list all rate limit overrides for a namespace
+- api keys
+- delete rate limit override
+- rate limiting
+- analytics
 - delete override
 - apply a rate limiting check for a user, ip, or custom identifier
-- identity
-- apply rate limit
 - set a rate limit override for a specific identifier
-- get rate limit override
 - apply multiple rate limit checks simultaneously in a single request
-- single override operations
-- abuse prevention
-- multi limit
+- set a custom rate limit override for a specific identifier
 - batch rate limit checks
+- get override
+- apply rate limiting to identifiers
+- get rate limit override
 - set override
-- limit
 - list all rate limit overrides configured for a namespace
-- api keys
+- access control
+- limit
+- apply multiple rate limit checks in one request
+- abuse prevention
+- apply rate limit
+- rate limit override management
+- api protection
+- list overrides
+- set rate limit override
+- authentication
+- list rate limit overrides
+- remove a rate limit override for a specific identifier
+- unkey
+- get rate limit override for an identifier
+- identity
+- apply multi rate limit
 slug: rate-limiting
 source_filename: rate-limiting.yaml
 source_heading: Capability Spec

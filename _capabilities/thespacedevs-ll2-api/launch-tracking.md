@@ -50,56 +50,56 @@ personas: []
 provider_name: TheSpaceDevs LL2 API
 provider_slug: thespacedevs-ll2-api
 search_terms:
-- space stations
-- list evas and spacewalks.
-- list astronauts from the global space database with career, agency, and mission data.
-- get detailed career profile for a specific astronaut including flights and spacewalks.
+- space
+- list agencies
+- space agencies.
+- list astronauts.
 - get data for a specific astronaut.
-- mission tracking
-- list upcoming space events.
-- get detailed data for a specific launch.
-- list spacecraft.
-- spacecraft database.
 - list celestial bodies (planets, moons, asteroids) in the database.
-- list celestial bodies
-- astronaut database.
-- list recently completed rocket launches with outcome and mission data.
-- astronauts
-- list upcoming rocket launches.
-- list astronauts
 - get astronaut
-- list space agencies and launch providers.
-- spacewalk records.
-- past rocket launches.
-- list previously completed launches.
-- upcoming space events.
-- satellites
-- get comprehensive data for a specific rocket launch including rocket, mission, pad, and crew information.
-- list space stations
-- list upcoming launches
 - space stations.
-- get launch
+- list recently completed rocket launches with outcome and mission data.
+- list upcoming launches
+- mission tracking
+- list astronauts
+- list celestial bodies
+- individual launch data.
+- astronaut database.
+- list evas and spacewalks.
+- rockets
+- upcoming rocket launches worldwide.
+- past rocket launches.
+- list astronauts from the global space database with career, agency, and mission data.
+- list previously completed launches.
+- list upcoming space events including launches, landings, announcements, and milestones.
+- list orbital space stations with status, orbit, and ownership information.
+- list space agencies and launch providers.
+- launches
+- list upcoming events
+- list space agencies and launch providers with launch statistics.
+- spacecraft database.
+- spacecraft
+- list spacecraft.
+- list spacecraft with configuration, status, and flight history.
+- list spacecraft
+- satellites
+- get detailed data for a specific launch.
+- upcoming space events.
+- list orbital space stations.
+- spacewalk records.
 - list spacewalks
 - list extravehicular activities (evas/spacewalks) with crew, duration, and purpose.
-- list agencies
-- list space agencies and launch providers with launch statistics.
-- list upcoming space events including launches, landings, announcements, and milestones.
-- list astronauts.
-- space agencies.
-- individual launch data.
-- list spacecraft
-- spacecraft
-- list orbital space stations with status, orbit, and ownership information.
-- list upcoming events
-- list orbital space stations.
-- list spacecraft with configuration, status, and flight history.
-- individual astronaut data.
+- get detailed career profile for a specific astronaut including flights and spacewalks.
+- get comprehensive data for a specific rocket launch including rocket, mission, pad, and crew information.
+- list space stations
 - list previous launches
-- rockets
+- space stations
 - list upcoming rocket launches worldwide with date, vehicle, mission, and launch site details.
-- space
-- launches
-- upcoming rocket launches worldwide.
+- astronauts
+- individual astronaut data.
+- get launch
+- list upcoming space events.
+- list upcoming rocket launches.
 slug: launch-tracking
 source_filename: launch-tracking.yaml
 source_heading: Capability Spec

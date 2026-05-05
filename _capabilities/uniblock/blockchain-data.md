@@ -41,40 +41,40 @@ personas: []
 provider_name: Uniblock
 provider_slug: uniblock
 search_terms:
-- web3
-- get transaction history for a wallet address
-- get token name, symbol, decimals, and contract details
-- get token balances
-- get market price
-- market data
-- look up token metadata (name, symbol, decimals, contract) on any supported blockchain
-- transaction history
-- token market price
-- get token metadata
-- get all nfts held by a wallet address on a blockchain network
-- nfts
-- token balances for a wallet
-- defi
-- token metadata across blockchain networks
-- get transaction history for a wallet
-- nft holdings for a wallet
-- nft token metadata
-- get all token balances for a wallet address across a blockchain network
-- get all nfts held by a wallet address
-- get current market price for a token
-- get all token balances for a wallet address
-- uniblock
-- get nft holdings
-- get metadata for a specific nft including image, attributes, and collection details
-- get nft metadata
 - get token price
-- get transaction history
-- get current market price for a token by contract address
+- token metadata across blockchain networks
+- market data
+- transaction history
+- look up token metadata (name, symbol, decimals, contract) on any supported blockchain
+- get current market price for a token
 - get metadata for a specific nft
-- get transactions
-- tokens
-- get nft balances
+- defi
+- get all token balances for a wallet address
+- get market price
+- get transaction history for a wallet address
+- get transaction history for a wallet
+- nfts
 - blockchain
+- get current market price for a token by contract address
+- get nft balances
+- web3
+- uniblock
+- nft token metadata
+- token market price
+- get all nfts held by a wallet address
+- get token balances
+- get all nfts held by a wallet address on a blockchain network
+- get nft metadata
+- token balances for a wallet
+- get token name, symbol, decimals, and contract details
+- nft holdings for a wallet
+- get metadata for a specific nft including image, attributes, and collection details
+- tokens
+- get all token balances for a wallet address across a blockchain network
+- get transaction history
+- get transactions
+- get token metadata
+- get nft holdings
 slug: blockchain-data
 source_filename: blockchain-data.yaml
 source_heading: Capability Spec

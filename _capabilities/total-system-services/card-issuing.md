@@ -38,44 +38,44 @@ personas: []
 provider_name: Total System Services
 provider_slug: total-system-services
 search_terms:
-- card issuing
-- file a dispute for a specific card transaction
-- create cardholder account
-- dispute management
-- get spending limits and restrictions for a card
-- get transaction history for a specific card
 - create a new cardholder account in the card program
-- issue card
-- create a new account
-- merchant services
-- financial services
-- individual account
-- spending controls
 - get account
-- payments
-- list transaction disputes in the card program
-- list disputes
-- list cardholder accounts
-- create account
-- cardholder account management
-- cards for an account
-- list all cardholder accounts in the card program
 - get account details
+- issue a new card
+- issue a new physical or virtual payment card for an account
+- fintech
 - list accounts
 - file dispute
-- disputes
-- issue a new card
-- file a dispute
-- get card spending controls
-- list all cards associated with a cardholder account
-- issue a new physical or virtual payment card for an account
-- get details for a specific cardholder account including balance
-- fintech
-- cardholder management
-- list account cards
-- create dispute
+- cardholder account management
+- list cardholder accounts
+- create account
+- create cardholder account
 - payment processing
+- spending controls
+- cards for an account
+- list all cardholder accounts in the card program
+- get spending limits and restrictions for a card
+- list disputes
+- disputes
+- card issuing
+- list all cards associated with a cardholder account
+- get transaction history for a specific card
+- create a new account
+- list account cards
+- payments
+- cardholder management
 - get card transactions
+- merchant services
+- individual account
+- issue card
+- file a dispute
+- file a dispute for a specific card transaction
+- get card spending controls
+- dispute management
+- create dispute
+- financial services
+- list transaction disputes in the card program
+- get details for a specific cardholder account including balance
 slug: card-issuing
 source_filename: card-issuing.yaml
 source_heading: Capability Spec

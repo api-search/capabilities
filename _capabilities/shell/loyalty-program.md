@@ -38,53 +38,53 @@ personas: []
 provider_name: Shell
 provider_slug: shell
 search_terms:
-- browse shell rewards catalogue
-- fuel
-- oil and gas
-- redeem points for a reward
-- aviation
-- renewable energy
-- access specific loyalty account
-- redeem loyalty points
-- mobility
-- enroll a new customer in shell go+ loyalty program
-- rewards
-- get loyalty transaction history
-- get points balance
-- list loyalty transactions
-- list transactions
-- loyalty transaction history
 - list rewards catalogue
-- access points balance
-- get loyalty account details
-- get account
 - get loyalty account
-- list available offers
-- manage loyalty offers
-- enroll loyalty member
-- energy
-- redeem points
-- get current redeemable and pending points balance for a loyalty account
-- lubricants
-- get balance
-- manage shell go+ loyalty accounts
-- retail
-- enroll a new loyalty program member
-- electric vehicle charging
-- gas
-- retrieve shell go+ loyalty account profile and tier information
-- enroll member
-- get loyalty points earn and redeem transaction history
-- list personalized loyalty offers available for a member account
-- redeem loyalty points for a reward from the shell catalogue
-- fleet management
-- list offers
-- points
+- renewable energy
+- list loyalty transactions
 - list rewards
+- list available rewards
+- get points balance
+- enroll member
+- get account
+- loyalty transaction history
+- manage shell go+ loyalty accounts
+- redeem loyalty points
+- list offers
+- enroll loyalty member
+- get loyalty transaction history
+- redeem loyalty points for a reward from the shell catalogue
 - browse available rewards in shell go+ loyalty catalogue
+- mobility
+- list personalized loyalty offers available for a member account
+- gas
+- manage loyalty offers
+- list available offers
+- electric vehicle charging
+- enroll a new loyalty program member
+- get loyalty account details
+- access points balance
 - get current points balance
 - loyalty
-- list available rewards
+- redeem points for a reward
+- get loyalty points earn and redeem transaction history
+- get balance
+- redeem points
+- oil and gas
+- fuel
+- retail
+- points
+- enroll a new customer in shell go+ loyalty program
+- list transactions
+- rewards
+- lubricants
+- get current redeemable and pending points balance for a loyalty account
+- browse shell rewards catalogue
+- energy
+- access specific loyalty account
+- retrieve shell go+ loyalty account profile and tier information
+- aviation
+- fleet management
 slug: loyalty-program
 source_filename: loyalty-program.yaml
 source_heading: Capability Spec

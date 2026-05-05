@@ -66,65 +66,65 @@ personas: []
 provider_name: Salesforce Net Zero Cloud
 provider_slug: salesforce-net-zero-cloud
 search_terms:
-- environmental
-- list waste disposal
-- list emission factors used for co2e calculations, filterable by category and region
-- individual emission record operations
-- carbon accounting
-- create a water withdrawal record
-- create energy consumption
-- create waste disposal record
-- carbon emissions
-- get details for a specific carbon emission record
 - create a new water withdrawal record for a facility
-- create a waste disposal record
-- net zero and sustainability goal management
-- list water withdrawal records
-- emission factor catalog
-- query any sustainability data using soql for advanced esg reporting
-- create a new carbon emission record (scope 1, 2, or 3)
-- salesforce
-- list energy consumption records
-- create waste disposal
-- create a new energy consumption record for a facility
-- update carbon emission
-- waste disposal tracking
-- create a sustainability goal
-- sustainability
-- list energy consumption
-- get a specific carbon emission record
-- create water withdrawal record
-- create an energy consumption record
-- update an existing carbon emission record
-- energy consumption tracking
-- esg
-- create sustainability goal
-- list sustainability goals
-- create a new sustainability goal with baseline, target year, and reduction percentage
-- list water withdrawal records by source
-- query sustainability data
-- list carbon emission records filtered by scope and reporting year
-- list carbon emissions
-- list emission factors
 - create a new carbon emission record
-- list waste disposal records by type and disposal method
-- create a new waste disposal record (landfill, recycled, composted, etc.)
-- list sustainability goals including net zero targets and progress
+- list sustainability goals
 - create carbon emission
+- energy consumption tracking
+- get carbon emission
+- update carbon emission
+- list energy consumption
+- net zero cloud
+- create energy consumption
+- create sustainability goal
+- list sustainability goals including net zero targets and progress
+- create a new energy consumption record for a facility
+- list emission factors
+- list waste disposal records by type and disposal method
+- create water withdrawal record
 - carbon emission record management (scope 1, 2, 3)
 - list waste disposal records
-- update a carbon emission record
-- water withdrawal and consumption tracking
+- list water withdrawal records
+- list emission factors used for co2e calculations, filterable by category and region
+- create waste disposal record
 - delete a carbon emission record
+- list water withdrawal records by source
+- get a specific carbon emission record
+- query sustainability data
+- net zero and sustainability goal management
+- create a new carbon emission record (scope 1, 2, or 3)
+- query any sustainability data using soql for advanced esg reporting
+- environmental
 - list carbon emission records with optional scope and year filters
-- list energy consumption records by type (electricity, gas, renewable)
-- climate
-- list water withdrawal
-- get carbon emission
-- net zero
-- net zero cloud
+- carbon accounting
+- create a water withdrawal record
+- create waste disposal
+- water withdrawal and consumption tracking
 - delete carbon emission
+- list energy consumption records
+- waste disposal tracking
+- create a waste disposal record
+- carbon emissions
+- salesforce
+- update a carbon emission record
+- esg
+- climate
+- list carbon emissions
+- list energy consumption records by type (electricity, gas, renewable)
+- list waste disposal
+- individual emission record operations
+- create a sustainability goal
+- create a new waste disposal record (landfill, recycled, composted, etc.)
+- sustainability
+- create a new sustainability goal with baseline, target year, and reduction percentage
+- list water withdrawal
+- get details for a specific carbon emission record
+- update an existing carbon emission record
+- create an energy consumption record
+- emission factor catalog
+- net zero
 - create water withdrawal
+- list carbon emission records filtered by scope and reporting year
 slug: carbon-accounting
 source_filename: carbon-accounting.yaml
 source_heading: Capability Spec

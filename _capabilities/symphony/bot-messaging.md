@@ -60,61 +60,61 @@ personas: []
 provider_name: Symphony
 provider_slug: symphony
 search_terms:
-- automation
-- signal (keyword alert) management
-- list symphony signals (keyword alerts and triggers)
-- list streams
-- create datafeed
+- create room
+- search for users by email or username
+- message operations on streams
+- bots
+- symphony
 - get messages from a stream
 - list dlp policies
-- message operations on streams
-- search rooms
-- create a new datafeed to receive real-time symphony events
-- data loss prevention policies
-- create a new datafeed for real-time events
-- post a message to a symphony stream
-- list signals
-- list data loss prevention policies for compliance monitoring
-- list available signals
-- bots
-- authenticate
-- list active datafeeds
-- post a message to a stream
 - room management
-- financial services
-- search users
-- list active symphony datafeeds for real-time event processing
-- communication
-- list datafeeds
-- create room
-- real-time event datafeed management
+- search for rooms
+- create a new symphony room
+- create signal
+- authenticate a symphony bot using rsa key pair to obtain session token
+- get messages
+- post a message to a stream
 - workflows
 - authenticate a bot using rsa key
 - messaging
-- collaboration
-- retrieve messages from a symphony stream
-- search for users by email or username
-- authenticate bot
-- datafeed
-- symphony
+- search for symphony users by email or username
+- list data loss prevention policies for compliance monitoring
+- list active datafeeds
+- list all streams
+- data loss prevention policies
 - post message
+- datafeed
+- retrieve messages from a symphony stream
+- create a new signal
+- create a new datafeed to receive real-time symphony events
+- list symphony signals (keyword alerts and triggers)
+- user lookup
+- list signals
+- search users
+- list streams
 - stream listing
+- post a message to a symphony stream
+- search rooms
+- create a new datafeed for real-time events
+- list available symphony streams
+- create a new symphony room for team collaboration
+- communication
+- list active symphony datafeeds for real-time event processing
+- create a new symphony signal for keyword monitoring
+- real-time
+- signal (keyword alert) management
+- search for symphony rooms by name or keyword
 - secure communication
 - bot and app authentication
-- real-time
-- create a new symphony room
-- create a new signal
-- create a new symphony room for team collaboration
-- create signal
-- authenticate a symphony bot using rsa key pair to obtain session token
-- search for symphony rooms by name or keyword
-- list all streams
-- list available symphony streams
-- user lookup
-- get messages
-- create a new symphony signal for keyword monitoring
-- search for symphony users by email or username
-- search for rooms
+- create datafeed
+- automation
+- list datafeeds
+- financial services
+- real-time event datafeed management
+- collaboration
+- authenticate bot
+- authenticate
+- list available signals
 slug: bot-messaging
 source_filename: bot-messaging.yaml
 source_heading: Capability Spec

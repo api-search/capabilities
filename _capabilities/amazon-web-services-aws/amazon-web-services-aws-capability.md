@@ -10,21 +10,21 @@ provider_name: Amazon Web Services (AWS)
 provider_slug: amazon-web-services-aws
 search_terms:
 - iaas
+- databases
+- devops
+- storage
+- containers
 - platform as a service
 - security
-- storage
-- artificial intelligence
-- infrastructure
 - networking
-- containers
-- serverless
-- devops
-- analytics
-- databases
-- computing
-- cloud computing
-- machine learning
 - paas
+- machine learning
+- cloud computing
+- artificial intelligence
+- serverless
+- infrastructure
+- computing
+- analytics
 slug: amazon-web-services-aws-capability
 source_filename: amazon-web-services-aws-capability.yaml
 source_heading: Capability Spec

@@ -30,38 +30,38 @@ personas: []
 provider_name: Apifuse
 provider_slug: apifuse
 search_terms:
-- integration platform
-- get analytics
-- create a workflow.
-- get analytics data.
-- marketplace
-- browse and manage integrations.
-- integrations
 - saas
-- retrieve integration usage analytics including total tasks, active integrations, and active users.
-- list all integration workflows configured in the embedded marketplace.
-- create workflow
-- list workflows
-- integration analytics.
-- list workflows.
-- list all pre-built connectors available for embedding into your saas product.
-- managing native integrations within saas products.
-- Integration Developer
-- apifuse
-- list integrations
 - browse pre-built connectors.
+- list all integrations.
+- ipaas
+- browse and manage integrations.
+- create workflow
+- Integration Developer
+- create a new automation workflow connecting two or more integrated platforms.
+- create a workflow.
+- SaaS Product Manager
+- list all connectors.
+- list workflows.
+- apifuse
+- managing native integrations within saas products.
 - embedded integrations
 - product manager building native integrations into a saas product.
-- list all connectors.
-- developer implementing and automating embedded integration workflows.
-- ipaas
-- create a new automation workflow connecting two or more integrated platforms.
-- browse all available embedded integrations, optionally filtered by category.
-- list all integrations.
+- list workflows
+- retrieve integration usage analytics including total tasks, active integrations, and active users.
 - list connectors
-- workflow automation
 - manage workflows.
-- SaaS Product Manager
+- get analytics
+- integrations
+- list integrations
+- list all pre-built connectors available for embedding into your saas product.
+- developer implementing and automating embedded integration workflows.
+- integration analytics.
+- browse all available embedded integrations, optionally filtered by category.
+- get analytics data.
+- list all integration workflows configured in the embedded marketplace.
+- integration platform
+- marketplace
+- workflow automation
 slug: embedded-integration-management
 source_filename: embedded-integration-management.yaml
 source_heading: Capability Spec

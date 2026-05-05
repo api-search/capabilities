@@ -69,66 +69,66 @@ personas: []
 provider_name: SpaceX API
 provider_slug: spacex-api
 search_terms:
-- list launchpads
-- list all spacex payloads
-- list all spacex launches including past and upcoming missions with full metadata
-- list all spacex landing pads and autonomous drone ships with success statistics
-- list all future scheduled spacex launches
-- spacex launch sites
-- spacex astronaut and crew roster
-- list all first-stage booster cores with landing attempt and success history
-- mission tracking
-- launches
-- list all dragon capsules with reuse history
-- get roadster tracking
-- aerospace
-- get the most recent spacex launch
-- list cores
-- spacex dragon capsule fleet with reuse history
-- list starlink satellites
-- space
-- spacex landing pads and drone ships
-- list all starlink constellation satellites with orbital parameters
-- list landpads
-- list all spacex fleet vessels with real-time position
-- future scheduled spacex launches
-- list all spacex launches (past and upcoming)
-- spacex rocket vehicle catalog
-- tesla roadster orbital tracking
-- list rockets
-- list all first-stage booster cores
-- list all spacex crew members
-- get roadster
-- list all spacex rocket vehicles (falcon 9, falcon heavy, starship) with specifications
-- list upcoming launches
-- list ships
-- get real-time roadster orbital tracking data
-- list all dragon capsules with serial numbers and reuse history
-- spacex payload manifests
-- list all spacex launch sites with location and launch statistics
-- list landing pads
-- get latest launch
-- list all spacex fleet vessels including drone ships with real-time position data
-- list starlink
 - list payloads
-- spacex booster cores with landing history
-- list all spacex landing pads and drone ships
-- list all upcoming spacex launches
-- list all spacex payload manifests with customer, orbit, and mass data
-- list all spacex launch sites and their status
-- list capsules
-- spacex
-- list launches
-- starlink satellite constellation
-- get the most recent spacex launch with mission details and outcome
-- list all spacex astronaut crew members with agency affiliations and launch history
-- list crew
-- most recent spacex launch
-- spacex fleet vessels
-- all spacex mission launches
-- list all spacex rocket vehicles
+- list starlink satellites
 - list all starlink satellites with orbital data
+- space
+- spacex astronaut and crew roster
+- list launches
+- list all spacex launches (past and upcoming)
+- get latest launch
+- list all upcoming spacex launches
+- spacex rocket vehicle catalog
+- spacex launch sites
+- list all spacex astronaut crew members with agency affiliations and launch history
+- all spacex mission launches
+- spacex dragon capsule fleet with reuse history
+- list all spacex landing pads and drone ships
+- get roadster
+- list all first-stage booster cores
+- list all first-stage booster cores with landing attempt and success history
+- list upcoming launches
+- starlink satellite constellation
+- mission tracking
+- list all spacex payloads
+- list all spacex fleet vessels with real-time position
+- list starlink
+- list all future scheduled spacex launches
+- list landpads
+- spacex landing pads and drone ships
+- get roadster tracking
+- list landing pads
+- list all spacex launch sites and their status
+- list all spacex fleet vessels including drone ships with real-time position data
+- spacex
+- list launchpads
+- list all spacex crew members
+- future scheduled spacex launches
+- list all spacex launches including past and upcoming missions with full metadata
+- list all starlink constellation satellites with orbital parameters
+- list all spacex payload manifests with customer, orbit, and mass data
+- most recent spacex launch
+- list cores
+- spacex fleet vessels
 - get real-time orbital tracking data for elon musk's tesla roadster in space
+- launches
+- get the most recent spacex launch with mission details and outcome
+- spacex payload manifests
+- list all dragon capsules with reuse history
+- tesla roadster orbital tracking
+- list crew
+- list all spacex rocket vehicles
+- list ships
+- list all spacex launch sites with location and launch statistics
+- list all dragon capsules with serial numbers and reuse history
+- get the most recent spacex launch
+- list all spacex landing pads and autonomous drone ships with success statistics
+- aerospace
+- spacex booster cores with landing history
+- get real-time roadster orbital tracking data
+- list rockets
+- list capsules
+- list all spacex rocket vehicles (falcon 9, falcon heavy, starship) with specifications
 slug: mission-tracking
 source_filename: mission-tracking.yaml
 source_heading: Capability Spec

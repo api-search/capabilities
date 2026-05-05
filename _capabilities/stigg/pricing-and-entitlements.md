@@ -45,40 +45,40 @@ personas: []
 provider_name: Stigg
 provider_slug: stigg
 search_terms:
-- get all feature entitlements for a customer to understand their full access profile across all plan features.
-- finops
-- usage-based billing
-- retrieve customer details and active subscriptions.
-- get customer details including active subscriptions and plan information.
-- provision a new customer in stigg. use when onboarding a new tenant or user to the saas product.
-- report usage
-- saas
-- entitlements
-- all entitlements for a customer.
-- customer provisioning and retrieval.
-- report feature usage for metered billing.
-- report measured feature usage for a customer for metered billing calculations. use after each metered api call or event.
-- subscription management
-- pricing
-- provision a new customer in stigg.
-- get entitlements
-- provision customer
-- enroll a customer in a pricing plan by creating a subscription.
-- check entitlement
 - subscription lifecycle management.
-- create subscription
-- feature entitlement checks.
-- feature usage reporting.
-- check if a customer can access a specific feature.
-- check whether a customer has access to a specific feature and what their usage limits are. use as a feature gate before executing protected functionality.
-- cancel an active customer subscription. use for churn, downgrades, or account closures.
-- individual customer operations.
-- get customer
-- cancel an active subscription.
+- saas
+- usage-based billing
+- provision customer
+- finops
+- provision a new customer in stigg. use when onboarding a new tenant or user to the saas product.
+- all entitlements for a customer.
 - billing
+- subscription management
+- individual customer operations.
+- create subscription
+- get entitlements
+- customer provisioning and retrieval.
+- report measured feature usage for a customer for metered billing calculations. use after each metered api call or event.
 - create a new subscription for a customer.
-- get all feature entitlements for a customer.
+- report usage
+- cancel an active subscription.
+- feature usage reporting.
 - cancel subscription
+- retrieve customer details and active subscriptions.
+- get customer
+- get all feature entitlements for a customer.
+- enroll a customer in a pricing plan by creating a subscription.
+- check whether a customer has access to a specific feature and what their usage limits are. use as a feature gate before executing protected functionality.
+- check entitlement
+- provision a new customer in stigg.
+- get customer details including active subscriptions and plan information.
+- get all feature entitlements for a customer to understand their full access profile across all plan features.
+- check if a customer can access a specific feature.
+- entitlements
+- feature entitlement checks.
+- pricing
+- report feature usage for metered billing.
+- cancel an active customer subscription. use for churn, downgrades, or account closures.
 slug: pricing-and-entitlements
 source_filename: pricing-and-entitlements.yaml
 source_heading: Capability Spec
