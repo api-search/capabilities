@@ -14,12 +14,12 @@ description: 'Outbound and inbound transactional and marketing messaging across 
 
   '
 domain: communications
-implementation_count: 16
+implementation_count: 14
 implementations:
 - capability_name: AhaSend Email Operations
   capability_slug: email-operations
   capability_url: https://capabilities.apis.io/capabilities/ahasend/email-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: AhaSend
   provider_slug: ahasend
@@ -33,7 +33,7 @@ implementations:
 - capability_name: Amazon SNS Pub/Sub Messaging
   capability_slug: pub-sub-messaging
   capability_url: https://capabilities.apis.io/capabilities/amazon-sns/pub-sub-messaging/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Amazon SNS
   provider_slug: amazon-sns
@@ -46,7 +46,7 @@ implementations:
 - capability_name: Amazon SQS Message Queuing
   capability_slug: message-queuing
   capability_url: https://capabilities.apis.io/capabilities/amazon-sqs/message-queuing/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Amazon SQS
   provider_slug: amazon-sqs
@@ -58,7 +58,7 @@ implementations:
 - capability_name: Amazon WorkMail Email Management
   capability_slug: email-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-workmail/email-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Amazon WorkMail
   provider_slug: amazon-workmail
@@ -71,7 +71,7 @@ implementations:
 - capability_name: Apache ActiveMQ Messaging Workflow
   capability_slug: activemq-messaging
   capability_url: https://capabilities.apis.io/capabilities/apache-activemq/activemq-messaging/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apache ActiveMQ
   provider_slug: apache-activemq
@@ -84,7 +84,7 @@ implementations:
 - capability_name: AT&T Messaging
   capability_slug: messaging
   capability_url: https://capabilities.apis.io/capabilities/at-and-t/messaging/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 6
   provider_name: AT&T
   provider_slug: at-and-t
@@ -96,24 +96,10 @@ implementations:
   - Notifications
   - Mobile
   tool_count: 8
-- capability_name: AT&T Wireless Messaging
-  capability_slug: wireless-messaging
-  capability_url: https://capabilities.apis.io/capabilities/atandt/wireless-messaging/
-  consumed_api_count: 1
-  operation_count: 4
-  provider_name: AT&T
-  provider_slug: atandt
-  tags:
-  - AT&T
-  - SMS
-  - Messaging
-  - Wireless
-  - OAuth
-  tool_count: 3
 - capability_name: Azure Service Bus Messaging Management
   capability_slug: messaging-management
   capability_url: https://capabilities.apis.io/capabilities/azure-service-bus/messaging-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Azure Service Bus
   provider_slug: azure-service-bus
@@ -123,24 +109,10 @@ implementations:
   - Messaging
   - Cloud Infrastructure
   tool_count: 6
-- capability_name: Bandwidth Communications Platform
-  capability_slug: communications-platform
-  capability_url: https://capabilities.apis.io/capabilities/bandwidth/communications-platform/
-  consumed_api_count: 6
-  operation_count: 3
-  provider_name: Bandwidth
-  provider_slug: bandwidth
-  tags:
-  - Bandwidth
-  - Voice
-  - Messaging
-  - Communications
-  - Telephony
-  tool_count: 12
 - capability_name: Facebook Messaging and Communication
   capability_slug: messaging-and-communication
   capability_url: https://capabilities.apis.io/capabilities/facebook/messaging-and-communication/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Facebook
   provider_slug: facebook
@@ -154,7 +126,7 @@ implementations:
 - capability_name: HubSpot Marketing Automation
   capability_slug: marketing-automation
   capability_url: https://capabilities.apis.io/capabilities/hubspot/marketing-automation/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 0
   provider_name: HubSpot
   provider_slug: hubspot
@@ -167,7 +139,7 @@ implementations:
 - capability_name: Microsoft Outlook Email Productivity
   capability_slug: email-productivity
   capability_url: https://capabilities.apis.io/capabilities/microsoft-outlook/email-productivity/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 17
   provider_name: Microsoft Outlook
   provider_slug: microsoft-outlook
@@ -181,7 +153,7 @@ implementations:
 - capability_name: PeopleSoft Portal And Communications
   capability_slug: portal-and-communications
   capability_url: https://capabilities.apis.io/capabilities/peoplesoft/portal-and-communications/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 7
   provider_name: PeopleSoft
   provider_slug: peoplesoft
@@ -196,7 +168,7 @@ implementations:
 - capability_name: Slack Messaging and Communication
   capability_slug: messaging-communication
   capability_url: https://capabilities.apis.io/capabilities/slack/messaging-communication/
-  consumed_api_count: 12
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Slack
   provider_slug: slack
@@ -209,7 +181,7 @@ implementations:
 - capability_name: WebSphere Messaging and Integration
   capability_slug: messaging-and-integration
   capability_url: https://capabilities.apis.io/capabilities/websphere/messaging-and-integration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: IBM WebSphere
   provider_slug: websphere
@@ -222,7 +194,7 @@ implementations:
 - capability_name: WhatsApp Messaging And Media
   capability_slug: messaging-and-media
   capability_url: https://capabilities.apis.io/capabilities/whatsapp/messaging-and-media/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: WhatsApp
   provider_slug: whatsapp
@@ -235,7 +207,7 @@ implementations:
   tool_count: 9
 layout: category
 name: Messaging
-provider_count: 16
+provider_count: 14
 related:
 - collaboration
 - customer-engagement

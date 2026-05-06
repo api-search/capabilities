@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- sync app
-- list apps
-- spec-driven integration
-- gitops
-- mcp
-- capabilities
 - naftiko
-- api integration
 - argo cd
-- governance
-- ai
+- gitops
+- list apps
 - bnp paribas
+- api integration
+- governance
+- spec-driven integration
+- ai
+- mcp
+- sync app
+- capabilities
 slug: bnp-gitops-argocd-capability
 source_filename: bnp-gitops-argocd-capability.yaml
 source_heading: Capability Spec

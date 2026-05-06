@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- opennlp
+consumed_apis: []
 description: End-to-end NLP processing workflow combining language detection, sentence detection, tokenization, POS tagging, NER, chunking, and parsing for comprehensive text analysis.
 layout: capability
 name: Apache OpenNLP NLP Pipeline Workflow
@@ -46,74 +45,74 @@ personas: []
 provider_name: Apache OpenNLP
 provider_slug: apache-opennlp
 search_terms:
-- detect document language
-- chunk
-- list models
-- java
-- split text into sentences
-- chunk text into phrases
-- full syntactic parsing
-- find entities
+- parse sentence
+- tag pos
+- detect the language of input text
+- tokenize
 - text processing
-- open source
 - classify a document into predefined categories
-- tag parts of speech
-- find named entities
-- sentence boundary detection
-- part-of-speech tagging
-- categorize document
-- find named entities (persons, locations, organizations) in text
 - natural language processing
-- chunk phrases
+- chunk
+- list available models
+- tokenize text into words and punctuation
+- chunk text into phrases
+- split text into sentences
+- tokenize text
+- java
+- find named entities (persons, locations, organizations) in text
+- tag parts of speech
+- named entity recognition
+- part-of-speech tagging
+- tokenization
+- full syntactic parsing
+- apache
 - language detection
+- chunk phrases
+- integrates opennlp into custom nlp pipelines and applications
+- parse
+- split text into individual sentences
+- find named entities
+- open source
+- document categorization
+- assign pos tags to each token in tokenized text
+- apache opennlp
+- machine learning
+- phrase chunking
+- identify noun phrases, verb phrases, and other chunks
 - end-to-end nlp processing pipeline
 - detect language
-- build a full parse tree for a sentence
-- uses nlp pipeline for text analysis and feature extraction
-- tag pos
-- apache opennlp
 - detect sentences
-- named entity recognition
-- phrase chunking
-- tokenization
-- Data Scientist
-- NLP Engineer
-- tokenize text
-- identify noun phrases, verb phrases, and other chunks
-- integrates opennlp into custom nlp pipelines and applications
-- document categorization
-- text analysis
-- parse
 - model management
-- detect the language of input text
-- assign pos tags to each token in tokenized text
-- lemmatize
-- machine learning
-- parse sentence structure
-- tokenize text into words and punctuation
-- reduce tokens to their base/lemma forms
-- parse sentence
-- list all available nlp models
-- list available models
-- Application Developer
-- information extraction
-- nlp
-- split text into individual sentences
-- apache
-- categorize
-- tokenize
+- list models
+- text analysis
+- build a full parse tree for a sentence
 - uses opennlp apis to add language processing capabilities to applications
+- Data Scientist
+- lemmatize
+- categorize
+- list all available nlp models
+- categorize document
+- Application Developer
+- parse sentence structure
+- sentence boundary detection
+- NLP Engineer
+- information extraction
+- find entities
+- reduce tokens to their base/lemma forms
+- uses nlp pipeline for text analysis and feature extraction
+- nlp
+- detect document language
 slug: nlp-pipeline-workflow
 source_filename: nlp-pipeline-workflow.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache OpenNLP NLP Pipeline Workflow\"\n  description: \"End-to-end NLP processing workflow combining language detection, sentence detection, tokenization, POS tagging, NER, chunking, and parsing for comprehensive text analysis.\"\n  tags:\n    - Apache OpenNLP\n    - Natural Language Processing\n    - Text Analysis\n    - Information Extraction\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENNLP_API_KEY: OPENNLP_API_KEY\n\ncapability:\n  consumes:\n    - import: opennlp\n      location: ./shared/opennlp-tools.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: nlp-pipeline-api\n      description: \"Unified REST API for NLP text processing pipeline.\"\n      resources:\n        - path: /v1/language\n          name: language-detection\n          description: \"Language detection\"\n          operations:\n            - method: POST\n              name:\
-  \ detect-language\n              description: \"Detect document language\"\n              call: \"opennlp.detectLanguage\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sentences\n          name: sentence-detection\n          description: \"Sentence boundary detection\"\n          operations:\n            - method: POST\n              name: detect-sentences\n              description: \"Split text into sentences\"\n              call: \"opennlp.detectSentences\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tokens\n          name: tokenization\n          description: \"Tokenization\"\n          operations:\n            - method: POST\n              name: tokenize\n              description: \"Tokenize text\"\n              call: \"opennlp.tokenize\"\n              outputParameters:\n                - type: object\n                  mapping:\
-  \ \"$.\"\n        - path: /v1/entities\n          name: named-entities\n          description: \"Named entity recognition\"\n          operations:\n            - method: POST\n              name: find-entities\n              description: \"Find named entities\"\n              call: \"opennlp.findNamedEntities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pos\n          name: pos-tags\n          description: \"Part-of-speech tagging\"\n          operations:\n            - method: POST\n              name: tag-pos\n              description: \"Tag parts of speech\"\n              call: \"opennlp.tagPartsOfSpeech\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/chunks\n          name: chunks\n          description: \"Phrase chunking\"\n          operations:\n            - method: POST\n              name: chunk\n              description: \"\
-  Chunk text into phrases\"\n              call: \"opennlp.chunkText\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/parse\n          name: parse-tree\n          description: \"Full syntactic parsing\"\n          operations:\n            - method: POST\n              name: parse\n              description: \"Parse sentence structure\"\n              call: \"opennlp.parseText\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/categories\n          name: categories\n          description: \"Document categorization\"\n          operations:\n            - method: POST\n              name: categorize\n              description: \"Categorize document\"\n              call: \"opennlp.categorizeDocument\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/models\n          name: models\n\
-  \          description: \"Model management\"\n          operations:\n            - method: GET\n              name: list-models\n              description: \"List available models\"\n              call: \"opennlp.listModels\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: nlp-pipeline-mcp\n      transport: http\n      description: \"MCP server for AI-assisted NLP text processing.\"\n      tools:\n        - name: detect-language\n          description: \"Detect the language of input text\"\n          hints:\n            readOnly: true\n          call: \"opennlp.detectLanguage\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: detect-sentences\n          description: \"Split text into individual sentences\"\n          hints:\n            readOnly: true\n          call: \"opennlp.detectSentences\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: tokenize\n          description: \"Tokenize text into words and punctuation\"\n          hints:\n            readOnly: true\n          call: \"opennlp.tokenize\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: find-named-entities\n          description: \"Find named entities (persons, locations, organizations) in text\"\n          hints:\n            readOnly: true\n          call: \"opennlp.findNamedEntities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: tag-parts-of-speech\n          description: \"Assign POS tags to each token in tokenized text\"\n          hints:\n            readOnly: true\n          call: \"opennlp.tagPartsOfSpeech\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lemmatize\n          description: \"Reduce tokens to their\
-  \ base/lemma forms\"\n          hints:\n            readOnly: true\n          call: \"opennlp.lemmatize\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: chunk-phrases\n          description: \"Identify noun phrases, verb phrases, and other chunks\"\n          hints:\n            readOnly: true\n          call: \"opennlp.chunkText\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: parse-sentence\n          description: \"Build a full parse tree for a sentence\"\n          hints:\n            readOnly: true\n          call: \"opennlp.parseText\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: categorize-document\n          description: \"Classify a document into predefined categories\"\n          hints:\n            readOnly: true\n          call: \"opennlp.categorizeDocument\"\n          outputParameters:\n           \
-  \ - type: object\n              mapping: \"$.\"\n        - name: list-models\n          description: \"List all available NLP models\"\n          hints:\n            readOnly: true\n          call: \"opennlp.listModels\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Apache OpenNLP NLP Pipeline Workflow\n  description: End-to-end NLP processing workflow combining language detection, sentence detection, tokenization, POS tagging,\n    NER, chunking, and parsing for comprehensive text analysis.\n  tags:\n  - Apache OpenNLP\n  - Natural Language Processing\n  - Text Analysis\n  - Information Extraction\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    OPENNLP_API_KEY: OPENNLP_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: opennlp\n    baseUri: https://localhost:8080/opennlp\n    description: Apache OpenNLP REST API\n    resources:\n    - name: language-detection\n      path: /detect/language\n      description: Language detection\n      operations:\n      - name: detectLanguage\n        method: POST\n        description: Detect the language of input text\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n     \
+  \     type: object\n          value: $.\n    - name: sentence-detection\n      path: /detect/sentences\n      description: Sentence boundary detection\n      operations:\n      - name: detectSentences\n        method: POST\n        description: Split text into sentences\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: tokenization\n      path: /tokenize\n      description: Text tokenization\n      operations:\n      - name: tokenize\n        method: POST\n        description: Tokenize text into individual tokens\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: named-entity-recognition\n      path: /ner\n      description: Named entity recognition\n      operations:\n      - name: findNamedEntities\n        method: POST\n        description: Find named entities in tokenized text\n        outputRawFormat: json\n\
+  \        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: pos-tagging\n      path: /pos/tag\n      description: Part-of-speech tagging\n      operations:\n      - name: tagPartsOfSpeech\n        method: POST\n        description: Assign POS tags to tokens\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: nlp-pipeline-api\n    description: Unified REST API for NLP text processing pipeline.\n    resources:\n    - path: /v1/language\n      name: language-detection\n      description: Language detection\n      operations:\n      - method: POST\n        name: detect-language\n        description: Detect document language\n        call: opennlp.detectLanguage\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/sentences\n      name: sentence-detection\n      description:\
+  \ Sentence boundary detection\n      operations:\n      - method: POST\n        name: detect-sentences\n        description: Split text into sentences\n        call: opennlp.detectSentences\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/tokens\n      name: tokenization\n      description: Tokenization\n      operations:\n      - method: POST\n        name: tokenize\n        description: Tokenize text\n        call: opennlp.tokenize\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/entities\n      name: named-entities\n      description: Named entity recognition\n      operations:\n      - method: POST\n        name: find-entities\n        description: Find named entities\n        call: opennlp.findNamedEntities\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/pos\n      name: pos-tags\n      description: Part-of-speech tagging\n      operations:\n      - method:\
+  \ POST\n        name: tag-pos\n        description: Tag parts of speech\n        call: opennlp.tagPartsOfSpeech\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/chunks\n      name: chunks\n      description: Phrase chunking\n      operations:\n      - method: POST\n        name: chunk\n        description: Chunk text into phrases\n        call: opennlp.chunkText\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/parse\n      name: parse-tree\n      description: Full syntactic parsing\n      operations:\n      - method: POST\n        name: parse\n        description: Parse sentence structure\n        call: opennlp.parseText\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/categories\n      name: categories\n      description: Document categorization\n      operations:\n      - method: POST\n        name: categorize\n        description: Categorize document\n      \
+  \  call: opennlp.categorizeDocument\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/models\n      name: models\n      description: Model management\n      operations:\n      - method: GET\n        name: list-models\n        description: List available models\n        call: opennlp.listModels\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: nlp-pipeline-mcp\n    transport: http\n    description: MCP server for AI-assisted NLP text processing.\n    tools:\n    - name: detect-language\n      description: Detect the language of input text\n      hints:\n        readOnly: true\n      call: opennlp.detectLanguage\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: detect-sentences\n      description: Split text into individual sentences\n      hints:\n        readOnly: true\n      call: opennlp.detectSentences\n      outputParameters:\n      - type:\
+  \ object\n        mapping: $.\n    - name: tokenize\n      description: Tokenize text into words and punctuation\n      hints:\n        readOnly: true\n      call: opennlp.tokenize\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: find-named-entities\n      description: Find named entities (persons, locations, organizations) in text\n      hints:\n        readOnly: true\n      call: opennlp.findNamedEntities\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tag-parts-of-speech\n      description: Assign POS tags to each token in tokenized text\n      hints:\n        readOnly: true\n      call: opennlp.tagPartsOfSpeech\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lemmatize\n      description: Reduce tokens to their base/lemma forms\n      hints:\n        readOnly: true\n      call: opennlp.lemmatize\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: chunk-phrases\n\
+  \      description: Identify noun phrases, verb phrases, and other chunks\n      hints:\n        readOnly: true\n      call: opennlp.chunkText\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: parse-sentence\n      description: Build a full parse tree for a sentence\n      hints:\n        readOnly: true\n      call: opennlp.parseText\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: categorize-document\n      description: Classify a document into predefined categories\n      hints:\n        readOnly: true\n      call: opennlp.categorizeDocument\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-models\n      description: List all available NLP models\n      hints:\n        readOnly: true\n      call: opennlp.listModels\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-opennlp/refs/heads/main/capabilities/nlp-pipeline-workflow.yaml
 tags:
 - Apache OpenNLP

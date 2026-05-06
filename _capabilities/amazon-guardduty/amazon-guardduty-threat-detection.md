@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: amazon-guardduty-openapi.yml
-  format: yaml
-  label: amazon-guardduty
-  slug: amazon-guardduty
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/amazon-guardduty/refs/heads/main/openapi/amazon-guardduty-openapi.yml
 categories: []
-consumed_apis:
-- amazon-guardduty
+consumed_apis: []
 description: Workflow capability for security teams using Amazon GuardDuty for AWS threat detection and response. Covers finding management, detector configuration, threat intelligence integration, and automated response workflows.
 layout: capability
 name: Amazon GuardDuty Threat Detection
@@ -41,69 +33,71 @@ personas: []
 provider_name: Amazon GuardDuty
 provider_slug: amazon-guardduty
 search_terms:
-- list threat findings
-- finding suppression filters
-- incident response
-- create a finding filter
+- threat findings from guardduty analysis
+- get finding details
 - aws
-- anomaly detection
-- security
-- list active threat findings detected by guardduty with severity filters
 - archive findings
+- list trusted ip sets
+- list detectors
+- list threat intel sets
+- monitors security alerts and manages threat response workflows
 - archive reviewed findings
+- list threat findings
+- compliance
+- create trusted ip set
+- monitoring
+- anomaly detection
+- get detailed information about specific threat findings including full context
+- security
+- get detector status
+- list all finding suppression filters
+- list member accounts monitored by this guardduty administrator account
+- machine learning
+- list active threat findings detected by guardduty with severity filters
+- amazon guardduty
+- list threat intelligence sets used for enhanced detection
+- threat intelligence feeds
+- security operations
 - list all guardduty detectors
 - list threat intelligence sets
 - create finding filter
-- list threat intel sets
-- list members
-- list trusted ip sets
-- create a trusted ip set to exclude known safe ips from alerts
-- list all active guardduty detectors across the account
-- list findings
-- threat detection
-- create trusted ip set
-- threat intelligence feeds
-- get the configuration and status of a guardduty detector
-- monitors security alerts and manages threat response workflows
-- list trusted ip address sets excluded from threat detection
-- guardduty detector management
-- investigates and responds to threat findings from guardduty
-- list member accounts monitored by this guardduty administrator account
-- Security Analyst
-- security operations
-- enable guardduty for an account
-- machine learning
-- get detector status
-- list detectors
-- amazon guardduty
-- get detailed information about specific threat findings including full context
-- list finding filters
 - get finding statistics and severity counts for security posture overview
+- create a trusted ip set to exclude known safe ips from alerts
+- threat detection
 - SOC Engineer
-- monitoring
-- get findings statistics
-- compliance
-- list threat intelligence sets used for enhanced detection
-- Cloud Security Engineer
-- get finding details
+- investigates and responds to threat findings from guardduty
 - configures guardduty detectors and threat intelligence feeds
-- create a suppression filter to reduce noise from benign findings
-- create filter
-- list all finding suppression filters
+- list finding filters
 - create detector
-- threat findings from guardduty analysis
+- guardduty detector management
+- create filter
+- list trusted ip address sets excluded from threat detection
 - archive threat findings that have been reviewed and resolved
+- Security Analyst
+- Cloud Security Engineer
+- list findings
+- incident response
+- create a finding filter
+- list members
+- finding suppression filters
+- get findings statistics
+- create a suppression filter to reduce noise from benign findings
+- get the configuration and status of a guardduty detector
+- enable guardduty for an account
+- list all active guardduty detectors across the account
 slug: amazon-guardduty-threat-detection
 source_filename: amazon-guardduty-threat-detection.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon GuardDuty Threat Detection\n  description: >-\n    Workflow capability for security teams using Amazon GuardDuty for AWS threat\n    detection and response. Covers finding management, detector configuration,\n    threat intelligence integration, and automated response workflows.\n  tags:\n    - Amazon GuardDuty\n    - Threat Detection\n    - Security Operations\n    - Incident Response\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-guardduty\n      location: ./shared/amazon-guardduty.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: guardduty-threat-detection-api\n      description: Unified REST API for Amazon GuardDuty threat detection operations.\n      resources:\n\
-  \        - path: /v1/detectors\n          name: detectors\n          description: GuardDuty detector management\n          operations:\n            - method: GET\n              name: list-detectors\n              description: List all GuardDuty detectors\n              call: amazon-guardduty.ListDetectors\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-detector\n              description: Enable GuardDuty for an account\n              call: amazon-guardduty.CreateDetector\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/findings\n          name: findings\n          description: Threat findings from GuardDuty analysis\n          operations:\n            - method: GET\n              name: list-findings\n              description: List threat findings\n              call: amazon-guardduty.ListFindings\n        \
-  \      outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: archive-findings\n              description: Archive reviewed findings\n              call: amazon-guardduty.ArchiveFindings\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/filters\n          name: filters\n          description: Finding suppression filters\n          operations:\n            - method: POST\n              name: create-filter\n              description: Create a finding filter\n              call: amazon-guardduty.CreateFilter\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/threat-intel\n          name: threat-intel\n          description: Threat intelligence feeds\n          operations:\n            - method: GET\n              name: list-threat-intel-sets\n              description: List\
-  \ threat intelligence sets\n              call: amazon-guardduty.ListThreatIntelSets\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9095\n      namespace: guardduty-threat-detection-mcp\n      transport: http\n      description: MCP server for AI-assisted Amazon GuardDuty threat detection and response.\n      tools:\n        - name: list-detectors\n          description: List all active GuardDuty detectors across the account\n          hints:\n            readOnly: true\n            openWorld: true\n          call: amazon-guardduty.ListDetectors\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-detector-status\n          description: Get the configuration and status of a GuardDuty detector\n          hints:\n            readOnly: true\n          call: amazon-guardduty.GetDetector\n          outputParameters:\n            - type: object\n      \
-  \        mapping: \"$.\"\n        - name: list-threat-findings\n          description: List active threat findings detected by GuardDuty with severity filters\n          hints:\n            readOnly: true\n          call: amazon-guardduty.ListFindings\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-finding-details\n          description: Get detailed information about specific threat findings including full context\n          hints:\n            readOnly: true\n          call: amazon-guardduty.GetFindings\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: archive-findings\n          description: Archive threat findings that have been reviewed and resolved\n          hints:\n            readOnly: false\n          call: amazon-guardduty.ArchiveFindings\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-finding-filter\n\
-  \          description: Create a suppression filter to reduce noise from benign findings\n          hints:\n            readOnly: false\n          call: amazon-guardduty.CreateFilter\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-finding-filters\n          description: List all finding suppression filters\n          hints:\n            readOnly: true\n          call: amazon-guardduty.ListFilters\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-trusted-ip-sets\n          description: List trusted IP address sets excluded from threat detection\n          hints:\n            readOnly: true\n          call: amazon-guardduty.ListIPSets\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-trusted-ip-set\n          description: Create a trusted IP set to exclude known safe IPs from alerts\n          hints:\n    \
-  \        readOnly: false\n          call: amazon-guardduty.CreateIPSet\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-threat-intel-sets\n          description: List threat intelligence sets used for enhanced detection\n          hints:\n            readOnly: true\n          call: amazon-guardduty.ListThreatIntelSets\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-findings-statistics\n          description: Get finding statistics and severity counts for security posture overview\n          hints:\n            readOnly: true\n          call: amazon-guardduty.GetFindingsStatistics\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-members\n          description: List member accounts monitored by this GuardDuty administrator account\n          hints:\n            readOnly: true\n          call: amazon-guardduty.ListMembers\n\
-  \          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon GuardDuty Threat Detection\n  description: Workflow capability for security teams using Amazon GuardDuty for AWS threat detection and response. Covers\n    finding management, detector configuration, threat intelligence integration, and automated response workflows.\n  tags:\n  - Amazon GuardDuty\n  - Threat Detection\n  - Security Operations\n  - Incident Response\n  - AWS\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - type: http\n    namespace: amazon-guardduty\n    baseUri: https://guardduty.amazonaws.com\n    description: Amazon GuardDuty Threat Detection API\n    authentication:\n      type: bearer\n      token: '{{AWS_AUTH_HEADER}}'\n    resources:\n    - name: detectors\n      path: /detector\n      description: GuardDuty detector management\n\
+  \      operations:\n      - name: ListDetectors\n        method: GET\n        description: List all GuardDuty detectors\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: CreateDetector\n        method: POST\n        description: Create a GuardDuty detector\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: GetDetector\n        method: GET\n        description: Get detector details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: findings\n      path: /detector/{detectorId}/findings\n      description: Threat finding management\n      operations:\n      - name: ListFindings\n        method: POST\n        description: List threat findings for a detector\n        outputRawFormat: json\n        outputParameters:\n      \
+  \  - name: result\n          type: object\n          value: $.\n      - name: GetFindings\n        method: POST\n        description: Get details of specific findings\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: ArchiveFindings\n        method: POST\n        description: Archive findings that have been reviewed\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: filters\n      path: /detector/{detectorId}/filter\n      description: Finding filter management\n      operations:\n      - name: ListFilters\n        method: GET\n        description: List finding filters\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: CreateFilter\n        method: POST\n        description: Create a finding filter\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: ip-sets\n      path: /detector/{detectorId}/ipset\n      description: Trusted IP set management\n      operations:\n      - name: ListIPSets\n        method: GET\n        description: List trusted IP sets\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: CreateIPSet\n        method: POST\n        description: Create a trusted IP set\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: threat-intel\n      path: /detector/{detectorId}/threatintelset\n      description: Threat intelligence set management\n      operations:\n      - name: ListThreatIntelSets\n        method: GET\n        description: List threat intelligence sets\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8085\n    namespace: guardduty-threat-detection-api\n    description: Unified REST API for Amazon GuardDuty threat detection operations.\n    resources:\n    - path: /v1/detectors\n      name: detectors\n      description: GuardDuty detector management\n      operations:\n      - method: GET\n        name: list-detectors\n        description: List all GuardDuty detectors\n        call: amazon-guardduty.ListDetectors\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-detector\n        description: Enable GuardDuty for an account\n        call: amazon-guardduty.CreateDetector\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/findings\n      name: findings\n      description: Threat findings from GuardDuty analysis\n      operations:\n      - method: GET\n        name: list-findings\n      \
+  \  description: List threat findings\n        call: amazon-guardduty.ListFindings\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: archive-findings\n        description: Archive reviewed findings\n        call: amazon-guardduty.ArchiveFindings\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/filters\n      name: filters\n      description: Finding suppression filters\n      operations:\n      - method: POST\n        name: create-filter\n        description: Create a finding filter\n        call: amazon-guardduty.CreateFilter\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/threat-intel\n      name: threat-intel\n      description: Threat intelligence feeds\n      operations:\n      - method: GET\n        name: list-threat-intel-sets\n        description: List threat intelligence sets\n        call: amazon-guardduty.ListThreatIntelSets\n     \
+  \   outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9095\n    namespace: guardduty-threat-detection-mcp\n    transport: http\n    description: MCP server for AI-assisted Amazon GuardDuty threat detection and response.\n    tools:\n    - name: list-detectors\n      description: List all active GuardDuty detectors across the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: amazon-guardduty.ListDetectors\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-detector-status\n      description: Get the configuration and status of a GuardDuty detector\n      hints:\n        readOnly: true\n      call: amazon-guardduty.GetDetector\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-threat-findings\n      description: List active threat findings detected by GuardDuty with severity filters\n      hints:\n        readOnly: true\n      call: amazon-guardduty.ListFindings\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-finding-details\n      description: Get detailed information about specific threat findings including full context\n      hints:\n        readOnly: true\n      call: amazon-guardduty.GetFindings\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: archive-findings\n      description: Archive threat findings that have been reviewed and resolved\n      hints:\n        readOnly: false\n      call: amazon-guardduty.ArchiveFindings\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-finding-filter\n      description: Create a suppression filter to reduce noise from benign findings\n      hints:\n        readOnly: false\n      call: amazon-guardduty.CreateFilter\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-finding-filters\n      description: List all finding suppression filters\n      hints:\n        readOnly:\
+  \ true\n      call: amazon-guardduty.ListFilters\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-trusted-ip-sets\n      description: List trusted IP address sets excluded from threat detection\n      hints:\n        readOnly: true\n      call: amazon-guardduty.ListIPSets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-trusted-ip-set\n      description: Create a trusted IP set to exclude known safe IPs from alerts\n      hints:\n        readOnly: false\n      call: amazon-guardduty.CreateIPSet\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-threat-intel-sets\n      description: List threat intelligence sets used for enhanced detection\n      hints:\n        readOnly: true\n      call: amazon-guardduty.ListThreatIntelSets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-findings-statistics\n      description: Get finding statistics and severity\
+  \ counts for security posture overview\n      hints:\n        readOnly: true\n      call: amazon-guardduty.GetFindingsStatistics\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-members\n      description: List member accounts monitored by this GuardDuty administrator account\n      hints:\n        readOnly: true\n      call: amazon-guardduty.ListMembers\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-guardduty/refs/heads/main/capabilities/amazon-guardduty-threat-detection.yaml
 tags:
 - Amazon GuardDuty

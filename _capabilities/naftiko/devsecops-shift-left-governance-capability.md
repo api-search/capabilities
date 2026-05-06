@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- devsecops
-- list pulls
-- mcp
-- capabilities
-- shift-left
 - naftiko
+- devsecops
+- shift-left
 - scan pr
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
+- list pulls
 slug: devsecops-shift-left-governance-capability
 source_filename: devsecops-shift-left-governance-capability.yaml
 source_heading: Capability Spec

@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: tomcat-manager-openapi.yml
-  format: yaml
-  label: tomcat
-  slug: tomcat
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/tomcat/refs/heads/main/openapi/tomcat-manager-openapi.yml
 categories: []
-consumed_apis:
-- tomcat
+consumed_apis: []
 description: Unified capability for deploying, managing, and monitoring Java web applications on Apache Tomcat. Covers application deployment, lifecycle management (start/stop/reload), session management, server diagnostics, SSL configuration, and JMX access.
 layout: capability
 name: Apache Tomcat Application Management
@@ -45,50 +37,52 @@ personas: []
 provider_name: Apache Tomcat
 provider_slug: tomcat
 search_terms:
-- get apache tomcat server os, jvm, and version information
-- apache tomcat
 - get thread dump
-- get jvm memory and system info
-- start a stopped web application on tomcat
-- jvm information
-- stop a running web application on tomcat (makes it unavailable)
-- application server
+- java
+- get server info
+- list all deployed web applications
+- devops
 - start a stopped application
-- open source
-- get vm info
 - get server os and jvm information
 - list all deployed web applications on apache tomcat
-- servlet container
-- server information
-- list all deployed web applications
-- get jvm memory usage and system properties from apache tomcat
-- devops
-- web application listing
-- start application
-- list applications
-- thread dump
-- get a full jvm thread dump from apache tomcat for diagnostics
-- stop a running application
-- reload an application
-- stop application
 - deployment
-- reload a tomcat application to pick up web-inf/classes and lib changes
-- web server
-- reload application
 - apache
+- thread dump
+- get jvm memory and system info
+- open source
+- get a full jvm thread dump from apache tomcat for diagnostics
+- reload a tomcat application to pick up web-inf/classes and lib changes
+- web application listing
+- get jvm memory usage and system properties from apache tomcat
+- start a stopped web application on tomcat
+- web server
 - get jvm thread dump
-- get server info
-- java
+- application server
+- get vm info
+- stop a running application
+- apache tomcat
+- reload application
+- jvm information
+- servlet container
+- get apache tomcat server os, jvm, and version information
+- start application
+- server information
+- list applications
+- stop application
+- reload an application
+- stop a running web application on tomcat (makes it unavailable)
 slug: application-management
 source_filename: application-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apache Tomcat Application Management\"\n  description: >-\n    Unified capability for deploying, managing, and monitoring Java web applications\n    on Apache Tomcat. Covers application deployment, lifecycle management (start/stop/reload),\n    session management, server diagnostics, SSL configuration, and JMX access.\n  tags:\n    - Apache Tomcat\n    - Java\n    - Application Server\n    - DevOps\n    - Deployment\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      TOMCAT_USERNAME: TOMCAT_USERNAME\n      TOMCAT_PASSWORD: TOMCAT_PASSWORD\n      TOMCAT_BASE_URL: TOMCAT_BASE_URL\n\ncapability:\n  consumes:\n    - import: tomcat\n      location: ./shared/tomcat-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: tomcat-management-api\n      description: \"Unified REST API for Tomcat application deployment and management.\"\n      resources:\n        -\
-  \ path: /v1/applications\n          name: applications\n          description: \"Web application listing\"\n          operations:\n            - method: GET\n              name: list-applications\n              description: \"List all deployed web applications\"\n              call: \"tomcat.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications/start\n          name: application-start\n          description: \"Start application\"\n          operations:\n            - method: POST\n              name: start-application\n              description: \"Start a stopped application\"\n              call: \"tomcat.start-application\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications/stop\n          name: application-stop\n          description: \"Stop application\"\
-  \n          operations:\n            - method: POST\n              name: stop-application\n              description: \"Stop a running application\"\n              call: \"tomcat.stop-application\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/applications/reload\n          name: application-reload\n          description: \"Reload application\"\n          operations:\n            - method: POST\n              name: reload-application\n              description: \"Reload an application\"\n              call: \"tomcat.reload-application\"\n              with:\n                path: \"rest.path\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diagnostics/server-info\n          name: server-info\n          description: \"Server information\"\n          operations:\n            - method:\
-  \ GET\n              name: get-server-info\n              description: \"Get server OS and JVM information\"\n              call: \"tomcat.get-server-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diagnostics/thread-dump\n          name: thread-dump\n          description: \"Thread dump\"\n          operations:\n            - method: GET\n              name: get-thread-dump\n              description: \"Get JVM thread dump\"\n              call: \"tomcat.get-thread-dump\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/diagnostics/vm-info\n          name: vm-info\n          description: \"JVM information\"\n          operations:\n            - method: GET\n              name: get-vm-info\n              description: \"Get JVM memory and system info\"\n              call: \"tomcat.get-vm-info\"\n              outputParameters:\n       \
-  \         - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: tomcat-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Tomcat application management.\"\n      tools:\n        - name: list-applications\n          description: \"List all deployed web applications on Apache Tomcat\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"tomcat.list-applications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-application\n          description: \"Start a stopped web application on Tomcat\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"tomcat.start-application\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name:\
-  \ stop-application\n          description: \"Stop a running web application on Tomcat (makes it unavailable)\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"tomcat.stop-application\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: reload-application\n          description: \"Reload a Tomcat application to pick up WEB-INF/classes and lib changes\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"tomcat.reload-application\"\n          with:\n            path: \"tools.path\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-server-info\n          description: \"Get Apache Tomcat server OS, JVM, and version information\"\n          hints:\n            readOnly: true\n\
-  \            openWorld: false\n          call: \"tomcat.get-server-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-thread-dump\n          description: \"Get a full JVM thread dump from Apache Tomcat for diagnostics\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"tomcat.get-thread-dump\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-vm-info\n          description: \"Get JVM memory usage and system properties from Apache Tomcat\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"tomcat.get-vm-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Apache Tomcat Application Management\n  description: Unified capability for deploying, managing, and monitoring Java web applications on Apache Tomcat. Covers application\n    deployment, lifecycle management (start/stop/reload), session management, server diagnostics, SSL configuration, and JMX\n    access.\n  tags:\n  - Apache Tomcat\n  - Java\n  - Application Server\n  - DevOps\n  - Deployment\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    TOMCAT_USERNAME: TOMCAT_USERNAME\n    TOMCAT_PASSWORD: TOMCAT_PASSWORD\n    TOMCAT_BASE_URL: TOMCAT_BASE_URL\ncapability:\n  consumes:\n  - type: http\n    namespace: tomcat\n    baseUri: '{{TOMCAT_BASE_URL}}/manager'\n    description: Apache Tomcat Manager text interface\n    authentication:\n      type: basic\n      username: '{{TOMCAT_USERNAME}}'\n      password: '{{TOMCAT_PASSWORD}}'\n    resources:\n    - name: applications\n      path: /text\n    \
+  \  description: Web application lifecycle management\n      operations:\n      - name: list-applications\n        method: GET\n        description: List all deployed applications\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: start-application\n        method: GET\n        description: Start a stopped web application\n        inputParameters:\n        - name: path\n          in: query\n          type: string\n          required: true\n          description: Application context path\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: stop-application\n        method: GET\n        description: Stop a running web application\n        inputParameters:\n        - name: path\n          in: query\n          type: string\n          required: true\n          description: Application context\
+  \ path\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: reload-application\n        method: GET\n        description: Reload a web application\n        inputParameters:\n        - name: path\n          in: query\n          type: string\n          required: true\n          description: Application context path\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: undeploy-application\n        method: GET\n        description: Undeploy a web application\n        inputParameters:\n        - name: path\n          in: query\n          type: string\n          required: true\n          description: Application context path\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: diagnostics\n      path: /text\n      description: Server\
+  \ diagnostics\n      operations:\n      - name: get-server-info\n        method: GET\n        description: Get server OS, JVM, and version information\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-thread-dump\n        method: GET\n        description: Get full JVM thread dump\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-vm-info\n        method: GET\n        description: Get JVM memory and system properties\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: tomcat-management-api\n    description: Unified REST API for Tomcat application deployment and management.\n    resources:\n\
+  \    - path: /v1/applications\n      name: applications\n      description: Web application listing\n      operations:\n      - method: GET\n        name: list-applications\n        description: List all deployed web applications\n        call: tomcat.list-applications\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/applications/start\n      name: application-start\n      description: Start application\n      operations:\n      - method: POST\n        name: start-application\n        description: Start a stopped application\n        call: tomcat.start-application\n        with:\n          path: rest.path\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/applications/stop\n      name: application-stop\n      description: Stop application\n      operations:\n      - method: POST\n        name: stop-application\n        description: Stop a running application\n        call: tomcat.stop-application\n      \
+  \  with:\n          path: rest.path\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/applications/reload\n      name: application-reload\n      description: Reload application\n      operations:\n      - method: POST\n        name: reload-application\n        description: Reload an application\n        call: tomcat.reload-application\n        with:\n          path: rest.path\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/diagnostics/server-info\n      name: server-info\n      description: Server information\n      operations:\n      - method: GET\n        name: get-server-info\n        description: Get server OS and JVM information\n        call: tomcat.get-server-info\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/diagnostics/thread-dump\n      name: thread-dump\n      description: Thread dump\n      operations:\n      - method: GET\n        name: get-thread-dump\n\
+  \        description: Get JVM thread dump\n        call: tomcat.get-thread-dump\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/diagnostics/vm-info\n      name: vm-info\n      description: JVM information\n      operations:\n      - method: GET\n        name: get-vm-info\n        description: Get JVM memory and system info\n        call: tomcat.get-vm-info\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: tomcat-management-mcp\n    transport: http\n    description: MCP server for AI-assisted Apache Tomcat application management.\n    tools:\n    - name: list-applications\n      description: List all deployed web applications on Apache Tomcat\n      hints:\n        readOnly: true\n        openWorld: false\n      call: tomcat.list-applications\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-application\n      description: Start a stopped\
+  \ web application on Tomcat\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: tomcat.start-application\n      with:\n        path: tools.path\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-application\n      description: Stop a running web application on Tomcat (makes it unavailable)\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: tomcat.stop-application\n      with:\n        path: tools.path\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: reload-application\n      description: Reload a Tomcat application to pick up WEB-INF/classes and lib changes\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: tomcat.reload-application\n      with:\n        path: tools.path\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-server-info\n\
+  \      description: Get Apache Tomcat server OS, JVM, and version information\n      hints:\n        readOnly: true\n        openWorld: false\n      call: tomcat.get-server-info\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-thread-dump\n      description: Get a full JVM thread dump from Apache Tomcat for diagnostics\n      hints:\n        readOnly: true\n        openWorld: false\n      call: tomcat.get-thread-dump\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-vm-info\n      description: Get JVM memory usage and system properties from Apache Tomcat\n      hints:\n        readOnly: true\n        openWorld: false\n      call: tomcat.get-vm-info\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/tomcat/refs/heads/main/capabilities/application-management.yaml
 tags:
 - Apache Tomcat

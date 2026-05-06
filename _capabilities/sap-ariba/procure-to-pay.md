@@ -1,8 +1,7 @@
 ---
 categories:
 - procurement-supply-chain
-consumed_apis:
-- procurement
+consumed_apis: []
 description: Unified procure-to-pay capability combining purchase orders, invoices, requisitions, suppliers, and receipts. Used by procurement teams and AP automation workflows.
 layout: capability
 name: SAP Ariba Procure-to-Pay
@@ -19,57 +18,63 @@ personas: []
 provider_name: SAP Ariba
 provider_slug: sap-ariba
 search_terms:
-- reject invoice
-- get requisition details
-- list requisitions
-- update purchase order
-- create a purchase order
-- list suppliers
-- get purchase order
-- get invoice details
-- list line items for an order
-- list purchase orders
-- create invoice
-- get requisition
-- create a requisition
-- list invoices
-- create requisition
-- cancel a purchase order
-- procurement
-- list line items
-- ariba
-- get invoice
-- create an invoice
-- create a receipt
-- supply chain
-- b2b
-- approve an invoice for payment
-- get supplier profile
-- approve invoice
-- create purchase order
-- update a purchase order
 - list receipts
-- spend analysis
 - cancel purchase order
-- reject an invoice
-- contract management
+- approve an invoice for payment
+- update purchase order
+- get invoice details
+- update a purchase order
 - purchase order management
-- list receipts for an order
-- sap
+- approve invoice
 - get purchase order details
-- get supplier
-- create receipt
-- supplier management
-- sourcing
+- get invoice
+- get purchase order
+- reject invoice
+- list requisitions
+- list line items
+- create a requisition
 - procure-to-pay
+- get requisition details
+- contract management
+- b2b
+- create purchase order
+- get supplier
+- create invoice
+- supply chain
+- get supplier profile
+- create receipt
+- list suppliers
+- cancel a purchase order
+- spend analysis
+- supplier management
+- sap
+- create a purchase order
+- get requisition
+- list receipts for an order
+- list line items for an order
+- ariba
+- create a receipt
+- create requisition
+- list invoices
+- create an invoice
+- list purchase orders
+- reject an invoice
+- sourcing
+- procurement
 slug: procure-to-pay
 source_filename: procure-to-pay.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"SAP Ariba Procure-to-Pay\"\n  description: \"Unified procure-to-pay capability combining purchase orders, invoices, requisitions, suppliers, and receipts. Used by procurement teams and AP automation workflows.\"\n  tags: [SAP, Ariba, Procurement, Procure-to-Pay]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      ARIBA_OAUTH_TOKEN: ARIBA_OAUTH_TOKEN\ncapability:\n  consumes:\n    - import: procurement\n      location: ./shared/procurement.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: procure-to-pay-api\n      description: \"Unified REST API for SAP Ariba procure-to-pay operations.\"\n      resources:\n        - path: /v1/purchase-orders\n          name: purchase-orders\n          description: \"Purchase order management\"\n          operations:\n            - { method: GET, name: list-purchase-orders, description: \"List purchase orders\", call: \"procurement.list-purchase-orders\"\
-  , outputParameters: [{ type: object, mapping: \"$.\" }] }\n            - { method: POST, name: create-purchase-order, description: \"Create a purchase order\", call: \"procurement.create-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: procure-to-pay-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SAP Ariba procure-to-pay operations.\"\n      tools:\n        - { name: list-purchase-orders, description: \"List purchase orders\", hints: { readOnly: true, openWorld: true }, call: \"procurement.list-purchase-orders\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-purchase-order, description: \"Get purchase order details\", hints: { readOnly: true }, call: \"procurement.get-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-purchase-order, description: \"Create a purchase order\", call: \"procurement.create-purchase-order\"\
-  , outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: update-purchase-order, description: \"Update a purchase order\", call: \"procurement.update-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: cancel-purchase-order, description: \"Cancel a purchase order\", hints: { destructive: true }, call: \"procurement.cancel-purchase-order\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-line-items, description: \"List line items for an order\", hints: { readOnly: true }, call: \"procurement.list-line-items\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-invoices, description: \"List invoices\", hints: { readOnly: true, openWorld: true }, call: \"procurement.list-invoices\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-invoice, description: \"Get invoice details\", hints: { readOnly: true }, call: \"procurement.get-invoice\", outputParameters:\
-  \ [{ type: object, mapping: \"$.\" }] }\n        - { name: create-invoice, description: \"Create an invoice\", call: \"procurement.create-invoice\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: approve-invoice, description: \"Approve an invoice for payment\", call: \"procurement.approve-invoice\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: reject-invoice, description: \"Reject an invoice\", call: \"procurement.reject-invoice\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-suppliers, description: \"List suppliers\", hints: { readOnly: true, openWorld: true }, call: \"procurement.list-suppliers\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-supplier, description: \"Get supplier profile\", hints: { readOnly: true }, call: \"procurement.get-supplier\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-requisitions, description: \"\
-  List requisitions\", hints: { readOnly: true }, call: \"procurement.list-requisitions\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-requisition, description: \"Create a requisition\", call: \"procurement.create-requisition\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-requisition, description: \"Get requisition details\", hints: { readOnly: true }, call: \"procurement.get-requisition\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-receipts, description: \"List receipts for an order\", hints: { readOnly: true }, call: \"procurement.list-receipts\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: create-receipt, description: \"Create a receipt\", call: \"procurement.create-receipt\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: SAP Ariba Procure-to-Pay\n  description: Unified procure-to-pay capability combining purchase orders, invoices, requisitions, suppliers, and receipts.\n    Used by procurement teams and AP automation workflows.\n  tags:\n  - SAP\n  - Ariba\n  - Procurement\n  - Procure-to-Pay\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    ARIBA_OAUTH_TOKEN: ARIBA_OAUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: procurement\n    baseUri: https://openapi.ariba.com/api/procurement/v1\n    description: SAP Ariba Procurement API for procure-to-pay lifecycle.\n    authentication:\n      type: bearer\n      token: '{{ARIBA_OAUTH_TOKEN}}'\n    resources:\n    - name: orders\n      path: /orders\n      description: Purchase order operations\n      operations:\n      - name: list-purchase-orders\n        method: GET\n        description: List purchase orders\n        outputRawFormat: json\n       \
+  \ outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-purchase-order\n        method: POST\n        description: Create a purchase order\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-purchase-order\n        method: GET\n        description: Get purchase order details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-purchase-order\n        method: PATCH\n        description: Update a purchase order\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: cancel-purchase-order\n        method: POST\n        description: Cancel a purchase order\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n  \
+  \        value: $.\n      - name: list-line-items\n        method: GET\n        description: List line items for an order\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-line-item\n        method: GET\n        description: Get a specific line item\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: invoices\n      path: /invoices\n      description: Invoice operations\n      operations:\n      - name: list-invoices\n        method: GET\n        description: List invoices\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-invoice\n        method: POST\n        description: Create an invoice\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value:\
+  \ $.\n      - name: get-invoice\n        method: GET\n        description: Get invoice details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: approve-invoice\n        method: POST\n        description: Approve an invoice\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: reject-invoice\n        method: POST\n        description: Reject an invoice\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: suppliers\n      path: /suppliers\n      description: Supplier management\n      operations:\n      - name: list-suppliers\n        method: GET\n        description: List suppliers\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-supplier\n\
+  \        method: GET\n        description: Get supplier profile\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: requisitions\n      path: /requisitions\n      description: Requisition management\n      operations:\n      - name: list-requisitions\n        method: GET\n        description: List requisitions\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-requisition\n        method: POST\n        description: Create a requisition\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-requisition\n        method: GET\n        description: Get requisition details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: receipts\n\
+  \      path: /orders/{orderId}/receipts\n      description: Receipt operations\n      operations:\n      - name: list-receipts\n        method: GET\n        description: List receipts for an order\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-receipt\n        method: POST\n        description: Create a receipt\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: procure-to-pay-api\n    description: Unified REST API for SAP Ariba procure-to-pay operations.\n    resources:\n    - path: /v1/purchase-orders\n      name: purchase-orders\n      description: Purchase order management\n      operations:\n      - method: GET\n        name: list-purchase-orders\n        description: List purchase orders\n        call: procurement.list-purchase-orders\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n      - method: POST\n        name: create-purchase-order\n        description: Create a purchase order\n        call: procurement.create-purchase-order\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: procure-to-pay-mcp\n    transport: http\n    description: MCP server for AI-assisted SAP Ariba procure-to-pay operations.\n    tools:\n    - name: list-purchase-orders\n      description: List purchase orders\n      hints:\n        readOnly: true\n        openWorld: true\n      call: procurement.list-purchase-orders\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-purchase-order\n      description: Get purchase order details\n      hints:\n        readOnly: true\n      call: procurement.get-purchase-order\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-purchase-order\n      description: Create a\
+  \ purchase order\n      call: procurement.create-purchase-order\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-purchase-order\n      description: Update a purchase order\n      call: procurement.update-purchase-order\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: cancel-purchase-order\n      description: Cancel a purchase order\n      hints:\n        destructive: true\n      call: procurement.cancel-purchase-order\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-line-items\n      description: List line items for an order\n      hints:\n        readOnly: true\n      call: procurement.list-line-items\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-invoices\n      description: List invoices\n      hints:\n        readOnly: true\n        openWorld: true\n      call: procurement.list-invoices\n      outputParameters:\n      - type: object\n  \
+  \      mapping: $.\n    - name: get-invoice\n      description: Get invoice details\n      hints:\n        readOnly: true\n      call: procurement.get-invoice\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-invoice\n      description: Create an invoice\n      call: procurement.create-invoice\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: approve-invoice\n      description: Approve an invoice for payment\n      call: procurement.approve-invoice\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: reject-invoice\n      description: Reject an invoice\n      call: procurement.reject-invoice\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-suppliers\n      description: List suppliers\n      hints:\n        readOnly: true\n        openWorld: true\n      call: procurement.list-suppliers\n      outputParameters:\n      - type: object\n        mapping: $.\n\
+  \    - name: get-supplier\n      description: Get supplier profile\n      hints:\n        readOnly: true\n      call: procurement.get-supplier\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-requisitions\n      description: List requisitions\n      hints:\n        readOnly: true\n      call: procurement.list-requisitions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-requisition\n      description: Create a requisition\n      call: procurement.create-requisition\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-requisition\n      description: Get requisition details\n      hints:\n        readOnly: true\n      call: procurement.get-requisition\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-receipts\n      description: List receipts for an order\n      hints:\n        readOnly: true\n      call: procurement.list-receipts\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: create-receipt\n      description: Create a receipt\n      call: procurement.create-receipt\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/sap-ariba/refs/heads/main/capabilities/procure-to-pay.yaml
 tags:
 - SAP

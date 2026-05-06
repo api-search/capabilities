@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- portfolio
-- list attributions
-- mcp
-- get portfolio
-- capabilities
-- aim
-- bloomberg
 - naftiko
+- list attributions
+- bloomberg
+- aim
+- get portfolio
 - list positions
 - api integration
 - governance
+- spec-driven integration
+- portfolio
 - ai
+- mcp
+- capabilities
 slug: bloomberg-aim-deterministic-portfolio-mcp
 source_filename: bloomberg-aim-deterministic-portfolio-mcp.yaml
 source_heading: Capability Spec

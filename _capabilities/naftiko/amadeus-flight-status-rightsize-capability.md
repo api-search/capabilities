@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- rightsize
+- naftiko
+- flightaware
 - get flight status rightsized
-- spec-driven integration
 - compact flight-status payload for ai context.
-- governance
-- mcp
 - return a compact subset of amadeus flight-status data tuned for ai context (gate, terminal, status, deltas only).
+- api integration
+- governance
+- spec-driven integration
+- rightsize
+- ai
+- mcp
 - capabilities
 - amadeus
-- naftiko
-- api integration
-- flightaware
-- ai
 slug: amadeus-flight-status-rightsize-capability
 source_filename: amadeus-flight-status-rightsize-capability.yaml
 source_heading: Capability Spec

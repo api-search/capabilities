@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- mcp
-- kong
-- capabilities
-- financial services
 - naftiko
-- api integration
-- list mirrored services
-- governance
-- ai
+- kong
 - get service
+- api integration
+- governance
+- spec-driven integration
+- financial services
+- ai
+- mcp
+- capabilities
+- list mirrored services
 slug: financial-services-gateway-mirror
 source_filename: financial-services-gateway-mirror.yaml
 source_heading: Capability Spec

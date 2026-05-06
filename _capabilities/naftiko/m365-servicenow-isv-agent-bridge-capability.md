@@ -13,20 +13,20 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list chats
-- spec-driven integration
-- get me
-- governance
-- graph
-- mcp
-- ai
-- capabilities
 - naftiko
-- microsoft 365
-- api integration
-- list messages
-- list drive items
+- get me
 - list events
+- microsoft 365
+- list messages
+- graph
+- api integration
+- governance
+- capabilities
+- spec-driven integration
+- ai
+- list drive items
+- mcp
+- list chats
 slug: m365-servicenow-isv-agent-bridge-capability
 source_filename: m365-servicenow-isv-agent-bridge-capability.yaml
 source_heading: Capability Spec

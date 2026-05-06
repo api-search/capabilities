@@ -17,21 +17,21 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- governance
-- list products
-- list api products.
-- mcp
-- ai
-- collection
-- capabilities
-- get product
 - naftiko
-- api integration
-- api product
-- get an api product.
-- list apis as digital products.
+- get product
 - get an api product with metrics, lifecycle, ownership.
+- api product
+- list products
+- collection
+- api integration
+- governance
+- spec-driven integration
+- list api products.
+- list apis as digital products.
+- ai
+- mcp
+- capabilities
+- get an api product.
 slug: api-as-digital-product-collection
 source_filename: api-as-digital-product-collection.yaml
 source_heading: Capability Spec

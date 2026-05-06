@@ -18,7 +18,7 @@ implementations:
 - capability_name: Amazon Lambda Workflow
   capability_slug: amazon-lambda-workflow
   capability_url: https://capabilities.apis.io/capabilities/amazon-lambda/amazon-lambda-workflow/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 0
   provider_name: Amazon Lambda
   provider_slug: amazon-lambda
@@ -29,7 +29,7 @@ implementations:
 - capability_name: Amazon SAR Serverless App Management
   capability_slug: serverless-app-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-serverless-application-repository/serverless-app-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Amazon Serverless Application Repository
   provider_slug: amazon-serverless-application-repository
@@ -43,7 +43,7 @@ implementations:
 - capability_name: Apache OpenWhisk Serverless Workflow
   capability_slug: serverless-workflow
   capability_url: https://capabilities.apis.io/capabilities/apache-openwhisk/serverless-workflow/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Apache OpenWhisk
   provider_slug: apache-openwhisk
@@ -57,7 +57,7 @@ implementations:
 - capability_name: Azure Function Apps Management
   capability_slug: azure-function-apps-management
   capability_url: https://capabilities.apis.io/capabilities/azure-function-apps/azure-function-apps-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Azure Function Apps
   provider_slug: azure-function-apps
@@ -69,7 +69,7 @@ implementations:
 - capability_name: Cloudflare Serverless Compute
   capability_slug: serverless-compute
   capability_url: https://capabilities.apis.io/capabilities/cloudflare/serverless-compute/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Cloudflare
   provider_slug: cloudflare

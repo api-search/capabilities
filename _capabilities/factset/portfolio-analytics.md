@@ -1,13 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- factset-pa-engine
-- factset-spar
-- factset-vault
-- factset-publisher
-- factset-portfolio
-- factset-portfolio-meta
-- factset-datastore
+consumed_apis: []
 description: Unified workflow for portfolio analytics including performance attribution, risk analysis, and benchmarking. Used by portfolio managers and performance analysts.
 layout: capability
 name: FactSet Portfolio Analytics
@@ -40,48 +33,51 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- list analytics datastore
-- list portfolios
-- market data
-- portfolio metadata.
 - research
-- pa engine resources.
-- investment analytics
-- portfolio resources.
-- financial
-- financial data
-- list pa engine resources.
-- list portfolios.
-- performance attribution
-- list analytics datastore.
-- portfolio analytics
-- factset
-- list publisher
-- analytics datastore.
-- list spar
 - list vault resources.
 - list datastore
-- risk analysis
-- list metadata
-- list vault
-- list spar engine resources.
-- list pa
-- list pa engine
 - list portfolio metadata.
-- list spar engine
+- investment analytics
+- market data
+- portfolio resources.
+- portfolio metadata.
+- list vault
+- performance attribution
+- pa engine resources.
+- list pa engine
+- portfolio analytics
+- list pa engine resources.
+- list spar
+- factset
+- list spar engine resources.
 - list portfolio metadata
+- list analytics datastore.
+- financial data
+- analytics datastore.
 - list publisher resources.
 - vault resources.
+- list publisher
+- list spar engine
 - spar engine resources.
+- financial
+- list portfolios
+- list metadata
+- list analytics datastore
+- risk analysis
+- list portfolios.
+- list pa
 slug: portfolio-analytics
 source_filename: portfolio-analytics.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Portfolio Analytics\"\n  description: \"Unified workflow for portfolio analytics including performance attribution, risk analysis, and benchmarking. Used by portfolio managers and performance analysts.\"\n  tags:\n    - FactSet\n    - Portfolio Analytics\n    - Performance Attribution\n    - Risk Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-pa-engine\n      location: ./shared/pa-engine.yaml\n    - import: factset-spar\n      location: ./shared/spar-engine.yaml\n    - import: factset-vault\n      location: ./shared/vault.yaml\n    - import: factset-publisher\n      location: ./shared/publisher.yaml\n    - import: factset-portfolio\n      location: ./shared/portfolio.yaml\n    - import: factset-portfolio-meta\n      location: ./shared/portfolio-metadata.yaml\n\
-  \    - import: factset-datastore\n      location: ./shared/analytics-datastore.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: portfolio-analytics-api\n      description: \"Unified REST API for FactSet portfolio analytics.\"\n      resources:\n        - path: /v1/pa-engine\n          name: pa-engine\n          description: \"PA Engine resources.\"\n          operations:\n            - method: GET\n              name: list-pa\n              description: \"List PA Engine resources.\"\n              call: \"factset-pa-engine.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/spar-engine\n          name: spar-engine\n          description: \"SPAR Engine resources.\"\n          operations:\n            - method: GET\n              name: list-spar\n              description: \"List SPAR Engine resources.\"\n              call: \"factset-spar.list\"\n              outputParameters:\n        \
-  \        - type: object\n                  mapping: \"$.\"\n        - path: /v1/vault\n          name: vault\n          description: \"Vault resources.\"\n          operations:\n            - method: GET\n              name: list-vault\n              description: \"List Vault resources.\"\n              call: \"factset-vault.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/portfolios\n          name: portfolios\n          description: \"Portfolio resources.\"\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: \"List portfolios.\"\n              call: \"factset-portfolio.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/portfolio-metadata\n          name: portfolio-metadata\n          description: \"Portfolio metadata.\"\n          operations:\n            - method: GET\n\
-  \              name: list-metadata\n              description: \"List portfolio metadata.\"\n              call: \"factset-portfolio-meta.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/analytics-datastore\n          name: analytics-datastore\n          description: \"Analytics datastore.\"\n          operations:\n            - method: GET\n              name: list-datastore\n              description: \"List analytics datastore.\"\n              call: \"factset-datastore.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: portfolio-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted portfolio analytics.\"\n      tools:\n        - name: list-pa-engine\n          description: \"List PA Engine resources.\"\n          hints:\n            readOnly: true\n            openWorld:\
-  \ true\n          call: \"factset-pa-engine.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-spar-engine\n          description: \"List SPAR Engine resources.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"factset-spar.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-vault\n          description: \"List Vault resources.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"factset-vault.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-publisher\n          description: \"List Publisher resources.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"factset-publisher.list\"\n          outputParameters:\n            - type: object\n              mapping: \"\
-  $.\"\n        - name: list-portfolios\n          description: \"List portfolios.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"factset-portfolio.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-portfolio-metadata\n          description: \"List portfolio metadata.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"factset-portfolio-meta.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-analytics-datastore\n          description: \"List analytics datastore.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"factset-datastore.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: FactSet Portfolio Analytics\n  description: Unified workflow for portfolio analytics including performance attribution, risk analysis, and benchmarking.\n    Used by portfolio managers and performance analysts.\n  tags:\n  - FactSet\n  - Portfolio Analytics\n  - Performance Attribution\n  - Risk Analysis\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    FACTSET_USERNAME: FACTSET_USERNAME\n    FACTSET_PASSWORD: FACTSET_PASSWORD\ncapability:\n  consumes:\n  - type: http\n    namespace: factset-pa-engine\n    baseUri: https://api.factset.com\n    description: Portfolio analytics engine for multi-asset class performance, attribution, and risk.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: pa_engine\n      path: /\n      description: PA Engine API resources.\n      operations:\n      - name: list-pa-engine\n\
+  \        method: GET\n        description: List PA Engine resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password:\
+  \ '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri:\
+  \ https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: portfolio-analytics-api\n    description: Unified REST API for FactSet portfolio analytics.\n    resources:\n    - path: /v1/pa-engine\n      name: pa-engine\n      description: PA Engine resources.\n      operations:\n      - method: GET\n        name:\
+  \ list-pa\n        description: List PA Engine resources.\n        call: factset-pa-engine.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/spar-engine\n      name: spar-engine\n      description: SPAR Engine resources.\n      operations:\n      - method: GET\n        name: list-spar\n        description: List SPAR Engine resources.\n        call: factset-spar.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/vault\n      name: vault\n      description: Vault resources.\n      operations:\n      - method: GET\n        name: list-vault\n        description: List Vault resources.\n        call: factset-vault.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/portfolios\n      name: portfolios\n      description: Portfolio resources.\n      operations:\n      - method: GET\n        name: list-portfolios\n        description: List portfolios.\n        call:\
+  \ factset-portfolio.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/portfolio-metadata\n      name: portfolio-metadata\n      description: Portfolio metadata.\n      operations:\n      - method: GET\n        name: list-metadata\n        description: List portfolio metadata.\n        call: factset-portfolio-meta.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/analytics-datastore\n      name: analytics-datastore\n      description: Analytics datastore.\n      operations:\n      - method: GET\n        name: list-datastore\n        description: List analytics datastore.\n        call: factset-datastore.list\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: portfolio-analytics-mcp\n    transport: http\n    description: MCP server for AI-assisted portfolio analytics.\n    tools:\n    - name: list-pa-engine\n      description: List\
+  \ PA Engine resources.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: factset-pa-engine.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-spar-engine\n      description: List SPAR Engine resources.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: factset-spar.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-vault\n      description: List Vault resources.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: factset-vault.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-publisher\n      description: List Publisher resources.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: factset-publisher.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-portfolios\n      description: List portfolios.\n      hints:\n        readOnly: true\n\
+  \        openWorld: true\n      call: factset-portfolio.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-portfolio-metadata\n      description: List portfolio metadata.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: factset-portfolio-meta.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-analytics-datastore\n      description: List analytics datastore.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: factset-datastore.list\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/factset/refs/heads/main/capabilities/portfolio-analytics.yaml
 tags:
 - FactSet

@@ -1,0 +1,92 @@
+---
+categories: []
+consumed_apis: []
+description: The Defense Visual Information Distribution Service (DVIDS) API provides programmatic access to U.S. military news, photos, video, audio, publications, units, and live events. The API is implemented as JSON over HTTP and requires a public API key.
+layout: capability
+name: DVIDS API
+operations:
+- description: Search assets
+  method: GET
+  name: searchassets
+  path: /search
+- description: Get asset
+  method: GET
+  name: getasset
+  path: /asset
+- description: Get related assets
+  method: GET
+  name: getrelatedassets
+  path: /asset/related
+- description: Search units
+  method: GET
+  name: searchunits
+  path: /unit/search
+personas: []
+provider_name: DVIDS API
+provider_slug: dvids-api
+search_terms:
+- search units
+- government
+- getasset
+- getrelatedassets
+- searchunits
+- api
+- dvids
+- search
+- defense
+- get asset
+- media
+- search assets
+- get related assets
+- searchassets
+slug: dvids-api-capability
+source_filename: dvids-api-capability.yaml
+source_heading: Capability Spec
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: DVIDS API\n  description: The Defense Visual Information Distribution Service (DVIDS) API provides programmatic access to U.S. military\n    news, photos, video, audio, publications, units, and live events. The API is implemented as JSON over HTTP and requires\n    a public API key.\n  tags:\n  - Dvids\n  - Api\n  - API\n  created: '2026-05-06'\n  modified: '2026-05-06'\ncapability:\n  consumes:\n  - type: http\n    namespace: dvids-api\n    baseUri: https://api.dvidshub.net\n    description: DVIDS API HTTP API.\n    authentication:\n      type: apikey\n      in: query\n      name: api_key\n      value: '{{DVIDS_API_TOKEN}}'\n    resources:\n    - name: search\n      path: /search\n      operations:\n      - name: searchassets\n        method: GET\n        description: Search assets\n        inputParameters:\n        - name: api_key\n          in: query\n          type: string\n          required: true\n        - name: q\n          in:\
+  \ query\n          type: string\n        - name: branch\n          in: query\n          type: string\n        - name: type\n          in: query\n          type: string\n        - name: category\n          in: query\n          type: string\n        - name: categories_exclude\n          in: query\n          type: string\n        - name: country\n          in: query\n          type: string\n        - name: state\n          in: query\n          type: string\n        - name: city\n          in: query\n          type: string\n        - name: unit_name\n          in: query\n          type: string\n        - name: unit\n          in: query\n          type: string\n        - name: unit_id\n          in: query\n          type: integer\n        - name: credit\n          in: query\n          type: string\n        - name: from_date\n          in: query\n          type: string\n        - name: to_date\n          in: query\n          type: string\n        - name: from_publishdate\n          in: query\n\
+  \          type: string\n        - name: to_publishdate\n          in: query\n          type: string\n        - name: timestamp\n          in: query\n          type: string\n        - name: from_duration\n          in: query\n          type: integer\n        - name: to_duration\n          in: query\n          type: integer\n        - name: aspect_ratio\n          in: query\n          type: string\n        - name: hd\n          in: query\n          type: integer\n        - name: has_image\n          in: query\n          type: boolean\n        - name: has_captions\n          in: query\n          type: boolean\n        - name: max_results\n          in: query\n          type: integer\n        - name: page\n          in: query\n          type: integer\n        - name: sort\n          in: query\n          type: string\n        - name: sortdir\n          in: query\n          type: string\n        - name: format\n          in: query\n          type: string\n        - name: fields\n          in:\
+  \ query\n          type: string\n        - name: thumb_width\n          in: query\n          type: integer\n        - name: thumb_height\n          in: query\n          type: integer\n        - name: thumb_quality\n          in: query\n          type: integer\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: asset\n      path: /asset\n      operations:\n      - name: getasset\n        method: GET\n        description: Get asset\n        inputParameters:\n        - name: api_key\n          in: query\n          type: string\n          required: true\n        - name: id\n          in: query\n          type: string\n          required: true\n        - name: fields\n          in: query\n          type: string\n        - name: prettyprint\n          in: query\n          type: boolean\n        - name: thumb_width\n          in: query\n          type: integer\n        - name: thumb_height\n          in: query\n\
+  \          type: integer\n        - name: thumb_quality\n          in: query\n          type: integer\n        - name: include_related_media\n          in: query\n          type: boolean\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: asset-related\n      path: /asset/related\n      operations:\n      - name: getrelatedassets\n        method: GET\n        description: Get related assets\n        inputParameters:\n        - name: api_key\n          in: query\n          type: string\n          required: true\n        - name: id\n          in: query\n          type: string\n          required: true\n        - name: branch\n          in: query\n          type: string\n        - name: category\n          in: query\n          type: string\n        - name: type\n          in: query\n          type: string\n        - name: country\n          in: query\n          type: string\n        - name: state\n   \
+  \       in: query\n          type: string\n        - name: city\n          in: query\n          type: string\n        - name: unit_name\n          in: query\n          type: string\n        - name: credit\n          in: query\n          type: string\n        - name: from_date\n          in: query\n          type: string\n        - name: to_date\n          in: query\n          type: string\n        - name: aspect_ratio\n          in: query\n          type: string\n        - name: hd\n          in: query\n          type: integer\n        - name: max_results\n          in: query\n          type: integer\n        - name: page\n          in: query\n          type: integer\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: unit-search\n      path: /unit/search\n      operations:\n      - name: searchunits\n        method: GET\n        description: Search units\n        inputParameters:\n        - name: api_key\n\
+  \          in: query\n          type: string\n          required: true\n        - name: unit_id\n          in: query\n          type: integer\n        - name: branch\n          in: query\n          type: string\n        - name: unit_abbrev\n          in: query\n          type: string\n        - name: unit_name\n          in: query\n          type: string\n        - name: max_results\n          in: query\n          type: integer\n        - name: sortdir\n          in: query\n          type: string\n        - name: page\n          in: query\n          type: integer\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: dvids-api-rest\n    description: REST adapter for DVIDS API.\n    resources:\n    - path: /search\n      name: searchassets\n      operations:\n      - method: GET\n        name: searchassets\n        description: Search assets\n        call:\
+  \ dvids-api.searchassets\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /asset\n      name: getasset\n      operations:\n      - method: GET\n        name: getasset\n        description: Get asset\n        call: dvids-api.getasset\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /asset/related\n      name: getrelatedassets\n      operations:\n      - method: GET\n        name: getrelatedassets\n        description: Get related assets\n        call: dvids-api.getrelatedassets\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /unit/search\n      name: searchunits\n      operations:\n      - method: GET\n        name: searchunits\n        description: Search units\n        call: dvids-api.searchunits\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: dvids-api-mcp\n    transport: http\n    description: MCP\
+  \ adapter for DVIDS API for AI agent use.\n    tools:\n    - name: searchassets\n      description: Search assets\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: dvids-api.searchassets\n      with:\n        api_key: tools.api_key\n        q: tools.q\n        branch: tools.branch\n        type: tools.type\n        category: tools.category\n        categories_exclude: tools.categories_exclude\n        country: tools.country\n        state: tools.state\n        city: tools.city\n        unit_name: tools.unit_name\n        unit: tools.unit\n        unit_id: tools.unit_id\n        credit: tools.credit\n        from_date: tools.from_date\n        to_date: tools.to_date\n        from_publishdate: tools.from_publishdate\n        to_publishdate: tools.to_publishdate\n        timestamp: tools.timestamp\n        from_duration: tools.from_duration\n        to_duration: tools.to_duration\n        aspect_ratio: tools.aspect_ratio\n        hd:\
+  \ tools.hd\n        has_image: tools.has_image\n        has_captions: tools.has_captions\n        max_results: tools.max_results\n        page: tools.page\n        sort: tools.sort\n        sortdir: tools.sortdir\n        format: tools.format\n        fields: tools.fields\n        thumb_width: tools.thumb_width\n        thumb_height: tools.thumb_height\n        thumb_quality: tools.thumb_quality\n      inputParameters:\n      - name: api_key\n        type: string\n        description: api_key\n        required: true\n      - name: q\n        type: string\n        description: q\n      - name: branch\n        type: string\n        description: branch\n      - name: type\n        type: string\n        description: type\n      - name: category\n        type: string\n        description: category\n      - name: categories_exclude\n        type: string\n        description: categories_exclude\n      - name: country\n        type: string\n        description: country\n      - name: state\n \
+  \       type: string\n        description: state\n      - name: city\n        type: string\n        description: city\n      - name: unit_name\n        type: string\n        description: unit_name\n      - name: unit\n        type: string\n        description: unit\n      - name: unit_id\n        type: integer\n        description: unit_id\n      - name: credit\n        type: string\n        description: credit\n      - name: from_date\n        type: string\n        description: from_date\n      - name: to_date\n        type: string\n        description: to_date\n      - name: from_publishdate\n        type: string\n        description: from_publishdate\n      - name: to_publishdate\n        type: string\n        description: to_publishdate\n      - name: timestamp\n        type: string\n        description: timestamp\n      - name: from_duration\n        type: integer\n        description: from_duration\n      - name: to_duration\n        type: integer\n        description: to_duration\n\
+  \      - name: aspect_ratio\n        type: string\n        description: aspect_ratio\n      - name: hd\n        type: integer\n        description: hd\n      - name: has_image\n        type: boolean\n        description: has_image\n      - name: has_captions\n        type: boolean\n        description: has_captions\n      - name: max_results\n        type: integer\n        description: max_results\n      - name: page\n        type: integer\n        description: page\n      - name: sort\n        type: string\n        description: sort\n      - name: sortdir\n        type: string\n        description: sortdir\n      - name: format\n        type: string\n        description: format\n      - name: fields\n        type: string\n        description: fields\n      - name: thumb_width\n        type: integer\n        description: thumb_width\n      - name: thumb_height\n        type: integer\n        description: thumb_height\n      - name: thumb_quality\n        type: integer\n        description:\
+  \ thumb_quality\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: getasset\n      description: Get asset\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: dvids-api.getasset\n      with:\n        api_key: tools.api_key\n        id: tools.id\n        fields: tools.fields\n        prettyprint: tools.prettyprint\n        thumb_width: tools.thumb_width\n        thumb_height: tools.thumb_height\n        thumb_quality: tools.thumb_quality\n        include_related_media: tools.include_related_media\n      inputParameters:\n      - name: api_key\n        type: string\n        description: api_key\n        required: true\n      - name: id\n        type: string\n        description: id\n        required: true\n      - name: fields\n        type: string\n        description: fields\n      - name: prettyprint\n        type: boolean\n        description: prettyprint\n      - name: thumb_width\n        type: integer\n\
+  \        description: thumb_width\n      - name: thumb_height\n        type: integer\n        description: thumb_height\n      - name: thumb_quality\n        type: integer\n        description: thumb_quality\n      - name: include_related_media\n        type: boolean\n        description: include_related_media\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: getrelatedassets\n      description: Get related assets\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: dvids-api.getrelatedassets\n      with:\n        api_key: tools.api_key\n        id: tools.id\n        branch: tools.branch\n        category: tools.category\n        type: tools.type\n        country: tools.country\n        state: tools.state\n        city: tools.city\n        unit_name: tools.unit_name\n        credit: tools.credit\n        from_date: tools.from_date\n        to_date: tools.to_date\n        aspect_ratio: tools.aspect_ratio\n\
+  \        hd: tools.hd\n        max_results: tools.max_results\n        page: tools.page\n      inputParameters:\n      - name: api_key\n        type: string\n        description: api_key\n        required: true\n      - name: id\n        type: string\n        description: id\n        required: true\n      - name: branch\n        type: string\n        description: branch\n      - name: category\n        type: string\n        description: category\n      - name: type\n        type: string\n        description: type\n      - name: country\n        type: string\n        description: country\n      - name: state\n        type: string\n        description: state\n      - name: city\n        type: string\n        description: city\n      - name: unit_name\n        type: string\n        description: unit_name\n      - name: credit\n        type: string\n        description: credit\n      - name: from_date\n        type: string\n        description: from_date\n      - name: to_date\n        type:\
+  \ string\n        description: to_date\n      - name: aspect_ratio\n        type: string\n        description: aspect_ratio\n      - name: hd\n        type: integer\n        description: hd\n      - name: max_results\n        type: integer\n        description: max_results\n      - name: page\n        type: integer\n        description: page\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: searchunits\n      description: Search units\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: dvids-api.searchunits\n      with:\n        api_key: tools.api_key\n        unit_id: tools.unit_id\n        branch: tools.branch\n        unit_abbrev: tools.unit_abbrev\n        unit_name: tools.unit_name\n        max_results: tools.max_results\n        sortdir: tools.sortdir\n        page: tools.page\n      inputParameters:\n      - name: api_key\n        type: string\n        description: api_key\n        required: true\n\
+  \      - name: unit_id\n        type: integer\n        description: unit_id\n      - name: branch\n        type: string\n        description: branch\n      - name: unit_abbrev\n        type: string\n        description: unit_abbrev\n      - name: unit_name\n        type: string\n        description: unit_name\n      - name: max_results\n        type: integer\n        description: max_results\n      - name: sortdir\n        type: string\n        description: sortdir\n      - name: page\n        type: integer\n        description: page\n      outputParameters:\n      - type: object\n        mapping: $.\nbinds:\n- namespace: env\n  keys:\n    DVIDS_API_TOKEN: DVIDS_API_TOKEN\n"
+source_yaml_url: https://raw.githubusercontent.com/api-evangelist/dvids-api/refs/heads/main/capabilities/dvids-api-capability.yaml
+tags:
+- Dvids
+- Api
+- API
+tools:
+- description: Search assets
+  hints:
+    destructive: false
+    idempotent: true
+    readOnly: true
+  name: searchassets
+- description: Get asset
+  hints:
+    destructive: false
+    idempotent: true
+    readOnly: true
+  name: getasset
+- description: Get related assets
+  hints:
+    destructive: false
+    idempotent: true
+    readOnly: true
+  name: getrelatedassets
+- description: Search units
+  hints:
+    destructive: false
+    idempotent: true
+    readOnly: true
+  name: searchunits
+---

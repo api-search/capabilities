@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- mirror
-- spec-driven integration
-- governance
-- mcp
-- list mirrored proxies
-- capabilities
 - naftiko
-- api integration
 - get proxy
+- api integration
+- governance
 - list mirrored apigee proxies.
-- apigee
+- mirror
+- list mirrored proxies
 - ai
+- spec-driven integration
+- mcp
+- apigee
+- capabilities
 slug: apigee-mcp-mirror-collection
 source_filename: apigee-mcp-mirror-collection.yaml
 source_heading: Capability Spec

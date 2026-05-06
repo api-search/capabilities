@@ -1,8 +1,7 @@
 ---
 categories:
 - iot
-consumed_apis:
-- iot-sitewise
+consumed_apis: []
 description: Unified capability for OT Engineer, Data Analyst to manage collect, organize, and analyze industrial equipment data operations.
 layout: capability
 name: Amazon IoT SiteWise - Industrial Asset Management
@@ -15,39 +14,39 @@ personas: []
 provider_name: Amazon IoT SiteWise
 provider_slug: amazon-iot-sitewise
 search_terms:
-- create portal
-- create asset
 - aws
-- amazon iot sitewise create asset model
-- collect, organize, and analyze industrial equipment data.
-- asset management
+- amazon iot sitewise create asset
+- list portals
+- amazon iot sitewise list portals
 - amazon iot sitewise batch put asset property value
-- list assets
-- amazon iot sitewise create portal
+- list asset models
+- amazon iot sitewise resources
+- amazon iot sitewise list assets
+- iot
+- industrial iot
+- amazon iot sitewise list asset models
+- create asset model
+- collect, organize, and analyze industrial equipment data.
 - batch put asset property value
 - time series data
-- list portals
-- amazon iot sitewise create asset
-- Data Analyst
-- industrial iot
+- create asset
 - OT Engineer
-- amazon iot sitewise list assets
-- list asset models
+- amazon iot sitewise create asset model
 - get asset property value
-- iot
-- amazon iot sitewise resources
-- amazon iot sitewise get asset property value
+- create portal
+- Data Analyst
+- list assets
+- amazon iot sitewise create portal
 - manages amazon iot sitewise resources and operations
-- amazon iot sitewise list asset models
-- amazon iot sitewise list portals
-- create asset model
+- asset management
+- amazon iot sitewise get asset property value
 slug: industrial-asset-management
 source_filename: industrial-asset-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: Amazon IoT SiteWise - Industrial Asset Management\n  description: Unified capability for OT Engineer, Data Analyst to manage collect, organize, and analyze industrial equipment data operations.\n  tags:\n    - IoT\n    - AWS\n    - Industrial IoT\n    - Asset Management\n    - Time Series Data\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n    - import: iot-sitewise\n      location: ./shared/iot-sitewise.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: industrial-asset-management-api\n      description: Unified REST API for industrial asset management.\n      resources:\n        - path: /v1/resources\n          name: resources\n          description: Amazon IoT SiteWise resources\n          operations:\n            - method: GET\n            \
-  \  name: list-assets\n              description: List Assets\n              call: \"iot-sitewise.list-assets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: industrial-asset-management-mcp\n      transport: http\n      description: MCP server for AI-assisted industrial asset management.\n      tools:\n        - name: list-assets\n          description: Amazon IoT SiteWise List Assets\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-sitewise.list-assets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-asset\n          description: Amazon IoT SiteWise Create Asset\n          hints:\n            readOnly: false\n            \n          call: \"iot-sitewise.create-asset\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        -\
-  \ name: list-asset-models\n          description: Amazon IoT SiteWise List Asset Models\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-sitewise.list-asset-models\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-asset-model\n          description: Amazon IoT SiteWise Create Asset Model\n          hints:\n            readOnly: false\n            \n          call: \"iot-sitewise.create-asset-model\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-asset-property-value\n          description: Amazon IoT SiteWise Get Asset Property Value\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-sitewise.get-asset-property-value\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-portals\n          description: Amazon\
-  \ IoT SiteWise List Portals\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"iot-sitewise.list-portals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-portal\n          description: Amazon IoT SiteWise Create Portal\n          hints:\n            readOnly: false\n            \n          call: \"iot-sitewise.create-portal\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: batch-put-asset-property-value\n          description: Amazon IoT SiteWise Batch Put Asset Property Value\n          hints:\n            readOnly: false\n            \n          call: \"iot-sitewise.batch-put-asset-property-value\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon IoT SiteWise - Industrial Asset Management\n  description: Unified capability for OT Engineer, Data Analyst to manage collect, organize, and analyze industrial equipment\n    data operations.\n  tags:\n  - IoT\n  - AWS\n  - Industrial IoT\n  - Asset Management\n  - Time Series Data\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: iot-sitewise\n    baseUri: https://iotsitewise.amazonaws.com\n    description: Amazon IoT SiteWise REST API\n    authentication:\n      type: apikey\n      key: Authorization\n      value: '{{AWS_ACCESS_KEY_ID}}'\n      placement: header\n    resources:\n    - name: resources\n      path: /\n      description: Amazon IoT SiteWise resources\n      operations:\n      - name: list-assets\n        method: GET\n        description:\
+  \ List Assets\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: industrial-asset-management-api\n    description: Unified REST API for industrial asset management.\n    resources:\n    - path: /v1/resources\n      name: resources\n      description: Amazon IoT SiteWise resources\n      operations:\n      - method: GET\n        name: list-assets\n        description: List Assets\n        call: iot-sitewise.list-assets\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: industrial-asset-management-mcp\n    transport: http\n    description: MCP server for AI-assisted industrial asset management.\n    tools:\n    - name: list-assets\n      description: Amazon IoT SiteWise List Assets\n      hints:\n        readOnly: true\n        openWorld: true\n      call: iot-sitewise.list-assets\n  \
+  \    outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-asset\n      description: Amazon IoT SiteWise Create Asset\n      hints:\n        readOnly: false\n      call: iot-sitewise.create-asset\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-asset-models\n      description: Amazon IoT SiteWise List Asset Models\n      hints:\n        readOnly: true\n        openWorld: true\n      call: iot-sitewise.list-asset-models\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-asset-model\n      description: Amazon IoT SiteWise Create Asset Model\n      hints:\n        readOnly: false\n      call: iot-sitewise.create-asset-model\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-asset-property-value\n      description: Amazon IoT SiteWise Get Asset Property Value\n      hints:\n        readOnly: true\n        openWorld: true\n      call: iot-sitewise.get-asset-property-value\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-portals\n      description: Amazon IoT SiteWise List Portals\n      hints:\n        readOnly: true\n        openWorld: true\n      call: iot-sitewise.list-portals\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-portal\n      description: Amazon IoT SiteWise Create Portal\n      hints:\n        readOnly: false\n      call: iot-sitewise.create-portal\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-put-asset-property-value\n      description: Amazon IoT SiteWise Batch Put Asset Property Value\n      hints:\n        readOnly: false\n      call: iot-sitewise.batch-put-asset-property-value\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-iot-sitewise/refs/heads/main/capabilities/industrial-asset-management.yaml
 tags:
 - IoT

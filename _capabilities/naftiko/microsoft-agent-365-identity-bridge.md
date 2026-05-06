@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list app roles
-- spec-driven integration
-- mcp
-- capabilities
 - naftiko
+- list app roles
+- agent 365
+- get identity
 - identity
 - api integration
 - governance
-- entra
+- capabilities
+- spec-driven integration
 - ai
-- get identity
-- agent 365
+- mcp
+- entra
 slug: microsoft-agent-365-identity-bridge
 source_filename: microsoft-agent-365-identity-bridge.yaml
 source_heading: Capability Spec

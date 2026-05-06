@@ -1,15 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- slack-admin
-- slack-team
-- slack-users
-- slack-usergroups
-- slack-migration
-- slack-auth
-- slack-oauth
-- slack-openid
-- slack-dnd
+consumed_apis: []
 description: Unified workflow for workspace administration including admin controls, team settings, user management, user groups, authentication, and enterprise migration. Used by workspace administrators and IT teams.
 layout: capability
 name: Slack Workspace Administration
@@ -35,48 +26,52 @@ provider_name: Slack
 provider_slug: slack
 search_terms:
 - slack
-- get dnd status
-- list admin
-- list users
-- bots
-- get team
-- enterprise
-- migrate enterprise ids.
-- messaging
-- get team info
-- user group management.
-- t1
-- team information.
-- chat
-- get do not disturb status.
-- list user groups.
-- list users.
-- administration
-- user management.
-- list user groups
-- auth test
-- list admin resources.
-- admin controls
-- list workspace users.
-- get team info.
 - access admin controls.
-- migrate ids
-- admin controls.
-- team communication
+- user group management.
 - test authentication.
-- user management
+- team communication
+- team information.
+- list workspace users.
+- migrate enterprise ids.
+- list admin
+- enterprise
+- bots
+- list user groups.
 - productivity
+- get team info.
+- auth test
+- messaging
+- admin controls
+- get team info
+- t1
+- list user groups
+- get dnd status
 - get workspace information.
-- collaboration
+- get team
+- user management.
+- administration
+- list users.
+- list admin resources.
+- chat
+- list users
 - list groups
+- migrate ids
+- get do not disturb status.
+- collaboration
+- user management
+- admin controls.
 slug: workspace-administration
 source_filename: workspace-administration.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Slack Workspace Administration\"\n  description: \"Unified workflow for workspace administration including admin controls, team settings, user management, user groups, authentication, and enterprise migration. Used by workspace administrators and IT teams.\"\n  tags:\n    - Slack\n    - Administration\n    - User Management\n    - Enterprise\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      SLACK_BOT_TOKEN: SLACK_BOT_TOKEN\n\ncapability:\n  consumes:\n    - import: slack-admin\n      location: ./shared/admin.yaml\n    - import: slack-team\n      location: ./shared/team.yaml\n    - import: slack-users\n      location: ./shared/users.yaml\n    - import: slack-usergroups\n      location: ./shared/usergroups.yaml\n    - import: slack-migration\n      location: ./shared/migration.yaml\n    - import: slack-auth\n      location: ./shared/auth.yaml\n    - import: slack-oauth\n      location:\
-  \ ./shared/oauth.yaml\n    - import: slack-openid\n      location: ./shared/openid-connect.yaml\n    - import: slack-dnd\n      location: ./shared/dnd.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: workspace-admin-api\n      description: \"Unified REST API for workspace administration.\"\n      resources:\n        - path: /v1/admin\n          name: admin\n          description: \"Admin controls.\"\n          operations:\n            - method: GET\n              name: list-admin\n              description: \"List admin resources.\"\n              call: \"slack-admin.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management.\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users.\"\n              call: \"slack-users.list\"\n              outputParameters:\n\
-  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/user-groups\n          name: user-groups\n          description: \"User group management.\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List user groups.\"\n              call: \"slack-usergroups.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/team\n          name: team\n          description: \"Team information.\"\n          operations:\n            - method: GET\n              name: get-team\n              description: \"Get team info.\"\n              call: \"slack-team.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: workspace-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted workspace administration.\"\n \
-  \     tools:\n        - name: admin-controls\n          description: \"Access admin controls.\"\n          hints:\n            readOnly: true\n          call: \"slack-admin.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-team-info\n          description: \"Get workspace information.\"\n          hints:\n            readOnly: true\n          call: \"slack-team.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List workspace users.\"\n          hints:\n            readOnly: true\n          call: \"slack-users.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-user-groups\n          description: \"List user groups.\"\n          hints:\n            readOnly: true\n          call: \"slack-usergroups.list\"\n          outputParameters:\n            - type: object\n\
-  \              mapping: \"$.\"\n        - name: migrate-ids\n          description: \"Migrate enterprise IDs.\"\n          hints:\n            readOnly: true\n          call: \"slack-migration.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: auth-test\n          description: \"Test authentication.\"\n          hints:\n            readOnly: true\n          call: \"slack-auth.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dnd-status\n          description: \"Get Do Not Disturb status.\"\n          hints:\n            readOnly: true\n          call: \"slack-dnd.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Slack Workspace Administration\n  description: Unified workflow for workspace administration including admin controls, team settings, user management, user\n    groups, authentication, and enterprise migration. Used by workspace administrators and IT teams.\n  tags:\n  - Slack\n  - Administration\n  - User Management\n  - Enterprise\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    SLACK_BOT_TOKEN: SLACK_BOT_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n     \
+  \   description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description:\
+  \ Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n    \
+  \  token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: slack-chat\n    baseUri: https://slack.com/api\n    description: Message\
+  \ posting, updating, deleting, and scheduling.\n    authentication:\n      type: bearer\n      token: '{{SLACK_BOT_TOKEN}}'\n    resources:\n    - name: api\n      path: /\n      description: Chat API resources.\n      operations:\n      - name: list\n        method: POST\n        description: Access Chat resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8081\n    namespace: workspace-admin-api\n    description: Unified REST API for workspace administration.\n    resources:\n    - path: /v1/admin\n      name: admin\n      description: Admin controls.\n      operations:\n      - method: GET\n        name: list-admin\n        description: List admin resources.\n        call: slack-admin.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      description: User management.\n      operations:\n\
+  \      - method: GET\n        name: list-users\n        description: List users.\n        call: slack-users.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/user-groups\n      name: user-groups\n      description: User group management.\n      operations:\n      - method: GET\n        name: list-groups\n        description: List user groups.\n        call: slack-usergroups.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/team\n      name: team\n      description: Team information.\n      operations:\n      - method: GET\n        name: get-team\n        description: Get team info.\n        call: slack-team.list\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9081\n    namespace: workspace-admin-mcp\n    transport: http\n    description: MCP server for AI-assisted workspace administration.\n    tools:\n    - name: admin-controls\n      description:\
+  \ Access admin controls.\n      hints:\n        readOnly: true\n      call: slack-admin.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-team-info\n      description: Get workspace information.\n      hints:\n        readOnly: true\n      call: slack-team.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-users\n      description: List workspace users.\n      hints:\n        readOnly: true\n      call: slack-users.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-user-groups\n      description: List user groups.\n      hints:\n        readOnly: true\n      call: slack-usergroups.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: migrate-ids\n      description: Migrate enterprise IDs.\n      hints:\n        readOnly: true\n      call: slack-migration.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name:\
+  \ auth-test\n      description: Test authentication.\n      hints:\n        readOnly: true\n      call: slack-auth.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-dnd-status\n      description: Get Do Not Disturb status.\n      hints:\n        readOnly: true\n      call: slack-dnd.list\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/slack/refs/heads/main/capabilities/workspace-administration.yaml
 tags:
 - Slack

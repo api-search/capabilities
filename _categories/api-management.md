@@ -21,7 +21,7 @@ implementations:
 - capability_name: Aklivity Kafka API Gateway
   capability_slug: kafka-api-gateway
   capability_url: https://capabilities.apis.io/capabilities/aklivity/kafka-api-gateway/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Aklivity
   provider_slug: aklivity
@@ -36,7 +36,7 @@ implementations:
 - capability_name: Apache APISIX Gateway Configuration
   capability_slug: apisix-gateway-config
   capability_url: https://capabilities.apis.io/capabilities/apache-apisix/apisix-gateway-config/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Apache APISIX
   provider_slug: apache-apisix
@@ -50,7 +50,7 @@ implementations:
 - capability_name: Apigee API Lifecycle Management
   capability_slug: api-lifecycle-management
   capability_url: https://capabilities.apis.io/capabilities/apigee/api-lifecycle-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apigee
   provider_slug: apigee
@@ -64,7 +64,7 @@ implementations:
 - capability_name: Apigee API Specification Management
   capability_slug: api-specification-management
   capability_url: https://capabilities.apis.io/capabilities/apigee/api-specification-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apigee
   provider_slug: apigee
@@ -78,7 +78,7 @@ implementations:
 - capability_name: Apigee Developer Portal and App Management
   capability_slug: developer-portal-app-management
   capability_url: https://capabilities.apis.io/capabilities/apigee/developer-portal-app-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apigee
   provider_slug: apigee
@@ -92,7 +92,7 @@ implementations:
 - capability_name: APIIDA Federated API Management
   capability_slug: federated-api-management
   capability_url: https://capabilities.apis.io/capabilities/apiida/federated-api-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 2
   provider_name: APIIDA
   provider_slug: apiida
@@ -106,7 +106,7 @@ implementations:
 - capability_name: Amazon API Gateway API Management Workflow
   capability_slug: api-management-workflow
   capability_url: https://capabilities.apis.io/capabilities/aws-api-gateway/api-management-workflow/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 13
   provider_name: Amazon API Gateway
   provider_slug: aws-api-gateway
@@ -120,7 +120,7 @@ implementations:
 - capability_name: Backstage Developer Portal
   capability_slug: developer-portal
   capability_url: https://capabilities.apis.io/capabilities/backstage/developer-portal/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Backstage
   provider_slug: backstage
@@ -133,7 +133,7 @@ implementations:
 - capability_name: Kong API Gateway Management
   capability_slug: api-gateway-management
   capability_url: https://capabilities.apis.io/capabilities/kong/api-gateway-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Kong
   provider_slug: kong
@@ -145,7 +145,7 @@ implementations:
 - capability_name: Tyk API Management
   capability_slug: api-management
   capability_url: https://capabilities.apis.io/capabilities/tyk/api-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Tyk
   provider_slug: tyk

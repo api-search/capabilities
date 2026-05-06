@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list governed accounts
-- list consents
-- spec-driven integration
-- banking
-- mcp
-- list accounts
-- capabilities
 - naftiko
-- api integration
-- governance
-- ai
+- list governed accounts
 - create consent
+- list accounts
+- list consents
+- mcp
+- governance
+- api integration
+- spec-driven integration
+- ai
+- banking
+- capabilities
 slug: banking-governance-capability
 source_filename: banking-governance-capability.yaml
 source_heading: Capability Spec

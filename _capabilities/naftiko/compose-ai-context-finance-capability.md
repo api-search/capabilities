@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- finance
-- spec-driven integration
-- get finance ai context
-- mcp
-- capabilities
-- ai context
 - naftiko
+- finance
+- ai context
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
+- get finance ai context
 slug: compose-ai-context-finance-capability
 source_filename: compose-ai-context-finance-capability.yaml
 source_heading: Capability Spec

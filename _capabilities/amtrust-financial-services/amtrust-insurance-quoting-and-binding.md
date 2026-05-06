@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- amtrust-commercial-lines
+consumed_apis: []
 description: Workflow capability for reviewing appetite, generating quotes, and binding commercial lines policies. Used by insurance agents and broker platforms.
 layout: capability
 name: AmTrust Insurance Quoting and Binding
@@ -22,38 +21,40 @@ personas: []
 provider_name: AmTrust Financial Services
 provider_slug: amtrust-financial-services
 search_terms:
-- getPolicy
-- list quotes
-- bind policy
-- check appetite
-- property and casualty
-- commercial insurance
-- agent checking appetite and generating quotes for clients
-- create quote
-- amtrust financial services
-- commercial lines
-- insurance
 - check coverage appetite
-- check amtrust coverage appetite for a business risk
-- createQuote
 - list all quotes for the agent account
-- retrieve policy details by policy number
-- small business
-- bind an approved quote to issue a policy
+- check appetite
+- create quote
 - end-to-end insurance quoting and binding workflow
 - insurance technology
-- developer integrating amtrust api into agent or broker platform
 - generate a commercial lines quote
+- insurance
+- agent checking appetite and generating quotes for clients
+- amtrust financial services
+- check amtrust coverage appetite for a business risk
+- developer integrating amtrust api into agent or broker platform
+- getPolicy
+- bind an approved quote to issue a policy
+- createQuote
+- commercial insurance
+- small business
+- list quotes
+- property and casualty
+- bind policy
 - checkAppetite
-- get policy
 - workers compensation
+- get policy
+- commercial lines
+- retrieve policy details by policy number
 slug: amtrust-insurance-quoting-and-binding
 source_filename: amtrust-insurance-quoting-and-binding.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: AmTrust Insurance Quoting and Binding\n  description: Workflow capability for reviewing appetite, generating quotes, and binding commercial lines policies. Used by insurance agents and broker platforms.\n  tags:\n  - AmTrust Financial Services\n  - Insurance\n  - Commercial Lines\n  - Workers Compensation\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AMTRUST_CLIENT_ID: AMTRUST_CLIENT_ID\n    AMTRUST_CLIENT_SECRET: AMTRUST_CLIENT_SECRET\ncapability:\n  consumes:\n  - import: amtrust-commercial-lines\n    location: ./shared/commercial-lines-api.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amtrust-quoting-api\n    description: REST API for insurance quoting and binding\n    resources:\n    - path: /v1/appetite\n      name: appetite\n      operations:\n      - method: POST\n        name: checkAppetite\n        description: Check coverage appetite\n        call: amtrust-commercial-lines.checkAppetite\n\
-  \        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/quotes\n      name: quotes\n      operations:\n      - method: POST\n        name: createQuote\n        description: Create quote\n        call: amtrust-commercial-lines.createQuote\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/policies\n      name: policies\n      operations:\n      - method: GET\n        name: getPolicy\n        description: Get policy\n        call: amtrust-commercial-lines.getPolicy\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amtrust-quoting-mcp\n    transport: http\n    description: MCP server for AI-assisted insurance quoting and binding\n    tools:\n    - name: check-appetite\n      description: Check AmTrust coverage appetite for a business risk\n      hints:\n        readOnly: false\n      call: amtrust-commercial-lines.checkAppetite\n\
-  \      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-quote\n      description: Generate a commercial lines quote\n      hints:\n        readOnly: false\n      call: amtrust-commercial-lines.createQuote\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-quotes\n      description: List all quotes for the agent account\n      hints:\n        readOnly: true\n      call: amtrust-commercial-lines.listQuotes\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: bind-policy\n      description: Bind an approved quote to issue a policy\n      hints:\n        readOnly: false\n      call: amtrust-commercial-lines.bindPolicy\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-policy\n      description: Retrieve policy details by policy number\n      hints:\n        readOnly: true\n      call: amtrust-commercial-lines.getPolicy\n\
-  \      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: AmTrust Insurance Quoting and Binding\n  description: Workflow capability for reviewing appetite, generating quotes, and binding commercial lines policies. Used\n    by insurance agents and broker platforms.\n  tags:\n  - AmTrust Financial Services\n  - Insurance\n  - Commercial Lines\n  - Workers Compensation\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AMTRUST_CLIENT_ID: AMTRUST_CLIENT_ID\n    AMTRUST_CLIENT_SECRET: AMTRUST_CLIENT_SECRET\ncapability:\n  consumes:\n  - type: http\n    namespace: amtrust-commercial-lines\n    baseUri: https://api.amtrustservices.com\n    description: AmTrust Commercial Lines API for insurance quoting and binding\n    authentication:\n      type: bearer\n      token: '{{AMTRUST_ACCESS_TOKEN}}'\n    resources:\n    - name: appetite\n      path: /v1/appetite\n      description: Coverage appetite checks\n      operations:\n      - name: checkAppetite\n        method:\
+  \ POST\n        description: Check coverage appetite for a business\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: quotes\n      path: /v1/quotes\n      description: Quote management\n      operations:\n      - name: createQuote\n        method: POST\n        description: Create a commercial lines quote\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: listQuotes\n        method: GET\n        description: List quotes\n        inputParameters:\n        - name: status\n          in: query\n          type: string\n          required: false\n          description: Filter by status\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: bindPolicy\n        method: POST\n\
+  \        description: Bind a quoted policy\n        inputParameters:\n        - name: quote_id\n          in: path\n          type: string\n          required: true\n          description: Quote ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: policies\n      path: /v1/policies\n      description: Policy management\n      operations:\n      - name: getPolicy\n        method: GET\n        description: Retrieve policy details\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n          description: Policy number\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: amtrust-quoting-api\n    description: REST API for insurance quoting and binding\n    resources:\n    - path: /v1/appetite\n     \
+  \ name: appetite\n      operations:\n      - method: POST\n        name: checkAppetite\n        description: Check coverage appetite\n        call: amtrust-commercial-lines.checkAppetite\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/quotes\n      name: quotes\n      operations:\n      - method: POST\n        name: createQuote\n        description: Create quote\n        call: amtrust-commercial-lines.createQuote\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/policies\n      name: policies\n      operations:\n      - method: GET\n        name: getPolicy\n        description: Get policy\n        call: amtrust-commercial-lines.getPolicy\n        with: {}\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: amtrust-quoting-mcp\n    transport: http\n    description: MCP server for AI-assisted insurance\
+  \ quoting and binding\n    tools:\n    - name: check-appetite\n      description: Check AmTrust coverage appetite for a business risk\n      hints:\n        readOnly: false\n      call: amtrust-commercial-lines.checkAppetite\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-quote\n      description: Generate a commercial lines quote\n      hints:\n        readOnly: false\n      call: amtrust-commercial-lines.createQuote\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-quotes\n      description: List all quotes for the agent account\n      hints:\n        readOnly: true\n      call: amtrust-commercial-lines.listQuotes\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: bind-policy\n      description: Bind an approved quote to issue a policy\n      hints:\n        readOnly: false\n      call: amtrust-commercial-lines.bindPolicy\n      with:\
+  \ {}\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-policy\n      description: Retrieve policy details by policy number\n      hints:\n        readOnly: true\n      call: amtrust-commercial-lines.getPolicy\n      with: {}\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amtrust-financial-services/refs/heads/main/capabilities/amtrust-insurance-quoting-and-binding.yaml
 tags:
 - AmTrust Financial Services

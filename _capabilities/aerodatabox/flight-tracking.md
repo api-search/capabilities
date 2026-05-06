@@ -1,10 +1,7 @@
 ---
 categories:
 - travel-booking
-consumed_apis:
-- flight
-- aircraft
-- airport
+consumed_apis: []
 description: 'Unified capability for real-time aviation intelligence combining flight status, aircraft data, and airport information. Enables developers and travel platforms to build comprehensive flight tracking, airport operations monitoring, and aircraft research applications. Primary persona: Developer or Travel Platform Engineer.'
 layout: capability
 name: AeroDataBox Flight Tracking
@@ -37,60 +34,64 @@ personas: []
 provider_name: AeroDataBox
 provider_slug: aerodatabox
 search_terms:
-- look up an aircraft.
-- retrieve airport details.
-- get aircraft
-- get airline fleet
-- get airport departures arrivals
-- track a flight by number.
-- find nearby airports.
-- get details for an airport by iata or icao code.
-- search airports
-- integrates flight data into travel booking and notification systems.
-- get airport
-- get fleet for an airline.
 - get flight status
-- get airport departures and arrivals.
-- aerodatabox
-- get aircraft data.
 - search airports near location
+- airport operations
+- flight tracking
+- travel
+- get fleet for an airline.
+- find nearby airports.
+- find airports near a geographic location.
+- aviation
+- get airport
+- get airline fleet.
+- flights
+- track a flight in real-time by flight number or callsign.
+- airport information, runway data, and location search.
+- flight data
+- aerodatabox
+- integrates flight data into travel booking and notification systems.
+- real-time and historical flight tracking, status monitoring, and fids data.
+- search airports
+- get aircraft data.
+- get flight status data.
+- get airport information.
+- track a flight by number.
+- get details for an airport by iata or icao code.
+- get airline fleet
+- aerospace
+- unified capability combining flight status, aircraft data, and airport information for real-time aviation intelligence.
+- get all departures and arrivals at an airport for a time window.
+- airport data
+- get airport departures and arrivals.
+- look up an aircraft.
+- search airports by location.
+- retrieve airport details.
+- get airport departures arrivals
 - look up aircraft details by tail number or icao24 hex code.
 - analyzes aviation performance, delay patterns, and route statistics using historical data.
-- delay statistics, route performance, and trend analysis.
-- get airport information.
-- flights
-- get airport fids
-- aircraft registrations, fleet composition, and aircraft imagery.
-- airport information, runway data, and location search.
-- track a flight in real-time by flight number or callsign.
-- flight data
 - get fids for an airport.
-- find airports near a geographic location.
-- airport data
-- flight tracking
-- get airline fleet.
-- real-time and historical flight tracking, status monitoring, and fids data.
+- get airport fids
 - get all aircraft in an airline's fleet.
-- search airports by location.
-- aerospace
-- aviation
-- airport operations
-- unified capability combining flight status, aircraft data, and airport information for real-time aviation intelligence.
-- get flight status data.
+- delay statistics, route performance, and trend analysis.
+- get aircraft
+- aircraft registrations, fleet composition, and aircraft imagery.
 - builds flight tracking, travel, and aviation applications using aerodatabox apis.
-- travel
-- get all departures and arrivals at an airport for a time window.
 slug: flight-tracking
 source_filename: flight-tracking.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"AeroDataBox Flight Tracking\"\n  description: \"Unified capability for real-time aviation intelligence combining flight status, aircraft data, and airport information. Enables developers and travel platforms to build comprehensive flight tracking, airport operations monitoring, and aircraft research applications. Primary persona: Developer or Travel Platform Engineer.\"\n  tags:\n    - AeroDataBox\n    - Aviation\n    - Flight Tracking\n    - Travel\n    - Airport Operations\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AERODATABOX_API_KEY: AERODATABOX_API_KEY\n\ncapability:\n  consumes:\n    - import: flight\n      location: ./shared/flight.yaml\n    - import: aircraft\n      location: ./shared/aircraft.yaml\n    - import: airport\n      location: ./shared/airport.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aerodatabox-flight-tracking-api\n \
-  \     description: \"Unified REST API for AeroDataBox aviation data.\"\n      resources:\n        - path: /v1/flights/{searchBy}/{searchParam}\n          name: flight-status\n          description: \"Get flight status data.\"\n          operations:\n            - method: GET\n              name: get-flight-status\n              description: \"Track a flight by number.\"\n              call: \"flight.get-flight-status\"\n              with:\n                searchBy: \"rest.searchBy\"\n                searchParam: \"rest.searchParam\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/airports/{codeType}/{code}/flights\n          name: airport-fids\n          description: \"Get FIDS for an airport.\"\n          operations:\n            - method: GET\n              name: get-airport-fids\n              description: \"Get airport departures and arrivals.\"\n              call: \"flight.get-airport-fids\"\n             \
-  \ with:\n                codeType: \"rest.codeType\"\n                code: \"rest.code\"\n                fromLocal: \"rest.fromLocal\"\n                toLocal: \"rest.toLocal\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/airports/{codeType}/{code}\n          name: airport\n          description: \"Get airport information.\"\n          operations:\n            - method: GET\n              name: get-airport\n              description: \"Retrieve airport details.\"\n              call: \"airport.get-airport\"\n              with:\n                codeType: \"rest.codeType\"\n                code: \"rest.code\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/airports/search/location\n          name: airport-search\n          description: \"Search airports by location.\"\n          operations:\n            - method: GET\n              name:\
-  \ search-airports\n              description: \"Find nearby airports.\"\n              call: \"airport.search-airports-by-location\"\n              with:\n                lat: \"rest.lat\"\n                lon: \"rest.lon\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/aircrafts/{searchBy}/{searchParam}\n          name: aircraft\n          description: \"Get aircraft data.\"\n          operations:\n            - method: GET\n              name: get-aircraft\n              description: \"Look up an aircraft.\"\n              call: \"aircraft.get-aircraft\"\n              with:\n                searchBy: \"rest.searchBy\"\n                searchParam: \"rest.searchParam\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/airlines/{airlineCode}/aircrafts\n          name: airline-fleet\n          description: \"Get airline fleet.\"\n          operations:\n\
-  \            - method: GET\n              name: get-airline-fleet\n              description: \"Get fleet for an airline.\"\n              call: \"aircraft.get-airline-fleet\"\n              with:\n                airlineCode: \"rest.airlineCode\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: aerodatabox-flight-tracking-mcp\n      transport: http\n      description: \"MCP server for AI-assisted aviation data queries using AeroDataBox.\"\n      tools:\n        - name: get-flight-status\n          description: \"Track a flight in real-time by flight number or callsign.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flight.get-flight-status\"\n          with:\n            searchBy: \"tools.searchBy\"\n            searchParam: \"tools.searchParam\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\
-  \n        - name: get-airport-departures-arrivals\n          description: \"Get all departures and arrivals at an airport for a time window.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flight.get-airport-fids\"\n          with:\n            codeType: \"tools.codeType\"\n            code: \"tools.code\"\n            fromLocal: \"tools.fromLocal\"\n            toLocal: \"tools.toLocal\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-airport\n          description: \"Get details for an airport by IATA or ICAO code.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"airport.get-airport\"\n          with:\n            codeType: \"tools.codeType\"\n            code: \"tools.code\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-airports-near-location\n          description:\
-  \ \"Find airports near a geographic location.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"airport.search-airports-by-location\"\n          with:\n            lat: \"tools.lat\"\n            lon: \"tools.lon\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-aircraft\n          description: \"Look up aircraft details by tail number or ICAO24 hex code.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aircraft.get-aircraft\"\n          with:\n            searchBy: \"tools.searchBy\"\n            searchParam: \"tools.searchParam\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-airline-fleet\n          description: \"Get all aircraft in an airline's fleet.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aircraft.get-airline-fleet\"\
-  \n          with:\n            airlineCode: \"tools.airlineCode\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: AeroDataBox Flight Tracking\n  description: 'Unified capability for real-time aviation intelligence combining flight status, aircraft data, and airport\n    information. Enables developers and travel platforms to build comprehensive flight tracking, airport operations monitoring,\n    and aircraft research applications. Primary persona: Developer or Travel Platform Engineer.'\n  tags:\n  - AeroDataBox\n  - Aviation\n  - Flight Tracking\n  - Travel\n  - Airport Operations\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AERODATABOX_API_KEY: AERODATABOX_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: flight\n    baseUri: https://prod.api.market/api/v1/aedbx/aerodatabox\n    description: AeroDataBox Flight API for real-time and historical flight data.\n    authentication:\n      type: apikey\n      key: x-api-key\n      value: '{{AERODATABOX_API_KEY}}'\n      placement: header\n\
+  \    resources:\n    - name: flight-status\n      path: /flights/{searchBy}/{searchParam}\n      description: Get current day flight status.\n      operations:\n      - name: get-flight-status\n        method: GET\n        description: Get flight status for the current day by flight number or other identifier.\n        inputParameters:\n        - name: searchBy\n          in: path\n          type: string\n          required: true\n          description: 'Search type: number, callsign, squawk.'\n        - name: searchParam\n          in: path\n          type: string\n          required: true\n          description: The search value.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: airport-fids\n      path: /flights/airports/{codeType}/{code}/{fromLocal}/{toLocal}\n      description: Get FIDS (departures and arrivals) for an airport.\n      operations:\n      - name: get-airport-fids\n        method:\
+  \ GET\n        description: Get all flights departing and arriving at an airport in a time window.\n        inputParameters:\n        - name: codeType\n          in: path\n          type: string\n          required: true\n          description: 'Airport code type: iata or icao.'\n        - name: code\n          in: path\n          type: string\n          required: true\n          description: The airport code.\n        - name: fromLocal\n          in: path\n          type: string\n          required: true\n          description: Start of time window in local airport time.\n        - name: toLocal\n          in: path\n          type: string\n          required: true\n          description: End of time window in local airport time.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: aircraft\n    baseUri: https://prod.api.market/api/v1/aedbx/aerodatabox\n    description: AeroDataBox\
+  \ Aircraft API for aircraft data and fleet information.\n    authentication:\n      type: apikey\n      key: x-api-key\n      value: '{{AERODATABOX_API_KEY}}'\n      placement: header\n    resources:\n    - name: aircraft\n      path: /aircrafts/{searchBy}/{searchParam}\n      description: Get aircraft information.\n      operations:\n      - name: get-aircraft\n        method: GET\n        description: Retrieve aircraft data by tail number, registration, or ICAO24.\n        inputParameters:\n        - name: searchBy\n          in: path\n          type: string\n          required: true\n          description: 'Search type: reg, hex, or similar.'\n        - name: searchParam\n          in: path\n          type: string\n          required: true\n          description: The search value.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: airline-fleet\n      path: /airlines/{airlineCode}/aircrafts\n  \
+  \    description: Get airline fleet.\n      operations:\n      - name: get-airline-fleet\n        method: GET\n        description: Get all aircraft in an airline's fleet.\n        inputParameters:\n        - name: airlineCode\n          in: path\n          type: string\n          required: true\n          description: IATA airline code.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: airport\n    baseUri: https://prod.api.market/api/v1/aedbx/aerodatabox\n    description: AeroDataBox Airport API for airport data and location search.\n    authentication:\n      type: apikey\n      key: x-api-key\n      value: '{{AERODATABOX_API_KEY}}'\n      placement: header\n    resources:\n    - name: airport\n      path: /airports/{codeType}/{code}\n      description: Get airport data by code.\n      operations:\n      - name: get-airport\n        method: GET\n        description: Retrieve\
+  \ airport information by IATA or ICAO code.\n        inputParameters:\n        - name: codeType\n          in: path\n          type: string\n          required: true\n          description: 'Airport code type: iata or icao.'\n        - name: code\n          in: path\n          type: string\n          required: true\n          description: Airport code.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: airport-search\n      path: /airports/search/location\n      description: Search airports by location.\n      operations:\n      - name: search-airports-by-location\n        method: GET\n        description: Find airports near a geographic coordinate.\n        inputParameters:\n        - name: lat\n          in: query\n          type: number\n          required: true\n          description: Latitude.\n        - name: lon\n          in: query\n          type: number\n          required: true\n       \
+  \   description: Longitude.\n        - name: radiusKm\n          in: query\n          type: number\n          required: false\n          description: Search radius in kilometers.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: aerodatabox-flight-tracking-api\n    description: Unified REST API for AeroDataBox aviation data.\n    resources:\n    - path: /v1/flights/{searchBy}/{searchParam}\n      name: flight-status\n      description: Get flight status data.\n      operations:\n      - method: GET\n        name: get-flight-status\n        description: Track a flight by number.\n        call: flight.get-flight-status\n        with:\n          searchBy: rest.searchBy\n          searchParam: rest.searchParam\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/airports/{codeType}/{code}/flights\n      name: airport-fids\n\
+  \      description: Get FIDS for an airport.\n      operations:\n      - method: GET\n        name: get-airport-fids\n        description: Get airport departures and arrivals.\n        call: flight.get-airport-fids\n        with:\n          codeType: rest.codeType\n          code: rest.code\n          fromLocal: rest.fromLocal\n          toLocal: rest.toLocal\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/airports/{codeType}/{code}\n      name: airport\n      description: Get airport information.\n      operations:\n      - method: GET\n        name: get-airport\n        description: Retrieve airport details.\n        call: airport.get-airport\n        with:\n          codeType: rest.codeType\n          code: rest.code\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/airports/search/location\n      name: airport-search\n      description: Search airports by location.\n      operations:\n      - method:\
+  \ GET\n        name: search-airports\n        description: Find nearby airports.\n        call: airport.search-airports-by-location\n        with:\n          lat: rest.lat\n          lon: rest.lon\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/aircrafts/{searchBy}/{searchParam}\n      name: aircraft\n      description: Get aircraft data.\n      operations:\n      - method: GET\n        name: get-aircraft\n        description: Look up an aircraft.\n        call: aircraft.get-aircraft\n        with:\n          searchBy: rest.searchBy\n          searchParam: rest.searchParam\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/airlines/{airlineCode}/aircrafts\n      name: airline-fleet\n      description: Get airline fleet.\n      operations:\n      - method: GET\n        name: get-airline-fleet\n        description: Get fleet for an airline.\n        call: aircraft.get-airline-fleet\n        with:\n       \
+  \   airlineCode: rest.airlineCode\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: aerodatabox-flight-tracking-mcp\n    transport: http\n    description: MCP server for AI-assisted aviation data queries using AeroDataBox.\n    tools:\n    - name: get-flight-status\n      description: Track a flight in real-time by flight number or callsign.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: flight.get-flight-status\n      with:\n        searchBy: tools.searchBy\n        searchParam: tools.searchParam\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-airport-departures-arrivals\n      description: Get all departures and arrivals at an airport for a time window.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: flight.get-airport-fids\n      with:\n        codeType: tools.codeType\n        code: tools.code\n        fromLocal: tools.fromLocal\n\
+  \        toLocal: tools.toLocal\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-airport\n      description: Get details for an airport by IATA or ICAO code.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: airport.get-airport\n      with:\n        codeType: tools.codeType\n        code: tools.code\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-airports-near-location\n      description: Find airports near a geographic location.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: airport.search-airports-by-location\n      with:\n        lat: tools.lat\n        lon: tools.lon\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-aircraft\n      description: Look up aircraft details by tail number or ICAO24 hex code.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: aircraft.get-aircraft\n      with:\n    \
+  \    searchBy: tools.searchBy\n        searchParam: tools.searchParam\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-airline-fleet\n      description: Get all aircraft in an airline's fleet.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: aircraft.get-airline-fleet\n      with:\n        airlineCode: tools.airlineCode\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aerodatabox/refs/heads/main/capabilities/flight-tracking.yaml
 tags:
 - AeroDataBox

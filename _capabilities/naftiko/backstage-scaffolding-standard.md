@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- naftiko
+- list templates
+- standard
 - backstage
-- spec-driven integration
+- api integration
 - governance
+- spec-driven integration
+- ai
 - mcp
 - capabilities
-- list templates
-- naftiko
-- api integration
 - get template
-- ai
-- standard
 slug: backstage-scaffolding-standard
 source_filename: backstage-scaffolding-standard.yaml
 source_heading: Capability Spec

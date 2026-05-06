@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- list capabilities
-- mcp
-- redmonk
-- capabilities
-- devx
-- get capability
 - naftiko
+- devx
 - api integration
 - governance
+- capabilities
+- spec-driven integration
+- redmonk
 - ai
+- mcp
+- get capability
+- list capabilities
 slug: devx-redmonk-review-walkthrough
 source_filename: devx-redmonk-review-walkthrough.yaml
 source_heading: Capability Spec

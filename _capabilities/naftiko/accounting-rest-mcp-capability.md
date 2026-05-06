@@ -17,23 +17,23 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list all open invoices in the bound quickbooks company.
-- get invoice
-- spec-driven integration
-- get customer
-- governance
-- list open invoices
-- mcp
-- ai
-- capabilities
-- quickbooks
 - naftiko
-- api integration
-- list all open (non-zero balance) invoices.
 - get a single quickbooks invoice by id.
+- quickbooks
+- list all open (non-zero balance) invoices.
 - accounting
-- get a quickbooks customer by id.
+- get invoice
+- list open invoices
+- list all open invoices in the bound quickbooks company.
+- api integration
+- governance
+- get customer
+- spec-driven integration
+- ai
 - get a single invoice by id.
+- mcp
+- capabilities
+- get a quickbooks customer by id.
 slug: accounting-rest-mcp-capability
 source_filename: accounting-rest-mcp-capability.yaml
 source_heading: Capability Spec

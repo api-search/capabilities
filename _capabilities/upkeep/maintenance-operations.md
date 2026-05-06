@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: upkeep-openapi.yml
-  format: yaml
-  label: upkeep
-  slug: upkeep
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/upkeep/refs/heads/main/openapi/upkeep-openapi.yml
 categories: []
-consumed_apis:
-- upkeep
+consumed_apis: []
 description: Workflow capability for UpKeep maintenance operations, composing work order management, asset tracking, preventive maintenance scheduling, parts inventory, and purchase order workflows. Designed for maintenance managers, facility managers, and technicians executing day-to-day operations management tasks.
 layout: capability
 name: UpKeep Maintenance Operations
@@ -69,72 +61,77 @@ personas: []
 provider_name: UpKeep
 provider_slug: upkeep
 search_terms:
-- register a new asset
-- submit a new maintenance request
-- list parts and inventory items
-- list preventive maintenances
-- work orders
-- list parts
-- create asset
-- list requests
-- update a work order status or assignment
-- list maintenance work orders with optional status and priority filters
-- asset management
-- get asset
-- get details and maintenance history for a specific asset
-- list work orders with optional filters
-- list preventive maintenance schedules
-- update a work order status, priority, or assignment
-- list assets
-- list pm schedules
-- create request
-- create work order
+- preventive maintenance schedules
 - get work order details
-- maintenance request intake
-- maintenance management
-- list meters for asset condition tracking
+- list preventive maintenances
+- list maintenance requests submitted by requestors
+- list facility assets, optionally filtered by location
+- get details and maintenance history for a specific asset
+- get asset
+- create a new maintenance work order
 - get work order
-- individual work order operations
-- upkeep
-- work order management
-- create preventive maintenance
-- list assets with location filter
-- submit a maintenance request
-- create a new pm schedule
-- list parts in inventory
 - parts and inventory
-- meter tracking
-- get full details of a specific work order
-- create a new preventive maintenance schedule
-- individual asset operations
+- update work order
+- list work orders
+- list maintenance work orders with optional status and priority filters
+- create preventive maintenance
+- register a new asset
+- individual work order operations
+- facility management
+- list pm schedules
+- list requests
+- maintenance request intake
+- list meters
 - register a new asset in the system
+- list parts and inventory items
+- meter tracking
+- list assets with location filter
+- create asset
+- create work order
+- update a work order status or assignment
 - list maintenance requests
 - asset tracking and management
+- update a work order status, priority, or assignment
+- create a new preventive maintenance schedule
+- list work orders with optional filters
+- upkeep
+- list parts
+- get full details of a specific work order
+- list assets
+- submit a new maintenance request
 - get asset details and history
-- preventive maintenance schedules
-- list meters
-- list facility assets, optionally filtered by location
-- create a new maintenance work order
-- list maintenance requests submitted by requestors
-- facility management
-- update work order
-- cmms
+- work order management
+- individual asset operations
 - preventive maintenance
-- list work orders
+- maintenance management
+- work orders
+- cmms
+- list preventive maintenance schedules
+- list meters for asset condition tracking
+- create request
+- asset management
+- submit a maintenance request
+- list parts in inventory
+- create a new pm schedule
 slug: maintenance-operations
 source_filename: maintenance-operations.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"UpKeep Maintenance Operations\"\n  description: >-\n    Workflow capability for UpKeep maintenance operations, composing work order\n    management, asset tracking, preventive maintenance scheduling, parts\n    inventory, and purchase order workflows. Designed for maintenance managers,\n    facility managers, and technicians executing day-to-day operations\n    management tasks.\n  tags:\n    - UpKeep\n    - CMMS\n    - Maintenance Management\n    - Asset Management\n    - Facility Management\n    - Work Orders\n    - Preventive Maintenance\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      UPKEEP_SESSION_TOKEN: UPKEEP_SESSION_TOKEN\n\ncapability:\n  consumes:\n    - import: upkeep\n      location: ./shared/upkeep.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: upkeep-maintenance-api\n      description: \"Unified REST API for UpKeep maintenance operations\
-  \ workflows.\"\n      resources:\n        - path: /v1/work-orders\n          name: work-orders\n          description: \"Work order management\"\n          operations:\n            - method: GET\n              name: list-work-orders\n              description: \"List work orders with optional filters\"\n              call: \"upkeep.list-work-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-work-order\n              description: \"Create a new maintenance work order\"\n              call: \"upkeep.create-work-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/work-orders/{id}\n          name: work-order\n          description: \"Individual work order operations\"\n          operations:\n            - method: GET\n              name: get-work-order\n              description: \"Get work order details\"\
-  \n              call: \"upkeep.get-work-order\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PATCH\n              name: update-work-order\n              description: \"Update a work order status or assignment\"\n              call: \"upkeep.update-work-order\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/assets\n          name: assets\n          description: \"Asset tracking and management\"\n          operations:\n            - method: GET\n              name: list-assets\n              description: \"List assets with location filter\"\n              call: \"upkeep.list-assets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name:\
-  \ create-asset\n              description: \"Register a new asset\"\n              call: \"upkeep.create-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/assets/{id}\n          name: asset\n          description: \"Individual asset operations\"\n          operations:\n            - method: GET\n              name: get-asset\n              description: \"Get asset details and history\"\n              call: \"upkeep.get-asset\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/preventive-maintenances\n          name: preventive-maintenances\n          description: \"Preventive maintenance schedules\"\n          operations:\n            - method: GET\n              name: list-preventive-maintenances\n              description: \"List PM schedules\"\n              call: \"upkeep.list-preventive-maintenances\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-preventive-maintenance\n              description: \"Create a new PM schedule\"\n              call: \"upkeep.create-preventive-maintenance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/parts\n          name: parts\n          description: \"Parts and inventory\"\n          operations:\n            - method: GET\n              name: list-parts\n              description: \"List parts in inventory\"\n              call: \"upkeep.list-parts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/meters\n          name: meters\n          description: \"Meter tracking\"\n          operations:\n            - method: GET\n              name: list-meters\n              description: \"List meters\"\
-  \n              call: \"upkeep.list-meters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/requests\n          name: requests\n          description: \"Maintenance request intake\"\n          operations:\n            - method: GET\n              name: list-requests\n              description: \"List maintenance requests\"\n              call: \"upkeep.list-requests\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-request\n              description: \"Submit a maintenance request\"\n              call: \"upkeep.create-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: upkeep-maintenance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted UpKeep maintenance operations.\"\
-  \n      tools:\n        - name: list-work-orders\n          description: \"List maintenance work orders with optional status and priority filters\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.list-work-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-work-order\n          description: \"Get full details of a specific work order\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.get-work-order\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-work-order\n          description: \"Create a new maintenance work order\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"upkeep.create-work-order\"\n          outputParameters:\n            - type: object\n      \
-  \        mapping: \"$.\"\n        - name: update-work-order\n          description: \"Update a work order status, priority, or assignment\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"upkeep.update-work-order\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-assets\n          description: \"List facility assets, optionally filtered by location\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.list-assets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-asset\n          description: \"Get details and maintenance history for a specific asset\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.get-asset\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: create-asset\n          description: \"Register a new asset in the system\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"upkeep.create-asset\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-preventive-maintenances\n          description: \"List preventive maintenance schedules\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.list-preventive-maintenances\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-preventive-maintenance\n          description: \"Create a new preventive maintenance schedule\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"upkeep.create-preventive-maintenance\"\n          outputParameters:\n            - type: object\n\
-  \              mapping: \"$.\"\n        - name: list-parts\n          description: \"List parts and inventory items\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.list-parts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-meters\n          description: \"List meters for asset condition tracking\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.list-meters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-requests\n          description: \"List maintenance requests submitted by requestors\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"upkeep.list-requests\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-request\n          description: \"Submit\
-  \ a new maintenance request\"\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"upkeep.create-request\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: UpKeep Maintenance Operations\n  description: Workflow capability for UpKeep maintenance operations, composing work order management, asset tracking, preventive\n    maintenance scheduling, parts inventory, and purchase order workflows. Designed for maintenance managers, facility managers,\n    and technicians executing day-to-day operations management tasks.\n  tags:\n  - UpKeep\n  - CMMS\n  - Maintenance Management\n  - Asset Management\n  - Facility Management\n  - Work Orders\n  - Preventive Maintenance\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    UPKEEP_SESSION_TOKEN: UPKEEP_SESSION_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: upkeep\n    baseUri: https://api.onupkeep.com/api/v2\n    description: UpKeep CMMS REST API\n    authentication:\n      type: apikey\n      key: session-token\n      value: '{{UPKEEP_SESSION_TOKEN}}'\n      placement: header\n    resources:\n \
+  \   - name: work-orders\n      path: /work-orders\n      description: Work order management\n      operations:\n      - name: list-work-orders\n        method: GET\n        description: List work orders with optional filters\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: status\n          in: query\n          type: string\n          required: false\n        - name: priority\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-work-order\n        method: POST\n        description: Create a new work order\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n       \
+  \ body:\n          type: json\n          data:\n            title: '{{tools.title}}'\n            description: '{{tools.description}}'\n            priority: '{{tools.priority}}'\n            assetId: '{{tools.assetId}}'\n            locationId: '{{tools.locationId}}'\n            assignedToId: '{{tools.assignedToId}}'\n            dueDate: '{{tools.dueDate}}'\n    - name: work-order\n      path: /work-orders/{id}\n      description: Individual work order operations\n      operations:\n      - name: get-work-order\n        method: GET\n        description: Get work order details\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-work-order\n        method: PATCH\n        description: Update a work order\n        inputParameters:\n        - name: id\n          in: path\n     \
+  \     type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            status: '{{tools.status}}'\n            priority: '{{tools.priority}}'\n            assignedToId: '{{tools.assignedToId}}'\n    - name: assets\n      path: /assets\n      description: Asset management\n      operations:\n      - name: list-assets\n        method: GET\n        description: List assets\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: locationId\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name:\
+  \ create-asset\n        method: POST\n        description: Create a new asset\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            locationId: '{{tools.locationId}}'\n            serialNumber: '{{tools.serialNumber}}'\n            manufacturer: '{{tools.manufacturer}}'\n            model: '{{tools.model}}'\n    - name: asset\n      path: /assets/{id}\n      description: Individual asset operations\n      operations:\n      - name: get-asset\n        method: GET\n        description: Get asset details\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: preventive-maintenances\n      path: /preventive-maintenances\n\
+  \      description: Preventive maintenance schedules\n      operations:\n      - name: list-preventive-maintenances\n        method: GET\n        description: List preventive maintenance schedules\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-preventive-maintenance\n        method: POST\n        description: Create a preventive maintenance schedule\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            title: '{{tools.title}}'\n            assetId: '{{tools.assetId}}'\n            frequency: '{{tools.frequency}}'\n            startDate: '{{tools.startDate}}'\n    - name: parts\n      path: /parts\n      description: Parts inventory management\n      operations:\n      - name: list-parts\n        method: GET\n        description: List parts in inventory\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: meters\n      path: /meters\n      description: Meter management\n      operations:\n      - name: list-meters\n        method: GET\n        description: List meters\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: requests\n      path: /requests\n      description: Maintenance request management\n      operations:\n      - name: list-requests\n        method: GET\n        description: List maintenance requests\n        inputParameters:\n        - name: status\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-request\n        method: POST\n        description: Submit a maintenance request\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            title: '{{tools.title}}'\n            description: '{{tools.description}}'\n            assetId: '{{tools.assetId}}'\n            priority: '{{tools.priority}}'\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: upkeep-maintenance-api\n    description: Unified REST API for UpKeep maintenance operations workflows.\n    resources:\n    - path: /v1/work-orders\n      name: work-orders\n      description: Work order management\n      operations:\n      - method: GET\n        name: list-work-orders\n        description: List work orders with optional filters\n        call: upkeep.list-work-orders\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-work-order\n        description: Create a new maintenance work order\n        call:\
+  \ upkeep.create-work-order\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/work-orders/{id}\n      name: work-order\n      description: Individual work order operations\n      operations:\n      - method: GET\n        name: get-work-order\n        description: Get work order details\n        call: upkeep.get-work-order\n        with:\n          id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PATCH\n        name: update-work-order\n        description: Update a work order status or assignment\n        call: upkeep.update-work-order\n        with:\n          id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/assets\n      name: assets\n      description: Asset tracking and management\n      operations:\n      - method: GET\n        name: list-assets\n        description: List assets with location filter\n        call: upkeep.list-assets\n \
+  \       outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-asset\n        description: Register a new asset\n        call: upkeep.create-asset\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/assets/{id}\n      name: asset\n      description: Individual asset operations\n      operations:\n      - method: GET\n        name: get-asset\n        description: Get asset details and history\n        call: upkeep.get-asset\n        with:\n          id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/preventive-maintenances\n      name: preventive-maintenances\n      description: Preventive maintenance schedules\n      operations:\n      - method: GET\n        name: list-preventive-maintenances\n        description: List PM schedules\n        call: upkeep.list-preventive-maintenances\n        outputParameters:\n        - type: object\n         \
+  \ mapping: $.\n      - method: POST\n        name: create-preventive-maintenance\n        description: Create a new PM schedule\n        call: upkeep.create-preventive-maintenance\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/parts\n      name: parts\n      description: Parts and inventory\n      operations:\n      - method: GET\n        name: list-parts\n        description: List parts in inventory\n        call: upkeep.list-parts\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/meters\n      name: meters\n      description: Meter tracking\n      operations:\n      - method: GET\n        name: list-meters\n        description: List meters\n        call: upkeep.list-meters\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/requests\n      name: requests\n      description: Maintenance request intake\n      operations:\n      - method: GET\n        name: list-requests\n\
+  \        description: List maintenance requests\n        call: upkeep.list-requests\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-request\n        description: Submit a maintenance request\n        call: upkeep.create-request\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: upkeep-maintenance-mcp\n    transport: http\n    description: MCP server for AI-assisted UpKeep maintenance operations.\n    tools:\n    - name: list-work-orders\n      description: List maintenance work orders with optional status and priority filters\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.list-work-orders\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-work-order\n      description: Get full details of a specific work order\n      hints:\n        readOnly: true\n        openWorld: false\n   \
+  \   call: upkeep.get-work-order\n      with:\n        id: tools.id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-work-order\n      description: Create a new maintenance work order\n      hints:\n        readOnly: false\n        openWorld: false\n      call: upkeep.create-work-order\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-work-order\n      description: Update a work order status, priority, or assignment\n      hints:\n        readOnly: false\n        idempotent: true\n      call: upkeep.update-work-order\n      with:\n        id: tools.id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-assets\n      description: List facility assets, optionally filtered by location\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.list-assets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-asset\n      description:\
+  \ Get details and maintenance history for a specific asset\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.get-asset\n      with:\n        id: tools.id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-asset\n      description: Register a new asset in the system\n      hints:\n        readOnly: false\n        openWorld: false\n      call: upkeep.create-asset\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-preventive-maintenances\n      description: List preventive maintenance schedules\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.list-preventive-maintenances\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-preventive-maintenance\n      description: Create a new preventive maintenance schedule\n      hints:\n        readOnly: false\n        openWorld: false\n      call: upkeep.create-preventive-maintenance\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-parts\n      description: List parts and inventory items\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.list-parts\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-meters\n      description: List meters for asset condition tracking\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.list-meters\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-requests\n      description: List maintenance requests submitted by requestors\n      hints:\n        readOnly: true\n        openWorld: false\n      call: upkeep.list-requests\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-request\n      description: Submit a new maintenance request\n      hints:\n        readOnly: false\n        openWorld: false\n      call: upkeep.create-request\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/upkeep/refs/heads/main/capabilities/maintenance-operations.yaml
 tags:
 - UpKeep

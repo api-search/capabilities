@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- apidays
-- events
-- spec-driven integration
-- record a lead scan into crm.
-- mcp
-- capabilities
 - naftiko
-- api integration
-- governance
-- ai
 - capture scan
 - record a lead scan; creates a hubspot contact.
+- record a lead scan into crm.
+- api integration
+- governance
+- apidays
+- capabilities
+- ai
+- spec-driven integration
+- mcp
+- events
 slug: apidays-nyc-booth-capability
 source_filename: apidays-nyc-booth-capability.yaml
 source_heading: Capability Spec

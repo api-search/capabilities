@@ -1,15 +1,7 @@
 ---
-api_specs:
-- filename: amazon-service-catalog-openapi.yml
-  format: yaml
-  label: amazon-service-catalog
-  slug: amazon-service-catalog
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/amazon-service-catalog/refs/heads/main/openapi/amazon-service-catalog-openapi.yml
 categories:
 - compliance
-consumed_apis:
-- amazon-service-catalog
+consumed_apis: []
 description: Unified capability for IT service governance including portfolio management, product catalog curation, and self-service product provisioning. Used by IT Administrators and End Users.
 layout: capability
 name: Amazon Service Catalog IT Service Governance
@@ -38,45 +30,48 @@ personas: []
 provider_name: Amazon Service Catalog
 provider_slug: amazon-service-catalog
 search_terms:
-- create product
+- describe portfolio
+- it governance
+- add a new product to the it service catalog
+- check the status of a provisioned product
+- create a new it service catalog portfolio
+- compliance
+- terminate provisioned product
+- it service portfolio management
+- self-service provision an approved it product
+- cloud governance
+- create portfolio
+- terminate and decommission a provisioned product
+- browse approved products
+- list all it service catalog portfolios
+- list all it service portfolios
+- provision product
+- self-service
+- self-service product provisioning
+- browse and search approved it products
+- approved product catalog
 - provision an approved product
 - list portfolios
-- terminate provisioned product
-- it governance
-- add a product to the catalog
-- provision product
-- create portfolio
-- self-service
-- service catalog
-- terminate and decommission a provisioned product
-- cloud governance
-- add a new product to the it service catalog
-- browse and search approved it products
-- self-service product provisioning
-- describe provisioned product
-- it service portfolio management
-- check the status of a provisioned product
-- approved product catalog
-- describe portfolio
 - get details about an it service portfolio
-- amazon service catalog
-- compliance
-- create a new it service catalog portfolio
-- list all it service portfolios
-- search products
-- list all it service catalog portfolios
+- service catalog
+- create product
 - create an it service portfolio
-- self-service provision an approved it product
-- browse approved products
+- amazon service catalog
+- add a product to the catalog
+- search products
+- describe provisioned product
 slug: it-service-governance
 source_filename: it-service-governance.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Service Catalog IT Service Governance\"\n  description: \"Unified capability for IT service governance including portfolio management, product catalog curation, and self-service product provisioning. Used by IT Administrators and End Users.\"\n  tags:\n    - Amazon Service Catalog\n    - IT Governance\n    - Cloud Governance\n    - Self-Service\n    - Compliance\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: amazon-service-catalog\n      location: ./shared/amazon-service-catalog.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: it-service-governance-api\n      description: \"Unified REST API for Amazon Service Catalog IT service governance.\"\n      resources:\n        - path: /v1/portfolios\n\
-  \          name: portfolios\n          description: \"IT service portfolio management\"\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: \"List all IT service portfolios\"\n              call: \"amazon-service-catalog.list-portfolios\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-portfolio\n              description: \"Create an IT service portfolio\"\n              call: \"amazon-service-catalog.create-portfolio\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/products\n          name: products\n          description: \"Approved product catalog\"\n          operations:\n            - method: GET\n              name: search-products\n              description: \"Browse approved products\"\n              call: \"amazon-service-catalog.search-products\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-product\n              description: \"Add a product to the catalog\"\n              call: \"amazon-service-catalog.create-product\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/provisioned-products\n          name: provisioned-products\n          description: \"Self-service product provisioning\"\n          operations:\n            - method: POST\n              name: provision-product\n              description: \"Provision an approved product\"\n              call: \"amazon-service-catalog.provision-product\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: it-service-governance-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\
-  \ Amazon Service Catalog IT service governance.\"\n      tools:\n        - name: list-portfolios\n          description: \"List all IT service catalog portfolios\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amazon-service-catalog.list-portfolios\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-portfolio\n          description: \"Create a new IT service catalog portfolio\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"amazon-service-catalog.create-portfolio\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: describe-portfolio\n          description: \"Get details about an IT service portfolio\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amazon-service-catalog.describe-portfolio\"\n          outputParameters:\n     \
-  \       - type: object\n              mapping: \"$.\"\n        - name: search-products\n          description: \"Browse and search approved IT products\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amazon-service-catalog.search-products\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-product\n          description: \"Add a new product to the IT service catalog\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"amazon-service-catalog.create-product\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: provision-product\n          description: \"Self-service provision an approved IT product\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"amazon-service-catalog.provision-product\"\n          outputParameters:\n            -\
-  \ type: object\n              mapping: \"$.\"\n        - name: describe-provisioned-product\n          description: \"Check the status of a provisioned product\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"amazon-service-catalog.describe-provisioned-product\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: terminate-provisioned-product\n          description: \"Terminate and decommission a provisioned product\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"amazon-service-catalog.terminate-provisioned-product\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon Service Catalog IT Service Governance\n  description: Unified capability for IT service governance including portfolio management, product catalog curation, and\n    self-service product provisioning. Used by IT Administrators and End Users.\n  tags:\n  - Amazon Service Catalog\n  - IT Governance\n  - Cloud Governance\n  - Self-Service\n  - Compliance\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - type: http\n    namespace: amazon-service-catalog\n    baseUri: https://servicecatalog.us-east-1.amazonaws.com\n    description: Amazon Service Catalog REST API\n    authentication:\n      type: apikey\n      key: Authorization\n      value: AWS4-HMAC-SHA256 Credential={{AWS_ACCESS_KEY_ID}}\n      placement: header\n    resources:\n    - name: portfolios\n\
+  \      path: /portfolios\n      description: Portfolio management operations\n      operations:\n      - name: list-portfolios\n        method: GET\n        description: Lists all portfolios in the account\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-portfolio\n        method: POST\n        description: Creates a portfolio\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: describe-portfolio\n        method: GET\n        description: Gets information about a portfolio\n        inputParameters:\n        - name: PortfolioId\n          in: path\n          type: string\n          required: true\n          description: The portfolio identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-portfolio\n\
+  \        method: DELETE\n        description: Deletes a portfolio\n        inputParameters:\n        - name: PortfolioId\n          in: path\n          type: string\n          required: true\n          description: The portfolio identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: products\n      path: /products\n      description: Product management operations\n      operations:\n      - name: search-products\n        method: GET\n        description: Gets information about products\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-product\n        method: POST\n        description: Creates a product\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: provisioned-products\n      path: /provisioned-products\n\
+  \      description: Provisioned product management\n      operations:\n      - name: provision-product\n        method: POST\n        description: Provisions a product\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: describe-provisioned-product\n        method: GET\n        description: Gets information about a provisioned product\n        inputParameters:\n        - name: ProvisionedProductId\n          in: path\n          type: string\n          required: true\n          description: The provisioned product identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: terminate-provisioned-product\n        method: DELETE\n        description: Terminates a provisioned product\n        inputParameters:\n        - name: ProvisionedProductId\n          in: path\n          type: string\n          required:\
+  \ true\n          description: The provisioned product identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: it-service-governance-api\n    description: Unified REST API for Amazon Service Catalog IT service governance.\n    resources:\n    - path: /v1/portfolios\n      name: portfolios\n      description: IT service portfolio management\n      operations:\n      - method: GET\n        name: list-portfolios\n        description: List all IT service portfolios\n        call: amazon-service-catalog.list-portfolios\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-portfolio\n        description: Create an IT service portfolio\n        call: amazon-service-catalog.create-portfolio\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/products\n\
+  \      name: products\n      description: Approved product catalog\n      operations:\n      - method: GET\n        name: search-products\n        description: Browse approved products\n        call: amazon-service-catalog.search-products\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-product\n        description: Add a product to the catalog\n        call: amazon-service-catalog.create-product\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/provisioned-products\n      name: provisioned-products\n      description: Self-service product provisioning\n      operations:\n      - method: POST\n        name: provision-product\n        description: Provision an approved product\n        call: amazon-service-catalog.provision-product\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: it-service-governance-mcp\n\
+  \    transport: http\n    description: MCP server for AI-assisted Amazon Service Catalog IT service governance.\n    tools:\n    - name: list-portfolios\n      description: List all IT service catalog portfolios\n      hints:\n        readOnly: true\n        idempotent: true\n      call: amazon-service-catalog.list-portfolios\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-portfolio\n      description: Create a new IT service catalog portfolio\n      hints:\n        readOnly: false\n        idempotent: false\n      call: amazon-service-catalog.create-portfolio\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-portfolio\n      description: Get details about an IT service portfolio\n      hints:\n        readOnly: true\n        idempotent: true\n      call: amazon-service-catalog.describe-portfolio\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-products\n      description:\
+  \ Browse and search approved IT products\n      hints:\n        readOnly: true\n        idempotent: true\n      call: amazon-service-catalog.search-products\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-product\n      description: Add a new product to the IT service catalog\n      hints:\n        readOnly: false\n        idempotent: false\n      call: amazon-service-catalog.create-product\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: provision-product\n      description: Self-service provision an approved IT product\n      hints:\n        readOnly: false\n        idempotent: false\n      call: amazon-service-catalog.provision-product\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-provisioned-product\n      description: Check the status of a provisioned product\n      hints:\n        readOnly: true\n        idempotent: true\n      call: amazon-service-catalog.describe-provisioned-product\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: terminate-provisioned-product\n      description: Terminate and decommission a provisioned product\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: amazon-service-catalog.terminate-provisioned-product\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-service-catalog/refs/heads/main/capabilities/it-service-governance.yaml
 tags:
 - Amazon Service Catalog

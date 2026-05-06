@@ -21,7 +21,7 @@ implementations:
 - capability_name: ActiveCampaign CRM and Sales
   capability_slug: crm-sales
   capability_url: https://capabilities.apis.io/capabilities/activecampaign/crm-sales/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: ActiveCampaign
   provider_slug: activecampaign
@@ -35,7 +35,7 @@ implementations:
 - capability_name: Apache OFBiz ERP Operations
   capability_slug: apache-ofbiz-erp-operations
   capability_url: https://capabilities.apis.io/capabilities/apache-ofbiz/apache-ofbiz-erp-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Apache OFBiz
   provider_slug: apache-ofbiz
@@ -49,7 +49,7 @@ implementations:
 - capability_name: HubSpot CRM Management
   capability_slug: crm-management
   capability_url: https://capabilities.apis.io/capabilities/hubspot/crm-management/
-  consumed_api_count: 7
+  consumed_api_count: 0
   operation_count: 0
   provider_name: HubSpot
   provider_slug: hubspot
@@ -62,7 +62,7 @@ implementations:
 - capability_name: HubSpot Customer Service
   capability_slug: customer-service
   capability_url: https://capabilities.apis.io/capabilities/hubspot/customer-service/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 5
   provider_name: HubSpot
   provider_slug: hubspot
@@ -76,7 +76,7 @@ implementations:
 - capability_name: HubSpot Sales Engagement
   capability_slug: sales-engagement
   capability_url: https://capabilities.apis.io/capabilities/hubspot/sales-engagement/
-  consumed_api_count: 5
+  consumed_api_count: 0
   operation_count: 0
   provider_name: HubSpot
   provider_slug: hubspot
@@ -89,7 +89,7 @@ implementations:
 - capability_name: HubSpot Sales Pipeline
   capability_slug: sales-pipeline
   capability_url: https://capabilities.apis.io/capabilities/hubspot/sales-pipeline/
-  consumed_api_count: 10
+  consumed_api_count: 0
   operation_count: 12
   provider_name: HubSpot
   provider_slug: hubspot
@@ -103,7 +103,7 @@ implementations:
 - capability_name: LinkedIn Sales Engagement
   capability_slug: sales-engagement
   capability_url: https://capabilities.apis.io/capabilities/linkedin/sales-engagement/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: LinkedIn
   provider_slug: linkedin
@@ -116,7 +116,7 @@ implementations:
 - capability_name: Microsoft Power Apps Data Platform
   capability_slug: data-platform
   capability_url: https://capabilities.apis.io/capabilities/microsoft-power-apps/data-platform/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Microsoft Power Apps
   provider_slug: microsoft-power-apps
@@ -129,7 +129,7 @@ implementations:
 - capability_name: PeopleSoft Customer Engagement
   capability_slug: customer-engagement
   capability_url: https://capabilities.apis.io/capabilities/peoplesoft/customer-engagement/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 9
   provider_name: PeopleSoft
   provider_slug: peoplesoft
@@ -144,7 +144,7 @@ implementations:
 - capability_name: Salesforce CRM Data Management
   capability_slug: crm-data-management
   capability_url: https://capabilities.apis.io/capabilities/salesforce/crm-data-management/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 32
   provider_name: Salesforce
   provider_slug: salesforce
@@ -158,7 +158,7 @@ implementations:
 - capability_name: Salesforce Data Operations
   capability_slug: data-operations
   capability_url: https://capabilities.apis.io/capabilities/salesforce-automation/data-operations/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Salesforce Automation
   provider_slug: salesforce-automation

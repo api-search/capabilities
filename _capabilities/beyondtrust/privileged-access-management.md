@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- beyondtrust
+consumed_apis: []
 description: Unified privileged access management workflow combining Password Safe credential management, access request workflows, and secrets management. Used by security engineers and DevOps teams to manage just-in-time privileged access and secrets retrieval for automated pipelines.
 layout: capability
 name: BeyondTrust Privileged Access Management
@@ -52,65 +51,70 @@ personas:
 provider_name: BeyondTrust
 provider_slug: beyondtrust
 search_terms:
-- list secrets
+- list privileged accounts available for just-in-time access
+- security engineer
+- individual secret operations
+- list access requests
+- delete secret
+- cancel and delete an access request
+- delete request
+- privileged account discovery
+- access request management
+- devops engineer
+- just in time access
+- beyondtrust
 - list secrets stored in beyondtrust secrets safe
+- compliance
+- security
+- credentials
 - list requests
 - secrets management
-- list privileged accounts available for just-in-time access
-- security
-- create secret
-- create an access request
-- create request
-- create a just-in-time access request for a privileged account
-- list managed accounts
-- delete secret
-- access
-- beyondtrust
+- get request credentials
+- privileged access
+- credential retrieval for approved requests
+- list managed systems
 - privileged access management
 - list all active privileged access requests
-- cancel and delete an access request
-- devops engineer
-- get a secret value
-- create a new secret
-- access management
-- privileged access
-- devops engineer retrieving secrets and credentials for ci/cd pipelines
-- credentials
-- just-in-time access to privileged accounts on managed systems
-- just in time access
-- security engineer
+- create secret
 - get secret
-- secure storage and retrieval of secrets and credentials
-- zero trust
-- delete a secret
-- individual secret operations
-- delete request
-- store a new secret in secrets safe
-- retrieve a specific secret value from secrets safe
-- security team member managing privileged access policies and requests
-- get request credentials
-- list managed systems
-- access request management
-- managed system discovery
 - get credentials for approved request
-- compliance
-- list systems registered in password safe
-- list access requests
-- secrets
-- credential retrieval for approved requests
-- privileged account discovery
+- zero trust
 - retrieve credentials for an approved privileged access request
+- just-in-time access to privileged accounts on managed systems
+- secure storage and retrieval of secrets and credentials
+- get a secret value
+- store a new secret in secrets safe
+- access management
+- create an access request
+- delete a secret
+- devops engineer retrieving secrets and credentials for ci/cd pipelines
+- secrets
+- list systems registered in password safe
+- retrieve a specific secret value from secrets safe
+- list secrets
+- create request
+- create a new secret
+- create a just-in-time access request for a privileged account
+- access
+- list managed accounts
+- security team member managing privileged access policies and requests
+- managed system discovery
 slug: privileged-access-management
 source_filename: privileged-access-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: BeyondTrust Privileged Access Management\n  description: >-\n    Unified privileged access management workflow combining Password Safe\n    credential management, access request workflows, and secrets management.\n    Used by security engineers and DevOps teams to manage just-in-time\n    privileged access and secrets retrieval for automated pipelines.\n  tags:\n    - BeyondTrust\n    - Privileged Access Management\n    - Zero Trust\n    - Secrets Management\n    - Just In Time Access\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BEYONDTRUST_HOST: BEYONDTRUST_HOST\n      BEYONDTRUST_APP_ID: BEYONDTRUST_APP_ID\n      BEYONDTRUST_API_KEY: BEYONDTRUST_API_KEY\n\ncapability:\n  consumes:\n    - import: beyondtrust\n      location: ./shared/beyondtrust.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: beyondtrust-pam-api\n      description: Unified REST API\
-  \ for BeyondTrust privileged access management.\n      resources:\n        - path: /v1/managed-accounts\n          name: managed-accounts\n          description: Privileged account discovery\n          operations:\n            - method: GET\n              name: list-managed-accounts\n              description: List managed accounts\n              call: \"beyondtrust.list-managed-accounts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/managed-systems\n          name: managed-systems\n          description: Managed system discovery\n          operations:\n            - method: GET\n              name: list-managed-systems\n              description: List managed systems\n              call: \"beyondtrust.list-managed-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/requests\n          name: requests\n          description: Access request\
-  \ management\n          operations:\n            - method: GET\n              name: list-requests\n              description: List access requests\n              call: \"beyondtrust.list-requests\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-request\n              description: Create an access request\n              call: \"beyondtrust.create-request\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/requests/{requestId}/credentials\n          name: request-credentials\n          description: Credential retrieval for approved requests\n          operations:\n            - method: GET\n              name: get-request-credentials\n              description: Get credentials for approved request\n              call: \"beyondtrust.get-request-credentials\"\n              with:\n                requestId: \"rest.requestId\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets\n          name: secrets\n          description: Secrets management\n          operations:\n            - method: GET\n              name: list-secrets\n              description: List secrets\n              call: \"beyondtrust.list-secrets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-secret\n              description: Create a new secret\n              call: \"beyondtrust.create-secret\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/secrets/{id}\n          name: secret\n          description: Individual secret operations\n          operations:\n            - method: GET\n              name: get-secret\n              description: Get a secret value\n              call: \"beyondtrust.get-secret\"\
-  \n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-secret\n              description: Delete a secret\n              call: \"beyondtrust.delete-secret\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: beyondtrust-pam-mcp\n      transport: http\n      description: MCP server for AI-assisted BeyondTrust PAM and secrets management.\n      tools:\n        - name: list-managed-accounts\n          description: List privileged accounts available for just-in-time access\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"beyondtrust.list-managed-accounts\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n        - name: list-managed-systems\n          description: List systems registered in Password Safe\n          hints:\n            readOnly: true\n          call: \"beyondtrust.list-managed-systems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-requests\n          description: List all active privileged access requests\n          hints:\n            readOnly: true\n          call: \"beyondtrust.list-requests\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-request\n          description: Create a just-in-time access request for a privileged account\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"beyondtrust.create-request\"\n          with:\n            system_id: \"tools.system_id\"\n            account_id: \"tools.account_id\"\n            duration_minutes: \"tools.duration_minutes\"\
-  \n            reason: \"tools.reason\"\n            access_type: \"tools.access_type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-request-credentials\n          description: Retrieve credentials for an approved privileged access request\n          hints:\n            readOnly: true\n          call: \"beyondtrust.get-request-credentials\"\n          with:\n            requestId: \"tools.request_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-secrets\n          description: List secrets stored in BeyondTrust Secrets Safe\n          hints:\n            readOnly: true\n          call: \"beyondtrust.list-secrets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-secret\n          description: Retrieve a specific secret value from Secrets Safe\n          hints:\n            readOnly: true\n          call:\
-  \ \"beyondtrust.get-secret\"\n          with:\n            id: \"tools.id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-secret\n          description: Store a new secret in Secrets Safe\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"beyondtrust.create-secret\"\n          with:\n            title: \"tools.title\"\n            type: \"tools.type\"\n            password: \"tools.password\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-request\n          description: Cancel and delete an access request\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"beyondtrust.delete-request\"\n          with:\n            requestId: \"tools.request_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: BeyondTrust Privileged Access Management\n  description: Unified privileged access management workflow combining Password Safe credential management, access request\n    workflows, and secrets management. Used by security engineers and DevOps teams to manage just-in-time privileged access\n    and secrets retrieval for automated pipelines.\n  tags:\n  - BeyondTrust\n  - Privileged Access Management\n  - Zero Trust\n  - Secrets Management\n  - Just In Time Access\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    BEYONDTRUST_HOST: BEYONDTRUST_HOST\n    BEYONDTRUST_APP_ID: BEYONDTRUST_APP_ID\n    BEYONDTRUST_API_KEY: BEYONDTRUST_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: beyondtrust\n    baseUri: https://{{BEYONDTRUST_HOST}}/BeyondTrust/api/public/v3\n    description: BeyondTrust Password Safe API\n    authentication:\n      type: apikey\n      key: Authorization\n      value:\
+  \ PS-Auth key={{BEYONDTRUST_API_KEY}}; runas={{BEYONDTRUST_APP_ID}}\n      placement: header\n    resources:\n    - name: requests\n      path: /requests\n      description: Privileged access request management\n      operations:\n      - name: list-requests\n        method: GET\n        description: List all active access requests\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-request\n        method: POST\n        description: Create a new access request\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            SystemID: '{{tools.system_id}}'\n            AccountID: '{{tools.account_id}}'\n            DurationMinutes: '{{tools.duration_minutes}}'\n            Reason: '{{tools.reason}}'\n            AccessType: '{{tools.access_type}}'\n      - name: get-request\n\
+  \        method: GET\n        description: Get a request by ID\n        inputParameters:\n        - name: requestId\n          in: path\n          type: integer\n          required: true\n          description: Request ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-request\n        method: PUT\n        description: Approve, deny, or cancel a request\n        inputParameters:\n        - name: requestId\n          in: path\n          type: integer\n          required: true\n          description: Request ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            Action: '{{tools.action}}'\n      - name: delete-request\n        method: DELETE\n        description: Cancel and delete a request\n        inputParameters:\n        - name: requestId\n    \
+  \      in: path\n          type: integer\n          required: true\n          description: Request ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-request-credentials\n        method: GET\n        description: Get credentials for an approved request\n        inputParameters:\n        - name: requestId\n          in: path\n          type: integer\n          required: true\n          description: Request ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: managed-accounts\n      path: /managedaccounts\n      description: Privileged account management\n      operations:\n      - name: list-managed-accounts\n        method: GET\n        description: List managed accounts\n        inputParameters:\n        - name: systemName\n          in: query\n          type: string\n          required: false\n    \
+  \      description: Filter by system name\n        - name: accountName\n          in: query\n          type: string\n          required: false\n          description: Filter by account name\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: managed-systems\n      path: /managedsystems\n      description: System management\n      operations:\n      - name: list-managed-systems\n        method: GET\n        description: List managed systems\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: secrets\n      path: /secrets-safe/secrets\n      description: Secrets management\n      operations:\n      - name: list-secrets\n        method: GET\n        description: List secrets\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-secret\n\
+  \        method: POST\n        description: Create a new secret\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            title: '{{tools.title}}'\n            type: '{{tools.type}}'\n            password: '{{tools.password}}'\n      - name: get-secret\n        method: GET\n        description: Get a secret by ID including its value\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: Secret ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-secret\n        method: DELETE\n        description: Delete a secret\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: Secret ID\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: beyondtrust-pam-api\n    description: Unified REST API for BeyondTrust privileged access management.\n    resources:\n    - path: /v1/managed-accounts\n      name: managed-accounts\n      description: Privileged account discovery\n      operations:\n      - method: GET\n        name: list-managed-accounts\n        description: List managed accounts\n        call: beyondtrust.list-managed-accounts\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/managed-systems\n      name: managed-systems\n      description: Managed system discovery\n      operations:\n      - method: GET\n        name: list-managed-systems\n        description: List managed systems\n        call: beyondtrust.list-managed-systems\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/requests\n\
+  \      name: requests\n      description: Access request management\n      operations:\n      - method: GET\n        name: list-requests\n        description: List access requests\n        call: beyondtrust.list-requests\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-request\n        description: Create an access request\n        call: beyondtrust.create-request\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/requests/{requestId}/credentials\n      name: request-credentials\n      description: Credential retrieval for approved requests\n      operations:\n      - method: GET\n        name: get-request-credentials\n        description: Get credentials for approved request\n        call: beyondtrust.get-request-credentials\n        with:\n          requestId: rest.requestId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/secrets\n  \
+  \    name: secrets\n      description: Secrets management\n      operations:\n      - method: GET\n        name: list-secrets\n        description: List secrets\n        call: beyondtrust.list-secrets\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-secret\n        description: Create a new secret\n        call: beyondtrust.create-secret\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/secrets/{id}\n      name: secret\n      description: Individual secret operations\n      operations:\n      - method: GET\n        name: get-secret\n        description: Get a secret value\n        call: beyondtrust.get-secret\n        with:\n          id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-secret\n        description: Delete a secret\n        call: beyondtrust.delete-secret\n        with:\n          id:\
+  \ rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: beyondtrust-pam-mcp\n    transport: http\n    description: MCP server for AI-assisted BeyondTrust PAM and secrets management.\n    tools:\n    - name: list-managed-accounts\n      description: List privileged accounts available for just-in-time access\n      hints:\n        readOnly: true\n        openWorld: true\n      call: beyondtrust.list-managed-accounts\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-managed-systems\n      description: List systems registered in Password Safe\n      hints:\n        readOnly: true\n      call: beyondtrust.list-managed-systems\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-requests\n      description: List all active privileged access requests\n      hints:\n        readOnly: true\n      call: beyondtrust.list-requests\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: create-request\n      description: Create a just-in-time access request for a privileged account\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: beyondtrust.create-request\n      with:\n        system_id: tools.system_id\n        account_id: tools.account_id\n        duration_minutes: tools.duration_minutes\n        reason: tools.reason\n        access_type: tools.access_type\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-request-credentials\n      description: Retrieve credentials for an approved privileged access request\n      hints:\n        readOnly: true\n      call: beyondtrust.get-request-credentials\n      with:\n        requestId: tools.request_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-secrets\n      description: List secrets stored in BeyondTrust Secrets Safe\n      hints:\n   \
+  \     readOnly: true\n      call: beyondtrust.list-secrets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-secret\n      description: Retrieve a specific secret value from Secrets Safe\n      hints:\n        readOnly: true\n      call: beyondtrust.get-secret\n      with:\n        id: tools.id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-secret\n      description: Store a new secret in Secrets Safe\n      hints:\n        readOnly: false\n        destructive: false\n      call: beyondtrust.create-secret\n      with:\n        title: tools.title\n        type: tools.type\n        password: tools.password\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-request\n      description: Cancel and delete an access request\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: beyondtrust.delete-request\n      with:\n        requestId:\
+  \ tools.request_id\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/beyondtrust/refs/heads/main/capabilities/privileged-access-management.yaml
 tags:
 - BeyondTrust

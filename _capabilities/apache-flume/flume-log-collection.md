@@ -1,8 +1,7 @@
 ---
 categories:
 - monitoring
-consumed_apis:
-- flume-monitoring
+consumed_apis: []
 description: Capability for monitoring Apache Flume log collection agents — tracking source throughput, channel fill levels, and sink drain rates. Designed for data engineers and platform operators managing log aggregation pipelines.
 layout: capability
 name: Apache Flume Log Collection
@@ -15,32 +14,33 @@ personas: []
 provider_name: Apache Flume
 provider_slug: apache-flume
 search_terms:
-- monitor flume agent metrics for log collection pipelines
-- apache flume
-- agent component metrics and health monitoring
-- data engineering
-- get all component metrics for a flume agent
 - get all metrics for apache flume agent components (sources, channels, sinks)
-- open source
-- flume agent component metrics
-- Data Engineer
-- streaming
-- get flume agent metrics
-- etl
 - get agent metrics
-- data collection
-- Platform Operator
-- engineers configuring and monitoring flume log collection pipelines
 - collecting, aggregating, and moving log and event data
-- monitoring
-- operators monitoring flume agent health and throughput
-- apache
+- apache flume
+- monitor flume agent metrics for log collection pipelines
+- flume agent component metrics
 - log aggregation
+- data collection
+- Data Engineer
+- data engineering
+- etl
+- apache
+- monitoring
+- open source
+- engineers configuring and monitoring flume log collection pipelines
+- Platform Operator
+- get all component metrics for a flume agent
+- get flume agent metrics
+- streaming
+- agent component metrics and health monitoring
+- operators monitoring flume agent health and throughput
 slug: flume-log-collection
 source_filename: flume-log-collection.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Flume Log Collection\"\n  description: \"Capability for monitoring Apache Flume log collection agents — tracking source throughput, channel fill levels, and sink drain rates. Designed for data engineers and platform operators managing log aggregation pipelines.\"\n  tags:\n    - Apache Flume\n    - Log Aggregation\n    - Data Collection\n    - Monitoring\n    - Data Engineering\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      FLUME_AGENT_URL: FLUME_AGENT_URL\ncapability:\n  consumes:\n    - import: flume-monitoring\n      location: ./shared/flume-monitoring.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: flume-collection-api\n      description: \"Unified REST API for Apache Flume log collection monitoring.\"\n      resources:\n        - path: /v1/metrics\n          name: metrics\n          description: Flume agent component metrics\n          operations:\n\
-  \            - method: GET\n              name: get-agent-metrics\n              description: Get all component metrics for a Flume agent\n              call: \"flume-monitoring.get-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: flume-collection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Flume log collection monitoring.\"\n      tools:\n        - name: get-flume-agent-metrics\n          description: Get all metrics for Apache Flume agent components (sources, channels, sinks)\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"flume-monitoring.get-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Apache Flume Log Collection\n  description: Capability for monitoring Apache Flume log collection agents — tracking source throughput, channel fill levels,\n    and sink drain rates. Designed for data engineers and platform operators managing log aggregation pipelines.\n  tags:\n  - Apache Flume\n  - Log Aggregation\n  - Data Collection\n  - Monitoring\n  - Data Engineering\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    FLUME_AGENT_URL: FLUME_AGENT_URL\ncapability:\n  consumes:\n  - type: http\n    namespace: flume-monitoring\n    baseUri: http://localhost:41414\n    description: Apache Flume Agent Monitoring REST API\n    resources:\n    - name: metrics\n      path: /metrics\n      description: Agent component metrics\n      operations:\n      - name: get-metrics\n        method: GET\n        description: Retrieve all component metrics for the running Flume agent\n        inputParameters: []\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: flume-collection-api\n    description: Unified REST API for Apache Flume log collection monitoring.\n    resources:\n    - path: /v1/metrics\n      name: metrics\n      description: Flume agent component metrics\n      operations:\n      - method: GET\n        name: get-agent-metrics\n        description: Get all component metrics for a Flume agent\n        call: flume-monitoring.get-metrics\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: flume-collection-mcp\n    transport: http\n    description: MCP server for AI-assisted Apache Flume log collection monitoring.\n    tools:\n    - name: get-flume-agent-metrics\n      description: Get all metrics for Apache Flume agent components (sources, channels, sinks)\n      hints:\n        readOnly:\
+  \ true\n        openWorld: true\n      call: flume-monitoring.get-metrics\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-flume/refs/heads/main/capabilities/flume-log-collection.yaml
 tags:
 - Apache Flume

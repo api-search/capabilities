@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- naftiko
+- eventcatalog
 - discovery
-- get event
+- api integration
+- governance
 - spec-driven integration
+- ai
 - list discovered events
 - mcp
 - capabilities
-- eventcatalog
-- naftiko
-- api integration
-- governance
-- ai
+- get event
 slug: eventcatalog-discovery-bridge-capability
 source_filename: eventcatalog-discovery-bridge-capability.yaml
 source_heading: Capability Spec

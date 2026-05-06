@@ -1,11 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- dlp
-- email-dlp
-- saas-security
-- sspm
-- identity-security-posture
+consumed_apis: []
 description: Unified data protection capability for managing DLP incidents, email DLP events, SaaS security incidents and assets, and SaaS security posture checks across Enterprise DLP, Email DLP, SaaS Security, and SSPM APIs.
 layout: capability
 name: Palo Alto Networks Data Protection
@@ -137,226 +132,226 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- list saas applications
-- get a dlp summary report for a given time range.
-- designs and implements network security architectures and policies.
-- tenant operator
-- list saas assets
-- list sspm posture checks with optional filters.
-- manage sspm posture checks.
-- network architect
-- designs sase and sd-wan network architectures for secure remote access.
-- list posture checks
-- cloud security
-- threat intelligence
-- list all onboarded saas applications in sspm.
-- update the status of a posture check.
-- get email recipients
-- cybersecurity
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- get email incident
-- threat hunter
-- access email incident attachments.
-- manage saas security incidents.
-- investigates dlp incidents and manages sensitive data protection policies.
-- retrieve a specific email dlp incident by id.
-- retrieve a specific dlp data pattern by id.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- retrieve a list of saas security incidents.
-- get dlp snippets
-- onboard a new saas application.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- update posture check status
-- platform engineer
-- investigates security incidents, triages alerts, and coordinates response actions.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- vulnerability manager
-- update posture check status.
-- saas security
-- enterprise browser policy management and secure browsing.
-- list saas users
-- update the verdict for an email dlp incident.
-- get log forwarding configuration settings.
-- get a specific sspm posture check by id.
-- manage email incident verdicts.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- create jira integration
-- list available dlp data patterns.
-- analyzes suspicious files and samples for malware characteristics.
-- network security engineer
-- manage enterprise browser policies, user sessions, and deployments.
-- manage sspm jira integrations.
-- list dlp incidents
-- get a specific posture check by id.
-- update the status of an sspm posture check.
-- iam admin
-- get data snippets for a specific dlp incident.
-- manages enterprise browser policies and secure browsing configurations.
-- get a specific saas asset.
-- digital experience monitoring, log management, and best practice assessment.
-- get dlp incident
-- manage onboarded sspm applications.
-- get dlp report summary
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- xdr
-- get a specific posture check.
-- get posture check
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- list dlp incidents with optional filters.
-- update a dlp incident status or assignee.
-- incident responder
-- identity security posture
-- get log forwarding settings
-- browser security admin
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- get saas incident
-- list jira integrations
-- firewall admin
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- update a dlp incident.
-- list data patterns
-- list email incidents
-- list all jira integrations.
-- network security
-- sase admin
-- browse the sspm application catalog.
-- list available applications in the sspm catalog.
-- manages logging infrastructure, integrations, and platform automation.
-- list users across saas applications.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- access email incident recipients.
-- malware researcher
-- researches threat actors, malware campaigns, and vulnerability trends.
-- list dlp data patterns.
-- retrieve a list of monitored saas assets.
-- access dlp report summaries.
-- data protection analyst
-- subscription manager
-- network operations
-- enterprise it
-- get user activities
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- retrieve log forwarding configuration settings.
-- proactively searches for threats and iocs across telemetry data.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- get or update a specific saas security incident.
-- list posture checks with optional filters.
-- ai security engineer
-- create a new jira integration.
 - update dlp incident
-- get user activity log.
-- retrieve a specific data pattern by id.
-- get a specific data pattern.
-- update email verdict
-- retrieve details for a specific saas security incident.
-- cloud security posture management, compliance monitoring, and workload protection.
-- red team operator
-- identity and access management, tenant hierarchies, and subscription management.
-- palo alto networks
-- saas security admin
-- threat intel analyst
-- retrieve activity log for a specific user.
-- sd wan operator
-- get email attachments
-- retrieve a specific dlp incident by id.
-- remove an onboarded sspm application.
-- list onboarded apps
-- cloud security engineer
-- list available data patterns.
-- onboard a new saas application in sspm.
-- remove app
-- dlp
-- sspm
-- list saas security incidents with optional filters.
-- remove an onboarded saas application.
-- manages service accounts, roles, and access policies for platform api access.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- list monitored saas assets.
-- list all sspm jira integrations.
-- data loss prevention, saas security monitoring, and identity security posture.
-- ai runtime security scanning and automated red teaming for ai applications.
-- list all onboarded saas applications.
-- monitors network health, performance, and digital experience metrics.
-- retrieve a list of users across saas applications.
-- soar
-- list saas incidents
-- sase
-- get data pattern
-- secures ai applications with runtime scanning and vulnerability assessment.
-- compliance officer
-- get a specific email dlp incident.
-- list email dlp incidents with optional filters.
-- list available applications in the catalog.
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- data protection
-- get or update a specific dlp incident.
-- get recipients for a specific email dlp incident.
-- access dlp incident data snippets.
-- list app catalog
-- list connected saas applications.
-- update a specific saas security incident.
-- retrieve a list of connected saas applications.
-- onboard app
-- create a new jira integration for sspm.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- manage dlp incidents.
-- soc analyst
-- compliance team
-- sre
-- update saas incident
-- get saas asset
-- retrieve details for a specific saas asset.
-- list dlp incidents with optional filters for severity and status.
-- executes containment, eradication, and recovery actions during security incidents.
-- conducts automated adversarial testing against ai systems and llm applications.
-- get attachments for a specific email dlp incident.
-- manages multi-tenant security operations at scale for managed service providers.
-- firewall
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- list email dlp incidents.
-- remove an onboarded saas application from sspm.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
 - mssp operator
+- executes containment, eradication, and recovery actions during security incidents.
+- get log forwarding configuration settings.
+- platform engineer
+- update saas incident
+- get a specific saas asset.
+- manage enterprise browser policies, user sessions, and deployments.
+- list available applications in the sspm catalog.
+- manage email incident verdicts.
+- list dlp data patterns.
+- red team operator
+- xdr
+- access email incident recipients.
+- update the status of an sspm posture check.
+- onboard a new saas application in sspm.
+- get a specific posture check.
+- get a specific posture check by id.
+- list app catalog
+- digital experience monitoring, log management, and best practice assessment.
+- update a dlp incident status or assignee.
+- cloud security
+- list posture checks with optional filters.
+- monitors network health, performance, and digital experience metrics.
+- list saas incidents
+- palo alto networks
+- get posture check
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- malware researcher
+- get recipients for a specific email dlp incident.
+- get saas asset
+- list monitored saas assets.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- sase
+- remove an onboarded saas application.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- data loss prevention, saas security monitoring, and identity security posture.
+- list onboarded apps
+- conducts automated adversarial testing against ai systems and llm applications.
+- network architect
+- manage saas security incidents.
+- retrieve details for a specific saas asset.
+- access email incident attachments.
+- manage sspm jira integrations.
+- list available data patterns.
+- sre
+- update a specific saas security incident.
+- list posture checks
+- compliance team
+- list all onboarded saas applications.
+- retrieve a list of users across saas applications.
+- get a specific data pattern.
+- manages service accounts, roles, and access policies for platform api access.
+- ai runtime security scanning and automated red teaming for ai applications.
+- subscription manager
+- list dlp incidents with optional filters.
+- manage dlp incidents.
+- get email recipients
+- retrieve a list of monitored saas assets.
+- list users across saas applications.
+- list sspm posture checks with optional filters.
+- list available applications in the catalog.
+- list saas users
+- update the status of a posture check.
+- get email incident
+- firewall
+- onboard app
+- list all jira integrations.
+- manages multi-tenant security operations at scale for managed service providers.
+- retrieve a specific dlp incident by id.
+- list dlp incidents with optional filters for severity and status.
+- retrieve a list of connected saas applications.
+- sspm
+- update a dlp incident.
+- analyzes suspicious files and samples for malware characteristics.
+- get dlp snippets
+- cloud security posture management, compliance monitoring, and workload protection.
+- list connected saas applications.
+- saas security admin
+- soc analyst
+- list available dlp data patterns.
+- get a specific sspm posture check by id.
+- sd wan operator
+- investigates security incidents, triages alerts, and coordinates response actions.
+- tenant operator
+- remove an onboarded saas application from sspm.
+- list data patterns
+- access dlp report summaries.
+- identity security posture
+- data protection analyst
+- get data pattern
+- iam admin
+- get or update a specific dlp incident.
+- create a new jira integration for sspm.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- list saas security incidents with optional filters.
+- network operations
+- designs and implements network security architectures and policies.
+- list saas assets
+- get data snippets for a specific dlp incident.
+- browse the sspm application catalog.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- threat intel analyst
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- enterprise it
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- data protection
+- threat hunter
+- update email verdict
+- dlp
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- researches threat actors, malware campaigns, and vulnerability trends.
+- manage sspm posture checks.
+- get or update a specific saas security incident.
+- sase admin
+- update posture check status
+- retrieve a list of saas security incidents.
+- proactively searches for threats and iocs across telemetry data.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- vulnerability manager
+- manages logging infrastructure, integrations, and platform automation.
+- list email dlp incidents with optional filters.
+- list dlp incidents
+- saas security
+- access dlp incident data snippets.
+- remove app
+- incident responder
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- identity and access management, tenant hierarchies, and subscription management.
+- retrieve details for a specific saas security incident.
+- cybersecurity
+- onboard a new saas application.
+- network security engineer
+- get user activities
+- investigates dlp incidents and manages sensitive data protection policies.
+- list jira integrations
+- get email attachments
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- ai security engineer
+- get dlp incident
+- browser security admin
+- get saas incident
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- compliance officer
+- enterprise browser policy management and secure browsing.
+- get a dlp summary report for a given time range.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- get attachments for a specific email dlp incident.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- get a specific email dlp incident.
+- soar
+- list email incidents
+- get user activity log.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- retrieve activity log for a specific user.
+- network security
+- update the verdict for an email dlp incident.
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- firewall admin
+- get dlp report summary
+- list all sspm jira integrations.
+- list saas applications
+- get log forwarding settings
+- retrieve a specific email dlp incident by id.
+- designs sase and sd-wan network architectures for secure remote access.
+- retrieve log forwarding configuration settings.
+- cloud security engineer
+- update posture check status.
+- list all onboarded saas applications in sspm.
+- retrieve a specific data pattern by id.
+- threat intelligence
+- list email dlp incidents.
+- create jira integration
+- remove an onboarded sspm application.
+- create a new jira integration.
+- retrieve a specific dlp data pattern by id.
+- manage onboarded sspm applications.
+- manages enterprise browser policies and secure browsing configurations.
 slug: data-protection
 source_filename: data-protection.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Data Protection\"\n  description: \"Unified data protection capability for managing DLP incidents, email DLP events, SaaS security incidents and assets, and SaaS security posture checks across Enterprise DLP, Email DLP, SaaS Security, and SSPM APIs.\"\n  tags:\n    - Palo Alto Networks\n    - Data Protection\n    - DLP\n    - SaaS Security\n    - SSPM\n    - Identity Security Posture\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PALO_ALTO_DLP_TOKEN: PALO_ALTO_DLP_TOKEN\n      SAAS_SECURITY_TOKEN: SAAS_SECURITY_TOKEN\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: dlp\n      location: ./shared/dlp.yaml\n    - import: email-dlp\n      location: ./shared/email-dlp.yaml\n    - import: saas-security\n      location: ./shared/saas-security.yaml\n    - import: sspm\n      location: ./shared/sspm.yaml\n    - import:\
-  \ identity-security-posture\n      location: ./shared/identity-security-posture.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: data-protection-api\n      description: \"Unified REST API for data protection workflows across Enterprise DLP, Email DLP, SaaS Security, and SSPM.\"\n      resources:\n\n        # -------------------------------------------------------\n        # DLP Incidents\n        # -------------------------------------------------------\n        - path: /v1/dlp-incidents\n          name: dlp-incidents\n          description: \"Manage DLP incidents.\"\n          operations:\n            - method: GET\n              name: list-dlp-incidents\n              description: \"List DLP incidents with optional filters.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n               \
-  \   type: integer\n                  required: false\n                - name: severity\n                  in: query\n                  type: string\n                  required: false\n                - name: status\n                  in: query\n                  type: string\n                  required: false\n              call: \"dlp-api.list-incidents\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n                severity: \"rest.severity\"\n                status: \"rest.status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/dlp-incidents/{incident_id}\n          name: dlp-incident-detail\n          description: \"Get or update a specific DLP incident.\"\n          operations:\n            - method: GET\n              name: get-dlp-incident\n              description: \"Retrieve a specific DLP incident by ID.\"\n              inputParameters:\n     \
-  \           - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"dlp-api.get-incident\"\n              with:\n                incident_id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: PUT\n              name: update-dlp-incident\n              description: \"Update a DLP incident.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n                - name: status\n                  in: body\n                  type: string\n                  required: false\n                - name: assignee\n                  in: body\n                  type: string\n                  required: false\n              call: \"dlp-api.update-incident\"\n              with:\n                incident_id: \"rest.incident_id\"\
-  \n                status: \"rest.status\"\n                assignee: \"rest.assignee\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/dlp-incidents/{incident_id}/snippets\n          name: dlp-incident-snippets\n          description: \"Access DLP incident data snippets.\"\n          operations:\n            - method: GET\n              name: get-dlp-snippets\n              description: \"Get data snippets for a specific DLP incident.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"dlp-api.get-incident-snippets\"\n              with:\n                incident_id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # DLP Data Patterns\n\
-  \        # -------------------------------------------------------\n        - path: /v1/data-patterns\n          name: data-patterns\n          description: \"List DLP data patterns.\"\n          operations:\n            - method: GET\n              name: list-data-patterns\n              description: \"List available data patterns.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"dlp-api.list-data-patterns\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/data-patterns/{pattern_id}\n          name: data-pattern-detail\n          description: \"Get a specific\
-  \ data pattern.\"\n          operations:\n            - method: GET\n              name: get-data-pattern\n              description: \"Retrieve a specific data pattern by ID.\"\n              inputParameters:\n                - name: pattern_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"dlp-api.get-data-pattern\"\n              with:\n                id: \"rest.pattern_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # DLP Reports\n        # -------------------------------------------------------\n        - path: /v1/dlp-reports/summary\n          name: dlp-report-summary\n          description: \"Access DLP report summaries.\"\n          operations:\n            - method: GET\n              name: get-dlp-report-summary\n              description: \"Get a DLP summary report for a\
-  \ given time range.\"\n              inputParameters:\n                - name: start_date\n                  in: query\n                  type: string\n                  required: false\n                - name: end_date\n                  in: query\n                  type: string\n                  required: false\n              call: \"dlp-api.get-report-summary\"\n              with:\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # Email DLP\n        # -------------------------------------------------------\n        - path: /v1/email-incidents\n          name: email-incidents\n          description: \"List email DLP incidents.\"\n          operations:\n            - method: GET\n              name: list-email-incidents\n              description: \"List email DLP\
-  \ incidents with optional filters.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n                - name: status\n                  in: query\n                  type: string\n                  required: false\n                - name: severity\n                  in: query\n                  type: string\n                  required: false\n              call: \"email-dlp-api.list-email-incidents\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n                status: \"rest.status\"\n                severity: \"rest.severity\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/email-incidents/{incident_id}\n          name:\
-  \ email-incident-detail\n          description: \"Get a specific email DLP incident.\"\n          operations:\n            - method: GET\n              name: get-email-incident\n              description: \"Retrieve a specific email DLP incident by ID.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"email-dlp-api.get-email-incident\"\n              with:\n                id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/email-incidents/{incident_id}/verdict\n          name: email-incident-verdict\n          description: \"Manage email incident verdicts.\"\n          operations:\n            - method: PUT\n              name: update-email-verdict\n              description: \"Update the verdict for an email DLP incident.\"\n              inputParameters:\n\
-  \                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n                - name: verdict\n                  in: body\n                  type: string\n                  required: true\n                - name: reason\n                  in: body\n                  type: string\n                  required: false\n              call: \"email-dlp-api.update-email-incident-verdict\"\n              with:\n                id: \"rest.incident_id\"\n                verdict: \"rest.verdict\"\n                reason: \"rest.reason\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/email-incidents/{incident_id}/attachments\n          name: email-incident-attachments\n          description: \"Access email incident attachments.\"\n          operations:\n            - method: GET\n              name: get-email-attachments\n              description: \"Get\
-  \ attachments for a specific email DLP incident.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"email-dlp-api.get-email-incident-attachments\"\n              with:\n                id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/email-incidents/{incident_id}/recipients\n          name: email-incident-recipients\n          description: \"Access email incident recipients.\"\n          operations:\n            - method: GET\n              name: get-email-recipients\n              description: \"Get recipients for a specific email DLP incident.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"email-dlp-api.get-email-incident-recipients\"\
-  \n              with:\n                id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # SaaS Security Incidents\n        # -------------------------------------------------------\n        - path: /v1/saas-incidents\n          name: saas-incidents\n          description: \"Manage SaaS security incidents.\"\n          operations:\n            - method: GET\n              name: list-saas-incidents\n              description: \"List SaaS security incidents with optional filters.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n                - name: status\n                  in: query\n          \
-  \        type: string\n                  required: false\n                - name: severity\n                  in: query\n                  type: string\n                  required: false\n                - name: app_id\n                  in: query\n                  type: string\n                  required: false\n                - name: start_date\n                  in: query\n                  type: string\n                  required: false\n                - name: end_date\n                  in: query\n                  type: string\n                  required: false\n              call: \"saas-security.list-incidents\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n                status: \"rest.status\"\n                severity: \"rest.severity\"\n                app_id: \"rest.app_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n              outputParameters:\n            \
-  \    - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/saas-incidents/{incident_id}\n          name: saas-incident-detail\n          description: \"Get or update a specific SaaS security incident.\"\n          operations:\n            - method: GET\n              name: get-saas-incident\n              description: \"Retrieve details for a specific SaaS security incident.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"saas-security.get-incident\"\n              with:\n                id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: PUT\n              name: update-saas-incident\n              description: \"Update a specific SaaS security incident.\"\n              inputParameters:\n                - name: incident_id\n        \
-  \          in: path\n                  type: string\n                  required: true\n                - name: status\n                  in: body\n                  type: string\n                  required: false\n                - name: assignee_id\n                  in: body\n                  type: string\n                  required: false\n                - name: note\n                  in: body\n                  type: string\n                  required: false\n              call: \"saas-security.update-incident\"\n              with:\n                id: \"rest.incident_id\"\n                status: \"rest.status\"\n                assignee_id: \"rest.assignee_id\"\n                note: \"rest.note\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # SaaS Assets\n        # -------------------------------------------------------\n        - path: /v1/saas-assets\n\
-  \          name: saas-assets\n          description: \"List monitored SaaS assets.\"\n          operations:\n            - method: GET\n              name: list-saas-assets\n              description: \"Retrieve a list of monitored SaaS assets.\"\n              inputParameters:\n                - name: app_id\n                  in: query\n                  type: string\n                  required: false\n                - name: type\n                  in: query\n                  type: string\n                  required: false\n                - name: exposure\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"saas-security.list-assets\"\n              with:\n      \
-  \          app_id: \"rest.app_id\"\n                type: \"rest.type\"\n                exposure: \"rest.exposure\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/saas-assets/{asset_id}\n          name: saas-asset-detail\n          description: \"Get a specific SaaS asset.\"\n          operations:\n            - method: GET\n              name: get-saas-asset\n              description: \"Retrieve details for a specific SaaS asset.\"\n              inputParameters:\n                - name: asset_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"saas-security.get-asset\"\n              with:\n                id: \"rest.asset_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n\
-  \        # SaaS Applications & Users\n        # -------------------------------------------------------\n        - path: /v1/saas-applications\n          name: saas-applications\n          description: \"List connected SaaS applications.\"\n          operations:\n            - method: GET\n              name: list-saas-applications\n              description: \"Retrieve a list of connected SaaS applications.\"\n              call: \"saas-security.list-applications\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/saas-users\n          name: saas-users\n          description: \"List users across SaaS applications.\"\n          operations:\n            - method: GET\n              name: list-saas-users\n              description: \"Retrieve a list of users across SaaS applications.\"\n              inputParameters:\n                - name: app_id\n                  in: query\n                  type: string\n      \
-  \            required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"saas-security.list-users\"\n              with:\n                app_id: \"rest.app_id\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/saas-users/{user_id}/activities\n          name: saas-user-activities\n          description: \"Get user activity log.\"\n          operations:\n            - method: GET\n              name: get-user-activities\n              description: \"Retrieve activity log for a specific user.\"\n              inputParameters:\n                - name: user_id\n                  in: path\n                  type:\
-  \ string\n                  required: true\n                - name: start_date\n                  in: query\n                  type: string\n                  required: false\n                - name: end_date\n                  in: query\n                  type: string\n                  required: false\n                - name: app_id\n                  in: query\n                  type: string\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"saas-security.get-user-activities\"\n              with:\n                id: \"rest.user_id\"\n                start_date: \"rest.start_date\"\n                end_date: \"rest.end_date\"\n                app_id: \"rest.app_id\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n\
-  \        # SaaS Settings\n        # -------------------------------------------------------\n        - path: /v1/log-forwarding-settings\n          name: log-forwarding-settings\n          description: \"Get log forwarding configuration settings.\"\n          operations:\n            - method: GET\n              name: get-log-forwarding-settings\n              description: \"Retrieve log forwarding configuration settings.\"\n              call: \"saas-security.get-log-forwarding-settings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # SSPM App Management\n        # -------------------------------------------------------\n        - path: /v1/sspm-apps\n          name: sspm-apps\n          description: \"Manage onboarded SSPM applications.\"\n          operations:\n            - method: GET\n              name: list-onboarded-apps\n              description:\
-  \ \"List all onboarded SaaS applications.\"\n              inputParameters:\n                - name: status\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"sspm.list-onboarded-apps\"\n              with:\n                status: \"rest.status\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: onboard-app\n              description: \"Onboard a new SaaS application.\"\n              inputParameters:\n                - name: app_type\n                  in: body\n                  type: string\n\
-  \                  required: true\n                - name: display_name\n                  in: body\n                  type: string\n                  required: true\n                - name: credentials\n                  in: body\n                  type: object\n                  required: true\n              call: \"sspm.onboard-app\"\n              with:\n                app_type: \"rest.app_type\"\n                display_name: \"rest.display_name\"\n                credentials: \"rest.credentials\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/sspm-apps/{app_id}\n          name: sspm-app-detail\n          description: \"Remove an onboarded SSPM application.\"\n          operations:\n            - method: DELETE\n              name: remove-app\n              description: \"Remove an onboarded SaaS application.\"\n              inputParameters:\n                - name: app_id\n                  in: path\n \
-  \                 type: string\n                  required: true\n              call: \"sspm.remove-app\"\n              with:\n                app_id: \"rest.app_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # SSPM Posture\n        # -------------------------------------------------------\n        - path: /v1/posture-checks\n          name: posture-checks\n          description: \"Manage SSPM posture checks.\"\n          operations:\n            - method: GET\n              name: list-posture-checks\n              description: \"List posture checks with optional filters.\"\n              inputParameters:\n                - name: app_id\n                  in: query\n                  type: string\n                  required: false\n                - name: check_type\n                  in: query\n                  type: string\n                  required:\
-  \ false\n                - name: severity\n                  in: query\n                  type: string\n                  required: false\n                - name: status\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"sspm.list-posture-checks\"\n              with:\n                app_id: \"rest.app_id\"\n                check_type: \"rest.check_type\"\n                severity: \"rest.severity\"\n                status: \"rest.status\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/posture-checks/{check_id}\n\
-  \          name: posture-check-detail\n          description: \"Get a specific posture check.\"\n          operations:\n            - method: GET\n              name: get-posture-check\n              description: \"Get a specific posture check by ID.\"\n              inputParameters:\n                - name: check_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"sspm.get-posture-check\"\n              with:\n                check_id: \"rest.check_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/posture-checks/{check_id}/status\n          name: posture-check-status\n          description: \"Update posture check status.\"\n          operations:\n            - method: PUT\n              name: update-posture-check-status\n              description: \"Update the status of a posture check.\"\n              inputParameters:\n                - name:\
-  \ check_id\n                  in: path\n                  type: string\n                  required: true\n                - name: status\n                  in: body\n                  type: string\n                  required: true\n                - name: justification\n                  in: body\n                  type: string\n                  required: true\n              call: \"sspm.update-posture-check-status\"\n              with:\n                check_id: \"rest.check_id\"\n                status: \"rest.status\"\n                justification: \"rest.justification\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # SSPM Catalog & Integrations\n        # -------------------------------------------------------\n        - path: /v1/sspm-app-catalog\n          name: sspm-app-catalog\n          description: \"Browse the SSPM application catalog.\"\n  \
-  \        operations:\n            - method: GET\n              name: list-app-catalog\n              description: \"List available applications in the catalog.\"\n              inputParameters:\n                - name: category\n                  in: query\n                  type: string\n                  required: false\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"sspm.list-app-catalog\"\n              with:\n                category: \"rest.category\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/jira-integrations\n          name: jira-integrations\n          description: \"Manage SSPM Jira integrations.\"\
-  \n          operations:\n            - method: GET\n              name: list-jira-integrations\n              description: \"List all Jira integrations.\"\n              call: \"sspm.list-jira-integrations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n            - method: POST\n              name: create-jira-integration\n              description: \"Create a new Jira integration.\"\n              inputParameters:\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                - name: jira_url\n                  in: body\n                  type: string\n                  required: true\n                - name: project_key\n                  in: body\n                  type: string\n                  required: true\n                - name: api_token\n                  in: body\n                  type: string\n                  required: true\n        \
-  \        - name: email\n                  in: body\n                  type: string\n                  required: true\n                - name: issue_type\n                  in: body\n                  type: string\n                  required: true\n                - name: severity_mapping\n                  in: body\n                  type: object\n                  required: true\n              call: \"sspm.create-jira-integration\"\n              with:\n                name: \"rest.name\"\n                jira_url: \"rest.jira_url\"\n                project_key: \"rest.project_key\"\n                api_token: \"rest.api_token\"\n                email: \"rest.email\"\n                issue_type: \"rest.issue_type\"\n                severity_mapping: \"rest.severity_mapping\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    # =============================================================\n    # MCP Server — AI-assisted data protection\n\
-  \    # =============================================================\n    - type: mcp\n      port: 9095\n      namespace: data-protection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted data protection across Enterprise DLP, Email DLP, SaaS Security, and SSPM.\"\n      tools:\n\n        # ---------------------------------------------------------\n        # DLP\n        # ---------------------------------------------------------\n        - name: list-dlp-incidents\n          description: \"List DLP incidents with optional filters for severity and status.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              description: \"Offset for pagination.\"\n              required: false\n            - name: limit\n              type: integer\n              description: \"Maximum number of\
-  \ results to return.\"\n              required: false\n            - name: severity\n              type: string\n              description: \"Filter by severity level.\"\n              required: false\n            - name: status\n              type: string\n              description: \"Filter by incident status.\"\n              required: false\n          call: \"dlp-api.list-incidents\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n            severity: \"tools.severity\"\n            status: \"tools.status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-dlp-incident\n          description: \"Retrieve a specific DLP incident by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description:\
-  \ \"The DLP incident ID.\"\n              required: true\n          call: \"dlp-api.get-incident\"\n          with:\n            incident_id: \"tools.incident_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-dlp-incident\n          description: \"Update a DLP incident status or assignee.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: incident_id\n              type: string\n              description: \"The DLP incident ID to update.\"\n              required: true\n            - name: status\n              type: string\n              description: \"New status for the incident.\"\n              required: false\n            - name: assignee\n              type: string\n              description: \"New assignee for the incident.\"\n              required: false\n          call: \"\
-  dlp-api.update-incident\"\n          with:\n            i\n\n# --- truncated at 32 KB (55 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/data-protection.yaml\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Palo Alto Networks Data Protection\n  description: Unified data protection capability for managing DLP incidents, email DLP events, SaaS security incidents and\n    assets, and SaaS security posture checks across Enterprise DLP, Email DLP, SaaS Security, and SSPM APIs.\n  tags:\n  - Palo Alto Networks\n  - Data Protection\n  - DLP\n  - SaaS Security\n  - SSPM\n  - Identity Security Posture\n  created: '2026-04-16'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    PALO_ALTO_DLP_TOKEN: PALO_ALTO_DLP_TOKEN\n    SAAS_SECURITY_TOKEN: SAAS_SECURITY_TOKEN\n    PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: dlp-api\n    baseUri: https://api.dlp.paloaltonetworks.com\n    description: Enterprise DLP API for managing data loss prevention incidents, data patterns, and reports.\n    authentication:\n      type: bearer\n      token: '{{PALO_ALTO_DLP_TOKEN}}'\n    resources:\n  \
+  \  - name: incidents\n      path: /incidents\n      description: Manage DLP incidents.\n      operations:\n      - name: list-incidents\n        method: GET\n        description: List DLP incidents with optional filters.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Offset for pagination.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        - name: severity\n          in: query\n          type: string\n          required: false\n          description: Filter by severity level.\n        - name: status\n          in: query\n          type: string\n          required: false\n          description: Filter by incident status.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-incident\n\
+  \        method: GET\n        description: Retrieve a specific DLP incident by ID.\n        inputParameters:\n        - name: incident_id\n          in: path\n          type: string\n          required: true\n          description: The incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-incident\n        method: PUT\n        description: Update a DLP incident.\n        inputParameters:\n        - name: incident_id\n          in: path\n          type: string\n          required: true\n          description: The incident ID to update.\n        - name: status\n          in: body\n          type: string\n          required: false\n          description: New status for the incident.\n        - name: assignee\n          in: body\n          type: string\n          required: false\n          description: New assignee for the incident.\n        body:\n          type: json\n          data:\n\
+  \            status: '{{tools.status}}'\n            assignee: '{{tools.assignee}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: incident-snippets\n      path: /incidents/{incident_id}/snippets\n      description: Access incident data snippets.\n      operations:\n      - name: get-incident-snippets\n        method: GET\n        description: Get data snippets for a specific incident.\n        inputParameters:\n        - name: incident_id\n          in: path\n          type: string\n          required: true\n          description: The incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: data-patterns\n      path: /data-patterns\n      description: Manage DLP data patterns.\n      operations:\n      - name: list-data-patterns\n        method: GET\n        description: List available data patterns.\n\
+  \        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Offset for pagination.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-data-pattern\n        method: GET\n        description: Retrieve a specific data pattern by ID.\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: The data pattern ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: reports\n      path: /reports/summary\n      description: Access DLP report summaries.\n      operations:\n      - name: get-report-summary\n\
+  \        method: GET\n        description: Get a summary report for a given time range.\n        inputParameters:\n        - name: start_date\n          in: query\n          type: string\n          required: false\n          description: Start date for the report period.\n        - name: end_date\n          in: query\n          type: string\n          required: false\n          description: End date for the report period.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: email-dlp-api\n    baseUri: https://api.dlp.paloaltonetworks.com\n    description: Email DLP API for managing email-based data loss prevention incidents.\n    authentication:\n      type: bearer\n      token: '{{PALO_ALTO_DLP_TOKEN}}'\n    resources:\n    - name: email-incidents\n      path: /email-incidents\n      description: Manage email DLP incidents.\n      operations:\n      - name: list-email-incidents\n\
+  \        method: GET\n        description: List email DLP incidents with optional filters.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Offset for pagination.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        - name: status\n          in: query\n          type: string\n          required: false\n          description: Filter by incident status.\n        - name: severity\n          in: query\n          type: string\n          required: false\n          description: Filter by severity level.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-email-incident\n        method: GET\n        description: Retrieve a specific email DLP incident by ID.\n        inputParameters:\n        -\
+  \ name: id\n          in: path\n          type: string\n          required: true\n          description: The email incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: email-incident-verdict\n      path: /email-incidents/{id}/verdict\n      description: Manage email incident verdicts.\n      operations:\n      - name: update-email-incident-verdict\n        method: PUT\n        description: Update the verdict for an email DLP incident.\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: The email incident ID.\n        - name: verdict\n          in: body\n          type: string\n          required: true\n          description: The verdict to set.\n        - name: reason\n          in: body\n          type: string\n          required: false\n          description: Reason for the verdict.\n        body:\n\
+  \          type: json\n          data:\n            verdict: '{{tools.verdict}}'\n            reason: '{{tools.reason}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: email-incident-attachments\n      path: /email-incidents/{id}/attachments\n      description: Access email incident attachments.\n      operations:\n      - name: get-email-incident-attachments\n        method: GET\n        description: Get attachments for a specific email DLP incident.\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: The email incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: email-incident-recipients\n      path: /email-incidents/{id}/recipients\n      description: Access email incident recipients.\n      operations:\n \
+  \     - name: get-email-incident-recipients\n        method: GET\n        description: Get recipients for a specific email DLP incident.\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: The email incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: saas-security\n    baseUri: https://api.aperture.paloaltonetworks.com\n    authentication:\n      type: bearer\n      token: '{{env.SAAS_SECURITY_TOKEN}}'\n    resources:\n    - name: incidents\n      path: /api/incidents\n      operations:\n      - name: list-incidents\n        method: GET\n        description: Retrieve a list of security incidents\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n\
+  \          required: false\n        - name: status\n          in: query\n          type: string\n          required: false\n        - name: severity\n          in: query\n          type: string\n          required: false\n        - name: app_id\n          in: query\n          type: string\n          required: false\n        - name: start_date\n          in: query\n          type: string\n          required: false\n        - name: end_date\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: incident-by-id\n      path: /api/incidents/{id}\n      operations:\n      - name: get-incident\n        method: GET\n        description: Retrieve details for a specific incident\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n      - name: update-incident\n        method: PUT\n        description: Update a specific incident\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            status: '{{tools.status}}'\n            assignee_id: '{{tools.assignee_id}}'\n            note: '{{tools.note}}'\n    - name: assets\n      path: /api/assets\n      operations:\n      - name: list-assets\n        method: GET\n        description: Retrieve a list of monitored assets\n        inputParameters:\n        - name: app_id\n          in: query\n          type: string\n          required: false\n        - name: type\n          in: query\n          type: string\n          required: false\n        - name: exposure\n\
+  \          in: query\n          type: string\n          required: false\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: asset-by-id\n      path: /api/assets/{id}\n      operations:\n      - name: get-asset\n        method: GET\n        description: Retrieve details for a specific asset\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: applications\n      path: /api/applications\n      operations:\n      - name: list-applications\n        method: GET\n        description: Retrieve a list of connected SaaS\
+  \ applications\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: users\n      path: /api/users\n      operations:\n      - name: list-users\n        method: GET\n        description: Retrieve a list of users across SaaS applications\n        inputParameters:\n        - name: app_id\n          in: query\n          type: string\n          required: false\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: user-activities\n      path: /api/user/{id}/activities\n      operations:\n      - name: get-user-activities\n        method: GET\n        description: Retrieve activity log for a specific user\n        inputParameters:\n\
+  \        - name: id\n          in: path\n          type: string\n          required: true\n        - name: start_date\n          in: query\n          type: string\n          required: false\n        - name: end_date\n          in: query\n          type: string\n          required: false\n        - name: app_id\n          in: query\n          type: string\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: log-forwarding-settings\n      path: /api/settings/log-forwarding\n      operations:\n      - name: get-log-forwarding-settings\n        method: GET\n        description: Retrieve log forwarding configuration settings\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: sspm\n\
+  \    baseUri: https://api.sase.paloaltonetworks.com/sspm\n    description: SaaS Security Posture Management API for onboarding apps, managing posture checks, browsing the app catalog,\n      and configuring Jira integrations.\n    authentication:\n      type: bearer\n      token: '{{env.PALO_ALTO_OAUTH_TOKEN}}'\n    resources:\n    - name: apps\n      path: /v1/apps\n      operations:\n      - name: list-onboarded-apps\n        method: GET\n        description: List all onboarded SaaS applications.\n        inputParameters:\n        - name: status\n          in: query\n          type: string\n          required: false\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: onboard-app\n        method: POST\n   \
+  \     description: Onboard a new SaaS application.\n        inputParameters:\n        - name: app_type\n          in: body\n          type: string\n          required: true\n        - name: display_name\n          in: body\n          type: string\n          required: true\n        - name: credentials\n          in: body\n          type: object\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            app_type: '{{tools.app_type}}'\n            display_name: '{{tools.display_name}}'\n            credentials: '{{tools.credentials}}'\n    - name: app\n      path: /v1/apps/{app_id}\n      operations:\n      - name: remove-app\n        method: DELETE\n        description: Remove an onboarded SaaS application.\n        inputParameters:\n        - name: app_id\n          in: path\n          type: string\n          required: true\n  \
+  \      outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: posture-checks\n      path: /v1/posture-checks\n      operations:\n      - name: list-posture-checks\n        method: GET\n        description: List posture checks with optional filters.\n        inputParameters:\n        - name: app_id\n          in: query\n          type: string\n          required: false\n        - name: check_type\n          in: query\n          type: string\n          required: false\n        - name: severity\n          in: query\n          type: string\n          required: false\n        - name: status\n          in: query\n          type: string\n          required: false\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n      \
+  \  - name: result\n          type: object\n          value: $.\n    - name: posture-check\n      path: /v1/posture-checks/{check_id}\n      operations:\n      - name: get-posture-check\n        method: GET\n        description: Get a specific posture check by ID.\n        inputParameters:\n        - name: check_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: posture-check-status\n      path: /v1/posture-checks/{check_id}/status\n      operations:\n      - name: update-posture-check-status\n        method: PUT\n        description: Update the status of a posture check.\n        inputParameters:\n        - name: check_id\n          in: path\n          type: string\n          required: true\n        - name: status\n          in: body\n          type: string\n          required: true\n        - name: justification\n          in:\
+  \ body\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            status: '{{tools.status}}'\n            justification: '{{tools.justification}}'\n    - name: app-catalog\n      path: /v1/app-catalog\n      operations:\n      - name: list-app-catalog\n        method: GET\n        description: List available applications in the catalog.\n        inputParameters:\n        - name: category\n          in: query\n          type: string\n          required: false\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: jira-integrations\n\
+  \      path: /v1/jira-integrations\n      operations:\n      - name: list-jira-integrations\n        method: GET\n        description: List all Jira integrations.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-jira-integration\n        method: POST\n        description: Create a new Jira integration.\n        inputParameters:\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: jira_url\n          in: body\n          type: string\n          required: true\n        - name: project_key\n          in: body\n          type: string\n          required: true\n        - name: api_token\n          in: body\n          type: string\n          required: true\n        - name: email\n          in: body\n          type: string\n          required: true\n        - name: issue_type\n          in: body\n          type: string\n          required:\
+  \ true\n        - name: severity_mapping\n          in: body\n          type: object\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            jira_url: '{{tools.jira_url}}'\n            project_key: '{{tools.project_key}}'\n            api_token: '{{tools.api_token}}'\n            email: '{{tools.email}}'\n            issue_type: '{{tools.issue_type}}'\n            severity_mapping: '{{tools.severity_mapping}}'\n  - type: http\n    namespace: identity-security-posture\n    baseUri: https://api.sase.paloaltonetworks.com\n    authentication:\n      type: bearer\n      token: '{{env.PALO_ALTO_SASE_ACCESS_TOKEN}}'\n    resources:\n    - name: catalog\n      path: /sspm/identity/v1/catalog\n      operations:\n      - name: get-application-catalog\n        method: GET\n        description: Retrieve\
+  \ application catalog details based on the specified application type.\n        path: /{appType}\n        inputParameters:\n        - name: appType\n          in: path\n          type: string\n          required: true\n        - name: feature\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: idps\n      path: /sspm/identity/v1/idps\n      operations:\n      - name: list-identity-providers\n        method: GET\n        description: Retrieve a list of identity providers configured for the tenant.\n        inputParameters:\n        - name: designated\n          in: query\n          type: boolean\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-identity-provider\n        method: POST\n        description:\
+  \ Create a new identity provider entry for the tenant.\n        inputParameters:\n        - name: designated\n          in: query\n          type: boolean\n          required: false\n        - name: idpId\n          in: query\n          type: string\n          required: false\n        - name: idpType\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-logout-status\n        method: GET\n        description: Retrieve logout status of user accounts for an IDP.\n        path: /{idpId}/accounts/logout\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: batch_id\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n      \
+  \    value: $.\n      - name: trigger-account-logout\n        method: POST\n        description: Initiate a logout request for user accounts associated with an IDP.\n        path: /{idpId}/accounts/logout\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            users: '{{tools.users}}'\n      - name: get-idp-feature-state\n        method: GET\n        description: Retrieve the current status and last scan timestamp of a feature for an IDP.\n        path: /{idpId}/feature_state\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: feature\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n      - name: get-idp-account-count\n        method: GET\n        description: Return the number of user accounts linked to an IDP.\n        path: /{idpId}/idp_accounts/count\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: generate-idp-account-csv\n        method: POST\n        description: Generate a CSV report of accounts associated with an IDP.\n        path: /{idpId}/idp_accounts/csv_report\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n      \
+  \  - name: sortBy\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            userFullName: '{{tools.userFullName}}'\n            userEmail: '{{tools.userEmail}}'\n            service: '{{tools.service}}'\n      - name: get-mfa-activity\n        method: GET\n        description: Retrieve MFA activity logs for an IDP.\n        path: /{idpId}/mfa_activity\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: page\n          in: query\n          type: integer\n          required: false\n        - name: sortBy\n      \
+  \    in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-mfa-activity-count\n        method: GET\n        description: Return the number of MFA activities for an IDP.\n        path: /{idpId}/mfa_activity/count\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-mfa-activity-count-by-app-type\n        method: GET\n        description: Return MFA activity count grouped by application type.\n        path: /{idpId}/mfa_activity/count_by_app_type\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n\
+  \          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: page\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: generate-mfa-activity-csv\n        method: POST\n        description: Generate a CSV report of MFA activities for an IDP.\n        path: /{idpId}/mfa_activity/csv_report\n        inputParameters:\n        - name: idpId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        - name: sortBy\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n    \
+  \    - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            userFullName: '{{tools.userFullName}}'\n            userEmail: '{{tools.userEmail}}'\n            service: '{{tools.service}}'\n    - name: saas-instances\n      path: /sspm/identity/v1/saas_instances\n      operations:\n      - name: list-saas-instances\n        method: GET\n        description: Retrieve a list of SaaS instances configured for the tenant.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-saas-accounts\n        method: GET\n        description: Retrieve a list of user accounts for a SaaS instance.\n        path: /{saasInstanceId}/saas_accounts\n        inputParameters:\n        - name: saasInstanceId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n     \
+  \     required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: page\n          in: query\n          type: integer\n          required: false\n        - name: sortBy\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-saas-account-count\n        method: GET\n        description: Return the number of user accounts for a SaaS instance.\n        path: /{saasInstanceId}/saas_accounts/count\n        inputParameters:\n        - name: saasInstanceId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: generate-saas-account-csv\n\
+  \        method: POST\n        description: Generate a CSV report of accounts for a SaaS instance.\n        path: /{saasInstanceId}/saas_accounts/csv_report\n        inputParameters:\n        - name: saasInstanceId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        - name: sortBy\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            userFullName: '{{tools.userFullName}}'\n            userEmail: '{{tools.userEmail}}'\n            service: '{{tools.service}}'\n      - name: get-saas-activity\n        method: GET\n        description: Retrieve activity logs for a SaaS instance.\n        path: /{saasInstanceId}/saas_activity\n        inputParameters:\n       \
+  \ - name: saasInstanceId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n          type: string\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: page\n          in: query\n          type: integer\n          required: false\n        - name: sortBy\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: tickets\n      path: /sspm/identity/v1/{saasInstanceId}/tickets\n      operations:\n      - name: list-saas-tickets\n        method: GET\n        description: Retrieve tickets associated with a SaaS instance.\n        inputParameters:\n        - name: saasInstanceId\n          in: path\n          type: string\n          required: true\n        - name: filter\n          in: query\n\
+  \          type: string\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        - name: page\n          in: query\n          type: integer\n          required: false\n        - name: sortBy\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-saas-ticket\n        method: POST\n        description: Create a new ticket for a SaaS instance.\n        inputParameters:\n        - name: saasInstanceId\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            resourceIds: '{{tools.resourceI\n\n# --- truncated at 32 KB (75 KB total) ---\n# Full source:\
+  \ https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/data-protection.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/data-protection.yaml
 tags:
 - Palo Alto Networks

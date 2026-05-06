@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- prisma-access-browser
+consumed_apis: []
 description: Browser security capability for managing enterprise browser policies, user sessions, and deployments through the Prisma Access Browser API.
 layout: capability
 name: Palo Alto Networks Browser Security
@@ -49,127 +48,129 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- designs and implements network security architectures and policies.
-- tenant operator
-- network architect
-- create browser policy
-- designs sase and sd-wan network architectures for secure remote access.
-- threat intelligence
-- cloud security
-- cybersecurity
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- threat hunter
-- update a specific browser policy by id.
-- investigates dlp incidents and manages sensitive data protection policies.
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- platform engineer
-- create browser deployment
-- investigates security incidents, triages alerts, and coordinates response actions.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- vulnerability manager
-- enterprise browser policy management and secure browsing.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- list browser policies
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- list all browser users with pagination.
-- delete browser policy
-- create a new browser policy.
-- analyzes suspicious files and samples for malware characteristics.
-- network security engineer
-- list browser deployments
-- manage enterprise browser policies, user sessions, and deployments.
-- iam admin
-- manages enterprise browser policies and secure browsing configurations.
-- digital experience monitoring, log management, and best practice assessment.
-- update browser policy
-- get sessions for a specific browser user.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- xdr
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- list all browser policies with pagination.
-- incident responder
-- browser security admin
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manage enterprise browser security policies.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- network security
-- sase admin
-- manages logging infrastructure, integrations, and platform automation.
+- mssp operator
 - research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- executes containment, eradication, and recovery actions during security incidents.
+- platform engineer
+- manage enterprise browser policies, user sessions, and deployments.
+- list browser users
+- create browser policy
+- get browser policy
+- red team operator
+- xdr
+- prisma access
+- browser security
+- digital experience monitoring, log management, and best practice assessment.
+- cloud security
+- monitors network health, performance, and digital experience metrics.
+- palo alto networks
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
 - malware researcher
+- list all browser policies with pagination.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- sase
+- get user sessions
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- data loss prevention, saas security monitoring, and identity security posture.
+- conducts automated adversarial testing against ai systems and llm applications.
+- network architect
+- list all browser deployments with pagination.
+- sre
+- compliance team
+- manages service accounts, roles, and access policies for platform api access.
+- ai runtime security scanning and automated red teaming for ai applications.
+- subscription manager
+- firewall
+- manages multi-tenant security operations at scale for managed service providers.
+- update browser policy
+- analyzes suspicious files and samples for malware characteristics.
+- cloud security posture management, compliance monitoring, and workload protection.
+- saas security admin
+- soc analyst
+- get a specific browser policy by id.
+- manage browser deployments across platforms.
+- create a new browser policy.
+- get sessions for a specific browser user.
+- sd wan operator
+- enterprise browser
+- investigates security incidents, triages alerts, and coordinates response actions.
+- tenant operator
+- data protection analyst
+- iam admin
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- network operations
+- designs and implements network security architectures and policies.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- threat intel analyst
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- enterprise it
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- threat hunter
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
 - researches threat actors, malware campaigns, and vulnerability trends.
 - get sessions for a specific user.
-- data protection analyst
-- subscription manager
-- network operations
-- enterprise it
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- list browser users
+- sase admin
 - proactively searches for threats and iocs across telemetry data.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- delete a specific browser policy by id.
-- ai security engineer
-- manage browser deployments across platforms.
-- cloud security posture management, compliance monitoring, and workload protection.
-- red team operator
-- identity and access management, tenant hierarchies, and subscription management.
-- palo alto networks
-- saas security admin
-- threat intel analyst
-- sd wan operator
-- cloud security engineer
-- manages service accounts, roles, and access policies for platform api access.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
 - threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- mssp operator
-- data loss prevention, saas security monitoring, and identity security posture.
-- ai runtime security scanning and automated red teaming for ai applications.
-- list enterprise browser users.
-- get user sessions
-- monitors network health, performance, and digital experience metrics.
-- soar
-- sase
-- browser security
-- secures ai applications with runtime scanning and vulnerability assessment.
-- compliance officer
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- prisma access
-- get a specific browser policy by id.
+- vulnerability manager
+- manages logging infrastructure, integrations, and platform automation.
+- update a specific browser policy by id.
+- delete a specific browser policy by id.
+- incident responder
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- identity and access management, tenant hierarchies, and subscription management.
 - manage a specific browser policy by id.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- list all browser deployments with pagination.
-- soc analyst
-- enterprise browser
-- compliance team
-- create a new browser deployment.
-- sre
-- executes containment, eradication, and recovery actions during security incidents.
-- conducts automated adversarial testing against ai systems and llm applications.
-- get browser policy
-- manages multi-tenant security operations at scale for managed service providers.
-- firewall
+- cybersecurity
+- network security engineer
+- list all browser users with pagination.
+- investigates dlp incidents and manages sensitive data protection policies.
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- ai security engineer
+- browser security admin
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- compliance officer
+- enterprise browser policy management and secure browsing.
+- list browser deployments
 - firewall policy management, network objects, and cloud-native firewall configuration.
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- soar
+- list enterprise browser users.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- create browser deployment
+- network security
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
 - firewall admin
+- list browser policies
+- create a new browser deployment.
+- designs sase and sd-wan network architectures for secure remote access.
+- manage enterprise browser security policies.
+- cloud security engineer
+- threat intelligence
+- delete browser policy
+- manages enterprise browser policies and secure browsing configurations.
 slug: browser-security
 source_filename: browser-security.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Browser Security\"\n  description: \"Browser security capability for managing enterprise browser policies, user sessions, and deployments through the Prisma Access Browser API.\"\n  tags:\n    - Palo Alto Networks\n    - Browser Security\n    - Enterprise Browser\n    - Prisma Access\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: prisma-access-browser\n      location: ./shared/prisma-access-browser.yaml\n\n  exposes:\n    - type: rest\n      port: 8089\n      namespace: browser-security-rest\n      description: \"REST API for managing enterprise browser security policies, users, and deployments.\"\n      resources:\n\n        # -- Browser Policies ------------------------------------------------\n        - path: /v1/browser-policies\n          name: browser-policies\n\
-  \          description: \"Manage enterprise browser security policies.\"\n          operations:\n            - method: GET\n              name: list-browser-policies\n              description: \"List all browser policies with pagination.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"prisma-access-browser.list-browser-policies\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-browser-policy\n              description: \"Create a new browser policy.\"\n              inputParameters:\n                - name: name\n    \
-  \              in: body\n                  type: string\n                  required: true\n                - name: rules\n                  in: body\n                  type: object\n                  required: true\n                - name: enabled\n                  in: body\n                  type: boolean\n                  required: true\n              call: \"prisma-access-browser.create-browser-policy\"\n              with:\n                name: \"rest.name\"\n                rules: \"rest.rules\"\n                enabled: \"rest.enabled\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/browser-policies/{policy_id}\n          name: browser-policy\n          description: \"Manage a specific browser policy by ID.\"\n          operations:\n            - method: GET\n              name: get-browser-policy\n              description: \"Get a specific browser policy by ID.\"\n              inputParameters:\n   \
-  \             - name: policy_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-access-browser.get-browser-policy\"\n              with:\n                policy_id: \"rest.policy_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-browser-policy\n              description: \"Update a specific browser policy by ID.\"\n              inputParameters:\n                - name: policy_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-access-browser.update-browser-policy\"\n              with:\n                policy_id: \"rest.policy_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-browser-policy\n              description:\
-  \ \"Delete a specific browser policy by ID.\"\n              inputParameters:\n                - name: policy_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-access-browser.delete-browser-policy\"\n              with:\n                policy_id: \"rest.policy_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -- Browser Users ---------------------------------------------------\n        - path: /v1/browser-users\n          name: browser-users\n          description: \"List enterprise browser users.\"\n          operations:\n            - method: GET\n              name: list-browser-users\n              description: \"List all browser users with pagination.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n\
-  \                  in: query\n                  type: integer\n                  required: false\n              call: \"prisma-access-browser.list-browser-users\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/browser-users/{user_id}/sessions\n          name: user-sessions\n          description: \"Get sessions for a specific browser user.\"\n          operations:\n            - method: GET\n              name: get-user-sessions\n              description: \"Get sessions for a specific user.\"\n              inputParameters:\n                - name: user_id\n                  in: path\n                  type: string\n                  required: true\n              call: \"prisma-access-browser.get-user-sessions\"\n              with:\n                user_id: \"rest.user_id\"\n              outputParameters:\n \
-  \               - type: object\n                  mapping: \"$.\"\n\n        # -- Deployments -----------------------------------------------------\n        - path: /v1/browser-deployments\n          name: browser-deployments\n          description: \"Manage browser deployments across platforms.\"\n          operations:\n            - method: GET\n              name: list-browser-deployments\n              description: \"List all browser deployments with pagination.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n              call: \"prisma-access-browser.list-deployments\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n      \
-  \            mapping: \"$.\"\n            - method: POST\n              name: create-browser-deployment\n              description: \"Create a new browser deployment.\"\n              inputParameters:\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                - name: platform\n                  in: body\n                  type: string\n                  required: true\n                - name: settings\n                  in: body\n                  type: object\n                  required: true\n              call: \"prisma-access-browser.create-deployment\"\n              with:\n                name: \"rest.name\"\n                platform: \"rest.platform\"\n                settings: \"rest.settings\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9099\n      namespace: browser-security-mcp\n      transport: http\n     \
-  \ description: \"MCP server for AI-assisted enterprise browser security management.\"\n      tools:\n\n        # -- Browser Policies ------------------------------------------------\n        - name: list-browser-policies\n          description: \"List all browser policies with pagination.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-access-browser.list-browser-policies\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-browser-policy\n          description: \"Create a new browser policy.\"\n          hints:\n      \
-  \      readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: name\n              type: string\n              required: true\n            - name: rules\n              type: object\n              required: true\n            - name: enabled\n              type: boolean\n              required: true\n          call: \"prisma-access-browser.create-browser-policy\"\n          with:\n            name: \"tools.name\"\n            rules: \"tools.rules\"\n            enabled: \"tools.enabled\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-browser-policy\n          description: \"Get a specific browser policy by ID.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: policy_id\n              type:\
-  \ string\n              required: true\n          call: \"prisma-access-browser.get-browser-policy\"\n          with:\n            policy_id: \"tools.policy_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-browser-policy\n          description: \"Update a specific browser policy by ID.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: policy_id\n              type: string\n              required: true\n          call: \"prisma-access-browser.update-browser-policy\"\n          with:\n            policy_id: \"tools.policy_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-browser-policy\n          description: \"Delete a specific browser policy by ID.\"\n          hints:\n            readOnly: false\n            destructive:\
-  \ true\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: policy_id\n              type: string\n              required: true\n          call: \"prisma-access-browser.delete-browser-policy\"\n          with:\n            policy_id: \"tools.policy_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # -- Browser Users ---------------------------------------------------\n        - name: list-browser-users\n          description: \"List all browser users with pagination.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-access-browser.list-browser-users\"\n          with:\n\
-  \            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-user-sessions\n          description: \"Get sessions for a specific user.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: user_id\n              type: string\n              required: true\n          call: \"prisma-access-browser.get-user-sessions\"\n          with:\n            user_id: \"tools.user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        # -- Deployments -----------------------------------------------------\n        - name: list-browser-deployments\n          description: \"List all browser deployments with pagination.\"\n          hints:\n            readOnly: true\n            destructive: false\n   \
-  \         idempotent: true\n            openWorld: true\n          inputParameters:\n            - name: offset\n              type: integer\n              required: false\n            - name: limit\n              type: integer\n              required: false\n          call: \"prisma-access-browser.list-deployments\"\n          with:\n            offset: \"tools.offset\"\n            limit: \"tools.limit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-browser-deployment\n          description: \"Create a new browser deployment.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n            openWorld: true\n          inputParameters:\n            - name: name\n              type: string\n              required: true\n            - name: platform\n              type: string\n              required: true\n            - name: settings\n              type: object\n\
-  \              required: true\n          call: \"prisma-access-browser.create-deployment\"\n          with:\n            name: \"tools.name\"\n            platform: \"tools.platform\"\n            settings: \"tools.settings\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Palo Alto Networks Browser Security\n  description: Browser security capability for managing enterprise browser policies, user sessions, and deployments through\n    the Prisma Access Browser API.\n  tags:\n  - Palo Alto Networks\n  - Browser Security\n  - Enterprise Browser\n  - Prisma Access\n  created: '2026-04-16'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: prisma-access-browser\n    baseUri: https://api.sase.paloaltonetworks.com/browser\n    description: Prisma Access Browser Management API for managing browser policies, users, sessions, and deployments.\n    authentication:\n      type: bearer\n      token: '{{env.PALO_ALTO_OAUTH_TOKEN}}'\n    resources:\n    - name: browser-policies\n      path: /v1/policies\n      operations:\n      - name: list-browser-policies\n        method: GET\n        description:\
+  \ List all browser policies with pagination.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-browser-policy\n        method: POST\n        description: Create a new browser policy.\n        inputParameters:\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: rules\n          in: body\n          type: object\n          required: true\n        - name: enabled\n          in: body\n          type: boolean\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n         \
+  \   name: '{{tools.name}}'\n            rules: '{{tools.rules}}'\n            enabled: '{{tools.enabled}}'\n    - name: browser-policy\n      path: /v1/policies/{policy_id}\n      operations:\n      - name: get-browser-policy\n        method: GET\n        description: Get a specific browser policy by ID.\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-browser-policy\n        method: PUT\n        description: Update a specific browser policy by ID.\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data: {}\n      - name: delete-browser-policy\n\
+  \        method: DELETE\n        description: Delete a specific browser policy by ID.\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: browser-users\n      path: /v1/users\n      operations:\n      - name: list-browser-users\n        method: GET\n        description: List all browser users with pagination.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: user-sessions\n      path: /v1/users/{user_id}/sessions\n      operations:\n      - name: get-user-sessions\n        method:\
+  \ GET\n        description: Get sessions for a specific user.\n        inputParameters:\n        - name: user_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: deployments\n      path: /v1/deployments\n      operations:\n      - name: list-deployments\n        method: GET\n        description: List all deployments with pagination.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-deployment\n        method: POST\n        description: Create a new deployment.\n        inputParameters:\n        - name: name\n      \
+  \    in: body\n          type: string\n          required: true\n        - name: platform\n          in: body\n          type: string\n          required: true\n        - name: settings\n          in: body\n          type: object\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            platform: '{{tools.platform}}'\n            settings: '{{tools.settings}}'\n  exposes:\n  - type: rest\n    port: 8089\n    namespace: browser-security-rest\n    description: REST API for managing enterprise browser security policies, users, and deployments.\n    resources:\n    - path: /v1/browser-policies\n      name: browser-policies\n      description: Manage enterprise browser security policies.\n      operations:\n      - method: GET\n        name: list-browser-policies\n        description: List all browser\
+  \ policies with pagination.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        call: prisma-access-browser.list-browser-policies\n        with:\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-browser-policy\n        description: Create a new browser policy.\n        inputParameters:\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: rules\n          in: body\n          type: object\n          required: true\n        - name: enabled\n          in: body\n          type: boolean\n          required: true\n        call: prisma-access-browser.create-browser-policy\n        with:\n          name: rest.name\n          rules: rest.rules\n\
+  \          enabled: rest.enabled\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/browser-policies/{policy_id}\n      name: browser-policy\n      description: Manage a specific browser policy by ID.\n      operations:\n      - method: GET\n        name: get-browser-policy\n        description: Get a specific browser policy by ID.\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n        call: prisma-access-browser.get-browser-policy\n        with:\n          policy_id: rest.policy_id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PUT\n        name: update-browser-policy\n        description: Update a specific browser policy by ID.\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n        call: prisma-access-browser.update-browser-policy\n        with:\n  \
+  \        policy_id: rest.policy_id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-browser-policy\n        description: Delete a specific browser policy by ID.\n        inputParameters:\n        - name: policy_id\n          in: path\n          type: string\n          required: true\n        call: prisma-access-browser.delete-browser-policy\n        with:\n          policy_id: rest.policy_id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/browser-users\n      name: browser-users\n      description: List enterprise browser users.\n      operations:\n      - method: GET\n        name: list-browser-users\n        description: List all browser users with pagination.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n\
+  \        call: prisma-access-browser.list-browser-users\n        with:\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/browser-users/{user_id}/sessions\n      name: user-sessions\n      description: Get sessions for a specific browser user.\n      operations:\n      - method: GET\n        name: get-user-sessions\n        description: Get sessions for a specific user.\n        inputParameters:\n        - name: user_id\n          in: path\n          type: string\n          required: true\n        call: prisma-access-browser.get-user-sessions\n        with:\n          user_id: rest.user_id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/browser-deployments\n      name: browser-deployments\n      description: Manage browser deployments across platforms.\n      operations:\n      - method: GET\n        name: list-browser-deployments\n        description:\
+  \ List all browser deployments with pagination.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n        - name: limit\n          in: query\n          type: integer\n          required: false\n        call: prisma-access-browser.list-deployments\n        with:\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-browser-deployment\n        description: Create a new browser deployment.\n        inputParameters:\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: platform\n          in: body\n          type: string\n          required: true\n        - name: settings\n          in: body\n          type: object\n          required: true\n        call: prisma-access-browser.create-deployment\n        with:\n          name: rest.name\n   \
+  \       platform: rest.platform\n          settings: rest.settings\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9099\n    namespace: browser-security-mcp\n    transport: http\n    description: MCP server for AI-assisted enterprise browser security management.\n    tools:\n    - name: list-browser-policies\n      description: List all browser policies with pagination.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: offset\n        type: integer\n        required: false\n      - name: limit\n        type: integer\n        required: false\n      call: prisma-access-browser.list-browser-policies\n      with:\n        offset: tools.offset\n        limit: tools.limit\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-browser-policy\n      description: Create a new browser policy.\n      hints:\n\
+  \        readOnly: false\n        destructive: false\n        idempotent: false\n        openWorld: true\n      inputParameters:\n      - name: name\n        type: string\n        required: true\n      - name: rules\n        type: object\n        required: true\n      - name: enabled\n        type: boolean\n        required: true\n      call: prisma-access-browser.create-browser-policy\n      with:\n        name: tools.name\n        rules: tools.rules\n        enabled: tools.enabled\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-browser-policy\n      description: Get a specific browser policy by ID.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: policy_id\n        type: string\n        required: true\n      call: prisma-access-browser.get-browser-policy\n      with:\n        policy_id: tools.policy_id\n      outputParameters:\n      - type:\
+  \ object\n        mapping: $.\n    - name: update-browser-policy\n      description: Update a specific browser policy by ID.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: policy_id\n        type: string\n        required: true\n      call: prisma-access-browser.update-browser-policy\n      with:\n        policy_id: tools.policy_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-browser-policy\n      description: Delete a specific browser policy by ID.\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: policy_id\n        type: string\n        required: true\n      call: prisma-access-browser.delete-browser-policy\n      with:\n        policy_id: tools.policy_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    -\
+  \ name: list-browser-users\n      description: List all browser users with pagination.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: offset\n        type: integer\n        required: false\n      - name: limit\n        type: integer\n        required: false\n      call: prisma-access-browser.list-browser-users\n      with:\n        offset: tools.offset\n        limit: tools.limit\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-user-sessions\n      description: Get sessions for a specific user.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: user_id\n        type: string\n        required: true\n      call: prisma-access-browser.get-user-sessions\n      with:\n        user_id: tools.user_id\n      outputParameters:\n      - type: object\n\
+  \        mapping: $.\n    - name: list-browser-deployments\n      description: List all browser deployments with pagination.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n        openWorld: true\n      inputParameters:\n      - name: offset\n        type: integer\n        required: false\n      - name: limit\n        type: integer\n        required: false\n      call: prisma-access-browser.list-deployments\n      with:\n        offset: tools.offset\n        limit: tools.limit\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-browser-deployment\n      description: Create a new browser deployment.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n        openWorld: true\n      inputParameters:\n      - name: name\n        type: string\n        required: true\n      - name: platform\n        type: string\n        required: true\n      - name: settings\n       \
+  \ type: object\n        required: true\n      call: prisma-access-browser.create-deployment\n      with:\n        name: tools.name\n        platform: tools.platform\n        settings: tools.settings\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/browser-security.yaml
 tags:
 - Palo Alto Networks

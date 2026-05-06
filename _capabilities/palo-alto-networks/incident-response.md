@@ -1,11 +1,7 @@
 ---
 categories:
 - incident-management
-consumed_apis:
-- cortex-xdr
-- cortex-xsiam
-- cortex-xsoar
-- cortex-xpanse
+consumed_apis: []
 description: Unified incident response capability for SOC analysts — investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface exposure across Cortex XDR, XSIAM, XSOAR, and Xpanse.
 layout: capability
 name: Palo Alto Networks Incident Response
@@ -179,302 +175,301 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- get script results
-- run a script on endpoints.
-- list xsiam assets with optional filters.
-- designs and implements network security architectures and policies.
-- xdr update incident
-- get script execution results from xdr.
-- tenant operator
-- search xsiam endpoints.
-- create a new incident in cortex xsoar.
-- network architect
-- xpanse list incidents
-- search xsiam incidents
-- search incidents with filters in cortex xsoar.
-- designs sase and sd-wan network architectures for secure remote access.
-- threat intelligence
-- get exposed services from xpanse.
-- retrieve a specific investigation by id from xsoar.
-- get xdr audit logs.
-- cloud security
-- search for integration instances in xsoar.
-- start xql query
-- list playbooks
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- cybersecurity
-- list xdr alerts with optional filters, pagination, and sorting.
-- threat hunter
+- initiate a scan on endpoints.
+- search xdr endpoints.
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- mssp operator
+- executes containment, eradication, and recovery actions during security incidents.
 - xsoar run playbook
-- get xql query results from xdr.
-- xsoar search incidents
-- xsiam list alerts
-- get xsiam management logs.
-- investigates dlp incidents and manages sensitive data protection policies.
-- search owned ip ranges.
-- xsoar create incident
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
-- retrieve a specific investigation by id from cortex xsoar.
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- search services
-- xdr run script
-- search xpanse incidents.
-- unisolate endpoints.
+- xdr start xql query
+- get xpanse audit logs.
 - platform engineer
-- run script
-- search endpoints
-- investigates security incidents, triages alerts, and coordinates response actions.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- list xsiam assets with filters.
-- vulnerability manager
-- search xsiam endpoints
-- get xql query results
-- search xpanse incidents with filters.
-- enterprise browser policy management and secure browsing.
-- search integrations
-- xsiam list endpoints
-- xdr get script results
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- xsoar search integration instances
-- search xsiam alerts with filters.
+- get a specific investigation.
+- manage enterprise browser policies, user sessions, and deployments.
+- get xdr audit logs
+- start xql queries on xsiam.
+- configure datasource
+- get script execution results from xdr.
+- get script results
+- red team operator
+- search for available integrations in xsoar.
+- xdr
+- configure a datasource for xsiam ingestion.
+- xpanse update incident
 - isolate endpoints from the network via xdr.
-- run a playbook on an investigation in xsoar.
+- search xsiam alerts.
+- get xql query results
+- search attack surface rules.
+- list xsiam endpoints with optional filters.
+- list available playbooks in xsoar.
+- digital experience monitoring, log management, and best practice assessment.
+- xdr run script
+- get xql query results from xsiam.
+- cloud security
+- search incidents
+- isolate endpoints
+- list xsiam assets with optional filters.
+- monitors network health, performance, and digital experience metrics.
+- get xql query results from xdr.
+- create a new incident in cortex xsoar.
+- palo alto networks
+- xdr isolate endpoints
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- malware researcher
+- get owned ip ranges from xpanse.
+- list xsiam assets with filters.
+- list playbooks
+- update an xdr incident.
+- search xsiam assets.
+- search xsiam assets
+- list and manage xsoar playbooks.
+- search exposed assets
+- secures ai applications with runtime scanning and vulnerability assessment.
+- xsiam list incidents
+- get investigation
+- sase
+- xdr list incidents
+- start an xql query on xsiam.
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- data loss prevention, saas security monitoring, and identity security posture.
+- create xsoar investigations.
+- search xsiam endpoints
+- conducts automated adversarial testing against ai systems and llm applications.
+- run playbook
+- network architect
+- add entry
+- search for integration instances in xsoar.
+- sre
+- get script execution results.
+- xdr update incident
+- compliance team
+- search for integration instances in cortex xsoar.
+- unisolate endpoints.
+- manages service accounts, roles, and access policies for platform api access.
+- xsoar add entry
+- ai runtime security scanning and automated red teaming for ai applications.
+- update incident
+- xpanse update attack surface rule
+- subscription manager
+- retrieve a specific investigation by id from cortex xsoar.
+- list xsiam alerts with optional filters and pagination.
+- xdr get script results
+- create investigation
+- firewall
+- get or update a specific incident.
+- list xsiam endpoints with filters.
+- detection and response
+- initiate a scan on endpoints via xdr.
+- get management logs from xsiam.
+- create incident
+- list xdr incidents with optional filters, pagination, and sorting.
+- manages multi-tenant security operations at scale for managed service providers.
+- xsiam start xql query
+- update an xpanse incident.
+- list xdr incidents.
 - analyzes suspicious files and samples for malware characteristics.
-- get details for a specific exposed asset.
-- xdr get audit logs
+- configure xsiam datasources.
+- cloud security posture management, compliance monitoring, and workload protection.
+- saas security admin
+- xdr list alerts
+- soc analyst
+- run a playbook on an investigation in cortex xsoar.
+- search xdr alerts
+- list xdr endpoints with filters.
+- list xsiam incidents with optional filters and pagination.
+- xpanse list ip ranges
+- get extra data for a specific xdr incident.
+- xpanse list services
+- search incidents with filters in cortex xsoar.
+- run a playbook on an investigation in xsoar.
+- sd wan operator
+- investigates security incidents, triages alerts, and coordinates response actions.
+- tenant operator
+- soc
+- xsoar update incident
+- start xql queries on xdr.
+- get audit management logs from xpanse.
+- xsoar get investigation
+- xpanse list attack surface rules
+- data protection analyst
+- iam admin
+- list incidents
+- incident response
+- retrieve a specific incident by id from cortex xsoar.
+- get attack surface rules from xpanse.
+- xdr get incident details
+- unisolate endpoints and restore network connectivity via xdr.
+- xsoar search integrations
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- search xsiam alerts with filters.
+- xsiam list alerts
+- update attack surface rule
+- search endpoints
+- network operations
+- designs and implements network security architectures and policies.
+- xsiam list assets
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- search xpanse incidents
+- list available playbooks in cortex xsoar.
+- threat intel analyst
+- search xsoar integrations.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- run a script on endpoints.
+- search xdr alerts.
+- get internet exposure details for specific assets from xpanse.
+- search xsiam incidents
+- xsoar create incident
+- search services
+- xpanse get asset details
+- start an xql query on xdr.
+- threat hunter
+- enterprise it
+- xsoar list playbooks
+- scan endpoints.
+- xpanse list exposed assets
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- run scripts on endpoints.
+- start xql query
+- researches threat actors, malware campaigns, and vulnerability trends.
+- search attack surface rules
+- xsoar search integration instances
+- get audit management logs from xdr.
+- get internet-exposed assets from xpanse.
+- xdr unisolate endpoints
+- run script
+- sase admin
+- search integrations
+- proactively searches for threats and iocs across telemetry data.
+- search xsoar integration instances.
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- vulnerability manager
+- incident management — list, search, create, and update incidents.
+- update an attack surface rule.
+- manages logging infrastructure, integrations, and platform automation.
+- search for available integrations in cortex xsoar.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- search xsiam incidents with filters.
+- add entries to investigations.
+- get incident details
+- search incidents with filters.
+- unisolate endpoints
+- incident responder
+- search xsiam endpoints.
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- get exposed services from xpanse.
+- search exposed services.
+- xdr list endpoints
+- identity and access management, tenant hierarchies, and subscription management.
+- search xsiam alerts
+- search integration instances
+- search xpanse incidents.
+- xsiam get xql results
+- cybersecurity
 - network security engineer
 - xpanse get audit logs
-- manage enterprise browser policies, user sessions, and deployments.
-- run a playbook on an investigation in cortex xsoar.
-- iam admin
-- manages enterprise browser policies and secure browsing configurations.
-- xsoar create investigation
-- start xql queries on xsiam.
-- start an xql query on xsiam.
-- digital experience monitoring, log management, and best practice assessment.
-- get audit management logs from xpanse.
-- search incidents with filters.
-- get or update a specific incident.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- search xsoar integration instances.
-- xdr
-- scan endpoints
-- list xsiam endpoints with filters.
-- get incident details from xdr.
-- run playbook
-- unisolate endpoints and restore network connectivity via xdr.
-- soc
-- xsiam start xql query
-- list xdr incidents with optional filters, pagination, and sorting.
-- xsiam get management logs
-- update attack surface rule
-- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- incident responder
-- xdr get incident details
-- retrieve a specific incident by id from cortex xsoar.
-- search xdr alerts with filters.
-- browser security admin
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- run scripts on endpoints.
-- get xsiam xql query results
-- add entry
-- detection and response
-- firewall admin
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- xdr list incidents
-- security operations
-- create investigation
-- xdr unisolate endpoints
-- update an xdr incident.
-- xpanse list attack surface rules
-- network security
-- sase admin
-- search xdr incidents with filters.
-- xsiam list incidents
-- xsiam configure datasource
-- create a new investigation in xsoar.
-- get management logs from xsiam.
-- manages logging infrastructure, integrations, and platform automation.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- list xdr incidents.
-- add an entry to an investigation in xsoar.
-- xpanse update attack surface rule
-- update incident
-- create a new investigation in cortex xsoar.
-- malware researcher
-- search xdr endpoints.
-- create incident
-- researches threat actors, malware campaigns, and vulnerability trends.
-- list xdr endpoints with filters.
-- update xpanse incident
-- get xdr audit logs
-- list xsiam incidents with optional filters and pagination.
-- get xsiam management logs
-- xpanse get asset details
-- get xpanse audit logs
-- initiate a scan on endpoints.
-- data protection analyst
-- subscription manager
-- network operations
-- enterprise it
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
-- update an xpanse incident.
-- proactively searches for threats and iocs across telemetry data.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- get xql query results from xsiam.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- isolate endpoints from the network.
-- add entries to investigations.
-- get audit management logs from xdr.
-- search xdr alerts
-- get attack surface rules from xpanse.
-- create xsoar investigations.
-- incident management — list, search, create, and update incidents.
-- xsiam get xql results
-- get investigation
-- ai security engineer
-- search xsiam assets.
-- search for available integrations in xsoar.
-- get incident details
-- update an existing incident in cortex xsoar.
-- cloud security posture management, compliance monitoring, and workload protection.
-- list xsiam alerts with optional filters and pagination.
-- initiate a scan on endpoints via xdr.
-- red team operator
-- identity and access management, tenant hierarchies, and subscription management.
-- search xsoar integrations.
-- palo alto networks
-- saas security admin
-- list available playbooks in xsoar.
-- list incidents
-- get script execution results.
-- threat intel analyst
-- xdr get xql results
-- search exposed assets
-- xsoar search integrations
-- sd wan operator
-- isolate endpoints.
-- xsoar get incident
-- search xsiam incidents.
-- search integration instances
-- configure a datasource for xsiam ingestion.
-- search xsiam alerts.
-- search internet-exposed assets.
-- update an attack surface rule.
-- xdr start xql query
-- search exposed services.
-- xpanse list ip ranges
-- create an incident in xsoar.
-- cloud security engineer
-- search for integration instances in cortex xsoar.
-- incident response
-- get owned ip ranges from xpanse.
-- manages service accounts, roles, and access policies for platform api access.
-- list xsiam endpoints with optional filters.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- configure xsiam datasources.
-- unisolate endpoints and restore network connectivity.
-- xsoar add entry
-- data loss prevention, saas security monitoring, and identity security posture.
-- xdr scan endpoints
-- run a script on endpoints via xdr.
-- ai runtime security scanning and automated red teaming for ai applications.
-- start xql queries on xdr.
-- xpanse list services
-- monitors network health, performance, and digital experience metrics.
-- get a specific investigation.
-- isolate endpoints
-- start an xql query on xdr.
-- list xdr endpoints with optional filters, pagination, and sorting.
-- soar
-- get internet exposure details for specific assets from xpanse.
-- sase
-- xdr list endpoints
-- search xdr alerts.
-- secures ai applications with runtime scanning and vulnerability assessment.
-- compliance officer
-- add an entry to an investigation in cortex xsoar.
-- search attack surface rules.
-- configure datasource
-- search xsiam incidents with filters.
-- xpanse list exposed assets
-- start xsiam xql query
-- xdr list alerts
-- xsiam list assets
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- get xpanse incidents.
-- xdr isolate endpoints
-- xpanse update incident
-- list and manage xsoar playbooks.
-- update an attack surface rule in xpanse.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- search incidents
-- search xsiam assets
-- soc analyst
-- search for available integrations in cortex xsoar.
-- compliance team
-- sre
-- get internet-exposed assets from xpanse.
-- list available playbooks in cortex xsoar.
-- xsoar list playbooks
-- search xpanse incidents
-- unisolate endpoints
-- get xpanse audit logs.
-- get extra data for a specific xdr incident.
-- run xsoar playbooks.
-- executes containment, eradication, and recovery actions during security incidents.
-- conducts automated adversarial testing against ai systems and llm applications.
-- manages multi-tenant security operations at scale for managed service providers.
-- get asset details
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- search xsiam alerts
-- xsoar update incident
-- firewall
-- xsoar get investigation
-- scan endpoints.
-- search attack surface rules
 - search ip ranges
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- mssp operator
+- create a new investigation in cortex xsoar.
+- investigates dlp incidents and manages sensitive data protection policies.
+- xdr get xql results
+- search xsiam incidents.
+- xsiam get management logs
+- isolate endpoints from the network.
+- unisolate endpoints and restore network connectivity.
+- get xsiam management logs
+- scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- create an incident in xsoar.
+- xdr scan endpoints
+- get xpanse incidents.
+- ai security engineer
+- get xsiam xql query results
+- compliance officer
+- browser security admin
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- enterprise browser policy management and secure browsing.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- scan endpoints
+- search internet-exposed assets.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- soar
+- retrieve a specific investigation by id from xsoar.
+- update xpanse incident
+- xsoar search incidents
+- create a new investigation in xsoar.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- update an attack surface rule in xpanse.
+- get xpanse audit logs
+- search xpanse incidents with filters.
+- network security
+- update an existing incident in cortex xsoar.
+- xpanse list incidents
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
+- firewall admin
+- run xsoar playbooks.
+- list xdr alerts with optional filters, pagination, and sorting.
+- get xdr audit logs.
+- xsoar create investigation
+- search owned ip ranges.
+- get xsiam management logs.
+- xsoar get incident
+- xsiam configure datasource
+- xsiam list endpoints
+- add an entry to an investigation in xsoar.
+- add an entry to an investigation in cortex xsoar.
+- security operations
+- isolate endpoints.
+- designs sase and sd-wan network architectures for secure remote access.
+- start xsiam xql query
+- list xdr endpoints with optional filters, pagination, and sorting.
+- cloud security engineer
+- search xdr incidents with filters.
+- run a script on endpoints via xdr.
+- get details for a specific exposed asset.
+- threat intelligence
+- search xdr alerts with filters.
+- xdr get audit logs
+- get asset details
+- get incident details from xdr.
+- manages enterprise browser policies and secure browsing configurations.
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Incident Response\"\n  description: \"Unified incident response capability for SOC analysts — investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface exposure across Cortex XDR, XSIAM, XSOAR, and Xpanse.\"\n  tags:\n    - Palo Alto Networks\n    - Incident Response\n    - SOC\n    - Security Operations\n    - Detection And Response\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      CORTEX_XDR_API_KEY_ID: CORTEX_XDR_API_KEY_ID\n      CORTEX_XDR_API_KEY: CORTEX_XDR_API_KEY\n      CORTEX_XDR_FQDN: CORTEX_XDR_FQDN\n      CORTEX_XSIAM_API_KEY_ID: CORTEX_XSIAM_API_KEY_ID\n      CORTEX_XSIAM_API_KEY: CORTEX_XSIAM_API_KEY\n      CORTEX_XSIAM_FQDN: CORTEX_XSIAM_FQDN\n      CORTEX_XSOAR_API_KEY: CORTEX_XSOAR_API_KEY\n      CORTEX_XSOAR_FQDN: CORTEX_XSOAR_FQDN\n      CORTEX_XPANSE_API_KEY_ID: CORTEX_XPANSE_API_KEY_ID\n\
-  \      CORTEX_XPANSE_API_KEY: CORTEX_XPANSE_API_KEY\n      CORTEX_XPANSE_FQDN: CORTEX_XPANSE_FQDN\n\ncapability:\n  consumes:\n    - import: cortex-xdr\n      location: ./shared/cortex-xdr.yaml\n    - import: cortex-xsiam\n      location: ./shared/cortex-xsiam.yaml\n    - import: cortex-xsoar\n      location: ./shared/cortex-xsoar.yaml\n    - import: cortex-xpanse\n      location: ./shared/cortex-xpanse.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: incident-response-api\n      description: \"Unified REST API for incident response workflows across Cortex XDR, XSIAM, XSOAR, and Xpanse.\"\n      resources:\n\n        # -------------------------------------------------------\n        # /v1/incidents — Incident Management (XDR + XSOAR)\n        # -------------------------------------------------------\n        - path: /v1/incidents\n          name: incidents\n          description: \"Incident management — list, search, create, and update incidents.\"\n          operations:\n\
-  \            - method: GET\n              name: list-incidents\n              description: \"List XDR incidents.\"\n              inputParameters:\n                - name: filters\n                  in: query\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n                - name: sort\n                  in: query\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"cortex-xdr.get-incidents\"\n              with:\n                x-xdr-api-key:\
-  \ \"{{CORTEX_XDR_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n            - method: POST\n              name: create-incident\n              description: \"Create an incident in XSOAR.\"\n              inputParameters:\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Name of the incident.\"\n                - name: type\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Type of the incident.\"\n                - name: severity\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Severity\
-  \ level of the incident.\"\n                - name: details\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Details of the incident.\"\n              call: \"cortex-xsoar-api.create-incident\"\n              with:\n                name: \"rest.name\"\n                type: \"rest.type\"\n                severity: \"rest.severity\"\n                details: \"rest.details\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/incidents/search\n          name: incidents-search\n          description: \"Search incidents with filters.\"\n          operations:\n            - method: POST\n              name: search-incidents\n              description: \"Search XDR incidents with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n\
-  \                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"cortex-xdr.get-incidents\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: array\n\
-  \                  mapping: \"$.\"\n\n        - path: /v1/incidents/{incident_id}\n          name: incident-detail\n          description: \"Get or update a specific incident.\"\n          operations:\n            - method: GET\n              name: get-incident-details\n              description: \"Get incident details from XDR.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The incident ID.\"\n              call: \"cortex-xdr.get-incident-extra-data\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                incident_id: \"rest.incident_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-incident\n              description: \"Update an XDR incident.\"\n              inputParameters:\n      \
-  \          - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The incident ID.\"\n                - name: update_data\n                  in: body\n                  type: object\n                  required: true\n                  description: \"Data to update on the incident.\"\n              call: \"cortex-xdr.update-incident\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                incident_id: \"rest.incident_id\"\n                update_data: \"rest.update_data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/xsiam-incidents — XSIAM Incidents\n        # -------------------------------------------------------\n        - path: /v1/xsiam-incidents/search\n          name: xsiam-incidents-search\n          description:\
-  \ \"Search XSIAM incidents.\"\n          operations:\n            - method: POST\n              name: search-xsiam-incidents\n              description: \"Search XSIAM incidents with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n              call: \"cortex-xsiam.get-incidents\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XSIAM_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from:\
-  \ \"rest.search_from\"\n                search_to: \"rest.search_to\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/alerts — Alert Management\n        # -------------------------------------------------------\n        - path: /v1/alerts/search\n          name: alerts-search\n          description: \"Search XDR alerts.\"\n          operations:\n            - method: POST\n              name: search-xdr-alerts\n              description: \"Search XDR alerts with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"\
-  Start index for pagination.\"\n                - name: search_to\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"cortex-xdr.get-alerts\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/xsiam-alerts/search\n          name: xsiam-alerts-search\n          description: \"Search XSIAM alerts.\"\n          operations:\n            - method: POST\n          \
-  \    name: search-xsiam-alerts\n              description: \"Search XSIAM alerts with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n              call: \"cortex-xsiam.get-alerts\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XSIAM_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n              outputParameters:\n\
-  \                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/endpoints — Endpoint Management\n        # -------------------------------------------------------\n        - path: /v1/endpoints/search\n          name: endpoints-search\n          description: \"Search XDR endpoints.\"\n          operations:\n            - method: POST\n              name: search-endpoints\n              description: \"List XDR endpoints with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in:\
-  \ body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"cortex-xdr.get-endpoints\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/endpoints/isolate\n          name: endpoints-isolate\n          description: \"Isolate endpoints from the network.\"\n          operations:\n            - method: POST\n              name: isolate-endpoints\n              description: \"Isolate endpoints.\"\
-  \n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: true\n                  description: \"Array of filter objects to identify endpoints.\"\n              call: \"cortex-xdr.isolate-endpoints\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                filters: \"rest.filters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/endpoints/unisolate\n          name: endpoints-unisolate\n          description: \"Unisolate endpoints and restore network connectivity.\"\n          operations:\n            - method: POST\n              name: unisolate-endpoints\n              description: \"Unisolate endpoints.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: true\n              \
-  \    description: \"Array of filter objects to identify endpoints.\"\n              call: \"cortex-xdr.unisolate-endpoints\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                filters: \"rest.filters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/endpoints/scan\n          name: endpoints-scan\n          description: \"Scan endpoints.\"\n          operations:\n            - method: POST\n              name: scan-endpoints\n              description: \"Initiate a scan on endpoints.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: true\n                  description: \"Array of filter objects to identify endpoints.\"\n              call: \"cortex-xdr.scan-endpoints\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n               \
-  \ filters: \"rest.filters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/xsiam-endpoints/search\n          name: xsiam-endpoints-search\n          description: \"Search XSIAM endpoints.\"\n          operations:\n            - method: POST\n              name: search-xsiam-endpoints\n              description: \"List XSIAM endpoints with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n              call: \"cortex-xsiam.get-endpoints\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XSIAM_API_KEY}}\"\n                filters: \"rest.filters\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n     \
-  \   # /v1/scripts — Script Execution\n        # -------------------------------------------------------\n        - path: /v1/scripts/run\n          name: scripts-run\n          description: \"Run scripts on endpoints.\"\n          operations:\n            - method: POST\n              name: run-script\n              description: \"Run a script on endpoints.\"\n              inputParameters:\n                - name: script_uid\n                  in: body\n                  type: string\n                  required: true\n                  description: \"UID of the script to run.\"\n                - name: timeout\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Script execution timeout in seconds.\"\n                - name: endpoint_ids\n                  in: body\n                  type: array\n                  required: true\n                  description: \"List of endpoint IDs.\"\n                - name:\
-  \ parameters\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Script parameters.\"\n              call: \"cortex-xdr.run-script\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                script_uid: \"rest.script_uid\"\n                timeout: \"rest.timeout\"\n                endpoint_ids: \"rest.endpoint_ids\"\n                parameters: \"rest.parameters\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/scripts/results\n          name: scripts-results\n          description: \"Get script execution results.\"\n          operations:\n            - method: POST\n              name: get-script-results\n              description: \"Get script execution results.\"\n              inputParameters:\n                - name: action_id\n                  in: body\n                  type: string\n    \
-  \              required: true\n                  description: \"The action ID from the script execution.\"\n              call: \"cortex-xdr.get-script-execution-results\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                action_id: \"rest.action_id\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/queries — XQL Queries (XDR)\n        # -------------------------------------------------------\n        - path: /v1/queries\n          name: xql-queries\n          description: \"Start XQL queries on XDR.\"\n          operations:\n            - method: POST\n              name: start-xql-query\n              description: \"Start an XQL query on XDR.\"\n              inputParameters:\n                - name: query\n                  in: body\n                  type: string\n                  required: true\n     \
-  \             description: \"The XQL query string.\"\n                - name: timeframe\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Timeframe for the query.\"\n              call: \"cortex-xdr.start-xql-query\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                query: \"rest.query\"\n                timeframe: \"rest.timeframe\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/queries/results\n          name: xql-query-results\n          description: \"Get XQL query results from XDR.\"\n          operations:\n            - method: POST\n              name: get-xql-query-results\n              description: \"Get XQL query results from XDR.\"\n              inputParameters:\n                - name: query_id\n                  in: body\n                  type: string\n                  required:\
-  \ true\n                  description: \"The query ID from a started XQL query.\"\n              call: \"cortex-xdr.get-xql-query-results\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XDR_API_KEY}}\"\n                query_id: \"rest.query_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/xsiam-queries — XQL Queries (XSIAM)\n        # -------------------------------------------------------\n        - path: /v1/xsiam-queries\n          name: xsiam-xql-queries\n          description: \"Start XQL queries on XSIAM.\"\n          operations:\n            - method: POST\n              name: start-xsiam-xql-query\n              description: \"Start an XQL query on XSIAM.\"\n              inputParameters:\n                - name: query\n                  in: body\n                  type: string\n                  required: true\n        \
-  \          description: \"The XQL query string.\"\n                - name: timeframe\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Timeframe for the query.\"\n              call: \"cortex-xsiam.start-xql-query\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XSIAM_API_KEY}}\"\n                query: \"rest.query\"\n                timeframe: \"rest.timeframe\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/xsiam-queries/results\n          name: xsiam-xql-query-results\n          description: \"Get XQL query results from XSIAM.\"\n          operations:\n            - method: POST\n              name: get-xsiam-xql-query-results\n              description: \"Get XQL query results from XSIAM.\"\n              inputParameters:\n                - name: query_id\n                  in: body\n                  type: string\n\
-  \                  required: true\n                  description: \"The query ID from a started XQL query.\"\n              call: \"cortex-xsiam.get-xql-query-results\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XSIAM_API_KEY}}\"\n                query_id: \"rest.query_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/attack-surface — Attack Surface (Xpanse)\n        # -------------------------------------------------------\n        - path: /v1/attack-surface/assets/search\n          name: attack-surface-assets-search\n          description: \"Search internet-exposed assets.\"\n          operations:\n            - method: POST\n              name: search-exposed-assets\n              description: \"Get internet-exposed assets from Xpanse.\"\n              inputParameters:\n                - name: filters\n                  in: body\n\
-  \                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n              call: \"cortex-xpanse.get-assets-internet-exposure\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/attack-surface/assets/{asset_id}\n          name: attack-surface-asset-detail\n\
-  \          description: \"Get details for a specific exposed asset.\"\n          operations:\n            - method: POST\n              name: get-asset-details\n              description: \"Get internet exposure details for specific assets from Xpanse.\"\n              inputParameters:\n                - name: asm_id_list\n                  in: body\n                  type: array\n                  required: true\n                  description: \"List of ASM IDs to query.\"\n              call: \"cortex-xpanse.get-asset-internet-exposure\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                asm_id_list: \"rest.asm_id_list\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/attack-surface/incidents/search\n          name: attack-surface-incidents-search\n          description: \"Search Xpanse incidents.\"\n          operations:\n            - method: POST\n           \
-  \   name: search-xpanse-incidents\n              description: \"Search Xpanse incidents with filters.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n                - name: search_from\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Start index for pagination.\"\n                - name: search_to\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"End index for pagination.\"\n              call: \"cortex-xpanse.get-incidents\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                filters: \"rest.filters\"\n                search_from: \"rest.search_from\"\n                search_to: \"rest.search_to\"\n       \
-  \       outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/attack-surface/incidents/{incident_id}\n          name: attack-surface-incident-update\n          description: \"Update an Xpanse incident.\"\n          operations:\n            - method: PUT\n              name: update-xpanse-incident\n              description: \"Update an Xpanse incident.\"\n              inputParameters:\n                - name: incident_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The incident ID.\"\n                - name: update_data\n                  in: body\n                  type: object\n                  required: true\n                  description: \"Data to update on the incident.\"\n              call: \"cortex-xpanse.update-incident\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                incident_id: \"rest.incident_id\"\
-  \n                update_data: \"rest.update_data\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/attack-surface/rules/search\n          name: attack-surface-rules-search\n          description: \"Search attack surface rules.\"\n          operations:\n            - method: POST\n              name: search-attack-surface-rules\n              description: \"Get attack surface rules from Xpanse.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n              call: \"cortex-xpanse.get-attack-surface-rules\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                filters: \"rest.filters\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path:\
-  \ /v1/attack-surface/rules/{rule_id}\n          name: attack-surface-rule-update\n          description: \"Update an attack surface rule.\"\n          operations:\n            - method: PUT\n              name: update-attack-surface-rule\n              description: \"Update an attack surface rule in Xpanse.\"\n              inputParameters:\n                - name: rule_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The rule ID.\"\n                - name: update_data\n                  in: body\n                  type: object\n                  required: true\n                  description: \"Data to update on the rule.\"\n              call: \"cortex-xpanse.update-attack-surface-rule\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                rule_id: \"rest.rule_id\"\n                update_data: \"rest.update_data\"\n              outputParameters:\n        \
-  \        - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/attack-surface/services/search\n          name: attack-surface-services-search\n          description: \"Search exposed services.\"\n          operations:\n            - method: POST\n              name: search-services\n              description: \"Get exposed services from Xpanse.\"\n              inputParameters:\n                - name: filters\n                  in: body\n                  type: array\n                  required: false\n                  description: \"Array of filter objects.\"\n              call: \"cortex-xpanse.get-services\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                filters: \"rest.filters\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/attack-surface/ip-ranges/search\n          name: attack-surface-ip-ranges-search\n          description: \"Search\
-  \ owned IP ranges.\"\n          operations:\n            - method: POST\n              name: search-ip-ranges\n              description: \"Get owned IP ranges from Xpanse.\"\n              inputParameters:\n                - name: search_params\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Search parameters for IP ranges.\"\n              call: \"cortex-xpanse.get-owned-ip-ranges\"\n              with:\n                x-xdr-api-key: \"{{CORTEX_XPANSE_API_KEY}}\"\n                search_params: \"rest.search_params\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # /v1/investigations — XSOAR Investigations\n        # -------------------------------------------------------\n        - path: /v1/investigations\n          name: investigations\n          description: \"Create XSOAR\
-  \ investigations.\"\n          operations:\n            - method: POST\n              name: create-investigation\n              description: \"Create a new investigation in XSOAR.\"\n              inputParameters:\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Name of the investigation.\"\n                - name: type\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Type of the investigation.\"\n              call: \"cortex-xsoar-api.create-investigation\"\n              with:\n                name: \"rest.name\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/investigations/{investigation_id}\n          name: investigation-detail\n          description: \"Get a specific investigation.\"\n\
-  \          operations:\n            - method: GET\n              name: get-investigation\n              description: \"Retrieve a specific investigation by ID from XSOAR.\"\n              inputParameters:\n                - name: investigation_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The investigation ID.\"\n              call: \"cortex-xsoar-api.get-investigation\"\n              with:\n                id: \"rest.investigation_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/investigations/entries\n          name: investigation-entries\n          description: \"Add entries to investigations.\"\n          operations:\n            - method: POST\n              name: add-entry\n              description: \"Add an entry to an investigation in XSOAR.\"\n              inputParameters:\n                - name: investigationId\n\
-  \                  in: body\n                  type: string\n                  required: true\n    \n\n# --- truncated at 32 KB (76 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/incident-response.yaml\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Palo Alto Networks Incident Response\n  description: Unified incident response capability for SOC analysts — investigate incidents, triage alerts, manage endpoints,\n    execute response playbooks, and assess attack surface exposure across Cortex XDR, XSIAM, XSOAR, and Xpanse.\n  tags:\n  - Palo Alto Networks\n  - Incident Response\n  - SOC\n  - Security Operations\n  - Detection And Response\n  created: '2026-04-16'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    CORTEX_XDR_API_KEY_ID: CORTEX_XDR_API_KEY_ID\n    CORTEX_XDR_API_KEY: CORTEX_XDR_API_KEY\n    CORTEX_XDR_FQDN: CORTEX_XDR_FQDN\n    CORTEX_XSIAM_API_KEY_ID: CORTEX_XSIAM_API_KEY_ID\n    CORTEX_XSIAM_API_KEY: CORTEX_XSIAM_API_KEY\n    CORTEX_XSIAM_FQDN: CORTEX_XSIAM_FQDN\n    CORTEX_XSOAR_API_KEY: CORTEX_XSOAR_API_KEY\n    CORTEX_XSOAR_FQDN: CORTEX_XSOAR_FQDN\n    CORTEX_XPANSE_API_KEY_ID: CORTEX_XPANSE_API_KEY_ID\n    CORTEX_XPANSE_API_KEY: CORTEX_XPANSE_API_KEY\n\
+  \    CORTEX_XPANSE_FQDN: CORTEX_XPANSE_FQDN\ncapability:\n  consumes:\n  - type: http\n    namespace: cortex-xdr\n    baseUri: https://{fqdn}/public_api/v1\n    description: Palo Alto Networks Cortex XDR API for extended detection and response.\n    authentication:\n      type: apikey\n      key: x-xdr-auth-id\n      value: '{{CORTEX_XDR_API_KEY_ID}}'\n      placement: header\n    resources:\n    - name: incidents\n      path: /incidents\n      description: Incident management operations.\n      operations:\n      - name: get-incidents\n        method: POST\n        description: Get a list of incidents.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        - name: search_from\n          in: body\n         \
+  \ type: integer\n          required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        - name: sort\n          in: body\n          type: object\n          required: false\n          description: Sort configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: incidents\n          type: array\n          value: $.reply.incidents\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n              sort: '{{tools.sort}}'\n      - name: get-incident-extra-data\n        method: POST\n        description: Get extra data for a specific incident.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n        \
+  \  type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: incident_id\n          in: body\n          type: string\n          required: true\n          description: The incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: incident\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              incident_id: '{{tools.incident_id}}'\n      - name: update-incident\n        method: POST\n        description: Update an incident.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: incident_id\n          in: body\n          type: string\n          required: true\n          description: The incident ID.\n        - name: update_data\n          in: body\n          type: object\n\
+  \          required: true\n          description: Data to update on the incident.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              incident_id: '{{tools.incident_id}}'\n              update_data: '{{tools.update_data}}'\n    - name: alerts\n      path: /alerts\n      description: Alert operations.\n      operations:\n      - name: get-alerts\n        method: POST\n        description: Get a list of alerts.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        - name: search_from\n          in: body\n          type: integer\n      \
+  \    required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        - name: sort\n          in: body\n          type: object\n          required: false\n          description: Sort configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: alerts\n          type: array\n          value: $.reply.alerts\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n              sort: '{{tools.sort}}'\n    - name: endpoints\n      path: /endpoints\n      description: Endpoint operations.\n      operations:\n      - name: get-endpoints\n        method: POST\n        description: Get a list of endpoints.\n        inputParameters:\n       \
+  \ - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        - name: search_from\n          in: body\n          type: integer\n          required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        - name: sort\n          in: body\n          type: object\n          required: false\n          description: Sort configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: endpoints\n          type: array\n          value: $.reply.endpoints\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n\
+  \              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n              sort: '{{tools.sort}}'\n      - name: isolate-endpoints\n        method: POST\n        description: Isolate endpoints.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: true\n          description: Array of filter objects to identify endpoints.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n      - name: unisolate-endpoints\n        method: POST\n        description: Unisolate endpoints.\n        inputParameters:\n        - name: x-xdr-api-key\n\
+  \          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: true\n          description: Array of filter objects to identify endpoints.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n      - name: scan-endpoints\n        method: POST\n        description: Scan endpoints.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: true\n          description: Array of filter objects to identify endpoints.\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n    - name: scripts\n      path: /scripts\n      description: Script execution operations.\n      operations:\n      - name: run-script\n        method: POST\n        description: Run a script on endpoints.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: script_uid\n          in: body\n          type: string\n          required: true\n          description: UID of the script to run.\n        - name: timeout\n          in: body\n          type: integer\n          required: false\n          description: Script execution timeout in seconds.\n        - name: endpoint_ids\n          in: body\n          type: array\n\
+  \          required: true\n          description: List of endpoint IDs.\n        - name: parameters\n          in: body\n          type: object\n          required: false\n          description: Script parameters.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              script_uid: '{{tools.script_uid}}'\n              timeout: '{{tools.timeout}}'\n              endpoint_ids: '{{tools.endpoint_ids}}'\n              parameters: '{{tools.parameters}}'\n      - name: get-script-execution-results\n        method: POST\n        description: Get script execution results.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: action_id\n          in: body\n          type: string\n\
+  \          required: true\n          description: The action ID from the script execution.\n        outputRawFormat: json\n        outputParameters:\n        - name: results\n          type: array\n          value: $.reply.results\n        body:\n          type: json\n          data:\n            request_data:\n              action_id: '{{tools.action_id}}'\n    - name: xql\n      path: /xql\n      description: XQL query operations.\n      operations:\n      - name: start-xql-query\n        method: POST\n        description: Start an XQL query.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: query\n          in: body\n          type: string\n          required: true\n          description: The XQL query string.\n        - name: timeframe\n          in: body\n          type: object\n          required: false\n          description: Timeframe\
+  \ for the query.\n        outputRawFormat: json\n        outputParameters:\n        - name: query_id\n          type: string\n          value: $.reply.query_id\n        body:\n          type: json\n          data:\n            request_data:\n              query: '{{tools.query}}'\n              timeframe: '{{tools.timeframe}}'\n      - name: get-xql-query-results\n        method: POST\n        description: Get XQL query results.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: query_id\n          in: body\n          type: string\n          required: true\n          description: The query ID from a started XQL query.\n        outputRawFormat: json\n        outputParameters:\n        - name: results\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n       \
+  \       query_id: '{{tools.query_id}}'\n    - name: audit\n      path: /audit\n      description: Audit log operations.\n      operations:\n      - name: get-audit-management-logs\n        method: POST\n        description: Get audit management logs.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        - name: search_from\n          in: body\n          type: integer\n          required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        - name: sort\n          in: body\n          type: object\n          required: false\n          description: Sort\
+  \ configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: logs\n          type: array\n          value: $.reply.data\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n              sort: '{{tools.sort}}'\n  - type: http\n    namespace: cortex-xsiam\n    baseUri: https://{fqdn}/public_api/v1\n    description: Palo Alto Networks Cortex XSIAM API for autonomous security operations.\n    authentication:\n      type: apikey\n      key: x-xdr-auth-id\n      value: '{{CORTEX_XSIAM_API_KEY_ID}}'\n      placement: header\n    resources:\n    - name: incidents\n      path: /incidents\n      description: Incident management operations.\n      operations:\n      - name: get-incidents\n        method: POST\n        description: Get a list of incidents.\n        inputParameters:\n        - name:\
+  \ x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        - name: search_from\n          in: body\n          type: integer\n          required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        outputRawFormat: json\n        outputParameters:\n        - name: incidents\n          type: array\n          value: $.reply.incidents\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n    - name: alerts\n      path: /alerts\n\
+  \      description: Alert operations.\n      operations:\n      - name: get-alerts\n        method: POST\n        description: Get a list of alerts.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        - name: search_from\n          in: body\n          type: integer\n          required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        outputRawFormat: json\n        outputParameters:\n        - name: alerts\n          type: array\n          value: $.reply.alerts\n        body:\n          type: json\n          data:\n            request_data:\n\
+  \              filters: '{{tools.filters}}'\n              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n    - name: xql\n      path: /xql\n      description: XQL query operations.\n      operations:\n      - name: start-xql-query\n        method: POST\n        description: Start an XQL query.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: query\n          in: body\n          type: string\n          required: true\n          description: The XQL query string.\n        - name: timeframe\n          in: body\n          type: object\n          required: false\n          description: Timeframe for the query.\n        outputRawFormat: json\n        outputParameters:\n        - name: query_id\n          type: string\n          value: $.reply.query_id\n        body:\n          type: json\n          data:\n\
+  \            request_data:\n              query: '{{tools.query}}'\n              timeframe: '{{tools.timeframe}}'\n      - name: get-xql-query-results\n        method: POST\n        description: Get XQL query results.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: query_id\n          in: body\n          type: string\n          required: true\n          description: The query ID from a started XQL query.\n        outputRawFormat: json\n        outputParameters:\n        - name: results\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              query_id: '{{tools.query_id}}'\n    - name: assets\n      path: /assets\n      description: Asset management operations.\n      operations:\n      - name: list-assets\n        method: POST\n        description:\
+  \ List assets.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        outputRawFormat: json\n        outputParameters:\n        - name: assets\n          type: array\n          value: $.reply.assets\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n    - name: endpoints\n      path: /endpoints\n      description: Endpoint operations.\n      operations:\n      - name: get-endpoints\n        method: POST\n        description: Get a list of endpoints.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n\
+  \        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        outputRawFormat: json\n        outputParameters:\n        - name: endpoints\n          type: array\n          value: $.reply.endpoints\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n    - name: audits\n      path: /audits/management_logs\n      description: Management log operations.\n      operations:\n      - name: get-management-logs\n        method: POST\n        description: Get management logs.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter objects.\n        outputRawFormat: json\n\
+  \        outputParameters:\n        - name: logs\n          type: array\n          value: $.reply.data\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n    - name: ingestion\n      path: /ingestion\n      description: Data ingestion and datasource operations.\n      operations:\n      - name: configure-datasource\n        method: POST\n        description: Configure a datasource for ingestion.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XSIAM API key for authentication.\n        - name: name\n          in: body\n          type: string\n          required: true\n          description: Name of the datasource.\n        - name: type\n          in: body\n          type: string\n          required: true\n          description: Type of the datasource.\n        - name: config\n          in: body\n          type:\
+  \ object\n          required: true\n          description: Datasource configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.reply\n        body:\n          type: json\n          data:\n            request_data:\n              name: '{{tools.name}}'\n              type: '{{tools.type}}'\n              config: '{{tools.config}}'\n  - type: http\n    namespace: cortex-xsoar-api\n    baseUri: https://{fqdn}\n    description: Cortex XSOAR API for incident management, investigations, playbooks, and integrations.\n    authentication:\n      type: apikey\n      in: header\n      name: Authorization\n      value: '{{CORTEX_XSOAR_API_KEY}}'\n    resources:\n    - name: incidents\n      path: /incident\n      description: Manage XSOAR incidents.\n      operations:\n      - name: create-incident\n        method: POST\n        description: Create a new incident in Cortex XSOAR.\n        inputParameters:\n       \
+  \ - name: name\n          in: body\n          type: string\n          required: true\n          description: Name of the incident.\n        - name: type\n          in: body\n          type: string\n          required: true\n          description: Type of the incident.\n        - name: severity\n          in: body\n          type: integer\n          required: false\n          description: Severity level of the incident.\n        - name: details\n          in: body\n          type: string\n          required: false\n          description: Details of the incident.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            type: '{{tools.type}}'\n            severity: '{{tools.severity}}'\n            details: '{{tools.details}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-incident\n        method: GET\n        description: Retrieve a specific incident\
+  \ by ID.\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: The incident ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: incidents-search\n      path: /incidents/search\n      description: Search for incidents.\n      operations:\n      - name: search-incidents\n        method: POST\n        description: Search incidents with filters.\n        inputParameters:\n        - name: filter\n          in: body\n          type: object\n          required: false\n          description: Filter criteria for the search.\n        - name: page\n          in: body\n          type: integer\n          required: false\n          description: Page number for pagination.\n        - name: size\n          in: body\n          type: integer\n          required: false\n          description: Number of results per page.\n       \
+  \ body:\n          type: json\n          data:\n            filter: '{{tools.filter}}'\n            page: '{{tools.page}}'\n            size: '{{tools.size}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: incident-update\n      path: /incident/update\n      description: Update an existing incident.\n      operations:\n      - name: update-incident\n        method: POST\n        description: Update an incident with new data.\n        inputParameters:\n        - name: id\n          in: body\n          type: string\n          required: true\n          description: The incident ID to update.\n        - name: update_data\n          in: body\n          type: object\n          required: true\n          description: Data to update on the incident.\n        body:\n          type: json\n          data:\n            id: '{{tools.id}}'\n            update_data: '{{tools.update_data}}'\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: entries\n      path: /entry\n      description: Manage investigation entries.\n      operations:\n      - name: add-entry\n        method: POST\n        description: Add an entry to an investigation.\n        inputParameters:\n        - name: investigationId\n          in: body\n          type: string\n          required: true\n          description: The investigation ID to add the entry to.\n        - name: data\n          in: body\n          type: string\n          required: true\n          description: The entry data content.\n        - name: markdown\n          in: body\n          type: boolean\n          required: false\n          description: Whether the data is markdown formatted.\n        body:\n          type: json\n          data:\n            investigationId: '{{tools.investigationId}}'\n            data: '{{tools.data}}'\n            markdown: '{{tools.markdown}}'\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: investigations\n      path: /investigations\n      description: Manage investigations.\n      operations:\n      - name: get-investigation\n        method: GET\n        description: Retrieve a specific investigation by ID.\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: The investigation ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: investigation-add\n      path: /investigation/add\n      description: Create new investigations.\n      operations:\n      - name: create-investigation\n        method: POST\n        description: Create a new investigation.\n        inputParameters:\n        - name: name\n          in: body\n          type: string\n          required:\
+  \ true\n          description: Name of the investigation.\n        - name: type\n          in: body\n          type: string\n          required: false\n          description: Type of the investigation.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            type: '{{tools.type}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: playbooks\n      path: /playbook\n      description: Manage playbooks.\n      operations:\n      - name: list-playbooks\n        method: GET\n        description: List available playbooks.\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n          description: Page number for pagination.\n        - name: size\n          in: query\n          type: integer\n          required: false\n          description: Number of results per page.\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: playbook-run\n      path: /playbook/run\n      description: Run playbooks.\n      operations:\n      - name: run-playbook\n        method: POST\n        description: Run a playbook on an investigation.\n        inputParameters:\n        - name: playbookId\n          in: body\n          type: string\n          required: true\n          description: The playbook ID to run.\n        - name: investigationId\n          in: body\n          type: string\n          required: true\n          description: The investigation ID to run the playbook on.\n        body:\n          type: json\n          data:\n            playbookId: '{{tools.playbookId}}'\n            investigationId: '{{tools.investigationId}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: integrations\n      path: /integration/search\n\
+  \      description: Search integrations.\n      operations:\n      - name: search-integrations\n        method: GET\n        description: Search for available integrations.\n        inputParameters:\n        - name: query\n          in: query\n          type: string\n          required: false\n          description: Search query string.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: integration-instances\n      path: /settings/integration/search\n      description: Search integration instances.\n      operations:\n      - name: search-integration-instances\n        method: POST\n        description: Search for integration instances.\n        inputParameters:\n        - name: filter\n          in: body\n          type: object\n          required: false\n          description: Filter criteria for the search.\n        body:\n          type: json\n          data:\n            filter: '{{tools.filter}}'\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: cortex-xpanse\n    baseUri: https://{fqdn}/public_api/v1\n    description: Palo Alto Networks Cortex Xpanse API for attack surface management.\n    authentication:\n      type: apikey\n      key: x-xdr-auth-id\n      value: '{{CORTEX_XDR_API_KEY_ID}}'\n      placement: header\n    resources:\n    - name: assets\n      path: /assets\n      description: Asset exposure operations.\n      operations:\n      - name: get-assets-internet-exposure\n        method: POST\n        description: Get assets with internet exposure.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: filters\n          in: body\n          type: array\n          required: false\n          description: Array of filter\
+  \ objects.\n        - name: search_from\n          in: body\n          type: integer\n          required: false\n          description: Start index for pagination.\n        - name: search_to\n          in: body\n          type: integer\n          required: false\n          description: End index for pagination.\n        outputRawFormat: json\n        outputParameters:\n        - name: assets\n          type: array\n          value: $.reply.assets\n        body:\n          type: json\n          data:\n            request_data:\n              filters: '{{tools.filters}}'\n              search_from: '{{tools.search_from}}'\n              search_to: '{{tools.search_to}}'\n      - name: get-asset-internet-exposure\n        method: POST\n        description: Get internet exposure details for specific assets.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n\
+  \        - name: asm_id_list\n          in: body\n          type: array\n          required: true\n          description: List of ASM IDs to query.\n        outputRawFormat: json\n        outputParameters:\n        - name: assets\n          type: array\n          value: $.reply.assets\n        body:\n          type: json\n          data:\n            request_data:\n              asm_id_list: '{{tools.asm_id_list}}'\n    - name: incident-management\n      path: /incident_management\n      description: Incident management operations.\n      operations:\n      - name: get-incidents\n        method: POST\n        description: Get Xpanse incidents.\n        inputParameters:\n        - name: x-xdr-api-key\n          in: header\n          type: string\n          required: true\n          description: XDR API key for authentication.\n        - name: fil\n\n# --- truncated at 32 KB (96 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/incident-response.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/incident-response.yaml
 tags:
 - Palo Alto Networks

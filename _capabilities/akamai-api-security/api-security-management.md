@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- akamai-api-security
+consumed_apis: []
 description: Unified workflow for managing Akamai API Security configurations, policies, and threat protection. Covers security posture management, API discovery, and configuration activation for security teams.
 layout: capability
 name: Akamai API Security Management
@@ -30,53 +29,55 @@ personas: []
 provider_name: Akamai API Security
 provider_slug: akamai-api-security
 search_terms:
-- security automation
-- list configurations
-- posture management
-- list all akamai api security configurations
-- create configuration
-- cloud security
-- create a new api security configuration
-- api posture assessment and vulnerability management
-- API Security Analyst
-- list and check status of security configuration activations
-- check activation status
-- akamai
-- list configuration activations
-- configuration activations
-- discover apis
-- list security policies
-- api discovery
-- threat protection
-- create a new akamai api security configuration
-- create security configuration
-- api inventory and discovery
-- monitors api discovery, threat detection, and posture findings
-- manage api security configurations and posture
-- get api discovery
-- real-time api threat detection and blocking
-- list security policies within a configuration
-- api security configuration and policy management
-- api security configuration management
-- security policy management
-- list security configurations
-- api security
-- Security Engineer
-- list activations
-- manages api security configurations and activations
-- get api inventory including shadow and zombie api findings
 - list policies
+- create configuration
+- list security policies
+- create a new akamai api security configuration
+- configuration activations
+- real-time api threat detection and blocking
+- api posture assessment and vulnerability management
+- create security configuration
 - runtime protection
-- get api discovery results
+- discover apis
 - list all api security configurations
+- API Security Analyst
+- security automation
+- list security configurations
+- list configurations
+- get api discovery
+- list configuration activations
+- api discovery
+- cloud security
+- security policy management
+- threat protection
+- akamai
+- manage api security configurations and posture
+- manages api security configurations and activations
+- list all akamai api security configurations
+- get api discovery results
+- api inventory and discovery
+- api security configuration management
+- list and check status of security configuration activations
+- api security
+- monitors api discovery, threat detection, and posture findings
+- create a new api security configuration
+- list security policies within a configuration
+- posture management
+- api security configuration and policy management
+- check activation status
+- list activations
+- get api inventory including shadow and zombie api findings
+- Security Engineer
 slug: api-security-management
 source_filename: api-security-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Akamai API Security Management\"\n  description: \"Unified workflow for managing Akamai API Security configurations, policies, and threat protection. Covers security posture management, API discovery, and configuration activation for security teams.\"\n  tags:\n    - Akamai\n    - API Security\n    - Posture Management\n    - Runtime Protection\n    - Security Automation\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AKAMAI_CLIENT_TOKEN: AKAMAI_CLIENT_TOKEN\n      AKAMAI_CLIENT_SECRET: AKAMAI_CLIENT_SECRET\n      AKAMAI_ACCESS_TOKEN: AKAMAI_ACCESS_TOKEN\n      AKAMAI_HOST: AKAMAI_HOST\n\ncapability:\n  consumes:\n    - import: akamai-api-security\n      location: ./shared/api-security.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: api-security-management-api\n      description: \"Unified REST API for Akamai API Security management workflows.\"\n \
-  \     resources:\n        - path: /v1/configurations\n          name: configurations\n          description: \"API security configuration management\"\n          operations:\n            - method: GET\n              name: list-configurations\n              description: \"List all API security configurations\"\n              call: \"akamai-api-security.list-configs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-configuration\n              description: \"Create a new API security configuration\"\n              call: \"akamai-api-security.create-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Security policy management\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List\
-  \ security policies\"\n              call: \"akamai-api-security.list-policies\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/api-discovery\n          name: api-discovery\n          description: \"API inventory and discovery\"\n          operations:\n            - method: GET\n              name: get-api-discovery\n              description: \"Get API discovery results\"\n              call: \"akamai-api-security.get-api-discovery\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/activations\n          name: activations\n          description: \"Configuration activations\"\n          operations:\n            - method: GET\n              name: list-activations\n              description: \"List configuration activations\"\n              call: \"akamai-api-security.list-activations\"\n              outputParameters:\n                - type:\
-  \ object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: api-security-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Akamai API Security management.\"\n      tools:\n        - name: list-security-configurations\n          description: \"List all Akamai API Security configurations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"akamai-api-security.list-configs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-security-configuration\n          description: \"Create a new Akamai API Security configuration\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"akamai-api-security.create-config\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-security-policies\n          description: \"List security\
-  \ policies within a configuration\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"akamai-api-security.list-policies\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: discover-apis\n          description: \"Get API inventory including shadow and zombie API findings\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"akamai-api-security.get-api-discovery\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: check-activation-status\n          description: \"List and check status of security configuration activations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"akamai-api-security.list-activations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Akamai API Security Management\n  description: Unified workflow for managing Akamai API Security configurations, policies, and threat protection. Covers security\n    posture management, API discovery, and configuration activation for security teams.\n  tags:\n  - Akamai\n  - API Security\n  - Posture Management\n  - Runtime Protection\n  - Security Automation\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AKAMAI_CLIENT_TOKEN: AKAMAI_CLIENT_TOKEN\n    AKAMAI_CLIENT_SECRET: AKAMAI_CLIENT_SECRET\n    AKAMAI_ACCESS_TOKEN: AKAMAI_ACCESS_TOKEN\n    AKAMAI_HOST: AKAMAI_HOST\ncapability:\n  consumes:\n  - type: http\n    namespace: akamai-api-security\n    baseUri: https://{hostname}/appsec/v1\n    description: Akamai Application Security API for managing security configurations, policies, and activations.\n    authentication:\n      type: apikey\n      key: Authorization\n      value: '{{AKAMAI_EDGEGRID_AUTH}}'\n\
+  \      placement: header\n    resources:\n    - name: configurations\n      path: /configs\n      description: Security configuration management\n      operations:\n      - name: list-configs\n        method: GET\n        description: List all security configurations\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-config\n        method: POST\n        description: Create a new security configuration\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            description: '{{tools.description}}'\n    - name: security-policies\n      path: /configs/{configId}/security-policies\n      description: Security policy management within a configuration\n      operations:\n      - name: list-policies\n        method: GET\n      \
+  \  description: List all security policies for a configuration\n        inputParameters:\n        - name: configId\n          in: path\n          type: string\n          required: true\n          description: Configuration identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: activations\n      path: /activations\n      description: Configuration activation management\n      operations:\n      - name: list-activations\n        method: GET\n        description: List all activations\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: api-discovery\n      path: /api-discovery\n      description: API discovery and inventory management\n      operations:\n      - name: get-api-discovery\n        method: GET\n        description: Get discovered API inventory\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: api-security-management-api\n    description: Unified REST API for Akamai API Security management workflows.\n    resources:\n    - path: /v1/configurations\n      name: configurations\n      description: API security configuration management\n      operations:\n      - method: GET\n        name: list-configurations\n        description: List all API security configurations\n        call: akamai-api-security.list-configs\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-configuration\n        description: Create a new API security configuration\n        call: akamai-api-security.create-config\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/policies\n      name: policies\n      description: Security policy management\n      operations:\n      - method:\
+  \ GET\n        name: list-policies\n        description: List security policies\n        call: akamai-api-security.list-policies\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/api-discovery\n      name: api-discovery\n      description: API inventory and discovery\n      operations:\n      - method: GET\n        name: get-api-discovery\n        description: Get API discovery results\n        call: akamai-api-security.get-api-discovery\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/activations\n      name: activations\n      description: Configuration activations\n      operations:\n      - method: GET\n        name: list-activations\n        description: List configuration activations\n        call: akamai-api-security.list-activations\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: api-security-management-mcp\n    transport: http\n\
+  \    description: MCP server for AI-assisted Akamai API Security management.\n    tools:\n    - name: list-security-configurations\n      description: List all Akamai API Security configurations\n      hints:\n        readOnly: true\n        openWorld: true\n      call: akamai-api-security.list-configs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-security-configuration\n      description: Create a new Akamai API Security configuration\n      hints:\n        readOnly: false\n        destructive: false\n      call: akamai-api-security.create-config\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-security-policies\n      description: List security policies within a configuration\n      hints:\n        readOnly: true\n        openWorld: true\n      call: akamai-api-security.list-policies\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: discover-apis\n      description: Get API inventory\
+  \ including shadow and zombie API findings\n      hints:\n        readOnly: true\n        openWorld: true\n      call: akamai-api-security.get-api-discovery\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: check-activation-status\n      description: List and check status of security configuration activations\n      hints:\n        readOnly: true\n        openWorld: true\n      call: akamai-api-security.list-activations\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/akamai-api-security/refs/heads/main/capabilities/api-security-management.yaml
 tags:
 - Akamai

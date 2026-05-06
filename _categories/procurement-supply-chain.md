@@ -21,7 +21,7 @@ implementations:
 - capability_name: 1Factory Quality Management
   capability_slug: 1factory-quality-management
   capability_url: https://capabilities.apis.io/capabilities/1factory/1factory-quality-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: 1Factory
   provider_slug: 1factory
@@ -34,7 +34,7 @@ implementations:
 - capability_name: 3M Supply Chain Integration
   capability_slug: 3m-supply-chain-integration
   capability_url: https://capabilities.apis.io/capabilities/3m/3m-supply-chain-integration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: 3M
   provider_slug: 3m
@@ -47,7 +47,7 @@ implementations:
 - capability_name: Acuity Brands Distributor Integration
   capability_slug: distributor-integration
   capability_url: https://capabilities.apis.io/capabilities/acuity-brands/distributor-integration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: acuity-brands
   provider_slug: acuity-brands
@@ -62,7 +62,7 @@ implementations:
 - capability_name: Applied Industrial Technologies Procurement
   capability_slug: industrial-procurement
   capability_url: https://capabilities.apis.io/capabilities/applied-industrial-technologies/industrial-procurement/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 0
   provider_name: Applied Industrial Technologies
   provider_slug: applied-industrial-technologies
@@ -75,7 +75,7 @@ implementations:
 - capability_name: AptarGroup Packaging Sourcing
   capability_slug: packaging-sourcing
   capability_url: https://capabilities.apis.io/capabilities/aptargroup/packaging-sourcing/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 0
   provider_name: AptarGroup
   provider_slug: aptargroup
@@ -89,7 +89,7 @@ implementations:
 - capability_name: Ariba Guided Buying - Procurement Operations
   capability_slug: procurement-operations
   capability_url: https://capabilities.apis.io/capabilities/ariba-guided-buying/procurement-operations/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Ariba Guided Buying
   provider_slug: ariba-guided-buying
@@ -104,7 +104,7 @@ implementations:
 - capability_name: Ariba Sourcing - Sourcing Approvals
   capability_slug: sourcing-approvals
   capability_url: https://capabilities.apis.io/capabilities/ariba-sourcing/sourcing-approvals/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Ariba Sourcing
   provider_slug: ariba-sourcing
@@ -120,7 +120,7 @@ implementations:
 - capability_name: Blissfully SaaS Procurement
   capability_slug: blissfully-saas-procurement
   capability_url: https://capabilities.apis.io/capabilities/blissfully/blissfully-saas-procurement/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Blissfully
   provider_slug: blissfully
@@ -135,7 +135,7 @@ implementations:
 - capability_name: Dynamics NAV Business Operations
   capability_slug: business-operations
   capability_url: https://capabilities.apis.io/capabilities/navision/business-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Microsoft Dynamics NAV
   provider_slug: navision
@@ -150,7 +150,7 @@ implementations:
 - capability_name: Oracle EBS Financial Operations
   capability_slug: financial-operations
   capability_url: https://capabilities.apis.io/capabilities/oracle-e-business-suite/financial-operations/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Oracle E-Business Suite
   provider_slug: oracle-e-business-suite
@@ -163,7 +163,7 @@ implementations:
 - capability_name: Oracle EBS Manufacturing Operations
   capability_slug: manufacturing-operations
   capability_url: https://capabilities.apis.io/capabilities/oracle-e-business-suite/manufacturing-operations/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Oracle E-Business Suite
   provider_slug: oracle-e-business-suite
@@ -176,7 +176,7 @@ implementations:
 - capability_name: PeopleSoft Supply Chain And Procurement
   capability_slug: supply-chain-and-procurement
   capability_url: https://capabilities.apis.io/capabilities/peoplesoft/supply-chain-and-procurement/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 6
   provider_name: PeopleSoft
   provider_slug: peoplesoft
@@ -190,7 +190,7 @@ implementations:
 - capability_name: SAP Ariba Procure-to-Pay
   capability_slug: procure-to-pay
   capability_url: https://capabilities.apis.io/capabilities/sap-ariba/procure-to-pay/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: SAP Ariba
   provider_slug: sap-ariba
@@ -203,7 +203,7 @@ implementations:
 - capability_name: Workday Finance and Procurement
   capability_slug: finance-and-procurement
   capability_url: https://capabilities.apis.io/capabilities/workday/finance-and-procurement/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Workday
   provider_slug: workday

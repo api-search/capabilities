@@ -17,25 +17,25 @@ personas: []
 provider_name: Workday Integration
 provider_slug: workday-integration
 search_terms:
-- workday
 - list pay groups
-- list payroll pay groups
 - integration
-- enterprise
-- hcm
-- list time entries
-- finance
-- list payroll calculation results
-- list pay components
-- payroll
-- list payroll results
 - compensation
-- erp
-- time tracking
 - list employee leave requests affecting payroll
-- list worker time entries for payroll processing
-- list leave requests
+- list payroll pay groups
+- finance
+- list payroll results
+- enterprise
+- payroll
+- erp
+- workday
+- list time entries
+- time tracking
+- hcm
 - tax
+- list pay components
+- list payroll calculation results
+- list leave requests
+- list worker time entries for payroll processing
 slug: payroll-processing
 source_filename: payroll-processing.yaml
 source_heading: Capability Spec

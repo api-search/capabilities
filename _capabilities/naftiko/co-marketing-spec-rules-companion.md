@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- co-marketing
-- mcp
-- capabilities
 - naftiko
-- spectral
+- co-marketing
 - api integration
 - lint spec
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
 - get ruleset
+- spectral
 slug: co-marketing-spec-rules-companion
 source_filename: co-marketing-spec-rules-companion.yaml
 source_heading: Capability Spec

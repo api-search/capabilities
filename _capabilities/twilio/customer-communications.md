@@ -1,9 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- twilio-messaging
-- twilio-voice
-- twilio-verify
+consumed_apis: []
 description: Unified capability for customer-facing communications combining SMS/MMS messaging, outbound voice calls, and verification workflows. Used by customer engagement teams, marketing platforms, and notification systems to communicate with users across multiple channels.
 layout: capability
 name: Twilio Customer Communications
@@ -36,53 +33,60 @@ personas: []
 provider_name: Twilio
 provider_slug: twilio
 search_terms:
-- send an sms or mms message to a customer
-- start verification
-- list voice calls for the account
-- communications
-- make and manage voice calls
-- check a verification code
-- sms
-- check verification
-- send message
-- twilio
-- email
-- verification
-- customer engagement
-- verify a code submitted by a user to complete 2fa
-- make an outbound call
-- fetch message
-- list calls
-- t1
-- send a verification code to a user via sms, voice, or email
-- check verification codes
-- send and manage sms/mms messages
-- notifications
-- contact center
 - list sms/mms messages for the account
+- list messages
+- contact center
+- list voice calls for the account
+- twilio
 - send an sms or mms message
-- voice
-- make call
-- authentication
-- video
-- send verification codes
-- initiate an outbound voice call
-- iot
 - fetch details of a specific message
+- fetch message
+- make an outbound call
+- start verification
+- voice
+- iot
+- start a verification
+- send and manage sms/mms messages
+- send an sms or mms message to a customer
+- sms
 - phone
 - send sms
-- list messages
+- verify a code submitted by a user to complete 2fa
+- make call
 - messaging
-- start a verification
+- check verification
+- t1
+- send a verification code to a user via sms, voice, or email
+- send verification codes
+- send message
+- initiate an outbound voice call
+- video
+- authentication
+- make and manage voice calls
+- list calls
+- notifications
+- check a verification code
+- email
+- check verification codes
+- customer engagement
+- verification
+- communications
 slug: customer-communications
 source_filename: customer-communications.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Twilio Customer Communications\"\n  description: >-\n    Unified capability for customer-facing communications combining SMS/MMS messaging,\n    outbound voice calls, and verification workflows. Used by customer engagement teams,\n    marketing platforms, and notification systems to communicate with users across\n    multiple channels.\n  tags:\n    - Twilio\n    - Messaging\n    - Voice\n    - Customer Engagement\n    - Notifications\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      TWILIO_ACCOUNT_SID: TWILIO_ACCOUNT_SID\n      TWILIO_AUTH_TOKEN: TWILIO_AUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: twilio-messaging\n      location: ./shared/messaging.yaml\n    - import: twilio-voice\n      location: ./shared/voice.yaml\n    - import: twilio-verify\n      location: ./shared/verify.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: twilio-communications-api\n\
-  \      description: \"Unified REST API for Twilio customer communications.\"\n      resources:\n        - path: /v1/messages\n          name: messages\n          description: \"Send and manage SMS/MMS messages\"\n          operations:\n            - method: GET\n              name: list-messages\n              description: \"List messages\"\n              call: \"twilio-messaging.list-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-message\n              description: \"Send an SMS or MMS message\"\n              call: \"twilio-messaging.send-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/calls\n          name: calls\n          description: \"Make and manage voice calls\"\n          operations:\n            - method: GET\n              name: list-calls\n              description: \"List\
-  \ calls\"\n              call: \"twilio-voice.list-calls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: make-call\n              description: \"Make an outbound call\"\n              call: \"twilio-voice.make-call\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/verifications\n          name: verifications\n          description: \"Send verification codes\"\n          operations:\n            - method: POST\n              name: start-verification\n              description: \"Start a verification\"\n              call: \"twilio-verify.start-verification\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/verification-checks\n          name: verification-checks\n          description: \"Check verification codes\"\n          operations:\n\
-  \            - method: POST\n              name: check-verification\n              description: \"Check a verification code\"\n              call: \"twilio-verify.check-verification\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: twilio-communications-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Twilio customer communications.\"\n      tools:\n        - name: list-messages\n          description: \"List SMS/MMS messages for the account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"twilio-messaging.list-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: send-sms\n          description: \"Send an SMS or MMS message to a customer\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n\
-  \          call: \"twilio-messaging.send-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: fetch-message\n          description: \"Fetch details of a specific message\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"twilio-messaging.fetch-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-calls\n          description: \"List voice calls for the account\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"twilio-voice.list-calls\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: make-call\n          description: \"Initiate an outbound voice call\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"twilio-voice.make-call\"\n    \
-  \      outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-verification\n          description: \"Send a verification code to a user via SMS, voice, or email\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"twilio-verify.start-verification\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: check-verification\n          description: \"Verify a code submitted by a user to complete 2FA\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"twilio-verify.check-verification\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Twilio Customer Communications\n  description: Unified capability for customer-facing communications combining SMS/MMS messaging, outbound voice calls, and\n    verification workflows. Used by customer engagement teams, marketing platforms, and notification systems to communicate\n    with users across multiple channels.\n  tags:\n  - Twilio\n  - Messaging\n  - Voice\n  - Customer Engagement\n  - Notifications\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    TWILIO_ACCOUNT_SID: TWILIO_ACCOUNT_SID\n    TWILIO_AUTH_TOKEN: TWILIO_AUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: twilio-messaging\n    baseUri: https://api.twilio.com/2010-04-01\n    description: Twilio Messaging API for SMS and MMS\n    authentication:\n      type: basic\n      username: '{{TWILIO_ACCOUNT_SID}}'\n      password: '{{TWILIO_AUTH_TOKEN}}'\n    resources:\n    - name: messages\n      path: /Accounts/{AccountSid}/Messages.json\n\
+  \      description: Send and retrieve SMS/MMS messages\n      operations:\n      - name: list-messages\n        method: GET\n        description: Retrieve a list of messages\n        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account SID\n        - name: To\n          in: query\n          type: string\n          required: false\n          description: Filter by recipient phone number\n        - name: From\n          in: query\n          type: string\n          required: false\n          description: Filter by sender phone number\n        - name: PageSize\n          in: query\n          type: integer\n          required: false\n          description: Records per page\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: send-message\n        method: POST\n        description: Send an SMS or MMS message\n\
+  \        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: form\n          data:\n            To: '{{tools.to}}'\n            From: '{{tools.from}}'\n            Body: '{{tools.body}}'\n      - name: fetch-message\n        method: GET\n        description: Retrieve details of a specific message\n        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account SID\n        - name: MessageSid\n          in: path\n          type: string\n          required: true\n          description: Message SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      -\
+  \ name: delete-message\n        method: DELETE\n        description: Delete a message record\n        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account SID\n        - name: MessageSid\n          in: path\n          type: string\n          required: true\n          description: Message SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: twilio-voice\n    baseUri: https://api.twilio.com/2010-04-01\n    description: Twilio Voice API\n    authentication:\n      type: basic\n      username: '{{TWILIO_ACCOUNT_SID}}'\n      password: '{{TWILIO_AUTH_TOKEN}}'\n    resources:\n    - name: calls\n      path: /Accounts/{AccountSid}/Calls.json\n      description: Initiate and manage voice calls\n      operations:\n      - name: list-calls\n        method: GET\n        description: Retrieve\
+  \ a list of calls\n        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account SID\n        - name: To\n          in: query\n          type: string\n          required: false\n          description: Filter by destination number\n        - name: From\n          in: query\n          type: string\n          required: false\n          description: Filter by source number\n        - name: Status\n          in: query\n          type: string\n          required: false\n          description: Filter by call status\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: make-call\n        method: POST\n        description: Initiate an outbound voice call\n        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account\
+  \ SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: form\n          data:\n            To: '{{tools.to}}'\n            From: '{{tools.from}}'\n            Url: '{{tools.url}}'\n      - name: fetch-call\n        method: GET\n        description: Retrieve details for a specific call\n        inputParameters:\n        - name: AccountSid\n          in: path\n          type: string\n          required: true\n          description: Twilio Account SID\n        - name: CallSid\n          in: path\n          type: string\n          required: true\n          description: Call SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: twilio-verify\n    baseUri: https://verify.twilio.com/v2\n    description: Twilio Verify API v2\n    authentication:\n      type: basic\n      username:\
+  \ '{{TWILIO_ACCOUNT_SID}}'\n      password: '{{TWILIO_AUTH_TOKEN}}'\n    resources:\n    - name: verifications\n      path: /Services/{ServiceSid}/Verifications\n      description: Send verification codes\n      operations:\n      - name: start-verification\n        method: POST\n        description: Start a verification by sending a code\n        inputParameters:\n        - name: ServiceSid\n          in: path\n          type: string\n          required: true\n          description: Verify Service SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: form\n          data:\n            To: '{{tools.to}}'\n            Channel: '{{tools.channel}}'\n      - name: fetch-verification\n        method: GET\n        description: Fetch a verification status\n        inputParameters:\n        - name: ServiceSid\n          in: path\n          type: string\n          required: true\n      \
+  \    description: Verify Service SID\n        - name: Sid\n          in: path\n          type: string\n          required: true\n          description: Verification SID or phone number\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: verification-checks\n      path: /Services/{ServiceSid}/VerificationCheck\n      description: Check verification codes\n      operations:\n      - name: check-verification\n        method: POST\n        description: Check a verification code\n        inputParameters:\n        - name: ServiceSid\n          in: path\n          type: string\n          required: true\n          description: Verify Service SID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: form\n          data:\n            To: '{{tools.to}}'\n            Code: '{{tools.code}}'\n  exposes:\n  -\
+  \ type: rest\n    port: 8080\n    namespace: twilio-communications-api\n    description: Unified REST API for Twilio customer communications.\n    resources:\n    - path: /v1/messages\n      name: messages\n      description: Send and manage SMS/MMS messages\n      operations:\n      - method: GET\n        name: list-messages\n        description: List messages\n        call: twilio-messaging.list-messages\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: send-message\n        description: Send an SMS or MMS message\n        call: twilio-messaging.send-message\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/calls\n      name: calls\n      description: Make and manage voice calls\n      operations:\n      - method: GET\n        name: list-calls\n        description: List calls\n        call: twilio-voice.list-calls\n        outputParameters:\n        - type: object\n          mapping:\
+  \ $.\n      - method: POST\n        name: make-call\n        description: Make an outbound call\n        call: twilio-voice.make-call\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/verifications\n      name: verifications\n      description: Send verification codes\n      operations:\n      - method: POST\n        name: start-verification\n        description: Start a verification\n        call: twilio-verify.start-verification\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/verification-checks\n      name: verification-checks\n      description: Check verification codes\n      operations:\n      - method: POST\n        name: check-verification\n        description: Check a verification code\n        call: twilio-verify.check-verification\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: twilio-communications-mcp\n    transport: http\n\
+  \    description: MCP server for AI-assisted Twilio customer communications.\n    tools:\n    - name: list-messages\n      description: List SMS/MMS messages for the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: twilio-messaging.list-messages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: send-sms\n      description: Send an SMS or MMS message to a customer\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: twilio-messaging.send-message\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: fetch-message\n      description: Fetch details of a specific message\n      hints:\n        readOnly: true\n        openWorld: false\n      call: twilio-messaging.fetch-message\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-calls\n      description: List voice calls for the account\n      hints:\n        readOnly:\
+  \ true\n        openWorld: true\n      call: twilio-voice.list-calls\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: make-call\n      description: Initiate an outbound voice call\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: twilio-voice.make-call\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-verification\n      description: Send a verification code to a user via SMS, voice, or email\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: twilio-verify.start-verification\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: check-verification\n      description: Verify a code submitted by a user to complete 2FA\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: twilio-verify.check-verification\n      outputParameters:\n \
+  \     - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/twilio/refs/heads/main/capabilities/customer-communications.yaml
 tags:
 - Twilio

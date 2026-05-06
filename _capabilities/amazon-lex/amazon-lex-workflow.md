@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- lex
+consumed_apis: []
 description: Unified workflow capability for Amazon Lex combining resource management and operations.
 layout: capability
 name: Amazon Lex Workflow
@@ -10,25 +9,26 @@ personas: []
 provider_name: Amazon Lex
 provider_slug: amazon-lex
 search_terms:
-- Developer
 - manages resources and configurations
 - Administrator
-- bots create bot
-- integrates api into applications
-- workflow
-- unified workflow for amazon lex resource management
-- aws
-- gets a list of available bots.
 - creates an amazon lex conversational bot.
-- provides metadata information about a bot.
-- bots describe bot
-- amazon lex
+- aws
 - bots list bots
+- integrates api into applications
+- Developer
+- provides metadata information about a bot.
+- gets a list of available bots.
+- workflow
+- amazon lex
+- unified workflow for amazon lex resource management
+- bots describe bot
+- bots create bot
 slug: amazon-lex-workflow
 source_filename: amazon-lex-workflow.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Lex Workflow\n  description: Unified workflow capability for Amazon Lex combining resource management and operations.\n  tags:\n  - Amazon Lex\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: lex\n    location: ./shared/lex.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lex-api\n    description: REST API for Amazon Lex workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lex-mcp\n    transport: http\n    description: MCP server for Amazon Lex.\n    tools:\n    - name: bots-create-bot\n      description: Creates an Amazon Lex conversational bot.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lex.createbot\n      outputParameters:\n      - type: object\n        mapping: $.\n\
-  \    - name: bots-list-bots\n      description: Gets a list of available bots.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lex.listbots\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: bots-describe-bot\n      description: Provides metadata information about a bot.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lex.describebot\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon Lex Workflow\n  description: Unified workflow capability for Amazon Lex combining resource management and operations.\n  tags:\n  - Amazon Lex\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: lex\n    baseUri: https://models-v2-lex.us-east-1.amazonaws.com\n    description: Amazon Lex service.\n    authentication:\n      type: apikey\n      key: Authorization\n      value: '{{AWS_ACCESS_KEY_ID}}'\n      placement: header\n    resources:\n    - name: bots\n      path: /bots\n      description: Lex bot management\n      operations:\n      - name: createbot\n        method: POST\n        description: Creates an Amazon Lex conversational bot.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n  \
+  \        type: object\n          value: $.\n      - name: listbots\n        method: GET\n        description: Gets a list of available bots.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: describebot\n        method: GET\n        description: Provides metadata information about a bot.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: lex-api\n    description: REST API for Amazon Lex workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: lex-mcp\n    transport: http\n    description: MCP server for Amazon Lex.\n    tools:\n    - name: bots-create-bot\n      description: Creates an Amazon Lex conversational bot.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: lex.createbot\n      outputParameters:\n      - type:\
+  \ object\n        mapping: $.\n    - name: bots-list-bots\n      description: Gets a list of available bots.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lex.listbots\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: bots-describe-bot\n      description: Provides metadata information about a bot.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: lex.describebot\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-lex/refs/heads/main/capabilities/amazon-lex-workflow.yaml
 tags:
 - Amazon Lex

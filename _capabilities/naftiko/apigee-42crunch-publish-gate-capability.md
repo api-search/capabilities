@@ -17,25 +17,25 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- fetch the latest 42crunch security audit report for a registered api.
 - naftiko
-- run the 42crunch security audit and the apigee deployment, returning pass/fail plus the audit record. blocks if either gate fails.
-- apigee
-- publish with gates
-- ai
-- get 42crunch audit
-- retrieve the most recent dual-gate audit record for a capability.
-- api integration
-- get audit record
-- fetch the dual-gate audit record (42crunch audit score + conformance, apigee deployment status) for a capability.
-- 42crunch
-- mcp
 - submit a capability for publishing through 42crunch (security audit) and apigee (deployment). returns pass/fail and the per-publish audit record.
-- spec-driven integration
-- governance
+- get 42crunch audit
+- 42crunch
+- fetch the dual-gate audit record (42crunch audit score + conformance, apigee deployment status) for a capability.
 - capabilities
 - list apigee proxies
+- retrieve the most recent dual-gate audit record for a capability.
+- spec-driven integration
+- get audit record
+- ai
+- mcp
+- apigee
 - list api proxies in the configured apigee organization.
+- api integration
+- run the 42crunch security audit and the apigee deployment, returning pass/fail plus the audit record. blocks if either gate fails.
+- publish with gates
+- fetch the latest 42crunch security audit report for a registered api.
+- governance
 slug: apigee-42crunch-publish-gate-capability
 source_filename: apigee-42crunch-publish-gate-capability.yaml
 source_heading: Capability Spec

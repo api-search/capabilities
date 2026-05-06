@@ -17,16 +17,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- sdi
-- spec-driven integration
+- naftiko
 - list services
 - asyncapi
-- mcp
-- capabilities
-- naftiko
 - api integration
 - governance
+- sdi
+- spec-driven integration
 - ai
+- mcp
+- capabilities
 - get asyncapi doc
 slug: async-sdi-companion-capability
 source_filename: async-sdi-companion-capability.yaml

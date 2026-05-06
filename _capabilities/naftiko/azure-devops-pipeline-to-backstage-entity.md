@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- naftiko
 - pull all azure devops pipelines and upsert as backstage entities.
 - backstage
-- spec-driven integration
-- azure devops
-- mcp
-- capabilities
-- naftiko
-- sync pipelines
 - api integration
-- list azdo pipelines
 - governance
+- capabilities
+- spec-driven integration
 - ai
+- sync pipelines
+- mcp
+- azure devops
+- list azdo pipelines
 slug: azure-devops-pipeline-to-backstage-entity
 source_filename: azure-devops-pipeline-to-backstage-entity.yaml
 source_heading: Capability Spec

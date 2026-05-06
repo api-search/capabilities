@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- get bridged portfolio
-- spec-driven integration
-- simcorp
-- bnp
-- mcp
-- capabilities
-- bloomberg
 - naftiko
+- bnp
+- bloomberg
+- get bridged portfolio
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- simcorp
+- capabilities
 slug: bnp-simcorp-bloomberg-portfolio-deterministic-bridge
 source_filename: bnp-simcorp-bloomberg-portfolio-deterministic-bridge.yaml
 source_heading: Capability Spec

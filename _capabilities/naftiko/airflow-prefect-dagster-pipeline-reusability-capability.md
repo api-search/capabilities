@@ -13,24 +13,24 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- naftiko
 - dagster
-- spec-driven integration
+- list airflow dags
+- trigger a shared pipeline step.
 - prefect
 - trigger a shared pipeline step on whichever orchestrator owns it.
-- trigger shared pipeline
-- list prefect deployments
-- mcp
-- list airflow dags.
-- capabilities
-- naftiko
-- reusability
 - list prefect deployments.
+- list airflow dags.
+- reusability
 - api integration
 - governance
-- list airflow dags
-- ai
-- trigger a shared pipeline step.
+- spec-driven integration
 - airflow
+- trigger shared pipeline
+- ai
+- mcp
+- capabilities
+- list prefect deployments
 slug: airflow-prefect-dagster-pipeline-reusability-capability
 source_filename: airflow-prefect-dagster-pipeline-reusability-capability.yaml
 source_heading: Capability Spec

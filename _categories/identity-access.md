@@ -18,7 +18,7 @@ implementations:
 - capability_name: Microsoft Active Directory Identity Management Operations
   capability_slug: identity-management-operations
   capability_url: https://capabilities.apis.io/capabilities/active-directory/identity-management-operations/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 10
   provider_name: Microsoft Active Directory
   provider_slug: active-directory
@@ -32,7 +32,7 @@ implementations:
 - capability_name: Amazon IAM - Access Management
   capability_slug: iam-access-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iam/iam-access-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Amazon IAM
   provider_slug: amazon-iam
@@ -46,7 +46,7 @@ implementations:
 - capability_name: Amazon IAM Identity Center - Identity and Access Management
   capability_slug: identity-access-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iam-identity-center/identity-access-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Amazon IAM Identity Center
   provider_slug: amazon-iam-identity-center
@@ -60,7 +60,7 @@ implementations:
 - capability_name: Amplitude Identity and Privacy
   capability_slug: amplitude-identity-and-privacy
   capability_url: https://capabilities.apis.io/capabilities/amplitude/amplitude-identity-and-privacy/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 17
   provider_name: Amplitude
   provider_slug: amplitude
@@ -72,7 +72,7 @@ implementations:
 - capability_name: Atlassian Platform Administration
   capability_slug: platform-administration
   capability_url: https://capabilities.apis.io/capabilities/atlassian/platform-administration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Atlassian
   provider_slug: atlassian
@@ -85,7 +85,7 @@ implementations:
 - capability_name: Amazon Cognito Identity Management Workflow
   capability_slug: identity-management-workflow
   capability_url: https://capabilities.apis.io/capabilities/aws-cognito/identity-management-workflow/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Amazon Cognito
   provider_slug: aws-cognito
@@ -99,7 +99,7 @@ implementations:
 - capability_name: Dynatrace Identity And Access
   capability_slug: identity-and-access
   capability_url: https://capabilities.apis.io/capabilities/dynatrace/identity-and-access/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Dynatrace
   provider_slug: dynatrace
@@ -113,7 +113,7 @@ implementations:
 - capability_name: GitLab Authentication And Identity
   capability_slug: authentication-and-identity
   capability_url: https://capabilities.apis.io/capabilities/gitlab/authentication-and-identity/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: GitLab
   provider_slug: gitlab
@@ -127,7 +127,7 @@ implementations:
 - capability_name: Mastercard Identity and Authentication
   capability_slug: identity-and-authentication
   capability_url: https://capabilities.apis.io/capabilities/mastercard/identity-and-authentication/
-  consumed_api_count: 7
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Mastercard
   provider_slug: mastercard
@@ -141,7 +141,7 @@ implementations:
 - capability_name: Microsoft Entra Identity and Access Management
   capability_slug: identity-and-access
   capability_url: https://capabilities.apis.io/capabilities/microsoft-entra/identity-and-access/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 23
   provider_name: Microsoft Entra
   provider_slug: microsoft-entra
@@ -154,7 +154,7 @@ implementations:
 - capability_name: Palo Alto Networks Identity and Access Management
   capability_slug: identity-and-access
   capability_url: https://capabilities.apis.io/capabilities/palo-alto-networks/identity-and-access/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 23
   provider_name: Palo Alto Networks
   provider_slug: palo-alto-networks
@@ -169,7 +169,7 @@ implementations:
 - capability_name: Red Hat Identity and Access
   capability_slug: identity-and-access
   capability_url: https://capabilities.apis.io/capabilities/red-hat/identity-and-access/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Red Hat
   provider_slug: red-hat
@@ -182,7 +182,7 @@ implementations:
 - capability_name: Salesforce Platform Administration
   capability_slug: platform-administration
   capability_url: https://capabilities.apis.io/capabilities/salesforce/platform-administration/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Salesforce
   provider_slug: salesforce

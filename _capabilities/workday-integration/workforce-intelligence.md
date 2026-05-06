@@ -13,31 +13,31 @@ personas: []
 provider_name: Workday Integration
 provider_slug: workday-integration
 search_terms:
-- workday
-- list organizations
-- create a data upload bucket for prism analytics
 - integration
+- list workforce planning scenarios
+- list organizations
+- reporting
+- analytics
+- list headcount planning scenarios
+- list datasets
+- list workforce data from hcm
+- list headcount scenarios
+- finance
+- get a prism analytics dataset
+- list workers
+- list workforce plans
+- enterprise
+- list prism analytics datasets
+- payroll
+- erp
+- workday
+- workforce planning
+- list organizational units
+- hcm
+- create a data upload bucket for prism analytics
 - create bucket
 - get dataset
-- enterprise
-- list datasets
-- hcm
-- list workforce data from hcm
-- analytics
 - prism analytics
-- get a prism analytics dataset
-- finance
-- list workforce planning scenarios
-- list organizational units
-- payroll
-- workforce planning
-- list headcount scenarios
-- erp
-- list headcount planning scenarios
-- list prism analytics datasets
-- list workforce plans
-- list workers
-- reporting
 slug: workforce-intelligence
 source_filename: workforce-intelligence.yaml
 source_heading: Capability Spec

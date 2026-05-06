@@ -1,8 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- vtex-checkout
-- vtex-payments
+consumed_apis: []
 description: Workflow capability for VTEX financial and payment operations teams. Combines checkout, payments, and customer credit capabilities for finance teams, payment operations staff, and developers building payment integrations who need to manage transactions, process refunds, and monitor payment flows.
 layout: capability
 name: VTEX Payment Processing
@@ -35,49 +33,51 @@ personas: []
 provider_name: VTEX
 provider_slug: vtex
 search_terms:
-- payment transaction management
-- create a refund for a transaction
-- simulate a vtex order to check real-time pricing, shipping costs, and item availability
-- e-commerce
-- commerce
-- list vtex payment transactions with pagination
-- vtex
-- get transaction
-- list payment transactions
-- checkout
-- finance
-- create a refund for a completed vtex payment transaction
-- get current state of a vtex shopping cart including items, prices, and shipping options
-- single transaction operations
-- create refund
 - get transaction by id
-- get full details of a vtex payment transaction including status and amounts
-- payment refunds
-- shopping cart management
-- create a new vtex shopping cart for a customer
-- get cart
-- order simulation
-- simulate order for pricing and availability
-- payments
-- retail
-- create cart
-- list transactions
-- get shopping cart by id
-- create a new shopping cart
-- single cart operations
-- simulate order
-- transactions
 - marketplace
+- payment refunds
+- order simulation
+- create a new shopping cart
+- create a refund for a completed vtex payment transaction
+- finance
+- vtex
+- get full details of a vtex payment transaction including status and amounts
+- retail
+- e-commerce
+- get shopping cart by id
+- transactions
+- commerce
+- single transaction operations
+- simulate a vtex order to check real-time pricing, shipping costs, and item availability
+- get transaction
+- payment transaction management
+- create refund
+- list payment transactions
+- create a new vtex shopping cart for a customer
+- get current state of a vtex shopping cart including items, prices, and shipping options
+- shopping cart management
+- checkout
+- payments
+- simulate order for pricing and availability
+- simulate order
+- list vtex payment transactions with pagination
+- get cart
+- single cart operations
+- list transactions
+- create cart
+- create a refund for a transaction
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"VTEX Payment Processing\"\n  description: >-\n    Workflow capability for VTEX financial and payment operations teams.\n    Combines checkout, payments, and customer credit capabilities for finance teams,\n    payment operations staff, and developers building payment integrations who need\n    to manage transactions, process refunds, and monitor payment flows.\n  tags:\n    - Checkout\n    - Commerce\n    - Finance\n    - Payments\n    - Transactions\n    - VTEX\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      VTEX_APP_KEY: VTEX_APP_KEY\n      VTEX_APP_TOKEN: VTEX_APP_TOKEN\n\ncapability:\n  consumes:\n    - import: vtex-checkout\n      location: ./shared/checkout.yaml\n    - import: vtex-payments\n      location: ./shared/payments.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: vtex-payment-processing-api\n      description: \"Unified REST API for VTEX\
-  \ payment processing and checkout management.\"\n      resources:\n        - path: /v1/carts\n          name: carts\n          description: \"Shopping cart management\"\n          operations:\n            - method: POST\n              name: create-cart\n              description: \"Create a new shopping cart\"\n              call: \"vtex-checkout.create-cart\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/carts/{orderFormId}\n          name: cart\n          description: \"Single cart operations\"\n          operations:\n            - method: GET\n              name: get-cart\n              description: \"Get shopping cart by ID\"\n              call: \"vtex-checkout.get-cart\"\n              with:\n                orderFormId: \"rest.orderFormId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/order-simulation\n          name: order-simulation\n\
-  \          description: \"Order simulation\"\n          operations:\n            - method: POST\n              name: simulate-order\n              description: \"Simulate order for pricing and availability\"\n              call: \"vtex-checkout.simulate-order\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/transactions\n          name: transactions\n          description: \"Payment transaction management\"\n          operations:\n            - method: GET\n              name: list-transactions\n              description: \"List payment transactions\"\n              call: \"vtex-payments.list-transactions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/transactions/{transactionId}\n          name: transaction\n          description: \"Single transaction operations\"\n          operations:\n            - method: GET\n              name:\
-  \ get-transaction\n              description: \"Get transaction by ID\"\n              call: \"vtex-payments.get-transaction\"\n              with:\n                transactionId: \"rest.transactionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/transactions/{transactionId}/refunds\n          name: refunds\n          description: \"Payment refunds\"\n          operations:\n            - method: POST\n              name: create-refund\n              description: \"Create a refund for a transaction\"\n              call: \"vtex-payments.create-refund\"\n              with:\n                transactionId: \"rest.transactionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: vtex-payment-processing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted VTEX payment processing and financial\
-  \ operations.\"\n      tools:\n        - name: create-cart\n          description: \"Create a new VTEX shopping cart for a customer\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"vtex-checkout.create-cart\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-cart\n          description: \"Get current state of a VTEX shopping cart including items, prices, and shipping options\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"vtex-checkout.get-cart\"\n          with:\n            orderFormId: \"tools.orderFormId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: simulate-order\n          description: \"Simulate a VTEX order to check real-time pricing, shipping costs, and item availability\"\n          hints:\n            readOnly: true\n            idempotent: false\n      \
-  \    call: \"vtex-checkout.simulate-order\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-transactions\n          description: \"List VTEX payment transactions with pagination\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"vtex-payments.list-transactions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-transaction\n          description: \"Get full details of a VTEX payment transaction including status and amounts\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"vtex-payments.get-transaction\"\n          with:\n            transactionId: \"tools.transactionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-refund\n          description: \"Create a refund for a completed VTEX payment transaction\"\
-  \n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"vtex-payments.create-refund\"\n          with:\n            transactionId: \"tools.transactionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: VTEX Payment Processing\n  description: Workflow capability for VTEX financial and payment operations teams. Combines checkout, payments, and customer\n    credit capabilities for finance teams, payment operations staff, and developers building payment integrations who need\n    to manage transactions, process refunds, and monitor payment flows.\n  tags:\n  - Checkout\n  - Commerce\n  - Finance\n  - Payments\n  - Transactions\n  - VTEX\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    VTEX_APP_KEY: VTEX_APP_KEY\n    VTEX_APP_TOKEN: VTEX_APP_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: vtex-checkout\n    baseUri: https://{accountName}.vtexcommercestable.com.br\n    description: VTEX Checkout API for cart management and order placement.\n    authentication:\n      type: apikey\n      key: X-VTEX-API-AppKey\n      value: '{{VTEX_APP_KEY}}'\n      placement: header\n    resources:\n\
+  \    - name: cart\n      path: /api/checkout/pub/orderForm\n      description: Cart and order form management\n      operations:\n      - name: create-cart\n        method: POST\n        description: Create a New Cart\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-cart\n        method: GET\n        description: Get Cart by ID\n        inputParameters:\n        - name: orderFormId\n          in: path\n          type: string\n          required: true\n          description: Cart (order form) identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: simulation\n      path: /api/checkout/pub/orderForms/simulation\n      description: Order simulation for price and availability checks\n      operations:\n      - name: simulate-order\n        method: POST\n        description: Order Simulation\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            items: '{{tools.items}}'\n            country: '{{tools.country}}'\n            postalCode: '{{tools.postalCode}}'\n  - type: http\n    namespace: vtex-payments\n    baseUri: https://{accountName}.vtexpayments.com.br\n    description: VTEX Payments Gateway API for managing payment transactions and conditions.\n    authentication:\n      type: apikey\n      key: X-VTEX-API-AppKey\n      value: '{{VTEX_APP_KEY}}'\n      placement: header\n    resources:\n    - name: transactions\n      path: /api/pvt/transactions\n      description: Payment transaction management\n      operations:\n      - name: list-transactions\n        method: GET\n        description: List Transactions\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n          description: Page\
+  \ number\n        - name: size\n          in: query\n          type: integer\n          required: false\n          description: Page size\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-transaction\n        method: GET\n        description: Get Transaction by ID\n        inputParameters:\n        - name: transactionId\n          in: path\n          type: string\n          required: true\n          description: Transaction identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: refunds\n      path: /api/pvt/transactions/{transactionId}/refunds\n      description: Payment refund management\n      operations:\n      - name: create-refund\n        method: POST\n        description: Create Refund\n        inputParameters:\n        - name: transactionId\n          in: path\n          type: string\n   \
+  \       required: true\n          description: Transaction identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            value: '{{tools.amount}}'\n  exposes:\n  - type: rest\n    port: 8082\n    namespace: vtex-payment-processing-api\n    description: Unified REST API for VTEX payment processing and checkout management.\n    resources:\n    - path: /v1/carts\n      name: carts\n      description: Shopping cart management\n      operations:\n      - method: POST\n        name: create-cart\n        description: Create a new shopping cart\n        call: vtex-checkout.create-cart\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/carts/{orderFormId}\n      name: cart\n      description: Single cart operations\n      operations:\n      - method: GET\n        name: get-cart\n        description: Get shopping cart\
+  \ by ID\n        call: vtex-checkout.get-cart\n        with:\n          orderFormId: rest.orderFormId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/order-simulation\n      name: order-simulation\n      description: Order simulation\n      operations:\n      - method: POST\n        name: simulate-order\n        description: Simulate order for pricing and availability\n        call: vtex-checkout.simulate-order\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/transactions\n      name: transactions\n      description: Payment transaction management\n      operations:\n      - method: GET\n        name: list-transactions\n        description: List payment transactions\n        call: vtex-payments.list-transactions\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/transactions/{transactionId}\n      name: transaction\n      description: Single transaction operations\n\
+  \      operations:\n      - method: GET\n        name: get-transaction\n        description: Get transaction by ID\n        call: vtex-payments.get-transaction\n        with:\n          transactionId: rest.transactionId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/transactions/{transactionId}/refunds\n      name: refunds\n      description: Payment refunds\n      operations:\n      - method: POST\n        name: create-refund\n        description: Create a refund for a transaction\n        call: vtex-payments.create-refund\n        with:\n          transactionId: rest.transactionId\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9092\n    namespace: vtex-payment-processing-mcp\n    transport: http\n    description: MCP server for AI-assisted VTEX payment processing and financial operations.\n    tools:\n    - name: create-cart\n      description: Create a new VTEX shopping cart for a customer\n\
+  \      hints:\n        readOnly: false\n        destructive: false\n      call: vtex-checkout.create-cart\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-cart\n      description: Get current state of a VTEX shopping cart including items, prices, and shipping options\n      hints:\n        readOnly: true\n        idempotent: true\n      call: vtex-checkout.get-cart\n      with:\n        orderFormId: tools.orderFormId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: simulate-order\n      description: Simulate a VTEX order to check real-time pricing, shipping costs, and item availability\n      hints:\n        readOnly: true\n        idempotent: false\n      call: vtex-checkout.simulate-order\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-transactions\n      description: List VTEX payment transactions with pagination\n      hints:\n        readOnly: true\n        idempotent: true\n\
+  \      call: vtex-payments.list-transactions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-transaction\n      description: Get full details of a VTEX payment transaction including status and amounts\n      hints:\n        readOnly: true\n        idempotent: true\n      call: vtex-payments.get-transaction\n      with:\n        transactionId: tools.transactionId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-refund\n      description: Create a refund for a completed VTEX payment transaction\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: vtex-payments.create-refund\n      with:\n        transactionId: tools.transactionId\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/vtex/refs/heads/main/capabilities/payment-processing.yaml
 tags:
 - Checkout

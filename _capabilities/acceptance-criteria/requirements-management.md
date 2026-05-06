@@ -10,12 +10,12 @@ provider_name: Acceptance Criteria
 provider_slug: acceptance-criteria
 search_terms:
 - gherkin
-- testing
 - agile
+- testing
+- requirements
+- behavior driven development
 - quality assurance
 - user stories
-- behavior driven development
-- requirements
 slug: requirements-management
 source_filename: requirements-management.yaml
 source_heading: Capability Spec

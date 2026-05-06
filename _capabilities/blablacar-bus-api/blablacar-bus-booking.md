@@ -1,15 +1,7 @@
 ---
-api_specs:
-- filename: blablacar-bus-api-openapi.yaml
-  format: yaml
-  label: blablacar-bus
-  slug: blablacar-bus
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/blablacar-bus-api/refs/heads/main/openapi/blablacar-bus-api-openapi.yaml
 categories:
 - travel-booking
-consumed_apis:
-- blablacar-bus
+consumed_apis: []
 description: Workflow capability for end-to-end coach booking on the BlaBlaCar Bus network. Enables OTAs, travel aggregators, and corporate travel platforms to search routes and trips, create bookings, manage tickets, and access station information across European markets.
 layout: capability
 name: BlaBlaCar Bus Booking
@@ -46,64 +38,68 @@ personas: []
 provider_name: BlaBlaCar Bus API
 provider_slug: blablacar-bus-api
 search_terms:
-- retrieve the details of an existing blablacar bus booking including status and tickets.
-- single booking retrieval and cancellation
-- Corporate Travel Manager
-- OTA Developer
-- list available coach routes between stations
-- books and manages coach trips via partner platforms
-- create a confirmed blablacar bus booking for one or more passengers on a specific trip.
-- cancel a booking
-- list available blablacar bus coach routes between stations across europe.
-- retrieve an electronic ticket with qr code for passenger validation on a blablacar bus trip.
-- mobility
-- trip search with pricing and availability
-- integrates blablacar bus into travel booking platforms and aggregators
-- transportation
-- available coach routes in the blablacar bus network
 - create booking
-- list stations in the blablacar bus network
-- ota
-- route search, trip availability, and station data
-- cancel an existing blablacar bus booking. refund eligibility depends on the fare type.
-- europe
-- get ticket
-- retrieve electronic ticket with qr code
-- coach
-- retrieve booking details
-- Traveler
-- creating and managing coach reservations
-- list all stations in the blablacar bus network, optionally filtered by country or search query.
-- books coach tickets for customers as part of multi-modal travel itineraries
-- ticketing
-- search trips
-- get booking
-- list routes
-- cancel booking
-- end-to-end coach booking workflow for otas and travel aggregators
-- books affordable intercity coach travel for business travelers
-- Travel Agent
-- booking creation and management
-- electronic ticket retrieval
-- list stations
 - buses
-- search available trips between stations on a given date
-- booking
-- station information
-- create a confirmed coach booking
-- search for available coach trips between two stations on a specific date, returning departure times, seat availability, and pricing.
 - travel
+- cancel a booking
+- cancel an existing blablacar bus booking. refund eligibility depends on the fare type.
+- search trips
+- ticketing
+- books and manages coach trips via partner platforms
+- europe
+- create a confirmed blablacar bus booking for one or more passengers on a specific trip.
+- route search, trip availability, and station data
+- books coach tickets for customers as part of multi-modal travel itineraries
+- list all stations in the blablacar bus network, optionally filtered by country or search query.
+- retrieve booking details
+- get booking
+- books affordable intercity coach travel for business travelers
+- create a confirmed coach booking
+- available coach routes in the blablacar bus network
+- Travel Agent
+- Corporate Travel Manager
+- electronic ticket retrieval
+- mobility
+- Traveler
+- get ticket
+- integrates blablacar bus into travel booking platforms and aggregators
+- coach
+- transportation
+- list stations
+- list routes
+- retrieve electronic ticket with qr code
+- retrieve the details of an existing blablacar bus booking including status and tickets.
+- search available trips between stations on a given date
+- list available coach routes between stations
+- booking
+- ota
+- list available blablacar bus coach routes between stations across europe.
+- search for available coach trips between two stations on a specific date, returning departure times, seat availability, and pricing.
+- creating and managing coach reservations
+- cancel booking
+- station information
+- booking creation and management
+- end-to-end coach booking workflow for otas and travel aggregators
+- trip search with pricing and availability
+- retrieve an electronic ticket with qr code for passenger validation on a blablacar bus trip.
+- single booking retrieval and cancellation
+- OTA Developer
+- list stations in the blablacar bus network
 slug: blablacar-bus-booking
 source_filename: blablacar-bus-booking.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: BlaBlaCar Bus Booking\n  description: >-\n    Workflow capability for end-to-end coach booking on the BlaBlaCar Bus network. Enables\n    OTAs, travel aggregators, and corporate travel platforms to search routes and trips,\n    create bookings, manage tickets, and access station information across European markets.\n  tags:\n    - Booking\n    - Buses\n    - Coach\n    - Europe\n    - Mobility\n    - OTA\n    - Ticketing\n    - Transportation\n    - Travel\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      BLABLACAR_BUS_API_KEY: BLABLACAR_BUS_API_KEY\n\ncapability:\n  consumes:\n    - import: blablacar-bus\n      location: ./shared/blablacar-bus-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: blablacar-bus-booking-api\n      description: Unified REST API for BlaBlaCar Bus coach booking and travel planning.\n      resources:\n        - path: /v1/routes\n\
-  \          name: routes\n          description: Available coach routes in the BlaBlaCar Bus network\n          operations:\n            - method: GET\n              name: list-routes\n              description: List available coach routes between stations\n              call: \"blablacar-bus.list-routes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/trips\n          name: trips\n          description: Trip search with pricing and availability\n          operations:\n            - method: GET\n              name: search-trips\n              description: Search available trips between stations on a given date\n              call: \"blablacar-bus.search-trips\"\n              with:\n                from_station_id: \"rest.from_station_id\"\n                to_station_id: \"rest.to_station_id\"\n                departure_date: \"rest.departure_date\"\n                passengers: \"rest.passengers\"\n              outputParameters:\n\
-  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bookings\n          name: bookings\n          description: Booking creation and management\n          operations:\n            - method: POST\n              name: create-booking\n              description: Create a confirmed coach booking\n              call: \"blablacar-bus.create-booking\"\n              with:\n                trip_id: \"rest.trip_id\"\n                currency: \"rest.currency\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bookings/{booking_id}\n          name: booking-detail\n          description: Single booking retrieval and cancellation\n          operations:\n            - method: GET\n              name: get-booking\n              description: Retrieve booking details\n              call: \"blablacar-bus.get-booking\"\n              with:\n                booking_id: \"rest.booking_id\"\n          \
-  \    outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: cancel-booking\n              description: Cancel a booking\n              call: \"blablacar-bus.cancel-booking\"\n              with:\n                booking_id: \"rest.booking_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tickets/{ticket_id}\n          name: tickets\n          description: Electronic ticket retrieval\n          operations:\n            - method: GET\n              name: get-ticket\n              description: Retrieve electronic ticket with QR code\n              call: \"blablacar-bus.get-ticket\"\n              with:\n                ticket_id: \"rest.ticket_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/stations\n          name: stations\n          description: Station information\n\
-  \          operations:\n            - method: GET\n              name: list-stations\n              description: List stations in the BlaBlaCar Bus network\n              call: \"blablacar-bus.list-stations\"\n              with:\n                country_code: \"rest.country_code\"\n                query: \"rest.query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: blablacar-bus-booking-mcp\n      transport: http\n      description: MCP server for AI-assisted coach travel booking on the BlaBlaCar Bus network.\n      tools:\n        - name: list-routes\n          description: List available BlaBlaCar Bus coach routes between stations across Europe.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"blablacar-bus.list-routes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-trips\n\
-  \          description: Search for available coach trips between two stations on a specific date, returning departure times, seat availability, and pricing.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"blablacar-bus.search-trips\"\n          with:\n            from_station_id: \"tools.from_station_id\"\n            to_station_id: \"tools.to_station_id\"\n            departure_date: \"tools.departure_date\"\n            passengers: \"tools.passengers\"\n            currency: \"tools.currency\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-booking\n          description: Create a confirmed BlaBlaCar Bus booking for one or more passengers on a specific trip.\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"blablacar-bus.create-booking\"\n          with:\n            trip_id: \"tools.trip_id\"\n            currency: \"tools.currency\"\
-  \n            partner_reference: \"tools.partner_reference\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-booking\n          description: Retrieve the details of an existing BlaBlaCar Bus booking including status and tickets.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"blablacar-bus.get-booking\"\n          with:\n            booking_id: \"tools.booking_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: cancel-booking\n          description: Cancel an existing BlaBlaCar Bus booking. Refund eligibility depends on the fare type.\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"blablacar-bus.cancel-booking\"\n          with:\n            booking_id: \"tools.booking_id\"\n          outputParameters:\n            - type: object\n             \
-  \ mapping: \"$.\"\n        - name: get-ticket\n          description: Retrieve an electronic ticket with QR code for passenger validation on a BlaBlaCar Bus trip.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"blablacar-bus.get-ticket\"\n          with:\n            ticket_id: \"tools.ticket_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-stations\n          description: List all stations in the BlaBlaCar Bus network, optionally filtered by country or search query.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"blablacar-bus.list-stations\"\n          with:\n            country_code: \"tools.country_code\"\n            query: \"tools.query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: BlaBlaCar Bus Booking\n  description: Workflow capability for end-to-end coach booking on the BlaBlaCar Bus network. Enables OTAs, travel aggregators,\n    and corporate travel platforms to search routes and trips, create bookings, manage tickets, and access station information\n    across European markets.\n  tags:\n  - Booking\n  - Buses\n  - Coach\n  - Europe\n  - Mobility\n  - OTA\n  - Ticketing\n  - Transportation\n  - Travel\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    BLABLACAR_BUS_API_KEY: BLABLACAR_BUS_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: blablacar-bus\n    baseUri: https://bus-api.blablacar.com/v1\n    description: BlaBlaCar Bus booking and route API\n    authentication:\n      type: apikey\n      key: X-API-Key\n      value: '{{BLABLACAR_BUS_API_KEY}}'\n      placement: header\n    resources:\n    - name: routes\n      path: /routes\n      description:\
+  \ Available coach routes\n      operations:\n      - name: list-routes\n        method: GET\n        description: List available coach routes filtered by origin and destination station\n        inputParameters:\n        - name: from_id\n          in: query\n          type: string\n          required: false\n          description: Origin station identifier\n        - name: to_id\n          in: query\n          type: string\n          required: false\n          description: Destination station identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: trips\n      path: /trips\n      description: Trip search and availability\n      operations:\n      - name: search-trips\n        method: GET\n        description: Search for available trips between stations on a given date\n        inputParameters:\n        - name: from_station_id\n          in: query\n          type: string\n          required: true\n\
+  \          description: Origin station identifier\n        - name: to_station_id\n          in: query\n          type: string\n          required: true\n          description: Destination station identifier\n        - name: departure_date\n          in: query\n          type: string\n          required: true\n          description: Departure date in YYYY-MM-DD format\n        - name: passengers\n          in: query\n          type: integer\n          required: false\n          description: Number of passengers\n        - name: currency\n          in: query\n          type: string\n          required: false\n          description: Preferred currency code\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: bookings\n      path: /bookings\n      description: Booking creation and management\n      operations:\n      - name: create-booking\n        method: POST\n        description: Create a confirmed booking\
+  \ for passengers on a trip\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            trip_id: '{{tools.trip_id}}'\n            currency: '{{tools.currency}}'\n            partner_reference: '{{tools.partner_reference}}'\n      - name: get-booking\n        method: GET\n        description: Retrieve booking details by booking ID\n        inputParameters:\n        - name: booking_id\n          in: path\n          type: string\n          required: true\n          description: Unique booking identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: cancel-booking\n        method: DELETE\n        description: Cancel an existing booking\n        inputParameters:\n        - name: booking_id\n          in: path\n          type: string\n          required: true\n     \
+  \     description: Unique booking identifier to cancel\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: tickets\n      path: /tickets\n      description: Ticket retrieval\n      operations:\n      - name: get-ticket\n        method: GET\n        description: Retrieve electronic ticket with QR code\n        inputParameters:\n        - name: ticket_id\n          in: path\n          type: string\n          required: true\n          description: Unique ticket identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: stations\n      path: /stations\n      description: Station information\n      operations:\n      - name: list-stations\n        method: GET\n        description: List all stations in the BlaBlaCar Bus network\n        inputParameters:\n        - name: country_code\n          in: query\n         \
+  \ type: string\n          required: false\n          description: Filter by country code\n        - name: query\n          in: query\n          type: string\n          required: false\n          description: Search stations by name or city\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: blablacar-bus-booking-api\n    description: Unified REST API for BlaBlaCar Bus coach booking and travel planning.\n    resources:\n    - path: /v1/routes\n      name: routes\n      description: Available coach routes in the BlaBlaCar Bus network\n      operations:\n      - method: GET\n        name: list-routes\n        description: List available coach routes between stations\n        call: blablacar-bus.list-routes\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/trips\n      name: trips\n      description: Trip search with\
+  \ pricing and availability\n      operations:\n      - method: GET\n        name: search-trips\n        description: Search available trips between stations on a given date\n        call: blablacar-bus.search-trips\n        with:\n          from_station_id: rest.from_station_id\n          to_station_id: rest.to_station_id\n          departure_date: rest.departure_date\n          passengers: rest.passengers\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/bookings\n      name: bookings\n      description: Booking creation and management\n      operations:\n      - method: POST\n        name: create-booking\n        description: Create a confirmed coach booking\n        call: blablacar-bus.create-booking\n        with:\n          trip_id: rest.trip_id\n          currency: rest.currency\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/bookings/{booking_id}\n      name: booking-detail\n      description: Single\
+  \ booking retrieval and cancellation\n      operations:\n      - method: GET\n        name: get-booking\n        description: Retrieve booking details\n        call: blablacar-bus.get-booking\n        with:\n          booking_id: rest.booking_id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: cancel-booking\n        description: Cancel a booking\n        call: blablacar-bus.cancel-booking\n        with:\n          booking_id: rest.booking_id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/tickets/{ticket_id}\n      name: tickets\n      description: Electronic ticket retrieval\n      operations:\n      - method: GET\n        name: get-ticket\n        description: Retrieve electronic ticket with QR code\n        call: blablacar-bus.get-ticket\n        with:\n          ticket_id: rest.ticket_id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/stations\n\
+  \      name: stations\n      description: Station information\n      operations:\n      - method: GET\n        name: list-stations\n        description: List stations in the BlaBlaCar Bus network\n        call: blablacar-bus.list-stations\n        with:\n          country_code: rest.country_code\n          query: rest.query\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: blablacar-bus-booking-mcp\n    transport: http\n    description: MCP server for AI-assisted coach travel booking on the BlaBlaCar Bus network.\n    tools:\n    - name: list-routes\n      description: List available BlaBlaCar Bus coach routes between stations across Europe.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: blablacar-bus.list-routes\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-trips\n      description: Search for available coach trips between two stations on a specific\
+  \ date, returning departure times, seat\n        availability, and pricing.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: blablacar-bus.search-trips\n      with:\n        from_station_id: tools.from_station_id\n        to_station_id: tools.to_station_id\n        departure_date: tools.departure_date\n        passengers: tools.passengers\n        currency: tools.currency\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-booking\n      description: Create a confirmed BlaBlaCar Bus booking for one or more passengers on a specific trip.\n      hints:\n        readOnly: false\n        openWorld: false\n      call: blablacar-bus.create-booking\n      with:\n        trip_id: tools.trip_id\n        currency: tools.currency\n        partner_reference: tools.partner_reference\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-booking\n      description: Retrieve the details of an existing BlaBlaCar\
+  \ Bus booking including status and tickets.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: blablacar-bus.get-booking\n      with:\n        booking_id: tools.booking_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: cancel-booking\n      description: Cancel an existing BlaBlaCar Bus booking. Refund eligibility depends on the fare type.\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: blablacar-bus.cancel-booking\n      with:\n        booking_id: tools.booking_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-ticket\n      description: Retrieve an electronic ticket with QR code for passenger validation on a BlaBlaCar Bus trip.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: blablacar-bus.get-ticket\n      with:\n        ticket_id: tools.ticket_id\n      outputParameters:\n      - type: object\n        mapping:\
+  \ $.\n    - name: list-stations\n      description: List all stations in the BlaBlaCar Bus network, optionally filtered by country or search query.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: blablacar-bus.list-stations\n      with:\n        country_code: tools.country_code\n        query: tools.query\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/blablacar-bus-api/refs/heads/main/capabilities/blablacar-bus-booking.yaml
 tags:
 - Booking

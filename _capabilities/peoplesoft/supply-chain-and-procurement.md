@@ -1,22 +1,7 @@
 ---
-api_specs:
-- filename: supply-chain-management.yml
-  format: yaml
-  label: scm
-  slug: scm
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/supply-chain-management.yml
-- filename: approval-workflow-engine.yml
-  format: yaml
-  label: approval-workflow
-  slug: approval-workflow
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/approval-workflow-engine.yml
 categories:
 - procurement-supply-chain
-consumed_apis:
-- scm
-- approval-workflow
+consumed_apis: []
 description: Unified workflow for supply chain managers combining procurement, inventory, order fulfillment, and approval workflows across PeopleSoft Supply Chain Management and Approval Workflow Engine APIs.
 layout: capability
 name: PeopleSoft Supply Chain And Procurement
@@ -49,50 +34,52 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- list requisitions
-- inventory items and stock levels
-- retrieve procurement requisitions.
-- human capital management.
-- individual approval operations
-- supply chain management
-- process approval
-- purchase orders
-- peoplesoft
-- hcm
-- approve, deny, or push back a supply chain approval request.
-- list purchase orders
-- retrieve purchase orders.
-- supply chain approval requests
-- financial and supply chain management.
-- campus solutions.
-- procurement
-- list inventory items
-- enterprise software
-- erp
-- campus solutions
-- supply chain
-- crm
-- list orders
-- procurement requisitions
-- order fulfillment
-- inventory
-- peopletools platform services.
-- list pending approvals
-- retrieve pending supply chain approval requests.
 - order fulfillment records
-- financial management
-- retrieve inventory items and stock levels.
+- list requisitions
+- supply chain management
+- retrieve pending supply chain approval requests.
+- list pending approvals
+- approve, deny, or push back a supply chain approval request.
+- peopletools platform services.
+- peoplesoft
+- process approval
 - retrieve order fulfillment records.
+- supply chain approval requests
+- campus solutions.
+- retrieve purchase orders.
+- inventory items and stock levels
+- financial and supply chain management.
+- individual approval operations
+- human capital management.
+- erp
+- retrieve inventory items and stock levels.
+- inventory
+- supply chain
+- purchase orders
+- financial management
+- crm
+- hcm
+- list orders
+- list inventory items
+- procurement requisitions
+- campus solutions
+- enterprise software
+- retrieve procurement requisitions.
+- list purchase orders
+- order fulfillment
+- procurement
 slug: supply-chain-and-procurement
 source_filename: supply-chain-and-procurement.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Supply Chain And Procurement\"\n  description: \"Unified workflow for supply chain managers combining procurement, inventory, order fulfillment, and approval workflows across PeopleSoft Supply Chain Management and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Supply Chain\n    - Procurement\n    - Inventory\n    - Order Fulfillment\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: scm\n      location: ./shared/supply-chain-management.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: supply-chain-api\n      description: \"Unified REST API for PeopleSoft supply chain and procurement workflows.\"\n      resources:\n\
-  \        - path: /v1/requisitions\n          name: requisitions\n          description: \"Procurement requisitions\"\n          operations:\n            - method: GET\n              name: list-requisitions\n              description: \"Retrieve procurement requisitions.\"\n              call: \"scm.list-requisitions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/purchase-orders\n          name: purchase-orders\n          description: \"Purchase orders\"\n          operations:\n            - method: GET\n              name: list-purchase-orders\n              description: \"Retrieve purchase orders.\"\n              call: \"scm.list-purchase-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/inventory-items\n          name: inventory-items\n          description: \"Inventory items and stock levels\"\n          operations:\n          \
-  \  - method: GET\n              name: list-inventory-items\n              description: \"Retrieve inventory items and stock levels.\"\n              call: \"scm.list-inventory-items\"\n              with:\n                businessUnit: \"rest.businessUnit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/orders\n          name: orders\n          description: \"Order fulfillment records\"\n          operations:\n            - method: GET\n              name: list-orders\n              description: \"Retrieve order fulfillment records.\"\n              call: \"scm.list-orders\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/approvals\n          name: approvals\n          description: \"Supply chain approval requests\"\n          operations:\n            - method: GET\n              name: list-pending-approvals\n              description: \"Retrieve\
-  \ pending supply chain approval requests.\"\n              call: \"approval-workflow.list-pending-approvals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/approvals/{approvalId}\n          name: approval-detail\n          description: \"Individual approval operations\"\n          operations:\n            - method: PUT\n              name: process-approval\n              description: \"Approve, deny, or push back a supply chain approval request.\"\n              call: \"approval-workflow.process-approval\"\n              with:\n                approvalId: \"rest.approvalId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: supply-chain-mcp\n      transport: http\n      description: \"MCP server for AI-assisted PeopleSoft supply chain and procurement workflows.\"\n      tools:\n        - name: list-requisitions\n\
-  \          description: \"Retrieve procurement requisitions.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"scm.list-requisitions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-purchase-orders\n          description: \"Retrieve purchase orders.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"scm.list-purchase-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-inventory-items\n          description: \"Retrieve inventory items and stock levels.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"scm.list-inventory-items\"\n          with:\n            businessUnit: \"tools.businessUnit\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-orders\n          description:\
-  \ \"Retrieve order fulfillment records.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"scm.list-orders\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-pending-approvals\n          description: \"Retrieve pending supply chain approval requests.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"approval-workflow.list-pending-approvals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: process-approval\n          description: \"Approve, deny, or push back a supply chain approval request.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"approval-workflow.process-approval\"\n          with:\n            approvalId: \"tools.approvalId\"\n            action: \"tools.action\"\n            comments: \"tools.comments\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: PeopleSoft Supply Chain And Procurement\n  description: Unified workflow for supply chain managers combining procurement, inventory, order fulfillment, and approval\n    workflows across PeopleSoft Supply Chain Management and Approval Workflow Engine APIs.\n  tags:\n  - PeopleSoft\n  - Supply Chain\n  - Procurement\n  - Inventory\n  - Order Fulfillment\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n    PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\ncapability:\n  consumes:\n  - type: http\n    namespace: scm\n    baseUri: https://${PEOPLESOFT_HOST}:${PEOPLESOFT_PORT}/psft/api/scm/v1\n    description: PeopleSoft Supply Chain Management API\n    authentication:\n      type: basic\n      username: '{{PEOPLESOFT_USERNAME}}'\n      password: '{{PEOPLESOFT_PASSWORD}}'\n    resources:\n    - name: procurement\n      path: /procurement\n      description: Procurement\
+  \ and purchasing operations\n      operations:\n      - name: list-requisitions\n        method: GET\n        description: Retrieve procurement requisitions.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-purchase-orders\n        method: GET\n        description: Retrieve purchase orders.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: inventory\n      path: /inventory\n      description: Inventory management operations\n      operations:\n      - name: list-inventory-items\n        method: GET\n        description: Retrieve inventory items and stock levels.\n        inputParameters:\n        - name: businessUnit\n          in: query\n          type: string\n          required: false\n          description: Business unit filter\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n    - name: orders\n      path: /orders\n      description: Order fulfillment operations\n      operations:\n      - name: list-orders\n        method: GET\n        description: Retrieve order fulfillment records.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: approval-workflow\n    baseUri: https://${PEOPLESOFT_HOST}:${PEOPLESOFT_PORT}/psft/api/approvals/v1\n    description: PeopleSoft Approval Workflow Engine API\n    authentication:\n      type: basic\n      username: '{{PEOPLESOFT_USERNAME}}'\n      password: '{{PEOPLESOFT_PASSWORD}}'\n    resources:\n    - name: approvals\n      path: /approvals\n      description: Approval workflow operations\n      operations:\n      - name: list-pending-approvals\n        method: GET\n        description: Retrieve a list of pending approval requests for the current user.\n       \
+  \ outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: process-approval\n        method: PUT\n        description: Approve, deny, or push back an approval request.\n        inputParameters:\n        - name: approvalId\n          in: path\n          type: string\n          required: true\n          description: The approval request identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            action: '{{tools.action}}'\n            comments: '{{tools.comments}}'\n  exposes:\n  - type: rest\n    port: 8082\n    namespace: supply-chain-api\n    description: Unified REST API for PeopleSoft supply chain and procurement workflows.\n    resources:\n    - path: /v1/requisitions\n      name: requisitions\n      description: Procurement requisitions\n      operations:\n      -\
+  \ method: GET\n        name: list-requisitions\n        description: Retrieve procurement requisitions.\n        call: scm.list-requisitions\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/purchase-orders\n      name: purchase-orders\n      description: Purchase orders\n      operations:\n      - method: GET\n        name: list-purchase-orders\n        description: Retrieve purchase orders.\n        call: scm.list-purchase-orders\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/inventory-items\n      name: inventory-items\n      description: Inventory items and stock levels\n      operations:\n      - method: GET\n        name: list-inventory-items\n        description: Retrieve inventory items and stock levels.\n        call: scm.list-inventory-items\n        with:\n          businessUnit: rest.businessUnit\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/orders\n\
+  \      name: orders\n      description: Order fulfillment records\n      operations:\n      - method: GET\n        name: list-orders\n        description: Retrieve order fulfillment records.\n        call: scm.list-orders\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/approvals\n      name: approvals\n      description: Supply chain approval requests\n      operations:\n      - method: GET\n        name: list-pending-approvals\n        description: Retrieve pending supply chain approval requests.\n        call: approval-workflow.list-pending-approvals\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/approvals/{approvalId}\n      name: approval-detail\n      description: Individual approval operations\n      operations:\n      - method: PUT\n        name: process-approval\n        description: Approve, deny, or push back a supply chain approval request.\n        call: approval-workflow.process-approval\n\
+  \        with:\n          approvalId: rest.approvalId\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9092\n    namespace: supply-chain-mcp\n    transport: http\n    description: MCP server for AI-assisted PeopleSoft supply chain and procurement workflows.\n    tools:\n    - name: list-requisitions\n      description: Retrieve procurement requisitions.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: scm.list-requisitions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-purchase-orders\n      description: Retrieve purchase orders.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: scm.list-purchase-orders\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-inventory-items\n      description: Retrieve inventory items and stock levels.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: scm.list-inventory-items\n\
+  \      with:\n        businessUnit: tools.businessUnit\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-orders\n      description: Retrieve order fulfillment records.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: scm.list-orders\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-pending-approvals\n      description: Retrieve pending supply chain approval requests.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: approval-workflow.list-pending-approvals\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: process-approval\n      description: Approve, deny, or push back a supply chain approval request.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: approval-workflow.process-approval\n      with:\n        approvalId: tools.approvalId\n        action: tools.action\n        comments:\
+  \ tools.comments\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/capabilities/supply-chain-and-procurement.yaml
 tags:
 - PeopleSoft

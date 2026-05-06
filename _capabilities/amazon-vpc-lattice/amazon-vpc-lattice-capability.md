@@ -9,9 +9,9 @@ personas: []
 provider_name: Amazon VPC Lattice
 provider_slug: amazon-vpc-lattice
 search_terms:
-- service mesh
-- microservices
 - service networking
+- microservices
+- service mesh
 slug: amazon-vpc-lattice-capability
 source_filename: amazon-vpc-lattice-capability.yaml
 source_heading: Capability Spec

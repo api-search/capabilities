@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list workspaces
-- spec-driven integration
-- pipeline
-- mcp
-- capabilities
 - naftiko
-- sdk
+- generate sdks
+- pipeline
 - api integration
 - governance
-- generate sdks
+- spec-driven integration
+- list workspaces
 - ai
+- mcp
+- capabilities
 - speakeasy
+- sdk
 slug: deterministic-sdk-pipeline-capability
 source_filename: deterministic-sdk-pipeline-capability.yaml
 source_heading: Capability Spec

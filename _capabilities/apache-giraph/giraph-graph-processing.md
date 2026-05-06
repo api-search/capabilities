@@ -1,8 +1,7 @@
 ---
 categories:
 - monitoring
-consumed_apis:
-- giraph-job
+consumed_apis: []
 description: Capability for monitoring Apache Giraph graph processing jobs on Hadoop YARN — tracking job status, completion progress, and cluster capacity. Designed for data engineers running large-scale graph algorithms. Note - Apache Giraph has been retired.
 layout: capability
 name: Apache Giraph Graph Processing
@@ -19,38 +18,40 @@ personas: []
 provider_name: Apache Giraph
 provider_slug: apache-giraph
 search_terms:
-- get detailed status of a specific giraph job
-- get cluster metrics
-- list jobs
-- get metrics
-- bsp
-- open source
-- list giraph jobs
-- iterative bsp graph algorithm execution at scale
-- get yarn cluster capacity metrics for running giraph jobs
-- Data Engineer
-- engineers running large-scale graph algorithms with giraph on hadoop
-- cluster capacity metrics
-- retired
-- list all giraph graph processing jobs
-- graph processing
-- giraph graph processing jobs
 - monitor giraph graph processing jobs on hadoop yarn
-- apache giraph
-- monitoring
-- get yarn cluster metrics
-- list all giraph graph processing jobs running on yarn
+- cluster capacity metrics
+- list jobs
+- get detailed status of a specific giraph job
+- get metrics
+- iterative bsp graph algorithm execution at scale
+- retired
 - big data
-- job status tracking and cluster capacity monitoring
+- list giraph jobs
+- list all giraph graph processing jobs
+- get cluster metrics
+- Data Engineer
 - apache
+- monitoring
 - get giraph job
+- apache giraph
+- open source
 - hadoop
+- engineers running large-scale graph algorithms with giraph on hadoop
+- bsp
+- graph processing
+- get yarn cluster metrics
+- get yarn cluster capacity metrics for running giraph jobs
+- list all giraph graph processing jobs running on yarn
+- giraph graph processing jobs
+- job status tracking and cluster capacity monitoring
 slug: giraph-graph-processing
 source_filename: giraph-graph-processing.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Apache Giraph Graph Processing\"\n  description: \"Capability for monitoring Apache Giraph graph processing jobs on Hadoop YARN — tracking job status, completion progress, and cluster capacity. Designed for data engineers running large-scale graph algorithms. Note - Apache Giraph has been retired.\"\n  tags:\n    - Apache Giraph\n    - Graph Processing\n    - Big Data\n    - Hadoop\n    - Monitoring\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      YARN_RESOURCEMANAGER_URL: YARN_RESOURCEMANAGER_URL\ncapability:\n  consumes:\n    - import: giraph-job\n      location: ./shared/giraph-job.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: giraph-processing-api\n      description: \"REST API for Apache Giraph graph processing job monitoring.\"\n      resources:\n        - path: /v1/jobs\n          name: jobs\n          description: Giraph graph processing jobs\n \
-  \         operations:\n            - method: GET\n              name: list-jobs\n              description: List all Giraph graph processing jobs\n              call: \"giraph-job.list-giraph-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/cluster/metrics\n          name: metrics\n          description: Cluster capacity metrics\n          operations:\n            - method: GET\n              name: get-metrics\n              description: Get YARN cluster metrics\n              call: \"giraph-job.get-cluster-metrics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: giraph-processing-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Giraph graph processing monitoring.\"\n      tools:\n        - name: list-giraph-jobs\n          description: List all Giraph graph processing jobs\
-  \ running on YARN\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"giraph-job.list-giraph-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-giraph-job\n          description: Get detailed status of a specific Giraph job\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"giraph-job.get-giraph-job\"\n          with:\n            appId: \"tools.appId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-cluster-metrics\n          description: Get YARN cluster capacity metrics for running Giraph jobs\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"giraph-job.get-cluster-metrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Apache Giraph Graph Processing\n  description: Capability for monitoring Apache Giraph graph processing jobs on Hadoop YARN — tracking job status, completion\n    progress, and cluster capacity. Designed for data engineers running large-scale graph algorithms. Note - Apache Giraph\n    has been retired.\n  tags:\n  - Apache Giraph\n  - Graph Processing\n  - Big Data\n  - Hadoop\n  - Monitoring\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    YARN_RESOURCEMANAGER_URL: YARN_RESOURCEMANAGER_URL\ncapability:\n  consumes:\n  - type: http\n    namespace: giraph-job\n    baseUri: http://localhost:8088\n    description: YARN ResourceManager REST API for Giraph job monitoring\n    resources:\n    - name: jobs\n      path: /ws/v1/cluster/apps\n      description: Giraph job management via YARN\n      operations:\n      - name: list-giraph-jobs\n        method: GET\n        description: List all Giraph graph\
+  \ processing jobs on YARN\n        inputParameters:\n        - name: applicationTypes\n          in: query\n          type: string\n          required: false\n          description: Filter by application type\n        - name: states\n          in: query\n          type: string\n          required: false\n          description: Filter by job state\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-giraph-job\n        method: GET\n        description: Get details of a specific Giraph job\n        inputParameters:\n        - name: appId\n          in: path\n          type: string\n          required: true\n          description: YARN application ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: cluster\n      path: /ws/v1/cluster/metrics\n      description: YARN cluster metrics\n      operations:\n     \
+  \ - name: get-cluster-metrics\n        method: GET\n        description: Get YARN cluster metrics for Giraph job capacity\n        inputParameters: []\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: giraph-processing-api\n    description: REST API for Apache Giraph graph processing job monitoring.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description: Giraph graph processing jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List all Giraph graph processing jobs\n        call: giraph-job.list-giraph-jobs\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/cluster/metrics\n      name: metrics\n      description: Cluster capacity metrics\n      operations:\n      - method: GET\n        name: get-metrics\n        description: Get YARN cluster metrics\n\
+  \        call: giraph-job.get-cluster-metrics\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: giraph-processing-mcp\n    transport: http\n    description: MCP server for AI-assisted Apache Giraph graph processing monitoring.\n    tools:\n    - name: list-giraph-jobs\n      description: List all Giraph graph processing jobs running on YARN\n      hints:\n        readOnly: true\n        openWorld: true\n      call: giraph-job.list-giraph-jobs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-giraph-job\n      description: Get detailed status of a specific Giraph job\n      hints:\n        readOnly: true\n        openWorld: true\n      call: giraph-job.get-giraph-job\n      with:\n        appId: tools.appId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-cluster-metrics\n      description: Get YARN cluster capacity metrics for running Giraph jobs\n\
+  \      hints:\n        readOnly: true\n        openWorld: true\n      call: giraph-job.get-cluster-metrics\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apache-giraph/refs/heads/main/capabilities/giraph-graph-processing.yaml
 tags:
 - Apache Giraph

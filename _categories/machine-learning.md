@@ -18,7 +18,7 @@ implementations:
 - capability_name: AMD AI GPU Computing
   capability_slug: ai-gpu-computing
   capability_url: https://capabilities.apis.io/capabilities/advanced-micro-devices/ai-gpu-computing/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Advanced Micro Devices
   provider_slug: advanced-micro-devices
@@ -33,7 +33,7 @@ implementations:
 - capability_name: AIMLAPI AI Model Operations
   capability_slug: ai-model-operations
   capability_url: https://capabilities.apis.io/capabilities/aimlapi/ai-model-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: AIMLAPI
   provider_slug: aimlapi
@@ -48,7 +48,7 @@ implementations:
 - capability_name: Amazon Neptune Analytics and Machine Learning
   capability_slug: neptune-analytics-ml
   capability_url: https://capabilities.apis.io/capabilities/amazon-neptune/neptune-analytics-ml/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Amazon Neptune
   provider_slug: amazon-neptune
@@ -60,7 +60,7 @@ implementations:
 - capability_name: Amazon Polly Text-to-Speech
   capability_slug: text-to-speech
   capability_url: https://capabilities.apis.io/capabilities/amazon-polly/text-to-speech/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Amazon Polly
   provider_slug: amazon-polly
@@ -75,7 +75,7 @@ implementations:
 - capability_name: Amazon SageMaker ML Lifecycle Management
   capability_slug: ml-lifecycle-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-sagemaker/ml-lifecycle-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Amazon SageMaker
   provider_slug: amazon-sagemaker
@@ -90,7 +90,7 @@ implementations:
 - capability_name: Claude AI Messaging
   capability_slug: ai-messaging
   capability_url: https://capabilities.apis.io/capabilities/claude/ai-messaging/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Claude
   provider_slug: claude
@@ -103,7 +103,7 @@ implementations:
 - capability_name: Cloudflare AI and ML
   capability_slug: ai-and-ml
   capability_url: https://capabilities.apis.io/capabilities/cloudflare/ai-and-ml/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Cloudflare
   provider_slug: cloudflare
@@ -116,7 +116,7 @@ implementations:
 - capability_name: Hugging Face Deployment and Operations
   capability_slug: deployment-and-operations
   capability_url: https://capabilities.apis.io/capabilities/hugging-face/deployment-and-operations/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Hugging Face
   provider_slug: hugging-face
@@ -130,7 +130,7 @@ implementations:
 - capability_name: Hugging Face Model Inference
   capability_slug: model-inference
   capability_url: https://capabilities.apis.io/capabilities/hugging-face/model-inference/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Hugging Face
   provider_slug: hugging-face
@@ -144,7 +144,7 @@ implementations:
 - capability_name: Azure AI and Cognitive Services
   capability_slug: ai-and-cognitive
   capability_url: https://capabilities.apis.io/capabilities/microsoft-azure/ai-and-cognitive/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Microsoft Azure
   provider_slug: microsoft-azure
@@ -157,7 +157,7 @@ implementations:
 - capability_name: SAP Enterprise Business Operations
   capability_slug: enterprise-business-operations
   capability_url: https://capabilities.apis.io/capabilities/sap/enterprise-business-operations/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 19
   provider_name: SAP
   provider_slug: sap
@@ -171,7 +171,7 @@ implementations:
 - capability_name: Snowflake Cortex AI
   capability_slug: cortex-ai
   capability_url: https://capabilities.apis.io/capabilities/snowflake/cortex-ai/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Snowflake
   provider_slug: snowflake

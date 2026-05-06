@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: rescuegroups-org-openapi.yml
-  format: yaml
-  label: rescuegroups
-  slug: rescuegroups
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/rescuegroups-org/refs/heads/main/openapi/rescuegroups-org-openapi.yml
 categories: []
-consumed_apis:
-- rescuegroups
+consumed_apis: []
 description: Workflow capability for searching and discovering adoptable pets and rescue organizations. Enables geographic search, breed/species filtering, and organization lookup for pet adoption platforms, rescue directories, and shelter management integrations.
 layout: capability
 name: RescueGroups.org Pet Adoption Search
@@ -57,75 +49,79 @@ personas: []
 provider_name: RescueGroups.org
 provider_slug: rescuegroups-org
 search_terms:
-- lookup animal patterns
-- list organizations
-- list colors
-- animal breed reference data
 - search animals with breed, species, location, and geodistance filters
-- get a pet list by keystring
-- single adoptable animal
-- get a rescue organization's pet list by keystring
+- list species
+- list all rescue organizations
+- search and list adoptable animals
+- get details for a single adoptable animal
+- look up all available animal coat pattern classifications
+- get org pet list
+- list adoptable animals
+- pet adoption
+- list organizations
 - list available adoptable animals with optional filtering
 - find rescue organizations
-- get complete details for a specific adoptable animal by id
-- search and list adoptable animals
-- animals
-- search animals
-- advanced animal search
-- list all animal species
-- animal species reference data
-- animal welfare
-- search adoptable animals by breed, species, age, size, location, and distance
-- get details for a single adoptable animal
-- list all animal colors
-- organization pet lists
-- animal coat pattern reference data
-- list all rescue organizations
-- rescue
-- search animals by criteria
-- list all available adoptable animals
-- look up all available animal breed classifications
-- lookup animal breeds
-- lookup animal species
-- organizations
-- find rescue organizations and shelters near a location
-- look up all available animal color classifications
-- search
-- look up all available animal coat pattern classifications
-- single rescue organization
-- get animal
-- list breeds
-- list patterns
-- get details for a specific rescue organization including adoption process and service areas
-- get organization details
-- list species
 - get pet list
-- list all available animal breeds
-- list adoptable animals
-- get org pet list
-- animal color reference data
+- list patterns
+- animal coat pattern reference data
+- search adoptable animals by breed, species, age, size, location, and distance
+- get animal
+- list colors
+- get complete details for a specific adoptable animal by id
+- advanced animal search
+- find rescue organizations and shelters near a location
+- single adoptable animal
+- list all available adoptable animals
 - get organization
-- list all animal coat patterns
-- rescue organizations and shelters
-- get animal details
-- get details for a single rescue organization
-- list animals
+- lookup animal patterns
+- get organization details
+- animal color reference data
 - lookup animal colors
-- pet adoption
+- search animals by criteria
+- search animals
+- animal species reference data
+- list all animal coat patterns
+- list all animal species
+- animals
+- list breeds
 - look up all available animal species classifications
+- search
+- rescue organizations and shelters
+- lookup animal species
+- list animals
+- get details for a single rescue organization
+- lookup animal breeds
+- single rescue organization
+- organization pet lists
+- rescue
+- get a rescue organization's pet list by keystring
+- list all animal colors
+- animal breed reference data
+- list all available animal breeds
+- get a pet list by keystring
+- look up all available animal breed classifications
+- animal welfare
+- look up all available animal color classifications
+- organizations
+- get details for a specific rescue organization including adoption process and service areas
+- get animal details
 slug: pet-adoption-search
 source_filename: pet-adoption-search.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"RescueGroups.org Pet Adoption Search\"\n  description: >-\n    Workflow capability for searching and discovering adoptable pets and rescue\n    organizations. Enables geographic search, breed/species filtering, and\n    organization lookup for pet adoption platforms, rescue directories, and\n    shelter management integrations.\n  tags:\n    - Animals\n    - Pet Adoption\n    - Rescue\n    - Organizations\n    - Animal Welfare\n    - Search\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      RESCUEGROUPS_API_KEY: RESCUEGROUPS_API_KEY\n\ncapability:\n  consumes:\n    - import: rescuegroups\n      location: ./shared/rescuegroups-org.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: pet-adoption-search-api\n      description: \"Unified REST API for pet adoption search and discovery.\"\n      resources:\n        - path: /v1/animals\n          name: animals\n\
-  \          description: \"Search and list adoptable animals\"\n          operations:\n            - method: GET\n              name: list-animals\n              description: \"List all available adoptable animals\"\n              call: \"rescuegroups.list-public-animals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/animals/{id}\n          name: animal\n          description: \"Single adoptable animal\"\n          operations:\n            - method: GET\n              name: get-animal\n              description: \"Get details for a single adoptable animal\"\n              call: \"rescuegroups.get-public-animal\"\n              with:\n                animal_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/animals/search\n          name: animal-search\n          description: \"Advanced animal search\"\n          operations:\n \
-  \           - method: POST\n              name: search-animals\n              description: \"Search animals with breed, species, location, and geodistance filters\"\n              call: \"rescuegroups.search-public-animals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations\n          name: organizations\n          description: \"Rescue organizations and shelters\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List all rescue organizations\"\n              call: \"rescuegroups.list-public-orgs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/organizations/{id}\n          name: organization\n          description: \"Single rescue organization\"\n          operations:\n            - method: GET\n              name: get-organization\n              description:\
-  \ \"Get details for a single rescue organization\"\n              call: \"rescuegroups.get-public-org\"\n              with:\n                org_id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/breeds\n          name: breeds\n          description: \"Animal breed reference data\"\n          operations:\n            - method: GET\n              name: list-breeds\n              description: \"List all available animal breeds\"\n              call: \"rescuegroups.list-animal-breeds\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/species\n          name: species\n          description: \"Animal species reference data\"\n          operations:\n            - method: GET\n              name: list-species\n              description: \"List all animal species\"\n              call: \"rescuegroups.list-animal-species\"\n             \
-  \ outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/colors\n          name: colors\n          description: \"Animal color reference data\"\n          operations:\n            - method: GET\n              name: list-colors\n              description: \"List all animal colors\"\n              call: \"rescuegroups.list-animal-colors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/patterns\n          name: patterns\n          description: \"Animal coat pattern reference data\"\n          operations:\n            - method: GET\n              name: list-patterns\n              description: \"List all animal coat patterns\"\n              call: \"rescuegroups.list-animal-patterns\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/pet-lists/{keystring}\n          name: pet-list\n          description:\
-  \ \"Organization pet lists\"\n          operations:\n            - method: GET\n              name: get-pet-list\n              description: \"Get a pet list by keystring\"\n              call: \"rescuegroups.get-pet-list\"\n              with:\n                keystring: \"rest.keystring\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: pet-adoption-search-mcp\n      transport: http\n      description: \"MCP server for AI-assisted pet adoption search and rescue organization discovery.\"\n      tools:\n        - name: list-adoptable-animals\n          description: \"List available adoptable animals with optional filtering\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"rescuegroups.list-public-animals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-animal-details\n      \
-  \    description: \"Get complete details for a specific adoptable animal by ID\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"rescuegroups.get-public-animal\"\n          with:\n            animal_id: \"tools.animal_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-animals-by-criteria\n          description: \"Search adoptable animals by breed, species, age, size, location, and distance\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"rescuegroups.search-public-animals\"\n          with:\n            view_name: \"tools.view_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: find-rescue-organizations\n          description: \"Find rescue organizations and shelters near a location\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call:\
-  \ \"rescuegroups.list-public-orgs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-organization-details\n          description: \"Get details for a specific rescue organization including adoption process and service areas\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"rescuegroups.get-public-org\"\n          with:\n            org_id: \"tools.org_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-animal-breeds\n          description: \"Look up all available animal breed classifications\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"rescuegroups.list-animal-breeds\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-animal-species\n          description: \"Look up all available animal species classifications\"\
-  \n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"rescuegroups.list-animal-species\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-animal-colors\n          description: \"Look up all available animal color classifications\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"rescuegroups.list-animal-colors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-animal-patterns\n          description: \"Look up all available animal coat pattern classifications\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"rescuegroups.list-animal-patterns\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-org-pet-list\n          description: \"Get a rescue organization's pet list by keystring\"\
-  \n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"rescuegroups.get-pet-list\"\n          with:\n            keystring: \"tools.keystring\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: RescueGroups.org Pet Adoption Search\n  description: Workflow capability for searching and discovering adoptable pets and rescue organizations. Enables geographic\n    search, breed/species filtering, and organization lookup for pet adoption platforms, rescue directories, and shelter management\n    integrations.\n  tags:\n  - Animals\n  - Pet Adoption\n  - Rescue\n  - Organizations\n  - Animal Welfare\n  - Search\n  created: '2026-05-02'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    RESCUEGROUPS_API_KEY: RESCUEGROUPS_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: rescuegroups\n    baseUri: https://api.rescuegroups.org/v5\n    description: RescueGroups.org REST API v5 for adoptable pet data\n    authentication:\n      type: apikey\n      key: Authorization\n      value: '{{RESCUEGROUPS_API_KEY}}'\n      placement: header\n    resources:\n    - name: public-animals\n      path: /public/animals\n  \
+  \    description: Public adoptable animal records\n      operations:\n      - name: list-public-animals\n        method: GET\n        description: Retrieve a paginated list of public adoptable animals\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n          description: Page number for paginated results\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Number of records per page (max 250)\n        - name: sort\n          in: query\n          type: string\n          required: false\n          description: Sort field with +/- prefix\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-public-animal\n        method: GET\n        description: Retrieve a single public adoptable animal by ID\n        inputParameters:\n        - name: animal_id\n          in:\
+  \ path\n          type: string\n          required: true\n          description: The unique animal identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: search-public-animals\n        method: POST\n        description: Search public adoptable animals using filters, views, and geodistance\n        inputParameters:\n        - name: view_name\n          in: path\n          type: string\n          required: true\n          description: Predefined view name (e.g., available, cats, dogs)\n        - name: page\n          in: query\n          type: integer\n          required: false\n          description: Page number\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Records per page\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n  \
+  \        type: json\n          data:\n            data:\n              filters: '{{tools.filters}}'\n              geodistance: '{{tools.geodistance}}'\n    - name: public-orgs\n      path: /public/orgs\n      description: Public rescue organization records\n      operations:\n      - name: list-public-orgs\n        method: GET\n        description: Retrieve a paginated list of public rescue organizations\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n          description: Page number\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Records per page\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-public-org\n        method: GET\n        description: Retrieve a single public rescue organization by ID\n        inputParameters:\n        - name: org_id\n\
+  \          in: path\n          type: string\n          required: true\n          description: The unique organization identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: reference-data\n      path: /public/animals\n      description: Animal reference data (breeds, species, colors, patterns)\n      operations:\n      - name: list-animal-breeds\n        method: GET\n        description: Retrieve all animal breed reference values\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-animal-species\n        method: GET\n        description: Retrieve all animal species reference values\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-animal-colors\n        method: GET\n        description: Retrieve all animal\
+  \ color reference values\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-animal-patterns\n        method: GET\n        description: Retrieve all animal pattern reference values\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: pet-lists\n      path: /public/petlists\n      description: Organization pet lists\n      operations:\n      - name: get-pet-list\n        method: GET\n        description: Retrieve a pet list by its keystring\n        inputParameters:\n        - name: keystring\n          in: path\n          type: string\n          required: true\n          description: The pet list keystring identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: pet-adoption-search-api\n\
+  \    description: Unified REST API for pet adoption search and discovery.\n    resources:\n    - path: /v1/animals\n      name: animals\n      description: Search and list adoptable animals\n      operations:\n      - method: GET\n        name: list-animals\n        description: List all available adoptable animals\n        call: rescuegroups.list-public-animals\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/animals/{id}\n      name: animal\n      description: Single adoptable animal\n      operations:\n      - method: GET\n        name: get-animal\n        description: Get details for a single adoptable animal\n        call: rescuegroups.get-public-animal\n        with:\n          animal_id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/animals/search\n      name: animal-search\n      description: Advanced animal search\n      operations:\n      - method: POST\n        name: search-animals\n\
+  \        description: Search animals with breed, species, location, and geodistance filters\n        call: rescuegroups.search-public-animals\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/organizations\n      name: organizations\n      description: Rescue organizations and shelters\n      operations:\n      - method: GET\n        name: list-organizations\n        description: List all rescue organizations\n        call: rescuegroups.list-public-orgs\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/organizations/{id}\n      name: organization\n      description: Single rescue organization\n      operations:\n      - method: GET\n        name: get-organization\n        description: Get details for a single rescue organization\n        call: rescuegroups.get-public-org\n        with:\n          org_id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/breeds\n\
+  \      name: breeds\n      description: Animal breed reference data\n      operations:\n      - method: GET\n        name: list-breeds\n        description: List all available animal breeds\n        call: rescuegroups.list-animal-breeds\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/species\n      name: species\n      description: Animal species reference data\n      operations:\n      - method: GET\n        name: list-species\n        description: List all animal species\n        call: rescuegroups.list-animal-species\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/colors\n      name: colors\n      description: Animal color reference data\n      operations:\n      - method: GET\n        name: list-colors\n        description: List all animal colors\n        call: rescuegroups.list-animal-colors\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/patterns\n    \
+  \  name: patterns\n      description: Animal coat pattern reference data\n      operations:\n      - method: GET\n        name: list-patterns\n        description: List all animal coat patterns\n        call: rescuegroups.list-animal-patterns\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/pet-lists/{keystring}\n      name: pet-list\n      description: Organization pet lists\n      operations:\n      - method: GET\n        name: get-pet-list\n        description: Get a pet list by keystring\n        call: rescuegroups.get-pet-list\n        with:\n          keystring: rest.keystring\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: pet-adoption-search-mcp\n    transport: http\n    description: MCP server for AI-assisted pet adoption search and rescue organization discovery.\n    tools:\n    - name: list-adoptable-animals\n      description: List available adoptable animals with\
+  \ optional filtering\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rescuegroups.list-public-animals\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-animal-details\n      description: Get complete details for a specific adoptable animal by ID\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rescuegroups.get-public-animal\n      with:\n        animal_id: tools.animal_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-animals-by-criteria\n      description: Search adoptable animals by breed, species, age, size, location, and distance\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rescuegroups.search-public-animals\n      with:\n        view_name: tools.view_name\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: find-rescue-organizations\n      description: Find rescue organizations and shelters near\
+  \ a location\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rescuegroups.list-public-orgs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-organization-details\n      description: Get details for a specific rescue organization including adoption process and service areas\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rescuegroups.get-public-org\n      with:\n        org_id: tools.org_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lookup-animal-breeds\n      description: Look up all available animal breed classifications\n      hints:\n        readOnly: true\n        openWorld: false\n      call: rescuegroups.list-animal-breeds\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lookup-animal-species\n      description: Look up all available animal species classifications\n      hints:\n        readOnly: true\n        openWorld:\
+  \ false\n      call: rescuegroups.list-animal-species\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lookup-animal-colors\n      description: Look up all available animal color classifications\n      hints:\n        readOnly: true\n        openWorld: false\n      call: rescuegroups.list-animal-colors\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lookup-animal-patterns\n      description: Look up all available animal coat pattern classifications\n      hints:\n        readOnly: true\n        openWorld: false\n      call: rescuegroups.list-animal-patterns\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-org-pet-list\n      description: Get a rescue organization's pet list by keystring\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rescuegroups.get-pet-list\n      with:\n        keystring: tools.keystring\n      outputParameters:\n      - type: object\n   \
+  \     mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/rescuegroups-org/refs/heads/main/capabilities/pet-adoption-search.yaml
 tags:
 - Animals

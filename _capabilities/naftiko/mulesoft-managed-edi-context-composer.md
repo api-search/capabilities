@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list edi transactions
-- edi
-- spec-driven integration
+- naftiko
 - mulesoft
+- api integration
+- edi
+- governance
+- spec-driven integration
+- list edi transactions
+- ai
 - mcp
 - capabilities
-- naftiko
-- api integration
-- governance
-- ai
 - get fulfillment context
 slug: mulesoft-managed-edi-context-composer
 source_filename: mulesoft-managed-edi-context-composer.yaml

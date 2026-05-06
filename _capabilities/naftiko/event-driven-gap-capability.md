@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- get topic
-- spec-driven integration
-- produce record
-- mcp
-- kafka
-- event-driven
-- capabilities
 - naftiko
-- list topics
+- produce record
+- kafka
 - api integration
-- governance
+- capabilities
+- list topics
 - ai
+- governance
+- spec-driven integration
+- mcp
+- event-driven
+- get topic
 slug: event-driven-gap-capability
 source_filename: event-driven-gap-capability.yaml
 source_heading: Capability Spec

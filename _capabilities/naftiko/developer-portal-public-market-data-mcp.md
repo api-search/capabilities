@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- developer portal
-- spec-driven integration
-- market data
-- mcp
-- capabilities
 - naftiko
+- developer portal
 - api integration
+- market data
 - governance
+- spec-driven integration
 - ai
 - get quote
+- mcp
+- capabilities
 slug: developer-portal-public-market-data-mcp
 source_filename: developer-portal-public-market-data-mcp.yaml
 source_heading: Capability Spec

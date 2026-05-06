@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- mcp
-- capabilities
+- naftiko
 - github copilot
 - list mcp servers
-- naftiko
 - onboarding
 - get copilot config
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
 slug: github-copilot-mcp-developer-onboarding-capability
 source_filename: github-copilot-mcp-developer-onboarding-capability.yaml
 source_heading: Capability Spec

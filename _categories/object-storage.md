@@ -14,12 +14,12 @@ description: 'Buckets, blobs, key-addressable opaque object stores. Operations a
 
   '
 domain: infrastructure
-implementation_count: 7
+implementation_count: 6
 implementations:
 - capability_name: Amazon S3 Storage Management
   capability_slug: storage-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-s3/storage-management/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 16
   provider_name: Amazon S3
   provider_slug: amazon-s3
@@ -42,22 +42,10 @@ implementations:
   - Distributed Storage
   - S3 Compatible
   tool_count: 8
-- capability_name: Amazon S3 Object Storage Workflow
-  capability_slug: object-storage-workflow
-  capability_url: https://capabilities.apis.io/capabilities/aws-s3/object-storage-workflow/
-  consumed_api_count: 1
-  operation_count: 0
-  provider_name: Amazon S3 API
-  provider_slug: aws-s3
-  tags:
-  - Cloud Storage
-  - Object Storage
-  - Data Management
-  tool_count: 8
 - capability_name: Backblaze B2 Cloud Storage Management
   capability_slug: cloud-storage-management
   capability_url: https://capabilities.apis.io/capabilities/backblaze/cloud-storage-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 23
   provider_name: Backblaze
   provider_slug: backblaze
@@ -70,7 +58,7 @@ implementations:
 - capability_name: Cloudflare Data and Storage
   capability_slug: data-and-storage
   capability_url: https://capabilities.apis.io/capabilities/cloudflare/data-and-storage/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Cloudflare
   provider_slug: cloudflare
@@ -83,7 +71,7 @@ implementations:
 - capability_name: Google Cloud Storage Management
   capability_slug: cloud-storage
   capability_url: https://capabilities.apis.io/capabilities/gcp-cloud-storage/cloud-storage/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Google Cloud Storage
   provider_slug: gcp-cloud-storage
@@ -96,7 +84,7 @@ implementations:
 - capability_name: Azure Data and Security
   capability_slug: data-and-security
   capability_url: https://capabilities.apis.io/capabilities/microsoft-azure/data-and-security/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Microsoft Azure
   provider_slug: microsoft-azure
@@ -109,7 +97,7 @@ implementations:
   tool_count: 15
 layout: category
 name: Object Storage
-provider_count: 7
+provider_count: 6
 related:
 - data-engineering
 - document-processing

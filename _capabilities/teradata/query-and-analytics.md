@@ -1,9 +1,7 @@
 ---
 categories:
 - analytics
-consumed_apis:
-- query-service
-- querygrid-manager
+consumed_apis: []
 description: Workflow capability for executing SQL queries and analytics against Teradata Vantage systems. Combines Query Service for SQL execution with QueryGrid for cross-system query monitoring. Used by data analysts and application developers.
 layout: capability
 name: Teradata Query and Analytics
@@ -24,52 +22,58 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- data warehousing
-- available systems.
 - execute a sql query.
-- cloud
-- enterprise
-- Platform Administrator
-- query sessions.
-- analytics
-- query
-- create session
-- Data Engineer
-- execute query
-- list available vantage systems for query execution.
 - teradata
-- sql queries.
+- list available vantage systems.
+- analytics
 - get query status
-- execute sql queries and analytics.
 - sql query execution and session management.
-- Data Analyst
+- integrates applications with teradata via rest apis.
+- create session
+- cloud
+- execute query
+- Data Engineer
+- list querygrid queries
+- enterprise
+- manage querygrid data fabric infrastructure.
+- sql
+- Platform Administrator
+- manages data fabric infrastructure and cross-system connectivity.
+- sql queries.
+- execute sql queries and analytics.
+- query
+- available systems.
 - administers querygrid systems, nodes, and software.
 - database
 - list query systems
-- list querygrid queries
-- health monitoring and issue detection.
-- data management
-- get the status and results of a submitted query.
-- execute a sql query against teradata vantage.
-- executes queries and analyzes data across vantage systems.
+- query sessions.
 - machine learning
-- manage querygrid data fabric infrastructure.
 - list cross-system query summaries from querygrid.
-- list available vantage systems.
-- manages data fabric infrastructure and cross-system connectivity.
+- get the status and results of a submitted query.
+- data management
 - system and fabric configuration management.
-- Application Developer
+- Data Analyst
 - create a query session.
-- integrates applications with teradata via rest apis.
-- sql
+- executes queries and analyzes data across vantage systems.
 - create a new query session on a vantage system.
+- data warehousing
+- execute a sql query against teradata vantage.
+- health monitoring and issue detection.
+- Application Developer
+- list available vantage systems for query execution.
 slug: query-and-analytics
 source_filename: query-and-analytics.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Teradata Query and Analytics\n  description: >-\n    Workflow capability for executing SQL queries and analytics against Teradata\n    Vantage systems. Combines Query Service for SQL execution with QueryGrid for\n    cross-system query monitoring. Used by data analysts and application\n    developers.\n  tags:\n    - Teradata\n    - Query\n    - Analytics\n    - SQL\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      VANTAGE_USERNAME: VANTAGE_USERNAME\n      VANTAGE_PASSWORD: VANTAGE_PASSWORD\n      QUERYGRID_USERNAME: QUERYGRID_USERNAME\n      QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\n\ncapability:\n  consumes:\n    - import: query-service\n      location: ./shared/query-service.yaml\n    - import: querygrid-manager\n      location: ./shared/querygrid-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8081\n      namespace: query-analytics-api\n      description: \"Unified\
-  \ REST API for Teradata query and analytics.\"\n      resources:\n        - path: /v1/systems\n          name: systems\n          description: \"Available systems.\"\n          operations:\n            - method: GET\n              name: list-query-systems\n              description: \"List available Vantage systems.\"\n              call: \"query-service.list-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sessions\n          name: sessions\n          description: \"Query sessions.\"\n          operations:\n            - method: POST\n              name: create-session\n              description: \"Create a query session.\"\n              call: \"query-service.create-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queries\n          name: queries\n          description: \"SQL queries.\"\n          operations:\n           \
-  \ - method: POST\n              name: execute-query\n              description: \"Execute a SQL query.\"\n              call: \"query-service.execute-query\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9081\n      namespace: query-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SQL query execution.\"\n      tools:\n        - name: list-query-systems\n          description: \"List available Vantage systems for query execution.\"\n          hints:\n            readOnly: true\n          call: \"query-service.list-systems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-session\n          description: \"Create a new query session on a Vantage system.\"\n          hints:\n            readOnly: false\n          call: \"query-service.create-session\"\n          outputParameters:\n            - type: object\n\
-  \              mapping: \"$.\"\n        - name: execute-query\n          description: \"Execute a SQL query against Teradata Vantage.\"\n          hints:\n            readOnly: false\n          call: \"query-service.execute-query\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-query-status\n          description: \"Get the status and results of a submitted query.\"\n          hints:\n            readOnly: true\n          call: \"query-service.get-query-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-querygrid-queries\n          description: \"List cross-system query summaries from QueryGrid.\"\n          hints:\n            readOnly: true\n          call: \"querygrid-manager.list-issues\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Teradata Query and Analytics\n  description: Workflow capability for executing SQL queries and analytics against Teradata Vantage systems. Combines Query\n    Service for SQL execution with QueryGrid for cross-system query monitoring. Used by data analysts and application developers.\n  tags:\n  - Teradata\n  - Query\n  - Analytics\n  - SQL\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    VANTAGE_USERNAME: VANTAGE_USERNAME\n    VANTAGE_PASSWORD: VANTAGE_PASSWORD\n    QUERYGRID_USERNAME: QUERYGRID_USERNAME\n    QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\ncapability:\n  consumes:\n  - type: http\n    namespace: query-service\n    baseUri: https://vantage.teradata.com/api/query/v1\n    description: Teradata Query Service REST API.\n    authentication:\n      type: basic\n      username: '{{VANTAGE_USERNAME}}'\n      password: '{{VANTAGE_PASSWORD}}'\n    resources:\n    - name: systems\n      path: /systems\n\
+  \      description: Available Vantage systems.\n      operations:\n      - name: list-systems\n        method: GET\n        description: List available Vantage systems.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: sessions\n      path: /sessions\n      description: Query sessions.\n      operations:\n      - name: create-session\n        method: POST\n        description: Create a new query session.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-session\n        method: GET\n        description: Get session details.\n        inputParameters:\n        - name: sessionId\n          in: path\n          type: string\n          required: true\n          description: Session identifier.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n         \
+  \ value: $.\n      - name: delete-session\n        method: DELETE\n        description: Close a query session.\n        inputParameters:\n        - name: sessionId\n          in: path\n          type: string\n          required: true\n          description: Session identifier.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: queries\n      path: /queries\n      description: SQL query execution.\n      operations:\n      - name: execute-query\n        method: POST\n        description: Execute a SQL query.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-query-status\n        method: GET\n        description: Get query status and results.\n        inputParameters:\n        - name: queryId\n          in: path\n          type: string\n          required: true\n          description: Query identifier.\n \
+  \       outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: querygrid-manager\n    baseUri: https://querygrid.teradata.com/api/v1\n    description: QueryGrid Manager REST API for data fabric administration.\n    authentication:\n      type: basic\n      username: '{{QUERYGRID_USERNAME}}'\n      password: '{{QUERYGRID_PASSWORD}}'\n    resources:\n    - name: monitoring\n      path: /\n      description: Monitoring and status endpoints.\n      operations:\n      - name: get-api-info\n        method: GET\n        description: Retrieve API version and status information.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-issues\n        method: GET\n        description: Retrieve all current issues.\n        inputParameters:\n        - name: path\n          in: path\n          type: string\n        \
+  \  required: true\n          description: Issues endpoint path.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: configuration\n      path: /config\n      description: Configuration management endpoints.\n      operations:\n      - name: list-data-centers\n        method: GET\n        description: Retrieve all configured data centers.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-data-center\n        method: POST\n        description: Create a new data center configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-systems\n        method: GET\n        description: Retrieve all configured systems.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type:\
+  \ object\n          value: $.\n      - name: create-system\n        method: POST\n        description: Register a new system.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-bridges\n        method: GET\n        description: Retrieve all configured bridges.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-connectors\n        method: GET\n        description: Retrieve all configured connectors.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-links\n        method: GET\n        description: Retrieve all configured links.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-fabrics\n        method: GET\n \
+  \       description: Retrieve all configured fabrics.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-networks\n        method: GET\n        description: Retrieve all configured networks.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: operations\n      path: /operations\n      description: Operational management endpoints.\n      operations:\n      - name: run-diagnostic-check\n        method: POST\n        description: Execute a diagnostic check.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: auto-install-nodes\n        method: POST\n        description: Trigger automated node installation.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n      \
+  \    value: $.\n  exposes:\n  - type: rest\n    port: 8081\n    namespace: query-analytics-api\n    description: Unified REST API for Teradata query and analytics.\n    resources:\n    - path: /v1/systems\n      name: systems\n      description: Available systems.\n      operations:\n      - method: GET\n        name: list-query-systems\n        description: List available Vantage systems.\n        call: query-service.list-systems\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/sessions\n      name: sessions\n      description: Query sessions.\n      operations:\n      - method: POST\n        name: create-session\n        description: Create a query session.\n        call: query-service.create-session\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/queries\n      name: queries\n      description: SQL queries.\n      operations:\n      - method: POST\n        name: execute-query\n        description: Execute\
+  \ a SQL query.\n        call: query-service.execute-query\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9081\n    namespace: query-analytics-mcp\n    transport: http\n    description: MCP server for AI-assisted SQL query execution.\n    tools:\n    - name: list-query-systems\n      description: List available Vantage systems for query execution.\n      hints:\n        readOnly: true\n      call: query-service.list-systems\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-session\n      description: Create a new query session on a Vantage system.\n      hints:\n        readOnly: false\n      call: query-service.create-session\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: execute-query\n      description: Execute a SQL query against Teradata Vantage.\n      hints:\n        readOnly: false\n      call: query-service.execute-query\n      outputParameters:\n      -\
+  \ type: object\n        mapping: $.\n    - name: get-query-status\n      description: Get the status and results of a submitted query.\n      hints:\n        readOnly: true\n      call: query-service.get-query-status\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-querygrid-queries\n      description: List cross-system query summaries from QueryGrid.\n      hints:\n        readOnly: true\n      call: querygrid-manager.list-issues\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/teradata/refs/heads/main/capabilities/query-and-analytics.yaml
 tags:
 - Teradata

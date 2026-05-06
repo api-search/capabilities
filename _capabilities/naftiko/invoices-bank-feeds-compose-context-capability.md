@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- get ar ap context
-- finance
-- spec-driven integration
-- plaid
-- mcp
-- capabilities
-- quickbooks
 - naftiko
-- api integration
+- finance
 - get transactions
+- plaid
+- quickbooks
+- api integration
 - governance
+- capabilities
+- spec-driven integration
 - ai
+- mcp
+- get ar ap context
 slug: invoices-bank-feeds-compose-context-capability
 source_filename: invoices-bank-feeds-compose-context-capability.yaml
 source_heading: Capability Spec

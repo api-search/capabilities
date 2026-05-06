@@ -9,15 +9,15 @@ personas: []
 provider_name: US AbilityOne Commission
 provider_slug: us-abilityone-commission
 search_terms:
-- acquisition personnel searching for compliant sources for products and services
-- disability employment
-- federal agency managers overseeing abilityone compliance across the agency
-- federal government
-- nonprofit
 - federal procurement workflow for identifying and ordering products and services from abilityone nonprofit agencies under the jwod act mandate
-- federal contracting officers responsible for verifying abilityone mandatory source requirements
-- procurement
+- disability employment
+- federal government
 - accessibility
+- nonprofit
+- federal agency managers overseeing abilityone compliance across the agency
+- federal contracting officers responsible for verifying abilityone mandatory source requirements
+- acquisition personnel searching for compliant sources for products and services
+- procurement
 slug: disability-employment-procurement
 source_filename: disability-employment-procurement.yaml
 source_heading: Capability Spec

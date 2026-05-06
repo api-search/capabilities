@@ -9,16 +9,16 @@ personas: []
 provider_name: Zitadel
 provider_slug: zitadel
 search_terms:
-- authentication
-- authorization
+- provision organizations, projects, applications, and users.
 - integrates applications with zitadel for authentication.
+- operates zitadel and provisions identity resources.
 - oidc
 - identity management
+- authorization
+- authentication
+- open source
 - oauth 2.0
 - configures policies, mfa, and audit controls.
-- operates zitadel and provisions identity resources.
-- open source
-- provision organizations, projects, applications, and users.
 slug: identity-onboarding
 source_filename: identity-onboarding.yaml
 source_heading: Capability Spec

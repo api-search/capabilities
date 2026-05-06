@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- backstage
-- spec-driven integration
+- naftiko
 - scaffold demo
+- backstage
+- scaffold
+- api integration
+- governance
+- register location
+- spec-driven integration
+- ai
 - mcp
 - capabilities
-- register location
-- naftiko
-- api integration
-- scaffold
-- governance
-- ai
 slug: backstage-demo-scaffold
 source_filename: backstage-demo-scaffold.yaml
 source_heading: Capability Spec

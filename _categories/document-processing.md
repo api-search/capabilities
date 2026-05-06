@@ -18,7 +18,7 @@ implementations:
 - capability_name: Adobe Document Processing
   capability_slug: document-processing
   capability_url: https://capabilities.apis.io/capabilities/adobe/document-processing/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Adobe
   provider_slug: adobe
@@ -31,7 +31,7 @@ implementations:
 - capability_name: Adobe Document Management
   capability_slug: document-management
   capability_url: https://capabilities.apis.io/capabilities/adobe-creative-suite/document-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Adobe Creative Suite
   provider_slug: adobe-creative-suite
@@ -59,7 +59,7 @@ implementations:
 - capability_name: ApyHub Document Utilities
   capability_slug: document-utilities
   capability_url: https://capabilities.apis.io/capabilities/apyhub/document-utilities/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 0
   provider_name: ApyHub
   provider_slug: apyhub

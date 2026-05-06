@@ -1,8 +1,7 @@
 ---
 categories:
 - collaboration
-consumed_apis:
-- teams-graph
+consumed_apis: []
 description: Workflow capability for team collaboration including managing teams, channels, messaging, members, meetings, and calls. Used by IT administrators, team leads, and developers building Teams integrations.
 layout: capability
 name: Microsoft Teams Collaboration
@@ -43,63 +42,67 @@ personas: []
 provider_name: Microsoft Teams
 provider_slug: microsoft-teams
 search_terms:
-- create team
-- create online meeting
-- list joined teams
-- microsoft teams
-- Team Lead
-- create a meeting.
-- list team members
-- developers building teams integrations and bots.
-- send a message.
-- create a new team.
-- add team member
+- list members.
+- microsoft 365
+- create a team.
+- meeting management.
+- IT Administrator
+- list all members of a team.
+- create an online meeting.
+- list joined teams.
+- manage teams collaboration workflows.
 - Developer
 - list channels in a team.
-- meeting management.
-- team management.
-- messaging.
-- video conferencing
-- list members.
-- create call
-- it admins managing teams infrastructure and policies.
-- list channels
-- chat
-- list messages.
-- create a team.
-- list all members of a team.
-- list channel messages
+- developers building teams integrations and bots.
+- create a new team.
 - add a member to a team.
-- member management.
-- send a message to a channel.
-- create channel
-- IT Administrator
-- microsoft 365
-- communication
-- initiate a call.
 - channel management.
-- list joined teams.
-- list all teams the user has joined.
-- create a new channel.
-- manage teams collaboration workflows.
-- team leads managing channels, members, and communication.
-- list messages from a channel.
-- create a channel.
-- create an online meeting.
-- productivity
-- collaboration
+- create a meeting.
+- list joined teams
+- list messages.
+- communication
 - send channel message
+- create call
+- send a message to a channel.
+- microsoft teams
+- create team
+- team leads managing channels, members, and communication.
+- create a channel.
+- productivity
+- it admins managing teams infrastructure and policies.
 - list channels.
+- create online meeting
+- list messages from a channel.
+- team management.
+- send a message.
+- create channel
+- video conferencing
+- list channel messages
+- list channels
+- initiate a call.
+- chat
+- member management.
+- create a new channel.
+- list all teams the user has joined.
+- messaging.
+- collaboration
+- list team members
+- Team Lead
+- add team member
 slug: team-collaboration
 source_filename: team-collaboration.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Teams Collaboration\"\n  description: \"Workflow capability for team collaboration including managing teams, channels, messaging, members, meetings, and calls. Used by IT administrators, team leads, and developers building Teams integrations.\"\n  tags:\n    - Microsoft Teams\n    - Collaboration\n    - Communication\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: teams-graph\n      location: ./shared/teams-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: team-collaboration-api\n      description: \"Unified REST API for Teams collaboration workflows.\"\n      resources:\n        - path: /v1/teams\n          name: teams\n          description: \"Team management.\"\n          operations:\n            - method: GET\n              name: list-joined-teams\n\
-  \              description: \"List joined teams.\"\n              call: \"teams-graph.list-joined-teams\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-team\n              description: \"Create a team.\"\n              call: \"teams-graph.create-team\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/channels\n          name: channels\n          description: \"Channel management.\"\n          operations:\n            - method: GET\n              name: list-channels\n              description: \"List channels.\"\n              call: \"teams-graph.list-channels\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-channel\n              description: \"Create a channel.\"\n              call: \"teams-graph.create-channel\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/messages\n          name: messages\n          description: \"Messaging.\"\n          operations:\n            - method: GET\n              name: list-channel-messages\n              description: \"List messages.\"\n              call: \"teams-graph.list-channel-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: send-channel-message\n              description: \"Send a message.\"\n              call: \"teams-graph.send-channel-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/members\n          name: members\n          description: \"Member management.\"\n          operations:\n            - method: GET\n              name: list-team-members\n              description: \"List members.\"\
-  \n              call: \"teams-graph.list-team-members\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/meetings\n          name: meetings\n          description: \"Meeting management.\"\n          operations:\n            - method: POST\n              name: create-online-meeting\n              description: \"Create a meeting.\"\n              call: \"teams-graph.create-online-meeting\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: team-collaboration-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Teams collaboration.\"\n      tools:\n        - name: list-joined-teams\n          description: \"List all teams the user has joined.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-joined-teams\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: create-team\n          description: \"Create a new team.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-team\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-channels\n          description: \"List channels in a team.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-channels\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-channel\n          description: \"Create a new channel.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-channel\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-channel-messages\n          description: \"List messages from a channel.\"\n          hints:\n         \
-  \   readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-channel-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-channel-message\n          description: \"Send a message to a channel.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.send-channel-message\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-team-members\n          description: \"List all members of a team.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"teams-graph.list-team-members\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-team-member\n          description: \"Add a member to a team.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.add-team-member\"\n          outputParameters:\n        \
-  \    - type: object\n              mapping: \"$.\"\n        - name: create-online-meeting\n          description: \"Create an online meeting.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-online-meeting\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-call\n          description: \"Initiate a call.\"\n          hints:\n            readOnly: false\n          call: \"teams-graph.create-call\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Microsoft Teams Collaboration\n  description: Workflow capability for team collaboration including managing teams, channels, messaging, members, meetings,\n    and calls. Used by IT administrators, team leads, and developers building Teams integrations.\n  tags:\n  - Microsoft Teams\n  - Collaboration\n  - Communication\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: teams-graph\n    baseUri: https://graph.microsoft.com/v1.0\n    description: Microsoft Graph Teams API.\n    authentication:\n      type: bearer\n      token: '{{MICROSOFT_GRAPH_TOKEN}}'\n    resources:\n    - name: teams\n      path: /teams\n      description: Team operations.\n      operations:\n      - name: list-joined-teams\n        method: GET\n        description: List teams the user has joined.\n        outputRawFormat: json\n\
+  \        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-team\n        method: POST\n        description: Create a new team.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            displayName: '{{tools.displayName}}'\n            description: '{{tools.description}}'\n    - name: channels\n      path: /teams/{team-id}/channels\n      description: Channel operations.\n      operations:\n      - name: list-channels\n        method: GET\n        description: List channels in a team.\n        inputParameters:\n        - name: team-id\n          in: path\n          type: string\n          required: true\n          description: The team ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-channel\n\
+  \        method: POST\n        description: Create a new channel.\n        inputParameters:\n        - name: team-id\n          in: path\n          type: string\n          required: true\n          description: The team ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            displayName: '{{tools.displayName}}'\n    - name: messages\n      path: /teams/{team-id}/channels/{channel-id}/messages\n      description: Message operations.\n      operations:\n      - name: list-channel-messages\n        method: GET\n        description: List messages in a channel.\n        inputParameters:\n        - name: team-id\n          in: path\n          type: string\n          required: true\n          description: The team ID.\n        - name: channel-id\n          in: path\n          type: string\n          required: true\n          description: The channel ID.\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: send-channel-message\n        method: POST\n        description: Send a message to a channel.\n        inputParameters:\n        - name: team-id\n          in: path\n          type: string\n          required: true\n          description: The team ID.\n        - name: channel-id\n          in: path\n          type: string\n          required: true\n          description: The channel ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            body: '{{tools.body}}'\n    - name: members\n      path: /teams/{team-id}/members\n      description: Member operations.\n      operations:\n      - name: list-team-members\n        method: GET\n        description: List members in a team.\n        inputParameters:\n      \
+  \  - name: team-id\n          in: path\n          type: string\n          required: true\n          description: The team ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: add-team-member\n        method: POST\n        description: Add a member to a team.\n        inputParameters:\n        - name: team-id\n          in: path\n          type: string\n          required: true\n          description: The team ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: meetings\n      path: /communications/onlineMeetings\n      description: Online meeting operations.\n      operations:\n      - name: create-online-meeting\n        method: POST\n        description: Create an online meeting.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value:\
+  \ $.\n        body:\n          type: json\n          data:\n            subject: '{{tools.subject}}'\n    - name: calls\n      path: /communications/calls\n      description: Call operations.\n      operations:\n      - name: create-call\n        method: POST\n        description: Create a new call.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: team-collaboration-api\n    description: Unified REST API for Teams collaboration workflows.\n    resources:\n    - path: /v1/teams\n      name: teams\n      description: Team management.\n      operations:\n      - method: GET\n        name: list-joined-teams\n        description: List joined teams.\n        call: teams-graph.list-joined-teams\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-team\n        description: Create a team.\n   \
+  \     call: teams-graph.create-team\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/channels\n      name: channels\n      description: Channel management.\n      operations:\n      - method: GET\n        name: list-channels\n        description: List channels.\n        call: teams-graph.list-channels\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-channel\n        description: Create a channel.\n        call: teams-graph.create-channel\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/messages\n      name: messages\n      description: Messaging.\n      operations:\n      - method: GET\n        name: list-channel-messages\n        description: List messages.\n        call: teams-graph.list-channel-messages\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: send-channel-message\n\
+  \        description: Send a message.\n        call: teams-graph.send-channel-message\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/members\n      name: members\n      description: Member management.\n      operations:\n      - method: GET\n        name: list-team-members\n        description: List members.\n        call: teams-graph.list-team-members\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/meetings\n      name: meetings\n      description: Meeting management.\n      operations:\n      - method: POST\n        name: create-online-meeting\n        description: Create a meeting.\n        call: teams-graph.create-online-meeting\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: team-collaboration-mcp\n    transport: http\n    description: MCP server for AI-assisted Teams collaboration.\n    tools:\n    - name: list-joined-teams\n\
+  \      description: List all teams the user has joined.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: teams-graph.list-joined-teams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-team\n      description: Create a new team.\n      hints:\n        readOnly: false\n      call: teams-graph.create-team\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-channels\n      description: List channels in a team.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: teams-graph.list-channels\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-channel\n      description: Create a new channel.\n      hints:\n        readOnly: false\n      call: teams-graph.create-channel\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-channel-messages\n      description: List messages from a channel.\n      hints:\n  \
+  \      readOnly: true\n        openWorld: true\n      call: teams-graph.list-channel-messages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: send-channel-message\n      description: Send a message to a channel.\n      hints:\n        readOnly: false\n      call: teams-graph.send-channel-message\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-team-members\n      description: List all members of a team.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: teams-graph.list-team-members\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: add-team-member\n      description: Add a member to a team.\n      hints:\n        readOnly: false\n      call: teams-graph.add-team-member\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-online-meeting\n      description: Create an online meeting.\n      hints:\n        readOnly: false\n      call:\
+  \ teams-graph.create-online-meeting\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-call\n      description: Initiate a call.\n      hints:\n        readOnly: false\n      call: teams-graph.create-call\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-teams/refs/heads/main/capabilities/team-collaboration.yaml
 tags:
 - Microsoft Teams

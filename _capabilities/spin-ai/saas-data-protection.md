@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: spin-ai-openapi.yml
-  format: yaml
-  label: spin-ai
-  slug: spin-ai
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/spin-ai/refs/heads/main/openapi/spin-ai-openapi.yml
 categories: []
-consumed_apis:
-- spin-ai
+consumed_apis: []
 description: Workflow capability for managing SaaS data protection and backup entity lifecycle using the Spin.AI SpinOne platform. Enables IT administrators and security teams to audit backup coverage, identify unprotected entities, and manage backup status across Google Workspace, Microsoft 365, Salesforce, and Slack environments.
 layout: capability
 name: Spin.AI SaaS Data Protection
@@ -30,40 +22,42 @@ provider_name: Spin.AI
 provider_slug: spin-ai
 search_terms:
 - filtered entity retrieval
-- retrieve all backup entities
-- update entity status
-- update backup status for entities
-- filter entities by type, status, and platform
-- filter entities
-- google workspace
-- archive one or more entities in spinone — backup stops but existing data is retained.
-- data protection
-- enable backup for one or more entities by setting their status to active.
-- get all entities
-- entity backup status management
-- get all backup entities
-- archive entity backup
 - retrieve all users, groups, and drives managed by spinone backup. filter by platform (google_workspace, microsoft_365, salesforce, slack).
-- ransomware
-- search and filter backup entities by type (user/group/drive), status (active/archived/disabled), and platform. use for auditing backup coverage gaps.
-- microsoft 365
-- saas security
-- filter backup entities
-- activate entity backup
-- compliance
-- disable entity backup
-- disable backup for one or more entities — backup stops and data retention ceases.
-- backup
 - spin ai
+- google workspace
+- microsoft 365
+- update entity status
+- activate entity backup
+- data protection
+- get all entities
+- backup
+- compliance
+- archive entity backup
+- ransomware
+- filter entities by type, status, and platform
+- get all backup entities
+- retrieve all backup entities
 - backup entity management
+- archive one or more entities in spinone — backup stops but existing data is retained.
+- saas security
+- search and filter backup entities by type (user/group/drive), status (active/archived/disabled), and platform. use for auditing backup coverage gaps.
+- enable backup for one or more entities by setting their status to active.
+- entity backup status management
+- disable backup for one or more entities — backup stops and data retention ceases.
+- filter backup entities
+- update backup status for entities
+- disable entity backup
+- filter entities
 slug: saas-data-protection
 source_filename: saas-data-protection.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Spin.AI SaaS Data Protection\"\n  description: >-\n    Workflow capability for managing SaaS data protection and backup entity lifecycle\n    using the Spin.AI SpinOne platform. Enables IT administrators and security teams\n    to audit backup coverage, identify unprotected entities, and manage backup status\n    across Google Workspace, Microsoft 365, Salesforce, and Slack environments.\n  tags:\n    - Spin AI\n    - SaaS Security\n    - Data Protection\n    - Backup\n    - Compliance\n    - Google Workspace\n    - Microsoft 365\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPIN_AI_APP_ID: SPIN_AI_APP_ID\n      SPIN_AI_API_KEY: SPIN_AI_API_KEY\n\ncapability:\n  consumes:\n    - import: spin-ai\n      location: ./shared/spin-ai.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: spin-ai-data-protection-api\n      description: \"Unified REST API for Spin.AI\
-  \ SaaS data protection workflows.\"\n      resources:\n        - path: /v1/entities\n          name: entities\n          description: \"Backup entity management\"\n          operations:\n            - method: GET\n              name: get-all-entities\n              description: \"Retrieve all backup entities\"\n              call: \"spin-ai.get-all-entities\"\n              with:\n                platform: \"rest.platform\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/entities/filter\n          name: entity-filter\n          description: \"Filtered entity retrieval\"\n          operations:\n            - method: POST\n              name: filter-entities\n              description: \"Filter entities by type, status, and platform\"\n              call: \"spin-ai.filter-entities\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/entities/status\n\
-  \          name: entity-status\n          description: \"Entity backup status management\"\n          operations:\n            - method: POST\n              name: update-entity-status\n              description: \"Update backup status for entities\"\n              call: \"spin-ai.update-entity-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: spin-ai-data-protection-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SaaS data protection management.\"\n      tools:\n        - name: get-all-backup-entities\n          description: \"Retrieve all users, groups, and drives managed by SpinOne backup. Filter by platform (google_workspace, microsoft_365, salesforce, slack).\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"spin-ai.get-all-entities\"\n          with:\n            platform: \"tools.platform\"\n  \
-  \        outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: filter-backup-entities\n          description: \"Search and filter backup entities by type (user/group/drive), status (ACTIVE/ARCHIVED/DISABLED), and platform. Use for auditing backup coverage gaps.\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"spin-ai.filter-entities\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: activate-entity-backup\n          description: \"Enable backup for one or more entities by setting their status to ACTIVE.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"spin-ai.update-entity-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: archive-entity-backup\n          description: \"Archive one or more entities in SpinOne — backup stops but existing\
-  \ data is retained.\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"spin-ai.update-entity-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: disable-entity-backup\n          description: \"Disable backup for one or more entities — backup stops and data retention ceases.\"\n          hints:\n            readOnly: false\n            idempotent: true\n            destructive: true\n          call: \"spin-ai.update-entity-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Spin.AI SaaS Data Protection\n  description: Workflow capability for managing SaaS data protection and backup entity lifecycle using the Spin.AI SpinOne\n    platform. Enables IT administrators and security teams to audit backup coverage, identify unprotected entities, and manage\n    backup status across Google Workspace, Microsoft 365, Salesforce, and Slack environments.\n  tags:\n  - Spin AI\n  - SaaS Security\n  - Data Protection\n  - Backup\n  - Compliance\n  - Google Workspace\n  - Microsoft 365\n  created: '2026-05-02'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    SPIN_AI_APP_ID: SPIN_AI_APP_ID\n    SPIN_AI_API_KEY: SPIN_AI_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: spin-ai\n    baseUri: https://apg-1.spin.ai\n    description: Spin.AI SpinOne SaaS data protection REST API\n    authentication:\n      type: apikey\n      key: Authorization\n      value: SPIN_API X-APP-ID={{SPIN_AI_APP_ID}},X-API-KEY={{SPIN_AI_API_KEY}}\n\
+  \      placement: header\n    resources:\n    - name: entities-all\n      path: /api/v1/integration/backup/entities/all\n      description: Retrieve all backup entities\n      operations:\n      - name: get-all-entities\n        method: GET\n        description: Retrieve all entities managed by SpinOne backup\n        inputParameters:\n        - name: platform\n          in: query\n          type: string\n          required: false\n          description: Filter by SaaS platform (google_workspace, microsoft_365, etc.)\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: entities-filter\n      path: /api/v1/integration/backup/entities/filter\n      description: Filter backup entities by criteria\n      operations:\n      - name: filter-entities\n        method: POST\n        description: Retrieve filtered entities by type, status, and platform\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            types: '{{tools.types}}'\n            statuses: '{{tools.statuses}}'\n            platforms: '{{tools.platforms}}'\n            search: '{{tools.search}}'\n    - name: entity-status\n      path: /api/v1/integration/backup/entity/status\n      description: Update entity backup status\n      operations:\n      - name: update-entity-status\n        method: POST\n        description: Update the backup status of one or more entities\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            entity_ids: '{{tools.entity_ids}}'\n            status: '{{tools.status}}'\n            reason: '{{tools.reason}}'\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: spin-ai-data-protection-api\n    description: Unified REST API\
+  \ for Spin.AI SaaS data protection workflows.\n    resources:\n    - path: /v1/entities\n      name: entities\n      description: Backup entity management\n      operations:\n      - method: GET\n        name: get-all-entities\n        description: Retrieve all backup entities\n        call: spin-ai.get-all-entities\n        with:\n          platform: rest.platform\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/entities/filter\n      name: entity-filter\n      description: Filtered entity retrieval\n      operations:\n      - method: POST\n        name: filter-entities\n        description: Filter entities by type, status, and platform\n        call: spin-ai.filter-entities\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/entities/status\n      name: entity-status\n      description: Entity backup status management\n      operations:\n      - method: POST\n        name: update-entity-status\n        description:\
+  \ Update backup status for entities\n        call: spin-ai.update-entity-status\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: spin-ai-data-protection-mcp\n    transport: http\n    description: MCP server for AI-assisted SaaS data protection management.\n    tools:\n    - name: get-all-backup-entities\n      description: Retrieve all users, groups, and drives managed by SpinOne backup. Filter by platform (google_workspace,\n        microsoft_365, salesforce, slack).\n      hints:\n        readOnly: true\n        openWorld: true\n      call: spin-ai.get-all-entities\n      with:\n        platform: tools.platform\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: filter-backup-entities\n      description: Search and filter backup entities by type (user/group/drive), status (ACTIVE/ARCHIVED/DISABLED), and platform.\n        Use for auditing backup coverage gaps.\n      hints:\n        readOnly:\
+  \ true\n        openWorld: false\n      call: spin-ai.filter-entities\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: activate-entity-backup\n      description: Enable backup for one or more entities by setting their status to ACTIVE.\n      hints:\n        readOnly: false\n        idempotent: true\n      call: spin-ai.update-entity-status\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: archive-entity-backup\n      description: Archive one or more entities in SpinOne — backup stops but existing data is retained.\n      hints:\n        readOnly: false\n        idempotent: true\n      call: spin-ai.update-entity-status\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: disable-entity-backup\n      description: Disable backup for one or more entities — backup stops and data retention ceases.\n      hints:\n        readOnly: false\n        idempotent: true\n        destructive: true\n      call:\
+  \ spin-ai.update-entity-status\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/spin-ai/refs/heads/main/capabilities/saas-data-protection.yaml
 tags:
 - Spin AI

@@ -11,10 +11,10 @@ provider_slug: agromonitoring
 search_terms:
 - precision agriculture
 - vegetation indices
-- agriculture
 - satellite imagery
-- remote sensing
+- agriculture
 - weather
+- remote sensing
 slug: crop-monitoring
 source_filename: crop-monitoring.yaml
 source_heading: Capability Spec

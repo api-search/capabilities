@@ -9,9 +9,9 @@ personas: []
 provider_name: Amazon VPN
 provider_slug: amazon-vpn
 search_terms:
+- networking
 - vpn
 - security
-- networking
 slug: amazon-vpn-capability
 source_filename: amazon-vpn-capability.yaml
 source_heading: Capability Spec

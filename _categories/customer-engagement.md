@@ -20,7 +20,7 @@ implementations:
 - capability_name: ActiveCampaign Marketing Automation
   capability_slug: marketing-automation
   capability_url: https://capabilities.apis.io/capabilities/activecampaign/marketing-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: ActiveCampaign
   provider_slug: activecampaign
@@ -34,7 +34,7 @@ implementations:
 - capability_name: Albertsons Retail Media Advertising
   capability_slug: retail-media-advertising
   capability_url: https://capabilities.apis.io/capabilities/albertsons/retail-media-advertising/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: albertsons
   provider_slug: albertsons
@@ -49,7 +49,7 @@ implementations:
 - capability_name: Amazon Pinpoint Customer Engagement
   capability_slug: customer-engagement
   capability_url: https://capabilities.apis.io/capabilities/amazon-pinpoint/customer-engagement/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Amazon Pinpoint
   provider_slug: amazon-pinpoint
@@ -65,7 +65,7 @@ implementations:
 - capability_name: Facebook Advertising and Marketing
   capability_slug: advertising-and-marketing
   capability_url: https://capabilities.apis.io/capabilities/facebook/advertising-and-marketing/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Facebook
   provider_slug: facebook
@@ -78,7 +78,7 @@ implementations:
 - capability_name: Mailchimp Email Marketing
   capability_slug: email-marketing
   capability_url: https://capabilities.apis.io/capabilities/mailchimp/email-marketing/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Mailchimp
   provider_slug: mailchimp
@@ -91,7 +91,7 @@ implementations:
 - capability_name: Salesforce Marketing Automation
   capability_slug: marketing-automation
   capability_url: https://capabilities.apis.io/capabilities/salesforce/marketing-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 16
   provider_name: Salesforce
   provider_slug: salesforce

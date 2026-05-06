@@ -21,7 +21,7 @@ implementations:
 - capability_name: AeroDataBox Flight Tracking
   capability_slug: flight-tracking
   capability_url: https://capabilities.apis.io/capabilities/aerodatabox/flight-tracking/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 6
   provider_name: AeroDataBox
   provider_slug: aerodatabox
@@ -35,7 +35,7 @@ implementations:
 - capability_name: American Airlines Flight Operations
   capability_slug: flight-operations
   capability_url: https://capabilities.apis.io/capabilities/american-airlines/flight-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: American Airlines
   provider_slug: american-airlines
@@ -49,7 +49,7 @@ implementations:
 - capability_name: BlaBlaCar Bus Booking
   capability_slug: blablacar-bus-booking
   capability_url: https://capabilities.apis.io/capabilities/blablacar-bus-api/blablacar-bus-booking/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: BlaBlaCar Bus API
   provider_slug: blablacar-bus-api

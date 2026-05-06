@@ -1,12 +1,7 @@
 ---
 categories:
 - monitoring
-consumed_apis:
-- autonomous-dem
-- sase-aggregate-monitoring
-- strata-logging-service
-- aiops-ngfw-bpa
-- sase-multitenant-notifications
+consumed_apis: []
 description: Unified monitoring and observability capability for tracking digital experience, aggregating security data, managing log forwarding, and running best practice assessments across Autonomous DEM, SASE Aggregate Monitoring, Strata Logging Service, and AIOps BPA APIs.
 layout: capability
 name: Palo Alto Networks Monitoring and Observability
@@ -133,218 +128,217 @@ personas:
 provider_name: Palo Alto Networks
 provider_slug: palo-alto-networks
 search_terms:
-- query aggregated application monitoring data.
-- designs and implements network security architectures and policies.
-- delete a specific log forwarding profile by id.
-- get log forwarding status
-- tenant operator
-- delete log forwarding profile
+- mssp operator
+- research iocs, submit malware samples, analyze dns threats, and track security advisories.
+- executes containment, eradication, and recovery actions during security incidents.
 - query aggregated bandwidth monitoring data with filters, time ranges, and grouping.
-- network architect
-- designs sase and sd-wan network architectures for secure remote access.
-- query aggregated url monitoring data.
-- threat intelligence
+- platform engineer
+- list monitored agents
+- manage enterprise browser policies, user sessions, and deployments.
+- get a specific log forwarding profile by id.
+- red team operator
+- xdr
+- list log forwarding profiles
+- bpa request operations.
+- digital experience monitoring, log management, and best practice assessment.
+- list monitoring tenants.
 - cloud security
-- get dem agent scores
-- get performance metrics.
-- list monitored applications.
-- logging
-- create email destination
-- monitors and remediates cloud security misconfigurations and compliance violations.
-- cybersecurity
-- threat hunter
+- get the status of a log forwarding profile.
+- monitors network health, performance, and digital experience metrics.
+- create syslog destination
+- get a bpa report.
+- palo alto networks
+- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
+- malware researcher
+- submit bpa request
+- delete a specific log forwarding profile by id.
+- observability
+- list monitored applications
+- query aggregated url monitoring data with filters, time ranges, and grouping.
+- individual log forwarding profile operations.
+- secures ai applications with runtime scanning and vulnerability assessment.
+- sase
+- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
+- submit a bpa request for a device.
+- list email destinations
+- data loss prevention, saas security monitoring, and identity security posture.
 - update a specific log forwarding profile by id.
-- query threat data
-- list monitored agents from autonomous dem.
-- investigates dlp incidents and manages sensitive data protection policies.
+- https destination management for log forwarding profiles.
+- list email destinations for a log forwarding profile.
+- conducts automated adversarial testing against ai systems and llm applications.
+- network architect
+- get bpa request status
+- sre
+- get performance metrics.
+- list https destinations
+- submit a bpa request.
+- query application data
+- compliance team
+- manages service accounts, roles, and access policies for platform api access.
+- get dem test results
+- get dem agent scores
+- bpa report check details.
+- subscription manager
+- ai runtime security scanning and automated red teaming for ai applications.
+- list monitored applications from autonomous dem.
+- log forwarding profile management.
+- create log forwarding profile
+- monitored applications from autonomous dem.
+- bpa request status.
+- firewall
+- best practice assessment
+- list dem applications
+- create https destination
+- manages multi-tenant security operations at scale for managed service providers.
+- analyzes suspicious files and samples for malware characteristics.
+- monitoring
+- agent and endpoint scores from autonomous dem.
+- get application experience scores from autonomous dem.
+- cloud security posture management, compliance monitoring, and workload protection.
+- saas security admin
+- list all log forwarding profiles.
 - query url data
-- update log forwarding profile
+- query aggregated bandwidth monitoring data.
+- soc analyst
+- get synthetic test results.
+- query aggregated threat monitoring data with filters, time ranges, and grouping.
+- query threat data
+- query aggregated license monitoring data.
+- get bpa report checks
+- sd wan operator
+- notifications
+- investigates security incidents, triages alerts, and coordinates response actions.
+- list syslog destinations
+- tenant operator
+- get performance metrics from autonomous dem.
+- data protection analyst
+- iam admin
+- get application experience scores.
+- get agent scores
+- list dem agents
+- create an https destination for a log forwarding profile.
+- secure access service edge with remote networking, sd-wan, and zero trust access.
+- network operations
+- get application scores
+- designs and implements network security architectures and policies.
+- list monitored applications.
+- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
+- create a syslog destination for a log forwarding profile.
 - digital experience
-- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- get agent and endpoint scores from autonomous dem.
+- threat intel analyst
+- list all tenants available for monitoring.
+- monitors and remediates cloud security misconfigurations and compliance violations.
+- enterprise it
+- manages prisma access, sd-wan, and ztna configurations for the sase platform.
+- threat hunter
+- query aggregated application monitoring data with filters, time ranges, and grouping.
+- ensures cloud infrastructure meets regulatory and industry compliance standards.
+- query bandwidth data
+- researches threat actors, malware campaigns, and vulnerability trends.
+- query aggregated license monitoring data with filters, time ranges, and grouping.
+- sase admin
+- proactively searches for threats and iocs across telemetry data.
+- get performance metrics
+- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
+- vulnerability manager
+- query aggregated url monitoring data.
+- list monitored agents.
+- manages logging infrastructure, integrations, and platform automation.
+- threat research, malware analysis, ioc correlation, and vulnerability tracking.
+- get agent and endpoint scores.
+- incident responder
+- incident detection, investigation, response, and automation across endpoints, network, and cloud.
+- check the status of a bpa request.
+- identity and access management, tenant hierarchies, and subscription management.
+- get dem application scores
+- query aggregated threat monitoring data.
+- list monitored agents from autonomous dem.
+- cybersecurity
+- network security engineer
+- investigates dlp incidents and manages sensitive data protection policies.
+- list monitoring tenants
+- get bpa report check details.
 - list https destinations for a log forwarding profile.
 - get dem metrics
-- synthetic test results from autonomous dem.
-- monitored applications from autonomous dem.
-- query bandwidth data
-- https destination management for log forwarding profiles.
-- get bpa request status
-- ensures cloud infrastructure meets regulatory and industry compliance standards.
-- get agent and endpoint scores from autonomous dem.
-- get agent scores
-- monitored agents from autonomous dem.
-- platform engineer
-- create an email destination for a log forwarding profile.
-- list monitored agents
-- investigates security incidents, triages alerts, and coordinates response actions.
-- investigate incidents, triage alerts, manage endpoints, execute response playbooks, and assess attack surface.
-- vulnerability manager
-- get performance metrics from autonomous dem.
-- enterprise browser policy management and secure browsing.
-- query aggregated bandwidth monitoring data.
-- manage remote networks, ztna connectors, sd-wan sites, 5g security, and service provider interconnects.
-- best practice assessment
-- log forwarding profile status.
-- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
-- query application data
-- analyzes suspicious files and samples for malware characteristics.
-- get test results
-- network security engineer
-- manage enterprise browser policies, user sessions, and deployments.
-- submit a bpa request.
-- iam admin
-- application experience scores from autonomous dem.
-- manages enterprise browser policies and secure browsing configurations.
-- digital experience monitoring, log management, and best practice assessment.
-- get application experience scores.
-- performance metrics from autonomous dem.
-- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
-- list dem applications
-- xdr
-- get agent and endpoint scores.
-- bpa request operations.
-- create syslog destination
 - scan ai model inputs and outputs for threats and red-team ai applications for vulnerabilities.
-- observability
-- incident responder
-- get a bpa report.
-- log forwarding profile management.
-- get dem application scores
-- create an https destination for a log forwarding profile.
-- browser security admin
-- manage dlp incidents, email violations, saas assets, posture checks, and identity security.
-- manages multi-tenant hierarchies and service group configurations for mssps.
-- firewall admin
-- get application experience scores from autonomous dem.
-- notifications
-- network security
-- submit bpa request
-- sase admin
-- query license data
-- list monitoring tenants
-- manages logging infrastructure, integrations, and platform automation.
-- research iocs, submit malware samples, analyze dns threats, and track security advisories.
-- malware researcher
-- researches threat actors, malware campaigns, and vulnerability trends.
-- list monitored agents.
-- list monitoring tenants.
-- get performance metrics
-- get the status of a log forwarding profile.
-- get application scores
-- get a specific log forwarding profile by id.
-- list email destinations
-- list all log forwarding profiles.
-- get bpa report
-- data protection analyst
-- subscription manager
-- network operations
-- query aggregated threat monitoring data.
-- enterprise it
-- bpa report check details.
-- get synthetic test results from autonomous dem.
-- agent and endpoint scores from autonomous dem.
-- manages firewall policies, objects, and configurations across physical and virtual firewalls.
 - email destination management for log forwarding profiles.
-- proactively searches for threats and iocs across telemetry data.
-- incident detection, investigation, response, and automation across endpoints, network, and cloud.
-- query aggregated license monitoring data.
-- secure access service edge with remote networking, sd-wan, and zero trust access.
-- check the status of a bpa request.
-- query aggregated threat monitoring data with filters, time ranges, and grouping.
-- create a syslog destination for a log forwarding profile.
-- query aggregated url monitoring data with filters, time ranges, and grouping.
+- manages multi-tenant hierarchies and service group configurations for mssps.
+- get log forwarding status
+- ai security engineer
+- browser security admin
+- manages sd-wan sites, wan interfaces, and path policies for branch connectivity.
+- compliance officer
+- enterprise browser policy management and secure browsing.
+- application experience scores from autonomous dem.
+- firewall policy management, network objects, and cloud-native firewall configuration.
+- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
+- monitored agents from autonomous dem.
+- query aggregated application monitoring data.
+- get bpa report
+- get synthetic test results from autonomous dem.
+- manage service accounts, access policies, tenant hierarchies, subscriptions, and identity data.
+- soar
+- performance metrics from autonomous dem.
+- get test results
+- create an email destination for a log forwarding profile.
 - bpa report retrieval.
 - list syslog destinations for a log forwarding profile.
-- create https destination
-- ai security engineer
-- submit a bpa request for a device.
-- query aggregated license monitoring data with filters, time ranges, and grouping.
-- cloud security posture management, compliance monitoring, and workload protection.
-- red team operator
-- identity and access management, tenant hierarchies, and subscription management.
-- palo alto networks
-- monitoring
-- saas security admin
-- list log forwarding profiles
-- threat intel analyst
-- list syslog destinations
-- sd wan operator
-- get bpa report check details.
-- create log forwarding profile
-- cloud security engineer
 - get log forwarding profile
-- manages service accounts, roles, and access policies for platform api access.
-- threat research, malware analysis, ioc correlation, and vulnerability tracking.
-- data loss prevention, saas security monitoring, and identity security posture.
-- ai runtime security scanning and automated red teaming for ai applications.
-- list dem agents
-- create a new log forwarding profile.
-- monitors network health, performance, and digital experience metrics.
-- list https destinations
-- soar
-- sase
-- secures ai applications with runtime scanning and vulnerability assessment.
-- compliance officer
-- track digital experience, aggregate security data, manage log forwarding, run assessments, and handle notifications.
-- get bpa report checks
-- get dem test results
-- individual log forwarding profile operations.
+- manage firewall objects, security rules, nat rules, and cloud ngfw rule stacks.
+- network security
+- manages firewall policies, objects, and configurations across physical and virtual firewalls.
 - syslog destination management for log forwarding profiles.
-- list all tenants available for monitoring.
-- list monitored applications from autonomous dem.
-- bpa request status.
-- manage cloud alerts, enforce policies, monitor compliance, scan code, and assess data security.
-- get synthetic test results.
-- soc analyst
-- compliance team
-- sre
-- query aggregated application monitoring data with filters, time ranges, and grouping.
-- executes containment, eradication, and recovery actions during security incidents.
-- conducts automated adversarial testing against ai systems and llm applications.
-- manages multi-tenant security operations at scale for managed service providers.
-- firewall
-- list email destinations for a log forwarding profile.
-- firewall policy management, network objects, and cloud-native firewall configuration.
-- list monitored applications
-- manages prisma access, sd-wan, and ztna configurations for the sase platform.
-- mssp operator
+- firewall admin
+- create email destination
+- create a new log forwarding profile.
+- update log forwarding profile
+- synthetic test results from autonomous dem.
+- query license data
+- designs sase and sd-wan network architectures for secure remote access.
+- cloud security engineer
+- log forwarding profile status.
+- threat intelligence
+- logging
+- delete log forwarding profile
+- manages enterprise browser policies and secure browsing configurations.
 slug: monitoring-and-observability
 source_filename: monitoring-and-observability.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Palo Alto Networks Monitoring and Observability\"\n  description: \"Unified monitoring and observability capability for tracking digital experience, aggregating security data, managing log forwarding, and running best practice assessments across Autonomous DEM, SASE Aggregate Monitoring, Strata Logging Service, and AIOps BPA APIs.\"\n  tags:\n    - Palo Alto Networks\n    - Monitoring\n    - Observability\n    - Logging\n    - Digital Experience\n    - Best Practice Assessment\n    - Notifications\n  created: \"2026-04-16\"\n  modified: \"2026-04-16\"\n\nbinds:\n  - namespace: env\n    keys:\n      PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: autonomous-dem\n      location: ./shared/autonomous-dem.yaml\n    - import: sase-aggregate-monitoring\n      location: ./shared/sase-aggregate-monitoring.yaml\n    - import: strata-logging-service\n      location: ./shared/strata-logging-service.yaml\n\
-  \    - import: aiops-ngfw-bpa\n      location: ./shared/aiops-ngfw-bpa.yaml\n    - import: sase-multitenant-notifications\n      location: ./shared/sase-multitenant-notifications.yaml\n\n  exposes:\n    - type: rest\n      port: 8087\n      namespace: monitoring-and-observability-api\n      description: \"Unified REST API for monitoring and observability workflows across Autonomous DEM, SASE Aggregate Monitoring, Strata Logging Service, and AIOps BPA.\"\n      resources:\n\n        # -------------------------------------------------------\n        # Digital Experience Monitoring (Autonomous DEM)\n        # -------------------------------------------------------\n        - path: /v1/dem-application-scores\n          name: dem-application-scores\n          description: \"Application experience scores from Autonomous DEM.\"\n          operations:\n            - method: GET\n              name: get-dem-application-scores\n              description: \"Get application experience scores.\"\n\
-  \              inputParameters:\n                - name: start_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the query range.\"\n                - name: end_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the query range.\"\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Pagination offset.\"\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Maximum number of results to return.\"\n              call: \"autonomous-dem.get-application-scores\"\n              with:\n                start_time: \"rest.start_time\"\n                end_time: \"rest.end_time\"\n       \
-  \         offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/dem-agent-scores\n          name: dem-agent-scores\n          description: \"Agent and endpoint scores from Autonomous DEM.\"\n          operations:\n            - method: GET\n              name: get-dem-agent-scores\n              description: \"Get agent and endpoint scores.\"\n              inputParameters:\n                - name: start_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the query range.\"\n                - name: end_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the query range.\"\n                - name: offset\n                  in: query\n                  type: integer\n\
-  \                  required: false\n                  description: \"Pagination offset.\"\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Maximum number of results to return.\"\n              call: \"autonomous-dem.get-agent-scores\"\n              with:\n                start_time: \"rest.start_time\"\n                end_time: \"rest.end_time\"\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/dem-tests/{test_id}/results\n          name: dem-test-results\n          description: \"Synthetic test results from Autonomous DEM.\"\n          operations:\n            - method: GET\n              name: get-dem-test-results\n              description: \"Get synthetic test results.\"\n              inputParameters:\n               \
-  \ - name: test_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The ID of the test.\"\n                - name: start_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the query range.\"\n                - name: end_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the query range.\"\n              call: \"autonomous-dem.get-test-results\"\n              with:\n                test_id: \"rest.test_id\"\n                start_time: \"rest.start_time\"\n                end_time: \"rest.end_time\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/dem-applications\n          name: dem-applications\n          description: \"Monitored applications\
-  \ from Autonomous DEM.\"\n          operations:\n            - method: GET\n              name: list-dem-applications\n              description: \"List monitored applications.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Pagination offset.\"\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Maximum number of results to return.\"\n              call: \"autonomous-dem.list-monitored-applications\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/dem-agents\n          name: dem-agents\n          description: \"Monitored agents from Autonomous DEM.\"\n      \
-  \    operations:\n            - method: GET\n              name: list-dem-agents\n              description: \"List monitored agents.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Pagination offset.\"\n                - name: limit\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Maximum number of results to return.\"\n              call: \"autonomous-dem.list-monitored-agents\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        - path: /v1/dem-metrics\n          name: dem-metrics\n          description: \"Performance metrics from Autonomous DEM.\"\n          operations:\n            - method: GET\n\
-  \              name: get-dem-metrics\n              description: \"Get performance metrics.\"\n              inputParameters:\n                - name: start_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Start time for the query range.\"\n                - name: end_time\n                  in: query\n                  type: string\n                  required: false\n                  description: \"End time for the query range.\"\n                - name: metric_type\n                  in: query\n                  type: string\n                  required: false\n                  description: \"The type of metric to retrieve.\"\n                - name: granularity\n                  in: query\n                  type: string\n                  required: false\n                  description: \"The granularity of the metrics.\"\n              call: \"autonomous-dem.get-performance-metrics\"\n          \
-  \    with:\n                start_time: \"rest.start_time\"\n                end_time: \"rest.end_time\"\n                metric_type: \"rest.metric_type\"\n                granularity: \"rest.granularity\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # Aggregate Monitoring (SASE Aggregate Monitoring)\n        # -------------------------------------------------------\n        - path: /v1/monitoring/threats\n          name: monitoring-threats\n          description: \"Query aggregated threat monitoring data.\"\n          operations:\n            - method: POST\n              name: query-threat-data\n              description: \"Query aggregated threat monitoring data with filters, time ranges, and grouping.\"\n              inputParameters:\n                - name: tsg_id\n                  in: body\n                  type: string\n                  required:\
-  \ false\n                  description: \"Tenant service group ID.\"\n                - name: filter\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Filter criteria.\"\n                - name: time_range\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Time range for the query.\"\n                - name: count\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Number of results to return.\"\n                - name: histogram\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Histogram configuration.\"\n                - name: group_by\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Group by configuration.\"\
-  \n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"sase-aggregate-monitoring.query-threat-data\"\n              with:\n                tsg_id: \"rest.tsg_id\"\n                filter: \"rest.filter\"\n                time_range: \"rest.time_range\"\n                count: \"rest.count\"\n                histogram: \"rest.histogram\"\n                group_by: \"rest.group_by\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/monitoring/urls\n          name: monitoring-urls\n          description: \"Query aggregated URL monitoring data.\"\n          operations:\n            - method: POST\n              name: query-url-data\n              description: \"Query aggregated URL monitoring data with filters, time ranges, and grouping.\"\
-  \n              inputParameters:\n                - name: tsg_id\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Tenant service group ID.\"\n                - name: filter\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Filter criteria.\"\n                - name: time_range\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Time range for the query.\"\n                - name: count\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Number of results to return.\"\n                - name: histogram\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Histogram configuration.\"\n                - name:\
-  \ group_by\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Group by configuration.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"sase-aggregate-monitoring.query-url-data\"\n              with:\n                tsg_id: \"rest.tsg_id\"\n                filter: \"rest.filter\"\n                time_range: \"rest.time_range\"\n                count: \"rest.count\"\n                histogram: \"rest.histogram\"\n                group_by: \"rest.group_by\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/monitoring/applications\n          name: monitoring-applications\n          description: \"Query aggregated application monitoring data.\"\n   \
-  \       operations:\n            - method: POST\n              name: query-application-data\n              description: \"Query aggregated application monitoring data with filters, time ranges, and grouping.\"\n              inputParameters:\n                - name: tsg_id\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Tenant service group ID.\"\n                - name: filter\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Filter criteria.\"\n                - name: time_range\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Time range for the query.\"\n                - name: count\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Number of results to return.\"\n   \
-  \             - name: histogram\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Histogram configuration.\"\n                - name: group_by\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Group by configuration.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"sase-aggregate-monitoring.query-application-data\"\n              with:\n                tsg_id: \"rest.tsg_id\"\n                filter: \"rest.filter\"\n                time_range: \"rest.time_range\"\n                count: \"rest.count\"\n                histogram: \"rest.histogram\"\n                group_by: \"rest.group_by\"\n                sort: \"rest.sort\"\n              outputParameters:\n             \
-  \   - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/monitoring/bandwidth\n          name: monitoring-bandwidth\n          description: \"Query aggregated bandwidth monitoring data.\"\n          operations:\n            - method: POST\n              name: query-bandwidth-data\n              description: \"Query aggregated bandwidth monitoring data with filters, time ranges, and grouping.\"\n              inputParameters:\n                - name: tsg_id\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Tenant service group ID.\"\n                - name: filter\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Filter criteria.\"\n                - name: time_range\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Time range for the\
-  \ query.\"\n                - name: count\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Number of results to return.\"\n                - name: histogram\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Histogram configuration.\"\n                - name: group_by\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Group by configuration.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"sase-aggregate-monitoring.query-bandwidth-data\"\n              with:\n                tsg_id: \"rest.tsg_id\"\n                filter: \"rest.filter\"\n                time_range: \"rest.time_range\"\n          \
-  \      count: \"rest.count\"\n                histogram: \"rest.histogram\"\n                group_by: \"rest.group_by\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/monitoring/licenses\n          name: monitoring-licenses\n          description: \"Query aggregated license monitoring data.\"\n          operations:\n            - method: POST\n              name: query-license-data\n              description: \"Query aggregated license monitoring data with filters, time ranges, and grouping.\"\n              inputParameters:\n                - name: tsg_id\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Tenant service group ID.\"\n                - name: filter\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Filter\
-  \ criteria.\"\n                - name: time_range\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Time range for the query.\"\n                - name: count\n                  in: body\n                  type: integer\n                  required: false\n                  description: \"Number of results to return.\"\n                - name: histogram\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Histogram configuration.\"\n                - name: group_by\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Group by configuration.\"\n                - name: sort\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Sort configuration.\"\n              call: \"sase-aggregate-monitoring.query-license-data\"\
-  \n              with:\n                tsg_id: \"rest.tsg_id\"\n                filter: \"rest.filter\"\n                time_range: \"rest.time_range\"\n                count: \"rest.count\"\n                histogram: \"rest.histogram\"\n                group_by: \"rest.group_by\"\n                sort: \"rest.sort\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/monitoring/tenants\n          name: monitoring-tenants\n          description: \"List monitoring tenants.\"\n          operations:\n            - method: GET\n              name: list-monitoring-tenants\n              description: \"List all tenants available for monitoring.\"\n              inputParameters:\n                - name: tsg_id\n                  in: query\n                  type: string\n                  required: false\n                  description: \"Tenant service group ID.\"\n              call: \"sase-aggregate-monitoring.list-monitoring-tenants\"\
-  \n              with:\n                tsg_id: \"rest.tsg_id\"\n              outputParameters:\n                - type: array\n                  mapping: \"$.\"\n\n        # -------------------------------------------------------\n        # Log Forwarding (Strata Logging Service)\n        # -------------------------------------------------------\n        - path: /v1/log-forwarding-profiles\n          name: log-forwarding-profiles\n          description: \"Log forwarding profile management.\"\n          operations:\n            - method: GET\n              name: list-log-forwarding-profiles\n              description: \"List all log forwarding profiles.\"\n              inputParameters:\n                - name: offset\n                  in: query\n                  type: integer\n                  required: false\n                  description: \"Pagination offset.\"\n                - name: limit\n                  in: query\n                  type: integer\n                  required:\
-  \ false\n                  description: \"Maximum number of results to return.\"\n              call: \"strata-logging-service.list-log-forwarding-profiles\"\n              with:\n                offset: \"rest.offset\"\n                limit: \"rest.limit\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-log-forwarding-profile\n              description: \"Create a new log forwarding profile.\"\n              inputParameters:\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Name of the log forwarding profile.\"\n                - name: log_types\n                  in: body\n                  type: object\n                  required: true\n                  description: \"Log types to forward.\"\n                - name: description\n                  in: body\n           \
-  \       type: string\n                  required: false\n                  description: \"Description of the profile.\"\n                - name: enabled\n                  in: body\n                  type: boolean\n                  required: false\n                  description: \"Whether the profile is enabled.\"\n              call: \"strata-logging-service.create-log-forwarding-profile\"\n              with:\n                name: \"rest.name\"\n                log_types: \"rest.log_types\"\n                description: \"rest.description\"\n                enabled: \"rest.enabled\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/log-forwarding-profiles/{profile_id}\n          name: log-forwarding-profile\n          description: \"Individual log forwarding profile operations.\"\n          operations:\n            - method: GET\n              name: get-log-forwarding-profile\n              description: \"Get\
-  \ a specific log forwarding profile by ID.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n              call: \"strata-logging-service.get-log-forwarding-profile\"\n              with:\n                profile_id: \"rest.profile_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-log-forwarding-profile\n              description: \"Update a specific log forwarding profile by ID.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n              call: \"strata-logging-service.update-log-forwarding-profile\"\n              with:\n\
-  \                profile_id: \"rest.profile_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-log-forwarding-profile\n              description: \"Delete a specific log forwarding profile by ID.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n              call: \"strata-logging-service.delete-log-forwarding-profile\"\n              with:\n                profile_id: \"rest.profile_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/log-forwarding-profiles/{profile_id}/destinations/syslog\n          name: syslog-destinations\n          description: \"Syslog destination management for log forwarding profiles.\"\n       \
-  \   operations:\n            - method: GET\n              name: list-syslog-destinations\n              description: \"List syslog destinations for a log forwarding profile.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n              call: \"strata-logging-service.list-syslog-destinations\"\n              with:\n                profile_id: \"rest.profile_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-syslog-destination\n              description: \"Create a syslog destination for a log forwarding profile.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description:\
-  \ \"The log forwarding profile ID.\"\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Name of the syslog destination.\"\n                - name: server\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Syslog server address.\"\n                - name: port\n                  in: body\n                  type: integer\n                  required: true\n                  description: \"Syslog server port.\"\n                - name: protocol\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Transport protocol.\"\n                - name: format\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Syslog message format.\"\n                - name: facility\n\
-  \                  in: body\n                  type: string\n                  required: true\n                  description: \"Syslog facility.\"\n                - name: enabled\n                  in: body\n                  type: boolean\n                  required: false\n                  description: \"Whether the destination is enabled.\"\n              call: \"strata-logging-service.create-syslog-destination\"\n              with:\n                profile_id: \"rest.profile_id\"\n                name: \"rest.name\"\n                server: \"rest.server\"\n                port: \"rest.port\"\n                protocol: \"rest.protocol\"\n                format: \"rest.format\"\n                facility: \"rest.facility\"\n                enabled: \"rest.enabled\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/log-forwarding-profiles/{profile_id}/destinations/https\n          name: https-destinations\n  \
-  \        description: \"HTTPS destination management for log forwarding profiles.\"\n          operations:\n            - method: GET\n              name: list-https-destinations\n              description: \"List HTTPS destinations for a log forwarding profile.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n              call: \"strata-logging-service.list-https-destinations\"\n              with:\n                profile_id: \"rest.profile_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-https-destination\n              description: \"Create an HTTPS destination for a log forwarding profile.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n  \
-  \                type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Name of the HTTPS destination.\"\n                - name: uri\n                  in: body\n                  type: string\n                  required: true\n                  description: \"HTTPS destination URI.\"\n                - name: http_method\n                  in: body\n                  type: string\n                  required: true\n                  description: \"HTTP method to use.\"\n                - name: headers\n                  in: body\n                  type: object\n                  required: false\n                  description: \"Custom HTTP headers.\"\n                - name: tls_verify\n                  in: body\n                  type: boolean\n                  required:\
-  \ false\n                  description: \"Whether to verify TLS certificates.\"\n                - name: enabled\n                  in: body\n                  type: boolean\n                  required: false\n                  description: \"Whether the destination is enabled.\"\n              call: \"strata-logging-service.create-https-destination\"\n              with:\n                profile_id: \"rest.profile_id\"\n                name: \"rest.name\"\n                uri: \"rest.uri\"\n                http_method: \"rest.http_method\"\n                headers: \"rest.headers\"\n                tls_verify: \"rest.tls_verify\"\n                enabled: \"rest.enabled\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/log-forwarding-profiles/{profile_id}/destinations/email\n          name: email-destinations\n          description: \"Email destination management for log forwarding profiles.\"\n          operations:\n\
-  \            - method: GET\n              name: list-email-destinations\n              description: \"List email destinations for a log forwarding profile.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding profile ID.\"\n              call: \"strata-logging-service.list-email-destinations\"\n              with:\n                profile_id: \"rest.profile_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-email-destination\n              description: \"Create an email destination for a log forwarding profile.\"\n              inputParameters:\n                - name: profile_id\n                  in: path\n                  type: string\n                  required: true\n                  description: \"The log forwarding\
-  \ profile ID.\"\n                - name: name\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Name of the email destination.\"\n                - name: gateway\n                  in: body\n                  type: string\n                  required: true\n                  description: \"Email gateway server.\"\n                - name: from\n                  in: body\n                  type: string\n                  required: true\n                  description: \"From email address.\"\n                - name: to\n                  in: body\n                  type: string\n                  required: true\n                  description: \"To email address.\"\n                - name: and_also_to\n                  in: body\n                  type: string\n                  required: false\n                  description: \"Additional recipient email address.\"\n                - name: enabled\n             \
-  \     in: body\n                  type: boolean\n                  required: false\n                  descript\n\n# --- truncated at 32 KB (66 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/monitoring-and-observability.yaml\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Palo Alto Networks Monitoring and Observability\n  description: Unified monitoring and observability capability for tracking digital experience, aggregating security data,\n    managing log forwarding, and running best practice assessments across Autonomous DEM, SASE Aggregate Monitoring, Strata\n    Logging Service, and AIOps BPA APIs.\n  tags:\n  - Palo Alto Networks\n  - Monitoring\n  - Observability\n  - Logging\n  - Digital Experience\n  - Best Practice Assessment\n  - Notifications\n  created: '2026-04-16'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    PALO_ALTO_OAUTH_TOKEN: PALO_ALTO_OAUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: autonomous-dem\n    baseUri: https://api.sase.paloaltonetworks.com\n    description: Palo Alto Networks Autonomous DEM API for monitoring digital experience across applications and agents.\n    authentication:\n      type: bearer\n      token: '{{PALO_ALTO_OAUTH_TOKEN}}'\n\
+  \    resources:\n    - name: application-scores\n      path: /mt/monitor/adem/v1/applications/scores\n      description: Application experience scores.\n      operations:\n      - name: get-application-scores\n        method: GET\n        description: Get application experience scores.\n        inputParameters:\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n          required: false\n          description: End time for the query range.\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        outputRawFormat: json\n        outputParameters:\n        - name: scores\n\
+  \          type: array\n          value: $.scores\n    - name: agent-scores\n      path: /mt/monitor/adem/v1/agents/scores\n      description: Agent and endpoint scores.\n      operations:\n      - name: get-agent-scores\n        method: GET\n        description: Get agent and endpoint scores.\n        inputParameters:\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n          required: false\n          description: End time for the query range.\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ scores\n          type: array\n          value: $.scores\n    - name: test-results\n      path: /mt/monitor/adem/v1/tests\n      description: Synthetic test results.\n      operations:\n      - name: get-test-results\n        method: GET\n        description: Get synthetic test results.\n        inputParameters:\n        - name: test_id\n          in: path\n          type: string\n          required: true\n          description: The ID of the test.\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n          required: false\n          description: End time for the query range.\n        outputRawFormat: json\n        outputParameters:\n        - name: results\n          type: array\n          value: $.results\n    - name: applications\n      path: /mt/monitor/adem/v1/applications\n      description: Monitored applications.\n\
+  \      operations:\n      - name: list-monitored-applications\n        method: GET\n        description: List monitored applications.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        outputRawFormat: json\n        outputParameters:\n        - name: applications\n          type: array\n          value: $.applications\n    - name: agents\n      path: /mt/monitor/adem/v1/agents\n      description: Monitored agents.\n      operations:\n      - name: list-monitored-agents\n        method: GET\n        description: List monitored agents.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name:\
+  \ limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        outputRawFormat: json\n        outputParameters:\n        - name: agents\n          type: array\n          value: $.agents\n    - name: metrics\n      path: /mt/monitor/adem/v1/metrics\n      description: Performance metrics.\n      operations:\n      - name: get-performance-metrics\n        method: GET\n        description: Get performance metrics.\n        inputParameters:\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n          required: false\n          description: End time for the query range.\n        - name: metric_type\n          in: query\n          type: string\n          required: false\n          description: The type of metric to retrieve.\n    \
+  \    - name: granularity\n          in: query\n          type: string\n          required: false\n          description: The granularity of the metrics.\n        outputRawFormat: json\n        outputParameters:\n        - name: metrics\n          type: array\n          value: $.metrics\n  - type: http\n    namespace: sase-aggregate-monitoring\n    baseUri: https://api.sase.paloaltonetworks.com/mt/monitor/v1\n    authentication:\n      type: bearer\n      token: '{{env.PALO_ALTO_OAUTH_TOKEN}}'\n    resources:\n    - name: aggregate-queries\n      path: /agg/query\n      operations:\n      - name: query-threat-data\n        method: POST\n        description: Query aggregated threat monitoring data with filters, time ranges, and grouping.\n        path: /threat\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            tsg_id: '{{tools.tsg_id}}'\n        \
+  \    filter: '{{tools.filter}}'\n            time_range: '{{tools.time_range}}'\n            count: '{{tools.count}}'\n            histogram: '{{tools.histogram}}'\n            group_by: '{{tools.group_by}}'\n            sort: '{{tools.sort}}'\n      - name: query-url-data\n        method: POST\n        description: Query aggregated URL monitoring data with filters, time ranges, and grouping.\n        path: /url\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            tsg_id: '{{tools.tsg_id}}'\n            filter: '{{tools.filter}}'\n            time_range: '{{tools.time_range}}'\n            count: '{{tools.count}}'\n            histogram: '{{tools.histogram}}'\n            group_by: '{{tools.group_by}}'\n            sort: '{{tools.sort}}'\n      - name: query-application-data\n        method: POST\n        description: Query aggregated application\
+  \ monitoring data with filters, time ranges, and grouping.\n        path: /application\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            tsg_id: '{{tools.tsg_id}}'\n            filter: '{{tools.filter}}'\n            time_range: '{{tools.time_range}}'\n            count: '{{tools.count}}'\n            histogram: '{{tools.histogram}}'\n            group_by: '{{tools.group_by}}'\n            sort: '{{tools.sort}}'\n      - name: query-bandwidth-data\n        method: POST\n        description: Query aggregated bandwidth monitoring data with filters, time ranges, and grouping.\n        path: /bandwidth\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            tsg_id: '{{tools.tsg_id}}'\n            filter: '{{tools.filter}}'\n\
+  \            time_range: '{{tools.time_range}}'\n            count: '{{tools.count}}'\n            histogram: '{{tools.histogram}}'\n            group_by: '{{tools.group_by}}'\n            sort: '{{tools.sort}}'\n      - name: query-license-data\n        method: POST\n        description: Query aggregated license monitoring data with filters, time ranges, and grouping.\n        path: /license\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            tsg_id: '{{tools.tsg_id}}'\n            filter: '{{tools.filter}}'\n            time_range: '{{tools.time_range}}'\n            count: '{{tools.count}}'\n            histogram: '{{tools.histogram}}'\n            group_by: '{{tools.group_by}}'\n            sort: '{{tools.sort}}'\n    - name: tenants\n      path: /tenants\n      operations:\n      - name: list-monitoring-tenants\n        method: GET\n       \
+  \ description: List all tenants available for monitoring.\n        inputParameters:\n        - name: tsg_id\n          in: query\n          type: string\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: strata-logging-service\n    baseUri: https://api.sase.paloaltonetworks.com/logging-service/v1\n    description: Strata Logging Service API for managing log forwarding profiles and their syslog, HTTPS, and email destinations.\n    authentication:\n      type: bearer\n      token: '{{env.PALO_ALTO_OAUTH_TOKEN}}'\n    resources:\n    - name: log-forwarding-profiles\n      path: /log-forwarding-profiles\n      operations:\n      - name: list-log-forwarding-profiles\n        method: GET\n        description: List all log forwarding profiles.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n\
+  \        - name: limit\n          in: query\n          type: integer\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-log-forwarding-profile\n        method: POST\n        description: Create a new log forwarding profile.\n        inputParameters:\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: log_types\n          in: body\n          type: object\n          required: true\n        - name: description\n          in: body\n          type: string\n          required: false\n        - name: enabled\n          in: body\n          type: boolean\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            log_types:\
+  \ '{{tools.log_types}}'\n            description: '{{tools.description}}'\n            enabled: '{{tools.enabled}}'\n    - name: log-forwarding-profile\n      path: /log-forwarding-profiles/{profile_id}\n      operations:\n      - name: get-log-forwarding-profile\n        method: GET\n        description: Get a specific log forwarding profile by ID.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-log-forwarding-profile\n        method: PUT\n        description: Update a specific log forwarding profile by ID.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n\
+  \          type: json\n          data: {}\n      - name: delete-log-forwarding-profile\n        method: DELETE\n        description: Delete a specific log forwarding profile by ID.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: syslog-destinations\n      path: /log-forwarding-profiles/{profile_id}/destinations/syslog\n      operations:\n      - name: list-syslog-destinations\n        method: GET\n        description: List syslog destinations for a log forwarding profile.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-syslog-destination\n        method:\
+  \ POST\n        description: Create a syslog destination for a log forwarding profile.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: server\n          in: body\n          type: string\n          required: true\n        - name: port\n          in: body\n          type: integer\n          required: true\n        - name: protocol\n          in: body\n          type: string\n          required: true\n        - name: format\n          in: body\n          type: string\n          required: true\n        - name: facility\n          in: body\n          type: string\n          required: true\n        - name: enabled\n          in: body\n          type: boolean\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n\
+  \        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            server: '{{tools.server}}'\n            port: '{{tools.port}}'\n            protocol: '{{tools.protocol}}'\n            format: '{{tools.format}}'\n            facility: '{{tools.facility}}'\n            enabled: '{{tools.enabled}}'\n    - name: https-destinations\n      path: /log-forwarding-profiles/{profile_id}/destinations/https\n      operations:\n      - name: list-https-destinations\n        method: GET\n        description: List HTTPS destinations for a log forwarding profile.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-https-destination\n        method: POST\n        description: Create an HTTPS destination for a log forwarding profile.\n        inputParameters:\n\
+  \        - name: profile_id\n          in: path\n          type: string\n          required: true\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: uri\n          in: body\n          type: string\n          required: true\n        - name: http_method\n          in: body\n          type: string\n          required: true\n        - name: headers\n          in: body\n          type: object\n          required: false\n        - name: tls_verify\n          in: body\n          type: boolean\n          required: false\n        - name: enabled\n          in: body\n          type: boolean\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            uri: '{{tools.uri}}'\n            http_method: '{{tools.http_method}}'\n            headers: '{{tools.headers}}'\n\
+  \            tls_verify: '{{tools.tls_verify}}'\n            enabled: '{{tools.enabled}}'\n    - name: email-destinations\n      path: /log-forwarding-profiles/{profile_id}/destinations/email\n      operations:\n      - name: list-email-destinations\n        method: GET\n        description: List email destinations for a log forwarding profile.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-email-destination\n        method: POST\n        description: Create an email destination for a log forwarding profile.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        - name: name\n          in: body\n          type: string\n          required: true\n        - name: gateway\n          in: body\n\
+  \          type: string\n          required: true\n        - name: from\n          in: body\n          type: string\n          required: true\n        - name: to\n          in: body\n          type: string\n          required: true\n        - name: and_also_to\n          in: body\n          type: string\n          required: false\n        - name: enabled\n          in: body\n          type: boolean\n          required: false\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            gateway: '{{tools.gateway}}'\n            from: '{{tools.from}}'\n            to: '{{tools.to}}'\n            and_also_to: '{{tools.and_also_to}}'\n            enabled: '{{tools.enabled}}'\n    - name: log-forwarding-status\n      path: /log-forwarding-profiles/{profile_id}/status\n      operations:\n      - name: get-log-forwarding-status\n\
+  \        method: GET\n        description: Get the status of a log forwarding profile.\n        inputParameters:\n        - name: profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: aiops-ngfw-bpa\n    baseUri: https://api.sase.paloaltonetworks.com/aiops/bpa\n    description: Palo Alto Networks AIOps for NGFW BPA API for submitting and retrieving best practice assessment requests\n      and reports.\n    authentication:\n      type: bearer\n      token: '{{PALO_ALTO_OAUTH_TOKEN}}'\n    resources:\n    - name: requests\n      path: /requests\n      description: BPA request operations.\n      operations:\n      - name: submit-bpa-request\n        method: POST\n        description: Submit a BPA request.\n        inputParameters:\n        - name: device_serial\n          in: body\n          type: string\n\
+  \          required: true\n          description: The serial number of the device to assess.\n        - name: config_type\n          in: body\n          type: string\n          required: true\n          description: The configuration type for the BPA request.\n        outputRawFormat: json\n        outputParameters:\n        - name: request_id\n          type: string\n          value: $.request_id\n        - name: status\n          type: string\n          value: $.status\n        body:\n          type: json\n          data:\n            device_serial: '{{tools.device_serial}}'\n            config_type: '{{tools.config_type}}'\n      - name: get-bpa-request-status\n        method: GET\n        description: Check the status of a BPA request.\n        inputParameters:\n        - name: request_id\n          in: path\n          type: string\n          required: true\n          description: The ID of the BPA request.\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ request_id\n          type: string\n          value: $.request_id\n        - name: status\n          type: string\n          value: $.status\n    - name: reports\n      path: /reports\n      description: BPA report operations.\n      operations:\n      - name: get-bpa-report\n        method: GET\n        description: Get a BPA report.\n        inputParameters:\n        - name: report_id\n          in: path\n          type: string\n          required: true\n          description: The ID of the BPA report.\n        outputRawFormat: json\n        outputParameters:\n        - name: report\n          type: object\n          value: $.\n      - name: get-bpa-report-checks\n        method: GET\n        description: Get BPA report check details.\n        inputParameters:\n        - name: report_id\n          in: path\n          type: string\n          required: true\n          description: The ID of the BPA report.\n        outputRawFormat: json\n        outputParameters:\n        - name: checks\n\
+  \          type: array\n          value: $.checks\n  - type: http\n    namespace: sase-multitenant-notifications\n    baseUri: https://api.sase.paloaltonetworks.com\n    authentication:\n      type: bearer\n      token: '{{env.PALO_ALTO_SASE_ACCESS_TOKEN}}'\n    resources:\n    - name: notification-profiles\n      path: /api/cloud/2.0/agg/notifications/profiles\n      operations:\n      - name: list-notification-profiles\n        method: GET\n        description: List notification profiles associated with the current tenant.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-notification-profile\n        method: POST\n        description: Create a new notification profile with inputs and output channels.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n     \
+  \       profileName: '{{tools.profileName}}'\n            opState: '{{tools.opState}}'\n            description: '{{tools.description}}'\n            tenantList: '{{tools.tenantList}}'\n            notifTypeDetails: '{{tools.notifTypeDetails}}'\n            notifChannels: '{{tools.notifChannels}}'\n      - name: get-notification-profile\n        method: GET\n        description: Get a specific notification profile by ID.\n        path: /{notification_profile_id}\n        inputParameters:\n        - name: notification_profile_id\n          in: path\n          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-notification-profile\n        method: DELETE\n        description: Delete a notification profile by ID.\n        path: /{notification_profile_id}\n        inputParameters:\n        - name: notification_profile_id\n          in: path\n          type:\
+  \ string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: notification-profile-opstate\n      path: /api/cloud/2.0/agg/notifications/profiles/opstate\n      operations:\n      - name: update-profile-opstate\n        method: PUT\n        description: Enable or disable a notification profile.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            profileId: '{{tools.profileId}}'\n            opState: '{{tools.opState}}'\n    - name: notification-profile-types\n      path: /api/cloud/2.0/agg/notifications/profiles/types\n      operations:\n      - name: get-notification-types\n        method: GET\n        description: Retrieve valid notification types, categories, and sub-categories.\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n    - name: notification-webhook-test\n      path: /api/cloud/2.0/agg/notifications/profiles/webhook/test\n      operations:\n      - name: test-webhook-connectivity\n        method: POST\n        description: Test webhook connectivity from the notification service.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            urls: '{{tools.urls}}'\n            auth_type: '{{tools.auth_type}}'\n            token: '{{tools.token}}'\n    - name: notification-profile-retry\n      path: /api/cloud/2.0/agg/notifications/profiles/retryOp\n      operations:\n      - name: retry-profile-operation\n        method: POST\n        description: Retry incident profile push to selected child tenants.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n\
+  \          value: $.\n        body:\n          type: json\n          data:\n            profileId: '{{tools.profileId}}'\n            tenantList: '{{tools.tenantList}}'\n    - name: notifications\n      path: /api/cloud/2.0/agg/notifications/list\n      operations:\n      - name: list-notifications\n        method: POST\n        description: List notifications for all child tenants with filtering and sorting.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            filters: '{{tools.filters}}'\n            sortByList: '{{tools.sortByList}}'\n            page: '{{tools.page}}'\n    - name: notification-count\n      path: /api/cloud/2.0/agg/notifications/list/count\n      operations:\n      - name: get-notification-count\n        method: POST\n        description: Get notification count filtered by state or type.\n        outputRawFormat: json\n       \
+  \ outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            filters: '{{tools.filters}}'\n            sortByList: '{{tools.sortByList}}'\n    - name: notification-state\n      path: /api/cloud/2.0/agg/notifications/list/state\n      operations:\n      - name: set-notification-read-state\n        method: POST\n        description: Set read state to READ or UNREAD for specified notifications.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            notifIds: '{{tools.notifIds}}'\n            readState: '{{tools.readState}}'\n      - name: get-notification-read-state\n        method: GET\n        description: Get read state of a specific notification.\n        path: /{notification_id}\n        inputParameters:\n        - name: notification_id\n          in: path\n\
+  \          type: string\n          required: true\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8087\n    namespace: monitoring-and-observability-api\n    description: Unified REST API for monitoring and observability workflows across Autonomous DEM, SASE Aggregate Monitoring,\n      Strata Logging Service, and AIOps BPA.\n    resources:\n    - path: /v1/dem-application-scores\n      name: dem-application-scores\n      description: Application experience scores from Autonomous DEM.\n      operations:\n      - method: GET\n        name: get-dem-application-scores\n        description: Get application experience scores.\n        inputParameters:\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n\
+  \          required: false\n          description: End time for the query range.\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        call: autonomous-dem.get-application-scores\n        with:\n          start_time: rest.start_time\n          end_time: rest.end_time\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: array\n          mapping: $.\n    - path: /v1/dem-agent-scores\n      name: dem-agent-scores\n      description: Agent and endpoint scores from Autonomous DEM.\n      operations:\n      - method: GET\n        name: get-dem-agent-scores\n        description: Get agent and endpoint scores.\n        inputParameters:\n        - name: start_time\n          in: query\n          type:\
+  \ string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n          required: false\n          description: End time for the query range.\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        call: autonomous-dem.get-agent-scores\n        with:\n          start_time: rest.start_time\n          end_time: rest.end_time\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: array\n          mapping: $.\n    - path: /v1/dem-tests/{test_id}/results\n      name: dem-test-results\n      description: Synthetic test results from Autonomous DEM.\n      operations:\n      - method: GET\n        name:\
+  \ get-dem-test-results\n        description: Get synthetic test results.\n        inputParameters:\n        - name: test_id\n          in: path\n          type: string\n          required: true\n          description: The ID of the test.\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n          type: string\n          required: false\n          description: End time for the query range.\n        call: autonomous-dem.get-test-results\n        with:\n          test_id: rest.test_id\n          start_time: rest.start_time\n          end_time: rest.end_time\n        outputParameters:\n        - type: array\n          mapping: $.\n    - path: /v1/dem-applications\n      name: dem-applications\n      description: Monitored applications from Autonomous DEM.\n      operations:\n      - method: GET\n        name: list-dem-applications\n     \
+  \   description: List monitored applications.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        call: autonomous-dem.list-monitored-applications\n        with:\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: array\n          mapping: $.\n    - path: /v1/dem-agents\n      name: dem-agents\n      description: Monitored agents from Autonomous DEM.\n      operations:\n      - method: GET\n        name: list-dem-agents\n        description: List monitored agents.\n        inputParameters:\n        - name: offset\n          in: query\n          type: integer\n          required: false\n          description: Pagination offset.\n        - name: limit\n        \
+  \  in: query\n          type: integer\n          required: false\n          description: Maximum number of results to return.\n        call: autonomous-dem.list-monitored-agents\n        with:\n          offset: rest.offset\n          limit: rest.limit\n        outputParameters:\n        - type: array\n          mapping: $.\n    - path: /v1/dem-metrics\n      name: dem-metrics\n      description: Performance metrics from Autonomous DEM.\n      operations:\n      - method: GET\n        name: get-dem-metrics\n        description: Get performance metrics.\n        inputParameters:\n        - name: start_time\n          in: query\n          type: string\n          required: false\n          description: Start time for the query range.\n        - name: end_time\n          in: query\n   \n\n# --- truncated at 32 KB (78 KB total) ---\n# Full source: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/monitoring-and-observability.yaml\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/palo-alto-networks/refs/heads/main/capabilities/monitoring-and-observability.yaml
 tags:
 - Palo Alto Networks

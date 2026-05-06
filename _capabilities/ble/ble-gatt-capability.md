@@ -9,13 +9,13 @@ personas: []
 provider_name: BLE
 provider_slug: ble
 search_terms:
-- ble
-- wireless
-- protocols
-- iot
-- standards
 - embedded
+- wireless
+- iot
+- ble
 - bluetooth
+- standards
+- protocols
 slug: ble-gatt-capability
 source_filename: ble-gatt-capability.yaml
 source_heading: Capability Spec

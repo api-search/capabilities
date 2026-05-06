@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- dealer
-- get customer context
-- mcp
-- capabilities
 - naftiko
-- api integration
-- automotive
-- governance
 - crm
+- mcp
+- api integration
+- get customer context
+- governance
+- spec-driven integration
 - ai
+- dealer
+- capabilities
+- automotive
 slug: dealer-customer-context-composition
 source_filename: dealer-customer-context-composition.yaml
 source_heading: Capability Spec

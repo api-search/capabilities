@@ -1,8 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- albato-automations
-- albato-embedded
+consumed_apis: []
 description: Workflow capability for managing no-code automation and embedded iPaaS functionality in Albato. Combines automation workflow management and embedded team management to support operations teams and SaaS developers.
 layout: capability
 name: Albato iPaaS Automation
@@ -23,57 +21,59 @@ personas: []
 provider_name: Albato
 provider_slug: albato
 search_terms:
-- Automation Builder
-- saas
-- ipaas
-- list albato connectors
-- workflow automation
 - webhooks
-- albato
-- list albato embedded teams
-- list automation templates available for albato embedded use.
-- embedded teams
-- workflow
+- list albato connectors
 - integrates albato embedded ipaas into saas products to offer white-label automation capabilities to customers. manages teams and connectors.
-- white-label
-- embedded integration
-- list all embedded teams (customer accounts) in albato embedded ipaas with active automation and transaction counts.
-- create and monitor automation workflows
-- manage embedded ipaas customer accounts
-- automation workflows
-- list connectors
-- list albato templates
-- creates no-code automation workflows in albato connecting apps without writing code, configuring triggers, actions, conditions, and delays.
-- list albato automations
-- Operations Manager
-- integrations
-- list all albato automation workflows with their status, trigger counts, and success/error rates.
-- SaaS Developer
-- embedded ipaas
-- browse 1,000+ available app connectors for albato embedded. search by name or filter to find specific integrations.
-- get execution history for an albato automation including success/error rates and step completion details.
-- list albato executions
-- list all automation workflows
-- list teams
-- manage no-code automations and embedded ipaas customer teams
-- list embedded teams
-- get albato automation
-- monitors automation health, reviews execution rates and errors, and ensures business processes run reliably across integrated apps.
-- get details and configuration for a specific albato automation.
-- list available connectors
-- app connectors
-- list automations
-- app integration
 - no-code automation
+- list connectors
+- list all albato automation workflows with their status, trigger counts, and success/error rates.
+- monitors automation health, reviews execution rates and errors, and ensures business processes run reliably across integrated apps.
+- manage embedded ipaas customer accounts
+- SaaS Developer
+- workflow
+- white-label
+- get details and configuration for a specific albato automation.
+- albato
+- list teams
+- browse 1,000+ available app connectors for albato embedded. search by name or filter to find specific integrations.
+- list albato templates
+- app integration
+- list albato automations
+- embedded teams
+- embedded integration
+- integrations
+- list automations
+- Operations Manager
+- list all embedded teams (customer accounts) in albato embedded ipaas with active automation and transaction counts.
+- list automation templates available for albato embedded use.
+- ipaas
+- saas
+- workflow automation
+- list all automation workflows
+- list embedded teams
+- automation workflows
+- Automation Builder
+- embedded ipaas
+- list albato embedded teams
+- creates no-code automation workflows in albato connecting apps without writing code, configuring triggers, actions, conditions, and delays.
+- get execution history for an albato automation including success/error rates and step completion details.
+- create and monitor automation workflows
+- get albato automation
+- app connectors
+- manage no-code automations and embedded ipaas customer teams
+- list albato executions
+- list available connectors
 slug: ipaas-automation
 source_filename: ipaas-automation.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Albato iPaaS Automation\n  description: >-\n    Workflow capability for managing no-code automation and embedded iPaaS\n    functionality in Albato. Combines automation workflow management and\n    embedded team management to support operations teams and SaaS developers.\n  tags:\n    - Albato\n    - iPaaS\n    - No-Code Automation\n    - Workflow\n    - Embedded Integration\n    - SaaS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALBATO_API_KEY: ALBATO_API_KEY\n\ncapability:\n  consumes:\n    - import: albato-automations\n      location: ./shared/automations-api.yaml\n    - import: albato-embedded\n      location: ./shared/embedded-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: albato-ipaas-api\n      description: Unified REST API for Albato iPaaS automation management.\n      resources:\n        - path: /v1/automations\n          name: automations\n\
-  \          description: Automation workflows\n          operations:\n            - method: GET\n              name: list-automations\n              description: List all automation workflows\n              call: \"albato-automations.list-automations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/teams\n          name: teams\n          description: Embedded teams\n          operations:\n            - method: GET\n              name: list-teams\n              description: List embedded teams\n              call: \"albato-embedded.list-teams\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/connectors\n          name: connectors\n          description: App connectors\n          operations:\n            - method: GET\n              name: list-connectors\n              description: List available connectors\n              call: \"albato-embedded.list-connectors\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: albato-ipaas-mcp\n      transport: http\n      description: MCP server for AI-assisted Albato automation and embedded iPaaS management.\n      tools:\n        - name: list-albato-automations\n          description: >-\n            List all Albato automation workflows with their status, trigger counts,\n            and success/error rates.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"albato-automations.list-automations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-albato-automation\n          description: Get details and configuration for a specific Albato automation.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"albato-automations.get-automation\"\n          inputParameters:\n\
-  \            - name: id\n              type: string\n              description: Automation ID\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-albato-executions\n          description: >-\n            Get execution history for an Albato automation including success/error\n            rates and step completion details.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"albato-automations.list-executions\"\n          inputParameters:\n            - name: id\n              type: string\n              description: Automation ID\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-albato-embedded-teams\n          description: >-\n            List all embedded teams (customer accounts) in Albato Embedded iPaaS\n            with active automation and transaction counts.\n          hints:\n            readOnly: true\n            openWorld:\
-  \ false\n          call: \"albato-embedded.list-teams\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-albato-connectors\n          description: >-\n            Browse 1,000+ available app connectors for Albato Embedded.\n            Search by name or filter to find specific integrations.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"albato-embedded.list-connectors\"\n          inputParameters:\n            - name: search\n              type: string\n              description: Search term to filter connectors\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-albato-templates\n          description: List automation templates available for Albato Embedded use.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"albato-embedded.list-templates\"\n          outputParameters:\n  \
-  \          - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Albato iPaaS Automation\n  description: Workflow capability for managing no-code automation and embedded iPaaS functionality in Albato. Combines automation\n    workflow management and embedded team management to support operations teams and SaaS developers.\n  tags:\n  - Albato\n  - iPaaS\n  - No-Code Automation\n  - Workflow\n  - Embedded Integration\n  - SaaS\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    ALBATO_API_KEY: ALBATO_API_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: albato-automations\n    baseUri: https://albato.com/api/v1\n    auth:\n      type: apiKey\n      header: Authorization\n      value: '{{env.ALBATO_API_KEY}}'\n    resources:\n    - name: automations\n      path: /automations\n      operations:\n      - name: list-automations\n        method: GET\n        description: List all automation workflows\n        outputParameters:\n        - name: automations\n\
+  \          type: object\n          value: $.\n      - name: get-automation\n        method: GET\n        description: Get an automation by ID\n        inputParameters:\n        - name: id\n          type: string\n          in: path\n        outputParameters:\n        - name: automation\n          type: object\n          value: $.\n      - name: create-automation\n        method: POST\n        description: Create a new automation\n        inputParameters:\n        - name: body\n          type: object\n          in: body\n        outputParameters:\n        - name: automation\n          type: object\n          value: $.\n      - name: enable-automation\n        method: POST\n        description: Enable an automation\n        inputParameters:\n        - name: id\n          type: string\n          in: path\n        outputParameters:\n        - name: automation\n          type: object\n          value: $.\n      - name: disable-automation\n        method: POST\n        description: Disable an\
+  \ automation\n        inputParameters:\n        - name: id\n          type: string\n          in: path\n        outputParameters:\n        - name: automation\n          type: object\n          value: $.\n      - name: list-executions\n        method: GET\n        description: List execution history\n        inputParameters:\n        - name: id\n          type: string\n          in: path\n        outputParameters:\n        - name: executions\n          type: object\n          value: $.\n  - type: http\n    namespace: albato-embedded\n    baseUri: https://albato.com/api/v1/embedded\n    auth:\n      type: apiKey\n      header: Authorization\n      value: '{{env.ALBATO_API_KEY}}'\n    resources:\n    - name: teams\n      path: /teams\n      description: Embedded team management\n      operations:\n      - name: list-teams\n        method: GET\n        description: List all embedded teams\n        outputParameters:\n        - name: teams\n          type: object\n          value: $.\n     \
+  \ - name: create-team\n        method: POST\n        description: Create a new embedded team\n        inputParameters:\n        - name: body\n          type: object\n          in: body\n        outputParameters:\n        - name: team\n          type: object\n          value: $.\n      - name: get-team\n        method: GET\n        description: Get an embedded team by ID\n        inputParameters:\n        - name: id\n          type: string\n          in: path\n        outputParameters:\n        - name: team\n          type: object\n          value: $.\n    - name: connectors\n      path: /connectors\n      description: Available app connectors\n      operations:\n      - name: list-connectors\n        method: GET\n        description: List available app connectors\n        inputParameters:\n        - name: search\n          type: string\n          in: query\n        outputParameters:\n        - name: connectors\n          type: object\n          value: $.\n    - name: templates\n      path:\
+  \ /templates\n      description: Automation templates\n      operations:\n      - name: list-templates\n        method: GET\n        description: List automation templates\n        outputParameters:\n        - name: templates\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: albato-ipaas-api\n    description: Unified REST API for Albato iPaaS automation management.\n    resources:\n    - path: /v1/automations\n      name: automations\n      description: Automation workflows\n      operations:\n      - method: GET\n        name: list-automations\n        description: List all automation workflows\n        call: albato-automations.list-automations\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/teams\n      name: teams\n      description: Embedded teams\n      operations:\n      - method: GET\n        name: list-teams\n        description: List embedded teams\n        call: albato-embedded.list-teams\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/connectors\n      name: connectors\n      description: App connectors\n      operations:\n      - method: GET\n        name: list-connectors\n        description: List available connectors\n        call: albato-embedded.list-connectors\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: albato-ipaas-mcp\n    transport: http\n    description: MCP server for AI-assisted Albato automation and embedded iPaaS management.\n    tools:\n    - name: list-albato-automations\n      description: List all Albato automation workflows with their status, trigger counts, and success/error rates.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: albato-automations.list-automations\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-albato-automation\n      description: Get details and configuration\
+  \ for a specific Albato automation.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: albato-automations.get-automation\n      inputParameters:\n      - name: id\n        type: string\n        description: Automation ID\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-albato-executions\n      description: Get execution history for an Albato automation including success/error rates and step completion details.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: albato-automations.list-executions\n      inputParameters:\n      - name: id\n        type: string\n        description: Automation ID\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-albato-embedded-teams\n      description: List all embedded teams (customer accounts) in Albato Embedded iPaaS with active automation and transaction\n        counts.\n      hints:\n        readOnly: true\n        openWorld:\
+  \ false\n      call: albato-embedded.list-teams\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-albato-connectors\n      description: Browse 1,000+ available app connectors for Albato Embedded. Search by name or filter to find specific integrations.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: albato-embedded.list-connectors\n      inputParameters:\n      - name: search\n        type: string\n        description: Search term to filter connectors\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-albato-templates\n      description: List automation templates available for Albato Embedded use.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: albato-embedded.list-templates\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/albato/refs/heads/main/capabilities/ipaas-automation.yaml
 tags:
 - Albato

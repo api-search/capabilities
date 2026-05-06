@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- list attendees
-- events
-- governance
-- mcp
-- capabilities
 - naftiko
-- api integration
 - eventbrite
+- api integration
+- governance
+- capabilities
+- spec-driven integration
 - ai
+- mcp
+- events
+- list attendees
 slug: event-cloud-attendee-context-mashup
 source_filename: event-cloud-attendee-context-mashup.yaml
 source_heading: Capability Spec

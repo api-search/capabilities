@@ -10,15 +10,15 @@ provider_name: Microsoft Azure API Management
 provider_slug: microsoft-azure-api-management
 search_terms:
 - llm operations
-- azure openai
-- api gateway
 - ai gateway
-- mcp
-- token management
-- api management
-- microsoft azure
-- enterprise
 - machine learning
+- token management
+- azure openai
+- enterprise
+- microsoft azure
+- mcp
+- api gateway
+- api management
 slug: ai-gateway-management
 source_filename: ai-gateway-management.yaml
 source_heading: Capability Spec

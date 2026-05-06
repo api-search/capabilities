@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- opencue
+consumed_apis: []
 description: Render farm management workflow using OpenCue for monitoring and managing render jobs, layers, frames, and hosts in a VFX production pipeline. Used by render wranglers and pipeline TDs to monitor and troubleshoot render farm operations.
 layout: capability
 name: Academy Software Foundation Render Farm Management
@@ -32,52 +31,53 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- animation
-- list all render host machines and their current utilization
-- list render jobs for a specific show with optional state filtering
-- list shows
-- monitoring and management of distributed render farm resources and jobs
-- list jobs
-- list and manage render hosts
-- list and manage render shows (productions)
-- monitor and manage render jobs, hosts, and shows using opencue
-- open source
-- list render jobs
-- list all active shows (productions) in the render farm
-- render wrangler
-- list all render host machines
-- technical director building and maintaining vfx production pipeline tools
-- linux foundation
-- list all active shows in the render farm
-- pipeline td
-- get details for a specific render job
-- list render jobs for a show
-- academy software foundation
-- list and manage render jobs
-- list hosts
-- render farm
-- list render hosts
 - vfx pipeline
-- visual effects
-- standards
-- get job
-- color management
-- film
-- get or kill a specific render job
-- get render job
 - rendering
+- get job
+- list render jobs for a specific show with optional state filtering
+- list all active shows (productions) in the render farm
+- pipeline td
+- list render hosts
+- list jobs
+- visual effects
 - vfx
+- render farm
 - production staff responsible for monitoring and managing render farm operations
+- technical director building and maintaining vfx production pipeline tools
+- academy software foundation
 - get detailed status and frame counts for a specific render job
+- linux foundation
+- get or kill a specific render job
+- film
+- animation
+- list and manage render hosts
 - opencue
+- list all render host machines and their current utilization
+- standards
+- open source
+- list and manage render shows (productions)
+- get details for a specific render job
+- list shows
+- render wrangler
+- list hosts
+- list render jobs for a show
+- list and manage render jobs
+- monitoring and management of distributed render farm resources and jobs
+- list render jobs
+- monitor and manage render jobs, hosts, and shows using opencue
+- list all render host machines
+- color management
+- list all active shows in the render farm
+- get render job
 slug: render-farm-management
 source_filename: render-farm-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Academy Software Foundation Render Farm Management\"\n  description: \"Render farm management workflow using OpenCue for monitoring and managing render jobs, layers, frames, and hosts in a VFX production pipeline. Used by render wranglers and pipeline TDs to monitor and troubleshoot render farm operations.\"\n  tags:\n    - Academy Software Foundation\n    - Render Farm\n    - Opencue\n    - Vfx Pipeline\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      OPENCUE_HOST: OPENCUE_HOST\n\ncapability:\n  consumes:\n    - import: opencue\n      location: ./shared/opencue.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: render-farm-api\n      description: \"Unified REST API for VFX render farm management.\"\n      resources:\n        - path: /v1/shows\n          name: shows\n          description: \"List and manage render shows (productions)\"\n          operations:\n\
-  \            - method: GET\n              name: list-shows\n              description: \"List all active shows in the render farm\"\n              call: \"opencue.listShows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs\n          name: jobs\n          description: \"List and manage render jobs\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List render jobs for a show\"\n              call: \"opencue.listJobs\"\n              with:\n                show_id: \"rest.show_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{job_id}\n          name: job\n          description: \"Get or kill a specific render job\"\n          operations:\n            - method: GET\n              name: get-job\n              description: \"Get details for a specific render job\"\n     \
-  \         call: \"opencue.getJob\"\n              with:\n                job_id: \"rest.job_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hosts\n          name: hosts\n          description: \"List and manage render hosts\"\n          operations:\n            - method: GET\n              name: list-hosts\n              description: \"List all render host machines\"\n              call: \"opencue.listHosts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: render-farm-mcp\n      transport: http\n      description: \"MCP server for AI-assisted render farm monitoring and management.\"\n      tools:\n        - name: list-shows\n          description: \"List all active shows (productions) in the render farm\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"opencue.listShows\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-render-jobs\n          description: \"List render jobs for a specific show with optional state filtering\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"opencue.listJobs\"\n          with:\n            show_id: \"tools.show_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-render-job\n          description: \"Get detailed status and frame counts for a specific render job\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"opencue.getJob\"\n          with:\n            job_id: \"tools.job_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-render-hosts\n          description: \"List all render host machines and their current utilization\"\n          hints:\n  \
-  \          readOnly: true\n            openWorld: false\n          call: \"opencue.listHosts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Academy Software Foundation Render Farm Management\n  description: Render farm management workflow using OpenCue for monitoring and managing render jobs, layers, frames, and\n    hosts in a VFX production pipeline. Used by render wranglers and pipeline TDs to monitor and troubleshoot render farm\n    operations.\n  tags:\n  - Academy Software Foundation\n  - Render Farm\n  - Opencue\n  - Vfx Pipeline\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    OPENCUE_HOST: OPENCUE_HOST\ncapability:\n  consumes:\n  - type: http\n    namespace: opencue\n    baseUri: http://{{env.OPENCUE_HOST}}:8080\n    description: OpenCue REST gateway API\n    resources:\n    - name: shows\n      path: /api/show\n      description: Render show (production) management\n      operations:\n      - name: listShows\n        method: GET\n        description: List all active shows\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n    - name: jobs\n      path: /api/show/{show_id}/job\n      description: Render job management per show\n      operations:\n      - name: listJobs\n        method: GET\n        description: List jobs for a show\n        inputParameters:\n        - name: show_id\n          in: path\n          type: string\n          required: true\n          description: Show identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: job\n      path: /api/job/{job_id}\n      description: Individual render job management\n      operations:\n      - name: getJob\n        method: GET\n        description: Get details of a render job\n        inputParameters:\n        - name: job_id\n          in: path\n          type: string\n          required: true\n          description: Job identifier\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n      - name: killJob\n        method: DELETE\n        description: Kill a running render job\n        inputParameters:\n        - name: job_id\n          in: path\n          type: string\n          required: true\n          description: Job identifier to kill\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: hosts\n      path: /api/host\n      description: Render host machine management\n      operations:\n      - name: listHosts\n        method: GET\n        description: List all render hosts in the farm\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: render-farm-api\n    description: Unified REST API for VFX render farm management.\n    resources:\n    - path: /v1/shows\n      name: shows\n\
+  \      description: List and manage render shows (productions)\n      operations:\n      - method: GET\n        name: list-shows\n        description: List all active shows in the render farm\n        call: opencue.listShows\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/jobs\n      name: jobs\n      description: List and manage render jobs\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List render jobs for a show\n        call: opencue.listJobs\n        with:\n          show_id: rest.show_id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/jobs/{job_id}\n      name: job\n      description: Get or kill a specific render job\n      operations:\n      - method: GET\n        name: get-job\n        description: Get details for a specific render job\n        call: opencue.getJob\n        with:\n          job_id: rest.job_id\n        outputParameters:\n        - type:\
+  \ object\n          mapping: $.\n    - path: /v1/hosts\n      name: hosts\n      description: List and manage render hosts\n      operations:\n      - method: GET\n        name: list-hosts\n        description: List all render host machines\n        call: opencue.listHosts\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: render-farm-mcp\n    transport: http\n    description: MCP server for AI-assisted render farm monitoring and management.\n    tools:\n    - name: list-shows\n      description: List all active shows (productions) in the render farm\n      hints:\n        readOnly: true\n        openWorld: false\n      call: opencue.listShows\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-render-jobs\n      description: List render jobs for a specific show with optional state filtering\n      hints:\n        readOnly: true\n        openWorld: false\n      call: opencue.listJobs\n\
+  \      with:\n        show_id: tools.show_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-render-job\n      description: Get detailed status and frame counts for a specific render job\n      hints:\n        readOnly: true\n        openWorld: false\n      call: opencue.getJob\n      with:\n        job_id: tools.job_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-render-hosts\n      description: List all render host machines and their current utilization\n      hints:\n        readOnly: true\n        openWorld: false\n      call: opencue.listHosts\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/academy-software-foundation/refs/heads/main/capabilities/render-farm-management.yaml
 tags:
 - Academy Software Foundation

@@ -1,8 +1,7 @@
 ---
 categories:
 - api-management
-consumed_apis:
-- zilla-gateway
+consumed_apis: []
 description: Workflow for exposing Apache Kafka topics as REST APIs and managing event-driven integrations via Zilla. Enables HTTP, MQTT, and gRPC clients to produce and consume Kafka events without Kafka client libraries.
 layout: capability
 name: Aklivity Kafka API Gateway
@@ -19,40 +18,41 @@ personas: []
 provider_name: Aklivity
 provider_slug: aklivity
 search_terms:
-- expose kafka topics as rest apis and manage event-driven integrations
-- produce event
-- produce kafka event
-- configures and manages zilla gateway deployments for kafka access
-- kafka proxy
-- Platform Engineer
-- connects iot devices via mqtt to kafka using zilla
-- multi-protocol api gateway for kafka access
-- event-driven
-- consume events from kafka
-- IoT Developer
-- apache kafka topic management and event streaming
-- event-driven application patterns with kafka as the backbone
-- builds rest apis backed by kafka topics using zilla
-- kafka
 - produce an event to kafka
-- consume events
-- produce an event to a kafka topic via zilla http gateway
 - real-time
-- consume kafka events
-- consume events from a kafka topic via zilla http gateway
-- kafka event production and consumption
-- aklivity
+- multi-protocol api gateway for kafka access
+- kafka proxy
+- consume events
+- builds rest apis backed by kafka topics using zilla
+- configures and manages zilla gateway deployments for kafka access
 - multi-protocol
-- api gateway
 - iot
 - apache kafka
+- produce an event to a kafka topic via zilla http gateway
 - API Developer
+- consume events from kafka
+- produce kafka event
+- IoT Developer
+- kafka event production and consumption
+- produce event
+- consume events from a kafka topic via zilla http gateway
+- aklivity
+- apache kafka topic management and event streaming
+- event-driven
+- api gateway
+- expose kafka topics as rest apis and manage event-driven integrations
+- Platform Engineer
+- kafka
+- consume kafka events
+- event-driven application patterns with kafka as the backbone
+- connects iot devices via mqtt to kafka using zilla
 slug: kafka-api-gateway
 source_filename: kafka-api-gateway.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"Aklivity Kafka API Gateway\"\n  description: \"Workflow for exposing Apache Kafka topics as REST APIs and managing event-driven integrations via Zilla. Enables HTTP, MQTT, and gRPC clients to produce and consume Kafka events without Kafka client libraries.\"\n  tags:\n    - Aklivity\n    - Kafka\n    - API Gateway\n    - Event-Driven\n    - Multi-Protocol\n    - Real-Time\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\nbinds:\n  - namespace: env\n    keys:\n      KAFKA_BOOTSTRAP_SERVERS: KAFKA_BOOTSTRAP_SERVERS\n      ZILLA_HOST: ZILLA_HOST\n      ZILLA_PORT: ZILLA_PORT\ncapability:\n  consumes:\n    - import: zilla-gateway\n      location: ./shared/zilla-gateway.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: kafka-api-gateway-api\n      description: \"Unified REST API for Kafka event production and consumption via Zilla.\"\n      resources:\n        - path: /v1/events\n          name: events\n   \
-  \       description: \"Kafka event production and consumption\"\n          operations:\n            - method: POST\n              name: produce-event\n              description: \"Produce an event to Kafka\"\n              call: \"zilla-gateway.produce-message\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: consume-events\n              description: \"Consume events from Kafka\"\n              call: \"zilla-gateway.consume-messages\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n    - type: mcp\n      port: 9090\n      namespace: kafka-api-gateway-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Kafka event streaming via Zilla gateway.\"\n      tools:\n        - name: produce-kafka-event\n          description: \"Produce an event to a Kafka topic via Zilla HTTP gateway\"\n          hints:\n            readOnly:\
-  \ false\n            destructive: false\n          call: \"zilla-gateway.produce-message\"\n          with:\n            key: \"tools.key\"\n            value: \"tools.value\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: consume-kafka-events\n          description: \"Consume events from a Kafka topic via Zilla HTTP gateway\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"zilla-gateway.consume-messages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Aklivity Kafka API Gateway\n  description: Workflow for exposing Apache Kafka topics as REST APIs and managing event-driven integrations via Zilla. Enables\n    HTTP, MQTT, and gRPC clients to produce and consume Kafka events without Kafka client libraries.\n  tags:\n  - Aklivity\n  - Kafka\n  - API Gateway\n  - Event-Driven\n  - Multi-Protocol\n  - Real-Time\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    KAFKA_BOOTSTRAP_SERVERS: KAFKA_BOOTSTRAP_SERVERS\n    ZILLA_HOST: ZILLA_HOST\n    ZILLA_PORT: ZILLA_PORT\ncapability:\n  consumes:\n  - type: http\n    namespace: zilla-gateway\n    baseUri: http://{host}:{port}\n    description: Zilla HTTP-to-Kafka proxy endpoints\n    resources:\n    - name: kafka-messages\n      path: /messages\n      description: Kafka message production and consumption via HTTP\n      operations:\n      - name: produce-message\n        method: POST\n        description:\
+  \ Produce a message to a Kafka topic\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            key: '{{tools.key}}'\n            value: '{{tools.value}}'\n      - name: consume-messages\n        method: GET\n        description: Consume messages from a Kafka topic\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: kafka-api-gateway-api\n    description: Unified REST API for Kafka event production and consumption via Zilla.\n    resources:\n    - path: /v1/events\n      name: events\n      description: Kafka event production and consumption\n      operations:\n      - method: POST\n        name: produce-event\n        description: Produce an event to Kafka\n        call: zilla-gateway.produce-message\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n      - method: GET\n        name: consume-events\n        description: Consume events from Kafka\n        call: zilla-gateway.consume-messages\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: kafka-api-gateway-mcp\n    transport: http\n    description: MCP server for AI-assisted Kafka event streaming via Zilla gateway.\n    tools:\n    - name: produce-kafka-event\n      description: Produce an event to a Kafka topic via Zilla HTTP gateway\n      hints:\n        readOnly: false\n        destructive: false\n      call: zilla-gateway.produce-message\n      with:\n        key: tools.key\n        value: tools.value\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: consume-kafka-events\n      description: Consume events from a Kafka topic via Zilla HTTP gateway\n      hints:\n        readOnly: true\n        openWorld: true\n      call: zilla-gateway.consume-messages\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aklivity/refs/heads/main/capabilities/kafka-api-gateway.yaml
 tags:
 - Aklivity

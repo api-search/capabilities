@@ -1,29 +1,7 @@
 ---
-api_specs:
-- filename: hcm.yml
-  format: yaml
-  label: hcm
-  slug: hcm
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/hcm.yml
-- filename: recruiting-talent-management.yml
-  format: yaml
-  label: recruiting
-  slug: recruiting
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/recruiting-talent-management.yml
-- filename: approval-workflow-engine.yml
-  format: yaml
-  label: approval-workflow
-  slug: approval-workflow
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/openapi/approval-workflow-engine.yml
 categories:
 - payroll-hr
-consumed_apis:
-- hcm
-- recruiting
-- approval-workflow
+consumed_apis: []
 description: Unified workflow for HR administrators combining employee management, benefits, payroll, recruiting, talent management, and approval workflows across PeopleSoft HCM, Recruiting, and Approval Workflow Engine APIs.
 layout: capability
 name: PeopleSoft Human Resources
@@ -68,62 +46,65 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
+- supply chain management
+- individual employee details
+- recruiting
+- list pending approvals
+- search available job postings.
+- submit application
+- peopletools platform services.
+- peoplesoft
+- retrieve benefit enrollment records.
+- search jobs
 - candidate applications
-- job posting details
+- process approval
+- talent management
 - retrieve details for a specific employee.
-- submit a candidate application for a job posting.
-- list employees
+- job postings
+- hr approval requests
+- campus solutions.
 - approve, deny, or push back an hr approval request.
+- financial and supply chain management.
 - individual approval operations
 - human capital management.
-- supply chain management
-- process approval
-- peoplesoft
-- hcm
-- get employee
-- human resources
-- retrieve pending hr approval requests.
 - payroll
-- job postings
-- financial and supply chain management.
-- hr approval requests
-- retrieve details for a specific job posting.
-- employee records
-- campus solutions.
-- get job details
-- talent management
-- enterprise software
 - erp
-- campus solutions
-- retrieve payroll run history and status.
-- list payroll runs
-- recruiting
-- retrieve employee records with optional department and status filters.
-- retrieve benefit enrollment records.
+- retrieve details for a specific job posting.
+- job posting details
+- financial management
+- get job details
+- submit a candidate application for a job posting.
 - crm
 - payroll run history and status
-- peopletools platform services.
-- list benefit enrollments
-- list pending approvals
-- search jobs
-- submit application
-- search available job postings.
+- hcm
+- retrieve pending hr approval requests.
+- get employee
+- employee records
+- list employees
+- human resources
 - benefit enrollment records
-- individual employee details
-- financial management
+- retrieve payroll run history and status.
+- campus solutions
+- enterprise software
+- retrieve employee records with optional department and status filters.
+- list benefit enrollments
+- list payroll runs
 slug: human-resources
 source_filename: human-resources.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"PeopleSoft Human Resources\"\n  description: \"Unified workflow for HR administrators combining employee management, benefits, payroll, recruiting, talent management, and approval workflows across PeopleSoft HCM, Recruiting, and Approval Workflow Engine APIs.\"\n  tags:\n    - PeopleSoft\n    - Human Resources\n    - HCM\n    - Recruiting\n    - Talent Management\n    - Payroll\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n      PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\n\ncapability:\n  consumes:\n    - import: hcm\n      location: ./shared/hcm.yaml\n    - import: recruiting\n      location: ./shared/recruiting-talent-management.yaml\n    - import: approval-workflow\n      location: ./shared/approval-workflow-engine.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hr-api\n      description: \"Unified REST API\
-  \ for PeopleSoft human resources workflows.\"\n      resources:\n        - path: /v1/employees\n          name: employees\n          description: \"Employee records\"\n          operations:\n            - method: GET\n              name: list-employees\n              description: \"Retrieve employee records with optional department and status filters.\"\n              call: \"hcm.list-employees\"\n              with:\n                department: \"rest.department\"\n                status: \"rest.status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees/{employeeId}\n          name: employee-detail\n          description: \"Individual employee details\"\n          operations:\n            - method: GET\n              name: get-employee\n              description: \"Retrieve details for a specific employee.\"\n              call: \"hcm.get-employee\"\n              with:\n                employeeId: \"rest.employeeId\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/benefit-enrollments\n          name: benefit-enrollments\n          description: \"Benefit enrollment records\"\n          operations:\n            - method: GET\n              name: list-benefit-enrollments\n              description: \"Retrieve benefit enrollment records.\"\n              call: \"hcm.list-benefit-enrollments\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/payroll-runs\n          name: payroll-runs\n          description: \"Payroll run history and status\"\n          operations:\n            - method: GET\n              name: list-payroll-runs\n              description: \"Retrieve payroll run history and status.\"\n              call: \"hcm.list-payroll-runs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path:\
-  \ /v1/jobs\n          name: jobs\n          description: \"Job postings\"\n          operations:\n            - method: GET\n              name: search-jobs\n              description: \"Search available job postings.\"\n              call: \"recruiting.search-jobs\"\n              with:\n                keyword: \"rest.keyword\"\n                location: \"rest.location\"\n                department: \"rest.department\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobId}\n          name: job-detail\n          description: \"Job posting details\"\n          operations:\n            - method: GET\n              name: get-job-details\n              description: \"Retrieve details for a specific job posting.\"\n              call: \"recruiting.get-job-details\"\n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping:\
-  \ \"$.\"\n        - path: /v1/applications\n          name: applications\n          description: \"Candidate applications\"\n          operations:\n            - method: POST\n              name: submit-application\n              description: \"Submit a candidate application for a job posting.\"\n              call: \"recruiting.submit-application\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/approvals\n          name: approvals\n          description: \"HR approval requests\"\n          operations:\n            - method: GET\n              name: list-pending-approvals\n              description: \"Retrieve pending HR approval requests.\"\n              call: \"approval-workflow.list-pending-approvals\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/approvals/{approvalId}\n          name: approval-detail\n          description: \"Individual\
-  \ approval operations\"\n          operations:\n            - method: PUT\n              name: process-approval\n              description: \"Approve, deny, or push back an HR approval request.\"\n              call: \"approval-workflow.process-approval\"\n              with:\n                approvalId: \"rest.approvalId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: hr-mcp\n      transport: http\n      description: \"MCP server for AI-assisted PeopleSoft human resources workflows.\"\n      tools:\n        - name: list-employees\n          description: \"Retrieve employee records with optional department and status filters.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hcm.list-employees\"\n          with:\n            department: \"tools.department\"\n            status: \"tools.status\"\n          outputParameters:\n        \
-  \    - type: object\n              mapping: \"$.\"\n        - name: get-employee\n          description: \"Retrieve details for a specific employee.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hcm.get-employee\"\n          with:\n            employeeId: \"tools.employeeId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-benefit-enrollments\n          description: \"Retrieve benefit enrollment records.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hcm.list-benefit-enrollments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-payroll-runs\n          description: \"Retrieve payroll run history and status.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"hcm.list-payroll-runs\"\n          outputParameters:\n            -\
-  \ type: object\n              mapping: \"$.\"\n        - name: search-jobs\n          description: \"Search available job postings.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"recruiting.search-jobs\"\n          with:\n            keyword: \"tools.keyword\"\n            location: \"tools.location\"\n            department: \"tools.department\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-job-details\n          description: \"Retrieve details for a specific job posting.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"recruiting.get-job-details\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: submit-application\n          description: \"Submit a candidate application for a job posting.\"\n          hints:\n          \
-  \  readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"recruiting.submit-application\"\n          with:\n            jobId: \"tools.jobId\"\n            candidateInfo: \"tools.candidateInfo\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-pending-approvals\n          description: \"Retrieve pending HR approval requests.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"approval-workflow.list-pending-approvals\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: process-approval\n          description: \"Approve, deny, or push back an HR approval request.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"approval-workflow.process-approval\"\n          with:\n            approvalId: \"tools.approvalId\"\n\
-  \            action: \"tools.action\"\n            comments: \"tools.comments\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: PeopleSoft Human Resources\n  description: Unified workflow for HR administrators combining employee management, benefits, payroll, recruiting, talent\n    management, and approval workflows across PeopleSoft HCM, Recruiting, and Approval Workflow Engine APIs.\n  tags:\n  - PeopleSoft\n  - Human Resources\n  - HCM\n  - Recruiting\n  - Talent Management\n  - Payroll\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    PEOPLESOFT_USERNAME: PEOPLESOFT_USERNAME\n    PEOPLESOFT_PASSWORD: PEOPLESOFT_PASSWORD\ncapability:\n  consumes:\n  - type: http\n    namespace: hcm\n    baseUri: https://${PEOPLESOFT_HOST}:${PEOPLESOFT_PORT}/psft/api/hcm/v1\n    description: PeopleSoft HCM API\n    authentication:\n      type: basic\n      username: '{{PEOPLESOFT_USERNAME}}'\n      password: '{{PEOPLESOFT_PASSWORD}}'\n    resources:\n    - name: employees\n      path: /employees\n      description: Employee data operations\n\
+  \      operations:\n      - name: list-employees\n        method: GET\n        description: Retrieve a list of employee records.\n        inputParameters:\n        - name: department\n          in: query\n          type: string\n          required: false\n          description: Filter by department\n        - name: status\n          in: query\n          type: string\n          required: false\n          description: Filter by employment status\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-employee\n        method: GET\n        description: Retrieve details for a specific employee.\n        inputParameters:\n        - name: employeeId\n          in: path\n          type: string\n          required: true\n          description: The employee identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name:\
+  \ benefits\n      path: /benefits\n      description: Benefits administration operations\n      operations:\n      - name: list-benefit-enrollments\n        method: GET\n        description: Retrieve benefit enrollment records.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: payroll\n      path: /payroll\n      description: Payroll operations\n      operations:\n      - name: list-payroll-runs\n        method: GET\n        description: Retrieve payroll run history and status.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: recruiting\n    baseUri: https://${PEOPLESOFT_HOST}:${PEOPLESOFT_PORT}/psft/api/hcm/recruiting/v1\n    description: PeopleSoft Recruiting and Talent Management API\n    authentication:\n      type: basic\n      username: '{{PEOPLESOFT_USERNAME}}'\n      password: '{{PEOPLESOFT_PASSWORD}}'\n\
+  \    resources:\n    - name: jobs\n      path: /jobs\n      description: Job posting and search operations\n      operations:\n      - name: search-jobs\n        method: GET\n        description: Search available job postings.\n        inputParameters:\n        - name: keyword\n          in: query\n          type: string\n          required: false\n          description: Keyword search term\n        - name: location\n          in: query\n          type: string\n          required: false\n          description: Job location filter\n        - name: department\n          in: query\n          type: string\n          required: false\n          description: Department filter\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-job-details\n        method: GET\n        description: Retrieve details for a specific job posting.\n        inputParameters:\n        - name: jobId\n          in: path\n     \
+  \     type: string\n          required: true\n          description: The job posting identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: candidates\n      path: /candidates\n      description: Candidate and application operations\n      operations:\n      - name: submit-application\n        method: POST\n        description: Submit a candidate application for a job posting.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            jobId: '{{tools.jobId}}'\n            candidateInfo: '{{tools.candidateInfo}}'\n  - type: http\n    namespace: approval-workflow\n    baseUri: https://${PEOPLESOFT_HOST}:${PEOPLESOFT_PORT}/psft/api/approvals/v1\n    description: PeopleSoft Approval Workflow Engine API\n    authentication:\n      type: basic\n      username: '{{PEOPLESOFT_USERNAME}}'\n\
+  \      password: '{{PEOPLESOFT_PASSWORD}}'\n    resources:\n    - name: approvals\n      path: /approvals\n      description: Approval workflow operations\n      operations:\n      - name: list-pending-approvals\n        method: GET\n        description: Retrieve a list of pending approval requests for the current user.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: process-approval\n        method: PUT\n        description: Approve, deny, or push back an approval request.\n        inputParameters:\n        - name: approvalId\n          in: path\n          type: string\n          required: true\n          description: The approval request identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            action: '{{tools.action}}'\n            comments: '{{tools.comments}}'\n\
+  \  exposes:\n  - type: rest\n    port: 8080\n    namespace: hr-api\n    description: Unified REST API for PeopleSoft human resources workflows.\n    resources:\n    - path: /v1/employees\n      name: employees\n      description: Employee records\n      operations:\n      - method: GET\n        name: list-employees\n        description: Retrieve employee records with optional department and status filters.\n        call: hcm.list-employees\n        with:\n          department: rest.department\n          status: rest.status\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/employees/{employeeId}\n      name: employee-detail\n      description: Individual employee details\n      operations:\n      - method: GET\n        name: get-employee\n        description: Retrieve details for a specific employee.\n        call: hcm.get-employee\n        with:\n          employeeId: rest.employeeId\n        outputParameters:\n        - type: object\n         \
+  \ mapping: $.\n    - path: /v1/benefit-enrollments\n      name: benefit-enrollments\n      description: Benefit enrollment records\n      operations:\n      - method: GET\n        name: list-benefit-enrollments\n        description: Retrieve benefit enrollment records.\n        call: hcm.list-benefit-enrollments\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/payroll-runs\n      name: payroll-runs\n      description: Payroll run history and status\n      operations:\n      - method: GET\n        name: list-payroll-runs\n        description: Retrieve payroll run history and status.\n        call: hcm.list-payroll-runs\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/jobs\n      name: jobs\n      description: Job postings\n      operations:\n      - method: GET\n        name: search-jobs\n        description: Search available job postings.\n        call: recruiting.search-jobs\n        with:\n          keyword:\
+  \ rest.keyword\n          location: rest.location\n          department: rest.department\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/jobs/{jobId}\n      name: job-detail\n      description: Job posting details\n      operations:\n      - method: GET\n        name: get-job-details\n        description: Retrieve details for a specific job posting.\n        call: recruiting.get-job-details\n        with:\n          jobId: rest.jobId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/applications\n      name: applications\n      description: Candidate applications\n      operations:\n      - method: POST\n        name: submit-application\n        description: Submit a candidate application for a job posting.\n        call: recruiting.submit-application\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/approvals\n      name: approvals\n      description: HR approval\
+  \ requests\n      operations:\n      - method: GET\n        name: list-pending-approvals\n        description: Retrieve pending HR approval requests.\n        call: approval-workflow.list-pending-approvals\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/approvals/{approvalId}\n      name: approval-detail\n      description: Individual approval operations\n      operations:\n      - method: PUT\n        name: process-approval\n        description: Approve, deny, or push back an HR approval request.\n        call: approval-workflow.process-approval\n        with:\n          approvalId: rest.approvalId\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: hr-mcp\n    transport: http\n    description: MCP server for AI-assisted PeopleSoft human resources workflows.\n    tools:\n    - name: list-employees\n      description: Retrieve employee records with optional department and status\
+  \ filters.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: hcm.list-employees\n      with:\n        department: tools.department\n        status: tools.status\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-employee\n      description: Retrieve details for a specific employee.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: hcm.get-employee\n      with:\n        employeeId: tools.employeeId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-benefit-enrollments\n      description: Retrieve benefit enrollment records.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: hcm.list-benefit-enrollments\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-payroll-runs\n      description: Retrieve payroll run history and status.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: hcm.list-payroll-runs\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-jobs\n      description: Search available job postings.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: recruiting.search-jobs\n      with:\n        keyword: tools.keyword\n        location: tools.location\n        department: tools.department\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-job-details\n      description: Retrieve details for a specific job posting.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: recruiting.get-job-details\n      with:\n        jobId: tools.jobId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: submit-application\n      description: Submit a candidate application for a job posting.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: recruiting.submit-application\n      with:\n        jobId:\
+  \ tools.jobId\n        candidateInfo: tools.candidateInfo\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-pending-approvals\n      description: Retrieve pending HR approval requests.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: approval-workflow.list-pending-approvals\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: process-approval\n      description: Approve, deny, or push back an HR approval request.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: approval-workflow.process-approval\n      with:\n        approvalId: tools.approvalId\n        action: tools.action\n        comments: tools.comments\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/peoplesoft/refs/heads/main/capabilities/human-resources.yaml
 tags:
 - PeopleSoft

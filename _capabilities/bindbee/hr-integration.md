@@ -9,17 +9,17 @@ personas: []
 provider_name: Bindbee
 provider_slug: bindbee
 search_terms:
-- developer building hr workflow automations using unified hr data
-- unified access to employee data from hris platforms
-- people operations engineer integrating hr systems into internal tooling
-- department hierarchy and org structure normalization
-- hr integration
-- workforce
-- employee time-off, tenure, and workforce data
-- unified access to recruiting data from ats platforms
-- access unified hr and recruiting data from connected hris and ats systems
-- hris
 - ats
+- unified access to employee data from hris platforms
+- hr integration
+- people operations engineer integrating hr systems into internal tooling
+- workforce
+- unified access to recruiting data from ats platforms
+- department hierarchy and org structure normalization
+- hris
+- access unified hr and recruiting data from connected hris and ats systems
+- employee time-off, tenure, and workforce data
+- developer building hr workflow automations using unified hr data
 slug: hr-integration
 source_filename: hr-integration.yaml
 source_heading: Capability Spec

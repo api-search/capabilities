@@ -9,10 +9,10 @@ personas: []
 provider_name: Amazon DeepRacer
 provider_slug: amazon-deepracer
 search_terms:
-- machine learning
-- autonomous vehicles
 - reinforcement learning
+- autonomous vehicles
 - robotics
+- machine learning
 slug: autonomous-racing-operations
 source_filename: autonomous-racing-operations.yaml
 source_heading: Capability Spec

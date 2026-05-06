@@ -1,21 +1,6 @@
 ---
-api_specs:
-- filename: windstream-voice-openapi.yml
-  format: yaml
-  label: windstream-voice
-  slug: windstream-voice
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/windstream-holdings/refs/heads/main/openapi/windstream-voice-openapi.yml
-- filename: windstream-contact-center-openapi.yml
-  format: yaml
-  label: windstream-ccs
-  slug: windstream-ccs
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/windstream-holdings/refs/heads/main/openapi/windstream-contact-center-openapi.yml
 categories: []
-consumed_apis:
-- windstream-voice
-- windstream-ccs
+consumed_apis: []
 description: Unified Communications capability for Windstream Enterprise, combining Voice and Contact Center APIs to enable end-to-end call management, agent operations, auto-attendant configuration, and contact center monitoring. Designed for IT administrators, contact center managers, and UC platform integrators.
 layout: capability
 name: Windstream Unified Communications
@@ -92,96 +77,104 @@ personas: []
 provider_name: Windstream Holdings
 provider_slug: windstream-holdings
 search_terms:
-- windstream
-- list acd queues for a contact center tenant
-- auto-attendant management
-- execute a control action (transfer, hold, terminate) on a voice call
-- ucaas
-- call management
-- list users
-- tenant management
-- update contact center agent presence state
-- get current presence state of a contact center agent
-- terminate call
-- update extension configuration (forwarding, dnd, etc.)
-- search contact center calls by number or date range
-- create user
-- get extension details
-- individual extension operations
-- terminate voice call
-- terminate an active voice call
-- broadband
-- search cc calls
-- list all auto-attendants
-- list cc calls
-- managed services
-- get agent state
-- list active voice calls
-- list extensions
-- create a new auto-attendant with menu options
-- update extension
-- agent state management
-- list windstream system users
-- get current agent state
-- list all extensions configured in windstream
+- make outbound call
 - list active voice calls in windstream
-- individual call operations
+- agents
+- windstream
+- list auto attendants
+- contact center
+- get agent state
+- update contact center agent presence state
+- create a new auto-attendant with menu options
+- search contact center calls by criteria
+- create an auto-attendant
+- list acds/queues for a tenant
+- individual extension operations
+- control voice call
+- list voice calls
+- list windstream system users
+- update agent state
+- call management
+- list extensions
+- create user
+- voice
+- get extension details
+- create a new user
+- sd-wan
+- list queues
+- list contact center calls
 - active call management across voice and contact center
 - get voice call
-- list all extensions
-- update agent presence state
-- update agent state
+- execute a control action (transfer, hold, terminate) on a voice call
+- list all auto-attendants
+- list cc calls
+- get current agent state
 - extension management
-- list tenants
-- list auto attendants
-- create a new user
-- initiate an outbound voice call from an extension
-- make outbound call
-- list contact center tenants
-- search contact center calls
-- contact center
-- create an auto-attendant
-- unified communications
-- create auto attendant
-- list queues
-- terminate an active call
+- individual call operations
+- managed services
 - get voice call details
-- search contact center calls by criteria
-- voice
 - make call
-- acd queue management
-- get details of a specific windstream extension
-- list auto-attendant (ivr) configurations
-- agents
-- list voice calls
-- user management
-- list acds/queues for a tenant
-- list contact center calls
-- control voice call
-- network communications
-- contact center call management
-- sd-wan
-- telecom
 - get extension
+- get details of a specific windstream extension
+- create auto attendant
+- list tenants
+- list all extensions configured in windstream
+- list acd queues for a contact center tenant
+- terminate voice call
+- list auto-attendant (ivr) configurations
+- terminate an active call
+- network communications
+- initiate an outbound voice call from an extension
+- search cc calls
+- terminate an active voice call
+- acd queue management
+- search contact center calls
 - update extension configuration
+- ucaas
+- list active voice calls
+- list all extensions
+- broadband
+- list users
 - make an outbound voice call
+- get current presence state of a contact center agent
+- contact center call management
+- agent state management
+- update extension
+- auto-attendant management
+- user management
+- list contact center tenants
+- terminate call
+- update extension configuration (forwarding, dnd, etc.)
+- update agent presence state
+- tenant management
+- telecom
+- unified communications
+- search contact center calls by number or date range
 slug: unified-communications
 source_filename: unified-communications.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Windstream Unified Communications\"\n  description: >-\n    Unified Communications capability for Windstream Enterprise, combining Voice\n    and Contact Center APIs to enable end-to-end call management, agent operations,\n    auto-attendant configuration, and contact center monitoring. Designed for IT\n    administrators, contact center managers, and UC platform integrators.\n  tags:\n    - Windstream\n    - Unified Communications\n    - Contact Center\n    - Voice\n    - Telecom\n    - Agents\n    - Call Management\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      WINDSTREAM_VOICE_USERNAME: WINDSTREAM_VOICE_USERNAME\n      WINDSTREAM_VOICE_PASSWORD: WINDSTREAM_VOICE_PASSWORD\n      WINDSTREAM_CCS_TOKEN: WINDSTREAM_CCS_TOKEN\n\ncapability:\n  consumes:\n    - import: windstream-voice\n      location: ./shared/windstream-voice.yaml\n    - import: windstream-ccs\n      location:\
-  \ ./shared/windstream-contact-center.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: windstream-uc-api\n      description: \"Unified REST API for Windstream Unified Communications.\"\n      resources:\n        - path: /v1/calls\n          name: calls\n          description: \"Active call management across Voice and Contact Center\"\n          operations:\n            - method: GET\n              name: list-voice-calls\n              description: \"List active voice calls\"\n              call: \"windstream-voice.list-active-calls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: make-call\n              description: \"Make an outbound voice call\"\n              call: \"windstream-voice.make-outbound-call\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/calls/{id}\n          name: call\n\
-  \          description: \"Individual call operations\"\n          operations:\n            - method: GET\n              name: get-voice-call\n              description: \"Get voice call details\"\n              call: \"windstream-voice.get-call\"\n              with:\n                callId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: terminate-call\n              description: \"Terminate an active call\"\n              call: \"windstream-voice.terminate-call\"\n              with:\n                callId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/cc-calls\n          name: cc-calls\n          description: \"Contact center call management\"\n          operations:\n            - method: GET\n              name: list-cc-calls\n              description: \"List contact center calls\"\
-  \n              call: \"windstream-ccs.list-calls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/cc-calls/search\n          name: cc-calls-search\n          description: \"Search contact center calls\"\n          operations:\n            - method: GET\n              name: search-cc-calls\n              description: \"Search contact center calls by criteria\"\n              call: \"windstream-ccs.search-calls\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/extensions\n          name: extensions\n          description: \"Extension management\"\n          operations:\n            - method: GET\n              name: list-extensions\n              description: \"List all extensions\"\n              call: \"windstream-voice.list-extensions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\
-  \n        - path: /v1/extensions/{id}\n          name: extension\n          description: \"Individual extension operations\"\n          operations:\n            - method: GET\n              name: get-extension\n              description: \"Get extension details\"\n              call: \"windstream-voice.get-extension\"\n              with:\n                extensionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-extension\n              description: \"Update extension configuration\"\n              call: \"windstream-voice.update-extension\"\n              with:\n                extensionId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/auto-attendants\n          name: auto-attendants\n          description: \"Auto-attendant management\"\n          operations:\n            - method:\
-  \ GET\n              name: list-auto-attendants\n              description: \"List all auto-attendants\"\n              call: \"windstream-voice.list-auto-attendants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-auto-attendant\n              description: \"Create an auto-attendant\"\n              call: \"windstream-voice.create-auto-attendant\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/agents/{id}/state\n          name: agent-state\n          description: \"Agent state management\"\n          operations:\n            - method: GET\n              name: get-agent-state\n              description: \"Get current agent state\"\n              call: \"windstream-ccs.get-agent-state\"\n              with:\n                extensionUuid: \"rest.id\"\n              outputParameters:\n                - type:\
-  \ object\n                  mapping: \"$.\"\n            - method: POST\n              name: update-agent-state\n              description: \"Update agent presence state\"\n              call: \"windstream-ccs.update-agent-state\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/tenants\n          name: tenants\n          description: \"Tenant management\"\n          operations:\n            - method: GET\n              name: list-tenants\n              description: \"List contact center tenants\"\n              call: \"windstream-ccs.list-tenants\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/tenants/{id}/queues\n          name: queues\n          description: \"ACD queue management\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List ACDs/queues for a tenant\"\n       \
-  \       call: \"windstream-ccs.list-tenant-acds\"\n              with:\n                tenantUuid: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List users\"\n              call: \"windstream-voice.list-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-user\n              description: \"Create a new user\"\n              call: \"windstream-voice.create-user\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: windstream-uc-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Windstream\
-  \ Unified Communications management.\"\n      tools:\n        - name: list-voice-calls\n          description: \"List active voice calls in Windstream\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-voice.list-active-calls\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: make-outbound-call\n          description: \"Initiate an outbound voice call from an extension\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"windstream-voice.make-outbound-call\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: control-voice-call\n          description: \"Execute a control action (transfer, hold, terminate) on a voice call\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"windstream-voice.control-call\"\n          with:\n    \
-  \        callId: \"tools.callId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: terminate-voice-call\n          description: \"Terminate an active voice call\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"windstream-voice.terminate-call\"\n          with:\n            callId: \"tools.callId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-extensions\n          description: \"List all extensions configured in Windstream\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-voice.list-extensions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-extension\n          description: \"Get details of a specific Windstream extension\"\n          hints:\n            readOnly: true\n\
-  \            openWorld: false\n          call: \"windstream-voice.get-extension\"\n          with:\n            extensionId: \"tools.extensionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-extension\n          description: \"Update extension configuration (forwarding, DND, etc.)\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"windstream-voice.update-extension\"\n          with:\n            extensionId: \"tools.extensionId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-auto-attendants\n          description: \"List auto-attendant (IVR) configurations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-voice.list-auto-attendants\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\
-  \n\n        - name: create-auto-attendant\n          description: \"Create a new auto-attendant with menu options\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"windstream-voice.create-auto-attendant\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-cc-calls\n          description: \"List contact center calls\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-ccs.list-calls\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: search-cc-calls\n          description: \"Search contact center calls by number or date range\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-ccs.search-calls\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-agent-state\n\
-  \          description: \"Get current presence state of a contact center agent\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"windstream-ccs.get-agent-state\"\n          with:\n            extensionUuid: \"tools.extensionUuid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-agent-state\n          description: \"Update contact center agent presence state\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"windstream-ccs.update-agent-state\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-tenants\n          description: \"List contact center tenants\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-ccs.list-tenants\"\n          outputParameters:\n            - type: object\n  \
-  \            mapping: \"$.\"\n\n        - name: list-queues\n          description: \"List ACD queues for a contact center tenant\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-ccs.list-tenant-acds\"\n          with:\n            tenantUuid: \"tools.tenantUuid\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-users\n          description: \"List Windstream system users\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windstream-voice.list-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Windstream Unified Communications\n  description: Unified Communications capability for Windstream Enterprise, combining Voice and Contact Center APIs to enable\n    end-to-end call management, agent operations, auto-attendant configuration, and contact center monitoring. Designed for\n    IT administrators, contact center managers, and UC platform integrators.\n  tags:\n  - Windstream\n  - Unified Communications\n  - Contact Center\n  - Voice\n  - Telecom\n  - Agents\n  - Call Management\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    WINDSTREAM_VOICE_USERNAME: WINDSTREAM_VOICE_USERNAME\n    WINDSTREAM_VOICE_PASSWORD: WINDSTREAM_VOICE_PASSWORD\n    WINDSTREAM_CCS_TOKEN: WINDSTREAM_CCS_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: windstream-voice\n    baseUri: https://webadmin.windstreamenterprise.com/api\n    description: Windstream Voice API for call control and UC management\n\
+  \    authentication:\n      type: basic\n      username: '{{WINDSTREAM_VOICE_USERNAME}}'\n      password: '{{WINDSTREAM_VOICE_PASSWORD}}'\n    resources:\n    - name: calls\n      path: /calls\n      description: Active call management\n      operations:\n      - name: list-active-calls\n        method: GET\n        description: List Active Calls\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-call\n        method: GET\n        description: Get Call Details\n        inputParameters:\n        - name: callId\n          in: path\n          type: string\n          required: true\n          description: Call identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: make-outbound-call\n        method: POST\n        description: Make Outbound Call\n        body:\n          type: json\n          data:\n\
+  \            from: '{{tools.from}}'\n            to: '{{tools.to}}'\n            caller_id: '{{tools.caller_id}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: control-call\n        method: POST\n        description: Control Call\n        inputParameters:\n        - name: callId\n          in: path\n          type: string\n          required: true\n          description: Call identifier\n        body:\n          type: json\n          data:\n            action: '{{tools.action}}'\n            destination: '{{tools.destination}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: terminate-call\n        method: DELETE\n        description: Terminate Call\n        inputParameters:\n        - name: callId\n          in: path\n          type: string\n          required: true\n          description: Call identifier\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: extensions\n      path: /extensions\n      description: Extension management\n      operations:\n      - name: list-extensions\n        method: GET\n        description: List Extensions\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-extension\n        method: GET\n        description: Get Extension Details\n        inputParameters:\n        - name: extensionId\n          in: path\n          type: string\n          required: true\n          description: Extension identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-extension\n        method: PUT\n        description: Update Extension\n        inputParameters:\n        - name: extensionId\n       \
+  \   in: path\n          type: string\n          required: true\n          description: Extension identifier\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            forward_to: '{{tools.forward_to}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: auto-attendants\n      path: /auto-attendants\n      description: Auto-attendant management\n      operations:\n      - name: list-auto-attendants\n        method: GET\n        description: List Auto-attendants\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-auto-attendant\n        method: POST\n        description: Create Auto-attendant\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n            greeting: '{{tools.greeting}}'\n            menu_options: '{{tools.menu_options}}'\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-auto-attendant\n        method: GET\n        description: Get Auto-attendant\n        inputParameters:\n        - name: attendantId\n          in: path\n          type: string\n          required: true\n          description: Auto-attendant identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: users\n      path: /users\n      description: User management\n      operations:\n      - name: list-users\n        method: GET\n        description: List Users\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-user\n        method: POST\n        description: Create User\n        body:\n          type: json\n          data:\n            username: '{{tools.username}}'\n\
+  \            email: '{{tools.email}}'\n            extension: '{{tools.extension}}'\n            role: '{{tools.role}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: windstream-ccs\n    baseUri: https://ccs.windstreamenterprise.com/6/v2/api\n    description: Windstream CCS API for contact center operations\n    authentication:\n      type: bearer\n      token: '{{WINDSTREAM_CCS_TOKEN}}'\n    resources:\n    - name: tenants\n      path: /tenants\n      description: Tenant management\n      operations:\n      - name: list-tenants\n        method: GET\n        description: List Tenants\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-tenant\n        method: GET\n        description: Get Tenant Details\n        inputParameters:\n        - name: tenantUuid\n          in: path\n      \
+  \    type: string\n          required: true\n          description: Tenant UUID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-tenant-acds\n        method: GET\n        description: List Tenant ACDs\n        inputParameters:\n        - name: tenantUuid\n          in: path\n          type: string\n          required: true\n          description: Tenant UUID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-tenant-extensions\n        method: GET\n        description: List Tenant Extensions\n        inputParameters:\n        - name: tenantUuid\n          in: path\n          type: string\n          required: true\n          description: Tenant UUID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: calls\n  \
+  \    path: /calls\n      description: Call management and monitoring\n      operations:\n      - name: list-calls\n        method: GET\n        description: List Calls\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-call\n        method: GET\n        description: Get Call\n        inputParameters:\n        - name: callId\n          in: path\n          type: string\n          required: true\n          description: Call identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: search-calls\n        method: GET\n        description: Search Calls\n        inputParameters:\n        - name: calling_number\n          in: query\n          type: string\n          required: false\n          description: Filter by calling number\n        - name: called_number\n          in: query\n          type: string\n \
+  \         required: false\n          description: Filter by called number\n        - name: from_datetime\n          in: query\n          type: string\n          required: false\n          description: Start date range\n        - name: to_datetime\n          in: query\n          type: string\n          required: false\n          description: End date range\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: control-call\n        method: POST\n        description: Control Call\n        inputParameters:\n        - name: callId\n          in: path\n          type: string\n          required: true\n          description: Call identifier\n        body:\n          type: json\n          data:\n            action: '{{tools.action}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: agents\n      path: /agent-state\n \
+  \     description: Agent state management\n      operations:\n      - name: update-agent-state\n        method: POST\n        description: Update Agent State\n        body:\n          type: json\n          data:\n            state: '{{tools.state}}'\n            reason: '{{tools.reason}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-agent-state\n        method: GET\n        description: Get Agent State\n        inputParameters:\n        - name: extensionUuid\n          in: path\n          type: string\n          required: true\n          description: Extension UUID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: windstream-uc-api\n    description: Unified REST API for Windstream Unified Communications.\n    resources:\n    - path: /v1/calls\n      name:\
+  \ calls\n      description: Active call management across Voice and Contact Center\n      operations:\n      - method: GET\n        name: list-voice-calls\n        description: List active voice calls\n        call: windstream-voice.list-active-calls\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: make-call\n        description: Make an outbound voice call\n        call: windstream-voice.make-outbound-call\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/calls/{id}\n      name: call\n      description: Individual call operations\n      operations:\n      - method: GET\n        name: get-voice-call\n        description: Get voice call details\n        call: windstream-voice.get-call\n        with:\n          callId: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: terminate-call\n        description: Terminate an\
+  \ active call\n        call: windstream-voice.terminate-call\n        with:\n          callId: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/cc-calls\n      name: cc-calls\n      description: Contact center call management\n      operations:\n      - method: GET\n        name: list-cc-calls\n        description: List contact center calls\n        call: windstream-ccs.list-calls\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/cc-calls/search\n      name: cc-calls-search\n      description: Search contact center calls\n      operations:\n      - method: GET\n        name: search-cc-calls\n        description: Search contact center calls by criteria\n        call: windstream-ccs.search-calls\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/extensions\n      name: extensions\n      description: Extension management\n      operations:\n      - method: GET\n\
+  \        name: list-extensions\n        description: List all extensions\n        call: windstream-voice.list-extensions\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/extensions/{id}\n      name: extension\n      description: Individual extension operations\n      operations:\n      - method: GET\n        name: get-extension\n        description: Get extension details\n        call: windstream-voice.get-extension\n        with:\n          extensionId: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PUT\n        name: update-extension\n        description: Update extension configuration\n        call: windstream-voice.update-extension\n        with:\n          extensionId: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/auto-attendants\n      name: auto-attendants\n      description: Auto-attendant management\n      operations:\n      - method:\
+  \ GET\n        name: list-auto-attendants\n        description: List all auto-attendants\n        call: windstream-voice.list-auto-attendants\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-auto-attendant\n        description: Create an auto-attendant\n        call: windstream-voice.create-auto-attendant\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/agents/{id}/state\n      name: agent-state\n      description: Agent state management\n      operations:\n      - method: GET\n        name: get-agent-state\n        description: Get current agent state\n        call: windstream-ccs.get-agent-state\n        with:\n          extensionUuid: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: update-agent-state\n        description: Update agent presence state\n        call: windstream-ccs.update-agent-state\n    \
+  \    outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/tenants\n      name: tenants\n      description: Tenant management\n      operations:\n      - method: GET\n        name: list-tenants\n        description: List contact center tenants\n        call: windstream-ccs.list-tenants\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/tenants/{id}/queues\n      name: queues\n      description: ACD queue management\n      operations:\n      - method: GET\n        name: list-queues\n        description: List ACDs/queues for a tenant\n        call: windstream-ccs.list-tenant-acds\n        with:\n          tenantUuid: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      description: User management\n      operations:\n      - method: GET\n        name: list-users\n        description: List users\n        call: windstream-voice.list-users\n     \
+  \   outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-user\n        description: Create a new user\n        call: windstream-voice.create-user\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: windstream-uc-mcp\n    transport: http\n    description: MCP server for AI-assisted Windstream Unified Communications management.\n    tools:\n    - name: list-voice-calls\n      description: List active voice calls in Windstream\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-voice.list-active-calls\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: make-outbound-call\n      description: Initiate an outbound voice call from an extension\n      hints:\n        readOnly: false\n        destructive: false\n      call: windstream-voice.make-outbound-call\n      outputParameters:\n      - type: object\n \
+  \       mapping: $.\n    - name: control-voice-call\n      description: Execute a control action (transfer, hold, terminate) on a voice call\n      hints:\n        readOnly: false\n        destructive: false\n      call: windstream-voice.control-call\n      with:\n        callId: tools.callId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: terminate-voice-call\n      description: Terminate an active voice call\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: windstream-voice.terminate-call\n      with:\n        callId: tools.callId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-extensions\n      description: List all extensions configured in Windstream\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-voice.list-extensions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-extension\n     \
+  \ description: Get details of a specific Windstream extension\n      hints:\n        readOnly: true\n        openWorld: false\n      call: windstream-voice.get-extension\n      with:\n        extensionId: tools.extensionId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-extension\n      description: Update extension configuration (forwarding, DND, etc.)\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: windstream-voice.update-extension\n      with:\n        extensionId: tools.extensionId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-auto-attendants\n      description: List auto-attendant (IVR) configurations\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-voice.list-auto-attendants\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-auto-attendant\n      description: Create a new\
+  \ auto-attendant with menu options\n      hints:\n        readOnly: false\n        destructive: false\n      call: windstream-voice.create-auto-attendant\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-cc-calls\n      description: List contact center calls\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-ccs.list-calls\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-cc-calls\n      description: Search contact center calls by number or date range\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-ccs.search-calls\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-agent-state\n      description: Get current presence state of a contact center agent\n      hints:\n        readOnly: true\n        openWorld: false\n      call: windstream-ccs.get-agent-state\n      with:\n        extensionUuid: tools.extensionUuid\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-agent-state\n      description: Update contact center agent presence state\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: windstream-ccs.update-agent-state\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-tenants\n      description: List contact center tenants\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-ccs.list-tenants\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-queues\n      description: List ACD queues for a contact center tenant\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-ccs.list-tenant-acds\n      with:\n        tenantUuid: tools.tenantUuid\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-users\n      description: List Windstream system\
+  \ users\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windstream-voice.list-users\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/windstream-holdings/refs/heads/main/capabilities/unified-communications.yaml
 tags:
 - Windstream

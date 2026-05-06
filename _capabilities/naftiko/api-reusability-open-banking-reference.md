@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- composed account snapshot (balance + recent transactions) reusable across apps.
-- spec-driven integration
-- mcp
-- list accounts
-- capabilities
 - naftiko
+- composed account snapshot (balance + recent transactions) reusable across apps.
+- open banking
+- list accounts
 - reusability
+- get account snapshot
 - api integration
 - governance
-- open banking
+- spec-driven integration
 - ai
-- get account snapshot
+- mcp
+- capabilities
 slug: api-reusability-open-banking-reference
 source_filename: api-reusability-open-banking-reference.yaml
 source_heading: Capability Spec

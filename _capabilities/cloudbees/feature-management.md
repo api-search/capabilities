@@ -9,15 +9,15 @@ personas: []
 provider_name: CloudBees
 provider_slug: cloudbees
 search_terms:
-- continuous delivery
-- release orchestration
-- feature management
 - continuous integration
-- devops
-- jenkins
-- feature flags
 - ci/cd
 - software delivery
+- feature flags
+- continuous delivery
+- feature management
+- release orchestration
+- jenkins
+- devops
 slug: feature-management
 source_filename: feature-management.yaml
 source_heading: Capability Spec

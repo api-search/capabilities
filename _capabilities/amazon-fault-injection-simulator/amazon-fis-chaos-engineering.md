@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- fis
+consumed_apis: []
 description: Workflow capability for executing chaos engineering experiments using AWS FIS. Enables resilience engineers and SREs to design, execute, and monitor fault injection experiments across AWS infrastructure.
 layout: capability
 name: AWS FIS Chaos Engineering
@@ -54,70 +53,73 @@ personas: []
 provider_name: Amazon Fault Injection Simulator
 provider_slug: amazon-fault-injection-simulator
 search_terms:
+- manage experiments
+- list actions
 - get experiment template
-- check the status of a safety lever for experiment control
-- resilience testing
+- DevOps Engineer
+- get action
+- devops
+- get template
+- update template
+- update experiment template
+- get experiment
 - get safety lever
 - list templates
-- list actions
-- list experiments
-- get template
-- monitoring system behavior during controlled experiments
-- update experiment template
-- aws fis
-- get the configuration of an experiment template
-- manage experiment templates
-- remove an experiment template
 - list all fault injection experiment templates
-- manage specific template
-- list all experiments and their current status
-- Resilience Engineer
-- resilience
-- full chaos engineering lifecycle
-- execute a fault injection experiment from a template
-- deliberate fault injection to test system resilience
-- delete template
-- engage or disengage a safety lever to allow or block experiments
-- discover all available fault injection action types
-- fault injection
-- update template
-- DevOps Engineer
-- delete experiment template
-- create template
-- start experiment
 - design a new fault injection scenario with targets, actions, and stop conditions
-- devops
-- sres using fis to validate service resilience targets
-- modify targets, actions, or stop conditions of an experiment template
-- validating application behavior under failure conditions
-- abort a running fault injection experiment
-- get details and parameters for a specific fis action
-- create experiment template
-- sre
-- monitor the status and progress of a fault injection experiment
-- engineers integrating fis into ci/cd for automated resilience testing
-- chaos engineering
-- manage specific experiment
-- stop experiment
-- get action
-- safety lever control
+- fault injection
+- create template
+- aws fis
 - list experiment templates
-- get experiment
+- remove an experiment template
+- resilience testing
+- delete experiment template
+- engineers designing and running chaos experiments to improve system reliability
+- engineers integrating fis into ci/cd for automated resilience testing
+- monitoring system behavior during controlled experiments
+- discover all available fault injection action types
+- chaos engineering
+- start experiment
+- list all experiments and their current status
+- manage specific experiment
+- check the status of a safety lever for experiment control
+- manage experiment templates
+- monitor the status and progress of a fault injection experiment
+- get details and parameters for a specific fis action
+- full chaos engineering lifecycle
 - SRE
 - update safety lever state
-- manage experiments
-- engineers designing and running chaos experiments to improve system reliability
+- safety lever control
+- create experiment template
+- execute a fault injection experiment from a template
+- sres using fis to validate service resilience targets
+- validating application behavior under failure conditions
+- delete template
+- list experiments
+- deliberate fault injection to test system resilience
+- modify targets, actions, or stop conditions of an experiment template
+- Resilience Engineer
+- sre
+- abort a running fault injection experiment
+- resilience
+- engage or disengage a safety lever to allow or block experiments
+- manage specific template
+- get the configuration of an experiment template
+- stop experiment
 slug: amazon-fis-chaos-engineering
 source_filename: amazon-fis-chaos-engineering.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: AWS FIS Chaos Engineering\n  description: Workflow capability for executing chaos engineering experiments using AWS FIS. Enables resilience engineers and SREs to design, execute, and monitor fault injection experiments across \n    AWS infrastructure.\n  tags:\n  - AWS FIS\n  - Chaos Engineering\n  - Resilience\n  - SRE\n  - DevOps\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - import: fis\n    location: ./shared/fis.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: fis-chaos-api\n    description: Unified REST API for AWS FIS chaos engineering workflows.\n    resources:\n    - path: /v1/experiment-templates\n      name: experiment-templates\n      description: Manage experiment templates\n      operations:\n      - method: GET\n     \
-  \   name: list-experiment-templates\n        description: List templates\n        call: fis.list-experiment-templates\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-experiment-template\n        description: Create template\n        call: fis.create-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/experiment-templates/{id}\n      name: experiment-template\n      description: Manage specific template\n      operations:\n      - method: GET\n        name: get-experiment-template\n        description: Get template\n        call: fis.get-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PATCH\n        name: update-experiment-template\n        description: Update template\n        call: fis.update-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method:\
-  \ DELETE\n        name: delete-experiment-template\n        description: Delete template\n        call: fis.delete-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/experiments\n      name: experiments\n      description: Manage experiments\n      operations:\n      - method: GET\n        name: list-experiments\n        description: List experiments\n        call: fis.list-experiments\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: start-experiment\n        description: Start experiment\n        call: fis.start-experiment\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/experiments/{id}\n      name: experiment\n      description: Manage specific experiment\n      operations:\n      - method: GET\n        name: get-experiment\n        description: Get experiment\n        call: fis.get-experiment\n        outputParameters:\n\
-  \        - type: object\n          mapping: $.\n      - method: DELETE\n        name: stop-experiment\n        description: Stop experiment\n        call: fis.stop-experiment\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/safety-levers/{id}\n      name: safety-lever\n      description: Safety lever control\n      operations:\n      - method: GET\n        name: get-safety-lever\n        description: Get safety lever\n        call: fis.get-safety-lever\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PATCH\n        name: update-safety-lever-state\n        description: Update safety lever state\n        call: fis.update-safety-lever-state\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: fis-chaos-mcp\n    transport: http\n    description: MCP server for AI-assisted chaos engineering with AWS FIS.\n    tools:\n    - name: list-experiment-templates\n\
-  \      description: List all fault injection experiment templates\n      hints:\n        readOnly: true\n        openWorld: true\n      call: fis.list-experiment-templates\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-experiment-template\n      description: Design a new fault injection scenario with targets, actions, and stop conditions\n      hints:\n        readOnly: false\n      call: fis.create-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-experiment-template\n      description: Get the configuration of an experiment template\n      hints:\n        readOnly: true\n      call: fis.get-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-experiment-template\n      description: Modify targets, actions, or stop conditions of an experiment template\n      hints:\n        readOnly: false\n      call: fis.update-experiment-template\n \
-  \     outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-experiment-template\n      description: Remove an experiment template\n      hints:\n        readOnly: false\n        destructive: true\n      call: fis.delete-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-experiment\n      description: Execute a fault injection experiment from a template\n      hints:\n        readOnly: false\n        destructive: true\n      call: fis.start-experiment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-experiment\n      description: Monitor the status and progress of a fault injection experiment\n      hints:\n        readOnly: true\n      call: fis.get-experiment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-experiments\n      description: List all experiments and their current status\n      hints:\n        readOnly: true\n      call:\
-  \ fis.list-experiments\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-experiment\n      description: Abort a running fault injection experiment\n      hints:\n        readOnly: false\n        destructive: true\n      call: fis.stop-experiment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-actions\n      description: Discover all available fault injection action types\n      hints:\n        readOnly: true\n      call: fis.list-actions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-action\n      description: Get details and parameters for a specific FIS action\n      hints:\n        readOnly: true\n      call: fis.get-action\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-safety-lever\n      description: Check the status of a safety lever for experiment control\n      hints:\n        readOnly: true\n      call: fis.get-safety-lever\n   \
-  \   outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-safety-lever-state\n      description: Engage or disengage a safety lever to allow or block experiments\n      hints:\n        readOnly: false\n      call: fis.update-safety-lever-state\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: AWS FIS Chaos Engineering\n  description: Workflow capability for executing chaos engineering experiments using AWS FIS. Enables resilience engineers\n    and SREs to design, execute, and monitor fault injection experiments across AWS infrastructure.\n  tags:\n  - AWS FIS\n  - Chaos Engineering\n  - Resilience\n  - SRE\n  - DevOps\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - type: http\n    namespace: fis\n    baseUri: https://fis.{region}.amazonaws.com\n    description: AWS Fault Injection Simulator API\n    authentication:\n      type: apikey\n      key: Authorization\n      value: '{{AWS_ACCESS_KEY_ID}}'\n      placement: header\n    resources:\n    - name: experiment-templates\n      path: /experimentTemplates\n      description: Experiment template\
+  \ management\n      operations:\n      - name: list-experiment-templates\n        method: GET\n        description: List experiment templates\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-experiment-template\n        method: POST\n        description: Create experiment template\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-experiment-template\n        method: GET\n        description: Get experiment template\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-experiment-template\n        method: PATCH\n        description: Update experiment template\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-experiment-template\n\
+  \        method: DELETE\n        description: Delete experiment template\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: experiments\n      path: /experiments\n      description: Experiment execution\n      operations:\n      - name: list-experiments\n        method: GET\n        description: List experiments\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: start-experiment\n        method: POST\n        description: Start experiment\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-experiment\n        method: GET\n        description: Get experiment status\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: stop-experiment\n\
+  \        method: DELETE\n        description: Stop experiment\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: actions\n      path: /actions\n      description: Available FIS actions\n      operations:\n      - name: list-actions\n        method: GET\n        description: List available actions\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-action\n        method: GET\n        description: Get action details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: safety-levers\n      path: /safetyLevers\n      description: Safety lever management\n      operations:\n      - name: get-safety-lever\n        method: GET\n        description: Get safety lever status\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n      - name: update-safety-lever-state\n        method: PATCH\n        description: Update safety lever state\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: fis-chaos-api\n    description: Unified REST API for AWS FIS chaos engineering workflows.\n    resources:\n    - path: /v1/experiment-templates\n      name: experiment-templates\n      description: Manage experiment templates\n      operations:\n      - method: GET\n        name: list-experiment-templates\n        description: List templates\n        call: fis.list-experiment-templates\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-experiment-template\n        description: Create template\n        call: fis.create-experiment-template\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n    - path: /v1/experiment-templates/{id}\n      name: experiment-template\n      description: Manage specific template\n      operations:\n      - method: GET\n        name: get-experiment-template\n        description: Get template\n        call: fis.get-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PATCH\n        name: update-experiment-template\n        description: Update template\n        call: fis.update-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-experiment-template\n        description: Delete template\n        call: fis.delete-experiment-template\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/experiments\n      name: experiments\n      description: Manage experiments\n      operations:\n      - method: GET\n        name: list-experiments\n\
+  \        description: List experiments\n        call: fis.list-experiments\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: start-experiment\n        description: Start experiment\n        call: fis.start-experiment\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/experiments/{id}\n      name: experiment\n      description: Manage specific experiment\n      operations:\n      - method: GET\n        name: get-experiment\n        description: Get experiment\n        call: fis.get-experiment\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: stop-experiment\n        description: Stop experiment\n        call: fis.stop-experiment\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/safety-levers/{id}\n      name: safety-lever\n      description: Safety lever control\n      operations:\n  \
+  \    - method: GET\n        name: get-safety-lever\n        description: Get safety lever\n        call: fis.get-safety-lever\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PATCH\n        name: update-safety-lever-state\n        description: Update safety lever state\n        call: fis.update-safety-lever-state\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: fis-chaos-mcp\n    transport: http\n    description: MCP server for AI-assisted chaos engineering with AWS FIS.\n    tools:\n    - name: list-experiment-templates\n      description: List all fault injection experiment templates\n      hints:\n        readOnly: true\n        openWorld: true\n      call: fis.list-experiment-templates\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-experiment-template\n      description: Design a new fault injection scenario with targets, actions,\
+  \ and stop conditions\n      hints:\n        readOnly: false\n      call: fis.create-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-experiment-template\n      description: Get the configuration of an experiment template\n      hints:\n        readOnly: true\n      call: fis.get-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-experiment-template\n      description: Modify targets, actions, or stop conditions of an experiment template\n      hints:\n        readOnly: false\n      call: fis.update-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-experiment-template\n      description: Remove an experiment template\n      hints:\n        readOnly: false\n        destructive: true\n      call: fis.delete-experiment-template\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-experiment\n\
+  \      description: Execute a fault injection experiment from a template\n      hints:\n        readOnly: false\n        destructive: true\n      call: fis.start-experiment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-experiment\n      description: Monitor the status and progress of a fault injection experiment\n      hints:\n        readOnly: true\n      call: fis.get-experiment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-experiments\n      description: List all experiments and their current status\n      hints:\n        readOnly: true\n      call: fis.list-experiments\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-experiment\n      description: Abort a running fault injection experiment\n      hints:\n        readOnly: false\n        destructive: true\n      call: fis.stop-experiment\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-actions\n\
+  \      description: Discover all available fault injection action types\n      hints:\n        readOnly: true\n      call: fis.list-actions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-action\n      description: Get details and parameters for a specific FIS action\n      hints:\n        readOnly: true\n      call: fis.get-action\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-safety-lever\n      description: Check the status of a safety lever for experiment control\n      hints:\n        readOnly: true\n      call: fis.get-safety-lever\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-safety-lever-state\n      description: Engage or disengage a safety lever to allow or block experiments\n      hints:\n        readOnly: false\n      call: fis.update-safety-lever-state\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-fault-injection-simulator/refs/heads/main/capabilities/amazon-fis-chaos-engineering.yaml
 tags:
 - AWS FIS

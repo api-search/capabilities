@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- contract testing
-- spec-driven integration
-- get result
-- mcp
-- run contract test
-- capabilities
 - naftiko
+- get result
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
+- run contract test
+- contract testing
 slug: naftiko-contract-test-capability
 source_filename: naftiko-contract-test-capability.yaml
 source_heading: Capability Spec

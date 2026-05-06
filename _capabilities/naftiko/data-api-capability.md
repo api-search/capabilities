@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- snowflake
-- spec-driven integration
+- naftiko
 - run sql
+- get statement
+- api integration
+- governance
+- spec-driven integration
+- ai
+- snowflake
+- data api
 - mcp
 - capabilities
-- get statement
-- naftiko
-- api integration
-- data api
-- governance
-- ai
 slug: data-api-capability
 source_filename: data-api-capability.yaml
 source_heading: Capability Spec

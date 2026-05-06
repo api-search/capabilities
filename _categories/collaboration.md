@@ -18,7 +18,7 @@ implementations:
 - capability_name: Microsoft Office 365 Productivity and Collaboration
   capability_slug: productivity-and-collaboration
   capability_url: https://capabilities.apis.io/capabilities/microsoft-office-365/productivity-and-collaboration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Microsoft Office 365
   provider_slug: microsoft-office-365
@@ -32,7 +32,7 @@ implementations:
 - capability_name: Microsoft Planner Task Management
   capability_slug: task-management
   capability_url: https://capabilities.apis.io/capabilities/microsoft-planner/task-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 13
   provider_name: Microsoft Planner
   provider_slug: microsoft-planner
@@ -45,7 +45,7 @@ implementations:
 - capability_name: Microsoft Teams Collaboration
   capability_slug: team-collaboration
   capability_url: https://capabilities.apis.io/capabilities/microsoft-teams/team-collaboration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Microsoft Teams
   provider_slug: microsoft-teams
@@ -57,7 +57,7 @@ implementations:
 - capability_name: Microsoft Word Document Management
   capability_slug: document-management
   capability_url: https://capabilities.apis.io/capabilities/microsoft-word/document-management/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Microsoft Word
   provider_slug: microsoft-word
@@ -70,7 +70,7 @@ implementations:
 - capability_name: Perforce Code Review and Collaboration
   capability_slug: code-review-collaboration
   capability_url: https://capabilities.apis.io/capabilities/perforce/code-review-collaboration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Perforce
   provider_slug: perforce
@@ -83,7 +83,7 @@ implementations:
 - capability_name: Pluralsight Engineering Metrics
   capability_slug: engineering-metrics
   capability_url: https://capabilities.apis.io/capabilities/pluralsight/engineering-metrics/
-  consumed_api_count: 6
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Pluralsight
   provider_slug: pluralsight

@@ -9,11 +9,11 @@ personas: []
 provider_name: Arlula
 provider_slug: arlula
 search_terms:
-- geospatial
-- earth observation
-- remote sensing
-- imagery
 - satellites
+- earth observation
+- geospatial
+- imagery
+- remote sensing
 slug: satellite-imagery-operations
 source_filename: satellite-imagery-operations.yaml
 source_heading: Capability Spec

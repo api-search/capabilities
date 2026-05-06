@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- swiftref
+consumed_apis: []
 description: Unified payment validation capability combining the SWIFT SwiftRef reference data API. Enables payment operations teams and fintech developers to validate BICs, IBANs, LEIs, and routing codes before payment execution to achieve higher straight-through processing rates.
 layout: capability
 name: SWIFT Payment Validation
@@ -34,57 +33,60 @@ personas: []
 provider_name: SWIFT
 provider_slug: swift
 search_terms:
-- get iban details
-- get lei
-- look up national clearing code or routing number details and associated bics
-- validate a bic
-- get bic details
-- get national id
-- validate iban format, check digits, country code, and bban structure
-- validate an iban
-- validate a bic is registered and active in the swift network
-- swift
-- look up national clearing codes
-- iban validation
-- check whether a bic is reachable via sepa ct, dd, or instant schemes
-- validate a legal entity identifier is active in gleif
-- look up iban details including associated bic, bank code, and account structure
-- payments
-- validate lei
-- financial messaging
-- banking
-- validate iban
-- validation
-- get lei details
-- validate bic
-- look up bic details including institution name, country, and swift connectivity
-- cross-border payments
-- validate and look up bic details
-- get bic sepa reachability
-- gpi
-- get iban
 - get bic
-- get bic for iban
+- get bic details
 - reference data
-- iso 20022
-- financial services
-- look up legal entity identifier details and gleif registration status
-- bic validation
-- look up iban details and bic
-- look up lei details
 - resolve the bic routing code for a given iban
+- validate a bic
+- look up national clearing code or routing number details and associated bics
+- get iban
+- financial services
+- validate lei
+- cross-border payments
+- iban validation
+- validate a bic is registered and active in the swift network
+- check whether a bic is reachable via sepa ct, dd, or instant schemes
+- validate and look up bic details
+- swift
+- bic validation
+- validate iban format, check digits, country code, and bban structure
+- get lei
+- iso 20022
+- get national id
+- financial messaging
+- look up national clearing codes
+- gpi
+- look up iban details and bic
 - get national id details
+- validate bic
+- get iban details
+- get bic sepa reachability
+- get lei details
+- look up legal entity identifier details and gleif registration status
+- payments
+- validate iban
+- look up bic details including institution name, country, and swift connectivity
+- validate a legal entity identifier is active in gleif
+- get bic for iban
+- look up lei details
+- validation
+- banking
+- validate an iban
+- look up iban details including associated bic, bank code, and account structure
 slug: payment-validation
 source_filename: payment-validation.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"SWIFT Payment Validation\"\n  description: >-\n    Unified payment validation capability combining the SWIFT SwiftRef reference\n    data API. Enables payment operations teams and fintech developers to validate\n    BICs, IBANs, LEIs, and routing codes before payment execution to achieve\n    higher straight-through processing rates.\n  tags:\n    - BIC Validation\n    - Financial Services\n    - IBAN Validation\n    - ISO 20022\n    - Payments\n    - Reference Data\n    - SWIFT\n    - Validation\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      SWIFT_CLIENT_ID: SWIFT_CLIENT_ID\n      SWIFT_CLIENT_SECRET: SWIFT_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: swiftref\n      location: ./shared/swift-swiftref.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: swift-validation-api\n      description: \"Unified REST API for SWIFT financial identifier\
-  \ validation.\"\n      resources:\n        - path: /v1/bics/{bic}\n          name: bics\n          description: \"Validate and look up BIC details\"\n          operations:\n            - method: GET\n              name: get-bic\n              description: \"Get BIC Details\"\n              call: \"swiftref.get-bic\"\n              with:\n                bic: \"rest.bic\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/bics/{bic}/validity\n          name: bic-validity\n          description: \"Validate a BIC\"\n          operations:\n            - method: GET\n              name: validate-bic\n              description: \"Validate BIC\"\n              call: \"swiftref.validate-bic\"\n              with:\n                bic: \"rest.bic\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ibans/{iban}\n          name: ibans\n          description:\
-  \ \"Look up IBAN details and BIC\"\n          operations:\n            - method: GET\n              name: get-iban\n              description: \"Get IBAN Details\"\n              call: \"swiftref.get-iban\"\n              with:\n                iban: \"rest.iban\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/ibans/{iban}/validity\n          name: iban-validity\n          description: \"Validate an IBAN\"\n          operations:\n            - method: GET\n              name: validate-iban\n              description: \"Validate IBAN\"\n              call: \"swiftref.validate-iban\"\n              with:\n                iban: \"rest.iban\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/leis/{lei}\n          name: leis\n          description: \"Look up LEI details\"\n          operations:\n            - method: GET\n              name: get-lei\n\
-  \              description: \"Get LEI Details\"\n              call: \"swiftref.get-lei\"\n              with:\n                lei: \"rest.lei\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/national-ids/{national_id}\n          name: national-ids\n          description: \"Look up national clearing codes\"\n          operations:\n            - method: GET\n              name: get-national-id\n              description: \"Get National ID Details\"\n              call: \"swiftref.get-national-id\"\n              with:\n                national_id: \"rest.national_id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: swift-validation-mcp\n      transport: http\n      description: \"MCP server for AI-assisted SWIFT payment identifier validation.\"\n      tools:\n        - name: get-bic\n          description:\
-  \ \"Look up BIC details including institution name, country, and SWIFT connectivity\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.get-bic\"\n          with:\n            bic: \"tools.bic\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: validate-bic\n          description: \"Validate a BIC is registered and active in the SWIFT network\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.validate-bic\"\n          with:\n            bic: \"tools.bic\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-bic-sepa-reachability\n          description: \"Check whether a BIC is reachable via SEPA CT, DD, or Instant schemes\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.get-bic\"\n          with:\n           \
-  \ bic: \"tools.bic\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-iban\n          description: \"Look up IBAN details including associated BIC, bank code, and account structure\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.get-iban\"\n          with:\n            iban: \"tools.iban\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: validate-iban\n          description: \"Validate IBAN format, check digits, country code, and BBAN structure\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.validate-iban\"\n          with:\n            iban: \"tools.iban\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-bic-for-iban\n          description: \"Resolve the BIC routing code for a given IBAN\"\n\
-  \          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.get-bic-for-iban\"\n          with:\n            iban: \"tools.iban\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-lei\n          description: \"Look up Legal Entity Identifier details and GLEIF registration status\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.get-lei\"\n          with:\n            lei: \"tools.lei\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: validate-lei\n          description: \"Validate a Legal Entity Identifier is active in GLEIF\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.validate-lei\"\n          with:\n            lei: \"tools.lei\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n\n        - name: get-national-id\n          description: \"Look up national clearing code or routing number details and associated BICs\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"swiftref.get-national-id\"\n          with:\n            national_id: \"tools.national_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: SWIFT Payment Validation\n  description: Unified payment validation capability combining the SWIFT SwiftRef reference data API. Enables payment operations\n    teams and fintech developers to validate BICs, IBANs, LEIs, and routing codes before payment execution to achieve higher\n    straight-through processing rates.\n  tags:\n  - BIC Validation\n  - Financial Services\n  - IBAN Validation\n  - ISO 20022\n  - Payments\n  - Reference Data\n  - SWIFT\n  - Validation\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    SWIFT_CLIENT_ID: SWIFT_CLIENT_ID\n    SWIFT_CLIENT_SECRET: SWIFT_CLIENT_SECRET\ncapability:\n  consumes:\n  - type: http\n    namespace: swiftref\n    baseUri: https://api.swift.com/swiftrefdata\n    description: SWIFT SwiftRef reference data lookup and validation\n    authentication:\n      type: bearer\n      token: '{{SWIFTREF_ACCESS_TOKEN}}'\n    resources:\n    - name: bics\n   \
+  \   path: /v2/bics/{bic}\n      description: BIC lookup and validation\n      operations:\n      - name: get-bic\n        method: GET\n        description: Get BIC Details\n        inputParameters:\n        - name: bic\n          in: path\n          type: string\n          required: true\n          description: 8 or 11 character BIC\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: validate-bic\n        method: GET\n        description: Validate BIC\n        inputParameters:\n        - name: bic\n          in: path\n          type: string\n          required: true\n          description: BIC to validate\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: ibans\n      path: /v2/ibans/{iban}\n      description: IBAN lookup and validation\n      operations:\n      - name: get-iban\n        method: GET\n        description:\
+  \ Get IBAN Details\n        inputParameters:\n        - name: iban\n          in: path\n          type: string\n          required: true\n          description: IBAN without spaces\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: validate-iban\n        method: GET\n        description: Validate IBAN\n        inputParameters:\n        - name: iban\n          in: path\n          type: string\n          required: true\n          description: IBAN to validate\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-bic-for-iban\n        method: GET\n        description: Get BIC for IBAN\n        inputParameters:\n        - name: iban\n          in: path\n          type: string\n          required: true\n          description: IBAN to resolve BIC for\n        outputRawFormat: json\n        outputParameters:\n  \
+  \      - name: result\n          type: object\n          value: $.\n    - name: leis\n      path: /v2/leis/{lei}\n      description: LEI lookup and validation\n      operations:\n      - name: get-lei\n        method: GET\n        description: Get LEI Details\n        inputParameters:\n        - name: lei\n          in: path\n          type: string\n          required: true\n          description: 20-character LEI\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: validate-lei\n        method: GET\n        description: Validate LEI\n        inputParameters:\n        - name: lei\n          in: path\n          type: string\n          required: true\n          description: LEI to validate\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: national-ids\n      path: /v2/national_ids/{national_id}\n      description:\
+  \ National ID lookup\n      operations:\n      - name: get-national-id\n        method: GET\n        description: Get National ID Details\n        inputParameters:\n        - name: national_id\n          in: path\n          type: string\n          required: true\n          description: National clearing code or routing number\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: validate-national-id\n        method: GET\n        description: Validate National ID\n        inputParameters:\n        - name: national_id\n          in: path\n          type: string\n          required: true\n          description: National ID to validate\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: swift-validation-api\n    description: Unified REST API for SWIFT financial identifier\
+  \ validation.\n    resources:\n    - path: /v1/bics/{bic}\n      name: bics\n      description: Validate and look up BIC details\n      operations:\n      - method: GET\n        name: get-bic\n        description: Get BIC Details\n        call: swiftref.get-bic\n        with:\n          bic: rest.bic\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/bics/{bic}/validity\n      name: bic-validity\n      description: Validate a BIC\n      operations:\n      - method: GET\n        name: validate-bic\n        description: Validate BIC\n        call: swiftref.validate-bic\n        with:\n          bic: rest.bic\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ibans/{iban}\n      name: ibans\n      description: Look up IBAN details and BIC\n      operations:\n      - method: GET\n        name: get-iban\n        description: Get IBAN Details\n        call: swiftref.get-iban\n        with:\n          iban: rest.iban\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ibans/{iban}/validity\n      name: iban-validity\n      description: Validate an IBAN\n      operations:\n      - method: GET\n        name: validate-iban\n        description: Validate IBAN\n        call: swiftref.validate-iban\n        with:\n          iban: rest.iban\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/leis/{lei}\n      name: leis\n      description: Look up LEI details\n      operations:\n      - method: GET\n        name: get-lei\n        description: Get LEI Details\n        call: swiftref.get-lei\n        with:\n          lei: rest.lei\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/national-ids/{national_id}\n      name: national-ids\n      description: Look up national clearing codes\n      operations:\n      - method: GET\n        name: get-national-id\n        description: Get National ID\
+  \ Details\n        call: swiftref.get-national-id\n        with:\n          national_id: rest.national_id\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: swift-validation-mcp\n    transport: http\n    description: MCP server for AI-assisted SWIFT payment identifier validation.\n    tools:\n    - name: get-bic\n      description: Look up BIC details including institution name, country, and SWIFT connectivity\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.get-bic\n      with:\n        bic: tools.bic\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: validate-bic\n      description: Validate a BIC is registered and active in the SWIFT network\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.validate-bic\n      with:\n        bic: tools.bic\n      outputParameters:\n      - type: object\n        mapping: $.\n    -\
+  \ name: get-bic-sepa-reachability\n      description: Check whether a BIC is reachable via SEPA CT, DD, or Instant schemes\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.get-bic\n      with:\n        bic: tools.bic\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-iban\n      description: Look up IBAN details including associated BIC, bank code, and account structure\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.get-iban\n      with:\n        iban: tools.iban\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: validate-iban\n      description: Validate IBAN format, check digits, country code, and BBAN structure\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.validate-iban\n      with:\n        iban: tools.iban\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-bic-for-iban\n\
+  \      description: Resolve the BIC routing code for a given IBAN\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.get-bic-for-iban\n      with:\n        iban: tools.iban\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-lei\n      description: Look up Legal Entity Identifier details and GLEIF registration status\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.get-lei\n      with:\n        lei: tools.lei\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: validate-lei\n      description: Validate a Legal Entity Identifier is active in GLEIF\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.validate-lei\n      with:\n        lei: tools.lei\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-national-id\n      description: Look up national clearing code or routing number details and\
+  \ associated BICs\n      hints:\n        readOnly: true\n        idempotent: true\n      call: swiftref.get-national-id\n      with:\n        national_id: tools.national_id\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/swift/refs/heads/main/capabilities/payment-validation.yaml
 tags:
 - BIC Validation

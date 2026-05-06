@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- publisher
-- refresh catalog
-- backstage
-- spec-driven integration
-- mcp
-- ai
-- capabilities
 - naftiko
+- backstage
+- publish template
 - api integration
 - governance
-- publish template
+- spec-driven integration
+- ai
+- refresh catalog
+- mcp
+- publisher
+- capabilities
 slug: backstage-software-template-publisher
 source_filename: backstage-software-template-publisher.yaml
 source_heading: Capability Spec

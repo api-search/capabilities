@@ -1,8 +1,7 @@
 ---
 categories:
 - identity-access
-consumed_apis:
-- atlassian-admin
+consumed_apis: []
 description: Platform administration workflow combining Admin Organizations, User Management, User Provisioning, and Jira Configuration APIs for IT administrators to manage users, groups, organizations, and platform settings.
 layout: capability
 name: Atlassian Platform Administration
@@ -35,49 +34,51 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- list organization users
-- platform
-- list organizations
-- policy management
-- list users
-- list domains in an organization
 - list events
-- list audit events
-- list all atlassian organizations
-- organization management
+- list organization policies
+- list policies
 - list organization domains
-- domain management
-- list organization groups
-- list domains
-- atlassian
-- administration
+- list users in an organization
+- identity
+- list atlassian organizations
+- list organizations
 - list groups in an organization
+- list organization users
+- policy management
+- list all atlassian organizations
+- list organization audit events
+- organization management
+- get organization
+- software development
+- atlassian
+- get organization details
+- productivity
+- list domains in an organization
+- audit events
 - group management
 - code
-- list users in an organization
-- get organization details
-- list atlassian organizations
-- list organization policies
-- software development
-- get organization
-- user management
-- list organization audit events
-- list policies
-- productivity
-- audit events
-- identity
-- collaboration
+- list organization groups
+- administration
+- list domains
+- domain management
+- platform
+- list users
+- list audit events
 - list groups
+- collaboration
+- user management
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Atlassian Platform Administration\"\n  description: \"Platform administration workflow combining Admin Organizations, User Management, User Provisioning, and Jira Configuration APIs for IT administrators to manage users, groups, organizations, and platform settings.\"\n  tags:\n    - Administration\n    - Atlassian\n    - Identity\n    - Platform\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n      ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n      ATLASSIAN_SITE: ATLASSIAN_SITE\n\ncapability:\n  consumes:\n    - import: atlassian-admin\n      location: ./shared/admin.yaml\n\n  exposes:\n    - type: rest\n      port: 8083\n      namespace: atlassian-platform-admin-api\n      description: \"Unified REST API for Atlassian platform administration.\"\n      resources:\n        - path: /v1/organizations\n          name: organizations\n          description:\
-  \ \"Organization management\"\n          operations:\n            - method: GET\n              name: list-organizations\n              description: \"List Atlassian organizations\"\n              call: \"atlassian-admin.list-organizations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n              description: \"List organization users\"\n              call: \"atlassian-admin.list-users\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/groups\n          name: groups\n          description: \"Group management\"\n          operations:\n            - method: GET\n              name: list-groups\n              description: \"List\
-  \ organization groups\"\n              call: \"atlassian-admin.list-groups\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/domains\n          name: domains\n          description: \"Domain management\"\n          operations:\n            - method: GET\n              name: list-domains\n              description: \"List organization domains\"\n              call: \"atlassian-admin.list-domains\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/policies\n          name: policies\n          description: \"Policy management\"\n          operations:\n            - method: GET\n              name: list-policies\n              description: \"List organization policies\"\n              call: \"atlassian-admin.list-policies\"\n    \
-  \          with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/events\n          name: events\n          description: \"Audit events\"\n          operations:\n            - method: GET\n              name: list-events\n              description: \"List audit events\"\n              call: \"atlassian-admin.list-events\"\n              with:\n                orgId: \"rest.orgId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9093\n      namespace: atlassian-platform-admin-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Atlassian platform administration.\"\n      tools:\n        - name: list-organizations\n          description: \"List all Atlassian organizations\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"atlassian-admin.list-organizations\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-organization\n          description: \"Get organization details\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.get-organization\"\n          with:\n            orgId: \"tools.orgId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List users in an organization\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-users\"\n          with:\n            orgId: \"tools.orgId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-groups\n          description: \"List groups in an organization\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-groups\"\n          with:\n            orgId: \"tools.orgId\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: list-domains\n          description: \"List domains in an organization\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-domains\"\n          with:\n            orgId: \"tools.orgId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-policies\n          description: \"List organization policies\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-policies\"\n          with:\n            orgId: \"tools.orgId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-events\n          description: \"List organization audit events\"\n          hints:\n            readOnly: true\n          call: \"atlassian-admin.list-events\"\n          with:\n            orgId: \"tools.orgId\"\n          outputParameters:\n            - type: object\n\
-  \              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Atlassian Platform Administration\n  description: Platform administration workflow combining Admin Organizations, User Management, User Provisioning, and Jira\n    Configuration APIs for IT administrators to manage users, groups, organizations, and platform settings.\n  tags:\n  - Administration\n  - Atlassian\n  - Identity\n  - Platform\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    ATLASSIAN_API_TOKEN: ATLASSIAN_API_TOKEN\n    ATLASSIAN_EMAIL: ATLASSIAN_EMAIL\n    ATLASSIAN_SITE: ATLASSIAN_SITE\ncapability:\n  consumes:\n  - type: http\n    namespace: atlassian-admin\n    baseUri: https://api.atlassian.com\n    description: Atlassian Admin API for organization management.\n    authentication:\n      type: bearer\n      token: '{{ATLASSIAN_API_TOKEN}}'\n    resources:\n    - name: organizations\n      path: /v1/orgs\n      description: Organization management\n      operations:\n      - name:\
+  \ list-organizations\n        method: GET\n        description: List accessible organizations\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-organization\n        method: GET\n        description: Get organization details\n        inputParameters:\n        - name: orgId\n          in: path\n          type: string\n          required: true\n          description: Organization ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: users\n      path: /v1/orgs/{orgId}/users\n      description: User management within organization\n      operations:\n      - name: list-users\n        method: GET\n        description: List users in organization\n        inputParameters:\n        - name: orgId\n          in: path\n          type: string\n          required: true\n          description: Organization ID\n      \
+  \  outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: domains\n      path: /v1/orgs/{orgId}/domains\n      description: Domain management\n      operations:\n      - name: list-domains\n        method: GET\n        description: List domains in organization\n        inputParameters:\n        - name: orgId\n          in: path\n          type: string\n          required: true\n          description: Organization ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: groups\n      path: /v1/orgs/{orgId}/groups\n      description: Group management\n      operations:\n      - name: list-groups\n        method: GET\n        description: List groups in organization\n        inputParameters:\n        - name: orgId\n          in: path\n          type: string\n          required: true\n          description: Organization ID\n     \
+  \   outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: policies\n      path: /v1/orgs/{orgId}/policies\n      description: Policy management\n      operations:\n      - name: list-policies\n        method: GET\n        description: List organization policies\n        inputParameters:\n        - name: orgId\n          in: path\n          type: string\n          required: true\n          description: Organization ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: events\n      path: /v1/orgs/{orgId}/events\n      description: Audit events\n      operations:\n      - name: list-events\n        method: GET\n        description: List organization audit events\n        inputParameters:\n        - name: orgId\n          in: path\n          type: string\n          required: true\n          description: Organization ID\n    \
+  \    outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8083\n    namespace: atlassian-platform-admin-api\n    description: Unified REST API for Atlassian platform administration.\n    resources:\n    - path: /v1/organizations\n      name: organizations\n      description: Organization management\n      operations:\n      - method: GET\n        name: list-organizations\n        description: List Atlassian organizations\n        call: atlassian-admin.list-organizations\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      description: User management\n      operations:\n      - method: GET\n        name: list-users\n        description: List organization users\n        call: atlassian-admin.list-users\n        with:\n          orgId: rest.orgId\n        outputParameters:\n        - type: object\n          mapping:\
+  \ $.\n    - path: /v1/groups\n      name: groups\n      description: Group management\n      operations:\n      - method: GET\n        name: list-groups\n        description: List organization groups\n        call: atlassian-admin.list-groups\n        with:\n          orgId: rest.orgId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/domains\n      name: domains\n      description: Domain management\n      operations:\n      - method: GET\n        name: list-domains\n        description: List organization domains\n        call: atlassian-admin.list-domains\n        with:\n          orgId: rest.orgId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/policies\n      name: policies\n      description: Policy management\n      operations:\n      - method: GET\n        name: list-policies\n        description: List organization policies\n        call: atlassian-admin.list-policies\n        with:\n          orgId:\
+  \ rest.orgId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/events\n      name: events\n      description: Audit events\n      operations:\n      - method: GET\n        name: list-events\n        description: List audit events\n        call: atlassian-admin.list-events\n        with:\n          orgId: rest.orgId\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9093\n    namespace: atlassian-platform-admin-mcp\n    transport: http\n    description: MCP server for AI-assisted Atlassian platform administration.\n    tools:\n    - name: list-organizations\n      description: List all Atlassian organizations\n      hints:\n        readOnly: true\n        openWorld: true\n      call: atlassian-admin.list-organizations\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-organization\n      description: Get organization details\n      hints:\n        readOnly: true\n\
+  \      call: atlassian-admin.get-organization\n      with:\n        orgId: tools.orgId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-users\n      description: List users in an organization\n      hints:\n        readOnly: true\n      call: atlassian-admin.list-users\n      with:\n        orgId: tools.orgId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-groups\n      description: List groups in an organization\n      hints:\n        readOnly: true\n      call: atlassian-admin.list-groups\n      with:\n        orgId: tools.orgId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-domains\n      description: List domains in an organization\n      hints:\n        readOnly: true\n      call: atlassian-admin.list-domains\n      with:\n        orgId: tools.orgId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-policies\n      description: List organization\
+  \ policies\n      hints:\n        readOnly: true\n      call: atlassian-admin.list-policies\n      with:\n        orgId: tools.orgId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-events\n      description: List organization audit events\n      hints:\n        readOnly: true\n      call: atlassian-admin.list-events\n      with:\n        orgId: tools.orgId\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/atlassian/refs/heads/main/capabilities/platform-administration.yaml
 tags:
 - Administration

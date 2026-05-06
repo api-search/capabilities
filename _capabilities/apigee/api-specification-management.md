@@ -1,9 +1,7 @@
 ---
 categories:
 - api-management
-consumed_apis:
-- api-hub
-- registry
+consumed_apis: []
 description: Unified workflow for managing API specifications on Apigee — browsing the API Hub catalog, retrieving spec contents, linting for compliance, and cross-referencing with Registry artifacts. Provides API product managers and governance teams a single surface to inspect, validate, and govern the specifications that define your API contracts.
 layout: capability
 name: Apigee API Specification Management
@@ -24,59 +22,66 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
-- developer portal
-- apis catalogued in api hub.
-- list registry apis
-- manager packaging api products and managing developer relationships.
 - lint api spec
-- list all apis in the api hub catalog.
-- engineer managing api proxies, deployments, and policies in apigee.
-- enterprise
-- list all apis catalogued in apigee api hub — the primary api inventory for governance.
-- apigee
-- analytics
-- api hub
-- apis tracked in the apigee registry.
-- google cloud
-- API Governance Lead
-- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- Platform Architect
-- API Platform Engineer
 - list spec artifacts in the apigee registry for a specific api version.
-- hybrid
-- microservices
-- architect overseeing api platform strategy and governance across the organization.
-- integrations
+- API Platform Engineer
+- API Governance Lead
+- apis tracked in the apigee registry.
+- api specifications
+- analytics
+- list api versions
+- apis catalogued in api hub.
+- developer portal
+- list specs for an api version.
+- retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
+- Platform Architect
+- list registry apis
+- list apis tracked in the apigee registry (legacy spec store, use for orgs not yet migrated to hub).
+- list registry specs
+- list apis in the registry.
+- enterprise
+- google cloud
+- apigee
 - openapi
 - api governance
-- api management
-- specs for a given api version in hub.
-- list api versions
-- list specs for an api version.
-- api specifications
-- list versions of a specific api in the hub catalog.
-- list openapi and other specs attached to an api version in the hub.
+- integrations
+- hybrid
+- API Product Manager
 - monetization
 - lint an api spec for compliance and quality violations — returns issues with severity and location.
-- list apis in the registry.
-- retrieve the raw contents of an api spec — useful for inspection, diffing, or feeding to an ai agent.
-- list hub specs
-- api gateway
-- API Product Manager
-- get api spec contents
-- list api specs
-- list registry specs
 - list hub apis
+- list hub specs
+- api hub
+- list api specs
+- list all apis catalogued in apigee api hub — the primary api inventory for governance.
+- api gateway
+- api management
+- list versions of a specific api in the hub catalog.
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- manager packaging api products and managing developer relationships.
+- engineer managing api proxies, deployments, and policies in apigee.
+- list all apis in the api hub catalog.
+- architect overseeing api platform strategy and governance across the organization.
+- microservices
+- list openapi and other specs attached to an api version in the hub.
+- get api spec contents
+- specs for a given api version in hub.
 slug: api-specification-management
 source_filename: api-specification-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Apigee API Specification Management\"\n  description: \"Unified workflow for managing API specifications on Apigee — browsing the API Hub catalog, retrieving spec contents, linting for compliance, and cross-referencing with Registry artifacts. Provides API product managers and governance teams a single surface to inspect, validate, and govern the specifications that define your API contracts.\"\n  tags:\n    - Apigee\n    - API Specifications\n    - API Governance\n    - OpenAPI\n    - Google Cloud\n  created: \"2026-04-20\"\n  modified: \"2026-04-20\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\n\ncapability:\n  consumes:\n    - import: api-hub\n      location: ./shared/api-hub.yaml\n    - import: registry\n      location: ./shared/registry.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: apigee-specs-api\n      description: \"Unified REST API for Apigee API\
-  \ specification management.\"\n      resources:\n        - path: /v1/hub/apis\n          name: hub-apis\n          description: \"APIs catalogued in API Hub.\"\n          operations:\n            - method: GET\n              name: list-hub-apis\n              description: \"List all APIs in the API Hub catalog.\"\n              call: \"api-hub.listApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/hub/specs\n          name: hub-specs\n          description: \"Specs for a given API version in Hub.\"\n          operations:\n            - method: GET\n              name: list-hub-specs\n              description: \"List specs for an API version.\"\n              call: \"api-hub.listApiSpecs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/registry/apis\n          name: registry-apis\n          description: \"APIs tracked in the Apigee Registry.\"\
-  \n          operations:\n            - method: GET\n              name: list-registry-apis\n              description: \"List APIs in the Registry.\"\n              call: \"registry.listApis\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: apigee-specs-mcp\n      transport: http\n      description: \"MCP server for AI-assisted API specification management and governance.\"\n      tools:\n        - name: list-hub-apis\n          description: \"List all APIs catalogued in Apigee API Hub — the primary API inventory for governance.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-hub.listApis\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-api-versions\n          description: \"List versions of a specific API in the Hub catalog.\"\n   \
-  \       hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-hub.listApiVersions\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-api-specs\n          description: \"List OpenAPI and other specs attached to an API version in the Hub.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-hub.listApiSpecs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-api-spec-contents\n          description: \"Retrieve the raw contents of an API spec — useful for inspection, diffing, or feeding to an AI agent.\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"api-hub.getApiSpecContents\"\n          outputParameters:\n            - type: object\n        \
-  \      mapping: \"$.\"\n\n        - name: lint-api-spec\n          description: \"Lint an API spec for compliance and quality violations — returns issues with severity and location.\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"api-hub.lintApiSpec\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-registry-apis\n          description: \"List APIs tracked in the Apigee Registry (legacy spec store, use for orgs not yet migrated to Hub).\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"registry.listApis\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-registry-specs\n          description: \"List spec artifacts in the Apigee Registry for a specific API version.\"\n          hints:\n            readOnly:\
-  \ true\n            destructive: false\n            idempotent: true\n          call: \"registry.listApiSpecs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Apigee API Specification Management\n  description: Unified workflow for managing API specifications on Apigee — browsing the API Hub catalog, retrieving spec\n    contents, linting for compliance, and cross-referencing with Registry artifacts. Provides API product managers and governance\n    teams a single surface to inspect, validate, and govern the specifications that define your API contracts.\n  tags:\n  - Apigee\n  - API Specifications\n  - API Governance\n  - OpenAPI\n  - Google Cloud\n  created: '2026-04-20'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    GOOGLE_ACCESS_TOKEN: GOOGLE_ACCESS_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: api-hub\n    baseUri: https://apihub.googleapis.com/v1\n    description: Apigee API Hub REST API.\n    authentication:\n      type: bearer\n      token: '{{GOOGLE_ACCESS_TOKEN}}'\n    resources:\n    - name: apis\n      path: /projects/{projectId}/locations/{locationId}/apis\n\
+  \      operations:\n      - name: listApis\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        - name: filter\n          in: query\n        outputParameters:\n        - name: apis\n          type: array\n          value: $.apis\n    - name: api\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}\n      operations:\n      - name: getApi\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        outputParameters:\n        - name: api\n          type: object\n          value: $.\n    - name: api-versions\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions\n      operations:\n      - name: listApiVersions\n        method:\
+  \ GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        outputParameters:\n        - name: versions\n          type: array\n          value: $.versions\n    - name: api-specs\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions/{versionId}/specs\n      operations:\n      - name: listApiSpecs\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        - name: versionId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        outputParameters:\n        - name: specs\n          type: array\n          value: $.specs\n    - name: api-spec-contents\n   \
+  \   path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions/{versionId}/specs/{specId}:getContents\n      operations:\n      - name: getApiSpecContents\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        - name: versionId\n          in: path\n        - name: specId\n          in: path\n        outputParameters:\n        - name: contents\n          type: object\n          value: $.\n    - name: api-spec-lint\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions/{versionId}/specs/{specId}:lint\n      operations:\n      - name: lintApiSpec\n        method: POST\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        - name: versionId\n          in: path\n        - name: specId\n          in:\
+  \ path\n        outputParameters:\n        - name: operation\n          type: object\n          value: $.\n    - name: deployments\n      path: /projects/{projectId}/locations/{locationId}/deployments\n      operations:\n      - name: listDeployments\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        - name: filter\n          in: query\n        outputParameters:\n        - name: deployments\n          type: array\n          value: $.deployments\n    - name: dependencies\n      path: /projects/{projectId}/locations/{locationId}/dependencies\n      operations:\n      - name: listDependencies\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n\
+  \          in: query\n        - name: filter\n          in: query\n        outputParameters:\n        - name: dependencies\n          type: array\n          value: $.dependencies\n    - name: search\n      path: /projects/{projectId}/locations/{locationId}:searchResources\n      operations:\n      - name: searchResources\n        method: POST\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        outputParameters:\n        - name: searchResults\n          type: array\n          value: $.searchResults\n  - type: http\n    namespace: registry\n    baseUri: https://apigeeregistry.googleapis.com/v1\n    description: Apigee Registry REST API.\n    authentication:\n      type: bearer\n      token: '{{GOOGLE_ACCESS_TOKEN}}'\n    resources:\n    - name: apis\n      path: /projects/{projectId}/locations/{locationId}/apis\n      operations:\n      - name: listApis\n        method: GET\n        inputParameters:\n        -\
+  \ name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        - name: filter\n          in: query\n        outputParameters:\n        - name: apis\n          type: array\n          value: $.apis\n    - name: api\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}\n      operations:\n      - name: getApi\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        outputParameters:\n        - name: api\n          type: object\n          value: $.\n    - name: api-versions\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions\n      operations:\n      - name: listApiVersions\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n\
+  \          in: path\n        - name: apiId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        outputParameters:\n        - name: apiVersions\n          type: array\n          value: $.apiVersions\n    - name: api-specs\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions/{versionId}/specs\n      operations:\n      - name: listApiSpecs\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        - name: versionId\n          in: path\n        - name: pageSize\n          in: query\n        - name: pageToken\n          in: query\n        outputParameters:\n        - name: apiSpecs\n          type: array\n          value: $.apiSpecs\n    - name: api-spec-contents\n      path: /projects/{projectId}/locations/{locationId}/apis/{apiId}/versions/{versionId}/specs/{specId}:getContents\n\
+  \      operations:\n      - name: getApiSpecContents\n        method: GET\n        inputParameters:\n        - name: projectId\n          in: path\n        - name: locationId\n          in: path\n        - name: apiId\n          in: path\n        - name: versionId\n          in: path\n        - name: specId\n          in: path\n        outputParameters:\n        - name: contents\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8082\n    namespace: apigee-specs-api\n    description: Unified REST API for Apigee API specification management.\n    resources:\n    - path: /v1/hub/apis\n      name: hub-apis\n      description: APIs catalogued in API Hub.\n      operations:\n      - method: GET\n        name: list-hub-apis\n        description: List all APIs in the API Hub catalog.\n        call: api-hub.listApis\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/hub/specs\n      name: hub-specs\n      description: Specs\
+  \ for a given API version in Hub.\n      operations:\n      - method: GET\n        name: list-hub-specs\n        description: List specs for an API version.\n        call: api-hub.listApiSpecs\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/registry/apis\n      name: registry-apis\n      description: APIs tracked in the Apigee Registry.\n      operations:\n      - method: GET\n        name: list-registry-apis\n        description: List APIs in the Registry.\n        call: registry.listApis\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9092\n    namespace: apigee-specs-mcp\n    transport: http\n    description: MCP server for AI-assisted API specification management and governance.\n    tools:\n    - name: list-hub-apis\n      description: List all APIs catalogued in Apigee API Hub — the primary API inventory for governance.\n      hints:\n        readOnly: true\n        destructive: false\n\
+  \        idempotent: true\n      call: api-hub.listApis\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-api-versions\n      description: List versions of a specific API in the Hub catalog.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: api-hub.listApiVersions\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-api-specs\n      description: List OpenAPI and other specs attached to an API version in the Hub.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: api-hub.listApiSpecs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-api-spec-contents\n      description: Retrieve the raw contents of an API spec — useful for inspection, diffing, or feeding to an AI agent.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: api-hub.getApiSpecContents\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lint-api-spec\n      description: Lint an API spec for compliance and quality violations — returns issues with severity and location.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: api-hub.lintApiSpec\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-registry-apis\n      description: List APIs tracked in the Apigee Registry (legacy spec store, use for orgs not yet migrated to Hub).\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: registry.listApis\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-registry-specs\n      description: List spec artifacts in the Apigee Registry for a specific API version.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: registry.listApiSpecs\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/apigee/refs/heads/main/capabilities/api-specification-management.yaml
 tags:
 - Apigee

@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- create dsr
-- list dsr
-- gdpr
-- mcp
-- capabilities
 - naftiko
+- gdpr
+- list dsr
 - api integration
 - governance
+- spec-driven integration
+- create dsr
 - ai
+- mcp
+- capabilities
 - privacy
 - get dsr
 slug: gdpr-governance-capability

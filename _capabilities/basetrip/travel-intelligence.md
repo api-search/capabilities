@@ -10,20 +10,20 @@ provider_name: Basetrip
 provider_slug: basetrip
 search_terms:
 - safety
-- embed country, city, safety, cost, visa, and health data into travel platforms
-- countries
 - health
-- visa
-- content creator embedding destination guides with live data
-- Trip Planner
-- Travel Content Publisher
-- cities
-- developer building travel booking or trip planning apps
-- Travel App Developer
-- travel planning, booking, and destination information
-- individual or business planning international travel
 - travel
+- developer building travel booking or trip planning apps
+- travel planning, booking, and destination information
+- visa
+- individual or business planning international travel
 - travel safety ratings and advisories
+- countries
+- embed country, city, safety, cost, visa, and health data into travel platforms
+- content creator embedding destination guides with live data
+- cities
+- Travel App Developer
+- Travel Content Publisher
+- Trip Planner
 slug: travel-intelligence
 source_filename: travel-intelligence.yaml
 source_heading: Capability Spec

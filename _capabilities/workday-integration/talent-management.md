@@ -17,30 +17,30 @@ personas: []
 provider_name: Workday Integration
 provider_slug: workday-integration
 search_terms:
-- workday
-- list goals
-- integration
-- list employee goals
-- list talent profiles
-- enterprise
-- get performance review
-- hcm
-- finance
-- payroll
 - list learning enrollments
-- list enrollments
-- list performance reviews
-- learning
-- erp
-- performance
-- talent
-- list employee talent profiles
+- integration
+- list talent profiles
+- finance
 - get details of a performance review
-- list available learning courses
-- list courses
-- list employee performance reviews
-- list succession plans
+- get performance review
+- enterprise
+- payroll
+- erp
+- workday
+- list employee goals
 - succession
+- talent
+- hcm
+- list goals
+- list succession plans
+- list performance reviews
+- list available learning courses
+- performance
+- list employee performance reviews
+- list employee talent profiles
+- learning
+- list courses
+- list enrollments
 slug: talent-management
 source_filename: talent-management.yaml
 source_heading: Capability Spec

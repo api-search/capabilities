@@ -1,8 +1,7 @@
 ---
 categories:
 - automation
-consumed_apis:
-- alteryx-server
+consumed_apis: []
 description: Analytics automation workflow combining Alteryx Server V3 API for workflow management, job execution, scheduling, user administration, credential management, and collection organization. Used by data analysts and server administrators to automate analytics pipelines.
 layout: capability
 name: Alteryx Analytics Automation
@@ -39,84 +38,92 @@ personas: []
 provider_name: Alteryx
 provider_slug: alteryx
 search_terms:
-- delete a user
-- alteryx
-- create schedule
-- create credential
-- upload workflow
-- update workflow
-- list users
-- download workflow
-- predictive analytics
-- schedule management
-- list schedules
-- create a new credential
-- create user
-- get user
-- data engineering
-- delete collection
-- create job
-- analytics
-- create a new collection
-- list all schedules
-- workflow management
-- upload a new workflow package
-- download a workflow package
-- get analytic app questions for a workflow
-- create a new workflow schedule
-- upload a new workflow
-- create and execute a workflow job
-- create a new schedule
 - get workflow
-- etl
-- get user details
-- list workflows
-- get workflow questions
-- data science
-- update workflow metadata
-- get execution jobs for a workflow
-- individual workflow operations
-- collection management
-- create a new user
-- list all workflows on the alteryx server
-- delete user
-- delete a workflow
-- get workflow details
-- delete a collection
-- deactivate user
-- get workflow jobs
-- list all users
-- list all collections
-- machine learning
-- list all users on the server
 - data preparation
-- list all stored credentials
-- delete workflow
-- list credentials
-- get details of a specific workflow
-- user management
-- list all workflows
-- delete a workflow schedule
-- automation
+- list all workflows on the alteryx server
+- upload a new workflow package
 - list all workflow schedules
-- list collections
-- deactivate a user account
+- get details of a specific workflow
+- create job
+- create schedule
+- analytics
+- delete a collection
+- collection management
+- list credentials
+- get workflow details
 - create collection
+- get execution jobs for a workflow
+- delete a user
+- create a new user
+- create user
+- create credential
+- workflow management
+- deactivate a user account
+- data engineering
+- list all collections
+- list all stored credentials
+- list all users
+- upload a new workflow
+- list all schedules
+- etl
+- deactivate user
+- list all users on the server
+- create and execute a workflow job
 - delete schedule
+- delete user
+- create a new workflow schedule
+- create a new collection
+- update workflow
+- get workflow jobs
+- machine learning
+- delete a workflow schedule
+- create a new schedule
+- download a workflow package
+- list workflows
+- download workflow
+- delete collection
+- update workflow metadata
+- get user
+- data science
+- list all workflows
+- predictive analytics
+- list schedules
+- list users
+- individual workflow operations
+- get workflow questions
+- get user details
+- delete workflow
+- create a new credential
+- schedule management
+- alteryx
+- delete a workflow
+- upload workflow
+- list collections
+- user management
+- get analytic app questions for a workflow
+- automation
 slug: analytics-automation
 source_filename: analytics-automation.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Alteryx Analytics Automation\"\n  description: \"Analytics automation workflow combining Alteryx Server V3 API for workflow management, job execution, scheduling, user administration, credential management, and collection organization. Used by data analysts and server administrators to automate analytics pipelines.\"\n  tags:\n    - Alteryx\n    - Analytics\n    - Automation\n    - Data Engineering\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALTERYX_SERVER_URL: ALTERYX_SERVER_URL\n      ALTERYX_CLIENT_ID: ALTERYX_CLIENT_ID\n      ALTERYX_CLIENT_SECRET: ALTERYX_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: alteryx-server\n      location: ./shared/server-v3.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: alteryx-automation-api\n      description: \"Unified REST API for Alteryx analytics automation.\"\n      resources:\n        - path: /v1/workflows\n\
-  \          name: workflows\n          description: \"Workflow management\"\n          operations:\n            - method: GET\n              name: list-workflows\n              description: \"List all workflows\"\n              call: \"alteryx-server.get-workflows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: upload-workflow\n              description: \"Upload a new workflow\"\n              call: \"alteryx-server.upload-workflow\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/workflows/{workflowId}\n          name: workflow-detail\n          description: \"Individual workflow operations\"\n          operations:\n            - method: GET\n              name: get-workflow\n              description: \"Get workflow details\"\n              call: \"alteryx-server.get-workflow\"\n              with:\n          \
-  \      workflowId: \"rest.workflowId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/schedules\n          name: schedules\n          description: \"Schedule management\"\n          operations:\n            - method: GET\n              name: list-schedules\n              description: \"List all schedules\"\n              call: \"alteryx-server.get-schedules\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-schedule\n              description: \"Create a new schedule\"\n              call: \"alteryx-server.create-schedule\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users\n          name: users\n          description: \"User management\"\n          operations:\n            - method: GET\n              name: list-users\n           \
-  \   description: \"List all users\"\n              call: \"alteryx-server.get-users\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/collections\n          name: collections\n          description: \"Collection management\"\n          operations:\n            - method: GET\n              name: list-collections\n              description: \"List all collections\"\n              call: \"alteryx-server.get-collections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: alteryx-automation-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Alteryx analytics automation.\"\n      tools:\n        - name: list-workflows\n          description: \"List all workflows on the Alteryx Server\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"alteryx-server.get-workflows\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-workflow\n          description: \"Get details of a specific workflow\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-workflow\"\n          with:\n            workflowId: \"tools.workflow_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: upload-workflow\n          description: \"Upload a new workflow package\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.upload-workflow\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-workflow\n          description: \"Update workflow metadata\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"alteryx-server.update-workflow\"\n          with:\n            workflowId: \"tools.workflow_id\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: delete-workflow\n          description: \"Delete a workflow\"\n          hints:\n            destructive: true\n          call: \"alteryx-server.delete-workflow\"\n          with:\n            workflowId: \"tools.workflow_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: download-workflow\n          description: \"Download a workflow package\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.download-workflow-package\"\n          with:\n            workflowId: \"tools.workflow_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-workflow-questions\n          description: \"Get analytic app questions for a workflow\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-workflow-questions\"\n          with:\n            workflowId: \"\
-  tools.workflow_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-workflow-jobs\n          description: \"Get execution jobs for a workflow\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-workflow-jobs\"\n          with:\n            workflowId: \"tools.workflow_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-job\n          description: \"Create and execute a workflow job\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.create-job\"\n          with:\n            workflowId: \"tools.workflow_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-schedules\n          description: \"List all workflow schedules\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-schedules\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: create-schedule\n          description: \"Create a new workflow schedule\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.create-schedule\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-schedule\n          description: \"Delete a workflow schedule\"\n          hints:\n            destructive: true\n          call: \"alteryx-server.delete-schedule\"\n          with:\n            scheduleId: \"tools.schedule_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-users\n          description: \"List all users on the server\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-user\n          description: \"\
-  Create a new user\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.create-user\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Get user details\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-user\"\n          with:\n            userId: \"tools.user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-user\n          description: \"Delete a user\"\n          hints:\n            destructive: true\n          call: \"alteryx-server.delete-user\"\n          with:\n            userId: \"tools.user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deactivate-user\n          description: \"Deactivate a user account\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.deactivate-user\"\
-  \n          with:\n            userId: \"tools.user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-credentials\n          description: \"List all stored credentials\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-credentials\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-credential\n          description: \"Create a new credential\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.create-credential\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-collections\n          description: \"List all collections\"\n          hints:\n            readOnly: true\n          call: \"alteryx-server.get-collections\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-collection\n\
-  \          description: \"Create a new collection\"\n          hints:\n            readOnly: false\n          call: \"alteryx-server.create-collection\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-collection\n          description: \"Delete a collection\"\n          hints:\n            destructive: true\n          call: \"alteryx-server.delete-collection\"\n          with:\n            collectionId: \"tools.collection_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Alteryx Analytics Automation\n  description: Analytics automation workflow combining Alteryx Server V3 API for workflow management, job execution, scheduling,\n    user administration, credential management, and collection organization. Used by data analysts and server administrators\n    to automate analytics pipelines.\n  tags:\n  - Alteryx\n  - Analytics\n  - Automation\n  - Data Engineering\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    ALTERYX_SERVER_URL: ALTERYX_SERVER_URL\n    ALTERYX_CLIENT_ID: ALTERYX_CLIENT_ID\n    ALTERYX_CLIENT_SECRET: ALTERYX_CLIENT_SECRET\ncapability:\n  consumes:\n  - type: http\n    namespace: alteryx-server\n    baseUri: https://your-server.example.com/webapi\n    description: Alteryx Server V3 administration API\n    authentication:\n      type: bearer\n      token: '{{ALTERYX_CLIENT_SECRET}}'\n    resources:\n    - name: workflows\n      path: /v3/workflows\n\
+  \      description: Workflow management\n      operations:\n      - name: upload-workflow\n        method: POST\n        description: Upload a new workflow package\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-workflows\n        method: GET\n        description: List workflows with filtering and pagination\n        inputParameters:\n        - name: name\n          in: query\n          type: string\n          required: false\n          description: Filter by workflow name\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-workflow\n        method: GET\n        description: Get a specific workflow by ID\n        inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat: json\n\
+  \        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-workflow\n        method: PUT\n        description: Update workflow metadata\n        inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-workflow\n        method: DELETE\n        description: Delete a workflow\n        inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: download-workflow-package\n        method: GET\n        description: Download a workflow package file\n \
+  \       inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-workflow-questions\n        method: GET\n        description: Get analytic app questions for a workflow\n        inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-workflow-jobs\n        method: GET\n        description: Get jobs for a workflow\n        inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-job\n        method: POST\n        description: Create and execute a workflow job\n        inputParameters:\n        - name: workflowId\n          in: path\n          type: string\n          required: true\n          description: Workflow identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: schedules\n      path: /v3/schedules\n      description: Schedule management\n      operations:\n      - name: create-schedule\n        method: POST\n        description: Create a new workflow schedule\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-schedules\n        method: GET\n        description: List all schedules\n        outputRawFormat: json\n        outputParameters:\n     \
+  \   - name: result\n          type: object\n          value: $.\n      - name: get-schedule\n        method: GET\n        description: Get a specific schedule\n        inputParameters:\n        - name: scheduleId\n          in: path\n          type: string\n          required: true\n          description: Schedule identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-schedule\n        method: PUT\n        description: Update a schedule\n        inputParameters:\n        - name: scheduleId\n          in: path\n          type: string\n          required: true\n          description: Schedule identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-schedule\n        method: DELETE\n        description: Delete a schedule\n        inputParameters:\n        - name: scheduleId\n        \
+  \  in: path\n          type: string\n          required: true\n          description: Schedule identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: users\n      path: /v3/users\n      description: User management\n      operations:\n      - name: create-user\n        method: POST\n        description: Create a new user\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-users\n        method: GET\n        description: List all users\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-user\n        method: GET\n        description: Get a specific user\n        inputParameters:\n        - name: userId\n          in: path\n          type: string\n          required: true\n          description: User identifier\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-user\n        method: PUT\n        description: Update user details\n        inputParameters:\n        - name: userId\n          in: path\n          type: string\n          required: true\n          description: User identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-user\n        method: DELETE\n        description: Delete a user\n        inputParameters:\n        - name: userId\n          in: path\n          type: string\n          required: true\n          description: User identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: deactivate-user\n        method: POST\n        description: Deactivate a user account\n        inputParameters:\n\
+  \        - name: userId\n          in: path\n          type: string\n          required: true\n          description: User identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: credentials\n      path: /v3/credentials\n      description: Credential management\n      operations:\n      - name: get-credentials\n        method: GET\n        description: List all credentials\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-credential\n        method: POST\n        description: Create a new credential\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-credential\n        method: DELETE\n        description: Delete a credential\n        inputParameters:\n        - name: credentialId\n          in: path\n\
+  \          type: string\n          required: true\n          description: Credential identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: collections\n      path: /v3/collections\n      description: Collection management\n      operations:\n      - name: create-collection\n        method: POST\n        description: Create a new collection\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-collections\n        method: GET\n        description: List all collections\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-collection\n        method: GET\n        description: Get a specific collection\n        inputParameters:\n        - name: collectionId\n          in: path\n          type: string\n          required:\
+  \ true\n          description: Collection identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-collection\n        method: DELETE\n        description: Delete a collection\n        inputParameters:\n        - name: collectionId\n          in: path\n          type: string\n          required: true\n          description: Collection identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: alteryx-automation-api\n    description: Unified REST API for Alteryx analytics automation.\n    resources:\n    - path: /v1/workflows\n      name: workflows\n      description: Workflow management\n      operations:\n      - method: GET\n        name: list-workflows\n        description: List all workflows\n        call: alteryx-server.get-workflows\n       \
+  \ outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: upload-workflow\n        description: Upload a new workflow\n        call: alteryx-server.upload-workflow\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/workflows/{workflowId}\n      name: workflow-detail\n      description: Individual workflow operations\n      operations:\n      - method: GET\n        name: get-workflow\n        description: Get workflow details\n        call: alteryx-server.get-workflow\n        with:\n          workflowId: rest.workflowId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/schedules\n      name: schedules\n      description: Schedule management\n      operations:\n      - method: GET\n        name: list-schedules\n        description: List all schedules\n        call: alteryx-server.get-schedules\n        outputParameters:\n        - type: object\n          mapping:\
+  \ $.\n      - method: POST\n        name: create-schedule\n        description: Create a new schedule\n        call: alteryx-server.create-schedule\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users\n      name: users\n      description: User management\n      operations:\n      - method: GET\n        name: list-users\n        description: List all users\n        call: alteryx-server.get-users\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/collections\n      name: collections\n      description: Collection management\n      operations:\n      - method: GET\n        name: list-collections\n        description: List all collections\n        call: alteryx-server.get-collections\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: alteryx-automation-mcp\n    transport: http\n    description: MCP server for AI-assisted Alteryx analytics\
+  \ automation.\n    tools:\n    - name: list-workflows\n      description: List all workflows on the Alteryx Server\n      hints:\n        readOnly: true\n        openWorld: true\n      call: alteryx-server.get-workflows\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-workflow\n      description: Get details of a specific workflow\n      hints:\n        readOnly: true\n      call: alteryx-server.get-workflow\n      with:\n        workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: upload-workflow\n      description: Upload a new workflow package\n      hints:\n        readOnly: false\n      call: alteryx-server.upload-workflow\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-workflow\n      description: Update workflow metadata\n      hints:\n        readOnly: false\n        idempotent: true\n      call: alteryx-server.update-workflow\n      with:\n    \
+  \    workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-workflow\n      description: Delete a workflow\n      hints:\n        destructive: true\n      call: alteryx-server.delete-workflow\n      with:\n        workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: download-workflow\n      description: Download a workflow package\n      hints:\n        readOnly: true\n      call: alteryx-server.download-workflow-package\n      with:\n        workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-workflow-questions\n      description: Get analytic app questions for a workflow\n      hints:\n        readOnly: true\n      call: alteryx-server.get-workflow-questions\n      with:\n        workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-workflow-jobs\n\
+  \      description: Get execution jobs for a workflow\n      hints:\n        readOnly: true\n      call: alteryx-server.get-workflow-jobs\n      with:\n        workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-job\n      description: Create and execute a workflow job\n      hints:\n        readOnly: false\n      call: alteryx-server.create-job\n      with:\n        workflowId: tools.workflow_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-schedules\n      description: List all workflow schedules\n      hints:\n        readOnly: true\n      call: alteryx-server.get-schedules\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-schedule\n      description: Create a new workflow schedule\n      hints:\n        readOnly: false\n      call: alteryx-server.create-schedule\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name:\
+  \ delete-schedule\n      description: Delete a workflow schedule\n      hints:\n        destructive: true\n      call: alteryx-server.delete-schedule\n      with:\n        scheduleId: tools.schedule_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-users\n      description: List all users on the server\n      hints:\n        readOnly: true\n      call: alteryx-server.get-users\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-user\n      description: Create a new user\n      hints:\n        readOnly: false\n      call: alteryx-server.create-user\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-user\n      description: Get user details\n      hints:\n        readOnly: true\n      call: alteryx-server.get-user\n      with:\n        userId: tools.user_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-user\n      description: Delete a user\n\
+  \      hints:\n        destructive: true\n      call: alteryx-server.delete-user\n      with:\n        userId: tools.user_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: deactivate-user\n      description: Deactivate a user account\n      hints:\n        readOnly: false\n      call: alteryx-server.deactivate-user\n      with:\n        userId: tools.user_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-credentials\n      description: List all stored credentials\n      hints:\n        readOnly: true\n      call: alteryx-server.get-credentials\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-credential\n      description: Create a new credential\n      hints:\n        readOnly: false\n      call: alteryx-server.create-credential\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-collections\n      description: List all collections\n      hints:\n\
+  \        readOnly: true\n      call: alteryx-server.get-collections\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-collection\n      description: Create a new collection\n      hints:\n        readOnly: false\n      call: alteryx-server.create-collection\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-collection\n      description: Delete a collection\n      hints:\n        destructive: true\n      call: alteryx-server.delete-collection\n      with:\n        collectionId: tools.collection_id\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/alteryx/refs/heads/main/capabilities/analytics-automation.yaml
 tags:
 - Alteryx

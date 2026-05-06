@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- managed-apache-flink
+consumed_apis: []
 description: Workflow capability for data engineers and analysts to build, manage, and monitor Apache Flink streaming analytics applications on AWS.
 layout: capability
 name: Amazon Managed Service for Apache Flink - Streaming Analytics Workflow
@@ -18,35 +17,37 @@ personas: []
 provider_name: Amazon Managed Service for Apache Flink
 provider_slug: amazon-managed-apache-flink
 search_terms:
-- streaming analytics
+- stop streaming application
+- create a streaming application
+- big data
 - amazon
 - create a new apache flink streaming analytics application on aws
-- flink streaming applications
-- start streaming application
-- get application details
-- stop a running flink streaming application
-- create application
-- list all flink streaming analytics applications
+- streaming analytics
 - Data Engineer
-- create streaming application
-- start a flink application to begin real-time stream processing
-- list all streaming applications
-- create a streaming application
-- real-time processing
-- stop streaming application
-- get configuration and status details of a flink application
-- list applications
-- list streaming applications
-- big data
 - Analytics Engineer
 - apache flink
+- flink streaming applications
+- stop a running flink streaming application
+- list all streaming applications
+- get application details
+- real-time processing
+- list all flink streaming analytics applications
+- start a flink application to begin real-time stream processing
+- create streaming application
+- create application
+- get configuration and status details of a flink application
+- list streaming applications
+- list applications
+- start streaming application
 slug: streaming-analytics-workflow
 source_filename: streaming-analytics-workflow.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon Managed Service for Apache Flink - Streaming Analytics Workflow\"\n  description: \"Workflow capability for data engineers and analysts to build, manage, and monitor Apache Flink streaming analytics applications on AWS.\"\n  tags:\n    - Amazon\n    - Apache Flink\n    - Streaming Analytics\n    - Real-Time Processing\n    - Big Data\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: managed-apache-flink\n      location: ./shared/managed-apache-flink.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: streaming-analytics-api\n      description: \"Unified REST API for Apache Flink streaming analytics workflows.\"\n      resources:\n        - path: /v1/applications\n          name: applications\n\
-  \          description: \"Flink streaming applications\"\n          operations:\n            - method: POST\n              name: create-application\n              description: \"Create a streaming application\"\n              call: \"managed-apache-flink.create-application\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-applications\n              description: \"List all streaming applications\"\n              call: \"managed-apache-flink.list-applications\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: streaming-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Apache Flink streaming analytics.\"\n      tools:\n        - name: create-streaming-application\n          description: \"Create a new Apache Flink streaming analytics application\
-  \ on AWS\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"managed-apache-flink.create-application\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-streaming-applications\n          description: \"List all Flink streaming analytics applications\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"managed-apache-flink.list-applications\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-application-details\n          description: \"Get configuration and status details of a Flink application\"\n          hints:\n            readOnly: true\n            destructive: false\n            idempotent: true\n          call: \"managed-apache-flink.describe-application\"\n          with:\n            ApplicationName: \"tools.ApplicationName\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-streaming-application\n          description: \"Start a Flink application to begin real-time stream processing\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"managed-apache-flink.start-application\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stop-streaming-application\n          description: \"Stop a running Flink streaming application\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"managed-apache-flink.stop-application\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon Managed Service for Apache Flink - Streaming Analytics Workflow\n  description: Workflow capability for data engineers and analysts to build, manage, and monitor Apache Flink streaming analytics\n    applications on AWS.\n  tags:\n  - Amazon\n  - Apache Flink\n  - Streaming Analytics\n  - Real-Time Processing\n  - Big Data\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - type: http\n    namespace: managed-apache-flink\n    baseUri: https://kinesisanalytics.amazonaws.com\n    description: Amazon Managed Service for Apache Flink REST API\n    authentication:\n      type: apikey\n      key: Authorization\n      value: AWS4-HMAC-SHA256 {{AWS_ACCESS_KEY_ID}}\n      placement: header\n    resources:\n    - name: applications\n      path: /\n      description:\
+  \ Manage Flink streaming applications\n      operations:\n      - name: create-application\n        method: POST\n        description: Create a new Flink streaming application\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-applications\n        method: POST\n        description: List all Flink streaming applications\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: describe-application\n        method: POST\n        description: Get details of a Flink application\n        inputParameters:\n        - name: ApplicationName\n          in: body\n          type: string\n          required: true\n          description: Application name\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: start-application\n        method:\
+  \ POST\n        description: Start a Flink streaming application\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: stop-application\n        method: POST\n        description: Stop a Flink streaming application\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-application\n        method: POST\n        description: Delete a Flink streaming application\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: streaming-analytics-api\n    description: Unified REST API for Apache Flink streaming analytics workflows.\n    resources:\n    - path: /v1/applications\n      name: applications\n      description: Flink streaming applications\n      operations:\n      - method: POST\n\
+  \        name: create-application\n        description: Create a streaming application\n        call: managed-apache-flink.create-application\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-applications\n        description: List all streaming applications\n        call: managed-apache-flink.list-applications\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: streaming-analytics-mcp\n    transport: http\n    description: MCP server for AI-assisted Apache Flink streaming analytics.\n    tools:\n    - name: create-streaming-application\n      description: Create a new Apache Flink streaming analytics application on AWS\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: managed-apache-flink.create-application\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-streaming-applications\n\
+  \      description: List all Flink streaming analytics applications\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: managed-apache-flink.list-applications\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-application-details\n      description: Get configuration and status details of a Flink application\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: managed-apache-flink.describe-application\n      with:\n        ApplicationName: tools.ApplicationName\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-streaming-application\n      description: Start a Flink application to begin real-time stream processing\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: managed-apache-flink.start-application\n      outputParameters:\n      - type: object\n        mapping:\
+  \ $.\n    - name: stop-streaming-application\n      description: Stop a running Flink streaming application\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: managed-apache-flink.stop-application\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/capabilities/streaming-analytics-workflow.yaml
 tags:
 - Amazon

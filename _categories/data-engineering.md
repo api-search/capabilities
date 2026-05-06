@@ -20,7 +20,7 @@ implementations:
 - capability_name: Adobe Experience Cloud Customer Data Platform
   capability_slug: customer-data-platform
   capability_url: https://capabilities.apis.io/capabilities/adobe-experience-cloud/customer-data-platform/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Adobe Experience Cloud
   provider_slug: adobe-experience-cloud
@@ -34,7 +34,7 @@ implementations:
 - capability_name: Airbyte Data Pipeline Management
   capability_slug: data-pipeline-management
   capability_url: https://capabilities.apis.io/capabilities/airbyte/data-pipeline-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Airbyte
   provider_slug: airbyte
@@ -49,7 +49,7 @@ implementations:
 - capability_name: Apache Airflow Workflow Orchestration
   capability_slug: workflow-orchestration
   capability_url: https://capabilities.apis.io/capabilities/airflow/workflow-orchestration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Apache Airflow
   provider_slug: airflow
@@ -64,7 +64,7 @@ implementations:
 - capability_name: Amazon Glue Data Integration
   capability_slug: amazon-glue-data-integration
   capability_url: https://capabilities.apis.io/capabilities/amazon-glue/amazon-glue-data-integration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Amazon Glue
   provider_slug: amazon-glue
@@ -78,7 +78,7 @@ implementations:
 - capability_name: Amazon Glue DataBrew Data Preparation
   capability_slug: amazon-glue-databrew-data-preparation
   capability_url: https://capabilities.apis.io/capabilities/amazon-glue-databrew/amazon-glue-databrew-data-preparation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Amazon Glue DataBrew
   provider_slug: amazon-glue-databrew
@@ -92,7 +92,7 @@ implementations:
 - capability_name: Apache Airflow Workflow Orchestration
   capability_slug: airflow-orchestration
   capability_url: https://capabilities.apis.io/capabilities/apache-airflow/airflow-orchestration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Apache Airflow
   provider_slug: apache-airflow
@@ -106,7 +106,7 @@ implementations:
 - capability_name: Apache Nutch Crawl Management
   capability_slug: apache-nutch-crawl-management
   capability_url: https://capabilities.apis.io/capabilities/apache-nutch/apache-nutch-crawl-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 13
   provider_name: Apache Nutch
   provider_slug: apache-nutch
@@ -119,7 +119,7 @@ implementations:
 - capability_name: Apache Oozie Workflow Orchestration
   capability_slug: apache-oozie-workflow-orchestration
   capability_url: https://capabilities.apis.io/capabilities/apache-oozie/apache-oozie-workflow-orchestration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Apache Oozie
   provider_slug: apache-oozie
@@ -147,7 +147,7 @@ implementations:
 - capability_name: Azure Databricks Data Engineering
   capability_slug: data-engineering
   capability_url: https://capabilities.apis.io/capabilities/azure-databricks/data-engineering/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Azure Databricks
   provider_slug: azure-databricks
@@ -160,7 +160,7 @@ implementations:
 - capability_name: Databricks Data Engineering
   capability_slug: data-engineering
   capability_url: https://capabilities.apis.io/capabilities/databricks/data-engineering/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Databricks
   provider_slug: databricks
@@ -173,7 +173,7 @@ implementations:
 - capability_name: FactSet Data Management
   capability_slug: data-management
   capability_url: https://capabilities.apis.io/capabilities/factset/data-management/
-  consumed_api_count: 9
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Factset
   provider_slug: factset
@@ -186,7 +186,7 @@ implementations:
 - capability_name: Informatica Data Integration
   capability_slug: data-integration
   capability_url: https://capabilities.apis.io/capabilities/informatica/data-integration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Informatica
   provider_slug: informatica
@@ -199,7 +199,7 @@ implementations:
 - capability_name: Oracle GoldenGate Data Replication
   capability_slug: data-replication
   capability_url: https://capabilities.apis.io/capabilities/oracle-goldengate/data-replication/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Oracle GoldenGate
   provider_slug: oracle-goldengate
@@ -212,7 +212,7 @@ implementations:
 - capability_name: ServiceNow Data Integration And Configuration
   capability_slug: data-integration-and-configuration
   capability_url: https://capabilities.apis.io/capabilities/servicenow/data-integration-and-configuration/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 7
   provider_name: ServiceNow
   provider_slug: servicenow
@@ -227,7 +227,7 @@ implementations:
 - capability_name: Snowflake Data Engineering
   capability_slug: data-engineering
   capability_url: https://capabilities.apis.io/capabilities/snowflake/data-engineering/
-  consumed_api_count: 9
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Snowflake
   provider_slug: snowflake
@@ -240,7 +240,7 @@ implementations:
 - capability_name: Snowflake Data Management
   capability_slug: data-management
   capability_url: https://capabilities.apis.io/capabilities/snowflake/data-management/
-  consumed_api_count: 8
+  consumed_api_count: 0
   operation_count: 14
   provider_name: Snowflake
   provider_slug: snowflake

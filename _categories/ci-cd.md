@@ -19,7 +19,7 @@ implementations:
 - capability_name: Amazon Proton Platform Engineering
   capability_slug: platform-engineering
   capability_url: https://capabilities.apis.io/capabilities/amazon-proton/platform-engineering/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Amazon Proton
   provider_slug: amazon-proton
@@ -34,7 +34,7 @@ implementations:
 - capability_name: AWS App Runner Application Deployment Workflow
   capability_slug: app-deployment-workflow
   capability_url: https://capabilities.apis.io/capabilities/aws-app-runner/app-deployment-workflow/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: AWS App Runner
   provider_slug: aws-app-runner
@@ -48,7 +48,7 @@ implementations:
 - capability_name: Azure DevOps Project Management
   capability_slug: devops-project-management
   capability_url: https://capabilities.apis.io/capabilities/azure-devops/devops-project-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Azure DevOps
   provider_slug: azure-devops
@@ -62,7 +62,7 @@ implementations:
 - capability_name: Bitbucket Code Collaboration
   capability_slug: code-collaboration
   capability_url: https://capabilities.apis.io/capabilities/bitbucket/code-collaboration/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Bitbucket
   provider_slug: bitbucket
@@ -76,7 +76,7 @@ implementations:
 - capability_name: GitHub CI/CD
   capability_slug: ci-cd
   capability_url: https://capabilities.apis.io/capabilities/github/ci-cd/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 11
   provider_name: GitHub
   provider_slug: github
@@ -91,7 +91,7 @@ implementations:
 - capability_name: GitHub Actions CI/CD Automation
   capability_slug: ci-cd-automation
   capability_url: https://capabilities.apis.io/capabilities/github-actions/ci-cd-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 16
   provider_name: GitHub Actions
   provider_slug: github-actions
@@ -105,7 +105,7 @@ implementations:
 - capability_name: Oracle GoldenGate Cloud Management
   capability_slug: cloud-management
   capability_url: https://capabilities.apis.io/capabilities/oracle-goldengate/cloud-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Oracle GoldenGate
   provider_slug: oracle-goldengate

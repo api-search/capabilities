@@ -18,7 +18,7 @@ implementations:
 - capability_name: Activepieces Workflow Automation
   capability_slug: workflow-automation
   capability_url: https://capabilities.apis.io/capabilities/activepieces/workflow-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Activepieces
   provider_slug: activepieces
@@ -32,7 +32,7 @@ implementations:
 - capability_name: Adobe Image Editing
   capability_slug: image-editing
   capability_url: https://capabilities.apis.io/capabilities/adobe-creative-suite/image-editing/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Adobe Creative Suite
   provider_slug: adobe-creative-suite
@@ -47,7 +47,7 @@ implementations:
 - capability_name: Albato Workflow Automation
   capability_slug: workflow-automation
   capability_url: https://capabilities.apis.io/capabilities/albato-a-single-no-code-platform-for-all-automations/workflow-automation/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Albato A Single No Code Platform For All Automations
   provider_slug: albato-a-single-no-code-platform-for-all-automations
@@ -62,7 +62,7 @@ implementations:
 - capability_name: Alteryx Analytics Automation
   capability_slug: analytics-automation
   capability_url: https://capabilities.apis.io/capabilities/alteryx/analytics-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Alteryx
   provider_slug: alteryx
@@ -75,7 +75,7 @@ implementations:
 - capability_name: Apify Web Scraping and Automation
   capability_slug: web-scraping-automation
   capability_url: https://capabilities.apis.io/capabilities/apify/web-scraping-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apify
   provider_slug: apify
@@ -88,7 +88,7 @@ implementations:
 - capability_name: Apple Keynote Presentation Automation
   capability_slug: presentation-automation
   capability_url: https://capabilities.apis.io/capabilities/apple-keynote/presentation-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Apple Keynote
   provider_slug: apple-keynote
@@ -103,7 +103,7 @@ implementations:
 - capability_name: Appmixer Embedded Automation
   capability_slug: embedded-automation
   capability_url: https://capabilities.apis.io/capabilities/appmixer/embedded-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Appmixer
   provider_slug: appmixer
@@ -117,7 +117,7 @@ implementations:
 - capability_name: Google Workspace Automation
   capability_slug: workspace-automation
   capability_url: https://capabilities.apis.io/capabilities/google-apps-script/workspace-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 10
   provider_name: Google Apps Script
   provider_slug: google-apps-script
@@ -130,7 +130,7 @@ implementations:
 - capability_name: Google Docs Document Management
   capability_slug: document-management
   capability_url: https://capabilities.apis.io/capabilities/google-docs/document-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Google Docs
   provider_slug: google-docs
@@ -143,7 +143,7 @@ implementations:
 - capability_name: Google Sheets Spreadsheet Data Management
   capability_slug: spreadsheet-data-management
   capability_url: https://capabilities.apis.io/capabilities/google-sheets/spreadsheet-data-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Google Sheets
   provider_slug: google-sheets
@@ -156,7 +156,7 @@ implementations:
 - capability_name: HubSpot Automation and Integration
   capability_slug: automation-and-integration
   capability_url: https://capabilities.apis.io/capabilities/hubspot/automation-and-integration/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 0
   provider_name: HubSpot
   provider_slug: hubspot
@@ -169,7 +169,7 @@ implementations:
 - capability_name: HubSpot Developer Platform
   capability_slug: developer-platform
   capability_url: https://capabilities.apis.io/capabilities/hubspot/developer-platform/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 1
   provider_name: HubSpot
   provider_slug: hubspot
@@ -183,7 +183,7 @@ implementations:
 - capability_name: Microsoft Power Automate Flow Automation
   capability_slug: flow-automation
   capability_url: https://capabilities.apis.io/capabilities/microsoft-power-automate/flow-automation/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Microsoft Power Automate
   provider_slug: microsoft-power-automate
@@ -196,7 +196,7 @@ implementations:
 - capability_name: Dynamics NAV Platform Administration
   capability_slug: platform-administration
   capability_url: https://capabilities.apis.io/capabilities/navision/platform-administration/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Microsoft Dynamics NAV
   provider_slug: navision
@@ -211,7 +211,7 @@ implementations:
 - capability_name: Red Hat Infrastructure Automation
   capability_slug: infrastructure-automation
   capability_url: https://capabilities.apis.io/capabilities/red-hat/infrastructure-automation/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Red Hat
   provider_slug: red-hat
@@ -225,7 +225,7 @@ implementations:
 - capability_name: WhatsApp Flows And Automation
   capability_slug: flows-and-automation
   capability_url: https://capabilities.apis.io/capabilities/whatsapp/flows-and-automation/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 12
   provider_name: WhatsApp
   provider_slug: whatsapp

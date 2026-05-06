@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: openfema-fire-data-openapi.yml
-  format: yaml
-  label: openfema
-  slug: openfema
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/united-states-fire-administration/refs/heads/main/openapi/openfema-fire-data-openapi.yml
 categories: []
-consumed_apis:
-- openfema
+consumed_apis: []
 description: Capability for fire incident data research and emergency management analysis using the OpenFEMA API. Combines fire disaster declarations, FEMA dataset discovery, and summary-level emergency data to support fire safety researchers, emergency managers, and public safety analysts.
 layout: capability
 name: USFA Fire Incident Data and Analysis
@@ -33,42 +25,45 @@ personas: []
 provider_name: United States Fire Administration
 provider_slug: united-states-fire-administration
 search_terms:
-- get field-level data dictionary for a dataset
-- list openfema datasets
-- federal government
-- get disaster declarations with authorized assistance programs
-- list dataset fields
-- list all available openfema datasets
-- list datasets
 - discover available openfema datasets and their metadata
-- get fire disaster declarations
-- list disaster summaries
-- get field descriptions for a specific dataset
 - list fema fire disaster declarations with optional filters
 - disaster analysis
-- get data dictionary and field descriptions for a specific openfema dataset
-- list fire disasters
-- get summarized disaster declarations showing which fema assistance programs were authorized
-- get dataset fields
-- summarized disaster declarations with program details
-- get disaster program summaries
-- fire-type fema disaster declarations
-- usfa
-- public safety
-- fire safety
-- list all available datasets on the openfema platform with descriptions and last update times
-- fema
 - retrieve fema fire disaster declarations filtered by state, date, or other criteria
+- fema
+- list dataset fields
+- fire-type fema disaster declarations
+- get summarized disaster declarations showing which fema assistance programs were authorized
+- fire safety
+- list datasets
+- get field descriptions for a specific dataset
+- get field-level data dictionary for a dataset
+- list fire disasters
+- usfa
+- list openfema datasets
 - emergency management
+- public safety
+- get disaster program summaries
+- list all available openfema datasets
+- get fire disaster declarations
+- list all available datasets on the openfema platform with descriptions and last update times
+- federal government
+- list disaster summaries
+- get disaster declarations with authorized assistance programs
+- get dataset fields
+- get data dictionary and field descriptions for a specific openfema dataset
+- summarized disaster declarations with program details
 slug: fire-incident-data
 source_filename: fire-incident-data.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"USFA Fire Incident Data and Analysis\"\n  description: >-\n    Capability for fire incident data research and emergency management\n    analysis using the OpenFEMA API. Combines fire disaster declarations,\n    FEMA dataset discovery, and summary-level emergency data to support\n    fire safety researchers, emergency managers, and public safety analysts.\n  tags:\n    - Fire Safety\n    - Emergency Management\n    - Disaster Analysis\n    - USFA\n    - FEMA\n    - Federal Government\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys: {}\n\ncapability:\n  consumes:\n    - import: openfema\n      location: ./shared/openfema-fire-data.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: usfa-fire-data-api\n      description: \"Unified REST API for USFA fire incident data and emergency management analysis.\"\n      resources:\n        - path: /v1/datasets\n          name:\
-  \ datasets\n          description: \"Discover available OpenFEMA datasets and their metadata\"\n          operations:\n            - method: GET\n              name: list-datasets\n              description: \"List all available OpenFEMA datasets\"\n              call: \"openfema.list-datasets\"\n              with:\n                $top: \"rest.top\"\n                $select: \"rest.select\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/datasets/fields\n          name: dataset-fields\n          description: \"Get field-level data dictionary for a dataset\"\n          operations:\n            - method: GET\n              name: list-dataset-fields\n              description: \"Get field descriptions for a specific dataset\"\n              call: \"openfema.list-dataset-fields\"\n              with:\n                $filter: \"rest.datasetName\"\n              outputParameters:\n                - type: object\n \
-  \                 mapping: \"$.\"\n\n        - path: /v1/fire-disasters\n          name: fire-disasters\n          description: \"Fire-type FEMA disaster declarations\"\n          operations:\n            - method: GET\n              name: list-fire-disasters\n              description: \"List FEMA fire disaster declarations with optional filters\"\n              call: \"openfema.get-disaster-declarations\"\n              with:\n                $filter: \"rest.filter\"\n                $top: \"rest.top\"\n                $skip: \"rest.skip\"\n                $orderby: \"rest.orderby\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/disasters/summaries\n          name: disaster-summaries\n          description: \"Summarized disaster declarations with program details\"\n          operations:\n            - method: GET\n              name: list-disaster-summaries\n              description: \"Get disaster declarations\
-  \ with authorized assistance programs\"\n              call: \"openfema.get-disaster-summaries\"\n              with:\n                $filter: \"rest.filter\"\n                $top: \"rest.top\"\n                $skip: \"rest.skip\"\n                $orderby: \"rest.orderby\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: usfa-fire-data-mcp\n      transport: http\n      description: \"MCP server for AI-assisted fire safety research and emergency management analysis.\"\n      tools:\n        - name: list-openfema-datasets\n          description: \"List all available datasets on the OpenFEMA platform with descriptions and last update times\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"openfema.list-datasets\"\n          with:\n            $top: \"tools.top\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n\n        - name: get-dataset-fields\n          description: \"Get data dictionary and field descriptions for a specific OpenFEMA dataset\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"openfema.list-dataset-fields\"\n          with:\n            $filter: \"tools.dataset_name\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-fire-disaster-declarations\n          description: \"Retrieve FEMA fire disaster declarations filtered by state, date, or other criteria\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"openfema.get-disaster-declarations\"\n          with:\n            $filter: \"tools.filter\"\n            $top: \"tools.top\"\n            $orderby: \"tools.orderby\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-disaster-program-summaries\n          description:\
-  \ \"Get summarized disaster declarations showing which FEMA assistance programs were authorized\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"openfema.get-disaster-summaries\"\n          with:\n            $filter: \"tools.filter\"\n            $top: \"tools.top\"\n            $count: \"tools.include_count\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: USFA Fire Incident Data and Analysis\n  description: Capability for fire incident data research and emergency management analysis using the OpenFEMA API. Combines\n    fire disaster declarations, FEMA dataset discovery, and summary-level emergency data to support fire safety researchers,\n    emergency managers, and public safety analysts.\n  tags:\n  - Fire Safety\n  - Emergency Management\n  - Disaster Analysis\n  - USFA\n  - FEMA\n  - Federal Government\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys: {}\ncapability:\n  consumes:\n  - type: http\n    namespace: openfema\n    baseUri: https://www.fema.gov/api/open\n    description: OpenFEMA REST API - no API key required\n    resources:\n    - name: datasets\n      path: /v1/OpenFemaDataSets\n      description: Metadata about available OpenFEMA datasets\n      operations:\n      - name: list-datasets\n        method: GET\n        description: List\
+  \ Available Data Sets\n        inputParameters:\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter expression\n        - name: $select\n          in: query\n          type: string\n          required: false\n          description: Fields to return\n        - name: $top\n          in: query\n          type: integer\n          required: false\n          description: Max records to return\n        - name: $skip\n          in: query\n          type: integer\n          required: false\n          description: Records to skip\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: dataset-fields\n      path: /v1/OpenFemaDataSetFields\n      description: Field-level metadata for OpenFEMA datasets\n      operations:\n      - name: list-dataset-fields\n        method: GET\n        description: List Data Set Fields\n        inputParameters:\n\
+  \        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: Filter by dataset name\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: disaster-declarations\n      path: /v1/FemaWebDisasterDeclarations\n      description: FEMA presidential disaster declarations\n      operations:\n      - name: get-disaster-declarations\n        method: GET\n        description: Get Disaster Declarations\n        inputParameters:\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter (e.g. incidentType eq 'Fire')\n        - name: $top\n          in: query\n          type: integer\n          required: false\n          description: Max records to return\n        - name: $skip\n          in: query\n          type: integer\n          required: false\n          description: Records to\
+  \ skip\n        - name: $orderby\n          in: query\n          type: string\n          required: false\n          description: Sort field and direction\n        - name: $select\n          in: query\n          type: string\n          required: false\n          description: Comma-separated fields to return\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: disaster-summaries\n      path: /v2/DisasterDeclarationsSummaries\n      description: Summarized FEMA disaster declarations\n      operations:\n      - name: get-disaster-summaries\n        method: GET\n        description: Get Disaster Declarations Summaries\n        inputParameters:\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter expression\n        - name: $top\n          in: query\n          type: integer\n          required: false\n          description: Max\
+  \ records\n        - name: $skip\n          in: query\n          type: integer\n          required: false\n          description: Records to skip\n        - name: $orderby\n          in: query\n          type: string\n          required: false\n          description: Sort field\n        - name: $count\n          in: query\n          type: boolean\n          required: false\n          description: Include total count\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: usfa-fire-data-api\n    description: Unified REST API for USFA fire incident data and emergency management analysis.\n    resources:\n    - path: /v1/datasets\n      name: datasets\n      description: Discover available OpenFEMA datasets and their metadata\n      operations:\n      - method: GET\n        name: list-datasets\n        description: List all available OpenFEMA datasets\n      \
+  \  call: openfema.list-datasets\n        with:\n          $top: rest.top\n          $select: rest.select\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/datasets/fields\n      name: dataset-fields\n      description: Get field-level data dictionary for a dataset\n      operations:\n      - method: GET\n        name: list-dataset-fields\n        description: Get field descriptions for a specific dataset\n        call: openfema.list-dataset-fields\n        with:\n          $filter: rest.datasetName\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/fire-disasters\n      name: fire-disasters\n      description: Fire-type FEMA disaster declarations\n      operations:\n      - method: GET\n        name: list-fire-disasters\n        description: List FEMA fire disaster declarations with optional filters\n        call: openfema.get-disaster-declarations\n        with:\n          $filter: rest.filter\n         \
+  \ $top: rest.top\n          $skip: rest.skip\n          $orderby: rest.orderby\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/disasters/summaries\n      name: disaster-summaries\n      description: Summarized disaster declarations with program details\n      operations:\n      - method: GET\n        name: list-disaster-summaries\n        description: Get disaster declarations with authorized assistance programs\n        call: openfema.get-disaster-summaries\n        with:\n          $filter: rest.filter\n          $top: rest.top\n          $skip: rest.skip\n          $orderby: rest.orderby\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: usfa-fire-data-mcp\n    transport: http\n    description: MCP server for AI-assisted fire safety research and emergency management analysis.\n    tools:\n    - name: list-openfema-datasets\n      description: List all available datasets on\
+  \ the OpenFEMA platform with descriptions and last update times\n      hints:\n        readOnly: true\n        idempotent: true\n      call: openfema.list-datasets\n      with:\n        $top: tools.top\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-dataset-fields\n      description: Get data dictionary and field descriptions for a specific OpenFEMA dataset\n      hints:\n        readOnly: true\n        idempotent: true\n      call: openfema.list-dataset-fields\n      with:\n        $filter: tools.dataset_name\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-fire-disaster-declarations\n      description: Retrieve FEMA fire disaster declarations filtered by state, date, or other criteria\n      hints:\n        readOnly: true\n        idempotent: true\n      call: openfema.get-disaster-declarations\n      with:\n        $filter: tools.filter\n        $top: tools.top\n        $orderby: tools.orderby\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: get-disaster-program-summaries\n      description: Get summarized disaster declarations showing which FEMA assistance programs were authorized\n      hints:\n        readOnly: true\n        idempotent: true\n      call: openfema.get-disaster-summaries\n      with:\n        $filter: tools.filter\n        $top: tools.top\n        $count: tools.include_count\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/united-states-fire-administration/refs/heads/main/capabilities/fire-incident-data.yaml
 tags:
 - Fire Safety

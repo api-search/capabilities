@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- psd2
-- berlin group
-- mcp
-- list accounts
-- natixis
-- capabilities
 - naftiko
+- natixis
+- berlin group
+- list accounts
 - api integration
 - governance
+- spec-driven integration
 - ai
+- psd2
+- mcp
+- capabilities
 - get account balances
 slug: natixis-psd2-open-banking-cohort-capability
 source_filename: natixis-psd2-open-banking-cohort-capability.yaml

@@ -14,12 +14,12 @@ description: 'Capabilities that ingest, transform, and query datasets to produce
 
   '
 domain: data
-implementation_count: 30
+implementation_count: 29
 implementations:
 - capability_name: Adobe Analytics Data Collection
   capability_slug: data-collection
   capability_url: https://capabilities.apis.io/capabilities/adobe-analytics/data-collection/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Adobe Analytics
   provider_slug: adobe-analytics
@@ -33,7 +33,7 @@ implementations:
 - capability_name: Adobe Analytics Reporting And Analysis
   capability_slug: reporting-and-analysis
   capability_url: https://capabilities.apis.io/capabilities/adobe-analytics/reporting-and-analysis/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 21
   provider_name: Adobe Analytics
   provider_slug: adobe-analytics
@@ -48,7 +48,7 @@ implementations:
 - capability_name: Adobe Experience Cloud Digital Marketing
   capability_slug: digital-marketing
   capability_url: https://capabilities.apis.io/capabilities/adobe-experience-cloud/digital-marketing/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Adobe Experience Cloud
   provider_slug: adobe-experience-cloud
@@ -62,7 +62,7 @@ implementations:
 - capability_name: Amazon Redshift Data Warehouse Analytics
   capability_slug: data-warehouse-analytics
   capability_url: https://capabilities.apis.io/capabilities/amazon-redshift/data-warehouse-analytics/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Amazon Redshift
   provider_slug: amazon-redshift
@@ -75,7 +75,7 @@ implementations:
 - capability_name: Amplitude Analytics Ingestion
   capability_slug: amplitude-analytics-ingestion
   capability_url: https://capabilities.apis.io/capabilities/amplitude/amplitude-analytics-ingestion/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Amplitude
   provider_slug: amplitude
@@ -87,7 +87,7 @@ implementations:
 - capability_name: Apache Kylin OLAP Analytics
   capability_slug: olap-analytics
   capability_url: https://capabilities.apis.io/capabilities/apache-kylin/olap-analytics/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apache Kylin
   provider_slug: apache-kylin
@@ -110,23 +110,10 @@ implementations:
   - Real-Time OLAP
   - SQL
   tool_count: 8
-- capability_name: Amazon Redshift Data Warehouse Workflow
-  capability_slug: data-warehouse-workflow
-  capability_url: https://capabilities.apis.io/capabilities/aws-redshift/data-warehouse-workflow/
-  consumed_api_count: 2
-  operation_count: 0
-  provider_name: AWS Redshift
-  provider_slug: aws-redshift
-  tags:
-  - Analytics
-  - Data Warehouse
-  - SQL
-  - Cloud Database
-  tool_count: 8
 - capability_name: BizAPI Business Intelligence
   capability_slug: bizapi-business-intelligence
   capability_url: https://capabilities.apis.io/capabilities/bizapi/bizapi-business-intelligence/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: BizAPI
   provider_slug: bizapi
@@ -141,7 +128,7 @@ implementations:
 - capability_name: Circana Market Intelligence
   capability_slug: market-intelligence
   capability_url: https://capabilities.apis.io/capabilities/circana/market-intelligence/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 10
   provider_name: Circana
   provider_slug: circana
@@ -155,7 +142,7 @@ implementations:
 - capability_name: Crystal Reports Report Management
   capability_slug: report-management
   capability_url: https://capabilities.apis.io/capabilities/crystal-reports/report-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Crystal Reports
   provider_slug: crystal-reports
@@ -168,7 +155,7 @@ implementations:
 - capability_name: FactSet Reporting
   capability_slug: reporting
   capability_url: https://capabilities.apis.io/capabilities/factset/reporting/
-  consumed_api_count: 10
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Factset
   provider_slug: factset
@@ -181,7 +168,7 @@ implementations:
 - capability_name: Google Analytics Reporting and Insights
   capability_slug: reporting-and-insights
   capability_url: https://capabilities.apis.io/capabilities/google-analytics/reporting-and-insights/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Google Analytics
   provider_slug: google-analytics
@@ -195,7 +182,7 @@ implementations:
 - capability_name: Google Campaign Manager Campaign Management
   capability_slug: campaign-management
   capability_url: https://capabilities.apis.io/capabilities/google-campaign-manager/campaign-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 19
   provider_name: Google Campaign Manager
   provider_slug: google-campaign-manager
@@ -208,7 +195,7 @@ implementations:
 - capability_name: Google Marketing Platform Analytics Administration
   capability_slug: marketing-analytics
   capability_url: https://capabilities.apis.io/capabilities/google-marketing-platform/marketing-analytics/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Google Marketing Platform Admin
   provider_slug: google-marketing-platform
@@ -221,7 +208,7 @@ implementations:
 - capability_name: Google Search Console SEO Management
   capability_slug: seo-management
   capability_url: https://capabilities.apis.io/capabilities/google-search-console/seo-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 10
   provider_name: Google Search Console
   provider_slug: google-search-console
@@ -235,7 +222,7 @@ implementations:
 - capability_name: Google Tag Manager Tag Deployment Management
   capability_slug: tag-deployment-management
   capability_url: https://capabilities.apis.io/capabilities/google-tag-manager/tag-deployment-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Google Tag Manager
   provider_slug: google-tag-manager
@@ -248,7 +235,7 @@ implementations:
 - capability_name: Instagram Analytics And Insights
   capability_slug: analytics-and-insights
   capability_url: https://capabilities.apis.io/capabilities/instagram/analytics-and-insights/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Instagram
   provider_slug: instagram
@@ -262,7 +249,7 @@ implementations:
 - capability_name: LinkedIn Reporting And Analytics
   capability_slug: reporting-and-analytics
   capability_url: https://capabilities.apis.io/capabilities/linkedin/reporting-and-analytics/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 2
   provider_name: LinkedIn
   provider_slug: linkedin
@@ -275,7 +262,7 @@ implementations:
 - capability_name: Looker Analytics and Reporting
   capability_slug: analytics-and-reporting
   capability_url: https://capabilities.apis.io/capabilities/looker/analytics-and-reporting/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 13
   provider_name: Looker
   provider_slug: looker
@@ -288,7 +275,7 @@ implementations:
 - capability_name: Moody's Economic Data Analytics
   capability_slug: economic-data-analytics
   capability_url: https://capabilities.apis.io/capabilities/moodys/economic-data-analytics/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Moody's
   provider_slug: moodys
@@ -301,7 +288,7 @@ implementations:
 - capability_name: PeopleSoft Reporting And Analytics
   capability_slug: reporting-and-analytics
   capability_url: https://capabilities.apis.io/capabilities/peoplesoft/reporting-and-analytics/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 9
   provider_name: PeopleSoft
   provider_slug: peoplesoft
@@ -316,7 +303,7 @@ implementations:
 - capability_name: Pluralsight Reporting And Analytics
   capability_slug: reporting-and-analytics
   capability_url: https://capabilities.apis.io/capabilities/pluralsight/reporting-and-analytics/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Pluralsight
   provider_slug: pluralsight
@@ -330,7 +317,7 @@ implementations:
 - capability_name: Power BI Analytics and Reporting
   capability_slug: analytics-and-reporting
   capability_url: https://capabilities.apis.io/capabilities/power-bi/analytics-and-reporting/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Power BI
   provider_slug: power-bi
@@ -343,7 +330,7 @@ implementations:
 - capability_name: Splunk Search and Analytics
   capability_slug: search-and-analytics
   capability_url: https://capabilities.apis.io/capabilities/splunk/search-and-analytics/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Splunk
   provider_slug: splunk
@@ -357,7 +344,7 @@ implementations:
 - capability_name: Teradata Query and Analytics
   capability_slug: query-and-analytics
   capability_url: https://capabilities.apis.io/capabilities/teradata/query-and-analytics/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Teradata
   provider_slug: teradata
@@ -370,7 +357,7 @@ implementations:
 - capability_name: X Social Listening and Analytics
   capability_slug: social-listening
   capability_url: https://capabilities.apis.io/capabilities/twitter/social-listening/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 15
   provider_name: X (Twitter)
   provider_slug: twitter
@@ -384,7 +371,7 @@ implementations:
 - capability_name: WhatsApp Templates And Analytics
   capability_slug: templates-and-analytics
   capability_url: https://capabilities.apis.io/capabilities/whatsapp/templates-and-analytics/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: WhatsApp
   provider_slug: whatsapp
@@ -398,7 +385,7 @@ implementations:
 - capability_name: Workday Analytics and Reporting
   capability_slug: analytics-and-reporting
   capability_url: https://capabilities.apis.io/capabilities/workday/analytics-and-reporting/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Workday
   provider_slug: workday
@@ -411,7 +398,7 @@ implementations:
 - capability_name: YouTube Analytics And Reporting
   capability_slug: analytics-and-reporting
   capability_url: https://capabilities.apis.io/capabilities/youtube/analytics-and-reporting/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 13
   provider_name: Youtube
   provider_slug: youtube
@@ -423,7 +410,7 @@ implementations:
   tool_count: 14
 layout: category
 name: Analytics
-provider_count: 29
+provider_count: 28
 related:
 - data-engineering
 - monitoring

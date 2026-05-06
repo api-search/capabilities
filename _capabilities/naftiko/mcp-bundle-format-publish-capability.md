@@ -17,17 +17,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- bundle
-- publish
-- list mcp bundles
-- publish mcp bundle
-- mcp
-- capabilities
 - naftiko
+- publish
+- mcp
+- publish mcp bundle
 - api integration
+- list mcp bundles
 - governance
+- spec-driven integration
 - ai
+- bundle
+- capabilities
 - download mcp bundle
 slug: mcp-bundle-format-publish-capability
 source_filename: mcp-bundle-format-publish-capability.yaml

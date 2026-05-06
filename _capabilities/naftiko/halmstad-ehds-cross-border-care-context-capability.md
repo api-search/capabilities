@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- cross-border
-- ehds
-- halmstad
-- spec-driven integration
-- get patient summary
-- mcp
-- capabilities
 - naftiko
+- cross-border
 - api integration
 - governance
+- spec-driven integration
 - ai
+- ehds
 - get care context
+- mcp
+- capabilities
+- halmstad
+- get patient summary
 slug: halmstad-ehds-cross-border-care-context-capability
 source_filename: halmstad-ehds-cross-border-care-context-capability.yaml
 source_heading: Capability Spec

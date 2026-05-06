@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list mcp server crs
-- demo
-- spec-driven integration
-- get mcp server cr
-- mcp
-- ai
-- capabilities
 - naftiko
-- kubernetes
+- list mcp server crs
+- get mcp server cr
+- create mcp server cr
 - api integration
 - governance
-- create mcp server cr
+- capabilities
+- spec-driven integration
+- ai
+- mcp
+- demo
+- kubernetes
 slug: mcp-as-k8s-resource-demo
 source_filename: mcp-as-k8s-resource-demo.yaml
 source_heading: Capability Spec

@@ -1,8 +1,7 @@
 ---
 categories:
 - document-processing
-consumed_apis:
-- pdf-services
+consumed_apis: []
 description: Process PDF documents at scale including creation, conversion, extraction, manipulation, and accessibility tagging. Used by document automation engineers and content teams.
 layout: capability
 name: Adobe Document Processing
@@ -39,86 +38,91 @@ personas: []
 provider_name: Adobe
 provider_slug: adobe
 search_terms:
-- pdf
-- combine multiple pdfs into a single document
+- optimize pdf for fast web viewing
+- reorder pages within a pdf
+- remove password protection from a pdf
 - apply ocr to make scanned pdfs searchable
+- insert pages from one pdf into another
+- get asset download uri
+- pdf conversion operations
+- export pdf to other formats
 - compress pdf
-- adobe
-- e-commerce
+- creative cloud
+- digital asset management
+- protect pdf
+- insert pages
+- split pdf
+- get asset
+- analytics
+- extract pdf
 - export pdf to docx, pptx, xlsx, or images
+- export pdf
+- generate document
+- get pdf properties
+- marketing
+- auto tag pdf
+- generative ai
 - rotate pages
 - document services
-- get asset
-- generate documents from templates with dynamic data
+- reorder pages
+- upload and manage document assets
+- e-commerce
+- upload asset
 - delete an asset
-- extract structured content from pdf
-- delete specific pages from a pdf
-- insert pages from one pdf into another
-- get pdf metadata and document properties
-- upload a document for processing
-- marketing
-- pdf export operations
-- analytics
-- digital asset management
+- get job status
+- delete asset
 - e-signatures
-- check the status of an asynchronous pdf operation
-- create a pdf from supported file formats
+- combine pdf
+- add password protection to a pdf
+- delete an uploaded asset
 - extract text, tables, and figures from a pdf
-- generative ai
+- rotate pages in a pdf
+- create pdf
+- pdf export operations
+- extract structured content from pdf
+- linearize pdf
+- get pdf metadata and document properties
+- delete pages
+- ocr pdf
+- create pdf from supported formats
+- generate documents from templates with dynamic data
 - replace pages
 - experience cloud
-- upload asset
-- export pdf to other formats
-- work management
-- pdf conversion operations
-- split a pdf into multiple documents
-- delete pages
-- insert pages
-- ocr pdf
-- add password protection to a pdf
-- get pdf properties
-- rotate pages in a pdf
-- get job status
-- replace pages in a pdf with pages from another
-- remove password protection from a pdf
-- documents
-- upload and manage document assets
-- auto tag pdf
 - auto-tag pdf for accessibility compliance
-- delete asset
-- export pdf
-- create pdf
-- protect pdf
-- job status
-- remove protection
-- extract pdf
-- combine pdf
-- delete an uploaded asset
-- optimize pdf for fast web viewing
-- split pdf
-- generate document
-- automation
-- reorder pages within a pdf
-- create pdf from supported formats
-- creative cloud
-- reorder pages
-- pdf content extraction
 - compress a pdf to reduce file size
-- get asset download uri
-- linearize pdf
+- work management
+- pdf
+- adobe
+- upload a document for processing
+- pdf content extraction
+- job status
+- documents
+- create a pdf from supported file formats
+- replace pages in a pdf with pages from another
+- remove protection
+- split a pdf into multiple documents
+- combine multiple pdfs into a single document
+- check the status of an asynchronous pdf operation
+- delete specific pages from a pdf
+- automation
 slug: document-processing
 source_filename: document-processing.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Adobe Document Processing\"\n  description: \"Process PDF documents at scale including creation, conversion, extraction, manipulation, and accessibility tagging. Used by document automation engineers and content teams.\"\n  tags:\n    - Adobe\n    - Documents\n    - PDF\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      ADOBE_CLIENT_ID: ADOBE_CLIENT_ID\n      ADOBE_CLIENT_SECRET: ADOBE_CLIENT_SECRET\n\ncapability:\n  consumes:\n    - import: pdf-services\n      location: ./shared/pdf-services.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: adobe-document-api\n      description: \"Unified REST API for Adobe document processing workflows.\"\n      resources:\n        - path: /v1/assets\n          name: assets\n          description: \"Upload and manage document assets\"\n          operations:\n            - method: POST\n              name:\
-  \ upload-asset\n              description: \"Upload a document for processing\"\n              call: \"pdf-services.upload-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: get-asset\n              description: \"Get asset download URI\"\n              call: \"pdf-services.get-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-asset\n              description: \"Delete an asset\"\n              call: \"pdf-services.delete-asset\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/convert\n          name: conversion\n          description: \"PDF conversion operations\"\n          operations:\n            - method: POST\n              name: create-pdf\n              description: \"Create PDF from supported\
-  \ formats\"\n              call: \"pdf-services.create-pdf\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/export\n          name: export\n          description: \"PDF export operations\"\n          operations:\n            - method: POST\n              name: export-pdf\n              description: \"Export PDF to other formats\"\n              call: \"pdf-services.export-pdf\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/extract\n          name: extraction\n          description: \"PDF content extraction\"\n          operations:\n            - method: POST\n              name: extract-pdf\n              description: \"Extract structured content from PDF\"\n              call: \"pdf-services.extract-pdf\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/jobs/{jobId}\n\
-  \          name: jobs\n          description: \"Job status\"\n          operations:\n            - method: GET\n              name: get-job-status\n              description: \"Get job status\"\n              call: \"pdf-services.get-job-status\"\n              with:\n                jobId: \"rest.jobId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: adobe-document-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Adobe document processing.\"\n      tools:\n        - name: upload-asset\n          description: \"Upload a document for processing\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.upload-asset\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-asset\n          description: \"Get asset download URI\"\n          hints:\n            readOnly: true\n     \
-  \     call: \"pdf-services.get-asset\"\n          with:\n            assetId: \"tools.assetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-asset\n          description: \"Delete an uploaded asset\"\n          hints:\n            destructive: true\n            idempotent: true\n          call: \"pdf-services.delete-asset\"\n          with:\n            assetId: \"tools.assetId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-pdf\n          description: \"Create a PDF from supported file formats\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.create-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: export-pdf\n          description: \"Export PDF to DOCX, PPTX, XLSX, or images\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.export-pdf\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: combine-pdf\n          description: \"Combine multiple PDFs into a single document\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.combine-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: split-pdf\n          description: \"Split a PDF into multiple documents\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.split-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: ocr-pdf\n          description: \"Apply OCR to make scanned PDFs searchable\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.ocr-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: compress-pdf\n          description: \"Compress a PDF to reduce file\
-  \ size\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.compress-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: protect-pdf\n          description: \"Add password protection to a PDF\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.protect-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: remove-protection\n          description: \"Remove password protection from a PDF\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.remove-protection\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: linearize-pdf\n          description: \"Optimize PDF for fast web viewing\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.linearize-pdf\"\n          outputParameters:\n            - type: object\n   \
-  \           mapping: \"$.\"\n        - name: extract-pdf\n          description: \"Extract text, tables, and figures from a PDF\"\n          hints:\n            readOnly: true\n          call: \"pdf-services.extract-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: auto-tag-pdf\n          description: \"Auto-tag PDF for accessibility compliance\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.auto-tag-pdf\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: generate-document\n          description: \"Generate documents from templates with dynamic data\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.generate-document\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-pdf-properties\n          description: \"Get PDF metadata and document properties\"\n\
-  \          hints:\n            readOnly: true\n          call: \"pdf-services.get-pdf-properties\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: reorder-pages\n          description: \"Reorder pages within a PDF\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.reorder-pages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-pages\n          description: \"Delete specific pages from a PDF\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.delete-pages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: rotate-pages\n          description: \"Rotate pages in a PDF\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.rotate-pages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n       \
-  \ - name: insert-pages\n          description: \"Insert pages from one PDF into another\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.insert-pages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: replace-pages\n          description: \"Replace pages in a PDF with pages from another\"\n          hints:\n            readOnly: false\n          call: \"pdf-services.replace-pages\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-job-status\n          description: \"Check the status of an asynchronous PDF operation\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"pdf-services.get-job-status\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Adobe Document Processing\n  description: Process PDF documents at scale including creation, conversion, extraction, manipulation, and accessibility\n    tagging. Used by document automation engineers and content teams.\n  tags:\n  - Adobe\n  - Documents\n  - PDF\n  - Automation\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    ADOBE_CLIENT_ID: ADOBE_CLIENT_ID\n    ADOBE_CLIENT_SECRET: ADOBE_CLIENT_SECRET\ncapability:\n  consumes:\n  - type: http\n    namespace: pdf-services\n    baseUri: https://pdf-services.adobe.io\n    description: Adobe PDF Services API\n    authentication:\n      type: bearer\n      token: '{{ADOBE_CLIENT_SECRET}}'\n    resources:\n    - name: assets\n      path: /assets\n      description: Manage document assets\n      operations:\n      - name: upload-asset\n        method: POST\n        description: Upload a document for processing\n        outputRawFormat: json\n     \
+  \   outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            mediaType: '{{tools.mediaType}}'\n      - name: get-asset\n        method: GET\n        description: Get asset download URI\n        inputParameters:\n        - name: assetId\n          in: path\n          type: string\n          required: true\n          description: The asset ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-asset\n        method: DELETE\n        description: Delete an asset\n        inputParameters:\n        - name: assetId\n          in: path\n          type: string\n          required: true\n          description: The asset ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: pdf-operations\n      path: /operation\n    \
+  \  description: PDF document operations\n      operations:\n      - name: create-pdf\n        method: POST\n        description: Create a PDF from supported formats\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: export-pdf\n        method: POST\n        description: Export PDF to other formats\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: combine-pdf\n        method: POST\n        description: Combine multiple PDFs into one\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: split-pdf\n        method: POST\n        description: Split a PDF into multiple documents\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: ocr-pdf\n\
+  \        method: POST\n        description: Apply OCR to make scanned PDFs searchable\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: compress-pdf\n        method: POST\n        description: Compress a PDF to reduce file size\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: protect-pdf\n        method: POST\n        description: Add password protection to a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: remove-protection\n        method: POST\n        description: Remove password protection from a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: linearize-pdf\n        method: POST\n        description: Optimize\
+  \ PDF for fast web viewing\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: extract-pdf\n        method: POST\n        description: Extract text, tables, and figures from a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: auto-tag-pdf\n        method: POST\n        description: Auto-tag PDF for accessibility\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: generate-document\n        method: POST\n        description: Generate documents from templates with data\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-pdf-properties\n        method: POST\n        description: Get PDF metadata and properties\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: reorder-pages\n        method: POST\n        description: Reorder pages in a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-pages\n        method: POST\n        description: Delete pages from a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: rotate-pages\n        method: POST\n        description: Rotate pages in a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: insert-pages\n        method: POST\n        description: Insert pages from one PDF into another\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value:\
+  \ $.\n      - name: replace-pages\n        method: POST\n        description: Replace pages in a PDF\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: jobs\n      path: /operation\n      description: Job status polling\n      operations:\n      - name: get-job-status\n        method: GET\n        description: Get the status of an asynchronous job\n        inputParameters:\n        - name: jobId\n          in: path\n          type: string\n          required: true\n          description: The job ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: adobe-document-api\n    description: Unified REST API for Adobe document processing workflows.\n    resources:\n    - path: /v1/assets\n      name: assets\n      description: Upload and manage document assets\n      operations:\n\
+  \      - method: POST\n        name: upload-asset\n        description: Upload a document for processing\n        call: pdf-services.upload-asset\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: get-asset\n        description: Get asset download URI\n        call: pdf-services.get-asset\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-asset\n        description: Delete an asset\n        call: pdf-services.delete-asset\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/convert\n      name: conversion\n      description: PDF conversion operations\n      operations:\n      - method: POST\n        name: create-pdf\n        description: Create PDF from supported formats\n        call: pdf-services.create-pdf\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/export\n      name: export\n\
+  \      description: PDF export operations\n      operations:\n      - method: POST\n        name: export-pdf\n        description: Export PDF to other formats\n        call: pdf-services.export-pdf\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/extract\n      name: extraction\n      description: PDF content extraction\n      operations:\n      - method: POST\n        name: extract-pdf\n        description: Extract structured content from PDF\n        call: pdf-services.extract-pdf\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/jobs/{jobId}\n      name: jobs\n      description: Job status\n      operations:\n      - method: GET\n        name: get-job-status\n        description: Get job status\n        call: pdf-services.get-job-status\n        with:\n          jobId: rest.jobId\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: adobe-document-mcp\n\
+  \    transport: http\n    description: MCP server for AI-assisted Adobe document processing.\n    tools:\n    - name: upload-asset\n      description: Upload a document for processing\n      hints:\n        readOnly: false\n      call: pdf-services.upload-asset\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-asset\n      description: Get asset download URI\n      hints:\n        readOnly: true\n      call: pdf-services.get-asset\n      with:\n        assetId: tools.assetId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-asset\n      description: Delete an uploaded asset\n      hints:\n        destructive: true\n        idempotent: true\n      call: pdf-services.delete-asset\n      with:\n        assetId: tools.assetId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-pdf\n      description: Create a PDF from supported file formats\n      hints:\n        readOnly: false\n \
+  \     call: pdf-services.create-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: export-pdf\n      description: Export PDF to DOCX, PPTX, XLSX, or images\n      hints:\n        readOnly: false\n      call: pdf-services.export-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: combine-pdf\n      description: Combine multiple PDFs into a single document\n      hints:\n        readOnly: false\n      call: pdf-services.combine-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: split-pdf\n      description: Split a PDF into multiple documents\n      hints:\n        readOnly: false\n      call: pdf-services.split-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: ocr-pdf\n      description: Apply OCR to make scanned PDFs searchable\n      hints:\n        readOnly: false\n      call: pdf-services.ocr-pdf\n      outputParameters:\n      - type: object\n    \
+  \    mapping: $.\n    - name: compress-pdf\n      description: Compress a PDF to reduce file size\n      hints:\n        readOnly: false\n      call: pdf-services.compress-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: protect-pdf\n      description: Add password protection to a PDF\n      hints:\n        readOnly: false\n      call: pdf-services.protect-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: remove-protection\n      description: Remove password protection from a PDF\n      hints:\n        readOnly: false\n      call: pdf-services.remove-protection\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: linearize-pdf\n      description: Optimize PDF for fast web viewing\n      hints:\n        readOnly: false\n      call: pdf-services.linearize-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: extract-pdf\n      description: Extract text, tables,\
+  \ and figures from a PDF\n      hints:\n        readOnly: true\n      call: pdf-services.extract-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: auto-tag-pdf\n      description: Auto-tag PDF for accessibility compliance\n      hints:\n        readOnly: false\n      call: pdf-services.auto-tag-pdf\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: generate-document\n      description: Generate documents from templates with dynamic data\n      hints:\n        readOnly: false\n      call: pdf-services.generate-document\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-pdf-properties\n      description: Get PDF metadata and document properties\n      hints:\n        readOnly: true\n      call: pdf-services.get-pdf-properties\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: reorder-pages\n      description: Reorder pages within a PDF\n      hints:\n        readOnly:\
+  \ false\n      call: pdf-services.reorder-pages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-pages\n      description: Delete specific pages from a PDF\n      hints:\n        readOnly: false\n      call: pdf-services.delete-pages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: rotate-pages\n      description: Rotate pages in a PDF\n      hints:\n        readOnly: false\n      call: pdf-services.rotate-pages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: insert-pages\n      description: Insert pages from one PDF into another\n      hints:\n        readOnly: false\n      call: pdf-services.insert-pages\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: replace-pages\n      description: Replace pages in a PDF with pages from another\n      hints:\n        readOnly: false\n      call: pdf-services.replace-pages\n      outputParameters:\n      - type: object\n\
+  \        mapping: $.\n    - name: get-job-status\n      description: Check the status of an asynchronous PDF operation\n      hints:\n        readOnly: true\n        idempotent: true\n      call: pdf-services.get-job-status\n      with:\n        jobId: tools.jobId\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/adobe/refs/heads/main/capabilities/document-processing.yaml
 tags:
 - Adobe

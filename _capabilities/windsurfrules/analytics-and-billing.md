@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: windsurf-enterprise-openapi.yml
-  format: yaml
-  label: windsurf
-  slug: windsurf
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/windsurfrules/refs/heads/main/openapi/windsurf-enterprise-openapi.yml
 categories: []
-consumed_apis:
-- windsurf
+consumed_apis: []
 description: Analytics and billing management capability for Windsurf Enterprise. Enables platform administrators to query AI code completion usage, monitor Cascade agent activity, review per-user analytics, manage billing configurations, and track team credit consumption. Designed for engineering leaders, DevOps teams, and finance teams managing AI coding tool usage.
 layout: capability
 name: Windsurf Analytics and Billing
@@ -41,52 +33,54 @@ personas: []
 provider_name: Windsurf
 provider_slug: windsurfrules
 search_terms:
-- get credit balance
-- update usage configuration, model access controls, and feature flags
-- query code completion usage analytics
-- query windsurf code completion usage analytics for the team
-- billing
-- enterprise
-- get per-user code completion analytics and acceptance rates
-- cascade ai agent analytics
-- query user analytics
-- analytics
-- get usage configuration settings
-- get cascade analytics
-- teams
-- get usage config
-- get cascade ai usage analytics
-- get user analytics
-- update usage config
-- ide
-- ai agents
-- get current usage configuration and feature flags for the team
-- windsurf
-- update usage configuration settings
-- credit balance management
-- coding standards
-- usage configuration
-- query cascade analytics
-- query completion analytics
-- get team credit balance
-- code completion analytics
-- per-user analytics
-- ai coding
 - get user-level analytics and acceptance rates
-- developer workflow
-- check current team credit balance and usage for windsurf enterprise
+- get usage configuration settings
 - ai copilot
 - get cascade ai agent usage metrics including lines generated
+- get current usage configuration and feature flags for the team
+- per-user analytics
+- query code completion usage analytics
+- analytics
+- coding standards
+- teams
+- cascade ai agent analytics
+- get usage config
+- get per-user code completion analytics and acceptance rates
+- get cascade analytics
+- update usage configuration settings
+- check current team credit balance and usage for windsurf enterprise
+- billing
+- enterprise
+- query completion analytics
+- ide
+- update usage configuration, model access controls, and feature flags
+- code completion analytics
+- usage configuration
+- get team credit balance
+- get credit balance
+- ai coding
+- credit balance management
+- ai agents
+- windsurf
+- get cascade ai usage analytics
+- developer workflow
+- query windsurf code completion usage analytics for the team
+- query cascade analytics
+- update usage config
+- get user analytics
+- query user analytics
 slug: analytics-and-billing
 source_filename: analytics-and-billing.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Windsurf Analytics and Billing\"\n  description: >-\n    Analytics and billing management capability for Windsurf Enterprise. Enables\n    platform administrators to query AI code completion usage, monitor Cascade agent\n    activity, review per-user analytics, manage billing configurations, and track\n    team credit consumption. Designed for engineering leaders, DevOps teams, and\n    finance teams managing AI coding tool usage.\n  tags:\n    - Windsurf\n    - Analytics\n    - Billing\n    - Enterprise\n    - AI Coding\n    - Teams\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      WINDSURF_SERVICE_KEY: WINDSURF_SERVICE_KEY\n\ncapability:\n  consumes:\n    - import: windsurf\n      location: ./shared/windsurf-enterprise.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: windsurf-analytics-api\n      description: \"Unified REST API for Windsurf Analytics\
-  \ and Billing management.\"\n      resources:\n        - path: /v1/analytics/completions\n          name: completion-analytics\n          description: \"Code completion analytics\"\n          operations:\n            - method: POST\n              name: query-completion-analytics\n              description: \"Query code completion usage analytics\"\n              call: \"windsurf.get-custom-analytics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analytics/users\n          name: user-analytics\n          description: \"Per-user analytics\"\n          operations:\n            - method: POST\n              name: query-user-analytics\n              description: \"Get user-level analytics and acceptance rates\"\n              call: \"windsurf.get-user-analytics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/analytics/cascade\n          name:\
-  \ cascade-analytics\n          description: \"Cascade AI agent analytics\"\n          operations:\n            - method: POST\n              name: query-cascade-analytics\n              description: \"Get Cascade AI usage analytics\"\n              call: \"windsurf.get-cascade-analytics\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/billing/credits\n          name: credit-balance\n          description: \"Credit balance management\"\n          operations:\n            - method: POST\n              name: get-credit-balance\n              description: \"Get team credit balance\"\n              call: \"windsurf.get-credit-balance\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/billing/config\n          name: usage-config\n          description: \"Usage configuration\"\n          operations:\n            - method: POST\n              name:\
-  \ get-usage-config\n              description: \"Get usage configuration settings\"\n              call: \"windsurf.get-usage-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: PUT\n              name: update-usage-config\n              description: \"Update usage configuration settings\"\n              call: \"windsurf.set-usage-config\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: windsurf-analytics-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Windsurf Analytics and Billing management.\"\n      tools:\n        - name: query-completion-analytics\n          description: \"Query Windsurf code completion usage analytics for the team\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windsurf.get-custom-analytics\"\n         \
-  \ with:\n            start_timestamp: \"tools.start_timestamp\"\n            end_timestamp: \"tools.end_timestamp\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-user-analytics\n          description: \"Get per-user code completion analytics and acceptance rates\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windsurf.get-user-analytics\"\n          with:\n            emails: \"tools.emails\"\n            start_timestamp: \"tools.start_timestamp\"\n            end_timestamp: \"tools.end_timestamp\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-cascade-analytics\n          description: \"Get Cascade AI agent usage metrics including lines generated\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"windsurf.get-cascade-analytics\"\n          with:\n            emails:\
-  \ \"tools.emails\"\n            start_timestamp: \"tools.start_timestamp\"\n            end_timestamp: \"tools.end_timestamp\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-credit-balance\n          description: \"Check current team credit balance and usage for Windsurf Enterprise\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"windsurf.get-credit-balance\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-usage-config\n          description: \"Get current usage configuration and feature flags for the team\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"windsurf.get-usage-config\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: update-usage-config\n          description: \"Update usage configuration, model access\
-  \ controls, and feature flags\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"windsurf.set-usage-config\"\n          with:\n            model_access: \"tools.model_access\"\n            feature_flags: \"tools.feature_flags\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Windsurf Analytics and Billing\n  description: Analytics and billing management capability for Windsurf Enterprise. Enables platform administrators to query\n    AI code completion usage, monitor Cascade agent activity, review per-user analytics, manage billing configurations, and\n    track team credit consumption. Designed for engineering leaders, DevOps teams, and finance teams managing AI coding tool\n    usage.\n  tags:\n  - Windsurf\n  - Analytics\n  - Billing\n  - Enterprise\n  - AI Coding\n  - Teams\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    WINDSURF_SERVICE_KEY: WINDSURF_SERVICE_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: windsurf\n    baseUri: https://server.codeium.com/api/v1\n    description: Windsurf Enterprise API for analytics and billing management\n    authentication:\n      type: apikey\n      key: service_key\n      value: '{{WINDSURF_SERVICE_KEY}}'\n\
+  \      placement: body\n    resources:\n    - name: analytics\n      path: /Analytics\n      description: Custom analytics for code completions and AI usage\n      operations:\n      - name: get-custom-analytics\n        method: POST\n        description: Get Custom Analytics\n        body:\n          type: json\n          data:\n            service_key: '{{WINDSURF_SERVICE_KEY}}'\n            group_name: '{{tools.group_name}}'\n            start_timestamp: '{{tools.start_timestamp}}'\n            end_timestamp: '{{tools.end_timestamp}}'\n            query_requests: '{{tools.query_requests}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: user-analytics\n      path: /UserPageAnalytics\n      description: Per-user analytics data\n      operations:\n      - name: get-user-analytics\n        method: POST\n        description: Get User Page Analytics\n        body:\n          type: json\n         \
+  \ data:\n            service_key: '{{WINDSURF_SERVICE_KEY}}'\n            emails: '{{tools.emails}}'\n            start_timestamp: '{{tools.start_timestamp}}'\n            end_timestamp: '{{tools.end_timestamp}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: cascade-analytics\n      path: /CascadeAnalytics\n      description: Cascade AI agent usage analytics\n      operations:\n      - name: get-cascade-analytics\n        method: POST\n        description: Get Cascade Analytics\n        body:\n          type: json\n          data:\n            service_key: '{{WINDSURF_SERVICE_KEY}}'\n            emails: '{{tools.emails}}'\n            start_timestamp: '{{tools.start_timestamp}}'\n            end_timestamp: '{{tools.end_timestamp}}'\n            query_requests: '{{tools.query_requests}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n\
+  \          value: $.\n    - name: billing\n      path: /GetTeamCreditBalance\n      description: Billing and credit management\n      operations:\n      - name: get-credit-balance\n        method: POST\n        description: Get Team Credit Balance\n        body:\n          type: json\n          data:\n            service_key: '{{WINDSURF_SERVICE_KEY}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-usage-config\n        method: POST\n        description: Get Usage Configuration\n        body:\n          type: json\n          data:\n            service_key: '{{WINDSURF_SERVICE_KEY}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: set-usage-config\n        method: POST\n        description: Set Usage Configuration\n        body:\n          type: json\n          data:\n            service_key: '{{WINDSURF_SERVICE_KEY}}'\n\
+  \            model_access: '{{tools.model_access}}'\n            feature_flags: '{{tools.feature_flags}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: windsurf-analytics-api\n    description: Unified REST API for Windsurf Analytics and Billing management.\n    resources:\n    - path: /v1/analytics/completions\n      name: completion-analytics\n      description: Code completion analytics\n      operations:\n      - method: POST\n        name: query-completion-analytics\n        description: Query code completion usage analytics\n        call: windsurf.get-custom-analytics\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/analytics/users\n      name: user-analytics\n      description: Per-user analytics\n      operations:\n      - method: POST\n        name: query-user-analytics\n        description: Get user-level\
+  \ analytics and acceptance rates\n        call: windsurf.get-user-analytics\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/analytics/cascade\n      name: cascade-analytics\n      description: Cascade AI agent analytics\n      operations:\n      - method: POST\n        name: query-cascade-analytics\n        description: Get Cascade AI usage analytics\n        call: windsurf.get-cascade-analytics\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/billing/credits\n      name: credit-balance\n      description: Credit balance management\n      operations:\n      - method: POST\n        name: get-credit-balance\n        description: Get team credit balance\n        call: windsurf.get-credit-balance\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/billing/config\n      name: usage-config\n      description: Usage configuration\n      operations:\n      - method: POST\n\
+  \        name: get-usage-config\n        description: Get usage configuration settings\n        call: windsurf.get-usage-config\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: PUT\n        name: update-usage-config\n        description: Update usage configuration settings\n        call: windsurf.set-usage-config\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: windsurf-analytics-mcp\n    transport: http\n    description: MCP server for AI-assisted Windsurf Analytics and Billing management.\n    tools:\n    - name: query-completion-analytics\n      description: Query Windsurf code completion usage analytics for the team\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windsurf.get-custom-analytics\n      with:\n        start_timestamp: tools.start_timestamp\n        end_timestamp: tools.end_timestamp\n      outputParameters:\n      - type: object\n\
+  \        mapping: $.\n    - name: get-user-analytics\n      description: Get per-user code completion analytics and acceptance rates\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windsurf.get-user-analytics\n      with:\n        emails: tools.emails\n        start_timestamp: tools.start_timestamp\n        end_timestamp: tools.end_timestamp\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-cascade-analytics\n      description: Get Cascade AI agent usage metrics including lines generated\n      hints:\n        readOnly: true\n        openWorld: true\n      call: windsurf.get-cascade-analytics\n      with:\n        emails: tools.emails\n        start_timestamp: tools.start_timestamp\n        end_timestamp: tools.end_timestamp\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-credit-balance\n      description: Check current team credit balance and usage for Windsurf Enterprise\n      hints:\n\
+  \        readOnly: true\n        openWorld: false\n      call: windsurf.get-credit-balance\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-usage-config\n      description: Get current usage configuration and feature flags for the team\n      hints:\n        readOnly: true\n        openWorld: false\n      call: windsurf.get-usage-config\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-usage-config\n      description: Update usage configuration, model access controls, and feature flags\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: windsurf.set-usage-config\n      with:\n        model_access: tools.model_access\n        feature_flags: tools.feature_flags\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/windsurfrules/refs/heads/main/capabilities/analytics-and-billing.yaml
 tags:
 - Windsurf

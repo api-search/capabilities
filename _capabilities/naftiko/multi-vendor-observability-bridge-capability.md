@@ -13,20 +13,20 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- query splunk
-- spec-driven integration
-- query newrelic
-- query unified
-- mcp
-- capabilities
-- query datadog
-- new relic
 - naftiko
+- query newrelic
+- new relic
 - splunk
+- mcp
 - api integration
-- datadog
+- query unified
+- query splunk
 - governance
 - ai
+- spec-driven integration
+- datadog
+- capabilities
+- query datadog
 slug: multi-vendor-observability-bridge-capability
 source_filename: multi-vendor-observability-bridge-capability.yaml
 source_heading: Capability Spec

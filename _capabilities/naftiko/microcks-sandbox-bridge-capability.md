@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- naftiko
+- microcks
 - get sandbox
+- list sandboxes
+- api integration
+- governance
 - spec-driven integration
+- ai
 - sandbox
 - mcp
 - capabilities
-- microcks
-- list sandboxes
-- naftiko
-- api integration
-- governance
-- ai
 slug: microcks-sandbox-bridge-capability
 source_filename: microcks-sandbox-bridge-capability.yaml
 source_heading: Capability Spec

@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- demo
-- list workspaces
-- spec-driven integration
-- microsoft fabric
-- list workspace items
-- mcp
-- capabilities
 - naftiko
+- list workspace items
+- microsoft fabric
 - api integration
 - governance
+- capabilities
+- spec-driven integration
+- list workspaces
 - ai
+- mcp
+- demo
 slug: fabric-explorer-platform-demo
 source_filename: fabric-explorer-platform-demo.yaml
 source_heading: Capability Spec

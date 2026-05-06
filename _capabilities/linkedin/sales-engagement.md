@@ -1,8 +1,7 @@
 ---
 categories:
 - crm-sales
-consumed_apis:
-- sales-navigator
+consumed_apis: []
 description: Unified workflow for sales representatives to manage Sales Navigator contracts, export analytics, associate CRM profiles, and validate CRM data.
 layout: capability
 name: LinkedIn Sales Engagement
@@ -39,57 +38,61 @@ personas: []
 provider_name: LinkedIn
 provider_slug: linkedin
 search_terms:
-- batch fetch profile associations.
-- retrieve sales access token.
-- professional networking
-- create export job
-- create crm data validation export job.
+- sales
+- tracks employee learning activity and completions.
+- find all contracts where user has an active seat.
+- recruiting
+- get export job
+- careers
 - authentication, sharing, and verification for consumer apps.
 - fetch sales analytics export job by id.
-- get sales access token
-- archives communications for regulatory compliance.
-- sales intelligence, lead management, and crm integration.
-- data portability and advertiser transparency for dma.
-- marketing
-- get crm validation job status.
 - linkedin
+- create crm data validation export job.
 - batch fetch profile associations from crm records.
-- employee development tracking and content access.
-- get export job
-- create crm data validation job.
-- posts jobs and manages candidates through ats integrations.
-- sales navigator
-- get contracts
-- b2b advertising, audience targeting, and campaign analytics.
-- fetch export job status.
-- careers
-- get crm data validation export job status.
-- social media
+- marketing
+- professional networking
+- get sales access token
+- data portability and advertiser transparency for dma.
 - crm integration
-- batch get profile associations
-- manages b2b ad campaigns and audience targeting on linkedin.
-- job posting, recruiting, and applicant tracking.
-- message archiving and regulatory communications governance.
-- create new sales analytics export job.
-- recruiting
-- create crm validation job
-- uses sales navigator for lead generation and crm sync.
-- find all contracts where user has an active seat.
-- create sales analytics export job.
-- sales
+- fetch export job status.
 - get sales access token.
-- get crm validation job
-- tracks employee learning activity and completions.
+- create crm validation job
+- create new sales analytics export job.
 - business
+- employee development tracking and content access.
+- get crm validation job status.
+- sales intelligence, lead management, and crm integration.
+- create crm data validation job.
+- message archiving and regulatory communications governance.
+- get crm data validation export job status.
+- sales navigator
+- b2b advertising, audience targeting, and campaign analytics.
+- manages b2b ad campaigns and audience targeting on linkedin.
+- batch fetch profile associations.
+- posts jobs and manages candidates through ats integrations.
+- get crm validation job
+- job posting, recruiting, and applicant tracking.
+- create sales analytics export job.
+- create export job
+- social media
+- uses sales navigator for lead generation and crm sync.
+- retrieve sales access token.
 - integrates linkedin authentication and sharing into applications.
+- archives communications for regulatory compliance.
+- batch get profile associations
+- get contracts
 slug: sales-engagement
 source_filename: sales-engagement.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"LinkedIn Sales Engagement\"\n  description: \"Unified workflow for sales representatives to manage Sales Navigator contracts, export analytics, associate CRM profiles, and validate CRM data.\"\n  tags:\n    - LinkedIn\n    - Sales Navigator\n    - CRM Integration\n    - Sales\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: sales-navigator\n      location: ./shared/sales-navigator.yaml\n\n  exposes:\n    - type: rest\n      port: 8084\n      namespace: sales-engagement-api\n      description: \"Unified REST API for LinkedIn sales engagement workflows.\"\n      resources:\n        - path: /v1/sales-contracts\n          name: sales-contracts\n          operations:\n            - method: GET\n              name: get-contracts\n              description: \"Find all contracts where user has an active\
-  \ seat.\"\n              call: \"sales-navigator.get-contracts\"\n        - path: /v1/sales-analytics-export-jobs\n          name: sales-analytics-export-jobs\n          operations:\n            - method: POST\n              name: create-export-job\n              description: \"Create sales analytics export job.\"\n              call: \"sales-navigator.create-export-job\"\n        - path: /v1/sales-analytics-export-jobs/{JobId}\n          name: export-job-by-id\n          operations:\n            - method: GET\n              name: get-export-job\n              description: \"Fetch export job status.\"\n              call: \"sales-navigator.get-export-job\"\n        - path: /v1/sales-access-tokens\n          name: sales-access-tokens\n          operations:\n            - method: GET\n              name: get-sales-access-token\n              description: \"Get sales access token.\"\n              call: \"sales-navigator.get-sales-access-token\"\n        - path: /v1/profile-associations\n\
-  \          name: profile-associations\n          operations:\n            - method: GET\n              name: batch-get-profile-associations\n              description: \"Batch fetch profile associations.\"\n              call: \"sales-navigator.batch-get-profile-associations\"\n        - path: /v1/crm-validation-jobs\n          name: crm-validation-jobs\n          operations:\n            - method: POST\n              name: create-crm-validation-job\n              description: \"Create CRM data validation job.\"\n              call: \"sales-navigator.create-crm-validation-job\"\n        - path: /v1/crm-validation-jobs/{JobId}\n          name: crm-validation-job-by-id\n          operations:\n            - method: GET\n              name: get-crm-validation-job\n              description: \"Get CRM validation job status.\"\n              call: \"sales-navigator.get-crm-validation-job\"\n\n    - type: mcp\n      port: 9094\n      namespace: sales-engagement-mcp\n      transport: http\n  \
-  \    description: \"MCP server for AI-assisted LinkedIn sales engagement.\"\n      tools:\n        - name: get-contracts\n          description: \"Find all contracts where user has an active seat.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"sales-navigator.get-contracts\"\n        - name: create-export-job\n          description: \"Create new sales analytics export job.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"sales-navigator.create-export-job\"\n        - name: get-export-job\n          description: \"Fetch sales analytics export job by ID.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"sales-navigator.get-export-job\"\n        - name: get-sales-access-token\n          description: \"Retrieve sales access token.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"sales-navigator.get-sales-access-token\"\
-  \n        - name: batch-get-profile-associations\n          description: \"Batch fetch profile associations from CRM records.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"sales-navigator.batch-get-profile-associations\"\n        - name: create-crm-validation-job\n          description: \"Create CRM data validation export job.\"\n          hints: { readOnly: false, destructive: false, idempotent: false }\n          call: \"sales-navigator.create-crm-validation-job\"\n        - name: get-crm-validation-job\n          description: \"Get CRM data validation export job status.\"\n          hints: { readOnly: true, destructive: false, idempotent: true }\n          call: \"sales-navigator.get-crm-validation-job\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: LinkedIn Sales Engagement\n  description: Unified workflow for sales representatives to manage Sales Navigator contracts, export analytics, associate\n    CRM profiles, and validate CRM data.\n  tags:\n  - LinkedIn\n  - Sales Navigator\n  - CRM Integration\n  - Sales\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    LINKEDIN_OAUTH_TOKEN: LINKEDIN_OAUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: sales-navigator\n    baseUri: https://api.linkedin.com/v2\n    description: LinkedIn Sales Navigator API.\n    authentication:\n      type: bearer\n      token: '{{LINKEDIN_OAUTH_TOKEN}}'\n    resources:\n    - name: sales-contracts\n      path: /salesContracts\n      description: Sales Navigator contracts.\n      operations:\n      - name: get-contracts\n        method: GET\n        description: Find all contracts where user has an active seat.\n        inputParameters:\n        - name:\
+  \ q\n          in: query\n          type: string\n          required: true\n          description: Query type\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: sales-analytics-export-jobs\n      path: /salesAnalyticsExportJobs\n      description: Sales analytics export jobs.\n      operations:\n      - name: create-export-job\n        method: POST\n        description: Create new sales analytics export job.\n        inputParameters:\n        - name: action\n          in: query\n          type: string\n          required: true\n          description: Export action type\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: sales-analytics-export-job-by-id\n      path: /salesAnalyticsExportJobs/{JobId}\n      description: Individual export job status.\n      operations:\n      - name: get-export-job\n        method:\
+  \ GET\n        description: Fetch sales analytics export job by ID.\n        inputParameters:\n        - name: JobId\n          in: path\n          type: integer\n          required: true\n          description: Job ID\n        - name: contract\n          in: query\n          type: string\n          required: true\n          description: Contract URN\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: sales-access-tokens\n      path: /salesAccessTokens\n      description: Sales access tokens.\n      operations:\n      - name: get-sales-access-token\n        method: GET\n        description: Retrieve sales access token for authenticated iframe sessions.\n        inputParameters:\n        - name: q\n          in: query\n          type: string\n          required: true\n          description: Query type\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n\
+  \          value: $.\n    - name: profile-associations\n      path: /salesNavigatorProfileAssociations\n      description: Profile associations from CRM records.\n      operations:\n      - name: batch-get-profile-associations\n        method: GET\n        description: Batch fetch profile associations.\n        inputParameters:\n        - name: ids\n          in: query\n          type: string\n          required: true\n          description: Association keys\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: crm-data-validation-jobs\n      path: /crmDataValidationExportJobs\n      description: CRM data validation export jobs.\n      operations:\n      - name: create-crm-validation-job\n        method: POST\n        description: Create CRM data validation export job.\n        inputParameters:\n        - name: crmInstanceId\n          in: query\n          type: string\n          required: true\n    \
+  \      description: CRM instance URN\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: crm-data-validation-job-by-id\n      path: /crmDataValidationExportJobs/{JobId}\n      description: CRM validation job status.\n      operations:\n      - name: get-crm-validation-job\n        method: GET\n        description: Get CRM data validation export job status.\n        inputParameters:\n        - name: JobId\n          in: path\n          type: integer\n          required: true\n          description: Job ID\n        - name: crmInstanceId\n          in: query\n          type: string\n          required: true\n          description: CRM instance URN\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8084\n    namespace: sales-engagement-api\n    description: Unified REST API for LinkedIn sales\
+  \ engagement workflows.\n    resources:\n    - path: /v1/sales-contracts\n      name: sales-contracts\n      operations:\n      - method: GET\n        name: get-contracts\n        description: Find all contracts where user has an active seat.\n        call: sales-navigator.get-contracts\n    - path: /v1/sales-analytics-export-jobs\n      name: sales-analytics-export-jobs\n      operations:\n      - method: POST\n        name: create-export-job\n        description: Create sales analytics export job.\n        call: sales-navigator.create-export-job\n    - path: /v1/sales-analytics-export-jobs/{JobId}\n      name: export-job-by-id\n      operations:\n      - method: GET\n        name: get-export-job\n        description: Fetch export job status.\n        call: sales-navigator.get-export-job\n    - path: /v1/sales-access-tokens\n      name: sales-access-tokens\n      operations:\n      - method: GET\n        name: get-sales-access-token\n        description: Get sales access token.\n    \
+  \    call: sales-navigator.get-sales-access-token\n    - path: /v1/profile-associations\n      name: profile-associations\n      operations:\n      - method: GET\n        name: batch-get-profile-associations\n        description: Batch fetch profile associations.\n        call: sales-navigator.batch-get-profile-associations\n    - path: /v1/crm-validation-jobs\n      name: crm-validation-jobs\n      operations:\n      - method: POST\n        name: create-crm-validation-job\n        description: Create CRM data validation job.\n        call: sales-navigator.create-crm-validation-job\n    - path: /v1/crm-validation-jobs/{JobId}\n      name: crm-validation-job-by-id\n      operations:\n      - method: GET\n        name: get-crm-validation-job\n        description: Get CRM validation job status.\n        call: sales-navigator.get-crm-validation-job\n  - type: mcp\n    port: 9094\n    namespace: sales-engagement-mcp\n    transport: http\n    description: MCP server for AI-assisted LinkedIn\
+  \ sales engagement.\n    tools:\n    - name: get-contracts\n      description: Find all contracts where user has an active seat.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: sales-navigator.get-contracts\n    - name: create-export-job\n      description: Create new sales analytics export job.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: sales-navigator.create-export-job\n    - name: get-export-job\n      description: Fetch sales analytics export job by ID.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: sales-navigator.get-export-job\n    - name: get-sales-access-token\n      description: Retrieve sales access token.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: sales-navigator.get-sales-access-token\n    - name: batch-get-profile-associations\n      description:\
+  \ Batch fetch profile associations from CRM records.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: sales-navigator.batch-get-profile-associations\n    - name: create-crm-validation-job\n      description: Create CRM data validation export job.\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: sales-navigator.create-crm-validation-job\n    - name: get-crm-validation-job\n      description: Get CRM data validation export job status.\n      hints:\n        readOnly: true\n        destructive: false\n        idempotent: true\n      call: sales-navigator.get-crm-validation-job\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/linkedin/refs/heads/main/capabilities/sales-engagement.yaml
 tags:
 - LinkedIn

@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- demo
-- fortune 50
-- trigger deployment
-- spec-driven integration
-- scale
-- mcp
-- capabilities
-- bulk register capabilities
 - naftiko
+- bulk register capabilities
+- fortune 50
+- scale
+- trigger deployment
 - api integration
-- governance
+- capabilities
 - ai
+- governance
+- spec-driven integration
+- mcp
+- demo
 slug: fortune50-fleet-scale-demo
 source_filename: fortune50-fleet-scale-demo.yaml
 source_heading: Capability Spec

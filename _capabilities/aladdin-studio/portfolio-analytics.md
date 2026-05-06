@@ -1,8 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- aladdin-graph
-- aladdin-data-cloud
+consumed_apis: []
 description: Workflow capability combining the Aladdin Graph API and Data Cloud API for institutional portfolio analytics. Provides portfolio managers, risk analysts, and quantitative researchers with unified access to positions, risk metrics, factor exposures, and large-scale analytics data.
 layout: capability
 name: Aladdin Studio Portfolio Analytics
@@ -35,69 +33,73 @@ personas: []
 provider_name: Aladdin Studio
 provider_slug: aladdin-studio
 search_terms:
-- data cloud sql query execution
-- data cloud
-- list portfolios
-- quant researcher building and backtesting models using aladdin data cloud for large-scale portfolio analytics.
-- investment research and analyst insights
-- get positions
-- get portfolio
-- asset management
-- risk professional analyzing factor exposures, var, and stress test results for institutional portfolios using aladdin's risk engine.
-- list datasets
-- get security reference data
 - list available datasets in the aladdin data cloud for analytics
-- execute sql query against the aladdin data cloud snowflake database for large-scale portfolio analytics and data science workflows.
-- Portfolio Manager
-- unified portfolio analytics combining graph api and data cloud for institutional portfolio managers and risk analysts
-- order management and execution workflows
-- blackrock
-- get security reference data from aladdin including classification attributes
-- financial
-- risk management
-- get risk
-- get current portfolio positions
-- get details for a specific aladdin portfolio
-- portfolio management and discovery
-- execute query
-- aladdin studio
-- risk analytics, factor exposures, and stress testing
-- execute sql query against data cloud
-- Risk Analyst
-- portfolio analytics
-- get portfolio risk analytics and factor exposures
 - risk analytics
-- large-scale analytics on snowflake-based data warehouse
-- get portfolio positions
-- get portfolio risk
-- list aladdin portfolios accessible to the authenticated user
-- list accessible aladdin portfolios
-- portfolio metadata, positions, and performance tracking
-- institutional portfolio manager monitoring holdings, performance, and risk across aladdin-managed portfolios.
-- query data cloud
-- list data cloud datasets
-- security reference data
-- portfolio risk analytics
-- get security
+- unified portfolio analytics combining graph api and data cloud for institutional portfolio managers and risk analysts
 - list available data cloud datasets
-- get risk analytics for an aladdin portfolio including tracking error, var, beta, volatility, and factor exposures computed by aladdin's risk engine.
-- investment management
-- get current positions and holdings for an aladdin portfolio including market values, quantities, and weights by security.
-- Quantitative Researcher
-- portfolio management
-- aladdin data cloud available datasets
+- get risk
+- list datasets
 - portfolio holdings and positions
+- Portfolio Manager
+- portfolio management
+- risk management
+- aladdin studio
+- get portfolio positions
+- blackrock
+- execute query
+- execute sql query against the aladdin data cloud snowflake database for large-scale portfolio analytics and data science workflows.
+- query data cloud
+- Quantitative Researcher
+- portfolio analytics
+- investment management
+- get details for a specific aladdin portfolio
+- execute sql query against data cloud
+- get portfolio risk analytics and factor exposures
+- investment research and analyst insights
+- get security
+- list aladdin portfolios accessible to the authenticated user
+- get security reference data
+- get current positions and holdings for an aladdin portfolio including market values, quantities, and weights by security.
+- get portfolio
+- portfolio management and discovery
+- quant researcher building and backtesting models using aladdin data cloud for large-scale portfolio analytics.
+- portfolio metadata, positions, and performance tracking
+- risk analytics, factor exposures, and stress testing
+- get current portfolio positions
+- security reference data
+- large-scale analytics on snowflake-based data warehouse
+- Risk Analyst
+- financial
+- list portfolios
+- get positions
+- data cloud sql query execution
+- list data cloud datasets
+- data cloud
+- portfolio risk analytics
+- get security reference data from aladdin including classification attributes
+- risk professional analyzing factor exposures, var, and stress test results for institutional portfolios using aladdin's risk engine.
+- order management and execution workflows
+- get risk analytics for an aladdin portfolio including tracking error, var, beta, volatility, and factor exposures computed by aladdin's risk engine.
+- institutional portfolio manager monitoring holdings, performance, and risk across aladdin-managed portfolios.
+- asset management
+- list accessible aladdin portfolios
+- get portfolio risk
+- aladdin data cloud available datasets
 slug: portfolio-analytics
 source_filename: portfolio-analytics.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Aladdin Studio Portfolio Analytics\n  description: >-\n    Workflow capability combining the Aladdin Graph API and Data Cloud API for\n    institutional portfolio analytics. Provides portfolio managers, risk\n    analysts, and quantitative researchers with unified access to positions,\n    risk metrics, factor exposures, and large-scale analytics data.\n  tags:\n    - Aladdin Studio\n    - Portfolio Management\n    - Risk Analytics\n    - Investment Management\n    - Financial\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      ALADDIN_API_TOKEN: ALADDIN_API_TOKEN\n      ALADDIN_ADC_TOKEN: ALADDIN_ADC_TOKEN\n\ncapability:\n  consumes:\n    - import: aladdin-graph\n      location: ./shared/graph-api.yaml\n    - import: aladdin-data-cloud\n      location: ./shared/data-cloud-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: aladdin-portfolio-analytics-api\n\
-  \      description: Unified REST API for Aladdin portfolio analytics workflows.\n      resources:\n        - path: /v1/portfolios\n          name: portfolios\n          description: Portfolio management and discovery\n          operations:\n            - method: GET\n              name: list-portfolios\n              description: List accessible Aladdin portfolios\n              call: \"aladdin-graph.list-portfolios\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/portfolios/{portfolioId}/positions\n          name: positions\n          description: Portfolio holdings and positions\n          operations:\n            - method: GET\n              name: get-positions\n              description: Get current portfolio positions\n              call: \"aladdin-graph.get-positions\"\n              with:\n                portfolioId: \"rest.portfolioId\"\n                asOfDate: \"rest.asOfDate\"\n              outputParameters:\n\
-  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/portfolios/{portfolioId}/risk\n          name: risk\n          description: Portfolio risk analytics\n          operations:\n            - method: GET\n              name: get-risk\n              description: Get portfolio risk analytics and factor exposures\n              call: \"aladdin-graph.get-risk\"\n              with:\n                portfolioId: \"rest.portfolioId\"\n                asOfDate: \"rest.asOfDate\"\n                model: \"rest.model\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/securities/{securityId}\n          name: securities\n          description: Security reference data\n          operations:\n            - method: GET\n              name: get-security\n              description: Get security reference data\n              call: \"aladdin-graph.get-security\"\n              with:\n             \
-  \   securityId: \"rest.securityId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/data-cloud/datasets\n          name: datasets\n          description: Aladdin Data Cloud available datasets\n          operations:\n            - method: GET\n              name: list-datasets\n              description: List available Data Cloud datasets\n              call: \"aladdin-data-cloud.list-datasets\"\n              with:\n                connectionId: \"rest.connectionId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/data-cloud/query\n          name: queries\n          description: Data Cloud SQL query execution\n          operations:\n            - method: POST\n              name: execute-query\n              description: Execute SQL query against Data Cloud\n              call: \"aladdin-data-cloud.execute-query\"\n              with:\n     \
-  \           connectionId: \"rest.connectionId\"\n                sql: \"rest.sql\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: aladdin-portfolio-analytics-mcp\n      transport: http\n      description: MCP server for AI-assisted portfolio analytics with Aladdin Studio.\n      tools:\n        - name: list-portfolios\n          description: List Aladdin portfolios accessible to the authenticated user\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aladdin-graph.list-portfolios\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-portfolio\n          description: Get details for a specific Aladdin portfolio\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aladdin-graph.get-portfolio\"\n          with:\n            portfolioId: \"tools.portfolioId\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-portfolio-positions\n          description: >-\n            Get current positions and holdings for an Aladdin portfolio including\n            market values, quantities, and weights by security.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aladdin-graph.get-positions\"\n          with:\n            portfolioId: \"tools.portfolioId\"\n            asOfDate: \"tools.asOfDate\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-portfolio-risk\n          description: >-\n            Get risk analytics for an Aladdin portfolio including tracking error,\n            VaR, beta, volatility, and factor exposures computed by Aladdin's risk engine.\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aladdin-graph.get-risk\"\n          with:\n\
-  \            portfolioId: \"tools.portfolioId\"\n            asOfDate: \"tools.asOfDate\"\n            model: \"tools.model\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-security\n          description: Get security reference data from Aladdin including classification attributes\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aladdin-graph.get-security\"\n          with:\n            securityId: \"tools.securityId\"\n            idType: \"tools.idType\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-data-cloud-datasets\n          description: List available datasets in the Aladdin Data Cloud for analytics\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"aladdin-data-cloud.list-datasets\"\n          with:\n            connectionId: \"tools.connectionId\"\n            schema:\
-  \ \"tools.schema\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: query-data-cloud\n          description: >-\n            Execute SQL query against the Aladdin Data Cloud Snowflake database\n            for large-scale portfolio analytics and data science workflows.\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"aladdin-data-cloud.execute-query\"\n          with:\n            connectionId: \"tools.connectionId\"\n            sql: \"tools.sql\"\n            warehouse: \"tools.warehouse\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Aladdin Studio Portfolio Analytics\n  description: Workflow capability combining the Aladdin Graph API and Data Cloud API for institutional portfolio analytics.\n    Provides portfolio managers, risk analysts, and quantitative researchers with unified access to positions, risk metrics,\n    factor exposures, and large-scale analytics data.\n  tags:\n  - Aladdin Studio\n  - Portfolio Management\n  - Risk Analytics\n  - Investment Management\n  - Financial\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    ALADDIN_API_TOKEN: ALADDIN_API_TOKEN\n    ALADDIN_ADC_TOKEN: ALADDIN_ADC_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: aladdin-graph\n    baseUri: https://api.blackrock.com/v1\n    description: Aladdin Graph API for portfolio and risk data\n    authentication:\n      type: bearer\n      token: '{{env.ALADDIN_API_TOKEN}}'\n    resources:\n    - name: portfolios\n      path: /portfolios\n\
+  \      description: Portfolio management operations\n      operations:\n      - name: list-portfolios\n        method: GET\n        description: List portfolios accessible to the authenticated user\n        inputParameters:\n        - name: page\n          in: query\n          type: integer\n          required: false\n          description: Page number\n        - name: pageSize\n          in: query\n          type: integer\n          required: false\n          description: Results per page\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-portfolio\n        method: GET\n        description: Get portfolio details by ID\n        inputParameters:\n        - name: portfolioId\n          in: path\n          type: string\n          required: true\n          description: Portfolio identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n\
+  \          value: $.\n    - name: positions\n      path: /portfolios/{portfolioId}/positions\n      description: Portfolio position data\n      operations:\n      - name: get-positions\n        method: GET\n        description: Get current positions for a portfolio\n        inputParameters:\n        - name: portfolioId\n          in: path\n          type: string\n          required: true\n          description: Portfolio identifier\n        - name: asOfDate\n          in: query\n          type: string\n          required: false\n          description: Position date (YYYY-MM-DD)\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: risk\n      path: /portfolios/{portfolioId}/risk\n      description: Portfolio risk analytics\n      operations:\n      - name: get-risk\n        method: GET\n        description: Get risk analytics for a portfolio\n        inputParameters:\n        - name: portfolioId\n   \
+  \       in: path\n          type: string\n          required: true\n          description: Portfolio identifier\n        - name: asOfDate\n          in: query\n          type: string\n          required: false\n          description: Risk calculation date\n        - name: model\n          in: query\n          type: string\n          required: false\n          description: Risk model identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: securities\n      path: /securities/{securityId}\n      description: Security reference data\n      operations:\n      - name: get-security\n        method: GET\n        description: Get security reference data\n        inputParameters:\n        - name: securityId\n          in: path\n          type: string\n          required: true\n          description: Security identifier\n        - name: idType\n          in: query\n          type: string\n          required:\
+  \ false\n          description: Identifier type (ISIN, CUSIP, etc.)\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: aladdin-data-cloud\n    baseUri: https://api.blackrock.com/adc/v1\n    description: Aladdin Data Cloud API for Snowflake-based analytics\n    authentication:\n      type: bearer\n      token: '{{env.ALADDIN_ADC_TOKEN}}'\n    resources:\n    - name: connections\n      path: /connections\n      description: Data Cloud connection management\n      operations:\n      - name: list-connections\n        method: GET\n        description: List available Data Cloud connections\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: queries\n      path: /connections/{connectionId}/query\n      description: SQL query execution\n      operations:\n      - name: execute-query\n        method: POST\n\
+  \        description: Execute SQL query against Data Cloud\n        inputParameters:\n        - name: connectionId\n          in: path\n          type: string\n          required: true\n          description: Connection identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            sql: '{{tools.sql}}'\n            warehouse: '{{tools.warehouse}}'\n    - name: datasets\n      path: /connections/{connectionId}/datasets\n      description: Available datasets discovery\n      operations:\n      - name: list-datasets\n        method: GET\n        description: List available datasets in the Data Cloud\n        inputParameters:\n        - name: connectionId\n          in: path\n          type: string\n          required: true\n          description: Connection identifier\n        - name: schema\n          in: query\n          type: string\n          required:\
+  \ false\n          description: Snowflake schema filter\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: aladdin-portfolio-analytics-api\n    description: Unified REST API for Aladdin portfolio analytics workflows.\n    resources:\n    - path: /v1/portfolios\n      name: portfolios\n      description: Portfolio management and discovery\n      operations:\n      - method: GET\n        name: list-portfolios\n        description: List accessible Aladdin portfolios\n        call: aladdin-graph.list-portfolios\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/portfolios/{portfolioId}/positions\n      name: positions\n      description: Portfolio holdings and positions\n      operations:\n      - method: GET\n        name: get-positions\n        description: Get current portfolio positions\n        call: aladdin-graph.get-positions\n\
+  \        with:\n          portfolioId: rest.portfolioId\n          asOfDate: rest.asOfDate\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/portfolios/{portfolioId}/risk\n      name: risk\n      description: Portfolio risk analytics\n      operations:\n      - method: GET\n        name: get-risk\n        description: Get portfolio risk analytics and factor exposures\n        call: aladdin-graph.get-risk\n        with:\n          portfolioId: rest.portfolioId\n          asOfDate: rest.asOfDate\n          model: rest.model\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/securities/{securityId}\n      name: securities\n      description: Security reference data\n      operations:\n      - method: GET\n        name: get-security\n        description: Get security reference data\n        call: aladdin-graph.get-security\n        with:\n          securityId: rest.securityId\n        outputParameters:\n     \
+  \   - type: object\n          mapping: $.\n    - path: /v1/data-cloud/datasets\n      name: datasets\n      description: Aladdin Data Cloud available datasets\n      operations:\n      - method: GET\n        name: list-datasets\n        description: List available Data Cloud datasets\n        call: aladdin-data-cloud.list-datasets\n        with:\n          connectionId: rest.connectionId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/data-cloud/query\n      name: queries\n      description: Data Cloud SQL query execution\n      operations:\n      - method: POST\n        name: execute-query\n        description: Execute SQL query against Data Cloud\n        call: aladdin-data-cloud.execute-query\n        with:\n          connectionId: rest.connectionId\n          sql: rest.sql\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: aladdin-portfolio-analytics-mcp\n    transport:\
+  \ http\n    description: MCP server for AI-assisted portfolio analytics with Aladdin Studio.\n    tools:\n    - name: list-portfolios\n      description: List Aladdin portfolios accessible to the authenticated user\n      hints:\n        readOnly: true\n        openWorld: false\n      call: aladdin-graph.list-portfolios\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-portfolio\n      description: Get details for a specific Aladdin portfolio\n      hints:\n        readOnly: true\n        openWorld: false\n      call: aladdin-graph.get-portfolio\n      with:\n        portfolioId: tools.portfolioId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-portfolio-positions\n      description: Get current positions and holdings for an Aladdin portfolio including market values, quantities, and weights\n        by security.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: aladdin-graph.get-positions\n\
+  \      with:\n        portfolioId: tools.portfolioId\n        asOfDate: tools.asOfDate\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-portfolio-risk\n      description: Get risk analytics for an Aladdin portfolio including tracking error, VaR, beta, volatility, and factor\n        exposures computed by Aladdin's risk engine.\n      hints:\n        readOnly: true\n        openWorld: false\n      call: aladdin-graph.get-risk\n      with:\n        portfolioId: tools.portfolioId\n        asOfDate: tools.asOfDate\n        model: tools.model\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-security\n      description: Get security reference data from Aladdin including classification attributes\n      hints:\n        readOnly: true\n        openWorld: false\n      call: aladdin-graph.get-security\n      with:\n        securityId: tools.securityId\n        idType: tools.idType\n      outputParameters:\n      - type: object\n\
+  \        mapping: $.\n    - name: list-data-cloud-datasets\n      description: List available datasets in the Aladdin Data Cloud for analytics\n      hints:\n        readOnly: true\n        openWorld: false\n      call: aladdin-data-cloud.list-datasets\n      with:\n        connectionId: tools.connectionId\n        schema: tools.schema\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: query-data-cloud\n      description: Execute SQL query against the Aladdin Data Cloud Snowflake database for large-scale portfolio analytics\n        and data science workflows.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: aladdin-data-cloud.execute-query\n      with:\n        connectionId: tools.connectionId\n        sql: tools.sql\n        warehouse: tools.warehouse\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/aladdin-studio/refs/heads/main/capabilities/portfolio-analytics.yaml
 tags:
 - Aladdin Studio

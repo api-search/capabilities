@@ -19,7 +19,7 @@ implementations:
 - capability_name: Indeed Talent Acquisition
   capability_slug: talent-acquisition
   capability_url: https://capabilities.apis.io/capabilities/indeed/talent-acquisition/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Indeed
   provider_slug: indeed
@@ -32,7 +32,7 @@ implementations:
 - capability_name: LinkedIn Talent Acquisition
   capability_slug: talent-acquisition
   capability_url: https://capabilities.apis.io/capabilities/linkedin/talent-acquisition/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 13
   provider_name: LinkedIn
   provider_slug: linkedin
@@ -45,7 +45,7 @@ implementations:
 - capability_name: Merge Talent Management
   capability_slug: talent-management
   capability_url: https://capabilities.apis.io/capabilities/merge/talent-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Merge
   provider_slug: merge
@@ -59,7 +59,7 @@ implementations:
 - capability_name: Workday Talent and Performance
   capability_slug: talent-and-performance
   capability_url: https://capabilities.apis.io/capabilities/workday/talent-and-performance/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Workday
   provider_slug: workday

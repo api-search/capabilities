@@ -9,17 +9,17 @@ personas: []
 provider_name: Microsoft Azure API Management
 provider_slug: microsoft-azure-api-management
 search_terms:
-- api lifecycle
+- subscriptions
+- ai gateway
+- products
 - platform administration
+- enterprise
+- policies
+- microsoft azure
+- api lifecycle
 - api gateway
 - api governance
-- subscriptions
-- policies
-- ai gateway
 - api management
-- microsoft azure
-- enterprise
-- products
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

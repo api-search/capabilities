@@ -16,7 +16,7 @@ implementations:
 - capability_name: AGCO Precision Farming
   capability_slug: precision-farming
   capability_url: https://capabilities.apis.io/capabilities/agco/precision-farming/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: agco
   provider_slug: agco
@@ -30,7 +30,7 @@ implementations:
 - capability_name: Akri Edge Device Monitoring
   capability_slug: edge-device-monitoring
   capability_url: https://capabilities.apis.io/capabilities/akri/edge-device-monitoring/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Akri
   provider_slug: akri
@@ -59,7 +59,7 @@ implementations:
 - capability_name: Amazon IoT Core - Iot Device Connectivity
   capability_slug: iot-device-connectivity
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-core/iot-device-connectivity/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT Core
   provider_slug: amazon-iot-core
@@ -72,7 +72,7 @@ implementations:
 - capability_name: Amazon IoT Device Defender - Iot Security Monitoring
   capability_slug: iot-security-monitoring
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-device-defender/iot-security-monitoring/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT Device Defender
   provider_slug: amazon-iot-device-defender
@@ -85,7 +85,7 @@ implementations:
 - capability_name: Amazon IoT Device Management - Iot Fleet Management
   capability_slug: iot-fleet-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-device-management/iot-fleet-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT Device Management
   provider_slug: amazon-iot-device-management
@@ -97,7 +97,7 @@ implementations:
 - capability_name: Amazon IoT Events - Iot Event Management
   capability_slug: iot-event-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-events/iot-event-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT Events
   provider_slug: amazon-iot-events
@@ -109,7 +109,7 @@ implementations:
 - capability_name: Amazon IoT FleetWise - Vehicle Fleet Management
   capability_slug: vehicle-fleet-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-fleetwise/vehicle-fleet-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT FleetWise
   provider_slug: amazon-iot-fleetwise
@@ -122,7 +122,7 @@ implementations:
 - capability_name: Amazon IoT Greengrass - Edge Device Management
   capability_slug: edge-device-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-greengrass/edge-device-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT Greengrass
   provider_slug: amazon-iot-greengrass
@@ -135,7 +135,7 @@ implementations:
 - capability_name: Amazon IoT SiteWise - Industrial Asset Management
   capability_slug: industrial-asset-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-sitewise/industrial-asset-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT SiteWise
   provider_slug: amazon-iot-sitewise
@@ -148,7 +148,7 @@ implementations:
 - capability_name: Amazon IoT TwinMaker - Digital Twin Management
   capability_slug: digital-twin-management
   capability_url: https://capabilities.apis.io/capabilities/amazon-iot-twinmaker/digital-twin-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 1
   provider_name: Amazon IoT TwinMaker
   provider_slug: amazon-iot-twinmaker

@@ -17,17 +17,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- list feature stores
-- spec-driven integration
-- feature store
-- mcp
-- capabilities
 - naftiko
+- list feature stores
+- get feature set
+- feature store
 - api integration
 - governance
-- azure ml
+- spec-driven integration
 - ai
-- get feature set
+- mcp
+- azure ml
+- capabilities
 slug: azure-ml-feature-store-shaped-mcp
 source_filename: azure-ml-feature-store-shaped-mcp.yaml
 source_heading: Capability Spec

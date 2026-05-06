@@ -9,12 +9,12 @@ personas: []
 provider_name: Apache BookKeeper
 provider_slug: apache-bookkeeper
 search_terms:
-- distributed systems
-- storage
 - streaming
+- distributed systems
 - apache
-- open source
+- storage
 - log storage
+- open source
 slug: bookkeeper-cluster-management
 source_filename: bookkeeper-cluster-management.yaml
 source_heading: Capability Spec

@@ -21,7 +21,7 @@ implementations:
 - capability_name: Adobe Premiere Creative Asset Management
   capability_slug: creative-asset-management
   capability_url: https://capabilities.apis.io/capabilities/adobe-premiere/creative-asset-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Adobe Premiere Pro
   provider_slug: adobe-premiere
@@ -35,7 +35,7 @@ implementations:
 - capability_name: Confluence Content Management
   capability_slug: content-management
   capability_url: https://capabilities.apis.io/capabilities/confluence/content-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 23
   provider_name: Confluence
   provider_slug: confluence
@@ -49,7 +49,7 @@ implementations:
 - capability_name: Facebook Social Media Management
   capability_slug: social-media-management
   capability_url: https://capabilities.apis.io/capabilities/facebook/social-media-management/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Facebook
   provider_slug: facebook
@@ -62,7 +62,7 @@ implementations:
 - capability_name: HubSpot Commerce Admin
   capability_slug: commerce-admin
   capability_url: https://capabilities.apis.io/capabilities/hubspot/commerce-admin/
-  consumed_api_count: 5
+  consumed_api_count: 0
   operation_count: 5
   provider_name: HubSpot
   provider_slug: hubspot
@@ -76,7 +76,7 @@ implementations:
 - capability_name: HubSpot Content And Marketing
   capability_slug: content-and-marketing
   capability_url: https://capabilities.apis.io/capabilities/hubspot/content-and-marketing/
-  consumed_api_count: 6
+  consumed_api_count: 0
   operation_count: 8
   provider_name: HubSpot
   provider_slug: hubspot
@@ -91,7 +91,7 @@ implementations:
 - capability_name: HubSpot Content Management
   capability_slug: content-management
   capability_url: https://capabilities.apis.io/capabilities/hubspot/content-management/
-  consumed_api_count: 6
+  consumed_api_count: 0
   operation_count: 0
   provider_name: HubSpot
   provider_slug: hubspot
@@ -104,7 +104,7 @@ implementations:
 - capability_name: Instagram Content Management
   capability_slug: content-management
   capability_url: https://capabilities.apis.io/capabilities/instagram/content-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 10
   provider_name: Instagram
   provider_slug: instagram
@@ -118,7 +118,7 @@ implementations:
 - capability_name: Pluralsight Learning Content Management
   capability_slug: learning-content-management
   capability_url: https://capabilities.apis.io/capabilities/pluralsight/learning-content-management/
-  consumed_api_count: 9
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Pluralsight
   provider_slug: pluralsight
@@ -133,7 +133,7 @@ implementations:
 - capability_name: Red Hat Satellite Systems Lifecycle Management
   capability_slug: systems-lifecycle-management
   capability_url: https://capabilities.apis.io/capabilities/red-hat-satellite/systems-lifecycle-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 14
   provider_name: Red Hat Satellite
   provider_slug: red-hat-satellite
@@ -147,7 +147,7 @@ implementations:
 - capability_name: SharePoint Content Management
   capability_slug: content-management
   capability_url: https://capabilities.apis.io/capabilities/sharepoint/content-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Microsoft SharePoint
   provider_slug: sharepoint
@@ -160,7 +160,7 @@ implementations:
 - capability_name: Tableau Content Management
   capability_slug: content-management
   capability_url: https://capabilities.apis.io/capabilities/tableau/content-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: Tableau
   provider_slug: tableau
@@ -173,7 +173,7 @@ implementations:
 - capability_name: X Content Publishing and Management
   capability_slug: content-publishing
   capability_url: https://capabilities.apis.io/capabilities/twitter/content-publishing/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 12
   provider_name: X (Twitter)
   provider_slug: twitter
@@ -188,7 +188,7 @@ implementations:
 - capability_name: YouTube Content Management
   capability_slug: content-management
   capability_url: https://capabilities.apis.io/capabilities/youtube/content-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 15
   provider_name: Youtube
   provider_slug: youtube

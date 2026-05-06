@@ -17,24 +17,24 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- governance
-- agent skills
+- naftiko
+- download bundle
+- list skills
 - get skill metadata.
 - mcp
-- download bundle
-- download the skill folder zip.
+- get skill
+- publication
 - publish a skill folder
 - publish skill
-- get skill
-- naftiko
-- list published skills
 - api integration
-- publication
-- capabilities
+- download the skill folder zip.
+- agent skills
 - publish an agent skill folder.
 - ai
-- list skills
+- governance
+- list published skills
+- spec-driven integration
+- capabilities
 slug: agent-skills-publication-capability
 source_filename: agent-skills-publication-capability.yaml
 source_heading: Capability Spec

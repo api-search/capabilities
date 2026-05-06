@@ -1,8 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- orchestrator
-- data-service
+consumed_apis: []
 description: Unified workflow for automation operators managing robots, jobs, queues, and assets in the UiPath Orchestrator. Used by RPA developers and operations teams to deploy, monitor, and manage running automations at scale.
 layout: capability
 name: UiPath Automation Operations
@@ -51,92 +49,103 @@ personas: []
 provider_name: UiPath
 provider_slug: uipath
 search_terms:
-- list automation alerts
-- create asset
-- oversees the automation program pipeline, prioritization, and roi tracking
-- robotic process automation
-- list jobs
-- monitors and manages running automations, robots, queues, and alerts
-- robots
-- list all transaction queue definitions
-- orchestrator
-- uipath
 - list queue items
-- shared asset management
-- automation operations
-- automation robot management
-- list assets
-- list shared assets
-- list data entity records
-- manage automation pipeline, users, licenses, and quality
-- Platform Administrator
-- automation job management
-- queue transaction item management
-- QA Engineer
-- list queue transaction items
-- document processing
-- stop job
-- creates and manages test projects, test cases, and execution reports
 - list automation jobs with filtering
-- manage robots, jobs, queues, and assets in orchestrator
+- orchestrator
+- list automation alerts
+- list jobs
+- ocr, classify, and extract data from documents
+- automation operations
+- queue transaction item management
 - enterprise automation
-- artificial intelligence
-- core rpa automation lifecycle from development to execution
-- list all registered robots
-- oversight of the automation program including pipeline, compliance, and quality
-- list all registered automation robots and their status
-- platform configuration including users, groups, and licenses
-- RPA Developer
-- orchestration
-- list entity records
-- list automation jobs with optional filtering and pagination
-- list system and automation alerts for monitoring
-- start jobs
-- list robots
-- list alerts
-- start one or more uipath automation jobs
-- system and automation alerts
-- list records from a data service entity
-- create a new record in a data service entity
-- jobs
-- list all queue definitions
-- create data record
-- list queues
-- create a new shared asset
-- develops and deploys automation workflows using uipath studio and python sdk
-- configures and manages document understanding models and extraction pipelines
-- testing
-- list data records
-- list shared automation assets like credentials and variables
-- day-to-day monitoring and management of running automations
-- rpa
-- add a new transaction item to an automation queue
-- CoE Manager
+- document processing
 - start automation jobs
-- manages users, groups, licenses, and organizational settings
+- add queue item
+- stop a running automation job
+- develops and deploys automation workflows using uipath studio and python sdk
+- list robots
 - test management and automated quality verification
 - add item to queue
-- Automation Operator
-- intelligent processing of structured and unstructured documents
-- transaction queue management
+- list queues
+- list queue transaction items
+- RPA Developer
+- Platform Administrator
+- monitors and manages running automations, robots, queues, and alerts
 - automation
-- add queue item
-- ocr, classify, and extract data from documents
+- list all registered automation robots and their status
+- list shared automation assets like credentials and variables
+- automation robot management
+- robots
+- CoE Manager
+- manages users, groups, licenses, and organizational settings
+- creates and manages test projects, test cases, and execution reports
+- day-to-day monitoring and management of running automations
+- robotic process automation
+- artificial intelligence
+- create a new record in a data service entity
 - automation data storage records
-- stop a running automation job
+- create asset
+- orchestration
+- uipath
 - Document Processing Specialist
+- list all queue definitions
+- oversees the automation program pipeline, prioritization, and roi tracking
+- start one or more uipath automation jobs
+- create a new shared asset
+- system and automation alerts
+- list data records
+- start jobs
+- add a new transaction item to an automation queue
+- rpa
+- list assets
+- list data entity records
+- manage automation pipeline, users, licenses, and quality
+- configures and manages document understanding models and extraction pipelines
+- shared asset management
+- manage robots, jobs, queues, and assets in orchestrator
+- Automation Operator
+- list automation jobs with optional filtering and pagination
+- create data record
+- core rpa automation lifecycle from development to execution
+- testing
+- automation job management
+- jobs
+- list records from a data service entity
+- list alerts
+- platform configuration including users, groups, and licenses
+- intelligent processing of structured and unstructured documents
+- stop job
+- list all transaction queue definitions
+- transaction queue management
+- oversight of the automation program including pipeline, compliance, and quality
+- QA Engineer
+- list system and automation alerts for monitoring
+- list entity records
+- list all registered robots
+- list shared assets
 slug: automation-operations
 source_filename: automation-operations.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"UiPath Automation Operations\"\n  description: \"Unified workflow for automation operators managing robots, jobs, queues, and assets in the UiPath Orchestrator. Used by RPA developers and operations teams to deploy, monitor, and manage running automations at scale.\"\n  tags:\n    - UiPath\n    - Orchestrator\n    - Automation Operations\n    - RPA\n    - Robots\n    - Jobs\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      UIPATH_BEARER_TOKEN: UIPATH_BEARER_TOKEN\n\ncapability:\n  consumes:\n    - import: orchestrator\n      location: ./shared/orchestrator.yaml\n    - import: data-service\n      location: ./shared/data-service.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: automation-operations-api\n      description: \"Unified REST API for managing UiPath automation operations including jobs, queues, robots, and assets.\"\n      resources:\n       \
-  \ - path: /v1/jobs\n          name: jobs\n          description: \"Automation job management\"\n          operations:\n            - method: GET\n              name: list-jobs\n              description: \"List automation jobs with filtering\"\n              call: \"orchestrator.list-jobs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: start-jobs\n              description: \"Start automation jobs\"\n              call: \"orchestrator.start-jobs\"\n              with:\n                startInfo: \"rest.startInfo\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/robots\n          name: robots\n          description: \"Automation robot management\"\n          operations:\n            - method: GET\n              name: list-robots\n              description: \"List all registered robots\"\n              call: \"orchestrator.list-robots\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queues\n          name: queues\n          description: \"Transaction queue management\"\n          operations:\n            - method: GET\n              name: list-queues\n              description: \"List all queue definitions\"\n              call: \"orchestrator.list-queues\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/queue-items\n          name: queue-items\n          description: \"Queue transaction item management\"\n          operations:\n            - method: GET\n              name: list-queue-items\n              description: \"List queue transaction items\"\n              call: \"orchestrator.list-queue-items\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-queue-item\n    \
-  \          description: \"Add item to queue\"\n              call: \"orchestrator.add-queue-item\"\n              with:\n                itemData: \"rest.itemData\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/assets\n          name: assets\n          description: \"Shared asset management\"\n          operations:\n            - method: GET\n              name: list-assets\n              description: \"List shared assets\"\n              call: \"orchestrator.list-assets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-asset\n              description: \"Create a new shared asset\"\n              call: \"orchestrator.create-asset\"\n              with:\n                assetName: \"rest.assetName\"\n                valueType: \"rest.valueType\"\n              outputParameters:\n                - type: object\n\
-  \                  mapping: \"$.\"\n        - path: /v1/alerts\n          name: alerts\n          description: \"System and automation alerts\"\n          operations:\n            - method: GET\n              name: list-alerts\n              description: \"List automation alerts\"\n              call: \"orchestrator.list-alerts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/data/{entityName}/records\n          name: data-records\n          description: \"Automation data storage records\"\n          operations:\n            - method: GET\n              name: list-entity-records\n              description: \"List data entity records\"\n              call: \"data-service.list-entity-records\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: automation-operations-mcp\n      transport: http\n      description: \"\
-  MCP server for AI-assisted automation operations management across UiPath Orchestrator and Data Service.\"\n      tools:\n        - name: list-jobs\n          description: \"List automation jobs with optional filtering and pagination\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"orchestrator.list-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: start-jobs\n          description: \"Start one or more UiPath automation jobs\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"orchestrator.start-jobs\"\n          with:\n            startInfo: \"tools.startInfo\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: stop-job\n          description: \"Stop a running automation job\"\n          hints:\n            readOnly: false\n            destructive:\
-  \ true\n            idempotent: true\n          call: \"orchestrator.stop-job\"\n          with:\n            jobId: \"tools.jobId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-robots\n          description: \"List all registered automation robots and their status\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"orchestrator.list-robots\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-queues\n          description: \"List all transaction queue definitions\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"orchestrator.list-queues\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: add-queue-item\n          description: \"Add a new transaction item to an automation queue\"\n          hints:\n            readOnly: false\n\
-  \            destructive: false\n            idempotent: false\n          call: \"orchestrator.add-queue-item\"\n          with:\n            itemData: \"tools.itemData\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-assets\n          description: \"List shared automation assets like credentials and variables\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"orchestrator.list-assets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-alerts\n          description: \"List system and automation alerts for monitoring\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"orchestrator.list-alerts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-data-records\n          description: \"List records from a Data Service entity\"\
-  \n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"data-service.list-entity-records\"\n          with:\n            entityName: \"tools.entityName\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-data-record\n          description: \"Create a new record in a Data Service entity\"\n          hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"data-service.create-entity-record\"\n          with:\n            entityName: \"tools.entityName\"\n            recordData: \"tools.recordData\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: UiPath Automation Operations\n  description: Unified workflow for automation operators managing robots, jobs, queues, and assets in the UiPath Orchestrator.\n    Used by RPA developers and operations teams to deploy, monitor, and manage running automations at scale.\n  tags:\n  - UiPath\n  - Orchestrator\n  - Automation Operations\n  - RPA\n  - Robots\n  - Jobs\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    UIPATH_BEARER_TOKEN: UIPATH_BEARER_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: orchestrator\n    baseUri: https://cloud.uipath.com/{organizationName}/{tenantName}/orchestrator_\n    description: UiPath Orchestrator API for managing automation robots, jobs, queues, and assets.\n    authentication:\n      type: bearer\n      token: '{{UIPATH_BEARER_TOKEN}}'\n    resources:\n    - name: jobs\n      path: /odata/Jobs\n      description: Manage automation job execution\n   \
+  \   operations:\n      - name: list-jobs\n        method: GET\n        description: List automation jobs with filtering\n        inputParameters:\n        - name: $top\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of records to return\n        - name: $skip\n          in: query\n          type: integer\n          required: false\n          description: Number of records to skip\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter expression\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-job\n        method: GET\n        description: Get a specific job by key\n        inputParameters:\n        - name: key\n          in: path\n          type: integer\n          required: true\n          description: Job identifier\n        outputRawFormat: json\n\
+  \        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: start-jobs\n        method: POST\n        description: Start one or more automation jobs\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            startInfo: '{{tools.startInfo}}'\n      - name: stop-job\n        method: POST\n        description: Stop a running automation job\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            jobId: '{{tools.jobId}}'\n    - name: processes\n      path: /odata/Processes\n      description: Manage automation processes\n      operations:\n      - name: list-processes\n        method: GET\n        description: List deployed automation processes\n        inputParameters:\n\
+  \        - name: $top\n          in: query\n          type: integer\n          required: false\n          description: Maximum number of records\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: queues\n      path: /odata/QueueDefinitions\n      description: Manage transaction queues\n      operations:\n      - name: list-queues\n        method: GET\n        description: List all queue definitions\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-queue\n        method: POST\n        description: Create a new queue definition\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            Name: '{{tools.queueName}}'\n    - name: queue-items\n      path: /odata/QueueItems\n\
+  \      description: Manage queue transaction items\n      operations:\n      - name: list-queue-items\n        method: GET\n        description: List queue transaction items\n        inputParameters:\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter expression\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: add-queue-item\n        method: POST\n        description: Add a new item to a queue\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            itemData: '{{tools.itemData}}'\n    - name: assets\n      path: /odata/Assets\n      description: Manage shared assets like credentials and values\n      operations:\n      - name: list-assets\n        method: GET\n        description:\
+  \ List all shared assets\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-asset\n        method: POST\n        description: Create a new shared asset\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            Name: '{{tools.assetName}}'\n            ValueType: '{{tools.valueType}}'\n      - name: get-asset\n        method: GET\n        description: Get a specific asset by key\n        inputParameters:\n        - name: key\n          in: path\n          type: integer\n          required: true\n          description: Asset identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-asset\n        method: PUT\n        description: Update an existing asset\n  \
+  \      inputParameters:\n        - name: key\n          in: path\n          type: integer\n          required: true\n          description: Asset identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            Value: '{{tools.value}}'\n      - name: delete-asset\n        method: DELETE\n        description: Delete an asset\n        inputParameters:\n        - name: key\n          in: path\n          type: integer\n          required: true\n          description: Asset identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: robots\n      path: /odata/Robots\n      description: Manage automation robots\n      operations:\n      - name: list-robots\n        method: GET\n        description: List all registered robots\n        outputRawFormat: json\n       \
+  \ outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: alerts\n      path: /odata/Alerts\n      description: Retrieve system and automation alerts\n      operations:\n      - name: list-alerts\n        method: GET\n        description: List system alerts and notifications\n        inputParameters:\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter expression\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: webhooks\n      path: /odata/Webhooks\n      description: Manage webhook subscriptions\n      operations:\n      - name: list-webhooks\n        method: GET\n        description: List all webhook subscriptions\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-webhook\n \
+  \       method: POST\n        description: Create a new webhook subscription\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            Url: '{{tools.webhookUrl}}'\n            EventTypes: '{{tools.eventTypes}}'\n      - name: delete-webhook\n        method: DELETE\n        description: Delete a webhook subscription\n        inputParameters:\n        - name: key\n          in: path\n          type: integer\n          required: true\n          description: Webhook identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: data-service\n    baseUri: https://cloud.uipath.com/{organizationName}/{tenantName}/dataservice_/api/EntityService\n    description: UiPath Data Service API for managing custom data entities and records.\n    authentication:\n\
+  \      type: bearer\n      token: '{{UIPATH_BEARER_TOKEN}}'\n    resources:\n    - name: entities\n      path: /{entityName}\n      description: Manage records for a custom entity\n      operations:\n      - name: list-entity-records\n        method: GET\n        description: List records for a specific entity\n        inputParameters:\n        - name: entityName\n          in: path\n          type: string\n          required: true\n          description: Entity name\n        - name: $filter\n          in: query\n          type: string\n          required: false\n          description: OData filter expression\n        - name: $top\n          in: query\n          type: integer\n          required: false\n          description: Maximum records to return\n        - name: $skip\n          in: query\n          type: integer\n          required: false\n          description: Records to skip\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n\
+  \          value: $.\n      - name: create-entity-record\n        method: POST\n        description: Create a new record for an entity\n        inputParameters:\n        - name: entityName\n          in: path\n          type: string\n          required: true\n          description: Entity name\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            data: '{{tools.recordData}}'\n      - name: get-entity-record\n        method: GET\n        description: Get a specific entity record by ID\n        inputParameters:\n        - name: entityName\n          in: path\n          type: string\n          required: true\n          description: Entity name\n        - name: recordId\n          in: path\n          type: string\n          required: true\n          description: Record identifier\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n      - name: update-entity-record\n        method: PUT\n        description: Update an existing entity record\n        inputParameters:\n        - name: entityName\n          in: path\n          type: string\n          required: true\n          description: Entity name\n        - name: recordId\n          in: path\n          type: string\n          required: true\n          description: Record identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            data: '{{tools.recordData}}'\n      - name: delete-entity-record\n        method: DELETE\n        description: Delete an entity record\n        inputParameters:\n        - name: entityName\n          in: path\n          type: string\n          required: true\n          description: Entity name\n        - name: recordId\n          in: path\n\
+  \          type: string\n          required: true\n          description: Record identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: query-entity-records\n        method: POST\n        description: Query entity records with complex filters\n        inputParameters:\n        - name: entityName\n          in: path\n          type: string\n          required: true\n          description: Entity name\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            filter: '{{tools.filter}}'\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: automation-operations-api\n    description: Unified REST API for managing UiPath automation operations including jobs, queues, robots, and assets.\n    resources:\n    - path: /v1/jobs\n      name: jobs\n      description:\
+  \ Automation job management\n      operations:\n      - method: GET\n        name: list-jobs\n        description: List automation jobs with filtering\n        call: orchestrator.list-jobs\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: start-jobs\n        description: Start automation jobs\n        call: orchestrator.start-jobs\n        with:\n          startInfo: rest.startInfo\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/robots\n      name: robots\n      description: Automation robot management\n      operations:\n      - method: GET\n        name: list-robots\n        description: List all registered robots\n        call: orchestrator.list-robots\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/queues\n      name: queues\n      description: Transaction queue management\n      operations:\n      - method: GET\n        name: list-queues\n\
+  \        description: List all queue definitions\n        call: orchestrator.list-queues\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/queue-items\n      name: queue-items\n      description: Queue transaction item management\n      operations:\n      - method: GET\n        name: list-queue-items\n        description: List queue transaction items\n        call: orchestrator.list-queue-items\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: add-queue-item\n        description: Add item to queue\n        call: orchestrator.add-queue-item\n        with:\n          itemData: rest.itemData\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/assets\n      name: assets\n      description: Shared asset management\n      operations:\n      - method: GET\n        name: list-assets\n        description: List shared assets\n        call: orchestrator.list-assets\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-asset\n        description: Create a new shared asset\n        call: orchestrator.create-asset\n        with:\n          assetName: rest.assetName\n          valueType: rest.valueType\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/alerts\n      name: alerts\n      description: System and automation alerts\n      operations:\n      - method: GET\n        name: list-alerts\n        description: List automation alerts\n        call: orchestrator.list-alerts\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/data/{entityName}/records\n      name: data-records\n      description: Automation data storage records\n      operations:\n      - method: GET\n        name: list-entity-records\n        description: List data entity records\n        call: data-service.list-entity-records\n        outputParameters:\n\
+  \        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: automation-operations-mcp\n    transport: http\n    description: MCP server for AI-assisted automation operations management across UiPath Orchestrator and Data Service.\n    tools:\n    - name: list-jobs\n      description: List automation jobs with optional filtering and pagination\n      hints:\n        readOnly: true\n        openWorld: true\n      call: orchestrator.list-jobs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-jobs\n      description: Start one or more UiPath automation jobs\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: orchestrator.start-jobs\n      with:\n        startInfo: tools.startInfo\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-job\n      description: Stop a running automation job\n      hints:\n        readOnly: false\n        destructive:\
+  \ true\n        idempotent: true\n      call: orchestrator.stop-job\n      with:\n        jobId: tools.jobId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-robots\n      description: List all registered automation robots and their status\n      hints:\n        readOnly: true\n        openWorld: true\n      call: orchestrator.list-robots\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-queues\n      description: List all transaction queue definitions\n      hints:\n        readOnly: true\n        openWorld: true\n      call: orchestrator.list-queues\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: add-queue-item\n      description: Add a new transaction item to an automation queue\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: orchestrator.add-queue-item\n      with:\n        itemData: tools.itemData\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: list-assets\n      description: List shared automation assets like credentials and variables\n      hints:\n        readOnly: true\n        openWorld: true\n      call: orchestrator.list-assets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-alerts\n      description: List system and automation alerts for monitoring\n      hints:\n        readOnly: true\n        openWorld: true\n      call: orchestrator.list-alerts\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-data-records\n      description: List records from a Data Service entity\n      hints:\n        readOnly: true\n        openWorld: true\n      call: data-service.list-entity-records\n      with:\n        entityName: tools.entityName\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-data-record\n      description: Create a new record in a Data Service entity\n \
+  \     hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: data-service.create-entity-record\n      with:\n        entityName: tools.entityName\n        recordData: tools.recordData\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/uipath/refs/heads/main/capabilities/automation-operations.yaml
 tags:
 - UiPath

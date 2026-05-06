@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- excel-graph
+consumed_apis: []
 description: Workflow capability for automating Excel spreadsheet operations including worksheet management, data manipulation, table operations, and chart generation via Microsoft Graph.
 layout: capability
 name: Microsoft Excel Spreadsheet Automation
@@ -34,53 +33,57 @@ personas: []
 provider_name: Microsoft Excel
 provider_slug: microsoft-excel
 search_terms:
-- spreadsheet automation
 - create a new worksheet.
-- get range
-- get a cell range.
-- manage worksheets.
-- list all worksheets in the workbook.
-- list rows in a table.
-- add a row to a table.
 - business users automating excel-based reporting.
-- spreadsheets
-- list all worksheets.
-- Data Analyst
-- manage table rows.
-- list charts
-- add table row
-- Business Analyst
-- add a new data row to an excel table.
-- list table rows
-- cell range operations.
-- chart operations.
-- list all charts in a worksheet.
-- data management
-- list worksheets
-- list all rows in an excel table.
 - data analysis
+- spreadsheets
 - microsoft 365
-- update cell values in a specified range.
+- list all worksheets in the workbook.
+- manage table rows.
+- list worksheets
+- update range
+- list all rows in an excel table.
+- list charts
+- create worksheet
+- spreadsheet automation
 - read cell values from a specified range.
 - office
+- get a cell range.
+- data management
 - analysts working with excel workbooks for data processing.
-- microsoft excel
-- automate excel workbook operations.
-- microsoft
-- automation
+- cell range operations.
 - create a new worksheet in the workbook.
+- Data Analyst
+- add table row
+- automate excel workbook operations.
 - list charts.
-- update range
-- create worksheet
+- add a row to a table.
+- add a new data row to an excel table.
+- list all charts in a worksheet.
+- list table rows
+- update cell values in a specified range.
+- list all worksheets.
+- list rows in a table.
+- Business Analyst
+- chart operations.
+- microsoft
+- manage worksheets.
+- microsoft excel
+- get range
+- automation
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Microsoft Excel Spreadsheet Automation\"\n  description: \"Workflow capability for automating Excel spreadsheet operations including worksheet management, data manipulation, table operations, and chart generation via Microsoft Graph.\"\n  tags:\n    - Microsoft Excel\n    - Spreadsheet Automation\n    - Data Management\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\n\ncapability:\n  consumes:\n    - import: excel-graph\n      location: ./shared/excel-graph-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: spreadsheet-automation-api\n      description: \"Unified REST API for Excel spreadsheet automation.\"\n      resources:\n        - path: /v1/worksheets\n          name: worksheets\n          description: \"Manage worksheets.\"\n          operations:\n            - method: GET\n              name: list-worksheets\n\
-  \              description: \"List all worksheets.\"\n              call: \"excel-graph.list-worksheets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-worksheet\n              description: \"Create a new worksheet.\"\n              call: \"excel-graph.create-worksheet\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/tables/{table-id}/rows\n          name: table-rows\n          description: \"Manage table rows.\"\n          operations:\n            - method: GET\n              name: list-table-rows\n              description: \"List rows in a table.\"\n              call: \"excel-graph.list-table-rows\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: add-table-row\n              description: \"Add a row to\
-  \ a table.\"\n              call: \"excel-graph.add-table-row\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ranges\n          name: ranges\n          description: \"Cell range operations.\"\n          operations:\n            - method: GET\n              name: get-range\n              description: \"Get a cell range.\"\n              call: \"excel-graph.get-range\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/charts\n          name: charts\n          description: \"Chart operations.\"\n          operations:\n            - method: GET\n              name: list-charts\n              description: \"List charts.\"\n              call: \"excel-graph.list-charts\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: spreadsheet-automation-mcp\n\
-  \      transport: http\n      description: \"MCP server for AI-assisted spreadsheet automation.\"\n      tools:\n        - name: list-worksheets\n          description: \"List all worksheets in the workbook.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"excel-graph.list-worksheets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-worksheet\n          description: \"Create a new worksheet in the workbook.\"\n          hints:\n            readOnly: false\n          call: \"excel-graph.create-worksheet\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-table-rows\n          description: \"List all rows in an Excel table.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"excel-graph.list-table-rows\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n        - name: add-table-row\n          description: \"Add a new data row to an Excel table.\"\n          hints:\n            readOnly: false\n          call: \"excel-graph.add-table-row\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-range\n          description: \"Read cell values from a specified range.\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"excel-graph.get-range\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: update-range\n          description: \"Update cell values in a specified range.\"\n          hints:\n            readOnly: false\n          call: \"excel-graph.update-range\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-charts\n          description: \"List all charts in a worksheet.\"\n          hints:\n            readOnly:\
-  \ true\n            openWorld: true\n          call: \"excel-graph.list-charts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Microsoft Excel Spreadsheet Automation\n  description: Workflow capability for automating Excel spreadsheet operations including worksheet management, data manipulation,\n    table operations, and chart generation via Microsoft Graph.\n  tags:\n  - Microsoft Excel\n  - Spreadsheet Automation\n  - Data Management\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    MICROSOFT_GRAPH_TOKEN: MICROSOFT_GRAPH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: excel-graph\n    baseUri: https://graph.microsoft.com/v1.0\n    description: Microsoft Graph Excel API for workbook operations.\n    authentication:\n      type: bearer\n      token: '{{MICROSOFT_GRAPH_TOKEN}}'\n    resources:\n    - name: sessions\n      path: /me/drive/items/{item-id}/workbook\n      description: Workbook session management.\n      operations:\n      - name: create-session\n        method: POST\n        description: Create\
+  \ a new workbook session.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            persistChanges: '{{tools.persistChanges}}'\n    - name: worksheets\n      path: /me/drive/items/{item-id}/workbook/worksheets\n      description: Worksheet operations.\n      operations:\n      - name: list-worksheets\n        method: GET\n        description: List all worksheets in a workbook.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      -\
+  \ name: create-worksheet\n        method: POST\n        description: Create a new worksheet.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            name: '{{tools.name}}'\n    - name: tables\n      path: /me/drive/items/{item-id}/workbook/tables/{table-id}\n      description: Table operations.\n      operations:\n      - name: list-table-rows\n        method: GET\n        description: List rows in a table.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        - name: table-id\n          in: path\n          type: string\n          required: true\n     \
+  \     description: The ID of the table.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: add-table-row\n        method: POST\n        description: Add a row to a table.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        - name: table-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the table.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            values: '{{tools.values}}'\n    - name: ranges\n      path: /me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range\n      description: Cell range operations.\n      operations:\n      - name: get-range\n        method:\
+  \ GET\n        description: Get a cell range.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        - name: worksheet-id\n          in: path\n          type: string\n          required: true\n          description: Worksheet ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: update-range\n        method: PATCH\n        description: Update cell values in a range.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        - name: worksheet-id\n          in: path\n          type: string\n          required: true\n          description: Worksheet ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type:\
+  \ object\n          value: $.\n        body:\n          type: json\n          data:\n            values: '{{tools.values}}'\n    - name: charts\n      path: /me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/charts\n      description: Chart operations.\n      operations:\n      - name: list-charts\n        method: GET\n        description: List charts in a worksheet.\n        inputParameters:\n        - name: item-id\n          in: path\n          type: string\n          required: true\n          description: The ID of the workbook file.\n        - name: worksheet-id\n          in: path\n          type: string\n          required: true\n          description: Worksheet ID.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: spreadsheet-automation-api\n    description: Unified REST API for Excel spreadsheet automation.\n    resources:\n    - path:\
+  \ /v1/worksheets\n      name: worksheets\n      description: Manage worksheets.\n      operations:\n      - method: GET\n        name: list-worksheets\n        description: List all worksheets.\n        call: excel-graph.list-worksheets\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-worksheet\n        description: Create a new worksheet.\n        call: excel-graph.create-worksheet\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/tables/{table-id}/rows\n      name: table-rows\n      description: Manage table rows.\n      operations:\n      - method: GET\n        name: list-table-rows\n        description: List rows in a table.\n        call: excel-graph.list-table-rows\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: add-table-row\n        description: Add a row to a table.\n        call: excel-graph.add-table-row\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ranges\n      name: ranges\n      description: Cell range operations.\n      operations:\n      - method: GET\n        name: get-range\n        description: Get a cell range.\n        call: excel-graph.get-range\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/charts\n      name: charts\n      description: Chart operations.\n      operations:\n      - method: GET\n        name: list-charts\n        description: List charts.\n        call: excel-graph.list-charts\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: spreadsheet-automation-mcp\n    transport: http\n    description: MCP server for AI-assisted spreadsheet automation.\n    tools:\n    - name: list-worksheets\n      description: List all worksheets in the workbook.\n      hints:\n        readOnly: true\n        openWorld: true\n\
+  \      call: excel-graph.list-worksheets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-worksheet\n      description: Create a new worksheet in the workbook.\n      hints:\n        readOnly: false\n      call: excel-graph.create-worksheet\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-table-rows\n      description: List all rows in an Excel table.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: excel-graph.list-table-rows\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: add-table-row\n      description: Add a new data row to an Excel table.\n      hints:\n        readOnly: false\n      call: excel-graph.add-table-row\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-range\n      description: Read cell values from a specified range.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: excel-graph.get-range\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: update-range\n      description: Update cell values in a specified range.\n      hints:\n        readOnly: false\n      call: excel-graph.update-range\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-charts\n      description: List all charts in a worksheet.\n      hints:\n        readOnly: true\n        openWorld: true\n      call: excel-graph.list-charts\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/microsoft-excel/refs/heads/main/capabilities/spreadsheet-automation.yaml
 tags:
 - Microsoft Excel

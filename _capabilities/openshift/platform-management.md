@@ -1,8 +1,7 @@
 ---
 categories:
 - container-orchestration
-consumed_apis:
-- rest-api
+consumed_apis: []
 description: Unified platform management capability for OpenShift clusters including projects, builds, deployments, routes, and monitoring. Used by platform engineers and cluster administrators.
 layout: capability
 name: OpenShift Platform Management
@@ -15,44 +14,47 @@ personas: []
 provider_name: OpenShift
 provider_slug: openshift
 search_terms:
-- platform
-- list image streams
-- containers
-- list cluster nodes
-- paas
-- enterprise
-- list pods
+- list builds
 - list persistent volumes
 - get project details
-- list config maps
-- get pod
-- list projects
-- list deployments
-- list services
-- devops
-- cloud native
-- list installed operators
-- ci/cd
-- list storage
-- get pod details
-- project management
-- list nodes
-- list routes
-- list openshift projects
-- list builds
-- list images
-- list operators
 - list configmaps
-- get project
+- get pod details
+- devops
+- list operators
+- list openshift projects
+- list services
+- list nodes
+- list deployments
+- containers
+- list image streams
+- enterprise
+- cloud native
+- list cluster nodes
+- project management
 - kubernetes
+- ci/cd
+- list routes
+- get project
+- list projects
+- list storage
+- list config maps
+- list installed operators
+- platform
 - openshift
+- get pod
+- list pods
+- list images
+- paas
 slug: platform-management
 source_filename: platform-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\ninfo:\n  label: \"OpenShift Platform Management\"\n  description: \"Unified platform management capability for OpenShift clusters including projects, builds, deployments, routes, and monitoring. Used by platform engineers and cluster administrators.\"\n  tags: [OpenShift, Kubernetes, Platform, DevOps]\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\nbinds:\n  - namespace: env\n    keys:\n      OPENSHIFT_TOKEN: OPENSHIFT_TOKEN\ncapability:\n  consumes:\n    - import: rest-api\n      location: ./shared/rest-api.yaml\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: platform-management-api\n      description: \"Unified REST API for OpenShift platform management.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"Project management\"\n          operations:\n            - { method: GET, name: list-projects, description: \"List projects\", call: \"rest-api.list-projects\", outputParameters:\
-  \ [{ type: object, mapping: \"$.\" }] }\n    - type: mcp\n      port: 9090\n      namespace: platform-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted OpenShift platform management.\"\n      tools:\n        - { name: list-projects, description: \"List OpenShift projects\", hints: { readOnly: true, openWorld: true }, call: \"rest-api.list-projects\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-project, description: \"Get project details\", hints: { readOnly: true }, call: \"rest-api.get-project\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-builds, description: \"List builds\", hints: { readOnly: true }, call: \"rest-api.list-builds\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-routes, description: \"List routes\", hints: { readOnly: true }, call: \"rest-api.list-routes\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name:\
-  \ list-deployments, description: \"List deployments\", hints: { readOnly: true }, call: \"rest-api.list-deployments\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-pods, description: \"List pods\", hints: { readOnly: true }, call: \"rest-api.list-pods\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: get-pod, description: \"Get pod details\", hints: { readOnly: true }, call: \"rest-api.get-pod\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-services, description: \"List services\", hints: { readOnly: true }, call: \"rest-api.list-services\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-configmaps, description: \"List config maps\", hints: { readOnly: true }, call: \"rest-api.list-configmaps\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-nodes, description: \"List cluster nodes\", hints: { readOnly: true }, call: \"rest-api.list-nodes\"\
-  , outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-operators, description: \"List installed operators\", hints: { readOnly: true }, call: \"rest-api.list-operators\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-images, description: \"List image streams\", hints: { readOnly: true }, call: \"rest-api.list-images\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n        - { name: list-storage, description: \"List persistent volumes\", hints: { readOnly: true }, call: \"rest-api.list-storage\", outputParameters: [{ type: object, mapping: \"$.\" }] }\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: OpenShift Platform Management\n  description: Unified platform management capability for OpenShift clusters including projects, builds, deployments, routes,\n    and monitoring. Used by platform engineers and cluster administrators.\n  tags:\n  - OpenShift\n  - Kubernetes\n  - Platform\n  - DevOps\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    OPENSHIFT_TOKEN: OPENSHIFT_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: rest-api\n    baseUri: https://api.openshift.com\n    description: OpenShift REST API for cluster and resource management.\n    authentication:\n      type: bearer\n      token: '{{OPENSHIFT_TOKEN}}'\n    resources:\n    - name: platform\n      path: /\n      description: OpenShift platform resources\n      operations:\n      - name: list-projects\n        method: GET\n        description: List OpenShift projects\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n      - name: get-project\n        method: GET\n        description: Get project details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-builds\n        method: GET\n        description: List builds\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-routes\n        method: GET\n        description: List routes\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-deployments\n        method: GET\n        description: List deployments\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-pods\n        method: GET\n        description: List pods\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-pod\n        method: GET\n        description: Get pod details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-services\n        method: GET\n        description: List services\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-configmaps\n        method: GET\n        description: List config maps\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-nodes\n        method: GET\n        description: List nodes\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-operators\n\
+  \        method: GET\n        description: List operators\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-images\n        method: GET\n        description: List image streams\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-storage\n        method: GET\n        description: List persistent volumes\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: platform-management-api\n    description: Unified REST API for OpenShift platform management.\n    resources:\n    - path: /v1/projects\n      name: projects\n      description: Project management\n      operations:\n      - method: GET\n        name: list-projects\n        description: List projects\n        call:\
+  \ rest-api.list-projects\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: platform-management-mcp\n    transport: http\n    description: MCP server for AI-assisted OpenShift platform management.\n    tools:\n    - name: list-projects\n      description: List OpenShift projects\n      hints:\n        readOnly: true\n        openWorld: true\n      call: rest-api.list-projects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-project\n      description: Get project details\n      hints:\n        readOnly: true\n      call: rest-api.get-project\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-builds\n      description: List builds\n      hints:\n        readOnly: true\n      call: rest-api.list-builds\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-routes\n      description: List routes\n      hints:\n        readOnly:\
+  \ true\n      call: rest-api.list-routes\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-deployments\n      description: List deployments\n      hints:\n        readOnly: true\n      call: rest-api.list-deployments\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-pods\n      description: List pods\n      hints:\n        readOnly: true\n      call: rest-api.list-pods\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-pod\n      description: Get pod details\n      hints:\n        readOnly: true\n      call: rest-api.get-pod\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-services\n      description: List services\n      hints:\n        readOnly: true\n      call: rest-api.list-services\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-configmaps\n      description: List config maps\n      hints:\n        readOnly:\
+  \ true\n      call: rest-api.list-configmaps\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-nodes\n      description: List cluster nodes\n      hints:\n        readOnly: true\n      call: rest-api.list-nodes\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-operators\n      description: List installed operators\n      hints:\n        readOnly: true\n      call: rest-api.list-operators\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-images\n      description: List image streams\n      hints:\n        readOnly: true\n      call: rest-api.list-images\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-storage\n      description: List persistent volumes\n      hints:\n        readOnly: true\n      call: rest-api.list-storage\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/openshift/refs/heads/main/capabilities/platform-management.yaml
 tags:
 - OpenShift

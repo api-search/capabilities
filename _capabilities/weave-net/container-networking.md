@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- weave-net
+consumed_apis: []
 description: Unified container networking workflow for managing Weave Net's IPAM, peer connections, DNS, and network status. Used by DevOps engineers and platform operators to automate container network management.
 layout: capability
 name: Weave Net Container Networking
@@ -46,67 +45,69 @@ personas: []
 provider_name: Weave Net
 provider_slug: weave-net
 search_terms:
-- containers
-- deregister dns
-- ip address allocations
-- get dns domain
-- allocate ip for a container
-- dns name registrations
-- get default subnet
-- docker
-- lookup container ip
-- open source
-- connect peer
-- connect to a remote peer
-- get weavedns domain
-- ipam
-- get the weavedns domain suffix for name resolution
-- get daemon status
-- release ips
-- lookup ip
-- register dns
-- allocate ip
-- deregister container dns name
-- allocate container ip
-- get default ipam subnet
-- daemon status
-- get weave net daemon status
-- default subnet information
-- get the current status of the weave net daemon including peers and ipam state
-- deregister a container's dns name from weavedns
-- release container ips
-- devops
-- allocate an ip address for a container on the weave network
-- look up container ip
-- get status
-- deregister container dns
 - networking
-- container ip allocation
-- dns domain
 - peer connection management
-- register a dns name for a container in weavedns
-- connect to peer
-- get the default subnet used for ipam allocation
-- cncf
-- register container dns name
-- connect weave net to a remote peer node
-- dns
-- kubernetes
-- register container dns
-- look up the ip address allocated to a container
 - release all ip addresses allocated to a container
+- get the current status of the weave net daemon including peers and ipam state
+- register a dns name for a container in weavedns
+- get default subnet
+- dns
+- get status
+- get dns domain
+- get default ipam subnet
+- get the default subnet used for ipam allocation
+- devops
+- ip address allocations
+- ipam
+- lookup container ip
+- connect weave net to a remote peer node
+- allocate ip for a container
+- connect peer
+- allocate ip
+- connect to peer
+- allocate an ip address for a container on the weave network
+- containers
+- deregister a container's dns name from weavedns
+- docker
+- daemon status
+- kubernetes
+- open source
+- get weave net daemon status
+- get the weavedns domain suffix for name resolution
+- default subnet information
+- release ips
+- look up container ip
+- connect to a remote peer
+- get daemon status
+- allocate container ip
+- cncf
+- dns domain
+- deregister dns
+- lookup ip
+- deregister container dns
+- get weavedns domain
+- release container ips
+- look up the ip address allocated to a container
+- register container dns
+- register dns
+- register container dns name
+- dns name registrations
+- deregister container dns name
+- container ip allocation
 slug: container-networking
 source_filename: container-networking.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Weave Net Container Networking\"\n  description: \"Unified container networking workflow for managing Weave Net's IPAM, peer connections, DNS, and network status. Used by DevOps engineers and platform operators to automate container network management.\"\n  tags:\n    - Containers\n    - Networking\n    - Kubernetes\n    - IPAM\n    - DNS\n    - DevOps\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      WEAVE_NET_HOST: WEAVE_NET_HOST\n\ncapability:\n  consumes:\n    - import: weave-net\n      location: ./shared/weave-net-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: container-networking-api\n      description: \"Unified REST API for Weave Net container networking management.\"\n      resources:\n        - path: /v1/status\n          name: status\n          description: \"Daemon status\"\n          operations:\n            - method: GET\n         \
-  \     name: get-status\n              description: \"Get Weave Net daemon status\"\n              call: \"weave-net.get-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/peers\n          name: peers\n          description: \"Peer connection management\"\n          operations:\n            - method: POST\n              name: connect-peer\n              description: \"Connect to a remote peer\"\n              call: \"weave-net.connect-peer\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ipam/allocations\n          name: ipam-allocations\n          description: \"IP address allocations\"\n          operations:\n            - method: POST\n              name: allocate-ip\n              description: \"Allocate IP for a container\"\n              call: \"weave-net.allocate-ip\"\n              outputParameters:\n                - type: object\n\
-  \                  mapping: \"$.\"\n        - path: /v1/ipam/allocations/{containerId}\n          name: ipam-allocation\n          description: \"Container IP allocation\"\n          operations:\n            - method: GET\n              name: lookup-ip\n              description: \"Look up container IP\"\n              call: \"weave-net.lookup-ip\"\n              with:\n                containerId: \"rest.containerId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: release-ips\n              description: \"Release container IPs\"\n              call: \"weave-net.release-ips\"\n              with:\n                containerId: \"rest.containerId\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/ipam/subnet\n          name: default-subnet\n          description: \"Default subnet information\"\n          operations:\n\
-  \            - method: GET\n              name: get-default-subnet\n              description: \"Get default IPAM subnet\"\n              call: \"weave-net.get-default-subnet\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dns/domain\n          name: dns-domain\n          description: \"DNS domain\"\n          operations:\n            - method: GET\n              name: get-dns-domain\n              description: \"Get WeaveDNS domain\"\n              call: \"weave-net.get-dns-domain\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/dns/registrations/{containerId}/{ip}\n          name: dns-registration\n          description: \"DNS name registrations\"\n          operations:\n            - method: PUT\n              name: register-dns\n              description: \"Register container DNS name\"\n              call: \"weave-net.register-dns\"\n\
-  \              with:\n                containerId: \"rest.containerId\"\n                ip: \"rest.ip\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: deregister-dns\n              description: \"Deregister container DNS name\"\n              call: \"weave-net.deregister-dns\"\n              with:\n                containerId: \"rest.containerId\"\n                ip: \"rest.ip\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: container-networking-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Weave Net container networking management.\"\n      tools:\n        - name: get-daemon-status\n          description: \"Get the current status of the Weave Net daemon including peers and IPAM state\"\n          hints:\n            readOnly: true\n            openWorld:\
-  \ false\n          call: \"weave-net.get-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: connect-to-peer\n          description: \"Connect Weave Net to a remote peer node\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"weave-net.connect-peer\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: allocate-container-ip\n          description: \"Allocate an IP address for a container on the Weave network\"\n          hints:\n            readOnly: false\n            idempotent: false\n          call: \"weave-net.allocate-ip\"\n          with:\n            containerId: \"tools.containerId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: lookup-container-ip\n          description: \"Look up the IP address allocated to a container\"\n          hints:\n            readOnly:\
-  \ true\n            openWorld: false\n          call: \"weave-net.lookup-ip\"\n          with:\n            containerId: \"tools.containerId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: release-container-ips\n          description: \"Release all IP addresses allocated to a container\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"weave-net.release-ips\"\n          with:\n            containerId: \"tools.containerId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-default-subnet\n          description: \"Get the default subnet used for IPAM allocation\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"weave-net.get-default-subnet\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-dns-domain\n          description:\
-  \ \"Get the WeaveDNS domain suffix for name resolution\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"weave-net.get-dns-domain\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: register-container-dns\n          description: \"Register a DNS name for a container in WeaveDNS\"\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"weave-net.register-dns\"\n          with:\n            containerId: \"tools.containerId\"\n            ip: \"tools.ip\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deregister-container-dns\n          description: \"Deregister a container's DNS name from WeaveDNS\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"weave-net.deregister-dns\"\n          with:\n            containerId: \"tools.containerId\"\n    \
-  \        ip: \"tools.ip\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Weave Net Container Networking\n  description: Unified container networking workflow for managing Weave Net's IPAM, peer connections, DNS, and network status.\n    Used by DevOps engineers and platform operators to automate container network management.\n  tags:\n  - Containers\n  - Networking\n  - Kubernetes\n  - IPAM\n  - DNS\n  - DevOps\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    WEAVE_NET_HOST: WEAVE_NET_HOST\ncapability:\n  consumes:\n  - type: http\n    namespace: weave-net\n    baseUri: http://127.0.0.1:6784\n    description: Weave Net daemon HTTP API for container network management.\n    resources:\n    - name: status\n      path: /status\n      description: Daemon status and health\n      operations:\n      - name: get-status\n        method: GET\n        description: Get Weave Net daemon status\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n \
+  \         type: object\n          value: $.\n    - name: peers\n      path: /connect\n      description: Peer connection management\n      operations:\n      - name: connect-peer\n        method: POST\n        description: Connect to a remote Weave peer\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: ipam\n      path: /ip\n      description: IP address allocation management\n      operations:\n      - name: lookup-ip\n        method: GET\n        description: Look up allocated IP for a container\n        inputParameters:\n        - name: containerId\n          in: path\n          type: string\n          required: true\n          description: Container identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: string\n          value: $.\n      - name: allocate-ip\n        method: POST\n        description: Allocate an IP address for a container\n\
+  \        inputParameters:\n        - name: containerId\n          in: path\n          type: string\n          required: true\n          description: Container identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: string\n          value: $.\n      - name: release-ips\n        method: DELETE\n        description: Release all IPs for a container\n        inputParameters:\n        - name: containerId\n          in: path\n          type: string\n          required: true\n          description: Container identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: default-subnet\n      path: /ipinfo/defaultsubnet\n      description: Default subnet information\n      operations:\n      - name: get-default-subnet\n        method: GET\n        description: Get the default IPAM subnet\n        outputRawFormat: json\n        outputParameters:\n       \
+  \ - name: result\n          type: string\n          value: $.\n    - name: dns\n      path: /domain\n      description: WeaveDNS domain management\n      operations:\n      - name: get-dns-domain\n        method: GET\n        description: Get the WeaveDNS domain\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: string\n          value: $.\n      - name: register-dns\n        method: PUT\n        description: Register a DNS name for a container\n        inputParameters:\n        - name: containerId\n          in: path\n          type: string\n          required: true\n          description: Container identifier\n        - name: ip\n          in: path\n          type: string\n          required: true\n          description: Container IP address\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: deregister-dns\n        method: DELETE\n        description:\
+  \ Deregister a DNS name for a container\n        inputParameters:\n        - name: containerId\n          in: path\n          type: string\n          required: true\n          description: Container identifier\n        - name: ip\n          in: path\n          type: string\n          required: true\n          description: Container IP address\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8082\n    namespace: container-networking-api\n    description: Unified REST API for Weave Net container networking management.\n    resources:\n    - path: /v1/status\n      name: status\n      description: Daemon status\n      operations:\n      - method: GET\n        name: get-status\n        description: Get Weave Net daemon status\n        call: weave-net.get-status\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/peers\n      name: peers\n\
+  \      description: Peer connection management\n      operations:\n      - method: POST\n        name: connect-peer\n        description: Connect to a remote peer\n        call: weave-net.connect-peer\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ipam/allocations\n      name: ipam-allocations\n      description: IP address allocations\n      operations:\n      - method: POST\n        name: allocate-ip\n        description: Allocate IP for a container\n        call: weave-net.allocate-ip\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ipam/allocations/{containerId}\n      name: ipam-allocation\n      description: Container IP allocation\n      operations:\n      - method: GET\n        name: lookup-ip\n        description: Look up container IP\n        call: weave-net.lookup-ip\n        with:\n          containerId: rest.containerId\n        outputParameters:\n        - type: object\n          mapping:\
+  \ $.\n      - method: DELETE\n        name: release-ips\n        description: Release container IPs\n        call: weave-net.release-ips\n        with:\n          containerId: rest.containerId\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/ipam/subnet\n      name: default-subnet\n      description: Default subnet information\n      operations:\n      - method: GET\n        name: get-default-subnet\n        description: Get default IPAM subnet\n        call: weave-net.get-default-subnet\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/dns/domain\n      name: dns-domain\n      description: DNS domain\n      operations:\n      - method: GET\n        name: get-dns-domain\n        description: Get WeaveDNS domain\n        call: weave-net.get-dns-domain\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/dns/registrations/{containerId}/{ip}\n      name: dns-registration\n\
+  \      description: DNS name registrations\n      operations:\n      - method: PUT\n        name: register-dns\n        description: Register container DNS name\n        call: weave-net.register-dns\n        with:\n          containerId: rest.containerId\n          ip: rest.ip\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: deregister-dns\n        description: Deregister container DNS name\n        call: weave-net.deregister-dns\n        with:\n          containerId: rest.containerId\n          ip: rest.ip\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9092\n    namespace: container-networking-mcp\n    transport: http\n    description: MCP server for AI-assisted Weave Net container networking management.\n    tools:\n    - name: get-daemon-status\n      description: Get the current status of the Weave Net daemon including peers and IPAM state\n      hints:\n        readOnly:\
+  \ true\n        openWorld: false\n      call: weave-net.get-status\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: connect-to-peer\n      description: Connect Weave Net to a remote peer node\n      hints:\n        readOnly: false\n        idempotent: true\n      call: weave-net.connect-peer\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: allocate-container-ip\n      description: Allocate an IP address for a container on the Weave network\n      hints:\n        readOnly: false\n        idempotent: false\n      call: weave-net.allocate-ip\n      with:\n        containerId: tools.containerId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: lookup-container-ip\n      description: Look up the IP address allocated to a container\n      hints:\n        readOnly: true\n        openWorld: false\n      call: weave-net.lookup-ip\n      with:\n        containerId: tools.containerId\n      outputParameters:\n\
+  \      - type: object\n        mapping: $.\n    - name: release-container-ips\n      description: Release all IP addresses allocated to a container\n      hints:\n        readOnly: false\n        destructive: true\n      call: weave-net.release-ips\n      with:\n        containerId: tools.containerId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-default-subnet\n      description: Get the default subnet used for IPAM allocation\n      hints:\n        readOnly: true\n        openWorld: false\n      call: weave-net.get-default-subnet\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-dns-domain\n      description: Get the WeaveDNS domain suffix for name resolution\n      hints:\n        readOnly: true\n        openWorld: false\n      call: weave-net.get-dns-domain\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: register-container-dns\n      description: Register a DNS name for a container\
+  \ in WeaveDNS\n      hints:\n        readOnly: false\n        idempotent: true\n      call: weave-net.register-dns\n      with:\n        containerId: tools.containerId\n        ip: tools.ip\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: deregister-container-dns\n      description: Deregister a container's DNS name from WeaveDNS\n      hints:\n        readOnly: false\n        destructive: true\n      call: weave-net.deregister-dns\n      with:\n        containerId: tools.containerId\n        ip: tools.ip\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/weave-net/refs/heads/main/capabilities/container-networking.yaml
 tags:
 - Containers

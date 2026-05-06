@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- efs
+consumed_apis: []
 description: Unified capability for managing EFS file systems, mount targets, and access points for storage administrators.
 layout: capability
 name: Amazon EFS Elastic File System Management
@@ -30,42 +29,45 @@ personas: []
 provider_name: Amazon EFS
 provider_slug: amazon-efs
 search_terms:
-- describe file systems
 - aws
-- create mount target
-- serverless
-- amazon efs create mount target
-- amazon efs delete file system
-- amazon efs create file system
-- createMountTarget
-- storage
-- describeFileSystems
 - amazon web services
-- amazon efs describe file systems
 - file storage
-- engineers managing amazon efs resources on aws.
-- delete file system
+- storage
+- amazon efs describe file systems
 - create file system
 - describe mount targets
-- file system management business domain for amazon efs.
-- deleteFileSystem
-- efs
-- describeMountTargets
-- amazon efs
-- file system
-- nfs
+- engineers managing amazon efs resources on aws.
 - createFileSystem
 - elastic file system
-- workflow capability for file system management.
+- createMountTarget
+- serverless
+- describeMountTargets
+- file system
+- describeFileSystems
+- amazon efs create mount target
+- create mount target
 - amazon efs describe mount targets
+- describe file systems
+- delete file system
+- amazon efs create file system
+- deleteFileSystem
+- nfs
+- amazon efs
+- amazon efs delete file system
+- efs
+- workflow capability for file system management.
+- file system management business domain for amazon efs.
 slug: efs-management
 source_filename: efs-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Amazon EFS Elastic File System Management\"\n  description: \"Unified capability for managing EFS file systems, mount targets, and access points for storage administrators.\"\n  tags:\n    - Amazon EFS\n    - AWS\n    - Storage\n    - File System\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n\ncapability:\n  consumes:\n    - import: efs\n      location: ./shared/efs.yaml\n\n  exposes:\n    - type: rest\n      port: 8085\n      namespace: efs-api\n      description: \"Unified REST API for Elastic File System Management.\"\n      resources:\n        - path: /v1/2015-02-01/file-systems\n          name: describeFileSystems\n          description: \"Amazon EFS Describe File Systems\"\n          operations:\n            - method: GET\n              name: describeFileSystems\n             \
-  \ description: \"Amazon EFS Describe File Systems\"\n              call: \"efs.describeFileSystems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/2015-02-01/file-systems\n          name: createFileSystem\n          description: \"Amazon EFS Create File System\"\n          operations:\n            - method: POST\n              name: createFileSystem\n              description: \"Amazon EFS Create File System\"\n              call: \"efs.createFileSystem\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/2015-02-01/file-systems\n          name: deleteFileSystem\n          description: \"Amazon EFS Delete File System\"\n          operations:\n            - method: DELETE\n              name: deleteFileSystem\n              description: \"Amazon EFS Delete File System\"\n              call: \"efs.deleteFileSystem\"\n              outputParameters:\n\
-  \                - type: object\n                  mapping: \"$.\"\n        - path: /v1/2015-02-01/mount-targets\n          name: describeMountTargets\n          description: \"Amazon EFS Describe Mount Targets\"\n          operations:\n            - method: GET\n              name: describeMountTargets\n              description: \"Amazon EFS Describe Mount Targets\"\n              call: \"efs.describeMountTargets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/2015-02-01/mount-targets\n          name: createMountTarget\n          description: \"Amazon EFS Create Mount Target\"\n          operations:\n            - method: POST\n              name: createMountTarget\n              description: \"Amazon EFS Create Mount Target\"\n              call: \"efs.createMountTarget\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9095\n\
-  \      namespace: efs-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Elastic File System Management.\"\n      tools:\n        - name: describe-file-systems\n          description: \"Amazon EFS Describe File Systems\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"efs.describeFileSystems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-file-system\n          description: \"Amazon EFS Create File System\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"efs.createFileSystem\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: delete-file-system\n          description: \"Amazon EFS Delete File System\"\n          hints:\n            readOnly: false\n            destructive: true\n          call: \"efs.deleteFileSystem\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n        - name: describe-mount-targets\n          description: \"Amazon EFS Describe Mount Targets\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"efs.describeMountTargets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-mount-target\n          description: \"Amazon EFS Create Mount Target\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"efs.createMountTarget\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon EFS Elastic File System Management\n  description: Unified capability for managing EFS file systems, mount targets, and access points for storage administrators.\n  tags:\n  - Amazon EFS\n  - AWS\n  - Storage\n  - File System\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: efs\n    baseUri: https://elasticfilesystem.us-east-1.amazonaws.com\n    description: Amazon EFS serverless elastic file system.\n    authentication:\n      type: apikey\n      key: Authorization\n      value: AWS4-HMAC-SHA256 Credential={{env.AWS_ACCESS_KEY_ID}}\n      placement: header\n    resources:\n    - name: 2015-02-01\n      path: /2015-02-01/file-systems\n      description: Operations for 2015-02-01 resources.\n      operations:\n      - name: describeFileSystems\n\
+  \        method: GET\n        description: Amazon EFS Describe File Systems\n        inputParameters:\n        - name: CreationToken\n          in: query\n          type: string\n          required: false\n          description: Restricts the list to the file system with this creation token.\n        - name: FileSystemId\n          in: query\n          type: string\n          required: false\n          description: The ID of the file system to describe.\n        - name: MaxItems\n          in: query\n          type: integer\n          required: false\n          description: The maximum number of file systems to return.\n        - name: Marker\n          in: query\n          type: string\n          required: false\n          description: An opaque pagination token returned from a previous request.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: createFileSystem\n        method: POST\n        description:\
+  \ Amazon EFS Create File System\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: 2015-02-01\n      path: /2015-02-01/file-systems/{FileSystemId}\n      description: Operations for 2015-02-01 resources.\n      operations:\n      - name: deleteFileSystem\n        method: DELETE\n        description: Amazon EFS Delete File System\n        inputParameters:\n        - name: FileSystemId\n          in: path\n          type: string\n          required: true\n          description: The ID of the file system to delete.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: 2015-02-01\n      path: /2015-02-01/mount-targets\n      description: Operations for 2015-02-01 resources.\n      operations:\n      - name: describeMountTargets\n        method: GET\n        description: Amazon EFS Describe Mount Targets\n        inputParameters:\n\
+  \        - name: FileSystemId\n          in: query\n          type: string\n          required: false\n          description: The ID of the file system whose mount targets to list.\n        - name: MountTargetId\n          in: query\n          type: string\n          required: false\n          description: The ID of the mount target to describe.\n        - name: MaxItems\n          in: query\n          type: integer\n          required: false\n          description: The maximum number of mount targets to return.\n        - name: Marker\n          in: query\n          type: string\n          required: false\n          description: An opaque pagination token returned from a previous request.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: createMountTarget\n        method: POST\n        description: Amazon EFS Create Mount Target\n        outputRawFormat: json\n        outputParameters:\n      \
+  \  - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8085\n    namespace: efs-api\n    description: Unified REST API for Elastic File System Management.\n    resources:\n    - path: /v1/2015-02-01/file-systems\n      name: describeFileSystems\n      description: Amazon EFS Describe File Systems\n      operations:\n      - method: GET\n        name: describeFileSystems\n        description: Amazon EFS Describe File Systems\n        call: efs.describeFileSystems\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/2015-02-01/file-systems\n      name: createFileSystem\n      description: Amazon EFS Create File System\n      operations:\n      - method: POST\n        name: createFileSystem\n        description: Amazon EFS Create File System\n        call: efs.createFileSystem\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/2015-02-01/file-systems\n      name: deleteFileSystem\n\
+  \      description: Amazon EFS Delete File System\n      operations:\n      - method: DELETE\n        name: deleteFileSystem\n        description: Amazon EFS Delete File System\n        call: efs.deleteFileSystem\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/2015-02-01/mount-targets\n      name: describeMountTargets\n      description: Amazon EFS Describe Mount Targets\n      operations:\n      - method: GET\n        name: describeMountTargets\n        description: Amazon EFS Describe Mount Targets\n        call: efs.describeMountTargets\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/2015-02-01/mount-targets\n      name: createMountTarget\n      description: Amazon EFS Create Mount Target\n      operations:\n      - method: POST\n        name: createMountTarget\n        description: Amazon EFS Create Mount Target\n        call: efs.createMountTarget\n        outputParameters:\n        - type: object\n\
+  \          mapping: $.\n  - type: mcp\n    port: 9095\n    namespace: efs-mcp\n    transport: http\n    description: MCP server for AI-assisted Elastic File System Management.\n    tools:\n    - name: describe-file-systems\n      description: Amazon EFS Describe File Systems\n      hints:\n        readOnly: true\n        destructive: false\n      call: efs.describeFileSystems\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-file-system\n      description: Amazon EFS Create File System\n      hints:\n        readOnly: false\n        destructive: false\n      call: efs.createFileSystem\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-file-system\n      description: Amazon EFS Delete File System\n      hints:\n        readOnly: false\n        destructive: true\n      call: efs.deleteFileSystem\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-mount-targets\n      description:\
+  \ Amazon EFS Describe Mount Targets\n      hints:\n        readOnly: true\n        destructive: false\n      call: efs.describeMountTargets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-mount-target\n      description: Amazon EFS Create Mount Target\n      hints:\n        readOnly: false\n        destructive: false\n      call: efs.createMountTarget\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-efs/refs/heads/main/capabilities/efs-management.yaml
 tags:
 - Amazon EFS

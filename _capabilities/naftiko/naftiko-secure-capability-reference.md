@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- secure
-- mcp
-- capabilities
-- reference
 - naftiko
+- reference
+- secure
 - get secret
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
 slug: naftiko-secure-capability-reference
 source_filename: naftiko-secure-capability-reference.yaml
 source_heading: Capability Spec

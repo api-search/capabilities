@@ -10,9 +10,9 @@ provider_name: The Open Movie Database
 provider_slug: the-open-movie-database
 search_terms:
 - television
-- metadata
 - imdb
 - movies
+- metadata
 - entertainment
 slug: movie-lookup
 source_filename: movie-lookup.yaml

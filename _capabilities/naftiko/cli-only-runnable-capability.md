@@ -17,17 +17,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- start run
-- cli
-- spec-driven integration
-- mcp
-- capabilities
 - naftiko
+- runnable
+- start run
 - api integration
 - get run
-- runnable
-- governance
+- capabilities
 - ai
+- governance
+- spec-driven integration
+- mcp
+- cli
 slug: cli-only-runnable-capability
 source_filename: cli-only-runnable-capability.yaml
 source_heading: Capability Spec

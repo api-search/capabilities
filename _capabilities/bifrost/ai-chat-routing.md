@@ -9,17 +9,17 @@ personas: []
 provider_name: Bifrost
 provider_slug: bifrost
 search_terms:
-- openai-compatible chat completion interface
-- unified routing to multiple ai llm providers
 - llm
-- health monitoring and provider status tracking
 - engineer managing bifrost gateway deployments and provider config
-- ai gateway
-- mcp
 - openai compatible
+- ai gateway
 - route chat completions to 20+ ai providers with failover
-- load balancing
+- openai-compatible chat completion interface
 - engineer building ai applications using bifrost as a unified gateway
+- load balancing
+- unified routing to multiple ai llm providers
+- mcp
+- health monitoring and provider status tracking
 - open source
 slug: ai-chat-routing
 source_filename: ai-chat-routing.yaml

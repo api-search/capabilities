@@ -9,9 +9,9 @@ personas: []
 provider_name: Amazon Timestream
 provider_slug: amazon-timestream
 search_terms:
-- database
-- time series
 - iot
+- time series
+- database
 slug: amazon-timestream-capability
 source_filename: amazon-timestream-capability.yaml
 source_heading: Capability Spec

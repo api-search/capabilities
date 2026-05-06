@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: spring-cloud-gateway-actuator-openapi.yml
-  format: yaml
-  label: gateway
-  slug: gateway
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/spring-cloud/refs/heads/main/openapi/spring-cloud-gateway-actuator-openapi.yml
 categories: []
-consumed_apis:
-- gateway
+consumed_apis: []
 description: Unified capability for managing a Spring Cloud microservice platform including API gateway routing, service discovery inspection, and circuit breaker monitoring. Designed for platform engineers and DevOps teams.
 layout: capability
 name: Spring Cloud Microservice Platform
@@ -37,48 +29,49 @@ personas: []
 provider_name: Spring Cloud
 provider_slug: spring-cloud
 search_terms:
-- api gateway route management
-- remove gateway route
 - delete gateway route
-- java
-- list all configured gateway routes
-- get details of a specific gateway route by id including predicates, filters, and destination uri
-- inspect gateway routes
-- deploy a new route to the spring cloud gateway for routing traffic to a microservice
-- gateway cache management
-- force synchronization of the gateway route cache with current configuration
-- service discovery
-- get route by id
-- refresh route cache
-- inspect all spring cloud gateway routes to understand current traffic routing configuration
-- refresh gateway
-- platform engineering
-- remove a gateway route, stopping traffic routing to that service
-- create gateway route
-- delete a gateway route
-- list gateway routes
-- microservices
-- devops
-- cloud native
 - distributed systems
-- sync gateway config
-- create a new gateway route
-- individual gateway route operations
-- circuit breaker
-- deploy gateway route
-- api gateway
+- java
+- list gateway routes
+- delete a gateway route
+- devops
+- platform engineering
 - spring cloud
-- spring framework
+- create gateway route
 - get gateway route
+- gateway cache management
+- deploy gateway route
+- remove a gateway route, stopping traffic routing to that service
+- circuit breaker
+- cloud native
+- get details of a specific gateway route by id including predicates, filters, and destination uri
+- get route by id
+- individual gateway route operations
+- create a new gateway route
+- service discovery
+- refresh route cache
+- api gateway route management
+- refresh gateway
+- deploy a new route to the spring cloud gateway for routing traffic to a microservice
+- spring framework
+- api gateway
+- sync gateway config
+- inspect gateway routes
+- inspect all spring cloud gateway routes to understand current traffic routing configuration
+- remove gateway route
+- list all configured gateway routes
+- force synchronization of the gateway route cache with current configuration
+- microservices
 slug: microservice-platform
 source_filename: microservice-platform.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Spring Cloud Microservice Platform\"\n  description: \"Unified capability for managing a Spring Cloud microservice platform including API gateway routing, service discovery inspection, and circuit breaker monitoring. Designed for platform engineers and DevOps teams.\"\n  tags:\n    - Spring Cloud\n    - Microservices\n    - Platform Engineering\n    - API Gateway\n    - Service Discovery\n    - DevOps\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      SPRING_GATEWAY_BASE_URL: SPRING_GATEWAY_BASE_URL\n\ncapability:\n  consumes:\n    - import: gateway\n      location: ./shared/spring-cloud-gateway-actuator.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: microservice-platform-api\n      description: \"Unified REST API for Spring Cloud microservice platform management.\"\n      resources:\n        - path: /v1/gateway/routes\n          name: gateway-routes\n\
-  \          description: \"API gateway route management\"\n          operations:\n            - method: GET\n              name: list-gateway-routes\n              description: \"List all configured gateway routes\"\n              call: \"gateway.list-routes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-gateway-route\n              description: \"Create a new gateway route\"\n              call: \"gateway.create-route\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gateway/routes/{id}\n          name: gateway-route-detail\n          description: \"Individual gateway route operations\"\n          operations:\n            - method: GET\n              name: get-gateway-route\n              description: \"Get route by ID\"\n              call: \"gateway.get-route\"\n              with:\n                id:\
-  \ \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: delete-gateway-route\n              description: \"Delete a gateway route\"\n              call: \"gateway.delete-route\"\n              with:\n                id: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/gateway/refresh\n          name: gateway-refresh\n          description: \"Gateway cache management\"\n          operations:\n            - method: POST\n              name: refresh-gateway\n              description: \"Refresh route cache\"\n              call: \"gateway.refresh-routes\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: microservice-platform-mcp\n      transport: http\n      description: \"MCP server for AI-assisted\
-  \ Spring Cloud microservice platform management.\"\n      tools:\n        - name: inspect-gateway-routes\n          description: \"Inspect all Spring Cloud Gateway routes to understand current traffic routing configuration\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"gateway.list-routes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-gateway-route\n          description: \"Get details of a specific gateway route by ID including predicates, filters, and destination URI\"\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"gateway.get-route\"\n          with:\n            id: \"tools.routeId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: deploy-gateway-route\n          description: \"Deploy a new route to the Spring Cloud Gateway for routing traffic to a microservice\"\n  \
-  \        hints:\n            readOnly: false\n            destructive: false\n            idempotent: false\n          call: \"gateway.create-route\"\n          with:\n            routeId: \"tools.routeId\"\n            uri: \"tools.destinationUri\"\n            predicates: \"tools.predicates\"\n            filters: \"tools.filters\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: remove-gateway-route\n          description: \"Remove a gateway route, stopping traffic routing to that service\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"gateway.delete-route\"\n          with:\n            id: \"tools.routeId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: sync-gateway-config\n          description: \"Force synchronization of the gateway route cache with current configuration\"\n          hints:\n\
-  \            readOnly: false\n            destructive: false\n            idempotent: true\n          call: \"gateway.refresh-routes\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Spring Cloud Microservice Platform\n  description: Unified capability for managing a Spring Cloud microservice platform including API gateway routing, service\n    discovery inspection, and circuit breaker monitoring. Designed for platform engineers and DevOps teams.\n  tags:\n  - Spring Cloud\n  - Microservices\n  - Platform Engineering\n  - API Gateway\n  - Service Discovery\n  - DevOps\n  created: '2026-05-02'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    SPRING_GATEWAY_BASE_URL: SPRING_GATEWAY_BASE_URL\ncapability:\n  consumes:\n  - type: http\n    namespace: gateway\n    baseUri: '{{SPRING_GATEWAY_BASE_URL}}/actuator/gateway'\n    description: Spring Cloud Gateway Actuator for runtime route management\n    resources:\n    - name: routes\n      path: /routes\n      description: Gateway route definitions\n      operations:\n      - name: list-routes\n        method: GET\n        description: List all configured gateway\
+  \ routes\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-route\n        method: POST\n        description: Create a new gateway route\n        body:\n          type: json\n          data:\n            id: '{{tools.routeId}}'\n            uri: '{{tools.uri}}'\n            predicates: '{{tools.predicates}}'\n            filters: '{{tools.filters}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-route\n        method: GET\n        description: Get route by ID\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: Route identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-route\n        method: DELETE\n \
+  \       description: Delete a gateway route\n        inputParameters:\n        - name: id\n          in: path\n          type: string\n          required: true\n          description: Route identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: refresh-routes\n        method: POST\n        description: Refresh the routes cache\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: microservice-platform-api\n    description: Unified REST API for Spring Cloud microservice platform management.\n    resources:\n    - path: /v1/gateway/routes\n      name: gateway-routes\n      description: API gateway route management\n      operations:\n      - method: GET\n        name: list-gateway-routes\n        description: List all configured gateway routes\n        call: gateway.list-routes\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-gateway-route\n        description: Create a new gateway route\n        call: gateway.create-route\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/gateway/routes/{id}\n      name: gateway-route-detail\n      description: Individual gateway route operations\n      operations:\n      - method: GET\n        name: get-gateway-route\n        description: Get route by ID\n        call: gateway.get-route\n        with:\n          id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: delete-gateway-route\n        description: Delete a gateway route\n        call: gateway.delete-route\n        with:\n          id: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/gateway/refresh\n      name: gateway-refresh\n      description:\
+  \ Gateway cache management\n      operations:\n      - method: POST\n        name: refresh-gateway\n        description: Refresh route cache\n        call: gateway.refresh-routes\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: microservice-platform-mcp\n    transport: http\n    description: MCP server for AI-assisted Spring Cloud microservice platform management.\n    tools:\n    - name: inspect-gateway-routes\n      description: Inspect all Spring Cloud Gateway routes to understand current traffic routing configuration\n      hints:\n        readOnly: true\n        openWorld: false\n      call: gateway.list-routes\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-gateway-route\n      description: Get details of a specific gateway route by ID including predicates, filters, and destination URI\n      hints:\n        readOnly: true\n        openWorld: false\n      call: gateway.get-route\n\
+  \      with:\n        id: tools.routeId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: deploy-gateway-route\n      description: Deploy a new route to the Spring Cloud Gateway for routing traffic to a microservice\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: false\n      call: gateway.create-route\n      with:\n        routeId: tools.routeId\n        uri: tools.destinationUri\n        predicates: tools.predicates\n        filters: tools.filters\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: remove-gateway-route\n      description: Remove a gateway route, stopping traffic routing to that service\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: gateway.delete-route\n      with:\n        id: tools.routeId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: sync-gateway-config\n      description: Force\
+  \ synchronization of the gateway route cache with current configuration\n      hints:\n        readOnly: false\n        destructive: false\n        idempotent: true\n      call: gateway.refresh-routes\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/spring-cloud/refs/heads/main/capabilities/microservice-platform.yaml
 tags:
 - Spring Cloud

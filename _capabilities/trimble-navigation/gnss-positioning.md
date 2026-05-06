@@ -1,14 +1,6 @@
 ---
-api_specs:
-- filename: trimble-mobile-manager-openapi.yml
-  format: yaml
-  label: trimble-tmm
-  slug: trimble-tmm
-  spec_type: OpenAPI
-  url: https://raw.githubusercontent.com/api-evangelist/trimble-navigation/refs/heads/main/openapi/trimble-mobile-manager-openapi.yml
 categories: []
-consumed_apis:
-- trimble-tmm
+consumed_apis: []
 description: Unified GNSS positioning capability combining Trimble Mobile Manager receiver integration, real-time position streaming, correction service management, and Catalyst license activation. Powers high-accuracy field data collection apps for surveying, construction, and precision agriculture.
 layout: capability
 name: Trimble Navigation GNSS Positioning
@@ -49,58 +41,60 @@ personas: []
 provider_name: Trimble Navigation
 provider_slug: trimble-navigation
 search_terms:
-- gps
-- positioning
-- get receiver status
-- get receiver connection and signal status
-- configure rtx, rtk, sbas, or ntrip corrections
-- geospatial
-- activate a trimble catalyst on demand license for enhanced positioning accuracy
-- check current gnss receiver connection status and signal strength
-- construction
-- get receiver info
-- initiate real-time gnss position streaming
-- check active gnss correction service (rtx, rtk, sbas) and current accuracy
 - precision agriculture
-- tmm system information
-- gnss correction service status
-- get tmm version and websocket port information
-- gnss position stream initialization
-- start real-time gnss position streaming, returns websocket port to connect to
-- activate catalyst on demand license for enhanced accuracy
-- get active correction service and accuracy level
-- current receiver status
-- get catalyst licenses
-- configure gnss correction source (rtx, rtk, sbas, or ntrip)
-- activate catalyst license
-- surveying
-- catalyst accuracy licenses
-- list available catalyst positioning accuracy licenses
+- construction
 - get tmm info
-- gnss
-- gnss receiver hardware details
-- get trimble mobile manager system information including websocket ports
+- configure gnss correction source (rtx, rtk, sbas, or ntrip)
+- get receiver status
+- get active correction service and accuracy level
+- start real-time gnss position streaming, returns websocket port to connect to
 - get connected trimble gnss receiver model, serial number, and firmware version
-- navigation
-- configure correction sources
-- get corrections status
-- configure corrections
-- trimble navigation
+- gnss correction service status
 - list available trimble catalyst positioning accuracy licenses
-- get connected receiver model and firmware version
+- geospatial
+- navigation
+- gnss position stream initialization
+- get receiver info
+- get corrections status
+- activate catalyst license
+- get trimble mobile manager system information including websocket ports
+- gnss receiver hardware details
+- catalyst accuracy licenses
+- surveying
+- get catalyst licenses
+- current receiver status
+- list available catalyst positioning accuracy licenses
+- configure corrections
+- get tmm version and websocket port information
+- configure rtx, rtk, sbas, or ntrip corrections
+- check active gnss correction service (rtx, rtk, sbas) and current accuracy
+- check current gnss receiver connection status and signal strength
+- configure correction sources
 - start position stream
+- activate catalyst on demand license for enhanced accuracy
+- trimble navigation
+- positioning
+- initiate real-time gnss position streaming
+- get receiver connection and signal status
+- activate a trimble catalyst on demand license for enhanced positioning accuracy
+- gps
+- gnss
+- tmm system information
+- get connected receiver model and firmware version
 slug: gnss-positioning
 source_filename: gnss-positioning.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Trimble Navigation GNSS Positioning\"\n  description: >-\n    Unified GNSS positioning capability combining Trimble Mobile Manager receiver\n    integration, real-time position streaming, correction service management, and\n    Catalyst license activation. Powers high-accuracy field data collection apps\n    for surveying, construction, and precision agriculture.\n  tags:\n    - Trimble Navigation\n    - GPS\n    - GNSS\n    - Positioning\n    - Navigation\n    - Surveying\n    - Precision Agriculture\n    - Construction\n  created: \"2026-05-03\"\n  modified: \"2026-05-03\"\n\nbinds:\n  - namespace: env\n    keys:\n      TMM_APP_ID: TMM_APP_ID\n\ncapability:\n  consumes:\n    - import: trimble-tmm\n      location: ./shared/trimble-mobile-manager.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: gnss-positioning-api\n      description: \"Unified REST API for Trimble GNSS positioning and receiver management.\"\
-  \n      resources:\n        - path: /v1/system/info\n          name: system-info\n          description: TMM system information\n          operations:\n            - method: GET\n              name: get-tmm-info\n              description: Get TMM version and WebSocket port information\n              call: \"trimble-tmm.get-tmm-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/position/stream\n          name: position-stream\n          description: GNSS position stream initialization\n          operations:\n            - method: GET\n              name: start-position-stream\n              description: Initiate real-time GNSS position streaming\n              call: \"trimble-tmm.start-position-stream\"\n              with:\n                format: \"rest.format\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/receiver/info\n       \
-  \   name: receiver-info\n          description: GNSS receiver hardware details\n          operations:\n            - method: GET\n              name: get-receiver-info\n              description: Get connected receiver model and firmware version\n              call: \"trimble-tmm.get-receiver-info\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/receiver/status\n          name: receiver-status\n          description: Current receiver status\n          operations:\n            - method: GET\n              name: get-receiver-status\n              description: Get receiver connection and signal status\n              call: \"trimble-tmm.get-receiver-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/corrections/status\n          name: corrections-status\n          description: GNSS correction service status\n          operations:\n   \
-  \         - method: GET\n              name: get-corrections-status\n              description: Get active correction service and accuracy level\n              call: \"trimble-tmm.get-corrections-status\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/corrections/configure\n          name: corrections-config\n          description: Configure correction sources\n          operations:\n            - method: POST\n              name: configure-corrections\n              description: Configure RTX, RTK, SBAS, or NTRIP corrections\n              call: \"trimble-tmm.configure-corrections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/catalyst/licenses\n          name: catalyst-licenses\n          description: Catalyst accuracy licenses\n          operations:\n            - method: GET\n              name: get-catalyst-licenses\n           \
-  \   description: List available Catalyst positioning accuracy licenses\n              call: \"trimble-tmm.get-catalyst-licenses\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/catalyst/licenses/activate\n          name: catalyst-activate\n          description: Activate Catalyst license\n          operations:\n            - method: POST\n              name: activate-catalyst-license\n              description: Activate Catalyst On Demand license for enhanced accuracy\n              call: \"trimble-tmm.activate-catalyst-license\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: gnss-positioning-mcp\n      transport: http\n      description: \"MCP server for AI-assisted GNSS receiver management and positioning.\"\n      tools:\n        - name: get-tmm-info\n          description: Get Trimble Mobile Manager system\
-  \ information including WebSocket ports\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"trimble-tmm.get-tmm-info\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: start-position-stream\n          description: Start real-time GNSS position streaming, returns WebSocket port to connect to\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"trimble-tmm.start-position-stream\"\n          with:\n            format: \"tools.format\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-receiver-info\n          description: Get connected Trimble GNSS receiver model, serial number, and firmware version\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"trimble-tmm.get-receiver-info\"\n          outputParameters:\n            - type: object\n      \
-  \        mapping: \"$.\"\n\n        - name: get-receiver-status\n          description: Check current GNSS receiver connection status and signal strength\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"trimble-tmm.get-receiver-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-corrections-status\n          description: Check active GNSS correction service (RTX, RTK, SBAS) and current accuracy\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"trimble-tmm.get-corrections-status\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: configure-corrections\n          description: Configure GNSS correction source (RTX, RTK, SBAS, or NTRIP)\n          hints:\n            readOnly: false\n            idempotent: true\n          call: \"trimble-tmm.configure-corrections\"\n         \
-  \ with:\n            type: \"tools.type\"\n            ntripHost: \"tools.ntripHost\"\n            ntripMountpoint: \"tools.ntripMountpoint\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-catalyst-licenses\n          description: List available Trimble Catalyst positioning accuracy licenses\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"trimble-tmm.get-catalyst-licenses\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: activate-catalyst-license\n          description: Activate a Trimble Catalyst On Demand license for enhanced positioning accuracy\n          hints:\n            readOnly: false\n            openWorld: false\n          call: \"trimble-tmm.activate-catalyst-license\"\n          with:\n            licenseId: \"tools.licenseId\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Trimble Navigation GNSS Positioning\n  description: Unified GNSS positioning capability combining Trimble Mobile Manager receiver integration, real-time position\n    streaming, correction service management, and Catalyst license activation. Powers high-accuracy field data collection\n    apps for surveying, construction, and precision agriculture.\n  tags:\n  - Trimble Navigation\n  - GPS\n  - GNSS\n  - Positioning\n  - Navigation\n  - Surveying\n  - Precision Agriculture\n  - Construction\n  created: '2026-05-03'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    TMM_APP_ID: TMM_APP_ID\ncapability:\n  consumes:\n  - type: http\n    namespace: trimble-tmm\n    baseUri: http://localhost:8080\n    description: Trimble Mobile Manager local REST API\n    authentication:\n      type: basic\n      username: '{{TMM_APP_ID}}'\n      password: '{{TMM_ACCESS_CODE}}'\n    resources:\n    - name: system\n      path: /api/v1/tmmInfo\n\
+  \      description: TMM system information\n      operations:\n      - name: get-tmm-info\n        method: GET\n        description: Get TMM version, API port, and WebSocket ports\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: positioning\n      path: /api/v1/positionStream\n      description: GNSS position streaming\n      operations:\n      - name: start-position-stream\n        method: GET\n        description: Initiate GNSS position streaming, returns WebSocket port\n        inputParameters:\n        - name: format\n          in: query\n          type: string\n          required: false\n          description: Position format (locationV1 or locationV2)\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: receiver\n      path: /api/v1/receiver\n      description: GNSS receiver management\n      operations:\n\
+  \      - name: get-receiver-info\n        method: GET\n        description: Get connected receiver model and firmware details\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-receiver-status\n        method: GET\n        description: Get current receiver status\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: corrections\n      path: /api/v1/corrections\n      description: GNSS correction service management\n      operations:\n      - name: get-corrections-status\n        method: GET\n        description: Get active correction service status and accuracy\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: configure-corrections\n        method: POST\n        description: Configure correction source (RTX, RTK, SBAS,\
+  \ NTRIP)\n        body:\n          type: json\n          data:\n            type: '{{tools.type}}'\n            ntripHost: '{{tools.ntripHost}}'\n            ntripMountpoint: '{{tools.ntripMountpoint}}'\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: catalyst\n      path: /api/v1/catalyst\n      description: Trimble Catalyst license management\n      operations:\n      - name: get-catalyst-licenses\n        method: GET\n        description: Get available Catalyst accuracy licenses\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: activate-catalyst-license\n        method: POST\n        description: Activate a Catalyst On Demand license\n        body:\n          type: json\n          data:\n            licenseId: '{{tools.licenseId}}'\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: gnss-positioning-api\n    description: Unified REST API for Trimble GNSS positioning and receiver management.\n    resources:\n    - path: /v1/system/info\n      name: system-info\n      description: TMM system information\n      operations:\n      - method: GET\n        name: get-tmm-info\n        description: Get TMM version and WebSocket port information\n        call: trimble-tmm.get-tmm-info\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/position/stream\n      name: position-stream\n      description: GNSS position stream initialization\n      operations:\n      - method: GET\n        name: start-position-stream\n        description: Initiate real-time GNSS position streaming\n        call: trimble-tmm.start-position-stream\n        with:\n          format: rest.format\n        outputParameters:\n        - type: object\n    \
+  \      mapping: $.\n    - path: /v1/receiver/info\n      name: receiver-info\n      description: GNSS receiver hardware details\n      operations:\n      - method: GET\n        name: get-receiver-info\n        description: Get connected receiver model and firmware version\n        call: trimble-tmm.get-receiver-info\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/receiver/status\n      name: receiver-status\n      description: Current receiver status\n      operations:\n      - method: GET\n        name: get-receiver-status\n        description: Get receiver connection and signal status\n        call: trimble-tmm.get-receiver-status\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/corrections/status\n      name: corrections-status\n      description: GNSS correction service status\n      operations:\n      - method: GET\n        name: get-corrections-status\n        description: Get active correction service\
+  \ and accuracy level\n        call: trimble-tmm.get-corrections-status\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/corrections/configure\n      name: corrections-config\n      description: Configure correction sources\n      operations:\n      - method: POST\n        name: configure-corrections\n        description: Configure RTX, RTK, SBAS, or NTRIP corrections\n        call: trimble-tmm.configure-corrections\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/catalyst/licenses\n      name: catalyst-licenses\n      description: Catalyst accuracy licenses\n      operations:\n      - method: GET\n        name: get-catalyst-licenses\n        description: List available Catalyst positioning accuracy licenses\n        call: trimble-tmm.get-catalyst-licenses\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/catalyst/licenses/activate\n      name: catalyst-activate\n\
+  \      description: Activate Catalyst license\n      operations:\n      - method: POST\n        name: activate-catalyst-license\n        description: Activate Catalyst On Demand license for enhanced accuracy\n        call: trimble-tmm.activate-catalyst-license\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: gnss-positioning-mcp\n    transport: http\n    description: MCP server for AI-assisted GNSS receiver management and positioning.\n    tools:\n    - name: get-tmm-info\n      description: Get Trimble Mobile Manager system information including WebSocket ports\n      hints:\n        readOnly: true\n        openWorld: false\n      call: trimble-tmm.get-tmm-info\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: start-position-stream\n      description: Start real-time GNSS position streaming, returns WebSocket port to connect to\n      hints:\n        readOnly: false\n        openWorld:\
+  \ false\n      call: trimble-tmm.start-position-stream\n      with:\n        format: tools.format\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-receiver-info\n      description: Get connected Trimble GNSS receiver model, serial number, and firmware version\n      hints:\n        readOnly: true\n        openWorld: false\n      call: trimble-tmm.get-receiver-info\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-receiver-status\n      description: Check current GNSS receiver connection status and signal strength\n      hints:\n        readOnly: true\n        openWorld: false\n      call: trimble-tmm.get-receiver-status\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-corrections-status\n      description: Check active GNSS correction service (RTX, RTK, SBAS) and current accuracy\n      hints:\n        readOnly: true\n        openWorld: false\n      call: trimble-tmm.get-corrections-status\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: configure-corrections\n      description: Configure GNSS correction source (RTX, RTK, SBAS, or NTRIP)\n      hints:\n        readOnly: false\n        idempotent: true\n      call: trimble-tmm.configure-corrections\n      with:\n        type: tools.type\n        ntripHost: tools.ntripHost\n        ntripMountpoint: tools.ntripMountpoint\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-catalyst-licenses\n      description: List available Trimble Catalyst positioning accuracy licenses\n      hints:\n        readOnly: true\n        openWorld: false\n      call: trimble-tmm.get-catalyst-licenses\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: activate-catalyst-license\n      description: Activate a Trimble Catalyst On Demand license for enhanced positioning accuracy\n      hints:\n        readOnly: false\n        openWorld: false\n      call: trimble-tmm.activate-catalyst-license\n\
+  \      with:\n        licenseId: tools.licenseId\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/trimble-navigation/refs/heads/main/capabilities/gnss-positioning.yaml
 tags:
 - Trimble Navigation

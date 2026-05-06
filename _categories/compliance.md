@@ -16,7 +16,7 @@ implementations:
 - capability_name: Adobe Captivate Learning Management
   capability_slug: learning-management
   capability_url: https://capabilities.apis.io/capabilities/adobe-captivate/learning-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Adobe Captivate
   provider_slug: adobe-captivate
@@ -31,7 +31,7 @@ implementations:
 - capability_name: Alation Data Intelligence
   capability_slug: data-intelligence
   capability_url: https://capabilities.apis.io/capabilities/alation/data-intelligence/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Alation
   provider_slug: alation
@@ -47,7 +47,7 @@ implementations:
 - capability_name: Amazon Macie - Data Security Operations
   capability_slug: data-security-operations
   capability_url: https://capabilities.apis.io/capabilities/amazon-macie/data-security-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Amazon Macie
   provider_slug: amazon-macie
@@ -62,7 +62,7 @@ implementations:
 - capability_name: Amazon Service Catalog IT Service Governance
   capability_slug: it-service-governance
   capability_url: https://capabilities.apis.io/capabilities/amazon-service-catalog/it-service-governance/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 5
   provider_name: Amazon Service Catalog
   provider_slug: amazon-service-catalog
@@ -76,7 +76,7 @@ implementations:
 - capability_name: Amazon Well-Architected Tool Architecture Governance
   capability_slug: architecture-governance
   capability_url: https://capabilities.apis.io/capabilities/amazon-well-architected-tool/architecture-governance/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Amazon Well-Architected Tool
   provider_slug: amazon-well-architected-tool
@@ -89,7 +89,7 @@ implementations:
 - capability_name: Apache Atlas Data Governance
   capability_slug: atlas-data-governance
   capability_url: https://capabilities.apis.io/capabilities/apache-atlas/atlas-data-governance/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Apache Atlas
   provider_slug: apache-atlas
@@ -103,7 +103,7 @@ implementations:
 - capability_name: AppOmni SaaS Security Monitoring
   capability_slug: saas-security-monitoring
   capability_url: https://capabilities.apis.io/capabilities/appomni/saas-security-monitoring/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 0
   provider_name: AppOmni
   provider_slug: appomni
@@ -116,7 +116,7 @@ implementations:
 - capability_name: BetterCloud SaaS Lifecycle Management
   capability_slug: saas-lifecycle-management
   capability_url: https://capabilities.apis.io/capabilities/bettercloud/saas-lifecycle-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 10
   provider_name: BetterCloud
   provider_slug: bettercloud
@@ -131,7 +131,7 @@ implementations:
 - capability_name: Google Analytics Compliance and Privacy
   capability_slug: compliance
   capability_url: https://capabilities.apis.io/capabilities/google-analytics/compliance/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Google Analytics
   provider_slug: google-analytics
@@ -145,7 +145,7 @@ implementations:
 - capability_name: LinkedIn Compliance And Regulatory
   capability_slug: compliance-and-regulatory
   capability_url: https://capabilities.apis.io/capabilities/linkedin/compliance-and-regulatory/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 10
   provider_name: LinkedIn
   provider_slug: linkedin
@@ -158,7 +158,7 @@ implementations:
 - capability_name: Palo Alto Networks Cloud Security Posture
   capability_slug: cloud-security-posture
   capability_url: https://capabilities.apis.io/capabilities/palo-alto-networks/cloud-security-posture/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 36
   provider_name: Palo Alto Networks
   provider_slug: palo-alto-networks
@@ -173,7 +173,7 @@ implementations:
 - capability_name: X Compliance and Data Management
   capability_slug: compliance-and-data
   capability_url: https://capabilities.apis.io/capabilities/twitter/compliance-and-data/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 7
   provider_name: X (Twitter)
   provider_slug: twitter
@@ -186,7 +186,7 @@ implementations:
 - capability_name: ZoomInfo Monitoring And Compliance
   capability_slug: monitoring-and-compliance
   capability_url: https://capabilities.apis.io/capabilities/zoominfo/monitoring-and-compliance/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: ZoomInfo
   provider_slug: zoominfo

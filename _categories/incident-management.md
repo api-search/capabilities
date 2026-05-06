@@ -18,7 +18,7 @@ implementations:
 - capability_name: Amazon Incident Manager - Incident Response
   capability_slug: incident-response
   capability_url: https://capabilities.apis.io/capabilities/amazon-incident-manager/incident-response/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Amazon Incident Manager
   provider_slug: amazon-incident-manager
@@ -31,7 +31,7 @@ implementations:
 - capability_name: Better Stack Incident Response
   capability_slug: incident-response
   capability_url: https://capabilities.apis.io/capabilities/better-stack/incident-response/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 14
   provider_name: Better Stack
   provider_slug: better-stack
@@ -45,7 +45,7 @@ implementations:
 - capability_name: Datadog Incident Management
   capability_slug: incident-management
   capability_url: https://capabilities.apis.io/capabilities/datadog/incident-management/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Datadog
   provider_slug: datadog
@@ -59,7 +59,7 @@ implementations:
 - capability_name: Dynatrace Incident Response
   capability_slug: incident-response
   capability_url: https://capabilities.apis.io/capabilities/dynatrace/incident-response/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 13
   provider_name: Dynatrace
   provider_slug: dynatrace
@@ -73,7 +73,7 @@ implementations:
 - capability_name: New Relic Alerting Configuration
   capability_slug: full-stack-observability
   capability_url: https://capabilities.apis.io/capabilities/new-relic/full-stack-observability/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 8
   provider_name: New Relic
   provider_slug: new-relic
@@ -87,7 +87,7 @@ implementations:
 - capability_name: New Relic Incident Response
   capability_slug: incident-response
   capability_url: https://capabilities.apis.io/capabilities/new-relic/incident-response/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: New Relic
   provider_slug: new-relic
@@ -101,7 +101,7 @@ implementations:
 - capability_name: Palo Alto Networks Incident Response
   capability_slug: incident-response
   capability_url: https://capabilities.apis.io/capabilities/palo-alto-networks/incident-response/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 39
   provider_name: Palo Alto Networks
   provider_slug: palo-alto-networks
@@ -115,7 +115,7 @@ implementations:
 - capability_name: SolarWinds IT Service Management
   capability_slug: it-service-management
   capability_url: https://capabilities.apis.io/capabilities/solarwinds/it-service-management/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 4
   provider_name: SolarWinds
   provider_slug: solarwinds

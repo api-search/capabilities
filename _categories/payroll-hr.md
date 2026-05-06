@@ -19,7 +19,7 @@ implementations:
 - capability_name: Absence.io Absence Management
   capability_slug: absence-management
   capability_url: https://capabilities.apis.io/capabilities/absence-io/absence-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 11
   provider_name: Absence.io
   provider_slug: absence-io
@@ -32,7 +32,7 @@ implementations:
 - capability_name: Acadia Workforce Development
   capability_slug: workforce-development
   capability_url: https://capabilities.apis.io/capabilities/acadia/workforce-development/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Acadia
   provider_slug: acadia
@@ -45,7 +45,7 @@ implementations:
 - capability_name: Oracle EBS Workforce Management
   capability_slug: workforce-management
   capability_url: https://capabilities.apis.io/capabilities/oracle-e-business-suite/workforce-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Oracle E-Business Suite
   provider_slug: oracle-e-business-suite
@@ -58,7 +58,7 @@ implementations:
 - capability_name: PeopleSoft Human Resources
   capability_slug: human-resources
   capability_url: https://capabilities.apis.io/capabilities/peoplesoft/human-resources/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 9
   provider_name: PeopleSoft
   provider_slug: peoplesoft
@@ -73,7 +73,7 @@ implementations:
 - capability_name: Workday Compensation and Payroll
   capability_slug: compensation-and-payroll
   capability_url: https://capabilities.apis.io/capabilities/workday/compensation-and-payroll/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 3
   provider_name: Workday
   provider_slug: workday
@@ -86,7 +86,7 @@ implementations:
 - capability_name: Workday Time and Absence
   capability_slug: time-and-absence
   capability_url: https://capabilities.apis.io/capabilities/workday/time-and-absence/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Workday
   provider_slug: workday
@@ -98,7 +98,7 @@ implementations:
 - capability_name: Workday Workforce Management
   capability_slug: workforce-management
   capability_url: https://capabilities.apis.io/capabilities/workday/workforce-management/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Workday
   provider_slug: workday

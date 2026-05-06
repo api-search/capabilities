@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- sinch-numbers
+consumed_apis: []
 description: Unified number management workflow combining the Sinch Numbers API with brand and registration management for compliant business messaging. Used by operations teams and developers provisioning phone numbers, registering sender IDs, and managing messaging compliance requirements.
 layout: capability
 name: Sinch Number Management
@@ -22,37 +21,39 @@ personas: []
 provider_name: Sinch
 provider_slug: sinch
 search_terms:
-- search for available phone numbers by country code and type (local, toll-free, mobile)
-- list active numbers
-- communications
-- sms
-- provisioning
-- brands
 - numbers
-- verification
+- rent a phone number matching the specified country and type requirements
+- list all phone numbers currently rented in the project
+- cpaas
 - search for available numbers by country and type
+- voice
+- compliance
+- search for available phone numbers by country code and type (local, toll-free, mobile)
+- sms
+- registration
+- brands
+- list active numbers
+- messaging
+- rent phone number
 - search for available phone numbers
 - phone numbers
 - list all active phone numbers
-- manage active phone numbers
-- list all phone numbers currently rented in the project
-- registration
-- search phone numbers
-- voice
 - search available numbers
-- compliance
-- rent phone number
-- rent a phone number matching the specified country and type requirements
-- cpaas
+- search phone numbers
+- provisioning
 - rent a phone number matching specified criteria
-- messaging
+- manage active phone numbers
+- verification
+- communications
 slug: number-management
 source_filename: number-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Sinch Number Management\"\n  description: >-\n    Unified number management workflow combining the Sinch Numbers API with\n    brand and registration management for compliant business messaging.\n    Used by operations teams and developers provisioning phone numbers,\n    registering sender IDs, and managing messaging compliance requirements.\n  tags:\n    - Numbers\n    - Phone Numbers\n    - Provisioning\n    - Compliance\n    - Brands\n    - Registration\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      SINCH_API_TOKEN: SINCH_API_TOKEN\n      SINCH_PROJECT_ID: SINCH_PROJECT_ID\n\ncapability:\n  consumes:\n    - import: sinch-numbers\n      location: ./shared/numbers.yaml\n\n  exposes:\n    - type: rest\n      port: 8082\n      namespace: number-management-api\n      description: \"Unified REST API for Sinch phone number provisioning and compliance management.\"\n      resources:\n\
-  \        - path: /v1/numbers/available\n          name: available-numbers\n          description: Search for available phone numbers\n          operations:\n            - method: GET\n              name: search-available-numbers\n              description: Search for available numbers by country and type\n              call: \"sinch-numbers.list-available-numbers\"\n              with:\n                regionCode: \"rest.regionCode\"\n                type: \"rest.type\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/numbers/active\n          name: active-numbers\n          description: Manage active phone numbers\n          operations:\n            - method: GET\n              name: list-active-numbers\n              description: List all active phone numbers\n              call: \"sinch-numbers.list-active-numbers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\
-  \n            - method: POST\n              name: rent-phone-number\n              description: Rent a phone number matching specified criteria\n              call: \"sinch-numbers.rent-any-number\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9092\n      namespace: number-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted phone number provisioning and management.\"\n      tools:\n        - name: search-phone-numbers\n          description: Search for available phone numbers by country code and type (local, toll-free, mobile)\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"sinch-numbers.list-available-numbers\"\n          with:\n            regionCode: \"tools.regionCode\"\n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-active-numbers\n\
-  \          description: List all phone numbers currently rented in the project\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"sinch-numbers.list-active-numbers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: rent-phone-number\n          description: Rent a phone number matching the specified country and type requirements\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"sinch-numbers.rent-any-number\"\n          with:\n            regionCode: \"tools.regionCode\"\n            type: \"tools.type\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Sinch Number Management\n  description: Unified number management workflow combining the Sinch Numbers API with brand and registration management for\n    compliant business messaging. Used by operations teams and developers provisioning phone numbers, registering sender IDs,\n    and managing messaging compliance requirements.\n  tags:\n  - Numbers\n  - Phone Numbers\n  - Provisioning\n  - Compliance\n  - Brands\n  - Registration\n  created: '2026-05-02'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    SINCH_API_TOKEN: SINCH_API_TOKEN\n    SINCH_PROJECT_ID: SINCH_PROJECT_ID\ncapability:\n  consumes:\n  - type: http\n    namespace: sinch-numbers\n    baseUri: https://numbers.api.sinch.com\n    description: Sinch Numbers API for phone number management\n    authentication:\n      type: bearer\n      token: '{{SINCH_API_TOKEN}}'\n    resources:\n    - name: available-numbers\n      path: /v1/projects/{projectId}/availableNumbers\n\
+  \      description: Search for available phone numbers\n      operations:\n      - name: list-available-numbers\n        method: GET\n        description: List available phone numbers by region and type\n        inputParameters:\n        - name: projectId\n          in: path\n          type: string\n          required: true\n          description: The Sinch project identifier\n        - name: regionCode\n          in: query\n          type: string\n          required: false\n          description: ISO 3166-1 alpha-2 country code\n        - name: type\n          in: query\n          type: string\n          required: false\n          description: Number type (LOCAL, TOLL_FREE, MOBILE)\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: active-numbers\n      path: /v1/projects/{projectId}/activeNumbers\n      description: Manage active (purchased) phone numbers\n      operations:\n      - name: list-active-numbers\n\
+  \        method: GET\n        description: List active phone numbers\n        inputParameters:\n        - name: projectId\n          in: path\n          type: string\n          required: true\n          description: The Sinch project identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: rent-any-number\n        method: POST\n        description: Rent any available phone number matching criteria\n        inputParameters:\n        - name: projectId\n          in: path\n          type: string\n          required: true\n          description: The Sinch project identifier\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            regionCode: '{{tools.regionCode}}'\n            type: '{{tools.type}}'\n  exposes:\n  - type: rest\n    port: 8082\n    namespace: number-management-api\n\
+  \    description: Unified REST API for Sinch phone number provisioning and compliance management.\n    resources:\n    - path: /v1/numbers/available\n      name: available-numbers\n      description: Search for available phone numbers\n      operations:\n      - method: GET\n        name: search-available-numbers\n        description: Search for available numbers by country and type\n        call: sinch-numbers.list-available-numbers\n        with:\n          regionCode: rest.regionCode\n          type: rest.type\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/numbers/active\n      name: active-numbers\n      description: Manage active phone numbers\n      operations:\n      - method: GET\n        name: list-active-numbers\n        description: List all active phone numbers\n        call: sinch-numbers.list-active-numbers\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: rent-phone-number\n\
+  \        description: Rent a phone number matching specified criteria\n        call: sinch-numbers.rent-any-number\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9092\n    namespace: number-management-mcp\n    transport: http\n    description: MCP server for AI-assisted phone number provisioning and management.\n    tools:\n    - name: search-phone-numbers\n      description: Search for available phone numbers by country code and type (local, toll-free, mobile)\n      hints:\n        readOnly: true\n        openWorld: true\n      call: sinch-numbers.list-available-numbers\n      with:\n        regionCode: tools.regionCode\n        type: tools.type\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-active-numbers\n      description: List all phone numbers currently rented in the project\n      hints:\n        readOnly: true\n        openWorld: false\n      call: sinch-numbers.list-active-numbers\n  \
+  \    outputParameters:\n      - type: object\n        mapping: $.\n    - name: rent-phone-number\n      description: Rent a phone number matching the specified country and type requirements\n      hints:\n        readOnly: false\n        destructive: false\n      call: sinch-numbers.rent-any-number\n      with:\n        regionCode: tools.regionCode\n        type: tools.type\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/sinch/refs/heads/main/capabilities/number-management.yaml
 tags:
 - Numbers

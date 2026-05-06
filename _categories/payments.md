@@ -19,7 +19,7 @@ implementations:
 - capability_name: Adyen Online Payment Processing
   capability_slug: online-payment-processing
   capability_url: https://capabilities.apis.io/capabilities/adyen/online-payment-processing/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 7
   provider_name: Adyen
   provider_slug: adyen
@@ -33,7 +33,7 @@ implementations:
 - capability_name: Affirm Payment Management
   capability_slug: payment-management
   capability_url: https://capabilities.apis.io/capabilities/affirm/payment-management/
-  consumed_api_count: 4
+  consumed_api_count: 0
   operation_count: 9
   provider_name: affirm
   provider_slug: affirm
@@ -48,7 +48,7 @@ implementations:
 - capability_name: Agilent Laboratory Operations
   capability_slug: laboratory-operations
   capability_url: https://capabilities.apis.io/capabilities/agilent-technologies/laboratory-operations/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 7
   provider_name: agilent-technologies
   provider_slug: agilent-technologies
@@ -62,7 +62,7 @@ implementations:
 - capability_name: Amazon Seller and Commerce Workflow
   capability_slug: amazon-seller-and-commerce
   capability_url: https://capabilities.apis.io/capabilities/amazon/amazon-seller-and-commerce/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Amazon
   provider_slug: amazon
@@ -76,7 +76,7 @@ implementations:
 - capability_name: Amdocs Telco Customer Management
   capability_slug: telco-customer-management
   capability_url: https://capabilities.apis.io/capabilities/amdocs/telco-customer-management/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Amdocs
   provider_slug: amdocs
@@ -90,7 +90,7 @@ implementations:
 - capability_name: Android App Monetization and Reviews
   capability_slug: app-monetization
   capability_url: https://capabilities.apis.io/capabilities/android/app-monetization/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Android
   provider_slug: android
@@ -104,7 +104,7 @@ implementations:
 - capability_name: Apple Pay Payment Processing
   capability_slug: payment-processing
   capability_url: https://capabilities.apis.io/capabilities/apple-pay/payment-processing/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 2
   provider_name: Apple Pay
   provider_slug: apple-pay
@@ -118,7 +118,7 @@ implementations:
 - capability_name: HubSpot Commerce Operations
   capability_slug: commerce-operations
   capability_url: https://capabilities.apis.io/capabilities/hubspot/commerce-operations/
-  consumed_api_count: 2
+  consumed_api_count: 0
   operation_count: 0
   provider_name: HubSpot
   provider_slug: hubspot
@@ -131,7 +131,7 @@ implementations:
 - capability_name: Intuit Accounting and Payments
   capability_slug: accounting-and-payments
   capability_url: https://capabilities.apis.io/capabilities/intuit/accounting-and-payments/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 12
   provider_name: Intuit
   provider_slug: intuit
@@ -145,7 +145,7 @@ implementations:
 - capability_name: Mastercard Payment Processing and Checkout
   capability_slug: payment-processing-and-checkout
   capability_url: https://capabilities.apis.io/capabilities/mastercard/payment-processing-and-checkout/
-  consumed_api_count: 7
+  consumed_api_count: 0
   operation_count: 6
   provider_name: Mastercard
   provider_slug: mastercard
@@ -159,7 +159,7 @@ implementations:
 - capability_name: Spot FinOps
   capability_slug: finops
   capability_url: https://capabilities.apis.io/capabilities/spot/finops/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Spot
   provider_slug: spot
@@ -172,7 +172,7 @@ implementations:
 - capability_name: Spot FinOps
   capability_slug: finops
   capability_url: https://capabilities.apis.io/capabilities/spot/finops/
-  consumed_api_count: 3
+  consumed_api_count: 0
   operation_count: 4
   provider_name: Spot
   provider_slug: spot
@@ -185,7 +185,7 @@ implementations:
 - capability_name: Temenos Digital Banking
   capability_slug: digital-banking
   capability_url: https://capabilities.apis.io/capabilities/temenos-transact/digital-banking/
-  consumed_api_count: 1
+  consumed_api_count: 0
   operation_count: 9
   provider_name: Temenos Transact
   provider_slug: temenos-transact

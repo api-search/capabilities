@@ -1,8 +1,7 @@
 ---
 categories:
 - automation
-consumed_apis:
-- docs-api
+consumed_apis: []
 description: Unified workflow for creating, reading, and editing Google Docs documents including content manipulation, formatting, and template automation. Used by developers automating document workflows.
 layout: capability
 name: Google Docs Document Management
@@ -23,33 +22,35 @@ personas: []
 provider_name: Google Docs
 provider_slug: google-docs
 search_terms:
-- document management
-- apply batch updates to insert, replace, or delete content in a document.
-- batch update document
-- apply batch updates to a document.
-- document batch updates.
-- word processing
-- get a document by id.
-- retrieve a google docs document by its id.
-- google workspace
-- create a new google docs document with a title.
-- get document
-- documents
-- google docs
 - create document
-- create a new document.
-- document retrieval and updates.
-- automation
-- productivity
-- collaboration
+- get a document by id.
 - document creation.
+- google workspace
+- get document
+- word processing
+- batch update document
+- create a new document.
+- document batch updates.
+- document retrieval and updates.
+- productivity
+- create a new google docs document with a title.
+- retrieve a google docs document by its id.
+- google docs
+- document management
+- documents
+- apply batch updates to insert, replace, or delete content in a document.
+- collaboration
+- apply batch updates to a document.
+- automation
 slug: document-management
 source_filename: document-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Google Docs Document Management\"\n  description: \"Unified workflow for creating, reading, and editing Google Docs documents including content manipulation, formatting, and template automation. Used by developers automating document workflows.\"\n  tags:\n    - Google Docs\n    - Document Management\n    - Google Workspace\n    - Automation\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\n\ncapability:\n  consumes:\n    - import: docs-api\n      location: ./shared/docs-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: docs-management-api\n      description: \"Unified REST API for Google Docs document management.\"\n      resources:\n        - path: /v1/documents\n          name: documents\n          description: \"Document creation.\"\n          operations:\n            - method: POST\n              name: create-document\n\
-  \              description: \"Create a new document.\"\n              call: \"docs-api.create-document\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{id}\n          name: document-details\n          description: \"Document retrieval and updates.\"\n          operations:\n            - method: GET\n              name: get-document\n              description: \"Get a document by ID.\"\n              call: \"docs-api.get-document\"\n              with:\n                documentId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/documents/{id}/batch-update\n          name: document-updates\n          description: \"Document batch updates.\"\n          operations:\n            - method: POST\n              name: batch-update-document\n              description: \"Apply batch updates to a document.\"\n              call: \"\
-  docs-api.batch-update-document\"\n              with:\n                documentId: \"rest.id\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: docs-management-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Google Docs document management.\"\n      tools:\n        - name: create-document\n          description: \"Create a new Google Docs document with a title.\"\n          hints:\n            readOnly: false\n          call: \"docs-api.create-document\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-document\n          description: \"Retrieve a Google Docs document by its ID.\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"docs-api.get-document\"\n          with:\n            documentId: \"tools.documentId\"\n          outputParameters:\n     \
-  \       - type: object\n              mapping: \"$.\"\n        - name: batch-update-document\n          description: \"Apply batch updates to insert, replace, or delete content in a document.\"\n          hints:\n            readOnly: false\n          call: \"docs-api.batch-update-document\"\n          with:\n            documentId: \"tools.documentId\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Google Docs Document Management\n  description: Unified workflow for creating, reading, and editing Google Docs documents including content manipulation, formatting,\n    and template automation. Used by developers automating document workflows.\n  tags:\n  - Google Docs\n  - Document Management\n  - Google Workspace\n  - Automation\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    GOOGLE_OAUTH_TOKEN: GOOGLE_OAUTH_TOKEN\ncapability:\n  consumes:\n  - type: http\n    namespace: docs-api\n    baseUri: https://docs.googleapis.com\n    description: Google Docs API v1 for document management.\n    authentication:\n      type: bearer\n      token: '{{GOOGLE_OAUTH_TOKEN}}'\n    resources:\n    - name: documents\n      path: /v1/documents\n      description: Create Google Docs documents.\n      operations:\n      - name: create-document\n        method: POST\n        description: Create a blank document\
+  \ with the given title.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            title: '{{tools.title}}'\n    - name: document-details\n      path: /v1/documents/{documentId}\n      description: Read and manage individual documents.\n      operations:\n      - name: get-document\n        method: GET\n        description: Get the latest version of a document.\n        inputParameters:\n        - name: documentId\n          in: path\n          type: string\n          required: true\n          description: The ID of the document.\n        - name: suggestionsViewMode\n          in: query\n          type: string\n          required: false\n          description: Suggestions view mode.\n        - name: includeTabsContent\n          in: query\n          type: boolean\n          required: false\n          description: Whether to populate the Document.tabs field.\n\
+  \        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: document-batch-update\n      path: /v1/documents/{documentId}:batchUpdate\n      description: Apply batch updates to a document.\n      operations:\n      - name: batch-update-document\n        method: POST\n        description: Apply one or more updates to a document.\n        inputParameters:\n        - name: documentId\n          in: path\n          type: string\n          required: true\n          description: The ID of the document to update.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            requests: '{{tools.requests}}'\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: docs-management-api\n    description: Unified REST API for Google Docs document management.\n    resources:\n    - path: /v1/documents\n\
+  \      name: documents\n      description: Document creation.\n      operations:\n      - method: POST\n        name: create-document\n        description: Create a new document.\n        call: docs-api.create-document\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/documents/{id}\n      name: document-details\n      description: Document retrieval and updates.\n      operations:\n      - method: GET\n        name: get-document\n        description: Get a document by ID.\n        call: docs-api.get-document\n        with:\n          documentId: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/documents/{id}/batch-update\n      name: document-updates\n      description: Document batch updates.\n      operations:\n      - method: POST\n        name: batch-update-document\n        description: Apply batch updates to a document.\n        call: docs-api.batch-update-document\n        with:\n       \
+  \   documentId: rest.id\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: docs-management-mcp\n    transport: http\n    description: MCP server for AI-assisted Google Docs document management.\n    tools:\n    - name: create-document\n      description: Create a new Google Docs document with a title.\n      hints:\n        readOnly: false\n      call: docs-api.create-document\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-document\n      description: Retrieve a Google Docs document by its ID.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: docs-api.get-document\n      with:\n        documentId: tools.documentId\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-update-document\n      description: Apply batch updates to insert, replace, or delete content in a document.\n      hints:\n        readOnly: false\n      call:\
+  \ docs-api.batch-update-document\n      with:\n        documentId: tools.documentId\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/google-docs/refs/heads/main/capabilities/document-management.yaml
 tags:
 - Google Docs

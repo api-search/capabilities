@@ -1,11 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- factset-terms
-- factset-sp-fi
-- factset-fi-calc
-- factset-fi-batch
-- factset-axioma-fi
+consumed_apis: []
 description: Unified workflow for fixed income analytics including terms and conditions, evaluated prices, analytics calculations, and optimization. Used by fixed income analysts.
 layout: capability
 name: FactSet Fixed Income
@@ -26,41 +21,43 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
+- run fi calculation
 - get fixed income terms and conditions.
 - get evaluated prices
-- run fi calculation
-- batch fixed income analytics.
-- market data
-- research
-- investment analytics
-- financial
-- get s&p global evaluated prices.
-- financial data
-- fixed income
-- bond analytics
-- get terms
-- fixed income calculations.
-- portfolio analytics
-- get terms conditions
-- factset
-- get fi calc
-- run fixed income calculation.
-- optimize fi portfolio
-- get evaluated prices.
-- get terms and conditions.
-- get fi calculations.
-- batch fi analytics
-- s&p global evaluated prices.
 - fixed income terms and conditions.
-- credit analysis
+- research
+- fixed income calculations.
+- batch fi analytics
+- get terms
+- investment analytics
+- get fi calculations.
 - optimize fixed income portfolio.
+- get evaluated prices.
+- market data
+- run fixed income calculation.
+- get fi calc
+- batch fixed income analytics.
+- get terms conditions
+- portfolio analytics
+- factset
+- fixed income
+- get terms and conditions.
+- s&p global evaluated prices.
+- credit analysis
+- financial data
+- get s&p global evaluated prices.
+- optimize fi portfolio
+- financial
+- bond analytics
 slug: fixed-income
 source_filename: fixed-income.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"FactSet Fixed Income\"\n  description: \"Unified workflow for fixed income analytics including terms and conditions, evaluated prices, analytics calculations, and optimization. Used by fixed income analysts.\"\n  tags:\n    - FactSet\n    - Fixed Income\n    - Bond Analytics\n    - Credit Analysis\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      FACTSET_USERNAME: FACTSET_USERNAME\n      FACTSET_PASSWORD: FACTSET_PASSWORD\n\ncapability:\n  consumes:\n    - import: factset-terms\n      location: ./shared/terms-and-conditions.yaml\n    - import: factset-sp-fi\n      location: ./shared/s-p-global-fixed-income-evaluated-prices-and-analytics.yaml\n    - import: factset-fi-calc\n      location: ./shared/fixed-income-calculation.yaml\n    - import: factset-fi-batch\n      location: ./shared/fixed-income-analytics-batcher.yaml\n    - import: factset-axioma-fi\n      location: ./shared/axioma-fixed-income-optimizer.yaml\n\
-  \n  exposes:\n    - type: rest\n      port: 8084\n      namespace: fixed-income-api\n      description: \"Unified REST API for fixed income analytics.\"\n      resources:\n        - path: /v1/terms-conditions\n          name: terms-conditions\n          description: \"Fixed income terms and conditions.\"\n          operations:\n            - method: GET\n              name: get-terms\n              description: \"Get terms and conditions.\"\n              call: \"factset-terms.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/evaluated-prices\n          name: evaluated-prices\n          description: \"S&P Global evaluated prices.\"\n          operations:\n            - method: GET\n              name: get-evaluated-prices\n              description: \"Get evaluated prices.\"\n              call: \"factset-sp-fi.list\"\n              outputParameters:\n                - type: object\n                  mapping:\
-  \ \"$.\"\n        - path: /v1/fi-calculations\n          name: fi-calculations\n          description: \"Fixed income calculations.\"\n          operations:\n            - method: GET\n              name: get-fi-calc\n              description: \"Get FI calculations.\"\n              call: \"factset-fi-calc.list\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9084\n      namespace: fixed-income-mcp\n      transport: http\n      description: \"MCP server for AI-assisted fixed income analysis.\"\n      tools:\n        - name: get-terms-conditions\n          description: \"Get fixed income terms and conditions.\"\n          hints:\n            readOnly: true\n          call: \"factset-terms.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-evaluated-prices\n          description: \"Get S&P Global evaluated prices.\"\n          hints:\n   \
-  \         readOnly: true\n          call: \"factset-sp-fi.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: run-fi-calculation\n          description: \"Run fixed income calculation.\"\n          hints:\n            readOnly: true\n          call: \"factset-fi-calc.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: batch-fi-analytics\n          description: \"Batch fixed income analytics.\"\n          hints:\n            readOnly: true\n          call: \"factset-fi-batch.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: optimize-fi-portfolio\n          description: \"Optimize fixed income portfolio.\"\n          hints:\n            readOnly: true\n          call: \"factset-axioma-fi.list\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: FactSet Fixed Income\n  description: Unified workflow for fixed income analytics including terms and conditions, evaluated prices, analytics calculations,\n    and optimization. Used by fixed income analysts.\n  tags:\n  - FactSet\n  - Fixed Income\n  - Bond Analytics\n  - Credit Analysis\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    FACTSET_USERNAME: FACTSET_USERNAME\n    FACTSET_PASSWORD: FACTSET_PASSWORD\ncapability:\n  consumes:\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat:\
+  \ json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description:\
+  \ Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: factset-signals\n    baseUri: https://api.factset.com\n    description: Material event signals.\n    authentication:\n\
+  \      type: basic\n      username: '{{FACTSET_USERNAME}}'\n      password: '{{FACTSET_PASSWORD}}'\n    resources:\n    - name: signals\n      path: /\n      description: Signals API resources.\n      operations:\n      - name: list-signals\n        method: GET\n        description: List Signals resources.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8084\n    namespace: fixed-income-api\n    description: Unified REST API for fixed income analytics.\n    resources:\n    - path: /v1/terms-conditions\n      name: terms-conditions\n      description: Fixed income terms and conditions.\n      operations:\n      - method: GET\n        name: get-terms\n        description: Get terms and conditions.\n        call: factset-terms.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/evaluated-prices\n      name: evaluated-prices\n   \
+  \   description: S&P Global evaluated prices.\n      operations:\n      - method: GET\n        name: get-evaluated-prices\n        description: Get evaluated prices.\n        call: factset-sp-fi.list\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/fi-calculations\n      name: fi-calculations\n      description: Fixed income calculations.\n      operations:\n      - method: GET\n        name: get-fi-calc\n        description: Get FI calculations.\n        call: factset-fi-calc.list\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9084\n    namespace: fixed-income-mcp\n    transport: http\n    description: MCP server for AI-assisted fixed income analysis.\n    tools:\n    - name: get-terms-conditions\n      description: Get fixed income terms and conditions.\n      hints:\n        readOnly: true\n      call: factset-terms.list\n      outputParameters:\n      - type: object\n        mapping: $.\n\
+  \    - name: get-evaluated-prices\n      description: Get S&P Global evaluated prices.\n      hints:\n        readOnly: true\n      call: factset-sp-fi.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: run-fi-calculation\n      description: Run fixed income calculation.\n      hints:\n        readOnly: true\n      call: factset-fi-calc.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: batch-fi-analytics\n      description: Batch fixed income analytics.\n      hints:\n        readOnly: true\n      call: factset-fi-batch.list\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: optimize-fi-portfolio\n      description: Optimize fixed income portfolio.\n      hints:\n        readOnly: true\n      call: factset-axioma-fi.list\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/factset/refs/heads/main/capabilities/fixed-income.yaml
 tags:
 - FactSet

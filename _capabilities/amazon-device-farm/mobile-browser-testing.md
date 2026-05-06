@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- device-farm
+consumed_apis: []
 description: Workflow capability for QA engineers and mobile developers to run automated tests on real physical devices and desktop browsers using AWS Device Farm. Combines project management, device pool configuration, test scheduling, artifact collection, and remote access session management.
 layout: capability
 name: AWS Device Farm Mobile and Browser Testing
@@ -70,98 +69,102 @@ personas: []
 provider_name: Amazon Device Farm
 provider_slug: amazon-device-farm
 search_terms:
-- test automation
-- app and test artifact uploads
-- create remote access session
-- list device pools configured for a project
-- device testing
-- Mobile Developer
-- test project management
-- amazon device farm
-- aws
-- create upload
-- list uploads
-- schedule a test run on real devices
-- test run lifecycle
-- list remote access sessions
-- list jobs
-- schedule run
-- device pool configuration
-- get upload
-- get run
-- remote device access sessions
-- list unique problems
-- browser testing
-- create a device pool with filter rules
+- stop remote access session
 - get the status and results of a test run
-- QA Engineer
-- selenium browser test grid projects
-- create a signed url for selenium remotewebdriver to connect to device farm
-- create test grid url
-- list available real physical devices for testing
-- real device catalog
-- stop run
-- create a new device farm test project
-- list selenium test grid projects
-- interactive remote access to real devices for debugging
-- schedule a test run on real physical devices
-- list artifacts
-- list devices
-- list all device farm test projects
+- stop a running test
+- list remote access sessions
+- aws
+- amazon device farm
+- browser testing
+- list available real physical devices
+- list jobs
+- quality assurance engineer managing test infrastructure and running automated test suites
+- create upload
+- test run lifecycle
+- check the status of an uploaded app or test package
 - list all test runs for a project
-- stop a currently running test
-- list jobs within a test run
-- list unique problems found across test runs
+- list uploads
+- create a new selenium test grid project
+- device testing
+- remote device access sessions
+- testing mobile applications on real physical ios and android devices
+- get test run results and status
 - list test artifacts like screenshots, logs, and videos from a run
+- list test runs for a project
+- list available real physical devices for testing
+- individual run management
+- list uploads for a project
+- create remote access session
+- list all device farm test projects
+- list unique problems
+- testing web applications in selenium-powered desktop browsers
+- stop an active remote access session
 - application testing
-- list projects
-- list device pools
+- list devices
+- schedule a test run on real devices
+- schedule run
+- list artifacts
+- create an upload slot and get a pre-signed url to upload your app or test package
+- list test grid projects
+- create project
+- test automation
+- list runs
+- schedule a test run on real physical devices
+- interactive remote access to real devices for debugging
+- list unique problems found across test runs
+- create a signed url for selenium remotewebdriver to connect to device farm
+- list selenium test grid projects for browser testing
+- create test grid url
+- list all aws device farm test projects
 - create test grid project
 - create a new test project
-- quality assurance engineer managing test infrastructure and running automated test suites
-- stop an active remote access session
-- start a remote access session on a device
-- list test grid projects
-- list selenium test grid projects for browser testing
-- create a device pool with rules to filter devices for testing
-- list test runs for a project
-- list runs
-- list uploads for a project
-- testing mobile applications on real physical ios and android devices
-- upload an app or test package
-- create a new selenium test grid project
-- mobile testing
-- end-to-end testing workflow for mobile apps on real devices and web apps in browsers
-- list all aws device farm test projects
-- quality assurance
-- stop a running test
-- create an upload slot and get a pre-signed url to upload your app or test package
-- mobile app developer running tests on real devices to validate app quality
-- individual run management
-- check the status of an uploaded app or test package
-- testing web applications in selenium-powered desktop browsers
-- list available real physical devices
-- create project
+- get run
+- list selenium test grid projects
 - start an interactive remote access session on a real device
-- stop remote access session
-- get test run results and status
+- selenium browser test grid projects
+- mobile testing
+- list projects
+- start a remote access session on a device
+- create a device pool with rules to filter devices for testing
+- app and test artifact uploads
+- stop a currently running test
+- create a new device farm test project
+- test project management
+- list device pools
+- end-to-end testing workflow for mobile apps on real devices and web apps in browsers
+- mobile app developer running tests on real devices to validate app quality
 - create device pool
+- create a device pool with filter rules
+- stop run
+- get upload
+- Mobile Developer
+- device pool configuration
+- list device pools configured for a project
+- list jobs within a test run
+- QA Engineer
+- real device catalog
+- upload an app or test package
+- quality assurance
 slug: mobile-browser-testing
 source_filename: mobile-browser-testing.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: AWS Device Farm Mobile and Browser Testing\n  description: >-\n    Workflow capability for QA engineers and mobile developers to run automated\n    tests on real physical devices and desktop browsers using AWS Device Farm.\n    Combines project management, device pool configuration, test scheduling,\n    artifact collection, and remote access session management.\n  tags:\n    - Amazon Device Farm\n    - Mobile Testing\n    - Browser Testing\n    - Quality Assurance\n    - Test Automation\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: device-farm\n      location: ./shared/device-farm-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: mobile-browser-testing-api\n      description:\
-  \ Unified REST API for AWS Device Farm mobile and browser testing workflows.\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: Test project management\n          operations:\n            - method: GET\n              name: list-projects\n              description: List all Device Farm test projects\n              call: \"device-farm.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-project\n              description: Create a new test project\n              call: \"device-farm.create-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/devices\n          name: devices\n          description: Real device catalog\n          operations:\n            - method: GET\n              name: list-devices\n              description: List available real\
-  \ physical devices\n              call: \"device-farm.list-devices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/device-pools\n          name: device-pools\n          description: Device pool configuration\n          operations:\n            - method: GET\n              name: list-device-pools\n              description: List device pools\n              call: \"device-farm.list-device-pools\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-device-pool\n              description: Create a device pool with filter rules\n              call: \"device-farm.create-device-pool\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/uploads\n          name: uploads\n          description: App and test artifact uploads\n          operations:\n\
-  \            - method: POST\n              name: create-upload\n              description: Upload an app or test package\n              call: \"device-farm.create-upload\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-uploads\n              description: List uploads for a project\n              call: \"device-farm.list-uploads\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/runs\n          name: runs\n          description: Test run lifecycle\n          operations:\n            - method: POST\n              name: schedule-run\n              description: Schedule a test run on real devices\n              call: \"device-farm.schedule-run\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-runs\n          \
-  \    description: List test runs for a project\n              call: \"device-farm.list-runs\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/runs/{runArn}\n          name: run\n          description: Individual run management\n          operations:\n            - method: GET\n              name: get-run\n              description: Get test run results and status\n              call: \"device-farm.get-run\"\n              with:\n                arn: \"rest.runArn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: DELETE\n              name: stop-run\n              description: Stop a running test\n              call: \"device-farm.stop-run\"\n              with:\n                arn: \"rest.runArn\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/remote-access-sessions\n\
-  \          name: remote-access-sessions\n          description: Remote device access sessions\n          operations:\n            - method: POST\n              name: create-remote-access-session\n              description: Start a remote access session on a device\n              call: \"device-farm.create-remote-access-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: GET\n              name: list-remote-access-sessions\n              description: List remote access sessions\n              call: \"device-farm.list-remote-access-sessions\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/test-grid-projects\n          name: test-grid-projects\n          description: Selenium browser test grid projects\n          operations:\n            - method: GET\n              name: list-test-grid-projects\n              description: List Selenium\
-  \ test grid projects\n              call: \"device-farm.list-test-grid-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-test-grid-project\n              description: Create a new Selenium test grid project\n              call: \"device-farm.create-test-grid-project\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: mobile-browser-testing-mcp\n      transport: http\n      description: MCP server for AI-assisted mobile and browser test automation with AWS Device Farm.\n      tools:\n        - name: list-projects\n          description: List all AWS Device Farm test projects\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-projects\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n\n        - name: create-project\n          description: Create a new Device Farm test project\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"device-farm.create-project\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-devices\n          description: List available real physical devices for testing\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-devices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-device-pools\n          description: List device pools configured for a project\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-device-pools\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-device-pool\n        \
-  \  description: Create a device pool with rules to filter devices for testing\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"device-farm.create-device-pool\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-upload\n          description: Create an upload slot and get a pre-signed URL to upload your app or test package\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"device-farm.create-upload\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-upload\n          description: Check the status of an uploaded app or test package\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"device-farm.get-upload\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: schedule-run\n  \
-  \        description: Schedule a test run on real physical devices\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"device-farm.schedule-run\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: get-run\n          description: Get the status and results of a test run\n          hints:\n            readOnly: true\n            openWorld: false\n          call: \"device-farm.get-run\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-runs\n          description: List all test runs for a project\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-runs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stop-run\n          description: Stop a currently running test\n          hints:\n            readOnly: false\n\
-  \            destructive: true\n            idempotent: true\n          call: \"device-farm.stop-run\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-jobs\n          description: List jobs within a test run\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-jobs\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-remote-access-session\n          description: Start an interactive remote access session on a real device\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"device-farm.create-remote-access-session\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: stop-remote-access-session\n          description: Stop an active remote access session\n          hints:\n            readOnly: false\n     \
-  \       destructive: true\n          call: \"device-farm.stop-remote-access-session\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-test-grid-projects\n          description: List Selenium test grid projects for browser testing\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-test-grid-projects\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-test-grid-url\n          description: Create a signed URL for Selenium RemoteWebDriver to connect to Device Farm\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"device-farm.create-test-grid-url\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-artifacts\n          description: List test artifacts like screenshots, logs, and videos from a run\n\
-  \          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-artifacts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: list-unique-problems\n          description: List unique problems found across test runs\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"device-farm.list-unique-problems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: AWS Device Farm Mobile and Browser Testing\n  description: Workflow capability for QA engineers and mobile developers to run automated tests on real physical devices\n    and desktop browsers using AWS Device Farm. Combines project management, device pool configuration, test scheduling, artifact\n    collection, and remote access session management.\n  tags:\n  - Amazon Device Farm\n  - Mobile Testing\n  - Browser Testing\n  - Quality Assurance\n  - Test Automation\n  - AWS\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - type: http\n    namespace: device-farm\n    baseUri: https://devicefarm.us-west-2.amazonaws.com\n    description: AWS Device Farm REST API for mobile and browser testing.\n    authentication:\n      type: apikey\n      key: Authorization\n\
+  \      value: '{{AWS_ACCESS_KEY_ID}}'\n      placement: header\n    resources:\n    - name: projects\n      path: /\n      description: Project management\n      operations:\n      - name: create-project\n        method: POST\n        description: Creates a Device Farm project\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-projects\n        method: POST\n        description: Lists projects\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-project\n        method: POST\n        description: Gets project information\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: runs\n      path: /\n      description: Test run management\n      operations:\n      - name: schedule-run\n        method: POST\n        description:\
+  \ Schedules a test run\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-run\n        method: POST\n        description: Gets test run information\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-runs\n        method: POST\n        description: Lists test runs\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: stop-run\n        method: POST\n        description: Stops a running test\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: device-pools\n      path: /\n      description: Device pool management\n      operations:\n      - name: create-device-pool\n        method: POST\n        description: Creates a device pool\
+  \ with specified rules\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-device-pools\n        method: POST\n        description: Lists device pools\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-device-pool\n        method: POST\n        description: Gets device pool information\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: devices\n      path: /\n      description: Device catalog\n      operations:\n      - name: list-devices\n        method: POST\n        description: Lists available devices\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-device\n        method: POST\n        description: Gets information\
+  \ about a device type\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: uploads\n      path: /\n      description: Upload management for apps and test scripts\n      operations:\n      - name: create-upload\n        method: POST\n        description: Creates an upload for an app or test scripts\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-uploads\n        method: POST\n        description: Lists uploads\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-upload\n        method: POST\n        description: Gets upload information\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: remote-access-sessions\n      path: /\n\
+  \      description: Remote access session management\n      operations:\n      - name: create-remote-access-session\n        method: POST\n        description: Starts a remote access session on a device\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-remote-access-sessions\n        method: POST\n        description: Lists remote access sessions\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: stop-remote-access-session\n        method: POST\n        description: Stops a remote access session\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: test-grid-projects\n      path: /\n      description: Selenium test grid project management\n      operations:\n      - name: create-test-grid-project\n        method: POST\n\
+  \        description: Creates a Selenium testing project\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-test-grid-projects\n        method: GET\n        description: Lists Selenium test grid projects\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-test-grid-url\n        method: POST\n        description: Creates a signed URL for Selenium RemoteWebDriver\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: jobs\n      path: /\n      description: Job management\n      operations:\n      - name: list-jobs\n        method: POST\n        description: Lists jobs in a test run\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      -\
+  \ name: get-job\n        method: POST\n        description: Gets job information\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: mobile-browser-testing-api\n    description: Unified REST API for AWS Device Farm mobile and browser testing workflows.\n    resources:\n    - path: /v1/projects\n      name: projects\n      description: Test project management\n      operations:\n      - method: GET\n        name: list-projects\n        description: List all Device Farm test projects\n        call: device-farm.list-projects\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-project\n        description: Create a new test project\n        call: device-farm.create-project\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/devices\n      name: devices\n\
+  \      description: Real device catalog\n      operations:\n      - method: GET\n        name: list-devices\n        description: List available real physical devices\n        call: device-farm.list-devices\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/device-pools\n      name: device-pools\n      description: Device pool configuration\n      operations:\n      - method: GET\n        name: list-device-pools\n        description: List device pools\n        call: device-farm.list-device-pools\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-device-pool\n        description: Create a device pool with filter rules\n        call: device-farm.create-device-pool\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/uploads\n      name: uploads\n      description: App and test artifact uploads\n      operations:\n      - method: POST\n        name:\
+  \ create-upload\n        description: Upload an app or test package\n        call: device-farm.create-upload\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-uploads\n        description: List uploads for a project\n        call: device-farm.list-uploads\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/runs\n      name: runs\n      description: Test run lifecycle\n      operations:\n      - method: POST\n        name: schedule-run\n        description: Schedule a test run on real devices\n        call: device-farm.schedule-run\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-runs\n        description: List test runs for a project\n        call: device-farm.list-runs\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/runs/{runArn}\n      name: run\n      description: Individual\
+  \ run management\n      operations:\n      - method: GET\n        name: get-run\n        description: Get test run results and status\n        call: device-farm.get-run\n        with:\n          arn: rest.runArn\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: DELETE\n        name: stop-run\n        description: Stop a running test\n        call: device-farm.stop-run\n        with:\n          arn: rest.runArn\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/remote-access-sessions\n      name: remote-access-sessions\n      description: Remote device access sessions\n      operations:\n      - method: POST\n        name: create-remote-access-session\n        description: Start a remote access session on a device\n        call: device-farm.create-remote-access-session\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: GET\n        name: list-remote-access-sessions\n\
+  \        description: List remote access sessions\n        call: device-farm.list-remote-access-sessions\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/test-grid-projects\n      name: test-grid-projects\n      description: Selenium browser test grid projects\n      operations:\n      - method: GET\n        name: list-test-grid-projects\n        description: List Selenium test grid projects\n        call: device-farm.list-test-grid-projects\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-test-grid-project\n        description: Create a new Selenium test grid project\n        call: device-farm.create-test-grid-project\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: mobile-browser-testing-mcp\n    transport: http\n    description: MCP server for AI-assisted mobile and browser test automation with AWS Device\
+  \ Farm.\n    tools:\n    - name: list-projects\n      description: List all AWS Device Farm test projects\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-projects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-project\n      description: Create a new Device Farm test project\n      hints:\n        readOnly: false\n        destructive: false\n      call: device-farm.create-project\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-devices\n      description: List available real physical devices for testing\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-devices\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-device-pools\n      description: List device pools configured for a project\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-device-pools\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-device-pool\n      description: Create a device pool with rules to filter devices for testing\n      hints:\n        readOnly: false\n        destructive: false\n      call: device-farm.create-device-pool\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-upload\n      description: Create an upload slot and get a pre-signed URL to upload your app or test package\n      hints:\n        readOnly: false\n        destructive: false\n      call: device-farm.create-upload\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-upload\n      description: Check the status of an uploaded app or test package\n      hints:\n        readOnly: true\n        openWorld: false\n      call: device-farm.get-upload\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: schedule-run\n      description: Schedule a test run on real\
+  \ physical devices\n      hints:\n        readOnly: false\n        destructive: false\n      call: device-farm.schedule-run\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-run\n      description: Get the status and results of a test run\n      hints:\n        readOnly: true\n        openWorld: false\n      call: device-farm.get-run\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-runs\n      description: List all test runs for a project\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-runs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-run\n      description: Stop a currently running test\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: device-farm.stop-run\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-jobs\n      description: List jobs\
+  \ within a test run\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-jobs\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-remote-access-session\n      description: Start an interactive remote access session on a real device\n      hints:\n        readOnly: false\n        destructive: false\n      call: device-farm.create-remote-access-session\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: stop-remote-access-session\n      description: Stop an active remote access session\n      hints:\n        readOnly: false\n        destructive: true\n      call: device-farm.stop-remote-access-session\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-test-grid-projects\n      description: List Selenium test grid projects for browser testing\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-test-grid-projects\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-test-grid-url\n      description: Create a signed URL for Selenium RemoteWebDriver to connect to Device Farm\n      hints:\n        readOnly: false\n        destructive: false\n      call: device-farm.create-test-grid-url\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-artifacts\n      description: List test artifacts like screenshots, logs, and videos from a run\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-artifacts\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-unique-problems\n      description: List unique problems found across test runs\n      hints:\n        readOnly: true\n        openWorld: true\n      call: device-farm.list-unique-problems\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-device-farm/refs/heads/main/capabilities/mobile-browser-testing.yaml
 tags:
 - Amazon Device Farm

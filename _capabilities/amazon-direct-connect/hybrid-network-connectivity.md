@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- direct-connect
+consumed_apis: []
 description: Workflow capability for network engineers and cloud architects to manage dedicated private connections between on-premises networks and AWS using Amazon Direct Connect. Covers connection provisioning, virtual interface management, gateway associations, LAG configuration, and network troubleshooting.
 layout: capability
 name: Amazon Direct Connect Hybrid Network Connectivity
@@ -50,77 +49,80 @@ personas: []
 provider_name: Amazon Direct Connect
 provider_slug: amazon-direct-connect
 search_terms:
-- multi-vpc and multi-region access via direct connect gateways
-- list all virtual interfaces
-- list all direct connect connections
-- direct connect
-- create direct connect gateway
-- create transit vif
-- aws
-- describe virtual interfaces
-- list all available direct connect colocation facility locations
-- list link aggregation groups providing redundant bundled connections
-- available direct connect locations
-- create a new dedicated connection
-- create a new dedicated physical connection at a direct connect location
-- amazon direct connect
-- list direct connect gateways
-- create a link aggregation group to bundle multiple connections for redundancy
-- create a direct connect gateway
-- link aggregation groups for redundant connections
-- Network Engineer
-- list direct connect gateways for multi-region and multi-vpc connectivity
-- virtual interfaces providing network access
-- list all virtual interfaces configured on direct connect connections
-- delete a direct connect connection
-- create a private virtual interface for accessing a vpc via direct connect
-- create a link aggregation group
-- delete a virtual interface from a direct connect connection
-- create a transit virtual interface for accessing transit gateway via direct connect
-- create a private virtual interface for vpc access
-- dedicated connection
-- create a direct connect gateway to attach multiple vpcs across regions
-- list link aggregation groups
-- create connection
-- end-to-end hybrid network management using amazon direct connect
-- networking
-- network engineer provisioning and managing dedicated connections and virtual interfaces
-- dedicated physical connections to aws
 - create a transit virtual interface for transit gateway
+- direct connect gateways for multi-vpc and multi-region access
+- Cloud Architect
+- networking
+- aws
+- available direct connect locations
+- describe connections
+- delete a direct connect connection
+- delete a virtual interface from a direct connect connection
+- create a direct connect gateway to attach multiple vpcs across regions
+- multi-vpc and multi-region access via direct connect gateways
+- list direct connect gateways
 - describe locations
-- delete connection
-- create transit virtual interface
+- hybrid cloud
+- link aggregation groups for redundant connections
+- list direct connect colocation facilities
+- list all virtual interfaces configured on direct connect connections
+- create a private virtual interface for accessing a vpc via direct connect
+- dedicated connection
+- describe virtual interfaces
+- dedicated physical connections to aws
+- create a link aggregation group to bundle multiple connections for redundancy
+- Network Engineer
+- list all direct connect dedicated connections in the account
+- list link aggregation groups providing redundant bundled connections
+- network engineer provisioning and managing dedicated connections and virtual interfaces
+- create a link aggregation group
+- create direct connect gateway
+- end-to-end hybrid network management using amazon direct connect
 - describe direct connect gateways
+- amazon direct connect
+- describe gateways
+- network engineering
+- create private vif
+- list link aggregation groups
 - provisioning and managing physical dedicated connections
 - describe lags
-- create gateway
-- managing virtual interfaces and bgp peering
-- direct connect gateways for multi-vpc and multi-region access
-- create lag
-- Cloud Architect
-- network engineering
-- hybrid cloud
-- list direct connect colocation facilities
-- list all direct connect dedicated connections in the account
-- cloud architect designing hybrid network connectivity between on-premises and aws
+- list all direct connect connections
+- create a transit virtual interface for accessing transit gateway via direct connect
+- create a new dedicated physical connection at a direct connect location
+- virtual interfaces providing network access
 - delete virtual interface
+- direct connect
+- create lag
+- create transit vif
+- cloud architect designing hybrid network connectivity between on-premises and aws
+- list all available direct connect colocation facility locations
 - create private virtual interface
-- create private vif
-- describe connections
-- describe gateways
+- create a direct connect gateway
+- create a new dedicated connection
+- create gateway
+- create transit virtual interface
+- managing virtual interfaces and bgp peering
+- list all virtual interfaces
+- delete connection
+- create a private virtual interface for vpc access
+- create connection
+- list direct connect gateways for multi-region and multi-vpc connectivity
 slug: hybrid-network-connectivity
 source_filename: hybrid-network-connectivity.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Amazon Direct Connect Hybrid Network Connectivity\n  description: >-\n    Workflow capability for network engineers and cloud architects to manage\n    dedicated private connections between on-premises networks and AWS using\n    Amazon Direct Connect. Covers connection provisioning, virtual interface\n    management, gateway associations, LAG configuration, and network troubleshooting.\n  tags:\n    - Amazon Direct Connect\n    - Hybrid Cloud\n    - Network Engineering\n    - Dedicated Connection\n    - AWS\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n      AWS_REGION: AWS_REGION\n\ncapability:\n  consumes:\n    - import: direct-connect\n      location: ./shared/direct-connect-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: hybrid-network-connectivity-api\n\
-  \      description: Unified REST API for Amazon Direct Connect hybrid network connectivity workflows.\n      resources:\n        - path: /v1/connections\n          name: connections\n          description: Dedicated physical connections to AWS\n          operations:\n            - method: GET\n              name: describe-connections\n              description: List all Direct Connect connections\n              call: \"direct-connect.describe-connections\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-connection\n              description: Create a new dedicated connection\n              call: \"direct-connect.create-connection\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/virtual-interfaces\n          name: virtual-interfaces\n          description: Virtual interfaces providing network access\n    \
-  \      operations:\n            - method: GET\n              name: describe-virtual-interfaces\n              description: List all virtual interfaces\n              call: \"direct-connect.describe-virtual-interfaces\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-private-vif\n              description: Create a private virtual interface for VPC access\n              call: \"direct-connect.create-private-virtual-interface\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-transit-vif\n              description: Create a transit virtual interface for Transit Gateway\n              call: \"direct-connect.create-transit-virtual-interface\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/gateways\n    \
-  \      name: gateways\n          description: Direct Connect gateways for multi-VPC and multi-region access\n          operations:\n            - method: GET\n              name: describe-gateways\n              description: List Direct Connect gateways\n              call: \"direct-connect.describe-direct-connect-gateways\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-gateway\n              description: Create a Direct Connect gateway\n              call: \"direct-connect.create-direct-connect-gateway\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/lags\n          name: lags\n          description: Link aggregation groups for redundant connections\n          operations:\n            - method: GET\n              name: describe-lags\n              description: List link aggregation groups\n           \
-  \   call: \"direct-connect.describe-lags\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-lag\n              description: Create a link aggregation group\n              call: \"direct-connect.create-lag\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n        - path: /v1/locations\n          name: locations\n          description: Available Direct Connect locations\n          operations:\n            - method: GET\n              name: describe-locations\n              description: List Direct Connect colocation facilities\n              call: \"direct-connect.describe-locations\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: hybrid-network-connectivity-mcp\n      transport: http\n      description: MCP server for AI-assisted\
-  \ Direct Connect hybrid network management.\n      tools:\n        - name: describe-connections\n          description: List all Direct Connect dedicated connections in the account\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"direct-connect.describe-connections\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-connection\n          description: Create a new dedicated physical connection at a Direct Connect location\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"direct-connect.create-connection\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-connection\n          description: Delete a Direct Connect connection\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"direct-connect.delete-connection\"\
-  \n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-virtual-interfaces\n          description: List all virtual interfaces configured on Direct Connect connections\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"direct-connect.describe-virtual-interfaces\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-private-virtual-interface\n          description: Create a private virtual interface for accessing a VPC via Direct Connect\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"direct-connect.create-private-virtual-interface\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-transit-virtual-interface\n          description: Create a transit virtual interface for accessing Transit Gateway via Direct Connect\n\
-  \          hints:\n            readOnly: false\n            destructive: false\n          call: \"direct-connect.create-transit-virtual-interface\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: delete-virtual-interface\n          description: Delete a virtual interface from a Direct Connect connection\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"direct-connect.delete-virtual-interface\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-direct-connect-gateways\n          description: List Direct Connect gateways for multi-region and multi-VPC connectivity\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"direct-connect.describe-direct-connect-gateways\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\
-  \n\n        - name: create-direct-connect-gateway\n          description: Create a Direct Connect gateway to attach multiple VPCs across regions\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"direct-connect.create-direct-connect-gateway\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: describe-lags\n          description: List link aggregation groups providing redundant bundled connections\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"direct-connect.describe-lags\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n\n        - name: create-lag\n          description: Create a link aggregation group to bundle multiple connections for redundancy\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"direct-connect.create-lag\"\n          outputParameters:\n\
-  \            - type: object\n              mapping: \"$.\"\n\n        - name: describe-locations\n          description: List all available Direct Connect colocation facility locations\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"direct-connect.describe-locations\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon Direct Connect Hybrid Network Connectivity\n  description: Workflow capability for network engineers and cloud architects to manage dedicated private connections between\n    on-premises networks and AWS using Amazon Direct Connect. Covers connection provisioning, virtual interface management,\n    gateway associations, LAG configuration, and network troubleshooting.\n  tags:\n  - Amazon Direct Connect\n  - Hybrid Cloud\n  - Network Engineering\n  - Dedicated Connection\n  - AWS\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\n    AWS_REGION: AWS_REGION\ncapability:\n  consumes:\n  - type: http\n    namespace: direct-connect\n    baseUri: https://directconnect.us-east-1.amazonaws.com\n    description: Amazon Direct Connect REST API for managing hybrid network connectivity.\n    authentication:\n     \
+  \ type: apikey\n      key: Authorization\n      value: '{{AWS_ACCESS_KEY_ID}}'\n      placement: header\n    resources:\n    - name: connections\n      path: /\n      description: Dedicated physical connections to AWS\n      operations:\n      - name: describe-connections\n        method: POST\n        description: Displays all connections in this Region\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-connection\n        method: POST\n        description: Creates a connection between a customer network and an AWS Direct Connect location\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-connection\n        method: POST\n        description: Deletes the specified connection\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value:\
+  \ $.\n    - name: virtual-interfaces\n      path: /\n      description: Virtual interfaces on connections\n      operations:\n      - name: describe-virtual-interfaces\n        method: POST\n        description: Displays all virtual interfaces for an AWS account\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-private-virtual-interface\n        method: POST\n        description: Creates a private virtual interface for access to Amazon VPC\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-public-virtual-interface\n        method: POST\n        description: Creates a public virtual interface for access to public AWS services\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-transit-virtual-interface\n\
+  \        method: POST\n        description: Creates a transit virtual interface for access to AWS Transit Gateway\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-virtual-interface\n        method: POST\n        description: Deletes a virtual interface\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: direct-connect-gateways\n      path: /\n      description: Direct Connect gateways for multi-VPC and multi-region access\n      operations:\n      - name: describe-direct-connect-gateways\n        method: POST\n        description: Lists all Direct Connect gateways in your AWS account\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-direct-connect-gateway\n        method: POST\n        description: Creates\
+  \ a Direct Connect gateway\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-direct-connect-gateway\n        method: POST\n        description: Deletes the specified Direct Connect gateway\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: lags\n      path: /\n      description: Link aggregation groups (LAGs)\n      operations:\n      - name: describe-lags\n        method: POST\n        description: Describes all Link Aggregation Groups in your account\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-lag\n        method: POST\n        description: Creates a link aggregation group (LAG) with the specified number of bundled connections\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n      - name: delete-lag\n        method: POST\n        description: Deletes the specified LAG\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: locations\n      path: /\n      description: Direct Connect locations\n      operations:\n      - name: describe-locations\n        method: POST\n        description: Lists the Direct Connect locations in the current Region\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: hybrid-network-connectivity-api\n    description: Unified REST API for Amazon Direct Connect hybrid network connectivity workflows.\n    resources:\n    - path: /v1/connections\n      name: connections\n      description: Dedicated physical connections to AWS\n      operations:\n      - method: GET\n\
+  \        name: describe-connections\n        description: List all Direct Connect connections\n        call: direct-connect.describe-connections\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-connection\n        description: Create a new dedicated connection\n        call: direct-connect.create-connection\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/virtual-interfaces\n      name: virtual-interfaces\n      description: Virtual interfaces providing network access\n      operations:\n      - method: GET\n        name: describe-virtual-interfaces\n        description: List all virtual interfaces\n        call: direct-connect.describe-virtual-interfaces\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-private-vif\n        description: Create a private virtual interface for VPC access\n        call: direct-connect.create-private-virtual-interface\n\
+  \        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-transit-vif\n        description: Create a transit virtual interface for Transit Gateway\n        call: direct-connect.create-transit-virtual-interface\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/gateways\n      name: gateways\n      description: Direct Connect gateways for multi-VPC and multi-region access\n      operations:\n      - method: GET\n        name: describe-gateways\n        description: List Direct Connect gateways\n        call: direct-connect.describe-direct-connect-gateways\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-gateway\n        description: Create a Direct Connect gateway\n        call: direct-connect.create-direct-connect-gateway\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/lags\n \
+  \     name: lags\n      description: Link aggregation groups for redundant connections\n      operations:\n      - method: GET\n        name: describe-lags\n        description: List link aggregation groups\n        call: direct-connect.describe-lags\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-lag\n        description: Create a link aggregation group\n        call: direct-connect.create-lag\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/locations\n      name: locations\n      description: Available Direct Connect locations\n      operations:\n      - method: GET\n        name: describe-locations\n        description: List Direct Connect colocation facilities\n        call: direct-connect.describe-locations\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: hybrid-network-connectivity-mcp\n    transport:\
+  \ http\n    description: MCP server for AI-assisted Direct Connect hybrid network management.\n    tools:\n    - name: describe-connections\n      description: List all Direct Connect dedicated connections in the account\n      hints:\n        readOnly: true\n        openWorld: true\n      call: direct-connect.describe-connections\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-connection\n      description: Create a new dedicated physical connection at a Direct Connect location\n      hints:\n        readOnly: false\n        destructive: false\n      call: direct-connect.create-connection\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: delete-connection\n      description: Delete a Direct Connect connection\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: direct-connect.delete-connection\n      outputParameters:\n      - type: object\n        mapping: $.\n \
+  \   - name: describe-virtual-interfaces\n      description: List all virtual interfaces configured on Direct Connect connections\n      hints:\n        readOnly: true\n        openWorld: true\n      call: direct-connect.describe-virtual-interfaces\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-private-virtual-interface\n      description: Create a private virtual interface for accessing a VPC via Direct Connect\n      hints:\n        readOnly: false\n        destructive: false\n      call: direct-connect.create-private-virtual-interface\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-transit-virtual-interface\n      description: Create a transit virtual interface for accessing Transit Gateway via Direct Connect\n      hints:\n        readOnly: false\n        destructive: false\n      call: direct-connect.create-transit-virtual-interface\n      outputParameters:\n      - type: object\n        mapping: $.\n\
+  \    - name: delete-virtual-interface\n      description: Delete a virtual interface from a Direct Connect connection\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call: direct-connect.delete-virtual-interface\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-direct-connect-gateways\n      description: List Direct Connect gateways for multi-region and multi-VPC connectivity\n      hints:\n        readOnly: true\n        openWorld: true\n      call: direct-connect.describe-direct-connect-gateways\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-direct-connect-gateway\n      description: Create a Direct Connect gateway to attach multiple VPCs across regions\n      hints:\n        readOnly: false\n        destructive: false\n      call: direct-connect.create-direct-connect-gateway\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name:\
+  \ describe-lags\n      description: List link aggregation groups providing redundant bundled connections\n      hints:\n        readOnly: true\n        openWorld: true\n      call: direct-connect.describe-lags\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-lag\n      description: Create a link aggregation group to bundle multiple connections for redundancy\n      hints:\n        readOnly: false\n        destructive: false\n      call: direct-connect.create-lag\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: describe-locations\n      description: List all available Direct Connect colocation facility locations\n      hints:\n        readOnly: true\n        openWorld: true\n      call: direct-connect.describe-locations\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-direct-connect/refs/heads/main/capabilities/hybrid-network-connectivity.yaml
 tags:
 - Amazon Direct Connect

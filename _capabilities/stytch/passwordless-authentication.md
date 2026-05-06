@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- stytch-consumer
+consumed_apis: []
 description: Unified capability for passwordless authentication workflows using Stytch's Consumer API. Combines magic links, OTP, and session management to deliver secure login flows without passwords. Used by consumer app developers building user authentication.
 layout: capability
 name: Stytch Passwordless Authentication
@@ -38,55 +37,59 @@ personas: []
 provider_name: Stytch
 provider_slug: stytch
 search_terms:
-- search stytch users
-- send sms otp
-- security
-- validate a session token
-- send a stytch magic link to a user's email for passwordless login
-- authenticate a user with a stytch one-time passcode
-- authenticate otp codes
-- get user
-- validate a stytch consumer session token or jwt
-- magic links
-- send otp sms
-- authenticate otp
-- stytch
-- revoke an active stytch consumer session (logout)
-- send magic link
-- session revocation
-- get a user
-- passwordless
-- developer tools
-- complete stytch magic link authentication using the token from the email
-- search users
-- authenticate session
-- send email magic links
-- authenticate magic link
 - session validation
-- send a stytch sms one-time passcode to a phone number
-- authenticate with a one-time passcode
-- revoke a session
-- send a one-time passcode via sms
-- retrieve a stytch user record by id
 - send a magic link for authentication
-- revoke session
-- authentication
-- consumer
-- authenticate with a magic link token
-- user records
-- otp
+- complete stytch magic link authentication using the token from the email
 - authenticate magic link tokens
+- developer tools
+- user records
 - identity
+- retrieve a stytch user record by id
+- send magic link
+- send a one-time passcode via sms
+- consumer
+- validate a stytch consumer session token or jwt
+- stytch
+- security
+- otp
+- authenticate with a magic link token
+- validate a session token
+- session revocation
+- search stytch users
+- authenticate a user with a stytch one-time passcode
+- revoke an active stytch consumer session (logout)
+- authentication
+- search users
+- passwordless
+- authenticate otp codes
+- authenticate magic link
+- send otp sms
+- authenticate session
+- revoke a session
+- get user
+- send a stytch sms one-time passcode to a phone number
+- authenticate otp
+- send sms otp
+- get a user
+- send email magic links
+- send a stytch magic link to a user's email for passwordless login
+- authenticate with a one-time passcode
+- revoke session
+- magic links
 slug: passwordless-authentication
 source_filename: passwordless-authentication.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Stytch Passwordless Authentication\"\n  description: >-\n    Unified capability for passwordless authentication workflows using Stytch's Consumer API.\n    Combines magic links, OTP, and session management to deliver secure login flows without passwords.\n    Used by consumer app developers building user authentication.\n  tags:\n    - Stytch\n    - Authentication\n    - Passwordless\n    - Magic Links\n    - OTP\n    - Consumer\n  created: \"2026-05-02\"\n  modified: \"2026-05-02\"\n\nbinds:\n  - namespace: env\n    keys:\n      STYTCH_PROJECT_ID: STYTCH_PROJECT_ID\n      STYTCH_SECRET: STYTCH_SECRET\n\ncapability:\n  consumes:\n    - import: stytch-consumer\n      location: ./shared/consumer-auth.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: stytch-passwordless-api\n      description: \"Unified REST API for Stytch passwordless authentication workflows.\"\n      resources:\n        - path: /v1/magic-links/send\n\
-  \          name: magic-link-send\n          description: \"Send email magic links\"\n          operations:\n            - method: POST\n              name: send-magic-link\n              description: \"Send a magic link for authentication\"\n              call: \"stytch-consumer.send-magic-link\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/magic-links/authenticate\n          name: magic-link-authenticate\n          description: \"Authenticate magic link tokens\"\n          operations:\n            - method: POST\n              name: authenticate-magic-link\n              description: \"Authenticate with a magic link token\"\n              call: \"stytch-consumer.authenticate-magic-link\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/otps/sms/send\n          name: otp-sms-send\n          description: \"Send SMS OTP\"\n          operations:\n\
-  \            - method: POST\n              name: send-otp-sms\n              description: \"Send a one-time passcode via SMS\"\n              call: \"stytch-consumer.send-otp-sms\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/otps/authenticate\n          name: otp-authenticate\n          description: \"Authenticate OTP codes\"\n          operations:\n            - method: POST\n              name: authenticate-otp\n              description: \"Authenticate with a one-time passcode\"\n              call: \"stytch-consumer.authenticate-otp\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sessions/authenticate\n          name: session-authenticate\n          description: \"Session validation\"\n          operations:\n            - method: POST\n              name: authenticate-session\n              description: \"Validate a session token\"\n\
-  \              call: \"stytch-consumer.authenticate-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/sessions/revoke\n          name: session-revoke\n          description: \"Session revocation\"\n          operations:\n            - method: POST\n              name: revoke-session\n              description: \"Revoke a session\"\n              call: \"stytch-consumer.revoke-session\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/users/{user_id}\n          name: user\n          description: \"User records\"\n          operations:\n            - method: GET\n              name: get-user\n              description: \"Get a user\"\n              call: \"stytch-consumer.get-user\"\n              with:\n                user_id: \"rest.user_id\"\n              outputParameters:\n                - type: object\n                  mapping:\
-  \ \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: stytch-passwordless-mcp\n      transport: http\n      description: \"MCP server for AI-assisted Stytch passwordless authentication.\"\n      tools:\n        - name: send-magic-link\n          description: \"Send a Stytch magic link to a user's email for passwordless login\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"stytch-consumer.send-magic-link\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: authenticate-magic-link\n          description: \"Complete Stytch magic link authentication using the token from the email\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"stytch-consumer.authenticate-magic-link\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: send-otp-sms\n          description: \"Send a Stytch SMS\
-  \ one-time passcode to a phone number\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"stytch-consumer.send-otp-sms\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: authenticate-otp\n          description: \"Authenticate a user with a Stytch one-time passcode\"\n          hints:\n            readOnly: false\n            destructive: false\n          call: \"stytch-consumer.authenticate-otp\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: authenticate-session\n          description: \"Validate a Stytch consumer session token or JWT\"\n          hints:\n            readOnly: true\n            idempotent: true\n          call: \"stytch-consumer.authenticate-session\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: revoke-session\n          description: \"Revoke an active\
-  \ Stytch consumer session (logout)\"\n          hints:\n            readOnly: false\n            destructive: true\n            idempotent: true\n          call: \"stytch-consumer.revoke-session\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: get-user\n          description: \"Retrieve a Stytch user record by ID\"\n          hints:\n            readOnly: true\n          call: \"stytch-consumer.get-user\"\n          with:\n            user_id: \"tools.user_id\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: search-users\n          description: \"Search Stytch users\"\n          hints:\n            readOnly: true\n            openWorld: true\n          call: \"stytch-consumer.search-users\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Stytch Passwordless Authentication\n  description: Unified capability for passwordless authentication workflows using Stytch's Consumer API. Combines magic links,\n    OTP, and session management to deliver secure login flows without passwords. Used by consumer app developers building\n    user authentication.\n  tags:\n  - Stytch\n  - Authentication\n  - Passwordless\n  - Magic Links\n  - OTP\n  - Consumer\n  created: '2026-05-02'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    STYTCH_PROJECT_ID: STYTCH_PROJECT_ID\n    STYTCH_SECRET: STYTCH_SECRET\ncapability:\n  consumes:\n  - type: http\n    namespace: stytch-consumer\n    baseUri: https://api.stytch.com/v1\n    description: Stytch Consumer Authentication API.\n    authentication:\n      type: basic\n      username: '{{STYTCH_PROJECT_ID}}'\n      password: '{{STYTCH_SECRET}}'\n    resources:\n    - name: magic-link-send\n      path: /magic_links/email/send\n      description:\
+  \ Send authentication magic links\n      operations:\n      - name: send-magic-link\n        method: POST\n        description: Send a magic link email to authenticate a user\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            email: '{{tools.email}}'\n    - name: magic-link-authenticate\n      path: /magic_links/authenticate\n      description: Authenticate magic link tokens\n      operations:\n      - name: authenticate-magic-link\n        method: POST\n        description: Authenticate a user with a magic link token\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            token: '{{tools.token}}'\n            session_duration_minutes: '{{tools.session_duration_minutes}}'\n    - name: otp-sms-send\n      path:\
+  \ /otps/sms/send\n      description: Send SMS OTP\n      operations:\n      - name: send-otp-sms\n        method: POST\n        description: Send a one-time passcode via SMS\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            phone_number: '{{tools.phone_number}}'\n    - name: otp-authenticate\n      path: /otps/authenticate\n      description: Authenticate OTP codes\n      operations:\n      - name: authenticate-otp\n        method: POST\n        description: Authenticate a user with an OTP code\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            method_id: '{{tools.method_id}}'\n            code: '{{tools.code}}'\n            session_duration_minutes: '{{tools.session_duration_minutes}}'\n    - name: sessions\n\
+  \      path: /sessions\n      description: Session listing\n      operations:\n      - name: get-sessions\n        method: GET\n        description: Get all sessions for a user\n        inputParameters:\n        - name: user_id\n          in: query\n          type: string\n          required: true\n          description: User ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: session-authenticate\n      path: /sessions/authenticate\n      description: Session authentication\n      operations:\n      - name: authenticate-session\n        method: POST\n        description: Validate and authenticate a session\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n        body:\n          type: json\n          data:\n            session_token: '{{tools.session_token}}'\n            session_jwt: '{{tools.session_jwt}}'\n    - name:\
+  \ session-revoke\n      path: /sessions/revoke\n      description: Session revocation\n      operations:\n      - name: revoke-session\n        method: POST\n        description: Revoke an active session\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: users\n      path: /users\n      description: User management\n      operations:\n      - name: search-users\n        method: GET\n        description: Search user records\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: user\n      path: /users/{user_id}\n      description: Individual user operations\n      operations:\n      - name: get-user\n        method: GET\n        description: Get a user by ID\n        inputParameters:\n        - name: user_id\n          in: path\n          type: string\n          required: true\n          description: User ID\n    \
+  \    outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-user\n        method: DELETE\n        description: Delete a user\n        inputParameters:\n        - name: user_id\n          in: path\n          type: string\n          required: true\n          description: User ID\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: stytch-passwordless-api\n    description: Unified REST API for Stytch passwordless authentication workflows.\n    resources:\n    - path: /v1/magic-links/send\n      name: magic-link-send\n      description: Send email magic links\n      operations:\n      - method: POST\n        name: send-magic-link\n        description: Send a magic link for authentication\n        call: stytch-consumer.send-magic-link\n        outputParameters:\n        - type:\
+  \ object\n          mapping: $.\n    - path: /v1/magic-links/authenticate\n      name: magic-link-authenticate\n      description: Authenticate magic link tokens\n      operations:\n      - method: POST\n        name: authenticate-magic-link\n        description: Authenticate with a magic link token\n        call: stytch-consumer.authenticate-magic-link\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/otps/sms/send\n      name: otp-sms-send\n      description: Send SMS OTP\n      operations:\n      - method: POST\n        name: send-otp-sms\n        description: Send a one-time passcode via SMS\n        call: stytch-consumer.send-otp-sms\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/otps/authenticate\n      name: otp-authenticate\n      description: Authenticate OTP codes\n      operations:\n      - method: POST\n        name: authenticate-otp\n        description: Authenticate with a one-time passcode\n\
+  \        call: stytch-consumer.authenticate-otp\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/sessions/authenticate\n      name: session-authenticate\n      description: Session validation\n      operations:\n      - method: POST\n        name: authenticate-session\n        description: Validate a session token\n        call: stytch-consumer.authenticate-session\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/sessions/revoke\n      name: session-revoke\n      description: Session revocation\n      operations:\n      - method: POST\n        name: revoke-session\n        description: Revoke a session\n        call: stytch-consumer.revoke-session\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/users/{user_id}\n      name: user\n      description: User records\n      operations:\n      - method: GET\n        name: get-user\n        description: Get a user\n   \
+  \     call: stytch-consumer.get-user\n        with:\n          user_id: rest.user_id\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: stytch-passwordless-mcp\n    transport: http\n    description: MCP server for AI-assisted Stytch passwordless authentication.\n    tools:\n    - name: send-magic-link\n      description: Send a Stytch magic link to a user's email for passwordless login\n      hints:\n        readOnly: false\n        destructive: false\n      call: stytch-consumer.send-magic-link\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: authenticate-magic-link\n      description: Complete Stytch magic link authentication using the token from the email\n      hints:\n        readOnly: false\n        destructive: false\n      call: stytch-consumer.authenticate-magic-link\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: send-otp-sms\n      description:\
+  \ Send a Stytch SMS one-time passcode to a phone number\n      hints:\n        readOnly: false\n        destructive: false\n      call: stytch-consumer.send-otp-sms\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: authenticate-otp\n      description: Authenticate a user with a Stytch one-time passcode\n      hints:\n        readOnly: false\n        destructive: false\n      call: stytch-consumer.authenticate-otp\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: authenticate-session\n      description: Validate a Stytch consumer session token or JWT\n      hints:\n        readOnly: true\n        idempotent: true\n      call: stytch-consumer.authenticate-session\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: revoke-session\n      description: Revoke an active Stytch consumer session (logout)\n      hints:\n        readOnly: false\n        destructive: true\n        idempotent: true\n      call:\
+  \ stytch-consumer.revoke-session\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: get-user\n      description: Retrieve a Stytch user record by ID\n      hints:\n        readOnly: true\n      call: stytch-consumer.get-user\n      with:\n        user_id: tools.user_id\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: search-users\n      description: Search Stytch users\n      hints:\n        readOnly: true\n        openWorld: true\n      call: stytch-consumer.search-users\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/stytch/refs/heads/main/capabilities/passwordless-authentication.yaml
 tags:
 - Stytch

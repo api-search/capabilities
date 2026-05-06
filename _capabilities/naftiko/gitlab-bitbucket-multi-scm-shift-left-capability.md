@@ -13,20 +13,20 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- get multi scm feed
-- list merge requests
-- multi-scm
-- list bitbucket prs
-- mcp
-- gitlab
-- capabilities
 - naftiko
+- gitlab
+- list gitlab projects
 - bitbucket
+- multi-scm
 - api integration
 - governance
+- list bitbucket prs
+- capabilities
 - ai
-- list gitlab projects
+- spec-driven integration
+- mcp
+- get multi scm feed
+- list merge requests
 slug: gitlab-bitbucket-multi-scm-shift-left-capability
 source_filename: gitlab-bitbucket-multi-scm-shift-left-capability.yaml
 source_heading: Capability Spec

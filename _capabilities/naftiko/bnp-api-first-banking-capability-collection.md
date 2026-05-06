@@ -17,19 +17,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- get fx rates
-- spec-driven integration
-- banking
-- ai
-- mcp
-- collection
-- list accounts
-- capabilities
 - naftiko
+- collection
+- bnp paribas
+- mcp
+- list accounts
+- get fx rates
 - api integration
 - governance
+- spec-driven integration
+- ai
+- banking
+- capabilities
 - initiate payment
-- bnp paribas
 slug: bnp-api-first-banking-capability-collection
 source_filename: bnp-api-first-banking-capability-collection.yaml
 source_heading: Capability Spec

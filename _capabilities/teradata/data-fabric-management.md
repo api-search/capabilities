@@ -1,8 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- querygrid-manager
-- query-service
+consumed_apis: []
 description: Workflow capability for managing Teradata's data fabric infrastructure. Combines QueryGrid Manager for fabric configuration with Query Service for validating cross-system connectivity. Used by data engineers and platform administrators.
 layout: capability
 name: Teradata Data Fabric Management
@@ -27,61 +25,67 @@ personas: []
 provider_name: Teradata
 provider_slug: teradata
 search_terms:
-- data warehousing
-- list all configured data centers.
-- list all data centers.
-- list all current issues.
-- list data centers
-- list all bridges connecting systems.
-- bridge management.
-- run diagnostic check
-- cloud
-- enterprise
-- Platform Administrator
-- analytics
-- list all connectors for system integration.
-- Data Engineer
-- teradata
-- data fabric
-- execute sql queries and analytics.
-- issue monitoring.
-- Data Analyst
-- sql query execution and session management.
-- administration
 - system management.
-- list connectors
-- administers querygrid systems, nodes, and software.
-- list all registered systems.
-- database
-- run a diagnostic check on querygrid systems.
-- list issues
-- health monitoring and issue detection.
-- data center management.
-- data management
-- configuration
-- executes queries and analyzes data across vantage systems.
-- machine learning
-- manage querygrid data fabric infrastructure.
+- bridge management.
 - list all bridges.
-- list all data fabric configurations.
-- list bridges
-- manages data fabric infrastructure and cross-system connectivity.
-- list systems
-- system and fabric configuration management.
-- Application Developer
+- list all registered systems.
+- list connectors
+- list all data centers.
+- list all configured data centers.
+- teradata
+- list issues
+- list data centers
+- analytics
+- data center management.
+- sql query execution and session management.
+- issue monitoring.
+- configuration
 - integrates applications with teradata via rest apis.
-- list fabrics
+- run a diagnostic check on querygrid systems.
+- list all data fabric configurations.
+- cloud
+- Data Engineer
+- enterprise
+- list systems
+- run diagnostic check
 - list all registered systems in querygrid.
-- list all current issues in the querygrid environment.
+- manage querygrid data fabric infrastructure.
+- Platform Administrator
+- manages data fabric infrastructure and cross-system connectivity.
 - sql
+- execute sql queries and analytics.
+- list all current issues.
+- list all connectors for system integration.
+- administers querygrid systems, nodes, and software.
+- database
+- machine learning
+- data management
+- system and fabric configuration management.
+- Data Analyst
+- administration
+- list bridges
+- list all bridges connecting systems.
+- list all current issues in the querygrid environment.
+- executes queries and analyzes data across vantage systems.
+- list fabrics
+- data warehousing
+- health monitoring and issue detection.
+- Application Developer
+- data fabric
 slug: data-fabric-management
 source_filename: data-fabric-management.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: Teradata Data Fabric Management\n  description: >-\n    Workflow capability for managing Teradata's data fabric infrastructure.\n    Combines QueryGrid Manager for fabric configuration with Query Service for\n    validating cross-system connectivity. Used by data engineers and platform\n    administrators.\n  tags:\n    - Teradata\n    - Data Fabric\n    - Configuration\n    - Administration\n  created: \"2026-04-18\"\n  modified: \"2026-04-18\"\n\nbinds:\n  - namespace: env\n    keys:\n      QUERYGRID_USERNAME: QUERYGRID_USERNAME\n      QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\n      VANTAGE_USERNAME: VANTAGE_USERNAME\n      VANTAGE_PASSWORD: VANTAGE_PASSWORD\n\ncapability:\n  consumes:\n    - import: querygrid-manager\n      location: ./shared/querygrid-manager.yaml\n    - import: query-service\n      location: ./shared/query-service.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: data-fabric-api\n      description:\
-  \ \"Unified REST API for Teradata data fabric management.\"\n      resources:\n        - path: /v1/data-centers\n          name: data-centers\n          description: \"Data center management.\"\n          operations:\n            - method: GET\n              name: list-data-centers\n              description: \"List all data centers.\"\n              call: \"querygrid-manager.list-data-centers\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/systems\n          name: systems\n          description: \"System management.\"\n          operations:\n            - method: GET\n              name: list-systems\n              description: \"List all registered systems.\"\n              call: \"querygrid-manager.list-systems\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/bridges\n          name: bridges\n          description: \"Bridge management.\"\
-  \n          operations:\n            - method: GET\n              name: list-bridges\n              description: \"List all bridges.\"\n              call: \"querygrid-manager.list-bridges\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/issues\n          name: issues\n          description: \"Issue monitoring.\"\n          operations:\n            - method: GET\n              name: list-issues\n              description: \"List all current issues.\"\n              call: \"querygrid-manager.list-issues\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9080\n      namespace: data-fabric-mcp\n      transport: http\n      description: \"MCP server for AI-assisted data fabric management.\"\n      tools:\n        - name: list-data-centers\n          description: \"List all configured data centers.\"\n          hints:\n            readOnly:\
-  \ true\n          call: \"querygrid-manager.list-data-centers\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-systems\n          description: \"List all registered systems in QueryGrid.\"\n          hints:\n            readOnly: true\n          call: \"querygrid-manager.list-systems\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-bridges\n          description: \"List all bridges connecting systems.\"\n          hints:\n            readOnly: true\n          call: \"querygrid-manager.list-bridges\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-connectors\n          description: \"List all connectors for system integration.\"\n          hints:\n            readOnly: true\n          call: \"querygrid-manager.list-connectors\"\n          outputParameters:\n            - type: object\n              mapping:\
-  \ \"$.\"\n        - name: list-fabrics\n          description: \"List all data fabric configurations.\"\n          hints:\n            readOnly: true\n          call: \"querygrid-manager.list-fabrics\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-issues\n          description: \"List all current issues in the QueryGrid environment.\"\n          hints:\n            readOnly: true\n          call: \"querygrid-manager.list-issues\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: run-diagnostic-check\n          description: \"Run a diagnostic check on QueryGrid systems.\"\n          hints:\n            readOnly: false\n          call: \"querygrid-manager.run-diagnostic-check\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Teradata Data Fabric Management\n  description: Workflow capability for managing Teradata's data fabric infrastructure. Combines QueryGrid Manager for fabric\n    configuration with Query Service for validating cross-system connectivity. Used by data engineers and platform administrators.\n  tags:\n  - Teradata\n  - Data Fabric\n  - Configuration\n  - Administration\n  created: '2026-04-18'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    QUERYGRID_USERNAME: QUERYGRID_USERNAME\n    QUERYGRID_PASSWORD: QUERYGRID_PASSWORD\n    VANTAGE_USERNAME: VANTAGE_USERNAME\n    VANTAGE_PASSWORD: VANTAGE_PASSWORD\ncapability:\n  consumes:\n  - type: http\n    namespace: querygrid-manager\n    baseUri: https://querygrid.teradata.com/api/v1\n    description: QueryGrid Manager REST API for data fabric administration.\n    authentication:\n      type: basic\n      username: '{{QUERYGRID_USERNAME}}'\n      password: '{{QUERYGRID_PASSWORD}}'\n\
+  \    resources:\n    - name: monitoring\n      path: /\n      description: Monitoring and status endpoints.\n      operations:\n      - name: get-api-info\n        method: GET\n        description: Retrieve API version and status information.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-issues\n        method: GET\n        description: Retrieve all current issues.\n        inputParameters:\n        - name: path\n          in: path\n          type: string\n          required: true\n          description: Issues endpoint path.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: configuration\n      path: /config\n      description: Configuration management endpoints.\n      operations:\n      - name: list-data-centers\n        method: GET\n        description: Retrieve all configured data centers.\n \
+  \       outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-data-center\n        method: POST\n        description: Create a new data center configuration.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-systems\n        method: GET\n        description: Retrieve all configured systems.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-system\n        method: POST\n        description: Register a new system.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-bridges\n        method: GET\n        description: Retrieve all configured bridges.\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n      - name: list-connectors\n        method: GET\n        description: Retrieve all configured connectors.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-links\n        method: GET\n        description: Retrieve all configured links.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-fabrics\n        method: GET\n        description: Retrieve all configured fabrics.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: list-networks\n        method: GET\n        description: Retrieve all configured networks.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: operations\n\
+  \      path: /operations\n      description: Operational management endpoints.\n      operations:\n      - name: run-diagnostic-check\n        method: POST\n        description: Execute a diagnostic check.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: auto-install-nodes\n        method: POST\n        description: Trigger automated node installation.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  - type: http\n    namespace: query-service\n    baseUri: https://vantage.teradata.com/api/query/v1\n    description: Teradata Query Service REST API.\n    authentication:\n      type: basic\n      username: '{{VANTAGE_USERNAME}}'\n      password: '{{VANTAGE_PASSWORD}}'\n    resources:\n    - name: systems\n      path: /systems\n      description: Available Vantage systems.\n      operations:\n      - name: list-systems\n\
+  \        method: GET\n        description: List available Vantage systems.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: sessions\n      path: /sessions\n      description: Query sessions.\n      operations:\n      - name: create-session\n        method: POST\n        description: Create a new query session.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-session\n        method: GET\n        description: Get session details.\n        inputParameters:\n        - name: sessionId\n          in: path\n          type: string\n          required: true\n          description: Session identifier.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: delete-session\n        method: DELETE\n        description: Close a\
+  \ query session.\n        inputParameters:\n        - name: sessionId\n          in: path\n          type: string\n          required: true\n          description: Session identifier.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: queries\n      path: /queries\n      description: SQL query execution.\n      operations:\n      - name: execute-query\n        method: POST\n        description: Execute a SQL query.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: get-query-status\n        method: GET\n        description: Get query status and results.\n        inputParameters:\n        - name: queryId\n          in: path\n          type: string\n          required: true\n          description: Query identifier.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type:\
+  \ object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: data-fabric-api\n    description: Unified REST API for Teradata data fabric management.\n    resources:\n    - path: /v1/data-centers\n      name: data-centers\n      description: Data center management.\n      operations:\n      - method: GET\n        name: list-data-centers\n        description: List all data centers.\n        call: querygrid-manager.list-data-centers\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/systems\n      name: systems\n      description: System management.\n      operations:\n      - method: GET\n        name: list-systems\n        description: List all registered systems.\n        call: querygrid-manager.list-systems\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/bridges\n      name: bridges\n      description: Bridge management.\n      operations:\n      - method: GET\n        name:\
+  \ list-bridges\n        description: List all bridges.\n        call: querygrid-manager.list-bridges\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/issues\n      name: issues\n      description: Issue monitoring.\n      operations:\n      - method: GET\n        name: list-issues\n        description: List all current issues.\n        call: querygrid-manager.list-issues\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9080\n    namespace: data-fabric-mcp\n    transport: http\n    description: MCP server for AI-assisted data fabric management.\n    tools:\n    - name: list-data-centers\n      description: List all configured data centers.\n      hints:\n        readOnly: true\n      call: querygrid-manager.list-data-centers\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-systems\n      description: List all registered systems in QueryGrid.\n      hints:\n \
+  \       readOnly: true\n      call: querygrid-manager.list-systems\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-bridges\n      description: List all bridges connecting systems.\n      hints:\n        readOnly: true\n      call: querygrid-manager.list-bridges\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-connectors\n      description: List all connectors for system integration.\n      hints:\n        readOnly: true\n      call: querygrid-manager.list-connectors\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-fabrics\n      description: List all data fabric configurations.\n      hints:\n        readOnly: true\n      call: querygrid-manager.list-fabrics\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-issues\n      description: List all current issues in the QueryGrid environment.\n      hints:\n        readOnly: true\n      call: querygrid-manager.list-issues\n\
+  \      outputParameters:\n      - type: object\n        mapping: $.\n    - name: run-diagnostic-check\n      description: Run a diagnostic check on QueryGrid systems.\n      hints:\n        readOnly: false\n      call: querygrid-manager.run-diagnostic-check\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/teradata/refs/heads/main/capabilities/data-fabric-management.yaml
 tags:
 - Teradata

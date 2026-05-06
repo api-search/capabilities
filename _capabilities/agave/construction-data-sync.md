@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- agave-unified
+consumed_apis: []
 description: Unified workflow capability for syncing construction project data across connected source systems via the Agave unified API. Enables project management, job costing, AP automation, and timesheet sync for construction software integrations.
 layout: capability
 name: Agave Construction Data Sync
@@ -48,62 +47,64 @@ personas:
 provider_name: Agave
 provider_slug: agave
 search_terms:
+- list vendors and subcontractors from a connected construction system.
+- construction
+- list prime contracts from a connected construction system.
+- list contracts.
+- integration
+- employee timesheets.
+- invoices
+- employee and timesheet management.
+- list project budget line items from a connected construction system.
+- developer integrating a construction software platform with other systems via agave's unified api.
 - contractor admin
 - prime contracts.
-- list employee timesheets from a connected construction system.
-- full construction data synchronization covering projects, budgets, contracts, invoices, timesheets, and employees.
-- ap invoices.
-- invoices
-- construction project data.
-- list employees
-- create an ap invoice in a connected construction source system.
-- construction project tracking and management.
-- integration
-- list vendors
-- list construction projects from any connected source system via agave.
-- list employees.
-- job costing
-- agave
-- construction
-- accounting
-- list employee records from a connected construction system.
-- list budget items.
-- create invoice
-- construction company admin using connected tools to sync financial and project data between systems.
-- employee and timesheet management.
-- create an invoice.
-- list invoices
-- list construction projects.
-- list budgets
-- list timesheets.
-- list projects
 - construction software engineer
-- list prime contracts from a connected construction system.
-- budget line items.
-- employee records.
+- create an ap invoice in a connected construction source system.
 - list contracts
-- budget, cost code, and cost tracking for construction jobs.
-- list accounts payable invoices from a connected construction system.
-- list timesheets
-- list contracts.
-- developer integrating a construction software platform with other systems via agave's unified api.
-- invoice processing and vendor payment management.
-- vendor records.
-- employee timesheets.
+- accounting
+- list construction projects.
 - list invoices.
-- list project budget line items from a connected construction system.
-- list vendors and subcontractors from a connected construction system.
+- list employees.
+- budget line items.
+- list employee records from a connected construction system.
+- list accounts payable invoices from a connected construction system.
+- construction company admin using connected tools to sync financial and project data between systems.
+- create invoice
+- list timesheets.
+- invoice processing and vendor payment management.
+- list budget items.
+- list vendors
+- construction project data.
+- full construction data synchronization covering projects, budgets, contracts, invoices, timesheets, and employees.
+- employee records.
+- job costing
+- vendor records.
+- list employees
+- list projects
+- construction project tracking and management.
+- list construction projects from any connected source system via agave.
+- list timesheets
+- budget, cost code, and cost tracking for construction jobs.
+- list invoices
+- agave
+- list employee timesheets from a connected construction system.
+- ap invoices.
+- list budgets
 - list vendors.
+- create an invoice.
 slug: construction-data-sync
 source_filename: construction-data-sync.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: \"1.0.0-alpha1\"\n\ninfo:\n  label: \"Agave Construction Data Sync\"\n  description: \"Unified workflow capability for syncing construction project data across connected source systems via the Agave unified API. Enables project management, job costing, AP automation, and timesheet sync for construction software integrations.\"\n  tags:\n    - Agave\n    - Construction\n    - Integration\n    - Job Costing\n    - Invoices\n  created: \"2026-04-19\"\n  modified: \"2026-04-19\"\n\nbinds:\n  - namespace: env\n    keys:\n      AGAVE_API_KEY: AGAVE_API_KEY\n      AGAVE_SOURCE_SYSTEM_ID: AGAVE_SOURCE_SYSTEM_ID\n\ncapability:\n  consumes:\n    - import: agave-unified\n      location: ./shared/unified-api.yaml\n\n  exposes:\n    - type: rest\n      port: 8080\n      namespace: agave-sync-api\n      description: \"Unified REST API for Agave construction data synchronization.\"\n      resources:\n        - path: /v1/projects\n          name: projects\n          description: \"\
-  Construction project data.\"\n          operations:\n            - method: GET\n              name: list-projects\n              description: \"List construction projects.\"\n              call: \"agave-unified.list-projects\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/budgets\n          name: budgets\n          description: \"Budget line items.\"\n          operations:\n            - method: GET\n              name: list-budgets\n              description: \"List budget items.\"\n              call: \"agave-unified.list-budgets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/contracts\n          name: contracts\n          description: \"Prime contracts.\"\n          operations:\n            - method: GET\n              name: list-contracts\n              description: \"List contracts.\"\n              call: \"agave-unified.list-contracts\"\
-  \n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/vendors\n          name: vendors\n          description: \"Vendor records.\"\n          operations:\n            - method: GET\n              name: list-vendors\n              description: \"List vendors.\"\n              call: \"agave-unified.list-vendors\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/invoices\n          name: invoices\n          description: \"AP invoices.\"\n          operations:\n            - method: GET\n              name: list-invoices\n              description: \"List invoices.\"\n              call: \"agave-unified.list-invoices\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n            - method: POST\n              name: create-invoice\n              description: \"Create an invoice.\"\n              call: \"\
-  agave-unified.create-invoice\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/timesheets\n          name: timesheets\n          description: \"Employee timesheets.\"\n          operations:\n            - method: GET\n              name: list-timesheets\n              description: \"List timesheets.\"\n              call: \"agave-unified.list-timesheets\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n        - path: /v1/employees\n          name: employees\n          description: \"Employee records.\"\n          operations:\n            - method: GET\n              name: list-employees\n              description: \"List employees.\"\n              call: \"agave-unified.list-employees\"\n              outputParameters:\n                - type: object\n                  mapping: \"$.\"\n\n    - type: mcp\n      port: 9090\n      namespace: agave-sync-mcp\n     \
-  \ transport: http\n      description: \"MCP server for AI-assisted construction data synchronization via Agave.\"\n      tools:\n        - name: list-projects\n          description: \"List construction projects from any connected source system via Agave.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agave-unified.list-projects\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-budgets\n          description: \"List project budget line items from a connected construction system.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agave-unified.list-budgets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-contracts\n          description: \"List prime contracts from a connected construction system.\"\n          hints:\n            readOnly: true\n            destructive:\
-  \ false\n          call: \"agave-unified.list-contracts\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-vendors\n          description: \"List vendors and subcontractors from a connected construction system.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agave-unified.list-vendors\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-invoices\n          description: \"List accounts payable invoices from a connected construction system.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agave-unified.list-invoices\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: create-invoice\n          description: \"Create an AP invoice in a connected construction source system.\"\n          hints:\n            readOnly: false\n\
-  \            destructive: false\n          call: \"agave-unified.create-invoice\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-timesheets\n          description: \"List employee timesheets from a connected construction system.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agave-unified.list-timesheets\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n        - name: list-employees\n          description: \"List employee records from a connected construction system.\"\n          hints:\n            readOnly: true\n            destructive: false\n          call: \"agave-unified.list-employees\"\n          outputParameters:\n            - type: object\n              mapping: \"$.\"\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Agave Construction Data Sync\n  description: Unified workflow capability for syncing construction project data across connected source systems via the Agave\n    unified API. Enables project management, job costing, AP automation, and timesheet sync for construction software integrations.\n  tags:\n  - Agave\n  - Construction\n  - Integration\n  - Job Costing\n  - Invoices\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AGAVE_API_KEY: AGAVE_API_KEY\n    AGAVE_SOURCE_SYSTEM_ID: AGAVE_SOURCE_SYSTEM_ID\ncapability:\n  consumes:\n  - type: http\n    namespace: agave-unified\n    baseUri: https://api.agaveapi.com/v1\n    description: Agave Unified Construction API.\n    authentication:\n      type: apikey\n      key: API-Key\n      value: '{{AGAVE_API_KEY}}'\n      placement: header\n    resources:\n    - name: projects\n      path: /projects\n      description: Construction project data.\n      operations:\n\
+  \      - name: list-projects\n        method: GET\n        description: List construction projects.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: budgets\n      path: /budgets\n      description: Project budget line items.\n      operations:\n      - name: list-budgets\n        method: GET\n        description: List budget line items.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: contracts\n      path: /contracts\n      description: Prime contracts.\n      operations:\n      - name: list-contracts\n        method: GET\n        description: List prime contracts.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: vendors\n      path: /vendors\n      description: Vendor records.\n      operations:\n      - name: list-vendors\n\
+  \        method: GET\n        description: List vendors.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: invoices\n      path: /invoices\n      description: AP invoice management.\n      operations:\n      - name: list-invoices\n        method: GET\n        description: List invoices.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: create-invoice\n        method: POST\n        description: Create a new invoice.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: timesheets\n      path: /timesheets\n      description: Employee timesheets.\n      operations:\n      - name: list-timesheets\n        method: GET\n        description: List timesheets.\n        outputRawFormat: json\n        outputParameters:\n        - name:\
+  \ result\n          type: object\n          value: $.\n    - name: employees\n      path: /employees\n      description: Employee records.\n      operations:\n      - name: list-employees\n        method: GET\n        description: List employees.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: agave-sync-api\n    description: Unified REST API for Agave construction data synchronization.\n    resources:\n    - path: /v1/projects\n      name: projects\n      description: Construction project data.\n      operations:\n      - method: GET\n        name: list-projects\n        description: List construction projects.\n        call: agave-unified.list-projects\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/budgets\n      name: budgets\n      description: Budget line items.\n      operations:\n      - method: GET\n\
+  \        name: list-budgets\n        description: List budget items.\n        call: agave-unified.list-budgets\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/contracts\n      name: contracts\n      description: Prime contracts.\n      operations:\n      - method: GET\n        name: list-contracts\n        description: List contracts.\n        call: agave-unified.list-contracts\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/vendors\n      name: vendors\n      description: Vendor records.\n      operations:\n      - method: GET\n        name: list-vendors\n        description: List vendors.\n        call: agave-unified.list-vendors\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/invoices\n      name: invoices\n      description: AP invoices.\n      operations:\n      - method: GET\n        name: list-invoices\n        description: List invoices.\n        call:\
+  \ agave-unified.list-invoices\n        outputParameters:\n        - type: object\n          mapping: $.\n      - method: POST\n        name: create-invoice\n        description: Create an invoice.\n        call: agave-unified.create-invoice\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/timesheets\n      name: timesheets\n      description: Employee timesheets.\n      operations:\n      - method: GET\n        name: list-timesheets\n        description: List timesheets.\n        call: agave-unified.list-timesheets\n        outputParameters:\n        - type: object\n          mapping: $.\n    - path: /v1/employees\n      name: employees\n      description: Employee records.\n      operations:\n      - method: GET\n        name: list-employees\n        description: List employees.\n        call: agave-unified.list-employees\n        outputParameters:\n        - type: object\n          mapping: $.\n  - type: mcp\n    port: 9090\n    namespace: agave-sync-mcp\n\
+  \    transport: http\n    description: MCP server for AI-assisted construction data synchronization via Agave.\n    tools:\n    - name: list-projects\n      description: List construction projects from any connected source system via Agave.\n      hints:\n        readOnly: true\n        destructive: false\n      call: agave-unified.list-projects\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-budgets\n      description: List project budget line items from a connected construction system.\n      hints:\n        readOnly: true\n        destructive: false\n      call: agave-unified.list-budgets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-contracts\n      description: List prime contracts from a connected construction system.\n      hints:\n        readOnly: true\n        destructive: false\n      call: agave-unified.list-contracts\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name:\
+  \ list-vendors\n      description: List vendors and subcontractors from a connected construction system.\n      hints:\n        readOnly: true\n        destructive: false\n      call: agave-unified.list-vendors\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-invoices\n      description: List accounts payable invoices from a connected construction system.\n      hints:\n        readOnly: true\n        destructive: false\n      call: agave-unified.list-invoices\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: create-invoice\n      description: Create an AP invoice in a connected construction source system.\n      hints:\n        readOnly: false\n        destructive: false\n      call: agave-unified.create-invoice\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-timesheets\n      description: List employee timesheets from a connected construction system.\n      hints:\n        readOnly:\
+  \ true\n        destructive: false\n      call: agave-unified.list-timesheets\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: list-employees\n      description: List employee records from a connected construction system.\n      hints:\n        readOnly: true\n        destructive: false\n      call: agave-unified.list-employees\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/agave/refs/heads/main/capabilities/construction-data-sync.yaml
 tags:
 - Agave

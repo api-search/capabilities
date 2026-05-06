@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- get customer
-- list customers
-- mcp
-- capabilities
-- reference
 - naftiko
-- sdk
+- reference
+- list customers
+- monkcast
 - api integration
 - governance
+- get customer
+- spec-driven integration
 - ai
-- monkcast
+- mcp
+- capabilities
+- sdk
 slug: monkcast-sdk-vs-capability-reference
 source_filename: monkcast-sdk-vs-capability-reference.yaml
 source_heading: Capability Spec

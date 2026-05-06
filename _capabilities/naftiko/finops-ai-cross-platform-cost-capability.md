@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- get aws cost
-- spec-driven integration
-- get ai spend rollup
-- get azure cost
-- finops
-- mcp
-- multi-cloud
-- capabilities
-- get gcp billing
 - naftiko
+- get azure cost
+- multi-cloud
+- mcp
+- get gcp billing
+- get aws cost
 - api integration
 - governance
+- spec-driven integration
+- finops
 - ai
+- get ai spend rollup
+- capabilities
 slug: finops-ai-cross-platform-cost-capability
 source_filename: finops-ai-cross-platform-cost-capability.yaml
 source_heading: Capability Spec

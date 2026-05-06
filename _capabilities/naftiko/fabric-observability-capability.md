@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- naftiko
 - list capacities
-- spec-driven integration
+- get capacity metrics
 - microsoft fabric
 - observability
-- mcp
-- capabilities
-- get capacity metrics
-- naftiko
 - api integration
 - governance
+- spec-driven integration
 - ai
+- mcp
+- capabilities
 slug: fabric-observability-capability
 source_filename: fabric-observability-capability.yaml
 source_heading: Capability Spec

@@ -1,7 +1,6 @@
 ---
 categories: []
-consumed_apis:
-- keyspaces
+consumed_apis: []
 description: Unified workflow capability for Amazon Keyspaces combining resource management and operations.
 layout: capability
 name: Amazon Keyspaces Workflow
@@ -10,37 +9,39 @@ personas: []
 provider_name: Amazon Keyspaces
 provider_slug: amazon-keyspaces
 search_terms:
-- creates a new keyspace.
+- Administrator
+- aws
+- workflow
+- keyspaces create keyspace
+- Developer
+- wide column
+- returns a list of keyspaces.
 - tables create table
 - integrates api into applications
-- manages resources and configurations
-- managed database
-- aws
-- tables get table
-- keyspaces list keyspaces
-- unified workflow for amazon keyspaces resource management
-- Developer
-- nosql
 - amazon keyspaces
-- workflow
-- the createtable operation adds a new table to the specified keyspace.
-- returns the name and the amazon resource name (arn) of a keyspace.
-- tables list tables
-- keyspaces get keyspace
-- database
-- returns a list of keyspaces.
-- keyspaces create keyspace
-- Administrator
-- wide column
-- cassandra
-- returns a list of tables for a specified keyspace.
 - returns information about the table.
+- nosql
+- keyspaces get keyspace
+- returns a list of tables for a specified keyspace.
+- tables list tables
+- manages resources and configurations
+- database
+- creates a new keyspace.
+- cassandra
+- tables get table
+- managed database
+- returns the name and the amazon resource name (arn) of a keyspace.
+- unified workflow for amazon keyspaces resource management
+- keyspaces list keyspaces
+- the createtable operation adds a new table to the specified keyspace.
 slug: amazon-keyspaces-workflow
 source_filename: amazon-keyspaces-workflow.yaml
 source_heading: Capability Spec
-source_yaml: "naftiko: 1.0.0-alpha1\ninfo:\n  label: Amazon Keyspaces Workflow\n  description: Unified workflow capability for Amazon Keyspaces combining resource management and operations.\n  tags:\n  - Amazon Keyspaces\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-04-19'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - import: keyspaces\n    location: ./shared/keyspaces.yaml\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: keyspaces-api\n    description: REST API for Amazon Keyspaces workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: keyspaces-mcp\n    transport: http\n    description: MCP server for Amazon Keyspaces.\n    tools:\n    - name: keyspaces-create-keyspace\n      description: Creates a new keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createkeyspace\n      outputParameters:\n\
-  \      - type: object\n        mapping: $.\n    - name: keyspaces-list-keyspaces\n      description: Returns a list of keyspaces.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.listkeyspaces\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: keyspaces-get-keyspace\n      description: Returns the name and the Amazon Resource Name (ARN) of a keyspace.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.getkeyspace\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-create-table\n      description: The CreateTable operation adds a new table to the specified keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createtable\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-list-tables\n      description: Returns a list of tables for a specified keyspace.\n      hints:\n\
-  \        readOnly: true\n        idempotent: true\n      call: keyspaces.listtables\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-get-table\n      description: Returns information about the table.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.gettable\n      outputParameters:\n      - type: object\n        mapping: $.\n"
+source_yaml: "naftiko: 1.0.0-alpha2\ninfo:\n  label: Amazon Keyspaces Workflow\n  description: Unified workflow capability for Amazon Keyspaces combining resource management and operations.\n  tags:\n  - Amazon Keyspaces\n  - AWS\n  - Workflow\n  created: '2026-04-19'\n  modified: '2026-05-06'\nbinds:\n- namespace: env\n  keys:\n    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID\n    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY\ncapability:\n  consumes:\n  - type: http\n    namespace: keyspaces\n    baseUri: https://cassandra.us-east-1.amazonaws.com\n    description: Amazon Keyspaces service.\n    authentication:\n      type: apikey\n      key: Authorization\n      value: '{{AWS_ACCESS_KEY_ID}}'\n      placement: header\n    resources:\n    - name: keyspaces\n      path: /keyspaces\n      description: Cassandra keyspace management\n      operations:\n      - name: createkeyspace\n        method: POST\n        description: Creates a new keyspace.\n        outputRawFormat: json\n        outputParameters:\n\
+  \        - name: result\n          type: object\n          value: $.\n      - name: listkeyspaces\n        method: GET\n        description: Returns a list of keyspaces.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: getkeyspace\n        method: GET\n        description: Returns the name and the Amazon Resource Name (ARN) of a keyspace.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n    - name: tables\n      path: /keyspaces/{keyspaceName}/tables\n      description: Cassandra table management\n      operations:\n      - name: createtable\n        method: POST\n        description: The CreateTable operation adds a new table to the specified keyspace.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: listtables\n        method:\
+  \ GET\n        description: Returns a list of tables for a specified keyspace.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n      - name: gettable\n        method: GET\n        description: Returns information about the table.\n        outputRawFormat: json\n        outputParameters:\n        - name: result\n          type: object\n          value: $.\n  exposes:\n  - type: rest\n    port: 8080\n    namespace: keyspaces-api\n    description: REST API for Amazon Keyspaces workflow.\n    resources: []\n  - type: mcp\n    port: 9090\n    namespace: keyspaces-mcp\n    transport: http\n    description: MCP server for Amazon Keyspaces.\n    tools:\n    - name: keyspaces-create-keyspace\n      description: Creates a new keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createkeyspace\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name:\
+  \ keyspaces-list-keyspaces\n      description: Returns a list of keyspaces.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.listkeyspaces\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: keyspaces-get-keyspace\n      description: Returns the name and the Amazon Resource Name (ARN) of a keyspace.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.getkeyspace\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-create-table\n      description: The CreateTable operation adds a new table to the specified keyspace.\n      hints:\n        readOnly: false\n        idempotent: false\n      call: keyspaces.createtable\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-list-tables\n      description: Returns a list of tables for a specified keyspace.\n      hints:\n        readOnly: true\n        idempotent: true\n    \
+  \  call: keyspaces.listtables\n      outputParameters:\n      - type: object\n        mapping: $.\n    - name: tables-get-table\n      description: Returns information about the table.\n      hints:\n        readOnly: true\n        idempotent: true\n      call: keyspaces.gettable\n      outputParameters:\n      - type: object\n        mapping: $.\n"
 source_yaml_url: https://raw.githubusercontent.com/api-evangelist/amazon-keyspaces/refs/heads/main/capabilities/amazon-keyspaces-workflow.yaml
 tags:
 - Amazon Keyspaces

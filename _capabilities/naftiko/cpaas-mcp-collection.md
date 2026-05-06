@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- spec-driven integration
-- governance
-- mcp
-- cpaas
-- capabilities
 - naftiko
-- place call
-- api integration
-- send sms
 - list messages
-- ai
+- cpaas
+- api integration
+- governance
 - twilio
+- spec-driven integration
+- ai
+- mcp
+- capabilities
+- send sms
+- place call
 slug: cpaas-mcp-collection
 source_filename: cpaas-mcp-collection.yaml
 source_heading: Capability Spec
