@@ -45,41 +45,41 @@ personas: []
 provider_name: BankruptcyWatch
 provider_slug: bankruptcywatch
 search_terms:
-- automated alerts for bankruptcy filings
-- court data
-- getcasedocket
-- legal
-- Bankruptcy Attorney
-- listclaims
-- lending
 - bankruptcywatch
-- file proof of claim
-- compliance
-- delete monitor
-- getmonitor
 - business or individual owed money by a bankruptcy filer
-- list claims
-- bankruptcy case research, claims management, and automated monitoring
-- create monitor
-- pacer
-- api
-- getcase
-- bankruptcy
-- searchcases
+- getmonitor
 - get case details
-- us bankruptcy court cases and proceedings
-- deletemonitor
-- Creditor
-- attorney managing creditor representation in bankruptcy proceedings
-- fileproofofclaim
-- lender monitoring borrowers for bankruptcy filings
-- createmonitor
-- search bankruptcy cases
-- Loan Officer
-- get monitor
-- list monitors
+- list claims
+- searchcases
+- delete monitor
 - listmonitors
+- api
+- createmonitor
+- compliance
+- getcasedocket
+- list monitors
+- lender monitoring borrowers for bankruptcy filings
+- fileproofofclaim
+- bankruptcy
+- create monitor
+- Creditor
+- lending
 - get case docket
+- Bankruptcy Attorney
+- getcase
+- Loan Officer
+- pacer
+- automated alerts for bankruptcy filings
+- search bankruptcy cases
+- us bankruptcy court cases and proceedings
+- court data
+- attorney managing creditor representation in bankruptcy proceedings
+- legal
+- listclaims
+- bankruptcy case research, claims management, and automated monitoring
+- file proof of claim
+- get monitor
+- deletemonitor
 slug: bankruptcywatch-capability
 source_filename: bankruptcywatch-capability.yaml
 source_heading: Capability Spec

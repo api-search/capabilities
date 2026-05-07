@@ -249,133 +249,133 @@ personas: []
 provider_name: HashiCorp Nomad
 provider_slug: nomad
 search_terms:
-- container orchestration
-- readacltoken
-- registerjob
-- read an allocation
-- read a service
-- listjobdeployments
-- read a job summary
-- delete an acl policy
-- promote a deployment
-- list services
-- upsertaclpolicy
-- create a new evaluation for a node
-- force leave an agent
-- readnodepool
-- createnamespace
-- list allocation services
-- listnamespaces
-- list allocations for an evaluation
-- listallocationservices
-- read an evaluation
-- faildeployment
-- createnodepool
-- read a namespace
-- create or update an acl policy
-- readevaluation
-- forceleaveagent
-- list evaluations for a job
-- count evaluations
-- list namespaces
-- api
-- listjoballocations
-- drainnode
-- read a deployment
-- promotedeployment
-- list evaluations
-- create or update a namespace
-- delete a node pool
-- list allocations
-- countevaluations
-- createacltoken
-- pause or resume a deployment
-- purge a node
-- list volumes
-- listnodes
 - listvolumes
-- readaclpolicy
-- infrastructure
-- pausedeployment
-- create a new evaluation for a job
-- list job statuses
-- listjobversions
-- dispatch a parameterized job
-- listallocationchecks
-- deleteaclpolicy
-- readjob
-- listnodepools
-- nomad
-- register a new job
-- listallocations
-- readnamespace
-- listdeployments
-- read own acl token
-- dispatchjob
-- readservice
-- parsejob
-- listevaluations
-- read an acl token
-- revertjob
-- list acl tokens
-- readallocation
-- join an agent
-- listjobstatuses
-- parse a job specification
-- listjobs
-- deregister a job
-- fail a deployment
-- devops
-- read agent self
-- delete an acl token
-- set node drain mode
-- list deployment allocations
-- revert job to an older version
-- list deployments
-- deleteservice
-- listjobevaluations
-- read an acl policy
-- workload orchestration
-- joinagent
-- read a node pool
-- list acl policies
-- list allocations for a job
-- evaluatejob
-- listaclpolicies
-- list node pools
-- create an acl token
-- delete a namespace
-- set job stability
-- planjob
-- read a node
-- list jobs
-- purgenode
-- create or update a node pool
-- list versions of a job
-- deleteacltoken
-- scheduling
-- readjobsummary
-- listagentmembers
-- list agent members
-- readnode
-- list nodes
-- list allocation health checks
-- listevaluationallocations
-- deletenodepool
-- deregisterjob
 - read a job
-- deletenamespace
+- readallocation
+- readjobsummary
 - readagentself
-- listdeploymentallocations
-- setjobstability
-- plan a job update
-- readdeployment
-- delete a service registration
-- readselfacltoken
+- force leave an agent
+- read an acl token
+- faildeployment
+- readnamespace
+- list acl tokens
+- api
+- create a new evaluation for a node
+- readacltoken
+- listallocationchecks
+- create an acl token
+- list acl policies
+- upsertaclpolicy
+- countevaluations
+- purge a node
+- listallocationservices
+- readnodepool
+- read an acl policy
+- container orchestration
+- listevaluations
+- list evaluations
+- create or update an acl policy
+- deleteservice
 - listservices
+- listjobevaluations
+- list allocations for a job
+- dispatch a parameterized job
+- promote a deployment
+- deletenamespace
+- create or update a node pool
+- count evaluations
+- list allocations for an evaluation
+- readaclpolicy
+- set node drain mode
 - listacltokens
+- read a service
+- deleteaclpolicy
+- list versions of a job
+- deregisterjob
+- deregister a job
+- evaluatejob
+- list namespaces
+- list allocation services
+- revert job to an older version
+- readjob
+- read a job summary
+- scheduling
+- deletenodepool
+- listnamespaces
+- readdeployment
+- list deployment allocations
 - list deployments for a job
+- readservice
+- list deployments
+- drainnode
+- listnodepools
+- listaclpolicies
+- joinagent
+- listjobstatuses
+- promotedeployment
+- listallocations
+- set job stability
+- fail a deployment
+- createacltoken
+- deleteacltoken
+- delete an acl token
+- readnode
+- read a node
+- delete a service registration
+- create or update a namespace
+- list job statuses
+- listnodes
+- delete a node pool
+- delete a namespace
 - evaluatenode
+- infrastructure
+- delete an acl policy
+- purgenode
+- registerjob
+- createnamespace
+- list jobs
+- list evaluations for a job
+- pausedeployment
+- createnodepool
+- register a new job
+- forceleaveagent
+- list allocation health checks
+- list nodes
+- read a node pool
+- parse a job specification
+- workload orchestration
+- list agent members
+- list services
+- read own acl token
+- devops
+- parsejob
+- listdeploymentallocations
+- list allocations
+- read a namespace
+- readevaluation
+- list node pools
+- plan a job update
+- dispatchjob
+- listjobdeployments
+- listjobs
+- readselfacltoken
+- listagentmembers
+- read a deployment
+- create a new evaluation for a job
+- planjob
+- setjobstability
+- revertjob
+- read an allocation
+- listjoballocations
+- listevaluationallocations
+- pause or resume a deployment
+- read agent self
+- listdeployments
+- nomad
+- read an evaluation
+- join an agent
+- list volumes
+- listjobversions
 slug: nomad-capability
 source_filename: nomad-capability.yaml
 source_heading: Capability Spec

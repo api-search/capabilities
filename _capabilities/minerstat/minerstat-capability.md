@@ -13,13 +13,13 @@ personas: []
 provider_name: Minerstat
 provider_slug: minerstat
 search_terms:
-- minerstat
 - listpools
-- mining pools
-- cryptocurrency
-- api
-- list mining pools
 - mining
+- cryptocurrency
+- list mining pools
+- minerstat
+- mining pools
+- api
 slug: minerstat-capability
 source_filename: minerstat-capability.yaml
 source_heading: Capability Spec

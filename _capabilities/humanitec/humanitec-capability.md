@@ -249,132 +249,132 @@ personas: []
 provider_name: Humanitec
 provider_slug: humanitec
 search_terms:
-- get resource inputs for the given deployment set
-- list errors that occurred in a deployment.
-- get an artefacts versions.
-- rebase to a different deployment.
-- list all artefacts versions in the org.
-- list audit log entries by organization
-- list deltas in an application
-- deployments
-- listauditlogentries
-- create a new delta
-- get a specific automation rule for an environment.
-- update an existing automation rule for an environment.
-- list all the agents in an organization.
-- update an existing delta
-- list all automation rules in an environment.
-- listagents
-- change the name of a delta
-- list all container images
-- deletes an environment type
-- listartefactversions
-- getdiff
-- api
-- get a specific environment.
-- getworkloadartefactversionspec
-- createdeprecatedimagebuild
-- changeenvofdelta
-- listenvironments
-- listdeltas
-- get the humanitec module definition of this workload artefact version as a deployment set
-- delete an agent (and its keys) stored under an organization.
-- listdeploymenterrors
-- lists all the builds of an image
-- update the description of an agent.
-- deleteenvironment
-- listartefactversionsinorg
-- getenvironment
-- getdeprecatedimage
-- deleteagent
-- register a new agent under an organization.
-- listkeysinagent
-- register a new key under an agent in an organization.
-- get the spec of this workload artefact version
-- getworkloadartefactversiondeploymentset
-- deleteenvironmenttype
-- list all artefact versions of an artefact.
-- createkey
-- patchdelta
-- listdeprecatedimages
-- mark a delta as "archived"
-- add a new image build
-- delete an application
-- patchagent
-- get an environment type
-- listdeployments
-- createenvironmenttype
-- list deployments in an environment.
+- listautomationrules
+- listenvironmenttypes
+- get a specific deployment.
+- createagent
 - update metadata of an existing application
-- start a new deployment.
-- platform orchestrator
-- listapplications
-- register a new artefact version with your organization.
-- delete automation rule from an environment.
-- update version of an artefact.
-- createdelta
-- archivedelta
+- api
+- update an existing automation rule for an environment.
+- list deployments in an environment.
+- list all the agents in an organization.
+- get a specific image object
+- convertscoretoset
+- list deltas in an application
+- createartefactversion
+- getdiff
+- register a new key under an agent in an organization.
+- updates environment type
+- createdeprecatedimagebuild
+- getautomationrule
+- updateset
+- putdelta
+- list all container images
+- deleteartefact
+- update the description of an agent.
+- list all artefacts.
+- delete artefact and all related artefact versions
+- patchartefactversion
+- deleteenvironmenttype
+- listdeploymenterrors
+- get an artefacts versions.
+- add a new application to an organization
+- deleteenvironment
+- get the humanitec module definition of this workload artefact version as a deployment set
+- get the spec of this workload artefact version
+- rebase to a different deployment.
+- get an environment type
+- apply a deployment delta to a deployment set
+- getset
+- list all the keys registered under an agent in an organization.
+- get the difference between 2 deployment sets
+- lists all the builds of an image
+- getenvironment
 - list all applications in an organization.
-- updateenvironmenttype
-- changenameofdelta
+- add a new environment type
+- createenvironmenttype
+- getdelta
+- change the name of a delta
+- createautomationrule
+- add a new environment to an application.
+- getdeployment
+- delete automation rule from an environment.
+- getapplication
+- start a new deployment.
+- internal developer platform
+- add a new image build
+- deleteagent
+- listenvironments
+- getworkloadartefactversionspec
+- createkey
+- fetch an existing delta
+- list errors that occurred in a deployment.
+- register a new agent under an organization.
+- create a new delta
+- register a new artefact version with your organization.
+- get resource inputs for the given deployment set
+- list all automation rules in an environment.
+- listdeprecatedimages
+- archivedelta
+- deletekeyinagent
+- update an existing delta
+- get a specific automation rule for an environment.
+- list audit log entries by organization
+- listdeltas
+- deleteapplication
+- changeenvofdelta
+- getworkloadartefactversiondeploymentset
+- mark a delta as "archived"
+- rebaseenvironment
+- update a specific environment.
+- listartefactversions
+- list all artefact versions of an artefact.
+- list all environment types
+- updateenvironment
+- update version of an artefact.
+- listagents
+- convert a score specification, optional overrides, and extensions into the contents for a deployment set.
+- deleteautomationrule
+- createdelta
+- create a new automation rule for an environment.
+- patchdelta
+- listauditlogentries
+- listartefacts
+- delete a key registered under a agent.
+- platform engineering
+- devops
+- patchapplication
+- get an existing application
+- list all artefacts versions in the org.
+- get a specific environment.
+- listartefactversionsinorg
+- updateautomationrule
+- createapplication
 - createenvironment
 - delete a specific environment.
-- list all artefacts.
-- updateautomationrule
-- list all environments.
-- devops
-- platform engineering
-- get an existing application
-- convert a score specification, optional overrides, and extensions into the contents for a deployment set.
-- createartefactversion
-- convertscoretoset
-- listartefacts
-- get a specific deployment.
-- patchartefactversion
-- create a new automation rule for an environment.
-- deleteapplication
-- change the environment of a delta
-- listsets
-- fetch an existing delta
-- createagent
-- getenvironmenttype
-- get a specific image object
-- listenvironmenttypes
-- list all environment types
-- updates environment type
-- updateenvironment
-- rebaseenvironment
-- add a new environment to an application.
-- apply a deployment delta to a deployment set
-- get all deployment sets
-- createapplication
-- add a new environment type
-- getautomationrule
-- humanitec
-- createautomationrule
-- get the difference between 2 deployment sets
-- internal developer platform
-- getdelta
-- updateset
-- update a specific environment.
-- add a new application to an organization
 - getartefactversion
-- getsetresourceinputs
-- getset
-- get a deployment set
-- list all the keys registered under an agent in an organization.
-- createdeployment
-- delete a key registered under a agent.
-- getapplication
-- patchapplication
+- patchagent
 - listdeprecatedimagebuilds
-- deleteartefact
-- getdeployment
-- deleteautomationrule
-- listautomationrules
-- delete artefact and all related artefact versions
-- deletekeyinagent
-- putdelta
+- delete an agent (and its keys) stored under an organization.
+- get a deployment set
+- getdeprecatedimage
+- listsets
+- deployments
+- platform orchestrator
+- createdeployment
+- updateenvironmenttype
+- getenvironmenttype
+- listdeployments
+- getsetresourceinputs
+- delete an application
+- listapplications
+- deletes an environment type
+- change the environment of a delta
+- changenameofdelta
+- get all deployment sets
+- humanitec
+- listkeysinagent
+- list all environments.
 slug: humanitec-capability
 source_filename: humanitec-capability.yaml
 source_heading: Capability Spec

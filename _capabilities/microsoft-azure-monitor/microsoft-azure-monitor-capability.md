@@ -45,34 +45,34 @@ personas: []
 provider_name: Azure Monitor
 provider_slug: microsoft-azure-monitor
 search_terms:
-- actiongroups delete
-- monitor
-- actiongroups listbyresourcegroup
-- azure monitor update an action group
-- azure monitor send test notifications
-- azure
-- application insights
-- actiongroups get
-- metrics
-- azure monitor delete an action group
-- cloud
-- actiongroups posttestnotifications
-- logs
-- monitoring
-- azure monitor list action groups in a subscription
-- azure monitor get an action group
-- actiongroups listbysubscriptionid
-- microsoft
-- actiongroups createorupdate
-- api
-- observability
 - actiongroups enablereceiver
-- azure monitor list action groups in a resource group
-- azure monitor create or update an action group
-- azure monitor enable a receiver in an action group
-- actiongroups update
-- azure monitor get test notification results
 - actiongroups gettestnotifications
+- azure monitor update an action group
+- api
+- actiongroups get
+- actiongroups createorupdate
+- azure monitor create or update an action group
+- monitoring
+- azure monitor get test notification results
+- azure monitor enable a receiver in an action group
+- monitor
+- microsoft
+- logs
+- azure monitor delete an action group
+- actiongroups listbyresourcegroup
+- azure monitor get an action group
+- azure monitor list action groups in a resource group
+- observability
+- cloud
+- azure monitor send test notifications
+- metrics
+- actiongroups update
+- azure
+- azure monitor list action groups in a subscription
+- application insights
+- actiongroups posttestnotifications
+- actiongroups delete
+- actiongroups listbysubscriptionid
 slug: microsoft-azure-monitor-capability
 source_filename: microsoft-azure-monitor-capability.yaml
 source_heading: Capability Spec

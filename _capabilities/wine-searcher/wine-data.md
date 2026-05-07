@@ -17,24 +17,24 @@ personas: []
 provider_name: Wine-Searcher
 provider_slug: wine-searcher
 search_terms:
-- get merchant price listings for a wine
-- wine
-- get merchant listings and prices for a specific wine, sorted lowest price first
-- data
-- marketplace
-- prices
-- get wine prices
-- vintages
 - get aggregated wine data including price, score, and region
-- wine data lookup by name
-- look up a wine by name to get pricing, critic score, grape variety, and region data
-- lookup wine
-- market price listings for a specific wine
-- get wine data
+- prices
 - wine searcher
-- valuations
+- lookup wine
+- marketplace
 - merchants
+- market price listings for a specific wine
 - critics
+- wine
+- data
+- valuations
+- get wine data
+- get merchant price listings for a wine
+- get wine prices
+- look up a wine by name to get pricing, critic score, grape variety, and region data
+- wine data lookup by name
+- vintages
+- get merchant listings and prices for a specific wine, sorted lowest price first
 slug: wine-data
 source_filename: wine-data.yaml
 source_heading: Capability Spec

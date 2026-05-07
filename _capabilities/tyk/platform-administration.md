@@ -29,43 +29,43 @@ personas: []
 provider_name: Tyk
 provider_slug: tyk
 search_terms:
+- create a new organization
+- list all organizations
+- create organization
+- list all admin users
+- mdcb
+- tyk
+- platform
+- mdcb health
+- get diagnostics
+- graphql
+- open source
+- api management
+- create admin user
+- update an organization
+- get pprof diagnostic data from mdcb
+- export system
+- import system
+- data plane monitoring
+- list all connected data planes
+- list dataplanes
+- administration
+- export system configuration
+- list all connected data plane nodes
+- api gateway
+- get dataplane
+- list organizations
+- check mdcb health
+- import system configuration
+- organization management
+- admin user management
+- create an admin user
+- list admin users
 - update organization
 - delete organization
-- import system
-- list organizations
-- list all connected data plane nodes
-- mdcb
-- import system configuration
-- tyk
-- graphql
-- organization management
-- export system
-- update an organization
-- export system configuration
-- data plane monitoring
-- list all admin users
-- check mdcb health
-- open source
-- create a new organization
-- create organization
-- list all organizations
-- create an admin user
-- get dataplane
-- admin user management
-- get diagnostics
 - list all tyk organizations
-- list admin users
-- administration
-- api gateway
-- api management
-- list all connected data planes
-- delete an organization
-- mdcb health
-- platform
-- get pprof diagnostic data from mdcb
-- create admin user
-- list dataplanes
 - get details for a specific data plane
+- delete an organization
 slug: platform-administration
 source_filename: platform-administration.yaml
 source_heading: Capability Spec

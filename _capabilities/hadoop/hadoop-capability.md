@@ -77,48 +77,48 @@ personas: []
 provider_name: Apache Hadoop
 provider_slug: hadoop
 search_terms:
-- updateappstate
-- submitapp
-- hdfs
+- scheduler info
+- hadoop
 - getclusterinfo
-- listnodes
 - node details
+- updateappstate
+- getscheduler
+- api
+- update application priority
+- webhdfs delete
+- webhdfs get operations
+- application details
+- getclustermetrics
+- open source
+- getappstatistics
+- listnodes
+- cluster metrics
 - big data
+- webhdfspost
+- updateappqueue
+- webhdfsdelete
+- data processing
+- cluster info
+- update application state
+- getnode
+- hdfs
+- submit a new application
 - webhdfsput
 - getapp
-- webhdfs put operations
-- cluster metrics
-- listapps
-- listappattempts
-- getnode
-- mapreduce
-- webhdfs delete
-- update application state
-- updateappqueue
-- submit a new application
-- updateapppriority
-- list nodes
-- getscheduler
-- getappstatistics
 - webhdfsget
-- webhdfs get operations
-- open source
-- hadoop
-- api
-- getclustermetrics
+- list applications
+- application statistics
+- mapreduce
+- submitapp
 - webhdfs post operations
+- listappattempts
 - move application to a different queue
+- list nodes
+- listapps
+- webhdfs put operations
+- updateapppriority
 - distributed computing
 - list application attempts
-- webhdfspost
-- cluster info
-- update application priority
-- scheduler info
-- application details
-- webhdfsdelete
-- application statistics
-- list applications
-- data processing
 slug: hadoop-capability
 source_filename: hadoop-capability.yaml
 source_heading: Capability Spec

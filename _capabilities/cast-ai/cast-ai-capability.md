@@ -161,92 +161,92 @@ personas: []
 provider_name: CAST AI
 provider_slug: cast-ai
 search_terms:
-- workloadoptimizationapi getworkload
-- scheduledrebalancingapi createrebalancingschedul
-- cast ai drain cluster node
-- finops
-- metricsapi getworkloadmetrics
-- aienablerprovidersapi getproviders
-- cast ai upsert cluster policies
-- metricsapi getallocationgroupmetrics
-- settingsapi upsertapikeysettings
-- cast ai get agent statuses
-- clusteractionsapi ackclusteraction
-- insightsapi getcontainerimagedigests
-- metricsapi getclustermetrics
-- cast ai get allocation group metrics
+- inventoryblacklistapi addblacklist
+- scheduledrebalancingapi getrebalancingschedule
+- policiesapi getclusterpolicies
+- cast ai update node template
 - api
-- externalclusterapi deletenode
-- observability
-- nodetemplatesapi createnodetemplate
-- cast ai create rebalancing schedule
-- metricsapi getnodemetrics
-- cast ai get cluster efficiency
-- insightsapi getbestpracticesreportfilters
-- cast ai sync gcp billing data
-- cast ai list cluster nodes
-- cast ai create node configuration
+- pricingapi syncgcpbillingapidata
+- cast ai get node metrics
 - nodeconfigurationapi listconfigurations
 - cast ai get rebalancing schedule
-- autoscaling
-- clusteractionsapi ingestlogs
-- costreportsapi getclusterefficiency
-- ai
-- kubernetes
-- nodetemplatesapi deletenodetemplate
-- cast ai delete node configuration
-- cost optimization
-- cast ai get workload
-- cast ai trigger rebalancing plan
-- cast ai register llm providers
-- workloadoptimizationapi getorganizationagentstat
-- cast ai acknowledge cluster action
-- cast ai get container image digests
-- workloadoptimizationapi listworkloads
-- policiesapi getclusterpolicies
-- cast ai create node template
-- cast ai create or update api key settings
-- devops
-- cast ai get allocation group workloads efficiency
+- autoscalerapi executerebalancingplan
+- clusteractionsapi ackclusteraction
+- cloud infrastructure
 - cast ai list node configurations
+- metricsapi getclustermetrics
+- nodetemplatesapi getnodetemplate
+- hibernationschedulesapi createhibernationschedul
+- scheduledrebalancingapi createrebalancingschedul
+- settingsapi upsertapikeysettings
+- finops
+- cast ai ingest cluster controller logs
+- cast ai add to blacklist
+- costreportsapi getclusterefficiency
+- cast ai get workload metrics
+- ai
+- nodetemplatesapi updatenodetemplate
+- cost optimization
+- nodetemplatesapi deletenodetemplate
+- cast ai get node template
+- nodetemplatesapi listnodetemplates
+- cast ai get cluster efficiency
+- workloadoptimizationapi listworkloads
+- cast ai get workload
+- cast ai create hibernation schedule
+- cast ai create node template
+- cast ai get allocation group workloads efficiency
+- cast ai get agent statuses
+- cast ai list cluster nodes
+- metricsapi getworkloadmetrics
+- cast ai delete rebalancing schedule
+- cast ai list workloads
+- metricsapi getallocationgroupmetrics
+- cast ai sync gcp billing data
+- autoscaling
+- cast ai create or update api key settings
+- cast ai delete node configuration
+- cast ai get operation
+- cast ai get container image digests
+- nodeconfigurationapi createconfiguration
+- cast ai list node templates
+- nodeconfigurationapi deleteconfiguration
+- workloadoptimizationapi getorganizationagentstat
+- kubernetes
+- observability
+- cast ai drain cluster node
+- cast ai upsert cluster policies
 - cast ai get node pricing
 - cast ai get llm providers
-- nodeconfigurationapi createconfiguration
-- nodetemplatesapi updatenodetemplate
-- cast ai update node template
-- cast ai get cluster metrics
-- allocationgroupapi getallocationgroupworkloadsef
-- cast ai delete cluster node
-- cast ai delete node template
-- cast
-- nodetemplatesapi listnodetemplates
-- cast ai add to blacklist
-- autoscalerapi executerebalancingplan
 - scheduledrebalancingapi deleterebalancingschedul
-- cast ai get node template
-- externalclusterapi drainnode
-- nodeconfigurationapi deleteconfiguration
-- cast ai get best practices report filters
-- operationsapi getoperation
-- cast ai get node metrics
-- nodetemplatesapi getnodetemplate
-- cloud infrastructure
 - cast ai get cluster policies
-- pricingapi getnodepricing
-- hibernationschedulesapi createhibernationschedul
-- externalclusterapi listnodes
-- cast ai create hibernation schedule
-- cast ai get workload metrics
-- scheduledrebalancingapi getrebalancingschedule
-- pricingapi syncgcpbillingapidata
-- inventoryblacklistapi addblacklist
-- cast ai list node templates
-- cast ai delete rebalancing schedule
 - policiesapi upsertclusterpolicies
-- cast ai ingest cluster controller logs
-- cast ai get operation
+- cast ai delete node template
+- externalclusterapi deletenode
+- devops
+- cast ai get best practices report filters
+- externalclusterapi listnodes
+- cast ai trigger rebalancing plan
+- metricsapi getnodemetrics
+- insightsapi getcontainerimagedigests
+- operationsapi getoperation
+- cast ai create node configuration
+- nodetemplatesapi createnodetemplate
+- cast ai create rebalancing schedule
+- insightsapi getbestpracticesreportfilters
+- cast ai register llm providers
+- cast ai get cluster metrics
+- pricingapi getnodepricing
+- allocationgroupapi getallocationgroupworkloadsef
+- externalclusterapi drainnode
+- workloadoptimizationapi getworkload
+- clusteractionsapi ingestlogs
+- cast ai get allocation group metrics
+- aienablerprovidersapi getproviders
+- cast ai acknowledge cluster action
+- cast ai delete cluster node
+- cast
 - aienablerprovidersapi registerproviders
-- cast ai list workloads
 slug: cast-ai-capability
 source_filename: cast-ai-capability.yaml
 source_heading: Capability Spec

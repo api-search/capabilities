@@ -21,18 +21,18 @@ personas: []
 provider_name: RapiDoc
 provider_slug: rapidoc
 search_terms:
+- getapireference
+- getexamples
+- openapi
 - rapidoc
-- getquickstart
-- platform
 - web components
+- documentation
 - get rapidoc quick start guide
 - api
-- getexamples
-- getapireference
-- documentation
-- get rapidoc api reference
-- openapi
 - get rapidoc examples and demos
+- getquickstart
+- platform
+- get rapidoc api reference
 slug: rapidoc-capability
 source_filename: rapidoc-capability.yaml
 source_heading: Capability Spec

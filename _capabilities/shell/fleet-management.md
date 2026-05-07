@@ -37,52 +37,52 @@ personas: []
 provider_name: Shell
 provider_slug: shell
 search_terms:
-- find shell sites near a location
-- shell fuel and ev charging site locations
-- oil and gas
-- block or unblock a fuel card for a driver or vehicle
-- order a new fuel card for a driver or vehicle
-- block or unblock a fuel card
-- manage fleet fuel cards
-- fleet fuel invoices
-- find shell stations
-- aviation
-- loyalty
-- find shell fuel and ev charging stations near a location
 - block or unblock a card
-- update spending limits for a fuel card
-- order a new shell fuel card for a driver or vehicle
-- retrieve fleet transaction history
-- manage card spending limits
-- list fleet cards
-- gas
-- b2b
-- order fuel card
 - mobility
-- fleet management
 - transactions
-- list fleet invoices
-- block card
-- fuel
-- list all fuel cards for the fleet
-- update limits
-- list sites
-- list fuel card transactions for date range with spend analytics
-- renewable energy
-- block fuel card
-- list fuel invoices for the fleet account
-- update card spending limits
-- energy
-- list cards
-- electric vehicle charging
-- lubricants
-- list invoices
-- order card
-- update spending limits and restrictions on a fuel card
-- list fleet transactions
-- list transactions
-- fleet fuel transaction data
+- update spending limits for a fuel card
 - list all fuel cards for the fleet with status and driver information
+- list cards
+- list fuel card transactions for date range with spend analytics
+- find shell stations
+- block or unblock a fuel card for a driver or vehicle
+- order a new shell fuel card for a driver or vehicle
+- loyalty
+- update limits
+- retrieve fleet transaction history
+- find shell sites near a location
+- b2b
+- list fuel invoices for the fleet account
+- shell fuel and ev charging site locations
+- update spending limits and restrictions on a fuel card
+- manage fleet fuel cards
+- electric vehicle charging
+- list sites
+- list fleet invoices
+- list all fuel cards for the fleet
+- list fleet transactions
+- lubricants
+- find shell fuel and ev charging stations near a location
+- block or unblock a fuel card
+- block fuel card
+- energy
+- aviation
+- renewable energy
+- fleet fuel transaction data
+- fleet management
+- order card
+- order a new fuel card for a driver or vehicle
+- update card spending limits
+- oil and gas
+- gas
+- block card
+- list invoices
+- manage card spending limits
+- fuel
+- list transactions
+- list fleet cards
+- order fuel card
+- fleet fuel invoices
 slug: fleet-management
 source_filename: fleet-management.yaml
 source_heading: Capability Spec

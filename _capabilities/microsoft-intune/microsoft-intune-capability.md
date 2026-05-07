@@ -97,65 +97,65 @@ personas: []
 provider_name: Microsoft Intune
 provider_slug: microsoft-intune
 search_terms:
-- microsoft intune get device configuration
-- microsoft intune retire a device
-- mdm
-- microsoft intune update managed device
-- app protection
-- syncmanageddevice
-- resetpasscodemanageddevice
-- rebootmanageddevice
 - listmanageddevices
-- microsoft graph
-- microsoft intune create managed device
-- microsoft intune assign device configuration
-- assigndeviceconfiguration
-- microsoft intune delete managed device
-- getdevicecompliancepolicy
-- mobile device management
-- microsoft intune delete device configuration
-- azure
-- listdeviceconfigurations
-- microsoft intune reboot a device
-- compliance
-- deletedeviceconfiguration
-- security
-- microsoft intune reset device passcode
-- device configuration
-- microsoft intune schedule actions for compliance rules
-- microsoft intune sync a device
-- updatemanageddevice
-- remotelockmanageddevice
-- getmanageddevice
-- listdevicecompliancepolicies
-- updatedevicecompliancepolicy
-- mam
-- microsoft intune remote lock a device
-- api
-- microsoft intune update device compliance policy
-- intune
-- enrollment
-- mobile application management
-- microsoft intune list managed devices
-- createmanageddevice
-- getdeviceconfiguration
 - microsoft intune update device configuration
-- assigndevicecompliancepolicy
+- listdevicecompliancepolicies
+- microsoft intune update device compliance policy
+- microsoft intune list managed devices
+- microsoft intune delete managed device
+- microsoft intune delete device configuration
 - microsoft intune assign device compliance policy
-- scheduleactionsforrules
-- wipemanageddevice
-- microsoft intune list device compliance policies
-- microsoft intune get device compliance policy
-- microsoft intune delete device compliance policy
-- microsoft intune get managed device
-- deletemanageddevice
-- deletedevicecompliancepolicy
-- microsoft intune wipe a device
-- microsoft intune list device configurations
-- updatedeviceconfiguration
-- microsoft
+- getdeviceconfiguration
+- api
+- assigndeviceconfiguration
 - endpoint management
+- mobile device management
+- deletemanageddevice
+- microsoft intune update managed device
+- rebootmanageddevice
+- microsoft intune reboot a device
+- app protection
+- getmanageddevice
+- microsoft intune wipe a device
+- microsoft intune assign device configuration
+- updatedeviceconfiguration
+- microsoft intune delete device compliance policy
+- scheduleactionsforrules
+- compliance
+- mdm
+- mobile application management
+- microsoft intune schedule actions for compliance rules
+- createmanageddevice
+- getdevicecompliancepolicy
+- microsoft
+- updatemanageddevice
+- microsoft intune list device compliance policies
+- microsoft intune reset device passcode
+- microsoft intune get device configuration
+- syncmanageddevice
+- deletedevicecompliancepolicy
+- device configuration
+- wipemanageddevice
+- listdeviceconfigurations
+- microsoft intune get managed device
+- assigndevicecompliancepolicy
+- resetpasscodemanageddevice
+- remotelockmanageddevice
+- microsoft intune remote lock a device
+- enrollment
+- microsoft graph
+- microsoft intune get device compliance policy
+- deletedeviceconfiguration
+- intune
+- microsoft intune sync a device
+- mam
+- azure
+- microsoft intune create managed device
 - retiremanageddevice
+- updatedevicecompliancepolicy
+- security
+- microsoft intune list device configurations
+- microsoft intune retire a device
 slug: microsoft-intune-capability
 source_filename: microsoft-intune-capability.yaml
 source_heading: Capability Spec

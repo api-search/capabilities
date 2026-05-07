@@ -81,50 +81,50 @@ personas: []
 provider_name: OpenAI APIs
 provider_slug: openai-apis
 search_terms:
-- createassistant
-- getmessage
-- listruns
-- createthreadandrun
-- getrun
-- openai apis retrieve message
-- openai
-- language models
-- listassistants
-- submittooloutputs
-- cancelrun
-- openai apis retrieve thread
-- modifyassistant
-- apis
-- openai apis create message
-- getthread
-- openai apis retrieve assistant
-- deleteassistant
 - openai apis retrieve run
-- getassistant
-- openai apis list messages
-- openai apis modify thread
-- embeddings
-- openai apis delete thread
-- openai apis list assistants
-- speech
-- artificial intelligence
-- openai apis delete assistant
-- api
-- openai apis create assistant
-- openai apis list runs
-- openai apis create run
-- createthread
-- listmessages
-- openai apis cancel run
-- deletethread
-- openai apis create thread and run
-- createmessage
-- image generation
-- createrun
-- openai apis create thread
-- openai apis modify assistant
-- openai apis submit tool outputs
+- listruns
+- openai apis retrieve message
+- apis
+- getmessage
 - modifythread
+- openai apis list assistants
+- openai apis list messages
+- openai apis retrieve thread
+- getassistant
+- api
+- openai apis create message
+- openai apis list runs
+- openai apis create thread
+- getrun
+- openai apis modify thread
+- openai apis submit tool outputs
+- image generation
+- artificial intelligence
+- modifyassistant
+- openai apis modify assistant
+- openai
+- openai apis create assistant
+- createassistant
+- embeddings
+- createrun
+- submittooloutputs
+- language models
+- createthreadandrun
+- listassistants
+- createmessage
+- openai apis create run
+- openai apis delete assistant
+- openai apis delete thread
+- cancelrun
+- openai apis cancel run
+- openai apis retrieve assistant
+- listmessages
+- speech
+- deletethread
+- deleteassistant
+- getthread
+- createthread
+- openai apis create thread and run
 slug: openai-apis-capability
 source_filename: openai-apis-capability.yaml
 source_heading: Capability Spec

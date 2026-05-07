@@ -41,29 +41,29 @@ personas: []
 provider_name: Navis (Kaleris)
 provider_slug: navis
 search_terms:
-- getvesselvisit
 - logistics
-- listgatetransactions
-- list gate transactions
-- search container units
-- port
-- getvesselvisitunits
-- container
-- maritime
-- listholds
-- navis
-- list active holds on units
-- get active work queues
-- getunit
-- searchunits
-- api
-- get units for a vessel visit
-- get vessel visit details
-- list vessel visits
-- getworkqueues
-- terminal
 - get container unit details
+- listholds
+- terminal
+- api
+- get active work queues
+- list vessel visits
+- get units for a vessel visit
+- getworkqueues
+- searchunits
+- port
+- list gate transactions
+- list active holds on units
+- container
+- search container units
+- getunit
+- listgatetransactions
+- get vessel visit details
+- maritime
+- getvesselvisitunits
 - listvesselvisits
+- getvesselvisit
+- navis
 slug: navis-capability
 source_filename: navis-capability.yaml
 source_heading: Capability Spec

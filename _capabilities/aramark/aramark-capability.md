@@ -33,31 +33,31 @@ personas: []
 provider_name: Aramark
 provider_slug: aramark
 search_terms:
-- aramark get product data
-- tracks service delivery and organizational performance
-- facilities management
-- uniform services
-- aramark get service data
-- monitors revenue performance and profit center reporting
-- getservice
-- aramark
-- getorganization
-- getrevenuesnapshot
-- campus dining, catering, and food service operations
-- facilities operations and service tracking
-- getpointofsale
-- aramark get point of sale data
-- getprofitcenters
-- aramark get profit centers
 - builds dashboards and reports using aramark operational data
-- api
+- getpointofsale
+- food services
 - aramark get organization data
+- getservice
+- api
+- getrevenuesnapshot
+- data platform
+- tracks service delivery and organizational performance
+- monitors revenue performance and profit center reporting
+- facilities operations and service tracking
+- getproduct
+- facilities management
+- aramark
+- aramark get revenue snapshot
+- campus dining, catering, and food service operations
+- uniform services
+- aramark get profit centers
+- aramark get service data
+- aramark get product data
+- getprofitcenters
 - financial performance tracking by profit center and period
 - fortune 500
-- aramark get revenue snapshot
-- getproduct
-- data platform
-- food services
+- getorganization
+- aramark get point of sale data
 slug: aramark-capability
 source_filename: aramark-capability.yaml
 source_heading: Capability Spec

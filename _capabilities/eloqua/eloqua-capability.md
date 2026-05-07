@@ -185,100 +185,100 @@ personas: []
 provider_name: Oracle Eloqua
 provider_slug: eloqua
 search_terms:
-- oracle eloqua list syncs
-- oracle eloqua delete a contact import definition
-- oracle eloqua list contact fields
-- deletecontactimport
-- createcustomobjectimport
-- oracle eloqua update a contact export definition
-- deleteactivityexport
-- oracle eloqua delete an activity export definition
-- oracle eloqua create an activity import definition
-- updatecontactexport
-- createactivityimport
-- oracle eloqua retrieve sync rejects
-- oracle eloqua create a custom object import definition
-- listaccountexports
-- listbulkcustomobjects
-- oracle eloqua list account fields
-- getsyncdata
-- api
-- getaccountimport
-- getaccountexport
-- listsyncs
-- getactivityexport
-- oracle eloqua list account import definitions
-- deletecontactexport
-- oracle eloqua push data to a contact import
-- oracle eloqua retrieve an account import definition
-- oracle eloqua list contact export definitions
-- oracle eloqua retrieve an account export definition
-- getcontactexportdata
-- oracle eloqua push data to a custom object import
-- oracle eloqua create an activity export definition
-- createcontactimport
-- getcontactimport
-- pushcontactimportdata
-- oracle eloqua create a contact export definition
-- getcontactexport
-- deletecontactimportdata
-- oracle eloqua retrieve contact export data
-- createcustomobjectexport
-- createsync
-- oracle eloqua create an account import definition
-- marketing automation
-- crm
-- oracle eloqua delete staged contact import data
-- createaccountexport
-- deleteaccountexport
-- oracle eloqua retrieve a contact export definition
-- oracle eloqua delete an account import definition
-- listcontactfields
-- getsyncrejects
-- createcontactsyncaction
-- listcustomobjectexports
-- oracle eloqua create a sync
-- lead management
-- deleteaccountimport
-- oracle eloqua list account export definitions
-- oracle eloqua delete a contact export definition
-- eloqua
-- pushaccountimportdata
-- oracle eloqua list available custom objects
-- createactivityexport
-- oracle eloqua list activity export definitions
-- listaccountfields
-- pushcustomobjectimportdata
-- email marketing
-- oracle eloqua list contact import definitions
-- oracle eloqua update a contact import definition
-- getsynclogs
-- listcontactimports
 - listcustomobjectimports
-- deletesyncdata
+- listcontactimports
+- api
+- createcontactsyncaction
 - createaccountimport
-- createcontactexport
-- pushactivityimportdata
-- oracle eloqua create a custom object export definition
-- oracle eloqua retrieve sync logs
-- oracle eloqua delete sync data
-- oracle eloqua list custom object export definitions
-- oracle eloqua create a contact import definition
-- oracle eloqua retrieve a sync
-- oracle eloqua create a contact sync action
-- oracle eloqua retrieve an activity export definition
 - listactivityexports
-- oracle eloqua list custom object import definitions
-- oracle eloqua delete an account export definition
-- oracle eloqua push data to an activity import
-- updatecontactimport
 - getsync
-- listaccountimports
-- oracle eloqua push data to an account import
-- oracle eloqua retrieve sync data
+- deletecontactexport
+- oracle eloqua delete staged contact import data
+- listcontactfields
+- oracle eloqua list custom object export definitions
+- oracle eloqua create an account import definition
+- lead management
+- listaccountfields
 - oracle eloqua retrieve a contact import definition
-- oracle eloqua create an account export definition
+- createcustomobjectimport
+- oracle eloqua list contact fields
+- oracle eloqua list contact export definitions
+- oracle eloqua delete a contact import definition
+- listaccountimports
+- oracle eloqua retrieve sync logs
+- oracle eloqua list custom object import definitions
+- oracle eloqua list syncs
+- listsyncs
+- createcontactexport
+- oracle eloqua create a contact import definition
+- listaccountexports
+- oracle eloqua update a contact import definition
+- oracle eloqua create a custom object export definition
+- oracle eloqua list account export definitions
+- oracle eloqua delete an account export definition
+- oracle eloqua delete sync data
+- listbulkcustomobjects
+- createcustomobjectexport
+- oracle eloqua retrieve an activity export definition
+- oracle eloqua list account fields
+- createactivityexport
+- oracle eloqua create a contact sync action
+- oracle eloqua delete a contact export definition
+- oracle eloqua retrieve an account export definition
+- listcustomobjectexports
+- oracle eloqua retrieve a contact export definition
+- oracle eloqua list contact import definitions
+- deletesyncdata
+- oracle eloqua retrieve a sync
 - listcontactexports
+- oracle eloqua push data to a custom object import
+- deletecontactimport
+- createcontactimport
+- oracle eloqua create an account export definition
+- pushcustomobjectimportdata
+- oracle eloqua retrieve sync rejects
+- getcontactexport
+- oracle eloqua list activity export definitions
+- getaccountimport
+- oracle eloqua create an activity import definition
+- deleteactivityexport
+- getactivityexport
+- pushcontactimportdata
+- oracle eloqua push data to an activity import
+- getcontactexportdata
+- createsync
+- pushactivityimportdata
+- oracle eloqua list account import definitions
+- oracle eloqua create a contact export definition
+- email marketing
+- oracle eloqua delete an activity export definition
+- deleteaccountimport
+- oracle eloqua create an activity export definition
+- oracle eloqua retrieve sync data
+- getsyncdata
+- oracle eloqua delete an account import definition
+- createaccountexport
+- deletecontactimportdata
+- getsynclogs
+- crm
+- eloqua
+- createactivityimport
+- oracle eloqua update a contact export definition
+- oracle eloqua create a sync
+- oracle eloqua list available custom objects
+- getsyncrejects
+- updatecontactimport
+- pushaccountimportdata
+- oracle eloqua push data to an account import
+- oracle eloqua create a custom object import definition
+- oracle eloqua retrieve an account import definition
+- oracle eloqua retrieve contact export data
+- getaccountexport
+- marketing automation
+- oracle eloqua push data to a contact import
+- getcontactimport
+- updatecontactexport
+- deleteaccountexport
 slug: eloqua-capability
 source_filename: eloqua-capability.yaml
 source_heading: Capability Spec

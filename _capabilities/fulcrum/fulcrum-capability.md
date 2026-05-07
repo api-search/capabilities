@@ -229,123 +229,123 @@ personas: []
 provider_name: Fulcrum
 provider_slug: fulcrum
 search_terms:
-- update choice list
-- uploadsignature
-- listclassificationsets
-- listphotos
-- delete choice list
-- deleteproject
-- upload signature
-- get record
-- getrole
-- list videos
-- getchangeset
-- upload photo
-- get photo metadata
-- update classification set
-- list choice lists
-- getproject
-- listrecords
-- createclassificationset
-- list classification sets
-- listwebhooks
-- api
-- create choice list
-- executequery
-- delete project
-- createwebhook
-- list projects
-- deletelayer
-- create role
-- list signatures
-- listchangesets
-- createproject
-- update layer
-- list layers
-- fulcrum
-- delete classification set
-- createrole
-- getphoto
-- listsignatures
-- list forms
-- listchoicelists
-- delete webhook
-- list changesets
-- updateproject
 - listaudio
-- process management
-- update webhook
-- uploadvideo
-- listmemberships
-- updatelayer
-- updatemembership
-- listroles
-- listvideos
-- upload video
-- getrecord
-- update role
-- listprojects
-- create record
-- listforms
-- updateform
-- mobile
-- get form
-- updatechoicelist
-- list audio clips
-- createlayer
 - get webhook
-- delete record
-- uploadphoto
-- deleteform
-- deleterole
-- uploadaudio
-- create webhook
-- list records
-- createform
-- update project
-- create project
-- getwebhook
-- create layer
-- deleteclassificationset
-- update form
-- upload audio
-- createchoicelist
-- getclassificationset
-- getlayer
-- getchoicelist
-- deleterecord
-- field data
-- execute sql query
-- get choice list
-- list roles
-- getform
-- create form
-- geospatial
-- get role
-- listlayers
-- updatewebhook
-- download photo
-- update record
-- create classification set
-- data collection
-- get layer
-- deletechoicelist
-- updaterole
 - updaterecord
-- downloadphoto
-- get changeset
-- updateclassificationset
-- list photos
-- delete layer
-- deletewebhook
-- get project
 - createrecord
-- update membership
-- get classification set
-- delete form
+- list signatures
+- api
+- getchoicelist
+- listrecords
+- updaterole
+- listlayers
 - delete role
+- deletelayer
+- delete record
+- updatechoicelist
+- getrole
+- update choice list
+- update form
+- deleteproject
+- listvideos
+- list videos
+- upload audio
+- listclassificationsets
+- update layer
+- get choice list
+- updatemembership
+- createrole
+- field data
+- get form
+- createchoicelist
+- upload photo
+- update membership
+- list photos
+- create form
+- get record
+- listsignatures
+- updateproject
+- update record
+- list projects
+- create role
 - list webhooks
+- fulcrum
+- list changesets
+- list choice lists
+- update webhook
+- create choice list
+- listmemberships
+- list audio clips
+- list roles
+- deletechoicelist
+- getproject
+- create record
 - list memberships
+- data collection
+- uploadphoto
+- create webhook
+- getrecord
+- download photo
+- updatewebhook
+- deleteclassificationset
+- downloadphoto
+- updateform
+- get changeset
+- delete project
+- delete layer
+- list records
+- list classification sets
+- list forms
+- get project
+- listchangesets
+- update role
+- update project
+- createclassificationset
+- createproject
+- updatelayer
+- getwebhook
+- upload signature
+- delete webhook
+- uploadvideo
+- getlayer
+- execute sql query
+- mobile
+- getform
+- updateclassificationset
+- get role
+- createlayer
+- deleterole
+- create layer
+- listforms
+- createwebhook
+- get layer
+- delete choice list
+- deleterecord
+- geospatial
+- create project
+- get classification set
+- uploadsignature
+- delete classification set
+- getclassificationset
+- update classification set
+- deleteform
+- get photo metadata
+- uploadaudio
+- delete form
+- listroles
+- list layers
+- listwebhooks
+- deletewebhook
+- listprojects
+- process management
+- createform
+- upload video
+- executequery
+- getphoto
+- listphotos
+- create classification set
+- getchangeset
+- listchoicelists
 slug: fulcrum-capability
 source_filename: fulcrum-capability.yaml
 source_heading: Capability Spec

@@ -41,52 +41,52 @@ personas: []
 provider_name: Treblle
 provider_slug: treblle
 search_terms:
-- list auto-discovered endpoints from live traffic
-- get project details
-- get auto-discovered api endpoints detected from live traffic
-- run governance check
-- get or delete a specific project
-- run automated governance tests against an openapi spec
-- get full request/response details
-- get api performance analytics including request counts, error rates, and response times
-- create a new api monitoring project
 - analytics
-- manage api monitoring projects
-- developer experience
-- insights
-- browse api request logs
-- security
-- api performance analytics
-- monitoring
-- run 30+ automated governance tests against an openapi specification, scoring design, security, and performance
-- get request detail
-- list requests
-- list discovered endpoints
-- get a specific api request detail
-- documentation
-- create project
-- auto-discovered api endpoints
-- get project analytics and metrics
-- artificial intelligence
-- api governance checks
-- get analytics
-- create a new treblle api monitoring project
-- list all api monitoring projects
-- get request
-- observability
-- get full details of a specific api request including headers, body, and errors
-- get project
-- list projects
-- api intelligence
-- list all treblle api monitoring projects in the workspace
-- list endpoints
-- testing
-- platform
-- get api analytics
-- get api request logs with filtering by status code, date range, or search term
 - governance
-- list api request logs with filtering
+- developer experience
 - get details of a specific treblle monitoring project
+- get auto-discovered api endpoints detected from live traffic
+- create a new treblle api monitoring project
+- testing
+- run governance check
+- get analytics
+- platform
+- browse api request logs
+- auto-discovered api endpoints
+- get a specific api request detail
+- monitoring
+- list all api monitoring projects
+- create a new api monitoring project
+- api governance checks
+- run automated governance tests against an openapi spec
+- list all treblle api monitoring projects in the workspace
+- documentation
+- list auto-discovered endpoints from live traffic
+- artificial intelligence
+- insights
+- get api performance analytics including request counts, error rates, and response times
+- api intelligence
+- manage api monitoring projects
+- create project
+- list projects
+- observability
+- run 30+ automated governance tests against an openapi specification, scoring design, security, and performance
+- get project analytics and metrics
+- list api request logs with filtering
+- get api request logs with filtering by status code, date range, or search term
+- get request
+- get or delete a specific project
+- get project details
+- get project
+- api performance analytics
+- list requests
+- get full details of a specific api request including headers, body, and errors
+- list endpoints
+- security
+- get request detail
+- get api analytics
+- list discovered endpoints
+- get full request/response details
 slug: api-observability
 source_filename: api-observability.yaml
 source_heading: Capability Spec

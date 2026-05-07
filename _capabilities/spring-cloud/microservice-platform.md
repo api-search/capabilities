@@ -29,39 +29,39 @@ personas: []
 provider_name: Spring Cloud
 provider_slug: spring-cloud
 search_terms:
-- delete gateway route
-- distributed systems
-- java
-- list gateway routes
-- delete a gateway route
 - devops
-- platform engineering
-- spring cloud
-- create gateway route
-- get gateway route
-- gateway cache management
-- deploy gateway route
-- remove a gateway route, stopping traffic routing to that service
-- circuit breaker
-- cloud native
-- get details of a specific gateway route by id including predicates, filters, and destination uri
-- get route by id
 - individual gateway route operations
-- create a new gateway route
-- service discovery
-- refresh route cache
-- api gateway route management
-- refresh gateway
-- deploy a new route to the spring cloud gateway for routing traffic to a microservice
-- spring framework
-- api gateway
-- sync gateway config
-- inspect gateway routes
-- inspect all spring cloud gateway routes to understand current traffic routing configuration
-- remove gateway route
+- deploy gateway route
+- distributed systems
 - list all configured gateway routes
+- list gateway routes
+- create a new gateway route
+- cloud native
+- java
+- refresh gateway
 - force synchronization of the gateway route cache with current configuration
+- inspect gateway routes
+- deploy a new route to the spring cloud gateway for routing traffic to a microservice
+- remove a gateway route, stopping traffic routing to that service
+- api gateway
+- circuit breaker
+- service discovery
+- get route by id
+- inspect all spring cloud gateway routes to understand current traffic routing configuration
+- get details of a specific gateway route by id including predicates, filters, and destination uri
+- delete a gateway route
+- get gateway route
+- delete gateway route
+- spring cloud
+- refresh route cache
+- remove gateway route
+- gateway cache management
+- create gateway route
 - microservices
+- spring framework
+- sync gateway config
+- api gateway route management
+- platform engineering
 slug: microservice-platform
 source_filename: microservice-platform.yaml
 source_heading: Capability Spec

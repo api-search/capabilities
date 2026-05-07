@@ -30,18 +30,18 @@ provider_name: sec-edgar
 provider_slug: sec-edgar
 search_terms:
 - getcompanyfacts
-- fulltextsearch
-- getcompanysubmissions
-- getcompanyconcept
-- api
-- edgar
-- get company filing submission history
-- sec
-- get all xbrl facts for a company
 - get all company values for a concept in a period
-- full-text search across edgar filings
-- getxbrlframes
+- getcompanyconcept
+- get company filing submission history
+- get all xbrl facts for a company
+- getcompanysubmissions
 - get a single xbrl concept for a company
+- getxbrlframes
+- full-text search across edgar filings
+- edgar
+- api
+- fulltextsearch
+- sec
 slug: sec-edgar-capability
 source_filename: sec-edgar-capability.yaml
 source_heading: Capability Spec

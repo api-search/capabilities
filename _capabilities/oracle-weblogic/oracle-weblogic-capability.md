@@ -93,55 +93,55 @@ personas: []
 provider_name: Oracle WebLogic Server
 provider_slug: oracle-weblogic
 search_terms:
-- activatedeploymentchanges
-- startedit
-- oracle weblogic server create a sub-deployment for an application
-- startapplication
-- oracle weblogic server get application deployment details
-- listserverapplicationruntimes
-- oracle weblogic server start an edit session for deployment changes
-- getappdeploymentcreateform
-- oracle weblogic server get application deployment creation form
-- listappdeployments
-- java ee
-- middleware
-- createappsubdeployment
-- oracle weblogic server list deployment runtimes
-- oracle weblogic server list application runtimes on a server
-- undeployapplication
-- enterprise
-- stopapplication
-- oracle weblogic server update an application deployment
-- oracle weblogic server activate pending deployment changes
-- oracle weblogic server remove a shared library deployment
-- listdeploymentruntimes
-- getappdeployment
-- updateapplication
-- oracle weblogic server get deployment task status
-- oracle
-- listlibdeployments
-- redeployapplication
-- oracle weblogic server list all shared library deployments
-- api
-- listappsubdeployments
-- oracle weblogic server deploy an application
-- oracle weblogic server update application deployment configuration
-- deploylibrary
-- application server
-- oracle weblogic server list sub-deployments for an application
-- oracle weblogic server stop a deployed application
-- undeploylibrary
-- oracle weblogic server start a deployed application
-- oracle weblogic server redeploy an application
-- oracle weblogic server list all application deployments
-- oracle weblogic server undeploy an application
-- deployapplication
-- oracle weblogic server deploy a shared library
 - oracle weblogic server get shared library deployment details
+- oracle weblogic server deploy an application
+- listappdeployments
+- listdeploymentruntimes
 - getdeploymenttaskstatus
-- weblogic
-- getlibdeployment
+- oracle weblogic server start an edit session for deployment changes
+- startapplication
+- oracle weblogic server update application deployment configuration
+- oracle weblogic server activate pending deployment changes
 - updateappdeployment
+- middleware
+- api
+- startedit
+- deploylibrary
+- oracle weblogic server list all shared library deployments
+- oracle weblogic server get application deployment creation form
+- oracle weblogic server list deployment runtimes
+- oracle weblogic server deploy a shared library
+- oracle weblogic server start a deployed application
+- oracle weblogic server list sub-deployments for an application
+- getappdeployment
+- oracle weblogic server update an application deployment
+- weblogic
+- undeployapplication
+- oracle weblogic server remove a shared library deployment
+- enterprise
+- updateapplication
+- getlibdeployment
+- oracle weblogic server redeploy an application
+- stopapplication
+- deployapplication
+- listappsubdeployments
+- java ee
+- listlibdeployments
+- oracle weblogic server get application deployment details
+- undeploylibrary
+- application server
+- redeployapplication
+- oracle weblogic server undeploy an application
+- getappdeploymentcreateform
+- createappsubdeployment
+- oracle weblogic server list all application deployments
+- activatedeploymentchanges
+- oracle weblogic server get deployment task status
+- oracle weblogic server list application runtimes on a server
+- oracle weblogic server create a sub-deployment for an application
+- oracle weblogic server stop a deployed application
+- oracle
+- listserverapplicationruntimes
 slug: oracle-weblogic-capability
 source_filename: oracle-weblogic-capability.yaml
 source_heading: Capability Spec

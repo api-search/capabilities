@@ -57,62 +57,62 @@ personas: []
 provider_name: ShipStation
 provider_slug: shipstation
 search_terms:
-- get shipping rates
 - logistics
-- list shipments with carrier and tracking info
-- manage product shipping configurations
-- list third-party fulfillments
-- list shipstation orders with filters for status, date range, and store
-- void shipping label
-- import a new order into shipstation from a selling channel
-- create warehouse
-- create label
-- list shipments with carrier, tracking, and cost information
+- access customer shipping history
+- list orders with status and date filtering
 - list all warehouse locations
-- track all shipments and their status
-- list available services for a specific carrier
-- list customer records and their shipping history
+- list shipstation orders with filters for status, date range, and store
+- create order
+- add a new warehouse ship-from location
 - list all connected selling channels (shopify, amazon, ebay, etc.)
-- import an order from a selling channel
-- compare carrier rates for shipments
-- get carrier rates for a package route
-- list stores
-- list products with shipping settings
-- list all carrier accounts connected to shipstation
-- compare carrier rates for a shipment by postal code and package weight
-- labels
-- add a new warehouse location
+- manage selling channel connections
+- list products
 - list fulfillments
-- track third-party fulfillment orders
-- void a shipping label that should not be used
-- list all available carriers
-- manage warehouse fulfillment locations
+- list shipments with carrier, tracking, and cost information
 - list warehouses
+- generate a shipping label for an order using a selected carrier and service
 - generate shipping labels from multiple carriers
 - ecommerce
-- shipping
-- list carriers
-- list all configured warehouse fulfillment locations
-- manage selling channel connections
-- create order
-- view connected carrier accounts
-- list orders
-- list customers
-- list carrier services
-- add a new warehouse ship-from location
-- get rates
-- access customer shipping history
-- list products
-- warehousing
-- list orders with status and date filtering
-- create shipping label
-- generate a shipping label for an order using a selected carrier and service
 - order management
-- list products with their default shipping configurations
-- list shipments
-- manage ecommerce orders from all channels
+- create shipping label
+- create warehouse
 - list all connected stores
+- compare carrier rates for a shipment by postal code and package weight
+- list carriers
+- get carrier rates for a package route
+- get shipping rates
+- void shipping label
+- list orders
+- list carrier services
+- add a new warehouse location
+- view connected carrier accounts
+- list stores
+- void a shipping label that should not be used
+- list all carrier accounts connected to shipstation
+- list products with their default shipping configurations
+- list products with shipping settings
+- list customers
+- track third-party fulfillment orders
+- list shipments
+- list available services for a specific carrier
+- import an order from a selling channel
+- get rates
+- compare carrier rates for shipments
+- list all available carriers
+- list third-party fulfillments
+- create label
+- warehousing
+- shipping
+- track all shipments and their status
+- manage product shipping configurations
+- labels
+- list all configured warehouse fulfillment locations
+- list customer records and their shipping history
+- import a new order into shipstation from a selling channel
 - purchase a carrier shipping label for an order
+- manage warehouse fulfillment locations
+- list shipments with carrier and tracking info
+- manage ecommerce orders from all channels
 slug: ecommerce-shipping
 source_filename: ecommerce-shipping.yaml
 source_heading: Capability Spec

@@ -53,33 +53,33 @@ personas: []
 provider_name: Pitney Bowes
 provider_slug: pitney-bowes
 search_terms:
-- get oauth access token
-- pitney
-- verifyaddress
-- cancelpickup
-- createshipment
-- createmanifest
-- reprint a shipment label
-- schedulepickup
-- schedule a pickup
-- create a manifest
-- rate a parcel
-- rateparcel
-- getoauthtoken
-- track a parcel
-- mailing
-- shipping
-- api
-- bowes
-- voidshipment
-- trackparcel
-- cancel a pickup
-- retrieve transaction report
-- gettransactionreport
-- void a shipment
 - create a shipment
+- verifyaddress
+- void a shipment
+- getoauthtoken
+- api
+- trackparcel
 - reprintshipment
+- create a manifest
+- createmanifest
+- mailing
+- get oauth access token
+- cancelpickup
+- schedule a pickup
+- gettransactionreport
+- rate a parcel
+- createshipment
+- track a parcel
 - validate and suggest addresses
+- cancel a pickup
+- bowes
+- reprint a shipment label
+- retrieve transaction report
+- schedulepickup
+- pitney
+- shipping
+- voidshipment
+- rateparcel
 slug: pitney-bowes-capability
 source_filename: pitney-bowes-capability.yaml
 source_heading: Capability Spec

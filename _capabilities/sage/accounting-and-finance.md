@@ -69,66 +69,66 @@ personas: []
 provider_name: Sage
 provider_slug: sage
 search_terms:
-- get contact details
-- get details for a specific contact including balance and outstanding amounts
-- create a new purchase invoice (supplier bill) in sage accounting
-- get contact
-- create contact
-- create a new product or service
-- list bank accounts connected to the sage accounting business
-- create a new product or service in sage accounting
-- get sales invoice details
-- list customers and suppliers in sage accounting
-- update contact
+- create sales invoice
+- list sales invoices
+- record a payment received for a sales invoice
+- individual sales invoice
+- list ledger accounts
 - create a new customer or supplier contact in sage accounting
+- list sales invoices with filtering by customer, status, and date
+- get contact
+- accounting
+- create product
+- list products
+- record a payment received against a sales invoice
+- create a new purchase invoice (supplier bill) in sage accounting
+- sales invoice management
+- create contact
+- business management
+- cloud software
+- customer and supplier contact management
+- list bank accounts
+- list customers and suppliers in sage accounting
+- list bank accounts connected to the sage accounting business
+- create a new sales invoice
+- chart of accounts
+- create a new sales invoice with line items, due date, and customer reference
+- create a new customer or supplier
+- create a new purchase invoice
+- update contact details
+- product and service catalog
+- create a new product or service
+- purchase invoice (supplier bill) management
+- list purchase invoices (supplier bills) with filtering options
+- get full details of a sales invoice including line items and payment status
 - list tax rates
 - finance
-- list sales invoices with filtering by customer, status, and date
-- update contact details
-- individual sales invoice
-- tax rates
-- get full details of a sales invoice including line items and payment status
-- list bank accounts
-- accounting
-- invoicing
-- record a payment received against a sales invoice
-- list configured tax rates for invoice line items
-- list products and services
-- create purchase invoice
-- list customers and suppliers
-- chart of accounts
-- business management
-- list sales invoices filtered by customer, status, or date range
-- purchase invoice (supplier bill) management
-- erp
-- payroll
-- create a new purchase invoice
-- get sales invoice
-- create sales invoice
-- list purchase invoices
-- list ledger accounts
-- create a new sales invoice
-- create a new sales invoice with line items, due date, and customer reference
-- sales invoice management
-- create a new customer or supplier
-- list sales invoices
-- individual contact operations
-- sales invoice payments
-- payments
-- bank account management
-- list products
-- customer and supplier contact management
-- list configured tax rates
-- list chart of accounts (ledger accounts) for financial reporting
-- create product
-- list products and services in the sage catalog
 - hr
+- get details for a specific contact including balance and outstanding amounts
+- payroll
+- list sales invoices filtered by customer, status, or date range
+- list configured tax rates for invoice line items
+- individual contact operations
 - list contacts
-- record a payment received for a sales invoice
-- product and service catalog
-- list purchase invoices (supplier bills) with filtering options
-- cloud software
+- list customers and suppliers
+- tax rates
 - record sales payment
+- list configured tax rates
+- create purchase invoice
+- list purchase invoices
+- bank account management
+- list chart of accounts (ledger accounts) for financial reporting
+- create a new product or service in sage accounting
+- invoicing
+- erp
+- get sales invoice
+- payments
+- list products and services
+- get contact details
+- update contact
+- sales invoice payments
+- get sales invoice details
+- list products and services in the sage catalog
 slug: accounting-and-finance
 source_filename: accounting-and-finance.yaml
 source_heading: Capability Spec

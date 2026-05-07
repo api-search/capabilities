@@ -249,135 +249,135 @@ personas: []
 provider_name: WSO2
 provider_slug: wso2
 search_terms:
-- get throttling policies advanced
-- add a llm provider
-- post organizations
-- delete a subscription policy
-- post throttling policies application
-- get gateway instances in a gateway environment
-- get all platform gateways
-- createplatformgateway
-- get throttling deny policy conditionid
-- api
-- updatellmprovider
-- patch throttling deny policy conditionid
-- delete throttling deny policy conditionid
-- retrieve/search applications
-- delete an application throttling policy
-- get an organization
-- api management
-- get throttling policies application
-- get all advanced throttling policies
-- get an application throttling policy
-- delete organizations organizationid
-- get the organization information of the user
-- get ai service provider
-- get all registered organizations
-- throttlingpolicysearch
-- get all registered environments
-- get environments environmentid gateways
-- organizationinformation
-- delete an environment
-- put throttling policies custom ruleid
-- post throttling policies advanced
-- post throttling deny policies
-- get environments environmentid
-- add a subscription throttling policy
-- add a custom rule
-- delete an advanced throttling policy
-- importthrottlingpolicy
-- get throttling policies custom ruleid
-- get throttling policies application policyid
-- getllmprovider
-- update an organization
-- put throttling policies subscription policyid
-- delete a llm provider
-- api lifecycle
-- update a platform gateway
-- add a deny policy
-- open source
-- delete an application
-- delete throttling policies application policyid
-- deleteplatformgateway
-- get all llm providers
 - get a deny policy
-- delete environments environmentid
-- updateplatformgateway
-- delete a deny policy
-- getplatformgateways
-- put throttling policies advanced policyid
-- get all deny policies
-- update a subscription policy
-- add an environment
-- add an organizations
-- add an advanced throttling policy
-- get all custom rules
-- soap
-- update application settings
-- post environments
-- getllmproviders
-- delete applications applicationid
-- update an environment
-- regenerate registration token for a platform gateway
-- import a throttling policy
-- update an llm provider
-- get applications applicationid
-- get all ai service providers
-- get llm provider
-- delete throttling policies custom ruleid
-- get organizations organizationid
-- get an advanced throttling policy
-- get applications
-- update an ai service provider
-- add a ai service provider
-- add an application throttling policy
-- delete a platform gateway
-- get a custom rule
-- get a subscription policy
-- get throttling deny policies
-- delete a ai service provider
-- get all subscription throttling policies
-- addaiserviceprovider
-- get organizations
-- post applications applicationid change owner
-- get throttling policies custom
-- register a platform gateway
+- getllmprovider
+- post throttling deny policies
+- api
+- add a subscription throttling policy
 - get throttling policies advanced policyid
-- get throttling policies subscription
-- exportthrottlingpolicy
-- gateways
 - rest
-- update an advanced throttling policy
-- deleteaiserviceprovider
-- update a custom rule
-- delete throttling policies advanced policyid
-- export a throttling policy
-- post throttling policies custom
-- put organizations organizationid
-- updateaiserviceprovider
+- get throttling policies custom ruleid
+- api management
+- get organizations organizationid
+- update a subscription policy
+- delete an environment
+- get applications
 - getaiserviceprovider
-- graphql
-- update a deny policy
-- get environments
-- get throttling policies subscription policyid
-- change application owner
-- get the details of an application
-- post throttling policies subscription
-- put environments environmentid
-- wso2
-- delete throttling policies subscription policyid
-- addllmprovider
-- deletellmprovider
-- get all application throttling policies
-- delete an organization
-- retrieve/search throttling policies
-- getaiserviceproviders
-- regenerateplatformgatewaytoken
-- update an application throttling policy
-- delete a custom rule
-- updateapplicationsettings
-- get a gateway environment configuration
+- get throttling policies advanced
+- post organizations
+- get all deny policies
+- add a ai service provider
+- deleteaiserviceprovider
+- retrieve/search applications
 - put throttling policies application policyid
+- update an advanced throttling policy
+- patch throttling deny policy conditionid
+- api lifecycle
+- get all custom rules
+- getaiserviceproviders
+- get an advanced throttling policy
+- post throttling policies subscription
+- updatellmprovider
+- add a custom rule
+- get an application throttling policy
+- delete environments environmentid
+- organizationinformation
+- get all platform gateways
+- add an organizations
+- deleteplatformgateway
+- update a custom rule
+- get throttling policies subscription policyid
+- delete a ai service provider
+- add an application throttling policy
+- get a gateway environment configuration
+- delete throttling deny policy conditionid
+- post environments
+- update a deny policy
+- get throttling policies application policyid
+- delete throttling policies application policyid
+- regenerateplatformgatewaytoken
+- get applications applicationid
+- add an advanced throttling policy
+- delete an advanced throttling policy
+- update an ai service provider
+- update an application throttling policy
+- change application owner
+- get organizations
+- get all registered environments
+- delete an organization
+- get throttling policies custom
+- update application settings
+- add an environment
+- get gateway instances in a gateway environment
+- delete a subscription policy
+- delete a platform gateway
+- get an organization
+- getllmproviders
+- graphql
+- put throttling policies custom ruleid
+- get environments environmentid gateways
+- update an organization
+- post throttling policies application
+- updateaiserviceprovider
+- get throttling deny policy conditionid
+- get a subscription policy
+- deletellmprovider
+- delete an application throttling policy
+- add a llm provider
+- createplatformgateway
+- addllmprovider
+- get llm provider
+- get a custom rule
+- get the details of an application
+- update an environment
+- get ai service provider
+- delete organizations organizationid
+- post throttling policies advanced
+- get all application throttling policies
+- put organizations organizationid
+- get all advanced throttling policies
+- export a throttling policy
+- delete throttling policies custom ruleid
+- put environments environmentid
+- updateapplicationsettings
+- get environments environmentid
+- get throttling policies application
+- getplatformgateways
+- gateways
+- delete a custom rule
+- update a platform gateway
+- soap
+- open source
+- delete throttling policies subscription policyid
+- get all registered organizations
+- get environments
+- import a throttling policy
+- get throttling deny policies
+- post applications applicationid change owner
+- retrieve/search throttling policies
+- throttlingpolicysearch
+- update an llm provider
+- get the organization information of the user
+- put throttling policies advanced policyid
+- post throttling policies custom
+- add a deny policy
+- addaiserviceprovider
+- get all subscription throttling policies
+- get all ai service providers
+- exportthrottlingpolicy
+- put throttling policies subscription policyid
+- regenerate registration token for a platform gateway
+- delete applications applicationid
+- delete a deny policy
+- delete throttling policies advanced policyid
+- delete an application
+- get throttling policies subscription
+- wso2
+- get all llm providers
+- register a platform gateway
+- updateplatformgateway
+- importthrottlingpolicy
+- delete a llm provider
 slug: wso2-capability
 source_filename: wso2-capability.yaml
 source_heading: Capability Spec

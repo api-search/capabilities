@@ -25,21 +25,21 @@ personas: []
 provider_name: LogMeal
 provider_slug: logmeal
 search_terms:
-- retrieve ingredients for a confirmed intake
-- computer vision
-- retrieve nutritional information for a confirmed intake
+- list user food intakes
+- food
+- nutrition
 - logmeal
 - getintakeslist
-- nutrition
-- recipeingredients
-- api
 - recipenutritionalinfo
+- computer vision
 - image recognition
-- segmentationcomplete
-- list user food intakes
 - semantic tagging
-- food
+- segmentationcomplete
+- recipeingredients
+- retrieve nutritional information for a confirmed intake
+- api
 - segment and recognize foods in an image
+- retrieve ingredients for a confirmed intake
 slug: logmeal-capability
 source_filename: logmeal-capability.yaml
 source_heading: Capability Spec

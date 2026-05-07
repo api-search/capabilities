@@ -85,51 +85,51 @@ personas: []
 provider_name: Porter
 provider_slug: porter
 search_terms:
-- porter create a parameter set
-- getinstallation
-- listinstallationruns
-- porter list credential sets
-- porter get a parameter set
-- getinstallationrun
-- porter delete an installation
-- porter delete a credential set
-- getcredentialset
-- deletecredentialset
-- listrunoutputs
-- porter update an installation
-- createcredentialset
-- listcredentialsets
+- porter list parameter sets
 - devops
 - porter get a specific run
-- getparameterset
-- porter create an installation
-- porter update a credential set
+- porter delete a credential set
 - deleteinstallation
-- cnab
-- porter get a bundle
-- cloud native
-- kubernetes
-- listinstallations
-- package manager
-- createinstallation
-- porter list parameter sets
-- porter list installations
-- porter get a credential set
 - api
-- porter delete a parameter set
-- deleteparameterset
-- listbundles
-- listparametersets
-- porter
+- porter delete an installation
 - porter create a credential set
-- getbundle
+- porter get a credential set
+- porter delete a parameter set
+- cloud native
+- package manager
+- porter
+- listrunoutputs
+- listbundles
 - createparameterset
-- updatecredentialset
 - porter list runs for an installation
-- patchinstallation
-- porter list bundles
+- deleteparameterset
+- kubernetes
 - porter get an installation
+- porter create a parameter set
+- updatecredentialset
+- porter list installations
+- deletecredentialset
+- listinstallations
+- listinstallationruns
+- getcredentialset
+- createcredentialset
+- getinstallation
+- porter get a bundle
+- cnab
+- porter update an installation
 - porter list outputs for a run
+- createinstallation
+- porter list credential sets
+- listparametersets
+- listcredentialsets
+- getinstallationrun
+- porter update a credential set
+- porter list bundles
+- getparameterset
+- porter get a parameter set
+- porter create an installation
+- getbundle
+- patchinstallation
 slug: porter-capability
 source_filename: porter-capability.yaml
 source_heading: Capability Spec

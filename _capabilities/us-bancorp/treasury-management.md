@@ -37,52 +37,52 @@ personas: []
 provider_name: US Bancorp
 provider_slug: us-bancorp
 search_terms:
-- get current balances
-- corporate banking
 - rtp payment status
-- send an instant rtp payment
-- get previous balances
-- check payment status
 - send an instant rtp credit transfer payment to a recipient (irrevocable)
-- get previous day balances
-- check if a recipient bank participates in the rtp network before sending a payment
-- get previous business day account balances for reporting and reconciliation
+- get current day balances for accounts
+- previous day account balances
+- get current day balances
+- real-time payments
 - get current day account balances for up to 50 accounts for cash positioning
-- list u.s. bank corporate deposit accounts for cash position visibility
-- finance
-- send rtp payment
-- account transaction history
+- corporate deposit accounts
+- verify if receiving bank supports rtp
+- send an instant rtp payment
+- list accounts
+- get current day transactions
+- get previous day balances for accounts
 - check rtp eligibility
 - list bank accounts
-- treasury management
-- get historical transactions for an account for reconciliation and reporting
-- get current day balances
-- corporate deposit accounts
+- list u.s. bank corporate deposit accounts for cash position visibility
+- check rtp network eligibility
+- finance
+- rtp real-time payments
+- account transaction history
+- verify rtp eligibility
+- get intraday transactions for an account to monitor payment activity
 - get rtp payment status
+- consumer banking
+- current day account balances
+- corporate banking
+- get previous day balances
+- treasury management
+- send instant payment
+- open banking
+- get current balances
+- account information
+- banking
+- payments
+- get previous balances
+- get account transactions history
+- get historical transactions for an account for reconciliation and reporting
+- check payment status
 - get transactions
 - list all corporate deposit accounts
-- real-time payments
-- open banking
-- get account transactions history
-- send instant payment
-- fortune 500
-- verify if receiving bank supports rtp
-- payments
-- get account transaction history by date range
-- get previous day balances for accounts
-- current day account balances
-- get current day balances for accounts
-- list accounts
-- account information
-- get intraday transactions for an account to monitor payment activity
-- consumer banking
-- get current day transactions
-- check rtp network eligibility
-- rtp real-time payments
-- verify rtp eligibility
-- banking
+- check if a recipient bank participates in the rtp network before sending a payment
 - check the status of a previously submitted rtp payment
-- previous day account balances
+- get account transaction history by date range
+- fortune 500
+- get previous business day account balances for reporting and reconciliation
+- send rtp payment
 slug: treasury-management
 source_filename: treasury-management.yaml
 source_heading: Capability Spec

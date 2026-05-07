@@ -69,43 +69,43 @@ personas: []
 provider_name: OpenFEC
 provider_slug: open-fec
 search_terms:
-- candidate name typeahead
-- committeenames
-- listelections
-- committee financial totals
-- open
-- list committees
-- listschedulea
-- government
-- listscheduleb
-- retrieve a single committee
-- getcommittee
-- searchcandidates
-- candidatenames
-- campaign finance
 - list candidates
-- candidate financial totals
-- elections
+- federal
 - list filings
-- itemized disbursements (schedule b)
+- searchcandidates
 - api
-- committees associated with a candidate
-- election summaries by office, cycle, and district
 - getcandidatetotals
-- getcandidate
-- search candidates with principal committees
-- committee name typeahead
-- listschedulee
+- listschedulea
 - retrieve a single candidate
 - listfilings
-- listcandidates
+- search candidates with principal committees
+- candidate financial totals
+- retrieve a single committee
+- election summaries by office, cycle, and district
+- itemized disbursements (schedule b)
+- candidatenames
+- candidate name typeahead
+- committeenames
+- campaign finance
 - independent expenditures (schedule e)
-- itemized individual contributions (schedule a)
-- getcommitteetotals
-- federal
-- listcommittees
-- getcandidatecommittees
+- committee financial totals
 - fec
+- listscheduleb
+- list committees
+- listelections
+- getcandidatecommittees
+- listcandidates
+- open
+- government
+- listschedulee
+- getcommittee
+- getcandidate
+- elections
+- committee name typeahead
+- committees associated with a candidate
+- getcommitteetotals
+- itemized individual contributions (schedule a)
+- listcommittees
 slug: open-fec-capability
 source_filename: open-fec-capability.yaml
 source_heading: Capability Spec

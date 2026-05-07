@@ -89,54 +89,54 @@ personas: []
 provider_name: Greenhouse
 provider_slug: greenhouse
 search_terms:
-- get offices
-- get users
-- list offices
-- greenhouse
-- post applications id hire
-- reject application
-- list jobs
-- retrieve user
-- update candidate
-- get offices id
-- recruiting
-- get users id
-- patch applications id
-- hire application
-- ats
-- get departments
-- get candidates id
-- retrieve application
-- get jobs
-- create candidate
-- list candidates
-- patch candidates id
 - delete candidates id
-- post applications id advance
-- retrieve candidate
-- patch jobs id
-- api
-- update application
-- post candidates
-- onboarding
-- advance application
-- candidates
+- list offices
+- get jobs
+- post applications id reject
+- update job
+- list candidates
+- retrieve user
+- ats
+- create candidate
 - delete candidate
+- api
 - update user
+- get candidates id
+- list departments
+- get offices id
 - get applications
+- post applications id advance
+- post candidates
+- hr
 - patch users id
 - get applications id
-- retrieve office
-- post applications id reject
+- retrieve application
+- advance application
+- patch applications id
 - list users
-- jobs
+- update application
+- recruiting
+- patch jobs id
+- patch candidates id
+- reject application
+- hire application
+- update candidate
 - get jobs id
-- list departments
-- hr
+- list jobs
 - list applications
 - retrieve job
-- update job
+- get users id
 - get candidates
+- jobs
+- retrieve candidate
+- candidates
+- greenhouse
+- get departments
+- retrieve office
+- get users
+- get offices
+- onboarding
+- post applications id hire
 slug: greenhouse-capability
 source_filename: greenhouse-capability.yaml
 source_heading: Capability Spec

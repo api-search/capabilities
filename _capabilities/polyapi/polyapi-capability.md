@@ -205,111 +205,111 @@ personas: []
 provider_name: PolyAPI
 provider_slug: polyapi
 search_terms:
-- polyapi trigger a webhook
-- polyapi list schemas
-- listconversations
-- polyapi get a server function
-- polyapi update a webhook
-- polyapi get a webhook
-- polyapi get a conversation
-- polyapi list variables
-- deletetrigger
-- polyapi delete a conversation
-- polyapi delete a server function
-- updateschema
-- listwebhooks
-- api
-- polyapi delete an api function
-- updateapifunction
-- listtriggers
-- updatevariable
-- listenvironments
-- createwebhook
-- getjob
 - polyapi list conversations
-- polyapi get a schema
-- listserverfunctions
-- getserverfunction
-- createjob
-- triggerwebhook
-- polyapi delete a schema
-- polyapi execute an api function
-- deleteschema
-- updatejob
-- polyapi delete a client function
-- getenvironment
-- createclientfunction
-- polyapi create a conversation
-- listclientfunctions
-- deleteapifunction
-- listapifunctions
-- polyapi delete a webhook
 - polyapi update an api function
-- polyapi list triggers
-- createschema
-- polyapi delete a job
-- polyapi list client functions
-- updateserverfunction
-- pro-code api composition
-- polyapi update a variable
-- listvariables
+- polyapi get a server function
 - polyapi create a server function
-- polyapi create a trigger
-- polyapi get an api function
-- polyapi update a server function
-- polyapi create a job
-- polyapi list api functions
-- updateclientfunction
-- polyapi delete a trigger
-- polyapi get a client function
-- polyapi create a webhook
-- polyapi get a trigger
-- gettrigger
-- polyapi update a schema
-- polyapi list server functions
-- polyapi create a variable
-- deleteclientfunction
-- polyapi create an api function
-- listjobs
+- polyapi list jobs
+- api
 - getvariable
-- listschemas
+- polyapi delete a job
+- deleteschema
+- listvariables
 - deleteserverfunction
-- deleteconversation
-- polyapi create a client function
-- getconversation
-- deletevariable
-- createconversation
-- getwebhook
-- createvariable
-- orchestrations
-- integrations
-- polyapi delete a variable
-- polyapi update a client function
-- polyapi get a variable
-- polyapi execute a server function
-- polyapi update a job
-- executeserverfunction
+- polyapi list client functions
+- executeapifunction
 - getapifunction
-- microservices
-- createserverfunction
-- createapifunction
+- deleteapifunction
+- polyapi delete a schema
+- executeserverfunction
+- polyapi create a variable
+- getschema
+- updateclientfunction
+- listconversations
+- integrations
+- polyapi get an api function
+- deletevariable
+- updateschema
+- middleware
+- polyapi get a job
+- getenvironment
+- polyapi list webhooks
+- deletetrigger
+- deleteconversation
+- listapifunctions
+- updatejob
+- polyapi get a conversation
+- polyapi delete an api function
+- polyapi delete a trigger
+- gettrigger
+- createvariable
+- pro-code api composition
+- getconversation
+- polyapi create a trigger
+- createtrigger
+- listenvironments
+- getclientfunction
+- createconversation
+- polyapi delete a webhook
+- polyapi list schemas
+- listclientfunctions
+- polyapi update a schema
+- polyapi delete a client function
+- createjob
+- listserverfunctions
+- triggerwebhook
+- polyapi delete a conversation
+- polyapi update a server function
+- polyapi create a webhook
+- polyapi get a webhook
+- polyapi update a variable
 - updatewebhook
 - polyapi create a schema
-- middleware
-- getschema
+- polyapi get a variable
+- createserverfunction
+- polyapi get a trigger
 - polyapi list environments
-- polyapi update a trigger
-- polyapi list jobs
-- createtrigger
-- polyapi get an environment
-- deletewebhook
+- listschemas
 - deletejob
-- polyapi
+- polyapi update a webhook
+- getserverfunction
+- polyapi create a conversation
 - updatetrigger
-- polyapi list webhooks
-- getclientfunction
-- polyapi get a job
-- executeapifunction
+- microservices
+- polyapi delete a server function
+- polyapi trigger a webhook
+- orchestrations
+- getwebhook
+- listtriggers
+- updateserverfunction
+- polyapi list variables
+- polyapi update a client function
+- polyapi list triggers
+- polyapi get a schema
+- polyapi execute a server function
+- createclientfunction
+- updatevariable
+- polyapi get an environment
+- polyapi execute an api function
+- listjobs
+- createwebhook
+- polyapi update a job
+- polyapi
+- polyapi get a client function
+- polyapi delete a variable
+- createschema
+- updateapifunction
+- polyapi create a client function
+- createapifunction
+- polyapi create an api function
+- polyapi list server functions
+- getjob
+- polyapi update a trigger
+- listwebhooks
+- deletewebhook
+- deleteclientfunction
+- polyapi create a job
+- polyapi list api functions
 slug: polyapi-capability
 source_filename: polyapi-capability.yaml
 source_heading: Capability Spec

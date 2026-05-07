@@ -17,17 +17,17 @@ personas: []
 provider_name: Global Relay
 provider_slug: global-relay
 search_terms:
-- global relay archive a conversation
-- global
-- relay
-- uploadfile
-- api
 - archiveconversation
-- archiving
+- relay
+- global
 - compliance
-- email security
-- data retention
 - global relay upload a file attachment
+- email security
+- global relay archive a conversation
+- uploadfile
+- archiving
+- data retention
+- api
 - regulatory compliance
 slug: global-relay-capability
 source_filename: global-relay-capability.yaml

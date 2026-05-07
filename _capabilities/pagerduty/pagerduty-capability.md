@@ -249,132 +249,132 @@ personas: []
 provider_name: PagerDuty
 provider_slug: pagerduty
 search_terms:
-- listauditrecords
-- pagerduty get aggregated metrics for all escalation policies
-- getalertgroupingsetting
-- pagerduty get an alert grouping setting
-- pagerduty get aggregated escalation policy data
-- updateautomationactionsrunner
-- pagerduty get the details of an automation action / service relation
-- createbusinessservice
-- pagerduty create an automation action runner.
-- alerting
-- pagerduty get aggregated metrics for all responders
-- pagerduty associate an automation action with a service
-- postalertgroupingsettings
-- deleteautomationactionsrunner
+- getautomationaction
+- getautomationactionsactionserviceassociations
+- putalertgroupingsetting
+- createautomationactionsrunner
 - pagerduty associate an automation action with a team
-- getautomationactionsrunner
+- pagerduty test an ability
 - api
+- pagerduty list invocations
+- pagerduty get an alert grouping setting
+- pagerduty get raw incidents for a single responder_id
+- pagerduty list automation actions
+- pagerduty update an alert grouping setting
+- getanalyticsmetricsincidentsservice
+- pagerduty update an automation action runner
+- getautomationactionsactionserviceassociation
+- pagerduty get the details of a runner / team relation
+- pagerduty delete an add-on
+- deleteautomationaction
+- pagerduty associate a runner with a team
+- getanalyticsmetricsincidentsescalationpolicy
+- pagerduty get raw responses from a single incident
+- listabilities
+- createaddon
+- pagerduty get responder data aggregated by team
+- pagerduty disassociate an automation action from a service
+- pagerduty get aggregated incident data
+- getautomationactionsactionteamassociation
+- getbusinessservice
+- alerting
+- getanalyticsincidentsbyid
+- createentitytypebyidchangetags
+- pagerduty get aggregated team data
+- getautomationactionsrunner
 - pagerduty get an automation action runner
 - pagerduty update an add-on
-- getanalyticsmetricsincidentsescalationpolicy
-- pagerduty get the details of an automation action / team relation
-- getautomationactionsactionserviceassociation
-- getautomationactionsactionteamassociations
-- createbusinessserviceaccountsubscription
-- getanalyticsresponderincidents
-- getanalyticsincidentresponsesbyid
-- getanalyticsmetricsrespondersteam
-- on-call management
-- getentitytypebyidtags
-- getanalyticsmetricsincidentsteamall
-- pagerduty get tags for entities
-- getanalyticsmetricsincidentsserviceall
-- createautomationaction
-- pagerduty list installed add-ons
-- pagerduty get the details of a runner / team relation
-- pagerduty get raw data - single incident
-- updateautomationaction
-- pagerduty update an automation action runner
-- pagerduty get raw data - multiple incidents
-- pagerduty update a business service
-- pagerduty disassociate a runner from a team
-- pagerduty create an automation action
-- pagerduty create a business service
-- getautomationactionsrunnerteamassociation
-- getanalyticsmetricsincidentsteam
-- deleteautomationactionsrunnerteamassociation
-- getautomationaction
-- getanalyticsmetricsrespondersall
-- pagerduty list automation actions
-- pagerduty disassociate an automation action from a service
-- getaddon
-- getbusinessservice
-- listbusinessservices
-- updatebusinessservice
-- getanalyticsmetricsincidentsall
-- pagerduty get all service references associated with an automation action
-- listautomationactioninvocations
-- pagerduty test an ability
-- deletebusinessservice
-- listaddon
-- pagerduty get aggregated metrics for all services
-- pagerduty get aggregated team data
-- pagerduty update an alert grouping setting
-- deleteaddon
-- pagerduty associate a runner with a team
-- getautomationactionsactionserviceassociations
-- createautomationactionsrunner
-- listalertgroupingsettings
-- devops
-- pagerduty get an add-on
-- createautomationactionteamassociation
-- updateaddon
-- pagerduty assign tags
-- pagerduty get all team references associated with a runner
-- createentitytypebyidchangetags
-- putalertgroupingsetting
-- createautomationactioninvocation
-- pagerduty list invocations
-- pagerduty list abilities
-- pagerduty get aggregated metrics for all teams
-- pagerduty list alert grouping settings
-- pagerduty update an automation action
-- pagerduty get raw incidents for a single responder_id
-- pagerduty delete an alert grouping setting
-- getanalyticsmetricsincidentsservice
-- createautomationactionsrunnerteamassociation
-- incident management
 - pagerduty delete an automation action
-- getanalyticsincidentsbyid
-- pagerduty delete an automation action runner
-- pagerduty create an invocation
-- pagerduty create an alert grouping setting
-- pagerduty get all team references associated with an automation action
+- updateautomationactionsrunner
+- getaddon
+- listautomationactioninvocations
 - pagerduty disassociate an automation action from a team
-- pagerduty get an invocation
-- pagerduty list business services
-- removebusinessserviceaccountsubscription
-- pagerduty delete an add-on
-- getallautomationactions
-- pagerduty get aggregated incident data
-- pagerduty list automation action runners
-- pagerduty
-- deleteautomationactionserviceassociation
-- pagerduty delete business service account subscription
-- pagerduty list audit records
-- getanalyticsincidents
-- createautomationactionserviceassocation
-- createaddon
-- deleteautomationaction
-- getautomationactionsactionteamassociation
-- getautomationactionsrunnerteamassociations
-- getautomationactionsinvocation
-- listabilities
-- deletealertgroupingsetting
-- pagerduty get an automation action
-- pagerduty get responder data aggregated by team
-- pagerduty delete a business service
-- getautomationactionsrunners
-- pagerduty get aggregated service data
-- pagerduty get a business service
+- pagerduty associate an automation action with a service
+- pagerduty get aggregated metrics for all teams
+- getanalyticsresponderincidents
+- pagerduty get all service references associated with an automation action
+- pagerduty list abilities
+- on-call management
+- pagerduty get the details of an automation action / service relation
+- getautomationactionsrunnerteamassociation
+- pagerduty create an automation action
 - pagerduty create business service account subscription
-- getability
+- getentitytypebyidtags
+- deleteautomationactionsrunner
+- pagerduty get an automation action
+- pagerduty delete an alert grouping setting
+- pagerduty list business services
+- createautomationactionsrunnerteamassociation
 - pagerduty install an add-on
-- deleteautomationactionteamassociation
-- pagerduty get raw responses from a single incident
+- pagerduty update an automation action
+- pagerduty get a business service
+- updateaddon
+- getanalyticsmetricsrespondersall
+- getanalyticsmetricsincidentsall
+- pagerduty get all team references associated with an automation action
+- pagerduty create a business service
+- getanalyticsmetricsincidentsteam
+- pagerduty delete an automation action runner
+- pagerduty assign tags
+- pagerduty create an alert grouping setting
+- pagerduty create an invocation
+- createautomationactioninvocation
+- pagerduty list installed add-ons
+- pagerduty get aggregated metrics for all services
+- deletealertgroupingsetting
+- pagerduty list alert grouping settings
+- pagerduty get an invocation
+- pagerduty get the details of an automation action / team relation
+- updatebusinessservice
+- getautomationactionsrunners
+- deletebusinessservice
+- pagerduty get tags for entities
+- pagerduty get aggregated service data
+- pagerduty get aggregated escalation policy data
+- createautomationactionteamassociation
+- pagerduty update a business service
+- pagerduty
+- listalertgroupingsettings
+- getanalyticsincidentresponsesbyid
+- devops
+- createautomationaction
+- listaddon
+- createbusinessservice
+- postalertgroupingsettings
+- pagerduty create an automation action runner.
+- getautomationactionsrunnerteamassociations
+- getanalyticsmetricsincidentsteamall
+- getallautomationactions
+- deleteaddon
+- getalertgroupingsetting
 - getanalyticsmetricsincidentsescalationpolicyall
+- getautomationactionsactionteamassociations
+- removebusinessserviceaccountsubscription
+- pagerduty list automation action runners
+- deleteautomationactionsrunnerteamassociation
+- pagerduty get aggregated metrics for all escalation policies
+- pagerduty get an add-on
+- pagerduty get raw data - single incident
+- pagerduty delete a business service
+- listauditrecords
+- updateautomationaction
+- incident management
+- pagerduty disassociate a runner from a team
+- deleteautomationactionserviceassociation
+- getanalyticsincidents
+- getability
+- getautomationactionsinvocation
+- pagerduty delete business service account subscription
+- getanalyticsmetricsincidentsserviceall
+- getanalyticsmetricsrespondersteam
+- pagerduty get aggregated metrics for all responders
+- deleteautomationactionteamassociation
+- pagerduty get all team references associated with a runner
+- createbusinessserviceaccountsubscription
+- pagerduty list audit records
+- createautomationactionserviceassocation
+- pagerduty get raw data - multiple incidents
+- listbusinessservices
 slug: pagerduty-capability
 source_filename: pagerduty-capability.yaml
 source_heading: Capability Spec

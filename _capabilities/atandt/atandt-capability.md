@@ -26,40 +26,40 @@ provider_name: AT&T
 provider_slug: atandt
 search_terms:
 - Identity Developer
-- network
-- sms and in-app messaging services
-- Enterprise Developer
-- developer implementing frictionless mobile authentication via at&t network
-- create at&t enterprise product order
-- engineer integrating enterprise wireline services and ebonding systems
-- wireline
-- Security Developer
-- camara network-based fraud prevention using sim swap and number verification
-- oauth and network-based authentication
-- 5g
-- enterprise
-- network-based fraud detection and threat intelligence
-- sms messaging and oauth authentication for consumer and business applications
-- getproductorder
-- wireless
-- check at&t service qualification
-- developer integrating at&t enterprise connectivity and ebonding apis
-- api
-- telecommunications
-- atandt
-- mobile or web developer building consumer applications on at&t apis
-- checkservicequalification
-- device status, roaming, and qos management
-- list at&t enterprise product orders
-- broadband
-- createproductorder
 - listproductorders
-- mobile virtual network operator managing subscribers on at&t infrastructure
-- wireline service ordering and qualification
-- get at&t enterprise product order
-- App Developer
+- checkservicequalification
+- create at&t enterprise product order
+- check at&t service qualification
+- engineer integrating enterprise wireline services and ebonding systems
+- Enterprise Developer
+- api
 - fortune 100
+- mobile or web developer building consumer applications on at&t apis
+- getproductorder
+- broadband
+- get at&t enterprise product order
+- developer implementing frictionless mobile authentication via at&t network
+- telecommunications
+- list at&t enterprise product orders
+- Security Developer
+- wireline
+- App Developer
+- enterprise
+- mobile virtual network operator managing subscribers on at&t infrastructure
+- device status, roaming, and qos management
+- sms and in-app messaging services
+- network
+- sms messaging and oauth authentication for consumer and business applications
+- 5g
+- createproductorder
+- network-based fraud detection and threat intelligence
 - developer building fraud prevention and identity verification using at&t network signals
+- developer integrating at&t enterprise connectivity and ebonding apis
+- oauth and network-based authentication
+- camara network-based fraud prevention using sim swap and number verification
+- wireline service ordering and qualification
+- atandt
+- wireless
 slug: atandt-capability
 source_filename: atandt-capability.yaml
 source_heading: Capability Spec

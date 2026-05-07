@@ -33,25 +33,25 @@ personas: []
 provider_name: Global Payments
 provider_slug: global-payments
 search_terms:
-- global
-- store a payment method
-- createpaymentmethod
-- listsettlements
-- listtransactions
-- payment technology
-- list disputes
-- listpaymentmethods
-- ecommerce
-- api
 - listdisputes
-- pos
-- createtransaction
-- payments
-- list settlements
-- list transactions
-- list payment methods
-- payment processing
+- global
+- createpaymentmethod
+- api
+- ecommerce
 - create a transaction
+- list disputes
+- store a payment method
+- listpaymentmethods
+- listtransactions
+- payment processing
+- payment technology
+- list payment methods
+- list settlements
+- createtransaction
+- listsettlements
+- pos
+- payments
+- list transactions
 slug: global-payments-capability
 source_filename: global-payments-capability.yaml
 source_heading: Capability Spec

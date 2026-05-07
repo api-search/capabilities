@@ -249,127 +249,127 @@ personas: []
 provider_name: Port
 provider_slug: port
 search_terms:
-- get v1 organization
-- rename a property in a blueprint
-- post v1 entities properties history
-- get a blueprint's entity count
-- patch v1 blueprints identifier
-- post v1 actions action identifier runs
-- update a widget
-- automations
-- search entities
+- post v1 pages page identifier widgets
+- delete a widget
+- create pages in your portal
+- put v1 organization
+- get v1 blueprints blueprint identifier permissio
+- post v1 pages
+- api
+- patch a page
 - change a blueprint
+- post v1 entities search
+- put v1 blueprints blueprint identifier actions a
+- get an action/automation
+- delete v1 actions action identifier
+- port
+- get v1 pages identifier
+- patch v1 blueprints blueprint identifier propert
+- get all entities of a blueprint
+- fetch the history of an entity's properties
+- execute a self-service action
+- delete a page
+- post v1 actions action identifier runs
+- software catalog
+- change an entity
+- duplicate a page
+- aggregate entities over time
+- change an action/automation
+- create an access token
+- get v1 blueprints blueprint identifier entities
+- patch v1 pages identifier
+- get v1 blueprints blueprint identifier entities
+- post v1 auth access token
+- patch v1 actions runs run id approval
+- post v1 blueprints blueprint identifier entities
+- search a blueprint's entities
+- search entities
+- get an action run's approvers
+- rename a blueprint's relation
+- post v1 blueprints blueprint identifier bulk ent
+- delete a blueprint
+- get a blueprint's permissions
+- patch v1 blueprints blueprint identifier relatio
+- create an action/automation
+- patch v1 blueprints blueprint identifier permiss
+- get all blueprints
+- create a blueprint
+- delete v1 pages page identifier widgets widget i
+- get v1 actions runs run id approvers
+- get a page's permissions
+- delete v1 pages identifier
+- change organization details
+- get organization details
+- self-service
+- get v1 organization
+- update an entity
+- delete v1 blueprints blueprint identifier all en
+- get an entity
+- post v1 actions
+- patch v1 blueprints blueprint identifier mirror
+- internal developer portal
+- delete an entity
+- get v1 blueprints blueprint identifier actions
+- automations
+- get v1 actions runs
+- developer portals
+- put v1 blueprints blueprint identifier entities
+- get v1 actions runs run id logs
+- this route is deprecated since november 20th 2024
+- post v1 entities aggregate
+- get actions/automations
+- delete v1 blueprints blueprint identifier entiti
+- create multiple entities
+- rename a blueprint's mirror property
+- get v1 pages page identifier permissions
+- update a blueprint's permissions
+- put v1 actions action identifier
+- patch v1 blueprints blueprint identifier entitie
+- delete v1 blueprints blueprint identifier action
+- get v1 actions action identifier
+- delete multiple entities
+- post v1 entities aggregate over time
+- delete all entities of a blueprint
+- update a widget
+- post v1 blueprints blueprint identifier permissi
+- delete v1 blueprints identifier
+- delete an action/automation
+- post v1 blueprints
+- get v1 actions
+- post v1 blueprints blueprint identifier actions
+- get all pages in your portal
+- post v1 pages identifier duplicate
+- get a blueprint's entity count
+- get v1 pages
+- simulate permissions for a user
+- platform engineering
+- get a blueprint
+- update a page's permissions
+- patch v1 blueprints identifier
+- aggregate entities
+- put v1 blueprints blueprint identifier actions
+- post v1 entities properties history
+- put v1 blueprints identifier
+- patch v1 pages page identifier permissions
+- update an action run
+- get an action run's details
+- scorecards
+- get v1 blueprints identifier
+- patch v1 actions runs run id
+- get all action runs
+- create an entity
+- get v1 actions runs run id
+- get an action's run logs
+- rename a property in a blueprint
+- get v1 blueprints blueprint identifier actions a
+- approve an action run
+- post v1 actions runs run id logs
+- create a widget
+- get a page
+- update a blueprint
+- patch v1 pages page identifier widgets widget id
 - get v1 blueprints
 - add a log to an action run
-- duplicate a page
-- update an entity
-- create multiple entities
-- create pages in your portal
-- get organization details
-- post v1 entities search
-- delete v1 blueprints blueprint identifier action
-- delete v1 pages page identifier widgets widget i
-- change an action/automation
-- post v1 pages page identifier widgets
-- delete multiple entities
-- patch v1 pages page identifier widgets widget id
-- api
-- get an entity
-- scorecards
-- self-service
-- get v1 pages identifier
-- post v1 blueprints blueprint identifier bulk ent
-- delete v1 pages identifier
-- create a blueprint
-- patch v1 blueprints blueprint identifier permiss
-- post v1 blueprints blueprint identifier entities
-- get all entities of a blueprint
-- update an action run
-- put v1 blueprints blueprint identifier entities
-- get a page's permissions
-- change an entity
-- delete a page
-- put v1 blueprints identifier
-- delete v1 blueprints blueprint identifier entiti
-- get all pages in your portal
-- post v1 actions runs run id logs
-- rename a blueprint's mirror property
-- post v1 actions
-- get a blueprint's permissions
-- update a blueprint
-- patch v1 pages page identifier permissions
-- patch v1 blueprints blueprint identifier propert
-- put v1 actions action identifier
-- developer portals
-- execute a self-service action
-- get v1 blueprints blueprint identifier permissio
-- post v1 blueprints
-- update a blueprint's permissions
-- get a blueprint
-- get v1 blueprints blueprint identifier entities
-- patch a page
-- patch v1 blueprints blueprint identifier relatio
-- get v1 actions runs
-- get v1 actions runs run id
-- delete all entities of a blueprint
-- approve an action run
-- delete an entity
-- aggregate entities
-- get v1 blueprints blueprint identifier entities
-- get v1 actions action identifier
-- platform engineering
-- update a page's permissions
-- get v1 actions runs run id logs
-- delete v1 actions action identifier
-- put v1 blueprints blueprint identifier actions a
-- get v1 pages
-- get an action run's approvers
-- delete a widget
-- search a blueprint's entities
-- get all blueprints
-- create an action/automation
-- create a widget
-- post v1 blueprints blueprint identifier actions
-- get v1 blueprints identifier
-- get v1 actions runs run id approvers
-- put v1 blueprints blueprint identifier actions
-- patch v1 blueprints blueprint identifier mirror
-- post v1 auth access token
-- software catalog
-- create an access token
-- patch v1 actions runs run id
-- get v1 blueprints blueprint identifier actions a
-- delete v1 blueprints identifier
-- post v1 blueprints blueprint identifier permissi
-- get v1 pages page identifier permissions
-- internal developer portal
-- get v1 actions
-- get actions/automations
-- create an entity
-- port
-- delete a blueprint
-- delete an action/automation
-- patch v1 pages identifier
-- patch v1 actions runs run id approval
-- change organization details
-- delete v1 blueprints blueprint identifier all en
-- simulate permissions for a user
-- put v1 organization
-- this route is deprecated since november 20th 2024
-- get an action/automation
-- post v1 pages identifier duplicate
-- post v1 pages
-- get v1 blueprints blueprint identifier actions
-- get a page
-- post v1 entities aggregate over time
-- post v1 entities aggregate
-- aggregate entities over time
-- get an action's run logs
-- rename a blueprint's relation
-- get all action runs
-- get an action run's details
-- fetch the history of an entity's properties
-- patch v1 blueprints blueprint identifier entitie
 slug: port-capability
 source_filename: port-capability.yaml
 source_heading: Capability Spec

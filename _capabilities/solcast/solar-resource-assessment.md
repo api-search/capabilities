@@ -57,65 +57,65 @@ personas: []
 provider_name: Solcast
 provider_slug: solcast
 search_terms:
-- get a specific pv power site.
-- partially update a pv power site.
-- historical irradiance and weather data from 2007 onwards.
-- get historical soiling loss estimates using the kimber model. use for yield loss analysis and cleaning schedule optimization.
-- partially update an existing pv power site's specifications (e.g., update capacity or tilt after hardware changes).
-- individual pv power site management.
-- historical data
-- get tmy rooftop pv power
+- list pv power sites
+- delete a pv power site.
+- get specifications for a specific registered pv power site.
+- get historic soiling hsu
+- soiling
+- get historical irradiance and weather for up to 31 days at a time.
+- pv power
+- yield analysis
+- historical soiling loss data using kimber or hsu models.
+- get historical soiling loss estimates using the hsu model.
+- get typical meteorological year rooftop pv power data (2007-2023). use for annual yield estimation and project financing.
 - fully replace an existing pv power site's specifications.
 - irradiance
-- get historic radiation and weather
-- get specifications for a specific registered pv power site.
-- soiling
-- get historical solar irradiance and weather from 2007 to 7 days before present (up to 31 days per call). use for bankable resource assessment and p50/p90 yield studies.
-- weather
-- get tmy radiation and weather
-- create a new pv power site.
 - delete pv power site
-- manage registered pv power sites for advanced model access.
-- historical soiling loss data using kimber or hsu models.
-- typical meteorological year rooftop pv power (2007-2023).
-- historical rooftop pv power data from 2007 onwards.
-- create pv power site
-- register a new pv power site with solcast for advanced pv power model access. requires site name, latitude, and longitude.
-- get historic soiling kimber
-- get historic advanced pv power
-- get historical rooftop pv power estimated actuals from 2007 onwards. use for yield analysis and performance benchmarking.
-- permanently delete a registered pv power site.
-- list pv power sites
-- get historical irradiance and weather for up to 31 days at a time.
-- yield analysis
-- forecasting
-- typical meteorological year irradiance and weather (2007-2023).
-- get typical meteorological year irradiance and weather (2007-2023). use for long-run average yield studies and project feasibility.
-- get tmy rooftop pv power data for a location.
-- resource assessment
-- get tmy irradiance and weather for a location.
-- get typical meteorological year rooftop pv power data (2007-2023). use for annual yield estimation and project financing.
-- pv power
-- tmy
-- project finance
-- renewable energy
-- get historic rooftop pv power
-- update pv power site
-- get historical advanced pv power actuals for a registered site. use for detailed yield analysis with site-specific pv model.
-- energy
-- list all registered pv power sites for this account.
 - list all registered pv power sites.
+- get historical soiling loss estimates using the kimber model. use for yield loss analysis and cleaning schedule optimization.
+- typical meteorological year rooftop pv power (2007-2023).
+- individual pv power site management.
 - patch pv power site
-- get historical advanced pv power actuals for a registered site.
-- get historical rooftop pv power estimated actuals for a location.
-- get historical soiling loss estimates using the hsu model.
-- get historic soiling hsu
-- historical advanced pv power data for registered sites.
-- delete a pv power site.
+- get historic soiling kimber
+- get historic rooftop pv power
+- get tmy radiation and weather
+- forecasting
+- historical irradiance and weather data from 2007 onwards.
+- partially update an existing pv power site's specifications (e.g., update capacity or tilt after hardware changes).
+- get historic radiation and weather
+- get a specific pv power site.
+- get historical advanced pv power actuals for a registered site. use for detailed yield analysis with site-specific pv model.
+- permanently delete a registered pv power site.
+- resource assessment
+- create pv power site
 - get historical soiling loss using the kimber model.
-- fully overwrite a pv power site.
-- get pv power site
+- get historical advanced pv power actuals for a registered site.
+- energy
+- partially update a pv power site.
+- historical data
+- renewable energy
+- get historic advanced pv power
 - solar
+- get typical meteorological year irradiance and weather (2007-2023). use for long-run average yield studies and project feasibility.
+- update pv power site
+- get tmy rooftop pv power data for a location.
+- get historical solar irradiance and weather from 2007 to 7 days before present (up to 31 days per call). use for bankable resource assessment and p50/p90 yield studies.
+- list all registered pv power sites for this account.
+- register a new pv power site with solcast for advanced pv power model access. requires site name, latitude, and longitude.
+- get tmy irradiance and weather for a location.
+- historical rooftop pv power data from 2007 onwards.
+- historical advanced pv power data for registered sites.
+- typical meteorological year irradiance and weather (2007-2023).
+- get pv power site
+- fully overwrite a pv power site.
+- get historical rooftop pv power estimated actuals from 2007 onwards. use for yield analysis and performance benchmarking.
+- project finance
+- get historical rooftop pv power estimated actuals for a location.
+- weather
+- get tmy rooftop pv power
+- manage registered pv power sites for advanced model access.
+- create a new pv power site.
+- tmy
 slug: solar-resource-assessment
 source_filename: solar-resource-assessment.yaml
 source_heading: Capability Spec

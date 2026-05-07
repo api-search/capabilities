@@ -17,21 +17,21 @@ personas: []
 provider_name: Google Cloud Text-To-Speech
 provider_slug: google-cloud-text-to-speech
 search_terms:
-- to
 - text
+- synthesizespeech
 - machine learning
+- google
+- speech synthesis
+- to
+- google cloud text-to-speech list available voices
+- google cloud
+- text-to-speech
+- speech
+- api
 - cloud
 - listvoices
-- google
-- api
-- google cloud text-to-speech list available voices
 - google cloud text-to-speech synthesize speech
 - audio
-- text-to-speech
-- google cloud
-- speech
-- synthesizespeech
-- speech synthesis
 slug: google-cloud-text-to-speech-capability
 source_filename: google-cloud-text-to-speech-capability.yaml
 source_heading: Capability Spec

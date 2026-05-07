@@ -33,29 +33,29 @@ personas: []
 provider_name: Google Cloud Assured Workloads
 provider_slug: google-cloud-assured-workloads
 search_terms:
-- google cloud assured workloads delete a workload
-- listworkloads
-- google cloud assured workloads create a workload
-- cloud
-- google
-- compliance
-- google cloud assured workloads list violations
-- fedramp
+- listviolations
+- governance
 - regulatory
 - google cloud assured workloads update a workload
-- google cloud assured workloads list workloads
 - updateworkload
-- api
-- workloads
-- createworkload
-- hipaa
-- governance
-- getworkload
-- google cloud assured workloads get a workload
-- listviolations
-- data residency
-- deleteworkload
 - assured
+- getworkload
+- google cloud assured workloads create a workload
+- api
+- google cloud assured workloads get a workload
+- google cloud assured workloads delete a workload
+- createworkload
+- compliance
+- hipaa
+- fedramp
+- google
+- cloud
+- deleteworkload
+- google cloud assured workloads list workloads
+- listworkloads
+- workloads
+- google cloud assured workloads list violations
+- data residency
 slug: google-cloud-assured-workloads-capability
 source_filename: google-cloud-assured-workloads-capability.yaml
 source_heading: Capability Spec

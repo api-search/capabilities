@@ -67,100 +67,100 @@ personas:
 provider_name: Google Analytics
 provider_slug: google-analytics
 search_terms:
-- list conversion events on a property
 - create a ga4 property
-- list data streams
-- platform engineer
-- search change history events
-- reporting
-- analytics
-- list conversion events
-- create a conversion event
-- data protection engineer
-- create a conversion event on a property
-- extracts insights from ga4 data through reports and explorations.
-- audits data access and monitors configuration changes.
-- analytics administrator
-- create a custom dimension on a property
-- create data stream
 - implements privacy-compliant data handling and deletion workflows.
-- segmenting and exporting user populations for analysis and activation.
-- data
-- create property
-- create a custom metric
-- list summaries of all accessible accounts with their properties
-- compliance team
-- bi engineer
+- manage ga4 accounts
+- implements server-side event tracking and offline data collection.
+- manage custom metrics
+- list accounts
+- list conversion events
+- integrates ga4 with other platforms and manages infrastructure.
 - list all accessible accounts
 - managing data privacy, deletion, and access auditing.
-- server-side event tracking with data stream and secret management.
-- manage custom dimensions
-- create, export, and query ga4 audience segments.
-- list summaries of all accessible accounts
-- list custom dimensions
-- privacy officer
-- metrics
-- integrates ga4 with other platforms and manages infrastructure.
-- manage data streams
-- run standard, realtime, pivot, and batch reports with data access auditing.
-- create a data stream
-- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
-- sets up and maintains ga4 accounts, properties, and configurations.
-- connects advertising platforms and implements server-side tracking.
-- admin
-- search change history
-- list ga4 properties
-- ingesting events from servers, apps, and offline sources.
-- acknowledge terms of user data collection for a property
-- search through all changes to an account or its children
-- request a ticket for creating a new account
-- user data deletion, access auditing, and data collection acknowledgement.
-- google analytics
-- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
-- querying and analyzing ga4 event data through various report types.
-- acknowledge user data collection
-- list properties
-- configuration
-- create a new data stream on a property
-- create conversion event
-- web analytics
-- machine learning
-- manage ga4 properties
-- create custom dimension
-- provision account ticket
-- measures campaign performance, segments audiences, and tracks conversions.
-- manages data privacy compliance including gdpr deletion requests.
-- list custom metrics on a property
-- create custom metric
-- create a custom dimension
-- manage custom metrics
-- list custom metrics
-- data analyst
-- ga4
-- archive a custom metric on a property
-- search through account changes
-- marketing team
-- backend engineer
-- connecting ga4 with advertising, app, and measurement platforms.
 - google
+- audits data access and monitors configuration changes.
+- view account summaries
+- list ga4 properties
+- machine learning
+- connecting ga4 with advertising, app, and measurement platforms.
+- list account summaries
+- create data stream
+- extracts insights from ga4 data through reports and explorations.
+- search through all changes to an account or its children
+- run standard, realtime, pivot, and batch reports with data access auditing.
+- create property
+- request a ticket for creating a new account
+- create, export, and query ga4 audience segments.
+- list custom dimensions on a property
+- setting up and maintaining ga4 account and property structure.
+- create a data stream
+- list custom dimensions
+- acknowledge terms of user data collection for a property
+- bi engineer
+- ingesting events from servers, apps, and offline sources.
+- list ga4 properties for an account
+- compliance team
+- configuration
+- create a conversion event
+- list conversion events on a property
+- list data streams
+- create custom dimension
+- user data deletion, access auditing, and data collection acknowledgement.
+- ga4
+- server-side event tracking with data stream and secret management.
+- archive custom metric
+- metrics
+- create a custom dimension
+- analytics administrator
+- measures campaign performance, segments audiences, and tracks conversions.
+- create a conversion event on a property
+- attribution
+- create a custom metric on a property
+- web analytics
+- manage conversion events
+- create custom metric
+- provision account ticket
+- list summaries of all accessible accounts
+- list properties
+- management
+- create a custom dimension on a property
+- manage ga4 properties
+- list data streams on a property
+- google analytics
+- list custom metrics on a property
+- create a new data stream on a property
+- data protection engineer
+- list summaries of all accessible accounts with their properties
+- search change history events
+- reporting
+- manage data streams
+- analytics
+- sets up and maintains ga4 accounts, properties, and configurations.
+- search through account changes
+- manage custom dimensions
+- platform engineer
+- admin
+- create a custom metric
+- list custom metrics
+- marketing ops
+- archive a custom metric on a property
+- segmenting and exporting user populations for analysis and activation.
+- privacy officer
 - create a new ga4 property
 - builds automated reporting pipelines and dashboards from ga4 data.
-- list custom dimensions on a property
-- implements server-side event tracking and offline data collection.
-- manage conversion events
-- archive custom metric
-- attribution
-- setting up and maintaining ga4 account and property structure.
-- manage ga4 accounts
-- list ga4 properties for an account
-- create a custom metric on a property
+- acknowledge user data collection
+- querying and analyzing ga4 event data through various report types.
+- manages data privacy compliance including gdpr deletion requests.
+- connect ga4 with firebase, google ads, and manage measurement protocol secrets.
+- search change history
+- manage accounts, properties, data streams, custom dimensions/metrics, and conversion events.
+- connects advertising platforms and implements server-side tracking.
+- marketing team
+- data
+- create conversion event
 - list all accessible google analytics accounts
-- list account summaries
-- management
-- marketing ops
-- list data streams on a property
-- list accounts
-- view account summaries
+- data analyst
+- backend engineer
 slug: configuration-management
 source_filename: configuration-management.yaml
 source_heading: Capability Spec

@@ -57,56 +57,56 @@ personas: []
 provider_name: Sonatype Nexus
 provider_slug: sonatype-nexus
 search_terms:
+- delete an asset by id
+- get details for a specific repository
+- devops
+- get details for a specific asset by id
+- delete repository
 - get component
+- component and asset search
+- search assets
+- get a single asset by id
+- delete a repository by name
+- list all nexus repositories
+- repository management and configuration
+- components
+- software component lifecycle management
+- invalidate the cache for a proxy or group repository
+- npm
+- get repository
+- search for binary assets across repositories
+- list assets in a repository
+- package management
+- list all repositories
+- maven
 - software supply chain
+- get a single component by id
+- delete a repository
+- search components
+- search for components across nexus repositories by name, version, format, or query
+- invalidate repository cache
+- get details for a specific component by id
+- delete a component by id
+- list binary assets in a repository
+- invalidate cache
+- repository
+- search for components across repositories
+- delete an asset
+- binary asset management
 - get repository details by name
 - delete component
-- get repository
-- software component lifecycle management
-- invalidate cache
-- list components
+- artifact management
+- list components in a repository
+- delete a component
+- get asset
+- sonatype nexus
 - assets
 - search for assets
-- search components
-- delete a repository by name
-- get asset
-- delete an asset by id
-- devops
-- search for components across nexus repositories by name, version, format, or query
-- list repositories
-- sonatype nexus
-- package management
-- binary asset management
-- delete an asset
-- delete asset
 - docker
-- search for components across repositories
-- list all nexus repositories
-- get details for a specific component by id
-- component and asset search
-- npm
-- get details for a specific repository
-- delete a repository
-- delete a component by id
-- get a single asset by id
-- repository
+- list repositories
 - list assets
-- search assets
-- invalidate the cache for a proxy or group repository
-- get a single component by id
-- list assets in a repository
-- maven
-- invalidate repository cache
-- list binary assets in a repository
-- list components in a repository
-- repository management and configuration
-- delete a component
-- search for binary assets across repositories
-- delete repository
-- list all repositories
-- get details for a specific asset by id
-- artifact management
-- components
+- delete asset
+- list components
 slug: artifact-management
 source_filename: artifact-management.yaml
 source_heading: Capability Spec

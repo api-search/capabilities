@@ -9,10 +9,10 @@ personas: []
 provider_name: BJ's Wholesale Club
 provider_slug: bjs-wholesale-club
 search_terms:
-- wholesale
 - ecommerce
-- membership
 - retail
+- wholesale
+- membership
 slug: bjs-wholesale-club
 source_filename: bjs-wholesale-club.yaml
 source_heading: Capability Spec

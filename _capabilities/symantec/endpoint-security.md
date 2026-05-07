@@ -29,32 +29,32 @@ personas: []
 provider_name: Symantec
 provider_slug: symantec
 search_terms:
+- single computer management
 - symantec
+- create group
 - list computers
+- list groups
+- search for specific computers by hostname in sepm
 - sepm administrator accounts
-- list all sepm groups with computer counts and policy settings
-- edr
 - sepm group management
-- dlp
-- broadcom
-- create a new computer group in sepm for policy segmentation
-- security
-- list all endpoints managed by sepm with status, os, sep version, and last scan time
-- endpoint protection
-- groups
-- sepm
-- remove computer
+- search computers by name
 - list administrators
-- security operations
 - endpoint security
 - list all sepm administrator accounts and their roles
-- manage protected endpoint computers
-- list groups
+- broadcom
+- list all endpoints managed by sepm with status, os, sep version, and last scan time
+- security operations
+- dlp
+- groups
+- list all sepm groups with computer counts and policy settings
+- sepm
+- edr
+- create a new computer group in sepm for policy segmentation
 - cybersecurity
-- search computers by name
-- single computer management
-- search for specific computers by hostname in sepm
-- create group
+- manage protected endpoint computers
+- endpoint protection
+- security
+- remove computer
 slug: endpoint-security
 source_filename: endpoint-security.yaml
 source_heading: Capability Spec

@@ -21,39 +21,39 @@ personas: []
 provider_name: agrio
 provider_slug: agrio
 search_terms:
-- get credit
-- list crops
 - account credit management.
-- agrio
-- list supported crops
-- Crop Advisor
 - ai diagnosis
-- Precision Agriculture Developer
-- supported crop catalog.
-- ai
-- list all supported crop types.
+- crop advisory
 - Agronomist
-- check remaining api credits for plant diagnosis requests.
-- get current credit balance.
-- diagnose plant diseases and pests from an uploaded image.
-- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
-- diagnose plant disease
-- field specialists diagnosing plant health issues in crops
-- crop protection
-- ai-powered plant disease diagnosis and crop advisory
 - credit balance and api usage monitoring
+- ai
+- submit a plant image for ai-powered diagnosis of diseases, pests, and nutrient deficiencies. returns ranked diagnoses with confidence scores and scientific names.
 - pest detection
 - disease and pest identification from plant images
-- check credit balance
-- crop advisory
-- agricultural consultants providing plant health recommendations
-- diagnose
-- plant health diagnosis.
-- developers building crop advisory and farm management applications
-- supported crop types for diagnosis
+- crop protection
+- get current credit balance.
 - agriculture
 - list all crop types supported by agrio's ai diagnosis service.
+- agricultural consultants providing plant health recommendations
+- diagnose plant disease
+- developers building crop advisory and farm management applications
+- agrio
+- diagnose
+- ai-powered plant disease diagnosis and crop advisory
+- get credit
+- check credit balance
 - plant disease
+- list supported crops
+- plant health diagnosis.
+- Crop Advisor
+- supported crop types for diagnosis
+- diagnose plant diseases and pests from an uploaded image.
+- field specialists diagnosing plant health issues in crops
+- list crops
+- Precision Agriculture Developer
+- check remaining api credits for plant diagnosis requests.
+- list all supported crop types.
+- supported crop catalog.
 slug: crop-protection
 source_filename: crop-protection.yaml
 source_heading: Capability Spec

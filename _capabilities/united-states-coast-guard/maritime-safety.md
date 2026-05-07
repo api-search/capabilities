@@ -37,43 +37,43 @@ personas: []
 provider_name: United States Coast Guard
 provider_slug: united-states-coast-guard
 search_terms:
-- get incident investigation
-- law enforcement
 - vessel compliance
-- list all port state control inspection cases for a vessel
-- list all regulatory certificates and statutory documents for a vessel
-- port state control inspection history
-- list vessel deficiencies
-- retrieve vessel technical specifications including dimensions, tonnage, and propulsion
-- uscg approved marine equipment certifications
 - get comprehensive vessel information by official number
-- get equipment certification
-- marine casualty incident investigation records
-- list all inspection deficiencies for a vessel
-- list all certificates and documents for a vessel
-- look up uscg approval status for marine safety equipment by certification id
-- get incident investigation report and enforcement referral data
-- retrieve summary information for a u.s. coast guard documented vessel by official number
-- list vessel inspections
-- vessel certificates and statutory documents
-- get vessel particulars
-- get vessel
-- vessel inspection deficiencies and operational controls
-- list all safety deficiencies found during vessel inspections
-- emergency response
-- vessel summary and profile information
-- get uscg marine equipment approval and certification details
-- vessel technical specifications and dimensions
-- list port state control inspection history for a vessel
-- retrieve marine casualty incident investigation referral and enforcement action data
-- maritime safety
-- vessel documentation
-- federal government
-- coast guard
 - get vessel summary
-- port state control
-- list vessel certificates
+- get equipment certification
+- vessel technical specifications and dimensions
+- list all regulatory certificates and statutory documents for a vessel
+- coast guard
+- uscg approved marine equipment certifications
+- list all inspection deficiencies for a vessel
+- marine casualty incident investigation records
+- maritime safety
+- list all port state control inspection cases for a vessel
+- law enforcement
+- get incident investigation report and enforcement referral data
+- get vessel particulars
+- list vessel inspections
+- list all certificates and documents for a vessel
+- vessel inspection deficiencies and operational controls
+- retrieve marine casualty incident investigation referral and enforcement action data
 - get vessel dimensions, tonnage, and technical details
+- look up uscg approval status for marine safety equipment by certification id
+- list vessel deficiencies
+- retrieve summary information for a u.s. coast guard documented vessel by official number
+- list all safety deficiencies found during vessel inspections
+- get vessel
+- list vessel certificates
+- port state control
+- vessel summary and profile information
+- get incident investigation
+- vessel documentation
+- port state control inspection history
+- get uscg marine equipment approval and certification details
+- retrieve vessel technical specifications including dimensions, tonnage, and propulsion
+- list port state control inspection history for a vessel
+- emergency response
+- federal government
+- vessel certificates and statutory documents
 slug: maritime-safety
 source_filename: maritime-safety.yaml
 source_heading: Capability Spec

@@ -45,35 +45,35 @@ personas: []
 provider_name: Oracle Financials
 provider_slug: oracle-financials
 search_terms:
-- listbudgetarycontrolresults
-- listcurrencyrates
-- oracle financials create a budget transaction
-- accounts payable
-- oracle financials get a journal batch
+- getjournalbatch
 - expense management
-- createbudgettransaction
-- oracle financials list currency rates
-- listjournalbatches
-- oracle financials delete a journal batch
-- oracle financials list account balances
-- deletejournalbatch
 - accounting
 - financials
-- cash management
-- oracle financials list budgetary control results
-- erp
-- financial management
-- updatejournalbatch
 - general ledger
-- oracle
-- listledgerbalances
+- listjournalbatches
+- accounts payable
 - api
-- getjournalbatch
-- oracle financials update a journal batch
-- createchartofaccountsfilter
-- oracle financials create a chart of accounts filter
 - accounts receivable
+- oracle financials list account balances
+- oracle financials list budgetary control results
+- oracle financials create a chart of accounts filter
+- financial management
+- listcurrencyrates
 - oracle financials list journal batches
+- updatejournalbatch
+- oracle financials get a journal batch
+- oracle financials create a budget transaction
+- oracle financials delete a journal batch
+- oracle financials list currency rates
+- createbudgettransaction
+- cash management
+- oracle financials update a journal batch
+- listbudgetarycontrolresults
+- erp
+- deletejournalbatch
+- oracle
+- createchartofaccountsfilter
+- listledgerbalances
 slug: oracle-financials-capability
 source_filename: oracle-financials-capability.yaml
 source_heading: Capability Spec

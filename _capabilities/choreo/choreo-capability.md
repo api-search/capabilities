@@ -65,54 +65,54 @@ personas: []
 provider_name: Choreo
 provider_slug: choreo
 search_terms:
-- choreo list organizations
-- deletecomponent
-- listapis
-- choreo list components
-- choreo delete a component
-- choreo list deployments
-- finops
-- choreo
-- unified
-- devops
-- platform engineering
-- developer portal
-- internal developer platform
-- ide
 - createbuild
-- cloud native
-- kubernetes
-- choreo list apis
-- listorganizations
-- choreo list projects
-- choreo trigger a build
-- wso2
-- createcomponent
-- ci/cd
-- lifecycle
-- orchestration
-- pro-code api composition
-- api
-- choreo create a component
-- observability
-- createdeployment
-- ai apps
-- choreo get a component
-- listenvironments
-- listcomponents
-- workflows
-- listprojects
-- listdeployments
-- choreo promote a build to an environment
-- choreo get api details
-- api management
-- choreo list environments
-- listbuilds
-- choreo list builds
+- devops
 - choreo create a project
-- getapi
-- createproject
+- choreo promote a build to an environment
+- choreo list builds
+- choreo
+- choreo create a component
 - getcomponent
+- listbuilds
+- ci/cd
+- api
+- listorganizations
+- cloud native
+- api management
+- listapis
+- unified
+- orchestration
+- choreo get api details
+- lifecycle
+- ide
+- developer portal
+- listcomponents
+- choreo trigger a build
+- ai apps
+- kubernetes
+- choreo delete a component
+- choreo list environments
+- observability
+- platform engineering
+- getapi
+- deletecomponent
+- internal developer platform
+- choreo list projects
+- choreo list deployments
+- pro-code api composition
+- createcomponent
+- choreo list components
+- createdeployment
+- listenvironments
+- listdeployments
+- choreo list apis
+- choreo list organizations
+- listprojects
+- workflows
+- wso2
+- choreo get a component
+- finops
+- createproject
 slug: choreo-capability
 source_filename: choreo-capability.yaml
 source_heading: Capability Spec

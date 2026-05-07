@@ -249,134 +249,134 @@ personas: []
 provider_name: Portkey
 provider_slug: portkey
 search_terms:
-- create a new label
-- listlabels
-- createguardrail
-- list available models
-- create speech
-- downloadfile
 - portkey
-- createimageedit
-- listpromptpartials
-- get a prompt partial by id or slug
-- list guardrails
-- getlabel
-- deletemodel
-- embeddings
-- create a new guardrail
-- cancelfinetuningjob
-- returns a list of assistants.
-- update a guardrail
+- updateguardrail
+- delete collections collectionid
+- get a prompt by id or slug
+- get a specific guardrail
 - api
+- returns the contents of the specified file.
+- get collections collectionid
+- getpromptpartial
+- createimage
 - get info about a fine-tuning job. [learn more about fine-tuning](https://platform.openai.com/docs/guides/fine-tuning)
-- observability
-- list prompt partials
-- deletefile
-- delete collection
-- listfinetuningjobcheckpoints
-- list labels
-- updateprompt
-- createpromptpartial
-- get a label by id
-- returns information about a specific file.
-- create image
-- realtime
-- updatepromptversion
-- list prompts
-- updatepromptdefault
-- listfinetuningevents
-- deleteguardrail
+- get all versions of a prompt
+- rerank
+- deletemodel
+- connectrealtime
+- get collection details
 - deletelabel
+- create transcription
+- deletepromptpartial
+- retrievemodel
+- getlabel
+- creates image variation
+- list checkpoints for a fine-tuning job.
+- retrievefinetuningjob
+- list collections
+- deleteprompt
+- updatelabel
+- createfile
+- set a version as the default for a prompt
+- set a version as the default for a prompt partial
+- delete a label
+- get status updates for a fine-tuning job.
+- listfiles
+- get a specific version of a prompt
+- getpromptversions
+- list your organization's fine-tuning jobs
+- delete a prompt partial
+- updatepromptdefault
+- updatepromptpartial
+- delete collection
+- createpromptpartial
+- createspeech
+- get collections
+- create a new guardrail
+- prompt management
 - completions
-- post collections
-- delete a prompt
-- creatererank
 - createchatcompletion
-- update a label
+- create translation
+- upload a file to be used across various endpoints, such as assistant (<2m tokens), fine-tuning, and batch (<100 mb). total size of your bucket is 100 gb.
+- returns a list of assistants.
+- retrieves a model instance, providing basic information about the model such as the owner and permissioning.
 - createprompt
 - create a new prompt
-- retrievefile
-- get status updates for a fine-tuning job.
-- update a prompt partial
-- update a prompt
-- createimagevariation
-- retrievemodel
-- creates image variation
-- delete a fine-tuned model. you must have the owner role in your organization to delete a model.
-- ai gateways
-- create image edit
-- createmoderation
-- createspeech
-- list collections
-- getprompt
-- get all versions of a prompt
-- get collections collectionid
-- listassistants
-- get a prompt by id or slug
-- getguardrail
-- guardrails
-- listfiles
-- set a version as the default for a prompt
-- create a new prompt partial
-- listpaginatedfinetuningjobs
-- create a finetune job
-- immediately cancel a fine-tune job.
-- createfile
-- listmodels
-- identify potentially harmful content in text and images. **only** works with [openai's moderations endpoint](https://platform.openai.com/docs/guides/moderation) currently.
-- update collection
-- delete a prompt partial
-- delete collections collectionid
-- updatepromptpartial
-- create a new collection
-- getpromptpartial
-- listprompts
-- create translation
-- list your organization's fine-tuning jobs
-- upload a file to be used across various endpoints, such as assistant (<2m tokens), fine-tuning, and batch (<100 mb). total size of your bucket is 100 gb.
-- create transcription
-- rerank
-- get a specific guardrail
-- retrievefinetuningjob
-- createpromptrender
-- governance
-- retrieves a model instance, providing basic information about the model such as the owner and permissioning.
-- createcompletion
-- delete a guardrail
+- creatererank
 - createtranslation
-- put collections collectionid
-- createpromptcompletion
-- get collection details
-- gateways
-- listguardrails
-- prompts completions
 - getpromptbyversion
-- get all versions of a prompt partial
-- deletepromptpartial
-- set a version as the default for a prompt partial
-- get collections
-- updatelabel
-- get a specific version of a prompt
-- list checkpoints for a fine-tuning job.
-- updatepromptpartialdefault
-- prompts render
-- delete a label
-- deleteprompt
-- prompt management
-- createembedding
-- getpromptversions
-- createlabel
-- connectrealtime
+- get a label by id
+- createimagevariation
+- listassistants
+- listguardrails
+- immediately cancel a fine-tune job.
+- post collections
+- listprompts
+- update a prompt
+- realtime
+- create image
 - delete file
+- getguardrail
 - createtranscription
-- chat
-- getpromptpartialversions
-- createimage
+- createpromptcompletion
+- createpromptrender
+- createcompletion
+- update a guardrail
+- returns information about a specific file.
+- listpromptpartials
+- listmodels
+- observability
+- embeddings
+- createimageedit
+- list labels
+- getprompt
+- cancelfinetuningjob
+- createguardrail
+- delete a fine-tuned model. you must have the owner role in your organization to delete a model.
+- deletefile
+- create a finetune job
+- create a new label
+- update collection
+- listfinetuningjobcheckpoints
+- deleteguardrail
+- createlabel
+- createmoderation
+- prompts render
 - createfinetuningjob
-- returns the contents of the specified file.
+- list available models
+- delete a prompt
+- governance
+- updatepromptversion
+- list prompt partials
+- update a prompt partial
+- list guardrails
+- create a new prompt partial
+- get all versions of a prompt partial
+- listfinetuningevents
+- create a new collection
+- updatepromptpartialdefault
+- gateways
+- createembedding
+- identify potentially harmful content in text and images. **only** works with [openai's moderations endpoint](https://platform.openai.com/docs/guides/moderation) currently.
+- guardrails
+- prompts completions
+- getpromptpartialversions
+- create speech
+- ai gateways
 - update a specific version of a prompt
-- updateguardrail
+- chat
 - list files
+- create image edit
+- update a label
+- updateprompt
+- delete a guardrail
+- downloadfile
+- retrievefile
+- listpaginatedfinetuningjobs
+- put collections collectionid
+- listlabels
+- list prompts
+- get a prompt partial by id or slug
 slug: portkey-capability
 source_filename: portkey-capability.yaml
 source_heading: Capability Spec

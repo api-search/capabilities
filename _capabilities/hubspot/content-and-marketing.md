@@ -42,60 +42,60 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- list available event types
-- list events
-- update an existing blog post
-- sales
-- hubspot
-- blog post management
-- get blog author
-- analytics
-- list all blog authors
-- content
-- clone an existing blog post
-- list blog posts
-- update blog post
-- blog author management
-- marketing
-- get blog post
-- retrieve analytics events
-- get revision history for a blog post
-- list available analytics event types
-- push blog post live
-- analytics events
-- operations
-- list all blog posts in hubspot
-- commerce
-- blog
-- retrieve analytics event data for crm objects
-- schedule blog post
-- marketing automation
-- list event types
-- get event types
 - individual blog post
-- get blog post revisions
-- crm
-- email marketing
-- archive blog post
-- create a blog post
-- schedule a blog post for publication
-- get a specific blog post by id
-- archive a blog post
-- get a blog post
-- create a new blog author
-- update a blog post
-- push a draft blog post to live
-- get a blog author by id
-- cms
+- analytics
+- hubspot
+- get analytics events
+- operations
+- list events
+- list available analytics event types
 - clone blog post
-- create blog post
-- create blog author
-- event type definitions
-- customer service
+- create a blog post
+- retrieve analytics events
+- list all blog posts
+- push blog post live
+- list all blog posts in hubspot
+- get a blog post
+- get blog post revisions
+- commerce
 - create a new blog post
 - list blog authors
-- list all blog posts
-- get analytics events
+- list all blog authors
+- clone an existing blog post
+- list available event types
+- crm
+- update an existing blog post
+- blog author management
+- content
+- schedule a blog post for publication
+- cms
+- schedule blog post
+- get blog post
+- get revision history for a blog post
+- get a blog author by id
+- create blog post
+- create a new blog author
+- update blog post
+- create blog author
+- blog
+- marketing
+- list blog posts
+- retrieve analytics event data for crm objects
+- get event types
+- blog post management
+- sales
+- analytics events
+- update a blog post
+- event type definitions
+- list event types
+- push a draft blog post to live
+- get blog author
+- customer service
+- get a specific blog post by id
+- archive a blog post
+- marketing automation
+- archive blog post
+- email marketing
 slug: content-and-marketing
 source_filename: content-and-marketing.yaml
 source_heading: Capability Spec

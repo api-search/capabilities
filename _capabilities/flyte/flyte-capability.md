@@ -189,103 +189,103 @@ personas: []
 provider_name: Flyte
 provider_slug: flyte
 search_terms:
-- retrieve signed data urls for a workflow execution
-- terminate a workflow execution
-- get the active launch plan for a name
-- list workflows for a name
-- list node executions for a workflow execution
-- api
-- createworkflow
-- getversion
-- list workflows
-- listworkflowsbyname
-- list task executions for a node execution
-- list launch plans
-- getworkflowattributes
-- list projects
-- listlaunchplans
-- createnodeevent
-- list tasks for a name
-- listtaskids
-- list active launch plans
-- listworkflowids
-- createtask
-- list named entities
-- getactivelaunchplan
-- submit a task execution event
-- retrieve a named entity
-- registerproject
-- updateproject
-- submit a workflow execution event
-- listworkflows
-- register a task
 - retrieve a task
-- getprojectattributes
-- kubernetes
-- getexecution
-- listtaskexecutions
-- listtasks
-- terminateexecution
-- listprojects
+- createnodeevent
+- api
+- flyte
+- updateprojectdomainattributes
+- list workflows for a name
+- createworkflow
+- list tasks for a name
+- data orchestration
+- getnamedentity
+- getprojectdomainattributes
+- machine learning
+- list launch plan identifiers
+- register a task
+- createworkflowevent
+- submit a node execution event
+- getlaunchplan
+- retrieve a launch plan
+- listexecutions
 - cncf
-- update workflow attributes
+- list launch plans
+- getexecution
+- createexecution
+- updatenamedentity
+- getversion
+- registerproject
+- listnodeexecutions
+- createtask
+- list matchable attributes
 - listactivelaunchplans
+- register a launch plan
+- get the active launch plan for a name
+- createtaskevent
+- workflow automation
+- list workflow identifiers
 - relaunch a workflow execution
 - listlaunchplanids
-- gettask
-- recoverexecution
-- list launch plan identifiers
-- retrieve a workflow execution
-- createworkflowevent
-- relaunchexecution
-- updatenamedentity
-- updatelaunchplan
-- list workflow executions
-- retrieve a workflow
-- machine learning
-- updateprojectdomainattributes
-- workflow automation
+- retrieve flyteadmin version
 - updateprojectattributes
-- listmatchableattributes
-- register a project
-- getexecutionmetrics
+- listworkflowids
+- listtaskexecutions
 - listtasksbyname
-- getworkflow
-- submit a node execution event
-- retrieve project-domain attributes
-- getexecutiondata
-- update launch plan state
-- list matchable attributes
-- getnamedentity
-- retrieve project attributes
-- getprojectdomainattributes
-- retrieve execution metrics
-- flyte
-- list task identifiers
-- getlaunchplan
-- listnodeexecutions
-- list tasks
-- update project-domain attributes
-- recover a workflow execution
+- submit a task execution event
+- updateproject
+- list projects
 - update project attributes
-- createtaskevent
+- retrieve execution metrics
+- recover a workflow execution
+- update a named entity
+- register a project
+- list workflow executions
+- recoverexecution
 - retrieve workflow attributes
-- createexecution
-- list workflow identifiers
+- update a project
+- getprojectattributes
+- listworkflows
+- listtaskids
+- getworkflowattributes
+- retrieve a named entity
+- list active launch plans
+- retrieve project attributes
+- update launch plan state
 - createlaunchplan
-- retrieve a launch plan
+- getexecutiondata
+- kubernetes
+- listlaunchplans
 - updateworkflowattributes
-- register a launch plan
+- update project-domain attributes
+- retrieve project-domain attributes
+- retrieve a workflow
+- updatelaunchplan
+- retrieve a workflow execution
+- listmatchableattributes
+- update workflow attributes
 - list launch plans for a name
 - listlaunchplansbyname
-- update a project
-- data orchestration
-- update a named entity
-- retrieve flyteadmin version
-- listnamedentities
-- listexecutions
-- create a workflow execution
+- listtasks
+- listworkflowsbyname
+- list workflows
+- submit a workflow execution event
 - register a workflow
+- list node executions for a workflow execution
+- terminateexecution
+- list task identifiers
+- list task executions for a node execution
+- getactivelaunchplan
+- gettask
+- list tasks
+- terminate a workflow execution
+- relaunchexecution
+- getworkflow
+- listnamedentities
+- getexecutionmetrics
+- listprojects
+- retrieve signed data urls for a workflow execution
+- create a workflow execution
+- list named entities
 slug: flyte-capability
 source_filename: flyte-capability.yaml
 source_heading: Capability Spec

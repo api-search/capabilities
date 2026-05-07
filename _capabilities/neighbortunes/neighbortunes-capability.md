@@ -77,45 +77,45 @@ personas: []
 provider_name: Neighbortunes
 provider_slug: neighbortunes
 search_terms:
-- list links
-- listmetadata
-- listlinks
-- listuploads
-- list uploads
-- listalbums
+- list shows
+- get a setlist by id
 - list appearances
 - listvenues
-- listsetlists
-- getsong
-- listshows
-- querysetlists
-- listappearances
-- listsongs
-- listcolumn
-- get a show by id
-- music
-- latest entries
-- getshow
-- neighbortunes
-- api
-- list jamcharts
-- list shows
-- get a venue by id
-- list setlists
-- list venues
-- fan site
-- list unique values for a column
 - list albums
-- list metadata
-- setlists
+- get a venue by id
+- list links
+- api
+- neighbortunes
+- listsetlists
+- listmetadata
+- listappearances
+- listcolumn
+- list uploads
+- listsongs
+- get a show by id
+- list venues
+- listlinks
+- music
 - query setlists by column value
 - get a song by id
-- getvenue
-- listlatest
-- listjamcharts
-- get a setlist by id
+- list metadata
 - list songs
+- listjamcharts
+- listuploads
+- list unique values for a column
+- querysetlists
+- listalbums
+- list jamcharts
+- list setlists
 - getsetlist
+- setlists
+- getsong
+- getshow
+- listlatest
+- getvenue
+- latest entries
+- fan site
+- listshows
 slug: neighbortunes-capability
 source_filename: neighbortunes-capability.yaml
 source_heading: Capability Spec

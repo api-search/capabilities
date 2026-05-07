@@ -105,115 +105,115 @@ personas: []
 provider_name: Upvest
 provider_slug: upvest
 search_terms:
-- financial instruments and prices
-- list direct debits
-- create webhook subscription
-- retrieve user
-- retrieve details for a specific user by id
-- place order
-- retrieve order details
-- individual account operations
-- order placement and management
-- cancel a pending order before execution
-- list instruments
-- reports and transaction data
-- funding and withdrawal operations
-- savings plans
-- set up a direct debit payment for account funding
-- list investment reports and statements
-- upvest
-- cancel a pending order
-- list all orders across accounts
-- list positions
-- register a new webhook endpoint for event notifications
-- list withdrawals
-- retrieve a specific account
-- create account
-- cash withdrawal operations
-- create a new investment account for a user
-- get current and historical account valuations
-- portfolio creation, allocation, and rebalancing
-- Integration Engineer
-- create a new investment account
-- list all orders
-- list all investment accounts
-- get price data for a specific financial instrument
-- account positions and valuations
-- administrator managing the investment platform configuration and reporting
-- create user
-- cancel order
-- engineer integrating upvest apis into banking or wealth management platforms
-- onboard a new user
-- process a withdrawal
-- register a webhook
-- investments
-- list valuations
-- individual order operations
-- Fintech Developer
-- list all accounts
-- create a portfolio
-- list orders
 - list available financial instruments (stocks, etfs, mutual funds)
-- fractional investing
+- list all automated savings plans
+- reports and transaction data
+- create savings plan
+- list all orders across accounts
+- list accounts
+- portfolios
+- place a buy or sell order
+- create a savings plan
+- administrator managing the investment platform configuration and reporting
+- investment account management
+- automated savings plan management
+- list orders
+- list account positions
+- transactions, reports, fees, and compliance
+- trading
+- portfolio creation, allocation, and rebalancing
+- create direct debit
+- set up a direct debit payment for account funding
+- register a webhook
+- full investment lifecycle management for embedded investment products
+- order placement, execution, and instrument data
+- place order
+- user onboarding, identity verification, and compliance
+- Investment Platform Admin
+- funding and withdrawal operations
+- developer building embedded investment features into a fintech app
+- retrieve order details
+- register a new webhook endpoint for event notifications
+- list transaction history for accounts
+- process a withdrawal
+- retrieve a specific user
+- investment account creation and lifecycle
+- list reports
+- create portfolio
+- individual order operations
+- process a cash withdrawal from an investment account
+- list portfolios
+- list all onboarded users on the investment platform
+- onboard a new user to the investment platform
+- list users
+- create webhook subscription
+- order placement and management
+- cancel order
+- list webhooks
+- webhook subscription management
+- list all investment accounts
+- list all investment portfolios
+- account positions and valuations
+- investments
+- create a new investment account
 - list transactions
 - create a direct debit
-- list all investment portfolios
-- list all onboarded users on the investment platform
-- retrieve details and status for a specific order
-- portfolio management
-- user onboarding and management
-- order placement, execution, and instrument data
-- create webhook
-- list account positions
-- list savings plans
-- place a buy or sell order
-- portfolios
-- onboard a new user to the investment platform
-- full investment lifecycle management for embedded investment products
-- list webhook subscriptions
-- trading
-- individual user operations
-- investment account management
-- securities
-- wealth management
-- automated savings plan management
-- user onboarding, identity verification, and compliance
-- place a buy or sell order for a financial instrument
-- investment account creation and lifecycle
-- Investment Platform Admin
-- webhook subscription management
-- custody
-- create an automated recurring investment savings plan
-- retrieve order
-- retrieve details for a specific investment account
-- retrieve a specific user
-- list all automated savings plans
-- list investment reports
-- list transaction history for accounts
-- create direct debit
-- banking infrastructure
-- create withdrawal
-- list available instruments
-- list reports
-- developer building embedded investment features into a fintech app
-- create portfolio
-- list transaction history
-- retrieve account
-- transactions, reports, fees, and compliance
-- list instrument prices
-- direct debit payments
-- list all registered webhook subscriptions
-- create savings plan
+- list withdrawals
 - create a new investment portfolio with custom allocations
-- list portfolios
+- wealth management
+- portfolio management
+- onboard a new user
+- list all orders
+- retrieve a specific account
+- engineer integrating upvest apis into banking or wealth management platforms
+- fractional investing
+- individual account operations
+- cancel a pending order
+- individual user operations
+- get price data for a specific financial instrument
+- retrieve order
+- create webhook
+- custody
+- list direct debits
+- savings plans
+- Fintech Developer
+- cash withdrawal operations
+- create account
 - list all onboarded users
-- list users
-- list accounts
+- list instruments
+- create an automated recurring investment savings plan
+- list all accounts
+- banking infrastructure
+- securities
+- list webhook subscriptions
+- Integration Engineer
+- retrieve details and status for a specific order
 - list current investment positions and holdings for an account
-- list webhooks
-- process a cash withdrawal from an investment account
-- create a savings plan
+- retrieve user
+- create a portfolio
+- list investment reports and statements
+- list transaction history
 - fintech
+- get current and historical account valuations
+- retrieve account
+- retrieve details for a specific user by id
+- user onboarding and management
+- list valuations
+- direct debit payments
+- list savings plans
+- create a new investment account for a user
+- list available instruments
+- list all registered webhook subscriptions
+- create withdrawal
+- retrieve details for a specific investment account
+- create user
+- cancel a pending order before execution
+- place a buy or sell order for a financial instrument
+- upvest
+- list investment reports
+- financial instruments and prices
+- list instrument prices
+- list positions
 slug: investment-operations
 source_filename: investment-operations.yaml
 source_heading: Capability Spec

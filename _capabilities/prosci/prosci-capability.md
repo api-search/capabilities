@@ -101,55 +101,55 @@ personas: []
 provider_name: Prosci
 provider_slug: prosci
 search_terms:
-- createadkarassessment
-- listadkarassessments
-- createchangeplan
-- prosci create a change plan
-- getadkarassessment
-- prosci get change management maturity
-- prosci
-- methodology
-- prosci list adkar assessments
-- prosci list change plans
-- deleteproject
-- prosci create an adkar assessment
-- training
-- createpctassessment
-- prosci list pct assessments
-- listenrollments
-- getriskassessment
-- updateadkarassessment
-- updateproject
-- prosci create a pct assessment
-- prosci update project risk assessment
-- prosci list training programs
 - getproject
-- createenrollment
-- change management
-- prosci update a change plan
-- prosci get a change plan
-- updateriskassessment
-- prosci create a change project
-- getorganizationmaturity
-- prosci list change projects
-- prosci delete a change project
-- api
-- listpctassessments
 - liststakeholders
-- getchangeplan
-- listtrainingprograms
+- prosci get a change plan
+- prosci list adkar assessments
 - prosci get a change project
-- listprojects
-- prosci update an adkar assessment
+- listenrollments
+- api
+- getriskassessment
+- prosci update a change plan
 - prosci enroll in a training program
-- createstakeholder
-- prosci add a stakeholder
-- updatechangeplan
-- prosci update a change project
 - prosci get an adkar assessment
-- prosci list training enrollments
-- listchangeplans
+- prosci update a change project
+- prosci create a change plan
+- updateadkarassessment
+- listpctassessments
+- updatechangeplan
+- updateproject
+- prosci delete a change project
+- getchangeplan
+- createstakeholder
+- prosci list pct assessments
+- methodology
 - prosci list stakeholders
+- createchangeplan
+- updateriskassessment
+- change management
+- prosci list training programs
+- prosci
+- createpctassessment
+- createadkarassessment
+- deleteproject
+- training
+- prosci create a pct assessment
+- listtrainingprograms
+- prosci update an adkar assessment
+- listadkarassessments
+- prosci create a change project
+- listchangeplans
+- prosci update project risk assessment
+- prosci list training enrollments
+- createenrollment
+- prosci get change management maturity
+- getadkarassessment
+- listprojects
+- prosci list change plans
+- prosci create an adkar assessment
+- prosci list change projects
+- prosci add a stakeholder
+- getorganizationmaturity
 - prosci get project risk assessment
 - createproject
 slug: prosci-capability

@@ -149,84 +149,84 @@ personas: []
 provider_name: Qlik Sense
 provider_slug: qlik-sense
 search_terms:
-- set script for an app
-- publish an app
-- analytics
-- cancelreload
-- patchspace
-- qlik
-- cloud
+- create a space
 - deletespace
-- list reloads
-- list space assignments
-- updateapp
-- retrieve a space
-- cancel a reload
 - api
-- copy an app
-- list spaces
-- listspaces
-- update a space
+- retrieve a space
+- retrieve a specific reload log
+- set script for an app
+- delete a space
+- createspaceassignment
 - update an app
-- getreload
-- delete a space assignment
+- reloadapp
+- retrieve data metadata for an app
 - importapp
-- createspace
-- retrieve data lineage for an app
-- data integration
-- retrieve a reload record
-- listspacetypes
-- updateappowner
 - getapp
-- retrieve an app
-- updatespaceassignment
-- reload an app
 - republish an app
+- update a space assignment
+- retrieve script log metadata
+- visualization
+- create an app
+- move app to a space
+- getspaceassignment
+- import an app
+- assign user or group to space
+- listspacetypes
+- exportapp
+- cancelreload
+- cloud
+- list reloads
+- updatespace
+- getappdatalineage
+- retrieve a reload record
+- removeappfromspace
+- list space types
+- retrieve an app
+- patch space properties
+- cancel a reload
+- republishapp
+- getappreloadlogs
+- retrieve a space assignment
+- getreload
+- business intelligence
+- listreloads
+- patchspace
+- moveapptospace
+- getspace
+- change app owner
+- retrieve data lineage for an app
+- getappsprivileges
 - getappreloadlog
 - get app privileges
-- getappsprivileges
-- create a space
-- list space types
-- getspace
-- delete an app
-- remove app from space
-- deleteapp
-- retrieve data metadata for an app
-- patch space properties
-- getappreloadlogs
-- getappdatametadata
-- exportapp
-- retrieve script log metadata
-- createspaceassignment
-- retrieve a space assignment
-- publishapp
+- data integration
+- updateappowner
 - setappscript
-- retrieve a specific reload log
-- moveapptospace
-- create an app
-- republishapp
-- export an app
-- getspaceassignment
-- listreloads
-- retrieve script history
-- createapp
-- removeappfromspace
-- delete a space
-- visualization
-- getappscripts
-- move app to a space
-- import an app
-- sense
-- getappdatalineage
-- updatespace
-- change app owner
-- update a space assignment
-- reloadapp
-- business intelligence
-- listspaceassignments
-- deletespaceassignment
-- assign user or group to space
+- update a space
+- analytics
+- updatespaceassignment
+- reload an app
+- qlik
 - copyapp
+- list space assignments
+- sense
+- retrieve script history
+- getappdatametadata
+- publish an app
+- delete a space assignment
+- updateapp
+- listspaceassignments
+- deleteapp
+- publishapp
+- export an app
+- createapp
+- delete an app
+- copy an app
+- remove app from space
+- createspace
+- listspaces
+- deletespaceassignment
+- list spaces
+- getappscripts
 slug: qlik-sense-capability
 source_filename: qlik-sense-capability.yaml
 source_heading: Capability Spec

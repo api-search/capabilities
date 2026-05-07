@@ -33,22 +33,22 @@ personas: []
 provider_name: FVAP.gov
 provider_slug: fvapgov
 search_terms:
+- getapischema
+- getelectionoffices
+- fvapgov
+- get election offices for a state or territory.
+- get deadline dates for a state or territory.
 - get the combined evag feed for a state or territory.
 - government
 - getdeadlinedates
-- getevag
-- getimportantinfo
-- getelectionoffices
-- getapischema
-- get the xml schema definition for the fvap feeds.
 - api
-- get election offices for a state or territory.
-- getballotrules
 - get important voting information for a state or territory.
-- get deadline dates for a state or territory.
-- voting
+- getballotrules
+- getevag
 - get ballot rules for a state or territory.
-- fvapgov
+- getimportantinfo
+- voting
+- get the xml schema definition for the fvap feeds.
 slug: fvapgov-capability
 source_filename: fvapgov-capability.yaml
 source_heading: Capability Spec

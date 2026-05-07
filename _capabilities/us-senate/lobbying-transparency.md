@@ -37,42 +37,42 @@ personas: []
 provider_name: US Senate
 provider_slug: us-senate
 search_terms:
-- search clients
-- lobbying issue codes
-- individual filing detail
-- search individual lobbyists
-- search lobbying disclosure filings
-- get complete details of a specific lobbying disclosure filing including activities and lobbyists
-- individual lobbyists
-- get all government entity codes
+- lobbying
+- get filing
+- search senate lobbying disclosure filings (ld-1 registrations, ld-2 quarterly reports). filter by year, period, registrant name, client name, or issue code.
+- search lobbying clients
 - list lobbying issue codes
+- search filings
+- get all government bodies and agencies that appear as lobbying targets
+- search organizations and entities that have hired lobbyists
+- individual filing detail
+- search lobbying registrants
 - get all issue area codes used to categorize lobbying activities (e.g., tax, hcr, def)
-- get lobbying filing
 - lobbying registrants
 - search lobbyists
-- search senate lobbying disclosure filings (ld-1 registrations, ld-2 quarterly reports). filter by year, period, registrant name, client name, or issue code.
-- search individual registered lobbyists by name
-- lobbying disclosure filings
-- campaign finance
-- get filing
-- search filings
-- search lobbying registrants
-- search organizations and entities that have hired lobbyists
-- list government entities
-- lobbying clients
-- get all lobbying activity issue codes
-- search registered lobbying firms and individual lobbyists by name
-- list issue codes
-- federal government
 - lobbied government entities
-- search lobbying clients
-- lobbying
-- get all government bodies and agencies that appear as lobbying targets
-- get a specific filing by uuid
-- search registrants
+- search lobbying disclosure filings
+- lobbying clients
+- lobbying disclosure filings
+- get complete details of a specific lobbying disclosure filing including activities and lobbyists
+- list issue codes
 - government transparency
+- campaign finance
+- get lobbying filing
+- get a specific filing by uuid
+- get all lobbying activity issue codes
+- search individual lobbyists
+- lobbying issue codes
+- search individual registered lobbyists by name
+- list government entities
+- get all government entity codes
+- search clients
+- search registered lobbying firms and individual lobbyists by name
+- federal government
+- individual lobbyists
 - open data
 - search lobbying filings
+- search registrants
 slug: lobbying-transparency
 source_filename: lobbying-transparency.yaml
 source_heading: Capability Spec

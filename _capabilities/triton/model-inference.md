@@ -65,70 +65,70 @@ personas: []
 provider_name: Triton Inference Server
 provider_slug: triton
 search_terms:
-- unload a model from triton
-- trace configuration
-- unload a model from triton to free resources
-- server ready
-- get current server logging configuration
-- model infer
-- get inference statistics for all loaded models
-- statistics for all models
-- check if triton server is alive
-- deep learning
-- kserve
-- individual model operations
-- server and model health status
-- get inference statistics for a specific model
-- get the full configuration for a specific model
-- get model metadata including tensor definitions
-- update server logging configuration
-- check if triton server is ready to accept inference requests
-- update request tracing levels and sampling rate
-- update log settings
-- get triton server name, version, and extensions
-- inference
-- ai
-- update request tracing configuration
-- update trace settings
-- open source
-- get triton server name, version, and supported extensions
-- model metadata
-- run inference against a loaded model with input tensors
-- machine learning
-- list all models available in the repository
-- server metadata and information
-- update server logging level and format
-- list all models available in the triton model repository
-- get log settings
-- get trace settings
-- unload model from server
-- check if triton inference server is alive
 - get current global trace settings
-- nvidia
-- server metadata
-- list models
-- submit an inference request to a model
-- get current global request tracing configuration
-- model config
-- model unload
-- model repository and management
-- load or reload a model from the repository into triton
-- model statistics
-- model configuration
-- check if a specific model is ready to accept inference requests
-- all model statistics
-- load model into server
-- load or reload a model from the repository
-- get current logging settings
+- server and model health status
+- get triton server name, version, and extensions
+- get log settings
 - get full model configuration
-- logging configuration
+- model unload
+- check if triton server is alive
+- model inference statistics
+- get inference statistics for a specific model
+- ai
+- check if triton inference server is alive
+- model config
+- load or reload a model from the repository
+- update request tracing levels and sampling rate
+- server metadata
+- list all models available in the triton model repository
+- update trace settings
+- get the full configuration for a specific model
+- unload a model from triton
+- run inference against a loaded model with input tensors
+- trace configuration
+- open source
+- check if a specific model is ready to accept inference requests
+- deep learning
+- update request tracing configuration
+- model load
+- get current global request tracing configuration
+- update server logging level and format
+- machine learning
+- nvidia
+- get triton server name, version, and supported extensions
+- kserve
 - server live
 - model serving
-- run model inference
-- model inference statistics
-- model load
-- get metadata for a specific model including input/output tensor shapes
+- server ready
+- list all models available in the repository
 - model ready
+- inference
+- get metadata for a specific model including input/output tensor shapes
+- unload model from server
+- statistics for all models
+- list models
+- model metadata
+- load model into server
+- get trace settings
+- model statistics
+- submit an inference request to a model
+- model configuration
+- get model metadata including tensor definitions
+- server metadata and information
+- get current logging settings
+- get inference statistics for all loaded models
+- individual model operations
+- logging configuration
+- update server logging configuration
+- model repository and management
+- check if triton server is ready to accept inference requests
+- get current server logging configuration
+- unload a model from triton to free resources
+- model infer
+- run model inference
+- update log settings
+- all model statistics
+- load or reload a model from the repository into triton
 slug: model-inference
 source_filename: model-inference.yaml
 source_heading: Capability Spec

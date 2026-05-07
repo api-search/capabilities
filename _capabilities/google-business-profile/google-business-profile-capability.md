@@ -57,38 +57,38 @@ personas: []
 provider_name: Google Business Profile
 provider_slug: google-business-profile
 search_terms:
-- updatelocation
-- listaccounts
-- google business profile list accounts
-- listreviews
+- listlocations
+- google business profile reply to review
+- deletelocation
+- google business profile list local posts
+- getaccount
+- profile
+- google business profile list locations
 - listmedia
-- google business profile get location
+- google business profile update location
+- api
+- reviews
+- google business profile delete location
+- createlocation
+- google business profile list accounts
+- replytoreview
+- google business profile get account
 - google business profile create location
-- local business
 - google
 - business
-- getaccount
-- locations
 - google business profile list media
-- getlocation
-- google business profile list locations
-- google business profile reply to review
-- createlocalpost
-- createlocation
-- api
+- locations
 - listlocalposts
-- google business profile update location
-- listlocations
-- replytoreview
-- profile
-- google business profile list local posts
+- getlocation
 - business profiles
-- google business profile create local post
-- google business profile get account
-- reviews
 - google business profile list reviews
-- deletelocation
-- google business profile delete location
+- listreviews
+- google business profile get location
+- createlocalpost
+- listaccounts
+- local business
+- updatelocation
+- google business profile create local post
 slug: google-business-profile-capability
 source_filename: google-business-profile-capability.yaml
 source_heading: Capability Spec

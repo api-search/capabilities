@@ -81,44 +81,44 @@ personas: []
 provider_name: llamaindex
 provider_slug: llamaindex
 search_terms:
-- list pipeline data sources
-- createdatasource
-- add files to a pipeline
-- list data sources
-- listpipelinedatasinks
-- sync a pipeline
-- list pipelines
-- create a project
-- syncpipeline
-- runsearch
-- getproject
-- run search
 - listdatasources
-- uploadfile
-- deletepipeline
-- listpipelinejobs
-- createpipeline
-- api
-- listpipelinefiles
-- list pipeline jobs
-- listpipelinedatasources
-- create a data source
-- listpipelines
-- listprojects
-- list projects
-- delete a pipeline
-- getpipeline
-- list pipeline data sinks
-- create a pipeline
 - add data sources to a pipeline
-- llamaindex
-- upload a file
-- get a pipeline
+- getproject
 - addfilestopipeline
-- createproject
-- list pipeline files
+- api
+- deletepipeline
+- upload a file
+- create a project
 - get a project
+- list pipeline files
 - adddatasourcestopipeline
+- run search
+- uploadfile
+- sync a pipeline
+- list projects
+- llamaindex
+- list pipelines
+- create a data source
+- listpipelinejobs
+- runsearch
+- delete a pipeline
+- createpipeline
+- listpipelinefiles
+- add files to a pipeline
+- list pipeline data sinks
+- listpipelines
+- createdatasource
+- create a pipeline
+- syncpipeline
+- list pipeline jobs
+- getpipeline
+- listpipelinedatasinks
+- list pipeline data sources
+- listprojects
+- list data sources
+- listpipelinedatasources
+- get a pipeline
+- createproject
 slug: llamaindex-capability
 source_filename: llamaindex-capability.yaml
 source_heading: Capability Spec

@@ -13,17 +13,17 @@ personas: []
 provider_name: JPMorgan Chase
 provider_slug: jpmorgan-chase
 search_terms:
-- finance
-- get api status
-- getstatus
-- chase
-- api
-- treasury
 - jpmorgan
-- banking
-- embedded finance
 - financial services
+- banking
+- chase
 - payments
+- getstatus
+- embedded finance
+- get api status
+- treasury
+- api
+- finance
 slug: jpmorgan-chase-capability
 source_filename: jpmorgan-chase-capability.yaml
 source_heading: Capability Spec

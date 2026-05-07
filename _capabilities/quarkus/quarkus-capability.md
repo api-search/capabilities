@@ -45,33 +45,33 @@ personas: []
 provider_name: Quarkus
 provider_slug: quarkus
 search_terms:
-- graalvm
+- quarkus startup health check
+- getliveness
+- getopenapi
+- api
+- cloud native
+- java
+- quarkus overall health check
+- quarkus
+- serverless
+- kubernetes
+- getstartup
 - quarkus liveness health check
+- gethealth
+- getswaggerui
+- frameworks
+- quarkus application metrics
 - getmetrics
+- getinfo
+- quarkus application info
+- getdevui
+- getreadiness
+- quarkus dev ui dashboard
 - quarkus swagger ui
 - quarkus openapi document
-- java
-- getswaggerui
-- quarkus application metrics
-- quarkus dev ui dashboard
-- getinfo
-- serverless
-- cloud native
-- kubernetes
-- gethealth
-- quarkus
-- getdevui
-- quarkus startup health check
-- api
-- getliveness
-- quarkus overall health check
-- getstartup
-- quarkus readiness health check
-- quarkus application info
-- getreadiness
-- frameworks
+- graalvm
 - microservices
-- getopenapi
+- quarkus readiness health check
 slug: quarkus-capability
 source_filename: quarkus-capability.yaml
 source_heading: Capability Spec

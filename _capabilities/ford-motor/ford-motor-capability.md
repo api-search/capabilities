@@ -13,11 +13,11 @@ personas: []
 provider_name: ford-motor
 provider_slug: ford-motor
 search_terms:
-- get api status
-- ford
-- getstatus
 - motor
+- getstatus
+- get api status
 - api
+- ford
 slug: ford-motor-capability
 source_filename: ford-motor-capability.yaml
 source_heading: Capability Spec

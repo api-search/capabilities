@@ -21,19 +21,19 @@ personas: []
 provider_name: Flux
 provider_slug: flux
 search_terms:
-- flux poll for editing result
-- flux
-- editimagekontextpro
-- image generation
-- machine learning
 - edit image with flux.1 kontext [pro]
-- edit image with flux.1 kontext [max]
-- text to image
-- api
-- geteditresult
-- ai
-- editimagekontextmax
+- flux poll for editing result
+- machine learning
 - open source
+- geteditresult
+- editimagekontextmax
+- text to image
+- edit image with flux.1 kontext [max]
+- editimagekontextpro
+- ai
+- api
+- flux
+- image generation
 slug: flux-capability
 source_filename: flux-capability.yaml
 source_heading: Capability Spec

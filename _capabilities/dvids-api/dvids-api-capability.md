@@ -26,19 +26,19 @@ provider_name: DVIDS API
 provider_slug: dvids-api
 search_terms:
 - search units
-- government
-- getasset
-- getrelatedassets
-- searchunits
-- api
 - dvids
-- search
-- defense
-- get asset
-- media
-- search assets
-- get related assets
 - searchassets
+- get asset
+- get related assets
+- search
+- getasset
+- government
+- searchunits
+- defense
+- api
+- search assets
+- getrelatedassets
+- media
 slug: dvids-api-capability
 source_filename: dvids-api-capability.yaml
 source_heading: Capability Spec

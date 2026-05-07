@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- run demo
-- list demos
-- api integration
+- deterministic
 - governance
+- naftiko
+- api integration
+- demo
+- ai
 - capabilities
 - spec-driven integration
-- deterministic
-- ai
+- list demos
 - mcp
-- demo
+- run demo
 slug: deterministic-foundation-for-agents-demo
 source_filename: deterministic-foundation-for-agents-demo.yaml
 source_heading: Capability Spec

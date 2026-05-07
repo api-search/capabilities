@@ -25,19 +25,19 @@ personas: []
 provider_name: Prismatic
 provider_slug: prismatic
 search_terms:
-- integrations
-- executegraphqlquery
-- getauthtoken
-- prismatic revoke refresh token
-- prismatic execute graphql query or mutation
-- api
-- prismatic refresh authentication token
-- revokeauthtoken
 - embedded ipaas
-- workflows
-- prismatic
+- prismatic refresh authentication token
+- integrations
+- getauthtoken
+- prismatic execute graphql query or mutation
 - prismatic get short-lived auth token
+- workflows
 - refreshauthtoken
+- prismatic
+- api
+- executegraphqlquery
+- prismatic revoke refresh token
+- revokeauthtoken
 slug: prismatic-capability
 source_filename: prismatic-capability.yaml
 source_heading: Capability Spec

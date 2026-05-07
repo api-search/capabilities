@@ -41,30 +41,30 @@ personas: []
 provider_name: Google Books
 provider_slug: google-books
 search_terms:
-- list my bookshelves
-- books
-- library
-- addvolumetobookshelf
-- listmybookshelves
-- listvolumes
-- removevolumefrombookshelf
-- publishing
-- google
-- list bookshelves
-- listbookshelfvolumes
-- listbookshelves
-- api
-- search
-- getbookshelf
-- search for volumes
-- getvolume
-- get a bookshelf
-- reading
-- get a volume
-- ebooks
 - remove volume from bookshelf
 - list volumes in a bookshelf
+- listvolumes
+- api
+- publishing
+- listmybookshelves
+- list my bookshelves
+- google
+- addvolumetobookshelf
+- get a bookshelf
+- getvolume
+- ebooks
+- library
+- listbookshelves
+- list bookshelves
+- get a volume
+- listbookshelfvolumes
+- search for volumes
+- removevolumefrombookshelf
+- reading
+- getbookshelf
 - add volume to bookshelf
+- search
+- books
 slug: google-books-capability
 source_filename: google-books-capability.yaml
 source_heading: Capability Spec

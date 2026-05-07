@@ -13,14 +13,14 @@ personas: []
 provider_name: Offenders.io
 provider_slug: offenders-io
 search_terms:
-- sex offenders
-- criminal records
-- searchsexoffenders
 - offenders
-- search sex offender registry
-- api
-- io
 - public safety
+- io
+- search sex offender registry
+- criminal records
+- sex offenders
+- api
+- searchsexoffenders
 slug: offenders-io-capability
 source_filename: offenders-io-capability.yaml
 source_heading: Capability Spec

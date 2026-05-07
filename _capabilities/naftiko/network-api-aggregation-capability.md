@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
+- governance
+- list networks
+- list organizations
+- aggregation
+- ai
+- capabilities
+- spec-driven integration
+- api integration
 - list devices
 - mcp
 - network
-- list networks
-- api integration
-- list organizations
-- governance
-- ai
-- spec-driven integration
-- aggregation
-- capabilities
+- naftiko
 slug: network-api-aggregation-capability
 source_filename: network-api-aggregation-capability.yaml
 source_heading: Capability Spec

@@ -38,42 +38,42 @@ provider_name: Sportradar
 provider_slug: sportradar
 search_terms:
 - sports data
-- real-time
-- sports
-- soccer competition information.
 - nba league standings.
-- get complete nfl game summary.
-- get nfl game summary
-- get the nba schedule for a specific date.
-- get soccer match summary
-- get nba standings
 - get nba game summary
-- soccer match summaries.
-- get soccer competition details.
-- get an nba player's profile and statistics.
-- fantasy sports
-- get complete nba game box score and statistics by game id.
-- get complete nba game summary.
-- get soccer competition info
-- 'get the nba game schedule for a specific date (format: yyyy/mm/dd).'
-- get nba daily schedule
-- media
-- nba game schedules by date.
-- nfl game summaries.
-- nba game summaries and box scores.
-- get nba schedule
-- get nba standings for a season.
-- get details about a soccer league or competition by sportradar competition id.
-- get soccer match summary with timeline and lineups.
-- data
+- get soccer match summary
 - get current nba league standings by season year.
-- get a soccer match summary including scoreline, timeline, lineups, and incidents.
-- get nba player profile
-- get career statistics and biographical info for an nba player.
-- esports
-- nba player profiles.
-- statistics
+- get soccer competition details.
+- get soccer competition info
 - get complete nfl game summary with play-by-play drives and statistics.
+- nba player profiles.
+- soccer competition information.
+- esports
+- get nba daily schedule
+- 'get the nba game schedule for a specific date (format: yyyy/mm/dd).'
+- get the nba schedule for a specific date.
+- nba game schedules by date.
+- get nba schedule
+- fantasy sports
+- get an nba player's profile and statistics.
+- get nba player profile
+- get details about a soccer league or competition by sportradar competition id.
+- get nba standings
+- get complete nba game box score and statistics by game id.
+- nfl game summaries.
+- get complete nba game summary.
+- get complete nfl game summary.
+- get career statistics and biographical info for an nba player.
+- media
+- sports
+- get a soccer match summary including scoreline, timeline, lineups, and incidents.
+- get nba standings for a season.
+- get soccer match summary with timeline and lineups.
+- soccer match summaries.
+- statistics
+- data
+- get nfl game summary
+- nba game summaries and box scores.
+- real-time
 slug: sports-data-intelligence
 source_filename: sports-data-intelligence.yaml
 source_heading: Capability Spec

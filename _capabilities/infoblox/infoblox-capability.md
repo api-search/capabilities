@@ -133,78 +133,78 @@ personas: []
 provider_name: Infoblox
 provider_slug: infoblox
 search_terms:
-- createnetwork
-- listforwardzones
-- dhcp
-- infoblox list network views
-- infoblox create a dhcp range
-- ddi
-- listdhcpleases
-- createhostrecord
-- dns
-- createmxrecord
-- listtxtrecords
-- deletearecord
-- listmembers
-- ipam
-- infoblox create an authoritative dns zone
-- infoblox list forward dns zones
-- infoblox create a dns txt record
-- createptrrecord
-- infoblox list dns host records
-- infoblox create a network
-- infoblox list dhcp ranges
-- infoblox list dns ptr records
-- infoblox create a dns host record
-- createtxtrecord
-- infoblox list dhcp networks
-- getgrid
-- infoblox create a dhcp fixed address
-- cloud
-- network management
-- security
-- infoblox get a dns a record
-- infoblox list authoritative dns zones
-- infoblox list dns a records
-- infoblox create a dns ptr record
-- listcnamerecords
-- infoblox create a dns cname record
-- infoblox list dns mx records
-- listarecords
-- listauthoritativezones
-- infoblox list dns cname records
-- infoblox list ipv4 addresses
-- createarecord
-- infoblox
-- infoblox get grid information
-- api
-- listmxrecords
-- infoblox update a dns a record
-- listptrrecords
-- infoblox create a dns a record
-- listdhcpranges
-- infoblox list dhcp fixed addresses
-- infoblox list grid members
-- createaaaarecord
-- createcnamerecord
-- listnetworks
-- infoblox create a dns aaaa record
-- infoblox list dns txt records
-- createfixedaddress
-- infoblox list dns aaaa records
-- infoblox list dhcp leases
 - infoblox delete a dns a record
+- infoblox create a dns cname record
 - createauthoritativezone
-- listipv4addresses
-- infoblox create a dns mx record
-- threat intelligence
-- listnetworkviews
-- listfixedaddresses
-- listaaaarecords
 - getarecord
 - createdhcprange
-- updatearecord
+- ipam
+- infoblox list network views
+- listipv4addresses
+- listnetworks
+- listarecords
+- infoblox list dns ptr records
+- api
+- createarecord
+- listforwardzones
+- infoblox create a dns mx record
+- infoblox list dhcp ranges
 - listhostrecords
+- listfixedaddresses
+- infoblox list dns mx records
+- createmxrecord
+- listmxrecords
+- infoblox list dhcp fixed addresses
+- infoblox list grid members
+- infoblox list dhcp networks
+- threat intelligence
+- infoblox list dns txt records
+- createnetwork
+- infoblox
+- listdhcpranges
+- createcnamerecord
+- listtxtrecords
+- infoblox create a dns a record
+- infoblox list dhcp leases
+- network management
+- infoblox get a dns a record
+- listauthoritativezones
+- listmembers
+- infoblox list ipv4 addresses
+- infoblox create a dns host record
+- createtxtrecord
+- listcnamerecords
+- infoblox list dns cname records
+- infoblox create a network
+- infoblox create a dhcp fixed address
+- updatearecord
+- listdhcpleases
+- createptrrecord
+- listaaaarecords
+- infoblox create a dns aaaa record
+- deletearecord
+- createfixedaddress
+- cloud
+- infoblox update a dns a record
+- getgrid
+- dhcp
+- listptrrecords
+- ddi
+- dns
+- infoblox create a dns txt record
+- infoblox create a dns ptr record
+- createaaaarecord
+- listnetworkviews
+- infoblox list authoritative dns zones
+- createhostrecord
+- infoblox list dns host records
+- infoblox list dns a records
+- infoblox create an authoritative dns zone
+- infoblox create a dhcp range
+- infoblox get grid information
+- security
+- infoblox list dns aaaa records
+- infoblox list forward dns zones
 slug: infoblox-capability
 source_filename: infoblox-capability.yaml
 source_heading: Capability Spec

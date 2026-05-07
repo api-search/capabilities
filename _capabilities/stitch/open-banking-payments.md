@@ -29,34 +29,34 @@ personas: []
 provider_name: Stitch
 provider_slug: stitch
 search_terms:
-- linked user bank accounts.
-- initiate a pay by bank payment in south africa or nigeria. returns a payment url to redirect the customer for bank authorization.
-- create disbursement
-- check the status of a payment initiation request (pending, complete, cancelled, or error). use to poll for payment completion.
-- payment initiation requests.
-- unified api
+- initiate a pay by bank payment for a customer.
+- list bank accounts linked by the user. use to show available accounts for payment or data analysis.
+- outbound payment disbursements.
+- retrieve transaction history for a linked bank account. supports relay-style cursor pagination via first/after parameters.
 - get transactions for a linked bank account.
+- initiate a pay by bank payment in south africa or nigeria. returns a payment url to redirect the customer for bank authorization.
+- unified api
+- create disbursement
+- payment initiation requests.
 - list bank accounts
+- fintech
+- nigeria
+- financial data
+- bank account transactions.
+- create an outbound disbursement to a bank account.
 - list bank accounts linked by the user.
-- send an outbound payment disbursement to a beneficiary bank account. use for marketplace payouts, refunds, or mass payments.
-- payment status retrieval.
 - get payment status
 - initiate payment
-- get current status of a payment initiation request.
+- check the status of a payment initiation request (pending, complete, cancelled, or error). use to poll for payment completion.
 - open banking
-- financial data
-- retrieve transaction history for a linked bank account. supports relay-style cursor pagination via first/after parameters.
-- initiate a pay by bank payment for a customer.
+- linked user bank accounts.
 - payments
-- outbound payment disbursements.
+- payment status retrieval.
 - south africa
+- get current status of a payment initiation request.
 - get account transactions
-- bank account transactions.
-- nigeria
-- list bank accounts linked by the user. use to show available accounts for payment or data analysis.
+- send an outbound payment disbursement to a beneficiary bank account. use for marketplace payouts, refunds, or mass payments.
 - africa
-- create an outbound disbursement to a bank account.
-- fintech
 slug: open-banking-payments
 source_filename: open-banking-payments.yaml
 source_heading: Capability Spec

@@ -21,18 +21,18 @@ personas: []
 provider_name: LicensePlateData
 provider_slug: licenseplatedata
 search_terms:
-- decodevin
-- decode a vin
 - retrieve vehicle images
+- vin
+- vin decoding
+- license plates
 - vehicles
+- decodevin
+- getvehicleimages
 - plate lookup
 - api
-- getvehicleimages
+- decode a vin
 - platetovin
-- license plates
-- vin
 - automotive
-- vin decoding
 - licenseplatedata
 - convert a license plate to a vin
 slug: licenseplatedata-capability

@@ -45,32 +45,32 @@ personas: []
 provider_name: Quorum Software
 provider_slug: quorum
 search_terms:
-- create a lease
-- royalty accounting
-- list mineral interest owners
-- list wells
-- list leases
-- update a lease
 - get a well
-- updatelease
-- list division orders
-- oil & gas
 - getlease
-- quorum
-- getwell
-- get a lease
+- update a lease
+- royalty accounting
 - api
-- listdivisionorders
-- listleases
-- energy
-- listtracts
-- land management
 - production reporting
-- createlease
-- upstream
-- listwells
-- listowners
+- create a lease
+- listdivisionorders
+- listtracts
+- list division orders
+- list leases
+- oil & gas
 - list tracts
+- updatelease
+- listowners
+- get a lease
+- listwells
+- land management
+- energy
+- upstream
+- createlease
+- getwell
+- listleases
+- list wells
+- quorum
+- list mineral interest owners
 slug: quorum-capability
 source_filename: quorum-capability.yaml
 source_heading: Capability Spec

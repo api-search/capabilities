@@ -22,32 +22,32 @@ provider_name: US Bancorp
 provider_slug: us-bancorp
 search_terms:
 - rtp payment status
-- corporate banking
-- track the status of a sent rtp credit transfer
-- instant rtp credit transfer payments
-- disbursements
-- fraud prevention
-- finance
-- track rtp payment
-- send rtp payment
 - verify if a bank participates in the rtp network before initiating payment
-- check rtp eligibility
-- treasury management
-- get rtp status
-- get rtp payment status
-- send an instant rtp credit transfer (irrevocable)
-- rtp
-- open banking
 - rtp network eligibility check
-- fortune 500
+- verify rtp eligibility by routing number
+- track rtp payment
+- disbursements
+- send an instant, irrevocable rtp credit transfer via the clearing house
+- track the status of a sent rtp credit transfer
+- check rtp eligibility
+- send an instant rtp credit transfer (irrevocable)
+- finance
+- verify rtp eligibility
+- get rtp status
+- instant rtp credit transfer payments
+- fraud prevention
+- get rtp payment status
+- consumer banking
+- rtp
+- corporate banking
+- treasury management
+- push to card
+- open banking
+- banking
 - send rtp credit transfer
 - payments
-- verify rtp eligibility by routing number
-- push to card
-- consumer banking
-- send an instant, irrevocable rtp credit transfer via the clearing house
-- verify rtp eligibility
-- banking
+- fortune 500
+- send rtp payment
 slug: payments
 source_filename: payments.yaml
 source_heading: Capability Spec

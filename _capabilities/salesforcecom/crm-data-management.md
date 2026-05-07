@@ -41,50 +41,50 @@ personas: []
 provider_name: Salesforce
 provider_slug: salesforcecom
 search_terms:
-- get org limits
-- delete record
-- sales
-- get field definitions for a salesforce object type
-- get current salesforce org limits and api usage
-- check current salesforce org api call limits and remaining usage
-- delete a salesforce crm record (moves to recycle bin, recoverable)
-- get record
-- marketing
-- update record
-- check api limits
-- cloud
-- records
-- search records
-- create a new salesforce record
-- execute query
-- update fields on an existing salesforce crm record
 - update fields on a salesforce record
-- ai
-- query
-- crm
-- read, update, and delete individual records
-- sobject field metadata
-- data management
-- get a salesforce record by sobject type and id
-- get field definitions and schema metadata for a salesforce object type
-- get field metadata
-- query salesforce records using soql (e.g., select id, name from account where industry = 'technology')
-- execute a soql query
-- search across multiple salesforce object types using sosl full-text search
-- create record
-- delete a salesforce record
-- execute search
-- create a new salesforce crm record (account, contact, lead, opportunity, case)
-- org api usage limits
-- soql query execution
-- sosl cross-object search
-- describe sobject
-- create new records by sobject type
-- execute a sosl search across multiple object types
-- retrieve a specific salesforce crm record by object type and id
-- salesforce
-- query records
 - automation
+- delete a salesforce crm record (moves to recycle bin, recoverable)
+- create record
+- retrieve a specific salesforce crm record by object type and id
+- ai
+- get a salesforce record by sobject type and id
+- sosl cross-object search
+- create new records by sobject type
+- read, update, and delete individual records
+- delete a salesforce record
+- org api usage limits
+- query
+- get current salesforce org limits and api usage
+- search records
+- get field definitions and schema metadata for a salesforce object type
+- data management
+- get field definitions for a salesforce object type
+- get record
+- search across multiple salesforce object types using sosl full-text search
+- crm
+- delete record
+- update record
+- query records
+- create a new salesforce crm record (account, contact, lead, opportunity, case)
+- update fields on an existing salesforce crm record
+- query salesforce records using soql (e.g., select id, name from account where industry = 'technology')
+- check api limits
+- execute query
+- create a new salesforce record
+- execute search
+- cloud
+- soql query execution
+- execute a sosl search across multiple object types
+- get field metadata
+- records
+- sales
+- sobject field metadata
+- marketing
+- get org limits
+- execute a soql query
+- check current salesforce org api call limits and remaining usage
+- salesforce
+- describe sobject
 slug: crm-data-management
 source_filename: crm-data-management.yaml
 source_heading: Capability Spec

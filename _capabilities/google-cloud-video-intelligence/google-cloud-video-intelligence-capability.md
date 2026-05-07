@@ -21,23 +21,23 @@ personas: []
 provider_name: Google Cloud Video Intelligence
 provider_slug: google-cloud-video-intelligence
 search_terms:
+- machine learning
+- video analysis
+- video
+- google cloud video intelligence delete operation
+- getoperation
 - intelligence
+- google
 - annotatevideo
 - deleteoperation
-- google cloud video intelligence get operation status
-- machine learning
-- cloud
-- google
-- api
+- content moderation
+- google cloud
 - object detection
 - video intelligence
-- video
+- google cloud video intelligence get operation status
+- api
+- cloud
 - google cloud video intelligence annotate video
-- getoperation
-- google cloud video intelligence delete operation
-- video analysis
-- google cloud
-- content moderation
 slug: google-cloud-video-intelligence-capability
 source_filename: google-cloud-video-intelligence-capability.yaml
 source_heading: Capability Spec

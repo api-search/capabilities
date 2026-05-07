@@ -14,25 +14,25 @@ personas: []
 provider_name: HubSpot
 provider_slug: hubspot
 search_terms:
-- sales
-- get access token metadata
-- hubspot
-- get token metadata
-- developer
 - analytics
-- content
-- marketing
-- oauth
-- oauth token metadata
+- hubspot
 - operations
-- commerce
-- marketing automation
-- crm
-- email marketing
-- retrieve metadata for an oauth access token
-- platform
-- customer service
 - automation
+- platform
+- crm
+- get access token metadata
+- content
+- oauth token metadata
+- retrieve metadata for an oauth access token
+- get token metadata
+- marketing
+- sales
+- customer service
+- developer
+- oauth
+- marketing automation
+- commerce
+- email marketing
 slug: developer-platform
 source_filename: developer-platform.yaml
 source_heading: Capability Spec

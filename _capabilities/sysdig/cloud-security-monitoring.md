@@ -69,88 +69,88 @@ personas: []
 provider_name: Sysdig
 provider_slug: sysdig
 search_terms:
-- create a monitoring dashboard
-- create a monitoring alert
-- scanned container images
-- search for available sysdig metrics by name pattern
-- list vulnerabilities
-- team management
-- list all monitoring dashboards
-- list teams
 - find metrics
-- security
-- get image sbom
-- cloud security
-- get image vulnerabilities
-- create a runtime security policy
-- create a custom falco detection rule
-- observability
-- list sysdig secure runtime security events triggered by policy violations
-- get compliance results
-- get policy
-- list runtime security events
-- sysdig
-- create a new runtime security policy
-- list policies
-- list all sysdig teams and their configurations
-- scan image
-- list falco rules
-- list runtime security policies
-- create a new monitoring alert for cloud infrastructure
-- search for available metrics
-- trigger image vulnerability scan
-- runtime security policies
-- runtime security events from policy violations
-- list container and host vulnerability scanning results
-- monitoring
-- create dashboard
-- kubernetes
-- monitor alerts for cloud-native infrastructure
-- list monitor events
-- monitoring dashboards
-- list compliance evaluation tasks (pci-dss, gdpr, nist)
-- get details of a specific sysdig monitor alert
-- list all container images that have been scanned
-- get alert
-- list activity audit
-- get compliance check results for a specific task
-- compliance evaluation tasks and results
-- list monitoring events
-- get vulnerability findings for a specific container image
-- compliance
-- vulnerability scanning results
-- list compliance evaluation tasks
-- list security events
-- list scanned container images
-- list all teams
-- list the activity audit trail for forensic investigation
-- list dashboards
-- monitoring events
-- list all falco security detection rules
-- cspm
-- list alerts
-- list images
-- list vulnerability scanning results
-- list sysdig monitor dashboards
-- list activity audit entries
-- trigger a vulnerability scan for a container image
-- list sysdig secure runtime security policies
-- vulnerability management
-- list audit
-- get the software bill of materials (sbom) for a container image
-- get details of a specific runtime security policy
-- list all monitoring alerts
 - containers
-- search available metrics
-- activity audit trail
-- create falco rule
+- monitor alerts for cloud-native infrastructure
+- get policy
+- get vulnerability findings for a specific container image
+- list runtime security policies
+- cloud security
+- list all teams
+- create dashboard
+- list activity audit
+- list activity audit entries
+- get image vulnerabilities
+- list all monitoring dashboards
+- list all monitoring alerts
 - create policy
 - list scanned images
+- list the activity audit trail for forensic investigation
+- list all falco security detection rules
+- list vulnerabilities
+- trigger a vulnerability scan for a container image
 - create alert
-- list compliance tasks
+- list images
+- get details of a specific sysdig monitor alert
+- list security events
 - list sysdig monitor alerts for cloud-native infrastructure
+- create a monitoring dashboard
+- create a new runtime security policy
+- scan image
+- search for available sysdig metrics by name pattern
+- search for available metrics
+- vulnerability scanning results
+- vulnerability management
+- activity audit trail
+- get compliance results
+- security
+- create a custom falco detection rule
+- scanned container images
+- create a new monitoring alert for cloud infrastructure
+- list sysdig secure runtime security events triggered by policy violations
 - list sysdig monitor events within a time range
+- monitoring
+- list container and host vulnerability scanning results
+- list vulnerability scanning results
+- list compliance evaluation tasks (pci-dss, gdpr, nist)
+- list sysdig monitor dashboards
+- get the software bill of materials (sbom) for a container image
+- kubernetes
+- observability
+- sysdig
+- runtime security events from policy violations
+- list policies
+- get alert
+- compliance evaluation tasks and results
+- list falco rules
+- create a runtime security policy
+- runtime security policies
+- list compliance tasks
+- list sysdig secure runtime security policies
+- list compliance evaluation tasks
+- monitoring events
+- get image sbom
+- trigger image vulnerability scan
+- create a monitoring alert
+- team management
+- get compliance check results for a specific task
+- compliance
+- list teams
 - runtime security
+- cspm
+- list scanned container images
+- monitoring dashboards
+- list runtime security events
+- list alerts
+- list audit
+- list dashboards
+- list all sysdig teams and their configurations
+- list all container images that have been scanned
+- list monitoring events
+- search available metrics
+- get details of a specific runtime security policy
+- create falco rule
+- list monitor events
 slug: cloud-security-monitoring
 source_filename: cloud-security-monitoring.yaml
 source_heading: Capability Spec

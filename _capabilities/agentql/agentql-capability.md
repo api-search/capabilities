@@ -21,30 +21,30 @@ personas: []
 provider_name: AgentQL
 provider_slug: agentql
 search_terms:
-- agents
-- createremotebrowsersession
-- rest api
-- AI Developer
-- extract structured data from pdf invoices, reports, and images
-- developers building ai agents that need web access and data extraction capabilities
-- data extraction
-- extract structured data from any public web page using agentql queries
-- Data Engineer
-- querydocument
-- agentql query document
-- agentql query web page data
-- artificial intelligence
-- web scraping
-- engineers building data pipelines that collect structured data from web sources
-- programmatic browser control for authenticated and complex web interactions
-- agentql
-- api
-- browser automation
-- querywebpagedata
-- agentql create remote browser session
 - extracting structured data from web pages using natural language queries
-- use remote browser sessions to automate authenticated web interactions
+- agentql query document
+- engineers building data pipelines that collect structured data from web sources
+- api
+- AI Developer
+- artificial intelligence
+- querywebpagedata
+- data extraction
+- agentql
+- querydocument
+- developers building ai agents that need web access and data extraction capabilities
+- createremotebrowsersession
+- agents
+- browser automation
 - extracting structured data from pdfs and image documents
+- agentql query web page data
+- extract structured data from pdf invoices, reports, and images
+- use remote browser sessions to automate authenticated web interactions
+- Data Engineer
+- rest api
+- extract structured data from any public web page using agentql queries
+- agentql create remote browser session
+- web scraping
+- programmatic browser control for authenticated and complex web interactions
 slug: agentql-capability
 source_filename: agentql-capability.yaml
 source_heading: Capability Spec

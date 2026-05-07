@@ -37,28 +37,28 @@ personas: []
 provider_name: Google Cloud AutoML
 provider_slug: google-cloud-automl
 search_terms:
+- listdatasets
+- google cloud automl create a model
+- google cloud automl delete a model
+- api
+- createdataset
+- createmodel
+- google
+- deletemodel
+- getmodel
+- machine learning
+- listmodels
 - google cloud automl get a model
-- google cloud automl list models
+- cloud
+- automl
+- google cloud automl make a prediction
 - custom models
 - training
 - google cloud automl list datasets
-- listdatasets
-- cloud
-- deletemodel
-- google
-- createdataset
-- getmodel
-- google cloud automl create a dataset
-- listmodels
 - predict
-- machine learning
-- createmodel
-- api
-- google cloud automl create a model
-- automl
-- google cloud automl delete a model
 - google cloud
-- google cloud automl make a prediction
+- google cloud automl create a dataset
+- google cloud automl list models
 slug: google-cloud-automl-capability
 source_filename: google-cloud-automl-capability.yaml
 source_heading: Capability Spec

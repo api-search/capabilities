@@ -25,36 +25,36 @@ personas: []
 provider_name: SAP Commerce Cloud
 provider_slug: sap-commerce-cloud
 search_terms:
-- customer search for assisted service.
+- retail
 - create a customer support ticket for order or product issues.
 - search products in the catalog.
-- list available product catalogs in sap commerce cloud.
-- list catalogs
-- get catalog
-- omnichannel
-- retail
 - b2b
-- search customers
-- content management
 - commerce
 - ecommerce
-- b2c
-- single product catalog.
+- customer search for assisted service.
+- list catalogs
+- product search.
 - sap
 - get catalog details.
+- search customers
 - list categories
-- create support ticket
-- get structure, versions, and configuration of a product catalog.
-- list product catalogs.
-- search the product catalog for content management review.
-- product catalog management.
-- search for customer accounts to assist through the asm interface.
-- catalog
 - customer experience
-- search products
+- search the product catalog for content management review.
+- single product catalog.
 - search customers for assisted service.
+- list product catalogs.
+- product catalog management.
+- catalog
+- b2c
+- get structure, versions, and configuration of a product catalog.
 - list product categories within a catalog version.
-- product search.
+- content management
+- create support ticket
+- omnichannel
+- search for customer accounts to assist through the asm interface.
+- get catalog
+- list available product catalogs in sap commerce cloud.
+- search products
 slug: catalog-and-content-management
 source_filename: catalog-and-content-management.yaml
 source_heading: Capability Spec

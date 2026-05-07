@@ -73,73 +73,73 @@ personas: []
 provider_name: Suger
 provider_slug: suger
 search_terms:
+- list all invoices for an organization
+- create entitlement
+- invoice management
+- create a new marketplace offer for a product
+- get a specific marketplace product
+- list usage record groups
+- get a specific entitlement
+- get offer
+- get product
+- list revenue records for a cloud partner
+- list all cloud marketplace products for an organization
+- create product
+- create a new buyer
+- list products
+- individual offer operations
+- billing
+- list all invoices
+- list revenue records for a cloud marketplace partner (aws, azure, gcp)
+- list all marketplace offers for an organization
+- create a new marketplace product
+- delete product
+- saas
+- get a specific marketplace offer by id
+- customer entitlements
+- revenue
+- get a specific customer entitlement by id
+- delete a marketplace offer
+- create a new cloud marketplace product listing
+- update product
+- create a new entitlement
+- list all buyers
+- list all marketplace offers
+- buyer management
+- create a new marketplace offer
+- delete offer
+- list all customer entitlements, optionally filtered by buyer or product
+- delete a marketplace product
+- marketplace offers
+- list all buyers/customers for an organization
+- approve entitlement
+- list usage metering record groups for billing
+- update a marketplace product
 - list buyers
+- cancel entitlement
+- list entitlements
+- update an existing cloud marketplace product
+- get a specific marketplace offer
+- co-sell
+- list all customer entitlements
+- gtm
+- individual entitlement operations
+- create offer
+- cancel a customer entitlement
+- list all marketplace products
+- list revenue records
+- list invoices
+- revenue records
+- individual product operations
+- create buyer
+- get a specific cloud marketplace product by id
 - cloud marketplace product listings
 - list offers
-- list all marketplace offers
-- co-sell
-- get a specific cloud marketplace product by id
-- get a specific marketplace offer by id
-- delete a marketplace offer
-- update an existing cloud marketplace product
-- create offer
-- approve entitlement
-- get a specific entitlement
-- invoice management
-- list revenue records for a cloud partner
-- list all customer entitlements, optionally filtered by buyer or product
-- list usage record groups
-- update a marketplace product
-- list all buyers/customers for an organization
-- create entitlement
-- list all customer entitlements
-- buyer management
-- get product
-- individual entitlement operations
-- delete offer
-- gtm
 - get entitlement
-- get a specific marketplace product
-- delete product
-- revenue records
-- create a new marketplace product
-- create a new buyer
-- billing
-- cancel entitlement
-- get a specific customer entitlement by id
-- individual product operations
-- marketplace offers
-- get a specific marketplace offer
-- list all marketplace offers for an organization
-- list all marketplace products
-- list entitlements
-- saas
-- list revenue records
-- list all cloud marketplace products for an organization
-- list revenue records for a cloud marketplace partner (aws, azure, gcp)
-- create a new entitlement
-- customer entitlements
-- create buyer
-- cancel a customer entitlement
-- entitlement
-- get offer
-- list usage metering record groups for billing
-- create a new buyer/customer record
-- individual offer operations
-- create a new marketplace offer
-- create a new cloud marketplace product listing
-- list products
-- create product
-- approve a pending customer entitlement
-- list invoices
-- list all invoices for an organization
-- create a new marketplace offer for a product
-- delete a marketplace product
-- list all buyers
 - cloud marketplace
-- revenue
-- update product
-- list all invoices
+- approve a pending customer entitlement
+- create a new buyer/customer record
+- entitlement
 slug: marketplace-management
 source_filename: marketplace-management.yaml
 source_heading: Capability Spec

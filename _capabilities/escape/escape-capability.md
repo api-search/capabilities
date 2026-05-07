@@ -249,130 +249,130 @@ personas: []
 provider_name: Escape
 provider_slug: escape
 search_terms:
-- createasset rest
-- ignorescan
-- list scans
-- start an authentication configuration check
-- create a dast graphql profile
-- list inbox emails
-- create an automated pentest graphql profile
-- create asset grpc
-- security
-- createdastrestprofile
-- createasset schema
-- createpentestgraphqlprofile
-- start a new scan
-- api
-- bulkupdateassets
-- bulkdeleteassets
-- listscans
-- deleteprofile
-- create asset mcp
-- create an automated pentest webapp profile
-- update a profile
-- createasset soap
-- createassetcomment
-- bulk update assets
-- create an automated pentest rest profile
-- listissues
-- getauthentication
-- scansproblems
-- getissuefunnel
-- createasset dns
-- updateprofileconfiguration
-- createasset graphql
-- create asset code-project
-- list scan targets and api coverage
-- update an asset
-- create asset webapp
-- list activities of an asset
-- createasset package
-- getissue
-- create asset ipv4-range
-- createasset code project
-- listinboxemails
-- updateprofile
-- createissuecomment
-- ignore a scan
-- get a profile
-- create asset ipv4
-- bulk delete assets
-- createdastwebappprofile
-- updateprofileschema
-- create a dast webapp profile
-- create asset bitbucket-repository
-- update profile schema
 - list issues
-- list activities of an issue
-- get a scan
-- get issue severity trends
-- create asset package
-- readinboxemail
-- create asset github-repository
-- delete an asset
-- createasset mcp
-- comment on an asset
-- create asset soap
-- create asset rest
-- get authentication configuration check status
-- createasset ipv4
-- create asset dns
-- get issue funnel
-- createasset websocket
-- getissuetrends
-- list all scan statuses and problems
-- create asset gitlab-repository
-- createasset grpc
-- get an issue
-- deleteasset
-- listassetactivities
-- update profile configuration
-- bulkupdateissues
+- createasset code project
+- list scan targets and api coverage
+- getissue
+- update a profile
+- getauthentication
+- updateprofileschema
+- create asset ipv6
+- api
+- comment on an issue
 - create asset schema
-- createasset aws lambda
-- createpentestrestprofile
-- updateissue
-- get an asset
-- startscan
-- createasset azure tenant
-- createasset ipv6
-- create asset software
-- bulk update issues
-- createasset bitbucket repository
-- cancelscan
-- createpentestwebappprofile
+- listissueactivities
 - list profiles
 - createasset webapp
-- list scans with their problems
-- comment on an issue
-- createasset software
-- listprofiles
-- delete a profile
-- listassets
-- problems
-- create asset azure-tenant
-- createasset ipv4 range
-- getasset
-- create asset graphql
-- createdastgraphqlprofile
-- listscantargets
-- create asset aws-lambda
-- createasset github repository
-- list assets
-- update an issue
-- create asset ipv6
-- getscan
-- updateasset
-- cancel a scan
-- listissueactivities
-- createasset gitlab repository
-- platform
-- escape
-- getprofile
-- create asset websocket
-- read inbox email content
+- listissues
+- scansproblems
+- createasset mcp
+- get issue severity trends
 - startauthentication
+- delete a profile
+- create asset package
+- getscan
+- updateissue
+- delete an asset
+- create a dast webapp profile
+- comment on an asset
+- bulk delete assets
+- list activities of an issue
+- createasset bitbucket repository
+- update profile schema
+- getasset
+- create an automated pentest rest profile
+- get a scan
+- list inbox emails
+- problems
+- get a profile
+- create asset aws-lambda
+- ignore a scan
+- createasset ipv4
+- deleteprofile
+- createasset azure tenant
+- createasset ipv4 range
+- deleteasset
+- createasset schema
+- createdastgraphqlprofile
+- create asset graphql
+- create asset code-project
+- create asset websocket
+- create a dast graphql profile
+- create asset dns
+- escape
+- createpentestwebappprofile
+- bulkdeleteassets
+- bulkupdateassets
+- listassetactivities
+- listscantargets
+- updateasset
+- createasset graphql
+- create asset webapp
+- createpentestgraphqlprofile
+- create an automated pentest graphql profile
+- listassets
+- updateprofile
+- create asset azure-tenant
+- createasset dns
+- security
+- createassetcomment
+- create asset mcp
+- get issue funnel
+- ignorescan
+- createasset ipv6
+- list activities of an asset
 - create a dast rest profile
+- update an asset
+- getissuetrends
+- platform
+- start a new scan
+- createasset software
+- update profile configuration
+- listinboxemails
+- create asset soap
+- cancelscan
+- listprofiles
+- get authentication configuration check status
+- list scans with their problems
+- updateprofileconfiguration
+- getprofile
+- createasset websocket
+- listscans
+- bulk update issues
+- get an issue
+- create an automated pentest webapp profile
+- createasset aws lambda
+- get an asset
+- create asset software
+- createpentestrestprofile
+- bulk update assets
+- create asset bitbucket-repository
+- read inbox email content
+- createasset rest
+- create asset github-repository
+- createissuecomment
+- createdastwebappprofile
+- create asset grpc
+- list all scan statuses and problems
+- readinboxemail
+- createasset soap
+- list scans
+- create asset ipv4-range
+- update an issue
+- create asset gitlab-repository
+- createasset grpc
+- getissuefunnel
+- createasset gitlab repository
+- create asset ipv4
+- startscan
+- createdastrestprofile
+- bulkupdateissues
+- createasset github repository
+- create asset rest
+- start an authentication configuration check
+- cancel a scan
+- createasset package
+- list assets
 slug: escape-capability
 source_filename: escape-capability.yaml
 source_heading: Capability Spec

@@ -57,39 +57,39 @@ personas: []
 provider_name: Oracle Database 19c
 provider_slug: oracle-database-19c
 search_terms:
-- execute sql
-- get a row by primary key
-- insertrow
-- update a row by primary key
-- list documents in a soda collection
-- rest
-- listsodadocuments
-- get a soda document by key
-- getrow
-- machine-learning
-- json
-- getmetadatacatalog
-- enterprise
-- delete a soda document
-- sql
-- deletesodadocument
-- nosql
-- getsodadocument
-- querytable
-- executesql
-- oracle
-- database
 - replacesodadocument
+- 19c
+- updaterow
 - insert a row
-- delete a row
 - api
 - replace a soda document
-- 19c
+- execute sql
+- get a row by primary key
+- rest
+- deletesodadocument
 - insertsodadocument
-- updaterow
-- list the schema's rest endpoints catalog
-- deleterow
+- querytable
 - query an autorest-enabled table or view
+- machine-learning
+- update a row by primary key
+- getrow
+- sql
+- list documents in a soda collection
+- deleterow
+- enterprise
+- database
+- delete a row
+- executesql
+- json
+- list the schema's rest endpoints catalog
+- insertrow
+- delete a soda document
+- nosql
+- getsodadocument
+- get a soda document by key
+- listsodadocuments
+- getmetadatacatalog
+- oracle
 - insert a document into a soda collection
 slug: oracle-database-19c-capability
 source_filename: oracle-database-19c-capability.yaml

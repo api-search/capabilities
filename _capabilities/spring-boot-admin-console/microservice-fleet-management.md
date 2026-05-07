@@ -53,60 +53,60 @@ personas: []
 provider_name: Spring Boot Admin Console
 provider_slug: spring-boot-admin-console
 search_terms:
-- registered application fleet overview
-- instance micrometer metrics
-- get current logger levels for a specific microservice instance to diagnose logging issues
-- get instance loggers
-- deregister application
-- deregister an instance
-- instance environment configuration
-- list all registered applications with instance counts and status
-- java
-- get comprehensive details for a specific microservice instance by its admin id
-- get available micrometer metrics for a specific microservice instance
-- deregister instance
-- inspect instance environment
-- instance logger management
-- individual application instances
-- check instance health
-- inspect all environment properties and configuration for a specific microservice instance
-- deregister and remove a specific microservice instance from the admin server
-- get health status from instance actuator
-- get all instances for a named application
-- actuator
-- monitoring
-- get logger configuration for an instance
-- fleet management
-- get details and all running instances for a specific application by name
-- list instances
-- spring boot admin
-- get full instance details
-- list all spring boot applications registered with the admin server, including their health status and instance count
-- spring boot
-- instance health status
-- observability
-- list all registered instances with optional app filter
-- get build version, git commit, and runtime info for a specific microservice instance
-- set instance logger level
-- check the live health status of a specific microservice instance by proxying its actuator health endpoint
-- administration
-- get instance environment
-- set logger level for an instance at runtime
-- get instance metrics
-- get instance health
-- get available metrics for an instance
-- deregister all instances of an application
-- change the log level for a logger on a specific instance at runtime without restart (e.g., set debug for a troublesome service)
-- get instance info
-- single instance management
-- specific application details
 - get application
-- get environment properties for an instance
-- sre
-- list applications
-- microservices
+- individual application instances
+- instance health status
+- registered application fleet overview
+- spring boot
+- get all instances for a named application
+- list all registered instances with optional app filter
+- get instance environment
+- java
+- monitoring
+- set logger level for an instance at runtime
+- check instance health
 - get instance
+- get full instance details
+- get environment properties for an instance
+- specific application details
+- list instances
+- get current logger levels for a specific microservice instance to diagnose logging issues
+- deregister an instance
+- administration
+- observability
+- actuator
+- get available metrics for an instance
+- sre
+- inspect instance environment
+- get instance metrics
+- list all spring boot applications registered with the admin server, including their health status and instance count
+- inspect all environment properties and configuration for a specific microservice instance
+- deregister instance
+- get instance health
+- get logger configuration for an instance
+- get build version, git commit, and runtime info for a specific microservice instance
+- fleet management
+- spring boot admin
+- list applications
+- get health status from instance actuator
 - list all registered microservice instances, optionally filtered by application name
+- instance environment configuration
+- instance logger management
+- instance micrometer metrics
+- deregister and remove a specific microservice instance from the admin server
+- get instance loggers
+- get instance info
+- set instance logger level
+- get available micrometer metrics for a specific microservice instance
+- change the log level for a logger on a specific instance at runtime without restart (e.g., set debug for a troublesome service)
+- get details and all running instances for a specific application by name
+- list all registered applications with instance counts and status
+- microservices
+- deregister all instances of an application
+- single instance management
+- get comprehensive details for a specific microservice instance by its admin id
+- deregister application
+- check the live health status of a specific microservice instance by proxying its actuator health endpoint
 slug: microservice-fleet-management
 source_filename: microservice-fleet-management.yaml
 source_heading: Capability Spec

@@ -17,27 +17,27 @@ personas: []
 provider_name: VS Code Marketplace
 provider_slug: vs-code-marketplace
 search_terms:
-- search vs code marketplace for extensions by keyword, tag, or category. returns extension metadata, install counts, and ratings.
-- marketplace
-- visual studio code
-- developer tools
-- get information about a vs code extension publisher, including their extensions.
-- search trending extensions
-- search extensions by keyword, tag, publisher, or extension id.
-- ide
-- get details for a specific vs code extension by its publisher.name id (e.g., ms-python.python).
-- search extensions by category
-- get publisher information.
-- get extension by id
-- search vs code marketplace for extensions in a specific category (e.g., debuggers, themes, linters).
 - search extensions
-- search vs code marketplace for extensions with a specific tag.
-- extensions
 - search extensions by tag
-- find the most popular and trending vs code extensions sorted by install count.
-- microsoft
-- search and discover vs code extensions.
 - retrieve details about a specific extension publisher.
+- search extensions by keyword, tag, publisher, or extension id.
+- get details for a specific vs code extension by its publisher.name id (e.g., ms-python.python).
+- search trending extensions
+- microsoft
+- get information about a vs code extension publisher, including their extensions.
+- ide
+- find the most popular and trending vs code extensions sorted by install count.
+- developer tools
+- search and discover vs code extensions.
+- marketplace
+- search extensions by category
+- get extension by id
+- get publisher information.
+- visual studio code
+- search vs code marketplace for extensions by keyword, tag, or category. returns extension metadata, install counts, and ratings.
+- extensions
+- search vs code marketplace for extensions with a specific tag.
+- search vs code marketplace for extensions in a specific category (e.g., debuggers, themes, linters).
 - get publisher
 slug: extension-discovery
 source_filename: extension-discovery.yaml

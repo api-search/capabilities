@@ -37,46 +37,46 @@ personas: []
 provider_name: Squarespace
 provider_slug: squarespace
 search_terms:
-- webhooks
-- individual webhook subscription
-- create webhook subscription
-- create a new webhook subscription
-- delete webhook subscription
-- list all webhook subscriptions
-- list all configured webhook subscriptions for the merchant site.
-- reporting
-- customer, subscriber, and donor profiles
 - analytics
-- get a specific customer profile
-- retrieve a specific financial transaction by id.
-- finance
-- financial transaction records
-- marketing
-- list profiles
-- retrieve all customer profiles with optional filters
-- retrieve financial transaction records for orders and donations. supports date range filtering for reconciliation workflows.
-- retail
-- individual customer profile
-- event notifications
-- get a specific financial transaction
-- e-commerce
+- create a new webhook subscription
 - delete a webhook subscription
-- delete a webhook subscription by id.
-- commerce
-- individual transaction
-- get profile
-- list webhook subscriptions
+- squarespace
+- retrieve financial transactions with optional date filters
+- list all webhook subscriptions
+- retrieve all customer profiles with optional filters
 - create a new webhook subscription to receive real-time notifications for squarespace commerce events (order created, order updated, etc).
+- retail
+- list profiles
 - get transaction
 - crm
-- webhook event subscriptions
+- financial transaction records
+- finance
+- retrieve a specific financial transaction by id.
+- get a specific financial transaction
+- create webhook subscription
+- retrieve financial transaction records for orders and donations. supports date range filtering for reconciliation workflows.
+- e-commerce
+- webhooks
+- individual customer profile
+- get profile
+- customer, subscriber, and donor profiles
 - retrieve a specific customer profile by id.
-- retrieve financial transactions with optional date filters
-- website builder
+- webhook event subscriptions
+- delete webhook subscription
+- get a specific customer profile
 - retrieve customer, subscriber, and donor profiles from squarespace. filter by customer status or email address.
+- individual webhook subscription
+- event notifications
+- marketing
+- delete a webhook subscription by id.
 - payments
-- squarespace
+- reporting
+- list webhook subscriptions
+- list all configured webhook subscriptions for the merchant site.
+- website builder
+- individual transaction
 - list transactions
+- commerce
 slug: customer-and-reporting
 source_filename: customer-and-reporting.yaml
 source_heading: Capability Spec

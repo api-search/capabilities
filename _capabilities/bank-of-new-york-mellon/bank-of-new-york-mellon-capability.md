@@ -45,46 +45,46 @@ personas: []
 provider_name: BNY Mellon
 provider_slug: bank-of-new-york-mellon
 search_terms:
-- mellon
-- getpayment
-- wire, ach, swift, and chips payment execution
+- get account
 - analyst executing treasury transactions and reporting
-- listaccounts
-- getfundstransfer
-- bank
-- get account balances
-- get funds transfer
-- listtransactions
-- initiatefundstransfer
-- initiate funds transfer
-- Corporate Treasurer
-- initiatepayment
 - getaccount
-- list payments
+- getaccountbalances
+- institutional banking
 - new
 - treasury
-- institutional account management and cash positioning
-- initiate payment
-- Institutional Client
-- asset servicing
-- institutional investor or fund manager using bny custody and treasury services
-- institutional banking
 - api
-- get payment
-- institutional treasury operations including accounts, payments, and funds transfers
-- york
-- of
-- listpayments
-- payments
-- getaccountbalances
-- Treasury Analyst
-- internal funds transfers and liquidity management
-- wire transfers
+- asset servicing
 - list accounts
 - executive managing corporate liquidity and treasury operations
-- get account
-- list transactions
+- get account balances
+- getfundstransfer
+- Corporate Treasurer
+- wire, ach, swift, and chips payment execution
+- get payment
+- mellon
+- bank
+- institutional account management and cash positioning
+- wire transfers
+- listtransactions
+- institutional investor or fund manager using bny custody and treasury services
+- institutional treasury operations including accounts, payments, and funds transfers
+- internal funds transfers and liquidity management
+- of
+- york
+- initiate funds transfer
+- initiatepayment
+- initiate payment
+- listaccounts
 - banking
+- payments
+- getpayment
+- initiatefundstransfer
+- list transactions
+- get funds transfer
+- Treasury Analyst
+- listpayments
+- list payments
+- Institutional Client
 slug: bank-of-new-york-mellon-capability
 source_filename: bank-of-new-york-mellon-capability.yaml
 source_heading: Capability Spec

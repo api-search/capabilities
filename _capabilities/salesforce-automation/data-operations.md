@@ -34,56 +34,56 @@ personas: []
 provider_name: Salesforce Automation
 provider_slug: salesforce-automation
 search_terms:
-- sales
-- integration
-- sobject metadata and describe.
-- Salesforce Admin
-- list all bulk ingest jobs.
-- submit salesforce approval
-- describe all available sobjects.
-- create ingest job
 - manages sales processes, reports, and pipeline.
-- bulk data loading and external system integration.
-- create salesforce record
-- cloud
-- create a new record in salesforce.
-- execute query
-- flows, process automation, and approval management.
-- enterprise
-- record crud operations.
-- crud operations and data queries.
-- crm
-- execute a sosl search.
-- describe all available sobjects in the salesforce org.
-- query salesforce data
-- soql query execution.
-- describe salesforce sobjects
-- execute a sosl search across salesforce.
-- crud, queries, search, and bulk data operations.
-- manages salesforce configuration, data, and automation.
-- create a new record.
-- execute a soql query.
-- submit a record for approval in salesforce.
-- create bulk ingest job
-- list bulk ingest jobs
-- create record
 - create a new bulk ingest job.
-- execute search
-- search salesforce data
-- create a bulk data ingest job for large datasets.
-- real-time event streaming and change data capture.
-- create bulk query job
+- sobject metadata and describe.
+- flows, process automation, and approval management.
+- automation
+- create record
+- create a new record in salesforce.
+- submit salesforce approval
+- list all bulk ingest jobs.
+- create bulk ingest job
 - create a bulk query job for large result sets.
-- bulk data operations.
-- Integration Developer
+- submit a record for approval in salesforce.
 - execute a soql query against salesforce data.
+- create bulk query job
 - list ingest jobs
 - builds integrations between salesforce and external systems.
+- list bulk ingest jobs
+- manages salesforce configuration, data, and automation.
+- real-time event streaming and change data capture.
+- execute a soql query.
+- integration
+- crm
+- crud operations and data queries.
+- describe salesforce sobjects
 - data operations
-- sosl search.
 - describe all
+- execute a sosl search.
+- execute a sosl search across salesforce.
+- soql query execution.
+- describe all available sobjects in the salesforce org.
+- enterprise
+- execute query
+- create salesforce record
+- create a new record.
+- execute search
+- query salesforce data
+- search salesforce data
+- Integration Developer
+- Salesforce Admin
+- crud, queries, search, and bulk data operations.
+- bulk data loading and external system integration.
+- cloud
+- create ingest job
+- sales
+- create a bulk data ingest job for large datasets.
+- bulk data operations.
+- record crud operations.
+- describe all available sobjects.
+- sosl search.
 - salesforce
-- automation
 slug: data-operations
 source_filename: data-operations.yaml
 source_heading: Capability Spec

@@ -69,45 +69,45 @@ personas: []
 provider_name: Camtasia
 provider_slug: camtasia
 search_terms:
-- listlibraries
-- camtasia list templates
 - camtasia update an asset
-- getlibrary
-- downloadtemplate
-- listtemplates
 - camtasia list assets in a library
-- listlibraryassets
-- camtasia
-- camtasia get a template
-- camtasia download an asset file
-- gettemplate
-- uploadasset
+- video editing
+- camtasia get an asset
 - listcategories
-- camtasia upload an asset
-- screencast
-- e-learning
-- downloadasset
-- listassets
-- camtasia list libraries
-- getcategory
+- getlibrary
 - tutorial creation
 - sdk
-- video editing
-- getasset
-- oembed
 - api
-- camtasia download a template
-- getassetpreview
-- screen recording
-- camtasia get asset preview
-- camtasia get an asset
-- updateasset
 - deleteasset
-- camtasia get a category
-- camtasia list assets
-- camtasia delete an asset
+- getcategory
+- screen recording
 - camtasia get a library
+- uploadasset
+- screencast
+- camtasia list libraries
+- camtasia list templates
+- camtasia download a template
+- oembed
 - camtasia list asset categories
+- downloadasset
+- camtasia list assets
+- e-learning
+- camtasia
+- updateasset
+- listassets
+- camtasia download an asset file
+- downloadtemplate
+- camtasia get a category
+- camtasia upload an asset
+- camtasia get asset preview
+- listtemplates
+- gettemplate
+- camtasia delete an asset
+- getasset
+- camtasia get a template
+- listlibraries
+- getassetpreview
+- listlibraryassets
 slug: camtasia-capability
 source_filename: camtasia-capability.yaml
 source_heading: Capability Spec

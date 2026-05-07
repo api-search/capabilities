@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- create governance incident
-- get incident
-- nwm
 - governance
 - list incidents
-- api integration
-- spec-driven integration
-- ai
-- mcp
+- get incident
 - servicenow
+- ai
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- nwm
+- naftiko
+- create governance incident
 slug: nwm-servicenow-zero-touch-governance-flow
 source_filename: nwm-servicenow-zero-touch-governance-flow.yaml
 source_heading: Capability Spec

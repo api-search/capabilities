@@ -33,47 +33,47 @@ personas: []
 provider_name: Bloomberg
 provider_slug: bloomberg
 search_terms:
-- subscribe market data
-- transaction cost analysis
-- intraday bar request
-- intraday tick request
-- request reference data for securities and fields.
-- data license
-- request historical data.
-- historical data request
-- market data
 - analytics
-- request intraday ticks.
+- bloomberg
+- news
+- field search request
+- request reference data.
+- request intraday ohlc bars for a security.
+- subscribe to interval-based real-time bars.
+- intraday bar queries.
+- transaction cost analysis
+- quantitative analysis
+- request end-of-day historical data for securities.
+- subscribe market bar
+- search the bloomberg api data dictionary for fields.
 - field discovery.
+- subscribe market data
+- business intelligence
+- subscribe to streaming real-time market data.
+- subscribe market vwap
 - financial services
+- trading
+- intraday bar request
+- request historical data.
+- request intraday bars.
 - reference data queries.
 - look up field metadata.
-- subscribe to streaming real-time market data.
-- bloomberg
-- field info request
-- intraday tick queries.
-- enterprise
-- subscribe market bar
-- subscribe to interval-based real-time bars.
-- request end-of-day historical data for securities.
-- trading
-- request raw intraday tick data for a security.
-- field search request
-- historical data queries.
-- news
 - search for fields.
-- look up metadata for bloomberg field mnemonics.
-- reference data request
-- request intraday ohlc bars for a security.
-- quantitative analysis
-- request intraday bars.
-- request reference data.
-- intraday bar queries.
-- business intelligence
-- execution management
-- subscribe market vwap
+- request reference data for securities and fields.
 - subscribe to custom vwap stream.
-- search the bloomberg api data dictionary for fields.
+- enterprise
+- reference data request
+- intraday tick request
+- field info request
+- historical data queries.
+- look up metadata for bloomberg field mnemonics.
+- intraday tick queries.
+- market data
+- request raw intraday tick data for a security.
+- historical data request
+- execution management
+- data license
+- request intraday ticks.
 slug: market-data
 source_filename: market-data.yaml
 source_heading: Capability Spec

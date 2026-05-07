@@ -29,23 +29,23 @@ personas: []
 provider_name: Archrock
 provider_slug: archrock
 search_terms:
-- getoperationalmetrics
-- 'nyse: aroc'
-- compression services
-- industrial
 - getquarterlyfinancials
-- archrock
-- get compression fleet statistics
-- oil and gas
-- api
-- listequipment
-- listsecfilings
-- get operational performance metrics
-- natural gas
+- industrial
+- getoperationalmetrics
+- compression services
 - getfleetstatistics
 - get quarterly financial results
-- energy
+- get operational performance metrics
+- listequipment
+- oil and gas
 - list sec filings
+- energy
+- 'nyse: aroc'
+- archrock
+- api
+- natural gas
+- listsecfilings
+- get compression fleet statistics
 - list compression equipment
 slug: archrock-capability
 source_filename: archrock-capability.yaml

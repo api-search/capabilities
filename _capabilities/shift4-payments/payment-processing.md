@@ -33,25 +33,25 @@ personas: []
 provider_name: Shift4 Payments
 provider_slug: shift4-payments
 search_terms:
-- list shift4 disputes.
-- e-commerce
-- create checkout session
-- commerce
-- refund a shift4 charge.
-- capture a previously authorized shift4 charge.
-- list disputes
-- create a shift4 hosted checkout session.
-- capture charge
-- create refund
-- refunds
-- shift4
 - disputes
-- checkout
-- payments
-- create charge
-- create a shift4 charge against a card or token.
+- capture a previously authorized shift4 charge.
 - list charges
+- checkout
+- capture charge
 - fintech
+- shift4
+- list disputes
+- e-commerce
+- create refund
+- list shift4 disputes.
+- refunds
+- create a shift4 charge against a card or token.
+- create checkout session
+- payments
+- create a shift4 hosted checkout session.
+- create charge
+- refund a shift4 charge.
+- commerce
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

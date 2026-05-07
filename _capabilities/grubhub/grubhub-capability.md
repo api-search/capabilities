@@ -17,11 +17,11 @@ personas: []
 provider_name: grubhub
 provider_slug: grubhub
 search_terms:
-- create proxy courier phone number
-- api
-- get delivery status for an order
-- getdeliverystatus
 - grubhub
+- getdeliverystatus
+- create proxy courier phone number
+- get delivery status for an order
+- api
 - createproxycourierphone
 slug: grubhub-capability
 source_filename: grubhub-capability.yaml

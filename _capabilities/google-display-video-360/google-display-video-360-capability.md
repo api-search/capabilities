@@ -29,26 +29,26 @@ personas: []
 provider_name: Google Display & Video 360
 provider_slug: google-display-video-360
 search_terms:
-- google display & video 360 list campaigns
-- google display & video 360 list creatives
-- video ads
-- listcreatives
-- listadvertisers
-- display
-- google
-- dv360
 - google display & video 360 list insertion orders
+- google display & video 360 list creatives
 - listlineitems
-- google display & video 360 list line items
-- api
 - video
-- listcampaigns
+- targeting
+- api
 - display ads
 - '360'
+- dv360
+- display
+- listadvertisers
+- google
+- listcreatives
 - google display & video 360 list advertisers
-- programmatic advertising
 - campaign management
-- targeting
+- video ads
+- listcampaigns
+- google display & video 360 list line items
+- programmatic advertising
+- google display & video 360 list campaigns
 - listinsertionorders
 slug: google-display-video-360-capability
 source_filename: google-display-video-360-capability.yaml

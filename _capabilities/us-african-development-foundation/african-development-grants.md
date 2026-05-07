@@ -9,16 +9,16 @@ personas: []
 provider_name: US African Development Foundation
 provider_slug: us-african-development-foundation
 search_terms:
-- journalists and oversight staff monitoring usadf spending
-- federal government
-- grants
-- nonprofit
 - researchers and analysts studying usadf grant patterns and development impact
+- grants
+- african enterprises and ngos seeking usadf funding
+- nonprofit
 - international development
 - economic development
-- africa
-- african enterprises and ngos seeking usadf funding
+- federal government
 - research and tracking workflow for usadf grant awards, recipient organizations, and open funding opportunities for african grassroots enterprises
+- journalists and oversight staff monitoring usadf spending
+- africa
 slug: african-development-grants
 source_filename: african-development-grants.yaml
 source_heading: Capability Spec

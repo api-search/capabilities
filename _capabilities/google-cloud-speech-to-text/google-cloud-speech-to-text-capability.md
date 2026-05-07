@@ -29,27 +29,27 @@ personas: []
 provider_name: Google Cloud Speech-To-Text
 provider_slug: google-cloud-speech-to-text
 search_terms:
-- google cloud speech-to-text asynchronous speech recognition
+- audio processing
+- speech recognition
 - google cloud speech-to-text create a recognizer
 - google cloud speech-to-text list recognizers
-- cloud
-- google
-- longrunningrecognize
-- speech
 - recognize
-- google cloud speech-to-text synchronous speech recognition
-- listrecognizers
-- text
-- createrecognizer
-- machine learning
 - api
-- getoperation
+- google cloud speech-to-text asynchronous speech recognition
 - transcription
-- google cloud speech-to-text get operation status
-- audio processing
+- createrecognizer
+- google
+- machine learning
+- getoperation
 - to
-- speech recognition
+- google cloud speech-to-text get operation status
+- cloud
+- text
+- listrecognizers
 - google cloud
+- speech
+- google cloud speech-to-text synchronous speech recognition
+- longrunningrecognize
 slug: google-cloud-speech-to-text-capability
 source_filename: google-cloud-speech-to-text-capability.yaml
 source_heading: Capability Spec

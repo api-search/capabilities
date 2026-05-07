@@ -33,34 +33,34 @@ personas: []
 provider_name: AMC Entertainment Holdings
 provider_slug: amc-entertainment-holdings
 search_terms:
-- amc theatres
-- add amc order product
-- add payment
-- add product
-- ticketing
 - movies
-- loyalty
-- create a new amc order.
-- create amc order
-- get order
-- theatres
-- apply loyalty rewards
-- cancel order
-- showtimes
-- apply amc stubs loyalty rewards to an order.
-- apply amc stubs rewards to an order.
-- fortune 500
-- entertainment
-- create a new amc order against a theatre.
+- tickets
 - create order
-- payments
-- add a ticket or concession sku to an amc order.
-- add amc order payment
+- loyalty
+- create amc order
+- add product
+- theatres
 - orders
 - concessions
-- add payment to an amc order.
-- tickets
+- apply loyalty rewards
+- add amc order product
 - apply amc loyalty rewards
+- showtimes
+- apply amc stubs rewards to an order.
+- add a ticket or concession sku to an amc order.
+- cancel order
+- add payment to an amc order.
+- add payment
+- entertainment
+- create a new amc order.
+- payments
+- amc theatres
+- create a new amc order against a theatre.
+- apply amc stubs loyalty rewards to an order.
+- fortune 500
+- ticketing
+- add amc order payment
+- get order
 slug: ticket-purchase
 source_filename: ticket-purchase.yaml
 source_heading: Capability Spec

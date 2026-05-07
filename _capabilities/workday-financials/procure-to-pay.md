@@ -29,32 +29,32 @@ personas: []
 provider_name: Workday Financials
 provider_slug: workday-financials
 search_terms:
-- accounts payable
-- suppliers
-- purchase order management
-- get purchase order
-- get details of a specific purchase order
-- create purchase requisition
-- create a new purchase requisition
-- list purchase requisitions
-- accounting
-- financials
-- procure to pay
-- list supplier accounts in workday financials
-- purchase requisition management
-- get supplier
-- workday
-- financial management
-- get details of a specific supplier
+- procurement
 - list suppliers
+- accounting
+- get details of a specific purchase order
+- financials
 - list supplier invoices for payment processing
+- accounts payable
+- workday
+- list supplier accounts in workday financials
+- list purchase orders
+- create a purchase requisition
 - cloud erp
 - list supplier invoices
+- get supplier
+- get purchase order
+- procure to pay
+- financial management
+- list purchase requisitions
+- purchase order management
+- suppliers
 - supplier account management
+- create purchase requisition
+- get details of a specific supplier
 - supplier invoice processing
-- create a purchase requisition
-- list purchase orders
-- procurement
+- create a new purchase requisition
+- purchase requisition management
 slug: procure-to-pay
 source_filename: procure-to-pay.yaml
 source_heading: Capability Spec

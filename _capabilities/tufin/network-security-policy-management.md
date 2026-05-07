@@ -49,71 +49,71 @@ personas: []
 provider_name: Tufin
 provider_slug: tufin
 search_terms:
-- submit a new firewall rule change request to securechange workflow
-- get policy revision history for a network device
-- get a workflow task
-- get risk findings
-- security policy change tickets
-- risk analysis and policy compliance findings
+- network topology
 - firewall management
-- get change ticket
-- firewall rules for a network device
-- workflow task in a change ticket
+- get device rules
+- get firewall rules for a specific network device
+- approve change task
+- workflow automation
+- network topology path analysis
+- get a specific change ticket
+- get policy revision history for a network device
+- network objects across managed devices
+- get topology map
+- list security policy change tickets in securechange
 - search for network objects
+- get a workflow task
+- list all network devices in securetrack
+- list all network devices (firewalls) managed by tufin securetrack
+- retrieve the full network topology map from securetrack
+- get task
+- network devices managed by securetrack
+- compliance
+- submit a new firewall rule change request to securechange workflow
+- policy orchestration
+- get risk analysis findings
+- get change ticket
+- cloud security
+- risk analysis and policy compliance findings
+- network security
+- list security change tickets
+- submit a security change request
+- check if traffic is allowed between network endpoints
+- search services
+- update task
+- check if traffic is allowed between source and destination ip addresses
+- get workflow tasks for a change ticket
+- change management
+- search for network objects (ips, ranges, groups) across all managed devices
+- get details for a specific security change ticket
+- get tickets
+- security policy management
+- firewall rules for a network device
+- check path
+- list devices
+- get devices
+- search objects
+- get firewall rules for a device
+- security policy change tickets
 - get risk
 - create ticket
-- check network path
-- get topology map
-- search network objects
-- get security risk analysis findings including policy violations and unused rules
-- list all network devices (firewalls) managed by tufin securetrack
-- list security policy change tickets in securechange
-- update a workflow task
-- policy orchestration
-- get firewall rules for a device
-- search services
-- risk management
-- list devices
-- get device rules
-- get task
-- compliance
-- network topology path analysis
-- submit a security change request
-- check path
-- search for service definitions across managed devices
-- update task
-- list change tickets
-- create change ticket
-- cloud security
-- network security
-- single security change ticket
-- change management
-- check if traffic is allowed between source and destination ip addresses
-- security policy management
-- get ticket
-- approve or update a workflow task in a security change ticket
-- approve change task
-- network objects across managed devices
-- list all network devices in securetrack
-- workflow automation
-- check if traffic is allowed between network endpoints
-- search for network objects (ips, ranges, groups) across all managed devices
-- zero trust
-- get tickets
-- get a specific change ticket
-- retrieve the full network topology map from securetrack
-- get ticket tasks
-- network devices managed by securetrack
-- list device revisions
-- get devices
-- get workflow tasks for a change ticket
-- network topology
-- get details for a specific security change ticket
+- get risk findings
 - tufin
-- get risk analysis findings
-- list security change tickets
-- search objects
-- get firewall rules for a specific network device
+- update a workflow task
+- create change ticket
+- zero trust
+- get ticket
+- search for service definitions across managed devices
+- search network objects
+- list device revisions
+- get security risk analysis findings including policy violations and unused rules
+- check network path
+- get ticket tasks
+- risk management
+- workflow task in a change ticket
+- list change tickets
+- approve or update a workflow task in a security change ticket
+- single security change ticket
 slug: network-security-policy-management
 source_filename: network-security-policy-management.yaml
 source_heading: Capability Spec

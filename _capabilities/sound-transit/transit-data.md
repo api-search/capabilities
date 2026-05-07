@@ -33,50 +33,50 @@ personas: []
 provider_name: Sound Transit
 provider_slug: sound-transit
 search_terms:
-- active vehicle positions
-- real-time
-- stops
-- list all sound transit transit agencies with their geographic coverage areas. use as first step to identify agency ids for subsequent queries.
-- get schedule
-- transit
-- government
-- find transit routes near a geographic location. use to discover which bus or rail lines serve an area.
+- get real time arrivals
 - get all currently active trips for a specific route. use to track live service on a route including schedule adherence.
-- stop schedules
-- track agency vehicles
-- get real-time arrivals and departures for a transit stop
-- find transit stops near a geographic location. use for trip planning, finding the nearest bus stop or light rail station.
+- get all currently active vehicles for an agency
+- active vehicle positions
+- sound transit
+- list all sound transit transit agencies with their geographic coverage areas. use as first step to identify agency ids for subsequent queries.
+- gtfs
+- find nearby routes
+- public transportation
+- list active trips
+- real-time arrivals and departures for a stop
 - stop discovery near a location
+- list vehicles
+- routes
+- list transit agencies
+- list routes
+- transportation
+- get the complete scheduled timetable for a transit stop on a specific date. use for planning trips in advance.
+- route discovery near a location
+- stop schedules
+- stops
+- government
+- list all sound transit agencies with geographic coverage
+- find nearby stops
+- real-time data
+- list stops
+- public transit
+- find transit routes near a geographic location. use to discover which bus or rail lines serve an area.
+- get real-time arrival and departure predictions for a transit stop. returns next arriving buses and trains with predicted times.
+- seattle
 - find transit routes near a geographic location
 - get arrivals
-- real-time arrivals and departures for a stop
-- get all currently active vehicles for an agency
-- find nearby routes
-- seattle
-- find nearby stops
 - get the full schedule for a stop on a given day
-- transportation
-- list routes
-- get the complete scheduled timetable for a transit stop on a specific date. use for planning trips in advance.
+- get schedule
 - get stop schedule
-- get real-time arrival and departure predictions for a transit stop. returns next arriving buses and trains with predicted times.
-- real-time data
-- public transit
-- sound transit
-- list vehicles
-- list stops
-- route discovery near a location
-- find transit stops near a geographic location
-- gtfs
-- transit agency information and coverage
-- list transit agencies
-- list all sound transit agencies with geographic coverage
-- list agencies
-- public transportation
-- get real time arrivals
-- list active trips
-- routes
 - get the locations of all currently active vehicles for a transit agency. use for real-time vehicle tracking and fleet monitoring.
+- get real-time arrivals and departures for a transit stop
+- transit
+- find transit stops near a geographic location
+- real-time
+- find transit stops near a geographic location. use for trip planning, finding the nearest bus stop or light rail station.
+- transit agency information and coverage
+- track agency vehicles
+- list agencies
 slug: transit-data
 source_filename: transit-data.yaml
 source_heading: Capability Spec

@@ -29,37 +29,37 @@ personas: []
 provider_name: tidb
 provider_slug: tidb
 search_terms:
-- list all tidb cloud clusters
-- get details for a specific cluster
-- list import tasks
-- ai-powered sql queries
-- create a manual backup for a tidb cloud cluster
-- cloud
-- get detailed configuration and status for a specific tidb cloud cluster
-- tidb
-- data import tasks
-- cluster management
-- list backups
-- cluster backups
-- list cluster backups
-- list data import tasks for a tidb cloud cluster
-- database
-- chat2query
-- list all backups for a tidb cloud cluster
 - list backups for a cluster
-- list data import tasks for a cluster
-- individual cluster details
-- execute a natural language instruction against a tidb cloud database. the ai generates and runs sql automatically. ideal for ad-hoc analysis.
 - get cluster
-- data access
-- tidb cloud cluster management
-- list imports
-- create backup
-- execute a natural language query against a tidb database
-- query with natural language
+- list all tidb cloud clusters across projects
+- ai-powered sql queries
+- individual cluster details
+- list cluster backups
+- list import tasks
+- execute a natural language instruction against a tidb cloud database. the ai generates and runs sql automatically. ideal for ad-hoc analysis.
+- list data import tasks for a cluster
+- data import tasks
+- get details for a specific cluster
 - distributed sql
 - list clusters
-- list all tidb cloud clusters across projects
+- query with natural language
+- execute a natural language query against a tidb database
+- chat2query
+- tidb cloud cluster management
+- cluster management
+- list imports
+- create a manual backup for a tidb cloud cluster
+- database
+- list backups
+- cloud
+- get detailed configuration and status for a specific tidb cloud cluster
+- cluster backups
+- tidb
+- data access
+- list all tidb cloud clusters
+- list data import tasks for a tidb cloud cluster
+- create backup
+- list all backups for a tidb cloud cluster
 slug: database-operations
 source_filename: database-operations.yaml
 source_heading: Capability Spec

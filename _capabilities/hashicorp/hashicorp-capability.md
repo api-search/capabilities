@@ -249,116 +249,116 @@ personas: []
 provider_name: HashiCorp
 provider_slug: hashicorp
 search_terms:
-- postauthtokenlookupaccessor
-- getauthtokenlookupself
-- hashicorp this token create path is used to create new tokens adhering to the given role.
-- postauthtokenrevoke
-- postauthtokencreaterole name
-- hashicorp this endpoint will delete the token associated with the accessor and all of its child tokens.
-- delete /auth/token/roles/{role_name}
-- postidentitygroup
-- postauthtokenlookupself
-- hashicorp the token create path is used to create new orphan tokens.
-- postauthtokenrenew
-- cloud
-- delete /identity/group/name/{name}
-- hashicorp this endpoint will delete the token and orphan its child tokens.
-- getidentityentityaliasidid
-- getidentitygroupname
-- deletecubbyholepath
-- postauthtokenrevokeself
+- getauthtokenroles
+- deleteidentityentityidid
+- postauthtokenrevokeorphan
+- postidentityentityalias
+- postidentityentitynamename
 - api
-- postauthtokenlookup
+- get /identity/group-alias/id/{id}
+- getidentitygroupnamename
+- hashicorp query entities based on various properties.
+- post /auth/token/roles/{role_name}
+- getidentitygroupname
 - hashicorp merge two or more entities together
+- postidentitygroupidid
+- postauthtokenrevoke
+- getauthtokenlookupself
+- getauthtokenrolesrole name
+- postidentityentityidid
+- get /auth/token/roles/{role_name}
+- postidentityentitybatchdelete
+- postauthtokenrevokeaccessor
+- deleteidentityaliasidid
+- hashicorp store a secret at the specified location.
+- postauthtokenlookup
+- postidentityentity
+- postauthtokentidy
+- getidentitygroupidid
+- getidentityentityname
+- hashicorp update or delete an existing group using its id.
+- postauthtokenrenew
+- post /identity/group/name/{name}
+- hashicorp the token create path is used to create new tokens.
+- hashicorp this endpoint will renew the given token and prevent expiration.
+- hashicorp this endpoint will lookup a token associated with the given accessor and its properties. response will not contain the token id.
+- hashicorp this token create path is used to create new tokens adhering to the given role.
+- hashicorp create a new group.
+- hashicorp list all the group alias ids.
+- hashicorp this endpoint will delete the given token and all of its child tokens.
+- getidentitygroupid
+- hashicorp this endpoint will renew a token associated with the given accessor and its properties. response will not contain the token id.
+- deleteidentitygroupnamename
+- hashicorp update, read or delete an entity using entity id
+- hashicorp this endpoint lists configured roles.
+- deleteidentityentitynamename
+- cloud
+- hashicorp this endpoint will lookup a token and its properties.
+- getidentityentitynamename
+- hashicorp this endpoint will renew the token used to call it and prevent expiration.
+- getauthtokenlookup
+- hashicorp this endpoint will delete the token used to call it and all of its child tokens.
+- postauthtokenrevokeself
+- postidentitygroupnamename
+- hashicorp update, read or delete an alias id.
+- post /identity/group-alias/id/{id}
+- delete /identity/group/name/{name}
+- postauthtokenlookupself
 - postauthtokenrenewself
 - postcubbyholepath
-- post /auth/token/roles/{role_name}
-- hashicorp update, read or delete an entity using entity name
-- hashicorp list token accessors, which can then be be used to iterate and discover their properties or revoke them. because this can be used to cause a denial of service, this endpoint requires 'sudo' capability in addition to 'list'.
-- postauthtokenrevokeorphan
-- hashicorp create a new group.
-- deleteidentitygroupnamename
-- postidentityentitynamename
-- get /identity/group/name/{name}
-- getidentitygroupaliasidid
-- deleteauthtokenrolesrole name
-- hashicorp delete all of the entities provided
-- infrastructure
 - hashicorp list all the group ids.
-- getidentitygroupid
-- postidentityentitybatchdelete
-- getidentitygroupnamename
-- postauthtokenrenewaccessor
-- hashicorp this endpoint will renew the given token and prevent expiration.
-- postidentityentity
 - deleteidentitygroupidid
-- postauthtokencreateorphan
-- postidentitylookupentity
-- postidentitygroupnamename
-- hashicorp this endpoint will renew the token used to call it and prevent expiration.
-- deleteidentityaliasidid
-- getidentitygroupaliasid
-- deleteidentitygroupaliasidid
-- hashicorp create a new entity
-- hashicorp this endpoint performs cleanup tasks that can be run if certain error conditions have occurred.
-- hashicorp deletes the secret at the specified location.
-- postidentitygroupaliasidid
-- postidentityentityalias
-- postidentityalias
-- deleteidentityentityaliasidid
-- getauthtokenaccessors
-- getidentityentitynamename
-- post /identity/group/name/{name}
-- hashicorp update, read or delete an entity using entity id
-- hashicorp update or delete an existing group using its id.
-- devops
-- hashicorp this endpoint will delete the given token and all of its child tokens.
-- hashicorp
-- hashicorp this endpoint lists configured roles.
-- getidentityaliasid
-- hashicorp this endpoint will renew a token associated with the given accessor and its properties. response will not contain the token id.
-- getauthtokenrolesrole name
-- post /identity/group-alias/id/{id}
-- getidentityentityname
-- hashicorp this endpoint will delete the token used to call it and all of its child tokens.
-- hashicorp creates a new group alias, or updates an existing one.
-- getidentitygroupidid
-- deleteidentityentitynamename
-- postidentityentityaliasidid
-- hashicorp store a secret at the specified location.
-- get /identity/group-alias/id/{id}
-- hashicorp retrieve the secret at the specified location.
-- postidentityentityidid
-- delete /identity/group-alias/id/{id}
-- get /identity/group/name
-- getidentityentityaliasid
-- hashicorp query entities based on various properties.
-- hashicorp update, read or delete an alias id.
-- postauthtokenrolesrole name
-- getcubbyholepath
-- hashicorp list all the alias ids.
-- postauthtokencreate
-- getidentityentityid
-- deleteidentityentityidid
-- hashicorp list all the entity names
-- postidentitygroupalias
-- postauthtokentidy
-- hashicorp the token create path is used to create new tokens.
-- hashicorp list all the entity ids
-- postidentityentitymerge
-- getauthtokenlookup
-- getidentityentityidid
-- get /auth/token/roles/{role_name}
-- hashicorp this endpoint will lookup a token and its properties.
-- hashicorp this endpoint will lookup a token associated with the given accessor and its properties. response will not contain the token id.
-- getidentityaliasidid
-- postauthtokenrevokeaccessor
-- hashicorp create a new alias.
+- hashicorp update, read or delete an entity using entity name
 - platform
-- getauthtokenroles
+- postauthtokenrolesrole name
+- getidentitygroupaliasid
+- delete /auth/token/roles/{role_name}
+- postidentityentitymerge
+- postidentitygroupaliasidid
+- infrastructure
+- hashicorp delete all of the entities provided
+- postauthtokencreateorphan
+- getauthtokenaccessors
+- deletecubbyholepath
 - postidentityaliasidid
-- hashicorp list all the group alias ids.
-- postidentitygroupidid
+- postidentityentityaliasidid
+- getcubbyholepath
+- hashicorp create a new entity
+- getidentityentityid
+- hashicorp create a new alias.
+- getidentityentityaliasid
+- hashicorp list all the entity names
+- hashicorp list all the entity ids
+- hashicorp the token create path is used to create new orphan tokens.
+- get /identity/group/name
+- hashicorp retrieve the secret at the specified location.
+- devops
+- deleteidentityentityaliasidid
+- postidentityalias
+- postauthtokencreate
+- hashicorp list all the alias ids.
+- hashicorp
+- hashicorp list token accessors, which can then be be used to iterate and discover their properties or revoke them. because this can be used to cause a denial of service, this endpoint requires 'sudo' capability in addition to 'list'.
+- hashicorp this endpoint performs cleanup tasks that can be run if certain error conditions have occurred.
+- getidentityentityaliasidid
+- get /identity/group/name/{name}
+- postidentitygroup
+- getidentitygroupaliasidid
+- postidentitygroupalias
+- postidentitylookupentity
+- deleteauthtokenrolesrole name
+- hashicorp this endpoint will delete the token associated with the accessor and all of its child tokens.
+- getidentityentityidid
+- getidentityaliasidid
+- postauthtokencreaterole name
+- getidentityaliasid
+- hashicorp deletes the secret at the specified location.
+- hashicorp creates a new group alias, or updates an existing one.
+- deleteidentitygroupaliasidid
+- delete /identity/group-alias/id/{id}
+- postauthtokenrenewaccessor
+- hashicorp this endpoint will delete the token and orphan its child tokens.
+- postauthtokenlookupaccessor
 slug: hashicorp-capability
 source_filename: hashicorp-capability.yaml
 source_heading: Capability Spec

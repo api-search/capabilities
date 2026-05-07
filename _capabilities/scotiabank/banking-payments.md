@@ -45,56 +45,56 @@ personas: []
 provider_name: Scotiabank
 provider_slug: scotiabank
 search_terms:
-- track payment
-- account balance retrieval
-- electronic funds transfer management
-- list eligible deposit accounts
-- get wire payment
-- validate account number and ownership
-- get account balance
-- initiate wire transfer
-- validate a scotiabank account number format and check ownership match likelihood.
-- initiate a domestic or international wire transfer (cad or usd). powered by swift gpi for real-time tracking.
-- initiate a domestic or international wire transfer
-- get wire payment status
-- get current or prior-day account balance including opening and closing balances.
-- finance
-- get current or prior-day balance
-- send a real-time business payment via interac e-transfer (up to $25,000). recipient receives payment at their email address.
-- account transaction history
-- validate bank account
-- initiate realtime payment
-- list bank accounts
-- treasury management
-- get the current status of a wire payment by payment id
-- real-time interac e-transfer payments
+- track the real-time status of a wire payment using its unique end-to-end transaction reference (uetr).
 - list enriched transaction history for an account (up to 2 years). returns transaction date, amount, credit/debit indicator, and description.
-- initiate wire payment
-- create eft payment
-- validate account
 - canada
+- get current or prior-day balance
+- account balance retrieval
+- validate bank account
+- list accounts
+- initiate wire payment
+- list bank accounts
+- real-time interac e-transfer payments
+- get account balance
+- initiate a domestic or international wire transfer (cad or usd). powered by swift gpi for real-time tracking.
+- eft
+- get the current status of a wire payment by payment id
+- initiate wire transfer
+- list eligible deposit accounts
+- finance
+- account validation
+- validate account
+- create and submit eft payment
+- electronic funds transfer management
+- account transaction history
 - interac
 - payment status tracking
-- open banking
-- list all eligible scotiabank deposit accounts for the customer
-- send real-time payment via interac e-transfer
-- track the real-time status of a wire payment using its unique end-to-end transaction reference (uetr).
-- list account transactions
-- wire payment initiation and tracking
-- wire transfer
-- create and submit eft payment
-- payments
-- bank account management
 - create and submit an electronic funds transfer (eft) payment for debit or credit transactions.
-- track wire payment by uetr
-- eft
-- list accounts
-- send interac payment
-- account validation
-- list transactions
+- validate account number and ownership
+- send a real-time business payment via interac e-transfer (up to $25,000). recipient receives payment at their email address.
+- create eft payment
+- list all eligible scotiabank deposit accounts for the customer
+- initiate realtime payment
+- bank account management
 - list account transactions (up to 2 years)
+- list account transactions
+- track payment
+- track wire payment by uetr
+- treasury management
+- open banking
+- initiate a domestic or international wire transfer
+- get wire payment
 - banking
+- payments
+- wire payment initiation and tracking
+- get current or prior-day account balance including opening and closing balances.
+- list transactions
+- send real-time payment via interac e-transfer
+- validate a scotiabank account number format and check ownership match likelihood.
+- get wire payment status
+- send interac payment
 - track wire payment
+- wire transfer
 slug: banking-payments
 source_filename: banking-payments.yaml
 source_heading: Capability Spec

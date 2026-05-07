@@ -145,82 +145,82 @@ personas: []
 provider_name: Longhorn
 provider_slug: longhorn
 search_terms:
-- longhorn create a snapshot
-- longhorn create an engine image
-- longhorn list system backups
-- longhorn expand a volume
-- updatesetting
-- incubating
-- longhorn create a recurring job
-- listbackupvolumes
-- createengineimage
-- listvolumes
-- longhorn
-- deletevolume
-- listsnapshots
-- longhorn attach a volume to a node
-- revertsnapshot
-- longhorn get a volume
-- backupsnapshot
-- longhorn get a backup volume
-- listnodes
-- longhorn list recurring jobs
-- detachvolume
-- updatenode
-- deleterecurringjob
-- listsettings
-- createbackingimage
-- longhorn create a backing image
-- createsnapshot
-- getnode
-- longhorn create a system backup
-- longhorn get an engine image
-- backup
-- longhorn list snapshots for a volume
-- listbackups
-- createsystembackup
-- cloud native
-- block storage
-- kubernetes
-- getrecurringjob
-- persistent volumes
-- longhorn delete an engine image
-- getsetting
-- longhorn create a volume
-- longhorn back up a snapshot
-- listsystembackups
-- expandvolume
-- longhorn detach a volume from its node
-- longhorn delete a volume
-- longhorn list engine images
-- longhorn list nodes
-- longhorn get a recurring job
-- deleteengineimage
-- longhorn update a setting
-- api
-- longhorn delete a recurring job
-- longhorn get a setting
-- longhorn update a node
-- getengineimage
-- longhorn get a node
-- attachvolume
-- updaterecurringjob
-- listbackingimages
-- getvolume
-- createrecurringjob
-- longhorn revert a volume to a snapshot
-- deletesnapshot
-- longhorn list backups for a backup volume
-- longhorn list all settings
-- longhorn list backing images
-- longhorn delete a snapshot
-- longhorn list backup volumes
-- longhorn update a recurring job
-- getbackupvolume
-- createvolume
-- listrecurringjobs
 - listengineimages
+- longhorn list recurring jobs
+- longhorn list backups for a backup volume
+- listvolumes
+- updaterecurringjob
+- getbackupvolume
+- deleteengineimage
+- longhorn delete a volume
+- longhorn create a recurring job
+- createengineimage
+- longhorn list backing images
+- listbackups
+- listsnapshots
+- api
+- revertsnapshot
+- longhorn delete a snapshot
+- deleterecurringjob
+- deletevolume
+- longhorn back up a snapshot
+- cloud native
+- incubating
+- longhorn list engine images
+- expandvolume
+- longhorn delete an engine image
+- longhorn expand a volume
+- createsystembackup
+- listsettings
+- backupsnapshot
+- listnodes
+- longhorn get an engine image
+- listbackingimages
+- getrecurringjob
+- longhorn list backup volumes
+- longhorn create a backing image
+- longhorn get a volume
+- createrecurringjob
+- getvolume
+- kubernetes
+- longhorn list all settings
+- longhorn detach a volume from its node
+- listsystembackups
+- backup
+- longhorn list system backups
+- longhorn get a recurring job
+- detachvolume
+- longhorn update a node
+- deletesnapshot
+- listbackupvolumes
+- listrecurringjobs
+- createbackingimage
+- getnode
+- longhorn attach a volume to a node
+- longhorn get a setting
+- updatesetting
+- longhorn
+- longhorn get a node
+- longhorn create a volume
+- longhorn list snapshots for a volume
+- longhorn list nodes
+- getsetting
+- attachvolume
+- getengineimage
+- longhorn get a backup volume
+- block storage
+- longhorn update a recurring job
 - longhorn list volumes
+- longhorn revert a volume to a snapshot
+- longhorn update a setting
+- longhorn delete a recurring job
+- updatenode
+- createsnapshot
+- createvolume
+- longhorn create an engine image
+- longhorn create a snapshot
+- longhorn create a system backup
+- persistent volumes
 slug: longhorn-capability
 source_filename: longhorn-capability.yaml
 source_heading: Capability Spec

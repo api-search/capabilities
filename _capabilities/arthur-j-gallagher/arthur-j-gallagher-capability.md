@@ -25,23 +25,23 @@ personas: []
 provider_name: Arthur J. Gallagher
 provider_slug: arthur-j-gallagher
 search_terms:
-- listcardholders
+- listaccessgroups
 - list events
-- claims management
+- arthur
+- list cardholders
+- list alarms
+- brokerage
+- gallagher
 - insurance
 - listalarms
-- arthur
-- list access groups
-- risk management
 - api
-- listevents
-- brokerage
+- risk management
+- claims management
+- listcardholders
 - security
-- list alarms
-- list cardholders
 - benefits
-- listaccessgroups
-- gallagher
+- list access groups
+- listevents
 slug: arthur-j-gallagher-capability
 source_filename: arthur-j-gallagher-capability.yaml
 source_heading: Capability Spec

@@ -41,52 +41,52 @@ personas: []
 provider_name: Riot Games
 provider_slug: riot-games
 search_terms:
-- get match details
-- get match
-- get league of legends summoner profile
-- teamfight tactics
-- analytics
-- look up a league of legends summoner profile by puuid
-- get summoner by puuid
-- summoner profile by puuid
-- get champion mastery
-- ranked league standings
-- league of legends
-- get full match details including all participant stats, items, and outcomes
-- match details
-- get current live game for a summoner
-- get full match details and participant stats
-- get live game
-- get league entries
-- get ranked league standings and lp for a summoner across all queues
-- get currently featured live games
-- riot games
-- get ranked standings for a summoner
-- gaming
-- get match history ids
-- get match ids
-- get recent match ids for a player to fetch individual match details
-- valorant
-- featured live games
 - champion mastery rankings
-- get ranked standings
-- get champion mastery rankings to understand a player's most played champions
-- get the current free champion rotation for new player recommendations
-- get currently featured live games on the platform
-- get summoner
-- get featured games
+- analytics
+- live game data
+- ranked league standings
+- match history
+- riot games
+- get live game
 - check if a summoner is currently in a live game and get game details
-- get free champion rotation
-- recent match ids
+- legends of runeterra
+- get featured games
+- get current live game for a summoner
+- free champion rotation
+- get league entries
+- get recent match ids for a player
+- get match details
+- get match history ids
+- get match
+- get ranked league standings and lp for a summoner across all queues
+- get recent match ids for a player to fetch individual match details
+- get full match details and participant stats
+- match details
+- get summoner by puuid
+- get the current free champion rotation for new player recommendations
+- esports
 - get champion rotations
+- get currently featured live games
+- featured live games
+- look up a league of legends summoner profile by puuid
+- get league of legends summoner profile
+- gaming
+- get free champion rotation
+- summoner profile by puuid
 - ranked
 - get champion mastery data for a player
-- esports
-- free champion rotation
-- legends of runeterra
-- match history
-- get recent match ids for a player
-- live game data
+- valorant
+- get match ids
+- league of legends
+- teamfight tactics
+- get ranked standings
+- get ranked standings for a summoner
+- get summoner
+- get champion mastery
+- get champion mastery rankings to understand a player's most played champions
+- recent match ids
+- get currently featured live games on the platform
+- get full match details including all participant stats, items, and outcomes
 slug: game-data-analytics
 source_filename: game-data-analytics.yaml
 source_heading: Capability Spec

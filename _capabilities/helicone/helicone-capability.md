@@ -249,131 +249,131 @@ personas: []
 provider_name: Helicone
 provider_slug: helicone
 search_terms:
-- delete /v1/api-keys/{apikeyid}
-- patch /v1/api-keys/{apikeyid}
-- getexperimentsforevaluator
-- ai monitoring
-- delete /v1/prompt/{promptid}
-- get the full prompt body (messages, tools, etc.) for a specific prompt version.
-- patch /v1/prompt-2025/id/{promptid}/tags
-- get /v1/api-keys
-- testlastmileevaluator
-- get /v1/prompt-2025/environments
-- post /v1/prompt-2025/query
-- getprompt2025totalversions
-- get /v1/prompt/has-prompts
-- api
-- hasprompts
-- get /v1/prompt-2025/id/{promptid}
-- post /v1/evaluator/python/test
-- updateapikey
-- deleteprompt2025
-- getprompt2025tags
-- deleteapikey
-- getevaluatorstats
-- editpromptversiontemplate
-- getprompt2025version
-- post /v1/prompt/{promptid}/query
-- post /v1/prompt/create
-- post /v1/prompt/version/{promptversionid}/subversion
-- post /v1/evaluator/lastmile/test
-- getprompt2025count
-- deleteproviderkey
-- updatepromptuserdefinedid
-- delete /v1/prompt-2025/{promptid}
-- getprompt2025environments
-- updateprompt2025
-- post /v1/evaluator/query
-- get /v1/evaluator/{evaluatorid}/onlineevaluators
-- get /v1/prompt-2025/count
-- patch /v1/api-keys/provider-key/{providerkeyid}
-- post /v2/prompt-2025/query/environment-version
-- llm routing
-- post /v2/prompt-2025/query/version
-- createprompt2025
-- createprompt
-- getprompt2025productionversion
-- createsubversion
-- post /v1/prompt/{promptid}/versions/query
-- get /v1/api-keys/provider-keys
-- get /v1/prompt-2025/tags
-- ai gateways
-- createonlineevaluator
 - deleteevaluator
-- post /v1/prompt/version/{promptversionid}/promote
-- createsubversionfromui
-- delete /v1/prompt-2025/{promptid}/{versionid}
-- post /v1/prompt-2025
-- post /v1/api-keys/provider-key
-- getprompt
-- get /v1/prompt/{promptid}/experiments
-- updateproviderkey
-- setpromptversionenvironment
-- post /v1/prompt-2025/update/environment
-- getproviderkeys
-- updateevaluator
-- updateprompt2025tags
-- get /v1/evaluator/{evaluatorid}/experiments
-- getprompts2025
+- patch /v1/prompt-2025/id/{promptid}/tags
 - post /v1/prompt-2025/query/versions
-- post /v1/prompt-2025/id/{promptid}/rename
-- get /v1/api-keys/provider-key/{providerkeyid}
-- get /v1/evaluator/{evaluatorid}/stats
-- get /v1/prompt-2025/id/{promptid}/{versionid}/inputs
-- deleteonlineevaluator
-- post /v1/evaluator
-- getprompt2025versionbody
-- renameprompt2025
-- editpromptversionlabel
-- delete /v1/api-keys/provider-key/{providerkeyid}
-- post /v1/prompt/query
-- post /v1/evaluator/llm/test
-- post /v1/api-keys
-- post /v2/prompt-2025/query/production-version
-- delete /v1/evaluator/{evaluatorid}
-- post /v1/prompt/version/{promptversionid}/edit-template
-- getapikeys
-- getinputs
-- get /v1/evaluator/{evaluatorid}
-- post /v1/prompt-2025/update
-- gateways
-- getprompt2025environmentversion
-- post /v1/prompt/version/{promptversionid}/edit-label
-- promotepromptversiontoproduction
-- post /v1/prompt/version/{promptversionid}/inputs/query
-- helicone
-- post /v1/evaluator/{evaluatorid}/onlineevaluators
-- llm observability
-- post /v1/api-keys/proxy-key
-- createproxykey
-- getprompt2025versions
-- delete /v1/evaluator/{evaluatorid}/onlineevaluators/{onlineevaluatorid}
-- createevaluator
-- deleteprompt2025version
-- patch /v1/prompt/{promptid}/user-defined-id
 - post /v1/prompt-2025/query/version
-- post /v1/prompt-2025/query/environment-version
-- deleteprompt
-- createproviderkey
-- prompt management
+- updatepromptuserdefinedid
+- delete /v1/prompt-2025/{promptid}/{versionid}
+- get /v1/evaluator/{evaluatorid}/experiments
+- getexperimentsforevaluator
 - getonlineevaluators
-- getpromptexperiments
-- getevaluator
-- post /v1/prompt-2025/remove/environment
-- post /v1/prompt/version/{promptversionid}/subversion-from-ui
-- post /v1/prompt-2025/query/total-versions
-- getpromptversions
-- put /v1/evaluator/{evaluatorid}
-- queryevaluators
+- get /v1/evaluator/{evaluatorid}/onlineevaluators
+- api
+- deleteproviderkey
+- post /v1/prompt/version/{promptversionid}/subversion
 - getprompt2025inputs
-- post /v1/prompt-2025/query/production-version
-- removeenvironmentfromversion
-- getprompts
+- llm routing
+- createproviderkey
+- deleteprompt2025version
+- getprompt2025version
+- post /v1/api-keys/provider-key
+- get /v1/prompt-2025/id/{promptid}
+- post /v1/evaluator/query
+- createsubversionfromui
+- get /v1/prompt/has-prompts
+- getprompt2025environmentversion
+- post /v1/prompt/version/{promptversionid}/edit-template
+- getpromptexperiments
+- deleteprompt
+- get /v1/evaluator/{evaluatorid}
+- post /v1/prompt/query
+- editpromptversionlabel
+- delete /v1/evaluator/{evaluatorid}
+- post /v1/api-keys
 - getprompt2025
-- testllmevaluator
-- createapikey
+- get /v1/api-keys/provider-key/{providerkeyid}
+- post /v1/prompt-2025/query/total-versions
+- get /v1/prompt/{promptid}/experiments
+- getpromptversions
+- createevaluator
+- editpromptversiontemplate
+- getprompt2025environments
+- setpromptversionenvironment
+- post /v1/evaluator/llm/test
+- getprompt2025versions
+- post /v1/prompt-2025/remove/environment
+- queryevaluators
+- getevaluatorstats
+- post /v2/prompt-2025/query/environment-version
+- deleteprompt2025
+- post /v1/prompt/create
+- get /v1/api-keys
+- delete /v1/prompt/{promptid}
+- post /v2/prompt-2025/query/production-version
+- prompt management
+- post /v1/prompt-2025/id/{promptid}/rename
+- updateapikey
+- createproxykey
+- patch /v1/prompt/{promptid}/user-defined-id
+- post /v2/prompt-2025/query/version
+- get /v1/prompt-2025/count
+- createprompt
 - getproviderkey
+- renameprompt2025
+- get /v1/prompt-2025/environments
+- updateevaluator
+- createsubversion
+- getproviderkeys
+- removeenvironmentfromversion
+- getprompt2025versionbody
+- delete /v1/prompt-2025/{promptid}
+- getinputs
+- delete /v1/api-keys/{apikeyid}
+- getprompt2025productionversion
+- post /v1/evaluator/lastmile/test
+- post /v1/evaluator
+- get the full prompt body (messages, tools, etc.) for a specific prompt version.
+- ai monitoring
+- getprompts2025
+- testllmevaluator
+- getprompts
+- patch /v1/api-keys/provider-key/{providerkeyid}
+- post /v1/prompt/version/{promptversionid}/inputs/query
+- deleteapikey
+- post /v1/prompt-2025
+- post /v1/prompt-2025/query/production-version
+- getevaluator
+- post /v1/api-keys/proxy-key
+- createonlineevaluator
+- post /v1/prompt-2025/update
+- updateprompt2025
+- getprompt
+- get /v1/prompt-2025/tags
+- post /v1/prompt-2025/query/environment-version
+- getprompt2025tags
+- post /v1/evaluator/{evaluatorid}/onlineevaluators
+- get /v1/prompt-2025/id/{promptid}/{versionid}/inputs
+- post /v1/prompt-2025/query
+- post /v1/prompt/version/{promptversionid}/promote
 - testpythonevaluator
+- deleteonlineevaluator
+- put /v1/evaluator/{evaluatorid}
+- createapikey
+- post /v1/prompt/version/{promptversionid}/subversion-from-ui
+- getprompt2025count
+- helicone
+- promotepromptversiontoproduction
+- patch /v1/api-keys/{apikeyid}
+- testlastmileevaluator
+- delete /v1/evaluator/{evaluatorid}/onlineevaluators/{onlineevaluatorid}
+- updateprompt2025tags
+- post /v1/prompt/{promptid}/versions/query
+- hasprompts
+- post /v1/evaluator/python/test
+- getprompt2025totalversions
+- gateways
+- llm observability
+- createprompt2025
+- get /v1/api-keys/provider-keys
+- post /v1/prompt/version/{promptversionid}/edit-label
+- get /v1/evaluator/{evaluatorid}/stats
+- post /v1/prompt-2025/update/environment
+- ai gateways
+- delete /v1/api-keys/provider-key/{providerkeyid}
+- getapikeys
+- post /v1/prompt/{promptid}/query
+- updateproviderkey
 slug: helicone-capability
 source_filename: helicone-capability.yaml
 source_heading: Capability Spec

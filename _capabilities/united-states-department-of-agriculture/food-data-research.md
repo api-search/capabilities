@@ -29,40 +29,40 @@ personas: []
 provider_name: United States Department of Agriculture
 provider_slug: united-states-department-of-agriculture
 search_terms:
-- get valid values for a nass statistics parameter
-- search usda fooddata central for food items using keywords
 - nutrition
-- retrieve full nutrient profile for a specific food
-- query usda nass for crop production statistics by commodity, year, and state
-- look up valid values for nass statistics query parameters to build accurate queries
-- get ag statistics
-- query usda nass agricultural production statistics
-- get food
-- search foods
-- agriculture
-- get nass parameter values
-- list all nutrients tracked in usda fooddata central including ids, names, and units
-- query usda nass for livestock and animal production statistics
-- get crop production statistics
-- rural development
-- get livestock statistics
-- climate
-- list nutrients
-- get all available nutrients
 - food
-- get food nutrition
-- list all nutrients tracked in fooddata central
-- federal government
-- usda
+- list nutrients
+- list all nutrients tracked in usda fooddata central including ids, names, and units
+- query usda nass for crop production statistics by commodity, year, and state
+- get livestock statistics
+- get food
+- get all available nutrients
 - food safety
-- get food item with complete nutrient data
-- get detailed nutrient profile for a specific food item from usda fooddata central
+- look up valid values for nass statistics query parameters to build accurate queries
 - get parameter values
+- get crop production statistics
+- get valid values for a nass statistics parameter
+- agriculture
+- search usda fooddata central for food items using keywords
+- list all nutrients tracked in fooddata central
+- usda
+- search foods
+- get ag statistics
+- query usda nass for livestock and animal production statistics
+- retrieve full nutrient profile for a specific food
+- get detailed nutrient profile for a specific food item from usda fooddata central
+- get agricultural commodity production statistics
+- get nass parameter values
 - search for foods by keyword across all usda food data types
+- climate
+- get food item with complete nutrient data
 - statistics
 - look up valid values for statistics query parameters
-- get agricultural commodity production statistics
 - search usda fooddata central for food items
+- rural development
+- get food nutrition
+- federal government
+- query usda nass agricultural production statistics
 slug: food-data-research
 source_filename: food-data-research.yaml
 source_heading: Capability Spec

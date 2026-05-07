@@ -49,36 +49,36 @@ personas: []
 provider_name: Google Cloud Migration Center
 provider_slug: google-cloud-migration-center
 search_terms:
-- creategroup
-- createpreferenceset
-- google cloud migration center get an asset
-- google cloud migration center create a preference set
-- infrastructure
-- google cloud migration center update an asset
-- cloud
-- google cloud migration center list preference sets
-- google
-- cloud migration
-- center
-- listassets
-- listgroups
-- getasset
-- api
-- listpreferencesets
-- discovery
-- assessment
-- planning
-- google cloud migration center delete an asset
-- createimportjob
-- google cloud migration center list import jobs
-- updateasset
-- migration
-- deleteasset
-- listimportjobs
 - google cloud migration center create a group
-- google cloud migration center list assets
+- creategroup
+- api
+- deleteasset
+- google cloud migration center update an asset
+- listpreferencesets
+- migration
 - google cloud migration center create an import job
 - google cloud migration center list groups
+- google
+- google cloud migration center delete an asset
+- google cloud migration center list import jobs
+- google cloud migration center list assets
+- infrastructure
+- cloud migration
+- listgroups
+- planning
+- discovery
+- google cloud migration center list preference sets
+- google cloud migration center create a preference set
+- google cloud migration center get an asset
+- updateasset
+- center
+- createpreferenceset
+- listassets
+- cloud
+- assessment
+- listimportjobs
+- createimportjob
+- getasset
 slug: google-cloud-migration-center-capability
 source_filename: google-cloud-migration-center-capability.yaml
 source_heading: Capability Spec

@@ -25,25 +25,25 @@ personas: []
 provider_name: Zendesk
 provider_slug: zendesk
 search_terms:
+- tickets
+- api
+- zendesk get api v2 accounts available
+- talk
+- support
+- zendesk put api v2 account settings
+- updateaccountsettings
+- zendesk post api v2 accounts
+- crm
+- t1
+- zendesk get api v2 account settings
 - createtrialaccount
+- chat
+- verifysubdomainavailability
+- ticketing
+- sell
+- zendesk
 - help center
 - showaccountsettings
-- ticketing
-- zendesk
-- zendesk post api v2 accounts
-- verifysubdomainavailability
-- zendesk get api v2 accounts available
-- zendesk put api v2 account settings
-- crm
-- updateaccountsettings
-- t1
-- support
-- api
-- sell
-- chat
-- talk
-- tickets
-- zendesk get api v2 account settings
 slug: zendesk-capability
 source_filename: zendesk-capability.yaml
 source_heading: Capability Spec

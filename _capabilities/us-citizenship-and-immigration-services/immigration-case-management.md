@@ -21,26 +21,26 @@ personas: []
 provider_name: US Citizenship and Immigration Services
 provider_slug: us-citizenship-and-immigration-services
 search_terms:
-- get case status
-- immigration
+- legal services
 - case management
-- get foia request status
-- foia
-- retrieve current immigration case status and history by receipt number
-- case status
-- uscis
-- immigration case status by receipt number
-- check the status of a submitted foia request
 - foia and privacy act requests for alien file records
+- uscis
+- citizenship
+- check the processing status of a previously submitted uscis foia or privacy act request using the request number.
+- retrieve current immigration case status and history by receipt number
+- get case status
+- immigration case status by receipt number
+- case status
+- status of a submitted foia request
+- foia
+- retrieve the current immigration case status and complete history for a uscis receipt number. returns status in english and spanish with full historical timeline.
+- immigration
+- check the status of a submitted foia request
+- get foia request status
+- federal government
 - submit a new foia or privacy act request for alien file records
 - submit a freedom of information act (foia) or privacy act request for uscis alien file records on behalf of a client. returns a request number for status tracking.
 - submit foia request
-- retrieve the current immigration case status and complete history for a uscis receipt number. returns status in english and spanish with full historical timeline.
-- federal government
-- citizenship
-- legal services
-- check the processing status of a previously submitted uscis foia or privacy act request using the request number.
-- status of a submitted foia request
 slug: immigration-case-management
 source_filename: immigration-case-management.yaml
 source_heading: Capability Spec

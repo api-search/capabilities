@@ -26,39 +26,39 @@ personas: []
 provider_name: AIMLAPI
 provider_slug: aimlapi
 search_terms:
-- developer tools
-- video generation
-- list available models
-- generate vector embeddings for semantic search and rag applications
-- access 400+ ai models for chat, image generation, embeddings, and model discovery
-- generate image
-- Developer
-- create embeddings
-- ai models
-- generate an image
-- ai model inference across modalities
-- embeddings
-- create embedding
-- speech
-- api key management and model discovery
-- artificial intelligence
-- llm
-- discover all 400+ available ai models on aimlapi platform
-- generate embeddings
-- machine learning
-- ai engineer evaluating and comparing models for ml pipelines
-- create a chat completion
-- generate a chat response from any of 400+ ai language models via aimlapi
-- generate an image from a text prompt using aimlapi image generation models
 - chat completions via 400+ llms
-- list models
-- api gateway
-- create chat completion
+- generate image
+- developer integrating ai capabilities into applications via aimlapi
 - AI Engineer
+- llm
+- generate embeddings
+- video generation
+- generate vector embeddings for semantic search and rag applications
+- ai models
+- ai engineer evaluating and comparing models for ml pipelines
 - image generation
 - create image
-- developer integrating ai capabilities into applications via aimlapi
+- create embedding
+- artificial intelligence
+- access 400+ ai models for chat, image generation, embeddings, and model discovery
+- machine learning
+- developer tools
+- generate a chat response from any of 400+ ai language models via aimlapi
+- embeddings
+- api gateway
 - list all models
+- generate an image
+- discover all 400+ available ai models on aimlapi platform
+- list models
+- ai model inference across modalities
+- Developer
+- create a chat completion
+- create embeddings
+- create chat completion
+- generate an image from a text prompt using aimlapi image generation models
+- speech
+- api key management and model discovery
+- list available models
 slug: ai-model-operations
 source_filename: ai-model-operations.yaml
 source_heading: Capability Spec

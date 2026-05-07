@@ -49,56 +49,56 @@ personas: []
 provider_name: VMware Tanzu
 provider_slug: vmware-tanzu
 search_terms:
+- remove a cluster from tsm.
+- containers
+- get cluster
+- list all global namespaces in tanzu service mesh. global namespaces connect workloads across multiple clusters into a single virtual network.
+- create a resource group to enforce policies across a set of namespaces, services, or pods.
+- get detailed status for a specific tanzu service mesh cluster, including phase, k8s version, and namespace count.
+- remove a kubernetes cluster from tanzu service mesh management.
+- create resource group
+- clusters
+- get global namespace details.
+- list global namespaces
+- individual global namespace.
+- cloud native
+- service mesh
 - create global namespace
 - onboard a cluster to tanzu service mesh.
-- list global namespaces.
 - vmware tanzu
-- remove a kubernetes cluster from tanzu service mesh management.
-- kubernetes cluster management.
-- individual cluster operations.
-- list resource groups used for policy enforcement and monitoring across clusters.
-- onboard a kubernetes cluster to tanzu service mesh. installs the tsm agent and enables service mesh management.
-- vsphere
-- remove kubernetes cluster
-- service mesh
-- list resource groups
-- create resource group
-- get global namespace details.
-- list tanzu clusters
-- create a global namespace to connect workloads across multiple kubernetes clusters. enables consistent traffic routing and mtls security.
-- list all kubernetes clusters onboarded to tanzu service mesh. shows cluster state, cloud provider, region, and tsm agent version.
-- list clusters onboarded to tanzu service mesh.
-- list resource groups.
-- get details for a specific global namespace, including cluster configurations and status.
-- create a global namespace spanning clusters.
 - onboard kubernetes cluster
-- global namespaces
-- containers
-- enterprise
-- create a resource group.
-- cloud native
-- kubernetes
-- individual global namespace.
-- delete global namespace
-- create a resource group to enforce policies across a set of namespaces, services, or pods.
-- resource groups for policy.
-- remove cluster
-- delete a global namespace from tanzu service mesh.
+- list resource groups
 - multi-cloud
-- get detailed status for a specific tanzu service mesh cluster, including phase, k8s version, and namespace count.
-- remove a cluster from tsm.
-- list global namespaces
-- clusters
-- get global namespace
-- get cluster
-- delete a global namespace.
-- global namespace management.
-- get cluster details and status.
-- vmware
-- list clusters
 - get tanzu cluster
+- list resource groups.
+- list all kubernetes clusters onboarded to tanzu service mesh. shows cluster state, cloud provider, region, and tsm agent version.
+- list clusters
+- vmware
+- individual cluster operations.
+- kubernetes
+- list resource groups used for policy enforcement and monitoring across clusters.
+- list global namespaces.
+- get cluster details and status.
+- list clusters onboarded to tanzu service mesh.
+- get global namespace
 - onboard cluster
-- list all global namespaces in tanzu service mesh. global namespaces connect workloads across multiple clusters into a single virtual network.
+- enterprise
+- global namespaces
+- vsphere
+- delete a global namespace.
+- onboard a kubernetes cluster to tanzu service mesh. installs the tsm agent and enables service mesh management.
+- create a global namespace spanning clusters.
+- resource groups for policy.
+- kubernetes cluster management.
+- delete global namespace
+- delete a global namespace from tanzu service mesh.
+- get details for a specific global namespace, including cluster configurations and status.
+- create a global namespace to connect workloads across multiple kubernetes clusters. enables consistent traffic routing and mtls security.
+- create a resource group.
+- remove cluster
+- global namespace management.
+- list tanzu clusters
+- remove kubernetes cluster
 slug: kubernetes-platform
 source_filename: kubernetes-platform.yaml
 source_heading: Capability Spec

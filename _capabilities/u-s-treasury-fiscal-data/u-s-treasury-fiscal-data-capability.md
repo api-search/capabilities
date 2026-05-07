@@ -45,48 +45,48 @@ personas: []
 provider_name: U.S. Treasury Fiscal Data
 provider_slug: u-s-treasury-fiscal-data
 search_terms:
-- getpublicdebtbysecuritytype
-- economics
-- federal or state budget analyst using treasury data for fiscal planning, appropriations analysis, and government financial reporting.
-- getavginterestrates
-- academic or government economist analyzing federal fiscal trends, national debt trajectories, and interest rate impacts on the economy.
-- getdebttopenny
-- treasury fiscal data get monthly treasury statement receipts and outlays
-- national debt
-- getgiftcontributionsdebt
 - interest rates and outstanding amounts for u.s. treasury bills, notes, bonds, and other securities
-- treasury fiscal data get daily treasury statement
-- official treasury foreign currency exchange rates for federal reporting purposes
-- reporter or journalist tracking daily debt figures, exchange rates, and treasury financial statements for news coverage and data stories.
-- finance
-- government or think-tank analyst using treasury fiscal data to assess budget policy proposals, deficit projections, and debt sustainability.
-- treasury fiscal data get average interest rates on u.s. treasury securities
-- exchange rates
-- treasury fiscal data get savings bond redemption tables
-- fiscal
-- treasury fiscal data get gift contributions to reduce the public debt
-- Policy Analyst
-- treasury
-- Budget Analyst
-- federal government receipts, outlays, surplus/deficit from the monthly treasury statement
-- treasury fiscal data get interest expense on the debt outstanding
-- academic or policy researcher using treasury fiscal data for economic research, historical analysis, and quantitative studies.
-- api
-- Financial Journalist
-- total u.s. public debt outstanding including debt held by public and intragovernmental holdings
-- getsavingsbondredemptiontables
-- Economist
-- data
-- federal government
-- Researcher
-- treasury fiscal data get treasury reporting rates of exchange
-- getratesofexchange
-- treasury fiscal data get debt to the penny
-- getdailytreasurystatement
-- getmonthlytreasurystatement
 - unified workflow for economists, policy analysts, financial journalists, and researchers to access u.s. treasury federal financial data for analysis and reporting.
-- treasury fiscal data get monthly statement of the public debt
+- getgiftcontributionsdebt
+- official treasury foreign currency exchange rates for federal reporting purposes
 - getinterestexpensedebt
+- treasury fiscal data get daily treasury statement
+- treasury
+- treasury fiscal data get monthly statement of the public debt
+- api
+- treasury fiscal data get savings bond redemption tables
+- getdailytreasurystatement
+- getpublicdebtbysecuritytype
+- federal or state budget analyst using treasury data for fiscal planning, appropriations analysis, and government financial reporting.
+- Financial Journalist
+- getsavingsbondredemptiontables
+- treasury fiscal data get average interest rates on u.s. treasury securities
+- federal government receipts, outlays, surplus/deficit from the monthly treasury statement
+- Researcher
+- academic or government economist analyzing federal fiscal trends, national debt trajectories, and interest rate impacts on the economy.
+- treasury fiscal data get debt to the penny
+- finance
+- treasury fiscal data get treasury reporting rates of exchange
+- reporter or journalist tracking daily debt figures, exchange rates, and treasury financial statements for news coverage and data stories.
+- national debt
+- getmonthlytreasurystatement
+- getdebttopenny
+- treasury fiscal data get interest expense on the debt outstanding
+- Economist
+- getavginterestrates
+- exchange rates
+- total u.s. public debt outstanding including debt held by public and intragovernmental holdings
+- economics
+- government or think-tank analyst using treasury fiscal data to assess budget policy proposals, deficit projections, and debt sustainability.
+- Budget Analyst
+- treasury fiscal data get monthly treasury statement receipts and outlays
+- treasury fiscal data get gift contributions to reduce the public debt
+- data
+- academic or policy researcher using treasury fiscal data for economic research, historical analysis, and quantitative studies.
+- federal government
+- fiscal
+- getratesofexchange
+- Policy Analyst
 slug: u-s-treasury-fiscal-data-capability
 source_filename: u-s-treasury-fiscal-data-capability.yaml
 source_heading: Capability Spec

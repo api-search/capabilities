@@ -13,11 +13,11 @@ personas: []
 provider_name: Bunq
 provider_slug: bunq
 search_terms:
+- banking
 - read activitymapplacepublic
+- bunq
 - api
 - public endpoint for getting the place info.
-- banking
-- bunq
 slug: bunq-capability
 source_filename: bunq-capability.yaml
 source_heading: Capability Spec

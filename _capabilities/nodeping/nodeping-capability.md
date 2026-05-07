@@ -110,61 +110,61 @@ provider_name: NodePing
 provider_slug: nodeping
 search_terms:
 - createcheck
-- listcontactgroups
-- get a single check
-- nodeping
-- deletecheck
-- listcontacts
-- update a schedule
-- createaccount
-- create a subaccount
-- listchecks
-- delete a check
-- updatecontactgroup
-- listnotifications
-- list notifications
-- get probe / location information
-- uptime
-- deleteaccount
-- create a contact group
-- updatecheck
-- getinfo
-- get check results
-- list checks
-- delete a subaccount
-- update a contact group
-- update account
-- deleteschedule
-- monitoring
-- get current check states
-- updatecontact
-- create a contact
-- deletecontactgroup
-- getcheck
-- create a check
-- createcontact
-- get account information
-- update a contact
-- getcurrentresults
-- api
-- updateaccount
-- list notification schedules
-- list contact groups
-- getresults
 - deletecontact
-- get uptime statistics
-- saas
+- updatecontactgroup
+- deletecontactgroup
 - notifications
-- getuptime
-- delete a schedule
-- delete a contact
-- getaccounts
-- list contacts
-- listschedules
-- createcontactgroup
-- delete a contact group
+- listcontacts
+- getcheck
 - update a check
+- list notifications
+- delete a subaccount
+- create a check
+- update a schedule
+- updateaccount
+- createcontact
 - updateschedule
+- api
+- listschedules
+- create a contact group
+- delete a contact group
+- delete a check
+- saas
+- monitoring
+- create a contact
+- get uptime statistics
+- updatecontact
+- listcontactgroups
+- listchecks
+- get check results
+- deleteschedule
+- update a contact
+- update a contact group
+- list contact groups
+- createcontactgroup
+- delete a schedule
+- create a subaccount
+- list contacts
+- list checks
+- getresults
+- delete a contact
+- getuptime
+- deletecheck
+- update account
+- deleteaccount
+- get current check states
+- getinfo
+- get probe / location information
+- nodeping
+- getaccounts
+- uptime
+- createaccount
+- listnotifications
+- getcurrentresults
+- get account information
+- list notification schedules
+- get a single check
+- updatecheck
 slug: nodeping-capability
 source_filename: nodeping-capability.yaml
 source_heading: Capability Spec

@@ -21,26 +21,26 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- mlops
-- search feature tables by free-text query.
-- get a feature table's schema, primary keys, source, online stores, and metadata.
-- capabilities
-- retrieve typed feature values for a set of lookup keys.
-- get feature table
-- fetch a feature table's schema, primary keys, online stores, and metadata.
-- search feature tables
-- get features for model
-- spec-driven integration
-- ai
-- mcp
-- retrieve typed feature values for one or more lookup keys for online inference.
-- list features
-- api integration
-- list features (columns and types) defined on a feature table.
-- search feature tables in the databricks feature store by free-text query.
-- feature store
 - governance
+- search feature tables in the databricks feature store by free-text query.
+- get a feature table's schema, primary keys, source, online stores, and metadata.
+- ai
+- fetch a feature table's schema, primary keys, online stores, and metadata.
+- mcp
+- naftiko
+- search feature tables
+- get feature table
+- spec-driven integration
+- list features
+- search feature tables by free-text query.
+- mlops
+- retrieve typed feature values for one or more lookup keys for online inference.
+- retrieve typed feature values for a set of lookup keys.
+- list features (columns and types) defined on a feature table.
+- capabilities
+- feature store
+- get features for model
+- api integration
 - databricks
 slug: databricks-feature-store-mcp
 source_filename: databricks-feature-store-mcp.yaml

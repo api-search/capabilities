@@ -53,61 +53,61 @@ personas: []
 provider_name: Shippo
 provider_slug: shippo
 search_terms:
-- get shipping rates
-- request refund
-- logistics
-- manage carrier account connections
-- validate address
-- request a label refund
-- create shipments and retrieve carrier rates
-- create shipping address
-- returns
-- create a shipment to compare carrier rates
-- list all purchased shipping labels with tracking status
-- create a new shipping address
-- list all purchased labels
-- list carrier accounts
-- get real-time tracking status
-- get carrier shipping rates
-- purchase shipping label
-- list all shipments with optional status filter
-- labels
-- request a refund for a purchased but unused shipping label
-- fulfillment
-- track shipments across carriers
-- list all shipments
-- track shipment
-- validate a shipping address
-- list connected carrier accounts
-- ecommerce
-- shipping
-- create address
-- list carriers
-- create a new shipment from origin to destination to get available carrier rates
-- manage and validate shipping addresses
-- list all connected carrier accounts and their status
-- validate that a shipping address is deliverable by carriers
-- track package
 - create shipment
-- purchase label
-- validate address deliverability
-- list labels
-- request label refunds
-- get available carrier rates for a shipment including price and transit time
-- get rates
-- get available rates for a shipment
-- purchase and manage shipping labels
-- purchase a shipping label
+- logistics
 - get real-time tracking status for a shipped package
-- list addresses
-- validate shipping address
-- purchase a shipping label from a selected carrier rate
-- list all addresses
-- create a new shipping address for use in shipments
+- track shipment
+- request a label refund
+- get real-time tracking status
+- validate a shipping address
 - request label refund
+- request label refunds
+- track shipments across carriers
+- list connected carrier accounts
+- get available rates for a shipment
+- returns
+- list all addresses
+- fulfillment
+- manage carrier account connections
+- ecommerce
+- validate address
+- list all purchased shipping labels with tracking status
+- create a new shipping address for use in shipments
+- create address
+- purchase a shipping label from a selected carrier rate
+- purchase label
+- purchase and manage shipping labels
+- validate that a shipping address is deliverable by carriers
+- list carriers
+- create shipping address
+- get shipping rates
+- purchase shipping label
+- list all connected carrier accounts and their status
+- create a new shipping address
+- purchase a shipping label
+- validate shipping address
+- list all shipments with optional status filter
+- list labels
+- list all purchased labels
+- request a refund for a purchased but unused shipping label
+- create a shipment to compare carrier rates
+- validate address deliverability
 - list shipments
 - tracking
+- list all shipments
+- create a new shipment from origin to destination to get available carrier rates
+- get available carrier rates for a shipment including price and transit time
+- get rates
+- list addresses
+- manage and validate shipping addresses
+- get carrier shipping rates
 - list purchased labels
+- track package
+- shipping
+- request refund
+- labels
+- list carrier accounts
+- create shipments and retrieve carrier rates
 slug: shipping-fulfillment
 source_filename: shipping-fulfillment.yaml
 source_heading: Capability Spec

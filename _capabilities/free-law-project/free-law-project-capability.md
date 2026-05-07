@@ -69,44 +69,44 @@ personas: []
 provider_name: Free Law Project
 provider_slug: free-law-project
 search_terms:
-- listclusters
-- listtags
-- listpositions
-- listoralarguments
-- search across courtlistener
-- law
-- legal
-- justice
-- lookup citations in text
-- list oral arguments
-- listdockets
-- retrieve an opinion
-- list opinion clusters
-- listpeople
-- free
-- list opinions
-- transparency
-- createalert
-- listdocketentries
 - list dockets
-- list docket entries
-- api
-- search
+- free
 - list tags
-- list recap documents
-- list judicial positions
-- listrecapdocuments
-- listfinancialdisclosures
 - lookupcitations
-- listalerts
-- project
-- getopinion
-- list judges and people
-- list alerts
-- list financial disclosures
-- courts
-- listopinions
 - create an alert
+- search across courtlistener
+- listdocketentries
+- lookup citations in text
+- transparency
+- api
+- listpositions
+- courts
+- listalerts
+- listpeople
+- getopinion
+- listtags
+- listclusters
+- list recap documents
+- law
+- list judges and people
+- list judicial positions
+- createalert
+- list oral arguments
+- list opinion clusters
+- list docket entries
+- project
+- list alerts
+- list opinions
+- retrieve an opinion
+- listrecapdocuments
+- search
+- justice
+- list financial disclosures
+- listdockets
+- listfinancialdisclosures
+- legal
+- listopinions
+- listoralarguments
 slug: free-law-project-capability
 source_filename: free-law-project-capability.yaml
 source_heading: Capability Spec

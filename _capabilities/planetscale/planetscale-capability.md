@@ -249,128 +249,128 @@ personas: []
 provider_name: planetscale
 provider_slug: planetscale
 search_terms:
-- listschemarecommendations
-- update a branch
-- deletepassword
-- getdeployrequest
-- close a deploy request
-- listiprestrictions
-- list organizations
-- update an organization member
-- list ip restrictions
-- renewpassword
-- delete a bouncer
-- show the status of a query patterns report
+- get the deploy queue
+- createbranch
+- listbranches
 - list organization members
-- list teams
-- complete a revert
-- createservicetokenaccess
-- remove an organization member
-- delete a branch
-- get a deploy request
-- getdatabase
-- delete a backup
-- completedeployrequestrevert
-- listwebhooks
+- list deploy request reviews
 - api
-- deletebranch
-- get an organization
-- listteams
-- createwebhook
-- listinvoices
-- listbouncers
-- listdatabases
-- list invoices
-- listdeployrequestreviews
-- get a service token
-- renew a password
-- get an organization member
-- list bouncers
-- deletebouncer
-- create a deploy request
-- createrole
-- update database settings
-- get a bouncer
+- getbackup
+- getservicetoken
+- getdeployqueue
+- list ip restrictions
+- list databases
+- review a deploy request
+- get a team
+- getdeployrequest
+- reviewdeployrequest
+- completedeployrequestrevert
+- delete a backup
+- list organizations
+- get a password
 - delete a password
-- createbackup
-- lint a branch schema
-- getbouncer
-- getorganization
+- create a branch
+- getbranch
 - create a webhook
+- update a team
+- listdeployrequests
+- delete a branch
+- deleteservicetoken
+- listclustersizes
+- list cluster sizes
+- listiprestrictions
+- getorganization
+- create a team
+- createrole
+- list schema recommendations
+- get a deploy request
+- update a branch
+- listinvoices
+- get a service token
+- listorganizations
+- deletepassword
+- lint a branch schema
+- skip revert period
+- createpassword
+- list deploy requests
+- grant service token access
+- get a bouncer
+- get a backup
+- list service tokens
+- updatebranch
+- delete a service token
+- create a password
+- list webhooks
+- listpasswords
+- listteams
+- deleteteam
+- getteam
+- getorganizationmember
+- getdatabase
+- list passwords
+- lintbranchschema
+- delete a team
+- updatedatabasesettings
+- listbackups
+- getpassword
+- create a backup
+- get an organization
+- list service token accesses
+- queuedeployrequest
+- create a bouncer
+- show the status of a query patterns report
+- get a database
+- create a deploy request
+- delete a bouncer
+- updateorganizationmember
+- get a branch
+- createservicetokenaccess
+- listdatabases
+- listservicetokenaccesses
+- create an ip restriction entry
+- list invoices
+- deletebranch
+- delete a database
+- listdeployrequestreviews
+- update database settings
+- skipdeployrequestrevert
+- create a database
+- createdatabase
+- createiprestriction
+- get an organization member
 - listorganizationmembers
 - deletedatabase
-- create a backup
-- list service tokens
-- updateteam
-- list service token accesses
-- queue a deploy request
-- delete a team
-- list databases
-- getbackup
-- list deploy request reviews
-- delete a database
-- list deploy requests
-- listbranches
-- get a branch
-- review a deploy request
-- listdeployrequests
-- get a database
-- getbranch
-- planetscale
-- createbranch
-- grant service token access
-- create an ip restriction entry
-- getservicetoken
-- createdatabase
-- createservicetoken
-- list cluster sizes
-- createiprestriction
-- create a database
-- updatedatabasesettings
-- skip revert period
-- get the deploy queue
-- list passwords
-- getpassword
-- list branches
-- list schema recommendations
-- reviewdeployrequest
-- create a branch
-- get a backup
-- delete a service token
-- createpassword
-- create a password
-- listservicetokenaccesses
-- get a team
-- deleteorganizationmember
-- create a bouncer
-- listservicetokens
-- create a service token
-- listbackups
-- getteam
-- list backups
-- deleteservicetoken
-- deleteteam
-- listorganizations
-- closedeployrequest
-- getquerypatternsreportstatus
-- get a password
-- getdeployqueue
-- getorganizationmember
-- update a team
-- listclustersizes
+- deletebouncer
 - createbouncer
+- createwebhook
+- list teams
+- deleteorganizationmember
 - createteam
+- remove an organization member
+- create a service token
+- listbouncers
+- getbouncer
 - createdeployrequest
-- updatebranch
-- listpasswords
-- create a team
-- queuedeployrequest
-- skipdeployrequestrevert
-- lintbranchschema
-- list webhooks
-- updateorganizationmember
-- deletebackup
+- createbackup
+- update an organization member
+- renew a password
+- list branches
 - create role credentials
+- queue a deploy request
+- closedeployrequest
+- close a deploy request
+- planetscale
+- list backups
+- getquerypatternsreportstatus
+- updateteam
+- createservicetoken
+- list bouncers
+- listwebhooks
+- listschemarecommendations
+- listservicetokens
+- renewpassword
+- deletebackup
+- complete a revert
 slug: planetscale-capability
 source_filename: planetscale-capability.yaml
 source_heading: Capability Spec

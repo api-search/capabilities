@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
 - gitops
-- mcp
-- list deployments
-- api integration
 - governance
-- scale deployment
 - get deployment
+- naftiko
+- list deployments
 - ai
-- spec-driven integration
-- kubernetes
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- scale deployment
+- kubernetes
 slug: k8s-gitops-capability
 source_filename: k8s-gitops-capability.yaml
 source_heading: Capability Spec

@@ -13,15 +13,15 @@ personas: []
 provider_name: Motorola Solutions
 provider_slug: motorola-solutions
 search_terms:
-- solutions
 - video security
-- get api status
-- getstatus
-- iot
-- api
-- public safety
-- communications
+- solutions
 - motorola
+- iot
+- getstatus
+- public safety
+- get api status
+- api
+- communications
 slug: motorola-solutions-capability
 source_filename: motorola-solutions-capability.yaml
 source_heading: Capability Spec

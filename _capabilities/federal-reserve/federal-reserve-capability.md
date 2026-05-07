@@ -61,38 +61,38 @@ personas: []
 provider_name: Federal Reserve
 provider_slug: federal-reserve
 search_terms:
-- getcategoryseries
-- economics
-- searchseries
-- getseriesobservations
-- search series by text
-- get all sources
-- get a category
-- get observations for a series
-- getreleaseseries
-- get a release
-- finance
-- get series in a category
-- get all tags
-- get related tags
-- getcategorychildren
-- getreleases
-- get all releases
-- getsource
-- getrelease
-- getcategory
-- getseries
-- api
-- getsources
-- gettags
-- getrelatedtags
-- reserve
-- federal government
-- get child categories
-- get a source
-- federal
 - get a series
+- searchseries
+- federal
+- gettags
+- get observations for a series
+- api
+- get all sources
+- getcategory
+- reserve
+- getsource
+- get all tags
 - get series for a release
+- getseriesobservations
+- getsources
+- finance
+- getcategorychildren
+- get a source
+- getreleaseseries
+- search series by text
+- getreleases
+- get a release
+- get a category
+- get series in a category
+- getrelease
+- getcategoryseries
+- get child categories
+- get related tags
+- getseries
+- economics
+- getrelatedtags
+- federal government
+- get all releases
 slug: federal-reserve-capability
 source_filename: federal-reserve-capability.yaml
 source_heading: Capability Spec

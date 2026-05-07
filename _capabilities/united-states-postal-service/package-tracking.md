@@ -22,42 +22,42 @@ provider_name: United States Postal Service
 provider_slug: united-states-postal-service
 search_terms:
 - logistics
-- track a usps package.
-- validate address
-- get tracking status for multiple usps packages in a single request.
-- track multiple packages
-- operations manager overseeing fulfillment and carrier pickup scheduling
-- get tracking
-- manager monitoring shipment delivery performance and address quality
-- validate address.
-- logistics manager
-- government
-- track multiple packages.
-- order fulfillment and shipping label generation operations
-- customer service agent
-- validate a delivery address.
-- agent assisting customers with package status and delivery inquiries
 - get tracking status for a package.
-- online retail shipping and fulfillment operations
-- package tracking and delivery status monitoring
-- shipping
+- validate a delivery address.
+- customer-facing delivery inquiry and address validation support
+- validate address
 - get tracking status and scan event history for a usps package by tracking number.
-- shipping manager
-- package tracking
-- track package
-- developer integrating usps shipping into an online store or marketplace
-- get multiple tracking
-- usps
-- postal service
+- ecommerce developer
+- online retail shipping and fulfillment operations
+- track a usps package.
 - package tracking and delivery status monitoring for customer service and logistics
+- get multiple tracking
+- package tracking
+- validate address.
+- track multiple usps packages.
+- operations manager overseeing fulfillment and carrier pickup scheduling
+- validate delivery address
+- manager monitoring shipment delivery performance and address quality
+- get tracking
+- e-commerce shipping lifecycle from address validation through rate shopping to pickup scheduling
+- customer service agent
+- package tracking and delivery status monitoring
+- order fulfillment and shipping label generation operations
+- government
+- postal service
+- developer integrating usps shipping into an online store or marketplace
+- usps
+- validate and standardize a delivery address to ensure usps deliverability.
+- agent assisting customers with package status and delivery inquiries
+- track package
+- logistics manager
 - address validation
 - customer service
-- track multiple usps packages.
-- e-commerce shipping lifecycle from address validation through rate shopping to pickup scheduling
-- customer-facing delivery inquiry and address validation support
-- validate delivery address
-- ecommerce developer
-- validate and standardize a delivery address to ensure usps deliverability.
+- get tracking status for multiple usps packages in a single request.
+- shipping manager
+- shipping
+- track multiple packages.
+- track multiple packages
 slug: package-tracking
 source_filename: package-tracking.yaml
 source_heading: Capability Spec

@@ -53,59 +53,59 @@ personas: []
 provider_name: Amazon Fault Injection Simulator
 provider_slug: amazon-fault-injection-simulator
 search_terms:
-- manage experiments
-- list actions
-- get experiment template
-- DevOps Engineer
-- get action
 - devops
-- get template
+- get action
 - update template
-- update experiment template
-- get experiment
-- get safety lever
-- list templates
-- list all fault injection experiment templates
-- design a new fault injection scenario with targets, actions, and stop conditions
-- fault injection
-- create template
-- aws fis
-- list experiment templates
-- remove an experiment template
-- resilience testing
-- delete experiment template
-- engineers designing and running chaos experiments to improve system reliability
-- engineers integrating fis into ci/cd for automated resilience testing
-- monitoring system behavior during controlled experiments
-- discover all available fault injection action types
-- chaos engineering
 - start experiment
-- list all experiments and their current status
-- manage specific experiment
+- DevOps Engineer
+- list templates
+- resilience testing
 - check the status of a safety lever for experiment control
-- manage experiment templates
-- monitor the status and progress of a fault injection experiment
-- get details and parameters for a specific fis action
-- full chaos engineering lifecycle
-- SRE
-- update safety lever state
-- safety lever control
-- create experiment template
-- execute a fault injection experiment from a template
-- sres using fis to validate service resilience targets
-- validating application behavior under failure conditions
-- delete template
-- list experiments
-- deliberate fault injection to test system resilience
-- modify targets, actions, or stop conditions of an experiment template
-- Resilience Engineer
-- sre
-- abort a running fault injection experiment
-- resilience
-- engage or disengage a safety lever to allow or block experiments
-- manage specific template
-- get the configuration of an experiment template
 - stop experiment
+- fault injection
+- remove an experiment template
+- modify targets, actions, or stop conditions of an experiment template
+- chaos engineering
+- create template
+- manage experiments
+- delete experiment template
+- sres using fis to validate service resilience targets
+- list actions
+- list all experiments and their current status
+- manage experiment templates
+- update experiment template
+- get safety lever
+- engage or disengage a safety lever to allow or block experiments
+- full chaos engineering lifecycle
+- engineers designing and running chaos experiments to improve system reliability
+- list experiment templates
+- delete template
+- create experiment template
+- validating application behavior under failure conditions
+- sre
+- Resilience Engineer
+- deliberate fault injection to test system resilience
+- SRE
+- monitoring system behavior during controlled experiments
+- safety lever control
+- list all fault injection experiment templates
+- abort a running fault injection experiment
+- discover all available fault injection action types
+- resilience
+- aws fis
+- get experiment template
+- list experiments
+- design a new fault injection scenario with targets, actions, and stop conditions
+- execute a fault injection experiment from a template
+- manage specific experiment
+- monitor the status and progress of a fault injection experiment
+- update safety lever state
+- get details and parameters for a specific fis action
+- engineers integrating fis into ci/cd for automated resilience testing
+- get the configuration of an experiment template
+- manage specific template
+- get template
+- get experiment
 slug: amazon-fis-chaos-engineering
 source_filename: amazon-fis-chaos-engineering.yaml
 source_heading: Capability Spec

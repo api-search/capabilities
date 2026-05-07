@@ -25,20 +25,20 @@ personas: []
 provider_name: Energy Transfer
 provider_slug: energy-transfer
 search_terms:
-- createnomination
-- list pipelines
-- create a nomination
-- list schedules
-- pipelines
-- midstream
-- api
-- transfer
-- listschedules
-- energy
 - list nominations
 - listpipelines
+- list pipelines
+- midstream
+- list schedules
+- createnomination
+- energy
+- create a nomination
 - gas scheduling
 - listnominations
+- pipelines
+- api
+- listschedules
+- transfer
 slug: energy-transfer-capability
 source_filename: energy-transfer-capability.yaml
 source_heading: Capability Spec

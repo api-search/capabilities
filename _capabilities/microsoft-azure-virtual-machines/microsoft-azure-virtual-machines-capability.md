@@ -113,68 +113,68 @@ personas: []
 provider_name: Azure Virtual Machines
 provider_slug: microsoft-azure-virtual-machines
 search_terms:
-- virtualmachines generalize
-- azure virtual machines get the instance view of a virtual machine
-- virtualmachines assesspatches
-- compute
-- virtualmachines installpatches
-- azure virtual machines start a virtual machine
-- infrastructure
-- virtualmachines list
-- azure virtual machines perform maintenance on a virtual machine
-- virtualmachines delete
-- azure virtual machines get a virtual machine
-- azure virtual machines assess patches on a virtual machine
-- virtualmachines listavailablesizes
-- machines
-- azure virtual machines redeploy a virtual machine
-- azure virtual machines list available sizes for a virtual machine
-- azure virtual machines run command on a virtual machine
-- azure
-- azure virtual machines deallocate a virtual machine
-- iaas
-- virtual machines
-- virtualmachines start
-- virtualmachines reimage
+- virtualmachines converttomanageddisks
+- virtualmachines listbylocation
+- azure virtual machines reimage a virtual machine
+- virtualmachines performmaintenance
 - virtualmachines retrievebootdiagnosticsdata
-- azure virtual machines restart a virtual machine
-- azure virtual machines create or update a virtual machine
-- virtualmachines get
-- azure virtual machines capture a virtual machine
-- virtualmachines simulateeviction
-- cloud computing
+- virtualmachines redeploy
+- azure virtual machines run command on a virtual machine
+- virtualmachines generalize
+- azure virtual machines assess patches on a virtual machine
+- virtual
+- azure virtual machines list all virtual machines in a subscription
 - virtualmachines listall
+- virtualmachines get
+- api
+- virtualmachines poweroff
+- azure virtual machines capture a virtual machine
+- azure virtual machines perform maintenance on a virtual machine
+- azure virtual machines start a virtual machine
+- azure virtual machines update a virtual machine
+- azure virtual machines list available sizes for a virtual machine
+- virtualmachines start
+- virtualmachines deallocate
+- azure virtual machines retrieve boot diagnostics data
+- cloud computing
+- microsoft
+- azure virtual machines redeploy a virtual machine
+- virtualmachines installpatches
+- infrastructure
+- azure virtual machines deallocate a virtual machine
+- azure virtual machines convert to managed disks
+- azure virtual machines generalize a virtual machine
+- virtualmachines delete
+- azure virtual machines reapply a virtual machine state
+- virtualmachines capture
+- virtualmachines restart
+- azure virtual machines simulate eviction of a spot virtual machine
 - azure virtual machines install patches on a virtual machine
 - azure virtual machines attach or detach data disks
-- virtualmachines poweroff
+- virtualmachines listavailablesizes
 - virtualmachines reapply
-- virtualmachines restart
-- azure virtual machines reimage a virtual machine
-- virtualmachines converttomanageddisks
-- virtual
-- virtualmachines runcommand
-- azure virtual machines list virtual machines by location
-- azure virtual machines convert to managed disks
-- api
-- virtualmachines createorupdate
-- virtualmachines capture
-- azure virtual machines generalize a virtual machine
-- azure virtual machines reapply a virtual machine state
 - virtualmachines instanceview
-- azure virtual machines list virtual machines in a resource group
-- azure virtual machines retrieve boot diagnostics data
-- azure virtual machines simulate eviction of a spot virtual machine
-- virtualmachines redeploy
-- virtualmachines deallocate
-- azure virtual machines power off a virtual machine
-- virtualmachines performmaintenance
-- virtualmachines attachdetachdatadisks
-- azure virtual machines list all virtual machines in a subscription
-- virtualmachines update
-- azure virtual machines update a virtual machine
-- microsoft
+- virtualmachines reimage
+- virtual machines
+- virtualmachines createorupdate
 - azure virtual machines delete a virtual machine
-- virtualmachines listbylocation
+- azure virtual machines list virtual machines in a resource group
+- compute
+- virtualmachines runcommand
+- azure virtual machines restart a virtual machine
+- azure virtual machines get the instance view of a virtual machine
+- azure
+- virtualmachines update
+- azure virtual machines list virtual machines by location
+- virtualmachines simulateeviction
+- virtualmachines assesspatches
+- machines
+- iaas
+- virtualmachines attachdetachdatadisks
+- azure virtual machines power off a virtual machine
+- azure virtual machines create or update a virtual machine
+- virtualmachines list
+- azure virtual machines get a virtual machine
 slug: microsoft-azure-virtual-machines-capability
 source_filename: microsoft-azure-virtual-machines-capability.yaml
 source_heading: Capability Spec

@@ -61,69 +61,69 @@ personas: []
 provider_name: Telegram
 provider_slug: telegram
 search_terms:
-- webhooks
-- incoming updates from telegram users
-- poll telegram for new incoming messages, button clicks, and other updates via long polling
-- bot information and status
-- send photo
-- send a native poll to a chat
-- get the current list of commands in the bot's command menu
-- set webhook
-- get updates
-- send a text message to a chat or user
+- chat information and management
+- notifications
+- get bot information and verify authentication
+- delete webhook
 - send poll
-- send a document or file to a telegram chat
+- list all administrators in a chat
+- set bot commands
+- get bot commands
+- get the current webhook configuration and status including last error and pending update count
+- get chat info
+- list all administrators in a telegram chat with their admin permissions
+- create polls in chats
+- get the current bot command menu
+- configure a webhook url so telegram pushes updates in real-time instead of requiring polling
+- send a text message to a telegram chat, group, or channel. supports markdown and html formatting.
+- chat administrator list
+- get the total number of members in a telegram chat
+- send a text message to a chat or user
+- get basic information about the telegram bot including name, username, and capabilities
+- get current webhook status and configuration
+- get updates
+- get commands
 - send text message
 - get bot info
-- get bot commands
-- get the total number of members in a telegram chat
-- list all administrators in a telegram chat with their admin permissions
-- get chat info
-- get member count
-- delete webhook
-- send document
-- remove the webhook integration and switch to long polling
-- get basic information about the telegram bot including name, username, and capabilities
-- send a photo to a telegram chat with an optional caption
-- get webhook info
-- send a photo to a chat
-- get chat administrators
-- get commands
-- get current webhook status and configuration
-- send a document or file to a chat
-- get detailed information about a chat including title, description, member count, and invite link
-- get bot information and verify authentication
-- configure a webhook url to receive real-time updates
-- get the current bot command menu
-- telegram
-- messaging
-- list all administrators in a chat
-- set the list of commands shown in the bot's command menu that users see when they type /
-- poll for incoming messages, callbacks, and other updates
-- create polls in chats
-- chat information and management
-- update the bot command menu
 - send messages and media to chats
-- send message
-- get chat
-- configure a webhook url so telegram pushes updates in real-time instead of requiring polling
-- list chat admins
-- get the current webhook configuration and status including last error and pending update count
-- notifications
-- payments
-- chat
-- create and send a native telegram poll to gather opinions from chat members
-- bot command menu
-- send a text message to a telegram chat, group, or channel. supports markdown and html formatting.
-- set commands
-- create poll
-- set bot commands
-- send documents and files to chats
-- webhook configuration for real-time updates
-- get information about a chat
-- send photos to chats
+- send a document or file to a telegram chat
 - bots
-- chat administrator list
+- send a document or file to a chat
+- send message
+- send document
+- create and send a native telegram poll to gather opinions from chat members
+- get member count
+- get the current list of commands in the bot's command menu
+- webhook configuration for real-time updates
+- send documents and files to chats
+- create poll
+- configure a webhook url to receive real-time updates
+- get chat administrators
+- webhooks
+- bot command menu
+- get detailed information about a chat including title, description, member count, and invite link
+- get chat
+- set the list of commands shown in the bot's command menu that users see when they type /
+- telegram
+- list chat admins
+- poll for incoming messages, callbacks, and other updates
+- chat
+- get information about a chat
+- update the bot command menu
+- set commands
+- bot information and status
+- send a photo to a chat
+- send a photo to a telegram chat with an optional caption
+- payments
+- get webhook info
+- remove the webhook integration and switch to long polling
+- set webhook
+- poll telegram for new incoming messages, button clicks, and other updates via long polling
+- send a native poll to a chat
+- messaging
+- send photos to chats
+- incoming updates from telegram users
+- send photo
 slug: bot-messaging
 source_filename: bot-messaging.yaml
 source_heading: Capability Spec

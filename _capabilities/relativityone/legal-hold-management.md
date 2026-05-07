@@ -57,71 +57,71 @@ personas: []
 provider_name: RelativityOne
 provider_slug: relativityone
 search_terms:
-- create legal hold project
-- ediscovery
-- relativity
-- create a new legal hold project.
-- update entity status
-- legal hold communications and notifications.
-- legal
-- add a custodian to a legal hold project.
-- legal operations
-- release custodians from a legal hold project.
-- create an hr entity to integrate employee records with legal hold workflows.
-- data preservation workflows.
-- preserve custodian data
-- add custodian to project
-- list legal hold projects
-- initiate data preservation for custodians across m365 and google workspace.
-- get all custodians currently on hold.
-- release custodians from hold
-- create a task for tracking legal hold actions and assignments.
-- list all legal hold projects in a workspace.
-- update employee status
-- legal hold project management.
-- compliance
-- get a specific legal hold project by id.
-- create a legal hold communication.
-- create hr entity
-- create project
-- add custodian
-- get legal hold project
-- individual entity operations.
-- custodian management for legal hold projects.
-- create entity
-- create a legal hold communication notice with escalation and reminder schedules.
-- get a summary of all custodians currently on legal hold across all projects.
-- list all custodians in a legal hold project.
-- get details of a specific legal hold project.
 - update the employment status of an entity.
-- release custodians
-- document management
-- preserve custodian data in m365 and google workspace.
+- list all legal hold projects in a workspace.
 - litigation
-- legal hold
-- create an hr entity for legal hold workflows.
-- add an employee as a custodian to a legal hold project.
-- get active custodian summary
-- custodian release from legal hold.
-- create hold communication
-- get project
-- release custodians from a legal hold and remove their data preservation.
-- list projects
+- create a legal hold communication.
+- create a task for tracking legal hold actions and assignments.
+- create legal hold task
+- create legal hold project
 - preserve data
 - get active custodians
-- update the employment status of an entity in the legal hold system.
-- create a new legal hold task.
-- hr entity management for legal hold integration.
-- individual legal hold project operations.
-- create a new legal hold project for litigation matter management.
-- list project custodians
-- active custodian summary across all projects.
-- legal hold task management.
-- create task
-- list all custodians assigned to a legal hold project.
-- create communication
-- create legal hold task
+- document management
+- data preservation workflows.
+- add an employee as a custodian to a legal hold project.
+- release custodians from a legal hold and remove their data preservation.
+- relativity
+- preserve custodian data in m365 and google workspace.
+- individual entity operations.
+- get legal hold project
 - list custodians
+- release custodians from a legal hold project.
+- create an hr entity to integrate employee records with legal hold workflows.
+- create hr entity
+- individual legal hold project operations.
+- get a specific legal hold project by id.
+- update entity status
+- compliance
+- release custodians from hold
+- create a new legal hold project.
+- ediscovery
+- list all custodians in a legal hold project.
+- create communication
+- legal hold project management.
+- legal hold task management.
+- add custodian to project
+- get a summary of all custodians currently on legal hold across all projects.
+- add a custodian to a legal hold project.
+- create project
+- custodian management for legal hold projects.
+- list projects
+- create task
+- create a new legal hold task.
+- list project custodians
+- legal hold communications and notifications.
+- custodian release from legal hold.
+- get active custodian summary
+- add custodian
+- list all custodians assigned to a legal hold project.
+- update employee status
+- release custodians
+- get project
+- get all custodians currently on hold.
+- legal operations
+- create an hr entity for legal hold workflows.
+- get details of a specific legal hold project.
+- create a new legal hold project for litigation matter management.
+- update the employment status of an entity in the legal hold system.
+- preserve custodian data
+- create hold communication
+- hr entity management for legal hold integration.
+- create entity
+- legal
+- list legal hold projects
+- active custodian summary across all projects.
+- legal hold
+- initiate data preservation for custodians across m365 and google workspace.
+- create a legal hold communication notice with escalation and reminder schedules.
 slug: legal-hold-management
 source_filename: legal-hold-management.yaml
 source_heading: Capability Spec

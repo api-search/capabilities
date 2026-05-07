@@ -33,38 +33,38 @@ personas: []
 provider_name: Snowflake
 provider_slug: snowflake
 search_terms:
-- create api integration
-- fetch api integration details
+- integrations
+- catalog integration management
+- fetch notification integration details
+- list notification integrations
 - create a catalog integration
-- fetch api integration
-- snowflake
+- delete notification integration
+- delete a notification integration
+- create notification integration
+- delete an api integration
+- api integration management
 - list api integrations
 - delete api integration
-- catalog integration management
-- create a notification integration
-- fetch notification integration
-- fetch notification integration details
 - create catalog integration
 - sql
+- delete catalog integration
+- snowflake
+- notification integration management
+- fetch catalog integration details
+- create an api integration
+- connectors
 - data sharing
-- integrations
-- list catalog integrations
 - data lakes
 - database
-- create an api integration
-- api integration management
 - delete a catalog integration
-- delete notification integration
-- delete an api integration
-- create notification integration
-- delete catalog integration
-- connectors
-- delete a notification integration
-- data warehousing
-- fetch catalog integration details
-- notification integration management
 - fetch catalog integration
-- list notification integrations
+- data warehousing
+- fetch api integration details
+- create a notification integration
+- fetch notification integration
+- list catalog integrations
+- create api integration
+- fetch api integration
 slug: integrations-and-connectors
 source_filename: integrations-and-connectors.yaml
 source_heading: Capability Spec

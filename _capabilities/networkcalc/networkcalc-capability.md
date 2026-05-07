@@ -33,26 +33,26 @@ personas: []
 provider_name: NetworkCalc
 provider_slug: networkcalc
 search_terms:
-- networking
-- get security scan host
-- binary conversion
-- dns
-- subnet calculator (ipv6)
-- get ip address
-- domains
 - get binary value
-- subnetting
-- encode or decode a value
-- security
-- subnet calculator (ipv4)
-- get dns lookup domain
+- networking
 - networkcalc
-- dns lookup
-- ssl/tls security scan
-- get encoder type value
+- get ip address
 - api
+- subnet calculator (ipv6)
+- subnetting
+- subnet calculator (ipv4)
+- ssl/tls security scan
 - get ipv6 address
 - calculator
+- get security scan host
+- dns lookup
+- get dns lookup domain
+- binary conversion
+- encode or decode a value
+- get encoder type value
+- dns
+- domains
+- security
 slug: networkcalc-capability
 source_filename: networkcalc-capability.yaml
 source_heading: Capability Spec

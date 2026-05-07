@@ -41,31 +41,31 @@ personas: []
 provider_name: PointClickCare
 provider_slug: pointclickcare
 search_terms:
-- listpatients
-- fhir
-- listfacilities
 - get a resident/patient
-- get patient medication orders
-- get patient diagnoses
-- getpatientdiagnoses
+- ehr
+- api
+- post-acute care
+- get patient vitals
+- list residents/patients
+- fhir
+- pointclickcare
+- interoperability
+- get medication administration records
 - healthcare
+- listpatients
+- senior care
+- listfacilities
+- getpatientdiagnoses
+- long-term care
+- list patient assessments
+- getpatientmar
+- getpatientvitals
 - list facilities
 - getpatientmedications
-- get patient vitals
-- getpatientvitals
-- api
-- get medication administration records
-- interoperability
 - getpatient
-- senior care
-- ehr
-- list residents/patients
-- list patient assessments
-- post-acute care
+- get patient medication orders
 - listpatientassessments
-- pointclickcare
-- long-term care
-- getpatientmar
+- get patient diagnoses
 slug: pointclickcare-capability
 source_filename: pointclickcare-capability.yaml
 source_heading: Capability Spec

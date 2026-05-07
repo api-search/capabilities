@@ -77,50 +77,50 @@ personas: []
 provider_name: Energy Charts API
 provider_slug: energy-charts-api
 search_terms:
-- wind offshore share daily avg
-- ren share daily avg ren share daily avg get
-- solar share daily avg solar share daily avg get
-- europe
-- public power forecast public power forecast get
-- renewable share forecast ren share forecast get
-- cross border physical flows
-- day ahead price
-- cross border electricity trading
-- solar share
-- solar share daily avg
-- wind offshore share
-- renewable share forecast
-- wind onshore share daily avg
-- ren share daily avg
-- power
-- traffic signal signal get
-- grid
-- cross border physical flows cbpf get
-- forecasts
-- public power public power get
-- total power total power get
-- installed power installed power get
-- wind onshore share
-- api
-- public power forecast
-- cross border electricity trading cbet get
-- installed power
-- energy
-- frequency
-- public power
-- electricity
-- wind onshore share daily avg wind onshore share
-- charts
 - wind onshore share wind onshore share get
-- pricing
-- traffic signal
-- wind offshore share wind offshore share get
-- frequency frequency get
-- renewables
 - day ahead price price get
-- solar share solar share get
+- public power forecast public power forecast get
+- solar share
+- wind offshore share daily avg
 - wind offshore share daily avg wind offshore shar
+- charts
+- traffic signal
+- api
+- ren share daily avg ren share daily avg get
+- renewables
+- solar share daily avg solar share daily avg get
+- electricity
+- solar share solar share get
+- europe
+- installed power installed power get
+- cross border electricity trading
+- wind offshore share
+- cross border physical flows cbpf get
+- public power public power get
+- grid
+- wind onshore share
+- pricing
+- energy
+- traffic signal signal get
+- day ahead price
+- renewable share forecast
+- wind offshore share wind offshore share get
+- wind onshore share daily avg wind onshore share
+- cross border physical flows
+- renewable share forecast ren share forecast get
+- frequency frequency get
+- public power
 - total power
+- solar share daily avg
+- wind onshore share daily avg
+- public power forecast
+- forecasts
+- cross border electricity trading cbet get
+- ren share daily avg
+- frequency
+- power
+- installed power
+- total power total power get
 slug: energy-charts-api-capability
 source_filename: energy-charts-api-capability.yaml
 source_heading: Capability Spec

@@ -25,37 +25,37 @@ personas: []
 provider_name: USDA Agricultural Research Service (ARS)
 provider_slug: usda-agricultural-research-service-ars-
 search_terms:
-- nutrition
-- research
-- search usda fooddata central for nutritional data
-- browse usda foundation foods — the highest quality nutritional data with detailed metadata and extended nutrient values.
-- get full metadata for a research dataset
-- get full nutritional data for a specific food
-- query dataset records
-- get research dataset
-- search datasets
-- get food
-- food nutritional data search
-- agricultural research datasets
-- search foods
-- food data
 - individual food nutritional record
-- search ag data commons for research datasets
+- agricultural research datasets
 - get full metadata and download links for a specific usda research dataset
-- query tabular data records within a published usda research dataset (for datasets with structured/tabular data in the ag data commons datastore).
-- browse foundation foods
-- search usda fooddata central for foods by name or keyword. returns nutritional data from foundation, sr legacy, survey, and branded food databases.
-- research dataset detail
-- get food nutrition
-- agricultural research
-- federal government
-- search usda ag data commons for agricultural research datasets covering soil health, crop genetics, animal production, food safety, and more.
+- nutrition
+- get full metadata for a research dataset
+- food data
+- get food
 - food safety
+- search usda ag data commons for agricultural research datasets covering soil health, crop genetics, animal production, food safety, and more.
+- get research dataset
+- browse usda foundation foods — the highest quality nutritional data with detailed metadata and extended nutrient values.
 - get dataset
-- get detailed nutritional composition (calories, macros, vitamins, minerals) for a specific food item by its usda fdc id.
+- research dataset detail
 - agriculture
 - search research datasets
+- research
+- food nutritional data search
+- search usda fooddata central for nutritional data
+- search foods
+- agricultural research
+- get detailed nutritional composition (calories, macros, vitamins, minerals) for a specific food item by its usda fdc id.
+- search ag data commons for research datasets
+- search usda fooddata central for foods by name or keyword. returns nutritional data from foundation, sr legacy, survey, and branded food databases.
+- get full nutritional data for a specific food
+- browse foundation foods
+- search datasets
+- query tabular data records within a published usda research dataset (for datasets with structured/tabular data in the ag data commons datastore).
+- get food nutrition
+- federal government
 - open data
+- query dataset records
 slug: agricultural-research-data
 source_filename: agricultural-research-data.yaml
 source_heading: Capability Spec

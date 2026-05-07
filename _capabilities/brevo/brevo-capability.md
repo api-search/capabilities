@@ -81,44 +81,44 @@ personas: []
 provider_name: brevo
 provider_slug: brevo
 search_terms:
-- get all contacts
-- create a contact attribute
-- get all folders
-- add contacts to a list
-- delete a contact attribute
-- listcontacts
-- get all contact lists
-- updatecontactlist
-- deletecontactattribute
-- createfolder
-- listfolders
-- listcontactlists
-- removecontactsfromlist
-- list all contact attributes
-- createcontactattribute
-- updatecontact
-- create a contact
-- createcontactlist
-- update a contact list
-- delete a contact list
-- createcontact
-- importcontacts
-- listcontactattributes
-- update a contact
-- api
-- getcontactinfo
-- getcontactlist
-- brevo
-- create a contact list
-- addcontactstolist
-- delete a contact
-- get a contact's details
-- create a folder
-- import contacts
-- get a contact list
-- remove contacts from a list
 - deletecontact
+- listcontacts
+- create a folder
+- get all contact lists
+- createcontact
+- get all contacts
+- api
+- brevo
+- addcontactstolist
+- create a contact
+- add contacts to a list
+- listfolders
+- delete a contact attribute
+- removecontactsfromlist
+- updatecontact
+- getcontactinfo
+- update a contact
+- listcontactattributes
+- createcontactattribute
+- get a contact's details
+- update a contact list
+- list all contact attributes
+- get a contact list
+- create a contact attribute
+- listcontactlists
+- delete a contact
+- getcontactlist
+- deletecontactattribute
+- createcontactlist
+- importcontacts
+- createfolder
+- delete a contact list
+- updatecontactlist
+- remove contacts from a list
+- import contacts
 - deletecontactlist
+- create a contact list
+- get all folders
 slug: brevo-capability
 source_filename: brevo-capability.yaml
 source_heading: Capability Spec

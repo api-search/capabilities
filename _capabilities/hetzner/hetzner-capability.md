@@ -249,114 +249,114 @@ personas: []
 provider_name: Hetzner
 provider_slug: hetzner
 search_terms:
-- hetzner
-- get floating ips action
-- change reverse dns records for a floating ip
-- create a load balancer
-- list load balancers
-- dns
-- retry certificate
-- update floating ip
-- change image protection
-- get certificate action
-- list images actions
-- list actions for a certificate
-- get multiple actions
-- list firewalls actions
-- update a firewall
-- get images action
-- create floating ip
-- set firewall rules
-- update firewall
-- set rules
-- list floating ips actions
-- api
-- get certificate
-- get firewall
-- get load balancers action
-- delete image
-- create certificate
-- servers
-- get a data center
-- get load balancer
-- get an action for a floating ip
-- get action
-- delete a floating ip
-- delete a certificate
-- update image
-- remove from resources
-- get an action for an image
-- get image action
-- get firewall action
-- infrastructure
-- get load balancer type
-- delete an image
-- create load balancer
-- list datacenters
-- delete load balancer
-- delete certificate
-- list certificates
-- get floating ip
-- change floating ip protection
-- update an image
-- delete a firewall
-- get floating ip action
-- get a certificate
-- get a floating ip
-- list certificate actions
-- get an action for a firewall
-- get iso
-- apply to resources
-- assign a floating ip to a server
-- list load balancer types
-- get datacenter
-- delete firewall
-- list load balancers actions
-- list floating ips
-- create firewall
-- assign floating ip
-- list isos
-- list actions for a load balancer
-- list certificates actions
-- apply firewall to resources
-- update load balancer
-- list data centers
-- list floating ip actions
-- update a certificate
-- get an image
-- list actions for a floating ip
-- update certificate
-- list actions for a firewall
-- list firewalls
-- get a firewall
-- list load balancer actions
-- delete a load balancer
-- create a certificate
-- list images
-- get actions
-- get an action for a certificate
-- delete floating ip
 - get an action
-- change floating ip dns ptr
-- get an iso
-- list actions
-- create a floating ip
-- unassign floating ip
-- list actions for an image
-- get firewalls action
-- list firewall actions
-- cloud hosting
+- get action
+- get firewall action
+- create a certificate
+- get certificate action
+- api
+- get actions
+- delete a load balancer
+- get an action for a firewall
+- delete certificate
 - update a load balancer
-- list image actions
-- retry issuance or renewal
-- get a load balancer
-- create a firewall
-- get image
-- update a floating ip
+- list actions for a certificate
+- update certificate
+- delete load balancer
 - remove firewall from resources
-- unassign a floating ip
+- list actions
+- apply to resources
+- list load balancers
+- delete an image
+- update a floating ip
+- set firewall rules
+- create load balancer
+- list actions for a load balancer
+- remove from resources
+- hetzner
+- list data centers
+- create a firewall
+- get multiple actions
+- create a load balancer
+- delete a floating ip
+- list floating ip actions
+- list images
+- update load balancer
+- get an iso
+- set rules
+- get a data center
+- get certificate
+- list load balancer actions
+- get floating ip action
+- list actions for an image
+- list image actions
+- list firewalls actions
+- get load balancer type
 - get certificates action
+- update an image
+- change reverse dns records for a floating ip
+- delete a certificate
+- get a certificate
+- list isos
+- change floating ip protection
+- delete a firewall
+- unassign floating ip
+- apply firewall to resources
+- list images actions
+- list actions for a floating ip
+- update firewall
 - get a load balancer type
+- delete firewall
+- assign floating ip
+- get load balancer
+- get a load balancer
+- retry certificate
+- get images action
+- assign a floating ip to a server
+- get iso
+- infrastructure
+- list certificates
+- create floating ip
+- list load balancer types
+- update a firewall
+- get load balancers action
+- get image action
+- list firewall actions
+- get a firewall
+- update floating ip
+- delete image
+- list actions for a firewall
+- dns
+- cloud hosting
+- update a certificate
+- get datacenter
+- get firewalls action
+- update image
+- get image
+- get floating ips action
+- change image protection
+- list floating ips actions
+- get firewall
+- delete floating ip
+- get an action for a certificate
+- create firewall
+- servers
+- create a floating ip
+- get an action for an image
+- retry issuance or renewal
+- list datacenters
+- list load balancers actions
+- list certificates actions
+- get an action for a floating ip
+- get an image
+- list firewalls
+- unassign a floating ip
+- get floating ip
+- list floating ips
+- change floating ip dns ptr
+- list certificate actions
+- create certificate
+- get a floating ip
 slug: hetzner-capability
 source_filename: hetzner-capability.yaml
 source_heading: Capability Spec

@@ -34,58 +34,58 @@ personas: []
 provider_name: Amazon
 provider_slug: amazon
 search_terms:
-- marketplace
-- process a refund for an amazon pay charge.
-- search the amazon product catalog by keywords.
-- alexa
-- get marketplace orders.
-- create a payment charge via amazon pay.
-- amazon
-- checkout session and payment processing
-- Merchant
+- get orders
 - search catalog
-- process a payment refund.
-- amazon pay checkout sessions.
-- selling partner search catalog
+- advertising list campaigns
+- list amazon advertising campaigns across all campaign types.
+- campaign management and performance reporting
+- product catalog search.
 - create a new amazon advertising campaign.
-- voice
-- advertising request report
-- e-commerce
+- amazon pay checkout sessions.
+- selling partner put listing
+- get marketplace orders.
 - get amazon marketplace orders with filters by marketplace and date range.
-- create checkout session
+- selling partner get orders
+- advertising create campaign
+- unified workflow for amazon sellers, advertisers, and merchants covering marketplace listings, orders, advertising campaigns, and payment processing.
+- create a new amazon pay checkout session for payment processing.
+- amazon
+- product listings, catalog, and order management
+- Advertiser
+- manages product listings, orders, and inventory on amazon marketplace.
+- payment refund processing.
+- advertising request report
 - list campaigns
+- Merchant
 - create a checkout session.
 - request an advertising performance report.
-- advertising campaign management.
+- e-commerce
+- marketplace
 - create refund
-- advertising list campaigns
-- campaign management and performance reporting
-- advertising
-- Advertiser
-- marketplace order management.
-- product catalog search.
-- manages product listings, orders, and inventory on amazon marketplace.
-- creates and optimizes amazon advertising campaigns.
-- create or update a product listing on amazon.
-- pay create charge
-- Amazon Seller
-- list advertising campaigns.
-- payments
-- search amazon product catalog.
-- product listings, catalog, and order management
-- processes payments and refunds via amazon pay.
-- selling partner put listing
-- create a new amazon pay checkout session for payment processing.
-- create an advertising campaign.
-- list amazon advertising campaigns across all campaign types.
-- selling partner get orders
-- unified workflow for amazon sellers, advertisers, and merchants covering marketplace listings, orders, advertising campaigns, and payment processing.
-- advertising create campaign
-- create campaign
-- get orders
-- pay create refund
+- search the amazon product catalog by keywords.
+- selling partner search catalog
+- process a payment refund.
 - pay create checkout session
-- payment refund processing.
+- process a refund for an amazon pay charge.
+- Amazon Seller
+- create an advertising campaign.
+- marketplace order management.
+- advertising campaign management.
+- checkout session and payment processing
+- create a payment charge via amazon pay.
+- list advertising campaigns.
+- pay create refund
+- creates and optimizes amazon advertising campaigns.
+- create checkout session
+- create campaign
+- alexa
+- pay create charge
+- processes payments and refunds via amazon pay.
+- payments
+- voice
+- create or update a product listing on amazon.
+- advertising
+- search amazon product catalog.
 slug: amazon-seller-and-commerce
 source_filename: amazon-seller-and-commerce.yaml
 source_heading: Capability Spec

@@ -29,38 +29,38 @@ personas: []
 provider_name: United States Census Bureau
 provider_slug: united-states-census-bureau
 search_terms:
-- population
-- annual population estimates by geography
-- economics
-- query acs 5-year demographic data (population, income, education, housing) for any us geography from national down to block group level
-- get acs 5-year estimates for any us geography down to block group
-- query business statistics
-- get annual population estimates using births, deaths, and migration data
-- query decennial census
-- query acs 1year
-- get economic data on business establishments, employment counts, and payroll by industry (naics) and geography from county business patterns
-- query acs 1-year demographic data for large geographies (65,000+ population) with more current estimates
-- county business patterns economic data
-- demographics
-- get decennial data
-- acs 1-year demographic estimates for large geographies
-- query population estimates
-- get official decennial census population counts by geography and race
 - acs 5-year demographic, economic, social, and housing estimates
 - get acs1 demographics
-- federal government
-- get business patterns
-- query demographic data
-- get acs5 demographics
-- get acs 1-year estimates for geographies with 65,000+ population
-- get annual population estimates for states and counties, including historical estimates back to the last decennial census
-- decennial census population counts
 - get official decennial census population counts from 2020 or 2010, with data by race/ethnicity at all geographic levels
-- statistics
+- query acs 1-year demographic data for large geographies (65,000+ population) with more current estimates
+- get acs 1-year estimates for geographies with 65,000+ population
+- query business statistics
+- query acs 5-year demographic data (population, income, education, housing) for any us geography from national down to block group level
+- get annual population estimates for states and counties, including historical estimates back to the last decennial census
+- get business patterns
+- population
 - geography
-- get business establishment counts, employment, and payroll by industry
-- open data
+- query population estimates
+- query demographic data
+- decennial census population counts
+- get annual population estimates using births, deaths, and migration data
 - get population estimates
+- get official decennial census population counts by geography and race
+- get economic data on business establishments, employment counts, and payroll by industry (naics) and geography from county business patterns
+- get acs5 demographics
+- acs 1-year demographic estimates for large geographies
+- get business establishment counts, employment, and payroll by industry
+- annual population estimates by geography
+- demographics
+- get decennial data
+- county business patterns economic data
+- economics
+- query acs 1year
+- statistics
+- federal government
+- query decennial census
+- open data
+- get acs 5-year estimates for any us geography down to block group
 slug: demographic-research
 source_filename: demographic-research.yaml
 source_heading: Capability Spec

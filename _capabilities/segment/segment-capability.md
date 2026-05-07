@@ -57,32 +57,32 @@ personas: []
 provider_name: segment
 provider_slug: segment
 search_terms:
-- list sources
-- createtrackingplan
-- update destination
-- create tracking plan
-- listtrackingplans
-- getworkspace
-- getdestination
-- deletesource
+- delete source
+- list destinations
 - createdestination
-- get workspace
-- createsource
-- updatedestination
-- get source
-- create source
+- get destination
+- create tracking plan
+- api
+- update destination
+- listdestinations
 - getsource
 - listsources
-- listdestinations
-- api
-- delete destination
-- list tracking plans
-- segment
-- list destinations
-- get destination
 - deletedestination
-- delete source
 - create destination
+- segment
+- create source
+- getdestination
+- listtrackingplans
+- list sources
+- deletesource
+- get source
+- delete destination
+- getworkspace
+- createsource
+- createtrackingplan
+- list tracking plans
+- get workspace
+- updatedestination
 slug: segment-capability
 source_filename: segment-capability.yaml
 source_heading: Capability Spec

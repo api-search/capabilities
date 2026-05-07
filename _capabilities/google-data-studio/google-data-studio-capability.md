@@ -29,25 +29,25 @@ personas: []
 provider_name: Google Data Studio
 provider_slug: google-data-studio
 search_terms:
-- addmembers
-- patchpermissions
 - visualization
-- reporting
 - analytics
-- google data studio revoke all permissions for members
-- google data studio get asset permissions
-- google data studio update asset permissions
-- studio
-- dashboards
-- google
-- api
-- google data studio search looker studio assets
-- searchassets
-- business intelligence
-- data
 - google data studio add members to an asset
+- api
+- searchassets
+- google
+- addmembers
+- business intelligence
 - revokeallpermissions
+- dashboards
 - getpermissions
+- google data studio get asset permissions
+- studio
+- google data studio search looker studio assets
+- patchpermissions
+- google data studio update asset permissions
+- reporting
+- data
+- google data studio revoke all permissions for members
 slug: google-data-studio-capability
 source_filename: google-data-studio-capability.yaml
 source_heading: Capability Spec

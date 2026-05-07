@@ -57,57 +57,57 @@ personas: []
 provider_name: Thought Industries
 provider_slug: thought-industries
 search_terms:
-- course enrollment management
-- get detailed information about a specific course
-- education
-- enroll a learner in a course
-- single course details
-- update learner profile or activate/deactivate account
-- get learning path enrollment actions and completion report
-- training
-- create a new learner account
-- learner user management
-- update learner profile or deactivate account
-- get learner details by id
-- bulk remove enrollments
-- get learner details and profile by user id
-- course catalog
-- create user
-- add a learner to a specific group
-- create a new learner account in the platform
-- list all learner groups
-- list all learners in the platform with optional email filter
-- learner groups
-- learning path actions report
-- get user enrollments
-- remove multiple learners from a course or learning path
-- e-learning
-- add learner to a group
-- get learning path actions report
-- user enrollment history
-- list all learners with optional email filter
-- get course
-- bulk remove course access
-- single user operations
-- lxp
 - remove multiple learners from a course
-- get all course enrollments for a learner
-- update user
-- lms
-- get user
-- hr integration
-- list users
-- get course details
-- list groups
-- list all learner groups in the platform
-- get all course enrollments and progress for a learner
-- learning
 - list courses
-- add user to group
-- list all available courses in the catalog with status filter
-- enroll user
+- hr integration
+- update learner profile or deactivate account
+- get all course enrollments for a learner
+- learning path actions report
+- update learner profile or activate/deactivate account
+- list groups
+- course catalog
+- list all learner groups in the platform
+- update user
+- bulk remove enrollments
 - list all courses in the catalog
+- lms
+- lxp
+- list all learner groups
+- get detailed information about a specific course
+- remove multiple learners from a course or learning path
+- get learner details and profile by user id
+- single user operations
+- add user to group
+- learner groups
+- list all learners in the platform with optional email filter
+- add a learner to a specific group
+- create a new learner account
+- learning
+- get course
+- get learning path actions report
+- get learning path enrollment actions and completion report
+- list users
+- e-learning
+- get course details
+- enroll user
+- add learner to a group
+- bulk remove course access
+- get user enrollments
+- single course details
+- course enrollment management
+- training
+- get user
 - group membership
+- education
+- create user
+- learner user management
+- get all course enrollments and progress for a learner
+- get learner details by id
+- enroll a learner in a course
+- list all available courses in the catalog with status filter
+- list all learners with optional email filter
+- user enrollment history
+- create a new learner account in the platform
 - get learning path enrollment actions report
 slug: learning-management
 source_filename: learning-management.yaml

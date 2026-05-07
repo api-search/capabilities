@@ -25,25 +25,25 @@ personas: []
 provider_name: Azure Synapse Analytics
 provider_slug: microsoft-azure-synapse-analytics
 search_terms:
-- roleassignments listroleassignments
-- data integration
 - analytics
-- big data
-- azure synapse analytics get role assignment
-- azure
-- apache spark
-- azure synapse analytics create role assignment
-- etl
-- synapse
-- sql
 - data warehouse
-- roleassignments deleteroleassignmentbyid
-- roleassignments createroleassignment
 - azure synapse analytics list role assignments
 - api
-- roleassignments getroleassignmentbyid
 - microsoft
+- roleassignments listroleassignments
+- sql
+- big data
+- apache spark
+- roleassignments getroleassignmentbyid
+- azure synapse analytics create role assignment
+- roleassignments createroleassignment
+- roleassignments deleteroleassignmentbyid
+- azure synapse analytics get role assignment
+- azure
+- etl
+- data integration
 - azure synapse analytics delete role assignment
+- synapse
 slug: microsoft-azure-synapse-analytics-capability
 source_filename: microsoft-azure-synapse-analytics-capability.yaml
 source_heading: Capability Spec

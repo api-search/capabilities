@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- list psd2 services
 - kong
-- get psd2 service
-- open banking
-- api integration
 - governance
-- spec-driven integration
-- ai
 - psd2
-- mcp
+- list psd2 services
+- ai
 - capabilities
+- spec-driven integration
+- get psd2 service
+- api integration
+- mcp
+- naftiko
+- open banking
 slug: kong-gateway-psd2-mirror-capability
 source_filename: kong-gateway-psd2-mirror-capability.yaml
 source_heading: Capability Spec

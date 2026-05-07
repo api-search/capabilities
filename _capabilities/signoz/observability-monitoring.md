@@ -57,68 +57,68 @@ personas: []
 provider_name: SigNoz
 provider_slug: signoz
 search_terms:
-- get the distributed trace waterfall view for a specific trace id to analyze request flow
-- get alert
-- get trace
-- apm
-- infrastructure host monitoring
-- list all alert notification channels (slack, pagerduty, email, webhook)
-- get details of a specific alert rule by id
-- query metrics, traces, or logs over a time range
-- cloud monitoring
+- opentelemetry
 - get details of a specific alert rule
-- infrastructure
-- metrics catalog and inspection
-- delete an alert rule from signoz
-- ingestion key management for telemetry data collection
-- list infrastructure hosts
 - query telemetry
 - create ingestion key
-- metrics
-- dashboards
-- alerting
-- logs
-- list all configured alert rules
-- create a new alert notification channel
-- opentelemetry
-- create a new notification channel
-- list all monitored infrastructure hosts and their current status
-- open source
-- list notification channels
-- list all configured alert rules in the signoz observability platform
-- create a new alert rule for observability monitoring
-- query range
-- delete alert
-- list all available metrics in the platform
-- create a new observability alert rule with threshold conditions
-- observability
-- delete an alert rule
-- list all ingestion keys
-- list all available metrics in the signoz metrics catalog
-- get trace waterfall
-- query metrics, distributed traces, or logs data over a specified time range
-- create channel
-- list metrics
-- list channels
-- list hosts
-- list all telemetry ingestion keys for the organization
 - create alert
-- alert rule management for observability monitoring
-- list all notification channels
-- list all monitored infrastructure hosts
-- notification channel management
-- get distributed trace waterfall by trace id
-- create a new ingestion key for authenticating telemetry data collection
-- unified telemetry query endpoint
-- infrastructure monitoring
-- list alerts
-- list ingestion keys
 - distributed tracing
-- sre
+- list all available metrics in the signoz metrics catalog
+- list channels
+- infrastructure monitoring
 - individual alert rule operations
-- create notification channel
+- notification channel management
 - create a new ingestion key
+- apm
+- list all ingestion keys
+- get the distributed trace waterfall view for a specific trace id to analyze request flow
+- delete alert
+- list all configured alert rules
+- list notification channels
 - distributed trace inspection
+- ingestion key management for telemetry data collection
+- cloud monitoring
+- open source
+- delete an alert rule
+- create a new ingestion key for authenticating telemetry data collection
+- query metrics, distributed traces, or logs data over a specified time range
+- list all monitored infrastructure hosts
+- create notification channel
+- logs
+- infrastructure
+- metrics catalog and inspection
+- list all available metrics in the platform
+- list all telemetry ingestion keys for the organization
+- query range
+- dashboards
+- observability
+- create a new alert rule for observability monitoring
+- get trace
+- sre
+- list all configured alert rules in the signoz observability platform
+- infrastructure host monitoring
+- unified telemetry query endpoint
+- list alerts
+- get details of a specific alert rule by id
+- create channel
+- get alert
+- list hosts
+- list ingestion keys
+- list all notification channels
+- alert rule management for observability monitoring
+- delete an alert rule from signoz
+- create a new notification channel
+- metrics
+- list metrics
+- list infrastructure hosts
+- query metrics, traces, or logs over a time range
+- get trace waterfall
+- create a new observability alert rule with threshold conditions
+- alerting
+- get distributed trace waterfall by trace id
+- list all monitored infrastructure hosts and their current status
+- list all alert notification channels (slack, pagerduty, email, webhook)
+- create a new alert notification channel
 slug: observability-monitoring
 source_filename: observability-monitoring.yaml
 source_heading: Capability Spec

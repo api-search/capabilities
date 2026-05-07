@@ -189,98 +189,98 @@ personas: []
 provider_name: marqeta
 provider_slug: marqeta
 search_terms:
-- update a velocity control
-- update a card
-- resendwebhookevent
-- createvelocitycontrol
-- createauthcontrol
-- update an authorization control
-- create a business
-- updatecard
-- listgpaorders
-- listwebhooks
-- api
-- retrieve a webhook
-- create a card transition
-- createprogramachfundingsource
-- create a user
-- createwebhook
-- getcardproduct
-- create a program ach funding source
-- getuser
-- retrieve program reserve balance
-- update a card product
-- create a gpa order
-- getcard
-- updateuser
-- updatebusiness
 - create a card
-- retrieve a user
-- createuser
-- listcardtransitions
-- create an ach funding source
-- create a webhook
-- list cards for a user
-- list authorization controls
-- list kyc verifications for a user
-- createbusiness
-- list card products
-- retrieve an ach funding source
-- createcard
-- getprogramreservebalance
-- listusers
-- list transactions
-- createcardproduct
-- retrieve a card
-- retrieve gpa balance
-- updatevelocitycontrol
-- getachfundingsource
-- listusertransitions
-- updatecardproduct
-- createcardtransition
-- list card transitions
-- create a kyc verification
-- retrieve an authorization control
-- retrieve a card product
-- retrieve a business
-- getauthcontrol
-- getwebhook
-- create a velocity control
-- listkycforuser
-- marqeta
-- create a user transition
-- creategpaorder
-- list user transitions
-- listbusinesses
-- retrieve a velocity control
-- getbusiness
-- listcardproducts
-- getvelocitycontrol
-- gettransaction
-- retrieve a gpa order
-- retrieve a transaction
-- updatewebhook
-- listtransactions
-- updateauthcontrol
-- listcards
-- createkycverification
-- list velocity controls
-- listvelocitycontrols
-- resend a webhook event
-- list gpa orders
-- list businesses
-- update a webhook
-- getbalance
-- createachfundingsource
-- getgpaorder
-- createusertransition
-- create an authorization control
-- update a business
-- list users
-- update a user
-- list webhooks
+- create a business
 - listauthcontrols
+- list cards for a user
+- create a program ach funding source
+- list authorization controls
+- api
+- retrieve a card
+- createcard
+- getbusiness
+- retrieve a business
+- retrieve a gpa order
+- update a velocity control
+- listcardtransitions
+- update a business
+- list card products
+- updatevelocitycontrol
+- getgpaorder
+- listusertransitions
+- updatebusiness
+- retrieve a transaction
+- update a card product
+- updatecard
+- listvelocitycontrols
+- create a webhook
+- create an ach funding source
+- update a user
+- create a card transition
+- retrieve a velocity control
+- getauthcontrol
+- resendwebhookevent
+- createachfundingsource
+- update an authorization control
+- getcard
+- listcards
+- list businesses
+- createcardproduct
+- create an authorization control
+- updatecardproduct
+- retrieve a card product
+- list users
+- listtransactions
+- creategpaorder
+- list webhooks
+- retrieve a user
+- list card transitions
+- resend a webhook event
+- createauthcontrol
+- createuser
+- createprogramachfundingsource
+- list transactions
+- list user transitions
+- list gpa orders
+- marqeta
+- list kyc verifications for a user
+- listcardproducts
+- listbusinesses
+- retrieve an ach funding source
+- create a velocity control
+- retrieve an authorization control
+- updatewebhook
+- createvelocitycontrol
+- create a gpa order
+- updateuser
+- gettransaction
+- retrieve a webhook
+- create a user
+- listusers
+- retrieve program reserve balance
+- getprogramreservebalance
+- getcardproduct
+- getwebhook
+- getachfundingsource
+- retrieve gpa balance
 - create a card product
+- createcardtransition
+- createwebhook
+- getuser
+- updateauthcontrol
+- listkycforuser
+- create a user transition
+- createbusiness
+- create a kyc verification
+- list velocity controls
+- getvelocitycontrol
+- createkycverification
+- update a card
+- listwebhooks
+- createusertransition
+- getbalance
+- update a webhook
+- listgpaorders
 slug: marqeta-capability
 source_filename: marqeta-capability.yaml
 source_heading: Capability Spec

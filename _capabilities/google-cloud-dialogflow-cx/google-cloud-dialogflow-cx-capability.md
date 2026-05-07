@@ -49,36 +49,36 @@ personas: []
 provider_name: Google Cloud Dialogflow CX
 provider_slug: google-cloud-dialogflow-cx
 search_terms:
-- google cloud dialogflow cx list agents
-- google cloud dialogflow cx list flows
-- chatbots
-- nlu
-- listflows
-- deleteagent
-- google cloud dialogflow cx detect intent
-- createflow
-- cx
-- getagent
-- cloud
-- google
-- google cloud dialogflow cx get an agent
-- detectintent
-- virtual agents
-- listagents
-- google cloud dialogflow cx create an agent
-- updateagent
-- listintents
-- google cloud dialogflow cx delete an agent
 - createintent
-- api
-- google cloud dialogflow cx list intents
-- google cloud dialogflow cx create a flow
+- nlu
+- google cloud dialogflow cx list agents
 - createagent
-- google cloud dialogflow cx create an intent
-- google cloud dialogflow cx update an agent
-- dialogflow
-- google cloud
+- api
+- google cloud dialogflow cx detect intent
+- listintents
+- chatbots
 - conversational ai
+- google cloud dialogflow cx get an agent
+- google cloud dialogflow cx create an intent
+- google
+- dialogflow
+- google cloud dialogflow cx list intents
+- updateagent
+- listflows
+- google cloud dialogflow cx create an agent
+- cloud
+- cx
+- listagents
+- getagent
+- createflow
+- deleteagent
+- google cloud dialogflow cx update an agent
+- virtual agents
+- google cloud dialogflow cx list flows
+- detectintent
+- google cloud dialogflow cx create a flow
+- google cloud
+- google cloud dialogflow cx delete an agent
 slug: google-cloud-dialogflow-cx-capability
 source_filename: google-cloud-dialogflow-cx-capability.yaml
 source_heading: Capability Spec

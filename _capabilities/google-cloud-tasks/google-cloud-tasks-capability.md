@@ -49,35 +49,35 @@ personas: []
 provider_name: Google Cloud Tasks
 provider_slug: google-cloud-tasks
 search_terms:
-- gettask
-- distributed systems
-- tasks
-- runtask
-- google cloud tasks delete a queue
-- google cloud tasks list tasks
-- updatequeue
-- createtask
-- cloud
-- google
-- google cloud tasks get a queue
-- google cloud
-- getqueue
-- google cloud tasks create a queue
-- deletequeue
-- listqueues
-- asynchronous
-- api
-- queues
 - listtasks
+- getqueue
+- google cloud tasks delete a task
+- distributed systems
 - background jobs
+- api
+- google cloud tasks get a queue
+- gettask
+- deletequeue
+- google cloud tasks update a queue
+- google
+- google cloud tasks get a task
+- tasks
+- google cloud tasks delete a queue
+- updatequeue
 - google cloud tasks create a task
 - google cloud tasks run a task
-- google cloud tasks get a task
-- createqueue
-- google cloud tasks update a queue
-- google cloud tasks delete a task
-- deletetask
 - google cloud tasks list queues
+- cloud
+- asynchronous
+- runtask
+- deletetask
+- queues
+- google cloud tasks create a queue
+- google cloud tasks list tasks
+- listqueues
+- google cloud
+- createtask
+- createqueue
 slug: google-cloud-tasks-capability
 source_filename: google-cloud-tasks-capability.yaml
 source_heading: Capability Spec

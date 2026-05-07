@@ -21,19 +21,19 @@ personas: []
 provider_name: UML
 provider_slug: uml
 search_terms:
-- postdiagram
+- diagrams
+- standards
 - get diagram via get
+- postdiagram
+- uml
+- software architecture
+- design
+- gethealth
+- post diagram for rendering
 - getdiagramget
-- modeling
 - api
 - get service health
-- uml
-- standards
-- design
-- diagrams
-- post diagram for rendering
-- software architecture
-- gethealth
+- modeling
 slug: uml-capability
 source_filename: uml-capability.yaml
 source_heading: Capability Spec

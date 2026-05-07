@@ -45,61 +45,61 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: dynamodb
 search_terms:
-- individual table management.
-- batch get item
-- aws
-- document store
-- item operations.
-- query operations.
-- create a new dynamodb table.
-- update an item.
-- delete item
-- get an item.
-- get multiple items from one or more tables.
-- get items in a transaction.
-- table management.
-- scan an entire table or index.
-- describe a table.
-- put or delete multiple items in batch.
-- list tables.
-- serverless
-- describe table
-- cloud
-- list tables
-- list backups
-- delete table
-- nosql
-- create a table.
-- create table
-- database management
-- managed service
-- query
-- put item
-- transact get items
-- list dynamodb tables.
-- write items in a transaction.
-- database
-- get an item by primary key.
-- dynamodb
 - query items by primary key.
-- transact write items
-- list on-demand backups.
-- batch write item
+- transact get items
+- describe table
+- managed service
 - update item
-- delete an item.
-- scan
-- delete a table.
+- batch get item
+- batch write item
+- document store
+- transact write items
+- list dynamodb tables.
 - create an on-demand backup.
-- query items.
-- create backup
-- scan a table.
-- update table
-- key-value
+- database management
+- create table
+- item operations.
+- describe a table.
+- put item
 - create or replace an item.
-- update a table.
+- query
+- list on-demand backups.
+- update an item.
 - delete a dynamodb table.
-- get item
+- key-value
+- put or delete multiple items in batch.
+- individual table management.
+- list tables
+- serverless
+- query items.
+- scan a table.
+- get an item.
+- scan
+- create a new dynamodb table.
+- update a table.
+- create a table.
+- dynamodb
+- write items in a transaction.
 - describe a dynamodb table.
+- database
+- list tables.
+- delete table
+- scan an entire table or index.
+- delete item
+- update table
+- get an item by primary key.
+- list backups
+- cloud
+- delete an item.
+- delete a table.
+- aws
+- nosql
+- get item
+- query operations.
+- table management.
+- get items in a transaction.
+- get multiple items from one or more tables.
+- create backup
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

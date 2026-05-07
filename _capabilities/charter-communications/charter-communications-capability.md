@@ -17,22 +17,22 @@ personas: []
 provider_name: Charter Communications
 provider_slug: charter-communications
 search_terms:
-- network as a service
-- broadband
 - get network status
+- camara
 - spectrum
-- ticketing
+- charter
 - get connected devices
-- api
-- telecommunications
 - getnetworkstatus
-- communications
+- broadband
 - cable
 - enterprise
-- charter
-- camara
+- network as a service
+- ticketing
+- api
+- telecommunications
 - naas
 - getconnecteddevices
+- communications
 slug: charter-communications-capability
 source_filename: charter-communications-capability.yaml
 source_heading: Capability Spec

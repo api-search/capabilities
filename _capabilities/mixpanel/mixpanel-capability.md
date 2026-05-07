@@ -29,23 +29,23 @@ personas: []
 provider_name: Mixpanel
 provider_slug: mixpanel
 search_terms:
-- mixpanel update annotation
-- mixpanel list annotations
-- getannotation
-- listannotations
-- data analysis
-- createannotation
-- event tracking
-- user behavior
-- api
-- mixpanel create annotation
-- updateannotation
+- product analytics
 - analytics
 - mixpanel get annotation
-- deleteannotation
-- mixpanel delete annotation
+- event tracking
+- data analysis
+- updateannotation
+- mixpanel list annotations
 - mixpanel
-- product analytics
+- getannotation
+- createannotation
+- deleteannotation
+- user behavior
+- listannotations
+- api
+- mixpanel create annotation
+- mixpanel update annotation
+- mixpanel delete annotation
 slug: mixpanel-capability
 source_filename: mixpanel-capability.yaml
 source_heading: Capability Spec

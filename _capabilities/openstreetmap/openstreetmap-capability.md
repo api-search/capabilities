@@ -81,49 +81,49 @@ personas: []
 provider_name: OpenStreetMap
 provider_slug: openstreetmap
 search_terms:
-- mapping
+- get api capabilities and limits
 - getway
-- openstreetmap
+- update changeset tags
+- closechangeset
 - geocoding
 - searchnotes
-- createnote
-- geospatial
-- getuserdetails
-- updatenode
-- update a node
-- create a changeset
-- updatechangeset
-- getnode
-- getmapdata
-- get map data for a bounding box
 - get relation by id
-- getchangeset
-- closechangeset
-- uploadchangeset
-- getcapabilities
-- create a new node
-- delete a node
-- create a note
-- upload an osmchange document
-- search notes
-- editing
-- api
-- getnodeversion
-- get api capabilities and limits
-- createchangeset
 - get authenticated user details
+- api
+- upload an osmchange document
+- create a new node
+- updatechangeset
+- search notes
 - get changeset details
-- createnode
-- close a changeset
-- deletenode
-- get a note
+- editing
 - get node by id
-- update changeset tags
 - getrelation
+- getnodeversion
 - getnote
-- get a specific version of a node
+- close a changeset
+- geospatial
+- openstreetmap
+- mapping
+- getcapabilities
+- create a note
+- update a node
+- get map data for a bounding box
+- getnode
+- createnode
+- delete a node
 - get way by id
+- get a note
+- create a changeset
+- getmapdata
+- get a specific version of a node
+- getuserdetails
+- createnote
+- updatenode
 - open data
+- uploadchangeset
+- getchangeset
+- createchangeset
+- deletenode
 slug: openstreetmap-capability
 source_filename: openstreetmap-capability.yaml
 source_heading: Capability Spec

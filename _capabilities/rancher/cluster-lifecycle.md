@@ -37,40 +37,40 @@ personas: []
 provider_name: Rancher
 provider_slug: rancher
 search_terms:
-- list all rancher projects, which group namespaces within clusters for tenancy and policy.
+- containers
+- get cluster
+- kubernetes clusters managed by rancher.
+- multi-cluster
+- list all nodes across clusters.
+- list all kubernetes clusters managed by rancher, including their state, provider, and kubernetes version.
+- suse
+- open source
+- provision a new kubernetes cluster through rancher. specify name, provider, and kubernetes version.
+- provision a new cluster.
+- list all clusters.
+- create a new rancher project within a cluster to organize namespaces.
+- delete cluster
+- infrastructure
+- remove a cluster from rancher.
+- list clusters
 - remove a cluster from rancher management. this deregisters or destroys the cluster.
+- kubernetes
+- list projects
+- create project
+- single cluster.
+- create a new project.
+- cluster management
+- retrieve details for a specific rancher-managed cluster by id.
+- cluster nodes.
+- rancher projects.
+- list all projects.
+- create cluster
+- list nodes
+- list all rancher projects, which group namespaces within clusters for tenancy and policy.
 - list all nodes across rancher-managed clusters, including hostname, state, and roles.
 - rancher
-- kubernetes clusters managed by rancher.
-- infrastructure
-- provision a new kubernetes cluster through rancher. specify name, provider, and kubernetes version.
-- platform engineering
-- rancher projects.
 - get cluster details.
-- list nodes
-- multi-cluster
-- delete cluster
-- remove a cluster from rancher.
-- cluster management
-- containers
-- create a new project.
-- kubernetes
-- create project
-- open source
-- list all clusters.
-- retrieve details for a specific rancher-managed cluster by id.
-- create cluster
-- provision a new cluster.
-- list all projects.
-- list projects
-- get cluster
-- list all nodes across clusters.
-- suse
-- create a new rancher project within a cluster to organize namespaces.
-- list all kubernetes clusters managed by rancher, including their state, provider, and kubernetes version.
-- cluster nodes.
-- list clusters
-- single cluster.
+- platform engineering
 slug: cluster-lifecycle
 source_filename: cluster-lifecycle.yaml
 source_heading: Capability Spec

@@ -85,56 +85,56 @@ personas: []
 provider_name: Nudge Security
 provider_slug: nudge-security
 search_terms:
-- get users
-- set app category
-- get oauth grants
-- get user groups
-- get fields
-- create field
-- search user groups
-- get event
-- create label
-- get events
 - get apps
-- post labels
-- search events
-- sspm
-- saas management
-- get user groups group id members
-- search apps
-- security
-- get apps app id
-- get events event id
-- compliance
-- oauth
-- search accounts
-- search labels
-- search fields
-- api
-- get app to app integrations
-- shadow it
-- get notifications
-- saas security
-- search users
-- search app-to-app integrations
-- get accounts account id
-- access management
-- get labels
-- search findings
-- get accounts
-- search oauth grants
-- list user group members
-- ai security
-- search notifications
-- get oauth grant
-- post apps app category app id
 - get account
-- get app
-- get oauth grants grant id
+- search user groups
+- search findings
 - governance
-- nudge
+- get oauth grants
+- shadow it
+- get apps app id
+- get user groups
+- search app-to-app integrations
+- search notifications
+- api
+- get labels
+- search events
+- search oauth grants
+- get app
 - get findings
+- get accounts
+- search accounts
+- get notifications
+- compliance
+- post apps app category app id
+- search fields
+- saas security
+- get app to app integrations
+- search users
+- list user group members
+- saas management
+- sspm
+- get events
+- get events event id
+- create field
+- search apps
 - post fields
+- access management
+- ai security
+- get event
+- get user groups group id members
+- nudge
+- set app category
+- create label
+- get oauth grant
+- get fields
+- oauth
+- get users
+- security
+- get oauth grants grant id
+- search labels
+- post labels
+- get accounts account id
 slug: nudge-security-capability
 source_filename: nudge-security-capability.yaml
 source_heading: Capability Spec

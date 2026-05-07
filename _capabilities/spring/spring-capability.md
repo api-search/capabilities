@@ -61,43 +61,43 @@ personas: []
 provider_name: Spring Framework
 provider_slug: spring
 search_terms:
-- getenvironment
-- rest
-- get environment properties
 - get component health status
+- getlogger
+- ai
+- api
+- getenvironment
 - set logger level
+- spring boot
+- listloggers
+- cloud native
 - get thread dump
+- get application info
+- list available metrics
+- get application beans
 - java
+- rest
+- open source
 - get request mappings
-- list loggers
-- framework
-- getinfo
+- spring
+- getthreaddump
 - getmappings
 - enterprise
-- getcomponenthealth
-- ai
-- cloud native
-- get logger configuration
-- listmetrics
-- setloggerlevel
-- open source
 - gethealth
-- getbeans
-- get metric value
-- spring boot
-- list available metrics
-- api
-- get health status
-- getenvironmentproperty
-- get application info
+- framework
 - getmetric
-- getthreaddump
-- spring
-- get application beans
+- get logger configuration
+- list loggers
+- getinfo
+- get metric value
+- listmetrics
+- getcomponenthealth
+- get health status
+- setloggerlevel
+- get environment properties
 - get environment property
-- listloggers
+- getenvironmentproperty
 - microservices
-- getlogger
+- getbeans
 slug: spring-capability
 source_filename: spring-capability.yaml
 source_heading: Capability Spec

@@ -161,90 +161,90 @@ personas: []
 provider_name: Firecracker
 provider_slug: firecracker
 search_terms:
-- putserialdevice
-- patchballoonstatsinterval
-- putmachineconfiguration
-- updates the microvm state.
-- stopballoonhinting
-- updates the properties of a drive. post-boot only.
-- initializes the metrics system by specifying a named pipe or a file for the metrics output.
-- gets the firecracker version.
-- putlogger
-- api
-- stops a free page hinting run only if enabled pre-boot.
-- kvm
-- creates or updates a balloon device.
-- putguestbootsource
-- putmmds
-- patchvm
-- creates a mmds (microvm metadata service) data store.
-- patchmemoryhotplug
-- creates or updates a drive. pre-boot only.
-- getmachineconfiguration
-- patchmmds
-- describeballoonconfig
-- microvms
-- updates the mmds data store.
-- virtualization
-- serverless
-- returns the current balloon device configuration.
-- updates a balloon device.
-- putguestpmembyid
-- putcpuconfiguration
-- putmemoryhotplug
-- open source
-- returns the latest balloon device statistics, only if enabled pre-boot.
-- startballoonhinting
-- gets the machine configuration of the vm.
-- creates/updates a vsock device. pre-boot only.
-- updates the rate limiters applied to a network interface. post-boot only.
-- gets the full vm configuration.
-- updates a balloon device statistics polling interval.
-- putentropydevice
-- initializes the logger by specifying a named pipe or a file for the logs output.
-- updates the rate limiter of a pmem device. post-boot only.
-- creates or updates the boot source. pre-boot only.
-- get the mmds data store.
-- patchmachineconfiguration
-- createsnapshot
-- putguestvsock
-- putmetrics
-- configures the hotpluggable memory
-- starts a free page hinting run only if enabled pre-boot.
-- creates or updates a pmem device. pre-boot only.
-- putguestdrivebyid
-- set mmds configuration. pre-boot only.
-- createsyncaction
-- loadsnapshot
-- patchballoon
-- retrieves the status of the hotpluggable memory
-- patchguestdrivebyid
-- returns the balloon hinting statistics, only if enabled pre-boot.
-- creates a synchronous action.
-- patchguestpmembyid
-- patchguestnetworkinterfacebyid
-- getexportvmconfig
-- loads a snapshot. pre-boot only.
-- getfirecrackerversion
-- returns general information about an instance.
-- configures cpu features flags for the vcpus of the guest vm. pre-boot only.
-- updates the machine configuration of the vm. pre-boot only.
-- putmmdsconfig
-- putguestnetworkinterfacebyid
-- configures the serial console
 - containers
-- firecracker
-- describeballoonhinting
-- partially updates the machine configuration of the vm. pre-boot only.
-- describeinstance
-- getmemoryhotplug
-- describeballoonstats
+- updates the microvm state.
+- api
+- configures cpu features flags for the vcpus of the guest vm. pre-boot only.
+- returns the balloon hinting statistics, only if enabled pre-boot.
+- patchguestpmembyid
+- updates the size of the hotpluggable memory region
+- gets the machine configuration of the vm.
+- putguestbootsource
+- initializes the metrics system by specifying a named pipe or a file for the metrics output.
 - creates an entropy device. pre-boot only.
+- creates a synchronous action.
+- putguestvsock
+- creates or updates a pmem device. pre-boot only.
+- putguestpmembyid
+- returns general information about an instance.
+- putguestnetworkinterfacebyid
+- getmmds
+- patchmemoryhotplug
+- putlogger
+- updates the machine configuration of the vm. pre-boot only.
+- updates a balloon device statistics polling interval.
+- getmemoryhotplug
+- virtualization
+- updates the rate limiters applied to a network interface. post-boot only.
+- patchballoonstatsinterval
+- serverless
+- patchvm
+- kvm
+- creates a full or diff snapshot. post-boot only.
+- describeballoonconfig
+- updates the mmds data store.
+- stopballoonhinting
+- creates a mmds (microvm metadata service) data store.
+- stops a free page hinting run only if enabled pre-boot.
+- getexportvmconfig
+- initializes the logger by specifying a named pipe or a file for the logs output.
+- patchmachineconfiguration
+- returns the current balloon device configuration.
+- creates or updates the boot source. pre-boot only.
+- configures the hotpluggable memory
+- patchguestdrivebyid
 - creates a network interface. pre-boot only.
 - putballoon
-- updates the size of the hotpluggable memory region
-- creates a full or diff snapshot. post-boot only.
-- getmmds
+- getfirecrackerversion
+- putmemoryhotplug
+- firecracker
+- putmachineconfiguration
+- starts a free page hinting run only if enabled pre-boot.
+- putmmdsconfig
+- creates/updates a vsock device. pre-boot only.
+- putmetrics
+- describeballoonstats
+- patchguestnetworkinterfacebyid
+- patchballoon
+- describeinstance
+- loadsnapshot
+- putcpuconfiguration
+- configures the serial console
+- createsnapshot
+- gets the firecracker version.
+- createsyncaction
+- creates or updates a balloon device.
+- updates a balloon device.
+- retrieves the status of the hotpluggable memory
+- loads a snapshot. pre-boot only.
+- patchmmds
+- creates or updates a drive. pre-boot only.
+- microvms
+- open source
+- startballoonhinting
+- partially updates the machine configuration of the vm. pre-boot only.
+- set mmds configuration. pre-boot only.
+- putmmds
+- get the mmds data store.
+- updates the properties of a drive. post-boot only.
+- putserialdevice
+- putentropydevice
+- getmachineconfiguration
+- describeballoonhinting
+- putguestdrivebyid
+- gets the full vm configuration.
+- returns the latest balloon device statistics, only if enabled pre-boot.
+- updates the rate limiter of a pmem device. post-boot only.
 slug: firecracker-capability
 source_filename: firecracker-capability.yaml
 source_heading: Capability Spec

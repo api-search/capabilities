@@ -9,16 +9,16 @@ personas: []
 provider_name: BigPanda
 provider_slug: bigpanda
 search_terms:
-- incidents
-- site reliability engineer managing incidents and alert correlation
-- platform
-- full incident lifecycle from alert ingestion to resolution
-- ai-powered correlation of alerts into actionable incidents
-- it operations manager overseeing incident response
-- schedule maintenance windows to suppress expected alerts
-- ingest change events to correlate with alert spikes
 - monitoring
+- ai-powered correlation of alerts into actionable incidents
 - triage, acknowledge, and resolve correlated incidents
+- ingest change events to correlate with alert spikes
+- full incident lifecycle from alert ingestion to resolution
+- platform
+- schedule maintenance windows to suppress expected alerts
+- incidents
+- it operations manager overseeing incident response
+- site reliability engineer managing incidents and alert correlation
 slug: incident-management
 source_filename: incident-management.yaml
 source_heading: Capability Spec

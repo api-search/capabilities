@@ -13,13 +13,13 @@ personas: []
 provider_name: EODHD
 provider_slug: eodhd
 search_terms:
-- retrieve end-of-day historical data
-- financial
 - stocks
-- api
+- financial
+- geteodhistoricaldata
 - stock options
 - market data
-- geteodhistoricaldata
+- retrieve end-of-day historical data
+- api
 - eodhd
 slug: eodhd-capability
 source_filename: eodhd-capability.yaml

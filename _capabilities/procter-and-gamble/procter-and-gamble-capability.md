@@ -21,20 +21,20 @@ personas: []
 provider_name: Procter & Gamble
 provider_slug: procter-and-gamble
 search_terms:
+- procter
+- consumer goods
+- listproducts
 - listshipments
+- gamble
+- and
+- retail
+- list products
+- api
+- manufacturing
+- listorders
+- list shipments
 - list orders
 - supply chain
-- listproducts
-- list products
-- listorders
-- retail
-- procter
-- manufacturing
-- api
-- consumer goods
-- and
-- list shipments
-- gamble
 slug: procter-and-gamble-capability
 source_filename: procter-and-gamble-capability.yaml
 source_heading: Capability Spec

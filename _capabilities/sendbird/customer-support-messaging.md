@@ -37,40 +37,40 @@ personas: []
 provider_name: Sendbird
 provider_slug: sendbird
 search_terms:
-- list messages in a support conversation channel.
-- sendbird
-- list messages
-- create support channel
-- list messages in a channel.
 - list users (customers and agents).
-- manage channel messages.
-- send support message
-- create user
-- list all support conversation channels.
-- get user details.
-- get details of a specific customer or agent.
-- send a message to a customer in a support channel.
-- ban user
-- list customers and agents in the sendbird application.
-- messaging
-- create a new support conversation channel between a customer and agent.
-- temporarily mute a user in a channel.
-- send message
-- send a message.
-- create channel
-- list channels
-- get user
-- chat
-- customer support
-- create a support channel.
-- list users
-- ban a disruptive user from a channel.
-- manage support users and customers.
-- manage support conversation channels.
-- list group channels.
-- manage a specific user.
-- create a new user.
 - mute user
+- list all support conversation channels.
+- customer support
+- create a new user.
+- send a message.
+- temporarily mute a user in a channel.
+- manage support users and customers.
+- list channels
+- create a support channel.
+- sendbird
+- manage a specific user.
+- create a new support conversation channel between a customer and agent.
+- send a message to a customer in a support channel.
+- send message
+- ban a disruptive user from a channel.
+- manage channel messages.
+- list users
+- list messages in a support conversation channel.
+- list group channels.
+- list messages
+- chat
+- create channel
+- list customers and agents in the sendbird application.
+- send support message
+- get details of a specific customer or agent.
+- get user
+- create user
+- get user details.
+- manage support conversation channels.
+- ban user
+- messaging
+- list messages in a channel.
+- create support channel
 slug: customer-support-messaging
 source_filename: customer-support-messaging.yaml
 source_heading: Capability Spec

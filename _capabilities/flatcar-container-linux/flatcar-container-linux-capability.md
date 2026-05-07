@@ -169,94 +169,94 @@ personas: []
 provider_name: Flatcar Container Linux
 provider_slug: flatcar-container-linux
 search_terms:
-- incubating
-- update app
-- health endpoint
-- getchannel
-- paginatechannels
-- getgroupstatustimeline
-- paginate floor packages of a channel
-- getpackagefloorchannels
-- logincb
-- updateinstance
-- get version breakdown of a group given its groupid and appid
-- flatcar
-- getinstancestatushistory
-- updateapp
-- api
-- paginate channels of an app
-- get instances of a group given its groupid and appid
-- immutable infrastructure
-- deletepackage
-- paginate activity
-- create group in app
-- updatepackage
-- creategroup
-- paginate packages of an app
-- get all channels where a package is marked as a floor
-- validate jwt access token (oidc mode only)
-- updatechannel
-- getapp
-- get package given its packageid and appid
-- get apps
-- createpackage
-- get channel by id
-- cloud native
-- deletechannel
-- paginate groups of an app
-- removechannelfloor
-- paginatepackages
-- github webhook (github mode only)
-- getgroup
-- update channel by id
-- setchannelfloor
-- get app
-- updategroup
-- github oauth callback (github mode only)
-- health
-- create package
-- get status timeline of a group given its groupid and appid
-- create app
-- remove package as floor for a channel
-- delete package given its packageid and appid
-- deleteapp
-- omaha endpoint
-- getpackage
-- getgroupversionbreakdown
-- paginatechannelfloors
-- linux
-- delete app
-- getinstance
-- update instance
-- update package given its packageid and appid
-- get version timeline of a group given its groupid and appid
-- get instance stats of a group given its groupid and appid
-- paginateapps
-- omaha
-- delete channel by id
-- get app config
-- createapp
-- validatetoken
-- deletegroup
-- getgroupinstancestats
-- container
-- paginateactivity
-- get instance count of a group given its groupid and appid
-- containers
-- getgroupversiontimeline
-- get instance of a group given its groupid and appid
-- createchannel
-- getgroupinstancescount
 - get instance status_history.
-- update group given its groupid and appid
-- operating system
-- create or update a floor package relationship (idempotent operation)
-- delete group given its groupid and appid
-- create channel
-- paginategroups
-- get group given its groupid and appid
+- get apps
+- paginateapps
+- paginate channels of an app
+- containers
+- api
+- update app
+- getgroup
 - getgroupinstances
+- linux
+- container
+- health endpoint
+- get instance count of a group given its groupid and appid
+- create channel
+- paginate packages of an app
+- update group given its groupid and appid
+- getapp
+- paginategroups
+- updatechannel
+- update channel by id
+- getgroupinstancestats
+- get all channels where a package is marked as a floor
+- deletegroup
+- delete group given its groupid and appid
+- getinstancestatushistory
+- omaha endpoint
+- creategroup
+- get instance stats of a group given its groupid and appid
+- paginate activity
+- cloud native
+- omaha
+- health
+- create group in app
+- get version timeline of a group given its groupid and appid
+- logincb
+- update instance
+- removechannelfloor
+- create package
+- create app
+- paginatechannelfloors
+- deletechannel
+- getgroupstatustimeline
+- paginate groups of an app
+- getgroupversiontimeline
+- remove package as floor for a channel
+- get app
 - getconfig
+- create or update a floor package relationship (idempotent operation)
+- github oauth callback (github mode only)
+- getinstance
+- validatetoken
+- getgroupversionbreakdown
+- get package given its packageid and appid
+- get group given its groupid and appid
+- operating system
+- get app config
+- get channel by id
+- getchannel
+- delete app
+- createpackage
+- updatepackage
+- createchannel
+- validate jwt access token (oidc mode only)
+- get instance of a group given its groupid and appid
+- updateinstance
+- update package given its packageid and appid
+- paginateactivity
+- flatcar
+- get status timeline of a group given its groupid and appid
+- getpackage
+- incubating
+- deletepackage
+- updateapp
+- getpackagefloorchannels
+- delete package given its packageid and appid
+- updategroup
+- getgroupinstancescount
+- paginatechannels
+- github webhook (github mode only)
+- deleteapp
+- paginatepackages
+- createapp
+- immutable infrastructure
+- delete channel by id
+- get instances of a group given its groupid and appid
+- setchannelfloor
+- paginate floor packages of a channel
+- get version breakdown of a group given its groupid and appid
 - loginwebhook
 slug: flatcar-container-linux-capability
 source_filename: flatcar-container-linux-capability.yaml

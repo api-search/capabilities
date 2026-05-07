@@ -73,50 +73,50 @@ personas: []
 provider_name: PayPal
 provider_slug: paypal
 search_terms:
-- webhooks
-- subscriptions activate
-- paypal
-- invoices
-- plans list
-- paypal list plans
-- paypal capture authorized payment on subscription
-- plans update pricing schemes
-- subscriptions suspend
-- plans activate
-- paypal deactivate plan
-- subscriptions patch
-- subscriptions transactions
-- payouts
-- plans get
-- paypal list transactions for subscription
-- plans patch
-- plans deactivate
+- paypal update pricing
+- disputes
+- paypal create plan
 - paypal cancel subscription
 - subscriptions create
-- billing
-- paypal show subscription details
-- commerce
-- plans create
-- paypal create subscription
-- subscriptions capture
-- paypal activate plan
-- paypal revise plan or quantity of subscription
-- paypal show plan details
+- invoices
 - subscriptions get
 - api
-- paypal update plan
-- tokens
-- paypal suspend subscription
-- disputes
-- paypal update pricing
-- subscriptions revise
-- paypal update subscription
-- payments
-- subscriptions
-- paypal activate subscription
+- subscriptions capture
+- billing
+- plans activate
 - orders
+- subscriptions
+- paypal list plans
+- paypal capture authorized payment on subscription
+- paypal create subscription
+- paypal show plan details
+- paypal revise plan or quantity of subscription
+- subscriptions patch
+- paypal update subscription
+- plans list
+- paypal suspend subscription
+- plans deactivate
+- plans update pricing schemes
+- paypal activate subscription
+- tokens
+- subscriptions revise
+- paypal list transactions for subscription
+- webhooks
+- plans patch
 - subscriptions cancel
-- paypal create plan
+- subscriptions transactions
+- paypal update plan
+- subscriptions activate
+- paypal activate plan
+- plans get
+- paypal show subscription details
+- payouts
+- payments
+- plans create
+- subscriptions suspend
+- paypal deactivate plan
+- paypal
+- commerce
 slug: paypal-capability
 source_filename: paypal-capability.yaml
 source_heading: Capability Spec

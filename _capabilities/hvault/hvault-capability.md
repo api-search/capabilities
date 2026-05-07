@@ -133,75 +133,75 @@ personas: []
 provider_name: HashiCorp Vault
 provider_slug: hvault
 search_terms:
-- hashicorp vault login with github
-- renewtoken
-- renewselftoken
-- hashicorp vault delete approle
-- readtokenrole
+- hashicorp vault login with kubernetes
+- createorphantoken
+- hashicorp vault create or update approle
+- hashicorp vault create or update kubernetes role
+- hashicorp vault create orphan token
+- loginwithkubernetes
+- hashicorp vault create token
+- loginwithjwt
+- readkubernetesconfig
 - readuserpassuser
+- createtokenwithrole
+- hashicorp vault lookup token
+- hashicorp vault login with approle
+- hashicorp vault read approle role id
+- hashicorp vault delete approle
+- hashicorp vault renew token
+- api
+- lookupselftoken
+- hashicorp vault configure kubernetes auth
+- hashicorp vault lookup self token
+- configurekubernetesauth
+- deletetokenrole
+- hashicorp vault login with ldap
+- secrets management
+- createtoken
+- hashicorp vault renew self token
+- hashicorp vault read kubernetes role
+- hashicorp vault read userpass user
+- hashicorp vault revoke token
+- hashicorp vault delete userpass user
+- deleteapprole
+- hashicorp vault delete kubernetes role
+- encryption
+- hvault
+- revokeselftoken
+- loginwithgithub
+- hashicorp vault login with github
+- readtokenrole
+- loginwithuserpass
 - identity
-- hashicorp vault generate approle secret id
 - infrastructure
 - readapprole
-- loginwithapprole
-- hashicorp vault create or update userpass user
-- hashicorp vault login with username and password
-- configurekubernetesauth
-- createtokenwithrole
-- hashicorp vault read kubernetes role
-- hashicorp vault renew token
-- hashicorp vault lookup token
-- revokeselftoken
-- hashicorp vault read userpass user
-- hashicorp vault revoke self token
-- encryption
-- hashicorp vault login with approle
-- createtoken
-- hashicorp vault delete token role
-- deleteapprole
-- generateapprolesecretid
-- readkubernetesrole
-- loginwithjwt
-- secrets management
-- security
-- lookupselftoken
-- hashicorp vault login with jwt/oidc
-- deleteuserpassuser
-- hvault
-- readapproleroleid
-- hashicorp vault lookup self token
-- createorupdatekubernetesrole
-- hashicorp vault create or update token role
-- hashicorp vault delete kubernetes role
-- loginwithuserpass
-- hashicorp vault create orphan token
-- api
-- createorupdateapprole
-- revoketoken
-- createorupdateuserpassuser
-- deletetokenrole
-- hashicorp vault delete userpass user
-- hashicorp vault login with ldap
 - hashicorp vault read token role
-- hashicorp vault read approle role id
-- hashicorp vault read kubernetes auth configuration
+- hashicorp vault create or update userpass user
 - hashicorp vault read approle
-- loginwithldap
-- loginwithgithub
+- loginwithapprole
+- createorupdateuserpassuser
+- revoketoken
+- hashicorp vault delete token role
+- generateapprolesecretid
+- createorupdateapprole
+- renewtoken
+- deleteuserpassuser
+- renewselftoken
+- readkubernetesrole
+- createorupdatekubernetesrole
+- hashicorp vault generate approle secret id
+- hashicorp vault read kubernetes auth configuration
+- hashicorp vault login with jwt/oidc
 - createorupdatetokenrole
+- deletekubernetesrole
+- hashicorp vault create or update token role
+- readapproleroleid
 - hashicorp vault create token with role
 - lookuptoken
-- hashicorp vault create token
-- hashicorp vault create or update approle
-- loginwithkubernetes
-- readkubernetesconfig
-- hashicorp vault create or update kubernetes role
-- createorphantoken
-- hashicorp vault configure kubernetes auth
-- deletekubernetesrole
-- hashicorp vault renew self token
-- hashicorp vault revoke token
-- hashicorp vault login with kubernetes
+- loginwithldap
+- hashicorp vault login with username and password
+- security
+- hashicorp vault revoke self token
 slug: hvault-capability
 source_filename: hvault-capability.yaml
 source_heading: Capability Spec

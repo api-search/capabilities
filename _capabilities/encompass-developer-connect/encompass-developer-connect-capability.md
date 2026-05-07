@@ -33,27 +33,27 @@ personas: []
 provider_name: Encompass Developer Connect
 provider_slug: encompass-developer-connect
 search_terms:
+- encompass developer connect issue an oauth 2.0 access token
+- mortgage
+- encompass developer connect search the loan pipeline
+- loan origination
+- connect
+- api
 - updateloan
-- encompass
-- encompass developer connect create a new loan
+- searchloanpipeline
+- encompass developer connect update a loan
+- lending
+- encompass developer connect delete a loan
+- ice mortgage technology
 - issueaccesstoken
 - deleteloan
-- rest api
-- developer
-- lending
-- connect
-- getloan
-- loan origination
-- encompass developer connect search the loan pipeline
-- ice mortgage technology
-- api
-- encompass developer connect issue an oauth 2.0 access token
-- createloan
 - encompass developer connect retrieve a loan
-- searchloanpipeline
-- mortgage
-- encompass developer connect update a loan
-- encompass developer connect delete a loan
+- rest api
+- createloan
+- getloan
+- developer
+- encompass
+- encompass developer connect create a new loan
 slug: encompass-developer-connect-capability
 source_filename: encompass-developer-connect-capability.yaml
 source_heading: Capability Spec

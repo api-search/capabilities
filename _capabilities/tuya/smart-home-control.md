@@ -29,40 +29,40 @@ personas: []
 provider_name: Tuya
 provider_slug: tuya
 search_terms:
-- send control commands to an iot device. specify code/value pairs for data points (e.g., switch_led=true, bright_value=500)
-- list all iot devices registered to the tuya project
-- update device name
-- list all devices in the project
-- remove and deregister a device from the cloud account
-- device management
-- remove device
-- iot
-- tuya
-- list devices
-- industrial iot
-- smart home
-- query operation and event logs for a device over a time range
-- get device logs
-- query device operation logs
-- device control
-- get device status
-- control a device
-- get current status of all data points
-- update the friendly display name of a device
-- get details and current state of a specific iot device
-- send control commands to a device
-- get device
-- get device data point status
 - cloud platform
-- get device details and current state
-- control device
-- devices
-- get the current value of all data points for a device (e.g., switch state, brightness, temperature)
 - send commands
-- retrieve a specific device
-- get operation logs for a device
-- list and search iot devices
 - automation
+- query device operation logs
+- get operation logs for a device
+- get current status of all data points
+- get device
+- query operation and event logs for a device over a time range
+- list and search iot devices
+- remove device
+- get the current value of all data points for a device (e.g., switch state, brightness, temperature)
+- get device details and current state
+- iot
+- smart home
+- remove and deregister a device from the cloud account
+- get details and current state of a specific iot device
+- get device status
+- devices
+- control a device
+- device control
+- list devices
+- tuya
+- get device logs
+- list all iot devices registered to the tuya project
+- send control commands to a device
+- control device
+- update the friendly display name of a device
+- send control commands to an iot device. specify code/value pairs for data points (e.g., switch_led=true, bright_value=500)
+- industrial iot
+- list all devices in the project
+- retrieve a specific device
+- get device data point status
+- device management
+- update device name
 slug: smart-home-control
 source_filename: smart-home-control.yaml
 source_heading: Capability Spec

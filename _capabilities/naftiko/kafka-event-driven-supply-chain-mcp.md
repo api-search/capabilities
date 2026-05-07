@@ -17,18 +17,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- supply chain
-- emit order
-- kafka
-- api integration
 - governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
+- emit order
 - consume events
 - emit shipment
+- ai
+- capabilities
+- spec-driven integration
+- kafka
+- api integration
+- mcp
+- naftiko
+- supply chain
 slug: kafka-event-driven-supply-chain-mcp
 source_filename: kafka-event-driven-supply-chain-mcp.yaml
 source_heading: Capability Spec

@@ -49,66 +49,66 @@ personas: []
 provider_name: Temenos
 provider_slug: temenos
 search_terms:
-- kyc
-- list sanction alerts
-- get alert
-- list all sanctions alerts
-- screen customer
-- customer lookups for compliance context
 - compute risk score
-- compute and refresh a customer risk score
-- get customer
-- screen a customer for onboarding compliance
-- financial services
-- get customer risk score
-- run full kyc and sanctions screening for a new customer
-- get alert details
-- risk management
-- update alert
+- get customer for review
+- cloud banking
+- wealth management
+- kyc
+- scan transaction
 - resolve monitoring alert
+- get customer risk score
+- scan a transaction for aml indicators
+- customer sanction screening alerts
+- customer risk scoring
+- list transaction monitoring alerts
+- get customer aml risk score
+- list all sanctions alerts
+- financial crime
+- onboarding kyc screening
+- digital banking
+- run full kyc and sanctions screening for a new customer
+- screen onboarding customer
 - compliance
-- update alert status or resolution
+- get aml risk score for a customer
+- fintech
+- transaction monitoring alerts
+- scan a transaction message for aml indicators and suspicious patterns
 - all sanction screening alerts
+- transaction aml scanning
+- list sanction alerts
+- financial services
+- customer lookups for compliance context
+- get sanctions screening alerts for a specific customer
+- get customer profile for compliance review context
+- get customer
+- get risk score
 - list monitoring alerts
 - aml
-- get customer sanction alerts
-- core banking
-- get risk score
-- sanctions screening
-- transaction monitoring alerts
-- scan transaction
-- get sanctions screening alerts for a specific customer
 - get sanctions alerts for a customer
-- compute updated customer risk score
-- list all sanctions alerts across all customers
-- open banking
-- scan a transaction message for aml indicators and suspicious patterns
-- list transaction monitoring alerts
-- get sanction alerts
-- wealth management
-- update the status or resolution of a monitoring alert
-- single monitoring alert
-- payments
-- customer risk scoring
-- get customer details for compliance review
-- scan a transaction for aml indicators
-- get aml risk score for a customer
-- compute customer risk score
-- financial crime
-- get customer for review
-- list open aml transaction monitoring alerts
-- cloud banking
-- screen onboarding customer
-- customer sanction screening alerts
-- onboarding kyc screening
-- transaction aml scanning
-- get customer aml risk score
 - list alerts
-- digital banking
-- scan transaction for aml
+- get alert details
+- update the status or resolution of a monitoring alert
+- get alert
+- update alert status or resolution
+- single monitoring alert
+- get sanction alerts
+- sanctions screening
+- screen a customer for onboarding compliance
+- compute and refresh a customer risk score
+- open banking
+- get customer sanction alerts
 - banking
-- fintech
-- get customer profile for compliance review context
+- payments
+- get customer details for compliance review
+- list open aml transaction monitoring alerts
+- screen customer
+- scan transaction for aml
+- list all sanctions alerts across all customers
+- compute customer risk score
+- compute updated customer risk score
+- risk management
+- core banking
+- update alert
 slug: compliance-and-risk
 source_filename: compliance-and-risk.yaml
 source_heading: Capability Spec

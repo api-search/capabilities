@@ -45,33 +45,33 @@ personas: []
 provider_name: Oracle Retail
 provider_slug: oracle-retail
 search_terms:
+- createpurchaseorder
+- updateitem
+- list suppliers
 - query inventory positions
-- list items
-- get an item
-- getinventory
-- listsuppliers
-- retail
 - listitems
-- omnichannel
 - update an item
-- create an item
+- list items
+- point of sale
+- retail
+- api
+- getinventory
+- merchandising
+- order management
 - get a purchase order
 - inventory
-- merchandising
-- list suppliers
-- oracle
-- api
-- getpurchaseorder
-- create a purchase order
-- point of sale
-- getitem
-- updateitem
-- pricing
-- order management
-- listpurchaseorders
+- listsuppliers
 - list purchase orders
+- listpurchaseorders
+- getitem
+- get an item
+- pricing
 - createitem
-- createpurchaseorder
+- create an item
+- getpurchaseorder
+- omnichannel
+- create a purchase order
+- oracle
 slug: oracle-retail-capability
 source_filename: oracle-retail-capability.yaml
 source_heading: Capability Spec

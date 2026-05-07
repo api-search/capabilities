@@ -137,86 +137,86 @@ personas: []
 provider_name: Axway
 provider_slug: axway
 search_terms:
-- axway find custom queries
-- axway get activity event names
-- axway downloads a usage report
-- integration
-- applications
-- analytics
-- axway update app
-- activity operations
-- app operations
-- axway delete a custom query
-- axway organization usage
-- security
-- client findOne
-- app create
-- axway uploads an automatic usage report
-- export create
-- axway create app
-- api management
-- aca operations
-- axway get service accounts
-- analytics customUpdate
-- analytics error
-- client download
-- axway
-- analytics customRemove
-- axway update a custom query
-- export findAll
-- analytics customFind
-- analytics customFindOne
-- axway get a service account
-- aca findOne
-- monitoring
-- client update
-- export remove
-- axway update service account
-- axway find apps
-- activity find
-- activity findEvents
-- app find
-- org findUsage
-- axway retrieve a download url
-- export download
 - axway delete service account
-- axway get activity
-- axway find exports
-- client create
-- axway analytics query using lexus
-- axway report an error
-- axway fetches usage reports
-- export operations
-- usage download
-- axway create a custom query
-- axway set metadata by id
-- axway uploads a usage report
-- axway send events
-- axway remove export
-- app findOne
-- app remove
-- analytics create
-- client find
-- analytics query
-- axway get service account json representation
-- client remove
-- usage find
-- axway find app
-- axway remove app
-- analytics customCreate
-- axway find crash record by id
-- enterprise
-- axway get custom query
-- axway add service account
-- usage upload
-- telemetry operations
-- app update
-- analytics operations
-- usage uploadAutomatic
 - axway export data
+- axway retrieve a download url
+- api management
+- axway find crash record by id
+- analytics customUpdate
+- axway find custom queries
+- axway analytics query using lexus
+- export findAll
+- usage download
+- app remove
+- app create
+- client find
 - aca setMetadata
-- usage operations
+- app findOne
+- usage uploadAutomatic
+- export create
+- axway
+- axway update a custom query
+- axway send events
+- activity findEvents
+- client create
+- axway get activity
+- analytics query
+- axway uploads an automatic usage report
+- activity operations
+- analytics customCreate
+- client download
+- axway downloads a usage report
+- enterprise
+- usage find
+- axway set metadata by id
+- security
+- app find
+- axway uploads a usage report
+- axway report an error
+- axway get custom query
+- axway get service account json representation
+- monitoring
+- axway delete a custom query
+- analytics customRemove
 - client operations
+- analytics customFindOne
+- axway organization usage
+- integration
+- client findOne
+- axway create a custom query
+- export download
+- app update
+- axway update app
+- activity find
+- client remove
+- axway get activity event names
+- axway find apps
+- analytics create
+- analytics
+- org findUsage
+- app operations
+- axway update service account
+- axway find exports
+- aca operations
+- usage upload
+- analytics operations
+- telemetry operations
+- applications
+- axway add service account
+- analytics customFind
+- analytics error
+- axway remove export
+- usage operations
+- axway remove app
+- axway get a service account
+- client update
+- export operations
+- export remove
+- axway create app
+- axway fetches usage reports
+- axway find app
+- axway get service accounts
+- aca findOne
 slug: application-and-analytics
 source_filename: application-and-analytics.yaml
 source_heading: Capability Spec

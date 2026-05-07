@@ -33,41 +33,41 @@ personas: []
 provider_name: ThemeParks.wiki
 provider_slug: themeparks-wiki
 search_terms:
-- wait times
 - get entity details
-- get current live wait times for all attractions
-- real-time
-- get upcoming park operating schedule
-- travel
-- get park details
-- get attractions
-- get park schedule
-- get schedule
-- live wait times and operational status
+- attractions within a park
 - get current live wait times and operational status for all attractions in a park
-- theme parks
-- park entity details
+- list destinations
 - get monthly schedule
-- list all supported theme park destinations worldwide (disney, universal, cedar fair, six flags, etc.)
-- travel planning
-- park operating hours
+- theme parks
+- get park schedule
+- all theme park resort destinations
+- wait times
+- get all attractions, shows, and restaurants within a park
+- park entity details
+- get park schedule for a specific month and year
 - get details for a specific park
+- list all supported theme park destinations worldwide (disney, universal, cedar fair, six flags, etc.)
+- get details for a specific park entity including location and metadata
+- get current live wait times for all attractions
+- get park details
+- get park
+- get live wait times
+- travel planning
+- get park operating schedule for a specific month and year for trip planning
+- get upcoming park operating hours and special event schedules
+- get attractions
+- get all attractions and entities in a park
+- get park attractions
+- travel
+- park operating hours
+- entertainment
+- get details for any entity (destination, park, attraction, show, or restaurant) by uuid
 - list all supported theme park destinations
 - park schedule for a specific month
-- get details for any entity (destination, park, attraction, show, or restaurant) by uuid
-- get park
-- attractions within a park
-- all theme park resort destinations
-- get all attractions, shows, and restaurants within a park
-- get upcoming park operating hours and special event schedules
-- entertainment
-- list destinations
-- get park attractions
-- get live wait times
-- get details for a specific park entity including location and metadata
-- get all attractions and entities in a park
-- get park schedule for a specific month and year
-- get park operating schedule for a specific month and year for trip planning
+- get schedule
+- live wait times and operational status
+- get upcoming park operating schedule
+- real-time
 slug: theme-park-planning
 source_filename: theme-park-planning.yaml
 source_heading: Capability Spec

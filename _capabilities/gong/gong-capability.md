@@ -15,8 +15,8 @@ provider_slug: gong
 search_terms:
 - gong retrieve audit logs by type and time range
 - retrieveauditlogs
-- api
 - gong
+- api
 slug: gong-capability
 source_filename: gong-capability.yaml
 source_heading: Capability Spec

@@ -37,45 +37,45 @@ personas: []
 provider_name: Science Museum Group
 provider_slug: science-museum-group
 search_terms:
-- full-text search across objects, people, and documents
-- search for scientists, engineers, inventors, and historical figures associated with the science museum group collection. filter by occupation, birth place, and date of birth/death.
-- retrieve a single document with metadata and archive location
-- search for documents, correspondence, drawings, and archival materials in the science museum group collection. filter by creator, associated people, archive reference, and date range.
-- education
-- research
-- search for scientists, engineers, and historical figures
-- browse and search collection objects
-- get document
-- cultural heritage
-- get person
-- browse and search collection documents
-- search the science museum group's collection of 7 million items including scientific instruments, industrial machinery, railway artifacts, and cultural objects. returns matching items with images and metadata.
-- search all collection types simultaneously
-- retrieve the complete record for a specific person in the collection, including biographical information, associated objects, and image references.
-- retrieve full document record
-- collections
-- retrieve full object record
-- history
-- browse and search collection people
-- search documents
-- search all collection
-- search physical artifacts with museum, category, and date filters
-- united kingdom
-- retrieve full person record
-- search collection
-- technology
-- search specifically for physical objects and artifacts in the science museum group collection. filter by museum (science museum london, national railway museum york, science and industry museum manchester, etc.), category, maker, date range, and display status.
 - retrieve the complete record for a specific document in the collection, including metadata, archive location, and image scans if available.
-- retrieve the complete record for a specific collection object by its id. returns full metadata including description, date, dimensions, maker, location, and high-resolution image references.
+- search all collection
+- search for documents, correspondence, drawings, and archival materials in the science museum group collection. filter by creator, associated people, archive reference, and date range.
+- search all collection types simultaneously
+- browse and search collection documents
 - retrieve a single object with all metadata, images, and relationships
-- science
-- search people
+- search the science museum group's collection of 7 million items including scientific instruments, industrial machinery, railway artifacts, and cultural objects. returns matching items with images and metadata.
+- search for scientists, engineers, inventors, and historical figures associated with the science museum group collection. filter by occupation, birth place, and date of birth/death.
+- retrieve the complete record for a specific person in the collection, including biographical information, associated objects, and image references.
+- history
 - get object
+- search for scientists, engineers, and historical figures
+- search documents
+- science
+- retrieve full person record
+- get document
 - museums
-- open data
+- full-text search across objects, people, and documents
+- research
+- browse and search collection people
+- search people
+- retrieve full document record
+- search specifically for physical objects and artifacts in the science museum group collection. filter by museum (science museum london, national railway museum york, science and industry museum manchester, etc.), category, maker, date range, and display status.
+- search collection
 - search for documents and archive materials
-- retrieve a single person with biographical data
+- retrieve a single document with metadata and archive location
+- search physical artifacts with museum, category, and date filters
+- cultural heritage
+- technology
+- united kingdom
 - search objects
+- retrieve the complete record for a specific collection object by its id. returns full metadata including description, date, dimensions, maker, location, and high-resolution image references.
+- education
+- get person
+- retrieve a single person with biographical data
+- collections
+- browse and search collection objects
+- open data
+- retrieve full object record
 slug: collection-discovery
 source_filename: collection-discovery.yaml
 source_heading: Capability Spec

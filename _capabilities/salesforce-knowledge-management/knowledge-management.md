@@ -41,52 +41,52 @@ personas: []
 provider_name: Salesforce Knowledge Management
 provider_slug: salesforce-knowledge-management
 search_terms:
-- get article suggestions
-- knowledge article management
-- knowledge article search
-- individual article operations
-- get full article content
-- get article full content
-- knowledge management
-- get suggestions
-- publish knowledge articles
-- search knowledge articles by keywords, channel, and category filters
-- list categories within a data category group
-- publish articles
-- update knowledge article
-- create a new draft knowledge article
-- documentation
-- publish article versions
-- get article suggestions for case
-- get knowledge article
-- article suggestions for cases
-- search articles
-- get article detail
-- get metadata for a specific knowledge article by id
-- crm
-- update an existing knowledge article draft
-- delete a knowledge article draft version
-- full article content
-- list all knowledge articles in the salesforce org
-- support
-- list data category groups used to organize knowledge articles
-- list knowledge articles
-- create a knowledge article draft
-- list categories
-- search knowledge articles
-- get a knowledge article
-- publish knowledge article versions to configured channels
 - list data categories
-- list data category groups
-- create knowledge article
+- get article suggestions
 - list all knowledge articles
-- data category management
-- customer service
-- delete knowledge article
+- publish articles
+- list all knowledge articles in the salesforce org
+- update knowledge article
+- publish article versions
 - articles
-- get the full body content and metadata of a knowledge article
-- salesforce
+- get a knowledge article
+- support
+- get article suggestions for case
+- search knowledge articles by keywords, channel, and category filters
+- documentation
+- create a new draft knowledge article
+- delete knowledge article
+- list categories
+- individual article operations
+- list categories within a data category group
+- crm
+- knowledge management
+- data category management
+- get article detail
+- get full article content
+- create a knowledge article draft
+- knowledge article management
+- search articles
+- search knowledge articles
+- list knowledge articles
+- get knowledge article
+- get suggestions
+- get article full content
+- full article content
+- delete a knowledge article draft version
+- get metadata for a specific knowledge article by id
+- article suggestions for cases
+- list data category groups used to organize knowledge articles
+- knowledge article search
+- update an existing knowledge article draft
+- customer service
+- create knowledge article
 - get relevant article suggestions based on case subject or description
+- publish knowledge articles
+- get the full body content and metadata of a knowledge article
+- publish knowledge article versions to configured channels
+- salesforce
+- list data category groups
 slug: knowledge-management
 source_filename: knowledge-management.yaml
 source_heading: Capability Spec

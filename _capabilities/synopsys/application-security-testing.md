@@ -34,38 +34,38 @@ provider_name: Synopsys
 provider_slug: synopsys
 search_terms:
 - get details for a specific security issue.
-- list security scan runs for a project or branch with status tracking.
-- list all application security projects.
-- software security
-- list scans
-- get issue
-- semiconductor design
-- list issues
-- list all application security projects in the synopsys polaris platform.
-- get details for a specific polaris security project including branches.
-- synopsys
-- eda tools
-- generate a security report for a project.
-- sast
-- security issues from scans.
 - get full details for a specific security issue including cwe, file path, and line number.
-- security scan management.
-- generate report
-- list scan runs with status and issue counts.
-- get details for a specific security project.
-- list security issues discovered by polaris scans, filterable by severity and type.
-- security report generation.
-- application security project management.
-- generate security report
-- static analysis
-- list security issues found by polaris scans.
-- generate a security report (pdf, json, or csv) for a polaris project.
-- get project
-- list projects
+- list issues
+- security issues from scans.
 - devsecops
-- sca
-- application security testing
+- list scans
+- list security issues found by polaris scans.
+- get details for a specific security project.
+- semiconductor design
+- get issue
+- list all application security projects.
+- synopsys
 - software composition analysis
+- list projects
+- get details for a specific polaris security project including branches.
+- security report generation.
+- generate report
+- sca
+- security scan management.
+- static analysis
+- generate a security report for a project.
+- software security
+- generate security report
+- sast
+- get project
+- list all application security projects in the synopsys polaris platform.
+- eda tools
+- list security issues discovered by polaris scans, filterable by severity and type.
+- generate a security report (pdf, json, or csv) for a polaris project.
+- application security project management.
+- application security testing
+- list scan runs with status and issue counts.
+- list security scan runs for a project or branch with status tracking.
 slug: application-security-testing
 source_filename: application-security-testing.yaml
 source_heading: Capability Spec

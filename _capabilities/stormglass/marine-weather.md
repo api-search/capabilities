@@ -45,57 +45,57 @@ personas: []
 provider_name: Stormglass
 provider_slug: stormglass
 search_terms:
-- retrieve marine environment data for any ocean coordinate. returns wave height, wave direction, swell, water temperature, and currents.
-- biological oceanographic data
-- marine environment conditions
-- tide monitoring stations
-- get high and low tide events
-- get astronomy
-- get marine conditions
-- list tide stations
-- get land elevation or ocean depth (bathymetry) for any coordinate. positive values indicate land elevation; negative values indicate ocean depth in meters.
+- get sea level
 - get chlorophyll, oxygen, and nutrient data
-- solar radiation data
-- astronomy
-- get elevation
-- tidal forecast data
-- list all available tide stations
-- ocean
-- weather
-- get marine
-- get marine environment data including waves and currents
-- get hourly sea level relative to datum
+- retrieve solar radiation data including uv index and downward short-wave radiation flux for any location. useful for solar energy assessment and uv exposure planning.
 - marine
-- get predicted high tide and low tide events for a coastal location. returns tide timestamps, heights, and tide type (high/low).
-- get solar
-- topographic and bathymetric elevation data
-- get biological and oceanographic data for marine research. returns chlorophyll, dissolved oxygen, salinity, ph, nutrients, and phytoplankton data.
-- get weather
-- get bio ocean data
-- get hourly weather forecast for a coordinate
-- forecasting
-- elevation
-- get sunrise, sunset, and moon data
-- get solar radiation
-- get bio
-- get weather forecast
-- hourly sea level data
-- wind
 - astronomical event data
+- get high and low tide events
+- tide monitoring stations
+- topographic and bathymetric elevation data
+- get bio ocean data
+- get tide extremes
+- get land elevation or ocean depth (bathymetry) for any coordinate. positive values indicate land elevation; negative values indicate ocean depth in meters.
+- elevation
+- bio
+- get marine environment data including waves and currents
+- tides
+- retrieve hourly atmospheric weather forecast for any global coordinate. returns temperature, wind, humidity, pressure, cloud cover, and precipitation.
+- retrieve marine environment data for any ocean coordinate. returns wave height, wave direction, swell, water temperature, and currents.
+- get hourly sea level height for coastal planning and navigation
+- list tide stations
+- get solar radiation
+- get uv index and solar radiation data
+- list all available tide monitoring stations globally
+- get bio
+- get sunrise, sunset, and moon data
+- forecasting
+- solar radiation data
+- list all available tide stations
+- wind
+- get biological and oceanographic data for marine research. returns chlorophyll, dissolved oxygen, salinity, ph, nutrients, and phytoplankton data.
+- 'get astronomical data for any location: sunrise, sunset, moonrise, moonset, moon phase, civil/nautical/astronomical dawn and dusk.'
+- get marine
+- marine environment conditions
+- get hourly sea level relative to datum
+- get solar
+- get predicted high tide and low tide events for a coastal location. returns tide timestamps, heights, and tide type (high/low).
+- get marine conditions
+- tidal forecast data
+- get land elevation or ocean depth
+- solar
+- get astronomy
 - climate
 - atmospheric weather forecast data
-- get hourly sea level height for coastal planning and navigation
-- tides
-- get land elevation or ocean depth
-- get sea level
-- bio
-- 'get astronomical data for any location: sunrise, sunset, moonrise, moonset, moon phase, civil/nautical/astronomical dawn and dusk.'
-- retrieve hourly atmospheric weather forecast for any global coordinate. returns temperature, wind, humidity, pressure, cloud cover, and precipitation.
-- list all available tide monitoring stations globally
-- get uv index and solar radiation data
-- retrieve solar radiation data including uv index and downward short-wave radiation flux for any location. useful for solar energy assessment and uv exposure planning.
-- get tide extremes
-- solar
+- astronomy
+- get weather
+- ocean
+- biological oceanographic data
+- get elevation
+- hourly sea level data
+- weather
+- get hourly weather forecast for a coordinate
+- get weather forecast
 slug: marine-weather
 source_filename: marine-weather.yaml
 source_heading: Capability Spec

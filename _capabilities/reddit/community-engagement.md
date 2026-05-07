@@ -33,40 +33,40 @@ personas: []
 provider_name: Reddit
 provider_slug: reddit
 search_terms:
-- get me
-- search reddit content
-- get metadata, description, subscriber count, and stats for a subreddit
-- search reddit
-- hot posts in a subreddit
-- get the currently trending hot posts from a subreddit
-- subreddit community information
-- content
-- submit a new post to a subreddit
-- get authenticated user identity
-- reddit
-- communities
-- get hot posts
-- get subreddit
-- get new posts
-- get trending hot posts
-- get newest posts
-- search reddit for posts and discussions matching a query
-- reddit search
-- advertising
-- submit post
-- search
-- social listening
-- new posts in a subreddit
-- get subreddit information and stats
-- submit a new text post to a subreddit
-- social news
-- get the most recently submitted posts from a subreddit
-- get current user
 - social media
-- get the identity of the currently authenticated reddit user
-- post submission
-- get subreddit info
+- get metadata, description, subscriber count, and stats for a subreddit
+- submit a new post to a subreddit
+- reddit
+- get new posts
+- new posts in a subreddit
+- get trending hot posts
+- subreddit community information
+- get subreddit
+- social news
+- search reddit content
+- reddit search
+- search reddit
+- submit a new text post to a subreddit
+- communities
+- hot posts in a subreddit
 - current user identity
+- content
+- post submission
+- get the currently trending hot posts from a subreddit
+- get the most recently submitted posts from a subreddit
+- get me
+- get hot posts
+- get the identity of the currently authenticated reddit user
+- get subreddit information and stats
+- social listening
+- get authenticated user identity
+- get subreddit info
+- get current user
+- search
+- search reddit for posts and discussions matching a query
+- advertising
+- get newest posts
+- submit post
 slug: community-engagement
 source_filename: community-engagement.yaml
 source_heading: Capability Spec

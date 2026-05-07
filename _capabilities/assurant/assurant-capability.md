@@ -30,22 +30,22 @@ provider_name: Assurant
 provider_slug: assurant
 search_terms:
 - fileclaim
-- insurance
-- list policies
-- housing
-- listproducts
-- assurant
-- getclaim
-- listpolicies
 - api
-- embedded insurance
-- claims
+- getclaim
+- assurant
 - create enrollment
-- get claim status
+- listpolicies
 - createenrollment
 - device protection
 - file a claim
+- embedded insurance
+- insurance
+- list policies
+- listproducts
+- get claim status
 - list insurance products
+- housing
+- claims
 slug: assurant-capability
 source_filename: assurant-capability.yaml
 source_heading: Capability Spec

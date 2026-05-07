@@ -53,57 +53,57 @@ personas: []
 provider_name: Theneo
 provider_slug: theneo
 search_terms:
+- list users with access to a project.
+- share project
+- list workspaces
 - delete a theneo project by id.
-- update a user's access role (viewer, editor, admin) on a theneo project.
-- developer tools
-- share the project with a user by email.
-- import an api specification into a project.
-- import an api specification (openapi, postman, graphql, asyncapi) into a theneo project.
-- get all projects
+- share a theneo project with a user by email address.
+- ai
+- platform
+- publishing
+- list project users
+- import api spec
+- publish project documentation.
+- get a preview url for theneo project documentation before publishing.
+- change user access
+- delete a specific project.
+- preview project documentation.
 - publish theneo project documentation, making it publicly accessible.
 - publish project
-- change user access
-- documentation platform
-- list users with access to a project.
-- list all workspaces for the authenticated user.
-- list all api documentation projects on theneo.
-- publishing
-- import api specifications into projects.
-- publish the project documentation publicly.
-- add new project
-- get details for a specific project.
-- list and create api documentation projects.
-- get a preview url for theneo project documentation before publishing.
-- ai
-- share project
-- create project
-- create a new api documentation project on theneo.
-- share a project with users.
-- share a theneo project with a user by email address.
-- delete a specific project.
-- api documentation
-- get preview link
-- manage users with access to a project.
-- import api spec
-- retrieve all api documentation projects.
-- list workspaces.
-- get project users
-- list workspaces
-- delete project
-- update a user's role on a project.
-- get or delete a specific project.
-- get project
-- preview project documentation.
-- list projects
-- list project users
-- get a preview link for project docs before publishing.
-- get details for a specific theneo project.
-- list users with access to a theneo project.
-- platform
-- manage a user's access role on a project.
-- list all theneo workspaces available to the authenticated user.
 - collaboration
-- publish project documentation.
+- share a project with users.
+- import an api specification into a project.
+- manage a user's access role on a project.
+- list users with access to a theneo project.
+- delete project
+- developer tools
+- share the project with a user by email.
+- get preview link
+- list projects
+- update a user's role on a project.
+- list workspaces.
+- documentation platform
+- create project
+- get details for a specific theneo project.
+- get project users
+- add new project
+- get or delete a specific project.
+- get a preview link for project docs before publishing.
+- get details for a specific project.
+- create a new api documentation project on theneo.
+- retrieve all api documentation projects.
+- get project
+- import api specifications into projects.
+- list all theneo workspaces available to the authenticated user.
+- list all api documentation projects on theneo.
+- import an api specification (openapi, postman, graphql, asyncapi) into a theneo project.
+- publish the project documentation publicly.
+- api documentation
+- update a user's access role (viewer, editor, admin) on a theneo project.
+- manage users with access to a project.
+- list and create api documentation projects.
+- list all workspaces for the authenticated user.
+- get all projects
 - create a new api documentation project.
 slug: api-documentation
 source_filename: api-documentation.yaml

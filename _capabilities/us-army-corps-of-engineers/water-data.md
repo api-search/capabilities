@@ -45,57 +45,57 @@ personas: []
 provider_name: US Army Corps of Engineers
 provider_slug: us-army-corps-of-engineers
 search_terms:
-- location level thresholds
+- list levels
+- list offices
 - get streamflow data
-- list available cwms timeseries identifiers for a given office
-- get details for a specific monitored location
 - usace reservoir projects
+- get stage and elevation threshold levels
+- data catalog by dataset type
+- retrieve real-time or historical streamflow timeseries data for a cwms location
+- list cwms monitored locations (stream gages, reservoirs, weather stations)
+- geospatial data
+- list usace offices
+- get details for a specific monitored location
+- list usace reservoir projects with storage and pool information
+- flood forecasting
 - get timeseries values for a monitored location and parameter
 - catalog of available timeseries identifiers
-- flood forecasting
+- get flood stage levels
+- get location
+- single monitored location details
+- list ratings
+- location level thresholds
+- reservoir operations
+- get catalog
+- hydrological data
 - list timeseries
 - infrastructure
-- water resources
-- get stage flow ratings
-- get catalog
-- stage-to-flow rating tables
-- get detailed information for a specific cwms monitored location
-- list locations
-- list levels
-- get flood stage levels
-- data catalog by dataset type
-- list cwms monitored locations (stream gages, reservoirs, weather stations)
-- military engineering
-- cwms monitored locations
-- list usace reservoir projects and pool data
-- reservoir operations
-- usace district offices
-- list available cwms timeseries identifiers
-- retrieve real-time or historical streamflow timeseries data for a cwms location
-- list usace reservoir projects with storage and pool information
-- browse available cwms data types (timeseries, locations, ratings, reservoirs)
-- list usace offices
-- geospatial data
-- retrieve rating tables for converting stage measurements to flow values
-- get location
-- list reservoirs
-- federal government
-- retrieve rating tables for value conversion
 - get timeseries
-- list all usace district offices (lrn, swd, mvp, etc.)
-- get flood stage, conservation pool, and other threshold levels for locations
-- open data
-- get catalog of available data by dataset type
-- list ratings
-- browse data catalog
-- get stage and elevation threshold levels
-- hydrological data
-- water management timeseries data (streamflow, stage, precipitation)
-- single monitored location details
-- list all usace district offices
-- list offices
 - list monitored water resource locations
+- browse available cwms data types (timeseries, locations, ratings, reservoirs)
+- retrieve rating tables for converting stage measurements to flow values
+- stage-to-flow rating tables
 - get location details
+- list available cwms timeseries identifiers
+- list all usace district offices (lrn, swd, mvp, etc.)
+- browse data catalog
+- military engineering
+- get stage flow ratings
+- get catalog of available data by dataset type
+- list available cwms timeseries identifiers for a given office
+- list all usace district offices
+- list reservoirs
+- cwms monitored locations
+- get detailed information for a specific cwms monitored location
+- water management timeseries data (streamflow, stage, precipitation)
+- retrieve rating tables for value conversion
+- list locations
+- get flood stage, conservation pool, and other threshold levels for locations
+- usace district offices
+- federal government
+- water resources
+- open data
+- list usace reservoir projects and pool data
 slug: water-data
 source_filename: water-data.yaml
 source_heading: Capability Spec

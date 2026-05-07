@@ -25,31 +25,31 @@ personas: []
 provider_name: Reuters
 provider_slug: reuters
 search_terms:
-- retrieve specific reuters content items.
-- retrieve the full details and renditions of a content item.
-- 'list available reuters content channels. filter by category: txt (text), pix (images), vid (video), gfx (graphics).'
-- retrieve the full content of a reuters item including body, byline, subjects, and available media renditions.
-- search reuters editorial content.
-- list items
-- list the most recent editorial items from a reuters content channel.
-- finance
-- discover and browse reuters content channels.
-- search reuters content by keyword, channel, and media type.
-- search reuters editorial content by keyword. supports field-specific queries like headline:election or body:markets.
-- business
-- reuters
-- search items
 - content delivery
+- search reuters content by keyword, channel, and media type.
 - wire service
 - news
-- list the most recent items from a reuters channel.
-- journalism
-- search
-- media
+- list items
+- retrieve the full content of a reuters item including body, byline, subjects, and available media renditions.
 - list channels
-- browse content items from reuters channels.
+- search items
 - list available reuters content channels, optionally filtered by category.
+- retrieve specific reuters content items.
+- business
+- journalism
+- search reuters editorial content.
+- finance
+- reuters
+- retrieve the full details and renditions of a content item.
+- search reuters editorial content by keyword. supports field-specific queries like headline:election or body:markets.
+- discover and browse reuters content channels.
+- list the most recent editorial items from a reuters content channel.
+- media
+- 'list available reuters content channels. filter by category: txt (text), pix (images), vid (video), gfx (graphics).'
 - get item
+- search
+- list the most recent items from a reuters channel.
+- browse content items from reuters channels.
 slug: content-delivery
 source_filename: content-delivery.yaml
 source_heading: Capability Spec

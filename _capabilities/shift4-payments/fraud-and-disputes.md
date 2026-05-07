@@ -9,21 +9,21 @@ personas: []
 provider_name: Shift4 Payments
 provider_slug: shift4-payments
 search_terms:
-- get dispute
-- payments
-- fraud
-- list shift4 disputes (chargebacks).
-- list fraud warnings
-- risk
-- list shift4 fraud warnings.
-- shift4
 - disputes
+- list shift4 disputes (chargebacks).
+- risk
 - operations
-- checkout
-- commerce
-- list disputes
-- fintech
+- list fraud warnings
+- payments
 - retrieve a shift4 dispute by id.
+- fintech
+- get dispute
+- shift4
+- list shift4 fraud warnings.
+- list disputes
+- commerce
+- checkout
+- fraud
 slug: fraud-and-disputes
 source_filename: fraud-and-disputes.yaml
 source_heading: Capability Spec

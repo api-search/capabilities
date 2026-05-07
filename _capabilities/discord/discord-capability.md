@@ -101,61 +101,61 @@ personas: []
 provider_name: Discord
 provider_slug: discord
 search_terms:
-- discord list global application commands
-- discord edit original interaction response
-- discord delete global application command
-- discord create global application command
-- getoriginalinteractionresponse
-- getglobalapplicationcommands
-- discord edit application command permissions
-- editoriginalinteractionresponse
-- createglobalapplicationcommand
-- deletefollowupmessage
-- discord edit global application command
-- editguildapplicationcommand
-- getguildapplicationcommands
-- editapplicationcommandpermissions
-- social
-- discord edit guild application command
-- discord get guild application command
-- editfollowupmessage
-- editglobalapplicationcommand
-- deleteguildapplicationcommand
-- voice
-- createinteractionresponse
+- createfollowupmessage
 - getapplicationcommandpermissions
 - bulkoverwriteglobalapplicationcommands
-- discord get original interaction response
-- discord delete original interaction response
-- discord get followup message
-- getguildapplicationcommandpermissions
-- communication
-- createguildapplicationcommand
-- gaming
-- getguildapplicationcommand
-- getfollowupmessage
-- discord create interaction response
-- messaging
-- api
-- bulkoverwriteguildapplicationcommands
+- discord bulk overwrite guild application commands
 - video
-- getglobalapplicationcommand
-- deleteglobalapplicationcommand
+- editoriginalinteractionresponse
+- getglobalapplicationcommands
+- discord get original interaction response
+- discord create global application command
+- api
+- discord create guild application command
+- getguildapplicationcommandpermissions
+- discord create interaction response
+- editguildapplicationcommand
+- createguildapplicationcommand
+- deleteguildapplicationcommand
 - discord create followup message
+- discord bulk overwrite global application commands
+- discord
+- deleteoriginalinteractionresponse
+- discord get global application command
+- discord edit followup message
+- bulkoverwriteguildapplicationcommands
+- communication
+- discord get application command permissions
+- createinteractionresponse
+- editfollowupmessage
+- discord edit application command permissions
+- editapplicationcommandpermissions
+- deleteglobalapplicationcommand
+- discord delete followup message
+- discord get followup message
+- getglobalapplicationcommand
+- getguildapplicationcommand
+- discord delete original interaction response
+- getguildapplicationcommands
+- gaming
+- discord edit global application command
+- deletefollowupmessage
+- createglobalapplicationcommand
+- editglobalapplicationcommand
 - chat
 - discord delete guild application command
-- discord get application command permissions
-- discord edit followup message
-- createfollowupmessage
-- discord delete followup message
-- discord
-- discord get global application command
+- getfollowupmessage
+- discord edit guild application command
 - discord list guild application command permissions
-- deleteoriginalinteractionresponse
+- discord list global application commands
 - discord list guild application commands
-- discord create guild application command
-- discord bulk overwrite global application commands
-- discord bulk overwrite guild application commands
+- voice
+- social
+- discord get guild application command
+- getoriginalinteractionresponse
+- discord delete global application command
+- messaging
+- discord edit original interaction response
 slug: discord-capability
 source_filename: discord-capability.yaml
 source_heading: Capability Spec

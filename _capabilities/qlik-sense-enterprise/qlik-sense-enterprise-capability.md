@@ -25,22 +25,22 @@ personas: []
 provider_name: Qlik Sense Enterprise
 provider_slug: qlik-sense-enterprise
 search_terms:
-- business intelligence
-- getexternalurls
-- qlik sense enterprise get system information
-- qlik
-- qlik sense enterprise get external urls
-- qlik sense enterprise get installed components
-- api
-- rest api
-- getthirdpartyinfo
-- enterprise
-- getsysteminfo
-- getcomponents
-- sense
-- qlik sense enterprise get third-party software information
 - analytics
+- qlik sense enterprise get installed components
+- getcomponents
+- rest api
+- qlik
+- getthirdpartyinfo
+- qlik sense enterprise get third-party software information
 - data visualization
+- enterprise
+- business intelligence
+- qlik sense enterprise get system information
+- api
+- sense
+- getsysteminfo
+- qlik sense enterprise get external urls
+- getexternalurls
 slug: qlik-sense-enterprise-capability
 source_filename: qlik-sense-enterprise-capability.yaml
 source_heading: Capability Spec

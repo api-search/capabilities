@@ -33,21 +33,21 @@ personas: []
 provider_name: Products
 provider_slug: api-evangelist-products
 search_terms:
-- application programming interface
-- getproducts
-- retrieves products
-- updateproduct
-- products delete product
 - deleteproduct
-- products
-- createproduct
 - products create product
-- api
-- getproduct
 - products retrieve product
-- products update product
-- products cancel product
+- updateproduct
+- retrieves products
+- getproducts
+- application programming interface
 - sendproduct
+- createproduct
+- products
+- products delete product
+- api
+- products cancel product
+- products update product
+- getproduct
 slug: products-api-capability
 source_filename: products-api-capability.yaml
 source_heading: Capability Spec

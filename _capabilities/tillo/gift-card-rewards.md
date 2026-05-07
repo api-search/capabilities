@@ -45,49 +45,49 @@ personas: []
 provider_name: Tillo
 provider_slug: tillo
 search_terms:
-- brand details
-- gift card brand catalog
-- get order status
-- get float account balances
-- reward order status
-- tillo
-- loyalty
-- refund a gift card order and return funds to float
+- issue a digital gift card reward to a user
+- check status of a gift card reward order
 - issue a digital gift card reward
 - check the status of a gift card reward order
-- float account management
-- check denomination availability for a fixed-value gift card brand
-- finance
-- list available gift card brands
-- order an async gift card reward
-- order digital card
-- issue digital card
-- list available tillo gift card brands for reward selection
-- get brand
+- get float account balances
 - get gift card brand details including denominations and eligibility
-- gift cards
-- check balance
-- incentives
-- list brands
-- issue gift card rewards
-- refund a gift card order
-- issue a digital gift card reward to a user
-- check remaining balance on a tillo gift card
-- get float balance
-- gift card balance check
-- get current float account balances across all currencies
-- denomination availability
+- loyalty
 - check stock
-- place an async gift card order for brands requiring asynchronous processing
-- refund order
-- payments
-- refund issued rewards
-- rewards
-- check remaining balance on a gift card
-- order async gift card rewards
-- check status of a gift card reward order
-- get brand details including denominations and features
+- check balance
+- order digital card
 - check denomination availability for a brand
+- check remaining balance on a gift card
+- rewards
+- gift card brand catalog
+- refund issued rewards
+- issue digital card
+- tillo
+- finance
+- get current float account balances across all currencies
+- gift cards
+- check denomination availability for a fixed-value gift card brand
+- refund order
+- list available gift card brands
+- refund a gift card order and return funds to float
+- get brand
+- float account management
+- get float balance
+- issue gift card rewards
+- order async gift card rewards
+- reward order status
+- gift card balance check
+- list brands
+- order an async gift card reward
+- get order status
+- payments
+- incentives
+- get brand details including denominations and features
+- check remaining balance on a tillo gift card
+- place an async gift card order for brands requiring asynchronous processing
+- denomination availability
+- list available tillo gift card brands for reward selection
+- refund a gift card order
+- brand details
 slug: gift-card-rewards
 source_filename: gift-card-rewards.yaml
 source_heading: Capability Spec

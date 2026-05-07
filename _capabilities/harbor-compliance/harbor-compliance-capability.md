@@ -81,48 +81,48 @@ personas: []
 provider_name: Harbor Compliance
 provider_slug: harbor-compliance
 search_terms:
-- harbor compliance list registered agent appointments
-- harbor compliance create a license application
-- createentity
-- getlicense
-- getregisteredagent
-- getentity
-- legal
-- harbor compliance get a business license
-- harbor compliance renew a business license
-- listlicenses
-- business licensing
-- getjurisdiction
-- harbor compliance get compliance status for an entity
-- getfiling
-- createregisteredagentappointment
-- harbor compliance get a registered agent appointment
-- listentities
-- harbor compliance list service orders
-- getorder
-- compliance
 - harbor
-- harbor compliance get a service order
 - regulatory
-- harbor compliance get a compliance filing
-- harbor compliance get a business entity
-- harbor compliance list compliance filings
-- listorders
+- harbor compliance renew a business license
+- harbor compliance get a service order
+- harbor compliance list service orders
 - harbor compliance create a business entity
-- updateentity
 - getentitycompliance
+- getentity
 - api
-- harbor compliance update a business entity
-- harbor compliance get jurisdiction details
-- listregisteredagents
-- harbor compliance list business licenses
-- createlicense
-- harbor compliance list business entities
-- harbor compliance list jurisdictions
-- renewlicense
+- harbor compliance list registered agent appointments
+- harbor compliance get compliance status for an entity
+- compliance
 - listfilings
+- listentities
+- getorder
+- getlicense
+- harbor compliance get a compliance filing
 - listjurisdictions
+- business licensing
+- listorders
+- harbor compliance list business entities
+- createlicense
+- getregisteredagent
+- harbor compliance get jurisdiction details
+- harbor compliance update a business entity
+- harbor compliance list compliance filings
+- harbor compliance list jurisdictions
+- getjurisdiction
+- harbor compliance list business licenses
+- listregisteredagents
+- listlicenses
+- renewlicense
+- harbor compliance get a registered agent appointment
 - harbor compliance appoint a registered agent
+- updateentity
+- harbor compliance create a license application
+- harbor compliance get a business entity
+- getfiling
+- legal
+- createentity
+- harbor compliance get a business license
+- createregisteredagentappointment
 slug: harbor-compliance-capability
 source_filename: harbor-compliance-capability.yaml
 source_heading: Capability Spec

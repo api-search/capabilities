@@ -33,48 +33,48 @@ personas: []
 provider_name: Amazon Kendra
 provider_slug: amazon-kendra
 search_terms:
-- Knowledge Manager
-- aws
 - IT Administrator
-- intelligent search and information retrieval
+- create a data source connector
 - list all search indexes
-- search index
-- Developer
-- list data sources
-- knowledge management
-- create index
-- connect data source
-- add documents to an index
-- enterprise knowledge organization and discovery
-- enterprise search
-- search index management
-- search an index with natural language
-- natural language
-- data source connector management
-- list all amazon kendra search indexes
-- list search indexes
-- index documents
-- ai
-- integrates kendra search into applications and rag pipelines
-- create a new search index
-- machine learning
+- Knowledge Manager
 - create data source
 - document management
-- search
-- list indexes
-- amazon kendra
-- add documents to an amazon kendra search index
-- manages enterprise knowledge bases and search indexes
-- list data source connectors
 - connect a data repository (s3, sharepoint, salesforce, etc.) to a kendra index
-- create a data source connector
-- create search index
-- configures and maintains data source connectors and index settings
-- list all data source connectors for a kendra index
-- intelligent search
-- search an amazon kendra index using natural language query
+- ai
 - unified workflow for search index management, data connectivity, and query operations
+- list all amazon kendra search indexes
+- create index
+- manages enterprise knowledge bases and search indexes
+- enterprise search
+- search an index with natural language
+- intelligent search and information retrieval
+- create a new search index
+- knowledge management
+- machine learning
+- search index
+- list search indexes
+- amazon kendra
+- add documents to an index
+- enterprise knowledge organization and discovery
+- add documents to an amazon kendra search index
 - create a new amazon kendra enterprise search index
+- integrates kendra search into applications and rag pipelines
+- natural language
+- index documents
+- connect data source
+- list data source connectors
+- list indexes
+- Developer
+- search an amazon kendra index using natural language query
+- intelligent search
+- data source connector management
+- aws
+- list all data source connectors for a kendra index
+- search
+- configures and maintains data source connectors and index settings
+- list data sources
+- create search index
+- search index management
 slug: amazon-kendra-enterprise-search
 source_filename: amazon-kendra-enterprise-search.yaml
 source_heading: Capability Spec

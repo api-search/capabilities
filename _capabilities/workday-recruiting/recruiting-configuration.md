@@ -21,51 +21,51 @@ personas: []
 provider_name: Workday Recruiting
 provider_slug: workday-recruiting
 search_terms:
-- list questionnaires
-- pre-hire background screening and check packages.
-- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
-- recruiting
-- interviewer
-- list recruiting questionnaires used for screening and assessment
-- configuration
-- sourcer
-- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
-- list veteran statuses
-- recruiting configuration and reference data.
-- compliance analyst
-- recruiting questionnaires
-- compliance
-- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
-- hiring needs, evergreen requisitions, and position management.
-- hiring manager
-- workday
-- candidate profiles, attachments, photos, assessments, and referrals.
-- list job posting sites
-- list internal career pages and external job boards configured in workday
-- job posting sites
-- saas
-- hcm
-- candidate-to-requisition links, stage progression, and offers.
-- veteran status reference values
-- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
-- public publication of requisitions to internal and external career sites.
-- recruiting agency
-- external agency relationships and candidate submissions.
-- human resources
-- pre-hire records and high-volume bulk applicant import.
-- external staffing partner that submits candidates against open requisitions through the agency portal.
-- talent acquisition
-- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
-- recruiting admin
-- list veteran status reference values for eeo and ofccp compliance reporting
 - recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
-- drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
-- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
-- recruiter
+- pre-hire records and high-volume bulk applicant import.
 - interview scheduling and interviewer feedback collection.
 - builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
+- pre-hire background screening and check packages.
+- recruiting questionnaires
+- list veteran statuses
+- candidate-to-requisition links, stage progression, and offers.
+- veteran status reference values
+- public publication of requisitions to internal and external career sites.
+- recruiting agency
+- workday
+- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
+- configuration
+- compliance analyst
+- saas
+- talent acquisition
+- external agency relationships and candidate submissions.
+- compliance
+- hcm
+- job posting sites
+- recruiter
 - recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
+- list job posting sites
+- interviewer
+- drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
+- list questionnaires
+- list internal career pages and external job boards configured in workday
+- recruiting configuration and reference data.
+- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
+- recruiting
+- recruiting admin
+- hiring manager
+- hiring needs, evergreen requisitions, and position management.
+- human resources
 - eeo, ofccp, and veteran self-identification reference values.
+- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
+- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
+- list recruiting questionnaires used for screening and assessment
+- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
+- candidate profiles, attachments, photos, assessments, and referrals.
+- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
+- external staffing partner that submits candidates against open requisitions through the agency portal.
+- sourcer
+- list veteran status reference values for eeo and ofccp compliance reporting
 slug: recruiting-configuration
 source_filename: recruiting-configuration.yaml
 source_heading: Capability Spec

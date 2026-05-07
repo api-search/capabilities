@@ -57,40 +57,40 @@ personas: []
 provider_name: Cflow
 provider_slug: cflow
 search_terms:
-- cflow list users
-- no-code
-- updaterequest
-- cflow get workflow
-- cflow update request
-- createdraftrequest
-- cflow create draft request
-- automations
-- cflow create request
-- cflow list requests
-- deleterequest
 - cflow list roles
-- integrations
-- listroles
-- cflow reject request
-- cflow get request
-- api
-- workflows
-- business process automation
-- rejectrequest
-- getrequest
-- getworkflows
-- cflow
-- rules
-- getworkflow
-- approverequest
-- cflow delete request
-- listrequests
 - cflow approve request
+- cflow get request
+- automations
+- integrations
+- protocols
+- createdraftrequest
+- listrequests
+- cflow list users
+- getrequest
+- api
 - platform
 - cflow list workflows
+- approverequest
+- cflow reject request
+- cflow list requests
+- cflow delete request
+- cflow get workflow
+- getworkflows
+- getworkflow
+- business process automation
+- cflow create request
+- cflow
+- listroles
 - listusers
+- rules
+- workflows
+- cflow update request
+- cflow create draft request
 - createrequest
-- protocols
+- no-code
+- deleterequest
+- rejectrequest
+- updaterequest
 slug: cflow-capability
 source_filename: cflow-capability.yaml
 source_heading: Capability Spec

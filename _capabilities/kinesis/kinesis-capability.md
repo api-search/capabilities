@@ -57,39 +57,39 @@ personas: []
 provider_name: AWS Kinesis
 provider_slug: kinesis
 search_terms:
-- lists the tags for the specified delivery stream. this operation has a limit of five transactions per second per account.
-- <p>removes tags from the specified delivery stream. removed tags are deleted, and you can't recover them after this operation successfully completes.</p> <p>if you specify a tag that doesn't exist, the operation ignores it.</p> <p>this oper
-- real-time
 - analytics
-- big data
-- startdeliverystreamencryption
-- listtagsfordeliverystream
-- updatedestination
-- <p>describes the specified delivery stream and its status. for example, after your delivery stream is created, call <code>describedeliverystream</code> to see whether the delivery stream is <code>active</code> and therefore ready for data t
-- apache flink
-- <p>adds or updates tags for the specified delivery stream. a tag is a key-value pair that you can define and assign to amazon web services resources. if you specify a tag that already exists, the tag value is replaced with the value that yo
-- untagdeliverystream
-- stopdeliverystreamencryption
-- createdeliverystream
-- describedeliverystream
-- listdeliverystreams
-- api
-- putrecord
-- video
-- '<p>deletes a delivery stream and its data.</p> <p>to check the state of a delivery stream, use <a>describedeliverystream</a>. you can delete a delivery stream only if it is in one of the following states: <code>active</code>, <code>deleting'
-- putrecordbatch
-- <p>writes multiple data records into a delivery stream in a single call, which can achieve higher throughput per producer than when writing single records. to write single data records into a delivery stream, use <a>putrecord</a>. applicati
-- kinesis
-- <p>lists your delivery streams in alphabetical order of their names.</p> <p>the number of delivery streams might be too large to return using a single call to <code>listdeliverystreams</code>. you can limit the number of delivery streams re
-- <p>disables server-side encryption (sse) for the delivery stream. </p> <p>this operation is asynchronous. it returns immediately. when you invoke it, kinesis data firehose first sets the encryption status of the stream to <code>disabling</c
 - streaming
-- deletedeliverystream
-- <p>creates a kinesis data firehose delivery stream.</p> <p>by default, you can create up to 50 delivery streams per amazon web services region.</p> <p>this is an asynchronous operation that immediately returns. the initial status of the del
-- <p>enables server-side encryption (sse) for the delivery stream. </p> <p>this operation is asynchronous. it returns immediately. when you invoke it, kinesis data firehose first sets the encryption status of the stream to <code>enabling</cod
-- tagdeliverystream
-- <p>updates the specified destination of the specified delivery stream.</p> <p>use this operation to change the destination type (for example, to replace the amazon s3 destination with amazon redshift) or change the parameters associated wit
-- data processing
+- video
+- listtagsfordeliverystream
+- <p>lists your delivery streams in alphabetical order of their names.</p> <p>the number of delivery streams might be too large to return using a single call to <code>listdeliverystreams</code>. you can limit the number of delivery streams re
 - <p>writes a single data record into an amazon kinesis data firehose delivery stream. to write multiple data records into a delivery stream, use <a>putrecordbatch</a>. applications using these operations are referred to as producers.</p> <p>
+- kinesis
+- deletedeliverystream
+- api
+- putrecordbatch
+- stopdeliverystreamencryption
+- listdeliverystreams
+- <p>creates a kinesis data firehose delivery stream.</p> <p>by default, you can create up to 50 delivery streams per amazon web services region.</p> <p>this is an asynchronous operation that immediately returns. the initial status of the del
+- describedeliverystream
+- startdeliverystreamencryption
+- big data
+- lists the tags for the specified delivery stream. this operation has a limit of five transactions per second per account.
+- data processing
+- <p>describes the specified delivery stream and its status. for example, after your delivery stream is created, call <code>describedeliverystream</code> to see whether the delivery stream is <code>active</code> and therefore ready for data t
+- <p>updates the specified destination of the specified delivery stream.</p> <p>use this operation to change the destination type (for example, to replace the amazon s3 destination with amazon redshift) or change the parameters associated wit
+- <p>disables server-side encryption (sse) for the delivery stream. </p> <p>this operation is asynchronous. it returns immediately. when you invoke it, kinesis data firehose first sets the encryption status of the stream to <code>disabling</c
+- putrecord
+- <p>writes multiple data records into a delivery stream in a single call, which can achieve higher throughput per producer than when writing single records. to write single data records into a delivery stream, use <a>putrecord</a>. applicati
+- <p>removes tags from the specified delivery stream. removed tags are deleted, and you can't recover them after this operation successfully completes.</p> <p>if you specify a tag that doesn't exist, the operation ignores it.</p> <p>this oper
+- apache flink
+- '<p>deletes a delivery stream and its data.</p> <p>to check the state of a delivery stream, use <a>describedeliverystream</a>. you can delete a delivery stream only if it is in one of the following states: <code>active</code>, <code>deleting'
+- <p>enables server-side encryption (sse) for the delivery stream. </p> <p>this operation is asynchronous. it returns immediately. when you invoke it, kinesis data firehose first sets the encryption status of the stream to <code>enabling</cod
+- real-time
+- untagdeliverystream
+- createdeliverystream
+- <p>adds or updates tags for the specified delivery stream. a tag is a key-value pair that you can define and assign to amazon web services resources. if you specify a tag that already exists, the tag value is replaced with the value that yo
+- updatedestination
+- tagdeliverystream
 slug: kinesis-capability
 source_filename: kinesis-capability.yaml
 source_heading: Capability Spec

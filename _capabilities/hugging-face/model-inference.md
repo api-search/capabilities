@@ -46,84 +46,84 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
+- generate text
+- answer questions based on provided context.
+- tgi tokenize
+- answer question
+- get tgi server information and deployed model details.
+- text summarization
+- providers create embeddings
+- machine learning
+- generate images from text
+- summarize text content.
+- text classification
+- generate text with a specific model
+- tokenize input text and return token ids.
+- run inference on any hugging face model by model id.
+- generate text using a language model via the inference api.
+- tgi generate
+- fill mask
+- list provider models
+- summarize
 - create text completion via multi-provider api.
-- run inference
-- inference
-- providers transcribe
-- extract feature vectors from text for embeddings.
-- generate text using the inference api
-- fill in masked tokens in text.
-- run inference on any model
-- text generation
-- list models available across all inference providers.
-- create chat completion via providers
-- text translation
+- create chat completions using tgi openai-compatible messages api.
+- classify text into predefined categories.
+- classify image
+- ai
+- create text embeddings via multi-provider api.
+- run inference on a model via the inference api
+- tgi chat completions
+- summarize text
+- transcribe speech
+- create text embeddings
 - chat completion
+- translate
+- providers text completion
+- providers transcribe
+- create embeddings
+- providers generate image
+- list models available across all inference providers.
+- tgi server info
+- convert text to speech via multi-provider api.
+- compute similarity between sentences.
+- zero shot classify
+- classify text into categories
+- generate image
+- providers chat completion
+- transcribe audio to text using automatic speech recognition.
+- create chat completion via providers
+- generate images via multi-provider api.
+- translate text between languages
+- openai-compatible chat completions
+- extract features
+- inference
+- hugging face
+- run inference
+- classify text without predefined training labels.
+- classify images into categories.
+- detect objects
+- create text completion via providers
+- text completion
+- providers text to speech
+- fill in masked tokens in text.
+- classify text
+- generate text using the inference api
+- detect objects in images.
+- run inference on any model
+- image generation
+- summarize text content
+- text embeddings
+- extract feature vectors from text for embeddings.
+- translate text between languages.
+- text translation
+- transcribe audio via multi-provider api.
+- translate text
 - generate text using the tgi native endpoint.
 - generate images from text prompts.
-- tgi server info
-- compute similarity
-- generate text
-- hugging face
-- classify text
-- text completion
-- translate text between languages.
-- classify images into categories.
-- ai
-- summarize
-- generate text using a language model via the inference api.
-- detect objects
-- transcribe speech
-- classify image
-- transcribe audio via multi-provider api.
-- generate images via multi-provider api.
-- providers generate image
-- providers chat completion
-- classify text without predefined training labels.
-- classify text into predefined categories.
-- convert text to speech via multi-provider api.
-- extract features
-- generate image
-- generate images from text
-- translate text between languages
-- create embeddings
-- providers create embeddings
-- run inference on a model via the inference api
-- run inference on any hugging face model by model id.
-- create text completion via providers
-- fill mask
-- translate
-- tgi tokenize
-- machine learning
-- text summarization
-- generate text with a specific model
-- create text embeddings
-- image generation
-- classify text into categories
-- answer questions based on provided context.
-- translate text
-- summarize text content
-- get tgi server information and deployed model details.
-- zero shot classify
-- transcribe audio to text using automatic speech recognition.
-- compute similarity between sentences.
-- create text embeddings via multi-provider api.
-- tokenize input text and return token ids.
-- openai-compatible chat completions
-- tgi chat completions
-- list provider models
-- providers text completion
-- summarize text content.
-- summarize text
-- answer question
-- tgi generate
-- create chat completion via openai-compatible multi-provider api.
-- text classification
-- create chat completions using tgi openai-compatible messages api.
 - text completions
-- providers text to speech
-- text embeddings
-- detect objects in images.
+- text generation
+- create chat completion via openai-compatible multi-provider api.
+- compute similarity
 slug: model-inference
 source_filename: model-inference.yaml
 source_heading: Capability Spec

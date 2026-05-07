@@ -29,57 +29,57 @@ personas: []
 provider_name: UnitedHealthcare
 provider_slug: unitedhealthcare
 search_terms:
-- verify unitedhealthcare member eligibility and coverage details at point of care including deductible, copay, and network status.
-- fhir
-- check prior auth
-- get provider
-- inquire claim
-- eligibility
-- get provider demographics.
-- get claim status
-- health app developer
-- revenue cycle
+- inquire claim status.
 - healthcare provider
+- healthcare provider workflow for eligibility, claims, prior authorization, and provider directory
+- fhir-based interoperability for health information exchange
+- check eligibility
+- get claim status
+- check prior authorization
+- care management professional accessing member health history for care coordination
+- prior authorization, provider directory, and point-of-care clinical support
+- revenue cycle
+- get provider
+- unitedhealthcare
+- claims
+- member eligibility verification.
+- search unitedhealthcare provider directory for in-network physicians and organizations by npi or state.
+- billing specialist
+- physician or clinical staff verifying eligibility and managing prior authorizations at point of care
+- fhir
+- verify unitedhealthcare member eligibility and coverage details at point of care including deductible, copay, and network status.
+- determine if prior authorization is required for a procedure and check current authorization status to prevent avoidable denials.
+- health insurance
+- get provider demographics.
+- health app developer
+- healthcare
+- prior authorization management.
+- eligibility
+- check patient-specific benefit details for a service code including whether authorization is required and estimated cost-sharing.
+- unitedhealthcare member accessing their health data through patient portals or apps
+- look up unitedhealthcare claim status, payment details, and denial reasons by claim number or member id.
+- member-facing health data access and patient portal integration
+- check prior auth requirements.
+- developer building patient-facing applications using fhir interoperability apis
+- prior authorization
+- patient
+- check benefit
+- claims submission, eligibility verification, and payment management workflows
+- verify member eligibility
+- medical billing staff managing claim submission, status inquiry, and revenue cycle workflows
+- find provider
+- provider directory.
+- fhir-based patient data access workflow for claims history, coverage, and provider directory
+- inquire claim
+- check patient benefit
+- check prior auth
+- claims management.
+- prior auth coordinator
+- check patient benefit details.
 - clinical staff coordinating prior authorization requests and tracking approval status
 - claims management
-- check eligibility
-- healthcare
-- billing specialist
-- fhir-based patient data access workflow for claims history, coverage, and provider directory
-- healthcare provider workflow for eligibility, claims, prior authorization, and provider directory
-- developer building patient-facing applications using fhir interoperability apis
-- claims submission, eligibility verification, and payment management workflows
-- check prior auth requirements.
-- check patient-specific benefit details for a service code including whether authorization is required and estimated cost-sharing.
-- health insurance
 - check member eligibility.
-- provider directory.
-- care management professional accessing member health history for care coordination
-- look up unitedhealthcare claim status, payment details, and denial reasons by claim number or member id.
-- member eligibility verification.
-- check prior authorization
-- search unitedhealthcare provider directory for in-network physicians and organizations by npi or state.
-- physician or clinical staff verifying eligibility and managing prior authorizations at point of care
-- find provider
-- check patient benefit
-- prior auth coordinator
-- unitedhealthcare
-- patient
-- prior authorization
-- check patient benefit details.
-- check benefit
 - care coordinator
-- determine if prior authorization is required for a procedure and check current authorization status to prevent avoidable denials.
-- inquire claim status.
-- claims management.
-- prior authorization management.
-- fhir-based interoperability for health information exchange
-- unitedhealthcare member accessing their health data through patient portals or apps
-- prior authorization, provider directory, and point-of-care clinical support
-- medical billing staff managing claim submission, status inquiry, and revenue cycle workflows
-- claims
-- verify member eligibility
-- member-facing health data access and patient portal integration
 slug: provider-operations
 source_filename: provider-operations.yaml
 source_heading: Capability Spec

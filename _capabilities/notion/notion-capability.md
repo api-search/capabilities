@@ -85,56 +85,56 @@ personas: []
 provider_name: Notion
 provider_slug: notion
 search_terms:
-- deleteblock
-- notion search by title
 - ideas
-- tasks
-- wiki
-- notes
-- projects
-- notion retrieve a page
-- createpage
-- notion list all users
-- listcomments
-- notion create a comment
-- notion delete a block
-- retrieveblockchildren
-- notion update page properties
 - retrievebotuser
-- notion retrieve comments
-- retrievedatabase
-- notion update a database
-- productivity
-- notion retrieve a page property item
-- notion create a database
-- retrieveuser
-- retrieveblock
-- retrievepage
 - notion retrieve block children
-- database
-- t1
-- createdatabase
-- api
-- notion query a database
+- notion retrieve comments
+- deleteblock
 - updatedatabase
-- search
-- notion retrieve the bot user
-- retrievepageproperty
-- notion retrieve a block
-- appendblockchildren
-- notion retrieve a user
 - querydatabase
-- notion retrieve a database
-- notion append block children
 - notion create a page
-- workspace
-- notion update a block
-- listusers
-- notion
-- collaboration
 - updateblock
+- createdatabase
+- notion retrieve a database
 - createcomment
+- notion retrieve a user
+- api
+- notion append block children
+- notion update page properties
+- notes
+- wiki
+- workspace
+- retrievedatabase
+- listcomments
+- productivity
+- notion query a database
+- collaboration
+- retrievepageproperty
+- appendblockchildren
+- notion retrieve a page
+- retrieveuser
+- tasks
+- notion retrieve a page property item
+- notion update a database
+- retrieveblock
+- t1
+- notion retrieve the bot user
+- createpage
+- notion retrieve a block
+- database
 - updatepage
+- notion delete a block
+- notion update a block
+- retrieveblockchildren
+- projects
+- notion search by title
+- notion
+- notion list all users
+- listusers
+- search
+- notion create a database
+- retrievepage
+- notion create a comment
 slug: notion-capability
 source_filename: notion-capability.yaml
 source_heading: Capability Spec

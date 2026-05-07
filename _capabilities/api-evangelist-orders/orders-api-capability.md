@@ -33,21 +33,21 @@ personas: []
 provider_name: Orders
 provider_slug: api-evangelist-orders
 search_terms:
-- deleteorder
-- orders create order
-- application programming interface
-- orders cancel order
-- orders delete order
-- orders retrieve order
-- orders
-- updateorder
-- getorder
-- api
-- orders update order
 - getorders
-- sendorder
 - createorder
+- orders update order
+- deleteorder
+- sendorder
+- application programming interface
+- getorder
+- orders cancel order
+- orders create order
+- api
+- orders retrieve order
 - retrieves orders
+- updateorder
+- orders
+- orders delete order
 slug: orders-api-capability
 source_filename: orders-api-capability.yaml
 source_heading: Capability Spec

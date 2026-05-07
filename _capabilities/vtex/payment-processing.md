@@ -33,39 +33,39 @@ personas: []
 provider_name: VTEX
 provider_slug: vtex
 search_terms:
-- get transaction by id
-- marketplace
-- payment refunds
-- order simulation
+- transactions
+- create a refund for a transaction
 - create a new shopping cart
-- create a refund for a completed vtex payment transaction
-- finance
-- vtex
 - get full details of a vtex payment transaction including status and amounts
 - retail
-- e-commerce
-- get shopping cart by id
-- transactions
-- commerce
-- single transaction operations
-- simulate a vtex order to check real-time pricing, shipping costs, and item availability
-- get transaction
-- payment transaction management
-- create refund
-- list payment transactions
-- create a new vtex shopping cart for a customer
-- get current state of a vtex shopping cart including items, prices, and shipping options
-- shopping cart management
-- checkout
-- payments
-- simulate order for pricing and availability
-- simulate order
-- list vtex payment transactions with pagination
-- get cart
-- single cart operations
-- list transactions
 - create cart
-- create a refund for a transaction
+- get cart
+- checkout
+- get transaction by id
+- create a new vtex shopping cart for a customer
+- vtex
+- get transaction
+- create a refund for a completed vtex payment transaction
+- shopping cart management
+- payment refunds
+- finance
+- single transaction operations
+- payment transaction management
+- simulate order
+- simulate order for pricing and availability
+- create refund
+- list vtex payment transactions with pagination
+- e-commerce
+- marketplace
+- get current state of a vtex shopping cart including items, prices, and shipping options
+- single cart operations
+- order simulation
+- list payment transactions
+- payments
+- list transactions
+- simulate a vtex order to check real-time pricing, shipping costs, and item availability
+- commerce
+- get shopping cart by id
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

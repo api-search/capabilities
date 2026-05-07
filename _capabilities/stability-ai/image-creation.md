@@ -45,61 +45,61 @@ personas: []
 provider_name: Stability AI
 provider_slug: stability-ai
 search_terms:
-- generate ultra image
-- generate core image
-- generate image core
-- remove image backgrounds
-- video generation
-- erase an object from an image using a mask
-- image creation
-- replace the image background and adjust lighting conditions
-- generate image sd3
-- remove background
-- stable diffusion
-- extend an image with new content in any direction
-- generate a photorealistic or artistic image from a text prompt using stable image ultra (highest quality)
-- fill a masked region of an image with ai-generated content guided by a text prompt
-- generative ai
-- generate an image from a text prompt using stable image core
-- remove objects from images
-- 3d generation
-- ai
-- erase from image
-- generate images using stable image ultra
-- replace background and adjust lighting
-- extend an image beyond its current edges by generating new content that continues the scene
-- outpaint image
-- generate an image using stable diffusion 3 or 3.5 (text-to-image or image-to-image)
-- fill masked regions with ai-generated content
-- automatically detect and remove the background from an image, isolating the foreground subject
-- replace specific objects in an image using text descriptions
-- replace an image's background with a new scene and adjust lighting to match
 - remove image background
-- machine learning
-- generate images using stable diffusion 3 or 3.5
-- replace background and relight
-- stability ai
-- find specific objects in an image by text description and replace them with new content
-- search and recolor in image
 - inpaint a masked region of an image using a text prompt
-- generate image ultra
-- image editing
-- generate a high-quality image from a text prompt using stable image ultra
-- creative workflow
-- find and replace objects in images
-- generate sd3 image
-- image generation
-- remove a specific object or region from an image using a mask
-- search and replace
+- fill masked regions with ai-generated content
+- remove image backgrounds
 - text to image
+- generate ultra image
+- ai
+- search and replace
+- find and replace objects in images
+- video generation
+- generate a photorealistic or artistic image from a text prompt using stable image ultra (highest quality)
+- image generation
 - generate images using stable image core (fast)
-- remove the background from an image automatically
-- search and replace in image
-- generate an image from a text prompt using stable image core (fast and affordable)
+- erase from image
+- image creation
+- generate sd3 image
+- generate image ultra
+- fill a masked region of an image with ai-generated content guided by a text prompt
+- stable diffusion
+- generate image sd3
+- replace background and relight
+- remove objects from images
+- extend an image beyond its current edges by generating new content that continues the scene
+- search and recolor in image
+- machine learning
+- 3d generation
 - inpaint image
+- generate an image from a text prompt using stable image core
+- remove background
+- outpaint image
+- generate an image using stable diffusion 3 or 3.5 models
+- generative ai
+- replace the image background and adjust lighting conditions
+- generate core image
+- erase an object from an image using a mask
+- replace background and adjust lighting
+- generate image core
+- generate images using stable diffusion 3 or 3.5
+- image editing
+- replace an image's background with a new scene and adjust lighting to match
+- generate images using stable image ultra
+- generate an image from a text prompt using stable image core (fast and affordable)
 - extend an image beyond its boundaries
 - find specific objects in an image and change their color using text descriptions
-- generate an image using stable diffusion 3 or 3.5 models
+- remove the background from an image automatically
+- extend an image with new content in any direction
+- generate an image using stable diffusion 3 or 3.5 (text-to-image or image-to-image)
+- replace specific objects in an image using text descriptions
+- automatically detect and remove the background from an image, isolating the foreground subject
+- generate a high-quality image from a text prompt using stable image ultra
+- search and replace in image
+- creative workflow
+- remove a specific object or region from an image using a mask
+- find specific objects in an image by text description and replace them with new content
+- stability ai
 slug: image-creation
 source_filename: image-creation.yaml
 source_heading: Capability Spec

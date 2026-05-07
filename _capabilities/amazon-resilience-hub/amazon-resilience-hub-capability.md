@@ -93,55 +93,55 @@ personas: []
 provider_name: Amazon Resilience Hub
 provider_slug: amazon-resilience-hub
 search_terms:
-- amazon resilience hub list resiliency policies
-- amazon resilience hub describe app assessment
-- listappassessments
-- amazon resilience hub add draft app version resource mappings
-- describeapp
-- deleteapp
-- amazon resilience hub create resiliency policy
-- tagresource
-- listresiliencypolicies
-- amazon
-- publishappversion
-- listtagsforresource
-- listapps
-- amazon resilience hub list apps
-- amazon resilience hub describe resiliency policy
-- describeresiliencypolicy
 - listsuggestedresiliencypolicies
-- startappassessment
-- amazon resilience hub list suggested resiliency policies
-- operations
-- amazon resilience hub list test recommendations
+- amazon resilience hub list resiliency policies
 - amazon resilience hub list app assessments
-- listalarmrecommendations
-- resolveappversionresources
-- describeappassessment
-- amazon resilience hub publish app version
 - amazon resilience hub list alarm recommendations
-- api
-- adddraftappversionresourcemappings
-- amazon resilience hub list sop recommendations
-- disaster recovery
-- listtestrecommendations
-- amazon resilience hub delete app
-- hub
-- amazon resilience hub import resources to draft app version
+- listtagsforresource
+- operations
 - amazon resilience hub list app versions
-- amazon resilience hub list tags for resource
+- amazon resilience hub describe resiliency policy
 - createresiliencypolicy
-- amazon resilience hub create app
+- api
+- amazon resilience hub list test recommendations
 - listappversions
-- importresourcestodraftappversion
+- amazon resilience hub describe app assessment
+- amazon
+- amazon resilience hub start app assessment
+- amazon resilience hub create resiliency policy
+- listtestrecommendations
 - high availability
+- amazon resilience hub import resources to draft app version
+- amazon resilience hub create app
+- amazon resilience hub list apps
+- publishappversion
+- listresiliencypolicies
+- hub
+- tagresource
+- startappassessment
+- amazon resilience hub tag resource
+- adddraftappversionresourcemappings
+- disaster recovery
+- listsoprecommendations
 - amazon resilience hub resolve app version resources
+- amazon resilience hub list suggested resiliency policies
+- deleteapp
+- describeappassessment
+- resolveappversionresources
+- listappassessments
 - resilience
 - createapp
-- amazon resilience hub tag resource
+- amazon resilience hub delete app
+- listalarmrecommendations
+- amazon resilience hub add draft app version resource mappings
 - amazon resilience hub describe app
-- amazon resilience hub start app assessment
-- listsoprecommendations
+- listapps
+- amazon resilience hub list sop recommendations
+- describeresiliencypolicy
+- importresourcestodraftappversion
+- describeapp
+- amazon resilience hub publish app version
+- amazon resilience hub list tags for resource
 slug: amazon-resilience-hub-capability
 source_filename: amazon-resilience-hub-capability.yaml
 source_heading: Capability Spec

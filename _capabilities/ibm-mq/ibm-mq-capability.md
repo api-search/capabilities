@@ -97,59 +97,59 @@ personas: []
 provider_name: IBM MQ
 provider_slug: ibm-mq
 search_terms:
-- deletesubscription
-- ibm mq list mq installations
-- ibm mq list queue managers
-- integration
-- listqueuemanagers
-- updatechannel
-- ibm mq update a queue
-- getchannel
-- getqueuemanager
-- updatequeue
-- ibm mq get subscription details
-- middleware
-- ibm mq update a channel
-- ibm mq delete a subscription
-- ibm mq list subscriptions
-- ibm mq create a channel
-- getsubscription
-- ibm mq list topics
-- listchannels
-- createsubscription
-- enterprise
-- ibm mq list channels
-- getqueue
-- deletechannel
-- ibm mq delete a channel
-- deletequeue
 - ibm mq get queue manager details
-- gettopic
-- createchannel
-- listinstallations
-- async
-- ibm mq delete a topic
-- listqueues
-- messaging
-- ibm mq update a topic
-- updatetopic
-- ibm mq get queue details
-- mq
-- api
-- createtopic
-- ibm mq get topic details
-- ibm mq delete a queue
-- ibm mq create a queue
-- createqueue
-- listsubscriptions
-- ibm mq create a subscription
-- listtopics
-- ibm mq get channel details
-- ibm
+- getqueue
 - deletetopic
+- getqueuemanager
+- createtopic
 - ibm mq create a topic
+- gettopic
+- updatetopic
+- mq
+- ibm
+- async
+- ibm mq update a topic
+- ibm mq delete a queue
+- api
+- ibm mq get subscription details
+- listchannels
+- middleware
+- ibm mq create a subscription
+- createsubscription
+- listsubscriptions
+- ibm mq delete a subscription
+- ibm mq list topics
 - queue
+- ibm mq update a queue
+- deletequeue
+- integration
+- getsubscription
+- ibm mq get topic details
+- deletesubscription
+- listqueuemanagers
+- getchannel
+- enterprise
+- listinstallations
+- updatequeue
+- ibm mq get queue details
+- ibm mq delete a channel
+- ibm mq create a queue
+- ibm mq get channel details
+- ibm mq list queue managers
 - ibm mq list queues
+- ibm mq list channels
+- ibm mq delete a topic
+- updatechannel
+- listtopics
+- ibm mq update a channel
+- ibm mq create a channel
+- listqueues
+- ibm mq list subscriptions
+- messaging
+- createchannel
+- deletechannel
+- ibm mq list mq installations
+- createqueue
 slug: ibm-mq-capability
 source_filename: ibm-mq-capability.yaml
 source_heading: Capability Spec

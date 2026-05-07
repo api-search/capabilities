@@ -33,39 +33,39 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- research
+- analytics datastore.
+- performance attribution
 - list vault resources.
+- portfolio metadata.
+- list analytics datastore.
+- factset
+- portfolio analytics
+- list spar
+- risk analysis
+- list pa
+- list publisher
+- list portfolios
+- financial data
+- research
+- list pa engine resources.
+- list analytics datastore
+- list spar engine resources.
 - list datastore
 - list portfolio metadata.
-- investment analytics
-- market data
-- portfolio resources.
-- portfolio metadata.
-- list vault
-- performance attribution
-- pa engine resources.
-- list pa engine
-- portfolio analytics
-- list pa engine resources.
-- list spar
-- factset
-- list spar engine resources.
-- list portfolio metadata
-- list analytics datastore.
-- financial data
-- analytics datastore.
-- list publisher resources.
-- vault resources.
-- list publisher
-- list spar engine
 - spar engine resources.
-- financial
-- list portfolios
 - list metadata
-- list analytics datastore
-- risk analysis
+- pa engine resources.
+- list publisher resources.
+- financial
+- list portfolio metadata
 - list portfolios.
-- list pa
+- market data
+- vault resources.
+- list vault
+- list pa engine
+- list spar engine
+- portfolio resources.
+- investment analytics
 slug: portfolio-analytics
 source_filename: portfolio-analytics.yaml
 source_heading: Capability Spec

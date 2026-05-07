@@ -69,42 +69,42 @@ personas: []
 provider_name: PeopleForce
 provider_slug: peopleforce
 search_terms:
-- get divisions
-- employees
-- get employees id
+- get a leave request
+- get vacancies
+- list candidates
 - get leave requests
+- get employees id
+- api
+- get candidates id
+- create a candidate
+- list departments
+- peopleforce
+- create a leave request
+- patch employees id
+- post candidates
+- post leave requests
+- hr
+- list leave requests
+- get a vacancy
+- get divisions
+- get a candidate
+- recruitment
+- get an employee
+- human resources
+- get positions
+- list employees
+- get leave requests id
+- employees
+- get candidates
 - get employees
 - update an employee
-- get departments
-- create an employee
-- get candidates id
-- patch employees id
-- list candidates
-- api
-- post candidates
-- get a leave request
-- list positions
-- get leave requests id
-- list employees
-- create a candidate
-- peopleforce
-- human resources
-- list vacancies
-- get candidates
-- recruitment
-- get positions
-- get an employee
 - get vacancies id
-- list divisions
 - post employees
-- list departments
-- hr
-- get a candidate
-- get a vacancy
-- list leave requests
-- create a leave request
-- get vacancies
-- post leave requests
+- create an employee
+- get departments
+- list divisions
+- list vacancies
+- list positions
 slug: peopleforce-capability
 source_filename: peopleforce-capability.yaml
 source_heading: Capability Spec

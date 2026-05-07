@@ -65,64 +65,64 @@ personas: []
 provider_name: Salesforce Net Zero Cloud
 provider_slug: salesforce-net-zero-cloud
 search_terms:
-- sustainability
-- list energy consumption records by type (electricity, gas, renewable)
-- create a sustainability goal
-- emission factor catalog
+- update a carbon emission record
+- create a new waste disposal record (landfill, recycled, composted, etc.)
+- list energy consumption records
+- list emission factors
+- create water withdrawal
+- list carbon emissions
+- delete a carbon emission record
+- get carbon emission
 - create a new sustainability goal with baseline, target year, and reduction percentage
-- list water withdrawal records by source
-- carbon emissions
-- create an energy consumption record
 - list water withdrawal records
-- waste disposal tracking
+- update carbon emission
+- create sustainability goal
+- create waste disposal record
+- create energy consumption
+- carbon accounting
+- list sustainability goals
+- create a waste disposal record
+- create a sustainability goal
+- water withdrawal and consumption tracking
+- create a water withdrawal record
+- create a new energy consumption record for a facility
+- create a new water withdrawal record for a facility
+- list carbon emission records with optional scope and year filters
+- create an energy consumption record
+- get details for a specific carbon emission record
+- carbon emissions
 - query any sustainability data using soql for advanced esg reporting
-- net zero cloud
+- create waste disposal
+- list energy consumption records by type (electricity, gas, renewable)
+- delete carbon emission
+- list waste disposal
+- list water withdrawal
+- update an existing carbon emission record
+- esg
 - net zero and sustainability goal management
 - create a new carbon emission record
+- list water withdrawal records by source
+- climate
+- emission factor catalog
 - list waste disposal records by type and disposal method
-- list carbon emission records with optional scope and year filters
-- create a new waste disposal record (landfill, recycled, composted, etc.)
-- create waste disposal record
-- create carbon emission
-- list water withdrawal
-- energy consumption tracking
+- create water withdrawal record
+- carbon emission record management (scope 1, 2, 3)
 - get a specific carbon emission record
-- update a carbon emission record
+- sustainability
+- list emission factors used for co2e calculations, filterable by category and region
+- environmental
+- create a new carbon emission record (scope 1, 2, or 3)
+- list energy consumption
+- list waste disposal records
+- create carbon emission
 - list sustainability goals including net zero targets and progress
-- update an existing carbon emission record
 - net zero
 - individual emission record operations
-- get details for a specific carbon emission record
-- list sustainability goals
-- list waste disposal records
-- carbon accounting
-- esg
-- climate
-- list energy consumption records
-- create a new energy consumption record for a facility
-- create a water withdrawal record
-- create a new water withdrawal record for a facility
-- list carbon emissions
-- environmental
-- create water withdrawal
-- create energy consumption
-- list waste disposal
-- create a waste disposal record
-- create sustainability goal
-- list energy consumption
-- create waste disposal
-- list emission factors used for co2e calculations, filterable by category and region
-- list carbon emission records filtered by scope and reporting year
-- list emission factors
-- create a new carbon emission record (scope 1, 2, or 3)
-- update carbon emission
-- water withdrawal and consumption tracking
-- delete a carbon emission record
-- create water withdrawal record
-- get carbon emission
+- waste disposal tracking
+- energy consumption tracking
 - query sustainability data
-- carbon emission record management (scope 1, 2, 3)
-- delete carbon emission
+- net zero cloud
+- list carbon emission records filtered by scope and reporting year
 - salesforce
 slug: carbon-accounting
 source_filename: carbon-accounting.yaml

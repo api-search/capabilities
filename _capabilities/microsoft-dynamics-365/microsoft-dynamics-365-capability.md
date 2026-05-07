@@ -69,45 +69,45 @@ personas: []
 provider_name: Microsoft Dynamics 365
 provider_slug: microsoft-dynamics-365
 search_terms:
-- microsoft dynamics 365 create a contact
-- microsoft dynamics 365 delete an opportunity
-- listaccounts
-- listcontacts
-- dynamics
-- createaccount
-- microsoft dynamics 365 update an account
-- microsoft dynamics 365 list contacts
-- microsoft dynamics 365 delete a contact
-- microsoft dynamics 365 list opportunities
-- microsoft dynamics 365 delete an account
-- deleteaccount
-- createopportunity
-- microsoft dynamics 365 create an opportunity
-- cloud
-- microsoft dynamics 365 retrieve an opportunity
-- microsoft dynamics 365 update an opportunity
-- enterprise
-- '365'
-- getaccount
-- microsoft dynamics 365 create an account
-- updatecontact
-- getcontact
-- erp
-- crm
-- createcontact
-- deleteopportunity
-- microsoft dynamics 365 update a contact
-- microsoft dynamics 365 retrieve a contact
-- api
-- updateaccount
-- business applications
-- getopportunity
-- listopportunities
-- microsoft dynamics 365 retrieve an account
-- microsoft dynamics 365 list accounts
-- updateopportunity
-- microsoft
 - deletecontact
+- microsoft dynamics 365 create an account
+- listcontacts
+- getaccount
+- microsoft dynamics 365 update an account
+- updateaccount
+- createcontact
+- microsoft dynamics 365 update a contact
+- api
+- '365'
+- microsoft dynamics 365 delete an opportunity
+- microsoft dynamics 365 create a contact
+- microsoft dynamics 365 retrieve a contact
+- listopportunities
+- dynamics
+- getcontact
+- microsoft dynamics 365 create an opportunity
+- microsoft dynamics 365 retrieve an account
+- updatecontact
+- business applications
+- microsoft
+- crm
+- updateopportunity
+- microsoft dynamics 365 update an opportunity
+- microsoft dynamics 365 list opportunities
+- enterprise
+- microsoft dynamics 365 list contacts
+- cloud
+- deleteaccount
+- microsoft dynamics 365 delete a contact
+- listaccounts
+- erp
+- createaccount
+- microsoft dynamics 365 list accounts
+- createopportunity
+- microsoft dynamics 365 delete an account
+- microsoft dynamics 365 retrieve an opportunity
+- getopportunity
+- deleteopportunity
 slug: microsoft-dynamics-365-capability
 source_filename: microsoft-dynamics-365-capability.yaml
 source_heading: Capability Spec

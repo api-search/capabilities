@@ -249,133 +249,133 @@ personas: []
 provider_name: Docker
 provider_slug: docker
 search_terms:
-- containerunpause
-- volumeupdate
-- volumeprune
-- create a container
-- putcontainerarchive
-- start a container
-- networkconnect
-- rename a container
-- list networks
-- inspect a container
-- wait for a container
-- containerdelete
-- cloud
-- unpause a container
-- inspect an image
-- volumecreate
-- imagegetall
-- build an image
-- get version
-- networkinspect
-- containertop
-- api
-- containerrestart
-- imagedelete
-- attach to a container
-- pause a container
-- export several images
-- imagepush
-- resize a container tty
-- systemversion
-- imagehistory
-- delete unused images
-- search images
-- systemping
-- start an exec instance
-- connect a container to a network
-- list volumes
-- imagecreate
-- containerchanges
-- systemdatausage
-- infrastructure
-- containerkill
-- get changes on a container’s filesystem
-- '"update a volume. valid only for swarm cluster volumes"'
-- networklist
 - create a new image from a container
-- containerstop
-- inspect an exec instance
-- networkcreate
-- resize an exec instance
-- containerwait
-- imagecommit
-- networkdelete
-- create an image
-- containerexec
-- volumeinspect
-- containerstats
-- containerresize
-- get container stats based on resource usage
-- containerattachwebsocket
-- systeminfo
+- containers
+- systemdatausage
+- api
+- imagepush
 - remove a volume
-- imagelist
-- delete stopped containers
-- delete builder cache
-- containerupdate
-- containerrename
-- systemevents
-- containerlist
-- imageprune
+- imagebuild
+- create a network
+- volumecreate
+- resize a container tty
+- networkinspect
+- containerrestart
 - get the history of an image
-- containerattach
-- devops
-- imagesearch
+- containerlogs
+- tag an image
+- volumeprune
+- containerresize
+- export an image
+- restart a container
+- imagegetall
 - imageget
+- get version
+- connect a container to a network
+- pause a container
+- docker
+- networkdelete
+- volumeupdate
+- containerarchive
+- containerinspect
+- containertop
+- search images
+- buildprune
+- create a container
+- execinspect
+- resize an exec instance
+- containerpause
+- execresize
+- list images
+- containerdelete
+- containerlist
+- inspect a container
+- containerunpause
+- inspect a volume
+- inspect a network
+- volumeinspect
+- imagelist
+- containerattach
+- imagetag
+- imageload
+- systeminfo
+- inspect an image
 - monitor events
+- get container stats based on resource usage
+- containerrename
+- putcontainerarchive
+- cloud
+- export several images
+- imagecreate
+- remove a network
+- containerchanges
+- import images
+- imagesearch
+- containerkill
+- imageinspect
+- imagecommit
+- containerattachwebsocket
+- networklist
+- get an archive of a filesystem resource in a container
+- kill a container
+- delete builder cache
+- list processes running inside a container
+- containerstats
+- create an image
+- wait for a container
+- delete unused volumes
+- networkconnect
+- networkcreate
+- list networks
+- extract an archive of files or folders to a directory in a container
+- delete unused images
+- containerstop
+- delete stopped containers
 - get data usage information
+- infrastructure
+- containerexport
+- check auth configuration
+- systemevents
+- containerexec
+- containercreate
+- containerupdate
+- remove an image
+- build an image
+- inspect an exec instance
+- stop a container
+- microservices
+- push an image
+- export a container
+- unpause a container
+- containerwait
+- containerprune
+- devops
+- get system information
+- get container logs
+- get changes on a container’s filesystem
+- containerstart
+- systemping
+- remove a container
+- execstart
+- systemversion
+- start a container
+- create a volume
+- imagehistory
+- attach to a container via a websocket
+- systemauth
 - create an exec instance
 - volumedelete
-- remove an image
-- execinspect
-- push an image
-- kill a container
-- containerstart
-- remove a container
-- restart a container
-- containerlogs
-- list processes running inside a container
-- export a container
-- stop a container
-- update a container
-- list images
-- imageload
-- microservices
-- check auth configuration
-- delete unused volumes
-- extract an archive of files or folders to a directory in a container
-- get container logs
-- containerarchive
-- export an image
-- imagetag
-- attach to a container via a websocket
-- create a volume
-- import images
-- create a network
-- get system information
-- containers
-- docker
-- list containers
-- tag an image
-- imageinspect
-- volumelist
-- inspect a network
-- inspect a volume
-- execresize
-- containerexport
-- imagebuild
-- containerpause
+- rename a container
 - ping
-- remove a network
-- systemauth
-- containerinspect
-- containerprune
-- containercreate
-- get an archive of a filesystem resource in a container
-- execstart
-- buildprune
+- volumelist
+- start an exec instance
+- '"update a volume. valid only for swarm cluster volumes"'
+- attach to a container
+- imagedelete
+- list containers
+- list volumes
+- imageprune
+- update a container
 slug: docker-capability
 source_filename: docker-capability.yaml
 source_heading: Capability Spec

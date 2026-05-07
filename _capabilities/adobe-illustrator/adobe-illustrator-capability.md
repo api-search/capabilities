@@ -169,92 +169,92 @@ personas: []
 provider_name: Adobe Illustrator
 provider_slug: adobe-illustrator
 search_terms:
-- createdocument
-- deletepathitem
-- updatepathitem
-- creative cloud
-- adobe illustrator update a text frame
-- createpathitem
-- getdocument
-- adobe illustrator list artboards in a document
-- gettextframe
-- updatepreferences
-- adobe illustrator delete a symbol
-- getswatch
-- api
-- illustrator
-- deletelayer
-- deleteswatch
-- getgraphicstyle
-- adobe illustrator create a path item
-- adobe illustrator list graphic styles
-- listartboards
-- adobe illustrator get a document
-- adobe illustrator create a symbol
-- adobe illustrator save a document
-- updatetextframe
-- adobe illustrator list text frames
-- adobe illustrator update application preferences
-- adobe illustrator get a text frame
-- listswatches
-- updatelayer
-- adobe illustrator create a new document
-- adobe illustrator delete a path item
-- adobe illustrator delete a text frame
-- getsymbol
-- adobe illustrator delete a swatch
-- getpreferences
-- createartboard
-- createsymbol
-- createlayer
-- deletetextframe
-- createswatch
-- adobe illustrator get a graphic style
 - adobe illustrator get a symbol
-- adobe illustrator update a layer
-- design
-- adobe illustrator create a new artboard
-- adobe illustrator list path items
-- adobe illustrator create a new layer
-- adobe illustrator create a text frame
-- adobe illustrator get a swatch
 - adobe illustrator create a swatch
-- adobe illustrator list open documents
-- adobe illustrator update a path item
-- adobe illustrator get a layer
-- exportdocument
-- adobe illustrator get application preferences
-- adobe illustrator close a document
-- adobe illustrator update an artboard
-- adobe
-- deleteartboard
+- api
+- adobe illustrator list graphic styles
+- adobe illustrator delete a text frame
+- adobe illustrator delete a symbol
+- adobe illustrator get an artboard
+- listlayers
+- adobe illustrator list path items
+- adobe illustrator delete a swatch
+- createdocument
+- adobe illustrator update a layer
+- deletelayer
+- illustrator
+- adobe illustrator create a path item
+- adobe illustrator update application preferences
+- getartboard
+- getpathitem
+- adobe illustrator create a new artboard
+- adobe illustrator create a new layer
+- adobe illustrator delete a path item
+- adobe illustrator delete a graphic style
+- closedocument
 - listpathitems
-- getlayer
-- adobe illustrator list swatches
+- adobe illustrator list text frames
+- deletegraphicstyle
+- exportdocument
+- adobe illustrator save a document
+- adobe illustrator create a text frame
+- createpathitem
+- adobe illustrator get a document
+- listsymbols
+- deletepathitem
+- getapplication
+- adobe illustrator list open documents
+- adobe illustrator get application information
+- adobe illustrator create a new document
+- getsymbol
+- deleteswatch
+- createartboard
+- adobe illustrator get application preferences
+- adobe illustrator list symbols
+- updatepreferences
+- deleteartboard
+- updateartboard
+- createtextframe
+- design
+- createsymbol
+- listartboards
+- adobe illustrator close a document
+- updatetextframe
+- listgraphicstyles
+- adobe illustrator create a symbol
+- getpreferences
+- adobe illustrator update an artboard
+- listtextframes
+- vector graphics
+- adobe illustrator delete a layer
+- getgraphicstyle
+- listdocuments
+- listswatches
+- adobe illustrator get a layer
+- getdocument
+- creative cloud
+- deletetextframe
 - adobe illustrator get a path item
 - adobe illustrator delete an artboard
-- adobe illustrator get an artboard
-- listgraphicstyles
-- listlayers
-- adobe illustrator get application information
-- createtextframe
-- adobe illustrator list symbols
-- listdocuments
-- getpathitem
-- updateartboard
-- closedocument
-- adobe illustrator list layers in a document
-- adobe illustrator delete a layer
-- listsymbols
-- savedocument
-- listtextframes
-- deletegraphicstyle
-- vector graphics
-- getapplication
+- updatelayer
+- adobe illustrator list artboards in a document
 - adobe illustrator export a document
-- adobe illustrator delete a graphic style
+- createswatch
+- getlayer
+- adobe illustrator get a graphic style
+- updatepathitem
+- adobe illustrator list swatches
+- createlayer
 - deletesymbol
-- getartboard
+- adobe illustrator update a path item
+- adobe illustrator get a swatch
+- adobe illustrator update a text frame
+- adobe illustrator get a text frame
+- getswatch
+- adobe illustrator list layers in a document
+- gettextframe
+- adobe
+- savedocument
 slug: adobe-illustrator-capability
 source_filename: adobe-illustrator-capability.yaml
 source_heading: Capability Spec

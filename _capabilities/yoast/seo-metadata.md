@@ -29,34 +29,34 @@ personas: []
 provider_name: Yoast
 provider_slug: yoast
 search_terms:
-- get full seo head metadata for a url including schema.org, og, and twitter card
-- get seo head
-- get a single wordpress post with full seo metadata
-- wordpress
-- get post with seo
-- wordpress pages with yoast seo data
-- single page with seo data
-- get a wordpress page with full seo metadata including canonical, robots, and structured data
-- schema
-- retrieve full seo metadata for any url including meta tags, schema.org, open graph, and twitter card data
-- get a wordpress post with full seo metadata including canonical, robots, and structured data
-- headless cms
-- list wordpress pages with their complete yoast seo metadata
-- content audit
-- content optimization
-- list posts with seo
-- list pages with seo
-- wordpress posts with yoast seo data
-- list all wordpress posts with seo metadata
-- single post with seo data
-- list wordpress posts with their complete yoast seo metadata
 - seo
-- metadata
-- retrieve seo metadata for any url
-- get a single wordpress page with full seo metadata
-- list all wordpress pages with seo metadata
-- yoast
+- list wordpress posts with their complete yoast seo metadata
+- list all wordpress posts with seo metadata
+- get a wordpress page with full seo metadata including canonical, robots, and structured data
+- content audit
 - get page with seo
+- wordpress pages with yoast seo data
+- metadata
+- list posts with seo
+- list all wordpress pages with seo metadata
+- get post with seo
+- get a wordpress post with full seo metadata including canonical, robots, and structured data
+- get full seo head metadata for a url including schema.org, og, and twitter card
+- retrieve full seo metadata for any url including meta tags, schema.org, open graph, and twitter card data
+- list pages with seo
+- get a single wordpress page with full seo metadata
+- wordpress posts with yoast seo data
+- get seo head
+- single post with seo data
+- single page with seo data
+- wordpress
+- list wordpress pages with their complete yoast seo metadata
+- get a single wordpress post with full seo metadata
+- retrieve seo metadata for any url
+- yoast
+- headless cms
+- content optimization
+- schema
 slug: seo-metadata
 source_filename: seo-metadata.yaml
 source_heading: Capability Spec

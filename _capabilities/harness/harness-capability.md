@@ -26,20 +26,20 @@ provider_name: Harness
 provider_slug: harness
 search_terms:
 - gitops
-- executepipeline
 - software delivery
-- lifecycle
-- harness
-- harness list projects
-- harness execute pipeline
 - api
 - harness list pipelines
-- internal developer portal
-- listpipelines
-- listprojects
-- harness list organizations
 - devops
+- harness execute pipeline
+- listprojects
+- executepipeline
+- harness list projects
+- lifecycle
+- harness list organizations
+- internal developer portal
 - listorganizations
+- harness
+- listpipelines
 slug: harness-capability
 source_filename: harness-capability.yaml
 source_heading: Capability Spec

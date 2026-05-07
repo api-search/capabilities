@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- healthcare
-- upload wound image
-- api integration
 - governance
-- spec-driven integration
-- wound care
-- ai
-- sandbox
-- mcp
-- capabilities
 - get wound assessment
+- upload wound image
+- spec-driven integration
+- ai
+- capabilities
+- wound care
+- sandbox
+- api integration
+- healthcare
+- mcp
+- naftiko
 slug: halmstad-molnlycke-avenga-wound-care-sandbox
 source_filename: halmstad-molnlycke-avenga-wound-care-sandbox.yaml
 source_heading: Capability Spec

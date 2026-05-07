@@ -37,37 +37,37 @@ personas: []
 provider_name: Workday Business Processes
 provider_slug: workday-business-processes
 search_terms:
-- list inbox items
-- list workday business process instances with status and progress tracking
-- deny a workday business process inbox item to reject the workflow step
-- cancel a running business process instance with a reason
-- process instances
-- deny inbox item
-- cancel process instance
-- approve inbox item
 - list workday business process type definitions available for initiation
-- get process instance
+- process instances
+- approvals
+- approve inbox item
 - business process definitions
-- initiate process
-- list process definitions
+- start a new process
 - list all steps in a business process instance with completion status
+- list process definitions
+- workday
+- get a process instance
+- deny a workday business process inbox item to reject the workflow step
+- list workday inbox items pending action for a user or worker
+- approve a workday business process inbox item to advance the workflow
+- hcm
+- get the current status, steps, and progress of a business process instance
+- inbox items
+- get process instance
 - list process instances
 - enterprise
-- get the current status, steps, and progress of a business process instance
-- get a specific workday business process definition with step details
-- workday
-- initiate a new workday business process for hire, termination, or other workflow
-- get a process instance
-- start a new process
-- hcm
-- workflows
-- approve a workday business process inbox item to advance the workflow
-- approvals
-- business processes
+- initiate process
+- list inbox items
 - get process definition
-- inbox items
-- list workday inbox items pending action for a user or worker
+- business processes
+- workflows
+- cancel process instance
 - list process steps
+- initiate a new workday business process for hire, termination, or other workflow
+- deny inbox item
+- get a specific workday business process definition with step details
+- list workday business process instances with status and progress tracking
+- cancel a running business process instance with a reason
 slug: workflow-management
 source_filename: workflow-management.yaml
 source_heading: Capability Spec

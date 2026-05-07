@@ -25,46 +25,46 @@ personas: []
 provider_name: Oracle GoldenGate
 provider_slug: oracle-goldengate
 search_terms:
-- get comparison job statistics
-- data integration
-- create a new comparison job
-- list comparison jobs
-- list jobs
-- create job
-- list compare groups
-- get server info
-- comparison jobs
-- get veridata server information
-- repair out-of-sync data identified by a comparison job
-- repair job
-- data verification
-- real-time replication
-- compliance
-- data quality
-- compare groups
-- list replication process performance metrics
-- list compare groups for data verification
-- get job statistics
-- get goldengate process performance metrics for monitoring replication health
-- enterprise
-- execute a comparison job
-- get out of sync data
-- create a new veridata database connection
-- database
-- get details of out-of-sync data
-- run job
-- list veridata database connections
-- list process metrics
-- create a new compare group
-- list connections
-- oracle goldengate
-- database connections for verification
-- data synchronization
-- list groups
-- cdc
 - create group
-- create connection
+- create a new comparison job
+- create job
+- database connections for verification
+- get details of out-of-sync data
+- list connections
 - replication process metrics
+- oracle goldengate
+- execute a comparison job
+- list groups
+- get out of sync data
+- get server info
+- get goldengate process performance metrics for monitoring replication health
+- cdc
+- data quality
+- get job statistics
+- compare groups
+- compliance
+- list compare groups for data verification
+- get comparison job statistics
+- create connection
+- create a new veridata database connection
+- run job
+- comparison jobs
+- data synchronization
+- list comparison jobs
+- repair out-of-sync data identified by a comparison job
+- enterprise
+- list replication process performance metrics
+- list compare groups
+- database
+- list jobs
+- repair job
+- get veridata server information
+- list process metrics
+- real-time replication
+- data integration
+- data verification
+- create a new compare group
+- list veridata database connections
 slug: data-verification
 source_filename: data-verification.yaml
 source_heading: Capability Spec

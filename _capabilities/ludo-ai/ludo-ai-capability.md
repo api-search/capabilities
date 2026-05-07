@@ -89,53 +89,53 @@ personas: []
 provider_name: Ludo.ai
 provider_slug: ludo-ai
 search_terms:
-- ludo.ai retrieve generated video results
-- getaudioresults
-- ludo.ai generate a new pose for an existing sprite
-- createsoundeffect
-- ludo.ai convert a 2d image to a 3d model
-- ludo.ai generate a game sound effect
-- getvideoresults
-- createspeechpreset
-- getimageresults
-- getspriteresults
-- game development
-- editimage
-- ludo.ai generate a unique character voice
-- transfermotion
-- ludo.ai generate speech using a preset voice
-- game design
-- ai
-- ludo.ai retrieve generated audio results
-- ludo.ai generate background music
-- ludo.ai edit an existing image
-- ludo.ai clone a voice from an audio sample
-- ludo.ai retrieve generated 3d model results
-- removeimagebackground
-- ludo
-- artificial intelligence
-- get3dmodelresults
-- ludo.ai transfer motion onto a static sprite
-- generatepose
-- ludo.ai generate a short video from an image
-- api
-- createvideo
-- ludo.ai create animated spritesheets from static images
-- ludo.ai generate a game-ready image
-- listanimationpresets
-- ludo.ai list available animation presets
 - createmusic
-- createvoice
-- animatesprite
-- create3dmodel
-- ludo.ai retrieve generated spritesheet results
-- createimage
-- generatewithstyle
-- createspeech
-- ludo.ai retrieve generated image results
-- ludo.ai remove background from an image
-- asset generation
+- getspriteresults
+- ludo.ai generate a unique character voice
+- ludo.ai transfer motion onto a static sprite
+- getaudioresults
 - ludo.ai generate an image matching a reference style
+- create3dmodel
+- ludo.ai clone a voice from an audio sample
+- createvoice
+- ludo.ai generate background music
+- ai
+- api
+- game development
+- listanimationpresets
+- getvideoresults
+- ludo.ai generate speech using a preset voice
+- createimage
+- ludo.ai generate a game sound effect
+- ludo.ai remove background from an image
+- getimageresults
+- createsoundeffect
+- artificial intelligence
+- createspeech
+- game design
+- removeimagebackground
+- ludo.ai edit an existing image
+- asset generation
+- generatewithstyle
+- ludo.ai retrieve generated image results
+- transfermotion
+- ludo.ai generate a game-ready image
+- ludo.ai list available animation presets
+- ludo.ai retrieve generated spritesheet results
+- ludo.ai generate a new pose for an existing sprite
+- ludo.ai retrieve generated 3d model results
+- createspeechpreset
+- ludo.ai retrieve generated video results
+- ludo.ai generate a short video from an image
+- editimage
+- ludo.ai retrieve generated audio results
+- ludo
+- animatesprite
+- generatepose
+- ludo.ai convert a 2d image to a 3d model
+- createvideo
+- get3dmodelresults
+- ludo.ai create animated spritesheets from static images
 slug: ludo-ai-capability
 source_filename: ludo-ai-capability.yaml
 source_heading: Capability Spec

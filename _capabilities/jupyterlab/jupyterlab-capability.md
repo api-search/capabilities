@@ -57,38 +57,38 @@ personas: []
 provider_name: JupyterLab
 provider_slug: jupyterlab
 search_terms:
-- getlistings
-- jupyterlab update setting
-- listworkspaces
-- updatesetting
-- jupyterlab get extension listings
-- jupyterlab get setting
-- getworkspace
-- notebooks
-- listsettings
-- deleteworkspace
-- ide
-- listtranslations
-- jupyterlab get translation bundle
-- gettranslation
-- jupyterlab delete workspace
-- getsetting
 - jupyterlab list workspaces
+- jupyterlab delete workspace
+- jupyterlab update setting
+- listtranslations
+- listworkspaces
+- updateworkspace
 - api
 - jupyterlab update workspace
-- interactive computing
 - jupyterlab get workspace
+- jupyterlab list all settings
+- listsettings
+- gettranslation
+- jupyterlab
+- ide
+- jupyterlab get setting
+- getlistings
+- jupyterlab list translations
+- data science
 - python
 - getthemeasset
-- jupyterlab
-- jupyterlab get theme asset
-- jupyterlab list translations
-- extensions
-- jupyterlab list all settings
+- notebooks
 - jupyterlab get licenses report
-- updateworkspace
-- data science
+- interactive computing
+- getsetting
 - getlicenses
+- extensions
+- getworkspace
+- deleteworkspace
+- jupyterlab get translation bundle
+- updatesetting
+- jupyterlab get extension listings
+- jupyterlab get theme asset
 slug: jupyterlab-capability
 source_filename: jupyterlab-capability.yaml
 source_heading: Capability Spec

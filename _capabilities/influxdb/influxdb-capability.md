@@ -249,131 +249,131 @@ personas: []
 provider_name: InfluxDB
 provider_slug: influxdb
 search_terms:
-- getbucketsidowners
-- getchecksidlabels
-- add a label to a check
-- getroutes
-- analytics
-- create an authorization
-- deletebucketsidownersid
-- patchdashboardsidcellsidview
-- add a label to a bucket
-- update an api token to be active or inactive
-- getmeasurementschema
-- remove a member from a bucket
-- list all checks
-- delete label from a check
-- api
-- getbucketsidlabels
-- getbucketsidmembers
-- getdashboardsidcellsidview
-- create a bucket
-- list all labels for a dashboard
-- postdbrp
-- updatemeasurementschema
-- deletebucketsid
-- update a bucket
-- influxdb
-- remove an owner from a bucket
 - createcheck
-- getchecks
-- patchauthorizationsid
-- postdashboardsidcells
-- postbuckets
-- add new check
-- add an owner to a dashboard
-- list buckets
-- update a dashboard
-- list all top level routes
-- putchecksid
-- update the non-positional information related to a cell
-- update a database retention policy mapping
-- getauthorizationsid
-- delete data
-- database
-- patchdbrpid
-- getbuckets
-- update a measurement schema
-- postchecksidlabels
-- list all dashboard owners
-- deleteauthorizationsid
-- getauthorizations
-- postauthorizations
-- getdashboardsidowners
-- getchecksid
-- createmeasurementschema
-- real-time
-- patchdashboardsidcellsid
-- delete a check
-- list database retention policy mappings
-- list all labels for a bucket
-- postbucketsidowners
-- retrieve a dashboard
-- postdashboardsidmembers
-- getdbrpsid
-- deletebucketsidmembersid
-- delete a dashboard
-- replace cells in a dashboard
-- getmeasurementschemas
-- retrieve a check
-- postdashboardsidlabels
-- getdashboards
-- patchbucketsid
-- add an owner to a bucket
-- list measurement schemas of a bucket
-- update the view for a cell
-- getdashboardsidmembers
-- getdbrps
 - delete a label from a bucket
-- time series
-- getbucketsid
-- getdashboardsidlabels
-- remove an owner from a dashboard
-- list all dashboard members
-- list dashboards
-- patchchecksid
-- create a measurement schema for a bucket
-- deletedashboardsidmembersid
-- add a member to a dashboard
-- deletechecksidlabelsid
-- retrieve a measurement schema
-- deletedashboardsid
-- deletechecksid
-- retrieve a check query
-- add a database retention policy mapping
-- patchdashboardsid
-- list all owners of a bucket
-- retrieve the view for a cell
-- remove a member from a dashboard
-- deletedashboardsidlabelsid
-- delete an authorization
-- getdashboardsid
-- retrieve an authorization
-- deletedashboardsidcellsid
-- list authorizations
-- postdashboardsidowners
-- delete a dashboard cell
-- delete a database retention policy
-- retrieve a database retention policy mapping
-- create a dashboard cell
-- retrieve a bucket
-- create a dashboard
-- list all users with member privileges for a bucket
-- postdelete
-- getchecksidquery
-- delete a bucket
-- postbucketsidmembers
-- putdashboardsidcells
-- deletedbrpid
-- deletebucketsidlabelsid
-- list all labels for a check
+- updatemeasurementschema
+- api
 - add a member to a bucket
-- postbucketsidlabels
-- delete a label from a dashboard
+- list all labels for a check
+- add a member to a dashboard
+- delete a bucket
+- deletedashboardsidlabelsid
+- create an authorization
+- getdashboardsidlabels
+- update a bucket
+- getbucketsid
+- postdbrp
 - deletedashboardsidownersid
+- postauthorizations
+- create a measurement schema for a bucket
+- getdashboardsidcellsidview
+- retrieve a measurement schema
+- deletechecksidlabelsid
+- deletedashboardsidmembersid
+- postdelete
+- putchecksid
+- patchdashboardsidcellsid
+- list authorizations
+- retrieve a check
+- patchdashboardsidcellsidview
+- patchbucketsid
+- patchdbrpid
+- createmeasurementschema
+- deletedashboardsidcellsid
+- deletebucketsidlabelsid
+- getchecksidquery
+- retrieve a bucket
+- remove an owner from a dashboard
+- retrieve a check query
+- postbuckets
+- retrieve a dashboard
+- getchecksidlabels
 - postdashboards
-- add a label to a dashboard
+- postdashboardsidcells
+- getbucketsidmembers
+- influxdb
+- delete a database retention policy
+- postbucketsidmembers
+- postdashboardsidlabels
+- patchauthorizationsid
+- delete a dashboard cell
+- add an owner to a dashboard
+- add an owner to a bucket
+- postchecksidlabels
+- deletebucketsid
+- real-time
+- getmeasurementschema
+- deletedbrpid
+- getmeasurementschemas
+- patchchecksid
+- update the view for a cell
+- putdashboardsidcells
+- list measurement schemas of a bucket
 - update a check
+- list database retention policy mappings
+- add a database retention policy mapping
+- update a dashboard
+- delete a check
+- retrieve an authorization
+- getdashboardsid
+- getdbrps
+- remove an owner from a bucket
+- list all users with member privileges for a bucket
+- update an api token to be active or inactive
+- list all dashboard owners
+- getbucketsidlabels
+- list all checks
+- update a database retention policy mapping
+- replace cells in a dashboard
+- getbucketsidowners
+- getdashboards
+- deleteauthorizationsid
+- database
+- create a dashboard cell
+- getdbrpsid
+- deletebucketsidownersid
+- create a dashboard
+- getchecksid
+- list all top level routes
+- analytics
+- postbucketsidowners
+- list buckets
+- add a label to a dashboard
+- deletedashboardsid
+- deletebucketsidmembersid
+- retrieve the view for a cell
+- add new check
+- delete a label from a dashboard
+- getchecks
+- patchdashboardsid
+- retrieve a database retention policy mapping
+- getbuckets
+- update the non-positional information related to a cell
+- postbucketsidlabels
+- delete a dashboard
+- postdashboardsidmembers
+- delete label from a check
+- remove a member from a dashboard
+- list all labels for a dashboard
+- getdashboardsidmembers
+- getauthorizationsid
+- deletechecksid
+- list all labels for a bucket
+- add a label to a bucket
+- list all owners of a bucket
+- getdashboardsidowners
+- create a bucket
+- getauthorizations
+- remove a member from a bucket
+- delete an authorization
+- add a label to a check
+- list dashboards
+- postdashboardsidowners
+- getroutes
+- update a measurement schema
+- list all dashboard members
+- delete data
+- time series
 slug: influxdb-capability
 source_filename: influxdb-capability.yaml
 source_heading: Capability Spec

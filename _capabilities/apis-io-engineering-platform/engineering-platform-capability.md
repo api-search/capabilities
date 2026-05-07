@@ -249,130 +249,130 @@ personas: []
 provider_name: APIs.io Engineering Platform
 provider_slug: apis-io-engineering-platform
 search_terms:
-- getdocumentationversion
-- creates a requestvalidator of a given restapi.
-- createusageplankey
-- changes information about a deployment resource.
-- gets all the usage plans of the caller's account.
-- updatedomainname
-- deletedocumentationversion
-- deletebasepathmapping
-- getapikey
-- updates an existing authorizer resource.
-- creates a new restapi resource.
-- getgatewayresponse
-- getusageplans
+- updates a documentation part.
+- updatedocumentationpart
+- getdocumentationparts
 - api
-- deletes the apikey resource.
-- changes information about the domainname resource.
-- represents a domain name that is contained in a simpler, more intuitive url that can be called.
+- updateauthorizer
+- describe a basepathmapping resource.
+- updateclientcertificate
+- getusageplankeys
+- imports documentation parts
+- gets the requestvalidators collection of a given restapi.
 - deletedeployment
+- clears any customization of a gatewayresponse of a specified response type on the given restapi and resets it with the default settings.
+- getgatewayresponse
+- apis.io
+- deletes a documentation part
+- deletes the clientcertificate resource.
+- gets a gatewayresponse of a specified response type on the given restapi.
+- describe an existing authorizers resource.
+- creates a requestvalidator of a given restapi.
+- getapikey
+- changes information about a deployment resource.
+- getdocumentationversion
+- gets information about the current apikey resource.
+- gets information about the current apikeys resource.
+- getauthorizers
+- createusageplankey
+- gets a documentation version.
+- lists the restapis resources for your collection.
+- changes information about the domainname resource.
+- creates a usage plan key for adding an existing api key to a usage plan.
+- creates a resource resource.
+- getrequestvalidators
+- creates a customization of a gatewayresponse of a specified response type and status code on the given restapi.
+- deletebasepathmapping
+- updatedocumentationversion
+- deleteclientcertificate
+- deletedocumentationpart
+- updates a gatewayresponse of a specified response type on the given restapi.
+- getvpclinks
+- getbasepathmapping
+- updatedeployment
+- deletedocumentationversion
+- adds a new authorizer resource to an existing restapi resource.
+- gets documentation parts.
+- gets information about a deployments collection.
+- testinvokeauthorizer
+- createdomainname
+- getdeployment
+- gets all the usage plan keys representing the api keys added to a specified usage plan.
 - createdocumentationversion
 - updateapikey
-- getrestapis
-- gets information about the current apikeys resource.
-- gets a documentation part.
-- deletes the domainname resource.
-- clears any customization of a gatewayresponse of a specified response type on the given restapi and resets it with the default settings.
-- deleteapikey
-- createdocumentationpart
-- getdocumentationversions
-- updateclientcertificate
-- creates a documentation part.
+- gets all the usage plans of the caller's account.
 - gets the vpclinks collection under the caller's account in a selected region.
-- deletes a documentation part
-- testinvokeauthorizer
-- changes information about an apikey resource.
-- creates a new domain name.
-- creates a usage plan with the throttle and quota limits, as well as the associated api stages, specified in the payload.
-- represents a collection of domainname resources.
 - describes existing models defined for a restapi resource.
-- deletes an existing authorizer resource.
-- creates a deployment resource, which makes a specified restapi callable over the internet.
-- updates a documentation part.
-- getstages
-- deletes a documentation version.
-- creates a new basepathmapping resource.
-- getdeployments
-- adds a new authorizer resource to an existing restapi resource.
-- createauthorizer
-- updatedeployment
-- gets all the usage plan keys representing the api keys added to a specified usage plan.
-- create an apikey resource.
-- gets a documentation version.
-- gets documentation parts.
-- importdocumentationparts
-- gets a gatewayresponse of a specified response type on the given restapi.
-- simulate the execution of an authorizer in your restapi with headers, parameters, and an incoming request body.
-- adds a new model resource to an existing restapi resource.
-- changes information about an clientcertificate resource.
-- apis.io
-- createrequestvalidator
-- getdocumentationpart
-- creates a documentation version
-- lists the restapis resources for your collection.
-- creates a resource resource.
-- deleteauthorizer
-- createdomainname
-- getvpclinks
-- updates a documentation version.
-- gets information about the current clientcertificate resource.
-- deletes a deployment resource. deleting a deployment will only succeed if there are no stage resources associated with it.
-- createmodel
-- updatebasepathmapping
-- deletedomainname
-- updategatewayresponse
 - createvpclink
-- getclientcertificate
-- deletegatewayresponse
-- updateauthorizer
-- getrequestvalidators
-- gets information about a deployments collection.
-- createusageplan
-- updatedocumentationpart
-- createstage
-- getapikeys
-- getmodels
-- getauthorizer
-- getdocumentationparts
-- gets information about the current apikey resource.
-- deletes the basepathmapping resource.
-- deletes the clientcertificate resource.
-- createresource
-- getusageplankeys
-- getbasepathmapping
-- gets documentation versions.
-- represents a delete integration.
-- imports documentation parts
-- engineering
-- represents a collection of basepathmapping resources.
-- getdomainnames
-- describe an existing authorizers resource.
-- getbasepathmappings
-- creates a vpc link, under the caller's account in a selected region, in an asynchronous operation that typically takes 2-4 minutes to complete and become operational. the caller must have permissions to create and update vpc endpoint servic
-- describe a basepathmapping resource.
-- updates a gatewayresponse of a specified response type on the given restapi.
-- changes information about the basepathmapping resource.
-- deleteintegration
-- createbasepathmapping
-- updatedocumentationversion
-- getdomainname
-- createdeployment
-- deleteclientcertificate
-- creates a usage plan key for adding an existing api key to a usage plan.
 - gets information about a deployment resource.
-- describe an existing authorizer resource.
-- deletedocumentationpart
-- createrestapi
-- creates a customization of a gatewayresponse of a specified response type and status code on the given restapi.
-- putgatewayresponse
+- updatebasepathmapping
+- deletes a deployment resource. deleting a deployment will only succeed if there are no stage resources associated with it.
+- deleteintegration
+- getauthorizer
+- changes information about an apikey resource.
 - platform
-- creates a new stage resource that references a pre-existing deployment for the api.
-- getdeployment
-- gets the requestvalidators collection of a given restapi.
+- deleteapikey
+- deleteauthorizer
+- creates a documentation part.
+- getdeployments
+- updates an existing authorizer resource.
+- createdocumentationpart
+- deletes an existing authorizer resource.
+- deletes a documentation version.
+- gets information about the current clientcertificate resource.
+- deletegatewayresponse
+- getdocumentationversions
+- deletedomainname
+- creates a new restapi resource.
+- gets a documentation part.
+- deletes the apikey resource.
+- deletes the basepathmapping resource.
+- getstages
 - createapikey
+- getusageplans
+- simulate the execution of an authorizer in your restapi with headers, parameters, and an incoming request body.
+- creates a deployment resource, which makes a specified restapi callable over the internet.
+- createbasepathmapping
+- creates a vpc link, under the caller's account in a selected region, in an asynchronous operation that typically takes 2-4 minutes to complete and become operational. the caller must have permissions to create and update vpc endpoint servic
+- represents a collection of basepathmapping resources.
+- getdocumentationpart
+- engineering
+- changes information about the basepathmapping resource.
+- getdomainname
+- createusageplan
+- adds a new model resource to an existing restapi resource.
+- updategatewayresponse
+- updates a documentation version.
+- getmodels
+- describe an existing authorizer resource.
+- updatedomainname
+- deletes the domainname resource.
+- creates a new stage resource that references a pre-existing deployment for the api.
+- getdomainnames
+- creates a new domain name.
+- importdocumentationparts
+- represents a delete integration.
+- createrequestvalidator
+- create an apikey resource.
+- createmodel
+- creates a usage plan with the throttle and quota limits, as well as the associated api stages, specified in the payload.
+- createresource
 - gets information about one or more stage resources.
-- getauthorizers
+- getclientcertificate
+- createauthorizer
+- createstage
+- creates a documentation version
+- creates a new basepathmapping resource.
+- createdeployment
+- putgatewayresponse
+- getrestapis
+- changes information about an clientcertificate resource.
+- getapikeys
+- createrestapi
+- getbasepathmappings
+- represents a domain name that is contained in a simpler, more intuitive url that can be called.
+- gets documentation versions.
+- represents a collection of domainname resources.
 slug: engineering-platform-capability
 source_filename: engineering-platform-capability.yaml
 source_heading: Capability Spec

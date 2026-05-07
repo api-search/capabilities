@@ -29,39 +29,39 @@ personas: []
 provider_name: Adobe Launch
 provider_slug: adobe-launch
 search_terms:
-- list event forwarding rules for a property
-- create event forwarding rule
-- adobe launch
-- send batch events to edge network
-- send batch events
-- list secrets for a property
-- tag management
 - event forwarding
-- list server-side event forwarding properties
-- data collection
-- list event forwarding rules
-- secrets for event forwarding destinations
-- list event forwarding properties
-- end a media tracking session
-- create a secret for an event forwarding destination
-- send interactive event
+- send batch events to edge network
 - create a new event forwarding property
-- create secret
 - create event forwarding property
-- list secrets for authenticating with forwarding destinations
-- event forwarding rules
-- edge network data ingestion
-- send an interactive event to edge network
-- marketing technology
-- server-side event forwarding properties
-- create a new event forwarding rule
-- send an interactive event to adobe edge network
-- send batch events to adobe edge network
-- end media session
-- list secrets
-- edge network
 - start a media tracking session
+- event forwarding rules
+- list event forwarding rules
+- create secret
+- send interactive event
+- list secrets
+- data collection
+- send batch events to adobe edge network
+- create a secret for an event forwarding destination
+- create a new event forwarding rule
 - start media session
+- tag management
+- list secrets for authenticating with forwarding destinations
+- end a media tracking session
+- server-side event forwarding properties
+- edge network
+- adobe launch
+- list event forwarding properties
+- create event forwarding rule
+- send an interactive event to adobe edge network
+- end media session
+- list secrets for a property
+- list event forwarding rules for a property
+- send batch events
+- secrets for event forwarding destinations
+- send an interactive event to edge network
+- list server-side event forwarding properties
+- marketing technology
+- edge network data ingestion
 slug: data-collection-pipeline
 source_filename: data-collection-pipeline.yaml
 source_heading: Capability Spec

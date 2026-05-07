@@ -41,48 +41,48 @@ personas: []
 provider_name: TechRepublic
 provider_slug: techrepublic
 search_terms:
+- get a specific techrepublic topic category by id.
+- techrepublic technology articles and news posts.
+- list techrepublic topic categories.
+- search tags
+- get details about a specific techrepublic topic category.
+- list tags
+- techrepublic media assets and images.
+- enterprise it
+- list and search techrepublic technology articles.
+- get article
+- get profile information for a specific techrepublic author.
+- publishing
+- list all techrepublic topic categories for content navigation.
+- techrepublic authors and contributors.
+- list techrepublic authors and contributors.
+- list media
+- techrepublic
+- a specific techrepublic author profile.
+- retrieve the full content of a specific techrepublic article by id.
+- get a specific techrepublic article by id.
+- list techrepublic content tags.
+- search techrepublic content tags for topic discovery.
+- technology news
+- list authors
+- content
+- list techrepublic authors.
+- techrepublic content tags.
+- search articles
+- list articles
+- list topics
 - search techrepublic articles by keyword, topic, date range, or author.
 - wordpress
-- techrepublic topic categories.
-- retrieve the full content of a specific techrepublic article by id.
-- list media
-- list techrepublic media assets.
-- list topics
-- list articles
-- a specific techrepublic topic category.
 - content discovery
-- get topic
-- content
-- enterprise it
-- techrepublic content tags.
-- publishing
-- technology news
-- list all techrepublic topic categories for content navigation.
-- techrepublic technology articles and news posts.
-- get a specific techrepublic topic category by id.
-- list authors
-- get article
-- search articles
-- list techrepublic topic categories.
-- list techrepublic media assets including images and attachments.
-- list techrepublic authors and contributors.
-- list and search techrepublic technology articles.
-- list techrepublic content tags.
-- list tags
-- get details about a specific techrepublic topic category.
 - media
-- search techrepublic content tags for topic discovery.
-- list techrepublic authors.
-- techrepublic media assets and images.
-- techrepublic authors and contributors.
-- get a specific techrepublic author by id.
-- a specific techrepublic author profile.
 - get author
-- search tags
-- get profile information for a specific techrepublic author.
+- a specific techrepublic topic category.
 - a specific techrepublic article.
-- techrepublic
-- get a specific techrepublic article by id.
+- get topic
+- techrepublic topic categories.
+- get a specific techrepublic author by id.
+- list techrepublic media assets.
+- list techrepublic media assets including images and attachments.
 slug: content-discovery
 source_filename: content-discovery.yaml
 source_heading: Capability Spec

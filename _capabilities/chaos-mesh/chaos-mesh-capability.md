@@ -217,123 +217,123 @@ personas: []
 provider_name: Chaos Mesh
 provider_slug: chaos-mesh
 search_terms:
-- getpodlabels
-- reliability
-- getarchivedworkflow
-- chaos mesh list physical machines matching a selector
-- batchdeletearchivedschedules
-- chaos mesh pause a chaos experiment
-- chaos mesh delete a schedule
-- listarchivedworkflows
-- chaos mesh get namespaces available for chaos injection
-- getdashboardconfig
-- chaos mesh get workflow details
-- deleteschedule
-- parseworkflowhttptask
-- deleteexperiment
-- listnamespaces
-- listexperiments
-- chaos engineering
-- deletearchivedexperiment
+- listarchivedexperiments
+- chaos mesh list chaos schedules
+- createstatuschecktemplate
+- chaos mesh delete archived workflows
+- listpods
+- chaos mesh get a chaos experiment
 - api
+- listschedules
 - createworkflow
-- observability
-- deletestatuschecktemplate
-- chaos mesh update a status check template
-- pauseexperiment
-- chaos mesh get an archived chaos experiment
-- chaos mesh get all kubernetes namespaces
-- chaos mesh delete an archived schedule
-- getexperiment
-- getexperimentsstate
-- validateworkflowhttptask
-- chaos mesh get pod annotations
-- getevent
-- chaos mesh list pods matching a selector
-- mesh
-- resilience
+- chaos mesh list status check templates
+- chaos mesh get an event
 - listworkflowevents
-- chaos mesh list chaos experiments
-- chaos mesh get a schedule
-- chaos mesh get the status of all experiments
+- chaos mesh render an http workflow task
+- batchdeletearchivedschedules
+- getevent
+- getpodannotations
+- listarchivedschedules
+- chaos mesh get archived schedule experiments
+- chaos mesh get an archived workflow
+- chaos mesh delete archived schedules
+- chaos mesh delete a chaos experiment
+- chaos mesh list workflows
+- deleteexperiment
+- chaos mesh batch delete schedules
+- cncf
+- chaos mesh batch delete chaos experiments
+- chaos mesh list chaos events
+- listevents
+- getarchivedworkflow
+- renderworkflowhttptask
+- chaos mesh create a new schedule
+- chaos mesh create a status check template
+- validateworkflowhttptask
+- listchaoskinds
+- batchdeleteschedules
+- getexperiment
+- chaos mesh list physical machines matching a selector
+- chaos mesh delete a schedule
+- chaos mesh get pod annotations
+- chaos mesh delete a status check template
+- startschedule
+- cloud native
+- chaos engineering
+- chaos mesh pause a chaos experiment
 - chaos mesh delete archived experiments
-- chaos mesh validate an http workflow task
-- chaos mesh delete an archived workflow
 - chaos mesh get a status check template
-- getschedule
+- batchdeletearchivedexperiments
+- pauseschedule
+- chaos mesh get workflow details
+- chaos mesh delete a specific archived experiment
+- chaos mesh list pods matching a selector
+- chaos mesh parse an http workflow task
+- chaos mesh get namespaces available for chaos injection
+- chaos mesh update a status check template
+- chaos mesh get an archived chaos experiment
+- listphysicalmachines
+- createexperiment
+- getexperimentsstate
+- mesh
+- deletestatuschecktemplate
+- listnamespaces
 - chaos mesh delete a workflow
 - listworkflows
-- cloud native
-- kubernetes
-- open source
-- chaos mesh get dashboard configuration
-- chaos mesh get archived workflows
-- getpodannotations
-- cncf
-- batchdeleteexperiments
-- listschedules
-- deletearchivedschedule
-- getrbacconfig
-- chaos mesh delete a specific archived experiment
-- chaos mesh create a status check template
-- createstatuschecktemplate
-- startexperiment
-- chaos mesh batch delete chaos experiments
-- chaos mesh get archived schedule experiments
-- startschedule
-- chaos mesh delete a chaos experiment
-- listchaoskinds
-- listevents
-- chaos mesh get an archived workflow
-- batchdeletearchivedworkflows
-- chaos mesh start a chaos experiment
-- chaos mesh delete archived workflows
-- fault injection
-- chaos mesh list status check templates
-- listpods
-- chaos mesh get an event
-- chaos mesh get rbac configuration
-- chaos mesh list chaos events
-- pauseschedule
 - chaos mesh get pod labels
-- liststatuschecktemplates
-- chaos mesh create a new schedule
-- listchaosavailablenamespaces
-- chaos mesh create a new workflow
-- chaos mesh list chaos schedules
-- chaos mesh delete a status check template
-- getworkflow
 - getarchivedexperiment
-- testing
-- chaos mesh delete archived schedules
-- chaos mesh pause a schedule
-- getarchivedschedule
-- listarchivedexperiments
-- getstatuschecktemplate
-- deletearchivedworkflow
-- chaos mesh batch delete schedules
-- deleteworkflow
-- chaos mesh list events for a workflow
-- chaos mesh render an http workflow task
-- chaos mesh start a schedule
-- listarchivedschedules
-- createexperiment
-- chaos
-- chaos mesh get a chaos experiment
-- createschedule
+- chaos mesh validate an http workflow task
+- chaos mesh get a schedule
+- chaos mesh list chaos experiments
+- fault injection
+- chaos mesh get rbac configuration
+- chaos mesh get dashboard configuration
 - updatestatuschecktemplate
-- chaos mesh update a workflow
-- chaos mesh get all available chaos kinds
-- listphysicalmachines
+- batchdeleteexperiments
+- deleteschedule
+- chaos mesh start a chaos experiment
+- liststatuschecktemplates
+- kubernetes
+- observability
+- getpodlabels
+- createschedule
+- pauseexperiment
+- chaos mesh delete an archived workflow
+- listarchivedworkflows
+- getarchivedschedule
+- resilience
+- chaos mesh list events for a workflow
+- chaos mesh delete an archived schedule
+- reliability
 - chaos mesh get archived chaos experiments
-- chaos mesh get an archived schedule
-- batchdeletearchivedexperiments
-- chaos mesh list workflows
+- chaos mesh pause a schedule
+- getstatuschecktemplate
 - chaos mesh create a new chaos experiment
-- renderworkflowhttptask
-- chaos mesh parse an http workflow task
+- listexperiments
+- testing
+- chaos mesh get all kubernetes namespaces
+- deletearchivedworkflow
+- chaos
+- deleteworkflow
 - updateworkflow
-- batchdeleteschedules
+- open source
+- getschedule
+- chaos mesh get archived workflows
+- chaos mesh update a workflow
+- getworkflow
+- chaos mesh get all available chaos kinds
+- chaos mesh get an archived schedule
+- getrbacconfig
+- deletearchivedschedule
+- chaos mesh create a new workflow
+- listchaosavailablenamespaces
+- deletearchivedexperiment
+- startexperiment
+- getdashboardconfig
+- parseworkflowhttptask
+- chaos mesh start a schedule
+- batchdeletearchivedworkflows
+- chaos mesh get the status of all experiments
 slug: chaos-mesh-capability
 source_filename: chaos-mesh-capability.yaml
 source_heading: Capability Spec

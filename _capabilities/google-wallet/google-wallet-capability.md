@@ -49,35 +49,35 @@ personas: []
 provider_name: Google Wallet
 provider_slug: google-wallet
 search_terms:
-- google wallet insert generic class
-- google wallet insert generic object
-- google wallet insert event ticket class
-- google wallet list generic classes
-- google wallet list issuers
-- passes
-- updategenericclass
-- insertgenericclass
-- google wallet get generic object
-- google
-- loyalty cards
-- inserteventticketclass
-- listgenericclasses
-- getgenericclass
-- api
-- mobile payments
-- google wallet update generic class
-- wallet
-- google wallet insert loyalty class
-- digital wallet
-- getgenericobject
-- google wallet insert jwt
 - insertgenericobject
-- insertloyaltyclass
-- insertjwt
-- google wallet get generic class
-- listissuers
 - tickets
+- getgenericclass
+- google wallet get generic object
+- wallet
+- listgenericclasses
+- mobile payments
+- digital wallet
+- api
+- inserteventticketclass
+- google
+- google wallet insert generic class
+- google wallet insert loyalty class
+- passes
+- google wallet list issuers
+- google wallet update generic class
+- getgenericobject
+- google wallet insert generic object
+- loyalty cards
+- google wallet insert event ticket class
+- google wallet get generic class
+- insertjwt
+- insertgenericclass
 - google wallet
+- google wallet list generic classes
+- listissuers
+- google wallet insert jwt
+- updategenericclass
+- insertloyaltyclass
 slug: google-wallet-capability
 source_filename: google-wallet-capability.yaml
 source_heading: Capability Spec

@@ -21,27 +21,27 @@ personas: []
 provider_name: Tyson Foods
 provider_slug: tyson-foods
 search_terms:
-- retrieve all purchase orders for the trading partner
 - logistics
-- purchase order management
-- retrieve shipment tracking information for tyson foods orders
-- retrieve purchase orders from the tyson foods b2b trading partner portal
-- get a specific purchase order
-- get shipments
-- b2b
-- edi
-- supply chain
-- retrieve shipment tracking information
-- single order detail
-- get the details of a specific tyson foods purchase order
-- food
-- shipment tracking
-- tyson foods
-- b2b integration
-- order management
 - get orders
+- food
 - get order by id
+- retrieve shipment tracking information
+- retrieve purchase orders from the tyson foods b2b trading partner portal
+- b2b
+- supply chain
+- order management
+- retrieve all purchase orders for the trading partner
+- edi
+- get the details of a specific tyson foods purchase order
 - fortune 100
+- b2b integration
+- single order detail
+- shipment tracking
+- get shipments
+- purchase order management
+- tyson foods
+- retrieve shipment tracking information for tyson foods orders
+- get a specific purchase order
 slug: supply-chain-integration
 source_filename: supply-chain-integration.yaml
 source_heading: Capability Spec

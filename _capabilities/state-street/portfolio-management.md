@@ -49,58 +49,58 @@ personas: []
 provider_name: State Street
 provider_slug: state-street
 search_terms:
-- etf fund information
-- get portfolio risk analytics
-- get comprehensive details for a specific state street alpha portfolio including total market value, benchmark, and custodian information.
-- risk analytics
-- get the current status of a specific etf creation or redemption order on state street fund connect.
-- get the current portfolio composition basket for an etf fund showing the in-kind securities and quantities required per creation unit.
-- list all accessible institutional portfolios
-- get etf order status
-- get risk
-- get portfolio performance and attribution
-- list portfolio positions
-- get portfolio performance
-- financial services
-- get etf basket
-- list etf funds
-- list etf funds on fund connect
-- list etf funds available for creation and redemption on state street fund connect.
-- cancel etf order
-- etf creation and redemption orders
-- submit etf order
-- get portfolio transaction history
-- list etf orders
-- investment management
-- portfolio positions and holdings
-- list portfolio transactions
-- get etf portfolio composition basket
-- get risk analytics for a portfolio including value at risk (var), tracking error, beta, duration, and factor exposures.
-- portfolio detail
-- submit an etf creation or redemption order through state street fund connect. specify the fund, order type (creation or redemption), and number of units.
-- get portfolio details
-- institutional
-- get portfolio
-- list etf creation and redemption orders submitted through fund connect, filterable by fund, status, and date range.
-- list positions
-- cancel a pending etf creation or redemption order on state street fund connect. only available for orders in pending status.
-- get current portfolio positions
-- etf portfolio baskets
-- get performance
-- portfolio transaction history
-- list all institutional investment portfolios accessible via state street alpha. returns portfolio names, types, base currencies, and current market values.
-- list portfolios
-- portfolio listing and management
-- submit etf creation or redemption order
-- etf
-- portfolio risk analytics
-- list transactions
-- portfolio
-- get performance measurement data for a portfolio including time-weighted returns, benchmark returns, and active returns over a specified period.
 - list current positions in a portfolio as of a given date. returns securities, quantities, market values, cost basis, and unrealized p&l. filter by asset class (equity, fixed_income, cash, derivatives, etc.).
-- get portfolio risk
 - portfolio performance measurement
+- get comprehensive details for a specific state street alpha portfolio including total market value, benchmark, and custodian information.
+- portfolio positions and holdings
+- list portfolio positions
+- portfolio detail
+- etf
+- get portfolio performance
+- etf fund information
+- get current portfolio positions
+- portfolio transaction history
+- list etf orders
+- portfolio listing and management
+- list all institutional investment portfolios accessible via state street alpha. returns portfolio names, types, base currencies, and current market values.
+- list all accessible institutional portfolios
 - list transaction history for a portfolio including trades, corporate actions, cash movements, and income events over a specified date range.
+- submit etf order
+- get performance measurement data for a portfolio including time-weighted returns, benchmark returns, and active returns over a specified period.
+- get the current portfolio composition basket for an etf fund showing the in-kind securities and quantities required per creation unit.
+- list portfolios
+- portfolio risk analytics
+- get etf order status
+- financial services
+- portfolio
+- get portfolio
+- etf creation and redemption orders
+- list etf funds available for creation and redemption on state street fund connect.
+- get portfolio transaction history
+- list etf funds
+- submit an etf creation or redemption order through state street fund connect. specify the fund, order type (creation or redemption), and number of units.
+- institutional
+- get portfolio performance and attribution
+- get portfolio risk analytics
+- get the current status of a specific etf creation or redemption order on state street fund connect.
+- cancel etf order
+- get portfolio details
+- list etf funds on fund connect
+- get risk analytics for a portfolio including value at risk (var), tracking error, beta, duration, and factor exposures.
+- cancel a pending etf creation or redemption order on state street fund connect. only available for orders in pending status.
+- get risk
+- list portfolio transactions
+- risk analytics
+- get etf portfolio composition basket
+- investment management
+- list transactions
+- list etf creation and redemption orders submitted through fund connect, filterable by fund, status, and date range.
+- get portfolio risk
+- get etf basket
+- etf portfolio baskets
+- submit etf creation or redemption order
+- get performance
+- list positions
 slug: portfolio-management
 source_filename: portfolio-management.yaml
 source_heading: Capability Spec

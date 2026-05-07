@@ -41,32 +41,32 @@ personas: []
 provider_name: QuickNode
 provider_slug: quicknode
 search_terms:
-- webhooks
-- getpin
-- web3
-- ipfs
-- pinbycid
-- pin an existing cid
-- blockchain
-- infrastructure
 - deletepin
-- putobject
-- key-value store
-- getaccountusage
-- rpc
-- listgateways
-- list gateways
 - listpins
-- get account usage
+- pin an existing cid
 - api
-- get a pin by request id
-- list pinned objects
-- creategateway
-- create gateway
-- quicknode
-- unpin an object
-- upload and pin a file
 - streaming data
+- list pinned objects
+- getaccountusage
+- create gateway
+- putobject
+- web3
+- quicknode
+- getpin
+- infrastructure
+- get account usage
+- pinbycid
+- webhooks
+- unpin an object
+- list gateways
+- get a pin by request id
+- rpc
+- upload and pin a file
+- ipfs
+- key-value store
+- listgateways
+- blockchain
+- creategateway
 slug: quicknode-capability
 source_filename: quicknode-capability.yaml
 source_heading: Capability Spec

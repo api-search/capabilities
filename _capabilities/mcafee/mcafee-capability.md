@@ -81,49 +81,49 @@ personas: []
 provider_name: McAfee (Trellix)
 provider_slug: mcafee
 search_terms:
-- policyfind
-- clienttaskfind
-- mcafee run a server task
-- systemapplytag
-- mcafee find system tree groups
-- systemcleartag
 - mcafee list saved queries
-- mcafee apply a tag to systems
-- mcafee move a system to a different group
-- systemfindtag
 - antivirus
-- epogroupfind
-- mcafee run a client task on systems
-- security
-- schedulerrunservertask
-- mcafee
-- mcafee search for client tasks
-- endpoint protection
-- mcafee find systems by tag
-- clienttaskrun
-- coreexecutequery
-- mcafee search for systems
-- corelistqueries
-- systemfind
-- api
-- policyassigntogroup
-- mcafee list available api commands
-- mcafee find software packages
-- epogroupmovesystem
-- repositoryfindpackages
-- corehelp
 - mcafee find threat events
-- policyassigntosystem
-- schedulerlistservertasks
-- mcafee assign a policy to a group
-- detectedsystemfind
-- mcafee list server tasks
-- cybersecurity
-- threat intelligence
 - mcafee search for policies
+- epogroupmovesystem
+- mcafee assign a policy to a group
+- api
+- systemfind
+- threat intelligence
 - mcafee execute a saved query
-- mcafee remove a tag from systems
+- mcafee list server tasks
+- policyfind
 - mcafee assign a policy to a system
+- mcafee run a client task on systems
+- policyassigntosystem
+- mcafee apply a tag to systems
+- epogroupfind
+- mcafee move a system to a different group
+- mcafee find systems by tag
+- systemfindtag
+- corelistqueries
+- mcafee remove a tag from systems
+- mcafee find system tree groups
+- clienttaskrun
+- schedulerlistservertasks
+- mcafee run a server task
+- corehelp
+- systemcleartag
+- repositoryfindpackages
+- clienttaskfind
+- mcafee search for client tasks
+- mcafee search for systems
+- cybersecurity
+- endpoint protection
+- mcafee list available api commands
+- mcafee
+- schedulerrunservertask
+- security
+- systemapplytag
+- policyassigntogroup
+- coreexecutequery
+- mcafee find software packages
+- detectedsystemfind
 slug: mcafee-capability
 source_filename: mcafee-capability.yaml
 source_heading: Capability Spec

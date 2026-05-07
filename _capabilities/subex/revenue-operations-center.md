@@ -37,39 +37,39 @@ personas: []
 provider_name: Subex
 provider_slug: subex
 search_terms:
-- update the status or assignment of a revenue leakage alert
-- get subscriber fraud risk score
 - list reconciliation runs
 - analytics
-- individual fraud case
-- list fraud cases
-- revenue analytics
-- subex
-- get details of a specific revenue leakage alert
-- get the fraud risk score for a telecom subscriber by their msisdn
-- get details of a specific telecom fraud case
-- list cdr and billing reconciliation runs
-- list revenue leakage alerts
-- get summary analytics for revenue assurance and fraud kpis
-- get fraud case
-- individual leakage alert
-- get subscriber risk score
-- fraud case management
-- get a fraud case
-- bss/oss
-- subscriber risk scoring
-- get analytics summary
-- list telecom fraud cases with optional fraud type and status filters
-- revenue leakage alerts
-- list leakage alerts
-- update leakage alert
-- get leakage alert
-- fraud management
 - get a leakage alert
-- revenue assurance
-- cdr reconciliation
 - list subex revenue leakage alerts with optional severity and type filters
+- get details of a specific revenue leakage alert
+- fraud management
 - telecom
+- individual leakage alert
+- update leakage alert
+- list telecom fraud cases with optional fraud type and status filters
+- subscriber risk scoring
+- get details of a specific telecom fraud case
+- update the status or assignment of a revenue leakage alert
+- get analytics summary
+- revenue leakage alerts
+- get subscriber risk score
+- individual fraud case
+- get a fraud case
+- get leakage alert
+- revenue analytics
+- list leakage alerts
+- get summary analytics for revenue assurance and fraud kpis
+- list cdr and billing reconciliation runs
+- subex
+- list fraud cases
+- list revenue leakage alerts
+- bss/oss
+- revenue assurance
+- get the fraud risk score for a telecom subscriber by their msisdn
+- fraud case management
+- cdr reconciliation
+- get subscriber fraud risk score
+- get fraud case
 slug: revenue-operations-center
 source_filename: revenue-operations-center.yaml
 source_heading: Capability Spec

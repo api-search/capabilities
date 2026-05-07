@@ -129,76 +129,76 @@ personas: []
 provider_name: JFrog
 provider_slug: jfrog
 search_terms:
-- creategroup
-- software supply chain
-- getpermission
-- createuser
-- removegroupfromproject
-- mlops
-- jfrog get system version
-- jfrog get user
-- jfrog get project
-- jfrog revoke access token
-- deletegroup
-- jfrog update group
-- deleteproject
-- jfrog delete user
-- jfrog remove user from project
-- createpermission
-- devops
-- jfrog add group to project
-- jfrog get group
-- package management
-- jfrog remove group from project
-- updateproject
-- removeuserfromproject
-- jfrog create project
-- listpermissions
 - jfrog list access tokens
-- createtoken
-- listtokens
-- artifactory
-- jfrog list permissions
-- jfrog create access token
-- security
 - jfrog update user
-- getproject
-- updatepermission
 - jfrog list projects
-- jfrog get permission
-- container registry
-- listgroups
-- jfrog create group
-- ci/cd
+- devops
+- getproject
 - jfrog update project
-- api
-- revoketoken
-- createproject
-- jfrog delete group
-- jfrog create user
-- jfrog create permission
-- listprojects
-- jfrog list groups
-- deletepermission
-- getuser
-- addgrouptoproject
-- jfrog delete permission
-- getsystemversion
+- removegroupfromproject
+- jfrog get project
 - jfrog system ping
-- listusers
-- getgroup
-- addusertoproject
-- jfrog
-- jfrog add user to project
-- jfrog list users
-- jfrog get token details
-- updateuser
-- jfrog update permission
-- jfrog delete project
-- updategroup
-- deleteuser
-- gettoken
+- jfrog create access token
+- creategroup
+- createpermission
 - systemping
+- jfrog get group
+- api
+- jfrog list users
+- jfrog remove user from project
+- ci/cd
+- jfrog create permission
+- createtoken
+- container registry
+- software supply chain
+- addusertoproject
+- jfrog get system version
+- getuser
+- getgroup
+- updateproject
+- jfrog create user
+- deleteuser
+- listgroups
+- deletepermission
+- jfrog delete group
+- removeuserfromproject
+- getsystemversion
+- listtokens
+- jfrog remove group from project
+- jfrog update permission
+- gettoken
+- getpermission
+- updatepermission
+- updategroup
+- jfrog get permission
+- mlops
+- jfrog create project
+- revoketoken
+- updateuser
+- jfrog delete project
+- jfrog add user to project
+- deleteproject
+- jfrog
+- jfrog get token details
+- jfrog list groups
+- createuser
+- listpermissions
+- jfrog get user
+- listusers
+- jfrog list permissions
+- jfrog update group
+- jfrog delete permission
+- listprojects
+- jfrog create group
+- artifactory
+- addgrouptoproject
+- security
+- jfrog add group to project
+- jfrog delete user
+- deletegroup
+- package management
+- jfrog revoke access token
+- createproject
 slug: jfrog-capability
 source_filename: jfrog-capability.yaml
 source_heading: Capability Spec

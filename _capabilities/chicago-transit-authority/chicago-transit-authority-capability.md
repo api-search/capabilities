@@ -41,38 +41,38 @@ personas: []
 provider_name: Chicago Transit Authority
 provider_slug: chicago-transit-authority
 search_terms:
-- get predictions
-- real-time
-- bus
-- cta
-- getpatterns
-- getroutes
 - gettime
-- getvehicles
-- authority
-- transit
-- getservicebulletins
-- get directions
-- bus tracker
-- getdirections
-- transportation
-- get routes
 - api
-- train tracker
-- train
-- get stops
-- get vehicles
-- public transit
-- chicago
-- get system time
-- get patterns
+- get directions
+- getvehicles
+- getservicebulletins
 - gtfs
+- cta
 - getpredictions
-- open data
-- customer alerts
-- l train
+- get system time
+- bus
+- chicago
 - get service bulletins
+- get predictions
+- get stops
+- train tracker
+- get vehicles
+- customer alerts
+- train
+- transportation
 - getstops
+- get patterns
+- bus tracker
+- authority
+- l train
+- public transit
+- getroutes
+- getdirections
+- transit
+- getpatterns
+- real-time
+- open data
+- get routes
 slug: chicago-transit-authority-capability
 source_filename: chicago-transit-authority-capability.yaml
 source_heading: Capability Spec

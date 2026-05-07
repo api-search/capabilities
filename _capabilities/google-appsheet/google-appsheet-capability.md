@@ -13,16 +13,16 @@ personas: []
 provider_name: Google AppSheet
 provider_slug: google-appsheet
 search_terms:
-- no-code
-- data
-- low-code
 - tables
-- google
-- api
-- appsheet
 - applications
-- google appsheet invoke table action
+- google
+- data
+- appsheet
 - invokeaction
+- api
+- no-code
+- low-code
+- google appsheet invoke table action
 slug: google-appsheet-capability
 source_filename: google-appsheet-capability.yaml
 source_heading: Capability Spec

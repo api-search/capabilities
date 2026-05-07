@@ -29,48 +29,48 @@ personas: []
 provider_name: Airtable
 provider_slug: airtable
 search_terms:
-- no-code
-- delete record
-- low-code
-- update specific fields in an airtable record.
-- spreadsheets
-- list records from a table.
-- delete an airtable record permanently.
-- databases
-- applications
-- creating, reading, updating, and deleting data records.
-- Developer
-- airtable bases and schemas.
-- create records
-- managing the structure of bases, tables, and fields.
-- create one or more records in an airtable table.
-- update record
-- get base schema
-- records
-- schema
-- list records
-- create records in a table.
-- integrates airtable with external systems via the rest api.
-- airtable
-- productivity
 - airtable table records.
-- user management, audit logs, and access control.
-- database
-- a specific airtable record.
-- manages users, audit logs, and shares across the organization.
-- delete a record.
-- Data Analyst
-- list bases
-- reads and analyzes airtable data programmatically.
 - get the schema of an airtable base with all tables and fields.
-- real-time event-driven integrations via webhooks.
+- user management, audit logs, and access control.
+- managing the structure of bases, tables, and fields.
 - update a record.
-- data
-- list records from an airtable table with optional filtering.
-- list all accessible bases.
+- Data Analyst
+- update specific fields in an airtable record.
+- databases
+- spreadsheets
+- airtable bases and schemas.
+- airtable
+- low-code
 - list all airtable bases the user has access to.
-- read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
+- create records
+- real-time event-driven integrations via webhooks.
+- a specific airtable record.
+- applications
+- productivity
 - collaboration
+- list bases
+- delete record
+- read/write airtable records, browse schemas, manage webhooks. used by developers and data teams integrating airtable with external systems.
+- update record
+- list records from a table.
+- list records
+- creating, reading, updating, and deleting data records.
+- create one or more records in an airtable table.
+- create records in a table.
+- database
+- get base schema
+- delete an airtable record permanently.
+- reads and analyzes airtable data programmatically.
+- Developer
+- records
+- list records from an airtable table with optional filtering.
+- delete a record.
+- list all accessible bases.
+- manages users, audit logs, and shares across the organization.
+- data
+- no-code
+- schema
+- integrates airtable with external systems via the rest api.
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

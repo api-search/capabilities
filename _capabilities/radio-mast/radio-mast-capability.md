@@ -42,28 +42,28 @@ provider_name: Radio Mast
 provider_slug: radio-mast
 search_terms:
 - analytics
-- get radiostreams external
-- list listener pools
-- get
-- get radiostations
-- audio
-- get radiostreams radiomast
-- list radio stations
-- aggregate listener session analytics
-- list available api resources
-- mast
-- get analytics listener sessions time series
-- get analytics reports
-- api
-- list radio mast streams
-- get listener pools
-- radio
-- get analytics listener sessions aggregate
-- broadcasting
-- listener analytics reports
 - streaming
-- listener session time-series analytics
+- get radiostreams radiomast
+- get analytics reports
+- listener analytics reports
+- api
+- get analytics listener sessions time series
+- list radio stations
+- get analytics listener sessions aggregate
+- aggregate listener session analytics
+- audio
+- list listener pools
+- mast
+- radio
 - list external streams
+- get radiostreams external
+- broadcasting
+- get listener pools
+- listener session time-series analytics
+- list available api resources
+- list radio mast streams
+- get radiostations
+- get
 slug: radio-mast-capability
 source_filename: radio-mast-capability.yaml
 source_heading: Capability Spec

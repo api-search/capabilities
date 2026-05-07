@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- ml
-- predict shaped
-- api integration
 - governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
 - output shaping
+- predict shaped
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
+- ml
+- naftiko
 slug: ml-output-shaping-capability
 source_filename: ml-output-shaping-capability.yaml
 source_heading: Capability Spec

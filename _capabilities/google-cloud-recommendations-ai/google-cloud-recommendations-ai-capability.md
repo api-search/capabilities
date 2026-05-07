@@ -25,24 +25,24 @@ personas: []
 provider_name: Google Cloud Recommendations AI
 provider_slug: google-cloud-recommendations-ai
 search_terms:
-- writeuserevent
+- google cloud recommendations ai get recommendations
+- listcatalogitems
+- google cloud recommendations ai create a catalog item
 - google cloud recommendations ai write a user event
 - predict
-- machine learning
-- retail
-- cloud
-- google cloud recommendations ai create a catalog item
-- personalization
-- google
-- api
-- listcatalogitems
-- createcatalogitem
-- e-commerce
-- google cloud recommendations ai get recommendations
-- ai
-- google cloud
-- recommendations
 - google cloud recommendations ai list catalog items
+- e-commerce
+- machine learning
+- google
+- google cloud
+- retail
+- ai
+- api
+- cloud
+- createcatalogitem
+- personalization
+- recommendations
+- writeuserevent
 slug: google-cloud-recommendations-ai-capability
 source_filename: google-cloud-recommendations-ai-capability.yaml
 source_heading: Capability Spec

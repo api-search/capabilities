@@ -17,15 +17,15 @@ personas: []
 provider_name: Neighbor
 provider_slug: neighbor
 search_terms:
-- neighbor
-- marketplace
 - getreservationreport
-- get transfer/payout report
-- gettransferreport
-- api
-- storage
-- get reservation report
+- marketplace
 - reporting
+- get reservation report
+- api
+- neighbor
+- storage
+- gettransferreport
+- get transfer/payout report
 slug: neighbor-capability
 source_filename: neighbor-capability.yaml
 source_heading: Capability Spec

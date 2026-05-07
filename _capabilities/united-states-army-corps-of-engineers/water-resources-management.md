@@ -49,65 +49,65 @@ personas: []
 provider_name: United States Army Corps of Engineers
 provider_slug: united-states-army-corps-of-engineers
 search_terms:
-- get rating curves that convert stage height to streamflow discharge at usace gages
-- get ratings
-- get water measurements
 - civil engineering
-- get information about usace water resource projects including dams, locks, reservoirs, and flood control structures
-- water resources
-- get locations
-- get location levels for flood stage and pool elevation thresholds
-- search usace locations
-- get detailed data for a specific usace location
-- get the most recent readings for current conditions monitoring
-- get catalog
-- hydrological forecasts
-- get usace projects including dams, locks, and reservoirs
-- browse available cwms water data catalog
-- get all usace locations filtered by office or name pattern
-- water management
-- current water conditions
 - engineering
-- browse water data catalog
-- get flood stage levels
-- get rating tables for converting stage to flow
-- location levels (flood stage, normal pool)
-- dam operations
-- get projects
-- get time series measurements (stage, streamflow, reservoir elevation, precipitation) for a usace location over a time period
+- get ratings
 - get river basin information for usace water management areas
-- get usace projects
-- cwms time series measurements
-- single usace location
-- get hydrological forecast instances
-- get forecast instances
-- get detailed information for a specific usace location including coordinates, elevation, and type
-- get river basin information for usace water management regions
-- get current water conditions
-- usace-managed location data
-- get hydrological forecasts
-- river basin information
-- get basins
-- search for usace-managed locations (dams, reservoirs, stream gages) by name, office, or region
-- get time series data for a location (stage, flow, elevation, etc.)
-- get stage discharge ratings
-- get hydrological forecasts for usace project areas including flood predictions and reservoir operations
-- get location
-- get recent timeseries
-- federal government
-- stage-discharge rating tables
-- get the most recent real-time water condition readings for usace monitoring stations
-- get timeseries
-- usace water resource projects
-- get river basins
-- get location details
-- hydrology
-- flood monitoring
-- browse the cwms data catalog to discover available time series, locations, and ratings for usace water resources
-- get levels
+- location levels (flood stage, normal pool)
+- search usace locations
 - get flood stage thresholds and normal pool levels for usace locations
-- usace
+- usace water resource projects
+- get time series data for a location (stage, flow, elevation, etc.)
+- get river basins
+- get rating tables for converting stage to flow
+- get detailed data for a specific usace location
 - browse available time series, locations, or ratings in cwms
+- dam operations
+- get levels
+- get hydrological forecast instances
+- hydrological forecasts
+- get flood stage levels
+- get location
+- get locations
+- stage-discharge rating tables
+- get information about usace water resource projects including dams, locks, reservoirs, and flood control structures
+- cwms time series measurements
+- get timeseries
+- single usace location
+- get river basin information for usace water management regions
+- get projects
+- browse the cwms data catalog to discover available time series, locations, and ratings for usace water resources
+- get rating curves that convert stage height to streamflow discharge at usace gages
+- get location details
+- get usace projects including dams, locks, and reservoirs
+- river basin information
+- get recent timeseries
+- get all usace locations filtered by office or name pattern
+- get time series measurements (stage, streamflow, reservoir elevation, precipitation) for a usace location over a time period
+- get stage discharge ratings
+- get the most recent readings for current conditions monitoring
+- browse water data catalog
+- usace
+- water management
+- get detailed information for a specific usace location including coordinates, elevation, and type
+- search for usace-managed locations (dams, reservoirs, stream gages) by name, office, or region
+- usace-managed location data
+- get the most recent real-time water condition readings for usace monitoring stations
+- get usace projects
+- current water conditions
+- hydrology
+- get forecast instances
+- flood monitoring
+- get current water conditions
+- browse available cwms water data catalog
+- get location levels for flood stage and pool elevation thresholds
+- get hydrological forecasts for usace project areas including flood predictions and reservoir operations
+- federal government
+- water resources
+- get catalog
+- get hydrological forecasts
+- get water measurements
+- get basins
 slug: water-resources-management
 source_filename: water-resources-management.yaml
 source_heading: Capability Spec

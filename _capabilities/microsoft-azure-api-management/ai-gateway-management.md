@@ -9,16 +9,16 @@ personas: []
 provider_name: Microsoft Azure API Management
 provider_slug: microsoft-azure-api-management
 search_terms:
-- llm operations
-- ai gateway
-- machine learning
-- token management
-- azure openai
-- enterprise
 - microsoft azure
-- mcp
 - api gateway
 - api management
+- enterprise
+- ai gateway
+- token management
+- machine learning
+- llm operations
+- mcp
+- azure openai
 slug: ai-gateway-management
 source_filename: ai-gateway-management.yaml
 source_heading: Capability Spec

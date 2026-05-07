@@ -27,41 +27,41 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - kyc
-- verify a consumer identity
-- fraud detection
-- create consent
-- get transaction insights
-- identity
-- get account identity insights
-- get account insights
-- financial services
-- submit trust verification
-- get identity intelligence insights for a transaction
-- authentication consent management
-- verify a consumer identity using mastercard id
-- get identity insights for a transaction
-- initiate strong customer authentication
-- submit identity verification as a trust provider
-- get authentication consent status
-- credit cards
-- verify identity
-- get consent status
-- digital identity
-- get identity intelligence insights for an account
-- open banking
-- identity insights for transactions
-- authentication
-- mastercard
 - identity verification
-- get transaction identity insights
-- create auth consent
-- payments
+- fraud detection
+- identity insights for transactions
+- get account identity insights
+- initiate strong customer authentication
+- authentication
+- get consent status
+- verify identity
+- verify a consumer identity
 - initiate authentication
-- identity insights for accounts
-- create an authentication consent request
-- create authentication consent
-- verification
+- submit trust verification
 - get identity insights for an account
+- create auth consent
+- identity
+- get authentication consent status
+- create consent
+- get identity insights for a transaction
+- submit identity verification as a trust provider
+- financial services
+- credit cards
+- get identity intelligence insights for an account
+- identity insights for accounts
+- verification
+- get transaction insights
+- get identity intelligence insights for a transaction
+- get transaction identity insights
+- open banking
+- get account insights
+- verify a consumer identity using mastercard id
+- payments
+- create authentication consent
+- create an authentication consent request
+- digital identity
+- mastercard
+- authentication consent management
 slug: identity-and-authentication
 source_filename: identity-and-authentication.yaml
 source_heading: Capability Spec

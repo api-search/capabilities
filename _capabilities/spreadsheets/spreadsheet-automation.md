@@ -33,42 +33,42 @@ personas: []
 provider_name: Spreadsheets
 provider_slug: spreadsheets
 search_terms:
-- read multiple ranges in one request
-- batch get values
-- spreadsheets
-- update values
-- reporting
-- write values to a cell range
-- read cell values from a google sheets range using a1 notation (e.g., 'sheet1!a1:d10'). returns a 2d array of values.
-- get information about a google spreadsheet including its title, sheets, and structure.
-- append new rows to a google sheet. finds the last row of the existing table and inserts after it. perfect for adding new form submissions, log entries, or data records.
-- write cell values to a google sheets range. use valueinputoption='user_entered' to parse values like a user would (including formulas), or 'raw' for literal string values.
-- read multiple ranges from a google sheet in a single api call. more efficient than multiple individual reads.
-- read spreadsheet range
-- append new rows to the end of a table
-- write to multiple ranges in one request
-- automation
-- productivity
-- batch update values
-- append rows to a spreadsheet
-- get spreadsheet
-- get spreadsheet info
-- append to spreadsheet
 - batch write spreadsheet
-- write spreadsheet range
+- read multiple ranges from a google sheet in a single api call. more efficient than multiple individual reads.
 - read values from a cell range
-- batch read spreadsheet
-- get values
-- spreadsheet metadata and structure
-- get spreadsheet metadata including sheet names and structure
-- google sheets
-- data
-- read and write cell values
-- data automation
+- automation
 - write to multiple ranges in a google sheet in a single api call. efficient for updating several disjoint regions at once.
-- append values
+- spreadsheets
+- get values
+- write spreadsheet range
+- spreadsheet metadata and structure
 - batch read/write operations
+- productivity
+- append to spreadsheet
+- write values to a cell range
+- batch get values
 - excel
+- append values
+- read cell values from a google sheets range using a1 notation (e.g., 'sheet1!a1:d10'). returns a 2d array of values.
+- read and write cell values
+- read multiple ranges in one request
+- append new rows to a google sheet. finds the last row of the existing table and inserts after it. perfect for adding new form submissions, log entries, or data records.
+- get spreadsheet metadata including sheet names and structure
+- get spreadsheet
+- get information about a google spreadsheet including its title, sheets, and structure.
+- google sheets
+- update values
+- data automation
+- append new rows to the end of a table
+- read spreadsheet range
+- write to multiple ranges in one request
+- write cell values to a google sheets range. use valueinputoption='user_entered' to parse values like a user would (including formulas), or 'raw' for literal string values.
+- append rows to a spreadsheet
+- batch read spreadsheet
+- batch update values
+- reporting
+- data
+- get spreadsheet info
 slug: spreadsheet-automation
 source_filename: spreadsheet-automation.yaml
 source_heading: Capability Spec

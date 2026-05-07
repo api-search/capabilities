@@ -25,21 +25,21 @@ personas: []
 provider_name: FullStory
 provider_slug: fullstory
 search_terms:
-- webhooks
 - list segments
-- create a segment export
-- getoperationstatus
-- api
-- listsegments
-- getsegment
-- get a segment
-- createsegmentexport
+- analytics
+- webhooks
 - get operation status
-- digital experience
+- session replay
 - data export
 - fullstory
-- analytics
-- session replay
+- getoperationstatus
+- create a segment export
+- api
+- get a segment
+- digital experience
+- createsegmentexport
+- getsegment
+- listsegments
 slug: fullstory-capability
 source_filename: fullstory-capability.yaml
 source_heading: Capability Spec

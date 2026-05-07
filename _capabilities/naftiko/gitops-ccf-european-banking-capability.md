@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
 - gitops
+- governance
 - deploy with compliance
 - list apps
-- api integration
-- governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
-- european banking
 - ccf
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
+- naftiko
+- european banking
 slug: gitops-ccf-european-banking-capability
 source_filename: gitops-ccf-european-banking-capability.yaml
 source_heading: Capability Spec

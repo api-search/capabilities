@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- security
-- cortex xdr
-- api integration
 - governance
-- capabilities
 - spec-driven integration
-- ai
-- mcp
 - get incidents
+- ai
+- security
+- capabilities
 - get shaped alerts
+- api integration
+- mcp
+- cortex xdr
+- naftiko
 slug: cortex-xdr-alert-shaping-cli-capability
 source_filename: cortex-xdr-alert-shaping-cli-capability.yaml
 source_heading: Capability Spec

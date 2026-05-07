@@ -21,19 +21,19 @@ personas: []
 provider_name: General Dynamics
 provider_slug: general-dynamics
 search_terms:
-- getproducts
-- mission systems
-- government
-- getsystembyid
-- get system by id
-- getsystems
-- get systems
-- api
-- general
+- aerospace
 - dynamics
+- get systems
+- getproducts
+- getsystems
+- government
+- general
 - get products
 - defense
-- aerospace
+- mission systems
+- api
+- get system by id
+- getsystembyid
 slug: general-dynamics-capability
 source_filename: general-dynamics-capability.yaml
 source_heading: Capability Spec

@@ -37,45 +37,45 @@ personas: []
 provider_name: RubyGems
 provider_slug: rubygems
 search_terms:
-- ruby
-- list all owners of a specific gem
-- remove owner
-- developer tools
-- test fire a webhook to verify it is receiving notifications correctly
+- webhook subscriptions for gem push events
 - add a new owner to a ruby gem by email address
 - gems
-- publishing
-- register a webhook to receive notifications when a gem is pushed
-- create webhook
-- yank gem
-- rubygems
-- list all webhook subscriptions for the authenticated user
-- create a webhook
-- submit a built ruby gem (.gem file) to rubygems.org for publishing
-- package manager
-- open source
 - ci/cd
-- test webhook
+- publishing
+- add gem owner
+- test fire a webhook to verify it is receiving notifications correctly
+- package manager
+- rubygems
+- remove owner
+- remove an owner from a ruby gem by email address
+- remove gem owner
+- open source
+- create webhook
+- submit a built ruby gem (.gem file) to rubygems.org for publishing
+- remove a specific ruby gem version from the rubygems.org index
+- list all webhook subscriptions for the authenticated user
+- developer tools
+- add a gem owner
+- ruby
+- list webhooks
+- push gem
+- publish gem
+- remove a gem version from the index
+- list owners
+- list owned gems
 - list all gems owned by the authenticated rubygems user
+- list all owners of a specific gem
+- submit a built gem to rubygems.org
+- create a webhook
+- add owner
+- gem publishing operations
 - yank a gem version
 - list gem owners
-- remove a specific ruby gem version from the rubygems.org index
-- remove an owner from a ruby gem by email address
-- publish gem
-- gem ownership management
-- add gem owner
-- add owner
+- register a webhook to receive notifications when a gem is pushed
+- test webhook
 - remove a gem owner
-- webhook subscriptions for gem push events
-- gem publishing operations
-- add a gem owner
-- list owners
-- push gem
-- remove gem owner
-- remove a gem version from the index
-- list webhooks
-- submit a built gem to rubygems.org
-- list owned gems
+- yank gem
+- gem ownership management
 slug: gem-publishing
 source_filename: gem-publishing.yaml
 source_heading: Capability Spec

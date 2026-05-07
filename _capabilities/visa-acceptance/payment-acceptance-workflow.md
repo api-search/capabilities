@@ -61,59 +61,59 @@ personas: []
 provider_name: Visa Acceptance
 provider_slug: visa-acceptance
 search_terms:
-- generate a shareable payment link
+- release an authorization hold
+- release an authorization hold without completing the payment
 - payment links
-- invoice access by id
-- get invoice details
-- get invoice
-- list invoices filtered by status (created, sent, paid, etc.)
-- create pay by link
 - invoice management
-- refund a customer for a captured payment (partial or full)
+- refund a captured payment (partial or full)
+- update a draft invoice
+- get pay by link
+- visa
+- cancel a payment before it settles to release funds back to the customer
+- generate a shareable payment link to collect a payment
+- digital wallets
+- invoice access by id
+- void payment
+- cancel a payment link
+- get the status and details of a specific invoice
+- authorize a payment to place a hold on customer funds
+- generate a shareable payment link
+- fintech
 - authorize payment
+- void a payment before it settles
 - reverse authorization holds
+- get invoice details
+- capture payment
+- complete a payment by capturing previously authorized funds
+- refund captured payments
+- refund a customer for a captured payment (partial or full)
+- cancel an active payment link so it can no longer accept payments
+- create invoice
+- payment authorization and sale
+- get payment link details
+- e-commerce
+- credit cards
+- authorize a payment transaction
+- payment link management
+- list pay by links
 - update invoice
 - list payment links filtered by status
-- list pay by links
 - invoicing
-- visa
-- authorize a payment transaction
-- e-commerce
-- authorize a payment to place a hold on customer funds
-- update a draft invoice
-- release an authorization hold
-- capture payment
-- credit cards
-- create invoice
-- release an authorization hold without completing the payment
-- complete a previously authorized payment
-- payment link management
-- complete a payment by capturing previously authorized funds
-- get the status and details of a specific invoice
 - payment link access by id
+- create an invoice for a customer
+- create an invoice with line items and due date for a customer
+- payments
 - capture authorized payments
 - reverse authorization
-- void payments before settlement
-- create an invoice for a customer
-- list payment links
-- void a payment before it settles
-- refund captured payments
-- cancel pay by link
-- generate a shareable payment link to collect a payment
-- payment authorization and sale
-- payments
-- get payment link details
-- cancel a payment before it settles to release funds back to the customer
-- cancel a payment link
 - list invoices
+- list payment links
+- void payments before settlement
+- get invoice
+- create pay by link
+- cancel pay by link
 - refund payment
-- void payment
-- create an invoice with line items and due date for a customer
-- cancel an active payment link so it can no longer accept payments
-- digital wallets
-- refund a captured payment (partial or full)
-- get pay by link
-- fintech
+- complete a previously authorized payment
+- list invoices filtered by status (created, sent, paid, etc.)
 slug: payment-acceptance-workflow
 source_filename: payment-acceptance-workflow.yaml
 source_heading: Capability Spec

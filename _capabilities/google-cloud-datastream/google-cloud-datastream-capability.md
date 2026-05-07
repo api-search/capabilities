@@ -53,36 +53,36 @@ personas: []
 provider_name: Google Cloud Datastream
 provider_slug: google-cloud-datastream
 search_terms:
-- google cloud datastream create a stream
-- deletestream
-- listconnectionprofiles
-- liststreams
-- google cloud datastream delete a stream
-- google cloud datastream update a connection profile
-- datastream
-- cloud
-- google cloud datastream list connection profiles
-- google
+- streaming
 - updatestream
+- api
+- google cloud datastream create a stream
+- google cloud datastream get an operation
+- google cloud datastream list connection profiles
 - google cloud datastream create a connection profile
 - getstream
-- createstream
-- google cloud datastream delete a connection profile
 - google cloud datastream update a stream
-- api
-- createconnectionprofile
-- data replication
-- getoperation
-- google cloud datastream get a connection profile
-- google cloud datastream get an operation
-- streaming
-- getconnectionprofile
-- google cloud datastream get a stream
-- deleteconnectionprofile
-- google cloud
-- updateconnectionprofile
 - change data capture
 - google cloud datastream list streams
+- liststreams
+- data replication
+- google
+- updateconnectionprofile
+- createstream
+- listconnectionprofiles
+- google cloud datastream delete a connection profile
+- google cloud datastream update a connection profile
+- deleteconnectionprofile
+- getoperation
+- cloud
+- createconnectionprofile
+- google cloud datastream get a connection profile
+- datastream
+- getconnectionprofile
+- google cloud datastream get a stream
+- google cloud
+- deletestream
+- google cloud datastream delete a stream
 slug: google-cloud-datastream-capability
 source_filename: google-cloud-datastream-capability.yaml
 source_heading: Capability Spec

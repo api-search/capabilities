@@ -37,45 +37,45 @@ personas: []
 provider_name: Veracode
 provider_slug: veracode
 search_terms:
-- get policy compliance evaluation status for an application
-- security compliance reports
-- get report
-- generate an asynchronous security findings or compliance report
-- security testing
-- get report results by id
-- list veracode applications, optionally filtered by policy compliance status or name
-- sast
-- get details for a specific veracode application by guid
-- generate report
-- veracode
-- application security
-- application portfolio management
-- individual application management
-- list security findings for a veracode application, filterable by scan type, severity, cwe, and policy violations
-- retrieve a generated security report by id
-- security findings from all scan types
+- list all applications with policy compliance filtering
+- get application
 - get policy compliance
-- get static analysis flaw code path details for a specific finding
+- generate an async security report
+- application portfolio management
+- get report
+- get report results by id
+- application security
+- get static flaw info
 - ci/cd
 - get policy compliance for an application
-- get static flaw info
-- list findings with severity and scan type filtering
-- dast
-- get security report
-- generate security report
-- list all applications with policy compliance filtering
-- get application details
-- devsecops
-- create a new application profile in the veracode platform
-- generate an async security report
-- create application
-- get application
+- list security findings for a veracode application, filterable by scan type, severity, cwe, and policy violations
 - list findings
-- list applications
-- create a new application profile
-- sca
+- security compliance reports
+- create application
+- dast
+- devsecops
+- veracode
+- get application details
+- generate report
 - retrieve generated reports
+- sca
+- security testing
+- get policy compliance evaluation status for an application
+- get details for a specific veracode application by guid
+- get static analysis flaw code path details for a specific finding
 - policy compliance status
+- list applications
+- generate security report
+- retrieve a generated security report by id
+- generate an asynchronous security findings or compliance report
+- sast
+- individual application management
+- get security report
+- create a new application profile in the veracode platform
+- list findings with severity and scan type filtering
+- list veracode applications, optionally filtered by policy compliance status or name
+- security findings from all scan types
+- create a new application profile
 slug: devsecops-pipeline
 source_filename: devsecops-pipeline.yaml
 source_heading: Capability Spec

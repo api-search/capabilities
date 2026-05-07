@@ -37,28 +37,28 @@ personas: []
 provider_name: Google Cloud VPC
 provider_slug: google-cloud-vpc
 search_terms:
-- vpc
-- createnetwork
 - networking
-- google cloud vpc get a vpc network
-- listroutes
-- listfirewalls
 - google cloud vpc delete a vpc network
-- firewall
-- google cloud vpc list subnetworks
-- google cloud vpc create a vpc network
-- cloud
-- google
-- google cloud vpc list routes
-- google cloud vpc list vpc networks
-- google cloud vpc list firewall rules
-- listsubnetworks
-- api
-- getnetwork
 - listnetworks
+- api
+- listfirewalls
+- vpc
+- google cloud vpc list firewall rules
+- google cloud vpc create a vpc network
+- createnetwork
+- google cloud vpc list subnetworks
+- google
+- google cloud vpc get a vpc network
+- google cloud vpc list vpc networks
+- getnetwork
+- google cloud vpc list routes
+- cloud
+- firewall
+- listsubnetworks
 - virtual networks
 - deletenetwork
 - google cloud
+- listroutes
 slug: google-cloud-vpc-capability
 source_filename: google-cloud-vpc-capability.yaml
 source_heading: Capability Spec

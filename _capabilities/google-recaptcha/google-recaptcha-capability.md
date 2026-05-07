@@ -33,27 +33,27 @@ personas: []
 provider_name: Google reCAPTCHA
 provider_slug: google-recaptcha
 search_terms:
-- listkeys
-- google recaptcha create key
 - recaptcha
-- bot detection
-- google recaptcha annotate assessment
-- fraud prevention
-- deletekey
-- google
-- security
-- createkey
-- annotateassessment
-- createassessment
-- getkey
 - api
-- google recaptcha list keys
 - google recaptcha delete key
-- google recaptcha create assessment
-- google recaptcha get key
-- abuse prevention
+- google recaptcha create key
+- google
 - captcha
+- bot detection
+- createassessment
+- google recaptcha list keys
+- annotateassessment
+- deletekey
+- listkeys
+- fraud prevention
+- getkey
+- google recaptcha annotate assessment
+- google recaptcha get key
+- google recaptcha create assessment
+- createkey
+- abuse prevention
 - google cloud
+- security
 slug: google-recaptcha-capability
 source_filename: google-recaptcha-capability.yaml
 source_heading: Capability Spec

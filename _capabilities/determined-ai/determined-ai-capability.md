@@ -49,33 +49,33 @@ personas: []
 provider_name: Determined AI
 provider_slug: determined-ai
 search_terms:
-- mlops
+- getaccesstokens
+- getcheckpoint
+- determined
 - getclusterinfo
-- deep learning
-- get experiment
-- list templates
-- log in
-- get cluster info
-- list tokens
-- ai
-- artificial intelligence
+- getmodels
 - getusers
-- machine learning
+- ai
+- api
+- list templates
+- log out
+- list tokens
+- log in
+- getexperiments
+- deep learning
+- artificial intelligence
 - login
 - get checkpoint
-- api
-- determined
+- machine learning
 - gettemplates
-- getcheckpoint
-- list models
-- getexperiment
 - list users
-- list experiments
-- getaccesstokens
+- mlops
+- list models
 - logout
-- log out
-- getmodels
-- getexperiments
+- list experiments
+- get experiment
+- getexperiment
+- get cluster info
 slug: determined-ai-capability
 source_filename: determined-ai-capability.yaml
 source_heading: Capability Spec

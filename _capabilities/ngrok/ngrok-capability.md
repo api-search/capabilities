@@ -249,138 +249,138 @@ personas: []
 provider_name: ngrok
 provider_slug: ngrok
 search_terms:
-- ngrok get agent ingress
-- ngrok delete api key
-- createabusereport
-- updatereservedaddr
-- listeventsubscriptions
-- listiprestrictions
-- getcredential
-- ngrok delete endpoint
-- ngrok create endpoint
-- ngrok list endpoints
-- ngrok get ip policy
-- ngrok get event subscription
-- ngrok get reserved domain
-- ngrok delete ip policy rule
-- getapikey
-- deleteiprestriction
-- deletecertificateauthority
-- ngrok delete ip restriction
-- ngrok
-- updateippolicyrule
-- api
-- ngrok create certificate authority
-- updateapikey
-- ngrok update credential
-- deletecredential
-- deleteapikey
-- servers
 - createendpoint
-- ngrok get certificate authority
-- createagentingress
-- listippolicies
-- updateiprestriction
-- ngrok update ip restriction
-- ngrok list ip restrictions
-- listendpoints
-- updateagentingress
-- compute
-- ngrok create event subscription
-- developer tools
-- getabusereport
-- ngrok delete event subscription
-- updateippolicy
-- getippolicyrule
-- ngrok update event destination
-- ngrok create ip policy
-- listcredentials
-- ngrok list event destinations
-- ngrok get endpoint
-- ngrok update ip policy rule
-- listippolicyrules
-- ngrok list event subscriptions
-- ngrok get event destination
-- ngrok get ip policy rule
-- ngrok delete ip policy
-- ngrok update ip policy
-- ngrok create abuse report
-- ngrok list ip policies
-- ngrok create credential
-- geteventsubscription
-- ngrok update certificate authority
-- ngrok delete certificate authority
-- deleteendpoint
-- updateeventsubscription
-- ngrok get reserved address
-- listapikeys
-- createreservedaddr
-- ngrok delete reserved address
-- listreserveddomains
-- createcertificateauthority
-- ngrok get ip restriction
-- updatecredential
-- createreserveddomain
-- deleteippolicy
-- updateeventdestination
-- deleteeventsubscription
-- getcertificateauthority
-- ngrok create event destination
-- ngrok list reserved addresses
-- ngrok update agent ingress
-- deleteippolicyrule
-- getreserveddomain
+- createippolicy
 - getagentingress
-- ngrok create reserved domain
-- ingress
-- ngrok update endpoint
-- ngrok list api keys
-- ai gateway
-- ngrok list credentials
-- updatecertificateauthority
-- tunnels
-- createiprestriction
-- ngrok update api key
-- api gateway
-- ngrok list certificate authorities
-- deleteeventdestination
-- ngrok get api key
-- ngrok list agent ingresses
-- createcredential
-- ngrok create reserved address
-- geteventdestination
-- ngrok update reserved address
-- ngrok delete agent ingress
-- gateways
-- ngrok list reserved domains
-- deleteagentingress
-- listagentingresses
-- ngrok get credential
-- updateendpoint
-- ngrok get abuse report
-- getiprestriction
+- ngrok update certificate authority
+- ngrok get agent ingress
+- ngrok update ip restriction
+- ngrok update event subscription
+- api
+- getcredential
+- listreserveddomains
 - ngrok create ip restriction
-- ngrok delete event destination
-- listcertificateauthorities
+- deleteendpoint
+- ngrok list event subscriptions
+- deleteippolicyrule
+- updateeventsubscription
+- createeventsubscription
+- ngrok delete ip policy rule
+- ngrok list reserved domains
+- getcertificateauthority
+- ngrok update endpoint
 - deletereservedaddr
-- ngrok create agent ingress
+- ngrok delete agent ingress
+- ngrok list event destinations
+- updateippolicy
+- geteventdestination
+- ngrok create reserved address
+- getapikey
+- listippolicies
+- createagentingress
+- proxies
+- listiprestrictions
+- ngrok delete endpoint
+- ngrok list agent ingresses
+- ngrok create abuse report
+- ingress
+- updatecertificateauthority
+- ngrok
+- ai gateway
+- deleteeventsubscription
 - ngrok create api key
 - listeventdestinations
-- createeventdestination
-- getippolicy
-- createippolicy
-- ngrok update event subscription
-- ngrok create ip policy rule
-- ngrok list ip policy rules
-- listreservedaddrs
-- platform
-- getreservedaddr
-- createapikey
+- geteventsubscription
+- createcertificateauthority
+- ngrok get certificate authority
+- ngrok update credential
+- listapikeys
+- developer tools
+- listagentingresses
+- ngrok create endpoint
 - createippolicyrule
+- updateapikey
+- ngrok list api keys
+- updatecredential
+- tunnels
+- listreservedaddrs
+- getippolicyrule
+- ngrok delete api key
+- ngrok update event destination
+- listcertificateauthorities
+- ngrok list reserved addresses
+- updateendpoint
+- deleteagentingress
+- ngrok list ip policy rules
+- ngrok get ip policy rule
+- listcredentials
+- getreserveddomain
+- ngrok create event destination
+- platform
+- ngrok delete ip policy
+- ngrok list credentials
+- listendpoints
+- listippolicyrules
+- updateiprestriction
+- getabusereport
+- deleteapikey
+- ngrok get abuse report
+- getreservedaddr
+- api gateway
+- ngrok update agent ingress
+- listeventsubscriptions
+- deleteeventdestination
+- ngrok create reserved domain
+- ngrok get event destination
+- deletecertificateauthority
+- updateippolicyrule
+- createreservedaddr
+- ngrok get api key
+- getiprestriction
+- ngrok list ip policies
+- ngrok create agent ingress
+- ngrok delete event subscription
+- updatereservedaddr
+- ngrok delete event destination
+- updateagentingress
+- ngrok update ip policy rule
+- createapikey
+- ngrok delete certificate authority
+- ngrok get event subscription
+- createiprestriction
+- ngrok delete reserved address
+- ngrok create ip policy rule
+- ngrok get reserved domain
+- createcredential
+- gateways
+- ngrok get endpoint
+- ngrok list certificate authorities
+- ngrok delete ip restriction
+- createabusereport
+- servers
+- ngrok create event subscription
+- ngrok get credential
 - getendpoint
+- createreserveddomain
+- ngrok get ip policy
+- ngrok get reserved address
+- ngrok list ip restrictions
+- ngrok create certificate authority
+- getippolicy
+- ngrok create ip policy
+- ngrok create credential
+- ngrok update ip policy
+- ngrok update reserved address
+- deletecredential
+- ngrok get ip restriction
+- ngrok update api key
+- compute
+- createeventdestination
+- deleteippolicy
+- deleteiprestriction
 - ngrok delete credential
-- proxies
-- createeventsubscription
+- ngrok list endpoints
+- updateeventdestination
 slug: ngrok-capability
 source_filename: ngrok-capability.yaml
 source_heading: Capability Spec

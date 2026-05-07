@@ -61,40 +61,40 @@ personas: []
 provider_name: Open Container Initiative
 provider_slug: open-container-initiative
 search_terms:
-- listtags
-- open
-- list tags in a repository
-- listreferrers
-- deletemanifest
-- container
-- delete a manifest
-- getblobuploadstatus
-- containers
-- deleteblob
-- cloud native
-- standards
-- api version check
-- open source
-- list referrers for a manifest
 - push a manifest
-- api
-- initiateblobupload
-- complete a blob upload
+- containers
+- api version check
 - cancel a blob upload
-- putmanifest
 - delete a blob
-- getmanifest
-- completeblobupload
-- checkversion
-- uploadblobchunk
+- listreferrers
+- api
+- standards
 - cancelblobupload
+- deleteblob
+- getmanifest
+- cloud native
+- deletemanifest
+- uploadblobchunk
+- open source
 - retrieve a manifest
-- initiative
-- retrieve a blob
+- listtags
+- initiateblobupload
+- list tags in a repository
 - oci
 - get blob upload status
 - getblob
 - initiate a blob upload
+- complete a blob upload
+- container
+- putmanifest
+- delete a manifest
+- checkversion
+- open
+- initiative
+- list referrers for a manifest
+- getblobuploadstatus
+- completeblobupload
+- retrieve a blob
 - upload a blob chunk
 slug: open-container-initiative-capability
 source_filename: open-container-initiative-capability.yaml

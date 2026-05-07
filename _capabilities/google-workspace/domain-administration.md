@@ -57,57 +57,57 @@ personas: []
 provider_name: Google Workspace
 provider_slug: google-workspace
 search_terms:
-- create a new group.
-- sign out a user from all sessions.
-- google workspace
-- create org unit
-- update a user.
-- storage
-- create an organizational unit.
-- calendar
-- delete group
-- create a new user in the domain.
-- list users in the google workspace domain.
-- individual group management.
-- delete a user.
-- create user
-- get group
-- get user details.
-- update a group.
-- list users in the domain.
-- patch user properties.
-- create group
-- make user admin
-- update group
-- list organizational units.
-- domain administration
-- productivity
-- delete user
-- delete a group.
-- undelete user
 - get group details.
-- group management
-- organizational unit management.
-- patch user
-- individual user management.
-- list groups in the domain.
-- video conferencing
-- update user
-- make a user an admin.
-- get user
-- create a group.
-- email
-- list org units
-- sign out user
-- list users
+- user account management.
+- create group
+- domain administration
+- delete a group.
+- sign out a user from all sessions.
+- create a new user.
 - list groups.
 - list groups
-- user management
-- group management.
-- user account management.
+- list groups in the domain.
+- update user
+- create an organizational unit.
+- create org unit
+- list users in the google workspace domain.
+- list org units
+- sign out user
+- productivity
+- make a user an admin.
+- delete user
+- get group
+- organizational unit management.
 - collaboration
+- update a group.
+- patch user properties.
+- list users
+- individual user management.
+- create a new user in the domain.
+- patch user
+- update a user.
+- email
+- create a group.
+- make user admin
+- undelete user
+- user management
+- get user
 - undelete a deleted user.
-- create a new user.
+- storage
+- group management.
+- list organizational units.
+- create a new group.
+- create user
+- get user details.
+- video conferencing
+- google workspace
+- individual group management.
+- delete a user.
+- delete group
+- calendar
+- list users in the domain.
+- group management
+- update group
 slug: domain-administration
 source_filename: domain-administration.yaml
 source_heading: Capability Spec

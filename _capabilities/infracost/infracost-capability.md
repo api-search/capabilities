@@ -18,15 +18,15 @@ provider_name: Infracost
 provider_slug: infracost
 search_terms:
 - infracost
-- generatebreakdown
-- cloud cost
-- api
-- generatediff
 - terraform
-- infrastructure
-- finops
 - generate cost breakdown
 - generate cost diff
+- infrastructure
+- api
+- generatebreakdown
+- generatediff
+- finops
+- cloud cost
 slug: infracost-capability
 source_filename: infracost-capability.yaml
 source_heading: Capability Spec

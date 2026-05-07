@@ -61,38 +61,38 @@ personas: []
 provider_name: Energy Information Administration
 provider_slug: energy-information-administration
 search_terms:
-- list top-level data categories
-- query electricity retail sales time series
-- getelectricityretailsales
-- information
-- getpetroleumgasolinedieselprices
-- query state energy data system time series
-- getinternationalroutes
-- query natural gas price summary
-- list coal child routes
-- getroot
-- list international child routes
-- query co2 emissions aggregates
-- getnaturalgasroutes
-- list petroleum child routes
-- list electricity child routes
-- query gasoline and diesel retail prices
-- api
-- energy
-- administration
-- gettotalenergy
-- getelectricityroutes
-- getpetroleumroutes
-- federal government
-- getnaturalgaspricesummary
 - getnuclearoutagesroutes
+- query co2 emissions aggregates
+- list international child routes
+- api
 - list natural gas child routes
-- getcoalroutes
-- list nuclear outage child routes
-- getstateenergydata
-- query total energy time series
 - getco2emissionsaggregates
+- getroot
+- query natural gas price summary
+- getpetroleumroutes
+- getnaturalgaspricesummary
+- getinternationalroutes
+- information
+- administration
+- query total energy time series
+- list electricity child routes
+- list nuclear outage child routes
+- energy
+- list top-level data categories
+- getnaturalgasroutes
+- query electricity retail sales time series
+- query gasoline and diesel retail prices
+- list petroleum child routes
+- getcoalroutes
+- list coal child routes
+- getelectricityroutes
+- query state energy data system time series
+- getstateenergydata
+- gettotalenergy
+- federal government
 - open data
+- getpetroleumgasolinedieselprices
+- getelectricityretailsales
 slug: energy-information-administration-capability
 source_filename: energy-information-administration-capability.yaml
 source_heading: Capability Spec

@@ -25,32 +25,32 @@ personas: []
 provider_name: Telefono
 provider_slug: telefono
 search_terms:
-- data enrichment
+- validate number
+- phone lookup
+- batch validate numbers
 - validate up to 100 phone numbers in one request
+- telecommunications
+- format number
+- carrier lookup
+- look up the mobile carrier, network type (gsm/lte/5g), mcc, mnc, and portability status for a phone number
+- carrier and network information lookup
 - parse and reformat a phone number into e.164, national, international, and rfc3966 formats
 - fraud prevention
-- look up carrier information for a phone number
-- format number
-- validate phone number
-- phone validation
 - number verification
-- phone number format conversion
-- look up the mobile carrier, network type (gsm/lte/5g), mcc, mnc, and portability status for a phone number
-- number intelligence
-- carrier lookup
-- real-time phone number validation
-- telecommunications
-- batch phone number validation
-- validate batch
-- format a phone number into multiple standard formats
 - lookup carrier
 - validate a phone number and get type, carrier, country, and format
+- data enrichment
 - validate a list of up to 100 phone numbers in a single batch request
+- number intelligence
+- format a phone number into multiple standard formats
+- real-time phone number validation
+- look up carrier information for a phone number
 - validate a phone number and check if it is valid, reachable, mobile/landline/voip, and get the carrier and country
-- validate number
-- batch validate numbers
-- carrier and network information lookup
-- phone lookup
+- validate batch
+- validate phone number
+- batch phone number validation
+- phone number format conversion
+- phone validation
 slug: phone-intelligence
 source_filename: phone-intelligence.yaml
 source_heading: Capability Spec

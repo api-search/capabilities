@@ -21,18 +21,18 @@ personas: []
 provider_name: Radio.co
 provider_slug: radio-co
 search_terms:
-- get the currently playing track
-- retrieve station metadata
-- get api v2 stationid
 - streaming
-- api
-- get api v2 stationid track current
-- audio
-- co
+- retrieve station metadata
 - retrieve full station status
+- co
 - get stations stationid status
-- music
+- get api v2 stationid
+- get the currently playing track
+- get api v2 stationid track current
 - radio
+- api
+- music
+- audio
 slug: radio-co-capability
 source_filename: radio-co-capability.yaml
 source_heading: Capability Spec

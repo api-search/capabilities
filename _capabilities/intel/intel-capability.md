@@ -17,12 +17,12 @@ personas: []
 provider_name: intel
 provider_slug: intel
 search_terms:
-- get developer tools
-- intel
 - get toolkits
-- api
-- gettools
+- get developer tools
 - gettoolkits
+- gettools
+- intel
+- api
 slug: intel-capability
 source_filename: intel-capability.yaml
 source_heading: Capability Spec

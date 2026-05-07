@@ -73,45 +73,45 @@ personas: []
 provider_name: Macrostrat
 provider_slug: macrostrat
 search_terms:
-- search columns
-- get database statistics
-- search fossils
-- earth science
-- geology
-- getunits
-- geological data
+- getagemodel
 - getcolumns
-- paleontology
+- geologic map legend
+- rocks
+- macrostrat
 - getdefs
-- summarize sections
-- mobile data delivery
-- getgeologicmapunits
-- getpaleogeography
-- get grid data
-- getmobile
-- getmeasurements
-- geologic map point features
-- search units
-- getgeologicmappoints
 - geologic map units
-- getgrids
-- api metadata
-- standard definitions
 - api
+- mobile data delivery
+- getgeologicmaplegend
+- get age model
+- getgeologicmapunits
 - get paleogeography reconstructions
+- getmeta
+- summarize sections
 - getstats
 - geologic map creation
-- getmeta
-- getgeologicmaplegend
-- macrostrat
-- getsections
+- get grid data
+- paleontology
+- geologic map point features
+- search units
+- search fossils
+- getunits
 - get measurements
-- getfossils
-- rocks
-- getagemodel
-- get age model
-- geologic map legend
+- getsections
 - getcarto
+- earth science
+- search columns
+- getfossils
+- standard definitions
+- getmobile
+- get database statistics
+- geology
+- getgeologicmappoints
+- api metadata
+- getmeasurements
+- geological data
+- getgrids
+- getpaleogeography
 slug: macrostrat-capability
 source_filename: macrostrat-capability.yaml
 source_heading: Capability Spec

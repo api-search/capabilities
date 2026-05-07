@@ -49,37 +49,37 @@ personas: []
 provider_name: Financial Modeling Prep
 provider_slug: financial-modeling-prep
 search_terms:
-- get company income statement
-- liststocks
-- get company profile
-- market data
-- prep
-- get historical end-of-day prices
-- get real-time stock quote
-- getcompanyprofile
-- search for ticker symbols
-- getbalancesheet
-- financial statements
-- getinsidertrading
-- getquote
-- searchsymbols
-- historical
-- modeling
-- financial data
-- fundamentals
-- api
-- get company balance sheet
-- financial
-- list all available stock symbols
-- getcashflowstatement
-- gethistoricalprice
-- get company financial ratios
-- get insider transactions
 - stocks
-- getincomestatement
-- getfinancialratios
+- searchsymbols
+- getbalancesheet
 - get company cash flow statement
+- getcashflowstatement
+- getincomestatement
+- get company financial ratios
 - quotes
+- modeling
+- api
+- get historical end-of-day prices
+- getfinancialratios
+- search for ticker symbols
+- get company profile
+- get insider transactions
+- prep
+- financial data
+- getquote
+- fundamentals
+- getcompanyprofile
+- liststocks
+- gethistoricalprice
+- historical
+- financial statements
+- financial
+- get company income statement
+- list all available stock symbols
+- market data
+- get company balance sheet
+- getinsidertrading
+- get real-time stock quote
 slug: financial-modeling-prep-capability
 source_filename: financial-modeling-prep-capability.yaml
 source_heading: Capability Spec

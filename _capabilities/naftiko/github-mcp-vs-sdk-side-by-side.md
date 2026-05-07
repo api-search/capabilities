@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- get repo
-- mcp
-- get repo side by side
-- api integration
-- mcp vs sdk
-- list issues
-- governance
-- ai
-- spec-driven integration
 - github
+- governance
+- list issues
+- naftiko
+- get repo side by side
+- mcp vs sdk
+- ai
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- get repo
 slug: github-mcp-vs-sdk-side-by-side
 source_filename: github-mcp-vs-sdk-side-by-side.yaml
 source_heading: Capability Spec

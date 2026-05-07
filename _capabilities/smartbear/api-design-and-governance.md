@@ -49,63 +49,63 @@ personas: []
 provider_name: SmartBear
 provider_slug: smartbear
 search_terms:
-- publish a specific api version to make it publicly available
-- create api integration
-- get all available versions of a specific api
-- configure a new ci/cd or third-party integration for an api
-- list all apis for an organization or user
-- get api definition
-- get owner apis
-- list all api definitions for an organization or user in swaggerhub
-- list api integrations
-- create a new api project
-- retrieve the openapi definition for a specific version
-- get definition
-- list all ci/cd and third-party integrations configured for an api version
-- manage api versions
-- smartbear
-- list all projects for an owner
-- get api versions
-- swaggerhub
-- manage reusable schema domains
-- list all api projects organized by an owner
-- api design
-- publish api
-- documentation
-- manage api integrations with ci/cd and third-party tools
-- list all domains for an owner
-- create project
-- api governance
-- retrieve the complete openapi definition for a specific api version
-- create a new ci/cd or third-party integration
-- access api definitions
-- contract testing
-- api documentation
-- monitoring
-- publish a specific api version
-- get api integrations
-- manage api projects
-- discover apis in the swaggerhub catalog
-- create a new api project to organize related apis
-- list integrations for an api version
-- list projects
-- get owner projects
-- list apis
-- publish api version
-- search api catalog
-- list domains
-- publish and lifecycle management
-- search the public swaggerhub api catalog
-- platform
-- browse and manage api definitions
-- api testing
-- list all reusable schema domains for an owner
-- governance
-- collaboration
-- get all versions of a specific api
-- search apis
-- get owner domains
 - search the swaggerhub public api catalog for existing apis
+- governance
+- list all domains for an owner
+- create a new api project
+- swaggerhub
+- manage api versions
+- retrieve the complete openapi definition for a specific api version
+- list all ci/cd and third-party integrations configured for an api version
+- list integrations for an api version
+- get owner domains
+- publish a specific api version to make it publicly available
+- platform
+- get owner apis
+- manage api integrations with ci/cd and third-party tools
+- publish api version
+- manage api projects
+- list all reusable schema domains for an owner
+- search api catalog
+- search apis
+- monitoring
+- list domains
+- documentation
+- api governance
+- list api integrations
+- collaboration
+- search the public swaggerhub api catalog
+- create a new api project to organize related apis
+- get all available versions of a specific api
+- api design
+- access api definitions
+- publish api
+- create project
+- get owner projects
+- list projects
+- smartbear
+- discover apis in the swaggerhub catalog
+- get api integrations
+- create a new ci/cd or third-party integration
+- list all apis for an organization or user
+- get all versions of a specific api
+- get definition
+- retrieve the openapi definition for a specific version
+- publish and lifecycle management
+- list all api definitions for an organization or user in swaggerhub
+- list apis
+- get api definition
+- browse and manage api definitions
+- publish a specific api version
+- configure a new ci/cd or third-party integration for an api
+- list all projects for an owner
+- api documentation
+- list all api projects organized by an owner
+- contract testing
+- manage reusable schema domains
+- create api integration
+- get api versions
+- api testing
 slug: api-design-and-governance
 source_filename: api-design-and-governance.yaml
 source_heading: Capability Spec

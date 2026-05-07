@@ -42,36 +42,36 @@ provider_name: CargoSmart
 provider_slug: cargosmart
 search_terms:
 - logistics
-- get bill of lading
-- create container booking
-- vessel
-- container
-- searchvesselschedules
-- get shipment by bill of lading
+- getbilloflading
 - trackcontainer
-- maritime
-- ocean freight
-- visibility
-- createbooking
-- track multiple containers
-- documentation
-- iqax
-- supply chain
-- listbookings
+- get bill of lading
+- cargosmart
 - search vessel schedules
-- shipping
-- listcontainertracking
 - api
+- list bookings
+- supply chain
+- searchvesselschedules
+- create container booking
+- documentation
+- gsbn
+- getshipment
+- listcontainertracking
+- ocean freight
+- get shipment by bill of lading
+- createbooking
+- container
+- track multiple containers
 - booking
 - schedule
 - track container
-- getshipment
-- list bookings
-- getbilloflading
-- cargosmart
-- gsbn
-- get vessel position
+- visibility
 - tracking
+- iqax
+- vessel
+- maritime
+- shipping
+- listbookings
+- get vessel position
 - getvesselposition
 slug: cargosmart-capability
 source_filename: cargosmart-capability.yaml

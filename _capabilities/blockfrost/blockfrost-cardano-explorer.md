@@ -29,44 +29,44 @@ personas: []
 provider_name: Blockfrost
 provider_slug: blockfrost
 search_terms:
-- cardano blockchain exploration for developers, dapp builders, and analysts
-- web3
-- dApp Developer
-- nft
 - get latest block
-- blockchain
+- get account
+- interacts with cardano defi protocols and monitors address and account activity
+- cryptocurrency
+- get cardano stake account information including rewards, delegation, and pool information.
+- dapps
 - get the latest cardano block
 - get stake account information
-- submit a signed cardano transaction (cbor encoded) to the blockchain network.
-- Blockchain Analyst
-- get address
-- get asset
-- cardano
-- get native asset information
-- interacts with cardano defi protocols and monitors address and account activity
-- get latest epoch
-- get details of a specific cardano transaction by its hash, including inputs, outputs, and metadata.
-- analyzes on-chain data including blocks, transactions, and account activity
-- NFT Creator
-- dapps
 - get information about a cardano native asset including policy, name, supply, and on-chain metadata.
-- get transaction
-- submit transaction
-- get address information
-- get block
-- get cardano stake account information including rewards, delegation, and pool information.
-- get information about a cardano address including ada balance, utxos, and native asset holdings.
-- get the current cardano epoch information including start time, end time, and protocol parameters.
-- mints and manages cardano native assets and nft collections
 - get transaction by hash
-- DeFi User
-- cryptocurrency
-- core blockchain data and transaction management
-- builds decentralized applications on cardano using blockchain data and transaction submission
-- get the latest block on the cardano mainnet blockchain with slot, epoch, and transaction count information.
-- get account
-- get a specific cardano block by hash or block number.
+- get the current cardano epoch information including start time, end time, and protocol parameters.
+- dApp Developer
 - decentralized identity, assets, and governance
+- submit a signed cardano transaction (cbor encoded) to the blockchain network.
+- get latest epoch
+- cardano
+- get the latest block on the cardano mainnet blockchain with slot, epoch, and transaction count information.
+- web3
+- DeFi User
+- get address
+- get transaction
+- NFT Creator
+- get block
+- core blockchain data and transaction management
+- get information about a cardano address including ada balance, utxos, and native asset holdings.
+- nft
+- get address information
+- mints and manages cardano native assets and nft collections
+- cardano blockchain exploration for developers, dapp builders, and analysts
+- builds decentralized applications on cardano using blockchain data and transaction submission
+- analyzes on-chain data including blocks, transactions, and account activity
+- get asset
+- get a specific cardano block by hash or block number.
+- submit transaction
+- Blockchain Analyst
+- blockchain
+- get native asset information
+- get details of a specific cardano transaction by its hash, including inputs, outputs, and metadata.
 slug: blockfrost-cardano-explorer
 source_filename: blockfrost-cardano-explorer.yaml
 source_heading: Capability Spec

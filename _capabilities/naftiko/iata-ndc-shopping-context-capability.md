@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- price offer
-- travel
-- iata ndc
-- api integration
 - governance
+- iata ndc
+- shop
+- price offer
+- run an ndc airshopping query and return shaped offers.
+- travel
+- ai
 - capabilities
 - spec-driven integration
-- ai
+- api integration
 - mcp
-- run an ndc airshopping query and return shaped offers.
-- shop
+- naftiko
 slug: iata-ndc-shopping-context-capability
 source_filename: iata-ndc-shopping-context-capability.yaml
 source_heading: Capability Spec

@@ -21,19 +21,19 @@ personas: []
 provider_name: Grounded.tools
 provider_slug: grounded-tools
 search_terms:
-- grounded.tools send mcp message via streamable http
-- documentation
-- developers
-- developer tools
-- connectmcpsse
-- sendmcpmessage
-- api
-- grounded.tools web management ui
-- grounded
-- experience
 - tools
 - getwebui
+- developers
+- experience
+- grounded
+- documentation
+- grounded.tools send mcp message via streamable http
+- developer tools
+- sendmcpmessage
 - grounded.tools connect to mcp server via server-sent events
+- api
+- grounded.tools web management ui
+- connectmcpsse
 slug: grounded-tools-capability
 source_filename: grounded-tools-capability.yaml
 source_heading: Capability Spec

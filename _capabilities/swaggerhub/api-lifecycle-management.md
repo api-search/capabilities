@@ -53,52 +53,52 @@ personas: []
 provider_name: SwaggerHub
 provider_slug: swaggerhub
 search_terms:
-- list projects in a swaggerhub organization
-- api definition management
-- get api definition
-- retrieve the openapi definition for a specific swaggerhub api version
-- get owner apis
-- create a new project
-- list all members of a swaggerhub organization with their roles
-- search apis, domains, and templates
-- add organization members
-- list all apis for an owner
-- list organization members
-- create or update api definition
-- team management
 - api registry
-- smartbear
-- swaggerhub
-- api design
-- documentation
-- project management
-- create project
-- openapi
-- apis for an owner
-- organization member management
-- create a new swaggerhub project to organize related apis
-- get organization members
-- invite users to organization
-- ci/cd integrations
-- list all teams within a swaggerhub organization
-- list organization teams
 - list integrations
-- get api definition for a version
-- create or update an api definition in swaggerhub
-- delete api
-- search the swaggerhub registry
-- list ci/cd integrations configured for a swaggerhub api version
 - create or update api
+- delete api
+- swaggerhub
+- search apis, domains, and templates
 - list integrations for an api version
-- search specs
-- invite users to a swaggerhub organization
-- delete an api
-- api management
-- list projects
-- get organization teams
+- create or update api definition
+- list organization members
+- get api definition for a version
+- list all apis for an owner
+- get owner apis
+- api definition management
+- list all teams within a swaggerhub organization
+- ci/cd integrations
+- team management
+- invite users to organization
 - search the swaggerhub registry for apis, domains, and templates
-- api lifecycle management
+- openapi
+- create or update an api definition in swaggerhub
 - search apis
+- list all members of a swaggerhub organization with their roles
+- api management
+- documentation
+- organization member management
+- project management
+- search specs
+- get organization members
+- api design
+- list projects
+- create project
+- list projects in a swaggerhub organization
+- smartbear
+- apis for an owner
+- list organization teams
+- create a new project
+- add organization members
+- get organization teams
+- list ci/cd integrations configured for a swaggerhub api version
+- get api definition
+- invite users to a swaggerhub organization
+- retrieve the openapi definition for a specific swaggerhub api version
+- api lifecycle management
+- create a new swaggerhub project to organize related apis
+- search the swaggerhub registry
+- delete an api
 slug: api-lifecycle-management
 source_filename: api-lifecycle-management.yaml
 source_heading: Capability Spec

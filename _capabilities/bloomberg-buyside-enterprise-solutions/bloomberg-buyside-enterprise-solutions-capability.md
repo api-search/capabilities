@@ -49,39 +49,39 @@ personas: []
 provider_name: Bloomberg Buyside Enterprise Solutions
 provider_slug: bloomberg-buyside-enterprise-solutions
 search_terms:
-- runstresstest
-- bloomberg buyside enterprise solutions calculate option greeks
-- listyieldcurves
-- bloomberg buyside enterprise solutions list available yield curves
-- pricederivative
-- bloomberg buyside enterprise solutions run scenario analysis
-- evaluatesecurities
-- market data
 - analytics
-- financial services
-- calculatefixedincome
-- buy-side
-- bloomberg buyside enterprise solutions get fixed income cash flows
-- portfolio management
+- buyside
 - bloomberg
+- bloomberg buyside enterprise solutions run stress test
+- solutions
+- portfolio management
+- bloomberg buyside enterprise solutions calculate fixed income analytics
+- bloomberg buyside enterprise solutions calculate option greeks
+- api
 - bloomberg buyside enterprise solutions evaluate security prices
+- calculatefixedincome
+- asset management
+- bloomberg buyside enterprise solutions get yield curve data
+- buy-side
+- getyieldcurve
+- bloomberg buyside enterprise solutions price a derivative instrument
+- calculategreeks
+- bloomberg buyside enterprise solutions run scenario analysis
+- financial services
+- trading
 - enterprise solutions
 - enterprise
-- analyzescenario
-- bloomberg buyside enterprise solutions run stress test
-- trading
-- solutions
-- buyside
-- getyieldcurve
-- api
-- bloomberg buyside enterprise solutions calculate fixed income analytics
-- calculategreeks
-- bloomberg buyside enterprise solutions price a derivative instrument
-- bloomberg buyside enterprise solutions get yield curve data
-- asset management
-- getfixedincomecashflows
-- liststressscenarios
+- bloomberg buyside enterprise solutions list available yield curves
+- bloomberg buyside enterprise solutions get fixed income cash flows
 - bloomberg buyside enterprise solutions list predefined stress scenarios
+- analyzescenario
+- pricederivative
+- runstresstest
+- market data
+- liststressscenarios
+- evaluatesecurities
+- listyieldcurves
+- getfixedincomecashflows
 slug: bloomberg-buyside-enterprise-solutions-capability
 source_filename: bloomberg-buyside-enterprise-solutions-capability.yaml
 source_heading: Capability Spec

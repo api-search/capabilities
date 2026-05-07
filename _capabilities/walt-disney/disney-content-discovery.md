@@ -17,24 +17,24 @@ personas: []
 provider_name: Walt Disney
 provider_slug: walt-disney
 search_terms:
-- characters
 - get character
-- list disney characters
-- list all disney characters with pagination
-- list disney characters from the complete disney universe database
-- parks
-- streaming
-- get full details for a specific disney character including all films, tv shows, and park attractions
-- get a specific disney character by id
-- individual character details
-- disney
-- get disney character
 - media
 - disney character catalog
-- content discovery
-- entertainment
-- content
+- individual character details
+- get full details for a specific disney character including all films, tv shows, and park attractions
+- streaming
 - list characters
+- get a specific disney character by id
+- get disney character
+- list disney characters from the complete disney universe database
+- disney
+- list all disney characters with pagination
+- entertainment
+- list disney characters
+- parks
+- content discovery
+- content
+- characters
 slug: disney-content-discovery
 source_filename: disney-content-discovery.yaml
 source_heading: Capability Spec

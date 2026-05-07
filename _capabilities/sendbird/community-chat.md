@@ -34,40 +34,40 @@ provider_name: Sendbird
 provider_slug: sendbird
 search_terms:
 - list chat rooms
-- sendbird
-- social
-- register a new community member in sendbird.
-- get the profile of a community member.
-- community
-- get member profile
-- moderate ban member
-- temporarily mute a community member.
-- create room
-- list all community chat rooms and channels.
-- manage community chat rooms.
-- list community members.
-- moderation
-- list messages in a community chat room.
-- create chat room
-- moderate mute member
-- list rooms
-- manage messages in a chat room.
-- register a new community member.
-- register member
-- chat
-- list community members
-- list chat rooms.
-- create a new chat room.
 - manage community members.
-- list room messages
-- post a message to a community chat room.
-- ban a member from a community channel for violation of rules.
-- list members of the sendbird community.
-- post a message to a room.
-- create a new community chat room or group channel.
-- list members
 - post message
+- register a new community member in sendbird.
+- moderate ban member
+- post a message to a community chat room.
 - list messages in a room.
+- manage community chat rooms.
+- list chat rooms.
+- sendbird
+- ban a member from a community channel for violation of rules.
+- list community members
+- list members
+- post a message to a room.
+- register a new community member.
+- community
+- create a new chat room.
+- list members of the sendbird community.
+- create chat room
+- list all community chat rooms and channels.
+- list messages in a community chat room.
+- create room
+- list community members.
+- chat
+- manage messages in a chat room.
+- register member
+- get member profile
+- list room messages
+- list rooms
+- moderate mute member
+- social
+- moderation
+- create a new community chat room or group channel.
+- get the profile of a community member.
+- temporarily mute a community member.
 slug: community-chat
 source_filename: community-chat.yaml
 source_heading: Capability Spec

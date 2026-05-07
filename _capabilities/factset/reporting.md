@@ -18,40 +18,40 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- capital structure report
-- chart generation.
-- generate overview report.
-- generate chart
-- research
-- investment analytics
-- report generation.
 - visualization
-- reporting
-- market data
-- ownership report
-- report builder
-- portfolio analytics
-- generate a digital card.
-- list reports
-- factset
-- generate vermilion report.
-- overview report
-- entity report
-- build a custom report book.
-- financial data
-- list available reports.
-- generate digital card
-- generate a chart.
-- build book
-- financial
-- fundamentals report
 - generate ownership report.
-- generate capital structure report.
-- generate entity report.
-- generate estimates report.
-- generate fundamentals report.
-- estimates report
+- build a custom report book.
 - vermilion report
+- overview report
+- generate digital card
+- entity report
+- report generation.
+- capital structure report
+- generate fundamentals report.
+- list reports
+- chart generation.
+- factset
+- portfolio analytics
+- ownership report
+- financial data
+- research
+- fundamentals report
+- generate a chart.
+- generate estimates report.
+- build book
+- generate vermilion report.
+- generate entity report.
+- generate a digital card.
+- generate capital structure report.
+- list available reports.
+- report builder
+- financial
+- generate overview report.
+- market data
+- reporting
+- estimates report
+- investment analytics
+- generate chart
 slug: reporting
 source_filename: reporting.yaml
 source_heading: Capability Spec

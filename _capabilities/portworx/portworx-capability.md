@@ -249,133 +249,133 @@ personas: []
 provider_name: Portworx
 provider_slug: portworx
 search_terms:
-- openstoragecredentials update
-- allows querying alerts.
-- gettoken returns a auth token
-- openstoragefilesystemtrim autofstrimpop
-- openstoragebucket revokeaccess
-- status of a filesystem trim background operation on a mounted volume, if any
-- delete all fsck created snapshots on volume
-- start a filesystem trim background operation on a mounted volume
-- statechange can be used to stop, pause, and restart a backup
-- stop a filesystem check background operation on an unmounted volume, if any
-- inspect returns the information about a credential, but does not return the secret key.
-- openstoragecloudbackup catalog
-- enumerate returns list of cluster pairs
-- openstoragefilesystemtrim autofstrimstatus
-- push a auto filesystem trim job into the queue
-- creates a group backup request for a specified group. use openstoragecloudbackup.status() to get the current status of the backup request.
-- get status of a filesystem-check background operation on an unmounted volume, if any
-- openstoragefilesystemtrim status
-- openstoragefilesystemdefrag enumeratenodestatus
-- enumerate returns a list of credential ids
-- list all fsck created snapshots on volume
-- delete alerts
-- openstorageidentity capabilities
-- delete a cluster pair
-- data management
+- openstoragecloudbackup status
+- containers
+- openstoragebucket create
 - api
-- inspect returns information about a cluster domain and a status indicating whether the cluster domain is active
+- openstoragefilesystemtrim autofstrimstatus
 - update existing cloud backup schedule
-- openstoragecredentials inspect
-- history returns a list of backups for a specified volume
-- create cloud backup schedule
-- return a list of backups for the specified volume
-- openstoragefilesystemcheck listvolumes
-- openstoragecredentials create
-- enumerate returns all the jobs currently known to the system
-- openstorageclusterpair gettoken
-- collect starts a job to collect diagnostics from set of nodes that are selected based on the selectors provided in the sdkdiagscollectrequest. see sdkdiagscollectrequest for more details on how to select the nodes returns sdkdiagscollectres
-- openstoragefilesystemdefrag createschedule
-- openstoragecloudbackup groupcreate
-- get defrag status of a node
-- storage
-- resettoken returns a auth token
-- stop a filesystem trim background operation on a mounted volume, if any
+- gettoken returns a auth token
+- openstoragejob enumerate
 - size returns the size of any cloud backups of a volume
-- clean up all defrag schedules and stop all operations
-- enumerate returns names of all the cluster domains in the cluster
-- openstorageclusterpair inspect
-- activates a cluster domain in the cluster. all the nodes which are part of an active cluster domain will participate in cluster quorum calculation
-- openstoragecredentials enumerate
-- openstorageclusterdomains activate
-- cloud native
-- kubernetes
+- openstorageclusterpair resettoken
 - openstoragefilesystemcheck start
-- get /v1/filesystem-trim/auto-fstrim-status
-- list of all volumes which require fsck check/fix to be run
-- openstoragecloudbackup size
-- delete a specified credential
-- openstoragefilesystemcheck deletesnapshots
+- openstorageidentity version
+- get status of a filesystem-check background operation on an unmounted volume, if any
+- push a auto filesystem trim job into the queue
+- openstoragealerts delete
+- statechange can be used to stop, pause, and restart a backup
+- version returns version information about the system.
+- enumerate cloud backup schedules
+- input is very same as credential create
+- openstoragecloudbackup scheddelete
+- stop a filesystem check background operation on an unmounted volume, if any
+- openstoragealerts enumeratewithfilters
+- openstorageidentity capabilities
+- openstoragefilesystemtrim status
+- stop a filesystem trim background operation on a mounted volume, if any
+- create a schedule to run defragmentation tasks periodically
+- openstoragefilesystemdefrag cleanupschedules
+- create cloud backup schedule
+- allows querying alerts.
+- get defrag status of a node
+- history returns a list of backups for a specified volume
+- openstoragebucket revokeaccess
+- return a list of backups for the specified volume
+- openstoragefilesystemcheck status
+- openstorageclusterdomains inspect
+- cloud native
+- delete a cluster pair
+- create is used to submit cloud credentials. it will return an id of the credentials once they are verified to work.
+- openstoragefilesystemtrim stop
+- deleteall deletes all the backups in the cloud for the specified volume.
+- data management
+- openstoragefilesystemtrim autofstrimpush
 - openstorageclusterpair delete
-- openstoragecredentials validate
-- portworx
-- post /v1/bucket/access/{bucket_id}
+- deactivates a cluster domain in the cluster. all the nodes which are part of a deactivated cluster domain. will not participate in cluster quorum calculation
+- openstoragefilesystemdefrag createschedule
+- openstoragecredentials inspect
+- catalog returns a list of the contents in the backup
+- openstoragefilesystemcheck listsnapshots
+- openstoragecloudbackup deleteall
+- openstoragecredentials update
+- openstorageclusterdomains deactivate
+- openstoragefilesystemtrim start
 - openstorageclusterdomains enumerate
+- storage
+- openstoragecredentials create
+- openstoragecloudbackup schedcreate
+- activates a cluster domain in the cluster. all the nodes which are part of an active cluster domain will participate in cluster quorum calculation
+- openstoragecloudbackup catalog
+- enumerate all nodes, returning defrag status of the entire cluster
+- status returns the status of any cloud backups of a volume
+- deletes a backup stored in the cloud. if the backup is an incremental backup and other backups are dependent on it, it will not be able to be deleted.
+- openstoragecloudbackup restore
+- post /v1/bucket/access/{bucket_id}
+- delete cloud backup schedule
+- enumerate returns a list of credential ids
+- resettoken returns a auth token
+- openstoragefilesystemcheck listvolumes
+- collect starts a job to collect diagnostics from set of nodes that are selected based on the selectors provided in the sdkdiagscollectrequest. see sdkdiagscollectrequest for more details on how to select the nodes returns sdkdiagscollectres
+- delete alerts
+- get /v1/filesystem-trim/auto-fstrim-status
+- start a filesystem trim background operation on a mounted volume
+- enumerate returns list of cluster pairs
+- delete /v1/bucket/{bucket_id}
+- openstoragefilesystemtrim autofstrimpop
+- openstoragecloudbackup enumeratewithfilters
+- creates a backup request for a specified volume. use openstoragecloudbackup.status() to get the current status of the backup request.
+- openstoragecloudbackup schedupdate
+- openstoragecredentials enumerate
+- inspect returns the information about a credential, but does not return the secret key.
+- kubernetes
+- openstoragecloudbackup schedenumerate
+- portworx
+- post /v1/bucket
+- post /v1/bucket/revoke/{bucket_id}
+- creates a group backup request for a specified group. use openstoragecloudbackup.status() to get the current status of the backup request.
+- inspect information about a cluster pair
+- clean up all defrag schedules and stop all operations
+- capabilities returns the supported services by the cluster. this allows sdk implementations to advertise their supported services as the api matures. with this information, clients can determine supported services from storage clusters at d
+- openstoragefilesystemtrim autofstrimusage
+- delete a specified credential
+- openstoragecredentials delete
+- status of a filesystem trim background operation on a mounted volume, if any
+- openstorageclusterpair gettoken
+- openstoragecredentials validate
+- openstoragecluster inspectcurrent
+- openstoragecloudbackup groupcreate
+- openstoragediags collect
+- restore creates a new volume from a backup id. the newly created volume has an ha_level (number of replicas) of only 1. to increase the number of replicas, use openstoragevolume.set() to change the ha_level.
+- openstoragebucket delete
+- openstorageclusterpair inspect
 - openstoragecloudbackup create
 - openstoragecloudbackup history
-- creates a backup request for a specified volume. use openstoragecloudbackup.status() to get the current status of the backup request.
-- deletes a backup stored in the cloud. if the backup is an incremental backup and other backups are dependent on it, it will not be able to be deleted.
-- openstoragecloudbackup schedenumerate
-- catalog returns a list of the contents in the backup
-- openstorageidentity version
-- delete /v1/bucket/{bucket_id}
-- validate is used to validate credentials
-- openstoragealerts delete
-- status returns the status of any cloud backups of a volume
-- input is very same as credential create
-- openstoragefilesystemtrim autofstrimpush
-- openstoragecluster inspectcurrent
-- openstoragebucket delete
-- openstoragecredentials deletereferences
-- delete cloud backup schedule
-- openstoragediags collect
-- openstoragecloudbackup delete
-- openstoragecloudbackup schedcreate
-- openstorageclusterpair enumerate
-- deletereferences is used to remove references to credentials
-- openstorageclusterpair resettoken
-- enumerate all nodes, returning defrag status of the entire cluster
-- create a schedule to run defragmentation tasks periodically
-- openstorageclusterpair create
-- version returns version information about the system.
-- openstoragebucket create
-- openstoragecloudbackup enumeratewithfilters
-- enumerate cloud backup schedules
-- openstorageclusterdomains deactivate
-- openstoragealerts enumeratewithfilters
-- openstoragefilesystemdefrag getnodestatus
-- openstoragecredentials delete
-- create is used to submit cloud credentials. it will return an id of the credentials once they are verified to work.
-- openstoragejob enumerate
-- openstoragefilesystemcheck listsnapshots
-- openstoragefilesystemcheck status
-- post /v1/bucket/revoke/{bucket_id}
-- openstoragefilesystemtrim stop
-- openstoragecloudbackup scheddelete
-- usage of a filesystem trim background operation on all locally mounted volume
-- pop a auto filesystem trim job from the queue
-- deactivates a cluster domain in the cluster. all the nodes which are part of a deactivated cluster domain. will not participate in cluster quorum calculation
-- deleteall deletes all the backups in the cloud for the specified volume.
-- openstoragebucket grantaccess
-- containers
-- openstoragefilesystemdefrag cleanupschedules
 - inspectcurrent returns information about the current cluster
-- inspect information about a cluster pair
-- openstoragefilesystemtrim start
-- openstorageclusterdomains inspect
-- openstoragefilesystemtrim autofstrimusage
-- openstoragefilesystemcheck stop
+- openstoragefilesystemdefrag getnodestatus
+- openstoragecloudbackup size
+- openstoragefilesystemcheck deletesnapshots
+- pop a auto filesystem trim job from the queue
+- usage of a filesystem trim background operation on all locally mounted volume
+- validate is used to validate credentials
+- openstoragefilesystemdefrag enumeratenodestatus
+- deletereferences is used to remove references to credentials
+- list of all volumes which require fsck check/fix to be run
+- openstoragecloudbackup delete
 - start a filesystem-check background operation on a unmounted volume.
-- openstoragecloudbackup status
-- openstoragecloudbackup deleteall
-- post /v1/bucket
-- openstoragecloudbackup restore
-- openstoragecloudbackup statechange
-- restore creates a new volume from a backup id. the newly created volume has an ha_level (number of replicas) of only 1. to increase the number of replicas, use openstoragevolume.set() to change the ha_level.
+- openstorageclusterpair enumerate
+- openstoragecredentials deletereferences
+- enumerate returns names of all the cluster domains in the cluster
 - creates pair with a remote cluster and returns details about the remote cluster
-- capabilities returns the supported services by the cluster. this allows sdk implementations to advertise their supported services as the api matures. with this information, clients can determine supported services from storage clusters at d
-- openstoragecloudbackup schedupdate
+- openstoragefilesystemcheck stop
+- openstorageclusterpair create
+- enumerate returns all the jobs currently known to the system
+- openstorageclusterdomains activate
+- openstoragecloudbackup statechange
+- openstoragebucket grantaccess
+- inspect returns information about a cluster domain and a status indicating whether the cluster domain is active
+- delete all fsck created snapshots on volume
+- list all fsck created snapshots on volume
 slug: portworx-capability
 source_filename: portworx-capability.yaml
 source_heading: Capability Spec

@@ -161,84 +161,84 @@ personas: []
 provider_name: magento
 provider_slug: magento
 search_terms:
-- create a product
-- get product by sku
-- add a comment to an order
-- get category by id
-- delete a category
-- update a category
-- list inventory sources
-- deleteproduct
-- create an order
-- createproduct
-- create an inventory source
-- createinvoice
-- get customer by id
-- listorders
-- get invoice by id
-- getinventorysource
-- createguestcart
+- updateproduct
+- get admin authentication token
+- listcategories
 - api
+- getshipment
 - list categories
+- cancel an order
+- list tax rates
+- get invoice by id
+- list orders
+- getinvoice
+- createinventorysource
+- listtaxrates
+- deletecategory
+- createcategory
 - listinvoices
 - cancelorder
-- create a customer
-- updatecustomer
-- getshipment
-- deletecustomer
-- list invoices
-- updatesourceitems
-- delete a customer
-- list tax rates
-- create a guest cart
-- getcategory
-- deletecategory
-- getcustomer
-- listproducts
-- createcustomertoken
-- listsourceitems
-- createcustomer
-- list orders
-- updateproduct
-- getproduct
-- liststoreconfigs
-- updateinventorysource
-- get order by id
-- create an invoice for an order
-- listtaxrates
-- get shipment by id
-- createcategory
-- magento
-- update a product
-- createshipment
-- searchcustomers
-- get customer authentication token
-- delete a product
-- listinventorysources
-- update a customer
-- cancel an order
-- create a shipment
-- getinvoice
-- get admin authentication token
-- list store configurations
-- updatecategory
-- getorder
-- createcustomercart
-- search customers
-- listcategories
-- createorder
-- update source item quantities
-- addordercomment
-- add item to customer cart
-- create a category
 - create a cart for the authenticated customer
-- list products
-- createinventorysource
+- delete a category
+- searchcustomers
 - update an inventory source
+- getcustomer
+- get category by id
+- liststoreconfigs
+- list products
+- createorder
+- magento
+- create a customer
+- listinventorysources
+- get product by sku
+- listorders
+- getproduct
+- update a customer
+- add item to customer cart
+- createshipment
+- get shipment by id
+- create a product
+- updatesourceitems
+- createadmintoken
 - list source item quantities
 - additemtocart
+- updateinventorysource
+- list inventory sources
+- create a shipment
+- createcustomercart
+- get order by id
+- update source item quantities
+- get customer authentication token
+- delete a customer
+- create a category
+- update a category
+- createcustomer
+- getinventorysource
+- listproducts
 - get inventory source by code
-- createadmintoken
+- listsourceitems
+- addordercomment
+- update a product
+- list invoices
+- createinvoice
+- createguestcart
+- create an order
+- createproduct
+- updatecustomer
+- create an invoice for an order
+- deletecustomer
+- get customer by id
+- getcategory
+- create a guest cart
+- updatecategory
+- getorder
+- search customers
+- list store configurations
+- delete a product
+- deleteproduct
+- add a comment to an order
+- createcustomertoken
+- create an inventory source
 slug: magento-capability
 source_filename: magento-capability.yaml
 source_heading: Capability Spec

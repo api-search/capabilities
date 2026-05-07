@@ -13,16 +13,16 @@ personas: []
 provider_name: osmAPI
 provider_slug: osmapi
 search_terms:
-- llm
-- gateway
-- createmessage
-- api
-- routing
 - osmapi
 - openai
-- create a message
-- ai
 - anthropic
+- gateway
+- routing
+- ai
+- llm
+- api
+- create a message
+- createmessage
 slug: osmapi-capability
 source_filename: osmapi-capability.yaml
 source_heading: Capability Spec

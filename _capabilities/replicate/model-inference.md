@@ -45,48 +45,48 @@ personas: []
 provider_name: Replicate
 provider_slug: replicate
 search_terms:
-- get or cancel a specific prediction.
-- cancel a currently running prediction.
 - run inference on an official replicate model.
-- create prediction
-- curated model collections.
-- language models
-- specific model collection.
-- run inference against a production deployment for lower latency.
-- create predictions using official models.
-- create predictions using production deployments.
-- create deployment prediction
-- deployments
-- create and manage model inference predictions.
-- get collection
-- list available hardware for running models.
-- get prediction status and output.
-- cancel prediction
-- browse curated model collections by category.
-- list available gpu hardware options for running models.
-- artificial intelligence
-- model deployment
-- create a new inference prediction.
-- list all predictions.
-- get all models in a specific curated collection.
-- machine learning
-- list predictions
-- get prediction
-- cancel a running prediction.
 - get a specific model collection.
-- list all inference predictions for the account.
-- predictions
-- get the status and output of a prediction.
-- create model prediction
-- list hardware
+- model deployment
+- get prediction
 - run a new ai model inference prediction by specifying a model version and input.
-- image generation
-- run inference against a production deployment.
-- available gpu hardware options.
-- model inference
-- list collections
 - run inference on an official replicate model (no version required).
+- create deployment prediction
+- cancel a running prediction.
+- image generation
+- create predictions using production deployments.
+- artificial intelligence
+- list available hardware for running models.
+- cancel a currently running prediction.
+- run inference against a production deployment for lower latency.
+- list all predictions.
+- create and manage model inference predictions.
+- machine learning
+- list all inference predictions for the account.
+- create predictions using official models.
+- run inference against a production deployment.
+- specific model collection.
+- get the status and output of a prediction.
+- language models
+- deployments
+- create prediction
+- predictions
+- list collections
+- get all models in a specific curated collection.
+- cancel prediction
+- curated model collections.
+- browse curated model collections by category.
+- list predictions
+- model inference
+- list available gpu hardware options for running models.
+- list hardware
+- get prediction status and output.
+- create a new inference prediction.
 - list all curated model collections.
+- get or cancel a specific prediction.
+- get collection
+- create model prediction
+- available gpu hardware options.
 slug: model-inference
 source_filename: model-inference.yaml
 source_heading: Capability Spec

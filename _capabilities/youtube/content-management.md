@@ -70,54 +70,54 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- manage youtube videos
+- upload a new video to youtube
+- streaming
+- video
+- remove a video from a playlist
+- list captions
+- update playlist
 - list youtube playlists
-- delete a video
+- delete a video from youtube
 - remove playlist item
-- manage youtube playlists
-- social
+- delete caption
+- create playlist
+- youtube
+- update playlist details
+- delete a playlist
+- delete video
+- list playlist items
+- google
+- upload a new video
+- update caption
+- list playlists
+- manage youtube videos
+- add playlist item
+- delete a video
+- add a video to a playlist
 - list caption tracks for a video
+- list items in a playlist
+- manage youtube playlists
+- list youtube videos matching criteria
+- upload caption
+- manage video captions
+- media
+- content management
 - playlists
 - captions
-- list youtube videos matching criteria
-- add a video to a playlist
 - list videos
-- update playlist details
-- update a caption track
-- delete caption
-- google
-- videos
-- remove a video from a playlist
-- update playlist
-- delete video
-- content management
-- manage video captions
-- upload a new video to youtube
-- delete a playlist
-- upload a new caption track
-- delete playlist
-- list captions
-- list videos matching criteria
-- create a new playlist
-- delete a caption track
-- create playlist
-- video
-- list playlists
-- upload a new video
-- youtube
-- upload video
-- media
-- list playlist items
-- upload a caption track
-- list items in a playlist
-- delete a video from youtube
-- streaming
-- update video
 - update video metadata
-- add playlist item
-- upload caption
-- update caption
 - manage items within playlists
+- upload a caption track
+- videos
+- social
+- update a caption track
+- delete a caption track
+- list videos matching criteria
+- delete playlist
+- upload video
+- update video
+- upload a new caption track
+- create a new playlist
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

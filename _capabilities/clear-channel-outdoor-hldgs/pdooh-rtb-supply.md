@@ -9,13 +9,13 @@ personas: []
 provider_name: Clear Channel Outdoor Holdings
 provider_slug: clear-channel-outdoor-hldgs
 search_terms:
-- digital out of home
-- out of home
-- advertising
-- openrtb
 - programmatic
-- pdooh
+- out of home
 - opendirect
+- digital out of home
+- advertising
+- pdooh
+- openrtb
 slug: pdooh-rtb-supply
 source_filename: pdooh-rtb-supply.yaml
 source_heading: Capability Spec

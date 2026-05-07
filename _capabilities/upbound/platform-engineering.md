@@ -65,60 +65,60 @@ personas: []
 provider_name: Upbound
 provider_slug: upbound
 search_terms:
-- robot account management for ci/cd automation
-- individual organization
-- list robot accounts for ci/cd automation
-- delete control plane
-- delete organization
-- managed control plane lifecycle
-- create control plane
-- list organizations
-- create a robot account
-- create robot
-- list all upbound organizations the user belongs to
-- platform engineering
-- list control planes in organization
-- list repositories
-- developer experience
-- list robots
-- internal developer platform
-- team management
-- list teams
-- individual control plane operations
-- organization management
-- create a package repository
-- cloud infrastructure
 - crossplane
-- provision a new managed crossplane control plane
-- list package repositories
-- get organization
-- get control plane status and details
-- list robot accounts
-- get organization details
-- list control planes
-- create team
-- create a new organization
-- delete a managed control plane
-- create organization
 - list all organizations
-- get details for a specific upbound organization
-- create a new team
-- list teams in an upbound organization
-- create a robot account for ci/cd pipeline access
-- deprovision and delete a managed control plane
-- create a new upbound organization
-- delete an organization
-- upbound
+- create a new organization
+- developer experience
 - list teams in organization
+- create organization
+- list robot accounts
 - list managed crossplane control planes in an organization
-- create a new managed control plane
-- create a new crossplane package repository
-- list crossplane package repositories in an organization
-- get control plane
+- create team
+- robot account management for ci/cd automation
+- individual control plane operations
+- create robot
+- create control plane
+- create a new upbound organization
+- team management
+- managed control plane lifecycle
+- list robots
 - control planes
-- get status and configuration of a managed control plane
 - package repository management
+- list teams
+- get control plane
+- list all upbound organizations the user belongs to
+- deprovision and delete a managed control plane
+- create a package repository
+- create a new crossplane package repository
+- get details for a specific upbound organization
+- create a new managed control plane
+- get organization details
 - create repository
+- list crossplane package repositories in an organization
+- provision a new managed crossplane control plane
+- list organizations
+- internal developer platform
+- individual organization
+- cloud infrastructure
+- list control planes
+- organization management
+- upbound
+- get status and configuration of a managed control plane
+- list teams in an upbound organization
+- delete control plane
+- list package repositories
+- create a robot account for ci/cd pipeline access
+- create a robot account
+- list control planes in organization
+- list robot accounts for ci/cd automation
+- get control plane status and details
+- delete a managed control plane
+- create a new team
+- delete organization
+- get organization
+- list repositories
+- delete an organization
+- platform engineering
 slug: platform-engineering
 source_filename: platform-engineering.yaml
 source_heading: Capability Spec

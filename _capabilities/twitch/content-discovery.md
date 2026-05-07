@@ -33,42 +33,42 @@ personas: []
 provider_name: Twitch
 provider_slug: twitch
 search_terms:
-- get the most popular game categories on twitch right now
-- query game database
-- get the most popular games on twitch
-- get clips
-- get videos
-- content discovery
-- search for twitch channels by name
-- get game information by id or name
-- twitch
-- channel information and search
-- search channels
-- content clips
-- detailed game metadata from igdb
-- gaming
-- query the igdb game database for detailed game metadata
-- get games
-- query detailed game information from igdb
-- get video clips from a broadcaster or game category
-- query gaming platform information from igdb
-- video
-- get videos from a broadcaster or game
-- find active live streams on twitch by game, language, or user
-- get streams
-- get vods and highlight videos from a broadcaster
-- entertainment
-- game and category discovery
-- query game platforms
-- query games
-- get clips from a broadcaster or game
-- get active live streams filtered by game, language, or user
 - streaming
-- live stream discovery
-- get top games
-- search for twitch channels
-- live video
+- channel information and search
+- video
+- get videos
+- get vods and highlight videos from a broadcaster
+- get active live streams filtered by game, language, or user
+- search channels
+- get the most popular games on twitch
+- query the igdb game database for detailed game metadata
 - vod and highlight videos
+- query game database
+- get streams
+- detailed game metadata from igdb
+- get top games
+- query game platforms
+- game and category discovery
+- query detailed game information from igdb
+- get games
+- content clips
+- query gaming platform information from igdb
+- get the most popular game categories on twitch right now
+- query games
+- get game information by id or name
+- gaming
+- get video clips from a broadcaster or game category
+- get clips
+- entertainment
+- live video
+- content discovery
+- find active live streams on twitch by game, language, or user
+- search for twitch channels by name
+- get clips from a broadcaster or game
+- live stream discovery
+- search for twitch channels
+- twitch
+- get videos from a broadcaster or game
 slug: content-discovery
 source_filename: content-discovery.yaml
 source_heading: Capability Spec

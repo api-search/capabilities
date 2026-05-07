@@ -45,51 +45,51 @@ personas: []
 provider_name: SingleStore
 provider_slug: singlestore
 search_terms:
-- query data
-- execute sql
-- create workspace
-- provision a new singlestore workspace with specified compute size
-- list jobs
-- list available cloud regions for deploying singlestore workspaces
-- execute a select sql query against singlestore and return results
-- resume a workspace
-- list scheduled notebook automation jobs
 - analytics
-- manage workspace groups
-- suspend a workspace to reduce costs
-- resume workspace
-- execute ddl or dml sql statements
-- suspend a workspace
-- workspaces
-- manage workspaces
-- suspend a running workspace to pause billing during idle periods
-- list deployment regions
-- cloud
-- get workspace
-- sql
-- resume a suspended workspace to restore database access
-- get details and connection information for a specific workspace
-- resume a suspended workspace
-- execute select queries and return results as rows
-- create a new singlestore workspace group in a specified region
-- create a workspace
-- database
-- query database
-- create workspace group
 - list all workspace groups
-- create a workspace group
 - list workspaces
-- list available regions
-- list all workspaces in the organization
-- execute a sql ddl or dml statement against singlestore (create table, insert, update, delete)
-- list regions
-- execute sql statements
-- query data with row results
-- provisioning
-- distributed sql
-- list all singlestore workspace groups in the organization
-- list workspace groups
+- suspend a running workspace to pause billing during idle periods
+- manage workspaces
 - suspend workspace
+- list regions
+- provision a new singlestore workspace with specified compute size
+- create a workspace
+- query database
+- suspend a workspace
+- resume a suspended workspace to restore database access
+- execute sql
+- query data with row results
+- query data
+- list available cloud regions for deploying singlestore workspaces
+- execute ddl or dml sql statements
+- execute a select sql query against singlestore and return results
+- create workspace
+- distributed sql
+- list available regions
+- provisioning
+- sql
+- execute sql statements
+- create a workspace group
+- list all singlestore workspace groups in the organization
+- manage workspace groups
+- create a new singlestore workspace group in a specified region
+- list deployment regions
+- suspend a workspace to reduce costs
+- database
+- get details and connection information for a specific workspace
+- cloud
+- list jobs
+- execute select queries and return results as rows
+- execute a sql ddl or dml statement against singlestore (create table, insert, update, delete)
+- resume workspace
+- create workspace group
+- list workspace groups
+- resume a workspace
+- workspaces
+- list scheduled notebook automation jobs
+- list all workspaces in the organization
+- get workspace
+- resume a suspended workspace
 slug: database-operations
 source_filename: database-operations.yaml
 source_heading: Capability Spec

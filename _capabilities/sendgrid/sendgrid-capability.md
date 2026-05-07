@@ -45,32 +45,32 @@ personas: []
 provider_name: SendGrid
 provider_slug: sendgrid
 search_terms:
-- get account offerings
-- createaccount
-- marketing email
-- deleteaccount
 - get all available offerings
-- smtp
-- listoffering
-- getaccountstate
 - create an account
-- get an account's state
-- updateaccountoffering
-- update account offerings
-- t1
-- email api
-- api
-- listaccountoffering
-- update an account's state
-- transactional email
-- listaccount
 - authenticateaccount
+- update an account's state
+- marketing email
+- update account offerings
+- api
 - delete an account
-- email
-- get all accounts
+- listaccount
 - authenticate an account with single sign on
-- updateaccountstate
+- updateaccountoffering
+- email api
+- listaccountoffering
+- transactional email
+- t1
 - sendgrid
+- email
+- get an account's state
+- deleteaccount
+- createaccount
+- listoffering
+- updateaccountstate
+- smtp
+- get all accounts
+- get account offerings
+- getaccountstate
 slug: sendgrid-capability
 source_filename: sendgrid-capability.yaml
 source_heading: Capability Spec

@@ -41,30 +41,30 @@ personas: []
 provider_name: Google Cloud Composer
 provider_slug: google-cloud-composer
 search_terms:
-- google cloud composer list image versions
-- google cloud composer list operations
+- google cloud composer create a composer environment
+- google cloud composer get an operation
+- google cloud composer get a composer environment
+- listoperations
+- api
 - getenvironment
+- google cloud composer list image versions
+- google
 - createenvironment
+- listimageversions
+- google cloud composer delete a composer environment
+- apache airflow
+- google cloud composer list operations
+- workflow orchestration
+- composer
+- getoperation
+- google cloud composer update a composer environment
 - google cloud composer list composer environments
-- data pipelines
 - updateenvironment
 - cloud
-- google
-- google cloud
-- workflow orchestration
-- google cloud composer update a composer environment
-- listoperations
-- google cloud composer get an operation
-- api
-- google cloud composer get a composer environment
-- listimageversions
 - listenvironments
-- getoperation
-- composer
-- google cloud composer create a composer environment
-- apache airflow
-- google cloud composer delete a composer environment
+- data pipelines
 - deleteenvironment
+- google cloud
 slug: google-cloud-composer-capability
 source_filename: google-cloud-composer-capability.yaml
 source_heading: Capability Spec

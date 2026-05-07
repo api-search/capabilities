@@ -45,31 +45,31 @@ personas: []
 provider_name: Nokia NetAct
 provider_slug: nokia-netact
 search_terms:
-- getnetworkelementchildren
 - list active alarms
-- get network element details
-- listnetworkelements
-- get child network elements
-- nokia
-- oss
-- network management
-- netact
-- getnetworkelementattributes
-- get managed object attributes
-- getalarm
-- acknowledge an alarm
-- modify managed object attributes
-- updatenetworkelementattributes
-- list network elements
-- listactivealarms
-- acknowledgealarm
-- api
-- getnetworkelement
-- getperformancekpis
-- snmp
-- get alarm details
-- get kpi performance counters
 - telecom
+- getperformancekpis
+- updatenetworkelementattributes
+- getnetworkelementchildren
+- api
+- modify managed object attributes
+- network management
+- listactivealarms
+- get network element details
+- acknowledge an alarm
+- getalarm
+- get managed object attributes
+- acknowledgealarm
+- getnetworkelementattributes
+- get child network elements
+- snmp
+- listnetworkelements
+- list network elements
+- get alarm details
+- netact
+- get kpi performance counters
+- oss
+- getnetworkelement
+- nokia
 slug: nokia-netact-capability
 source_filename: nokia-netact-capability.yaml
 source_heading: Capability Spec

@@ -61,67 +61,67 @@ personas: []
 provider_name: Trigger.dev
 provider_slug: trigger-dev
 search_terms:
-- create a waitpoint token for human-in-the-loop approval
-- waitpoint token management
-- create a waitpoint token for a human-in-the-loop approval workflow
-- cancel a run
-- complete a waitpoint to resume a paused run with approval data
-- pause queue
-- list all task queues with their current depth and concurrency
-- scheduling
-- queue monitoring and control
-- create schedule
-- pause a queue
-- resume queue
-- get run details, status, and output
-- complete a waitpoint
-- trigger a background task with a payload
+- list all configured schedules
+- resume a paused queue
+- ai agents
+- task management
+- get detailed status, output, and metadata for a specific run
 - developer-first
 - list task runs, filterable by status, tags, or task identifier
-- create a cron schedule
-- list all configured task schedules with their cron expressions
-- queue pause control
-- batch trigger multiple task runs
-- typescript
+- workflow automation
+- background jobs
+- cancel a queued or executing run
+- list all task queues with their current depth and concurrency
+- resume a paused queue to allow runs to execute
+- trigger a task run with payload and options
 - replay a run with the same payload
 - list queues
-- run listing and monitoring
-- trigger a task run with payload and options
 - list all task queues
-- trigger a background task
-- get detailed status, output, and metadata for a specific run
-- resume a paused queue to allow runs to execute
-- list runs
-- open source
-- queue resume control
-- trigger.dev
-- queue management
-- task management
-- workflow automation
-- ai agents
-- individual run details
-- complete a waitpoint to resume the waiting run
-- get run
-- background jobs
-- cancel a queued or currently executing run
-- list all configured schedules
-- create waitpoint token
-- replay a completed run with the original payload
-- resume a paused queue
-- batch trigger tasks
-- pause a queue to prevent new runs from starting
-- replay run
-- list schedules
-- trigger multiple tasks in a single batch
-- trigger task
-- list runs with filtering
-- cancel run
-- cancel a queued or executing run
-- replay a run
 - schedule management
+- list runs with filtering
+- batch trigger tasks
+- replay a completed run with the original payload
+- get run details, status, and output
+- individual run details
+- trigger a background task with a payload
+- trigger.dev
+- open source
+- create a waitpoint token for human-in-the-loop approval
+- queue pause control
+- pause a queue
+- trigger multiple task runs in a single batch request
+- complete a waitpoint
+- list runs
+- pause a queue to prevent new runs from starting
+- trigger a background task
+- trigger multiple tasks in a single batch
+- pause queue
+- replay run
+- cancel a queued or currently executing run
+- list schedules
+- complete a waitpoint to resume a paused run with approval data
+- create waitpoint token
 - create a new cron schedule to run a task automatically
 - complete waitpoint token
-- trigger multiple task runs in a single batch request
+- queue management
+- resume queue
+- typescript
+- run listing and monitoring
+- trigger task
+- batch trigger multiple task runs
+- list all configured task schedules with their cron expressions
+- cancel run
+- replay a run
+- create a waitpoint token for a human-in-the-loop approval workflow
+- cancel a run
+- scheduling
+- queue monitoring and control
+- waitpoint token management
+- get run
+- complete a waitpoint to resume the waiting run
+- queue resume control
+- create a cron schedule
+- create schedule
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

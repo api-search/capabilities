@@ -53,50 +53,50 @@ personas: []
 provider_name: Oracle
 provider_slug: oracle
 search_terms:
-- list volume attachments in a compartment
-- get instance details
-- compute
-- terminate an instance
-- update image
-- create a custom image
-- get details of a specific image
-- manage a specific compute instance
-- list shapes
-- infrastructure
-- list compute images
-- list vnic attachments in a compartment
-- create a custom image from an instance
 - list compute instances in a compartment
-- update image details
-- list instance console connections
-- cloud
-- launch a new compute instance
-- manage a specific image
-- enterprise
-- terminate instance
-- update instance
-- list instances
-- manage compute instances
-- oracle
-- perform an action on an instance (start, stop, reset)
-- list console connections
-- database
-- saas
-- launch instance
-- manage compute images
-- instance action
-- list volume attachments
-- delete image
+- create a custom image from an instance
+- update image
 - get image
-- update instance details
-- delete a custom image
-- list vnic attachments
-- create image
-- get details of a specific instance
-- list available compute shapes
+- perform an action on an instance (start, stop, reset)
 - list images
+- manage a specific image
+- create image
+- saas
+- list available compute shapes
+- manage compute images
 - get image details
+- instance action
 - get instance
+- delete a custom image
+- infrastructure
+- list instances
+- list shapes
+- manage a specific compute instance
+- list console connections
+- update image details
+- terminate instance
+- enterprise
+- update instance
+- get details of a specific image
+- list compute images
+- database
+- cloud
+- compute
+- list volume attachments in a compartment
+- update instance details
+- get details of a specific instance
+- launch a new compute instance
+- get instance details
+- delete image
+- list vnic attachments
+- list instance console connections
+- manage compute instances
+- launch instance
+- create a custom image
+- list volume attachments
+- terminate an instance
+- oracle
+- list vnic attachments in a compartment
 slug: cloud-compute
 source_filename: cloud-compute.yaml
 source_heading: Capability Spec

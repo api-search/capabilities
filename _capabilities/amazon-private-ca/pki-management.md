@@ -34,46 +34,46 @@ personas: []
 provider_name: Amazon Private CA
 provider_slug: amazon-private-ca
 search_terms:
-- describe ca
-- aws
-- x.509
-- get details about a specific certificate authority
-- private pki infrastructure management workflow
-- amazon
-- describe certificate authority
-- pki
-- revoke certificate
-- iot
-- create a new private certificate authority in the ca hierarchy
-- security
-- revoke an issued certificate
-- tls
-- certificate authority
 - certificate authority hierarchy management
-- get certificate authority details
-- revoke a certificate
-- get certificate
-- list certificate authorities
-- retrieve a certificate
-- issue certificate
 - list all certificate authorities
-- Security Engineer
-- individual certificate operations
 - individual certificate authority operations
-- retrieve an issued certificate by arn
-- list cas
 - create certificate authority
-- create ca
-- list all private certificate authorities
-- issue a new x.509 certificate from a certificate authority
-- Platform Engineer
-- create a new private certificate authority
-- certificate management
-- issue a new certificate
-- issues certificates for internal services and manages certificate lifecycle
-- certificates
+- pki
+- private pki infrastructure management workflow
 - manages pki infrastructure, ca hierarchies, and certificate policies
+- certificate authority
+- issue a new certificate
+- retrieve a certificate
+- retrieve an issued certificate by arn
+- amazon
+- create a new private certificate authority in the ca hierarchy
+- list certificate authorities
+- revoke an issued certificate
+- create ca
+- revoke a certificate
+- x.509
 - certificate lifecycle management
+- get certificate
+- get details about a specific certificate authority
+- Security Engineer
+- Platform Engineer
+- individual certificate operations
+- list cas
+- iot
+- describe ca
+- tls
+- create a new private certificate authority
+- certificates
+- revoke certificate
+- issue a new x.509 certificate from a certificate authority
+- list all private certificate authorities
+- aws
+- issues certificates for internal services and manages certificate lifecycle
+- issue certificate
+- certificate management
+- security
+- get certificate authority details
+- describe certificate authority
 slug: pki-management
 source_filename: pki-management.yaml
 source_heading: Capability Spec

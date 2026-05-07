@@ -21,14 +21,14 @@ personas: []
 provider_name: medium
 provider_slug: medium
 search_terms:
-- authorize a user via oauth2
-- refresh an access token
-- exchange authorization code for tokens
-- api
-- authorizeuser
-- exchangeauthorizationcode
-- refreshaccesstoken
 - medium
+- exchangeauthorizationcode
+- exchange authorization code for tokens
+- authorizeuser
+- refresh an access token
+- authorize a user via oauth2
+- refreshaccesstoken
+- api
 slug: medium-capability
 source_filename: medium-capability.yaml
 source_heading: Capability Spec

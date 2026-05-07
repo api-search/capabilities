@@ -141,81 +141,81 @@ personas: []
 provider_name: Juniper Networks
 provider_slug: juniper
 search_terms:
-- networking
-- createracktype
-- listconnectivitytemplates
-- updateblueprint
-- juniper networks list design templates
-- createdesignconfiglet
-- listippools
-- listsystemagents
-- listdesigntemplates
-- juniper networks list interface maps
-- juniper networks list virtual networks
-- juniper networks list connectivity templates
-- listdesignconfiglets
-- listblueprintnodes
-- juniper networks authenticate user
-- juniper networks list security zones (routing zones / vrfs)
-- listibadashboards
-- juniper networks update a blueprint
-- createblueprint
-- juniper networks create security zone
-- juniper networks list design configlets
-- listsystems
-- cloud
-- juniper networks create ip pool
-- juniper networks list vni pools
-- juniper networks create virtual network
-- security
-- enterprise
-- sdn
-- createsecurityzone
-- juniper networks list system agents
-- listblueprintanomalies
-- juniper networks list managed systems
-- ai
-- juniper networks list logical devices
-- juniper networks list ip pools
-- juniper networks list all blueprints
-- createsystemagent
-- deleteblueprint
-- juniper networks list blueprint anomalies
-- listvirtualnetworks
-- juniper networks list iba dashboards
-- juniper networks list blueprint nodes
-- juniper networks delete a blueprint
-- deployblueprint
-- login
-- juniper networks list blueprint configlets
-- juniper networks list rack types
-- api
-- createdesigntemplate
-- listblueprints
-- listlogicaldevices
-- juniper networks create rack type
-- listblueprintconfiglets
-- juniper networks create system agent
 - createippool
-- juniper networks deploy blueprint
-- listsecurityzones
-- juniper networks create a blueprint
-- createvirtualnetwork
-- listracktypes
-- juniper networks create design configlet
-- listvnipools
-- juniper networks get blueprint details
-- listasnpools
-- juniper networks list asn pools
-- juniper
-- listinterfacemaps
-- createasnpool
-- getblueprint
-- juniper networks create design template
-- juniper networks create asn pool
+- juniper networks create ip pool
 - juniper networks create vni pool
-- createvnipool
+- juniper networks list managed systems
+- networking
+- listlogicaldevices
+- juniper networks list all blueprints
 - automation
+- juniper networks create virtual network
+- juniper networks create asn pool
+- ai
+- juniper networks delete a blueprint
+- api
+- juniper networks list blueprint configlets
+- juniper networks list vni pools
+- juniper networks create a blueprint
+- createasnpool
+- listblueprintanomalies
+- deleteblueprint
+- getblueprint
+- juniper networks create system agent
+- juniper networks get blueprint details
+- listblueprintnodes
+- juniper networks create design template
+- listippools
+- createvirtualnetwork
+- juniper networks list interface maps
+- listracktypes
+- listsystemagents
+- login
+- juniper networks create rack type
+- juniper networks list rack types
+- juniper networks list design templates
+- createvnipool
+- listsystems
+- listinterfacemaps
+- juniper networks list system agents
+- deployblueprint
+- juniper networks authenticate user
+- juniper networks update a blueprint
+- juniper networks list iba dashboards
+- listblueprintconfiglets
+- listdesignconfiglets
+- juniper networks list virtual networks
+- juniper networks create design configlet
+- createsecurityzone
+- juniper networks list asn pools
+- juniper networks list security zones (routing zones / vrfs)
+- listblueprints
+- juniper networks deploy blueprint
+- enterprise
+- juniper networks list logical devices
+- listvirtualnetworks
+- createdesignconfiglet
+- cloud
+- listibadashboards
+- listdesigntemplates
+- createblueprint
+- juniper networks list design configlets
+- createsystemagent
+- juniper networks list ip pools
+- listvnipools
+- sdn
+- juniper
+- juniper networks list blueprint anomalies
+- juniper networks list connectivity templates
+- listasnpools
+- juniper networks list blueprint nodes
+- listsecurityzones
+- updateblueprint
+- createracktype
+- createdesigntemplate
+- listconnectivitytemplates
+- security
+- juniper networks create security zone
 slug: juniper-capability
 source_filename: juniper-capability.yaml
 source_heading: Capability Spec

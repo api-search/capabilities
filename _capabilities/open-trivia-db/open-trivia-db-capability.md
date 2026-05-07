@@ -29,23 +29,23 @@ personas: []
 provider_name: Open Trivia DB
 provider_slug: open-trivia-db
 search_terms:
-- trivia
-- questions
-- getcategories
-- getglobalcount
-- api
-- db
-- open
-- global question counts
-- list trivia categories
-- managetoken
-- question count for category
-- manage session tokens
 - retrieve trivia questions
-- getcategorycount
-- games
+- question count for category
+- trivia
+- managetoken
 - free
+- list trivia categories
+- db
+- getcategories
+- global question counts
+- getglobalcount
+- questions
 - getquestions
+- games
+- manage session tokens
+- open
+- api
+- getcategorycount
 slug: open-trivia-db-capability
 source_filename: open-trivia-db-capability.yaml
 source_heading: Capability Spec

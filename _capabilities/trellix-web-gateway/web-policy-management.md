@@ -45,54 +45,54 @@ personas: []
 provider_name: Trellix Web Gateway
 provider_slug: trellix-web-gateway
 search_terms:
-- configuration management
-- url filtering
-- appliance configuration management
-- get ssl settings
-- get current configuration
-- malware protection
-- custom url, ip, and string lists
-- look up url categorization
-- lookup url
 - policy management
-- rollback configuration
-- policy rule sets
-- create rule set
-- dlp
-- rollback uncommitted configuration changes to the last committed state.
-- list all rule sets
-- url categorization lookup
-- network security
-- get dlp settings
-- get ssl/tls inspection configuration to verify encrypted traffic scanning.
-- get anti malware settings
-- list custom lists
-- threat protection
-- list all policy rule sets on the web gateway for review and audit.
-- list custom url, ip, and string lists used in security policies.
-- url filtering configuration
-- get the current appliance configuration for backup or review.
-- data loss prevention
-- create a new policy rule set on the web gateway.
-- look up how a specific url is categorized by the web gateway to troubleshoot filtering decisions.
-- dlp policy settings
-- commit configuration
-- commit pending configuration changes to activate them on the web gateway.
-- get url filter settings
-- get anti-malware settings
-- get ssl scanning settings
-- get data loss prevention settings to verify data exfiltration protection.
-- get url filtering configuration including blocked and allowed categories.
 - list rule sets
-- ssl/tls inspection settings
-- cybersecurity
-- create a new rule set
 - ssl inspection
-- web gateway
+- get data loss prevention settings to verify data exfiltration protection.
+- custom url, ip, and string lists
+- commit pending configuration changes to activate them on the web gateway.
+- ssl/tls inspection settings
+- get ssl settings
+- get dlp settings
+- policy rule sets
+- look up url categorization
+- create a new policy rule set on the web gateway.
+- get ssl/tls inspection configuration to verify encrypted traffic scanning.
+- list custom url, ip, and string lists used in security policies.
 - get configuration
+- network security
+- configuration management
+- dlp policy settings
+- rollback uncommitted configuration changes to the last committed state.
+- get ssl scanning settings
+- dlp
+- create a new rule set
+- get the current appliance configuration for backup or review.
+- get anti-malware settings
+- lookup url
 - enterprise security
+- web gateway
+- commit configuration
+- get anti malware settings
+- get url filtering configuration including blocked and allowed categories.
 - anti-malware settings
+- url filtering configuration
+- appliance configuration management
+- threat protection
+- malware protection
+- get url filter settings
 - get anti-malware scanning configuration to verify threat protection settings.
+- look up how a specific url is categorized by the web gateway to troubleshoot filtering decisions.
+- cybersecurity
+- data loss prevention
+- url categorization lookup
+- url filtering
+- list custom lists
+- list all policy rule sets on the web gateway for review and audit.
+- create rule set
+- get current configuration
+- list all rule sets
+- rollback configuration
 slug: web-policy-management
 source_filename: web-policy-management.yaml
 source_heading: Capability Spec

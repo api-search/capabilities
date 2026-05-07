@@ -33,27 +33,27 @@ personas: []
 provider_name: Open Brewery DB
 provider_slug: open-brewery-db
 search_terms:
-- get breweries
-- open brewery db list breweries
-- db
-- open
-- get breweries autocomplete
 - open brewery db single brewery
-- open brewery db search breweries
-- get breweries meta
-- beer
-- open brewery db random brewery
 - cider
 - brewery
+- open brewery db list breweries
 - breweries
-- get breweries search
 - api
-- get breweries random
-- bottle shops
+- db
+- beer
+- open brewery db random brewery
+- get breweries autocomplete
 - get breweries obdb id
-- open brewery db metadata
-- open brewery db autocomplete
+- open
+- get breweries
+- get breweries meta
+- bottle shops
+- get breweries random
+- open brewery db search breweries
 - brew pubs
+- open brewery db metadata
+- get breweries search
+- open brewery db autocomplete
 slug: open-brewery-db-capability
 source_filename: open-brewery-db-capability.yaml
 source_heading: Capability Spec

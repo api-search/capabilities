@@ -249,130 +249,130 @@ personas: []
 provider_name: Envestnet
 provider_slug: envestnet
 search_terms:
-- envestnet delete notification subscription
-- envestnet get access tokens
-- envestnet add manual account
-- runtransactioncategorizationrule
-- envestnet get provider details
-- getallprovideraccounts
-- updatepreferences
-- envestnet delete category
-- envestnet generate api key
+- deletetransactioncategorizationrule
+- envestnet get transaction summary
+- getaccount
+- getholdings
+- envestnet get documents
+- updateaccount
 - createtransactioncategory
 - api
-- gettransactionscount
-- getproviderscount
-- deletedocument
-- envestnet delete document
-- envestnet get statements
-- envestnet get transaction summary
-- getuser
-- envestnet get networth summary
-- envestnet delete api key
-- deleteapikey
-- account aggregation
-- getaccesstokens
-- getnetworth
-- deletetransactioncategorizationrule
-- envestnet put consent
-- envestnet update user details
-- updateuser
-- envestnet get historical balances
-- envestnet post consent
-- envestnet update transaction categorization rule
-- getsecurities
-- envestnet get api keys
-- envestnet get transaction categorization rules
-- editcredentialsorrefreshprovideraccount
-- envestnet get providers
-- envestnet add holding
-- refreshprovideraccount
+- envestnet delete category
 - gethistoricalbalances
-- envestnet get accounts
-- deletesubscribednotificationevent
-- envestnet update preferences
-- envestnet update notification subscription
-- envestnet get user details
-- createorruntransactioncategorizationrules
-- getprovider
-- envestnet generate access token
-- envestnet subscribe for notification event
-- envestnet get subscribed notification events
-- getallaccounts
-- getdataextractsuserdata
-- envestnet get security details
-- envestnet get consent history count
-- updatetransactioncategory
-- envestnet get consent history
-- getconsenthistorycount
-- envestnet get documents
-- envestnet download a document
-- generateaccesstoken
-- createconsent
-- envestnet refresh provider account
-- envestnet get authorization details
-- deletetoken
-- envestnet saml login
-- envestnet update account
-- envestnet get provider accounts
-- gettransactioncategories
-- envestnet get transactions
-- getstatements
-- renewconsent
-- envestnet renew consent
-- downloaddocument
-- envestnet get transactions count
-- envestnet delete transaction categorization rule
-- envestnet update category
-- open banking
-- updateaccount
-- wealth management
-- evaluateaddress
-- deletetransactioncategory
 - samllogin
+- envestnet add holding
+- downloaddocument
+- envestnet create or run transaction categorization rule
+- deletesubscribednotificationevent
+- envestnet get security details
+- account aggregation
+- envestnet saml login
+- createorruntransactioncategorizationrules
+- envestnet get transactions
+- gettransactions
+- envestnet post consent
+- envestnet get providers
+- deletetoken
+- updatetransactioncategorizationrule
+- createsubscriptionnotificationevent
+- envestnet
+- gettransactioncategorizationrules
+- envestnet get historical balances
+- getsecurities
+- getallaccounts
+- envestnet delete api key
+- deletetransactioncategory
+- gettransactionsummary
+- envestnet get consents preferences
+- getstatements
+- envestnet get accounts
+- getsubscribednotificationevents
+- envestnet get transactions count
+- envestnet add manual account
+- envestnet register user
+- updatetransactioncategory
+- deleteprovideraccount
+- generateaccesstoken
+- getconsenthistory
+- getproviderscount
+- envestnet delete token
+- envestnet get api keys
+- envestnet get account details
+- envestnet get subscribed notification events
+- envestnet delete transaction categorization rule
+- gettransactioncategories
+- createconsent
+- envestnet put consent
 - getdocuments
 - registeruser
-- updateconsent
-- financial
-- envestnet get consents
-- envestnet delete token
-- getapikeys
-- gettransactions
-- envestnet register user
-- envestnet get holdings
-- envestnet evaluate address
-- envestnet delete provider account
-- getsubscribednotificationevents
-- envestnet get transaction category list
-- getholdings
-- envestnet get consents preferences
-- deleteaccount
-- updatesubscribednotificationevent
-- getconsenthistory
-- getaccount
-- getconsentdetails
-- envestnet create or run transaction categorization rule
-- getconsents
-- getprovideraccount
-- envestnet get providers count
-- addholding
-- getconsentpreferences
-- gettransactioncategorizationrulesdeprecated
-- createmanualaccount
-- gettransactioncategorizationrules
-- createsubscriptionnotificationevent
-- envestnet create category
-- envestnet
-- envestnet delete account
-- gettransactionsummary
-- envestnet run transaction categorization rule
-- envestnet get account details
-- getallproviders
+- envestnet get user details
+- getaccesstokens
+- wealth management
+- renewconsent
+- envestnet get provider details
 - envestnet get userdata
 - generateapikey
-- updatetransactioncategorizationrule
+- updatepreferences
+- envestnet get networth summary
+- envestnet get consent history count
+- updateconsent
+- envestnet generate access token
+- evaluateaddress
+- deleteapikey
+- envestnet update preferences
+- refreshprovideraccount
+- envestnet get statements
+- envestnet get provider accounts
+- envestnet update account
+- envestnet get transaction categorization rules
+- getprovider
+- getdataextractsuserdata
+- envestnet get consents
+- envestnet subscribe for notification event
+- envestnet delete document
+- envestnet update category
+- updateuser
+- updatesubscribednotificationevent
+- open banking
+- envestnet download a document
+- envestnet get providers count
+- deletedocument
+- getprovideraccount
+- createmanualaccount
+- envestnet evaluate address
+- envestnet get access tokens
+- gettransactioncategorizationrulesdeprecated
+- getconsents
+- envestnet get authorization details
+- envestnet renew consent
+- envestnet delete provider account
+- envestnet run transaction categorization rule
+- getallprovideraccounts
+- getconsentdetails
+- envestnet delete account
+- getuser
+- getnetworth
+- envestnet get consent history
+- envestnet delete notification subscription
+- getallproviders
 - envestnet get provider account details
-- deleteprovideraccount
+- envestnet refresh provider account
+- editcredentialsorrefreshprovideraccount
+- runtransactioncategorizationrule
+- envestnet get transaction category list
+- envestnet update notification subscription
+- envestnet update user details
+- deleteaccount
+- envestnet update transaction categorization rule
+- financial
+- envestnet generate api key
+- addholding
+- getapikeys
+- envestnet create category
+- gettransactionscount
+- getconsenthistorycount
+- getconsentpreferences
+- envestnet get holdings
 slug: envestnet-capability
 source_filename: envestnet-capability.yaml
 source_heading: Capability Spec

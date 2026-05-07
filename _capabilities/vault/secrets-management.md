@@ -41,53 +41,53 @@ personas: []
 provider_name: HashiCorp Vault
 provider_slug: vault
 search_terms:
-- list policies
-- hashicorp vault
 - check hashicorp vault health status including initialized, sealed, and standby state.
-- delete secret
-- read secret metadata
-- list secrets mounts
-- list all acl policies.
-- get vault health
 - devops
-- platform engineering
-- pki
-- secret metadata and version history.
-- encryption
-- write policy
-- vault health status.
-- security
-- list all enabled authentication methods.
-- secrets management
-- list all secrets engines mounted in vault with their type, path, and configuration.
-- vault acl policy management.
-- kv v2 secret crud with versioning.
-- read metadata and version history for a vault secret including creation time, current version, and all version states.
-- list all authentication methods enabled in vault including type, path, and configuration.
-- open source
-- soft delete the latest version of a secret.
-- list auth methods
-- check vault health status.
-- renew a vault lease to extend the ttl of dynamic secrets and tokens.
-- read metadata and version history for a secret.
-- write a secret to vault kv v2.
-- read a secret from vault kv v2 by path.
-- renew lease
-- list all acl policies configured in vault.
-- write secret
-- write a secret to hashicorp vault kv v2. each write creates a new version.
 - create or update a vault acl policy with hcl rules defining path-based capabilities.
-- soft delete the latest version of a secret in vault. the data can be recovered with undelete.
+- delete secret
+- renew lease
 - vault authentication method management.
+- get health
+- read metadata and version history for a vault secret including creation time, current version, and all version states.
+- pki
+- write a secret to hashicorp vault kv v2. each write creates a new version.
 - list all mounted secrets engines.
+- read a specific vault acl policy by name to view its path-based access rules.
+- secrets management
+- secret metadata and version history.
+- kv v2 secret crud with versioning.
+- read secret
+- read secret metadata
+- hashicorp vault
+- soft delete the latest version of a secret in vault. the data can be recovered with undelete.
+- list all enabled authentication methods.
 - vault secrets engine mount management.
-- read policy
+- list auth methods
+- vault health status.
+- check vault health status.
 - read a secret from hashicorp vault kv v2 store by path. returns the secret data and version metadata.
 - look up a vault lease by id to check ttl, expiration time, and renewable status.
+- write policy
+- encryption
+- list all acl policies configured in vault.
+- list all acl policies.
+- vault acl policy management.
+- list secrets mounts
+- soft delete the latest version of a secret.
+- renew a vault lease to extend the ttl of dynamic secrets and tokens.
+- list all authentication methods enabled in vault including type, path, and configuration.
+- list policies
+- write a secret to vault kv v2.
+- get vault health
+- read metadata and version history for a secret.
+- read a secret from vault kv v2 by path.
+- open source
+- list all secrets engines mounted in vault with their type, path, and configuration.
+- security
 - lookup lease
-- get health
-- read secret
-- read a specific vault acl policy by name to view its path-based access rules.
+- write secret
+- read policy
+- platform engineering
 slug: secrets-management
 source_filename: secrets-management.yaml
 source_heading: Capability Spec

@@ -49,31 +49,31 @@ personas: []
 provider_name: EOSIO
 provider_slug: eosio
 search_terms:
-- eosio
-- blockchain
+- antelope
 - get currency balance for an account
-- get required keys for a transaction
-- getrequiredkeys
-- getcode
-- getinfo
-- getcurrencybalance
-- getblock
-- sendtransaction
-- get a block by id or number
-- getabi
 - gettablerows
 - getaccount
-- antelope
-- get the abi for a contract account
-- get account information
-- api
 - eos
-- pushtransaction
-- get contract code for an account
-- push a signed transaction
-- get chain information
+- api
+- get a block by id or number
+- getrequiredkeys
+- sendtransaction
+- getblock
 - send a signed transaction
+- get contract code for an account
+- get required keys for a transaction
+- getcurrencybalance
+- get the abi for a contract account
 - read rows from a contract table
+- eosio
+- pushtransaction
+- getinfo
+- getcode
+- getabi
+- push a signed transaction
+- blockchain
+- get account information
+- get chain information
 slug: eosio-capability
 source_filename: eosio-capability.yaml
 source_heading: Capability Spec

@@ -29,23 +29,23 @@ personas: []
 provider_name: Google Keep
 provider_slug: google-keep
 search_terms:
-- listnotes
-- batch create permissions
-- keep
-- google workspace
-- organization
-- list notes
-- google
-- api
-- createnote
-- batchdeletepermissions
-- create note
-- get attachment
 - batch delete permissions
-- notes
-- batchcreatepermissions
-- productivity
+- batchdeletepermissions
 - getattachment
+- create note
+- google workspace
+- batchcreatepermissions
+- createnote
+- google
+- get attachment
+- batch create permissions
+- list notes
+- productivity
+- api
+- listnotes
+- notes
+- keep
+- organization
 slug: google-keep-capability
 source_filename: google-keep-capability.yaml
 source_heading: Capability Spec

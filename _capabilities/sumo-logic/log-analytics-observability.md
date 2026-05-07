@@ -61,62 +61,62 @@ personas: []
 provider_name: Sumo Logic
 provider_slug: sumo-logic
 search_terms:
-- list all roles
-- user account management
-- create a new sumo logic user
-- create a new access key
-- individual user management
-- list all roles for access control management
-- create access key
-- create a new dashboard
-- get a user by id
-- get a specific sumo logic user by id
-- run a log search query
 - analytics
-- run log search
-- devops
-- list all dashboards
-- list all sumo logic dashboards
-- create a new observability dashboard
-- execute a sumo logic log search query with time range
-- list all access keys
-- delete a user
-- create a new user
-- create user
-- security
-- monitoring
-- create dashboard
-- list access keys
-- delete a sumo logic user
-- log search execution
-- create monitor
-- delete user
-- role-based access control
-- list all users in the organization
-- siem
-- observability
-- create a new role with specific capabilities and filter predicates
-- list ingestion budgets for data volume management
-- create a new role
-- get user
 - dashboard management
-- access key management
-- list all alerting monitors
-- create role
-- create a new api access key
-- list users
-- alerting monitors
-- list dashboards
-- list ingest budgets
-- create a new monitor
-- create a new alerting monitor with query and trigger conditions
+- create a new role with specific capabilities and filter predicates
+- devops
+- create a new role
+- list all roles for access control management
 - list all api access keys
 - create search job
-- list all monitors
-- list monitors
+- list access keys
+- create a new alerting monitor with query and trigger conditions
 - list all users in the sumo logic organization
-- logging
+- delete a user
+- monitoring
+- list monitors
+- list all alerting monitors
+- delete user
+- create monitor
+- list all access keys
+- create a new monitor
+- list all monitors
+- list users
+- create role
+- list ingest budgets
+- observability
+- create a new dashboard
+- role-based access control
+- get a user by id
+- create dashboard
+- list all users in the organization
+- create a new observability dashboard
+- list dashboards
+- create a new sumo logic user
+- delete a sumo logic user
+- list all sumo logic dashboards
+- create a new api access key
+- get user
+- create a new access key
+- list ingestion budgets for data volume management
+- run a log search query
+- access key management
+- list all dashboards
+- create user
+- create access key
+- create a new user
+- individual user management
+- alerting monitors
+- execute a sumo logic log search query with time range
+- run log search
+- list all roles
 - list roles
+- security
+- get a specific sumo logic user by id
+- logging
+- user account management
+- siem
+- log search execution
 slug: log-analytics-observability
 source_filename: log-analytics-observability.yaml
 source_heading: Capability Spec

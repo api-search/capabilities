@@ -129,75 +129,75 @@ personas: []
 provider_name: Google BigQuery
 provider_slug: google-bigquery
 search_terms:
-- getdataset
-- google bigquery create a routine
-- insertalltabledata
-- google bigquery update routine
-- deleteroutine
-- listjobs
-- google bigquery update model
-- google bigquery cancel job
-- listtabledata
-- google bigquery list routines
+- google bigquery partially update table
 - analytics
-- big data
-- patchtable
-- getqueryresults
-- patchdataset
-- google bigquery get dataset
 - listdatasets
-- serverless
-- deletemodel
-- cloud
-- google
-- insertdataset
-- google bigquery create a table
-- getmodel
-- google bigquery delete job
-- google bigquery get model
-- queryjobs
-- google bigquery get routine
-- google bigquery delete routine
-- google bigquery list tables
-- listmodels
-- updatedataset
-- sql
+- google bigquery list projects
+- google bigquery get query results
+- patchdataset
+- google bigquery delete dataset
 - updateroutine
 - google bigquery delete table
-- bigquery
-- google bigquery list models
-- google bigquery delete model
-- data warehouse
-- gettable
-- google bigquery partially update table
-- google bigquery insert rows
-- insertjob
-- listroutines
-- api
-- google bigquery update dataset
-- deletetable
-- canceljob
-- listprojects
-- google bigquery list datasets
-- google bigquery get table
-- getjob
-- google bigquery list jobs
-- deletejob
-- insertroutine
-- google bigquery get query results
-- inserttable
-- google bigquery create a dataset
-- google bigquery partially update dataset
-- google bigquery list table rows
-- google bigquery list projects
-- getroutine
 - google bigquery execute query
-- patchmodel
-- deletedataset
-- listtables
+- data warehouse
+- google bigquery create a routine
+- insertjob
+- api
+- getqueryresults
+- deleteroutine
+- google bigquery get table
+- google bigquery update routine
+- google bigquery update model
+- listjobs
+- getdataset
+- google bigquery list table rows
+- listtabledata
+- updatedataset
+- google bigquery get dataset
+- canceljob
+- google
 - google bigquery get job
-- google bigquery delete dataset
+- google bigquery list models
+- deletemodel
+- google bigquery delete model
+- getmodel
+- serverless
+- google bigquery cancel job
+- google bigquery list datasets
+- listmodels
+- big data
+- google bigquery list tables
+- listtables
+- google bigquery delete job
+- sql
+- inserttable
+- google bigquery delete routine
+- bigquery
+- getroutine
+- google bigquery get routine
+- google bigquery list routines
+- google bigquery create a table
+- insertalltabledata
+- google bigquery insert rows
+- google bigquery partially update dataset
+- patchmodel
+- cloud
+- deletejob
+- deletetable
+- google bigquery list jobs
+- getjob
+- listroutines
+- insertroutine
+- patchtable
+- queryjobs
+- listprojects
+- google bigquery create a dataset
+- insertdataset
+- deletedataset
+- gettable
+- google bigquery get model
 - google bigquery submit a job
+- google bigquery update dataset
 slug: google-bigquery-capability
 source_filename: google-bigquery-capability.yaml
 source_heading: Capability Spec

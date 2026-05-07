@@ -37,45 +37,45 @@ personas: []
 provider_name: Stytch
 provider_slug: stytch
 search_terms:
-- session validation
-- send a magic link for authentication
-- complete stytch magic link authentication using the token from the email
 - authenticate magic link tokens
-- developer tools
-- user records
-- identity
-- retrieve a stytch user record by id
-- send magic link
-- send a one-time passcode via sms
-- consumer
-- validate a stytch consumer session token or jwt
-- stytch
-- security
-- otp
-- authenticate with a magic link token
-- validate a session token
-- session revocation
-- search stytch users
+- authenticate with a one-time passcode
+- authenticate session
+- revoke session
 - authenticate a user with a stytch one-time passcode
 - revoke an active stytch consumer session (logout)
-- authentication
-- search users
-- passwordless
-- authenticate otp codes
-- authenticate magic link
-- send otp sms
-- authenticate session
-- revoke a session
-- get user
-- send a stytch sms one-time passcode to a phone number
-- authenticate otp
-- send sms otp
-- get a user
+- session revocation
+- user records
+- send magic link
 - send email magic links
+- validate a stytch consumer session token or jwt
+- authentication
+- authenticate otp codes
+- passwordless
+- validate a session token
+- get a user
+- send a stytch sms one-time passcode to a phone number
+- identity
+- search users
 - send a stytch magic link to a user's email for passwordless login
-- authenticate with a one-time passcode
-- revoke session
+- complete stytch magic link authentication using the token from the email
+- send a magic link for authentication
+- stytch
+- revoke a session
+- developer tools
+- authenticate with a magic link token
+- session validation
 - magic links
+- send otp sms
+- retrieve a stytch user record by id
+- search stytch users
+- authenticate otp
+- send a one-time passcode via sms
+- otp
+- get user
+- consumer
+- send sms otp
+- authenticate magic link
+- security
 slug: passwordless-authentication
 source_filename: passwordless-authentication.yaml
 source_heading: Capability Spec

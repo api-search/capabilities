@@ -21,33 +21,33 @@ personas: []
 provider_name: Spin.AI
 provider_slug: spin-ai
 search_terms:
-- filtered entity retrieval
-- retrieve all users, groups, and drives managed by spinone backup. filter by platform (google_workspace, microsoft_365, salesforce, slack).
-- spin ai
-- google workspace
-- microsoft 365
-- update entity status
-- activate entity backup
-- data protection
 - get all entities
-- backup
-- compliance
-- archive entity backup
+- microsoft 365
 - ransomware
-- filter entities by type, status, and platform
-- get all backup entities
-- retrieve all backup entities
-- backup entity management
-- archive one or more entities in spinone — backup stops but existing data is retained.
-- saas security
-- search and filter backup entities by type (user/group/drive), status (active/archived/disabled), and platform. use for auditing backup coverage gaps.
-- enable backup for one or more entities by setting their status to active.
-- entity backup status management
-- disable backup for one or more entities — backup stops and data retention ceases.
-- filter backup entities
-- update backup status for entities
 - disable entity backup
+- spin ai
+- update entity status
+- compliance
+- filter entities by type, status, and platform
+- disable backup for one or more entities — backup stops and data retention ceases.
+- saas security
+- data protection
+- backup
+- retrieve all users, groups, and drives managed by spinone backup. filter by platform (google_workspace, microsoft_365, salesforce, slack).
+- archive entity backup
 - filter entities
+- filtered entity retrieval
+- entity backup status management
+- activate entity backup
+- backup entity management
+- update backup status for entities
+- google workspace
+- enable backup for one or more entities by setting their status to active.
+- filter backup entities
+- retrieve all backup entities
+- archive one or more entities in spinone — backup stops but existing data is retained.
+- get all backup entities
+- search and filter backup entities by type (user/group/drive), status (active/archived/disabled), and platform. use for auditing backup coverage gaps.
 slug: saas-data-protection
 source_filename: saas-data-protection.yaml
 source_heading: Capability Spec

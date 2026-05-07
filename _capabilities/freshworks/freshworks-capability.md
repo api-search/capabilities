@@ -61,34 +61,34 @@ personas: []
 provider_name: freshworks
 provider_slug: freshworks
 search_terms:
-- createuser
-- view a team
-- view a call
-- list all users
 - listuserstatuses
-- getteam
-- listcallmetrics
-- freshworks
-- updateteam
-- list all calls
-- listcalls
 - api
-- update a team
-- view a user
-- create a user
-- listteams
-- list all teams
-- createteam
-- list call metrics
-- getuser
-- create a team
-- list all user statuses
-- getcallrecording
-- update a user
-- listusers
-- updateuser
-- getcall
+- list all calls
 - get call recording
+- list call metrics
+- view a team
+- list all users
+- getuser
+- view a call
+- createteam
+- view a user
+- freshworks
+- list all teams
+- listcallmetrics
+- list all user statuses
+- updateuser
+- listteams
+- updateteam
+- listcalls
+- update a team
+- createuser
+- create a user
+- listusers
+- getcall
+- getteam
+- update a user
+- getcallrecording
+- create a team
 slug: freshworks-capability
 source_filename: freshworks-capability.yaml
 source_heading: Capability Spec

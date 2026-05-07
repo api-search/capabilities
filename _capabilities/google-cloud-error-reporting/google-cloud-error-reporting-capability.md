@@ -33,30 +33,30 @@ personas: []
 provider_name: Google Cloud Error Reporting
 provider_slug: google-cloud-error-reporting
 search_terms:
+- listgroupstats
+- deleteevents
+- reportevent
+- api
+- errors
+- google cloud error reporting list group stats
+- google
 - error
 - google cloud error reporting get error group
-- listevents
-- reliability
-- google cloud error reporting update error group
-- reporting
-- error reporting
-- errors
-- cloud
-- google
-- deleteevents
-- google cloud
-- reportevent
-- google cloud error reporting report error event
-- api
-- observability
-- google cloud error reporting list group stats
-- listgroupstats
-- exceptions
 - getgroup
+- google cloud error reporting report error event
+- observability
+- updategroup
 - google cloud error reporting list error events
 - debugging
-- updategroup
+- cloud
+- exceptions
 - google cloud error reporting delete all events
+- listevents
+- reliability
+- reporting
+- google cloud
+- error reporting
+- google cloud error reporting update error group
 slug: google-cloud-error-reporting-capability
 source_filename: google-cloud-error-reporting-capability.yaml
 source_heading: Capability Spec

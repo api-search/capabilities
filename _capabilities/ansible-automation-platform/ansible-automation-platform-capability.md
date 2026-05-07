@@ -29,24 +29,24 @@ personas: []
 provider_name: Ansible Automation Platform
 provider_slug: ansible-automation-platform
 search_terms:
+- ansible list projects
 - configuration management
 - ansible list inventories
-- platform
-- orchestration
-- launchjobtemplate
-- infrastructure as code
-- api
-- ansible list jobs
 - ansible list job templates
-- ansible
-- listjobtemplates
-- listjobs
-- ansible launch job template
-- listprojects
-- ansible list projects
 - devops
+- listjobs
 - listinventories
 - automation
+- listprojects
+- ansible
+- launchjobtemplate
+- orchestration
+- listjobtemplates
+- api
+- ansible list jobs
+- platform
+- infrastructure as code
+- ansible launch job template
 slug: ansible-automation-platform-capability
 source_filename: ansible-automation-platform-capability.yaml
 source_heading: Capability Spec

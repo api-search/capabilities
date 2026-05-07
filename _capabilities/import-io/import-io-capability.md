@@ -97,58 +97,58 @@ personas: []
 provider_name: Import.io
 provider_slug: import-io
 search_terms:
-- getcrawlrun
+- listextractors
 - getreport
-- deletereport
-- start report
-- getcurrentuser
-- data integration
-- list extractors
-- getcrawlrunfile
-- get report run
-- startextractor
-- get report
-- list report runs
-- get current user subscription
-- duplicateextractor
-- list report runs for a report
-- data extraction
-- io
-- get crawl run results file
-- listreportrunsforreport
+- get extractor
 - start extractor
-- get report run results file
-- list reports
-- web scraping
+- get crawl run
+- get report
+- getcurrentuser
+- startreport
+- list report runs
+- deletereport
 - import
-- getreportrunfile
-- getextractor
-- deleteextractor
-- data aggregation
-- list crawl runs
-- duplicate extractor
-- stopextractor
 - api
 - updateextractorcredentials
-- pricing intelligence
-- getcurrentusersubscription
-- getextractorinputs
-- get crawl run
-- startreport
-- get current user
-- stop extractor
-- update extractor inputs
-- listcrawlruns
-- listreports
-- listreportruns
-- get extractor
-- delete report
-- update extractor credentials
-- updateextractorinputs
-- listextractors
-- archive extractor
-- getreportrun
+- list reports
 - get extractor inputs
+- delete report
+- archive extractor
+- start report
+- io
+- data extraction
+- get crawl run results file
+- listcrawlruns
+- getreportrunfile
+- list extractors
+- getreportrun
+- get report run
+- get current user subscription
+- list report runs for a report
+- pricing intelligence
+- deleteextractor
+- getcurrentusersubscription
+- duplicate extractor
+- list crawl runs
+- listreports
+- update extractor credentials
+- duplicateextractor
+- stopextractor
+- getextractorinputs
+- get report run results file
+- update extractor inputs
+- getcrawlrunfile
+- listreportruns
+- get current user
+- listreportrunsforreport
+- startextractor
+- stop extractor
+- updateextractorinputs
+- data aggregation
+- data integration
+- getcrawlrun
+- web scraping
+- getextractor
 slug: import-io-capability
 source_filename: import-io-capability.yaml
 source_heading: Capability Spec

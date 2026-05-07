@@ -25,22 +25,22 @@ personas: []
 provider_name: Intercontinental Exchange
 provider_slug: intercontinental-exchange
 search_terms:
-- trading
-- getmarkethistory
-- financial exchanges
-- nyse
-- listexchanges
 - listinstruments
-- api
-- get market data history
-- list exchanges
-- getquotes
 - get market quotes
-- commodities
+- get market data history
+- listexchanges
+- financial exchanges
+- trading
 - market data
 - list instruments
-- intercontinental
+- list exchanges
+- getmarkethistory
+- getquotes
+- nyse
+- api
 - exchange
+- intercontinental
+- commodities
 slug: intercontinental-exchange-capability
 source_filename: intercontinental-exchange-capability.yaml
 source_heading: Capability Spec

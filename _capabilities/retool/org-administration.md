@@ -77,73 +77,73 @@ personas: []
 provider_name: Retool
 provider_slug: retool
 search_terms:
-- permanently remove a user.
-- manage retool applications.
-- create a new user account in the retool organization.
-- list apps
-- create app
-- remove a specific user from a group.
-- list all data source resource connections in the organization.
-- update app
-- update user profile or admin status.
-- list all groups in the organization.
-- create a new permission group.
-- add a user to a group.
-- remove a user from a group.
-- create a new permission group for access control.
-- delete an application permanently.
-- retrieve a specific retool application by id.
-- dashboard
-- manage group membership.
-- retool
-- permanently remove a user from the organization.
-- add group member
-- list folders
-- no code
-- manage organizational folders.
-- retrieve a user by uuid.
-- create user
-- low code
-- list all permission groups in the organization.
-- retrieve an application by id.
-- list all folders.
-- manage users in the retool organization.
-- delete app
-- list all applications.
-- delete user
-- list resources
-- list all users with pagination support.
-- manage permission groups.
-- manage a specific application.
+- permanently delete a retool application.
+- create group
 - create a new user and add to the organization.
-- remove group member
-- list all users in the retool organization with pagination.
-- list all retool applications in the organization.
-- internal tools
-- administration
-- add a user to a permission group.
-- update user
-- list all organizational folders for apps, resources, and workflows.
+- permanently remove a user from the organization.
+- retrieve a user by uuid.
 - update an application's metadata.
+- list all users in the retool organization with pagination.
+- manage group membership.
+- list groups
+- list apps
+- create a new retool application.
+- list all permission groups in the organization.
+- manage permission groups.
+- update user
+- retrieve a specific user by their uuid.
+- remove a user from a group.
+- list resources
+- get app
+- manage a specific user.
+- remove a user from a permission group.
+- internal tools
+- manage a specific application.
+- view data source connections.
+- list folders
+- admin panel
+- update app
+- retool
+- create folder
+- delete user
+- add a user to a group.
+- list all users with pagination support.
+- list all data source resource connections in the organization.
+- manage organizational folders.
+- manage retool applications.
+- delete an application permanently.
+- list users
+- administration
+- list all applications.
+- list all folders.
+- update a user's name, admin status, or disable their account.
+- create a new permission group for access control.
+- retrieve a specific retool application by id.
+- create a new folder.
+- list all organizational folders for apps, resources, and workflows.
+- create a new permission group.
+- list all data source resources.
+- update user profile or admin status.
+- remove a specific user from a group.
+- dashboard
+- create app
+- list all retool applications in the organization.
+- user management
 - get user
 - create a new organizational folder.
-- list all data source resources.
-- admin panel
-- update a user's name, admin status, or disable their account.
-- list users
-- permanently delete a retool application.
-- list groups
-- create a new retool application.
 - create a new application.
-- get app
-- view data source connections.
-- create folder
-- create group
-- create a new folder.
-- manage a specific user.
-- user management
-- retrieve a specific user by their uuid.
-- remove a user from a permission group.
+- no code
+- create user
+- list all groups in the organization.
+- manage users in the retool organization.
+- add group member
+- create a new user account in the retool organization.
+- low code
+- retrieve an application by id.
+- permanently remove a user.
+- add a user to a permission group.
+- delete app
+- remove group member
 slug: org-administration
 source_filename: org-administration.yaml
 source_heading: Capability Spec

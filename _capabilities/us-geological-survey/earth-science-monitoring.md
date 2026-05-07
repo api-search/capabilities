@@ -30,38 +30,38 @@ provider_name: US Geological Survey
 provider_slug: us-geological-survey
 search_terms:
 - get streamflow data
-- water data
-- earthquake count statistics
-- earth science
-- real-time water measurements from usgs monitoring stations
-- count earthquakes matching query parameters
-- geospatial
-- environmental monitoring
-- get daily water statistics
-- query daily water values
-- query earthquake events
-- count earthquakes
-- query earthquakes
-- find water monitoring stations by geography
-- earthquakes
-- hazards
 - environment
-- get continuous water measurements from monitoring stations
-- water monitoring station locations
-- query water measurements
-- find usgs monitoring stations
-- query the usgs earthquake catalog for seismic events. filter by time range, geographic bounding box, or circular area, magnitude range, and depth. returns geojson featurecollection with event properties including magnitude, location, depth, and pager alert level.
-- count seismic events
-- count earthquakes in the usgs catalog without retrieving full event data. useful for assessing seismic activity levels in a region or time period.
-- query earthquake catalog by time, location, and magnitude
 - earthquake events from usgs national earthquake information center
+- water monitoring station locations
+- earthquakes
+- find usgs monitoring stations
+- query daily water values
+- count earthquakes matching query parameters
+- query earthquake events
+- query water measurements
+- water data
 - find usgs water monitoring stations by state, type, or geographic bounding box. returns location details including coordinates, huc codes, and monitoring parameters available at each station.
-- query monitoring stations
-- federal government
-- get real-time streamflow and water level measurements from a usgs monitoring station. specify station id (e.g., usgs-01646500) and optional parameter code (00060 = discharge cfs, 00065 = gage height ft).
-- get historical daily water data (mean, max, min values) for a usgs monitoring station. useful for flood analysis, drought assessment, and long-term trend analysis.
 - get daily water data summaries
+- query monitoring stations
+- environmental monitoring
+- geospatial
+- count earthquakes in the usgs catalog without retrieving full event data. useful for assessing seismic activity levels in a region or time period.
+- earthquake count statistics
+- real-time water measurements from usgs monitoring stations
+- get daily water statistics
+- count earthquakes
+- get real-time streamflow and water level measurements from a usgs monitoring station. specify station id (e.g., usgs-01646500) and optional parameter code (00060 = discharge cfs, 00065 = gage height ft).
+- query the usgs earthquake catalog for seismic events. filter by time range, geographic bounding box, or circular area, magnitude range, and depth. returns geojson featurecollection with event properties including magnitude, location, depth, and pager alert level.
+- get historical daily water data (mean, max, min values) for a usgs monitoring station. useful for flood analysis, drought assessment, and long-term trend analysis.
+- hazards
+- earth science
 - daily summary water data
+- federal government
+- find water monitoring stations by geography
+- query earthquake catalog by time, location, and magnitude
+- query earthquakes
+- count seismic events
+- get continuous water measurements from monitoring stations
 slug: earth-science-monitoring
 source_filename: earth-science-monitoring.yaml
 source_heading: Capability Spec

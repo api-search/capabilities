@@ -69,77 +69,77 @@ personas: []
 provider_name: Unkey
 provider_slug: unkey
 search_terms:
-- list all roles
-- update an api key's name, metadata, rate limits, or enabled status
-- add permissions to a key
-- role management
-- reroll api key
-- rate limiting
-- add roles to a key
-- list all permissions in the workspace
-- identity
-- developer platform
-- keys within an api namespace
-- key permission management
-- single key operations
-- update key settings
-- delete an api key
-- verify an api key and return its validity, permissions, rate limit status
 - analytics
-- create a new permission
+- create a new api namespace
+- create a new role
+- delete api key
 - add key permissions
 - list all api keys within an api namespace
-- add roles to an existing api key
-- get api
-- create api namespace
-- create a new api namespace
-- api keys
-- get key
-- add permissions
-- get api key
-- create a new permission definition in the workspace
-- list all roles in the workspace
-- list permissions
-- delete key
-- verify an api key
-- verify api key
-- create api
-- verify a key and return its validity and metadata
-- reroll key
-- rotate (reroll) a key to generate a new value
-- list api keys
-- create api key
-- delete api key
-- permission management
-- create permission
-- add permissions to an existing api key
-- create a new role grouping multiple permissions
-- create a new api key with optional prefix, name, roles, and rate limits
-- get an api key by id
-- get an api namespace by id
-- authentication
-- add roles
-- create a new api key
-- create a new role
 - list all permissions
+- create a new role grouping multiple permissions
+- api keys
+- single key operations
+- verify api key
 - permanently delete one or more api keys
-- access control
-- api namespace management
-- retrieve full details of an api key by its id
-- add key roles
-- create a new api namespace in unkey for organizing keys
-- update api key
+- verify an api key
 - unkey
-- create role
-- list roles
-- create key
-- list all keys in an api namespace
+- get an api namespace by id
+- create api
+- create api namespace
 - update key
 - key role management
-- list keys
-- rotate an api key to generate a new key value while preserving settings
-- rotate an api key
+- authentication
+- list all roles in the workspace
+- get api
+- add permissions to a key
+- access control
+- create permission
 - verify key
+- rotate (reroll) a key to generate a new value
+- add roles to a key
+- list keys
+- get key
+- permission management
+- create a new permission
+- create a new api key with optional prefix, name, roles, and rate limits
+- retrieve full details of an api key by its id
+- update key settings
+- get api key
+- create a new permission definition in the workspace
+- list all permissions in the workspace
+- identity
+- delete an api key
+- create role
+- rotate an api key
+- add permissions to an existing api key
+- add permissions
+- delete key
+- list api keys
+- verify an api key and return its validity, permissions, rate limit status
+- verify a key and return its validity and metadata
+- create a new api namespace in unkey for organizing keys
+- rate limiting
+- create key
+- create api key
+- get an api key by id
+- api namespace management
+- developer platform
+- list all keys in an api namespace
+- key permission management
+- add roles
+- update an api key's name, metadata, rate limits, or enabled status
+- list permissions
+- rotate an api key to generate a new key value while preserving settings
+- reroll key
+- list all roles
+- list roles
+- update api key
+- reroll api key
+- add roles to an existing api key
+- create a new api key
+- keys within an api namespace
+- add key roles
+- role management
 slug: api-key-management
 source_filename: api-key-management.yaml
 source_heading: Capability Spec

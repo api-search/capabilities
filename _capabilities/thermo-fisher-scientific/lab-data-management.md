@@ -53,72 +53,72 @@ personas: []
 provider_name: Thermo Fisher Scientific
 provider_slug: thermo-fisher-scientific
 search_terms:
-- spectrophotometry
-- get sample results
-- individual sample data.
-- check the operational status and readiness of the nanodrop ultra spectrophotometer.
-- nanodrop list measurements
-- get instrument status
-- sample management
-- get sample
+- nanodrop perform measurement
+- nanodrop export data
+- list measurements
 - list laboratory samples from samplemanager lims.
-- browse samplemanager entity records.
-- list stored nanodrop measurements.
-- perform a nanodrop measurement.
-- list laboratory samples from samplemanager lims with optional status and date filtering.
-- trigger a named automated workflow in samplemanager lims.
-- nanodrop instrument status.
+- laboratory
 - list samples
+- nanodrop instrument status.
+- automation
+- submit test results.
+- trigger laboratory workflows.
+- get instrument status
+- check the operational status and readiness of the nanodrop ultra spectrophotometer.
+- get measurement
+- diagnostics
+- lims browse entity
+- get full nanodrop measurement data including complete uv-vis absorbance spectrum.
+- lims
+- biosciences
+- sample management
+- list stored nanodrop measurements.
+- list stored nanodrop ultra measurements with concentration, purity ratios, and spectra.
+- lims submit results
+- export nanodrop ultra measurements in json, csv, or xml format for lims or eln integration.
+- export nanodrop measurement data.
+- lims get sample
+- submit analytical test results for samples in samplemanager lims.
+- list available measurement methods on the nanodrop ultra (dna-50, rna-40, protein a280, etc.).
+- nanodrop get methods
+- get sample results
+- get test results for a specific sample.
+- browse samplemanager entities.
+- check nanodrop ultra instrument readiness.
+- spectrophotometry
 - browse entity
 - nanodrop spectrophotometric measurements.
-- get full nanodrop measurement data including complete uv-vis absorbance spectrum.
-- get test results for a specific sample.
-- list available measurement methods on the nanodrop ultra (dna-50, rna-40, protein a280, etc.).
-- laboratory sample management.
-- lims submit results
-- list measurements
-- get full measurement data including absorbance spectrum.
-- test results for a sample.
-- lims get sample results
-- perform measurement
-- biosciences
-- get details for a specific laboratory sample by identity or barcode.
-- get measurement
-- get details for a specific laboratory sample.
-- lims get sample
-- lims
-- get all analytical test results for a specific laboratory sample.
-- submit analytical test results for samples in samplemanager lims.
-- laboratory
-- lims list samples
-- nanodrop perform measurement
-- check nanodrop ultra instrument readiness.
-- export nanodrop data for lims integration.
-- nanodrop get measurement
-- nanodrop get methods
-- scientific instruments
-- submit test results.
+- perform a nanodrop measurement.
 - lims trigger workflow
-- perform a uv-vis spectrophotometric measurement on loaded sample (dna, rna, protein quantification).
-- life sciences
-- fortune 500
-- export nanodrop measurement data.
-- export measurements
-- trigger workflow
-- diagnostics
 - individual nanodrop measurement with spectrum.
-- browse any samplemanager lims entity type (sample, test, result, customer, batch_header, analysis).
-- nanodrop get status
-- lims browse entity
 - submit results
-- nanodrop export data
-- list stored nanodrop ultra measurements with concentration, purity ratios, and spectra.
-- trigger laboratory workflows.
-- browse samplemanager entities.
+- perform a uv-vis spectrophotometric measurement on loaded sample (dna, rna, protein quantification).
+- export measurements
+- trigger a named automated workflow in samplemanager lims.
+- nanodrop list measurements
+- nanodrop get status
+- browse any samplemanager lims entity type (sample, test, result, customer, batch_header, analysis).
+- get full measurement data including absorbance spectrum.
+- nanodrop get measurement
+- browse samplemanager entity records.
+- list laboratory samples from samplemanager lims with optional status and date filtering.
+- life sciences
+- export nanodrop data for lims integration.
+- scientific instruments
+- individual sample data.
+- perform measurement
+- laboratory sample management.
 - trigger a samplemanager workflow.
+- get all analytical test results for a specific laboratory sample.
+- lims get sample results
+- lims list samples
+- get details for a specific laboratory sample by identity or barcode.
 - submit test results to samplemanager lims.
-- export nanodrop ultra measurements in json, csv, or xml format for lims or eln integration.
-- automation
+- test results for a sample.
+- trigger workflow
+- get sample
+- fortune 500
+- get details for a specific laboratory sample.
 slug: lab-data-management
 source_filename: lab-data-management.yaml
 source_heading: Capability Spec

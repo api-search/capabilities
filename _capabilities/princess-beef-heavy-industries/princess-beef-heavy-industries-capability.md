@@ -33,30 +33,30 @@ personas: []
 provider_name: Princess Beef Heavy Industries
 provider_slug: princess-beef-heavy-industries
 search_terms:
-- princess beef heavy industries get a list of all products.
-- industries
-- updateproductbyid
-- getproductbyid
-- princess beef heavy industries update a product
-- princess beef heavy industries remove a product
-- deleteproduct
-- createproduct
-- princess beef heavy industries create a new product.
-- princess
-- heavy
-- commerce
-- documentation
-- beef
-- getallproducts
-- api
-- searchproducts
-- rules
-- platform
-- products
 - governance
 - princess beef heavy industries search products.
-- princess beef heavy industries get a product by its `id` or `shortcode`
 - editors
+- princess beef heavy industries get a product by its `id` or `shortcode`
+- createproduct
+- api
+- princess
+- platform
+- princess beef heavy industries get a list of all products.
+- beef
+- industries
+- documentation
+- princess beef heavy industries remove a product
+- products
+- deleteproduct
+- getallproducts
+- updateproductbyid
+- princess beef heavy industries update a product
+- searchproducts
+- rules
+- getproductbyid
+- heavy
+- commerce
+- princess beef heavy industries create a new product.
 slug: princess-beef-heavy-industries-capability
 source_filename: princess-beef-heavy-industries-capability.yaml
 source_heading: Capability Spec

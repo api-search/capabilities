@@ -113,68 +113,68 @@ personas: []
 provider_name: Nacos
 provider_slug: nacos
 search_terms:
-- configuration management
-- delete a service
 - get previous configuration version
-- publish configuration
-- update system switches
-- getmetrics
-- dns
-- deregister an instance
-- deleteconfig
-- java
-- register an instance
-- getconfighistory
-- user login
-- list services
-- getservice
-- updateswitches
-- deleteservice
-- service management
-- getpreviousconfig
-- listen for configuration changes
-- createnamespace
-- updateinstance
-- listnamespaces
-- alibaba
-- delete configuration
-- update instance
-- cloud native
-- registerinstance
-- list instances
-- updateinstancehealth
-- deregisterinstance
-- sendbeat
-- deletenamespace
-- updatenamespace
-- login
-- list cluster servers
-- send instance heartbeat
-- api
-- list namespaces
-- listservers
-- service discovery
-- updateservice
-- update a namespace
-- get a service
-- create a namespace
-- listinstances
-- publishconfig
-- getswitches
-- create a service
-- update a service
-- get system switches
-- listenconfig
-- delete a namespace
-- get server metrics
-- listservices
-- get configuration
 - get configuration history
-- createservice
-- nacos
-- microservices
+- send instance heartbeat
+- list services
+- getswitches
+- updateinstance
+- list cluster servers
+- getconfighistory
+- deleteconfig
+- service management
+- getservice
+- deletenamespace
+- api
+- getpreviousconfig
+- deregisterinstance
+- listservers
+- updateswitches
+- create a namespace
 - getconfig
+- cloud native
+- java
+- publishconfig
+- registerinstance
+- update system switches
+- delete a namespace
+- login
+- updateservice
+- list instances
+- sendbeat
+- deregister an instance
+- update a namespace
+- get configuration
+- configuration management
+- listen for configuration changes
+- nacos
+- service discovery
 - update instance health status
+- user login
+- updateinstancehealth
+- register an instance
+- update instance
+- updatenamespace
+- createnamespace
+- create a service
+- get a service
+- getmetrics
+- list namespaces
+- publish configuration
+- get system switches
+- dns
+- delete a service
+- update a service
+- listnamespaces
+- listinstances
+- delete configuration
+- createservice
+- deleteservice
+- get server metrics
+- alibaba
+- microservices
+- listservices
+- listenconfig
 slug: nacos-capability
 source_filename: nacos-capability.yaml
 source_heading: Capability Spec

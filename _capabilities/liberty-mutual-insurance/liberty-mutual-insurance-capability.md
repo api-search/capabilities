@@ -21,22 +21,22 @@ personas: []
 provider_name: Liberty Mutual Insurance
 provider_slug: liberty-mutual-insurance
 search_terms:
-- insurance
-- personal lines
-- bindpolicy
-- create quote
-- bind policy
-- liberty
-- property
-- api
 - casualty
-- getquote
+- mutual
 - commercial lines
-- renters
 - createquote
 - get quote
+- renters
+- property
+- insurance
+- bindpolicy
 - safety data
-- mutual
+- create quote
+- api
+- personal lines
+- getquote
+- liberty
+- bind policy
 slug: liberty-mutual-insurance-capability
 source_filename: liberty-mutual-insurance-capability.yaml
 source_heading: Capability Spec

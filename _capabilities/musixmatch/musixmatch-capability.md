@@ -73,43 +73,43 @@ personas: []
 provider_name: Musixmatch
 provider_slug: musixmatch
 search_terms:
-- get /artist.related.get
-- get /track.search
-- get track get
-- musixmatch
-- get track lyrics get
-- get /track.get
-- get /artist.albums.get
-- get /track.subtitle.get
-- get /album.get
-- get chart tracks get
-- get chart artists get
-- get matcher track get
-- get matcher subtitle get
-- get /matcher.subtitle.get
-- get album get
 - get /track.lyrics.get
-- get /album.tracks.get
-- music
-- get /artist.search
-- api
-- get track snippet get
-- translations
-- get artist albums get
-- get track search
-- get album tracks get
-- get artist related get
-- get track subtitle get
-- get /track.snippet.get
-- get /chart.artists.get
-- get /artist.get
+- get /artist.albums.get
+- get /track.search
 - get /matcher.lyrics.get
-- lyrics
-- get matcher lyrics get
+- get artist related get
+- get chart artists get
+- get /album.get
 - get artist search
-- get /matcher.track.get
 - get /chart.tracks.get
+- get /chart.artists.get
+- api
+- get /track.get
+- get /album.tracks.get
+- get matcher lyrics get
+- get album tracks get
+- get track get
+- get matcher subtitle get
+- get /artist.related.get
+- get track search
+- music
+- get chart tracks get
+- get track subtitle get
+- translations
+- get album get
+- get track lyrics get
+- get /matcher.subtitle.get
+- get /artist.search
+- musixmatch
 - get artist get
+- get /artist.get
+- get artist albums get
+- get /track.subtitle.get
+- get /track.snippet.get
+- lyrics
+- get /matcher.track.get
+- get matcher track get
+- get track snippet get
 slug: musixmatch-capability
 source_filename: musixmatch-capability.yaml
 source_heading: Capability Spec

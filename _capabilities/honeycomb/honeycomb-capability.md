@@ -249,128 +249,128 @@ personas: []
 provider_name: honeycomb
 provider_slug: honeycomb
 search_terms:
-- update a column
-- create a calculated field
-- update an slo
-- update a board
-- createmarkersetting
-- listdatasets
-- delete a calculated field
-- update a recipient
-- getapikey
-- createslo
-- updatedataset
-- get an environment
-- deletetrigger
-- get a burn alert
-- deleterecipient
-- authenticate api key
-- api
-- create a column
-- create a marker setting
-- listcalculatedfields
-- create a board
-- listtriggers
-- listenvironments
-- deleteburnalert
-- listauthorizations
-- createburnalert
-- deleteenvironment
-- getdataset
-- delete a burn alert
-- getenvironment
-- deleteslo
-- delete an environment
-- list all environments
-- get a calculated field
-- get an api key
-- updatemarkersetting
-- createcolumn
-- getcalculatedfield
-- update a dataset
-- create an environment
-- createdataset
-- list all slos
-- delete a column
-- deletecolumn
-- get dataset definition
-- delete an slo
-- list all triggers
-- updatecalculatedfield
-- createcalculatedfield
-- updatemarker
-- update dataset definition
-- createboard
-- create a recipient
-- get a recipient
-- updatecolumn
-- getboard
-- deletecalculatedfield
-- listapikeys
-- getrecipient
 - list calculated fields
-- gettrigger
-- update a trigger
-- create a marker
-- updatedatasetdefinition
-- get a board
-- createmarker
-- get an slo
-- honeycomb
-- create a burn alert
-- createenvironment
-- deleteboard
-- delete a marker
-- updateburnalert
-- list all marker settings
-- update an environment
-- updateboard
-- list all columns
 - update a marker setting
-- update a calculated field
-- list all burn alerts
-- getcolumn
-- listboards
-- deletemarkersetting
-- create an api key
-- create a trigger
-- updateslo
-- listslos
-- deletemarker
-- list all api keys
-- listrecipients
+- createcalculatedfield
 - delete a trigger
-- create an slo
-- listmarkersettings
-- create a dataset
-- getburnalert
-- list all recipients
-- getslo
-- createrecipient
-- getsloreport
-- listcolumns
-- listmarkers
-- get a column
-- updateenvironment
-- list all boards
-- update a marker
-- list authorizations
-- delete a recipient
-- getauth
-- list all datasets
+- get dataset definition
 - getdatasetdefinition
-- delete a board
-- createtrigger
-- get slo report
-- delete a marker setting
-- listburnalerts
-- updatetrigger
-- updaterecipient
-- get a trigger
-- update a burn alert
-- get a dataset
-- createapikey
+- update dataset definition
+- api
+- update a marker
+- get an environment
+- deleteslo
+- create a trigger
+- delete a column
+- updatemarker
+- delete an environment
+- create a marker setting
+- update a trigger
 - list all markers
+- deletemarkersetting
+- update a burn alert
+- createrecipient
+- delete a marker
+- updateboard
+- getcalculatedfield
+- get an api key
+- list authorizations
+- getapikey
+- list all recipients
+- updatemarkersetting
+- deleteenvironment
+- delete a burn alert
+- update an slo
+- list all environments
+- getenvironment
+- createdataset
+- create a recipient
+- getboard
+- deletetrigger
+- update a dataset
+- get a board
+- get a column
+- list all triggers
+- getrecipient
+- create a column
+- listapikeys
+- update a column
+- delete a calculated field
+- create a calculated field
+- gettrigger
+- get a trigger
+- listmarkers
+- createtrigger
+- listenvironments
+- createcolumn
+- delete a board
+- getburnalert
+- list all boards
+- listauthorizations
+- update a board
+- updatecalculatedfield
+- createmarker
+- deleteboard
+- update a calculated field
+- updateburnalert
+- createboard
+- listdatasets
+- create a board
+- listslos
+- deleterecipient
+- list all slos
+- list all marker settings
+- list all api keys
+- list all burn alerts
+- delete a marker setting
+- updatecolumn
+- delete an slo
+- create a dataset
+- listcalculatedfields
+- listmarkersettings
+- authenticate api key
+- deletecolumn
+- listcolumns
+- updateslo
+- updateenvironment
+- list all datasets
+- honeycomb
+- updaterecipient
+- createburnalert
+- updatetrigger
+- deletecalculatedfield
+- createapikey
+- update an environment
+- get an slo
+- getsloreport
+- create a burn alert
+- listtriggers
+- get a dataset
+- get a recipient
+- get a calculated field
+- create an environment
+- getdataset
+- updatedatasetdefinition
+- createslo
+- createenvironment
+- get slo report
+- update a recipient
+- getauth
+- create a marker
+- listrecipients
+- create an api key
+- listboards
+- delete a recipient
+- createmarkersetting
+- deletemarker
+- list all columns
+- deleteburnalert
+- getcolumn
+- get a burn alert
+- getslo
+- create an slo
+- listburnalerts
+- updatedataset
 slug: honeycomb-capability
 source_filename: honeycomb-capability.yaml
 source_heading: Capability Spec

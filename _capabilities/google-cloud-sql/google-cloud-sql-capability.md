@@ -58,38 +58,38 @@ provider_name: Google Cloud SQL
 provider_slug: google-cloud-sql
 search_terms:
 - google cloud sql get an instance
-- insertdatabase
-- deleteinstance
+- google cloud sql get a database
+- google cloud sql create a user
 - insertuser
-- cloud
-- google
+- google cloud sql list users
 - patchinstance
-- google cloud
-- sql
-- getdatabase
-- getinstance
-- deletedatabase
-- insertinstance
-- relational
+- google cloud sql list backup runs
+- api
 - google cloud sql create an instance
+- google cloud sql list instances
+- google cloud sql delete a database
+- deleteinstance
+- deletedatabase
+- google
+- getinstance
+- sql
+- google cloud sql delete an instance
+- insertinstance
+- google cloud sql list databases
 - listbackupruns
 - database
-- postgresql
-- api
-- google cloud sql update an instance
-- google cloud sql delete an instance
-- google cloud sql delete a database
-- google cloud sql create a database
-- google cloud sql list backup runs
-- mysql
-- listinstances
-- google cloud sql list instances
+- cloud
 - listdatabases
-- google cloud sql list users
+- mysql
+- google cloud sql update an instance
+- postgresql
 - listusers
-- google cloud sql list databases
-- google cloud sql create a user
-- google cloud sql get a database
+- relational
+- getdatabase
+- google cloud
+- listinstances
+- google cloud sql create a database
+- insertdatabase
 slug: google-cloud-sql-capability
 source_filename: google-cloud-sql-capability.yaml
 source_heading: Capability Spec

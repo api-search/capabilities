@@ -17,17 +17,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- list adk tools
-- google adk
-- mcp
-- invoke adk tool
-- api integration
 - governance
-- spec-driven integration
+- list adk tools
+- invoke adk tool
+- google adk
 - ai
-- bridge
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- bridge
+- naftiko
 slug: google-adk-naftiko-capability-bridge-capability
 source_filename: google-adk-naftiko-capability-bridge-capability.yaml
 source_heading: Capability Spec

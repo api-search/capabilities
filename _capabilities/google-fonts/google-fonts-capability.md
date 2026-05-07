@@ -13,16 +13,16 @@ personas: []
 provider_name: Google Fonts Developer
 provider_slug: google-fonts
 search_terms:
-- google fonts
-- google
-- api
-- css
 - fonts
-- design
+- google fonts
 - web fonts
-- listwebfonts
-- typography
+- google
+- design
 - google fonts developer list web fonts
+- api
+- typography
+- css
+- listwebfonts
 slug: google-fonts-capability
 source_filename: google-fonts-capability.yaml
 source_heading: Capability Spec

@@ -65,42 +65,42 @@ personas: []
 provider_name: Adobe Campaign
 provider_slug: adobe-campaign
 search_terms:
-- adobe campaign subscribe a recipient to a service
-- adobe campaign push a real-time transactional event
-- adobe campaign prepare and start a delivery
-- adobe campaign submit a delivery
-- workflowpostevent
-- adobe campaign execute a query
-- workflowstart
-- campaign
-- adobe campaign start a workflow
-- adobe campaign post an event signal to a workflow
-- deliveryprepareandstart
-- sessionlogout
 - adobe campaign authenticate and create a session
-- unsubscribe
 - adobe campaign terminate a session
-- marketing automation
-- subscribe
-- email marketing
-- submitdelivery
-- api
-- sessionwritecollection
-- multi-channel marketing
-- workflowstop
-- executequery
-- adobe
+- deliveryprepareandstart
+- adobe campaign execute a query
 - sessionlogon
-- sessionwrite
-- adobe campaign unsubscribe a recipient from a service
+- adobe campaign prepare and start a delivery
+- api
 - adobe campaign write data records
+- adobe campaign post an event signal to a workflow
 - pushevent
-- adobe campaign stop a workflow
-- adobe campaign push batch real-time events
-- campaign management
-- customer experience
-- adobe campaign write multiple data records
 - pushevents
+- submitdelivery
+- adobe campaign write multiple data records
+- subscribe
+- customer experience
+- adobe campaign subscribe a recipient to a service
+- campaign management
+- workflowpostevent
+- sessionwrite
+- adobe campaign stop a workflow
+- multi-channel marketing
+- adobe campaign push batch real-time events
+- workflowstart
+- email marketing
+- adobe campaign submit a delivery
+- unsubscribe
+- campaign
+- adobe campaign push a real-time transactional event
+- adobe campaign start a workflow
+- workflowstop
+- sessionlogout
+- adobe
+- executequery
+- marketing automation
+- sessionwritecollection
+- adobe campaign unsubscribe a recipient from a service
 slug: adobe-campaign-capability
 source_filename: adobe-campaign-capability.yaml
 source_heading: Capability Spec

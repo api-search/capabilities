@@ -89,55 +89,55 @@ personas: []
 provider_name: Axon Framework
 provider_slug: axon-framework
 search_terms:
-- axon framework - list contexts
-- createuser
+- pauseeventprocessor
 - removenode
-- listevents
-- axon framework - create a context
+- axon framework - list applications
+- event-driven
+- axon framework - append an event
+- axon framework - append a snapshot
+- getcontext
+- getsnapshots
 - getclusterinfo
+- axon framework - list event processors
+- axon framework - pause an event processor
+- axon framework - delete a context
+- api
+- axon framework - get snapshots for an aggregate
 - java
+- createcontext
+- listeventprocessors
+- axon framework - list contexts
+- appendevent
+- axon framework - delete a user
+- axon
+- event sourcing
+- deletecontext
+- deleteuser
+- listqueryhandlers
+- cqrs
+- axon framework - create a user
 - axon framework - start an event processor
 - framework
-- listeventprocessors
-- axon framework - delete a context
-- axon framework - get cluster information
-- axon framework - list command handlers
-- event sourcing
-- axon framework - list users
-- axon framework - append a snapshot
-- axon framework - get a context
-- appendevent
-- getaggregateevents
-- appendsnapshot
-- listcommandhandlers
-- getsnapshots
-- axon framework - list applications
-- messaging
-- api
+- axon framework - get events for an aggregate
 - starteventprocessor
+- listevents
+- axon framework - get a context
+- createuser
+- listapplications
+- axon framework - list users
+- listusers
+- axon framework - create a context
+- appendsnapshot
+- axon framework - remove a node from the cluster
+- axon framework - list command handlers
+- listcommandhandlers
+- messaging
+- getaggregateevents
 - axon framework - list query handlers
 - listcontexts
-- axon framework - append an event
-- axon framework - list event processors
-- pauseeventprocessor
-- axon framework - get events for an aggregate
-- event-driven
-- getcontext
-- axon framework - pause an event processor
-- cqrs
-- createcontext
-- axon framework - get snapshots for an aggregate
-- axon framework - create a user
-- listusers
-- axon framework - remove a node from the cluster
-- axon
-- axon framework - list events
-- deletecontext
 - microservices
-- listqueryhandlers
-- listapplications
-- axon framework - delete a user
-- deleteuser
+- axon framework - list events
+- axon framework - get cluster information
 slug: axon-framework-capability
 source_filename: axon-framework-capability.yaml
 source_heading: Capability Spec

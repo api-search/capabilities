@@ -37,51 +37,51 @@ personas: []
 provider_name: Spring Batch 5.1
 provider_slug: spring-batch-51
 search_terms:
-- check batch health
-- get job
-- list jobs
-- get current measurements for a spring batch metric such as job duration, step duration, or item counts
-- java
-- registered spring batch jobs
-- application and batch component health status
-- job execution history
-- list all available spring batch micrometer metrics names
-- job scheduling
-- get details for a specific batch job
-- spring batch
-- etl
-- list all available batch metrics
-- monitoring
-- get batch metric
-- enterprise
-- job instances for a specific job
-- single metric measurements with tag filtering
-- get overall application health including batch components
-- list executions
-- list instances
-- list execution history for a batch job
-- get job details
-- list job instances for a spring batch job (each instance represents a unique set of parameters)
 - micrometer metrics for batch performance tracking
-- list job executions
+- check batch health
+- get details for a specific batch job
+- job execution history
+- list all available batch metrics
 - individual job details
+- list all available spring batch micrometer metrics names
+- application and batch component health status
+- get health
+- job instances for a specific job
+- get job details
+- get job
+- java
+- monitoring
+- single metric measurements with tag filtering
+- get measurements for a named batch metric
+- job scheduling
+- list job instances
+- list instances
+- registered spring batch jobs
 - observability
 - data processing
-- list all registered batch jobs
-- list metrics
-- list batch metrics
-- spring framework
-- batch processing
-- get measurements for a named batch metric
-- list job instances
-- check the health of the spring batch application and its database connection
-- get configuration and last execution details for a named spring batch job
-- list all registered spring batch jobs with their last execution status
-- get metric
+- list execution history for a batch job
 - list job instances by job name
-- job management
-- get health
+- enterprise
 - list execution history for a spring batch job including status, timing, and step statistics
+- list all registered spring batch jobs with their last execution status
+- list jobs
+- list executions
+- list all registered batch jobs
+- list batch metrics
+- get batch metric
+- get configuration and last execution details for a named spring batch job
+- list job executions
+- etl
+- get overall application health including batch components
+- check the health of the spring batch application and its database connection
+- list metrics
+- list job instances for a spring batch job (each instance represents a unique set of parameters)
+- job management
+- get current measurements for a spring batch metric such as job duration, step duration, or item counts
+- spring batch
+- spring framework
+- get metric
+- batch processing
 slug: batch-job-monitoring
 source_filename: batch-job-monitoring.yaml
 source_heading: Capability Spec

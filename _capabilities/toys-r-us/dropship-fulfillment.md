@@ -45,47 +45,47 @@ personas: []
 provider_name: Toys R Us
 provider_slug: toys-r-us
 search_terms:
+- create shipment
+- get orders
 - retrieve open purchase orders for fulfillment
-- submit a shipment notification
-- get order
-- submit invoices for fulfilled orders
-- sync product
-- submit a shipment notification for a fulfilled toys r us order
+- create product
 - retail
-- retrieve toys r us purchase orders pending fulfillment
-- submit an invoice for fulfilled order
-- e-commerce
+- get invoices
+- retrieve toys r us product catalog items
+- fulfillment
+- supply chain
+- order management
+- retrieve shipment notifications
+- dropship
 - submit order acknowledgements
-- get shipments
-- retrieve product catalog items
-- retrieve invoices
+- retrieve a specific order by key
 - retrieve a specific toys r us purchase order by key
 - submit an invoice for fulfilled toys r us order items
-- commerce
-- dropship
 - create invoice
-- supply chain
-- fulfillment
-- create acknowledgement
-- submit shipment notifications
+- sync product
+- submit a shipment notification
+- e-commerce
 - submit an order acknowledgement
-- product catalog synchronization
-- get products
-- retrieve toys r us invoices
-- retrieve shipment notifications
-- retrieve toys r us shipment notifications
-- create shipment
-- create or update a product in the toys r us catalog
-- submit an order acknowledgement for a toys r us purchase order
-- get invoices
-- create product
-- retrieve a single purchase order
 - create or update a product catalog item
-- order management
-- get orders
+- retrieve toys r us shipment notifications
+- submit an invoice for fulfilled order
+- retrieve invoices
+- get shipments
+- create acknowledgement
+- retrieve toys r us invoices
+- create or update a product in the toys r us catalog
+- submit invoices for fulfilled orders
+- product catalog synchronization
+- retrieve a single purchase order
+- submit shipment notifications
+- retrieve toys r us purchase orders pending fulfillment
+- submit a shipment notification for a fulfilled toys r us order
+- get products
 - retrieve purchase orders awaiting fulfillment
-- retrieve toys r us product catalog items
-- retrieve a specific order by key
+- commerce
+- retrieve product catalog items
+- get order
+- submit an order acknowledgement for a toys r us purchase order
 slug: dropship-fulfillment
 source_filename: dropship-fulfillment.yaml
 source_heading: Capability Spec

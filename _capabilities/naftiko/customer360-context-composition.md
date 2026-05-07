@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- customer 360
-- api integration
 - governance
 - spec-driven integration
-- ai
-- mcp
-- capabilities
-- composition
 - get customer 360
+- ai
+- composition
+- customer 360
+- capabilities
+- api integration
+- mcp
+- naftiko
 slug: customer360-context-composition
 source_filename: customer360-context-composition.yaml
 source_heading: Capability Spec

@@ -61,65 +61,65 @@ personas: []
 provider_name: Squid
 provider_slug: squid
 search_terms:
-- get all active client and server connections with state and bytes
-- network administration
-- get acl list
-- reload squid configuration
-- rotate log files
-- get general squid cache information including version, uptime, and basic statistics
 - active http requests
-- get current squid configuration
-- get 5-minute rolling averages for cache activity
+- get cache utilization
+- rotate squid log files
+- web cache
+- get all active client and server connections with state and bytes
 - cached objects
-- get active requests
-- list objects stored in the squid cache with optional url pattern filter
-- get all active connections
-- get all acls and their membership
-- get detailed squid performance counters including hit rates and byte counts
-- http proxy
+- trigger squid to reload its configuration file without restart
 - 60-minute rolling statistics
-- get current cache utilization, object count, and capacity
-- get cache config
-- get memory usage
-- get cache utilization and capacity
-- get 60-minute rolling cache statistics
 - get 60min statistics
-- get detailed cache performance counters
-- get cache counters
-- get connections
+- get memory allocation statistics
+- cache information and general statistics
+- access control lists
+- get general squid cache information
+- squid
+- get active requests
 - reconfigure squid
 - cache utilization metrics
-- web cache
-- access control lists
-- cache information and general statistics
-- get cache info
-- performance counters
-- get current squid runtime configuration
-- content filtering
-- cache management
-- trigger squid log file rotation
-- get 5min statistics
-- list active http requests being processed
-- get cache objects
-- 5-minute rolling statistics
-- list cached objects
-- access control
-- proxy
-- list all currently active http requests being processed by squid
+- get all active connections
+- rotate log files
 - cache configuration
-- trigger squid to reload its configuration file without restart
-- get memory allocation statistics
-- memory usage statistics
-- squid
-- active connections
-- get general squid cache information
-- rotate squid log files
-- get squid memory pool and allocation statistics
-- get 5-minute rolling cache statistics
-- get 60-minute rolling averages for cache activity
-- get cache utilization
-- caching proxy
 - get all defined squid acls for access control auditing
+- 5-minute rolling statistics
+- get cache config
+- get 60-minute rolling averages for cache activity
+- get current squid configuration
+- get current cache utilization, object count, and capacity
+- access control
+- cache management
+- caching proxy
+- content filtering
+- get acl list
+- performance counters
+- get cache info
+- list active http requests being processed
+- get 60-minute rolling cache statistics
+- list cached objects
+- active connections
+- get 5-minute rolling averages for cache activity
+- get memory usage
+- get detailed cache performance counters
+- http proxy
+- list all currently active http requests being processed by squid
+- get general squid cache information including version, uptime, and basic statistics
+- trigger squid log file rotation
+- get cache counters
+- memory usage statistics
+- get current squid runtime configuration
+- network administration
+- get connections
+- get squid memory pool and allocation statistics
+- get 5min statistics
+- get cache utilization and capacity
+- get all acls and their membership
+- get detailed squid performance counters including hit rates and byte counts
+- get 5-minute rolling cache statistics
+- reload squid configuration
+- list objects stored in the squid cache with optional url pattern filter
+- get cache objects
+- proxy
 slug: proxy-management
 source_filename: proxy-management.yaml
 source_heading: Capability Spec

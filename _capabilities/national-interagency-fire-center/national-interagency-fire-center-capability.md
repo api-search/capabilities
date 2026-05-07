@@ -25,23 +25,23 @@ personas: []
 provider_name: National Interagency Fire Center
 provider_slug: national-interagency-fire-center
 search_terms:
-- get layer metadata
 - wildfire
-- getfeatureserver
-- federal government
-- get featureserver metadata
+- get layer metadata
 - fire
-- national
-- querylayer
+- getfeatureserver
 - list arcgis services
-- emergency management
-- api
-- getlayer
+- get featureserver metadata
 - query a layer
 - center
-- listservices
-- geospatial
 - interagency
+- federal government
+- emergency management
+- getlayer
+- api
+- querylayer
+- geospatial
+- national
+- listservices
 slug: national-interagency-fire-center-capability
 source_filename: national-interagency-fire-center-capability.yaml
 source_heading: Capability Spec

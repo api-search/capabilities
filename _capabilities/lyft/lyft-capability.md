@@ -37,22 +37,22 @@ personas: []
 provider_name: lyft
 provider_slug: lyft
 search_terms:
-- list available concierge ride types
-- list concierge cost estimates
-- listconciergerides
-- create a concierge ride
-- listconciergeridetypes
+- lyft
 - listconciergecostestimates
-- get concierge ride status
 - api
 - getconciergeridestatus
+- listconciergeridetypes
+- getconciergeride
+- list available concierge ride types
+- list concierge cost estimates
+- create a concierge ride
+- listconciergerides
 - get concierge ride detail
 - list concierge rides
-- lyft
+- cancel a concierge ride
+- get concierge ride status
 - createconciergeride
 - cancelconciergeride
-- cancel a concierge ride
-- getconciergeride
 slug: lyft-capability
 source_filename: lyft-capability.yaml
 source_heading: Capability Spec

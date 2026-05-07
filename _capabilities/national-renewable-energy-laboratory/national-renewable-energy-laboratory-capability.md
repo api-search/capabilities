@@ -29,25 +29,25 @@ personas: []
 provider_name: National Renewable Energy Laboratory
 provider_slug: national-renewable-energy-laboratory
 search_terms:
-- research
-- solar resource data
-- renewable
-- get utility rates v3 json
-- pvwatts solar pv system production estimate
-- get alt fuel stations v1 json
-- get alt fuel stations v1 nearest json
 - laboratory
-- national
+- get solar solar resource v1 json
+- api
+- get utility rates v3 json
+- research
+- get alt fuel stations v1 nearest json
+- energy
+- utility electricity rates by location
 - renewable energy
 - climate
-- api
-- get solar solar resource v1 json
-- utility electricity rates by location
-- energy
-- get pvwatts v8 json
-- search alternative fuel stations
-- federal government
+- get alt fuel stations v1 json
 - find nearest alternative fuel stations
+- national
+- renewable
+- search alternative fuel stations
+- get pvwatts v8 json
+- federal government
+- pvwatts solar pv system production estimate
+- solar resource data
 slug: national-renewable-energy-laboratory-capability
 source_filename: national-renewable-energy-laboratory-capability.yaml
 source_heading: Capability Spec

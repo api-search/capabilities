@@ -49,35 +49,35 @@ personas: []
 provider_name: Helidon
 provider_slug: helidon
 search_terms:
-- helidon application metrics
-- helidon openapi document
+- getliveness
+- getopenapi
+- reactive
+- api
 - helidon application info
 - helidon startup check
+- helidon
+- helidon overall health status
+- helidon openapi document
+- cloud native
+- java
+- getbasemetrics
+- helidon application metrics
+- helidon all metrics
+- getstartup
+- getvendormetrics
+- microprofile
+- gethealth
+- frameworks
 - helidon vendor metrics
 - getmetrics
-- getvendormetrics
-- helidon all metrics
-- getapplicationmetrics
-- java
-- helidon base metrics
 - getinfo
-- helidon overall health status
-- cloud native
-- gethealth
-- oracle
-- getbasemetrics
-- api
-- helidon readiness check
-- getliveness
-- helidon
-- helidon liveness check
-- getstartup
 - getreadiness
-- frameworks
-- reactive
+- helidon liveness check
+- helidon base metrics
 - microservices
-- getopenapi
-- microprofile
+- oracle
+- helidon readiness check
+- getapplicationmetrics
 slug: helidon-capability
 source_filename: helidon-capability.yaml
 source_heading: Capability Spec

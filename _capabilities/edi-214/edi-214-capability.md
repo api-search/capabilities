@@ -29,19 +29,19 @@ personas: []
 provider_name: edi-214
 provider_slug: edi-214
 search_terms:
-- translateedi214
-- submit a shipment status update
-- translate edi 214 document to json
 - listtransactions
-- gettransaction
-- list edi 214 transactions
-- api
-- get edi 214 transaction details
 - postshipmentstatus
 - edi
-- '214'
+- translate edi 214 document to json
+- translateedi214
 - generate edi 214 document from json
+- submit a shipment status update
 - generateedi214
+- api
+- gettransaction
+- get edi 214 transaction details
+- list edi 214 transactions
+- '214'
 slug: edi-214-capability
 source_filename: edi-214-capability.yaml
 source_heading: Capability Spec

@@ -29,35 +29,35 @@ personas: []
 provider_name: US Bureau of Labor Statistics
 provider_slug: us-bureau-of-labor-statistics
 search_terms:
+- wages
+- query time series
+- get series data
+- bls survey catalog
+- labor statistics
 - unemployment
 - query bls time series data for employment, unemployment, cpi, wages, or any other bls statistical series by series id and date range
-- retrieve historical data for a specific bls series
-- economic data
-- get series data
-- query bls statistical time series data
+- list all bls survey programs and abbreviations
 - get the 25 most popular bls series ids, useful for discovering commonly referenced economic indicators like unemployment rate and cpi
-- get survey details
-- wages
-- consumer price index
-- employment
-- most popular bls series
 - get time series data for a specific series
 - retrieve time series data for one or more bls series ids
-- list all bls survey programs and abbreviations
-- bls survey catalog
-- get metadata for a specific bls survey
-- retrieve historical data for a single bls series id (e.g., lns14000000 for unemployment rate, cuur0000sa0 for cpi)
 - get survey
-- labor statistics
+- get survey details
+- economic data
+- employment
+- list all bls survey programs to discover available data types
+- retrieve historical data for a single bls series id (e.g., lns14000000 for unemployment rate, cuur0000sa0 for cpi)
+- list surveys
+- get metadata for a specific bls survey
 - get popular series
 - get detailed metadata for a specific bls survey program
-- get the 25 most popular bls series identifiers
+- retrieve historical data for a specific bls series
+- most popular bls series
 - federal government
-- query time series
-- survey metadata
-- list surveys
-- list all bls survey programs to discover available data types
 - open data
+- survey metadata
+- consumer price index
+- query bls statistical time series data
+- get the 25 most popular bls series identifiers
 slug: labor-statistics-data
 source_filename: labor-statistics-data.yaml
 source_heading: Capability Spec

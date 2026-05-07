@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- trading
-- list orders
-- emsx
-- cancel order
-- bloomberg
-- api integration
 - governance
+- trading
+- bloomberg
+- cancel order
 - spec-driven integration
-- ai
-- mcp
-- capabilities
 - create governed order
+- ai
+- capabilities
+- emsx
+- api integration
+- mcp
+- list orders
+- naftiko
 slug: emsx-execution-governed-capability
 source_filename: emsx-execution-governed-capability.yaml
 source_heading: Capability Spec

@@ -57,36 +57,36 @@ personas: []
 provider_name: Nected
 provider_slug: nected
 search_terms:
-- low-code
-- decision engine
-- getentity
-- updateglobalvariable
-- update a global variable
-- deleteglobalvariable
+- list rules or workflows
 - getauditlog
 - check usage
-- listentities
-- trigger a rule
-- createglobalvariable
-- triggerworkflow
-- get audit log detail
-- list rules or workflows
-- search audit logs
-- get rule or workflow detail
-- api
 - workflow automation
-- get a global variable
-- checkusage
-- triggerrule
-- create a global variable
-- list global variables
-- trigger a workflow
-- nected
-- getglobalvariable
-- listglobalvariables
-- delete a global variable
+- getentity
+- updateglobalvariable
+- api
+- triggerworkflow
+- trigger a rule
+- low-code
 - searchauditlogs
+- deleteglobalvariable
+- trigger a workflow
+- listentities
+- getglobalvariable
+- create a global variable
+- createglobalvariable
+- delete a global variable
+- get audit log detail
+- decision engine
+- triggerrule
+- list global variables
+- checkusage
+- get rule or workflow detail
+- listglobalvariables
 - business rules
+- nected
+- get a global variable
+- update a global variable
+- search audit logs
 slug: nected-capability
 source_filename: nected-capability.yaml
 source_heading: Capability Spec

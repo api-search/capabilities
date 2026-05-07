@@ -17,16 +17,16 @@ personas: []
 provider_name: Federal Communications Commission
 provider_slug: federal-communications-commission
 search_terms:
-- federal government
-- listfilings
 - commission
-- api
-- open data
-- federal
-- search ecfs proceedings
 - search ecfs filings
-- communications
+- listfilings
 - listproceedings
+- federal
+- federal government
+- open data
+- api
+- search ecfs proceedings
+- communications
 slug: federal-communications-commission-capability
 source_filename: federal-communications-commission-capability.yaml
 source_heading: Capability Spec

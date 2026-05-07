@@ -37,30 +37,30 @@ personas: []
 provider_name: Google Cloud Load Balancing
 provider_slug: google-cloud-load-balancing
 search_terms:
-- networking
-- listforwardingrules
-- google cloud load balancing list health checks
-- infrastructure
-- deletebackendservice
-- cloud
-- balancing
-- google
-- listbackendservices
-- getbackendservice
-- listhealthchecks
-- google cloud load balancing list backend services
-- api
-- load
-- google cloud load balancing list url maps
-- google cloud load balancing delete a backend service
-- traffic management
-- google cloud load balancing create a backend service
-- google cloud load balancing get a backend service
-- google cloud load balancing list forwarding rules
-- load balancing
-- google cloud
 - createbackendservice
 - listurlmaps
+- networking
+- google cloud load balancing delete a backend service
+- api
+- google cloud load balancing list url maps
+- getbackendservice
+- google
+- google cloud load balancing list health checks
+- infrastructure
+- google cloud load balancing get a backend service
+- listforwardingrules
+- google cloud load balancing list backend services
+- load balancing
+- traffic management
+- balancing
+- cloud
+- listhealthchecks
+- google cloud
+- deletebackendservice
+- load
+- listbackendservices
+- google cloud load balancing list forwarding rules
+- google cloud load balancing create a backend service
 slug: google-cloud-load-balancing-capability
 source_filename: google-cloud-load-balancing-capability.yaml
 source_heading: Capability Spec

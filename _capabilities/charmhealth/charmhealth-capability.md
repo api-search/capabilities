@@ -69,47 +69,47 @@ personas: []
 provider_name: CharmHealth
 provider_slug: charmhealth
 search_terms:
-- searchpatient
-- fhir
-- searchappointment
-- searchmedicationrequest
-- read patient
+- searchcondition
+- getcapabilitystatement
+- ehr
 - patient engagement
-- search careplan
-- smart on fhir
-- hl7
+- api
 - patients
-- readpatient
-- healthcare
-- get fhir capabilitystatement
-- searchobservation
+- searchpatient
+- searchmedicationrequest
+- searchcareteam
+- searchorganization
+- emr
+- search observation
+- search documentreference
+- us core
+- fhir
 - search practitioner
 - search appointment
-- emr
-- search documentreference
-- search patient
-- getcapabilitystatement
-- us core
-- searchcondition
 - search encounter
-- searchcareteam
-- search organization
-- searchimmunization
 - search allergyintolerance
-- searchpractitioner
-- api
-- searchorganization
 - searchencounter
-- search careteam
-- searchcareplan
-- ehr
-- search observation
-- searchdocumentreference
-- search medicationrequest
-- search condition
+- healthcare
+- searchimmunization
+- search careplan
+- smart on fhir
+- search organization
 - searchallergyintolerance
-- search immunization
+- hl7
 - charmhealth
+- searchcareplan
+- searchdocumentreference
+- read patient
+- searchobservation
+- readpatient
+- search immunization
+- get fhir capabilitystatement
+- searchpractitioner
+- search medicationrequest
+- search patient
+- search condition
+- searchappointment
+- search careteam
 slug: charmhealth-capability
 source_filename: charmhealth-capability.yaml
 source_heading: Capability Spec

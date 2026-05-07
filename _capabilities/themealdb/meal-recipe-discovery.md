@@ -29,44 +29,44 @@ personas: []
 provider_name: TheMealDB
 provider_slug: themealdb
 search_terms:
-- filter by ingredient
-- meal categories
-- browse meals by letter
-- list all categories
 - nutrition
-- search for meal recipes by name (e.g. chicken, pasta, sushi)
-- list all regional cuisines available in the database
-- full meal recipe details
-- retrieve a random meal recipe
-- get random meal
-- get a completely random meal recipe for cooking inspiration
-- browse all meals starting with a specific letter
-- get full recipe details for a meal by its id
-- find meals that use a specific ingredient
-- lookup meal by id
-- search for meals by name
-- filter meals by regional cuisine (e.g. italian, japanese, mexican)
-- filter meals
-- list all meal categories with thumbnails and descriptions
-- look up a meal by id
-- filter by area
-- filter meals by attributes
-- recipes
-- list all meal categories
-- search and browse meal recipes
-- lookup meal
-- cooking
-- list ingredients
-- filter meals by ingredient, category, or area
-- get a random meal recipe
-- list categories
-- list all available ingredients in the database
-- meals
-- list areas
 - food
+- list areas
+- get a random meal recipe
+- cooking
+- lookup meal by id
+- list ingredients
+- search and browse meal recipes
+- look up a meal by id
+- get full recipe details for a meal by its id
+- lookup meal
+- retrieve a random meal recipe
+- browse meals by letter
+- recipes
+- full meal recipe details
+- list all meal categories with thumbnails and descriptions
+- list categories
 - filter by category
+- list all available ingredients in the database
+- meal categories
+- find meals that use a specific ingredient
+- browse all meals starting with a specific letter
+- list all regional cuisines available in the database
+- filter meals by attributes
+- filter meals by ingredient, category, or area
+- filter by area
+- get random meal
+- filter meals
+- list all categories
+- filter meals by regional cuisine (e.g. italian, japanese, mexican)
 - search meals
+- search for meals by name
+- filter by ingredient
+- meals
+- search for meal recipes by name (e.g. chicken, pasta, sushi)
+- get a completely random meal recipe for cooking inspiration
 - filter meals by category (e.g. chicken, seafood, dessert)
+- list all meal categories
 slug: meal-recipe-discovery
 source_filename: meal-recipe-discovery.yaml
 source_heading: Capability Spec

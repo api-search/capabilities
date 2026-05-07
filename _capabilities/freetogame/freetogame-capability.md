@@ -21,16 +21,16 @@ personas: []
 provider_name: FreeToGame
 provider_slug: freetogame
 search_terms:
-- get game
-- filter games
 - freetogame
-- api
-- gaming
+- get game
 - listgames
-- getgame
-- list games
 - filtergames
+- gaming
 - games
+- list games
+- api
+- getgame
+- filter games
 slug: freetogame-capability
 source_filename: freetogame-capability.yaml
 source_heading: Capability Spec

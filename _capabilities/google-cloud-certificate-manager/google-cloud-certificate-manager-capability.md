@@ -25,25 +25,25 @@ personas: []
 provider_name: Google Cloud Certificate Manager
 provider_slug: google-cloud-certificate-manager
 search_terms:
-- google cloud certificate manager list certificates
-- createcertificate
-- google cloud certificate manager list certificate maps
-- manager
-- certificate
-- cloud
-- ssl
-- google
-- google cloud certificate manager list dns authorizations
-- security
 - listcertificates
-- google cloud certificate manager create a certificate
-- tls
-- listcertificatemaps
 - api
+- google cloud certificate manager create a certificate
+- google cloud certificate manager list dns authorizations
+- listcertificatemaps
+- google
+- ssl
+- google cloud certificate manager list certificates
+- certificate
+- manager
+- google cloud certificate manager list certificate maps
 - listdnsauthorizations
 - load balancing
-- certificate management
+- tls
+- cloud
 - certificates
+- createcertificate
+- certificate management
+- security
 slug: google-cloud-certificate-manager-capability
 source_filename: google-cloud-certificate-manager-capability.yaml
 source_heading: Capability Spec

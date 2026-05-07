@@ -89,85 +89,85 @@ personas: []
 provider_name: Ternary
 provider_slug: ternary
 search_terms:
-- delete a cost allocation rule
-- update cost allocation
-- create report
-- get kubernetes pod label configuration
-- finops
-- get details of a specific anomaly
-- delete cost allocation
-- create budget
-- list detected cost anomalies
-- update kubernetes pod label configuration for cost allocation
-- acknowledge a cost anomaly
-- create a new cost allocation rule
-- cost reports and analytics
-- update kubernetes pod labels
-- list cloud commitments with utilization data
-- acknowledge a detected anomaly
-- list cloud cost budgets
-- manage a specific budget
-- list kubernetes pod labels
-- get anomaly
-- update budget
-- get commitment
-- list all cost allocation rules for distributing shared cloud costs across teams
 - execute a saved report
-- list detected cloud cost anomalies with optional filters by status, provider, and date range
-- create a new cloud cost budget
-- update a cost allocation rule
-- list saved cost reports and dashboards
-- get details of a specific cloud commitment including utilization and savings
-- list saved cost reports
-- run report
-- get full details of a specific cloud cost anomaly including affected resources
-- kubernetes
-- get details of a commitment
-- cost optimization
-- ternary
-- execute a saved cost report and retrieve the resulting cost breakdown data
-- execute a saved report and retrieve cost data
-- manage a specific cost anomaly
-- budgeting
-- details for a specific commitment
-- list cloud cost budgets with current spend and forecasted amounts
-- list budgets
-- kubernetes pod label configuration for cost allocation
-- list cloud commitment purchases (ris, savings plans, cuds) with utilization
-- get kubernetes pod label configuration used for cost allocation across clusters
-- get cost allocation
-- get details of a cost allocation rule
-- list all cost allocation rules
-- update an existing cost allocation rule
-- create a new cost report
-- multi-cloud
-- get kubernetes pod labels
-- cloud cost anomalies detected by ml algorithms
-- acknowledge anomaly
-- cloud cost management
-- create a new cost allocation rule to distribute shared cloud costs
-- list cost allocations
-- google cloud
-- get details of a specific cost allocation rule
-- anomaly detection
-- create a new cloud cost budget with alert thresholds
 - get a specific budget with current spend vs target
-- cloud cost budgets with spend thresholds
-- create cost allocation
-- cloud commitment purchases and discount tracking
-- get details of a budget
-- acknowledge a cost anomaly to indicate the team is aware of the spike
-- update kubernetes pod label configuration
-- list reports
-- update an existing cloud cost budget
-- list anomalies
-- delete a cloud cost budget
-- manage a specific cost allocation rule
-- get budget
+- create a new cost allocation rule to distribute shared cloud costs
+- list cloud cost budgets
+- create report
+- list detected cost anomalies
+- manage a specific budget
 - cost allocation rules for distributing shared cloud costs
+- update a cloud cost budget
+- cloud commitment purchases and discount tracking
+- update budget
+- get details of a cost allocation rule
+- anomaly detection
+- list anomalies
+- get budget
+- list cloud commitment purchases (ris, savings plans, cuds) with utilization
+- list detected cloud cost anomalies with optional filters by status, provider, and date range
+- get cost allocation
+- delete a cost allocation rule
+- google cloud
+- acknowledge a detected anomaly
+- update kubernetes pod labels
+- update a cost allocation rule
+- finops
+- get kubernetes pod label configuration used for cost allocation across clusters
+- list cloud commitments with utilization data
+- list reports
+- cost optimization
+- cloud cost budgets with spend thresholds
+- list saved cost reports and dashboards
+- get details of a specific anomaly
+- create cost allocation
+- create budget
+- execute a saved cost report and retrieve the resulting cost breakdown data
+- ternary
+- details for a specific commitment
+- create a new cloud cost budget
+- cloud cost management
+- list all cost allocation rules for distributing shared cloud costs across teams
+- run report
+- get details of a commitment
+- acknowledge a cost anomaly to indicate the team is aware of the spike
+- multi-cloud
+- get full details of a specific cloud cost anomaly including affected resources
+- get anomaly
+- get details of a specific cloud commitment including utilization and savings
+- kubernetes
+- get details of a specific cost allocation rule
+- delete cost allocation
+- update an existing cost allocation rule
+- get kubernetes pod labels
+- list budgets
+- delete a cloud cost budget
 - delete budget
 - list commitments
-- update a cloud cost budget
+- update kubernetes pod label configuration for cost allocation
+- manage a specific cost allocation rule
+- acknowledge anomaly
+- get kubernetes pod label configuration
+- create a new cost allocation rule
+- create a new cloud cost budget with alert thresholds
+- get details of a budget
+- list cloud cost budgets with current spend and forecasted amounts
+- list kubernetes pod labels
+- execute a saved report and retrieve cost data
+- create a new cost report
+- acknowledge a cost anomaly
+- list cost allocations
+- list all cost allocation rules
+- cost reports and analytics
+- manage a specific cost anomaly
+- kubernetes pod label configuration for cost allocation
+- cloud cost anomalies detected by ml algorithms
+- update cost allocation
+- get commitment
+- update an existing cloud cost budget
+- budgeting
+- list saved cost reports
+- update kubernetes pod label configuration
 slug: cloud-cost-management
 source_filename: cloud-cost-management.yaml
 source_heading: Capability Spec

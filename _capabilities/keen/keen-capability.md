@@ -29,23 +29,23 @@ personas: []
 provider_name: Keen
 provider_slug: keen
 search_terms:
-- keen list cached queries
-- listcachedqueries
-- keen create or update a cached query
-- data collection
-- keen delete a cached query
-- api
-- event analytics
-- createorupdatecachedquery
-- getcachedquery
-- deletecachedquery
-- keen get a cached query
 - getcachedqueryresult
+- analytics
+- keen
+- keen create or update a cached query
+- keen delete a cached query
+- listcachedqueries
+- createorupdatecachedquery
+- data collection
+- deletecachedquery
 - keen get cached query result
 - custom events
-- analytics
+- event analytics
+- getcachedquery
+- api
+- keen list cached queries
 - embedded analytics
-- keen
+- keen get a cached query
 slug: keen-capability
 source_filename: keen-capability.yaml
 source_heading: Capability Spec

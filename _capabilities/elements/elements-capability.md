@@ -33,27 +33,27 @@ personas: []
 provider_name: Stoplight Elements
 provider_slug: elements
 search_terms:
-- getangulargettingstarted
-- developer tools
-- web components
-- stoplight elements get angular integration guide
-- getconfigurationoptions
 - getwebcomponentgettingstarted
-- stoplight elements get web component integration guide
-- stoplight elements get configuration options reference
-- getelementsdocumentation
+- web components
 - get stoplight elements overview
-- documentation
-- openapi
-- stoplight elements get elements documentation
-- stoplight elements get react integration guide
-- api documentation
 - api
-- elements
-- interactive docs
-- react
-- getreactgettingstarted
 - getelementsoverview
+- openapi
+- stoplight elements get web component integration guide
+- documentation
+- stoplight elements get configuration options reference
+- getconfigurationoptions
+- developer tools
+- getangulargettingstarted
+- stoplight elements get elements documentation
+- getelementsdocumentation
+- elements
+- react
+- interactive docs
+- stoplight elements get react integration guide
+- stoplight elements get angular integration guide
+- api documentation
+- getreactgettingstarted
 slug: elements-capability
 source_filename: elements-capability.yaml
 source_heading: Capability Spec

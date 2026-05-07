@@ -41,40 +41,40 @@ personas: []
 provider_name: Scalable Inference Serving
 provider_slug: scalable-inference-serving
 search_terms:
-- check if all models are ready for inference
-- run model version inference
-- scalability
-- get model metadata
-- mlops
-- get server metadata
-- check if the inference server is live
-- submit inference requests to a model
-- check server readiness
-- inference server metadata and capabilities
-- run inference
-- deployment
-- model readiness status
-- inference
-- get inference server name, version, and supported protocol extensions
-- submit inference requests to a specific model version
-- check model readiness
-- ai
-- kubernetes
-- submit input tensors to a deployed model and receive inference output tensors. use get-model-metadata first to discover the correct input names, shapes, and datatypes.
-- model version-specific metadata
-- llm
-- machine learning
-- get model version metadata
-- model tensor specifications and version information
-- check if all models are loaded and the inference server is ready
-- cncf
-- run inference against a pinned model version for a/b testing, canary evaluation, or version-specific integration
-- get model input/output tensor specifications, available versions, and serving platform
-- check if a specific model is ready for inference
 - check server liveness
-- run model inference
+- submit inference requests to a model
+- run model version inference
+- ai
+- llm
+- scalability
+- check if the inference server is live
+- deployment
+- machine learning
+- kubernetes
 - model serving
+- check if all models are loaded and the inference server is ready
+- mlops
+- inference
 - check if the kserve inference server is live and able to receive requests
+- run inference
+- model readiness status
+- cncf
+- get inference server name, version, and supported protocol extensions
+- check model readiness
+- check if all models are ready for inference
+- get model input/output tensor specifications, available versions, and serving platform
+- inference server metadata and capabilities
+- get server metadata
+- check server readiness
+- get model metadata
+- submit input tensors to a deployed model and receive inference output tensors. use get-model-metadata first to discover the correct input names, shapes, and datatypes.
+- model tensor specifications and version information
+- run model inference
+- submit inference requests to a specific model version
+- run inference against a pinned model version for a/b testing, canary evaluation, or version-specific integration
+- model version-specific metadata
+- get model version metadata
+- check if a specific model is ready for inference
 slug: model-inference-operations
 source_filename: model-inference-operations.yaml
 source_heading: Capability Spec

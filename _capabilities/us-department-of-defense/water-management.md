@@ -53,69 +53,69 @@ personas: []
 provider_name: US Department of Defense
 provider_slug: us-department-of-defense
 search_terms:
-- get offices
+- stage-discharge rating curves
+- waterways
+- single monitoring location
+- get ratings
+- usace projects and reservoirs
+- browse available time series identifiers
+- field measurements
+- list usace offices
+- get usace water monitoring locations with geographic coordinates and metadata. filter by district office to scope results.
+- browse all available usace locations
+- get pools
+- get levels
+- get location levels including flood stage thresholds, flood control pools, and operational levels for usace monitoring locations and reservoirs. essential for flood risk assessment.
+- navigation
+- get reservoir pool definitions including conservation pool, flood control pool, and surcharge storage zones for usace reservoirs.
+- get flood stage levels
+- get location
+- get locations
+- water management time series measurements
+- get monitoring locations
+- list all usace district offices with their identifiers. use to find the office id needed to scope other queries.
+- get reservoir pool storage zones
+- get location catalog
+- list usace district offices
+- searchable location catalog
+- get time series catalog
+- browse the catalog of available usace time series identifiers. useful for discovering what data is available for a district office before retrieving actual measurements.
+- water monitoring locations
+- get projects
+- get field measurements from hydrographer site visits
+- get field measurements collected by usace hydrographers during site visits. these include streamflow discharge measurements used for rating curve development and validation.
+- reservoir pool definitions
+- location levels and pool data
+- browse time series catalog
+- get measurements
+- get usace water resource projects including reservoirs, navigation projects, and flood control structures with operational parameters.
+- get usace water projects
+- get stage discharge ratings
+- get water time series
+- defense
+- get rating curves for stage to discharge conversion
+- get monitoring location details
+- get usace projects
+- water management
+- reservoirs
+- get time series water measurements from a usace monitoring location. retrieves streamflow, stage, reservoir elevation, temperature, and other parameters. specify office, time series name, and time range.
+- get details for a specific monitoring location
 - get location levels and flood stage thresholds
 - get detailed information for a specific usace monitoring location including coordinates, elevation datum, state, county, and description.
-- get usace water monitoring locations with geographic coordinates and metadata. filter by district office to scope results.
 - get reservoir pools
-- get ratings
-- browse the catalog of available usace time series identifiers. useful for discovering what data is available for a district office before retrieving actual measurements.
-- reservoirs
-- defense
-- usace projects and reservoirs
-- get location catalog
-- water management time series measurements
-- get usace water projects
-- navigation
-- get locations
-- get field measurements collected by usace hydrographers during site visits. these include streamflow discharge measurements used for rating curve development and validation.
-- single monitoring location
-- list all usace district offices with their identifiers. use to find the office id needed to scope other queries.
-- get field measurements
-- water management
-- get time series catalog
-- military
-- get monitoring locations
-- get flood stage levels
-- get field measurements from hydrographer site visits
-- get rating curves used to convert stage (water level) measurements to discharge (streamflow) values. essential for computing streamflow from continuous stage data.
-- get rating curves for stage to discharge conversion
-- location levels and pool data
-- get projects
-- get usace projects
-- get usace monitoring locations
-- water monitoring locations
-- browse time series catalog
-- usace district offices
-- get time series data for a water management location
-- catalog of available time series
-- browse available time series identifiers
-- list usace offices
-- get details for a specific monitoring location
-- get monitoring location details
-- field measurements
-- get location levels including flood stage thresholds, flood control pools, and operational levels for usace monitoring locations and reservoirs. essential for flood risk assessment.
-- get time series water measurements from a usace monitoring location. retrieves streamflow, stage, reservoir elevation, temperature, and other parameters. specify office, time series name, and time range.
-- get pools
-- get stage discharge ratings
-- flood control
-- get location
-- browse all available usace locations
-- federal government
-- stage-discharge rating curves
-- get measurements
-- waterways
-- reservoir pool definitions
-- list usace district offices
 - hydrology
-- get time series
-- get reservoir pool storage zones
-- get usace water resource projects including reservoirs, navigation projects, and flood control structures with operational parameters.
-- get levels
-- searchable location catalog
-- get water time series
-- get reservoir pool definitions including conservation pool, flood control pool, and surcharge storage zones for usace reservoirs.
+- get rating curves used to convert stage (water level) measurements to discharge (streamflow) values. essential for computing streamflow from continuous stage data.
+- get usace monitoring locations
+- flood control
+- get time series data for a water management location
+- usace district offices
+- federal government
+- catalog of available time series
+- get offices
 - open data
+- get field measurements
+- get time series
+- military
 slug: water-management
 source_filename: water-management.yaml
 source_heading: Capability Spec

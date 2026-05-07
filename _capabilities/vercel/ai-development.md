@@ -34,42 +34,42 @@ provider_name: Vercel
 provider_slug: vercel
 search_terms:
 - generate web app
-- refine a v0 generated application with follow-up instructions (e.g., add dark mode, fix responsive layout, add authentication)
-- developer tools
-- get generated app
-- gateways
-- code generation
-- vercel
 - create completion
 - iterate app
 - ai models available via vercel ai gateway
-- iterate on a generated app with follow-up instructions
-- ai
-- create embedding
-- get the code files and preview url for a v0 generated application
-- llm
 - ai gateway
-- manage generated applications
-- iterate web app
-- ai-generated web applications via v0
-- list all ai models available across providers
-- list all ai models available via the vercel ai gateway (anthropic, openai, google, meta, mistral, and more)
-- observability
-- send a chat completion request to any ai model via the vercel ai gateway
-- create text embeddings
-- generate app
-- list models
-- generate a full-stack web app from a prompt
-- text embeddings for semantic search
-- chat with model
-- create text embeddings for semantic search or retrieval using any embedding model
-- create a chat completion using any model
-- list ai models
+- llm
+- ai
+- vercel
 - ai chat completions via unified gateway
-- ai gateways
+- gateways
 - get generated app code and preview
+- create text embeddings for semantic search or retrieval using any embedding model
 - get app
 - generate a full-stack next.js web application from a natural language description using v0
+- create embedding
+- chat with model
+- generate app
+- list all ai models available across providers
+- create a chat completion using any model
+- generate a full-stack web app from a prompt
+- developer tools
+- observability
+- text embeddings for semantic search
+- ai gateways
+- manage generated applications
+- code generation
+- list models
+- list ai models
+- get the code files and preview url for a v0 generated application
+- create text embeddings
+- ai-generated web applications via v0
+- list all ai models available via the vercel ai gateway (anthropic, openai, google, meta, mistral, and more)
+- iterate on a generated app with follow-up instructions
+- iterate web app
+- get generated app
+- refine a v0 generated application with follow-up instructions (e.g., add dark mode, fix responsive layout, add authentication)
+- send a chat completion request to any ai model via the vercel ai gateway
 slug: ai-development
 source_filename: ai-development.yaml
 source_heading: Capability Spec

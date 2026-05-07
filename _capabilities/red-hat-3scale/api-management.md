@@ -41,45 +41,45 @@ personas: []
 provider_name: Red Hat 3scale
 provider_slug: red-hat-3scale
 search_terms:
-- list api applications and credentials for a developer account
-- delete a developer account
-- authorize and report api usage in one call
-- subscribe account to an application plan
-- api call authorization
-- create a new developer account
-- developer account management
-- red hat
-- list applications for a developer account
-- developer portal
-- delete a developer account and all associated applications
-- authorize api call
-- get developer account details
-- authorize and report
-- enterprise
-- authorize and report api usage
-- get developer account
-- subscribe a developer account to an api application plan
-- create developer account
-- delete developer account
-- get details of a specific developer account including subscriptions
-- authorize an api call and simultaneously report usage to 3scale
-- authorize an api call against 3scale usage limits
-- create a new developer account for api access
-- list account applications
-- api management
-- api gateway
-- create account
-- traffic management
-- list accounts
-- create application
-- list all developer accounts registered in the 3scale developer portal
 - get account
-- delete account
+- create a new developer account for api access
+- subscribe a developer account to an api application plan
+- list all developer accounts registered in the 3scale developer portal
+- red hat
+- get details of a specific developer account including subscriptions
+- list accounts
+- api call authorization
+- create application
+- api management
+- authorize and report api usage
+- authorize and report
 - individual developer account
 - developer account applications
-- list applications
-- list developer accounts
+- get developer account
+- delete developer account
+- developer portal
+- create account
+- list account applications
+- subscribe account to an application plan
+- list api applications and credentials for a developer account
+- api gateway
 - authorize an api call by checking application usage limits in 3scale
+- developer account management
+- enterprise
+- traffic management
+- authorize and report api usage in one call
+- list applications for a developer account
+- authorize an api call and simultaneously report usage to 3scale
+- create a new developer account
+- delete a developer account
+- list applications
+- delete account
+- authorize an api call against 3scale usage limits
+- get developer account details
+- delete a developer account and all associated applications
+- list developer accounts
+- create developer account
+- authorize api call
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

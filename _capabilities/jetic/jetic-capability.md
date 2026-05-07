@@ -97,56 +97,56 @@ personas: []
 provider_name: Jetic
 provider_slug: jetic
 search_terms:
-- listclusters
-- createintegration
-- jetic delete an api specification
-- jetic list clusters
-- jetic register a cluster
-- getclusterstatus
-- jetic get deployment logs
-- jetic get cluster status
-- jetic remove a cluster
-- jetic delete an integration
-- jetic undeploy a deployment
-- updateintegration
-- getintegration
-- deleteapispecification
-- getapispecification
-- jetic list integrations
-- jetic list deployments
-- listintegrations
-- jetic update an api specification
 - integrations
-- jetic get an api specification
-- jetic create an integration
-- jetic get a deployment
-- deployintegration
-- jetic get an integration
-- jetic list routes for an integration
-- jetic list api specifications
-- listintegrationroutes
 - deleteintegration
-- api
-- jetic create or import an api specification
 - getdeploymentmetrics
-- apache camel
-- ipaas
-- pro-code api composition
-- listapispecifications
-- registercluster
-- deletedeployment
-- listdeployments
-- removecluster
-- jetic update an integration
-- jetic deploy an integration
+- jetic delete an api specification
+- listintegrationroutes
 - createapispecification
-- getdeployment
+- jetic delete an integration
+- registercluster
+- getcluster
+- jetic create or import an api specification
+- api
+- listapispecifications
+- jetic list deployments
+- jetic get an api specification
+- jetic list clusters
+- createintegration
 - jetic get cluster details
+- jetic list routes for an integration
+- jetic register a cluster
+- listclusters
+- listintegrations
+- jetic update an integration
+- jetic list api specifications
+- deployintegration
+- removecluster
+- getdeployment
+- jetic create an integration
+- deletedeployment
+- jetic deploy an integration
+- ipaas
+- jetic get deployment logs
+- apache camel
+- getintegration
 - getdeploymentlogs
 - jetic
+- updateintegration
+- getclusterstatus
 - jetic get deployment metrics
+- pro-code api composition
+- jetic get an integration
+- deleteapispecification
+- jetic update an api specification
+- listdeployments
+- jetic get a deployment
 - updateapispecification
-- getcluster
+- jetic remove a cluster
+- jetic undeploy a deployment
+- jetic list integrations
+- jetic get cluster status
+- getapispecification
 slug: jetic-capability
 source_filename: jetic-capability.yaml
 source_heading: Capability Spec

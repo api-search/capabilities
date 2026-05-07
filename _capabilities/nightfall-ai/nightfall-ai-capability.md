@@ -13,14 +13,14 @@ personas: []
 provider_name: Nightfall AI
 provider_slug: nightfall-ai
 search_terms:
+- privacy
+- nightfall ai scan for sensitive information in your data
 - scanpayloadv2
-- nightfall
+- artificial intelligence
+- ai
 - sensitive data
 - api
-- ai
-- nightfall ai scan for sensitive information in your data
-- privacy
-- artificial intelligence
+- nightfall
 slug: nightfall-ai-capability
 source_filename: nightfall-ai-capability.yaml
 source_heading: Capability Spec

@@ -21,19 +21,19 @@ personas: []
 provider_name: Expedia Group
 provider_slug: expedia-group
 search_terms:
-- setdepositpolicy
-- hotels
-- flights
+- expedia
+- expedia group delete the deposit policy for a given property
 - lodging
 - travel
-- expedia group delete the deposit policy for a given property
+- expedia group create/update the deposit policy for a given property
+- getdepositpolicy
 - expedia group obtain the deposit policy for a given property
 - api
-- expedia
 - deletedepositpolicy
+- flights
+- setdepositpolicy
 - group
-- getdepositpolicy
-- expedia group create/update the deposit policy for a given property
+- hotels
 slug: expedia-group-capability
 source_filename: expedia-group-capability.yaml
 source_heading: Capability Spec

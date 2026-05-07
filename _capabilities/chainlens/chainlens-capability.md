@@ -249,129 +249,129 @@ personas: []
 provider_name: Chainlens
 provider_slug: chainlens
 search_terms:
-- findtokensbytokenid
-- finderc721transfers 1
-- chainlens retrieve contract internal transactions by its address hash.
-- chainlens retrieve token transactions by token address hash.
-- details
-- analytics
-- chainlens retrieve a list of token holders by token contract address hash.
-- smart contracts
-- getblock
-- chainlens retrieve accounts
-- gettokenevents
-- findaccounts
-- frontendconfiguration
-- chainlens retrieve a token by its address hash.
-- finderc20transfers
-- findtokensbytokenid 1
-- ethereum
-- chainlens retrieve token contracts by tokenid.
-- gettokenholders 1
-- chainlens retrieve nfts.
-- api
-- findblocks
-- search
-- getcontract
-- chainlens retrieve all internal transactions for this transaction.
-- gettokentotals
-- chainlens retrieve metadata.
-- chainlens retrieve token metadata for a given token contract address and token id.
-- chainlens retrieve erc3643 tokens.
-- chainlens retrieve transactions by address or block.
-- chainlens retrieve a transaction by its hash.
-- chainlens retrieve all events for this transaction.
-- gettokenholders
-- web3
-- finderc721transfers
-- finderc1155transfers
-- blockchain
-- findcontracttransactions 1
-- findtransactions 1
-- chainlens retrieve all nfts with metadata.
-- finderc3643transfers
-- findtokens 2
-- chainlens gas price oracle.
-- chainlens retrieve all events.
-- nfts
-- getcontractevents
-- chainlens node details.
-- gettoken 3
-- finderc721transfers 2
-- gettransactionevents
-- chainlens retrieve internal transactions by address.
-- get /mappings/{id}
-- chainlens retrieve transfers of an erc20 token.
-- chainlens retrieve transfers of an erc223 token.
-- chainlens retrieve a contract by its address hash.
-- chainlens retrieve a erc3643 by its address hash.
-- chainlens retrieve blocks.
-- findtokens 1
-- getcontenttype
-- findcontracttransactions
-- getaddress
-- getinternalsbytx
-- findnftcollections
-- findcontractsbyswarmhash
 - downloadabi
+- chainlens retrieve all nfts with metadata.
+- chainlens retrieve transfers of an erc1155 token.
+- getaccount
+- chainlens retrieve blocks, transactions, accounts by hash.
+- api
+- nfts
+- chainlens retrieve total number of different token types
+- ethereum
+- gettokenholders
+- chainlens retrieve transfers of an erc20 token.
+- finderc20transfers
+- finderc721transfers 1
+- findcontracttransactions 1
+- gettoken
+- block explorer
+- getrecommendedtokensbyprojects
+- frontendconfiguration
+- chainlens retrieve token contracts by tokenid.
+- findcontracttransactions
+- finderc777transfers
+- gettotals 1
+- gettoken 3
+- getcontract
+- finderc20transfers 1
+- chainlens retrieve nfts.
+- chainlens retrieve blocks.
+- finderc3643transfers
+- chainlens retrieve all events for this contract.
+- finderc1155transfers 2
+- cryptocurrencies
+- chainlens list contracts by swarmhash
+- gettokenmetadata 1
+- gettokenholders 2
+- chainlens download abi for a verified contract
+- chainlens retrieve total number of contracts, tokens and transactions.
 - chainlens retrieve a nft by its address hash.
+- finderc1155transfers
+- findcontractsbyswarmhash
+- finderc721transfers 2
+- gettokenevents
+- web3
+- chainlens retrieve a token by its address hash.
+- chainlens retrieve a block by its hash or height.
+- findtokens
+- chainlens retrieve metadata.
+- chainlens
+- chainlens retrieve all events for this transaction.
+- get /address/{addresshash}
+- findtransactions 1
+- findcontracttransactions 2
+- chainlens gas price oracle.
 - getmetadata
+- chainlens retrieve all events.
+- findblocks
+- findtokensbytokenid
+- gettokentype
+- chainlens retrieve token contracts.
+- blockchain
+- getaddress
+- defi
+- gettoken 1
+- gaspriceinfo
+- chainlens get a list of all recommended collections
 - chainlens retrieve nft contracts by tokenid.
+- getdashboardtotals
+- getblocktransactions
+- chainlens retrieve token transactions by token address hash.
+- gettoken 2
+- chainlens retrieve a list of token holders by token contract address hash.
+- findtransactions
+- chainlens node details.
 - get /token/{addresshash}
+- getcontractbytecode
+- gettransaction
+- getevents
+- gettransactionevents
+- findtokensbytokenid 1
+- findtokens 2
+- chainlens retrieve internal transactions by address.
+- search
+- get /content-type/get
+- chainlens retrieve transactions by address or block.
+- finderc1155transfers 1
+- chainlens retrieve contract transactions by its address hash.
+- chainlens retrieve a contract by its address hash.
 - chainlens retrieve all transactions for this block.
+- analytics
+- gettokenholders 1
+- findcontracts
+- getcontractevents
 - chainlens retrieve all token events using token address.
 - chainlens retrieve transfers of an erc777 token.
+- chainlens retrieve a transaction by its hash.
+- chainlens retrieve token metadata for a given token contract address and token id.
+- chainlens retrieve transfers of an erc223 token.
+- chainlens retrieve a erc3643 by its address hash.
 - evm
-- chainlens download abi for a verified contract
-- gettokentype
-- findcontracts
-- chainlens retrieve total number of different transactions types
-- getblocktransactions
-- getevents
-- chainlens retrieve transfers of an erc1155 token.
-- chainlens retrieve transfers of an erc3643 token.
-- chainlens list contracts by swarmhash
-- chainlens frontend configuration.
-- finderc1155transfers 2
-- get /content-type/get
-- chainlens retrieve all events for this contract.
-- chainlens
-- findcontracttransactions 2
-- chainlens retrieve total number of different token types
-- getcontractbytecode
-- gettoken 2
-- gettransaction
-- chainlens retrieve a block by its hash or height.
-- chainlens retrieve contract transactions by its address hash.
-- chainlens retrieve blocks, transactions, accounts by hash.
-- gettoken 1
-- chainlens retrieves bytecodes for a deployed contract.
-- chainlens get a list of all recommended collections
-- gettokenholders 2
-- block explorer
-- get /address/{addresshash}
+- chainlens retrieve accounts
+- smart contracts
+- findaccounts
 - get /token-type/{addresshash}
-- search 1
-- getaccount
-- findtransactions
-- gettotals 1
-- gettotals
-- finderc20transfers 1
+- findnftcollections
+- getblock
+- getinternalsbytx
+- chainlens retrieve erc3643 tokens.
+- chainlens retrieve transfers of an erc3643 token.
+- finderc721transfers
+- findtokens 1
+- chainlens retrieve contract internal transactions by its address hash.
+- details
+- gettokentotals
+- chainlens frontend configuration.
+- getcontenttype
 - chainlens retrieve contracts.
-- gettokenmetadata 1
+- chainlens retrieve total number of different transactions types
 - chainlens retrieve transfers of an erc721 token.
-- getdashboardtotals
-- chainlens retrieve token contracts.
-- cryptocurrencies
+- get /mappings/{id}
+- gettotals
 - gettokenmetadata
-- chainlens retrieve total number of contracts, tokens and transactions.
-- finderc777transfers
-- findtokens
-- gaspriceinfo
-- finderc1155transfers 1
-- defi
-- getrecommendedtokensbyprojects
-- gettoken
+- chainlens retrieves bytecodes for a deployed contract.
+- search 1
+- chainlens retrieve all internal transactions for this transaction.
 slug: chainlens-capability
 source_filename: chainlens-capability.yaml
 source_heading: Capability Spec

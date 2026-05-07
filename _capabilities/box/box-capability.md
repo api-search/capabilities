@@ -13,16 +13,16 @@ personas: []
 provider_name: Box
 provider_slug: box
 search_terms:
-- box
-- file sharing
 - cloud storage
-- api
 - documents
-- box authorize user
+- file sharing
 - enterprise
-- content management
 - collaboration
+- api
 - get authorize
+- box authorize user
+- box
+- content management
 slug: box-capability
 source_filename: box-capability.yaml
 source_heading: Capability Spec

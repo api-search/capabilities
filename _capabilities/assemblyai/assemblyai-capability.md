@@ -73,46 +73,46 @@ personas: []
 provider_name: AssemblyAI
 provider_slug: assemblyai
 search_terms:
+- wordsearch
+- assemblyai
+- lemurtask
 - assemblyai list transcripts
-- getredactedaudio
-- assemblyai search words in transcript
+- getsubtitles
+- assemblyai get subtitles for transcript
+- assemblyai get sentences in transcript
+- lemursummary
+- deletetranscript
+- assemblyai create temporary authentication token for streaming stt
 - assemblyai purge lemur request data
 - assemblyai get paragraphs in transcript
-- assemblyai
-- assemblyai upload a media file
-- audio
-- assemblyai summarize a transcript using lemur
-- lemurtask
-- lemursummary
-- createtranscript
 - ai
-- speech
-- artificial intelligence
-- deletetranscript
-- assemblyai ask questions using lemur
-- purgelemurrequestdata
-- uploadfile
-- assemblyai transcribe audio
-- api
-- assemblyai run a task using lemur
-- gettranscriptsentences
-- assemblyai delete transcript
-- assemblyai extract action items
-- transcription
-- speech to text
-- assemblyai get transcript
-- assemblyai get sentences in transcript
-- lemurquestionanswer
-- gettranscriptparagraphs
-- createtemporarytoken
-- listtranscripts
-- wordsearch
 - assemblyai get redacted audio
+- gettranscriptsentences
+- api
+- transcription
 - lemuractionitems
-- assemblyai get subtitles for transcript
-- getsubtitles
-- assemblyai create temporary authentication token for streaming stt
+- lemurquestionanswer
+- artificial intelligence
+- getredactedaudio
+- uploadfile
+- assemblyai get transcript
+- assemblyai ask questions using lemur
+- assemblyai transcribe audio
+- createtranscript
+- audio
+- createtemporarytoken
 - gettranscript
+- assemblyai extract action items
+- assemblyai summarize a transcript using lemur
+- assemblyai search words in transcript
+- assemblyai run a task using lemur
+- assemblyai upload a media file
+- speech to text
+- purgelemurrequestdata
+- speech
+- listtranscripts
+- assemblyai delete transcript
+- gettranscriptparagraphs
 slug: assemblyai-capability
 source_filename: assemblyai-capability.yaml
 source_heading: Capability Spec

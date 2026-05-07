@@ -45,32 +45,32 @@ personas: []
 provider_name: YouTube Data
 provider_slug: google-youtube
 search_terms:
-- listcommentthreads
-- playlists
-- list videos
-- search for content
-- listplaylists
-- google
-- listchannels
+- streaming
+- video
 - insertplaylist
+- list channels
+- api
+- create a playlist
+- channels
+- youtube
+- listsubscriptions
+- list playlist items
+- google
+- list playlists
+- listplaylists
 - listactivities
+- list comment threads
 - list subscriptions
 - listvideos
-- api
-- search
-- video
-- list playlists
-- youtube
-- media
-- list playlist items
-- list channels
-- listsubscriptions
-- list comment threads
-- list activities
-- create a playlist
-- streaming
 - listplaylistitems
-- channels
+- search for content
+- list activities
+- media
+- playlists
+- list videos
+- search
+- listchannels
+- listcommentthreads
 slug: google-youtube-capability
 source_filename: google-youtube-capability.yaml
 source_heading: Capability Spec

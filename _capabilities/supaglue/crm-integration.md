@@ -65,69 +65,69 @@ personas: []
 provider_name: Supaglue
 provider_slug: supaglue
 search_terms:
-- create a new opportunity in the customer's crm
-- create magic link
-- hubspot
-- create contact
-- search contacts
-- create a crm opportunity
-- view crm sync run history and status
-- list crm leads
-- list all customers using integrations
-- list opportunities from the customer's crm
-- create or update a customer in the supaglue platform
-- unified api
-- list all customers using supaglue integrations
-- crm contacts
-- create a crm account
-- list leads
-- crm contact search
-- list crm opportunities
-- sales engagement
-- create a new account in the customer's crm
-- customer crm connections
-- manage integration customers
-- trigger sync
-- create a crm contact
-- open source
 - integrations
-- list provider connections for a customer
-- crm
-- trigger a crm data sync for a customer connection
-- supaglue
-- list leads from the customer's crm
-- search for crm contacts matching filter criteria
-- create lead
-- generate a magic link for customer oauth authentication to a crm provider
-- list crm contacts
-- create opportunity
-- crm accounts
-- list crm accounts from the provider for a customer
-- hris
-- list crm provider connections for a customer
-- create a crm lead
-- upsert customer
-- list customers
-- list connections
-- create oauth magic link for customer authentication
+- hubspot
 - oauth authentication links
-- list sync run history
-- create account
-- crm leads
-- list opportunities
-- create a new contact in the customer's crm
-- sync history
-- list accounts
-- create a new lead in the customer's crm
+- list all customers using integrations
+- hris
+- list crm accounts from the provider for a customer
+- list connections
+- list leads from the customer's crm
 - list sync runs
-- list contacts
-- trigger a data sync
-- search crm contacts by criteria
+- crm accounts
+- unified api
+- list sync run history
+- list crm opportunities
+- list accounts
 - crm opportunities
-- list crm accounts
-- salesforce
+- create contact
 - list contacts from the customer's crm
+- create a new lead in the customer's crm
+- create opportunity
+- sales engagement
+- supaglue
+- list crm accounts
+- open source
+- list crm provider connections for a customer
+- list crm leads
+- create a crm lead
+- crm
+- generate a magic link for customer oauth authentication to a crm provider
+- create a new opportunity in the customer's crm
+- list provider connections for a customer
+- salesforce
+- manage integration customers
+- create account
+- trigger a crm data sync for a customer connection
+- crm contact search
+- create a crm account
+- create or update a customer in the supaglue platform
+- trigger a data sync
+- list contacts
+- sync history
+- search crm contacts by criteria
 - sync control
+- list customers
+- view crm sync run history and status
+- list leads
+- crm contacts
+- list opportunities
+- list opportunities from the customer's crm
+- trigger sync
+- search contacts
+- create lead
+- list all customers using supaglue integrations
+- create a new contact in the customer's crm
+- upsert customer
+- create magic link
+- create a crm contact
+- create a new account in the customer's crm
+- crm leads
+- customer crm connections
+- create oauth magic link for customer authentication
+- search for crm contacts matching filter criteria
+- list crm contacts
+- create a crm opportunity
 slug: crm-integration
 source_filename: crm-integration.yaml
 source_heading: Capability Spec

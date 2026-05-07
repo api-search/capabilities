@@ -41,32 +41,32 @@ personas: []
 provider_name: Spring Batch
 provider_slug: spring-batch
 search_terms:
-- listjobinstances
-- get batch health
-- getbatchhealth
-- listjobexecutions
+- list batch jobs
 - getbatchjob
+- api
 - batch
 - java
-- job scheduling
-- etl
-- enterprise
-- listmetrics
-- gethealth
-- get metric value
-- list job executions
 - list available metrics
-- api
-- get application health
-- data processing
-- list batch jobs
-- spring framework
-- batch processing
-- listbatchjobs
+- job scheduling
 - list job instances
-- getmetric
+- data processing
+- listjobexecutions
+- listjobinstances
 - spring
+- enterprise
+- gethealth
+- getmetric
+- get metric value
+- get application health
+- listmetrics
+- list job executions
+- listbatchjobs
+- etl
+- getbatchhealth
 - get batch job details
+- spring framework
+- get batch health
+- batch processing
 slug: spring-batch-capability
 source_filename: spring-batch-capability.yaml
 source_heading: Capability Spec

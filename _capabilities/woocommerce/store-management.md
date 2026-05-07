@@ -37,62 +37,62 @@ personas: []
 provider_name: WooCommerce
 provider_slug: woocommerce
 search_terms:
-- browse storefront products.
-- browse the public woocommerce storefront product catalog.
-- woocommerce
-- list orders with filtering by status and customer.
-- create a new order.
-- complete store management combining rest api and store api
-- wordpress
-- get customer
-- get order
-- get sales report for a period.
-- list customers.
-- public storefront product browsing.
-- get product
-- update order status
-- list coupons
-- list woocommerce customers, optionally searching by name or email.
-- Frontend Developer
-- Store Administrator
 - designing headless commerce architecture with woocommerce apis
-- browse storefront products
+- browse the public woocommerce storefront product catalog.
 - operations
-- managing product catalog, orders, customers, and store configuration
-- get a specific customer's profile and order history.
-- open source
-- list woocommerce discount coupons.
-- get woocommerce sales analytics for a time period.
-- processing orders, managing fulfillment, and reviewing sales analytics
-- Operations Manager
-- customer management.
-- create a new woocommerce product with pricing and inventory details.
-- ecommerce
-- create a new product.
-- headless storefront capability with public store api and admin rest api
-- store management
-- list woocommerce products with optional filtering by status, category, or keyword.
-- get detailed information about a specific woocommerce product.
-- Headless Architect
-- update the status of a woocommerce order (e.g., processing, completed, refunded).
-- sales reports and analytics.
-- create order
-- update a woocommerce product's details, pricing, or status.
-- list orders
-- list customers
-- browse products
-- list all products with filtering.
-- list products
-- orders
-- products
-- create product
-- get complete details of a specific woocommerce order including items and billing.
-- order lifecycle management.
-- building custom storefronts using woocommerce as a headless backend
 - full product catalog management.
-- list woocommerce orders filtered by status, customer, or date range.
+- get detailed information about a specific woocommerce product.
+- list woocommerce customers, optionally searching by name or email.
+- create order
+- update order status
+- get product
+- list woocommerce discount coupons.
+- building custom storefronts using woocommerce as a headless backend
+- create product
+- list products
+- browse products
+- list woocommerce products with optional filtering by status, category, or keyword.
+- create a new product.
+- orders
+- Operations Manager
+- Frontend Developer
+- ecommerce
+- open source
+- create a new order.
+- get complete details of a specific woocommerce order including items and billing.
+- get woocommerce sales analytics for a time period.
+- browse storefront products
+- sales reports and analytics.
 - update product
+- products
+- get sales report for a period.
+- complete store management combining rest api and store api
+- list customers.
+- list orders
+- customer management.
+- processing orders, managing fulfillment, and reviewing sales analytics
+- update the status of a woocommerce order (e.g., processing, completed, refunded).
+- Store Administrator
+- browse storefront products.
+- woocommerce
+- get customer
+- get a specific customer's profile and order history.
 - get sales report
+- list woocommerce orders filtered by status, customer, or date range.
+- list orders with filtering by status and customer.
+- Headless Architect
+- list customers
+- store management
+- wordpress
+- list coupons
+- order lifecycle management.
+- managing product catalog, orders, customers, and store configuration
+- create a new woocommerce product with pricing and inventory details.
+- list all products with filtering.
+- public storefront product browsing.
+- headless storefront capability with public store api and admin rest api
+- get order
+- update a woocommerce product's details, pricing, or status.
 slug: store-management
 source_filename: store-management.yaml
 source_heading: Capability Spec

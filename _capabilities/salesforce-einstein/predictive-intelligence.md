@@ -45,52 +45,52 @@ personas: []
 provider_name: Salesforce Einstein
 provider_slug: salesforce-einstein
 search_terms:
-- create prediction definition
-- create discovery story
-- create a new einstein discovery story.
-- list einstein discovery prediction models.
-- natural language processing
-- einstein prediction definitions.
-- list prediction definitions
-- get statistical insights and key findings from an einstein discovery story.
 - analytics
+- list all einstein prediction builder definitions in the org.
+- list prediction definitions
 - salesforce einstein
-- list discovery models
-- einstein discovery prediction models.
-- einstein analytics dashboards.
-- create a new einstein discovery story from a dataset for automated insights.
-- computer vision
-- list einstein analytics dashboards.
-- list prediction results for a given einstein prediction builder definition.
+- einstein prediction definitions.
+- list all einstein discovery stories.
 - list all einstein discovery analytics stories.
+- list einstein discovery prediction models for advanced analytics.
+- get ai insights for specified salesforce records.
+- create a new einstein discovery story from a dataset for automated insights.
 - list einstein analytics dashboards for business intelligence.
-- create a new einstein prediction definition.
-- ai-generated insights for salesforce records.
 - prediction results for a definition.
+- einstein discovery analytics stories.
+- get statistical insights from an einstein discovery story.
+- get statistical insights and key findings from an einstein discovery story.
+- list discovery stories
+- statistical insights from a discovery story.
 - artificial intelligence
-- crm
-- machine learning
+- create story
+- list einstein discovery prediction models.
+- business intelligence
 - list all einstein prediction definitions.
+- crm
+- ai-generated insights for salesforce records.
+- machine learning
+- einstein discovery prediction models.
+- get ai-generated insights and prediction factors for salesforce records.
+- list discovery models
+- create a new einstein discovery story.
+- computer vision
+- create a new einstein prediction definition.
+- list analytics dashboards
+- list models
+- natural language processing
+- get story stats
+- list dashboards
 - list predictions
 - list stories
-- create story
-- statistical insights from a discovery story.
-- list discovery stories
-- get ai-generated insights and prediction factors for salesforce records.
-- einstein discovery analytics stories.
-- list analytics dashboards
-- list einstein discovery prediction models for advanced analytics.
-- list models
-- get ai insights for specified salesforce records.
+- create discovery story
 - list prediction results for a definition.
-- business intelligence
-- list all einstein discovery stories.
 - get ai record insights
+- list prediction results for a given einstein prediction builder definition.
 - predictive analytics
-- get story stats
-- list all einstein prediction builder definitions in the org.
-- list dashboards
-- get statistical insights from an einstein discovery story.
+- create prediction definition
+- einstein analytics dashboards.
+- list einstein analytics dashboards.
 - salesforce
 slug: predictive-intelligence
 source_filename: predictive-intelligence.yaml

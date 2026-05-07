@@ -89,57 +89,57 @@ personas: []
 provider_name: Google Admin SDK
 provider_slug: google-admin-sdk
 search_terms:
-- creategroup
-- createuser
-- google admin sdk create user
-- listchromeosdevices
-- makeuseradmin
 - google admin sdk list organizational units
 - addmember
-- google admin sdk list roles
-- google workspace
-- google admin sdk add group member
-- deletegroup
-- listdomains
-- users
-- google admin sdk list domains
-- listmembers
-- google admin sdk get group
-- google
-- google admin sdk list chrome os devices
-- enterprise
-- google admin sdk create organizational unit
-- groups
-- sdk
-- listgroups
-- google admin sdk get user
-- google admin sdk create group
-- listroles
-- google admin sdk delete user
-- api
-- google admin sdk make user admin
-- google admin sdk list users
-- listorgunits
-- patchuser
-- google admin sdk delete group
-- administration
-- admin
-- listmobiledevices
-- google admin sdk update user
-- getuser
 - google admin sdk update group
-- devices
-- google admin sdk list mobile devices
-- google admin sdk list group members
-- listusers
-- google admin sdk list groups
-- getgroup
+- listmobiledevices
+- admin
+- users
+- listchromeosdevices
+- google admin sdk update user
+- creategroup
+- sdk
+- api
+- listorgunits
+- google admin sdk delete user
 - createorgunit
-- updateuser
-- updategroup
-- google admin sdk patch user
 - directory
+- google
+- getuser
+- google admin sdk patch user
+- getgroup
+- listgroups
 - deleteuser
+- listmembers
+- google admin sdk make user admin
+- google admin sdk add group member
+- administration
+- updategroup
+- google admin sdk list roles
+- google admin sdk create user
+- groups
+- enterprise
+- updateuser
+- google admin sdk list chrome os devices
+- devices
+- google admin sdk list groups
+- google admin sdk list users
+- google admin sdk get user
+- patchuser
+- google admin sdk create organizational unit
+- google admin sdk get group
+- createuser
+- google admin sdk list group members
+- listroles
+- listusers
+- google workspace
+- makeuseradmin
+- listdomains
+- google admin sdk list mobile devices
+- google admin sdk create group
+- google admin sdk list domains
+- deletegroup
+- google admin sdk delete group
 slug: google-admin-sdk-capability
 source_filename: google-admin-sdk-capability.yaml
 source_heading: Capability Spec

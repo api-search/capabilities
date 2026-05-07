@@ -37,28 +37,28 @@ personas: []
 provider_name: Microsoft Windows 10
 provider_slug: microsoft-windows-10
 search_terms:
+- listtriggertypes
+- microsoft windows 10 register a background task
+- getbackgroundtask
+- api
+- microsoft windows 10 list available trigger types
+- '10'
+- microsoft windows 10 get background task details
+- listbackgroundtasks
+- unregisterbackgroundtask
+- microsoft windows 10 request background access
+- microsoft
 - requestbackgroundaccess
 - uwp
-- microsoft windows 10 unregister a background task
-- windows
-- microsoft windows 10 list available trigger types
-- microsoft windows 10 request background access
-- desktop
-- unregisterbackgroundtask
-- microsoft windows 10 get background task details
-- microsoft windows 10 get background access status
-- '10'
-- listbackgroundtasks
-- registerbackgroundtask
 - operating system
-- api
-- getbackgroundtask
-- listtriggertypes
-- getbackgroundaccessstatus
-- microsoft windows 10 register a background task
 - win32
-- microsoft
 - microsoft windows 10 list registered background tasks
+- microsoft windows 10 unregister a background task
+- registerbackgroundtask
+- desktop
+- microsoft windows 10 get background access status
+- getbackgroundaccessstatus
+- windows
 slug: microsoft-windows-10-capability
 source_filename: microsoft-windows-10-capability.yaml
 source_heading: Capability Spec

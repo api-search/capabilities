@@ -45,31 +45,31 @@ personas: []
 provider_name: People Data Labs
 provider_slug: people-data-labs
 search_terms:
-- labs
+- get company enrich
+- identity resolution
+- search for person profiles
+- api
+- b2b
+- get ip enrich
+- identify a person
+- search job postings
+- autocomplete suggestions
 - ip enrichment
 - get autocomplete
+- enrich a person profile
+- enrich a company profile
+- people
+- search for companies
+- bulk person enrichment
+- post person bulk
+- data
+- get person identify
 - get company search
 - get person enrich
-- search for person profiles
-- post person bulk
-- b2b
-- bulk person enrichment
-- search job postings
-- get job posting search
-- enrich a person profile
-- people data
-- api
-- enrich a company profile
-- search for companies
 - get person search
-- get ip enrich
-- identity resolution
-- identify a person
-- get company enrich
-- data
-- autocomplete suggestions
-- people
-- get person identify
+- labs
+- get job posting search
+- people data
 slug: people-data-labs-capability
 source_filename: people-data-labs-capability.yaml
 source_heading: Capability Spec

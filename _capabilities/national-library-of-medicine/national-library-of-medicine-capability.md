@@ -45,31 +45,31 @@ personas: []
 provider_name: National Library of Medicine
 provider_slug: national-library-of-medicine
 search_terms:
-- library
 - database statistics and field metadata
-- search a database
-- espell
-- egquery
-- esummary
-- efetch
-- esearch
-- fetch full records by uid
-- national
-- api
-- medicine
-- elink
-- of
-- spelling suggestions for a query term
-- ecitmatch
-- einfo
-- match citations to pubmed uids
-- federal government
-- epost
-- global cross-database query
 - retrieve document summaries
-- post uids to the entrez history server
-- find related records across entrez databases
+- fetch full records by uid
+- api
 - health
+- efetch
+- ecitmatch
+- post uids to the entrez history server
+- egquery
+- library
+- esummary
+- search a database
+- epost
+- of
+- elink
+- find related records across entrez databases
+- spelling suggestions for a query term
+- einfo
+- esearch
+- espell
+- match citations to pubmed uids
+- medicine
+- global cross-database query
+- federal government
+- national
 slug: national-library-of-medicine-capability
 source_filename: national-library-of-medicine-capability.yaml
 source_heading: Capability Spec

@@ -29,22 +29,22 @@ personas: []
 provider_name: MarineTraffic
 provider_slug: marinetraffic
 search_terms:
-- get port call events
-- get vessel positions in area
+- getvesselpositions
 - get vessel position track
-- vessel tracking
-- ais
+- get expected vessel arrivals at a port
+- get port call events
 - maritime
-- get vessel details
 - marinetraffic
-- api
-- shipping
+- ais
+- get vessel details
+- get vessel positions in area
 - getportcalls
 - getvesseldetails
-- get expected vessel arrivals at a port
-- getexpectedarrivals
-- getvesselpositions
 - getvesseltrack
+- shipping
+- vessel tracking
+- getexpectedarrivals
+- api
 slug: marinetraffic-capability
 source_filename: marinetraffic-capability.yaml
 source_heading: Capability Spec

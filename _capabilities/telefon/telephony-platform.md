@@ -33,36 +33,36 @@ personas: []
 provider_name: Telefon
 provider_slug: telefon
 search_terms:
-- create conference
-- list messages
-- cpaas
 - send an sms or mms message globally
-- global coverage
-- send an sms or mms message
-- number provisioning
 - list voice calls with optional status and direction filters
-- list voice calls
-- create a new conference call room
-- voice
-- create call
-- sms
 - initiate an outbound phone call to a number
 - send sms
-- telephony
-- make call
-- list sent and received sms and mms messages
-- voip
-- messaging
-- call recording
-- conference call management
-- initiate an outbound voice call
-- send message
-- list calls
 - voice call management
-- list conferences
+- number provisioning
+- list voice calls
+- telephony
+- create call
+- list sent and received sms and mms messages
+- call recording
+- sms
+- cpaas
+- send message
 - sms and mms messaging
-- create a conference room
+- list calls
+- list conferences
 - list active and completed conferences
+- create a new conference call room
+- send an sms or mms message
+- make call
+- global coverage
+- list messages
+- conference call management
+- voice
+- create conference
+- initiate an outbound voice call
+- messaging
+- voip
+- create a conference room
 - communications
 slug: telephony-platform
 source_filename: telephony-platform.yaml

@@ -14,16 +14,16 @@ provider_name: JFrog Artifactory
 provider_slug: artifactory
 search_terms:
 - docker registry
-- maven
-- ci/cd
-- executeaqlquery
-- package management
-- api
 - jfrog artifactory execute aql query
-- artifactory
-- repository
-- artifacts
 - devops
+- executeaqlquery
+- artifactory
+- artifacts
+- repository
+- ci/cd
+- maven
+- api
+- package management
 slug: artifactory-capability
 source_filename: artifactory-capability.yaml
 source_heading: Capability Spec

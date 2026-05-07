@@ -45,31 +45,31 @@ personas: []
 provider_name: Veli
 provider_slug: veli
 search_terms:
-- veli close portfolio
-- veli list strategies
-- veli create portfolio
-- getperformance
-- finance
-- crypto
-- portfolio management
-- veli rebalance portfolio
-- listportfolios
-- createportfolio
-- veli
 - rebalanceportfolio
 - getpositions
-- liststrategies
-- veli get portfolio
-- api
-- getstrategy
-- getportfolio
-- veli get performance
-- investment
-- veli get positions
-- closeportfolio
-- veli list portfolios
 - defi
+- portfolio management
+- getstrategy
 - veli get strategy
+- api
+- liststrategies
+- closeportfolio
+- crypto
+- veli close portfolio
+- finance
+- investment
+- veli get portfolio
+- veli rebalance portfolio
+- veli list portfolios
+- veli get performance
+- getperformance
+- createportfolio
+- veli create portfolio
+- listportfolios
+- veli get positions
+- veli
+- veli list strategies
+- getportfolio
 slug: veli-capability
 source_filename: veli-capability.yaml
 source_heading: Capability Spec

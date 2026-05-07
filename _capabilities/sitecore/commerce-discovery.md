@@ -45,57 +45,57 @@ personas: []
 provider_name: sitecore
 provider_slug: sitecore
 search_terms:
-- list buyers
-- list products in the ordercloud marketplace
+- manage buyer organizations
+- track behavioral events for discovery personalization
 - ordercloud create product
-- ordercloud list buyers
-- manage commerce products and search product catalog
-- search products using sitecore discover full-text and faceted search
-- create a new product in ordercloud
-- list orders in ordercloud
-- full-text search products via sitecore discover
 - list ordercloud orders
-- discover get recommendations
+- create order
+- ordercloud list buyers
+- list orders in ordercloud
+- create product
+- list products
+- get product recommendations
+- get recommendations
+- b2b
+- full-text search products via sitecore discover
+- list buyer organizations in ordercloud
+- order management
+- create a new order in ordercloud
+- list product catalogs in ordercloud
 - list catalogs
 - track a behavioral event via discover
-- b2b
-- product discovery
-- get personalized product recommendations via discover
-- manage product catalogs
-- discover search products
-- commerce
-- manage commerce orders
-- get product recommendations
-- list buyer organizations
-- track behavioral events for discovery personalization
-- get recommendations
-- list product catalogs in ordercloud
-- track a behavioral event to improve discover personalization
-- list ordercloud products
-- create a new ordercloud product
-- create a new order
-- sitecore
-- list product catalogs
-- b2c
-- ordercloud list products
-- discover track event
-- search
-- manage buyer organizations
-- create a new order in ordercloud
-- list buyer organizations in ordercloud
-- create order
-- ordercloud list catalogs
-- list orders
-- list products
-- get personalized product recommendations from sitecore discover
-- create product
+- manage commerce products and search product catalog
 - search products using discover
-- track event
-- ordercloud create order
-- order management
+- search products using sitecore discover full-text and faceted search
+- list orders
+- list products in the ordercloud marketplace
+- discover search products
+- discover get recommendations
 - ordercloud list orders
-- search products
+- get personalized product recommendations from sitecore discover
+- create a new order
+- list buyers
+- b2c
+- create a new product in ordercloud
+- discover track event
+- create a new ordercloud product
+- ordercloud list products
+- track event
+- get personalized product recommendations via discover
 - recommendations
+- list buyer organizations
+- product discovery
+- manage commerce orders
+- list product catalogs
+- manage product catalogs
+- ordercloud create order
+- search
+- ordercloud list catalogs
+- commerce
+- sitecore
+- list ordercloud products
+- search products
+- track a behavioral event to improve discover personalization
 slug: commerce-discovery
 source_filename: commerce-discovery.yaml
 source_heading: Capability Spec

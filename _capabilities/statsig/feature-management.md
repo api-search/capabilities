@@ -45,64 +45,64 @@ personas: []
 provider_name: statsig
 provider_slug: statsig
 search_terms:
-- create feature gate
-- fetch dynamic configuration key-value pairs for a user.
-- a/b testing
-- feature management
 - check multiple gates
-- experiment management.
-- list gates
-- runtime experiment evaluation.
-- list all experiments.
-- project audit log.
-- evaluate whether a feature gate passes for a given user, including rule matching and group assignment.
-- list all metric definitions used in experiment analysis.
-- runtime gate evaluation.
-- get experiment
-- experimentation
-- get config
-- get feature gate config
-- get experiment group assignment for a user.
-- log events
-- evaluate a feature gate for a user.
-- delete feature gate
-- get experiment assignment
-- initialize all evaluated gates, configs, and experiments for a user (for client sdk use).
-- log analytics events and exposures.
-- list audit log entries showing who changed what in the project configuration.
-- list audit logs
-- create a new feature gate with targeting rules.
-- start experiment
-- check feature gate
-- list all a/b test experiments in the project.
-- start an experiment to begin allocating users to test groups.
 - list all feature gates in the statsig project.
-- dynamic configuration
-- get dynamic config
-- analytics event logging.
-- get a user's experiment group assignment and parameter values.
-- product analytics
-- gate configuration management.
-- initialize sdk
 - feature flags
-- log analytics events
 - create a new feature gate.
-- permanently delete a feature gate from the project.
-- list metrics
-- create a new a/b test experiment with groups and parameter configuration.
-- get dynamic config values for a user.
-- log custom analytics events and experiment exposures to statsig.
-- list experiments
-- evaluate multiple feature gates for a user in a single request.
-- dynamic configuration retrieval.
-- get the full configuration of a feature gate by name.
-- create experiment
-- list feature gates
-- create gate
-- list all feature gates.
-- list configuration change audit logs.
-- create a new experiment.
+- start experiment
 - check gate
+- initialize all evaluated gates, configs, and experiments for a user (for client sdk use).
+- experimentation
+- create gate
+- list all experiments.
+- list all a/b test experiments in the project.
+- log events
+- product analytics
+- runtime experiment evaluation.
+- get the full configuration of a feature gate by name.
+- feature management
+- list audit logs
+- create a new a/b test experiment with groups and parameter configuration.
+- experiment management.
+- evaluate whether a feature gate passes for a given user, including rule matching and group assignment.
+- fetch dynamic configuration key-value pairs for a user.
+- permanently delete a feature gate from the project.
+- log analytics events and exposures.
+- create experiment
+- get experiment group assignment for a user.
+- log analytics events
+- gate configuration management.
+- delete feature gate
+- runtime gate evaluation.
+- get a user's experiment group assignment and parameter values.
+- initialize sdk
+- list feature gates
+- create a new feature gate with targeting rules.
+- analytics event logging.
+- get config
+- list configuration change audit logs.
+- evaluate a feature gate for a user.
+- project audit log.
+- dynamic configuration retrieval.
+- check feature gate
+- create feature gate
+- start an experiment to begin allocating users to test groups.
+- evaluate multiple feature gates for a user in a single request.
+- get feature gate config
+- log custom analytics events and experiment exposures to statsig.
+- a/b testing
+- get dynamic config values for a user.
+- get experiment assignment
+- list experiments
+- list gates
+- create a new experiment.
+- list metrics
+- list all metric definitions used in experiment analysis.
+- list audit log entries showing who changed what in the project configuration.
+- list all feature gates.
+- get dynamic config
+- get experiment
+- dynamic configuration
 slug: feature-management
 source_filename: feature-management.yaml
 source_heading: Capability Spec

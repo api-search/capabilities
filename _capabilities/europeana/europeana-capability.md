@@ -19,16 +19,16 @@ provider_slug: europeana
 search_terms:
 - archives
 - search records
-- api
+- getrecord
 - europe
 - libraries
+- museums
+- get record
 - search
-- getrecord
+- cultural heritage
+- api
 - europeana
 - searchrecords
-- get record
-- museums
-- cultural heritage
 slug: europeana-capability
 source_filename: europeana-capability.yaml
 source_heading: Capability Spec

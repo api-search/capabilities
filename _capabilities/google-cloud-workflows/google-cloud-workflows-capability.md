@@ -45,33 +45,33 @@ personas: []
 provider_name: Google Cloud Workflows
 provider_slug: google-cloud-workflows
 search_terms:
-- deleteworkflow
-- google cloud workflows delete a workflow
-- integration
-- google cloud workflows get an execution
-- google cloud workflows update a workflow
-- serverless
-- google cloud workflows list executions
-- cloud
-- google cloud workflows create an execution
-- google
-- google cloud workflows list workflows
-- listworkflows
-- createexecution
-- getexecution
-- google cloud workflows get a workflow
-- orchestration
-- api
-- createworkflow
-- workflows
-- getworkflow
-- google cloud workflows cancel an execution
-- google cloud workflows create a workflow
-- cancelexecution
-- updateworkflow
-- listexecutions
-- google cloud
 - automation
+- api
+- deleteworkflow
+- createworkflow
+- updateworkflow
+- google
+- orchestration
+- integration
+- serverless
+- getworkflow
+- google cloud workflows list workflows
+- listexecutions
+- google cloud workflows update a workflow
+- cloud
+- google cloud workflows get a workflow
+- getexecution
+- google cloud workflows cancel an execution
+- createexecution
+- google cloud workflows list executions
+- google cloud workflows get an execution
+- google cloud workflows delete a workflow
+- cancelexecution
+- workflows
+- google cloud
+- google cloud workflows create a workflow
+- google cloud workflows create an execution
+- listworkflows
 slug: google-cloud-workflows-capability
 source_filename: google-cloud-workflows-capability.yaml
 source_heading: Capability Spec

@@ -161,85 +161,85 @@ personas: []
 provider_name: AWS Lambda
 provider_slug: aws-lambda
 search_terms:
-- aws lambda set provisioned concurrency
-- publishversion
-- aws lambda list functions
-- aws lambda update a function url
-- aws lambda create a function
-- geteventsourcemapping
-- aws lambda get a layer version
-- getfunction
-- api
-- aws lambda get function configuration
-- listlayerversions
-- aws lambda update function code
-- aws lambda delete reserved concurrency
-- createeventsourcemapping
-- deletefunctionurlconfig
-- aws lambda update an alias
-- deletefunctionconcurrency
-- aws lambda create an alias
-- deletealias
-- createfunctionurlconfig
-- getfunctionconfiguration
-- aws lambda create an event source mapping
-- listversionsbyfunction
-- listfunctions
-- aws lambda get function url configuration
-- createalias
-- aws lambda delete provisioned concurrency
-- putfunctionconcurrency
 - aws lambda update an event source mapping
-- getalias
-- getlayerversion
-- deleteeventsourcemapping
-- untagresource
-- getfunctionurlconfig
-- aws lambda add tags
 - getprovisionedconcurrencyconfig
-- aws lambda get reserved concurrency
-- aws lambda get an event source mapping
-- aws lambda delete a layer version
-- aws lambda delete an event source mapping
 - aws lambda update function configuration
-- aws lambda list layer versions
-- aws lambda delete a function
-- aws
-- lambda
-- updatefunctionconfiguration
-- tagresource
-- updatefunctioncode
-- deletelayerversion
-- createfunction
-- aws lambda get a function
-- updateeventsourcemapping
-- getreservedconcurrency
-- aws lambda get an alias
-- updatealias
-- aws lambda delete a function url
-- aws lambda get provisioned concurrency
-- listeventsourcemappings
-- listtags
-- listaliases
-- aws lambda invoke a function
-- aws lambda publish a version
 - putprovisionedconcurrencyconfig
-- aws lambda list aliases
+- getfunctionurlconfig
+- api
+- deletealias
+- aws lambda get reserved concurrency
 - listlayers
-- aws lambda set reserved concurrency
-- aws lambda list function versions
-- aws lambda list event source mappings
-- aws lambda list tags
-- deletefunction
-- aws lambda remove tags
-- invoke
-- aws lambda create a function url
-- aws lambda delete an alias
-- aws lambda list layers
-- updatefunctionurlconfig
+- getfunctionconfiguration
 - publishlayerversion
+- aws lambda create a function
+- aws lambda update a function url
+- createfunctionurlconfig
+- aws lambda delete a layer version
+- aws lambda delete an alias
+- lambda
+- aws lambda set reserved concurrency
+- updatealias
+- aws lambda set provisioned concurrency
+- aws lambda delete a function
+- listversionsbyfunction
+- aws lambda remove tags
+- aws lambda get an event source mapping
+- aws lambda list layer versions
+- createalias
+- getreservedconcurrency
+- aws lambda get a function
+- getfunction
+- aws lambda get provisioned concurrency
+- listtags
+- updateeventsourcemapping
+- aws lambda update function code
+- deleteeventsourcemapping
+- aws lambda get an alias
+- aws lambda delete an event source mapping
+- untagresource
 - deleteprovisionedconcurrencyconfig
+- getalias
+- updatefunctionurlconfig
+- geteventsourcemapping
+- aws lambda list tags
+- aws lambda list event source mappings
+- aws lambda get function configuration
+- listfunctions
+- updatefunctioncode
+- aws lambda list functions
+- invoke
+- aws lambda get a layer version
+- tagresource
+- getlayerversion
+- deletefunctionurlconfig
+- aws lambda list function versions
+- aws lambda publish a version
+- aws lambda delete a function url
+- deletefunctionconcurrency
+- aws lambda delete reserved concurrency
+- listlayerversions
+- putfunctionconcurrency
+- aws
+- aws lambda create a function url
+- aws lambda add tags
+- aws lambda list aliases
+- deletefunction
+- createfunction
+- publishversion
+- createeventsourcemapping
 - aws lambda publish a layer version
+- aws lambda update an alias
+- aws lambda get function url configuration
+- aws lambda create an alias
+- aws lambda delete provisioned concurrency
+- aws lambda invoke a function
+- deletelayerversion
+- aws lambda list layers
+- listaliases
+- updatefunctionconfiguration
+- listeventsourcemappings
+- aws lambda create an event source mapping
 slug: aws-lambda-capability
 source_filename: aws-lambda-capability.yaml
 source_heading: Capability Spec

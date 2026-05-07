@@ -89,54 +89,54 @@ personas: []
 provider_name: Broadcom
 provider_slug: broadcom
 search_terms:
-- updatealert
-- deleteproxy
 - broadcom list api tokens
-- gateways
-- listevents
-- querymetrics
-- broadcom list events
-- broadcom execute a query
-- getdashboard
-- virtualization
-- broadcom delete an alert
-- broadcom
-- cloud infrastructure
-- broadcom create a dashboard
-- broadcom get a dashboard
-- broadcom get an alert
-- broadcom delete a dashboard
-- listsources
-- getsource
-- updatedashboard
-- getproxy
-- createalert
-- createevent
-- broadcom update an alert
-- listapitokens
-- api
-- deletedashboard
-- broadcom delete a proxy
-- observability
-- broadcom list dashboards
-- broadcom create an event
-- broadcom list sources
-- networks
-- createdashboard
-- listalerts
-- broadcom update a dashboard
-- broadcom list alerts
 - deletealert
-- broadcom list proxies
-- management
-- listproxies
-- getalert
-- broadcom create an alert
-- broadcom get a proxy
-- createapitoken
-- listdashboards
+- broadcom delete an alert
+- broadcom update an alert
+- broadcom list sources
+- broadcom create an event
+- getproxy
+- broadcom list dashboards
 - broadcom get a source
+- broadcom create an alert
 - broadcom create an api token
+- networks
+- createevent
+- broadcom list proxies
+- api
+- broadcom delete a proxy
+- broadcom update a dashboard
+- broadcom delete a dashboard
+- updatedashboard
+- broadcom get a dashboard
+- gateways
+- listapitokens
+- broadcom execute a query
+- listalerts
+- getsource
+- listsources
+- virtualization
+- getalert
+- createapitoken
+- broadcom
+- createalert
+- querymetrics
+- deletedashboard
+- observability
+- management
+- deleteproxy
+- cloud infrastructure
+- updatealert
+- broadcom list events
+- listevents
+- broadcom get a proxy
+- listdashboards
+- listproxies
+- createdashboard
+- broadcom create a dashboard
+- broadcom get an alert
+- getdashboard
+- broadcom list alerts
 slug: broadcom-capability
 source_filename: broadcom-capability.yaml
 source_heading: Capability Spec

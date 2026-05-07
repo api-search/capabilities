@@ -165,106 +165,106 @@ personas: []
 provider_name: IBM
 provider_slug: ibm
 search_terms:
-- update an api key
-- delete a service id
-- delete an api key
-- getrole
-- delete a trusted profile
-- get a trusted profile
-- createclaimrule
-- watsonx
-- getapikey
-- create a claim rule
-- security
-- createaccesstoken
-- create an iam access token
-- lockapikey
-- list api keys
-- lock a service id
-- api
-- observability
-- get api key details by value
-- deleteprofile
-- updateapikey
-- getclaimrule
-- getapikeysdetails
-- api management
-- getserviceid
-- get a role
-- deleteapikey
-- createserviceid
-- updatepolicystate
-- deletepolicy
-- disable an api key
-- list claim rules for a trusted profile
-- networking
-- storage
-- createrole
-- get an api key
-- infrastructure
-- serverless
-- replacerole
-- updateprofile
-- cloud computing
-- replacepolicy
-- listroles
-- update a claim rule
-- get a claim rule
-- deleteserviceid
-- create an access policy
-- unlockserviceid
-- watson
-- lock an api key
-- lockserviceid
-- listapikeys
-- listserviceids
-- unlock a service id
-- create a service id
-- createprofile
-- updateserviceid
-- deleterole
-- devops
-- generative ai
-- listclaimrules
-- updateclaimrule
-- list access policies
-- listpolicies
-- data governance
-- delete a claim rule
-- artificial intelligence
-- update a service id
-- machine learning
-- unlockapikey
-- deleteclaimrule
-- create an api key
-- update a trusted profile
-- update policy state
-- list iam roles
-- create a custom role
-- ibm
-- enable an api key
-- get an access policy
-- list trusted profiles
-- delete a custom role
-- list service ids
-- databases
-- createpolicy
-- unlock an api key
-- hybrid cloud
-- disableapikey
-- billing
 - containers
-- enterprise
-- listprofiles
+- create an iam access token
+- api
+- delete a service id
+- unlockapikey
+- deletepolicy
+- api management
+- watson
 - getpolicy
+- updatepolicystate
+- list iam roles
+- lock an api key
+- create an access policy
+- machine learning
+- createclaimrule
+- getrole
+- lock a service id
+- updateserviceid
+- get an api key
+- getapikey
 - enableapikey
-- replace an access policy
-- get a service id
+- data governance
+- update a trusted profile
+- createaccesstoken
+- databases
+- createrole
+- delete a custom role
+- get api key details by value
+- list trusted profiles
+- listpolicies
+- createserviceid
+- deleteprofile
 - create a trusted profile
-- createapikey
+- artificial intelligence
+- listserviceids
+- create a service id
+- serverless
+- listapikeys
+- delete an api key
+- update policy state
+- replacepolicy
+- enterprise
+- updateapikey
+- storage
+- updateprofile
+- update a service id
+- security
 - replace a custom role
+- get a service id
+- networking
+- get a role
+- disableapikey
+- getclaimrule
+- create a custom role
+- billing
+- update an api key
+- deleteserviceid
+- getserviceid
+- list claim rules for a trusted profile
+- watsonx
+- cloud computing
+- listprofiles
+- infrastructure
+- deleteapikey
+- replacerole
+- getapikeysdetails
+- update a claim rule
+- observability
+- get a claim rule
 - getprofile
+- generative ai
+- list access policies
+- hybrid cloud
+- createapikey
+- delete a claim rule
 - delete an access policy
+- listclaimrules
+- devops
+- get an access policy
+- unlock an api key
+- ibm
+- create a claim rule
+- createprofile
+- unlockserviceid
+- deleterole
+- disable an api key
+- enable an api key
+- list service ids
+- create an api key
+- createpolicy
+- list api keys
+- updateclaimrule
+- get a trusted profile
+- listroles
+- unlock a service id
+- deleteclaimrule
+- lockserviceid
+- delete a trusted profile
+- lockapikey
+- replace an access policy
 slug: ibm-capability
 source_filename: ibm-capability.yaml
 source_heading: Capability Spec

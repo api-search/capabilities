@@ -13,19 +13,19 @@ personas: []
 provider_name: Agify.io
 provider_slug: agify-io
 search_terms:
-- demographics
-- name analysis
-- agify.io predict age from name
-- api
-- io
-- age prediction
-- rest api
-- predictage
-- Developer
-- agify
 - statistical analysis and prediction of demographic attributes from personal data
-- developers integrating age prediction into applications for demographic analysis or personalization
+- demographics
+- rest api
 - predict the age of a person based on their first name, optionally localized by country
+- age prediction
+- agify
+- agify.io predict age from name
+- io
+- Developer
+- api
+- name analysis
+- predictage
+- developers integrating age prediction into applications for demographic analysis or personalization
 slug: agify-io-capability
 source_filename: agify-io-capability.yaml
 source_heading: Capability Spec

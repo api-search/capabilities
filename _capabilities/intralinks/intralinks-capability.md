@@ -129,71 +129,71 @@ personas: []
 provider_name: Intralinks
 provider_slug: intralinks
 search_terms:
-- revokeoauthtoken
-- creategroup
-- virtual data room
-- updatedocument
-- listworkspaces
-- intralinks update document
-- secure file sharing
-- intralinks list folders
-- intralinks list workspaces
-- getworkspace
-- intralinks delete folder
-- createworkspace
-- deletegroup
-- createpermission
-- intralinks get document
-- getdocument
-- createfolder
-- intralinks delete group
-- deleteworkspace
-- listfolders
-- addgroupmember
-- getsplash
-- updatefolder
-- listgroupmembers
-- intralinks get group
-- intralinks create group
-- listdocuments
-- intralinks list documents
-- intralinks list group members
-- deletefolder
-- uploaddocument
-- intralinks list permissions
 - intralinks get folder
-- downloaddocument
-- intralinks create folder
+- deletedocument
+- intralinks update group
+- uploaddocument
 - intralinks update folder
-- intralinks list custom fields
-- listgroups
-- intralinks get workspace
-- intralinks create workspace
-- updatesplash
+- intralinks delete document
+- intralinks list group members
+- intralinks create permission
+- intralinks update splash screen
+- intralinks list documents
+- document management
+- creategroup
+- listworkspaces
+- updateworkspace
 - getoauthtoken
 - api
-- intralinks delete workspace
-- deletedocument
-- document management
-- intralinks revoke oauth token
+- createpermission
+- addgroupmember
+- listfolders
+- intralinks obtain oauth token
+- intralinks create group
+- getsplash
+- intralinks get document
+- downloaddocument
+- secure file sharing
+- listgroupmembers
+- getgroup
+- listgroups
+- revokeoauthtoken
+- intralinks create folder
+- updategroup
+- intralinks update document
+- virtual data room
+- listcustomfields
 - intralinks upload document
+- intralinks list folders
+- intralinks get group
+- intralinks get splash screen
+- intralinks list custom fields
+- intralinks get workspace
+- intralinks create workspace
+- intralinks delete folder
+- intralinks delete group
+- intralinks update workspace
+- intralinks list permissions
+- createworkspace
+- listpermissions
+- listdocuments
+- createfolder
+- updatedocument
 - getfolder
 - intralinks list groups
-- intralinks update splash screen
-- intralinks obtain oauth token
-- intralinks create permission
-- intralinks
+- deletefolder
 - intralinks add group member
-- intralinks update group
-- getgroup
-- listcustomfields
-- updateworkspace
+- updatesplash
+- intralinks
+- intralinks list workspaces
+- getworkspace
+- getdocument
+- intralinks revoke oauth token
+- deleteworkspace
+- intralinks delete workspace
 - intralinks download document
-- intralinks get splash screen
-- intralinks delete document
-- updategroup
-- listpermissions
-- intralinks update workspace
+- deletegroup
+- updatefolder
 slug: intralinks-capability
 source_filename: intralinks-capability.yaml
 source_heading: Capability Spec

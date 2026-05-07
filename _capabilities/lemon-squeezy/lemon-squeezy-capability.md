@@ -217,116 +217,116 @@ personas: []
 provider_name: Lemon Squeezy
 provider_slug: lemon-squeezy
 search_terms:
-- get v1 stores
-- lemon squeezy create a discount
-- lemon squeezy health
-- lemon squeezy retrieve a license key
-- lemon squeezy retrieve an order
-- lemon squeezy create a webhook
-- get v1 subscription items
-- squeezy
-- lemon squeezy list all subscriptions
-- delete v1 discounts 1
-- lemon squeezy retrieve a subscription item
-- ecommerce
-- get v1 404
-- api
-- lemon squeezy retrieve a subscription items current usage
-- get v1 license keys
-- delete v1 subscriptions 1
-- lemon squeezy retrieve a license key instance
-- get v1 products
-- lemon squeezy list all affiliates
-- patch v1 subscription items 1
-- lemon squeezy update a webhook
-- lemon squeezy retrieve the authenticated user
-- lemon squeezy list all webhooks
-- delete v1 webhooks 1
-- lemon squeezy retrieve a product
-- get v1 license key instances
-- get v1 usage records 1
-- get v1 order items
-- get v1 subscription invoices
-- get v1 checkouts
-- lemon squeezy list all stores
-- lemon
-- patch v1 subscriptions 1
-- get v1 subscriptions 1
-- get v1 stores 1
-- get v1 customers
-- get v1 affiliates 1
-- lemon squeezy list all usage records
-- get v1 webhooks
-- lemon squeezy delete a discount
-- get v1 discounts 1
-- get v1 subscriptions
-- get v1 variants 1
-- get v1 files
-- lemon squeezy retrieve an affiliate
-- lemon squeezy create a usage record
-- get v1 affiliates
-- lemon squeezy retrieve a webhook
-- get v1 webhooks 1
-- get v1 customers 1
-- get v1 checkouts ac470bd4 7c41 474d b6cd 0f296f5
-- lemon squeezy retrieve a store
-- lemon squeezy list all discounts
-- lemon squeezy list all customers
-- get v1 variants
-- lemon squeezy list all license key instances
-- get v1 health
-- lemon squeezy retrieve a customer
-- lemon squeezy list all checkouts
-- post v1 checkouts
-- digital products
-- lemon squeezy delete a webhook
-- lemon squeezy list all subscription items
-- get v1 discounts
-- get v1 users me
-- lemon squeezy retrieve a usage-record
-- lemon squeezy update a subscription
-- lemon squeezy list all orders
-- get v1 discount redemptions 1
-- lemon squeezy retrieve a subscription invoice
-- get v1 subscription items 1
-- lemon squeezy list all variants
-- lemon squeezy list all order items
-- get v1 discount redemptions
-- get v1 orders
-- post v1 webhooks
 - lemon squeezy retrieve a variant
-- get v1 orders 1
+- get v1 customers
+- lemon squeezy health
+- api
+- lemon squeezy create a usage record
 - post v1 usage records
-- lemon squeezy 404
-- lemon squeezy retrieve a discount
-- patch v1 webhooks 1
-- lemon squeezy retrieve a subscription
-- lemon squeezy list all discount redemptions
-- get v1 license key instances 1
-- lemon squeezy cancel a subscription
-- post v1 discounts
-- lemon squeezy update a subscription item
-- lemon squeezy retrieve a file
-- products
-- get v1 subscription invoices 1
-- lemon squeezy list all license keys
-- get v1 subscription items 1 current usage
-- lemon squeezy retrieve a price
-- lemon squeezy list all products
-- lemon squeezy retrieve an order item
-- lemon squeezy list all files
-- get v1 products 1
-- get v1 files 1
-- lemon squeezy list all prices
-- lemon squeezy retrieve a checkout
 - get v1 usage records
-- get v1 order items 1
-- get v1 prices 1
-- lemon squeezy create a checkout
-- lemon squeezy list all subscription invoices
-- get v1 prices
+- ecommerce
+- get v1 subscription items 1
+- post v1 discounts
+- lemon squeezy list all stores
+- lemon squeezy delete a webhook
+- lemon squeezy retrieve a checkout
+- lemon squeezy retrieve a usage-record
+- lemon squeezy list all webhooks
+- lemon squeezy retrieve a subscription invoice
+- patch v1 subscriptions 1
+- get v1 checkouts
 - lemon squeezy retrieve a discount redemption
+- get v1 affiliates
+- get v1 orders 1
+- lemon squeezy retrieve a license key instance
+- lemon squeezy list all subscriptions
+- lemon squeezy retrieve an order
+- get v1 affiliates 1
+- lemon squeezy retrieve the authenticated user
+- get v1 health
+- lemon squeezy list all products
+- get v1 stores 1
+- get v1 subscriptions
+- lemon squeezy create a discount
+- patch v1 webhooks 1
+- get v1 discounts 1
+- lemon squeezy retrieve a license key
+- lemon squeezy update a webhook
+- lemon squeezy retrieve a customer
+- get v1 files 1
+- get v1 404
+- get v1 webhooks 1
+- lemon squeezy retrieve a subscription item
+- get v1 discounts
+- get v1 discount redemptions 1
+- post v1 checkouts
+- patch v1 subscription items 1
+- lemon squeezy list all prices
+- lemon squeezy list all subscription items
+- delete v1 discounts 1
+- lemon squeezy retrieve a price
+- lemon squeezy list all usage records
+- lemon squeezy list all license key instances
+- get v1 variants 1
+- get v1 customers 1
+- lemon squeezy retrieve a webhook
+- lemon squeezy retrieve an affiliate
+- lemon squeezy list all variants
+- lemon squeezy list all affiliates
 - get v1 license keys 1
+- get v1 order items 1
+- delete v1 webhooks 1
+- lemon squeezy retrieve a discount
+- get v1 order items
+- lemon squeezy list all discounts
+- delete v1 subscriptions 1
+- lemon squeezy retrieve a file
+- get v1 webhooks
+- lemon squeezy update a subscription item
+- get v1 prices
+- get v1 subscriptions 1
+- lemon squeezy update a subscription
+- squeezy
+- get v1 users me
+- get v1 checkouts ac470bd4 7c41 474d b6cd 0f296f5
+- get v1 subscription invoices 1
+- lemon squeezy list all orders
+- lemon
+- get v1 license key instances
+- get v1 prices 1
+- lemon squeezy delete a discount
+- get v1 usage records 1
+- lemon squeezy retrieve an order item
+- lemon squeezy list all order items
+- get v1 products 1
+- get v1 license key instances 1
+- get v1 stores
+- lemon squeezy retrieve a subscription
+- lemon squeezy cancel a subscription
+- get v1 subscription invoices
+- get v1 files
+- get v1 subscription items
+- get v1 discount redemptions
+- get v1 variants
+- post v1 webhooks
+- lemon squeezy list all license keys
+- get v1 license keys
+- get v1 products
+- lemon squeezy list all discount redemptions
+- digital products
+- products
+- get v1 orders
+- lemon squeezy retrieve a store
+- lemon squeezy create a webhook
+- lemon squeezy retrieve a subscription items current usage
+- lemon squeezy list all files
+- get v1 subscription items 1 current usage
+- lemon squeezy list all subscription invoices
+- lemon squeezy list all customers
+- lemon squeezy 404
+- lemon squeezy retrieve a product
+- lemon squeezy create a checkout
+- lemon squeezy list all checkouts
 slug: lemon-squeezy-capability
 source_filename: lemon-squeezy-capability.yaml
 source_heading: Capability Spec

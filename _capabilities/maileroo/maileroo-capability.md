@@ -29,23 +29,23 @@ personas: []
 provider_name: Maileroo
 provider_slug: maileroo
 search_terms:
-- send a templated email
-- sendbulkemails
-- email
+- list scheduled emails
 - transactional email
-- sendbasicemail
-- smtp
-- maileroo
-- send bulk emails
-- api
+- send a basic email
+- email
+- sendbulkemails
+- send a templated email
+- deletescheduledemail
 - delete a scheduled email
+- email delivery
 - listscheduledemails
 - sendtemplatedemail
-- deletescheduledemail
-- email delivery
-- list scheduled emails
-- send a basic email
+- sendbasicemail
 - marketing email
+- smtp
+- api
+- maileroo
+- send bulk emails
 slug: maileroo-capability
 source_filename: maileroo-capability.yaml
 source_heading: Capability Spec

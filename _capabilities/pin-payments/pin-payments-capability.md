@@ -105,60 +105,60 @@ personas: []
 provider_name: Pin Payments
 provider_slug: pin-payments
 search_terms:
-- add a card to a customer
-- verify a 3d secure result
-- post customers
-- get customers customer token charges
-- post cards
-- delete customers customer token
-- get charges charge token refunds
-- post customers customer token cards
-- retrieve a card
-- create a refund
-- put customers customer token
-- get charges
-- post charges
-- get customers customer token cards
-- cancel a customer subscription
-- delete a customer
-- list cards for a customer
-- delete customers customer token subscriptions su
-- get customers customer token subscriptions
-- tokenize a card
-- list subscriptions for a customer
-- get customers customer token
+- put charges charge token void
 - create a charge
+- list charges
+- delete customers customer token
+- get charges search
+- get charges charge token
+- post customers
+- search charges
+- api
+- retrieve a card
+- void an authorized charge
+- list subscriptions for a customer
+- get cards card token
+- post customers customer token cards
+- delete customers customer token subscriptions su
+- tokenize a card
+- subscriptions
+- get charges verify
+- create a customer
+- create a refund
+- get charges
+- delete a customer
+- get refunds
+- cancel a customer subscription
+- get charges charge token refunds
+- retrieve a charge
+- list cards for a customer
+- update a customer
+- list refunds for a charge
+- put charges charge token capture
+- post cards
+- retrieve a refund
+- verify a 3d secure result
+- get customers customer token
+- cards
+- remove a non-primary card from a customer
+- get customers customer token cards
+- get customers customer token subscriptions
+- list customers
+- delete customers customer token cards card token
+- put customers customer token
+- refunds
+- get refunds refund token
+- post charges
 - capture a previously authorized charge
 - list refunds
-- pin
-- cards
-- get charges verify
-- get refunds refund token
-- put charges charge token void
-- get charges search
-- retrieve a refund
-- search charges
-- list refunds for a charge
-- remove a non-primary card from a customer
-- refunds
-- get cards card token
-- api
-- retrieve a customer
+- add a card to a customer
 - payments
-- create a customer
-- list customers
-- list charges for a customer
-- subscriptions
-- update a customer
-- put charges charge token capture
+- get customers customer token charges
 - get customers
-- get refunds
-- delete customers customer token cards card token
-- get charges charge token
-- retrieve a charge
-- void an authorized charge
-- list charges
 - post charges charge token refunds
+- pin
+- list charges for a customer
+- retrieve a customer
 slug: pin-payments-capability
 source_filename: pin-payments-capability.yaml
 source_heading: Capability Spec

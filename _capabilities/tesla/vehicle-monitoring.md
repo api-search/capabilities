@@ -45,61 +45,61 @@ personas: []
 provider_name: Tesla
 provider_slug: tesla
 search_terms:
-- get battery percentage, charging status, and range estimate
-- cars
-- stop charging
-- full vehicle telemetry
-- climate and temperature
-- get vehicle state
-- nearby charging sites
-- start charging
-- clean energy
-- lock all doors on a tesla vehicle
-- set sentry mode
-- unlock all doors
-- get drive state
-- iot
-- unlock doors
-- wake a sleeping tesla to enable remote commands
-- remote commands
-- electric vehicles
-- fleet management
-- lock all doors
-- get physical state of the vehicle (doors, windows, trunk, odometer)
-- get charge state
-- start charging a tesla vehicle
-- get vehicle data
-- get nearby charging sites
-- unlock all doors on a tesla vehicle
-- stop climate control on a tesla
-- enable or disable tesla sentry mode for security monitoring
-- battery and charging status
-- start climate pre-conditioning (heating/cooling) on a tesla
-- find nearby charging sites
-- wake vehicle from sleep
-- get drive state and location
-- find nearby superchargers and destination chargers with availability
-- vehicles
-- automobiles
-- tesla
-- wake up vehicle
-- stop climate
-- energy
-- smart vehicles
-- get complete telemetry snapshot for a tesla vehicle
-- list all tesla vehicles
-- list all tesla vehicles in the owner account
-- list vehicles
-- stop charging a tesla vehicle
-- vehicle fleet listing
-- get climate state
-- lock doors
 - get interior temperature and climate control settings
-- get vehicle gps location, heading, and speed
-- start climate
+- stop climate
+- start charging a tesla vehicle
+- wake vehicle from sleep
+- unlock all doors on a tesla vehicle
 - get all vehicle data
-- location and driving state
+- wake a sleeping tesla to enable remote commands
+- vehicle fleet listing
+- start climate
+- lock doors
+- automobiles
+- nearby charging sites
+- list all tesla vehicles in the owner account
+- unlock doors
+- get vehicle state
+- battery and charging status
+- get nearby charging sites
+- electric vehicles
+- start charging
+- stop climate control on a tesla
+- vehicles
+- smart vehicles
+- lock all doors
+- list vehicles
+- enable or disable tesla sentry mode for security monitoring
+- tesla
+- climate and temperature
+- get drive state and location
 - wake vehicle
+- find nearby superchargers and destination chargers with availability
+- unlock all doors
+- clean energy
+- get complete telemetry snapshot for a tesla vehicle
+- iot
+- get climate state
+- energy
+- cars
+- location and driving state
+- wake up vehicle
+- get battery percentage, charging status, and range estimate
+- get vehicle data
+- fleet management
+- stop charging a tesla vehicle
+- list all tesla vehicles
+- remote commands
+- get physical state of the vehicle (doors, windows, trunk, odometer)
+- full vehicle telemetry
+- lock all doors on a tesla vehicle
+- start climate pre-conditioning (heating/cooling) on a tesla
+- get vehicle gps location, heading, and speed
+- set sentry mode
+- get drive state
+- get charge state
+- stop charging
+- find nearby charging sites
 slug: vehicle-monitoring
 source_filename: vehicle-monitoring.yaml
 source_heading: Capability Spec

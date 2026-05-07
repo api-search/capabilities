@@ -21,19 +21,19 @@ personas: []
 provider_name: Gender API
 provider_slug: gender-api
 search_terms:
-- personal data
-- demographics
 - get likely country of origin for a name
-- get account statistics
-- api
-- identity
-- getstats
-- get gender for a name
-- ai
-- names
-- getcountryoforigin
 - getgender
 - gender
+- demographics
+- names
+- identity
+- get gender for a name
+- getcountryoforigin
+- getstats
+- api
+- ai
+- personal data
+- get account statistics
 slug: gender-api-capability
 source_filename: gender-api-capability.yaml
 source_heading: Capability Spec

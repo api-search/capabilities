@@ -33,54 +33,54 @@ personas: []
 provider_name: Toast
 provider_slug: toast
 search_terms:
-- restaurant order creation, tracking, and payment processing
 - update employee
-- list payment records for a restaurant
-- Restaurant Manager
-- restaurant employees
-- Operations Team
-- get order payment
-- create a new employee
-- update employee information
-- get order
-- get a specific employee record
-- order payments
-- employee records, scheduling, and shift management
-- get multiple orders for a restaurant in a date range
-- get multiple restaurant orders
-- restaurant orders
-- get restaurant order
 - restaurants
-- individual employee
-- list payments
-- create a new employee record at a restaurant
-- day-to-day restaurant operations including order monitoring and staff management
-- get details of a specific payment
-- restaurant
-- create employee
-- individual restaurant order
-- get a specific restaurant order
-- toast
-- hospitality
-- get employee
 - point of sale
-- list restaurant employees
-- list employees
-- list restaurant orders
-- monitors multi-location restaurant performance and staff
-- menu items, modifiers, and pricing management
-- list orders
-- food service
-- builds third-party integrations with the toast platform
-- list order payments
-- manages daily restaurant operations, staff, and order flow
+- restaurant employees
+- hospitality
 - orders
-- list all employees at a restaurant location
-- get employee details
-- labor
+- list restaurant orders
+- get a specific employee record
+- employee records, scheduling, and shift management
+- builds third-party integrations with the toast platform
+- list restaurant employees
+- list payment records for a restaurant
 - location settings, availability, and restaurant metadata
+- get multiple orders for a restaurant in a date range
+- get employee
 - get details of a specific restaurant order
 - get payment identifiers
+- Restaurant Manager
+- Operations Team
+- get employee details
+- food service
+- list orders
+- restaurant orders
+- labor
+- get a specific restaurant order
+- list order payments
+- create a new employee
+- list employees
+- toast
+- get order payment
+- update employee information
+- individual employee
+- monitors multi-location restaurant performance and staff
+- list all employees at a restaurant location
+- get restaurant order
+- create a new employee record at a restaurant
+- restaurant
+- create employee
+- day-to-day restaurant operations including order monitoring and staff management
+- individual restaurant order
+- order payments
+- get multiple restaurant orders
+- manages daily restaurant operations, staff, and order flow
+- list payments
+- get order
+- restaurant order creation, tracking, and payment processing
+- menu items, modifiers, and pricing management
+- get details of a specific payment
 slug: restaurant-operations
 source_filename: restaurant-operations.yaml
 source_heading: Capability Spec

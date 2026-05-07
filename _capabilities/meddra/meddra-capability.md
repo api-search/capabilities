@@ -37,22 +37,22 @@ personas: []
 provider_name: meddra
 provider_slug: meddra
 search_terms:
+- get a term by code
 - list all system organ classes
+- validatecode
+- meddra
+- search meddra terms
+- gettermchildren
+- gettermparents
 - get child terms in hierarchy
+- validate a meddra code
+- listsoc
+- listversions
+- list available meddra versions
 - getterm
 - api
-- search meddra terms
-- validatecode
-- validate a meddra code
-- gettermchildren
-- listversions
 - searchterms
-- get a term by code
-- gettermparents
-- list available meddra versions
 - get parent terms in hierarchy
-- listsoc
-- meddra
 slug: meddra-capability
 source_filename: meddra-capability.yaml
 source_heading: Capability Spec

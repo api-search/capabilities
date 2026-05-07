@@ -29,45 +29,45 @@ personas: []
 provider_name: Akamai API Security
 provider_slug: akamai-api-security
 search_terms:
-- list policies
-- create configuration
-- list security policies
-- create a new akamai api security configuration
-- configuration activations
-- real-time api threat detection and blocking
-- api posture assessment and vulnerability management
-- create security configuration
-- runtime protection
-- discover apis
-- list all api security configurations
-- API Security Analyst
-- security automation
-- list security configurations
-- list configurations
-- get api discovery
-- list configuration activations
-- api discovery
-- cloud security
-- security policy management
-- threat protection
-- akamai
 - manage api security configurations and posture
-- manages api security configurations and activations
-- list all akamai api security configurations
-- get api discovery results
+- create configuration
+- configuration activations
 - api inventory and discovery
 - api security configuration management
-- list and check status of security configuration activations
-- api security
-- monitors api discovery, threat detection, and posture findings
-- create a new api security configuration
-- list security policies within a configuration
-- posture management
-- api security configuration and policy management
 - check activation status
+- list security configurations
+- get api discovery results
+- api discovery
+- runtime protection
+- akamai
+- posture management
+- list configuration activations
+- create a new akamai api security configuration
 - list activations
-- get api inventory including shadow and zombie api findings
 - Security Engineer
+- cloud security
+- security automation
+- create a new api security configuration
+- list configurations
+- api security configuration and policy management
+- list all api security configurations
+- list policies
+- list all akamai api security configurations
+- security policy management
+- get api inventory including shadow and zombie api findings
+- API Security Analyst
+- list security policies
+- discover apis
+- monitors api discovery, threat detection, and posture findings
+- api security
+- threat protection
+- get api discovery
+- list security policies within a configuration
+- real-time api threat detection and blocking
+- list and check status of security configuration activations
+- create security configuration
+- api posture assessment and vulnerability management
+- manages api security configurations and activations
 slug: api-security-management
 source_filename: api-security-management.yaml
 source_heading: Capability Spec

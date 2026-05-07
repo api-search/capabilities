@@ -17,18 +17,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- argo cd
-- gitops
-- list apps
-- rollback app
-- api integration
-- governance
-- spec-driven integration
-- ai
-- mcp
 - sync app
+- gitops
+- governance
+- naftiko
+- rollback app
+- list apps
+- ai
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- argo cd
 slug: argocd-gitops-naftikocapability-runbook
 source_filename: argocd-gitops-naftikocapability-runbook.yaml
 source_heading: Capability Spec

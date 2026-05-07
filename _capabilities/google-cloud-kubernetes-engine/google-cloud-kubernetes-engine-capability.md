@@ -37,30 +37,30 @@ personas: []
 provider_name: Google Cloud Kubernetes Engine
 provider_slug: google-cloud-kubernetes-engine
 search_terms:
-- listclusters
-- compute
+- containers
+- google cloud kubernetes engine list node pools
+- listnodepools
 - deletecluster
+- listoperations
+- getcluster
+- api
+- google cloud kubernetes engine delete cluster
+- createcluster
+- google cloud kubernetes engine get cluster
+- google
+- orchestration
+- google cloud kubernetes engine create node pool
+- listclusters
+- kubernetes
+- google cloud kubernetes engine create cluster
+- gke
+- google cloud kubernetes engine list clusters
 - cloud
 - engine
-- google
-- containers
-- gke
-- kubernetes
-- listnodepools
-- createcluster
+- compute
 - createnodepool
-- listoperations
-- orchestration
-- google cloud kubernetes engine list clusters
-- api
-- google cloud kubernetes engine get cluster
-- google cloud kubernetes engine create node pool
-- google cloud kubernetes engine list node pools
-- google cloud kubernetes engine delete cluster
-- google cloud kubernetes engine create cluster
-- google cloud
-- getcluster
 - google cloud kubernetes engine list operations
+- google cloud
 slug: google-cloud-kubernetes-engine-capability
 source_filename: google-cloud-kubernetes-engine-capability.yaml
 source_heading: Capability Spec

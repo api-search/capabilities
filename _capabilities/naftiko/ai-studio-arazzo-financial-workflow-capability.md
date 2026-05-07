@@ -13,21 +13,21 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- financial
-- run financial workflow
 - get workflow
-- execute the financial-services arazzo workflow as one composed call.
-- inspect the underlying arazzo workflow definition.
-- arazzo
-- execute the financial-services arazzo workflow end-to-end.
-- api integration
-- governance
-- spec-driven integration
 - ai studio
+- financial
+- governance
+- execute the financial-services arazzo workflow as one composed call.
+- run financial workflow
+- execute the financial-services arazzo workflow end-to-end.
+- inspect the underlying arazzo workflow definition.
 - ai
-- mcp
 - capabilities
+- spec-driven integration
+- api integration
+- arazzo
+- mcp
+- naftiko
 slug: ai-studio-arazzo-financial-workflow-capability
 source_filename: ai-studio-arazzo-financial-workflow-capability.yaml
 source_heading: Capability Spec

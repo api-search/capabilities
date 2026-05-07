@@ -29,40 +29,40 @@ personas: []
 provider_name: Xiaomi
 provider_slug: xiaomi
 search_terms:
-- upload an object to cloud storage.
-- object storage operations.
-- identity
-- get the xiaomi user's phone number and email address.
-- developer platform
-- object storage
-- put object
 - authenticated user profile.
+- get metadata for an object in xiaomi galaxy fds without downloading.
+- delete object
+- get the xiaomi user's phone number and email address.
+- download an object from cloud storage.
+- get object
+- object storage operations.
+- mobile
+- cloud storage
+- artificial intelligence
+- get the authenticated xiaomi user's profile.
+- get object metadata
+- get user profile
+- identity
 - upload a file or object to xiaomi galaxy fds cloud storage.
+- download a file or object from xiaomi galaxy fds cloud storage.
+- machine learning
 - get the authenticated xiaomi user's profile information.
-- download object
+- object storage
 - iot
+- smart home
+- consumer electronics
+- get user phone and email
 - get user contact
 - upload object
-- get object metadata
-- smart home
-- artificial intelligence
-- get user phone number and email address.
-- machine learning
-- cloud storage
-- get user profile
-- consumer electronics
-- get the authenticated xiaomi user's profile.
-- delete an object from cloud storage.
-- download an object from cloud storage.
 - user contact information.
-- get object
-- delete object
-- delete an object from xiaomi galaxy fds cloud storage.
-- mobile
+- developer platform
+- get user phone number and email address.
+- put object
+- upload an object to cloud storage.
+- delete an object from cloud storage.
+- download object
 - xiaomi
-- download a file or object from xiaomi galaxy fds cloud storage.
-- get metadata for an object in xiaomi galaxy fds without downloading.
-- get user phone and email
+- delete an object from xiaomi galaxy fds cloud storage.
 slug: cloud-storage
 source_filename: cloud-storage.yaml
 source_heading: Capability Spec

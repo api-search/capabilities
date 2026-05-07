@@ -249,126 +249,126 @@ personas: []
 provider_name: Okta
 provider_slug: okta
 search_terms:
-- revokes permission for the application to request the given scope
-- lists all tokens for the application
-- listapplicationusers
-- okta add application
-- getapplicationgroupassignment
-- fetches a single scope consent grant for the application
-- deactivateauthenticator
-- okta lists all available authenticators
-- okta delete application
-- createauthorizationserver
-- updateauthorizationserver
-- okta update application policy
-- getcsrforapplication
-- updateapplication
-- okta remove group from application
-- getoauth2tokenforapplication
-- removes a secret from the client's collection of secrets.
-- okta list users assigned to application
+- delete /api/v1/apps/{appid}/credentials/csrs/{csrid}
+- revokes all tokens for the specified application
+- gets a token for the specified application
 - api
-- okta assign group to application
-- updateapplicationuser
-- authorization
-- activateapplication
-- okta get assigned user for application
-- cloneapplicationkey
-- okta create an authenticator
-- okta the file must be in png, jpg, or gif format, and less than 1 mb in size. for best results use landscape orientation, a transparent background, and a minimum size of 420px by 120px to prevent upscaling.
-- listoauth2tokensforapplication
-- createnewclientsecretforapplication
-- previews saml metadata based on a specific key credential for an application
-- deactivateapplication
-- identity
-- get /api/v1/apps/{appid}/credentials/csrs/{csrid}
-- createapplicationgroupassignment
-- deactivateclientsecretforapplication
-- okta fetches the default provisioning connection for an application.
-- getdefaultprovisioningconnectionforapplication
-- listfeaturesforapplication
+- okta clone application key credential
+- post api v1 apps appid credentials csrs csrid li
+- listclientsecretsforapplication
+- deactivatedefaultprovisioningconnectionforapplic
+- getfeatureforapplication
+- listapplicationkeys
 - okta fetches a feature object for an application.
+- okta assign user to application for sso & provisioning
+- getapplicationkey
+- fetches a single scope consent grant for the application
+- authorization
+- previews saml metadata based on a specific key credential for an application
+- okta update application profile for assigned user
+- listapplicationusers
+- previewsamlappmetadata
+- okta
+- createauthorizationserver
 - okta update authenticator
 - okta updates a feature object for an application.
-- getauthorizationserver
-- revokeoauth2tokenforapplication
-- previewsamlappmetadata
-- updateapplicationpolicy
+- okta get key credential for application
 - deleteapplicationuser
-- okta activate default provisioning connection for application
-- okta list key credentials for application
-- assignusertoapplication
-- listcsrsforapplication
-- okta activate application
+- activateclientsecretforapplication
+- okta get assigned user for application
 - revokeoauth2tokensforapplication
+- deleteapplicationgroupassignment
+- getclientsecretforapplication
+- listscopeconsentgrants
+- generates a new x.509 certificate for an application key credential
+- createnewclientsecretforapplication
+- okta fetches the feature objects for an application.
+- activatedefaultprovisioningconnectionforapplicat
 - authentication
-- uploadapplicationlogo
+- revokes the specified token for the specified application
+- okta list applications
+- listfeaturesforapplication
+- grantconsenttoscope
+- revokescopeconsentgrant
+- okta sets the default provisioning connection for an application.
+- okta update application
+- revokecsrfromapplication
+- okta list client secrets
+- okta create an authenticator
+- getapplication
+- createauthenticator
 - grants consent for the application to request an oauth 2.0 okta scope
 - lists all scope consent grants for the application
-- revokes all tokens for the specified application
-- generateapplicationkey
-- listapplications
-- grantconsenttoscope
-- okta deactivate a client secret
-- generates a new x.509 certificate for an application key credential
-- listapplicationgroupassignments
-- activateauthenticator
+- okta lists all available authenticators
 - okta remove user from application
-- okta generate certificate signing request for application
-- okta list groups assigned to application
-- deactivatedefaultprovisioningconnectionforapplic
-- listclientsecretsforapplication
-- createauthenticator
-- okta activate a client secret
-- getfeatureforapplication
-- okta get assigned group for application
-- getauthenticator
-- getscopeconsentgrant
-- post /api/v1/apps/{appid}/credentials/csrs/{csrid}/lifecycle/publish
-- activateclientsecretforapplication
-- deleteapplication
-- okta get client secret
-- okta update application
-- okta list certificate signing requests for application
-- okta sets the default provisioning connection for an application.
-- okta add new client secret
-- updateauthenticator
-- post api v1 apps appid credentials csrs csrid li
-- okta get key credential for application
-- getapplicationuser
-- okta get application
-- getclientsecretforapplication
-- generatecsrforapplication
-- activatedefaultprovisioningconnectionforapplicat
-- okta fetches the feature objects for an application.
-- okta deactivate application
-- okta list applications
-- createapplication
-- updatefeatureforapplication
-- okta update application profile for assigned user
-- setdefaultprovisioningconnectionforapplication
+- okta deactivate a client secret
 - listauthorizationservers
-- revokescopeconsentgrant
-- revokes the specified token for the specified application
-- deleteclientsecretforapplication
+- okta assign group to application
+- lists all tokens for the application
+- updateapplicationuser
+- removes a secret from the client's collection of secrets.
+- updatefeatureforapplication
+- listapplicationgroupassignments
 - single sign-on
-- getapplicationkey
-- revokecsrfromapplication
-- deleteauthorizationserver
-- getapplication
-- listauthenticators
-- okta assign user to application for sso & provisioning
-- listscopeconsentgrants
-- success
-- okta
-- okta clone application key credential
+- okta update application policy
+- revokeoauth2tokenforapplication
+- activateauthenticator
+- updateauthenticator
 - platform
-- deleteapplicationgroupassignment
-- delete /api/v1/apps/{appid}/credentials/csrs/{csrid}
-- gets a token for the specified application
-- listapplicationkeys
-- okta list client secrets
+- okta deactivate application
+- assignusertoapplication
+- okta list key credentials for application
+- okta remove group from application
+- deleteapplication
+- getapplicationgroupassignment
+- getauthenticator
+- identity
+- listcsrsforapplication
+- okta generate certificate signing request for application
+- generateapplicationkey
+- revokes permission for the application to request the given scope
 - okta deactivate default provisioning connection for application
+- updateauthorizationserver
+- listoauth2tokensforapplication
+- okta add application
+- okta list certificate signing requests for application
+- get /api/v1/apps/{appid}/credentials/csrs/{csrid}
+- createapplicationgroupassignment
+- listauthenticators
+- post /api/v1/apps/{appid}/credentials/csrs/{csrid}/lifecycle/publish
+- getoauth2tokenforapplication
+- uploadapplicationlogo
+- getscopeconsentgrant
+- deleteclientsecretforapplication
+- getauthorizationserver
+- deactivateauthenticator
+- okta delete application
+- generatecsrforapplication
+- deactivateclientsecretforapplication
+- okta add new client secret
+- updateapplicationpolicy
+- success
+- getdefaultprovisioningconnectionforapplication
+- deleteauthorizationserver
+- okta fetches the default provisioning connection for an application.
+- setdefaultprovisioningconnectionforapplication
+- okta get client secret
+- createapplication
+- okta activate application
+- getcsrforapplication
+- activateapplication
+- cloneapplicationkey
+- deactivateapplication
+- okta activate a client secret
+- getapplicationuser
+- okta list users assigned to application
+- okta the file must be in png, jpg, or gif format, and less than 1 mb in size. for best results use landscape orientation, a transparent background, and a minimum size of 420px by 120px to prevent upscaling.
+- okta activate default provisioning connection for application
+- okta get application
+- listapplications
+- okta get assigned group for application
+- updateapplication
+- okta list groups assigned to application
 slug: okta-capability
 source_filename: okta-capability.yaml
 source_heading: Capability Spec

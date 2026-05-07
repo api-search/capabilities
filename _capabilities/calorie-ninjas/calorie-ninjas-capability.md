@@ -21,20 +21,20 @@ personas: []
 provider_name: CalorieNinjas
 provider_slug: calorie-ninjas
 search_terms:
-- post imagetextnutrition
-- ninjas
-- calorie
-- nutrition
-- api
-- foods
-- image recognition
-- get nutrition
+- calorieninjas get nutrition information from an image
 - get recipe
+- nutrition
+- beverages
+- post imagetextnutrition
 - calorieninjas get recipes
 - calorieninjas get nutrition information
-- beverages
-- calorieninjas get nutrition information from an image
+- foods
 - recipes
+- image recognition
+- get nutrition
+- api
+- ninjas
+- calorie
 slug: calorie-ninjas-capability
 source_filename: calorie-ninjas-capability.yaml
 source_heading: Capability Spec

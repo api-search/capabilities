@@ -57,37 +57,37 @@ personas: []
 provider_name: Hotglue
 provider_slug: hotglue
 search_terms:
-- setconnectorstate
-- runjob
-- deleteconnectorstate
+- update a linked connector
 - retrieve connector state
+- api
 - embedded integrations
-- linkconnector
-- getlinkedconnectors
-- retrieve available connectors
-- getconnectorstate
+- set connector state
 - delete connector state
 - retrieve supported connectors
-- run a job
-- etl
-- trigger connector discovery
 - polldiscover
-- unlinkconnector
-- hotglue
-- link a connector
-- ipaas
-- api
-- unlink a connector
-- set connector state
 - listavailableconnectors
-- triggerdiscover
-- poll discover status
-- connectors
+- run a job
+- trigger connector discovery
+- hotglue
+- getlinkedconnectors
 - integration platform
+- poll discover status
 - retrieve linked connectors
-- updatelinkedconnector
-- update a linked connector
+- setconnectorstate
+- ipaas
 - listsupportedconnectors
+- linkconnector
+- connectors
+- runjob
+- triggerdiscover
+- retrieve available connectors
+- updatelinkedconnector
+- link a connector
+- etl
+- unlinkconnector
+- getconnectorstate
+- deleteconnectorstate
+- unlink a connector
 slug: hotglue-capability
 source_filename: hotglue-capability.yaml
 source_heading: Capability Spec

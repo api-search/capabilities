@@ -37,49 +37,49 @@ personas: []
 provider_name: taylor-morrison-home
 provider_slug: taylor-morrison-home
 search_terms:
-- get community
-- reserve home online
-- view reservations
-- get community details
-- community detail and amenities
-- list reservations
-- search communities
-- view existing taylor morrison home reservations and their status
-- new homes
 - digital homebuying
-- list communities
-- view existing reservations
-- reserve a home online
-- browse available homes
-- floor plan catalog
-- get design options
-- communities
-- fortune 1000
-- real estate
-- get details about a specific taylor morrison community including amenities, pricing, and available homes
-- floor plans
-- get design options by floor plan and category
-- find communities by location and price range
-- list floor plans
-- browse available and quick-move-in homes with bedroom count, price, and square footage filters
+- mortgage
+- design studio
 - homebuilding
-- available and to-be-built homes
+- list floor plans
+- get details about a specific taylor morrison community including amenities, pricing, and available homes
+- view personalization options for a floor plan — exterior, flooring, cabinets, countertops, and more
+- list homes
+- taylor morrison
+- new homes
+- find communities by location and price range
+- list reservations
+- get community
+- community detail and amenities
+- search and browse taylor morrison communities
+- floor plans
+- search communities
+- get design options by floor plan and category
+- communities
 - browse available homes by filters
+- browse available and quick-move-in homes with bedroom count, price, and square footage filters
+- view existing reservations
+- browse available homes
+- get community details
+- browse floor plans
+- fortune 1000
+- reserve a home online
+- real estate
+- list design options
+- view reservations
+- online home reservations
+- available and to-be-built homes
+- get design options
+- reserve a taylor morrison home digitally with lot selection, design choices, and deposit
 - create reservation
+- reserve home online
+- reservations
+- floor plan catalog
+- list communities
+- view existing taylor morrison home reservations and their status
 - explore taylor morrison floor plans by size, bedroom count, and stories
 - search taylor morrison new home communities by location, price range, or amenities
-- view personalization options for a floor plan — exterior, flooring, cabinets, countertops, and more
-- reserve a taylor morrison home digitally with lot selection, design choices, and deposit
 - design studio options for personalization
-- reservations
-- browse floor plans
-- list design options
-- online home reservations
-- mortgage
-- taylor morrison
-- search and browse taylor morrison communities
-- design studio
-- list homes
 slug: homebuying
 source_filename: homebuying.yaml
 source_heading: Capability Spec

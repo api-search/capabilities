@@ -45,34 +45,34 @@ personas: []
 provider_name: Google Cloud Chronicle
 provider_slug: google-cloud-chronicle
 search_terms:
-- google cloud chronicle list alerts
-- updaterule
-- log management
-- google cloud chronicle update a detection rule
-- google cloud chronicle delete a detection rule
-- chronicle
 - createfeed
-- listreferencelists
-- cloud
-- google
-- listfeeds
-- siem
-- security analytics
-- google cloud chronicle list reference lists
-- getrule
-- api
-- google cloud chronicle create a feed
-- createrule
-- security operations
+- chronicle
+- incident response
+- deleterule
 - threat detection
 - listrules
-- google cloud chronicle get a detection rule
-- google cloud chronicle create a detection rule
-- deleterule
+- api
+- log management
 - listalerts
+- google
+- google cloud chronicle create a feed
+- google cloud chronicle list alerts
+- google cloud chronicle create a detection rule
+- google cloud chronicle delete a detection rule
+- security operations
+- updaterule
+- listreferencelists
+- google cloud chronicle get a detection rule
 - google cloud chronicle list feeds
+- cloud
+- security analytics
+- google cloud chronicle update a detection rule
+- createrule
+- google cloud chronicle list reference lists
 - google cloud chronicle list detection rules
-- incident response
+- getrule
+- listfeeds
+- siem
 slug: google-cloud-chronicle-capability
 source_filename: google-cloud-chronicle-capability.yaml
 source_heading: Capability Spec

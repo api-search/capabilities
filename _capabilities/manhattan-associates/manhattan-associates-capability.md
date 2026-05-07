@@ -45,27 +45,27 @@ personas: []
 provider_name: manhattan-associates
 provider_slug: manhattan-associates
 search_terms:
-- check order promise (atp)
-- updateorder
-- create a return
-- checkinventoryavailability
-- getinventorypositions
+- cancelorder
 - get inventory positions
 - create an order
-- getorder
-- manhattan
-- createorder
-- associates
-- listorders
-- check inventory availability
 - api
+- check inventory availability
+- update an order
+- createorder
 - get an order
 - createreturn
-- cancelorder
-- list orders
-- update an order
+- getorder
+- associates
 - cancel an order
+- check order promise (atp)
+- listorders
+- list orders
 - checkorderpromise
+- checkinventoryavailability
+- updateorder
+- create a return
+- manhattan
+- getinventorypositions
 slug: manhattan-associates-capability
 source_filename: manhattan-associates-capability.yaml
 source_heading: Capability Spec

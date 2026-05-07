@@ -249,132 +249,132 @@ personas: []
 provider_name: Marketo
 provider_slug: marketo
 search_terms:
-- getfilesusingget
-- marketo get email template used by
-- marketo update email content section
-- marketo delete module
-- marketo get folder contents
-- marketo update email metadata
-- unapprovedraftusingpost 1
-- discarddraftusingpost
-- createemailfullcontentusingpost
-- marketo create email template
-- updateemailtemplateusingpost
-- api
-- marketo unapprove email template draft
-- marketo delete folder
-- unapprovedraftusingpost
-- marketo approve email template draft
-- getchannelbynameusingget
-- createemailtemplateusingpost
-- marketo unapprove email
-- marketo discard email template draft
-- marketo get email content
-- marketo delete email template
-- addtokentofolderusingpost
-- marketo get email template content by id
-- automation
-- getemaildynamiccontentusingget
-- marketo clone email template
-- getemailbynameusingget
-- createfolderusingpost
-- marketo update email content
-- marketo get email by name
-- marketo add form field visibility rules
-- marketo create token
-- marketo delete token by name
-- getlpformbynameusingget
-- marketo get email cc fields
-- updateemailtemplatecontentusingpost
-- renameusingpost
-- getallfieldsusingget
-- getemailbyidusingget
-- deletetemplateusingpost
-- getemailtemplatesusingget
-- rearrangemodulesusingpost
-- marketo update email full content
-- getemailccfieldsusingget
-- getfolderbyidusingget
-- deletemoduleusingpost
-- getfoldercontentusingget
-- marketo get available form program member fields
-- updateemailcomponentcontentusingpost
-- marketing automation
-- marketo get file by name
-- marketo get channels
-- marketo discard email draft
-- marketo clone email
-- updateemailusingpost
 - getallchannelsusingget
-- marketo
-- marketo get files
-- marketo update email dynamic content section
-- marketo add email module
-- marketo get email template by id
-- getfolderbynameusingget
-- marketo get channel by name
-- createfileusingpost
-- marketo rearrange email modules
-- updatevariableusingpost
-- getfilebyidusingget
-- marketo get email full content
-- marketo delete email
-- updateemailcontentusingpost
+- api
+- marketo update email content
+- marketo clone email
 - marketo get email template by name
-- marketo get email templates
-- updateemaildynamiccontentusingpost
-- gettemplatebynameusingget
-- marketo get email by id
-- addformfieldvisibilityruleusingpost
-- createemailusingpost
-- marketo create folder
-- approvedraftusingpost
-- marketo get email dynamic content
-- marketo update email template metadata
-- gettemplatebyidusingget
-- adobe
-- marketo get emails
-- marketo get form by name
-- getemailvariablesusingget
-- getfolderusingget
-- cloneemailusingpost
-- marketo create email
-- marketo send sample email
+- marketo update email content section
 - updatecontentusingpost
-- gettokensbyfolderidusingget
-- marketo get email variables
-- gettemplatecontentbyidusingget
-- marketo get folder by id
-- getemailcontentbyidusingget
-- marketo update email variable
-- deleteemailusingpost
-- approvedraftusingpost 1
-- marketing
-- clonetemplateusingpost
-- deletetokenbynameusingpost
-- marketo get file by id
-- marketo create file
+- rearrangemodulesusingpost
 - deletefolderusingpost
-- marketo get folders
-- getallprogrammemberfieldsusingget
-- marketo update email template content
-- marketo approve email draft
-- getemailfullcontentusingget
-- marketo get tokens by folder id
-- updatefolderusingpost
-- getemailusingget
+- marketo get channel by name
 - marketo get folder by name
-- marketo get available form fields
-- marketo update folder metadata
+- getemailvariablesusingget
 - marketo update file content
-- duplicatemoduleusingpost
-- addmoduleusingpost
-- marketo rename email module
-- discarddraftusingpost 1
+- addtokentofolderusingpost
+- getemailtemplatesusingget
 - marketo duplicate email module
+- deletetemplateusingpost
+- marketo get email template used by
+- getlpformbynameusingget
+- marketo unapprove email template draft
+- cloneemailusingpost
+- marketo add email module
+- duplicatemoduleusingpost
+- marketo get email by name
 - sendsampleemailusingpost
+- marketo get email full content
+- marketo update email template metadata
+- getfilebyidusingget
+- updateemailcomponentcontentusingpost
+- createemailusingpost
+- marketo delete folder
+- updateemailtemplateusingpost
+- updatevariableusingpost
+- marketo rearrange email modules
+- marketo delete email
+- marketo update email full content
 - getfilebynameusingget
+- discarddraftusingpost 1
+- getemaildynamiccontentusingget
+- updateemaildynamiccontentusingpost
+- deletemoduleusingpost
+- marketo get folders
+- marketo get email variables
+- marketo get emails
+- marketo discard email draft
+- updateemailcontentusingpost
+- getfoldercontentusingget
+- gettemplatebynameusingget
+- getemailccfieldsusingget
+- marketo create file
+- marketo get folder contents
+- marketing
+- marketo clone email template
+- getemailfullcontentusingget
+- getallfieldsusingget
+- marketo get email dynamic content
+- updateemailtemplatecontentusingpost
+- marketo delete module
+- getemailbyidusingget
+- addformfieldvisibilityruleusingpost
+- marketo get form by name
+- marketo rename email module
+- marketo get channels
+- marketo
+- discarddraftusingpost
+- marketo get email cc fields
+- getfolderbyidusingget
+- automation
+- createemailfullcontentusingpost
+- marketo update folder metadata
+- marketo get email content
+- marketo update email dynamic content section
+- marketo update email variable
+- getemailusingget
+- marketo get available form program member fields
+- renameusingpost
+- marketo delete email template
+- updateemailusingpost
+- gettemplatebyidusingget
+- marketo get email by id
+- getfolderbynameusingget
+- marketo discard email template draft
+- marketo add form field visibility rules
+- gettemplatecontentbyidusingget
+- getemailcontentbyidusingget
 - getemailtemplateusedbyusingget
+- marketo get tokens by folder id
+- getchannelbynameusingget
+- gettokensbyfolderidusingget
+- createfileusingpost
+- approvedraftusingpost 1
+- marketo create email
+- marketo create folder
+- marketo update email metadata
+- getfolderusingget
+- approvedraftusingpost
+- marketo approve email template draft
+- marketo get email template content by id
+- marketo delete token by name
+- marketo get folder by id
+- marketo get file by name
+- addmoduleusingpost
+- unapprovedraftusingpost
+- marketo get email templates
+- marketo get available form fields
+- marketo get file by id
+- getemailbynameusingget
+- createemailtemplateusingpost
+- deletetokenbynameusingpost
+- unapprovedraftusingpost 1
+- marketo get files
+- getallprogrammemberfieldsusingget
+- getfilesusingget
+- clonetemplateusingpost
+- marketo get email template by id
+- marketo create token
+- marketo create email template
+- createfolderusingpost
+- marketo approve email draft
+- marketo update email template content
+- deleteemailusingpost
+- adobe
+- marketo send sample email
+- marketo unapprove email
+- marketing automation
+- updatefolderusingpost
 slug: marketo-capability
 source_filename: marketo-capability.yaml
 source_heading: Capability Spec

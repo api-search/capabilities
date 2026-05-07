@@ -37,31 +37,31 @@ personas: []
 provider_name: Google Cloud Security Command Center
 provider_slug: google-cloud-security-command-center
 search_terms:
-- google cloud security command center create a source
-- google cloud security command center list assets
-- command
-- vulnerability management
-- google cloud security command center list findings
-- google cloud security command center create a finding
-- risk management
-- listnotificationconfigs
-- cloud
-- google
-- security
-- createsource
 - listfindings
-- compliance
-- center
-- cloud security
-- listassets
-- listsources
-- createfinding
-- api
-- google cloud security command center list sources
-- google cloud security command center list notification configs
 - threat detection
-- google cloud security command center create a notification config
+- api
+- google cloud security command center create a source
+- compliance
+- listsources
+- google cloud security command center create a finding
+- google
+- command
+- google cloud security command center list assets
 - createnotificationconfig
+- cloud security
+- google cloud security command center list notification configs
+- createfinding
+- center
+- google cloud security command center list sources
+- google cloud security command center create a notification config
+- listassets
+- cloud
+- google cloud security command center list findings
+- createsource
+- vulnerability management
+- security
+- listnotificationconfigs
+- risk management
 slug: google-cloud-security-command-center-capability
 source_filename: google-cloud-security-command-center-capability.yaml
 source_heading: Capability Spec

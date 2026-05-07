@@ -46,52 +46,52 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- supply chain management
-- list queries
-- get pivot grid data
-- query execution
-- retrieve data for a specific pivot grid.
-- retrieve performance analytics reports.
-- reporting
-- analytics
 - peoplesoft query definitions
-- peopletools platform services.
-- execute a peoplesoft query by name.
-- peoplesoft
-- retrieve available peoplesoft query definitions.
-- list forecasts
-- dashboards
-- campus solutions.
-- execute query
-- retrieve budget definitions and data.
-- pivot grid definitions
-- financial and supply chain management.
-- human capital management.
+- analytics
 - forecast data and projections
-- erp
+- enterprise software
+- retrieve available peoplesoft query definitions.
+- execute a peoplesoft query by name.
+- full-text search results
+- search index operations
+- retrieve data for a specific pivot grid.
+- list forecasts
+- budget definitions and data
+- get pivot grid data
 - query
-- financial management
+- hcm
+- pivot grid definitions
+- search content
 - crm
+- retrieve budget definitions and data.
+- list analytics reports
+- human capital management.
+- financial management
+- dashboards
 - retrieve data for a specific pivot grid with optional filters.
 - execute a full-text search across peoplesoft indexed content.
-- search
-- hcm
-- search content
-- performance analytics reports
-- pivot grid data
-- list pivot grids
-- campus solutions
-- retrieve forecast data and projections.
-- list analytics reports
-- search index operations
-- enterprise software
-- trigger index build
-- budget definitions and data
-- trigger a search index build or incremental update.
-- list budgets
+- campus solutions.
 - execute a peoplesoft query by name and retrieve results.
-- full-text search results
+- execute query
+- retrieve forecast data and projections.
+- peoplesoft
+- campus solutions
+- query execution
+- list budgets
+- retrieve performance analytics reports.
+- performance analytics reports
+- financial and supply chain management.
+- erp
+- reporting
+- pivot grid data
+- search
+- peopletools platform services.
+- trigger index build
+- supply chain management
 - retrieve available pivot grid definitions.
+- trigger a search index build or incremental update.
+- list queries
+- list pivot grids
 slug: reporting-and-analytics
 source_filename: reporting-and-analytics.yaml
 source_heading: Capability Spec

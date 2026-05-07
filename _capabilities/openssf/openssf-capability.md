@@ -29,23 +29,23 @@ personas: []
 provider_name: OpenSSF
 provider_slug: openssf
 search_terms:
-- supply chain
-- get vulnerability by osv id
-- query vulnerabilities for a package or commit
-- determineversion
-- batched vulnerability query
-- linux foundation
-- api
-- security
-- vulnerabilities
-- importfindings
 - queryvulnerabilities
-- openssf
+- batched vulnerability query
 - determine probable versions of a c/c++ project (experimental)
-- import-time quality check findings (experimental)
-- getvulnerability
+- linux foundation
 - open source
+- query vulnerabilities for a package or commit
+- importfindings
+- import-time quality check findings (experimental)
+- openssf
+- getvulnerability
+- get vulnerability by osv id
+- security
+- api
+- vulnerabilities
+- determineversion
 - queryvulnerabilitiesbatch
+- supply chain
 slug: openssf-capability
 source_filename: openssf-capability.yaml
 source_heading: Capability Spec

@@ -33,23 +33,23 @@ personas: []
 provider_name: PartnerStack
 provider_slug: partnerstack
 search_terms:
-- create a customer
-- list customers
-- list deals
-- listdeals
 - listtransactions
-- partnerships
-- list rewards
 - affiliate
 - saas
-- createcustomer
-- api
-- listcustomers
+- create a customer
 - listrewards
+- listcustomers
+- list rewards
+- partnerships
+- createcustomer
+- list deals
+- listdeals
 - list transactions
+- list partnerships
+- api
+- list customers
 - listpartnerships
 - partnerstack
-- list partnerships
 slug: partnerstack-capability
 source_filename: partnerstack-capability.yaml
 source_heading: Capability Spec

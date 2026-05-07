@@ -105,61 +105,61 @@ personas: []
 provider_name: Packer
 provider_slug: packer
 search_terms:
-- listiterations
-- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}
-- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels/{slug}
-- post /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations
-- packer
-- infrastructure as code
-- getiteration
-- updatechannel
-- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/iterations/{iteration_id}
-- getchannel
-- post /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations/{iteration_id}
-- createiteration
-- patch /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations/{incremental_version}/children
-- devops
-- getbuild
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels/{slug}
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/registry
-- deletebuild
-- listchannels
-- post /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations/{iteration_id}/builds
-- deletebucket
-- hashicorp
 - createbuild
-- listbuckets
-- getchildimages
-- deletechannel
-- createchannel
-- createregistry
-- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}
-- 'getiteration allows the user to retrieve an iteration using one of the following identifiers: * iteration_id * incremental_version * fingerprint'
-- patch /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels/{slug}
-- api
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}
-- updatebuild
-- updateiteration
-- patch /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images
-- image building
-- getbucket
-- updatebucket
-- createbucket
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}
-- getregistry
-- listbuilds
-- put /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/registry
-- getancestorimages
-- deleteiteration
-- updateiteration is used to mark an iteration "complete", once all builds are complete. to make build-specific updates for builds within the iteration, use the updatebuild endpoint.
-- api endpoints to ease ui implementation
-- put /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images
-- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations
+- devops
+- post /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels
 - automation
+- getchildimages
+- listbuilds
+- hashicorp
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations/{iteration_id}/builds
+- api
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations
+- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/iterations/{iteration_id}
+- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels/{slug}
+- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}
+- updatebuild
+- patch /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}
+- listbuckets
+- getregistry
+- createiteration
+- patch /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels/{slug}
+- 'getiteration allows the user to retrieve an iteration using one of the following identifiers: * iteration_id * incremental_version * fingerprint'
+- put /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/registry
+- updateiteration is used to mark an iteration "complete", once all builds are complete. to make build-specific updates for builds within the iteration, use the updatebuild endpoint.
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations/{incremental_version}/children
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}
+- post /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations
+- getbucket
+- post /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/iterations/{iteration_id}
+- deletebuild
+- createregistry
+- createbucket
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels/{slug}
+- getchannel
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}
+- packer
+- updatebucket
+- getancestorimages
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/registry
+- infrastructure as code
+- listiterations
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}/channels
+- image building
+- api endpoints to ease ui implementation
+- deleteiteration
+- getbuild
+- updatechannel
+- updateiteration
+- get /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images
+- createchannel
+- getiteration
+- deletechannel
+- deletebucket
+- listchannels
+- delete /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/builds/{build_id}
+- put /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images
+- patch /packer/2021-04-30/organizations/{location.organization_id}/projects/{location.project_id}/images/{bucket_slug}
 slug: packer-capability
 source_filename: packer-capability.yaml
 source_heading: Capability Spec

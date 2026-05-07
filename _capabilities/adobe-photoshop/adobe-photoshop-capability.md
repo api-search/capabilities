@@ -77,48 +77,48 @@ personas: []
 provider_name: Adobe Photoshop
 provider_slug: adobe-photoshop
 search_terms:
-- adobe photoshop create artboards from psd inputs
-- adobe photoshop get psd service job status
-- createdocument
-- modifydocument
 - adobe photoshop execute photoshop action files
-- creative cloud
-- rest api
-- getsenseijobstatus
-- adobe photoshop smart crop to product subject
-- adobe photoshop remove background from an image
-- adobe photoshop create documents using action json descriptors
-- healthcheck
-- fillmaskedareas
-- plugins
-- getdocumentmanifest
-- adobe photoshop edit text layers in a psd
-- playphotoshopactions
-- replacesmartobject
-- edittextlayer
+- playactionjson
 - adobe photoshop edit a psd document
-- createwithactionjson
-- adobe photoshop apply depth blur effect
-- adobe photoshop create a new psd document
+- createartboard
+- photoshop
+- adobe photoshop remove background from an image
+- playphotoshopactions
 - adobe photoshop create image renditions from a psd
 - api
-- removebackgroundv2
+- createwithactionjson
+- adobe photoshop edit text layers in a psd
 - adobe photoshop execute photoshop actions via json descriptors
 - depthblur
+- replacesmartobject
+- adobe photoshop apply depth blur effect
+- fillmaskedareas
+- plugins
+- removebackgroundv2
+- createrendition
+- createdocument
+- scripting
+- adobe photoshop create documents using action json descriptors
 - adobe photoshop get sensei service job status
+- modifydocument
+- adobe photoshop create artboards from psd inputs
+- edittextlayer
+- adobe photoshop replace smart object content
+- productcrop
+- adobe photoshop smart crop to product subject
+- healthcheck
+- adobe photoshop get psd service job status
 - adobe photoshop service health check
 - image editing
-- adobe
-- productcrop
 - getpsdjobstatus
-- createrendition
-- photoshop
-- scripting
 - ai/ml
+- rest api
 - adobe photoshop fill masked areas with generative ai
-- createartboard
-- adobe photoshop replace smart object content
-- playactionjson
+- getdocumentmanifest
+- adobe photoshop create a new psd document
+- adobe
+- getsenseijobstatus
+- creative cloud
 - adobe photoshop get psd document manifest
 slug: adobe-photoshop-capability
 source_filename: adobe-photoshop-capability.yaml

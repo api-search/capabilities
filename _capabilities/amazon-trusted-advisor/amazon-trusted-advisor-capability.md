@@ -10,8 +10,8 @@ provider_name: Amazon Trusted Advisor
 provider_slug: amazon-trusted-advisor
 search_terms:
 - best practices
-- cloud optimization
 - security
+- cloud optimization
 slug: amazon-trusted-advisor-capability
 source_filename: amazon-trusted-advisor-capability.yaml
 source_heading: Capability Spec

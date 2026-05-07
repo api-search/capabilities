@@ -33,33 +33,33 @@ personas: []
 provider_name: ArchiMate
 provider_slug: archimate
 search_terms:
-- enterprise architecture
-- standard
-- archimate list elements
-- modeling language
-- ea practitioners creating and managing architecture models
-- archimate import model
-- deletemodel
-- getmodel
-- open group
-- standards enforcement and architecture review processes
-- archimate
-- listmodels
-- archimate list models
 - archimate get model
-- api
-- importmodel
-- model exchange between different ea tools
-- technology architecture
-- solution architects documenting application and technology architecture
-- business analysts modeling business processes and capabilities
-- business architecture
-- listrelationships
-- archimate list relationships
-- listelements
+- archimate
 - archimate delete model
+- ea practitioners creating and managing architecture models
 - architecture framework
+- modeling language
+- standards enforcement and architecture review processes
+- business architecture
+- enterprise architecture
+- api
+- archimate import model
+- business analysts modeling business processes and capabilities
+- solution architects documenting application and technology architecture
+- archimate list relationships
+- deletemodel
+- archimate list elements
+- open group
+- getmodel
+- listmodels
+- technology architecture
+- listrelationships
+- standard
+- listelements
 - business, application, and technology architecture documentation
+- model exchange between different ea tools
+- importmodel
+- archimate list models
 slug: archimate-capability
 source_filename: archimate-capability.yaml
 source_heading: Capability Spec

@@ -13,15 +13,15 @@ personas: []
 provider_name: Ethereum
 provider_slug: ethereum
 search_terms:
-- ethereum
-- smart contracts
-- web3
 - json-rpc
-- blockchain
-- jsonrpccall
-- api
-- ethereum json-rpc endpoint
 - defi
+- ethereum
+- web3
+- ethereum json-rpc endpoint
+- blockchain
+- api
+- jsonrpccall
+- smart contracts
 slug: ethereum-capability
 source_filename: ethereum-capability.yaml
 source_heading: Capability Spec

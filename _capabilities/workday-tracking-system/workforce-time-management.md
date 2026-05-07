@@ -69,76 +69,76 @@ personas: []
 provider_name: Workday Tracking System
 provider_slug: workday-tracking-system
 search_terms:
-- a specific time block
-- time off plan balances for a worker
-- submit a time off request for a worker
-- get schedule
-- get time off balances for a worker
-- scheduling
-- list time off
-- create a new time block for a worker
-- list time off for a worker
-- list time blocks recorded by a workday worker in a date range
-- request time off
-- timesheets
-- record a clock-in or clock-out event
-- list leave of absence records for a worker
-- get details of a specific time block
-- attendance
-- create clock event
-- create a new time block entry for a worker
-- list time clock events (punches) for a worker
-- record a clock-in or clock-out event from a time device
-- update a time block
-- list timesheets for a worker
 - list leaves of absence for a worker
-- enterprise
-- delete a time block
-- leave of absence records for a worker
-- list timesheets for a worker for a period
-- payroll
-- workday
-- assign a work schedule to a worker
-- get time off plan balances for a worker
-- get work schedule
-- time tracking
-- list time blocks for a worker
-- timesheets for a worker
-- get a specific time block
-- list accrual balance overrides for a worker
-- hcm
-- request leave
-- absence management
-- assign schedule
-- time off requests for a worker
-- list time off requests for a worker
-- list time clock events for a worker
-- get the work schedule for a worker
 - get the current work schedule assigned to a worker
-- list accrual overrides
-- workforce management
-- update an existing time block
 - work schedule for a worker
-- create time block
-- list timesheets
+- get the work schedule for a worker
+- assign schedule
 - delete a reported time block
-- list leaves
-- time clock events for a worker
-- request a leave of absence
-- request time off for a worker
-- list time off balances
-- hr
-- list leaves of absence
+- request leave
 - list clock events
 - time blocks recorded by a worker
-- submit a leave of absence request for a worker
-- get time block
+- list time off requests for a worker
+- time tracking
+- list time clock events for a worker
+- request time off
+- delete a time block
 - delete time block
-- list time blocks
-- update time block
-- assign work schedule
+- list leave of absence records for a worker
+- list accrual balance overrides for a worker
+- workday
+- assign a work schedule to a worker
+- attendance
 - request leave of absence
+- timesheets
+- list time blocks recorded by a workday worker in a date range
+- list time blocks
+- hcm
+- get time off plan balances for a worker
+- list time blocks for a worker
+- hr
+- update time block
+- a specific time block
+- create clock event
+- create time block
+- payroll
+- list time off
+- update a time block
+- request time off for a worker
+- record a clock-in or clock-out event
+- submit a time off request for a worker
+- list leaves
+- list time off for a worker
+- submit a leave of absence request for a worker
+- request a leave of absence
+- enterprise
+- list timesheets for a worker
+- time off requests for a worker
+- assign work schedule
+- list time off balances
+- absence management
+- get time off balances for a worker
+- get a specific time block
+- list timesheets for a worker for a period
+- list accrual overrides
+- get work schedule
+- time clock events for a worker
+- workforce management
+- time off plan balances for a worker
+- get schedule
+- get details of a specific time block
+- create a new time block entry for a worker
+- record a clock-in or clock-out event from a time device
+- scheduling
+- list leaves of absence
 - human capital management
+- list timesheets
+- update an existing time block
+- timesheets for a worker
+- leave of absence records for a worker
+- get time block
+- list time clock events (punches) for a worker
+- create a new time block for a worker
 slug: workforce-time-management
 source_filename: workforce-time-management.yaml
 source_heading: Capability Spec

@@ -21,20 +21,20 @@ personas: []
 provider_name: Enterprise Products Partners
 provider_slug: enterprise-products-partners
 search_terms:
+- getcapacity
+- getpipelines
+- natural gas
 - midstream
+- getpipelinebyid
+- energy
+- enterprise
+- get pipelines
 - pipelines
 - products
-- get pipelines
-- getpipelines
-- api
 - get pipeline by id
-- getcapacity
+- api
 - get capacity information
-- enterprise
 - partners
-- energy
-- natural gas
-- getpipelinebyid
 slug: enterprise-products-partners-capability
 source_filename: enterprise-products-partners-capability.yaml
 source_heading: Capability Spec

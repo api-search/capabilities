@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- tradeweb
-- bloomberg
-- get portfolio context
-- return a single shaped object joining aim positions, bval valuations, and tradeweb liquidity.
-- api integration
 - governance
-- spec-driven integration
+- bloomberg
 - portfolio
-- ai
+- api integration
 - one-call composed portfolio context across aim, bval, and tradeweb.
-- mcp
+- tradeweb
+- ai
 - capabilities
+- spec-driven integration
+- return a single shaped object joining aim positions, bval valuations, and tradeweb liquidity.
+- mcp
+- naftiko
+- get portfolio context
 slug: aim-portfolio-tradeweb-cross-source-composer
 source_filename: aim-portfolio-tradeweb-cross-source-composer.yaml
 source_heading: Capability Spec

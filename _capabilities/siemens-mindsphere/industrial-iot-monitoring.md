@@ -41,45 +41,45 @@ personas: []
 provider_name: Siemens MindSphere
 provider_slug: siemens-mindsphere
 search_terms:
-- asset type template definitions
-- list all industrial iot assets and digital twins in mindsphere
-- list all industrial iot assets
-- get asset
-- list asset types
-- list all asset type templates defining industrial equipment classes
-- delete an asset and its digital twin
-- industrial
-- ingest sensor readings into time series
-- iot
-- insights hub
-- list aspect types
-- monitoring
-- single asset operations
-- delete asset
-- industrial iot
+- industrial asset management
 - create a new digital twin for an industrial device or system
-- list all asset type templates
-- predictive maintenance
-- batch ingest time-series data for multiple industrial assets in one request
-- time series
-- create asset
-- query time-series sensor data for an asset aspect
-- data schema definitions for asset aspects
-- list assets
-- ingest sensor readings and telemetry data into mindsphere time series
-- get asset details by id
+- insights hub
 - digital twin
-- create a new digital twin asset
-- ingest timeseries
-- get timeseries
 - query historical sensor and machine telemetry from an asset aspect for a time range
-- list all data schema definitions (aspect types) for industrial asset data
-- delete an industrial asset and its digital twin representation
+- list all aspect type schemas
+- create asset
+- ingest timeseries
+- create a new digital twin asset
+- list all industrial iot assets and digital twins in mindsphere
 - ingest multi timeseries
 - asset management
-- list all aspect type schemas
+- monitoring
+- ingest sensor readings and telemetry data into mindsphere time series
+- batch ingest time-series data for multiple industrial assets in one request
+- single asset operations
+- get timeseries
+- list all data schema definitions (aspect types) for industrial asset data
+- data schema definitions for asset aspects
+- list all asset type templates
+- query time-series sensor data for an asset aspect
+- time series
+- iot
+- list all asset type templates defining industrial equipment classes
+- list all industrial iot assets
+- ingest sensor readings into time series
+- industrial
+- predictive maintenance
 - get details of a specific industrial asset or digital twin
-- industrial asset management
+- delete an asset and its digital twin
+- list aspect types
+- get asset
+- industrial iot
+- delete an industrial asset and its digital twin representation
+- list asset types
+- asset type template definitions
+- get asset details by id
+- list assets
+- delete asset
 - sensor and machine telemetry time series
 slug: industrial-iot-monitoring
 source_filename: industrial-iot-monitoring.yaml

@@ -9,11 +9,11 @@ personas: []
 provider_name: Baxter International
 provider_slug: baxter-international
 search_terms:
-- medical devices
-- healthcare
 - connected health
 - patient monitoring
+- medical devices
 - infusion pumps
+- healthcare
 slug: medical-device-connectivity
 source_filename: medical-device-connectivity.yaml
 source_heading: Capability Spec

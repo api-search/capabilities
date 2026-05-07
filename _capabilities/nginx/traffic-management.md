@@ -73,68 +73,68 @@ personas: []
 provider_name: NGINX
 provider_slug: nginx
 search_terms:
-- reverse proxy
-- get configuration of a specific upstream server
-- add stream upstream server
-- servers in an http upstream group
-- list servers in a stream upstream group
-- list all http upstream server groups with health status
-- get key-value pairs from an http keyval zone
-- remove a server from a stream (tcp/udp) upstream group
-- get http upstream server
-- individual stream upstream server
-- get stream upstream server
-- dynamically add a server to a stream (tcp/udp) upstream group
-- dynamically add a backend server to an nginx http upstream group for load balancing
-- upstream management
-- list all nginx http upstream server groups with health and traffic statistics
-- http upstream server groups
-- servers in a stream upstream group
-- remove a backend server from an nginx http upstream group
-- list all nginx stream (tcp/udp) upstream server groups with health statistics
-- get http upstreams
-- get configuration of a specific stream upstream server
-- add a server to a stream upstream group
-- empty all key-value pairs from an http keyval zone
-- modify a stream upstream server configuration
-- get http upstream servers
-- list all stream upstream server groups
-- cloud native
-- http key-value store for dynamic routing rules
-- individual http upstream server
-- open source
-- list all servers in a specific nginx http upstream group with their configuration
-- list servers in an http upstream group
 - add a key-value pair to an http keyval zone for dynamic traffic routing
-- modify http upstream server
-- dynamic configuration
+- modify a key-value pair for dynamic routing
+- get http upstream server
+- individual http upstream server
 - get stream upstream servers
-- modify http keyval
-- remove a server from a stream upstream group
-- caching
-- load balancer
-- add a key-value pair for dynamic routing
-- web server
-- add http upstream server
-- stream upstream server groups
-- api gateway
+- list servers in an http upstream group
+- get configuration of a specific stream upstream server
+- upstream management
 - modify an http upstream server configuration
-- remove http upstream server
-- get stream upstreams
-- modify or delete a key-value pair in an http keyval zone
-- empty http keyval zone
-- traffic management
 - add a server to an http upstream group
-- remove a server from an http upstream group
-- get http keyval zone
-- add http keyval
+- get configuration of a specific upstream server
+- cloud native
+- reverse proxy
+- get stream upstream server
+- empty http keyval zone
+- open source
+- get http upstream servers
+- dynamically add a backend server to an nginx http upstream group for load balancing
 - modify stream upstream server
-- remove stream upstream server
+- list all nginx stream (tcp/udp) upstream server groups with health statistics
+- get key-value pairs from an http keyval zone
+- remove a server from a stream upstream group
+- add http keyval
+- get http upstreams
+- servers in an http upstream group
+- individual stream upstream server
+- remove a backend server from an nginx http upstream group
+- modify a stream upstream server configuration
+- api gateway
+- remove a server from an http upstream group
+- servers in a stream upstream group
+- remove a server from a stream (tcp/udp) upstream group
+- web server
 - get key-value pairs from an http keyval zone used for dynamic routing decisions
 - load balancing
+- list all http upstream server groups with health status
+- traffic management
+- stream upstream server groups
+- get stream upstreams
 - nginx
+- modify http keyval
 - modify configuration of an http upstream server (weight, max_conns, backup, down status)
-- modify a key-value pair for dynamic routing
+- modify or delete a key-value pair in an http keyval zone
+- add a server to a stream upstream group
+- list all servers in a specific nginx http upstream group with their configuration
+- list servers in a stream upstream group
+- http upstream server groups
+- add stream upstream server
+- add http upstream server
+- remove http upstream server
+- list all nginx http upstream server groups with health and traffic statistics
+- add a key-value pair for dynamic routing
+- http key-value store for dynamic routing rules
+- caching
+- empty all key-value pairs from an http keyval zone
+- get http keyval zone
+- dynamically add a server to a stream (tcp/udp) upstream group
+- load balancer
+- modify http upstream server
+- list all stream upstream server groups
+- remove stream upstream server
+- dynamic configuration
 slug: traffic-management
 source_filename: traffic-management.yaml
 source_heading: Capability Spec

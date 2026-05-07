@@ -33,26 +33,26 @@ personas: []
 provider_name: Microsoft Exchange
 provider_slug: microsoft-exchange
 search_terms:
-- calendar
-- getorganizationconfig
-- contacts
-- getaccepteddomains
 - microsoft exchange get dynamic distribution group members
-- getdistributiongroupmembers
-- enterprise
-- microsoft exchange get accepted domains
-- microsoft exchange manage mailbox
-- microsoft exchange manage mailbox folder permissions
-- getdynamicdistributiongroupmembers
-- api
-- exchange
-- microsoft exchange get organization configuration
-- email
 - managemailboxfolderpermission
+- microsoft exchange manage mailbox folder permissions
+- microsoft exchange get accepted domains
+- api
+- managemailbox
+- getdynamicdistributiongroupmembers
 - microsoft
 - collaboration
+- contacts
+- exchange
+- microsoft exchange manage mailbox
+- email
+- enterprise
 - microsoft exchange get distribution group members
-- managemailbox
+- getaccepteddomains
+- microsoft exchange get organization configuration
+- getdistributiongroupmembers
+- getorganizationconfig
+- calendar
 slug: microsoft-exchange-capability
 source_filename: microsoft-exchange-capability.yaml
 source_heading: Capability Spec

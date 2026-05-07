@@ -149,84 +149,84 @@ personas: []
 provider_name: Calendly
 provider_slug: calendly
 search_terms:
-- invite user to organization
-- create webhook subscription
-- get organization membership
-- listeventtypes
-- listgrouprelationships
-- getuseravailabilityschedule
-- list routing forms
-- api
-- list user availability schedules
-- revokeorganizationinvitation
-- create one-off event type
-- booking
-- getuser
-- list groups
-- get event invitee
-- invitetoorganization
-- list activity log entries
-- automation
-- geteventtype
-- cancelscheduledevent
-- listeventtypeavailabletimes
-- createoneoffeventtype
-- list event invitees
-- list event type available times
-- list user busy times
-- get user availability schedule
-- listgroups
-- get webhook subscription
-- create share
-- listwebhooksubscriptions
-- delete invitee data
-- get organization invitation
-- list group relationships
-- get current user
-- getroutingformsubmission
-- deletewebhooksubscription
-- listuserbusytimes
-- create event invitee
-- revoke organization invitation
-- getorganizationmembership
-- listeventinvitees
-- geteventinvitee
-- createshare
-- list webhook subscriptions
-- get event type
-- getscheduledevent
-- remove organization membership
-- calendars
-- createwebhooksubscription
-- calendly
-- list routing form submissions
-- listroutingforms
-- getroutingform
-- getwebhooksubscription
-- list organization invitations
-- get scheduled event
-- listroutingformsubmissions
-- getorganizationinvitation
-- meetings
-- getcurrentuser
-- list organization memberships
-- delete webhook subscription
-- scheduling
 - listorganizationinvitations
-- listuseravailabilityschedules
-- listactivitylogentries
+- api
+- get organization invitation
 - createeventinvitee
-- get routing form submission
-- listscheduledevents
-- listorganizationmemberships
-- list event types
-- deleteinviteedata
-- appointments
+- get user availability schedule
+- deletewebhooksubscription
+- getroutingformsubmission
 - list scheduled events
+- createwebhooksubscription
+- get event type
 - get user
+- create share
+- list event types
+- delete invitee data
 - get routing form
-- deleteorganizationmembership
+- getroutingform
+- list groups
+- listactivitylogentries
+- list activity log entries
 - cancel scheduled event
+- getorganizationinvitation
+- listscheduledevents
+- listgroups
+- deleteorganizationmembership
+- create webhook subscription
+- list user availability schedules
+- list organization invitations
+- booking
+- get routing form submission
+- listeventtypeavailabletimes
+- listorganizationmemberships
+- get current user
+- scheduling
+- invitetoorganization
+- createoneoffeventtype
+- listwebhooksubscriptions
+- getorganizationmembership
+- getwebhooksubscription
+- list user busy times
+- listeventinvitees
+- getscheduledevent
+- automation
+- cancelscheduledevent
+- list routing form submissions
+- meetings
+- get event invitee
+- get webhook subscription
+- listgrouprelationships
+- list organization memberships
+- geteventtype
+- revoke organization invitation
+- listroutingforms
+- listuseravailabilityschedules
+- listeventtypes
+- list webhook subscriptions
+- calendars
+- listuserbusytimes
+- create one-off event type
+- list routing forms
+- getcurrentuser
+- get scheduled event
+- remove organization membership
+- createshare
+- list event invitees
+- listroutingformsubmissions
+- getuser
+- getuseravailabilityschedule
+- deleteinviteedata
+- list group relationships
+- delete webhook subscription
+- appointments
+- invite user to organization
+- revokeorganizationinvitation
+- create event invitee
+- list event type available times
+- geteventinvitee
+- get organization membership
+- calendly
 slug: calendly-capability
 source_filename: calendly-capability.yaml
 source_heading: Capability Spec

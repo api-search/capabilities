@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- mcp
-- secret scanning
-- api integration
-- governance
-- spec-driven integration
-- ai
-- list secret alerts
 - github
-- capabilities
+- governance
+- list secret alerts
+- spec-driven integration
+- secret scanning
 - get secret alert
+- ai
+- capabilities
+- api integration
+- mcp
+- naftiko
 slug: github-actions-secret-scan-capability
 source_filename: github-actions-secret-scan-capability.yaml
 source_heading: Capability Spec

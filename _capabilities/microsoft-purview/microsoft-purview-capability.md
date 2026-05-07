@@ -57,39 +57,39 @@ personas: []
 provider_name: Microsoft Purview
 provider_slug: microsoft-purview
 search_terms:
-- microsoft purview list account keys
-- microsoft purview get a private endpoint connection
-- createorupdateaccount
+- microsoft purview update a purview account
+- getaccount
 - checknameavailability
+- listoperations
+- updateaccount
+- getprivateendpointconnection
+- api
 - microsoft purview check name availability
 - listprivateendpointconnections
-- information protection
-- listaccountkeys
-- microsoft purview list private endpoint connections
-- deleteaccount
 - compliance
-- microsoft purview get a purview account
-- getaccount
-- data governance
-- microsoft purview delete a purview account
-- microsoft purview add root collection admin
-- microsoft purview list available operations
-- microsoft purview update a purview account
-- listoperations
-- data loss prevention
-- api
-- updateaccount
-- microsoft purview list accounts by resource group
-- getprivateendpointconnection
-- microsoft purview create or update a purview account
-- addrootcollectionadmin
-- listaccountsbysubscription
-- listaccountsbyresourcegroup
+- microsoft purview list private endpoint connections
 - microsoft purview list accounts by subscription
-- purview
-- data catalog
 - microsoft
+- createorupdateaccount
+- microsoft purview create or update a purview account
 - data classification
+- addrootcollectionadmin
+- data catalog
+- listaccountsbysubscription
+- microsoft purview add root collection admin
+- purview
+- microsoft purview list available operations
+- microsoft purview get a purview account
+- microsoft purview delete a purview account
+- deleteaccount
+- microsoft purview get a private endpoint connection
+- information protection
+- listaccountsbyresourcegroup
+- data governance
+- data loss prevention
+- listaccountkeys
+- microsoft purview list accounts by resource group
+- microsoft purview list account keys
 slug: microsoft-purview-capability
 source_filename: microsoft-purview-capability.yaml
 source_heading: Capability Spec

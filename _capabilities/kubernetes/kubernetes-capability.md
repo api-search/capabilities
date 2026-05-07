@@ -145,83 +145,83 @@ personas: []
 provider_name: Kubernetes
 provider_slug: kubernetes
 search_terms:
-- kubernetes get a service
-- kubernetes delete a namespace
-- kubernetes scale a deployment
-- createnamespacedservice
-- createnamespace
-- listnamespaces
-- api
-- kubernetes list pods in a namespace
-- kubernetes list clusterroles
-- kubernetes list horizontalpodautoscalers in a namespace
-- scaling
-- deletenamespacedservice
-- replacenamespacedpod
-- kubernetes list configmaps in a namespace
-- automation
-- kubernetes create a deployment
-- getnamespaceddeploymentscale
-- listnodes
-- listclusterroles
-- createnamespacedhorizontalpodautoscaler
-- getnode
-- createnamespacedpod
-- readnamespacedpodlog
-- cloud native
-- kubernetes
-- createnamespacedconfigmap
-- kubernetes get a namespace
-- replacenamespaceddeploymentscale
-- open source
-- deletenamespaceddeployment
-- kubernetes replace a pod
-- cncf
-- kubernetes create a pod
-- kubernetes create a configmap
-- listnamespacedconfigmaps
-- kubernetes create a secret
-- getnamespace
-- createclusterrole
-- kubernetes list services in a namespace
-- kubernetes list nodes
-- createnamespacedsecret
-- listnamespacedhorizontalpodautoscalers
-- kubernetes get a deployment
-- kubernetes list events in a namespace
-- replacenamespace
-- kubernetes get a pod
-- kubernetes replace a namespace
-- kubernetes create a service
-- listnamespacedservices
-- getnamespaceddeployment
-- kubernetes list namespaces
-- kubernetes create a horizontalpodautoscaler
 - getnamespacedpod
-- kubernetes delete a pod
-- kubernetes replace a deployment
-- listnamespaceddeployments
-- kubernetes get deployment scale
-- deletenamespacedpod
-- getnamespacedservice
-- kubernetes list secrets in a namespace
-- listnamespacedpods
-- kubernetes list deployments in a namespace
-- kubernetes replace a service
-- listnamespacedevents
-- kubernetes delete a service
-- replacenamespacedservice
-- listnamespacedsecrets
-- kubernetes get a node
-- kubernetes create a namespace
-- deployment
+- scaling
 - containers
-- kubernetes read pod logs
-- deletenamespace
-- orchestration
-- replacenamespaceddeployment
+- kubernetes list horizontalpodautoscalers in a namespace
 - kubernetes delete a deployment
+- api
+- listnamespacedevents
+- listnamespacedsecrets
+- listnamespacedpods
+- kubernetes get a pod
+- deployment
+- kubernetes create a deployment
+- kubernetes replace a namespace
+- kubernetes delete a pod
+- cncf
+- kubernetes read pod logs
+- kubernetes create a namespace
+- kubernetes get a namespace
+- createnamespacedhorizontalpodautoscaler
+- replacenamespaceddeploymentscale
+- createnamespacedpod
+- kubernetes get a node
+- kubernetes create a secret
+- kubernetes list nodes
+- replacenamespacedpod
+- replacenamespace
+- kubernetes list services in a namespace
+- deletenamespace
+- getnamespace
+- replacenamespacedservice
+- cloud native
+- deletenamespaceddeployment
+- deletenamespacedpod
+- listclusterroles
+- readnamespacedpodlog
+- kubernetes delete a service
+- listnamespacedservices
+- createnamespacedconfigmap
+- kubernetes scale a deployment
 - kubernetes create a clusterrole
+- kubernetes list namespaces
+- getnamespaceddeploymentscale
+- listnamespacedhorizontalpodautoscalers
+- kubernetes create a horizontalpodautoscaler
+- createclusterrole
+- listnamespaces
+- kubernetes delete a namespace
+- automation
+- replacenamespaceddeployment
+- kubernetes list clusterroles
+- listnodes
+- kubernetes list secrets in a namespace
+- kubernetes
+- getnode
+- createnamespace
+- kubernetes replace a service
+- kubernetes list pods in a namespace
+- kubernetes get a deployment
+- listnamespacedconfigmaps
+- getnamespaceddeployment
+- listnamespaceddeployments
+- deletenamespacedservice
+- createnamespacedsecret
+- getnamespacedservice
+- kubernetes list events in a namespace
+- open source
+- kubernetes create a pod
+- orchestration
+- kubernetes create a configmap
+- kubernetes get deployment scale
+- kubernetes create a service
+- createnamespacedservice
+- kubernetes replace a deployment
+- kubernetes list configmaps in a namespace
+- kubernetes replace a pod
+- kubernetes get a service
+- kubernetes list deployments in a namespace
 - createnamespaceddeployment
 slug: kubernetes-capability
 source_filename: kubernetes-capability.yaml

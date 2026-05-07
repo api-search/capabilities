@@ -77,76 +77,76 @@ personas: []
 provider_name: SignNow
 provider_slug: signnow
 search_terms:
-- send e-signature invitations to multiple recipients using a csv file and template.
-- upload document
-- list all e-signature documents and their current signing status.
-- document signing
-- cancel all pending signature invitations for a document.
-- signature invitation management.
-- send e-signature invitations to one or more recipients for a document.
-- get document
-- create a document group envelope to coordinate signing across multiple documents.
-- delete a document template from signnow.
-- legal
-- send bulk invite
-- list all reusable document templates.
-- create a document group envelope for coordinated multi-document signing.
-- list all document group envelopes for coordinated multi-document signing.
-- get template
-- document template management.
-- single document operations.
-- register a webhook to receive notifications when document signing events occur.
-- download a document as a signed pdf.
-- list documents
-- list templates
-- document lifecycle management.
-- delete document
-- create template
-- list all available document templates for e-signature workflows.
-- electronic signature
-- contract management
-- create webhook
-- download a completed signed document as a pdf.
-- retrieve details of a specific document group envelope.
-- permanently delete a document from signnow.
-- send signature invitations to one or more recipients.
-- current user profile.
-- single template operations.
-- retrieve a specific template with its fields and roles.
-- e-signature
-- document download.
-- send signature invitations to multiple recipients via csv.
-- send signature invite
-- upload a pdf document to begin the signing workflow.
-- bulk signature invitation.
-- list all document group envelopes.
-- create a reusable template from an existing document.
-- create envelope
 - delete a document from the system.
-- get envelope
-- retrieve a specific document template with its signing fields and roles.
-- retrieve document details, fields, and current signing status.
-- cancel signature invite
-- webhook event subscription management.
-- list all documents with their signing status.
-- workflow automation
-- document management
-- list all active webhook subscriptions.
-- list envelopes
-- download document
-- document group envelope management.
 - cancel pending signature invites.
-- create a reusable e-signature template from an existing document.
-- get current user
-- delete template
-- retrieve the current user's profile and subscription information.
-- retrieve current user profile, subscription details, and usage information.
-- list webhooks
+- retrieve a specific template with its fields and roles.
+- contract management
+- document template management.
+- retrieve a specific document template with its signing fields and roles.
+- cancel all pending signature invitations for a document.
+- list all available document templates for e-signature workflows.
+- document management
+- workflow automation
+- permanently delete a document from signnow.
 - delete a document template.
-- register a webhook to receive signing event notifications.
-- upload a pdf document to begin an e-signature workflow.
-- retrieve full details of a specific document including its fields and signing status.
+- list templates
+- create a document group envelope for coordinated multi-document signing.
+- current user profile.
+- create a reusable e-signature template from an existing document.
+- create a document group envelope to coordinate signing across multiple documents.
+- download a document as a signed pdf.
 - list all active webhook event subscriptions.
+- delete a document template from signnow.
+- list all document group envelopes for coordinated multi-document signing.
+- send e-signature invitations to one or more recipients for a document.
+- list all documents with their signing status.
+- download a completed signed document as a pdf.
+- create webhook
+- get document
+- create template
+- document lifecycle management.
+- retrieve full details of a specific document including its fields and signing status.
+- upload document
+- retrieve document details, fields, and current signing status.
+- document download.
+- send signature invite
+- list envelopes
+- list all reusable document templates.
+- bulk signature invitation.
+- register a webhook to receive signing event notifications.
+- signature invitation management.
+- get envelope
+- create a reusable template from an existing document.
+- document group envelope management.
+- delete template
+- single template operations.
+- list webhooks
+- send signature invitations to multiple recipients via csv.
+- register a webhook to receive notifications when document signing events occur.
+- document signing
+- send bulk invite
+- retrieve details of a specific document group envelope.
+- list all document group envelopes.
+- webhook event subscription management.
+- download document
+- upload a pdf document to begin the signing workflow.
+- get current user
+- list documents
+- create envelope
+- list all e-signature documents and their current signing status.
+- send e-signature invitations to multiple recipients using a csv file and template.
+- e-signature
+- legal
+- retrieve the current user's profile and subscription information.
+- electronic signature
+- delete document
+- get template
+- list all active webhook subscriptions.
+- single document operations.
+- cancel signature invite
+- retrieve current user profile, subscription details, and usage information.
+- upload a pdf document to begin an e-signature workflow.
+- send signature invitations to one or more recipients.
 slug: document-signing
 source_filename: document-signing.yaml
 source_heading: Capability Spec

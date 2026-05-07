@@ -45,61 +45,61 @@ personas: []
 provider_name: SmartRecruiters
 provider_slug: smartrecruiters
 search_terms:
-- browse public job postings on the career site
-- get job
-- get a specific job posting
-- get job hiring team
-- list jobs
-- submit a candidate application for a job posting
 - get application status
-- get a candidate's full profile including contact info and history
-- job lifecycle management
-- recruiting
-- submit a job application
-- list all job applications associated with a candidate
-- add candidate note
 - create job
 - submit application
-- list all jobs with optional filters
-- smartrecruiters
-- candidate profile management
-- create a new job opening
-- search and list candidate profiles in the system
-- get the recruiting team assigned to a job
-- list candidate applications
-- public job postings for career sites
-- get the full details of a public job posting
-- individual public job posting
-- list candidates who applied for a specific job
-- list job candidates
-- create candidate
-- list candidates for a job
 - list candidates
-- individual candidate profile
-- get a candidate profile
-- list open positions with optional filtering by status or keyword
+- submit a job application
+- smartrecruiters
+- job lifecycle management
+- add candidate note
 - get job details
-- update job status
-- get detailed information about a specific job opening
-- list postings
-- get candidate
-- create a new job opening in smartrecruiters
-- individual job management
-- candidates
-- add a recruiter note to a candidate profile
-- hr technology
-- list candidate profiles
-- human resources
-- list public job postings
-- check the current status of a candidate's application
-- talent acquisition
-- move a job to a new status in the hiring workflow
-- jobs
-- import a new candidate profile into smartrecruiters
-- applicant tracking
-- get posting
-- candidates for a job
+- create candidate
+- get job hiring team
+- get job
+- list open positions with optional filtering by status or keyword
 - candidate application submission
+- list job candidates
+- get posting
+- get the recruiting team assigned to a job
+- candidate profile management
+- move a job to a new status in the hiring workflow
+- talent acquisition
+- list public job postings
+- individual candidate profile
+- applicant tracking
+- public job postings for career sites
+- list all jobs with optional filters
+- update job status
+- submit a candidate application for a job posting
+- list candidate applications
+- list candidates for a job
+- get a candidate's full profile including contact info and history
+- recruiting
+- create a new job opening
+- get candidate
+- browse public job postings on the career site
+- get a specific job posting
+- check the current status of a candidate's application
+- import a new candidate profile into smartrecruiters
+- hr technology
+- human resources
+- individual public job posting
+- search and list candidate profiles in the system
+- add a recruiter note to a candidate profile
+- list all job applications associated with a candidate
+- list jobs
+- get the full details of a public job posting
+- jobs
+- candidates
+- list postings
+- individual job management
+- get detailed information about a specific job opening
+- create a new job opening in smartrecruiters
+- get a candidate profile
+- candidates for a job
+- list candidates who applied for a specific job
+- list candidate profiles
 slug: talent-acquisition
 source_filename: talent-acquisition.yaml
 source_heading: Capability Spec

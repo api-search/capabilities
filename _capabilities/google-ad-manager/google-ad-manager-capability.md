@@ -29,28 +29,28 @@ personas: []
 provider_name: Google Ad Manager
 provider_slug: google-ad-manager
 search_terms:
-- google ad manager list networks
+- google ad manager run a report
 - google ad manager list orders
-- runreport
-- manager
-- ad manager
-- google ad manager list ad units
+- listnetworks
+- targeting
+- api
+- orders
+- google ad manager list networks
+- ad serving
 - google
-- listadunits
+- google ad manager list ad units
 - ad
 - listorders
-- line items
-- api
-- creatives
-- ad serving
-- google ad manager list companies
-- publishers
-- google ad manager run a report
-- listnetworks
 - ad operations
 - listcompanies
-- orders
-- targeting
+- manager
+- google ad manager list companies
+- runreport
+- listadunits
+- ad manager
+- publishers
+- creatives
+- line items
 slug: google-ad-manager-capability
 source_filename: google-ad-manager-capability.yaml
 source_heading: Capability Spec

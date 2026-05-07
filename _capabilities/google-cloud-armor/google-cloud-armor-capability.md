@@ -37,29 +37,29 @@ personas: []
 provider_name: Google Cloud Armor
 provider_slug: google-cloud-armor
 search_terms:
-- google cloud armor update a security policy
+- google cloud armor add a rule to a security policy
+- ddos protection
 - listsecuritypolicies
-- removesecuritypolicyrule
-- deletesecuritypolicy
-- patchsecuritypolicy
+- api
+- waf
 - armor
-- google cloud armor list security policies
-- firewall
-- createsecuritypolicy
-- cloud
 - google
+- google cloud armor list security policies
+- removesecuritypolicyrule
+- patchsecuritypolicy
+- createsecuritypolicy
+- deletesecuritypolicy
+- google cloud armor create a security policy
+- cloud
+- addsecuritypolicyrule
+- google cloud armor remove a rule from a security policy
+- firewall
+- google cloud armor get a security policy
+- google cloud armor delete a security policy
+- google cloud armor update a security policy
+- google cloud
 - security
 - getsecuritypolicy
-- google cloud armor delete a security policy
-- ddos protection
-- addsecuritypolicyrule
-- api
-- google cloud armor create a security policy
-- waf
-- google cloud armor add a rule to a security policy
-- google cloud armor get a security policy
-- google cloud
-- google cloud armor remove a rule from a security policy
 slug: google-cloud-armor-capability
 source_filename: google-cloud-armor-capability.yaml
 source_heading: Capability Spec

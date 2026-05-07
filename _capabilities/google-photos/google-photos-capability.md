@@ -41,30 +41,30 @@ personas: []
 provider_name: Google Photos Library
 provider_slug: google-photos
 search_terms:
-- photos
-- listsharedalbums
-- search media items
-- createalbum
-- storage
-- images
-- create media items
-- get an album
-- listalbums
-- getmediaitem
-- albums
-- google
-- listmediaitems
-- api
 - batchcreatemediaitems
-- list media items
-- create an album
-- media
-- get a media item
 - list albums
-- getalbum
-- searchmediaitems
-- list shared albums
+- albums
 - sharing
+- listsharedalbums
+- photos
+- api
+- list media items
+- create media items
+- search media items
+- google
+- createalbum
+- searchmediaitems
+- getalbum
+- getmediaitem
+- list shared albums
+- create an album
+- storage
+- media
+- listmediaitems
+- images
+- get a media item
+- listalbums
+- get an album
 slug: google-photos-capability
 source_filename: google-photos-capability.yaml
 source_heading: Capability Spec

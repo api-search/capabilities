@@ -33,26 +33,26 @@ personas: []
 provider_name: Maven Central
 provider_slug: maven-central
 search_terms:
-- publishdeployment
-- download from a specific deployment
-- java
+- downloaddeploymentfile
 - artifacts
-- upload a deployment bundle
+- api
+- publishdeployment
+- dropdeployment
+- java
 - jvm
+- uploadbundle
+- maven
+- getdeploymentstatus
+- download from any validated deployment
+- get deployment status
+- repository
+- central
+- download from a specific deployment
+- upload a deployment bundle
+- drop a deployment
+- publish a deployment
 - package management
 - downloadvalidatedfile
-- dropdeployment
-- getdeploymentstatus
-- api
-- get deployment status
-- download from any validated deployment
-- repository
-- publish a deployment
-- downloaddeploymentfile
-- maven
-- central
-- uploadbundle
-- drop a deployment
 slug: maven-central-capability
 source_filename: maven-central-capability.yaml
 source_heading: Capability Spec

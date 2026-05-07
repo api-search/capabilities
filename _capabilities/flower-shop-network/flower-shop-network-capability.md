@@ -53,36 +53,36 @@ personas: []
 provider_name: Flower Shop Network
 provider_slug: flower-shop-network
 search_terms:
-- network
-- post relayorder apiconfirmdelivery
-- retrieve delivery confirmation
-- confirm order delivery
-- post relayutil apisearchflorists
-- post relayorder apireceiveorders
-- retrieve order details
-- post relayorder apisendorder
-- flowers
-- refuse an incoming order
-- flower
-- post relayorder apigetorder
 - load product data
-- accept an incoming order
-- shop
-- api
-- post relayorder apiacceptorder
-- post api token apicheck
-- issue api token
-- point of sale
-- post relayorder apigetdeliveryconfirmation
-- post api foreignsystem apigetpostoken
-- wire orders
-- validate token
-- receive incoming orders awaiting accept/refuse
-- florists
-- post relayorder apirefuseorder
 - post myfsnproduct apiloadproductdata
 - search filling florists
+- point of sale
+- api
+- confirm order delivery
+- receive incoming orders awaiting accept/refuse
+- issue api token
+- shop
+- post relayorder apirefuseorder
+- florists
+- wire orders
+- post relayorder apiconfirmdelivery
+- flower
+- retrieve delivery confirmation
+- flowers
+- post api foreignsystem apigetpostoken
+- refuse an incoming order
+- post relayorder apigetdeliveryconfirmation
+- post relayorder apisendorder
+- post relayutil apisearchflorists
+- validate token
+- network
+- post relayorder apigetorder
 - send a florist-to-florist order
+- post relayorder apiacceptorder
+- post api token apicheck
+- post relayorder apireceiveorders
+- accept an incoming order
+- retrieve order details
 slug: flower-shop-network-capability
 source_filename: flower-shop-network-capability.yaml
 source_heading: Capability Spec

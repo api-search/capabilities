@@ -249,133 +249,133 @@ personas: []
 provider_name: Phrase
 provider_slug: phrase
 search_terms:
-- custom metadata properties delete
-- locale create
-- create a new invitation
-- locales list
-- release triggers list
-- list locale reports
-- create a figma attachment
-- list release triggers
-- update a member's invitation access
-- screenshot markers list
-- distribution update
-- invitation show
-- invitation delete
-- invitation create
-- delete a distribution
-- screenshot marker delete
-- content management
-- releases list
-- update an invitation
-- distribution show
-- screenshot marker show
-- get a single figma attachment
-- delete a single release trigger
-- release update
-- list invitations
-- api
-- update a style guide
-- release publish
-- get a single distribution
-- create a locale
-- figma attachment detach from key
-- document delete
-- custom metadata property update
-- internationalization
-- invitation update
-- get a single screenshot marker
-- figma attachment update
-- account locales
-- release triggers create
-- update a figma attachment
-- delete a style guide
-- delete document
-- build icu skeletons
-- create a distribution
-- create a release
 - invitation update settings
-- styleguide update
-- strings
-- custom metadata properties list
-- get a single invitation
-- figma attachment attach to key
-- detach the figma attachment from a key
-- distribution create
-- release create
-- list locales
-- update a release
-- styleguide create
-- styleguide show
-- distributions list
-- list figma attachments
-- show status of an async locale download
-- update a property
-- translation
-- custom metadata property create
-- publish a release
-- release triggers show
-- delete a locale
-- create a property
-- get a single style guide
-- locale show
-- invitation resend
-- create a release trigger
-- styleguide delete
-- figma attachment show
-- attach the figma attachment to a key
-- list properties
-- locale delete
-- list documents
-- figma attachment delete
-- release triggers update
-- create a screenshot marker
-- list screenshot markers
-- get a single release
-- report locales list
-- get project report
-- styleguides list
-- phrase
-- resend an invitation
-- get a single property
-- delete a release
-- update a release trigger
-- locale download create
-- download a locale
-- list style guides
-- documents list
-- destroy property
-- invitations list
-- formats list
-- list releases
-- locale download
-- locale download show
-- icu skeleton
 - release delete
+- create a figma attachment
+- api
+- locale delete
+- invitation update
+- attach the figma attachment to a key
+- formats list
+- delete a release
+- destroy property
+- create a distribution
+- release create
+- invitations list
+- releases list
+- distribution update
+- distribution show
 - update a screenshot marker
-- list formats
-- list locales used in account
-- get a single release trigger
-- release triggers destroy
-- delete a figma attachment
-- report show
-- figma attachment create
-- locale update
-- update a locale
-- delete an invitation
-- screenshot marker update
-- initiate async download of a locale
-- distribution delete
+- create a screenshot marker
 - list distributions
-- figma attachments list
-- custom metadata property show
+- update an invitation
+- list documents
 - delete a screenshot marker
-- update a distribution
-- create a style guide
-- release show
+- delete document
+- get a single figma attachment
+- build icu skeletons
+- create a locale
+- get a single screenshot marker
+- translation
+- account locales
 - get a single locale
+- custom metadata property update
+- update a style guide
+- delete a locale
+- get a single property
+- release triggers create
+- create a style guide
+- publish a release
+- list formats
+- distribution delete
+- documents list
+- download a locale
+- phrase
+- invitation show
+- get a single distribution
 - screenshot marker create
+- locale update
+- update a figma attachment
+- get a single release
+- figma attachment show
+- get a single invitation
+- create a release
+- list style guides
+- create a new invitation
+- distributions list
+- custom metadata properties delete
+- locale download show
+- report show
+- show status of an async locale download
+- delete a distribution
+- release triggers show
+- resend an invitation
+- list release triggers
+- screenshot marker delete
+- create a property
+- delete a figma attachment
+- list properties
+- list invitations
+- list locales
+- internationalization
+- styleguide update
+- update a release trigger
+- release update
+- get a single style guide
+- icu skeleton
+- styleguide create
+- release show
+- invitation delete
+- locale show
+- create a release trigger
+- update a locale
+- invitation create
+- list locales used in account
+- locale download create
+- release triggers destroy
+- custom metadata property show
+- release triggers update
+- strings
+- update a release
+- get project report
+- figma attachment delete
+- styleguide show
+- figma attachment create
+- list locale reports
+- locale create
+- figma attachment attach to key
+- delete an invitation
+- report locales list
+- list releases
+- list screenshot markers
+- locales list
+- styleguides list
+- update a property
+- custom metadata properties list
+- figma attachment update
+- list figma attachments
+- delete a style guide
+- document delete
+- detach the figma attachment from a key
+- screenshot marker show
+- release triggers list
+- get a single release trigger
+- delete a single release trigger
+- content management
+- figma attachments list
 - localization
+- custom metadata property create
+- release publish
+- styleguide delete
+- locale download
+- update a member's invitation access
+- initiate async download of a locale
+- update a distribution
+- invitation resend
+- figma attachment detach from key
+- distribution create
+- screenshot marker update
+- screenshot markers list
 slug: phrase-capability
 source_filename: phrase-capability.yaml
 source_heading: Capability Spec

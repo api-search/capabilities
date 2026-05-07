@@ -45,46 +45,46 @@ personas: []
 provider_name: Strimzi
 provider_slug: strimzi
 search_terms:
-- kafka topic listing
-- commit consumer offsets to checkpoint consumption progress
-- create a consumer instance
-- list topics
-- list all available kafka topics in the cluster
-- produce messages to a topic
-- message consumption
-- poll messages
-- send messages to a kafka topic (supports key, value, headers, and partition targeting)
 - message production
-- offset management
-- list all available kafka topics
-- create a kafka consumer instance in a consumer group for message consumption
-- kubernetes
-- topic partition metadata
-- list subscriptions
-- create consumer
-- get partition metadata including leader and replica info for a topic
-- subscribe a consumer to one or more kafka topics
-- list the topics a consumer is subscribed to
-- consumer group management
-- subscribe
-- messaging
-- get partition metadata for a topic
-- check bridge health
-- poll for messages
-- list consumer subscriptions
-- get topic partitions
-- poll for messages from subscribed kafka topics (long-poll with configurable timeout)
-- operator
-- subscribe consumer to topics
-- bridge health
-- health check
-- list partitions
+- poll messages
 - streaming
-- consumer subscriptions
-- commit offsets
-- kafka
+- list consumer subscriptions
+- list all available kafka topics in the cluster
+- get partition metadata including leader and replica info for a topic
 - subscribe to topics
+- poll for messages from subscribed kafka topics (long-poll with configurable timeout)
 - produce messages
+- topic partition metadata
+- kafka topic listing
+- create a kafka consumer instance in a consumer group for message consumption
+- kafka
+- health check
+- get topic partitions
+- subscribe a consumer to one or more kafka topics
+- subscribe consumer to topics
+- subscribe
+- message consumption
+- check bridge health
+- list all available kafka topics
+- create consumer
+- kubernetes
+- list partitions
+- bridge health
+- consumer subscriptions
+- send messages to a kafka topic (supports key, value, headers, and partition targeting)
+- operator
+- produce messages to a topic
+- list subscriptions
+- offset management
+- commit consumer offsets to checkpoint consumption progress
+- list topics
+- consumer group management
+- poll for messages
+- get partition metadata for a topic
+- commit offsets
+- messaging
+- create a consumer instance
+- list the topics a consumer is subscribed to
 slug: kafka-messaging
 source_filename: kafka-messaging.yaml
 source_heading: Capability Spec

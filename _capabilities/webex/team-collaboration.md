@@ -65,64 +65,64 @@ personas: []
 provider_name: Webex
 provider_slug: webex
 search_terms:
-- delete room
-- register a webhook to receive webex event notifications
-- meetings
-- list messages in a room
-- calling
-- list scheduled webex meetings
-- list available webex meeting recordings
-- list messages
-- webex
-- manage webex collaboration rooms
-- schedule a new webex video meeting
-- get meeting details
-- get the list of participants who joined a webex meeting
-- schedule a new webex video meeting with participants
-- get room
-- delete a webex room
-- manage webex event webhooks
-- list upcoming webex meetings
-- access webex meeting recordings
-- list people
-- create room
-- list messages in a webex room
-- create webhook
-- list registered webhooks
-- communication
-- enterprise
-- list meetings
 - post a message to a webex room
-- single meeting operations
-- search for webex users by email or display name
-- get meeting
-- messaging
-- create a new webex event webhook
-- look up webex users
-- list webex collaboration rooms available to the user
-- send message
-- create a new webex collaboration room
-- list rooms
-- single room operations
-- video conferencing
+- access webex meeting recordings
+- calling
+- list registered webhooks
 - cancel a scheduled meeting
-- list available webex recordings
-- schedule meeting
-- search people
-- get details of a specific room
-- list recordings
-- delete meeting
-- schedule and manage webex meetings
-- search webex users by email or name
-- list all webex rooms available to the authenticated user
-- post and retrieve messages in webex rooms
-- team productivity
-- create a new webex collaboration room for team communication
-- get meeting participants
+- list upcoming webex meetings
+- manage webex collaboration rooms
+- list available webex meeting recordings
+- list webex collaboration rooms available to the user
 - list registered webex event webhooks
-- list webhooks
+- single room operations
+- schedule meeting
+- meetings
+- search webex users by email or name
+- delete meeting
+- delete room
+- create webhook
 - send a message to a webex room
+- single meeting operations
+- schedule a new webex video meeting with participants
+- register a webhook to receive webex event notifications
+- schedule a new webex video meeting
+- communication
+- get meeting participants
+- schedule and manage webex meetings
 - collaboration
+- team productivity
+- send message
+- list meetings
+- list messages in a room
+- list all webex rooms available to the authenticated user
+- list scheduled webex meetings
+- get meeting details
+- list recordings
+- webex
+- search people
+- list webhooks
+- create room
+- create a new webex event webhook
+- list messages
+- manage webex event webhooks
+- create a new webex collaboration room
+- get meeting
+- enterprise
+- list messages in a webex room
+- delete a webex room
+- get the list of participants who joined a webex meeting
+- list people
+- list available webex recordings
+- create a new webex collaboration room for team communication
+- list rooms
+- video conferencing
+- search for webex users by email or display name
+- look up webex users
+- get details of a specific room
+- post and retrieve messages in webex rooms
+- messaging
+- get room
 slug: team-collaboration
 source_filename: team-collaboration.yaml
 source_heading: Capability Spec

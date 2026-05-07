@@ -37,47 +37,47 @@ personas: []
 provider_name: Ticketmaster
 provider_slug: ticketmaster
 search_terms:
-- concerts
+- get details for a specific event
+- get ticket pricing and offers for an event
 - get search suggestions
-- get event availability
-- search venues
-- sports
+- tickets
+- get ticket pricing tiers and purchase options for a specific ticketmaster event
+- search events
+- ticketmaster
+- get autocomplete suggestions for event, venue, or attraction searches
+- venues
+- search for event venues by name or location
+- search for live events on ticketmaster by keyword, city, country, date range, or classification (music, sports, arts, family)
+- search artists and attractions
+- get event offers
+- events
 - venue search
-- find event venues near a city or geographic location
+- individual event details
+- get full details for a specific ticketmaster event including dates, venue, and prices
+- search for artists, sports teams, and other attractions
+- concerts
+- ticket availability for an event
+- get suggestions
 - search attractions
+- entertainment
+- check ticket availability for an event
+- search for live events by keyword, location, date, and genre
+- sports
 - live event search
 - get event
-- search for artists, sports teams, and other attractions
-- get suggestions
-- search for live events by keyword, location, date, and genre
-- get event offers
-- search events
-- artist and attraction search
-- commerce
-- search for live events on ticketmaster by keyword, city, country, date range, or classification (music, sports, arts, family)
-- ticket availability for an event
-- get full details for a specific ticketmaster event including dates, venue, and prices
-- search for artists, sports teams, and other attractions on ticketmaster
-- get ticket pricing and offers for an event
-- check ticket availability for an event
-- search artists and attractions
-- search autocomplete
-- venues
-- individual event details
-- search
-- get autocomplete suggestions for event, venue, or attraction searches
 - get autocomplete suggestions while users type event or venue search queries
-- entertainment
-- get ticket pricing tiers and purchase options for a specific ticketmaster event
-- ticketmaster
-- check ticket availability
 - check if tickets are still available for a ticketmaster event
-- search for event venues by name or location
-- get event ticket offers
-- get details for a specific event
+- check ticket availability
+- search
 - ticket offers for an event
-- events
-- tickets
+- get event availability
+- search autocomplete
+- find event venues near a city or geographic location
+- search for artists, sports teams, and other attractions on ticketmaster
+- commerce
+- search venues
+- get event ticket offers
+- artist and attraction search
 slug: event-discovery-and-ticketing
 source_filename: event-discovery-and-ticketing.yaml
 source_heading: Capability Spec

@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- get tax flow context
-- ai context
-- avatax
-- tax
-- api integration
 - governance
-- spec-driven integration
+- naftiko
+- avatax
+- ai context
+- tax
 - ai
-- mcp
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- get tax flow context
 slug: compose-ai-context-tax-flow
 source_filename: compose-ai-context-tax-flow.yaml
 source_heading: Capability Spec

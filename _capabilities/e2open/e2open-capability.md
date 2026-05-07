@@ -45,25 +45,25 @@ personas: []
 provider_name: e2open
 provider_slug: e2open
 search_terms:
-- cancel a booking
-- create an ocean booking
-- track a container by number
-- trackbooking
-- getbooking
-- track shipment by booking reference
-- submit shipping instructions (si)
-- list ocean bookings
-- submitshippinginstructions
-- trackcontainer
-- searchschedules
-- search ocean vessel schedules
-- cancelbooking
-- createbooking
-- listbookings
-- api
-- amendbooking
 - amend an existing booking
+- getbooking
+- create an ocean booking
+- trackcontainer
 - get booking details
+- amendbooking
+- track shipment by booking reference
+- api
+- searchschedules
+- cancelbooking
+- cancel a booking
+- submitshippinginstructions
+- track a container by number
+- createbooking
+- search ocean vessel schedules
+- submit shipping instructions (si)
+- trackbooking
+- listbookings
+- list ocean bookings
 - e2open
 slug: e2open-capability
 source_filename: e2open-capability.yaml

@@ -41,30 +41,30 @@ personas: []
 provider_name: Mastercard Developer Hub for FDX APIs
 provider_slug: mastercard-fdx
 search_terms:
+- getclient
+- apis
+- mastercard developer hub for fdx apis get token
+- mastercard developer hub for fdx apis get client
+- fdx
+- mastercard developer hub for fdx apis client registration request
+- modifyclient
+- parauthorizedonthitcopytheurlfromcurl
+- mastercard
+- mastercard developer hub for fdx apis token introspection endpoint
+- introspectiontoken
+- for
+- registerclient
+- mastercard developer hub for fdx apis submit an authorization request
+- hub
+- mastercard developer hub for fdx apis delete client
+- gettoken
+- authorizeviaparrar
+- open banking
+- banking
 - developer
 - mastercard developer hub for fdx apis user authorization endpoint
-- for
-- mastercard developer hub for fdx apis token introspection endpoint
-- apis
-- registerclient
-- mastercard developer hub for fdx apis get client
-- parauthorizedonthitcopytheurlfromcurl
-- gettoken
-- open banking
-- fdx
-- mastercard
-- mastercard developer hub for fdx apis get token
-- mastercard developer hub for fdx apis client registration request
-- hub
-- deleteclient
-- mastercard developer hub for fdx apis delete client
-- authorizeviaparrar
-- getclient
-- introspectiontoken
-- modifyclient
-- banking
 - mastercard developer hub for fdx apis update client
-- mastercard developer hub for fdx apis submit an authorization request
+- deleteclient
 slug: mastercard-developer-hub-for-fdx-apis-capability
 source_filename: mastercard-developer-hub-for-fdx-apis-capability.yaml
 source_heading: Capability Spec

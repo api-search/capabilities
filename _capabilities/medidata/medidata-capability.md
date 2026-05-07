@@ -45,26 +45,26 @@ personas: []
 provider_name: medidata
 provider_slug: medidata
 search_terms:
+- create or update a subject
 - liststudies
-- list data queries
+- api
 - get subject details
-- listsubjects
+- listsites
+- list study sites
 - getauditrecords
 - list subjects in a study
-- getsubject
-- get clinical data (crf data) for a subject
-- listsites
-- api
-- list studies
 - medidata
-- list study sites
-- getsubjectclinicaldata
+- list data queries
+- submitclinicaldata
 - submit clinical data for a subject
 - createsubject
-- submitclinicaldata
-- create or update a subject
-- listqueries
+- getsubject
+- listsubjects
+- list studies
+- get clinical data (crf data) for a subject
+- getsubjectclinicaldata
 - get audit trail records
+- listqueries
 slug: medidata-capability
 source_filename: medidata-capability.yaml
 source_heading: Capability Spec

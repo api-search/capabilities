@@ -93,52 +93,52 @@ personas: []
 provider_name: Octoparse
 provider_slug: octoparse
 search_terms:
-- post data remove
-- octoparse taskgroup
-- octoparse taskstatus
-- post task copy
-- get taskgroup
-- post cloudextraction subtasks start
+- harvesting
 - octoparse gettoken
-- post token
-- octoparse cloudextractionstart
-- octoparse cloudextractionsubtasksstop
-- octoparse lotnoall
+- octoparse notexported
 - octoparse copy
 - octoparse movetogroup
-- octoparse search
-- octoparse remove
-- get cloudextraction task subtasks
-- post task updateactionproperties
-- get task search
-- octoparse markexported
-- octoparse updateactionproperties
-- get data all
-- octoparse cloudextractionstop
-- post cloudextraction subtasks stop
-- post task movetogroup
-- octoparse taskstatusv2
-- post task updateloopitems
-- octoparse cloudextractionsubtasksstart
+- post task copy
+- octoparse lotnoall
 - api
-- octoparse updateloopitems
-- scraping
-- octoparse updateurls
-- octoparse notexported
-- get data notexported
-- harvesting
-- octoparse subtasksstatus
-- post cloudextraction start
-- octoparse getactions
-- post cloudextraction statuses v2
-- post data markexported
-- get data lotno all
-- post task urls file
 - octoparse
+- octoparse taskstatus
 - post cloudextraction statuses
+- post task movetogroup
+- octoparse cloudextractionstart
+- octoparse cloudextractionsubtasksstart
+- post cloudextraction subtasks stop
 - octoparse all
-- post cloudextraction stop
+- octoparse markexported
 - post task getactions
+- get data lotno all
+- octoparse taskgroup
+- octoparse search
+- scraping
+- octoparse cloudextractionstop
+- get cloudextraction task subtasks
+- octoparse subtasksstatus
+- octoparse updateactionproperties
+- post data markexported
+- post cloudextraction start
+- octoparse updateloopitems
+- post data remove
+- get data notexported
+- post task updateloopitems
+- octoparse remove
+- octoparse taskstatusv2
+- post cloudextraction statuses v2
+- post task urls file
+- post cloudextraction subtasks start
+- octoparse getactions
+- post token
+- get data all
+- post cloudextraction stop
+- get task search
+- get taskgroup
+- octoparse updateurls
+- post task updateactionproperties
+- octoparse cloudextractionsubtasksstop
 slug: octoparse-capability
 source_filename: octoparse-capability.yaml
 source_heading: Capability Spec

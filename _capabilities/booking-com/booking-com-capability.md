@@ -29,19 +29,19 @@ personas: []
 provider_name: booking-com
 provider_slug: booking-com
 search_terms:
-- get car rental depots
+- getcardepots
+- get depot review scores
+- get car rental details
 - search car rentals
+- booking
+- getcarsuppliers
+- com
 - getdepotreviewscores
+- api
+- get car rental depots
+- searchcarrentals
 - getcardetails
 - get car rental suppliers
-- get depot review scores
-- api
-- get car rental details
-- getcarsuppliers
-- searchcarrentals
-- booking
-- com
-- getcardepots
 slug: booking-com-capability
 source_filename: booking-com-capability.yaml
 source_heading: Capability Spec

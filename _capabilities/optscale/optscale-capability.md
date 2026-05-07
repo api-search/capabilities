@@ -73,45 +73,45 @@ personas: []
 provider_name: OptScale
 provider_slug: optscale
 search_terms:
-- listcloudaccounts
-- get pool
-- listoptimizations
-- create an organization
-- list organizations
-- finops
-- disconnect a cloud account
 - createcloudaccount
-- create a cloud account connection
-- listpools
-- create a pool
-- cloud
-- create an authentication token
-- getcloudaccount
-- getorganization
-- createtoken
-- list pools
-- kubernetes
-- open source
-- listorganizations
-- cost optimization
-- api
+- listcloudaccounts
 - createorganization
-- deletecloudaccount
-- deleteorganization
-- list optimization recommendations
-- get cloud account
-- list cloud accounts for an organization
-- get an organization
-- getexpenses
-- delete an organization
+- finops
+- get pool
 - optscale
-- createpool
-- query expenses
-- listemployees
-- getpool
+- getexpenses
+- api
+- listorganizations
+- create a cloud account connection
+- get an organization
+- cost optimization
+- createtoken
+- deletecloudaccount
 - list cloud resources for a cloud account
 - listcloudresources
+- open source
+- create an authentication token
+- list pools
+- getcloudaccount
+- createpool
+- query expenses
+- list optimization recommendations
+- create an organization
 - list organization employees
+- kubernetes
+- listpools
+- list organizations
+- listoptimizations
+- cloud
+- listemployees
+- list cloud accounts for an organization
+- getpool
+- get cloud account
+- disconnect a cloud account
+- deleteorganization
+- getorganization
+- delete an organization
+- create a pool
 slug: optscale-capability
 source_filename: optscale-capability.yaml
 source_heading: Capability Spec

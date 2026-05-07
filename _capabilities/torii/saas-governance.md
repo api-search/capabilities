@@ -45,64 +45,64 @@ personas: []
 provider_name: Torii
 provider_slug: torii
 search_terms:
-- retrieve available field metadata for saas applications in torii.
-- provision scim user
-- list apps
-- sync custom integration
-- push user and license data from a custom application into torii for visibility.
-- list torii workflow automation execution history and status.
-- provision a new user into torii via scim 2.0 protocol.
-- deprovision (delete) a user from torii via scim 2.0.
-- discover and manage saas applications.
-- list all users in the organization with their saas app access details.
-- torii
-- sync custom app data
-- users
-- list all users and their app access.
-- get contract metadata
-- list provisioned users via scim 2.0.
-- get contract
-- update contract
-- delete scim user
-- it management
-- provision user
 - update a saas contract with new renewal date, status, or annual cost.
-- get file upload url
-- list scim users
-- update contract details including renewal date and cost.
-- retrieve admin audit log entries for compliance review.
-- saas management
-- compliance
-- list workflow executions
-- admin audit logs for compliance.
-- list workflow action execution history.
-- list all apps discovered in the organization, including shadow it.
-- cost optimization
-- saas contract management.
-- apps
-- retrieve available field metadata for contracts in torii.
-- custom app data ingestion.
-- push user and license data from a custom app into torii.
-- retrieve available field metadata for users in torii.
-- get full details of a saas contract including cost and renewal date.
-- retrieve admin audit log entries for compliance review — up to 1,000 per request.
-- user management and visibility.
-- audit
-- get app metadata
-- list users provisioned via scim 2.0 in torii.
-- get user metadata
-- discover apps
-- list users
-- workflow automation history.
-- discover all saas applications in use across the organization, including shadow it, managed apps, and closed apps.
-- get audit logs
 - governance
-- get a secure temporary s3 url for uploading files to torii.
-- scim 2.0 user provisioning.
+- provision a new user into torii via scim 2.0 protocol.
 - shadow it
 - get a specific saas contract with renewal details.
-- provision a new user via scim 2.0.
+- user management and visibility.
+- users
+- push user and license data from a custom app into torii.
+- list apps
+- list torii workflow automation execution history and status.
+- scim 2.0 user provisioning.
+- get contract
+- it management
+- retrieve admin audit log entries for compliance review.
+- workflow automation history.
 - contracts
+- cost optimization
+- update contract details including renewal date and cost.
+- get contract metadata
+- get a secure temporary s3 url for uploading files to torii.
+- provision scim user
+- compliance
+- discover and manage saas applications.
+- get app metadata
+- list all users and their app access.
+- provision user
+- update contract
+- push user and license data from a custom application into torii for visibility.
+- delete scim user
+- saas management
+- list workflow action execution history.
+- get file upload url
+- list users
+- torii
+- apps
+- retrieve available field metadata for users in torii.
+- discover apps
+- get user metadata
+- list users provisioned via scim 2.0 in torii.
+- list scim users
+- retrieve available field metadata for saas applications in torii.
+- list workflow executions
+- provision a new user via scim 2.0.
+- retrieve available field metadata for contracts in torii.
+- get audit logs
+- admin audit logs for compliance.
+- sync custom app data
+- list provisioned users via scim 2.0.
+- deprovision (delete) a user from torii via scim 2.0.
+- list all apps discovered in the organization, including shadow it.
+- custom app data ingestion.
+- list all users in the organization with their saas app access details.
+- retrieve admin audit log entries for compliance review — up to 1,000 per request.
+- sync custom integration
+- audit
+- get full details of a saas contract including cost and renewal date.
+- saas contract management.
+- discover all saas applications in use across the organization, including shadow it, managed apps, and closed apps.
 slug: saas-governance
 source_filename: saas-governance.yaml
 source_heading: Capability Spec

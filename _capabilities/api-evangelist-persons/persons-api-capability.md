@@ -33,21 +33,21 @@ personas: []
 provider_name: Persons
 provider_slug: api-evangelist-persons
 search_terms:
-- application programming interface
+- updateperson
+- persons
+- persons retrieve person
+- retrieves persons
+- persons cancel person
+- persons create person
 - persons update person
-- getperson
+- application programming interface
+- sendperson
+- persons delete person
 - api
 - createperson
-- persons cancel person
-- retrieves persons
-- persons retrieve person
-- deleteperson
-- sendperson
-- updateperson
 - getpersons
-- persons
-- persons delete person
-- persons create person
+- deleteperson
+- getperson
 slug: persons-api-capability
 source_filename: persons-api-capability.yaml
 source_heading: Capability Spec

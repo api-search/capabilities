@@ -17,37 +17,37 @@ personas: []
 provider_name: Wolfram|Alpha
 provider_slug: wolfram-alpha
 search_terms:
+- full results
+- math
+- wolfram alpha
+- compute full
+- get complete wolfram|alpha results with all pods and formats.
+- ai
+- AI Developer
+- science
+- artificial intelligence
+- computation
+- Search Engineer
+- building chatbots and voice assistants with factual answer capabilities
+- research
+- combines llm api, short answers, and spoken results for ai applications
+- Platform Developer
+- integrating wolfram computational capabilities into educational platforms
+- query wolfram|alpha and receive computational results formatted for llm consumption. includes structured text with interpretation and result data.
+- llm-optimized computational results.
+- compute full results
+- computational knowledge
+- building ai applications and llm integrations using wolfram knowledge
+- full computational results with pod-based output.
+- natural language processing
 - full and llm apis for search platforms and educational tools
 - education
-- natural language processing
-- research
-- llm-optimized computational results.
-- AI Developer
-- augmenting search platforms with computational intelligence
-- query wolfram|alpha and receive computational results formatted for llm consumption. includes structured text with interpretation and result data.
-- building chatbots and voice assistants with factual answer capabilities
-- full results
-- Platform Developer
-- compute for llm
-- Search Engineer
-- get complete wolfram|alpha computational results with all data pods. returns structured json with math, science, geography, and more.
-- computational knowledge
-- compute full
-- ai
-- artificial intelligence
-- get wolfram|alpha results formatted for llm processing.
-- full computational results with pod-based output.
-- get complete wolfram|alpha results with all pods and formats.
-- search
-- computation
-- building ai applications and llm integrations using wolfram knowledge
-- science
-- wolfram alpha
-- integrating wolfram computational capabilities into educational platforms
-- combines llm api, short answers, and spoken results for ai applications
-- math
 - Chatbot Engineer
-- compute full results
+- search
+- get wolfram|alpha results formatted for llm processing.
+- augmenting search platforms with computational intelligence
+- compute for llm
+- get complete wolfram|alpha computational results with all data pods. returns structured json with math, science, geography, and more.
 slug: computational-search
 source_filename: computational-search.yaml
 source_heading: Capability Spec

@@ -37,31 +37,31 @@ personas: []
 provider_name: Google Merchant Center
 provider_slug: google-merchant-center
 search_terms:
-- insertproductinput
-- listaccounts
-- google merchant center create promotion
-- google merchant center list accounts
-- createpromotion
-- google merchant center list promotions
-- listpromotions
-- google
-- e-commerce
-- center
-- google shopping
-- google merchant center search reports
-- inventory
-- google merchant center insert product input
-- api
-- google merchant center insert local inventory
-- promotions
 - insertlocalinventory
-- shopping
-- products
+- google merchant center create promotion
+- api
 - google merchant center get product
-- merchant center
-- getproduct
-- merchant
 - searchreports
+- createpromotion
+- merchant center
+- inventory
+- google
+- products
+- promotions
+- insertproductinput
+- getproduct
+- google merchant center list promotions
+- e-commerce
+- google merchant center search reports
+- google merchant center insert local inventory
+- google shopping
+- center
+- merchant
+- shopping
+- listaccounts
+- listpromotions
+- google merchant center list accounts
+- google merchant center insert product input
 slug: google-merchant-center-capability
 source_filename: google-merchant-center-capability.yaml
 source_heading: Capability Spec

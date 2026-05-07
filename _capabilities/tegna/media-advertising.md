@@ -45,53 +45,53 @@ personas: []
 provider_name: TEGNA
 provider_slug: tegna
 search_terms:
-- list premion ott/ctv streaming advertising campaigns.
-- audience targeting
-- campaign performance metrics.
-- media advertising
-- list ott/ctv advertising campaigns.
-- list ott inventory
 - get streaming video performance metrics (impressions, completion rate, cpcv) for a premion ott campaign.
-- list tegna broadcast markets.
-- get digital campaign performance metrics.
-- list audience segments
-- available ott/ctv advertising inventory.
-- list tegna audienceone first-party audience segments for campaign targeting.
-- get ott campaign performance
-- create a new ott/ctv streaming video advertising campaign on premion.
-- list tegna audienceone digital advertising campaigns.
-- tegna local broadcast markets.
-- ott campaign streaming performance.
-- get performance metrics for a tegna digital advertising campaign.
-- list audiences
-- list digital advertising campaigns.
-- list campaigns
-- browse available ott inventory.
-- list ott campaigns
-- list tegna local tv broadcast markets available for campaign targeting.
-- list markets
-- television
-- create a digital advertising campaign.
-- get campaign performance
 - premion ott/ctv advertising campaigns.
-- list broadcast markets
-- media
-- create ott campaign
-- tegna
-- fortune 500
-- ott
+- list tegna broadcast markets.
+- get performance metrics for a tegna digital advertising campaign.
 - tegna digital advertising campaigns.
-- broadcasting
-- create campaign
-- get ott/ctv campaign streaming performance.
-- list digital campaigns
-- create an ott/ctv advertising campaign.
-- ctv
-- browse available ott/ctv ad inventory across roku, hulu, fire tv, and other streaming platforms.
+- list ott/ctv advertising campaigns.
+- tegna
 - list available audience segments for campaign targeting.
-- digital advertising
-- tegna first-party audience segments for targeting.
 - get digital campaign performance
+- list audiences
+- ott campaign streaming performance.
+- tegna local broadcast markets.
+- get ott/ctv campaign streaming performance.
+- browse available ott/ctv ad inventory across roku, hulu, fire tv, and other streaming platforms.
+- digital advertising
+- list tegna audienceone first-party audience segments for campaign targeting.
+- media advertising
+- list campaigns
+- create an ott/ctv advertising campaign.
+- list premion ott/ctv streaming advertising campaigns.
+- list ott inventory
+- get campaign performance
+- list markets
+- browse available ott inventory.
+- available ott/ctv advertising inventory.
+- list ott campaigns
+- ctv
+- television
+- list digital advertising campaigns.
+- list tegna audienceone digital advertising campaigns.
+- create ott campaign
+- list digital campaigns
+- list audience segments
+- media
+- campaign performance metrics.
+- ott
+- get ott campaign performance
+- create campaign
+- list broadcast markets
+- list tegna local tv broadcast markets available for campaign targeting.
+- create a new ott/ctv streaming video advertising campaign on premion.
+- audience targeting
+- broadcasting
+- create a digital advertising campaign.
+- fortune 500
+- tegna first-party audience segments for targeting.
+- get digital campaign performance metrics.
 slug: media-advertising
 source_filename: media-advertising.yaml
 source_heading: Capability Spec

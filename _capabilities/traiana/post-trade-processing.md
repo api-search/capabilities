@@ -61,66 +61,66 @@ personas: []
 provider_name: Traiana
 provider_slug: traiana
 search_terms:
-- credit limit management and monitoring.
-- list netting sessions.
 - foreign exchange
 - list trades processed through the harmony network with filtering by asset class and status.
-- confirm trade
-- list settlement instructions.
-- create an intraday netting session to reduce bilateral settlement obligations.
-- get trade
-- initiate a trade compression run to reduce notional exposure and counterparty count.
+- post-trade processing
 - submit a trade for post-trade processing.
+- submit trade
+- list settlement instructions for payment and delivery scheduling.
+- trade matching
+- credit limit management and monitoring.
+- list netting sessions
+- list allocations
+- get credit utilization
+- settlement
+- list netting sessions.
+- create an intraday netting session to reduce bilateral settlement obligations.
+- list match results
+- list trade matching results.
+- current credit utilization.
+- get current credit utilization.
+- trade compression
 - fintech
-- list trades
-- submit a trade allocation.
-- list trades processed through the harmony network.
 - credit risk
 - settlement instruction management.
-- risk management
-- trade compression runs.
-- create a netting session.
-- settlement
-- list compression runs
-- intraday netting sessions.
-- list trade matching results to monitor confirmation status.
-- submit a new trade for post-trade processing through the harmony network.
-- get current credit utilization showing available headroom across all counterparties.
-- trade submission and lifecycle management.
-- list credit limits
-- confirm a matched trade to complete the confirmation workflow.
-- list match results
-- list credit breaches
-- submit trade
-- create credit limit
 - list compression runs.
-- post-trade processing
+- submit allocation
+- list all credit limits across prime-brokered, cleared, and bilateral counterparty relationships.
+- list credit limits
+- trade matching results.
+- create credit limit
+- create a new compression run.
 - create compression run
-- list trade allocations.
-- list settlement instructions for payment and delivery scheduling.
 - get details of a specific trade including its matching status and lifecycle state.
-- list credit limits.
+- confirm a matched trade to complete the confirmation workflow.
+- confirm trade
 - list credit limit breach events for risk oversight.
 - get results of a completed netting session showing net positions and settlement obligations.
-- get current credit utilization.
-- list netting sessions
-- list settlements
-- list trade allocations for block trade splitting and reporting.
-- list trade matching results.
-- get credit utilization
-- trade compression
-- create a new compression run.
+- list credit breaches
 - netting
-- trade allocation management.
-- trade matching
-- list allocations
-- create a new credit limit.
-- submit allocation
-- create netting session
-- list all credit limits across prime-brokered, cleared, and bilateral counterparty relationships.
+- list trade matching results to monitor confirmation status.
 - get netting results
-- trade matching results.
-- current credit utilization.
+- list trade allocations for block trade splitting and reporting.
+- create netting session
+- list trades
+- intraday netting sessions.
+- trade submission and lifecycle management.
+- get trade
+- list settlements
+- list settlement instructions.
+- list compression runs
+- create a new credit limit.
+- create a netting session.
+- initiate a trade compression run to reduce notional exposure and counterparty count.
+- submit a trade allocation.
+- list trade allocations.
+- trade compression runs.
+- submit a new trade for post-trade processing through the harmony network.
+- risk management
+- trade allocation management.
+- list trades processed through the harmony network.
+- list credit limits.
+- get current credit utilization showing available headroom across all counterparties.
 slug: post-trade-processing
 source_filename: post-trade-processing.yaml
 source_heading: Capability Spec

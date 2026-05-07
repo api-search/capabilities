@@ -45,33 +45,33 @@ personas: []
 provider_name: Oracle Transportation Management
 provider_slug: oracle-transportation-management
 search_terms:
+- listlocations
 - logistics
-- delete a shipment order
-- create a shipment order
-- update a shipment order
-- createshipmentorder
-- list locations
 - updateshipmentorder
-- listrates
-- freight
-- supply chain
-- transportation
-- oracle
 - global trade
-- getcarrier
-- shipping
 - api
+- getcarrier
+- supply chain
+- freight
+- createshipmentorder
+- deleteshipmentorder
+- update a shipment order
 - listcarriers
 - list carriers
-- get a carrier
-- deleteshipmentorder
-- listlocations
-- list shipment orders
-- listshipmentorders
-- management
-- list rate records
-- getshipmentorder
 - get a shipment order
+- list rate records
+- create a shipment order
+- transportation
+- management
+- listrates
+- getshipmentorder
+- list shipment orders
+- get a carrier
+- delete a shipment order
+- listshipmentorders
+- list locations
+- shipping
+- oracle
 slug: oracle-transportation-management-capability
 source_filename: oracle-transportation-management-capability.yaml
 source_heading: Capability Spec

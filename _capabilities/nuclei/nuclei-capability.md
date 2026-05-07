@@ -249,133 +249,133 @@ personas: []
 provider_name: Nuclei
 provider_slug: nuclei
 search_terms:
-- get all vulnerability changelogs
-- get billing assets details
-- confirm domain verification
-- patch v1 user notification preference
-- patch v1 scans scan id
-- get scan vulnerability
-- get v1 scans result scanid
-- delete v1 user
-- get promocode details
-- post v1 user promocode
-- delete v1 user domain verification request
+- get v1 results
+- create retest
+- get all scan stats
+- get v1 assets
 - import oss scan
-- get scan
-- get v1 user notification preference
+- api
+- get v1 scans vuln vuln id changelogs
+- search templates
+- get v1 retest
+- get v1 scans vuln changelogs
+- get all results
+- post v1 user apikey rotate
+- post v1 admin scan token
+- create scan
+- post v1 scans schedule
+- patch v1 user notification preference
+- delete v1 scans
+- post v1 user domain verification request
+- set scan token for user
+- request domain delete
+- get v1 admin user search
+- post v1 scans
+- delete scan
 - get billing assets for a user
+- update asset metadata
+- search user by name or email
+- get scans result filters
+- delete v1 assets asset id
+- get domain verification status
+- delete v1 scans schedule
+- get v1 assets assetid
+- get v1 scans scan id
+- post v1 scans scan id rescan
+- get promocode details
+- post v1 scans vuln id retest
+- post v1 scans scan id stop
+- get all retest
+- get all vulnerability changelogs
+- get scan vulnerability
+- delete asset
+- post v1 retest
+- get retest vulnerability
+- delete scan schedule
+- patch v1 assets asset id
+- post v1 scans import
+- get token usage (admin)
+- get api key
+- patch v1 assets asset id contents
+- delete v1 user domain verification request
+- get asset metadata
+- post v1 user promocode
+- security testing
+- set scan schedule
+- update scan
+- patch v1 admin scan token
+- stop scan
+- retest vulnerability
+- get v1 retest vuln id
+- post v1 user feedback
+- patch v1 scans scan id
+- get v1 scans
+- get v1 admin user audit logs
+- get scan schedules
+- get vulnerability changelogs
+- post v1 user delete code
+- get v1 user promocode
+- get v1 scans stats
+- get asset content
+- change owner for a team (new owner will take control of the existing owner's subscription)
+- get v1 template public
+- create feedback
+- create api key
+- rescan scan
+- patch v2 template user upload
 - delete api key
 - update scan token for user
-- get user profile
-- api
-- delete v1 scans
-- get v1 admin user search
-- get results stats
-- search user by name or email
-- post v1 scans scan id rescan
-- get v1 scans vuln vulnid
-- delete v1 scans schedule
-- get v1 user setup stats
-- update scan
+- get v1 scans result scanid
 - get user notification preferences
-- bulk update user template
-- patch v1 assets asset id
-- rotate api key
-- post v1 assets
-- get scan schedules
-- get scans result filters
-- get v1 results
-- update asset content
-- upload asset
-- get api key
-- set scan schedule
-- update asset metadata
-- get v2 template search
-- get v1 scans vuln vuln id changelogs
-- create scan
-- delete v1 user apikey
-- open source
-- delete v1 scans scan id
-- get v1 retest vuln id
-- request domain verification
-- get asset list
-- get v1 user billing assets
-- post v1 user apikey rotate
-- get v1 assets assetid
-- get v1 user apikey
-- apply promocode
-- post v1 user feedback
-- request domain delete
-- post v1 scans scan id stop
-- nuclei
-- get scan list
-- post v1 retest
-- get token usage (admin)
-- get vulnerability changelogs
-- get v1 scans results filters
 - email user deletion verification code
-- get public template list
-- get all retest
-- get v1 template public
-- get domain verification status
 - get user setup statistics
-- patch v2 template user upload
-- get v1 scans scan id
-- post v1 user domain verification request
-- post v1 scans vuln id retest
-- get v1 scans results stats
-- post v1 scans
-- get all results
-- post v1 scans schedule
-- get retest vulnerability
-- patch v1 admin scan token
-- create api key
-- get scan results
-- get v1 admin user billing assets
+- get scan list
+- get v1 user setup stats
 - dast
-- post v1 admin scan token
-- get audit logs for a user
-- delete scan
-- testing
-- get all scan stats
-- post v1 user apikey
-- post v2 template user upload
+- apply promocode
 - vulnerability scanner
-- get v1 assets
-- get v1 scans vuln changelogs
-- delete scan schedule
-- get v1 user promocode
-- get v1 assets id contents
-- create retest
-- get v1 scans
-- upload templates
-- post v1 scans import
-- get v1 user domain verification status
-- search templates
-- security testing
+- confirm domain verification
+- nuclei
+- get public template list
+- get v1 scans results stats
+- upload asset
+- post v1 user apikey
+- get results stats
+- delete v1 user apikey
+- rotate api key
+- get audit logs for a user
+- bulk update user template
+- get v1 admin user billing assets
 - get v1 user
-- retest vulnerability
-- delete scan in bulk
-- change owner for a team (new owner will take control of the existing owner's subscription)
-- delete asset
-- update user notification preferences
-- delete user from system along with all data
-- stop scan
-- get asset metadata
-- get v1 admin user audit logs
-- get v1 scans stats
+- get asset list
+- get scan results
+- get v1 user billing assets
+- testing
+- get billing assets details
+- request domain verification
 - post v1 user domain verification confirm
-- get v1 admin scan token
-- get v1 scans schedule
-- patch v1 assets asset id contents
-- delete v1 assets asset id
-- create feedback
-- get v1 retest
-- post v1 user delete code
-- rescan scan
-- set scan token for user
+- get scan
+- open source
+- get v1 scans results filters
+- post v1 assets
+- get v1 user notification preference
+- delete scan in bulk
 - post v1 admin team change owner
-- get asset content
+- get v2 template search
+- get user profile
+- update user notification preferences
+- get v1 scans schedule
+- update asset content
+- get v1 user apikey
+- get v1 assets id contents
+- get v1 scans vuln vulnid
+- upload templates
+- delete user from system along with all data
+- delete v1 user
+- delete v1 scans scan id
+- get v1 user domain verification status
+- get v1 admin scan token
+- post v2 template user upload
 slug: nuclei-capability
 source_filename: nuclei-capability.yaml
 source_heading: Capability Spec

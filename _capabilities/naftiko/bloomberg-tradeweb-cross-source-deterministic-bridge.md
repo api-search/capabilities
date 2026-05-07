@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- tradeweb
-- mcp
-- bloomberg
 - get cross source
-- api integration
 - governance
-- spec-driven integration
+- bloomberg
 - get liquidity
+- tradeweb
 - ai
-- bridge
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
 - get valuations
+- bridge
+- naftiko
 slug: bloomberg-tradeweb-cross-source-deterministic-bridge
 source_filename: bloomberg-tradeweb-cross-source-deterministic-bridge.yaml
 source_heading: Capability Spec

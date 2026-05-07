@@ -73,61 +73,61 @@ personas: []
 provider_name: Postman
 provider_slug: postman
 search_terms:
-- postman create an api
-- postman create an api schema
-- environments
-- network
+- getapischema
+- postman get an api schema
 - postman update an api
 - createapicomment
-- getapischemafiles
-- postman get api schema files
-- deleteapi
-- postman get an api
-- postman update an api version
-- deleteapiversion
-- workspaces
-- postman create an api comment
-- collaboration
-- getapischemas
-- getapiversions
-- api development
-- getallapis
-- postman delete an api
-- postman create an api version
-- createapi
-- api monitoring
-- postman get an api schema
-- postman get all api versions
-- collections
-- mcp
-- postman get all apis
-- postman get all api schemas
-- postman get an api version
-- api governance
-- mocking
-- postman
-- api documentation
-- getapiversion
-- getapischema
-- api
-- discovery
-- mock servers
-- createapischema
-- workflows
-- postman get api comments
-- createapiversion
-- client
 - testing
-- getapicomments
-- postman delete an api version
-- platform
-- api testing
-- ai agent builder
-- updateapiversion
-- getapi
-- clients
-- updateapi
 - automation
+- getapiversions
+- getapischemas
+- mocking
+- api
+- platform
+- postman create an api version
+- postman
+- mcp
+- createapi
+- environments
+- api development
+- mock servers
+- postman create an api
+- updateapiversion
+- postman create an api schema
+- postman get all api versions
+- postman create an api comment
+- postman get api schema files
+- getapiversion
+- ai agent builder
+- api governance
+- getapicomments
+- clients
+- createapiversion
+- collaboration
+- postman delete an api version
+- postman delete an api
+- postman get api comments
+- createapischema
+- deleteapiversion
+- discovery
+- postman update an api version
+- getallapis
+- getapi
+- postman get an api
+- updateapi
+- network
+- postman get an api version
+- deleteapi
+- collections
+- workflows
+- workspaces
+- client
+- postman get all api schemas
+- api monitoring
+- getapischemafiles
+- api documentation
+- postman get all apis
+- api testing
 slug: postman-capability
 source_filename: postman-capability.yaml
 source_heading: Capability Spec

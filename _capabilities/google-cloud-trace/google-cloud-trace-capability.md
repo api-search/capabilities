@@ -29,26 +29,26 @@ personas: []
 provider_name: Google Cloud Trace
 provider_slug: google-cloud-trace
 search_terms:
+- createspan
+- distributed tracing
+- api
+- trace
+- google cloud trace create span
+- google
+- google cloud trace list traces
+- latency
+- observability
+- batchwritespans
+- google cloud trace batch write spans
+- spans
+- gettrace
+- cloud
+- google cloud trace get trace
+- listtraces
 - patchtraces
 - tracing
-- google cloud trace list traces
-- google cloud trace create span
-- cloud
-- google cloud trace batch write spans
-- google
-- spans
-- api
-- observability
-- google cloud trace patch traces
-- gettrace
-- trace
 - performance
-- google cloud trace get trace
-- createspan
-- listtraces
-- latency
-- distributed tracing
-- batchwritespans
+- google cloud trace patch traces
 - google cloud
 slug: google-cloud-trace-capability
 source_filename: google-cloud-trace-capability.yaml

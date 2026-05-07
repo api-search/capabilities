@@ -37,61 +37,61 @@ personas: []
 provider_name: TM Forum
 provider_slug: tm-forum
 search_terms:
-- customer-reported issue lifecycle from ticket creation to resolution
-- create catalog category
-- product, service, and resource catalog management
-- customer and party lifecycle management
-- list product catalog categories
-- create product order
-- product orders
-- end-to-end flow from product catalog through ordering to billing
-- unified party/customer data management across bss systems
-- trouble ticket and incident management
-- product, service, and resource ordering
-- create a new product order
-- tm forum
-- retrieve a specific product catalog category
-- Support Agent
-- network operations center engineer managing network incidents
-- product, service, and resource inventory
-- oss
-- get product order
-- product inventory
-- list product orders
-- CRM Admin
+- retrieve a specific product order by id
+- handles customer trouble tickets and incident resolution
+- list catalog categories
 - create a product catalog category
-- manages customer and party master data across systems
-- list product offerings from the catalog
-- product catalog categories
+- individual product order
+- product inventory
+- open apis
+- get product order
+- create product offering
+- product catalog
+- Order Manager
+- NOC Engineer
+- Master Data Manager
 - telco
 - standards
-- bss
-- BSS Architect
-- open apis
-- retrieve a specific product order
 - get product offering
-- telecommunications
-- NOC Engineer
-- list catalog categories
-- create a new product catalog category
-- designs and implements bss systems using tm forum open apis
-- manages product ordering and fulfillment workflows
-- submit a new product order
-- retrieve a specific product order by id
-- get catalog category
-- Order Manager
-- product offerings
-- list product offerings
-- list product catalog categories from tmf620
-- individual product order
-- Master Data Manager
-- create product offering
-- list product orders from tmf622
-- product ordering
-- product catalog
-- handles customer trouble tickets and incident resolution
 - retrieve a specific product offering
+- product, service, and resource catalog management
+- create product order
+- list product offerings
+- product catalog categories
+- telecommunications
+- list product offerings from the catalog
+- tm forum
+- retrieve a specific product catalog category
+- manages product ordering and fulfillment workflows
+- list product catalog categories from tmf620
+- BSS Architect
+- customer and party lifecycle management
+- product ordering
+- list product orders
+- Support Agent
+- retrieve a specific product order
+- designs and implements bss systems using tm forum open apis
+- create a new product catalog category
+- product, service, and resource inventory
+- trouble ticket and incident management
+- manages customer and party master data across systems
+- end-to-end flow from product catalog through ordering to billing
+- unified party/customer data management across bss systems
+- submit a new product order
+- bss
+- product, service, and resource ordering
+- CRM Admin
+- list product catalog categories
+- product orders
+- customer-reported issue lifecycle from ticket creation to resolution
 - create a product offering
+- list product orders from tmf622
+- oss
+- product offerings
+- create a new product order
+- get catalog category
+- network operations center engineer managing network incidents
+- create catalog category
 slug: product-to-cash
 source_filename: product-to-cash.yaml
 source_heading: Capability Spec

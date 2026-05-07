@@ -77,50 +77,50 @@ personas: []
 provider_name: Harness Cloud Cost Management
 provider_slug: harness-cloud-cost
 search_terms:
+- delete a budget
+- list cost recommendations
+- getbudget
+- deleteperspective
+- getperspective
+- api
+- getanomaly
+- harness
+- updateperspective
+- create a perspective
+- createbudget
+- createperspective
+- getrecommendation
+- create a budget
+- create a cost category
+- listconnectors
+- list perspectives
+- kubernetes
+- listbudgets
+- get an anomaly
+- listrecommendations
+- get a budget
+- list connectors
+- createcostcategory
+- list anomalies
+- anomaly detection
+- updatebudget
+- list cost categories
+- cloud
+- listperspectives
+- cost
+- list budgets
+- listcostcategories
+- recommendations
+- update a perspective
+- update a budget
+- cloud cost management
+- budgets
 - deletebudget
 - get a perspective
-- getbudget
-- list connectors
-- list perspectives
-- cost
-- createperspective
-- listcostcategories
-- finops
-- createcostcategory
-- budgets
-- create a cost category
-- get a recommendation
-- listrecommendations
-- delete a budget
-- getperspective
-- cloud
-- get a budget
-- updateperspective
-- kubernetes
 - delete a perspective
-- list cost recommendations
+- get a recommendation
 - listanomalies
-- getanomaly
-- list cost categories
-- update a budget
-- list anomalies
-- harness
-- create a perspective
-- getrecommendation
-- api
-- createbudget
-- create a budget
-- update a perspective
-- listperspectives
-- cloud cost management
-- deleteperspective
-- updatebudget
-- get an anomaly
-- list budgets
-- listbudgets
-- recommendations
-- listconnectors
-- anomaly detection
+- finops
 slug: harness-cloud-cost-capability
 source_filename: harness-cloud-cost-capability.yaml
 source_heading: Capability Spec

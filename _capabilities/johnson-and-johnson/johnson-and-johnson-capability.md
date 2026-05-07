@@ -21,20 +21,20 @@ personas: []
 provider_name: Johnson & Johnson
 provider_slug: johnson-and-johnson
 search_terms:
-- pharmaceuticals
-- medical devices
+- blood glucose
+- api
+- listglucosereadings
+- listpatients
+- list patients
+- johnson
+- and
+- diabetes
 - listdevices
 - healthcare
-- listglucosereadings
-- diabetes
-- blood glucose
-- list devices
-- api
-- and
-- johnson
-- list patients
+- medical devices
 - list glucose readings
-- listpatients
+- list devices
+- pharmaceuticals
 slug: johnson-and-johnson-capability
 source_filename: johnson-and-johnson-capability.yaml
 source_heading: Capability Spec

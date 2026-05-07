@@ -249,128 +249,128 @@ personas: []
 provider_name: Moesif
 provider_slug: moesif
 search_terms:
-- update users in batch
-- getcompanysubscriptions
-- create a new moesif price
-- get property mapping for companies
-- get property mapping for events request body
-- getworkspacetoken
-- get billingreports' values for a given meter and time range for a single company or all companies
-- delete sample rate for a cohort
-- analytics
-- get a moesif price
-- get billing meter by id
-- delete billing meter by id
-- insights
-- getcohorts
-- countevents
-- listmoesifplans
-- getsubscription
-- createsubscription
-- list all moesif plans
-- get a public workspace
-- monetization
-- copy dashboard
-- updateapp
-- api
-- get new workspace token
-- deletemoesifplan
-- search usermetrics/users
-- createbalancetransaction
-- batchcreatesubscriptions
-- get the subscriptions of a company
-- batchupdateusers
-- getmoesifplan
-- count companies
-- getuser
-- getevent
-- copy all dashboards
-- getmoesifprice
-- create new cohort
-- deleteuser
-- update companies in batch
-- get a dashboard
-- searchcompanymetrics
-- getmeter
-- updatecompanies
-- create new dashboard
-- count events
-- search events
-- update a cohort
-- search companymetrics/companies
 - addapp
-- get an event
-- deletemeter
-- createcohort
-- delete cohort
-- getbillingreportsmetrics
-- countcompanies
-- getpublicworkspace
-- listmeters
-- gets apps
-- get property mapping for events
-- create or update subscriptions in batch
-- get property mapping for users
-- create or update a subscription
-- get a moesif plan
-- createmoesifprice
-- updatemoesifprice
-- getcohort
-- get property mapping for usermetrics
-- search events in saved public workspace
-- searchevents
-- getproperties
-- delete apps
-- delete a moesif price
-- get cohorts
-- get property mapping for events response body
 - post billingreports balance transactions
-- deleteapp
-- update a moesif plan
-- update a company
-- copydashboard
-- searchpublicworkspaces
-- getrequestbodyproperties
-- deletemoesifprice
-- get property mapping for companymetrics
-- delete a dashboard
-- update apps
-- list billing meters
-- getdashboards
-- create a new moesif plan
-- listmoesifprices
-- getresponsebodyproperties
-- getapps
-- copyalldashboards
-- delete a company
-- createdashboard
-- delete a moesif plan
-- get billingreports
-- create a new app
-- searchusermetrics
-- getcompany
-- delete a user
-- get cohort
-- batchupdatecompanies
-- count users
-- createmoesifplan
-- deletecompany
 - updateusers
-- deletecohort
-- deletedashboards
-- getbillingreports
-- moesif
-- get a subscription
-- updatemoesifplan
-- updatecohort
-- get a company
-- countusers
-- platform
-- get a user
-- list all moesif prices for a specific plan
+- get new workspace token
+- deletemoesifprice
+- listmoesifprices
+- api
+- createsubscription
+- get billingreports' values for a given meter and time range for a single company or all companies
+- delete a user
+- copy dashboard
+- getevent
+- get a moesif price
+- searchcompanymetrics
+- update a moesif plan
+- deleteuser
+- getrequestbodyproperties
+- get billingreports
+- listmoesifplans
+- update users in batch
 - deletecohortsamplerate
+- delete sample rate for a cohort
+- getbillingreports
 - update a user
+- updatemoesifprice
+- getmoesifprice
+- delete apps
+- createmoesifplan
 - update a moesif price
+- get a public workspace
+- get property mapping for events request body
+- copy all dashboards
+- getproperties
+- searchpublicworkspaces
+- list all moesif prices for a specific plan
+- get a dashboard
+- count companies
+- create a new moesif price
+- delete billing meter by id
+- getcohorts
+- get a company
+- updatemoesifplan
+- batchupdateusers
+- get a user
+- updatecohort
+- getsubscription
+- countevents
+- getcohort
+- deletecompany
+- get property mapping for events
+- create a new app
+- createmoesifprice
+- copydashboard
+- search companymetrics/companies
+- monetization
+- get a subscription
+- countusers
+- delete a moesif price
+- batchcreatesubscriptions
+- list billing meters
+- count events
+- count users
+- searchevents
+- gets apps
+- get a moesif plan
+- delete cohort
+- create a new moesif plan
+- get an event
+- platform
+- getresponsebodyproperties
+- search events
+- getmoesifplan
+- get property mapping for usermetrics
+- get cohorts
+- batchupdatecompanies
+- create or update a subscription
+- createbalancetransaction
+- update apps
+- getdashboards
+- delete a moesif plan
+- getbillingreportsmetrics
+- create new dashboard
+- list all moesif plans
+- get billing meter by id
+- get property mapping for users
+- create new cohort
+- search events in saved public workspace
+- createdashboard
+- getworkspacetoken
+- createcohort
+- deletemoesifplan
+- analytics
+- listmeters
+- updatecompanies
+- get property mapping for companies
+- deletedashboards
+- get cohort
+- get property mapping for events response body
+- getmeter
+- delete a dashboard
+- update a company
+- getuser
+- insights
+- update a cohort
+- updateapp
+- search usermetrics/users
+- deletemeter
+- countcompanies
+- getapps
+- deleteapp
+- get the subscriptions of a company
+- delete a company
+- getcompanysubscriptions
+- moesif
+- searchusermetrics
+- deletecohort
+- getpublicworkspace
+- update companies in batch
+- copyalldashboards
+- get property mapping for companymetrics
+- getcompany
+- create or update subscriptions in batch
 slug: moesif-capability
 source_filename: moesif-capability.yaml
 source_heading: Capability Spec

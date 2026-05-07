@@ -41,34 +41,34 @@ personas: []
 provider_name: J.B. Hunt Transport Services
 provider_slug: jb-hunt-transport-services
 search_terms:
-- upload document
-- hunt
 - logistics
-- request quote
-- services
-- intermodal
-- getorder
-- search orders
-- create appointment
-- createquote
-- uploaddocument
-- trackshipment
-- freight
-- createorder
-- supply chain
 - track shipment
+- uploaddocument
+- hunt
+- create order
+- api
+- request quote
+- supply chain
+- createorder
+- freight
+- services
+- searchorders
+- getorder
+- upload document
+- get documents
 - transportation
+- trucking
+- createquote
+- jb
+- create appointment
+- trackshipment
+- get order details
+- transport
+- intermodal
 - shipping
 - createappointment
-- api
-- get documents
-- jb
-- get order details
+- search orders
 - getdocuments
-- searchorders
-- create order
-- transport
-- trucking
 slug: jb-hunt-transport-services-capability
 source_filename: jb-hunt-transport-services-capability.yaml
 source_heading: Capability Spec

@@ -249,130 +249,130 @@ personas: []
 provider_name: Apideck
 provider_slug: apideck
 search_terms:
-- invoicesall
-- apideck delete ledger account
-- apideck create supplier
-- journalentriesall
-- creditnotesone
-- customersall
-- apideck get payment
-- taxratesone
-- apideck get ledger account
-- invoicesdelete
-- invoiceitemsone
-- apideck create tax rate
-- apideck create ledger account
-- apideck list invoice items
-- apideck update invoice item
-- creditnotesall
-- journalentriesone
-- journalentriesdelete
-- invoicesupdate
-- api
-- apideck delete invoice item
-- suppliersone
-- apideck delete journal entry
-- refundsdelete
-- apideck update customer
-- apideck get credit note
-- apideck delete credit note
-- apideck get invoice
-- purchaseordersall
-- suppliersadd
-- customersone
-- apideck create journal entry
-- apideck delete supplier
-- paymentsone
-- paymentsdelete
-- customersupdate
-- paymentsall
-- apideck update journal entry
-- apideck update refund
-- taxratesdelete
-- apideck update bill
-- apideck
-- refundsone
-- billsdelete
-- apideck list payments
-- apideck create credit note
-- customersadd
-- apideck delete customer
-- apideck list purchase orders
-- apideck update payment
-- suppliersupdate
-- ledgeraccountsadd
-- apideck update credit note
-- invoiceitemsadd
-- suppliersdelete
-- apideck list refunds
-- apideck list credit notes
-- apideck get invoice item
-- customersdelete
-- ledgeraccountsall
-- refundsadd
-- apideck create payment
-- taxratesadd
-- paymentsadd
-- apideck get supplier
-- apideck get journal entry
-- ledgeraccountsdelete
-- apideck update supplier
 - companiesall
-- invoiceitemsupdate
-- invoiceitemsall
-- apideck get bill
-- unified api
-- billsadd
-- billsupdate
-- apideck list invoices
-- suppliersall
-- ledgeraccountsupdate
-- integrations
-- apideck update ledger account
-- apideck list suppliers
-- journalentriesupdate
-- invoicesadd
-- apideck list ledger accounts
-- billsall
-- apideck create invoice
-- creditnotesdelete
-- creditnotesadd
-- taxratesall
-- apideck delete bill
-- invoiceitemsdelete
-- apideck create customer
-- refundsupdate
-- apideck get profit and loss
-- apideck delete invoice
-- apideck get company info
-- apideck delete refund
-- apideck delete payment
-- apideck get refund
-- profitandlossone
-- apideck get tax rate
-- refundsall
-- apideck create refund
-- apideck list tax rates
-- apideck list customers
-- apideck create bill
-- apideck get customer
-- apideck get balancesheet
-- apideck update invoice
-- invoicesone
-- apideck create invoice item
-- apideck update tax rate
-- apideck list journal entries
-- ledgeraccountsone
-- companyinfoone
-- apideck delete tax rate
-- journalentriesadd
-- taxratesupdate
-- paymentsupdate
-- creditnotesupdate
-- apideck list bills
-- balancesheetone
-- billsone
 - apideck list companies
+- billsall
+- suppliersdelete
+- apideck update refund
+- apideck create journal entry
+- apideck update ledger account
+- ledgeraccountsupdate
+- apideck get payment
+- api
+- ledgeraccountsadd
+- apideck get invoice item
+- companyinfoone
+- refundsupdate
+- apideck get journal entry
+- apideck delete invoice
+- paymentsupdate
+- apideck create customer
+- balancesheetone
+- apideck delete journal entry
+- apideck delete tax rate
+- apideck get credit note
+- customersall
+- billsupdate
+- invoiceitemsone
+- apideck create refund
+- apideck create ledger account
+- apideck update payment
+- refundsadd
+- billsone
+- integrations
+- billsadd
+- apideck create invoice item
+- apideck update customer
+- invoicesall
+- apideck delete customer
+- paymentsdelete
+- apideck list credit notes
+- ledgeraccountsdelete
+- apideck list suppliers
+- apideck delete refund
+- apideck update invoice item
+- apideck update invoice
+- customersupdate
+- apideck get balancesheet
+- apideck list tax rates
+- apideck list payments
+- taxratesdelete
+- apideck list bills
+- apideck list purchase orders
+- apideck create payment
+- suppliersupdate
+- journalentriesdelete
+- customersone
+- purchaseordersall
+- apideck get profit and loss
+- apideck get tax rate
+- apideck delete ledger account
+- suppliersadd
+- apideck create tax rate
+- creditnotesadd
+- ledgeraccountsall
+- paymentsone
+- journalentriesadd
+- apideck delete supplier
+- apideck get company info
+- unified api
+- apideck list ledger accounts
+- suppliersone
+- apideck create credit note
+- journalentriesone
+- apideck create bill
+- apideck create supplier
+- invoicesdelete
+- taxratesupdate
+- apideck delete bill
+- apideck list invoice items
+- refundsdelete
+- apideck create invoice
+- apideck update journal entry
+- journalentriesupdate
+- creditnotesall
+- paymentsall
+- apideck get supplier
+- apideck update credit note
+- apideck delete credit note
+- ledgeraccountsone
+- apideck list invoices
+- invoiceitemsadd
+- journalentriesall
+- invoicesupdate
+- paymentsadd
+- refundsall
+- invoiceitemsdelete
+- apideck delete invoice item
+- apideck update bill
+- apideck update supplier
+- refundsone
+- apideck get refund
+- creditnotesupdate
+- profitandlossone
+- apideck list journal entries
+- apideck list refunds
+- customersdelete
+- apideck
+- creditnotesone
+- customersadd
+- invoiceitemsupdate
+- invoicesone
+- suppliersall
+- apideck list customers
+- taxratesone
+- invoicesadd
+- apideck get bill
+- apideck get ledger account
+- apideck get customer
+- apideck get invoice
+- apideck delete payment
+- billsdelete
+- apideck update tax rate
+- taxratesall
+- creditnotesdelete
+- invoiceitemsall
+- taxratesadd
 slug: apideck-capability
 source_filename: apideck-capability.yaml
 source_heading: Capability Spec

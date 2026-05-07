@@ -65,68 +65,68 @@ personas: []
 provider_name: Rundeck
 provider_slug: rundeck
 search_terms:
-- get project details
-- get job
-- list jobs
-- get the status and details of a rundeck job execution - use to poll for completion
-- abort execution
-- create a new project
-- get details for a specific rundeck project
-- abort a running rundeck execution
-- workflow
-- system information
 - devops
-- trigger a rundeck job execution with optional arguments and node filter
 - rundeck
-- node management per project
-- list project nodes
-- get execution mode
-- job scheduling
-- get system info
-- list nodes
-- api token management
-- execution mode management
-- list api tokens
-- retrieve log output from a completed or running rundeck execution
-- get rundeck server info
-- get execution status and details
 - get execution output
-- list tokens
-- get the definition and configuration of a specific rundeck job
-- check whether rundeck is in active or passive execution mode
-- list all rundeck projects
-- project management
-- create project
-- it operations
-- list all rundeck automation projects
-- open source
-- abort running executions
-- get execution log output
-- individual project management
-- list job executions
-- orchestration
-- execution log output
-- individual job management
-- run job
 - runbook
-- list execution history for a specific job with optional status filter
-- get rundeck server system information including version and uptime
-- list nodes available in a rundeck project with optional node filter
-- get project
-- get job definition
-- list projects
-- trigger a job execution
+- automation
 - abort a running execution
-- get execution
-- list automation jobs in a rundeck project, optionally filtered by name or group
-- get current execution mode
-- job management within a project
+- system information
+- get job
+- individual project management
+- list tokens
+- api token management
+- abort running executions
+- open source
+- job scheduling
+- it operations
+- list all jobs in a project
+- list execution history for a job
+- get execution mode
+- project management
+- orchestration
 - execution status and management
 - list api tokens for the current user or all users (admin)
-- list all jobs in a project
+- execution mode management
+- list execution history for a specific job with optional status filter
+- get system info
+- create project
+- list projects
+- node management per project
+- get current execution mode
+- get execution
+- retrieve log output from a completed or running rundeck execution
+- run job
+- list all rundeck projects
+- workflow
+- create a new project
+- get execution status and details
+- list automation jobs in a rundeck project, optionally filtered by name or group
+- list all rundeck automation projects
+- list project nodes
+- get rundeck server info
+- get the status and details of a rundeck job execution - use to poll for completion
+- get project details
+- check whether rundeck is in active or passive execution mode
+- get rundeck server system information including version and uptime
+- list jobs
 - job execution control and history
-- list execution history for a job
-- automation
+- trigger a rundeck job execution with optional arguments and node filter
+- job management within a project
+- get job definition
+- get project
+- list job executions
+- trigger a job execution
+- get details for a specific rundeck project
+- abort execution
+- individual job management
+- list nodes
+- list nodes available in a rundeck project with optional node filter
+- list api tokens
+- execution log output
+- get the definition and configuration of a specific rundeck job
+- get execution log output
+- abort a running rundeck execution
 slug: runbook-automation
 source_filename: runbook-automation.yaml
 source_heading: Capability Spec

@@ -37,48 +37,48 @@ personas: []
 provider_name: TensorFlow
 provider_slug: tensorflow
 search_terms:
-- regress model
-- get model status
-- returns metadata for a specific version of a model
-- returns metadata and signature definitions for a model
-- get model metadata
-- mlops
-- tensorflow
-- metadata for a specific model version
-- deep learning
-- predict model
-- check status of a specific version of a tensorflow model
-- check the health and availability status of a tensorflow model
-- returns status for a specific version of the model
-- run prediction inference on the model
-- classify with model
-- retrieve signature definitions and schema metadata for a tensorflow model
-- inference
-- model signature and schema metadata
-- get model version status
-- ai
-- model status and health information
 - run classification inference on the model
-- prediction inference endpoint
-- open source
-- status for a specific model version
-- run prediction inference on a tensorflow model using row or column format inputs
-- machine learning
-- javascript
-- regress with model
-- get model version metadata
+- get model version status
+- predict model
 - neural networks
-- retrieve metadata for a specific version of a tensorflow model
-- classify model
+- classification inference endpoint
+- regress with model
+- ai
+- retrieve signature definitions and schema metadata for a tensorflow model
 - predict with model
-- python
-- run classification inference on a tensorflow model with input examples
+- tensorflow
+- returns metadata for a specific version of a model
 - run regression inference on the model
+- check the health and availability status of a tensorflow model
+- open source
+- deep learning
+- status for a specific model version
+- machine learning
 - returns the current status of a model in the modelserver
 - model serving
-- classification inference endpoint
-- run regression inference on a tensorflow model with input examples
+- mlops
+- inference
+- python
 - regression inference endpoint
+- classify with model
+- prediction inference endpoint
+- run prediction inference on the model
+- model signature and schema metadata
+- metadata for a specific model version
+- retrieve metadata for a specific version of a tensorflow model
+- run prediction inference on a tensorflow model using row or column format inputs
+- get model metadata
+- returns status for a specific version of the model
+- run regression inference on a tensorflow model with input examples
+- get model status
+- classify model
+- javascript
+- regress model
+- returns metadata and signature definitions for a model
+- run classification inference on a tensorflow model with input examples
+- model status and health information
+- get model version metadata
+- check status of a specific version of a tensorflow model
 slug: model-inference
 source_filename: model-inference.yaml
 source_heading: Capability Spec

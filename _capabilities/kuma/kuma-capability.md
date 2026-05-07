@@ -249,132 +249,132 @@ personas: []
 provider_name: Kuma
 provider_slug: kuma
 search_terms:
-- getmeshcircuitbreaker
-- getmeshmetric
-- getmeshcircuitbreakerlist
-- get outbound routes
-- deletemeshaccesslog
-- deletes meshcircuitbreaker entity
-- get route policy conf
-- get routes configuration for this outbound
-- service mesh
-- getmeshpassthrough
-- putmeshpassthrough
-- getmeshproxypatchlist
-- creates or updates meshretry entity
-- inspect resources
-- security
-- get dataplanes layout
-- putmeshmetric
-- getmeshaccesslog
+- deletemeshhealthcheck
+- returns meshloadbalancingstrategy entity
+- deletes meshhttproute entity
+- returns meshpassthrough entity
 - returns meshaccesslog entity
+- inspect resources
+- returns dataplanes matched by a meshservice
+- returns meshfaultinjection entity
+- api
+- putmeshproxypatch
+- putmeshratelimit
+- get proxy policies for this dataplane
+- returns a resource by kri
+- deletemeshmetric
+- getmeshloadbalancingstrategy
+- get policies for this inbound
+- deletemeshhttproute
+- getmeshtcproute
+- putmeshfaultinjection
+- creates or updates meshmetric entity
+- creates or updates meshpassthrough entity
+- creates or updates meshhealthcheck entity
+- deletemeshcircuitbreaker
+- deletemeshproxypatch
+- deletemeshpassthrough
+- deletes meshaccesslog entity
+- get inbound policy conf
+- deletes meshcircuitbreaker entity
+- returns a list of meshretry in the mesh.
+- get policies for this route
+- deletes meshmetric entity
+- getmeshproxypatchlist
+- getmeshratelimit
+- returns a list of meshratelimit in the mesh.
+- creates or updates meshaccesslog entity
+- returns meshproxypatch entity
+- getmeshratelimitlist
+- kuma
 - getmeshretrylist
 - returns a list of meshmetric in the mesh.
-- getmeshtcproute
-- api
-- returns meshcircuitbreaker entity
-- a list of all resources that exist
-- deletes meshhealthcheck entity
-- putmeshloadbalancingstrategy
 - get proxy policy conf
-- getmeshhealthchecklist
-- creates or updates meshproxypatch entity
-- creates or updates meshcircuitbreaker entity
-- putmeshratelimit
-- creates or updates meshloadbalancingstrategy entity
-- inspect hostnames
-- putmeshproxypatch
-- deletemeshcircuitbreaker
-- putmeshretry
-- getmeshretry
-- getmeshfaultinjection
-- deletes meshpassthrough entity
-- creates or updates meshhttproute entity
-- inspect meshservices dataplanes
-- get policies for this inbound
-- returns a list of meshfaultinjection in the mesh.
-- returns meshfaultinjection entity
-- getmeshhttproute
-- returns a list of meshloadbalancingstrategy in the mesh.
-- creates or updates meshmetric entity
-- returns meshloadbalancingstrategy entity
-- deletes meshloadbalancingstrategy entity
-- deletemeshmetric
-- get dataplanes xds config
-- returns a list of meshhttproute in the mesh.
-- returns a list of meshratelimit in the mesh.
-- inspect dataplanes rules
-- get resource type description
-- getmeshfaultinjectionlist
-- kubernetes
-- returns meshratelimit entity
-- deletes meshproxypatch entity
-- putmeshfaultinjection
-- getmeshproxypatch
-- deletemeshhttproute
-- getmeshhttproutelist
-- returns a list of meshproxypatch in the mesh.
-- returns hostnames for service
-- putmeshhealthcheck
-- deletemeshhealthcheck
-- deletes meshmetric entity
-- get inbound policy conf
-- returns meshtcproute entity
-- getmeshratelimit
-- returns a list of meshretry in the mesh.
-- getbykri
-- get outbound policy conf
-- putmeshcircuitbreaker
-- creates or updates meshratelimit entity
-- envoy
-- creates or updates meshfaultinjection entity
-- getmeshloadbalancingstrategy
-- getmeshhealthcheck
-- get global insight
-- get policies for this outbound
-- deletemeshretry
-- deletemeshproxypatch
-- getmeshpassthroughlist
-- deletemeshfaultinjection
-- deletes meshretry entity
 - get networking layout for this dataplane
-- returns dataplanes matched by a meshservice
-- returns a resource by kri
-- returns meshhttproute entity
-- getmeshloadbalancingstrategylist
-- deletes meshfaultinjection entity
-- getmeshmetriclist
-- index
+- getmeshfaultinjectionlist
+- getmeshfaultinjection
+- deletemeshretry
 - returns a list of meshpassthrough in the mesh.
-- microservices
-- kuma
-- get policies for this route
-- deletes meshratelimit entity
-- returns rules matching this dataplane
-- putmeshaccesslog
-- deletes meshhttproute entity
-- returns meshmetric entity
-- deletemeshloadbalancingstrategy
-- returns meshproxypatch entity
-- getmeshaccessloglist
-- creates or updates meshhealthcheck entity
-- deletes meshaccesslog entity
-- getmeshratelimitlist
-- putmeshhttproute
-- returns a list of meshaccesslog in the mesh.
-- returns meshpassthrough entity
-- returns a list of meshhealthcheck in the mesh.
-- deletemeshpassthrough
-- returns a list of meshcircuitbreaker in the mesh.
-- get proxy policies for this dataplane
+- get global insight
 - get a proxy xds config on a cp, this endpoint is only available on zone cps.
-- deletemeshratelimit
+- deletes meshloadbalancingstrategy entity
+- deletes meshhealthcheck entity
+- returns a list of meshloadbalancingstrategy in the mesh.
 - returns resources matched by this policy
-- the index endpoint
+- creates or updates meshhttproute entity
+- getmeshcircuitbreakerlist
+- returns a list of meshfaultinjection in the mesh.
+- putmeshcircuitbreaker
 - returns meshretry entity
-- creates or updates meshpassthrough entity
-- creates or updates meshaccesslog entity
+- putmeshretry
+- envoy
+- putmeshhttproute
+- returns a list of meshhealthcheck in the mesh.
+- deletemeshaccesslog
+- inspect dataplanes rules
+- security
+- creates or updates meshratelimit entity
+- a list of all resources that exist
+- putmeshhealthcheck
+- getmeshpassthrough
+- putmeshloadbalancingstrategy
+- creates or updates meshloadbalancingstrategy entity
+- service mesh
+- get route policy conf
+- deletemeshloadbalancingstrategy
+- getmeshmetriclist
+- getmeshcircuitbreaker
+- get dataplanes layout
+- deletes meshproxypatch entity
+- kubernetes
+- putmeshmetric
+- deletemeshfaultinjection
+- inspect meshservices dataplanes
 - returns meshhealthcheck entity
+- returns meshcircuitbreaker entity
+- putmeshpassthrough
+- returns meshtcproute entity
+- returns meshhttproute entity
+- the index endpoint
+- getmeshpassthroughlist
+- deletes meshpassthrough entity
+- creates or updates meshproxypatch entity
+- microservices
+- getmeshaccessloglist
+- getmeshaccesslog
+- getbykri
+- creates or updates meshretry entity
+- deletemeshratelimit
+- get policies for this outbound
+- putmeshaccesslog
+- returns a list of meshhttproute in the mesh.
+- get outbound policy conf
+- returns a list of meshcircuitbreaker in the mesh.
+- get resource type description
+- inspect hostnames
+- returns hostnames for service
+- getmeshproxypatch
+- get dataplanes xds config
+- deletes meshfaultinjection entity
+- creates or updates meshfaultinjection entity
+- getmeshhttproute
+- returns rules matching this dataplane
+- get outbound routes
+- getmeshloadbalancingstrategylist
+- deletes meshratelimit entity
+- returns a list of meshproxypatch in the mesh.
+- getmeshhealthcheck
+- get routes configuration for this outbound
+- creates or updates meshcircuitbreaker entity
+- getmeshmetric
+- getmeshhttproutelist
+- getmeshretry
+- returns meshmetric entity
+- deletes meshretry entity
+- returns a list of meshaccesslog in the mesh.
+- index
+- returns meshratelimit entity
+- getmeshhealthchecklist
 slug: kuma-capability
 source_filename: kuma-capability.yaml
 source_heading: Capability Spec

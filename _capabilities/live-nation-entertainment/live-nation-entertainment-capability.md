@@ -37,24 +37,24 @@ personas: []
 provider_name: live-nation-entertainment
 provider_slug: live-nation-entertainment
 search_terms:
+- searchevents
+- nation
+- searchattractions
 - getvenuedetails
 - get attraction details
-- searchevents
-- searchclassifications
-- getattractiondetails
-- search events
-- searchattractions
-- search venues
-- api
-- nation
 - searchvenues
+- getattractiondetails
 - geteventdetails
-- search classifications
-- get venue details
 - live
-- search attractions
-- entertainment
+- get venue details
+- searchclassifications
+- search classifications
 - get event details
+- search attractions
+- api
+- entertainment
+- search venues
+- search events
 slug: live-nation-entertainment-capability
 source_filename: live-nation-entertainment-capability.yaml
 source_heading: Capability Spec

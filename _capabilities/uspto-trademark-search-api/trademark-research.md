@@ -29,39 +29,39 @@ personas: []
 provider_name: USPTO Trademark Search API
 provider_slug: uspto-trademark-search-api
 search_terms:
-- due diligence
-- get full trademark filing details, prosecution history, and owner info
-- verify database is current before conducting research
-- list all trademarks owned by an individual or organization
-- uspto
-- legal
-- research owner trademark portfolio
 - check if a trademark keyword is available for registration
 - get database status
-- business
+- get full trademark filing details, prosecution history, and owner info
 - search trademarks
-- intellectual property
-- government data
-- check when the uspto trademark database was last updated and verify it is operating normally before running trademark research queries.
-- returns availability status and list of conflicting marks
-- search the uspto trademark database for marks matching a keyword. use this to find existing trademarks before registering a new brand name.
-- trademark
-- retrieve complete trademark details by serial number
-- search active or all trademarks matching a keyword
-- search
-- get trademark by serial number
-- find all trademarks owned by a specific company or individual. useful for competitive intelligence and m&a due diligence.
-- search trademarks by owner
+- uspto trademark database status
 - search uspto trademark database by keyword
 - research trademark portfolio of a specific owner
-- check trademark availability
 - legal research
+- check when the uspto trademark database was last updated and verify it is operating normally before running trademark research queries.
+- check trademark availability
+- research owner trademark portfolio
+- business
+- search trademarks by owner
 - check whether a trademark keyword appears to be available for registration. returns availability status and any conflicting marks found in the uspto database.
-- data
-- brand protection
-- uspto trademark database status
-- brand
+- search active or all trademarks matching a keyword
 - retrieve complete trademark details for a known serial number, including prosecution history, owner details, and goods/services classification.
+- find all trademarks owned by a specific company or individual. useful for competitive intelligence and m&a due diligence.
+- government data
+- brand
+- list all trademarks owned by an individual or organization
+- due diligence
+- trademark
+- brand protection
+- uspto
+- intellectual property
+- search the uspto trademark database for marks matching a keyword. use this to find existing trademarks before registering a new brand name.
+- returns availability status and list of conflicting marks
+- verify database is current before conducting research
+- retrieve complete trademark details by serial number
+- search
+- data
+- legal
+- get trademark by serial number
 slug: trademark-research
 source_filename: trademark-research.yaml
 source_heading: Capability Spec

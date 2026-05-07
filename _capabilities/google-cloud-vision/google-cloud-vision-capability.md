@@ -25,23 +25,23 @@ personas: []
 provider_name: Google Cloud Vision
 provider_slug: google-cloud-vision
 search_terms:
-- asyncbatchannotateimages
-- google cloud vision list product sets
+- google cloud vision annotate images
+- annotatefiles
+- google cloud vision annotate files
+- machine learning
+- vision
+- ocr
+- annotateimages
+- google
+- google cloud vision async annotate images
 - listproductsets
 - computer vision
-- image analysis
-- machine learning
-- cloud
-- google
-- api
-- vision
-- google cloud vision async annotate images
-- annotatefiles
-- ocr
-- google cloud vision annotate files
+- google cloud vision list product sets
 - google cloud
-- google cloud vision annotate images
-- annotateimages
+- api
+- cloud
+- image analysis
+- asyncbatchannotateimages
 slug: google-cloud-vision-capability
 source_filename: google-cloud-vision-capability.yaml
 source_heading: Capability Spec

@@ -45,31 +45,31 @@ personas: []
 provider_name: Metals-API
 provider_slug: metals-api
 search_terms:
-- getcarat
-- get rate fluctuation
-- get historical rates by date
-- getlatest
-- getsymbols
-- gold
-- precious metals
-- get daily lowest and highest prices
-- silver
-- list supported symbols
 - metals
-- get latest rates
-- gethistoricalrates
-- financial data
 - api
-- get rates over a time series
-- getohlc
-- convert
-- get gold prices by carat
-- gettimeseries
-- getfluctuation
-- get ohlc data
-- convert between currencies and metals
+- precious metals
+- getsymbols
+- list supported symbols
 - getlowesthighest
+- get latest rates
+- get historical rates by date
+- convert between currencies and metals
+- getfluctuation
+- get gold prices by carat
+- financial data
+- convert
+- gold
+- getlatest
+- gethistoricalrates
+- gettimeseries
+- get rate fluctuation
+- get ohlc data
+- silver
+- get rates over a time series
+- getcarat
 - currency
+- get daily lowest and highest prices
+- getohlc
 slug: metals-api-capability
 source_filename: metals-api-capability.yaml
 source_heading: Capability Spec

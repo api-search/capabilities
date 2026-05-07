@@ -17,18 +17,18 @@ personas: []
 provider_name: Mashable
 provider_slug: mashable
 search_terms:
-- news
-- technology news
+- articles
+- headlines
+- top headlines for mashable
+- mashable
+- search mashable articles
+- getmashabletopheadlines
+- searchmashablearticles
 - digital culture
 - api
-- mashable
-- top headlines for mashable
-- headlines
-- articles
+- news
+- technology news
 - media
-- searchmashablearticles
-- getmashabletopheadlines
-- search mashable articles
 slug: mashable-capability
 source_filename: mashable-capability.yaml
 source_heading: Capability Spec

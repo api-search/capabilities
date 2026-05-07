@@ -33,26 +33,26 @@ personas: []
 provider_name: Google Cloud Interconnect
 provider_slug: google-cloud-interconnect
 search_terms:
-- networking
-- listinterconnects
-- google cloud interconnect list interconnect locations
-- createinterconnect
-- listinterconnectattachments
-- listinterconnectlocations
-- google cloud interconnect delete an interconnect
-- hybrid cloud
-- cloud
-- google
-- dedicated connectivity
-- getinterconnect
-- google cloud interconnect create an interconnect
-- interconnect
-- api
 - google cloud interconnect list interconnect attachments
-- google cloud interconnect get an interconnect
 - deleteinterconnect
-- google cloud
+- networking
+- google cloud interconnect list interconnect locations
+- api
+- dedicated connectivity
+- google cloud interconnect create an interconnect
 - google cloud interconnect list interconnects
+- google cloud interconnect delete an interconnect
+- google
+- listinterconnects
+- createinterconnect
+- listinterconnectlocations
+- cloud
+- google cloud interconnect get an interconnect
+- listinterconnectattachments
+- hybrid cloud
+- interconnect
+- getinterconnect
+- google cloud
 slug: google-cloud-interconnect-capability
 source_filename: google-cloud-interconnect-capability.yaml
 source_heading: Capability Spec

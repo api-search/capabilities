@@ -13,19 +13,19 @@ personas: []
 provider_name: Google Firebase
 provider_slug: google-firebase
 search_terms:
-- google firebase send a message
-- mobile
-- firebase
-- hosting
-- google
-- sendmessage
-- api
 - analytics
-- authentication
-- google cloud
-- backend as a service
-- real-time database
+- hosting
+- sendmessage
+- google firebase send a message
 - cloud messaging
+- google
+- google cloud
+- firebase
+- backend as a service
+- api
+- mobile
+- real-time database
+- authentication
 slug: google-firebase-capability
 source_filename: google-firebase-capability.yaml
 source_heading: Capability Spec

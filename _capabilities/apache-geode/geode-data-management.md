@@ -21,40 +21,40 @@ personas: []
 provider_name: Apache Geode
 provider_slug: apache-geode
 search_terms:
-- apache geode
-- distributed systems
-- get region keys
-- list geode regions
-- platform engineering
-- oql query execution
-- execute an oql query against geode regions
-- in-memory
-- get all keys stored in a geode region
-- execute query
-- manage in-memory data with regions, queries, and functions
-- list geode functions
-- apache
-- open source
-- list all regions in the apache geode data grid
-- list all geode regions
-- execute an oql query
-- data grid
 - execute oql query
-- data management
-- in-memory data grid
-- region crud operations, oql queries, and function execution
-- caching
-- list available functions
-- list functions
-- high-performance in-memory data caching and distribution
-- engineers managing the geode cluster infrastructure
+- list geode regions
+- distributed systems
 - list regions
-- Platform Engineer
-- list all server-side functions available in the cluster
+- list all regions in the apache geode data grid
+- manage in-memory data with regions, queries, and functions
+- execute an oql query against geode regions
 - Application Developer
-- server-side function execution
+- open source
+- list geode functions
+- data management
+- oql query execution
+- list all geode regions
+- Platform Engineer
+- execute an oql query
+- region crud operations, oql queries, and function execution
+- data grid
+- apache
+- in-memory
 - geode region management
+- get all keys stored in a geode region
+- high-performance in-memory data caching and distribution
+- execute query
+- list all server-side functions available in the cluster
+- engineers managing the geode cluster infrastructure
+- apache geode
+- in-memory data grid
+- server-side function execution
+- list available functions
 - developers using geode as a fast data store for applications
+- caching
+- list functions
+- get region keys
+- platform engineering
 slug: geode-data-management
 source_filename: geode-data-management.yaml
 source_heading: Capability Spec

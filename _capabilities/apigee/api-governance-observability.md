@@ -17,41 +17,41 @@ personas: []
 provider_name: Apigee
 provider_slug: apigee
 search_terms:
+- integrations
 - API Platform Engineer
-- list api specifications tracked in the apigee registry.
+- discover shadow apis
 - API Governance Lead
-- analytics
-- shadow apis discovered via apim.
-- developer portal
+- architect overseeing api platform strategy and governance across the organization.
+- API Product Manager
 - Platform Architect
+- analytics
 - list observed shadow apis.
+- api catalog
+- list observed apis
+- list all catalogued apis.
+- api discovery
+- api management
+- api hub
+- api governance
+- hybrid
+- developer portal
+- list api specifications tracked in the apigee registry.
+- api catalog from api hub.
+- api gateway
+- engineer managing api proxies, deployments, and policies in apigee.
+- list catalogued apis
+- leader establishing api standards, cataloguing apis, and discovering shadow apis.
+- list all apis in the apigee api hub catalog.
 - discover undocumented shadow apis in google cloud infrastructure using apim.
 - enterprise
-- list catalogued apis
-- api discovery
-- apigee
-- list all catalogued apis.
-- api governance
-- api catalog
-- list all apis in the apigee api hub catalog.
-- integrations
-- hybrid
-- API Product Manager
 - monetization
-- api hub
-- api catalog from api hub.
-- list api specs
-- api gateway
-- api management
-- list apis
-- leader establishing api standards, cataloguing apis, and discovering shadow apis.
-- manager packaging api products and managing developer relationships.
-- list observed apis
-- discover shadow apis
-- engineer managing api proxies, deployments, and policies in apigee.
-- architect overseeing api platform strategy and governance across the organization.
-- microservices
+- apigee
 - google cloud
+- microservices
+- manager packaging api products and managing developer relationships.
+- list apis
+- shadow apis discovered via apim.
+- list api specs
 slug: api-governance-observability
 source_filename: api-governance-observability.yaml
 source_heading: Capability Spec

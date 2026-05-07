@@ -30,50 +30,50 @@ personas: []
 provider_name: Apache OpenWhisk
 provider_slug: apache-openwhisk
 search_terms:
-- delete action
-- list actions
+- invoke an action
+- event-driven
+- fire trigger
+- manages namespaces, limits, and platform configuration
 - DevOps Engineer
-- delete a serverless action
-- create action
-- get activation
-- event-driven architecture
+- get details of a specific activation
 - list activation history
-- list all action packages
-- list all actions
+- create action
+- action packages
+- delete action
+- event driven
+- list triggers
+- cloud native
+- functions as a service
+- get activation
+- event triggers
+- builds event-driven applications using serverless functions
+- list all trigger-to-action rules
+- serverless computing
+- open source
 - invoke a serverless action/function
+- create a new serverless action
+- list actions
+- list activations
 - serverless
+- list all action packages
+- manages serverless deployments and ci/cd pipelines
+- serverless function actions
+- list all serverless functions/actions
 - list all event triggers
 - apache
-- get details of a specific activation
-- event driven
-- apache openwhisk
-- invoke action
-- functions as a service
-- cloud native
-- invoke an action
-- list triggers
-- action packages
-- Platform Administrator
-- open source
-- fire an event trigger
-- fire trigger
-- functions
-- manages serverless deployments and ci/cd pipelines
-- faas
 - list packages
-- activation history
-- event-driven
-- builds event-driven applications using serverless functions
-- list all serverless functions/actions
-- Backend Developer
-- list all trigger-to-action rules
 - list rules
-- serverless computing
-- event triggers
-- manages namespaces, limits, and platform configuration
-- serverless function actions
-- create a new serverless action
-- list activations
+- faas
+- Platform Administrator
+- delete a serverless action
+- event-driven architecture
+- invoke action
+- list all actions
+- fire an event trigger
+- Backend Developer
+- activation history
+- functions
+- apache openwhisk
 slug: serverless-workflow
 source_filename: serverless-workflow.yaml
 source_heading: Capability Spec

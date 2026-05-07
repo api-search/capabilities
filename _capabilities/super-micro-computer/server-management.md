@@ -81,78 +81,78 @@ personas: []
 provider_name: Super Micro Computer
 provider_slug: super-micro-computer
 search_terms:
-- bmc
-- get details of a specific computer system
-- list all computer systems
-- create a new bmc user account
-- reset system
-- supermicro
-- reset or power cycle a computer system
-- reset or power cycle a server (on, forceoff, gracefulrestart, etc.)
-- get power consumption and supply data
-- list current firmware versions for bios, bmc, and components
-- list current firmware versions
-- list all server event notification subscriptions
-- infrastructure
-- initiate firmware update
-- get manager
-- bmc user account management
-- get real-time power consumption and supply status for a chassis
-- list event subscriptions
-- delete a bmc user account
-- event notification subscriptions
-- list all chassis in the data center
-- list all bmc user accounts and their roles
-- cloud
-- create a new bmc user account with specified role
-- get chassis power
-- list firmware inventory
-- update account
-- get temperature and fan speed data
-- list systems
-- get a specific chassis
-- list all bmc managers
-- redfish
-- chassis power data
-- perform firmware update
-- computer system inventory and management
-- get chassis
-- initiate a bios or bmc firmware update from a specified uri
-- update a user account
-- reset manager
-- subscribe to server events via webhook
-- data center
-- get temperature sensor readings and fan speeds for a chassis
-- list all chassis
-- list all event subscriptions
-- list chassis
-- chassis thermal data
-- system power control
-- list all computer systems managed by this bmc
-- get health status and details of a specific computer system
-- fortune 500
-- firmware lifecycle management
-- server management
-- create account
-- restart the bmc management controller
-- get chassis thermal
-- chassis inventory
-- bmc manager management
-- get a specific bmc manager
-- create event subscription
-- list accounts
-- create an event notification subscription
-- get bmc manager details including firmware version
-- list managers
-- delete a user account
-- servers
 - get account
-- delete account
-- hardware
-- get system
+- list event subscriptions
 - get a specific user account
+- list chassis
 - list all bmc user accounts
+- hardware
+- get a specific chassis
+- subscribe to server events via webhook
+- get chassis
+- list current firmware versions for bios, bmc, and components
+- reset system
+- list all bmc managers
+- get chassis thermal
+- list all bmc user accounts and their roles
+- list accounts
+- chassis inventory
+- list all computer systems
+- system power control
+- get manager
+- initiate firmware update
+- create event subscription
+- update a user account
+- servers
+- delete a bmc user account
 - ipmi
+- infrastructure
+- list all chassis in the data center
+- get power consumption and supply data
+- perform firmware update
+- get details of a specific computer system
+- computer system inventory and management
+- bmc user account management
+- create account
+- get temperature sensor readings and fan speeds for a chassis
+- bmc
+- get health status and details of a specific computer system
+- get a specific bmc manager
+- list all event subscriptions
+- redfish
+- supermicro
+- get temperature and fan speed data
+- get bmc manager details including firmware version
+- restart the bmc management controller
+- reset manager
+- cloud
+- data center
+- bmc manager management
+- list all chassis
+- update account
+- event notification subscriptions
+- firmware lifecycle management
+- list systems
+- create an event notification subscription
+- get real-time power consumption and supply status for a chassis
+- get chassis power
+- delete account
+- delete a user account
+- list all computer systems managed by this bmc
+- create a new bmc user account
+- chassis power data
+- initiate a bios or bmc firmware update from a specified uri
+- create a new bmc user account with specified role
+- list managers
+- reset or power cycle a server (on, forceoff, gracefulrestart, etc.)
+- list all server event notification subscriptions
+- reset or power cycle a computer system
+- list current firmware versions
+- chassis thermal data
+- list firmware inventory
+- fortune 500
+- server management
+- get system
 slug: server-management
 source_filename: server-management.yaml
 source_heading: Capability Spec

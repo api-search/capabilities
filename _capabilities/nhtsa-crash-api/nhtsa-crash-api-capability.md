@@ -33,25 +33,25 @@ personas: []
 provider_name: NHTSA Crash API
 provider_slug: nhtsa-crash-api
 search_terms:
+- traffic safety
+- getcrashesbylocation
+- get case details
+- get case list
+- api
+- getcrashesbyvehicle
+- get crashes by vehicle
 - getfarsdata
 - get crashes by location
-- crash
-- getcasedetails
-- getcrashesbyoccupant
-- get fars dataset
-- government
-- getcrashesbyvehicle
-- get case list
-- nhtsa
-- traffic safety
-- getcaselist
-- transportation
 - get crashes by occupant
+- transportation
+- getcaselist
+- getcasedetails
+- government
+- nhtsa
+- crash
+- get fars dataset
 - crash data
-- api
-- get crashes by vehicle
-- get case details
-- getcrashesbylocation
+- getcrashesbyoccupant
 slug: nhtsa-crash-api-capability
 source_filename: nhtsa-crash-api-capability.yaml
 source_heading: Capability Spec

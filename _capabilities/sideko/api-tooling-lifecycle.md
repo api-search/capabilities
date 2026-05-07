@@ -65,68 +65,68 @@ personas: []
 provider_name: Sideko
 provider_slug: sideko
 search_terms:
-- deploy documentation site
-- update an api project
-- list mock server instances for an api project
-- list all api projects in the sideko organization
-- list mock servers
-- deploy docs
-- delete api project
-- list documentation sites deployed for an api project
-- api project management
-- sdks
-- list api versions
-- api key management
-- trigger sdk generation for a language (python, typescript, java, go, ruby, rust)
-- create a new api project
-- cli
-- developer experience
-- deploy or update an api documentation site for an api project version
-- delete an api project
-- get api project
-- list sdk generation jobs for an api project
-- deploy a mock server
-- api tooling
-- single api project operations
-- delete an api project and all its versions, sdks, docs, and mock servers
-- list versions
-- generate sdk
-- update project
-- documentation
-- create project
 - sdk generation
-- list sdk generation jobs
-- get details of a specific api project
-- list all versions of an api project
-- list api keys
+- developer experience
+- list documentation sites
+- deploy or update an api documentation site for an api project version
+- create a new api project
+- list sdk generations
+- get an api project by id
+- deploy mock server
+- list documentation sites deployed for an api project
 - list all api keys for the sideko organization
-- create api key
-- documentation sites
-- list api projects
+- create a new api project in sideko
+- deploy a documentation site
+- api key management
+- platform
+- update an api project
+- mock server management
+- single api project operations
+- get details of a specific api project
+- deploy a mock server that simulates api responses for an api project version
+- get api project
+- mock servers
+- list sdks
+- documentation
+- api tooling
+- list versions
+- delete an api project
+- list mock servers
+- list all api projects
+- api project management
+- trigger sdk generation for a language (python, typescript, java, go, ruby, rust)
+- delete project
+- create project
+- list projects
+- list all versions of an api project
 - create api project
 - create a new sideko api key
-- update an existing api project name or description
-- list sdk generations
-- mock servers
-- deploy a documentation site
-- deploy mock server
-- delete project
-- create a new api key
-- create a new api project in sideko
-- deploy a mock server that simulates api responses for an api project version
-- get project
-- mock server management
-- list all api projects
-- list projects
-- trigger sdk generation
-- list docs
-- platform
-- update api project
-- list documentation sites
 - sdk generation jobs
+- list docs
+- cli
+- list api projects
+- list api keys
+- list api versions
+- list sdk generation jobs
+- deploy documentation site
+- list all api projects in the sideko organization
+- deploy a mock server
+- list sdk generation jobs for an api project
+- delete api project
+- get project
+- generate sdk
+- update api project
+- update an existing api project name or description
+- sdks
 - api version management
-- list sdks
-- get an api project by id
+- trigger sdk generation
+- documentation sites
+- deploy docs
+- create a new api key
+- list mock server instances for an api project
+- update project
+- delete an api project and all its versions, sdks, docs, and mock servers
+- create api key
 slug: api-tooling-lifecycle
 source_filename: api-tooling-lifecycle.yaml
 source_heading: Capability Spec

@@ -33,25 +33,25 @@ personas: []
 provider_name: Quandl (Nasdaq Data Link)
 provider_slug: quandl
 search_terms:
-- getdataset
-- economic data
-- market data
-- quandl
-- finance
-- get a time-series dataset
-- getdatasetmetadata
-- list datasets in a database
-- getdatabase
-- time series
-- getdatatable
-- get database metadata
+- streaming
+- listdatabasedatasets
 - api
 - get dataset metadata
-- listdatabasedatasets
+- getdataset
 - list databases
+- quandl
+- finance
+- list datasets in a database
+- economic data
+- get a time-series dataset
+- get database metadata
 - listdatabases
-- streaming
+- getdatasetmetadata
+- market data
 - query a datatable
+- getdatabase
+- getdatatable
+- time series
 slug: quandl-capability
 source_filename: quandl-capability.yaml
 source_heading: Capability Spec

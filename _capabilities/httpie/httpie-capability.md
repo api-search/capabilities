@@ -17,21 +17,21 @@ personas: []
 provider_name: HTTPie
 provider_slug: httpie
 search_terms:
-- http
-- client
-- command line
-- api client
-- developer tools
-- httpie web application
 - sessions
-- gethello
-- api testing
-- api
-- httpie
-- httpie hello endpoint
-- cli
 - open source
+- gethello
+- command line
+- cli
+- httpie web application
+- client
+- api client
+- api
+- http
 - getapp
+- httpie hello endpoint
+- httpie
+- developer tools
+- api testing
 slug: httpie-capability
 source_filename: httpie-capability.yaml
 source_heading: Capability Spec

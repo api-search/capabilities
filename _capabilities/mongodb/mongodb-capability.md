@@ -249,132 +249,132 @@ personas: []
 provider_name: MongoDB
 provider_slug: mongodb
 search_terms:
+- getfederationsettingconnectedorgconfigrolemappin
+- deletefederationsettingconnectedorgconfigrolemap
+- add one mongodb cloud user to one project
+- removefederationsettingconnectedorgconfig
+- deletegroupbackupexportbucket
+- update state of one custom dns configuration for atlas clusters on aws
+- return object storage private endpoints for cloud backups for one cloud provider in one project
 - update one export bucket private networking settings
-- return all authorized clusters in all projects
-- delete one identity provider
-- listeventtypes
-- listalertconfigmatcherfieldnames
-- creategroupbackupexportbucket
-- add entries to project ip access list
-- listgroupapikeys
-- createfederationsettingidentityprovider
-- unassign one organization api key from one project
-- acknowledge one alert from one project
-- remove one role mapping from one organization
-- return all project ip access list entries
-- getgroupalertconfig
-- return one project by name
-- listgroupbackupprivateendpoints
-- getfederationsettingidentityprovider
-- return pre-filtered activity feed link for one project
-- return status of one project ip access list entry
-- deletegroupalertconfig
-- listgroupaccesslistentries
-- getgroupactivityfeed
-- cloud database
+- deletegroupaccesslistentry
 - api
-- create one project
+- listalertconfigmatcherfieldnames
+- return all organization api keys assigned to one project
+- updatefederationsettingconnectedorgconfig
 - remove one organization configuration from one federation
-- updatefederationsettingconnectedorgconfigrolemap
+- remove one alert configuration from one project
+- listgroupbackupexportbuckets
+- return one organization configuration from one federation
+- getgroup
+- update one identity provider
+- remove one project
+- updategroupauditlog
 - delete one federation settings instance
-- getgroupawscustomdns
-- return one project
-- create one snapshot export bucket
-- document database
-- getgroupbyname
-- revoke jwks from one oidc identity provider
-- return metadata of one identity provider
+- deletegroupalertconfig
+- delete one snapshot export bucket
+- return status of one project ip access list entry
+- return all projects
+- return one alert configuration from one project
+- listfederationsettingconnectedorgconfigrolemappi
+- return all open alerts for one alert configuration
+- nosql
+- creategroupaccesslistentry
+- deletegroup
+- return one alert from one project
+- listclusterdetails
 - return all alert configurations in one project
-- return one role mapping from one organization
-- return all identity providers in one federation
-- create one alert configuration in one project
+- return all event types
+- add entries to project ip access list
 - creategroup
 - return all alert configuration matchers field names
-- updategroupalertconfig
-- deletefederationsetting
+- getgroupbyname
+- return one snapshot export bucket
+- return all authorized clusters in all projects
+- revoke jwks from one oidc identity provider
+- acknowledgegroupalert
+- document database
+- assign one organization api key to one project
+- getgroupauditlog
+- getgroupawscustomdns
+- createfederationsettingidentityprovider
+- return one identity provider by id
+- updategroupapikeyroles
+- creategroupbackupexportbucket
+- return all project ip access list entries
+- create one snapshot export bucket
+- getgroupaccesslistentry
+- listgroups
+- getfederationsettingidentityprovider
+- update one role mapping in one organization
 - revokefederationsettingidentityproviderjwks
-- return one alert from one project
-- return one project ip access list entry
+- getgroupalert
+- remove one entry from one project ip access list
+- return metadata of one identity provider
+- getgroupaccessliststatus
+- create one identity provider
+- getgroupbackupexportbucket
+- update auditing configuration for one project
+- return all snapshot export buckets
+- return all organization configurations from one federation
+- listfederationsettingconnectedorgconfigs
+- getfederationsettingconnectedorgconfig
+- getsystemstatus
+- return one project
+- create one alert configuration in one project
+- listgroupbackupprivateendpoints
+- addgroupapikey
+- return the status of this mongodb application
+- return one role mapping from one organization
+- listgroupaccesslistentries
+- return auditing configuration for one project
+- mongodb
+- addgroupaccessuser
+- listgroupapikeys
+- return one custom dns configuration for atlas clusters on aws
+- createfederationsettingconnectedorgconfigrolemap
+- updategroupalertconfig
+- updatefederationsettingconnectedorgconfigrolemap
+- create one project
+- update one alert configuration in one project
+- togglegroupawscustomdns
+- database
+- remove one role mapping from one organization
+- getgroupalertconfigalerts
+- updategroupbackupexportbucket
+- listeventtypes
+- updatefederationsettingidentityprovider
+- create one role mapping in one organization configuration
+- creategroupalertconfig
+- getgroupactivityfeed
+- return all alert configurations set for one alert
+- creategroupapikey
+- getgroupalertalertconfigs
+- cloud database
+- return all identity providers in one federation
+- deletefederationsetting
+- unassign one organization api key from one project
+- update organization api key roles for one project
+- create and assign one organization api key to one project
+- return all role mappings from one organization
+- delete one identity provider
+- deletefederationsettingidentityprovider
+- listgroupalerts
+- return pre-filtered activity feed link for one project
+- getgroupalertconfig
+- toggle state of one alert configuration in one project
+- acknowledge one alert from one project
+- updategroup
+- getfederationsettingidentityprovidermetadata
+- return one project by name
+- listfederationsettingidentityproviders
 - return all alerts from one project
 - listgroupalertconfigs
-- deletegroupaccesslistentry
-- return object storage private endpoints for cloud backups for one cloud provider in one project
-- createfederationsettingconnectedorgconfigrolemap
-- update one identity provider
-- return all event types
-- deletegroupbackupexportbucket
-- return all organization api keys assigned to one project
-- return one identity provider by id
-- update one alert configuration in one project
-- update one role mapping in one organization
-- listgroups
-- database
-- togglegroupawscustomdns
-- create and assign one organization api key to one project
-- creategroupalertconfig
-- updategroupbackupexportbucket
-- getgroup
-- remove one project
-- listfederationsettingconnectedorgconfigrolemappi
-- update auditing configuration for one project
-- updategroup
-- updategroupapikeyroles
-- return all open alerts for one alert configuration
-- update one project
-- updatefederationsettingidentityprovider
-- return all alert configurations set for one alert
-- getgroupaccesslistentry
-- update state of one custom dns configuration for atlas clusters on aws
-- addgroupapikey
-- getgroupalertalertconfigs
-- removefederationsettingconnectedorgconfig
-- creategroupaccesslistentry
-- getgroupauditlog
-- delete one snapshot export bucket
-- getgroupaccessliststatus
-- nosql
-- remove one entry from one project ip access list
-- update organization api key roles for one project
-- getfederationsettingidentityprovidermetadata
-- return one alert configuration from one project
-- return all snapshot export buckets
-- return one snapshot export bucket
+- return one project ip access list entry
 - togglegroupalertconfig
-- getgroupalert
-- listfederationsettingidentityproviders
-- updategroupauditlog
-- return the status of this mongodb application
-- listgroupbackupexportbuckets
-- getgroupbackupexportbucket
-- listfederationsettingconnectedorgconfigs
-- add one mongodb cloud user to one project
-- assign one organization api key to one project
-- deletegroup
-- update one organization configuration in one federation
-- getfederationsettingconnectedorgconfigrolemappin
-- addgroupaccessuser
-- getfederationsettingconnectedorgconfig
 - removegroupapikey
-- creategroupapikey
-- return all role mappings from one organization
-- return all projects
-- return one custom dns configuration for atlas clusters on aws
-- getsystemstatus
-- mongodb
-- create one role mapping in one organization configuration
-- return one organization configuration from one federation
-- updatefederationsettingconnectedorgconfig
-- listclusterdetails
-- acknowledgegroupalert
-- toggle state of one alert configuration in one project
-- deletefederationsettingconnectedorgconfigrolemap
-- return all organization configurations from one federation
-- listgroupalerts
-- create one identity provider
-- deletefederationsettingidentityprovider
-- return auditing configuration for one project
-- remove one alert configuration from one project
-- getgroupalertconfigalerts
+- update one project
+- update one organization configuration in one federation
 slug: mongodb-capability
 source_filename: mongodb-capability.yaml
 source_heading: Capability Spec

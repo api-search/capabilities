@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- microservice
-- api integration
 - governance
-- spec-driven integration
 - rightsize
 - get rightsized
 - ai
-- mcp
 - capabilities
+- spec-driven integration
+- api integration
+- microservice
+- mcp
+- naftiko
 slug: microservice-rightsize-capability
 source_filename: microservice-rightsize-capability.yaml
 source_heading: Capability Spec

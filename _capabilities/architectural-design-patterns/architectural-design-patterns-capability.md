@@ -34,27 +34,27 @@ provider_name: Architectural Design Patterns
 provider_slug: architectural-design-patterns
 search_terms:
 - listpatterns
-- best practices
-- get implementation examples for a pattern
-- list pattern categories
-- design
-- patterns
-- list anti-patterns
 - listcategories
-- architectural
-- design patterns
-- list architectural design patterns
-- get relationships for a pattern
-- getpattern
-- get design pattern details
 - api
+- get implementation examples for a pattern
+- design
+- best practices
+- listantipatterns
+- getpatternrelationships
+- patterns
+- get design pattern details
+- software engineering
+- list pattern categories
 - getpatternexamples
 - system design
-- software engineering
-- getpatternrelationships
-- microservices
-- listantipatterns
+- getpattern
+- list anti-patterns
+- get relationships for a pattern
+- design patterns
+- architectural
 - software architecture
+- microservices
+- list architectural design patterns
 slug: architectural-design-patterns-capability
 source_filename: architectural-design-patterns-capability.yaml
 source_heading: Capability Spec

@@ -53,37 +53,37 @@ personas: []
 provider_name: Let's Encrypt
 provider_slug: lets-encrypt
 search_terms:
-- get order status
-- neworder
 - rotate account key
-- lets
-- finalizeorder
-- getdirectory
-- encrypt
-- download issued certificate
-- update or deactivate account
 - pki
-- get acme directory
-- respond to a challenge
-- linux foundation
-- getorder
-- security
-- revokecertificate
-- submit a new certificate order
-- tls
-- getauthorization
-- respondchallenge
-- revoke a certificate
-- create or look up an account
-- api
 - updateaccount
+- api
 - newaccount
-- keychange
+- lets
+- getauthorization
+- getdirectory
+- linux foundation
+- revokecertificate
+- getorder
+- revoke a certificate
 - getcertificate
-- acme
-- finalize an order with a csr
+- neworder
+- create or look up an account
+- keychange
+- finalizeorder
+- respond to a challenge
+- encrypt
+- respondchallenge
+- tls
+- update or deactivate account
 - certificates
+- download issued certificate
+- get acme directory
+- get order status
 - get authorization status
+- security
+- submit a new certificate order
+- finalize an order with a csr
+- acme
 slug: lets-encrypt-capability
 source_filename: lets-encrypt-capability.yaml
 source_heading: Capability Spec

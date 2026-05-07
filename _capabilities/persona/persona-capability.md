@@ -121,66 +121,66 @@ personas: []
 provider_name: Persona
 provider_slug: persona
 search_terms:
-- kyc
-- consolidate accounts
-- listaccounts
-- update an account
-- createaccount
-- expire an inquiry
-- listinquiries
-- retrieveverification
-- create an inquiry
-- fraud prevention
-- create a report
-- approveinquiry
-- decline an inquiry
-- listtransactions
-- persona
-- redactinquiry
-- redactaccount
-- declineinquiry
-- listlists
-- expireinquiry
-- consolidateaccounts
-- list all reports
-- create a webhook
-- createreport
-- search accounts
+- list all transactions
+- searchaccounts
+- update an inquiry
+- create an account
 - remove tag from an account
 - redact an inquiry
-- updateinquiry
-- create an account
-- add tag to an account
-- retrieve an inquiry
-- retrieveaccount
-- approve an inquiry
-- redact an account
-- addaccounttag
-- api
-- updateaccount
-- searchaccounts
-- list all lists
-- listwebhooks
-- list all accounts
-- list all transactions
-- retrieve an account
-- createwebhook
+- kyc
+- create a report
 - identity verification
-- createtransaction
-- create a list
-- listaccountrelations
-- retrieveinquiry
-- update an inquiry
-- listreports
-- removeaccounttag
-- retrieve a verification
-- retrievereport
-- list all webhooks
-- createinquiry
-- get all relations for an account
-- create a transaction
-- list all inquiries
+- retrieve an inquiry
+- redactinquiry
+- updateaccount
+- retrieveaccount
+- declineinquiry
+- api
+- retrieveverification
 - retrieve a report
+- retrieve an account
+- decline an inquiry
+- expire an inquiry
+- redact an account
+- add tag to an account
+- listaccountrelations
+- create a transaction
+- search accounts
+- persona
+- create a list
+- createwebhook
+- expireinquiry
+- approveinquiry
+- retrievereport
+- createinquiry
+- retrieve a verification
+- listtransactions
+- listinquiries
+- retrieveinquiry
+- fraud prevention
+- list all accounts
+- createreport
+- list all lists
+- list all webhooks
+- listreports
+- listlists
+- createtransaction
+- create a webhook
+- redactaccount
+- update an account
+- listaccounts
+- consolidateaccounts
+- removeaccounttag
+- get all relations for an account
+- updateinquiry
+- approve an inquiry
+- createaccount
+- listwebhooks
+- consolidate accounts
+- list all reports
+- addaccounttag
+- list all inquiries
+- create an inquiry
 - createlist
 slug: persona-capability
 source_filename: persona-capability.yaml

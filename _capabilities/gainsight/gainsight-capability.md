@@ -25,16 +25,16 @@ personas: []
 provider_name: Gainsight
 provider_slug: gainsight
 search_terms:
-- getbulkjob
 - gainsight list bulk jobs
-- gainsight get bulk job status
-- api
-- gainsight create a bulk job
+- getbulkjob
+- gainsight
 - getbulkjoberrors
+- gainsight create a bulk job
+- listbulkjobs
+- api
+- gainsight get bulk job status
 - gainsight get bulk job errors
 - createbulkjob
-- listbulkjobs
-- gainsight
 slug: gainsight-capability
 source_filename: gainsight-capability.yaml
 source_heading: Capability Spec

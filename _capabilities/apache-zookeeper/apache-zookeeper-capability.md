@@ -93,56 +93,56 @@ personas: []
 provider_name: Apache ZooKeeper
 provider_slug: apache-zookeeper
 search_terms:
-- configuration management
-- zookeeper
-- getenvironment
-- apache zookeeper get full server details
-- leader election
-- apache zookeeper list sessions and ephemeral nodes
-- getwatchsummary
-- getconnections
-- apache zookeeper get current voting view
-- getconfiguration
-- apache zookeeper get server environment
-- healthcheck
-- apache
-- resetconnectionstats
-- apache zookeeper reset connection statistics
-- apache zookeeper get watches by path
-- open source
-- apache zookeeper get data tree digest
-- apache zookeeper get data directory sizes
-- service discovery
-- getserverinfo
-- apache zookeeper get watches by connection
-- api
-- apache zookeeper get monitoring metrics
-- apache zookeeper get server configuration
-- getsystemproperties
-- apache zookeeper get server statistics
-- getmonitormetrics
-- apache zookeeper get last snapshot info
 - apache zookeeper reset server statistics
-- apache zookeeper check if leader
-- gethash
+- apache zookeeper get data directory sizes
+- apache zookeeper get last snapshot info
+- getconfiguration
+- apache zookeeper list sessions and ephemeral nodes
+- leader election
 - apache zookeeper list client connections
-- distributed coordination
-- isreadonly
-- apache zookeeper get watch summary
-- getvotingview
-- resetstats
 - getleader
-- apache zookeeper health check
-- apache zookeeper get initial configuration
-- getwatchesbypath
-- getserverstats
-- getwatchesbyconnection
-- apache zookeeper check read-only mode
-- getdirectorysize
-- getlastsnapshot
+- apache zookeeper reset connection statistics
 - getinitialconfiguration
+- getmonitormetrics
+- api
 - apache zookeeper get jvm system properties
+- getenvironment
+- isreadonly
+- distributed coordination
+- apache zookeeper get server environment
+- getwatchsummary
+- open source
+- getconnections
+- getdirectorysize
+- getvotingview
+- apache zookeeper get data tree digest
+- gethash
+- apache zookeeper get server statistics
+- getserverstats
+- apache zookeeper get monitoring metrics
+- configuration management
+- apache zookeeper health check
+- getwatchesbypath
+- apache
+- getwatchesbyconnection
+- service discovery
+- healthcheck
 - getdump
+- apache zookeeper get initial configuration
+- zookeeper
+- resetstats
+- apache zookeeper check if leader
+- apache zookeeper get full server details
+- getsystemproperties
+- getserverinfo
+- apache zookeeper check read-only mode
+- apache zookeeper get server configuration
+- resetconnectionstats
+- apache zookeeper get watch summary
+- apache zookeeper get current voting view
+- apache zookeeper get watches by path
+- apache zookeeper get watches by connection
+- getlastsnapshot
 slug: apache-zookeeper-capability
 source_filename: apache-zookeeper-capability.yaml
 source_heading: Capability Spec

@@ -25,24 +25,24 @@ personas: []
 provider_name: Google Search Ads 360 Reporting
 provider_slug: google-search-ads-360
 search_terms:
-- google search ads 360 reporting stream campaign data
-- listcustomcolumns
-- '360'
-- google search ads 360 reporting get a resource
-- google
-- api
+- keywords
 - search ads 360
+- google search ads 360 reporting search campaign data
+- campaign management
+- searchstream
+- conversions
+- getresource
+- google search ads 360 reporting stream campaign data
+- reporting
 - search
 - ads
-- reporting
-- campaign management
-- google search ads 360 reporting list custom columns
-- getresource
-- conversions
-- searchstream
-- keywords
+- google
 - search advertising
-- google search ads 360 reporting search campaign data
+- api
+- google search ads 360 reporting get a resource
+- listcustomcolumns
+- '360'
+- google search ads 360 reporting list custom columns
 slug: google-search-ads-360-capability
 source_filename: google-search-ads-360-capability.yaml
 source_heading: Capability Spec

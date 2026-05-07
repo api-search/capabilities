@@ -233,113 +233,113 @@ personas: []
 provider_name: FINOS
 provider_slug: finos
 search_terms:
-- get details of the requested signal.
+- get v3 dlp violations signal
+- post v3 stream sid share
+- put v1 dlp policies policyid
+- api
 - get v1 dlp violations message
+- get v3 dlp policies
+- enables a policy.
+- get information about the agent
+- download an attachment.
+- read the specified real time message / event stream ("datafeed").
+- get v1 dlp violations signal
+- get v1 dlp dictionaries dictid data download
+- get all policies
+- get v3 dlp violations stream
+- post v3 dlp policies policyid update
+- post v1 dlp dictionaries dictid data upload
+- get v1 dlp violations stream
+- get v1 dlp policies
+- get v1 dlp dictionaries
+- delete a dictionary
+- post v1 dlp policies policyid disable
+- get v1 info
+- get v3 dlp policies policyid
+- post v3 dlp policies policyid delete
+- unsubscribe to a signal.
+- delete a signal.
+- get attachments that were sent as part of messages that were flagged by the dlp system.
+- get violations as a result of policy enforcement on streams.
+- updates a dictionary
+- returns the list of active datafeeds of the user.
+- post v3 dlp policies policyid enable
+- get v3 dlp violation attachment
+- get details of the requested signal.
+- get a policy
+- get v1 audittrail privilegeduser
+- listdatafeed
+- financial services
+- post v1 dlp dictionaries
+- delete v1 dlp policies policyid
+- get v4 stream sid message
+- post v1 dlp policies policyid enable
+- update an existing message.
+- create a signal.
+- get v3 dlp violations message
+- get messages from an existing stream.
+- test endpoint, returns input.
+- post v4 message import
+- delete a policy
+- get v1 message id
 - get a message by id
+- get v1 signals id get
+- post v1 signals id unsubscribe
+- readdatafeed
+- subscribe to a signal.
+- createdatafeed
+- v3health
+- post v1 signals create
+- list signals for the requesting user. this includes signals that the user has created and public signals to which they subscribed.
+- post v3 dlp policies policyid disable
+- get v1 signals list
+- get v1 signals id subscribers
+- downloads base 64 encoded dictionary content.
 - provisional - share a piece of content into symphony
 - post a message to multiple existing streams.
-- get v3 dlp violations stream
-- subscribe to a signal.
-- delete v1 dlp dictionaries dictid
-- delete the specified real time message / event stream ("datafeed").
-- creates and reads a real time feed of messages and events of your pod (datahose)
-- api
-- post v1 dlp policies
-- get v1 dlp policies
-- post v1 dlp dictionaries dictid data upload
-- get v3 dlp violations message
-- unsubscribe to a signal.
-- get v1 message id
-- update an existing message.
-- v3extendedhealth
-- get information about the agent
-- create a new real time feed of messages and events.
-- checks health status
-- test endpoint, returns input.
-- get v1 stream sid attachment
-- post v1 signals create
-- get the subscribers of a signal
-- get violations as a result of policy enforcement on messages.
-- updates a policy. cannot be used for creation.
-- post v1 dlp dictionaries
-- get messages from an existing stream.
-- delete v1 dlp policies policyid
-- get all policies
-- delete a signal.
-- override dictionary content with provided content.
-- post v4 stream sid message create
-- listdatafeed
-- put v1 dlp dictionaries dictid
-- get v3 dlp policies
-- post v1 signals id delete
-- update a signal.
-- createdatafeed
-- checks health status of services and users
-- post v1 signals id subscribe
-- delete a policy
-- enables a policy.
-- linux foundation
-- list signals for the requesting user. this includes signals that the user has created and public signals to which they subscribed.
-- downloads base 64 encoded dictionary content.
-- post v1 message search
-- get v1 signals list
-- post v3 stream sid share
-- open source
-- post v4 message import
-- post v1 util echo
-- get v1 dlp violations signal
-- get dictionary metadata
-- get v1 dlp dictionaries dictid
-- get v3 dlp policies policyid
-- post v1 dlp policies policyid disable
-- create a dictionary
-- get v1 audittrail privilegeduser
-- create a signal.
-- get v1 dlp dictionaries dictid data download
-- get violations as a result of policy enforcement on signals.
-- get violations as a result of policy enforcement on streams.
-- post v3 dlp policies
-- get attachments that were sent as part of messages that were flagged by the dlp system.
-- post a message to one existing stream.
-- post v3 dlp policies policyid disable
-- post v3 dlp policies policyid enable
-- v3health
-- post v3 dlp policies policyid update
-- readevents
-- post v1 signals id update
-- post v1 dlp policies policyid enable
-- get all dictionary metadatas
-- get v1 dlp violations stream
-- get v1 signals id get
-- get v1 dlp dictionaries
-- disables a policy.
-- get v1 signals id subscribers
-- get v3 dlp violations signal
-- post v3 dlp policies policyid delete
-- readdatafeed
-- get v4 stream sid message
-- get v3 dlp violation attachment
 - deletedatafeed
-- search messages
-- returns the list of active datafeeds of the user.
-- financial services
-- post v4 stream sid message mid update
-- updates a dictionary
-- get v1 dlp policies policyid
-- get a list of actions performed by a privileged account acting as privileged user given a period of time.
-- get v1 message search
-- creates a policy
-- get v1 info
-- import messages from other systems into symphony.
-- post v4 message blast
-- post v1 signals id unsubscribe
-- read the specified real time message / event stream ("datafeed").
-- delete a dictionary
-- get a policy
-- download an attachment.
 - finos
-- put v1 dlp policies policyid
+- create a dictionary
+- post v1 signals id update
+- post v1 dlp policies
+- put v1 dlp dictionaries dictid
+- updates a policy. cannot be used for creation.
+- checks health status
+- post v4 message blast
+- get v1 dlp dictionaries dictid
+- get a list of actions performed by a privileged account acting as privileged user given a period of time.
+- get dictionary metadata
+- checks health status of services and users
+- post v3 dlp policies
+- get v1 stream sid attachment
+- get all dictionary metadatas
+- creates and reads a real time feed of messages and events of your pod (datahose)
+- post v1 message search
+- post v1 util echo
+- linux foundation
+- open source
+- delete the specified real time message / event stream ("datafeed").
 - fintech
+- import messages from other systems into symphony.
+- creates a policy
+- get the subscribers of a signal
+- create a new real time feed of messages and events.
+- delete v1 dlp dictionaries dictid
+- update a signal.
+- get violations as a result of policy enforcement on messages.
+- post v1 signals id delete
+- search messages
+- get violations as a result of policy enforcement on signals.
+- get v1 message search
+- disables a policy.
+- v3extendedhealth
+- post v4 stream sid message create
+- post v1 signals id subscribe
+- readevents
+- post v4 stream sid message mid update
+- override dictionary content with provided content.
+- get v1 dlp policies policyid
+- post a message to one existing stream.
 slug: finos-capability
 source_filename: finos-capability.yaml
 source_heading: Capability Spec

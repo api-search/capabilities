@@ -21,29 +21,29 @@ personas: []
 provider_name: CCH Tagetik
 provider_slug: tagetik
 search_terms:
-- corporate performance management
-- financial reporting
-- reporting
 - analytics
-- query financial consolidation data across entities, periods, and scenarios
-- query analytical workspace data for planning and analysis
-- query financial data
-- financial consolidation
-- financial close
-- forecasting
-- query cch tagetik financial consolidation data with filters for year, period, scenario (actual/budget/forecast), entity, and account
-- esg
 - query cch tagetik analytical workspace data for budget, forecast, and planning scenarios
-- retrieve financial records filtered by year, period, scenario, and entity
-- financial planning
-- retrieve analytical workspace records
+- corporate performance management
 - retrieve available entity sets and their properties
-- odata
-- query analytical data
+- retrieve financial records filtered by year, period, scenario, and entity
 - discover available cch tagetik entity sets, dimensions, and data models in a given database
-- budgeting
+- financial reporting
 - odata service metadata for entity discovery
+- query financial consolidation data across entities, periods, and scenarios
+- query cch tagetik financial consolidation data with filters for year, period, scenario (actual/budget/forecast), entity, and account
+- financial close
+- odata
 - get odata metadata
+- query financial data
+- forecasting
+- financial planning
+- financial consolidation
+- retrieve analytical workspace records
+- esg
+- query analytical data
+- budgeting
+- reporting
+- query analytical workspace data for planning and analysis
 slug: financial-reporting
 source_filename: financial-reporting.yaml
 source_heading: Capability Spec

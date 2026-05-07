@@ -33,47 +33,47 @@ personas: []
 provider_name: Salesforce Sales Cloud
 provider_slug: salesforce-sales-cloud
 search_terms:
-- list bulk query jobs
-- data integration
-- sales
-- bulk query job management
-- create a bulk ingest job
-- create a new bulk data ingest job for large dataset loading
+- bulk loading
+- list query jobs
+- get ingest job
+- extract salesforce data using soql for integration pipelines
+- create bulk ingest job
 - get bulk ingest job
-- create a bulk query job to extract large datasets via soql
-- create ingest job
-- get bulk job status
-- cloud
-- close bulk ingest job
-- etl
-- customer management
-- enterprise
-- close or abort a bulk ingest job
 - get status and results of a bulk ingest job
-- soql data extraction
-- check api rate limits before running bulk operations
+- close or abort a bulk ingest job
+- change data capture
 - query
+- create bulk query job
+- check api rate limits before running bulk operations
+- bulk data ingest job management
+- list ingest jobs
+- list bulk ingest jobs
+- extract data with soql
+- list all bulk data ingest jobs and their statuses
+- list bulk query jobs
 - create a bulk query job
 - crm
-- get api limits
-- extract salesforce data using soql for integration pipelines
-- change data capture
-- extract data soql
-- individual job management
-- extract data with soql
-- create bulk ingest job
-- list bulk ingest jobs
-- sales cloud
-- list all bulk data ingest jobs and their statuses
-- create bulk query job
-- bulk data ingest job management
-- create query job
-- bulk loading
-- list ingest jobs
+- soql data extraction
 - events
-- list query jobs
+- bulk query job management
+- create a bulk query job to extract large datasets via soql
+- enterprise
+- create a new bulk data ingest job for large dataset loading
+- get api limits
+- get bulk job status
+- cloud
+- extract data soql
+- create a bulk ingest job
+- create ingest job
+- sales
+- etl
+- create query job
+- individual job management
+- customer management
+- data integration
+- sales cloud
+- close bulk ingest job
 - salesforce
-- get ingest job
 slug: data-integration
 source_filename: data-integration.yaml
 source_heading: Capability Spec

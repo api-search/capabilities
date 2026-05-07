@@ -57,59 +57,59 @@ personas: []
 provider_name: Sybase
 provider_slug: sybase
 search_terms:
-- get database
-- get cache performance metrics
-- single server information
-- get lock activity metrics
-- get real-time cpu, memory, active connections, and uptime
-- database details and space usage
-- list all databases with status, size, and owner information
-- server configuration (sp_configure)
-- get server details
-- backup
-- get version, status, host, port, and configuration summary for a server
+- database backup management
+- get cache metrics
+- create database
+- create a database
 - sybase ase
+- get lock contention statistics, deadlock counts, and wait times
+- get performance metrics
+- list backup history with status and size for databases on a server
+- get cache performance metrics
+- get version, status, host, port, and configuration summary for a server
+- get server details
+- sap ase server management
+- cache performance statistics
+- get server status
+- get lock metrics
+- create a new database on a sap ase server
 - monitoring
-- initiate a full, transaction log, or incremental database backup
-- list backups
-- get data cache and procedure cache hit ratios for all named caches
-- enterprise
-- sql
-- list all available sap ase server instances
-- server performance metrics
 - database management
-- get all server configuration parameters (sp_configure equivalent)
+- get lock activity metrics
+- list databases
+- list all databases with status, size, and owner information
+- sap
+- sybase
+- get cpu, i/o, tps, network, and process metrics for a server
+- get database
+- initiate a database backup
+- server operational status
 - list servers
+- sql
+- administration
+- get real-time cpu, memory, active connections, and uptime
+- get configuration
+- backup
+- get all server configuration parameters (sp_configure equivalent)
+- get server
 - get database details including data usage, log usage, and configuration
 - list ase servers
-- database
-- create a new database on a sap ase server
-- get performance metrics
-- get server
-- get server status
-- sap
-- get cache metrics
-- get lock metrics
-- get lock contention statistics, deadlock counts, and wait times
+- get data cache and procedure cache hit ratios for all named caches
+- initiate a full, transaction log, or incremental database backup
+- single server information
+- enterprise
 - lock contention statistics
-- sap ase server management
-- sybase
-- create a database
-- administration
-- list backup history with status and size for databases on a server
-- create database
-- list databases
-- server operational status
-- performance
-- initiate a database backup
-- create backup
-- list backup history
-- get database details
+- list backups
 - get server configuration
-- get configuration
-- cache performance statistics
-- database backup management
-- get cpu, i/o, tps, network, and process metrics for a server
+- database
+- list backup history
+- performance
+- server performance metrics
+- get database details
+- server configuration (sp_configure)
+- database details and space usage
+- create backup
+- list all available sap ase server instances
 slug: database-administration
 source_filename: database-administration.yaml
 source_heading: Capability Spec

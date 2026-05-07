@@ -185,102 +185,102 @@ personas: []
 provider_name: Azure Blob Storage
 provider_slug: microsoft-azure-blob-storage
 search_terms:
-- azure blob storage list containers
-- azure blob storage lease container
-- getcontainermetadata
-- setblobtags
-- azure blob storage put block from url
-- azure blob storage get page ranges diff
-- incrementalcopyblob
-- putblocklist
-- azure blob storage create container
-- listblobs
-- getpagerangesdiff
-- azure blob storage set blob tier
-- deleteblobimmutabilitypolicy
-- azure blob storage abort copy blob
-- appendblockfromurl
-- azure blob storage delete blob immutability policy
-- appendblock
-- getcontainerproperties
-- azure blob storage get container metadata
-- api
-- azure blob storage get blob
-- createcontainer
-- azure blob storage set blob metadata
 - azure blob storage get block list
-- leasecontainer
-- azure blob storage get blob service properties
-- azure blob storage get blob service stats
-- restorecontainer
-- listcontainers
-- azure blob storage restore container
-- submitblobbatch
-- setcontainermetadata
-- azure blob storage snapshot blob
-- storage
-- object storage
-- azure blob storage get page ranges
-- azure blob storage set container metadata
-- azure blob storage append block from url
-- putblockfromurl
-- azure blob storage delete container
 - getblobmetadata
-- azure blob storage lease blob
-- azure blob storage get container acl
-- getblobserviceproperties
-- abortcopyblob
-- azure blob storage undelete blob
-- azure blob storage submit blob batch
-- getblobtags
-- azure blob storage put page
-- copyblob
-- setblobserviceproperties
-- setblobimmutabilitypolicy
-- getblobservicestats
-- azure blob storage incremental copy blob
-- getpageranges
-- putpage
-- blob
-- azure blob storage delete blob
-- blobs
-- setbloblegalhold
-- azure blob storage put blob
-- azure blob storage list blobs
-- azure blob storage set blob service properties
-- getcontaineracl
-- getuserdelegationkey
-- setcontaineracl
-- deleteblob
-- azure blob storage set container acl
-- azure blob storage copy blob
-- getblocklist
 - setblobhttpheaders
+- azure blob storage snapshot blob
+- api
+- getblocklist
+- deleteblob
 - azure blob storage get user delegation key
-- findblobsbytags
-- azure blob storage get blob metadata
-- azure blob storage set blob immutability policy
-- azure blob storage append block
-- azure blob storage get blob tags
+- azure blob storage get container metadata
+- leaseblob
 - undeleteblob
 - microsoft
-- setblobtier
-- azure blob storage put block
-- setblobmetadata
-- snapshotblob
-- azure
-- azure blob storage find blobs by tags
-- leaseblob
-- deletecontainer
-- cloud storage
-- azure blob storage set blob tags
-- putblock
+- getblobserviceproperties
 - getblob
-- azure blob storage set blob http headers
-- putblob
+- azure blob storage set blob metadata
+- azure blob storage set container metadata
+- azure blob storage put block
+- azure blob storage delete container
+- getpagerangesdiff
+- findblobsbytags
+- azure blob storage lease container
+- azure blob storage append block from url
+- azure blob storage incremental copy blob
+- blobs
+- setcontaineracl
+- putblockfromurl
+- azure blob storage get container acl
+- setblobserviceproperties
+- azure blob storage abort copy blob
+- azure blob storage submit blob batch
+- azure blob storage delete blob immutability policy
+- cloud storage
+- azure blob storage get blob
+- azure blob storage put blob
 - azure blob storage get container properties
+- blob
+- createcontainer
+- azure blob storage set blob service properties
+- putblob
+- object storage
+- setblobtags
+- appendblockfromurl
+- getcontainermetadata
+- appendblock
+- storage
+- getcontaineracl
+- leasecontainer
+- azure
+- azure blob storage list blobs
+- putblock
+- azure blob storage restore container
+- setblobtier
+- azure blob storage set container acl
+- listblobs
+- azure blob storage put block from url
+- setblobmetadata
+- setcontainermetadata
+- deleteblobimmutabilitypolicy
+- azure blob storage get blob tags
+- azure blob storage copy blob
+- copyblob
 - azure blob storage set blob legal hold
+- azure blob storage put page
+- azure blob storage get blob service properties
+- getblobservicestats
+- azure blob storage list containers
+- deletecontainer
+- snapshotblob
+- incrementalcopyblob
+- abortcopyblob
+- azure blob storage get page ranges diff
+- submitblobbatch
+- azure blob storage get blob metadata
 - azure blob storage put block list
+- putpage
+- setblobimmutabilitypolicy
+- azure blob storage lease blob
+- getblobtags
+- getuserdelegationkey
+- azure blob storage set blob http headers
+- azure blob storage get page ranges
+- azure blob storage set blob tier
+- azure blob storage find blobs by tags
+- restorecontainer
+- azure blob storage create container
+- azure blob storage get blob service stats
+- getpageranges
+- azure blob storage undelete blob
+- setbloblegalhold
+- listcontainers
+- azure blob storage set blob immutability policy
+- getcontainerproperties
+- azure blob storage delete blob
+- putblocklist
+- azure blob storage append block
+- azure blob storage set blob tags
 slug: microsoft-azure-blob-storage-capability
 source_filename: microsoft-azure-blob-storage-capability.yaml
 source_heading: Capability Spec

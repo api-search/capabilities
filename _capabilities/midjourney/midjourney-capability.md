@@ -41,24 +41,24 @@ personas: []
 provider_name: midjourney
 provider_slug: midjourney
 search_terms:
-- generate text prompts from an image
-- createvariationjob
-- get the status and results of a job
-- midjourney
-- canceljob
-- generate images from a text prompt
-- api
-- createdescribejob
-- blend multiple images together
-- getjobstatus
-- list image generation jobs
-- cancel a pending or in-progress job
 - upscale a generated image to higher resolution
-- listjobs
-- createblendjob
-- createupscalejob
-- create variations of a generated image
 - createimaginejob
+- createdescribejob
+- generate text prompts from an image
+- createupscalejob
+- createblendjob
+- blend multiple images together
+- get the status and results of a job
+- listjobs
+- cancel a pending or in-progress job
+- canceljob
+- createvariationjob
+- create variations of a generated image
+- list image generation jobs
+- midjourney
+- getjobstatus
+- api
+- generate images from a text prompt
 slug: midjourney-capability
 source_filename: midjourney-capability.yaml
 source_heading: Capability Spec

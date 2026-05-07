@@ -21,22 +21,22 @@ personas: []
 provider_name: CharityAPI
 provider_slug: charityapi
 search_terms:
-- autocompleteorganizations
-- ein
-- tax compliance
-- 501c3
-- charities
-- autocomplete organization names
-- getorganizationbyein
-- api
-- irs
-- check public charity status
-- non-profits
 - donations
 - verification
+- ein
+- charities
+- getorganizationbyein
+- non-profits
+- tax compliance
+- autocompleteorganizations
 - charityapi
-- get organization by ein
 - publiccharitycheck
+- api
+- check public charity status
+- autocomplete organization names
+- 501c3
+- irs
+- get organization by ein
 slug: charityapi-capability
 source_filename: charityapi-capability.yaml
 source_heading: Capability Spec

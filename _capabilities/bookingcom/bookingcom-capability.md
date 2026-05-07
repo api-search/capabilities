@@ -13,17 +13,17 @@ personas: []
 provider_name: Booking.com
 provider_slug: bookingcom
 search_terms:
-- hotels
-- get api status
-- travel
+- affiliates
+- reservations
 - getstatus
 - connectivity
-- reservations
+- travel
+- get api status
 - api
-- affiliates
-- bookingcom
-- accommodations
 - hospitality
+- accommodations
+- bookingcom
+- hotels
 slug: bookingcom-capability
 source_filename: bookingcom-capability.yaml
 source_heading: Capability Spec

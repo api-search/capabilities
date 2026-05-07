@@ -45,32 +45,32 @@ personas: []
 provider_name: Interactive Brokers
 provider_slug: interactive-brokers
 search_terms:
-- get brokerage accounts
-- get authentication status
-- market data
-- getmarketdatahistory
-- getauthstatus
-- getmarketdatasnapshot
 - get portfolio positions
-- get account summary
-- searchcontracts
-- interactive
-- getliveorders
 - getpositions
-- getaccountsummary
-- trading
+- get historical market data
+- get authentication status
+- get account summary
+- get market data snapshot
 - api
+- orders
+- brokers
+- searchcontracts
+- get brokerage accounts
 - brokerage
+- getaccountsummary
+- interactive
+- trading
+- portfolio
+- getauthstatus
+- placeorder
+- getmarketdatahistory
 - get live orders
 - search contracts
-- brokers
 - getaccounts
-- placeorder
-- orders
-- portfolio
-- get market data snapshot
+- getmarketdatasnapshot
+- market data
 - place an order
-- get historical market data
+- getliveorders
 slug: interactive-brokers-capability
 source_filename: interactive-brokers-capability.yaml
 source_heading: Capability Spec

@@ -33,26 +33,26 @@ personas: []
 provider_name: Google AdMob
 provider_slug: google-admob
 search_terms:
-- listaccounts
 - google admob list mediation groups
-- mobile apps
-- google admob create ad unit
-- listapps
-- google admob list ad units
-- google
-- ad mediation
-- reports
-- listmediationgroups
-- listadunits
-- google admob list accounts
 - app monetization
-- api
+- generatenetworkreport
 - createadunit
-- google admob generate network report
+- api
+- listmediationgroups
+- ad mediation
+- google
+- google admob list apps
+- reports
+- mobile apps
+- google admob list ad units
 - admob
 - mobile advertising
-- google admob list apps
-- generatenetworkreport
+- listaccounts
+- google admob generate network report
+- listapps
+- google admob create ad unit
+- listadunits
+- google admob list accounts
 slug: google-admob-capability
 source_filename: google-admob-capability.yaml
 source_heading: Capability Spec

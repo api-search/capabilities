@@ -29,40 +29,40 @@ personas: []
 provider_name: SAP Business Intelligence
 provider_slug: sap-bi
 search_terms:
-- get info provider
-- get configuration of a specific datasphere space.
-- browse catalog
-- list datasphere spaces.
-- list infoproviders in bw/4hana.
-- datasphere list spaces
-- bw/4hana infoproviders.
-- reporting
-- bw list info providers
 - analytics
-- datasphere get space
-- bw get info provider
-- get infoprovider details.
-- browse the datasphere data catalog.
+- list data source connections.
 - list all data source connections configured in datasphere.
+- list connections
+- browse the datasphere data catalog.
+- data warehouse
+- datasphere browse catalog
+- browse catalog
+- get info provider
+- data catalog.
+- sap
+- business intelligence
+- browse the datasphere data catalog for available datasets and views.
+- single infoprovider.
+- bw list info providers
 - list info providers
 - data source connections.
-- data visualization
-- data warehouse
-- datasphere
-- sap
-- list spaces
-- single infoprovider.
-- datasphere browse catalog
-- business intelligence
-- list connections
-- list all infoproviders (infocubes, dsos, compositeproviders) in sap bw/4hana.
-- get metadata for a specific bw/4hana infoprovider.
+- get configuration of a specific datasphere space.
+- datasphere get space
 - datasphere list connections
+- get infoprovider details.
+- bw/4hana infoproviders.
+- get metadata for a specific bw/4hana infoprovider.
 - list sap datasphere spaces the user has access to.
-- browse the datasphere data catalog for available datasets and views.
 - datasphere spaces.
-- data catalog.
-- list data source connections.
+- list datasphere spaces.
+- reporting
+- bw get info provider
+- list infoproviders in bw/4hana.
+- list spaces
+- datasphere list spaces
+- list all infoproviders (infocubes, dsos, compositeproviders) in sap bw/4hana.
+- data visualization
+- datasphere
 slug: data-warehouse-access
 source_filename: data-warehouse-access.yaml
 source_heading: Capability Spec

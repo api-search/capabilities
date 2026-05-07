@@ -9,16 +9,16 @@ personas: []
 provider_name: Microsoft Azure API Management
 provider_slug: microsoft-azure-api-management
 search_terms:
-- subscriptions
-- ai gateway
-- onboarding
-- self service
-- enterprise
-- microsoft azure
 - api discovery
+- developer experience
+- microsoft azure
 - api gateway
 - api management
-- developer experience
+- self service
+- enterprise
+- ai gateway
+- onboarding
+- subscriptions
 slug: developer-onboarding
 source_filename: developer-onboarding.yaml
 source_heading: Capability Spec

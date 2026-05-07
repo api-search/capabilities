@@ -53,37 +53,37 @@ personas: []
 provider_name: Google Cloud IAM
 provider_slug: google-cloud-iam
 search_terms:
-- google cloud iam get a service account
-- identity
+- querytestablepermissions
+- google cloud iam list service account keys
+- listserviceaccountkeys
 - permissions
-- google cloud iam create a custom role
-- google cloud iam create a service account
-- cloud
-- google
+- listprojectroles
 - google cloud iam list service accounts
+- google cloud iam update a service account
+- google cloud iam list project roles
+- deleteserviceaccount
+- api
+- google cloud iam list roles
+- google cloud iam delete a service account
+- google cloud iam get a service account
+- createserviceaccount
+- google cloud iam create a custom role
+- createprojectrole
+- google
+- identity
+- iam
+- getserviceaccount
+- listserviceaccounts
+- cloud
+- access management
+- createserviceaccountkey
+- google cloud iam query testable permissions
+- listroles
+- patchserviceaccount
+- google cloud iam create a service account
+- google cloud
 - security
 - google cloud iam create a service account key
-- createserviceaccount
-- google cloud iam query testable permissions
-- deleteserviceaccount
-- google cloud iam delete a service account
-- google cloud
-- createprojectrole
-- google cloud iam list project roles
-- createserviceaccountkey
-- google cloud iam update a service account
-- querytestablepermissions
-- listroles
-- api
-- listserviceaccountkeys
-- patchserviceaccount
-- access management
-- google cloud iam list roles
-- google cloud iam list service account keys
-- iam
-- listserviceaccounts
-- listprojectroles
-- getserviceaccount
 slug: google-cloud-iam-capability
 source_filename: google-cloud-iam-capability.yaml
 source_heading: Capability Spec

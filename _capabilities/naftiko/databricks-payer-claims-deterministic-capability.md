@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- healthcare
-- query claims
-- api integration
 - get claim result
-- capabilities
-- governance
-- ai
-- spec-driven integration
-- mcp
-- databricks
 - payer
+- governance
+- databricks
+- query claims
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- healthcare
+- mcp
+- naftiko
 slug: databricks-payer-claims-deterministic-capability
 source_filename: databricks-payer-claims-deterministic-capability.yaml
 source_heading: Capability Spec

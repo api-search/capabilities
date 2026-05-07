@@ -42,57 +42,57 @@ personas: []
 provider_name: Red Hat
 provider_slug: red-hat
 search_terms:
-- list roles in a realm.
-- list clients.
-- list groups in a realm.
-- list identity providers
-- identity
-- delete session
-- keycloak
-- list realm roles
-- red hat
-- hybrid cloud
+- list roles.
+- get realm
 - create a user.
-- realm clients.
-- terminate a user session.
-- create user
-- list identity providers.
-- get realm configuration details.
-- get user details.
-- cloud
-- realm users.
 - containers
-- enterprise
-- list clients
+- get realm details.
+- list groups.
+- keycloak
+- list groups
+- red hat
+- identity providers.
+- list roles in a realm.
+- realm roles.
+- delete a user from a realm.
+- list external identity providers.
+- specific realm.
+- list all keycloak realms.
+- open source
+- keycloak realms.
+- delete user
+- list all realms.
+- identity
+- create a new user in a realm.
+- list users
+- delete session
 - kubernetes
 - linux
-- get realm details.
-- register a new client application.
-- open source
-- delete user
-- list client applications in a realm.
-- list roles.
-- list external identity providers.
-- list all realms.
-- realm roles.
-- realm groups.
-- list all keycloak realms.
-- list realms
-- specific realm.
-- get realm
-- keycloak realms.
-- list users.
+- realm clients.
+- list clients
+- list clients.
+- enterprise
+- realm users.
+- get realm configuration details.
+- list identity providers
+- list realm roles
 - access management
+- cloud
 - list users in a realm.
 - get user
-- list users
-- list groups.
-- list groups
-- identity providers.
+- terminate a user session.
+- list client applications in a realm.
+- create user
+- get user details.
+- realm groups.
+- hybrid cloud
+- list realms
+- list users.
+- list groups in a realm.
 - create client
-- create a new user in a realm.
-- delete a user from a realm.
 - list roles
+- register a new client application.
+- list identity providers.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

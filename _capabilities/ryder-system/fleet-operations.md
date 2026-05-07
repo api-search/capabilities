@@ -29,35 +29,35 @@ personas: []
 provider_name: Ryder System
 provider_slug: ryder-system
 search_terms:
+- get vehicle
+- list ryder service center locations with available services and business hours
 - logistics
-- list fleet invoices with line items and payment status
-- invoices
-- list all vehicles in the ryder-managed fleet with specifications
-- list fleet vehicles
-- fleet vehicle catalog
-- get maintenance and repair history for a specific fleet vehicle
+- get detailed vehicle information and specifications
 - service history
-- list locations
-- list all vehicles in the fleet with specifications
-- get detailed information and specifications for a specific fleet vehicle
-- vehicle service history
-- fleet management
-- locations
-- get maintenance history for a specific vehicle
+- invoices
 - supply chain
-- transportation
 - fleet invoices
 - vehicles
-- list ryder service center locations with services and hours
+- list fleet invoices with line items and payment status
+- list all vehicles in the fleet with specifications
 - get service history
-- list ryder service center locations with available services and business hours
-- list fleet invoices with line items, amounts, and payment status
-- ryder service locations
-- list invoices
-- trucking
-- get vehicle
-- get detailed vehicle information and specifications
+- get maintenance history for a specific vehicle
+- locations
 - single vehicle details
+- transportation
+- trucking
+- get detailed information and specifications for a specific fleet vehicle
+- list all vehicles in the ryder-managed fleet with specifications
+- list fleet vehicles
+- fleet management
+- list ryder service center locations with services and hours
+- ryder service locations
+- fleet vehicle catalog
+- list invoices
+- list locations
+- list fleet invoices with line items, amounts, and payment status
+- vehicle service history
+- get maintenance and repair history for a specific fleet vehicle
 slug: fleet-operations
 source_filename: fleet-operations.yaml
 source_heading: Capability Spec

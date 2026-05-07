@@ -62,39 +62,39 @@ provider_name: Oracle Primavera
 provider_slug: oracle-primavera
 search_terms:
 - list resource assignments
-- construction
-- listwbs
-- scheduling
-- list baselines
-- deleteproject
-- updateactivity
-- primavera
-- portfolio management
-- update an activity
 - engineering
-- updateproject
-- create a project
-- listactivities
 - getproject
-- project management
-- listbaselines
-- list wbs elements
-- list resources
-- oracle
-- listresources
+- portfolio management
+- list baselines
 - api
-- createactivity
-- delete a project
-- update a project
-- listresourceassignments
-- listprojects
-- getactivity
+- construction
+- create a project
+- get a project
+- list resources
+- primavera
+- project management
+- listresources
+- updateproject
 - list projects
-- list activities
+- listactivities
+- createactivity
+- listbaselines
 - create an activity
 - get an activity
+- deleteproject
+- update a project
+- list wbs elements
+- list activities
+- listwbs
+- listresourceassignments
+- update an activity
+- listprojects
+- scheduling
+- getactivity
+- oracle
+- delete a project
+- updateactivity
 - createproject
-- get a project
 slug: oracle-primavera-capability
 source_filename: oracle-primavera-capability.yaml
 source_heading: Capability Spec

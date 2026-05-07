@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- build context
-- context engineering
-- api integration
 - governance
 - spec-driven integration
+- context engineering
+- build context
 - ai
-- mcp
 - capabilities
+- api integration
 - get context build
+- mcp
+- naftiko
 slug: mcp-first-context-engineering-capability
 source_filename: mcp-first-context-engineering-capability.yaml
 source_heading: Capability Spec

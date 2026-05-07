@@ -73,79 +73,79 @@ personas: []
 provider_name: Vibes Platform
 provider_slug: vibes-platform
 search_terms:
-- list all broadcasts for the company.
-- create event
-- mms
-- manage campaign participants.
-- manage subscriber subscription lists.
-- list wallet passes
-- list pending participants in a campaign.
-- get subscriber details by person key.
 - push notifications
-- list all mobile wallet passes (apple wallet and google pay) for the company.
-- list all subscription lists.
-- create a new broadcast message send.
-- submit an event to trigger event-based sms messages or push notifications.
-- add participant
-- manage subscriber acquisition campaigns.
-- send an mms message with pictures, links, or other multimedia content.
-- get person
-- broadcast messaging
-- send sms message
-- create wallet item
-- list acquisition campaigns
 - list wallet items
-- list pending participants in an acquisition campaign.
-- create broadcast
-- get subscriber details and subscription status by person key.
-- manage sms and push notification broadcasts.
-- list all acquisition campaigns.
 - submit an event to trigger sms or push notifications.
-- send an mms message with pictures, links, or other media.
-- acquisition campaigns
-- list all registered callbacks.
-- look up carrier information for mobile numbers.
-- sms
-- wallet passes
-- list all wallet passes.
-- mobile marketing
-- create a new sms or push notification broadcast message send.
-- list all subscriber subscription lists and their counts.
-- send a transactional sms message directly via the vibes connect aggregation api.
-- list callbacks
+- list broadcasts
 - subscription management
-- manage individual subscribers.
-- register callback
-- manage opt-in and delivery status callbacks.
-- look up the carrier and number type for a mobile number.
-- list all registered callback endpoints for opt-in and delivery notifications.
-- retrieve a specific broadcast.
 - list subscription lists
-- send mms message
+- list all sms and push notification broadcasts for the company.
 - list all subscriber acquisition campaigns and their status.
+- create a new broadcast message send.
+- manage campaign participants.
+- list all subscriber subscription lists and their counts.
+- get broadcast details and status.
+- list pending participants
 - mobile engagement
-- send an sms message via the connect aggregation api.
-- send mms messages with multimedia content.
-- retrieve carrier information for a mobile number.
-- submit events to trigger messages.
-- lookup carrier
-- get details and delivery status for a specific broadcast.
-- register a callback endpoint for opt-in or delivery status notifications.
-- get subscriber
-- create a new mobile wallet pass for a subscriber.
+- create wallet item
+- create wallet pass
 - add a person to an acquisition campaign.
 - send transactional sms messages.
-- list broadcasts
-- get broadcast
-- register a new callback endpoint.
-- list pending participants
-- create wallet pass
-- manage mobile wallet passes.
-- get broadcast details and status.
-- create a new wallet pass for a subscriber.
-- list all sms and push notification broadcasts for the company.
+- look up the carrier and number type for a mobile number.
+- submit an event to trigger event-based sms messages or push notifications.
 - rcs
+- get subscriber details and subscription status by person key.
+- send sms message
+- manage sms and push notification broadcasts.
+- sms
+- list all broadcasts for the company.
+- register a new callback endpoint.
+- create broadcast
+- list all registered callbacks.
+- send a transactional sms message directly via the vibes connect aggregation api.
+- get details and delivery status for a specific broadcast.
+- create a new mobile wallet pass for a subscriber.
+- list pending participants in an acquisition campaign.
+- list pending participants in a campaign.
+- list all wallet passes.
+- list callbacks
+- manage individual subscribers.
+- manage mobile wallet passes.
+- broadcast messaging
+- create event
+- send an sms message via the connect aggregation api.
+- get subscriber
+- list all mobile wallet passes (apple wallet and google pay) for the company.
+- wallet passes
+- mobile marketing
+- submit events to trigger messages.
+- lookup carrier
+- manage subscriber acquisition campaigns.
+- manage subscriber subscription lists.
+- list all registered callback endpoints for opt-in and delivery notifications.
+- send an mms message with pictures, links, or other media.
+- list acquisition campaigns
+- list all acquisition campaigns.
+- retrieve a specific broadcast.
+- mms
+- add participant
+- register callback
+- get person
+- look up carrier information for mobile numbers.
 - mobile messaging
+- list wallet passes
+- register a callback endpoint for opt-in or delivery status notifications.
+- get subscriber details by person key.
+- manage opt-in and delivery status callbacks.
+- list all subscription lists.
+- send an mms message with pictures, links, or other multimedia content.
+- retrieve carrier information for a mobile number.
+- create a new sms or push notification broadcast message send.
+- acquisition campaigns
+- get broadcast
+- create a new wallet pass for a subscriber.
+- send mms message
+- send mms messages with multimedia content.
 slug: mobile-messaging
 source_filename: mobile-messaging.yaml
 source_heading: Capability Spec

@@ -61,57 +61,57 @@ personas: []
 provider_name: Uptrace
 provider_slug: uptrace
 search_terms:
-- get alert
-- apm
-- list annotations for a project
-- individual alert rule
-- create a new dashboard
-- individual annotation
-- get details and dsn for a specific uptrace project
-- get details of a specific alert rule
-- create annotation
-- list alert rules for a project
-- devops
-- chart annotations for deployment and event tracking
-- get annotation
-- list dashboards for a project
-- alert rule management
-- delete an annotation
-- create a new uptrace observability project
-- create a new uptrace project
-- alerting
-- individual project
-- get project details and dsn
-- monitoring
-- create dashboard
-- list annotations
 - opentelemetry
-- project management
-- create project
-- get alert rule details
-- create a new alert rule
-- delete annotation
-- delete alert
-- observability
-- delete an alert rule
-- create a deployment or event annotation
-- list all uptrace projects
-- get project
-- get annotation details
-- list projects
-- create alert
-- create a new monitoring alert rule using promql
-- uptrace
-- create a deployment annotation marking a release or incident on dashboards
-- delete a chart annotation
-- get details of a specific chart annotation
-- list dashboards
-- list alerts
-- list all uptrace observability projects
-- sre
-- distributed tracing
-- list deployment and event annotations for a project
+- list annotations for a project
 - dashboard management
+- get details of a specific alert rule
+- devops
+- create alert
+- distributed tracing
+- list annotations
+- create a deployment or event annotation
+- list deployment and event annotations for a project
+- list dashboards for a project
+- list all uptrace projects
+- delete annotation
+- alert rule management
+- create a new alert rule
+- create a new uptrace project
+- apm
+- list all uptrace observability projects
+- monitoring
+- delete alert
+- list alert rules for a project
+- delete an alert rule
+- project management
+- get details of a specific chart annotation
+- get details and dsn for a specific uptrace project
+- get project details and dsn
+- get alert rule details
+- chart annotations for deployment and event tracking
+- uptrace
+- create project
+- list projects
+- create a new monitoring alert rule using promql
+- observability
+- create a new dashboard
+- sre
+- individual annotation
+- individual alert rule
+- create dashboard
+- get annotation details
+- create a new uptrace observability project
+- list alerts
+- get alert
+- list dashboards
+- delete an annotation
+- get project
+- get annotation
+- individual project
+- create a deployment annotation marking a release or incident on dashboards
+- alerting
+- delete a chart annotation
+- create annotation
 slug: observability-and-monitoring
 source_filename: observability-and-monitoring.yaml
 source_heading: Capability Spec

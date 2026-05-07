@@ -21,19 +21,19 @@ personas: []
 provider_name: Ion Group
 provider_slug: ion-group
 search_terms:
-- trading
-- financial
 - ion group get one entity by its id
-- ion
-- api
-- ion group get list of entities (with optional filters)
-- group
-- get entities hierarchy
-- get entities
-- get entities id
-- ion group get entities hierarchy (with optional filters)
 - analytics
+- financial
 - financial services
+- ion group get list of entities (with optional filters)
+- trading
+- ion
+- get entities hierarchy
+- ion group get entities hierarchy (with optional filters)
+- get entities
+- api
+- get entities id
+- group
 slug: ion-group-capability
 source_filename: ion-group-capability.yaml
 source_heading: Capability Spec

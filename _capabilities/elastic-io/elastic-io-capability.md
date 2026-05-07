@@ -249,132 +249,132 @@ personas: []
 provider_name: Elastic.io
 provider_slug: elastic-io
 search_terms:
-- deletecomponent
-- elastic.io get a flow draft
-- updateflow
-- elastic.io update a workspace
-- addworkspacemember
-- elastic.io delete an auth secret
-- elastic.io list components
-- getcredential
-- elastic.io create a workspace
-- elastic.io list credentials
-- deleteworkspace
-- elastic.io list auth clients
-- io
-- elastic.io update a credential
-- updatecurrentuser
-- elastic.io update a flow
-- elastic.io get a component
-- startflow
-- elastic.io list recipes
-- stopflow
-- deleteauthsecret
-- elastic.io list workspace members
-- listagents
-- elastic.io update a component
-- createauthsecret
-- api
-- getcontract
-- listteams
-- elastic.io get current user
-- getuser
-- listcontracts
-- deletecredential
-- elastic.io run a flow on demand
-- deleteflow
-- elastic.io update current user
-- getcomponent
-- elastic.io update a recipe
-- getflow
-- deleteauthclient
-- getworkspace
-- elastic.io list auth secrets
-- listworkspacemembers
-- updatecomponent
-- createflow
-- addcontractmember
-- listcredentials
-- elastic.io list teams
-- elastic.io list contracts
-- elastic.io start a flow
-- elastic.io get an auth secret
-- elastic.io remove a workspace member
-- getauthsecret
-- createauthclient
-- elastic
-- elastic.io get a user
-- elastic.io create a flow draft
-- elastic.io delete an auth client
-- updaterecipevisibility
-- createflowdraft
-- updatecredential
-- elastic.io create a credential
-- updateauthsecret
-- elastic.io list agents
-- elastic.io get an auth client
-- elastic.io update a contract
-- runflownow
-- listworkspaces
-- listcontractmembers
-- listflows
-- elastic.io list contract members
-- elastic.io create an auth secret
-- elastic.io list flow drafts
-- elastic.io delete a team
-- elastic.io add a contract member
 - elastic.io add a workspace member
-- listrecipes
-- getflowversion
-- elastic.io list workspaces
-- integrations
-- elastic.io delete a workspace
+- elastic.io delete an auth secret
+- elastic.io create a credential
+- getauthclient
+- elastic.io remove a workspace member
+- api
+- getcredential
+- listcontracts
 - elastic.io get a credential
-- elastic.io get a workspace
-- getflowdraft
-- ipaas
-- elastic.io create a flow
-- listauthclients
-- deleterecipe
-- listcomponents
-- createrecipe
+- elastic.io list auth clients
+- listauthsecrets
+- elastic.io list workspaces
+- elastic.io list auth secrets
 - elastic.io create a team
+- updatecurrentuser
+- createflowdraft
+- createauthsecret
 - updatecontract
 - getrecipe
-- saas integration
-- elastic.io update an auth secret
-- updateworkspace
-- createcredential
-- elastic.io delete a recipe
-- elastic.io stop a flow
-- updateauthclient
-- getauthclient
-- elastic.io get a recipe
+- elastic.io update a recipe
+- elastic.io create an auth client
+- deleterecipe
+- createrecipe
+- elastic.io delete a team
+- elastic.io start a flow
+- elastic.io list agents
+- elastic.io update a flow
+- elastic.io list contract members
+- getcontract
+- elastic.io update a component
 - elastic.io get a team
-- getcurrentuser
+- deleteflowdraft
+- integrations
+- elastic.io create a flow
 - updaterecipe
-- elastic.io create a recipe
-- removeworkspacemember
-- elastic.io update recipe visibility
+- elastic.io stop a flow
+- elastic.io get a flow
+- elastic.io get a workspace
+- runflownow
+- elastic.io list recipes
+- elastic.io update a credential
+- updaterecipevisibility
+- elastic.io list contracts
+- elastic.io create an auth secret
+- io
+- elastic.io get a component
+- elastic.io delete a workspace
+- elastic.io update a contract
+- listauthclients
+- listflows
+- elastic.io delete a flow
+- elastic.io get an auth secret
+- listteams
+- deleteteam
+- createflow
+- startflow
+- updatecredential
 - createworkspace
+- getteam
+- listrecipes
+- elastic.io create a flow draft
+- elastic.io delete a flow draft
+- getworkspace
+- deleteauthclient
+- deleteworkspace
+- elastic.io list credentials
+- updatecomponent
+- elastic.io get a flow version
+- updateflowdraft
+- updateflow
+- elastic.io get a flow draft
+- elastic.io update an auth client
+- elastic.io create a recipe
+- elastic.io get an auth client
+- listworkspaces
+- updateworkspace
+- listcredentials
+- updateauthclient
 - elastic.io update a flow draft
 - listflowdrafts
-- elastic.io get a flow version
+- elastic.io delete a recipe
+- elastic.io get a recipe
+- addcontractmember
+- createauthclient
+- getflowversion
+- elastic
+- elastic.io get a user
+- elastic.io add a contract member
+- removeworkspacemember
+- listworkspacemembers
+- ipaas
+- listagents
 - elastic.io delete a component
-- getteam
+- deleteflow
+- addworkspacemember
+- elastic.io list components
+- elastic.io create a workspace
+- elastic.io update recipe visibility
+- listcontractmembers
 - elastic.io delete a credential
-- elastic.io update an auth client
-- elastic.io get a contract
-- deleteteam
-- deleteflowdraft
-- elastic.io list flows
-- updateflowdraft
-- elastic.io delete a flow draft
+- elastic.io update a workspace
+- getcurrentuser
+- getcomponent
+- elastic.io list teams
+- createcredential
+- getflowdraft
+- getuser
+- elastic.io delete an auth client
 - createteam
-- elastic.io get a flow
-- elastic.io delete a flow
-- listauthsecrets
-- elastic.io create an auth client
+- listcomponents
+- elastic.io update current user
+- elastic.io get a contract
+- elastic.io list workspace members
+- deleteauthsecret
+- deletecredential
+- deletecomponent
+- elastic.io list flow drafts
+- getflow
+- stopflow
+- saas integration
+- elastic.io run a flow on demand
+- getauthsecret
+- elastic.io update an auth secret
+- updateauthsecret
+- elastic.io list flows
+- elastic.io get current user
 slug: elastic-io-capability
 source_filename: elastic-io-capability.yaml
 source_heading: Capability Spec

@@ -25,20 +25,20 @@ personas: []
 provider_name: Pixie
 provider_slug: pixie
 search_terms:
-- listclusters
-- pixie get cluster details
-- pixie execute a pxl script
-- ebpf
-- pixie
-- api
 - observability
 - monitoring
+- pixie execute a pxl script
+- ebpf
 - pixie health check
-- executescript
-- kubernetes
-- getcluster
 - pixie list clusters
+- getcluster
+- executescript
 - gethealth
+- listclusters
+- api
+- pixie
+- pixie get cluster details
+- kubernetes
 slug: pixie-capability
 source_filename: pixie-capability.yaml
 source_heading: Capability Spec

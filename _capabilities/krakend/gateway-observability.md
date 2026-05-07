@@ -29,31 +29,31 @@ personas: []
 provider_name: KrakenD
 provider_slug: krakend
 search_terms:
-- issue a post against the krakend debug endpoint.
-- post against the krakend debug endpoint at a sub-path.
-- krakend
-- issue a get against the krakend debug endpoint.
 - debug get
-- debug post
 - get echo
 - debug echo endpoint.
-- return request headers, query, method, and body.
-- return the krakend gateway health status.
-- extended runtime metrics.
-- open source
-- gateway health.
-- health
-- observability
-- get against the krakend debug endpoint at a sub-path.
-- return router, proxy, backend, and go runtime metrics.
-- echo endpoint for request inspection.
-- api gateway
-- go
-- return request details from the krakend echo endpoint.
-- return extended runtime metrics from krakend.
-- aggregation
-- get stats
 - get health
+- debug post
+- open source
+- health
+- extended runtime metrics.
+- get against the krakend debug endpoint at a sub-path.
+- post against the krakend debug endpoint at a sub-path.
+- observability
+- api gateway
+- return request details from the krakend echo endpoint.
+- krakend
+- echo endpoint for request inspection.
+- go
+- gateway health.
+- return extended runtime metrics from krakend.
+- return request headers, query, method, and body.
+- issue a get against the krakend debug endpoint.
+- get stats
+- aggregation
+- return the krakend gateway health status.
+- issue a post against the krakend debug endpoint.
+- return router, proxy, backend, and go runtime metrics.
 slug: gateway-observability
 source_filename: gateway-observability.yaml
 source_heading: Capability Spec

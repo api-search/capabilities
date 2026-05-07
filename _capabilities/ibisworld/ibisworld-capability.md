@@ -38,25 +38,25 @@ provider_name: IBISWorld
 provider_slug: ibisworld
 search_terms:
 - getreport
-- economics
-- listenvironmentprofiles
-- ibisworld
-- industry data
-- list industry reports
-- look up company
-- listclassificationsystems
-- list available downloads
-- market research
-- retrieve industry report
-- list business environment profiles
-- listsections
-- api
-- business intelligence
-- list classification systems
-- list report sections
-- listreports
 - listdownloads
+- industry data
+- api
+- list business environment profiles
+- business intelligence
+- market research
+- listenvironmentprofiles
+- list industry reports
+- listsections
+- list available downloads
+- listreports
+- ibisworld
+- look up company
+- economics
+- retrieve industry report
 - lookupcompany
+- listclassificationsystems
+- list report sections
+- list classification systems
 slug: ibisworld-capability
 source_filename: ibisworld-capability.yaml
 source_heading: Capability Spec

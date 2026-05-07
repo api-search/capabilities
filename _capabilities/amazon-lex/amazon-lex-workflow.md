@@ -9,20 +9,20 @@ personas: []
 provider_name: Amazon Lex
 provider_slug: amazon-lex
 search_terms:
-- manages resources and configurations
-- Administrator
-- creates an amazon lex conversational bot.
-- aws
-- bots list bots
 - integrates api into applications
-- Developer
-- provides metadata information about a bot.
-- gets a list of available bots.
-- workflow
-- amazon lex
-- unified workflow for amazon lex resource management
-- bots describe bot
 - bots create bot
+- amazon lex
+- aws
+- workflow
+- bots describe bot
+- Administrator
+- provides metadata information about a bot.
+- creates an amazon lex conversational bot.
+- gets a list of available bots.
+- unified workflow for amazon lex resource management
+- manages resources and configurations
+- bots list bots
+- Developer
 slug: amazon-lex-workflow
 source_filename: amazon-lex-workflow.yaml
 source_heading: Capability Spec

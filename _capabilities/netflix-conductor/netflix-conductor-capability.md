@@ -113,66 +113,66 @@ personas: []
 provider_name: Netflix Conductor
 provider_slug: netflix-conductor
 search_terms:
-- startworkflow
-- listworkflowdefinitions
-- start a workflow
-- listeventhandlers
-- searchworkflows
-- list event handlers
-- gettask
-- skiptask
-- updatetask
-- update task status
-- get task queue sizes
-- deletetaskdefinition
-- getworkflowdefinition
-- get task details
-- search workflows
-- updateworkflowdefinitions
-- netflix
-- create event handler
-- get task definition
-- list task definitions
-- pauseworkflow
-- skip a task
-- createeventhandler
-- list workflow definitions
-- get workflow definition
-- delete a task definition
-- gettaskdefinition
-- open source
-- update workflow definitions
-- gettaskqueuesizes
-- conductor
-- restartworkflow
 - pause a workflow
-- orchestration
-- registertaskdefinitions
-- restart a workflow
-- api
-- retry a workflow
-- batch poll for tasks
-- workflows
-- rerun a workflow
-- delete a workflow definition
-- register task definitions
-- polltask
-- get workflow execution
-- register a workflow definition
 - event-driven
-- getworkflow
-- resumeworkflow
-- poll for a task
+- listeventhandlers
 - terminateworkflow
-- terminate a workflow
-- registerworkflowdefinition
-- rerunworkflow
-- listtaskdefinitions
-- microservices
-- deleteworkflowdefinition
-- batchpolltasks
-- retryworkflow
+- skip a task
+- get workflow definition
 - resume a workflow
+- api
+- start a workflow
+- startworkflow
+- restartworkflow
+- registerworkflowdefinition
+- retry a workflow
+- conductor
+- getworkflowdefinition
+- get task definition
+- resumeworkflow
+- restart a workflow
+- updateworkflowdefinitions
+- skiptask
+- gettask
+- create event handler
+- open source
+- createeventhandler
+- deletetaskdefinition
+- rerunworkflow
+- delete a workflow definition
+- retryworkflow
+- netflix
+- get workflow execution
+- terminate a workflow
+- orchestration
+- rerun a workflow
+- getworkflow
+- listworkflowdefinitions
+- batchpolltasks
+- list task definitions
+- searchworkflows
+- gettaskqueuesizes
+- search workflows
+- polltask
+- get task details
+- update task status
+- list event handlers
+- update workflow definitions
+- updatetask
+- get task queue sizes
+- delete a task definition
+- list workflow definitions
+- registertaskdefinitions
+- deleteworkflowdefinition
+- poll for a task
+- listtaskdefinitions
+- register task definitions
+- register a workflow definition
+- pauseworkflow
+- workflows
+- batch poll for tasks
+- microservices
+- gettaskdefinition
 slug: netflix-conductor-capability
 source_filename: netflix-conductor-capability.yaml
 source_heading: Capability Spec

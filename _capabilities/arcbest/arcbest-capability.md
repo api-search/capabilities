@@ -30,28 +30,28 @@ provider_name: ArcBest
 provider_slug: arcbest
 search_terms:
 - logistics
-- arcbest schedule pickup
+- listshipments
+- arcbest create shipment
+- api
+- supply chain
+- freight
+- coordinates outbound shipping and pickup scheduling
+- real-time visibility into freight movement and delivery
+- arcbest track shipment
+- arcbest list shipments
+- transportation
 - createshipment
 - manages freight shipments, rates, and carrier relationships
 - trackshipment
-- freight
-- schedulepickup
-- arcbest
-- supply chain
-- transportation
-- ltl and truckload freight booking and management
-- arcbest get ltl rate quote
-- arcbest track shipment
-- arcbest create shipment
-- shipping
-- api
-- arcbest list shipments
-- listshipments
-- coordinates outbound shipping and pickup scheduling
-- real-time visibility into freight movement and delivery
-- ltl
 - getltlrate
 - integrates arcbest freight data with business systems
+- ltl and truckload freight booking and management
+- schedulepickup
+- ltl
+- arcbest get ltl rate quote
+- shipping
+- arcbest schedule pickup
+- arcbest
 slug: arcbest-capability
 source_filename: arcbest-capability.yaml
 source_heading: Capability Spec

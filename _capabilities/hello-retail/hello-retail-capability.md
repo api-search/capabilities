@@ -25,20 +25,20 @@ personas: []
 provider_name: Hello Retail
 provider_slug: hello-retail
 search_terms:
+- e-commerce
 - run a search query
-- getcustomerbias
-- retail
 - getrecommendations
+- search
 - load a configured page
-- request product recommendations
+- personalization
+- retail
 - retrieve customer bias data
 - api
-- loadpage
-- e-commerce
-- search
-- product recommendations
+- getcustomerbias
 - hello
-- personalization
+- request product recommendations
+- loadpage
+- product recommendations
 slug: hello-retail-capability
 source_filename: hello-retail-capability.yaml
 source_heading: Capability Spec

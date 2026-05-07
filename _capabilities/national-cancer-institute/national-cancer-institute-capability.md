@@ -57,37 +57,37 @@ personas: []
 provider_name: National Cancer Institute
 provider_slug: national-cancer-institute
 search_terms:
-- search files
-- get api status
-- searchfiles
-- research
-- searchprojects
-- search projects
-- getfile
-- slicebam
-- downloadfile
 - get project by id
-- get file metadata by id
-- search annotations
 - getproject
-- generate manifest
-- health
-- national
-- getstatus
-- get case by id
-- api
-- search cases
 - download a file
-- getmanifest
-- getcase
-- searchcases
 - getsubmissionproject
-- searchannotations
-- institute
-- federal government
+- getstatus
+- searchcases
+- api
+- getfile
+- getmanifest
+- get file metadata by id
+- health
+- generate manifest
+- search annotations
+- research
 - get submission program/project resources
 - cancer
+- search projects
+- searchprojects
+- searchannotations
+- getcase
+- search cases
 - bam slicing
+- slicebam
+- downloadfile
+- get case by id
+- searchfiles
+- get api status
+- federal government
+- institute
+- national
+- search files
 slug: national-cancer-institute-capability
 source_filename: national-cancer-institute-capability.yaml
 source_heading: Capability Spec

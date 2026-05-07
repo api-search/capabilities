@@ -57,38 +57,38 @@ personas: []
 provider_name: KubeVirt
 provider_slug: kubevirt
 search_terms:
-- kubevirt list datasources in a namespace
+- kubevirt update a storageprofile
+- kubevirt replace a datavolume
+- readnamespaceddatavolume
+- kubevirt delete a datavolume
+- kubevirt create a datasource
+- kubevirt get a datasource
+- api
+- kubevirt
+- deletenamespaceddatavolume
+- cloud native
 - patchstorageprofile
 - incubating
 - createnamespaceddatavolume
-- deletenamespaceddatavolume
-- kubevirt update a storageprofile
-- kubevirt get a storageprofile
-- kubevirt list storageprofiles
-- virtual machines
-- virtualization
-- kubevirt delete a datavolume
-- kubevirt get a datasource
-- kubevirt create a datasource
-- cloud native
-- kubevirt list datavolumes in a namespace
-- kubernetes
-- kubevirt delete a datasource
-- listnamespaceddatavolume
-- readstorageprofile
-- api
-- readnamespaceddatavolume
-- kubevirt replace a datavolume
-- readnamespaceddatasource
-- liststorageprofiles
-- replacenamespaceddatavolume
 - migration
-- kubevirt
+- kubevirt get a storageprofile
+- virtualization
+- replacenamespaceddatavolume
+- kubevirt list storageprofiles
+- kubernetes
+- liststorageprofiles
+- kubevirt list datavolumes in a namespace
 - createnamespaceddatasource
+- virtual machines
 - kubevirt create a datavolume
-- kubevirt get a datavolume
-- listnamespaceddatasource
+- listnamespaceddatavolume
+- readnamespaceddatasource
 - deletenamespaceddatasource
+- kubevirt list datasources in a namespace
+- listnamespaceddatasource
+- kubevirt get a datavolume
+- readstorageprofile
+- kubevirt delete a datasource
 slug: kubevirt-capability
 source_filename: kubevirt-capability.yaml
 source_heading: Capability Spec

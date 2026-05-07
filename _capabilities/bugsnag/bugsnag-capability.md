@@ -15,8 +15,8 @@ provider_slug: bugsnag
 search_terms:
 - notify bugsnag of a new build
 - createbuild
-- api
 - bugsnag
+- api
 slug: bugsnag-capability
 source_filename: bugsnag-capability.yaml
 source_heading: Capability Spec

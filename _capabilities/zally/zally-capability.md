@@ -25,22 +25,22 @@ personas: []
 provider_name: Zally
 provider_slug: zally
 search_terms:
-- zally api violations
-- api linting
-- get api violations externalid
-- get supported rules
-- zally provides query capabilites for linting summaries and automatically computed review statistics.
-- openapi
-- api
-- api quality
-- api design
-- zalando
-- zally suported rules
-- zally
 - get review statistics
-- post api violations
-- open source
 - zally get previous generated validation result
+- openapi
+- zally
+- api linting
+- open source
+- zally provides query capabilites for linting summaries and automatically computed review statistics.
+- get supported rules
+- api quality
+- zally suported rules
+- zalando
+- zally api violations
+- api
+- post api violations
+- api design
+- get api violations externalid
 slug: zally-capability
 source_filename: zally-capability.yaml
 source_heading: Capability Spec

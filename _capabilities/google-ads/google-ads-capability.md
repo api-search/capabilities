@@ -49,34 +49,34 @@ personas: []
 provider_name: Google Ads
 provider_slug: google-ads
 search_terms:
-- mutateadgroupcriteria
-- google ads get customer account details
-- marketing
-- google
-- google ads create, update, or remove campaigns
-- searchstreamgoogleads
-- google ads list accessible customer accounts
-- google ads create, update, or remove keywords and criteria
-- google ads create, update, or remove bidding strategies
-- mutateadgroups
 - google ads create, update, or remove ad groups
-- ppc
+- google ads list accessible customer accounts
+- ads
+- mutatecampaigns
+- google ads create, update, or remove campaigns
 - getcustomer
 - search using google ads query language
-- google ads create, update, or remove campaign budgets
-- advertising
 - api
-- mutatecampaignbudgets
-- listaccessiblecustomers
-- mutatecampaigns
-- searchgoogleads
-- search stream using google ads query language
-- mutatebiddingstrategies
-- mutateadgroupads
-- ads
-- campaign management
-- google ads create, update, or remove ads
+- google ads create, update, or remove bidding strategies
+- mutateadgroups
 - digital advertising
+- google
+- searchstreamgoogleads
+- mutateadgroupads
+- google ads create, update, or remove ads
+- mutatebiddingstrategies
+- google ads create, update, or remove campaign budgets
+- searchgoogleads
+- listaccessiblecustomers
+- google ads create, update, or remove keywords and criteria
+- campaign management
+- mutatecampaignbudgets
+- search stream using google ads query language
+- marketing
+- mutateadgroupcriteria
+- advertising
+- google ads get customer account details
+- ppc
 slug: google-ads-capability
 source_filename: google-ads-capability.yaml
 source_heading: Capability Spec

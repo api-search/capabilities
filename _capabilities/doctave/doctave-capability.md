@@ -65,40 +65,40 @@ personas: []
 provider_name: Doctave
 provider_slug: doctave
 search_terms:
-- doctave delete site
-- doctave get site
-- doctave create page
-- deletepage
-- doctave list deployments
-- searchsite
-- createpage
-- portals
-- listpages
-- doctave create deployment
-- doctave create site
-- doctave search site
-- documentation
-- openapi
-- getpage
-- deletesite
-- updatesite
-- listsites
-- doctave list sites
-- api
+- doctave delete page
 - doctave get page
+- doctave list pages
+- searchsite
+- updatesite
+- doctave update site
+- api
+- platform
+- getsite
+- listsites
+- deletepage
+- doctave
+- openapi
+- documentation
+- portals
+- deletesite
+- listpages
+- doctave search site
+- createsite
+- doctave list deployments
+- doctave list sites
+- doctave create page
+- doctave create deployment
+- getdeployment
+- doctave delete site
+- createpage
+- updatepage
 - createdeployment
 - listdeployments
-- doctave delete page
-- getsite
-- platform
-- doctave get deployment
-- createsite
-- getdeployment
 - doctave update page
-- doctave list pages
-- doctave update site
-- doctave
-- updatepage
+- getpage
+- doctave get deployment
+- doctave create site
+- doctave get site
 slug: doctave-capability
 source_filename: doctave-capability.yaml
 source_heading: Capability Spec

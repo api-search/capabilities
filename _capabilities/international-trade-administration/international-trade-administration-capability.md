@@ -37,33 +37,33 @@ personas: []
 provider_name: International Trade Administration
 provider_slug: international-trade-administration
 search_terms:
-- searchconsolidatedscreeninglist
-- searchdeminimis
-- search de minimis values
-- export
-- screening list
 - search the consolidated screening list
-- international business
-- trade
-- searchmarketintelligence
-- trade events
-- compliance
 - search country commercial guides
-- list screening list sources
-- searchcountrycommercialguides
 - api
-- administration
-- listscreeningsources
+- searchconsolidatedscreeninglist
+- search de minimis values
 - customs
+- searchdeminimis
+- compliance
 - international
+- listscreeningsources
+- searchcountrycommercialguides
 - search market intelligence articles
+- administration
+- trade
 - searchcustomstariff
-- tariffs
-- federal government
-- search trade events
+- international business
 - trade data
+- list screening list sources
+- searchmarketintelligence
+- search trade events
 - search the customs info tariff database
+- export
+- tariffs
+- screening list
 - searchtradeevents
+- federal government
+- trade events
 slug: international-trade-administration-capability
 source_filename: international-trade-administration-capability.yaml
 source_heading: Capability Spec

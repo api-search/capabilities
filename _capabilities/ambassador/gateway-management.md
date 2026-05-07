@@ -57,92 +57,92 @@ personas: []
 provider_name: Ambassador
 provider_slug: ambassador
 search_terms:
-- delete a host resource.
-- create a new host resource for tls termination.
+- create mapping
+- delete route
+- create a new host.
+- list all ratelimit resources.
+- api development
+- create a new ratelimit resource.
+- retrieve a specific host by name.
+- gateway readiness check.
+- list routes
+- delete a tlscontext resource.
+- get host
+- update an existing host resource.
+- check alive
+- get mapping
+- get rate limit
+- ingress
+- retrieve a specific ratelimit by name.
 - get route
-- update tls context
+- create a new tlscontext for tls configuration.
+- gateway liveness check.
+- create route
+- delete a host resource.
+- list all tlscontext resources.
+- list all route mappings in a kubernetes namespace.
+- list all hosts.
+- gateway health and diagnostics.
+- list hosts
+- update rate limit
+- tls hosts and hostname routing.
+- update host
+- update route
+- retrieve a specific tlscontext by name.
+- update an existing route mapping.
+- retrieve a specific route mapping by name.
+- list all module resources for global gateway config.
+- list all route mappings.
+- list all host resources for tls and hostname routing.
+- update a route mapping.
 - tls certificate contexts.
 - list modules
-- list all route mappings in a kubernetes namespace.
-- create host
-- list mappings
-- list tls contexts
-- delete a route mapping.
-- update an existing tlscontext.
-- retrieve a specific tlscontext by name.
-- get host
-- gateway readiness check.
-- api route mappings.
-- list all ratelimit resources.
-- list all module resources for global gateway config.
-- delete mapping
-- check if the ambassador gateway is ready to serve traffic.
-- delete host
-- delete route
-- get rate limit
-- create rate limit
-- retrieve diagnostic overview of the ambassador gateway instance.
-- kubernetes
-- delete rate limit
-- check gateway readiness.
-- mock servers
-- retrieve a specific module by name.
-- list hosts
-- gateway liveness check.
-- delete tls context
-- check if the ambassador gateway process is alive.
-- get module
-- retrieve a specific ratelimit by name.
-- update an existing route mapping.
-- get a specific route mapping.
-- update a route mapping.
-- list rate limits
-- mocks
-- delete a tlscontext resource.
-- delete a ratelimit resource.
-- ingress
-- update an existing ratelimit.
-- update rate limit
-- ambassador
-- retrieve a specific host by name.
 - create tls context
-- update host
-- api gateway
-- list all tlscontext resources.
-- list all tls contexts.
-- create a new route mapping for a backend service.
-- testing
-- list all host resources for tls and hostname routing.
-- tls hosts and hostname routing.
-- update route
-- update module
-- create a new ratelimit resource.
-- create a new host.
-- individual route mapping.
-- gateways
-- list all rate limits.
-- get mapping
-- gateway health and diagnostics.
-- update a module resource.
-- check ready
-- api development
-- rate limiting configurations.
-- create route
-- update an existing host resource.
-- update mapping
-- retrieve diagnostic overview.
-- list all route mappings.
-- get tls context
-- list routes
-- check gateway liveness.
-- list all hosts.
-- create mapping
-- get diagnostics
-- check alive
-- create a new tlscontext for tls configuration.
 - platform
+- retrieve a specific module by name.
+- get module
+- check ready
+- delete a route mapping.
+- update tls context
+- individual route mapping.
+- retrieve diagnostic overview.
+- check gateway readiness.
+- create a new route mapping for a backend service.
+- get a specific route mapping.
+- kubernetes
+- api gateway
+- update a module resource.
+- api route mappings.
+- check if the ambassador gateway process is alive.
+- rate limiting configurations.
+- list all rate limits.
+- update module
+- create rate limit
+- delete rate limit
+- check gateway liveness.
+- get tls context
+- mocks
+- check if the ambassador gateway is ready to serve traffic.
+- testing
+- update an existing tlscontext.
+- update an existing ratelimit.
+- gateways
+- get diagnostics
+- create a new host resource for tls termination.
+- mock servers
+- delete a ratelimit resource.
+- create host
+- list rate limits
+- list all tls contexts.
+- delete host
 - create a new route mapping.
-- retrieve a specific route mapping by name.
+- delete mapping
+- delete tls context
+- retrieve diagnostic overview of the ambassador gateway instance.
+- update mapping
+- list tls contexts
+- ambassador
+- list mappings
 slug: gateway-management
 source_filename: gateway-management.yaml
 source_heading: Capability Spec

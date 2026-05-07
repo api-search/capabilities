@@ -37,40 +37,40 @@ personas: []
 provider_name: Synnex
 provider_slug: synnex
 search_terms:
-- td synnex
-- create a new end customer account.
-- list cloud product orders for the reseller account.
-- usage and billing reports.
-- browse available cloud products and skus.
-- list end customers managed by the reseller in the td synnex cloud marketplace.
-- list subscriptions
+- create customer
+- create a new cloud product order for a customer.
 - order management.
-- list available usage and billing reports.
+- subscription management
+- create order
+- list end customers managed by the reseller in the td synnex cloud marketplace.
+- end customer account management.
+- browse available cloud products and skus.
+- list cloud product orders for the reseller account.
+- list products
+- create a new end customer account in the td synnex cloud marketplace.
 - list reports
 - supply chain
-- technology distribution
-- create a new cloud product order for an end customer through td synnex.
-- create a new end customer account in the td synnex cloud marketplace.
-- subscription management
-- list active cloud subscriptions for an end customer.
-- create customer
-- cloud subscription management.
-- list available usage and billing reports for the reseller account.
-- list orders for the reseller account.
-- create a new cloud product order for a customer.
-- create order
-- list orders
-- list customers
-- it distribution
-- list products
-- cloud marketplace
 - order management
-- list all end customers for the reseller account.
-- cloud product catalog.
-- list cloud subscriptions for an end customer.
-- browse the td synnex cloud product catalog with filtering by vendor and category.
-- end customer account management.
+- list available usage and billing reports.
+- cloud subscription management.
 - fortune 100
+- browse the td synnex cloud product catalog with filtering by vendor and category.
+- list available usage and billing reports for the reseller account.
+- it distribution
+- create a new cloud product order for an end customer through td synnex.
+- td synnex
+- list orders
+- list all end customers for the reseller account.
+- list subscriptions
+- usage and billing reports.
+- list customers
+- list active cloud subscriptions for an end customer.
+- technology distribution
+- create a new end customer account.
+- list orders for the reseller account.
+- cloud product catalog.
+- cloud marketplace
+- list cloud subscriptions for an end customer.
 slug: cloud-marketplace
 source_filename: cloud-marketplace.yaml
 source_heading: Capability Spec

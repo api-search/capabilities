@@ -29,25 +29,25 @@ personas: []
 provider_name: Asana
 provider_slug: asana
 search_terms:
-- updateallocation
-- tasks
-- workflow
-- projects
-- asana delete an allocation
-- asana create an allocation
-- project management
-- productivity
-- asana get an allocation
-- task management
-- api
-- deleteallocation
-- asana update an allocation
 - createallocation
+- task management
+- asana update an allocation
+- getallocation
+- api
+- asana delete an allocation
+- asana get an allocation
+- productivity
+- project management
+- collaboration
+- tasks
 - asana
 - getallocations
-- collaboration
-- getallocation
+- workflow
+- updateallocation
+- projects
+- deleteallocation
 - asana get multiple allocations
+- asana create an allocation
 slug: asana-capability
 source_filename: asana-capability.yaml
 source_heading: Capability Spec

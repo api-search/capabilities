@@ -37,24 +37,24 @@ personas: []
 provider_name: Paragon
 provider_slug: paragon
 search_terms:
-- proxypostrequest
-- integrations
-- paragon proxy get request to integration
-- proxyputrequest
-- proxypatchrequest
-- proxygetrequest
-- paragon proxy patch request to integration
-- proxycustomgetrequest
-- paragon proxy delete request to integration
-- paragon proxy post request to custom integration
-- api
-- paragon proxy put request to integration
-- paragon proxy post request to integration
 - embedded ipaas
+- paragon proxy put request to integration
+- paragon
+- integrations
+- proxygetrequest
+- paragon proxy post request to integration
+- proxypatchrequest
+- proxycustompostrequest
+- paragon proxy delete request to integration
+- proxycustomgetrequest
+- paragon proxy get request to integration
+- paragon proxy post request to custom integration
+- proxyputrequest
+- proxypostrequest
+- api
 - proxydeleterequest
 - paragon proxy get request to custom integration
-- proxycustompostrequest
-- paragon
+- paragon proxy patch request to integration
 slug: paragon-capability
 source_filename: paragon-capability.yaml
 source_heading: Capability Spec

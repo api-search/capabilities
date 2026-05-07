@@ -81,79 +81,79 @@ personas: []
 provider_name: Workday Extend
 provider_slug: workday-extend
 search_terms:
-- list apps
-- create app
-- update metadata or configuration of an extend application
-- update configuration settings for an extend application
-- update app
-- manage application versions
-- retrieve custom object data for a worker
-- register a new extend application
-- paas
-- list app configurations
-- integration
-- list all orchestration definitions in the tenant
-- list all versions of an extend application
 - deploy an extend application
-- list all custom object type definitions in the tenant
-- custom applications
-- list app deployments
-- launch an orchestration execution
-- create or update custom object data for a worker
-- manage extend application registrations
-- manage business process orchestrations
-- list configuration settings for an extend application
-- update an extend application
-- list application configurations
-- extend
-- manage application configuration settings
-- manage application deployments
-- get worker custom object data
-- enterprise
-- update app configurations
-- get details of a specific extend application including status and version
-- remove an extend application from the tenant
-- delete app
-- list all extend applications registered in the workday tenant
-- list custom object definitions
-- workday
-- launch execution
-- list application deployments
-- list application versions
-- orchestration execution management
-- list executions
-- list orchestration executions
-- list all extend applications
-- create a new application version
-- update application configurations
-- orchestration
 - deploy an extend application version to sandbox or production
-- custom object data for workers
-- list orchestrations
-- hcm
-- manage a specific extend application
-- create a new version of an extend application
-- retrieve custom object data attached to a worker record
-- list app versions
-- create orchestration
-- list deployment history for an extend application
-- deploy app
-- human capital management
-- create app version
-- delete an extend application
-- create an orchestration
-- platform development
-- register a new workday extend custom application
-- create a new business process orchestration
-- extensions
 - custom objects
-- get app
-- custom object type definitions
 - launch a new orchestration execution with input data
-- list executions for a specific orchestration
-- upsert worker custom object data
-- retrieve an extend application
+- orchestration execution management
 - automation
+- list app configurations
+- list all versions of an extend application
+- list apps
+- retrieve an extend application
+- create a new version of an extend application
+- list executions for a specific orchestration
+- update configuration settings for an extend application
+- paas
+- workday
+- update application configurations
+- get details of a specific extend application including status and version
+- list all orchestration definitions in the tenant
+- list all custom object type definitions in the tenant
+- manage a specific extend application
+- list all extend applications
+- get app
+- list application configurations
+- create an orchestration
+- deploy app
+- create a new application version
+- list application deployments
+- launch execution
+- update app
+- create a new business process orchestration
+- list orchestration executions
+- delete an extend application
+- hcm
+- orchestration
+- create orchestration
+- integration
+- list app versions
+- update metadata or configuration of an extend application
+- extend
+- list app deployments
+- manage application deployments
+- custom object type definitions
+- get worker custom object data
+- retrieve custom object data for a worker
+- update an extend application
+- list custom object definitions
+- custom applications
+- manage application versions
+- list application versions
+- upsert worker custom object data
+- create app version
+- manage application configuration settings
+- create app
+- manage extend application registrations
+- create or update custom object data for a worker
+- launch an orchestration execution
+- list all extend applications registered in the workday tenant
+- list executions
+- list deployment history for an extend application
+- retrieve custom object data attached to a worker record
+- platform development
+- list orchestrations
+- register a new extend application
+- list configuration settings for an extend application
+- enterprise
+- register a new workday extend custom application
+- extensions
+- custom object data for workers
+- remove an extend application from the tenant
+- update app configurations
+- human capital management
+- delete app
+- manage business process orchestrations
 slug: app-development
 source_filename: app-development.yaml
 source_heading: Capability Spec

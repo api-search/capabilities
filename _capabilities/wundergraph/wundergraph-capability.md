@@ -161,88 +161,88 @@ personas: []
 provider_name: WunderGraph
 provider_slug: wundergraph
 search_terms:
-- publishsubgraph
-- wundergraph fetch subgraph sdl
-- createroutertoken
-- wundergraph get graph analytics
-- listmonographs
-- wundergraph list federated graphs
-- wundergraph create a subgraph
-- wundergraph delete a federated graph
-- getfederatedgraphchangelog
-- getfederatedgraph
-- createnamespace
-- listnamespaces
-- wundergraph list feature flags
-- wundergraph list namespaces
-- api
-- wundergraph list schema contracts
-- wundergraph create a feature flag
-- deleteapikey
-- movesubgraph
-- federation
-- wundergraph create a namespace
-- movefederatedgraph
-- wundergraph update a monograph
-- getanalytics
-- renamenamespace
-- listschemacontracts
-- wundergraph create a monograph
-- deletefederatedgraph
-- fetchsubgraphsdl
-- checksubgraph
-- wundergraph create an api key
-- createsubgraph
-- createfederatedgraph
-- publishmonograph
-- wundergraph create a feature subgraph
-- updatefederatedgraph
-- wundergraph delete a subgraph
-- wundergraph create a router token
-- wundergraph list monographs
-- wundergraph list router tokens
-- listapikeys
-- wundergraph rename a namespace
-- wundergraph list api keys
-- wundergraph move a federated graph to another namespace
-- wundergraph get federated graph changelog
 - createfeatureflag
-- getsubgraph
-- createmonograph
-- wundergraph
-- createschemacontract
-- wundergraph update a federated graph
-- fetchfederatedgraphsdl
-- wundergraph get a subgraph
-- createfeaturesubgraph
-- wundergraph publish a monograph schema
-- updatesubgraph
-- wundergraph publish a subgraph schema
-- wundergraph list subgraphs
-- listfederatedgraphs
-- wundergraph update a subgraph
-- composerouterconfig
-- wundergraph create a schema contract
-- listroutertokens
-- deletesubgraph
-- wundergraph compose router configuration
-- wundergraph delete a namespace
-- listfeatureflags
-- wundergraph move a subgraph to another namespace
-- wundergraph check a subgraph schema
-- graphql
-- wundergraph delete a monograph
-- wundergraph create a federated graph
+- wundergraph delete a federated graph
+- wundergraph list federated graphs
+- api
+- wundergraph delete a subgraph
 - listsubgraphs
-- updatemonograph
-- deletenamespace
-- schema registry
-- management
-- createapikey
-- wundergraph fetch federated graph sdl
-- wundergraph get a federated graph
+- wundergraph create a schema contract
+- createmonograph
+- listroutertokens
+- wundergraph update a subgraph
+- federation
+- updatefederatedgraph
+- createsubgraph
+- wundergraph delete a monograph
+- movefederatedgraph
+- wundergraph list schema contracts
+- deletefederatedgraph
+- wundergraph list subgraphs
 - deletemonograph
+- deletenamespace
+- wundergraph update a monograph
+- wundergraph create a namespace
+- wundergraph move a federated graph to another namespace
+- createschemacontract
+- wundergraph get graph analytics
+- listapikeys
+- publishmonograph
+- wundergraph create a feature flag
+- getfederatedgraph
+- wundergraph rename a namespace
+- renamenamespace
+- getfederatedgraphchangelog
+- wundergraph create an api key
+- listnamespaces
+- wundergraph create a router token
+- wundergraph check a subgraph schema
+- wundergraph list router tokens
+- publishsubgraph
+- createfeaturesubgraph
 - wundergraph delete an api key
+- wundergraph compose router configuration
+- wundergraph update a federated graph
+- wundergraph fetch federated graph sdl
+- graphql
+- movesubgraph
+- wundergraph list feature flags
+- wundergraph publish a monograph schema
+- schema registry
+- composerouterconfig
+- deleteapikey
+- wundergraph move a subgraph to another namespace
+- wundergraph get federated graph changelog
+- wundergraph create a subgraph
+- wundergraph list namespaces
+- management
+- updatesubgraph
+- getsubgraph
+- listfeatureflags
+- createnamespace
+- fetchfederatedgraphsdl
+- wundergraph create a federated graph
+- wundergraph get a federated graph
+- createapikey
+- fetchsubgraphsdl
+- wundergraph publish a subgraph schema
+- getanalytics
+- createroutertoken
+- createfederatedgraph
+- deletesubgraph
+- listfederatedgraphs
+- updatemonograph
+- wundergraph list api keys
+- wundergraph delete a namespace
+- checksubgraph
+- listmonographs
+- wundergraph fetch subgraph sdl
+- wundergraph
+- wundergraph create a feature subgraph
+- listschemacontracts
+- wundergraph list monographs
+- wundergraph get a subgraph
+- wundergraph create a monograph
 slug: wundergraph-capability
 source_filename: wundergraph-capability.yaml
 source_heading: Capability Spec

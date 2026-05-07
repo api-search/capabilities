@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- run composition
-- api integration
 - governance
-- capabilities
 - spec-driven integration
-- ai
-- mcp
 - multi-api
-- list compositions
+- run composition
+- ai
 - composition
+- capabilities
+- api integration
+- list compositions
+- mcp
+- naftiko
 slug: multi-api-composition-capability
 source_filename: multi-api-composition-capability.yaml
 source_heading: Capability Spec

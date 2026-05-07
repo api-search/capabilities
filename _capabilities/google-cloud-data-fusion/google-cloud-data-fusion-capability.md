@@ -45,33 +45,33 @@ personas: []
 provider_name: Google Cloud Data Fusion
 provider_slug: google-cloud-data-fusion
 search_terms:
-- data integration
-- google cloud data fusion create a data fusion instance
-- data pipelines
-- deleteinstance
-- cloud
-- google
-- etl
-- google cloud data fusion update a data fusion instance
-- createinstance
-- updateinstance
-- getinstance
-- listoperations
-- google cloud data fusion get a data fusion instance
-- fusion
-- google cloud data fusion get an operation
-- api
-- restartinstance
-- getoperation
 - listlocations
-- google cloud data fusion list operations
+- google cloud data fusion get a data fusion instance
 - google cloud data fusion restart a data fusion instance
-- listinstances
-- google cloud data fusion list available locations
-- data
-- google cloud data fusion list data fusion instances
+- updateinstance
+- restartinstance
 - google cloud data fusion delete a data fusion instance
+- createinstance
+- listoperations
+- api
+- google cloud data fusion create a data fusion instance
+- google cloud data fusion list data fusion instances
+- fusion
+- deleteinstance
+- google
+- getinstance
+- google cloud data fusion list available locations
+- google cloud data fusion update a data fusion instance
+- getoperation
+- cloud
+- data pipelines
+- google cloud data fusion list operations
+- etl
+- data
+- data integration
 - google cloud
+- listinstances
+- google cloud data fusion get an operation
 slug: google-cloud-data-fusion-capability
 source_filename: google-cloud-data-fusion-capability.yaml
 source_heading: Capability Spec

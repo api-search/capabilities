@@ -41,54 +41,54 @@ personas: []
 provider_name: WattTime
 provider_slug: watttime
 search_terms:
-- sustainability
-- retrieve previously generated forecast data for a historical period. use for back-testing carbon-aware scheduling algorithms.
-- download emissions dataset
-- get the current real-time marginal emissions forecast for a grid region, updated every 5 minutes. use for deciding whether now is a good time to run a workload.
-- get historical marginal emissions data for a grid region over a time window (max 32 days). use for reporting past emissions impact.
-- carbon-aware computing
-- get my access
-- clean energy
-- carbon
-- authenticate with the watttime api.
+- watttime
+- look up the grid region for geographic coordinates.
 - obtain a watttime api access token.
-- real-time emissions data and short-term forecast.
-- get forecast history
-- find grid region
-- get a download url for multi-year historical emissions data as a csv file.
+- list all grid regions accessible under the current watttime subscription, with model versions.
+- get historical emissions data (up to 32-day window).
+- retrieve previously generated forecast data for a historical period. use for back-testing carbon-aware scheduling algorithms.
+- authenticate with the watttime api.
+- get forecast
+- historically generated forecasts for back-testing.
+- download historical data
+- download multi-year historical emissions csv data.
+- get my access
+- carbon-aware computing
+- login
+- get geojson boundaries for all accessible grid regions for map visualization.
 - list accessible grid regions and models.
 - get geojson boundaries for grid regions.
 - historical emissions data for analysis and reporting.
 - get grid maps
-- historically generated forecasts for back-testing.
-- download historical data
-- authenticate with the watttime api to obtain an access token for subsequent calls.
-- get region from location
-- identify the grid region for a location.
-- list all grid regions accessible under the current watttime subscription, with model versions.
-- login
-- identify the electric grid balancing authority for a geographic location by latitude and longitude.
-- climate
-- list accessible regions
-- electricity grid
-- get geojson boundaries for all accessible grid regions for map visualization.
 - authenticate
-- get all accessible grid regions and available model versions.
-- get realtime emissions
-- energy
-- emissions
-- get forecast
-- look up the grid region for geographic coordinates.
-- get forecast historical
-- get historical forecast data for algorithm validation.
-- watttime
-- get historical emissions data (up to 32-day window).
-- geojson grid region boundaries for visualization.
-- download multi-year historical emissions csv data.
+- carbon
+- clean energy
 - get real-time and forecast emissions for a grid region.
+- geojson grid region boundaries for visualization.
+- emissions
+- energy
 - get download url for historical emissions dataset.
-- get historical data
 - get historical emissions
+- download emissions dataset
+- find grid region
+- climate
+- get historical marginal emissions data for a grid region over a time window (max 32 days). use for reporting past emissions impact.
+- get historical forecast data for algorithm validation.
+- sustainability
+- electricity grid
+- get forecast historical
+- get realtime emissions
+- get historical data
+- authenticate with the watttime api to obtain an access token for subsequent calls.
+- list accessible regions
+- get forecast history
+- identify the grid region for a location.
+- get all accessible grid regions and available model versions.
+- get a download url for multi-year historical emissions data as a csv file.
+- identify the electric grid balancing authority for a geographic location by latitude and longitude.
+- real-time emissions data and short-term forecast.
+- get region from location
+- get the current real-time marginal emissions forecast for a grid region, updated every 5 minutes. use for deciding whether now is a good time to run a workload.
 slug: carbon-aware-computing
 source_filename: carbon-aware-computing.yaml
 source_heading: Capability Spec

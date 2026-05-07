@@ -29,23 +29,23 @@ personas: []
 provider_name: Google Places
 provider_slug: google-places
 search_terms:
-- google places place details
-- google places text search
-- getplacedetails
-- google
-- api
-- google places autocomplete
-- google places place photo
-- geolocation
-- google places nearby search
-- places
-- getplacephoto
-- searchtextplaces
 - locations
+- google places autocomplete
+- google places place details
+- geolocation
+- places
 - autocompleteplaces
 - maps
+- google
+- searchtextplaces
+- getplacephoto
+- google places place photo
 - searchnearbyplaces
+- api
+- getplacedetails
 - points of interest
+- google places nearby search
+- google places text search
 slug: google-places-capability
 source_filename: google-places-capability.yaml
 source_heading: Capability Spec

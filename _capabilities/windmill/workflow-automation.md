@@ -85,86 +85,86 @@ personas: []
 provider_name: Windmill
 provider_slug: windmill
 search_terms:
-- create workspace
-- list all scripts in a windmill workspace
-- cancel a queued job in a windmill workspace
-- create a new flow in a windmill workspace
-- list flows
-- get a flow by path
-- flow management
-- list completed jobs
-- create a new variable in a windmill workspace
-- create a new workspace
-- create a new resource
-- list all flows in a workspace
-- workflow engine
-- create variable
-- workflows
-- get a specific flow by path from a windmill workspace
-- job listing and monitoring
-- create a new windmill workspace
-- get a specific completed job by id
-- schedule management
-- user management
-- list all resources in a windmill workspace
-- automation
-- get job
-- workspace administration
-- create schedule
-- create a new script
-- execute a script by path in a windmill workspace
-- list completed jobs in a windmill workspace
-- list all available windmill workspaces
-- get a script by path
-- individual job operations
-- open source
-- list users in workspace
-- list resources
-- create a new resource in a windmill workspace
-- get a specific script by path from a windmill workspace
 - list scripts
-- webhooks
-- windmill
-- schedules
-- create a new schedule in a windmill workspace
-- list users in a windmill workspace
-- list all schedules
-- list variables
-- run script
-- list all schedules in a windmill workspace
-- job execution
-- individual flow operations
-- create a new schedule
-- list workspaces
 - individual script operations
-- variable management
-- list all scripts in a workspace
-- delete a script by path
-- create flow
-- resource management
+- create a new flow in a windmill workspace
 - list all workspaces
-- run a script by path
-- list contextual variables
-- list all resources
-- procode api composition
-- create script
-- list jobs
-- script management and execution
-- create a new flow
-- list all flows in a windmill workspace
+- create a new schedule
+- job listing and monitoring
+- list completed jobs
+- delete a script by path
+- list all flows in a workspace
 - cancel job
-- get script
-- create resource
-- get a completed job
-- scripts
+- get a specific flow by path from a windmill workspace
+- list all available windmill workspaces
+- procode api composition
+- create a new script
+- list all scripts in a windmill workspace
+- list all flows in a windmill workspace
+- list contextual variables
+- user management
+- create a new workspace
+- get a script by path
 - get flow
+- run a script by path
+- list all scripts in a workspace
+- run script
+- create a new windmill workspace
+- get job
+- list resources
 - internal tools
-- create a new variable
-- delete script
-- list schedules
+- flow management
+- job execution
+- cancel a queued job in a windmill workspace
+- list all schedules
 - list users
+- get a completed job
+- individual flow operations
+- create a new resource in a windmill workspace
+- list schedules
+- workspace administration
+- list all resources
+- create variable
+- delete script
+- script management and execution
+- workflows
+- workflow engine
+- create a new variable in a windmill workspace
+- individual job operations
+- list workspaces
+- resource management
+- automation
+- get a specific completed job by id
+- create a new variable
+- create workspace
+- variable management
+- create script
+- get a flow by path
+- create a new resource
+- get script
+- windmill
+- list jobs
 - jobs
+- schedules
+- list users in workspace
+- list completed jobs in a windmill workspace
+- list flows
+- list all resources in a windmill workspace
+- list all schedules in a windmill workspace
+- schedule management
+- create resource
+- open source
+- list variables
+- list users in a windmill workspace
 - create a new script in a windmill workspace
+- execute a script by path in a windmill workspace
+- get a specific script by path from a windmill workspace
+- webhooks
+- create a new schedule in a windmill workspace
+- create a new flow
+- create flow
+- scripts
+- create schedule
 slug: workflow-automation
 source_filename: workflow-automation.yaml
 source_heading: Capability Spec

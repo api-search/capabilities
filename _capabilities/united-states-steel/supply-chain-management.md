@@ -29,48 +29,48 @@ personas: []
 provider_name: United States Steel
 provider_slug: united-states-steel
 search_terms:
-- list steel inventory
-- construction
-- steel order management and status tracking.
-- manufacturing
-- shipment history and tracking.
-- get order by id.
-- list shipments.
-- engineer accessing certified test reports for compliance and ppap documentation
-- get order
-- analyst monitoring order status, inventory levels, and shipment performance
-- list orders.
-- manager overseeing steel procurement and supplier relationship management
-- list steel shipments
-- list u.s. steel shipment history for orders and purchase orders with coil-level detail.
-- list inventory
-- quality test reports.
-- steel product quality documentation and certification
-- u.s. steel
-- automotive
-- supply chain
+- complete u.s. steel supply chain from order tracking through shipment and quality certification
 - list available inventory.
-- list certified physical, mechanical, and chemical test reports for steel products by coil or order.
+- list inventory
 - procurement manager
 - supply chain analyst
-- list steel orders
-- energy
-- list test reports
+- procurement
+- shipment history and tracking.
+- list steel shipments
+- steel
+- get detailed information for a specific u.s. steel order including production status and delivery timeline.
+- list certified physical, mechanical, and chemical test reports for steel products by coil or order.
+- engineer accessing certified test reports for compliance and ppap documentation
+- construction
+- supply chain
+- list orders.
 - quality
 - get order details.
-- list orders
+- manager overseeing steel procurement and supplier relationship management
+- get order by id.
+- list steel inventory
+- manufacturing
 - list available u.s. steel customer inventory by product type, grade, and facility.
-- steel
-- quality engineer
-- get steel order
-- steel procurement and supply chain management
-- list shipments
-- list u.s. steel orders with filtering by status, facility, and date range.
-- get detailed information for a specific u.s. steel order including production status and delivery timeline.
+- list orders
+- steel product quality documentation and certification
+- u.s. steel
+- list shipments.
+- steel order management and status tracking.
 - available inventory tracking.
+- list u.s. steel shipment history for orders and purchase orders with coil-level detail.
+- analyst monitoring order status, inventory levels, and shipment performance
+- quality test reports.
+- energy
 - list test reports.
-- procurement
-- complete u.s. steel supply chain from order tracking through shipment and quality certification
+- list steel orders
+- steel procurement and supply chain management
+- get steel order
+- list shipments
+- automotive
+- list test reports
+- list u.s. steel orders with filtering by status, facility, and date range.
+- quality engineer
+- get order
 slug: supply-chain-management
 source_filename: supply-chain-management.yaml
 source_heading: Capability Spec

@@ -53,65 +53,65 @@ personas: []
 provider_name: Yardi
 provider_slug: yardi
 search_terms:
-- retrieve resident billing and payment transactions for a property
-- commercial real estate
-- list service requests
-- budget data and financial planning
-- list property units
-- get budget data for a property
-- residential
-- construction and renovation project financials
-- list vendor invoices for a property
-- retrieve maintenance work orders and service requests
-- import resident transactions into voyager
-- import vendor invoices
-- tenant records and lease information
-- property management
-- coworking
-- self storage
-- retrieve construction project cost tracking data
-- list vendor invoices
-- maintenance
-- accounting
-- list service requests and work orders
-- billing
-- get the chart of accounts for a property
-- investment management
-- real estate
-- list resident transactions
-- retrieve vendor invoices and accounts payable data
-- maintenance work orders and service requests
-- list all tenants for a property
-- list all units for a property
-- import vendor invoices into accounts payable
-- get budget data
-- chart of accounts for property financials
-- submit vendor invoices to accounts payable
-- list tenants
-- submit service requests
-- list units
-- get chart of accounts
-- get budget
-- import service requests
-- resident billing and payment transactions
-- vendor invoices and accounts payable
-- get job cost data
-- list all units in a property with occupancy and market rent
-- senior living
-- get job cost data for a project
-- list resident transactions for a property
-- leasing
-- retrieve chart of accounts for property financial reporting
-- import transactions
-- yardi
-- submit new service requests to voyager
-- list transactions
 - get job costs
-- unit inventory and configuration
-- create new maintenance service requests in voyager
-- retrieve budget and actual financial data for a property
-- retrieve tenant records, lease details, and contact information
+- retrieve vendor invoices and accounts payable data
+- get budget data
+- yardi
+- commercial real estate
+- retrieve chart of accounts for property financial reporting
+- accounting
+- import vendor invoices into accounts payable
+- maintenance work orders and service requests
+- retrieve resident billing and payment transactions for a property
+- billing
+- construction and renovation project financials
+- senior living
+- list vendor invoices
+- resident billing and payment transactions
+- list all units for a property
+- get job cost data for a project
+- list all units in a property with occupancy and market rent
 - multifamily
+- get chart of accounts
+- list service requests
+- list all tenants for a property
+- list service requests and work orders
+- self storage
+- list units
+- tenant records and lease information
+- list property units
+- property management
+- real estate
+- residential
+- get job cost data
+- submit new service requests to voyager
+- retrieve tenant records, lease details, and contact information
+- get budget
+- list tenants
+- chart of accounts for property financials
+- retrieve construction project cost tracking data
+- retrieve budget and actual financial data for a property
+- list vendor invoices for a property
+- import transactions
+- leasing
+- unit inventory and configuration
+- list resident transactions
+- retrieve maintenance work orders and service requests
+- create new maintenance service requests in voyager
+- get budget data for a property
+- submit vendor invoices to accounts payable
+- import vendor invoices
+- import resident transactions into voyager
+- vendor invoices and accounts payable
+- list transactions
+- maintenance
+- list resident transactions for a property
+- get the chart of accounts for a property
+- coworking
+- investment management
+- budget data and financial planning
+- submit service requests
+- import service requests
 slug: property-management
 source_filename: property-management.yaml
 source_heading: Capability Spec

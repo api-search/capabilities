@@ -21,46 +21,46 @@ personas: []
 provider_name: Umami
 provider_slug: umami
 search_terms:
-- custom event collection and analysis
 - get active visitors
-- cookieless tracking
-- get website stats
-- accessing and analyzing website statistics, metrics, and pageviews
-- get analytics metrics broken down by a dimension such as url, browser, country, device, or referrer
-- website analytics
-- track website performance, visitor behavior, and real-time analytics
-- get metrics
-- reviews overall analytics and manages website configuration
 - analytics
-- umami
-- get website pageviews
-- website metrics by dimension
-- monitors site performance, integrates tracking, and manages websites
-- list teams
-- dashboards
-- list all websites being tracked in umami
-- get pageview time series data for a website bucketed by time unit
-- get summarized analytics statistics for a website including pageviews, visitors, visits, and bounce rate
-- get website analytics statistics
-- exports and analyzes raw session and event data for bi reporting
-- get metrics by dimension
-- analyzes website traffic, referrers, and campaign performance
-- list sessions
-- open source
-- get website metrics
-- web analytics
 - website listings
-- list websites
+- accessing and analyzing website statistics, metrics, and pageviews
+- get pageview time series data for a website bucketed by time unit
+- track website performance, visitor behavior, and real-time analytics
+- session data, active visitors, and behavioral tracking
+- web analytics
+- reviews overall analytics and manages website configuration
+- managing tracked websites, their configuration, and team access
+- monitors site performance, integrates tracking, and manages websites
+- privacy
+- open source
+- website metrics by dimension
+- list teams
+- get metrics by dimension
 - website statistics
+- website analytics
+- get summarized analytics statistics for a website including pageviews, visitors, visits, and bounce rate
+- dashboards
+- get analytics metrics broken down by a dimension such as url, browser, country, device, or referrer
+- get the number of visitors currently active on a website
+- list all websites being tracked in umami
+- exports and analyzes raw session and event data for bi reporting
+- list sessions
+- get metrics
+- list all teams in umami
+- cookieless tracking
+- get website metrics
 - user account management (self-hosted admin only)
 - list all tracked websites
 - list visitor sessions for a website with browser, os, device, and country details
-- managing tracked websites, their configuration, and team access
-- get the number of visitors currently active on a website
-- list all teams in umami
+- get website stats
+- analyzes website traffic, referrers, and campaign performance
+- list websites
+- custom event collection and analysis
+- get website analytics statistics
+- umami
 - get stats
-- privacy
-- session data, active visitors, and behavioral tracking
+- get website pageviews
 slug: web-analytics
 source_filename: web-analytics.yaml
 source_heading: Capability Spec

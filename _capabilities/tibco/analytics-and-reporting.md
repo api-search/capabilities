@@ -29,38 +29,38 @@ personas: []
 provider_name: TIBCO
 provider_slug: tibco
 search_terms:
-- list spotfire data sources
-- get library item
-- integration
-- get spotfire library item details
-- data source connections
 - visualization
-- reporting
-- spotfire users
 - analytics
-- spotfire library content
-- list library items
-- list data sources
-- cloud
+- enterprise software
+- get spotfire library item details
+- get library item
 - spotfire analyses
 - list spotfire analyses
-- individual library item
+- api management
+- business intelligence
+- integration
 - list spotfire library items
+- list library items
+- spotfire library content
+- list spotfire analyses available in the platform
+- tibco
+- list spotfire data source connections
+- individual library item
+- list users
+- spotfire
+- list spotfire data sources
+- list spotfire library items by path or search query
+- cloud
+- real-time data
 - list users registered in tibco spotfire
 - get details for a specific spotfire library item
-- messaging
-- list spotfire analyses available in the platform
-- list spotfire users
-- list spotfire library items by path or search query
+- data source connections
+- reporting
 - list analyses
-- real-time data
-- api management
-- list spotfire data source connections
-- spotfire
-- business intelligence
-- list users
-- enterprise software
-- tibco
+- list spotfire users
+- list data sources
+- spotfire users
+- messaging
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

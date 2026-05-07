@@ -69,45 +69,45 @@ personas: []
 provider_name: Pulsoid
 provider_slug: pulsoid
 search_terms:
-- read heart rate statistics
-- get latest heart rate
-- oauth2 token exchange/refresh
-- getstatistics
-- real-time
-- websocket
-- update gd mod configuration
 - check feature availability
-- validatetoken
-- oauth2
-- create widget
-- submitheartrate
-- oauthdeviceauthorization
-- submit heart rate data
-- wearables
-- getlatestheartrate
-- read user profile
-- createwidget
-- updatewidget
-- revoke access token
-- list widgets
-- getfeature
-- api
-- update widget configuration
-- oauthauthorize
-- heart rate
-- oauthtoken
-- pulsoid
-- getgdconfig
-- oauthrevoke
-- oauth2 device authorization
+- websocket
 - streaming
-- validate authorization token
-- updategdconfig
+- update widget configuration
+- create widget
+- getgdconfig
+- oauthauthorize
+- getlatestheartrate
+- api
 - oauth2 authorize
+- revoke access token
+- pulsoid
+- health
+- createwidget
+- list widgets
+- validatetoken
+- listwidgets
+- submitheartrate
+- validate authorization token
+- get latest heart rate
+- submit heart rate data
+- oauth2 device authorization
 - getprofile
 - get gd mod configuration
-- listwidgets
-- health
+- oauth2 token exchange/refresh
+- oauth2
+- getfeature
+- updatewidget
+- read user profile
+- heart rate
+- oauthtoken
+- update gd mod configuration
+- updategdconfig
+- oauthdeviceauthorization
+- real-time
+- read heart rate statistics
+- oauthrevoke
+- getstatistics
+- wearables
 slug: pulsoid-capability
 source_filename: pulsoid-capability.yaml
 source_heading: Capability Spec

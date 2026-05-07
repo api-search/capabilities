@@ -10,15 +10,15 @@ provider_name: Clearstream
 provider_slug: clearstream
 search_terms:
 - iso 15022
+- financial services
+- securities
+- custody
 - iso 20022
 - post-trade infrastructure
-- capital markets
-- securities
-- settlement
-- custody
-- swift
-- financial services
 - collateral management
+- capital markets
+- settlement
+- swift
 slug: clearstream-post-trade
 source_filename: clearstream-post-trade.yaml
 source_heading: Capability Spec

@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
+- governance
+- snowflake
+- run policy tagged sql
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
+- nwm
 - naftiko
 - policy
-- nwm
-- run policy tagged sql
-- api integration
-- governance
-- spec-driven integration
-- ai
-- snowflake
-- mcp
-- capabilities
 slug: nwm-snowflake-policy-tagged-data-mcp
 source_filename: nwm-snowflake-policy-tagged-data-mcp.yaml
 source_heading: Capability Spec

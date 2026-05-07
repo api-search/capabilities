@@ -61,76 +61,76 @@ personas: []
 provider_name: Salesforce Sales Cloud
 provider_slug: salesforce-sales-cloud
 search_terms:
-- opportunity management
-- account management
+- run sales report
+- get account
 - update an opportunity
+- get a salesforce account record by id
+- get contact
+- create a new opportunity record in salesforce
+- update opportunity
+- contact management
+- create a new account record in salesforce
+- account management
+- sales pipeline
+- individual account operations
+- create a new opportunity
+- list reports
+- create contact
+- get a salesforce opportunity record by id
+- create a new lead record
+- individual lead operations
+- create opportunity
+- query
+- update an existing opportunity (stage, amount, close date)
+- get opportunity
+- list sales reports
+- execute a salesforce report and retrieve results for pipeline analysis
+- update an existing account record
+- get a lead record
+- crm
+- sosl search
+- create account
+- get a salesforce lead record by id
+- list available sales reports
+- sales reports
+- get a contact record
+- individual contact operations
+- get an opportunity record
+- accounts
+- soql query for advanced data access
+- search across salesforce objects using sosl
+- get lead
+- create a new contact record
+- enterprise
+- lead management
+- create a new lead record in salesforce
+- update an account record
+- get a salesforce contact record by id
+- list dashboards
+- cloud
+- update account
+- sales
+- create a new contact record in salesforce
+- execute a soql query to retrieve crm records with custom filters
+- create lead
+- get current api usage and limits for the salesforce org
+- opportunity management
+- execute a soql query
+- opportunities
+- customer management
+- create a new account record
+- sales cloud
+- leads
+- execute a sales report
+- get an account record
+- report execution
 - get org api limits
 - list available salesforce reports for sales analytics
-- sales
-- get contact
-- create contact
-- get a salesforce lead record by id
-- lead management
 - list available salesforce dashboards
 - soql query
-- sales reports
-- get a lead record
-- list available sales reports
-- individual lead operations
-- update an existing account record
-- individual account operations
-- update opportunity
-- soql query for advanced data access
-- cloud
-- create a new opportunity record in salesforce
-- accounts
-- update account
-- create a new contact record
-- run report
-- customer management
-- enterprise
-- sosl search
-- get an account record
-- individual opportunity operations
-- query
-- list reports
-- update an existing opportunity (stage, amount, close date)
-- crm
-- run sales report
-- get lead
-- report execution
-- create lead
-- create a new contact record in salesforce
-- create opportunity
-- get a salesforce opportunity record by id
-- search across salesforce objects using sosl
-- list sales reports
-- get current api usage and limits for the salesforce org
-- execute a soql query
-- create a new lead record
-- get a salesforce account record by id
-- sales cloud
-- get opportunity
-- update an account record
-- execute a soql query to retrieve crm records with custom filters
-- individual contact operations
-- contact management
-- sales pipeline
-- create account
-- get a contact record
-- create a new lead record in salesforce
-- create a new account record in salesforce
-- leads
-- list dashboards
-- get a salesforce contact record by id
-- get an opportunity record
-- get account
-- execute a sales report
-- create a new account record
-- execute a salesforce report and retrieve results for pipeline analysis
 - salesforce
-- create a new opportunity
-- opportunities
+- run report
+- individual opportunity operations
 slug: sales-pipeline-management
 source_filename: sales-pipeline-management.yaml
 source_heading: Capability Spec

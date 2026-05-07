@@ -89,57 +89,57 @@ personas: []
 provider_name: Eclipse RDF4J
 provider_slug: eclipse-rdf4j
 search_terms:
-- queryrepository
-- clear namespaces
-- get namespace
-- rollbacktransaction
-- linked data
-- listrepositories
-- getnamespace
-- getstatements
-- java
-- createrepository
-- get statements
-- eclipse foundation
-- removestatements
-- list contexts
-- list repositories
-- add or update statements
-- triple store
-- addstatements
-- begin transaction
-- execute transaction action
-- listnamespaces
-- getrepositorysize
-- set namespace
-- deleterepository
 - query repository (sparql)
-- open source
-- create or configure repository
-- clearnamespaces
 - replacestatements
-- get protocol version
-- get repository size
-- deletenamespace
-- remove statements
-- list namespaces
-- getprotocolversion
-- api
-- sparql query or update
 - rollback transaction
-- listcontexts
-- replace statements
-- rdf4j
-- sparql
-- eclipse
-- delete namespace
-- rdf
-- postqueryorupdate
-- setnamespace
-- semantic web
-- begintransaction
+- getrepositorysize
 - delete repository
+- get protocol version
+- replace statements
+- sparql query or update
+- deletenamespace
+- getnamespace
+- api
+- createrepository
+- get namespace
+- listrepositories
+- clearnamespaces
+- setnamespace
+- add or update statements
+- rdf4j
+- rollbacktransaction
+- java
+- getprotocolversion
+- deleterepository
+- open source
+- getstatements
+- sparql
+- list contexts
+- eclipse foundation
+- eclipse
+- set namespace
+- semantic web
+- begin transaction
+- create or configure repository
+- removestatements
+- get repository size
+- postqueryorupdate
+- list namespaces
+- delete namespace
+- clear namespaces
+- execute transaction action
+- begintransaction
+- addstatements
+- linked data
+- triple store
+- queryrepository
 - executetransactionaction
+- listnamespaces
+- remove statements
+- listcontexts
+- get statements
+- rdf
+- list repositories
 slug: eclipse-rdf4j-capability
 source_filename: eclipse-rdf4j-capability.yaml
 source_heading: Capability Spec

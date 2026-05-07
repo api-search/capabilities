@@ -61,43 +61,43 @@ personas: []
 provider_name: Workday Report Writer
 provider_slug: workday-report-writer
 search_terms:
-- getdataset
-- completebucket
-- hrms
-- workday report writer list prism analytics tables
-- getdatachangetask
-- workday report writer get a prism analytics dataset
-- reporting
-- workday report writer get a data change task
+- workday report writer list prism analytics datasets
 - analytics
-- workday report writer list file upload buckets
-- createtable
-- workday report writer get a prism analytics table
 - listdatasets
-- financials
+- writer
+- workday report writer get a data change task
+- api
+- workday
+- workday report writer list prism analytics tables
+- listbuckets
+- saas
+- getdataset
+- workday report writer get a prism analytics table
+- workday report writer get a prism analytics dataset
+- createtable
+- workday report writer list file upload buckets
+- workday report writer complete a bucket and trigger data change task
+- workday report writer list data change tasks
+- hrms
+- workday report writer update a prism analytics table
+- getbucket
+- workday report writer upload a file to a bucket
+- workday report writer get a file upload bucket
+- listtables
+- workday report writer create a file upload bucket
+- createbucket
 - updatetable
 - enterprise
-- listbuckets
-- workday report writer complete a bucket and trigger data change task
 - report
-- erp
-- workday
-- gettable
-- saas
-- api
-- uploadfiletobucket
-- workday report writer upload a file to a bucket
-- workday report writer list data change tasks
-- getbucket
-- createbucket
-- writer
-- workday report writer get a file upload bucket
-- workday report writer list prism analytics datasets
-- workday report writer update a prism analytics table
-- listtables
 - listdatachangetasks
+- completebucket
 - workday report writer create a prism analytics table
-- workday report writer create a file upload bucket
+- erp
+- reporting
+- uploadfiletobucket
+- getdatachangetask
+- gettable
+- financials
 slug: workday-report-writer-capability
 source_filename: workday-report-writer-capability.yaml
 source_heading: Capability Spec

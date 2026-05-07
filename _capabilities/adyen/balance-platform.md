@@ -29,43 +29,43 @@ personas: []
 provider_name: Adyen
 provider_slug: adyen
 search_terms:
-- balance platform
-- manage account holders on the balance platform.
-- create a new account holder on the adyen balance platform.
-- fintech
-- merchant account and balance platform configuration.
-- issue card
-- builds payment integrations using adyen apis and sdks.
-- financial services
-- create a balance account.
-- issue a virtual or physical payment card for an account holder.
-- get balance account details.
-- create payment instrument
-- get account holder
-- get balance and details of a balance account.
-- marketplaces
-- marketplace and platform fund management.
-- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
-- builds marketplace and fintech platforms using adyen balance platform.
-- create an account holder.
-- create a balance account for an account holder.
-- create account holder
-- online and in-person payment acceptance.
-- manages merchant accounts, terminals, and dispute responses.
-- adyen
 - get balance account
-- chargeback and dispute handling.
+- create a balance account for an account holder.
 - 'unified capability for managing adyen merchant accounts, stores, payment terminals, and dispute resolution. combines management api and disputes api to give operations teams and platform administrators complete control over merchant configuration and chargeback handling. primary persona: merchant operations team or platform administrator.'
-- get account holder details.
-- payments
-- retrieve details of an account holder.
-- issuing
-- manage balance accounts.
-- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
-- transfers
+- create an account holder.
+- create account holder
+- issue a virtual or physical payment card for an account holder.
+- marketplace and platform fund management.
 - create a payment instrument (card).
-- create balance account
+- marketplaces
+- transfers
 - manage payment instruments including virtual and physical cards.
+- adyen
+- create balance account
+- fintech
+- 'unified capability for accepting and managing online payments. combines the checkout api and payments api to provide merchants and developers with a complete payment acceptance workflow including session creation, payment authorisation, refunds, and cancellations. primary persona: developer or merchant platform engineer.'
+- chargeback and dispute handling.
+- create a new account holder on the adyen balance platform.
+- online and in-person payment acceptance.
+- financial services
+- 'unified capability for building financial products on adyen''s balance platform. combines the configuration api for account holder and card management with the transfers api for fund movement. used by marketplace and platform builders to onboard users, issue cards, and manage fund transfers. primary persona: platform engineer or marketplace developer.'
+- manage balance accounts.
+- builds payment integrations using adyen apis and sdks.
+- manages merchant accounts, terminals, and dispute responses.
+- issue card
+- get balance and details of a balance account.
+- balance platform
+- create a balance account.
+- get account holder
+- get balance account details.
+- payments
+- builds marketplace and fintech platforms using adyen balance platform.
+- issuing
+- create payment instrument
+- retrieve details of an account holder.
+- manage account holders on the balance platform.
+- merchant account and balance platform configuration.
+- get account holder details.
 slug: balance-platform
 source_filename: balance-platform.yaml
 source_heading: Capability Spec

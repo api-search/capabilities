@@ -37,47 +37,47 @@ personas: []
 provider_name: SeatGeek
 provider_slug: seatgeek
 search_terms:
-- list events
-- concerts
-- sports
-- search venues
-- ticketing
-- find event venues by city, state, country, or location radius
-- get personalized event recommendations
-- get full details for a specific event including venue, performers, ticket pricing, and seat availability
-- get performer details
-- get personalized event recommendations based on user location and interests
-- get performer
-- list all event taxonomy categories
-- get event
-- live events
-- get event recommendations
-- search events
 - search for live events by artist name, genre, location, date range, or ticket price
-- list available event taxonomy categories such as concerts, sports, and theater
-- browse performers
-- get recommendations
-- performer profile and upcoming events
-- list event categories
-- search performers
-- get full event details with ticket pricing
-- find venues by city, state, or location radius
+- list events
+- list all event taxonomy categories
 - search events by keyword, performer, venue, date, or location
-- event details and ticket pricing
-- discovery
+- tickets
+- get full details for a specific event including venue, performers, ticket pricing, and seat availability
+- get recommendations
+- search events
 - get performer profile, genre, and upcoming event count
 - venues
+- performer profile and upcoming events
 - search and browse live events
-- list performers
-- search for artists, teams, and performers
+- get performer details
+- search performers
+- get personalized event recommendations
+- find event venues by city, state, country, or location radius
 - list venues
-- get event details
-- list taxonomies
-- event categories and classifications
-- search for concert artists, sports teams, theater companies, and other performers
+- get personalized event recommendations based on user location and interests
 - events
-- tickets
+- list performers
+- discovery
+- find venues by city, state, or location radius
+- list event categories
+- concerts
+- get event recommendations
+- list taxonomies
+- get event details
+- search for concert artists, sports teams, theater companies, and other performers
+- sports
+- live events
+- get event
+- event categories and classifications
+- event details and ticket pricing
 - personalized event recommendations
+- get performer
+- search for artists, teams, and performers
+- browse performers
+- get full event details with ticket pricing
+- list available event taxonomy categories such as concerts, sports, and theater
+- ticketing
+- search venues
 slug: event-discovery
 source_filename: event-discovery.yaml
 source_heading: Capability Spec

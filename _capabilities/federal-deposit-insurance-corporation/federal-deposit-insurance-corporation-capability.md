@@ -37,28 +37,28 @@ personas: []
 provider_name: Federal Deposit Insurance Corporation
 provider_slug: federal-deposit-insurance-corporation
 search_terms:
-- deposit
-- listfailures
-- listinstitutions
-- search fdic-insured branch and office locations
-- insurance
-- search fdic-insured institutions
-- list failed fdic-insured institutions
-- listsummaryofdeposits
-- retrieve financial reports for institutions
-- financial data
-- api
-- listfinancials
 - listlocations
-- banking
-- retrieve summary of deposits data
-- federal government
-- listhistory
-- corporation
-- federal
-- listdemographics
+- deposit
 - retrieve institution structure history
+- federal
+- corporation
+- listfailures
+- api
+- retrieve financial reports for institutions
+- search fdic-insured institutions
+- listhistory
 - retrieve demographic data
+- listfinancials
+- search fdic-insured branch and office locations
+- listsummaryofdeposits
+- financial data
+- retrieve summary of deposits data
+- list failed fdic-insured institutions
+- listdemographics
+- listinstitutions
+- banking
+- insurance
+- federal government
 slug: federal-deposit-insurance-corporation-capability
 source_filename: federal-deposit-insurance-corporation-capability.yaml
 source_heading: Capability Spec

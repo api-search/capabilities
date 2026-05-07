@@ -249,102 +249,102 @@ personas: []
 provider_name: Label Studio
 provider_slug: label-studio
 search_terms:
-- ✨ update comment
-- ✨ delete comment
-- execute transition
-- get file upload
-- get
-- ✨ list annotation history items for project
-- ✨ create review
-- delete user
-- llm
-- api
-- list
-- data labeling
-- update
-- ✨ delete annotation history items
-- ✨ get entity state history
-- delete all project views
-- ✨ cancel state backfill jobs
-- ✨ get state backfill status
-- list for project
-- get all task annotations
-- ✨ trigger state backfill for organization
-- ✨ get activity logs
-- cancel backfill
-- ✨ create comment
-- export
-- update annotation
-- trigger backfill
-- get user token
-- studio
-- bulk delete annotations by ids
-- ai
-- get view details
-- delete
-- open source
-- create bulk
-- ✨ retrieve a single annotation history item (full result for hydration)
-- ✨ list all annotation history items for annotation
-- ✨ export comments to csv
-- get hotkeys
-- ✨ cancel agreement v2 backfill jobs
 - reset user token
-- ✨ update current user
-- get current user
+- bulk delete annotations by ids
 - create new user
-- retrieve my user
-- ✨ delete review
-- ✨ trigger agreement v2 backfill
-- delete file upload
-- label
-- list views
-- retrieve
-- ✨ get comment
-- update current user
-- state history
-- reset token
-- annotation
-- update file upload
-- ✨ get current user info
-- post actions
-- list backfills
-- create view
-- get user info
-- artificial intelligence
-- machine learning
-- ✨ get review
-- get user hotkeys
-- update order
-- update user details
-- ✨ get agreement v2 backfill status
-- delete bulk
-- ✨ list reviews
-- get actions
-- delete all
-- ✨ get billing info
-- whoami
-- ✨ update review
-- ✨ execute manual state transition
-- create annotation
-- update hotkeys
-- ✨ list state backfill jobs
-- ✨ list dimensions
-- get token
-- update order of views
-- get backfill status
-- update user hotkeys
-- ✨ get dimension
-- ✨ list comments
-- get annotation by its id
 - delete annotation
-- bulk create annotations
-- create
-- ✨ list agreement v2 backfill jobs
+- api
+- get actions
+- update user hotkeys
+- update order
+- retrieve
+- machine learning
+- state history
+- ✨ create review
+- ✨ get review
+- ✨ get comment
+- ✨ get activity logs
+- delete all
+- get view details
 - update view
-- list users
+- get token
+- create bulk
+- delete bulk
+- ✨ export comments to csv
+- ✨ delete review
+- ✨ delete comment
+- ai
+- ✨ cancel state backfill jobs
+- delete
+- ✨ update current user
+- ✨ trigger state backfill for organization
+- ✨ list reviews
+- ✨ trigger agreement v2 backfill
+- ✨ get billing info
+- artificial intelligence
+- delete user
+- list for project
 - info
+- get user hotkeys
+- list users
+- ✨ execute manual state transition
+- delete all project views
+- ✨ update comment
+- execute transition
+- export
+- get current user
+- ✨ list comments
+- get hotkeys
+- ✨ get dimension
+- update user details
+- bulk create annotations
+- ✨ update review
+- ✨ create comment
+- llm
+- create view
+- ✨ retrieve a single annotation history item (full result for hydration)
+- trigger backfill
+- ✨ delete annotation history items
+- ✨ cancel agreement v2 backfill jobs
+- get file upload
+- ✨ list annotation history items for project
+- whoami
+- cancel backfill
+- ✨ list dimensions
+- update annotation
+- update hotkeys
+- data labeling
+- retrieve my user
+- studio
+- list backfills
+- post actions
+- update file upload
+- list views
+- ✨ get entity state history
+- get
+- list
+- delete file upload
+- update
+- ✨ list state backfill jobs
+- ✨ get state backfill status
+- ✨ list agreement v2 backfill jobs
+- label
+- create
+- open source
+- ✨ get current user info
+- get user info
+- annotation
+- get user token
+- get backfill status
+- get all task annotations
+- reset token
+- ✨ get agreement v2 backfill status
+- ✨ list all annotation history items for annotation
+- get annotation by its id
 - delete view
+- update order of views
+- create annotation
+- update current user
 slug: label-studio-capability
 source_filename: label-studio-capability.yaml
 source_heading: Capability Spec

@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
 - list integrations
 - mulesoft
-- mcp
-- integration
-- api integration
-- governance
-- spec-driven integration
-- ai
-- get integration
 - boomi
+- governance
+- get integration
+- integration
+- ai
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- naftiko
 slug: enterprise-integration-context-composition
 source_filename: enterprise-integration-context-composition.yaml
 source_heading: Capability Spec

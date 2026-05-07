@@ -37,27 +37,27 @@ personas: []
 provider_name: OIDC
 provider_slug: oidc
 search_terms:
-- identity
-- getuserinfo
-- token endpoint
-- authorize
-- postuserinfo
-- oauth
+- userinfo endpoint (post)
 - getdiscovery
+- getuserinfo
+- postuserinfo
 - api
-- authorization endpoint
-- endsession
-- openid connect discovery
 - authentication
 - end session endpoint
-- userinfo endpoint (post)
 - oidc
-- jwt
+- authorization endpoint
+- openid connect discovery
+- token endpoint
+- endsession
+- identity
 - openid connect
-- json web key set endpoint
-- userinfo endpoint
-- getjwks
 - gettoken
+- authorize
+- userinfo endpoint
+- json web key set endpoint
+- getjwks
+- jwt
+- oauth
 slug: oidc-capability
 source_filename: oidc-capability.yaml
 source_heading: Capability Spec

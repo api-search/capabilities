@@ -49,57 +49,57 @@ personas: []
 provider_name: Union Pacific
 provider_slug: union-pacific
 search_terms:
-- reserve space on an intermodal train between up terminals
-- list equipment
-- track active shipments with real-time location and etas
-- list available service lanes
+- trains
 - logistics
-- list available intermodal service lanes and transit times between terminals
-- release held rail car equipment for a shipment
-- end-to-end rail freight workflow from equipment ordering through shipment tracking and exception management
-- railroads
-- get tracking details for a specific shipment
-- supply chain exception case management
-- union pacific
-- list cases
-- get shipment
+- list equipment
+- search available rail car equipment by type and specifications
+- analyzes freight patterns, plans intermodal routes, and tracks performance
+- track active shipments with real-time location and etas
 - order rail car equipment
-- rail equipment search and management
-- view exception cases for shipments that are off course or experiencing delays
-- create intermodal reservation
+- release held rail car equipment for a shipment
+- active rail shipment tracking
+- union pacific network locations
 - view exception cases for off-course shipments
-- list locations
-- create an intermodal terminal reservation
-- release shipment
-- get detailed tracking information for a specific rail shipment
+- intermodal terminal reservation management
+- supply chain
 - view up network facility locations
 - freight
-- search available rail equipment
-- order equipment
-- get details for a specific exception case
-- supply chain
-- available intermodal service lanes
-- get details for a specific supply chain exception case
-- order rail car equipment for a shipment from origin to destination
-- analyzes freight patterns, plans intermodal routes, and tracks performance
-- shipping
-- union pacific network locations
-- coordinates equipment ordering, intermodal reservations, and terminal operations
-- intermodal terminal reservation management
-- get case
-- list intermodal lanes
-- look up waybill details for shipments
-- release held equipment for a shipment
-- manages rail freight shipments and oversees supply chain exception handling
-- list intermodal departures
+- end-to-end rail freight workflow from equipment ordering through shipment tracking and exception management
+- get detailed tracking information for a specific rail shipment
 - view union pacific network facilities, yards, and terminals with location details
-- search available rail car equipment by type and specifications
+- manages rail freight shipments and oversees supply chain exception handling
+- get details for a specific supply chain exception case
+- union pacific
+- list intermodal lanes
+- list available intermodal service lanes and transit times between terminals
+- release held equipment for a shipment
+- list intermodal departures
+- list available service lanes
+- search available rail equipment
+- get shipment
+- rail equipment search and management
+- order rail car equipment for a shipment from origin to destination
 - view scheduled intermodal train departures and available capacity
-- list waybills
+- list cases
+- reserve space on an intermodal train between up terminals
+- get case
+- railroads
+- create intermodal reservation
 - list shipments
-- active rail shipment tracking
-- trains
+- create an intermodal terminal reservation
+- look up waybill details for shipments
+- get details for a specific exception case
+- view exception cases for shipments that are off course or experiencing delays
+- coordinates equipment ordering, intermodal reservations, and terminal operations
+- get tracking details for a specific shipment
+- release shipment
+- list locations
+- shipping
 - track active rail shipments showing current location and estimated arrival times
+- order equipment
+- available intermodal service lanes
+- list waybills
+- supply chain exception case management
 slug: rail-freight-operations
 source_filename: rail-freight-operations.yaml
 source_heading: Capability Spec

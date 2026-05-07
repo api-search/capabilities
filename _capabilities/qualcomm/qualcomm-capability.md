@@ -14,8 +14,8 @@ provider_name: qualcomm
 provider_slug: qualcomm
 search_terms:
 - get api status
-- getstatus
 - qualcomm
+- getstatus
 - api
 slug: qualcomm-capability
 source_filename: qualcomm-capability.yaml

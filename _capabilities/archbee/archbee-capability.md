@@ -37,33 +37,33 @@ personas: []
 provider_name: Archbee
 provider_slug: archbee
 search_terms:
-- integrates documentation into developer workflows
-- archbee delete space
-- archbee list pages
-- createpage
-- listmembers
-- archbee
-- listpages
-- documentation platform
-- managing team access to documentation spaces
-- archbee list spaces
-- manages documentation spaces, members, and access
-- deletespace
-- archbee get space
 - developer docs
-- creating and organizing technical documentation
-- archbee create page
-- api documentation
+- archbee create space
+- archbee list spaces
+- deletespace
 - api
 - publishing and versioning documentation content
+- archbee delete space
+- listpages
 - knowledge base
-- getspace
-- listspaces
-- creates and manages technical documentation content
-- archbee create space
-- technical writing
-- createspace
+- listmembers
 - archbee list space members
+- documentation platform
+- getspace
+- createpage
+- technical writing
+- archbee
+- manages documentation spaces, members, and access
+- archbee create page
+- archbee get space
+- managing team access to documentation spaces
+- createspace
+- integrates documentation into developer workflows
+- listspaces
+- archbee list pages
+- creating and organizing technical documentation
+- creates and manages technical documentation content
+- api documentation
 slug: archbee-capability
 source_filename: archbee-capability.yaml
 source_heading: Capability Spec

@@ -97,57 +97,57 @@ personas: []
 provider_name: MBTA
 provider_slug: mbta
 search_terms:
-- get alert
+- get vehicle
+- list services
+- getfacility
+- listroutepatterns
 - get route pattern
+- listlines
+- getshape
+- getstop
+- list trips
+- liststops
+- getservice
+- get line
+- get route
+- list route patterns
+- api
+- listschedules
+- listalerts
+- public transportation
+- getalert
+- getline
+- list shapes
+- get shape
+- list vehicles
+- listvehicles
+- listshapes
+- getroutepattern
+- list lines
+- listtrips
+- list routes
+- list schedules
+- get service
+- listpredictions
+- list alerts
+- getvehicle
+- get alert
+- mbta
+- massachusetts
+- getroute
+- list predictions
+- get stop
+- list stops
+- get trip
+- list facilities
+- boston
+- transit
+- get facility
 - real-time
 - listfacilities
-- get route
-- listroutes
-- list shapes
-- listlines
-- getstop
-- getroute
-- transit
-- list trips
-- list services
-- getservice
-- list facilities
-- listvehicles
-- getfacility
 - gettrip
-- getshape
-- get trip
-- massachusetts
-- get line
-- getline
-- list predictions
-- list routes
-- get service
-- api
-- list route patterns
-- boston
-- listshapes
-- listtrips
-- listpredictions
-- get shape
-- liststops
-- listroutepatterns
-- get stop
-- getvehicle
-- list vehicles
-- list lines
-- listalerts
-- list schedules
-- list stops
-- getroutepattern
-- list alerts
-- getalert
-- get facility
-- listschedules
+- listroutes
 - listservices
-- public transportation
-- get vehicle
-- mbta
 slug: mbta-capability
 source_filename: mbta-capability.yaml
 source_heading: Capability Spec

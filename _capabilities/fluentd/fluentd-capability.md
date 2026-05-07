@@ -17,14 +17,14 @@ personas: []
 provider_name: Fluentd
 provider_slug: fluentd
 search_terms:
-- data collection
-- postevent
-- fluentd post a log event
-- api
-- fluentd post a log event with explicit format
 - posteventwithformat
-- logging
+- api
+- data collection
 - open source
+- fluentd post a log event
+- fluentd post a log event with explicit format
+- postevent
+- logging
 - fluentd
 slug: fluentd-capability
 source_filename: fluentd-capability.yaml

@@ -81,49 +81,49 @@ personas: []
 provider_name: Google Calendar
 provider_slug: google-calendar
 search_terms:
-- google workspace
-- listevents
-- quickaddevent
-- insertcalendarlist
-- google calendar query free/busy
-- updateevent
-- scheduling
-- google calendar create calendar
-- google calendar patch event
-- google calendar create event
-- google calendar update calendar
-- calendar
-- deletecalendar
-- listacl
 - google calendar insert calendar to list
-- getcalendar
-- listsettings
-- google calendar insert acl rule
-- google
-- google calendar get calendar
-- google calendar quick add event
-- patchevent
-- google calendar list acl rules
-- queryfreebusy
-- getcolors
-- createevent
-- api
+- google calendar delete event
 - listcalendarlist
-- createcalendar
-- google calendar update event
+- insertcalendarlist
+- queryfreebusy
+- patchevent
+- google calendar get calendar
+- getcalendar
+- calendar
+- api
+- deletecalendar
+- google calendar list acl rules
+- google calendar list settings
+- getevent
+- google
+- listsettings
+- google calendar delete calendar
 - deleteevent
+- google calendar get event
+- events
+- google calendar create calendar
+- getcolors
+- google calendar patch event
+- createcalendar
+- google calendar create event
+- insertacl
+- availability
+- google calendar update calendar
+- quickaddevent
+- listevents
+- listacl
+- google calendar insert acl rule
 - google calendar list calendar list
 - google calendar get colors
-- google calendar list settings
-- insertacl
-- getevent
-- google calendar delete event
-- availability
-- google calendar get event
+- google workspace
+- scheduling
 - updatecalendar
+- google calendar query free/busy
+- google calendar update event
+- google calendar quick add event
 - google calendar list events
-- events
-- google calendar delete calendar
+- updateevent
+- createevent
 slug: google-calendar-capability
 source_filename: google-calendar-capability.yaml
 source_heading: Capability Spec

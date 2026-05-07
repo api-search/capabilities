@@ -57,36 +57,36 @@ personas: []
 provider_name: Google People
 provider_slug: google-people
 search_terms:
-- listcontactgroups
-- google people create contact group
-- searchcontacts
-- google people create contact
-- google people update contact
+- deletecontact
 - updatecontactgroup
-- google people get person
-- contacts
-- profiles
-- listconnections
-- google
-- google people list contact groups
-- updatecontact
 - deletecontactgroup
+- google people delete contact
+- batchgetpeople
+- createcontact
+- google people delete contact group
+- api
+- profiles
+- google people get person
+- google people update contact
+- address book
+- google
+- updatecontact
+- google people search contacts
+- listcontactgroups
+- google people get contact group
+- contacts
+- getperson
 - google people batch get people
+- createcontactgroup
+- google people create contact
+- people
+- google people list contact groups
+- google people update contact group
+- listconnections
+- searchcontacts
 - google people list connections
 - getcontactgroup
-- createcontact
-- getperson
-- api
-- address book
-- google people get contact group
-- google people search contacts
-- people
-- google people delete contact
-- google people update contact group
-- createcontactgroup
-- google people delete contact group
-- deletecontact
-- batchgetpeople
+- google people create contact group
 slug: google-people-capability
 source_filename: google-people-capability.yaml
 source_heading: Capability Spec

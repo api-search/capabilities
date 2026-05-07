@@ -58,36 +58,36 @@ provider_name: Fluent Bit
 provider_slug: fluent-bit
 search_terms:
 - get api v2 reload
-- post api v2 reload
-- internal metrics (v2, prometheus)
-- build information
-- internal metrics (v1, json)
-- metrics
-- get
-- get api v1 health
-- storage layer metrics
 - get api v2 health
-- internal metrics (v1, prometheus)
-- open source
-- get api v1 metrics
-- internal metrics (v2, cmetrics)
-- get hot reload status
-- api
-- observability
-- bit
-- health status (v2, json)
-- get api v2 metrics
-- get api v1 metrics prometheus
-- put api v2 reload
-- trigger hot reload (put)
-- fluent
-- get api v1 storage
-- uptime information
-- health check (v1)
-- get api v2 metrics prometheus
+- internal metrics (v2, prometheus)
 - trigger hot reload
-- logging
+- put api v2 reload
+- api
+- uptime information
+- build information
+- get api v1 metrics prometheus
+- trigger hot reload (put)
+- open source
+- get hot reload status
+- get api v2 metrics prometheus
+- health status (v2, json)
+- internal metrics (v1, prometheus)
+- get api v2 metrics
+- health check (v1)
+- get api v1 storage
+- observability
 - get api v1 uptime
+- storage layer metrics
+- get api v1 metrics
+- internal metrics (v1, json)
+- fluent
+- post api v2 reload
+- metrics
+- get api v1 health
+- internal metrics (v2, cmetrics)
+- bit
+- logging
+- get
 slug: fluent-bit-capability
 source_filename: fluent-bit-capability.yaml
 source_heading: Capability Spec

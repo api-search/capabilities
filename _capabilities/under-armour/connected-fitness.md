@@ -61,62 +61,62 @@ personas: []
 provider_name: Under Armour
 provider_slug: under-armour
 search_terms:
-- create a new fitness route with gps waypoints
-- single workout record
-- sports
-- get route
-- user search and social connections
-- create a new workout
-- get route details including gps waypoints and elevation data
-- delete a workout record
-- search for users or retrieve social connections and friend lists
-- list fitness devices for a user
-- delete workout
-- get heart rate training zones configured for a user
-- list workouts for a user
-- get a route by id
-- connected fitness
-- wearables
-- create a webhook subscription
-- single route with optional gps waypoints
-- create workout
-- get workout
-- create webhook
-- list devices
-- list fitness devices and wearables registered to a user
-- fortune 1000
-- create route
-- create a new route
-- get a specific workout record including aggregate metrics and optional time series gps data
-- registered fitness devices
-- list webhook subscriptions
-- list routes
 - workouts
-- webhook event subscriptions
-- get a workout by id
-- list heart rate zones
-- fitness
-- current authenticated user profile
-- get the profile of the currently authenticated user
-- subscribe to fitness events like workout creation and updates via webhook
-- list fitness routes for a user or near a geographic location
-- get the authenticated user's profile
-- under armour
+- get heart rate training zones configured for a user
 - list workouts
-- get current user
-- fitness routes with gps data
-- list users
-- list fitness workouts for a user with optional date and activity type filters
-- fitness workouts with aggregates
-- heart rate training zones
-- search users or retrieve friend connections
-- get heart rate zones for a user
-- list routes for a user or near a location
-- list webhooks
-- delete a workout
-- routes
-- record a new fitness workout with distance, time, and energy metrics
+- list workouts for a user
+- get route
+- create a new route
+- single route with optional gps waypoints
+- get a route by id
+- create workout
+- create route
+- user search and social connections
+- connected fitness
+- registered fitness devices
+- get a workout by id
 - health
+- create webhook
+- search for users or retrieve social connections and friend lists
+- fitness workouts with aggregates
+- delete workout
+- list fitness devices for a user
+- under armour
+- fitness
+- get the profile of the currently authenticated user
+- list routes for a user or near a location
+- record a new fitness workout with distance, time, and energy metrics
+- get route details including gps waypoints and elevation data
+- single workout record
+- list users
+- routes
+- delete a workout record
+- create a new workout
+- list routes
+- list webhooks
+- fortune 1000
+- webhook event subscriptions
+- create a webhook subscription
+- list devices
+- get the authenticated user's profile
+- list fitness routes for a user or near a geographic location
+- sports
+- list heart rate zones
+- wearables
+- get current user
+- search users or retrieve friend connections
+- list webhook subscriptions
+- list fitness workouts for a user with optional date and activity type filters
+- create a new fitness route with gps waypoints
+- list fitness devices and wearables registered to a user
+- get heart rate zones for a user
+- get workout
+- delete a workout
+- subscribe to fitness events like workout creation and updates via webhook
+- get a specific workout record including aggregate metrics and optional time series gps data
+- heart rate training zones
+- fitness routes with gps data
+- current authenticated user profile
 slug: connected-fitness
 source_filename: connected-fitness.yaml
 source_heading: Capability Spec

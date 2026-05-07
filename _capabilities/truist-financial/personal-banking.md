@@ -29,36 +29,36 @@ personas: []
 provider_name: Truist Financial
 provider_slug: truist-financial
 search_terms:
-- get current and available balances for a personal or small business account.
-- get details for a specific personal or small business deposit account.
-- financial services
+- get account
+- transactions
+- personal banking
+- commercial banking
+- list accounts
+- list all personal and small business deposit accounts.
+- account balance information
+- individual account details
 - get account balances
 - personal and small business deposit accounts
-- account transaction history
-- accounts
-- transactions
-- commercial banking
-- list all personal and small business deposit accounts for the authenticated client.
-- personal banking
-- get transaction
-- account balance information
-- get current and available balances for an account.
-- open banking
-- individual account details
-- individual transaction details
-- small business
-- fortune 500
-- get details for a specific account transaction.
-- payments
 - get details for a specific personal or small business account.
-- list accounts
-- list transactions for a personal or small business account.
+- get transaction
+- individual transaction details
 - get details for a specific personal account transaction.
-- get account
-- list transactions
+- account transaction history
+- small business
+- financial services
+- accounts
+- get details for a specific personal or small business deposit account.
+- get details for a specific account transaction.
 - retrieve transaction history for a personal account with date range and status filtering.
+- open banking
+- get current and available balances for an account.
+- list all personal and small business deposit accounts for the authenticated client.
 - banking
-- list all personal and small business deposit accounts.
+- payments
+- list transactions for a personal or small business account.
+- list transactions
+- get current and available balances for a personal or small business account.
+- fortune 500
 slug: personal-banking
 source_filename: personal-banking.yaml
 source_heading: Capability Spec

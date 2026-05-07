@@ -15,12 +15,12 @@ provider_slug: open-policy-agent
 search_terms:
 - partially evaluate a query
 - agent
+- policies
+- open
+- api
+- standards
 - post v1 compile
 - policy
-- api
-- open
-- policies
-- standards
 slug: open-policy-agent-capability
 source_filename: open-policy-agent-capability.yaml
 source_heading: Capability Spec

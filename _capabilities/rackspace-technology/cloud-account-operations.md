@@ -53,50 +53,50 @@ personas: []
 provider_name: Rackspace Technology
 provider_slug: rackspace-technology
 search_terms:
-- delete dns zone
-- authenticate to rackspace cloud identity using configured credentials and obtain a service token.
-- multicloud
-- authentication sessions.
-- dns zones (domains) under the tenant.
-- list rackspace customer accounts (rcns) accessible to the caller.
-- create one or more dns zones.
-- identity
-- dns
-- infrastructure
-- list identity users.
-- list rackspace cloud dns zones for the configured tenant.
-- devops
-- list dns records
-- create session
-- customer account lookups.
-- get customer account
-- list records in a dns zone.
-- add records to a dns zone.
-- customer contact lookups.
-- cloud
-- add dns records to a rackspace cloud dns zone.
-- list records in a rackspace cloud dns zone.
-- dns records within a zone.
-- identity user lookups.
-- authenticate rackspace
-- create dns zones
-- show dns zone
-- add dns records
-- managed services
+- rackspace
 - delete a dns zone.
+- devops
+- add records to a dns zone.
+- get a customer account by rcn.
+- list rackspace cloud dns zones for the configured tenant.
+- create session
+- list dns records
+- multicloud
+- customer account lookups.
+- delete dns zone
+- list customer accounts
+- list dns zones for the tenant.
+- list records in a rackspace cloud dns zone.
+- list records in a dns zone.
+- dns zones (domains) under the tenant.
+- list identity users.
+- add dns records to a rackspace cloud dns zone.
 - get a rackspace customer account by rcn.
-- list customer accounts the caller can access.
+- add dns records
+- infrastructure
+- show dns zone
+- identity
+- create dns zones
+- list users
 - authenticate and obtain a service token.
+- customer contact lookups.
+- list rackspace customer accounts (rcns) accessible to the caller.
+- list contacts
+- create one or more dns zones.
+- get customer account
+- list dns zones
+- authentication sessions.
+- cloud
 - show dns zone details.
 - account
-- list customer accounts
-- list users
-- list contacts
-- list dns zones
+- managed services
 - list contacts for a customer account.
-- get a customer account by rcn.
-- rackspace
-- list dns zones for the tenant.
+- list customer accounts the caller can access.
+- dns
+- dns records within a zone.
+- identity user lookups.
+- authenticate to rackspace cloud identity using configured credentials and obtain a service token.
+- authenticate rackspace
 slug: cloud-account-operations
 source_filename: cloud-account-operations.yaml
 source_heading: Capability Spec

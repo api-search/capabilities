@@ -53,61 +53,61 @@ personas: []
 provider_name: Truto
 provider_slug: truto
 search_terms:
-- list employees from a connected hris provider (bamboohr, workday, rippling, etc.) with status and department filtering.
-- list jobs
-- create contact
-- embedded integrations
-- create integrated account.
-- list job postings from a connected ats (greenhouse, lever, workable, etc.) with status and department filtering.
-- list hris groups.
-- list contacts from connected crm.
-- generate a link token to initiate a customer-facing connection flow for a specific integration (e.g., bamboohr, greenhouse, salesforce).
 - list sales opportunities from a connected crm with account, stage, and status filtering.
-- ats
-- create mcp server
-- unified api
-- crm contacts
-- list timeoff requests
-- ats candidates
-- create link token
-- hris employees
-- create link token for customer connection flow.
-- mcp
-- list candidates
-- provision an mcp server for an integrated account so ai agents can directly access the integration's tools.
-- crm
-- list time off requests from a connected hris provider with employee and status filtering.
-- get a single employee record by id from a connected hris provider.
-- link token generation
-- saas
-- list opportunities from connected crm.
-- ai agents
-- create a new contact in the connected crm provider.
-- ats applications
-- hris groups and departments
-- list employees from connected hris.
-- hris
-- list integrated accounts.
-- list applications from connected ats.
-- list employees
-- get employee
-- list candidate profiles from a connected ats provider.
-- list job applications from a connected ats with job, candidate, and status filtering.
-- list integrated accounts
-- integrated accounts management
-- list opportunities
-- list jobs from connected ats.
-- integration platform
-- list candidates from connected ats.
-- list groups
-- create contact in connected crm.
-- list contacts
-- create integrated account
-- list applications
-- list all integrated accounts connected to your truto tenant, showing which third-party apps each customer has connected.
-- list crm contacts from a connected provider (salesforce, hubspot, pipedrive, etc.).
-- crm opportunities
 - ats job postings
+- hris
+- list candidate profiles from a connected ats provider.
+- ai agents
+- list candidates
+- ats
+- list groups
+- ats candidates
+- unified api
+- create a new contact in the connected crm provider.
+- list jobs from connected ats.
+- create mcp server
+- mcp
+- integrated accounts management
+- embedded integrations
+- create contact
+- crm opportunities
+- list all integrated accounts connected to your truto tenant, showing which third-party apps each customer has connected.
+- list applications from connected ats.
+- saas
+- list candidates from connected ats.
+- provision an mcp server for an integrated account so ai agents can directly access the integration's tools.
+- create link token
+- list contacts from connected crm.
+- list crm contacts from a connected provider (salesforce, hubspot, pipedrive, etc.).
+- get employee
+- crm
+- integration platform
+- create integrated account
+- list integrated accounts.
+- list contacts
+- create contact in connected crm.
+- get a single employee record by id from a connected hris provider.
+- list employees
+- ats applications
+- create link token for customer connection flow.
+- list jobs
+- link token generation
+- list employees from connected hris.
+- list applications
+- crm contacts
+- create integrated account.
+- list integrated accounts
+- list opportunities
+- hris groups and departments
+- list job postings from a connected ats (greenhouse, lever, workable, etc.) with status and department filtering.
+- list job applications from a connected ats with job, candidate, and status filtering.
+- list timeoff requests
+- list hris groups.
+- list employees from a connected hris provider (bamboohr, workday, rippling, etc.) with status and department filtering.
+- hris employees
+- generate a link token to initiate a customer-facing connection flow for a specific integration (e.g., bamboohr, greenhouse, salesforce).
+- list time off requests from a connected hris provider with employee and status filtering.
+- list opportunities from connected crm.
 slug: unified-integrations
 source_filename: unified-integrations.yaml
 source_heading: Capability Spec

@@ -29,32 +29,32 @@ personas: []
 provider_name: Restack
 provider_slug: restack
 search_terms:
+- schedule an ai agent by name with typed input parameters
+- get the current status and output of a workflow run
+- ai agents
+- automation
+- schedule a workflow by name with typed input parameters
+- get workflow run
+- get the current status and output of a restack workflow run by name and run id.
+- get the current status and output of a restack agent run by name and run id.
+- server health monitoring
+- schedule an ai agent on restack for asynchronous execution. returns a runid to track progress.
+- schedule long-running workflows that persist state
+- health check
+- orchestration
+- schedule agent
+- schedule workflow
+- track workflow execution status and retrieve results
+- schedule a long-running workflow on restack. workflows persist state across days, months, or years.
+- python
+- enterprise
+- check the health status of the restack server.
+- schedule ai agents for asynchronous execution
 - check restack server health
 - get agent run
-- get the current status and output of a workflow run
-- schedule long-running workflows that persist state
-- get the current status and output of a restack agent run by name and run id.
-- get the current status and output of an agent run
-- track workflow execution status and retrieve results
-- enterprise
-- get the current status and output of a restack workflow run by name and run id.
-- schedule ai agents for asynchronous execution
-- get workflow run
-- schedule an ai agent on restack for asynchronous execution. returns a runid to track progress.
-- orchestration
-- ai agents
-- track agent execution status and retrieve results
-- schedule a long-running workflow on restack. workflows persist state across days, months, or years.
 - workflows
-- schedule agent
-- python
-- schedule an ai agent by name with typed input parameters
-- schedule a workflow by name with typed input parameters
-- health check
-- server health monitoring
-- schedule workflow
-- check the health status of the restack server.
-- automation
+- get the current status and output of an agent run
+- track agent execution status and retrieve results
 slug: agent-workflow-orchestration
 source_filename: agent-workflow-orchestration.yaml
 source_heading: Capability Spec

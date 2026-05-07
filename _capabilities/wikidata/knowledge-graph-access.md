@@ -41,59 +41,59 @@ personas: []
 provider_name: Wikidata
 provider_slug: wikidata
 search_terms:
-- engineer ingesting and enriching datasets with wikidata linked data facts
-- linked data
-- get all statements for an item
-- automated pipeline using wikidata as a factual grounding source for llms
-- delete a statement
-- get item statements
+- statements (claims) for an item
+- add a new factual statement (claim) to a wikidata item. specify the property p-id and value. requires oauth2 authentication.
+- add a statement to an item
+- wikidata items (q-entities)
+- rdf-compatible representation for semantic web and ontology alignment
+- get a statement by id
+- wikidata properties (p-entities)
+- delete an incorrect or outdated statement from a wikidata item by statement id. requires oauth2 authentication.
 - add item statement
 - get label for an item in a specific language
-- retrieve the label for a wikidata entity in a specific language by bcp 47 language code.
 - get statement
-- retrieve structured factual claims (statements) for a wikidata entity, optionally filtered by property id (e.g. p31 for 'instance of').
-- get item label
-- get a wikidata item by q-id
-- Data Engineer
-- single wikidata item
-- add fact
-- get property
-- unified read/write access to wikidata knowledge graph entities and statements
-- Knowledge Graph Analyst
+- individual statement operations
 - structured, linked entity data representing real-world facts
-- create entity
-- wikidata properties (p-entities)
-- get entity label
 - create a new wikidata item
-- get a property by p-id
-- wikidata items (q-entities)
 - wikidata
-- rdf-compatible representation for semantic web and ontology alignment
-- remove fact
-- wikipedia
-- get entity
-- sparql
-- add a new factual statement (claim) to a wikidata item. specify the property p-id and value. requires oauth2 authentication.
-- analyst navigating entity relationships and property hierarchies in wikidata
+- get property definition
+- retrieve the label for a wikidata entity in a specific language by bcp 47 language code.
+- unified read/write access to wikidata knowledge graph entities and statements
+- get entity label
 - create item
-- add a statement to an item
 - retrieve a wikidata entity (item or property) with all labels, descriptions, aliases, sitelinks, and statements by q-id or p-id.
-- get entity statements
+- Knowledge Graph Analyst
+- retrieve a wikidata property definition including its datatype, labels, and descriptions. useful for understanding what a p-id represents.
 - item labels by language
 - delete statement
-- create a new wikidata item with labels, descriptions, aliases, and initial statements. requires oauth2 authentication.
-- individual statement operations
 - cc0-licensed public domain data accessible without authentication for reads
-- retrieve a wikidata property definition including its datatype, labels, and descriptions. useful for understanding what a p-id represents.
-- AI/ML Pipeline
-- open data
-- delete an incorrect or outdated statement from a wikidata item by statement id. requires oauth2 authentication.
-- get property definition
-- get a statement by id
+- get entity statements
+- add fact
+- create a new wikidata item with labels, descriptions, aliases, and initial statements. requires oauth2 authentication.
+- remove fact
+- sparql
+- retrieve structured factual claims (statements) for a wikidata entity, optionally filtered by property id (e.g. p31 for 'instance of').
+- get item label
 - semantic web
-- statements (claims) for an item
-- get item
 - knowledge graph
+- get entity
+- automated pipeline using wikidata as a factual grounding source for llms
+- get a property by p-id
+- wikipedia
+- AI/ML Pipeline
+- Data Engineer
+- linked data
+- engineer ingesting and enriching datasets with wikidata linked data facts
+- get a wikidata item by q-id
+- get property
+- get item
+- get all statements for an item
+- create entity
+- get item statements
+- open data
+- analyst navigating entity relationships and property hierarchies in wikidata
+- delete a statement
+- single wikidata item
 slug: knowledge-graph-access
 source_filename: knowledge-graph-access.yaml
 source_heading: Capability Spec

@@ -17,13 +17,13 @@ personas: []
 provider_name: automation-anywhere
 provider_slug: automation-anywhere
 search_terms:
-- anywhere
-- generate api task execution url and token
-- listapitaskallocations
-- api
-- list api task allocations
 - generateapitaskaccessdetails
 - automation
+- listapitaskallocations
+- anywhere
+- list api task allocations
+- generate api task execution url and token
+- api
 slug: automation-anywhere-capability
 source_filename: automation-anywhere-capability.yaml
 source_heading: Capability Spec

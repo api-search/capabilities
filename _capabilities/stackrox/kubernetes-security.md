@@ -57,61 +57,61 @@ personas: []
 provider_name: StackRox
 provider_slug: stackrox
 search_terms:
-- list container images and their vulnerability status
-- list all clusters
-- get alert
-- list policies
-- list all kubernetes clusters registered with stackrox
-- scan image
-- list security policies
-- resolve an alert
-- list available compliance standards (cis benchmarks, nist, pci-dss)
-- vulnerability management
-- kubernetes clusters
-- resolve alert
-- get deployment
-- runtime protection
-- container images
-- container security
-- get alert details
-- create a security policy
-- get full details for a specific security alert
-- search across all resources
-- list deployments
-- compliance
-- security
-- mark a security alert as resolved
-- list all kubernetes deployments monitored by stackrox
-- compliance standards
-- kubernetes
-- open source
-- list stackrox security policies
-- security policies
-- security policy violation alerts
-- monitored deployments
-- get details for a specific security policy
-- search
-- create policy
-- single alert
-- get risk analysis and details for a specific deployment
-- list security alerts
-- scan an image for vulnerabilities
-- universal search
-- get compliance results
-- compliance results
-- scan a container image for cves and vulnerabilities
-- search across all stackrox resources (alerts, deployments, images, policies)
-- list available compliance standards
-- get compliance scan results for the cluster
-- kubernetes security
-- get policy
-- list container images
-- list alerts
-- list images
 - list compliance standards
-- get compliance scan results
-- list active security policy violation alerts in stackrox
+- list container images and their vulnerability status
+- get deployment
+- container images
+- get policy
+- list images
+- list security alerts
+- resolve an alert
+- runtime protection
+- open source
+- compliance
+- kubernetes clusters
 - list clusters
+- universal search
+- get compliance scan results for the cluster
+- get risk analysis and details for a specific deployment
+- list active security policy violation alerts in stackrox
+- list all clusters
+- kubernetes
+- get full details for a specific security alert
+- resolve alert
+- security policies
+- compliance results
+- kubernetes security
+- scan an image for vulnerabilities
+- scan image
+- list container images
+- search across all resources
+- list alerts
+- get alert details
+- get alert
+- compliance standards
+- list policies
+- create a security policy
+- mark a security alert as resolved
+- get details for a specific security policy
+- monitored deployments
+- security policy violation alerts
+- list security policies
+- create policy
+- list all kubernetes deployments monitored by stackrox
+- list stackrox security policies
+- list available compliance standards (cis benchmarks, nist, pci-dss)
+- search across all stackrox resources (alerts, deployments, images, policies)
+- list all kubernetes clusters registered with stackrox
+- search
+- scan a container image for cves and vulnerabilities
+- single alert
+- vulnerability management
+- get compliance scan results
+- list available compliance standards
+- get compliance results
+- security
+- container security
+- list deployments
 slug: kubernetes-security
 source_filename: kubernetes-security.yaml
 source_heading: Capability Spec

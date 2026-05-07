@@ -9,30 +9,30 @@ personas: []
 provider_name: Amazon Kinesis Video Streams
 provider_slug: amazon-kinesis-video-streams
 search_terms:
-- Administrator
-- aws
-- streams describe stream
+- integrates api into applications
+- streams list streams
+- creates a signaling channel.
 - amazon kinesis video streams
+- returns an array of streaminfo objects.
+- manages resources and configurations
+- creates a new kinesis video stream.
+- Administrator
+- streams describe stream
+- machine learning
+- returns an array of channelinfo objects.
+- video streaming
+- channels create signaling channel
+- returns the most current information about the specified stream.
 - workflow
+- channels list signaling channels
+- iot
+- unified workflow for amazon kinesis video streams resource management
 - returns the most current information about the signaling channel.
 - Developer
-- integrates api into applications
-- iot
-- channels list signaling channels
-- returns the most current information about the specified stream.
-- creates a new kinesis video stream.
-- channels describe signaling channel
-- manages resources and configurations
-- machine learning
-- streams list streams
-- returns an array of channelinfo objects.
 - media
-- unified workflow for amazon kinesis video streams resource management
-- channels create signaling channel
-- returns an array of streaminfo objects.
+- aws
 - streams create stream
-- creates a signaling channel.
-- video streaming
+- channels describe signaling channel
 slug: amazon-kinesis-video-streams-workflow
 source_filename: amazon-kinesis-video-streams-workflow.yaml
 source_heading: Capability Spec

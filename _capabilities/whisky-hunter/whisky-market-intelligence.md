@@ -21,27 +21,27 @@ personas: []
 provider_name: Whisky Hunter
 provider_slug: whisky-hunter
 search_terms:
-- list all whisky distilleries tracked in the database. returns names and slugs that can be used with get-distillery-data to research specific distillery auction performance.
-- get aggregated auction trading volumes, bid statistics, and lot counts across all 28 tracked platforms.
-- market data
-- get historical auction trading volumes and price statistics for a distillery.
-- auctions
-- get distillery data
-- get auctions data
-- price research
 - aggregated whisky auction statistics across all tracked platforms.
-- investors
-- list distilleries
+- get historical whisky auction data for a specific distillery, including trading volumes, lot counts, and winning bid statistics over time. use the slug from list-distilleries (e.g., 'macallan', 'ardbeg', 'yamazaki').
+- price research
+- historical auction data for a specific distillery.
 - all distilleries tracked in the whisky hunter database.
 - collectors
 - distilleries
 - get aggregated whisky auction statistics across all 28 tracked platforms including trading volumes, winning bid ranges, and lot counts. useful for understanding overall market activity and trends.
-- historical auction data for a specific distillery.
-- get historical whisky auction data for a specific distillery, including trading volumes, lot counts, and winning bid statistics over time. use the slug from list-distilleries (e.g., 'macallan', 'ardbeg', 'yamazaki').
-- spirits
-- list all tracked distilleries with their slugs for further data queries.
-- whisky
 - market intelligence
+- list all whisky distilleries tracked in the database. returns names and slugs that can be used with get-distillery-data to research specific distillery auction performance.
+- whisky
+- spirits
+- get auctions data
+- investors
+- list distilleries
+- auctions
+- market data
+- list all tracked distilleries with their slugs for further data queries.
+- get distillery data
+- get historical auction trading volumes and price statistics for a distillery.
+- get aggregated auction trading volumes, bid statistics, and lot counts across all 28 tracked platforms.
 slug: whisky-market-intelligence
 source_filename: whisky-market-intelligence.yaml
 source_heading: Capability Spec

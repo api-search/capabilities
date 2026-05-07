@@ -61,55 +61,55 @@ personas: []
 provider_name: SimpleLocalize
 provider_slug: simplelocalize
 search_terms:
-- remove a language and all associated translations from the project
-- export translations
-- internationalization
-- export translations in the requested file format
-- create or update a translation string for a specific language and key
-- remove a language and all its translations
-- create a new customer segment
-- delete customer
-- delete language
+- translation
+- list all translation projects
+- create customer
 - manage a specific language
-- list all customer segments
-- add a new language to the project
-- manage a specific customer segment
-- get customer
-- publish translations to cdn environment
-- retrieve translations with filtering by language, key, namespace, or text content
-- publish translations to cdn environment for production use
-- list all translation projects in the account
-- content management
-- export translations in a specified file format (json, yaml, xliff, etc.)
-- create project
+- remove a language and all associated translations from the project
+- create a new customer segment
+- retrieve a specific customer segment
+- create or update a translation string for a specific language and key
 - list languages
-- add a new language to the translation project
-- list all customer segments with their translation overrides
-- create translation
+- export translations in a specified file format (json, yaml, xliff, etc.)
+- create a new customer segment for localized translation overrides
 - list all languages in the project
 - manage translation projects
-- export translations in various formats
-- create customer
 - get details for a specific customer segment
-- list translations with filtering by language, key, or namespace
-- list projects
-- list all languages configured in the translation project
-- list customers
-- manage project languages
-- create language
-- list all translation projects
-- publish translations to cdn
-- create or update a translation string
-- translation
-- create a new translation project
-- remove a customer segment
-- publish translations
-- retrieve a specific customer segment
+- list all translation projects in the account
 - manage customer translation segments
+- export translations in the requested file format
+- list projects
+- create project
+- create translation
+- create a new translation project
+- list all languages configured in the translation project
+- publish translations to cdn environment
+- retrieve translations with filtering by language, key, namespace, or text content
+- internationalization
+- get customer
+- add a new language to the translation project
+- manage a specific customer segment
 - list translations
-- manage translation strings
+- delete customer
+- add a new language to the project
+- list customers
+- export translations
+- manage project languages
+- delete language
+- create language
 - localization
-- create a new customer segment for localized translation overrides
+- content management
+- remove a customer segment
+- publish translations to cdn
+- list translations with filtering by language, key, or namespace
+- list all customer segments
+- publish translations
+- list all customer segments with their translation overrides
+- export translations in various formats
+- publish translations to cdn environment for production use
+- remove a language and all its translations
+- create or update a translation string
+- manage translation strings
 slug: translation-management
 source_filename: translation-management.yaml
 source_heading: Capability Spec

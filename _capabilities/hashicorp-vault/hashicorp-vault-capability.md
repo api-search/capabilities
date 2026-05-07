@@ -225,122 +225,122 @@ personas: []
 provider_name: HashiCorp Vault
 provider_slug: hashicorp-vault
 search_terms:
-- transitdecrypt
-- renewtoken
-- renewselftoken
-- getentity
-- start root token generation
-- delete an acl policy
+- lookup own token
+- seal
+- create or update kv secret (v2)
+- cancel root token generation
+- encrypt data
 - revokelease
-- read kv secret (v2)
+- destroykvsecretversions
+- api
+- createtoken
+- delete all versions and metadata
+- lookup a token
+- list acl policies
+- revoke a token
+- getrootgenerationprogress
+- getaclpolicy
+- gettransitkey
+- createtransitkey
+- seal the vault
+- loginapprole
+- renewtoken
+- undeletekvsecretversions
+- disableauditdevice
+- read an acl policy
+- create an identity entity
+- deletekvsecretlatest
+- disable an audit device
+- updateentity
+- submit an unseal key
+- create or update an acl policy
+- login with approle
+- read kv secret metadata
+- createentity
+- wrap data
+- readkvsecret
+- cancelrootgeneration
+- renew a token
+- deletekvsecretversions
+- enableauthmethod
+- decrypt data
+- enableauditdevice
+- getentity
+- revoke own token
+- vault
+- secrets management
+- undelete versions of kv secret
+- renewlease
+- encryption
 - renew a lease
+- initialize vault
+- renew own token
+- read an entity by id
+- createaclpolicy
+- deleteaclpolicy
+- create an encryption key
+- gethealth
+- enable a secrets engine
+- delete latest version of kv secret
+- renewselftoken
+- transitdecrypt
+- revoke a lease
 - update an entity
-- disableauthmethod
+- lookuptoken
+- read kv secret (v2)
 - security
 - transitencrypt
-- create or update an acl policy
-- revoke own token
-- list auth methods
-- api
-- cancelrootgeneration
-- enablesecretengine
-- list audit devices
-- lookuptoken
-- delete all versions and metadata
-- wrap
-- create an identity entity
-- loginapprole
-- deletekvsecretlatest
-- enable an audit device
-- renewlease
-- undelete versions of kv secret
-- infrastructure
-- lookup a token
-- wrap data
-- login with approle
-- revoke a lease
-- seal
-- encryption
-- cancel root token generation
-- deleteaclpolicy
-- readkvsecret
-- secrets management
-- lookupselftoken
-- login with username and password
-- read kv secret metadata
-- enableauthmethod
-- renew own token
-- revoketoken
-- unseal
-- getinitstatus
-- lookuplease
-- getleader
-- lookup a lease
-- deletekvsecretversions
-- createentity
-- create an encryption key
-- delete an entity
 - list mounted secrets engines
-- unwrap
-- enable an auth method
-- encrypt data
-- devops
-- renew a token
-- revokeselftoken
-- undeletekvsecretversions
-- delete latest version of kv secret
-- createtoken
-- createaclpolicy
-- hashicorp
-- disable an auth method
-- disable a secrets engine
-- read an acl policy
-- check initialization status
-- read an entity by id
-- seal the vault
-- list acl policies
-- listaclpolicies
-- createkvsecret
-- getaclpolicy
-- create or update kv secret (v2)
-- check seal status
-- listauthmethods
-- createtransitkey
-- disable an audit device
-- enableauditdevice
-- listauditdevices
-- create a token
-- permanently destroy versions
-- getrootgenerationprogress
-- submit an unseal key
-- getkvmetadata
-- deletekvmetadata
-- getsealstatus
+- delete an entity
+- login with username and password
+- start root token generation
 - read root generation progress
-- startrootgeneration
-- initialize vault
-- initialize
-- disableauditdevice
-- disablesecretengine
-- unwrap data
-- gethealth
-- gettransitkey
-- updateentity
-- health status
-- delete an encryption key
-- destroykvsecretversions
-- decrypt data
-- lookup own token
-- read an encryption key
-- vault
-- get leader information
-- delete specific versions of kv secret
-- listsecretengines
-- deleteentity
-- revoke a token
+- listaclpolicies
+- check seal status
+- getleader
+- lookuplease
+- listauthmethods
+- listauditdevices
+- getsealstatus
+- list auth methods
+- revokeselftoken
 - deletetransitkey
-- enable a secrets engine
+- deletekvmetadata
+- disable an auth method
+- infrastructure
+- enable an audit device
+- permanently destroy versions
+- delete an acl policy
+- create a token
+- delete specific versions of kv secret
+- lookup a lease
+- deleteentity
+- disable a secrets engine
+- delete an encryption key
+- getinitstatus
+- enable an auth method
+- list audit devices
+- startrootgeneration
+- devops
+- unwrap
+- enablesecretengine
+- createkvsecret
+- hashicorp
+- initialize
+- lookupselftoken
+- get leader information
+- getkvmetadata
 - loginuserpass
+- unseal
+- disableauthmethod
+- revoketoken
+- wrap
+- check initialization status
+- health status
+- disablesecretengine
+- read an encryption key
+- listsecretengines
+- unwrap data
 slug: hashicorp-vault-capability
 source_filename: hashicorp-vault-capability.yaml
 source_heading: Capability Spec

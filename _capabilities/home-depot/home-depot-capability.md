@@ -13,11 +13,11 @@ personas: []
 provider_name: home-depot
 provider_slug: home-depot
 search_terms:
-- get api status
-- getstatus
-- api
 - home
+- getstatus
+- get api status
 - depot
+- api
 slug: home-depot-capability
 source_filename: home-depot-capability.yaml
 source_heading: Capability Spec

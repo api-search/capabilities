@@ -33,33 +33,33 @@ personas: []
 provider_name: Lunar.dev
 provider_slug: lunar-dev
 search_terms:
-- applypolicies
-- lunar.dev validate flows
 - lunar.dev apply policies
-- consumption gateway
-- deployment
-- control
-- visibility
 - integrations
-- getdiscover
-- ai gateway
-- lunar.dev apply flows
-- mcp gateway
-- api
-- validateflows
-- workflows
-- version control
-- dev
-- lunar
-- performance
-- platform
-- applyflows
-- gethealthcheck
-- lunar.dev discover api endpoints
-- lunar.dev validate policies
-- validatepolicies
-- lunar.dev check gateway health
+- applypolicies
 - automation
+- control
+- ai gateway
+- api
+- platform
+- lunar
+- gethealthcheck
+- lunar.dev validate flows
+- consumption gateway
+- dev
+- deployment
+- lunar.dev apply flows
+- validateflows
+- lunar.dev discover api endpoints
+- mcp gateway
+- lunar.dev check gateway health
+- visibility
+- version control
+- getdiscover
+- performance
+- applyflows
+- workflows
+- validatepolicies
+- lunar.dev validate policies
 slug: lunar-dev-capability
 source_filename: lunar-dev-capability.yaml
 source_heading: Capability Spec

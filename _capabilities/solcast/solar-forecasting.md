@@ -49,61 +49,61 @@ personas: []
 provider_name: Solcast
 provider_slug: solcast
 search_terms:
-- rooftop pv power forecasts up to 14 days ahead.
-- get live rooftop pv power
-- live grid aggregation data for portfolios and grid operators.
-- irradiance
-- get solar irradiance and weather forecasts up to 14 days ahead. use for energy market bidding and dispatch planning.
-- get irradiance and weather forecasts up to 14 days ahead.
-- get live soiling loss estimates using the kimber model. use for monitoring panel cleanliness and scheduling cleaning.
-- get live rooftop pv power estimated actuals for a location. no site registration required.
-- get live advanced pv power actuals for a registered solcast site (resource_id required).
-- get forecast soiling hsu
-- weather
-- live advanced pv power actuals for registered sites.
-- real-time irradiance and weather for a location.
-- get forecast advanced pv power
-- get high-specification pv power forecasts up to 14 days ahead for a registered site.
-- get live advanced pv power actuals for a registered site.
-- get forecast soiling kimber
-- get live rooftop pv power estimated actuals for a location.
-- get forecast rooftop pv power
-- soiling loss forecasts for maintenance planning.
-- get live soiling hsu
-- get advanced pv power forecasts for a registered site.
 - advanced pv power forecasts up to 14 days ahead for registered sites.
-- get live solar irradiance and weather data for a lat/lon location.
-- forecasting
-- forecast grid aggregation data for portfolio and grid management.
-- get live aggregated pv generation data for a grid portfolio or collection. used for grid management and large-scale monitoring.
-- get forecast aggregated pv generation data for a grid portfolio or collection up to 7 days ahead.
-- energy market
-- grid management
-- aggregations
-- pv power
-- renewable energy
-- get live radiation and weather
-- get forecast radiation and weather
 - get soiling loss forecasts using the kimber model.
-- live data
-- get rooftop pv power forecasts up to 14 days ahead. no site registration needed.
-- energy
-- get rooftop pv power forecasts up to 14 days ahead.
+- get solar irradiance and weather forecasts up to 14 days ahead. use for energy market bidding and dispatch planning.
+- get forecast soiling hsu
+- aggregations
+- get soiling loss forecasts using the hsu model.
+- get live advanced pv power actuals for a registered site.
+- pv power
+- get live aggregations
+- get live soiling hsu
+- irradiance
+- live rooftop pv power actuals.
+- get live aggregated pv generation data for a grid portfolio or collection. used for grid management and large-scale monitoring.
+- soiling loss forecasts for maintenance planning.
+- get high-specification pv power forecasts up to 14 days ahead for a registered site.
+- get live soiling kimber
 - get live soiling loss using the kimber model.
 - get live solar irradiance and weather data for any lat/lon location (last 7 days, updated every 5 minutes). use for real-time solar resource monitoring.
-- get live soiling loss estimates using solcast's hsu model.
-- live rooftop pv power actuals.
-- get live advanced pv power
-- live soiling loss data using kimber or hsu models.
-- get forecast aggregation data for a grid collection.
-- get live aggregations
-- forecast irradiance and weather up to 14 days ahead.
-- get live soiling kimber
+- forecast grid aggregation data for portfolio and grid management.
+- real-time irradiance and weather for a location.
+- forecasting
+- get live radiation and weather
+- get live rooftop pv power estimated actuals for a location. no site registration required.
+- get live solar irradiance and weather data for a lat/lon location.
+- energy market
+- live grid aggregation data for portfolios and grid operators.
+- get rooftop pv power forecasts up to 14 days ahead.
+- get forecast soiling kimber
 - get soiling loss forecasts using the kimber model. use for planning panel cleaning schedules.
+- get forecast radiation and weather
+- live advanced pv power actuals for registered sites.
+- live data
+- get forecast advanced pv power
+- get irradiance and weather forecasts up to 14 days ahead.
+- get live rooftop pv power
+- energy
 - get forecast aggregations
-- get soiling loss forecasts using the hsu model.
-- get live aggregation data for a grid collection or sub-aggregation.
+- renewable energy
+- get live rooftop pv power estimated actuals for a location.
+- get forecast aggregation data for a grid collection.
 - solar
+- get live advanced pv power actuals for a registered solcast site (resource_id required).
+- rooftop pv power forecasts up to 14 days ahead.
+- get live advanced pv power
+- get rooftop pv power forecasts up to 14 days ahead. no site registration needed.
+- get forecast aggregated pv generation data for a grid portfolio or collection up to 7 days ahead.
+- get live aggregation data for a grid collection or sub-aggregation.
+- weather
+- grid management
+- live soiling loss data using kimber or hsu models.
+- forecast irradiance and weather up to 14 days ahead.
+- get advanced pv power forecasts for a registered site.
+- get live soiling loss estimates using the kimber model. use for monitoring panel cleanliness and scheduling cleaning.
+- get live soiling loss estimates using solcast's hsu model.
+- get forecast rooftop pv power
 slug: solar-forecasting
 source_filename: solar-forecasting.yaml
 source_heading: Capability Spec

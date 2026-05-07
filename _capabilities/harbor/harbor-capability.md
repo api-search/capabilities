@@ -61,38 +61,38 @@ personas: []
 provider_name: Harbor
 provider_slug: harbor
 search_terms:
-- harbor create a community member
-- getmember
-- createredemption
-- harbor create a redemption request
-- harbor update a community member
-- harbor list challenges
-- harbor list redemptions
-- loyalty
-- createmember
-- community
-- listrewards
-- listmembers
-- harbor get a community member
 - harbor
-- harbor get community details
-- createchallenge
-- harbor create a challenge
-- completechallenge
-- harbor list rewards
-- getcommunity
-- listchallenges
-- api
-- harbor mark a challenge as completed by a member
-- engagement
-- listredemptions
-- harbor award points to a member
-- awardpoints
-- harbor get community leaderboard
-- getleaderboard
-- harbor list community members
 - superfans
+- harbor list redemptions
+- getcommunity
+- loyalty
+- harbor award points to a member
+- api
+- harbor create a redemption request
 - updatemember
+- getleaderboard
+- harbor list challenges
+- engagement
+- getmember
+- community
+- harbor update a community member
+- listmembers
+- listchallenges
+- harbor list community members
+- harbor list rewards
+- createchallenge
+- completechallenge
+- harbor get a community member
+- awardpoints
+- harbor create a challenge
+- listrewards
+- createredemption
+- createmember
+- harbor get community details
+- harbor create a community member
+- harbor mark a challenge as completed by a member
+- harbor get community leaderboard
+- listredemptions
 slug: harbor-capability
 source_filename: harbor-capability.yaml
 source_heading: Capability Spec

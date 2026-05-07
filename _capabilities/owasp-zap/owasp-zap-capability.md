@@ -249,134 +249,134 @@ personas: []
 provider_name: OWASP ZAP
 provider_slug: owasp-zap
 search_terms:
-- ajaxspideractionremoveallowedresource
-- acsrfactionremoveoptiontoken
-- alertactiondeleteallalerts
-- gets the current results of the crawler.
-- adds an anti-csrf token with the given name, enabled by default
-- gets the configured number of browsers to be used.
-- alertactiondeletealerts
-- alertactionupdatealert
-- when enabled, the crawler attempts to interact with each element (e.g., by clicking) only once.
-- gets the value configured for the ajax spider to know if it should click on the elements only once.
-- ajaxspideractionsetoptionrandominputs
-- removes an excluded element from a context.
-- update the confidence of the alerts.
-- gets the number of resources found.
-- deletes the alert with the given id.
-- ajaxspiderviewoptionlogoutavoidance
-- sets the time to wait after the page is loaded before interacting with it.
-- ajaxspiderviewnumberofresults
-- ajaxspiderviewoptionclickdefaultelems
-- removes the anti-csrf token with the given name
-- ajaxspiderviewoptionreloadwait
-- ajaxspideractionsetoptionmaxcrawlstates
-- api
-- gets if the ajax spider will use random values in form fields when crawling, if set to true.
-- sets whether or not the ajax spider should avoid clicking logout elements.
-- zap
-- add an alert associated with the given message id, with the provided details. (the id of the created alert is returned.)
-- ajaxspideractionsetoptionlogoutavoidance
-- ajaxspiderviewoptionclickelemsonce
-- gets a count of the alerts, optionally filtered as per alertsperrisk
-- ajaxspiderviewoptionscopecheck
-- ajaxspideractionsetoptionmaxduration
-- 'gets the time to wait after an event (in milliseconds). for example: the wait delay after the cursor hovers over an element, in order for a menu to display, etc.'
-- acsrfactionaddoptiontoken
-- sets the scope check.
-- ajaxspiderviewallowedresources
-- alertactiondeletealert
-- accesscontrolactionscan
-- ajaxspiderviewoptionnumberofbrowsers
-- removes an allowed resource.
-- ajaxspideractionsetoptionclickdefaultelems
-- ajaxspiderviewoptionrandominputs
 - acsrfothergenform
-- ajaxspideractionsetenabledallowedresource
-- ajaxspideractionsetoptioneventwait
-- ajaxspideractionsetoptionmaxcrawldepth
-- ajaxspiderviewstatus
-- ajaxspiderviewoptioneventwait
-- gets the configured value for the maximum crawl states allowed.
-- open source
-- update the risk of the alerts.
-- update the alert with the given id, with the provided details.
-- ajaxspiderviewoptionmaxcrawlstates
-- accesscontrolviewgetscanprogress
-- modifies an excluded element of a context.
-- accesscontrolviewgetscanstatus
-- ajaxspiderviewexcludedelements
-- alertactionupdatealertsrisk
-- ajaxspiderviewoptionmaxcrawldepth
-- ajaxspiderviewresults
-- gets the configured browser to use for crawling.
-- sets the maximum depth that the crawler can reach.
-- ajaxspideractionaddexcludedelement
-- sets the configuration of the ajax spider to use one of the supported browsers.
-- runs the ajax spider against a given target.
-- ajaxspideractionsetoptionnumberofbrowsers
-- vulnerability scanning
-- acsrfviewoptionpartialmatchingenabled
-- generate a form for testing lack of anti-csrf tokens - typically invoked via zap
-- ajaxspideractionscan
-- sets whether or not the ajax spider will only click on the default html elements.
-- ajaxspiderviewoptionbrowserid
+- alertactiondeletealerts
 - accesscontrolactionwritehtmlreport
-- gets the current status of the crawler. actual values are stopped and running.
-- alertviewalert
-- gets the excluded elements. the excluded elements are not clicked during crawling, for example, to prevent logging out.
-- gets the configured max duration of the crawl, the value is in minutes.
-- adds an excluded element to a context.
-- ajaxspideractionsetoptionreloadwait
-- ajaxspideractionsetoptionbrowserid
-- gets the configured value for 'click default elements only', html elements such as 'a', 'button', 'input', all associated with some action or links on the page.
-- when enabled, inserts random values into form fields.
-- the maximum time that the crawler is allowed to run.
-- alertviewalertcountsbyrisk
-- adds an allowed resource.
-- ajaxspiderviewoptionenableextensions
-- gets the configured scope check.
-- alertactionupdatealertsconfidence
-- testing
-- get /json/ajaxspider/action/setoptionenableextensions/
-- ajaxspideractionsetoptionclickelemsonce
-- gets the allowed resources. the allowed resources are always fetched even if out of scope, allowing to include necessary resources (e.g. scripts) from 3rd-parties.
-- owasp
-- deletes all the alerts optionally filtered by url which fall within the context with the provided name, risk, or base url.
-- ajaxspiderviewoptionmaxduration
-- sets the number of windows to be used by ajax spider.
-- runs the ajax spider from the perspective of a user of the web application.
-- gets the configured value for the max crawl depth.
-- 'starts an access control scan with the given context id and user id. (optional parameters: user id for unauthenticated user, boolean identifying whether or not alerts are raised, and the risk level for the alerts.) [this assumes the access'
-- ajaxspideractionsetoptionenableextensions
-- lists the names of all anti-csrf tokens
-- ajaxspideractionaddallowedresource
-- 'sets the time to wait after an event (in milliseconds). for example: the wait delay after the cursor hovers over an element, in order for a menu to display, etc.'
-- alertactionaddalert
-- security testing
-- get /json/ajaxspider/view/optionenableextensions/
-- gets the configured time to wait after reloading the page, this value is in milliseconds.
-- gets the access control scan status (description string) for the given context id.
-- gets the alert with the given id, the corresponding http message can be obtained with the 'messageid' field and 'message' api method
 - generates an access control report for the given context id and saves it based on the provided filename (path).
-- stops the ajax spider.
-- gets the full crawled content detected by the ajax spider. returns a set of values based on 'inscope' urls, 'outofscope' urls, and 'errors' encountered during the last/current run of the ajax spider.
+- sets whether or not the ajax spider should avoid clicking logout elements.
+- sets the time to wait after the page is loaded before interacting with it.
+- ajaxspiderviewoptionmaxcrawldepth
+- api
 - acsrfviewoptiontokensnames
-- ajaxspideractionscanasuser
-- sets the maximum number of states that the crawler should crawl.
 - ajaxspiderviewfullresults
-- define if zap should detect csrf tokens by searching for partial matches
-- application security
-- sets whether or not an allowed resource is enabled.
-- ajaxspideractionmodifyexcludedelement
-- gets the value of the logout avoidance option.
-- ajaxspideractionsetoptionscopecheck
-- acsrfactionsetoptionpartialmatchingenabled
-- deletes all alerts of the current session.
-- ajaxspideractionstop
-- define if zap should detect csrf tokens by searching for partial matches.
+- gets the configured time to wait after reloading the page, this value is in milliseconds.
+- acsrfviewoptionpartialmatchingenabled
 - gets the access control scan progress (percentage integer) for the given context id.
+- acsrfactionsetoptionpartialmatchingenabled
+- gets the configured value for 'click default elements only', html elements such as 'a', 'button', 'input', all associated with some action or links on the page.
+- sets whether or not an allowed resource is enabled.
+- ajaxspideractionaddallowedresource
+- runs the ajax spider from the perspective of a user of the web application.
+- modifies an excluded element of a context.
+- ajaxspideractionremoveallowedresource
+- ajaxspiderviewoptionenableextensions
+- update the risk of the alerts.
+- sets the configuration of the ajax spider to use one of the supported browsers.
+- 'sets the time to wait after an event (in milliseconds). for example: the wait delay after the cursor hovers over an element, in order for a menu to display, etc.'
+- gets the alert with the given id, the corresponding http message can be obtained with the 'messageid' field and 'message' api method
+- alertactiondeletealert
+- acsrfactionaddoptiontoken
+- alertactionupdatealertsconfidence
+- gets the configured value for the maximum crawl states allowed.
+- sets the number of windows to be used by ajax spider.
+- ajaxspideractionsetoptionnumberofbrowsers
+- ajaxspideractionsetoptionmaxcrawldepth
+- accesscontrolviewgetscanprogress
+- when enabled, the crawler attempts to interact with each element (e.g., by clicking) only once.
+- acsrfactionremoveoptiontoken
 - ajaxspideractionremoveexcludedelement
+- ajaxspiderviewoptionmaxduration
+- gets the value of the logout avoidance option.
+- 'starts an access control scan with the given context id and user id. (optional parameters: user id for unauthenticated user, boolean identifying whether or not alerts are raised, and the risk level for the alerts.) [this assumes the access'
+- 'gets the time to wait after an event (in milliseconds). for example: the wait delay after the cursor hovers over an element, in order for a menu to display, etc.'
+- ajaxspiderviewoptionreloadwait
+- gets a count of the alerts, optionally filtered as per alertsperrisk
+- gets the allowed resources. the allowed resources are always fetched even if out of scope, allowing to include necessary resources (e.g. scripts) from 3rd-parties.
+- stops the ajax spider.
+- ajaxspideractionsetoptionenableextensions
+- generate a form for testing lack of anti-csrf tokens - typically invoked via zap
+- sets the maximum number of states that the crawler should crawl.
+- security testing
+- gets the number of resources found.
+- runs the ajax spider against a given target.
+- adds an allowed resource.
+- deletes all the alerts optionally filtered by url which fall within the context with the provided name, risk, or base url.
+- ajaxspideractionsetoptioneventwait
+- ajaxspiderviewexcludedelements
+- ajaxspideractionsetoptionclickdefaultelems
+- gets the configured scope check.
+- gets the excluded elements. the excluded elements are not clicked during crawling, for example, to prevent logging out.
+- ajaxspideractionscanasuser
+- removes an excluded element from a context.
+- ajaxspideractionsetoptionreloadwait
+- ajaxspiderviewoptionnumberofbrowsers
+- gets the access control scan status (description string) for the given context id.
+- accesscontrolactionscan
+- ajaxspiderviewoptionbrowserid
+- ajaxspiderviewoptioneventwait
+- ajaxspiderviewoptionlogoutavoidance
+- ajaxspideractionsetoptionscopecheck
+- ajaxspiderviewresults
+- alertviewalert
+- zap
+- ajaxspiderviewoptionclickdefaultelems
+- gets the configured number of browsers to be used.
+- alertviewalertcountsbyrisk
+- add an alert associated with the given message id, with the provided details. (the id of the created alert is returned.)
+- ajaxspideractionmodifyexcludedelement
+- ajaxspideractionscan
+- sets the scope check.
+- the maximum time that the crawler is allowed to run.
+- gets the current results of the crawler.
+- removes an allowed resource.
+- adds an anti-csrf token with the given name, enabled by default
+- ajaxspideractionaddexcludedelement
+- gets the configured max duration of the crawl, the value is in minutes.
+- alertactionupdatealert
+- define if zap should detect csrf tokens by searching for partial matches
+- ajaxspideractionsetoptionrandominputs
+- ajaxspiderviewoptionmaxcrawlstates
+- ajaxspiderviewstatus
+- update the alert with the given id, with the provided details.
+- accesscontrolviewgetscanstatus
+- ajaxspideractionsetoptionlogoutavoidance
+- get /json/ajaxspider/action/setoptionenableextensions/
+- alertactionaddalert
+- ajaxspiderviewallowedresources
+- owasp
+- sets the maximum depth that the crawler can reach.
+- testing
+- application security
+- ajaxspideractionsetenabledallowedresource
+- deletes all alerts of the current session.
+- vulnerability scanning
+- ajaxspideractionsetoptionclickelemsonce
+- ajaxspiderviewoptionclickelemsonce
+- get /json/ajaxspider/view/optionenableextensions/
+- alertactionupdatealertsrisk
+- open source
+- gets the configured browser to use for crawling.
+- adds an excluded element to a context.
+- ajaxspiderviewnumberofresults
+- ajaxspideractionsetoptionbrowserid
+- gets the full crawled content detected by the ajax spider. returns a set of values based on 'inscope' urls, 'outofscope' urls, and 'errors' encountered during the last/current run of the ajax spider.
+- gets the configured value for the max crawl depth.
+- define if zap should detect csrf tokens by searching for partial matches.
+- gets if the ajax spider will use random values in form fields when crawling, if set to true.
+- ajaxspideractionsetoptionmaxcrawlstates
+- lists the names of all anti-csrf tokens
+- deletes the alert with the given id.
+- alertactiondeleteallalerts
+- gets the value configured for the ajax spider to know if it should click on the elements only once.
+- ajaxspiderviewoptionrandominputs
+- gets the current status of the crawler. actual values are stopped and running.
+- sets whether or not the ajax spider will only click on the default html elements.
+- ajaxspiderviewoptionscopecheck
+- update the confidence of the alerts.
+- when enabled, inserts random values into form fields.
+- removes the anti-csrf token with the given name
+- ajaxspideractionstop
+- ajaxspideractionsetoptionmaxduration
 slug: owasp-zap-capability
 source_filename: owasp-zap-capability.yaml
 source_heading: Capability Spec

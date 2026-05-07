@@ -45,47 +45,47 @@ personas: []
 provider_name: Rook
 provider_slug: rook
 search_terms:
-- delete an object from ceph object storage
-- file storage
-- delete an object from rook ceph object storage
-- storage
-- object storage
-- create a new s3 bucket in ceph object storage
-- list buckets
-- put object
-- list objects in a bucket with optional prefix and pagination
-- delete an empty s3 bucket
 - single object operations
-- manage s3-compatible buckets in ceph object storage
-- retrieve metadata of a ceph object without downloading the content
-- get object metadata
-- list objects
-- cloud native
-- block storage
-- check bucket
-- kubernetes
-- list all s3 buckets in the ceph object storage gateway managed by rook
-- manage objects within a ceph bucket
-- list objects in a rook ceph bucket with optional prefix filter and pagination
-- orchestration
-- retrieve object metadata without downloading
-- upload an object to ceph object storage
-- download an object from ceph object storage
-- upload an object to rook ceph object storage
-- cncf
-- create a new s3-compatible bucket in rook ceph object storage
-- delete an empty ceph bucket managed by rook
-- get object
-- check bucket existence and access permissions
+- list buckets
 - delete object
-- download an object from rook ceph object storage
-- list all s3 buckets in the ceph object storage gateway
+- delete an empty s3 bucket
+- list all s3 buckets in the ceph object storage gateway managed by rook
+- get object
+- cloud native
+- delete an object from ceph object storage
 - head object
-- create bucket
-- single bucket operations
+- delete an object from rook ceph object storage
+- list all s3 buckets in the ceph object storage gateway
+- manage objects within a ceph bucket
+- create a new s3-compatible bucket in rook ceph object storage
 - graduated
-- delete bucket
+- orchestration
+- get object metadata
+- create a new s3 bucket in ceph object storage
+- download an object from rook ceph object storage
 - ceph
+- create bucket
+- kubernetes
+- retrieve metadata of a ceph object without downloading the content
+- upload an object to ceph object storage
+- list objects in a rook ceph bucket with optional prefix filter and pagination
+- check bucket existence and access permissions
+- object storage
+- check bucket
+- file storage
+- list objects in a bucket with optional prefix and pagination
+- cncf
+- delete bucket
+- retrieve object metadata without downloading
+- delete an empty ceph bucket managed by rook
+- storage
+- single bucket operations
+- put object
+- manage s3-compatible buckets in ceph object storage
+- download an object from ceph object storage
+- list objects
+- upload an object to rook ceph object storage
+- block storage
 slug: storage-orchestration
 source_filename: storage-orchestration.yaml
 source_heading: Capability Spec

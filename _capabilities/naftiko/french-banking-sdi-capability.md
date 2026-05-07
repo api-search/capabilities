@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- french banking
-- list services
-- api integration
 - governance
-- sdi
-- spec-driven integration
-- ai
-- mcp
-- capabilities
+- list services
 - get service spec
+- french banking
+- sdi
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
+- naftiko
 slug: french-banking-sdi-capability
 source_filename: french-banking-sdi-capability.yaml
 source_heading: Capability Spec

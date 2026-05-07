@@ -21,40 +21,40 @@ personas: []
 provider_name: Twilio
 provider_slug: twilio
 search_terms:
-- check submitted verification codes
-- identity
-- contact center
-- twilio
-- verify a code to confirm user identity
-- fraud prevention
-- verify check code
-- start verification
-- look up phone number intelligence including validation, carrier, line type, sim swap status, and fraud risk score
-- check a verification code submitted by a user to complete identity confirmation
-- iot
-- voice
-- fetch the current status of a verification attempt
-- security
-- verify send code
-- phone verification
-- two factor authentication
-- sms
-- phone
-- messaging
-- check verification
-- t1
-- start a verification workflow
-- get phone number intelligence including carrier, line type, and fraud risk
 - video
-- authentication
-- email
-- look up phone number intelligence for fraud detection
-- lookup phone number
-- verification
-- send a verification code to a user via sms, voice, whatsapp, or email to confirm their identity
 - fetch verification status
-- communications
+- send a verification code to a user via sms, voice, whatsapp, or email to confirm their identity
+- verify send code
+- authentication
+- look up phone number intelligence for fraud detection
+- sms
+- check a verification code submitted by a user to complete identity confirmation
+- get phone number intelligence including carrier, line type, and fraud risk
+- identity
+- start verification
 - send verification codes for identity confirmation
+- verify a code to confirm user identity
+- t1
+- email
+- fraud prevention
+- iot
+- check submitted verification codes
+- twilio
+- verification
+- two factor authentication
+- verify check code
+- start a verification workflow
+- look up phone number intelligence including validation, carrier, line type, sim swap status, and fraud risk score
+- check verification
+- voice
+- phone
+- lookup phone number
+- messaging
+- phone verification
+- security
+- contact center
+- fetch the current status of a verification attempt
+- communications
 slug: identity-and-fraud-prevention
 source_filename: identity-and-fraud-prevention.yaml
 source_heading: Capability Spec

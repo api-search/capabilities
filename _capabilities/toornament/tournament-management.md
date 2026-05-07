@@ -53,59 +53,59 @@ personas: []
 provider_name: Toornament
 provider_slug: toornament
 search_terms:
-- submit the final score and result for a completed tournament match.
-- manage tournament participants.
+- list all stages in a tournament.
+- create a new esports tournament on toornament with full configuration.
 - list all stages defined in a tournament (group stage, elimination rounds, etc.).
-- brackets
+- create a new esports tournament.
+- list rankings
+- update tournament configuration.
+- list all tournament participants.
+- list all supported esports game disciplines available on toornament.
 - submit match result.
-- retrieve the current standings and rankings for a tournament stage.
-- list all registered participants in a toornament tournament.
-- get stage rankings
 - tournament match schedule and results.
+- list disciplines
+- permanently delete a tournament.
+- tournaments
+- get rankings for a tournament stage.
+- supported esports disciplines.
+- brackets
+- update tournament
+- get or update a specific tournament.
+- get stage rankings
+- list all matches in a tournament stage, including bracket display data.
+- matches
+- esports
+- delete tournament
+- get full tournament details.
+- competition
+- list all esports tournaments organized by the authenticated user.
+- tournament stages and brackets.
+- get tournament
+- list participants
+- list matches
+- retrieve the current standings and rankings for a tournament stage.
+- retrieve full details of a specific toornament tournament.
+- submit the final score and result for a completed tournament match.
+- update tournament settings such as name, dates, registration, and rules.
+- gaming
+- list all tournaments for the authenticated organizer.
+- add a new participant (player or team) to a tournament.
+- list stages
+- list matches in a tournament stage.
+- report match result
+- list all registered participants in a toornament tournament.
 - report and view a specific match.
 - add participant
-- list all supported esports game disciplines available on toornament.
-- list stages
-- list all esports tournaments organized by the authenticated user.
-- tournaments
-- update tournament
-- report match
-- competition
-- update tournament settings such as name, dates, registration, and rules.
-- report match result
-- list participants
-- add a participant to the tournament.
-- delete tournament
-- list all matches in a tournament stage, including bracket display data.
-- participants
-- matches
-- list matches
 - create and list tournaments.
-- create a new esports tournament.
-- gaming
-- tournament stages and brackets.
-- add a new participant (player or team) to a tournament.
-- list all tournaments for the authenticated organizer.
-- list tournaments
-- toornament
-- list all stages in a tournament.
 - list all supported esports games and disciplines.
-- get tournament
-- list all tournament participants.
-- permanently delete a tournament.
-- tournament stage rankings and standings.
+- report match
+- toornament
 - create tournament
-- create a new esports tournament on toornament with full configuration.
-- supported esports disciplines.
-- list matches in a tournament stage.
-- list rankings
-- list disciplines
-- esports
-- retrieve full details of a specific toornament tournament.
-- get full tournament details.
-- get or update a specific tournament.
-- get rankings for a tournament stage.
-- update tournament configuration.
+- add a participant to the tournament.
+- tournament stage rankings and standings.
+- manage tournament participants.
+- list tournaments
+- participants
 slug: tournament-management
 source_filename: tournament-management.yaml
 source_heading: Capability Spec

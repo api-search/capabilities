@@ -42,44 +42,44 @@ provider_name: TikTok
 provider_slug: tiktok
 search_terms:
 - get campaigns
-- retrieve individual tiktok ads
-- create a new tiktok ad creative
-- list custom audiences available for ad targeting
-- ad group management
-- create a new ad group within a tiktok campaign
-- tiktok
-- get report
-- content
-- campaigns
-- create ad
-- marketing
-- create ad group
-- retrieve ad groups for a tiktok campaign
-- get ad groups for a campaign
-- e-commerce
-- create a new ad group
-- commerce
-- get ads
-- individual ad management
-- advertising
-- video
-- get individual ads
-- get tiktok advertising performance metrics and analytics
-- create a new ad
-- retrieve advertising campaigns
-- list custom targeting audiences
-- performance
 - social media
-- create campaign
-- list custom audiences
+- create a new ad group within a tiktok campaign
+- retrieve ad groups for a tiktok campaign
+- video
+- get report
+- individual ad management
+- create a new advertising campaign
+- get tiktok advertising performance metrics and analytics
+- commerce
+- ad group management
+- create ad group
+- campaign lifecycle management
+- get ad groups for a campaign
+- create a new ad group
+- get individual ads
+- list custom targeting audiences
+- create a new tiktok ad creative
+- retrieve individual tiktok ads
+- content
 - create a new tiktok advertising campaign
-- get ad groups
+- e-commerce
+- retrieve advertising campaigns
+- get ads
+- campaigns
+- list custom audiences available for ad targeting
 - retrieve tiktok advertising campaigns for an advertiser
 - custom audience management
-- create a new advertising campaign
-- campaign lifecycle management
+- create a new ad
+- marketing
+- create campaign
+- performance
 - get advertising performance report
+- tiktok
 - performance reporting
+- advertising
+- list custom audiences
+- get ad groups
+- create ad
 slug: advertising-management
 source_filename: advertising-management.yaml
 source_heading: Capability Spec

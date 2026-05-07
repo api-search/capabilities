@@ -21,28 +21,28 @@ personas: []
 provider_name: Atlassian
 provider_slug: atlassian
 search_terms:
-- bitbucket
-- list pull requests for a repository
-- list bitbucket repositories in a workspace
-- repository management
-- list repositories
-- list teams
-- list code snippets
-- list teams in a workspace
-- atlassian
-- source control
-- software development
-- productivity
-- list repositories in a workspace
-- workspace management
-- pull request management
-- code
-- list bitbucket workspaces
 - list workspaces
-- list snippets
-- list pull requests
+- workspace management
+- atlassian
+- list pull requests for a repository
+- list bitbucket workspaces
 - platform
+- bitbucket
+- list pull requests
+- productivity
+- list teams
 - collaboration
+- list repositories in a workspace
+- software development
+- list code snippets
+- repository management
+- list bitbucket repositories in a workspace
+- pull request management
+- source control
+- list teams in a workspace
+- list snippets
+- code
+- list repositories
 slug: source-control
 source_filename: source-control.yaml
 source_heading: Capability Spec

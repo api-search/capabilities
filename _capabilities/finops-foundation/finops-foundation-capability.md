@@ -29,21 +29,21 @@ personas: []
 provider_name: FinOps Foundation
 provider_slug: finops-foundation
 search_terms:
-- finops foundation get focus schema metadata
-- listcontractcommitments
-- finops foundation list contract commitment records
-- costs
+- finops foundation export cost and usage data
 - api
+- finops foundation get focus schema metadata
 - foundation
-- finops foundation get cost and usage export job status
-- getschemametadata
-- finops foundation list cost and usage records
-- finops
-- listcostandusage
 - budgets
 - getcostandusageexportstatus
-- finops foundation export cost and usage data
+- getschemametadata
+- finops foundation get cost and usage export job status
+- listcontractcommitments
+- finops foundation list cost and usage records
+- listcostandusage
 - exportcostandusage
+- finops foundation list contract commitment records
+- costs
+- finops
 slug: finops-foundation-capability
 source_filename: finops-foundation-capability.yaml
 source_heading: Capability Spec

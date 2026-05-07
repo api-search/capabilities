@@ -41,36 +41,36 @@ personas: []
 provider_name: Google Cloud Artifact Registry
 provider_slug: google-cloud-artifact-registry
 search_terms:
-- listrepositories
+- listlocations
+- containers
 - google cloud artifact registry update repository
 - google cloud artifact registry get repository
-- createrepository
 - artifacts
-- getrepository
+- google cloud artifact registry list locations
+- createrepository
+- api
+- listrepositories
+- supply chain
+- google cloud artifact registry list docker images
+- deleterepository
+- updaterepository
+- registry
+- google
+- registries
+- listdockerimages
+- artifact
+- google cloud artifact registry create repository
+- google cloud artifact registry list packages
+- packages
 - cloud
 - google cloud artifact registry list repositories
-- google
-- packages
-- google cloud artifact registry list packages
-- listpackages
-- containers
-- security
-- docker
-- google cloud artifact registry create repository
-- artifact
-- deleterepository
-- registry
-- supply chain
-- google cloud artifact registry delete repository
-- updaterepository
-- registries
-- api
-- listlocations
-- google cloud artifact registry list locations
-- google cloud artifact registry list docker images
-- listdockerimages
 - repositories
+- listpackages
 - google cloud
+- getrepository
+- docker
+- security
+- google cloud artifact registry delete repository
 slug: google-cloud-artifact-registry-capability
 source_filename: google-cloud-artifact-registry-capability.yaml
 source_heading: Capability Spec

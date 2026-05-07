@@ -29,36 +29,36 @@ personas: []
 provider_name: RapidAPI
 provider_slug: rapidapi
 search_terms:
-- test execution results.
-- list scheduled test runs for automated monitoring across global regions.
-- list api test execution results to review pass/fail history and response times.
-- api test configurations.
-- list environments
-- list test environments with variable sets for development, staging, and production.
-- list all api tests. filter by api id to see tests for a specific api.
-- list tests
-- monitoring
-- enterprise
-- create test
-- create a new test.
-- api design
 - api marketplace
-- list executions
-- list all tests.
-- ci/cd
-- list test environments.
-- list test schedules.
-- api gateway
-- automated test schedules.
-- api management
-- test environments.
-- list schedules
-- api testing
-- list test execution history.
-- create a new functional or performance api test with steps and assertions.
-- rapidapi
 - quality assurance
 - automation
+- list test environments.
+- ci/cd
+- monitoring
+- test environments.
+- automated test schedules.
+- list all api tests. filter by api id to see tests for a specific api.
+- api management
+- create a new test.
+- list test environments with variable sets for development, staging, and production.
+- list scheduled test runs for automated monitoring across global regions.
+- list environments
+- api design
+- rapidapi
+- api gateway
+- list schedules
+- api test configurations.
+- enterprise
+- list all tests.
+- test execution results.
+- list executions
+- create test
+- list tests
+- list api test execution results to review pass/fail history and response times.
+- list test execution history.
+- create a new functional or performance api test with steps and assertions.
+- list test schedules.
+- api testing
 slug: api-quality-assurance
 source_filename: api-quality-assurance.yaml
 source_heading: Capability Spec

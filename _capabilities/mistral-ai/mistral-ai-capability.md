@@ -13,19 +13,19 @@ personas: []
 provider_name: Mistral AI
 provider_slug: mistral-ai
 search_terms:
-- batch processing
-- large language models
 - agents
-- fine-tuning
-- mistral
-- api
-- ocr
 - embeddings
-- ai
-- createagentcompletion
+- ocr
 - create agent completion
 - artificial intelligence
+- createagentcompletion
+- mistral
 - chat
+- ai
+- fine-tuning
+- api
+- large language models
+- batch processing
 slug: mistral-ai-capability
 source_filename: mistral-ai-capability.yaml
 source_heading: Capability Spec

@@ -49,34 +49,34 @@ personas: []
 provider_name: AWS Redshift
 provider_slug: aws-redshift
 search_terms:
-- amazon redshift data - get statement result
-- batchexecutestatement
-- aws
-- describestatement
-- analytics
-- big data
-- listschemas
-- redshift
-- amazon redshift data - describe table
-- getstatementresult
-- amazon redshift data - list tables
-- amazon redshift data - batch execute statement
-- listtables
-- liststatements
-- sql
-- data warehouse
-- describetable
-- cloud database
-- api
 - amazon redshift data - list statements
-- executestatement
-- amazon redshift data - list databases
-- amazon redshift data - describe statement
-- cancelstatement
-- listdatabases
-- amazon redshift data - cancel statement
-- amazon redshift data - list schemas
+- analytics
+- amazon redshift data - get statement result
 - amazon redshift data - execute statement
+- amazon redshift data - describe table
+- data warehouse
+- api
+- describestatement
+- amazon redshift data - list tables
+- getstatementresult
+- redshift
+- amazon redshift data - cancel statement
+- describetable
+- amazon redshift data - list schemas
+- big data
+- sql
+- listtables
+- executestatement
+- listschemas
+- amazon redshift data - list databases
+- listdatabases
+- cancelstatement
+- amazon redshift data - describe statement
+- liststatements
+- aws
+- batchexecutestatement
+- cloud database
+- amazon redshift data - batch execute statement
 slug: aws-redshift-capability
 source_filename: aws-redshift-capability.yaml
 source_heading: Capability Spec

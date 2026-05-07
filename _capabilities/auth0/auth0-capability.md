@@ -121,70 +121,70 @@ personas: []
 provider_name: Auth0
 provider_slug: auth0
 search_terms:
-- auth0 returns a list of authenticators associated with your application.
-- dbconnections signup
-- auth0 this endpoint returns the saml 2.0 metadata.
-- oauth token
-- auth0 associates or adds a new authenticator for multi-factor authentication (mfa).
-- authorize
-- auth0 given the user's credentials, this endpoint will authenticate the user with the provider and return a json object with the access token and an id token.
-- passwordless start
-- auth0 logout a user
-- mfa authenticators delete
-- samlp metadata
-- wsfed metadata
-- auth0 [deprecated] return a user profile based on the user's jwt
-- identity management
-- oauth
-- security
-- unlink
-- oauth ro
-- wsfed login
-- auth0 signup with user's credentials
-- auth0 this endpoint accepts a ws-federation request to initiate a login.
-- auth0 this endpoint returns the ws-federation metadata.
-- mfa authenticators
-- oidc logout
-- auth0 request a challenge for multi-factor authentication
-- oauth device code
-- auth0 revoke refresh token
-- saml
-- oauth revoke
-- auth0
-- oidc register
-- auth0 start passwordless flow
-- api
 - auth0 authenticates a user using a verification code, verifies multi-factor authentication (mfa) using a one-time password (otp), out-of-band (oob) challenge, or a recovery code, or exchanges an authorization code for a token
-- userinfo
-- authorization
-- auth0 use this endpoint to accept a saml request to initiate a login.
-- auth0 obtain an impersonation url
-- passwordless verify
-- auth0 deletes an associated authenticator using its id.
-- with a name and the necessary callback url, you can dynamically register a client with auth0. no token is needed for this request.
-- authentication
+- auth0 revoke refresh token
+- dbconnections signup
+- oidc register
+- oauth revoke
+- auth0 [deprecated] return a user profile based on the user's jwt
+- passwordless start
 - impersonate
+- auth0 start passwordless flow
+- auth0 this endpoint accepts an idp-initiated sign on samlresponse from a saml identity provider.
+- auth0 authenticate a user with a social provider, database/ad/ldap (passive), saml/windows azure ad (passive), authorization code flow, authorization code grant (pkce) flow, or implicit flow
+- saml logout
+- auth0 use this endpoint to accept a saml request to initiate a login.
 - login callback
-- auth0 unlink an account
+- wsfed login
+- auth0 login using a social provider's access token
 - mfa associate
+- tokeninfo
+- saml
+- api
+- auth0 request a challenge for multi-factor authentication
+- dbconnections change password
+- auth0 obtain a delegation token (from a refresh_token)
+- identity management
+- oauth token
+- auth0
+- authentication
+- auth0 logout a user
+- auth0 returns a list of authenticators associated with your application.
+- auth0 deletes an associated authenticator using its id.
+- auth0 signup with user's credentials
+- auth0 obtain an impersonation url
+- mfa authenticators
+- openid connect
+- auth0 this endpoint returns the saml 2.0 metadata.
+- auth0 unlink an account
+- oauth device code
+- samlp metadata
+- auth0 this endpoint returns the ws-federation metadata.
+- auth0 verify with verification code
+- mfa authenticators delete
+- auth0 returns a user's profile
+- wsfed metadata
+- auth0 get device code
+- authorize
+- oauth ro
+- authorization
+- auth0 this endpoint accepts a ws-federation request to initiate a login.
+- auth0 given the user's credentials, this endpoint will authenticate the user with the provider and return a json object with the access token and an id token.
+- logout
+- userinfo
+- auth0 associates or adds a new authenticator for multi-factor authentication (mfa).
+- oauth access token
 - okta
 - delegation
-- auth0 get device code
-- oauth access token
-- mfa challenge
-- logout
-- auth0 authenticate a user with a social provider, database/ad/ldap (passive), saml/windows azure ad (passive), authorization code flow, authorization code grant (pkce) flow, or implicit flow
-- dbconnections change password
-- auth0 verify with verification code
-- auth0 login using a social provider's access token
-- openid connect
+- oidc logout
 - samlp login
-- auth0 returns a user's profile
-- saml logout
+- mfa challenge
+- with a name and the necessary callback url, you can dynamically register a client with auth0. no token is needed for this request.
 - auth0 send a change password email
-- auth0 obtain a delegation token (from a refresh_token)
-- tokeninfo
-- auth0 this endpoint accepts an idp-initiated sign on samlresponse from a saml identity provider.
+- oauth
+- security
+- passwordless verify
+- unlink
 slug: auth0-capability
 source_filename: auth0-capability.yaml
 source_heading: Capability Spec

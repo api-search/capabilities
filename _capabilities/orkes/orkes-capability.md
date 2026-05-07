@@ -149,79 +149,79 @@ personas: []
 provider_name: Orkes
 provider_slug: orkes
 search_terms:
-- startworkflow
-- listworkflowdefinitions
-- start a workflow
-- deletesecret
-- searchworkflows
-- releasehumantask
-- create a schedule
-- get a human task
-- get a secret
-- updatetask
-- deletetaskdefinition
-- getworkflowdefinition
-- completehumantask
-- get a schedule
-- orkes
-- search workflows
-- updateworkflowdefinitions
-- claimhumantask
 - resume a schedule
-- get task definition
-- list task definitions
-- pauseworkflow
-- getschedule
-- getsecret
-- createschedule
-- deleteschedule
-- list workflow definitions
-- update task
-- get workflow definition
-- delete a task definition
-- complete a human task
-- getworkflowexecution
-- listsecrets
-- gettaskdefinition
-- pause a schedule
-- update workflow definitions
-- pauseschedule
-- search human tasks
-- restartworkflow
 - pause a workflow
-- claim a human task
-- registertaskdefinitions
-- restart a workflow
-- api
-- retry a workflow
-- gethumantask
-- list secret names
-- create or update a secret
-- putsecret
-- searchhumantasks
-- delete a workflow definition
-- register task definitions
-- polltask
-- get workflow execution
-- register a workflow definition
-- resumeworkflow
-- delete a secret
-- delete a schedule
-- poll for a task
-- list schedules
-- resumeschedule
 - terminateworkflow
-- terminate a workflow
-- registerworkflowdefinition
-- generate access token
-- listtaskdefinitions
-- listschedules
-- generatetoken
-- microservices
-- deleteworkflowdefinition
-- retryworkflow
+- get workflow definition
+- create or update a secret
+- searchhumantasks
 - resume a workflow
 - release a human task
+- generatetoken
+- complete a human task
+- api
+- start a workflow
+- listschedules
+- startworkflow
+- restartworkflow
+- listsecrets
+- registerworkflowdefinition
+- retry a workflow
+- generate access token
+- getworkflowdefinition
+- resumeworkflow
+- get task definition
+- restart a workflow
+- get a secret
+- updateworkflowdefinitions
+- putsecret
+- list secret names
+- claim a human task
+- getschedule
+- deletetaskdefinition
+- delete a workflow definition
+- retryworkflow
+- get workflow execution
+- get a human task
+- terminate a workflow
+- getsecret
+- deleteschedule
+- pauseschedule
+- delete a schedule
+- listworkflowdefinitions
+- list task definitions
+- searchworkflows
+- search workflows
+- polltask
+- update task
+- search human tasks
+- claimhumantask
+- completehumantask
+- list schedules
+- update workflow definitions
+- updatetask
+- createschedule
+- delete a task definition
+- list workflow definitions
+- registertaskdefinitions
+- create a schedule
+- deleteworkflowdefinition
+- deletesecret
+- get a schedule
+- poll for a task
+- listtaskdefinitions
+- register task definitions
+- delete a secret
+- releasehumantask
+- resumeschedule
+- register a workflow definition
+- orkes
+- pauseworkflow
+- gethumantask
+- getworkflowexecution
+- pause a schedule
+- microservices
+- gettaskdefinition
 slug: orkes-capability
 source_filename: orkes-capability.yaml
 source_heading: Capability Spec

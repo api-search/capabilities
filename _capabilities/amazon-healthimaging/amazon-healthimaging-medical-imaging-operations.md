@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon HealthImaging
 provider_slug: amazon-healthimaging
 search_terms:
-- healthcare
 - medical imaging
-- machine learning
 - hipaa
 - dicom
+- machine learning
+- healthcare
 slug: amazon-healthimaging-medical-imaging-operations
 source_filename: amazon-healthimaging-medical-imaging-operations.yaml
 source_heading: Capability Spec

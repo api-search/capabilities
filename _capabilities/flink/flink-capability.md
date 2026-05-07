@@ -125,71 +125,71 @@ personas: []
 provider_name: Apache Flink
 provider_slug: flink
 search_terms:
-- getjobcheckpoints
-- job configuration
-- getjarplan
-- job exception history
-- job accumulators
-- list jobs
-- plan for a jar
-- getwebuiconfig
-- aggregated job metrics
-- list jobmanager log files
-- listjobmanagerlogs
-- flink
-- listjobs
-- jobs overview
-- deletejar
-- taskmanager metrics
-- delete a cluster dataset
-- big data
-- jobmanager thread dump
-- checkpoint statistics for a job
-- listjars
-- listdatasets
-- checkpoint configuration for a job
-- real-time analytics
-- trigger a checkpoint
-- list taskmanagers
-- getjobaccumulators
-- list uploaded jars
-- delete a jar
 - getjobsoverview
-- checkpoint details
-- list taskmanager logs
-- getjobmanagerconfig
-- jobmanager environment
-- getjobmanagermetrics
-- get job details
-- getcheckpointconfig
-- run a job from a jar
-- jobmanager metrics
-- upload a jar
-- api
-- getjobmanagerthreaddump
-- web ui configuration
+- listdatasets
+- getjobcheckpoints
 - shutdowncluster
-- listtaskmanagerlogs
-- distributed computing
-- uploadjar
-- workflows
-- getjobsmetrics
-- getjob
-- stream processing
-- listtaskmanagers
-- shut down the cluster
-- getjobexceptions
-- deletedataset
-- triggercheckpoint
-- runjar
-- gettaskmanagermetrics
-- list cluster datasets
-- getjobmanagerenvironment
+- plan for a jar
 - getjobconfig
-- terminatejob
-- cluster configuration
-- getcheckpointdetails
+- trigger a checkpoint
+- listjobmanagerlogs
+- web ui configuration
+- getwebuiconfig
+- jobmanager environment
+- get job details
+- delete a cluster dataset
+- api
+- gettaskmanagermetrics
+- list jobmanager log files
+- getjobaccumulators
+- deletejar
+- listtaskmanagerlogs
+- stream processing
+- listjobs
+- listtaskmanagers
+- aggregated job metrics
+- getjobexceptions
+- run a job from a jar
+- getjobmanagerconfig
+- triggercheckpoint
+- jobs overview
+- big data
+- checkpoint configuration for a job
+- jobmanager thread dump
 - cancel or stop a job
+- real-time analytics
+- jobmanager metrics
+- checkpoint statistics for a job
+- checkpoint details
+- getjobmanagermetrics
+- getcheckpointdetails
+- list taskmanager logs
+- getjobmanagerthreaddump
+- getjobmanagerenvironment
+- job accumulators
+- listjars
+- list cluster datasets
+- list jobs
+- uploadjar
+- getjob
+- terminatejob
+- shut down the cluster
+- job configuration
+- getcheckpointconfig
+- getjarplan
+- cluster configuration
+- flink
+- list taskmanagers
+- workflows
+- runjar
+- upload a jar
+- taskmanager metrics
+- list uploaded jars
+- deletedataset
+- getjobsmetrics
+- delete a jar
+- distributed computing
+- job exception history
 slug: flink-capability
 source_filename: flink-capability.yaml
 source_heading: Capability Spec

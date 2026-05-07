@@ -69,43 +69,43 @@ personas: []
 provider_name: Google Apigee
 provider_slug: google-apigee
 search_terms:
-- google apigee create an api product
-- google apigee list api products
-- google apigee create an environment
-- createdeveloper
-- getenvironment
-- listdevelopers
-- createenvironment
-- listapiproducts
-- google apigee list developers
-- deleteapiproxy
-- google apigee delete an api proxy
-- google
-- getorganization
-- google apigee list organizations
-- enterprise
-- google cloud
-- apigee
-- google apigee create an api proxy
-- google apigee get an organization
-- listorganizations
-- getapiproxy
-- createapiproxy
-- api
-- google apigee get an api proxy
-- listenvironments
 - listapiproxies
-- api gateway
-- api management
+- api
+- listorganizations
+- getenvironment
+- listapiproducts
+- listdevelopers
 - google apigee create a developer
-- google apigee get an environment
+- api management
+- google
+- createenvironment
 - google apigee list api proxies
-- getdeployment
-- google apigee list environments
-- google apigee get deployment status
-- deleteenvironment
-- createapiproduct
+- google apigee list developers
+- google apigee get an api proxy
 - google apigee delete an environment
+- google apigee list environments
+- google apigee get an environment
+- google apigee create an api proxy
+- getdeployment
+- api gateway
+- google apigee create an api product
+- enterprise
+- google apigee get an organization
+- google apigee delete an api proxy
+- deleteapiproxy
+- google apigee list organizations
+- createdeveloper
+- listenvironments
+- apigee
+- createapiproduct
+- deleteenvironment
+- google apigee list api products
+- google cloud
+- google apigee get deployment status
+- createapiproxy
+- getapiproxy
+- google apigee create an environment
+- getorganization
 slug: google-apigee-capability
 source_filename: google-apigee-capability.yaml
 source_heading: Capability Spec

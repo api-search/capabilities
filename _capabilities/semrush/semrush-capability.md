@@ -33,22 +33,22 @@ personas: []
 provider_name: Semrush
 provider_slug: semrush
 search_terms:
-- data
-- post app center api v2 jwt token
-- semrush get event status
-- post apis v4 app center v2 partner viewer status
 - api
-- semrush
+- semrush user status
+- semrush send notification
+- post apis v4 app center v2 partner viewer status
+- semrush get available subscriptions
 - get apis v4 hermes v0 user user id subscription
+- post apis v4 hermes v0 event
+- data
+- search engines
+- semrush
+- semrush get user's subscription status
 - semrush request api access token
 - get apis v4 hermes v0 subscriptions
-- semrush send notification
 - get apis v4 hermes v0 event id
-- semrush get user's subscription status
-- semrush user status
-- semrush get available subscriptions
-- post apis v4 hermes v0 event
-- search engines
+- semrush get event status
+- post app center api v2 jwt token
 slug: semrush-capability
 source_filename: semrush-capability.yaml
 source_heading: Capability Spec

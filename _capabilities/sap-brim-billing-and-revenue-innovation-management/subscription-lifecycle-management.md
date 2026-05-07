@@ -29,38 +29,38 @@ personas: []
 provider_name: SAP BRIM (Billing and Revenue Innovation Management)
 provider_slug: sap-brim-billing-and-revenue-innovation-management
 search_terms:
-- get subscription details.
-- get customer account details and subscription history.
-- get customer account details.
-- get customer
-- list customers.
-- create subscription
-- suspend an active subscription (e.g., for non-payment).
-- customer accounts.
-- revenue management
-- billing
-- enterprise
-- list subscriptions
-- subscription plan catalog.
-- get full lifecycle details of a specific subscription.
-- order to cash
 - single customer account.
-- suspend subscription
-- subscription management.
-- subscription management
-- sap
-- cancel subscription
-- list all subscriptions with filtering.
-- list all available subscription plans in the brim catalog.
-- usage-based pricing
-- list customers
 - get subscription
-- create a new subscription for a customer on a selected plan.
+- usage-based pricing
+- subscription management
+- subscription management.
 - single subscription.
+- billing
+- create a new subscription for a customer on a selected plan.
+- list all subscriptions with filtering.
+- suspend subscription
+- order to cash
+- subscription plan catalog.
+- get customer account details.
 - list customer subscriptions with filtering by status, plan, or customer.
-- list available subscription plans.
 - cancel and terminate a customer subscription.
+- sap
+- list customers.
+- list all available subscription plans in the brim catalog.
+- get full lifecycle details of a specific subscription.
+- cancel subscription
+- customer accounts.
+- list available subscription plans.
+- get customer
+- list subscriptions
+- get subscription details.
+- enterprise
+- list customers
 - list plans
+- suspend an active subscription (e.g., for non-payment).
+- get customer account details and subscription history.
+- revenue management
+- create subscription
 slug: subscription-lifecycle-management
 source_filename: subscription-lifecycle-management.yaml
 source_heading: Capability Spec

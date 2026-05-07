@@ -41,32 +41,32 @@ personas: []
 provider_name: Adobe Creative Cloud
 provider_slug: adobe-creative-cloud
 search_terms:
-- createelement
-- adobe creative cloud get library
-- getlibraries
-- getlibrary
-- getelements
-- deleteelement
-- design
-- creative
-- deletelibrary
-- adobe creative cloud create library
-- adobe creative cloud create element
-- cloud
-- createlibrary
-- adobe creative cloud delete library
-- photography
-- getelement
-- adobe creative cloud list library elements
-- saas
-- api
-- adobe creative cloud delete element
-- video
-- adobe
-- adobe creative cloud list libraries
-- documents
-- ai/ml
 - adobe creative cloud get element
+- adobe creative cloud create library
+- createelement
+- adobe creative cloud delete library
+- video
+- getlibrary
+- deletelibrary
+- api
+- saas
+- getelement
+- photography
+- design
+- getelements
+- creative
+- documents
+- cloud
+- getlibraries
+- ai/ml
+- adobe creative cloud create element
+- adobe
+- adobe creative cloud get library
+- adobe creative cloud delete element
+- adobe creative cloud list libraries
+- adobe creative cloud list library elements
+- createlibrary
+- deleteelement
 slug: adobe-creative-cloud-capability
 source_filename: adobe-creative-cloud-capability.yaml
 source_heading: Capability Spec

@@ -113,66 +113,66 @@ personas: []
 provider_name: Zesty
 provider_slug: zesty
 search_terms:
-- zesty list all roles
-- zesty list all instances
-- deletetoken
-- zesty update a role
-- getteams
-- zesty create a webhook
-- zesty create an access token
-- zesty list all apps
-- zesty delete a user
-- createrole
-- zesty get a team
-- zesty get an access token
-- deleterole
-- deleteinstance
-- getrole
-- zesty list all webhooks
-- zesty update an instance
-- getroles
-- gettokens
-- zesty delete a role
-- zesty delete an access token
-- zesty create a new role
-- graphql
-- zesty get an instance
-- zesty update a user
-- getwebhooks
-- createtoken
-- createinstance
-- updaterole
-- getteam
-- content management
-- zesty list all users
-- updateinstance
-- zesty delete an instance
-- getinstance
-- deleteteam
-- headless cms
 - zesty create a new instance
-- getusers
-- updateteam
-- api
-- getapps
-- media
-- createteam
-- createwebhook
-- zesty create a new team
-- zesty delete a team
-- cms
-- getuser
-- zesty get a user
-- composable
+- getteams
 - getinstances
-- zesty list all teams
-- zesty
+- updateinstance
+- createinstance
+- zesty list all users
+- getusers
+- api
+- zesty create an access token
+- zesty update a role
+- zesty get an instance
+- composable
+- createtoken
+- zesty update an instance
+- gettokens
+- zesty delete a user
+- deleteinstance
+- deleterole
+- updaterole
+- zesty delete an access token
+- zesty delete an instance
+- getwebhooks
+- zesty delete a team
+- graphql
+- createwebhook
+- getuser
 - zesty get a role
-- updateuser
-- zesty update a team
-- zesty list all access tokens
+- createteam
+- getinstance
 - deleteuser
+- zesty get a user
+- cms
+- getrole
+- zesty delete a role
+- zesty get a team
 - gettoken
+- zesty
+- zesty update a team
+- zesty list all instances
+- updateuser
+- zesty list all access tokens
+- zesty create a new team
+- getapps
+- deleteteam
+- zesty update a user
+- zesty list all apps
+- zesty create a webhook
+- updateteam
+- content management
+- deletetoken
+- zesty create a new role
+- media
+- getteam
+- zesty get an access token
+- zesty list all teams
+- zesty list all roles
+- headless cms
+- getroles
+- zesty list all webhooks
+- createrole
 slug: zesty-capability
 source_filename: zesty-capability.yaml
 source_heading: Capability Spec

@@ -13,20 +13,20 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
+- governance
+- spec-driven integration
+- get mock
+- mock from spec
 - adjacency
+- mocking
 - stand up a naftiko mock from an adjacency capability spec.
 - return the runtime url and metadata of a naftiko mock.
-- mock from spec
-- mcp
-- get mock
-- api integration
-- governance
-- pull an adjacency capability spec and stand up a naftiko mock for it.
-- spec-driven integration
 - ai
-- mocking
 - capabilities
+- pull an adjacency capability spec and stand up a naftiko mock for it.
+- api integration
+- mcp
+- naftiko
 slug: adjacency-capability-driven-mocking-reference
 source_filename: adjacency-capability-driven-mocking-reference.yaml
 source_heading: Capability Spec

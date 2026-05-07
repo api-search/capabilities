@@ -17,18 +17,18 @@ personas: []
 provider_name: OpenFeature
 provider_slug: openfeature
 search_terms:
-- incubating
-- bulk evaluate all feature flags
-- evaluateflagsbulk
-- api
-- openfeature
-- feature management
-- evaluate a single feature flag
-- sdks
-- evaluateflag
 - cloud native
+- incubating
+- feature management
+- evaluateflag
 - feature flags
 - specification
+- openfeature
+- evaluateflagsbulk
+- bulk evaluate all feature flags
+- sdks
+- api
+- evaluate a single feature flag
 slug: openfeature-capability
 source_filename: openfeature-capability.yaml
 source_heading: Capability Spec

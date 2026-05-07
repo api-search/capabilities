@@ -41,27 +41,27 @@ personas: []
 provider_name: NPR
 provider_slug: npr
 search_terms:
-- npr
-- npr revoke an existing oauth2 access token
-- npr delete the user's account
-- getauthorizationpage
-- npr initiate an oauth2 login flow for limited input devices
-- npr update the logged-in user's favorite station(s)
-- npr update the following status of the logged-in user for a particular aggregation
-- createtoken
-- updatestations
 - npr get the latest state information about the logged-in user
-- postfollowing
-- generatedevicecode
-- news
+- npr
 - api
-- npr show a web-based login/signup form to a user
-- revoketoken
-- media
-- radio
-- npr create a new oauth2 access token
+- postfollowing
+- npr update the logged-in user's favorite station(s)
+- createtoken
 - getuser
 - deleteuser
+- updatestations
+- npr revoke an existing oauth2 access token
+- revoketoken
+- radio
+- media
+- npr show a web-based login/signup form to a user
+- npr initiate an oauth2 login flow for limited input devices
+- generatedevicecode
+- npr delete the user's account
+- npr create a new oauth2 access token
+- news
+- getauthorizationpage
+- npr update the following status of the logged-in user for a particular aggregation
 slug: npr-capability
 source_filename: npr-capability.yaml
 source_heading: Capability Spec

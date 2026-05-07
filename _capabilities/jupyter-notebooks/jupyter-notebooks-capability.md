@@ -109,62 +109,62 @@ personas: []
 provider_name: Jupyter Notebooks
 provider_slug: jupyter-notebooks
 search_terms:
-- interrupt a kernel
-- get a session
-- get contents at a path
-- start a new terminal
-- getkernel
-- createcheckpoint
-- rename or move contents
-- getsession
-- notebooks
-- listkernels
-- listkernelspecs
-- listcheckpoints
-- stop a terminal
-- start a new kernel
-- list running kernels
-- get a terminal
-- jupyter
-- list active terminals
-- save or upload contents at a path
-- restartkernel
-- list installed kernel specs
-- deletecheckpoint
-- getterminal
-- stopterminal
-- createcontents
-- renamecontents
-- listterminals
-- list active sessions
-- savecontents
-- delete a checkpoint
-- delete a session
-- updatesession
-- startterminal
-- api
-- interactive computing
-- shutdownkernel
-- deletecontents
-- update a session
-- interruptkernel
-- python
-- restore a file to a checkpoint
-- getcontents
-- listsessions
-- restorecheckpoint
 - createsession
-- startkernel
-- delete contents at a path
-- create a new session
-- create a new checkpoint
-- create a new file or directory
-- list checkpoints for a file
-- shut down a kernel
-- get kernel info
-- deletesession
-- data science
+- interruptkernel
+- start a new kernel
+- listsessions
+- update a session
+- delete a session
+- listkernelspecs
 - restart a kernel
+- list installed kernel specs
+- list active sessions
+- renamecontents
+- deletesession
+- api
+- interrupt a kernel
+- getkernel
+- start a new terminal
+- list checkpoints for a file
+- list active terminals
+- startkernel
+- deletecheckpoint
+- startterminal
+- listcheckpoints
+- restore a file to a checkpoint
+- get a terminal
+- save or upload contents at a path
+- createcheckpoint
+- deletecontents
+- data science
+- delete contents at a path
+- updatesession
+- listterminals
+- python
+- listkernels
+- notebooks
+- getterminal
+- get kernel info
+- shutdownkernel
+- restorecheckpoint
+- create a new file or directory
+- rename or move contents
+- stop a terminal
+- stopterminal
+- interactive computing
+- get contents at a path
+- delete a checkpoint
+- list running kernels
+- getsession
+- create a new session
+- shut down a kernel
+- restartkernel
+- savecontents
+- jupyter
+- get a session
+- getcontents
+- create a new checkpoint
+- createcontents
 slug: jupyter-notebooks-capability
 source_filename: jupyter-notebooks-capability.yaml
 source_heading: Capability Spec

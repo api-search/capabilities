@@ -21,35 +21,35 @@ personas: []
 provider_name: Spring Framework
 provider_slug: spring-framework
 search_terms:
-- discover spring boot options
-- discover all available spring boot versions, build tools, languages, and java versions from spring initializr
-- list starters
-- mvc
-- aop
-- code generation
-- java
-- framework
 - developer experience
-- get options
-- find spring starters
-- project generation
-- get all available options for spring boot project generation
-- enterprise
-- spring boot project generation
-- bootstrap
 - create spring boot project
-- ioc
-- generate a new spring boot application project. specify build tool (maven-project or gradle-project), language (java/kotlin/groovy), spring boot version, group id, artifact id, and comma-separated dependency ids (e.g., 'web,data-jpa,security,actuator').
-- project generation configuration options
-- generate project
 - spring boot
-- list all available spring boot starter dependencies
-- spring boot starter dependency discovery
-- dependency injection
-- generate a spring boot project with the specified configuration
-- spring
+- java
 - find available spring boot starter dependencies, optionally filtered by a specific spring boot version
+- generate project
+- list starters
+- get options
+- get all available options for spring boot project generation
+- spring boot project generation
+- aop
+- ioc
+- bootstrap
+- project generation configuration options
+- discover all available spring boot versions, build tools, languages, and java versions from spring initializr
+- spring
+- generate a new spring boot application project. specify build tool (maven-project or gradle-project), language (java/kotlin/groovy), spring boot version, group id, artifact id, and comma-separated dependency ids (e.g., 'web,data-jpa,security,actuator').
+- find spring starters
+- code generation
+- enterprise
+- project generation
+- list all available spring boot starter dependencies
+- framework
+- mvc
+- dependency injection
+- spring boot starter dependency discovery
+- discover spring boot options
 - microservices
+- generate a spring boot project with the specified configuration
 slug: project-bootstrapping
 source_filename: project-bootstrapping.yaml
 source_heading: Capability Spec

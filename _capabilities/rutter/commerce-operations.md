@@ -49,51 +49,51 @@ personas: []
 provider_name: Rutter
 provider_slug: rutter
 search_terms:
-- update an existing product in the connected commerce platform
-- list orders from connected commerce platform
-- update a product in connected commerce platform
-- list orders from connected commerce platform (shopify, woocommerce, amazon)
-- list products from connected commerce platform
-- get customer
-- customer data
-- get order
-- get product
-- unified api
-- accounting
-- e-commerce
-- b2b
-- list customers from connected platform
-- commerce
-- fulfill order
-- get a specific product by id
-- single order
-- get a specific customer by id
-- single customer
-- get a specific product by id from connected commerce platform
-- list customers from connected commerce or accounting platform
-- get a specific order by id
-- financial data
-- mark an order as fulfilled
-- create a new product in connected commerce platform
-- get a specific order by id from connected commerce platform
-- commerce orders
 - create order
-- payments
-- list orders
-- order fulfillments
-- list customers
-- create a new order in the connected commerce platform
-- get a specific customer by id from connected platform
-- list products
-- mark an order as fulfilled with tracking information
-- create a new product in the connected commerce platform
-- products
-- orders
+- create a new product in connected commerce platform
+- accounting
+- get product
 - create product
-- create a new order in connected commerce platform
+- unified api
+- list products
 - product catalog
-- single product
+- b2b
+- orders
+- get a specific product by id from connected commerce platform
+- get a specific customer by id
+- list customers from connected commerce or accounting platform
+- update a product in connected commerce platform
 - update product
+- single order
+- products
+- get a specific customer by id from connected platform
+- financial data
+- get a specific order by id
+- list orders from connected commerce platform (shopify, woocommerce, amazon)
+- get a specific product by id
+- list orders
+- list orders from connected commerce platform
+- e-commerce
+- single product
+- list customers from connected platform
+- mark an order as fulfilled
+- get customer
+- create a new order in the connected commerce platform
+- mark an order as fulfilled with tracking information
+- fulfill order
+- update an existing product in the connected commerce platform
+- create a new product in the connected commerce platform
+- single customer
+- list customers
+- order fulfillments
+- commerce orders
+- payments
+- create a new order in connected commerce platform
+- customer data
+- commerce
+- list products from connected commerce platform
+- get order
+- get a specific order by id from connected commerce platform
 slug: commerce-operations
 source_filename: commerce-operations.yaml
 source_heading: Capability Spec

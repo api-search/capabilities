@@ -25,31 +25,31 @@ personas: []
 provider_name: S&P Global
 provider_slug: sandp-global
 search_terms:
-- credit ratings
-- look up commodity symbol metadata including description, unit, and currency
-- retrieve latest commodity price assessments
 - analytics
-- current commodity price assessments
-- get commodity symbols
+- retrieve historical commodity price data for trend analysis
 - financial data for public and private companies
+- retrieve historical commodity price assessments
+- get commodity prices
+- look up commodity symbol metadata including description, unit, and currency
+- commodity insights
+- credit ratings
+- financial data
+- get commodity symbols
+- market intelligence
+- commodity symbol reference data
+- retrieve latest commodity price assessments
+- get reference data for commodity symbols
+- historical commodity price data
+- enterprise
+- retrieve financial metrics for public or private companies from s&p capital iq
+- s&p global
+- get the latest commodity price assessments from s&p global platts
 - retrieve financial metrics for companies using capital iq mnemonics
 - get company financials
-- enterprise
-- commodity symbol reference data
-- retrieve financial metrics for public or private companies from s&p capital iq
-- get commodity prices
-- financial data
-- fortune 500
-- get reference data for commodity symbols
-- retrieve historical commodity price data for trend analysis
 - get commodity price history
-- retrieve historical commodity price assessments
+- current commodity price assessments
 - lookup commodity symbol
-- commodity insights
-- market intelligence
-- s&p global
-- historical commodity price data
-- get the latest commodity price assessments from s&p global platts
+- fortune 500
 slug: market-intelligence
 source_filename: market-intelligence.yaml
 source_heading: Capability Spec

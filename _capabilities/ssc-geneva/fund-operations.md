@@ -37,40 +37,40 @@ personas: []
 provider_name: SS&C Geneva
 provider_slug: ssc-geneva
 search_terms:
-- create trade
-- submit a new trade for processing and settlement
-- list investors with capital allocations for a fund
-- list investors
-- list investors in a portfolio with capital balances and ownership percentages
-- get portfolio details including aum and metadata
-- get portfolio positions as of a specific date
-- list trades
-- get ss&c geneva portfolio details including aum, manager, and share classes
-- financial services
-- portfolio management
-- list portfolios with optional type, currency, and status filtering
-- submit a new trade to ss&c geneva for processing and settlement
-- nav calculation
 - get portfolio positions
-- trade capture and processing
+- nav calculation
 - portfolio positions and holdings
-- list trades for a portfolio within a date range with settlement status
-- list ss&c geneva fund portfolios with optional filtering by type, currency, and status
-- nav calculation and reporting
-- ss&c geneva
-- get portfolio
+- list investors
 - get nav calculation for a portfolio on a specific date
-- investor accounting
-- hedge funds
+- portfolio management
 - list trades for a portfolio in a date range
-- get nav calculation for a portfolio on a specific date with component breakdown
-- get portfolio nav
-- list portfolios
-- fund accounting
 - portfolio and fund management
-- get portfolio positions as of a date with market values and unrealized p&l
+- list ss&c geneva fund portfolios with optional filtering by type, currency, and status
+- fund accounting
+- submit a new trade for processing and settlement
 - asset management
+- create trade
+- hedge funds
+- get portfolio positions as of a specific date
+- list portfolios
+- list trades for a portfolio within a date range with settlement status
 - individual portfolio details
+- financial services
+- list investors with capital allocations for a fund
+- get portfolio
+- list portfolios with optional type, currency, and status filtering
+- get ss&c geneva portfolio details including aum, manager, and share classes
+- get nav calculation for a portfolio on a specific date with component breakdown
+- list trades
+- get portfolio nav
+- investor accounting
+- get portfolio details including aum and metadata
+- trade capture and processing
+- list investors in a portfolio with capital balances and ownership percentages
+- submit a new trade to ss&c geneva for processing and settlement
+- get portfolio positions as of a date with market values and unrealized p&l
+- ss&c geneva
+- nav calculation and reporting
 slug: fund-operations
 source_filename: fund-operations.yaml
 source_heading: Capability Spec

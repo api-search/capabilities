@@ -29,40 +29,40 @@ personas: []
 provider_name: TransportAPI
 provider_slug: transportapi
 search_terms:
-- real-time
-- bus
-- plan journey
 - analytics
-- get live uk bus departure times for a stop using its atco code
-- plan a multimodal journey across great britain
 - real-time train departure boards
-- get bus timetable
+- plan a multimodal journey across great britain
 - get live bus departures for a stop
-- transport stops and access points
-- get scheduled uk bus timetable for a stop
-- real-time bus departure boards
-- get train live departures
-- search uk transport places
-- find uk bus stops, train stations, and transport access points by name or location
+- get uk train departures
 - get bus live departures
-- plan uk journey
-- uk transport
-- get scheduled timetable for a bus stop
+- search uk transport places
 - multimodal journey planning
-- get live uk train departures for a station using its crs code
+- get uk bus departures
+- get uk bus timetable
+- get live uk bus departure times for a stop using its atco code
+- get scheduled timetable for a bus stop
+- get live train departures for a station
+- bus
 - scheduled bus timetables
+- get scheduled uk bus timetable for a stop
+- journey planning
+- transport stops and access points
+- find uk bus stops, train stations, and transport access points by name or location
 - uk
+- rail
+- get bus timetable
+- get live uk train departures for a station using its crs code
+- real-time bus departure boards
+- plan a multimodal journey across great britain by bus, train, or tram
 - search places
 - public transit
-- get uk train departures
-- journey planning
+- plan uk journey
 - transport
+- uk transport
 - find transport stops and stations
-- get uk bus departures
-- plan a multimodal journey across great britain by bus, train, or tram
-- rail
-- get live train departures for a station
-- get uk bus timetable
+- real-time
+- plan journey
+- get train live departures
 slug: uk-transport-information
 source_filename: uk-transport-information.yaml
 source_heading: Capability Spec

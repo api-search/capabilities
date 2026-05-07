@@ -29,42 +29,42 @@ personas: []
 provider_name: Wayfair
 provider_slug: wayfair
 search_terms:
-- suppliers
-- update inventory
-- purchase order management operations.
-- authenticate with the wayfair platform.
-- update inventory levels via graphql mutation.
-- acknowledge a wayfair purchase order via graphql mutation to confirm acceptance and begin fulfillment.
 - get access token
-- retail
-- query wayfair purchase orders using graphql. retrieve new, pending, or acknowledged orders from wayfair buyers.
-- graphql
-- e-commerce
-- wayfair
+- authenticate with the wayfair platform.
 - update product catalog entries via graphql.
-- furniture
-- submit an advanced shipment notification (asn) to wayfair with carrier details and tracking numbers.
-- inventory
+- retail
 - submit advanced shipment notification (asn) via graphql.
-- get purchase orders
-- acknowledge purchase order
-- product catalog management operations.
-- shipping notification operations.
-- shipping
-- inventory management operations.
-- update product catalog entries including pricing, descriptions, and attributes via graphql.
-- authenticate
-- query graphql
-- execute any graphql query or mutation against the wayfair supplier api for custom integration workflows.
-- obtain oauth2 access token using client credentials.
-- home goods
-- update catalog
-- order management
-- catalog
+- furniture
 - query purchase orders via graphql.
-- update inventory levels for skus in the wayfair marketplace via graphql mutation.
+- update catalog
+- update product catalog entries including pricing, descriptions, and attributes via graphql.
+- order management
+- update inventory
+- graphql
+- inventory
+- query graphql
+- update inventory levels via graphql mutation.
+- submit an advanced shipment notification (asn) to wayfair with carrier details and tracking numbers.
+- acknowledge purchase order
+- query wayfair purchase orders using graphql. retrieve new, pending, or acknowledged orders from wayfair buyers.
+- authenticate
+- e-commerce
+- get purchase orders
+- catalog
+- shipping notification operations.
 - authenticate with wayfair and obtain an oauth2 access token for subsequent api calls.
+- wayfair
+- purchase order management operations.
+- inventory management operations.
+- obtain oauth2 access token using client credentials.
+- suppliers
+- execute any graphql query or mutation against the wayfair supplier api for custom integration workflows.
+- acknowledge a wayfair purchase order via graphql mutation to confirm acceptance and begin fulfillment.
 - submit shipment notification
+- update inventory levels for skus in the wayfair marketplace via graphql mutation.
+- shipping
+- home goods
+- product catalog management operations.
 slug: supplier-operations
 source_filename: supplier-operations.yaml
 source_heading: Capability Spec

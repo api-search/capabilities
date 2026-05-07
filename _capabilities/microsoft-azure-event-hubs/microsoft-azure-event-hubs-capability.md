@@ -25,24 +25,24 @@ personas: []
 provider_name: Azure Event Hubs
 provider_slug: microsoft-azure-event-hubs
 search_terms:
-- azure
-- real-time processing
-- hubs
-- message ingestion
-- iot
-- sendevent
-- api
-- sendpartitionevent
-- azure event hubs send event
-- sendbatchevents
+- azure event hubs send batch events
 - event
 - event streaming
-- azure event hubs send event with publisher id
-- microsoft
-- azure event hubs send partition event
-- big data
+- azure event hubs send event
+- real-time processing
+- azure
+- sendbatchevents
 - sendeventwithpublisherid
-- azure event hubs send batch events
+- iot
+- sendpartitionevent
+- hubs
+- azure event hubs send partition event
+- microsoft
+- azure event hubs send event with publisher id
+- api
+- sendevent
+- big data
+- message ingestion
 slug: microsoft-azure-event-hubs-capability
 source_filename: microsoft-azure-event-hubs-capability.yaml
 source_heading: Capability Spec

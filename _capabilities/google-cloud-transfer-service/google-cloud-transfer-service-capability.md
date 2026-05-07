@@ -41,33 +41,33 @@ personas: []
 provider_name: Google Cloud Transfer Service
 provider_slug: google-cloud-transfer-service
 search_terms:
-- google cloud transfer service run a transfer job
 - createagentpool
-- transfer
-- google cloud transfer service create an agent pool
-- storage
-- google cloud transfer service update a transfer job
-- google cloud transfer service list transfer jobs
-- azure
-- cloud
-- google
-- google cloud transfer service list transfer operations
-- updatetransferjob
-- listtransferoperations
-- google cloud transfer service get a transfer job
-- listtransferjobs
-- data transfer
-- cloud storage
 - api
-- gettransferjob
-- service
-- google cloud transfer service create a transfer job
-- runtransferjob
-- createtransferjob
-- migration
-- google cloud transfer service list agent pools
+- google cloud transfer service list transfer jobs
+- google cloud transfer service list transfer operations
+- transfer
 - s3
 - listagentpools
+- cloud storage
+- migration
+- service
+- listtransferoperations
+- google cloud transfer service get a transfer job
+- google
+- runtransferjob
+- data transfer
+- gettransferjob
+- google cloud transfer service run a transfer job
+- listtransferjobs
+- google cloud transfer service create a transfer job
+- updatetransferjob
+- cloud
+- storage
+- google cloud transfer service list agent pools
+- azure
+- google cloud transfer service create an agent pool
+- createtransferjob
+- google cloud transfer service update a transfer job
 slug: google-cloud-transfer-service-capability
 source_filename: google-cloud-transfer-service-capability.yaml
 source_heading: Capability Spec

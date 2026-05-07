@@ -22,23 +22,23 @@ provider_name: Google Gemini
 provider_slug: google-gemini
 search_terms:
 - google gemini generates a text embedding vector from the input content using the specified gemini embedding model.
-- llm
-- gemini
-- generative ai
-- image generation
-- machine learning
-- streamgeneratecontent
-- google
-- api
-- multimodal
-- embedcontent
-- code generation
-- embeddings
-- google gemini generates a streamed response from the model given an input generatecontentrequest. returns a stream of generatecontentresponse chunks using server-sent events.
 - agentic ai
-- generatecontent
+- google gemini generates a streamed response from the model given an input generatecontentrequest. returns a stream of generatecontentresponse chunks using server-sent events.
+- embeddings
+- machine learning
+- multimodal
 - artificial intelligence
+- code generation
+- google
+- generative ai
 - google gemini generates a model response given an input generatecontentrequest. refer to the text generation guide for detailed usage information. input capabilities differ between models, including tuned models.
+- embedcontent
+- gemini
+- generatecontent
+- api
+- streamgeneratecontent
+- llm
+- image generation
 slug: google-gemini-capability
 source_filename: google-gemini-capability.yaml
 source_heading: Capability Spec

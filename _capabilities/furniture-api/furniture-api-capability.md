@@ -29,20 +29,20 @@ personas: []
 provider_name: Furniture API
 provider_slug: furniture-api
 search_terms:
-- update stock levels
-- list products
+- updatestock
+- e-commerce
+- apply product discount
 - listproducts
-- getproductbysku
+- toggle featured status
 - get product by sku
+- togglefeatured
+- furniture
+- list products
 - products
 - api
-- e-commerce
-- toggle featured status
-- furniture
-- apply product discount
-- togglefeatured
+- update stock levels
 - applydiscount
-- updatestock
+- getproductbysku
 slug: furniture-api-capability
 source_filename: furniture-api-capability.yaml
 source_heading: Capability Spec

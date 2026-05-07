@@ -49,37 +49,37 @@ personas: []
 provider_name: The Bureau of Economic Analysis
 provider_slug: the-bureau-of-economic-analysis
 search_terms:
-- getparameterlist
-- economics
-- get regional data
-- get fixed assets data
-- national accounts
-- bureau
+- getfixedassetsdata
 - get international transactions data
-- get dataset list
-- getinputoutputdata
-- getnipadata
-- gdp
-- economic
-- getmnedata
-- the
+- get input-output data
 - get nipa data
 - api
-- of
-- getparametervalues
-- get multinational enterprises data
-- getitadata
-- getdatasetlist
-- federal government
-- getfixedassetsdata
-- get gdp by industry data
+- get parameter values
+- get dataset list
+- bureau
+- get fixed assets data
 - analysis
-- get parameter list
+- national accounts
+- getnipadata
+- economic
+- getmnedata
+- getparameterlist
+- of
+- getdatasetlist
 - getregionaldata
 - getgdpbyindustrydata
-- get input-output data
-- get parameter values
+- get regional data
+- get multinational enterprises data
+- economics
+- gdp
 - statistics
+- the
+- get gdp by industry data
+- get parameter list
+- getinputoutputdata
+- getparametervalues
+- federal government
+- getitadata
 - open data
 slug: the-bureau-of-economic-analysis-capability
 source_filename: the-bureau-of-economic-analysis-capability.yaml

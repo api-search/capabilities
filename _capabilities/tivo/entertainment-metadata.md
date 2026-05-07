@@ -33,37 +33,37 @@ personas: []
 provider_name: Tivo
 provider_slug: tivo
 search_terms:
-- search for movies, tv shows, and other entertainment content
-- search tivo's entertainment catalog for movies, tv series, or episodes by title, genre, year, or type
-- get episodes for a tv series with optional season filter
+- retrieve full tivo metadata for a content item using its rovi, tmdb, or eidr identifier
 - movies
-- full metadata for a specific content item
-- get complete metadata for a content item by id
-- content discovery
-- get content images
+- streaming
 - entertainment imagery for a content item
-- season listing for a tv series
-- get biography and credits for a cast or crew member
-- get posters, backdrops, stills, and promotional images for a tivo content item
-- music
-- get content seasons
+- metadata
 - list all seasons of a tv series with episode counts and season metadata
+- get biography and credits for a cast or crew member
+- episode listing for a tv series
+- get content images
+- search content
+- get content episodes
+- get posters, backdrops, stills, and promotional images for a tivo content item
+- season listing for a tv series
 - list tv series episodes with air dates, titles, and descriptions, optionally filtered by season
+- music
 - get all seasons for a tv series
 - television
-- lookup content by id
-- get biography, birth information, filmography credits, and images for an actor, director, or writer
-- search content
-- search entertainment content by flexible metadata fields
-- get posters, backdrops, and stills for a content item
+- get episodes for a tv series with optional season filter
+- full metadata for a specific content item
+- search tivo's entertainment catalog for movies, tv series, or episodes by title, genre, year, or type
 - entertainment
-- retrieve full tivo metadata for a content item using its rovi, tmdb, or eidr identifier
-- person profiles and filmography
-- streaming
-- episode listing for a tv series
-- metadata
-- get content episodes
+- content discovery
+- search entertainment content by flexible metadata fields
+- lookup content by id
+- search for movies, tv shows, and other entertainment content
 - lookup person
+- get complete metadata for a content item by id
+- person profiles and filmography
+- get biography, birth information, filmography credits, and images for an actor, director, or writer
+- get content seasons
+- get posters, backdrops, and stills for a content item
 slug: entertainment-metadata
 source_filename: entertainment-metadata.yaml
 source_heading: Capability Spec

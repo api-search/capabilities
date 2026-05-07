@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
+- governance
+- avatax
 - calculate tax
 - compute sales tax for a transaction.
-- avatax
 - tax
+- ai
+- capabilities
+- spec-driven integration
 - calculate sales tax on a transaction.
 - api integration
-- governance
-- ai
-- spec-driven integration
 - mcp
-- capabilities
+- naftiko
 slug: avatax-calculate-as-agent-skill
 source_filename: avatax-calculate-as-agent-skill.yaml
 source_heading: Capability Spec

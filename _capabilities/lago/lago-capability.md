@@ -249,132 +249,132 @@ personas: []
 provider_name: Lago
 provider_slug: lago
 search_terms:
-- lago estimate fees for a pay in advance charge
-- createbillablemetric
-- lago list all billable metrics
-- lago retry an invoice payment
-- findfee
-- eventestimatefees
-- getcustomerportalurl
-- lago evaluate an expression for a billable metric
-- destroycoupon
-- lago update a coupon
-- findbillablemetric
-- lago retrieve customer past usage
-- lago list mrr
-- losedisputeinvoice
-- lago create a coupon
-- findallcreditnotes
-- updatecreditnote
-- findcustomer
-- createinvoice
-- lago create an add-on
-- findinvoice
-- api
-- generatecustomercheckouturl
-- lago list all invoices
-- metering
-- lago create a credit note
-- lago retrieve a specific fee
-- lago list all applied coupons
-- lago update a billable metric
-- lago retrieve a credit note
-- applycoupon
-- evaluatebillablemetricexpression
-- lago send usage events
-- lago retrieve an invoice
-- lago retrieve a coupon
-- findallcustomers
-- lago download an invoice pdf
-- deletefee
-- lago retrieve a customer
-- lago list of finalized invoices
-- lago delete a fee
-- findevent
-- lago download a credit note pdf
-- downloadcreditnote
-- findcreditnote
-- lago delete an applied coupon
-- updatecoupon
-- lago list all fees
-- downloadinvoice
-- lago list usage revenue
-- open source
-- lago delete a customer
-- retryinvoice
-- voidinvoice
-- finalizeinvoice
-- findallinvoicedusages
-- retrypayment
-- lago create a customer
-- lago retrieve a billable metric
-- createcustomer
-- lago batch multiple events
-- lago create a one-off invoice
-- createcoupon
-- lago delete a coupon
-- lago update an add-on
-- lago retrieve customer current usage
-- lago list gross revenue
-- destroybillablemetric
-- createbatchevents
-- lago delete an add-on
-- lago generate a payment url
-- lago update an invoice
-- updateaddon
-- findallcustomerpastusage
-- invoicepaymenturl
-- findcoupon
-- deleteappliedcoupon
-- lago retry generation of a failed invoice
-- lago retrieve an add-on
-- findalladdons
-- lago list all coupons
-- lago apply a coupon to a customer
-- lago list overdue balance
-- findcustomercurrentusage
-- lago list all credit notes
-- lago update a fee
-- findallgrossrevenues
 - voidcreditnote
-- lago get a customer portal url
-- findallinvoicecollections
-- lago retrieve a specific event
-- lago list all add-ons
-- lago
-- findallevents
-- refreshinvoice
-- lago mark an invoice payment dispute as lost
-- lago generate a customer payment provider checkout url
-- findalloverduebalances
-- findallappliedcoupons
-- lago update a credit note
-- lago refresh a draft invoice
-- destroycustomer
-- destroyaddon
-- usage-based
-- billing
-- updateinvoice
-- lago delete a billable metric
-- findallbillablemetrics
-- estimatecreditnote
-- createaddon
-- createevent
-- lago create a billable metric
-- updatebillablemetric
-- lago void available credit
-- findallfees
-- findaddon
-- findallmrrs
-- findallinvoices
+- updatecoupon
 - lago list all events
-- updatefee
-- lago void an invoice
+- findevent
+- finalizeinvoice
+- updatecreditnote
+- estimatecreditnote
+- api
+- lago list all coupons
+- downloadcreditnote
+- usage-based
+- evaluatebillablemetricexpression
+- lago update a billable metric
+- lago retrieve a billable metric
+- destroyaddon
+- lago list all billable metrics
+- lago delete a customer
+- lago delete an add-on
+- lago list all credit notes
+- eventestimatefees
+- lago retry an invoice payment
+- lago retrieve a customer
+- findcreditnote
+- createaddon
+- createcoupon
+- deleteappliedcoupon
+- findcoupon
+- lago download a credit note pdf
+- lago get a customer portal url
+- findalloverduebalances
+- lago create a credit note
+- deletefee
+- getcustomerportalurl
+- lago list all applied coupons
+- createevent
 - createcreditnote
-- lago estimate amounts for a new credit note
-- findallcoupons
-- lago list all customers
+- lago generate a customer payment provider checkout url
+- findallmrrs
+- lago generate a payment url
+- updatefee
+- lago delete a fee
+- applycoupon
+- lago retrieve an invoice
+- findallfees
+- downloadinvoice
+- lago retry generation of a failed invoice
+- findallcustomerpastusage
+- destroycoupon
+- lago void an invoice
+- lago create a coupon
+- createbatchevents
+- destroybillablemetric
+- retryinvoice
+- findallcustomers
+- lago void available credit
+- metering
+- updatebillablemetric
+- lago list usage revenue
+- lago refresh a draft invoice
+- lago send usage events
+- lago delete a coupon
+- lago create a one-off invoice
+- findallappliedcoupons
+- lago list overdue balance
+- lago estimate fees for a pay in advance charge
+- destroycustomer
+- findinvoice
+- lago delete an applied coupon
 - lago finalize a draft invoice
+- lago list all customers
+- findallcreditnotes
+- updateaddon
+- lago retrieve customer current usage
+- billing
+- lago update an invoice
+- lago retrieve a specific event
+- lago list of finalized invoices
+- findallgrossrevenues
+- findfee
+- invoicepaymenturl
+- lago create a customer
+- lago delete a billable metric
+- lago retrieve a specific fee
+- refreshinvoice
+- retrypayment
+- lago list all fees
+- lago retrieve a coupon
+- lago update a credit note
+- createcustomer
+- voidinvoice
+- lago apply a coupon to a customer
+- findallevents
+- lago update an add-on
+- lago retrieve customer past usage
+- createinvoice
+- losedisputeinvoice
+- lago create an add-on
+- findallbillablemetrics
+- lago mark an invoice payment dispute as lost
+- findallinvoices
+- findallinvoicedusages
+- lago retrieve a credit note
+- lago create a billable metric
+- findallcoupons
+- generatecustomercheckouturl
+- createbillablemetric
+- open source
+- findallinvoicecollections
+- lago list all invoices
+- updateinvoice
+- lago list all add-ons
+- findcustomer
+- lago download an invoice pdf
+- lago list mrr
+- lago batch multiple events
+- lago update a fee
+- findcustomercurrentusage
+- lago evaluate an expression for a billable metric
+- lago
+- lago list gross revenue
+- findaddon
+- findbillablemetric
+- lago update a coupon
+- findalladdons
+- lago retrieve an add-on
+- lago estimate amounts for a new credit note
 slug: lago-capability
 source_filename: lago-capability.yaml
 source_heading: Capability Spec

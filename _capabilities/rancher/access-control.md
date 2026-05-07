@@ -25,33 +25,33 @@ personas: []
 provider_name: Rancher
 provider_slug: rancher
 search_terms:
-- list all users.
-- rancher user accounts.
-- rancher
-- users
-- list all role templates.
-- list all rbac role templates defining permissions across clusters and projects.
-- platform engineering
-- multi-cluster
-- list tokens
-- list role templates
-- cluster management
+- create token
 - containers
+- list all rancher users with their enabled status and login information.
+- rancher user accounts.
+- users
+- rbac role templates.
+- multi-cluster
+- list all rbac role templates defining permissions across clusters and projects.
+- create a new api token for programmatic access to the rancher api.
+- list tokens
+- list all users.
+- open source
+- list all role templates.
+- api tokens.
+- access control
 - create a new api token.
 - kubernetes
-- open source
-- rbac role templates.
-- list all api tokens.
-- tokens
-- api tokens.
-- create a new api token for programmatic access to the rancher api.
-- access control
-- rbac
-- suse
 - list users
+- tokens
+- cluster management
+- rbac
+- list all api tokens.
+- list role templates
 - list all api tokens issued in rancher, including their expiry and description.
-- list all rancher users with their enabled status and login information.
-- create token
+- rancher
+- suse
+- platform engineering
 slug: access-control
 source_filename: access-control.yaml
 source_heading: Capability Spec

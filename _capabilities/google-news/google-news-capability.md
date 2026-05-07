@@ -25,22 +25,22 @@ personas: []
 provider_name: Google News RSS
 provider_slug: google-news
 search_terms:
-- google news rss search news
-- news
-- gettopheadlines
-- gettopicheadlines
-- google
-- api
-- google news rss get top headlines
-- google news rss get headlines by topic
-- getlocationheadlines
 - searchnews
-- google news
+- getlocationheadlines
+- google news rss search news
 - headlines
-- rss
 - google news rss get headlines by location
-- media
+- google
+- google news
+- google news rss get top headlines
+- gettopicheadlines
 - aggregation
+- gettopheadlines
+- rss
+- api
+- news
+- google news rss get headlines by topic
+- media
 slug: google-news-capability
 source_filename: google-news-capability.yaml
 source_heading: Capability Spec

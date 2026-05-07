@@ -53,35 +53,35 @@ personas: []
 provider_name: Google People API
 provider_slug: google-contacts
 search_terms:
-- listcontactgroups
-- get a person
-- searchcontacts
-- search contacts
+- deletecontact
 - updatecontactgroup
-- contacts
+- deletecontactgroup
+- createcontact
+- api
 - profiles
 - create a contact group
-- listconnections
-- google
-- update a contact group
-- updatecontact
+- delete a contact group
+- address book
+- get a contact group
+- directory
 - create a contact
-- deletecontactgroup
-- getcontactgroup
-- createcontact
+- google
+- updatecontact
+- listcontactgroups
+- contacts
 - update a contact
 - getperson
-- api
+- update a contact group
 - list contact groups
-- get a contact group
-- delete a contact
-- address book
+- createcontactgroup
 - list contacts
 - people
-- createcontactgroup
-- delete a contact group
-- deletecontact
-- directory
+- delete a contact
+- get a person
+- search contacts
+- listconnections
+- searchcontacts
+- getcontactgroup
 slug: google-contacts-capability
 source_filename: google-contacts-capability.yaml
 source_heading: Capability Spec

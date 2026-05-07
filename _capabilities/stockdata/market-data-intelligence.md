@@ -41,48 +41,48 @@ personas: []
 provider_name: StockData
 provider_slug: stockdata
 search_terms:
-- sentiment analysis
-- get intraday data
-- real-time stock prices for us-listed equities.
-- retrieve historical stock split information. use for adjusting historical price series or understanding share dilution events.
-- market data
-- get dividends
-- get split-adjusted historical intraday ohlcv data at minute or hour intervals. use for chart data, technical analysis, or volatility studies.
-- get stock dividends
-- historical end-of-day stock data.
-- identify trending entities by news volume and sentiment.
-- search entities
-- get historical dividend records. use for calculating total return, dividend yield analysis, or income-focused portfolio research.
-- finance
-- stock market
-- get real-time prices for one or more us-listed stocks.
-- get global financial news with entity-level sentiment scoring. use to gauge market sentiment, find relevant news for a stock, or analyze news impact on securities.
-- get end of day data
-- search for financial entities (stocks, etfs, indices, crypto, currencies) by name, symbol, industry, or country.
-- historical stock split events.
-- get stock splits
-- global financial news with sentiment analysis.
-- get financial news
-- get historical end-of-day ohlcv data at daily to yearly intervals.
-- trending financial entities by news volume.
-- get financial news with entity-level sentiment scoring.
-- get trending entities
-- get stock quote
-- news
-- search for financial entities by name, symbol, type, or industry.
-- get historical end-of-day ohlcv data for long-term trend analysis, backtesting, and performance attribution.
-- financial data
-- get split-adjusted intraday data with minute or hour resolution.
-- get historical eod data
-- get real-time stock prices for us-listed equities. use when a user asks about current stock prices, market cap, or trading volume.
-- algorithmic trading
-- historical dividend payments.
-- retrieve historical dividend payment records.
 - identify the most-talked-about financial entities in recent news. use for market awareness, discovering momentum stocks, or monitoring news flow across sectors.
+- get split-adjusted historical intraday ohlcv data at minute or hour intervals. use for chart data, technical analysis, or volatility studies.
+- get historical end-of-day ohlcv data at daily to yearly intervals.
+- historical end-of-day stock data.
+- get global financial news with entity-level sentiment scoring. use to gauge market sentiment, find relevant news for a stock, or analyze news impact on securities.
+- historical stock split events.
+- historical dividend payments.
 - get intraday adjusted
+- global financial news with sentiment analysis.
+- algorithmic trading
+- sentiment analysis
+- identify trending entities by news volume and sentiment.
+- get stock quote
 - financial entity search.
-- historical intraday ohlcv data.
+- get financial news
+- stock market
+- get stock splits
+- get real-time stock prices for us-listed equities. use when a user asks about current stock prices, market cap, or trading volume.
+- get dividends
+- financial data
+- finance
+- retrieve historical dividend payment records.
+- get financial news with entity-level sentiment scoring.
+- get stock dividends
+- get split-adjusted intraday data with minute or hour resolution.
 - retrieve historical stock split records.
+- retrieve historical stock split information. use for adjusting historical price series or understanding share dilution events.
+- real-time stock prices for us-listed equities.
+- get real-time prices for one or more us-listed stocks.
+- search for financial entities (stocks, etfs, indices, crypto, currencies) by name, symbol, industry, or country.
+- get end of day data
+- trending financial entities by news volume.
+- search for financial entities by name, symbol, type, or industry.
+- market data
+- get intraday data
+- get historical end-of-day ohlcv data for long-term trend analysis, backtesting, and performance attribution.
+- get trending entities
+- get historical dividend records. use for calculating total return, dividend yield analysis, or income-focused portfolio research.
+- historical intraday ohlcv data.
+- get historical eod data
+- news
+- search entities
 slug: market-data-intelligence
 source_filename: market-data-intelligence.yaml
 source_heading: Capability Spec

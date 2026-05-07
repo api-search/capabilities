@@ -17,26 +17,26 @@ personas: []
 provider_name: The New York Times
 provider_slug: the-new-york-times
 search_terms:
-- get full concept metadata including links, taxonomy, and article associations.
-- books
 - movies
-- search nyt controlled vocabulary concepts.
-- publishing
 - new york times
-- get concept by name
-- look up a specific nyt concept by type and name.
-- news
-- look up a specific nyt concept (person, place, organization, or descriptor) by type and exact name to get full metadata including taxonomy, geocodes, and related articles.
-- journalism
-- search the nyt controlled vocabulary by substring to find people (nytd_per), places (nytd_geo), organizations (nytd_org), or descriptors (nytd_des).
-- entities
-- media
-- search concepts
-- search concepts by substring across all concept types.
 - semantic
 - metadata
 - articles
+- publishing
+- get full concept metadata including links, taxonomy, and article associations.
+- journalism
+- search the nyt controlled vocabulary by substring to find people (nytd_per), places (nytd_geo), organizations (nytd_org), or descriptors (nytd_des).
 - knowledge graph
+- search concepts
+- search concepts by substring across all concept types.
+- media
+- look up a specific nyt concept by type and name.
+- entities
+- look up a specific nyt concept (person, place, organization, or descriptor) by type and exact name to get full metadata including taxonomy, geocodes, and related articles.
+- search nyt controlled vocabulary concepts.
+- news
+- books
+- get concept by name
 slug: metadata-enrichment
 source_filename: metadata-enrichment.yaml
 source_heading: Capability Spec

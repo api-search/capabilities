@@ -29,25 +29,25 @@ personas: []
 provider_name: Library of Congress
 provider_slug: library-of-congress
 search_terms:
-- search titles
-- searchtitles
-- library
-- get issue
-- searchpages
-- listnewspapers
-- cultural heritage
-- getissue
-- list newspapers
-- gettitle
-- api
-- search
 - get title
-- of
-- congress
+- getissue
 - legislative
-- federal government
+- api
+- listnewspapers
 - newspapers
+- searchtitles
+- congress
+- get issue
+- gettitle
+- library
+- of
 - search pages
+- cultural heritage
+- search titles
+- list newspapers
+- search
+- federal government
+- searchpages
 slug: library-of-congress-capability
 source_filename: library-of-congress-capability.yaml
 source_heading: Capability Spec

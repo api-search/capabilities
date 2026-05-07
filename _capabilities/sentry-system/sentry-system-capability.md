@@ -57,41 +57,41 @@ personas: []
 provider_name: Sentry
 provider_slug: sentry-system
 search_terms:
-- error tracking
-- real-time monitoring
 - sentry update an issue alert rule
-- apm
-- sentry create a metric alert rule for an organization
-- developer tools
-- deleteissuealertrule
-- createspikeprotectionnotification
-- updateissuealertrule
-- retrievemetricalertrule
-- bug tracking
-- sentry list spike protection notifications
-- listspikeprotectionnotifications
-- sentry retrieve an issue alert rule for a project
-- sentry delete a metric alert rule
-- retrieveissuealertrule
-- application monitoring
-- createmetricalertrule
-- deletemetricalertrule
-- api
-- sentry update a metric alert rule
 - listissuealertrules
-- observability
-- updatemetricalertrule
-- sentry delete an issue alert rule
-- sentry list a project's issue alert rules
+- real-time monitoring
+- api
+- apm
+- application monitoring
+- retrieveissuealertrule
+- bug tracking
+- sentry delete a metric alert rule
 - sentry list an organization's metric alert rules
-- system
+- createmetricalertrule
+- sentry list spike protection notifications
+- updateissuealertrule
+- sentry retrieve an issue alert rule for a project
+- sentry list a project's issue alert rules
+- error tracking
+- developer tools
+- updatemetricalertrule
+- sentry
+- deleteissuealertrule
 - createissuealertrule
+- observability
+- sentry create an issue alert rule for a project
+- listspikeprotectionnotifications
+- deletemetricalertrule
 - performance monitoring
 - sentry create a spike protection notification action
-- sentry
 - listmetricalertrules
+- retrievemetricalertrule
+- system
 - sentry retrieve a metric alert rule for an organization
-- sentry create an issue alert rule for a project
+- sentry create a metric alert rule for an organization
+- createspikeprotectionnotification
+- sentry update a metric alert rule
+- sentry delete an issue alert rule
 slug: sentry-system-capability
 source_filename: sentry-system-capability.yaml
 source_heading: Capability Spec

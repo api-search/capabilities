@@ -42,49 +42,49 @@ provider_name: VKS Integrations
 provider_slug: vks-integrations
 search_terms:
 - list all published vks guidebooks (work instruction manuals). search by name to find instructions for a specific assembly or process.
-- get full details for a manufacturing work order including status, assigned worker, quantities, and timestamps.
-- list operation steps
-- mes
-- manufacturing
-- quality management
-- retrieve production data records for quality management and traceability. includes smart form responses, actual quantities, worker ids, and completion times.
-- create a new work order from an erp or mes system.
-- get guidebook with step-by-step instructions.
-- list production data
-- get work order
-- update work order
-- list work orders
-- erp integration
-- get work instructions
-- work instructions
-- update the status of a work order (planned → in_progress → completed) or reassign it to a different worker.
-- list operational steps for a work order.
-- push a new work order from erp or mes into vks. link it to a guidebook by id, and include part number and expected production quantity.
-- retrieve production data, smart form responses, and traceability records.
-- create work order
-- list work instructions
-- update work order status or assignment.
-- get production data
-- vks
-- operations management
-- list manufacturing work orders. filter by status (planned, in_progress, completed, on_hold) to find active or completed orders.
-- production data and quality records.
-- list guidebooks
-- list all published guidebooks.
-- get a vks guidebook with its complete step-by-step work instructions, smart forms, and media attachments.
-- work instruction guidebooks.
-- production data
 - list operations
-- individual work order.
-- work order operational steps.
-- get work order details.
-- individual guidebook.
-- work orders
-- manufacturing work order management.
-- list the operational steps for a work order and their completion status.
-- get guidebook
+- update the status of a work order (planned → in_progress → completed) or reassign it to a different worker.
+- list operation steps
 - list all work orders, optionally filtered by status.
+- get full details for a manufacturing work order including status, assigned worker, quantities, and timestamps.
+- get work instructions
+- get guidebook with step-by-step instructions.
+- operations management
+- work instruction guidebooks.
+- manufacturing work order management.
+- work instructions
 - update work order status
+- get work order details.
+- update work order
+- list manufacturing work orders. filter by status (planned, in_progress, completed, on_hold) to find active or completed orders.
+- quality management
+- manufacturing
+- retrieve production data, smart form responses, and traceability records.
+- create a new work order from an erp or mes system.
+- work orders
+- get guidebook
+- list work orders
+- individual work order.
+- create work order
+- work order operational steps.
+- individual guidebook.
+- list all published guidebooks.
+- retrieve production data records for quality management and traceability. includes smart form responses, actual quantities, worker ids, and completion times.
+- list production data
+- update work order status or assignment.
+- push a new work order from erp or mes into vks. link it to a guidebook by id, and include part number and expected production quantity.
+- get work order
+- vks
+- list guidebooks
+- list work instructions
+- list operational steps for a work order.
+- production data
+- erp integration
+- production data and quality records.
+- list the operational steps for a work order and their completion status.
+- get a vks guidebook with its complete step-by-step work instructions, smart forms, and media attachments.
+- mes
+- get production data
 slug: manufacturing-operations
 source_filename: manufacturing-operations.yaml
 source_heading: Capability Spec

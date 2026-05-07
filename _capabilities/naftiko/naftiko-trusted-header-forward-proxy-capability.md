@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- mint trusted token
-- api integration
 - governance
 - spec-driven integration
-- ai
-- mcp
-- introspect trusted token
-- capabilities
-- trust
 - proxy
+- introspect trusted token
+- mint trusted token
+- trust
+- ai
+- capabilities
+- api integration
+- mcp
+- naftiko
 slug: naftiko-trusted-header-forward-proxy-capability
 source_filename: naftiko-trusted-header-forward-proxy-capability.yaml
 source_heading: Capability Spec

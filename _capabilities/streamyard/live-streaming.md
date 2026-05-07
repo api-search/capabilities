@@ -49,49 +49,49 @@ personas: []
 provider_name: StreamYard
 provider_slug: streamyard
 search_terms:
-- update broadcast metadata
-- delete a broadcast
-- post-broadcast recordings
-- delete a broadcast permanently
-- create a new live stream or recording session
-- update broadcast
 - list the streaming platforms added to a specific broadcast
-- get recording
-- create broadcast
-- multi-platform streaming destinations
-- list all recordings from completed broadcasts
-- multi-streaming
-- broadcast lifecycle management
-- add a streaming platform (youtube, facebook, linkedin, twitch) to a broadcast
-- delete broadcast
-- recordings
-- single recording access
-- create a new broadcast
-- list all connected streaming platform accounts available for broadcasting
-- single broadcast management
 - video
-- list all broadcasts
-- list all broadcasts in the streamyard account including live and completed
-- update a broadcast title, description, or scheduled time
-- list connected platform accounts
-- get recording download
-- list destinations
-- add broadcast destination
-- broadcasting
-- list recordings
-- list destinations for a broadcast
-- get details and current status of a broadcast
-- get a recording with its time-limited download url
 - list broadcasts
-- get broadcast
-- live streaming
-- connected streaming platform accounts
-- list connected destinations
-- list broadcast destinations
-- get recording details and download url
-- add a streaming destination
-- list all recordings
+- get details and current status of a broadcast
+- list destinations
 - get broadcast details and status
+- connected streaming platform accounts
+- list broadcast destinations
+- create a new live stream or recording session
+- list all broadcasts
+- update broadcast
+- create a new broadcast
+- add broadcast destination
+- get a recording with its time-limited download url
+- list all recordings from completed broadcasts
+- update a broadcast title, description, or scheduled time
+- single recording access
+- delete a broadcast permanently
+- create broadcast
+- get recording download
+- list recordings
+- list all broadcasts in the streamyard account including live and completed
+- broadcast lifecycle management
+- list all connected streaming platform accounts available for broadcasting
+- delete broadcast
+- list destinations for a broadcast
+- list all recordings
+- add a streaming platform (youtube, facebook, linkedin, twitch) to a broadcast
+- delete a broadcast
+- add a streaming destination
+- single broadcast management
+- list connected destinations
+- live streaming
+- broadcasting
+- recordings
+- list connected platform accounts
+- multi-streaming
+- multi-platform streaming destinations
+- post-broadcast recordings
+- get recording details and download url
+- get broadcast
+- update broadcast metadata
+- get recording
 slug: live-streaming
 source_filename: live-streaming.yaml
 source_heading: Capability Spec

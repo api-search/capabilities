@@ -18,16 +18,16 @@ provider_name: DXC Technology
 provider_slug: dxc-technology
 search_terms:
 - list integrations
-- technology
-- platform
+- listintegrations
+- it services
+- dxc
+- enterprise
+- list available services
 - integration
 - api
-- it services
-- list available services
-- listintegrations
-- enterprise
+- technology
+- platform
 - listservices
-- dxc
 slug: dxc-technology-capability
 source_filename: dxc-technology-capability.yaml
 source_heading: Capability Spec

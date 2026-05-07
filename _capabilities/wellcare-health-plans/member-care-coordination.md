@@ -49,64 +49,64 @@ personas: []
 provider_name: wellcare-health-plans
 provider_slug: wellcare-health-plans
 search_terms:
-- get member medications
-- medicare
-- member clinical conditions.
-- fhir
-- get member coverage
-- search providers
+- get wellcare insurance plan details including network and benefit information.
+- get member conditions
 - find care locations near zip
+- search locations
+- get member care encounters
+- search for in-network wellcare providers by name or specialty.
+- get current and historical medication prescriptions for a wellcare member.
+- care coordination
+- search in network providers
+- get member claims history
+- search for in-network hospitals, clinics, and healthcare facilities.
+- managed care
+- get plan information
+- get conditions for a member.
+- member insurance coverage and enrollment.
+- in-network providers.
+- get member active conditions
+- patient access
+- medicare
 - get member claims
 - member active medications.
-- get member encounters
-- search insurance plans.
-- find network facilities
-- get care visit and encounter history for a wellcare member.
-- get conditions for a member.
-- get historical claims and eob data for a wellcare member. supports up to 5 years of history.
-- get wellcare insurance plan details including network and benefit information.
-- care delivery locations.
-- get member profile
-- search locations
-- provider directory
-- healthcare
-- managed care
-- get immunization records and history for a wellcare member.
-- member demographic and identity.
-- find wellcare in-network care delivery locations near a zip code.
-- search plans
-- in-network facilities.
-- get member care encounters
-- in-network providers.
-- get member profile by fhir patient id.
-- get current and historical medication prescriptions for a wellcare member.
-- get plan information
-- get coverage for a member.
-- member care encounters.
-- get member immunization history
-- get active diagnoses and conditions for a wellcare member.
-- search for in-network wellcare providers by name or specialty.
-- get member
-- search in network providers
-- get member active conditions
-- insurance plan information.
-- get member claims history
-- get a wellcare member's demographic profile and contact information.
-- get care encounters for a member.
-- get medication requests for a member.
 - get insurance coverage and enrollment details for a wellcare member.
+- fhir
 - search in-network providers by specialty or name.
-- search for in-network hospitals, clinics, and healthcare facilities.
-- medicaid
-- patient access
-- member claims history.
-- get member conditions
-- search facilities
-- care coordination
-- search in-network hospitals and clinics.
-- get eob claims for a member.
-- member insurance coverage and enrollment.
+- get member immunization history
+- member demographic and identity.
+- get member encounters
+- healthcare
+- care delivery locations.
+- search providers
+- get immunization records and history for a wellcare member.
+- get member coverage
+- member clinical conditions.
+- get active diagnoses and conditions for a wellcare member.
+- member care encounters.
 - find care locations by zip code.
+- get historical claims and eob data for a wellcare member. supports up to 5 years of history.
+- get member medications
+- in-network facilities.
+- get eob claims for a member.
+- insurance plan information.
+- get member
+- search plans
+- get member profile
+- search in-network hospitals and clinics.
+- get care visit and encounter history for a wellcare member.
+- find wellcare in-network care delivery locations near a zip code.
+- get care encounters for a member.
+- get coverage for a member.
+- provider directory
+- get medication requests for a member.
+- get a wellcare member's demographic profile and contact information.
+- search facilities
+- search insurance plans.
+- medicaid
+- member claims history.
+- find network facilities
+- get member profile by fhir patient id.
 slug: member-care-coordination
 source_filename: member-care-coordination.yaml
 source_heading: Capability Spec

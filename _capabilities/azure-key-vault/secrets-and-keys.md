@@ -47,57 +47,57 @@ provider_name: Azure Key Vault
 provider_slug: azure-key-vault
 search_terms:
 - decrypt data using a key.
-- set secret
-- cryptography
-- get key details.
-- delete secret
-- get a secret value.
-- list certificates in the vault.
-- key management
-- encrypt
-- delete a key.
-- create a new certificate.
-- delete a secret.
-- azure
-- verify
-- list secrets.
-- get key
-- list cryptographic keys in the vault.
-- get a key.
-- security
-- certificate management.
-- certificates
-- delete certificate
-- secrets management
-- list certificates
-- delete key
-- list keys.
-- individual key management.
-- list secrets in the vault.
-- set a secret value.
-- cloud security
-- delete a certificate.
-- individual secret management.
-- set a secret.
-- sign
-- key management.
-- decrypt
-- create a new cryptographic key.
-- get secret
-- get certificate
-- list certificates.
-- verify a signature.
-- create certificate
-- get a secret.
 - get a certificate.
-- create key
-- sign a digest using a key.
-- list keys
+- verify
+- delete a secret.
+- delete secret
+- list keys.
+- get secret
+- secrets management
+- create a new cryptographic key.
+- key management
 - list secrets
+- set a secret.
+- delete certificate
+- list certificates.
+- delete a key.
 - secret management.
-- encrypt data using a key.
-- key vault
+- key management.
+- list certificates in the vault.
+- list keys
+- get key
+- decrypt
+- get certificate
+- cloud security
+- list certificates
 - create a key.
+- cryptography
+- individual secret management.
+- delete a certificate.
+- key vault
+- certificate management.
+- list secrets.
+- list cryptographic keys in the vault.
+- get key details.
+- encrypt
+- delete key
+- get a secret.
+- verify a signature.
+- set a secret value.
+- create key
+- list secrets in the vault.
+- certificates
+- sign a digest using a key.
+- azure
+- set secret
+- sign
+- get a key.
+- create a new certificate.
+- encrypt data using a key.
+- security
+- individual key management.
+- get a secret value.
+- create certificate
 slug: secrets-and-keys
 source_filename: secrets-and-keys.yaml
 source_heading: Capability Spec

@@ -49,49 +49,49 @@ personas: []
 provider_name: Todoist
 provider_slug: todoist
 search_terms:
-- comment management
-- task completion
-- label management
-- list all workspaces
-- complete a task
-- list todoist tasks, optionally filtered by project, label, or filter expression
-- list comments on a todoist task
-- create a new task in todoist with content, due date, priority, and labels
-- tasks
-- task management operations
-- create a new project
-- list task comments
-- list tasks
-- get details of a specific todoist task by id
-- create a new todoist project
-- get task
-- project management
-- create project
-- list all projects
-- productivity
-- to-do
-- list all personal labels in todoist
-- workspace management
-- single task operations
-- task management
-- close task
-- get task by id
 - list workspaces
-- todoist
-- mark a todoist task as completed
-- list all labels
-- list projects
-- list labels
-- list all todoist projects
-- list tasks with optional project and label filters
-- create a new task
-- create comment
+- task completion
+- create a new task in todoist with content, due date, priority, and labels
+- workspace management
+- task management
+- list task comments
+- list all workspaces
+- get details of a specific todoist task by id
+- complete a task
 - add a comment to a task
-- add a comment to a todoist task
-- create task
-- collaboration
+- list all personal labels in todoist
 - list all todoist workspaces for the authenticated user
+- get task
+- list all todoist projects
+- create a new todoist project
+- list tasks
+- productivity
+- project management
+- to-do
 - list comments
+- collaboration
+- list todoist tasks, optionally filtered by project, label, or filter expression
+- create project
+- list projects
+- todoist
+- create comment
+- create task
+- tasks
+- create a new project
+- list labels
+- close task
+- single task operations
+- comment management
+- list all labels
+- list all projects
+- list comments on a todoist task
+- create a new task
+- task management operations
+- list tasks with optional project and label filters
+- label management
+- add a comment to a todoist task
+- mark a todoist task as completed
+- get task by id
 slug: task-management
 source_filename: task-management.yaml
 source_heading: Capability Spec

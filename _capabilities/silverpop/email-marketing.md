@@ -69,67 +69,67 @@ personas: []
 provider_name: Silverpop
 provider_slug: silverpop
 search_terms:
-- schedule campaign
-- list all marketing automation programs.
-- list all contact databases.
-- list contacts in a specific database with pagination.
-- get contact
-- single program operations.
-- add a new contact to a silverpop database.
-- get a contact's details.
-- update a contact's attributes and custom fields.
-- digital marketing
-- single contact operations.
-- campaign scheduling.
-- reporting
-- get details of a specific email campaign.
-- email campaign management.
-- update contact
-- campaign open events.
-- get program details and status.
-- remove (opt-out) a contact from a database.
-- add contact
-- add a new contact to a database.
-- list programs
-- get campaign summary
-- remove a contact from a database.
-- get campaign
-- list campaigns
-- get detailed click-through event records for a campaign.
-- get campaign opens
-- get campaign clicks
-- create a new email campaign mailing.
-- marketing automation
-- list all email campaigns.
-- email marketing
-- get details and status of a specific marketing automation program.
-- get campaign click event data.
-- get campaign aggregate performance metrics.
-- get a specific contact's profile and custom fields.
 - list all email campaigns with optional status filtering.
+- get campaign clicks
+- list programs
+- single program operations.
 - get aggregate performance metrics for a sent campaign (opens, clicks, unsubscribes, bounces).
-- get detailed open event records for a campaign.
-- contact management within a database.
-- update a contact's attributes.
-- schedule a campaign for delivery at a specific date and time.
-- list all contact databases (lists) in the silverpop account.
-- list databases
-- contact database management.
-- contact management
-- get campaign open event data.
-- campaign performance summary.
-- list contacts in a database.
-- single campaign operations.
-- create campaign
-- create a new email campaign.
-- schedule a campaign for delivery.
-- list contacts
+- get details and status of a specific marketing automation program.
+- list all contact databases.
 - get campaign details.
-- campaign management
-- remove contact
+- create a new email campaign mailing.
+- get contact
+- digital marketing
+- add a new contact to a silverpop database.
+- campaign performance summary.
+- list contacts in a specific database with pagination.
+- list all email campaigns.
+- contact management
+- email campaign management.
+- get campaign aggregate performance metrics.
 - marketing automation programs.
+- contact management within a database.
+- add a new contact to a database.
+- get detailed open event records for a campaign.
+- schedule a campaign for delivery at a specific date and time.
+- get program details and status.
+- contact database management.
+- list databases
+- remove contact
+- campaign scheduling.
+- get a contact's details.
+- get campaign
+- get a specific contact's profile and custom fields.
+- list campaigns
+- create a new email campaign.
+- remove (opt-out) a contact from a database.
+- get campaign opens
+- add contact
+- get details of a specific email campaign.
+- single campaign operations.
+- campaign management
+- update a contact's attributes.
+- list contacts
+- schedule campaign
+- get campaign summary
+- get detailed click-through event records for a campaign.
+- update a contact's attributes and custom fields.
 - get program
+- list all marketing automation programs.
+- list contacts in a database.
+- create campaign
+- campaign open events.
+- reporting
+- remove a contact from a database.
+- get campaign open event data.
+- update contact
+- list all contact databases (lists) in the silverpop account.
+- get campaign click event data.
+- single contact operations.
+- marketing automation
 - campaign click events.
+- email marketing
+- schedule a campaign for delivery.
 slug: email-marketing
 source_filename: email-marketing.yaml
 source_heading: Capability Spec

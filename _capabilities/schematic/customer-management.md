@@ -41,45 +41,45 @@ personas: []
 provider_name: Schematic
 provider_slug: schematic
 search_terms:
-- create event
-- upsert user
-- list customer companies in schematic
-- track a usage event
-- get plan growth
-- feature management
-- track usage event
-- list users associated with companies
-- submit a usage event for metered feature consumption tracking
-- finops
-- get plan adoption and growth metrics
-- usage tracking
-- create or update a company record using external identifiers (stripe id, salesforce id, etc.)
-- billing
-- customer management
-- customer users
+- feature flags
 - get top features by usage
-- get top features
-- list companies
-- list customer companies
 - entitlements
+- upsert user
+- get plan growth metrics
+- customer company records
+- billing
+- list customer companies
 - saas
+- get plan adoption and growth metrics
+- feature management
+- list customer companies in schematic
+- usage event tracking
+- get plan growth
+- customer users
+- get summary analytics across features, plans, and companies
+- create or update a company record using external identifiers (stripe id, salesforce id, etc.)
+- usage tracking
+- get analytics summary
+- get top features
+- get the most-used product features by usage count
+- upsert company
+- list users
+- list users associated with companies
 - schematic
+- create or update a user
+- create event
+- pricing
 - usage analytics
 - metering
-- create or update a user record
-- get plan growth metrics
-- get analytics summary
-- feature flags
-- upsert company
-- get summary analytics across features, plans, and companies
-- usage event tracking
-- list users
-- pricing
-- get insights summary
-- customer company records
 - create or update a company by external keys
-- get the most-used product features by usage count
-- create or update a user
+- create or update a user record
+- track usage event
+- customer management
+- list companies
+- track a usage event
+- submit a usage event for metered feature consumption tracking
+- get insights summary
+- finops
 slug: customer-management
 source_filename: customer-management.yaml
 source_heading: Capability Spec

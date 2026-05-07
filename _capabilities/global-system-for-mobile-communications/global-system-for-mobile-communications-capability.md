@@ -13,18 +13,18 @@ personas: []
 provider_name: Global System for Mobile Communications
 provider_slug: global-system-for-mobile-communications
 search_terms:
+- global
+- telco
 - getappendpoints
 - networking
-- for
-- mobile
-- global
+- telecommunications
 - system
+- networks
 - global system for mobile communications returns the endpoint of the closest app instance to user device identified in the request.
 - api
-- telecommunications
-- telco
 - standards
-- networks
+- for
+- mobile
 - communications
 slug: global-system-for-mobile-communications-capability
 source_filename: global-system-for-mobile-communications-capability.yaml

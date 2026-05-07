@@ -57,39 +57,39 @@ personas: []
 provider_name: Microsoft Bicep
 provider_slug: microsoft-bicep
 search_terms:
-- microsoft bicep validate a deployment at subscription scope
-- microsoft bicep delete a deployment
-- microsoft bicep create or update a deployment
-- infrastructure as code
-- microsoft bicep get a deployment
-- deployments whatif
 - devops
-- azure
-- microsoft bicep export a deployment template
-- cloud
-- deployment
-- deployments calculatetemplatehash
-- deployments cancel
 - microsoft bicep create or update a deployment at subscription scope
-- deployments listbyresourcegroup
-- bicep
-- microsoft bicep cancel a running deployment
-- deployments createorupdateatsubscriptionscope
-- microsoft bicep calculate template hash
+- deployments validateatsubscriptionscope
+- deployments whatif
 - api
+- arm templates
+- microsoft bicep list deployments by resource group
+- deployments cancel
+- bicep
+- microsoft bicep run what-if analysis
+- microsoft bicep create or update a deployment
+- deployments getatsubscriptionscope
+- deployments calculatetemplatehash
+- deployment
+- microsoft
+- microsoft bicep cancel a running deployment
+- deployments createorupdate
+- deployments createorupdateatsubscriptionscope
+- microsoft bicep get a deployment
+- cloud
+- infrastructure as code
+- deployments get
+- microsoft bicep export a deployment template
+- microsoft bicep validate a deployment template
+- azure
 - deployments delete
 - microsoft bicep get a deployment at subscription scope
-- microsoft bicep list deployments by resource group
-- microsoft bicep validate a deployment template
 - deployments exporttemplate
-- deployments createorupdate
-- deployments getatsubscriptionscope
-- deployments get
-- deployments validateatsubscriptionscope
-- microsoft
-- arm templates
-- microsoft bicep run what-if analysis
+- microsoft bicep delete a deployment
+- microsoft bicep calculate template hash
 - deployments validate
+- microsoft bicep validate a deployment at subscription scope
+- deployments listbyresourcegroup
 slug: microsoft-bicep-capability
 source_filename: microsoft-bicep-capability.yaml
 source_heading: Capability Spec

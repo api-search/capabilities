@@ -37,28 +37,28 @@ personas: []
 provider_name: Google Cloud CDN
 provider_slug: google-cloud-cdn
 search_terms:
-- networking
-- invalidatecache
-- google cloud cdn invalidate cache
-- google cloud cdn create backend service
 - google cloud cdn update backend service
-- patchbackendservice
-- deletebackendservice
-- cloud
-- google
-- listbackendservices
-- google cloud cdn list backend services
-- getbackendservice
-- google cloud cdn get backend service
-- content delivery
-- cdn
-- api
-- caching
-- insertbackendservice
-- google cloud cdn delete backend service
-- google cloud cdn list url maps
-- google cloud
 - listurlmaps
+- content delivery
+- networking
+- api
+- getbackendservice
+- google cloud cdn invalidate cache
+- google
+- google cloud cdn list backend services
+- patchbackendservice
+- google cloud cdn list url maps
+- cloud
+- google cloud cdn get backend service
+- insertbackendservice
+- cdn
+- google cloud
+- deletebackendservice
+- caching
+- listbackendservices
+- google cloud cdn delete backend service
+- invalidatecache
+- google cloud cdn create backend service
 slug: google-cloud-cdn-capability
 source_filename: google-cloud-cdn-capability.yaml
 source_heading: Capability Spec

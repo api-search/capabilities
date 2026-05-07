@@ -45,29 +45,29 @@ personas: []
 provider_name: Pantry
 provider_slug: pantry
 search_terms:
-- deletebasket
-- developer tools
+- get pantry details
+- createpantry
+- api
+- createpublicbasket
 - create a basket
+- deletebasket
 - delete a basket
+- update pantry details
+- developer tools
+- data storage
+- getbasket
 - update basket contents
-- updatepantry
+- updatebasket
+- create a new pantry
 - json
+- deletepantry
+- create a public basket link
+- pantry
+- delete a pantry
 - getpantry
 - get basket contents
-- updatebasket
-- api
-- createpantry
-- deletepantry
-- data storage
-- get pantry details
-- create a new pantry
-- delete a pantry
-- pantry
+- updatepantry
 - createbasket
-- update pantry details
-- getbasket
-- create a public basket link
-- createpublicbasket
 slug: pantry-capability
 source_filename: pantry-capability.yaml
 source_heading: Capability Spec

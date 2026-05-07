@@ -149,79 +149,79 @@ personas: []
 provider_name: Kgateway
 provider_slug: kgateway
 search_terms:
-- deleteaibackend
-- kgateway get a gatewayextension
-- createhttplistenerpolicy
-- kgateway create an httplistenerpolicy
-- createaibackend
-- getdirectresponse
-- deletegatewayparameters
-- kgateway replace an httplistenerpolicy
-- kgateway create an aibackend
+- kgateway replace a trafficpolicy
+- kgateway get an aibackend
+- kgateway delete a gatewayextension
+- listhttplistenerpolicies
+- deletebackend
+- createdirectresponse
 - kgateway delete an aibackend
-- gettrafficpolicy
-- gateways
-- deletegatewayextension
-- kgateway list backend resources
-- kgateway list directresponse resources
-- kgateway list trafficpolicy resources
-- getaibackend
+- api
+- deletedirectresponse
+- kgateway get a directresponse
 - listdirectresponses
-- creategatewayparameters
-- kgateway delete an httplistenerpolicy
+- getdirectresponse
+- kgateway create an httplistenerpolicy
+- gateways
+- kgateway replace a gatewayextension
 - deletehttplistenerpolicy
-- kgateway create a backend
-- createtrafficpolicy
-- listtrafficpolicies
+- kgateway create a directresponse
+- kgateway create a gatewayextension
+- kgateway get a gatewayextension
+- creategatewayparameters
+- kgateway replace an httplistenerpolicy
+- kgateway list aibackend resources
+- getgatewayparameters
+- kgateway replace an aibackend
+- listgatewayparameters
 - replacegatewayparameters
+- deletegatewayextension
+- kgateway create a backend
+- kgateway get a backend
+- deleteaibackend
+- kgateway delete a trafficpolicy
+- kgateway delete gatewayparameters
+- kgateway get a trafficpolicy
+- replacedirectresponse
+- creategatewayextension
+- kgateway list gatewayparameters resources
+- kgateway get an httplistenerpolicy
+- getgatewayextension
+- gethttplistenerpolicy
+- kgateway delete a backend
+- kgateway replace a directresponse
+- replacegatewayextension
+- deletetrafficpolicy
+- gettrafficpolicy
+- kgateway list directresponse resources
+- listaibackends
+- kgateway list gatewayextension resources
+- replacebackend
+- replacehttplistenerpolicy
+- deletegatewayparameters
+- kgateway create an aibackend
+- kgateway replace a backend
+- getaibackend
+- replaceaibackend
+- listtrafficpolicies
+- kgateway create a trafficpolicy
+- kgateway list trafficpolicy resources
+- kgateway delete a directresponse
+- kgateway
+- listgatewayextensions
+- listbackends
+- createaibackend
 - kgateway create gatewayparameters
 - kgateway get gatewayparameters
-- kgateway create a trafficpolicy
-- kgateway list gatewayparameters resources
-- listgatewayparameters
-- listhttplistenerpolicies
-- kgateway get an httplistenerpolicy
-- kgateway replace a gatewayextension
-- deletedirectresponse
-- kgateway delete gatewayparameters
-- kgateway replace a directresponse
-- kgateway get a backend
-- kgateway replace an aibackend
-- replacedirectresponse
-- kgateway delete a gatewayextension
-- createbackend
 - kgateway list httplistenerpolicy resources
-- replacebackend
-- creategatewayextension
-- replacetrafficpolicy
-- kgateway get an aibackend
-- kgateway replace a trafficpolicy
-- createdirectresponse
-- replacehttplistenerpolicy
-- api
-- deletebackend
-- getbackend
-- kgateway get a directresponse
-- getgatewayparameters
-- kgateway list aibackend resources
-- deletetrafficpolicy
-- replaceaibackend
+- createhttplistenerpolicy
+- createtrafficpolicy
 - kgateway replace gatewayparameters
-- kgateway list gatewayextension resources
-- kgateway delete a trafficpolicy
-- kgateway get a trafficpolicy
-- listbackends
-- gethttplistenerpolicy
-- kgateway replace a backend
-- listgatewayextensions
-- listaibackends
-- kgateway delete a backend
-- kgateway create a gatewayextension
-- kgateway delete a directresponse
-- replacegatewayextension
-- kgateway
-- kgateway create a directresponse
-- getgatewayextension
+- kgateway list backend resources
+- kgateway delete an httplistenerpolicy
+- replacetrafficpolicy
+- createbackend
+- getbackend
 slug: kgateway-capability
 source_filename: kgateway-capability.yaml
 source_heading: Capability Spec

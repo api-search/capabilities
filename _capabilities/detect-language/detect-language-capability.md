@@ -21,18 +21,18 @@ personas: []
 provider_name: Detect Language
 provider_slug: detect-language
 search_terms:
-- detectlanguage
-- list supported languages
-- detect language of text
+- translation
 - getuserstatus
+- detectlanguage
+- detection
+- languages
 - get account status
 - language
-- api
-- translation
-- languages
-- detection
-- detect
 - listlanguages
+- detect
+- api
+- detect language of text
+- list supported languages
 slug: detect-language-capability
 source_filename: detect-language-capability.yaml
 source_heading: Capability Spec

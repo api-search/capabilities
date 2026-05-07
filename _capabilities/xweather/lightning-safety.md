@@ -9,21 +9,21 @@ personas: []
 provider_name: Xweather
 provider_slug: xweather
 search_terms:
-- weather
-- data
-- observations
 - lightning
-- maritime
-- company
-- safety officer
-- severe weather
 - operations
-- get_recent_strikes
-- get the lightning threat nowcast for a site.
-- get_threat_nowcast
-- air quality
 - forecasts
+- maritime
 - list recent lightning strikes near a site.
+- data
+- get the lightning threat nowcast for a site.
+- observations
+- safety officer
+- weather
+- get_threat_nowcast
+- company
+- get_recent_strikes
+- severe weather
+- air quality
 slug: lightning-safety
 source_filename: lightning-safety.yaml
 source_heading: Capability Spec

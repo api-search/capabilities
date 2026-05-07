@@ -13,15 +13,15 @@ personas: []
 provider_name: Hyperledger
 provider_slug: hyperledger
 search_terms:
-- smart contracts
-- blockchain
-- jsonrpccall
 - linux foundation
-- api
-- enterprise
-- hyperledger
 - distributed ledger
+- enterprise
+- blockchain
+- api
+- jsonrpccall
 - json-rpc endpoint
+- hyperledger
+- smart contracts
 slug: hyperledger-capability
 source_filename: hyperledger-capability.yaml
 source_heading: Capability Spec

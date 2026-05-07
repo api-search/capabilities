@@ -21,21 +21,21 @@ personas: []
 provider_name: LightBox Zoning API
 provider_slug: lightbox-zoning-api
 search_terms:
-- land use
-- get zoning by geometry
-- lightbox
-- zoning
-- get zoning by parcel id
-- property
-- parcels
-- cre
-- api
-- get zoning by address
-- getzoningbyaddress
-- getzoningbyparcel
-- geospatial
-- real estate
 - getzoningbygeometry
+- getzoningbyparcel
+- get zoning by address
+- land use
+- real estate
+- getzoningbyaddress
+- property
+- get zoning by geometry
+- get zoning by parcel id
+- api
+- geospatial
+- zoning
+- parcels
+- lightbox
+- cre
 slug: lightbox-zoning-api-capability
 source_filename: lightbox-zoning-api-capability.yaml
 source_heading: Capability Spec

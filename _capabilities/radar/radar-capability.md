@@ -109,63 +109,63 @@ personas: []
 provider_name: Radar
 provider_slug: radar
 search_terms:
-- get users
-- get geocode reverse
-- get directions between points
-- get users userid
-- list events
-- ip geocode
-- get search places
-- route optimization
-- get events eventid
-- forward geocode an address
-- get geocode forward
-- put geofences geofenceid
-- get events
-- match a sequence of coordinates to roads
-- delete a user
-- get route match
-- routing
-- get addresses validate
-- get route optimize
-- get route distance
-- get geocode ip
+- retrieve a geofence
+- get geofences geofenceid
 - calculate distance between two points
-- reverse geocode coordinates
-- geofencing
-- track a user location
-- update a geofence
-- get route directions
-- post track
-- validate an address
-- api
+- get search geofences
 - post geofences
 - delete geofences geofenceid
-- radar
-- get route matrix
-- get geofences
-- address autocomplete
-- search places
-- search users
+- reverse geocode coordinates
+- list events
+- geocoding
+- search geofences
+- get route match
+- get geocode forward
+- api
+- get events eventid
+- track a user location
+- delete a user
+- ip geocode
+- get route optimize
+- create a geofence
+- forward geocode an address
+- get search places
 - put users userid
-- get geofences geofenceid
-- location
-- maps
+- get route matrix
+- get users userid
+- search users
+- match a sequence of coordinates to roads
+- get geocode ip
 - get search users
+- get search autocomplete
 - list users
+- get route distance
+- route optimization
+- routing
+- get events
+- location
+- get directions between points
+- retrieve a user
+- maps
+- get addresses validate
+- validate an address
+- address autocomplete
+- post track
+- get route directions
+- put geofences geofenceid
+- get geofences
+- retrieve an event
+- search places
+- list geofences
+- radar
 - delete users userid
 - update a user
-- distance matrix routing
-- retrieve an event
-- create a geofence
-- search geofences
-- list geofences
-- retrieve a geofence
-- get search geofences
+- get geocode reverse
+- update a geofence
+- get users
 - delete a geofence
-- geocoding
-- retrieve a user
-- get search autocomplete
+- geofencing
+- distance matrix routing
 slug: radar-capability
 source_filename: radar-capability.yaml
 source_heading: Capability Spec

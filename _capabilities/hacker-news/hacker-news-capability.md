@@ -49,32 +49,32 @@ personas: []
 provider_name: Hacker News
 provider_slug: hacker-news
 search_terms:
-- getaskstories
-- get new stories
-- getnewstories
-- getupdates
-- technology news
-- developer community
-- get latest show hn stories
+- get latest ask hn stories
+- get best stories
 - y combinator
+- get changed items and profiles
+- api
+- gettopstories
+- get latest show hn stories
+- getnewstories
+- get max item id
+- getuser
+- get user profile
+- technology news
+- getitem
+- getupdates
+- get new stories
 - get latest job stories
+- developer community
+- getaskstories
+- get top stories
+- getmaxitem
+- getshowstories
+- getjobstories
+- get item by id
 - getbeststories
 - news
-- get user profile
-- getmaxitem
-- get item by id
-- api
-- get top stories
-- get changed items and profiles
-- gettopstories
-- getitem
 - hacker
-- getshowstories
-- getuser
-- getjobstories
-- get latest ask hn stories
-- get max item id
-- get best stories
 slug: hacker-news-capability
 source_filename: hacker-news-capability.yaml
 source_heading: Capability Spec

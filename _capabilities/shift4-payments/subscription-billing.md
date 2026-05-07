@@ -9,25 +9,25 @@ personas: []
 provider_name: Shift4 Payments
 provider_slug: shift4-payments
 search_terms:
-- update or cancel a shift4 subscription.
-- create subscription
-- billing
-- commerce
-- create a shift4 subscription for a customer on a plan.
-- create a shift4 plan.
-- shift4
+- create customer
 - plans
 - update subscription
-- create customer
+- update or cancel a shift4 subscription.
+- billing
 - checkout
-- payments
-- subscriptions
-- create plan
-- customers
-- list shift4 plans.
 - create a shift4 customer.
+- subscriptions
+- create a shift4 subscription for a customer on a plan.
+- customers
 - fintech
+- shift4
+- list shift4 plans.
 - list plans
+- payments
+- create plan
+- create a shift4 plan.
+- commerce
+- create subscription
 slug: subscription-billing
 source_filename: subscription-billing.yaml
 source_heading: Capability Spec

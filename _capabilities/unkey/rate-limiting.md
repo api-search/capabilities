@@ -33,44 +33,44 @@ personas: []
 provider_name: Unkey
 provider_slug: unkey
 search_terms:
-- single override operations
-- apply rate limiting to identifiers
-- rate limiting
-- get the rate limit override configuration for a specific identifier
-- identity
-- developer platform
-- list rate limit overrides
-- set override
+- delete rate limit override
+- remove a rate limit override for a specific identifier
 - analytics
-- delete a rate limit override
-- list all rate limit overrides configured for a namespace
-- apply multiple rate limit checks in one request
-- set a custom rate limit override for a specific identifier
+- set override
+- get override
 - api keys
+- unkey
+- authentication
+- list overrides
+- list all rate limit overrides for a namespace
+- delete override
+- apply multi rate limit
+- apply multiple rate limit checks in one request
+- access control
+- apply multiple rate limit checks simultaneously in a single request
+- apply rate limit
+- identity
+- apply a rate limiting check for a user, ip, or custom identifier
 - get rate limit override
 - multi limit
-- apply multiple rate limit checks simultaneously in a single request
+- list all rate limit overrides configured for a namespace
+- apply rate limiting to identifiers
+- list rate limit overrides
+- apply rate limiting check for a single identifier
+- rate limiting
+- set rate limit override
+- delete a rate limit override
+- developer platform
+- set a custom rate limit override for a specific identifier
+- limit
 - api protection
 - rate limit override management
-- set a rate limit override for a specific identifier
-- set rate limit override
-- authentication
-- list all rate limit overrides for a namespace
-- apply multi rate limit
-- access control
-- delete rate limit override
-- get rate limit override for an identifier
-- unkey
-- delete override
-- get override
-- remove a rate limit override for a specific identifier
-- list overrides
+- get the rate limit override configuration for a specific identifier
 - abuse prevention
-- limit
-- apply a rate limiting check for a user, ip, or custom identifier
-- apply rate limit
-- apply rate limiting check for a single identifier
 - batch rate limit checks
+- get rate limit override for an identifier
+- set a rate limit override for a specific identifier
+- single override operations
 slug: rate-limiting
 source_filename: rate-limiting.yaml
 source_heading: Capability Spec

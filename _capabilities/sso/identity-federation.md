@@ -25,36 +25,36 @@ personas: []
 provider_name: SSO
 provider_slug: sso
 search_terms:
-- get public keys for verifying id token signatures
-- identity
-- get jwks
-- openid provider configuration discovery
-- get openid provider configuration metadata
-- exchange an oidc/oauth 2.0 authorization code for access token, id token, and refresh token
-- authenticated user profile claims
-- exchange token
-- exchange an authorization code or refresh token for access and id tokens
-- oauth
-- security
-- get authenticated user profile
-- retrieve the authenticated user's identity claims (name, email, sub, etc.) from the oidc userinfo endpoint
-- get user info
-- retrieve openid provider configuration metadata including endpoints, supported features, and algorithms
-- saml
-- sso
 - get the authenticated user's identity claims from the userinfo endpoint
-- token exchange and refresh
-- exchange authorization code
-- json web key set for signature verification
-- single sign-on
-- authorization
-- identity federation
-- retrieve the openid provider's json web key set (jwks) for verifying id token signatures
+- exchange token
+- saml
 - authentication
-- discover oidc provider configuration
-- get discovery
-- get provider signing keys
+- sso
 - oidc
+- exchange an authorization code or refresh token for access and id tokens
+- get user info
+- discover oidc provider configuration
+- openid provider configuration discovery
+- exchange authorization code
+- identity
+- identity federation
+- get public keys for verifying id token signatures
+- authorization
+- retrieve the openid provider's json web key set (jwks) for verifying id token signatures
+- token exchange and refresh
+- exchange an oidc/oauth 2.0 authorization code for access token, id token, and refresh token
+- json web key set for signature verification
+- get openid provider configuration metadata
+- retrieve openid provider configuration metadata including endpoints, supported features, and algorithms
+- get discovery
+- get jwks
+- get provider signing keys
+- authenticated user profile claims
+- oauth
+- single sign-on
+- security
+- retrieve the authenticated user's identity claims (name, email, sub, etc.) from the oidc userinfo endpoint
+- get authenticated user profile
 slug: identity-federation
 source_filename: identity-federation.yaml
 source_heading: Capability Spec

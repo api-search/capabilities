@@ -77,46 +77,46 @@ personas: []
 provider_name: IGDB
 provider_slug: igdb
 search_terms:
-- post age ratings
-- query franchises
-- post genres
+- post platforms
 - query keywords
-- query platforms
-- search across igdb entities
-- query companies
-- query genres
-- query game covers
-- post screenshots
-- post involved companies
-- post games
-- query age ratings
-- query themes
-- post companies
-- post search
+- post age ratings
+- query release dates
 - post collections
+- query involved companies
+- query collections
+- api
 - post game modes
+- post themes
+- post artworks
 - post release dates
-- gaming
+- query platforms
+- post genres
+- query age ratings
+- post companies
+- post involved companies
+- query franchises
 - query artworks
 - query game modes
-- post websites
-- query involved companies
-- api
-- query screenshots
-- post covers
-- post franchises
-- post artworks
-- query game websites
-- entertainment
+- query themes
 - game database
-- igdb
+- post franchises
+- query game covers
+- query screenshots
 - post keywords
 - query games
-- post themes
+- igdb
+- post games
+- gaming
+- query companies
 - video games
-- query release dates
-- post platforms
-- query collections
+- entertainment
+- post websites
+- search across igdb entities
+- query genres
+- post search
+- post covers
+- query game websites
+- post screenshots
 slug: igdb-capability
 source_filename: igdb-capability.yaml
 source_heading: Capability Spec

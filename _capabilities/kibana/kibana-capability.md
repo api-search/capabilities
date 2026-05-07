@@ -249,132 +249,132 @@ personas: []
 provider_name: Kibana
 provider_slug: kibana
 search_terms:
-- get actions connectors
-- get agent builder plugins
-- post alerting rule id enable
-- kibana
-- get connector information
-- enable a rule
-- post alerting rule id update api key
-- analytics
-- get agent builder skills skillid
-- list conversations
-- put agent builder tools toolid
-- rename attachment
-- post agent builder converse async
-- alerting
-- put actions connector id
-- update a tool
-- post alerting rule id snooze schedule
-- send chat message (streaming)
-- disable a rule
-- update conversation attachment
-- unmute an alert
-- '**spaces method and path for this operation:** <div><span class="operation-verb get">get</span>&nbsp;<span class="operation-path">/s/{space_id}/api/actions/connector/_oauth_callback_script</span></div> refer to [spaces](https://www.elastic.'
-- create a tool
-- api
-- observability
-- get agent consumption data
-- post alerting rule id disable
-- post agent builder agents
-- unmute all alerts
-- getruletypes
-- get agent builder tools toolid
-- post agent builder plugins install
-- run a connector
-- post alerting rule rule id alert alert id mute
-- delete a skill
-- put agent builder conversations conversation id
-- delete agent builder skills skillid
-- get actions connector types
-- delete agent builder agents id
-- delete an agent
-- delete agent builder tools toolid
-- delete conversation attachment
-- handle oauth callback
-- delete conversation by id
-- list tools
-- list conversation attachments
-- get rule details
-- list agents
-- post alerting rule id
-- list skills
-- get a plugin by id
-- get the rule types
-- get agent builder agents
-- get the alerting framework health
-- monitoring
-- list plugins
-- create a skill
-- post alerting rule id unmute all
-- put alerting rule id
-- post alerting rule rule id alert alert id unmute
-- get actions connector oauth callback script
 - get alerting rule id
-- mcp server
-- get a2a agent card
-- get agent builder conversations
-- get agent builder tools
-- get agent builder agents id
-- delete agent builder plugins pluginid
-- update attachment origin
 - delete a rule
-- delete a plugin
-- post agent builder tools
-- check attachment staleness
-- get actions connector oauth callback
-- update the api key for a rule
-- patch agent builder conversations conversation i
-- dashboards
+- api
 - get agent builder conversations conversation id
+- put agent builder tools toolid
+- get an agent by id
+- delete a connector
+- update a connector
+- put alerting rule id
+- enable a rule
+- mute all alerts
+- get connector types
+- post alerting rule id update api key
+- post alerting rule rule id alert alert id unmute
+- post agent builder agents
+- create a connector
+- post agent builder a2a agentid
+- patch agent builder conversations conversation i
+- get agent builder tools toolid
+- kibana
+- getalertinghealth
+- delete conversation attachment
+- get agent builder conversations
+- update a tool
+- get a plugin by id
+- send chat message (streaming)
+- alerting
+- post agent builder mcp
+- post alerting rule id mute all
+- visualization
+- unmute an alert
+- run a connector
+- list plugins
+- post alerting rule id unmute all
 - restore deleted attachment
 - put agent builder agents id
-- update a skill
-- post alerting rule id mute all
-- create a rule
-- post agent builder conversations conversation id
-- delete a tool
-- delete actions connector id
-- get all connectors
-- post agent builder skills
-- delete agent builder conversations conversation
-- update a rule
-- install a plugin
-- post actions connector id execute
-- post agent builder tools execute
-- post agent builder agents agent id consumption
-- post agent builder mcp
-- update a connector
-- delete a connector
-- create an agent
-- schedule a snooze for the rule
-- create a connector
-- get a tool by id
-- post agent builder converse
-- update an agent
-- visualization
-- get agent builder conversations conversation id
-- delete alerting rule id
-- mute all alerts
-- run a tool
+- get actions connectors
 - send a2a task
-- get connector types
-- get actions connector id
-- getalertinghealth
-- elastic stack
-- get conversation by id
-- get agent builder plugins pluginid
-- get a skill by id
-- get agent builder a2a agentid json
-- post actions connector id
-- get an agent by id
-- mute an alert
-- create conversation attachment
-- get agent builder skills
-- put agent builder skills skillid
+- get the rule types
+- run a tool
+- get actions connector oauth callback script
+- delete a tool
+- list conversations
+- install a plugin
+- update an agent
+- update the api key for a rule
 - send chat message
+- get the alerting framework health
+- elastic stack
+- put agent builder skills skillid
+- delete agent builder plugins pluginid
+- get actions connector id
+- get a tool by id
+- list agents
+- post agent builder converse async
 - logging
-- post agent builder a2a agentid
+- get conversation by id
+- put agent builder conversations conversation id
+- get actions connector oauth callback
+- get agent builder skills skillid
+- update conversation attachment
+- get agent builder skills
+- delete a plugin
+- delete a skill
+- post agent builder plugins install
+- delete an agent
+- list tools
+- monitoring
+- post actions connector id execute
+- get connector information
+- delete conversation by id
+- update a skill
+- observability
+- disable a rule
+- unmute all alerts
+- get rule details
+- get a skill by id
+- create a skill
+- delete agent builder agents id
+- post agent builder conversations conversation id
+- get agent builder a2a agentid json
+- list conversation attachments
+- post agent builder skills
+- schedule a snooze for the rule
+- get actions connector types
+- analytics
+- mute an alert
+- post alerting rule id
+- post agent builder converse
+- post alerting rule id disable
+- post agent builder tools
+- rename attachment
+- get a2a agent card
+- delete agent builder skills skillid
+- mcp server
+- get agent builder plugins pluginid
+- create an agent
+- put actions connector id
+- handle oauth callback
+- post agent builder tools execute
+- post actions connector id
+- getruletypes
+- post agent builder agents agent id consumption
+- delete agent builder conversations conversation
+- get agent builder tools
+- '**spaces method and path for this operation:** <div><span class="operation-verb get">get</span>&nbsp;<span class="operation-path">/s/{space_id}/api/actions/connector/_oauth_callback_script</span></div> refer to [spaces](https://www.elastic.'
+- create a tool
+- post alerting rule id enable
+- post alerting rule rule id alert alert id mute
+- dashboards
+- get agent builder conversations conversation id
+- update attachment origin
+- get all connectors
+- post alerting rule id snooze schedule
+- get agent consumption data
+- get agent builder agents id
+- get agent builder plugins
+- create a rule
+- create conversation attachment
+- get agent builder agents
+- list skills
+- check attachment staleness
+- delete alerting rule id
+- update a rule
+- delete agent builder tools toolid
+- delete actions connector id
 slug: kibana-capability
 source_filename: kibana-capability.yaml
 source_heading: Capability Spec

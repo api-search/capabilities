@@ -65,59 +65,59 @@ personas: []
 provider_name: Youtube
 provider_slug: youtube
 search_terms:
-- add moderator
-- delete a broadcast
-- remove a live chat moderator
-- update broadcast settings
-- social
-- create stream
-- transition broadcast
-- update stream settings
-- manage live chat messages
-- delete a live broadcast
-- manage live broadcasts
-- update broadcast
-- list streams
-- create a new live broadcast event
-- bind broadcast
-- create broadcast
-- google
-- videos
-- list live streams
-- delete chat message
-- list messages in live chat
-- bind a broadcast to a video stream
-- send a live chat message
-- list moderators
 - list chat messages
+- streaming
+- video
+- list broadcasts
+- delete a live stream
+- list live chat messages
+- delete a live chat message
+- delete a live broadcast
+- delete chat message
+- update broadcast
+- youtube
+- delete stream
+- add a live chat moderator
+- remove moderator
+- list youtube live broadcasts
+- list streams
+- google
+- create a new live broadcast event
+- create broadcast
+- bind broadcast
+- live chat
+- list messages in live chat
+- create stream
+- manage live broadcasts
+- list moderators
+- send chat message
+- manage live video streams
 - delete broadcast
+- list live streams
+- bind a broadcast to a video stream
 - update live broadcast settings
 - transition broadcast status (testing, live, complete)
-- live chat
-- delete a live stream
 - list live video streams
-- manage live chat moderators
-- list youtube live broadcasts
-- update stream
-- video
-- youtube
-- add a live chat moderator
-- media
-- manage live video streams
-- list live chat messages
-- list live chat moderators
 - send a message to live chat
-- delete stream
-- delete a live chat message
-- create a new live stream
-- broadcasting
-- create a new live video stream
-- remove moderator
-- streaming
+- manage live chat messages
+- delete a broadcast
+- media
+- update stream settings
+- videos
 - list live broadcasts
-- list broadcasts
+- create a new live stream
+- update broadcast settings
 - live streaming
-- send chat message
+- broadcasting
+- list live chat moderators
+- update stream
+- transition broadcast
+- remove a live chat moderator
+- send a live chat message
+- manage live chat moderators
+- create a new live video stream
+- social
+- add moderator
 - create a new live broadcast
 slug: live-streaming
 source_filename: live-streaming.yaml

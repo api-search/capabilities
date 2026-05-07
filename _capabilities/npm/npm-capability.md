@@ -29,24 +29,24 @@ personas: []
 provider_name: npm
 provider_slug: npm
 search_terms:
+- delete a webhook
 - npm
-- createhook
-- node.js
-- update a webhook
-- package management
-- javascript
-- updatehook
-- packages
-- api
-- security
-- get a webhook
-- create a webhook
-- listhooks
-- gethook
 - list webhooks
 - deletehook
 - registry
-- delete a webhook
+- updatehook
+- javascript
+- packages
+- gethook
+- get a webhook
+- update a webhook
+- security
+- api
+- createhook
+- package management
+- node.js
+- create a webhook
+- listhooks
 slug: npm-capability
 source_filename: npm-capability.yaml
 source_heading: Capability Spec

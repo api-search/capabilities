@@ -57,38 +57,38 @@ personas: []
 provider_name: Electricity Maps
 provider_slug: electricity-maps
 search_terms:
-- get fossil-only carbon intensity
-- sustainability
 - get carbon intensity signal
-- carbon intensity
-- get renewable percentage
-- getrenewablepercentage
+- locate a zone by coordinates
 - getcarbonintensity
-- getelectricitymix
+- carbon intensity
+- getrenewablepercentage
 - grid data
-- locatezone
-- get net load
-- getdayaheadprice
-- climate
+- getelectricitymix
 - api
-- gettotalload
+- listzones
+- get renewable percentage
+- electricity
+- getdayaheadprice
 - getelectricityflows
+- get electricity mix
+- getcarbonfreepercentage
+- list available zones
+- getfossilonlycarbonintensity
+- locatezone
 - getnetload
+- get total load
+- get electricity flows
+- gettotalload
 - maps
-- get day-ahead price
 - energy
 - listdatacenters
-- get total load
+- climate
 - list available data centers
-- electricity
-- listzones
-- get electricity flows
-- locate a zone by coordinates
-- list available zones
+- sustainability
+- get fossil-only carbon intensity
 - get carbon-free percentage
-- getcarbonfreepercentage
-- get electricity mix
-- getfossilonlycarbonintensity
+- get day-ahead price
+- get net load
 slug: electricity-maps-capability
 source_filename: electricity-maps-capability.yaml
 source_heading: Capability Spec

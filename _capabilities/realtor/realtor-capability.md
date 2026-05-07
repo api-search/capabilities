@@ -41,24 +41,24 @@ personas: []
 provider_name: realtor
 provider_slug: realtor
 search_terms:
+- list similar rental homes
+- getpropertydetail
+- get property detail
+- realtor
+- list properties by mls
+- listsimilarrentalhomes
+- list similar homes for sale
 - listproperties
 - listagents
-- listsimilarrentalhomes
-- list similar rental homes
 - auto-complete locations
-- autocompletelocations
-- get mortgage rates
-- api
-- getmortgagerates
-- list similar homes for sale
-- listpropertiesbymls
-- list properties by mls
-- realtor
-- get property detail
-- listsimilarhomes
 - list agents
-- getpropertydetail
+- autocompletelocations
+- getmortgagerates
+- api
+- get mortgage rates
 - list properties
+- listsimilarhomes
+- listpropertiesbymls
 slug: realtor-capability
 source_filename: realtor-capability.yaml
 source_heading: Capability Spec

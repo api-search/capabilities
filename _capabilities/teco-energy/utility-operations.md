@@ -37,50 +37,50 @@ personas: []
 provider_name: TECO Energy
 provider_slug: teco-energy
 search_terms:
-- get usage history
-- get outage
-- list service requests
-- a specific tampa electric outage event.
-- list active tampa electric power outages. filter by county or zip code.
-- get details for a specific tampa electric outage.
-- get energy usage history with date range and interval filtering.
-- list service requests for a customer account.
-- teco energy
-- submit a new service request (start service, stop service, meter read, etc.) for a tampa electric account.
-- utility operations
-- get detailed status and restoration time for a tampa electric outage.
-- energy usage history for a customer account.
-- tampa bay
-- billing
-- tampa electric
-- energy usage
-- smart grid
-- report outage
-- get geographic outage map data for tampa electric service territory.
-- report a power outage at a tampa electric service address.
-- list bills
-- create service request
-- tampa electric customer account.
-- get outage map
-- billing history for a customer account.
-- list billing history for a tampa electric customer account.
-- electric
-- submit a new service request.
-- get historical energy consumption data for a tampa electric account.
-- list active tampa electric outages filtered by county or zip.
-- energy
-- get tampa electric customer account details including balance and service info.
-- list open and historical service requests for a tampa electric account.
-- active power outages in the tampa electric service territory.
-- list outages
-- service requests for a customer account.
-- utilities
-- customer service
 - get account
-- natural gas
+- list service requests for a customer account.
+- energy usage history for a customer account.
+- service requests for a customer account.
 - outage management
+- get tampa electric customer account details including balance and service info.
+- a specific tampa electric outage event.
+- billing
+- active power outages in the tampa electric service territory.
+- natural gas
+- list active tampa electric outages filtered by county or zip.
+- get detailed status and restoration time for a tampa electric outage.
+- smart grid
+- list outages
+- tampa electric customer account.
+- create service request
+- tampa electric
+- get details for a specific tampa electric outage.
+- list open and historical service requests for a tampa electric account.
+- report a power outage at a tampa electric service address.
+- utilities
+- tampa bay
+- teco energy
+- get energy usage history with date range and interval filtering.
 - get customer account details and current balance.
+- get geographic outage map data for tampa electric service territory.
+- list service requests
+- list billing history for a tampa electric customer account.
+- get historical energy consumption data for a tampa electric account.
+- electric
+- energy
+- list bills
+- submit a new service request.
+- energy usage
+- utility operations
+- billing history for a customer account.
 - list billing history for a customer account.
+- customer service
+- get outage
+- get outage map
+- submit a new service request (start service, stop service, meter read, etc.) for a tampa electric account.
+- report outage
+- list active tampa electric power outages. filter by county or zip code.
+- get usage history
 slug: utility-operations
 source_filename: utility-operations.yaml
 source_heading: Capability Spec

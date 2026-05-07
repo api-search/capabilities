@@ -41,30 +41,30 @@ personas: []
 provider_name: Azure DevOps
 provider_slug: microsoft-azure-devops
 search_terms:
-- azure devops get package details
-- feeds delete
 - feeds create
-- devops
-- azure
-- azure devops create a feed
-- azure devops list feeds
-- azure devops delete a feed
-- packages list
-- project management
-- packages get
-- agile
-- azure devops delete a package version
-- ci/cd
-- packageversions delete
-- api
-- azure devops update a feed
 - azure devops list packages in a feed
-- version control
-- feeds get
-- feeds update
-- feeds list
+- azure devops create a feed
+- devops
+- azure devops delete a feed
+- ci/cd
+- api
+- azure devops get package details
 - azure devops get a feed
+- feeds get
+- project management
 - microsoft
+- packages get
+- packageversions delete
+- azure devops list feeds
+- packages list
+- azure devops delete a package version
+- agile
+- azure devops update a feed
+- version control
+- azure
+- feeds delete
+- feeds list
+- feeds update
 slug: microsoft-azure-devops-capability
 source_filename: microsoft-azure-devops-capability.yaml
 source_heading: Capability Spec

@@ -65,41 +65,41 @@ personas: []
 provider_name: Azure Durable Functions
 provider_slug: durable-functions
 search_terms:
-- api composition
-- purge multiple instance histories
-- resume instance
-- startorchestration
-- resumeinstance
-- getinstancestatus
-- startorchestrationwithid
+- signal entity
+- list entities
+- purgeinstance
+- raise event
+- get instance status
 - purge single instance history
+- getentity
+- signalentity
+- api
+- rewind instance (preview)
+- listentities
+- api composition
+- raiseevent
+- list instances
 - start orchestration
 - rewindinstance
-- getentity
-- durable execution
-- workflow
-- purgeinstance
-- suspend instance
-- serverless orchestration
-- listentities
-- list entities
-- terminate instance
-- list instances
-- raiseevent
-- start orchestration with explicit instance id
-- functions
-- raise event
-- rewind instance (preview)
-- api
-- get instance status
+- startorchestration
 - get entity
-- durable
-- listinstances
-- signalentity
+- terminate instance
+- workflow
 - terminateinstance
-- signal entity
-- purgeinstances
+- resume instance
 - suspendinstance
+- durable
+- durable execution
+- startorchestrationwithid
+- getinstancestatus
+- start orchestration with explicit instance id
+- purge multiple instance histories
+- suspend instance
+- listinstances
+- purgeinstances
+- serverless orchestration
+- functions
+- resumeinstance
 slug: durable-functions-capability
 source_filename: durable-functions-capability.yaml
 source_heading: Capability Spec

@@ -65,69 +65,69 @@ personas: []
 provider_name: Restate
 provider_slug: restate
 search_terms:
-- kill invocation
-- get service metadata and handlers
-- purge completed invocations
-- service registry and metadata
-- distributed systems
-- services
-- get metadata and handler list for a specific restate service
-- list all kafka subscriptions
-- durable execution
-- list all registered service deployments
-- get deployment
-- cluster health and version
-- remove a service deployment from restate
+- force kill a restate invocation (immediate termination)
+- purge a completed invocation
 - delete deployment
+- list services
+- operations
+- get deployment
+- get service metadata and handlers
+- kill invocation
+- list service handlers
+- list all kafka subscriptions
+- distributed systems
+- get metadata and handler list for a specific restate service
+- purge invocation
+- cancel an in-flight restate invocation by id
+- cancel invocation
+- remove a service deployment from restate
+- register deployment
+- cancel an in-flight invocation
+- list all registered services
+- delete a deployment
 - create a kafka subscription
+- service registry and metadata
+- forcefully kill an invocation
+- services
+- force kill invocations
+- cluster health and version
+- orchestration
+- invocations
+- get cluster health status
+- check the health status of the restate cluster
+- purge a completed restate invocation and free its associated state
+- list all kafka subscriptions configured in restate
+- create a kafka subscription to trigger restate handlers on incoming messages
+- get deployment details
+- deployments
+- get service
+- register a new service endpoint with restate so it can receive invocations
+- individual service management
+- list subscriptions
 - list all restate service deployments registered with the cluster
 - get details and services of a specific restate deployment
-- cancel an in-flight restate invocation by id
-- create a kafka subscription to trigger restate handlers on incoming messages
-- forcefully kill an invocation
-- deployments
-- delete a deployment
-- create subscription
-- register a new service endpoint with restate so it can receive invocations
-- list services
-- register a new service deployment
-- modify service
-- list deployments
-- individual service management
-- cancel an in-flight invocation
-- operations
-- invocations
-- get deployment details
-- list subscriptions
-- purge a completed restate invocation and free its associated state
-- list service handlers
-- force kill a restate invocation (immediate termination)
-- get cluster health status
-- orchestration
-- list all registered services
-- get service
-- force kill invocations
+- list all handlers for a service
+- service handler inspection
+- list all registered service deployments
+- cluster health
+- modify service configuration
+- durable execution
+- update restate service configuration such as public access
+- create deployment
+- list all services registered in restate
 - workflows
 - register and manage service deployments
-- list all kafka subscriptions configured in restate
-- list all services registered in restate
-- cancel active invocations
-- list all durable handlers for a restate service
-- create deployment
-- modify service configuration
-- purge invocation
-- register deployment
-- purge a completed invocation
 - individual deployment management
-- list all handlers for a service
-- update restate service configuration such as public access
+- purge completed invocations
 - kafka subscriptions for event-driven invocations
-- kafka
-- check the health status of the restate cluster
 - microservices
-- service handler inspection
-- cluster health
-- cancel invocation
+- register a new service deployment
+- modify service
+- kafka
+- create subscription
+- list all durable handlers for a restate service
+- list deployments
+- cancel active invocations
 slug: service-operations
 source_filename: service-operations.yaml
 source_heading: Capability Spec

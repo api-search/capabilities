@@ -53,38 +53,38 @@ personas: []
 provider_name: Federal Emergency Management Agency
 provider_slug: federal-emergency-management-agency
 search_terms:
-- disasters
-- listdeclarationdenials
-- hazard mitigation
 - list individual assistance housing registrants for large disasters
+- listdeclarationdenials
+- listhazardmitigationgrantprogramdisastersummarie
+- list nfip community status book entries
+- hazard mitigation
+- list openfema datasets
+- federal
 - listfimanfippolicies
 - listnfipcommunitystatusbook
-- list nfip claims
-- listfemaregions
-- list nfip community status book entries
-- list fema regions
-- list fema web disaster declarations
-- list nfip policies
-- list openfema datasets
-- api
-- list hazard mitigation grant program disaster summaries
-- listhazardmitigationgrantprogramdisastersummarie
-- listindividualassistancehousingregistrants
-- list declaration denials
-- emergencies
-- listdisasterdeclarationssummaries
-- management
-- listfemawebdisasterdeclarations
-- list public assistance funded project details
-- listopenfemadatasets
-- federal government
-- agency
-- flood insurance
 - list disaster declarations summaries
-- federal
+- listdisasterdeclarationssummaries
+- list fema web disaster declarations
+- api
+- agency
+- disasters
+- list nfip policies
+- list hazard mitigation grant program disaster summaries
+- list public assistance funded project details
+- listfemaregions
+- listindividualassistancehousingregistrants
 - emergency
+- flood insurance
+- list nfip claims
+- list fema regions
+- management
+- emergencies
+- list declaration denials
 - listpublicassistancefundedprojectsdetails
+- listopenfemadatasets
 - listfimanfipclaims
+- listfemawebdisasterdeclarations
+- federal government
 slug: federal-emergency-management-agency-capability
 source_filename: federal-emergency-management-agency-capability.yaml
 source_heading: Capability Spec

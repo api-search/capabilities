@@ -33,39 +33,39 @@ personas: []
 provider_name: Vendr
 provider_slug: vendr
 search_terms:
-- get a fair price estimate and negotiation insights for a software purchase based on 200,000+ real contracts
-- negotiation
-- delete event subscription
-- get price estimate
-- list event subscriptions
-- subscribe to procurement workflow events (deal closed, workflow updated, pricing changed)
-- get fair price estimate and negotiation insights
-- create purchase scope
-- get price benchmark
-- unsubscribe from events
-- remove an event subscription
-- remove a procurement event subscription
-- search for software products and vendors
-- subscribe to procurement workflow events
-- parse natural language purchase requirements (e.g. '10 seats of slack pro annual') into structured scope
-- saas
 - parse purchase scope
-- list all active procurement workflow event subscriptions
-- software spend management
-- procurement workflow event subscriptions
-- define and structure purchase requirements
-- search for software products and vendors in the vendr catalog
-- list all active event subscriptions
-- manage individual event subscriptions
-- subscribe to events
-- create event subscription
-- pricing
-- fair price estimates based on real contract data
-- vendr
-- parse natural language purchase requirements into structured scope
-- search products
+- list event subscriptions
 - browse and search software products in the vendr catalog
 - procurement
+- negotiation
+- search for software products and vendors
+- get price benchmark
+- search for software products and vendors in the vendr catalog
+- get a fair price estimate and negotiation insights for a software purchase based on 200,000+ real contracts
+- saas
+- list all active event subscriptions
+- manage individual event subscriptions
+- create event subscription
+- fair price estimates based on real contract data
+- vendr
+- list all active procurement workflow event subscriptions
+- get fair price estimate and negotiation insights
+- get price estimate
+- delete event subscription
+- define and structure purchase requirements
+- pricing
+- remove a procurement event subscription
+- parse natural language purchase requirements (e.g. '10 seats of slack pro annual') into structured scope
+- subscribe to events
+- software spend management
+- subscribe to procurement workflow events
+- parse natural language purchase requirements into structured scope
+- procurement workflow event subscriptions
+- remove an event subscription
+- unsubscribe from events
+- subscribe to procurement workflow events (deal closed, workflow updated, pricing changed)
+- create purchase scope
+- search products
 slug: saas-procurement-intelligence
 source_filename: saas-procurement-intelligence.yaml
 source_heading: Capability Spec

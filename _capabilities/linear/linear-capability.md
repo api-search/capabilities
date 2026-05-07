@@ -17,12 +17,12 @@ personas: []
 provider_name: linear
 provider_slug: linear
 search_terms:
-- executegraphqlquery
-- execute a graphql query or mutation
-- uploadfile
-- api
-- linear
 - upload a file attachment
+- uploadfile
+- linear
+- execute a graphql query or mutation
+- api
+- executegraphqlquery
 slug: linear-capability
 source_filename: linear-capability.yaml
 source_heading: Capability Spec

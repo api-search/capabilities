@@ -89,53 +89,53 @@ personas: []
 provider_name: Mailjet
 provider_slug: mailjet
 search_terms:
-- send a campaign draft
 - get sending statistic counters
-- createcontactslist
 - listcontacts
-- getmessagehistory
-- createcampaigndraft
-- listtemplates
-- get a contact
-- marketing email
-- list templates
-- smtp
-- listcampaigndrafts
-- listsenders
-- createsender
-- updatecontact
-- create a contact
+- list sender addresses
+- email delivery
 - deletecontactslist
-- getcontact
-- list campaigns
-- sendemail
-- delete a contact list
-- getstatcounters
-- mailjet
+- marketing email
 - createcontact
-- getcontactslist
-- update a contact
 - create a sender address
 - api
-- create a campaign draft
-- listcampaigns
-- createtemplate
-- create a contact list
-- bulk add or remove contacts in a list
-- transactional email
-- email delivery
-- send transactional emails (v3.1)
-- managemanycontacts
-- email
+- list templates
 - list contact lists
-- list campaign drafts
-- list contacts
-- sendcampaigndraft
-- get the event history of a message
-- get a contact list
-- create a template
+- create a campaign draft
+- listsenders
 - listcontactslists
-- list sender addresses
+- getmessagehistory
+- create a contact
+- getcontact
+- get the event history of a message
+- mailjet
+- updatecontact
+- send transactional emails (v3.1)
+- list campaigns
+- update a contact
+- managemanycontacts
+- send a campaign draft
+- transactional email
+- createcampaigndraft
+- list campaign drafts
+- createsender
+- email
+- getcontactslist
+- list contacts
+- createcontactslist
+- create a template
+- get a contact list
+- bulk add or remove contacts in a list
+- createtemplate
+- listcampaigns
+- listtemplates
+- getstatcounters
+- listcampaigndrafts
+- get a contact
+- delete a contact list
+- smtp
+- sendcampaigndraft
+- create a contact list
+- sendemail
 slug: mailjet-capability
 source_filename: mailjet-capability.yaml
 source_heading: Capability Spec

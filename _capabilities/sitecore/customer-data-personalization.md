@@ -41,50 +41,50 @@ personas: []
 provider_name: sitecore
 provider_slug: sitecore
 search_terms:
-- get a specific guest profile by reference
-- list guest orders
-- list flows
-- personalize create connection
-- experiments
-- list orders for a specific guest
-- list orders for a specific guest in sitecore cdp
-- manage personalize decision models
 - update guest
-- guest data
-- manage personalize external connections
-- cdp list guests
-- customer data platform
-- get a guest profile by reference
-- list guests
-- create guest
-- list sitecore personalize flow definitions (experiments and experiences)
-- list personalization flow definitions
-- decisioning
-- personalize list decision models
-- cdp update guest
+- list flows
 - get guest
-- list guest profiles in sitecore cdp
-- list sitecore personalize decision models
-- manage personalize flow definitions
-- sitecore
-- cdp list guest orders
-- list decision models
-- personalize list flows
+- get a specific guest profile by reference
+- manage a specific guest profile
 - manage cdp guest profiles
-- list personalization connections to external systems
-- create a new guest profile in cdp
-- cdp get guest
 - list connections
+- manage personalize external connections
+- list sitecore personalize decision models
+- list personalization flow definitions
+- list guest orders
+- list orders for a specific guest
+- list guest profiles in sitecore cdp
+- cdp list guests
 - create a new external system connection in sitecore personalize
 - list personalize connections
-- cdp create guest
-- create a new guest profile in sitecore cdp
-- personalization
+- manage personalize decision models
+- cdp get guest
 - update an existing guest profile in sitecore cdp
 - personalize list connections
-- update a guest profile
+- personalization
 - manage orders for a guest profile
-- manage a specific guest profile
+- list orders for a specific guest in sitecore cdp
+- list personalization connections to external systems
+- list sitecore personalize flow definitions (experiments and experiences)
+- personalize list flows
+- get a guest profile by reference
+- personalize list decision models
+- create a new guest profile in sitecore cdp
+- create a new guest profile in cdp
+- update a guest profile
+- create guest
+- cdp update guest
+- cdp list guest orders
+- manage personalize flow definitions
+- personalize create connection
+- customer data platform
+- experiments
+- list guests
+- decisioning
+- list decision models
+- cdp create guest
+- sitecore
+- guest data
 slug: customer-data-personalization
 source_filename: customer-data-personalization.yaml
 source_heading: Capability Spec

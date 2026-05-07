@@ -249,134 +249,134 @@ personas: []
 provider_name: Moov
 provider_slug: moov
 search_terms:
-- linkcard
-- updaterepresentative
-- financial infrastructure
-- generatetostoken
+- retrieve transfer options
+- list sweeps
+- getaccount
+- create an account
+- list cards
+- updateaccount
+- api
+- retrieve a card
+- list accounts
+- accept a dispute
+- list wallet transactions
+- getsweepconfig
+- remove a representative
+- listcapabilities
 - create a refund
-- list connected accounts
-- retrieve a bank account
-- update a card
-- list capabilities
-- disable a card
-- shareaccountconnection
+- update transfer metadata
+- uploaddisputeevidencefile
+- createtransfer
+- initiate micro-deposits
+- listrepresentatives
+- list disputes
+- listpaymentmethods
+- updaterepresentative
+- link a bank account
+- getwallet
+- completebankaccountverification
+- updatecard
+- create a wallet
+- revoke an access token
+- getbankaccount
+- create an access token
+- cancel a transfer
+- retrieve a wallet
+- upload evidence file
+- list refunds
+- createaccount
+- share an account connection
+- get a sweep config
+- retrieve a transfer
 - createaccesstoken
 - retrieve a wallet transaction
-- list disputes
-- updatecard
-- retrieve a capability
-- listpaymentmethods
-- getdispute
-- accept a dispute
-- uploaddisputeevidencefile
-- api
-- request capabilities
-- acceptdispute
-- deletebankaccount
-- retrieve an account
-- list cards
-- update a wallet
-- createrefund
-- link a bank account
-- revoke an access token
-- moov
-- getcard
-- gettransfer
-- initiate bank account verification
-- banking
-- complete micro-deposit verification
-- createwallet
-- retrieve a dispute
-- gettransferoptions
-- disable a capability
-- requestcapabilities
-- retrieve a wallet
-- create a transfer
-- update an account
-- updatewallet
-- update a sweep config
-- removerepresentative
-- revokeaccesstoken
-- list refunds
-- getwallet
-- list sweeps
-- listrepresentatives
-- disablecard
-- initiate micro-deposits
-- getrepresentative
-- initiatemicrodeposits
-- listrefunds
-- list representatives
-- list sweep configs
-- addrepresentative
-- listwallettransactions
-- listaccounts
-- create a wallet
-- retrieve a card
-- update transfer metadata
-- canceltransfer
-- list transfers
-- embedded finance
-- update a representative
-- updatesweepconfig
-- listsweepconfigs
-- getwallettransaction
-- disablecapability
-- initiatebankaccountverification
-- listconnectedaccounts
-- list wallet transactions
-- share an account connection
-- complete bank account verification
-- remove a representative
-- updateaccount
-- retrieve transfer options
-- completebankaccountverification
-- completemicrodeposits
-- listdisputes
-- create an access token
-- delete a bank account
-- transfers
-- retrieve a representative
-- getpaymentmethod
-- listtransfers
-- getcapability
-- getsweepconfig
-- listbankaccounts
-- retrieve a transfer
-- getbankaccountverificationstatus
-- getsweep
-- createaccount
-- createsweepconfig
-- deleteaccount
-- get a sweep config
-- listcards
-- list bank accounts
-- generate a terms of service token
-- cancel a transfer
-- linkbankaccount
-- getaccount
-- list wallets
-- createtransfer
-- create an account
-- retrieve a refund
-- link a card
-- upload evidence file
-- create a sweep config
-- add a representative
-- delete an account
-- retrieve a payment method
-- listsweeps
-- payments
-- get a sweep
 - listwallets
-- list accounts
-- listcapabilities
-- get verification status
-- getrefund
-- getbankaccount
-- list payment methods
-- money movement
+- get a sweep
+- list connected accounts
+- getcard
+- listcards
+- getsweep
+- delete an account
+- initiate bank account verification
+- updatewallet
+- listwallettransactions
+- createwallet
+- complete bank account verification
+- getcapability
+- gettransfer
+- update a sweep config
+- initiatebankaccountverification
+- acceptdispute
+- removerepresentative
+- delete a bank account
+- getrepresentative
+- listaccounts
+- banking
 - updatetransfermetadata
+- payments
+- disable a capability
+- getrefund
+- list wallets
+- transfers
+- listtransfers
+- getbankaccountverificationstatus
+- list bank accounts
+- listsweeps
+- get verification status
+- initiatemicrodeposits
+- create a transfer
+- update a wallet
+- addrepresentative
+- retrieve a refund
+- generate a terms of service token
+- createsweepconfig
+- complete micro-deposit verification
+- listsweepconfigs
+- financial infrastructure
+- linkcard
+- moov
+- request capabilities
+- add a representative
+- canceltransfer
+- disable a card
+- list representatives
+- listdisputes
+- getwallettransaction
+- link a card
+- update a representative
+- create a sweep config
+- disablecard
+- retrieve a representative
+- retrieve an account
+- getdispute
+- deletebankaccount
+- embedded finance
+- createrefund
+- completemicrodeposits
+- listbankaccounts
+- getpaymentmethod
+- linkbankaccount
+- retrieve a dispute
+- shareaccountconnection
+- listconnectedaccounts
+- list payment methods
+- updatesweepconfig
+- retrieve a bank account
+- list sweep configs
+- money movement
+- list transfers
+- requestcapabilities
+- listrefunds
+- generatetostoken
+- deleteaccount
+- disablecapability
+- update a card
+- update an account
+- revokeaccesstoken
+- retrieve a payment method
+- gettransferoptions
+- list capabilities
+- retrieve a capability
 slug: moov-capability
 source_filename: moov-capability.yaml
 source_heading: Capability Spec

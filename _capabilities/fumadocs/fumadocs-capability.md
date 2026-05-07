@@ -29,22 +29,22 @@ personas: []
 provider_name: Fumadocs
 provider_slug: fumadocs
 search_terms:
-- fumadocs proxy a delete request to an external api
-- react
 - proxypatch
-- fumadocs proxy a patch request to an external api
-- next.js
-- fumadocs proxy a put request to an external api
-- fumadocs proxy a post request to an external api
-- proxyput
-- fumadocs proxy a get request to an external api
-- api
-- proxydelete
 - proxyget
+- proxyput
 - documentation
+- fumadocs proxy a get request to an external api
+- proxydelete
+- react
+- fumadocs proxy a delete request to an external api
 - proxypost
+- fumadocs proxy a put request to an external api
+- fumadocs proxy a patch request to an external api
+- api
 - fumadocs
+- fumadocs proxy a post request to an external api
 - framework
+- next.js
 slug: fumadocs-capability
 source_filename: fumadocs-capability.yaml
 source_heading: Capability Spec

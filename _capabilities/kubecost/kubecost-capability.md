@@ -17,17 +17,17 @@ personas: []
 provider_name: Kubecost
 provider_slug: kubecost
 search_terms:
-- kubecost
-- cloud cost
-- api
-- getallocationtotals
-- spending
-- kubecost query total allocation costs
-- kubecost query allocation cost data
 - optimization
-- kubernetes
 - getallocation
+- kubernetes
+- kubecost query allocation cost data
+- spending
+- api
+- kubecost query total allocation costs
 - cost monitoring
+- kubecost
+- getallocationtotals
+- cloud cost
 slug: kubecost-capability
 source_filename: kubecost-capability.yaml
 source_heading: Capability Spec

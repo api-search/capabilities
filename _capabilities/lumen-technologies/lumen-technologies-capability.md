@@ -25,26 +25,26 @@ personas: []
 provider_name: Lumen Technologies
 provider_slug: lumen-technologies
 search_terms:
-- edge cloud
-- createconnection
 - networking
-- network
-- lumen
-- update bandwidth
-- infrastructure
-- listconnections
-- updatebandwidth
-- security
-- getconnection
+- list connections
+- telecom
 - technologies
 - api
-- fiber
-- bandwidth
-- create a connection
-- list connections
+- updatebandwidth
 - get connection details
+- bandwidth
+- fiber
+- create a connection
+- infrastructure
+- update bandwidth
 - internet
-- telecom
+- edge cloud
+- lumen
+- network
+- getconnection
+- listconnections
+- security
+- createconnection
 slug: lumen-technologies-capability
 source_filename: lumen-technologies-capability.yaml
 source_heading: Capability Spec

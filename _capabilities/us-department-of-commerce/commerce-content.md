@@ -29,40 +29,40 @@ personas: []
 provider_name: US Department of Commerce
 provider_slug: us-department-of-commerce
 search_terms:
-- get the full content of a specific commerce department blog post. returns author, body text, date, and topic tags.
-- media images from commerce department
-- economic data
-- blog posts from commerce department officials and bureaus
-- list news
-- get news article
-- list recent commerce department news articles
-- content
-- get blog post
-- trade
-- list images and media assets published by the commerce department. useful for finding official images for news stories and publications.
+- list commerce department images
 - list commerce news
+- list images
+- list recent commerce department news articles
+- get commerce blog post
+- list blog posts from commerce department officials and bureaus. blog posts provide policy commentary, program updates, and feature stories.
+- standards
+- get the full text of a specific commerce department news article by id. returns title, body, date, tags, and featured image.
+- get news article
 - list recent news articles from the us department of commerce. use to monitor agency announcements, trade policy updates, economic reports, and bureau news from noaa, census, bea, ita, and nist.
 - get a specific commerce department blog post
-- commerce
-- standards
-- get commerce news article
-- list commerce blog posts
-- single commerce department blog post
-- get a specific commerce department news article
-- news
-- list commerce department images
-- latest news from the us department of commerce
-- get the full text of a specific commerce department news article by id. returns title, body, date, tags, and featured image.
-- climate
 - list blogs
+- get commerce news article
+- blog posts from commerce department officials and bureaus
+- get a specific commerce department news article
+- content
+- list commerce blog posts
+- trade
+- get blog post
+- economic data
+- list images and media assets published by the commerce department. useful for finding official images for news stories and publications.
+- climate
+- list news
+- get the full content of a specific commerce department blog post. returns author, body text, date, and topic tags.
 - list commerce images
-- get commerce blog post
 - federal government
-- list blog posts from commerce department officials and bureaus. blog posts provide policy commentary, program updates, and feature stories.
-- open data
-- list images
 - single commerce department news article
 - list commerce department blog posts
+- open data
+- commerce
+- single commerce department blog post
+- news
+- media images from commerce department
+- latest news from the us department of commerce
 slug: commerce-content
 source_filename: commerce-content.yaml
 source_heading: Capability Spec

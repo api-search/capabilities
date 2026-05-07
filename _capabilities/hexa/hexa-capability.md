@@ -185,100 +185,100 @@ personas: []
 provider_name: Hex
 provider_slug: hexa
 search_terms:
-- publish all currently drafted guides.
-- get the status of a project run.
-- me
-- deleteguidedraft
-- analytics
-- listdraftguides
-- post /v1/collections
-- get /v1/groups/{groupid}
-- getproject
-- get a single cell by id returns cells from the draft version of the project only, not the published app. returns the cell details including id, staticid, celltype, label, dataconnectionid, source contents (for code and sql cells), and proje
-- trigger a run of the latest published version of a project. this api endpoint is subject to a maximum of 20 requests per minute and 60 requests per hour.
-- add a project to collections or remove it from collections. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app". workspace tokens calling this endpo
-- api
-- editprojectsharinggroups
-- get /v1/users/me
-- given a project id, return the list of warehouse tables queried in the project.
-- data
-- use this endpoint to add or remove a status (including endorsements) from datasets and views within a semantic project this endpoint uses atomic semantics - if any update in the batch fails validation, the entire request fails and no change
-- 'update or create guide drafts by filepath. accepts a dictionary mapping file paths to their contents. for each file: - if the guide doesn''t exist, it will be created. - if the guide exists but has no draft, a new draft will be created. - if'
-- editgroup
-- createproject
-- use this endpoint to add or remove a status (including endorsements) from databases, schemas, and tables within a data connection this endpoint uses atomic semantics - if any update in the batch fails validation, the entire request fails an
-- creategroup
-- get /v1/users
-- patch /v1/groups/{groupid}
-- get /v1/groups
-- update a cell's source and/or data connection updates the source code and/or data connection id for a cell. for sql cells, can update sql source and data connection id. for code cells, can update code source. requires edit_project_contents
-- get /v1/guides/draft/list
-- deletecell
-- delete a cell permanently deletes a cell from the draft version of a project. requires edit_project_contents permission on the project containing the cell.
-- update workspace or public-web sharing for a project. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app".
 - post /v1/data-connections
-- ingestsemanticproject
-- cancelrun
-- listcells
-- getcell
+- me
+- get /v1/groups
+- api
+- create an embedded url for a project
+- patch /v1/data-connections/{dataconnectionid}
+- get /v1/users/me
+- getchartimagefromrun
 - getcollection
-- updateproject
-- hexa
-- createcell
-- listgroups
-- patch /v1/collections/{collectionid}
-- get /v1/data-connections/{dataconnectionid}
-- updatesemanticproject
-- editprojectsharingcollections
-- listprojects
-- list all cells returns cells from the draft version of the project only, not the published app. requires a project id for filtering. for sql and code cells, includes the source code content.
-- createcollection
-- post /v1/groups
+- get /v1/collections
+- createpresignedurl
 - getgroup
+- listcells
+- add users to a project or update/remove their project sharing access. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app".
+- hexa
+- editprojectsharingorgandpublic
+- get the status of runs of a project. by default, all run types are returned (api-triggered, scheduled, and publish/refresh runs). use the `runtriggerfilter` parameter to filter to a specific type.
+- editprojectsharingusers
+- 'update or create guide drafts by filepath. accepts a dictionary mapping file paths to their contents. for each file: - if the guide doesn''t exist, it will be created. - if the guide exists but has no draft, a new draft will be created. - if'
+- createcell
+- upsertguidedraft
+- deletegroup
+- publishguidedrafts
+- listdraftguides
+- given a project id, return the list of warehouse tables queried in the project.
+- creategroup
+- ingest a semantic project from a zip file. this api endpoint is subject to a maximum of 3 requests per minute.
+- editcollection
+- listcollections
+- getdataconnection
+- get /v1/data-connections
+- collaboration
+- updateproject
+- listgroups
+- create a new cell creates a new cell in the draft version of a project. currently only code and sql cell types are supported. requires edit_project_contents permission on the project.
+- deleteguidedraft
+- runproject
+- post /v1/groups
+- update a cell's source and/or data connection updates the source code and/or data connection id for a cell. for sql cells, can update sql source and data connection id. for code cells, can update code source. requires edit_project_contents
+- use this endpoint to add or remove a status (including endorsements) from datasets and views within a semantic project this endpoint uses atomic semantics - if any update in the batch fails validation, the entire request fails and no change
+- get metadata about a single project.
+- editdataconnection
+- editprojectsharinggroups
+- get /v1/guides/draft/list
+- updatecell
+- getproject
+- get /v1/collections/{collectionid}
+- getprojectruns
+- update workspace or public-web sharing for a project. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app".
+- createcollection
+- delete a cell permanently deletes a cell from the draft version of a project. requires edit_project_contents permission on the project containing the cell.
+- get /v1/groups/{groupid}
+- ingestsemanticproject
+- get the status of a project run.
+- getchartimagefromlogic
+- notebooks
+- delete /v1/groups/{groupid}
+- get a single cell by id returns cells from the draft version of the project only, not the published app. returns the cell details including id, staticid, celltype, label, dataconnectionid, source contents (for code and sql cells), and proje
+- updatedataconnectionschema
+- patch /v1/collections/{collectionid}
 - listusers
 - getqueriedtables
-- listdataconnections
-- publishguidedrafts
-- use this endpoint to add or remove a status (including endorsements) from a project
-- editprojectsharingorgandpublic
-- updatecell
-- createdataconnection
-- getchartimagefromlogic
-- getdataconnection
-- get /v1/collections
-- getchartimagefromrun
-- add users to a project or update/remove their project sharing access. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app".
-- createpresignedurl
-- updatedataconnectionschema
-- deactivateuser
-- get the status of runs of a project. by default, all run types are returned (api-triggered, scheduled, and publish/refresh runs). use the `runtriggerfilter` parameter to filter to a specific type.
-- cancel a project run.
-- upsertguidedraft
-- editcollection
-- patch /v1/data-connections/{dataconnectionid}
-- create a new cell creates a new cell in the draft version of a project. currently only code and sql cell types are supported. requires edit_project_contents permission on the project.
-- get the rendered png image of a chart cell from a completed run by staticcellid. the "staticid" path parameter should be the cell's staticid (which remains stable across project versions), as opposed to its cellid (which is scoped to a spec
-- editprojectsharingusers
-- list all viewable projects, sorted by most recently created first.
-- runproject
-- notebooks
-- deletegroup
-- editdataconnection
 - delete /v1/guides/draft/{orgguidefileid}
-- create a new project. creates a new project in the workspace with the specified title. optionally provide a description and project language.
-- create an embedded url for a project
-- post /v1/users/{userid}/deactivate
-- get /v1/data-connections
-- ingest a semantic project from a zip file. this api endpoint is subject to a maximum of 3 requests per minute.
-- getprojectruns
-- get the rendered png image of a chart cell from the current notebook session by cellid. the "cellid" path parameter should be the cell's id (scoped to a specific version), as opposed to its staticid (which remains stable across versions). r
+- trigger a run of the latest published version of a project. this api endpoint is subject to a maximum of 20 requests per minute and 60 requests per hour.
+- createproject
+- analytics
+- list all viewable projects, sorted by most recently created first.
 - getrunstatus
-- delete /v1/groups/{groupid}
-- get metadata about a single project.
-- listcollections
+- get the rendered png image of a chart cell from the current notebook session by cellid. the "cellid" path parameter should be the cell's id (scoped to a specific version), as opposed to its staticid (which remains stable across versions). r
+- cancel a project run.
+- deactivateuser
+- createdataconnection
+- editgroup
+- patch /v1/groups/{groupid}
+- add a project to collections or remove it from collections. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app". workspace tokens calling this endpo
+- post /v1/users/{userid}/deactivate
+- create a new project. creates a new project in the workspace with the specified title. optionally provide a description and project language.
+- list all cells returns cells from the draft version of the project only, not the published app. requires a project id for filtering. for sql and code cells, includes the source code content.
+- listdataconnections
+- deletecell
+- updatesemanticproject
+- get /v1/data-connections/{dataconnectionid}
+- post /v1/collections
 - add groups to a project or update/remove their project sharing access. for projects, use `can_view` to grant the ui permission labeled "can explore". use `app_only` to grant the ui permission labeled "can view app".
-- collaboration
-- get /v1/collections/{collectionid}
+- use this endpoint to add or remove a status (including endorsements) from databases, schemas, and tables within a data connection this endpoint uses atomic semantics - if any update in the batch fails validation, the entire request fails an
+- cancelrun
+- get the rendered png image of a chart cell from a completed run by staticcellid. the "staticid" path parameter should be the cell's staticid (which remains stable across project versions), as opposed to its cellid (which is scoped to a spec
+- listprojects
+- data
+- editprojectsharingcollections
+- use this endpoint to add or remove a status (including endorsements) from a project
+- get /v1/users
+- getcell
+- publish all currently drafted guides.
 slug: hexa-capability
 source_filename: hexa-capability.yaml
 source_heading: Capability Spec

@@ -45,57 +45,57 @@ personas: []
 provider_name: Toyota
 provider_slug: toyota
 search_terms:
-- cars
-- vehicle location
-- connected car
-- enroll fleet vehicle
-- get vehicle alerts
-- individual vehicle
-- list fleet vehicles
-- vehicle trip history
-- telematics
-- enroll a new vehicle in the toyota telematics fleet program
-- get vehicle health status including warning lights and oil level for a fleet vehicle
-- get ev battery status
-- get vehicle trips
-- get odometer, fuel level, and estimated range for a fleet vehicle
-- real-time vehicle status
-- vehicle health status
-- get current vehicle status
-- get vehicle door status
-- fleet vehicle management
-- get subscription details
-- fleet management
-- get ev battery and charging status
-- electric vehicles
-- get vehicle subscriptions
-- get real-time door lock and window status for a connected vehicle
-- get vehicle gps location
-- get ev battery percentage, electric range, and charging status for hybrid/ev vehicles
-- automotive
-- ev battery and charging
-- get vehicle status
-- get ev status
-- get trip history
-- get the current gps coordinates of a fleet vehicle
-- vehicles
-- get telematics enrollment details for a specific fleet vehicle by vin
-- automobiles
-- get vehicle telematics
-- get trip history for a fleet vehicle over a specified date range
-- get vehicle telemetry
-- get maintenance alerts and vehicle notifications for a connected vehicle
-- get service history
-- get dealer service history records for a vehicle
-- vehicle health
-- get connected services and satellite radio subscription status for a vehicle
-- list vehicles
-- get vehicle health
-- connected service subscriptions
-- get vehicle location
-- list all vehicles enrolled in the toyota telematics fleet program
-- vehicle telemetry
 - get vehicle
+- get vehicle telemetry
+- telematics
+- vehicle telemetry
+- real-time vehicle status
+- get the current gps coordinates of a fleet vehicle
+- ev battery and charging
+- automobiles
+- connected car
+- get odometer, fuel level, and estimated range for a fleet vehicle
+- get connected services and satellite radio subscription status for a vehicle
+- electric vehicles
+- get real-time door lock and window status for a connected vehicle
+- get vehicle trips
+- vehicles
+- get trip history for a fleet vehicle over a specified date range
+- connected service subscriptions
+- get ev status
+- get service history
+- fleet vehicle management
+- list vehicles
+- get dealer service history records for a vehicle
+- enroll a new vehicle in the toyota telematics fleet program
+- get ev battery status
+- vehicle health status
+- enroll fleet vehicle
+- list all vehicles enrolled in the toyota telematics fleet program
+- get ev battery percentage, electric range, and charging status for hybrid/ev vehicles
+- vehicle health
+- get vehicle telematics
+- vehicle location
+- vehicle trip history
+- get vehicle subscriptions
+- get vehicle location
+- cars
+- list fleet vehicles
+- get vehicle status
+- get vehicle alerts
+- get current vehicle status
+- individual vehicle
+- fleet management
+- automotive
+- get telematics enrollment details for a specific fleet vehicle by vin
+- get vehicle gps location
+- get maintenance alerts and vehicle notifications for a connected vehicle
+- get trip history
+- get vehicle door status
+- get vehicle health
+- get ev battery and charging status
+- get vehicle health status including warning lights and oil level for a fleet vehicle
+- get subscription details
 slug: fleet-management
 source_filename: fleet-management.yaml
 source_heading: Capability Spec

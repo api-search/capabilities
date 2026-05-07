@@ -173,96 +173,96 @@ personas: []
 provider_name: Ghost
 provider_slug: ghost
 search_terms:
-- admindeletepage
-- adminbrowsetags
-- adminupdatetag
-- blogging
-- browse tags
-- admindeletetag
-- create a newsletter
-- adminuploadimage
-- update an offer
-- admincreatewebhook
-- browse users
-- adminupdatepage
-- create a post
-- adminupdatepost
-- content management
-- adminreadpage
-- adminupdateoffer
-- api
-- read a post by id
-- browse newsletters
-- update a member
-- adminupdatewebhook
-- read a member by id
-- delete a member
-- ghost
-- adminbrowseposts
-- update a page
-- adminbrowsepages
-- adminbrowseoffers
-- admincreatenewsletter
-- adminbrowsemembers
-- adminbrowsenewsletters
-- create an offer
-- adminbrowsetiers
-- update a tag
-- create a tier
-- adminreadoffer
 - adminreadtier
-- delete a page
-- delete a webhook
-- upload an image
-- browse tiers
-- read a page by id
-- create a webhook
-- adminactivatetheme
-- adminreaduser
-- create a page
-- read a user by id
-- admindeletepost
-- adminreadsite
-- read a tag by id
-- adminupdatetier
-- adminuploadtheme
-- create a tag
-- browse members
-- adminupdatenewsletter
-- delete a tag
-- browse offers
-- newsletters
-- delete a post
-- headless cms
-- read a newsletter by id
-- memberships
-- read an offer by id
-- upload a theme
-- activate a theme
-- browse posts
-- read a tier by id
-- adminbrowseusers
-- create a member
-- publishing
-- admincreateoffer
-- read site information
-- browse pages
-- admincreatepage
-- admindeletewebhook
-- admincreatetag
-- update a newsletter
-- adminupdatemember
-- update a webhook
-- update a tier
-- adminreadtag
-- admincreatetier
-- admincreatemember
-- admincreatepost
 - adminreadnewsletter
 - update a post
-- adminreadmember
+- create an offer
+- api
+- adminreadtag
+- adminupdatepage
 - admindeletemember
+- update a member
+- activate a theme
+- admindeletepost
+- admincreatepage
+- create a member
+- adminupdatepost
+- delete a page
+- memberships
+- upload a theme
+- create a webhook
+- adminreadpage
+- adminbrowsetiers
+- newsletters
+- read a tier by id
+- adminbrowsepages
+- admincreatetier
+- adminreadsite
+- read an offer by id
+- headless cms
+- adminreadmember
+- adminreaduser
+- adminupdatetag
+- read a post by id
+- adminactivatetheme
+- admincreatepost
+- publishing
+- adminbrowseposts
+- admincreatetag
+- update an offer
+- read a user by id
+- ghost
+- read a newsletter by id
+- admincreatenewsletter
+- create a newsletter
 - adminreadpost
+- update a tag
+- read site information
+- create a tag
+- adminbrowsenewsletters
+- delete a tag
+- delete a webhook
+- browse members
+- delete a member
+- read a tag by id
+- browse pages
+- read a page by id
+- adminbrowsetags
+- adminupdateoffer
+- browse tags
+- update a newsletter
+- browse offers
+- create a page
+- adminbrowsemembers
+- browse newsletters
+- admindeletepage
+- admincreatewebhook
+- create a tier
+- create a post
+- adminbrowseusers
+- admindeletetag
+- browse posts
+- admincreatemember
+- adminupdatenewsletter
+- update a tier
+- admincreateoffer
+- adminupdatewebhook
+- browse tiers
+- adminreadoffer
+- browse users
+- blogging
+- admindeletewebhook
+- adminupdatetier
+- read a member by id
+- update a page
+- delete a post
+- adminuploadimage
+- upload an image
+- adminbrowseoffers
+- content management
+- adminuploadtheme
+- update a webhook
+- adminupdatemember
 slug: ghost-capability
 source_filename: ghost-capability.yaml
 source_heading: Capability Spec

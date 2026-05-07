@@ -25,22 +25,22 @@ personas: []
 provider_name: Huntington Bancshares
 provider_slug: huntington-bancshares
 search_terms:
-- getaccountbalances
-- get account transactions
-- initiate a payment
-- open banking
-- getaccounts
-- erp integration
-- api
-- huntington
-- initiatepayment
-- gettransactions
 - get treasury accounts
-- banking
-- treasury
-- bancshares
+- initiate a payment
 - get account balances
+- banking
+- getaccounts
+- getaccountbalances
 - payments
+- bancshares
+- erp integration
+- treasury
+- initiatepayment
+- api
+- get account transactions
+- huntington
+- gettransactions
+- open banking
 slug: huntington-bancshares-capability
 source_filename: huntington-bancshares-capability.yaml
 source_heading: Capability Spec

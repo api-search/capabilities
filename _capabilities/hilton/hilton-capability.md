@@ -13,15 +13,15 @@ personas: []
 provider_name: Hilton
 provider_slug: hilton
 search_terms:
-- hotels
-- get api status
-- hilton
-- travel
-- getstatus
 - reservations
-- api
+- hilton
+- getstatus
+- travel
+- get api status
 - loyalty
+- api
 - hospitality
+- hotels
 slug: hilton-capability
 source_filename: hilton-capability.yaml
 source_heading: Capability Spec

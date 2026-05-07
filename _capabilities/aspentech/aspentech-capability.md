@@ -33,26 +33,26 @@ personas: []
 provider_name: AspenTech
 provider_slug: aspentech
 search_terms:
-- manufacturing
-- process optimization
-- readdataitems
-- write process data values
-- read historical time-series data
 - executerpccall
 - get system information
+- execute rpc call
 - getconfigurationitem
-- industrial iot
+- process optimization
+- api
+- aspentech
+- read historical time-series data
+- readdataitems
+- manufacturing
+- read current process data values
+- getsysteminfo
+- write process data values
+- energy
+- chemicals
 - writedataitems
+- industrial iot
 - readhistoricaldata
 - get configuration item
 - time series
-- chemicals
-- api
-- execute rpc call
-- energy
-- read current process data values
-- getsysteminfo
-- aspentech
 slug: aspentech-capability
 source_filename: aspentech-capability.yaml
 source_heading: Capability Spec

@@ -85,51 +85,51 @@ personas: []
 provider_name: Hazelcast
 provider_slug: hazelcast
 search_terms:
-- poll item from queue
-- putmapentry
+- update tcp-ip member list
 - getqueuesize
-- real-time
 - node state
+- gettcpipmemberlist
+- reloadconfig
+- getclusterinfo
+- get queue size
+- api
+- putmapentry
+- healthclustersafe
 - rest
-- getinstancename
+- get instance name
+- getclusterversion
+- clear map
+- get map entry
+- healthnodestate
+- delete map entry
+- cluster safe
+- updatetcpipmemberlist
+- healthready
+- getmapentry
+- offerqueueitem
+- offer item to queue
+- get cluster info
+- get tcp-ip member list
+- change cluster state
+- in-memory computing
+- hazelcast
+- healthclusterstate
+- get cluster version
+- put map entry
+- reload member configuration
 - data caching
 - deletemapentry
-- getclusterinfo
-- cluster safe
-- healthclusterstate
-- gettcpipmemberlist
-- updatetcpipmemberlist
-- get cluster info
-- getclusterstate
-- get cluster state
-- put map entry
-- changeclusterstate
-- readiness probe
-- reloadconfig
-- offer item to queue
-- get tcp-ip member list
+- poll item from queue
 - clearmap
-- hazelcast
-- api
-- clear map
-- in-memory computing
-- distributed computing
+- getclusterstate
+- changeclusterstate
+- real-time
+- get cluster state
 - pollqueueitem
-- change cluster state
-- healthnodestate
-- update tcp-ip member list
-- healthclustersafe
-- getmapentry
-- get map entry
-- delete map entry
-- get cluster version
-- offerqueueitem
-- healthready
-- getclusterversion
+- readiness probe
+- distributed computing
 - cluster state health
-- reload member configuration
-- get instance name
-- get queue size
+- getinstancename
 slug: hazelcast-capability
 source_filename: hazelcast-capability.yaml
 source_heading: Capability Spec

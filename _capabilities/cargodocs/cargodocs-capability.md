@@ -25,26 +25,26 @@ personas: []
 provider_name: CargoDocs
 provider_slug: cargodocs
 search_terms:
-- finddocuments
-- bills of lading
-- importshipmentdata
-- mletr
-- downloaddocumentpdf
-- trade
-- cargodocs find transaction documents
 - warehouse warrants
-- findtransactions
-- ebol
-- documentation
-- trade finance
-- supply chain
-- cargodocs
-- shipping
 - api
-- cargodocs import shipment data
-- cargodocs download document pdf
-- essdocs
+- downloaddocumentpdf
+- cargodocs find transaction documents
+- supply chain
+- trade finance
+- documentation
+- bills of lading
 - cargodocs find transactions
+- importshipmentdata
+- trade
+- findtransactions
+- cargodocs import shipment data
+- essdocs
+- finddocuments
+- cargodocs
+- ebol
+- mletr
+- shipping
+- cargodocs download document pdf
 slug: cargodocs-capability
 source_filename: cargodocs-capability.yaml
 source_heading: Capability Spec

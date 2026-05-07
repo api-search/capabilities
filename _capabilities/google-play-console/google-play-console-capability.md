@@ -25,23 +25,23 @@ personas: []
 provider_name: Google Play Console Developer Reporting
 provider_slug: google-play-console
 search_terms:
+- play
+- google play console developer reporting get anr rate metric set
+- analytics
+- getanrratemetricset
 - searchapps
+- getcrashratemetricset
 - google play console developer reporting get crash rate metric set
 - android
 - apps
-- geterrorcountmetricset
-- google play console
-- google
-- api
-- play
-- getanrratemetricset
-- google play console developer reporting get anr rate metric set
-- google play console developer reporting get error count metric set
-- google play console developer reporting search apps
-- getcrashratemetricset
-- analytics
-- reporting
 - quality
+- reporting
+- google
+- google play console
+- google play console developer reporting get error count metric set
+- api
+- geterrorcountmetricset
+- google play console developer reporting search apps
 - console
 slug: google-play-console-capability
 source_filename: google-play-console-capability.yaml

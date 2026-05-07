@@ -61,35 +61,35 @@ personas: []
 provider_name: duck-creek
 provider_slug: duck-creek
 search_terms:
-- createpolicy
-- cancelpolicy
-- creek
-- list invoices for a billing account
-- listclaims
-- report a new claim
-- get policy details
-- listpolicies
-- create a new policy
-- createquote
-- updatepolicy
-- list claims
-- getpolicy
-- listproducts
-- list insurance policies
-- create a policy quote
-- duck
-- api
-- renewpolicy
-- cancel a policy
-- list billing accounts
-- createclaim
-- update policy (endorsement)
 - listinvoices
-- listbillingaccounts
+- listpolicies
+- createclaim
+- list invoices for a billing account
+- list billing accounts
+- list claims
+- cancelpolicy
+- renewpolicy
+- api
 - list insurance products
-- renew a policy
-- getclaim
+- create a policy quote
+- getpolicy
+- updatepolicy
+- creek
 - get claim details
+- duck
+- getclaim
+- create a new policy
+- list insurance policies
+- get policy details
+- createquote
+- createpolicy
+- listproducts
+- update policy (endorsement)
+- report a new claim
+- cancel a policy
+- listbillingaccounts
+- listclaims
+- renew a policy
 slug: duck-creek-capability
 source_filename: duck-creek-capability.yaml
 source_heading: Capability Spec

@@ -33,39 +33,39 @@ personas: []
 provider_name: Vonage
 provider_slug: vonage
 search_terms:
-- get details of a specific call.
-- mute an active call.
-- hangup call
 - play text-to-speech audio in a call.
-- list voice calls with optional status filter.
-- create an outbound voice call to a phone number.
-- stop text-to-speech in a call.
-- list and create voice calls.
-- voice
-- communication
-- create call
-- manage a specific call.
+- ivr
+- text-to-speech in active calls.
 - vonage
 - mute call
+- create call
+- play a text-to-speech message into an active call.
 - sms
-- ivr
-- voip
-- messaging
-- telecommunications
+- mute an active call.
+- communication
 - create an outbound voice call.
 - stop tts
-- modify an in-progress call.
-- video conferencing
+- telecommunications
 - list calls
-- play tts
-- update call
-- get status and details of a specific call by uuid.
-- get call
-- hang up an active voice call.
-- text-to-speech in active calls.
-- play a text-to-speech message into an active call.
+- stop text-to-speech in a call.
 - list voice calls, optionally filtered by status.
+- update call
+- create an outbound voice call to a phone number.
+- list voice calls with optional status filter.
+- get details of a specific call.
+- modify an in-progress call.
+- get call
 - verification
+- manage a specific call.
+- hangup call
+- video conferencing
+- voice
+- list and create voice calls.
+- hang up an active voice call.
+- messaging
+- voip
+- play tts
+- get status and details of a specific call by uuid.
 slug: voice-communications
 source_filename: voice-communications.yaml
 source_heading: Capability Spec

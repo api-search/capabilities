@@ -109,63 +109,63 @@ personas: []
 provider_name: Recreation.gov
 provider_slug: recreation-gov
 search_terms:
+- gov
+- listrecareafacilities
+- public lands
+- getfacility
 - list events
 - listrecareamedia
-- list links
-- listtours
-- listfacilities
-- get activity
-- listevents
-- list media
-- get campsite
-- listlinks
-- list organizations
-- list media for a facility
-- listmedia
-- list facilities for a recreation area
-- camping
-- list activities for a recreation area
-- get event
-- list campsites
-- listcampsites
-- get permit entrance
-- getpermitentrance
-- list tours
-- listfacilitylinks
-- getorganization
-- public lands
-- listfacilitymedia
-- listactivities
-- list facilities
-- recreation
-- getfacility
-- list links for a facility
-- listrecareas
-- get recreation area
-- get tour
-- get organization
-- listorganizations
-- listfacilitycampsites
-- list activities for a facility
-- outdoors
-- getcampsite
-- gettour
-- api
-- listfacilityactivities
-- getrecarea
-- gov
-- list media for a recreation area
-- getactivity
-- listrecareafacilities
-- list campsites for a facility
-- list activities
-- list recreation areas
-- listrecareaactivities
-- getevent
-- get facility
 - federal
-- list permit entrances
+- camping
+- get activity
+- listfacilitymedia
+- listmedia
+- list links
+- list recreation areas
+- api
+- listorganizations
+- listrecareas
+- list links for a facility
+- list media
+- listfacilitylinks
+- list campsites
+- listtours
+- list activities for a facility
+- get campsite
+- getevent
+- list campsites for a facility
+- list media for a recreation area
+- gettour
+- get recreation area
+- listlinks
+- getcampsite
+- list tours
+- listactivities
+- getpermitentrance
+- list media for a facility
+- list organizations
+- listfacilityactivities
+- get permit entrance
+- list activities
+- listevents
+- list facilities for a recreation area
+- listcampsites
+- get tour
+- getrecarea
+- recreation
+- listrecareaactivities
 - listpermitentrances
+- list permit entrances
+- get event
+- outdoors
+- list facilities
+- listfacilitycampsites
+- get facility
+- getactivity
+- listfacilities
+- get organization
+- list activities for a recreation area
+- getorganization
 slug: recreation-gov-capability
 source_filename: recreation-gov-capability.yaml
 source_heading: Capability Spec

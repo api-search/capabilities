@@ -37,60 +37,60 @@ personas: []
 provider_name: AccuWeather
 provider_slug: accuweather
 search_terms:
-- get daily weather forecast
-- consumer weather app presenting conditions and forecasts
-- location services
-- search for weather locations
+- daily weather forecast
+- active tropical storm tracking
+- Mobile App
 - get minutecast precipitation forecast
+- IoT Platform
+- search locations
+- iot system using weather data for device automation
+- accuweather
+- hourly weather forecast
+- active and historical tropical cyclone monitoring
+- consumer weather app presenting conditions and forecasts
+- get minutecast
+- minute-by-minute precipitation forecast
+- get hourly air quality forecast
+- get 1, 5, 7, 10, or 15 day weather forecast
+- get daily weather forecast
+- current weather conditions for a location
+- search for weather locations by text query
+- get all active global storms
+- search for weather locations
+- get detailed tracking data for a specific tropical storm
+- location services
+- unified weather data workflow for location search, conditions, forecasts, air quality, and storm tracking
+- current and historical weather observation data
+- get hourly weather forecast
+- get daily forecast
 - get air quality
-- get active storms
+- air quality data
+- aqi and pollutant measurement data
+- air quality
+- get current weather conditions for a location key
+- storms
+- short and long-range weather prediction
+- get current air quality
+- emergency response team tracking storms and severe weather
+- get current air quality index and pollutant data
+- get hourly weather forecast for the next 12-120 hours
+- geographic location search and resolution
 - Developer
 - get current weather
-- weather
-- current weather conditions for a location
-- search locations
-- get current weather conditions for a location key
-- get daily forecast
-- current and historical weather observation data
-- short and long-range weather prediction
-- search for weather locations by text query
-- Emergency Management
-- get detailed tracking data for a specific tropical storm
-- daily weather forecast
-- accuweather
 - get storm details
-- iot system using weather data for device automation
-- air quality
-- storms
-- forecasts
-- geographic location search and resolution
-- get current air quality index and pollutant data
-- hourly weather forecast
-- get hourly weather forecast
-- get accuweather minutecast minute-by-minute precipitation forecast
-- get 1, 5, 7, 10, or 15 day weather forecast
-- get hourly forecast
-- storm tracking
-- get current air quality
-- get all currently active tropical storms globally
-- air quality data
-- emergency response team tracking storms and severe weather
-- active tropical storm tracking
 - get current weather conditions
-- get minutecast
-- get hourly air quality forecast
-- meteorology
-- IoT Platform
-- active and historical tropical cyclone monitoring
+- forecasts
+- get accuweather minutecast minute-by-minute precipitation forecast
+- get active storms
 - software developer building weather-aware applications
+- weather
+- get hourly forecast
+- meteorology
 - get hourly air quality
-- aqi and pollutant measurement data
-- minute-by-minute precipitation forecast
+- get all currently active tropical storms globally
+- storm tracking
+- Emergency Management
 - search for weather locations by partial name or query text
-- unified weather data workflow for location search, conditions, forecasts, air quality, and storm tracking
-- get hourly weather forecast for the next 12-120 hours
-- get all active global storms
-- Mobile App
 slug: weather-intelligence
 source_filename: weather-intelligence.yaml
 source_heading: Capability Spec

@@ -45,29 +45,29 @@ personas: []
 provider_name: Jaeger
 provider_slug: jaeger
 search_terms:
-- get operations for a service
-- getservices
-- get minimum step duration
-- search traces
-- get service dependency graph
-- getoperations
-- get call rate metrics
-- searchtraces
-- getdependencies
-- monitoring
 - get all services
-- getcallmetrics
-- getminstep
-- jaeger
-- api
-- observability
-- geterrormetrics
-- gettrace
-- getlatencymetrics
-- get error rate metrics
 - distributed tracing
-- microservices
+- search traces
+- getdependencies
+- api
+- getminstep
+- geterrormetrics
+- monitoring
+- jaeger
+- getcallmetrics
+- get call rate metrics
+- observability
+- searchtraces
+- get operations for a service
 - get a trace by id
+- get minimum step duration
+- gettrace
+- get service dependency graph
+- getlatencymetrics
+- getoperations
+- getservices
+- get error rate metrics
+- microservices
 - get latency metrics
 slug: jaeger-capability
 source_filename: jaeger-capability.yaml

@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- finance
 - ask a finance question in plain english; returns shaped bql results.
-- bloomberg
-- api integration
 - governance
-- spec-driven integration
-- ai
+- bloomberg
 - mcp
-- bql
-- capabilities
 - ask finance
+- ai
+- capabilities
+- spec-driven integration
+- finance
+- api integration
+- bql
 - translate a natural-language finance question to bql and return shaped results.
+- naftiko
 slug: bql-natural-language-finance-mcp
 source_filename: bql-natural-language-finance-mcp.yaml
 source_heading: Capability Spec

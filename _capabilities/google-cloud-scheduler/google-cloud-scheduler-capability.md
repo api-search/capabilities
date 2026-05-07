@@ -41,31 +41,31 @@ personas: []
 provider_name: Google Cloud Scheduler
 provider_slug: google-cloud-scheduler
 search_terms:
-- updatejob
-- runjob
-- scheduling
+- google cloud scheduler update a job
+- pausejob
+- automation
+- scheduler
+- google cloud scheduler pause a job
+- api
+- google cloud scheduler delete a job
 - listjobs
 - google cloud scheduler create a job
-- scheduler
-- google cloud scheduler get a job
-- cron
-- cloud
 - google
-- google cloud scheduler resume a job
-- api
-- deletejob
-- getjob
-- pausejob
-- google cloud scheduler update a job
-- google cloud scheduler run a job
-- jobs
-- google cloud scheduler delete a job
-- google cloud scheduler pause a job
-- createjob
-- google cloud
+- updatejob
 - resumejob
+- runjob
+- cloud
+- deletejob
 - google cloud scheduler list jobs
-- automation
+- google cloud scheduler get a job
+- getjob
+- google cloud scheduler resume a job
+- google cloud scheduler run a job
+- cron
+- jobs
+- scheduling
+- google cloud
+- createjob
 slug: google-cloud-scheduler-capability
 source_filename: google-cloud-scheduler-capability.yaml
 source_heading: Capability Spec

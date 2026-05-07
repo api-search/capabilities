@@ -25,21 +25,21 @@ personas: []
 provider_name: Linkerd
 provider_slug: linkerd
 search_terms:
-- getproxyreadiness
-- shutdownproxy
-- linkerd proxy readiness check
-- linkerd
-- getproxymetrics
-- api
-- observability
-- getproxyliveness
-- mtls
-- security
 - linkerd proxy liveness check
+- observability
+- linkerd
 - service mesh
-- kubernetes
-- linkerd initiate proxy shutdown
+- shutdownproxy
+- getproxyreadiness
+- mtls
+- getproxymetrics
+- getproxyliveness
+- security
+- api
+- linkerd proxy readiness check
 - linkerd get proxy metrics
+- linkerd initiate proxy shutdown
+- kubernetes
 slug: linkerd-capability
 source_filename: linkerd-capability.yaml
 source_heading: Capability Spec

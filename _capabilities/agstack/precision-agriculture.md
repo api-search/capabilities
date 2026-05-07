@@ -9,12 +9,12 @@ personas: []
 provider_name: AgStack Foundation
 provider_slug: agstack
 search_terms:
+- linux foundation
+- open source
+- agriculture
+- geospatial
 - precision agriculture
 - linked data
-- linux foundation
-- geospatial
-- agriculture
-- open source
 slug: precision-agriculture
 source_filename: precision-agriculture.yaml
 source_heading: Capability Spec

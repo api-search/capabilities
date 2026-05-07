@@ -53,34 +53,34 @@ personas: []
 provider_name: HL7 FHIR
 provider_slug: hl7-fhir
 search_terms:
-- searchpatient
-- fhir
-- processbatch
-- clinical
 - process batch or transaction
-- searchmedicationrequest
-- search patients
-- search observations
-- search encounters
-- hl7
-- readpatient
-- updatepatient
-- searchobservation
-- healthcare
-- getcapabilitystatement
 - searchcondition
-- read a patient
-- create a patient
-- update a patient
+- getcapabilitystatement
+- updatepatient
+- search medication requests
 - api
-- interoperability
-- searchencounter
+- searchpatient
+- searchmedicationrequest
 - createpatient
+- read a patient
+- fhir
+- interoperability
+- read an observation
+- search encounters
+- clinical
+- search patients
+- searchencounter
+- healthcare
 - search conditions
 - get server capability statement
+- create a patient
+- hl7
 - readobservation
-- search medication requests
-- read an observation
+- search observations
+- processbatch
+- searchobservation
+- readpatient
+- update a patient
 slug: hl7-fhir-capability
 source_filename: hl7-fhir-capability.yaml
 source_heading: Capability Spec

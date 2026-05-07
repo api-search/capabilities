@@ -37,29 +37,29 @@ personas: []
 provider_name: Google Cloud Compute Engine
 provider_slug: google-cloud-compute-engine
 search_terms:
-- compute
-- google cloud compute engine list instances
+- listnetworks
+- api
 - listfirewalls
-- google cloud compute engine get instance
-- infrastructure
-- deleteinstance
-- iaas
 - google cloud compute engine list networks
-- virtual machines
-- cloud
-- engine
+- deleteinstance
 - google
-- google cloud compute engine create instance
+- google cloud compute engine list disks
 - getinstance
+- infrastructure
 - google cloud compute engine list firewalls
 - insertinstance
-- api
-- listdisks
-- listnetworks
-- listinstances
-- google cloud compute engine list disks
+- google cloud compute engine create instance
 - google cloud compute engine delete instance
+- listdisks
+- virtual machines
+- google cloud compute engine get instance
+- cloud
+- engine
+- compute
+- google cloud compute engine list instances
+- iaas
 - google cloud
+- listinstances
 slug: google-cloud-compute-engine-capability
 source_filename: google-cloud-compute-engine-capability.yaml
 source_heading: Capability Spec

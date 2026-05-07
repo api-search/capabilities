@@ -245,136 +245,136 @@ personas: []
 provider_name: Paradox
 provider_slug: paradox
 search_terms:
-- paradox reactivate user
-- paradox create candidate
-- adduserlocationpermission
-- updatelocationroom
-- paradox add user location permission
-- paradox deactivate user
-- updatecandidate
-- paradox get oauth 2.0 access token
-- getcompanygroups
-- paradox
-- paradox send candidate message
-- paradox patch candidate attributes
-- paradox get location rooms
-- updatecandidateattributes
-- verifyjwt
-- hiring automation
-- paradox update location by job location code
-- paradox get ai assistant
-- api
-- getinterviewsettings
-- paradox get interview history
-- getuser
-- paradox get single user
-- getlocationrooms
-- getcompanyconversations
-- paradox update candidate
-- getcandidateattributes
-- reactivateuser
-- updateuser
-- paradox get locations
-- updatelocationarea
-- conversational ai
-- deleteuser
-- createuser
-- updatelocation
-- paradox delete user
-- paradox get candidates
-- getlocationareas
-- updatelocationbycode
-- paradox get user by employee id
-- updateuserbyemployeeid
-- createlocationroom
-- sms
-- getusers
-- createlocation
-- getauthtoken
-- paradox get company conversations
-- paradox send interview alerts
-- deletecandidate
-- paradox send first advantage background check
-- paradox get multiparty interviewers
-- deletelocationarea
-- paradox delete location area
-- paradox create report
-- paradox update location area
-- paradox create location area
-- sendschedulingcommunication
-- paradox send checkr background check
-- getlocations
-- getlocationarea
-- getreports
-- deletelocation
-- paradox get candidate attributes
-- getlocationroom
 - deleteuserlocationpermission
-- getinterviewhistory
-- paradox get company groups
-- unsubscribecandidate
-- getlocationbycode
-- paradox verify jwt token
-- getcandidates
-- paradox update candidate attributes
-- createlocationarea
-- getmultipartyinterviewers
-- paradox update user
-- paradox delete location room
-- paradox delete candidate
-- sendbackgroundcheckstandard
-- createreport
-- getjoblocationrooms
-- candidate screening
-- getlocation
-- artificial intelligence
-- paradox create user
-- deactivateuser
-- paradox get interview settings
-- getcandidate
-- paradox get single location area
-- hr technology
-- paradox get report list
-- paradox update location
-- getcompanyaiassistant
-- sendcandidatemessage
-- paradox delete location
 - getcompanyschoolareas
-- getuserlocationpermissions
-- getuserbyemployeeid
-- getreport
-- deleteuserbyemployeeid
-- paradox unsubscribe candidate
-- patchcandidateattributes
-- paradox delete user by employee id
-- recruiting
-- paradox get single location room
+- api
+- getmultipartyinterviewers
+- paradox update location by job location code
+- getcompanyconversations
+- paradox get candidates
+- updatelocationarea
+- paradox get company groups
+- paradox update candidate attributes
 - paradox create location room
-- paradox get single candidate
-- paradox get user location permissions
+- patchcandidateattributes
+- deleteuser
 - paradox get location areas
-- getuserroles
-- interview scheduling
-- sendbackgroundcheckcheckr
-- deletelocationroom
-- chatbot
-- paradox get job location rooms
-- sendinterviewalerts
-- paradox get user roles
-- paradox update user by employee id
-- paradox get single location
-- paradox update location room
-- paradox get users
-- paradox get single report
-- createcandidate
-- paradox send standard background check
-- paradox get company schools and areas
-- talent acquisition
-- paradox create location
-- paradox get location by job location code
-- sendbackgroundcheckfirstadvantage
+- paradox delete user
+- getinterviewhistory
+- createlocationroom
+- paradox get user by employee id
+- getlocationareas
 - paradox schedule shortlist review
+- sendbackgroundcheckstandard
+- paradox get candidate attributes
+- paradox get job location rooms
+- paradox get locations
+- paradox deactivate user
+- getcandidateattributes
+- paradox
+- reactivateuser
+- getinterviewsettings
+- paradox get location rooms
+- deletelocation
+- deletecandidate
+- paradox get user roles
+- paradox send candidate message
+- paradox get ai assistant
+- paradox get company conversations
+- paradox delete location room
+- hiring automation
+- artificial intelligence
+- paradox verify jwt token
+- paradox reactivate user
+- paradox send interview alerts
+- getjoblocationrooms
+- paradox delete location
+- recruiting
+- paradox get company schools and areas
+- paradox update location
+- sendschedulingcommunication
+- paradox get location by job location code
+- sendbackgroundcheckcheckr
+- getauthtoken
+- createuser
 - paradox delete user location permission
+- getlocationbycode
+- updatelocation
+- unsubscribecandidate
+- getuserroles
+- getlocationarea
+- getreport
+- interview scheduling
+- paradox create user
+- paradox get report list
+- paradox add user location permission
+- updatecandidate
+- paradox patch candidate attributes
+- paradox get users
+- createlocationarea
+- getcandidates
+- paradox get interview history
+- paradox send first advantage background check
+- paradox create location area
+- paradox send standard background check
+- getlocation
+- updatelocationbycode
+- updateuser
+- getlocationrooms
+- paradox create candidate
+- paradox unsubscribe candidate
+- paradox delete user by employee id
+- paradox get multiparty interviewers
+- updateuserbyemployeeid
+- paradox get single candidate
+- paradox delete candidate
+- paradox delete location area
+- candidate screening
+- getusers
+- sendinterviewalerts
+- paradox get single location area
+- getcompanyaiassistant
+- deactivateuser
+- paradox get oauth 2.0 access token
+- paradox get single report
+- getreports
+- createlocation
+- paradox update user
+- deletelocationroom
+- conversational ai
+- talent acquisition
+- paradox create report
+- chatbot
+- sms
+- paradox get single user
+- getuser
+- paradox update user by employee id
+- paradox get user location permissions
+- paradox get single location room
+- getlocations
+- deleteuserbyemployeeid
+- createcandidate
+- paradox create location
+- paradox send checkr background check
+- sendbackgroundcheckfirstadvantage
+- verifyjwt
+- updatelocationroom
+- hr technology
+- createreport
+- updatecandidateattributes
+- getcompanygroups
+- getuserbyemployeeid
+- getcandidate
+- deletelocationarea
+- paradox update location area
+- paradox update location room
+- sendcandidatemessage
+- getuserlocationpermissions
+- adduserlocationpermission
+- paradox get interview settings
+- paradox update candidate
+- paradox get single location
+- getlocationroom
 slug: paradox-capability
 source_filename: paradox-capability.yaml
 source_heading: Capability Spec

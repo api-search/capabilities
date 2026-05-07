@@ -49,50 +49,50 @@ personas: []
 provider_name: Riverside
 provider_slug: riverside
 search_terms:
-- list recordings, optionally filtered by studio, project, or date range
-- get a recording with tracks and metadata
-- individual export
-- transcription file access
-- individual recording
-- list productions
-- list all recordings with optional studio, project, or date filters
-- register a participant for a webinar
-- download transcription
-- delete an export
-- register a participant for a scheduled webinar
-- export management
-- register participant
-- get recording
-- production workspace management
-- list all exports in the workspace
-- webinar registration
-- list all registrants for a webinar session
-- audio
-- download transcription file in srt or txt format
-- video recording
-- download a recording transcription in srt or txt format
-- podcast
-- get details for a specific export
-- register webinar participant
-- list webinar registrants
-- list all workspace productions with their studios and projects
-- permanently delete a recording
-- list all webinar registrants
-- video
 - delete export
-- media
+- download a recording transcription in srt or txt format
+- video recording
+- video
+- riverside
+- list all exports in the workspace
+- list webinar registrants
+- retrieve a single recording with tracks and transcription status
+- webinar registration
+- list registrants
+- register webinar participant
 - delete recording
 - get export
+- register participant
+- download transcription
 - list exports
-- content creation
-- recording
+- export management
 - list recordings
-- list registrants
-- retrieve a single recording with tracks and transcription status
-- riverside
+- podcast
+- get details for a specific export
 - permanently delete a recording and all its files
+- audio
+- list all registrants for a webinar session
+- get a recording with tracks and metadata
+- list all webinar registrants
+- list productions
+- register a participant for a scheduled webinar
+- media
+- individual recording
+- list recordings, optionally filtered by studio, project, or date range
+- recording
+- transcription file access
+- list all workspace productions with their studios and projects
+- register a participant for a webinar
 - recording management
+- delete an export
+- content creation
 - list all productions with associated studios and projects
+- list all recordings with optional studio, project, or date filters
+- permanently delete a recording
+- individual export
+- production workspace management
+- download transcription file in srt or txt format
+- get recording
 slug: podcast-production
 source_filename: podcast-production.yaml
 source_heading: Capability Spec

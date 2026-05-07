@@ -13,23 +13,23 @@ personas: []
 provider_name: Azure Container Instances
 provider_slug: azure-container-instances
 search_terms:
+- list container group usages
+- resource management
+- list
+- azure resource management
 - azure
 - management
-- list all resources
-- list containergroup resources
-- cloud
-- list container resources
-- serverless
-- azure resource management
-- container instances
-- list containergroupusage resources
 - containers
-- list
-- resource management
+- list containergroupusage resources
+- container instances
+- list container resources
 - list container groups
-- list containers
-- list container group usages
+- serverless
+- list all resources
 - microsoft
+- list containers
+- cloud
+- list containergroup resources
 slug: azure-container-instances-management
 source_filename: azure-container-instances-management.yaml
 source_heading: Capability Spec

@@ -249,102 +249,102 @@ personas: []
 provider_name: OpenProject
 provider_slug: openproject
 search_terms:
-- creates an opening uri of the linked file.
-- execute custom action
-- list capabilities
-- view day
-- update a week day attributes (not implemented)
-- view aggregated result
-- removes a non-working day (not implemented)
-- grid update form
-- update grid
-- gantt
-- api
-- get custom action
-- view global context
-- view a non-working day
-- list grids
-- update week day
-- update a grid
-- get custom field item branch
-- view file link
-- get an activity
-- list emoji reactions by activity
-- list groups
-- work packages
-- view configuration
-- view capabilities
-- create activity attachment
-- get grid
-- delete non working day
-- list days
-- delete group
-- download file link
-- lists days
-- update document
-- get a meeting
-- project management
-- open source
-- get meeting
-- get a custom action
-- open file link
-- removes a file link.
-- get help text
 - add attachment to activity
-- list help texts
-- get activity
-- list week days
+- list attachments by activity
+- list non working days
+- api
+- lists days
 - get custom field item
+- get custom field items
+- update document
+- update a week day attributes (not implemented)
+- list actions
+- get group
+- removes a non-working day (not implemented)
+- get the custom field hierarchy items
+- view capabilities
+- view the schema
+- get meeting
+- create attachment
+- view root
+- create a grid
+- get a custom action
 - list documents
+- delete group
+- create activity attachment
+- get a grid
+- create grid
+- removes a file link.
+- list groups
 - create non working day
+- delete attachment
+- list week days
+- delete file link
+- list meetings
+- view custom option
+- view action
+- open file link
+- update activity
+- agile
+- view category
+- view day
+- creates an opening uri of the linked file.
+- view file link
+- view configuration
+- update grid
+- update a non-working day attributes (not implemented)
+- download file link
+- get a custom field hierarchy item's branch
+- list help texts
+- view document
+- time tracking
 - update week days
+- list activity emoji reactions
+- gets a file link.
+- view a week day
+- grid create form
+- execute custom action
+- update week days (not implemented)
+- view global context
+- project management
+- update a grid
+- delete non working day
+- toggle activity emoji reaction
+- get an activity
+- openproject
+- show or validate form
+- list all visible meetings
+- list activity attachments
+- grid update form
+- update group
+- create group
+- get a meeting
+- get activity
+- list days
+- view budget
+- list emoji reactions by activity
+- view attachment
+- open source
+- gantt
+- get a custom field hierarchy item
 - lists all non working days
 - view non working day
-- toggle activity emoji reaction
-- view the schema
-- list meetings
-- view action
-- update group
-- create a grid
-- grid create form
-- openproject
-- list activity attachments
-- creates a download uri of the linked file.
-- get a custom field hierarchy item's branch
-- toggle emoji reaction for an activity
-- list non working days
-- view attachment
-- view budget
-- update week days (not implemented)
-- get a custom field hierarchy item
-- list actions
-- get the custom field hierarchy items
-- view custom option
-- lists week days
-- get group
-- gets a file link.
-- get custom field items
-- list all visible meetings
-- show or validate form
-- delete file link
-- list attachments by activity
-- create attachment
-- view a week day
-- delete attachment
-- update non working day
-- time tracking
-- agile
-- creates a non-working day (not implemented)
-- view category
-- create grid
-- list activity emoji reactions
 - view week day
-- view root
-- get a grid
-- update activity
-- view document
-- create group
-- update a non-working day attributes (not implemented)
+- toggle emoji reaction for an activity
+- list grids
+- work packages
+- update week day
+- get custom field item branch
+- update non working day
+- creates a non-working day (not implemented)
+- get custom action
+- get help text
+- view aggregated result
+- creates a download uri of the linked file.
+- list capabilities
+- lists week days
+- get grid
+- view a non-working day
 slug: openproject-capability
 source_filename: openproject-capability.yaml
 source_heading: Capability Spec

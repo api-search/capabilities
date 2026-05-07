@@ -249,129 +249,129 @@ personas: []
 provider_name: Portainer
 provider_slug: portainer
 search_terms:
-- edgestacklist
-- customtemplatelist
-- update a template
-- edgejobfile
-- collect the log for a specifc task on an edgejob
-- endpointdockerhubstatus
-- create an edgegroup
-- create a new environment(endpoint)
-- fetch a file of an edgejob
-- endpointassociationdelete
-- get template stack file content.
-- create an environment(endpoint) group
-- customtemplatecreatestring
-- list environment(endpoint) groups
-- edgegroupdelete
-- edgejoblist
-- create an edgestack from file
-- endpointgroupdeleteendpoint
-- authenticate with oauth
-- edgestackfile
 - update an environment(endpoint)
-- api
-- endpointdelete
-- inspect an edgestack
-- inspect an edgejob
-- edgejobtaskscollect
-- edgestackcreaterepository
-- endpointinspect
-- logout
-- remove a template
-- post endpoint groups
-- remove an environment
-- edgejobdelete
-- list edgegroups
-- edgegroupcreate
-- create an edgejob from a file
-- remove an environment(endpoint) group
-- endpointdeletebatchdeprecated
-- edgejobtasklogsinspect
-- edgestackdelete
-- inspects an edgegroup
-- remove multiple environments
-- edgejobcreatestring
-- inspect a custom template
-- create a custom template
 - edgejobcreatefile
-- container management
-- edgejobinspect
-- fetch the list of tasks on an edgejob
-- kubernetes
-- updates an edgegroup
-- list available custom templates
-- dockercontainergpusinspect
-- edgestackcreatestring
-- endpointcreate
-- edgestackupdate
-- customtemplatecreaterepository
-- update an environment(endpoint) group
-- endpointgroupdelete
-- customtemplatefile
-- fetch images
-- get environment(endpoint) status
-- inspect an environment(endpoint) group
-- get endpoints id edge stacks stackid
-- de-association an edge environment(endpoint)
-- edgegrouplist
-- edgegroupinspect
-- edgestackinspect
-- authenticateuser
-- post endpoints id docker v2 browse put
-- create an edgestack from a git repository
-- fetch the latest config file content based on custom template's git repository configuration
-- backup
-- fetches the stack file for an edgestack
-- fetches the list of edgestacks
-- upload a file under a specific path on the file system of an environment (endpoint)
-- fetch the log for a specifc task on an edgejob
-- endpointlist
-- endpointedgestatusinspect
-- fetch container gpus data
-- update an edgestack status
-- edgejobtaskslist
-- create an edgejob from a text
-- add an environment(endpoint) to an environment(endpoint) group
-- creates an archive with a system data snapshot that could be used to restore the system.
-- endpointgrouplist
-- portainer
-- dockerdashboard
-- removes environment(endpoint) from an environment(endpoint) group
-- dockerimageslist
-- endpointupdate
-- customtemplatecreatefile
-- update an edgestack
-- customtemplateinspect
-- edgejobupdate
-- update the logs collected from an edge job
-- customtemplategitfetch
-- delete an edgestack
-- deletes an edgegroup
-- fetch docker pull limits
-- get endpoint groups id
-- endpointgroupaddendpoint
-- edgejobtasksclear
 - containers
-- delete an edgejob
-- fetch edgejobs list
-- edgegroupupdate
-- update an edgejob
-- customtemplatedelete
-- inspect an environment(endpoint)
-- docker
-- endpointgroupupdate
+- updates an edgegroup
 - edgestackcreatefile
-- create an edgestack from a text
-- clear the log for a specifc task on an edgejob
-- authenticate
-- edgestackstatusupdate
-- list environments(endpoints)
-- inspect an edge stack for an environment(endpoint)
-- get counters for the dashboard
-- post endpoints id edge jobs jobid logs
-- customtemplateupdate
+- inspect an environment(endpoint) group
+- create an edgestack from a git repository
 - validateoauth
+- api
+- fetch the latest config file content based on custom template's git repository configuration
+- edgejoblist
+- add an environment(endpoint) to an environment(endpoint) group
+- customtemplategitfetch
+- post endpoints id docker v2 browse put
+- get endpoints id edge stacks stackid
+- edgestackinspect
+- authenticate
+- create an edgejob from a text
+- collect the log for a specifc task on an edgejob
+- update an edgestack
+- edgegroupupdate
+- list environments(endpoints)
+- fetch edgejobs list
+- edgejobupdate
+- customtemplatecreaterepository
+- edgestackcreaterepository
+- update a template
+- docker
+- remove an environment(endpoint) group
+- fetch the log for a specifc task on an edgejob
+- inspect an edge stack for an environment(endpoint)
+- remove a template
+- edgegroupdelete
+- edgestackfile
+- remove multiple environments
+- endpointupdate
+- endpointinspect
+- inspect an edgestack
+- creates an archive with a system data snapshot that could be used to restore the system.
+- upload a file under a specific path on the file system of an environment (endpoint)
+- update an edgestack status
+- authenticateuser
+- get template stack file content.
+- customtemplatecreatestring
+- edgejobtasksclear
+- edgestackcreatestring
+- portainer
+- edgejobtaskslist
+- delete an edgestack
+- backup
+- update an edgejob
+- fetches the stack file for an edgestack
+- authenticate with oauth
+- get counters for the dashboard
+- dockerdashboard
+- endpointcreate
+- customtemplatefile
+- customtemplatecreatefile
+- create an environment(endpoint) group
+- customtemplatedelete
+- edgestacklist
+- get environment(endpoint) status
+- endpointgroupdeleteendpoint
+- endpointgroupaddendpoint
+- fetch docker pull limits
+- inspect an environment(endpoint)
+- edgejobdelete
+- dockerimageslist
+- clear the log for a specifc task on an edgejob
+- removes environment(endpoint) from an environment(endpoint) group
+- edgegroupcreate
+- edgejobtasklogsinspect
+- edgejobtaskscollect
+- get endpoint groups id
+- edgestackdelete
+- edgejobcreatestring
+- update the logs collected from an edge job
+- container management
+- fetches the list of edgestacks
+- edgestackstatusupdate
+- endpointedgestatusinspect
+- list available custom templates
+- kubernetes
+- endpointdeletebatchdeprecated
+- post endpoints id edge jobs jobid logs
+- create a new environment(endpoint)
+- inspect a custom template
+- endpointdelete
+- de-association an edge environment(endpoint)
+- create an edgestack from file
+- dockercontainergpusinspect
+- logout
+- endpointgroupupdate
+- endpointgroupdelete
+- fetch images
+- fetch the list of tasks on an edgejob
+- fetch a file of an edgejob
+- delete an edgejob
+- endpointassociationdelete
+- edgejobinspect
+- create an edgestack from a text
+- deletes an edgegroup
+- edgegroupinspect
+- customtemplateinspect
+- remove an environment
+- post endpoint groups
+- create a custom template
+- edgejobfile
+- create an edgejob from a file
+- create an edgegroup
+- customtemplateupdate
+- list environment(endpoint) groups
+- endpointgrouplist
+- edgegrouplist
+- endpointdockerhubstatus
+- fetch container gpus data
+- endpointlist
+- inspects an edgegroup
+- update an environment(endpoint) group
+- list edgegroups
+- customtemplatelist
+- inspect an edgejob
+- edgestackupdate
 slug: portainer-capability
 source_filename: portainer-capability.yaml
 source_heading: Capability Spec

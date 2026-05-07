@@ -21,17 +21,17 @@ personas: []
 provider_name: Horoscope API
 provider_slug: horoscope-api
 search_terms:
-- zodiac
-- get monthly horoscope
-- getmonthlyhoroscope
-- get daily horoscope
-- getdailyhoroscope
-- api
-- horoscope
 - getweeklyhoroscope
+- zodiac
+- get daily horoscope
+- get monthly horoscope
+- horoscope
+- getdailyhoroscope
+- get weekly horoscope
+- getmonthlyhoroscope
+- api
 - astrology
 - content
-- get weekly horoscope
 slug: horoscope-api-capability
 source_filename: horoscope-api-capability.yaml
 source_heading: Capability Spec

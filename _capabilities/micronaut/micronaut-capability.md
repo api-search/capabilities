@@ -61,40 +61,40 @@ personas: []
 provider_name: Micronaut
 provider_slug: micronaut
 search_terms:
-- getloggers
-- getenvironment
-- micronaut stop the application
-- getroutes
-- java
-- micronaut thread dump
-- jvm
-- getinfo
-- serverless
-- micronaut
-- micronaut refresh application configuration
-- cloud native
-- micronaut list application routes
-- refresh
-- listmetrics
-- setloggerlevel
-- getbeans
-- gethealth
 - micronaut set logger level
+- getloggers
 - micronaut list all loggers
+- getlogger
 - api
-- micronaut application health
-- micronaut list available metrics
+- getenvironment
+- cloud native
+- java
+- jvm
+- refresh
+- serverless
+- micronaut application info
+- micronaut get logger level
 - micronaut list application beans
 - getthreaddump
-- getmetric
-- micronaut environment properties
-- micronaut get metric details
-- micronaut get logger level
-- stop
-- microservices
+- gethealth
+- micronaut application health
 - frameworks
-- getlogger
-- micronaut application info
+- micronaut thread dump
+- getmetric
+- micronaut get metric details
+- micronaut list available metrics
+- getinfo
+- micronaut environment properties
+- listmetrics
+- micronaut list application routes
+- getroutes
+- setloggerlevel
+- stop
+- micronaut refresh application configuration
+- microservices
+- getbeans
+- micronaut
+- micronaut stop the application
 slug: micronaut-capability
 source_filename: micronaut-capability.yaml
 source_heading: Capability Spec

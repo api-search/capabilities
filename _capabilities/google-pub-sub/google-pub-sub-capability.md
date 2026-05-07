@@ -85,54 +85,54 @@ personas: []
 provider_name: Google Pub/Sub
 provider_slug: google-pub-sub
 search_terms:
-- google pub/sub publish messages
-- deletesubscription
-- google pub/sub delete a topic
-- google pub/sub get a snapshot
-- listsnapshots
-- listschemas
-- google pub/sub acknowledge messages
-- google pub/sub pull messages
-- modifyackdeadline
-- google pub/sub create a topic
-- createsnapshot
-- publish
-- cloud
-- getsubscription
-- google
-- google pub/sub create a snapshot
-- createsubscription
-- google pub/sub list schemas
-- pub/sub
-- acknowledge
-- gettopic
-- createschema
-- google pub/sub delete a subscription
-- google pub/sub delete a snapshot
-- messaging
-- google pub/sub get a topic
-- updatetopic
-- google pub/sub list subscriptions
-- api
-- pull
-- google pub/sub get a subscription
-- sub
-- event-driven
-- google pub/sub list snapshots
-- listsubscriptions
-- google pub/sub list topics
-- getsnapshot
-- listtopics
-- google pub/sub create a subscription
-- deletesnapshot
-- streaming
-- pub
-- google pub/sub modify acknowledgement deadline
 - deletetopic
-- google cloud
-- google pub/sub create a schema
-- google pub/sub update a topic
+- event-driven
+- gettopic
 - createtopic
+- google pub/sub list subscriptions
+- streaming
+- google pub/sub create a snapshot
+- updatetopic
+- listsnapshots
+- api
+- createsubscription
+- listsubscriptions
+- google pub/sub get a subscription
+- getsnapshot
+- google pub/sub create a schema
+- google pub/sub list topics
+- google
+- google pub/sub update a topic
+- getsubscription
+- deletesubscription
+- createschema
+- deletesnapshot
+- listschemas
+- google pub/sub delete a subscription
+- pull
+- google pub/sub list schemas
+- google pub/sub delete a topic
+- google pub/sub list snapshots
+- pub/sub
+- cloud
+- google pub/sub get a topic
+- google pub/sub pull messages
+- google pub/sub publish messages
+- pub
+- google pub/sub create a topic
+- listtopics
+- acknowledge
+- modifyackdeadline
+- google cloud
+- messaging
+- google pub/sub create a subscription
+- publish
+- createsnapshot
+- google pub/sub acknowledge messages
+- google pub/sub modify acknowledgement deadline
+- google pub/sub delete a snapshot
+- google pub/sub get a snapshot
+- sub
 slug: google-pub-sub-capability
 source_filename: google-pub-sub-capability.yaml
 source_heading: Capability Spec

@@ -225,121 +225,121 @@ personas: []
 provider_name: Ping Identity
 provider_slug: ping-identity
 search_terms:
-- createdavinciapplication
-- post /environments/{environmentid}/flows/{flowid}#clone+json
-- get /environments/{environmentid}/variables
-- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies
-- delete /environments/{environmentid}/flows/{flowid}
-- deletevariablebyid
-- deleteconnectorinstancebyid
-- replacealiasbyflowidandversionid
-- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}
-- get /environments/{environmentid}/flows/{flowid}/versions/{versionid}
-- deleteflowbyid
-- getconnectorinstances
-- getversionbyidusingsnapshotid
-- replacebillofmaterialsbyenvironmentid
-- deletedavinciapplicationbyid
-- get /environments/{environmentid}/davinciapplications
-- get /environments/{environmentid}/snapshots/{snapshotid}/versions
-- get /environments/{environmentid}/totalidentities
-- api
-- replaceenvironmentbyid
-- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}/events
-- authorization
-- getdetailsbyconnectorid
-- put /environments/{environmentid}/billofmaterials
-- delete /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}
-- post /environments/{environmentid}/davinciapplications/{davinciapplicationid}/key
-- getconnectorbyid
-- put /environments/{environmentid}/flows/{flowid}/versions/{versionid}/alias
-- createflowpolicybydavinciapplicationid
-- createconnectorinstancebyid
-- deployflowbyidasdeployjson
-- validateflowbyidasvalidatejson
-- put /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}
-- getenvironments
-- put /environments/{environmentid}
-- deleteversionbyidusingflowid
-- getversionsbyflowid
-- identity
-- get /environments/{environmentid}/flows/{flowid}
-- getvariablebyid
-- createflow
-- get /environments/{environmentid}/flows
-- geteventsbydavinciapplicationidandflowpolicyid
-- cloneflowbyidasclonejson
-- put /environments/{environmentid}/flows/{flowid}
-- delete /environments/{environmentid}/connectorinstances/{connectorinstanceid}
-- authentication
-- deleteflowpolicybyidusingdavinciapplicationid
-- replaceconnectorinstancebyid
-- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}
-- post /environments/{environmentid}/davinciapplications/{davinciapplicationid}/secret
-- post /environments
-- deleteenvironmentbyid
-- delete /environments/{environmentid}/flows/{flowid}/versions/{versionid}
-- post /environments/{environmentid}/variables
-- getdetailsbyflowidandversionid
-- rotatekeybydavinciapplicationid
-- get /environments/{environmentid}/connectorinstances
-- get /environments/{environmentid}/billofmaterials
-- createenvironment
-- updateenabledbyflowid
-- delete /environments/{environmentid}/davinciapplications/{davinciapplicationid}
-- createsnapshot
 - createconnectorinstance
-- post /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies
-- get /environments/{environmentid}/connectors
-- createvariable
-- getflows
-- getenvironmentbyid
-- sso
-- post /environments/{environmentid}/davinciapplications
-- get /environments/{environmentid}/connectorinstances/{connectorinstanceid}
-- getflowpolicybyidusingdavinciapplicationid
-- getconnectorinstancebyid
-- getflowpoliciesbydavinciapplicationid
-- post /environments/{environmentid}/flows
-- get /environments/{environmentid}/variables/{variableid}
-- get /environments/{environmentid}/flows/{flowid}/versions
-- rotatesecretbydavinciapplicationid
-- get /environments/{environmentid}
-- get /environments
-- getconnectors
-- get /environments/{environmentid}/connectors/{connectorid}
-- post /environments/{environmentid}/flows/{flowid}#validate+json
 - getbillofmaterialsbyenvironmentid
-- replaceflowpolicybyidusingdavinciapplicationid
-- getversionsbysnapshotid
-- post /environments/{environmentid}/connectorinstances
-- gettotalidentities
-- replacevariablebyid
-- delete /environments/{environmentid}/variables/{variableid}
-- getflowbyid
-- get /environments/{environmentid}/flows/{flowid}/versions/{versionid}/details
-- put /environments/{environmentid}/connectorinstances/{connectorinstanceid}
-- get /environments/{environmentid}/flowpolicies/{flowpolicyid}
-- getflowpolicybyid
-- put /environments/{environmentid}/davinciapplications/{davinciapplicationid}
-- get /environments/{environmentid}/snapshots/{snapshotid}/versions/{versionid}
 - mfa
+- api
+- put /environments/{environmentid}/flows/{flowid}/versions/{versionid}/alias
+- getversionbyidusingflowid
+- replacebillofmaterialsbyenvironmentid
+- get /environments/{environmentid}/flows/{flowid}/versions/{versionid}/details
+- get /environments/{environmentid}/snapshots/{snapshotid}/versions/{versionid}
+- post /environments/{environmentid}/davinciapplications
+- get /environments/{environmentid}/flowpolicies/{flowpolicyid}
+- get /environments/{environmentid}/flows/{flowid}/versions/{versionid}
+- getconnectorbyid
+- get /environments/{environmentid}/snapshots/{snapshotid}/versions
+- get /environments/{environmentid}/davinciapplications
+- replacedavinciapplicationbyid
 - get /environments/{environmentid}/snapshots/{snapshotid}
+- getflowbyid
+- updateenabledbyflowid
+- authorization
+- delete /environments/{environmentid}
+- post /environments/{environmentid}/flows/{flowid}#deploy+json
+- gettotalidentities
+- rotatekeybydavinciapplicationid
+- get /environments/{environmentid}/variables
+- post /environments
+- get /environments/{environmentid}/totalidentities
+- get /environments/{environmentid}/flows/{flowid}
+- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}
+- deleteversionbyidusingflowid
+- delete /environments/{environmentid}/davinciapplications/{davinciapplicationid}
+- deleteenvironmentbyid
+- post /environments/{environmentid}/flows/{flowid}#clone+json
+- deployflowbyidasdeployjson
+- put /environments/{environmentid}
+- deletedavinciapplicationbyid
+- authentication
+- replaceflowpolicybyidusingdavinciapplicationid
+- createflowpolicybydavinciapplicationid
+- rotatesecretbydavinciapplicationid
+- cloneflowbyidasclonejson
+- replaceflowbyid
+- getsnapshotbyid
+- get /environments/{environmentid}/flows/{flowid}/versions
+- replaceenvironmentbyid
+- get /environments/{environmentid}/billofmaterials
+- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}
 - put /environments/{environmentid}/flows/{flowid}/enabled
+- getconnectorinstances
+- put /environments/{environmentid}/davinciapplications/{davinciapplicationid}
+- put /environments/{environmentid}/billofmaterials
+- put /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}
+- validateflowbyidasvalidatejson
+- replaceconnectorinstancebyid
+- get /environments/{environmentid}
+- createvariable
+- createflow
+- post /environments/{environmentid}/flows/{flowid}#validate+json
+- post /environments/{environmentid}/davinciapplications/{davinciapplicationid}/secret
+- get /environments/{environmentid}/connectors/{connectorid}/details
+- post /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies
+- delete /environments/{environmentid}/flows/{flowid}/versions/{versionid}
+- getdavinciapplications
+- getflowpolicybyid
+- get /environments/{environmentid}/connectors
+- get /environments/{environmentid}/variables/{variableid}
+- get /environments/{environmentid}/connectorinstances/{connectorinstanceid}
+- delete /environments/{environmentid}/connectorinstances/{connectorinstanceid}
+- post /environments/{environmentid}/flows
+- identity
+- post /environments/{environmentid}/connectorinstances
+- getvariablebyid
+- getversionsbysnapshotid
+- createconnectorinstancebyid
+- deletevariablebyid
+- createdavinciapplication
+- delete /environments/{environmentid}/flows/{flowid}
+- put /environments/{environmentid}/flows/{flowid}
+- post /environments/{environmentid}/snapshots
+- deleteflowbyid
+- getdavinciapplicationbyid
+- delete /environments/{environmentid}/variables/{variableid}
+- deleteconnectorinstancebyid
+- delete /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}
+- replacevariablebyid
+- getversionsbyflowid
+- createsnapshot
+- getconnectors
+- getconnectorinstancebyid
+- getflows
+- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies
+- get /environments
+- getdetailsbyconnectorid
+- getflowpolicybyidusingdavinciapplicationid
+- put /environments/{environmentid}/variables/{variableid}
 - post /environments/{environmentid}/connectorinstances/{connectorinstanceid}
 - getvariables
-- getsnapshotbyid
-- getversionbyidusingflowid
-- get /environments/{environmentid}/connectors/{connectorid}/details
-- put /environments/{environmentid}/variables/{variableid}
-- getdavinciapplications
+- geteventsbydavinciapplicationidandflowpolicyid
+- sso
+- deleteflowpolicybyidusingdavinciapplicationid
+- get /environments/{environmentid}/davinciapplications/{davinciapplicationid}/flowpolicies/{flowpolicyid}/events
+- get /environments/{environmentid}/connectors/{connectorid}
+- replacealiasbyflowidandversionid
+- createenvironment
+- get /environments/{environmentid}/connectorinstances
+- getdetailsbyflowidandversionid
+- get /environments/{environmentid}/flows
+- put /environments/{environmentid}/connectorinstances/{connectorinstanceid}
+- getenvironmentbyid
+- getflowpoliciesbydavinciapplicationid
 - ping
-- delete /environments/{environmentid}
-- replacedavinciapplicationbyid
-- post /environments/{environmentid}/snapshots
-- post /environments/{environmentid}/flows/{flowid}#deploy+json
-- getdavinciapplicationbyid
-- replaceflowbyid
+- getenvironments
+- getversionbyidusingsnapshotid
+- post /environments/{environmentid}/variables
+- post /environments/{environmentid}/davinciapplications/{davinciapplicationid}/key
 slug: ping-identity-capability
 source_filename: ping-identity-capability.yaml
 source_heading: Capability Spec

@@ -14,16 +14,16 @@ provider_name: Amazon RoboMaker
 provider_slug: amazon-robomaker
 search_terms:
 - list resources
-- aws
 - aws cloud resource management
 - cloud operations
+- aws
 - amazon robomaker
-- engineer managing amazon robomaker resources
+- amazon robomaker resources
 - automation workflow for amazon robomaker
+- engineer managing amazon robomaker resources
+- robotics
 - simulation
 - list amazon robomaker resources
-- robotics
-- amazon robomaker resources
 slug: amazon-robomaker
 source_filename: amazon-robomaker.yaml
 source_heading: Capability Spec

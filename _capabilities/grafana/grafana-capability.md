@@ -185,105 +185,105 @@ personas: []
 provider_name: Grafana
 provider_slug: grafana
 search_terms:
-- update organization
-- search dashboards and folders
-- create an alert rule
-- create a new user (admin)
-- get data source by uid
-- analytics
-- updatedatasource
-- createfolder
-- getannotations
-- updatefolder
-- alerting
-- get users in organization
-- getuserbyid
-- deletealertrule
-- getdashboardbyuid
-- getfolders
-- create or update a dashboard
-- create organization
-- grafana
-- api
-- observability
-- createupdatedashboard
-- get data source by id
-- update user
-- update data source by id
-- getcontactpoints
-- getalertrule
-- get team by id
-- updateuser
-- add team member
-- delete dashboard by uid
-- getorgbyid
-- addteammember
-- update alert rule
-- getdatasourcebyuid
-- searchusers
-- metrics
-- deletedashboardbyuid
-- monitoring
-- getalertrules
-- getteambyid
-- add user to organization
-- updateteam
-- getteammembers
-- list all folders
-- getfolderbyuid
-- search users
-- get current user
-- find annotations
-- search teams
-- createalertrule
-- delete folder
-- create a contact point
-- searchdashboards
-- dashboards
-- logs
-- admincreateuser
 - createorg
-- createcontactpoint
-- updatealertrule
-- deletedatasourcebyid
-- search organizations
-- createannotation
-- list all data sources
-- create a data source
-- getdatasourcebyid
 - create a folder
-- traces
-- updateorg
-- addorguser
-- createdatasource
-- getcurrentuser
-- update folder
-- delete alert rule
-- delete organization
-- visualization
-- getdatasources
-- searchteams
-- create annotation
-- get team members
-- get dashboard by uid
-- delete team
-- update team
-- get user by id
-- searchorgs
-- get organization by id
-- deletefolder
-- create team
-- deleteannotation
-- deleteteam
-- getorgusers
+- add team member
+- searchdashboards
 - delete annotation
-- delete data source by id
-- get folder by uid
-- list all alert rules
-- get alert rule by uid
-- createteam
+- api
+- deletedashboardbyuid
+- create or update a dashboard
+- createalertrule
+- find annotations
+- getfolderbyuid
+- addorguser
+- search users
+- searchteams
+- createcontactpoint
+- addteammember
+- createannotation
+- getdatasources
+- updatedatasource
+- search organizations
+- deleteannotation
+- delete alert rule
+- search dashboards and folders
+- createfolder
+- deletefolder
+- alerting
+- updateorg
+- searchorgs
+- get data source by id
+- update data source by id
+- get data source by uid
+- visualization
+- delete dashboard by uid
+- create organization
+- delete folder
+- getdashboardbyuid
+- deletedatasourcebyid
+- list all folders
+- search teams
+- admincreateuser
+- grafana
+- deletealertrule
+- create an alert rule
+- getdatasourcebyid
+- get dashboard by uid
+- traces
+- deleteteam
+- delete team
+- metrics
+- get current user
+- update organization
 - list contact points
 - deleteorg
+- delete data source by id
+- get folder by uid
+- create a contact point
+- getorgusers
+- get team by id
+- searchusers
+- getfolders
+- getalertrules
+- update folder
+- monitoring
+- observability
+- update alert rule
+- updateuser
+- get team members
+- createdatasource
+- getdatasourcebyuid
+- get user by id
+- get alert rule by uid
+- analytics
+- add user to organization
+- create team
+- getcurrentuser
+- getalertrule
+- update user
+- create a new user (admin)
+- update team
+- getteammembers
+- getannotations
+- createteam
+- logs
+- dashboards
+- create a data source
+- getuserbyid
+- list all alert rules
+- updatealertrule
+- getteambyid
+- updateteam
+- get users in organization
+- getcontactpoints
+- createupdatedashboard
+- get organization by id
+- delete organization
+- getorgbyid
+- list all data sources
+- create annotation
+- updatefolder
 slug: grafana-capability
 source_filename: grafana-capability.yaml
 source_heading: Capability Spec

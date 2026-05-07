@@ -137,77 +137,77 @@ personas: []
 provider_name: Duo Security
 provider_slug: duo-security
 search_terms:
-- enrolluser
-- associate phone with user
-- creategroup
-- get group (v2)
-- createuser
-- sendverificationpush
-- disassociateuserphone
-- generate bypass codes
 - associateusergroup
-- identity
-- list group users (v2)
-- syncdirectoryuser
-- send verification duo push
-- disassociate phone from user
-- associateuserphone
-- bulkoperations
-- disassociateusertoken
-- listuserdesktopauthenticators
-- create user
 - sync directory user
-- getgroupv2
-- mfa
-- bulk create users
-- security
-- list user hardware tokens
-- listusergroups
-- bulk send users to trash
-- list user directory syncs
+- sendverificationpush
 - create group
-- list user bypass codes
-- update group
-- delete user
-- bulksenduserstotrash
-- listgroups
-- associate group with user
-- list user groups
-- disassociateusergroup
-- api
-- bulkrestoreusers
-- createuserbypasscodes
-- disassociate hardware token from user
-- bulkcreateusers
-- disassociate group from user
-- associate hardware token with user
-- listuserbypasscodes
-- duo
-- list webauthn credentials for user
-- list desktop authenticators for user
-- retrieve verification push result
-- listgroupusersv2
-- update user
-- listuserwebauthncredentials
-- authentication
-- get user
-- listuserphones
-- associateusertoken
-- getuser
+- associateuserphone
+- list user hardware tokens
+- list user directory syncs
+- list group users (v2)
 - bulk operations
-- list users
-- listuserdirectorysyncs
 - listusertokens
-- getverificationpushresponse
 - list groups
-- listusers
-- zero trust
-- updateuser
-- bulk restore users
-- enroll user
+- disassociate hardware token from user
+- getverificationpushresponse
+- creategroup
+- duo
+- bulkrestoreusers
+- api
+- update user
+- associate hardware token with user
+- list webauthn credentials for user
+- disassociate group from user
+- listgroupusersv2
+- listuserdesktopauthenticators
+- createuserbypasscodes
 - list user phones
-- updategroup
+- associateusertoken
+- bulkoperations
+- authentication
+- disassociateuserphone
+- disassociate phone from user
+- disassociateusertoken
+- associate group with user
+- bulk restore users
+- list user groups
+- getuser
+- delete user
+- bulk create users
+- identity
 - deleteuser
+- listuserdirectorysyncs
+- listgroups
+- mfa
+- list users
+- syncdirectoryuser
+- enroll user
+- bulksenduserstotrash
+- associate phone with user
+- bulkcreateusers
+- updategroup
+- enrolluser
+- listuserbypasscodes
+- list desktop authenticators for user
+- updateuser
+- generate bypass codes
+- send verification duo push
+- list user bypass codes
+- get user
+- disassociateusergroup
+- listuserwebauthncredentials
+- listusergroups
+- zero trust
+- createuser
+- create user
+- listuserphones
+- retrieve verification push result
+- listusers
+- bulk send users to trash
+- get group (v2)
+- security
+- getgroupv2
+- update group
 slug: duo-security-capability
 source_filename: duo-security-capability.yaml
 source_heading: Capability Spec

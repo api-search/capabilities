@@ -45,35 +45,35 @@ personas: []
 provider_name: Google Cloud Secret Manager
 provider_slug: google-cloud-secret-manager
 search_terms:
-- deletesecret
-- google cloud secret manager add a secret version
-- createsecret
-- key management
 - google cloud secret manager get a secret
-- manager
-- configuration
-- secret
-- cloud
-- accesssecretversion
-- listsecretversions
-- google
-- getsecret
-- security
-- credentials
-- google cloud secret manager list secrets
-- updatesecret
-- listsecrets
+- google cloud secret manager update a secret
+- google cloud secret manager delete a secret
 - destroysecretversion
-- addsecretversion
-- google cloud secret manager create a secret
+- secrets
+- accesssecretversion
 - api
 - google cloud secret manager list secret versions
-- google cloud secret manager update a secret
-- secrets
+- listsecrets
+- configuration
+- key management
+- google cloud secret manager list secrets
+- google
+- google cloud secret manager add a secret version
+- getsecret
+- google cloud secret manager create a secret
+- listsecretversions
+- secret
+- manager
 - google cloud secret manager destroy a secret version
-- google cloud secret manager delete a secret
+- cloud
+- credentials
+- addsecretversion
+- deletesecret
 - google cloud secret manager access a secret version
+- updatesecret
 - google cloud
+- security
+- createsecret
 slug: google-cloud-secret-manager-capability
 source_filename: google-cloud-secret-manager-capability.yaml
 source_heading: Capability Spec

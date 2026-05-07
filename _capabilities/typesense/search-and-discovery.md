@@ -29,39 +29,39 @@ personas: []
 provider_name: Typesense
 provider_slug: typesense
 search_terms:
-- multi search
-- vector search
-- search documents in a typesense collection with full-text, filters, and facets
-- semantic vector search
+- perform semantic vector similarity search in typesense
+- create a new search collection
+- full-text search
+- execute multiple searches across collections
+- search engine
+- multi vector search
+- open source
+- typo tolerance
 - typesense
 - collection management
-- create collection
-- create a new search collection
-- full-text document search
-- ai search
-- perform semantic vector similarity search in typesense
-- get collection
-- execute multiple typesense searches across different collections in one request
-- create a new typesense collection with a defined schema
 - execute multiple vector searches simultaneously across typesense collections
 - list all typesense search collections
-- open source
-- search documents in a collection with faceting and filtering
-- full-text search
-- get schema and statistics for a typesense collection
-- search collection
-- discovery
-- search
-- perform vector similarity search
-- index a new document into a typesense collection
-- search engine
-- list all search collections
-- execute multiple searches across collections
-- multi vector search
-- typo tolerance
 - index document
-- multi-collection search
+- search documents in a typesense collection with full-text, filters, and facets
+- discovery
+- search collection
+- vector search
+- list all search collections
 - list collections
+- search documents in a collection with faceting and filtering
+- full-text document search
+- execute multiple typesense searches across different collections in one request
+- semantic vector search
+- perform vector similarity search
+- get schema and statistics for a typesense collection
+- create collection
+- multi-collection search
+- search
+- index a new document into a typesense collection
+- get collection
+- multi search
+- create a new typesense collection with a defined schema
+- ai search
 slug: search-and-discovery
 source_filename: search-and-discovery.yaml
 source_heading: Capability Spec

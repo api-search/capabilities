@@ -101,65 +101,65 @@ personas: []
 provider_name: FatSecret
 provider_slug: fatsecret
 search_terms:
-- searchrecipes
-- exercise
-- nutrition
-- calories
-- get food diary entries
-- list saved meals
-- list exercises
-- find food by barcode
-- getfoodentries
-- getweights
-- commit exercise diary entries
-- get recipe by id
-- delete favorite food
-- autocomplete food search
-- monthly food diary summary
-- weight tracking
-- get favorite foods
-- search foods
-- fatsecret
-- recipes
-- create saved meal
-- list recipe types
-- add favorite food
-- food diary
-- list food categories
-- health
-- listfoodbrands
-- addfavoritefood
-- diets
-- api
-- update weight entry
-- macronutrients
-- getfavoritefoods
-- searchfoods
-- createfoodentry
-- listsavedmeals
-- deletefavoritefood
-- fitness
-- search recipes
-- findfoodbybarcode
-- get food by id
-- list food brands
-- listrecipetypes
-- listexercises
-- getexerciseentries
-- get weight history
-- listfoodcategories
-- list food sub-categories
-- getrecipe
-- createsavedmeal
-- getfoodentriesmonth
-- getfood
-- get exercise diary entries
 - commitexerciseentries
-- updateweight
-- listfoodsubcategories
-- create food diary entry
-- autocompletefoods
+- nutrition
+- get food by id
+- getexerciseentries
+- getfood
+- list food brands
+- createfoodentry
 - barcode scanning
+- searchrecipes
+- api
+- autocomplete food search
+- create saved meal
+- get exercise diary entries
+- listrecipetypes
+- search recipes
+- listfoodcategories
+- health
+- get food diary entries
+- recipes
+- listfoodbrands
+- update weight entry
+- exercise
+- getfoodentries
+- get recipe by id
+- get weight history
+- fitness
+- list recipe types
+- delete favorite food
+- listsavedmeals
+- search foods
+- createsavedmeal
+- findfoodbybarcode
+- macronutrients
+- deletefavoritefood
+- searchfoods
+- list food categories
+- diets
+- autocompletefoods
+- getrecipe
+- find food by barcode
+- listfoodsubcategories
+- monthly food diary summary
+- getfavoritefoods
+- list saved meals
+- commit exercise diary entries
+- getfoodentriesmonth
+- listexercises
+- getweights
+- get favorite foods
+- add favorite food
+- list exercises
+- addfavoritefood
+- updateweight
+- food diary
+- weight tracking
+- create food diary entry
+- calories
+- list food sub-categories
+- fatsecret
 slug: fatsecret-capability
 source_filename: fatsecret-capability.yaml
 source_heading: Capability Spec

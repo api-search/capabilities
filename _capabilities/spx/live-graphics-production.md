@@ -53,62 +53,62 @@ personas: []
 provider_name: SPX Graphics
 provider_slug: spx
 search_terms:
-- broadcast
-- call a function in a registered spx extension
-- move the rundown focus to the very first item.
-- graphics
-- call a named function in a custom spx extension. used for advanced graphics like sports scoring, live timing, and custom data-driven graphics.
-- stop item
-- move rundown focus forward
-- continue item
-- move the rundown focus back to the previous item.
-- video production
-- update graphic data
 - load a rundown file into the spx system
-- trigger playback of the currently focused rundown item, making the graphic visible in the live output.
-- browse media asset files
-- load a rundown file into spx. specify the project and rundown name in 'projectname/rundownname' format.
-- continue graphic
-- move rundown focus backward
-- play item
-- list files in a given assets subfolder
-- play graphic
-- advance focus to the next rundown item
-- stop the focused graphic
-- live production
-- set focus to the first rundown item
-- play/stop/continue a template directly
-- move focus to the previous rundown item
-- update the text, images, or other template field values for a specific rundown item identified by project, rundown, and item index.
-- focus next item
-- trigger playback of the focused graphic
-- list files available in a given subfolder of the spx assets directory. useful for populating template dropdowns or media selection.
-- list asset files
-- direct play out
-- directly play, continue, or stop a graphics template without needing it in a rundown. useful for ad-hoc graphics or automated triggers.
-- focus previous item
-- update item
-- invoke extension function
-- media
-- stop the currently focused rundown item
-- issue continue command to the focused item
-- play the currently focused rundown item
-- focus first item
-- move rundown focus to the first item
-- get file list
-- update data fields for a rundown item
-- load and manage spx rundowns
-- direct playout
-- update template field values for a specific item
 - streaming
-- issue a continue command to advance the currently focused graphic to its next animation state or page.
-- stop graphic
-- advance the focused graphic animation
-- stop and remove the currently focused graphic from the live output.
 - advance the rundown focus to the next item.
-- direct template playout without rundown
+- update graphic data
+- play item
+- direct play out
+- focus next item
+- load a rundown file into spx. specify the project and rundown name in 'projectname/rundownname' format.
+- advance focus to the next rundown item
+- video production
+- update item
+- trigger playback of the currently focused rundown item, making the graphic visible in the live output.
+- continue graphic
+- continue item
+- stop and remove the currently focused graphic from the live output.
+- browse media asset files
 - load rundown
+- set focus to the first rundown item
+- move focus to the previous rundown item
+- direct template playout without rundown
+- play/stop/continue a template directly
+- list files available in a given subfolder of the spx assets directory. useful for populating template dropdowns or media selection.
+- call a named function in a custom spx extension. used for advanced graphics like sports scoring, live timing, and custom data-driven graphics.
+- update data fields for a rundown item
 - invoke custom spx extension functions
+- direct playout
+- graphics
+- update the text, images, or other template field values for a specific rundown item identified by project, rundown, and item index.
+- move rundown focus backward
+- live production
+- issue continue command to the focused item
+- move rundown focus forward
+- stop the focused graphic
+- trigger playback of the focused graphic
+- load and manage spx rundowns
+- play the currently focused rundown item
+- list files in a given assets subfolder
+- stop the currently focused rundown item
+- issue a continue command to advance the currently focused graphic to its next animation state or page.
+- move the rundown focus back to the previous item.
+- stop graphic
+- get file list
+- invoke extension function
+- stop item
+- play graphic
+- focus first item
+- media
+- focus previous item
+- move the rundown focus to the very first item.
+- list asset files
+- move rundown focus to the first item
+- directly play, continue, or stop a graphics template without needing it in a rundown. useful for ad-hoc graphics or automated triggers.
+- call a function in a registered spx extension
+- advance the focused graphic animation
+- update template field values for a specific item
+- broadcast
 slug: live-graphics-production
 source_filename: live-graphics-production.yaml
 source_heading: Capability Spec

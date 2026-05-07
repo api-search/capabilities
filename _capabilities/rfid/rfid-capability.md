@@ -45,32 +45,32 @@ personas: []
 provider_name: RFID
 provider_slug: rfid
 search_terms:
-- epcis
-- get single epcis event
-- executenamedquery
-- get named query
-- iot
-- captureevents
 - execute named query
-- delete named query
-- getnamedqueries
-- asset tracking
-- supply chain
-- inventory management
-- deletenamedquery
-- api
-- getevents
+- get named query
 - rfid
-- getnamedquery
-- create named query
-- getevent
-- capture epcis events
-- query epcis events
-- gs1
-- createnamedquery
-- get service information
+- api
+- epcis
+- getnamedqueries
+- supply chain
 - getserviceinfo
 - list named queries
+- gs1
+- getevent
+- executenamedquery
+- capture epcis events
+- get service information
+- iot
+- captureevents
+- delete named query
+- getevents
+- getnamedquery
+- deletenamedquery
+- create named query
+- get single epcis event
+- inventory management
+- asset tracking
+- createnamedquery
+- query epcis events
 slug: rfid-capability
 source_filename: rfid-capability.yaml
 source_heading: Capability Spec

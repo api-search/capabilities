@@ -65,68 +65,68 @@ personas: []
 provider_name: Sandbox Banking
 provider_slug: sandbox-banking
 search_terms:
-- update an existing integration workflow configuration.
-- enumerated value translation tables.
-- update integration
-- delete integration
-- list service requests
-- list field mapping rules for an integration showing source-to-target data transformation configuration.
-- execute a glyue integration workflow with an input payload. returns run id, status, and output from the target banking system.
-- create value mapping
-- available core banking and fintech adapters.
-- list all glyue adapters (fiserv, jack henry, fis, salesforce, ncino, etc.).
-- create a value mapping table.
-- field mapping
-- list value mapping tables for enum translation between systems.
-- list service request adapters in an integration.
-- list integration run history with status, timestamps, and error details.
-- create a new glyue integration workflow connecting a source system to a target banking system.
-- financial services
-- list all glyue integration workflows.
-- add a service request adapter step to an integration.
-- create a field mapping rule for source-to-target data transformation.
-- get full audit detail for a specific integration run including request body, response body, and service request execution log.
-- integration execution endpoint.
-- create a new integration workflow.
-- core banking
-- execute an integration workflow with an input payload.
-- create a field mapping rule that transforms a source field to a target field with optional python transformation.
-- list service request adapter steps configured in an integration, showing the execution sequence.
-- create service request
-- list adapters
 - list integrations
 - delete an integration workflow.
-- open banking
-- individual integration detail and management.
-- ipaas
+- execute an integration workflow with an input payload.
 - create field mapping
-- list all glyue integration workflows. use to discover available banking integrations.
-- get run history
-- list all available glyue adapters including core banking systems (fiserv, jack henry, fis) and fintech connectors.
+- get full details of an integration workflow including service requests, field mappings, and validation rules.
+- create a field mapping rule that transforms a source field to a target field with optional python transformation.
+- list value mapping tables for enum translation between systems.
+- list run history
+- create a new integration workflow.
 - banking integration
-- api integration
-- list value mapping tables used for translating enumerated values between banking systems (e.g., loan type codes).
-- integration workflow lifecycle management.
 - glyue
+- delete integration
 - run integration
-- list field mapping rules for an integration.
-- list value mappings
-- banking
+- get full audit detail for a specific integration run including request body, response body, and service request execution log.
+- add a service request adapter step to an integration workflow (e.g., fiserv createloan, jack henry posttransaction).
 - credit unions
+- list integration run history for audit and compliance review. filter by integration, status, or date range.
+- integration execution endpoint.
+- create service request
+- list all glyue adapters (fiserv, jack henry, fis, salesforce, ncino, etc.).
 - create integration
-- sandbox banking
+- create a value mapping table.
+- list value mappings
+- create a new glyue integration workflow connecting a source system to a target banking system.
+- fintech
+- get integration
+- list field mapping rules for an integration showing source-to-target data transformation configuration.
+- list service request adapter steps configured in an integration, showing the execution sequence.
+- add a service request adapter step to an integration.
+- field mapping
+- integration workflow lifecycle management.
+- execute a glyue integration workflow with an input payload. returns run id, status, and output from the target banking system.
+- integration platform
+- list service requests
+- individual integration detail and management.
+- integration run audit log for glba/ffiec compliance.
+- financial services
+- list adapters
+- get run history
+- ipaas
+- update an existing integration workflow configuration.
+- enumerated value translation tables.
+- get full details of an integration including service requests and field mappings.
+- create value mapping
 - service request adapter configuration.
 - source-to-target field mapping configuration.
-- add a service request adapter step to an integration workflow (e.g., fiserv createloan, jack henry posttransaction).
+- list field mapping rules for an integration.
+- api integration
+- open banking
+- banking
+- update integration
 - list field mappings
-- integration platform
-- list run history
-- get full details of an integration workflow including service requests, field mappings, and validation rules.
-- get full details of an integration including service requests and field mappings.
-- get integration
-- integration run audit log for glba/ffiec compliance.
-- list integration run history for audit and compliance review. filter by integration, status, or date range.
-- fintech
+- available core banking and fintech adapters.
+- list all glyue integration workflows. use to discover available banking integrations.
+- list service request adapters in an integration.
+- sandbox banking
+- list all glyue integration workflows.
+- create a field mapping rule for source-to-target data transformation.
+- list value mapping tables used for translating enumerated values between banking systems (e.g., loan type codes).
+- list all available glyue adapters including core banking systems (fiserv, jack henry, fis) and fintech connectors.
+- core banking
+- list integration run history with status, timestamps, and error details.
 slug: banking-integration-management
 source_filename: banking-integration-management.yaml
 source_heading: Capability Spec

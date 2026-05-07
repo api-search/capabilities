@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- healthcare
-- mcp
-- hipaa
-- compliance
-- api integration
-- get patient
+- search claims
 - governance
 - spec-driven integration
-- get governed patient
+- hipaa
+- compliance
+- get patient
 - ai
-- search claims
+- get governed patient
 - capabilities
+- api integration
+- healthcare
+- mcp
+- naftiko
 slug: compliance-payer-grade-capability
 source_filename: compliance-payer-grade-capability.yaml
 source_heading: Capability Spec

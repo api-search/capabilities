@@ -37,30 +37,30 @@ personas: []
 provider_name: Google Cloud VMware Engine
 provider_slug: google-cloud-vmware-engine
 search_terms:
-- listclusters
-- compute
+- getprivatecloud
+- google cloud vmware engine list network policies
 - google cloud vmware engine get private cloud
-- private cloud
-- createprivatecloud
+- google cloud vmware engine list private clouds
+- listprivateclouds
+- google cloud vmware engine list clusters
+- api
+- createcluster
+- google cloud vmware engine create private cloud
+- google cloud vmware engine delete private cloud
+- deleteprivatecloud
+- migration
 - listnetworkpolicies
 - virtualization
+- google
+- listclusters
+- google cloud vmware engine create cluster
 - cloud
 - engine
-- google
-- google cloud vmware engine create cluster
-- createcluster
-- google cloud vmware engine delete private cloud
-- google cloud vmware engine list network policies
-- api
-- google cloud vmware engine list clusters
-- migration
-- google cloud vmware engine list private clouds
-- getprivatecloud
-- google cloud vmware engine create private cloud
-- vmware
+- compute
+- private cloud
+- createprivatecloud
 - google cloud
-- deleteprivatecloud
-- listprivateclouds
+- vmware
 slug: google-cloud-vmware-engine-capability
 source_filename: google-cloud-vmware-engine-capability.yaml
 source_heading: Capability Spec

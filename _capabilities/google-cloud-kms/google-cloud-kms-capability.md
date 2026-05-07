@@ -45,32 +45,32 @@ personas: []
 provider_name: Google Cloud KMS
 provider_slug: google-cloud-kms
 search_terms:
-- google cloud kms list crypto keys
-- cryptography
-- getkeyring
-- key management
-- encrypt
-- google cloud kms create a crypto key
-- encryption
-- cloud
-- google cloud kms create a key ring
-- google
-- security
-- listkeyrings
-- google cloud kms update a crypto key
-- google cloud kms get a crypto key
-- createkeyring
-- decrypt
 - google cloud kms encrypt data
-- api
-- google cloud kms list key rings
-- updatecryptokey
-- kms
-- google cloud kms get a key ring
-- listcryptokeys
 - createcryptokey
-- google cloud
+- google cloud kms list crypto keys
+- google cloud kms get a crypto key
+- api
+- key management
+- encryption
+- google
+- google cloud kms get a key ring
+- google cloud kms create a crypto key
+- google cloud kms update a crypto key
+- listkeyrings
+- decrypt
+- google cloud kms list key rings
+- createkeyring
+- google cloud kms create a key ring
+- cryptography
 - google cloud kms decrypt data
+- updatecryptokey
+- encrypt
+- getkeyring
+- cloud
+- listcryptokeys
+- google cloud
+- kms
+- security
 - getcryptokey
 slug: google-cloud-kms-capability
 source_filename: google-cloud-kms-capability.yaml

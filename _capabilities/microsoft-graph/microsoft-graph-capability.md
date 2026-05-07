@@ -121,77 +121,77 @@ personas: []
 provider_name: Microsoft Graph
 provider_slug: microsoft-graph
 search_terms:
-- getmicrosoft365apps
-- getserviceannouncement
-- updateadmin
-- microsoft graph delete edge settings
-- getreportsettings
-- getsharepointsettings
-- microsoft graph update admin singleton
-- presentations
-- spreadsheets
-- updatebrowsersitelist
-- microsoft graph delete browser site list
-- identity
-- tasks
-- createadministrativeunit
-- getadminedge
-- getadminconsentrequestpolicy
-- listadministrativeunits
-- microsoft graph get microsoft 365 apps settings
-- microsoft graph get internet explorer mode settings
-- deleteadministrativeunit
-- microsoft graph get service announcement
-- microsoft graph get browser site list
-- contacts
-- microsoft graph update browser site list
-- microsoft graph create administrative unit
-- createbrowsersitelist
-- azure ad
-- microsoft graph delete internet explorer mode settings
-- microsoft graph update microsoft 365 apps settings
-- graph
-- microsoft graph get admin singleton
-- updateadminedge
-- microsoft graph update internet explorer mode settings
-- microsoft graph update sharepoint settings
-- updateadministrativeunit
-- microsoft graph get sharepoint settings
-- getedgeinternetexplorermode
-- getbrowsersitelist
-- updatereportsettings
-- microsoft graph create browser site list
-- updateedgeinternetexplorermode
-- microsoft graph update report settings
-- productivity
-- getadministrativeunit
-- getcopilotadmin
-- deleteedgeinternetexplorermode
-- microsoft graph get edge settings
-- t1
-- microsoft graph update administrative unit
-- deletebrowsersitelist
-- api
 - updatesharepointsettings
-- listbrowsersitelists
 - microsoft graph delete administrative unit
-- getadmin
-- microsoft graph update admin consent request policy
-- microsoft graph get administrative unit
+- microsoft graph get internet explorer mode settings
 - microsoft graph get copilot admin settings
-- deleteadminedge
-- email
-- office 365
-- microsoft graph get admin consent request policy
-- microsoft graph list browser site lists
-- updatemicrosoft365apps
-- documents
-- updateadminconsentrequestpolicy
-- microsoft graph list administrative units
-- microsoft
-- collaboration
-- microsoft graph get report settings
+- getbrowsersitelist
+- getedgeinternetexplorermode
+- microsoft graph get administrative unit
+- microsoft graph get microsoft 365 apps settings
+- api
+- microsoft graph update admin consent request policy
+- spreadsheets
 - microsoft graph update edge settings
+- updateadminconsentrequestpolicy
+- microsoft graph update browser site list
+- microsoft graph delete edge settings
+- microsoft graph delete browser site list
+- microsoft graph update admin singleton
+- productivity
+- microsoft
+- graph
+- microsoft graph update internet explorer mode settings
+- deleteedgeinternetexplorermode
+- microsoft graph delete internet explorer mode settings
+- microsoft graph update report settings
+- getsharepointsettings
+- microsoft graph get sharepoint settings
+- collaboration
+- contacts
+- getadminedge
+- identity
+- listbrowsersitelists
+- microsoft graph get report settings
+- updateedgeinternetexplorermode
+- microsoft graph update sharepoint settings
+- createbrowsersitelist
+- t1
+- getadmin
+- getcopilotadmin
+- microsoft graph update administrative unit
+- deleteadministrativeunit
+- updateadmin
+- getadminconsentrequestpolicy
+- deleteadminedge
+- azure ad
+- documents
+- email
+- presentations
+- getserviceannouncement
+- microsoft graph create administrative unit
+- microsoft graph list administrative units
+- microsoft graph create browser site list
+- deletebrowsersitelist
+- microsoft graph get browser site list
+- microsoft graph update microsoft 365 apps settings
+- createadministrativeunit
+- updateadministrativeunit
+- tasks
+- updateadminedge
+- updatebrowsersitelist
+- updatereportsettings
+- getmicrosoft365apps
+- microsoft graph get edge settings
+- microsoft graph get service announcement
+- microsoft graph get admin consent request policy
+- microsoft graph get admin singleton
+- updatemicrosoft365apps
+- getadministrativeunit
+- office 365
+- microsoft graph list browser site lists
+- listadministrativeunits
+- getreportsettings
 slug: microsoft-graph-capability
 source_filename: microsoft-graph-capability.yaml
 source_heading: Capability Spec

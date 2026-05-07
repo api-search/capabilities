@@ -49,66 +49,66 @@ personas: []
 provider_name: Vineyard
 provider_slug: vineyard
 search_terms:
-- persist object for cluster-wide visibility
-- allocate a raw memory blob in vineyard for low-level data operations
-- get by name
-- distributed systems
-- register object name
-- put object
-- object persistence across cluster instances
-- object metadata inspection
-- blob retrieval
-- big data
-- resolve a name to its objectid
-- connect to vineyard
-- store an object in vineyard shared memory
-- store object
-- retrieve a distributed in-memory object by its objectid
-- resolve a named vineyard object to its objectid
-- persist object
-- remove object
-- lookup object by name
-- retrieve a raw memory blob from vineyard storage
-- connect to a vineyard in-memory data manager server via ipc or tcp
-- data engineering
-- metadata management
-- get object metadata
-- create blob
-- inspect object metadata
-- cloud native
-- kubernetes
-- delete a vineyard object from shared memory
-- connect to server
-- retrieve a raw memory blob by id
-- make a vineyard object visible across all cluster instances
-- remove an object from vineyard memory
-- machine learning
-- connect to a vineyard in-memory server
-- human-readable names for objects
-- allocate a raw memory blob for custom data
-- get blob
-- allocate blob
-- server connection management
-- object access by id
+- retrieve an in-memory object by its id
 - put name
 - retrieve object
-- python
-- cncf
-- get object
-- inspect metadata for a vineyard object including type, size, and cluster location
+- object metadata inspection
+- distributed systems
+- connect to vineyard
 - delete object
-- raw memory blob management
-- persist object globally
-- register a name for an object
-- inspect metadata including typename, size, and location
-- retrieve blob
-- store a python object in vineyard shared memory for zero-copy sharing
-- retrieve an in-memory object by its id
-- name-to-id resolution
+- store object
+- lookup object by name
+- data engineering
+- retrieve a raw memory blob by id
+- register object name
+- allocate a raw memory blob in vineyard for low-level data operations
+- delete a vineyard object from shared memory
+- human-readable names for objects
+- get object
+- object access by id
 - distributed in-memory object storage
+- cloud native
+- name-to-id resolution
+- get by name
+- store a python object in vineyard shared memory for zero-copy sharing
+- create blob
+- inspect metadata for a vineyard object including type, size, and cluster location
+- metadata management
+- persist object for cluster-wide visibility
 - associate a human-readable name with a vineyard objectid for discovery
-- in-memory storage
+- inspect metadata including typename, size, and location
+- connect to a vineyard in-memory server
+- get object metadata
+- machine learning
+- retrieve blob
+- blob retrieval
+- allocate blob
+- big data
+- remove object
+- kubernetes
+- object persistence across cluster instances
+- persist object
+- register a name for an object
+- remove an object from vineyard memory
+- resolve a name to its objectid
+- retrieve a distributed in-memory object by its objectid
+- python
+- allocate a raw memory blob for custom data
 - zero-copy
+- get blob
+- make a vineyard object visible across all cluster instances
+- cncf
+- inspect object metadata
+- connect to server
+- store an object in vineyard shared memory
+- server connection management
+- put object
+- persist object globally
+- resolve a named vineyard object to its objectid
+- raw memory blob management
+- retrieve a raw memory blob from vineyard storage
+- in-memory storage
+- connect to a vineyard in-memory data manager server via ipc or tcp
 slug: data-sharing-workflow
 source_filename: data-sharing-workflow.yaml
 source_heading: Capability Spec

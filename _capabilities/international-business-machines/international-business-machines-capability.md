@@ -37,28 +37,28 @@ personas: []
 provider_name: International Business Machines
 provider_slug: international-business-machines
 search_terms:
-- international business machines delete a bucket
-- putobject
-- machines
-- listobjects
-- cloud
-- enterprise
-- deletebucket
-- business
-- international business machines list objects in a bucket
-- listbuckets
-- international business machines create a bucket
-- artificial intelligence
-- international business machines upload an object
-- api
-- getobject
-- international
-- international business machines get an object
-- createbucket
-- international business machines delete an object
 - ibm
-- international business machines list buckets
+- listobjects
+- international business machines get an object
+- api
+- international business machines delete a bucket
+- listbuckets
+- international
+- artificial intelligence
+- putobject
+- international business machines delete an object
+- business
 - deleteobject
+- createbucket
+- enterprise
+- international business machines list objects in a bucket
+- cloud
+- international business machines upload an object
+- machines
+- international business machines list buckets
+- international business machines create a bucket
+- deletebucket
+- getobject
 slug: international-business-machines-capability
 source_filename: international-business-machines-capability.yaml
 source_heading: Capability Spec

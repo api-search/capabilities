@@ -41,27 +41,27 @@ personas: []
 provider_name: JetBrains
 provider_slug: jetbrains
 search_terms:
-- developer tools
-- jetbrains list projects
+- jetbrains get user
+- jetbrains list roles
+- jetbrains list permissions
+- ci/cd
+- jetbrains list user groups
+- api
 - jetbrains list services
-- listoauth2clients
-- jetbrains list oauth2 clients
+- getuser
 - ide
+- jetbrains list projects
+- developer tools
+- jetbrains list oauth2 clients
+- jetbrains list users
+- jetbrains
 - listusergroups
 - listroles
-- ci/cd
-- api
-- jetbrains list permissions
-- jetbrains
-- jetbrains list roles
-- listprojects
-- jetbrains list users
-- jetbrains get user
-- jetbrains list user groups
-- getuser
-- listusers
-- listservices
 - listpermissions
+- listusers
+- listoauth2clients
+- listprojects
+- listservices
 slug: jetbrains-capability
 source_filename: jetbrains-capability.yaml
 source_heading: Capability Spec

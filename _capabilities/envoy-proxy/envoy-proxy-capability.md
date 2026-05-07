@@ -113,62 +113,62 @@ personas: []
 provider_name: Envoy Proxy
 provider_slug: envoy-proxy
 search_terms:
-- envoy proxy get cluster information
-- getinitdump
-- postlogging
-- getclusters
-- envoy proxy tap traffic
-- gateways
-- getready
-- postruntimemodify
-- gethelp
-- envoy proxy resume health checks
-- envoy proxy fail health checks
-- envoy proxy list tls certificates
-- envoy proxy get statistics
-- proxies
-- getlisteners
-- getruntime
-- envoy proxy get server information
-- envoy
-- posttap
-- getstatsrecentlookups
-- getcerts
-- getmemory
-- gethotrestartversion
-- postheapprofiler
-- envoy proxy get runtime settings
-- envoy proxy list available endpoints
-- postdrainlisteners
-- postcpuprofiler
-- envoy proxy view or modify log levels
-- envoy proxy enable or disable heap profiler
-- envoy proxy get recent stat lookups
-- getcontention
-- getserverinfo
-- envoy proxy list listeners
-- envoy proxy get hot restart version
-- api
-- envoy proxy enable or disable cpu profiler
-- postquitquitquit
-- envoy proxy dump current configuration
-- getstats
-- envoy proxy reset counters
-- envoy proxy admin home
-- getconfigdump
-- proxy
-- envoy proxy dump initialization configuration
-- posthealthcheckok
-- postresetcounters
-- getstatsprometheus
-- posthealthcheckfail
-- envoy proxy get statistics in prometheus format
-- envoy proxy modify runtime settings
-- envoy proxy check server readiness
-- getadminhome
-- envoy proxy get memory usage
-- envoy proxy drain listeners
 - envoy proxy shutdown server
+- getconfigdump
+- postdrainlisteners
+- envoy proxy resume health checks
+- getmemory
+- api
+- envoy proxy list listeners
+- envoy proxy drain listeners
+- posttap
+- envoy proxy reset counters
+- getstatsprometheus
+- gateways
+- envoy proxy get runtime settings
+- envoy proxy tap traffic
+- getadminhome
+- envoy proxy list available endpoints
+- gethotrestartversion
+- envoy proxy check server readiness
+- envoy proxy get server information
+- getclusters
+- envoy proxy get memory usage
+- envoy proxy modify runtime settings
+- envoy proxy get hot restart version
+- getstats
+- postcpuprofiler
+- envoy proxy enable or disable heap profiler
+- envoy proxy view or modify log levels
+- getcontention
+- postheapprofiler
+- postlogging
+- postresetcounters
+- envoy proxy fail health checks
+- envoy proxy get statistics
+- getruntime
+- postquitquitquit
+- posthealthcheckfail
+- envoy proxy dump current configuration
+- envoy proxy enable or disable cpu profiler
+- gethelp
+- envoy
+- getready
+- envoy proxy get statistics in prometheus format
+- envoy proxy dump initialization configuration
+- getlisteners
+- envoy proxy get cluster information
+- envoy proxy list tls certificates
+- postruntimemodify
+- posthealthcheckok
+- getinitdump
+- getcerts
+- getserverinfo
+- envoy proxy admin home
+- proxies
+- envoy proxy get recent stat lookups
+- getstatsrecentlookups
+- proxy
 - envoy proxy get mutex contention stats
 slug: envoy-proxy-capability
 source_filename: envoy-proxy-capability.yaml

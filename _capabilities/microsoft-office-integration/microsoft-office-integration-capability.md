@@ -33,25 +33,25 @@ personas: []
 provider_name: Microsoft Office Integration
 provider_slug: microsoft-office-integration
 search_terms:
+- startsubscription
+- microsoft office integration list available content
+- stopsubscription
+- listavailablecontent
 - microsoft office integration list notifications
 - microsoft 365
-- integration
-- microsoft office integration list available content
-- listdlpsensitivetypes
 - microsoft office integration start a subscription
-- stopsubscription
-- office
-- microsoft office integration list current subscriptions
-- microsoft office integration
 - api
-- microsoft office integration stop a subscription
 - listsubscriptions
-- office 365
-- listavailablecontent
-- startsubscription
+- integration
 - microsoft
-- listnotifications
+- listdlpsensitivetypes
+- microsoft office integration stop a subscription
 - microsoft office integration retrieve resource friendly names
+- microsoft office integration
+- listnotifications
+- microsoft office integration list current subscriptions
+- office
+- office 365
 slug: microsoft-office-integration-capability
 source_filename: microsoft-office-integration-capability.yaml
 source_heading: Capability Spec

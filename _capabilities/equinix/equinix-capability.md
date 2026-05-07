@@ -17,18 +17,18 @@ personas: []
 provider_name: Equinix
 provider_slug: equinix
 search_terms:
-- networking
 - renew access tokens
-- equinix
-- generate new access token
-- data centers
+- refreshoauth2accesstoken
+- networking
 - colocation
+- generate new access token
+- bare metal
 - getoauth2accesstoken
+- equinix
+- interconnection
 - api
 - cloud infrastructure
-- bare metal
-- interconnection
-- refreshoauth2accesstoken
+- data centers
 slug: equinix-capability
 source_filename: equinix-capability.yaml
 source_heading: Capability Spec

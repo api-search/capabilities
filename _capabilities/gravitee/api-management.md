@@ -61,63 +61,63 @@ personas: []
 provider_name: Gravitee
 provider_slug: gravitee
 search_terms:
-- list all applications registered on the platform.
-- stop a gravitee api on the gateway.
-- gravitee
-- get an api by id.
-- application registry.
-- api definitions.
-- subscriptions for an api.
-- single api definition.
-- delete an api.
-- list platform audit events.
-- create a new gravitee api definition.
-- api lifecycle controls.
-- deploy an api definition to the gateway.
-- start an api on the gateway.
-- platform users.
-- get platform-wide configuration settings.
-- get api
-- list platform users.
-- graphql
-- list api plans
-- register a new application.
-- plans for an api.
-- platform configuration.
-- update api
-- list plans defined for an api.
-- delete a gravitee api definition.
-- list plans for an api.
-- open source
-- list all applications.
-- create api
-- list subscriptions for an api.
 - list all apis.
-- start a gravitee api on the gateway.
-- start api
+- list plans defined for an api.
+- list all applications registered on the platform.
 - delete api
-- stop api
-- deploy a gravitee api to the gateway.
-- update a gravitee api definition.
-- administration
-- create a new plan for an api.
-- list api subscriptions
-- api management
-- api gateway
-- list apis
-- create plan
-- stop an api on the gateway.
-- list users
-- get platform-wide configuration.
-- list audit events
-- list all apis on the gravitee platform.
-- get a gravitee api definition by id.
+- delete a gravitee api definition.
+- register a new application.
+- update api
+- start a gravitee api on the gateway.
+- get an api by id.
+- list api plans
+- create api
+- gravitee
+- start an api on the gateway.
+- list platform users.
 - create application
-- create a new api definition.
-- audit events.
+- deploy a gravitee api to the gateway.
+- deploy an api definition to the gateway.
+- get api
+- graphql
+- open source
+- api management
 - deploy api
-- list applications
+- stop a gravitee api on the gateway.
+- get platform-wide configuration settings.
+- get platform-wide configuration.
+- list subscriptions for an api.
+- stop api
+- plans for an api.
+- administration
+- list all applications.
+- list users
 - get configuration
+- stop an api on the gateway.
+- list platform audit events.
+- api gateway
+- list plans for an api.
+- subscriptions for an api.
+- get a gravitee api definition by id.
+- create a new plan for an api.
+- platform users.
+- delete an api.
+- api definitions.
+- start api
+- single api definition.
+- api lifecycle controls.
+- list applications
+- audit events.
+- list all apis on the gravitee platform.
+- update a gravitee api definition.
+- platform configuration.
+- create plan
+- list audit events
+- create a new gravitee api definition.
+- application registry.
+- list apis
+- list api subscriptions
+- create a new api definition.
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

@@ -13,18 +13,18 @@ personas: []
 provider_name: Appian
 provider_slug: appian
 search_terms:
+- appian get application package details
+- bpm
+- enterprise software
+- workflow
+- automation
 - getapplicationpackages
+- business process management
+- api
+- rpa
+- process automation
 - low-code
 - appian
-- business process management
-- process automation
-- appian get application package details
-- api
-- enterprise software
-- bpm
-- workflow
-- rpa
-- automation
 slug: appian-capability
 source_filename: appian-capability.yaml
 source_heading: Capability Spec

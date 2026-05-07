@@ -37,37 +37,37 @@ personas: []
 provider_name: western-digital
 provider_slug: western-digital
 search_terms:
-- browse and manage files and folders on the nas device.
-- create a shareable url for one or more files on my cloud home. optionally set an expiration date.
-- file management
-- list files and folders in a directory.
-- consumer
-- search files by parent
-- permanently delete a file or folder.
-- search files within a specified parent folder.
-- upload and download file content.
-- search for files by parent folder.
-- operate on a specific file or folder.
-- permanently delete a file or folder from my cloud home.
-- cloud storage
 - download file
-- search for files within a specified parent folder on my cloud home. useful for locating files in nested directory structures.
-- get file
-- download the binary content of a file.
-- upload a file or create a folder.
-- get metadata for a file or folder.
-- create share
+- sharing
+- download the content of a file stored on my cloud home.
+- cloud storage
 - delete file
+- search for files within a specified parent folder on my cloud home. useful for locating files in nested directory structures.
+- create and manage file share links.
+- upload and download file content.
+- get metadata for a file or folder.
+- create a shareable url for one or more files on my cloud home. optionally set an expiration date.
+- permanently delete a file or folder from my cloud home.
+- nas
+- list files and folders in a directory.
+- download the binary content of a file.
+- browse and manage files and folders on the nas device.
+- upload a file or create a folder.
+- get file
+- list files
+- permanently delete a file or folder.
+- search for files by parent folder.
+- consumer
+- list files and folders in a my cloud home directory. pass "root" as folder_id to list the root directory.
+- create file
+- operate on a specific file or folder.
+- create share
+- search files by parent
+- search files within a specified parent folder.
+- file management
+- create a shareable link for one or more files.
 - upload a new file or create a folder on my cloud home.
 - get metadata (name, size, type, dates) for a specific file or folder.
-- create and manage file share links.
-- nas
-- create file
-- create a shareable link for one or more files.
-- download the content of a file stored on my cloud home.
-- list files and folders in a my cloud home directory. pass "root" as folder_id to list the root directory.
-- list files
-- sharing
 slug: cloud-storage-management
 source_filename: cloud-storage-management.yaml
 source_heading: Capability Spec

@@ -249,128 +249,128 @@ personas: []
 provider_name: freshdesk
 provider_slug: freshdesk
 search_terms:
-- list all roles
-- bulk delete tickets
-- create a product
-- getticket
-- create an outbound email ticket
-- deletetimeentry
-- list conversations on a ticket
-- listticketconversations
-- getemailconfig
-- getrole
-- view a group
-- createproduct
-- listsatisfactionratings
-- delete a conversation
-- list all groups
-- updatecontact
-- update a group
-- delete a group
-- listagents
-- bulkdeletetickets
-- update a ticket
-- toggletimer
-- api
-- update a contact
-- create a group
-- mergetickets
-- updateconversation
-- list time entries for a ticket
-- creategroup
-- delete an agent
-- createtimeentry
-- createcompany
-- bulk update tickets
-- deleteagent
-- merge tickets
-- createnote
-- listcompanyfields
-- listalltimeentries
-- list all tickets
+- update a time entry
 - restoreticket
-- restorecontact
-- watch a ticket
-- createticket
-- list all company fields
-- create a contact
-- delete a ticket
-- listgroups
-- list associated tickets
-- listroles
-- list all time entries
-- updateagent
-- listproducts
-- listslapolicies
-- forwardticket
-- createsatisfactionrating
-- exportcontacts
-- listcompanies
 - updateproduct
-- getproduct
-- view an email configuration
+- createcontact
+- api
+- list watchers on a ticket
+- list all satisfaction ratings
 - getgroup
 - listcontactfields
-- list all agents
-- reply to a ticket
-- updategroup
-- listemailconfigs
-- create a satisfaction rating
-- list all companies
-- merge contacts
-- update a company
-- update a product
-- toggle a timer
-- list all email configurations
-- deleteconversation
-- listtickettimeentries
-- list all products
-- getcontact
-- createcontact
-- freshdesk
-- view a role
-- updateticket
-- updatetimeentry
-- list all satisfaction ratings
-- update a time entry
-- delete a company
-- delete a contact
-- create a time entry
-- restore a deleted ticket
-- replytoticket
-- updatecompany
-- listassociatedtickets
-- forward a ticket
-- listticketwatchers
-- list all sla policies
-- create a company
-- view a contact
 - deleteticket
-- listcontacts
-- update an agent
-- create a ticket
-- deletegroup
-- create a note on a ticket
-- getcompany
-- export contacts
-- createoutboundemail
-- view a company
+- getrole
+- create a group
+- list all email configurations
+- listcompanies
+- listticketwatchers
 - getagent
-- mergecontacts
-- update a conversation
+- listticketconversations
+- view a company
+- list conversations on a ticket
+- updateconversation
 - bulkupdatetickets
-- deletecompany
+- forwardticket
+- deletegroup
+- create a ticket
+- createsatisfactionrating
+- bulk delete tickets
+- view a role
+- getemailconfig
+- creategroup
+- listassociatedtickets
+- list all products
+- create a contact
+- deleteconversation
 - view an agent
-- view a product
-- view a ticket
+- listgroups
 - delete a time entry
+- update a contact
+- getproduct
+- merge tickets
+- updateticket
+- update an agent
+- list time entries for a ticket
+- deletecompany
+- delete a conversation
+- delete a ticket
 - list all contact fields
-- deletecontact
+- create a product
+- deleteagent
+- list all tickets
+- restore a deleted ticket
+- list all companies
+- list all roles
+- view a contact
+- toggle a timer
 - list all contacts
+- freshdesk
+- listalltimeentries
+- deletecontact
+- view a ticket
 - listtickets
-- list watchers on a ticket
+- listsatisfactionratings
+- listcontacts
+- create a note on a ticket
+- merge contacts
+- updatetimeentry
+- watch a ticket
+- list all groups
+- delete an agent
+- delete a group
+- getcontact
+- create a company
+- listslapolicies
+- forward a ticket
+- update a group
+- create a time entry
+- createtimeentry
+- updateagent
+- create a satisfaction rating
+- mergetickets
+- listproducts
+- listagents
+- restorecontact
+- update a product
+- createnote
+- createticket
+- listemailconfigs
+- list all time entries
+- createoutboundemail
+- create an outbound email ticket
 - restore a deleted contact
+- view a group
+- updatecompany
+- createproduct
+- list all sla policies
+- exportcontacts
 - watchticket
+- bulk update tickets
+- getticket
+- list all agents
+- list all company fields
+- toggletimer
+- update a company
+- listcompanyfields
+- updatecontact
+- update a conversation
+- list associated tickets
+- reply to a ticket
+- update a ticket
+- updategroup
+- bulkdeletetickets
+- export contacts
+- replytoticket
+- listtickettimeentries
+- delete a contact
+- view an email configuration
+- mergecontacts
+- delete a company
+- deletetimeentry
+- listroles
+- view a product
+- getcompany
+- createcompany
 slug: freshdesk-capability
 source_filename: freshdesk-capability.yaml
 source_heading: Capability Spec

@@ -57,39 +57,39 @@ personas: []
 provider_name: Google Cloud Dataproc
 provider_slug: google-cloud-dataproc
 search_terms:
+- google cloud dataproc create a workflow template
+- deletecluster
+- google cloud dataproc list workflow templates
+- hadoop
+- getcluster
+- api
+- createcluster
+- google cloud dataproc update a cluster
+- listjobs
+- canceljob
+- google
+- google cloud dataproc delete a cluster
+- createworkflowtemplate
 - listclusters
 - google cloud dataproc get a cluster
-- google cloud dataproc list clusters
 - dataproc
-- deletecluster
-- listjobs
-- big data
-- google cloud dataproc create a cluster
-- listworkflowtemplates
-- createworkflowtemplate
-- google cloud dataproc delete a cluster
-- cloud
-- google
-- google cloud dataproc get a job
-- google cloud dataproc cancel a job
-- google cloud dataproc create a workflow template
-- google cloud dataproc update a cluster
-- createcluster
-- hadoop
+- updatecluster
 - google cloud dataproc submit a job
-- google cloud dataproc list jobs
-- api
 - submitjob
+- google cloud dataproc list clusters
+- big data
+- google cloud dataproc list jobs
+- google cloud dataproc get a job
+- google cloud dataproc delete a job
 - data processing
-- canceljob
+- google cloud dataproc cancel a job
+- google cloud dataproc create a cluster
+- spark
+- cloud
 - deletejob
 - getjob
-- updatecluster
-- google cloud dataproc delete a job
-- spark
+- listworkflowtemplates
 - google cloud
-- getcluster
-- google cloud dataproc list workflow templates
 slug: google-cloud-dataproc-capability
 source_filename: google-cloud-dataproc-capability.yaml
 source_heading: Capability Spec

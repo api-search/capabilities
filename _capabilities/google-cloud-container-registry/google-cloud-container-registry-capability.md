@@ -33,30 +33,30 @@ personas: []
 provider_name: Google Cloud Container Registry
 provider_slug: google-cloud-container-registry
 search_terms:
+- google cloud container registry get image manifest
+- containers
 - listcatalog
+- google cloud container registry delete image manifest
+- ci/cd
+- api
+- getmanifest
+- deletemanifest
+- registry
+- google cloud container registry push image manifest
+- google
+- registries
 - listtags
+- getblob
+- container
+- google cloud container registry list repositories
+- putmanifest
+- cloud
 - storage
 - images
-- deletemanifest
-- container
-- google cloud container registry delete image manifest
-- cloud
-- google
-- containers
-- google cloud container registry list image tags
-- docker
-- registry
-- google cloud container registry list repositories
-- ci/cd
-- registries
-- api
-- putmanifest
-- getmanifest
 - google cloud container registry get image blob
-- google cloud container registry push image manifest
-- getblob
-- google cloud container registry get image manifest
+- google cloud container registry list image tags
 - google cloud
+- docker
 slug: google-cloud-container-registry-capability
 source_filename: google-cloud-container-registry-capability.yaml
 source_heading: Capability Spec

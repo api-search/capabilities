@@ -34,37 +34,37 @@ provider_name: Telefoon
 provider_slug: telefoon
 search_terms:
 - gdpr-compliant sms messaging
-- create conference
-- list messages
-- cpaas
-- europe
-- send an sms in european markets with branded sender id and gdpr consent reference for compliance
-- number provisioning
-- send an sms with optional branded sender id and gdpr consent reference
-- eu voice call management
-- list voice calls
-- list eu sms messages sent or received
-- voice
-- initiate an outbound eu call with multi-language tts support
-- make eu call
 - eu conference calls
+- number provisioning
+- gdpr compliant
+- telephony
+- list voice calls
+- europe
 - sms
 - initiate call
-- telephony
-- messaging
-- eu data residency
+- cpaas
+- list eu sms messages sent or received
 - send message
-- gdpr compliant
-- netherlands
-- list calls
-- create a new eu conference call room
-- send eu sms
-- belgium
-- initiate an outbound call via eu networks with multi-language tts (nl-nl, fr-be, de-de, en-gb)
-- list conferences
-- create a conference room
 - list eu voice calls with optional status and direction filters
 - list eu conference calls
+- send an sms in european markets with branded sender id and gdpr consent reference for compliance
+- list calls
+- list conferences
+- belgium
+- eu data residency
+- initiate an outbound call via eu networks with multi-language tts (nl-nl, fr-be, de-de, en-gb)
+- list messages
+- eu voice call management
+- send an sms with optional branded sender id and gdpr consent reference
+- initiate an outbound eu call with multi-language tts support
+- create a new eu conference call room
+- voice
+- make eu call
+- create conference
+- send eu sms
+- messaging
+- create a conference room
+- netherlands
 slug: eu-communications
 source_filename: eu-communications.yaml
 source_heading: Capability Spec

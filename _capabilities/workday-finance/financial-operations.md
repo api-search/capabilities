@@ -57,53 +57,53 @@ personas: []
 provider_name: Workday Finance
 provider_slug: workday-finance
 search_terms:
-- list financial accounts
-- list journal entries
-- list requisitions
-- create supplier invoice
-- accounts payable
-- financial dimension worktag management
-- purchase order management
-- list general ledger accounts in workday finance
-- create a supplier invoice
-- list supplier accounts in the procurement system
-- list cost center organizations
-- finance
-- list purchase requisitions
-- list purchase orders, optionally filtered by status
-- cloud
-- accounting
-- create a new purchase order for a supplier
-- fiscal period management
-- enterprise
 - create a new journal entry in the general ledger
-- purchase requisition management
-- create purchase order
-- general ledger account management
-- list financial periods
-- erp
-- workday
-- financial management
-- general ledger
+- list supplier accounts in the procurement system
+- procurement
 - list suppliers
-- create journal entry
-- list cost centers
-- create a purchase order
-- list journal entries, optionally filtered by period
-- list worktags
-- list supplier invoices
-- supplier account management
-- supplier invoice processing
+- list cost center organizations
+- accounting
+- cost center organization management
+- general ledger
+- accounts payable
 - list accounts
-- list supplier invoices for accounts payable processing
-- create a new supplier invoice for payment processing
+- workday
+- create a new purchase order for a supplier
+- list cost centers
 - list purchase orders
+- list supplier invoices
+- finance
+- financial dimension worktag management
+- list worktags
+- create a supplier invoice
+- list fiscal periods and their open/close status
+- financial management
+- list financial accounts
+- general ledger account management
+- list journal entries, optionally filtered by period
+- list supplier invoices for accounts payable processing
+- list purchase requisitions
 - journal entry management
 - list financial dimension worktags
-- cost center organization management
-- list fiscal periods and their open/close status
 - create a journal entry
-- procurement
+- enterprise
+- purchase order management
+- list requisitions
+- cloud
+- list journal entries
+- fiscal period management
+- create journal entry
+- create purchase order
+- create a new supplier invoice for payment processing
+- supplier account management
+- list financial periods
+- erp
+- create a purchase order
+- list purchase orders, optionally filtered by status
+- supplier invoice processing
+- create supplier invoice
+- list general ledger accounts in workday finance
+- purchase requisition management
 slug: financial-operations
 source_filename: financial-operations.yaml
 source_heading: Capability Spec

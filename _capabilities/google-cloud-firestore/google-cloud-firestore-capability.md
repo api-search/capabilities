@@ -49,35 +49,35 @@ personas: []
 provider_name: Google Cloud Firestore
 provider_slug: google-cloud-firestore
 search_terms:
+- deletedocument
+- google cloud firestore delete a database
+- createdatabase
+- google cloud firestore list databases
+- api
+- google cloud firestore create a document
+- google cloud firestore run a query
+- google cloud firestore update a document
+- google cloud firestore create a database
+- firestore
+- deletedatabase
+- google
 - createdocument
+- google cloud firestore list documents
+- google cloud firestore delete a document
+- documents
+- google cloud firestore get a document
+- database
+- cloud
+- listdatabases
+- google cloud firestore get a database
+- listdocuments
 - updatedocument
+- nosql
+- getdatabase
+- getdocument
+- google cloud
 - real-time
 - runquery
-- google cloud firestore list databases
-- getdocument
-- firestore
-- cloud
-- google
-- google cloud firestore delete a document
-- listdocuments
-- google cloud firestore run a query
-- google cloud firestore list documents
-- getdatabase
-- nosql
-- deletedatabase
-- google cloud firestore create a database
-- google cloud firestore delete a database
-- database
-- createdatabase
-- api
-- deletedocument
-- google cloud firestore update a document
-- google cloud firestore get a database
-- listdatabases
-- documents
-- google cloud firestore create a document
-- google cloud
-- google cloud firestore get a document
 slug: google-cloud-firestore-capability
 source_filename: google-cloud-firestore-capability.yaml
 source_heading: Capability Spec

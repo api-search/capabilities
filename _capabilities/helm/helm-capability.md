@@ -49,34 +49,34 @@ personas: []
 provider_name: Helm
 provider_slug: helm
 search_terms:
-- container orchestration
-- listallcharts
-- uploadchart
-- helm download chart package
-- helm delete chart version
-- downloadchartpackage
-- devops
-- deletechartversion
-- helm download chart provenance file
-- helm get specific chart version
-- getchartversion
 - helm get repository index
-- cloud native
-- kubernetes
-- helm get chart versions
-- package manager
-- helm upload provenance file
-- gethealth
-- api
-- helm list all charts
-- uploadprovenance
-- helm get repository health
-- helm
-- charts
-- downloadchartprovenance
+- devops
 - getchartversions
-- helm upload chart package
 - getrepositoryindex
+- uploadprovenance
+- charts
+- api
+- deletechartversion
+- cloud native
+- package manager
+- helm download chart package
+- listallcharts
+- helm get repository health
+- helm get chart versions
+- uploadchart
+- downloadchartpackage
+- helm get specific chart version
+- helm list all charts
+- helm upload provenance file
+- kubernetes
+- helm delete chart version
+- gethealth
+- container orchestration
+- helm upload chart package
+- getchartversion
+- helm download chart provenance file
+- downloadchartprovenance
+- helm
 slug: helm-capability
 source_filename: helm-capability.yaml
 source_heading: Capability Spec

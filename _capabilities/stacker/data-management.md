@@ -41,42 +41,42 @@ personas: []
 provider_name: Stacker
 provider_slug: stacker
 search_terms:
-- stacker accounts
-- no-code
-- delete record
-- low-code
-- create or update up to 1000 stacker records in a single operation
-- list all objects (tables) in a stacker application stack
-- create a new record in a stacker object
-- update record fields
-- update one or more fields on an existing stacker record
-- search, filter, and paginate records within a stacker object
-- portals
-- get record
-- objects (tables) in a stacker stack
+- create a new record
 - get a single stacker record by sid
 - list all accounts accessible by the integration key
-- update record
-- list all objects for a given stack
-- get a record by sid
-- records
-- application development
-- search records
-- bulk upsert records
-- search and filter records
-- list objects
-- create or update up to 1000 records
-- records within a stacker object
-- permanently delete a stacker record
-- create a new record
-- single record operations
-- data management
-- workflow automation
-- list all stacker accounts accessible via the integration key
 - create record
+- get a record by sid
+- workflow automation
+- search, filter, and paginate records within a stacker object
+- objects (tables) in a stacker stack
 - list accounts
-- delete a record
 - bulk record operations
+- low-code
+- search records
+- portals
+- data management
+- get record
+- create or update up to 1000 records
+- permanently delete a stacker record
+- search and filter records
+- delete record
+- records within a stacker object
+- update record
+- single record operations
+- create a new record in a stacker object
+- update one or more fields on an existing stacker record
+- stacker accounts
+- bulk upsert records
+- list all objects (tables) in a stacker application stack
+- records
+- delete a record
+- list all objects for a given stack
+- update record fields
+- create or update up to 1000 stacker records in a single operation
+- application development
+- list objects
+- no-code
+- list all stacker accounts accessible via the integration key
 slug: data-management
 source_filename: data-management.yaml
 source_heading: Capability Spec

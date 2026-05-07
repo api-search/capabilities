@@ -14,19 +14,19 @@ provider_name: Amazon Panorama
 provider_slug: amazon-panorama
 search_terms:
 - list resources
-- list and manage openapi.yml resources
-- computer vision
-- aws
-- amazon panorama
-- core api workflow
-- cameras
-- developer using amazon panorama apis
-- primary amazon panorama resources
-- edge ml
-- industrial iot
-- list openapi.yml
-- Developer
 - list amazon panorama resources
+- aws
+- list openapi.yml
+- industrial iot
+- computer vision
+- edge ml
+- primary amazon panorama resources
+- cameras
+- core api workflow
+- developer using amazon panorama apis
+- list and manage openapi.yml resources
+- amazon panorama
+- Developer
 slug: amazon-panorama-workflow
 source_filename: amazon-panorama-workflow.yaml
 source_heading: Capability Spec

@@ -30,20 +30,20 @@ provider_name: Quora
 provider_slug: quora
 search_terms:
 - create a response
-- getpointshistory
-- q&a
 - quora
-- getcurrentbalance
-- create a chat completion
-- api
-- get current point balance
 - get points usage history
-- list models
-- listmodels
+- create a chat completion
 - community
+- getcurrentbalance
 - knowledge
-- createchatcompletion
+- getpointshistory
+- list models
+- get current point balance
+- api
+- q&a
 - createresponse
+- listmodels
+- createchatcompletion
 slug: quora-capability
 source_filename: quora-capability.yaml
 source_heading: Capability Spec

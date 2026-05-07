@@ -33,39 +33,39 @@ personas: []
 provider_name: TikTok for Developers
 provider_slug: tiktok-for-developers
 search_terms:
-- query tiktok video metadata by specific video ids
-- get authenticated user's tiktok profile
-- tiktok
 - analytics
-- content
-- user video listings
-- list videos
-- retrieve authenticated user's tiktok profile information
-- check the status of a video publish job
-- publishing
-- initiate a tiktok video upload or direct post to a user's account
-- query videos
-- get tiktok creator's content posting settings and permissions
-- get user info
+- social media
 - get publish status
-- initiate video post
-- list a user's most recent tiktok videos
-- query specific videos by id
-- query tiktok video metadata by video ids
-- query creator info
-- advertising
 - video
-- authentication
-- check the current status of a tiktok video publish job
-- content creation
-- video publish status
 - current user profile
 - init video publish
-- creator posting configuration
-- list user's recent tiktok videos
-- social media
+- check the current status of a tiktok video publish job
+- initiate a tiktok video upload or direct post to a user's account
+- query tiktok video metadata by video ids
 - initiate a tiktok video upload or direct post
+- publishing
+- query videos
+- authentication
 - get creator's content posting settings
+- get authenticated user's tiktok profile
+- list user's recent tiktok videos
+- query tiktok video metadata by specific video ids
+- get user info
+- creator posting configuration
+- check the status of a video publish job
+- query creator info
+- content
+- video publish status
+- initiate video post
+- get tiktok creator's content posting settings and permissions
+- retrieve authenticated user's tiktok profile information
+- list videos
+- list a user's most recent tiktok videos
+- query specific videos by id
+- content creation
+- tiktok
+- user video listings
+- advertising
 slug: content-creation
 source_filename: content-creation.yaml
 source_heading: Capability Spec

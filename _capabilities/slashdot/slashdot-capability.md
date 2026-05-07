@@ -41,28 +41,28 @@ personas: []
 provider_name: Slashdot
 provider_slug: slashdot
 search_terms:
-- getdevelopersfeed
-- getlinuxfeed
-- getmainfeedatom
-- getsciencefeed
-- get your rights online feed
+- getmainfeed
+- slashdot
+- api
 - get science feed
-- get linux feed
+- getyourrightsonlinefeed
+- getgamesfeed
+- getdevelopersfeed
+- open source
 - getapplefeed
 - technology news
 - get developers feed
-- slashdot
-- open source
-- get apple feed
-- get main feed (atom)
 - get games feed
-- getgamesfeed
-- api
-- media
-- get main feed
-- getyourrightsonlinefeed
-- getmainfeed
+- get main feed (atom)
 - rss
+- getsciencefeed
+- get your rights online feed
+- media
+- getmainfeedatom
+- getlinuxfeed
+- get main feed
+- get linux feed
+- get apple feed
 slug: slashdot-capability
 source_filename: slashdot-capability.yaml
 source_heading: Capability Spec

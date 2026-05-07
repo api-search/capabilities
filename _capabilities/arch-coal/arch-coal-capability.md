@@ -21,26 +21,26 @@ personas: []
 provider_name: Arch Coal
 provider_slug: arch-coal
 search_terms:
-- thermal coal
 - getquarterlyproduction
-- arch coal get earnings data
-- earnings and revenue reporting for investors
-- arch
-- sec filings and regulatory disclosure
-- mining
-- getearnings
-- analysts tracking coal production and pricing data
-- arch coal get quarterly production
-- api
 - shareholders and analysts monitoring arch coal financial performance
-- arch coal list sec filings
-- energy
-- fortune 500
-- listfilings
+- api
+- earnings and revenue reporting for investors
+- mining
 - coal production and sales volume metrics
-- metallurgical coal
+- listfilings
+- arch coal list sec filings
+- arch
+- arch coal get quarterly production
+- arch coal get earnings data
+- energy
+- getearnings
 - coal
 - environmental, social, and governance data researchers
+- metallurgical coal
+- thermal coal
+- analysts tracking coal production and pricing data
+- fortune 500
+- sec filings and regulatory disclosure
 slug: arch-coal-capability
 source_filename: arch-coal-capability.yaml
 source_heading: Capability Spec

@@ -41,29 +41,29 @@ personas: []
 provider_name: FiscalNote
 provider_slug: fiscalnote
 search_terms:
-- listregulatorydocuments
-- regulation
-- listlabels
-- fiscalnote list regulatory documents
-- getbill
-- fiscalnote list bills
-- government
-- fiscalnote get label by id
-- getlabel
 - getissue
-- listbills
+- fiscalnote get bill by id
+- fiscalnote get issue by id
+- api
+- fiscalnote
+- regulation
+- listissues
+- political intelligence
+- listregulatorydocuments
+- getregulatorydocument
+- getlabel
+- fiscalnote get label by id
+- legislation
+- fiscalnote list labels
 - fiscalnote get regulatory document by id
 - fiscalnote list issues
-- political intelligence
-- fiscalnote get bill by id
-- api
-- fiscalnote get issue by id
-- legislation
-- fiscalnote
-- fiscalnote list labels
+- government
+- fiscalnote list bills
 - policy
-- listissues
-- getregulatorydocument
+- getbill
+- fiscalnote list regulatory documents
+- listlabels
+- listbills
 slug: fiscalnote-capability
 source_filename: fiscalnote-capability.yaml
 source_heading: Capability Spec

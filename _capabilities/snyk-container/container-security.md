@@ -45,56 +45,56 @@ personas: []
 provider_name: Snyk Container
 provider_slug: snyk-container
 search_terms:
-- get container project
-- generate and download an sbom (cyclonedx or spdx format) for a container scanning project
-- add a new container registry as a scan target
-- list package issues
-- list cves and vulnerabilities for packages in container images
-- software bill of materials
-- vulnerability management
 - list issues
-- get sbom
-- list all container registries and image sources configured for scanning
-- container vulnerability issues
-- container images
-- container security
-- get project sbom
-- list all container vulnerability issues, filterable by severity (critical/high/medium/low) and status
-- get details of a specific container scanning project
-- list container issues
-- sbom
-- list container projects
-- list vulnerability issues from container scans filtered by severity and status
-- get details of a specific container scanning project including status and settings
-- containers
-- individual container project operations
-- security
-- remove a container scanning project from snyk monitoring
-- kubernetes
-- create project
-- package-level vulnerability issues in container images
-- open source
-- ci/cd
-- list all snyk container scanning projects including container images, kubernetes monitors, and helm releases
+- add a new container registry as a scan target
 - look up cves and security issues for specific packages (by purl) found in container images
-- create registry target
-- manage container scanning projects
-- delete project
 - register a new container image for scanning
-- get project
-- list all container registries and image sources configured as scan targets in snyk
-- list projects
-- devsecops
-- generate sbom (cyclonedx or spdx) for a container project
-- add a new container registry as a snyk scan target
-- snyk
-- container registry scan targets
-- list targets
-- list registry targets
+- container images
+- sbom
 - delete container project
-- list all container image and kubernetes scanning projects
-- delete a container scanning project
+- containers
+- get sbom
+- ci/cd
+- list container projects
+- list container issues
+- individual container project operations
+- get container project
+- manage container scanning projects
+- snyk
+- devsecops
+- add a new container registry as a snyk scan target
+- remove a container scanning project from snyk monitoring
+- open source
+- get details of a specific container scanning project including status and settings
+- list package issues
+- list vulnerability issues from container scans filtered by severity and status
+- get details of a specific container scanning project
+- list cves and vulnerabilities for packages in container images
+- package-level vulnerability issues in container images
+- list projects
+- delete project
+- create project
+- kubernetes
 - create target
+- delete a container scanning project
+- generate sbom (cyclonedx or spdx) for a container project
+- list all container registries and image sources configured as scan targets in snyk
+- list all container vulnerability issues, filterable by severity (critical/high/medium/low) and status
+- list all snyk container scanning projects including container images, kubernetes monitors, and helm releases
+- list all container image and kubernetes scanning projects
+- create registry target
+- generate and download an sbom (cyclonedx or spdx format) for a container scanning project
+- list targets
+- get project
+- get project sbom
+- list all container registries and image sources configured for scanning
+- software bill of materials
+- container vulnerability issues
+- list registry targets
+- vulnerability management
+- container registry scan targets
+- security
+- container security
 slug: container-security
 source_filename: container-security.yaml
 source_heading: Capability Spec

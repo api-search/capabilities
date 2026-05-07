@@ -29,18 +29,18 @@ personas: []
 provider_name: level2
 provider_slug: level2
 search_terms:
-- gettickertrend
-- getsimilarstocks
-- get ohlc historical data
-- getohlcdata
-- get ticker trend analysis
-- api
-- check for candlestick patterns
 - get company summary
+- gettickertrend
+- get ohlc historical data
+- check for candlestick patterns
 - getcompanysummary
 - get similar stocks
-- checkforcandlestick
 - level2
+- api
+- getohlcdata
+- getsimilarstocks
+- get ticker trend analysis
+- checkforcandlestick
 slug: level2-capability
 source_filename: level2-capability.yaml
 source_heading: Capability Spec

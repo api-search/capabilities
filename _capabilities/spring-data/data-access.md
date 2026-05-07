@@ -33,46 +33,46 @@ personas: []
 provider_name: Spring Data
 provider_slug: spring-data
 search_terms:
-- hypermedia
-- execute repository query methods
-- delete an entity from a spring data repository by id
-- rest
-- orm
-- retrieve a specific entity from a repository by its id
-- execute a custom query method on a spring data repository
-- list all exported repositories in the application
-- get resource
-- java
-- search entities
-- framework
-- discover all spring data rest repositories available in the running application
-- list repositories
 - list entities from a spring data repository with pagination and sorting
-- access a repository collection
 - discover all available spring data rest repositories
-- create resource
-- delete an entity from the repository
-- discover repositories
+- execute repository query methods
 - list entities
-- hateoas
-- redis
-- search repository
+- list all exported repositories in the application
+- jpa
 - retrieve a specific entity by id
-- create entity
+- hypermedia
+- create resource
 - list resources
-- run a repository-defined query
-- create a new entity in a spring data repository
-- database
-- delete resource
-- get entity
-- mongodb
-- data access
-- create a new entity in the repository
+- java
+- rest
+- search repository
+- retrieve a specific entity from a repository by its id
+- access a repository collection
+- delete an entity from a spring data repository by id
 - delete entity
+- run a repository-defined query
+- mongodb
+- discover repositories
+- get entity
 - spring
 - list resources with pagination and sorting
-- jpa
+- redis
+- delete an entity from the repository
+- database
+- discover all spring data rest repositories available in the running application
 - access individual repository entities
+- framework
+- hateoas
+- create a new entity in a spring data repository
+- delete resource
+- create a new entity in the repository
+- orm
+- execute a custom query method on a spring data repository
+- data access
+- get resource
+- create entity
+- list repositories
+- search entities
 slug: data-access
 source_filename: data-access.yaml
 source_heading: Capability Spec

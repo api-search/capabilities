@@ -17,38 +17,38 @@ personas: []
 provider_name: Factset
 provider_slug: factset
 search_terms:
-- list events
-- list events.
-- get security models.
-- research
-- list trading resources.
-- investment analytics
-- list issues
-- market data
-- refresh ib office data.
-- get events
-- get open marketplace.
-- portfolio analytics
-- trading operations.
 - operations
+- list issues
+- list events
 - refresh ib office
+- list events.
+- trading operations.
 - factset
-- trading
-- list support issues.
-- get partner documents.
-- financial data
-- manage users
-- list trading
-- administration
-- get partner docs
-- get private markets
-- get event calendar.
-- manage user provisioning.
-- financial
 - get marketplace
+- portfolio analytics
+- list trading
+- manage users
+- list trading resources.
+- get private markets
+- financial data
+- research
 - get private markets data.
-- get security models
+- administration
+- manage user provisioning.
+- trading
+- get events
+- get partner documents.
+- get open marketplace.
+- get event calendar.
+- refresh ib office data.
+- get partner docs
 - event calendar.
+- get security models.
+- financial
+- get security models
+- market data
+- investment analytics
+- list support issues.
 slug: trading-operations
 source_filename: trading-operations.yaml
 source_heading: Capability Spec

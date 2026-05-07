@@ -29,27 +29,27 @@ personas: []
 provider_name: Chef
 provider_slug: chef
 search_terms:
-- configuration management
-- create a compliance scan job
-- infrastructure as code
 - devops
-- application delivery
-- listcomplianceprofiles
-- listiamusers
-- listmanagednodes
-- compliance
-- habitat
-- list configuration management nodes
-- inspec
-- list iam users
-- api
-- list compliance profiles
-- search compliance reports
-- devsecops
-- chef
-- searchreports
-- createscanjob
 - automation
+- list configuration management nodes
+- application delivery
+- api
+- searchreports
+- inspec
+- createscanjob
+- devsecops
+- compliance
+- listcomplianceprofiles
+- configuration management
+- habitat
+- list iam users
+- chef
+- infrastructure as code
+- create a compliance scan job
+- listmanagednodes
+- list compliance profiles
+- listiamusers
+- search compliance reports
 slug: chef-capability
 source_filename: chef-capability.yaml
 source_heading: Capability Spec

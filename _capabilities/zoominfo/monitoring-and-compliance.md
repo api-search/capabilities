@@ -42,47 +42,47 @@ personas: []
 provider_name: ZoomInfo
 provider_slug: zoominfo
 search_terms:
-- webhooks
-- company data
+- delete webhook
+- validate a webhook target url is reachable.
+- validate target url
+- create a new webhook subscription.
+- b2b
+- webhook subscription management.
+- list all configured webhook subscriptions.
+- get available webhook subscription types.
 - available webhook subscription types.
+- monitoring
+- compliance
+- create webhook
+- get api usage data.
+- api usage tracking.
+- get api usage data and consumption metrics.
+- b2b data
+- contacts
+- validate a webhook target url.
+- api usage
+- individual webhook management.
+- contact database
+- webhooks
+- list webhooks
+- zoominfo
+- list all webhook subscriptions.
+- update an existing webhook subscription.
+- company data
 - data compliance operations.
 - check data compliance status for specified contacts.
-- api usage
-- get available webhook subscription types.
-- contacts
-- get usage
-- delete webhook
-- create webhook
-- get subscription types
-- delete a webhook subscription.
-- compliance
-- b2b
-- monitoring
-- webhook target url validation.
-- webhook subscription management.
-- check compliance
-- validate a webhook target url.
 - update webhook
-- get api usage data and consumption metrics.
-- zoominfo
-- get api usage data.
-- contact database
-- sales intelligence
 - create a new webhook subscription for data change notifications.
-- b2b data
-- validate target url
-- api usage tracking.
-- list all configured webhook subscriptions.
-- lead generation
-- update an existing webhook subscription.
+- sales intelligence
+- delete a webhook subscription.
+- check compliance
 - data
-- list all webhook subscriptions.
 - check compliance status for specified contacts.
-- validate a webhook target url is reachable.
-- create a new webhook subscription.
-- list webhooks
+- get usage
 - marketing intelligence
-- individual webhook management.
+- lead generation
+- webhook target url validation.
+- get subscription types
 slug: monitoring-and-compliance
 source_filename: monitoring-and-compliance.yaml
 source_heading: Capability Spec

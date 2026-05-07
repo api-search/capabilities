@@ -61,56 +61,56 @@ personas: []
 provider_name: Tinybird
 provider_slug: tinybird
 search_terms:
-- real-time
-- list all data sources available for analytics
-- list jobs
-- get pipe
-- list all data transformation pipes
-- monitor tinybird background jobs including imports and schema changes
-- list all sql transformation pipes and published api endpoints in tinybird
-- list all tinybird data sources in the workspace for analytics exploration
-- analytics
-- drop a data source
-- background job monitoring
-- execute a sql query for analytics exploration
-- list data sources
-- create pipe
-- delete data source
-- ingest events
-- drop a tinybird data source and all its stored data permanently
 - inspect the sql nodes and configuration of a tinybird transformation pipe
-- delete pipe
-- authentication token management
-- create a new sql transformation pipe
-- list tokens
-- stream ndjson events into a tinybird data source for real-time ingestion
-- list all tinybird authentication tokens with their scopes
-- get schema and row statistics for a specific tinybird data source
-- get data source
-- sql
-- stream events into analytics data sources
-- individual data source management
-- delete a transformation pipe
-- run an ad-hoc sql query against tinybird data sources for analytics exploration
-- list all api tokens
-- create data source
-- ingest ndjson events for real-time analytics
-- ad-hoc sql analytics queries
-- individual pipe management
-- create a new data source for analytics ingestion
-- create a new scoped api token
-- get pipe details and transformation nodes
-- get statistics and schema for a data source
-- manage analytics data sources
-- monitor background jobs and import status
-- data
+- analytics
+- delete data source
+- list pipes
+- create token
 - streaming
 - create a new tinybird api token with specific scope permissions
-- sql transformation pipelines
-- list pipes
-- data platform
-- create token
+- create data source
+- stream events into analytics data sources
+- individual pipe management
 - execute sql query
+- drop a tinybird data source and all its stored data permanently
+- list tokens
+- drop a data source
+- authentication token management
+- ingest ndjson events for real-time analytics
+- sql transformation pipelines
+- data platform
+- list all data transformation pipes
+- get pipe details and transformation nodes
+- delete pipe
+- manage analytics data sources
+- sql
+- list all tinybird authentication tokens with their scopes
+- monitor background jobs and import status
+- get data source
+- delete a transformation pipe
+- list all api tokens
+- ad-hoc sql analytics queries
+- background job monitoring
+- monitor tinybird background jobs including imports and schema changes
+- ingest events
+- create a new sql transformation pipe
+- execute a sql query for analytics exploration
+- get schema and row statistics for a specific tinybird data source
+- get pipe
+- list jobs
+- stream ndjson events into a tinybird data source for real-time ingestion
+- individual data source management
+- create a new scoped api token
+- run an ad-hoc sql query against tinybird data sources for analytics exploration
+- list all data sources available for analytics
+- data
+- create pipe
+- list data sources
+- real-time
+- list all sql transformation pipes and published api endpoints in tinybird
+- create a new data source for analytics ingestion
+- list all tinybird data sources in the workspace for analytics exploration
+- get statistics and schema for a data source
 slug: real-time-analytics
 source_filename: real-time-analytics.yaml
 source_heading: Capability Spec

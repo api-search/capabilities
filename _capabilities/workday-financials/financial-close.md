@@ -33,39 +33,39 @@ personas: []
 provider_name: Workday Financials
 provider_slug: workday-financials
 search_terms:
-- list journal entries
-- record to report
-- execute a custom workday financials report
-- list journal entries in workday financials
-- reporting
+- list ledger accounts
+- list available reports
 - list cost center organizations
-- execute report
+- procurement
 - accounting
-- financials
-- financial close
-- execute a standard financial report and retrieve results
-- list general ledger accounts in workday financials
-- general ledger account management
+- general ledger
+- execute a custom workday financials report
 - workday
 - list reports
-- execute custom report
-- general ledger
-- financial management
-- create journal entry
+- record to report
+- financial close
 - list cost centers
-- list accounts payable supplier invoices
-- list ledger accounts
-- create a new journal entry in workday financials
-- cloud erp
-- list available reports
-- cost center management
-- supplier invoice management
-- list supplier invoices
-- list available financial reports
-- journal entry management
 - financial report management
+- cloud erp
+- list supplier invoices
+- list general ledger accounts in workday financials
+- list available financial reports
+- supplier invoice management
+- financial management
+- execute a standard financial report and retrieve results
+- general ledger account management
+- list journal entries in workday financials
+- journal entry management
 - create a journal entry
-- procurement
+- cost center management
+- list journal entries
+- create journal entry
+- create a new journal entry in workday financials
+- list accounts payable supplier invoices
+- execute custom report
+- reporting
+- execute report
+- financials
 slug: financial-close
 source_filename: financial-close.yaml
 source_heading: Capability Spec

@@ -21,16 +21,16 @@ personas: []
 provider_name: News API
 provider_slug: news-api
 search_terms:
+- articles
+- headlines
+- search
 - get available news sources
+- geteverything
 - search all articles
-- news
+- getsources
 - gettopheadlines
 - api
-- headlines
-- getsources
-- search
-- geteverything
-- articles
+- news
 - get top breaking news headlines
 slug: news-api-capability
 source_filename: news-api-capability.yaml

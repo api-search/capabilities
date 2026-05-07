@@ -37,23 +37,23 @@ personas: []
 provider_name: blue-yonder
 provider_slug: blue-yonder
 search_terms:
-- listinventory
-- list receipts
-- list outbound orders
-- get inventory for item
-- listorders
-- createreceipt
-- api
-- create outbound order
-- listtasks
-- list inventory positions
 - yonder
-- blue
-- list warehouse tasks
-- getinventorybyitem
-- listreceipts
 - createorder
+- listtasks
+- blue
 - create inbound receipt
+- list warehouse tasks
+- create outbound order
+- list inventory positions
+- listreceipts
+- createreceipt
+- getinventorybyitem
+- get inventory for item
+- list receipts
+- api
+- list outbound orders
+- listorders
+- listinventory
 slug: blue-yonder-capability
 source_filename: blue-yonder-capability.yaml
 source_heading: Capability Spec

@@ -65,38 +65,38 @@ personas: []
 provider_name: Pinecone
 provider_slug: pinecone
 search_terms:
-- update an api key
-- update organization
-- get project details
-- list project api keys
-- fetch project
-- fetch organization
-- delete organization
-- create a new project
-- list organizations
-- delete an api key
-- fetch api key
-- pinecone
-- update an organization
-- embeddings
-- ai
-- update project
-- get organization details
-- create project
-- rag
-- list api keys
-- create api key
-- vector databases
 - delete api key
-- get api key details
+- ai
+- fetch project
 - api
-- create an api key
-- delete a project
-- update a project
+- fetch api key
+- update an api key
+- rag
+- fetch organization
+- update an organization
 - delete project
-- delete an organization
+- create project
+- pinecone
 - list projects
+- delete an api key
+- embeddings
+- create an api key
+- create a new project
+- get organization details
+- list organizations
+- list api keys
+- get project details
+- update a project
+- create api key
+- list project api keys
+- update organization
 - update api key
+- delete organization
+- vector databases
+- delete a project
+- update project
+- delete an organization
+- get api key details
 slug: pinecone-capability
 source_filename: pinecone-capability.yaml
 source_heading: Capability Spec

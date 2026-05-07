@@ -45,50 +45,50 @@ personas: []
 provider_name: Whatfix
 provider_slug: whatfix
 search_terms:
+- analytics
+- get flow views, completions, and completion rates.
+- user segments for content targeting.
+- in-app guidance
+- user onboarding
+- get task list completion status for each end user.
+- self help widget content analytics.
+- get user task completion
+- get flow analytics showing views, completions, and completion rates for a date range.
+- get flow analytics
+- flow performance analytics.
+- end user engagement analytics.
+- get end user engagement analytics showing content interactions per user.
+- get task list completion status for onboarding or training tracking per user.
+- end user tracking and segmentation.
+- list all end users tracked in whatfix.
+- list all user segments.
+- most popular flows report.
+- saas management
+- upsert end user
+- list all user segments defined for content targeting and personalization.
+- create or update an end user with segmentation attributes.
+- sync an end user into whatfix with segmentation attributes from your identity system.
+- get self help content view counts.
+- user segmentation
+- list all content items with optional type and status filters.
+- change management
 - get analytics for self help widget showing which content users search for and view.
 - get a report of the most popular flows to understand what guidance users engage with most.
-- get most popular flows
-- list all user segments.
-- list all end users tracked in whatfix for adoption monitoring.
-- analytics
-- list all whatfix content items including flows, tooltips, task lists, and surveys.
-- list segments
-- upsert end user
-- user segmentation
-- saas management
-- list all end users tracked in whatfix.
-- get flow views, completions, and completion rates.
-- get task list completion status for each end user.
-- end user tracking and segmentation.
-- self help widget content analytics.
-- content management
-- get end user engagement
-- sync an end user into whatfix with segmentation attributes from your identity system.
-- change management
-- get flow analytics
-- get task list completion status for onboarding or training tracking per user.
 - get self help analytics
-- get self help content view counts.
-- download most popular flows report in json or csv.
-- onboarding
-- get user task completion
-- user onboarding
-- get flow analytics showing views, completions, and completion rates for a date range.
-- flow performance analytics.
-- list content
-- get content engagement broken down by end user.
-- whatfix content items (flows, tooltips, task lists).
-- user segments for content targeting.
-- get end user engagement analytics showing content interactions per user.
-- list end users
-- task list completion analytics per user.
-- list all user segments defined for content targeting and personalization.
+- list all end users tracked in whatfix for adoption monitoring.
+- content management
 - digital adoption
-- end user engagement analytics.
-- most popular flows report.
-- create or update an end user with segmentation attributes.
-- list all content items with optional type and status filters.
-- in-app guidance
+- list segments
+- download most popular flows report in json or csv.
+- whatfix content items (flows, tooltips, task lists).
+- get most popular flows
+- get content engagement broken down by end user.
+- list all whatfix content items including flows, tooltips, task lists, and surveys.
+- task list completion analytics per user.
+- onboarding
+- list content
+- list end users
+- get end user engagement
 slug: digital-adoption
 source_filename: digital-adoption.yaml
 source_heading: Capability Spec

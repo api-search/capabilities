@@ -249,135 +249,135 @@ personas: []
 provider_name: Fortify
 provider_slug: fortify
 search_terms:
-- listapplicationusers
-- getreleaseauditoptions
-- startopensourcescan
-- fortify get api key
-- updaterelease
-- fortify delete release
-- fortify create application microservice
-- fortify update personal access token
-- fortify delete attribute
-- listreleaseassessmenttypes
-- fortify save dast automated openapi scan setup
-- savedastautomatedopenapiscansetup
-- fortify start dynamic scan
-- getapikey
-- createrelease
-- listapplicationmicroservices
-- fortify save dynamic scan setup
-- fortify get import scan session id
-- createattribute
-- fortify get scan polling summary
-- updateapplication
-- listapplicationreleases
-- api
-- getmobilescansetup
-- updateapikey
-- deletepersonalaccesstoken
-- listopensourcecomponents
-- deleteapikey
-- updateattribute
-- fortify delete application
-- fortify set audit action
-- fortify create application
-- fortify list read notifications
-- fortify list application users
-- fortify get audit options
-- getapplicationissuecountbyseverity
-- fortify list application owners
-- savedastautomatedwebsitescansetup
-- listlookupitems
-- startdynamicscan
-- downloadopensourcesbom
-- fortify get static scan options
-- fortify list vulnerability category rollups
-- fortify download event logs
-- fortify start open source scan
-- getreleasestaticscanoptions
-- deleteattribute
-- sast
-- fortify list lookup items
-- listapplicationowners
-- getrelease
-- fortify get release
-- fortify list release scans
-- listreleases
-- fortify get application vulnerability
-- getdastautomatedscansetup
-- listunreadnotifications
-- fortify list applications
-- fortify get dast automated scan setup
-- fortify get release scan
-- devsecops
-- listapikeys
-- updatepersonalaccesstoken
-- fortify update api key
-- fortify list open source components
-- fortify create personal access token
-- listapplications
-- vulnerability scanning
-- fortify mark notifications as read
-- startmobilescan
-- getreleasescanpollingsummary
-- listapplicationscans
-- fortify get personal access token
-- getreleasescan
-- fortify update release
-- getdynamicscansetup
-- fortify start mobile scan
-- deleterelease
-- setreleaseauditaction
-- fortify delete api key
-- dast
-- fortify download release fpr
-- fortify create attribute
-- fortify update application
-- deleteapplication
-- fortify update attribute
-- listreleasecategoryrollups
-- fortify list application releases
-- getpersonalaccesstoken
-- listattributes
-- fortify create release
-- sca
-- savedynamicscansetup
-- getreleaseimportscansessionid
-- fortify start dast automated scan
-- createapplicationmicroservice
-- listreleasescans
-- fortify delete personal access token
-- fortify list unread notifications
-- fortify save mobile scan setup
-- downloadreleasefpr
-- savemobilescansetup
-- createpersonalaccesstoken
-- fortify get dynamic scan setup
-- downloadeventlogs
-- listpersonalaccesstokens
-- createapplication
-- getapplicationvulnerability
-- fortify get application
-- fortify list application scans
-- fortify list releases
 - fortify list assessment types
-- application security
 - fortify list application microservices
-- startdastautomatedscan
-- fortify list api keys
-- marknotificationsasread
-- fortify list attributes
-- fortify
-- fortify list personal access tokens
-- fortify get mobile scan setup
-- getapplication
+- fortify save dynamic scan setup
+- api
+- fortify update personal access token
+- updatepersonalaccesstoken
+- listunreadnotifications
+- fortify get dast automated scan setup
+- fortify get application
+- fortify list vulnerability category rollups
+- fortify update release
+- fortify list open source components
+- listattributes
+- listapplicationusers
+- downloadeventlogs
+- getapikey
+- deletepersonalaccesstoken
+- fortify save dast automated openapi scan setup
+- getapplicationissuecountbyseverity
+- getreleasestaticscanoptions
+- listreleasescans
+- fortify mark notifications as read
+- savedastautomatedopenapiscansetup
+- fortify delete personal access token
 - fortify create api key
-- fortify save dast automated website scan setup
-- fortify get issue count by severity
-- createapikey
-- fortify download open source sbom
-- listreadnotifications
+- getreleaseauditoptions
+- getpersonalaccesstoken
+- listlookupitems
+- fortify create attribute
+- downloadreleasefpr
+- startmobilescan
+- fortify list application releases
+- downloadopensourcesbom
+- getapplicationvulnerability
+- deleterelease
+- fortify get release
+- listapikeys
+- getreleasescan
 - security testing
+- fortify get release scan
+- sca
+- getapplication
+- getdynamicscansetup
+- fortify list applications
+- fortify download open source sbom
+- listapplicationmicroservices
+- marknotificationsasread
+- savedynamicscansetup
+- updateapikey
+- fortify download event logs
+- savedastautomatedwebsitescansetup
+- fortify list release scans
+- fortify create application
+- fortify
+- fortify delete api key
+- createpersonalaccesstoken
+- listapplicationreleases
+- listpersonalaccesstokens
+- fortify start dynamic scan
+- fortify list application scans
+- deleteattribute
+- fortify get audit options
+- dast
+- startopensourcescan
+- devsecops
+- fortify get dynamic scan setup
+- fortify list personal access tokens
+- deleteapplication
+- setreleaseauditaction
+- fortify get api key
+- deleteapikey
+- fortify delete application
+- fortify list api keys
+- fortify update application
+- fortify get mobile scan setup
+- listapplicationowners
+- startdastautomatedscan
+- getdastautomatedscansetup
+- getrelease
+- fortify set audit action
+- fortify download release fpr
+- fortify update attribute
+- createrelease
+- listreleaseassessmenttypes
+- createapikey
+- fortify create release
+- getreleaseimportscansessionid
+- fortify list application owners
+- application security
+- createattribute
+- fortify get import scan session id
+- fortify list application users
+- fortify save mobile scan setup
+- updateattribute
+- vulnerability scanning
+- fortify delete release
+- fortify get personal access token
+- startdynamicscan
+- fortify get application vulnerability
+- getreleasescanpollingsummary
+- createapplication
+- fortify list read notifications
+- fortify start open source scan
+- fortify start dast automated scan
+- fortify get issue count by severity
+- fortify save dast automated website scan setup
+- fortify update api key
+- listapplicationscans
+- fortify get static scan options
+- listreadnotifications
+- fortify create application microservice
+- fortify delete attribute
+- savemobilescansetup
+- createapplicationmicroservice
+- fortify list attributes
+- fortify list releases
+- fortify list lookup items
+- getmobilescansetup
+- sast
+- listapplications
+- listopensourcecomponents
+- updaterelease
+- fortify get scan polling summary
+- fortify create personal access token
+- listreleases
+- fortify list unread notifications
+- listreleasecategoryrollups
+- updateapplication
+- fortify start mobile scan
 slug: fortify-capability
 source_filename: fortify-capability.yaml
 source_heading: Capability Spec

@@ -21,21 +21,21 @@ personas: []
 provider_name: Google Voice
 provider_slug: google-voice
 search_terms:
-- google voice list users
-- google voice get user
-- getuser
-- voip
-- messaging
-- voicemail
 - voice
-- google
-- api
-- telecommunications
 - listusers
-- google voice
-- listbuildings
-- google voice list buildings
 - phone
+- google
+- google voice list users
+- listbuildings
+- getuser
+- google voice
+- voicemail
+- messaging
+- api
+- voip
+- telecommunications
+- google voice list buildings
+- google voice get user
 slug: google-voice-capability
 source_filename: google-voice-capability.yaml
 source_heading: Capability Spec

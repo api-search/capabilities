@@ -34,40 +34,40 @@ provider_name: Sportsbook API
 provider_slug: sportsbook-api
 search_terms:
 - odds comparison
-- list all sportsbooks
+- arbitrage
+- find guaranteed profit arbitrage opportunities
 - sports data
-- find bets with positive expected value
-- gambling
-- real-time odds from 10+ sportsbooks
-- sports betting
-- 'list all sports covered: football (nfl, ncaaf, ufl, cfl), basketball (nba, wnba), baseball (mlb), hockey (nhl), and soccer (epl, mls, la liga).'
-- list bookmakers
 - list sports
+- find bets with positive expected value
+- find middling opportunities where betting both sides of a game at different lines creates a scenario where both bets can win.
+- get middles
+- expected value
 - mlb
+- 'list all sports covered: football (nfl, ncaaf, ufl, cfl), basketball (nba, wnba), baseball (mlb), hockey (nhl), and soccer (epl, mls, la liga).'
+- list supported sports
+- real-time odds from 10+ sportsbooks
+- find middling betting opportunities
 - nhl
+- find positive expected value bets by comparing sportsbook odds to no-vig fair odds consensus. returns bets with above-average long-term profitability.
+- middling opportunities
+- get arbitrage
+- get real-time betting odds for a sport and league
+- get positive ev
+- list bookmakers
+- 'list all sportsbooks aggregated: fanduel, draftkings, betmgm, kalshi, thescore, fanatics, betrivers, polymarket, bovada, betonline.'
+- odds
+- sports betting
 - find guaranteed profit arbitrage opportunities across sportsbooks. returns events where betting both sides locks in a risk-free profit.
+- gambling
+- get odds
+- arbitrage opportunities across sportsbooks
+- aggregated sportsbooks
+- nfl
+- supported sports and leagues
 - positive expected value bets
 - get real-time betting odds from fanduel, draftkings, betmgm, and 7+ more sportsbooks. filter by sport (football/basketball/baseball/hockey/soccer) and league (nfl/nba/mlb/nhl/epl).
-- find guaranteed profit arbitrage opportunities
-- get middles
-- arbitrage
-- list supported sports
-- find middling opportunities where betting both sides of a game at different lines creates a scenario where both bets can win.
-- middling opportunities
-- arbitrage opportunities across sportsbooks
-- get arbitrage
-- nfl
-- aggregated sportsbooks
-- find positive expected value bets by comparing sportsbook odds to no-vig fair odds consensus. returns bets with above-average long-term profitability.
-- odds
-- get real-time betting odds for a sport and league
-- supported sports and leagues
-- expected value
-- get odds
-- 'list all sportsbooks aggregated: fanduel, draftkings, betmgm, kalshi, thescore, fanatics, betrivers, polymarket, bovada, betonline.'
 - nba
-- get positive ev
-- find middling betting opportunities
+- list all sportsbooks
 slug: betting-analysis
 source_filename: betting-analysis.yaml
 source_heading: Capability Spec

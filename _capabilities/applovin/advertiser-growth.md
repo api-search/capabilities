@@ -53,54 +53,54 @@ personas: []
 provider_name: AppLovin
 provider_slug: applovin
 search_terms:
-- list campaigns.
-- creative assets.
-- clone creative set
+- app monetization
+- create creative set
+- get asset performance for a symbolic time range.
+- list creative sets.
+- update an existing campaign.
+- user acquisition
+- conversion tracking
+- marketing technology
 - list creative assets.
 - get growth (advertiser or publisher) report rows.
-- create a new campaign.
-- get creative-level asset report by symbolic range.
-- get appdiscovery growth report.
-- create a creative set.
-- conversion tracking
-- clone an existing creative set.
-- mediation
-- create creative set
-- appdiscovery
-- user acquisition
-- post conversion events
-- list appdiscovery campaigns.
-- post server-to-server conversion events to capi.
-- get asset analytics report
-- adtech
-- list creative sets
-- post a batch of conversion events to capi.
-- get asset report
-- list campaigns
-- app monetization
-- create a new appdiscovery campaign.
-- get creative-level asset report by custom date range.
-- advertising
-- appdiscovery / axon campaigns.
-- list uploaded creative assets.
-- get asset performance for a symbolic time range.
-- list assets
-- marketing technology
-- get growth report
-- applovin
 - mobile
-- update an appdiscovery campaign.
-- update campaign
-- create campaign
-- clone a creative set.
-- creative-level performance report.
-- list creative sets.
+- create a creative set.
+- create a new appdiscovery campaign.
+- appdiscovery / axon campaigns.
+- applovin
+- get appdiscovery growth report.
 - axon
-- update an existing campaign.
-- get asset performance for a custom date range.
+- get growth report
+- adtech
+- list campaigns
+- list campaigns.
+- post server-to-server conversion events to capi.
 - appdiscovery creative sets.
-- growth campaign report.
+- list uploaded creative assets.
+- get creative-level asset report by custom date range.
+- update campaign
+- clone a creative set.
+- appdiscovery
+- clone creative set
+- get asset report
+- create a new campaign.
+- clone an existing creative set.
+- post a batch of conversion events to capi.
+- create campaign
+- get creative-level asset report by symbolic range.
+- get asset analytics report
+- list creative sets
+- post conversion events
 - server-to-server conversion events.
+- get asset performance for a custom date range.
+- advertising
+- mediation
+- list appdiscovery campaigns.
+- update an appdiscovery campaign.
+- list assets
+- creative-level performance report.
+- growth campaign report.
+- creative assets.
 slug: advertiser-growth
 source_filename: advertiser-growth.yaml
 source_heading: Capability Spec

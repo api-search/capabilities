@@ -105,63 +105,63 @@ personas: []
 provider_name: National Highway Traffic Safety Administration
 provider_slug: national-highway-traffic-safety-administration
 search_terms:
-- get makes for a vehicle type
-- get all makes
-- get decodevinvalues vin
-- get getvehiclevariablevalueslist variable
-- decode a vin with extended details
-- get getparts
-- get getmodelsformakeid makeid
-- traffic
-- decode a vin (flat values)
-- get models for a make and model year
-- get decodewmi wmi
-- get getmakesforvehicletype vehicletype
-- get list of vehicle variables
-- get getallmanufacturers
-- get manufacturer details
-- get canadian vehicle specifications
-- decode a vin
-- get getmodelsformakeidyear makeid makeid modelye
-- get makes for a manufacturer and year
-- get values for a vehicle variable
-- highway
-- get getallmakes
-- get models for a make
-- get getequipmentplantcodes
-- get models for a make id
-- get models for a make id and model year
-- transportation
-- get vehicle types for a make id
-- vehicles
-- national
-- get makes for a manufacturer
-- get getvehicletypesformake makename
 - get decodevin vin
-- get getmakesformanufacturerandyear manufacturer
-- api
-- decode a vin with extended details (flat values)
-- get equipment plant codes
-- get wmis for a manufacturer
-- batch decode multiple vins
-- administration
-- get decodevinextended vin
-- get vehicle types for a make
-- decode a world manufacturer identifier
+- get vehicle types for a make id
+- get decodevinvaluesextended vin
+- get all manufacturers
 - get parts
-- get getcanadianvehiclespecifications
+- get list of vehicle variables
+- get decodevinvalues vin
+- decode a vin with extended details (flat values)
+- get getmodelsformake makename
+- decode a vin (flat values)
+- get wmis for a manufacturer
+- api
+- get models for a make id
+- get decodevinextended vin
+- get decodewmi wmi
 - safety
+- vehicles
+- get getparts
+- get getvehicletypesformake makename
+- decode a world manufacturer identifier
+- get makes for a manufacturer and year
+- get models for a make
+- get getmodelsformakeidyear makeid makeid modelye
+- administration
 - get getvehiclevariablelist
-- post decodevinvaluesbatch
+- transportation
+- get makes for a vehicle type
+- highway
+- get makes for a manufacturer
+- traffic
+- get getmakesforvehicletype vehicletype
+- get models for a make and model year
+- get values for a vehicle variable
+- get getmanufacturerdetails manufacturer
+- get getvehicletypesformakeid makeid
+- get getallmakes
+- get getwmisformanufacturer manufacturer
+- decode a vin
+- get all makes
+- get getequipmentplantcodes
+- get equipment plant codes
+- batch decode multiple vins
+- get manufacturer details
+- get getvehiclevariablevalueslist variable
 - get getmakeformanufacturer manufacturer
+- post decodevinvaluesbatch
+- get getcanadianvehiclespecifications
+- get getmakesformanufacturerandyear manufacturer
+- get getmodelsformakeid makeid
+- get canadian vehicle specifications
+- get vehicle types for a make
+- get getallmanufacturers
+- get models for a make id and model year
 - federal government
 - get getmodelsformakeyear make make modelyear mod
-- get decodevinvaluesextended vin
-- get getmodelsformake makename
-- get getvehicletypesformakeid makeid
-- get all manufacturers
-- get getwmisformanufacturer manufacturer
-- get getmanufacturerdetails manufacturer
+- decode a vin with extended details
+- national
 slug: national-highway-traffic-safety-administration-capability
 source_filename: national-highway-traffic-safety-administration-capability.yaml
 source_heading: Capability Spec

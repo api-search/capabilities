@@ -37,42 +37,42 @@ personas: []
 provider_name: TrustRadius
 provider_slug: trustradius
 search_terms:
-- list verified b2b software reviews.
-- competitive analysis
-- list software categories.
-- list b2b software products with trustradius scores.
-- get full review content.
-- product reviews
-- intent data
-- get review
-- product ratings
-- get product
-- verified reviews
-- get detailed product profile including trustradius score, categories, and aggregate ratings.
-- get category with top products.
-- b2b software products
-- list verified b2b software reviews with filtering by product, industry, company size, and minimum score.
-- get aggregate product ratings.
-- product profile
-- get multi-dimensional rating breakdown for a product across usability, support, and value.
-- individual review
 - get detailed product profile.
-- list categories
+- b2b software products
+- intent data
+- list verified b2b software reviews.
+- list software categories.
+- get detailed product profile including trustradius score, categories, and aggregate ratings.
 - buyer intelligence
-- list all b2b software categories available on trustradius.
-- get the complete text, ratings, pros, and cons from a specific verified b2b software review.
-- get a software category with its top-rated products for category research.
-- software reviews
-- get product ratings
+- get product
 - list products
-- get category
-- list reviews
-- categories
-- category details
-- list b2b software products in a category with trustradius scores and review counts.
-- software categories
 - reviews
 - b2b software reviews
+- get full review content.
+- get review
+- list verified b2b software reviews with filtering by product, industry, company size, and minimum score.
+- product ratings
+- software reviews
+- list b2b software products with trustradius scores.
+- get multi-dimensional rating breakdown for a product across usability, support, and value.
+- software categories
+- list categories
+- list all b2b software categories available on trustradius.
+- list b2b software products in a category with trustradius scores and review counts.
+- competitive analysis
+- verified reviews
+- get category
+- list reviews
+- get the complete text, ratings, pros, and cons from a specific verified b2b software review.
+- categories
+- individual review
+- product reviews
+- get category with top products.
+- get a software category with its top-rated products for category research.
+- category details
+- get aggregate product ratings.
+- get product ratings
+- product profile
 slug: buyer-intelligence
 source_filename: buyer-intelligence.yaml
 source_heading: Capability Spec

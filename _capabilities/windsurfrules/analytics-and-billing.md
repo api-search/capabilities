@@ -33,42 +33,42 @@ personas: []
 provider_name: Windsurf
 provider_slug: windsurfrules
 search_terms:
-- get user-level analytics and acceptance rates
-- get usage configuration settings
-- ai copilot
-- get cascade ai agent usage metrics including lines generated
-- get current usage configuration and feature flags for the team
-- per-user analytics
-- query code completion usage analytics
 - analytics
-- coding standards
-- teams
-- cascade ai agent analytics
+- query windsurf code completion usage analytics for the team
+- get cascade ai agent usage metrics including lines generated
+- windsurf
 - get usage config
-- get per-user code completion analytics and acceptance rates
-- get cascade analytics
-- update usage configuration settings
-- check current team credit balance and usage for windsurf enterprise
+- update usage config
+- ai agents
+- query user analytics
+- get team credit balance
+- per-user analytics
 - billing
-- enterprise
-- query completion analytics
+- developer workflow
+- get user-level analytics and acceptance rates
+- get user analytics
+- update usage configuration settings
+- query code completion usage analytics
+- get credit balance
+- teams
+- get cascade ai usage analytics
 - ide
+- get per-user code completion analytics and acceptance rates
+- coding standards
+- query completion analytics
+- query cascade analytics
+- check current team credit balance and usage for windsurf enterprise
+- ai coding
+- enterprise
+- get usage configuration settings
+- credit balance management
+- cascade ai agent analytics
+- get cascade analytics
 - update usage configuration, model access controls, and feature flags
+- get current usage configuration and feature flags for the team
+- ai copilot
 - code completion analytics
 - usage configuration
-- get team credit balance
-- get credit balance
-- ai coding
-- credit balance management
-- ai agents
-- windsurf
-- get cascade ai usage analytics
-- developer workflow
-- query windsurf code completion usage analytics for the team
-- query cascade analytics
-- update usage config
-- get user analytics
-- query user analytics
 slug: analytics-and-billing
 source_filename: analytics-and-billing.yaml
 source_heading: Capability Spec

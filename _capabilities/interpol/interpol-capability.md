@@ -45,31 +45,31 @@ personas: []
 provider_name: Interpol
 provider_slug: interpol
 search_terms:
-- law enforcement
-- get notices v1 un noticetype noticeid images
-- get yellow notices
-- notices
-- get notices v1 un
-- get notices v1 red
-- get un notices
-- get red notices
-- get red notice images
-- get notices v1 red noticeid
-- api
-- police
-- get yellow notice details
-- international
-- get un notice details
-- get red notice details
-- federal government
-- get un notice images
-- get notices v1 red noticeid images
-- get yellow notice images
 - get notices v1 un noticetype noticeid
-- get notices v1 yellow
+- get un notice images
+- notices
+- get red notices
+- api
 - interpol
-- get notices v1 yellow noticeid
+- get red notice images
 - get notices v1 yellow noticeid images
+- get yellow notice images
+- get notices v1 un noticetype noticeid images
+- international
+- get notices v1 red noticeid images
+- law enforcement
+- get notices v1 red noticeid
+- get un notices
+- get yellow notice details
+- get notices v1 red
+- get notices v1 yellow
+- get red notice details
+- get un notice details
+- get notices v1 yellow noticeid
+- police
+- federal government
+- get yellow notices
+- get notices v1 un
 slug: interpol-capability
 source_filename: interpol-capability.yaml
 source_heading: Capability Spec

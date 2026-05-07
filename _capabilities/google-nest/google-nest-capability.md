@@ -29,26 +29,26 @@ personas: []
 provider_name: Google Nest Smart Device Management
 provider_slug: google-nest
 search_terms:
-- google nest smart device management get device
-- listrooms
+- liststructures
+- google nest smart device management execute device command
+- listdevices
+- getdevice
+- api
+- google nest smart device management list rooms
 - camera
+- doorbell
+- google nest smart device management list devices
+- google
+- google nest smart device management get device
+- executedevicecommand
+- iot
+- thermostat
+- smart home
+- nest
+- listrooms
 - google nest
 - device management
-- listdevices
-- iot
-- google
-- google nest smart device management list rooms
-- smart home
-- google nest smart device management execute device command
 - google nest smart device management list structures
-- liststructures
-- executedevicecommand
-- getdevice
-- google nest smart device management list devices
-- api
-- doorbell
-- nest
-- thermostat
 slug: google-nest-capability
 source_filename: google-nest-capability.yaml
 source_heading: Capability Spec

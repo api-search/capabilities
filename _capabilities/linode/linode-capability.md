@@ -249,128 +249,128 @@ personas: []
 provider_name: linode
 provider_slug: linode
 search_terms:
-- list events
-- getstackscripts
-- deletelinodeinstance
-- createlinodeinstance
-- list linodes
-- getdomain
-- getlinodeinstances
-- getlkeclusters
-- update a linode
-- list payments
-- get a stackscript
-- list managed database engines
-- api
-- getlinodeconfigs
-- getkernels
-- delete a stackscript
-- list managed databases
-- create a user
-- shut down a linode
-- create a domain record
-- getimages
-- getuser
-- getlinodetypes
-- getevent
-- list invoices
-- reboot a linode
-- clone a linode
-- getdatabaseengines
-- updateuser
-- deletelkecluster
-- deleteuser
-- create a kubernetes cluster
-- createuser
-- resizelinodeinstance
-- get networking information
-- clonelinodeinstance
-- getpayments
-- getlinodeinstance
-- delete a domain
-- delete an image
-- list stackscripts
-- create a node pool
-- createstackscript
-- make a payment
-- get an event
-- linode
-- updateimage
-- list kernels
-- update an image
-- get a managed database
-- getusers
-- delete a managed database
-- rebuild a linode
-- create an image
-- getdatabaseinstance
-- getinvoices
-- getlinodeips
-- list domains
-- deletestackscript
-- list types
-- get a domain
-- deletedatabaseinstance
-- getlkeclusterkubeconfig
-- getstackscript
-- createdomain
-- resize a linode
-- update account info
-- shutdownlinodeinstance
-- create a linode
-- list kubernetes clusters
-- deletedomain
-- updatedatabaseinstance
-- getlinodedisks
-- list configuration profiles
-- get an image
-- update a managed database
-- get a linode
-- rebuildlinodeinstance
-- get a kubernetes cluster
-- updateaccount
-- delete a linode
-- getevents
-- list node pools
-- update a stackscript
-- list disks
-- getdatabaseinstances
-- updatelkecluster
-- list images
-- create a stackscript
-- getbackups
-- update a domain
-- delete a kubernetes cluster
-- update a kubernetes cluster
-- list domain records
-- create a domain
-- delete a user
-- updatedomain
-- get kubeconfig
-- createpayment
-- getaccount
-- list backups
-- updatelinodeinstance
-- get account info
-- getimage
-- getdatabasetypes
-- bootlinodeinstance
-- getlkecluster
-- getdomains
-- createlkenodepool
-- list users
-- get a user
-- update a user
-- createlkecluster
-- createimage
-- boot a linode
 - list managed database types
-- getlkenodepools
-- updatestackscript
-- rebootlinodeinstance
-- getdomainrecords
+- getaccount
+- deletestackscript
+- list domain records
+- linode
+- updatedatabaseinstance
+- updateaccount
+- createlkecluster
+- api
+- getimages
+- createimage
+- delete a user
+- shutdownlinodeinstance
+- list domains
+- getdomain
+- getevent
 - deleteimage
+- get a managed database
+- deleteuser
+- rebootlinodeinstance
+- delete an image
+- update account info
+- get kubeconfig
+- getlinodeinstance
+- update a user
+- shut down a linode
+- boot a linode
+- getdomainrecords
 - createdomainrecord
+- create a kubernetes cluster
+- clone a linode
+- list linodes
+- updatestackscript
+- list events
+- updatedomain
+- deletelinodeinstance
+- list images
+- get a kubernetes cluster
+- getpayments
+- getlkeclusterkubeconfig
+- create a linode
+- getlinodetypes
+- list managed database engines
+- rebuildlinodeinstance
+- list stackscripts
+- get a user
+- get a linode
+- getinvoices
+- get a stackscript
+- update a kubernetes cluster
+- list users
+- update an image
+- getimage
+- getbackups
+- updatelkecluster
+- getdatabaseinstances
+- createuser
+- list managed databases
+- createstackscript
+- update a linode
+- clonelinodeinstance
+- getlinodeconfigs
+- reboot a linode
+- list types
+- getlinodeinstances
+- getlinodeips
+- getdatabasetypes
+- delete a managed database
+- update a stackscript
+- get an event
+- create an image
+- create a domain
+- list disks
+- list configuration profiles
+- getdatabaseengines
+- delete a domain
+- get a domain
+- getlkecluster
+- updateuser
+- list kubernetes clusters
+- getevents
+- update a managed database
+- create a user
+- get networking information
+- list invoices
+- resize a linode
+- bootlinodeinstance
+- createdomain
+- updateimage
+- getstackscripts
+- getstackscript
+- create a domain record
+- getlkeclusters
+- getlinodedisks
+- deletedomain
+- getkernels
+- create a stackscript
+- getusers
+- list node pools
+- createlinodeinstance
+- delete a kubernetes cluster
+- create a node pool
+- get account info
+- deletelkecluster
+- createpayment
+- update a domain
+- getuser
+- list kernels
+- getdatabaseinstance
+- delete a stackscript
+- get an image
+- list backups
+- resizelinodeinstance
+- getdomains
+- getlkenodepools
+- createlkenodepool
+- updatelinodeinstance
+- make a payment
+- delete a linode
+- list payments
+- deletedatabaseinstance
+- rebuild a linode
 slug: linode-capability
 source_filename: linode-capability.yaml
 source_heading: Capability Spec

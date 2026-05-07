@@ -61,42 +61,42 @@ personas: []
 provider_name: Netflix Eureka
 provider_slug: netflix-eureka
 search_terms:
-- update instance status override
-- query by secure vip address
-- sendheartbeat
-- removeinstancestatusoverride
-- deregister an instance
-- send heartbeat
 - update instance metadata
-- service registry
-- java
-- remove status override
-- netflix
-- eureka
-- getbysecurevipaddress
-- getallapplications
-- getdelta
-- getinstancebyid
-- failover
-- cloud native
-- getinstance
-- registerinstance
-- deregisterinstance
-- get recent changes (delta)
-- updateinstancemetadata
-- service discovery
-- api
-- getbyvipaddress
-- get application by name
-- register a new application instance
-- get a specific instance
 - query by vip address
-- getapplication
-- updateinstancestatus
-- get instance by id
-- load balancing
-- microservices
+- get a specific instance
+- failover
+- api
+- deregisterinstance
+- getinstancebyid
+- cloud native
+- java
+- update instance status override
+- getallapplications
+- send heartbeat
+- registerinstance
+- getdelta
+- sendheartbeat
+- netflix
+- getinstance
+- service registry
+- deregister an instance
+- query by secure vip address
 - get all registered applications
+- getapplication
+- service discovery
+- getbyvipaddress
+- load balancing
+- removeinstancestatusoverride
+- register a new application instance
+- get application by name
+- remove status override
+- updateinstancestatus
+- updateinstancemetadata
+- get instance by id
+- getbysecurevipaddress
+- eureka
+- get recent changes (delta)
+- microservices
 slug: netflix-eureka-capability
 source_filename: netflix-eureka-capability.yaml
 source_heading: Capability Spec

@@ -185,100 +185,100 @@ personas: []
 provider_name: Heroku
 provider_slug: heroku
 search_terms:
-- create a build
-- listformation
-- get add-on info
-- listaddons
-- getdomain
-- getbuild
-- deletecollaborator
-- list pipelines
-- createlogsession
-- update account
-- createrelease
 - createbuild
-- get build info
-- stop a dyno
-- createcollaborator
-- updateapp
-- deletepipeline
-- api
-- listcollaborators
-- updateconfigvars
-- get domain info
-- create a release (rollback)
 - cloud platform
-- list regions
-- listbuilds
-- update an app
-- restart all dynos
-- update a pipeline
-- paas
-- application deployment
-- list builds
-- batchupdateformation
-- delete a domain
-- create a collaborator
-- createpipelinecoupling
-- getapp
-- updateformation
-- heroku
-- get config vars
-- getconfigvars
-- getrelease
-- get app info
-- list stacks
-- update config vars
-- listreleases
-- createpipeline
-- listpipelines
-- list domains
-- getaddon
-- listpipelinecouplings
-- get release info
-- listregions
-- delete a collaborator
+- getaccount
+- liststacks
 - list apps
-- delete an app
-- deleteaddon
+- updateaccount
+- api
+- list regions
+- update a process type
+- list add-ons for an app
+- list domains
+- getdomain
+- batch update formation
+- list pipelines
+- list builds
 - create an add-on
-- updatepipeline
-- deleteapp
-- createdomain
+- update an app
+- get release info
+- createaddon
+- heroku
+- getapp
+- create a collaborator
+- delete a collaborator
+- stop a dyno
+- getbuild
+- listapps
+- update config vars
 - list pipeline couplings
 - listdomains
-- get pipeline info
-- devops
-- deletedomain
 - list dynos
-- listapps
-- get dyno info
-- listdynos
-- list add-ons for an app
-- updateaccount
 - create an app
-- delete an add-on
-- create a pipeline
-- create a log session
-- batch update formation
-- list releases
-- createapp
-- liststacks
-- create a domain
-- list collaborators
-- list formation
-- getaccount
-- stopdyno
-- createaddon
-- createdyno
-- update a process type
-- get account info
-- create a dyno
-- restartalldynos
-- delete a pipeline
-- getpipeline
 - getdyno
+- create a log session
+- getaddon
+- get app info
+- listregions
+- updateformation
+- application deployment
+- listdynos
+- list formation
+- delete an add-on
+- createcollaborator
+- batchupdateformation
+- listbuilds
+- get pipeline info
+- create a domain
+- deletepipeline
+- updatepipeline
+- listpipelinecouplings
+- delete a domain
+- get config vars
+- delete a pipeline
+- stopdyno
+- createpipeline
+- createdyno
+- getrelease
+- update account
+- list collaborators
+- createrelease
+- createdomain
+- restart all dynos
+- devops
+- deletecollaborator
+- create a dyno
+- deletedomain
+- createlogsession
+- get add-on info
+- restartalldynos
+- listaddons
+- paas
+- getconfigvars
+- deleteaddon
+- get account info
+- list releases
+- create a build
+- get dyno info
+- updateapp
 - create a pipeline coupling
+- createpipelinecoupling
+- create a release (rollback)
+- get domain info
+- listcollaborators
+- deleteapp
+- listpipelines
+- updateconfigvars
+- createapp
+- delete an app
+- update a pipeline
+- get build info
+- create a pipeline
+- getpipeline
+- listreleases
+- list stacks
+- listformation
 slug: heroku-capability
 source_filename: heroku-capability.yaml
 source_heading: Capability Spec

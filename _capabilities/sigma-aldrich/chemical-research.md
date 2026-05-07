@@ -33,46 +33,46 @@ personas: []
 provider_name: Sigma-Aldrich
 provider_slug: sigma-aldrich
 search_terms:
-- get safety data sheet
-- get pricing
+- laboratory
 - product lookup by catalog number
-- chemical structure search
-- get ghs safety data sheet for a product
-- research
-- product lookup by cas number
-- product catalog search
-- get product pricing
-- cheminformatics
-- get product pricing and stock availability
-- retrieve the ghs safety data sheet for a sigma-aldrich chemical product for regulatory compliance
-- search by chemical structure using smiles or inchi
+- procurement
+- find products by cas registry number
+- get product details by sigma-aldrich catalog number
 - get product
 - safety data sheet retrieval
-- find sigma-aldrich products by cas registry number (e.g., 7732-18-5 for water)
-- get product details by sigma-aldrich catalog number
+- get product details
 - search chemicals
-- get current pricing and stock availability for a sigma-aldrich product by country
-- life science
-- get detailed information about a sigma-aldrich product by catalog number
-- lims
-- get product by cas
-- search the sigma-aldrich catalog for chemicals, reagents, and biochemicals by name, formula, or keyword
-- laboratory
-- lookup by cas number
-- search sigma-aldrich product catalog by keyword, name, or formula
-- search for chemicals by structure using smiles or inchi notation with exact, substructure, or similarity matching
 - biochemistry
-- search by chemical structure
+- lims
+- get pricing
+- lookup by cas number
 - safety
+- get current pricing and stock availability for a sigma-aldrich product by country
+- chemistry
+- research
+- life science
+- get product pricing
+- product catalog search
+- cheminformatics
 - get sds
+- find sigma-aldrich products by cas registry number (e.g., 7732-18-5 for water)
+- search sigma-aldrich product catalog by keyword, name, or formula
+- product pricing and availability
+- product lookup by cas number
+- search by chemical structure using smiles or inchi
+- search by chemical structure
+- search for chemicals by structure using smiles or inchi notation with exact, substructure, or similarity matching
+- get product by cas
+- chemical structure search
+- get ghs safety data sheet for a product
+- retrieve the ghs safety data sheet for a sigma-aldrich chemical product for regulatory compliance
 - chemical catalog
 - search by structure
-- product pricing and availability
-- get product details
-- find products by cas registry number
+- get product pricing and stock availability
+- get detailed information about a sigma-aldrich product by catalog number
+- search the sigma-aldrich catalog for chemicals, reagents, and biochemicals by name, formula, or keyword
+- get safety data sheet
 - search products
-- chemistry
-- procurement
 slug: chemical-research
 source_filename: chemical-research.yaml
 source_heading: Capability Spec

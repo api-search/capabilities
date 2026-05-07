@@ -217,101 +217,101 @@ personas: []
 provider_name: PodcastIndex
 provider_slug: podcastindex
 search_terms:
-- v4v music chart json
-- search byperson
-- categories list
-- by id
-- episodes byfeedid
-- by podcast guid
-- podcasts trending
-- v4v music chart rss
-- recent newvaluefeeds
-- feedvalueblocks json
-- podcasts bymedium
-- add byitunesid get
-- search bytitle
-- by episode guid
-- feeds database
-- value byfeedid
-- api
-- search
-- list
-- by medium
-- podcastindex feeds db tgz
-- add byfeedurl post
-- episodes live
-- episodes byitunesid
-- live
-- search podcasts by title
-- stats hourly counts
-- add byfeedurl get
-- stats daily counts
-- v4vmusic rss
-- daily counts json
-- value byfeedurl
-- value byepisodeguid
-- pub notify
-- trending
-- recent episodes
-- by tag
-- recent soundbites
-- by itunes id
-- episodes random
-- episodes byid
-- search podcasts
-- episodes byguid
-- by guid
-- podcasts dead
-- add byitunesid post
-- v4v sats
-- recent newfeeds
-- random
-- hub pubnotify
-- chart data json
-- search music podcasts
-- dead feeds
-- value bypodcastguid
-- v4v music chart opml
-- podcasts byfeedid
+- podcast index
 - podcasts batch byguid
-- episodes
+- podcasts byfeedid
+- lookup
+- api
+- podcastindex
+- episode value blocks
+- stats daily counts
+- add byitunesid post
+- stats hourly counts
+- soundbites
+- trending
+- feed value blocks
+- feeds database
+- add byfeedurl get
+- recent episodes
+- batch by episode guid
+- episodes live
+- recent data
+- v4v music chart rss
+- search music byterm
+- feeds
+- value byfeedid
+- podcastindex dead feeds csv
+- search episodes by person
+- podcasts bytag
+- episodes byfeedid
+- episodes byfeedurl
+- podcasts bymedium
+- by feed id
+- by feed guid
+- dead feeds
+- hub pubnotify
+- podcasts trending
+- by itunes id
+- v4v music chart json
+- v4vmusic opml
+- by tag
+- batch by feed guid
+- new feeds
+- categories list
+- podcastindex feeds db tgz
+- chart data json
+- add byitunesid get
+- episodes bypodcastguid
+- podcasts dead
+- v4vmusic json
 - recent feeds
+- daily counts json
+- by feed url
+- podcasts byitunesid
 - new value feeds
 - podcasts byguid
-- open data
-- lookup
-- by feed url
-- feed value blocks
-- batch by episode guid
-- podcasts byfeedurl
-- episodes byfeedurl
+- recent soundbites
+- pub notify
+- by id
 - podcasting
-- podcastindex dead feeds csv
-- by feed guid
-- search episodes by person
-- search music byterm
-- by feed id
-- discovery
-- search byterm
-- new feeds
-- value batch byepisodeguid
-- podcast index
+- search music podcasts
+- episodes random
+- add byfeedurl post
+- random
+- search podcasts by title
+- value bypodcastguid
+- by medium
+- by episode guid
 - episodevalueblocks json
-- stats current
-- podcastindex
-- recent data
-- episode value blocks
 - hourly counts json
+- search
+- podcasts byfeedurl
 - current
-- podcasts byitunesid
-- feeds
-- batch by feed guid
-- podcasts bytag
+- recent newfeeds
+- feedvalueblocks json
+- search bytitle
+- list
 - dead
-- episodes bypodcastguid
-- v4vmusic opml
-- v4vmusic json
-- soundbites
+- value batch byepisodeguid
+- value byepisodeguid
+- value byfeedurl
+- episodes byitunesid
+- by guid
+- search podcasts
+- episodes byguid
+- live
+- v4v music chart opml
+- by podcast guid
+- discovery
+- episodes
+- stats current
+- v4vmusic rss
+- v4v sats
+- search byterm
+- recent newvaluefeeds
+- search byperson
+- episodes byid
+- open data
 slug: podcastindex-capability
 source_filename: podcastindex-capability.yaml
 source_heading: Capability Spec

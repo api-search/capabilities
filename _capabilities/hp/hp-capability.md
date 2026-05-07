@@ -21,18 +21,18 @@ personas: []
 provider_name: HP
 provider_slug: hp
 search_terms:
-- device management
-- listdevices
-- update device status
-- technology
-- list devices
 - provisiondevice
-- api
-- printing
+- provision device
+- computer hardware
 - hp
 - updatedevicestatus
-- computer hardware
-- provision device
+- device management
+- listdevices
+- api
+- technology
+- list devices
+- printing
+- update device status
 slug: hp-capability
 source_filename: hp-capability.yaml
 source_heading: Capability Spec

@@ -249,134 +249,134 @@ personas: []
 provider_name: NetBird
 provider_slug: netbird
 search_terms:
-- update a port allocation
-- delete a setup key
 - delete a token
-- post api users invites
-- get api ingress peers ingresspeerid
-- put api ingress peers ingresspeerid
-- get api policies
-- put api users userid password
-- regenerate a user invite
-- list all ingress peers
-- retrieve a group
-- accept an invite
-- security
-- reject user
-- delete a port allocation
-- list all groups
-- retrieve a peer
-- update a group
-- delete api peers peerid
-- delete api groups groupid
-- delete a group
-- post api groups
-- delete api users userid reject
-- get instance status
-- api
-- get api setup keys
-- change user password
-- post api users invites token accept
-- create a user
-- get api users userid tokens tokenid
-- list user invites
-- delete a peer
-- resend user invitation
-- put api setup keys keyid
-- create a port allocation
-- retrieve a port allocation
-- post api users userid invite
-- put api policies policyid
-- networking
-- get job
-- post api peers peerid temporary access
-- delete api ingress peers ingresspeerid
-- delete a user invite
-- get api peers peerid
-- update an account
-- get api ingress peers
-- put api peers peerid
-- delete api users invites inviteid
-- list all setup keys
-- delete a policy
-- post api peers peerid jobs
-- approve user
-- retrieve a setup key
-- vpn
-- retrieve current user
-- list all routes
-- open source
-- post api setup keys
-- list all accounts
-- post api users invites inviteid regenerate
-- delete api policies policyid
-- get api routes
-- create a user invite
-- get api instance version
-- update a policy
-- post api users
-- setup instance
-- create a ingress peer
-- put api accounts accountid
-- list all peers
-- delete api peers peerid ingress ports allocation
-- retrieve a ingress peer
-- get api peers peerid ingress ports allocationid
-- delete a ingress peer
-- get api peers peerid ingress ports
-- create job
-- get api users current
-- get api policies policyid
-- post api users userid approve
-- update a peer
-- delete api setup keys keyid
-- get version info
-- get invite information
-- get api peers peerid accessible peers
-- retrieve a policy
-- put api peers peerid ingress ports allocationid
-- get api accounts
-- list all users
-- get api peers
 - list all port allocations
-- delete api accounts accountid
-- get api peers peerid jobs
-- get api groups groupid
-- create a policy
-- post api setup
-- post api policies
-- wireguard
-- get api users invites
-- get api instance
-- get api groups
-- get api peers peerid jobs jobid
-- create a token
-- update a setup key
-- create a temporary access peer
-- update a ingress peer
-- delete api users userid tokens tokenid
-- list jobs
-- get api users
-- get api users invites token
-- delete a user
-- post api ingress peers
-- get api users userid tokens
-- put api users userid
-- retrieve a token
-- zero trust
-- create a setup key
-- delete an account
-- list all tokens
-- list accessible peers
-- list all policies
-- update a user
-- netbird
-- post api users userid tokens
-- post api peers peerid ingress ports
-- delete api users userid
-- get api setup keys keyid
-- create a group
+- list all setup keys
 - put api groups groupid
+- api
+- put api peers peerid ingress ports allocationid
+- delete a user
+- list all tokens
+- delete api setup keys keyid
+- vpn
+- list all users
+- delete api groups groupid
+- get api users userid tokens tokenid
+- delete a ingress peer
+- create a user invite
+- delete api policies policyid
+- get api users invites token
+- post api setup keys
+- create a group
+- create a setup key
+- create a policy
+- list all peers
+- retrieve a port allocation
+- list all ingress peers
+- put api users userid
+- put api peers peerid
+- delete api users userid reject
+- approve user
+- update a user
+- post api peers peerid jobs
+- put api policies policyid
+- setup instance
+- delete api peers peerid ingress ports allocation
+- post api ingress peers
+- create job
+- get instance status
+- accept an invite
+- delete an account
+- get job
+- create a ingress peer
+- wireguard
+- get api peers peerid ingress ports allocationid
+- post api users invites inviteid regenerate
+- update a setup key
+- resend user invitation
+- regenerate a user invite
+- delete api ingress peers ingresspeerid
+- retrieve a ingress peer
+- retrieve a peer
+- list all policies
+- reject user
+- zero trust
+- post api users invites
+- get api peers peerid
+- delete a policy
+- put api ingress peers ingresspeerid
+- security
+- get api users userid tokens
+- create a port allocation
+- retrieve current user
+- delete api users userid
+- networking
+- netbird
+- delete api users userid tokens tokenid
+- get api setup keys keyid
+- create a temporary access peer
+- list all groups
+- post api users userid approve
+- get api users invites
+- delete a group
+- put api accounts accountid
+- get api peers peerid ingress ports
+- post api users userid invite
+- delete api accounts accountid
+- delete api peers peerid
+- create a token
+- change user password
+- update a group
+- put api setup keys keyid
+- get api policies policyid
+- list all accounts
+- get api users
+- get api instance version
+- get api groups groupid
+- retrieve a setup key
+- get api policies
+- get api instance
+- list user invites
+- list jobs
+- post api users userid tokens
+- retrieve a policy
+- create a user
+- get api peers peerid accessible peers
+- post api setup
+- post api users invites token accept
+- update a peer
+- update a policy
+- get version info
+- retrieve a group
+- get api peers peerid jobs jobid
+- post api peers peerid ingress ports
+- list all routes
+- post api users
+- delete a user invite
+- list accessible peers
+- get api accounts
+- get api routes
+- update a port allocation
+- open source
+- get api ingress peers
+- put api users userid password
+- post api groups
+- get api peers
+- get api users current
+- get api setup keys
+- post api policies
+- update an account
+- get api ingress peers ingresspeerid
+- delete a port allocation
+- get api groups
+- delete api users invites inviteid
+- get api peers peerid jobs
+- retrieve a token
+- get invite information
+- delete a peer
+- post api peers peerid temporary access
+- update a ingress peer
+- delete a setup key
 slug: netbird-capability
 source_filename: netbird-capability.yaml
 source_heading: Capability Spec

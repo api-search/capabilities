@@ -42,29 +42,29 @@ provider_name: Etrade
 provider_slug: etrade
 search_terms:
 - previeworder
-- listaccounts
-- get account balance
-- place order
-- futures
-- listtransactions
-- viewportfolio
-- bonds
-- etrade
-- view portfolio
-- options
+- stocks
 - getaccountbalance
-- trading
-- get quotes
-- preview order
-- api
-- brokerage
+- viewportfolio
 - getquotes
+- futures
+- api
+- view portfolio
+- list accounts
+- options
+- brokerage
+- get account balance
+- etrade
+- bonds
+- listtransactions
+- trading
+- getoptionchains
+- placeorder
 - look up option chains
 - financial
-- list accounts
-- placeorder
-- stocks
-- getoptionchains
+- listaccounts
+- place order
+- get quotes
+- preview order
 - list transactions
 slug: etrade-capability
 source_filename: etrade-capability.yaml

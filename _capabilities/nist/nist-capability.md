@@ -17,18 +17,18 @@ personas: []
 provider_name: National Institute of Standards and Technology (NIST)
 provider_slug: nist
 search_terms:
+- research
+- nist
+- standards
+- cybersecurity
+- getcves
+- search cve records
+- getcvehistory
+- retrieve cve change history
+- api
+- scientific data
 - government
 - measurements
-- retrieve cve change history
-- getcvehistory
-- nist
-- getcves
-- api
-- cybersecurity
-- research
-- scientific data
-- search cve records
-- standards
 slug: nist-capability
 source_filename: nist-capability.yaml
 source_heading: Capability Spec

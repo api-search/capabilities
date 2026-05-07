@@ -53,34 +53,34 @@ personas: []
 provider_name: GunTab
 provider_slug: guntab
 search_terms:
-- marketplace
-- fulfill an invoice
-- readinvoice
-- fulfillinvoice
-- create webhook (deprecated)
-- delete webhook (deprecated)
-- readwebhook
-- firearms
-- cancelinvoice
-- e-commerce
-- callfflverification
-- readuser
-- createinvoice
-- read an invoice
-- read a user
-- api
-- sellerconfirminvoice
-- read webhook (deprecated)
-- deletewebhook
-- createwebhook
-- cancel an invoice
-- payments
-- confirm an invoice as the seller
 - confirm an invoice as the platform
-- guntab
+- create webhook (deprecated)
+- readwebhook
+- readinvoice
+- api
+- readuser
+- fulfill an invoice
+- createwebhook
+- confirm an invoice as the seller
 - trigger ffl verification call
-- platformconfirminvoice
+- cancelinvoice
+- cancel an invoice
+- e-commerce
+- marketplace
+- read a user
+- read an invoice
+- firearms
+- read webhook (deprecated)
+- fulfillinvoice
 - create an invoice
+- sellerconfirminvoice
+- guntab
+- platformconfirminvoice
+- payments
+- deletewebhook
+- delete webhook (deprecated)
+- createinvoice
+- callfflverification
 slug: guntab-capability
 source_filename: guntab-capability.yaml
 source_heading: Capability Spec

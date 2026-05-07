@@ -45,48 +45,48 @@ personas: []
 provider_name: SearchStax
 provider_slug: searchstax
 search_terms:
-- list all solr deployments in the searchstax account with their status and configuration
-- provision a new solr deployment
-- list all available backups for a solr deployment
-- get deployment
-- list all nodes in a deployment
+- get deployment health
 - delete deployment
+- provision a new managed solr deployment on aws, azure, or google cloud
 - devops
-- list all solr and zookeeper nodes in a deployment with their addresses and status
-- get usage
-- deployments
-- delete a deployment
-- deployment health monitoring
-- get billable usage data for dedicated solr deployments in a specific month
-- list nodes
-- backup and restore operations
-- list deployments
-- deployment node management
-- list backups
-- check deployment health status
+- get deployment
 - create an on-demand backup of a solr deployment
-- usage and billing reporting
-- search infrastructure
-- get full configuration and status details for a specific solr deployment
 - full-text search
 - get usage data for a billing period
-- specific deployment operations
-- list deployment backups
-- get deployment health
-- check the operational health status of a solr deployment (ok, warn, or error)
-- solr
-- search
-- provision a new managed solr deployment on aws, azure, or google cloud
-- delete a solr deployment and optionally retain its backups
-- solr deployment management
-- create deployment
-- cloud management
-- managed search
-- create backup
-- create deployment backup
-- get deployment configuration and status
-- site search
 - list all solr deployments
+- cloud management
+- get deployment configuration and status
+- delete a solr deployment and optionally retain its backups
+- check the operational health status of a solr deployment (ok, warn, or error)
+- list deployment backups
+- provision a new solr deployment
+- delete a deployment
+- list all nodes in a deployment
+- search infrastructure
+- backup and restore operations
+- specific deployment operations
+- list all solr and zookeeper nodes in a deployment with their addresses and status
+- site search
+- check deployment health status
+- deployments
+- deployment health monitoring
+- deployment node management
+- usage and billing reporting
+- get full configuration and status details for a specific solr deployment
+- create deployment backup
+- list backups
+- list all available backups for a solr deployment
+- create deployment
+- list all solr deployments in the searchstax account with their status and configuration
+- list nodes
+- search
+- solr
+- managed search
+- get usage
+- solr deployment management
+- create backup
+- get billable usage data for dedicated solr deployments in a specific month
+- list deployments
 slug: search-infrastructure-management
 source_filename: search-infrastructure-management.yaml
 source_heading: Capability Spec

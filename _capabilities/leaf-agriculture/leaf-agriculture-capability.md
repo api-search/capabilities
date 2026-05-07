@@ -249,96 +249,96 @@ personas: []
 provider_name: Leaf Agriculture
 provider_slug: leaf-agriculture
 search_terms:
-- leaf agriculture create a satellite field
-- leaf agriculture get cnhi credentials of the leafuser
-- post get token
-- leaf agriculture add agvance credentials to a leaf user
-- leaf agriculture get all files
-- weather
-- leaf agriculture get trimble token
-- leaf agriculture get climatefieldview credentials of the leafuser
-- leaf agriculture get sentera credentials events
-- api
 - leaf agriculture 2. get cfv tokens
-- leaf agriculture add agleader credentials to a leaf user
-- leaf agriculture delete agleader credentials from a leaf user
-- leaf agriculture add trimble credentials to the leafuser
-- get services fields api fields
-- get services operations api files
-- post url
-- leaf agriculture get raven credentials events
-- leaf agriculture delete sentera credentials from a leaf user
-- leaf agriculture get climatefieldview credentials events
-- leaf agriculture get agleader credentials from leaf user
-- field boundaries
-- post lindsay token
-- leaf agriculture add ravenslingshot credentials to the leafuser
-- leaf agriculture get johndeere credentials events
-- leaf agriculture get stara tokens
-- farm data
-- post lindsay url
-- leaf agriculture get all satellite fields
-- leaf agriculture add johndeere credentials to the leafuser
-- leaf agriculture get file summary
-- leaf agriculture add sentera credentials to a leaf user
-- delete services usermanagement api users leaf us
-- leaf agriculture get ravenslingshot credentials of the leafuser
-- leaf agriculture add stara credentials to the leafuser
-- leaf agriculture get agvance credentials from leaf user
-- post get url
-- get services operations api files file id images
-- get services usermanagement api users leaf user
-- leaf agriculture get stara api key
-- post services satellite api fields
-- leaf agriculture get agleader credentials events
-- leaf agriculture delete raven credentials of the leafuser
-- leaf agriculture get all fields
-- leaf agriculture add cnhi credentials to leafuser
-- webhooks
-- post token
-- leaf agriculture get cnhi credentials events
-- unified api
-- leaf
-- machine operations
-- leaf agriculture get images of satellite field
-- leaf agriculture get lindsay credentials events
-- leaf agriculture delete climatefieldview credentials of the leafuser
-- leaf agriculture delete ravenslingshot credentials of the leafuser
-- post api oauth token
-- post api authenticate
-- leaf agriculture get file images
-- get services satellite api fields sat external i
-- leaf agriculture get lindsay credentials of the leafuser
-- leaf agriculture get agvance credentials events
-- leaf agriculture add climatefieldview credentials to the leafuser
-- leaf agriculture get trimble auth url
-- leaf agriculture add lindsay credentials to the leafuser
-- post autenticacao
-- leaf agriculture get trimble credentials of the leafuser
-- leaf agriculture get sentera credentials from leaf user
-- post services usermanagement api users leaf user
-- leaf agriculture delete agvance credentials from a leaf user
-- leaf agriculture get ravenslingshot credentials events
-- get services operations api files file id summar
-- leaf agriculture delete stara credentials of the leafuser
-- leaf agriculture 2. get lindsay token
-- provider integrations
-- leaf agriculture get stara credentials of the leafuser
-- get services operations api files file id
-- leaf agriculture delete cnhi credentials of the leafuser
-- leaf agriculture get raven credentials of the leafuser
-- leaf agriculture add raven credentials to the leafuser
-- leaf agriculture delete trimble credentials of the leafuser
-- leaf agriculture get johndeere credentials of the leafuser
-- leaf agriculture delete lindsay credentials of the leafuser
-- leaf agriculture get your leaf token
-- leaf agriculture 1. get cfv auth url
-- leaf agriculture delete johndeere credentials of the leafuser
+- api
 - get services satellite api fields
-- leaf agriculture get specific file by id
+- leaf agriculture get agleader credentials events
+- leaf agriculture add lindsay credentials to the leafuser
+- leaf
+- leaf agriculture get file images
+- farm data
+- leaf agriculture delete ravenslingshot credentials of the leafuser
+- leaf agriculture get sentera credentials events
 - leaf agriculture get stara credentials events
+- leaf agriculture get all satellite fields
+- leaf agriculture get agvance credentials from leaf user
+- leaf agriculture 2. get lindsay token
+- leaf agriculture add sentera credentials to a leaf user
+- post services satellite api fields
+- leaf agriculture get specific file by id
+- post lindsay token
+- leaf agriculture get johndeere credentials of the leafuser
+- leaf agriculture get images of satellite field
+- leaf agriculture get trimble auth url
+- leaf agriculture get trimble token
+- post api oauth token
+- weather
+- leaf agriculture get agleader credentials from leaf user
+- post services usermanagement api users leaf user
+- leaf agriculture get trimble credentials of the leafuser
+- leaf agriculture get all files
+- get services operations api files file id
+- leaf agriculture get lindsay credentials events
 - agriculture
+- leaf agriculture add johndeere credentials to the leafuser
+- delete services usermanagement api users leaf us
+- leaf agriculture add cnhi credentials to leafuser
+- leaf agriculture get stara tokens
+- leaf agriculture get raven credentials events
 - leaf agriculture 1. get lindsay auth url
+- leaf agriculture add ravenslingshot credentials to the leafuser
+- leaf agriculture get agvance credentials events
+- leaf agriculture delete sentera credentials from a leaf user
+- leaf agriculture delete lindsay credentials of the leafuser
+- leaf agriculture delete stara credentials of the leafuser
+- leaf agriculture add agvance credentials to a leaf user
+- get services operations api files file id summar
+- post api authenticate
+- post get token
+- leaf agriculture add climatefieldview credentials to the leafuser
+- leaf agriculture get climatefieldview credentials events
+- leaf agriculture add trimble credentials to the leafuser
+- leaf agriculture get sentera credentials from leaf user
+- get services satellite api fields sat external i
+- unified api
+- leaf agriculture get climatefieldview credentials of the leafuser
+- leaf agriculture add stara credentials to the leafuser
+- post get url
+- provider integrations
+- leaf agriculture get stara api key
+- leaf agriculture delete agleader credentials from a leaf user
+- leaf agriculture get stara credentials of the leafuser
+- leaf agriculture delete trimble credentials of the leafuser
+- leaf agriculture get raven credentials of the leafuser
+- get services fields api fields
+- leaf agriculture get cnhi credentials of the leafuser
+- leaf agriculture get file summary
+- leaf agriculture get ravenslingshot credentials of the leafuser
+- leaf agriculture add agleader credentials to a leaf user
+- leaf agriculture get cnhi credentials events
+- post url
+- leaf agriculture delete cnhi credentials of the leafuser
+- leaf agriculture delete johndeere credentials of the leafuser
+- leaf agriculture get ravenslingshot credentials events
+- leaf agriculture add raven credentials to the leafuser
+- machine operations
+- leaf agriculture delete agvance credentials from a leaf user
+- leaf agriculture get all fields
+- leaf agriculture get johndeere credentials events
+- leaf agriculture get your leaf token
+- post autenticacao
+- leaf agriculture 1. get cfv auth url
+- field boundaries
+- webhooks
+- get services operations api files file id images
+- leaf agriculture create a satellite field
+- post token
+- get services operations api files
+- leaf agriculture delete raven credentials of the leafuser
+- post lindsay url
+- get services usermanagement api users leaf user
+- leaf agriculture get lindsay credentials of the leafuser
+- leaf agriculture delete climatefieldview credentials of the leafuser
 slug: leaf-agriculture-capability
 source_filename: leaf-agriculture-capability.yaml
 source_heading: Capability Spec

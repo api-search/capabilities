@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- list cataloged entities
 - backstage
-- api integration
-- auto-catalog
 - governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
+- list cataloged entities
 - auto catalog
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
+- auto-catalog
+- naftiko
 slug: backstage-source-of-record-auto-catalog
 source_filename: backstage-source-of-record-auto-catalog.yaml
 source_heading: Capability Spec

@@ -29,37 +29,37 @@ personas: []
 provider_name: Tazama
 provider_slug: tazama
 search_terms:
-- evaluate credit transfer
 - transaction monitoring
-- fraud detection
-- submit an iso 20022 pain.001.001.11 customer credit transfer initiation message for real-time fraud detection and aml screening. returns evaluation results from configured rule processors and typology scoring.
-- anti-money laundering
-- payment status report evaluation
-- evaluate payment activation
-- financial technology
-- submit creditor payment activation request (pain.013) for evaluation
-- real time
 - submit an iso 20022 pain.013.001.09 creditor payment activation request for fraud and aml evaluation. returns rule results and typology scores.
-- submit fi-to-fi customer credit transfer (pacs.008) for fraud evaluation
-- check the operational status of the tazama fraud detection platform
+- fraud detection
+- check tazama platform health status
+- customer credit transfer transaction evaluation
+- get health
+- evaluate payment activation
+- anti-money laundering
+- service health monitoring
+- submit creditor payment activation request (pain.013) for evaluation
+- evaluate credit transfer
+- submit an iso 20022 pacs.002.001.12 payment status report for aml compliance evaluation and fraud pattern analysis.
 - linux foundation
 - compliance
-- creditor payment activation request evaluation
-- submit an iso 20022 pacs.002.001.12 payment status report for aml compliance evaluation and fraud pattern analysis.
 - open source
-- iso 20022
-- customer credit transfer transaction evaluation
 - check tazama health
-- evaluate payment status
-- fi-to-fi interbank transfer evaluation
-- check tazama platform health status
-- service health monitoring
 - submit an iso 20022 pacs.008.001.10 fi-to-fi customer credit transfer for real-time fraud detection. evaluates the transfer against all active typologies and returns risk assessment results.
-- evaluate interbank transfer
-- submit payment status report (pacs.002) for evaluation
-- tazama
 - submit credit transfer initiation (pain.001) for fraud and aml evaluation
-- get health
+- check the operational status of the tazama fraud detection platform
+- submit fi-to-fi customer credit transfer (pacs.008) for fraud evaluation
+- tazama
+- evaluate payment status
+- real time
+- financial technology
+- fi-to-fi interbank transfer evaluation
+- evaluate interbank transfer
+- submit an iso 20022 pain.001.001.11 customer credit transfer initiation message for real-time fraud detection and aml screening. returns evaluation results from configured rule processors and typology scoring.
+- submit payment status report (pacs.002) for evaluation
+- iso 20022
+- payment status report evaluation
+- creditor payment activation request evaluation
 slug: fraud-detection
 source_filename: fraud-detection.yaml
 source_heading: Capability Spec

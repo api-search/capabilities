@@ -33,25 +33,25 @@ personas: []
 provider_name: APIMatic
 provider_slug: apimatic
 search_terms:
-- generate api portal
-- api transformation
-- code generation
-- importapidefinition
+- transform api definition
 - developer experience
+- sdk generation
+- importapidefinition
+- api
+- list api entities
+- transformapidefinition
+- validate api definition
+- documentation
 - generatesdk
 - apimatic
-- generate sdk
-- documentation
-- sdk generation
+- code generation
+- listapientities
+- generate api portal
 - validateapidefinition
 - generateportal
-- api
-- transformapidefinition
-- list api entities
+- api transformation
 - import api definition
-- validate api definition
-- listapientities
-- transform api definition
+- generate sdk
 slug: apimatic-capability
 source_filename: apimatic-capability.yaml
 source_heading: Capability Spec

@@ -25,25 +25,25 @@ personas: []
 provider_name: Google Cloud Profiler
 provider_slug: google-cloud-profiler
 search_terms:
-- google cloud profiler list profiles
-- google cloud profiler update profile
-- cloud
-- google
-- google cloud profiler create profile
-- updateprofile
-- listprofiles
-- flame graphs
-- api
-- observability
 - cpu
-- memory
-- google cloud profiler create offline profile
-- performance
-- google cloud
-- createofflineprofile
-- profiling
+- google cloud profiler update profile
+- api
+- google cloud profiler create profile
 - createprofile
 - profiler
+- google cloud profiler list profiles
+- flame graphs
+- memory
+- google cloud profiler create offline profile
+- google
+- createofflineprofile
+- listprofiles
+- observability
+- cloud
+- performance
+- profiling
+- updateprofile
+- google cloud
 slug: google-cloud-profiler-capability
 source_filename: google-cloud-profiler-capability.yaml
 source_heading: Capability Spec

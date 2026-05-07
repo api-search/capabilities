@@ -89,53 +89,53 @@ personas: []
 provider_name: Race Entry
 provider_slug: race-entry
 search_terms:
-- create event
-- list events
-- create api user
-- get event participants
-- createuser
-- geteventcreatedata
-- geteventpin
-- sports
-- geteventcategories
-- race registration
-- upload results
-- seteventappaccess
-- getclubmembers
-- get clubs
-- race timing
 - edit result
-- set event app access
-- get event teams
-- getcategoryteams
-- copy event
-- entry
-- copyevent
-- update event participant
-- get event categories
-- geteventparticipants
-- get event registration questions
-- geteventquestions
-- getclubs
-- get event creation data
-- createevent
-- login
-- updateeventparticipant
-- api
+- seteventappaccess
 - get category teams
-- event management
-- getevents
-- race results
-- editresult
-- deleteresult
+- race timing
+- list events
 - get club members
-- get event pin
-- delete result
 - geteventteams
-- seteventpin
+- create api user
+- copyevent
+- get clubs
+- api
+- geteventcreatedata
+- race registration
+- geteventpin
+- get event registration questions
+- event management
+- copy event
 - uploadresults
-- set event pin
+- delete result
+- login
+- seteventpin
+- get event categories
+- getcategoryteams
+- get event teams
+- update event participant
+- geteventparticipants
+- getclubmembers
+- editresult
+- create event
+- geteventcategories
+- get event pin
+- get event creation data
+- upload results
+- getclubs
+- getevents
+- sports
+- deleteresult
+- createuser
+- race results
 - race
+- get event participants
+- set event pin
+- set event app access
+- entry
+- geteventquestions
+- updateeventparticipant
+- createevent
 slug: race-entry-capability
 source_filename: race-entry-capability.yaml
 source_heading: Capability Spec

@@ -49,35 +49,35 @@ personas: []
 provider_name: MockServer
 provider_slug: mockserver
 search_terms:
-- put mockserver stop
-- http
-- create expectation
-- rest api
-- clears all expectations and recorded requests
-- put mockserver bind
-- service virtualization
-- mock server
-- put mockserver retrieve
-- put mockserver verify
-- put mockserver openapi
-- create expectations from openapi or swagger
-- bind additional listening ports
-- mocking
-- stop running process
 - verify a sequence of request has been received in the specific order
-- clears expectations and recorded requests that match the request matcher
-- return listening ports
-- api
-- mockserver
-- retrieve recorded requests, active expectations, recorded expectations or log messages
-- put mockserver reset
-- put mockserver expectation
-- put mockserver status
 - testing
-- platform
-- put mockserver verifysequence
+- put mockserver retrieve
 - verify a request has been received a specific number of times
+- mocking
+- http
+- api
+- platform
+- retrieve recorded requests, active expectations, recorded expectations or log messages
+- bind additional listening ports
+- clears all expectations and recorded requests
+- put mockserver openapi
+- put mockserver verify
+- service virtualization
+- return listening ports
+- create expectations from openapi or swagger
+- put mockserver expectation
+- create expectation
+- put mockserver reset
+- put mockserver status
+- put mockserver verifysequence
+- mockserver
+- put mockserver stop
+- put mockserver bind
+- rest api
 - put mockserver clear
+- mock server
+- stop running process
+- clears expectations and recorded requests that match the request matcher
 slug: mockserver-capability
 source_filename: mockserver-capability.yaml
 source_heading: Capability Spec

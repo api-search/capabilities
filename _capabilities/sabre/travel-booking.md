@@ -37,40 +37,40 @@ personas: []
 provider_name: Sabre
 provider_slug: sabre
 search_terms:
-- travel
-- book a hotel room and create a reservation in sabre gds
-- hotel room rates
-- get room rates for a specific hotel property
-- cancel a hotel reservation subject to the property's cancellation policy
-- search hotels
 - air shopping
-- hotel reservation details
-- cancel hotel reservation
-- search for lowest air fares across sabre gds
-- car rental
-- re-shop air fare pricing
-- create a hotel reservation
-- re-shop a previously selected air itinerary to confirm current pricing before booking
-- get detailed room types and rate plans for a specific hotel property
-- retrieve details of an existing hotel reservation by confirmation number
-- booking
 - cancel a hotel reservation
-- search for lowest air fares with sabre bargain finder max for any origin-destination-date combination
-- hotel availability search
-- gds
-- get hotel reservation details
-- hotels
-- search available hotels near an airport, city, or coordinates with real-time rates
+- book a hotel room and create a reservation in sabre gds
+- create a hotel reservation
+- get detailed room types and rate plans for a specific hotel property
 - air fare search
-- re-shop itinerary for current pricing before booking
-- create hotel reservation
-- get hotel rates
-- airlines
+- hotel room rates
+- search for lowest air fares across sabre gds
+- gds
+- car rental
 - reshop air fares
+- create hotel reservation
+- retrieve details of an existing hotel reservation by confirmation number
+- get hotel rates
 - hotel reservation management
-- get hotel reservation
+- search for lowest air fares with sabre bargain finder max for any origin-destination-date combination
+- booking
+- travel
 - search air fares
+- search available hotels near an airport, city, or coordinates with real-time rates
 - search available hotels with rates and availability
+- re-shop air fare pricing
+- re-shop itinerary for current pricing before booking
+- re-shop a previously selected air itinerary to confirm current pricing before booking
+- hotels
+- get hotel reservation
+- hotel availability search
+- get room rates for a specific hotel property
+- hotel reservation details
+- get hotel reservation details
+- cancel hotel reservation
+- search hotels
+- cancel a hotel reservation subject to the property's cancellation policy
+- airlines
 slug: travel-booking
 source_filename: travel-booking.yaml
 source_heading: Capability Spec

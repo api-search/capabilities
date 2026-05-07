@@ -33,59 +33,59 @@ personas: []
 provider_name: UnitedHealth Group
 provider_slug: unitedhealth
 search_terms:
-- list member conditions.
-- fhir
-- get member coverage
-- drug formulary.
-- care manager
-- member
-- search providers
-- retrieve a unitedhealth group member's fhir patient record with demographics and identifiers.
-- care management professional accessing member health data for population health and care coordination
-- member conditions.
-- get member fhir patient resource.
-- provider
-- get a member's unitedhealth group insurance coverage including plan name, group number, and benefit period.
-- health app developer
-- get member coverage details.
-- get member health record
-- cms-mandated fhir r4 data exchange for patient health records and claims
-- network provider search and directory services
-- retrieve a member's complete claims history as fhir explanationofbenefit resources including services, diagnoses, and payment details.
-- healthcare
+- search provider directory.
+- get member conditions
+- unitedhealth group
+- get member claims history
 - list member conditions
 - developer building fhir-compliant applications using unitedhealth group interoperability apis
-- member demographics.
+- care management professional accessing member health data for population health and care coordination
+- check drug formulary
+- claims
+- drug formulary.
+- list member claims
+- get member coverage details.
+- fhir
+- care manager
+- interoperability
+- drug coverage and formulary management
+- get a member's unitedhealth group insurance coverage including plan name, group number, and benefit period.
 - health insurance
-- get insurance coverage
-- unitedhealth group
+- fhir r4 health data interoperability workflow for member access, claims, coverage, conditions, providers, and formulary
+- health app developer
+- member accessing their own health data through fhir patient access apis
+- healthcare
 - optum
-- provider directory.
-- cms patient access
+- member coverage.
+- search formulary
+- search providers
+- provider using directory and formulary apis for patient care support
+- get member fhir patient resource.
+- get member coverage
 - da vinci
+- search drug formulary.
+- member demographics.
+- cms-mandated fhir r4 data exchange for patient health records and claims
+- list member claims as eobs.
+- retrieve a member's health conditions and diagnoses from unitedhealth group clinical records and claims data.
 - search the unitedhealth group provider directory for in-network physicians, specialists, and organizations by name, npi, specialty, or state.
 - get member
 - find in network provider
-- fhir r4 health data interoperability workflow for member access, claims, coverage, conditions, providers, and formulary
-- drug coverage and formulary management
-- interoperability
-- get member claims history
-- search provider directory.
-- search drug formulary.
-- search formulary
-- list member claims as eobs.
-- member accessing their own health data through fhir patient access apis
-- provider using directory and formulary apis for patient care support
-- member coverage.
-- health data interoperability
+- retrieve a unitedhealth group member's fhir patient record with demographics and identifiers.
 - member-facing health data access and transparency
-- check drug formulary
-- claims
-- list member claims
+- member
+- list member conditions.
+- provider directory.
+- network provider search and directory services
+- cms patient access
+- health data interoperability
+- get insurance coverage
+- provider
 - member claims history.
-- retrieve a member's health conditions and diagnoses from unitedhealth group clinical records and claims data.
-- get member conditions
+- member conditions.
+- retrieve a member's complete claims history as fhir explanationofbenefit resources including services, diagnoses, and payment details.
 - check unitedhealth group drug formulary coverage tier, prior authorization requirements, and quantity limits for a medication.
+- get member health record
 slug: health-data-interoperability
 source_filename: health-data-interoperability.yaml
 source_heading: Capability Spec

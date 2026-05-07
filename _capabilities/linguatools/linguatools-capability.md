@@ -13,16 +13,16 @@ personas: []
 provider_name: Linguatools
 provider_slug: linguatools
 search_terms:
-- dictionary
-- linguistics
-- collocations
-- language
+- english
 - api
+- dictionary
+- nlp
 - get collocations for a word
+- language
 - getcollocations
 - linguatools
-- nlp
-- english
+- collocations
+- linguistics
 slug: linguatools-capability
 source_filename: linguatools-capability.yaml
 source_heading: Capability Spec

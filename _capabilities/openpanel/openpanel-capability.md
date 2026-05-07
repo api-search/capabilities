@@ -249,134 +249,134 @@ personas: []
 provider_name: OpenPanel
 provider_slug: openpanel
 search_terms:
-- search and filter user profiles.
-- get insights projectid events names
-- get insights projectid groups groupid
-- get insights projectid browser version
-- get insights projectid utm medium
-- identify or update a user profile.
-- get rolling active user counts over the last n days.
-- get insights projectid model
-- get insights projectid utm content
-- post profile decrement
-- get insights projectid events properties
-- list all property keys for a given event name.
-- post profile increment
-- get top values for the "device" dimension.
-- real-time analytics
-- get top values for the "country" dimension.
-- get top values for the "brand" dimension.
-- get an overview of key metrics for the project (sessions, pageviews, bounce rate, duration).
-- get insights projectid utm campaign
-- get aggregated metrics for a specific user profile.
-- funnels
-- get insights projectid browser
-- api
-- get user flow paths before, after, or between specified events.
-- get the top pages by pageviews for the given date range.
-- get a single user profile with their recent events.
-- bulk import historical events.
-- get top values for the "city" dimension.
-- get insights projectid gsc queries
-- get insights projectid gsc queries details
-- get insights projectid traffic geo
-- get insights projectid traffic devices
-- get insights projectid utm source
-- get insights projectid user flow
-- get insights projectid groups
-- get top values for the "utm_medium" dimension.
-- get insights projectid utm term
-- get page-level performance metrics (bounce rate, avg duration, sessions).
-- get insights projectid engagement
-- get insights projectid referrer type
-- get insights projectid live
-- get top values for the "utm_term" dimension.
-- get top values for the "referrer_name" dimension.
-- post profile
-- get top values for the "browser_version" dimension.
-- get insights projectid referrer name
-- decrement a numeric property on a user profile.
-- export a paginated list of raw events with optional filtering by date, profile, and event type.
-- get insights projectid retention cohort
-- get insights projectid sessions
-- get insights projectid region
-- get traffic breakdown by device type, browser, or os.
-- increment a numeric property on a user profile.
-- get insights projectid profiles
-- open source
-- get export events
-- post import events
-- get insights projectid city
-- export aggregated chart/analytics data for a series of events over a time range.
-- get the data for a saved report.
-- get the current number of live (active) visitors.
-- get top values for the "utm_campaign" dimension.
-- event tracking
-- search and filter groups.
-- get insights projectid metrics
-- get insights projectid referrer
-- get top values for the "os" dimension.
-- get insights projectid reports reportid data
-- get insights projectid os
-- get insights projectid country
-- deprecated direct event ingestion endpoint. use /track instead.
-- get insights projectid funnel
-- get weekly retention series data.
-- get detailed gsc metrics for a specific page url.
-- get insights projectid pages entry exit
-- get export charts
-- openpanel
-- get top search queries from google search console.
-- get traffic breakdown by referrer source.
-- query sessions with optional filters.
-- get top values for the "referrer" dimension.
-- query events with optional filters for date range, profile, and properties.
-- user analytics
-- get engagement metrics for the project.
 - get insights projectid gsc pages details
-- get insights projectid retention
-- get insights projectid os version
-- get retention cohort data.
-- get top values for the "os_version" dimension.
-- get insights projectid active users
-- get top values for the "region" dimension.
-- get the top values for a specific event property key.
+- get page-level performance metrics (bounce rate, avg duration, sessions).
+- funnels
+- get rolling active user counts over the last n days.
+- get export events
+- api
+- get top values for the "device" dimension.
+- get export charts
+- get insights projectid os
 - get top pages from google search console.
-- get insights projectid pages top
-- get top values for the "utm_source" dimension.
-- get insights projectid device
-- get top values for the "browser" dimension.
-- get insights projectid events
-- get insights projectid brand
-- list all distinct event names tracked in the project.
-- get top values for the "model" dimension.
-- get insights projectid profiles profileid
-- get insights projectid pages
-- get top values for the "referrer_type" dimension.
-- get top pages with pageview counts for the selected date range.
-- get insights projectid traffic referrers
-- get a google search console performance overview (clicks, impressions, ctr, position).
-- get insights projectid gsc queries opportunities
-- get insights projectid profiles profileid metric
-- get traffic breakdown by geographic dimension (country, region, city).
 - get sessions for a specific user profile.
-- get detailed gsc metrics for a specific search query.
-- post event
-- list all group types defined in the project.
-- get insights projectid groups types
-- get funnel conversion rates for a sequence of events.
-- get a single group with its members.
-- get entry or exit pages ranked by session count.
-- get aggregated website metrics including sessions, pageviews, and bounce rate.
-- get gsc query opportunities (high impressions, low ctr).
-- product analytics
-- get insights projectid overview
-- get insights projectid gsc pages
+- get top values for the "model" dimension.
+- user analytics
+- get a google search console performance overview (clicks, impressions, ctr, position).
+- event tracking
 - get insights projectid pages performance
-- get insights projectid events property values
+- get insights projectid active users
+- get insights projectid device
+- get insights projectid groups groupid
+- get insights projectid utm source
+- get insights projectid model
+- get traffic breakdown by device type, browser, or os.
+- query sessions with optional filters.
+- get insights projectid retention cohort
+- list all group types defined in the project.
+- get insights projectid utm content
+- identify or update a user profile.
+- get insights projectid funnel
+- openpanel
+- get top values for the "utm_campaign" dimension.
+- get insights projectid profiles profileid metric
+- search and filter groups.
+- get insights projectid browser version
+- get insights projectid reports reportid data
+- post import events
+- get insights projectid gsc queries details
+- get insights projectid brand
+- get insights projectid browser
+- get insights projectid events properties
+- get insights projectid live
+- deprecated direct event ingestion endpoint. use /track instead.
+- get insights projectid engagement
 - get insights projectid gsc overview
+- get aggregated metrics for a specific user profile.
+- get aggregated website metrics including sessions, pageviews, and bounce rate.
+- get insights projectid utm medium
+- get insights projectid region
+- get insights projectid groups types
+- get entry or exit pages ranked by session count.
+- get top values for the "brand" dimension.
+- get top pages with pageview counts for the selected date range.
+- decrement a numeric property on a user profile.
+- get top values for the "referrer_type" dimension.
+- get the top values for a specific event property key.
+- list all property keys for a given event name.
 - get insights projectid profiles profileid sessio
+- post profile decrement
+- get insights projectid metrics
+- get insights projectid traffic geo
+- get insights projectid referrer name
+- get top values for the "utm_source" dimension.
+- export aggregated chart/analytics data for a series of events over a time range.
+- get insights projectid os version
+- get insights projectid groups
+- get traffic breakdown by referrer source.
+- get insights projectid events property values
+- get insights projectid referrer
+- get insights projectid pages entry exit
+- list all distinct event names tracked in the project.
 - get top values for the "utm_content" dimension.
+- get funnel conversion rates for a sequence of events.
+- get insights projectid gsc queries
+- get top values for the "browser" dimension.
+- get retention cohort data.
+- product analytics
+- get insights projectid pages
+- get top values for the "region" dimension.
+- get insights projectid events names
+- get a single group with its members.
+- get weekly retention series data.
+- get insights projectid traffic referrers
+- increment a numeric property on a user profile.
+- get detailed gsc metrics for a specific search query.
+- search and filter user profiles.
+- get insights projectid referrer type
+- get top values for the "city" dimension.
+- get top search queries from google search console.
+- get insights projectid gsc pages
+- get insights projectid sessions
+- get gsc query opportunities (high impressions, low ctr).
+- get insights projectid utm term
+- get engagement metrics for the project.
+- get the top pages by pageviews for the given date range.
+- get top values for the "utm_medium" dimension.
+- get top values for the "referrer" dimension.
+- get insights projectid profiles profileid
+- get insights projectid utm campaign
+- get insights projectid gsc queries opportunities
+- get top values for the "country" dimension.
+- get an overview of key metrics for the project (sessions, pageviews, bounce rate, duration).
+- get insights projectid retention
+- get insights projectid country
+- get top values for the "utm_term" dimension.
+- get top values for the "os" dimension.
+- open source
+- get top values for the "referrer_name" dimension.
+- get insights projectid pages top
+- get insights projectid events
+- post profile increment
+- get insights projectid user flow
+- get detailed gsc metrics for a specific page url.
+- get insights projectid overview
+- get top values for the "os_version" dimension.
+- get a single user profile with their recent events.
+- real-time analytics
+- get insights projectid profiles
+- get the current number of live (active) visitors.
+- get top values for the "browser_version" dimension.
+- query events with optional filters for date range, profile, and properties.
+- get insights projectid traffic devices
+- post profile
+- export a paginated list of raw events with optional filtering by date, profile, and event type.
+- get the data for a saved report.
+- post event
+- bulk import historical events.
+- get traffic breakdown by geographic dimension (country, region, city).
+- get user flow paths before, after, or between specified events.
+- get insights projectid city
 slug: openpanel-capability
 source_filename: openpanel-capability.yaml
 source_heading: Capability Spec

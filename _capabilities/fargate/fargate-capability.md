@@ -73,45 +73,45 @@ personas: []
 provider_name: AWS Fargate
 provider_slug: fargate
 search_terms:
-- aws fargate update a fargate service
-- compute
-- aws fargate list task definitions
-- describeclusters
-- runtask
-- fargate
-- aws fargate list services in a cluster
-- aws fargate describe one or more services
-- aws fargate run a fargate task
-- serverless
-- aws fargate deregister a task definition
-- describetasks
-- deleteservice
+- listtasks
+- aws fargate delete a service
 - executecommand
 - containers
-- docker
-- kubernetes
-- createcluster
-- describeservices
-- stoptask
-- aws fargate create an ecs cluster
-- aws fargate list tasks in a cluster
-- api
-- listtasks
-- aws fargate describe a task definition
-- updateservice
-- aws fargate delete a service
-- describetaskdefinition
-- registertaskdefinition
-- aws fargate create a fargate service
-- deregistertaskdefinition
-- aws fargate register a fargate task definition
-- aws fargate execute a command in a fargate task container
+- fargate
 - aws fargate stop a running task
+- aws fargate create an ecs cluster
+- api
+- createcluster
+- aws fargate register a fargate task definition
 - aws fargate describe one or more tasks
+- updateservice
+- deregistertaskdefinition
+- aws fargate run a fargate task
+- describeservices
+- aws fargate execute a command in a fargate task container
+- serverless
+- kubernetes
+- aws fargate deregister a task definition
+- aws fargate update a fargate service
+- compute
+- describetasks
+- runtask
+- describeclusters
+- aws fargate create a fargate service
 - listtaskdefinitions
-- listservices
-- createservice
+- aws fargate list tasks in a cluster
+- describetaskdefinition
+- aws fargate list services in a cluster
+- registertaskdefinition
+- aws fargate list task definitions
+- aws fargate describe one or more services
 - aws fargate describe one or more clusters
+- docker
+- deleteservice
+- createservice
+- stoptask
+- aws fargate describe a task definition
+- listservices
 slug: fargate-capability
 source_filename: fargate-capability.yaml
 source_heading: Capability Spec

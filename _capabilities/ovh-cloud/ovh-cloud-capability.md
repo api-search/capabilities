@@ -249,95 +249,95 @@ personas: []
 provider_name: OVH Cloud
 provider_slug: ovh-cloud
 search_terms:
-- ovh cloud create a new integration
-- ovh cloud get database engines capabilities
-- get cloud project
-- cloud
-- ovh cloud create a new registry
-- post cloud project servicename confirmterminatio
-- ovh cloud replace ip restrictions applied on harbor ui and api
-- ovh cloud delete an integration
-- ovh cloud get database engines availability
-- ovh cloud get cassandra ip restrictions
-- hosting
 - api
-- ovh cloud list registries of the project
-- post cloud project servicename containerregistry
-- get cloud order
-- ovh cloud list container registry capabilities per region
-- servers
-- ovh cloud set the user as admin
-- ovh cloud list your ip restrictions applied on artifact manager component
-- get cloud project servicename database cassandra
-- get cloud project servicename capabilities produ
-- ovh cloud get the registry information
-- ovh cloud list of admissionplugins managed by mks product that can be enabled or disabled.
-- ovh cloud get integration capabilities related to the cassandra service
-- compute
-- ovh cloud get a log kind
-- ovh cloud deletes the given ip from the restricted ips of the cassandra
-- ovh
-- get cloud order rule instancecategory
-- ovh cloud create a new cassandra cluster
-- ovh cloud list kubernetes available flavors for a region
-- ovh cloud delete a registry
-- ovh cloud confirm service termination
-- ovh cloud delete a cassandra cluster
-- ovh cloud edit the registry's oidc configuration
-- ovh cloud list cassandra ip restrictions
-- ovh cloud get instance categories
-- get cloud project servicename containerregistry
-- ovh cloud get available plans for the current registry.
-- put cloud project servicename
-- ovh cloud retrieve the certificates of the cassandra cluster
-- ovh cloud list your ip restrictions applied on harbor ui and api
-- ovh cloud get registry user
-- ovh cloud get the registry's oidc configuration
-- ovh cloud get all cloud pending orders
-- ovh cloud get cassandra cluster properties
-- get cloud project servicename
-- ovh cloud list available services
-- ovh cloud get specific information of a region
-- ovh cloud update the plan of a registry.
-- ovh cloud get product availability
-- ovh cloud list integrations
-- ovh cloud list kubernetes regions where cluster creation is possible.
-- ovh cloud update an existing cassandra cluster
-- ovh cloud delete the registry's oidc configuration
-- ovh cloud list backups of the cassandra
-- get cloud order rule availability
-- ovh cloud list all available regions
-- put cloud project servicename containerregistry
-- ovh cloud alter this object properties
-- ovh cloud get an integration
-- ovh cloud add ip restrictions to the cassandra
-- get cloud project servicename capabilities kube
-- get cloud project servicename database capabilit
-- get cloud project servicename containerregistry
 - put cloud project servicename database cassandra
-- ovh cloud create a new registry user
-- get cloud project servicename database availabil
-- post cloud project servicename activatemonthlybi
-- delete cloud project servicename database cassan
-- ovh cloud list available log kinds
-- ovh cloud replace ip restrictions applied on artifact manager component (docker, helm, etc...)
-- ovh cloud update the registry
-- ovh cloud add or replace the registry's oidc configuration
-- ovh cloud get cassandra advanced configuration
-- ovh cloud get this object properties
-- ovh cloud delete a registry user
-- ovh cloud list product availability
-- ovh cloud get cassandra backups
-- get cloud project servicename capabilities conta
-- get cloud project servicename capabilities loadb
 - ovh cloud show the actual plan of the registry.
-- delete cloud project servicename containerregist
-- ovh cloud list all the cassandra clusters of the project
-- post cloud project servicename database cassandr
+- ovh cloud delete a registry user
+- ovh cloud get available plans for the current registry.
 - ovh cloud activate monthly billing on multiple instances
-- ovh cloud update cassandra advanced configuration
+- hosting
+- get cloud project servicename
+- ovh cloud alter this object properties
+- get cloud project servicename database cassandra
+- ovh cloud delete an integration
+- get cloud order
+- ovh cloud get an integration
+- get cloud project servicename capabilities kube
+- ovh cloud get the registry's oidc configuration
+- ovh cloud list available log kinds
+- get cloud project servicename containerregistry
+- delete cloud project servicename containerregist
+- ovh cloud add or replace the registry's oidc configuration
+- post cloud project servicename activatemonthlybi
+- ovh cloud get cassandra advanced configuration
+- ovh cloud list all the cassandra clusters of the project
+- ovh cloud list your ip restrictions applied on artifact manager component
+- get cloud order rule availability
+- ovh cloud list integrations
 - ovh cloud list registry user
+- ovh cloud get all cloud pending orders
+- ovh cloud get cassandra backups
+- ovh cloud get registry user
+- ovh
+- ovh cloud list available services
+- ovh cloud create a new registry user
+- cloud
+- delete cloud project servicename database cassan
+- ovh cloud get database engines capabilities
+- get cloud project servicename capabilities loadb
+- get cloud project servicename database capabilit
+- post cloud project servicename confirmterminatio
+- get cloud project
+- ovh cloud confirm service termination
+- ovh cloud list backups of the cassandra
+- ovh cloud get cassandra ip restrictions
+- ovh cloud get specific information of a region
+- get cloud project servicename database availabil
+- ovh cloud create a new registry
+- ovh cloud list registries of the project
+- ovh cloud update the registry
+- ovh cloud list all available regions
+- ovh cloud update the plan of a registry.
+- ovh cloud get database engines availability
+- ovh cloud list kubernetes available flavors for a region
+- ovh cloud deletes the given ip from the restricted ips of the cassandra
+- ovh cloud list container registry capabilities per region
+- ovh cloud get integration capabilities related to the cassandra service
 - ovh cloud get cassandra advanced configuration fields
+- ovh cloud update an existing cassandra cluster
+- post cloud project servicename database cassandr
+- ovh cloud delete a cassandra cluster
+- get cloud project servicename capabilities conta
+- get cloud project servicename capabilities produ
+- ovh cloud list product availability
+- ovh cloud get the registry information
+- ovh cloud add ip restrictions to the cassandra
+- ovh cloud replace ip restrictions applied on harbor ui and api
+- get cloud order rule instancecategory
+- ovh cloud list your ip restrictions applied on harbor ui and api
+- ovh cloud create a new integration
+- ovh cloud set the user as admin
+- ovh cloud retrieve the certificates of the cassandra cluster
+- servers
+- ovh cloud get a log kind
+- ovh cloud list of admissionplugins managed by mks product that can be enabled or disabled.
+- ovh cloud get this object properties
+- ovh cloud delete a registry
+- ovh cloud delete the registry's oidc configuration
+- get cloud project servicename containerregistry
+- ovh cloud update cassandra advanced configuration
+- ovh cloud get instance categories
+- put cloud project servicename
+- compute
+- ovh cloud edit the registry's oidc configuration
+- ovh cloud list kubernetes regions where cluster creation is possible.
+- ovh cloud get cassandra cluster properties
+- ovh cloud list cassandra ip restrictions
+- ovh cloud create a new cassandra cluster
+- put cloud project servicename containerregistry
+- ovh cloud get product availability
+- post cloud project servicename containerregistry
+- ovh cloud replace ip restrictions applied on artifact manager component (docker, helm, etc...)
 slug: ovh-cloud-capability
 source_filename: ovh-cloud-capability.yaml
 source_heading: Capability Spec

@@ -41,55 +41,55 @@ personas: []
 provider_name: Stripe
 provider_slug: stripe
 search_terms:
-- retrieve a stripe customer by id
-- create a new stripe invoice
-- get invoice
-- invoices
-- void an open stripe invoice
-- get customer
-- invoice management
-- list payouts
-- get a customer
-- stripe
-- financial services
-- attempt to pay a stripe invoice
-- send invoice
-- create a new stripe customer
-- individual customer
-- pay invoice
-- billing
-- customer management
-- void invoice
-- list stripe billing portal configurations
-- search customers
-- finalize invoice
-- create a stripe billing portal session so a customer can manage their subscription
-- list portal configurations
-- email a stripe invoice to the customer
-- commerce
-- finalize a stripe draft invoice so it can be paid
-- create a billing portal session for a customer
-- customer self-service billing portal
-- create invoice
-- list stripe customers
-- get an invoice
-- t1
-- saas
-- payout management
-- create customer
 - retrieve a stripe invoice by id
-- payments
-- subscriptions
-- list customers
-- create a customer
+- get an invoice
+- create a billing portal session for a customer
+- invoice management
+- create customer
+- void an open stripe invoice
+- finalize invoice
+- payout management
+- list stripe customers
+- invoices
+- billing
 - search stripe customers by query
-- create portal session
-- customers
-- list invoices
-- create an invoice
 - individual invoice
-- list stripe invoices with optional status filter
+- subscriptions
+- commerce
+- retrieve a stripe customer by id
+- saas
+- create a stripe billing portal session so a customer can manage their subscription
+- create a customer
+- get a customer
+- list portal configurations
+- customer self-service billing portal
+- finalize a stripe draft invoice so it can be paid
+- customers
+- attempt to pay a stripe invoice
+- pay invoice
+- void invoice
+- search customers
 - fintech
+- email a stripe invoice to the customer
+- create invoice
+- financial services
+- t1
+- list payouts
+- get customer
+- create a new stripe customer
+- send invoice
+- stripe
+- create portal session
+- create a new stripe invoice
+- list customers
+- create an invoice
+- payments
+- customer management
+- list invoices
+- get invoice
+- list stripe billing portal configurations
+- list stripe invoices with optional status filter
+- individual customer
 slug: subscription-billing
 source_filename: subscription-billing.yaml
 source_heading: Capability Spec

@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- news
-- get market news context
-- api integration
-- im
-- get news headlines
-- governance
-- ai
-- spec-driven integration
-- context
-- mcp
-- capabilities
 - get channel history
+- governance
+- get news headlines
+- im
+- api integration
+- context
+- ai
+- capabilities
+- spec-driven integration
+- news
+- mcp
+- naftiko
+- get market news context
 slug: news-instant-message-context-mcp
 source_filename: news-instant-message-context-mcp.yaml
 source_heading: Capability Spec

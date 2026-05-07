@@ -33,58 +33,58 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
-- network performance
-- device roaming status
-- qod create session
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
 - Identity Developer
-- device connectivity status
-- qod get session
-- list active qod sessions
-- check if an at&t subscriber device is roaming on a partner network and get location
-- create qod session
 - check roaming
-- delete qod session
-- device status
 - individual qod session
-- Security Developer
-- mobile or web developer building connectivity-aware applications
-- 5g
-- list active quality on demand sessions for the application
-- network-based fraud prevention and authentication using sim swap and number verification
-- edge computing
-- list qod sessions
-- check device connectivity and network connection type
-- quality of service
-- terminate an active quality on demand session and restore normal network quality
-- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- request enhanced qos for a device
 - developer building fraud prevention and identity verification using network signals
 - connectivity
-- device check connectivity
-- qod list sessions
-- telecommunications
-- network apis
-- quality on demand session management
-- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
-- network-based security signals for fraud detection and identity verification
-- camara
-- device check roaming
-- at&t
-- 5g network quality monitoring and on-demand qos enhancement
-- terminate qod session
 - check connectivity
-- get the current status of a quality on demand session
-- check if device is roaming
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- IoT Engineer
-- get qod session status
-- App Developer
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- qod terminate session
-- request enhanced qos for a device
-- mobile network-based authentication without otp
-- get qod session
-- developer implementing passwordless or frictionless mobile authentication
+- delete qod session
+- list qod sessions
+- mobile or web developer building connectivity-aware applications
+- terminate qod session
 - sim swap
+- terminate an active quality on demand session and restore normal network quality
+- check device connectivity and network connection type
+- edge computing
+- device roaming status
+- network performance
+- qod terminate session
+- network apis
+- get qod session status
+- check if device is roaming
+- check if an at&t subscriber device is roaming on a partner network and get location
+- telecommunications
+- qod create session
+- network-based security signals for fraud detection and identity verification
+- quality on demand session management
+- device check roaming
+- Security Developer
+- developer implementing passwordless or frictionless mobile authentication
+- device connectivity status
+- camara
+- list active qod sessions
+- get qod session
+- device check connectivity
+- list active quality on demand sessions for the application
+- create a 5g quality on demand session to enhance throughput or reduce latency for a device application
+- App Developer
+- qod get session
+- check if an at&t subscriber device is connected to the network and get connection type (4g/5g)
+- IoT Engineer
+- qod list sessions
+- create qod session
+- 5g
+- network-based fraud prevention and authentication using sim swap and number verification
+- at&t
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- mobile network-based authentication without otp
+- quality of service
+- 5g network quality monitoring and on-demand qos enhancement
+- get the current status of a quality on demand session
+- device status
 slug: network-performance
 source_filename: network-performance.yaml
 source_heading: Capability Spec

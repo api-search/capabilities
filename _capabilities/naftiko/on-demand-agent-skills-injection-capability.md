@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- list skills
-- inject skill
-- api integration
 - governance
-- spec-driven integration
-- agent skills
+- inject skill
+- list skills
 - download skill
+- agent skills
 - ai
+- capabilities
+- spec-driven integration
+- api integration
 - injection
 - mcp
-- capabilities
+- naftiko
 slug: on-demand-agent-skills-injection-capability
 source_filename: on-demand-agent-skills-injection-capability.yaml
 source_heading: Capability Spec

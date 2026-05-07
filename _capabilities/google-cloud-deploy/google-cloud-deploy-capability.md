@@ -57,40 +57,40 @@ personas: []
 provider_name: Google Cloud Deploy
 provider_slug: google-cloud-deploy
 search_terms:
-- approverollout
-- google cloud deploy get a delivery pipeline
-- google cloud deploy create a delivery pipeline
-- getdeliverypipeline
 - deletedeliverypipeline
-- updatedeliverypipeline
-- devops
-- google cloud deploy list rollouts
-- cloud
-- google cloud deploy list releases
-- deployment
-- google
-- deploy
-- createrelease
-- kubernetes
-- google cloud deploy create a release
-- listreleases
-- api
-- google cloud deploy list targets
-- listrollouts
-- google cloud deploy create a rollout
-- listdeliverypipelines
-- release management
-- google cloud deploy list delivery pipelines
-- createtarget
 - google cloud deploy approve a rollout
-- createdeliverypipeline
-- google cloud deploy delete a delivery pipeline
-- google cloud deploy update a delivery pipeline
+- devops
+- google cloud deploy create a delivery pipeline
+- updatedeliverypipeline
 - pipeline
+- api
+- google cloud deploy list rollouts
+- createdeliverypipeline
+- deploy
+- google cloud deploy delete a delivery pipeline
 - continuous delivery
-- createrollout
-- listtargets
+- google
+- google cloud deploy list delivery pipelines
+- deployment
+- createtarget
 - google cloud deploy create a target
+- google cloud deploy create a rollout
+- listtargets
+- kubernetes
+- google cloud deploy update a delivery pipeline
+- createrollout
+- listdeliverypipelines
+- google cloud deploy list targets
+- google cloud deploy list releases
+- release management
+- getdeliverypipeline
+- approverollout
+- cloud
+- google cloud deploy get a delivery pipeline
+- google cloud deploy create a release
+- createrelease
+- listreleases
+- listrollouts
 slug: google-cloud-deploy-capability
 source_filename: google-cloud-deploy-capability.yaml
 source_heading: Capability Spec

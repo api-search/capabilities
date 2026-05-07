@@ -9,11 +9,11 @@ personas: []
 provider_name: Baker Hughes
 provider_slug: baker-hughes
 search_terms:
-- digital energy
 - oil and gas
 - industrial iot
-- energy technology
 - asset performance management
+- digital energy
+- energy technology
 slug: baker-hughes-industrial-platform
 source_filename: baker-hughes-industrial-platform.yaml
 source_heading: Capability Spec

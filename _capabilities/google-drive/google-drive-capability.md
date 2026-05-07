@@ -41,30 +41,30 @@ personas: []
 provider_name: Google Drive
 provider_slug: google-drive
 search_terms:
-- copyfile
-- storage
-- update a file
-- getfile
-- createpermission
-- listfiles
-- files
-- google
-- list permissions
-- updatefile
-- create a file
-- list files
-- cloud storage
-- api
-- document management
-- deletefile
-- get a file
-- create a permission
-- delete a file
-- drive
 - copy a file
+- document management
+- files
+- createpermission
+- api
+- getfile
+- drive
+- cloud storage
+- delete a file
+- update a file
+- create a permission
+- google
 - collaboration
 - createfile
+- create a file
+- list files
+- deletefile
+- storage
 - listpermissions
+- list permissions
+- copyfile
+- listfiles
+- get a file
+- updatefile
 slug: google-drive-capability
 source_filename: google-drive-capability.yaml
 source_heading: Capability Spec

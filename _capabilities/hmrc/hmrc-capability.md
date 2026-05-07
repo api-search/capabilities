@@ -29,23 +29,23 @@ personas: []
 provider_name: HMRC UK Tax Authority
 provider_slug: hmrc
 search_terms:
-- retrieve vat liabilities
-- government
-- getvatpayments
-- retrieve vat payments
-- api
-- making tax digital
 - view a submitted vat return
-- submitvatreturn
-- getvatreturn
-- tax
-- uk
-- submit a vat return
+- making tax digital
 - regulatory
+- getvatpayments
+- uk
 - retrieve vat obligations
-- hmrc
-- getvatliabilities
 - getvatobligations
+- getvatliabilities
+- government
+- tax
+- submitvatreturn
+- hmrc
+- api
+- getvatreturn
+- retrieve vat liabilities
+- submit a vat return
+- retrieve vat payments
 slug: hmrc-capability
 source_filename: hmrc-capability.yaml
 source_heading: Capability Spec

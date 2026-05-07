@@ -161,90 +161,90 @@ personas: []
 provider_name: Etcd
 provider_slug: etcd
 search_terms:
-- etcd defragment a member's backend
-- etcd get user details
-- clustermemberupdate
-- etcd execute a transaction
-- authrolerevokepermission
-- etcd list all roles
-- clustermemberadd
-- authuseradd
-- etcd add a user
-- api
-- etcd revoke a lease
-- etcd list all leases
-- clustermemberremove
-- etcd manage cluster alarms
-- authuserdelete
-- etcd authenticate a user
-- etcd promote a learner member
-- authroleget
-- etcd add a member to the cluster
-- kvtxn
-- etcd remove a member from the cluster
-- leasetimetolive
-- etcd stream a database snapshot
-- kvrange
-- leaserevoke
-- distributed systems
-- authusergrantrole
-- authrolelist
-- maintenancestatus
-- etcd grant a role to a user
-- etcd delete a range of key-value pairs
-- etcd get member backend hash
-- authuserlist
-- leasegrant
-- cloud native
-- kubernetes
-- etcd put a key-value pair
-- etcd add a role
-- etcd transfer cluster leadership
-- etcd delete a user
-- kvcompact
-- authuserrevokerole
-- authroledelete
-- maintenancealarm
-- etcd get lease time to live
-- graduated
-- etcd delete a role
-- etcd compact the event history
-- etcd disable authentication
-- etcd grant a lease
-- authrolegrantpermission
-- leasekeepalive
-- maintenancehash
-- etcd
-- etcd get a range of key-value pairs
-- authroleadd
-- etcd change a user's password
-- etcd revoke a role from a user
-- kvdeleterange
-- leaseleases
-- authauthenticate
-- etcd revoke a permission from a role
-- maintenancesnapshot
-- clustermemberpromote
-- etcd list all users
-- maintenancetransferleadership
-- authdisable
 - etcd renew a lease
-- maintenancedefragment
-- etcd grant a permission to a role
-- clustermemberlist
-- key-value store
-- etcd watch for key change events
-- etcd get member status
-- authuserget
-- consensus
-- etcd get role details
-- etcd enable authentication
-- authenable
+- authrolerevokepermission
+- distributed systems
 - kvput
-- etcd list cluster members
-- watchevents
+- etcd get a range of key-value pairs
+- api
+- authrolegrantpermission
+- etcd list all roles
+- kvtxn
+- etcd get user details
+- etcd manage cluster alarms
+- etcd compact the event history
+- authuseradd
+- etcd add a role
+- etcd get member status
+- authuserrevokerole
 - etcd update a cluster member
+- leasegrant
+- etcd revoke a role from a user
+- authuserlist
+- leaserevoke
+- etcd delete a range of key-value pairs
+- authroleadd
+- etcd grant a permission to a role
+- etcd delete a user
+- cloud native
+- etcd enable authentication
+- authdisable
+- etcd put a key-value pair
+- maintenancehash
+- etcd promote a learner member
+- authauthenticate
+- etcd grant a lease
+- etcd transfer cluster leadership
+- maintenancetransferleadership
+- clustermemberremove
+- leasekeepalive
+- authuserdelete
+- authenable
+- etcd disable authentication
+- authusergrantrole
+- etcd add a member to the cluster
+- maintenancestatus
+- etcd change a user's password
+- kvrange
+- authroleget
+- kvcompact
+- watchevents
+- etcd delete a role
+- authuserget
+- kubernetes
+- maintenancesnapshot
+- clustermemberlist
+- etcd stream a database snapshot
+- etcd list all users
+- authrolelist
+- etcd list cluster members
+- leasetimetolive
+- etcd add a user
+- etcd authenticate a user
+- maintenancedefragment
+- clustermemberupdate
+- etcd get member backend hash
+- maintenancealarm
+- consensus
+- etcd revoke a permission from a role
+- etcd get role details
+- etcd revoke a lease
+- graduated
+- clustermemberpromote
+- leaseleases
+- etcd remove a member from the cluster
+- etcd
 - authuserchangepassword
+- etcd defragment a member's backend
+- etcd get lease time to live
+- kvdeleterange
+- etcd grant a role to a user
+- etcd watch for key change events
+- etcd list all leases
+- key-value store
+- clustermemberadd
+- authroledelete
+- etcd execute a transaction
 slug: etcd-capability
 source_filename: etcd-capability.yaml
 source_heading: Capability Spec

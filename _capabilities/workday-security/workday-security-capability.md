@@ -25,26 +25,26 @@ personas: []
 provider_name: Workday Security
 provider_slug: workday-security
 search_terms:
-- workday security list audit log entries
-- listcompliancereports
-- workday security list compliance reports
-- listauditlogs
-- identity management
-- security
-- compliance
-- enterprise
-- workday security list security permission changes
-- workday
 - saml
-- sso
-- getauditlogentry
 - api
-- audit
+- workday security list compliance reports
+- identity management
+- workday
+- listcompliancereports
 - authentication
 - workday security get a specific audit log entry
-- access control
-- listpermissionchanges
+- sso
+- workday security list audit log entries
 - privacy
+- compliance
+- access control
+- enterprise
+- workday security list security permission changes
+- listauditlogs
+- audit
+- security
+- listpermissionchanges
+- getauditlogentry
 slug: workday-security-capability
 source_filename: workday-security-capability.yaml
 source_heading: Capability Spec

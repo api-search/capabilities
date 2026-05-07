@@ -33,38 +33,38 @@ personas: []
 provider_name: Telefonie
 provider_slug: telefonie
 search_terms:
-- create conference
-- list messages
-- cpaas
-- send an sms or mms message to a phone number
-- send an sms or mms message
+- send sms
+- voice call management
 - number provisioning
 - list voice calls with filtering options
-- create a new multi-party conference call room
+- telephony
+- call recording
+- list sent and received sms and mms messages
+- sms
+- initiate call
+- cpaas
+- send message
+- telecommunications
+- sms and mms messaging
+- list calls
+- list conferences
+- send an sms or mms message
+- make call
+- list messages
+- multi-party conference management
+- create a new conference room
+- list voice calls with optional status and direction filtering
+- initiate an outbound phone call to a specified number
 - voice
 - list all conferences
-- sms
-- send sms
-- initiate call
-- telephony
-- make call
-- list sent and received sms and mms messages
-- voip
-- messaging
-- multi-party conference management
-- call recording
-- telecommunications
+- create conference
 - initiate an outbound voice call
-- list sms and mms messages
-- send message
-- create a new conference room
-- list calls
-- voice call management
-- list conferences
-- initiate an outbound phone call to a specified number
-- list voice calls with optional status and direction filtering
 - list all active and completed conference calls
-- sms and mms messaging
+- create a new multi-party conference call room
+- messaging
+- list sms and mms messages
+- send an sms or mms message to a phone number
+- voip
 - communications
 slug: telephony-communications
 source_filename: telephony-communications.yaml

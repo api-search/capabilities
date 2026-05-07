@@ -249,132 +249,132 @@ personas: []
 provider_name: lakeFS
 provider_slug: lakefs
 search_terms:
-- attach external principal to user
-- list group members
-- perform a login
-- describe external principal by id
-- getrepository
-- get credentials
-- check if the lakefs installation is already set up
-- delete user
-- stslogin
-- detach policy from user
-- login
-- deleterepositorymetadata
-- api
-- lakefs
-- restorestatus
-- setrepositorymetadata
-- getuser
-- list user external policies attached to a user
-- setgroupacl
-- put /repositories/{repository}/settings/branch_protection
-- get policy
-- deletepolicy
-- list groups
-- setup lakefs and create a first user
-- deleteuser
-- create repository
-- data version control
-- detachpolicyfromgroup
-- creategroup
-- list policies
-- createuser
-- set repository metadata
-- dumpsubmit
-- detachpolicyfromuser
-- get repository gc rules
-- get acl of group
-- list group policies
-- attach policy to user
-- createrepository
-- list user policies
-- delete group
-- getcredentials
-- listuserexternalprincipals
-- create user
-- addgroupmembership
-- deletegroupmembership
-- status of a restore request
-- updatepolicy
-- restore repository from a dump in the object store
-- setup communications preferences
-- deleterepository
-- open source
-- attachpolicytouser
-- listgroups
-- externalprincipallogin
-- list user groups
-- list authentication capabilities supported
-- delete policy
-- create credentials
-- listusercredentials
-- get current user
-- backup the repository metadata (tags, commits, branches) and save the backup to the object store.
-- perform a login using an external authenticator
-- listusers
-- getgroup
-- delete repository
-- delete credentials
-- createuserexternalprincipal
-- listrepositories
-- listgrouppolicies
-- deletegcrules
-- deleteuserexternalprincipal
-- getgroupacl
-- delete repository metadata
-- 'restore repository refs (tags, commits, branches) from object store. deprecated: a new api will introduce long running operations'
-- dumpstatus
-- 'dump repository refs (tags, commits, branches) to object store deprecated: a new api will introduce long running operations'
-- setgcrules
-- setup
-- listpolicies
-- listgroupmembers
-- listusergroups
-- listuserpolicies
 - set acl of group
-- getexternalprincipal
-- get repository metadata
-- update policy
-- detach policy from group
-- getgcrules
-- delete /repositories/{repository}/settings/gc_rules
-- get branch protection rules
-- attachpolicytogroup
-- dumprefs
-- git-like
-- restorerefs
-- list user credentials
-- getcurrentuser
-- listtags
-- get repository
-- createpolicy
-- deletegroup
-- status of a repository dump task
-- put /repositories/{repository}/settings/gc_rules
-- delete group membership
-- list repositories
+- get policy
+- restoresubmit
+- api
+- createrepository
+- attach policy to group
+- deletepolicy
+- create credentials
+- getpolicy
+- getcredentials
+- login
+- getgroup
 - get group
 - delete external principal from user
-- add group membership
-- getsetupstate
-- getpolicy
-- perform a login with sts
-- getauthcapabilities
-- createcredentials
-- setupcommprefs
-- data lake
-- getrepositorymetadata
-- create policy
-- list tags
-- get user
-- setbranchprotectionrules
-- list users
+- deleteuser
+- stslogin
+- put /repositories/{repository}/settings/gc_rules
+- create repository
+- restore repository from a dump in the object store
+- delete /repositories/{repository}/settings/gc_rules
 - getbranchprotectionrules
-- deletecredentials
-- attach policy to group
+- data lake
+- get user
+- create policy
+- describe external principal by id
+- detach policy from group
+- deletegcrules
+- setup lakefs and create a first user
+- delete group
+- dumpstatus
+- deletegroup
+- perform a login using an external authenticator
+- listpolicies
+- delete repository metadata
+- status of a restore request
+- detachpolicyfromgroup
+- put /repositories/{repository}/settings/branch_protection
+- list tags
+- delete repository
+- delete group membership
+- dumprefs
+- list groups
+- creategroup
+- deleterepository
+- updatepolicy
+- getsetupstate
+- data version control
+- delete user
+- listtags
+- lakefs
+- listgroups
+- list users
+- attachpolicytogroup
+- listusercredentials
+- backup the repository metadata (tags, commits, branches) and save the backup to the object store.
+- getauthcapabilities
+- createuser
+- get current user
+- get credentials
+- getrepository
+- get repository gc rules
+- list repositories
+- listgrouppolicies
+- update policy
+- add group membership
+- listrepositories
+- list group members
+- set repository metadata
+- getgroupacl
+- externalprincipallogin
+- attachpolicytouser
+- getgcrules
+- detachpolicyfromuser
+- createcredentials
+- get branch protection rules
+- perform a login with sts
+- list policies
+- setgroupacl
+- 'dump repository refs (tags, commits, branches) to object store deprecated: a new api will introduce long running operations'
+- list user policies
+- restorerefs
+- git-like
+- listuserexternalprincipals
+- check if the lakefs installation is already set up
+- delete credentials
+- listusers
+- deleteuserexternalprincipal
+- list group policies
+- createuserexternalprincipal
+- detach policy from user
+- addgroupmembership
+- attach policy to user
 - create group
-- restoresubmit
+- listuserpolicies
+- getcurrentuser
+- setrepositorymetadata
+- get acl of group
+- setup communications preferences
+- attach external principal to user
+- open source
+- get repository
+- deletecredentials
+- 'restore repository refs (tags, commits, branches) from object store. deprecated: a new api will introduce long running operations'
+- list user groups
+- delete policy
+- getuser
+- listgroupmembers
+- setup
+- setupcommprefs
+- setbranchprotectionrules
+- deleterepositorymetadata
+- setgcrules
+- list user external policies attached to a user
+- getexternalprincipal
+- createpolicy
+- deletegroupmembership
+- status of a repository dump task
+- listusergroups
+- list authentication capabilities supported
+- create user
+- dumpsubmit
+- perform a login
+- list user credentials
+- getrepositorymetadata
+- get repository metadata
+- restorestatus
 slug: lakefs-capability
 source_filename: lakefs-capability.yaml
 source_heading: Capability Spec

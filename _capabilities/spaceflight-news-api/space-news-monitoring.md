@@ -29,32 +29,32 @@ personas: []
 provider_name: Spaceflight News API
 provider_slug: spaceflight-news-api
 search_terms:
+- space
 - api metadata and news source list
-- single spaceflight news article
-- spaceflight news articles aggregated from 43+ sources
-- spaceflight blog posts with in-depth coverage
-- list the latest spaceflight news articles from 43+ sources; supports filtering by news site or keyword search
 - list spaceflight blog posts
-- list articles
-- spaceflight
-- list the latest spaceflight news articles with optional filtering
-- formal spaceflight mission reports from agencies
-- get spaceflight news api version and the complete list of aggregated news sources
-- get api version and list of all supported news sources
-- list spaceflight blog posts providing in-depth coverage of launches and missions
+- get article
+- spaceflight blog posts with in-depth coverage
+- get info
+- list reports
+- get a specific spaceflight news article by its id
 - monitoring
 - list spaceflight mission reports
-- get a spaceflight news article by id
-- list formal spaceflight mission reports published by space agencies and organizations
-- get article
-- list reports
-- news
-- list blogs
-- get info
-- media
 - get api info
-- get a specific spaceflight news article by its id
-- space
+- list blogs
+- formal spaceflight mission reports from agencies
+- list articles
+- list the latest spaceflight news articles from 43+ sources; supports filtering by news site or keyword search
+- single spaceflight news article
+- list the latest spaceflight news articles with optional filtering
+- get api version and list of all supported news sources
+- media
+- list formal spaceflight mission reports published by space agencies and organizations
+- spaceflight news articles aggregated from 43+ sources
+- get a spaceflight news article by id
+- spaceflight
+- get spaceflight news api version and the complete list of aggregated news sources
+- news
+- list spaceflight blog posts providing in-depth coverage of launches and missions
 slug: space-news-monitoring
 source_filename: space-news-monitoring.yaml
 source_heading: Capability Spec

@@ -53,63 +53,63 @@ personas: []
 provider_name: SportsGameOdds
 provider_slug: sportsgameodds
 search_terms:
-- soccer
 - list events
-- sports data
-- list stats
-- get event with full multi-sportsbook odds
-- get player by id
 - supported leagues catalog
-- list sports teams for a given sport or league.
-- get details for a specific sports team by id.
-- gambling
-- get current api usage metrics and remaining rate limit quota.
-- sports betting
-- get event
-- list sports
-- mlb
-- get usage
-- nhl
-- list teams
-- list all covered leagues (nfl, nba, mlb, nhl, epl, ucl, ufc, pga, atp, etc.).
-- supported sports catalog
-- list players
-- single sporting event with complete odds across all sportsbooks
-- ufc
-- get player details and props odds by player id.
-- sporting events with live odds from multiple sportsbooks
-- list all leagues with optional sport filter
-- fantasy sports
-- sports teams
-- list players by team, sport, or league
-- list all 50+ covered sports
-- list sporting events with live odds. filter by sport (nfl, nba, etc.), league, and status (scheduled/live/completed).
-- get account usage
-- list markets
-- api usage and rate limit status
-- list leagues
-- nfl
-- get player
-- retrieve statistical data for events
-- list sporting events with sport, league, and status filters
-- get team
-- list teams by sport or league
-- individual athlete with props data
-- list all 50+ sports covered by sportsgameodds.
-- odds
-- betting market types
-- get full odds for a specific event from all 80+ sportsbooks across all markets.
-- player props
-- list available betting markets (moneylines, spreads, totals, props)
-- game and player statistics
-- athletes for player prop research
-- list athletes for player prop research by team, sport, or league.
-- retrieve statistical data for events by sport or league.
-- get team by id
-- individual sports team
+- sports data
 - get api usage metrics
-- nba
+- get team by id
+- list athletes for player prop research by team, sport, or league.
+- list players
+- list sports
+- list all covered leagues (nfl, nba, mlb, nhl, epl, ucl, ufc, pga, atp, etc.).
+- get player
+- list stats
+- get current api usage metrics and remaining rate limit quota.
+- sporting events with live odds from multiple sportsbooks
+- mlb
+- list sports teams for a given sport or league.
+- list available betting markets (moneylines, spreads, totals, props)
+- retrieve statistical data for events
+- list teams
+- supported sports catalog
+- list all 50+ covered sports
+- game and player statistics
+- get account usage
+- list sporting events with sport, league, and status filters
+- nhl
+- list all 50+ sports covered by sportsgameodds.
+- sports teams
+- list markets
+- fantasy sports
 - list available betting market types — moneylines, spreads, totals, team props, and player props.
+- betting market types
+- list leagues
+- individual sports team
+- get full odds for a specific event from all 80+ sportsbooks across all markets.
+- get team
+- get details for a specific sports team by id.
+- odds
+- api usage and rate limit status
+- list all leagues with optional sport filter
+- soccer
+- sports betting
+- retrieve statistical data for events by sport or league.
+- get event
+- get event with full multi-sportsbook odds
+- gambling
+- get player by id
+- get player details and props odds by player id.
+- single sporting event with complete odds across all sportsbooks
+- athletes for player prop research
+- list teams by sport or league
+- nfl
+- list players by team, sport, or league
+- get usage
+- list sporting events with live odds. filter by sport (nfl, nba, etc.), league, and status (scheduled/live/completed).
+- individual athlete with props data
+- player props
+- nba
+- ufc
 slug: sports-betting-odds
 source_filename: sports-betting-odds.yaml
 source_heading: Capability Spec

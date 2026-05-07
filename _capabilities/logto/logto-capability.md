@@ -249,134 +249,134 @@ personas: []
 provider_name: Logto
 provider_slug: logto
 search_terms:
-- create connector
-- replaceapplicationroles
-- replaceapplicationsigninexperience
+- get application
 - get api resources
-- get all jwt customizers
-- updateresourceisdefault
-- get application api resource roles
-- listapplicationuserconsentscopes
-- updateapplicationcustomdata
-- test passwordless connector
-- updateresource
-- get application organizations
-- delete jwt customizer
-- deleteresource
-- updateapplication
-- update api resource
-- get application secrets
-- getconnector
-- api
-- updateoidcsessionconfig
-- authorization
-- create an api resource
-- listapplicationsecrets
-- assign user consent scopes to application.
-- get connector's authorization uri
-- get jwt customizer
-- getapplicationsigninexperience
-- rotate oidc keys
-- delete api resource
-- deleteapplicationprotectedappmetadatacustomdomai
-- rotateoidckeys
-- deleteapplicationlegacysecret
-- deleteapplicationrole
-- delete connector
-- create api resource scope
-- identity
-- getconnectorfactory
-- update admin console config
-- get connector factories
-- remove custom domain.
-- getadminconsoleconfig
-- list all the user consented organizations of a application.
-- createconnectortest
-- open source
-- replaceapplicationuserconsentorganizations
-- delete application
-- get connector
-- authentication
-- get api resource scopes
-- get application custom domains.
-- createapplicationprotectedappmetadatacustomdomai
+- createresourcescope
 - get oidc keys
-- createconnectorauthorizationuri
-- remove a api resource role from application
-- listapplicationorganizations
-- listapplicationuserconsentorganizations
-- delete application secret
-- update jwt customizer
-- delete application legacy secret
-- listapplications
-- updateconnector
-- updateapplicationsecret
-- listconnectors
+- getoidckeys
+- update api resource
+- api
+- deleteapplicationrole
+- listapplicationuserconsentscopes
+- update application custom data
 - deleteconnector
-- getoidcsessionconfig
+- oidc
+- delete application legacy secret
+- get all jwt customizers
+- updateapplicationcustomdata
+- get applications
+- delete application secret
+- updatejwtcustomizer
+- updateresource
+- list all the user consent scopes of an application.
+- upsertjwtcustomizer
+- get connectors
+- createapplicationsecret
+- update application
+- replaceapplicationroles
+- getconnector
+- assignapplicationroles
+- authorization
+- updateconnector
+- createconnector
+- deletejwtcustomizer
+- delete api resource
+- update application level sign-in experience
+- listresourcescopes
+- createapplicationprotectedappmetadatacustomdomai
+- testjwtcustomizer
+- replaceapplicationsigninexperience
+- getadminconsoleconfig
+- createconnectorauthorizationuri
+- getidtokenconfig
+- createconnectortest
+- authentication
+- get application api resource roles
+- listjwtcustomizers
+- remove a api resource role from application
+- listresources
 - update connector
 - getresource
-- update application level sign-in experience
-- deleteapplicationuserconsentscope
-- update api resource roles for application
-- createapplicationuserconsentscope
-- delete oidc key
-- upsertidtokenconfig
-- createapplicationsecret
-- get connectors
-- update application
-- assignapplicationroles
-- deleteapplication
-- get applications
-- add application secret
-- remove user consent scope from application.
-- oidc
-- upsert id token claims configuration
-- get application
-- createresourcescope
-- getoidckeys
-- getjwtcustomizer
-- get admin console config
-- deleteoidckey
-- update application secret
-- test jwt customizer
-- deleteapplicationuserconsentorganization
-- deletejwtcustomizer
-- update oidc session config
-- get id token claims configuration
-- list all the user consent scopes of an application.
-- listresourcescopes
-- set api resource as default
-- create an application
-- createconnector
-- testjwtcustomizer
-- logto
-- create or update jwt customizer
-- createresource
-- listjwtcustomizers
-- deleteapplicationsecret
-- createapplication
-- update application custom data
-- assign api resource roles to application
-- get oidc session config
-- oauth
-- get the application level sign-in experience
-- updateadminconsoleconfig
-- get connector factory
-- saml
 - listconnectorfactories
-- listresources
-- updatejwtcustomizer
-- get api resource
-- listapplicationprotectedappmetadatacustomdomains
-- getapplication
+- add application secret
+- upsert id token claims configuration
 - revoke a user's access to an organization for a application.
-- createapplicationuserconsentorganization
-- add a custom domain to the application.
-- getidtokenconfig
-- listapplicationroles
-- upsertjwtcustomizer
+- getapplication
+- get api resource
+- get admin console config
+- get application organizations
+- update jwt customizer
+- test jwt customizer
+- rotateoidckeys
+- updateoidcsessionconfig
+- remove custom domain.
+- get the application level sign-in experience
 - grant a list of organization access of a user for a application.
+- create an api resource
+- replaceapplicationuserconsentorganizations
+- deleteapplicationuserconsentscope
+- deleteapplicationprotectedappmetadatacustomdomai
+- assign api resource roles to application
+- create api resource scope
+- getconnectorfactory
+- update oidc session config
+- upsertidtokenconfig
+- add a custom domain to the application.
+- list all the user consented organizations of a application.
+- get connector's authorization uri
+- deleteapplication
+- listapplicationorganizations
+- identity
+- create or update jwt customizer
+- listapplicationuserconsentorganizations
+- getjwtcustomizer
+- get application secrets
+- updateapplicationsecret
+- listapplicationprotectedappmetadatacustomdomains
+- rotate oidc keys
+- set api resource as default
+- oauth
+- deleteresource
+- updateadminconsoleconfig
+- get connector
+- create connector
+- update application secret
+- getapplicationsigninexperience
+- saml
+- test passwordless connector
+- listapplicationsecrets
+- remove user consent scope from application.
+- get connector factory
+- listapplicationroles
+- logto
+- deleteapplicationlegacysecret
+- open source
+- update api resource roles for application
+- get jwt customizer
+- createapplication
+- get api resource scopes
+- listconnectors
+- assign user consent scopes to application.
+- createresource
+- deleteapplicationuserconsentorganization
+- getoidcsessionconfig
+- createapplicationuserconsentorganization
+- update admin console config
+- get id token claims configuration
+- get connector factories
+- get oidc session config
+- delete oidc key
+- create an application
+- get application custom domains.
+- delete application
+- listapplications
+- deleteoidckey
+- createapplicationuserconsentscope
+- updateresourceisdefault
+- updateapplication
+- delete connector
+- deleteapplicationsecret
+- delete jwt customizer
 slug: logto-capability
 source_filename: logto-capability.yaml
 source_heading: Capability Spec

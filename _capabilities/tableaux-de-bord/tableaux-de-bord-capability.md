@@ -85,55 +85,55 @@ personas: []
 provider_name: Tableaux De Bord
 provider_slug: tableaux-de-bord
 search_terms:
-- create datasource
-- createalertrule
-- search dashboards
-- delete dashboard by uid
-- createdatasource
-- delete datasource
-- list organizations
-- searchteams
-- create annotation
-- update datasource
 - analytics
-- updatedatasource
-- get dashboard by uid
+- create alert rule
+- listdatasources
+- delete dashboard by uid
+- create organization
+- get datasource by id
+- createorganization
 - list organization users
-- create or update dashboard
-- list folders
-- createfolder
-- tableaux
-- searchdashboards
-- listfolders
-- dashboards
-- deletedashboardbyuid
-- monitoring
+- listorgusers
 - getdashboardbyuid
 - list annotations
-- listdatasources
-- listorgusers
-- listorganizations
-- data visualization
-- create organization
-- listannotations
-- bord
-- createannotation
-- metabase
-- grafana
-- api
-- createorganization
-- get datasource by id
-- deletedatasource
-- business intelligence
-- getdatasourcebyid
-- list datasources
+- create or update dashboard
+- searchdashboards
 - search teams
-- de
+- api
+- delete datasource
+- listorganizations
+- listannotations
+- deletedashboardbyuid
+- monitoring
+- bord
+- tableaux
 - createorupdatedashboard
-- create folder
-- create alert rule
-- list alert rules
+- listfolders
+- list folders
+- createalertrule
+- business intelligence
 - listalertrules
+- create datasource
+- grafana
+- getdatasourcebyid
+- search dashboards
+- searchteams
+- list alert rules
+- list datasources
+- dashboards
+- get dashboard by uid
+- metabase
+- deletedatasource
+- list organizations
+- createannotation
+- updatedatasource
+- createdatasource
+- de
+- createfolder
+- update datasource
+- create annotation
+- data visualization
+- create folder
 slug: tableaux-de-bord-capability
 source_filename: tableaux-de-bord-capability.yaml
 source_heading: Capability Spec

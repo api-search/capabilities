@@ -25,44 +25,44 @@ personas: []
 provider_name: United Technologies
 provider_slug: united-technologies
 search_terms:
-- list aircraft messages
+- aerospace
+- aviation operations
+- pre-flight and in-flight dispatch support
+- flight tracking and oooi events.
+- airport ground operations manager coordinating arrivals, departures, and gate assignments
+- dispatch
+- connectivity
+- real-time airline and airport operations management
+- airline operations
 - dispatcher responsible for flight planning, weather briefings, and operational communications
+- airline operations center controller monitoring fleet status and communicating with aircraft
+- operations controller
+- send an acars uplink message to an aircraft via the arinc global network (gate changes, operational updates).
+- send aircraft message
+- ground operations manager
+- collins aerospace
+- list aviation messages.
+- send aircraft uplink message.
+- list flights
+- list flights with oooi data.
+- track flights with real-time oooi event times (out, off, on, in) for operations center monitoring.
+- send message
+- arinc
+- manufacturing
 - track flights
 - list messages
 - complete aviation operations workflow combining acars messaging, flight tracking, and weather data
-- aviation weather data.
-- list flights with oooi data.
-- aviation operations
-- manufacturing
-- list flights
-- defense
-- get aviation weather data including metars, tafs, and sigmets for dispatch and flight operations.
-- get aviation weather
 - aviation
-- send an acars uplink message to an aircraft via the arinc global network (gate changes, operational updates).
-- list aviation messages.
-- real-time airline and airport operations management
-- get weather
-- pre-flight and in-flight dispatch support
-- airline operations center controller monitoring fleet status and communicating with aircraft
-- list acars messages for aircraft, filtered by airline code, registration, or flight number.
-- aerospace
-- acars aircraft messaging.
-- arinc
-- connectivity
-- collins aerospace
-- send aircraft uplink message.
-- send message
-- dispatch
-- operations controller
-- dispatcher
-- airline operations
-- ground operations manager
+- get aviation weather
 - get aviation weather.
-- airport ground operations manager coordinating arrivals, departures, and gate assignments
-- track flights with real-time oooi event times (out, off, on, in) for operations center monitoring.
-- flight tracking and oooi events.
-- send aircraft message
+- get aviation weather data including metars, tafs, and sigmets for dispatch and flight operations.
+- defense
+- list aircraft messages
+- list acars messages for aircraft, filtered by airline code, registration, or flight number.
+- get weather
+- acars aircraft messaging.
+- dispatcher
+- aviation weather data.
 slug: aviation-operations
 source_filename: aviation-operations.yaml
 source_heading: Capability Spec

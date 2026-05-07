@@ -27,41 +27,41 @@ personas:
 provider_name: Alchemy
 provider_slug: alchemy
 search_terms:
-- gas fee sponsorship and erc-4337 account abstraction.
-- web3
-- erc-20 token data and metadata.
-- get metadata for an erc-20 token contract.
-- web3 platform engineer
-- blockchain
-- wallet developer
-- get token metadata
-- get metadata (name, symbol, decimals, logo) for an erc-20 token contract.
-- get erc-20 token balances for a wallet address.
-- defi builder
-- builds evm wallet applications needing token balances and transaction history.
-- develops defi applications requiring portfolio tracking and token data.
-- query historical on-chain asset transfers for a wallet by address, block range, and category.
-- on-chain asset transfer history.
 - get erc-20 token balances for a wallet address across evm networks.
-- dapp developer
 - alchemy
-- ethereum
-- tokens
-- get token balances
-- manages gas sponsorship infrastructure and erc-4337 policies.
-- combines token api and transfers api for wallet portfolio applications.
-- account abstraction
-- erc-20 token metadata.
-- creates decentralized applications with gasless ux for end users.
-- get asset transfers
-- query historical asset transfers for a wallet address.
-- wallet balance and asset portfolio management.
 - cryptocurrency
+- dapp developer
+- wallet balance and asset portfolio management.
+- query historical on-chain asset transfers for a wallet by address, block range, and category.
+- get erc-20 token balances for a wallet address.
+- combines token api and transfers api for wallet portfolio applications.
+- erc-20 token metadata.
 - transfers
+- get asset transfers
+- manages gas sponsorship infrastructure and erc-4337 policies.
+- web3
+- get token balances
+- get metadata for an erc-20 token contract.
+- wallet developer
+- ethereum
+- get metadata (name, symbol, decimals, logo) for an erc-20 token contract.
+- query historical asset transfers for a wallet address.
+- tokens
 - erc-20 token balances for a wallet.
-- historical on-chain asset transfers.
+- web3 platform engineer
 - portfolio
+- gas fee sponsorship and erc-4337 account abstraction.
+- builds evm wallet applications needing token balances and transaction history.
+- defi builder
 - manages gasless transaction sponsorship using erc-4337 account abstraction via gas manager api.
+- get token metadata
+- historical on-chain asset transfers.
+- account abstraction
+- blockchain
+- develops defi applications requiring portfolio tracking and token data.
+- creates decentralized applications with gasless ux for end users.
+- erc-20 token data and metadata.
+- on-chain asset transfer history.
 slug: web3-wallet-portfolio
 source_filename: web3-wallet-portfolio.yaml
 source_heading: Capability Spec

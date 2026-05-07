@@ -97,58 +97,58 @@ personas: []
 provider_name: Freepik
 provider_slug: freepik
 search_terms:
-- generate image with flux 2 pro
-- generatefluxdev
-- imagestyletransfer
-- apply style transfer
-- generate image with flux dev
-- imageupscaler
+- generate image with flux pro v1.1
+- generate image with hyperflux
+- generate music
+- generateflux2pro
 - imageexpand
-- graphics
-- generate sound effects
-- gettask
-- illustrations
+- expand image
+- generatemusic
+- ai
+- generatekling21pro
+- api
+- audio isolation from audio or video
+- generate video with kling v2.5 pro
 - photos
 - video generation
-- generatemusic
+- generateflux2turbo
+- image generation
+- generateseedream
+- imagerelight
+- apply style transfer
+- list music generation tasks
+- freepik
+- generate image with flux 2 pro
+- gettask
+- generate video with kling v2.1 pro
+- graphics
+- listresources
+- illustrations
+- generate image with flux 2 turbo
+- generate image with flux dev
 - generateminimaxhailuo
-- search stock resources
+- generaterunway
+- relight image
+- removebackground
 - remove background
 - generatesoundeffects
-- generate image with hyperflux
-- generatehyperflux
-- generatekling21pro
-- generate video with kling v2.5 pro
-- generate video with minimax hailuo 02 1080p
-- generate image with flux 2 turbo
-- expand image
-- removebackground
-- audioisolation
-- ai
-- generatemystic
+- search stock resources
+- creative image upscaler
+- poll task status
+- imagestyletransfer
+- generatekling25pro
 - generatefluxprov11
 - generate image with runway
-- listresources
-- generate image with seedream v4.5
-- generate video with kling v2.1 pro
-- api
-- generaterunway
-- generateflux2turbo
-- freepik
-- generatekling25pro
-- relight image
-- generateseedream
-- audio isolation from audio or video
-- image generation
-- generateflux2pro
+- audioisolation
 - listmusictasks
-- creative image upscaler
-- list music generation tasks
-- generate image with flux pro v1.1
-- imagerelight
-- poll task status
+- generate video with minimax hailuo 02 1080p
+- generatemystic
+- generatefluxdev
+- generate image with seedream v4.5
+- imageupscaler
+- generatehyperflux
 - generate image with mystic
-- generate music
+- generate sound effects
 slug: freepik-capability
 source_filename: freepik-capability.yaml
 source_heading: Capability Spec

@@ -61,69 +61,69 @@ personas: []
 provider_name: Vanta
 provider_slug: vanta
 search_terms:
-- compliance framework status and management
-- upload document
-- individual vendor management
-- list compliance frameworks (soc 2, iso 27001, hipaa, pci dss, gdpr) and their readiness status
-- list all configured compliance frameworks and their readiness
-- list controls
-- list computers
-- update a vendor's risk level or review status after security assessment
-- list vendors and security review status
-- vanta
-- compliance evidence document management
-- query automated compliance test results to identify evidence gaps
-- list documents
-- endpoint device compliance monitoring
-- list people
-- compliance controls oversight
 - list vulnerabilities
-- list monitored computers and compliance status
-- risk management
-- list vulnerabilities with severity and sla filters
-- add a new vendor for security review
-- list compliance evidence documents
-- vulnerability tracking and remediation management
-- automated compliance test results
-- compliance
-- list tests
-- list failing controls
-- add a new third-party vendor to vanta for security review tracking
-- list non compliant computers
-- security
-- get vendor details and security review status
-- get all failing controls to prioritize remediation efforts
-- list frameworks
-- query controls with status and framework filters
-- list people with security task and training status
-- get all critical severity open vulnerabilities for immediate remediation
-- list vendors
-- list integrations
-- personnel security task tracking
-- update vendor
-- update vendor risk level and review status
-- list critical vulnerabilities
-- list all configured integrations and their connection health
-- get vendor
-- third-party vendor security reviews
-- integration status monitoring
-- query compliance controls with optional framework and status filters to identify gaps
-- query third-party vendors and their security review status
-- iso 27001
-- list configured integrations and connection status
-- upload compliance evidence document
-- query automated test results for compliance evidence
-- soc 2
-- hipaa
-- create vendor
-- cybersecurity
-- list personnel with security training completion and overdue task status
 - governance
+- list integrations
+- get all failing controls to prioritize remediation efforts
 - list endpoint devices that are failing compliance checks
+- compliance evidence document management
+- list computers
+- add a new third-party vendor to vanta for security review tracking
+- update vendor risk level and review status
+- individual vendor management
+- integration status monitoring
+- update a vendor's risk level or review status after security assessment
+- add a new vendor for security review
+- list failing controls
+- list all configured compliance frameworks and their readiness
+- list configured integrations and connection status
+- iso 27001
+- query third-party vendors and their security review status
+- compliance
+- hipaa
+- update vendor
+- query controls with status and framework filters
+- endpoint device compliance monitoring
 - get detailed information about a specific vendor's security review
+- list non compliant computers
+- vanta
+- upload document
+- compliance framework status and management
+- list controls
+- list people with security task and training status
+- compliance controls oversight
+- third-party vendor security reviews
+- list personnel with security training completion and overdue task status
+- vulnerability tracking and remediation management
 - update vendor review
+- list frameworks
+- get vendor details and security review status
+- list vendors and security review status
+- get vendor
+- upload compliance evidence document
+- personnel security task tracking
+- list vendors
+- list people
+- list compliance evidence documents
+- soc 2
+- list vulnerabilities with severity and sla filters
+- list monitored computers and compliance status
 - list security vulnerabilities with severity and remediation status filters
+- get all critical severity open vulnerabilities for immediate remediation
+- list all configured integrations and their connection health
 - list compliance evidence documents uploaded to vanta
+- create vendor
+- list compliance frameworks (soc 2, iso 27001, hipaa, pci dss, gdpr) and their readiness status
+- cybersecurity
+- list documents
+- list critical vulnerabilities
+- list tests
+- query compliance controls with optional framework and status filters to identify gaps
+- security
+- risk management
+- automated compliance test results
+- query automated compliance test results to identify evidence gaps
+- query automated test results for compliance evidence
 slug: compliance-management
 source_filename: compliance-management.yaml
 source_heading: Capability Spec

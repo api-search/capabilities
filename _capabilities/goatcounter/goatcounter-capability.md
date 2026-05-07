@@ -73,45 +73,45 @@ personas: []
 provider_name: GoatCounter
 provider_slug: goatcounter
 search_terms:
+- list paths
+- create a new site
+- analytics
+- get site detail
+- patchsite
+- web analytics
+- api
+- getsite
+- statsbypagedetail
+- listsites
+- statshitsrefs
+- statshits
+- privacy
+- count pageviews
+- patch a site
+- create csv export
+- updatesitepost
+- list sites
 - get export info
 - statsbypage
-- statshits
-- get site detail
-- list total pageview counts
-- statstotal
-- count
-- analytics
-- update a site
-- view/visitor stats per path
-- getexport
-- patch a site
-- goatcounter
-- create a new site
-- download export
-- updatesitepost
-- web analytics
-- listsites
-- create csv export
-- list sites
-- count pageviews
-- api
-- listpaths
-- downloadexport
-- createexport
-- getme
-- list paths
-- patchsite
-- statshitsrefs
-- getsite
-- get current user
-- pageviews
 - createsite
-- privacy
-- statsbypagedetail
+- count
+- getme
+- pageviews
+- update a site
+- goatcounter
+- downloadexport
+- download export
+- statstotal
+- list total pageview counts
+- stats for a category (browser, system, location, etc.)
+- view/visitor stats per path
 - referral stats for a path
+- getexport
+- get current user
+- listpaths
 - statistics
 - detailed stats within a category
-- stats for a category (browser, system, location, etc.)
+- createexport
 slug: goatcounter-capability
 source_filename: goatcounter-capability.yaml
 source_heading: Capability Spec

@@ -25,24 +25,24 @@ personas: []
 provider_name: Google Play Developer
 provider_slug: google-play
 search_terms:
-- google play developer get subscription status
-- subscriptions
-- mobile
-- google play
-- apps
-- google play developer get purchase status
-- android
-- publishing
-- google
-- api
 - play
 - getpurchasestatus
-- getsubscriptionstatus
-- in-app purchases
-- listinappproducts
-- createedit
-- google play developer list in-app products
+- subscriptions
+- android
+- apps
+- google
 - google play developer create a new edit
+- createedit
+- listinappproducts
+- google play developer get purchase status
+- google play developer get subscription status
+- google play
+- api
+- google play developer list in-app products
+- in-app purchases
+- mobile
+- publishing
+- getsubscriptionstatus
 slug: google-play-capability
 source_filename: google-play-capability.yaml
 source_heading: Capability Spec

@@ -29,57 +29,57 @@ personas: []
 provider_name: U.S. Geological Survey
 provider_slug: u-s-geological-survey
 search_terms:
+- usgs
 - get streamflow data
-- retrieve groundwater level (depth to water table) observations from usgs groundwater monitoring wells. use parameter code 72019 for depth to water below land surface.
-- get water monitoring site
-- list all available usgs earthquake catalog sources used to filter earthquake queries.
-- 'retrieve details for a specific usgs water monitoring site using its identifier (format: usgs-sitenumber, e.g., usgs-11169025).'
-- geological
-- usgs water monitoring stations (stream gages, groundwater wells).
-- earth science
-- Geoscientist
 - geoscience
-- return the number of earthquakes matching query parameters.
+- locate usgs stream gages, groundwater monitoring wells, and other water quality monitoring stations by state, watershed (huc), or geographic bounding box.
+- Hydrologist
+- earthquake
+- get water monitoring site
+- real-time and historical seismic event data and hazard assessment
+- search recent earthquakes
+- find water monitoring sites
+- retrieve streamflow (discharge in ft³/s) time series from a usgs stream gage. specify parameter code 00060 for discharge, 00065 for gage height, or other usgs parameter codes.
+- retrieve groundwater level (depth to water table) observations from usgs groundwater monitoring wells. use parameter code 72019 for depth to water below land surface.
+- unified workflow for earthquake researchers, hydrologists, emergency managers, and scientists to access usgs earthquake catalog and water monitoring data.
+- list earthquake catalogs
+- 'retrieve details for a specific usgs water monitoring site using its identifier (format: usgs-sitenumber, e.g., usgs-11169025).'
+- Geoscientist
+- natural hazard evaluation including earthquakes, floods, and landslides
+- list all available usgs earthquake catalog sources used to filter earthquake queries.
+- usgs water monitoring stations (stream gages, groundwater wells).
+- get monitoring locations
+- Researcher
 - count earthquake events without returning full data.
+- retrieve a specific usgs monitoring location by identifier.
+- get water observations
+- water
+- retrieve earthquake events from the usgs comcat catalog.
+- get monitoring location
+- count earthquakes
+- search the usgs earthquake catalog for recent seismic events. filter by time range, location (bounding box or circle), magnitude, depth, and alert level. returns geojson with event properties and geometry.
+- water resources scientist analyzing streamflow, groundwater levels, and water quality using usgs monitoring data.
+- natural resources
+- hazard assessment
+- retrieve streamflow, stage, or other water quality time series.
 - Emergency Manager
 - count earthquakes by criteria
-- water
-- get water observations
-- usgs
-- count earthquakes
-- query earthquakes
-- list earthquake catalogs
-- natural hazard evaluation including earthquakes, floods, and landslides
-- natural resources
-- get monitoring location
-- get a single usgs water monitoring location.
-- retrieve a specific usgs monitoring location by identifier.
-- get monitoring locations
-- real-time and historical seismic event data and hazard assessment
-- academic or agency researcher using usgs data for geological, hydrological, or environmental studies.
-- retrieve streamflow, stage, or other water quality time series.
-- earthquake
-- researcher studying seismic activity, geological hazards, or earth processes using usgs earthquake and geophysical data.
-- Hydrologist
-- retrieve earthquake events from the usgs comcat catalog.
-- water resources scientist analyzing streamflow, groundwater levels, and water quality using usgs monitoring data.
+- earth science
 - time series water data from usgs monitoring locations.
-- search the usgs earthquake catalog for recent seismic events. filter by time range, location (bounding box or circle), magnitude, depth, and alert level. returns geojson with event properties and geometry.
-- count the number of earthquakes matching specified criteria without retrieving full event data. useful for trend analysis and statistical queries.
-- retrieve streamflow (discharge in ft³/s) time series from a usgs stream gage. specify parameter code 00060 for discharge, 00065 for gage height, or other usgs parameter codes.
-- unified workflow for earthquake researchers, hydrologists, emergency managers, and scientists to access usgs earthquake catalog and water monitoring data.
-- find water monitoring sites
-- search recent earthquakes
-- federal government
-- government or public safety official monitoring earthquakes and flood conditions for emergency response planning.
-- locate usgs stream gages, groundwater monitoring wells, and other water quality monitoring stations by state, watershed (huc), or geographic bounding box.
-- get groundwater levels
-- Researcher
-- streamflow, groundwater, water quality, and flood monitoring
-- hydrology
-- search usgs earthquake catalog data.
 - find usgs water monitoring locations by state or bounding box.
-- hazard assessment
+- get groundwater levels
+- academic or agency researcher using usgs data for geological, hydrological, or environmental studies.
+- hydrology
+- get a single usgs water monitoring location.
+- search usgs earthquake catalog data.
+- return the number of earthquakes matching query parameters.
+- federal government
+- count the number of earthquakes matching specified criteria without retrieving full event data. useful for trend analysis and statistical queries.
+- query earthquakes
+- geological
+- streamflow, groundwater, water quality, and flood monitoring
+- researcher studying seismic activity, geological hazards, or earth processes using usgs earthquake and geophysical data.
+- government or public safety official monitoring earthquakes and flood conditions for emergency response planning.
 slug: geoscience-data-access
 source_filename: geoscience-data-access.yaml
 source_heading: Capability Spec

@@ -29,27 +29,27 @@ personas: []
 provider_name: Google Cloud Document AI
 provider_slug: google-cloud-document-ai
 search_terms:
+- google cloud document ai list processor types
+- forms
+- ai
+- api
+- ocr
+- google
+- data extraction
+- machine learning
+- google cloud document ai list processors
+- listprocessors
+- document
 - google cloud document ai batch process documents
-- google cloud document ai create a processor
-- document processing
 - processdocument
 - cloud
-- data extraction
-- google
-- ai
-- document
+- createprocessor
 - google cloud document ai process a document
 - batchprocessdocuments
-- machine learning
-- api
-- listprocessors
-- forms
-- google cloud document ai list processors
-- createprocessor
-- google cloud document ai list processor types
-- ocr
+- document processing
 - google cloud
 - listprocessortypes
+- google cloud document ai create a processor
 slug: google-cloud-document-ai-capability
 source_filename: google-cloud-document-ai-capability.yaml
 source_heading: Capability Spec

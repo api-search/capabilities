@@ -37,28 +37,28 @@ personas: []
 provider_name: Apache Software Foundation
 provider_slug: apache-software-foundation
 search_terms:
-- software
-- apache software foundation get all podlings
-- projects
+- governance
+- apache software foundation get foundation groups
 - apache software foundation get people
-- asf
+- api
+- getgroups
+- apache software foundation get all releases
+- getprojects
+- foundation
+- open source
+- getpeoplenames
+- getcommittees
+- apache software foundation get all projects
+- apache
 - apache software foundation get all committees
 - getreleases
-- getpodlings
-- apache
-- getpeoplenames
-- open source
-- apache software foundation get foundation groups
-- apache software foundation get all projects
-- getgroups
-- foundation
-- api
-- getpeople
-- getprojects
-- apache software foundation get all releases
-- getcommittees
-- governance
 - apache software foundation get people names
+- software
+- getpeople
+- apache software foundation get all podlings
+- projects
+- getpodlings
+- asf
 slug: apache-software-foundation-capability
 source_filename: apache-software-foundation-capability.yaml
 source_heading: Capability Spec

@@ -133,77 +133,77 @@ personas: []
 provider_name: Jupyter Server
 provider_slug: jupyter-server
 search_terms:
-- jupyter server list kernels
+- createsession
+- jupyter server delete checkpoint
+- listsessions
+- interruptkernel
+- updateconfig
+- portable
+- listkernelspecs
 - getcurrentuser
+- jupyter server list terminals
+- jupyter server create terminal
+- renamecontents
+- jupyter server delete session
+- jupyter server get terminal
+- jupyter server create checkpoint
+- api
+- deletesession
+- jupyter server list kernels
+- jupyter server restart kernel
+- getkernel
+- jupyter server get config section
+- jupyter server update config section
+- jupyter server delete contents
+- createterminal
+- jupyter server create session
+- getconfig
+- jupyter server restore checkpoint
+- jupyter server update session
+- jupyter server get kernel
+- startkernel
+- deletecheckpoint
+- kernels
+- listcheckpoints
+- jupyter server list checkpoints
+- jupyter server shutdown kernel
+- jupyter server save contents
+- jupyter server get server status
 - jupyter server get api info
 - jupyter server list sessions
 - createcheckpoint
-- jupyter server get session
-- jupyter server start kernel
-- getkernel
-- jupyter server list terminals
-- getapispec
-- jupyter server delete checkpoint
-- getsession
-- workbooks
-- listkernels
-- jupyter server restart kernel
-- listkernelspecs
-- listcheckpoints
-- notebooks
-- compute
 - jupyter server list kernel specifications
-- jupyter server restore checkpoint
-- jupyter server rename contents
-- jupyter server delete session
-- jupyter
-- jupyter server get api specification
-- jupyter server list checkpoints
-- restartkernel
-- deletecheckpoint
-- getterminal
-- createcontents
-- jupyter server create checkpoint
-- renamecontents
-- jupyter server delete contents
-- jupyter server update config section
-- listterminals
-- jupyter server delete terminal
-- deleteterminal
-- getapiinfo
-- jupyter server create terminal
-- savecontents
-- jupyter server get terminal
-- jupyter server shutdown kernel
-- updatesession
-- api
-- jupyter server get server status
-- interactive computing
-- jupyter server save contents
-- shutdownkernel
-- jupyter server get current user
 - deletecontents
-- createterminal
-- interruptkernel
-- getserverstatus
-- getcontents
-- listsessions
-- kernels
-- restorecheckpoint
-- createsession
-- startkernel
-- jupyter server create contents
-- jupyter server create session
-- jupyter server update session
-- updateconfig
-- jupyter server interrupt kernel
-- jupyter server get kernel
-- jupyter server get config section
-- server
-- deletesession
-- getconfig
+- jupyter server start kernel
+- deleteterminal
+- workbooks
+- updatesession
+- listterminals
+- listkernels
+- getterminal
+- jupyter server delete terminal
 - jupyter server get contents
-- portable
+- notebooks
+- shutdownkernel
+- restorecheckpoint
+- getapispec
+- jupyter server interrupt kernel
+- compute
+- server
+- getapiinfo
+- interactive computing
+- getserverstatus
+- getsession
+- jupyter server get api specification
+- jupyter server rename contents
+- restartkernel
+- savecontents
+- jupyter server create contents
+- jupyter
+- jupyter server get session
+- getcontents
+- jupyter server get current user
+- createcontents
 slug: jupyter-server-capability
 source_filename: jupyter-server-capability.yaml
 source_heading: Capability Spec

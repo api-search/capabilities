@@ -37,29 +37,29 @@ personas: []
 provider_name: Google Distributed Cloud
 provider_slug: google-distributed-cloud
 search_terms:
-- createnetwork
-- google distributed cloud list routers
-- google distributed cloud list networks
 - listsubnets
-- distributed
-- hybrid cloud
-- cloud
-- google distributed cloud list zones
-- google distributed cloud create a router
-- google
-- listrouters
 - google distributed cloud list subnets
-- kubernetes
-- createrouter
-- edge computing
-- api
-- createsubnet
-- listnetworks
-- listzones
-- on-premises
-- google distributed cloud create a subnet
-- distributed infrastructure
+- distributed
 - hardware
+- on-premises
+- listnetworks
+- google distributed cloud create a router
+- google distributed cloud list networks
+- api
+- listzones
+- edge computing
+- google distributed cloud create a subnet
+- createnetwork
+- google
+- google distributed cloud list routers
+- kubernetes
+- createsubnet
+- listrouters
+- cloud
+- createrouter
+- hybrid cloud
+- distributed infrastructure
+- google distributed cloud list zones
 - google distributed cloud create a network
 slug: google-distributed-cloud-capability
 source_filename: google-distributed-cloud-capability.yaml

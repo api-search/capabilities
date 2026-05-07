@@ -249,86 +249,86 @@ personas: []
 provider_name: Fast Healthcare Interoperability Resources
 provider_slug: fhir
 search_terms:
-- creatediagnosticreport
-- histtypecoverage
-- deleteallergyintolerance
-- histtypecareteam
-- patchcareteam
-- histtypedevice
-- searchcondition
-- searchcareteam
-- histinstcondition
-- histtypecondition
 - api
-- interoperability
-- fast healthcare interoperability resources read the current state of the resource
-- vreaddevice
-- deletecareteam
-- fast healthcare interoperability resources search all resources of type careplan based on a set of criteria
-- updatecoverage
-- histinstcoverage
-- createcareplan
-- fast healthcare interoperability resources change the current state of the resource by providing a patch - a series of change commands
-- patchcareplan
-- createdevice
-- fast healthcare interoperability resources create a new resource
-- readdevice
-- searchcoverage
-- fast healthcare interoperability resources read the past states of the resource
-- updatecareteam
-- fast healthcare interoperability resources update the current state of the resource
-- healthcare
-- histinstallergyintolerance
-- updatediagnosticreport
-- standards
-- fast healthcare interoperability resources search all resources of type careteam based on a set of criteria
-- histinstcareplan
-- readcareteam
-- vreadcondition
-- deletecoverage
-- deletedevice
-- fast healthcare interoperability resources read a past state of the resource
-- fast healthcare interoperability resources search all resources of type diagnosticreport based on a set of criteria
-- createcareteam
-- createcondition
-- searchallergyintolerance
-- histtypecareplan
-- fhir
-- readcareplan
-- histtypeallergyintolerance
-- patchcoverage
-- fast healthcare interoperability resources search all resources of type condition based on a set of criteria
-- updateallergyintolerance
-- vreadcoverage
-- fast healthcare interoperability resources search all resources of type allergyintolerance based on a set of criteria
-- histinstcareteam
-- searchcareplan
-- readcondition
-- readcoverage
-- fast healthcare interoperability resources search all resources of type coverage based on a set of criteria
-- updatedevice
-- patchdiagnosticreport
-- metadata
-- readallergyintolerance
-- fast healthcare interoperability resources search all resources of type device based on a set of criteria
-- searchdiagnosticreport
-- patchdevice
-- fast healthcare interoperability resources delete the resource so that it no exists (no read, search etc)
-- deletecondition
-- vreadcareteam
-- patchallergyintolerance
-- readdiagnosticreport
-- createcoverage
-- updatecareplan
-- deletecareplan
-- updatecondition
-- searchdevice
-- vreadallergyintolerance
-- createallergyintolerance
-- fast healthcare interoperability resources return the server's capability statement
-- patchcondition
-- histinstdevice
 - vreadcareplan
+- histtypecoverage
+- histinstcoverage
+- fast healthcare interoperability resources return the server's capability statement
+- patchcareplan
+- updatediagnosticreport
+- interoperability
+- patchdevice
+- deletecoverage
+- deletecareteam
+- readdiagnosticreport
+- searchcoverage
+- updateallergyintolerance
+- patchdiagnosticreport
+- fast healthcare interoperability resources read the current state of the resource
+- patchcareteam
+- updatedevice
+- readcondition
+- patchallergyintolerance
+- metadata
+- updatecareplan
+- histtypeallergyintolerance
+- fast healthcare interoperability resources search all resources of type condition based on a set of criteria
+- fhir
+- histinstcareplan
+- updatecareteam
+- vreaddevice
+- deletecareplan
+- createdevice
+- fast healthcare interoperability resources search all resources of type diagnosticreport based on a set of criteria
+- deletecondition
+- histinstallergyintolerance
+- fast healthcare interoperability resources delete the resource so that it no exists (no read, search etc)
+- searchcareplan
+- histinstcareteam
+- histtypecareplan
+- histinstcondition
+- patchcondition
+- deletedevice
+- fast healthcare interoperability resources search all resources of type device based on a set of criteria
+- createcondition
+- readdevice
+- histtypecareteam
+- searchcareteam
+- patchcoverage
+- fast healthcare interoperability resources read a past state of the resource
+- vreadallergyintolerance
+- readcareteam
+- searchdiagnosticreport
+- createcoverage
+- histtypedevice
+- fast healthcare interoperability resources create a new resource
+- creatediagnosticreport
+- fast healthcare interoperability resources change the current state of the resource by providing a patch - a series of change commands
+- readallergyintolerance
+- fast healthcare interoperability resources update the current state of the resource
+- histtypecondition
+- createcareteam
+- updatecondition
+- vreadcondition
+- fast healthcare interoperability resources search all resources of type careteam based on a set of criteria
+- histinstdevice
+- fast healthcare interoperability resources search all resources of type coverage based on a set of criteria
+- fast healthcare interoperability resources search all resources of type allergyintolerance based on a set of criteria
+- searchcondition
+- vreadcareteam
+- standards
+- createcareplan
+- searchdevice
+- healthcare
+- vreadcoverage
+- readcoverage
+- fast healthcare interoperability resources search all resources of type careplan based on a set of criteria
+- fast healthcare interoperability resources read the past states of the resource
+- searchallergyintolerance
+- createallergyintolerance
+- deleteallergyintolerance
+- updatecoverage
+- readcareplan
 slug: fhir-capability
 source_filename: fhir-capability.yaml
 source_heading: Capability Spec

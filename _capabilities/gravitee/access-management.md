@@ -45,49 +45,49 @@ personas: []
 provider_name: Gravitee
 provider_slug: gravitee
 search_terms:
-- gravitee
-- get a security domain by id.
+- security domains.
+- list users within a security domain.
 - list roles within a security domain.
-- delete domain
-- list identity providers
-- identity
 - flows within a domain.
-- oauth2
-- list authentication and authorization flows within a domain.
-- update domain
+- list all gravitee am security domains within an environment.
+- list identity providers within a security domain.
+- list domain flows
 - list domain applications
-- a single security domain.
-- get a gravitee am security domain by id.
+- list domain users
+- gravitee
+- create domain
+- get a security domain by id.
 - create a new gravitee am security domain.
 - graphql
-- applications within a domain.
-- create domain
-- create a new security domain.
-- get domain
-- users within a domain.
-- list identity providers within a security domain.
-- list domain roles
-- list domain flows
-- list all gravitee am security domains within an environment.
 - open source
-- update a gravitee am security domain.
-- create a new oauth2/oidc application within a domain.
-- list all security domains.
-- identity providers within a domain.
-- delete a gravitee am security domain and its resources.
-- create domain application
-- create a user within a security domain.
-- api gateway
-- api management
-- access management
-- roles within a domain.
-- list domain users
 - list domains
-- security domains.
+- api management
+- delete domain
 - list oauth2/oidc applications within a domain.
-- delete a security domain.
-- list users within a security domain.
+- identity
+- users within a domain.
+- applications within a domain.
+- create a new oauth2/oidc application within a domain.
+- get domain
+- api gateway
+- create a new security domain.
+- list authentication and authorization flows within a domain.
+- oauth2
 - create domain user
+- create domain application
+- list identity providers
+- a single security domain.
+- list all security domains.
+- access management
+- delete a gravitee am security domain and its resources.
+- roles within a domain.
+- delete a security domain.
+- update a gravitee am security domain.
+- update domain
+- create a user within a security domain.
+- get a gravitee am security domain by id.
+- list domain roles
+- identity providers within a domain.
 slug: access-management
 source_filename: access-management.yaml
 source_heading: Capability Spec

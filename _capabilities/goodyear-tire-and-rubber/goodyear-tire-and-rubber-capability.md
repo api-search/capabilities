@@ -30,25 +30,25 @@ provider_name: Goodyear Tire & Rubber
 provider_slug: goodyear-tire-and-rubber
 search_terms:
 - create service ticket
-- tires
 - telematics
-- createworkorder
-- getworkorders
-- getservicetickets
-- connected vehicles
-- iot
-- rubber
-- get service tickets
-- gettirecatalog
-- fleet management
-- create work order
-- api
 - goodyear
-- tire
+- api
+- gettirecatalog
 - createserviceticket
-- get work orders
-- and
+- rubber
 - get tire catalog
+- getservicetickets
+- createworkorder
+- create work order
+- iot
+- connected vehicles
+- fleet management
+- get work orders
+- get service tickets
+- tire
+- and
+- tires
+- getworkorders
 slug: goodyear-tire-and-rubber-capability
 source_filename: goodyear-tire-and-rubber-capability.yaml
 source_heading: Capability Spec

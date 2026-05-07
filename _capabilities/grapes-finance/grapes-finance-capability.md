@@ -57,40 +57,40 @@ personas: []
 provider_name: Grapes Finance
 provider_slug: grapes-finance
 search_terms:
-- get users
-- get users userid
+- post contacts
+- get orders
+- create organization
+- cryptocurrency
+- create order
+- get wallets
+- list wallets
+- api
 - create contact
-- list organizations
-- post wallets
+- offramp
+- create wallet
 - embedded finance
 - post organizations
 - finance
-- create user
-- list wallets
-- create organization
-- get contacts
-- create wallet
-- api
-- post users
-- grapes
-- fiat
-- get wallets
-- post contacts
-- create order
-- get user
+- get users userid
 - list orders
-- payments
 - list users
-- cryptocurrency
-- get organizations
-- offramp
 - list contacts
+- list organizations
+- post users
+- get contacts
 - submit kyc application
-- get orders
-- onramp
-- stablecoin
-- post kyc
 - post orders
+- get user
+- grapes
+- stablecoin
+- post wallets
+- create user
+- payments
+- post kyc
+- get users
+- onramp
+- fiat
+- get organizations
 slug: grapes-finance-capability
 source_filename: grapes-finance-capability.yaml
 source_heading: Capability Spec

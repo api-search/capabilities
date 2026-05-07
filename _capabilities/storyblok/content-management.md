@@ -45,60 +45,60 @@ personas: []
 provider_name: Storyblok
 provider_slug: storyblok
 search_terms:
-- webhooks
-- list manage stories
-- cdn list links
-- create a new story in a storyblok space
-- list links
-- list components
-- content story operations
-- publish story
-- cdn list stories
-- rest api
-- assets
-- management story operations
-- list published stories (delivery)
-- list component schemas
-- get story
-- mapi update story
-- list media assets
-- list all stories including drafts via management api
-- list published stories from the content delivery api with filtering by slug prefix, full-text search, and pagination support.
-- mapi list stories
-- list component schemas to understand content structure
-- list webhook endpoints configured in the space
-- mapi create story
-- cdn list datasource entries
-- publish a story
-- visual editor
-- content management
-- publish a story to make it live on the content delivery api
-- list media assets in the space asset library
-- list stories via management api
-- image optimization
-- headless cms
-- stories
 - content delivery
-- create a new story
-- retrieve a specific published story by its full url slug
-- create story
-- list stories
-- mapi delete story
-- fetch options, translations, or config data from a datasource
-- mapi list components
-- list assets
-- permanently delete a story from the space
-- get a story by full slug (delivery)
-- mapi list webhooks
 - update the content or metadata of an existing story
-- get the story url tree for building navigation menus or sitemaps
-- cms
-- cdn get story
-- list datasources
-- mapi publish story
-- get story link tree for navigation
-- mapi list assets
+- fetch options, translations, or config data from a datasource
+- mapi create story
+- publish a story
+- list component schemas to understand content structure
+- list links
+- publish story
+- mapi update story
+- list published stories from the content delivery api with filtering by slug prefix, full-text search, and pagination support.
 - components
+- list component schemas
+- list webhook endpoints configured in the space
+- create story
+- stories
+- list media assets
+- permanently delete a story from the space
+- create a new story in a storyblok space
+- cdn list stories
+- content story operations
+- get the story url tree for building navigation menus or sitemaps
+- get story link tree for navigation
+- create a new story
+- cms
+- list published stories (delivery)
+- list datasources
+- retrieve a specific published story by its full url slug
+- webhooks
+- cdn list links
+- visual editor
+- get a story by full slug (delivery)
+- list stories via management api
+- publish a story to make it live on the content delivery api
+- mapi publish story
+- mapi list assets
+- mapi list webhooks
+- cdn list datasource entries
+- get story
+- list stories
+- mapi list components
+- content management
+- rest api
+- management story operations
+- list media assets in the space asset library
+- image optimization
+- assets
+- mapi delete story
+- headless cms
+- list manage stories
+- list all stories including drafts via management api
+- mapi list stories
+- list assets
+- cdn get story
+- list components
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

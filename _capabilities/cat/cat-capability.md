@@ -35,22 +35,22 @@ provider_slug: cat
 search_terms:
 - cat get fuel remaining ratio
 - construction
-- mining
-- equipment
-- manufacturing
-- cat get fleet snapshot
 - get pagenumber
-- api
-- get location data
-- cat
-- locomotives
-- cat get equipment snapshot
-- heavy equipment
 - telematics
-- engines
-- cat get fault codes
+- mining
+- manufacturing
+- heavy equipment
 - cat get switch status
+- get location data
+- cat get fleet snapshot
+- cat get fault codes
+- cat
+- api
+- cat get equipment snapshot
+- engines
+- equipment
 - get equipment makemodelserial make model serialn
+- locomotives
 slug: cat-capability
 source_filename: cat-capability.yaml
 source_heading: Capability Spec

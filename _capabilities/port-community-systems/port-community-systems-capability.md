@@ -45,33 +45,33 @@ personas: []
 provider_name: Port Community Systems
 provider_slug: port-community-systems
 search_terms:
-- cargo
-- list vessel calls
 - logistics
-- getcargomanifest
-- submit hazardous goods notification
-- port
-- community
-- submithazardouscargodeclaration
-- listvesselcalls
-- maritime
 - getvesselcall
-- get vessel call
 - update vessel call
-- createvesselcall
+- submitcargomanifest
+- listvesselcalls
+- api
+- getcargomanifest
+- systems
+- get container status
+- customs
+- list vessel calls
+- community
+- cargo
+- port
+- submit import customs declaration
 - submitimportdeclaration
 - updatevesselcall
-- get container status
-- shipping
-- api
-- submitcargomanifest
-- customs
-- systems
-- submit vessel call notification
-- getcontainer
+- submit hazardous goods notification
 - get cargo manifest
+- get vessel call
+- maritime
+- shipping
 - submit cargo manifest
-- submit import customs declaration
+- submit vessel call notification
+- submithazardouscargodeclaration
+- getcontainer
+- createvesselcall
 slug: port-community-systems-capability
 source_filename: port-community-systems-capability.yaml
 source_heading: Capability Spec

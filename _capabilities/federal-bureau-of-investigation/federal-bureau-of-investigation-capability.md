@@ -13,15 +13,15 @@ personas: []
 provider_name: Federal Bureau of Investigation
 provider_slug: federal-bureau-of-investigation
 search_terms:
-- federal government
 - fbi
-- api
+- investigation
 - bureau
 - federal
-- federal bureau of investigation retrieve list of fbi wanted individuals
 - of
 - get list
-- investigation
+- federal government
+- federal bureau of investigation retrieve list of fbi wanted individuals
+- api
 slug: federal-bureau-of-investigation-capability
 source_filename: federal-bureau-of-investigation-capability.yaml
 source_heading: Capability Spec

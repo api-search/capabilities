@@ -29,40 +29,40 @@ personas: []
 provider_name: TiKV
 provider_slug: tikv
 search_terms:
-- retrieve the runtime configuration of a tikv node
-- distributed systems
-- update node config
-- get status
-- get metrics
-- get node status
-- get config
-- key-value store
-- update tikv node runtime configuration
-- raft region inspection
-- node prometheus metrics
-- get tikv node runtime configuration
-- monitoring
-- get raft regions
-- get all regions meta
-- open source
-- get prometheus metrics from a tikv node
-- database
-- inspect raft region distribution and metadata across the tikv node
-- get node metrics
-- update tikv node runtime configuration online
-- tikv
-- cncf
-- get tikv node status
-- acid
-- rust
 - check tikv node health status and version
-- get metadata for all raft regions
-- cluster operations
-- node health and version
-- node configuration
-- get node config
+- distributed systems
+- update tikv node runtime configuration online
 - update config
+- inspect raft region distribution and metadata across the tikv node
+- node health and version
+- tikv
+- get metadata for all raft regions
+- retrieve the runtime configuration of a tikv node
+- get node config
+- rust
+- monitoring
+- open source
+- get tikv node status
+- get raft regions
+- cluster operations
+- update node config
+- acid
 - retrieve prometheus metrics from a tikv node for performance analysis
+- get status
+- get node status
+- node configuration
+- get config
+- get metrics
+- cncf
+- database
+- update tikv node runtime configuration
+- get node metrics
+- key-value store
+- node prometheus metrics
+- get all regions meta
+- get tikv node runtime configuration
+- get prometheus metrics from a tikv node
+- raft region inspection
 slug: cluster-operations
 source_filename: cluster-operations.yaml
 source_heading: Capability Spec

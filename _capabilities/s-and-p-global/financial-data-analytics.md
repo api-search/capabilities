@@ -33,50 +33,50 @@ personas: []
 provider_name: S&P Global
 provider_slug: s-and-p-global
 search_terms:
-- entity resolution
-- get historical commodity price assessments for a date range. use for time series analysis, backtesting, and trend analysis in energy and commodity markets.
-- resolve a financial entity mention (company name, ticker, cusip, isin) to its canonical kensho entity identifier (keid) with confidence scores and cross-references.
-- credit ratings
-- market data
 - analytics
 - get historical price assessments over a date range
-- search entities
-- resolve entity mentions to canonical keids
-- current commodity price assessments
-- search financial entities
-- get current commodity prices
-- canonical entity record
-- entity resolution and linking
-- get entity record by keid with cross-references
-- entity search by name or identifier
 - list symbols
+- entity resolution and linking
+- energy markets
+- link entity
+- search for financial entities
+- get current price assessments for specified commodity symbols
+- get the latest price assessments for platts commodity symbols (e.g., pcaas00 for dated brent crude oil). returns current value, unit of measure, currency, and assessment date.
+- get the full canonical entity record for a keid including aliases, cross-references (ticker, cusip, isin, lei, s&p global company id).
+- search for financial entities (companies, instruments, funds, indices) by name or identifier. returns ranked candidates with confidence scores.
+- search financial entities
+- resolve a financial entity mention (company name, ticker, cusip, isin) to its canonical kensho entity identifier (keid) with confidence scores and cross-references.
+- get modified commodity symbols
+- entity resolution
+- get current prices
+- get current commodity prices
+- historical commodity price assessments
+- commodity insights
+- credit ratings
+- get list of commodity symbols with updated price assessments since a given date. use for incremental data sync.
+- financial data
+- get price history
+- market intelligence
 - commodity symbol reference data
 - trading
-- get modified commodity symbols
-- search for financial entities
-- financial data
-- get current prices
-- s&p global
-- energy markets
-- get entity
-- get current price assessments for specified commodity symbols
-- get historical commodity prices
-- historical commodity price assessments
-- fortune 500
-- list available platts commodity symbols with descriptions, units, and assessment frequency. filter by commodity name (crude oil, natural gas, lng, etc.).
-- link financial entity
-- get the full canonical entity record for a keid including aliases, cross-references (ticker, cusip, isin, lei, s&p global company id).
-- commodity insights
-- market intelligence
-- list commodity symbols
-- capital markets
-- get the latest price assessments for platts commodity symbols (e.g., pcaas00 for dated brent crude oil). returns current value, unit of measure, currency, and assessment date.
-- link entity
-- get price history
 - get entity by keid
-- get list of commodity symbols with updated price assessments since a given date. use for incremental data sync.
+- get entity
+- link financial entity
+- entity search by name or identifier
+- get historical commodity price assessments for a date range. use for time series analysis, backtesting, and trend analysis in energy and commodity markets.
 - list available commodity symbols
-- search for financial entities (companies, instruments, funds, indices) by name or identifier. returns ranked candidates with confidence scores.
+- s&p global
+- market data
+- get entity record by keid with cross-references
+- list available platts commodity symbols with descriptions, units, and assessment frequency. filter by commodity name (crude oil, natural gas, lng, etc.).
+- capital markets
+- get historical commodity prices
+- current commodity price assessments
+- fortune 500
+- search entities
+- list commodity symbols
+- resolve entity mentions to canonical keids
+- canonical entity record
 slug: financial-data-analytics
 source_filename: financial-data-analytics.yaml
 source_heading: Capability Spec

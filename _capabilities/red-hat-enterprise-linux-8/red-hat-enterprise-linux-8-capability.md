@@ -29,24 +29,24 @@ personas: []
 provider_name: Red Hat Enterprise Linux 8
 provider_slug: red-hat-enterprise-linux-8
 search_terms:
-- get cve details
-- get oval definitions
-- rhel
 - hat
-- list security advisories
-- red hat
+- rhel
+- get cve details
 - list cves
-- red
-- listadvisories
+- red hat
+- api
+- getcve
+- list security advisories
+- linux
+- operating system
+- get advisory details
 - getovaldefinitions
 - enterprise
 - listcves
-- linux
-- get advisory details
-- operating system
-- api
-- getcve
 - getadvisory
+- get oval definitions
+- listadvisories
+- red
 slug: red-hat-enterprise-linux-8-capability
 source_filename: red-hat-enterprise-linux-8-capability.yaml
 source_heading: Capability Spec

@@ -53,57 +53,57 @@ personas: []
 provider_name: Red Hat OpenShift
 provider_slug: red-hat-openshift
 search_terms:
-- list builds
-- get project details
-- individual cluster management
-- managed openshift cluster fleet
-- create a new openshift project with default rbac policies
-- create a route to expose a service
+- get details, status, and api endpoint for an openshift cluster
+- containers
+- get cluster
 - build management
-- list openshift projects (namespaces) the current user can access
+- list all managed openshift clusters
+- individual cluster management
+- route management for exposing services
 - red hat
 - list installed add-ons for an openshift cluster
-- list available openshift versions for cluster creation or upgrade
-- hybrid cloud
-- list openshift projects
-- get details and status of an openshift project
-- delete cluster
-- create an openshift project
-- route management for exposing services
-- list all managed openshift clusters across cloud providers
-- containers
-- cluster management
-- list compute node machine pools for an openshift cluster
-- delete an openshift project and all resources within it
-- enterprise
-- openshift project management
-- create route
-- kubernetes
-- create project
-- get cluster details and status
-- list builds in a namespace
-- list available versions
-- individual project management
-- create a new openshift cluster
-- delete an openshift cluster
-- list routes
-- list routes in a namespace
-- list cluster addons
 - list machine pools
-- list http/https routes exposing services in a namespace
-- create cluster
-- delete project
-- get project
-- list projects
-- get cluster
-- delete an openshift project
-- get details, status, and api endpoint for an openshift cluster
 - create a route to expose a service with a hostname and optional tls
-- openshift
-- list all managed openshift clusters
-- list builds in an openshift namespace
+- delete an openshift project and all resources within it
 - paas
+- individual project management
+- create route
+- delete an openshift cluster
+- create an openshift project
+- list all managed openshift clusters across cloud providers
+- delete cluster
+- list compute node machine pools for an openshift cluster
 - list clusters
+- create project
+- list projects
+- kubernetes
+- create a new openshift cluster
+- list openshift projects
+- delete project
+- list routes in a namespace
+- create a new openshift project with default rbac policies
+- openshift project management
+- list routes
+- get details and status of an openshift project
+- list builds
+- list http/https routes exposing services in a namespace
+- list available openshift versions for cluster creation or upgrade
+- get cluster details and status
+- cluster management
+- list openshift projects (namespaces) the current user can access
+- enterprise
+- get project details
+- delete an openshift project
+- managed openshift cluster fleet
+- openshift
+- create cluster
+- get project
+- hybrid cloud
+- create a route to expose a service
+- list available versions
+- list cluster addons
+- list builds in an openshift namespace
+- list builds in a namespace
 slug: cluster-management
 source_filename: cluster-management.yaml
 source_heading: Capability Spec

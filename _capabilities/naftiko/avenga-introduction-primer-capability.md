@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- avenga
-- primer
-- api integration
 - governance
 - spec-driven integration
-- ai
-- mcp
 - get employee
-- capabilities
 - list employees
+- primer
+- avenga
+- ai
+- api integration
+- capabilities
+- mcp
+- naftiko
 slug: avenga-introduction-primer-capability
 source_filename: avenga-introduction-primer-capability.yaml
 source_heading: Capability Spec

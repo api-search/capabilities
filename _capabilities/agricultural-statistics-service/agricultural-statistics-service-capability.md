@@ -21,26 +21,26 @@ personas: []
 provider_name: Agricultural Statistics Service
 provider_slug: agricultural-statistics-service
 search_terms:
-- developers integrating nass geospatial cropland and vegetation data into mapping applications
-- getparamvalues
-- getstatistics
-- geospatial
-- usda nass get statistics
 - traders and market analysts tracking crop and livestock production data
-- academics and policy researchers studying agricultural production trends and statistics
-- livestock inventory, production, and price data
 - usda nass get parameter values
 - getcounts
 - api
-- service
-- crop production, harvested area, and yield data
+- usda nass get statistics
 - usda nass get record counts
-- federal government
-- cropland mapping, vegetation indices, and soil moisture
-- agricultural
+- crop production, harvested area, and yield data
+- service
 - agriculture
+- getparamvalues
+- academics and policy researchers studying agricultural production trends and statistics
+- geospatial
+- livestock inventory, production, and price data
+- developers integrating nass geospatial cropland and vegetation data into mapping applications
+- cropland mapping, vegetation indices, and soil moisture
 - statistics
+- federal government
+- agricultural
 - open data
+- getstatistics
 slug: agricultural-statistics-service-capability
 source_filename: agricultural-statistics-service-capability.yaml
 source_heading: Capability Spec

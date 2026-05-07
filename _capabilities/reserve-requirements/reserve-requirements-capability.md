@@ -41,31 +41,31 @@ personas: []
 provider_name: Reserve Requirements
 provider_slug: reserve-requirements
 search_terms:
-- getcategoryseries
 - searchseries
-- getseriesobservations
 - get release
-- getreleaseseries
-- finance
-- requirements
-- federal reserve
-- getrelease
-- getcategory
-- regulation d
-- getseries
-- listreleases
-- api
-- banking regulation
-- monetary policy
-- get category series
-- reserve
 - search series
+- regulation d
+- api
+- getcategory
+- reserve
+- list releases
+- monetary policy
+- get series observations
+- getseriesobservations
+- reserve requirements
+- get category series
+- federal reserve
+- finance
+- getreleaseseries
 - get category
 - get economic series
-- list releases
-- reserve requirements
-- get series observations
+- getrelease
+- getcategoryseries
+- getseries
+- banking regulation
+- listreleases
 - get release series
+- requirements
 slug: reserve-requirements-capability
 source_filename: reserve-requirements-capability.yaml
 source_heading: Capability Spec

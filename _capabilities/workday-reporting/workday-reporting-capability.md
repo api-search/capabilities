@@ -17,17 +17,17 @@ personas: []
 provider_name: Workday Reporting
 provider_slug: workday-reporting
 search_terms:
-- business intelligence
 - getreport
-- workday reporting get report data
-- workday reporting get report field metadata
-- financial reporting
-- hr data
-- api
-- reporting
 - analytics
-- workday
+- reporting
 - getreportmetadata
+- business intelligence
+- api
+- hr data
+- workday reporting get report data
+- workday
+- financial reporting
+- workday reporting get report field metadata
 slug: workday-reporting-capability
 source_filename: workday-reporting-capability.yaml
 source_heading: Capability Spec

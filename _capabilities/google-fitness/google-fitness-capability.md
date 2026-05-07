@@ -45,32 +45,32 @@ personas: []
 provider_name: Google Fit REST
 provider_slug: google-fitness
 search_terms:
-- getdataset
-- createdatasource
-- aggregate data
-- update or insert a session
-- list data sources
-- wearables
-- patchdataset
-- activity tracking
-- google
-- getdatasource
-- aggregatedataset
-- list sessions
 - listdatasources
-- delete a session
-- updatesession
-- api
-- create a data source
-- fitness
-- get a data source
 - listsessions
-- get a dataset
 - sessions
+- patchdataset
+- delete a session
+- get a dataset
+- aggregate data
 - deletesession
-- add data points to a dataset
+- api
+- getdataset
 - health
 - wellness
+- google
+- fitness
+- add data points to a dataset
+- create a data source
+- updatesession
+- list sessions
+- update or insert a session
+- createdatasource
+- getdatasource
+- list data sources
+- aggregatedataset
+- activity tracking
+- get a data source
+- wearables
 slug: google-fitness-capability
 source_filename: google-fitness-capability.yaml
 source_heading: Capability Spec

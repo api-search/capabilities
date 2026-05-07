@@ -37,24 +37,24 @@ personas: []
 provider_name: Open Food Facts
 provider_slug: open-food-facts
 search_terms:
-- gettaxonomy
-- get a product by barcode
-- taxonomysuggestions
-- get a product (v3)
-- api
-- open
 - searchproducts
-- legacysuggest
-- legacy suggestion endpoint
-- getproductbybarcode
 - taxonomy autocomplete suggestions
-- facts
-- search products
-- retrieve taxonomy entries
-- getproductv3
-- getproductbybarcodejson
-- get a product by barcode (json)
+- getproductbybarcode
 - food
+- get a product by barcode (json)
+- get a product by barcode
+- get a product (v3)
+- getproductv3
+- retrieve taxonomy entries
+- facts
+- legacy suggestion endpoint
+- taxonomysuggestions
+- legacysuggest
+- open
+- api
+- gettaxonomy
+- search products
+- getproductbybarcodejson
 slug: open-food-facts-capability
 source_filename: open-food-facts-capability.yaml
 source_heading: Capability Spec

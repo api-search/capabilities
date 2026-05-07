@@ -249,138 +249,138 @@ personas: []
 provider_name: Amazon EC2 Auto Scaling
 provider_slug: amazon-ec2-auto-scaling
 search_terms:
-- amazon ec2 auto scaling post_ describe lifecycle hooks
-- amazon ec2 auto scaling post_ delete scheduled action
-- get deletenotificationconfiguration
-- amazon web services
-- post describeloadbalancertargetgroups
-- amazon ec2 auto scaling get_ describe auto scaling instances
-- amazon ec2 auto scaling post_ delete lifecycle hook
-- amazon ec2 auto scaling post_ complete lifecycle action
-- amazon ec2 auto scaling get_ describe auto scaling notification types
-- post deletepolicy
-- get attachtrafficsources
-- amazon ec2 auto scaling get_ create auto scaling group
-- amazon ec2 auto scaling get_ delete scheduled action
-- get deletelifecyclehook
-- post deleteautoscalinggroup
-- post attachloadbalancers
-- get batchputscheduledupdategroupaction
-- amazon ec2 auto scaling post_ describe load balancer target groups
-- amazon ec2 auto scaling post_ describe launch configurations
-- get deletescheduledaction
-- amazon ec2 auto scaling get_ describe account limits
-- get attachloadbalancers
-- get attachinstances
-- post createlaunchconfiguration
-- get describeautoscalingnotificationtypes
-- api
-- amazon ec2 auto scaling get_ delete auto scaling group
-- get createorupdatetags
-- get deletelaunchconfiguration
-- post createorupdatetags
 - scaling
-- get attachloadbalancertargetgroups
-- amazon ec2 auto scaling get_ describe lifecycle hook types
-- amazon ec2 auto scaling post_ create auto scaling group
-- engineers managing ec2 auto scaling fleets.
-- post describeinstancerefreshes
-- amazon ec2 auto scaling post_ describe instance refreshes
-- amazon ec2 auto scaling get_ attach instances
-- amazon ec2 auto scaling post_ delete auto scaling group
-- compute
-- post describelifecyclehooktypes
-- amazon ec2 auto scaling get_ describe instance refreshes
-- get createlaunchconfiguration
-- auto
-- amazon ec2 auto scaling get_ cancel instance refresh
-- amazon ec2 auto scaling get_ attach load balancers
-- amazon ec2 auto scaling post_ attach load balancers
-- post describeautoscalingnotificationtypes
-- amazon ec2 auto scaling post_ delete notification configuration
-- post batchputscheduledupdategroupaction
-- get deletepolicy
-- get cancelinstancerefresh
-- amazon ec2 auto scaling get_ describe launch configurations
-- amazon ec2 auto scaling post_ attach instances
-- amazon ec2 auto scaling get_ batch delete scheduled action
-- amazon ec2 auto scaling get_ delete tags
-- amazon ec2 auto scaling get_ attach load balancer target groups
-- amazon ec2 auto scaling get_ delete policy
-- workflow for auto scaling management.
-- post deletescheduledaction
-- get describeloadbalancertargetgroups
-- amazon ec2 auto scaling get_ describe load balancer target groups
-- get describeautoscalinggroups
-- amazon ec2 auto scaling post_ attach load balancer target groups
-- amazon ec2 auto scaling post_ delete tags
-- post batchdeletescheduledaction
-- amazon ec2 auto scaling post_ describe account limits
-- get createautoscalinggroup
-- auto scaling management business domain.
-- amazon ec2 auto scaling get_ delete launch configuration
-- get describeinstancerefreshes
-- get deletewarmpool
-- post describelifecyclehooks
-- post describeautoscalinggroups
-- amazon ec2 auto scaling post_ batch delete scheduled action
 - get deletetags
-- post deletetags
-- get describeadjustmenttypes
+- api
+- get deletelaunchconfiguration
+- post deletenotificationconfiguration
+- amazon ec2 auto scaling get_ describe launch configurations
+- post deletepolicy
+- amazon ec2 auto scaling post_ describe lifecycle hooks
+- amazon ec2 auto scaling get_ create auto scaling group
 - get batchdeletescheduledaction
-- post attachinstances
-- get describeaccountlimits
-- get completelifecycleaction
-- amazon ec2 auto scaling get_ create or update tags
-- amazon ec2 auto scaling get_ attach traffic sources
-- post describeaccountlimits
-- auto scaling
-- get describelifecyclehooks
-- amazon ec2 auto scaling post_ attach traffic sources
+- engineers managing ec2 auto scaling fleets.
 - get describelifecyclehooktypes
-- amazon ec2 auto scaling post_ describe adjustment types
-- get deleteautoscalinggroup
-- amazon ec2 auto scaling get_ delete notification configuration
-- amazon ec2 auto scaling post_ batch put scheduled update group action
-- post attachtrafficsources
-- amazon ec2 auto scaling get_ create launch configuration
-- amazon ec2 auto scaling post_ describe auto scaling notification types
-- amazon ec2 auto scaling get_ delete warm pool
-- post cancelinstancerefresh
-- high availability
-- amazon ec2 auto scaling post_ describe auto scaling groups
-- get describeautoscalinginstances
-- get describelaunchconfigurations
-- amazon ec2 auto scaling get_ describe load balancers
-- amazon ec2 auto scaling get_ describe adjustment types
-- amazon ec2 auto scaling get_ describe lifecycle hooks
-- amazon ec2 auto scaling post_ describe auto scaling instances
-- post describelaunchconfigurations
-- amazon
-- amazon ec2 auto scaling post_ create or update tags
-- post describeadjustmenttypes
-- amazon ec2 auto scaling post_ delete launch configuration
-- post describeautoscalinginstances
-- post createautoscalinggroup
-- amazon ec2 auto scaling get_ delete lifecycle hook
-- amazon ec2 auto scaling post_ delete warm pool
-- amazon ec2 auto scaling post_ delete policy
-- amazon ec2 auto scaling post_ describe load balancers
-- amazon ec2 auto scaling post_ cancel instance refresh
-- amazon ec2 auto scaling post_ create launch configuration
-- ec2
 - post deletelifecyclehook
-- post deletelaunchconfiguration
+- auto scaling
+- post describeautoscalinginstances
+- amazon ec2 auto scaling get_ delete scheduled action
+- get createautoscalinggroup
+- workflow for auto scaling management.
+- post describeadjustmenttypes
+- amazon ec2 auto scaling post_ delete tags
+- amazon ec2 auto scaling get_ attach load balancers
+- get describeinstancerefreshes
+- post describeloadbalancertargetgroups
+- amazon ec2 auto scaling post_ delete lifecycle hook
+- get deletenotificationconfiguration
+- amazon ec2 auto scaling get_ describe auto scaling groups
+- amazon ec2 auto scaling get_ describe account limits
+- post describelifecyclehooktypes
+- amazon ec2 auto scaling post_ batch delete scheduled action
+- amazon web services
+- amazon ec2 auto scaling post_ attach instances
+- post deleteautoscalinggroup
+- amazon ec2 auto scaling get_ delete warm pool
+- post createorupdatetags
+- amazon ec2 auto scaling get_ describe auto scaling instances
+- amazon ec2 auto scaling post_ describe load balancers
 - amazon ec2 auto scaling get_ complete lifecycle action
 - post describeloadbalancers
-- post attachloadbalancertargetgroups
-- post deletewarmpool
-- get describeloadbalancers
+- post deletetags
+- amazon ec2 auto scaling post_ delete auto scaling group
+- amazon ec2 auto scaling post_ create launch configuration
+- amazon ec2 auto scaling post_ delete policy
+- get deletewarmpool
+- amazon ec2 auto scaling post_ cancel instance refresh
+- get describelifecyclehooks
+- post describeautoscalinggroups
+- get batchputscheduledupdategroupaction
+- get deletelifecyclehook
+- post describeinstancerefreshes
+- get describeaccountlimits
+- post attachinstances
+- get describeloadbalancertargetgroups
+- amazon ec2 auto scaling post_ describe adjustment types
+- post createlaunchconfiguration
+- amazon ec2 auto scaling get_ delete notification configuration
+- get describeadjustmenttypes
+- get attachtrafficsources
+- post deletelaunchconfiguration
+- amazon ec2 auto scaling get_ delete policy
+- post describelaunchconfigurations
+- amazon ec2 auto scaling post_ describe instance refreshes
+- get deletescheduledaction
+- amazon ec2 auto scaling get_ describe adjustment types
+- amazon ec2 auto scaling post_ delete launch configuration
+- amazon ec2 auto scaling post_ attach load balancer target groups
+- post attachtrafficsources
+- get createorupdatetags
+- get attachloadbalancers
+- amazon ec2 auto scaling post_ describe auto scaling groups
+- amazon ec2 auto scaling get_ delete auto scaling group
+- amazon ec2 auto scaling get_ attach instances
 - amazon ec2 auto scaling get_ batch put scheduled update group action
+- high availability
+- get attachinstances
+- amazon ec2 auto scaling post_ attach load balancers
+- amazon ec2 auto scaling get_ delete tags
+- get completelifecycleaction
+- amazon ec2 auto scaling post_ complete lifecycle action
+- get describeautoscalingnotificationtypes
+- amazon ec2 auto scaling get_ describe instance refreshes
+- amazon ec2 auto scaling post_ describe launch configurations
+- amazon ec2 auto scaling get_ describe load balancer target groups
+- amazon ec2 auto scaling get_ attach traffic sources
+- get attachloadbalancertargetgroups
+- get cancelinstancerefresh
+- get deleteautoscalinggroup
+- amazon ec2 auto scaling get_ batch delete scheduled action
+- amazon ec2 auto scaling get_ delete launch configuration
+- get describeloadbalancers
+- post batchputscheduledupdategroupaction
+- amazon ec2 auto scaling post_ delete notification configuration
+- amazon ec2 auto scaling post_ describe account limits
+- get describelaunchconfigurations
+- amazon ec2 auto scaling post_ batch put scheduled update group action
+- amazon ec2 auto scaling get_ create or update tags
+- post attachloadbalancertargetgroups
+- post describeautoscalingnotificationtypes
+- get describeautoscalinginstances
+- auto scaling management business domain.
+- amazon ec2 auto scaling get_ describe lifecycle hook types
+- amazon ec2 auto scaling post_ describe auto scaling notification types
+- post createautoscalinggroup
+- amazon ec2 auto scaling post_ describe load balancer target groups
+- amazon ec2 auto scaling post_ attach traffic sources
+- auto
 - amazon ec2 auto scaling post_ describe lifecycle hook types
+- amazon ec2 auto scaling post_ create auto scaling group
+- amazon ec2 auto scaling post_ create or update tags
+- amazon ec2 auto scaling get_ delete lifecycle hook
+- get createlaunchconfiguration
+- amazon
+- post cancelinstancerefresh
+- amazon ec2 auto scaling get_ describe load balancers
+- amazon ec2 auto scaling get_ create launch configuration
+- post describeaccountlimits
+- ec2
 - post completelifecycleaction
-- amazon ec2 auto scaling get_ describe auto scaling groups
-- post deletenotificationconfiguration
+- post batchdeletescheduledaction
+- post attachloadbalancers
+- get describeautoscalinggroups
+- post deletewarmpool
+- get deletepolicy
+- amazon ec2 auto scaling post_ delete warm pool
+- amazon ec2 auto scaling post_ describe auto scaling instances
+- compute
+- amazon ec2 auto scaling get_ describe lifecycle hooks
+- amazon ec2 auto scaling get_ attach load balancer target groups
+- amazon ec2 auto scaling get_ describe auto scaling notification types
+- post deletescheduledaction
+- post describelifecyclehooks
+- amazon ec2 auto scaling get_ cancel instance refresh
+- amazon ec2 auto scaling post_ delete scheduled action
 slug: amazon-ec2-auto-scaling-capability
 source_filename: amazon-ec2-auto-scaling-capability.yaml
 source_heading: Capability Spec

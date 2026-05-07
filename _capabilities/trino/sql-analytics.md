@@ -33,39 +33,39 @@ personas: []
 provider_name: Trino
 provider_slug: trino
 search_terms:
-- trino cluster health and version information
-- worker node listing and status
-- cancel query
-- submit sql query
 - analytics
-- big data
 - retrieve the next page of results for a running or recently completed query. follow the nexturi from a previous query response.
-- submit an sql query to trino for distributed execution across data lakes and databases. returns initial results and a nexturi for polling more data.
-- submit sql queries and list query history
-- retrieve trino cluster metadata including version, environment name, and whether the coordinator is still starting. use for health checks.
-- cancel a running query
-- queries
-- get cluster info
-- list nodes
-- data engineering
-- sql
-- list cluster nodes
-- nosql
-- get trino cluster version, environment, and startup state
-- submit an sql query to trino for distributed execution
-- get query results
-- mysql
-- list currently running and recently completed queries on the trino cluster. filter by state (running, finished, failed) or limit the result count.
-- list all active worker nodes in the cluster
-- list all active worker nodes in the trino cluster with their node ids, uris, heartbeat times, and resource utilization.
-- submit query
-- get the next page of results for a running query
-- list active queries
-- list active and recently completed queries
-- retrieve paginated results or cancel a query
-- distributed sql
 - cancel a running trino query by its queryid and current token.
+- list cluster nodes
+- submit sql queries and list query history
+- data engineering
+- submit an sql query to trino for distributed execution
+- retrieve paginated results or cancel a query
+- list all active worker nodes in the cluster
+- queries
+- worker node listing and status
+- submit an sql query to trino for distributed execution across data lakes and databases. returns initial results and a nexturi for polling more data.
+- list all active worker nodes in the trino cluster with their node ids, uris, heartbeat times, and resource utilization.
+- distributed sql
+- list currently running and recently completed queries on the trino cluster. filter by state (running, finished, failed) or limit the result count.
+- sql
+- big data
+- cancel a running query
+- trino cluster health and version information
+- list active and recently completed queries
+- get the next page of results for a running query
+- get trino cluster version, environment, and startup state
+- submit sql query
+- get query results
+- cancel query
+- mysql
+- submit query
+- nosql
+- list nodes
+- retrieve trino cluster metadata including version, environment name, and whether the coordinator is still starting. use for health checks.
 - list queries
+- list active queries
+- get cluster info
 slug: sql-analytics
 source_filename: sql-analytics.yaml
 source_heading: Capability Spec

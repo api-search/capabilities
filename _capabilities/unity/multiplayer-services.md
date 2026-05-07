@@ -33,48 +33,48 @@ personas: []
 provider_name: Unity
 provider_slug: unity
 search_terms:
-- search available lobbies
-- get ticket status
-- multiplayer
-- search lobbies
-- game server hosting
-- real-time 3d
-- online gaming
-- create ticket
-- join an existing game lobby by id
-- individual lobby operations
-- cloud gaming
-- list all configured matchmaking queues
 - get the current state of a game lobby
-- create a new game lobby
-- create a new multiplayer game lobby
-- game development
-- get lobby details
-- game lobby management
-- start matchmaking
-- enter matchmaking queue
-- list matchmaking queues
-- get lobby
-- cancel ticket
+- join an existing game lobby by id
 - delete and close a game lobby
-- get matchmaking status
-- lobby discovery
-- search for available public game lobbies
-- check matchmaking status
-- close game lobby
+- lobby
+- online gaming
+- individual matchmaking ticket
 - cancel matchmaking
+- game development
+- lobby discovery
 - enter the matchmaking queue for a game session
-- check if a match has been found for a matchmaking ticket
+- game lobby management
+- game server hosting
 - matchmaking
+- check matchmaking status
+- enter matchmaking queue
+- close game lobby
+- create game lobby
 - unity
 - game services
-- lobby
-- cancel an active matchmaking ticket
-- create game lobby
-- matchmaking queue management
-- individual matchmaking ticket
+- get lobby
+- search available lobbies
 - join game lobby
+- multiplayer
+- list all configured matchmaking queues
+- cancel ticket
+- search for available public game lobbies
+- individual lobby operations
+- cloud gaming
+- get ticket status
+- create a new game lobby
+- get lobby details
 - create lobby
+- search lobbies
+- matchmaking queue management
+- create ticket
+- get matchmaking status
+- create a new multiplayer game lobby
+- cancel an active matchmaking ticket
+- real-time 3d
+- list matchmaking queues
+- check if a match has been found for a matchmaking ticket
+- start matchmaking
 slug: multiplayer-services
 source_filename: multiplayer-services.yaml
 source_heading: Capability Spec

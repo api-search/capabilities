@@ -41,27 +41,27 @@ personas: []
 provider_name: ParseHub
 provider_slug: parsehub
 search_terms:
-- visual scraping
-- cancel a run
-- getrun
-- get a run
-- cancelrun
-- deleterun
-- data extraction
-- startrun
-- get run data
-- getproject
-- getrundata
 - getlastreadyrundata
+- getproject
 - get data for the last ready run
+- deleterun
+- visual scraping
 - api
-- scraping
-- parsehub
-- listprojects
-- list projects
-- start a run
-- delete a run
+- getrun
 - get a project
+- get a run
+- delete a run
+- get run data
+- startrun
+- data extraction
+- list projects
+- scraping
+- start a run
+- cancelrun
+- cancel a run
+- listprojects
+- getrundata
+- parsehub
 slug: parsehub-capability
 source_filename: parsehub-capability.yaml
 source_heading: Capability Spec

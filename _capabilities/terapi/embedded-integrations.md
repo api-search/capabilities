@@ -57,59 +57,59 @@ personas: []
 provider_name: Terapi
 provider_slug: terapi
 search_terms:
-- trigger a data synchronization run to fetch updated data from a third-party service
-- list all active integration connections between end-users and third-party services
-- delete integration
-- integration
-- get the current authentication token for a connection
 - get sync status
-- get details and connection count for a specific integration provider
-- get the current status and history of a data synchronization
-- manage a specific integration connection
-- get details of an integration
-- trigger actions on third-party services
-- trigger action
-- authentication token management
-- trigger a data sync for a connection
-- trigger sync
-- open source
-- integration provider configurations
-- manage a specific integration
-- trigger data synchronization
-- create a new integration connection for an end-user with oauth or api key credentials
-- delete an integration configuration and all associated connections
-- create a new integration provider configuration with oauth credentials
-- get status of a specific sync
 - list integrations
-- list all configured integration providers
-- list all active connections across all integrations
-- saas
-- workflow automation
-- native integrations
-- get details and authentication status of a specific integration connection
-- embedded ipaas
-- authentication
-- delete a connection and revoke credentials
-- trigger a write action on a connected third-party service (create record, send message, update resource)
-- trigger an action on a connected service
-- terapi
-- create integration
-- list connections
-- connectors
-- list all configured integration providers available in this terapi environment
 - sync status and history
-- delete an integration connection and revoke associated credentials
-- end-user integration connections
-- get connection
-- get details of a connection
-- get auth token
-- create a new integration provider configuration
-- get integration
-- delete connection
-- create a new integration connection for an end-user
-- create connection
-- get the current authentication token for a connection, with automatic oauth refresh
 - delete an integration configuration
+- delete connection
+- delete a connection and revoke credentials
+- terapi
+- list connections
+- trigger a data synchronization run to fetch updated data from a third-party service
+- workflow automation
+- create a new integration provider configuration with oauth credentials
+- authentication
+- authentication token management
+- get the current status and history of a data synchronization
+- saas
+- open source
+- create integration
+- trigger action
+- list all active integration connections between end-users and third-party services
+- get integration
+- create connection
+- list all configured integration providers
+- create a new integration provider configuration
+- integration
+- trigger an action on a connected service
+- delete an integration connection and revoke associated credentials
+- get status of a specific sync
+- get details and authentication status of a specific integration connection
+- manage a specific integration
+- get auth token
+- get the current authentication token for a connection
+- native integrations
+- trigger a data sync for a connection
+- manage a specific integration connection
+- list all configured integration providers available in this terapi environment
+- get details of a connection
+- integration provider configurations
+- list all active connections across all integrations
+- connectors
+- end-user integration connections
+- get details and connection count for a specific integration provider
+- get details of an integration
+- trigger data synchronization
+- embedded ipaas
+- create a new integration connection for an end-user with oauth or api key credentials
+- trigger a write action on a connected third-party service (create record, send message, update resource)
+- delete an integration configuration and all associated connections
+- get connection
+- trigger sync
+- create a new integration connection for an end-user
+- trigger actions on third-party services
+- delete integration
+- get the current authentication token for a connection, with automatic oauth refresh
 slug: embedded-integrations
 source_filename: embedded-integrations.yaml
 source_heading: Capability Spec

@@ -209,119 +209,119 @@ personas: []
 provider_name: Axway
 provider_slug: axway
 search_terms:
-- auth acceptTerms
-- axway update user profile
-- axway delete session
-- axway update a single user preference
-- integration
-- axway initiate authenticator app setup
-- axway activate a user
-- user findOne
-- user updateCredentials
-- axway retrieves the current session
-- axway remove authorized device
-- auth deviceauthConfirm
-- auth sessionCheck
-- axway checks if the user is signed in
-- axway confirm authenticator app
-- team userRemove
-- axway update team
-- security
-- user operations
+- auth deviceauthResend
+- auth deviceauthRemoveApp
 - team remove
-- axway sets the team member role
-- axway sign-in
-- auth logout
-- axway get organizations
-- axway remove team
-- auth activationResend
-- session remove
-- auth mfaSend
+- user findAttribute
+- user remove
+- axway add member
+- axway update user profile
+- axway sign-out
 - api management
-- user updatePref
-- auth forgot
+- axway initiate authenticator app setup
+- axway revoke oauth service
+- axway validates a user password
+- auth activationResend
+- axway send an authorization code
+- user findDomain
+- axway reset user password
+- axway get effective password policy
+- axway find sessions
+- axway get role
+- auth activationUnlock
+- auth sessionFind
+- axway retrieves the current session
+- auth deviceauthFind
+- auth logout
+- auth activationConfirm
+- axway
+- auth activationSignup
+- auth operations
+- role operations
+- session remove
+- axway unlock account
+- authentication
+- auth sessionCheck
+- axway validates a new sessions device authorization
+- axway remove authorized device
+- axway accept terms & conditions
+- axway checks if the user is signed in
+- axway get team members
+- user updateCredentials
+- enterprise
+- auth mfaSend
+- axway activate a signup user
+- user findOrgs
+- axway verify an authorization code
+- auth sessionSwitchOrg
+- axway remove member
+- auth findPasswordPolicy
+- security
+- session find
+- role findOne
+- auth login
+- axway onboarding capture
+- axway sign up
+- user findOne
+- axway resend activation link
+- team find
+- auth acceptTerms
+- team userUpdateRole
+- team update
+- auth deviceauthRemove
 - axway remove user
 - axway unimpersonate user
-- auth findPasswordPolicy
-- axway get effective password policy
-- auth login
-- axway remove authenticator app
-- auth activationConfirm
-- auth operations
-- axway
-- identity
-- team userFind
-- team operations
-- auth activationUnlock
-- user update
-- auth mfaVerify
-- team update
-- axway get accessible teams for the query
-- axway accept terms & conditions
-- axway reset user password
-- axway retrieve authorized devices
-- role find
-- auth sessionFind
-- authentication
-- user findDomain
-- access management
-- axway add member
-- axway switch signed-in organization
-- axway resends device authorization
-- user findAttribute
-- auth activationForgot
-- session find
-- axway activate a signup user
-- axway send forgot password link
-- axway get session
-- auth deviceauthRemove
-- axway get a user
+- axway activate a user
 - axway find a mapped attribute for a user
-- auth validatePassword
-- axway get roles matching query
-- auth sessionSwitchOrg
-- axway resend activation link
-- team userAdd
-- axway get role
-- user remove
-- team create
-- axway set credentials for tooling
-- auth onboarding
-- auth deviceauthValidate
-- role operations
-- session operations
-- team userUpdateRole
-- axway sign up
-- axway find team
+- integration
+- role find
+- identity
 - auth revokeOauth
-- auth unimpersonate
-- user findOrgs
-- session query
-- axway validates a user password
-- axway verify an authorization code
-- auth activationSignup
-- axway sign-out
-- auth deviceauthResend
-- axway onboarding capture
-- axway send an authorization code
-- auth activationFind
-- axway find sessions
-- team find
-- role findOne
-- auth signup
+- axway resends device authorization
+- axway update a single user preference
+- axway get accessible teams for the query
+- axway get organizations
+- axway get roles matching query
+- auth onboarding
+- axway sign-in
+- auth deviceauthConfirm
+- access management
 - team findOne
+- auth signup
+- axway get a user
 - axway find activation
+- axway confirm authenticator app
+- axway find team
+- axway set credentials for tooling
+- axway remove authenticator app
+- team userAdd
+- user updatePref
+- axway update team
 - axway find missing domain users
-- axway remove member
-- enterprise
-- auth deviceauthCreate
-- axway revoke oauth service
-- axway get team members
-- axway validates a new sessions device authorization
-- axway unlock account
-- auth deviceauthFind
-- auth deviceauthRemoveApp
+- auth activationForgot
+- auth validatePassword
+- auth unimpersonate
+- axway delete session
+- auth deviceauthValidate
+- axway send forgot password link
+- axway remove team
+- user operations
+- session operations
+- team operations
+- user update
+- auth activationFind
+- team create
 - axway create a team
+- session query
+- auth forgot
+- axway get session
+- team userRemove
+- auth mfaVerify
+- axway retrieve authorized devices
+- axway switch signed-in organization
+- auth deviceauthCreate
+- axway sets the team member role
+- team userFind
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

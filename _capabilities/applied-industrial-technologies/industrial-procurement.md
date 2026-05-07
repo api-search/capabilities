@@ -10,26 +10,26 @@ personas: []
 provider_name: Applied Industrial Technologies
 provider_slug: applied-industrial-technologies
 search_terms:
+- procurement
 - gets detailed specifications for a specific industrial product
 - lists existing purchase orders for the authenticated account
+- get product details
 - applied industrial technologies
-- place order
-- power transmission
-- creating and tracking purchase orders
+- places a purchase order for industrial products with shipping address
 - supply chain
-- bearings
 - manages industrial component sourcing and purchase orders
 - industrial distribution
-- fluid power
-- list orders
 - browsing and searching the industrial product catalog
-- places a purchase order for industrial products with shipping address
+- creating and tracking purchase orders
+- power transmission
+- list orders
 - sources replacement parts and components for equipment maintenance
-- end-to-end workflow for sourcing and ordering industrial components
+- bearings
 - searches the applied industrial technologies product catalog by category or manufacturer
-- get product details
+- fluid power
+- place order
+- end-to-end workflow for sourcing and ordering industrial components
 - search products
-- procurement
 slug: industrial-procurement
 source_filename: industrial-procurement.yaml
 source_heading: Capability Spec

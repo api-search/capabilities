@@ -173,93 +173,93 @@ personas: []
 provider_name: Drift
 provider_slug: drift
 search_terms:
-- delete scim users
 - drift list conversation statuses
-- drift update an account
-- post conversations new
-- drift list teams by user
-- get playbooks list
-- drift
-- drift delete gdpr data
-- drift list conversational landing pages (clp)
-- drift list teams
-- drift create an account
-- drift update a contact - externalid
-- api
-- drift fetch a conversation's transcript as a string
-- put scim users
-- drift unsubscribe contacts from emails
-- post gdpr delete
-- drift create a contact
-- drift delete an account
-- post accounts create
-- drift fetch a conversation's messages
-- drift list user objects
-- conversational ai
-- drift create a conversation
-- chatbots
-- get scim users
-- drift update a user
-- get users list
-- drift get token information
-- drift fetch a user object
-- drift fetch gdpr data
-- get contacts attributes
-- drift list conversations
-- post app uninstall
-- get conversations id json transcript
-- get attachments id data
-- fetch a contact by drift id
-- post contacts timeline
-- drift delete a contact
-- get contacts id
-- get teams users id
-- get accounts id
-- drift list custom contact attributes
-- get teams org
-- update a contact - drift id
-- drift list contacts by email
-- drift post a timeline event to a contact - externalid
-- get conversations id transcript
-- get playbooks clp
-- patch users update
-- drift fetch an account
-- patch accounts update
-- drift list accounts
-- drift fetch booked meetings
-- live chat
-- drift fetch a conversation's transcript as a json object
-- post emails unsubscribe
-- get conversations id
-- post gdpr retrieve
-- get conversations id messages
-- post conversations id messages
-- delete accounts id
-- sales
-- drift deprovision a user
-- get users id
-- drift list contacts by externalid
-- drift trigger app uninstall
-- marketing
-- patch contacts id
-- drift create a message
-- patch contacts normalize
-- drift fetch a conversation
-- post contacts id
-- drift list playbooks
-- get contacts
-- drift fetch a conversation's attachments
-- post contacts
-- get users meetings org
-- drift list all users
-- drift provision a user
-- drift fetch a user
-- get accounts
-- get conversations list
-- get scim users id
-- post app token info
-- get conversations stats
 - post scim users
+- get conversations id
+- post emails unsubscribe
+- api
+- drift get token information
+- drift delete gdpr data
+- chatbots
+- get accounts
+- drift fetch a conversation
+- drift fetch a conversation's attachments
+- drift list conversational landing pages (clp)
+- drift update an account
+- drift fetch booked meetings
+- drift update a contact - externalid
+- patch contacts id
+- drift list contacts by email
+- drift create a message
+- drift delete a contact
+- drift fetch gdpr data
+- get conversations id json transcript
+- post gdpr retrieve
+- post contacts
+- drift create a conversation
+- post accounts create
+- drift fetch a conversation's transcript as a string
+- drift delete an account
+- drift list contacts by externalid
+- get users list
+- delete accounts id
+- drift fetch a user object
+- drift update a user
+- drift fetch a user
+- get conversations list
+- marketing
+- drift fetch a conversation's transcript as a json object
+- drift list teams by user
+- patch users update
+- get conversations id transcript
+- delete scim users
+- drift list custom contact attributes
+- get conversations stats
+- drift create an account
+- drift list all users
+- get contacts id
+- drift create a contact
+- drift deprovision a user
+- get conversations id messages
+- patch contacts normalize
+- drift
+- get scim users
+- drift trigger app uninstall
+- get playbooks clp
+- get teams users id
+- drift post a timeline event to a contact - externalid
+- post contacts id
+- get contacts
+- get users id
+- drift provision a user
+- put scim users
+- post conversations id messages
+- drift fetch a conversation's messages
+- post app token info
+- get playbooks list
+- drift unsubscribe contacts from emails
+- post app uninstall
+- drift list user objects
+- drift list conversations
+- get accounts id
+- drift fetch an account
+- conversational ai
+- get users meetings org
+- post conversations new
+- get teams org
+- live chat
+- drift list playbooks
+- fetch a contact by drift id
+- post gdpr delete
+- get scim users id
+- patch accounts update
+- get attachments id data
+- drift list teams
+- sales
+- update a contact - drift id
+- get contacts attributes
+- post contacts timeline
+- drift list accounts
 slug: drift-capability
 source_filename: drift-capability.yaml
 source_heading: Capability Spec

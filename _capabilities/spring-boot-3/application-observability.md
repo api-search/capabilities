@@ -53,65 +53,65 @@ personas: []
 provider_name: Spring Boot 3
 provider_slug: spring-boot-3
 search_terms:
-- check health status for a specific component like db, redis, diskspace, or rabbit
-- jvm thread diagnostics
-- check the overall health of the spring boot application including database, cache, and infrastructure components
+- list all scheduled tasks
 - look up the value and origin of a specific configuration property by key
-- application build and git metadata
-- rest api
+- scheduled task registry
 - list all @scheduled tasks with their cron expressions or fixed-rate intervals
+- application build and git metadata
+- individual logger management
+- logger configuration
+- list all loggers with their configured and effective log levels for debugging
+- micrometer metrics list
+- get health
+- get current measurements for a metric such as jvm.memory.used, http.server.requests, or hikaricp.connections.active
+- set logger level at runtime
+- individual component health
+- spring boot
 - set logger level
+- get info
 - get thread dump
 - java
-- list loggers
-- inspect environment
-- platform engineering
-- list all available metric names
-- list all scheduled tasks
-- framework
-- get all environment properties
-- get scheduled tasks
-- check app health
-- logger configuration
-- monitoring
-- enterprise
-- list all available micrometer metrics registered in this application
-- single metric measurements with tag filtering
 - get measurements for a named metric
-- get logger configuration
-- get component health
-- check component health
-- scheduled task registry
-- micrometer metrics list
+- monitoring
+- single metric measurements with tag filtering
+- temporarily set the log level for a logger (trace, debug, info, warn, error) without restarting
+- get logger
+- get health for a specific component
 - get app info
-- inspect all application environment properties and their sources to diagnose configuration issues
-- set logger level at runtime
-- spring boot
-- get application information
-- get the current log level configuration for a specific logger class or package
-- observability
-- lookup property
-- get info
-- individual logger management
-- application environment and configuration
-- list metrics
-- application and component health status
-- get jvm thread dump
 - get application build version, git commit hash, and runtime environment information
 - get a jvm thread dump to diagnose deadlocks, high cpu usage, or thread starvation
-- list all loggers with their configured and effective log levels for debugging
-- get logger
-- get current measurements for a metric such as jvm.memory.used, http.server.requests, or hikaricp.connections.active
-- get metric
+- get the current log level configuration for a specific logger class or package
+- observability
 - sre
-- individual component health
-- get overall application health
-- get environment
-- temporarily set the log level for a logger (trace, debug, info, warn, error) without restarting
-- microservices
-- get health for a specific component
-- get health
+- get application information
+- check health status for a specific component like db, redis, diskspace, or rabbit
 - list all loggers with their levels
+- get scheduled tasks
+- inspect all application environment properties and their sources to diagnose configuration issues
+- enterprise
+- lookup property
+- get overall application health
+- get component health
+- framework
+- get environment
+- jvm thread diagnostics
+- get logger configuration
+- list loggers
+- application and component health status
+- inspect environment
+- application environment and configuration
+- get jvm thread dump
+- check the overall health of the spring boot application including database, cache, and infrastructure components
+- check component health
+- rest api
+- list metrics
+- list all available micrometer metrics registered in this application
+- get all environment properties
+- microservices
+- list all available metric names
+- check app health
+- get metric
+- platform engineering
 slug: application-observability
 source_filename: application-observability.yaml
 source_heading: Capability Spec

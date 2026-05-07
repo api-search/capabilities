@@ -21,21 +21,21 @@ personas: []
 provider_name: Lincoln National
 provider_slug: lincoln-national
 search_terms:
+- submit evidence of insurability
+- submiteoi
+- getplandesign
+- annuities
 - get plan design information
-- retirement
 - lincoln
 - insurance
-- national
-- getplandesign
-- api
-- submiteoi
-- annuities
-- hr
-- enrollment
-- benefits
 - syncenrollment
 - sync enrollment data
-- submit evidence of insurability
+- api
+- enrollment
+- hr
+- retirement
+- benefits
+- national
 slug: lincoln-national-capability
 source_filename: lincoln-national-capability.yaml
 source_heading: Capability Spec

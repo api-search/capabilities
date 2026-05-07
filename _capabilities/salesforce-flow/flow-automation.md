@@ -46,50 +46,50 @@ provider_name: Salesforce Flow
 provider_slug: salesforce-flow
 search_terms:
 - list flows
+- get invocable flow metadata
+- flow definition management
 - get the current state and output variables of a running flow interview
+- automation
 - flow interview (execution instance) management
-- workflow
+- get input and output variable schema for an invocable flow
+- list all flow definitions in the org
+- get a specific flow definition
+- start flow interview
+- list all flows exposed as invocable actions
+- execute a salesforce flow as an invocable action with specified input variables
+- create flow interview
+- business process
+- get details for a specific flow definition by id
 - list all invocable flow actions
+- delete a flow interview
+- get invocable flow schema
+- delete a paused or stale flow interview
+- get flow interview
+- invocable flow action catalog
+- get current flow interview state
+- crm
+- update flow
+- delete flow interview
+- query flows
 - invoke flow
 - create and start a new flow interview instance with input variables
-- list all flow definitions in the org
 - query flow records using soql for advanced filtering
-- flow definition management
-- list all flows exposed as invocable actions
-- get current flow interview state
-- get flow interview status
-- individual interview operations
-- query flows
-- get invocable flow schema
-- get details for a specific flow definition by id
-- invocable flow action catalog
-- delete a paused or stale flow interview
-- delete a flow interview
-- execute a salesforce flow as an invocable action with specified input variables
-- get invocable flow input/output schema
-- business process
-- process builder
-- crm
-- get flow
 - individual flow operations
-- get a specific flow definition
-- execute a flow action
-- get flow interview
+- workflow
+- update a flow definition's status or description
+- start a new flow interview
 - list invocable flows
 - update a flow definition
-- update a flow definition's status or description
-- delete flow interview
-- flow
-- list all flow definitions in the salesforce org
-- start a new flow interview
+- get invocable flow input/output schema
+- get flow interview status
 - execute specific invocable flows
-- create flow interview
-- update flow
-- get input and output variable schema for an invocable flow
-- get invocable flow metadata
+- flow
+- individual interview operations
+- execute a flow action
+- process builder
+- get flow
+- list all flow definitions in the salesforce org
 - salesforce
-- start flow interview
-- automation
 slug: flow-automation
 source_filename: flow-automation.yaml
 source_heading: Capability Spec

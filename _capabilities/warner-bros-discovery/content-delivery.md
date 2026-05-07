@@ -29,37 +29,37 @@ personas: []
 provider_name: Warner Bros. Discovery
 provider_slug: warner-bros-discovery
 search_terms:
-- media supply chain
-- submit a new content delivery
-- list deliveries
-- content delivery management
-- metadata validation
-- content
-- list all media content deliveries
-- get the current processing status of a wbd content delivery
-- list media assets
-- list all media content deliveries in the wbd partner supply chain
-- film
-- media asset management
-- content delivery
-- validate mmc metadata against wbd specifications before submission
-- validate metadata
-- television
-- get delivery status
-- media
-- list assets
-- submit metadata
-- validate mmc metadata before submission
-- warner bros. discovery
-- entertainment
-- submit a new media content delivery to wbd supply chain
 - submit movielabs mmc metadata for a content delivery
-- streaming
-- metadata
+- content delivery
 - delivery processing status
+- get delivery status
+- streaming
+- warner bros. discovery
+- list all media content deliveries
+- validate mmc metadata before submission
+- metadata
+- film
+- list deliveries
+- submit a new media content delivery to wbd supply chain
+- validate metadata
+- media asset management
+- submit metadata
+- list media assets
 - get processing status for a delivery
+- validate mmc metadata against wbd specifications before submission
+- content
+- get the current processing status of a wbd content delivery
 - list media assets associated with wbd deliveries
+- television
+- entertainment
+- list all media content deliveries in the wbd partner supply chain
+- media
 - create delivery
+- submit a new content delivery
+- media supply chain
+- list assets
+- metadata validation
+- content delivery management
 slug: content-delivery
 source_filename: content-delivery.yaml
 source_heading: Capability Spec

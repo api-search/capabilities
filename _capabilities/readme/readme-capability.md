@@ -25,20 +25,20 @@ personas: []
 provider_name: ReadMe
 provider_slug: readme
 search_terms:
-- get pageviews
-- post request
-- documentation
-- readme
-- developer hub
-- platform
-- api
-- submit api request logs
-- retrieve page view statistics
 - analytics
+- post request
 - retrieve search analytics
-- get search
-- portals
+- retrieve page view statistics
+- developer hub
 - retrieve page quality scores
+- readme
+- documentation
+- portals
+- get search
+- submit api request logs
+- api
+- get pageviews
+- platform
 - get quality
 slug: readme-capability
 source_filename: readme-capability.yaml

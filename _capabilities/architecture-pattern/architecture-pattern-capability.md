@@ -29,25 +29,25 @@ personas: []
 provider_name: Architecture Pattern
 provider_slug: architecture-pattern
 search_terms:
-- pattern
 - listpatterns
-- listtradeoffs
-- listdomains
-- get variants of an architecture pattern
-- getpatternvariants
-- cloud native
-- design patterns
-- getpattern
-- architecture
-- api
 - architecture patterns
-- list pattern trade-offs
-- system design
-- list pattern domains
+- api
 - list architecture patterns
+- cloud native
 - get architecture pattern details
-- microservices
+- get variants of an architecture pattern
+- pattern
+- architecture
+- listtradeoffs
+- list pattern trade-offs
+- list pattern domains
+- getpatternvariants
+- system design
+- getpattern
+- design patterns
 - software architecture
+- listdomains
+- microservices
 slug: architecture-pattern-capability
 source_filename: architecture-pattern-capability.yaml
 source_heading: Capability Spec

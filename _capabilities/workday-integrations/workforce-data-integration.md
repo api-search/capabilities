@@ -37,53 +37,53 @@ personas: []
 provider_name: Workday Integrations
 provider_slug: workday-integrations
 search_terms:
-- create a new prism analytics dataset
-- individual worker data
-- list workday workers including employees and contingent workers
-- list workday position records
-- integration
-- list prism datasets
-- execute a workday raas report and return data
-- get worker details
-- create a prism dataset
-- list workday organizational structures
-- list organizations
-- get detailed information about a specific worker
-- analytics
-- get report
-- list datasets
-- organizational structure
-- upload external data to a prism analytics dataset
-- finance
-- list workers
-- cloud
-- report-as-a-service data access
-- list prism analytics datasets
-- get benefit enrollments for a worker
-- erp
-- workday
 - integrations
-- publish dataset
-- get report metadata
-- position records
-- upload data to dataset
-- hcm
-- list positions
-- prism analytics dataset management
-- get worker
-- create dataset
-- get worker compensation
-- worker record access
-- list job profiles
-- get compensation data for a worker
-- get worker benefits
-- list job profiles in workday
-- enterprise software
-- hr
-- get field metadata for a workday report
-- workforce data
+- analytics
+- get benefit enrollments for a worker
 - publish a prism analytics dataset for reporting
+- enterprise software
+- get report
+- list prism datasets
+- organizational structure
+- workforce data
+- prism analytics dataset management
+- workday
+- upload external data to a prism analytics dataset
+- position records
+- get worker details
+- hcm
+- integration
+- list workday organizational structures
 - execute and retrieve report data
+- hr
+- finance
+- get detailed information about a specific worker
+- get report metadata
+- list prism analytics datasets
+- get worker compensation
+- create dataset
+- list job profiles
+- list workday workers including employees and contingent workers
+- create a new prism analytics dataset
+- create a prism dataset
+- execute a workday raas report and return data
+- list organizations
+- individual worker data
+- cloud
+- list workers
+- erp
+- get field metadata for a workday report
+- upload data to dataset
+- list datasets
+- list job profiles in workday
+- get worker benefits
+- get worker
+- get compensation data for a worker
+- report-as-a-service data access
+- list workday position records
+- worker record access
+- publish dataset
+- list positions
 slug: workforce-data-integration
 source_filename: workforce-data-integration.yaml
 source_heading: Capability Spec

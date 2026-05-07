@@ -249,123 +249,123 @@ personas: []
 provider_name: Incus
 provider_slug: incus
 search_terms:
-- images get recursion1 untrusted
-- partially update the cluster member
-- cluster member delete
-- add an image
-- cluster member post
-- server patch
-- cluster get
-- images post
-- get the cluster groups
-- update the image
-- virtual machines
-- certificates get
-- image export get untrusted
-- delete the trusted certificate
-- server get
-- partially update the trusted certificate
-- api
-- get the image aliases
-- cluster groups get
-- images alias post
-- image get untrusted
-- image alias get
-- delete the cluster group.
-- events get
-- update the cluster configuration
-- images export post
-- add a trusted certificate
-- image put
-- get the server environment and configuration
-- update the server configuration
-- get the public images
-- cluster members get
-- certificate delete
-- update the trusted certificate
-- rename the cluster group
-- cluster members get recursion1
-- images get untrusted
-- cluster member patch
-- get the event stream
-- certificates get recursion1
-- images get recursion1
-- server put
-- certificate put
-- virtualization
-- images refresh post
-- update the certificate for the cluster
-- images aliases post
-- get the cluster configuration
-- images alias patch
-- get the raw image file(s)
-- images secret post
-- open source
-- get the cluster member
-- cluster group put
-- update the cluster member
-- make the server push the image to a remote server
-- create a cluster group.
-- rename the cluster member
-- get the trusted certificate
-- certificate patch
-- certificates post
-- get the trusted certificates
-- rename the image alias
-- image patch
-- request a join token
-- images aliases get recursion1
-- image export get
-- image delete
-- get the public image alias
-- get the supported api endpoints
-- cluster group get
-- get the cluster members
-- partially update the server configuration
-- image alias delete
-- cluster group post
-- linux
-- partially update the image
-- delete the image alias
-- api get
-- get the images
-- images aliases put
-- certificates post untrusted
-- get the image alias
-- add an image alias
-- update the image alias
-- cluster members post
-- cluster member put
-- cluster groups get recursion1
-- incus
-- images post untrusted
-- images get
-- cluster group delete
-- update the cluster group
-- evacuate or restore a cluster member
 - get the public image
-- partially update the image alias
-- delete the image
-- get the cluster group
-- cluster group patch
-- instances get
-- get the image
 - containers
-- image get
-- image alias get untrusted
-- get state of the cluster member
-- cluster member get
-- clustering update cert
-- refresh an image
-- cluster put
-- cluster member state get
-- delete the cluster member
+- images export post
+- certificates get recursion1
+- server patch
+- api
+- cluster group get
+- cluster group put
 - certificate get
-- cluster groups post
+- images post untrusted
+- update the certificate for the cluster
 - get the instances
-- generate secret for retrieval of the image by an untrusted client
-- images aliases get
+- create a cluster group.
+- delete the cluster member
+- cluster member put
+- cluster group patch
+- linux
 - cluster member state post
+- image patch
+- api get
+- make the server push the image to a remote server
+- virtual machines
+- instances get
+- cluster member patch
+- delete the image
+- evacuate or restore a cluster member
+- update the image alias
+- certificates post
+- certificates get
+- partially update the image alias
+- rename the image alias
+- images aliases get
+- cluster group delete
+- cluster group post
+- update the cluster group
+- virtualization
+- get the cluster group
+- get the cluster groups
+- get the images
+- delete the trusted certificate
+- images get
+- images aliases post
+- partially update the server configuration
+- image get untrusted
+- events get
+- cluster member state get
+- images aliases get recursion1
+- cluster members get
+- update the trusted certificate
+- images aliases put
+- get the server environment and configuration
+- partially update the trusted certificate
+- get the cluster member
+- images secret post
+- get the raw image file(s)
+- image delete
+- get the image alias
+- images get untrusted
+- image alias get untrusted
+- get the image
+- get the public images
+- certificate put
+- get state of the cluster member
+- cluster groups get recursion1
+- images post
+- clustering update cert
+- get the trusted certificates
+- cluster get
+- images get recursion1
+- server get
+- certificate patch
+- get the event stream
+- update the server configuration
+- partially update the cluster member
+- get the public image alias
+- image put
+- refresh an image
+- add an image alias
+- cluster member get
+- image export get
+- images get recursion1 untrusted
+- image alias get
+- server put
+- get the supported api endpoints
+- cluster groups get
+- get the image aliases
+- image export get untrusted
+- image alias delete
+- images alias patch
+- generate secret for retrieval of the image by an untrusted client
+- update the cluster member
+- get the cluster configuration
+- delete the image alias
+- images refresh post
+- add an image
+- certificate delete
+- update the cluster configuration
+- incus
+- rename the cluster group
+- images alias post
+- open source
+- get the cluster members
+- cluster members post
+- cluster members get recursion1
+- cluster groups post
+- partially update the image
+- request a join token
+- certificates post untrusted
+- cluster put
+- rename the cluster member
+- update the image
+- cluster member post
+- cluster member delete
+- add a trusted certificate
+- image get
+- get the trusted certificate
+- delete the cluster group.
 slug: incus-capability
 source_filename: incus-capability.yaml
 source_heading: Capability Spec

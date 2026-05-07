@@ -45,44 +45,44 @@ personas: []
 provider_name: Sendoso
 provider_slug: sendoso
 search_terms:
-- create a new gift send to a recipient
-- monitor team budget
+- list inventory
+- add a new recipient contact with name, email, and optional address
 - sending analytics
+- get aggregated sending analytics by date range
+- get sends report
+- check the team's remaining gift sending budget and billing period
+- create a new gift send to a recipient
+- direct mail
+- create recipient
+- crm integration
+- list recipients
+- cancel a pending send
+- get team budget balance and remaining spend
+- monitor team budget
+- list gift sends with optional filtering by status (pending, shipped, delivered, failed) and date range. use to check on pending sends or review recent gifting activity.
+- list sends with filtering by status and date range
+- get sending analytics for a date range. use group_by to aggregate by day, week, month, user, or team. returns totals and time-series data.
+- sales engagement
+- retrieve send
+- list recipient contacts
+- get the current status and tracking details for a specific send
+- list sends
+- get send details and tracking status
+- search for recipient contacts by name or email. use before creating a send to find an existing recipient_id.
+- manage gift recipients
+- retrieve or cancel a specific send
+- cancel send
+- add a new recipient contact
+- cancel a pending send that has not yet been processed for shipment
+- 'browse available gifts and products. filter by type: egift (digital gift cards), physical (shipped products), swag (branded merchandise), direct_mail, or charity.'
+- browse available gifts and products
+- create send
+- create and manage gift sends
+- get team budget
+- send a gift to a recipient. provide recipient_id and item_id from inventory. optionally add a personalized message and crm attribution (crm_id, crm_type) for salesforce/hubspot reporting.
+- marketing automation
 - list available inventory items by type
 - corporate gifting
-- search for recipient contacts by name or email. use before creating a send to find an existing recipient_id.
-- add a new recipient contact
-- get sending analytics for a date range. use group_by to aggregate by day, week, month, user, or team. returns totals and time-series data.
-- get send details and tracking status
-- get team budget balance and remaining spend
-- create recipient
-- retrieve or cancel a specific send
-- manage gift recipients
-- check the team's remaining gift sending budget and billing period
-- crm integration
-- list inventory
-- get the current status and tracking details for a specific send
-- sales engagement
-- get sends report
-- get aggregated sending analytics by date range
-- marketing automation
-- direct mail
-- list recipient contacts
-- list sends
-- list sends with filtering by status and date range
-- create send
-- list recipients
-- browse available gifts and products
-- get team budget
-- cancel a pending send that has not yet been processed for shipment
-- cancel a pending send
-- cancel send
-- 'browse available gifts and products. filter by type: egift (digital gift cards), physical (shipped products), swag (branded merchandise), direct_mail, or charity.'
-- create and manage gift sends
-- send a gift to a recipient. provide recipient_id and item_id from inventory. optionally add a personalized message and crm attribution (crm_id, crm_type) for salesforce/hubspot reporting.
-- list gift sends with optional filtering by status (pending, shipped, delivered, failed) and date range. use to check on pending sends or review recent gifting activity.
-- add a new recipient contact with name, email, and optional address
-- retrieve send
 slug: gift-sending
 source_filename: gift-sending.yaml
 source_heading: Capability Spec

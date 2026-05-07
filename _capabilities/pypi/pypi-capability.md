@@ -17,17 +17,17 @@ personas: []
 provider_name: PyPI
 provider_slug: pypi
 search_terms:
-- getprojectfiles
-- package management
-- developer tools
-- packages
-- api
-- get project distribution files
-- pypi
-- python
-- listprojects
 - list all projects
 - open source
+- python
+- getprojectfiles
+- listprojects
+- pypi
+- packages
+- get project distribution files
+- api
+- package management
+- developer tools
 slug: pypi-capability
 source_filename: pypi-capability.yaml
 source_heading: Capability Spec

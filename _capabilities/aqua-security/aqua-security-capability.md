@@ -49,41 +49,41 @@ personas: []
 provider_name: Aqua Security
 provider_slug: aqua-security
 search_terms:
-- aqua security list containers
-- vulnerability scanning
-- aqua security delete image
-- createpolicy
 - aqua security create security policy
-- aqua security list registries
-- registerimage
-- aqua security authenticate user
-- cve identification, prioritization, and remediation
-- runtime protection
-- aqua security get image details
-- aqua security list images
 - listpolicies
-- security
 - containers
-- cloud native
-- aqua security register image
-- kubernetes
-- integrates security scanning into ci/cd pipelines
-- regulatory compliance enforcement and auditing
-- aqua security list users
-- login
+- aqua security delete image
 - listregistries
 - api
-- aqua security list security policies
-- getimage
-- real-time monitoring and enforcement for running containers
-- monitors runtime security events and responds to container threats
-- manages aqua platform configuration, users, and policies
-- listimages
 - securing container images throughout build-to-runtime lifecycle
-- listusers
-- listcontainers
-- aqua
+- cloud native
+- runtime protection
+- vulnerability scanning
+- cve identification, prioritization, and remediation
+- registerimage
+- login
 - deleteimage
+- aqua security get image details
+- kubernetes
+- listimages
+- getimage
+- aqua security register image
+- createpolicy
+- aqua security list images
+- integrates security scanning into ci/cd pipelines
+- real-time monitoring and enforcement for running containers
+- listcontainers
+- regulatory compliance enforcement and auditing
+- aqua security authenticate user
+- aqua security list security policies
+- aqua security list registries
+- listusers
+- monitors runtime security events and responds to container threats
+- security
+- aqua
+- manages aqua platform configuration, users, and policies
+- aqua security list containers
+- aqua security list users
 slug: aqua-security-capability
 source_filename: aqua-security-capability.yaml
 source_heading: Capability Spec

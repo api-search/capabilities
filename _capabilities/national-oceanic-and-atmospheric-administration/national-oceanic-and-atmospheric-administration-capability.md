@@ -13,18 +13,18 @@ personas: []
 provider_name: National Oceanic and Atmospheric Administration
 provider_slug: national-oceanic-and-atmospheric-administration
 search_terms:
-- retrieve co-ops station observations and predictions
-- weather
-- federal government
-- national
-- oceanic
-- api
-- and
 - atmosphere
+- oceanic
+- retrieve co-ops station observations and predictions
 - oceans
-- atmospheric
-- administration
+- weather
+- and
 - getdata
+- federal government
+- api
+- atmospheric
+- national
+- administration
 slug: national-oceanic-and-atmospheric-administration-capability
 source_filename: national-oceanic-and-atmospheric-administration-capability.yaml
 source_heading: Capability Spec

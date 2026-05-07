@@ -29,19 +29,19 @@ personas: []
 provider_name: Marriott International
 provider_slug: marriott-international
 search_terms:
-- marriott
-- searchproperties
-- api
 - getreservation
-- get reservation details
-- getproperty
-- checkavailability
-- get property details
-- check room availability
 - createreservation
-- create a reservation
-- search properties
+- marriott
+- checkavailability
+- searchproperties
 - international
+- get property details
+- create a reservation
+- api
+- search properties
+- getproperty
+- get reservation details
+- check room availability
 slug: marriott-international-capability
 source_filename: marriott-international-capability.yaml
 source_heading: Capability Spec

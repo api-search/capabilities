@@ -45,32 +45,32 @@ personas: []
 provider_name: Jupyter Notebook
 provider_slug: jupyter-notebook
 search_terms:
-- jupyter notebook get a kernel specification
+- getkernelspec
+- jupyter notebook shut down a kernel
+- interruptkernel
+- jupyter notebook get kernel information
+- listkernelspecs
+- jupyter notebook get api info
+- jupyter notebook list kernel specifications
+- api
 - getkernel
+- startkernel
+- jupyter notebook interrupt a kernel
+- machine learning
+- data science
+- notebook
+- jupyter notebook get a kernel specification
+- python
 - listkernels
 - notebooks
-- listkernelspecs
-- jupyter
-- notebook
-- restartkernel
-- jupyter notebook list kernel specifications
-- jupyter notebook interrupt a kernel
-- getapiinfo
-- machine learning
-- jupyter notebook shut down a kernel
-- api
-- jupyter notebook start a kernel
-- getkernelspec
-- interactive computing
 - shutdownkernel
-- jupyter notebook get api info
-- python
-- interruptkernel
+- jupyter notebook start a kernel
 - jupyter notebook list running kernels
+- getapiinfo
+- interactive computing
+- restartkernel
 - jupyter notebook restart a kernel
-- jupyter notebook get kernel information
-- startkernel
-- data science
+- jupyter
 slug: jupyter-notebook-capability
 source_filename: jupyter-notebook-capability.yaml
 source_heading: Capability Spec

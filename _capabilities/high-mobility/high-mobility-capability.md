@@ -37,27 +37,27 @@ personas: []
 provider_name: High Mobility
 provider_slug: high-mobility
 search_terms:
+- mobility
 - listfleetvehicles
-- get vehicle data by vin
-- list fleet vehicles
 - connected cars
+- vehicle data
+- api
+- create oauth 2.0 access token
+- high
+- removefleetvehicle
+- getfleetvehicle
+- get fleet vehicle
+- getvehicledata
 - addfleetvehicle
 - iot
-- remove fleet vehicle
-- mobility
-- createaccesstoken
-- get fleet vehicle
-- vehicle data
-- automotive
-- high
-- getfleetvehicle
-- api
-- register vehicle to fleet
-- create oauth 2.0 access token
-- getvehicledata
-- removefleetvehicle
-- getvehicleeligibility
+- list fleet vehicles
 - get vehicle eligibility
+- automotive
+- get vehicle data by vin
+- getvehicleeligibility
+- register vehicle to fleet
+- remove fleet vehicle
+- createaccesstoken
 slug: high-mobility-capability
 source_filename: high-mobility-capability.yaml
 source_heading: Capability Spec

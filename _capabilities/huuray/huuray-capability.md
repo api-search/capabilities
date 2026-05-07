@@ -45,30 +45,30 @@ personas: []
 provider_name: Huuray
 provider_slug: huuray
 search_terms:
-- used to cancel orders or giftcards
-- used to order giftcards
-- post v4 stock
-- used to retrieve current exchange rate data
-- used to get a list of the available templates
 - used to get available balances
 - huuray
-- post v4 resend
-- get v4 balance
-- get v4 exchangerates
-- e-commerce
-- post v4 catalogue
-- used to get a list of the available products
-- post v4 search
-- delete v4 cancel
-- gift cards
-- used to resend orders or giftcards
-- post v4 template
-- api
-- post v4 order
-- used to check the current stock of a product
-- payments
-- rewards
 - used to search through giftcards from previous orders
+- post v4 resend
+- api
+- used to check the current stock of a product
+- delete v4 cancel
+- post v4 order
+- used to cancel orders or giftcards
+- used to get a list of the available templates
+- used to resend orders or giftcards
+- rewards
+- get v4 exchangerates
+- gift cards
+- e-commerce
+- get v4 balance
+- used to retrieve current exchange rate data
+- used to order giftcards
+- post v4 catalogue
+- payments
+- post v4 stock
+- post v4 template
+- post v4 search
+- used to get a list of the available products
 slug: huuray-capability
 source_filename: huuray-capability.yaml
 source_heading: Capability Spec

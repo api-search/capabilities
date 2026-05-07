@@ -25,34 +25,34 @@ personas: []
 provider_name: Revolutio
 provider_slug: revolutio
 search_terms:
-- retrieve seismic hazard class and site classification
-- construction
-- get site snow hazard
-- get site wind
-- get snow and ice loading parameters for a site. returns snow region, elevation class, snow ground load, and ice region classification.
-- retrieve snow region, elevation class, and ground load for a site
-- get site wind hazard
-- get site seismic
-- get a comprehensive multi-hazard site assessment covering wind, snow, ice, and seismic parameters in a single api call. ideal for full structural engineering site evaluations.
-- get site seismic hazard
-- weather
-- wind analysis
-- get wind hazard parameters for a specific geographic location. returns wind region, terrain category, topographic class, and design wind speed per as/nzs 1170.2 or asce 7.
 - engineering
-- snow and ice loading parameters for a construction site
-- get complete site assessment
+- get site wind
 - wind hazard parameters for a construction site
-- structural engineering
-- comprehensive multi-hazard site assessment
-- get site assessment
-- hazard
-- revolutio
-- get all hazard parameters (wind, snow, ice, seismic) for a complete site assessment
+- get site snow hazard
+- get complete site assessment
 - seismic hazard parameters for a construction site
-- get site snow
-- retrieve wind region, terrain category, and design wind speed for a site
+- construction
+- retrieve snow region, elevation class, and ground load for a site
 - get seismic hazard parameters for a site. returns hazard class, site class, and probability factor.
+- snow and ice loading parameters for a construction site
+- revolutio
+- hazard
+- comprehensive multi-hazard site assessment
+- get site wind hazard
+- structural engineering
+- get site seismic hazard
+- wind analysis
+- get site seismic
+- retrieve wind region, terrain category, and design wind speed for a site
+- get site assessment
+- get snow and ice loading parameters for a site. returns snow region, elevation class, snow ground load, and ice region classification.
 - hazard assessment
+- retrieve seismic hazard class and site classification
+- get a comprehensive multi-hazard site assessment covering wind, snow, ice, and seismic parameters in a single api call. ideal for full structural engineering site evaluations.
+- get site snow
+- weather
+- get wind hazard parameters for a specific geographic location. returns wind region, terrain category, topographic class, and design wind speed per as/nzs 1170.2 or asce 7.
+- get all hazard parameters (wind, snow, ice, seismic) for a complete site assessment
 slug: structural-engineering
 source_filename: structural-engineering.yaml
 source_heading: Capability Spec

@@ -22,35 +22,35 @@ personas: []
 provider_name: Amplitude
 provider_slug: amplitude
 search_terms:
-- unified workflow for sending events and identifying users. for data engineers.
-- scim provisioning and privacy compliance. for it admins and compliance teams.
-- manage and evaluate a/b experiments and feature flags. for product managers.
-- runs experiments and feature flags
-- a/b testing
-- sendAttribution
-- ingests and exports event data
-- analyzes data and manages cohorts
 - analytics
-- user behavior
-- experimentation
-- identity management
-- attribution api sendAttribution
-- identifyUser
-- uploadEvents
-- privacy compliance
-- data governance
-- amplitude
-- event ingestion
-- amplitude send attribution data
-- amplitude upload events
-- manage event schemas and chart annotations. for data governance teams.
-- product analytics
 - feature flags
-- export raw event data and manage behavioral cohorts. for data analysts.
-- identify api identifyUser
-- amplitude identify a user
-- http v2 api uploadEvents
+- unified workflow for sending events and identifying users. for data engineers.
+- manage event schemas and chart annotations. for data governance teams.
+- experimentation
+- runs experiments and feature flags
 - manages privacy and compliance
+- attribution api sendAttribution
+- ingests and exports event data
+- event ingestion
+- identity management
+- http v2 api uploadEvents
+- product analytics
+- analyzes data and manages cohorts
+- privacy compliance
+- amplitude upload events
+- amplitude
+- identify api identifyUser
+- manage and evaluate a/b experiments and feature flags. for product managers.
+- scim provisioning and privacy compliance. for it admins and compliance teams.
+- identifyUser
+- amplitude send attribution data
+- amplitude identify a user
+- a/b testing
+- export raw event data and manage behavioral cohorts. for data analysts.
+- data governance
+- user behavior
+- uploadEvents
+- sendAttribution
 slug: amplitude-analytics-ingestion
 source_filename: amplitude-analytics-ingestion.yaml
 source_heading: Capability Spec

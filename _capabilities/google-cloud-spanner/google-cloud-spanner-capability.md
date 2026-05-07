@@ -49,35 +49,35 @@ personas: []
 provider_name: Google Cloud Spanner
 provider_slug: google-cloud-spanner
 search_terms:
-- google cloud spanner create a database
-- google cloud spanner drop a database
-- deleteinstance
-- google cloud spanner list instances
-- distributed
-- dropdatabase
-- cloud
-- google cloud spanner delete an instance
-- google
-- google cloud spanner get a database
-- createinstance
-- sql
+- createsession
 - updateinstance
-- getdatabase
-- getinstance
-- google cloud spanner create a session
-- relational
-- database
+- distributed
+- google cloud spanner drop a database
+- createinstance
+- google cloud spanner create an instance
 - createdatabase
 - api
-- google cloud spanner create an instance
-- listinstances
 - spanner
-- createsession
-- google cloud spanner update an instance
+- deleteinstance
+- google
+- getinstance
+- sql
+- google cloud spanner create a database
 - google cloud spanner get an instance
+- google cloud spanner get a database
+- database
+- cloud
 - listdatabases
 - google cloud spanner list databases
+- google cloud spanner list instances
+- google cloud spanner delete an instance
+- dropdatabase
+- relational
+- getdatabase
 - google cloud
+- google cloud spanner update an instance
+- listinstances
+- google cloud spanner create a session
 slug: google-cloud-spanner-capability
 source_filename: google-cloud-spanner-capability.yaml
 source_heading: Capability Spec

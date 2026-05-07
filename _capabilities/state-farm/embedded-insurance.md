@@ -29,33 +29,33 @@ personas: []
 provider_name: State Farm
 provider_slug: state-farm
 search_terms:
-- list coverage options
 - list available state farm renters insurance coverage options and limits for a specific us state, including personal property limits, liability limits, deductible choices, and optional coverages.
-- create renters quote
-- retrieve a renters insurance quote
-- list renters coverage options
-- get the current status, coverage details, and premium information for an active state farm renters insurance policy.
-- property management
-- insurance
-- renters insurance policy binding
-- available coverage options for tenants
 - create a renters insurance quote for a tenant
-- convert an accepted state farm renters insurance quote into an active policy. specify the quote id, payment method, and payment frequency to complete policy binding.
-- get renters policy status
-- quote retrieval
-- partner
 - policy status and details
+- create renters quote
 - bind renters policy
-- create a state farm renters insurance quote for a tenant given their property address, personal information, and desired coverage selections. returns the quoted premium and coverage summary.
-- retrieve the details and status of a previously created state farm renters insurance quote by its quote id.
-- bind a renters insurance policy from a quote
-- get renters quote
-- get renters policy
+- list renters coverage options
+- quote retrieval
 - embedded insurance
 - get renters insurance policy status and coverage
-- renters insurance quote operations
+- partner
+- renters insurance policy binding
+- get the current status, coverage details, and premium information for an active state farm renters insurance policy.
 - renters insurance
+- retrieve the details and status of a previously created state farm renters insurance quote by its quote id.
+- property management
+- bind a renters insurance policy from a quote
+- create a state farm renters insurance quote for a tenant given their property address, personal information, and desired coverage selections. returns the quoted premium and coverage summary.
+- convert an accepted state farm renters insurance quote into an active policy. specify the quote id, payment method, and payment frequency to complete policy binding.
+- get renters policy status
 - get available renters insurance coverage options by state
+- available coverage options for tenants
+- list coverage options
+- get renters policy
+- renters insurance quote operations
+- get renters quote
+- insurance
+- retrieve a renters insurance quote
 slug: embedded-insurance
 source_filename: embedded-insurance.yaml
 source_heading: Capability Spec

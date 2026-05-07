@@ -21,20 +21,20 @@ personas: []
 provider_name: Lucidworks
 provider_slug: lucidworks
 search_terms:
+- get prediction results
 - requestaccesstoken
-- createprediction
+- lucidworks
+- getprediction
+- artificial intelligence
+- search
 - enterprise search
 - vector search
-- getprediction
+- createprediction
+- create prediction by use case
 - api
-- search
-- lucidworks
+- rag
 - request access token
 - commerce
-- get prediction results
-- rag
-- artificial intelligence
-- create prediction by use case
 slug: lucidworks-capability
 source_filename: lucidworks-capability.yaml
 source_heading: Capability Spec

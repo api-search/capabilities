@@ -105,61 +105,61 @@ personas: []
 provider_name: OpenStack
 provider_slug: openstack
 search_terms:
+- createendpoint
+- create group
+- cloud platform
+- getproject
+- revoke token
+- issuetoken
+- openstack
+- list groups
 - creategroup
-- createuser
-- createdomain
-- create endpoint
+- api
+- update user
+- create domain
 - createrole
-- validatetoken
-- listdomains
-- deleteproject
+- linux foundation
+- open source
+- list domains
 - listendpoints
 - virtualization
-- listroleassignments
-- create user
-- list role assignments
-- updateproject
-- linux foundation
-- create domain
-- issuetoken
-- getproject
-- update project
-- create project
-- open source
-- delete user
-- listgroups
-- create service
-- listroles
-- api
-- revoketoken
-- infrastructure as a service
-- delete project
-- listprojects
-- update user
-- get project
-- list projects
-- get user
-- list domains
 - getuser
-- create role
-- cloud platform
+- delete user
+- validatetoken
+- updateproject
+- listgroups
+- deleteuser
+- list projects
 - list users
+- create project
+- delete project
+- create role
+- list service endpoints
+- infrastructure as a service
+- revoketoken
+- updateuser
+- list role assignments
+- deleteproject
 - validate token
 - list services in catalog
-- revoke token
-- list service endpoints
-- list groups
-- createendpoint
+- get user
+- listroleassignments
+- createuser
+- create user
+- get project
+- listroles
 - listusers
+- create endpoint
+- create service
 - issue an authentication token
-- openstack
-- listservices
-- updateuser
-- createservice
-- create group
-- createproject
-- deleteuser
+- listprojects
 - list roles
+- listdomains
+- createservice
+- update project
+- createdomain
+- listservices
+- createproject
 slug: openstack-capability
 source_filename: openstack-capability.yaml
 source_heading: Capability Spec

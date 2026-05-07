@@ -17,16 +17,16 @@ personas: []
 provider_name: PicPurify
 provider_slug: picpurify
 search_terms:
+- weapon detection
+- analyze an image
+- content moderation
 - computer vision
-- api
+- post analyse 1 1
 - analyze a video
+- api
+- image moderation
 - post analyse video 1 0
 - picpurify
-- content moderation
-- analyze an image
-- weapon detection
-- post analyse 1 1
-- image moderation
 slug: picpurify-capability
 source_filename: picpurify-capability.yaml
 source_heading: Capability Spec

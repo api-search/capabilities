@@ -53,39 +53,39 @@ personas: []
 provider_name: Google Earth Engine REST
 provider_slug: google-earth-engine
 search_terms:
-- createmap
-- get an operation
-- export an image
-- get an asset
-- geospatial
-- computepixels
-- create a map
 - compute a value
-- engine
-- computefeatures
-- google
-- delete an asset
-- exportimage
-- listassets
-- compute pixels
-- getasset
+- list operations
 - listoperations
-- climate
 - api
-- exporttable
+- deleteasset
+- remote sensing
+- earth
 - earth observation
+- exportimage
+- get an operation
+- google
+- compute features
+- geospatial
+- export an image
 - getoperation
 - satellite imagery
-- list assets
-- environmental
-- list operations
-- deleteasset
-- earth
-- compute features
 - computevalue
+- delete an asset
+- listassets
+- engine
+- climate
+- computepixels
 - export a table
 - gis
-- remote sensing
+- environmental
+- compute pixels
+- computefeatures
+- getasset
+- create a map
+- get an asset
+- createmap
+- exporttable
+- list assets
 slug: google-earth-engine-capability
 source_filename: google-earth-engine-capability.yaml
 source_heading: Capability Spec

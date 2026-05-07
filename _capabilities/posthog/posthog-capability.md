@@ -249,133 +249,133 @@ personas: []
 provider_name: PostHog
 provider_slug: posthog
 search_terms:
-- post /api/environments/{environment_id}/dashboards/{id}/reorder_tiles/
-- environments batch exports backfills list
-- get /api/environments/{environment_id}/batch_exports/{batch_export_id}/runs/{id}/logs/
-- environments alerts create
-- environments dashboards destroy
-- environments dashboards copy tile create
-- retry a batch export run. we use the same underlying mechanism as when backfilling a batch export, as retrying a run is the same as backfilling one run.
-- environments alerts update
-- analytics
-- environments batch exports runs logs retrieve
-- environments batch exports runs retry create
-- hard delete of this model is not allowed. use a patch api call to set "deleted" to true
-- get /api/environments/{environment_id}/dashboards/{id}/
-- session recording
-- get /api/environments/{environment_id}/batch_exports/{id}/
-- environments dashboards partial update
-- post /api/environments/{environment_id}/alerts/
-- put /api/environments/{environment_id}/dashboards/{id}/
-- api
-- creates an unlisted dashboard from template by tag. enforces uniqueness (one per tag per team). returns 409 if unlisted dashboard with this tag already exists.
-- environments dashboards sharing passwords destro
-- environments batch exports retrieve
-- 'bulk update tags on multiple objects. accepts: - {"ids": [...], "action": "add"|"remove"|"set", "tags": ["tag1", "tag2"]} actions: - "add": add tags to existing tags on each object - "remove": remove specific tags from each object - "set":'
-- environments data color themes list
-- environments batch exports run test step new cre
-- delete /api/environments/{environment_id}/alerts/{id}/
-- list data modeling jobs which are "runs" for our saved queries.
-- delete /api/environments/{environment_id}/data_color_themes/{id}/
-- environments dashboards update
-- environments batch exports partial update
-- redeem invite code
 - put /api/environments/{environment_id}/batch_exports/{id}/
-- get /api/environments/{environment_id}/data_color_themes/{id}/
-- patch /api/environments/{environment_id}/dashboards/{id}/
-- environments dashboards collaborators destroy
-- environments dashboards collaborators create
-- environments dashboards sharing refresh create
-- check access
-- patch /api/environments/{environment_id}/data_color_themes/{id}/
 - run all insights on a dashboard and return their results.
-- open source
-- environments data color themes retrieve
-- environments batch exports backfills cancel crea
-- environments batch exports create
-- get /api/environments/{environment_id}/batch_exports/{batch_export_id}/runs/
-- environments batch exports test retrieve
-- generate ai analysis comparing before/after dashboard refresh. expects cache_key in request body pointing to the stored 'before' state.
-- environments data color themes create
-- environments dashboards create from template jso
-- environments dashboards collaborators list
-- feature flags
-- environments dashboards sharing passwords create
-- post /api/environments/{environment_id}/data_color_themes/
-- environments dashboards list
-- environments dashboards create
-- environments data modeling jobs list
-- post /api/environments/{environment_id}/dashboards/{dashboard_id}/collaborators/
-- get /api/environments/{environment_id}/batch_exports/{batch_export_id}/runs/{id}/
-- patch /api/environments/{environment_id}/alerts/{id}/
-- post /api/environments/{environment_id}/batch_exports/
-- environments dashboards move tile partial update
-- simulate a detector on an insight's historical data. read-only — no alertcheck records are created.
-- patch /api/environments/{environment_id}/batch_exports/{id}/
-- environments data color themes partial update
-- a/b testing
-- get /api/environments/{environment_id}/alerts/
-- environments dashboards bulk update tags create
-- get /api/environments/{environment_id}/alerts/{id}/
-- patch /api/environments/{environment_id}/dashboards/{id}/move_tile/
-- environments dashboards create unlisted dashboar
-- environments batch exports run test step create
-- stream dashboard metadata and tiles via server-sent events. sends metadata first, then tiles as they are rendered.
-- viewset for batchexportbackfill models. allows creating and reading backfills, but not updating or deleting them.
-- environments alerts list
-- environments dashboards snapshot create
-- delete /api/environments/{environment_id}/batch_exports/{id}/
-- unpause a batchexport.
-- delete /api/environments/{environment_id}/dashboards/{dashboard_id}/collaborators/{user__uuid}/
-- put /api/environments/{environment_id}/alerts/{id}/
-- create a new backfill for a batchexport.
-- environments batch exports logs retrieve
-- environments data color themes update
-- copy an existing dashboard tile to another dashboard (insight or text card; new tile row).
-- environments batch exports destroy
-- environments batch exports backfills retrieve
-- environments batch exports list
-- environments batch exports backfills create
-- post /api/environments/{environment_id}/batch_exports/run_test_step_new/
-- environments batch exports unpause create
-- environments alerts simulate create
-- environments batch exports runs cancel create
-- get /api/environments/{environment_id}/dashboards/{dashboard_id}/collaborators/
-- post /api/environments/{environment_id}/batch_exports/{id}/run_test_step/
-- environments batch exports runs retrieve
-- cancel a batch export run.
-- post /api/environments/{environment_id}/dashboards/create_from_template_json/
-- get /api/environments/{environment_id}/dashboards/
-- environments dashboards run insights retrieve
-- delete a password from the sharing configuration.
-- create a new password for the sharing configuration.
-- get /api/environments/{environment_id}/dashboards/{dashboard_id}/sharing/
-- posthog
 - pause a batchexport.
-- environments alerts partial update
-- get /api/environments/{environment_id}/batch_exports/{id}/logs/
-- post /api/environments/{environment_id}/dashboards/
-- get /api/environments/{environment_id}/data_color_themes/
-- environments batch exports pause create
-- environments dashboards sharing list
-- post /api/environments/{environment_id}/dashboards/{dashboard_id}/sharing/refresh/
-- environments data color themes destroy
-- get /api/environments/{environment_id}/batch_exports/test/
-- environments dashboards retrieve
-- environments alerts destroy
-- cancel a batch export backfill.
-- environments dashboards stream tiles retrieve
-- environments alerts retrieve
-- environments batch exports update
-- product analytics
+- environments batch exports runs logs retrieve
+- environments batch exports logs retrieve
+- get /api/environments/{environment_id}/dashboards/{id}/
+- api
+- environments batch exports test retrieve
+- environments dashboards create unlisted dashboar
+- stream dashboard metadata and tiles via server-sent events. sends metadata first, then tiles as they are rendered.
+- environments data color themes update
 - code invites check access retrieve
-- environments dashboards reorder tiles create
-- code invites redeem create
-- put /api/environments/{environment_id}/data_color_themes/{id}/
-- environments dashboards analyze refresh result c
-- snapshot the current dashboard state (from cache) for ai analysis. returns a cache_key representing the 'before' state, to be used with analyze_refresh_result.
-- environments batch exports runs list
+- environments batch exports run test step create
+- create a new backfill for a batchexport.
 - get /api/environments/{environment_id}/batch_exports/
+- environments dashboards sharing refresh create
+- snapshot the current dashboard state (from cache) for ai analysis. returns a cache_key representing the 'before' state, to be used with analyze_refresh_result.
+- environments dashboards update
+- environments dashboards destroy
+- environments data color themes retrieve
+- list data modeling jobs which are "runs" for our saved queries.
+- get /api/environments/{environment_id}/batch_exports/{batch_export_id}/runs/{id}/
+- environments dashboards move tile partial update
+- code invites redeem create
+- cancel a batch export backfill.
+- environments alerts partial update
+- environments batch exports retrieve
+- get /api/environments/{environment_id}/data_color_themes/
+- creates an unlisted dashboard from template by tag. enforces uniqueness (one per tag per team). returns 409 if unlisted dashboard with this tag already exists.
+- environments alerts retrieve
+- viewset for batchexportbackfill models. allows creating and reading backfills, but not updating or deleting them.
+- environments dashboards create
+- environments batch exports runs cancel create
+- post /api/environments/{environment_id}/alerts/
+- 'bulk update tags on multiple objects. accepts: - {"ids": [...], "action": "add"|"remove"|"set", "tags": ["tag1", "tag2"]} actions: - "add": add tags to existing tags on each object - "remove": remove specific tags from each object - "set":'
+- environments batch exports runs retry create
+- environments alerts destroy
+- copy an existing dashboard tile to another dashboard (insight or text card; new tile row).
+- simulate a detector on an insight's historical data. read-only — no alertcheck records are created.
+- delete /api/environments/{environment_id}/batch_exports/{id}/
+- environments batch exports backfills cancel crea
+- post /api/environments/{environment_id}/batch_exports/
+- patch /api/environments/{environment_id}/data_color_themes/{id}/
+- retry a batch export run. we use the same underlying mechanism as when backfilling a batch export, as retrying a run is the same as backfilling one run.
+- get /api/environments/{environment_id}/dashboards/{dashboard_id}/sharing/
+- environments dashboards analyze refresh result c
+- environments alerts list
+- environments dashboards reorder tiles create
+- patch /api/environments/{environment_id}/alerts/{id}/
+- put /api/environments/{environment_id}/data_color_themes/{id}/
+- environments data color themes list
+- environments batch exports backfills retrieve
+- get /api/environments/{environment_id}/alerts/{id}/
+- check access
+- get /api/environments/{environment_id}/batch_exports/{batch_export_id}/runs/{id}/logs/
+- patch /api/environments/{environment_id}/dashboards/{id}/
+- post /api/environments/{environment_id}/dashboards/{dashboard_id}/collaborators/
+- environments batch exports destroy
+- a/b testing
+- session recording
+- delete a password from the sharing configuration.
+- generate ai analysis comparing before/after dashboard refresh. expects cache_key in request body pointing to the stored 'before' state.
+- post /api/environments/{environment_id}/dashboards/
+- environments dashboards collaborators destroy
+- environments dashboards bulk update tags create
+- feature flags
+- put /api/environments/{environment_id}/dashboards/{id}/
+- post /api/environments/{environment_id}/data_color_themes/
+- environments batch exports runs list
+- environments dashboards sharing passwords create
+- environments batch exports update
+- environments batch exports pause create
+- get /api/environments/{environment_id}/alerts/
+- post /api/environments/{environment_id}/batch_exports/run_test_step_new/
+- hard delete of this model is not allowed. use a patch api call to set "deleted" to true
+- put /api/environments/{environment_id}/alerts/{id}/
+- product analytics
+- delete /api/environments/{environment_id}/data_color_themes/{id}/
+- delete /api/environments/{environment_id}/alerts/{id}/
+- delete /api/environments/{environment_id}/dashboards/{dashboard_id}/collaborators/{user__uuid}/
+- get /api/environments/{environment_id}/dashboards/
+- cancel a batch export run.
+- environments dashboards copy tile create
+- environments batch exports run test step new cre
+- environments alerts simulate create
+- environments alerts create
+- get /api/environments/{environment_id}/batch_exports/{id}/logs/
+- environments data color themes create
+- post /api/environments/{environment_id}/dashboards/{dashboard_id}/sharing/refresh/
+- redeem invite code
+- environments batch exports partial update
+- post /api/environments/{environment_id}/batch_exports/{id}/run_test_step/
+- environments dashboards partial update
+- post /api/environments/{environment_id}/dashboards/{id}/reorder_tiles/
+- get /api/environments/{environment_id}/batch_exports/{batch_export_id}/runs/
+- environments dashboards collaborators list
+- environments dashboards collaborators create
+- analytics
+- environments dashboards run insights retrieve
+- get /api/environments/{environment_id}/batch_exports/{id}/
+- create a new password for the sharing configuration.
+- patch /api/environments/{environment_id}/dashboards/{id}/move_tile/
+- post /api/environments/{environment_id}/dashboards/create_from_template_json/
+- patch /api/environments/{environment_id}/batch_exports/{id}/
+- unpause a batchexport.
+- environments alerts update
+- environments batch exports list
+- environments dashboards stream tiles retrieve
+- environments batch exports unpause create
+- environments batch exports create
+- get /api/environments/{environment_id}/dashboards/{dashboard_id}/collaborators/
+- environments dashboards sharing list
+- open source
+- get /api/environments/{environment_id}/data_color_themes/{id}/
+- environments data color themes partial update
+- environments data color themes destroy
+- environments dashboards create from template jso
+- environments dashboards snapshot create
+- environments batch exports backfills create
+- posthog
+- environments dashboards retrieve
+- environments dashboards sharing passwords destro
+- environments batch exports backfills list
+- environments data modeling jobs list
+- get /api/environments/{environment_id}/batch_exports/test/
+- environments batch exports runs retrieve
+- environments dashboards list
 slug: posthog-capability
 source_filename: posthog-capability.yaml
 source_heading: Capability Spec

@@ -37,40 +37,40 @@ personas: []
 provider_name: Threads
 provider_slug: threads-api
 search_terms:
-- get account analytics and metrics
-- get all user's threads posts with pagination support
-- meta
-- social
 - analytics
-- get account insights
-- create thread
-- publishing quota
-- get all user's reply posts on threads
-- create a new threads post with text, image, or video and reply controls
-- publishing
-- get all user threads with pagination
-- content management
-- get publishing limit
-- get threads user profile information including username and biography
-- get profile
 - check publishing quota and rate limit status
-- thread posts listing
-- check publishing quota and rate limits
-- user profile information
-- get threads account analytics including views, likes, replies, and followers
+- get all user's threads posts with pagination support
+- publishing
+- publish thread
+- publish thread containers
+- publish a created thread media container
+- meta
+- create thread
+- account-level insights
 - list threads
 - social networks
-- media
-- account-level insights
+- create a new threads post with text, image, or video and reply controls
+- publishing quota
+- get all user threads with pagination
 - create a new thread post with reply control
-- get threads user profile information
 - list replies
+- check publishing quota and rate limits
 - publish a created threads media container
+- user profile information
+- get profile
+- thread posts listing
+- get account analytics and metrics
+- media
+- content management
+- get account insights
+- social
+- get threads account analytics including views, likes, replies, and followers
 - user reply posts
-- publish thread containers
+- get all user's reply posts on threads
+- get threads user profile information
+- get threads user profile information including username and biography
 - get all user replies
-- publish thread
-- publish a created thread media container
+- get publishing limit
 slug: social-publishing
 source_filename: social-publishing.yaml
 source_heading: Capability Spec

@@ -33,26 +33,26 @@ personas: []
 provider_name: Elastic
 provider_slug: elastic
 search_terms:
-- get a deployment
 - visualization
 - analytics
-- create a deployment
-- delete a deployment
-- cloud
-- list deployments
-- security
-- listtrafficfilterrulesets
 - getaccount
-- list traffic filter rulesets
-- elastic
-- get account information
 - api
+- delete a deployment
+- elastic
+- listtrafficfilterrulesets
 - observability
-- createdeployment
-- search
-- deletedeployment
-- listdeployments
 - getdeployment
+- deletedeployment
+- create a deployment
+- get a deployment
+- cloud
+- createdeployment
+- listdeployments
+- search
+- list traffic filter rulesets
+- get account information
+- security
+- list deployments
 slug: elastic-capability
 source_filename: elastic-capability.yaml
 source_heading: Capability Spec

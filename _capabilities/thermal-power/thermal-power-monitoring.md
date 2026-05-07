@@ -25,33 +25,33 @@ personas: []
 provider_name: Thermal Power
 provider_slug: thermal-power
 search_terms:
-- grid monitoring
-- get hourly net generation by fuel type for grid regions.
-- get monthly or annual electric power generation by thermal fuel type (coal, natural gas, petroleum, nuclear) and us state.
-- fuel analytics
-- get generation by fuel type
-- get plant-level generation output, fuel consumption, heat content, and heat rate for individual thermal power plants.
-- state-level generation and fuel consumption by thermal fuel type.
-- nuclear
-- get rto hourly thermal generation
 - get hourly net generation by thermal fuel type (coal, gas, oil, nuclear) for regional grid operators (miso, pjm, caiso, ercot, spp, nyiso, isone).
+- get rto hourly thermal generation
+- get monthly or annual electric power generation by thermal fuel type (coal, natural gas, petroleum, nuclear) and us state.
+- nuclear
+- grid monitoring
+- get nameplate and net capacity for individual thermal generators including prime mover type and energy source.
+- get nameplate and net capacity for thermal generating units.
+- natural gas
+- electricity
 - eia
 - individual power plant fuel and generation metrics.
-- get nameplate and net capacity for thermal generating units.
-- hourly rto/iso generation by thermal fuel type.
-- get plant operations
-- energy
-- get nameplate and net capacity for individual thermal generators including prime mover type and energy source.
-- power generation
-- thermal generator capacity data.
-- electricity
-- get generator capacity
-- coal
-- thermal power
-- get plant-level generation, fuel consumption, heat content, and heat rate.
 - get hourly generation
+- power generation
 - get electric power generation aggregated by fuel type and state.
-- natural gas
+- get generation by fuel type
+- thermal power
+- energy
+- get generator capacity
+- get hourly net generation by fuel type for grid regions.
+- coal
+- thermal generator capacity data.
+- fuel analytics
+- get plant-level generation output, fuel consumption, heat content, and heat rate for individual thermal power plants.
+- state-level generation and fuel consumption by thermal fuel type.
+- get plant-level generation, fuel consumption, heat content, and heat rate.
+- get plant operations
+- hourly rto/iso generation by thermal fuel type.
 slug: thermal-power-monitoring
 source_filename: thermal-power-monitoring.yaml
 source_heading: Capability Spec

@@ -49,65 +49,65 @@ personas: []
 provider_name: Smartproxy
 provider_slug: smartproxy
 search_terms:
-- mobile proxies
-- account management
-- get endpoints by type
-- smartproxy
-- proxy endpoint discovery
-- delete sub user
-- delete a proxy sub-user account
-- add one or more ip addresses to the proxy authentication whitelist
-- get sub users
-- get sub user traffic
-- proxies
-- get whitelisted ips
-- update a proxy sub-user's password or traffic limit
-- list proxy endpoints
-- data collection
-- traffic usage monitoring
-- network infrastructure
-- delete proxy sub user
-- list all ip addresses whitelisted for credential-free proxy authentication
-- list whitelisted ips
-- update proxy sub user
-- create a new proxy sub-user
 - get proxy endpoints filtered by type
-- add ip addresses to the whitelist
-- filtered endpoint discovery
-- create proxy sub user
-- get total traffic gb allocated and consumed across all sub-users
-- get total traffic allocation across all sub-users
-- get proxy endpoints filtered by connection type (random, sticky, datacenter, mobile)
-- get subscriptions
-- get active subscription plans and usage limits
-- web scraping
-- manage proxy sub-user accounts
-- list proxy sub users
-- permanently delete a proxy sub-user account
-- list all available proxy endpoints with hostnames, ports, and protocols
-- list all available proxy endpoints
-- create a new proxy sub-user with specified service type and optional traffic limit
-- subscription management
-- get endpoints
-- list all whitelisted ip addresses
-- get traffic consumption metrics for a specific proxy sub-user
-- get traffic usage for a specific sub-user
-- ip whitelist management
-- list proxy endpoints by type
 - create sub user
-- get total traffic allocation
-- list all proxy sub-user accounts
-- traffic management
-- remove an ip address from the proxy authentication whitelist
-- add whitelisted ips
-- remove whitelisted ip
-- overall traffic allocation
-- datacenter proxies
-- get active subscription plans, traffic limits, and validity dates
-- get allocated traffic
+- list proxy endpoints
+- subscription management
+- list all available proxy endpoints
+- permanently delete a proxy sub-user account
+- list proxy endpoints by type
+- traffic usage monitoring
 - manage specific sub-user
+- list whitelisted ips
+- network infrastructure
+- get total traffic allocation across all sub-users
+- account management
+- get endpoints
+- get endpoints by type
+- list all ip addresses whitelisted for credential-free proxy authentication
+- remove an ip address from the proxy authentication whitelist
 - list all proxy sub-user accounts with their service types and traffic status
+- get traffic consumption metrics for a specific proxy sub-user
+- data collection
+- remove whitelisted ip
+- delete proxy sub user
+- create a new proxy sub-user
+- ip whitelist management
+- add ip addresses to the whitelist
+- list all available proxy endpoints with hostnames, ports, and protocols
+- list proxy sub users
+- get whitelisted ips
+- datacenter proxies
+- add whitelisted ips
+- delete a proxy sub-user account
+- get sub user traffic
+- smartproxy
+- get total traffic allocation
+- proxy endpoint discovery
+- filtered endpoint discovery
+- mobile proxies
+- get sub users
+- get proxy endpoints filtered by connection type (random, sticky, datacenter, mobile)
+- traffic management
 - residential proxies
+- overall traffic allocation
+- get traffic usage for a specific sub-user
+- delete sub user
+- get active subscription plans and usage limits
+- update a proxy sub-user's password or traffic limit
+- get active subscription plans, traffic limits, and validity dates
+- list all proxy sub-user accounts
+- get subscriptions
+- manage proxy sub-user accounts
+- create proxy sub user
+- update proxy sub user
+- get total traffic gb allocated and consumed across all sub-users
+- add one or more ip addresses to the proxy authentication whitelist
+- proxies
+- get allocated traffic
+- web scraping
+- create a new proxy sub-user with specified service type and optional traffic limit
+- list all whitelisted ip addresses
 slug: proxy-account-management
 source_filename: proxy-account-management.yaml
 source_heading: Capability Spec

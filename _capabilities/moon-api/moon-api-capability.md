@@ -37,27 +37,27 @@ personas: []
 provider_name: Moon-API
 provider_slug: moon-api
 search_terms:
-- get plain text
-- get basic
-- moon
-- astronomy
-- get calendar
-- get astrology data (natal chart and planetary positions)
-- get current moon phase emoji (plain text)
-- get detailed moon and sun data (mega plan)
-- get basic moon phase information
-- get advanced
-- get phase
-- api
-- get moon and sun data calendar
-- get moon phase information only
-- astrology
-- lunar
-- moon phases
-- get moon phase name (plain text)
 - get emoji
 - space
+- get basic
+- api
+- lunar
+- get plain text
+- get basic moon phase information
+- get calendar
+- moon phases
+- get advanced
+- get detailed moon and sun data (mega plan)
+- get moon and sun data calendar
+- get moon phase information only
+- get moon phase name (plain text)
+- get phase
 - get astrology
+- astronomy
+- get astrology data (natal chart and planetary positions)
+- moon
+- astrology
+- get current moon phase emoji (plain text)
 slug: moon-api-capability
 source_filename: moon-api-capability.yaml
 source_heading: Capability Spec

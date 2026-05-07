@@ -29,43 +29,43 @@ personas: []
 provider_name: Smithsonian Institution
 provider_slug: smithsonian-institution
 search_terms:
-- education
-- full-text collection search
-- get available terms for search faceting
-- research
-- get metrics
-- get detailed metadata for a collection item
-- get terms
-- category-filtered search
-- cultural heritage
-- search science and technology
-- search smithsonian art and design collections specifically
-- search by category
 - search smithsonian history and cultural collections
+- get terms
+- get collection statistics and metrics
 - search across all 22 million smithsonian collection items including artworks, natural history specimens, cultural objects, and archival materials
-- art
-- search facet terms
-- search smithsonian science and technology collections
-- collections
-- natural history
-- get collection item
-- individual collection item
-- search history and culture
-- search by subject category
-- search across all smithsonian collections
-- get aggregate statistics about the smithsonian collections including total object counts, online media counts, and open access availability
+- get collection stats
 - search art and design
-- get available facet values for filtering searches by culture, place, object type, date, topic, or museum unit
-- browse facet terms
+- search smithsonian science and technology collections
+- get complete metadata for a specific smithsonian collection item including description, media images, provenance, and classification data
+- search science and technology
+- get collection item
+- search facet terms
+- get detailed metadata for a collection item
+- get available terms for search faceting
 - smithsonian institution
 - museums
-- get collection stats
+- get available facet values for filtering searches by culture, place, object type, date, topic, or museum unit
+- browse facet terms
+- search by subject category
+- research
+- search history and culture
+- category-filtered search
+- full-text collection search
+- get aggregate statistics about the smithsonian collections including total object counts, online media counts, and open access availability
+- get metrics
+- search by category
+- cultural heritage
 - search collections
-- get complete metadata for a specific smithsonian collection item including description, media images, provenance, and classification data
+- search smithsonian art and design collections specifically
+- education
+- art
+- natural history
 - collection statistics
-- get collection statistics and metrics
 - get item
+- collections
+- individual collection item
 - open data
+- search across all smithsonian collections
 slug: collection-discovery
 source_filename: collection-discovery.yaml
 source_heading: Capability Spec

@@ -133,76 +133,76 @@ personas: []
 provider_name: OneLogin
 provider_slug: onelogin
 search_terms:
-- list roles (v2)
-- setuserpassword
-- lockuser
-- list apps
-- create app
-- createuser
-- update user by id
-- update app
-- deleteapp
-- identity
-- createrole
-- get roles
-- deleterole
-- onelogin
-- getrole
-- assign role to user
-- assignuserrole
-- enroll auth factor
-- getapp
-- getroles
-- verifysamlfactor
-- listapps
-- logoutuser
-- lock user account
-- get apps for a user
-- create user
-- get available auth factors
-- get user by id
-- generate saml assertion
-- oauth
-- updaterole
-- set user state
-- getuserroles
-- getuserapps
-- delete app
-- get role by id
-- generatesamlassertion
-- saml
-- set user password
 - enrollfactor
-- revoke access token
-- setuserstate
-- listrolesv2
-- updateapp
+- logoutuser
+- get apps for a user
+- get app by id
+- getuserapps
 - log user out
+- getotpdevices
+- list apps
+- saml
+- generatetoken
 - api
+- get available auth factors
+- revoke access token
+- setusercustomattribute
+- generate access token
+- createrole
+- deleterole
+- verifysamlfactor
+- updaterole
+- verify factor for saml
+- removeuserrole
+- update app
+- delete role
+- getuser
+- get roles
+- setuserpassword
+- identity
+- deleteuser
+- generate saml assertion
+- onelogin
+- setuserstate
+- list users
+- create role
+- getrole
+- update user by id
+- get role by id
+- update role
+- assign role to user
+- updateapp
 - remove role from user
 - revoketoken
-- single sign-on
-- setusercustomattribute
-- update role
-- delete user by id
-- get roles for a user
-- access management
-- removeuserrole
-- getotpdevices
-- getuser
-- create role
-- list users
-- multi-factor authentication
-- delete role
-- generate access token
-- listusers
-- set custom attribute
-- generatetoken
-- get app by id
+- list roles (v2)
 - updateuser
+- set user state
+- create app
+- set user password
+- getapp
+- deleteapp
+- access management
+- generatesamlassertion
 - createapp
-- verify factor for saml
-- deleteuser
+- get roles for a user
+- createuser
+- create user
+- set custom attribute
+- lock user account
+- listusers
+- lockuser
+- enroll auth factor
+- listapps
+- listrolesv2
+- single sign-on
+- multi-factor authentication
+- oauth
+- get user by id
+- getroles
+- delete user by id
+- assignuserrole
+- delete app
+- getuserroles
 slug: onelogin-capability
 source_filename: onelogin-capability.yaml
 source_heading: Capability Spec

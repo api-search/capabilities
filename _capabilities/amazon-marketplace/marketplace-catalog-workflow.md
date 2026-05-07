@@ -29,42 +29,42 @@ personas: []
 provider_name: Amazon Marketplace
 provider_slug: amazon-marketplace
 search_terms:
-- start a change set to publish or update a marketplace entity.
-- marketplace
-- initiate a change set to publish a new product or update an existing marketplace listing.
-- workflow for isv sellers to publish, update, and manage products on aws marketplace.
-- list software products, offers, and data products available in the aws marketplace catalog.
-- list change sets for tracking publishing and update operations on marketplace entities.
-- list entities available in the marketplace catalog.
-- amazon
-- platform operator managing marketplace listings, policies, and change sets at scale.
+- Marketplace Operator
+- retrieve the resource-based policy attached to a marketplace entity.
+- list entities
+- publish and update marketplace listings.
+- list change sets
+- list change sets in the marketplace catalog.
 - start change set
 - get detailed information about a specific aws marketplace entity including its attributes and status.
-- cancel an active change set that has not yet completed.
-- list change sets
-- list entities
-- manage change sets for publishing and updating marketplace entities.
-- commerce
-- isv
-- Marketplace Operator
 - describe entity
-- get details of a specific marketplace entity.
-- publishing and updating software products and offers on aws marketplace.
-- ISV Seller
-- describe marketplace entity
 - get details of a specific change set.
-- managing resource policies for marketplace entities.
-- describe change set
-- cancel change set
-- get resource policy
-- manage marketplace entities (products, offers).
-- get the status and details of a specific marketplace change set.
-- publish and update marketplace listings.
-- software catalog
-- retrieve the resource-based policy attached to a marketplace entity.
-- list change sets in the marketplace catalog.
-- independent software vendor publishing and managing products on aws marketplace.
+- workflow for isv sellers to publish, update, and manage products on aws marketplace.
+- ISV Seller
+- amazon
+- list entities available in the marketplace catalog.
+- start a change set to publish or update a marketplace entity.
+- list software products, offers, and data products available in the aws marketplace catalog.
 - list marketplace entities
+- publishing and updating software products and offers on aws marketplace.
+- managing resource policies for marketplace entities.
+- describe marketplace entity
+- independent software vendor publishing and managing products on aws marketplace.
+- get resource policy
+- platform operator managing marketplace listings, policies, and change sets at scale.
+- isv
+- marketplace
+- software catalog
+- get the status and details of a specific marketplace change set.
+- cancel an active change set that has not yet completed.
+- describe change set
+- list change sets for tracking publishing and update operations on marketplace entities.
+- manage change sets for publishing and updating marketplace entities.
+- manage marketplace entities (products, offers).
+- get details of a specific marketplace entity.
+- commerce
+- cancel change set
+- initiate a change set to publish a new product or update an existing marketplace listing.
 slug: marketplace-catalog-workflow
 source_filename: marketplace-catalog-workflow.yaml
 source_heading: Capability Spec

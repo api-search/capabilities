@@ -81,48 +81,48 @@ personas: []
 provider_name: Intercom
 provider_slug: intercom
 search_terms:
-- listevents
 - listcontacts
-- listsegments
-- listnewsitems
-- listconversations
-- list articles
-- list admins
 - listarticles
-- list segments
-- create a conversation
-- list conversations
-- getconversation
-- retrieve a conversation
+- intercom
+- customer support
+- createcontact
 - ai
-- createconversation
-- createorupdatecompany
+- api
+- listnewsitems
+- create or update a company
 - create a contact
 - getcontact
-- list data events
-- createcontact
-- messaging
-- list companies
-- identify an admin
-- api
-- listadmins
-- createarticle
-- getme
-- createnewsitem
-- list news items
-- submit a data event
-- create a news item
-- retrieve a contact
-- listcompanies
-- customer support
-- createmessage
-- create an article
-- list contacts
-- customer service
-- create a message
 - submitevent
-- create or update a company
-- intercom
+- list admins
+- create a news item
+- createarticle
+- create a message
+- listadmins
+- getme
+- list conversations
+- identify an admin
+- create a conversation
+- listcompanies
+- list contacts
+- list news items
+- list articles
+- createnewsitem
+- getconversation
+- submit a data event
+- createmessage
+- listevents
+- list segments
+- retrieve a contact
+- createorupdatecompany
+- retrieve a conversation
+- createconversation
+- customer service
+- list data events
+- list companies
+- messaging
+- create an article
+- listsegments
+- listconversations
 slug: intercom-capability
 source_filename: intercom-capability.yaml
 source_heading: Capability Spec

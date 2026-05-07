@@ -29,38 +29,38 @@ personas: []
 provider_name: US Space Command
 provider_slug: us-space-comman
 search_terms:
-- space situational awareness
-- get catalog stats
-- collision warnings and conjunction data
+- space
 - satellite catalog metadata
-- get active conjunction data messages (cdms) — collision warnings for close approaches between tracked space objects.
-- get satellite decay and reentry predictions for space objects
-- search catalog
-- search debris objects
-- search tracked space objects by name, norad id, or country
-- get conjunction warnings
-- space objects with current orbital elements
-- look up satellite catalog metadata for a specific norad catalog id
-- get space catalog statistics
-- satellite decay and reentry data
-- orbital data
-- get a summary count of all tracked space objects (payloads, rocket bodies, debris, unknown) organized by country of origin.
-- list reentries
-- list conjunctions
-- get satellite catalog entry
-- list space objects that have reentered the atmosphere
-- collision avoidance
-- list conjunction data messages by collision probability
-- satellite tracking
-- federal government
 - search satellites
+- search catalog
+- get satellite catalog entry
+- get satellite decay and reentry predictions for space objects
+- list reentries
+- space object catalog statistics
+- search the satellite catalog
+- list space objects that have reentered the atmosphere
 - search for space debris objects tracked by usspacecom
 - get object counts by country and type
-- space
-- search for tracked space objects by name, norad catalog id, country code, or orbital epoch. returns current orbital elements including tle data.
+- orbital data
+- get conjunction warnings
+- look up satellite catalog metadata for a specific norad catalog id
+- get a summary count of all tracked space objects (payloads, rocket bodies, debris, unknown) organized by country of origin.
+- satellite decay and reentry data
+- space situational awareness
+- search tracked space objects by name, norad id, or country
+- get active conjunction data messages (cdms) — collision warnings for close approaches between tracked space objects.
+- list conjunction data messages by collision probability
+- satellite tracking
+- list conjunctions
 - get reentry predictions
-- search the satellite catalog
-- space object catalog statistics
+- get space catalog statistics
+- collision avoidance
+- search debris objects
+- search for tracked space objects by name, norad catalog id, country code, or orbital epoch. returns current orbital elements including tle data.
+- space objects with current orbital elements
+- federal government
+- collision warnings and conjunction data
+- get catalog stats
 - open data
 slug: space-situational-awareness
 source_filename: space-situational-awareness.yaml

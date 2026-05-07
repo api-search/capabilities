@@ -25,18 +25,18 @@ personas: []
 provider_name: Pixelixe
 provider_slug: pixelixe
 search_terms:
+- pixelixe search documents
+- images
 - delete document delete v2
+- pixelixe authenticate api key
+- get document search v2
+- pixelixe
 - graphics
+- api
 - get authentication v2
 - pixelixe delete a document
-- pixelixe
-- pixelixe search documents
-- get document search v2
-- api
 - pixelixe automate image generation
 - post graphic automation v2
-- images
-- pixelixe authenticate api key
 slug: pixelixe-capability
 source_filename: pixelixe-capability.yaml
 source_heading: Capability Spec

@@ -249,91 +249,91 @@ personas: []
 provider_name: Flatfile
 provider_slug: flatfile
 search_terms:
-- flatfile
-- download
-- delete a canvas area
 - get environment agent executions
-- assign agent role
-- create a canvas area
-- get environment agent logs
-- get an agent export
-- get a prompt
+- get an action
+- get publishable key
+- get sftp credentials
+- list apps
+- api
+- update a canvas area
+- create an action
+- get a canvas area
+- get the current account
+- update constraint
+- get an agent log
+- bulk create
+- delete a prompts
+- revert to a specific agent version
+- update an app
+- download
+- get constraint by id
+- get all agent logs in your environment
+- delete a canvas area
 - complete a commit version
-- download an agent export
-- get
+- list agent exports
+- get a commit version
+- create an app
+- get all executions in your environment
+- list agent versions for an agent
+- list agent roles
 - get an app
+- delete
+- get all
+- create several actions
 - data exchange
 - get all actions for the space
-- update an action
-- data ingestion
-- get an agent log
-- api
-- bulk create
+- get agent logs
+- get resolutions
+- update resolution
+- assign role to agent
+- etl
+- list agents
+- get sftp credentials for space
+- remove role from agent
+- create a prompt
+- replay
+- update a prompt
+- add records to clip
+- delete an agent
+- get constraint version
+- get constraint versions
+- flatfile
+- delete agent role
+- delete constraint
+- get logs for an agent
+- update the current account
+- delete an action
+- create constraint
+- get
+- delete an agent export
+- get constraints
 - list
 - update
-- get all executions in your environment
-- update an app
-- list prompts
-- get constraint versions
-- get sftp credentials
-- delete an agent
-- get publishable key
-- get an agent
-- create several actions
-- data onboarding
-- data validation
-- list agent exports
-- replay
-- update the current account
-- list agent versions for an agent
-- remove role from agent
-- list agents
-- complete
 - file import
-- revert
-- delete
-- get current
-- update a prompt
-- get all
-- get logs for an agent
-- get constraint by id
-- update resolution
-- get all agent logs in your environment
-- list apps
-- delete an app
-- get resolutions
-- delete a prompts
+- complete
+- list canvas areas
+- get an agent export
+- create
+- data validation
+- data onboarding
+- update current
+- get environment agent logs
+- create an agent
 - replay a commit version
-- get the current account
-- get constraints
-- etl
 - list versions
 - get agent log
-- create an action
-- get constraint version
-- create a prompt
-- revert to a specific agent version
-- get agent logs
-- create an app
-- delete an agent export
+- revert
+- assign agent role
+- get an agent
+- get current
+- data ingestion
+- delete an app
+- get a prompt
+- download an agent export
+- list prompts
+- create a canvas area
 - obtain the publishable key for a specific environment
-- get an action
-- create an agent
-- delete an action
-- get a canvas area
-- delete constraint
-- update current
-- get a commit version
-- list agent roles
-- assign role to agent
-- update a canvas area
-- update constraint
-- create
-- add records to clip
-- list canvas areas
-- delete agent role
-- get sftp credentials for space
-- create constraint
+- update an action
 slug: flatfile-capability
 source_filename: flatfile-capability.yaml
 source_heading: Capability Spec

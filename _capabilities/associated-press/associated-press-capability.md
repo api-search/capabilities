@@ -93,56 +93,56 @@ personas: []
 provider_name: Associated Press
 provider_slug: associated-press
 search_terms:
-- get account monitors alerts
-- get account monitors sessions session id enable
-- get account downloads
-- associated
-- associated press list your monitors. (formerly /account/monitors/get)
-- associated press view recent sessions that have monitors.
 - get account monitors sessions session id disable
-- associated press single item metadata lookup
-- get content rss
 - associated press view your followed topics
-- get account quotas
-- content
-- get account monitors sessions session id
-- associated press receive a feed of ap content items which have been sent to your organization's ondemand queue.
+- get account
 - associated press view recent alerts
-- press
-- associated press view one session
-- associated press delete a monitor
-- post account monitors monitorid update
-- elections
-- get account monitors sessions
-- get account monitors monitorid
 - associated press enable a monitor on a session
+- get account monitors sessions
+- associated press view available account endpoints
 - news
 - associated press view your api request limits.
-- post account monitors create
-- api
-- associated press receive a feed of incoming ap content
-- get content ondemand
-- get content item id
-- get account plans
-- associated press create a new monitor
-- associated press retrieve a list of available rss xml feeds entitled to your plan.
-- journalism
-- media
-- associated press view your order history.
-- associated press disable a monitor on a session
-- get content feed
 - associated press search for ap content
-- get account monitors
-- get account followedtopics
-- associated press view one monitor
+- associated press retrieve a list of available rss xml feeds entitled to your plan.
+- get account downloads
+- associated
+- api
 - associated press view your plans and meters
+- get content ondemand
+- get account followedtopics
+- associated press view your order history.
+- associated press delete a monitor
+- associated press single item metadata lookup
+- associated press view one monitor
 - associated press receive a rss feed of latest ap content
-- get account
+- post account monitors create
+- journalism
 - delete account monitors monitorid delete
+- get account monitors sessions session id enable
+- get content rss
+- get account monitors monitorid
+- content
+- associated press receive a feed of incoming ap content
+- associated press receive a feed of ap content items which have been sent to your organization's ondemand queue.
+- get account quotas
+- associated press list your monitors. (formerly /account/monitors/get)
+- post account monitors monitorid update
+- press
 - get content search
-- get content rss rss id
 - associated press update a monitor
-- associated press view available account endpoints
+- get content item id
+- associated press disable a monitor on a session
+- associated press create a new monitor
+- elections
+- media
+- get account plans
+- associated press view one session
+- get account monitors sessions session id
+- get account monitors
+- get content rss rss id
+- get account monitors alerts
+- get content feed
+- associated press view recent sessions that have monitors.
 slug: associated-press-capability
 source_filename: associated-press-capability.yaml
 source_heading: Capability Spec

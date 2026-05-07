@@ -21,21 +21,21 @@ personas: []
 provider_name: National Institute of Standards and Technology
 provider_slug: national-institute-of-standards-and-technology
 search_terms:
-- institute
+- cybersecurity
+- getcves
+- of
+- search cpe records
+- and
 - federal government
+- search cve records
+- getcvehistory
 - retrieve cve change history
+- standards
+- institute
+- vulnerabilities
+- getcpes
 - national
 - technology
-- getcvehistory
-- search cpe records
-- getcves
-- getcpes
-- cybersecurity
-- and
-- search cve records
-- vulnerabilities
-- of
-- standards
 slug: national-institute-of-standards-and-technology-capability
 source_filename: national-institute-of-standards-and-technology-capability.yaml
 source_heading: Capability Spec

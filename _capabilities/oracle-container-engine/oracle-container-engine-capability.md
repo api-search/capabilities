@@ -69,44 +69,44 @@ personas: []
 provider_name: Oracle Container Engine for Kubernetes
 provider_slug: oracle-container-engine
 search_terms:
-- listclusters
-- get a cluster
-- listvirtualnodepools
-- installaddon
-- deletecluster
-- install a cluster add-on
-- listaddons
-- container
-- list virtual node pools
-- get a work request
-- engine
-- cloud
-- getworkrequest
-- containers
-- create a node pool
-- update a cluster
-- deletenodepool
-- kubernetes
-- listnodepools
-- createkubeconfig
-- createcluster
-- listworkrequests
-- createnodepool
-- oracle
-- orchestration
-- api
-- create a cluster
-- create kubeconfig content
-- list node pools
-- get a node pool
 - getnodepool
-- delete a cluster
-- delete a node pool
-- updatecluster
-- list add-ons installed on a cluster
 - list work requests
-- list clusters
+- containers
+- list virtual node pools
+- listnodepools
+- deletecluster
+- createkubeconfig
 - getcluster
+- list node pools
+- api
+- listaddons
+- createcluster
+- create a node pool
+- installaddon
+- get a cluster
+- orchestration
+- delete a node pool
+- delete a cluster
+- listclusters
+- get a work request
+- list clusters
+- updatecluster
+- getworkrequest
+- kubernetes
+- container
+- create a cluster
+- listworkrequests
+- create kubeconfig content
+- update a cluster
+- install a cluster add-on
+- cloud
+- engine
+- get a node pool
+- createnodepool
+- listvirtualnodepools
+- deletenodepool
+- list add-ons installed on a cluster
+- oracle
 slug: oracle-container-engine-capability
 source_filename: oracle-container-engine-capability.yaml
 source_heading: Capability Spec

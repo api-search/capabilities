@@ -57,74 +57,74 @@ personas: []
 provider_name: RSC
 provider_slug: rsc
 search_terms:
-- convert a chemical identifier between smiles, inchi, inchikey, and mol file formats
-- check search status
-- search compounds by smiles
-- get compound details by chemspider record id
-- get external database references (pubchem, pubmed, etc.) for a compound
-- list available data sources
-- submit a name-based compound search
-- get compound details
-- convert chemical identifier
-- convert format
-- search compound by formula
-- cheminformatics
-- check status of a compound search query
-- search the rsc chemspider database for compounds by molecular formula (e.g., c6h12o6)
-- get search results
-- list data sources
-- get compound search results
-- chemical research
-- chemical data
-- search the rsc chemspider database for a compound by inchikey
 - search compounds by mass
-- get details for multiple compounds
-- search for compounds by name
-- search for compounds by molecular mass
-- poll search query status
-- convert smiles, inchi, inchikey, or mol format
-- check if an inchikey is valid
-- search for compounds by smiles
-- get detailed properties for multiple compounds at once (up to 100)
-- rsc
-- retrieve details for multiple compounds
-- retrieve compound record ids from a completed chemspider search query
-- retrieve results from a completed compound search
-- submit a smiles-based compound search
-- chemspider
-- get compound batch
-- get external database references for a compound
-- search compound by inchikey
-- validate whether a string is a correctly formed inchikey
 - search compound by inchi
-- list all data sources available in chemspider for filtering searches
-- get all available chemspider data sources
+- get compound search results
+- check status of a compound search query
+- search the rsc chemspider database for a compound by inchikey
+- poll search query status
+- get compound
 - submit a mass-based compound search
-- search the rsc chemspider database for compounds within a molecular mass range
-- get compounds batch
+- search the rsc chemspider database for compounds by molecular formula (e.g., c6h12o6)
+- get compound details
+- get external database references for a compound
+- get external database references (pubchem, pubmed, etc.) for a compound
+- search for compounds by molecular mass
+- retrieve compound record ids from a completed chemspider search query
+- search compound by inchikey
+- get all available chemspider data sources
+- chemical data
+- get detailed chemical properties for a compound by chemspider record id
+- get compound batch
+- get compound details by chemspider record id
+- search the rsc chemspider database for compounds by inchi string
+- get compound references
+- science
+- list all data sources available in chemspider for filtering searches
+- chemistry
+- convert between chemical identifier formats
+- search compounds by formula
+- check if an inchikey is valid
+- convert a chemical identifier between smiles, inchi, inchikey, and mol file formats
+- validate whether a string is a correctly formed inchikey
+- submit a formula-based compound search
+- get search status
 - search the rsc chemspider database for compounds by chemical name
 - search compound by smiles
-- search compound by mass
-- science
-- check the status of a chemspider compound search query
-- submit a formula-based compound search
-- retrieve external references for a compound
-- convert between chemical identifier formats
-- search the rsc chemspider database for compounds by inchi string
-- search compounds by name
-- get detailed chemical properties for a compound by chemspider record id
-- get compound external references
-- search for compounds by molecular formula
-- search compounds by formula
-- get compound
-- search the rsc chemspider database for compounds matching a smiles string
+- submit a smiles-based compound search
+- search compound by formula
+- cheminformatics
+- chemical research
+- submit a name-based compound search
 - retrieve compound properties
-- validate inchikey format
+- search for compounds by name
+- search the rsc chemspider database for compounds within a molecular mass range
+- check the status of a chemspider compound search query
+- get details for multiple compounds
+- check search status
+- search compounds by smiles
+- convert format
 - search compound by name
-- get search status
-- get compound references
-- chemistry
+- get compounds batch
+- get detailed properties for multiple compounds at once (up to 100)
+- rsc
+- search compounds by name
+- retrieve results from a completed compound search
+- search compound by mass
+- get search results
+- search the rsc chemspider database for compounds matching a smiles string
+- convert smiles, inchi, inchikey, or mol format
 - validate inchikey
+- retrieve external references for a compound
+- get compound external references
+- retrieve details for multiple compounds
+- list available data sources
+- list data sources
+- chemspider
+- convert chemical identifier
+- validate inchikey format
+- search for compounds by molecular formula
+- search for compounds by smiles
 slug: chemical-research
 source_filename: chemical-research.yaml
 source_heading: Capability Spec

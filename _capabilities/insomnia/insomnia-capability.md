@@ -50,32 +50,32 @@ provider_name: Insomnia
 provider_slug: insomnia
 search_terms:
 - deletemockroute
-- listmockroutes
-- cli
-- updatemockserver
-- deletemockserver
-- createmockserver
-- listmockserverlogs
-- api design
-- insomnia create mock route
-- insomnia list mock servers
-- updatemockroute
-- listmockservers
-- createmockroute
-- api
 - insomnia delete mock route
-- insomnia
-- insomnia update mock server
-- insomnia delete mock server
-- insomnia update mock route
-- getmockserver
 - testing
+- mocking
+- api
 - platform
 - insomnia create mock server
-- insomnia list mock server logs
-- insomnia list mock routes
+- insomnia delete mock server
+- listmockserverlogs
+- updatemockserver
 - clients
-- mocking
+- getmockserver
+- insomnia list mock server logs
+- api design
+- insomnia
+- createmockserver
+- cli
+- updatemockroute
+- insomnia update mock route
+- deletemockserver
+- createmockroute
+- listmockroutes
+- insomnia create mock route
+- listmockservers
+- insomnia update mock server
+- insomnia list mock routes
+- insomnia list mock servers
 - insomnia get mock server
 slug: insomnia-capability
 source_filename: insomnia-capability.yaml

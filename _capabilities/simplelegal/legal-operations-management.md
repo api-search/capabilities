@@ -77,75 +77,75 @@ personas: []
 provider_name: SimpleLegal
 provider_slug: simplelegal
 search_terms:
-- create matter
-- user account management
-- create a new legal matter
-- get a specific invoice by id
+- get details of a specific invoice including line items and approval status
+- legal invoice ebilling and approval workflow
+- individual invoice management
+- create a new legal matter with name, practice area, budget, and counsel assignment
+- list all recorded payments
+- list all billing and cost codes available for invoice categorization
+- vendor management
 - individual vendor management
-- submit a new legal invoice for ebilling review and approval
-- approve invoice
-- list all legal matters with optional filtering by status or practice area
-- get invoice
-- update matter fields (status, budget, counsel)
+- ebilling
+- record a payment for an approved invoice to track disbursements
 - invoices
+- legal matter lifecycle management
+- legal spend management
+- finance integration
 - get a specific legal matter by id
-- legal operations
-- invoice payment recording
-- individual matter management
-- submit a new invoice for ebilling review
-- list all simplelegal platform users
-- create a new simplelegal platform user
-- add a new outside counsel or vendor
-- update invoice
-- update matter status, budget, or attorney assignments
-- create user
-- approve an invoice and set the approved payment amount
-- update matter
 - update invoice status (approve, reject, hold)
+- create a new platform user
+- record payment
+- update vendor
+- create payment
+- billing and cost code catalog
+- get matter
+- enterprise legal management
+- invoice payment recording
+- list all legal matters with filtering and pagination
+- update matter fields (status, budget, counsel)
+- record a payment for an approved invoice
+- list all legal matters with optional filtering by status or practice area
+- update matter status, budget, or attorney assignments
+- approve invoice
+- get information about a specific vendor or outside counsel firm
+- list matters
+- create invoice
+- outside counsel and legal vendor management
+- list users
+- create a new simplelegal platform user
+- list all recorded invoice payments
+- get a specific invoice by id
+- update matter
+- get vendor
+- submit a new legal invoice for ebilling review and approval
+- vendors
+- list all invoices with filtering by status and matter
+- get a specific vendor by id
+- list all platform users
+- approve an invoice and set the approved payment amount
+- list vendors
+- update invoice
+- individual matter management
+- create matter
+- add a new outside counsel law firm or legal service provider
+- list legal invoices with filtering by status, matter, or vendor
+- create a new legal matter
+- list all simplelegal platform users
+- create user
+- legal operations
+- create vendor
+- list cost codes
+- matter management
+- list invoices
+- get invoice
+- list all outside counsel and legal service vendors
 - get detailed information about a specific legal matter by id
 - list payments
-- list matters
-- matter management
-- create invoice
-- add a new outside counsel law firm or legal service provider
-- enterprise legal management
-- record a payment for an approved invoice
-- billing and cost code catalog
-- list all recorded invoice payments
-- legal invoice ebilling and approval workflow
-- list vendors
-- outside counsel and legal vendor management
-- vendor management
-- list all invoices with filtering by status and matter
-- finance integration
-- legal spend management
-- update vendor
-- create a new legal matter with name, practice area, budget, and counsel assignment
-- get information about a specific vendor or outside counsel firm
-- individual invoice management
-- list all configured billing and cost codes
-- list all recorded payments
-- list all outside counsel and legal service vendors
-- legal matter lifecycle management
-- get vendor
-- get a specific vendor by id
-- vendors
-- ebilling
-- record payment
-- create a new platform user
-- list users
-- list all legal matters with filtering and pagination
-- list invoices
-- get matter
-- create vendor
-- list legal invoices with filtering by status, matter, or vendor
-- get details of a specific invoice including line items and approval status
-- create payment
-- record a payment for an approved invoice to track disbursements
-- list cost codes
-- list all billing and cost codes available for invoice categorization
-- list all platform users
+- user account management
 - update vendor information or status
+- submit a new invoice for ebilling review
+- add a new outside counsel or vendor
+- list all configured billing and cost codes
 slug: legal-operations-management
 source_filename: legal-operations-management.yaml
 source_heading: Capability Spec

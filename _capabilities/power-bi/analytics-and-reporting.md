@@ -46,67 +46,67 @@ personas: []
 provider_name: Power BI
 provider_slug: power-bi
 search_terms:
-- gateway management
-- create workspace
-- data analysis
-- delete dataset
-- get datasources
-- get pages for a report
-- create a new dashboard
 - visualization
-- reporting
-- delete a dataset
 - analytics
-- get report
-- export a report
-- list datasets
-- get workspace users
-- list all dashboards
-- dataset management
-- get tiles for a dashboard
-- report management
-- refresh dataset
-- list all power bi reports
-- dashboards
-- create a new workspace
-- list all reports
-- create dashboard
-- list workspace users
-- clone a report
-- get dataset details
-- list all datasets
-- get report details by id
-- get datasources for a dataset
-- get dashboard details
-- list reports
-- list gateways
-- workspace management
-- individual dataset operations
-- create a dashboard
-- create dataset
-- get refresh history
+- dashboard management
 - list workspaces
-- export report
-- get dashboard
-- power bi
-- get dashboard tiles
-- business intelligence
-- get dataset details by id
-- list data gateways
-- list dashboards
-- get report pages
-- create a new dataset
-- get gateway
-- list all power bi datasets
+- report management
+- individual dataset operations
+- trigger a dataset refresh
+- get dashboard details
+- workspace management
+- get report
+- list all workspaces
+- delete dataset
 - get gateway details
-- get gateway datasources
+- get dataset details
+- list reports
+- power bi
+- get report details by id
+- get dataset refresh history
+- data analysis
 - create a dataset
 - get dataset
-- trigger a dataset refresh
+- get dashboard tiles
+- business intelligence
+- gateway management
+- create workspace
+- list workspace users
+- get dataset details by id
+- get datasources
+- list all power bi reports
+- refresh dataset
+- get report pages
+- create a new dashboard
+- dashboards
+- create dataset
+- create dashboard
+- get datasources for a dataset
+- export a report
+- list all power bi datasets
+- dataset management
+- list gateways
+- list data gateways
+- list dashboards
+- get pages for a report
+- get dashboard
+- list all datasets
+- get gateway datasources
+- get refresh history
+- list all dashboards
+- reporting
+- list datasets
+- export report
+- create a new workspace
+- delete a dataset
+- list all reports
+- get tiles for a dashboard
+- create a dashboard
+- clone a report
 - clone report
-- list all workspaces
-- get dataset refresh history
-- dashboard management
+- create a new dataset
+- get workspace users
+- get gateway
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

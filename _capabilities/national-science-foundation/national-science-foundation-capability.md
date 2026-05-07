@@ -21,18 +21,18 @@ personas: []
 provider_name: National Science Foundation
 provider_slug: national-science-foundation
 search_terms:
-- retrieve project outcomes for an award
-- get awards id format
-- federal government
-- search awards
-- national
 - research
-- api
-- foundation
-- retrieve a single award
 - science
-- get awards format
+- search awards
+- foundation
+- retrieve project outcomes for an award
+- federal government
+- get awards id format
+- api
 - get awards id projectoutcomes format
+- retrieve a single award
+- national
+- get awards format
 slug: national-science-foundation-capability
 source_filename: national-science-foundation-capability.yaml
 source_heading: Capability Spec

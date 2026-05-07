@@ -249,134 +249,134 @@ personas: []
 provider_name: Kion
 provider_slug: kion
 search_terms:
-- createprojectnote
-- listlabels
-- finops
-- deleteproject
-- kion create a user group
-- listcloudrules
-- listfundingsourcepermissionmappings
-- getlabel
-- getproject
-- kion create a compliance standard
-- createoucloudaccessrole
-- kion list compliance standards
-- createfundingsourcepermissionmapping
-- api
-- listcompliancestandards
-- createou
+- kion delete a label
+- getaccount
 - listoupermissionmappings
-- getuser
-- kion delete a funding source
-- kion list project cloud access roles
-- getcompliancestandard
+- kion create a user
+- kion create a compliance standard
+- createusergroup
+- updateaccount
+- api
+- listous
+- listprojectenforcements
 - getcloudrule
-- updateuser
-- deletecompliancecheck
-- createproject
+- createcloudrule
+- deletelabel
+- kion create a funding source
+- deleteuser
+- getlabel
+- kion create a project enforcement
+- kion update an account
+- createprojectpermissionmapping
+- kion create an ou cloud access role
+- kion create a project
+- kion list organizational units
+- kion list funding sources
+- updatelabel
+- deleteproject
+- kion update a cloud rule
+- kion delete a user
 - updateou
 - kion update a compliance standard
-- kion create a user
-- deleteuser
-- createuser
-- kion create an ou permission mapping
-- deletefundingsource
-- kion list funding sources
-- createfundingsource
-- deletelabel
-- kion update a compliance check
-- updateproject
-- updatecompliancecheck
-- kion list organizational units
-- spend
-- createprojectenforcement
-- listcompliancechecks
-- getou
-- kion create a compliance check
-- listprojectcloudaccessroles
-- createoupermissionmapping
-- kion list funding source permission mappings
-- kion create a label
-- listprojects
-- listoucloudaccessroles
-- kion get a cloud rule
-- updatecompliancestandard
+- createaccount
+- createfundingsourcepermissionmapping
 - listfundingsources
+- deleteou
+- kion list project cloud access roles
+- costs
+- finops
+- listprojectpermissionmappings
+- kion create a project permission mapping
+- kion get a compliance check
+- listcompliancestandards
 - kion get a compliance standard
-- listusers
-- kion update a label
-- kion list compliance checks
-- listaccounts
-- kion
-- kion delete a compliance check
+- kion create a project cloud access role
+- kion delete a compliance standard
+- kion list ou cloud access roles
 - kion update a funding source
+- getcompliancestandard
+- kion list project permission mappings
+- updateproject
+- kion list labels
+- kion list project notes
+- listfundingsourcepermissionmappings
+- kion update a compliance check
+- getfundingsource
+- kion get an organizational unit
+- kion update a user
+- kion create a compliance check
+- kion get a user
 - kion delete a project
-- kion create an organizational unit
-- updatefundingsource
-- kion create a funding source permission mapping
+- deletecompliancestandard
+- listaccounts
 - listprojectnotes
+- createuser
+- kion list projects
+- listoucloudaccessroles
+- getproject
+- createcompliancestandard
+- kion create a label
+- createfundingsource
+- kion update a label
+- cloud operations
+- kion list funding source permission mappings
+- kion update a project
+- kion list user groups
+- kion list cloud rules
+- kion create a project note
+- kion get a cloud rule
+- kion create a user group
+- spend
+- kion create an account
+- listcloudrules
 - kion get an account
-- createprojectcloudaccessrole
-- kion create a funding source
-- kion update a cloud rule
-- compliance
-- listusergroups
-- kion delete a user
-- createusergroup
-- createcompliancecheck
-- kion get a label
+- kion list project enforcements
+- updateuser
+- deletecloudrule
+- kion create an ou permission mapping
 - kion delete an organizational unit
-- kion delete a label
+- kion update an organizational unit
+- listusers
+- createlabel
+- deletefundingsource
+- kion create an organizational unit
+- getou
+- kion get a project
+- createou
+- createproject
+- kion create a funding source permission mapping
+- governance
+- createoucloudaccessrole
+- updatecompliancecheck
+- kion list accounts
+- listprojectcloudaccessroles
+- kion delete a funding source
+- kion list ou permission mappings
 - updatecloudrule
+- listcompliancechecks
+- kion
+- updatefundingsource
+- compliance
+- kion list compliance standards
+- createcompliancecheck
+- kion list compliance checks
 - kion list users
 - kion get a funding source
-- updateaccount
-- kion create a project enforcement
-- kion create a project note
-- deleteou
-- kion get a compliance check
-- deletecloudrule
-- kion create an account
-- kion create an ou cloud access role
-- kion update a user
-- kion list user groups
-- costs
-- createcompliancestandard
-- governance
-- kion create a project
-- kion create a project permission mapping
-- listprojectpermissionmappings
-- kion list cloud rules
-- kion update an organizational unit
-- createcloudrule
-- deletecompliancestandard
-- kion list projects
-- createaccount
-- kion get a project
-- kion list labels
-- updatelabel
-- createprojectpermissionmapping
-- kion list ou cloud access roles
-- cloud operations
+- getuser
+- createprojectenforcement
+- updatecompliancestandard
+- createprojectnote
+- kion get a label
 - kion create a cloud rule
-- getaccount
-- kion list accounts
-- listous
-- kion create a project cloud access role
-- getfundingsource
-- kion list project notes
-- createlabel
-- kion list project permission mappings
-- listprojectenforcements
-- kion get a user
-- kion delete a cloud rule
-- kion update a project
-- kion list project enforcements
+- listusergroups
 - getcompliancecheck
-- kion list ou permission mappings
-- kion get an organizational unit
-- kion delete a compliance standard
-- kion update an account
+- kion delete a compliance check
+- listprojects
+- createoupermissionmapping
+- createprojectcloudaccessrole
+- kion delete a cloud rule
+- listlabels
+- deletecompliancecheck
 slug: kion-capability
 source_filename: kion-capability.yaml
 source_heading: Capability Spec

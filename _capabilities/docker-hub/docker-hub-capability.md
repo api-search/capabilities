@@ -213,113 +213,113 @@ personas: []
 provider_name: Docker Hub
 provider_slug: docker-hub
 search_terms:
-- auditlogs listauditlogs
-- list personal access tokens
-- list org members
-- read repository tag
-- get v2 scim 2 0 resourcetypes
-- verify repository immutable tags
-- post v2 invites bulk
-- list audit log actions
-- list repositories in a namespace
-- delete v2 orgs org name groups group name
-- getrepository
+- get v2 orgs org name groups
+- containers
+- api
+- createrepository
+- patch v2 invites id resend
+- put v2 orgs name settings
+- delete v2 orgs org name members username
+- createrepositorygroup
+- registry
+- create an authentication token
+- postusers2falogin
 - get v2 orgs org name members export
 - get groups of an organization
-- update personal access token
-- verifyrepositoryimmutabletags
-- resend an invite
-- export org members csv
-- updaterepositoryimmutabletags
-- list resource types
-- auditlogs listauditactions
-- put v2 orgs org name members username
-- api
-- post v2 orgs name access tokens
-- get v2 orgs name access tokens
-- delete an organization group
-- hub
-- list schemas
-- patch v2 access tokens uuid
-- get v2 access tokens uuid
-- get v2 scim 2 0 schemas id
-- create access token
-- post v2 orgs org name groups
-- update repository immutable tags
-- get v2 orgs org name groups
-- patch v2 orgs org name access tokens access toke
-- createrepository
-- assign a group (team) to a repository for access
-- getrepositorytag
-- create user
-- listrepositorytags
-- postusers2falogin
-- create a new repository
-- delete v2 orgs org name members username
-- post v2 scim 2 0 users
-- get v2 orgs org name members
-- add a member to a group
-- authcreateaccesstoken
-- get personal access token
-- create personal access token
-- get v2 orgs org name groups group name members
-- delete v2 invites id
-- createrepositorygroup
-- get v2 orgs org name invites
-- get organization settings
-- delete access token
-- delete v2 orgs org name groups group name member
-- get service provider config
-- get v2 scim 2 0 resourcetypes name
-- devops
-- update some details for an organization group
-- create an authentication token
-- list members of a group
-- get v2 orgs name settings
-- registry
-- patch v2 invites id resend
-- list audit log events
-- put v2 orgs name settings
-- get a group of an organization
-- remove a user from a group
-- listnamespacerepositories
-- get v2 orgs org name access tokens access token
-- update organization settings
-- list access tokens
-- get v2 access tokens
-- get v2 scim 2 0 users
-- delete personal access token
-- delete v2 access tokens uuid
-- postuserslogin
-- list repository tags
-- delete v2 orgs org name access tokens access tok
-- update org member (role)
-- post v2 orgs org name groups group name members
-- bulk create invites
-- get access token
-- get a schema
-- patch v2 orgs org name groups group name
-- get a resource type
-- containers
-- put v2 scim 2 0 users id
-- second factor authentication
-- docker
-- get repository in a namespace
-- list org invites
-- create a new group
-- put v2 orgs org name groups group name
-- get v2 scim 2 0 users id
-- post v2 access tokens
-- update access token
-- get v2 orgs org name groups group name
-- list users
-- get a user
-- update a user
-- cancel an invite
-- get v2 scim 2 0 schemas
-- remove member from org
-- get v2 scim 2 0 serviceproviderconfig
 - update the details for an organization group
+- list access tokens
+- put v2 orgs org name groups group name
+- create personal access token
+- get service provider config
+- delete v2 orgs org name groups group name
+- update a user
+- create a new group
+- list members of a group
+- docker
+- list org members
+- get v2 orgs name access tokens
+- list schemas
+- get a resource type
+- updaterepositoryimmutabletags
+- export org members csv
+- get v2 scim 2 0 resourcetypes name
+- list personal access tokens
+- list repository tags
+- create access token
+- get v2 scim 2 0 serviceproviderconfig
+- auditlogs listauditlogs
+- post v2 orgs org name groups
+- patch v2 access tokens uuid
+- get a user
+- delete an organization group
+- list users
+- hub
+- list resource types
+- list audit log actions
+- delete v2 access tokens uuid
+- getrepositorytag
+- post v2 scim 2 0 users
+- patch v2 orgs org name groups group name
+- verify repository immutable tags
+- post v2 orgs name access tokens
+- bulk create invites
+- update some details for an organization group
+- create a new repository
+- get organization settings
+- getrepository
+- get v2 orgs name settings
+- postuserslogin
+- post v2 access tokens
+- update personal access token
+- cancel an invite
+- list repositories in a namespace
+- delete access token
+- get v2 orgs org name members
+- patch v2 orgs org name access tokens access toke
+- get v2 orgs org name groups group name
+- remove a user from a group
+- resend an invite
+- get a group of an organization
+- auditlogs listauditactions
+- update access token
+- get v2 scim 2 0 schemas id
+- get v2 scim 2 0 schemas
+- get v2 access tokens uuid
+- assign a group (team) to a repository for access
+- delete personal access token
+- get v2 scim 2 0 users id
+- listrepositorytags
+- get v2 orgs org name invites
+- authcreateaccesstoken
+- get v2 orgs org name access tokens access token
+- remove member from org
+- add a member to a group
+- delete v2 orgs org name groups group name member
+- devops
+- get access token
+- delete v2 invites id
+- update org member (role)
+- listnamespacerepositories
+- second factor authentication
+- put v2 orgs org name members username
+- get a schema
+- get personal access token
+- get v2 scim 2 0 users
+- update repository immutable tags
+- get repository in a namespace
+- get v2 scim 2 0 resourcetypes
+- delete v2 orgs org name access tokens access tok
+- list audit log events
+- read repository tag
+- put v2 scim 2 0 users id
+- verifyrepositoryimmutabletags
+- post v2 invites bulk
+- get v2 access tokens
+- update organization settings
+- get v2 orgs org name groups group name members
+- create user
+- list org invites
+- post v2 orgs org name groups group name members
 slug: docker-hub-capability
 source_filename: docker-hub-capability.yaml
 source_heading: Capability Spec

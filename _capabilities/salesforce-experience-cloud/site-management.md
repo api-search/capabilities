@@ -53,56 +53,56 @@ personas: []
 provider_name: Salesforce Experience Cloud
 provider_slug: salesforce-experience-cloud
 search_terms:
-- experience cloud sites.
-- get cms content
-- get experience cloud site
-- get a specific experience cloud site by id.
-- update cms content
-- digital experience
-- list all experience cloud sites.
-- publish a cms content item.
-- create cms content
-- publishing
-- create a new cms content item.
-- create a new experience cloud site.
-- publish experience cloud site
-- get a cms content item.
-- communities
-- list cms contents
-- update site
-- create experience cloud site
-- content management
-- customer portal
-- list experience cloud sites
-- list all cms delivery channels for content publishing.
-- cms content delivery channels.
-- list cms content items across channels.
-- publish a cms content item to make it live on digital experiences.
-- crm
-- get site
-- list sites
-- partner portal
-- update a cms content item.
-- experience cloud
-- cms content items.
-- update site configuration.
-- salesforce experience cloud
 - sites
-- list all experience cloud digital experience sites.
-- publish an experience cloud site to make it publicly accessible.
-- cms
-- create site
-- create a new cms content item in salesforce experience cloud.
-- publish an experience cloud site.
-- digital experiences
-- publish site
-- list cms content
-- list cms channels
 - list all cms channels.
-- create a new experience cloud digital experience site.
-- list cms content items.
 - publish cms content
 - get an experience cloud site by id.
+- update site configuration.
+- publishing
+- create site
+- get experience cloud site
+- experience cloud
+- get site
+- cms content delivery channels.
+- update cms content
+- customer portal
+- experience cloud sites.
+- create a new experience cloud site.
+- get a cms content item.
+- list cms content
+- list sites
+- communities
+- list all experience cloud sites.
+- crm
+- list cms channels
+- cms content items.
+- list all experience cloud digital experience sites.
+- create cms content
+- create a new cms content item in salesforce experience cloud.
+- list experience cloud sites
+- digital experiences
+- cms
+- create a new experience cloud digital experience site.
+- list cms content items.
+- create experience cloud site
+- publish an experience cloud site to make it publicly accessible.
+- get cms content
+- publish a cms content item.
+- list cms content items across channels.
+- list cms contents
+- digital experience
+- partner portal
+- content management
+- publish experience cloud site
+- publish an experience cloud site.
+- update a cms content item.
+- list all cms delivery channels for content publishing.
+- publish site
+- get a specific experience cloud site by id.
+- publish a cms content item to make it live on digital experiences.
+- salesforce experience cloud
+- update site
+- create a new cms content item.
 slug: site-management
 source_filename: site-management.yaml
 source_heading: Capability Spec

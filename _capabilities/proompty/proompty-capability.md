@@ -65,37 +65,37 @@ personas: []
 provider_name: Proompty
 provider_slug: proompty
 search_terms:
-- post topics topicid documents upload
-- get me
-- put topics topicid
-- get topics topicid prompts
-- create a new prompts within a specified topic. users can send a post request to this endpoint, including the topicid parameter in the url path and a json payload containing the details of the prompt to be created. this payload typically inc
-- retrieves user information within the proompty api system. by sending a get request to this endpoint, users can obtain detailed data pertaining to their profile and associated claims. this includes essential user attributes such as email, f
-- update the details of a specific topic in the proompty api. by sending a put request to this endpoint with the corresponding topicid parameter and the updated topic object in the request body, users can modify the topic's title, description
-- retrieve details about a specific prompt within a designated topic in the proompty api. by sending a get request to this endpoint with the corresponding topicid and promptid parameters, users can access information such as the prompt's cont
-- delete a specific document within a designated topic in the proompty api. users can send a delete request to this endpoint with the relevant topicid and documentid parameters to remove the specified document from the topic. the api responds
-- get topics topicid documents documentid
-- post topics
-- retrieve all topics in the proompty api. by sending a get request to this endpoint, users can access a list of all topics available in the system. the api responds with an array of topic objects in json format, containing the relevant detai
-- retrieve a list of all prompts associated with a specific topic. users can send a get request to this endpoint with the relevant topicid parameter to access comprehensive information about each prompt within the specified topic. the api res
-- remove a specific prompt associated with a particular topic. to utilize this endpoint, users send a delete request with the relevant topicid and promptid parameters. upon successful execution, the specified prompt is permanently deleted fro
-- create a new topic in the proompty api. by sending a post request to this endpoint with the new topic object in the request body, users can create a new topic with the specified attributes. the api responds with the newly created topic obje
-- delete topics topicid prompts promptid
-- artificial intelligence
-- api
-- proompty update a specific prompt within a designated topic. users can send a put request to this endpoint with the corresponding topicid and promptid parameters, along with a json payload containing the updated prompt information. this ena
-- post topics topicid prompts
-- get topics topicid prompts promptid
-- retrieve details about a specific topic in the proompty api. by sending a get request to this endpoint with the corresponding topicid parameter, users can access information such as the topic's title, description, and any associated documen
-- retrieve details about a specific document within a designated topic in the proompty api. by sending a get request to this endpoint with the corresponding topicid and documentid parameters, users can access information such as the document'
 - delete topics topicid documents documentid
-- get topics
-- post topics topicid prompts promptid chat
+- post topics
+- post topics topicid documents upload
 - proompty
+- get topics topicid documents documentid
 - put topics topicid prompts promptid
-- get topics topicid
-- prompts
+- post topics topicid prompts promptid chat
+- api
+- retrieve details about a specific prompt within a designated topic in the proompty api. by sending a get request to this endpoint with the corresponding topicid and promptid parameters, users can access information such as the prompt's cont
+- put topics topicid
+- get topics
+- post topics topicid prompts
+- create a new topic in the proompty api. by sending a post request to this endpoint with the new topic object in the request body, users can create a new topic with the specified attributes. the api responds with the newly created topic obje
+- artificial intelligence
+- get topics topicid prompts
+- delete a specific document within a designated topic in the proompty api. users can send a delete request to this endpoint with the relevant topicid and documentid parameters to remove the specified document from the topic. the api responds
+- remove a specific prompt associated with a particular topic. to utilize this endpoint, users send a delete request with the relevant topicid and promptid parameters. upon successful execution, the specified prompt is permanently deleted fro
+- update the details of a specific topic in the proompty api. by sending a put request to this endpoint with the corresponding topicid parameter and the updated topic object in the request body, users can modify the topic's title, description
+- get topics topicid prompts promptid
+- retrieve details about a specific document within a designated topic in the proompty api. by sending a get request to this endpoint with the corresponding topicid and documentid parameters, users can access information such as the document'
+- retrieves user information within the proompty api system. by sending a get request to this endpoint, users can obtain detailed data pertaining to their profile and associated claims. this includes essential user attributes such as email, f
+- get me
 - upload a document to a specific topic. users can send a post request to this endpoint with the relevant topicid parameter and a document file to upload a new document to the specified topic. the api responds with a json object containing th
+- delete topics topicid prompts promptid
+- retrieve a list of all prompts associated with a specific topic. users can send a get request to this endpoint with the relevant topicid parameter to access comprehensive information about each prompt within the specified topic. the api res
+- proompty update a specific prompt within a designated topic. users can send a put request to this endpoint with the corresponding topicid and promptid parameters, along with a json payload containing the updated prompt information. this ena
+- create a new prompts within a specified topic. users can send a post request to this endpoint, including the topicid parameter in the url path and a json payload containing the details of the prompt to be created. this payload typically inc
+- get topics topicid
+- retrieve all topics in the proompty api. by sending a get request to this endpoint, users can access a list of all topics available in the system. the api responds with an array of topic objects in json format, containing the relevant detai
+- retrieve details about a specific topic in the proompty api. by sending a get request to this endpoint with the corresponding topicid parameter, users can access information such as the topic's title, description, and any associated documen
+- prompts
 slug: proompty-capability
 source_filename: proompty-capability.yaml
 source_heading: Capability Spec

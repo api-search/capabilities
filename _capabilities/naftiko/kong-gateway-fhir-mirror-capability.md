@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- fhir
 - kong
-- healthcare
-- list service routes
-- api integration
 - governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
 - list fhir services
+- fhir
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- list service routes
+- healthcare
+- mcp
+- naftiko
 slug: kong-gateway-fhir-mirror-capability
 source_filename: kong-gateway-fhir-mirror-capability.yaml
 source_heading: Capability Spec

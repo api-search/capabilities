@@ -14,9 +14,9 @@ provider_name: messagebird
 provider_slug: messagebird
 search_terms:
 - getbalance
+- messagebird
 - get account balance
 - api
-- messagebird
 slug: messagebird-capability
 source_filename: messagebird-capability.yaml
 source_heading: Capability Spec

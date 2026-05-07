@@ -29,27 +29,27 @@ personas: []
 provider_name: Google Cloud Natural Language
 provider_slug: google-cloud-natural-language
 search_terms:
-- sentiment analysis
-- classifytext
-- google cloud natural language classify text
-- google cloud natural language annotate text
-- natural language processing
-- google cloud natural language analyze sentiment
-- annotatetext
-- cloud
-- google
-- analyzesyntax
-- natural
 - google cloud natural language analyze syntax
-- google cloud natural language analyze entities
-- machine learning
-- language
+- google cloud natural language analyze sentiment
 - api
+- entity recognition
+- sentiment analysis
+- google
+- google cloud natural language annotate text
+- machine learning
+- google cloud natural language analyze entities
 - text analysis
+- classifytext
+- analyzeentities
+- natural language processing
+- cloud
 - analyzesentiment
 - google cloud
-- analyzeentities
-- entity recognition
+- language
+- analyzesyntax
+- annotatetext
+- google cloud natural language classify text
+- natural
 slug: google-cloud-natural-language-capability
 source_filename: google-cloud-natural-language-capability.yaml
 source_heading: Capability Spec

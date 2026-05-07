@@ -45,30 +45,30 @@ personas: []
 provider_name: Litmus
 provider_slug: litmus
 search_terms:
-- developer tools
-- litmus get campaign email client breakdown
 - litmus get campaign read time distribution
+- quality assurance
+- litmus get a campaign
 - litmus delete a campaign
-- getcampaignclientbreakdown
-- getcampaignreadtimes
-- litmus get campaign device breakdown
-- getcampaign
-- email testing
-- getcampaigndevicebreakdown
-- litmus get campaign geographic breakdown
-- createcampaign
+- getcampaigngeobreakdown
 - api
-- listcampaigns
+- createcampaign
+- litmus
+- getcampaigndevicebreakdown
+- litmus list campaigns
+- getcampaignsummary
+- marketing tools
+- getcampaignclientbreakdown
+- getcampaign
+- developer tools
 - litmus get campaign engagement summary
 - litmus create a campaign
-- getcampaignsummary
-- litmus list campaigns
-- litmus get a campaign
-- litmus
-- marketing tools
-- quality assurance
-- getcampaigngeobreakdown
+- listcampaigns
+- getcampaignreadtimes
 - deletecampaign
+- litmus get campaign email client breakdown
+- litmus get campaign device breakdown
+- litmus get campaign geographic breakdown
+- email testing
 slug: litmus-capability
 source_filename: litmus-capability.yaml
 source_heading: Capability Spec

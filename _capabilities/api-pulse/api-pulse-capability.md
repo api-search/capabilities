@@ -14,14 +14,14 @@ provider_name: API Pulse
 provider_slug: api-pulse
 search_terms:
 - api pulse submit signal
-- submitsignal
 - api evangelist
+- api benchmarking
+- survey
+- api governance
+- api maturity
+- submitsignal
 - api
 - pulse
-- survey
-- api benchmarking
-- api maturity
-- api governance
 slug: api-pulse-capability
 source_filename: api-pulse-capability.yaml
 source_heading: Capability Spec

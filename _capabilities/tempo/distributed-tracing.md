@@ -29,38 +29,38 @@ personas: []
 provider_name: Tempo
 provider_slug: tempo
 search_terms:
-- tag value discovery
-- get trace
-- retrieve a complete distributed trace to see all service calls and latencies
-- list tag values
-- find error traces
-- trace search using traceql
-- tag key discovery
-- trace-based metrics
-- generate time-series metrics from trace data
-- search traces
-- list all values for a trace attribute (e.g. all service names)
-- discover all available trace attribute keys for building queries
-- query metrics
-- list all tag keys present in trace data
-- find traces with errors in a time window
-- monitoring
 - opentelemetry
-- grafana
-- observability
-- list tag keys
-- search for traces matching a traceql query (e.g. find slow requests, errors)
-- search traces with traceql query
-- query error rate
-- get a complete distributed trace by its trace id
-- performance
-- find traces exceeding a minimum duration threshold
-- trace retrieval by id
-- find slow traces
-- distributed tracing
-- debugging
+- trace-based metrics
+- list all values for a trace attribute (e.g. all service names)
+- trace search using traceql
 - generate error rate metrics for a service over time
+- distributed tracing
+- get a complete distributed trace by its trace id
+- search traces
+- discover all available trace attribute keys for building queries
+- list all tag keys present in trace data
+- monitoring
+- search traces with traceql query
+- find traces exceeding a minimum duration threshold
+- grafana
+- find slow traces
+- retrieve a complete distributed trace to see all service calls and latencies
+- find error traces
+- find traces with errors in a time window
+- observability
+- list tag values
+- get trace
 - list distinct values for a tag key
+- tag value discovery
+- generate time-series metrics from trace data
+- debugging
+- list tag keys
+- performance
+- tag key discovery
+- query metrics
+- trace retrieval by id
+- query error rate
+- search for traces matching a traceql query (e.g. find slow requests, errors)
 slug: distributed-tracing
 source_filename: distributed-tracing.yaml
 source_heading: Capability Spec

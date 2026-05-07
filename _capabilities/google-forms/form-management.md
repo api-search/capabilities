@@ -37,51 +37,51 @@ personas: []
 provider_name: Google Forms
 provider_slug: google-forms
 search_terms:
-- update form publish settings
-- form crud operations
-- get a google form's structure and settings
-- google workspace
-- create a new google form with a title
-- get a single form response by id
-- apply batch updates to a form (add/remove/modify items)
-- list responses
-- create form
-- list form responses
-- responses
-- set publish settings
-- set up a pub/sub watch for form changes or new responses
-- data collection
-- google forms
-- questionnaires
-- google
-- managing surveys, questions, and notification watches
-- create forms, collect responses, monitor changes
-- create a notification watch
-- delete a watch to stop notifications
-- list watches
-- renew watch
-- get a single response
-- delete watch
-- create a new form
-- list all responses for a form
-- Data Analyst
-- Form Administrator
-- create watch
-- surveys
+- list all active watches for a form
 - notifications
-- creates and manages forms, monitors responses
+- delete watch
+- set up a pub/sub watch for form changes or new responses
+- get form details
+- forms
+- create a notification watch
+- list responses
+- get form
+- create watch
+- Data Analyst
+- google forms
+- get response
+- renew watch
+- managing surveys, questions, and notification watches
+- surveys
+- create a new google form with a title
+- analyzes form responses and collects data
+- data collection
+- responses
+- create form
+- list all responses for a form
+- questionnaires
+- batch update form
+- google
+- list form responses
 - form response operations
+- update form publish settings
+- set publish settings
+- get a google form's structure and settings
+- Form Administrator
+- creates and manages forms, monitors responses
+- create a new form
+- apply batch updates to a form (add/remove/modify items)
+- list watches
+- create forms, collect responses, monitor changes
+- watch notification operations
 - extend a watch's expiration by seven days
+- delete a watch to stop notifications
+- google workspace
+- get a single form response by id
 - creating and managing forms for data collection
 - delete a watch
-- forms
-- get form
-- get form details
-- batch update form
-- get response
-- list all active watches for a form
-- watch notification operations
-- analyzes form responses and collects data
+- get a single response
+- form crud operations
 slug: form-management
 source_filename: form-management.yaml
 source_heading: Capability Spec

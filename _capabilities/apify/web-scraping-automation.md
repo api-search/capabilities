@@ -22,39 +22,39 @@ personas: []
 provider_name: Apify
 provider_slug: apify
 search_terms:
-- list actors.
-- web automation
-- engineer extracting structured data from websites for analytics pipelines.
-- AI Developer
-- run actor
-- monitor actor runs.
-- engineer building and running production web scrapers on apify.
-- actors
-- check the status of an apify actor run.
-- data extraction
-- Data Engineer
-- abort a running apify actor.
-- abort actor run
-- retrieve scraped data.
-- web scraping
-- apify
-- list actors
-- developer using web scraping to collect training data or rag document sources.
-- data aggregation
-- get run status.
-- run an apify actor with custom input to scrape a website or automate a task.
-- get run
-- get run status
-- browser automation
-- list all available apify actors for web scraping and automation.
-- get scraped data
-- crawling
-- browse and run actors.
-- retrieve structured scraped data from an apify dataset.
-- get dataset items.
 - get dataset items
 - Web Scraping Engineer
 - automation
+- apify
+- get dataset items.
+- developer using web scraping to collect training data or rag document sources.
+- list actors
+- monitor actor runs.
+- AI Developer
+- crawling
+- list actors.
+- retrieve scraped data.
+- run an apify actor with custom input to scrape a website or automate a task.
+- data extraction
+- browse and run actors.
+- engineer building and running production web scrapers on apify.
+- actors
+- browser automation
+- check the status of an apify actor run.
+- abort actor run
+- get scraped data
+- list all available apify actors for web scraping and automation.
+- retrieve structured scraped data from an apify dataset.
+- Data Engineer
+- web automation
+- get run status.
+- get run status
+- engineer extracting structured data from websites for analytics pipelines.
+- run actor
+- data aggregation
+- web scraping
+- get run
+- abort a running apify actor.
 slug: web-scraping-automation
 source_filename: web-scraping-automation.yaml
 source_heading: Capability Spec

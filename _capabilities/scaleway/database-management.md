@@ -41,47 +41,47 @@ personas: []
 provider_name: Scaleway
 provider_slug: scaleway
 search_terms:
-- list available database engine versions
-- get db instance
-- create a new managed postgresql, mysql, or redis instance
 - delete a database instance
-- storage
-- send database alerts or notifications via transactional email
+- database instance management
+- notifications
+- database backup management
+- create a database backup
+- containers
+- get db instance
+- manage a specific database instance
+- list scaleway managed database instances
+- ai
+- scaleway
+- create db backup
+- cloud computing
 - infrastructure
-- create db instance
-- list db backups
-- list database engines
-- serverless
 - send a database alert or notification email
+- serverless
+- create a managed database instance
+- available database engines
+- kubernetes
+- send database alerts or notifications via transactional email
+- backup
 - list database backups
 - european cloud
-- backup
-- get database instance details
-- delete a managed database instance
-- containers
-- list managed database instances
 - redis
-- ai
-- cloud computing
-- kubernetes
-- database instance management
-- database
-- list scaleway managed database instances
-- postgresql
-- send notification email
-- mysql
 - email notification management
-- manage a specific database instance
-- list db instances
-- scaleway
-- notifications
-- create db backup
-- get details of a specific database instance
+- database
+- list managed database instances
+- get database instance details
+- storage
+- create db instance
+- mysql
+- postgresql
+- delete a managed database instance
+- list database engines
+- create a new managed postgresql, mysql, or redis instance
+- list db backups
 - delete db instance
-- create a database backup
-- create a managed database instance
-- database backup management
-- available database engines
+- get details of a specific database instance
+- list db instances
+- list available database engine versions
+- send notification email
 slug: database-management
 source_filename: database-management.yaml
 source_heading: Capability Spec

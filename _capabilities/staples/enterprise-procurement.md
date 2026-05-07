@@ -53,62 +53,62 @@ personas: []
 provider_name: Staples
 provider_slug: staples
 search_terms:
-- office supplies
-- get order status
-- invoice details
-- get order details, line items, and tracking numbers
-- purchase order management
-- view order history with status and cost center filtering
-- get invoice line items and payment details
-- get invoice
-- get full staples product specifications, contract pricing, availability, and related skus
-- list cost centers with budget and spending data
-- get account details
-- get invoice details
-- place order
-- cost center budget management
-- get full product specs, pricing, and availability by sku
-- get order
-- get product
-- track shipment status and delivery events
-- retail
-- search staples advantage product catalog by keyword, category, or brand with in-stock filtering
-- invoicing
-- b2b
-- eprocurement
-- get staples advantage account information including contract number, credit limit, and payment terms
-- enterprise procurement
-- browse staples product category hierarchy including office supplies, technology, furniture, and cleaning
-- view staples advantage order history filterable by status, date range, and cost center
-- get contract terms, credit limits, and account details
-- list all product categories and subcategories
-- list cost centers
-- view invoice history with payment status filtering
-- place a purchase order with delivery address and cost center allocation
-- check staples advantage order status, line items, and carrier tracking numbers
-- list categories
-- invoice and billing management
-- staples
-- get staples invoice line items, amounts, and payment status for reconciliation
-- view all configured cost centers with budget allocations and current spending
-- create order
-- account and contract information
-- list orders
-- shipment delivery tracking
-- submit a staples advantage purchase order with product skus, quantities, delivery address, and cost center allocation
-- list invoices
-- track the delivery status and shipment events for a staples order by tracking number
 - get account
-- order management
-- order status and details
-- track delivery
-- get product details
-- search office supplies by keyword, category, or brand
-- search products
-- search the staples product catalog
-- view staples advantage invoice history with filtering by payment status and date range
-- browse product category hierarchy
+- invoice details
 - procurement
+- order status and details
+- create order
+- get product
+- get product details
+- view staples advantage invoice history with filtering by payment status and date range
+- retail
+- cost center budget management
+- enterprise procurement
+- get account details
+- view all configured cost centers with budget allocations and current spending
+- view invoice history with payment status filtering
+- b2b
+- get full staples product specifications, contract pricing, availability, and related skus
+- order management
+- get contract terms, credit limits, and account details
+- view staples advantage order history filterable by status, date range, and cost center
+- get order details, line items, and tracking numbers
+- list cost centers
+- check staples advantage order status, line items, and carrier tracking numbers
+- get invoice details
+- search office supplies by keyword, category, or brand
+- list categories
+- place a purchase order with delivery address and cost center allocation
+- get staples invoice line items, amounts, and payment status for reconciliation
+- list orders
+- search staples advantage product catalog by keyword, category, or brand with in-stock filtering
+- view order history with status and cost center filtering
+- track shipment status and delivery events
+- get invoice line items and payment details
+- browse staples product category hierarchy including office supplies, technology, furniture, and cleaning
+- list all product categories and subcategories
+- browse product category hierarchy
+- shipment delivery tracking
+- office supplies
+- purchase order management
+- eprocurement
+- list cost centers with budget and spending data
+- invoicing
+- invoice and billing management
+- get staples advantage account information including contract number, credit limit, and payment terms
+- search the staples product catalog
+- get full product specs, pricing, and availability by sku
+- track delivery
+- place order
+- get order status
+- list invoices
+- submit a staples advantage purchase order with product skus, quantities, delivery address, and cost center allocation
+- get invoice
+- get order
+- track the delivery status and shipment events for a staples order by tracking number
+- account and contract information
+- staples
+- search products
 slug: enterprise-procurement
 source_filename: enterprise-procurement.yaml
 source_heading: Capability Spec

@@ -57,38 +57,38 @@ personas: []
 provider_name: Google
 provider_slug: google
 search_terms:
-- listmybookshelves
-- google get bookshelf
+- google move volume in bookshelf
 - listvolumes
-- developer
-- removevolumefrombookshelf
+- google clear volumes from bookshelf
 - listmybookshelfvolumes
-- google add volume to bookshelf
-- cloud
-- getmybookshelf
-- google
-- listbookshelfvolumes
-- google list volumes
-- clearvolumesfrombookshelf
-- t1
-- listbookshelves
-- movevolumeinbookshelf
 - api
+- platform
+- listmybookshelves
+- google
+- addvolumetobookshelf
+- google list bookshelf volumes
+- google add volume to bookshelf
+- getvolume
+- google list my bookshelves
+- t1
+- getmybookshelf
+- listbookshelves
+- google list volumes
+- listbookshelfvolumes
+- google get bookshelf
+- google get my bookshelf
+- removevolumefrombookshelf
+- cloud
+- clearvolumesfrombookshelf
+- movevolumeinbookshelf
+- google remove volume from bookshelf
+- google get volume
+- google list my bookshelf volumes
+- getbookshelf
+- search
+- developer
 - google list bookshelves
 - advertising
-- search
-- getbookshelf
-- google list bookshelf volumes
-- google get my bookshelf
-- google clear volumes from bookshelf
-- google get volume
-- platform
-- getvolume
-- google move volume in bookshelf
-- google list my bookshelf volumes
-- google list my bookshelves
-- google remove volume from bookshelf
-- addvolumetobookshelf
 slug: google-capability
 source_filename: google-capability.yaml
 source_heading: Capability Spec

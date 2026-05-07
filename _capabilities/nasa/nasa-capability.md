@@ -13,13 +13,13 @@ personas: []
 provider_name: NASA
 provider_slug: nasa
 search_terms:
-- government
-- nasa
-- api
 - space
-- nasa get astronomy picture of the day
-- science
 - getapod
+- science
+- nasa
+- nasa get astronomy picture of the day
+- api
+- government
 slug: nasa-capability
 source_filename: nasa-capability.yaml
 source_heading: Capability Spec

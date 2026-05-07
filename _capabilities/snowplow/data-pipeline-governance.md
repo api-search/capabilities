@@ -41,42 +41,42 @@ personas: []
 provider_name: Snowplow
 provider_slug: snowplow
 search_terms:
-- list data products
-- get data structure
-- validate data structure
-- deploy a snowplow event schema to a registry environment (validated, dev, or prod)
-- validate event schemas before deployment
-- deploy schema
-- behavioral data
-- get details of a specific snowplow event schema by its sha-256 hash
-- manage snowplow event schemas
-- get deployment history for a snowplow event schema across validated, dev, and prod environments
-- data pipeline
-- data collection
 - deploy event schemas to registry environments
-- data engineering
-- list data structures
-- data governance
-- list all snowplow event schemas (data structures) in the organization
-- open source
-- get data structure deployments
-- schema management
-- list all snowplow data products (tracking plans) with their event specifications
-- event tracking
-- get a specific event schema
-- view deployment history for an event schema
 - analytics platform
-- get details of a specific snowplow data product (tracking plan)
-- validate a snowplow json event schema before deploying to the registry
-- get deployments
-- create a new snowplow data product (tracking plan) for organizing event specifications
-- validate schema
-- deploy data structure
-- manage tracking plans (data products)
-- get a specific tracking plan
-- create data product
-- snowplow
 - get data product
+- deploy a snowplow event schema to a registry environment (validated, dev, or prod)
+- list all snowplow event schemas (data structures) in the organization
+- list all snowplow data products (tracking plans) with their event specifications
+- data engineering
+- manage snowplow event schemas
+- get deployments
+- create data product
+- validate data structure
+- validate schema
+- data collection
+- event tracking
+- open source
+- get deployment history for a snowplow event schema across validated, dev, and prod environments
+- view deployment history for an event schema
+- validate event schemas before deployment
+- validate a snowplow json event schema before deploying to the registry
+- deploy schema
+- get details of a specific snowplow event schema by its sha-256 hash
+- behavioral data
+- deploy data structure
+- list data structures
+- create a new snowplow data product (tracking plan) for organizing event specifications
+- get a specific event schema
+- get details of a specific snowplow data product (tracking plan)
+- schema management
+- data governance
+- snowplow
+- get a specific tracking plan
+- get data structure
+- data pipeline
+- manage tracking plans (data products)
+- list data products
+- get data structure deployments
 slug: data-pipeline-governance
 source_filename: data-pipeline-governance.yaml
 source_heading: Capability Spec

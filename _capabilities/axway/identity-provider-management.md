@@ -69,46 +69,46 @@ personas: []
 provider_name: Axway
 provider_slug: axway
 search_terms:
-- axway create saml v2.0 idp
-- org idpDownloadCert
-- provider idpCreateSAML
-- provider idpUpdate
-- axway remove consumer idp
 - axway
-- identity provider
-- org idpReloadKeys
-- org idpDownloadDescriptor
-- integration
-- axway create consumer saml v2.0 idp
-- provider idpRemove
-- axway update organizations custom idp
-- org idpUpdate
-- axway get consumer idp
-- axway create consumer oidc idp
-- security
-- enterprise
-- axway get idp descriptor
-- provider idpCreateOIDC
-- axway create oidc idp
-- axway get all organization idps
-- saml
-- sso
-- axway associate with another organizations idp
-- org idpCreateOIDC
-- org idpFind
 - org idpFindOne
-- axway get public idp signing or encryption certificate
+- saml
 - axway get idp
-- api management
-- idp operations
-- org idpRemove
-- oidc
-- provider idpFind
-- org idpCreateSAML
-- org idpAssociate
-- axway reload saml validating certificates
-- axway update consumer idp
 - axway remove organization idp config
+- identity provider
+- sso
+- oidc
+- api management
+- axway create consumer oidc idp
+- org idpReloadKeys
+- idp operations
+- org idpDownloadCert
+- integration
+- axway create oidc idp
+- axway get public idp signing or encryption certificate
+- org idpCreateSAML
+- provider idpRemove
+- org idpUpdate
+- axway create consumer saml v2.0 idp
+- axway get consumer idp
+- axway associate with another organizations idp
+- enterprise
+- provider idpUpdate
+- axway update organizations custom idp
+- axway create saml v2.0 idp
+- axway get all organization idps
+- org idpCreateOIDC
+- provider idpCreateSAML
+- axway reload saml validating certificates
+- axway get idp descriptor
+- org idpRemove
+- org idpDownloadDescriptor
+- org idpAssociate
+- security
+- provider idpFind
+- axway update consumer idp
+- provider idpCreateOIDC
+- org idpFind
+- axway remove consumer idp
 slug: identity-provider-management
 source_filename: identity-provider-management.yaml
 source_heading: Capability Spec

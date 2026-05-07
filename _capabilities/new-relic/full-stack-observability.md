@@ -42,42 +42,42 @@ personas: []
 provider_name: New Relic
 provider_slug: new-relic
 search_terms:
-- get alerts incidents
-- apm
-- get alerts conditions
-- list alert policies
-- list alert violations
-- infrastructure
 - analytics
-- update an alert policy
+- list alert policies
 - devops
-- configuration
-- alerting
-- get alerts policies
-- monitoring
-- manage alert policies
+- get alerts conditions
 - list conditions for a policy
-- list alert conditions
-- new relic
-- delete alerts policy
-- list alert incidents
-- list alert events filtered by product or entity type
-- observability
-- delete an alert policy
-- platform administration
-- create alerts policy
-- get alerts events
-- performance
-- platform
 - get alerts violations
+- list alert conditions
+- get alerts events
+- platform
 - update or delete an alert policy
+- list alert events filtered by product or entity type
+- configuration
+- apm
+- monitoring
 - update alerts policy
+- create a new alert policy
 - analysis
 - policies
+- infrastructure
+- manage alert policies
+- list alert incidents
+- observability
 - list alert events
-- create a new alert policy
+- list alert violations
+- delete alerts policy
+- get alerts policies
+- new relic
 - list alert conditions for a specific policy
+- create alerts policy
+- update an alert policy
+- performance
+- get alerts incidents
+- alerting
+- delete an alert policy
 - list all alert policies
+- platform administration
 slug: full-stack-observability
 source_filename: full-stack-observability.yaml
 source_heading: Capability Spec

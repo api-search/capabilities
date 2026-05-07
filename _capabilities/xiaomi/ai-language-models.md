@@ -17,25 +17,25 @@ personas: []
 provider_name: Xiaomi
 provider_slug: xiaomi
 search_terms:
-- list available xiaomi mimo ai models.
-- chat completion
-- create a chat completion using xiaomi mimo models.
-- language models
+- list mimo models
+- available mimo models.
 - chat completions
 - list all available xiaomi mimo ai models.
-- iot
-- available mimo models.
-- smart home
-- artificial intelligence
-- generate a response from xiaomi mimo ai models (mimo-v2.5-pro, mimo-v2-flash, etc.).
-- machine learning
+- mobile
 - cloud storage
-- list mimo models
+- generate a response from xiaomi mimo ai models (mimo-v2.5-pro, mimo-v2-flash, etc.).
+- artificial intelligence
+- chat completion generation.
+- machine learning
+- language models
+- iot
+- smart home
+- list available xiaomi mimo ai models.
 - consumer electronics
 - list models
-- chat completion generation.
+- chat completion
+- create a chat completion using xiaomi mimo models.
 - create chat completion
-- mobile
 - xiaomi
 slug: ai-language-models
 source_filename: ai-language-models.yaml

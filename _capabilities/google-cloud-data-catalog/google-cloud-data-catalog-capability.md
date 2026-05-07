@@ -49,35 +49,35 @@ personas: []
 provider_name: Google Cloud Data Catalog
 provider_slug: google-cloud-data-catalog
 search_terms:
-- listentrygroups
-- google cloud data catalog list entry groups
-- google cloud data catalog create a tag template
-- getentry
-- searchcatalog
+- google cloud data catalog create an entry
+- google cloud data catalog update an entry
 - deleteentry
 - updateentry
-- cloud
-- google cloud data catalog delete an entry
-- google
 - google cloud data catalog create an entry group
-- google cloud data catalog get a tag template
-- createtagtemplate
-- google cloud data catalog create an entry
-- data governance
-- google cloud data catalog search data catalog
-- createentrygroup
-- google cloud data catalog update an entry
+- metadata
+- google cloud data catalog create a tag template
 - api
+- createentrygroup
+- google cloud data catalog delete an entry
+- google cloud data catalog search data catalog
+- searchcatalog
+- google
+- google cloud data catalog get a tag template
 - listentries
-- google cloud data catalog get an entry
-- createentry
-- data
+- getentry
+- data catalog
+- createtagtemplate
 - google cloud data catalog list entries
 - catalog
-- metadata
+- createentry
+- cloud
+- data governance
 - gettagtemplate
-- data catalog
+- data
 - google cloud
+- google cloud data catalog list entry groups
+- google cloud data catalog get an entry
+- listentrygroups
 slug: google-cloud-data-catalog-capability
 source_filename: google-cloud-data-catalog-capability.yaml
 source_heading: Capability Spec

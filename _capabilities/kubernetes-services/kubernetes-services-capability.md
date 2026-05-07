@@ -37,27 +37,27 @@ personas: []
 provider_name: Kubernetes Services
 provider_slug: kubernetes-services
 search_terms:
-- networking
-- createnamespacedendpointslice
-- container orchestration
-- patchnamespacedendpointslice
-- services
-- kubernetes services list endpointslices in a namespace
 - kubernetes services list endpointslices across all namespaces
+- networking
+- api
+- kubernetes services get an endpointslice
+- deletenamespacedendpointslice
+- services
 - kubernetes
+- kubernetes services list endpointslices in a namespace
+- kubernetes services delete an endpointslice
+- kubernetes services patch an endpointslice
+- service discovery
+- createnamespacedendpointslice
+- load balancing
 - replacenamespacedendpointslice
 - listnamespacedendpointslices
-- service discovery
-- api
-- kubernetes services patch an endpointslice
-- getnamespacedendpointslice
-- deletenamespacedendpointslice
+- patchnamespacedendpointslice
+- container orchestration
+- kubernetes services create an endpointslice
 - kubernetes services replace an endpointslice
 - listendpointslicesallnamespaces
-- kubernetes services delete an endpointslice
-- kubernetes services get an endpointslice
-- load balancing
-- kubernetes services create an endpointslice
+- getnamespacedendpointslice
 slug: kubernetes-services-capability
 source_filename: kubernetes-services-capability.yaml
 source_heading: Capability Spec

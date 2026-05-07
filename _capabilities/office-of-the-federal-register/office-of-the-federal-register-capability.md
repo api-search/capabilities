@@ -61,42 +61,42 @@ personas: []
 provider_name: Office of the Federal Register
 provider_slug: office-of-the-federal-register
 search_terms:
-- listagencies
-- search public inspection documents
-- fetch multiple documents
-- getagency
-- executive orders
-- getdocument
-- federal register
-- getpublicinspectiondocument
-- getissue
-- searchdocuments
-- fetch current public inspection documents
-- searchpublicinspectiondocuments
-- fetch a single document
-- search federal register documents
-- document counts by facet
-- the
-- fetch a single image package
-- regulations
-- getsuggestedsearch
-- office
-- fetch a single public inspection document
-- api
-- of
-- register
-- getimage
-- listsuggestedsearches
-- getdocuments
-- getcurrentpublicinspectiondocuments
-- fetch a federal register issue table of contents
-- federal government
-- getdocumentfacets
-- list agencies
 - fetch a single agency
 - federal
-- list suggested searches
+- getissue
+- getpublicinspectiondocument
+- getsuggestedsearch
+- listagencies
+- api
+- fetch a single document
+- search public inspection documents
+- getagency
+- register
+- fetch a single image package
+- regulations
+- document counts by facet
 - fetch a single suggested search
+- getdocumentfacets
+- search federal register documents
+- federal register
+- fetch a federal register issue table of contents
+- listsuggestedsearches
+- getimage
+- of
+- searchdocuments
+- fetch multiple documents
+- fetch a single public inspection document
+- fetch current public inspection documents
+- executive orders
+- the
+- getcurrentpublicinspectiondocuments
+- list suggested searches
+- getdocument
+- searchpublicinspectiondocuments
+- federal government
+- office
+- getdocuments
+- list agencies
 slug: office-of-the-federal-register-capability
 source_filename: office-of-the-federal-register-capability.yaml
 source_heading: Capability Spec

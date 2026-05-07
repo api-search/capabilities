@@ -89,51 +89,51 @@ personas: []
 provider_name: Envoy
 provider_slug: envoy
 search_terms:
-- getclusters
-- envoy get listener information
-- sethealthcheckok
-- getready
-- sethealthcheckfail
-- getrecentlookups
-- envoy drain listeners
-- envoy get recently looked-up stat names
-- envoy get tls certificate information
-- service mesh
-- getlisteners
-- getruntime
-- getlogging
-- envoy
-- envoy restore health check passing
-- envoy get runtime settings
-- getmemory
-- gethotrestartversion
-- envoy get hot restart compatibility version
-- envoy get server readiness status
-- envoy reset all statistics counters
-- cloud native
-- envoy get upstream cluster information
-- modifyruntime
+- getconfigdump
 - envoy force health check failure
 - getcertificates
-- envoy get current log levels
-- getserverinfo
-- get envoy statistics
-- api
-- drainlisteners
-- getstats
-- dump current envoy configuration
-- getconfigdump
-- proxy
-- shutdown envoy server
-- shutdownserver
-- envoy modify runtime settings
-- setlogging
-- getstatsprometheus
-- resetcounters
+- getlogging
+- getmemory
+- envoy get runtime settings
+- envoy get memory allocation information
 - envoy get statistics in prometheus format
+- api
+- envoy get upstream cluster information
+- getstatsprometheus
+- cloud native
+- shutdownserver
+- service mesh
+- setlogging
+- sethealthcheckok
+- gethotrestartversion
+- getclusters
+- modifyruntime
+- getstats
+- envoy reset all statistics counters
+- envoy get current log levels
+- proxy
+- envoy get tls certificate information
+- getruntime
 - load balancing
 - envoy change log levels
-- envoy get memory allocation information
+- get envoy statistics
+- resetcounters
+- sethealthcheckfail
+- envoy
+- envoy restore health check passing
+- getlisteners
+- getready
+- envoy get hot restart compatibility version
+- dump current envoy configuration
+- envoy get listener information
+- envoy get recently looked-up stat names
+- getrecentlookups
+- shutdown envoy server
+- getserverinfo
+- envoy modify runtime settings
+- envoy drain listeners
+- drainlisteners
+- envoy get server readiness status
 - envoy get server information
 slug: envoy-capability
 source_filename: envoy-capability.yaml

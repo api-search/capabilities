@@ -45,49 +45,49 @@ personas: []
 provider_name: UPS
 provider_slug: ups
 search_terms:
-- get transit time estimates by service
-- logistics
-- validate address
-- shipping rate comparison
-- compare rates across all ups services
-- get rate
-- create a ups shipment and generate a shipping label
-- single service rate
-- schedule a ups pickup
-- pickup cancellation
-- pickup scheduling
-- void/cancel a ups shipment before it is tendered
-- create shipment and generate label
-- cancel pickup
-- get the rate for a specific ups service level
-- e-commerce
-- track a ups package by tracking number for real-time status
-- ups
-- void shipment
-- cancel a scheduled pickup
-- shipment creation
-- track a package by tracking number
-- supply chain
-- fulfillment
-- track shipment
-- validate a shipping address
-- shipping
-- get rate for a specific service
-- package tracking
-- schedule a ups pickup for one or more packages
-- get time in transit
-- get estimated transit days for ups services between two locations
-- fortune 500
 - create shipment
-- shop rates
-- shipment void
-- cancel a previously scheduled ups pickup
+- logistics
+- track shipment
+- pickup cancellation
+- cancel pickup
 - compare shipping rates across all available ups services for a shipment
-- address validation
-- schedule pickup
-- void/cancel a shipment
-- tracking
+- validate a shipping address
+- shipping rate comparison
+- fulfillment
+- get rate
+- supply chain
+- validate address
 - validate a shipping address and classify as residential or commercial
+- create a ups shipment and generate a shipping label
+- create shipment and generate label
+- track a package by tracking number
+- ups
+- track a ups package by tracking number for real-time status
+- cancel a previously scheduled ups pickup
+- package tracking
+- single service rate
+- get transit time estimates by service
+- cancel a scheduled pickup
+- e-commerce
+- get time in transit
+- pickup scheduling
+- get estimated transit days for ups services between two locations
+- void/cancel a shipment
+- shop rates
+- compare rates across all ups services
+- tracking
+- get the rate for a specific ups service level
+- shipment creation
+- void shipment
+- address validation
+- schedule a ups pickup
+- void/cancel a ups shipment before it is tendered
+- shipping
+- schedule a ups pickup for one or more packages
+- schedule pickup
+- shipment void
+- get rate for a specific service
+- fortune 500
 - transit time estimates
 slug: shipping-and-logistics
 source_filename: shipping-and-logistics.yaml

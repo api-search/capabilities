@@ -61,40 +61,40 @@ personas: []
 provider_name: OpenReplay
 provider_slug: openreplay
 search_terms:
-- error tracking
-- get job
-- listlivesessions
-- list jobs
-- listjobs
-- debugging
-- cancel job
-- user behavior
-- searchusers
-- list session events
-- list live sessions
-- listusersessions
 - getproject
-- search live sessions
-- create project
-- open source
-- delete user
-- searchlivesessions
-- list user sessions
-- api
-- listsessionevents
-- search users
-- canceljob
-- listprojects
-- get project
 - session replay
-- list projects
-- getjob
-- get user
-- getuser
-- performance monitoring
 - openreplay
-- createproject
+- searchusers
+- api
+- get job
+- listsessionevents
+- listjobs
+- search live sessions
+- open source
+- list user sessions
+- canceljob
+- getuser
+- delete user
+- listusersessions
 - deleteuser
+- search users
+- error tracking
+- create project
+- list projects
+- cancel job
+- listlivesessions
+- performance monitoring
+- debugging
+- searchlivesessions
+- list jobs
+- get user
+- getjob
+- get project
+- listprojects
+- list session events
+- user behavior
+- list live sessions
+- createproject
 slug: openreplay-capability
 source_filename: openreplay-capability.yaml
 source_heading: Capability Spec

@@ -69,42 +69,42 @@ personas: []
 provider_name: Lufthansa
 provider_slug: lufthansa
 search_terms:
-- referencesairlinesbyairlinecodeget
-- lufthansa aircraft
-- travel
-- operationsflightstatusroutedatebyoriginanddestin
-- aviation
-- flights
-- referencesaircraftbyaircraftcodeget
-- operationsflightstatusbyflightnumberanddateget
-- lufthansa flight status at departure airport
 - referencescitiesbycitycodeget
-- referencesairportsnearestbylatitudeandlongitudeg
-- lufthansa shipment tracking
-- cargogetroutefromdateproductcodebyoriginanddesti
-- lufthansa airports
-- lufthansa nearest airports
-- lufthansa airlines
-- cargoshipmenttrackingbyawbprefixandawbnumberget
-- lufthansa countries
-- offersseatmapsdestinationdatecabinclassbyflightn
-- lufthansa flight schedules
-- lufthansa flight status by route
-- lufthansa cities
-- operationsflightstatusarrivalsbyairportcodeandfr
-- api
-- lufthansa flight status at arrival airport
-- referencesairportsbyairportcodeget
-- lufthansa
-- lufthansa seat maps
-- lufthansa lounges
-- lufthansa flight status
 - airlines
-- operationsschedulesfromdatetimebyoriginanddestin
+- lufthansa countries
+- lufthansa nearest airports
 - referencescountriesbycountrycodeget
+- api
 - lufthansa retrieve all flights
-- offersloungesbylocationget
+- referencesairlinesbyairlinecodeget
+- referencesairportsnearestbylatitudeandlongitudeg
+- operationsschedulesfromdatetimebyoriginanddestin
 - operationsflightstatusdeparturesbyairportcodeand
+- flights
+- lufthansa aircraft
+- lufthansa cities
+- lufthansa flight schedules
+- lufthansa flight status
+- lufthansa airports
+- cargogetroutefromdateproductcodebyoriginanddesti
+- lufthansa shipment tracking
+- lufthansa flight status by route
+- travel
+- aviation
+- lufthansa flight status at departure airport
+- operationsflightstatusbyflightnumberanddateget
+- lufthansa flight status at arrival airport
+- lufthansa lounges
+- referencesaircraftbyaircraftcodeget
+- offersseatmapsdestinationdatecabinclassbyflightn
+- referencesairportsbyairportcodeget
+- operationsflightstatusarrivalsbyairportcodeandfr
+- offersloungesbylocationget
+- lufthansa airlines
+- lufthansa seat maps
+- cargoshipmenttrackingbyawbprefixandawbnumberget
+- lufthansa
+- operationsflightstatusroutedatebyoriginanddestin
 slug: lufthansa-capability
 source_filename: lufthansa-capability.yaml
 source_heading: Capability Spec

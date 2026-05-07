@@ -37,40 +37,40 @@ personas: []
 provider_name: Vehicle API
 provider_slug: vehicle-api
 search_terms:
+- get style photos
+- search dealer inventory by make, model, and location
+- list model years
+- list available model years and trim styles for a make and model
 - edmunds
+- get true market value pricing
+- list models for a vehicle make
+- get vehicle photos
+- inventory
+- get complete vehicle style details including specs, options, and pricing
+- search dealer inventory
+- vehicles
+- list all vehicle makes available in the edmunds catalog
+- list all vehicle makes with optional year and availability filtering
+- get tmv price
+- list all models for a given vehicle make
+- get complete specs, options, and pricing for a vehicle style
+- pricing
+- get photo assets for a vehicle style
 - list model years and trim styles
 - cars
-- list all models for a specific vehicle make
-- get vehicle photos
-- get edmunds true market value price for a vehicle style at a given zip code
-- list models for a vehicle make
-- get edmunds tmv price for a vehicle style by zip code
-- list makes
-- get photo assets for a vehicle style in multiple sizes
-- get complete specs, options, and pricing for a vehicle style
-- list all vehicle makes available in the edmunds catalog
-- get tmv price
-- list model years
-- list all models for a given vehicle make
-- automotive
-- list all vehicle makes with optional year and availability filtering
-- get style
-- inventory
-- vehicles
-- list available model years and trim styles for a make and model
-- search inventory
 - list models
-- search dealer inventory by make, model, and location
-- search dealer inventory
-- list vehicle makes
-- pricing
-- list available years and trim styles for a make/model
-- get complete vehicle style details including specs, options, and pricing
-- get photo assets for a vehicle style
-- get vehicle style details
 - search dealer inventory near a zip code for a specific make, model, and year
-- get true market value pricing
-- get style photos
+- automotive
+- get edmunds true market value price for a vehicle style at a given zip code
+- get style
+- get vehicle style details
+- list makes
+- list available years and trim styles for a make/model
+- get photo assets for a vehicle style in multiple sizes
+- list all models for a specific vehicle make
+- list vehicle makes
+- get edmunds tmv price for a vehicle style by zip code
+- search inventory
 slug: vehicle-data
 source_filename: vehicle-data.yaml
 source_heading: Capability Spec

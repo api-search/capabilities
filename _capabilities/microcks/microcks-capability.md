@@ -193,105 +193,105 @@ personas: []
 provider_name: Microcks
 provider_slug: microcks
 search_terms:
-- deletesecret
-- getsecretscounter
-- delete secret
-- getsecrets
-- getservices
-- activateimportjob
-- import a snapshot
-- updatesecret
-- getserviceslabels
-- api
-- updateimportjob
-- get secret
-- createimportjob
-- searchsecrets
-- get the services counter
-- create a new test
-- get aggregated invocation statistics for a day
-- update service metadata
-- get secrets
-- export a snapshot
-- deleteimportjob
-- uploadartifact
-- update importjob
-- getinvocationstatsbyservice
-- getfeaturesconfig
-- geteventsbytestcase
-- getservicescounter
-- getservice
-- get top invocation statistics for a day
-- cloud native
-- updateservicemetadata
-- importsnapshot
-- get testresult
-- getservicetestconformancemetric
-- searchservices
-- open source
 - get conformance metrics for a service
-- getconformancemetricsaggregation
-- get service
-- exportsnapshot
-- gettestresult
-- getaggregatedinvocationsstats
-- createtest
-- getlatesttestresults
-- get aggregation of conformance metrics
-- create importjob
-- gettopivnocationsstatsbyday
-- download an artifact
+- delete secret
 - mocking
-- getlatestaggregatedinvocationsstats
-- getimportjobs
-- getresource
-- get resource
-- devops
-- getimportjob
-- get events for testcase
-- get importjobs
-- getmessagesbytestcase
-- getsecret
-- get the testresults for service counter
-- deleteservice
-- get messages for testcase
-- get importjob
-- overrideserviceoperation
-- getresourcesbyservice
-- search for services and apis
-- getkeycloakconfig
-- getimportjobcounter
-- get the already used labels for services
-- activate an importjob
-- delete importjob
-- get resources by service
-- get services and apis
-- get testresults by service
-- stopimportjob
-- reporttestcaseresult
-- override service operation
-- get aggregated invocations statistics for latest days
-- createsecret
-- search for secrets
-- get features configuration
-- get authentification configuration
-- get the importjobs counter
-- start an importjob
-- get the secrets counter
-- microcks
-- gettestresultsbyservicecounter
-- startimportjob
-- gettestresultsbyservice
-- get invocation statistics for service
-- stop an importjob
-- downloadartifact
-- api testing
-- update secret
-- create a new secret
-- report and create a new testcaseresult
-- delete service
-- get latest tests results
+- api
+- gettestresult
 - upload an artifact
+- create a new secret
+- getsecretscounter
+- getsecret
+- downloadartifact
+- searchservices
+- gettestresultsbyservicecounter
+- stopimportjob
+- importsnapshot
+- search for services and apis
+- get the importjobs counter
+- deletesecret
+- createimportjob
+- get aggregated invocations statistics for latest days
+- deleteservice
+- getfeaturesconfig
+- getlatesttestresults
+- updateservicemetadata
+- get importjob
+- createsecret
+- api testing
+- geteventsbytestcase
+- update service metadata
+- updateimportjob
+- get aggregated invocation statistics for a day
+- download an artifact
+- getimportjobcounter
+- searchsecrets
+- cloud native
+- overrideserviceoperation
+- get the services counter
+- get the already used labels for services
+- get invocation statistics for service
+- getconformancemetricsaggregation
+- get aggregation of conformance metrics
+- getresource
+- get messages for testcase
+- getimportjobs
+- createtest
+- get services and apis
+- update secret
+- getmessagesbytestcase
+- stop an importjob
+- start an importjob
+- search for secrets
+- exportsnapshot
+- getsecrets
+- get the secrets counter
+- report and create a new testcaseresult
+- get secrets
+- activateimportjob
+- uploadartifact
+- get resources by service
+- getlatestaggregatedinvocationsstats
+- get latest tests results
+- get top invocation statistics for a day
+- update importjob
+- delete importjob
+- microcks
+- get service
+- import a snapshot
+- gettopivnocationsstatsbyday
+- gettestresultsbyservice
+- deleteimportjob
+- getaggregatedinvocationsstats
+- override service operation
+- getservicescounter
+- getserviceslabels
+- getservices
+- delete service
+- reporttestcaseresult
+- get resource
+- create a new test
+- create importjob
+- getinvocationstatsbyservice
+- devops
+- get importjobs
+- get features configuration
+- getimportjob
+- getservice
+- get testresults by service
+- getkeycloakconfig
+- get secret
+- getservicetestconformancemetric
+- get the testresults for service counter
+- get events for testcase
+- get testresult
+- open source
+- get authentification configuration
+- startimportjob
+- activate an importjob
+- export a snapshot
+- getresourcesbyservice
+- updatesecret
 slug: microcks-capability
 source_filename: microcks-capability.yaml
 source_heading: Capability Spec

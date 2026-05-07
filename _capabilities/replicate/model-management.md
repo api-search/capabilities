@@ -73,67 +73,67 @@ personas: []
 provider_name: Replicate
 provider_slug: replicate
 search_terms:
-- manage a specific deployment.
-- delete a deployment.
-- delete a model version.
-- update deployment scaling configuration.
-- list trainings
-- get detailed information about a specific model.
-- list all deployments.
-- get training job status.
-- list all fine-tuning training jobs.
-- language models
-- search the model marketplace.
-- get deployment
-- cancel a running model fine-tuning job.
-- training
 - delete deployment
-- delete a model.
-- create a new model on replicate.
-- get model
 - cancel training
-- deployments
-- delete model
-- manage a specific model version.
-- list all versions of a model.
-- delete model version
-- list deployments
-- search public models by keyword.
-- get configuration details for a deployment.
-- artificial intelligence
-- model deployment
-- create a new model.
-- manage model versions.
-- list all public models.
-- search models
-- create model
-- create a new production model deployment with auto-scaling.
-- machine learning
-- list all training jobs.
+- get details of a specific model version.
+- get deployment
+- list all production model deployments.
 - get deployment configuration.
+- search public models by keyword.
+- get model version
+- search the model marketplace.
+- list all deployments.
 - browse all public ml models available on replicate.
+- cancel a running model fine-tuning job.
+- model deployment
+- get details and openapi schema for a specific model version.
+- list all fine-tuning training jobs.
+- manage model versions.
+- image generation
+- list all versions of a model.
+- get the status and logs of a training job.
+- artificial intelligence
 - get model details.
+- update deployment
+- get detailed information about a specific model.
+- update the scaling configuration of a deployment.
+- list trainings
+- browse and manage ml models.
+- cancel a running training job.
+- machine learning
+- list model versions
+- list deployments
+- delete a deployment.
+- language models
+- update deployment scaling configuration.
+- get configuration details for a deployment.
+- deployments
+- manage a specific training job.
 - model management
 - list models
-- search the replicate model marketplace by keyword.
-- create a new production deployment.
-- create deployment
-- list model versions
-- update deployment
-- cancel a running training job.
-- get details of a specific model version.
-- browse and manage ml models.
-- image generation
-- list all production model deployments.
-- get the status and logs of a training job.
-- update the scaling configuration of a deployment.
-- get model version
-- manage model fine-tuning jobs.
-- get training
 - manage a specific model.
-- get details and openapi schema for a specific model version.
+- delete model version
+- list all training jobs.
+- manage a specific deployment.
+- manage a specific model version.
+- training
+- create model
+- manage model fine-tuning jobs.
+- create a new production deployment.
+- delete a model version.
+- create a new model.
+- get training
+- search models
+- create deployment
+- create a new model on replicate.
+- delete a model.
+- search the replicate model marketplace by keyword.
+- get model
+- create a new production model deployment with auto-scaling.
+- get training job status.
+- delete model
+- list all public models.
 - manage production deployments.
-- manage a specific training job.
 slug: model-management
 source_filename: model-management.yaml
 source_heading: Capability Spec

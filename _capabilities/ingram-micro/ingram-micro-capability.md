@@ -29,19 +29,19 @@ personas: []
 provider_name: ingram-micro
 provider_slug: ingram-micro
 search_terms:
-- getpricing
-- get pricing
+- createorder
 - search product catalog
+- getproductdetails
+- getorderstatus
 - get order status
+- getpricing
+- create order
+- get product details
 - getcatalog
 - micro
 - api
-- getorderstatus
-- getproductdetails
-- get product details
+- get pricing
 - ingram
-- createorder
-- create order
 slug: ingram-micro-capability
 source_filename: ingram-micro-capability.yaml
 source_heading: Capability Spec

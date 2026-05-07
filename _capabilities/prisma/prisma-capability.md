@@ -25,16 +25,16 @@ personas: []
 provider_name: Prisma
 provider_slug: prisma
 search_terms:
-- prisma
-- invalidateallcache
+- prisma execute a proxied database query
 - prisma check accelerate service health
+- gethealthstatus
 - invalidatecachebytags
+- executequery
+- invalidateallcache
+- prisma invalidate cache entries by tags
+- prisma
 - api
 - prisma invalidate all cache entries
-- prisma invalidate cache entries by tags
-- executequery
-- prisma execute a proxied database query
-- gethealthstatus
 slug: prisma-capability
 source_filename: prisma-capability.yaml
 source_heading: Capability Spec

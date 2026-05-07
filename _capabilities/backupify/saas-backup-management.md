@@ -21,35 +21,35 @@ personas: []
 provider_name: Backupify
 provider_slug: backupify
 search_terms:
-- microsoft 365
-- google workspace
-- IT Administrator
-- cloud backup
-- bulk license/unlicense/pause seats
-- saas backup domains
-- saas backup
-- data protection
-- customer backup seats
 - msp
-- list backup domains
-- list seats
+- list all backup seats (users, mailboxes, sites, teams) for a specific customer
+- IT Administrator
+- customer backup seats
+- bulk change seat licenses
+- microsoft 365
+- cloud backup
 - license, unlicense, or pause up to 100 backup seats for a customer in a single operation
-- backupify
-- datto
-- MSP Technician
-- managed service provider technician managing backup coverage across customer accounts
-- cloud-to-cloud backup and recovery for saas platforms
-- domain and seat management for backupify cloud-to-cloud backup
-- list backup seats
-- bulk seat management
+- saas backup
+- saas backup domains
 - list domains
 - list seats for a customer
-- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
-- list all backupify saas backup domains with customer ids and subscription information
-- list all backup customer domains
+- bulk license/unlicense/pause seats
+- MSP Technician
+- data protection
+- list seats
 - bulk seat change
-- list all backup seats (users, mailboxes, sites, teams) for a specific customer
-- bulk change seat licenses
+- cloud-to-cloud backup and recovery for saas platforms
+- list all backup customer domains
+- list backup seats
+- managed service provider technician managing backup coverage across customer accounts
+- list all backupify saas backup domains with customer ids and subscription information
+- list backup domains
+- google workspace
+- enterprise it admin managing backup seat coverage for microsoft 365 or google workspace
+- datto
+- bulk seat management
+- domain and seat management for backupify cloud-to-cloud backup
+- backupify
 slug: saas-backup-management
 source_filename: saas-backup-management.yaml
 source_heading: Capability Spec

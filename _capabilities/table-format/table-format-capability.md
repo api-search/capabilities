@@ -81,54 +81,54 @@ personas: []
 provider_name: Table Format
 provider_slug: table-format
 search_terms:
-- list views
-- get oauth2 token
-- drop namespace
-- drop view
 - commit multi-table transaction
-- table
-- reportmetrics
-- dropview
+- committable
+- update namespace properties
+- updatenamespaceproperties
+- format
+- drop table
+- get catalog configuration
+- drop view
+- committransaction
+- create view
+- api
+- drop namespace
+- getconfig
+- create table
+- create namespace
 - createtable
-- listviews
-- open table format
-- loadtable
+- delta lake
+- commit table update
+- acid transactions
 - load view
 - list tables
-- time travel
-- createnamespace
-- get catalog configuration
-- loadnamespacemetadata
-- listnamespaces
-- create table
-- create view
-- loadview
-- data lake
-- get namespace metadata
-- updatenamespaceproperties
-- commit table update
-- drop table
-- list namespaces
-- api
-- update namespace properties
-- delta lake
-- schema evolution
-- acid transactions
-- format
-- create namespace
-- data lakehouse
-- committable
-- droptable
-- load table
-- createview
-- report table metrics
-- committransaction
-- listtables
-- apache hudi
-- getconfig
-- dropnamespace
 - apache iceberg
+- dropview
+- listtables
+- droptable
 - gettoken
+- get namespace metadata
+- reportmetrics
+- data lakehouse
+- table
+- loadview
+- loadnamespacemetadata
+- load table
+- open table format
+- createnamespace
+- list namespaces
+- data lake
+- apache hudi
+- schema evolution
+- listviews
+- listnamespaces
+- report table metrics
+- list views
+- time travel
+- get oauth2 token
+- dropnamespace
+- loadtable
+- createview
 slug: table-format-capability
 source_filename: table-format-capability.yaml
 source_heading: Capability Spec

@@ -41,31 +41,31 @@ personas: []
 provider_name: Liferay
 provider_slug: liferay
 search_terms:
-- associate a regular role to a user
-- dissociaterolefromuser
-- remove site role association from a user
 - liferay
-- permissions
-- dissociatesiterolefromuser
-- digital experience
-- associatesiteroletouser
-- users
-- associate an organization role to a user
-- getrole
-- roles
-- getroles
-- remove organization role association from a user
-- dxp
-- dissociateorgrolefromuser
+- get a role
 - remove regular role association from a user
 - associate a site role to a user
-- open source
+- permissions
+- users
 - api
-- headless
-- get a role
-- associateorgroletouser
+- dxp
+- associate an organization role to a user
+- open source
+- roles
+- associate a regular role to a user
+- dissociateorgrolefromuser
+- getrole
+- remove organization role association from a user
 - associateroletouser
+- digital experience
+- dissociaterolefromuser
+- associateorgroletouser
+- associatesiteroletouser
+- headless
 - list roles
+- getroles
+- remove site role association from a user
+- dissociatesiterolefromuser
 slug: liferay-capability
 source_filename: liferay-capability.yaml
 source_heading: Capability Spec

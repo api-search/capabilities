@@ -33,23 +33,23 @@ personas: []
 provider_name: PerfectScale
 provider_slug: perfectscale
 search_terms:
-- listclusters
-- retrieve automation audit logs
 - cost optimization
 - remove cluster
-- list cluster workloads
-- get cluster details
-- api
-- listworkloads
-- getautomationauditlogs
 - authenticate
 - perfectscale
-- deletecluster
-- finops
+- get cluster details
+- listworkloads
 - obtain access token
-- getcluster
-- list clusters
+- deletecluster
 - kubernetes
+- getcluster
+- list cluster workloads
+- listclusters
+- api
+- list clusters
+- retrieve automation audit logs
+- getautomationauditlogs
+- finops
 slug: perfectscale-capability
 source_filename: perfectscale-capability.yaml
 source_heading: Capability Spec

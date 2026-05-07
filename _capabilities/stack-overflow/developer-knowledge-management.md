@@ -45,57 +45,57 @@ personas: []
 provider_name: Stack Overflow
 provider_slug: stack-overflow
 search_terms:
-- advanced stack overflow question search
-- developer tools
-- advanced search stackoverflow
-- search questions
-- teams
-- create a new knowledge article in a stack overflow for teams workspace
-- knowledge management
-- browse programming technology tags
-- q&a
-- find similar stackoverflow questions
-- create a new internal knowledge base question
 - stack overflow
+- create team article
+- get team questions
+- find existing similar questions to avoid duplicates
+- create a new internal knowledge base question
+- create team question
+- browse stack overflow tags to explore programming languages, frameworks, and technologies
+- get questions from an internal stack overflow for teams knowledge base
+- create a new question in a stack overflow for teams internal knowledge base
+- get top stackoverflow questions
+- get knowledge articles from a stack overflow for teams workspace
+- teams
+- internal team q&a questions
+- browse programming technology tags
+- browse programming tags
+- questions
+- knowledge management
+- search stack overflow questions by title text and tags
+- internal team knowledge articles
+- knowledge base
+- advanced stack overflow question search
+- q&a
+- get questions
+- get internal documentation articles
+- browse stack overflow questions
+- answers
+- developer tools
+- search stackoverflow
+- get top-voted or most-active stack overflow questions by programming language or topic tag
+- create a new knowledge article in a stack overflow for teams workspace
+- create a new internal documentation article
+- developer community
 - get team articles
 - get internal knowledge base questions
-- search advanced
-- developer community
-- browse stack overflow questions
-- find similar questions before asking new ones
-- browse programming tags
-- get internal documentation articles
-- get top-voted or most-active stack overflow questions by programming language or topic tag
-- advanced search with acceptance and filter options
-- search stack overflow questions by title text and tags
-- browse stack overflow tags to explore programming languages, frameworks, and technologies
-- advanced stack overflow search with filters for accepted answers, minimum answers, tags, and view count
-- get team questions
-- create team question
-- get tags
-- search
-- find existing stack overflow questions similar to a given title to avoid duplicates
-- code
-- get stack overflow programming tags
-- get knowledge articles from a stack overflow for teams workspace
-- knowledge base
-- programming
-- find existing similar questions to avoid duplicates
-- get top stackoverflow questions
-- search stack overflow questions
-- get questions
-- answers
-- questions
-- find similar
-- create a new question in a stack overflow for teams internal knowledge base
-- internal team q&a questions
-- get questions from an internal stack overflow for teams knowledge base
-- create team article
-- create a new internal documentation article
-- search stackoverflow
 - search stack overflow for programming questions, solutions, and code examples by keyword or technology tag
-- internal team knowledge articles
+- advanced search stackoverflow
 - get questions from stack overflow sorted by activity, votes, or creation date
+- search stack overflow questions
+- advanced stack overflow search with filters for accepted answers, minimum answers, tags, and view count
+- find similar questions before asking new ones
+- programming
+- find similar
+- search
+- advanced search with acceptance and filter options
+- get stack overflow programming tags
+- code
+- search advanced
+- get tags
+- find existing stack overflow questions similar to a given title to avoid duplicates
+- find similar stackoverflow questions
+- search questions
 slug: developer-knowledge-management
 source_filename: developer-knowledge-management.yaml
 source_heading: Capability Spec

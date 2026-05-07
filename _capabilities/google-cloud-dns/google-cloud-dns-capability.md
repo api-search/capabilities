@@ -49,34 +49,34 @@ personas: []
 provider_name: Google Cloud DNS
 provider_slug: google-cloud-dns
 search_terms:
-- networking
-- google cloud dns create change
-- google cloud dns update managed zone
-- name resolution
-- createmanagedzone
-- dns
-- deletemanagedzone
-- domain names
-- google cloud dns delete managed zone
-- getmanagedzone
-- google cloud dns list resource record sets
-- cloud
-- createresourcerecordset
 - listpolicies
-- google
-- listchanges
+- networking
 - google cloud dns create resource record set
-- createchange
-- google cloud dns list managed zones
-- api
-- patchmanagedzone
 - google cloud dns list policies
-- google cloud dns list changes
-- listresourcerecordsets
-- google cloud dns get managed zone
-- google cloud dns create managed zone
-- google cloud
+- google cloud dns list resource record sets
 - listmanagedzones
+- api
+- google cloud dns create change
+- google cloud dns get managed zone
+- google cloud dns update managed zone
+- google cloud dns delete managed zone
+- google
+- createchange
+- createresourcerecordset
+- deletemanagedzone
+- google cloud dns create managed zone
+- google cloud dns list managed zones
+- patchmanagedzone
+- domain names
+- listchanges
+- cloud
+- google cloud dns list changes
+- dns
+- createmanagedzone
+- google cloud
+- listresourcerecordsets
+- name resolution
+- getmanagedzone
 slug: google-cloud-dns-capability
 source_filename: google-cloud-dns-capability.yaml
 source_heading: Capability Spec

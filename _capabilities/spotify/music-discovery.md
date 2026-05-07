@@ -65,83 +65,83 @@ personas: []
 provider_name: Spotify
 provider_slug: spotify
 search_terms:
-- add to queue
-- get albums released by an artist, including singles, compilations, and appearances.
-- album details
-- playlists
-- search the spotify music catalog
-- get tracks in a playlist
-- play music
-- user's top artists and tracks
+- get an album's metadata including tracklist, release date, and label.
+- get personalized track recommendations based on seed artists, tracks, and genres. supports audio feature targeting (tempo, energy, danceability).
 - podcasts
-- get the authenticated user's top tracks over short, medium, or long term.
-- playback
-- audio
-- get an artist's profile including genres, popularity, and follower count.
-- get the tracks currently in the spotify playback queue.
-- get track details
-- search
-- get track
-- get top items
-- get top tracks
+- get tracks in a playlist
+- get album
+- get playlist details including all tracks, description, and owner.
+- search the spotify music catalog
+- playback state
+- recommendations
+- skip to next
+- playlist track management
 - search the spotify catalog for tracks, albums, artists, playlists, shows, or episodes. use type='track,album,artist' to search multiple types at once.
-- streaming
-- get album details and tracks
-- personalization
+- get playlist
 - get artist albums
 - get playlist metadata and tracks
-- playback queue
-- add a track or episode to the spotify playback queue by uri.
-- get top artists
-- get the current spotify playback state including track, device, position, and shuffle/repeat settings.
-- spotify
-- get the playback queue
-- skip to the next track in the playback queue.
-- start or resume spotify playback. can play a specific context (album, playlist, artist) or list of track uris.
-- get playback state
-- playback state
-- get the authenticated user's top artists over short, medium, or long term.
-- pause playback
-- add to playlist
-- add a track to the queue
-- track metadata
-- search music
-- get my playlists
-- artist profile
-- get playback queue
-- get playlist items
-- discovery
-- playlist details
-- start or resume playback
-- get playlist details including all tracks, description, and owner.
-- get an album's metadata including tracklist, release date, and label.
-- get current playback state
-- add tracks to playlist
+- get the authenticated user's top tracks over short, medium, or long term.
 - personalized track recommendations
-- get artist
-- get detailed metadata for a spotify track including artists, album, duration, and audio features.
-- recommendations
-- add one or more tracks to a spotify playlist by their uris.
-- get user's top artists or tracks
-- playlist track management
-- get all playlists owned or followed by the authenticated user.
-- get the tracks in a playlist with pagination support.
-- get track recommendations from seeds
-- music
 - get recommendations
-- get current user's playlists
-- get queue
-- get playlist
-- skip to next
-- get playlist tracks
-- get artist details
-- search for tracks, albums, artists, and playlists
-- add tracks to a playlist
-- pause spotify playback on the current active device.
-- get personalized track recommendations based on seed artists, tracks, and genres. supports audio feature targeting (tempo, energy, danceability).
 - current user's playlists
+- playback queue
+- playback
+- get detailed metadata for a spotify track including artists, album, duration, and audio features.
+- add tracks to a playlist
+- get playback queue
+- get user's top artists or tracks
+- get album details and tracks
+- get top tracks
+- get track
+- get the authenticated user's top artists over short, medium, or long term.
+- get the tracks in a playlist with pagination support.
+- add tracks to playlist
+- get current user's playlists
+- start or resume spotify playback. can play a specific context (album, playlist, artist) or list of track uris.
+- get playlist tracks
+- get all playlists owned or followed by the authenticated user.
+- get playback state
+- skip to the next track in the playback queue.
+- get the tracks currently in the spotify playback queue.
+- search music
+- add to playlist
+- spotify
 - start playback
-- get album
+- track metadata
+- audio
+- add to queue
+- get albums released by an artist, including singles, compilations, and appearances.
+- get artist details
+- get top items
+- album details
+- pause spotify playback on the current active device.
+- pause playback
+- search
+- artist profile
+- get track details
+- add one or more tracks to a spotify playlist by their uris.
+- streaming
+- get my playlists
+- get playlist items
+- start or resume playback
+- playlist details
+- get artist
+- play music
+- search for tracks, albums, artists, and playlists
+- get top artists
+- get the playback queue
+- personalization
+- music
+- discovery
+- add a track to the queue
+- get queue
+- get an artist's profile including genres, popularity, and follower count.
+- playlists
+- get the current spotify playback state including track, device, position, and shuffle/repeat settings.
+- get current playback state
+- add a track or episode to the spotify playback queue by uri.
+- get track recommendations from seeds
+- user's top artists and tracks
 slug: music-discovery
 source_filename: music-discovery.yaml
 source_heading: Capability Spec

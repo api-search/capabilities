@@ -33,43 +33,43 @@ personas: []
 provider_name: Bloomberg AIM
 provider_slug: bloomberg-aim
 search_terms:
-- delete order
-- market data
-- get intraday ticks
-- get security reference data for trading
-- get order and route fills
-- get routes from the emsx blotter
-- portfolio management
-- get reference data
-- create a trading order
+- get orders
 - bloomberg
-- get routes from blotter
-- cancel/delete an order
-- fill tracking
-- get intraday tick data for a security
+- portfolio management
+- create order
 - market data for trading decisions
-- get emsx teams
-- trading
+- get order and route fills
+- get reference data
+- get order fills
+- get security reference data for trading
+- get teams
+- order management
+- modify an existing order
+- create a new trading order
 - get security reference data
-- modify order
-- get routes
+- get fills
+- delete order
+- route management
 - get broker strategies
 - financial data
-- get teams
 - route an order to a broker
-- route order
-- create a new trading order
-- get orders from blotter
-- get fills
-- modify an existing order
-- route management
+- fill tracking
+- trading
 - get orders from the emsx blotter
-- create order
-- execution management
+- get emsx teams
+- get orders from blotter
+- get routes from the emsx blotter
+- get intraday ticks
+- market data
+- cancel/delete an order
+- create a trading order
+- get routes from blotter
+- modify order
 - get available broker strategies
-- order management
-- get orders
-- get order fills
+- get intraday tick data for a security
+- execution management
+- route order
+- get routes
 slug: trading-and-execution
 source_filename: trading-and-execution.yaml
 source_heading: Capability Spec

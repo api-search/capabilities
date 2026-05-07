@@ -9,18 +9,18 @@ personas: []
 provider_name: Apache SeaTunnel
 provider_slug: apache-seatunnel
 search_terms:
-- extract, transform, load pipeline processing
-- moving and transforming data between systems
-- data integration
-- engineer managing seatunnel clusters
-- streaming
-- apache
-- etl
-- engineer designing and operating data pipelines
-- elt
-- batch
 - end-to-end data synchronization from source to sink
+- extract, transform, load pipeline processing
+- streaming
+- etl
 - open source
+- apache
+- engineer managing seatunnel clusters
+- data integration
+- elt
+- moving and transforming data between systems
+- batch
+- engineer designing and operating data pipelines
 slug: seatunnel-workflow
 source_filename: seatunnel-workflow.yaml
 source_heading: Capability Spec

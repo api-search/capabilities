@@ -37,53 +37,53 @@ personas: []
 provider_name: vLex
 provider_slug: vlex
 search_terms:
-- legal tech
-- detect and parse legal citations in text using vcite. supports citation formats from 20+ jurisdictions. returns structured citation data with links to referenced documents.
-- get legal document
-- extract named entities without modifying text.
-- key phrase extraction.
-- citation detection
-- extract document entities
-- anonymize personally identifiable information (pii) in a legal document. replaces names, organizations, and other sensitive entities with tokens. pre-trained on legal corpora for high accuracy.
-- detect legal citations using vcite.
-- natural language processing
-- search the vlex legal corpus.
-- get document
-- classify legal text into practice areas.
-- vlex
-- extract key legal phrases from text.
-- get a full legal document by vlex id.
-- semantic search across 100m+ legal documents.
-- retrieve the full text and metadata of a legal document by its vlex id.
-- identify all named entities (persons, organizations, locations, dates) in a legal text without modifying it. useful for document review and entity mapping.
-- text anonymization.
-- compliance
-- legal text classification.
-- anonymize text
-- case law
-- ai
-- legal citation detection.
-- detect citations
-- search documents
-- classify a legal text into practice areas (e.g. employment law, contract law, ip) using vlex's icenet algorithm. returns confidence-ranked classifications.
-- named entity extraction.
-- anonymize legal document
-- anonymize pii in legal text.
-- detect legal citations
 - search legal documents
-- extract legal key phrases
-- extract key legal phrases, terms of art, and important concepts from a legal document.
-- legal research
-- extract key phrases
+- anonymize text
+- ai
+- extract named entities without modifying text.
+- case law
+- get a full legal document by vlex id.
 - classify legal text
-- classification
-- classify document
-- extract entities
-- legal document retrieval.
-- search the vlex corpus of 100+ million legal documents across global jurisdictions. supports natural language queries. filter by jurisdiction (e.g. us, gb), document type (case_law, statute), and date range.
+- classify legal text into practice areas.
+- extract key phrases
+- extract document entities
+- search documents
+- anonymize pii in legal text.
 - privacy
+- compliance
+- legal research
 - nlp
 - anonymization
+- get document
+- retrieve the full text and metadata of a legal document by its vlex id.
+- get legal document
+- search the vlex corpus of 100+ million legal documents across global jurisdictions. supports natural language queries. filter by jurisdiction (e.g. us, gb), document type (case_law, statute), and date range.
+- legal citation detection.
+- anonymize personally identifiable information (pii) in a legal document. replaces names, organizations, and other sensitive entities with tokens. pre-trained on legal corpora for high accuracy.
+- classification
+- anonymize legal document
+- extract entities
+- detect legal citations
+- vlex
+- semantic search across 100m+ legal documents.
+- named entity extraction.
+- extract key legal phrases, terms of art, and important concepts from a legal document.
+- search the vlex legal corpus.
+- classify document
+- natural language processing
+- legal document retrieval.
+- text anonymization.
+- detect citations
+- classify a legal text into practice areas (e.g. employment law, contract law, ip) using vlex's icenet algorithm. returns confidence-ranked classifications.
+- detect legal citations using vcite.
+- extract key legal phrases from text.
+- identify all named entities (persons, organizations, locations, dates) in a legal text without modifying it. useful for document review and entity mapping.
+- detect and parse legal citations in text using vcite. supports citation formats from 20+ jurisdictions. returns structured citation data with links to referenced documents.
+- citation detection
+- legal text classification.
+- legal tech
+- extract legal key phrases
+- key phrase extraction.
 slug: legal-ai-workflow
 source_filename: legal-ai-workflow.yaml
 source_heading: Capability Spec

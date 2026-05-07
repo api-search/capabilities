@@ -29,23 +29,23 @@ personas: []
 provider_name: DNV
 provider_slug: dnv
 search_terms:
-- getfleetstatus
-- getvessel
-- searchvessels
-- get vessel classification details
-- getvesselcertificates
-- maritime
-- api
-- dnv
+- getvesselsurveys
+- vessel
 - classification
 - get vessel survey records and schedule
-- vessel
-- getvesselsurveys
-- energy
+- maritime
 - data platform
+- search vessels by classification criteria
+- energy
+- getfleetstatus
+- get vessel classification details
+- api
 - get vessel classification certificates
 - get fleet classification status
-- search vessels by classification criteria
+- getvesselcertificates
+- dnv
+- searchvessels
+- getvessel
 slug: dnv-capability
 source_filename: dnv-capability.yaml
 source_heading: Capability Spec

@@ -46,49 +46,49 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- supply chain management
-- individual employee details
-- recruiting
+- enterprise software
+- talent management
+- submit application
+- job posting details
+- retrieve pending hr approval requests.
 - list pending approvals
 - search available job postings.
-- submit application
-- peopletools platform services.
-- peoplesoft
-- retrieve benefit enrollment records.
-- search jobs
-- candidate applications
-- process approval
-- talent management
+- get job details
 - retrieve details for a specific employee.
-- job postings
-- hr approval requests
-- campus solutions.
-- approve, deny, or push back an hr approval request.
-- financial and supply chain management.
 - individual approval operations
+- job postings
+- hcm
+- individual employee details
+- hr approval requests
+- get employee
+- crm
+- retrieve payroll run history and status.
 - human capital management.
 - payroll
-- erp
-- retrieve details for a specific job posting.
-- job posting details
 - financial management
-- get job details
-- submit a candidate application for a job posting.
-- crm
-- payroll run history and status
-- hcm
-- retrieve pending hr approval requests.
-- get employee
-- employee records
-- list employees
-- human resources
-- benefit enrollment records
-- retrieve payroll run history and status.
-- campus solutions
-- enterprise software
-- retrieve employee records with optional department and status filters.
-- list benefit enrollments
+- campus solutions.
+- recruiting
+- retrieve benefit enrollment records.
+- candidate applications
 - list payroll runs
+- approve, deny, or push back an hr approval request.
+- list benefit enrollments
+- human resources
+- retrieve details for a specific job posting.
+- list employees
+- search jobs
+- peoplesoft
+- campus solutions
+- financial and supply chain management.
+- payroll run history and status
+- employee records
+- benefit enrollment records
+- erp
+- peopletools platform services.
+- supply chain management
+- process approval
+- submit a candidate application for a job posting.
+- retrieve employee records with optional department and status filters.
 slug: human-resources
 source_filename: human-resources.yaml
 source_heading: Capability Spec

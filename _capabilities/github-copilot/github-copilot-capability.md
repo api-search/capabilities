@@ -85,62 +85,62 @@ personas: []
 provider_name: GitHub Copilot
 provider_slug: github-copilot
 search_terms:
-- getcopilotmetricsfororganization
-- github copilot get latest 28-day organization user-level copilot usage metrics
-- agents
-- getcopilotbillingfororganization
-- getenterpriseuserscopilotusage28day
-- github copilot get latest 28-day enterprise user-level copilot usage metrics
-- developer tools
-- listcopilotseats
-- coding agent
-- code generation
-- removeusersfromcopilotsubscription
-- github copilot remove users from copilot subscription
-- getorganizationcopilotusagedaily
-- getenterprisecopilotusagedaily
-- adduserstocopilotsubscription
-- metrics
-- model context protocol
-- github copilot get copilot seat assignment details for a user
-- ide
-- github copilot set copilot content exclusion rules for an organization
-- ai
-- mcp
-- productivity
-- setcopilotcontentexclusionrules
-- artificial intelligence
-- getenterpriseuserscopilotusagedaily
-- machine learning
-- addteamstocopilotsubscription
-- getcopilotseatforuser
-- api
-- getcopilotmetricsforteam
-- github copilot add users to copilot subscription
-- github copilot get enterprise user-level copilot usage metrics for a specific day
-- github copilot get copilot metrics for a team
-- getorganizationcopilotusage28day
-- github copilot get latest 28-day organization copilot usage metrics
-- getorganizationuserscopilotusagedaily
 - github copilot get organization copilot usage metrics for a specific day
-- custom instructions
-- github copilot get organization user-level copilot usage metrics for a specific day
-- getenterprisecopilotusage28day
-- github copilot get latest 28-day enterprise copilot usage metrics
-- getorganizationuserscopilotusage28day
-- copilot
-- github copilot get copilot content exclusion rules for an organization
-- extensions
-- github copilot list all copilot seat assignments for an organization
-- code review
-- github copilot remove teams from copilot subscription
-- github copilot get copilot billing information for an organization
-- removeteamsfromcopilotsubscription
-- github copilot get enterprise copilot usage metrics for a specific day
 - github
-- github copilot add teams to copilot subscription
-- getcopilotcontentexclusionrules
+- github copilot get enterprise user-level copilot usage metrics for a specific day
+- github copilot get copilot seat assignment details for a user
+- github copilot remove teams from copilot subscription
+- getenterpriseuserscopilotusage28day
+- github copilot get latest 28-day organization user-level copilot usage metrics
+- github copilot get latest 28-day organization copilot usage metrics
+- getenterprisecopilotusage28day
+- setcopilotcontentexclusionrules
+- ai
+- github copilot list all copilot seat assignments for an organization
+- api
+- github copilot remove users from copilot subscription
+- mcp
+- getorganizationuserscopilotusagedaily
+- getenterprisecopilotusagedaily
+- github copilot get organization user-level copilot usage metrics for a specific day
+- artificial intelligence
+- productivity
+- github copilot get copilot billing information for an organization
 - github copilot get copilot metrics for an organization
+- getorganizationcopilotusage28day
+- model context protocol
+- ide
+- machine learning
+- getenterpriseuserscopilotusagedaily
+- removeteamsfromcopilotsubscription
+- github copilot set copilot content exclusion rules for an organization
+- developer tools
+- agents
+- coding agent
+- getcopilotmetricsfororganization
+- getorganizationcopilotusagedaily
+- removeusersfromcopilotsubscription
+- getcopilotcontentexclusionrules
+- github copilot add teams to copilot subscription
+- getcopilotseatforuser
+- code generation
+- adduserstocopilotsubscription
+- copilot
+- listcopilotseats
+- custom instructions
+- github copilot get latest 28-day enterprise copilot usage metrics
+- code review
+- github copilot get copilot metrics for a team
+- getorganizationuserscopilotusage28day
+- metrics
+- github copilot add users to copilot subscription
+- getcopilotbillingfororganization
+- addteamstocopilotsubscription
+- github copilot get enterprise copilot usage metrics for a specific day
+- extensions
+- github copilot get latest 28-day enterprise user-level copilot usage metrics
+- getcopilotmetricsforteam
+- github copilot get copilot content exclusion rules for an organization
 slug: github-copilot-capability
 source_filename: github-copilot-capability.yaml
 source_heading: Capability Spec

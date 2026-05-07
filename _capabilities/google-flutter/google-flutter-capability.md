@@ -29,23 +29,23 @@ personas: []
 provider_name: Google Flutter
 provider_slug: google-flutter
 search_terms:
-- google flutter get package documentation
 - mobile development
-- google flutter get package metadata
-- dart
-- getpackageversion
-- getpackagedocs
 - flutter
-- google
-- api
-- google flutter get package score
-- getpackagescore
-- searchpackages
-- google flutter get package version
 - getpackage
 - cross-platform
-- ui framework
 - open source
+- google flutter get package documentation
+- google
+- getpackageversion
+- google flutter get package version
+- ui framework
+- getpackagedocs
+- getpackagescore
+- google flutter get package metadata
+- api
+- google flutter get package score
+- searchpackages
+- dart
 - google flutter search packages
 slug: google-flutter-capability
 source_filename: google-flutter-capability.yaml

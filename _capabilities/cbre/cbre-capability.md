@@ -13,18 +13,18 @@ personas: []
 provider_name: CBRE
 provider_slug: cbre
 search_terms:
-- get api status
-- commercial real estate
-- getstatus
-- valuation
-- api
-- facilities management
-- investment management
-- real estate
 - analytics
-- fortune 500
+- valuation
+- commercial real estate
 - property management
+- facilities management
+- real estate
 - cbre
+- getstatus
+- investment management
+- get api status
+- api
+- fortune 500
 slug: cbre-capability
 source_filename: cbre-capability.yaml
 source_heading: Capability Spec

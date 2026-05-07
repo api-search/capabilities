@@ -17,29 +17,29 @@ personas: []
 provider_name: Springer Nature
 provider_slug: springer-nature
 search_terms:
-- search open access springer nature content
-- search all springer nature publications by keyword, author, doi, issn, or subject
-- find publications by author
-- research
-- find publications by doi
-- find journal articles
-- search open access
-- open access
-- literature discovery
-- full text
-- search freely available open access articles and chapters
-- search open access articles
-- find articles published in a specific springer nature journal by issn
-- bibliometrics
-- find all springer nature publications by a specific author name
-- look up a specific springer nature publication by its doi
 - scientific publishing
-- search springer nature open access articles and chapters that are freely available. returns metadata with links to full-text html and pdf content.
 - academic publishing
-- search publications
-- scholarly content
 - 'search springer nature''s 14m+ scholarly publications. use field qualifiers: doi:10.1007/..., title:machine learning, author:smith, issn:0028-4793, subject:computer science, onlinedatefrom:2024-01-01'
+- search freely available open access articles and chapters
+- research
+- find journal articles
+- find publications by author
+- full text
+- bibliometrics
+- search open access articles
+- look up a specific springer nature publication by its doi
+- search open access springer nature content
+- search springer nature open access articles and chapters that are freely available. returns metadata with links to full-text html and pdf content.
+- literature discovery
+- find publications by doi
+- scholarly content
+- find all springer nature publications by a specific author name
+- search publications
+- open access
+- search all springer nature publications by keyword, author, doi, issn, or subject
 - search springer nature publication metadata
+- find articles published in a specific springer nature journal by issn
+- search open access
 slug: scholarly-research
 source_filename: scholarly-research.yaml
 source_heading: Capability Spec

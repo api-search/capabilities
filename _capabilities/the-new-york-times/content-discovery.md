@@ -37,48 +37,48 @@ personas: []
 provider_name: The New York Times
 provider_slug: the-new-york-times
 search_terms:
-- get nyt movie critic profiles and biographies.
-- books
-- get current nyt best sellers list for a specific category (e.g., hardcover-fiction).
-- get most emailed articles by section and time period.
-- get most viewed articles by section and time period.
-- movies
-- get the most socially shared nyt articles by section and time period.
-- get best seller history
-- trending
 - nyt best sellers lists.
-- content
-- nyt movie reviews.
+- get most viewed
+- movies
+- get most viewed articles by section and time period.
 - most shared nyt articles.
-- publishing
 - new york times
-- get movie critics
+- most emailed nyt articles.
+- get current nyt best sellers list for a specific category (e.g., hardcover-fiction).
+- get best seller history
+- get most emailed
+- most viewed nyt articles.
+- articles
+- publishing
+- get nyt movie critic profiles and biographies.
 - get the most viewed nyt articles by section and time period.
-- get nyt movie reviews, optionally filtered to critics' picks.
+- search nyt movie reviews by keyword, reviewer name, or date range.
+- journalism
+- get nyt book reviews by title, author, or isbn.
+- get most emailed articles by section and time period.
+- trending
+- content
+- search nyt movie reviews.
+- get the most socially shared nyt articles by section and time period.
+- search movie reviews
 - get current nyt best sellers list.
+- get nyt movie reviews, optionally filtered to critics' picks.
+- get movie critics
+- entertainment
+- nyt book reviews.
+- get book reviews
+- search the full history of nyt best sellers by author, title, or isbn.
+- nyt movie reviews.
+- get movie reviews
+- media
+- get the most emailed nyt articles by section and time period (1 day, 7 days, 30 days).
+- get most shared articles by section and time period.
+- get nyt movie reviews with optional filter for critics' picks.
+- search nyt movie reviews by keyword or reviewer.
 - get best seller list
 - get most shared
-- most emailed nyt articles.
-- get most shared articles by section and time period.
 - news
-- get nyt book reviews by title, author, or isbn.
-- nyt book reviews.
-- get most emailed
-- journalism
-- media
-- search movie reviews
-- most viewed nyt articles.
-- entertainment
-- search nyt movie reviews by keyword, reviewer name, or date range.
-- get nyt movie reviews with optional filter for critics' picks.
-- search the full history of nyt best sellers by author, title, or isbn.
-- search nyt movie reviews.
-- get the most emailed nyt articles by section and time period (1 day, 7 days, 30 days).
-- search nyt movie reviews by keyword or reviewer.
-- get book reviews
-- articles
-- get most viewed
-- get movie reviews
+- books
 slug: content-discovery
 source_filename: content-discovery.yaml
 source_heading: Capability Spec

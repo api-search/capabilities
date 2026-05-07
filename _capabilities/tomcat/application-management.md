@@ -37,40 +37,40 @@ personas: []
 provider_name: Apache Tomcat
 provider_slug: tomcat
 search_terms:
-- get thread dump
-- java
-- get server info
-- list all deployed web applications
+- list all deployed web applications on apache tomcat
 - devops
 - start a stopped application
-- get server os and jvm information
-- list all deployed web applications on apache tomcat
-- deployment
-- apache
-- thread dump
-- get jvm memory and system info
-- open source
-- get a full jvm thread dump from apache tomcat for diagnostics
-- reload a tomcat application to pick up web-inf/classes and lib changes
-- web application listing
-- get jvm memory usage and system properties from apache tomcat
-- start a stopped web application on tomcat
-- web server
-- get jvm thread dump
-- application server
-- get vm info
+- get server info
+- servlet container
+- get thread dump
+- java
 - stop a running application
+- reload an application
+- open source
+- stop a running web application on tomcat (makes it unavailable)
+- get jvm memory and system info
+- server information
+- deployment
+- stop application
+- apache
+- get vm info
+- start a stopped web application on tomcat
+- get jvm memory usage and system properties from apache tomcat
+- web server
+- get apache tomcat server os, jvm, and version information
+- get a full jvm thread dump from apache tomcat for diagnostics
+- list all deployed web applications
+- reload a tomcat application to pick up web-inf/classes and lib changes
+- list applications
 - apache tomcat
+- get server os and jvm information
+- web application listing
 - reload application
 - jvm information
-- servlet container
-- get apache tomcat server os, jvm, and version information
+- get jvm thread dump
+- application server
+- thread dump
 - start application
-- server information
-- list applications
-- stop application
-- reload an application
-- stop a running web application on tomcat (makes it unavailable)
 slug: application-management
 source_filename: application-management.yaml
 source_heading: Capability Spec

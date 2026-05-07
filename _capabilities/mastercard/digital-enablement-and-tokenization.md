@@ -25,43 +25,43 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- push provision a token to a wallet
-- fraud detection
-- tokenize a payment card via mdes
-- bulk tokenization operations
-- submit bulk tokenization request
-- delete a token
-- check card eligibility for digitization
-- submit bulk tokenization
-- financial services
-- click to pay
-- token lifecycle management
-- check digitization eligibility
-- digital payments
-- tokenization
-- suspend an active token
-- enroll issuer click to pay
-- tokenize a payment card
-- suspend token
-- delete token
-- register token requestor
-- push provisioning to wallets
-- credit cards
-- digital identity
-- open banking
-- push provision to wallet
-- push provision a token to a digital wallet
-- mastercard
-- get token details
-- payments
-- tokenize card
-- submit a bulk tokenization request for a card portfolio
-- mdes
-- push provision
-- register a new token requestor
-- check if a card is eligible for digitization
 - enroll an issuer in click to pay
+- delete a token
+- tokenization
+- click to pay
+- submit a bulk tokenization request for a card portfolio
+- fraud detection
+- push provision a token to a wallet
+- push provision a token to a digital wallet
+- enroll issuer click to pay
+- push provisioning to wallets
+- suspend an active token
+- tokenize a payment card via mdes
+- token lifecycle management
+- digital payments
+- submit bulk tokenization request
+- bulk tokenization operations
+- delete token
+- financial services
+- credit cards
+- check card eligibility for digitization
+- mdes
+- register token requestor
+- check digitization eligibility
+- get token details
+- check if a card is eligible for digitization
+- open banking
+- tokenize a payment card
+- register a new token requestor
+- payments
 - pre-digitization eligibility
+- push provision
+- suspend token
+- submit bulk tokenization
+- push provision to wallet
+- digital identity
+- mastercard
+- tokenize card
 slug: digital-enablement-and-tokenization
 source_filename: digital-enablement-and-tokenization.yaml
 source_heading: Capability Spec

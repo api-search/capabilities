@@ -29,24 +29,24 @@ personas: []
 provider_name: Jones Lang LaSalle
 provider_slug: jones-lang-lasalle
 search_terms:
-- createworkorder
-- jones
-- lasalle
-- commercial real estate
-- querylocations
-- work orders
-- api
-- querycontacts
 - create a work order
-- lang
 - queryassets
-- facility management
 - asset management
-- query locations
-- queryworkorders
-- query assets
 - query work orders
+- queryworkorders
+- createworkorder
+- query assets
 - query contacts
+- jones
+- commercial real estate
+- facility management
+- lang
+- api
+- work orders
+- querycontacts
+- lasalle
+- querylocations
+- query locations
 slug: jones-lang-lasalle-capability
 source_filename: jones-lang-lasalle-capability.yaml
 source_heading: Capability Spec

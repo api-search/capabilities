@@ -85,108 +85,108 @@ personas: []
 provider_name: Roku
 provider_slug: roku
 search_terms:
-- get roku device metadata via ecp.
-- adjust the next billing date on a subscription.
-- nabu stop test device
-- lists installed channels on the device.
-- builds and ships roku channels. uses ecp for local-device debugging and nabu cloud for builds and remote test devices.
-- returns a single build.
-- get the active channel on the device.
-- update bill cycle
-- returns video player state.
-- list nabu cloud test devices in a project.
-- cancels a roku pay subscription.
-- get channel cpu and memory metrics (developer mode).
-- launches an installed channel with optional deep-link.
-- suspend or terminate a running channel.
-- monetization
-- read test device logs
-- nabu get build
-- pay issue service credit
-- get device info
-- streaming
-- refund subscription
-- pay validate transaction
-- QA Engineer
-- adjusts the subscription billing date.
-- list builds
-- stop a nabu cloud test device run.
 - issue an account-level service credit.
-- nabu list test devices
-- ecp press key
-- starts a remote test device run.
-- stops a remote test device run.
-- launch an installed channel with optional deep-link.
-- get a nabu cloud build by id.
-- validate refund
-- ecp launch app
-- test automation
-- ecp get device info
-- ecp exit app
-- nabu create test device
-- entertainment
-- runs automated channel certification tests on remote nabu cloud devices and exercises the channel via ecp key injection.
-- stop test device
-- create test device
-- list channel builds in nabu cloud.
-- Billing Operator
-- get active app
-- issues a subscription refund.
-- get build
-- send a remote-control key press to the device.
-- Channel Developer
 - nabu read test device logs
-- roku pay transaction validation.
-- nabu start test device
+- start a nabu cloud test device run.
+- allocate a nabu cloud test device.
+- launch an installed channel with optional deep-link.
+- ecp launch app
+- get active app
 - read logs from a nabu cloud test device run.
-- returns device metadata.
-- nabu cloud remote test devices and runs.
-- connected tv
+- launches an installed channel with optional deep-link.
+- get build
+- returns a single build.
+- validates a roku pay transaction.
+- Billing Operator
 - channel development
-- ecp list installed apps
-- subscription lifecycle and billing.
-- issues an account-level service credit.
-- reads logs from a test device run instance.
-- pay update bill cycle
-- allocates a nabu cloud test device.
-- television
-- list channels installed on the local roku device.
-- sends a remote-control key press.
-- lists nabu cloud test devices in a project.
-- channel builds in nabu cloud.
-- consumer electronics
-- media
-- local device control via ecp.
-- ecp get active app
+- launch app
+- Channel Developer
+- list builds
+- issues a subscription refund.
+- read test device logs
 - refund a roku pay subscription.
-- issue service credit
-- unified channel developer, qa, and billing workflow combining ecp, roku pay, and nabu cloud.
-- pay refund subscription
+- validates roku pay transactions, processes refunds, manages subscriptions, and issues service credits.
+- pay validate refund
 - list test devices
-- cancel a roku pay subscription.
 - nabu list builds
 - roku
-- allocate a nabu cloud test device.
-- ecp query chanperf
-- lists channel builds.
-- returns the currently active channel.
-- launch app
-- press key
-- validates roku pay transactions, processes refunds, manages subscriptions, and issues service credits.
-- pay cancel subscription
-- validates a roku pay transaction.
-- get media player state
 - confirm a roku pay refund.
-- validate transaction
-- validate a roku pay transaction and return entitlement state.
-- start a nabu cloud test device run.
-- cancel subscription
+- get device info
+- issues an account-level service credit.
+- pay issue service credit
+- subscription lifecycle and billing.
+- nabu list test devices
+- press key
+- list channels installed on the local roku device.
+- get media player state
+- allocates a nabu cloud test device.
+- reads logs from a test device run instance.
+- channel builds in nabu cloud.
 - ecp get media player state
-- pay validate refund
-- list installed apps
-- validates a roku pay refund.
-- start test device
+- cancels a roku pay subscription.
+- get channel cpu and memory metrics (developer mode).
+- nabu create test device
+- runs automated channel certification tests on remote nabu cloud devices and exercises the channel via ecp key injection.
+- cancel subscription
+- roku pay transaction validation.
+- returns device metadata.
+- ecp get device info
+- pay validate transaction
+- monetization
+- cancel a roku pay subscription.
+- update bill cycle
+- adjusts the subscription billing date.
 - get the video player state.
+- connected tv
+- returns video player state.
+- lists nabu cloud test devices in a project.
+- ecp list installed apps
+- sends a remote-control key press.
+- get roku device metadata via ecp.
+- nabu cloud remote test devices and runs.
+- list nabu cloud test devices in a project.
+- stops a remote test device run.
+- lists channel builds.
+- local device control via ecp.
+- nabu start test device
+- pay update bill cycle
+- issue service credit
+- list installed apps
+- list channel builds in nabu cloud.
+- validate transaction
+- nabu stop test device
+- validate refund
+- lists installed channels on the device.
+- television
+- send a remote-control key press to the device.
+- ecp query chanperf
+- get a nabu cloud build by id.
+- pay refund subscription
+- starts a remote test device run.
+- suspend or terminate a running channel.
+- adjust the next billing date on a subscription.
+- stop a nabu cloud test device run.
+- streaming
+- nabu get build
+- ecp press key
+- pay cancel subscription
+- start test device
+- validates a roku pay refund.
+- validate a roku pay transaction and return entitlement state.
+- ecp get active app
+- stop test device
+- QA Engineer
+- builds and ships roku channels. uses ecp for local-device debugging and nabu cloud for builds and remote test devices.
+- test automation
+- returns the currently active channel.
+- consumer electronics
+- ecp exit app
+- unified channel developer, qa, and billing workflow combining ecp, roku pay, and nabu cloud.
+- entertainment
+- get the active channel on the device.
+- media
+- refund subscription
+- create test device
 slug: channel-operations
 source_filename: channel-operations.yaml
 source_heading: Capability Spec

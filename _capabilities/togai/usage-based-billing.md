@@ -53,53 +53,53 @@ personas: []
 provider_name: Togai
 provider_slug: togai
 search_terms:
-- create a new billing customer
-- ingest usage events into togai for metering and billing
-- account management
-- create a new customer in togai billing system
-- ingest usage events for metering
-- price plan management
-- list usage meters
-- get customer
-- create a new price plan
-- customer lifecycle management
 - invoice management
-- create a new account
-- list all billing customers in togai
-- togai
-- ingest events
-- list accounts for a togai customer
-- revenue management
-- billing
-- create a new usage-based price plan in togai
-- get customer details
-- list price plans
-- list accounts for a customer
-- get details of a specific togai customer
-- saas
-- metering
-- list all billing customers
-- list invoices for a togai account
 - create customer
-- list usage meters for a togai event schema
-- create price plan
-- usage-based pricing
-- list all togai price plans
-- list customers
-- create account
-- list invoices for an account
-- grant credit to an account
-- list accounts
-- list invoices
-- list all price plans
-- usage event ingestion
-- list credits
-- grant credit
-- grant billing credits to a togai account
-- individual customer operations
-- credit management
-- fintech
 - list credits for an account
+- get customer details
+- usage-based pricing
+- create a new billing customer
+- list accounts for a customer
+- list all price plans
+- credit management
+- list all billing customers in togai
+- list price plans
+- billing
+- togai
+- account management
+- list accounts
+- individual customer operations
+- list credits
+- saas
+- create price plan
+- list usage meters for a togai event schema
+- fintech
+- create a new customer in togai billing system
+- list invoices for an account
+- create a new account
+- create account
+- customer lifecycle management
+- list invoices for a togai account
+- create a new usage-based price plan in togai
+- get details of a specific togai customer
+- get customer
+- ingest usage events for metering
+- grant billing credits to a togai account
+- ingest events
+- list customers
+- metering
+- list accounts for a togai customer
+- ingest usage events into togai for metering and billing
+- create a new price plan
+- list all billing customers
+- list usage meters
+- price plan management
+- revenue management
+- list invoices
+- list all togai price plans
+- grant credit
+- grant credit to an account
+- usage event ingestion
 slug: usage-based-billing
 source_filename: usage-based-billing.yaml
 source_heading: Capability Spec

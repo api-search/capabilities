@@ -45,29 +45,29 @@ personas: []
 provider_name: Pexels
 provider_slug: pexels
 search_terms:
-- getmycollections
-- photos
-- searchvideos
-- getcuratedphotos
-- get photo
-- curated photos
-- getphoto
 - pexels
-- getvideo
-- videos
-- popular videos
 - getfeaturedcollections
-- search photos
-- collection media
-- search videos
-- get video
-- getcollectionmedia
+- photos
 - api
-- my collections
-- searchphotos
-- getpopularvideos
-- stock media
+- getcollectionmedia
+- getvideo
 - featured collections
+- search videos
+- curated photos
+- popular videos
+- search photos
+- getpopularvideos
+- getcuratedphotos
+- stock media
+- searchvideos
+- searchphotos
+- videos
+- my collections
+- getphoto
+- get video
+- get photo
+- getmycollections
+- collection media
 slug: pexels-capability
 source_filename: pexels-capability.yaml
 source_heading: Capability Spec

@@ -45,33 +45,33 @@ personas: []
 provider_name: F5 Load Balancer
 provider_slug: f5-load-balancer
 search_terms:
-- networking
-- balancer
-- f5
-- submitdeclaration
-- f5 load balancer partially update the as3 declaration
-- gettask
-- deletetenantdeclaration
-- application delivery
-- getdeclaration
-- f5 load balancer retrieve declaration for a specific tenant
-- getinfo
-- f5 load balancer remove a specific tenant declaration
-- f5 load balancer retrieve the current as3 declaration
-- f5 load balancer get status of a specific task
-- big-ip
-- api
 - listtasks
-- f5 load balancer list all as3 tasks
-- load balancer
-- load
-- patchdeclaration
+- networking
+- deletetenantdeclaration
+- getdeclaration
+- f5 load balancer partially update the as3 declaration
+- api
+- f5 load balancer remove the as3 declaration
+- application delivery
+- balancer
+- gettask
 - gettenantdeclaration
+- deletedeclaration
+- f5 load balancer remove a specific tenant declaration
+- submitdeclaration
+- patchdeclaration
 - traffic management
 - f5 load balancer submit an as3 declaration
-- f5 load balancer remove the as3 declaration
-- deletedeclaration
+- getinfo
+- f5
+- big-ip
 - f5 load balancer get as3 extension information
+- f5 load balancer get status of a specific task
+- load
+- load balancer
+- f5 load balancer retrieve declaration for a specific tenant
+- f5 load balancer list all as3 tasks
+- f5 load balancer retrieve the current as3 declaration
 slug: f5-load-balancer-capability
 source_filename: f5-load-balancer-capability.yaml
 source_heading: Capability Spec

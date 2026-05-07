@@ -21,21 +21,21 @@ personas: []
 provider_name: Google Cloud Translation API
 provider_slug: google-translate
 search_terms:
+- translatetext
+- localization
+- google cloud translation api list supported languages
+- translation
 - detectlanguage
 - google cloud translation api detect language
 - internationalization
-- natural language processing
-- google
-- api
 - machine translation
-- translation
-- google cloud translation api list supported languages
 - language detection
-- translatetext
+- google
 - google cloud
-- localization
 - listlanguages
 - google cloud translation api translate text
+- natural language processing
+- api
 - translate
 slug: google-translate-capability
 source_filename: google-translate-capability.yaml

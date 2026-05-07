@@ -54,34 +54,34 @@ provider_name: National Park Service
 provider_slug: national-park-service
 search_terms:
 - get alerts
-- retrieve news releases
-- park
-- get events
-- retrieve parks
-- retrieve events
-- list topics covered by nps
-- get parks
-- conservation
-- retrieve visitor centers
-- get articles
-- get people
-- national
-- retrieve campgrounds
 - api
 - retrieve historical people
-- get visitorcenters
-- service
-- retrieve alerts
-- list activities available within parks
-- parks
-- federal government
-- get activities
 - get topics
-- get places
-- get campgrounds
-- get newsreleases
-- retrieve articles
+- conservation
+- retrieve events
 - retrieve places
+- service
+- get campgrounds
+- get visitorcenters
+- retrieve parks
+- retrieve campgrounds
+- park
+- get articles
+- retrieve articles
+- list topics covered by nps
+- get events
+- get people
+- retrieve visitor centers
+- get parks
+- parks
+- retrieve news releases
+- list activities available within parks
+- retrieve alerts
+- federal government
+- get newsreleases
+- get activities
+- get places
+- national
 slug: national-park-service-capability
 source_filename: national-park-service-capability.yaml
 source_heading: Capability Spec

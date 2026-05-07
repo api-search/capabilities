@@ -41,47 +41,47 @@ personas: []
 provider_name: Walgreens
 provider_slug: walgreens
 search_terms:
-- search and find walgreens pharmacy locations
-- list store numbers
-- attach patient to appointment
+- get complete list of all walgreens store numbers
+- prescriptions
+- find nearby walgreens pharmacy locations by address or coordinates
+- get detailed hours and services for a specific walgreens
+- get pharmacy details
 - get available vaccine appointment timeslots near a location
-- immunizations
-- get details for a specific pharmacy location
+- hold a vaccine appointment timeslot
+- register patient for vaccine appointment
+- get detailed hours, services, and contact information for a specific walgreens pharmacy
+- find available vaccine appointment times at walgreens locations near a specified zip code. returns locations with available dates and time slots.
+- get store details
+- find walgreens pharmacy locations near an address, zip code, or coordinates. supports filtering by services like 24-hour pharmacy, drive-thru, or flu shots.
+- retail
 - check vaccine eligibility
-- confirm a vaccine appointment
+- reserve a specific vaccine appointment slot at a walgreens location
+- create and manage vaccine appointments
+- attach patient to appointment
+- pharmacy
+- finalize a held vaccine appointment to complete the booking
 - store locator
-- walgreens
 - determine which vaccines a patient is eligible for
 - healthcare
-- retail
-- get complete list of all walgreens store numbers
-- find nearby walgreens pharmacy locations by address or coordinates
-- confirm vaccine appointment
-- get detailed hours and services for a specific walgreens
-- find available vaccine appointment times at walgreens locations near a specified zip code. returns locations with available dates and time slots.
-- finalize a vaccine appointment booking
-- finalize a held vaccine appointment to complete the booking
-- pharmacy
-- hold a vaccine appointment timeslot
-- get detailed hours, services, and contact information for a specific walgreens pharmacy
-- get vaccine timeslots
-- create and manage vaccine appointments
-- get pharmacy details
-- search stores
-- prescriptions
-- reserve a specific vaccine appointment slot at a walgreens location
-- list all walgreens store numbers
-- vaccines
-- check which vaccines a patient is eligible for based on their state and date of birth. returns eligible and ineligible vaccine lists with details.
-- check patient vaccine eligibility
-- find available vaccine appointment times
-- register patient for vaccine appointment
-- register patient information for a held appointment
 - hold vaccine appointment
-- find walgreens pharmacy locations near an address, zip code, or coordinates. supports filtering by services like 24-hour pharmacy, drive-thru, or flu shots.
-- get store details
+- search and find walgreens pharmacy locations
+- immunizations
+- list all walgreens store numbers
+- confirm a vaccine appointment
+- confirm vaccine appointment
+- finalize a vaccine appointment booking
+- get vaccine timeslots
 - search walgreens pharmacies
+- check patient vaccine eligibility
+- list store numbers
+- check which vaccines a patient is eligible for based on their state and date of birth. returns eligible and ineligible vaccine lists with details.
 - find vaccine appointments
+- vaccines
+- walgreens
+- find available vaccine appointment times
+- search stores
+- register patient information for a held appointment
+- get details for a specific pharmacy location
 slug: pharmacy-and-healthcare
 source_filename: pharmacy-and-healthcare.yaml
 source_heading: Capability Spec

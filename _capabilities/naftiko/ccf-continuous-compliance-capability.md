@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- run assessment
-- assess
-- list controls
-- compliance
-- api integration
 - governance
-- spec-driven integration
-- ai
-- mcp
 - get assessment
-- capabilities
+- spec-driven integration
+- compliance
+- run assessment
 - ccf
+- list controls
+- ai
+- capabilities
+- api integration
+- assess
+- mcp
+- naftiko
 slug: ccf-continuous-compliance-capability
 source_filename: ccf-continuous-compliance-capability.yaml
 source_heading: Capability Spec

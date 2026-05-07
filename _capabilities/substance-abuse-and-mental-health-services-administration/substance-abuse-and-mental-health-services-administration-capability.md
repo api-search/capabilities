@@ -13,21 +13,21 @@ personas: []
 provider_name: Substance Abuse and Mental Health Services Administration
 provider_slug: substance-abuse-and-mental-health-services-administration
 search_terms:
-- federal government
-- healthcare
-- search treatment facilities
-- searchtreatmentfacilities
-- services
-- substance use disorders
-- and
-- substance
-- mental
-- abuse
-- public health
 - behavioral health
+- substance
+- public health
 - mental health
 - health
+- search treatment facilities
+- substance use disorders
+- services
+- abuse
+- and
+- mental
+- federal government
+- searchtreatmentfacilities
 - open data
+- healthcare
 slug: substance-abuse-and-mental-health-services-administration-capability
 source_filename: substance-abuse-and-mental-health-services-administration-capability.yaml
 source_heading: Capability Spec

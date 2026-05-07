@@ -49,32 +49,32 @@ personas: []
 provider_name: KVdb
 provider_slug: kvdb
 search_terms:
-- listkeys
-- databases
-- kvdb
+- increment or decrement numeric value
+- set key value
 - get key value
-- serverless
-- uploadscript
 - update bucket
-- setkey
+- api
+- kvdb
+- patchkey
+- key-value
+- list keys
+- serverless
+- create bucket
 - deletekey
-- deletebucket
-- executescript
+- createbucket
+- listkeys
+- setkey
+- delete key
+- updatebucket
+- getkey
+- uploadscript
+- delete bucket
+- upload script
 - execute script
 - nosql
-- delete key
-- getkey
-- api
-- upload script
-- set key value
-- patchkey
-- updatebucket
-- createbucket
-- increment or decrement numeric value
-- list keys
-- key-value
-- create bucket
-- delete bucket
+- executescript
+- deletebucket
+- databases
 slug: kvdb-capability
 source_filename: kvdb-capability.yaml
 source_heading: Capability Spec

@@ -17,27 +17,27 @@ personas: []
 provider_name: Vite
 provider_slug: vite
 search_terms:
-- ping vite dev server
+- open a vite project source file at the specified line and column in the ide. useful for navigating to build errors.
 - ping the vite dev server to confirm it is running.
 - open source files in the configured ide.
-- hot module replacement
-- vite
+- check whether the vite development server is running and healthy.
+- check vite dev server health.
 - dev server
-- open source file in editor
-- typescript
-- build tools
-- development server
 - ping dev server
-- javascript
+- bundler
+- build tools
+- open a source file at a specific line/column in the ide.
+- development server
 - open in editor
 - plugin api
-- frontend
+- ping vite dev server
+- typescript
 - esm
-- open a source file at a specific line/column in the ide.
-- check vite dev server health.
-- open a vite project source file at the specified line and column in the ide. useful for navigating to build errors.
-- bundler
-- check whether the vite development server is running and healthy.
+- hot module replacement
+- frontend
+- vite
+- open source file in editor
+- javascript
 slug: frontend-build
 source_filename: frontend-build.yaml
 source_heading: Capability Spec

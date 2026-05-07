@@ -177,93 +177,93 @@ personas: []
 provider_name: dev-to
 provider_slug: dev-to
 search_terms:
-- createdisplayad
-- getuserpublishedarticles
-- create display ad
-- unpublish display ad
-- user's unpublished articles
-- unpublishdisplayad
-- display ad
-- readinglist
-- getcommentsbyarticleid
-- getfollowers
-- getprofileimage
-- create a new page
-- show details for all pages
-- api
-- a users or organizations profile image
-- createwebhook
-- display ads
-- getreadinglist
-- update display ad
-- getuser
-- updatearticle
-- getdisplayadbyid
-- unpublishuser
-- published article by id
-- published articles
-- update details for a page
-- organization's articles
-- updatepage
-- show details for a page
-- getuserarticles
-- delete a webhook endpoint
-- update an article by id
-- deletepage
-- updatedisplayad
-- unpublisharticle
-- getorganization
-- getarticlebypath
-- create a webhook
-- followers
-- createarticle
-- togglereaction
-- createreaction
-- suspend a user
-- getdisplayads
-- published article by path
-- webhooks
-- followed tags
-- getorgarticles
-- getcommentbyid
 - a user
-- an organization
-- getpagebyid
-- toggle reaction
-- getuserme
-- getfollowedtags
-- comment by id
-- comments
-- getuserallarticles
-- the authenticated user
-- getarticles
-- getpodcastepisodes
-- user's published articles
-- getarticlebyid
-- unpublish a user's articles and comments
+- getorgarticles
+- getcommentsbyarticleid
+- show details for all pages
 - getlatestarticles
-- user's articles
-- publish article
-- tags
-- getpages
-- createpage
-- getuserunpublishedarticles
-- getwebhooks
-- published articles sorted by published date
-- unpublish an article
-- getwebhookbyid
-- organization's users
-- getorgusers
-- create reaction
-- gettags
-- dev
-- deletewebhook
-- user's all articles
-- podcast episodes
-- to
+- api
+- unpublish display ad
+- deletepage
 - remove a page
+- getwebhooks
+- publish article
+- organization's users
+- getreadinglist
+- delete a webhook endpoint
+- published articles
+- createpage
+- getwebhookbyid
+- unpublishdisplayad
+- getpages
+- user's unpublished articles
+- toggle reaction
+- create a webhook
+- getarticles
+- getuserarticles
+- getarticlebypath
+- getorganization
+- display ad
+- getarticlebyid
+- gettags
+- followed tags
+- organization's articles
+- user's all articles
+- published article by path
+- createdisplayad
+- getpagebyid
+- user's articles
+- updatearticle
+- to
+- unpublish an article
+- updatepage
+- update details for a page
+- published articles sorted by published date
 - suspenduser
+- a users or organizations profile image
+- getuserallarticles
+- getorgusers
+- getfollowers
+- getfollowedtags
+- unpublish a user's articles and comments
+- published article by id
+- unpublishuser
+- comment by id
+- getuserme
+- unpublisharticle
+- tags
+- getdisplayadbyid
+- readinglist
+- create display ad
+- update an article by id
+- an organization
+- create reaction
+- togglereaction
+- getcommentbyid
+- getpodcastepisodes
+- suspend a user
+- getuserunpublishedarticles
+- display ads
 - a webhook endpoint
+- followers
+- user's published articles
+- comments
+- dev
+- createwebhook
+- getuser
+- createarticle
+- updatedisplayad
+- createreaction
+- webhooks
+- show details for a page
+- podcast episodes
+- getprofileimage
+- getuserpublishedarticles
+- the authenticated user
+- update display ad
+- getdisplayads
+- deletewebhook
+- create a new page
 slug: dev-to-capability
 source_filename: dev-to-capability.yaml
 source_heading: Capability Spec

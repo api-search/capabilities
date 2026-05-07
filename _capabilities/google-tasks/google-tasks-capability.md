@@ -61,39 +61,39 @@ personas: []
 provider_name: Google Tasks
 provider_slug: google-tasks
 search_terms:
-- updatetasklist
-- delete a task
-- gettask
-- updatetask
-- tasks
-- patch a task list
-- deletetasklist
-- list tasks
-- cleartasks
-- inserttasklist
-- gettasklist
-- todo
-- google
-- create a task
-- clear completed tasks
-- productivity
-- update a task list
-- get a task list
+- listtasks
 - task management
 - inserttask
+- todo
+- delete a task
 - api
-- create a task list
+- move a task
+- get a task list
+- workspace
 - get a task
-- listtasks
+- update a task
+- gettask
+- google
+- list tasks
+- productivity
+- patch a task list
+- inserttasklist
+- patchtasklist
+- cleartasks
+- create a task
+- tasks
+- deletetasklist
+- update a task list
+- updatetask
+- clear completed tasks
+- create a task list
+- updatetasklist
+- deletetask
 - delete a task list
 - list task lists
-- move a task
-- movetask
 - listtasklists
-- update a task
-- workspace
-- patchtasklist
-- deletetask
+- gettasklist
+- movetask
 slug: google-tasks-capability
 source_filename: google-tasks-capability.yaml
 source_heading: Capability Spec

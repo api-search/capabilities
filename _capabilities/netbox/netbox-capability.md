@@ -249,136 +249,136 @@ personas: []
 provider_name: NetBox
 provider_slug: netbox
 search_terms:
-- circuits circuit group assignments bulk update
-- circuits circuit groups retrieve
-- circuits circuit group assignments retrieve
-- put a list of provider network objects.
-- get a circuit type object.
-- delete a circuit object.
-- circuits provider accounts update
-- get a circuit group assignment object.
-- get a list of circuit type objects.
-- delete a list of circuit group assignment objects.
-- circuits circuit terminations partial update
-- circuits provider networks bulk partial update
-- patch a circuit object.
-- network management
-- patch a list of circuit group objects.
-- circuits circuits destroy
-- get a provider account object.
-- circuits circuit types partial update
-- delete a circuit group assignment object.
-- get a list of circuit group assignment objects.
-- circuits circuit groups destroy
-- api
-- netbox
-- delete a list of circuit termination objects.
-- circuits circuit types list
-- get a list of provider account objects.
-- circuits provider accounts retrieve
-- delete a circuit group object.
-- circuits provider accounts create
-- network automation
-- circuits circuit terminations create
-- circuits circuits bulk update
-- post a list of provider network objects.
-- circuits circuit groups create
-- post a list of circuit objects.
-- patch a list of provider account objects.
-- circuits provider networks create
-- delete a circuit type object.
-- circuits circuit types bulk partial update
-- circuits provider accounts bulk update
-- get a list of circuit group objects.
-- circuits circuit group assignments create
-- dcim
-- circuits circuit terminations paths retrieve
-- circuits circuit group assignments destroy
-- circuits circuit types bulk destroy
-- circuits provider accounts bulk destroy
-- post a list of circuit type objects.
-- circuits circuit group assignments list
-- get a circuit termination object.
-- open source
-- patch a circuit type object.
-- circuits circuit group assignments update
-- circuits circuit terminations list
-- return all cablepaths which traverse a given pass-through port.
-- data center
-- circuits circuit types destroy
-- put a circuit group object.
-- patch a provider account object.
-- delete a list of circuit type objects.
-- patch a list of circuit type objects.
-- put a circuit termination object.
-- circuits circuit groups bulk partial update
-- patch a list of circuit termination objects.
-- circuits circuit groups bulk update
-- patch a list of provider network objects.
-- put a list of provider account objects.
-- circuits circuit terminations destroy
-- infrastructure as code
-- put a provider account object.
-- patch a circuit group object.
-- circuits circuit terminations bulk partial updat
-- circuits circuits update
-- delete a circuit termination object.
-- put a circuit object.
-- circuits circuits retrieve
-- patch a circuit group assignment object.
-- circuits circuits bulk partial update
-- circuits circuit groups bulk destroy
-- get a list of provider network objects.
-- circuits circuit terminations bulk destroy
-- circuits circuits create
-- delete a provider account object.
-- circuits provider accounts bulk partial update
-- get a list of circuit termination objects.
-- circuits circuit groups partial update
-- circuits provider accounts partial update
-- circuits circuit groups update
-- circuits circuit terminations bulk update
-- put a list of circuit type objects.
-- get a circuit group object.
-- circuits circuit types create
-- get a list of circuit objects.
-- circuits circuit group assignments partial updat
-- delete a list of circuit objects.
-- circuits circuit terminations update
-- put a list of circuit group assignment objects.
-- circuits circuit groups list
-- return the user making the request, if authenticated successfully.
-- put a list of circuit group objects.
-- circuits circuit group assignments bulk destroy
-- post a list of circuit termination objects.
-- post a list of provider account objects.
-- post a list of circuit group assignment objects.
-- circuits circuits list
-- circuits circuit group assignments bulk partial
-- circuits circuit types retrieve
-- authentication check retrieve
-- circuits provider accounts list
-- put a circuit group assignment object.
-- put a list of circuit termination objects.
-- get a circuit object.
 - ipam
-- circuits circuit terminations retrieve
-- circuits provider accounts destroy
-- circuits circuit types update
-- post a list of circuit group objects.
-- source of truth
-- circuits circuits bulk destroy
-- circuits provider networks list
-- circuits provider networks bulk update
-- delete a list of circuit group objects.
-- patch a list of circuit group assignment objects.
+- api
 - patch a circuit termination object.
-- delete a list of provider account objects.
-- circuits circuits partial update
+- network management
+- circuits provider accounts partial update
+- circuits circuits bulk destroy
+- put a provider account object.
 - put a circuit type object.
+- circuits circuit terminations list
+- circuits circuit types partial update
+- circuits provider accounts bulk update
+- circuits circuit groups partial update
+- get a list of circuit type objects.
+- return the user making the request, if authenticated successfully.
+- post a list of circuit termination objects.
+- circuits circuit group assignments bulk partial
+- circuits circuit groups bulk partial update
+- circuits circuit terminations bulk partial updat
 - circuits circuit types bulk update
-- put a list of circuit objects.
+- circuits circuit types destroy
+- circuits circuits partial update
+- put a circuit group assignment object.
+- circuits circuits list
+- network automation
+- get a list of provider account objects.
+- circuits circuit types create
+- patch a provider account object.
+- put a circuit group object.
+- circuits circuit types bulk destroy
+- put a circuit object.
+- circuits provider accounts bulk partial update
+- post a list of provider account objects.
+- get a list of provider network objects.
+- circuits provider accounts retrieve
+- circuits circuit group assignments update
+- circuits circuit groups retrieve
+- circuits circuit group assignments partial updat
+- get a circuit termination object.
+- circuits circuit terminations create
+- circuits provider networks create
+- circuits provider networks bulk update
+- circuits circuit groups bulk update
+- netbox
+- delete a provider account object.
+- patch a list of provider account objects.
+- patch a circuit object.
+- dcim
+- circuits circuit group assignments retrieve
+- circuits provider accounts list
+- circuits circuit groups create
+- delete a list of provider account objects.
+- patch a list of circuit type objects.
+- authentication check retrieve
+- circuits provider accounts bulk destroy
+- patch a circuit type object.
+- circuits circuit group assignments bulk update
+- circuits circuit group assignments create
+- circuits circuit terminations partial update
+- circuits provider accounts update
+- patch a list of circuit group assignment objects.
+- delete a circuit termination object.
 - patch a list of circuit objects.
+- circuits circuits bulk partial update
+- circuits provider accounts create
+- return all cablepaths which traverse a given pass-through port.
+- post a list of circuit objects.
+- circuits circuit terminations bulk update
+- circuits circuit types list
+- circuits circuit groups list
+- circuits circuit terminations update
+- put a list of circuit group objects.
+- circuits circuit types bulk partial update
+- circuits circuit groups update
+- get a provider account object.
+- circuits circuit groups destroy
+- circuits circuits retrieve
+- get a list of circuit group assignment objects.
+- get a list of circuit termination objects.
+- patch a circuit group object.
+- circuits circuit terminations bulk destroy
+- circuits circuits destroy
+- infrastructure as code
+- circuits circuits bulk update
+- put a list of circuit group assignment objects.
+- post a list of circuit type objects.
+- delete a circuit object.
+- circuits circuit group assignments list
+- post a list of provider network objects.
+- delete a list of circuit type objects.
+- circuits circuits create
+- delete a list of circuit group assignment objects.
+- put a list of provider account objects.
+- delete a circuit group assignment object.
+- circuits circuits update
+- source of truth
+- circuits circuit terminations destroy
+- put a circuit termination object.
+- delete a list of circuit objects.
+- put a list of circuit termination objects.
+- delete a circuit group object.
+- circuits circuit group assignments destroy
+- get a list of circuit objects.
+- post a list of circuit group assignment objects.
+- get a circuit group assignment object.
+- circuits provider networks list
+- delete a list of circuit group objects.
+- circuits circuit types retrieve
+- patch a list of circuit termination objects.
+- patch a list of circuit group objects.
+- open source
+- put a list of circuit objects.
+- circuits circuit group assignments bulk destroy
+- circuits provider networks bulk partial update
+- circuits circuit terminations retrieve
+- put a list of provider network objects.
+- get a circuit group object.
+- delete a list of circuit termination objects.
+- get a list of circuit group objects.
+- circuits circuit terminations paths retrieve
+- circuits circuit groups bulk destroy
+- post a list of circuit group objects.
+- circuits circuit types update
+- data center
+- patch a list of provider network objects.
+- delete a circuit type object.
+- get a circuit type object.
+- put a list of circuit type objects.
+- circuits provider accounts destroy
+- get a circuit object.
+- patch a circuit group assignment object.
 slug: netbox-capability
 source_filename: netbox-capability.yaml
 source_heading: Capability Spec

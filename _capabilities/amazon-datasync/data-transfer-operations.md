@@ -10,10 +10,10 @@ provider_name: Amazon DataSync
 provider_slug: amazon-datasync
 search_terms:
 - migration
-- storage
-- data transfer
 - hybrid cloud
 - automation
+- data transfer
+- storage
 slug: data-transfer-operations
 source_filename: data-transfer-operations.yaml
 source_heading: Capability Spec

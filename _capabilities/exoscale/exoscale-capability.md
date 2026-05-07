@@ -249,123 +249,123 @@ personas: []
 provider_name: Exoscale
 provider_slug: exoscale
 search_terms:
-- list events
-- get reverse dns elastic ip
-- attach a compute instance to a private network
-- create elastic ip
-- generate sks cluster kubeconfig
-- create a load balancer
-- query the ptr dns records for an elastic ip
-- list load balancers
-- get the active template for a given kube version and variant (standard | nvidia)
-- reset the credentials of a dbaas mysql user
-- create a security group
-- create security group
-- list elastic ips
-- delete reverse dns elastic ip
-- create a dbaas opensearch acl configuration
-- cloud
-- create dbaas mysql user
-- create snapshot
-- create dbaas pg upgrade check
-- create anti affinity group
-- list ai api keys
-- retrieve instance type details
-- api
-- delete load balancer service
-- initiate grafana maintenance update
-- list models
-- scale an instance pool
-- get dbaas external endpoint opensearch
-- scale deployment
-- list dbaas services
-- get dbaas service mysql
-- compute
-- create a dbaas mysql service
-- storage
-- create a dbaas postgresql connection pool
-- infrastructure
-- retrieve organization usage reports
-- create load balancer
-- get active nodepool template
-- delete a security group rule
-- delete a load balancer service
-- create a dbaas mysql user
-- update a dbaas mysql service
-- kubernetes
-- get instance type
-- create an elastic ip
-- update dbaas opensearch acl config
-- delete dbaas external endpoint opensearch
-- '[beta] request generation of key/secret that allow caller to assume target role'
-- update load balancer service
-- '[beta] create rsyslog external integration endpoint'
-- create dbaas external endpoint rsyslog
-- check whether you can upgrade postgres service to a newer version
-- reveal the password used during instance creation or the latest password reset.
-- delete the ptr dns record for an elastic ip
-- delete rule from security group
-- get a dbaas mysql service
-- delete dbaas external endpoint elasticsearch
-- get inference-engine help
-- reveal instance password
-- create instance pool
-- '[beta] update opensearch logs external integration endpoint'
-- list anti-affinity groups
-- dbaas
-- resize a compute instance disk
-- stop a dbaas valkey migration
-- disable kms key rotation
-- assume iam role
-- create model
-- start dbaas thanos maintenance
 - '[beta] get elasticsearch logs external integration endpoint settings'
-- list dns domain records
-- create a snapshot of a compute instance
-- get usage report
-- dbaas service types
-- get kms key
-- retrieve load balancer service details
-- '[beta] update elasticsearch logs external integration endpoint'
-- create an anti-affinity group
-- list anti affinity groups
-- get load balancer service
-- reset dbaas mysql user password
-- list zones
-- create dbaas pg connection pool
 - '[beta] get kms key'
-- exoscale
-- start dbaas grafana maintenance
-- get dbaas opensearch acl configuration
+- create dbaas pg connection pool
+- reset dbaas mysql user password
+- delete dbaas external endpoint elasticsearch
+- api
+- delete reverse dns elastic ip
+- retrieve organization usage reports
 - europe
-- update/create the ptr dns record for an elastic ip
-- update dbaas service mysql
-- create dbaas service mysql
-- delete dbaas service mysql
-- list dbaas service types
-- update dbaas external endpoint opensearch
-- create ai api key
+- create anti affinity group
+- list load balancers
+- list models
+- generate sks cluster kubeconfig
 - get dbaas opensearch acl config
+- get kms key
+- delete a security group rule
+- get dbaas opensearch acl configuration
+- create a security group
+- '[beta] update elasticsearch logs external integration endpoint'
+- scale deployment
+- initiate thanos maintenance update
+- create load balancer
+- delete dbaas service mysql
+- reveal the password used during instance creation or the latest password reset.
+- create dbaas external endpoint rsyslog
+- update a load balancer service
+- update a dbaas mysql service
+- resize instance disk
+- update dbaas opensearch acl config
+- create a snapshot of a compute instance
+- list events
+- resize a compute instance disk
+- create instance pool
+- create a dbaas opensearch acl configuration
+- create a load balancer
+- attach a compute instance to a private network
+- list ai api keys
+- list dns domain records
+- exoscale
+- list anti-affinity groups
+- scale an instance pool
+- disable kms key rotation
+- get inference-engine help
 - update reverse dns elastic ip
-- get inference engine help
+- '[beta] create rsyslog external integration endpoint'
+- list dbaas service types
+- '[beta] get opensearch logs external integration endpoint settings'
+- update dbaas service mysql
+- reveal instance password
+- update dbaas external endpoint elasticsearch
+- create an elastic ip
+- list security groups
+- create a dbaas postgresql connection pool
+- delete dbaas external endpoint opensearch
+- cloud
+- storage
+- create model
+- get instance type
+- delete rule from security group
+- create a dbaas mysql service
+- update/create the ptr dns record for an elastic ip
+- get dbaas service mysql
+- retrieve instance type details
+- reset the credentials of a dbaas mysql user
+- delete the ptr dns record for an elastic ip
 - '[beta] delete elasticsearch logs external integration endpoint'
 - get dbaas external endpoint elasticsearch
-- scale instance pool
-- attach instance to private network
-- initiate thanos maintenance update
-- update a load balancer service
-- list security groups
-- delete a mysql service
-- '[beta] get opensearch logs external integration endpoint settings'
-- generate a new kubeconfig file for a sks cluster
-- create an instance pool
-- '[beta] disable key rotation'
-- list instance pools
-- update dbaas external endpoint elasticsearch
+- list zones
+- dbaas
+- get reverse dns elastic ip
+- query the ptr dns records for an elastic ip
 - '[beta] delete opensearch logs external integration endpoint'
+- get inference engine help
+- get the active template for a given kube version and variant (standard | nvidia)
+- infrastructure
+- kubernetes
+- create dbaas service mysql
+- create dbaas pg upgrade check
+- dbaas service types
+- get a dbaas mysql service
+- create dbaas mysql user
+- create an instance pool
+- create ai api key
+- get usage report
+- start dbaas grafana maintenance
+- list dbaas services
+- start dbaas thanos maintenance
+- check whether you can upgrade postgres service to a newer version
+- '[beta] disable key rotation'
+- list elastic ips
+- get active nodepool template
+- '[beta] update opensearch logs external integration endpoint'
+- list instance pools
+- delete a mysql service
+- assume iam role
+- create security group
+- attach instance to private network
+- delete a load balancer service
+- initiate grafana maintenance update
+- get dbaas external endpoint opensearch
+- create an anti-affinity group
 - list security groups.
+- retrieve load balancer service details
+- stop a dbaas valkey migration
+- create a dbaas mysql user
+- compute
 - stop dbaas valkey migration
-- resize instance disk
+- get load balancer service
+- update load balancer service
+- generate a new kubeconfig file for a sks cluster
+- create snapshot
+- create elastic ip
+- '[beta] request generation of key/secret that allow caller to assume target role'
+- scale instance pool
+- update dbaas external endpoint opensearch
+- delete load balancer service
+- list anti affinity groups
 slug: exoscale-capability
 source_filename: exoscale-capability.yaml
 source_heading: Capability Spec

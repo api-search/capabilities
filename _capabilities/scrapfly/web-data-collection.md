@@ -17,32 +17,32 @@ personas: []
 provider_name: Scrapfly
 provider_slug: scrapfly
 search_terms:
-- capture a screenshot of a specific html element using a css selector. useful for extracting visual data from specific page components.
+- capture screenshot
+- ai
 - capture element screenshot
+- data collection
+- scrape any webpage and return its content. supports anti-bot bypass, javascript rendering for dynamic sites, proxy rotation across 190+ countries, and output in html, markdown, or plain text format.
+- scrape a webpage and extract structured data using an ai prompt. returns structured json data extracted from the page content.
+- data extraction
+- screenshots
+- capture full page screenshot
+- capture a full-page screenshot of any website. useful for visual verification, archiving, or accessibility testing.
+- web page screenshot capture
+- capture a screenshot of a specific html element using a css selector. useful for extracting visual data from specific page components.
+- browser automation
+- scrape url
+- scrape a webpage with session persistence, maintaining cookies and browser fingerprint across multiple requests to the same site.
+- scrape webpage
+- extract structured data
+- scrape with cache
+- anti-bot
 - scrape with session
 - web page scraping with anti-bot bypass
 - proxies
-- anti-bot
-- extract structured data
-- data collection
-- data extraction
-- scrape with cache
-- web page screenshot capture
-- ai
 - web scraping
-- capture screenshot
-- scrape a url with configurable rendering and extraction
-- scrape a webpage with session persistence, maintaining cookies and browser fingerprint across multiple requests to the same site.
-- screenshots
-- browser automation
-- scrape webpage
 - capture a screenshot of a webpage or element
-- capture full page screenshot
-- scrape a webpage and extract structured data using an ai prompt. returns structured json data extracted from the page content.
-- scrape url
-- scrape any webpage and return its content. supports anti-bot bypass, javascript rendering for dynamic sites, proxy rotation across 190+ countries, and output in html, markdown, or plain text format.
-- capture a full-page screenshot of any website. useful for visual verification, archiving, or accessibility testing.
 - scrape a url with caching enabled to avoid redundant requests. ideal for repeatedly accessed urls that don't change frequently.
+- scrape a url with configurable rendering and extraction
 slug: web-data-collection
 source_filename: web-data-collection.yaml
 source_heading: Capability Spec

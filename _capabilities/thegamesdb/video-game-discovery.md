@@ -29,43 +29,43 @@ personas: []
 provider_name: TheGamesDB
 provider_slug: thegamesdb
 search_terms:
-- get artwork and images for a game (boxart, screenshots, fanart)
-- search games
-- list developers
-- get game
-- list all gaming platforms
-- search for a gaming platform by name
-- get complete game details by game id
-- get artwork for a game
-- list all game genres
-- get games by platform
-- gaming platforms
-- get game artwork
-- game metadata and details
-- get game by id
-- list publishers
-- list all gaming platforms in the database with their ids
-- search platforms by name
-- list genres
-- search for games by name
-- gaming
-- list all game publishers in the database
-- database
 - list all platforms
-- get game images
-- list all game genres in the database
+- get artwork and images for a game (boxart, screenshots, fanart)
 - search games by name
-- search and browse video games
+- metadata
+- get game artwork
 - game artwork and images
-- get game details by id
+- get games by platform
+- list all game genres in the database
+- list platforms
+- search platforms by name
+- list all gaming platforms in the database with their ids
+- gaming platforms
+- game genres
+- get game by id
+- list all game publishers in the database
 - find all games for a specific gaming platform
+- artwork
+- search games
+- list all gaming platforms
+- gaming
+- search and browse video games
 - search for video games by name (e.g. halo, mario, zelda)
 - video games
-- game genres
-- list platforms
-- metadata
+- search for a gaming platform by name
+- database
+- get complete game details by game id
+- list publishers
 - list all game developers in the database
-- artwork
+- game metadata and details
+- get game details by id
+- search for games by name
+- get artwork for a game
+- get game
+- get game images
+- list all game genres
+- list developers
+- list genres
 slug: video-game-discovery
 source_filename: video-game-discovery.yaml
 source_heading: Capability Spec

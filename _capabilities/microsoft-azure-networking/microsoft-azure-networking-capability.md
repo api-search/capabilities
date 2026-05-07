@@ -42,27 +42,27 @@ provider_name: Azure Networking
 provider_slug: microsoft-azure-networking
 search_terms:
 - networking
-- loadbalancerbackendaddresspools list
-- azure networking list health probes
-- loadbalancerloadbalancingrules list
-- infrastructure
-- azure
-- loadbalancers delete
-- cloud
-- azure networking get load balancer
-- azure networking create or update load balancer
-- loadbalancers listall
-- loadbalancers get
-- api
-- azure networking list backend address pools
-- azure networking list load balancers
-- loadbalancerprobes list
-- azure networking delete load balancer
-- loadbalancers createorupdate
-- azure networking list all load balancers
 - azure networking list load balancing rules
+- loadbalancerprobes list
+- api
 - loadbalancers list
+- azure networking create or update load balancer
+- azure networking list load balancers
+- loadbalancerloadbalancingrules list
 - microsoft
+- infrastructure
+- loadbalancerbackendaddresspools list
+- azure networking list all load balancers
+- loadbalancers listall
+- azure networking get load balancer
+- cloud
+- azure networking list health probes
+- loadbalancers delete
+- loadbalancers get
+- azure
+- loadbalancers createorupdate
+- azure networking delete load balancer
+- azure networking list backend address pools
 slug: microsoft-azure-networking-capability
 source_filename: microsoft-azure-networking-capability.yaml
 source_heading: Capability Spec

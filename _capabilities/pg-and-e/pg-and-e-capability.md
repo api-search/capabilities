@@ -29,18 +29,18 @@ personas: []
 provider_name: pg-and-e
 provider_slug: pg-and-e
 search_terms:
-- listusagepoints
-- list usage points
-- api
-- list authorizations
-- listmeterreadings
 - pg
-- and
-- listintervalblocks
+- list authorizations
+- api
+- listusagepoints
 - list interval blocks
-- listauthorizations
-- list meter readings
+- listintervalblocks
 - list subscriptions
+- list meter readings
+- and
+- list usage points
+- listauthorizations
+- listmeterreadings
 - listsubscriptions
 slug: pg-and-e-capability
 source_filename: pg-and-e-capability.yaml

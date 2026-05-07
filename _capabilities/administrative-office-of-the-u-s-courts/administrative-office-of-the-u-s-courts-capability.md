@@ -17,21 +17,21 @@ personas: []
 provider_name: Administrative Office of the U.S. Courts
 provider_slug: administrative-office-of-the-u-s-courts
 search_terms:
-- office
+- judiciary
 - post services cso logout
-- federal government
-- case records
-- pacer
-- post services cso auth
-- administrative
 - administrative office of the u.s. courts authenticate a user
-- legal
+- the
 - of
 - administrative office of the u.s. courts logout a user
-- courts
-- judiciary
-- the
+- legal
+- federal government
+- case records
+- office
+- post services cso auth
+- pacer
 - open data
+- administrative
+- courts
 slug: administrative-office-of-the-u-s-courts-capability
 source_filename: administrative-office-of-the-u-s-courts-capability.yaml
 source_heading: Capability Spec

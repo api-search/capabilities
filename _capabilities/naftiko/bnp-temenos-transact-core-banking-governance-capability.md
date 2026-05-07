@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- bnp
-- mcp
 - get account
-- api integration
+- governance
+- spec-driven integration
 - get governed account
 - list transactions
 - ai
+- capabilities
+- bnp
+- api integration
+- mcp
 - temenos
 - core banking
-- governance
-- spec-driven integration
-- capabilities
+- naftiko
 slug: bnp-temenos-transact-core-banking-governance-capability
 source_filename: bnp-temenos-transact-core-banking-governance-capability.yaml
 source_heading: Capability Spec

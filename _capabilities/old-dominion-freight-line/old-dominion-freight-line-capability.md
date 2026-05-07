@@ -13,17 +13,17 @@ personas: []
 provider_name: Old Dominion Freight Line
 provider_slug: old-dominion-freight-line
 search_terms:
-- transportation
-- dominion
-- old
-- create an electronic bill of lading
 - logistics
+- freight
+- transportation
+- create an electronic bill of lading
+- old
+- createbilloflading
 - shipping
 - api
-- createbilloflading
 - line
 - less-than-truckload
-- freight
+- dominion
 slug: old-dominion-freight-line-capability
 source_filename: old-dominion-freight-line-capability.yaml
 source_heading: Capability Spec

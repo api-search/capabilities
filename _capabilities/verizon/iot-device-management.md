@@ -37,53 +37,53 @@ personas: []
 provider_name: Verizon
 provider_slug: verizon
 search_terms:
-- device activation
-- account management
-- activate one or more iot devices on a verizon service plan
-- list all registered callback endpoints for device event notifications
-- register a webhook callback url to receive verizon thingspace device events
-- deactivate devices
-- callback subscriptions
-- device management operations
-- list iot devices in a verizon thingspace account with optional service plan and state filters
-- verizon
-- device management
-- send sms to devices
-- iot
-- list devices
-- sms messaging to devices
-- administrators managing device connectivity and account settings
-- lifecycle management of iot devices including activation and deactivation
-- send an sms command or message to one or more iot devices
-- 5g
-- operations managers overseeing large-scale iot device fleet management
-- enterprise
-- operations
-- device connectivity management on verizon wireless network
-- send sms
-- engineers who build and maintain iot platforms using verizon thingspace apis
-- wireless
-- activate devices on verizon network
-- deactivate devices from verizon network
-- list callbacks
-- Network Administrator
-- register a callback endpoint
-- connectivity
-- get account information
-- device deactivation
-- telecommunications
-- network apis
-- register callback
-- activate devices
-- list registered callbacks
-- get verizon thingspace account information including device count and billing cycle
-- deactivate iot devices from the verizon wireless network
-- iot device lifecycle management workflow for verizon thingspace
 - get account
-- operational management of wireless iot deployments
-- IoT Platform Engineer
-- list devices with optional filters
+- operations
+- iot device lifecycle management workflow for verizon thingspace
 - Device Operations Manager
+- Network Administrator
+- send sms to devices
+- connectivity
+- device management operations
+- send sms
+- verizon
+- account management
+- deactivate devices
+- deactivate devices from verizon network
+- list all registered callback endpoints for device event notifications
+- lifecycle management of iot devices including activation and deactivation
+- engineers who build and maintain iot platforms using verizon thingspace apis
+- register a callback endpoint
+- send an sms command or message to one or more iot devices
+- device activation
+- activate one or more iot devices on a verizon service plan
+- telecommunications
+- get verizon thingspace account information including device count and billing cycle
+- network apis
+- list devices with optional filters
+- list callbacks
+- register a webhook callback url to receive verizon thingspace device events
+- iot
+- callback subscriptions
+- administrators managing device connectivity and account settings
+- enterprise
+- activate devices on verizon network
+- activate devices
+- operational management of wireless iot deployments
+- list iot devices in a verizon thingspace account with optional service plan and state filters
+- operations managers overseeing large-scale iot device fleet management
+- list registered callbacks
+- list devices
+- deactivate iot devices from the verizon wireless network
+- device deactivation
+- register callback
+- 5g
+- IoT Platform Engineer
+- device connectivity management on verizon wireless network
+- device management
+- get account information
+- sms messaging to devices
+- wireless
 slug: iot-device-management
 source_filename: iot-device-management.yaml
 source_heading: Capability Spec

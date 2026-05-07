@@ -101,60 +101,60 @@ personas: []
 provider_name: Google Classroom
 provider_slug: google-classroom
 search_terms:
-- google classroom list course work
+- google classroom get course
 - courses
-- google classroom create topic
-- google classroom delete course work
-- listcourses
-- google classroom create announcement
-- education
-- google workspace
-- google classroom list courses
-- getuserprofile
-- google classroom get course work
-- google classroom list student submissions
+- listinvitations
+- createcourse
+- createtopic
+- google classroom list topics
+- listannouncements
+- google classroom get user profile
+- addteacher
+- google classroom create course work
+- google classroom patch course work
+- getcoursework
+- api
+- google classroom delete course
+- google classroom update course
+- liststudentsubmissions
+- listteachers
 - addstudent
 - updatecourse
-- listinvitations
-- getcoursework
-- patchcourse
-- listteachers
-- google classroom list announcements
-- deletecourse
-- listannouncements
-- classroom
-- google
-- google classroom add teacher
-- getcourse
-- google classroom patch course
-- addteacher
+- google classroom create announcement
 - google classroom create invitation
-- google classroom list topics
-- createcoursework
-- google classroom delete course
-- assignments
-- google classroom list invitations
-- listcoursework
-- createcourse
-- api
-- deletecoursework
-- google classroom add student
-- createinvitation
 - google classroom list teachers
-- google classroom get user profile
-- google classroom patch course work
-- google classroom get course
-- students
-- listtopics
-- google classroom create course
-- liststudentsubmissions
-- google classroom list students
-- google classroom create course work
-- liststudents
-- patchcoursework
+- google classroom delete course work
+- patchcourse
+- google
+- getcourse
+- deletecourse
+- google classroom list course work
 - createannouncement
-- google classroom update course
-- createtopic
+- google classroom patch course
+- google classroom list courses
+- google classroom list students
+- google classroom get course work
+- classroom
+- google classroom list student submissions
+- listcourses
+- deletecoursework
+- createcoursework
+- google classroom list invitations
+- createinvitation
+- google classroom add student
+- patchcoursework
+- education
+- google workspace
+- listtopics
+- getuserprofile
+- assignments
+- liststudents
+- google classroom create course
+- google classroom add teacher
+- google classroom list announcements
+- google classroom create topic
+- listcoursework
+- students
 slug: google-classroom-capability
 source_filename: google-classroom-capability.yaml
 source_heading: Capability Spec

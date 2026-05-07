@@ -101,59 +101,59 @@ personas: []
 provider_name: JupyterHub
 provider_slug: jupyter-hub
 search_terms:
-- creategroup
-- startnamedserver
-- createuser
-- education
-- notebooks
-- deletegroup
-- adduserstogroup
-- stop a named server for a user
-- create a new token for a user
-- add users to a group
-- create a single user
-- jupyter
-- delete a user
-- stop a user's default server
 - list services
-- getservice
-- shut down the hub
-- gethubinfo
-- shutdownhub
-- delete a group
-- stopuserserver
 - get detailed hub info
-- stopnamedserver
-- list a user's tokens
-- create multiple users
-- startuserserver
-- listgroups
-- get a group
-- start a user's default server
-- removeusersfromgroup
-- get the proxy's routing table
-- start a named server for a user
-- api
-- create a group
-- get a service
-- hub
-- createusertoken
-- createusers
-- getuser
-- list users
-- get a user
-- listusertokens
-- gethubdetailedinfo
-- list groups
-- listusers
-- getgroup
-- remove users from a group
-- listservices
 - getproxyroutes
-- get jupyterhub version
+- start a user's default server
+- adduserstogroup
+- getservice
+- listusertokens
+- create multiple users
+- list groups
+- creategroup
+- api
+- delete a user
+- add users to a group
+- delete a group
 - multi-user
-- data science
+- get a group
+- getuser
+- get a user
+- gethubdetailedinfo
+- create a new token for a user
+- getgroup
 - deleteuser
+- listgroups
+- removeusersfromgroup
+- createusertoken
+- listservices
+- list users
+- hub
+- stopuserserver
+- gethubinfo
+- startuserserver
+- stop a user's default server
+- create a group
+- data science
+- notebooks
+- get the proxy's routing table
+- shutdownhub
+- stopnamedserver
+- get a service
+- start a named server for a user
+- createuser
+- remove users from a group
+- education
+- createusers
+- listusers
+- shut down the hub
+- stop a named server for a user
+- list a user's tokens
+- jupyter
+- create a single user
+- deletegroup
+- get jupyterhub version
+- startnamedserver
 slug: jupyter-hub-capability
 source_filename: jupyter-hub-capability.yaml
 source_heading: Capability Spec

@@ -29,22 +29,22 @@ personas: []
 provider_name: Perenual
 provider_slug: perenual
 search_terms:
-- plants
-- getcareguides
+- list plant care guides
 - getspecieslist
-- botany
-- gardening
-- perenual
-- api
 - get plant species details
+- perenual
+- list plant species
 - horticulture
+- gethardinessmap
 - getspeciesdetails
 - getpestdiseaselist
 - list pests and diseases
+- getcareguides
+- gardening
+- api
+- plants
+- botany
 - get hardiness map for species
-- list plant care guides
-- list plant species
-- gethardinessmap
 slug: perenual-capability
 source_filename: perenual-capability.yaml
 source_heading: Capability Spec

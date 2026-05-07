@@ -41,25 +41,25 @@ personas: []
 provider_name: Mintlify
 provider_slug: mintlify
 search_terms:
-- getconversations
-- getagentjob
-- createassistantmessage
-- searchdocs
-- triggerupdate
-- mintlify
-- create assistant message
-- documentation
-- get update status
-- trigger documentation update
-- api
-- create agent job
-- getupdatestatus
-- search documentation
-- get user feedback
-- getfeedback
 - get assistant conversations
-- createagentjob
+- mintlify
+- getupdatestatus
+- triggerupdate
 - get agent job
+- api
+- searchdocs
+- get user feedback
+- search documentation
+- create agent job
+- getagentjob
+- documentation
+- createagentjob
+- createassistantmessage
+- create assistant message
+- trigger documentation update
+- get update status
+- getconversations
+- getfeedback
 slug: mintlify-capability
 source_filename: mintlify-capability.yaml
 source_heading: Capability Spec

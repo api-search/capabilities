@@ -21,22 +21,22 @@ personas: []
 provider_name: Nomba
 provider_slug: nomba
 search_terms:
-- fetchparentaccountdetails
-- cross-border payments
-- fetch parent account details
+- fetchparentaccountbalance
 - fetch parent account balance
-- fetch terminals assigned to an account
-- api
-- transfers
+- banking
+- cross-border payments
+- payments
 - fetchterminalsassignedtoaccount
 - cards
-- virtual accounts
-- fetchparentaccountbalance
-- checkout
-- banking
-- nomba
+- fetch terminals assigned to an account
 - fintech
-- payments
+- virtual accounts
+- fetch parent account details
+- nomba
+- api
+- checkout
+- fetchparentaccountdetails
+- transfers
 slug: nomba-capability
 source_filename: nomba-capability.yaml
 source_heading: Capability Spec

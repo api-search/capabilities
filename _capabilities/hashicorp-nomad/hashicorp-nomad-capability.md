@@ -162,89 +162,89 @@ provider_name: HashiCorp Nomad
 provider_slug: hashicorp-nomad
 search_terms:
 - get job job id
-- list task actions
-- delete namespace name
-- post job job id evaluate
-- create node evaluation
-- list node allocations
-- get node node id
-- read namespace
-- list namespaces
+- containers
+- list acl tokens
+- get allocation alloc id
+- get deployments
 - api
-- post jobs
 - get namespaces
-- scale task group
-- read node
-- list evaluations
-- delete namespace
-- list allocations
+- agent health
+- list acl policies
 - get status peers
-- read scale status
-- toggle node drain
-- get evaluation eval id
-- get evaluations
-- post node node id evaluate
+- post job job id scale
 - read allocation
 - read evaluation
-- post node node id eligibility
-- get job job id summary
-- get job job id actions
-- post job job id plan
-- get acl policies
-- list server peers
-- read job summary
-- get job job id scale
-- get jobs
-- post namespace name
-- nomad
-- force evaluation
-- parse hcl jobspec
-- get nodes
-- purge node
-- get deployments
-- list job allocations
-- post job job id scale
-- get job job id allocations
-- agent health
-- update job
-- list acl tokens
-- plan job
-- get namespace name
-- read leader address
-- list deployments
-- hashicorp
-- toggle node eligibility
-- create or register job
-- multi-cloud
-- list acl policies
-- post node node id purge
-- get job job id deployment
-- post jobs parse
-- list job deployments
-- get job job id versions
-- create or update namespace
-- post node node id drain
-- get acl tokens
-- list job versions
-- get job job id deployments
-- get allocation alloc id
+- post job job id evaluate
 - read deployment
-- list jobs
-- get allocations
-- read job
-- scheduling
-- get node node id allocations
-- list nodes
-- containers
-- get agent health
-- get deployment deployment id
-- orchestration
+- create or register job
+- get job job id allocations
 - delete job job id
-- workloads
-- deregister job
-- read most recent deployment
-- get status leader
+- get allocations
+- get namespace name
+- post job job id plan
+- list evaluations
+- list job deployments
+- force evaluation
+- get job job id actions
+- read job
+- update job
+- scale task group
+- post node node id drain
 - post job job id
+- list job allocations
+- toggle node eligibility
+- purge node
+- post jobs
+- get agent health
+- post jobs parse
+- get node node id allocations
+- list job versions
+- read node
+- get job job id deployment
+- list namespaces
+- delete namespace
+- list task actions
+- get nodes
+- get node node id
+- parse hcl jobspec
+- scheduling
+- get job job id summary
+- get acl policies
+- list deployments
+- plan job
+- read most recent deployment
+- get jobs
+- read namespace
+- get job job id versions
+- delete namespace name
+- get status leader
+- post namespace name
+- multi-cloud
+- get job job id scale
+- list node allocations
+- post node node id purge
+- get acl tokens
+- list jobs
+- get evaluation eval id
+- list nodes
+- read job summary
+- workloads
+- read leader address
+- deregister job
+- list allocations
+- hashicorp
+- list server peers
+- create node evaluation
+- get deployment deployment id
+- toggle node drain
+- orchestration
+- create or update namespace
+- read scale status
+- post node node id evaluate
+- get evaluations
+- nomad
+- get job job id deployments
+- post node node id eligibility
 slug: hashicorp-nomad-capability
 source_filename: hashicorp-nomad-capability.yaml
 source_heading: Capability Spec

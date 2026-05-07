@@ -45,36 +45,36 @@ personas: []
 provider_name: Charles Schwab
 provider_slug: charles-schwab
 search_terms:
-- get option expiration chain for a symbol
-- get option chain for a symbol
-- getmarkethours
-- get quote for a specific symbol
-- getmovers
-- market data
-- investing
-- financial services
-- schwab
-- get top movers for an index
-- getoptionexpirationchain
-- accounts
-- getquote
-- get market hours for one or more markets
-- trading
-- api
-- charles
-- get market hours for a single market
-- brokerage
-- getquotes
-- search instruments by symbol or cusip
-- banking
-- oauth 2.0
-- getpricehistory
-- searchinstruments
-- orders
-- getoptionchains
-- get quotes for one or more symbols
-- getmarkethoursformarket
 - get price history candles for a symbol
+- getoptionexpirationchain
+- get option expiration chain for a symbol
+- getquotes
+- investing
+- oauth 2.0
+- searchinstruments
+- api
+- get market hours for one or more markets
+- getmovers
+- orders
+- get quote for a specific symbol
+- brokerage
+- get top movers for an index
+- get option chain for a symbol
+- getquote
+- get quotes for one or more symbols
+- financial services
+- trading
+- getoptionchains
+- accounts
+- schwab
+- charles
+- search instruments by symbol or cusip
+- getpricehistory
+- get market hours for a single market
+- banking
+- market data
+- getmarkethoursformarket
+- getmarkethours
 slug: charles-schwab-capability
 source_filename: charles-schwab-capability.yaml
 source_heading: Capability Spec

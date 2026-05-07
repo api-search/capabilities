@@ -173,91 +173,91 @@ personas: []
 provider_name: Materials Project
 provider_slug: materials-project
 search_terms:
-- get defecttaskdoc documents
-- get absorptiondoc documents
-- get dielectricdoc documents
-- get xasdoc documents
-- search materials core formula autocomplete get
-- search materials surface properties get
-- search materials chemenv get
-- search materials dielectric get
-- get electronicstructuredoc documents
-- search materials core find structure post
-- search defects tasks get
-- get phononbsdosdoc documents
-- api
-- search molecules summary get
-- search doi get
-- search materials fermi get
-- get provenancedoc documents
-- get similaritydoc documents
-- search materials eos get
-- search materials oxidation states get
-- get materialsdoc documents
-- search materials substrates get
-- search materials tasks deprecation get
-- get moleculesdoc documents
-- search materials synthesis get
-- search materials core get
-- search materials bonds get
-- get doidoc documents
-- get thermodoc documents
+- get conversionelectrodedoc documents
+- search materials piezoelectric get
 - get fermidoc documents
-- search materials tasks get
-- get piezoelectricdoc documents
-- get trajectorydoc documents
+- search materials core get
+- api
+- search materials core blessed tasks get
+- search materials phonon get
+- get oxidationstatedoc documents
+- chemistry
+- project
+- search materials oxidation states get
 - search materials provenance get
-- search materials tasks trajectory get
-- search materials insertion electrodes get
-- get substratesdoc documents
+- materials science
+- search materials thermo get
+- get alloypairdoc documents
 - get elasticitydoc documents
+- search materials tasks get
+- search materials surface properties get
+- search molecules jcesr get
+- scientific computing
+- search materials robocrys get
+- get chemenvdoc documents
+- get electronicstructuredoc documents
+- get doidoc documents
+- search materials bonds get
+- get materialsdoc documents
+- get surfacepropdoc documents
+- search materials substrates get
+- get substratesdoc documents
+- get taskdoc documents
+- get absorptiondoc documents
+- search materials robocrys text search get
+- search materials absorption get
+- get piezoelectricdoc documents
+- get moleculesummarydoc documents
+- get summarydoc documents
 - search materials alloys get
-- get synthesissearchresultmodel documents
 - get grainboundarydoc documents
 - search materials summary get
-- search materials conversion electrodes get
-- get summarydoc documents
-- search materials tasks entries get
-- search materials grain boundaries get
-- search materials similarity get
-- get moleculesummarydoc documents
+- get defecttaskdoc documents
 - search materials electronic structure get
-- research
-- get magnetismdoc documents
-- get oxidationstatedoc documents
-- search materials similarity match get
-- search materials robocrys get
-- get robocrystallogapherdoc documents
-- search materials piezoelectric get
-- search materials xas get
-- get chemenvdoc documents
 - post findstructure documents
-- project
-- search materials magnetism get
-- get taskdoc documents
-- materials science
-- search materials phonon get
-- get formulaautocomplete documents
-- get insertionelectrodedoc documents
-- get entrydoc documents
-- search materials core blessed tasks get
-- get bondingdoc documents
-- get deprecationdoc documents
-- get conversionelectrodedoc documents
-- get eosdoc documents
-- scientific computing
-- materials
 - search materials elasticity get
-- search molecules jcesr get
-- search materials thermo get
-- physics
+- search materials grain boundaries get
+- get similaritydoc documents
+- get synthesissearchresultmodel documents
+- search molecules summary get
 - search materials electronic structure bandstruct
-- search materials robocrys text search get
+- search materials tasks entries get
+- physics
+- search materials fermi get
+- search materials eos get
+- search materials chemenv get
 - search materials electronic structure dos get
-- get surfacepropdoc documents
-- search materials absorption get
-- get alloypairdoc documents
-- chemistry
+- get provenancedoc documents
+- search materials dielectric get
+- search materials synthesis get
+- search materials conversion electrodes get
+- get entrydoc documents
+- get phononbsdosdoc documents
+- search defects tasks get
+- search doi get
+- get magnetismdoc documents
+- search materials tasks trajectory get
+- research
+- search materials core formula autocomplete get
+- search materials similarity match get
+- search materials magnetism get
+- get eosdoc documents
+- get trajectorydoc documents
+- get formulaautocomplete documents
+- get bondingdoc documents
+- search materials core find structure post
+- get dielectricdoc documents
+- get robocrystallogapherdoc documents
+- get moleculesdoc documents
+- search materials insertion electrodes get
+- search materials tasks deprecation get
+- materials
+- get insertionelectrodedoc documents
+- get thermodoc documents
+- search materials similarity get
+- get deprecationdoc documents
+- get xasdoc documents
+- search materials xas get
 slug: materials-project-capability
 source_filename: materials-project-capability.yaml
 source_heading: Capability Spec

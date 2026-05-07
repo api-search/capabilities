@@ -57,43 +57,43 @@ personas: []
 provider_name: Autodesk
 provider_slug: autodesk
 search_terms:
-- sustainability
-- construction
-- autodesk add project user
-- createcompany
-- autodesk list project users
-- manufacturing
-- updateprojectuser
-- digital twins
-- autodesk list companies
-- design
-- cad
-- autodesk create project
-- removeprojectuser
+- autodesk create company
+- autodesk update project user
 - autodesk list industry roles
 - engineering
-- updateproject
-- addprojectuser
 - getproject
-- getcompanies
-- autodesk create company
-- 3d modeling
-- autodesk update project user
-- autodesk update project
-- autodesk remove project user
-- getindustryroles
-- architecture
-- api
-- getprojectusers
-- bim
-- autodesk list projects
-- getaccountusers
-- autodesk
-- getprojects
-- autodesk list account users
-- autodesk get project
-- createproject
 - media and entertainment
+- autodesk list project users
+- autodesk add project user
+- autodesk create project
+- removeprojectuser
+- addprojectuser
+- api
+- autodesk
+- construction
+- getprojects
+- autodesk list projects
+- autodesk update project
+- design
+- getaccountusers
+- architecture
+- updateproject
+- manufacturing
+- autodesk list companies
+- updateprojectuser
+- getprojectusers
+- createcompany
+- autodesk list account users
+- cad
+- 3d modeling
+- getcompanies
+- sustainability
+- autodesk remove project user
+- bim
+- digital twins
+- autodesk get project
+- getindustryroles
+- createproject
 slug: autodesk-capability
 source_filename: autodesk-capability.yaml
 source_heading: Capability Spec

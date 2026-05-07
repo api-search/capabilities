@@ -13,16 +13,16 @@ personas: []
 provider_name: Google PageSpeed
 provider_slug: google-pagespeed
 search_terms:
-- page speed
-- lighthouse
 - runpagespeed
-- google pagespeed analyze page performance
-- google
-- api
 - seo
-- pagespeed
-- web performance
 - core web vitals
+- lighthouse
+- google
+- web performance
+- google pagespeed analyze page performance
+- api
+- page speed
+- pagespeed
 slug: google-pagespeed-capability
 source_filename: google-pagespeed-capability.yaml
 source_heading: Capability Spec

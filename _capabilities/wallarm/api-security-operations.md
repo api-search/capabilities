@@ -53,54 +53,54 @@ personas: []
 provider_name: Wallarm
 provider_slug: wallarm
 search_terms:
-- list configured security rules and virtual patches
-- create rule
-- vulnerability management
-- list security attacks detected by wallarm across api infrastructure
-- remove an ip address or subnet from a blocklist
-- list vulnerabilities detected across monitored apis
-- list security attacks detected by wallarm
-- add ip rule
-- attack detection
+- detected attack data
 - list vulnerabilities
-- list vulnerabilities detected across apis
-- list nodes
-- list all deployed wallarm filter nodes
-- list automated security alert triggers
-- delete rule
-- list triggers
-- list all entries in wallarm ip allowlists, denylists, and graylists
-- third-party security integrations
-- remove an ip rule from a list
-- add an ip address or subnet to the denylist
-- list ip rules from all ip lists
-- list attacks
 - list integrations
+- delete ip rule
+- security rule management
+- list all entries in wallarm ip allowlists, denylists, and graylists
+- incident response
+- create a new security rule or virtual patch
 - create security rule
-- wallarm filter node inventory
+- automated alert triggers
+- delete rule
+- third-party security integrations
+- list automated security alert triggers
+- list configured siem and notification integrations
+- list triggers
 - waf
+- list vulnerabilities detected across monitored apis
+- list all deployed wallarm filter nodes
+- list attacks
+- list all wallarm filter nodes deployed in the environment
+- remove an ip rule from a list
+- block ip address
+- delete a security rule by id
+- list all configured security rules and virtual patches
+- list vulnerabilities detected across apis
+- remove an ip address or subnet from a blocklist
+- security testing
+- list configured security rules and virtual patches
+- add ip rule
+- list rules
+- add an ip or subnet to a blocklist or allowlist
+- list ip rules
+- create rule
+- list configured automated security triggers
+- wallarm filter node inventory
+- api security
+- list security attacks detected by wallarm across api infrastructure
 - create a virtual patch or custom security rule to block an attack vector
 - ip list management (allowlist, denylist, graylist)
-- list all configured security rules and virtual patches
-- list all wallarm filter nodes deployed in the environment
-- automated alert triggers
-- delete ip rule
-- list configured siem and notification integrations
-- detected vulnerability data
-- list rules
-- create a new security rule or virtual patch
-- block ip address
-- api security
-- list ip rules
-- delete a security rule by id
-- incident response
-- add an ip or subnet to a blocklist or allowlist
-- list configured automated security triggers
-- detected attack data
+- attack detection
+- list nodes
 - cybersecurity
+- detected vulnerability data
+- list security attacks detected by wallarm
+- vulnerability management
 - remove ip block
-- security rule management
-- security testing
+- add an ip address or subnet to the denylist
+- list ip rules from all ip lists
 slug: api-security-operations
 source_filename: api-security-operations.yaml
 source_heading: Capability Spec

@@ -249,129 +249,129 @@ personas: []
 provider_name: Bluesky
 provider_slug: bluesky
 search_terms:
-- bluesky get a list of reposts for a given post.
-- actorsearchactorstypeahead
-- graphgetfollowers
-- bluesky get a hydrated feed from an actor's selected feed generator.
-- bluesky get like records which reference a subject (by at-uri and cid).
-- feedsearchposts
-- at-protocol
-- notificationgetunreadcount
-- bluesky get mod lists that the requesting account (actor) is blocking.
-- bluesky enumerates accounts which follow a specified account (actor).
-- feedgetlikes
-- graphgetsuggestedfollowsbyactor
-- bluesky get status details for a video processing job.
-- feedgetauthorfeed
-- bluesky enumerates mod lists that the requesting account (actor) currently has muted.
-- bluesky count the number of unread notifications for the requesting account.
-- api
-- feedgetfeed
-- graphgetmutes
-- notificationupdateseen
-- graphmutethread
-- bluesky get views for a list of starter packs.
-- bluesky enumerates accounts which follow a specified account (actor) and are followed by the viewer.
-- bluesky send information about interactions with feed items back to the feed generator that served them.
-- feedgetfeedgenerators
-- videogetuploadlimits
-- graphgetlistmutes
-- actorgetpreferences
-- feedgetrepostedby
-- feedgetlistfeed
-- decentralized
-- graphgetlist
-- bluesky unmutes the specified list of accounts.
-- bluesky enumerates the lists created by a specified account (actor).
-- notificationputpreferences
-- graphgetblocks
-- bluesky get a view of an actor's 'author feed' (post and reposts by the author).
-- bluesky get posts in a thread.
-- graphunmuteactorlist
-- bluesky unmutes the specified account.
-- chatactorexportaccountdata
-- actorsearchactors
-- graphgetrelationships
-- notificationregisterpush
-- graphgetknownfollowers
-- bluesky enumerates which accounts the requesting account is currently blocking.
-- chatconvogetconvo
-- social-media
-- graphgetfollows
-- videogetjobstatus
-- graphmuteactor
-- bluesky get a list of feeds (feed generator records) created by the actor (in the actor's repo).
-- bluesky get detailed profile views of multiple actors.
-- bluesky get information about a feed generator, including policies and offered feed uris.
-- bluesky set the private preferences attached to the account.
-- bluesky get a view of the requesting account's home timeline.
-- federated
-- bluesky get a list of suggested feeds (feed generators) for the requesting account.
-- actorputpreferences
-- bluesky mutes a thread preventing notifications from the thread and any of its children.
-- bluesky get a feed of recent posts from a list (posts and reposts from any actors on the list).
-- graphunmutethread
-- bluesky get video upload limits for the authenticated user.
-- bluesky gets a view of a starter pack.
-- bluesky get a list of starter packs created by the actor.
-- bluesky find actor suggestions for a prefix search term.
-- bluesky upload a video to be processed then stored on the pds.
-- feedgetfeedskeleton
-- feedgetactorlikes
-- graphgetlistblocks
-- bluesky gets a 'view' (with additional context) of a specified list.
-- actorgetprofile
-- bluesky gets post views for a specified list of posts (by at-uri).
-- chatconvogetlog
-- graphunmuteactor
-- bluesky find posts matching search criteria, returning views of those posts.
-- bluesky unmutes the specified thread.
-- graphmuteactorlist
-- chatactordeleteaccount
-- bluesky notify server that the requesting account has seen notifications.
-- bluesky creates a mute relationship for the specified list of accounts.
-- graphgetlists
-- social networks
-- bluesky get information about a list of labeler services.
-- bluesky get information about a list of feed generators.
-- bluesky operation
-- graphgetstarterpack
-- bluesky register to receive push notifications, via a specified service, for the requesting account.
-- bluesky find actors (profiles) matching search criteria.
-- bluesky set notification-related preferences for an account.
-- bluesky enumerates accounts which a specified account (actor) follows.
 - feedgetfeedgenerator
-- feedgettimeline
-- videouploadvideo
-- feeddescribefeedgenerator
+- feedgetlistfeed
+- bluesky get information about a feed generator, including policies and offered feed uris.
+- bluesky get video upload limits for the authenticated user.
+- api
+- graphgetlist
 - bluesky get a list of posts liked by an actor.
-- bluesky creates a mute relationship for the specified account.
-- feedgetactorfeeds
-- notificationlistnotifications
-- bluesky enumerates accounts that the requesting account (actor) currently has muted.
-- feedgetquotes
-- bluesky get a skeleton of a feed provided by a feed generator.
-- bluesky
+- bluesky count the number of unread notifications for the requesting account.
 - chatconvodeletemessageforself
-- bluesky enumerate notifications for the requesting account.
-- feedgetsuggestedfeeds
-- bluesky enumerates public relationships between one account, and a list of other accounts.
-- feedsendinteractions
-- bluesky enumerates follows similar to a given account (actor).
-- feedgetposts
-- actorgetprofiles
-- bluesky get private preferences attached to the current account.
-- actorgetsuggestions
-- graphgetactorstarterpacks
-- feedgetpostthread
-- chatconvogetconvoformembers
-- open-source
-- labelergetservices
-- bluesky get information about a feed generator.
+- bluesky unmutes the specified thread.
+- feedgetfeed
+- bluesky get a hydrated feed from an actor's selected feed generator.
+- bluesky enumerates accounts which follow a specified account (actor).
+- social-media
+- decentralized
+- feedgetauthorfeed
+- bluesky gets post views for a specified list of posts (by at-uri).
+- graphgetmutes
+- graphgetlistblocks
+- feedgetfeedgenerators
+- bluesky find actors (profiles) matching search criteria.
+- bluesky get a skeleton of a feed provided by a feed generator.
+- bluesky enumerates accounts which follow a specified account (actor) and are followed by the viewer.
+- graphmutethread
+- bluesky upload a video to be processed then stored on the pds.
+- graphmuteactor
+- bluesky get a view of an actor's 'author feed' (post and reposts by the author).
+- bluesky creates a mute relationship for the specified list of accounts.
+- actorputpreferences
 - bluesky get detailed profile view of an actor.
-- bluesky get a list of suggested actors.
-- bluesky get a list of quotes for a given post.
+- chatconvogetlog
+- graphmuteactorlist
+- feedgetpostthread
+- bluesky get a list of feeds (feed generator records) created by the actor (in the actor's repo).
+- videogetuploadlimits
+- actorsearchactorstypeahead
+- graphgetblocks
+- graphgetlists
+- videogetjobstatus
+- labelergetservices
+- bluesky get a view of the requesting account's home timeline.
+- bluesky mutes a thread preventing notifications from the thread and any of its children.
+- feedgetactorfeeds
+- feedgettimeline
+- bluesky send information about interactions with feed items back to the feed generator that served them.
+- graphgetstarterpack
+- social networks
+- bluesky enumerates accounts that the requesting account (actor) currently has muted.
+- bluesky
+- notificationputpreferences
+- chatconvogetconvoformembers
+- feedgetfeedskeleton
+- actorgetprofiles
 - graphgetstarterpacks
+- bluesky enumerates accounts which a specified account (actor) follows.
+- bluesky set the private preferences attached to the account.
+- graphgetrelationships
+- graphunmutethread
+- feedgetlikes
+- graphgetknownfollowers
+- feedgetrepostedby
+- bluesky get information about a list of feed generators.
+- feedgetquotes
+- graphgetsuggestedfollowsbyactor
+- bluesky enumerates follows similar to a given account (actor).
+- notificationgetunreadcount
+- actorgetpreferences
+- bluesky gets a view of a starter pack.
+- feeddescribefeedgenerator
+- notificationupdateseen
+- bluesky get like records which reference a subject (by at-uri and cid).
+- bluesky get a list of suggested actors.
+- notificationregisterpush
+- graphgetlistmutes
+- chatconvogetconvo
+- feedsendinteractions
+- graphunmuteactorlist
+- open-source
+- bluesky get a list of reposts for a given post.
+- bluesky get views for a list of starter packs.
+- chatactordeleteaccount
+- graphunmuteactor
+- bluesky enumerates the lists created by a specified account (actor).
+- bluesky get mod lists that the requesting account (actor) is blocking.
+- bluesky get information about a feed generator.
+- bluesky get posts in a thread.
+- feedgetposts
+- graphgetfollows
+- bluesky notify server that the requesting account has seen notifications.
+- bluesky get private preferences attached to the current account.
+- bluesky enumerates mod lists that the requesting account (actor) currently has muted.
+- graphgetactorstarterpacks
+- bluesky get a list of quotes for a given post.
+- federated
+- bluesky get status details for a video processing job.
+- at-protocol
+- actorgetsuggestions
+- bluesky unmutes the specified list of accounts.
+- feedgetsuggestedfeeds
+- bluesky get a feed of recent posts from a list (posts and reposts from any actors on the list).
+- actorsearchactors
+- bluesky creates a mute relationship for the specified account.
+- bluesky gets a 'view' (with additional context) of a specified list.
+- bluesky unmutes the specified account.
+- feedgetactorlikes
+- videouploadvideo
+- bluesky get detailed profile views of multiple actors.
+- bluesky find actor suggestions for a prefix search term.
+- bluesky get a list of suggested feeds (feed generators) for the requesting account.
+- bluesky operation
+- notificationlistnotifications
+- bluesky find posts matching search criteria, returning views of those posts.
+- bluesky enumerate notifications for the requesting account.
+- feedsearchposts
+- bluesky enumerates which accounts the requesting account is currently blocking.
+- bluesky get a list of starter packs created by the actor.
+- graphgetfollowers
+- bluesky enumerates public relationships between one account, and a list of other accounts.
+- bluesky register to receive push notifications, via a specified service, for the requesting account.
+- bluesky get information about a list of labeler services.
+- chatactorexportaccountdata
+- bluesky set notification-related preferences for an account.
+- actorgetprofile
 slug: bluesky-capability
 source_filename: bluesky-capability.yaml
 source_heading: Capability Spec

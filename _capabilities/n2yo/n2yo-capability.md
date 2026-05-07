@@ -29,21 +29,21 @@ personas: []
 provider_name: N2YO
 provider_slug: n2yo
 search_terms:
+- space
+- n2yo
+- get visual passes
+- get tle for a satellite
 - getpositions
-- gettle
+- getvisualpasses
+- getradiopasses
 - satellites
 - get satellite positions
-- get tle for a satellite
-- api
-- get radio passes
-- space
-- get visual passes
 - getabove
-- getvisualpasses
-- n2yo
-- tracking
-- getradiopasses
 - what's up - satellites overhead
+- api
+- gettle
+- tracking
+- get radio passes
 slug: n2yo-capability
 source_filename: n2yo-capability.yaml
 source_heading: Capability Spec

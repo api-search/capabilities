@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- bloomberg aim
+- governance
+- agent skill
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
 - nwm
 - list positions
-- api integration
-- governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
-- agent skill
+- naftiko
+- bloomberg aim
 slug: nwm-bloomberg-aim-portfolio-position-agent-skill
 source_filename: nwm-bloomberg-aim-portfolio-position-agent-skill.yaml
 source_heading: Capability Spec

@@ -29,39 +29,39 @@ personas: []
 provider_name: SAML
 provider_slug: saml
 search_terms:
-- initiate saml sso via http redirect binding
-- process acs response
-- open standard
-- process saml response at assertion consumer service
-- initiate single logout
-- initiate sp-to-idp sso using http post binding
-- process an incoming saml response at the assertion consumer service endpoint
-- assertion consumer service - process incoming saml responses from idp
-- get idp metadata
-- xml
-- identity management
 - oasis
-- security
+- initiate sp-to-idp sso using http redirect binding
+- initiate or process saml single logout
+- process an incoming saml response at the assertion consumer service endpoint
+- open standard
+- initiate sp-to-idp sso using http post binding
+- saml
+- initiate saml sso via http redirect binding
+- initiate sso redirect
+- submit saml authnrequest via http post binding
+- saml entitydescriptor metadata for federation configuration
+- retrieve saml 2.0 entitydescriptor metadata from the identity provider for federation setup
+- identity management
+- authentication
+- sso
 - initiate saml single logout via http redirect binding
+- get idp metadata
+- process saml response
+- single logout - initiate or receive saml logout
+- initiate sso post
+- assertion consumer service - process incoming saml responses from idp
+- process acs response
+- xml
 - initiate slo
 - initiate saml 2.0 sso using the http post binding with a base64-encoded authnrequest
-- initiate saml 2.0 sso using the http redirect binding with a deflated authnrequest
-- retrieve saml entitydescriptor metadata from identity provider
-- saml
-- sso
-- single logout - initiate or receive saml logout
-- saml entitydescriptor metadata for federation configuration
-- single sign-on
-- authorization
-- authentication
-- initiate or process saml single logout
-- initiate sp-to-idp sso using http redirect binding
-- process saml response
-- initiate sso post
-- submit saml authnrequest via http post binding
 - federation
-- initiate sso redirect
-- retrieve saml 2.0 entitydescriptor metadata from the identity provider for federation setup
+- authorization
+- initiate single logout
+- retrieve saml entitydescriptor metadata from identity provider
+- process saml response at assertion consumer service
+- single sign-on
+- security
+- initiate saml 2.0 sso using the http redirect binding with a deflated authnrequest
 slug: single-sign-on
 source_filename: single-sign-on.yaml
 source_heading: Capability Spec

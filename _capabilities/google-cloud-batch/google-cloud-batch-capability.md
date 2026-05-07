@@ -33,27 +33,27 @@ personas: []
 provider_name: Google Cloud Batch
 provider_slug: google-cloud-batch
 search_terms:
-- compute
+- listtasks
+- api
+- google cloud batch delete job
+- batch
+- hpc
 - gettask
 - listjobs
-- batch
-- google cloud batch get job
-- google cloud batch list tasks
-- cloud
 - google
-- hpc
-- api
-- google cloud batch list jobs
-- listtasks
 - google cloud batch create job
-- google cloud batch get task
+- google cloud batch get job
+- cloud
+- google cloud batch list tasks
 - deletejob
+- compute
 - getjob
-- batch processing
-- google cloud batch delete job
 - jobs
-- createjob
+- google cloud batch get task
+- google cloud batch list jobs
 - google cloud
+- createjob
+- batch processing
 slug: google-cloud-batch-capability
 source_filename: google-cloud-batch-capability.yaml
 source_heading: Capability Spec

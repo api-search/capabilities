@@ -73,48 +73,48 @@ personas: []
 provider_name: Zeebe
 provider_slug: zeebe
 search_terms:
-- zeebe create a process instance
-- zeebe migrate a process instance
-- migrateprocessinstance
-- zeebe broadcast a signal
-- completeusertask
-- distributed systems
-- zeebe assign a user task
-- java
-- camunda
-- zeebe complete a job
-- completejob
-- activatejobs
-- zeebe deploy resources
-- zeebe fail a job
+- createprocessinstance
 - cancelprocessinstance
-- deployresources
-- deleteresource
-- zeebe resolve an incident
-- cloud native
-- bpmn
-- workflow orchestration
-- throwerror
-- zeebe throw error for a job
-- resolveincident
-- zeebe complete a user task
-- process automation
+- distributed systems
+- publishmessage
+- zeebe update job retries
+- zeebe broadcast a signal
 - api
-- zeebe delete a resource
+- zeebe fail a job
+- zeebe activate jobs
+- cloud native
+- java
+- zeebe complete a user task
+- bpmn
+- camunda
+- zeebe assign a user task
+- completejob
+- workflow orchestration
+- assignusertask
+- zeebe
+- zeebe create a process instance
+- process automation
+- failjob
+- zeebe cancel a process instance
+- deployresources
 - zeebe get cluster topology
+- resolveincident
+- zeebe resolve an incident
 - zeebe publish a message
 - gettopology
-- failjob
-- zeebe
+- throwerror
+- zeebe deploy resources
+- zeebe migrate a process instance
 - updatejobretries
-- createprocessinstance
-- zeebe cancel a process instance
-- zeebe activate jobs
-- broadcastsignal
-- publishmessage
+- deleteresource
 - microservices
-- assignusertask
-- zeebe update job retries
+- zeebe throw error for a job
+- zeebe delete a resource
+- completeusertask
+- broadcastsignal
+- zeebe complete a job
+- migrateprocessinstance
+- activatejobs
 slug: zeebe-capability
 source_filename: zeebe-capability.yaml
 source_heading: Capability Spec

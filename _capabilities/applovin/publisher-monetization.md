@@ -37,43 +37,43 @@ personas: []
 provider_name: AppLovin
 provider_slug: applovin
 search_terms:
-- list max ad units.
-- register a test device.
-- max revenue analytics.
-- max
-- conversion tracking
-- get a max ad unit by id.
-- single max ad unit.
-- get aggregated max revenue rows.
-- create an ad unit.
-- update a max ad unit (partial).
-- user acquisition
-- create a new max ad unit.
-- create ad unit
-- adtech
-- list max test devices.
-- max test devices.
-- get ad unit
-- get a single ad unit by id.
-- get revenue report
-- monetization
 - app monetization
-- update an ad unit.
-- advertising
-- list test devices.
+- get ad unit
+- user acquisition
+- conversion tracking
+- get revenue report
+- get a single ad unit by id.
 - list ad units.
-- list ad units
-- get max revenue report rows.
-- marketing technology
-- register a new max test device.
-- applovin
+- get a max ad unit by id.
 - mobile
-- create test device
+- max revenue analytics.
+- update a max ad unit (partial).
+- applovin
+- create a new max ad unit.
+- update an ad unit.
+- create an ad unit.
+- adtech
+- register a new max test device.
+- create ad unit
+- list max ad units.
 - max ad units.
+- list test devices.
+- list max test devices.
+- get max revenue report rows.
+- max
+- list ad units
 - update ad unit
-- publisher
-- mediation
+- monetization
+- max test devices.
+- register a test device.
+- get aggregated max revenue rows.
+- create test device
 - list test devices
+- publisher
+- advertising
+- mediation
+- marketing technology
+- single max ad unit.
 slug: publisher-monetization
 source_filename: publisher-monetization.yaml
 source_heading: Capability Spec

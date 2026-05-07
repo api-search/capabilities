@@ -49,34 +49,34 @@ personas: []
 provider_name: Google Cloud Bigtable
 provider_slug: google-cloud-bigtable
 search_terms:
-- listclusters
-- google cloud bigtable list tables
-- google cloud bigtable get a table
-- deleteinstance
-- wide column
-- createtable
-- google cloud bigtable delete an instance
-- google cloud bigtable create a table
-- cloud
-- google
-- google cloud bigtable list instances
-- createinstance
-- google cloud bigtable update an instance
-- google cloud
 - updateinstance
-- nosql
-- getinstance
-- gettable
+- createinstance
 - bigtable
-- database
-- google cloud bigtable delete a table
+- google cloud bigtable update an instance
 - api
 - google cloud bigtable list clusters
-- deletetable
-- listinstances
+- deleteinstance
+- google cloud bigtable delete a table
+- createtable
+- google
+- getinstance
+- listclusters
+- google cloud bigtable list tables
+- google cloud bigtable list instances
+- wide column
 - listtables
 - google cloud bigtable create an instance
+- google cloud bigtable delete an instance
+- cloud
 - google cloud bigtable get an instance
+- database
+- deletetable
+- google cloud bigtable create a table
+- nosql
+- google cloud
+- listinstances
+- gettable
+- google cloud bigtable get a table
 slug: google-cloud-bigtable-capability
 source_filename: google-cloud-bigtable-capability.yaml
 source_heading: Capability Spec

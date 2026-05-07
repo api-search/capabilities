@@ -65,42 +65,42 @@ personas: []
 provider_name: Google Cloud Run
 provider_slug: google-cloud-run
 search_terms:
-- getrevision
+- google cloud run create a job
+- deleterevision
 - google cloud run get a job
-- updatejob
-- runjob
-- google cloud run list services
+- containers
+- google cloud run delete a job
+- getservice
+- api
+- run
+- google cloud run update a job
+- google cloud run update a service
 - listjobs
+- google
+- updatejob
+- cloud run
+- updateservice
+- serverless
+- google cloud run delete a revision
+- getrevision
+- createjob
 - google cloud run get a revision
 - google cloud run list revisions
-- google cloud run list jobs
-- google cloud run delete a service
-- serverless
-- cloud
 - listrevisions
-- getservice
-- google
-- containers
-- deleteservice
-- google cloud run create a job
-- google cloud run update a service
-- google cloud
-- google cloud run create a service
-- api
-- google cloud run delete a revision
-- updateservice
-- deletejob
-- getjob
-- deleterevision
+- runjob
 - google cloud run run a job
+- cloud
+- deletejob
+- google cloud run delete a service
+- getjob
+- google cloud run list jobs
+- google cloud run list services
 - google cloud run get a service
-- createjob
-- listservices
-- google cloud run update a job
-- run
+- google cloud
+- deleteservice
 - createservice
-- cloud run
-- google cloud run delete a job
+- google cloud run create a service
+- listservices
 slug: google-cloud-run-capability
 source_filename: google-cloud-run-capability.yaml
 source_heading: Capability Spec

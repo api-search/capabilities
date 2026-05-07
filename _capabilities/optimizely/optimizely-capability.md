@@ -73,47 +73,47 @@ personas: []
 provider_name: Optimizely
 provider_slug: optimizely
 search_terms:
-- pausesmartcampaign
-- pause a smart campaign
-- addrecipient
 - startsmartcampaign
-- a/b testing
-- list smart campaigns
-- get a mailing list
-- list unsubscribes
-- customer data
+- feature flags
+- get a recipient
+- start a smart campaign
 - experimentation
+- sendtransactionalmail
+- list recipients
+- addunsubscribe
+- api
+- pausesmartcampaign
+- deleterecipient
+- uploadasset
+- list mailing lists
+- upload an asset
+- send a transactional mail
+- update a recipient
+- listunsubscribes
+- getrecipient
+- get a mailing list
+- add a recipient
+- listrecipients
+- e-commerce
+- listmailinglists
+- delete a recipient
+- listassets
+- addrecipient
+- a/b testing
+- content management
 - marketing
 - add an unsubscribe
-- update a recipient
-- get a smart campaign
-- getsmartcampaign
-- e-commerce
-- delete a recipient
-- uploadasset
-- listmailinglists
-- content management
-- start a smart campaign
-- listassets
-- deleterecipient
-- api
-- listsmartcampaigns
-- send a transactional mail
-- list recipients
-- list assets
-- get a recipient
-- optimizely
-- feature flags
-- add a recipient
+- pause a smart campaign
 - updaterecipient
-- listrecipients
-- listunsubscribes
+- optimizely
+- list smart campaigns
+- list unsubscribes
 - getmailinglist
-- getrecipient
-- sendtransactionalmail
-- upload an asset
-- list mailing lists
-- addunsubscribe
+- listsmartcampaigns
+- customer data
+- getsmartcampaign
+- list assets
+- get a smart campaign
 slug: optimizely-capability
 source_filename: optimizely-capability.yaml
 source_heading: Capability Spec

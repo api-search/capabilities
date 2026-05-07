@@ -53,34 +53,34 @@ personas: []
 provider_name: Oxylabs
 provider_slug: oxylabs
 search_terms:
-- getsubusertargetstats
-- get client statistics
-- listsubusers
-- getclientstats
-- deletesubuser
-- get usage statistics
 - residential api login
-- data extraction
-- create a sub-user
-- list sub-users
-- residentiallogin
-- delete sub-user
-- oxylabs
-- submitquery
-- update sub-user
-- api
-- scraping
-- list statistics filter instances
-- updatesubuser
-- getsubuser
-- liststatsfilters
-- getusagestats
-- web intelligence
 - submit a scraping job
-- get sub-user target statistics
-- proxies
-- createsubuser
+- list sub-users
+- getsubusertargetstats
+- listsubusers
+- deletesubuser
+- api
+- delete sub-user
+- create a sub-user
+- list statistics filter instances
 - get sub-user
+- data extraction
+- getsubuser
+- scraping
+- updatesubuser
+- submitquery
+- residentiallogin
+- liststatsfilters
+- getclientstats
+- update sub-user
+- get sub-user target statistics
+- get client statistics
+- get usage statistics
+- oxylabs
+- createsubuser
+- proxies
+- web intelligence
+- getusagestats
 slug: oxylabs-capability
 source_filename: oxylabs-capability.yaml
 source_heading: Capability Spec

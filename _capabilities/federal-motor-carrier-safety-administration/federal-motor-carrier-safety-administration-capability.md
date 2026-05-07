@@ -37,28 +37,28 @@ personas: []
 provider_name: Federal Motor Carrier Safety Administration
 provider_slug: federal-motor-carrier-safety-administration
 search_terms:
-- carrier
 - getcarrierdocketnumbers
-- get operation classification for a carrier
-- getcarrieroos
-- motor
-- get carrier authority
-- get out-of-service info for a carrier
-- searchcarriersbyname
-- transportation
-- get cargo carried for a carrier
-- api
-- getcarrierauthority
-- getcarriercargocarried
-- administration
-- safety
-- getcarrierbydotnumber
-- federal government
 - get carrier by dot number
-- getcarrieroperationclassification
-- get docket numbers for a carrier
+- searchcarriersbyname
 - federal
+- api
+- safety
+- getcarriercargocarried
+- carrier
+- get operation classification for a carrier
+- administration
+- getcarrieroos
+- transportation
+- get carrier authority
 - search carriers by name
+- motor
+- getcarrieroperationclassification
+- getcarrierauthority
+- get docket numbers for a carrier
+- federal government
+- get out-of-service info for a carrier
+- getcarrierbydotnumber
+- get cargo carried for a carrier
 slug: federal-motor-carrier-safety-administration-capability
 source_filename: federal-motor-carrier-safety-administration-capability.yaml
 source_heading: Capability Spec

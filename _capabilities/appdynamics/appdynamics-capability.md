@@ -69,46 +69,46 @@ personas: []
 provider_name: AppDynamics
 provider_slug: appdynamics
 search_terms:
-- update a health rule
-- apm
-- get a specific policy
-- list actions for an application
-- updatehealthrule
-- createpolicy
-- list health rules for an application
-- get a specific action
-- devops
-- createaction
-- application performance monitoring
-- delete a policy
-- getaction
-- listpolicies
-- cisco
-- listactions
-- monitoring
-- updatepolicy
-- createhealthrule
-- create an action
-- getpolicy
 - opentelemetry
-- update an action
-- get a specific health rule
-- list policies for an application
-- api
-- create a health rule
-- observability
-- create a policy
-- cloud observability
+- createhealthrule
+- devops
+- listpolicies
 - appdynamics
-- updateaction
-- delete a health rule
-- deletepolicy
-- update a policy
-- gethealthrule
 - deletehealthrule
-- deleteaction
-- delete an action
+- createaction
+- api
+- list actions for an application
+- create an action
+- apm
+- monitoring
+- deletepolicy
+- getpolicy
+- updatepolicy
+- application performance monitoring
+- cloud observability
 - listhealthrules
+- observability
+- listactions
+- get a specific action
+- list health rules for an application
+- create a policy
+- getaction
+- createpolicy
+- updateaction
+- gethealthrule
+- create a health rule
+- delete a policy
+- deleteaction
+- updatehealthrule
+- cisco
+- delete an action
+- update a health rule
+- get a specific health rule
+- update a policy
+- get a specific policy
+- list policies for an application
+- delete a health rule
+- update an action
 slug: appdynamics-capability
 source_filename: appdynamics-capability.yaml
 source_heading: Capability Spec

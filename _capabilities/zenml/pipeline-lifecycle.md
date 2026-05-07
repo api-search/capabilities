@@ -9,13 +9,13 @@ personas: []
 provider_name: ZenML
 provider_slug: zenml
 search_terms:
-- pipelines
-- machine learning
+- open source
 - mlops
-- ai
 - python
 - llmops
-- open source
+- pipelines
+- ai
+- machine learning
 slug: pipeline-lifecycle
 source_filename: pipeline-lifecycle.yaml
 source_heading: Capability Spec

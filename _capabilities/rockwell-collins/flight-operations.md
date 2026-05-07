@@ -53,66 +53,66 @@ personas: []
 provider_name: Rockwell Collins
 provider_slug: rockwell-collins
 search_terms:
-- list airports
-- get a list of all airports
-- flight tracking
-- search flights
-- get delay information for all airports with current delays
-- flight operations
-- specific flight information
-- get all delays
-- list all configured flight alerts
-- create a new flight event alert for departure, arrival, or route changes
-- defense
-- aviation
-- get airport
-- get position track of a flight
-- search for airborne flights by criteria including location, airline, and aircraft type
-- flight deck
-- current flight position data
-- get static information about an airport
-- get the current real-time position and altitude for a flight
-- airport delay monitoring
-- delete a configured flight event alert
-- get all current flights for an operator/airline
-- flight search and real-time tracking
-- get current weather conditions and forecast for an airport
-- flight position track history
-- get operator flights
 - aerospace
+- search flights
+- delete a configured flight event alert
+- get flight position
+- list airports
+- get information about a specific operator
+- create alert
+- get delay information for all airports with current delays
+- flight search and real-time tracking
+- get the current real-time position and altitude for a flight
+- get detailed information for a specific flight
+- get all flights arriving or departing from an airport
+- get operator flights
+- get detailed information about an airport by icao or iata code
 - get current delay information for a specific airport
 - flightaware
-- get current weather conditions for an airport
-- delete alert
-- flight event alert management
-- collins aerospace
-- create a new flight event alert
-- get information about an airline or operator including fleet and routes
-- get airport weather
 - get flight route
-- airport weather conditions
-- get information about a specific operator
-- get airport delays
-- avionics
-- get flight track
-- create alert
-- airline and operator information
-- list all configured flight event alerts
-- get flight position
 - get the filed route for a specific flight
-- get detailed information for a specific flight including status, route, and timing
-- get airport flights
-- get all flights arriving or departing from an airport
-- get flight
 - get the full position track history of a flight
-- get detailed information about an airport by icao or iata code
+- get static information about an airport
+- create a new flight event alert
+- get all delays
+- list all configured flight alerts
+- get airport flights
+- delete alert
+- airline and operator information
+- collins aerospace
+- get airport
+- current flight position data
+- get operator
+- flight event alert management
+- get information about an airline or operator including fleet and routes
+- flight operations
+- get all current flights for an operator/airline
+- get position track of a flight
+- get current weather conditions for an airport
+- flight tracking
+- get flight
+- flight position track history
+- search for airborne flights by criteria including location, airline, and aircraft type
+- airport directory and information
+- list alerts
+- aviation
+- get current weather conditions and forecast for an airport
+- get a list of all airports
+- defense
+- get flight track
+- get detailed information for a specific flight including status, route, and timing
+- get airport weather
+- get current real-time position for a flight
+- airport delay monitoring
+- airport weather conditions
+- get airport delays
+- specific flight information
+- flight deck
+- list all configured flight event alerts
+- create a new flight event alert for departure, arrival, or route changes
+- avionics
 - search for airborne flights by location, airline, aircraft type, or route
 - individual airport information
-- list alerts
-- get current real-time position for a flight
-- get operator
-- airport directory and information
-- get detailed information for a specific flight
 slug: flight-operations
 source_filename: flight-operations.yaml
 source_heading: Capability Spec

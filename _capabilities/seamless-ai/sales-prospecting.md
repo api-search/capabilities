@@ -29,36 +29,36 @@ personas: []
 provider_name: Seamless.AI
 provider_slug: seamless-ai
 search_terms:
+- list job changes
+- research company
+- enrich company with revenue, employees, and tech stack
+- enrich contact records with verified data
+- enrich company records with firmographic data
+- get full contact profile with verified emails, direct dials, and job history
+- contact data
+- b2b
+- job change intelligence for warm outreach
 - search for target companies by name, domain, industry, size, or location
 - crm enrichment
-- search contacts
-- enrich contact records with verified data
-- job change intelligence for warm outreach
-- list job changes
-- list contacts with recent job changes
-- search companies
-- get full company profile with firmographics, revenue, employee count, and technology stack
-- enrich contact with emails and phone numbers
-- search contacts by name, company, title, and location
-- b2b
-- enrich company
-- search for b2b contacts
-- enrich an existing contact in your crm with missing emails, phones, and titles
-- prospecting
-- enrich company records with firmographic data
-- sales intelligence
 - search for b2b contacts by name, company, title, or location to build prospect lists
-- search for companies
-- research contact
-- get full contact profile with verified emails, direct dials, and job history
-- lead generation
-- enrich an existing company record with verified firmographic data
-- enrich contact
+- enrich company
+- search contacts by name, company, title, and location
 - search companies by name, domain, or industry
-- contact data
+- prospecting
+- search for companies
+- search for b2b contacts
+- enrich contact
+- get full company profile with firmographics, revenue, employee count, and technology stack
+- search companies
+- enrich contact with emails and phone numbers
+- enrich an existing contact in your crm with missing emails, phones, and titles
+- sales intelligence
+- search contacts
+- list contacts with recent job changes
+- enrich an existing company record with verified firmographic data
 - identify warm prospects who have recently changed jobs for timely outreach
-- enrich company with revenue, employees, and tech stack
-- research company
+- lead generation
+- research contact
 slug: sales-prospecting
 source_filename: sales-prospecting.yaml
 source_heading: Capability Spec

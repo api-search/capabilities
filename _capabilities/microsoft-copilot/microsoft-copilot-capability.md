@@ -33,29 +33,29 @@ personas: []
 provider_name: Microsoft Copilot
 provider_slug: microsoft-copilot
 search_terms:
-- agents
-- microsoft 365
-- microsoft copilot perform hybrid search
-- generative ai
-- copilot search
-- microsoft copilot retrieve grounding data
-- chatbot
-- artificial intelligence
-- productivity
-- copilot changenotifications createsubscription
-- microsoft copilot list all enterprise copilot interactions
-- copilot retrieval
-- copilot chat continueconversation
-- api
-- copilot chat startconversation
 - extensibility
-- microsoft copilot continue a chat conversation
+- copilot chat continueconversation
+- copilot search
+- microsoft 365
 - microsoft copilot start a chat conversation
+- api
+- copilot changenotifications createsubscription
+- copilot chat startconversation
+- ai assistant
+- artificial intelligence
+- chatbot
+- productivity
+- microsoft
+- microsoft copilot list all enterprise copilot interactions
+- microsoft copilot perform hybrid search
+- agents
+- generative ai
 - copilot interactionhistory getallenterpriseinter
 - copilot
+- copilot retrieval
+- microsoft copilot continue a chat conversation
 - microsoft copilot create subscription for copilot interaction notifications
-- ai assistant
-- microsoft
+- microsoft copilot retrieve grounding data
 slug: microsoft-copilot-capability
 source_filename: microsoft-copilot-capability.yaml
 source_heading: Capability Spec

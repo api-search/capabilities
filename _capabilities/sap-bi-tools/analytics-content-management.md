@@ -33,39 +33,39 @@ personas: []
 provider_name: SAP BI Tools
 provider_slug: sap-bi-tools
 search_terms:
+- analytics
+- content network items.
+- get a story by id.
+- import a content package from the content network into the local tenant.
+- list calendar events and planning tasks.
+- list resources
+- list all analytics stories on the tenant.
+- sap
+- business intelligence
+- list planning calendar events and collaborative tasks.
 - single analytics story.
-- list content network items.
 - import content item
+- file repository resources.
+- list content network items.
+- single content network item.
+- get a content item by id.
+- publish content item
+- get details of a specific analytics story by id.
+- publish a local analytics artifact to the content network for sharing.
+- list calendars
+- list stories
+- get story
+- content management
 - get content item
 - reporting
-- list all analytics stories on the sap analytics cloud tenant.
-- analytics
-- list repository resources (stories, models, folders).
-- get story
-- single content network item.
+- list content items in the sap analytics cloud content network.
+- analytics story management.
 - list file repository resources (stories, models, folders).
 - planning calendars.
-- publish content item
-- list content items in the sap analytics cloud content network.
-- list planning calendar events and collaborative tasks.
-- content management
-- publish a local analytics artifact to the content network for sharing.
-- data visualization
-- list resources
-- analytics story management.
-- get details of a specific analytics story by id.
-- list stories
-- import a content package from the content network into the local tenant.
-- file repository resources.
-- sap
-- list calendars
-- get a content item by id.
-- content network items.
-- business intelligence
-- list calendar events and planning tasks.
+- list all analytics stories on the sap analytics cloud tenant.
+- list repository resources (stories, models, folders).
 - list content items
-- get a story by id.
-- list all analytics stories on the tenant.
+- data visualization
 slug: analytics-content-management
 source_filename: analytics-content-management.yaml
 source_heading: Capability Spec

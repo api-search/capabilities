@@ -33,22 +33,22 @@ personas: []
 provider_name: Messaging API
 provider_slug: messaging-api
 search_terms:
-- messaging api retrieve message
+- messaging api create message
+- messaging api retrieves messages
+- sendmessage
+- messaging api send message
 - template
-- getmessages
-- createmessage
-- messaging
+- messaging api retrieve message
+- deletemessage
 - getmessage
 - messaging api update message
 - updatemessage
-- messaging api delete message
-- messaging api send message
+- messaging
 - api
-- sendmessage
-- messaging api retrieves messages
-- deletemessage
+- messaging api delete message
+- getmessages
 - api pattern
-- messaging api create message
+- createmessage
 slug: messaging-api-capability
 source_filename: messaging-api-capability.yaml
 source_heading: Capability Spec

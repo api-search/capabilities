@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- agent safety
-- nwm
-- api integration
-- tag action
 - governance
-- spec-driven integration
-- ai
-- mcp
-- capabilities
+- agent safety
 - list safety events
+- tag action
+- ai
+- capabilities
+- spec-driven integration
+- api integration
+- mcp
+- nwm
+- naftiko
 slug: nwm-agent-safety-tagged-capability
 source_filename: nwm-agent-safety-tagged-capability.yaml
 source_heading: Capability Spec

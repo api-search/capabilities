@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- healthcare
-- agentic
-- api integration
+- deterministic
 - governance
 - spec-driven integration
-- deterministic
+- agentic
 - ai
-- get care context
-- mcp
 - capabilities
+- get care context
+- api integration
+- healthcare
+- mcp
+- naftiko
 slug: deterministic-agentic-care-capability
 source_filename: deterministic-agentic-care-capability.yaml
 source_heading: Capability Spec

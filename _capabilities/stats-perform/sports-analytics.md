@@ -37,53 +37,53 @@ personas: []
 provider_name: Stats Perform
 provider_slug: stats-perform
 search_terms:
-- soccer
-- sports data
-- live and historical event scores by sport and league.
-- list sports editorial news.
-- get play-by-play data for an event.
-- league standings.
-- sports
-- football
-- basketball
 - get event play by play
-- get the complete box score with all player statistics for a sports event.
-- hockey
-- list news
-- get the current standings for a sports league by conference and division.
-- get standings
-- sports analytics
-- list teams
-- score for a specific event.
-- editorial news articles.
+- sports data
 - teams in a league.
-- list all teams in a specified sports league.
-- golf
-- full box score for an event.
+- score for a specific event.
 - list event scores
-- list event scores for a sport and league on a given date.
-- get the live or final score for a specific sports event.
-- get event score
-- get full box score with player statistics.
-- get play by play
-- list sports news
-- get team
-- get editorial news articles, previews, and recaps for a sport and league.
-- get detailed team information including roster and statistics.
-- live scores
-- editorial
+- editorial news articles.
 - play-by-play data for an event.
-- list event scores for a sport and league on a specific date.
-- get event box score
-- list scores
+- list event scores for a sport and league on a given date.
+- get standings
+- get editorial news articles, previews, and recaps for a sport and league.
+- league standings.
+- list teams
+- get full box score with player statistics.
 - get score for a specific event.
-- list teams in a sports league.
-- baseball
-- get box score
-- statistics
+- list event scores for a sport and league on a specific date.
 - get detailed play-by-play sequence for a sports event.
 - get standings for a sports league.
+- live and historical event scores by sport and league.
+- get detailed team information including roster and statistics.
+- list all teams in a specified sports league.
+- get the complete box score with all player statistics for a sports event.
+- golf
+- list teams in a sports league.
+- get event score
 - tennis
+- list scores
+- get team
+- get play by play
+- list sports editorial news.
+- football
+- soccer
+- list news
+- full box score for an event.
+- sports
+- get box score
+- get the current standings for a sports league by conference and division.
+- live scores
+- editorial
+- statistics
+- get play-by-play data for an event.
+- basketball
+- hockey
+- get event box score
+- get the live or final score for a specific sports event.
+- sports analytics
+- list sports news
+- baseball
 slug: sports-analytics
 source_filename: sports-analytics.yaml
 source_heading: Capability Spec

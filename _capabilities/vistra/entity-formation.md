@@ -29,34 +29,34 @@ personas: []
 provider_name: Vistra
 provider_slug: vistra
 search_terms:
-- notify vistra that a document upload to the pre-signed url has completed
-- submit a company incorporation request to vistra for bvi entity formation
-- incorporation
-- get status of a specific incorporation request
-- legal
-- list all submitted incorporation requests
-- create incorporation
-- finance
-- document upload url generation
-- entity management
-- compliance
-- bvi
-- individual incorporation request
-- generate a pre-signed s3 url for uploading a supporting document for an incorporation request
 - corporate services
-- list incorporations
-- document upload completion notification
 - vistra
-- fortune 500
-- check the status and details of a specific incorporation request by id
-- list all incorporation requests with their current processing status
+- complete document upload
+- bvi
 - get incorporation
-- submit a new company incorporation request
-- notify that a document upload has completed
+- list all submitted incorporation requests
+- compliance
 - company incorporation requests
 - generate a pre-signed url for document upload
-- complete document upload
+- generate a pre-signed s3 url for uploading a supporting document for an incorporation request
+- get status of a specific incorporation request
+- individual incorporation request
+- finance
+- create incorporation
+- entity management
+- check the status and details of a specific incorporation request by id
+- list incorporations
+- incorporation
 - generate document upload url
+- document upload completion notification
+- submit a company incorporation request to vistra for bvi entity formation
+- legal
+- document upload url generation
+- submit a new company incorporation request
+- notify vistra that a document upload to the pre-signed url has completed
+- list all incorporation requests with their current processing status
+- fortune 500
+- notify that a document upload has completed
 slug: entity-formation
 source_filename: entity-formation.yaml
 source_heading: Capability Spec

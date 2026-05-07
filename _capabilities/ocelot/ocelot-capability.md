@@ -25,20 +25,20 @@ personas: []
 provider_name: Ocelot
 provider_slug: ocelot
 search_terms:
+- clearcacheregion
+- ocelot
+- api gateway
 - issueadmintoken
-- .net
-- issue an admin access token
+- open source
+- setconfiguration
 - getconfiguration
 - clear an output cache region
-- api
-- ocelot
-- setconfiguration
-- clearcacheregion
 - microservices
+- api
 - overwrite ocelot configuration
-- api gateway
-- open source
+- issue an admin access token
 - get current ocelot configuration
+- .net
 slug: ocelot-capability
 source_filename: ocelot-capability.yaml
 source_heading: Capability Spec

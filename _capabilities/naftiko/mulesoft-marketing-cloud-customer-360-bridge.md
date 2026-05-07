@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- marketing cloud
-- customer 360
 - mulesoft
-- api integration
 - governance
 - spec-driven integration
-- ai
-- mcp
-- capabilities
 - get contact 360
+- marketing cloud
+- customer 360
+- ai
+- capabilities
+- api integration
+- mcp
+- naftiko
 slug: mulesoft-marketing-cloud-customer-360-bridge
 source_filename: mulesoft-marketing-cloud-customer-360-bridge.yaml
 source_heading: Capability Spec

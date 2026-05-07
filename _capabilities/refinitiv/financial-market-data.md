@@ -41,36 +41,36 @@ personas: []
 provider_name: Refinitiv
 provider_slug: refinitiv
 search_terms:
-- detailed esg measures.
-- search and retrieve financial news from reuters and other sources.
-- search instruments
-- market data
-- get news headlines
-- esg scores for instruments.
-- convert instrument identifiers between isin, cusip, sedol, ric, and permid.
-- analytics
-- refinitiv
-- get pricing snapshot
-- retrieve esg pillar scores for financial instruments.
-- search for instruments, organizations, and economic indicators.
 - search for instruments.
-- retrieve historical intraday pricing at 1, 5, 30, or 60 minute intervals.
-- get esg measures
-- get interday pricing
-- get pricing snapshots
-- historical intraday pricing summaries.
-- get intraday pricing
-- news
-- financial data
-- esg
-- retrieve historical daily/weekly/monthly ohlcv pricing for a financial instrument by ric.
-- real-time pricing snapshots.
+- analytics
+- detailed esg measures.
 - convert between identifier types.
-- convert symbology
-- historical interday pricing summaries.
-- get esg scores
-- financial news headlines.
+- retrieve historical daily/weekly/monthly ohlcv pricing for a financial instrument by ric.
+- get pricing snapshot
+- retrieve historical intraday pricing at 1, 5, 30, or 60 minute intervals.
+- refinitiv
 - get current real-time or delayed pricing snapshot for one or more instruments.
+- convert instrument identifiers between isin, cusip, sedol, ric, and permid.
+- convert symbology
+- search instruments
+- financial news headlines.
+- financial data
+- get intraday pricing
+- get news headlines
+- search for instruments, organizations, and economic indicators.
+- get esg scores
+- retrieve esg pillar scores for financial instruments.
+- real-time pricing snapshots.
+- get esg measures
+- esg
+- historical intraday pricing summaries.
+- get interday pricing
+- market data
+- get pricing snapshots
+- esg scores for instruments.
+- historical interday pricing summaries.
+- search and retrieve financial news from reuters and other sources.
+- news
 slug: financial-market-data
 source_filename: financial-market-data.yaml
 source_heading: Capability Spec

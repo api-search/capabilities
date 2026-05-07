@@ -53,57 +53,57 @@ personas: []
 provider_name: Unleash
 provider_slug: unleash
 search_terms:
-- list flags
-- list events
-- enable a feature flag in the specified environment
-- developer tools
-- create a new unleash project for organizing feature flags
-- disable a flag in an environment
-- list environments
-- list all environments
-- feature management
-- environment management
-- create a new project
-- a/b testing
-- list all unleash projects
-- get feature flag
-- list feature flags
-- list segments
-- create feature flag
-- single flag operations
-- progressive delivery
-- create a targeting segment for feature flag strategies
-- list recent audit events for a project or globally
-- get details of a feature flag including environments and strategies
-- create flag
-- get feature flag details
-- enable a flag in an environment
-- list all configured environments in unleash
-- create a targeting segment
-- create segment
-- project management
-- create project
-- list all projects
-- enable feature flag
-- disable feature flag
-- disable flag
-- open source
-- disable a feature flag in the specified environment
-- list recent events
-- feature flag management within a project
-- unleash
-- enable flag
-- list all feature flags in a project
-- get flag
-- segment management for targeting groups
-- release management
 - feature flags
-- list projects
-- event log for audit and observability
-- create a new feature flag
+- list events
+- enable a flag in an environment
+- disable a feature flag in the specified environment
+- unleash
+- get flag
+- create a targeting segment
+- enable feature flag
+- segment management for targeting groups
+- get feature flag details
+- disable flag
+- feature management
 - list all targeting segments
-- create a new feature flag in a project
+- enable a feature flag in the specified environment
+- open source
+- project management
+- list environments
+- list flags
+- create project
+- list projects
+- list recent audit events for a project or globally
+- developer tools
+- progressive delivery
+- enable flag
+- get feature flag
+- create flag
+- create a new project
+- create a new unleash project for organizing feature flags
+- list all feature flags in a project
+- release management
+- create feature flag
+- list all unleash projects
+- a/b testing
+- disable a flag in an environment
+- list segments
+- list all projects
+- create a targeting segment for feature flag strategies
+- feature flag management within a project
+- single flag operations
+- event log for audit and observability
+- list all configured environments in unleash
+- disable feature flag
 - list all segments
+- environment management
+- get details of a feature flag including environments and strategies
+- create a new feature flag in a project
+- list recent events
+- list feature flags
+- list all environments
+- create segment
+- create a new feature flag
 slug: feature-flag-management
 source_filename: feature-flag-management.yaml
 source_heading: Capability Spec

@@ -49,64 +49,64 @@ personas: []
 provider_name: Spring Boot
 provider_slug: spring-boot
 search_terms:
-- dynamically adjust a logger's log level at runtime (trace, debug, info, warn, error, off) without application restart
-- check the overall health of a spring boot application including all health indicator components (database, cache, disk space, custom indicators)
-- list caches
-- check application health
-- get environment properties
-- list all application caches
-- rest api
-- set logger level
-- java
-- list loggers
-- list all registered loggers and their current configured and effective log levels
-- get measurements for a specific metric
 - devops
-- list all available metric names
-- framework
-- application metrics overview
-- get all environment properties
-- metrics
-- evict all caches
-- monitoring
-- auto configuration
-- get jvm metrics including memory usage, garbage collection, thread counts, and cpu usage
-- list all micrometer metric names available on this spring boot instance
-- get logger level by name
-- check component health
-- environment properties
-- get component health
-- adjust log level
-- get jvm metrics
-- evict all application caches to force a full cache refresh
-- application health monitoring
-- set logger level at runtime
-- spring boot
-- list available metrics
-- observability
-- cache management
-- individual logger management
-- detailed metric measurements
-- embedded server
-- list metrics
-- get comprehensive application health status
-- component-level health status
-- list all loggers and their levels
-- health check
-- get application info
-- get logger
-- spring
 - logger configuration management
-- get metric
-- get all active environment properties including system, application.properties, profile-specific, and command-line overrides
-- get application metadata including build version, git commit info, and custom info contributors
-- get health status for a specific component (db, redis, diskspace)
-- sre
+- get jvm metrics including memory usage, garbage collection, thread counts, and cpu usage
 - web development
-- get environment
-- microservices
+- individual logger management
+- application metrics overview
+- component-level health status
+- auto configuration
 - check health status for a specific application component (db, redis, diskspace, custom)
 - get health
+- embedded server
+- set logger level at runtime
+- application health monitoring
+- spring boot
+- set logger level
+- list all micrometer metric names available on this spring boot instance
+- get measurements for a specific metric
+- health check
+- get health status for a specific component (db, redis, diskspace)
+- monitoring
+- list available metrics
+- get application info
+- java
+- cache management
+- get logger
+- dynamically adjust a logger's log level at runtime (trace, debug, info, warn, error, off) without application restart
+- adjust log level
+- get logger level by name
+- observability
+- get comprehensive application health status
+- sre
+- spring
+- evict all application caches to force a full cache refresh
+- detailed metric measurements
+- get application metadata including build version, git commit info, and custom info contributors
+- get jvm metrics
+- evict all caches
+- list all application caches
+- get component health
+- framework
+- list all loggers and their levels
+- get environment
+- check the overall health of a spring boot application including all health indicator components (database, cache, disk space, custom indicators)
+- get all active environment properties including system, application.properties, profile-specific, and command-line overrides
+- list loggers
+- metrics
+- check component health
+- rest api
+- list metrics
+- get all environment properties
+- get environment properties
+- list caches
+- check application health
+- microservices
+- list all available metric names
+- environment properties
+- list all registered loggers and their current configured and effective log levels
+- get metric
 slug: application-monitoring
 source_filename: application-monitoring.yaml
 source_heading: Capability Spec

@@ -9,22 +9,22 @@ personas: []
 provider_name: Basiq
 provider_slug: basiq
 search_terms:
-- cdr
-- developer building financial apps leveraging open banking data
-- open banking
-- Lender
-- consumer-consented access to bank account and transaction data
-- financial data
-- Fintech Developer
-- income verification and expense analysis for lending decisions
 - financial advisor using transaction data for budgeting and planning
-- bank data retrieval, income verification, and affordability assessment
 - transactions
-- lender using bank data for income verification and affordability assessment
-- banking
-- Financial Planner
+- bank data retrieval, income verification, and affordability assessment
+- consumer-consented access to bank account and transaction data
 - australia
+- banking
+- cdr
 - fintech
+- developer building financial apps leveraging open banking data
+- Lender
+- open banking
+- financial data
+- lender using bank data for income verification and affordability assessment
+- income verification and expense analysis for lending decisions
+- Fintech Developer
+- Financial Planner
 slug: open-banking
 source_filename: open-banking.yaml
 source_heading: Capability Spec

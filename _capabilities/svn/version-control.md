@@ -33,36 +33,36 @@ personas: []
 provider_name: Subversion
 provider_slug: svn
 search_terms:
-- get repository root
-- schedule a file or directory for deletion in an active svn commit
-- delete a file or directory in an active commit
-- upload file content as part of an active commit
-- webdav
-- historical file access by revision
-- apache
-- upload a file to an active svn commit transaction
-- retrieve the content of a file or directory listing from svn
-- create commit
-- source control
-- open source
 - svn
-- repository root information and metadata
 - retrieve file content at a specific historical revision
-- browse repository
-- create a new commit transaction
-- upload file
-- repository
-- get file
-- version control
+- get repository root
 - start a new svn commit transaction to stage file changes
-- retrieve the historical content of a file at a specific svn revision number
-- subversion
+- upload file
 - delete file
-- get repository root listing and metadata
-- get file at revision
-- get file content or directory listing at head
-- file and directory access
+- open source
+- upload a file to an active svn commit transaction
 - browse the svn repository root and see available projects
+- delete a file or directory in an active commit
+- create commit
+- webdav
+- retrieve the historical content of a file at a specific svn revision number
+- retrieve the content of a file or directory listing from svn
+- repository root information and metadata
+- upload file content as part of an active commit
+- apache
+- file and directory access
+- browse repository
+- get file at revision
+- repository
+- source control
+- get file
+- get repository root listing and metadata
+- historical file access by revision
+- subversion
+- version control
+- get file content or directory listing at head
+- create a new commit transaction
+- schedule a file or directory for deletion in an active svn commit
 - commit transaction lifecycle
 slug: version-control
 source_filename: version-control.yaml

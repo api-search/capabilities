@@ -34,47 +34,47 @@ personas: []
 provider_name: Google Sheets
 provider_slug: google-sheets
 search_terms:
-- batch get values
-- spreadsheets
-- google workspace
-- update values
-- search developer metadata matching filters
-- batch clear values
-- clear values from a spreadsheet range
-- create a new google sheets spreadsheet
-- read values from a range
+- clear values from multiple ranges
+- automation
+- read values from multiple ranges at once
+- search developer metadata
 - clear values from a range
+- search developer metadata matching filters
+- spreadsheets
+- get values
+- apply batch updates to a spreadsheet
 - batch update spreadsheet
 - append rows of data to a spreadsheet
-- productivity
-- spreadsheet lifecycle operations
-- read values from multiple ranges at once
-- batch update values
-- get developer metadata
-- get spreadsheet details by id
-- get spreadsheet
-- write values to a range
-- get spreadsheet details
-- data management
-- write values to a spreadsheet range
-- get developer metadata by id
-- append values to a range
-- get values
 - cell value read and write operations
-- create spreadsheet
-- apply batch updates to a spreadsheet
-- clear values from multiple ranges
-- google sheets
-- read values from a spreadsheet range
-- search developer metadata
-- clear values
-- copy a sheet to another spreadsheet
-- create a new spreadsheet
-- single spreadsheet operations
 - copy sheet
-- write values to multiple ranges at once
+- create a new google sheets spreadsheet
+- create spreadsheet
+- clear values
+- spreadsheet lifecycle operations
+- data management
+- productivity
+- read values from a spreadsheet range
+- single spreadsheet operations
+- batch get values
 - append values
-- automation
+- read values from a range
+- append values to a range
+- create a new spreadsheet
+- get spreadsheet
+- write values to multiple ranges at once
+- google sheets
+- batch clear values
+- update values
+- get developer metadata by id
+- write values to a spreadsheet range
+- clear values from a spreadsheet range
+- write values to a range
+- google workspace
+- batch update values
+- get spreadsheet details by id
+- copy a sheet to another spreadsheet
+- get spreadsheet details
+- get developer metadata
 slug: spreadsheet-data-management
 source_filename: spreadsheet-data-management.yaml
 source_heading: Capability Spec

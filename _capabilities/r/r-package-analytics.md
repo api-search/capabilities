@@ -33,47 +33,47 @@ personas: []
 provider_name: R
 provider_slug: r
 search_terms:
-- get top downloaded packages
-- get the previous stable r release (oldrel) version for backward compatibility testing.
-- package analytics
-- list all r packages available on cran with their current version numbers.
-- get package download totals
-- list r versions
-- get current r version
-- list all r versions
-- get package daily downloads
-- list all historical r releases with version numbers, release dates, and nicknames.
-- daily package download counts
-- get total cran download counts for r packages for a given period (last-day, last-week, last-month, grand-total, or custom date range like 2023-01-01:2023-12-31).
-- r package metadata
-- current r release version
-- get the most-downloaded r packages from cran for last-day, last-week, or last-month. returns up to 100 packages ranked by download count.
-- get the current stable r release version number and date. use to verify ci/cd pipelines target the latest r.
-- get daily download counts for packages
-- versions
-- get daily downloads
-- top downloaded packages
-- package download totals
-- programming language
-- open source
-- get download totals
 - get r release
-- downloads
-- cran
-- get most-downloaded cran packages
-- all r release versions
-- get daily cran download breakdown for r packages over a period. useful for trend analysis and identifying download spikes.
-- list all cran packages
-- get current stable r release version and date
-- get total download counts for packages
-- list all historical r releases
-- data science
-- get cran package metadata
-- get top packages
 - get previous r version
-- get detailed metadata for a cran r package including description, version, author, maintainer, dependencies (imports, depends, suggests), license, and urls.
-- statistics
+- get top packages
+- get cran package metadata
+- get total download counts for packages
+- get current stable r release version and date
+- list all cran packages
+- get most-downloaded cran packages
+- top downloaded packages
+- daily package download counts
+- r package metadata
+- get daily downloads
+- get top downloaded packages
+- get the current stable r release version number and date. use to verify ci/cd pipelines target the latest r.
+- open source
+- all r release versions
+- list all r versions
 - get package
+- downloads
+- versions
+- package analytics
+- data science
+- get current r version
+- programming language
+- list all r packages available on cran with their current version numbers.
+- list r versions
+- get the most-downloaded r packages from cran for last-day, last-week, or last-month. returns up to 100 packages ranked by download count.
+- cran
+- get package daily downloads
+- package download totals
+- get the previous stable r release (oldrel) version for backward compatibility testing.
+- list all historical r releases with version numbers, release dates, and nicknames.
+- get daily download counts for packages
+- statistics
+- get package download totals
+- get total cran download counts for r packages for a given period (last-day, last-week, last-month, grand-total, or custom date range like 2023-01-01:2023-12-31).
+- list all historical r releases
+- get detailed metadata for a cran r package including description, version, author, maintainer, dependencies (imports, depends, suggests), license, and urls.
+- get download totals
+- current r release version
+- get daily cran download breakdown for r packages over a period. useful for trend analysis and identifying download spikes.
 slug: r-package-analytics
 source_filename: r-package-analytics.yaml
 source_heading: Capability Spec

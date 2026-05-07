@@ -25,22 +25,22 @@ personas: []
 provider_name: Iterable
 provider_slug: iterable
 search_terms:
-- email
-- marketing automation
-- exportexperimentmetrics
-- exportuserevents
-- export data as json
-- export experiment metrics as csv
-- exportdatajson
-- customer engagement
-- api
-- export events for a specific user
 - push notifications
-- exportdatacsv
+- export data as json
+- email
 - cross-channel messaging
 - sms
-- export data as csv
+- export events for a specific user
 - iterable
+- exportdatacsv
+- export data as csv
+- exportuserevents
+- customer engagement
+- exportexperimentmetrics
+- marketing automation
+- api
+- exportdatajson
+- export experiment metrics as csv
 slug: iterable-capability
 source_filename: iterable-capability.yaml
 source_heading: Capability Spec

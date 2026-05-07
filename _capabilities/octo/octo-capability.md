@@ -57,37 +57,37 @@ personas: []
 provider_name: Open Connectivity for Tours, Activities, and Attractions
 provider_slug: octo
 search_terms:
-- open connectivity for tours, activities, and attractions extend reservation
-- post bookings
-- travel
-- open connectivity for tours, activities, and attractions availability calendar
-- open standard
-- open connectivity for tours, activities, and attractions get product
-- post availability
-- patch bookings uuid
-- get supplier
-- post availability calendar
-- open connectivity for tours, activities, and attractions booking update
-- open connectivity for tours, activities, and attractions get products
-- open connectivity for tours, activities, and attractions booking reservation
-- delete bookings uuid
-- open connectivity for tours, activities, and attractions get supplier
-- api
-- open connectivity for tours, activities, and attractions get booking
-- get products
-- post bookings uuid confirm
-- get products id
-- get bookings uuid
 - open connectivity for tours, activities, and attractions availability check
-- octo
-- tours
-- post bookings uuid extend
-- get bookings
-- open connectivity for tours, activities, and attractions booking confirmation
 - open connectivity for tours, activities, and attractions get bookings
+- open connectivity for tours, activities, and attractions booking confirmation
+- open connectivity for tours, activities, and attractions get product
+- get products id
+- open standard
+- delete bookings uuid
+- patch bookings uuid
 - attractions
-- activities
+- open connectivity for tours, activities, and attractions availability calendar
+- post availability
+- api
+- open connectivity for tours, activities, and attractions booking update
+- post bookings uuid confirm
 - open connectivity for tours, activities, and attractions booking cancellation
+- post availability calendar
+- get supplier
+- get bookings uuid
+- open connectivity for tours, activities, and attractions extend reservation
+- open connectivity for tours, activities, and attractions get supplier
+- open connectivity for tours, activities, and attractions booking reservation
+- activities
+- post bookings uuid extend
+- tours
+- travel
+- open connectivity for tours, activities, and attractions get booking
+- octo
+- get bookings
+- open connectivity for tours, activities, and attractions get products
+- post bookings
+- get products
 slug: octo-capability
 source_filename: octo-capability.yaml
 source_heading: Capability Spec

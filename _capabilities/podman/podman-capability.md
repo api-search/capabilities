@@ -249,131 +249,131 @@ personas: []
 provider_name: Podman
 provider_slug: podman
 search_terms:
-- containerunpause
-- prune unused images
-- get stats for a container
-- create a container
-- putcontainerarchive
-- start a container
-- copy files from a container
-- containerdelete
-- list artifacts
-- unpause container
-- inspect an image
-- imagegetall
-- kill container
-- containertop
+- containers
+- inspect an artifact
 - api
-- copy files into a container
-- containerrestart
-- remove image
-- imagedelete
-- podman
-- attach to a container
-- artifactpushlibpod
-- oci
-- export several images
 - imagepush
-- push an artifact
-- imagehistory
-- search images
-- systemping
-- start an exec instance
-- artifactlistlibpod
-- imagecreate
-- containerattachlibpod
-- containerchanges
-- putcontainerarchivelibpod
-- artifactdeletealllibpod
-- get events
+- imagebuild
+- resize a container's tty
+- containerrestart
+- artifactpushlibpod
+- containerlogs
+- tag an image
+- pull an artifact
+- oci
 - inspect container
+- containerresize
+- export an image
+- import image
+- imagegetall
+- imageget
+- putcontainerarchivelibpod
+- artifactextractlibpod
+- containerarchive
+- containertop
+- containerinspect
+- search images
+- execinspect
+- create a container
+- artifactaddlibpod
+- resize an exec instance
+- containerpause
+- build image
+- execresize
+- list images
+- containerdelete
+- kill container
+- containerlist
+- containerunpause
+- containerarchivelibpod
+- artifactlocallibpod
+- cloud native
+- push an artifact
+- get files from a container
+- imagelist
+- containerattach
+- update configuration of an existing container, allowing changes to resource limits
+- imagetag
+- imageload
+- systeminfo
+- inspect an image
+- containerrename
+- putcontainerarchive
+- remove an artifact
+- export several images
+- artifactdeletealllibpod
+- imagecreate
+- containerchanges
+- containerkill
+- imagesearch
+- imageinspect
+- imagecommit
+- remove image
+- copy files into a container
+- pause container
+- list processes running inside a container
+- containerstats
+- create an image
+- artifactpulllibpod
+- copy files from a container
+- push image
+- artifactdeletelibpod
 - imagecommitlibpod
 - containerstop
-- inspect an exec instance
-- cloud native
-- open source
-- artifactpulllibpod
-- resize an exec instance
-- containerwait
-- imagecommit
-- create an image
-- rename an existing container
-- containerexec
-- remove an artifact
-- containerstats
-- artifactextractlibpod
-- containerresize
-- artifactlocallibpod
-- systeminfo
-- imagebuildlibpod
-- delete container
-- imagelist
 - delete stopped containers
-- containerupdate
-- get files from a container
-- systemevents
-- containerrename
-- containerlist
-- imageprune
-- push image
-- containerattach
-- containerdeletelibpod
-- devops
-- imagesearch
-- imageget
-- report on changes to container's filesystem; adds, deletes or modifications.
-- create an exec instance
-- commit
-- add a file as an artifact
-- pull an artifact
-- execinspect
-- pause container
-- new image
-- ping service
-- containerstart
-- remove a container
-- inspect an artifact
-- containerlogs
-- wait on a container
-- artifactdeletelibpod
-- extract an artifacts contents
-- export a container
-- stop a container
-- list processes running inside a container
-- import image
-- list images
-- resize a container's tty
-- imageload
-- check auth configuration
-- build image
-- containerarchive
-- get container logs
-- export an image
-- remove one or more artifacts
-- imagetag
-- history of an image
-- put files into a container
-- containers
-- list containers
-- add a local file as an artifact
-- artifactaddlibpod
-- tag an image
-- imageinspect
-- get info
-- execresize
 - containerexport
-- imagebuild
-- containerpause
-- systemauth
-- containerarchivelibpod
-- containerinspect
-- containerprune
-- restart container
+- check auth configuration
+- systemevents
+- containerexec
 - containercreate
+- containerupdate
+- get events
+- inspect an exec instance
+- add a file as an artifact
+- delete container
+- add a local file as an artifact
+- containerdeletelibpod
+- stop a container
+- new image
+- export a container
+- containerwait
+- containerprune
+- devops
+- get container logs
+- containerstart
+- rename an existing container
+- systemping
+- list artifacts
+- remove a container
+- get info
+- open source
 - execstart
-- containerkill
+- unpause container
+- podman
+- extract an artifacts contents
+- commit
+- start a container
+- imagebuildlibpod
+- imagehistory
+- history of an image
+- prune unused images
+- systemauth
+- restart container
+- artifactlistlibpod
+- create an exec instance
+- get stats for a container
+- report on changes to container's filesystem; adds, deletes or modifications.
+- remove one or more artifacts
+- containerattachlibpod
+- ping service
+- put files into a container
 - artifactinspectlibpod
-- update configuration of an existing container, allowing changes to resource limits
+- start an exec instance
+- attach to a container
+- imagedelete
+- list containers
+- wait on a container
+- imageprune
 slug: podman-capability
 source_filename: podman-capability.yaml
 source_heading: Capability Spec

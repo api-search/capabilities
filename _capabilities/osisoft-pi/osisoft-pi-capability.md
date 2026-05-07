@@ -57,33 +57,33 @@ personas: []
 provider_name: osisoft-pi
 provider_slug: osisoft-pi
 search_terms:
+- osisoft
+- pi
+- api
+- list pi points on a server
+- getstreamvalue
+- execute a batch request
+- getstreaminterpolated
 - get a pi point
 - get stream summary statistics
-- listdataservers
+- listeventframes
 - listassetservers
-- getstreamvalue
-- list asset framework servers
-- listpipoints
-- list pi points on a server
-- getstreamsummary
+- getstreamrecorded
+- listelements
+- query event frames
+- get current stream value
+- getpipoint
 - list af elements
-- osisoft
+- listattributes
+- list asset framework servers
+- list element attributes
 - list pi data archive servers
 - get recorded stream values
-- query event frames
-- pi
-- listeventframes
-- api
-- getpipoint
-- list element attributes
-- executebatch
-- getstreaminterpolated
-- getstreamrecorded
-- listattributes
-- listelements
+- listpipoints
+- listdataservers
+- getstreamsummary
 - get interpolated stream values
-- execute a batch request
-- get current stream value
+- executebatch
 slug: osisoft-pi-capability
 source_filename: osisoft-pi-capability.yaml
 source_heading: Capability Spec

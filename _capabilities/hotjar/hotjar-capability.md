@@ -29,18 +29,18 @@ personas: []
 provider_name: hotjar
 provider_slug: hotjar
 search_terms:
-- getsurvey
-- createoauthtoken
-- listsurveys
-- listsurveyresponses
-- get a specific survey
 - api
-- hotjar
-- list surveys for a site
-- look up or delete user data
-- obtain an oauth access token
-- list survey responses
 - userlookup
+- listsurveys
+- createoauthtoken
+- list surveys for a site
+- getsurvey
+- obtain an oauth access token
+- listsurveyresponses
+- list survey responses
+- look up or delete user data
+- hotjar
+- get a specific survey
 slug: hotjar-capability
 source_filename: hotjar-capability.yaml
 source_heading: Capability Spec

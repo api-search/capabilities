@@ -125,71 +125,71 @@ personas: []
 provider_name: Zendit
 provider_slug: zendit
 search_terms:
-- getreport
-- zendit get topup purchase
-- createesimpurchase
-- getesimqrcode
-- getvoucherpurchase
-- gettransaction
-- esim
-- getvoucheroffer
-- zendit create voucher purchase
-- listvoucherpurchases
-- getesimoffer
-- getbrandredemptioninstructions
-- zendit create topup purchase
-- zendit get esim qr code
-- downloadreport
-- listtopuppurchases
-- zendit get esim offer
-- getbrand
-- listtopupoffers
-- zendit get esim plans
-- zendit get transaction
-- listtransactions
-- zendit list topup purchases
-- zendit list esim purchases
-- zendit list voucher offers
-- gettopuppurchase
-- listesimpurchases
-- zendit get voucher offer
-- zendit list voucher purchases
-- getesimrefund
-- createreport
-- createesimrefund
-- zendit get brand
-- listbrands
-- getesimplans
-- listvoucheroffers
 - zendit get voucher purchase
-- zendit create report
-- zendit list transactions
-- zendit create esim purchase
-- gettopupoffer
-- lookupphonenumber
-- gift cards
-- zendit get balance
-- getbalance
-- api
-- zendit list topup offers
+- getreport
+- zendit list voucher offers
 - zendit list esim offers
-- zendit get brand redemption instructions
-- payments
+- listbrands
+- zendit create esim refund
+- zendit get topup purchase
+- zendit create report
+- zendit get balance
+- zendit create topup purchase
+- api
+- zendit get esim offer
 - createvoucherpurchase
+- createesimpurchase
+- zendit get transaction
+- gettopuppurchase
 - zendit
-- getesimpurchase
+- zendit get voucher offer
+- listesimoffers
+- zendit list brands
+- zendit download report
+- zendit create voucher purchase
+- getesimoffer
+- zendit list topup purchases
+- zendit get esim plans
+- zendit list esim purchases
+- getesimrefund
 - prepaid
 - createtopuppurchase
-- zendit get topup offer
-- zendit lookup phone number
-- mobile top-up
-- listesimoffers
+- listtransactions
+- gift cards
+- listvoucheroffers
+- getesimpurchase
 - zendit get report
-- zendit create esim refund
+- createesimrefund
+- zendit list topup offers
+- getesimplans
+- zendit list voucher purchases
+- listtopupoffers
 - zendit get esim refund
-- zendit list brands
+- createreport
+- zendit create esim purchase
+- downloadreport
+- gettransaction
+- zendit get topup offer
+- getvoucherpurchase
+- esim
+- mobile top-up
+- listesimpurchases
+- getesimqrcode
+- zendit list transactions
+- zendit get brand redemption instructions
+- listtopuppurchases
+- listvoucherpurchases
+- getbrandredemptioninstructions
+- gettopupoffer
+- payments
+- getbalance
+- zendit get esim qr code
+- getvoucheroffer
+- lookupphonenumber
+- zendit lookup phone number
+- getbrand
 - zendit get esim purchase
-- zendit download report
+- zendit get brand
 slug: zendit-capability
 source_filename: zendit-capability.yaml
 source_heading: Capability Spec

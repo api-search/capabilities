@@ -13,15 +13,15 @@ personas: []
 provider_name: Etherscan
 provider_slug: etherscan
 search_terms:
-- ethereum
-- evm
-- web3
+- etherscan
+- callapi
+- unified api endpoint
 - cryptocurrency
+- ethereum
+- web3
 - blockchain
 - api
-- etherscan
-- unified api endpoint
-- callapi
+- evm
 slug: etherscan-capability
 source_filename: etherscan-capability.yaml
 source_heading: Capability Spec

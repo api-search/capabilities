@@ -249,128 +249,128 @@ personas: []
 provider_name: Dropbox
 provider_slug: dropbox
 search_terms:
-- post 2 file properties templates remove for team
-- dropbox list_folder
-- dropbox copy
-- post 2 file properties properties overwrite
-- post 2 files export
-- dropbox templates/list_for_team
-- dropbox properties/search
-- post 2 files list folder longpoll
-- post 2 file requests delete
-- post 2 files copy batch v2
-- dropbox delete
-- dropbox properties/remove
-- dropbox delete_all_closed
 - post 2 files list folder
-- dropbox properties/overwrite
-- post 2 files create folder batch check
-- dropbox download_zip
-- post 2 files create folder v2
-- dropbox templates/list_for_user
-- dropbox
-- post 2 file properties properties search
-- dropbox lock_file_batch
-- api
-- dropbox list_revisions
-- post 2 files get metadata
-- post 2 file properties properties add
-- post 2 file properties templates add for team
-- post 2 auth token from oauth1
-- post 2 files download
-- dropbox user
-- dropbox templates/update_for_team
-- dropbox templates/update_for_user
-- post 2 files delete batch
-- dropbox list
-- dropbox properties/add
-- dropbox get_metadata
-- post 2 files copy reference save
-- post 2 file properties templates update for user
-- dropbox download
-- dropbox token/revoke
-- post 2 file properties properties remove
-- post 2 file requests list v2
-- dropbox get_thumbnail_batch
 - post 2 file properties templates get for user
-- post 2 file requests update
-- post 2 files get temporary upload link
-- dropbox set_profile_photo
-- post 2 files delete batch check
-- dropbox templates/add_for_team
-- dropbox get_temporary_link
-- dropbox templates/get_for_user
-- dropbox properties/update
-- post 2 file properties templates list for user
-- dropbox export
-- post 2 files copy reference get
-- post 2 file properties templates add for user
-- post 2 check app
-- post 2 account set profile photo
-- post 2 files list revisions
-- dropbox create_folder
-- dropbox token/from_oauth1
-- dropbox properties/search/continue
-- dropbox copy_batch/check
-- post 2 check user
-- post 2 files delete v2
-- dropbox delete_batch/check
-- post 2 file properties templates remove for user
-- dropbox update
-- dropbox delete_manual_contacts_batch
-- dropbox list/continue
-- dropbox copy_batch
-- dropbox templates/get_for_team
-- dropbox create_folder_batch
-- post 2 file properties properties update
-- dropbox create_folder_batch/check
-- dropbox count
-- post 2 files move batch v2
-- dropbox copy_reference/save
-- post 2 files get temporary link
-- dropbox get_temporary_upload_link
-- dropbox delete_manual_contacts
-- post 2 file requests count
-- dropbox delete_batch
-- post 2 files list folder continue
-- post 2 files create folder batch
-- post 2 files get preview
-- dropbox list_folder/longpoll
-- post 2 file requests list continue
-- post 2 files copy batch check v2
-- post 2 auth token revoke
-- post 2 files get file lock batch
-- post 2 file properties properties search continu
-- dropbox copy_reference/get
-- dropbox create
-- dropbox move
-- post 2 contacts delete manual contacts batch
-- documents
-- dropbox templates/remove_for_team
-- dropbox get
-- post 2 file properties templates update for team
-- post 2 file requests delete all closed
-- dropbox templates/add_for_user
-- post 2 files get thumbnail v2
-- dropbox move_batch
-- dropbox get_file_lock_batch
-- dropbox list_folder/get_latest_cursor
-- post 2 file requests get
-- post 2 contacts delete manual contacts
 - post 2 files copy v2
+- dropbox app
+- post 2 check app
+- api
+- dropbox token/from_oauth1
+- post 2 files create folder batch
+- post 2 files create folder v2
+- dropbox delete_batch
+- post 2 files list folder longpoll
+- post 2 files get temporary upload link
+- post 2 files get preview
+- dropbox
+- post 2 file properties templates remove for team
+- dropbox templates/get_for_user
+- dropbox get_temporary_upload_link
+- post 2 file requests list continue
+- post 2 file properties properties search
+- post 2 file properties templates list for team
+- post 2 auth token revoke
+- dropbox update
+- post 2 files delete v2
+- dropbox delete_manual_contacts_batch
+- dropbox templates/add_for_user
+- post 2 files get thumbnail batch
+- dropbox create_folder
+- post 2 file properties templates add for user
+- dropbox lock_file_batch
+- dropbox delete_all_closed
 - dropbox get_thumbnail
+- post 2 files move v2
+- post 2 file requests count
+- dropbox properties/add
+- post 2 files copy batch check v2
+- post 2 file requests update
+- dropbox get_file_lock_batch
+- post 2 file properties templates update for team
+- post 2 files copy batch v2
 - dropbox get_preview
 - post 2 files download zip
-- post 2 file properties templates list for team
-- post 2 file properties templates get for team
-- post 2 files get thumbnail batch
+- dropbox export
+- post 2 file properties properties overwrite
+- dropbox properties/remove
+- dropbox copy_reference/get
+- dropbox copy_batch/check
+- post 2 file properties templates list for user
+- dropbox copy_reference/save
+- post 2 files get file lock batch
+- dropbox get_metadata
+- dropbox templates/update_for_user
+- dropbox download
+- dropbox copy
+- post 2 files delete batch
+- post 2 file properties templates update for user
+- post 2 file properties properties update
+- post 2 files copy reference get
+- post 2 files delete batch check
+- post 2 files get metadata
+- post 2 files list revisions
 - post 2 files lock file batch
-- post 2 files move v2
-- dropbox templates/remove_for_user
-- post 2 files list folder get latest cursor
-- dropbox list_folder/continue
+- dropbox templates/list_for_user
+- post 2 file properties properties search continu
+- dropbox move
+- dropbox templates/remove_for_team
+- dropbox get
+- dropbox create
+- post 2 account set profile photo
+- dropbox delete_manual_contacts
+- dropbox properties/search
+- post 2 files export
+- dropbox token/revoke
+- post 2 files copy reference save
+- dropbox delete_batch/check
+- dropbox list/continue
+- dropbox count
+- post 2 files create folder batch check
+- post 2 files list folder continue
+- post 2 file requests list v2
+- dropbox create_folder_batch
+- dropbox get_temporary_link
 - post 2 file requests create
-- dropbox app
+- dropbox download_zip
+- post 2 files move batch v2
+- dropbox user
+- post 2 file properties properties remove
+- dropbox properties/overwrite
+- post 2 file requests delete
+- post 2 file properties templates remove for user
+- documents
+- dropbox templates/update_for_team
+- post 2 contacts delete manual contacts
+- post 2 auth token from oauth1
+- dropbox list
+- dropbox get_thumbnail_batch
+- dropbox templates/get_for_team
+- dropbox create_folder_batch/check
+- dropbox properties/search/continue
+- post 2 files get temporary link
+- dropbox list_folder/get_latest_cursor
+- post 2 files download
+- post 2 file properties templates get for team
+- post 2 file requests get
+- post 2 files list folder get latest cursor
+- dropbox move_batch
+- post 2 check user
+- dropbox properties/update
+- post 2 file properties templates add for team
+- dropbox set_profile_photo
+- post 2 file properties properties add
+- post 2 files get thumbnail v2
+- dropbox copy_batch
+- dropbox templates/remove_for_user
+- dropbox list_revisions
+- dropbox delete
+- dropbox list_folder/continue
+- dropbox list_folder/longpoll
+- dropbox templates/list_for_team
+- post 2 file requests delete all closed
+- dropbox list_folder
+- post 2 contacts delete manual contacts batch
+- dropbox templates/add_for_team
 slug: dropbox-capability
 source_filename: dropbox-capability.yaml
 source_heading: Capability Spec

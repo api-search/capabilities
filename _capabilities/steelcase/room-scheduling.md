@@ -37,46 +37,46 @@ personas: []
 provider_name: Steelcase
 provider_slug: steelcase
 search_terms:
-- create booking
 - check which conference rooms are available during a specified time window.
-- facilities management
-- get status
-- get room details
-- office furniture
-- get room
+- calendaring
+- cancel a booking.
 - list conference rooms filtered by building, floor, or minimum capacity.
-- individual room details.
-- conference room bookings.
-- list all conference rooms filtered by building, floor, or minimum capacity.
-- room scheduling
-- create a new conference room booking for a meeting.
-- create a new room booking.
+- check room availability for a given time window.
+- system status.
+- check availability
+- office furniture
+- room availability across a time window.
+- list bookings
+- get availability
 - cancel an existing booking.
 - get system status
-- get conference room details.
-- iot
-- get roomwizard connector health status.
-- workplace
-- conference rooms available for booking.
-- cancel an existing conference room booking.
+- room scheduling
 - retrieve bookings for a room or date range.
-- check the health and connectivity status of the roomwizard system.
-- list rooms
-- check availability
-- list existing bookings for a room or date range.
+- create booking
 - conference rooms
-- list bookings
-- office 365
-- system status.
-- calendaring
-- cancel booking
+- conference rooms available for booking.
+- list existing bookings for a room or date range.
+- get status
+- cancel an existing conference room booking.
+- workplace
+- check the health and connectivity status of the roomwizard system.
+- facilities management
+- iot
+- create a new conference room booking for a meeting.
+- get roomwizard connector health status.
+- get room details
+- create a new room booking.
 - get bookings
-- check room availability for a given time window.
-- get availability
-- get details about a specific conference room including capacity and equipment.
-- room availability across a time window.
-- cancel a booking.
+- cancel booking
+- list rooms
 - smart office
+- list all conference rooms filtered by building, floor, or minimum capacity.
+- get conference room details.
+- get details about a specific conference room including capacity and equipment.
+- individual room details.
+- get room
+- conference room bookings.
+- office 365
 slug: room-scheduling
 source_filename: room-scheduling.yaml
 source_heading: Capability Spec

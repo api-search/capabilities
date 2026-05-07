@@ -41,33 +41,33 @@ personas: []
 provider_name: Google Cloud Binary Authorization
 provider_slug: google-cloud-binary-authorization
 search_terms:
-- google cloud binary authorization create an attestor
-- binary
-- google cloud binary authorization update an attestor
-- google cloud binary authorization validate attestation occurrence
-- attestation
-- container security
-- validateattestationoccurrence
 - google cloud binary authorization get project policy
-- cloud
+- google cloud binary authorization delete an attestor
+- google cloud binary authorization create an attestor
+- api
+- google cloud binary authorization list attestors
+- google cloud binary authorization validate attestation occurrence
+- devsecops
+- google cloud binary authorization update an attestor
+- getpolicy
 - google
 - updatepolicy
-- google cloud binary authorization get an attestor
-- kubernetes
-- getpolicy
-- google cloud binary authorization update project policy
-- listattestors
-- getattestor
-- api
 - updateattestor
-- authorization
-- google cloud binary authorization list attestors
-- createattestor
-- google cloud binary authorization delete an attestor
-- devsecops
-- supply chain security
-- deleteattestor
 - policy enforcement
+- supply chain security
+- getattestor
+- kubernetes
+- listattestors
+- authorization
+- validateattestationoccurrence
+- google cloud binary authorization update project policy
+- cloud
+- attestation
+- binary
+- createattestor
+- container security
+- google cloud binary authorization get an attestor
+- deleteattestor
 slug: google-cloud-binary-authorization-capability
 source_filename: google-cloud-binary-authorization-capability.yaml
 source_heading: Capability Spec

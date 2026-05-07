@@ -14,18 +14,18 @@ provider_name: Amazon Resource Explorer
 provider_slug: amazon-resource-explorer
 search_terms:
 - list resources
-- amazon resource explorer
-- aws
-- automation workflow for amazon resource explorer
-- engineer managing amazon resource explorer resources
 - aws cloud resource management
 - cloud operations
 - discovery
+- automation workflow for amazon resource explorer
 - operations
-- amazon resource explorer resources
-- resource management
+- aws
 - list amazon resource explorer resources
 - inventory
+- resource management
+- amazon resource explorer
+- engineer managing amazon resource explorer resources
+- amazon resource explorer resources
 slug: amazon-resource-explorer
 source_filename: amazon-resource-explorer.yaml
 source_heading: Capability Spec

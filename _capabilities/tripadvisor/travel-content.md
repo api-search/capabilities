@@ -29,39 +29,39 @@ personas: []
 provider_name: Tripadvisor
 provider_slug: tripadvisor
 search_terms:
-- find hotels, restaurants, or attractions near a specific geographic point. provide latitude and longitude to discover what's nearby.
-- travel
-- find nearby locations by coordinates
-- get photos for a location
-- content
-- get up to 5 most recent reviews for a location
 - search locations
-- search for hotels, restaurants, and attractions
-- get recent traveler reviews
-- get recent photos in multiple sizes
-- get photos
-- get the most recent traveler reviews for a tripadvisor location. reviews include rating, text, author, travel date, and trip type.
 - restaurants
-- search tripadvisor for hotels, restaurants, or attractions by keyword, category, address, or geographic coordinates. returns up to 10 matching locations with ids, names, and addresses.
-- search tripadvisor for locations by keyword and category
-- get comprehensive details for a tripadvisor location including name, address, overall rating, review count, ranking, categories, trip types, and direct link to the tripadvisor listing.
-- search nearby
-- locations
-- get recent high-quality photos for a tripadvisor location. returns photos in multiple size formats (thumbnail, small, medium, large, original).
-- get location photos
-- find nearby attractions
-- get traveler reviews
-- get name, address, rating, and listing url for a location
-- hospitality
-- hotels
-- get location
-- search travel locations
-- find locations near a specific latitude/longitude
-- get reviews
-- get full details for a specific location
 - attractions
 - reviews
+- get up to 5 most recent reviews for a location
+- hospitality
+- search for hotels, restaurants, and attractions
+- get location
+- get recent traveler reviews
+- find locations near a specific latitude/longitude
+- get comprehensive details for a tripadvisor location including name, address, overall rating, review count, ranking, categories, trip types, and direct link to the tripadvisor listing.
+- find nearby attractions
+- content
+- get photos for a location
+- search nearby
 - get location details
+- locations
+- get photos
+- find nearby locations by coordinates
+- travel
+- find hotels, restaurants, or attractions near a specific geographic point. provide latitude and longitude to discover what's nearby.
+- get full details for a specific location
+- get recent high-quality photos for a tripadvisor location. returns photos in multiple size formats (thumbnail, small, medium, large, original).
+- hotels
+- get reviews
+- get recent photos in multiple sizes
+- search travel locations
+- search tripadvisor for hotels, restaurants, or attractions by keyword, category, address, or geographic coordinates. returns up to 10 matching locations with ids, names, and addresses.
+- search tripadvisor for locations by keyword and category
+- get location photos
+- get name, address, rating, and listing url for a location
+- get traveler reviews
+- get the most recent traveler reviews for a tripadvisor location. reviews include rating, text, author, travel date, and trip type.
 slug: travel-content
 source_filename: travel-content.yaml
 source_heading: Capability Spec

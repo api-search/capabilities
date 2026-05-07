@@ -33,20 +33,20 @@ personas: []
 provider_name: broadridge
 provider_slug: broadridge
 search_terms:
-- getaccountbalances
-- getaccounttransactions
-- get account transactions
-- listaccounts
-- get account details
-- list accounts
-- broadridge
-- api
-- getaccount
-- getaccountpositions
-- getaccountperformance
-- get account balances
 - get account performance
+- listaccounts
+- get account balances
+- getaccount
+- getaccountbalances
+- broadridge
+- getaccountperformance
+- get account details
 - get account positions
+- getaccounttransactions
+- api
+- get account transactions
+- list accounts
+- getaccountpositions
 slug: broadridge-capability
 source_filename: broadridge-capability.yaml
 source_heading: Capability Spec

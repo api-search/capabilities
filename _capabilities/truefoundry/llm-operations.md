@@ -41,52 +41,52 @@ personas: []
 provider_name: TrueFoundry
 provider_slug: truefoundry
 search_terms:
-- list uploaded files
-- chat completion
-- generate images from text prompts using ai image models
-- mlops
-- file management
-- check text content for policy violations
-- rerank documents by query relevance
-- chat completions
-- available model catalog
-- generate vector embeddings for text. used for semantic search, rag pipelines, and similarity comparisons across 1000+ embedding models.
-- truefoundry
 - reranking
-- generate chat completion from any supported model
-- create a batch job
-- create embeddings
-- rerank documents
-- document reranking
-- create batch
-- generate vector embeddings
-- embeddings
-- kubernetes
-- llm
-- list all available models
-- list all llm models available in truefoundry ai gateway
+- check text content for policy violations
+- content moderation
+- text embedding generation
 - ai gateway
-- llm gateway
-- list files uploaded to truefoundry
+- generate images from text prompts using ai image models
+- generate a chat completion using any model available in truefoundry ai gateway (gpt-4o, claude, gemini, mistral, etc.). supports streaming, tool calling, and all openai-compatible parameters.
+- llm
+- chat completions
+- generate vector embeddings
+- generate chat completion from any supported model
+- rerank documents
+- create batch
+- list all llm models available in truefoundry ai gateway
+- ai image generation
+- image generation
+- generate vector embeddings for text. used for semantic search, rag pipelines, and similarity comparisons across 1000+ embedding models.
+- ai platform
+- truefoundry
+- rerank a list of documents by their relevance to a query. used in rag pipelines to improve retrieval quality.
+- moderate content
+- rerank documents by query relevance
+- document reranking
+- kubernetes
+- list all available models
+- embeddings
+- mlops
+- check content for policy violations
 - create moderation
 - list models
-- batch request management
-- moderate content
-- rerank a list of documents by their relevance to a query. used in rag pipelines to improve retrieval quality.
-- generate images
-- create chat completion
-- image generation
-- chat completion for llm conversations
-- ai image generation
-- enterprise ai
-- generate a chat completion using any model available in truefoundry ai gateway (gpt-4o, claude, gemini, mistral, etc.). supports streaming, tool calling, and all openai-compatible parameters.
-- ai platform
-- check content for policy violations
-- create a batch job for async processing of multiple llm requests
-- generate images from text prompts
 - list files
-- text embedding generation
-- content moderation
+- generate images
+- create a batch job
+- chat completion
+- chat completion for llm conversations
+- enterprise ai
+- list uploaded files
+- create embeddings
+- available model catalog
+- create chat completion
+- file management
+- batch request management
+- create a batch job for async processing of multiple llm requests
+- list files uploaded to truefoundry
+- generate images from text prompts
+- llm gateway
 slug: llm-operations
 source_filename: llm-operations.yaml
 source_heading: Capability Spec

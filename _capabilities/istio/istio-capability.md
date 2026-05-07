@@ -29,23 +29,23 @@ personas: []
 provider_name: Istio
 provider_slug: istio
 search_terms:
-- service mesh
-- replacewasmplugin
-- createwasmplugin
-- istio get a wasmplugin
+- istio list wasmplugins
+- istio
 - listwasmplugins
-- api
+- service mesh
+- open source
+- deletewasmplugin
 - istio create a wasmplugin
 - istio replace a wasmplugin
-- deletewasmplugin
-- cncf
-- istio
-- getwasmplugin
+- replacewasmplugin
 - istio delete a wasmplugin
+- cncf
 - microservices
-- open source
+- istio get a wasmplugin
+- api
+- createwasmplugin
 - kubernetes
-- istio list wasmplugins
+- getwasmplugin
 slug: istio-capability
 source_filename: istio-capability.yaml
 source_heading: Capability Spec

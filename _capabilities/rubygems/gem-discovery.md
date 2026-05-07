@@ -33,41 +33,41 @@ personas: []
 provider_name: RubyGems
 provider_slug: rubygems
 search_terms:
-- ruby
-- recently released gem versions
-- developer tools
-- get gem details
-- list gem versions
-- search for gems
-- get reverse dependencies
-- get all gem versions released within a given timeframe (up to 7 days)
-- gems
-- search gems
-- rubygems
-- get detailed gem metadata
-- get gems that depend on this gem
-- list all published versions of a ruby gem with metadata
+- get gem info
 - get gem versions released in a timeframe
-- list the owners of a specific ruby gem
-- find which ruby gems depend on a given gem (downstream impact analysis)
 - get timeframe versions
-- get all gem versions
+- gems
+- get reverse dependencies
+- search for gems
+- list all published versions of a gem
 - package manager
+- get detailed gem metadata
+- rubygems
+- get the latest version of a gem
 - open source
 - get recently released versions
-- get the latest version of a gem
-- list gems depending on a specific gem
+- get gems that depend on this gem
+- search gems
 - get the latest published version number of a ruby gem
+- developer tools
 - discovery
-- get latest version
-- get gem info
+- get gem details
+- get gem
+- ruby
+- get gem owners
+- list gem versions
 - get detailed metadata for a specific ruby gem
+- recently released gem versions
+- get all gem versions
+- get all gem versions released within a given timeframe (up to 7 days)
+- list all published versions of a ruby gem with metadata
+- find which ruby gems depend on a given gem (downstream impact analysis)
+- get latest version
+- search rubygems.org for ruby gems by name or description
+- list the owners of a specific ruby gem
 - search rubygems.org for gems by name or description
 - get latest gem version
-- list all published versions of a gem
-- search rubygems.org for ruby gems by name or description
-- get gem owners
-- get gem
+- list gems depending on a specific gem
 slug: gem-discovery
 source_filename: gem-discovery.yaml
 source_heading: Capability Spec

@@ -53,38 +53,38 @@ personas: []
 provider_name: Workday Studio
 provider_slug: workday-studio
 search_terms:
-- getintegrationevent
-- integration
-- listlaunchparameters
-- workday studio retrieve a specific integration template
-- workday studio launch an integration system
-- finance
-- getintegrationeventlogs
-- cloud
-- studio
-- workday studio list integration templates
-- enterprise
-- ide
-- workday studio retrieve a specific integration system
-- workday
-- listintegrationevents
-- development
-- listintegrationtemplates
-- workday studio list integration events
-- listintegrationassemblies
-- api
-- workday studio list integration systems
-- listintegrationsystems
-- workday studio list available launch parameters
-- workday studio retrieve logs for an integration event
-- launchintegration
-- workday studio retrieve a specific integration event
-- workday studio list integration assemblies
-- workday studio retrieve a specific integration assembly
 - getintegrationtemplate
-- hr
-- getintegrationsystem
+- launchintegration
+- listintegrationassemblies
+- getintegrationeventlogs
+- api
+- workday studio list integration templates
+- getintegrationevent
+- workday
+- workday studio retrieve a specific integration assembly
 - getintegrationassembly
+- workday studio retrieve a specific integration system
+- workday studio list available launch parameters
+- listintegrationevents
+- workday studio list integration events
+- integration
+- hr
+- ide
+- finance
+- listintegrationsystems
+- workday studio retrieve a specific integration event
+- enterprise
+- getintegrationsystem
+- studio
+- development
+- cloud
+- workday studio retrieve logs for an integration event
+- workday studio launch an integration system
+- workday studio retrieve a specific integration template
+- workday studio list integration assemblies
+- workday studio list integration systems
+- listintegrationtemplates
+- listlaunchparameters
 slug: workday-studio-capability
 source_filename: workday-studio-capability.yaml
 source_heading: Capability Spec

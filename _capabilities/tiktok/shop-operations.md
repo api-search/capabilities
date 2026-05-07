@@ -29,36 +29,36 @@ personas: []
 provider_name: TikTok
 provider_slug: tiktok
 search_terms:
-- list products in the shop catalog
-- tiktok
-- product catalog management
-- content
-- get order
-- get detailed tiktok shop order information
-- get product
-- e-commerce
-- financial settlement records
-- list payments
-- commerce
-- get tiktok shop product details
-- fulfillment
-- advertising
+- social media
 - video
-- get order details
-- individual order management
-- list all shop orders
-- list orders
-- list tiktok shop orders with status filtering
+- get product
+- get product details
 - list products
-- list payment settlements
-- products
+- list all shop orders
+- fulfillment
 - orders
+- order management
+- get tiktok shop product details
 - individual product management
 - list products in tiktok shop catalog
-- social media
-- order management
-- get product details
+- products
+- list orders
+- content
+- financial settlement records
+- e-commerce
+- individual order management
 - list tiktok shop payment settlement records
+- get detailed tiktok shop order information
+- get order details
+- list tiktok shop orders with status filtering
+- list products in the shop catalog
+- list payment settlements
+- tiktok
+- product catalog management
+- advertising
+- commerce
+- list payments
+- get order
 slug: shop-operations
 source_filename: shop-operations.yaml
 source_heading: Capability Spec

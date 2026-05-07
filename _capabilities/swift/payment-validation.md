@@ -34,45 +34,45 @@ provider_name: SWIFT
 provider_slug: swift
 search_terms:
 - get bic
-- get bic details
-- reference data
-- resolve the bic routing code for a given iban
-- validate a bic
-- look up national clearing code or routing number details and associated bics
-- get iban
-- financial services
-- validate lei
+- gpi
 - cross-border payments
-- iban validation
-- validate a bic is registered and active in the swift network
-- check whether a bic is reachable via sepa ct, dd, or instant schemes
-- validate and look up bic details
+- get iban details
+- look up national clearing codes
+- get iban
 - swift
-- bic validation
-- validate iban format, check digits, country code, and bban structure
+- validate lei
+- reference data
 - get lei
-- iso 20022
+- validate and look up bic details
+- bic validation
 - get national id
 - financial messaging
-- look up national clearing codes
-- gpi
-- look up iban details and bic
-- get national id details
-- validate bic
-- get iban details
-- get bic sepa reachability
+- validate a legal entity identifier is active in gleif
+- look up bic details including institution name, country, and swift connectivity
+- validate iban format, check digits, country code, and bban structure
+- look up lei details
+- validate a bic is registered and active in the swift network
+- financial services
+- check whether a bic is reachable via sepa ct, dd, or instant schemes
 - get lei details
 - look up legal entity identifier details and gleif registration status
-- payments
-- validate iban
-- look up bic details including institution name, country, and swift connectivity
-- validate a legal entity identifier is active in gleif
-- get bic for iban
-- look up lei details
-- validation
-- banking
-- validate an iban
 - look up iban details including associated bic, bank code, and account structure
+- validate an iban
+- get national id details
+- validation
+- get bic details
+- get bic for iban
+- validate a bic
+- get bic sepa reachability
+- banking
+- payments
+- iso 20022
+- validate iban
+- look up national clearing code or routing number details and associated bics
+- iban validation
+- validate bic
+- look up iban details and bic
+- resolve the bic routing code for a given iban
 slug: payment-validation
 source_filename: payment-validation.yaml
 source_heading: Capability Spec

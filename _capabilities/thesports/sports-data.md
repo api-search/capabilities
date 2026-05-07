@@ -53,58 +53,58 @@ personas: []
 provider_name: TheSports
 provider_slug: thesports
 search_terms:
-- get match details
-- list football matches for a competition or date
-- football competitions and leagues
-- real-time
-- single match details
-- sports
-- get detailed match statistics
-- list football teams, optionally filtered by competition
-- football
-- basketball
-- list matches for a competition or date
-- list competitions
 - analytics
-- get detailed team information
-- get competition details
-- get match starting lineup and substitutes
-- single player details
-- get detailed match information
-- get match lineup
-- single team details
-- get standings
-- get detailed information about a competition
-- list teams
-- get detailed information about a specific football competition
-- get detailed match statistics including possession, shots, and passes
-- get team details
-- get detailed match information including score and events
-- list players
-- list matches
-- list all available football competitions
-- single competition details
-- get player details
-- football match fixtures and results
-- match statistics
-- get detailed player profile and statistics
-- get match statistics
-- list players filtered by team
-- get detailed information about a specific football team
-- media
-- football players
-- league standings
-- get match starting lineup and substitutes for both teams
 - get detailed player information and statistics
-- tennis
-- data
-- football teams
-- list football players, optionally filtered by team
-- list all football competitions and leagues available in the api
+- get match starting lineup and substitutes
+- get team details
+- get detailed information about a specific football team
+- get detailed player profile and statistics
+- list football teams, optionally filtered by competition
+- list players
+- match lineups
+- get competition details
+- single team details
+- get match details
+- get player details
+- get detailed match information
+- get match starting lineup and substitutes for both teams
+- get standings
+- get detailed team information
+- single match details
+- get match statistics
+- get detailed information about a specific football competition
+- list teams
 - esports
 - get competition standings and league table
 - list football teams
-- match lineups
+- get detailed information about a competition
+- list matches
+- get match lineup
+- list competitions
+- match statistics
+- tennis
+- list players filtered by team
+- league standings
+- list all football competitions and leagues available in the api
+- list all available football competitions
+- get detailed match information including score and events
+- football
+- media
+- sports
+- football competitions and leagues
+- list matches for a competition or date
+- football match fixtures and results
+- list football matches for a competition or date
+- data
+- list football players, optionally filtered by team
+- football players
+- get detailed match statistics including possession, shots, and passes
+- single competition details
+- real-time
+- football teams
+- get detailed match statistics
+- single player details
+- basketball
 slug: sports-data
 source_filename: sports-data.yaml
 source_heading: Capability Spec

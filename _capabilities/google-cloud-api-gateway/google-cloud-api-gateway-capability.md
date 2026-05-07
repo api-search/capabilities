@@ -53,38 +53,38 @@ personas: []
 provider_name: Google Cloud API Gateway
 provider_slug: google-cloud-api-gateway
 search_terms:
-- google cloud api gateway list apis
-- google cloud api gateway get an api
-- listapis
-- updategateway
-- google cloud api gateway create a gateway
-- deleteapi
-- gateway
-- serverless
-- cloud
-- google
-- google cloud api gateway update a gateway
-- security
-- createapi
-- google cloud api gateway delete an api
-- deletegateway
-- listgateways
-- google cloud api gateway list gateways
-- api
-- google cloud api gateway create an api configuration
-- authentication
-- api gateway
-- api management
-- creategateway
-- google cloud api gateway delete a gateway
 - google cloud api gateway list api configurations
+- google cloud api gateway get a gateway
+- google cloud api gateway list apis
+- google cloud api gateway create an api
+- google cloud api gateway get an api
+- updategateway
+- api
+- google cloud api gateway create a gateway
+- listapiconfigs
+- authentication
+- createapi
+- api management
+- listapis
+- google
+- serverless
+- api gateway
+- gateway
+- google cloud api gateway update a gateway
+- google cloud api gateway delete an api
 - getapi
+- cloud
+- deletegateway
+- google cloud api gateway create an api configuration
+- deleteapi
 - createapiconfig
 - getgateway
-- google cloud api gateway get a gateway
-- google cloud api gateway create an api
+- listgateways
 - google cloud
-- listapiconfigs
+- google cloud api gateway delete a gateway
+- security
+- google cloud api gateway list gateways
+- creategateway
 slug: google-cloud-api-gateway-capability
 source_filename: google-cloud-api-gateway-capability.yaml
 source_heading: Capability Spec

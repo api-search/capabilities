@@ -17,31 +17,31 @@ personas: []
 provider_name: SAP BRIM (Billing and Revenue Innovation Management)
 provider_slug: sap-brim-billing-and-revenue-innovation-management
 search_terms:
-- get balance
-- rate a single usage event against the applicable sap brim pricing plan.
-- get account balance
-- charging
-- get the current prepaid or postpaid balance for a customer account.
-- list available pricing plans.
-- rate usage event
-- list pricing plans
-- revenue management
-- billing
-- enterprise
-- rate usage batch
-- order to cash
-- get detailed configuration of a specific pricing plan.
-- get current account balance.
-- apply a credit or debit adjustment to a customer account balance.
-- get pricing plan
-- subscription management
-- sap
-- rate a batch of usage events in a single request for high-throughput scenarios.
 - usage-based pricing
+- subscription management
+- get current account balance.
+- list pricing plans
+- rate usage batch
+- get the current prepaid or postpaid balance for a customer account.
+- billing
+- charging
+- get pricing plan
 - adjust balance
-- list available pricing plans and rate cards in the charging engine.
-- account balance inquiries.
+- order to cash
+- list available pricing plans.
+- get account balance
+- sap
 - pricing plan catalog.
+- rate a single usage event against the applicable sap brim pricing plan.
+- get balance
+- rate usage event
+- enterprise
+- apply a credit or debit adjustment to a customer account balance.
+- list available pricing plans and rate cards in the charging engine.
+- revenue management
+- get detailed configuration of a specific pricing plan.
+- account balance inquiries.
+- rate a batch of usage events in a single request for high-throughput scenarios.
 slug: usage-based-charging
 source_filename: usage-based-charging.yaml
 source_heading: Capability Spec

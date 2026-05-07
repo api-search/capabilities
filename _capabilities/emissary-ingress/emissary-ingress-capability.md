@@ -89,54 +89,54 @@ personas: []
 provider_name: Emissary-Ingress
 provider_slug: emissary-ingress
 search_terms:
-- incubating
-- listnamespacedmapping
-- listnamespacedtlscontext
-- listmappingallnamespaces
-- emissary-ingress get a specific host resource
-- emissary-ingress create an authservice resource
-- listnamespacedhost
-- readnamespacedtlscontext
-- emissary-ingress list mapping resources across all namespaces
-- listnamespacedratelimitservice
-- createnamespacedmapping
-- emissary-ingress get a specific mapping resource
-- emissary-ingress delete a host resource
-- envoy
-- createnamespacedauthservice
-- emissary
-- deletenamespacedtlscontext
-- createnamespacedtlscontext
-- cloud native
-- ingress
-- kubernetes
-- emissary-ingress delete a tlscontext resource
-- emissary-ingress partially update a mapping resource
-- emissary-ingress list mapping resources in a namespace
-- emissary-ingress replace a mapping resource
-- api
-- readnamespacedhost
-- replacenamespacedmapping
-- emissary-ingress list authservice resources in a namespace
-- createnamespacedratelimitservice
-- emissary-ingress create a host resource
-- api gateway
-- replacenamespacedhost
-- emissary-ingress list tlscontext resources in a namespace
-- emissary-ingress create a mapping resource
 - emissary-ingress create a ratelimitservice resource
-- emissary-ingress get a specific tlscontext resource
-- emissary-ingress delete a mapping resource
-- emissary-ingress replace a host resource
-- emissary-ingress list ratelimitservice resources in a namespace
-- deletenamespacedhost
-- emissary-ingress list host resources in a namespace
-- createnamespacedhost
+- ingress
+- createnamespacedtlscontext
+- readnamespacedtlscontext
 - readnamespacedmapping
-- listnamespacedauthservice
-- deletenamespacedmapping
-- emissary-ingress create a tlscontext resource
+- api
+- createnamespacedauthservice
+- emissary-ingress create a mapping resource
 - patchnamespacedmapping
+- cloud native
+- deletenamespacedmapping
+- incubating
+- createnamespacedmapping
+- emissary-ingress list tlscontext resources in a namespace
+- listnamespacedtlscontext
+- createnamespacedhost
+- kubernetes
+- readnamespacedhost
+- listnamespacedratelimitservice
+- emissary-ingress create an authservice resource
+- listnamespacedmapping
+- api gateway
+- emissary-ingress create a host resource
+- emissary-ingress delete a tlscontext resource
+- listnamespacedhost
+- emissary
+- emissary-ingress get a specific host resource
+- deletenamespacedhost
+- emissary-ingress replace a mapping resource
+- emissary-ingress create a tlscontext resource
+- emissary-ingress get a specific tlscontext resource
+- deletenamespacedtlscontext
+- envoy
+- createnamespacedratelimitservice
+- emissary-ingress get a specific mapping resource
+- replacenamespacedhost
+- emissary-ingress partially update a mapping resource
+- emissary-ingress delete a mapping resource
+- replacenamespacedmapping
+- emissary-ingress list mapping resources in a namespace
+- emissary-ingress list mapping resources across all namespaces
+- listmappingallnamespaces
+- emissary-ingress delete a host resource
+- emissary-ingress replace a host resource
+- listnamespacedauthservice
+- emissary-ingress list ratelimitservice resources in a namespace
+- emissary-ingress list host resources in a namespace
+- emissary-ingress list authservice resources in a namespace
 slug: emissary-ingress-capability
 source_filename: emissary-ingress-capability.yaml
 source_heading: Capability Spec

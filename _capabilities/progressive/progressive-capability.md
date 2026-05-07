@@ -25,21 +25,21 @@ personas: []
 provider_name: Progressive
 provider_slug: progressive
 search_terms:
-- list quotes
-- list vehicles
-- insurance
-- quoting
-- listdrivers
-- auto insurance
-- api
-- embedded insurance
 - progressive
-- create a quote
-- commercial insurance
+- quoting
 - list drivers
-- createquote
-- listvehicles
+- auto insurance
+- list quotes
 - listquotes
+- createquote
+- commercial insurance
+- embedded insurance
+- insurance
+- api
+- listvehicles
+- list vehicles
+- create a quote
+- listdrivers
 slug: progressive-capability
 source_filename: progressive-capability.yaml
 source_heading: Capability Spec

@@ -41,44 +41,44 @@ personas: []
 provider_name: Streamlit
 provider_slug: streamlit
 search_terms:
-- list apps
-- delete an app
-- list accessible workspaces
-- app deployment and listing
-- update secrets for a streamlit app in toml format
-- update secrets
-- delete a deployed streamlit app permanently
-- app restart operation
-- get current status and details of a streamlit app
-- get app status
-- restart a deployed app
-- cloud
-- deployment
-- app secrets management
-- list streamlit community cloud workspaces
-- update app secrets
-- delete app
-- get app secret keys
-- single app management
-- open source
-- list all deployed streamlit apps
-- web applications
-- workspace management
-- list all streamlit apps deployed in the workspace
-- machine learning
-- get app details and status
-- restart app
 - list workspaces
-- python
-- get app secrets
-- deploy app
-- deploy a new app from github
-- list the secret keys configured for a streamlit app (values not returned)
-- deploy a new streamlit app from a github repository
-- get app
-- restart a streamlit app — use after updating secrets
-- data science
+- workspace management
+- app deployment and listing
 - get secrets
+- list apps
+- update app secrets
+- single app management
+- get app
+- open source
+- deploy app
+- list all deployed streamlit apps
+- restart a streamlit app — use after updating secrets
+- update secrets
+- list the secret keys configured for a streamlit app (values not returned)
+- get app secrets
+- deployment
+- machine learning
+- restart app
+- get app details and status
+- data science
+- deploy a new streamlit app from a github repository
+- python
+- list streamlit community cloud workspaces
+- deploy a new app from github
+- restart a deployed app
+- get app status
+- cloud
+- get app secret keys
+- list all streamlit apps deployed in the workspace
+- update secrets for a streamlit app in toml format
+- web applications
+- delete an app
+- app restart operation
+- delete a deployed streamlit app permanently
+- get current status and details of a streamlit app
+- list accessible workspaces
+- delete app
+- app secrets management
 slug: app-deployment
 source_filename: app-deployment.yaml
 source_heading: Capability Spec

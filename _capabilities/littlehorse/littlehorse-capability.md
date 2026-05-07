@@ -97,53 +97,53 @@ personas: []
 provider_name: LittleHorse
 provider_slug: littlehorse
 search_terms:
-- assignusertask
-- getexternaleventdef
-- get an external event definition
-- postexternalevent
-- completeusertask
-- resumewfrun
-- putwfspec
-- create an external event definition
-- searchwfruns
-- getwfspec
-- listtaskdefs
+- delete a workflow specification
+- search workflow runs
+- stopwfrun
+- deletewfrun
+- deletewfspec
+- listexternaleventdefs
+- runwf
 - get a user task run
-- create or update a workflow specification
-- deletetaskdef
+- api
+- getwfspec
+- putwfspec
+- stop a workflow run
+- create or update a task definition
 - puttaskdef
 - getnoderun
-- get a workflow specification
-- delete a workflow specification
-- list task definitions
-- resume a workflow run
-- runwf
-- post an external event
-- delete a task definition
-- listwfspecs
-- littlehorse
-- list workflow specifications
-- getwfrun
-- delete a workflow run
-- stop a workflow run
-- stopwfrun
-- putexternaleventdef
-- create or update a task definition
-- api
-- get a node run
-- complete a user task
 - get a workflow run
-- listexternaleventdefs
-- deletewfspec
 - get a task definition
-- list external event definitions
-- search workflow runs
-- gettaskdef
-- deletewfrun
-- microservices
+- create an external event definition
+- littlehorse
 - run a workflow
-- getusertaskrun
+- resumewfrun
+- assignusertask
+- list external event definitions
+- list task definitions
+- get an external event definition
 - assign a user task
+- get a node run
+- list workflow specifications
+- delete a task definition
+- postexternalevent
+- create or update a workflow specification
+- putexternaleventdef
+- listwfspecs
+- searchwfruns
+- getwfrun
+- get a workflow specification
+- gettaskdef
+- listtaskdefs
+- getusertaskrun
+- getexternaleventdef
+- complete a user task
+- delete a workflow run
+- resume a workflow run
+- deletetaskdef
+- microservices
+- completeusertask
+- post an external event
 slug: littlehorse-capability
 source_filename: littlehorse-capability.yaml
 source_heading: Capability Spec

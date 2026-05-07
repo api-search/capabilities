@@ -13,14 +13,14 @@ personas: []
 provider_name: PepsiCo
 provider_slug: pepsico
 search_terms:
-- supply chain
+- pepsico
+- food
+- beverages
+- getstatus
 - get api status
 - retail
-- getstatus
-- food
 - api
-- beverages
-- pepsico
+- supply chain
 slug: pepsico-capability
 source_filename: pepsico-capability.yaml
 source_heading: Capability Spec

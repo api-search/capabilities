@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- get code context
-- ide
-- api integration
 - governance
 - spec-driven integration
-- ai
+- get code context
 - context
-- mcp
+- ai
+- ide
 - capabilities
+- api integration
+- mcp
+- naftiko
 slug: code-mode-context-window-capability
 source_filename: code-mode-context-window-capability.yaml
 source_heading: Capability Spec

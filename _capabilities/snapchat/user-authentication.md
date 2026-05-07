@@ -14,20 +14,20 @@ provider_name: Snapchat
 provider_slug: snapchat
 search_terms:
 - marketing
-- ar
-- messaging
-- get user profile
 - social media
-- advertising
-- identity
-- oauth
-- get the authenticated user's snapchat profile
-- augmented reality
-- authentication
-- get authenticated user profile
-- snapchat
-- user management
+- ar
 - retrieve the authenticated snapchat user's display name and bitmoji avatar
+- get authenticated user profile
+- oauth
+- augmented reality
+- messaging
+- snapchat
+- advertising
+- get user profile
+- identity
+- get the authenticated user's snapchat profile
+- user management
+- authentication
 slug: user-authentication
 source_filename: user-authentication.yaml
 source_heading: Capability Spec

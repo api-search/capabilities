@@ -41,31 +41,31 @@ personas: []
 provider_name: Google Vertex AI
 provider_slug: google-vertex-ai
 search_terms:
-- google vertex ai create an endpoint
+- createendpoint
+- listdatasets
+- vertex
+- google vertex ai list endpoints
+- ai
+- api
+- google vertex ai get a model
+- listendpoints
+- google vertex ai list datasets
+- artificial intelligence
+- google
+- deletemodel
+- getmodel
+- machine learning
+- listmodels
 - google vertex ai run a prediction
 - generative ai
-- listdatasets
-- deletemodel
-- google
-- getmodel
-- ai
-- google vertex ai delete a model
-- listmodels
-- google vertex ai get a model
-- artificial intelligence
-- predict
-- google vertex ai list datasets
-- machine learning
-- google vertex ai list training pipelines
-- api
-- ml models
-- google vertex ai list endpoints
-- vertex
-- listtrainingpipelines
-- createendpoint
 - google vertex ai list models
+- ml models
+- google vertex ai list training pipelines
+- predict
+- listtrainingpipelines
+- google vertex ai delete a model
+- google vertex ai create an endpoint
 - google cloud
-- listendpoints
 slug: google-vertex-ai-capability
 source_filename: google-vertex-ai-capability.yaml
 source_heading: Capability Spec

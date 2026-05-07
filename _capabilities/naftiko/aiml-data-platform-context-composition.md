@@ -13,21 +13,21 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- compose ai context
-- api integration
 - governance
-- ai/ml
-- pull data-platform features (snowflake) plus model metadata (mlflow) into one shaped ai context object.
+- spec-driven integration
 - data platform
+- pull data-platform features (snowflake) plus model metadata (mlflow) into one shaped ai context object.
 - get a registered mlflow model.
+- get registered model
 - ai
+- composition
+- capabilities
+- api integration
+- compose ai context
 - mcp
 - compose ai context from data-platform + ml registry.
-- capabilities
-- get registered model
-- composition
-- spec-driven integration
+- naftiko
+- ai/ml
 slug: aiml-data-platform-context-composition
 source_filename: aiml-data-platform-context-composition.yaml
 source_heading: Capability Spec

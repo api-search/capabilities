@@ -37,41 +37,41 @@ personas: []
 provider_name: RentCast
 provider_slug: rentcast
 search_terms:
-- get an automated rent estimate for a property
-- get value estimate
-- valuation
-- get an automated home value estimate (avm) for a property with comparable sales
-- real estate market statistics
 - for-sale property listings
+- valuation
 - search property records by address or geographic area
-- rent estimate via avm
-- search properties
-- home value estimate via avm
-- retrieve a property record by id
-- get market statistics
-- real estate
-- get property
-- property data
-- search for active and historical sale listings by location or address
-- get an automated home value estimate for a property
-- us property record lookup and search
-- get a specific property record
-- get rent estimate
-- search us property records by address, city, state, zip code, or geographic coordinates
-- get detailed property record by rentcast property id
-- get aggregate real estate market statistics for a zip code including price trends and inventory
-- investment
-- search for sale listings by location
-- long-term rental listings
-- avm
-- search for long-term rental listings by location, address, or property criteria
-- search sale listings
-- rental market
-- search rental listings
-- search for rental listings by location
-- market analysis
-- get an automated rent estimate (avm) for a property with comparable rentals
 - get aggregate market statistics for a zip code
+- rental market
+- search properties
+- get a specific property record
+- market analysis
+- us property record lookup and search
+- search for sale listings by location
+- real estate market statistics
+- retrieve a property record by id
+- get rent estimate
+- get value estimate
+- investment
+- search for active and historical sale listings by location or address
+- real estate
+- search sale listings
+- get market statistics
+- get an automated rent estimate for a property
+- search for long-term rental listings by location, address, or property criteria
+- search us property records by address, city, state, zip code, or geographic coordinates
+- search for rental listings by location
+- get detailed property record by rentcast property id
+- avm
+- get aggregate real estate market statistics for a zip code including price trends and inventory
+- get property
+- rent estimate via avm
+- property data
+- get an automated home value estimate (avm) for a property with comparable sales
+- long-term rental listings
+- get an automated rent estimate (avm) for a property with comparable rentals
+- get an automated home value estimate for a property
+- search rental listings
+- home value estimate via avm
 slug: property-research
 source_filename: property-research.yaml
 source_heading: Capability Spec

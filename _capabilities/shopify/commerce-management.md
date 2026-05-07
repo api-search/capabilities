@@ -61,59 +61,59 @@ personas: []
 provider_name: Shopify
 provider_slug: shopify
 search_terms:
-- list products with optional filters
-- list fulfillments for an order
-- fulfill an order
-- list inventory levels across locations
-- create a fulfillment record to mark order items as shipped
-- list shopify store products with optional filters for status, vendor, and product type
-- manage webhook subscriptions
-- create a webhook subscription to receive real-time store event notifications
-- list fulfillment records for a specific order
-- shopping cart
-- manage product collections
-- shopify
-- create a webhook subscription
-- list orders with filters
-- retail
-- manage customer records
-- create a new customer
-- create webhook
-- manage store products
-- create a new product listing in the shopify store
-- manage inventory levels
-- commerce
-- list custom product collections in the shopify store
-- create a new product
-- list fulfillments
-- list shopify customers with optional email filter
-- list webhook subscriptions
-- adjust inventory
-- inventory
-- create a new customer record in the shopify store
-- create a new order
-- list shopify orders with filters for status, financial status, and fulfillment status
-- t1
-- ecommerce
-- create fulfillment
 - list inventory levels
 - create customer
-- list product collections
-- list inventory levels for products across store locations
+- create a webhook subscription to receive real-time store event notifications
 - create order
-- payments
-- list orders
-- list customers
-- list all webhook subscriptions configured for the store
-- list products
 - manage order fulfillments
+- list shopify store products with optional filters for status, vendor, and product type
+- list shopify orders with filters for status, financial status, and fulfillment status
+- list orders with filters
+- create a new product listing in the shopify store
 - create product
-- adjust inventory quantity for a product variant at a specific location
-- manage customer orders
-- list webhooks
+- retail
+- list shopify customers with optional email filter
+- list products
+- list fulfillments
+- list fulfillment records for a specific order
+- list custom product collections in the shopify store
+- ecommerce
 - create a new order in the shopify store
-- list collections
+- adjust inventory quantity for a product variant at a specific location
+- create fulfillment
+- shopify
+- inventory
+- create webhook
+- list inventory levels for products across store locations
+- manage inventory levels
+- create a new product
+- manage customer orders
+- create a new customer record in the shopify store
+- list product collections
+- list orders
+- create a fulfillment record to mark order items as shipped
+- list products with optional filters
+- manage customer records
+- list inventory levels across locations
+- t1
+- list webhooks
+- create a new order
 - adjust inventory at a location
+- list collections
+- manage product collections
+- create a webhook subscription
+- list customers
+- shopping cart
+- adjust inventory
+- create a new customer
+- manage webhook subscriptions
+- payments
+- list webhook subscriptions
+- manage store products
+- list fulfillments for an order
+- list all webhook subscriptions configured for the store
+- commerce
+- fulfill an order
 slug: commerce-management
 source_filename: commerce-management.yaml
 source_heading: Capability Spec

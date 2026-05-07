@@ -29,23 +29,23 @@ personas: []
 provider_name: OpenWeather
 provider_slug: openweather
 search_terms:
-- weather
-- current and forecast weather data for a coordinate
-- current air pollution data for a coordinate
+- getonecall
+- air pollution
 - hourly air pollution forecast for a coordinate
+- current air pollution data for a coordinate
+- current and forecast weather data for a coordinate
+- historical air pollution data for a coordinate
+- weather
 - climate
+- historical weather data for a coordinate and timestamp
+- getcurrentairpollution
+- getairpollutionhistory
+- forecasting
 - api
 - openweather
-- getairpollutionhistory
-- getonecall
-- forecasting
-- historical weather data for a coordinate and timestamp
 - getairpollutionforecast
-- historical air pollution data for a coordinate
 - getonecalltimemachine
 - air quality
-- getcurrentairpollution
-- air pollution
 slug: openweather-capability
 source_filename: openweather-capability.yaml
 source_heading: Capability Spec

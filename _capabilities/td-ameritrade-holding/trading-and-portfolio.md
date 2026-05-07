@@ -49,56 +49,56 @@ personas: []
 provider_name: TD Ameritrade Holding
 provider_slug: td-ameritrade-holding
 search_terms:
-- place a new trade order
-- deprecated
-- retrieve all linked td ameritrade brokerage accounts with balances and positions
-- retrieve all linked brokerage accounts with balances and positions
-- retrieve account transaction history
+- get account
+- get orders
+- retrieve account transaction history with optional date range and type filtering
+- get option chain
+- retrieve all orders for a brokerage account with optional status filtering
+- options chain data
+- security watchlists
+- get option chain data for an optionable security symbol
+- charles schwab
+- get all watchlists for an account
 - get option chain for an optionable symbol
+- search for securities by symbol or description to find trading instruments
+- brokerage account information and balances
+- td ameritrade
 - retrieve orders for the account
+- get accounts
+- deprecated
+- get account balances and positions for a specific account
+- historical price data
+- brokerage
+- retrieve all linked brokerage accounts with balances and positions
 - search instruments
+- order management for a brokerage account
+- get watchlists
+- retrieve account transaction history
+- finance
+- place a new trade order (market, limit, stop, etc.) for an account
+- get detailed account information including balances and current positions
+- get price history
+- real-time market quotes
+- get quotes for one or more symbols
+- account transaction history
+- investment
+- trading
+- cancel order
+- portfolio
+- retrieve historical ohlcv price data for a security symbol
+- security and instrument search
+- cancel a pending trade order
+- retrieve all linked td ameritrade brokerage accounts with balances and positions
+- place a new trade order
 - market data
 - place order
-- charles schwab
-- get detailed account information including balances and current positions
-- search for securities by symbol or description to find trading instruments
-- finance
-- get historical ohlcv price data for a symbol
-- account transaction history
-- cancel order
-- brokerage account information and balances
-- get option chain
-- trading
-- place a new trade order (market, limit, stop, etc.) for an account
+- get quotes
 - get transactions
 - get real-time market quotes for one or more security symbols
-- security and instrument search
-- get quotes
-- search for securities by symbol or description
-- historical price data
-- get watchlists
-- brokerage
-- get account balances and positions for a specific account
-- retrieve account transaction history with optional date range and type filtering
-- retrieve all orders for a brokerage account with optional status filtering
 - get all security watchlists for a brokerage account
-- real-time market quotes
-- options chain data
-- investment
-- get option chain data for an optionable security symbol
-- security watchlists
-- get accounts
-- order management for a brokerage account
 - single account details
-- retrieve historical ohlcv price data for a security symbol
-- get price history
-- get account
-- get all watchlists for an account
-- portfolio
-- get orders
-- get quotes for one or more symbols
-- td ameritrade
-- cancel a pending trade order
+- get historical ohlcv price data for a symbol
+- search for securities by symbol or description
 slug: trading-and-portfolio
 source_filename: trading-and-portfolio.yaml
 source_heading: Capability Spec

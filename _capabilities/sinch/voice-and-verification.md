@@ -21,35 +21,35 @@ personas: []
 provider_name: Sinch
 provider_slug: sinch
 search_terms:
-- make an outbound voice call with text-to-speech or ivr
-- calling
-- manage active voice calls
-- cpaas
-- identity
-- get information about a voice call
 - make voice call
-- start a phone number verification via sms or call
-- get call status
-- start verification
-- voice
-- start call verification
-- otp
-- initiate a voice callout with tts or custom audio
-- sms
-- make callout
-- messaging
-- start a phone number verification via automated phone call
+- calling
 - report verification code
-- authentication
-- get the status and details of a voice call
-- start a phone number verification flow sending an otp via sms
-- make outbound voice calls
-- get call
-- start sms verification
 - report the otp code entered by the user to complete verification
-- verification
+- authentication
+- make callout
+- manage active voice calls
+- sms
 - start phone number verification flows
+- cpaas
+- get information about a voice call
+- identity
+- start verification
+- start a phone number verification via automated phone call
+- make outbound voice calls
+- get call status
 - communications
+- get call
+- verification
+- otp
+- start a phone number verification via sms or call
+- voice
+- get the status and details of a voice call
+- make an outbound voice call with text-to-speech or ivr
+- start a phone number verification flow sending an otp via sms
+- initiate a voice callout with tts or custom audio
+- start call verification
+- messaging
+- start sms verification
 slug: voice-and-verification
 source_filename: voice-and-verification.yaml
 source_heading: Capability Spec

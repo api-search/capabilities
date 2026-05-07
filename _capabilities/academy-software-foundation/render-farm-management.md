@@ -31,44 +31,44 @@ personas:
 provider_name: Academy Software Foundation
 provider_slug: academy-software-foundation
 search_terms:
-- vfx pipeline
-- rendering
-- get job
-- list render jobs for a specific show with optional state filtering
-- list all active shows (productions) in the render farm
-- pipeline td
-- list render hosts
-- list jobs
-- visual effects
-- vfx
-- render farm
-- production staff responsible for monitoring and managing render farm operations
-- technical director building and maintaining vfx production pipeline tools
-- academy software foundation
-- get detailed status and frame counts for a specific render job
-- linux foundation
-- get or kill a specific render job
-- film
-- animation
-- list and manage render hosts
-- opencue
-- list all render host machines and their current utilization
-- standards
-- open source
-- list and manage render shows (productions)
-- get details for a specific render job
 - list shows
-- render wrangler
-- list hosts
-- list render jobs for a show
-- list and manage render jobs
-- monitoring and management of distributed render farm resources and jobs
-- list render jobs
-- monitor and manage render jobs, hosts, and shows using opencue
+- opencue
+- pipeline td
 - list all render host machines
-- color management
-- list all active shows in the render farm
+- standards
+- get job
+- film
+- list and manage render shows (productions)
+- list render jobs for a show
+- get or kill a specific render job
+- list and manage render jobs
+- linux foundation
+- academy software foundation
+- render wrangler
+- open source
+- rendering
+- get details for a specific render job
+- list render hosts
+- vfx
 - get render job
+- list render jobs
+- technical director building and maintaining vfx production pipeline tools
+- get detailed status and frame counts for a specific render job
+- production staff responsible for monitoring and managing render farm operations
+- animation
+- list all active shows (productions) in the render farm
+- color management
+- list hosts
+- list all active shows in the render farm
+- list jobs
+- monitoring and management of distributed render farm resources and jobs
+- monitor and manage render jobs, hosts, and shows using opencue
+- vfx pipeline
+- list all render host machines and their current utilization
+- list render jobs for a specific show with optional state filtering
+- list and manage render hosts
+- render farm
+- visual effects
 slug: render-farm-management
 source_filename: render-farm-management.yaml
 source_heading: Capability Spec

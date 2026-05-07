@@ -41,41 +41,41 @@ personas: []
 provider_name: Tripetto
 provider_slug: tripetto
 search_terms:
-- webhooks
 - no-code
-- create and list tripetto forms
-- delete a form and all responses
+- list responses collected for a specific form
+- list all forms in the tripetto account
+- automation
+- forms
+- form builder
+- get form
+- list all tripetto forms in the account
+- sdk
+- surveys
+- retrieve a specific form definition by id
+- create a new smart form with a json definition
 - create form
+- update an existing form definition
 - list form responses
-- create a new smart form with conditional logic
-- list forms
+- access collected form responses
+- webhooks
+- manage a specific form
+- delete a form and all responses
+- delete a form and all its collected responses
+- update form
+- add a webhook endpoint to deliver form responses to external services
 - create form webhook
+- update form name or definition
+- list forms
+- delete form
+- list form webhooks
+- list all configured webhooks for a form
+- create and list tripetto forms
+- add a webhook endpoint to receive form responses
 - manage webhook integrations for a form
 - retrieve a specific form by id
-- list webhook integrations configured for a form
-- list all configured webhooks for a form
-- sdk
-- add a webhook endpoint to receive form responses
-- manage a specific form
-- update form
-- create a new smart form with a json definition
-- access collected form responses
-- form builder
-- list form webhooks
-- retrieve a specific form definition by id
-- update form name or definition
-- delete a form and all its collected responses
-- list all forms in the tripetto account
-- update an existing form definition
-- list responses collected for a specific form
 - list all responses for a specific form
-- add a webhook endpoint to deliver form responses to external services
-- surveys
-- forms
-- get form
-- delete form
-- list all tripetto forms in the account
-- automation
+- list webhook integrations configured for a form
+- create a new smart form with conditional logic
 slug: form-management
 source_filename: form-management.yaml
 source_heading: Capability Spec

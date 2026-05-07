@@ -89,53 +89,53 @@ personas: []
 provider_name: Node-RED
 provider_slug: node-red
 search_terms:
-- set the active flow configuration
-- node
-- get the active flow configuration
-- enable or disable a node module
-- postauthtoken
-- get a node module information
-- getflowbyid
-- getnodemoduleset
-- postflowsstate
-- putnodemoduleset
-- add a flow to the active configuration
-- self-hosted
-- postflow
-- enable or disable a node set
-- red
-- deleteflowbyid
-- getnodes
-- get a list of the installed nodes
-- iot
-- get the runtime settings
-- get the active authentication scheme
-- set the active flow runtime state
-- get a node module set information
-- getflows
-- install a new node module
-- postnodes
-- getflowsstate
-- putnodemodule
-- postflows
-- deletenodemodule
-- api
-- workflow automation
-- get the runtime diagnostics
-- get the active flow runtime state
-- putflowbyid
-- exchange credentials for an access token
-- flow-based programming
-- getnodemodule
-- get an individual flow configuration
-- revoke an access token
-- getsettings
-- getauthlogin
-- delete an individual flow configuration
-- postauthrevoke
 - update an individual flow configuration
 - getdiagnostics
+- deletenodemodule
+- enable or disable a node set
+- putnodemodule
+- workflow automation
+- set the active flow runtime state
+- get the active flow runtime state
+- api
+- get the runtime diagnostics
+- getnodemoduleset
+- install a new node module
+- postauthrevoke
+- postflowsstate
+- get an individual flow configuration
+- postflow
+- getauthlogin
+- getflowsstate
+- self-hosted
+- exchange credentials for an access token
+- get the active flow configuration
+- postflows
+- getnodemodule
 - remove a node module
+- getflowbyid
+- iot
+- get the active authentication scheme
+- getsettings
+- revoke an access token
+- delete an individual flow configuration
+- get the runtime settings
+- postnodes
+- flow-based programming
+- enable or disable a node module
+- getnodes
+- node
+- add a flow to the active configuration
+- putflowbyid
+- deleteflowbyid
+- postauthtoken
+- get a node module set information
+- set the active flow configuration
+- get a list of the installed nodes
+- putnodemoduleset
+- red
+- get a node module information
+- getflows
 slug: node-red-capability
 source_filename: node-red-capability.yaml
 source_heading: Capability Spec

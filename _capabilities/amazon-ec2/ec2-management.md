@@ -49,46 +49,46 @@ personas: []
 provider_name: Amazon EC2
 provider_slug: amazon-ec2
 search_terms:
-- amazon ec2 terminate instances
-- amazon ec2 stop running instances
-- aws
-- run instances
-- compute
-- amazon ec2 describe ec2 instances
+- terminate instances
+- describe instances
 - startInstances
-- amazon ec2 start stopped instances
-- infrastructure
-- rebootInstances
-- cloud compute management business domain for amazon ec2.
-- runInstances
-- iaas
-- virtual machines
 - deregister image
-- amazon ec2
-- amazon ec2 deregister an ami
-- amazon ec2 launch ec2 instances
-- deregisterImage
-- stopInstances
+- terminateInstances
+- amazon ec2 start stopped instances
 - stop instances
-- workflow capability for cloud compute management.
-- cloud computing
-- reboot instances
-- amazon ec2 describe instance status
-- describeImages
-- describe images
 - describeInstances
 - createImage
-- amazon ec2 reboot instances
-- describe instance status
 - create image
-- terminate instances
-- start instances
-- engineers managing amazon ec2 resources on aws.
-- terminateInstances
-- describeInstanceStatus
+- amazon ec2 reboot instances
 - amazon ec2 create an ami from an instance
-- describe instances
+- cloud compute management business domain for amazon ec2.
+- cloud computing
+- amazon ec2 deregister an ami
+- infrastructure
+- rebootInstances
+- amazon ec2 launch ec2 instances
+- amazon ec2 describe ec2 instances
 - amazon ec2 describe amis
+- stopInstances
+- amazon ec2 terminate instances
+- virtual machines
+- runInstances
+- describe instance status
+- amazon ec2 stop running instances
+- deregisterImage
+- compute
+- reboot instances
+- describeInstanceStatus
+- run instances
+- amazon ec2
+- aws
+- engineers managing amazon ec2 resources on aws.
+- describe images
+- iaas
+- workflow capability for cloud compute management.
+- start instances
+- describeImages
+- amazon ec2 describe instance status
 slug: ec2-management
 source_filename: ec2-management.yaml
 source_heading: Capability Spec

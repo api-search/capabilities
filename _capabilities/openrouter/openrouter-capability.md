@@ -57,36 +57,36 @@ personas: []
 provider_name: OpenRouter
 provider_slug: openrouter
 search_terms:
-- list available models
-- getgeneration
-- listkeys
 - create completion
-- large language models
-- gateway
-- deletekey
-- router
-- get api key
-- createkey
-- listmodels
-- artificial intelligence
-- createchatcompletion
-- list api keys
-- create api key
-- listmodelendpoints
 - delete api key
-- get credit balance
 - list providers
-- getkey
+- updatekey
 - api
 - listproviders
-- update api key
-- create chat completion
-- updatekey
-- get generation stats
+- get credit balance
 - openrouter
-- getcredits
-- list endpoints for a model
+- artificial intelligence
+- get api key
 - createcompletion
+- router
+- listmodels
+- createchatcompletion
+- listmodelendpoints
+- deletekey
+- listkeys
+- gateway
+- getcredits
+- list api keys
+- getkey
+- large language models
+- create api key
+- getgeneration
+- list endpoints for a model
+- createkey
+- get generation stats
+- create chat completion
+- update api key
+- list available models
 slug: openrouter-capability
 source_filename: openrouter-capability.yaml
 source_heading: Capability Spec

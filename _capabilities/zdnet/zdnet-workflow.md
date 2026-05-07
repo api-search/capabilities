@@ -33,29 +33,29 @@ personas: []
 provider_name: ZDNet
 provider_slug: zdnet
 search_terms:
-- rss get security rss feed
-- get cloud rss feed
-- rss get ai rss feed
-- get news rss feed
-- zdnet get developer rss feed
-- get developer rss feed
+- get innovation rss feed
+- zdnet
 - enterprise it
+- rss get cloud rss feed
+- rss get innovation rss feed
+- get security rss feed
+- get news rss feed
+- zdnet get innovation rss feed
 - technology news
+- operations for rss
+- rss get ai rss feed
+- get ai rss feed
+- rss get news rss feed
+- get cloud rss feed
 - zdnet get ai rss feed
 - zdnet get security rss feed
-- get ai rss feed
-- zdnet get news rss feed
-- rss get innovation rss feed
-- zdnet
-- zdnet get innovation rss feed
-- media
 - zdnet get cloud rss feed
-- operations for rss
+- get developer rss feed
+- media
 - rss get developer rss feed
-- get innovation rss feed
-- get security rss feed
-- rss get cloud rss feed
-- rss get news rss feed
+- zdnet get developer rss feed
+- rss get security rss feed
+- zdnet get news rss feed
 slug: zdnet-workflow
 source_filename: zdnet-workflow.yaml
 source_heading: Capability Spec

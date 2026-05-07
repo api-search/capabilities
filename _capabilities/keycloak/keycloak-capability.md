@@ -169,95 +169,95 @@ personas: []
 provider_name: Keycloak
 provider_slug: keycloak
 search_terms:
-- keycloak get a group
-- keycloak update an identity provider
-- keycloak list users
-- getrole
-- keycloak delete a user
-- keycloak get a user
-- keycloak get a realm-level role by name
-- getidentityproviders
-- identity management
-- security
-- adduserrealmrolemappings
-- createclient
-- keycloak delete a client
-- api
-- authorization
-- getrealms
-- keycloak update a client
-- getuser
-- keycloak update a group
-- updateuser
-- keycloak get an identity provider
-- regenerateclientsecret
-- deleteuser
-- keycloak reset a user's password
-- creategroup
-- createuser
-- keycloak list identity providers
-- resetuserpassword
-- keycloak update a realm
-- addusertogroup
-- createrole
-- keycloak create a top-level group
-- createidentityprovider
-- getroles
-- keycloak list groups
-- getusers
-- keycloak create a new client
-- getgroups
-- authentication
-- updaterealm
-- getclient
-- getgroup
-- openid connect
-- updategroup
-- keycloak remove a user from a group
-- keycloak create an identity provider
-- removeuserfromgroup
-- keycloak get the client secret
-- deleterole
-- deleterealm
-- keycloak update a user
-- getrealm
 - keycloak delete a realm
-- keycloak get members of a group
-- keycloak get groups for a user
-- keycloak get a realm
-- keycloak list clients
-- keycloak delete a group
-- keycloak create a new user
-- sso
-- keycloak regenerate the client secret
-- getclientsecret
-- keycloak update a realm-level role
-- keycloak remove realm-level role mappings from a user
-- deleteclient
-- updateclient
-- keycloak get a client
-- createchildgroup
-- keycloak get realm-level role mappings for a user
-- keycloak delete an identity provider
-- keycloak list realm-level roles
-- keycloak delete a realm-level role
-- deletegroup
+- getidentityproviders
 - keycloak
-- keycloak create a child group
-- getclients
-- deleteidentityprovider
-- updateidentityprovider
-- keycloak list all realms
-- updaterole
-- oauth
-- keycloak add realm-level role mappings to a user
-- keycloak create a realm-level role
-- getuserrealmrolemappings
-- getidentityprovider
-- getgroupmembers
-- deleteuserrealmrolemappings
-- getusergroups
+- api
 - keycloak add a user to a group
+- identity management
+- keycloak get the client secret
+- keycloak get a realm
+- updaterole
+- removeuserfromgroup
+- keycloak create an identity provider
+- getgroup
+- deleteuser
+- keycloak delete a client
+- adduserrealmrolemappings
+- getrole
+- keycloak list identity providers
+- authorization
+- deleterealm
+- keycloak update a realm
+- getusergroups
+- getidentityprovider
+- keycloak list realm-level roles
+- getroles
+- deletegroup
+- deleteclient
+- createrole
+- keycloak remove realm-level role mappings from a user
+- keycloak create a new client
+- keycloak update an identity provider
+- resetuserpassword
+- creategroup
+- getgroups
+- updaterealm
+- getgroupmembers
+- keycloak get a client
+- authentication
+- keycloak add realm-level role mappings to a user
+- updateclient
+- keycloak update a client
+- keycloak update a realm-level role
+- keycloak reset a user's password
+- keycloak list groups
+- keycloak get members of a group
+- getclientsecret
+- regenerateclientsecret
+- keycloak remove a user from a group
+- getclients
+- createuser
+- keycloak list all realms
+- keycloak delete a user
+- deleteidentityprovider
+- keycloak delete a realm-level role
+- security
+- getclient
+- keycloak get an identity provider
+- updateidentityprovider
+- createclient
+- openid connect
+- keycloak get groups for a user
+- keycloak delete a group
+- keycloak get a realm-level role by name
+- deleteuserrealmrolemappings
+- updateuser
+- keycloak regenerate the client secret
+- createchildgroup
+- oauth
+- keycloak list users
+- keycloak get a user
+- getuserrealmrolemappings
+- keycloak list clients
+- keycloak update a user
+- createidentityprovider
+- getusers
+- addusertogroup
+- keycloak update a group
+- sso
+- deleterole
+- getrealms
+- keycloak create a realm-level role
+- keycloak get realm-level role mappings for a user
+- getuser
+- keycloak create a top-level group
+- keycloak create a new user
+- updategroup
+- keycloak delete an identity provider
+- keycloak create a child group
+- getrealm
+- keycloak get a group
 slug: keycloak-capability
 source_filename: keycloak-capability.yaml
 source_heading: Capability Spec

@@ -53,33 +53,33 @@ personas: []
 provider_name: GovInfo
 provider_slug: govinfo
 search_terms:
-- retrieve list of packages based on dateissued value
-- request list of collections. response includes collectioncode,collectionname, package and granule counts
-- getcollectionsummary
-- get a list of relationships for a given accessid
-- retrieve list of packages based on dateissued value range
-- return json summary for specified granule
-- retrieve new or updated packages for a collection within a date range
-- get a list of granules associated with a package
-- getpackagesbydateissued
-- relatedpackagedetails
-- return json summary for specified package
-- getmodifiedcollections 1
-- relatedversionsdetails
-- this service can be used to query the govinfo search engine and return results that are the equivalent to what is returned by the main user interface. you can use field operators, such as congress, publishdate, branch, and others to constru
-- api
-- search
-- packagedetails
 - retrieve new or updated packages for a collection given a start date and time
-- govinfo
-- federal government
 - getmodifiedcollections
+- relatedpackagedetails
+- get a list of granules associated with a package
+- api
+- return json summary for specified package
+- retrieve list of packages based on dateissued value
+- getmodifiedcollections 1
+- getpackagesbydateissued
+- retrieve list of packages based on dateissued value range
+- getcollectionsummary
+- packagedetails
+- request list of collections. response includes collectioncode,collectionname, package and granule counts
+- relatedversionsdetails
 - getpackagesbydateissued 1
-- getgranulesforpackage
-- open data
-- documents
-- getgranulecontentdetail
+- retrieve new or updated packages for a collection within a date range
+- return json summary for specified granule
 - government publishing
+- documents
+- getgranulesforpackage
+- this service can be used to query the govinfo search engine and return results that are the equivalent to what is returned by the main user interface. you can use field operators, such as congress, publishdate, branch, and others to constru
+- getgranulecontentdetail
+- search
+- federal government
+- govinfo
+- get a list of relationships for a given accessid
+- open data
 slug: govinfo-capability
 source_filename: govinfo-capability.yaml
 source_heading: Capability Spec

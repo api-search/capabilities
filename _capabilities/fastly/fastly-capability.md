@@ -69,38 +69,38 @@ personas: []
 provider_name: fastly
 provider_slug: fastly
 search_terms:
-- getcurrentuser
-- get the current customer
-- get the current user
-- listcustomerusers
-- get a customer
-- getrole
-- get an iam role
-- delete a user
-- listusergroups
-- createusergroup
-- listservicegroups
-- getcustomer
-- listroles
-- api
-- fastly
-- create an iam user group
-- createinvitation
 - createservicegroup
-- getuser
+- get the current customer
+- getcurrentuser
+- createusergroup
+- getcustomer
 - updatecustomer
-- update a customer
-- list iam roles
-- get a user
+- api
 - create a user invitation
-- create an iam service group
-- update a user
-- getcurrentcustomer
-- list users for a customer
-- updateuser
 - list iam service groups
-- list iam user groups
+- delete a user
+- get a customer
+- list iam roles
+- getuser
+- get the current user
+- get a user
 - deleteuser
+- listcustomerusers
+- update a customer
+- getrole
+- list iam user groups
+- listservicegroups
+- updateuser
+- getcurrentcustomer
+- fastly
+- createinvitation
+- create an iam service group
+- listusergroups
+- listroles
+- get an iam role
+- create an iam user group
+- update a user
+- list users for a customer
 slug: fastly-capability
 source_filename: fastly-capability.yaml
 source_heading: Capability Spec

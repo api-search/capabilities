@@ -37,51 +37,51 @@ personas: []
 provider_name: Stack Exchange
 provider_slug: stack-exchange
 search_terms:
-- get users
-- search questions by keyword
-- questions that need answers
+- list stack exchange sites
+- find community experts
+- browse tags on a stack exchange site to understand topic taxonomy
+- stack exchange network sites
+- get questions from stack exchange sorted by activity, creation, or votes
+- advanced search
+- get tags used to categorize questions on stack exchange
+- list all stack exchange network sites
+- community
+- get top-voted or most-active questions on a stack exchange site optionally filtered by tag
+- questions
+- browse tags
+- advanced search with acceptance status, body, and view count filters
+- get unanswered questions
+- advanced search questions
+- advanced question search with multiple filters
+- get question details
+- perform advanced search of stack exchange with acceptance, vote, and tag filters
+- list all sites in the stack exchange network to find the right community
+- knowledge base
+- q&a
+- get questions
+- find stack exchange users and community experts
+- browse and filter questions
 - developer tools
 - search stack overflow and stack exchange for programming questions by keyword, topic, or technology tag
-- get sites
-- browse tags
-- find unanswered questions on stack exchange that need community attention
-- search questions
-- find community experts
-- get top questions
-- community
-- get unanswered questions to identify knowledge gaps
-- find experts
-- list stack exchange sites
-- q&a
-- get tags used to categorize questions on stack exchange
-- browse tags on a stack exchange site to understand topic taxonomy
-- get questions from stack exchange sorted by activity, creation, or votes
-- list all sites in the stack exchange network to find the right community
-- browse and filter questions
-- knowledge discovery
-- advanced search
-- get top-voted or most-active questions on a stack exchange site optionally filtered by tag
-- stack exchange
-- get full details of specific stack exchange questions by id
-- get unanswered questions
-- get question details
-- search programming questions
-- find high-reputation users and experts on a stack exchange site by name
-- advanced search with acceptance status, body, and view count filters
-- search stack exchange questions by title text and tags
-- list all stack exchange network sites
-- stack exchange network sites
-- get tags
-- code
-- search
-- knowledge base
-- perform advanced search of stack exchange with acceptance, vote, and tag filters
-- advanced search questions
-- get questions
 - answers
-- questions
-- find stack exchange users and community experts
-- advanced question search with multiple filters
+- find unanswered questions on stack exchange that need community attention
+- get top questions
+- search programming questions
+- stack exchange
+- knowledge discovery
+- find experts
+- find high-reputation users and experts on a stack exchange site by name
+- questions that need answers
+- get unanswered questions to identify knowledge gaps
+- search questions by keyword
+- search
+- search stack exchange questions by title text and tags
+- get tags
+- get full details of specific stack exchange questions by id
+- get users
+- code
+- get sites
+- search questions
 slug: knowledge-discovery
 source_filename: knowledge-discovery.yaml
 source_heading: Capability Spec

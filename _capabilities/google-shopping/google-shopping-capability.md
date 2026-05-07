@@ -37,28 +37,28 @@ personas: []
 provider_name: Google Content API for Shopping
 provider_slug: google-shopping
 search_terms:
-- listaccounts
 - insertproduct
-- google content api for shopping list datafeeds
-- retail
-- deleteproduct
-- product listings
-- google
-- e-commerce
-- google content api for shopping insert product
-- google shopping
 - listdatafeeds
-- listproducts
-- listorders
-- google content api for shopping list products
-- google content api for shopping list accounts
+- retail
 - api
-- google content api for shopping list orders
-- shopping
+- google content api for shopping list accounts
 - merchant center
-- getproduct
+- product listings
+- google content api for shopping list products
+- google
+- google content api for shopping list datafeeds
+- listorders
 - google content api for shopping delete product
 - google content api for shopping get product
+- deleteproduct
+- getproduct
+- e-commerce
+- google shopping
+- shopping
+- google content api for shopping list orders
+- listproducts
+- google content api for shopping insert product
+- listaccounts
 slug: google-shopping-capability
 source_filename: google-shopping-capability.yaml
 source_heading: Capability Spec

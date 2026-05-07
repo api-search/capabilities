@@ -53,34 +53,34 @@ personas: []
 provider_name: Fiserv
 provider_slug: fiserv
 search_terms:
-- addaccount
-- fiserv
-- fiserv retrieve account details
-- fiserv reverse a payment
-- fiserv create a new account
-- listtransactions
-- fiserv create a customer party
-- fiserv update account details
+- reversepayment
 - fiserv initiate a fund transfer
-- createpayment
 - getaccount
+- wealth management
+- fiserv
+- fiserv process a payment
+- updateaccount
+- api
+- fiserv create a customer party
+- fiserv update party details
+- createpayment
 - updateparty
+- fiserv update account details
 - createtransfer
 - getparty
-- fiserv update party details
-- addparty
-- fiserv process a payment
-- api
-- updateaccount
-- wealth management
-- payments
-- fiserv retrieve transfer details
-- financial
-- reversepayment
 - fiserv list account transactions
 - gettransfer
+- listtransactions
+- fiserv retrieve account details
+- fiserv create a new account
+- addaccount
+- financial
 - fiserv retrieve party details
 - banking
+- payments
+- fiserv retrieve transfer details
+- fiserv reverse a payment
+- addparty
 slug: fiserv-capability
 source_filename: fiserv-capability.yaml
 source_heading: Capability Spec

@@ -29,24 +29,24 @@ personas: []
 provider_name: Freedom of Information Act
 provider_slug: freedom-of-information-act
 search_terms:
-- freedom
-- getagencycomponentrequestform
-- submit a foia request to an agency component
-- federal government
-- transparency
-- act
-- information
 - listagencycomponents
-- get an agency annual foia report
-- api
+- act
+- getagencycomponent
 - list agency components
-- get an agency component's request form
-- getannualreportxml
+- get an agency annual foia report
 - of
+- transparency
+- freedom
+- federal government
 - submitagencyrequest
 - get agency component
+- information
+- api
+- getannualreportxml
 - foia
-- getagencycomponent
+- getagencycomponentrequestform
+- get an agency component's request form
+- submit a foia request to an agency component
 slug: freedom-of-information-act-capability
 source_filename: freedom-of-information-act-capability.yaml
 source_heading: Capability Spec

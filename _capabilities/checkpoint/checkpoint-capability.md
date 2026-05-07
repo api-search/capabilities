@@ -29,28 +29,28 @@ personas: []
 provider_name: Check Point
 provider_slug: checkpoint
 search_terms:
-- listcloudaccounts
-- checkpoint
 - createcloudaccount
-- firewall
+- listcloudaccounts
 - listfindings
-- security
+- api
+- identity awareness
+- list rulesets used for posture management
+- waf
+- checkpoint
+- onboard a cloud account
+- endpoint security
 - cloud security
 - network security
-- identity awareness
-- list compliance findings
-- api
 - mobile security
-- waf
-- endpoint security
-- onboard a cloud account
-- list onboarded cloud accounts
-- listassessments
-- threat prevention
+- firewall
 - list historical compliance assessments
 - listrulesets
 - cybersecurity
-- list rulesets used for posture management
+- listassessments
+- list onboarded cloud accounts
+- threat prevention
+- security
+- list compliance findings
 slug: checkpoint-capability
 source_filename: checkpoint-capability.yaml
 source_heading: Capability Spec

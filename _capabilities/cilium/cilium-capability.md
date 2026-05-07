@@ -173,95 +173,95 @@ personas: []
 provider_name: Cilium
 provider_slug: cilium
 search_terms:
-- cilium list bgp routes
-- getlocalendpointidentities
-- getbgproutepolicies
-- cilium get node ids
-- cilium list bgp peers
-- patchendpointconfig
-- cilium get fqdn selector names
-- allocateipaddress
-- getbgproutes
-- cilium get endpoint labels
-- cilium get daemon configuration
-- releaseipaddress
-- security
-- cilium get debugging information
-- api
-- cilium allocate specific ip address
-- getdebuginfo
-- getendpointhealth
-- listipaddresses
-- getbgppeers
-- listendpoints
-- networking
-- getendpointlabels
-- getendpointconfig
-- getservice
-- deletefqdncache
-- getfqdncache
-- cilium list bpf maps
-- cilium allocate ip address
-- cloud native
-- kubernetes
-- cilium release ip address
-- allocatespecificipaddress
-- cilium modify endpoint labels
-- getidentity
-- cilium get endpoint by id
-- getclusternodes
-- deleteendpoint
-- cilium list ip addresses
-- listlocalredirectpolicies
-- deleteprefilterconfig
-- patchprefilterconfig
-- cilium
-- cilium modify endpoint configuration
-- getdaemonconfig
-- getnodeids
-- patchendpoint
-- cilium get service by id
-- patchdaemonconfig
-- putservice
-- deleteservice
-- cilium modify daemon configuration
-- cilium list endpoints
 - putendpoint
-- getendpointlog
-- cilium get fqdn dns cache
-- cilium modify endpoint
-- getbpfmaps
-- cilium get endpoint health
-- cilium get endpoint status log
-- cilium delete prefilter entries
-- getprefilterconfig
-- cilium get identity by id
-- cilium list security identities
-- cilium update prefilter configuration
-- cilium create or update service
-- ebpf
-- getfqdnnames
-- listidentities
-- cilium create or replace endpoint
-- cilium clear fqdn dns cache
-- patchendpointlabels
-- cilium list cluster nodes
-- cilium get endpoint configuration
-- deleteendpoints
-- cilium delete service
-- cilium list bgp route policies
-- cilium get daemon health status
-- cilium delete endpoints by label selector
-- cilium get policy selectors
-- getpolicyselectors
-- cilium get prefilter configuration
-- cilium list services
 - cilium delete endpoint
-- cilium list local redirect policies
-- getdaemonhealth
-- cilium list local endpoint identities
-- getendpoint
+- cilium clear fqdn dns cache
+- getdaemonconfig
+- getbgproutepolicies
+- api
+- cilium list security identities
+- cilium list bgp peers
+- deleteendpoint
+- releaseipaddress
+- cilium
+- cilium get endpoint status log
+- allocatespecificipaddress
+- patchendpointlabels
+- getendpointconfig
+- getpolicyselectors
+- deletefqdncache
+- cilium create or replace endpoint
+- cilium get endpoint configuration
+- cilium get debugging information
+- patchendpoint
+- getbpfmaps
+- deleteservice
+- cilium get daemon configuration
 - listservices
+- cilium get fqdn selector names
+- getlocalendpointidentities
+- ebpf
+- cilium create or update service
+- getprefilterconfig
+- getendpointhealth
+- cilium modify daemon configuration
+- listlocalredirectpolicies
+- cilium delete prefilter entries
+- cloud native
+- cilium modify endpoint labels
+- cilium delete endpoints by label selector
+- cilium list bpf maps
+- cilium modify endpoint configuration
+- cilium update prefilter configuration
+- cilium get policy selectors
+- cilium release ip address
+- getendpointlog
+- getfqdnnames
+- security
+- cilium delete service
+- patchendpointconfig
+- cilium list bgp route policies
+- getclusternodes
+- networking
+- putservice
+- listipaddresses
+- cilium list bgp routes
+- cilium get endpoint by id
+- listendpoints
+- getidentity
+- cilium get service by id
+- cilium get identity by id
+- kubernetes
+- listidentities
+- cilium list cluster nodes
+- cilium get endpoint health
+- cilium get fqdn dns cache
+- cilium list local redirect policies
+- deleteprefilterconfig
+- getbgppeers
+- getfqdncache
+- cilium allocate ip address
+- cilium get endpoint labels
+- cilium list ip addresses
+- getendpointlabels
+- cilium modify endpoint
+- getservice
+- getdaemonhealth
+- cilium list services
+- getnodeids
+- deleteendpoints
+- getbgproutes
+- getendpoint
+- patchprefilterconfig
+- cilium get daemon health status
+- getdebuginfo
+- cilium get node ids
+- allocateipaddress
+- cilium get prefilter configuration
+- cilium list local endpoint identities
+- cilium list endpoints
+- patchdaemonconfig
+- cilium allocate specific ip address
 slug: cilium-capability
 source_filename: cilium-capability.yaml
 source_heading: Capability Spec

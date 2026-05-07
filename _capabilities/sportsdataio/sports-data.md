@@ -17,25 +17,25 @@ personas: []
 provider_name: SportsDataIO
 provider_slug: sportsdataio
 search_terms:
-- soccer
 - sports data
-- get all 32 nfl teams
-- get current nfl season
-- current nfl season info
-- get nfl season
-- mlb
-- nhl
-- get nfl teams
-- get the current nfl season year and week, useful for constructing other api queries.
-- fantasy sports
-- nfl
-- live scores
-- get nfl current season
-- odds
 - get all 32 nfl teams with full details including conference, division, city, and stadium.
+- get nfl teams
+- mlb
+- get all 32 nfl teams
+- fantasy sports
+- nhl
+- get nfl season
+- get the current nfl season year and week, useful for constructing other api queries.
+- odds
+- get nfl current season
+- soccer
 - nfl teams
-- nba
+- live scores
 - statistics
+- current nfl season info
+- nfl
+- get current nfl season
+- nba
 slug: sports-data
 source_filename: sports-data.yaml
 source_heading: Capability Spec

@@ -45,52 +45,52 @@ personas: []
 provider_name: Service Fabric
 provider_slug: service-fabric
 search_terms:
-- individual node information
-- list all deployed applications
-- get information for a specific cluster node
+- service management within an application
 - health monitoring
-- get information for a specific application
-- deploy a new application
-- cluster node management
-- distributed systems
-- delete a deployed service fabric application and all its services. use forceremove=true only when the application is stuck in a deleting state.
-- get node info
-- azure
-- application lifecycle management
-- list all nodes in the cluster
-- list nodes
-- delete a deployed application
+- get application
 - list services
-- get detailed information about a specific cluster node by name
-- list all services within a specific service fabric application
-- cluster management
+- list all applications deployed in the service fabric cluster. optionally filter by application type name.
+- deploy a new service fabric application to the cluster. requires the application type to be provisioned first. provide name (fabric:/myapp), typename, and typeversion.
+- deploy a new application
 - containers
+- get detailed information about a specific deployed application
+- distributed systems
+- get node info
+- get detailed information about a specific cluster node by name
+- get cluster health
+- application health monitoring
+- delete a deployed application
+- cluster node management
+- create application
+- cloud native
 - get the health state of a specific application, including per-service health rollups and any active health events.
-- application lifecycle
+- get node
+- get application info
+- overall cluster health state
+- list all deployed applications
+- open source
 - get health state for an application and its services
 - list all nodes in the service fabric cluster. filter by node status (up, down, all). includes node name, ip, node type, and health state.
-- list all applications deployed in the service fabric cluster. optionally filter by application type name.
-- cloud native
-- individual application management
 - kubernetes
-- get the overall health state of the service fabric cluster. returns aggregated health state (ok/warning/error) plus per-node and per-application health states.
-- open source
-- application health monitoring
-- service management within an application
-- deploy a new service fabric application to the cluster. requires the application type to be provisioned first. provide name (fabric:/myapp), typename, and typeversion.
+- get information for a specific cluster node
+- list all nodes in the cluster
+- individual node information
+- list all services within a specific service fabric application
+- get the aggregated health state of the cluster
+- cluster management
+- get information for a specific application
+- application lifecycle management
+- list applications
 - delete application
 - get application health
-- get detailed information about a specific deployed application
-- get the aggregated health state of the cluster
-- overall cluster health state
+- azure
+- application lifecycle
+- list nodes
 - list services within an application
-- get application info
-- create application
-- get application
-- list applications
+- individual application management
 - microservices
-- get node
-- get cluster health
+- get the overall health state of the service fabric cluster. returns aggregated health state (ok/warning/error) plus per-node and per-application health states.
+- delete a deployed service fabric application and all its services. use forceremove=true only when the application is stuck in a deleting state.
 slug: cluster-management
 source_filename: cluster-management.yaml
 source_heading: Capability Spec

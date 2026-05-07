@@ -21,18 +21,18 @@ personas: []
 provider_name: OAuth
 provider_slug: oauth
 search_terms:
-- token revocation endpoint
-- authorization endpoint
-- api
-- oauth
-- revoketoken
-- authorization
-- security
-- token endpoint
 - tokens
-- requesttoken
-- authorize
+- authorization endpoint
+- revoketoken
 - access control
+- authorization
+- token endpoint
+- oauth
+- authorize
+- requesttoken
+- token revocation endpoint
+- api
+- security
 slug: oauth-capability
 source_filename: oauth-capability.yaml
 source_heading: Capability Spec

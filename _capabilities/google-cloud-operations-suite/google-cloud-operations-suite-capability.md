@@ -45,37 +45,37 @@ personas: []
 provider_name: Google Cloud Operations Suite
 provider_slug: google-cloud-operations-suite
 search_terms:
-- google cloud operations suite list time series
-- writelogentries
-- stackdriver
-- google cloud operations suite list dashboards
-- tracing
-- google cloud operations suite create dashboard
-- error reporting
-- listtimeseries
-- google cloud operations suite create time series
-- cloud
-- google
-- profiling
-- google cloud operations suite write log entries
-- monitoring
-- operations
-- listlogentries
-- api
-- observability
-- google cloud operations suite create alert policy
-- createtimeseries
-- listalertpolicies
-- google cloud operations suite list uptime check configs
-- createdashboard
-- google cloud operations suite list log entries
-- createalertpolicy
-- suite
-- listdashboards
-- google cloud
-- logging
 - google cloud operations suite list alert policies
+- operations
+- google cloud operations suite list dashboards
+- google cloud operations suite create alert policy
+- api
+- writelogentries
+- monitoring
+- google
+- observability
+- google cloud operations suite write log entries
+- google cloud operations suite list log entries
+- listalertpolicies
+- stackdriver
+- google cloud operations suite list uptime check configs
+- cloud
+- google cloud operations suite create dashboard
+- google cloud operations suite create time series
+- tracing
+- listtimeseries
+- listdashboards
+- suite
+- google cloud operations suite list time series
+- listlogentries
 - listuptimecheckconfigs
+- profiling
+- createdashboard
+- google cloud
+- createalertpolicy
+- error reporting
+- createtimeseries
+- logging
 slug: google-cloud-operations-suite-capability
 source_filename: google-cloud-operations-suite-capability.yaml
 source_heading: Capability Spec

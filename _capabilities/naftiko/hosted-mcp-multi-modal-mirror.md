@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- get server
+- governance
 - multi-modal
+- spec-driven integration
+- get server
+- ai
+- capabilities
 - list mirrored servers
 - api integration
-- governance
-- spec-driven integration
-- ai
 - mcp
-- capabilities
+- naftiko
 slug: hosted-mcp-multi-modal-mirror
 source_filename: hosted-mcp-multi-modal-mirror.yaml
 source_heading: Capability Spec

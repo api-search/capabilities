@@ -49,36 +49,36 @@ personas: []
 provider_name: Google Cloud Eventarc
 provider_slug: google-cloud-eventarc
 search_terms:
-- getchannel
-- google cloud eventarc create a channel
-- serverless
-- cloud
-- google cloud eventarc get a trigger
-- google
-- listchannels
-- google cloud eventarc delete a trigger
-- deletechannel
-- events
-- triggers
-- createchannel
-- deletetrigger
-- messaging
-- api
-- listproviders
-- eventarc
-- listtriggers
-- createtrigger
-- google cloud eventarc list triggers
-- google cloud eventarc delete a channel
 - event-driven
-- google cloud eventarc list providers
-- updatetrigger
+- listtriggers
+- google cloud eventarc create a channel
+- api
+- listchannels
+- listproviders
 - google cloud eventarc get a channel
 - google cloud eventarc update a trigger
-- google cloud eventarc list channels
+- deletetrigger
+- google cloud eventarc list providers
+- google
+- google cloud eventarc delete a trigger
+- triggers
+- serverless
+- events
+- google cloud eventarc get a trigger
+- google cloud eventarc delete a channel
+- google cloud eventarc list triggers
 - gettrigger
-- google cloud
+- getchannel
+- eventarc
+- cloud
+- createtrigger
 - google cloud eventarc create a trigger
+- google cloud
+- updatetrigger
+- messaging
+- createchannel
+- deletechannel
+- google cloud eventarc list channels
 slug: google-cloud-eventarc-capability
 source_filename: google-cloud-eventarc-capability.yaml
 source_heading: Capability Spec

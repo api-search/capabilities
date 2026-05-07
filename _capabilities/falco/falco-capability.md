@@ -25,21 +25,21 @@ personas: []
 provider_name: Falco
 provider_slug: falco
 search_terms:
-- falco version information
-- getrules
-- ebpf
+- cloud native
+- getversion
 - reloadrules
+- falco version information
+- falco health check
+- ebpf
+- falco list loaded rules
+- runtime security
+- threat detection
+- falco reload rules
+- gethealthz
 - api
 - security
-- getversion
+- getrules
 - falco
-- runtime security
-- falco reload rules
-- cloud native
-- falco health check
-- threat detection
-- gethealthz
-- falco list loaded rules
 slug: falco-capability
 source_filename: falco-capability.yaml
 source_heading: Capability Spec

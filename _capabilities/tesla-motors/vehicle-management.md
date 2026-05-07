@@ -57,70 +57,70 @@ personas: []
 provider_name: Tesla Motors
 provider_slug: tesla-motors
 search_terms:
-- cars
-- stop charging
-- get gps location and driving state
-- start vehicle charging
-- full vehicle telemetry
-- get physical state of a tesla (doors, windows, trunk, odometer)
-- start charging
-- get vehicle state
-- lock all vehicle doors
-- lock all doors on a tesla vehicle
-- set sentry mode
-- get interior temperature and climate control settings for a tesla
-- flash tesla headlights to visually locate the vehicle
-- telemetry
-- get climate settings and temperatures
-- honk horn
-- honk the tesla horn to audibly locate the vehicle
-- get drive state
-- iot
-- get specific vehicle details
-- unlock doors
-- remote commands
-- electric vehicles
-- start climate control
+- get vehicle
 - start charging a tesla vehicle
-- flash lights
-- get charge state
-- start climate control (pre-conditioning) on a tesla vehicle
-- get vehicle data
-- unlock vehicle doors
-- unlock all doors on a tesla vehicle
-- wake a sleeping tesla from sleep mode to enable commands
-- enable or disable tesla sentry mode for security monitoring
-- battery and charging status
-- wake vehicle from sleep
-- automobiles
-- tesla
-- get all vehicle telemetry data
-- wake up vehicle
 - stop climate
-- smart vehicles
-- get complete telemetry snapshot for a tesla vehicle
-- climate and temperature status
-- unlock all vehicle doors
-- list all tesla vehicles in the owner account
-- stop climate control on a tesla vehicle
-- get battery level and charging status
-- lock vehicle doors
-- list vehicles
-- stop vehicle charging
 - start auto conditioning
-- vehicle fleet listing
-- stop charging a tesla vehicle
-- get gps location, heading, and speed for a tesla vehicle
-- get climate state
-- list all tesla vehicles in the account
 - wake the vehicle from sleep mode
+- wake vehicle from sleep
+- unlock all doors on a tesla vehicle
+- vehicle fleet listing
+- lock vehicle doors
 - lock doors
 - start climate
+- wake a sleeping tesla from sleep mode to enable commands
+- automobiles
+- unlock all vehicle doors
+- list all tesla vehicles in the owner account
+- unlock doors
+- telemetry
+- get vehicle state
 - get battery percentage, charging status, and charge limit for a tesla
-- get details and status for a specific tesla vehicle
-- get vehicle
-- location and driving state
+- get all vehicle telemetry data
+- battery and charging status
+- start charging
+- electric vehicles
+- get specific vehicle details
+- flash tesla headlights to visually locate the vehicle
+- flash lights
+- climate and temperature status
+- smart vehicles
+- honk horn
+- get gps location and driving state
+- list vehicles
+- enable or disable tesla sentry mode for security monitoring
+- tesla
 - single vehicle details
+- get physical state of a tesla (doors, windows, trunk, odometer)
+- start climate control
+- get complete telemetry snapshot for a tesla vehicle
+- iot
+- get climate state
+- get interior temperature and climate control settings for a tesla
+- get details and status for a specific tesla vehicle
+- cars
+- list all tesla vehicles in the account
+- location and driving state
+- wake up vehicle
+- get climate settings and temperatures
+- get vehicle data
+- unlock vehicle doors
+- start vehicle charging
+- honk the tesla horn to audibly locate the vehicle
+- get gps location, heading, and speed for a tesla vehicle
+- stop charging a tesla vehicle
+- get battery level and charging status
+- lock all vehicle doors
+- remote commands
+- full vehicle telemetry
+- lock all doors on a tesla vehicle
+- set sentry mode
+- stop vehicle charging
+- get drive state
+- get charge state
+- stop charging
+- stop climate control on a tesla vehicle
+- start climate control (pre-conditioning) on a tesla vehicle
 slug: vehicle-management
 source_filename: vehicle-management.yaml
 source_heading: Capability Spec

@@ -101,62 +101,62 @@ personas: []
 provider_name: Juniper Networks
 provider_slug: juniper-networks
 search_terms:
-- networking
-- createracktype
-- getsystem
-- listippools
-- juniper networks list interface maps
-- juniper networks list virtual networks
-- listtemplates
-- juniper networks list blueprints
 - juniper networks authenticate and obtain token
-- juniper networks list iba probes
-- createblueprint
-- listsystems
-- cloud
-- juniper networks delete blueprint
-- juniper networks list vni pools
+- juniper networks list managed systems
+- networking
+- listlogicaldevices
+- automation
+- networks
 - juniper networks list templates
-- security
-- enterprise
-- sdn
+- juniper networks create asn pool
+- api
+- juniper networks list vni pools
+- createasnpool
 - listblueprintanomalies
 - listibaprobes
-- juniper networks list logical devices
-- juniper networks list ip pools
 - deleteblueprint
-- juniper networks get blueprint
-- juniper networks list rack types
-- juniper networks list blueprint anomalies
-- juniper networks list security zones (vrfs)
-- deployblueprint
-- listvirtualnetworks
-- login
-- juniper networks list managed systems
-- data center
-- api
-- listlogicaldevices
-- listblueprints
-- juniper networks create rack type
-- createlogicaldevice
-- networks
-- juniper networks deploy blueprint
-- listsecurityzones
-- juniper networks get system details
-- listracktypes
-- juniper networks create logical device
-- logout
-- listasnpools
-- listvnipools
-- juniper networks list asn pools
-- juniper
-- listinterfacemaps
-- juniper networks create blueprint
 - getblueprint
-- createasnpool
-- juniper networks create asn pool
+- listippools
+- juniper networks list interface maps
+- juniper networks list blueprints
+- listracktypes
+- login
+- juniper networks create rack type
+- juniper networks list rack types
+- listsystems
 - juniper networks logout and invalidate token
-- automation
+- listinterfacemaps
+- deployblueprint
+- juniper networks list asn pools
+- juniper networks list virtual networks
+- listblueprints
+- juniper networks deploy blueprint
+- juniper networks get system details
+- juniper networks list logical devices
+- juniper networks create logical device
+- listvirtualnetworks
+- juniper networks list iba probes
+- enterprise
+- cloud
+- data center
+- createblueprint
+- createlogicaldevice
+- juniper networks create blueprint
+- logout
+- juniper networks list ip pools
+- listvnipools
+- sdn
+- juniper
+- juniper networks list blueprint anomalies
+- listtemplates
+- juniper networks list security zones (vrfs)
+- juniper networks delete blueprint
+- listasnpools
+- listsecurityzones
+- createracktype
+- getsystem
+- security
+- juniper networks get blueprint
 slug: juniper-networks-capability
 source_filename: juniper-networks-capability.yaml
 source_heading: Capability Spec

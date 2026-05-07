@@ -9,13 +9,13 @@ personas: []
 provider_name: Banuba
 provider_slug: banuba
 search_terms:
+- video
 - ar
 - beauty
-- facial
-- video
 - augmented reality
-- face recognition
 - sdk
+- face recognition
+- facial
 slug: face-ar
 source_filename: face-ar.yaml
 source_heading: Capability Spec

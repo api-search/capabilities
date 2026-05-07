@@ -28,18 +28,18 @@ search_terms:
 - integrations
 - loadexecutioninfo
 - openapi
-- mcp
-- api
-- ai agents
 - jentic execute an api operation or workflow
-- jentic load execution information for operations
-- arazzo
-- workflows
-- jentic
 - jentic register a new account
 - registeraccount
-- searchapis
+- ai agents
+- workflows
+- jentic
 - executeoperation
+- jentic load execution information for operations
+- searchapis
+- api
+- mcp
+- arazzo
 - jentic search for apis and workflows
 slug: jentic-capability
 source_filename: jentic-capability.yaml

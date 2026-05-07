@@ -33,25 +33,25 @@ personas: []
 provider_name: Lens
 provider_slug: lens
 search_terms:
-- research
-- patents
-- post patent search
-- get scholarly search
-- lens
+- search scholarly works (get)
 - search patents (post)
-- get a patent by lens id
+- get a scholarly work by lens id
 - api
 - search patents (get)
-- get patent search
-- scholarly
-- search scholarly works (post)
+- post patent search
 - science
+- search scholarly works (post)
+- research
+- patents
 - get scholarly lens id
-- get a scholarly work by lens id
+- get a patent by lens id
+- scholarly
+- get patent search
 - get patent lens id
-- search scholarly works (get)
-- post scholarly search
+- get scholarly search
+- lens
 - open data
+- post scholarly search
 slug: lens-capability
 source_filename: lens-capability.yaml
 source_heading: Capability Spec

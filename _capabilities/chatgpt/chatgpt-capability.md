@@ -13,18 +13,18 @@ personas: []
 provider_name: ChatGPT
 provider_slug: chatgpt
 search_terms:
-- chatgpt
-- gpt-4
 - agents
-- chatgpt create chat completion
-- language model
-- realtime
-- api
-- gpt-5
 - openai
 - embeddings
-- ai
+- language model
+- chatgpt
+- chatgpt create chat completion
+- gpt-5
 - fine-tuning
+- ai
+- api
+- realtime
+- gpt-4
 - createchatcompletion
 slug: chatgpt-capability
 source_filename: chatgpt-capability.yaml

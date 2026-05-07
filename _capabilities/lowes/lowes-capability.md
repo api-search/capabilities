@@ -21,18 +21,18 @@ personas: []
 provider_name: Lowe's
 provider_slug: lowes
 search_terms:
-- listinventory
-- home improvement
-- lowes
-- list products
-- listproducts
-- retail
-- products
-- liststores
 - ecommerce
 - api
 - list inventory
+- liststores
 - list stores
+- retail
+- list products
+- products
+- listproducts
+- lowes
+- home improvement
+- listinventory
 slug: lowes-capability
 source_filename: lowes-capability.yaml
 source_heading: Capability Spec

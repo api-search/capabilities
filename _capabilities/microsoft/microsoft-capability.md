@@ -37,22 +37,22 @@ personas: []
 provider_name: Microsoft
 provider_slug: microsoft
 search_terms:
-- analyzeimage
-- microsoft get supported languages
 - analyzesentiment
+- translatetext
+- analyzeimage
+- microsoft analyze image
+- microsoft optical character recognition
+- getlanguages
 - microsoft translate text
 - recognizetext
-- api
 - extractkeyphrases
-- getlanguages
-- microsoft optical character recognition
-- microsoft recognize named entities
-- microsoft extract key phrases
-- translatetext
-- microsoft
-- microsoft analyze sentiment
 - recognizeentities
-- microsoft analyze image
+- microsoft
+- microsoft get supported languages
+- microsoft extract key phrases
+- api
+- microsoft recognize named entities
+- microsoft analyze sentiment
 slug: microsoft-capability
 source_filename: microsoft-capability.yaml
 source_heading: Capability Spec

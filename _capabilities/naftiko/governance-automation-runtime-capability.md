@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- list rules
 - governance
-- api integration
-- spec-driven integration
-- evaluate
+- list rules
 - ai
-- mcp
 - capabilities
+- spec-driven integration
+- api integration
 - runtime
+- mcp
+- naftiko
+- evaluate
 slug: governance-automation-runtime-capability
 source_filename: governance-automation-runtime-capability.yaml
 source_heading: Capability Spec

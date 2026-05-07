@@ -18,42 +18,42 @@ personas: []
 provider_name: Amazon Neptune
 provider_slug: amazon-neptune
 search_terms:
-- graph database
-- aws
-- ML Engineer
-- neptune analytics graph management
-- list neptune analytics graphs for in-memory graph analysis
-- graph analytics
-- list neptune analytics graphs
-- list neptune ml training jobs
-- data streaming
-- property graph
-- writes gremlin, sparql, and opencypher queries against neptune
-- list analytics graphs
-- trains and deploys neptune ml graph neural network models
-- amazon neptune
-- Graph Database Administrator
-- list neptune ml graph neural network training jobs
-- create ml inference endpoint
-- neptune
-- database
-- machine learning
-- sparql
-- graph database management, querying, and data streaming
-- list ml jobs
-- performs graph analytics and builds ml models on graph data
 - list ml training jobs
+- graph database management, querying, and data streaming
+- bulk loading
+- property graph
+- list neptune analytics graphs for in-memory graph analysis
 - Data Scientist
 - create analytics graph
-- create a neptune ml inference endpoint for predictions
+- amazon neptune
+- data streaming
+- list neptune ml graph neural network training jobs
+- list analytics graphs
+- create ml inference endpoint
+- create a neptune analytics graph for graph analytics workloads
 - neptune ml training job management
 - graph analytics, vector search, and ml model training and inference
-- rdf
-- bulk loading
-- create a neptune analytics graph for graph analytics workloads
-- Graph Developer
-- manages neptune clusters, instances, and infrastructure
+- list neptune ml training jobs
+- machine learning
 - gremlin
+- sparql
+- writes gremlin, sparql, and opencypher queries against neptune
+- list ml jobs
+- manages neptune clusters, instances, and infrastructure
+- create a neptune ml inference endpoint for predictions
+- database
+- list neptune analytics graphs
+- graph database
+- aws
+- Graph Developer
+- trains and deploys neptune ml graph neural network models
+- neptune analytics graph management
+- rdf
+- graph analytics
+- neptune
+- ML Engineer
+- performs graph analytics and builds ml models on graph data
+- Graph Database Administrator
 slug: neptune-analytics-ml
 source_filename: neptune-analytics-ml.yaml
 source_heading: Capability Spec

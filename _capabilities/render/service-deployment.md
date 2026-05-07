@@ -97,98 +97,98 @@ personas: []
 provider_name: Render
 provider_slug: render
 search_terms:
-- delete a service
-- restart a postgresql database instance
-- create key value
-- create a new project
-- delete a render service
-- manage deploys for a service
-- list all render projects
-- list services
-- cloud
-- get logs
-- get service details
-- list postgres
-- get memory usage metrics for render services
-- hosting
-- get cpu usage metrics for render services
-- trigger deploy
-- list projects
-- list infrastructure-as-code blueprints on render
-- scale a render service to a specific number of instances
-- resume a suspended service
-- list postgresql database instances on render
-- list env groups
-- create postgres
-- update configuration of a render service
-- trigger a new deployment for a render service
-- infrastructure
-- list key value
-- update service
-- roll back a render service to a previous deployment
-- update a service configuration
-- restart a running service
-- get cpu metrics
 - scale a service to a specified number of instances
-- list all projects
-- create an environment group
-- create service
-- get service
-- get details for a specific render service
-- list postgresql instances
-- restart postgres
-- list deploy history for a render service
 - create a key-value store instance
-- retrieve logs for render services and resources
-- infrastructure-as-code blueprints
-- list all services on the render account
-- resume service
-- scale service
-- service and resource logs
-- resume a suspended render service
-- suspend a running service
-- devops
-- shared environment variable groups
-- projects and environments
-- create a new managed postgresql database on render
-- restart a service
-- suspend a running render service to stop billing
-- get memory metrics
-- list deploys
-- create project
-- list deploy history for a service
-- list blueprints
-- get cpu usage metrics
 - suspend service
-- suspend a service
-- restart a running render service
-- create a new key-value (redis-compatible) store on render
-- create env group
-- scale a service
-- databases
-- list environment groups
-- get, update, or delete a specific service
+- retrieve logs for render services and resources
+- suspend a running render service to stop billing
 - deployment
-- list all services
-- list all blueprints
-- create a new render project
-- managed key-value (redis-compatible) stores
-- restart service
-- managed postgresql databases
-- cpu performance metrics
 - create a postgresql instance
-- create a new render service
+- list deploy history for a service
+- hosting
+- get logs
+- projects and environments
+- managed key-value (redis-compatible) stores
+- update service
 - rollback service
-- retrieve logs for services
-- list key-value store instances
-- create a new render service (web service, background worker, etc.)
-- platform
-- web services
-- trigger a new deploy
+- get, update, or delete a specific service
+- create service
+- suspend a running service
+- list all services on the render account
+- databases
+- trigger a new deployment for a render service
+- manage deploys for a service
+- infrastructure-as-code blueprints
+- restart a running render service
+- list blueprints
 - list key-value store instances on render
-- delete service
+- list key value
+- create a new render service (web service, background worker, etc.)
+- list projects
+- shared environment variable groups
+- create a new key-value (redis-compatible) store on render
+- retrieve logs for services
+- cloud
+- scale a render service to a specific number of instances
+- list postgresql database instances on render
+- list environment groups
+- get service details
+- update a service configuration
+- create a new managed postgresql database on render
+- get memory metrics
+- trigger a new deploy
+- scale a service
+- restart a postgresql database instance
+- list infrastructure-as-code blueprints on render
+- list postgres
+- create a new render service
+- platform
+- resume service
+- create an environment group
+- list deploys
+- list all blueprints
+- roll back a render service to a previous deployment
+- infrastructure
+- get cpu usage metrics for render services
+- create key value
+- create env group
+- list key-value store instances
 - list shared environment variable groups
+- get details for a specific render service
+- get service
+- list deploy history for a render service
+- list all render projects
+- delete service
+- trigger deploy
+- list postgresql instances
+- create a new render project
+- restart a running service
+- restart service
+- delete a render service
+- list services
+- devops
+- managed postgresql databases
+- list env groups
 - manage render web services, background workers, and private services
+- resume a suspended service
+- restart postgres
+- resume a suspended render service
+- get memory usage metrics for render services
+- update configuration of a render service
+- create project
+- get cpu usage metrics
+- create a new project
+- web services
+- restart a service
+- list all projects
+- suspend a service
+- cpu performance metrics
+- scale service
+- create postgres
+- get cpu metrics
+- list all services
+- delete a service
+- service and resource logs
 slug: service-deployment
 source_filename: service-deployment.yaml
 source_heading: Capability Spec

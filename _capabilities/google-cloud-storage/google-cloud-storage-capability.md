@@ -49,33 +49,33 @@ personas: []
 provider_name: Google Cloud Storage
 provider_slug: google-cloud-storage
 search_terms:
-- google cloud storage delete a bucket
-- buckets
-- storage
-- google cloud storage list objects
-- listobjects
-- google cloud storage get an object
-- cloud
-- google
-- deletebucket
-- listbuckets
-- google cloud storage create a bucket
-- insertobject
-- updateobject
-- api
-- google cloud storage get a bucket
 - google cloud storage list buckets
-- google cloud storage insert an object
-- getobject
-- getbucket
+- google cloud storage create a bucket
 - insertbucket
-- updatebucket
-- google cloud storage update a bucket
 - google cloud storage delete an object
-- google cloud storage update an object
+- google cloud storage get an object
+- updateobject
+- listobjects
+- insertobject
+- api
+- listbuckets
+- google
+- getbucket
+- google cloud storage list objects
+- buckets
+- google cloud storage get a bucket
 - deleteobject
-- google cloud
+- google cloud storage insert an object
+- google cloud storage delete a bucket
+- google cloud storage update a bucket
+- google cloud storage update an object
+- updatebucket
 - objects
+- cloud
+- storage
+- google cloud
+- deletebucket
+- getobject
 slug: google-cloud-storage-capability
 source_filename: google-cloud-storage-capability.yaml
 source_heading: Capability Spec

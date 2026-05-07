@@ -22,36 +22,36 @@ personas: []
 provider_name: Amazon Incident Manager
 provider_slug: amazon-incident-manager
 search_terms:
-- list all incident response plans
-- aws
-- create a new incident response plan with escalation contacts
 - update incident
-- automated incident response plans and escalation
-- list all response plans
-- manages incident response plans and responds to operational incidents
-- list response plans
-- devops
-- Site Reliability Engineer
-- create incident
-- manage active incidents
-- creating, tracking, and resolving operational incidents
-- manage incident response plans
-- operations
-- start a new incident and trigger response plan
-- update the summary or status of an active incident
-- create response plan
-- list active incidents
-- create a new incident
-- list timeline events
-- list timeline events for an incident
 - Operations Engineer
-- monitors system reliability and coordinates incident resolution
-- get details of a specific incident
-- get incident
-- list active and recent incidents
-- list incidents
-- incident management
+- operations
+- devops
+- update the summary or status of an active incident
 - automation
+- list timeline events for an incident
+- manages incident response plans and responds to operational incidents
+- create incident
+- Site Reliability Engineer
+- list all response plans
+- list active incidents
+- get incident
+- list timeline events
+- list active and recent incidents
+- start a new incident and trigger response plan
+- get details of a specific incident
+- automated incident response plans and escalation
+- manage incident response plans
+- list incidents
+- create a new incident
+- monitors system reliability and coordinates incident resolution
+- incident management
+- creating, tracking, and resolving operational incidents
+- create response plan
+- create a new incident response plan with escalation contacts
+- aws
+- manage active incidents
+- list all incident response plans
+- list response plans
 slug: incident-response
 source_filename: incident-response.yaml
 source_heading: Capability Spec

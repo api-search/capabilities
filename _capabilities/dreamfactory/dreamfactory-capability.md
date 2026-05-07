@@ -213,115 +213,115 @@ personas: []
 provider_name: DreamFactory
 provider_slug: dreamfactory
 search_terms:
-- dreamfactory update cors configuration
-- dreamfactory list lookups
-- dreamfactory delete service
-- updatecorsconfig
-- dreamfactory list applications
-- dreamfactory create administrator
-- getrole
-- listemailtemplates
-- dreamfactory create cors configuration
-- dreamfactory update user
-- createemailtemplate
-- createlookup
-- security
-- dreamfactory create application group
-- updateapp
+- dreamfactory delete administrator
+- dreamfactory list custom settings
+- getlimit
+- importpackage
 - api
-- dreamfactory list limit cache
-- updateservice
-- getcorsconfig
-- dreamfactory get api limit
-- getadmin
-- createlimit
-- dreamfactory reset limit counters
-- getuser
-- listscripttypes
-- updateuser
-- dreamfactory get environment information
-- deletecorsconfig
-- dreamfactory list events
-- listappgroups
-- dreamfactory get administrator
+- updaterole
+- documentation
+- listlimitcache
+- deployment
 - deleteuser
-- automation
-- dreamfactory list packages
+- listadmins
+- dreamfactory create lookup
+- getrole
+- dreamfactory get role
+- dreamfactory update application
+- dreamfactory
+- dreamfactory get administrator
+- listcustomsettings
+- dreamfactory list cors configurations
+- getapp
+- listevents
+- listapps
+- deleteservice
+- dreamfactory list limit cache
+- createrole
+- listservices
+- dreamfactory create application group
+- dreamfactory list application groups
+- dreamfactory get environment information
+- getenvironment
+- dreamfactory list lookups
+- dreamfactory update service
+- listcorsconfigs
+- dreamfactory get cors configuration
+- dreamfactory delete user
+- dreamfactory delete cors configuration
+- setcustomsettings
+- dreamfactory delete service
+- listlookups
+- dreamfactory get application
+- dreamfactory list events
 - dreamfactory create api limit
 - createuser
-- dreamfactory get application
-- getenvironment
-- createrole
-- importpackage
-- listlimits
-- listlimitcache
+- dreamfactory get api limit
+- createcorsconfig
+- dreamfactory create role
+- security
+- dreamfactory list packages
+- dreamfactory update user
+- deletelimit
+- dreamfactory list applications
+- dreamfactory update role
+- automation
+- listscripttypes
+- dreamfactory get service
+- resetlimitcache
+- dreamfactory create email template
+- generation
+- dreamfactory create user
+- updateadmin
+- dreamfactory import package
+- updateuser
+- dreamfactory set custom settings
+- listpackages
+- createappgroup
+- listusers
+- deletecorsconfig
+- createservice
+- deleteadmin
+- dreamfactory update cors configuration
+- createlookup
+- dreamfactory list service types
+- listemailtemplates
+- listservicetypes
+- getservice
+- dreamfactory update api limit
+- dreamfactory update administrator
+- dreamfactory list roles
+- deleterole
+- updatecorsconfig
+- dreamfactory list services
+- getuser
+- updateservice
+- createlimit
+- dreamfactory reset limit counters
+- updateapp
+- dreamfactory list api limits
+- getadmin
+- dreamfactory list administrators
+- createadmin
+- dreamfactory delete application
+- dreamfactory create application
+- getcorsconfig
+- dreamfactory list users
+- dreamfactory delete api limit
+- dreamfactory get user
+- dreamfactory create cors configuration
+- listappgroups
+- createemailtemplate
+- deleteapp
+- dreamfactory delete role
+- updatelimit
+- createapp
+- dreamfactory create service
+- listroles
 - dreamfactory list script types
 - dreamfactory list email templates
-- getapp
-- getservice
-- dreamfactory delete administrator
-- dreamfactory delete application
-- listroles
-- dreamfactory set custom settings
-- listservicetypes
-- dreamfactory import package
-- listadmins
-- dreamfactory list roles
-- createadmin
-- listcustomsettings
-- listusers
-- createservice
-- dreamfactory
-- createappgroup
-- dreamfactory create application
-- deleteapp
-- listevents
-- setcustomsettings
-- deleterole
-- listapps
-- dreamfactory get role
-- dreamfactory list api limits
-- dreamfactory update service
-- deleteservice
-- dreamfactory update administrator
-- documentation
-- dreamfactory update role
-- dreamfactory list application groups
-- dreamfactory get cors configuration
-- dreamfactory get service
-- updatelimit
-- dreamfactory create email template
-- dreamfactory delete user
-- resetlimitcache
-- dreamfactory create role
-- createapp
-- dreamfactory create lookup
-- dreamfactory get user
-- updateadmin
-- dreamfactory delete api limit
-- listcorsconfigs
-- dreamfactory delete cors configuration
-- dreamfactory list custom settings
-- dreamfactory delete role
-- deployment
-- deletelimit
-- listpackages
-- updaterole
-- getlimit
-- dreamfactory list services
-- dreamfactory list cors configurations
-- dreamfactory update application
-- dreamfactory create service
-- listlookups
-- dreamfactory create user
-- dreamfactory list administrators
-- dreamfactory update api limit
-- deleteadmin
-- generation
-- dreamfactory list service types
-- listservices
-- dreamfactory list users
-- createcorsconfig
+- listlimits
+- dreamfactory create administrator
 slug: dreamfactory-capability
 source_filename: dreamfactory-capability.yaml
 source_heading: Capability Spec

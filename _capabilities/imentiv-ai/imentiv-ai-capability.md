@@ -249,132 +249,132 @@ personas: []
 provider_name: Imentiv AI
 provider_slug: imentiv-ai
 search_terms:
-- list texts v1 texts get
-- reprocess image v1 images image id put
-- delete faces
-- reprocess audio v1 audios audio id put
-- get ai insights conversation history
-- list videos
-- delete text
+- get video emotion insights v1 videos video id ge
 - upload image v2 images post
-- emotion detection
-- list audios
-- get annotated video
-- get single frame
-- edit image metadata v1 images image id metadata
-- get audio emotion insights
-- trigger speaker face match v2 videos video id sp
-- api
-- send message to ai insights
-- get text emotion insights
-- edit title or description v1 audios audio id met
-- reprocess video
-- delete image
-- upload video v2 videos post
-- process highlight v1 videos highlights post
 - download image emotion report v1 images image id
-- get average emotions v2 videos video id emotions
-- delete text v1 texts text id delete
-- download highlight video v1 videos video id high
-- reprocess image
-- edit title or description by id
-- generate video emotion analysis report v1 videos
-- reprocess video v1 videos video id put
-- edit title or description
-- delete video v1 videos video id delete
-- get image emotion analysis v1 images image id ge
-- reprocess text v1 texts text id put
-- get ai insights history v2 media type media id a
-- get single frame v1 videos video id frames frame
-- process highlight
-- reprocess text
-- get audio emotion insights v1 audios audio id ge
-- download text emotion report v1 texts text id re
-- send image v1 images image id annotated image ge
 - generate pdf report v2 reports pdf media id get
-- trigger personality analysis
+- api
+- update speaker names
+- get image emotion analysis
+- get multiple frame
+- list images v1 images get
+- machine learning
+- delete an audio v1 audios audio id delete
+- fetch highlight video
+- retrieve emotion intensity
+- get audio emotion insights
+- get video emotion insights
+- delete faces
+- delete video v1 videos video id delete
+- list videos v1 videos get
+- update highlight video v1 videos video id highli
+- list audios v1 audios get
+- get average emotions v2 videos video id emotions
+- get annotated video
+- delete text v1 texts text id delete
+- send image v1 images image id annotated image ge
+- download image emotion report
+- list videos
+- trigger speaker face match
+- get video multimodal insights
+- merge face v1 videos video id faces put
+- upload audio
+- upload text v2 texts post
+- send message to ai insights
+- imentiv
+- retrieve emotion intensity v1 videos video id fr
+- add note to specific face v1 images image id fac
+- update multiple faces
+- update speaker face match
+- reprocess text
+- get valence arousal v1 videos video id valence a
+- update audio transcripts segments v1 audios audi
+- list texts
+- edit title or description
+- fetch highlight video v1 videos video id highlig
+- upload audio v2 audios post
+- list images
+- ai
+- list texts v1 texts get
+- update emotion per frame v1 videos video id fram
+- generate pdf report
+- get average emotions
+- reprocess audio
+- artificial intelligence
+- delete text
+- get ai insights conversation history
+- get audio multimodal insights
+- get single frame v1 videos video id frames frame
+- delete image v1 images image id delete
+- generate video emotion analysis report v1 videos
+- update faces names v1 videos video id faces name
+- list audios
+- download highlight video
+- get annotated video v2 videos video id annotated
+- edit face note v1 videos video id frames frame i
 - edit image metadata
 - update speaker face match v2 videos video id spe
-- ai
-- get annotated video v2 videos video id annotated
-- trigger speaker face match
-- get video multimodal insights v2 videos video id
-- replace audio transcript v1 audios audio id tran
-- retrieve emotion intensity
-- merge face
-- get audio multimodal insights
-- imentiv
-- upload video
-- edit text v1 texts text id emotions put
-- list texts
-- fetch highlight video v1 videos video id highlig
-- update multiple faces v1 videos video id frames
-- get valence arousal v1 videos video id valence a
-- get audio multimodal insights v2 audios audio id
-- update audio transcripts segments
-- edit face note
-- update highlight video
-- update multiple faces
-- delete faces v1 videos video id faces delete
-- upload audio v2 audios post
-- edit text
-- replace audio transcript
-- update faces names v1 videos video id faces name
-- delete an audio
-- delete video
-- get image emotion analysis
-- update emotion per frame v1 videos video id fram
-- artificial intelligence
 - update speaker names v1 audios audio id speakers
-- upload text
-- machine learning
-- get average emotions
-- upload audio
-- list audios v1 audios get
-- update faces names
-- get text emotion insights v1 texts text id get
-- delete audio segment
-- get video emotion insights
-- update speaker face match
-- list images
-- delete an audio v1 audios audio id delete
-- get multiple frame v1 videos video id frames get
-- trigger personality analysis v2 videos video id
-- get video multimodal insights
-- add note to specific face v1 images image id fac
-- download video emotion analysis report
-- download text emotion report
+- delete an audio
 - video analysis
-- merge face v1 videos video id faces put
-- get video emotion insights v1 videos video id ge
-- fetch highlight video
-- delete audio segment v1 audios audio id segment
-- upload image
-- download highlight video
-- edit face note v1 videos video id frames frame i
-- retrieve domination emotion for a specific frame
-- reprocess audio
-- download audio emotion report
-- update audio transcripts segments v1 audios audi
-- add note to specific face
-- update highlight video v1 videos video id highli
-- list videos v1 videos get
-- delete image v1 images image id delete
-- download video emotion analysis report v1 videos
-- download audio emotion report v1 audios audio id
-- upload text v2 texts post
-- retrieve emotion intensity v1 videos video id fr
-- update emotion per frame
-- get multiple frame
-- download image emotion report
-- send image
-- get valence arousal
-- generate pdf report
-- update speaker names
+- reprocess video
 - edit title or description by id v1 videos video
-- list images v1 images get
-- chat ai insights v2 media type media id ai insig
+- download video emotion analysis report v1 videos
+- delete video
+- get valence arousal
+- edit title or description by id
+- reprocess video v1 videos video id put
+- download text emotion report
+- add note to specific face
+- trigger speaker face match v2 videos video id sp
+- delete audio segment
+- edit face note
+- edit title or description v1 audios audio id met
+- replace audio transcript v1 audios audio id tran
+- update audio transcripts segments
+- retrieve domination emotion for a specific frame
+- delete image
+- replace audio transcript
+- update faces names
+- delete faces v1 videos video id faces delete
+- upload image
+- reprocess text v1 texts text id put
+- emotion detection
+- get video multimodal insights v2 videos video id
+- trigger personality analysis v2 videos video id
+- update emotion per frame
+- delete audio segment v1 audios audio id segment
+- reprocess image v1 images image id put
+- edit image metadata v1 images image id metadata
+- get ai insights history v2 media type media id a
+- upload text
+- download audio emotion report
+- edit text v1 texts text id emotions put
+- download highlight video v1 videos video id high
+- get text emotion insights
+- get image emotion analysis v1 images image id ge
+- reprocess image
+- upload video v2 videos post
+- get multiple frame v1 videos video id frames get
+- get audio emotion insights v1 audios audio id ge
+- download audio emotion report v1 audios audio id
+- send image
+- update multiple faces v1 videos video id frames
+- edit text
+- download text emotion report v1 texts text id re
 - generate video emotion analysis report
+- reprocess audio v1 audios audio id put
+- chat ai insights v2 media type media id ai insig
+- process highlight v1 videos highlights post
+- get audio multimodal insights v2 audios audio id
+- trigger personality analysis
+- update highlight video
+- merge face
+- upload video
+- get single frame
+- download video emotion analysis report
+- process highlight
+- get text emotion insights v1 texts text id get
 slug: imentiv-ai-capability
 source_filename: imentiv-ai-capability.yaml
 source_heading: Capability Spec

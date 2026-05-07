@@ -89,55 +89,55 @@ personas: []
 provider_name: Facebook Business Manager
 provider_slug: facebook-business-manager
 search_terms:
-- facebook business manager list campaigns
-- updateadset
-- facebook business manager create an ad creative
-- facebook business manager create an ad set
-- getadset
-- facebook business manager create a custom audience
 - analytics
-- manager
+- social media
+- createad
+- facebook business manager get ad account insights
+- facebook business manager update an ad set
+- api
+- facebook business manager create an ad set
+- createcampaign
+- facebook business manager list ad creatives
 - facebook business manager get ad account details
-- marketing
 - listadsets
-- uploadadimage
+- business management
+- getadset
+- facebook business manager upload an ad image
+- business
+- facebook business manager create a campaign
 - facebook business manager get an ad
-- facebook business manager list custom audiences
+- getadaccountinsights
+- facebook business manager get campaign insights
+- updateadset
+- facebook business manager create an ad
+- listadcreatives
 - getcampaign
 - getad
-- business
-- facebook business manager update an ad set
-- business management
-- createad
-- listcustomaudiences
-- createcampaign
-- getadaccountinsights
-- facebook business manager get an ad set
-- facebook
-- api
-- listadcreatives
-- facebook business manager create an ad
-- advertising
-- listcampaigns
-- updatecampaign
-- facebook business manager delete a campaign
-- facebook business manager get a campaign
-- listads
-- facebook business manager list ad sets
-- createadcreative
-- facebook business manager get ad account insights
-- createcustomaudience
-- facebook business manager create a campaign
-- facebook business manager list ads
-- facebook business manager get campaign insights
-- social media
-- getcampaigninsights
-- facebook business manager list ad creatives
-- facebook business manager upload an ad image
 - getadaccount
-- facebook business manager update a campaign
+- createcustomaudience
+- updatecampaign
+- manager
+- facebook
+- facebook business manager create a custom audience
+- uploadadimage
+- facebook business manager list campaigns
+- listads
+- createadcreative
 - createadset
+- marketing
+- listcampaigns
+- facebook business manager get a campaign
 - deletecampaign
+- facebook business manager get an ad set
+- listcustomaudiences
+- facebook business manager list custom audiences
+- facebook business manager update a campaign
+- getcampaigninsights
+- facebook business manager list ad sets
+- facebook business manager list ads
+- advertising
+- facebook business manager delete a campaign
+- facebook business manager create an ad creative
 slug: facebook-business-manager-capability
 source_filename: facebook-business-manager-capability.yaml
 source_heading: Capability Spec

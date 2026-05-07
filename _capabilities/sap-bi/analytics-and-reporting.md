@@ -29,34 +29,34 @@ personas: []
 provider_name: SAP Business Intelligence
 provider_slug: sap-bi
 search_terms:
-- single analytics story.
-- businessobjects reports.
-- reporting
-- list content objects
 - analytics
-- get story
-- browse content objects in the sap businessobjects infostore repository.
-- browse content library
-- data visualization
-- list reports
-- create a new analytics story in sap analytics cloud.
-- list infostore content objects.
-- list reports available in the sap businessobjects bi platform.
-- create story
-- list stories
-- analytics stories and dashboards.
-- get details of a specific analytics story.
-- list analytics stories in sap analytics cloud.
-- sap
-- list businessobjects reports.
-- list models
 - list analytics stories.
-- list analytics models.
-- business intelligence
-- analytics data models.
-- bi platform infostore objects.
 - get a story by id.
 - list analytics data models in sap analytics cloud.
+- analytics stories and dashboards.
+- list reports
+- businessobjects reports.
+- list analytics models.
+- create story
+- create a new analytics story in sap analytics cloud.
+- sap
+- business intelligence
+- list content objects
+- list infostore content objects.
+- list businessobjects reports.
+- analytics data models.
+- single analytics story.
+- browse content library
+- bi platform infostore objects.
+- list analytics stories in sap analytics cloud.
+- browse content objects in the sap businessobjects infostore repository.
+- list models
+- get details of a specific analytics story.
+- list stories
+- get story
+- list reports available in the sap businessobjects bi platform.
+- reporting
+- data visualization
 slug: analytics-and-reporting
 source_filename: analytics-and-reporting.yaml
 source_heading: Capability Spec

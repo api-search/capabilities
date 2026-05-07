@@ -53,70 +53,70 @@ personas: []
 provider_name: Terraform
 provider_slug: terraform
 search_terms:
-- list terraform workspaces in an organization
-- create workspace
-- workspace state version history
-- list policies
-- workspace run history
-- search modules
-- list workspaces in an organization
-- get module version
-- infrastructure as code
-- apply run
-- list all accessible organizations
-- list modules
-- lock workspace
-- unlock a terraform workspace to allow runs
-- list organizations
-- discard a pending terraform run
-- list state versions
-- devops
-- get workspace details
-- platform engineering
-- list runs for a workspace
 - policy management
+- list workspaces
+- devops
+- list runs for a workspace
+- list teams in a terraform organization
+- list modules
+- hashicorp
+- list all accessible organizations
+- runs
+- list the run history for a terraform workspace
+- list and manage workspaces
+- list governance policies (sentinel/opa) in an organization
+- list teams in an organization
+- team management
+- lock a terraform workspace to prevent runs
+- get module version
+- create run
+- apply a terraform run that is pending approval
+- list workspace runs
+- open source
+- search terraform registry modules
+- list workspaces in an organization
+- list teams
+- create workspace
+- get workspace details
+- manage terraform organizations
+- search modules
+- list all terraform organizations accessible with the current token
+- unlock a terraform workspace to allow runs
+- apply run
+- terraform module discovery
+- list state versions for a workspace
+- list available versions of a terraform module
+- create a new terraform workspace
+- get details of a specific terraform workspace
+- discard a pending terraform run
+- discard run
+- unlock workspace
+- trigger a new terraform infrastructure run
+- list organizations
+- list policies
+- list state versions for a terraform workspace
+- cloud infrastructure
+- list terraform workspaces in an organization
+- single workspace operations
+- infrastructure as code
+- workspace state version history
+- lock workspace
+- search terraform registry for reusable infrastructure modules
+- trigger a terraform run
+- workspace run history
+- create a new workspace
+- list module versions
+- list governance policies
 - workspaces
 - get details for a specific version of a terraform module
-- team management
-- list teams
-- get workspace
-- list governance policies (sentinel/opa) in an organization
-- lock a terraform workspace to prevent runs
-- list all terraform organizations accessible with the current token
-- create a new workspace
-- list state versions for a workspace
-- terraform module discovery
-- terraform run management
-- apply a terraform run that is pending approval
-- hashicorp
-- cloud infrastructure
-- trigger a new terraform infrastructure run
-- search terraform registry for reusable infrastructure modules
-- open source
-- manage terraform organizations
-- list the run history for a terraform workspace
-- create a new terraform workspace
-- discard run
-- list available versions of a terraform module
-- list module versions
-- search terraform registry modules
-- get run
-- list workspaces
-- list teams in a terraform organization
-- list governance policies
-- unlock workspace
-- list teams in an organization
-- get the status and details of a terraform run
-- trigger a terraform run
-- create run
-- get details of a specific terraform workspace
-- runs
+- list state versions
 - terraform
-- single workspace operations
+- terraform run management
+- get run
 - browse terraform modules from the registry
-- list workspace runs
-- list state versions for a terraform workspace
-- list and manage workspaces
+- get workspace
+- get the status and details of a terraform run
+- platform engineering
 slug: infrastructure-automation
 source_filename: infrastructure-automation.yaml
 source_heading: Capability Spec

@@ -13,15 +13,15 @@ personas: []
 provider_name: LogRocket
 provider_slug: logrocket
 search_terms:
-- executegraphqlquery
+- analytics
+- observability
+- execute a graphql query
+- session replay
+- logrocket
+- error monitoring
 - frontend monitoring
 - api
-- observability
-- session replay
-- error monitoring
-- analytics
-- logrocket
-- execute a graphql query
+- executegraphqlquery
 slug: logrocket-capability
 source_filename: logrocket-capability.yaml
 source_heading: Capability Spec

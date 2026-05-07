@@ -73,47 +73,47 @@ personas: []
 provider_name: Google Blogger
 provider_slug: google-blogger
 search_terms:
-- deletepost
-- pages
-- insertpost
-- get a blog
-- getcomment
-- blogging
-- listblogsbyuser
-- list pages
-- updatepost
-- get a blog by url
-- insertpage
-- searchposts
-- listcomments
-- listpages
-- search posts
-- publishing
-- list posts
-- google
-- patch a post
-- comments
-- create a post
-- deletecomment
-- getblog
-- delete a post
-- get a comment
-- api
-- create a page
-- posts
-- blogger
 - get a post
-- getblogbyurl
-- getuser
-- cms
+- update a post
 - getpost
+- patch a post
+- api
+- getblog
+- updatepost
+- pages
+- publishing
+- getcomment
+- get a blog
+- deletecomment
+- getblogbyurl
+- comments
+- blogging
+- google
+- listcomments
+- getuser
+- blogger
+- listpages
 - list comments
 - get a user
-- patchpost
-- update a post
+- create a page
+- cms
 - delete a comment
-- list blogs by user
+- get a blog by url
+- delete a post
+- searchposts
+- insertpage
+- list posts
+- insertpost
 - listposts
+- list pages
+- create a post
+- listblogsbyuser
+- patchpost
+- posts
+- list blogs by user
+- deletepost
+- get a comment
+- search posts
 slug: google-blogger-capability
 source_filename: google-blogger-capability.yaml
 source_heading: Capability Spec

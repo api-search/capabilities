@@ -61,34 +61,34 @@ personas: []
 provider_name: cdisc
 provider_slug: cdisc
 search_terms:
-- get adam standard by version
-- getsdtmdataset
-- listsdtmversions
-- listadamversions
-- list sdtm domain classes for a version
-- getbiomedicalconcept
-- list sdtm datasets (domains) for a version
-- listterminologypackages
-- list all adam standard versions
-- cdisc
-- listsdtmclasses
-- get sdtm dataset (domain) specification
-- listproducts
-- getadamversion
 - listbiomedicalconcepts
-- list all sdtm standard versions
-- api
-- list all cdash standard versions
-- listsdtmdatasets
-- listcodelists
-- list cdisc biomedical concepts
-- getsdtmversion
-- get sdtm standard by version
-- get a specific biomedical concept
+- cdisc
 - listcdashversions
+- getbiomedicalconcept
 - list cdisc controlled terminology packages
+- getsdtmdataset
+- list all cdash standard versions
+- api
+- list cdisc biomedical concepts
+- get adam standard by version
 - list all cdisc standards products
+- getsdtmversion
+- listsdtmversions
+- get a specific biomedical concept
+- list sdtm datasets (domains) for a version
+- get sdtm standard by version
+- list sdtm domain classes for a version
 - list codelists in a terminology package
+- listproducts
+- list all adam standard versions
+- listcodelists
+- get sdtm dataset (domain) specification
+- listterminologypackages
+- listadamversions
+- list all sdtm standard versions
+- getadamversion
+- listsdtmdatasets
+- listsdtmclasses
 slug: cdisc-capability
 source_filename: cdisc-capability.yaml
 source_heading: Capability Spec

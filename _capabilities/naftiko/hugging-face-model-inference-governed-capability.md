@@ -13,16 +13,16 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- run governed inference
-- hugging face
-- inference
-- api integration
 - governance
-- spec-driven integration
+- api integration
+- inference
+- hugging face
 - ai
-- mcp
 - capabilities
+- spec-driven integration
+- run governed inference
+- mcp
+- naftiko
 slug: hugging-face-model-inference-governed-capability
 source_filename: hugging-face-model-inference-governed-capability.yaml
 source_heading: Capability Spec

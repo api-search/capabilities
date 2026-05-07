@@ -41,34 +41,34 @@ personas: []
 provider_name: Advanced Excel
 provider_slug: advanced-excel
 search_terms:
-- createworkbooksession
-- data analysis
-- spreadsheets
-- microsoft excel add worksheet
-- microsoft excel add chart to worksheet
-- microsoft excel update cell range values
-- listworksheets
-- addchart
-- developer building automated excel-based business workflows
-- microsoft excel list worksheets
-- advanced
 - automation
-- listcharts
-- getrange
-- api
-- microsoft excel get cell range values
-- microsoft excel create workbook session
-- microsoft excel list worksheet tables
-- data processing
-- analyst who reads and writes excel data for reporting and analytics
-- business intelligence
 - updaterange
-- microsoft excel list worksheet charts
+- api
+- microsoft excel update cell range values
+- spreadsheets
+- listworksheets
+- microsoft excel list worksheets
+- analyst who reads and writes excel data for reporting and analytics
+- microsoft excel create workbook session
+- data analysis
+- microsoft excel add worksheet
+- getrange
+- business intelligence
 - microsoft
-- listtables
-- addworksheet
-- bi engineer integrating excel data with data warehouses and dashboards
 - excel
+- listtables
+- microsoft excel list worksheet charts
+- data processing
+- microsoft excel get cell range values
+- advanced
+- createworkbooksession
+- addworksheet
+- developer building automated excel-based business workflows
+- microsoft excel list worksheet tables
+- bi engineer integrating excel data with data warehouses and dashboards
+- addchart
+- listcharts
+- microsoft excel add chart to worksheet
 slug: advanced-excel-capability
 source_filename: advanced-excel-capability.yaml
 source_heading: Capability Spec

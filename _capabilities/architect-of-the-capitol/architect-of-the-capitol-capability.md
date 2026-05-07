@@ -42,31 +42,31 @@ provider_name: Architect of the Capitol
 provider_slug: architect-of-the-capitol
 search_terms:
 - get preservation project details
+- list historic preservation projects
 - getartwork
-- government services
-- list capitol campus buildings
+- getpreservationproject
+- api
+- historic preservation
+- architect
+- get visitor information
 - get artwork details
 - getaccessibilityinfo
-- get visitor information
 - get accessibility information
+- congress
+- getvisitorinfo
 - listpreservationprojects
-- capitol hill
-- getpreservationproject
+- get building details
+- capitol
 - getbuilding
-- the
-- list capitol art collection
-- api
-- listartworks
+- capitol hill
 - of
 - listbuildings
-- get building details
-- architect
-- congress
-- list historic preservation projects
+- list capitol campus buildings
+- list capitol art collection
+- listartworks
+- the
+- government services
 - federal government
-- getvisitorinfo
-- capitol
-- historic preservation
 slug: architect-of-the-capitol-capability
 source_filename: architect-of-the-capitol-capability.yaml
 source_heading: Capability Spec

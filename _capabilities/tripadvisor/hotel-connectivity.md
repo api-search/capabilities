@@ -21,31 +21,31 @@ personas: []
 provider_name: Tripadvisor
 provider_slug: tripadvisor
 search_terms:
-- travel
-- check hotel availability
-- get the full hotel inventory connected through this partner
-- get config
-- get partner api configuration and supported features
-- real-time hotel availability and pricing
 - restaurants
-- get hotel inventory
-- partner configuration
+- connectivity
+- get partner api configuration and supported features
+- attractions
+- check availability
+- check availability for one or more hotels for given dates
+- reviews
+- hospitality
+- check hotel availability
 - inventory
+- check real-time hotel availability and pricing for specific check-in/check-out dates and guest count. returns room types, prices, cancellation policies, and booking urls for available hotels.
+- get inventory
+- booking
+- get config
+- get hotel inventory
+- travel
+- availability
+- hotel inventory management
+- get the full hotel inventory connected through this partner
+- hotels
+- partner configuration
+- real-time hotel availability and pricing
 - get partner config
 - get partner api configuration including supported api version and features.
-- connectivity
-- check availability for one or more hotels for given dates
-- check availability
-- booking
-- hospitality
-- hotels
-- hotel inventory management
 - get the complete list of hotels this connectivity partner can provide availability data for. used by tripadvisor to know which hotels to query.
-- availability
-- check real-time hotel availability and pricing for specific check-in/check-out dates and guest count. returns room types, prices, cancellation policies, and booking urls for available hotels.
-- attractions
-- reviews
-- get inventory
 slug: hotel-connectivity
 source_filename: hotel-connectivity.yaml
 source_heading: Capability Spec

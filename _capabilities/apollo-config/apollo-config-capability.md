@@ -81,53 +81,53 @@ personas: []
 provider_name: Apollo Config
 provider_slug: apollo-config
 search_terms:
-- configuration management
-- update a configuration item
-- creategrayrelease
-- distributed systems
-- getnamespace
-- get namespace info
-- java
-- getlatestrelease
-- getapp
-- listapps
-- ctrip
-- get cluster info
-- listitems
-- real-time configuration
-- createrelease
-- createnamespace
-- get environments and clusters
-- listnamespaces
-- rollbackrelease
-- createcluster
-- open source
-- get app info
-- list configuration items
-- createitem
-- apache 2.0
-- create a gray release
-- getnamespacelock
-- list namespaces
-- api
-- list all apps
-- deleteitem
-- apollo
-- create a cluster
-- delete a configuration item
-- rollback a release
-- create a namespace
-- getitem
-- create a configuration item
-- get namespace lock info
 - updateitem
-- get latest release
-- get a configuration item
-- publish a release
-- getenvclusters
-- microservices
+- get namespace lock info
+- distributed systems
+- listitems
 - getcluster
+- getnamespace
+- api
+- createcluster
+- get environments and clusters
+- java
+- create a namespace
+- open source
+- ctrip
+- getlatestrelease
+- create a configuration item
+- publish a release
+- delete a configuration item
 - config
+- get app info
+- creategrayrelease
+- apollo
+- get a configuration item
+- rollbackrelease
+- getitem
+- configuration management
+- list all apps
+- create a cluster
+- get namespace info
+- create a gray release
+- update a configuration item
+- deleteitem
+- createnamespace
+- list namespaces
+- getapp
+- real-time configuration
+- createitem
+- list configuration items
+- apache 2.0
+- createrelease
+- rollback a release
+- listapps
+- listnamespaces
+- microservices
+- get latest release
+- getenvclusters
+- getnamespacelock
+- get cluster info
 slug: apollo-config-capability
 source_filename: apollo-config-capability.yaml
 source_heading: Capability Spec

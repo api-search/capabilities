@@ -53,64 +53,64 @@ personas: []
 provider_name: Stanley Black & Decker
 provider_slug: stanley-black-and-decker
 search_terms:
-- get battery
-- construction
-- create jobsite
-- create a new dewalt tool connect jobsite for organizing tool and asset tracking by project
-- get tool operational hours and usage patterns
-- connected tool inventory management
-- get connected tool details
-- manufacturing
-- register a new asset by serial number
-- list tools
-- list batteries with charge levels and health status
-- get battery diagnostics including charge cycles and temperature
-- get detailed dewalt battery diagnostics including charge cycles, temperature, and replacement recommendation
-- get tool details, firmware, and connectivity status
-- list all users in the dewalt tool connect organization with their roles and jobsite assignments
-- create a new jobsite for tool tracking
-- dewalt
-- get jobsite inventory
-- iot
-- view all tools, batteries, tags, and connectors tracked at a specific jobsite
 - get tool usage
-- get battery health
-- jobsite project management
-- individual battery health details
-- get full dewalt tool and battery inventory for a jobsite including user assignments and asset counts
-- analyze dewalt tool runtime hours, trigger events, and usage patterns over a date range
-- list all organization users and their roles
-- get tool usage stats
-- asset tracking
-- list all dewalt connected tools registered to the account, filterable by jobsite or connectivity status
-- list jobsite assets
-- jobsite management
-- get jobsite
-- list dewalt battery fleet with charge levels, health status, and paired tool information
-- battery fleet health monitoring
-- get tool details
-- list batteries
-- list all tracked assets including tools, batteries, and tags
-- list all connected dewalt tools with status
-- register a new dewalt tool, battery, or tag to the account by scanning its qr code or entering the serial number
-- list assets
-- list jobsites
-- get jobsite with full tool and battery inventory
-- team and user management
 - list all configured jobsites with asset counts
-- get dewalt tool details including model, serial number, firmware version, and warranty information
-- register asset
-- list users
-- stanley black and decker
+- list all tracked assets including tools, batteries, and tags
+- get jobsite inventory
+- dewalt
+- create jobsite
+- individual battery health details
 - jobsite inventory overview
-- connected tools
-- get tool
 - hardware
-- tools
-- full asset inventory
+- stanley black and decker
+- construction
+- get battery diagnostics including charge cycles and temperature
+- list all connected dewalt tools with status
+- list all dewalt connected tools registered to the account, filterable by jobsite or connectivity status
+- create a new dewalt tool connect jobsite for organizing tool and asset tracking by project
+- connected tool inventory management
+- list tools
+- analyze dewalt tool runtime hours, trigger events, and usage patterns over a date range
 - list team members
-- tool usage and runtime statistics
+- get tool
+- list batteries
+- get detailed dewalt battery diagnostics including charge cycles, temperature, and replacement recommendation
+- get battery health
 - list all configured dewalt tool connect jobsites with asset and user counts
+- tool usage and runtime statistics
+- manufacturing
+- create a new jobsite for tool tracking
+- get jobsite with full tool and battery inventory
+- jobsite management
+- list users
+- list dewalt battery fleet with charge levels, health status, and paired tool information
+- full asset inventory
+- view all tools, batteries, tags, and connectors tracked at a specific jobsite
+- get dewalt tool details including model, serial number, firmware version, and warranty information
+- list all users in the dewalt tool connect organization with their roles and jobsite assignments
+- battery fleet health monitoring
+- iot
+- get tool usage stats
+- register a new dewalt tool, battery, or tag to the account by scanning its qr code or entering the serial number
+- register asset
+- list jobsites
+- get jobsite
+- get full dewalt tool and battery inventory for a jobsite including user assignments and asset counts
+- get connected tool details
+- connected tools
+- register a new asset by serial number
+- tools
+- team and user management
+- jobsite project management
+- list jobsite assets
+- asset tracking
+- get battery
+- get tool details, firmware, and connectivity status
+- get tool operational hours and usage patterns
+- list assets
+- list all organization users and their roles
+- get tool details
+- list batteries with charge levels and health status
 slug: jobsite-tool-management
 source_filename: jobsite-tool-management.yaml
 source_heading: Capability Spec

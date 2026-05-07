@@ -21,32 +21,32 @@ personas: []
 provider_name: Microsoft Visio
 provider_slug: microsoft-visio
 search_terms:
-- microsoft 365
-- list data items for a shape.
-- list shapes
 - visualization
-- list pages
-- list all pages.
-- business analysts reviewing process flow diagrams.
-- IT Architect
-- list shapes on a page.
-- diagram page operations.
-- microsoft visio
-- list all pages in a visio diagram.
-- it architects analyzing network and system diagrams.
-- business process
-- analyze visio diagrams programmatically.
-- diagramming
-- list shape data items
-- shape data operations.
-- flowcharts
 - shape operations.
-- get shape
+- business analysts reviewing process flow diagrams.
+- diagram page operations.
+- analyze visio diagrams programmatically.
+- list shape data items
 - diagram analysis
-- Business Analyst
+- microsoft 365
+- business process
 - get details of a specific shape.
+- diagramming
+- list shapes on a page.
+- list shapes
+- get shape
+- list data items for a shape.
+- shape data operations.
 - list all shapes on a diagram page.
+- Business Analyst
+- microsoft visio
+- IT Architect
+- list pages
+- list all pages in a visio diagram.
+- flowcharts
 - list data items attached to a shape.
+- list all pages.
+- it architects analyzing network and system diagrams.
 slug: diagram-analysis
 source_filename: diagram-analysis.yaml
 source_heading: Capability Spec

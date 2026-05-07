@@ -77,71 +77,71 @@ personas: []
 provider_name: Tropic
 provider_slug: tropic
 search_terms:
-- list all contracts with optional status and supplier filters
-- update contract details (status, renewal date, value)
-- tropic
-- submit a new procurement request
-- procurement request management
-- list all suppliers
-- get a contract by id
-- get contract
-- update contract
-- list organization users
-- create a webhook subscription
-- delete a contract
 - contract management
-- list contracts
-- create webhook
-- create contract
-- create a new supplier profile
-- approve request
-- list procurement requests with optional status filter
-- saas management
-- list requests
-- get a request by id
-- supplier relationship management
-- get supplier
-- individual contract operations
-- list webhook subscriptions
-- approve a pending request
-- cost optimization
-- approval workflows
+- list organization users
+- reject a pending procurement request with a reason
+- procurement
+- update a contract
 - list suppliers
+- individual contract operations
+- list all supplier profiles
+- renewals
+- list all suppliers
+- approve a pending procurement request
+- tropic
+- update a supplier
+- list all contracts with optional status and supplier filters
+- event webhook management
+- get contract
+- create a new supplier profile
+- cost optimization
+- list organization users in tropic
+- create webhook
+- get a specific supplier by id
+- reject request
+- approve a pending request
+- get supplier
+- update contract
+- supplier relationship management
+- saas management
+- get a contract by id
+- procurement request management
+- reject a pending request
+- list contracts
+- list users
+- get a specific contract by id
 - spend management
 - create a new webhook subscription for procurement events
-- get request
-- reject request
-- supplier management
-- approve a pending procurement request
-- get a specific supplier by id
-- get a specific procurement request by id
 - create a new vendor contract in tropic
-- update supplier
-- get a supplier by id
-- list procurement requests
-- reject a pending request
-- renewals
-- update a supplier
-- contract lifecycle management
-- list users
-- event webhook management
-- saas procurement
 - benchmarking
+- delete a contract
 - create a new supplier
-- update a contract
-- create supplier
-- list organization users in tropic
-- create a new contract record
-- create request
 - list webhooks
-- get a specific contract by id
-- list all contracts with optional filters
-- delete contract
-- list all supplier profiles
-- reject a pending procurement request with a reason
-- list configured webhook subscriptions
+- update supplier
+- create supplier
+- list procurement requests
+- get request
+- update contract details (status, renewal date, value)
+- approval workflows
+- create a new contract record
+- create a webhook subscription
 - user management
-- procurement
+- create contract
+- get a supplier by id
+- create request
+- list all contracts with optional filters
+- list procurement requests with optional status filter
+- supplier management
+- submit a new procurement request
+- list webhook subscriptions
+- contract lifecycle management
+- list requests
+- get a specific procurement request by id
+- list configured webhook subscriptions
+- saas procurement
+- get a request by id
+- approve request
+- delete contract
 slug: procurement-management
 source_filename: procurement-management.yaml
 source_heading: Capability Spec

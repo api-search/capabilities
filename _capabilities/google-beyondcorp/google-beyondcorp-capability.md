@@ -53,37 +53,37 @@ personas: []
 provider_name: Google BeyondCorp
 provider_slug: google-beyondcorp
 search_terms:
-- createappconnection
-- vpn alternative
-- google beyondcorp update an app connector
-- updateappconnector
-- google beyondcorp delete an app connection
-- identity
-- google beyondcorp list security gateways
-- google beyondcorp get an app connection
-- getappconnection
-- google beyondcorp list app connectors
-- google
-- listappconnectors
-- security
-- google beyondcorp list app connections
-- google beyondcorp create a security gateway
-- deleteappconnector
-- getappconnector
-- listappconnections
-- api
-- zero trust
-- google beyondcorp delete an app connector
-- access control
-- createappconnector
-- google beyondcorp get an app connector
-- google beyondcorp create an app connection
-- listsecuritygateways
-- deleteappconnection
 - google beyondcorp create an app connector
+- google beyondcorp list app connectors
+- createappconnector
+- api
+- createappconnection
+- deleteappconnection
+- getappconnection
+- google beyondcorp create a security gateway
+- access control
+- google
 - beyondcorp
+- updateappconnector
+- listappconnections
+- listappconnectors
+- identity
+- google beyondcorp delete an app connection
+- getappconnector
 - createsecuritygateway
+- google beyondcorp update an app connector
+- google beyondcorp list app connections
+- google beyondcorp delete an app connector
+- google beyondcorp list security gateways
 - enterprise security
+- deleteappconnector
+- google beyondcorp create an app connection
+- zero trust
+- google beyondcorp get an app connection
+- security
+- vpn alternative
+- google beyondcorp get an app connector
+- listsecuritygateways
 slug: google-beyondcorp-capability
 source_filename: google-beyondcorp-capability.yaml
 source_heading: Capability Spec

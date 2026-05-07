@@ -57,37 +57,37 @@ personas: []
 provider_name: Ironclad Clickwrap
 provider_slug: ironclad-clickwrap
 search_terms:
-- get a contract
-- agreements
-- listsigners
-- record a contract display event
-- legal
-- get a signer
-- list contracts
-- sendvisited
-- senddisplayed
-- compliance
-- list signers
-- getsigner
-- clickwrap
-- listgroups
-- listsites
 - ironclad
-- record a page visit event
-- list sites
-- api
-- sendagreed
-- retrievelatest
-- getcontract
 - record an agreement acceptance event
-- getsite
-- listcontracts
-- retrieve the latest acceptance state for a signer
-- get a clickwrap group
+- get a signer
+- clickwrap
 - list clickwrap groups
-- getgroup
-- get a site
+- get a contract
+- api
+- listcontracts
+- getsite
+- listsites
 - contracts
+- list signers
+- retrieve the latest acceptance state for a signer
+- compliance
+- list sites
+- getgroup
+- listgroups
+- list contracts
+- getsigner
+- get a site
+- get a clickwrap group
+- record a contract display event
+- sendvisited
+- record a page visit event
+- agreements
+- retrievelatest
+- senddisplayed
+- getcontract
+- legal
+- sendagreed
+- listsigners
 slug: ironclad-clickwrap-capability
 source_filename: ironclad-clickwrap-capability.yaml
 source_heading: Capability Spec

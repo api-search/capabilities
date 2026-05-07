@@ -9,15 +9,15 @@ personas: []
 provider_name: Trimble
 provider_slug: trimble
 search_terms:
-- mapping
-- construction
-- transportation
-- gps
-- bim
-- geospatial
 - fleet management
+- transportation
+- bim
 - agriculture
 - collaboration
+- geospatial
+- mapping
+- gps
+- construction
 slug: commercial-routing
 source_filename: commercial-routing.yaml
 source_heading: Capability Spec

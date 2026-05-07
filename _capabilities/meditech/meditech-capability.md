@@ -50,27 +50,27 @@ provider_name: meditech
 provider_slug: meditech
 search_terms:
 - get patient medication requests
-- get patient diagnostic reports
-- search patients
-- get patient allergies and intolerances
-- get fhir capability statement
-- get patient by id
-- searchpatients
-- getcapabilitystatement
-- meditech
-- getpatientmedications
-- getpatientallergies
-- api
-- getpatientencounters
-- getpatientconditions
-- getpatient
-- get patient conditions (problem list, diagnoses)
-- get patient observations (vital signs, lab results)
-- getpatientdiagnosticreports
-- getpatientobservations
-- getpatienteverything
 - get patient encounters
+- getpatienteverything
+- getcapabilitystatement
+- api
+- get fhir capability statement
+- get patient observations (vital signs, lab results)
+- searchpatients
+- search patients
+- get patient by id
+- get patient diagnostic reports
+- meditech
+- getpatientobservations
+- get patient allergies and intolerances
+- getpatientencounters
 - get all patient data (patient $everything)
+- getpatientallergies
+- getpatientdiagnosticreports
+- getpatientconditions
+- get patient conditions (problem list, diagnoses)
+- getpatientmedications
+- getpatient
 slug: meditech-capability
 source_filename: meditech-capability.yaml
 source_heading: Capability Spec

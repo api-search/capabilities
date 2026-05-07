@@ -41,32 +41,32 @@ personas: []
 provider_name: Google Cloud Endpoints
 provider_slug: google-cloud-endpoints
 search_terms:
-- listservicerollouts
-- endpoints
-- rate limiting
-- google cloud endpoints list managed services
-- cloud
-- google cloud endpoints list service rollouts
 - getservice
-- google
-- google cloud endpoints get a managed service
-- deleteservice
-- monitoring
-- google cloud endpoints create a managed service
-- google cloud endpoints delete a managed service
-- google cloud
-- google cloud endpoints create a service rollout
-- listserviceconfigs
-- createservicerollout
 - api
 - authentication
-- api gateway
+- monitoring
+- google cloud endpoints create a managed service
 - api management
-- google cloud endpoints list service configurations
-- listservices
-- createservice
+- listservicerollouts
+- listserviceconfigs
+- google
+- createservicerollout
+- google cloud endpoints list managed services
+- api gateway
+- google cloud endpoints create a service rollout
+- google cloud endpoints list service rollouts
+- google cloud endpoints get a managed service
 - google cloud endpoints create a service configuration
 - createserviceconfig
+- rate limiting
+- cloud
+- endpoints
+- google cloud endpoints delete a managed service
+- google cloud endpoints list service configurations
+- google cloud
+- deleteservice
+- createservice
+- listservices
 slug: google-cloud-endpoints-capability
 source_filename: google-cloud-endpoints-capability.yaml
 source_heading: Capability Spec

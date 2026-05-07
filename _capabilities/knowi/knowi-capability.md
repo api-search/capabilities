@@ -105,62 +105,62 @@ personas: []
 provider_name: Knowi
 provider_slug: knowi
 search_terms:
-- knowi
-- creategroup
-- createuser
-- generate secure share hash
-- api analytics
-- deletegroup
-- getdashboardshare
-- embedded analytics
-- delete group
-- generate share url
-- getdashboard
-- search user
-- create user
-- get group
-- get dashboard share info
 - create group
-- listusergroups
-- createusergroup
+- generateshareurl
 - listshareableentities
-- generatesecureshareurl
-- update group
+- createusergroup
+- list groups
+- moveuserassets
+- creategroup
+- knowi
 - remove group from user
-- data visualization
-- delete user
-- revoke access token
-- listgroups
-- ai analytics
-- login
-- list shareable entities
-- list user groups
 - api
 - nosql analytics
-- move user assets
-- obtain access token
-- get dashboard
 - update user
-- create group for user
-- get user
-- generateshareurl
-- business intelligence
+- revoke access token
+- api analytics
+- embedded analytics
+- generatesecureshareurl
+- generate share url
+- list user groups
 - getuser
-- removeusergroup
-- list users
-- list dashboards
-- logout
-- list groups
-- listusers
-- moveuserassets
+- business intelligence
+- delete user
+- login
 - getgroup
-- generate secure share url
-- updateuser
-- listdashboards
-- searchuser
-- updategroup
-- generatesecuresharehash
+- get group
+- create group for user
 - deleteuser
+- listgroups
+- getdashboardshare
+- get dashboard share info
+- generate secure share hash
+- list users
+- search user
+- removeusergroup
+- updategroup
+- obtain access token
+- updateuser
+- list dashboards
+- get dashboard
+- generate secure share url
+- get user
+- logout
+- listusergroups
+- listdashboards
+- createuser
+- create user
+- listusers
+- ai analytics
+- move user assets
+- delete group
+- generatesecuresharehash
+- getdashboard
+- list shareable entities
+- deletegroup
+- searchuser
+- data visualization
+- update group
 slug: knowi-capability
 source_filename: knowi-capability.yaml
 source_heading: Capability Spec

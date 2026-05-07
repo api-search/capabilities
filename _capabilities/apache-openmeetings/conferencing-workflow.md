@@ -29,47 +29,47 @@ personas: []
 provider_name: Apache OpenMeetings
 provider_slug: apache-openmeetings
 search_terms:
-- check health
-- conference room management
-- apache openmeetings
-- get upcoming meetings
-- System Administrator
-- list upcoming
-- close a conference room
-- calendar and scheduling
-- whiteboard
-- conferencing
-- create room
-- collaboration
-- generate a secure room access hash
-- apache
 - list session recordings
-- create a new room
-- list all registered users
-- check system health status
-- unified workflow for managing conferencing sessions
-- manages conference rooms, invites participants, and handles recordings
-- open source
-- manages users, groups, and system health
 - list public rooms
-- get room hash
-- login
-- get upcoming calendar meetings
-- list rooms
-- video conferencing
-- create a new conference room
-- list all user groups
 - authenticate a user to openmeetings
-- list users
-- list recordings
-- Meeting Organizer
-- web conferencing
+- generate a secure room access hash
 - list groups
-- list all public conference rooms
-- get recordings by type
+- get upcoming meetings
 - close room
+- conferencing
+- conference room management
+- manages users, groups, and system health
+- get recordings by type
+- list all registered users
+- open source
+- get upcoming calendar meetings
+- check health
+- collaboration
+- list recordings
+- login
+- list users
+- check system health status
+- create room
+- apache
+- System Administrator
+- close a conference room
+- list all user groups
+- create a new conference room
+- list upcoming
 - user management
+- list rooms
+- get room hash
+- unified workflow for managing conferencing sessions
+- video conferencing
+- create a new room
+- list all public conference rooms
+- calendar and scheduling
+- apache openmeetings
+- web conferencing
+- Meeting Organizer
 - session recordings
+- whiteboard
+- manages conference rooms, invites participants, and handles recordings
 slug: conferencing-workflow
 source_filename: conferencing-workflow.yaml
 source_heading: Capability Spec

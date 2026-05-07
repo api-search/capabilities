@@ -41,24 +41,24 @@ personas: []
 provider_name: clickup
 provider_slug: clickup
 search_terms:
-- gettaskcomments
-- get task comments
-- create a list comment
-- createlistcomment
-- updatecomment
-- api
-- createviewcomment
-- getlistcomments
-- get list comments
-- create a task comment
-- clickup
-- createtaskcomment
-- getviewcomments
 - create a view comment
-- update a comment
-- deletecomment
-- delete a comment
+- getlistcomments
 - get view comments
+- update a comment
+- createlistcomment
+- delete a comment
+- getviewcomments
+- createviewcomment
+- createtaskcomment
+- get task comments
+- gettaskcomments
+- create a task comment
+- get list comments
+- clickup
+- create a list comment
+- api
+- updatecomment
+- deletecomment
 slug: clickup-capability
 source_filename: clickup-capability.yaml
 source_heading: Capability Spec

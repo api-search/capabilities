@@ -37,46 +37,46 @@ personas: []
 provider_name: Taxi - Describe How Your APIs and Data Relate
 provider_slug: taxi-describe-how-your-apis-and-data-relate
 search_terms:
-- register schema
-- data integration
-- list all registered taxi schemas in the registry
-- compile and validate a taxi schema, returning parsed types and any errors
-- compile a taxi schema and return types and validation errors
-- service registry
-- register a taxi schema
-- query language
-- compile schema
 - schema registry — list and register taxi schemas
-- taxiql federated query execution
-- list services
-- type discovery across registered schemas
-- list all registered taxi schemas
-- compile taxi schema
-- execute query
-- compile and validate taxi schemas
-- schema
-- convert from openapi
-- convert openapi to taxi schema
-- taxiql
-- list all types
-- execute taxiql query
-- semantic types
-- open source
-- convert openapi specs to taxi
-- convert openapi to taxi
-- list all registered services
-- list all api services registered with semantic annotations in the schema registry
-- schema registry
-- api description
-- convert an existing openapi specification to taxi schema format with semantic type annotations
-- list schemas
 - list types
-- execute a taxiql query — taxi automatically discovers api call paths and assembles results
-- execute a taxiql query across registered data sources
+- list services
+- compile a taxi schema and return types and validation errors
+- query language
+- taxiql
+- compile schema
 - semantic
-- discover all semantic types defined across registered taxi schemas
-- discover types
+- api description
+- execute taxiql query
+- register a taxi schema
+- list all registered services
+- convert openapi to taxi
+- open source
+- schema registry
+- list all registered taxi schemas in the registry
+- list all types
+- service registry
+- semantic types
+- type discovery across registered schemas
+- list all api services registered with semantic annotations in the schema registry
+- convert openapi to taxi schema
+- convert openapi specs to taxi
+- execute a taxiql query across registered data sources
+- execute a taxiql query — taxi automatically discovers api call paths and assembles results
+- compile and validate taxi schemas
+- execute query
+- convert from openapi
+- list all registered taxi schemas
 - register a new taxi schema in the registry
+- discover types
+- register schema
+- discover all semantic types defined across registered taxi schemas
+- convert an existing openapi specification to taxi schema format with semantic type annotations
+- compile and validate a taxi schema, returning parsed types and any errors
+- compile taxi schema
+- data integration
+- taxiql federated query execution
+- list schemas
+- schema
 slug: data-integration
 source_filename: data-integration.yaml
 source_heading: Capability Spec

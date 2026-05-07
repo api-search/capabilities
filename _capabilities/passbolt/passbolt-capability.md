@@ -249,132 +249,132 @@ personas: []
 provider_name: Passbolt
 provider_slug: passbolt
 search_terms:
-- upgrade a folder
-- get comments for a resource.
-- indexcomments
-- addgroup
-- viewmetadatasessionkeys
-- updatemetadatakey
-- viewmetadatatypessettings
-- viewauthisauthenticated
-- viewauthjwtjwks
-- get multiple folders.
-- updatefolder
-- security
-- update a folder.
-- delete a group.
-- add a comment.
-- get folders with expired keys
-- api
-- addmetadatakey
-- updatemetadatasessionkey
-- upgrade a resource
-- get upgradable resources
-- addmetadataprivatekey
-- get metadata types settings
-- simulatesync
-- authjwtlogin
-- unset a resource as favorite.
-- viewgroup
-- create a folder.
-- update metadata keys settings.
-- get upgradable folders
-- passbolt
-- create a metadata private key.
-- identity
-- rotatemetadataexpiredkeysfolders
-- rotatemetadataexpiredkeys
-- addmetadatasessionkey
-- viewhealthcheck
-- get session keys.
-- get a group.
-- indexfolders
-- viewhealthcheckstatus
-- get multiple groups.
-- dry run a group deletion.
-- viewmetadatarotatekeyfolders
-- dryrunupdategroup
-- get the server's public pgp key.
-- addcomment
-- create a metadata key.
-- rotatemetadatakeystags
-- delete a folder.
-- rotate expired metadata keys for tags
-- upgrademetadatafolders
-- viewmetadataupgraderesources
-- authlogout
-- get the jwks server information.
-- viewmetadataupgradetags
-- mark a metadata key as expired.
-- runsync
-- viewgpgkey
-- updatecomment
-- authjwtrefresh
-- indexgpgkeys
-- logout.
-- rotate expired metadata keys for folders
-- password manager
-- viewauthverify
-- delete a given session-key entry.
-- updategroup
-- update a given session-key entry.
-- set a resource as favorite.
-- indexmetadatakeys
-- run the directory synchronization.
-- get metadata keys settings.
-- addfolder
-- login.
-- upgrademetadatatypessettings
-- get multiple gpg keys.
-- verify the server's identity.
-- upgrade a resource types settings
-- deletemetadatakey
-- get a folder.
-- update a group.
-- authlogin
-- log in.
-- add a session key.
-- log out.
-- addfavorite
-- get upgradable tags
-- refresh access token.
-- delete a metadata key.
-- get metadata keys.
 - check if passbolt is up.
-- secrets
-- get a gpg key.
-- delete a comment.
-- viewauthjwtrsa
-- viewmetadatarotatekeytags
-- check authentication status.
-- indexgroups
-- authjwtlogout
-- update a comment.
-- deletegroup
-- viewfolder
-- viewmetadatarotatekeyresources
-- simulate directory synchronization without making changes.
-- deletesessionkey
-- update a metadata private key.
-- updatemetadatakeyssettings
-- rotate expired metadata keys for resources
 - indexmetadatakeyssettings
-- deletecomment
-- deletefolder
-- dryrundeletegroup
-- deletefavorite
-- get resources with expired keys
-- get tags with expired keys
-- get the jwt rsa server information.
-- checkauthverify
-- get healthcheck information.
-- create a group.
-- updatemetadataprivatekey
-- viewmetadataupgradefolders
-- upgrademetadataresources
-- dry run a group update.
+- update a comment.
+- get upgradable folders
+- api
+- viewmetadatasessionkeys
+- updatecomment
 - viewavatar
+- get multiple folders.
+- logout.
+- deletemetadatakey
+- rotate expired metadata keys for resources
+- get the jwks server information.
+- viewmetadataupgraderesources
+- create a folder.
+- delete a folder.
+- viewhealthcheck
+- indexfolders
+- log out.
+- viewgpgkey
+- viewmetadatarotatekeyfolders
+- viewfolder
+- addmetadatasessionkey
+- create a metadata private key.
+- indexmetadatakeys
+- passbolt
+- addcomment
+- update a folder.
+- run the directory synchronization.
+- authlogout
+- deletefolder
+- updatemetadatasessionkey
+- deletegroup
+- dry run a group update.
+- viewmetadatarotatekeyresources
+- delete a group.
+- rotate expired metadata keys for folders
+- add a comment.
+- dry run a group deletion.
+- get tags with expired keys
+- secrets
+- mark a metadata key as expired.
+- get metadata keys.
+- addgroup
+- upgrade a resource types settings
+- get the server's public pgp key.
+- viewhealthcheckstatus
+- password manager
+- addfolder
+- get multiple groups.
+- get the jwt rsa server information.
+- delete a comment.
+- update a group.
+- viewgroup
+- upgrademetadatafolders
+- updatemetadatakeyssettings
+- create a group.
+- update a metadata private key.
+- get multiple gpg keys.
+- update a given session-key entry.
+- add a session key.
+- viewmetadataupgradefolders
+- indexgroups
+- get session keys.
+- security
+- get comments for a resource.
+- dryrundeletegroup
+- upgrademetadataresources
+- update metadata keys settings.
+- get upgradable resources
+- create a metadata key.
+- authjwtlogout
+- get resources with expired keys
+- get a gpg key.
+- runsync
+- viewauthjwtjwks
+- rotatemetadatakeystags
+- set a resource as favorite.
+- dryrunupdategroup
+- identity
+- deletefavorite
+- upgrade a resource
 - get an avatar as an image.
+- get metadata keys settings.
+- get a folder.
+- viewmetadatatypessettings
+- authjwtrefresh
+- get folders with expired keys
+- indexcomments
+- login.
+- rotatemetadataexpiredkeysfolders
+- addfavorite
+- authjwtlogin
+- checkauthverify
+- upgrademetadatatypessettings
+- verify the server's identity.
+- refresh access token.
+- unset a resource as favorite.
+- delete a given session-key entry.
+- get healthcheck information.
+- deletecomment
+- viewmetadatarotatekeytags
+- simulatesync
+- authlogin
+- indexgpgkeys
+- simulate directory synchronization without making changes.
+- get upgradable tags
+- get metadata types settings
+- updatemetadataprivatekey
+- updategroup
+- addmetadatakey
+- viewauthisauthenticated
+- rotate expired metadata keys for tags
+- check authentication status.
+- updatemetadatakey
+- get a group.
+- viewmetadataupgradetags
+- upgrade a folder
+- addmetadataprivatekey
+- deletesessionkey
+- log in.
+- viewauthverify
+- rotatemetadataexpiredkeys
+- delete a metadata key.
+- viewauthjwtrsa
+- updatefolder
 slug: passbolt-capability
 source_filename: passbolt-capability.yaml
 source_heading: Capability Spec

@@ -37,29 +37,29 @@ personas: []
 provider_name: Google Cloud Memorystore
 provider_slug: google-cloud-memorystore
 search_terms:
-- google cloud memorystore failover an instance
-- failoverinstance
-- deleteinstance
-- in-memory
-- cloud
-- google
-- createinstance
 - google cloud memorystore get an instance
-- redis
 - updateinstance
+- createinstance
+- api
+- deleteinstance
+- google
 - getinstance
+- google cloud memorystore list instances
 - cache
 - memorystore
-- google cloud memorystore upgrade an instance
-- upgradeinstance
-- api
-- google cloud memorystore delete an instance
-- listinstances
-- google cloud memorystore list instances
+- failoverinstance
+- in-memory
+- redis
 - google cloud memorystore update an instance
-- google cloud memorystore create an instance
-- google cloud
+- upgradeinstance
+- cloud
 - memcached
+- google cloud memorystore create an instance
+- google cloud memorystore delete an instance
+- google cloud memorystore upgrade an instance
+- google cloud
+- listinstances
+- google cloud memorystore failover an instance
 slug: google-cloud-memorystore-capability
 source_filename: google-cloud-memorystore-capability.yaml
 source_heading: Capability Spec

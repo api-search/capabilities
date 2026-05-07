@@ -45,51 +45,51 @@ personas: []
 provider_name: Sonatype Nexus
 provider_slug: sonatype-nexus
 search_terms:
-- list all roles
-- user account management
-- software supply chain
-- check system status
-- background task management
-- get status
-- check nexus system health and status
-- users
-- list tasks
 - devops
-- roles
-- delete a nexus user by id
-- sonatype nexus
-- delete a user
-- system health and status
-- create a new user
-- create user
-- package management
-- get task
-- list all nexus roles
-- security
-- list all nexus users
-- list all users
-- role and permission management
-- create a new nexus user account
-- docker
-- check system health status
-- list all background tasks in nexus
-- run a task by id
-- delete user
-- npm
-- repository
 - create a new role
-- administration
-- access control
-- create a new nexus role with privileges
-- create role
-- maven
-- artifact management
-- list users
-- list all tasks
-- run task
+- list all background tasks in nexus
+- users
 - get a task by id
+- system health and status
+- delete a user
+- npm
+- get task
+- list all users
+- roles
+- check system status
+- access control
+- list tasks
+- delete a nexus user by id
+- delete user
+- maven
+- software supply chain
+- list all tasks
+- get status
+- list users
+- create role
+- administration
+- check system health status
+- list all nexus roles
+- background task management
 - execute a nexus background task by id
+- repository
+- create a new nexus user account
+- artifact management
+- create user
+- create a new user
+- sonatype nexus
+- create a new nexus role with privileges
+- run task
+- list all roles
+- role and permission management
 - list roles
+- list all nexus users
+- security
+- docker
+- user account management
+- package management
+- run a task by id
+- check nexus system health and status
 slug: security-administration
 source_filename: security-administration.yaml
 source_heading: Capability Spec

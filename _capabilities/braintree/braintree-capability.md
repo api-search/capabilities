@@ -77,42 +77,42 @@ personas: []
 provider_name: braintree
 provider_slug: braintree
 search_terms:
-- gettransaction
-- refundtransaction
-- get a transaction
-- void a transaction
-- get a customer
-- delete a customer
-- createpaymentmethod
-- deletepaymentmethod
-- create a payment method
+- listdisputes
 - braintree
-- updatepaymentmethod
-- voidtransaction
-- update a payment method
-- refund a transaction
-- generate a client token
-- list disputes
-- accept a dispute
-- getdispute
+- createpaymentmethod
+- get a transaction
 - submit transaction for settlement
 - getcustomer
-- delete a payment method
-- submittransactionforsettlement
-- api
-- acceptdispute
-- listdisputes
-- generateclienttoken
-- createcustomer
-- createtransaction
-- create a customer
 - updatecustomer
-- update a customer
+- api
 - deletecustomer
-- get a dispute
-- getpaymentmethod
-- get a payment method
+- updatepaymentmethod
+- accept a dispute
+- getdispute
+- create a customer
 - create a transaction
+- get a customer
+- delete a customer
+- getpaymentmethod
+- list disputes
+- update a customer
+- generateclienttoken
+- create a payment method
+- deletepaymentmethod
+- createcustomer
+- acceptdispute
+- get a payment method
+- submittransactionforsettlement
+- gettransaction
+- delete a payment method
+- createtransaction
+- update a payment method
+- get a dispute
+- generate a client token
+- void a transaction
+- voidtransaction
+- refundtransaction
+- refund a transaction
 slug: braintree-capability
 source_filename: braintree-capability.yaml
 source_heading: Capability Spec

@@ -33,43 +33,43 @@ personas: []
 provider_name: Signal
 provider_slug: signal
 search_terms:
-- cryptography
-- list all devices linked to the signal account including device ids and last seen timestamps
-- list all devices linked to the account
-- get the current signal account identity
-- pre-key bundle management for signal protocol
-- encryption
 - linked device management
-- list devices
-- encrypted message delivery
-- security
-- configure account capabilities and settings
-- send end-to-end encrypted signal protocol messages to a destination account uuid
-- account configuration
-- get profile
-- open source
-- get the signal profile for a user by their account uuid
-- messaging
-- get pre key bundle
-- get user profile
-- register account
-- retrieve pre-key bundle for establishing a new signal protocol encrypted session with a contact
-- end-to-end encryption
-- send message
-- register a new signal account with a phone number (for self-hosted deployments)
-- send end-to-end encrypted messages to a destination account
-- get account identity
-- set account attributes
-- configure signal account capabilities such as voice, video, and push notification settings
-- signal protocol
-- account identity
-- get pre-key bundle for initiating a signal protocol session
-- get signal user profile
+- list all devices linked to the account
 - list linked devices
-- send encrypted message
-- get the signal account identity including uuid and phone number for the authenticated user
 - user profile management
+- register a new signal account with a phone number (for self-hosted deployments)
+- signal protocol
+- send end-to-end encrypted messages to a destination account
+- get pre key bundle
 - privacy
+- open source
+- retrieve pre-key bundle for establishing a new signal protocol encrypted session with a contact
+- encryption
+- send message
+- get user profile
+- get the signal profile for a user by their account uuid
+- send encrypted message
+- get account identity
+- cryptography
+- send end-to-end encrypted signal protocol messages to a destination account uuid
+- get profile
+- get signal user profile
+- configure account capabilities and settings
+- list devices
+- configure signal account capabilities such as voice, video, and push notification settings
+- encrypted message delivery
+- set account attributes
+- register account
+- account configuration
+- get the signal account identity including uuid and phone number for the authenticated user
+- list all devices linked to the signal account including device ids and last seen timestamps
+- end-to-end encryption
+- get the current signal account identity
+- account identity
+- messaging
+- security
+- pre-key bundle management for signal protocol
+- get pre-key bundle for initiating a signal protocol session
 slug: secure-messaging
 source_filename: secure-messaging.yaml
 source_heading: Capability Spec

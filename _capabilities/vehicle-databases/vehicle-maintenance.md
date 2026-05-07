@@ -33,35 +33,35 @@ personas: []
 provider_name: Vehicle Databases
 provider_slug: vehicle-databases
 search_terms:
-- look up vehicles by make, model, and year
+- check nhtsa safety recalls
 - find vehicles with engine options by make, model, and year
-- list service items
-- list service items with fluid specs for a specific mileage
-- maintenance
-- get the complete oem maintenance schedule for a vehicle, optionally filtered by current mileage
-- get tsbs
-- lookup vehicle
+- get nhtsa recall information for a vehicle
+- check for nhtsa safety recalls affecting a specific vehicle
+- get maintenance schedule
+- decode a 17-character vin to identify make, model, year, engine, and trim
+- look up vehicles by make, model, and year to get vehicle identifiers
+- vehicles
 - get recalls
+- get service items for a maintenance interval
+- get technical service bulletins
+- list service items
+- get oem technical service bulletins for a vehicle
+- lookup vehicle
+- decode vin
+- get oem maintenance schedule
+- get service items, fluid specifications, and part numbers for a vehicle at a specific mileage interval
+- get tsbs
 - fleet management
 - get oem technical service bulletins (tsbs) for a vehicle, optionally filtered by category
 - automotive
-- check for nhtsa safety recalls affecting a specific vehicle
-- vehicles
-- recalls
-- decode vin
-- get service items, fluid specifications, and part numbers for a vehicle at a specific mileage interval
-- decode a 17-character vin to full vehicle specification
-- get complete oem maintenance schedule with service intervals
-- look up vehicles by make, model, and year to get vehicle identifiers
-- get service items for a maintenance interval
-- check nhtsa safety recalls
-- get nhtsa recall information for a vehicle
 - decode a vin to vehicle details
-- get oem technical service bulletins for a vehicle
-- get maintenance schedule
-- get oem maintenance schedule
-- get technical service bulletins
-- decode a 17-character vin to identify make, model, year, engine, and trim
+- get the complete oem maintenance schedule for a vehicle, optionally filtered by current mileage
+- maintenance
+- recalls
+- look up vehicles by make, model, and year
+- list service items with fluid specs for a specific mileage
+- get complete oem maintenance schedule with service intervals
+- decode a 17-character vin to full vehicle specification
 slug: vehicle-maintenance
 source_filename: vehicle-maintenance.yaml
 source_heading: Capability Spec

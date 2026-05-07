@@ -150,85 +150,85 @@ provider_name: JupyterHub
 provider_slug: jupyterhub
 search_terms:
 - jupyterhub get user
-- education
-- jupyterhub shutdown
-- jupyterhub oauth2 authorize
-- jupyterhub get detailed info
-- getusertoken
-- api
-- jupyterhub create groups
-- syncproxy
-- hub
-- createusers
-- getuser
-- jupyterhub delete user
 - listusertokens
-- jupyterhub revoke user token
-- updateuser
-- multi-user
-- data science
-- deleteuser
-- jupyterhub create user
-- creategroup
-- startnamedserver
-- createuser
-- creategroups
-- jupyterhub get proxy routes
-- removegroupusers
+- api
 - oauth2authorize
-- getservice
 - jupyterhub
-- gethubinfo
-- jupyterhub list groups
-- listgroups
-- startuserserver
-- notifyuseractivity
-- jupyterhub start user server
 - jupyterhub get user token
-- jupyterhub request token
-- jupyterhub list services
-- authentication
-- python
-- jupyterhub identify cookie
-- createusertoken
-- listusers
+- getusertoken
 - getgroup
-- getproxyroutes
-- identifycookie
-- addgroupusers
-- updateproxy
-- jupyterhub identify token
-- jupyterhub list users
-- jupyterhub list user tokens
-- shutdownhub
+- deleteuser
 - stopuserserver
-- revokeusertoken
-- jupyterhub update proxy
-- jupyterhub stop named server
-- oauth2token
-- jupyterhub update user
-- jupyterhub oauth2 token
-- jupyterhub remove users from group
-- jupyterhub add users to group
-- jupyterhub create user token
-- jupyterhub get group
-- notebooks
+- jupyterhub list groups
 - deletegroup
-- oauth2
-- jupyterhub stop user server
-- gethubversion
 - jupyterhub notify user activity
-- jupyterhub create users
-- requesttoken
-- stopnamedserver
-- jupyterhub get service
-- jupyterhub create group
-- identifytoken
-- jupyterhub delete group
-- jupyterhub get version
-- jupyterhub start named server
-- jupyterhub sync proxy
 - listservices
+- jupyterhub delete user
+- jupyterhub remove users from group
+- jupyterhub oauth2 token
+- jupyterhub identify token
+- creategroup
+- syncproxy
+- jupyterhub stop named server
+- authentication
+- jupyterhub create user
+- listgroups
+- createusertoken
+- hub
+- gethubinfo
+- jupyterhub create groups
+- jupyterhub sync proxy
+- jupyterhub update user
+- jupyterhub list services
+- jupyterhub request token
+- stopnamedserver
+- createuser
+- education
+- jupyterhub revoke user token
+- jupyterhub list user tokens
+- jupyterhub get detailed info
+- jupyterhub stop user server
+- revokeusertoken
+- jupyterhub create group
+- jupyterhub get version
+- oauth2token
+- getproxyroutes
+- jupyterhub update proxy
+- jupyterhub start user server
+- jupyterhub create users
+- removegroupusers
+- identifytoken
+- jupyterhub shutdown
+- jupyterhub get group
+- startuserserver
+- jupyterhub create user token
+- python
+- jupyterhub get proxy routes
+- notebooks
+- jupyterhub identify cookie
+- notifyuseractivity
+- updateuser
+- jupyterhub list users
+- gethubversion
+- updateproxy
+- createusers
+- listusers
+- creategroups
+- jupyterhub add users to group
+- identifycookie
+- jupyterhub oauth2 authorize
+- getservice
+- requesttoken
+- multi-user
+- getuser
+- data science
+- jupyterhub get service
+- oauth2
+- shutdownhub
+- addgroupusers
+- jupyterhub delete group
+- startnamedserver
+- jupyterhub start named server
 slug: jupyterhub-capability
 source_filename: jupyterhub-capability.yaml
 source_heading: Capability Spec

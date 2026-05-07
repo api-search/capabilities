@@ -18,8 +18,8 @@ provider_name: elevenlabs
 provider_slug: elevenlabs
 search_terms:
 - isolate audio with streaming
-- isolateaudio
 - isolateaudiostream
+- isolateaudio
 - isolate audio
 - api
 - elevenlabs

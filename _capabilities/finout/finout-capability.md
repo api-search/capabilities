@@ -69,41 +69,41 @@ personas: []
 provider_name: Finout
 provider_slug: finout
 search_terms:
-- finout update a virtual tag
-- querycosts
-- finout get all megabill keys
-- finops
-- finout get a virtual tag by id
-- budgets
+- createendpoint
 - finout get scan recommendations
-- finout get virtual tag metadata
-- finout query costs for a view
-- deletevirtualtag
-- finout delete a virtual tag
-- finout get megabill virtual tags
-- finout get all virtual tags
-- getcostguardscanrecommendations
-- finout get all endpoints
-- getmegabillkeys
-- getvirtualtagbyid
 - updatevirtualtagmetadata
-- getvirtualtagmetadata
-- listcostguardscans
-- getmegabillkeyvalues
-- getmegabillvirtualtags
-- api
-- finout get values for a megabill key
+- finout
+- finout create a virtual tag
 - finout update virtual tag metadata
+- listvirtualtags
+- api
+- finout get all megabill keys
+- getvirtualtagmetadata
+- finout get virtual tag metadata
+- getmegabillkeyvalues
 - createvirtualtag
 - updatevirtualtag
-- finout
-- finout create an endpoint
-- createendpoint
-- finout create a virtual tag
-- costs
-- listvirtualtags
-- finout get all costguard scans
+- finout get values for a megabill key
 - listendpoints
+- getvirtualtagbyid
+- getmegabillkeys
+- getcostguardscanrecommendations
+- finout get all endpoints
+- finout get all costguard scans
+- getmegabillvirtualtags
+- listcostguardscans
+- finout create an endpoint
+- finout get a virtual tag by id
+- finout query costs for a view
+- finout delete a virtual tag
+- querycosts
+- deletevirtualtag
+- budgets
+- finout get all virtual tags
+- finout get megabill virtual tags
+- finout update a virtual tag
+- costs
+- finops
 slug: finout-capability
 source_filename: finout-capability.yaml
 source_heading: Capability Spec

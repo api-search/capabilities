@@ -101,58 +101,58 @@ personas: []
 provider_name: Postmark
 provider_slug: postmark
 search_terms:
-- postmark delete a sender signature
-- postmark get a sender signature
-- requestdkimverificationfordomain
-- createdomain
-- postmark request dns verification for return-path
-- editdomain
-- listdomains
-- pushtemplates
-- getdomain
-- requestnewdkimkeyforsendersignature
-- listsendersignatures
-- postmark update a domain
-- deletedomain
-- postmark request dns verification for dkim
-- postmark rotate dkim key
-- requestspfverificationforsendersignature
-- smtp
-- getserverinformation
-- emails
-- deletesendersignature
-- requestspfverificationfordomain
-- requestreturnpathverificationfordomain
-- postmark create a domain
-- postmark
-- postmark create a sender signature
-- createsendersignature
-- createserver
-- postmark delete a domain
-- editserverinformation
-- messaging
-- postmark push templates from one server to another
-- resendsendersignatureconfirmationemail
-- postmark list sender signatures
-- postmark resend signature confirmation email
-- deliverability
-- api
-- postmark edit a server
-- listservers
-- postmark request dns verification for spf
-- transactional email
-- postmark list domains
-- editsendersignature
 - postmark request a new dkim key
-- postmark get a domain
-- postmark delete a server
-- postmark get a server
-- getsendersignature
+- deletedomain
 - postmark update a sender signature
+- requestdkimverificationfordomain
+- getsendersignature
+- listsendersignatures
+- requestspfverificationforsendersignature
+- api
+- editserverinformation
 - postmark list servers
-- deleteserver
+- listservers
+- postmark get a domain
+- requestnewdkimkeyforsendersignature
+- postmark delete a domain
+- postmark request dns verification for return-path
+- postmark rotate dkim key
+- createsendersignature
+- postmark request dns verification for spf
+- getdomain
 - rotatedkimkeyfordomain
+- deliverability
+- postmark delete a sender signature
+- requestreturnpathverificationfordomain
+- emails
+- requestspfverificationfordomain
+- deleteserver
+- editsendersignature
+- postmark update a domain
+- postmark
+- deletesendersignature
+- editdomain
+- postmark resend signature confirmation email
+- getserverinformation
+- postmark get a sender signature
+- postmark create a domain
 - postmark create a server
+- postmark create a sender signature
+- postmark get a server
+- resendsendersignatureconfirmationemail
+- createserver
+- postmark delete a server
+- postmark request dns verification for dkim
+- postmark push templates from one server to another
+- pushtemplates
+- postmark edit a server
+- listdomains
+- messaging
+- smtp
+- postmark list sender signatures
+- transactional email
+- createdomain
+- postmark list domains
 slug: postmark-capability
 source_filename: postmark-capability.yaml
 source_heading: Capability Spec

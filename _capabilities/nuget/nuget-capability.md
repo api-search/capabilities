@@ -21,20 +21,20 @@ personas: []
 provider_name: NuGet
 provider_slug: nuget
 search_terms:
-- .net
-- nuget
-- getcatalogindex
-- package management
 - get the catalog index
-- packages
-- api
-- get a catalog leaf
-- dependencies
-- software distribution
-- getcatalogpage
 - get a catalog page
-- getcatalogleaf
+- dependencies
 - registry
+- getcatalogpage
+- getcatalogindex
+- software distribution
+- packages
+- nuget
+- getcatalogleaf
+- api
+- package management
+- get a catalog leaf
+- .net
 slug: nuget-capability
 source_filename: nuget-capability.yaml
 source_heading: Capability Spec

@@ -29,20 +29,20 @@ personas: []
 provider_name: Marginalia Search
 provider_slug: marginalia-search
 search_terms:
-- delete a filter
-- execute a web search
-- web search
 - getfilter
-- listfilters
-- create a named filter
-- api
+- execute a web search
+- open source
 - list configured filters
+- delete a filter
 - search
+- web search
 - marginalia
 - retrieve a filter definition
-- createfilter
+- api
 - deletefilter
-- open source
+- listfilters
+- create a named filter
+- createfilter
 slug: marginalia-search-capability
 source_filename: marginalia-search-capability.yaml
 source_heading: Capability Spec

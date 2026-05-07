@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- mcp
-- poll events
-- asyncapi
 - create asyncapi mock
-- api integration
 - governance
-- spec-driven integration
-- ai
+- asyncapi
 - mocking
+- ai
 - capabilities
+- spec-driven integration
+- api integration
+- poll events
+- mcp
+- naftiko
 slug: asyncapi-mocked-event-stream-capability
 source_filename: asyncapi-mocked-event-stream-capability.yaml
 source_heading: Capability Spec

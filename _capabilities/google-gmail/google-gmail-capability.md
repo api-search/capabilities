@@ -125,73 +125,73 @@ personas: []
 provider_name: Google Gmail
 provider_slug: google-gmail
 search_terms:
-- insertmessage
-- google gmail list messages
-- google gmail delete label
-- listthreads
-- gmail
-- getmessage
-- google workspace
-- listlabels
-- google gmail stop watching mailbox
-- google gmail send message
-- deletedraft
-- getuserprofile
-- google gmail get message
-- google gmail modify message
-- trashmessage
-- google gmail update draft
-- google gmail list history
-- google gmail list labels
-- google gmail list drafts
-- google gmail get draft
-- stopmailboxwatch
-- google gmail delete message
-- deletelabel
-- google gmail list filters
-- google gmail delete draft
-- google gmail insert message
-- updatelabel
-- listdrafts
-- getlabel
-- google gmail trash message
-- google gmail get thread
-- google
-- createdraft
-- getautoforwarding
-- getthread
 - google gmail list threads
-- listfilters
-- senddraft
+- watchmailbox
 - deletemessage
-- google gmail watch mailbox
-- google gmail send draft
+- google gmail get draft
+- getmessage
+- google gmail delete draft
+- getautoforwarding
+- deletedraft
+- createdraft
+- google gmail create draft
+- api
+- google gmail list history
+- google gmail stop watching mailbox
+- google gmail insert message
+- google gmail list labels
+- google gmail untrash message
+- listhistory
 - drafts
+- google gmail get user profile
+- google gmail create label
+- google
+- listdrafts
+- google gmail watch mailbox
+- google gmail update label
+- google gmail modify message
+- google gmail get message
+- deletelabel
+- stopmailboxwatch
+- listfilters
+- getlabel
+- createfilter
+- sendmessage
+- email
+- trashmessage
+- google gmail list drafts
+- gmail
+- insertmessage
+- google gmail send message
+- google gmail trash message
+- updatelabel
+- google gmail get label
+- getdraft
+- google gmail get thread
+- senddraft
+- google gmail update draft
+- modifymessage
+- google gmail list filters
+- threads
+- google gmail send draft
+- google gmail delete thread
+- google workspace
+- listthreads
+- untrashmessage
+- getuserprofile
+- google gmail delete message
+- listmessages
+- listlabels
+- createlabel
 - labels
 - messaging
-- google gmail get label
-- google gmail update label
-- google gmail get auto-forwarding settings
-- google gmail create label
-- untrashmessage
-- api
-- threads
-- watchmailbox
 - google gmail create filter
-- createfilter
-- updatedraft
-- createlabel
-- listmessages
 - deletethread
-- email
-- getdraft
-- listhistory
-- sendmessage
-- modifymessage
-- google gmail create draft
-- google gmail delete thread
-- google gmail untrash message
-- google gmail get user profile
+- updatedraft
+- getthread
+- google gmail delete label
+- google gmail list messages
+- google gmail get auto-forwarding settings
 slug: google-gmail-capability
 source_filename: google-gmail-capability.yaml
 source_heading: Capability Spec

@@ -53,63 +53,63 @@ personas: []
 provider_name: Uber
 provider_slug: uber
 search_terms:
-- list uber products
-- driver trip history.
+- get price estimates
 - logistics
-- get rider history
-- create ride request
-- get price estimates for uber rides between two locations.
-- get driver profile
-- get rider profile
-- get ride history
-- get the authenticated driver partner's profile.
-- get ride request
-- get trip history for the driver partner.
-- delivery
-- cancel an active uber ride request.
-- rides
-- get price estimates for available products between two points.
-- list available uber ride products at a specific location.
-- rider trip history.
-- get ride status
+- get arrival time estimates for available products.
 - get real-time status of a ride request.
-- driver payment history.
+- ride-sharing
 - request an uber ride for a user.
-- transportation
-- available uber ride products at a location.
-- get the authenticated uber rider's profile information.
-- cancel ride request
-- get time estimates
-- authenticated driver partner profile.
-- get the trip history for an uber rider.
-- get payment history for an uber driver partner.
-- get trip history for an uber driver partner.
-- ride request creation and management.
-- food delivery
-- drivers
-- uber
-- get the authenticated rider's uber profile.
-- cancel ride
-- get payment history for the driver partner.
-- get the profile for an uber driver partner.
+- list uber products
 - taxis
+- get the authenticated rider's uber profile.
+- get the authenticated driver partner's profile.
+- delivery
+- get rider history
+- get the authenticated uber rider's profile information.
 - list products
+- individual ride request status and cancellation.
+- get ride request
+- drivers
+- rides
+- get the real-time status of an active ride request.
+- food delivery
+- get driver payments
+- get the profile for an uber driver partner.
+- cancel ride
+- list available uber ride products at a specific location.
+- get trip history for an uber driver partner.
+- get trip history for the driver partner.
+- transportation
+- driver payment history.
+- riders
+- cancel an active uber ride request.
+- rider trip history.
+- get driver profile
+- get payment history for an uber driver partner.
+- ride request creation and management.
+- get price estimates for uber rides between two locations.
+- get price estimates for available products between two points.
+- cancel ride request
+- get the rider's trip history.
+- get ride status
+- authenticated driver partner profile.
+- driver trip history.
 - authenticated rider profile.
 - price estimates for rides between two locations.
-- riders
-- get driver trips
-- get arrival time estimates for available products.
+- get time estimates
+- get the trip history for an uber rider.
+- get ride history
+- get payment history for the driver partner.
+- create ride request
 - eta estimates for ride products at a pickup location.
-- list uber products available at a given location.
 - request a ride for an authenticated uber user.
+- available uber ride products at a location.
+- list uber products available at a given location.
 - cancel an active ride request.
-- get the real-time status of an active ride request.
-- individual ride request status and cancellation.
-- get the rider's trip history.
+- uber
+- get rider profile
 - get estimated arrival times for uber products at a pickup location.
-- get price estimates
-- get driver payments
-- ride-sharing
+- get driver trips
 slug: ride-management
 source_filename: ride-management.yaml
 source_heading: Capability Spec

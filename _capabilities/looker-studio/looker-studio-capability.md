@@ -29,25 +29,25 @@ personas: []
 provider_name: Looker Studio
 provider_slug: looker-studio
 search_terms:
-- looker
 - analytics
+- revokeallassetpermissions
+- looker studio add members to asset permissions
+- api
 - updateassetpermissions
 - looker studio update asset permissions
-- looker studio revoke all permissions for members
-- studio
-- dashboards
-- google
-- reports
-- addassetmembers
-- data visualization
-- api
-- search looker studio assets
-- revokeallassetpermissions
 - looker studio get asset permissions
 - searchassets
+- google
 - business intelligence
+- looker
+- search looker studio assets
+- reports
+- dashboards
+- studio
+- looker studio revoke all permissions for members
+- addassetmembers
 - getassetpermissions
-- looker studio add members to asset permissions
+- data visualization
 slug: looker-studio-capability
 source_filename: looker-studio-capability.yaml
 source_heading: Capability Spec

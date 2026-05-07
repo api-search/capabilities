@@ -17,17 +17,17 @@ personas: []
 provider_name: Mailtrap
 provider_slug: mailtrap
 search_terms:
-- mailtrap
+- sendbatchemails
 - email
+- mailtrap
+- email delivery
+- email sandbox
+- email testing
 - send a transactional email
 - api
-- email sandbox
-- sendbatchemails
-- email testing
 - transactional email
-- email delivery
-- sendemail
 - send batch emails
+- sendemail
 slug: mailtrap-capability
 source_filename: mailtrap-capability.yaml
 source_heading: Capability Spec

@@ -49,33 +49,33 @@ personas: []
 provider_name: NATS
 provider_slug: nats
 search_terms:
-- nats
 - connection information
-- gateway information
-- pub sub
 - leaf node information
-- subscription information
-- iot
-- getleafz
-- route information
-- getsubsz
-- message broker
-- cloud native
-- jetstream information
-- ip queue sizes
-- getaccountz
 - api
-- getipqueuesz
-- getconnz
-- getroutez
-- general server information
-- getvarz
-- health check
-- account information
+- nats
 - getgatewayz
-- microservices
+- pub sub
+- cloud native
 - getjsz
+- health check
+- jetstream information
+- getipqueuesz
+- ip queue sizes
+- general server information
+- message broker
+- getaccountz
+- iot
+- subscription information
+- gateway information
+- getsubsz
+- route information
+- account information
+- getconnz
+- microservices
+- getleafz
 - gethealthz
+- getvarz
+- getroutez
 slug: nats-capability
 source_filename: nats-capability.yaml
 source_heading: Capability Spec

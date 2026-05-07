@@ -9,18 +9,18 @@ personas: []
 provider_name: Apache RocketMQ
 provider_slug: apache-rocketmq
 search_terms:
-- high-throughput event streaming for real-time processing
-- messaging
 - developer building messaging applications with rocketmq
-- streaming
-- end-to-end workflow for producing and consuming rocketmq messages
-- engineer managing rocketmq clusters and topics
 - reliable message delivery between producers and consumers
+- cloud native
+- streaming
+- open source
+- pub-sub
 - apache
 - message queue
-- cloud native
-- pub-sub
-- open source
+- high-throughput event streaming for real-time processing
+- messaging
+- end-to-end workflow for producing and consuming rocketmq messages
+- engineer managing rocketmq clusters and topics
 slug: rocketmq-workflow
 source_filename: rocketmq-workflow.yaml
 source_heading: Capability Spec

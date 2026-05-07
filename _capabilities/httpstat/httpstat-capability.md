@@ -17,16 +17,16 @@ personas: []
 provider_name: Httpstat.us
 provider_slug: httpstat
 search_terms:
-- http
-- status codes
+- generate a specific http status code
+- utilities
 - testing
 - generate a random http status code
-- utilities
+- get random range
+- http
 - api
 - get statuscode
 - httpstat
-- get random range
-- generate a specific http status code
+- status codes
 slug: httpstat-capability
 source_filename: httpstat-capability.yaml
 source_heading: Capability Spec

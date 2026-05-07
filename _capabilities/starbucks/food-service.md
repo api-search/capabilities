@@ -46,54 +46,54 @@ provider_name: Starbucks
 provider_slug: starbucks
 search_terms:
 - search for starbucks stores near a location
-- find starbucks store locations
-- coffee
-- starbucks
-- manage starbucks rewards account
-- loyalty
-- mobile ordering
-- get loyalty account
-- place order
-- get full menu item details including nutrition and customization
-- track an order
-- get order
-- list loyalty transactions
-- place a new starbucks mobile order
-- store locator
-- mobile order management
-- find starbucks locations near specified coordinates or address, with filtering by radius
-- track order
-- retail
-- get store
-- get loyalty account star balance and tier
-- list stores
-- get loyalty balance
-- list all available starbucks menu categories
-- get all items in a starbucks menu category with descriptions, pricing, and sizes
-- list star earning and redemption transactions
-- view history of starbucks star earnings and redemptions for a rewards account
-- browse all starbucks menu categories including hot coffees, cold coffees, teas, refreshers, food, and merchandise
-- get detailed menu item information
-- check the current status and estimated pickup time for a starbucks mobile order
-- get starbucks store details including hours and amenities
-- list menu items in a category with pricing and options
-- search stores
-- list menu items
-- ordering
-- list reward transactions
-- create order
-- food service
 - view loyalty transaction history
-- get starbucks store hours, amenities, drive-thru availability, and mobile ordering status
-- browse starbucks menu categories
-- check starbucks rewards star balance, membership tier (welcome/green/gold), and account status
-- get order status and estimated ready time
-- get complete details for a starbucks menu item including nutrition facts, allergens, and customization options
-- browse items within a menu category
+- create order
+- list loyalty transactions
+- get detailed menu item information
 - get store details
-- get menu item
-- list menu categories
+- loyalty
+- get starbucks store details including hours and amenities
 - submit a starbucks mobile order with customized items at a specified store, optionally applying loyalty rewards
+- retail
+- manage starbucks rewards account
+- ordering
+- get store
+- view history of starbucks star earnings and redemptions for a rewards account
+- get loyalty account star balance and tier
+- mobile order management
+- store locator
+- place a new starbucks mobile order
+- food service
+- list star earning and redemption transactions
+- get order status and estimated ready time
+- find starbucks locations near specified coordinates or address, with filtering by radius
+- list menu items in a category with pricing and options
+- find starbucks store locations
+- check the current status and estimated pickup time for a starbucks mobile order
+- get full menu item details including nutrition and customization
+- starbucks
+- list stores
+- list menu items
+- browse all starbucks menu categories including hot coffees, cold coffees, teas, refreshers, food, and merchandise
+- get all items in a starbucks menu category with descriptions, pricing, and sizes
+- get complete details for a starbucks menu item including nutrition facts, allergens, and customization options
+- track order
+- list reward transactions
+- mobile ordering
+- get menu item
+- check starbucks rewards star balance, membership tier (welcome/green/gold), and account status
+- place order
+- browse starbucks menu categories
+- list menu categories
+- browse items within a menu category
+- get loyalty account
+- track an order
+- list all available starbucks menu categories
+- search stores
+- coffee
+- get starbucks store hours, amenities, drive-thru availability, and mobile ordering status
+- get loyalty balance
+- get order
 slug: food-service
 source_filename: food-service.yaml
 source_heading: Capability Spec

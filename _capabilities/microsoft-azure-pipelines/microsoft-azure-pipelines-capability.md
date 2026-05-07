@@ -53,37 +53,37 @@ personas: []
 provider_name: Azure Pipelines
 provider_slug: microsoft-azure-pipelines
 search_terms:
-- deletebuildtag
-- azure pipelines remove a tag from a build
-- azure pipelines list build tags
-- azure pipelines list build artifacts
-- devops
-- getbuild
-- azure
-- pipelines
-- azure pipelines get a build definition
-- deletebuild
-- deployment
-- listbuildartifacts
-- azure pipelines get a specific build artifact
-- build
-- azure pipelines update a build
 - azure pipelines list build definitions
-- azure pipelines list builds
-- ci/cd
-- listbuildtags
-- api
-- updatebuild
-- addbuildtag
-- listbuilddefinitions
-- getbuilddefinition
-- azure pipelines get a build
-- getbuildartifact
-- listbuilds
-- azure pipelines delete a build
-- azure pipelines add a tag to a build
-- microsoft
+- devops
 - automation
+- azure pipelines list build tags
+- azure pipelines delete a build
+- listbuilds
+- pipelines
+- ci/cd
+- api
+- addbuildtag
+- azure pipelines add a tag to a build
+- azure pipelines list builds
+- azure pipelines list build artifacts
+- azure pipelines get a build
+- deployment
+- microsoft
+- build
+- azure pipelines get a specific build artifact
+- getbuildartifact
+- deletebuild
+- azure pipelines update a build
+- listbuildartifacts
+- azure pipelines get a build definition
+- listbuildtags
+- listbuilddefinitions
+- deletebuildtag
+- azure
+- azure pipelines remove a tag from a build
+- getbuild
+- getbuilddefinition
+- updatebuild
 slug: microsoft-azure-pipelines-capability
 source_filename: microsoft-azure-pipelines-capability.yaml
 source_heading: Capability Spec

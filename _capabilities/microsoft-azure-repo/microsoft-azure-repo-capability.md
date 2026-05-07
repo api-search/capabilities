@@ -105,64 +105,64 @@ personas: []
 provider_name: Azure Repos
 provider_slug: microsoft-azure-repo
 search_terms:
-- repositories update
-- pullrequestcommits list
-- azure repos get a push
-- pullrequests update
-- azure repos get a repository
-- azure repos list pull request threads
-- pullrequestreviewers list
-- repositories delete
-- azure repos list refs (branches and tags)
-- azure repos list repositories
 - devops
-- azure repos create a comment thread
-- pushes list
-- pushes create
-- azure
-- azure repos delete a repository
-- azure repos create a push
-- azure repos list pull requests
-- refs update
-- azure repos list branch statistics
-- commits list
-- azure repos remove a reviewer
-- azure repos list pull request reviewers
-- azure repos get a pull request
-- source control
-- azure repos create a pull request
-- pullrequests list
-- pullrequests create
-- pullrequestreviewers createorupdate
-- azure repos get a commit
-- pullrequestreviewers delete
-- pushes get
-- api
-- azure repos list pull request commits
-- commits get
-- azure repos list items (files and folders)
-- azure repos list commits
-- tfvc
-- items list
-- version control
-- pullrequestthreads list
-- pullrequestthreads create
-- azure repos create a repository
 - azure repos update a repository
-- refs list
-- azure repos list pushes
+- git
+- pullrequests list
+- refs update
+- azure repos create a push
+- api
+- repositories delete
+- pushes list
+- azure repos list pull request threads
+- azure repos delete a repository
+- azure repos list pull requests
+- pushes create
+- azure repos create a pull request
+- pullrequestreviewers delete
+- pullrequestcommits list
+- repositories create
+- pullrequests create
+- microsoft
 - repositories get
-- pullrequests get
+- pullrequestthreads create
+- azure repos add or update a reviewer
+- azure repos get a push
 - azure repos create, update, or delete refs
 - stats list
-- git
-- repositories
-- repositories list
-- azure repos add or update a reviewer
-- microsoft
-- azure repos update a pull request
-- repositories create
+- azure repos list items (files and folders)
+- azure repos list pushes
+- azure repos list branch statistics
+- tfvc
 - repo
+- azure repos get a repository
+- pullrequests update
+- azure repos list pull request reviewers
+- azure repos remove a reviewer
+- source control
+- azure repos list repositories
+- pullrequests get
+- pullrequestreviewers createorupdate
+- azure repos get a pull request
+- azure repos create a comment thread
+- pullrequestreviewers list
+- azure repos list refs (branches and tags)
+- repositories update
+- azure repos update a pull request
+- commits get
+- repositories
+- version control
+- azure
+- pullrequestthreads list
+- commits list
+- azure repos list pull request commits
+- items list
+- repositories list
+- pushes get
+- azure repos get a commit
+- azure repos list commits
+- refs list
+- azure repos create a repository
 slug: microsoft-azure-repo-capability
 source_filename: microsoft-azure-repo-capability.yaml
 source_heading: Capability Spec

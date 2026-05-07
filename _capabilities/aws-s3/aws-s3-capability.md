@@ -249,132 +249,132 @@ personas: []
 provider_name: Amazon S3 API
 provider_slug: aws-s3
 search_terms:
-- deletebucketcors
-- deletebucketownershipcontrols
-- amazon s3 - getobjecttagging
-- getpublicaccessblock
-- amazon s3 - getbucketanalyticsconfiguration
-- amazon s3 - putbucketaccelerateconfiguration
-- amazon s3 - putbucketacl
-- deletebucketinventoryconfiguration
-- deletebuckettagging
-- amazon s3 - getbucketownershipcontrols
-- amazon s3 - getpublicaccessblock
-- amazon s3 - deletebucketownershipcontrols
-- copyobject
-- amazon s3 - deleteobject
-- amazon s3 - deletebuckettagging
-- getbucketmetricsconfiguration
-- getbucketwebsite
-- amazon s3 - deletebucketreplication
-- amazon s3 - putbucketintelligenttieringconfiguration
-- amazon s3 - deletebucketintelligenttieringconfiguration
-- amazon s3 - deletebucketwebsite
-- api
-- deletebucketwebsite
-- getbucketownershipcontrols
-- getobject
-- getbucketanalyticsconfiguration
-- putbucketacl
-- amazon s3 - abortmultipartupload
-- s3
-- putbucketcors
-- getbucketlifecycle
-- getbucketcors
-- getbucketreplication
-- amazon s3 - listparts
-- getbucketintelligenttieringconfiguration
-- amazon s3 - putbucketmetricsconfiguration
-- amazon s3 - getbucketwebsite
-- putobjecttagging
-- storage
-- object storage
-- putobject
-- amazon s3 - getbucketintelligenttieringconfiguration
-- amazon s3 - putbucketownershipcontrols
-- amazon s3 - putbuckettagging
+- putbucketmetricsconfiguration
 - amazon s3 - putbucketlifecycle
-- amazon s3 - deletebucketlifecycle
-- amazon s3 - putobject
-- putbucketencryption
+- amazon s3 - putbucketcors
+- listobjects
 - putbucketinventoryconfiguration
-- getbuckettagging
-- amazon s3 - getbucketinventoryconfiguration
-- deletebucketintelligenttieringconfiguration
-- deletebucketencryption
-- deleteobjecttagging
-- amazon s3 - listobjects
+- api
+- putbucketcors
+- putbucketreplication
+- amazon s3 - getpublicaccessblock
+- amazon s3 - deletebucketcors
+- getbucketinventoryconfiguration
 - listparts
-- amazon s3 - createmultipartupload
-- deletebucketreplication
+- amazon s3 - deletebucketmetricsconfiguration
+- amazon s3 - deleteobject
+- amazon s3 - putbucketreplication
+- deletebucketencryption
+- amazon s3 - putbucketacl
+- deletebucketlifecycle
 - amazon s3 - deletebucketanalyticsconfiguration
-- putbucketintelligenttieringconfiguration
-- amazon s3 - getbucketreplication
-- amazon s3 - deletebucketencryption
-- amazon s3 - deletebucket
-- amazon s3 - getbuckettagging
-- amazon s3 - getbucketacl
-- aws
-- amazon s3 - putbucketinventoryconfiguration
-- putbucketpolicy
+- putbucketownershipcontrols
+- createbucket
+- getbucketpolicy
+- amazon s3 - putbucketmetricsconfiguration
+- getpublicaccessblock
+- putbucketaccelerateconfiguration
+- amazon s3 - getbucketpolicy
 - amazon s3 - completemultipartupload
+- putbucketencryption
+- getbucketcors
+- deletebucket
+- amazon s3 - putbuckettagging
+- createmultipartupload
+- amazon s3 - getbucketencryption
+- getobject
 - deletebucketanalyticsconfiguration
+- amazon s3 - putbucketownershipcontrols
+- amazon s3 - abortmultipartupload
+- getobjecttagging
+- getbucketaccelerateconfiguration
+- deleteobjecttagging
+- putobjecttagging
+- amazon s3 - getbucketintelligenttieringconfiguration
+- getbucketlifecycleconfiguration
+- amazon s3 - putbucketpolicy
+- getbucketreplication
+- amazon s3 - getobject
+- cloud storage
+- putobject
+- deletebucketmetricsconfiguration
+- getbucketlifecycle
+- getbucketintelligenttieringconfiguration
+- amazon s3 - putbucketaccelerateconfiguration
+- putbuckettagging
+- putbucketlifecycleconfiguration
+- amazon s3 - deletebucket
+- deletebucketcors
+- getbucketencryption
+- amazon s3 - deletebucketinventoryconfiguration
+- object storage
+- deletebucketinventoryconfiguration
+- amazon s3 - getbucketownershipcontrols
+- completemultipartupload
+- amazon s3 - getbucketmetricsconfiguration
 - amazon s3 - createbucket
+- amazon s3 - getobjecttagging
+- getbuckettagging
+- storage
+- deletebucketreplication
+- amazon s3 - getbucketlifecycle
+- amazon s3 - getbucketcors
+- deletebuckettagging
+- amazon s3 - getbucketanalyticsconfiguration
+- getbucketownershipcontrols
+- amazon s3 - getbucketaccelerateconfiguration
+- putbucketintelligenttieringconfiguration
+- putbucketwebsite
+- amazon s3 - deleteobjects
+- amazon s3 - deletepublicaccessblock
+- copyobject
+- amazon s3 - putpublicaccessblock
+- amazon s3 - putbucketinventoryconfiguration
+- amazon s3 - deletebucketintelligenttieringconfiguration
+- amazon s3 - putbucketwebsite
+- putpublicaccessblock
+- amazon s3 - getbucketinventoryconfiguration
+- getbucketmetricsconfiguration
+- deletepublicaccessblock
+- amazon s3 - deletebucketreplication
+- amazon s3 - deleteobjecttagging
+- amazon s3 - deletebucketlifecycle
+- deleteobject
+- deletebucketpolicy
+- amazon s3 - putbucketanalyticsconfiguration
+- amazon s3 - putobjecttagging
+- putbucketlifecycle
+- putbucketacl
+- aws
+- amazon s3 - getbucketreplication
+- amazon s3 - getbucketacl
 - amazon s3 - deletebucketpolicy
 - amazon s3 - putbucketlifecycleconfiguration
-- getbucketlifecycleconfiguration
-- putbucketlifecycleconfiguration
-- completemultipartupload
-- putbucketaccelerateconfiguration
-- amazon s3 - putpublicaccessblock
-- amazon s3 - deletebucketcors
-- deletepublicaccessblock
-- amazon s3 - getbucketmetricsconfiguration
-- putbucketownershipcontrols
-- amazon s3 - putbucketpolicy
-- createmultipartupload
-- amazon s3 - getobject
-- putbucketmetricsconfiguration
-- putbucketwebsite
-- amazon s3 - putbucketreplication
-- deletebucketmetricsconfiguration
+- s3
+- deletebucketwebsite
+- amazon s3 - putobject
+- amazon s3 - deletebucketencryption
+- putbucketpolicy
+- amazon s3 - getbuckettagging
+- deletebucketownershipcontrols
 - getbucketacl
-- createbucket
-- putbucketreplication
-- amazon s3 - getbucketaccelerateconfiguration
-- putbucketanalyticsconfiguration
-- amazon s3 - getbucketpolicy
-- amazon s3 - putbucketcors
-- deletebucketpolicy
-- deletebucketlifecycle
-- getbucketpolicy
-- abortmultipartupload
-- amazon s3 - getbucketcors
-- putbuckettagging
-- amazon s3 - deleteobjecttagging
-- getbucketaccelerateconfiguration
-- amazon s3 - copyobject
-- amazon s3 - putbucketanalyticsconfiguration
-- listobjects
-- amazon s3 - getbucketlifecycle
-- getobjecttagging
-- deletebucket
-- getbucketinventoryconfiguration
-- amazon s3 - putbucketwebsite
-- amazon s3 - getbucketencryption
+- amazon s3 - deletebucketwebsite
 - amazon s3 - getbucketlifecycleconfiguration
-- deleteobjects
-- amazon s3 - deletebucketmetricsconfiguration
-- cloud storage
-- amazon s3 - deleteobjects
+- amazon s3 - getbucketwebsite
+- amazon s3 - deletebucketownershipcontrols
 - amazon s3 - putbucketencryption
-- getbucketencryption
-- amazon s3 - deletepublicaccessblock
-- putpublicaccessblock
-- amazon s3 - deletebucketinventoryconfiguration
-- putbucketlifecycle
-- deleteobject
-- amazon s3 - putobjecttagging
+- getbucketanalyticsconfiguration
+- putbucketanalyticsconfiguration
+- amazon s3 - deletebuckettagging
+- amazon s3 - listparts
+- deletebucketintelligenttieringconfiguration
+- abortmultipartupload
+- deleteobjects
+- amazon s3 - listobjects
+- amazon s3 - createmultipartupload
+- amazon s3 - putbucketintelligenttieringconfiguration
+- getbucketwebsite
+- amazon s3 - copyobject
 slug: aws-s3-capability
 source_filename: aws-s3-capability.yaml
 source_heading: Capability Spec

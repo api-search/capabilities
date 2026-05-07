@@ -53,36 +53,36 @@ personas: []
 provider_name: Google Meet
 provider_slug: google-meet
 search_terms:
-- meetings
-- meet
-- google meet list recordings
-- google workspace
 - getparticipant
-- listtranscriptentries
+- google meet list transcripts
 - listconferencerecords
-- google
-- google meet list conference records
+- google meet get meeting space
 - listparticipants
-- updatespace
-- google meet list transcript entries
-- getconferencerecord
-- recordings
-- google meet get participant
-- endactiveconference
 - api
+- google meet get participant
+- meetings
+- google meet list conference records
+- endactiveconference
+- google meet create meeting space
+- google
+- listrecordings
+- google meet get conference record
 - google meet end active conference
 - getspace
 - transcripts
-- video conferencing
-- google meet get conference record
-- google meet create meeting space
-- listrecordings
+- meet
+- getconferencerecord
 - google meet update meeting space
-- listtranscripts
-- google meet list participants
-- google meet list transcripts
-- google meet get meeting space
+- listtranscriptentries
 - createspace
+- video conferencing
+- updatespace
+- google workspace
+- recordings
+- google meet list participants
+- listtranscripts
+- google meet list recordings
+- google meet list transcript entries
 slug: google-meet-capability
 source_filename: google-meet-capability.yaml
 source_heading: Capability Spec

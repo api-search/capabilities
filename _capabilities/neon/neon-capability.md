@@ -193,106 +193,106 @@ personas: []
 provider_name: Neon
 provider_slug: neon
 search_terms:
-- update a branch
-- updateneonauthoauthprovider
 - updateprojectbranchauth
-- deleteprojectbranch
-- list compute endpoints
-- neon
-- createprojectbranchrole
-- deleteproject
-- retrieve role details
-- retrieve branch details
-- getprojectbranchdataapi
-- create a compute endpoint
-- delete a branch
-- getproject
-- restartprojectendpoint
-- restore a branch
-- list api keys
-- update a compute endpoint
-- deleteprojectendpoint
 - api
-- delete a compute endpoint
+- listprojectendpoints
+- list databases
+- getconnectionuri
+- list project operations
+- list compute endpoints
+- deleteproject
+- create a branch
+- get auth configuration
+- getprojectbranch
+- suspendprojectendpoint
+- listprojectoperations
+- getprojectbranchauth
+- delete a branch
+- databases
+- update a branch
+- updateprojectbranchdataapi
+- createprojectendpoint
+- deleteprojectbranchdatabase
+- create a role
+- authentication
+- create a project
+- update an oauth provider
+- getprojectendpoint
+- updateprojectendpoint
+- updateprojectbranchdatabase
+- updateproject
+- serverless
+- listapikeys
 - list projects
+- startprojectendpoint
+- deleteprojectbranchrole
+- retrieve role details
+- update a project
+- retrieve project details
+- updateprojectbranch
+- retrieve database details
+- list roles
+- listneonauthoauthproviders
+- createprojectbranchdatabase
+- delete an oauth provider
+- retrieve operation details
+- getproject
+- retrieve compute endpoint details
+- getprojectbranchdataapi
+- getprojectbranchrole
 - get project consumption metrics
 - retrieve connection uri
-- listprojectbranchroles
-- get account consumption metrics
-- createproject
-- createprojectbranchdatabase
-- postgres
-- listprojectendpoints
-- start a compute endpoint
-- update a database
-- deleteneonauthoauthprovider
 - infrastructure
-- update an oauth provider
-- serverless
-- createprojectendpoint
-- getprojectbranchauth
-- updateproject
-- list branch endpoints
-- deleteprojectbranchrole
-- create an oauth provider
-- authentication
-- listprojects
-- list databases
-- retrieve compute endpoint details
-- listapikeys
-- edge
-- delete a database
-- updateprojectbranchdataapi
-- listprojectbranchendpoints
-- deleteprojectbranchdatabase
-- restart a compute endpoint
-- listneonauthoauthproviders
-- getprojectoperation
 - listprojectbranchdatabases
-- retrieve database details
-- getprojectendpoint
-- listprojectoperations
-- getprojectbranchrole
-- startprojectendpoint
-- updateprojectendpoint
-- retrieve project details
-- create an api key
-- getconsumptionhistoryperaccount
-- delete a project
-- create a database
-- updateprojectbranchdatabase
-- getconsumptionhistoryperproject
-- list branches
-- create a branch
-- list roles
-- delete an oauth provider
 - restoreprojectbranch
-- databases
-- suspendprojectendpoint
-- get data api configuration
-- revokeapikey
-- revoke an api key
-- update data api configuration
-- createneonauthoauthprovider
-- create a project
-- updateprojectbranch
-- getprojectbranchdatabase
-- list project operations
-- resetprojectbranchrolepassword
+- listprojectbranchroles
 - update auth configuration
-- getprojectbranch
+- getprojectbranchdatabase
 - suspend a compute endpoint
-- list oauth providers
-- update a project
-- create a role
-- get auth configuration
-- getconnectionuri
-- reset role password
-- delete a role
-- createprojectbranch
-- retrieve operation details
+- listprojectbranchendpoints
+- getconsumptionhistoryperaccount
+- deleteprojectbranch
+- revoke an api key
+- get account consumption metrics
+- get data api configuration
+- list branch endpoints
+- deleteneonauthoauthprovider
+- start a compute endpoint
 - createapikey
+- delete a role
+- update a compute endpoint
+- delete a project
 - listprojectbranches
+- createproject
+- delete a database
+- revokeapikey
+- list oauth providers
+- neon
+- create a database
+- updateneonauthoauthprovider
+- createneonauthoauthprovider
+- create a compute endpoint
+- createprojectbranch
+- restart a compute endpoint
+- getconsumptionhistoryperproject
+- edge
+- delete a compute endpoint
+- update data api configuration
+- createprojectbranchrole
+- getprojectoperation
+- create an oauth provider
+- create an api key
+- list branches
+- retrieve branch details
+- list api keys
+- postgres
+- restore a branch
+- reset role password
+- listprojects
+- deleteprojectendpoint
+- update a database
+- restartprojectendpoint
+- resetprojectbranchrolepassword
 slug: neon-capability
 source_filename: neon-capability.yaml
 source_heading: Capability Spec

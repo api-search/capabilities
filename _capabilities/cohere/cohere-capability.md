@@ -18,11 +18,11 @@ provider_name: cohere
 provider_slug: cohere
 search_terms:
 - chat with a cohere model
-- chat with streaming response
 - cohere
-- api
-- chatstream
 - chat
+- api
+- chat with streaming response
+- chatstream
 slug: cohere-capability
 source_filename: cohere-capability.yaml
 source_heading: Capability Spec

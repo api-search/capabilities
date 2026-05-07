@@ -13,14 +13,14 @@ personas: []
 provider_name: KEDA
 provider_slug: keda
 search_terms:
-- keda
-- event-driven
 - api
+- event-driven
 - keda get metric value
-- getmetricvalue
+- keda
 - graduated
 - cncf
 - autoscaling
+- getmetricvalue
 - kubernetes
 slug: keda-capability
 source_filename: keda-capability.yaml

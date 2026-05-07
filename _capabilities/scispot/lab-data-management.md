@@ -77,74 +77,74 @@ personas: []
 provider_name: Scispot
 provider_slug: scispot
 search_terms:
+- individual manifest operations
 - add a new data row to a scispot labsheet. supports barcode assignment and custom column values. use for sample registration, assay result entry, and inventory updates.
-- get manifest
-- list all lims labsheets in the workspace
-- api first
-- create a new notebook entry
-- biotech
+- search all scispot data by sample barcode. returns all records across labsheets and experiments associated with the specified barcode.
+- search by barcode
 - list all electronic lab notebook (eln) notebooks in the scispot workspace. notebooks contain experimental protocols, observations, and research notes.
-- list all physical container manifests (plates, boxes, racks) in the scispot workspace. manifests track sample storage organization.
-- list all biological sequences
-- list all lims labsheets (data tables) in the scispot workspace. labsheets are used for sample registries, assay results, inventory tracking, and any structured lab data.
+- laboratory
+- add a new biological sequence to the scispot database. supports dna, rna, protein, and chemical structure sequences with full annotation support.
+- add labsheet row
+- automation
+- eln notebook management
+- get a specific sequence with annotations
+- update a biological sequence
+- lims
+- list all biological sequences (dna, rna, protein, chemical) stored in the scispot workspace with their metadata and annotations.
+- create a new physical container manifest
+- individual sequence operations
+- container manifest management (plates, boxes, racks)
+- biotech
+- list sequences
+- scientific data
+- sequences
+- retrieve all data rows from a labsheet
+- create manifest
+- list labsheets
+- biological sequence management
+- update labsheet row
+- update sequence
+- get sequence
+- delete a row from a scispot labsheet. use with caution as this permanently removes the record from the lims.
+- sample lookup by barcode
+- create notebook entry
+- create a new entry in a scispot eln notebook. entries can be experiments, protocol executions, observations, or research notes.
+- list entries in a notebook
+- update an existing labsheet row
+- life science
 - list notebooks
 - update an existing row in a scispot labsheet with new column values. used for updating sample status, adding results, or correcting data.
-- individual sequence operations
-- update sequence
-- labsheet row data management
-- individual labsheet row operations
-- list sequences
-- update a biological sequence
 - healthcare
-- list all electronic lab notebooks
-- get labsheet row
-- create a new physical container manifest
-- add labsheet row
-- life science
-- list all biological sequences (dna, rna, protein, chemical) stored in the scispot workspace with their metadata and annotations.
-- list all physical container manifests
-- create notebook entry
-- create manifest
+- retrieve a specific biological sequence by id including its full sequence string, annotations, features, and associated metadata.
+- list all lims labsheets (data tables) in the scispot workspace. labsheets are used for sample registries, assay results, inventory tracking, and any structured lab data.
 - list notebook entries
-- container manifest management (plates, boxes, racks)
-- get sequence
-- get a specific manifest with its contents
-- lims
-- delete a labsheet row
-- laboratory
-- update an existing labsheet row
-- sample lookup by barcode
-- find all records associated with a sample barcode
-- delete a row from a scispot labsheet. use with caution as this permanently removes the record from the lims.
-- sequences
-- get labsheet rows
-- retrieve all data rows from a labsheet
 - lims labsheet management
-- search by barcode
+- labsheet row data management
+- add a new row to a labsheet
+- list all lims labsheets in the workspace
+- list all physical container manifests (plates, boxes, racks) in the scispot workspace. manifests track sample storage organization.
+- list all biological sequences
 - add a new biological sequence
 - eln notebook entry management
+- delete a labsheet row
+- get manifest
+- create a new notebook entry
 - samples
-- retrieve a specific biological sequence by id including its full sequence string, annotations, features, and associated metadata.
-- list labsheets
-- retrieve all data rows from a specific scispot labsheet. returns the full dataset with all column values for each row in the specified lims table.
-- eln notebook management
-- list entries in a notebook
-- individual manifest operations
-- add a new row to a labsheet
-- biological sequence management
-- create sequence
-- list manifests
-- create a new physical container manifest (plate, box, or rack) in scispot for organizing and tracking sample storage.
-- create a new entry in a scispot eln notebook. entries can be experiments, protocol executions, observations, or research notes.
-- update labsheet row
-- add a new biological sequence to the scispot database. supports dna, rna, protein, and chemical structure sequences with full annotation support.
-- scientific data
+- list all electronic lab notebooks
+- get labsheet row
 - delete labsheet row
-- search all scispot data by sample barcode. returns all records across labsheets and experiments associated with the specified barcode.
-- get a specific row by id
-- get a specific sequence with annotations
 - eln
-- automation
+- get labsheet rows
+- get a specific manifest with its contents
+- list all physical container manifests
+- api first
+- list manifests
+- create sequence
+- create a new physical container manifest (plate, box, or rack) in scispot for organizing and tracking sample storage.
+- individual labsheet row operations
+- find all records associated with a sample barcode
+- retrieve all data rows from a specific scispot labsheet. returns the full dataset with all column values for each row in the specified lims table.
+- get a specific row by id
 slug: lab-data-management
 source_filename: lab-data-management.yaml
 source_heading: Capability Spec

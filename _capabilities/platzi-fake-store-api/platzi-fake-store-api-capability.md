@@ -109,67 +109,67 @@ personas: []
 provider_name: Platzi Fake Store API
 provider_slug: platzi-fake-store-api
 search_terms:
-- createuser
-- create category
-- update category
-- createcategory
-- check email availability
-- sample data
-- get user
-- store
-- getfile
-- getcategorybyslug
-- get product by id
-- updatecategory
-- deleteproduct
-- delete product
-- create user
-- createproduct
-- login and obtain jwt tokens
-- get authenticated user profile
-- get related products by slug
-- listcategories
-- sandbox
-- getcategory
-- deletecategory
-- listproducts
-- delete category
-- listcategoryproducts
-- uploadfile
-- login
-- ecommerce
-- fake api
-- api
-- refreshtoken
-- list categories
-- refresh access token
-- update user
-- get related products by id
-- platzi
-- fake
 - updateproduct
-- list products in a category
-- getuser
-- get category
-- list products
-- list users
-- getrelatedproductsbyslug
-- getrelatedproducts
-- create product
-- retrieve uploaded file
-- jwt
-- getproduct
-- getproductbyslug
-- get product by slug
-- listusers
-- upload a file
-- checkemailavailability
-- updateuser
-- prototyping
-- getprofile
-- get category by slug
+- create category
+- sample data
 - testing
+- get authenticated user profile
+- listcategories
+- create product
+- createproduct
+- list products
+- api
+- getproductbyslug
+- update user
+- getcategory
+- sandbox
+- getfile
+- updatecategory
+- delete product
+- get product by slug
+- upload a file
+- ecommerce
+- get product by id
+- refresh access token
+- getrelatedproducts
 - update product
+- platzi
+- uploadfile
+- list categories
+- getuser
+- login and obtain jwt tokens
+- retrieve uploaded file
+- login
+- fake api
+- store
+- getproduct
+- deleteproduct
+- get related products by slug
+- createcategory
+- list users
+- update category
+- refreshtoken
+- getprofile
+- get category
+- get category by slug
+- get related products by id
+- listproducts
+- updateuser
+- get user
+- listcategoryproducts
+- list products in a category
+- createuser
+- delete category
+- getcategorybyslug
+- listusers
+- create user
+- checkemailavailability
+- jwt
+- prototyping
+- deletecategory
+- getrelatedproductsbyslug
+- fake
+- check email availability
 slug: platzi-fake-store-api-capability
 source_filename: platzi-fake-store-api-capability.yaml
 source_heading: Capability Spec

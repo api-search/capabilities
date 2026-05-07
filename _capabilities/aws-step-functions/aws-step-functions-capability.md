@@ -113,65 +113,65 @@ personas: []
 provider_name: AWS Step Functions
 provider_slug: aws-step-functions
 search_terms:
-- aws step functions - list activities
+- listtagsforresource
+- startexecution
+- aws step functions - describe state machine
+- getactivitytask
+- updatestatemachine
+- api
+- aws step functions - start sync execution
+- aws step functions - list state machines
+- aws step functions - create state machine
+- aws step functions - create activity
+- sendtaskheartbeat
 - aws step functions - send task success
 - getexecutionhistory
-- aws
-- aws step functions - describe state machine for execution
-- aws step functions - update state machine
-- aws step functions - stop execution
-- startexecution
-- tagresource
-- describemaprun
-- deletestatemachine
-- aws step functions - get activity task
-- aws step functions - send task failure
-- listtagsforresource
-- aws step functions - list executions
-- serverless
-- sendtaskheartbeat
-- aws step functions - update map run
-- liststatemachines
-- aws step functions - start sync execution
-- sendtasksuccess
-- aws step functions - delete activity
-- aws step functions - describe map run
-- listactivities
-- aws step functions - describe state machine
-- aws step functions - list map runs
-- step
-- aws step functions - create activity
-- aws step functions - tag resource
-- aws step functions - describe activity
-- getactivitytask
-- untagresource
-- functions
-- orchestration
-- listmapruns
-- ipaas
-- api
-- describestatemachine
-- createactivity
-- aws step functions - list state machines
-- describeexecution
-- deleteactivity
-- createstatemachine
-- aws step functions - delete state machine
 - aws step functions - start execution
-- sendtaskfailure
-- aws step functions - get execution history
-- updatestatemachine
 - startsyncexecution
-- updatemaprun
+- aws step functions - delete state machine
+- listmapruns
 - aws step functions - send task heartbeat
-- aws step functions - describe execution
-- stopexecution
-- aws step functions - create state machine
+- aws step functions - get execution history
+- updatemaprun
+- orchestration
+- aws step functions - get activity task
+- serverless
+- aws step functions - list map runs
+- describestatemachine
+- describeexecution
+- tagresource
+- listactivities
+- createactivity
+- ipaas
+- aws step functions - update state machine
+- aws step functions - delete activity
 - listexecutions
-- aws step functions - untag resource
+- sendtasksuccess
+- aws step functions - list activities
+- aws step functions - send task failure
+- aws step functions - stop execution
+- aws step functions - update map run
+- aws step functions - describe activity
+- sendtaskfailure
 - describeactivity
+- deletestatemachine
+- describemaprun
+- stopexecution
+- untagresource
+- aws step functions - describe map run
+- aws step functions - untag resource
+- aws
+- step
 - aws step functions - list tags for resource
 - describestatemachineforexecution
+- aws step functions - describe execution
+- aws step functions - describe state machine for execution
+- liststatemachines
+- deleteactivity
+- aws step functions - tag resource
+- createstatemachine
+- functions
+- aws step functions - list executions
 slug: aws-step-functions-capability
 source_filename: aws-step-functions-capability.yaml
 source_heading: Capability Spec

@@ -15,17 +15,17 @@ provider_slug: bureau-of-economic-analysis
 search_terms:
 - economics
 - gdp
-- federal government
 - trade
-- get
-- api
-- analysis
 - bureau
-- bureau of economic analysis retrieve data from bea api
-- economic
-- national accounts
-- of
 - statistics
+- analysis
+- of
+- national accounts
+- federal government
+- bureau of economic analysis retrieve data from bea api
+- api
+- economic
+- get
 slug: bureau-of-economic-analysis-capability
 source_filename: bureau-of-economic-analysis-capability.yaml
 source_heading: Capability Spec

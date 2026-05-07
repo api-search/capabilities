@@ -13,17 +13,17 @@ personas: []
 provider_name: SpaceAPI
 provider_slug: spaceapi
 search_terms:
-- list all registered hackerspaces, makerspaces, and fablabs
-- event spaces
+- directory
 - all registered spaceapi spaces in the global directory
-- maker spaces
-- hackerspaces
-- list spaces
+- list all registered hackerspaces, makerspaces, and fablabs
 - community
 - open standard
+- maker spaces
+- hackerspaces
 - co-working
-- directory
 - list all hackerspaces, makerspaces, and fablabs registered in the spaceapi directory
+- event spaces
+- list spaces
 slug: space-discovery
 source_filename: space-discovery.yaml
 source_heading: Capability Spec

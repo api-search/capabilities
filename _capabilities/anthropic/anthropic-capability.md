@@ -97,58 +97,58 @@ personas: []
 provider_name: Anthropic
 provider_slug: anthropic
 search_terms:
-- anthropic list api keys
-- anthropic get organization member
-- anthropic list workspaces
-- anthropic get api key
+- anthropic get workspace
+- anthropic get workspace member
+- anthropic update api key
+- foundation models
+- createorganizationinvite
+- anthropic remove organization member
+- listorganizationinvites
 - listworkspaces
-- anthropic update workspace
-- archiveworkspace
-- anthropic list workspace members
-- removeworkspacemember
+- updateworkspace
+- ai
+- api
+- updateworkspacemember
+- listorganizationmembers
 - removeorganizationmember
+- getcurrentorganization
+- anthropic add workspace member
+- anthropic create workspace
+- artificial intelligence
+- anthropic get organization invite
+- machine learning
+- listapikeys
+- getorganizationinvite
+- removeworkspacemember
+- listworkspacemembers
+- anthropic get api key
+- anthropic create organization invite
+- anthropic get organization member
+- updateorganizationmember
+- updateapikey
+- anthropic list workspaces
+- large language models
+- deleteorganizationinvite
 - anthropic update organization member
-- getworkspace
-- addworkspacemember
+- anthropic list workspace members
+- anthropic update workspace
 - anthropic list organization invites
+- getapikey
+- anthropic get current organization
 - createworkspace
 - anthropic list organization members
-- listworkspacemembers
-- anthropic update workspace member
-- anthropic update api key
-- anthropic get organization invite
-- large language models
-- anthropic get current organization
-- getorganizationinvite
-- getapikey
-- anthropic remove workspace member
-- ai
-- listorganizationmembers
-- anthropic add workspace member
-- artificial intelligence
-- anthropic get workspace member
-- anthropic create organization invite
-- deleteorganizationinvite
-- machine learning
-- getcurrentorganization
-- listorganizationinvites
-- api
-- getorganizationmember
-- anthropic remove organization member
-- createorganizationinvite
-- foundation models
-- updateworkspacemember
-- anthropic archive workspace
-- updateapikey
-- anthropic create workspace
 - anthropic delete organization invite
-- anthropic get workspace
-- listapikeys
-- updateworkspace
-- updateorganizationmember
+- anthropic update workspace member
 - getworkspacemember
-- anthropic
+- anthropic remove workspace member
+- getorganizationmember
+- archiveworkspace
+- addworkspacemember
+- getworkspace
+- anthropic list api keys
+- anthropic archive workspace
 - claude
+- anthropic
 slug: anthropic-capability
 source_filename: anthropic-capability.yaml
 source_heading: Capability Spec

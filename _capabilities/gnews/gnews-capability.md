@@ -17,16 +17,16 @@ personas: []
 provider_name: GNews
 provider_slug: gnews
 search_terms:
-- search articles
-- news
-- topheadlines
-- searcharticles
-- api
-- headlines
-- gnews
-- search
 - articles
 - get top headlines
+- headlines
+- topheadlines
+- search articles
+- search
+- api
+- searcharticles
+- news
+- gnews
 slug: gnews-capability
 source_filename: gnews-capability.yaml
 source_heading: Capability Spec

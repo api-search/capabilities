@@ -49,61 +49,61 @@ personas: []
 provider_name: wells-fargo
 provider_slug: wells-fargo
 search_terms:
-- search transactions
-- initiate ach payment
-- list gateway payments
-- get account balance
-- get transaction detail
-- list ach returns and notifications of change (noc) for monitoring payment exceptions.
-- ach return and noc management.
-- list commercial accounts
-- list payments initiated through the gateway.
-- list ach returns and nocs.
-- financial services
-- gateway payment management.
-- get full detail for a specific wells fargo transaction.
-- list all wells fargo commercial bank accounts for the authenticated customer.
-- list payment history from the wells fargo gateway platform.
-- initiate a payment via gateway.
 - list detailed transaction history for an account.
-- list ach payment history and status.
-- list ach payments.
-- cancel a pending ach payment before it is submitted to the ach network.
-- treasury management
-- list ach payments
-- list all accounts for the authenticated commercial customer.
-- commercial banking
-- list payments
-- list account transactions via gateway.
-- initiate an ach credit or debit payment.
-- cancel ach payment
-- commercial bank account management.
-- get real-time ledger and available balance for a wells fargo account.
-- get current and available balances for an account.
-- open banking
 - detailed transaction reporting (up to 180 days).
-- account transaction history (gateway).
-- list account transactions
-- search detailed transaction history for a wells fargo account (up to 180 days). supports ach, wire, rtp, and fednow transaction types.
-- real-time account balance information.
-- ach batch file processing.
-- payments
-- initiate gateway payment
-- submit ach batch
-- list ach returns
-- get current status and settlement details of an ach payment.
-- submit a batch ach payment file.
-- initiate a single ach credit or debit payment via wells fargo. supports ccd, ctx, ppd, and web transaction codes.
-- list accounts
-- submit a batch ach payment file with multiple credit or debit transactions.
-- get balances
-- create payment
-- ach payment initiation and tracking.
-- list transactions
 - ach
-- banking
-- get ach payment status
+- list all accounts for the authenticated commercial customer.
+- list ach payment history and status.
+- list ach returns
+- commercial banking
+- initiate an ach credit or debit payment.
+- list accounts
+- cancel ach payment
+- list ach returns and nocs.
+- gateway payment management.
+- list all wells fargo commercial bank accounts for the authenticated customer.
+- get full detail for a specific wells fargo transaction.
+- list ach payments
+- create payment
+- get account balance
+- get current status and settlement details of an ach payment.
+- list gateway payments
+- initiate a payment via gateway.
+- real-time account balance information.
+- submit a batch ach payment file.
+- list ach payments.
+- initiate a single ach credit or debit payment via wells fargo. supports ccd, ctx, ppd, and web transaction codes.
+- financial services
 - initiate a payment via wells fargo gateway (supports intelligent routing to rtp/fednow/ach).
+- get transaction detail
+- list account transactions via gateway.
+- get real-time ledger and available balance for a wells fargo account.
+- ach batch file processing.
+- list payments initiated through the gateway.
+- account transaction history (gateway).
+- initiate gateway payment
+- commercial bank account management.
+- list account transactions
+- ach payment initiation and tracking.
+- list ach returns and notifications of change (noc) for monitoring payment exceptions.
+- treasury management
+- open banking
+- get current and available balances for an account.
+- initiate ach payment
+- get ach payment status
+- banking
+- submit ach batch
+- ach return and noc management.
+- payments
+- list payment history from the wells fargo gateway platform.
+- search transactions
+- list transactions
+- cancel a pending ach payment before it is submitted to the ach network.
+- search detailed transaction history for a wells fargo account (up to 180 days). supports ach, wire, rtp, and fednow transaction types.
+- submit a batch ach payment file with multiple credit or debit transactions.
+- list payments
+- get balances
+- list commercial accounts
 slug: commercial-banking-treasury
 source_filename: commercial-banking-treasury.yaml
 source_heading: Capability Spec

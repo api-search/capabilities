@@ -21,24 +21,24 @@ personas: []
 provider_name: AMC Entertainment Holdings
 provider_slug: amc-entertainment-holdings
 search_terms:
-- theatres
-- amc theatres
-- rewards
-- get amc loyalty account
-- ticketing
-- concessions
-- redeem amc loyalty points
-- get account
-- get account by email
-- loyalty
-- get an amc stubs loyalty account by id, email, card, or phone.
-- movies
-- showtimes
-- fortune 500
-- entertainment
 - create a points redemption against an amc stubs loyalty account.
 - amc stubs
+- get account
+- concessions
+- movies
+- get account by email
+- rewards
+- amc theatres
+- fortune 500
+- loyalty
+- get an amc stubs loyalty account by id, email, card, or phone.
 - create redemption
+- redeem amc loyalty points
+- ticketing
+- entertainment
+- showtimes
+- get amc loyalty account
+- theatres
 slug: loyalty-management
 source_filename: loyalty-management.yaml
 source_heading: Capability Spec

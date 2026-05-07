@@ -33,27 +33,27 @@ personas: []
 provider_name: Google Assistant
 provider_slug: google-assistant
 search_terms:
+- google assistant delete device model
 - listdeviceinstances
-- google assistant list device instances
-- listdevicemodels
-- google assistant create device instance
-- assistant
-- google assistant list device models
+- api
+- google assistant get device model
 - actions on google
+- google assistant list device models
+- google assistant create device instance
+- conversational ai
+- google
 - voice assistant
-- getdevicemodel
+- createdevicemodel
+- deletedevicemodel
+- smart home
 - natural language
 - google assistant create device model
-- google
-- smart home
-- createdevicemodel
+- listdevicemodels
+- assistant
 - google assistant
-- api
 - createdeviceinstance
-- google assistant get device model
-- google assistant delete device model
-- deletedevicemodel
-- conversational ai
+- google assistant list device instances
+- getdevicemodel
 slug: google-assistant-capability
 source_filename: google-assistant-capability.yaml
 source_heading: Capability Spec

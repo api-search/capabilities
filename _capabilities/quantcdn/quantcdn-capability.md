@@ -249,137 +249,137 @@ personas: []
 provider_name: QuantCDN
 provider_slug: quantcdn
 search_terms:
-- domains renew
-- dns
-- create a new project
-- list custom response rules
 - gethourlymetrics
+- crawlers getruns
+- ai inference
+- kv items update
+- projects list
+- rulesauth delete
+- rulescontentfilter list
+- show a specific schedule
+- api
+- retrieve all projects for an organization
+- edit a schedule
+- crawlers delete
+- list custom response rules
+- edge computing
+- getdailymetrics
+- organizations list
+- crawlerschedules edit
+- kv unlink from project
+- crawlers read
+- list bot challenge rules
+- unlink a kv store from this project
+- create a content filter rule
+- get details of a single project
 - rulesauth create
 - get details of a content filter rule
 - get an item from a kv store
-- crawlers create
-- link a kv store to another project
-- list schedules for a crawler
-- get details of a single domain
-- kv unlink from project
-- list authentication rules
-- rulesbotchallenge read
-- domains list
-- crawlers list
-- crawlerschedules add
-- rulesbotchallenge delete
-- rulescontentfilter update
-- edge computing
-- rulesbotchallenge create
-- rulescontentfilter list
-- crawlers getrunbyid
-- get daily metrics
-- getmonthlymetrics
-- add a kv store
-- crawlers read
-- crawlerschedules list
-- api
-- kv list
-- rulesbotchallenge list
-- waf
-- delete an item from a kv store
-- kv items show
-- delete a content filter rule
-- update a content filter rule
-- delete an authentication rule
-- domains read
-- rulescustomresponse list
-- update an item in a kv store
-- list key-value stores
-- crawlers delete
-- get details of a single crawler
-- show a specific schedule
-- crawlerschedules delete
-- crawlerschedules show
-- delete a domain
-- create a bot challenge rule
-- get details of a single organization
-- kv delete
-- list custom headers for a project
-- add a new domain
-- unlink a kv store from this project
-- projects update
-- crawlers update
-- get hourly metrics
-- projects create
-- purge cache via url or cache keys
-- domains create
-- update an authentication rule
-- projects list
-- cdn
-- static hosting
-- projects delete
-- rulesauth delete
-- list bot challenge rules
-- projects read
-- list items in a kv store
-- rulesauth list
-- rulesauth read
-- delete a bot challenge rule
-- delete a schedule
-- kv items list
-- crawlers run
-- kv items update
-- edge
-- kv link to project
-- key-value storage
-- create or update custom headers
-- get monthly metrics
-- renew the ssl certificate for a domain
-- crawlerschedules edit
-- add a new schedule
-- get a run by id
-- delete a kv store
-- list all domains for a project
-- create a custom response rule
-- headers delete
-- edit a schedule
-- create a content filter rule
-- purge create
-- kv show
-- get a kv store
-- ai inference
-- kv items delete
-- delete a project
-- rulescontentfilter create
-- organizations read
-- create an authentication rule
-- headers list
 - quantcdn
-- get details of a bot challenge rule
-- rulescontentfilter read
-- add an item to a kv store
-- rulesbotchallenge update
-- rulescustomresponse create
-- kv items create
+- domains list
 - update a crawler
-- retrieve all organizations
+- add a new schedule
+- organizations read
+- kv items delete
+- crawlers update
+- domains create
+- link a kv store to another project
 - list content filter rules
-- jamstack
-- retrieve all projects for an organization
-- get details of an authentication rule
-- rulesauth update
-- get details of a single project
-- run a crawler
-- rulescontentfilter delete
-- crawlers getruns
-- organizations list
-- delete a crawler
+- purge create
+- projects update
+- create or update custom headers
+- list all domains for a project
+- add a kv store
+- delete a kv store
+- projects read
+- crawlerschedules add
+- get a run by id
+- headers list
+- rulesbotchallenge list
+- kv link to project
+- delete a content filter rule
+- get monthly metrics
+- rulesbotchallenge read
+- rulesauth read
+- projects delete
+- create a custom response rule
+- get details of a single crawler
+- rulescontentfilter update
+- update an item in a kv store
 - update a project
-- delete custom headers
-- domains delete
-- kv create
-- get all runs for a crawler
-- headers create
+- projects create
+- get details of a single domain
+- rulescontentfilter read
+- update a content filter rule
 - update a bot challenge rule
-- getdailymetrics
+- key-value storage
+- rulescontentfilter delete
+- list items in a kv store
+- kv items show
 - list crawlers for the project
+- get a kv store
+- kv create
+- waf
+- delete a domain
+- get all runs for a crawler
+- kv show
+- renew the ssl certificate for a domain
+- crawlerschedules delete
+- kv items list
+- kv items create
+- delete a schedule
+- domains renew
+- delete custom headers
+- rulesauth update
+- update an authentication rule
+- add an item to a kv store
+- delete an item from a kv store
+- dns
+- cdn
+- list custom headers for a project
+- list key-value stores
+- crawlers getrunbyid
+- run a crawler
+- delete a bot challenge rule
+- get details of an authentication rule
+- rulesbotchallenge update
+- delete a project
 - create a new crawler
+- jamstack
+- delete an authentication rule
+- rulescustomresponse create
+- rulesbotchallenge create
+- headers create
+- domains delete
+- kv delete
+- get hourly metrics
+- headers delete
+- create an authentication rule
+- add a new domain
+- edge
+- rulescustomresponse list
+- purge cache via url or cache keys
+- rulesbotchallenge delete
+- list schedules for a crawler
+- kv list
+- get details of a bot challenge rule
+- create a bot challenge rule
+- delete a crawler
+- crawlers run
+- domains read
+- crawlers create
+- create a new project
+- crawlers list
+- static hosting
+- crawlerschedules list
+- list authentication rules
+- retrieve all organizations
+- rulesauth list
+- rulescontentfilter create
+- get daily metrics
+- crawlerschedules show
+- get details of a single organization
+- getmonthlymetrics
 slug: quantcdn-capability
 source_filename: quantcdn-capability.yaml
 source_heading: Capability Spec

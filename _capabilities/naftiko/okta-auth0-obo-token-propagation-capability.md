@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- auth0
-- okta
-- obo
-- exchange obo token
-- api integration
 - governance
+- okta
 - spec-driven integration
+- exchange obo token
 - ai
-- introspect token
-- mcp
+- obo
 - capabilities
+- api integration
+- mcp
+- introspect token
+- auth0
+- naftiko
 slug: okta-auth0-obo-token-propagation-capability
 source_filename: okta-auth0-obo-token-propagation-capability.yaml
 source_heading: Capability Spec

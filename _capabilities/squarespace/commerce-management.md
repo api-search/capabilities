@@ -41,46 +41,46 @@ personas: []
 provider_name: Squarespace
 provider_slug: squarespace
 search_terms:
-- webhooks
-- get a specific product
-- apply incremental stock quantity adjustments to product variants.
-- retrieve all products in the squarespace catalog. optionally filter by product type (physical, service, gift_card, digital).
-- apply stock quantity adjustments
-- bulk inventory adjustment
-- get order
-- delete a product from the squarespace catalog.
-- marketing
-- get product
-- retail
-- order history and management
-- retrieve a specific order by id
-- delete product
-- stock level management
-- e-commerce
 - list inventory
-- retrieve details of a specific order by its id.
-- delete a product from the catalog
-- commerce
-- create a new product
-- retrieve current stock levels for all product variants.
-- adjust inventory
-- inventory
-- retrieve all orders with optional date and status filters
-- retrieve all orders from a squarespace merchant site. supports filtering by fulfillment status and modification date range.
-- individual order details
-- website builder
-- create a new product in the squarespace catalog.
-- payments
 - squarespace
-- list orders
-- list products
-- products
-- orders
+- bulk inventory adjustment
+- get product
 - create product
-- individual product management
+- retail
+- list products
 - retrieve inventory levels for all variants
-- retrieve a specific product by its id.
 - product catalog
+- individual order details
+- retrieve a specific product by its id.
+- orders
+- retrieve all orders with optional date and status filters
+- delete product
+- individual product management
+- inventory
+- retrieve a specific order by id
+- products
+- create a new product
+- list orders
+- order history and management
+- e-commerce
+- webhooks
+- retrieve current stock levels for all product variants.
+- retrieve all products in the squarespace catalog. optionally filter by product type (physical, service, gift_card, digital).
+- adjust inventory
+- retrieve all orders from a squarespace merchant site. supports filtering by fulfillment status and modification date range.
+- stock level management
+- delete a product from the catalog
+- marketing
+- payments
+- delete a product from the squarespace catalog.
+- create a new product in the squarespace catalog.
+- website builder
+- apply incremental stock quantity adjustments to product variants.
+- retrieve details of a specific order by its id.
+- apply stock quantity adjustments
+- get a specific product
+- commerce
+- get order
 - retrieve all products in the catalog
 slug: commerce-management
 source_filename: commerce-management.yaml

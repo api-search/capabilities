@@ -29,25 +29,25 @@ personas: []
 provider_name: Google AdSense Management
 provider_slug: google-adsense
 search_terms:
-- google adsense management list accounts
-- listaccounts
-- google adsense management list payments
-- ad units
-- google
-- reports
-- listadclients
-- adsense
-- listadunits
-- monetization
-- advertising
 - api
-- generatereport
-- publishers
-- google adsense management generate report
-- google adsense management list ad units
 - listpayments
 - revenue
+- google
 - google adsense management list ad clients
+- ad units
+- reports
+- adsense
+- google adsense management list ad units
+- google adsense management list payments
+- listadclients
+- google adsense management list accounts
+- monetization
+- generatereport
+- listaccounts
+- google adsense management generate report
+- listadunits
+- advertising
+- publishers
 slug: google-adsense-capability
 source_filename: google-adsense-capability.yaml
 source_heading: Capability Spec

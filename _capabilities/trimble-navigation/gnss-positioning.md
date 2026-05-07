@@ -41,46 +41,46 @@ personas: []
 provider_name: Trimble Navigation
 provider_slug: trimble-navigation
 search_terms:
-- precision agriculture
-- construction
-- get tmm info
-- configure gnss correction source (rtx, rtk, sbas, or ntrip)
-- get receiver status
 - get active correction service and accuracy level
-- start real-time gnss position streaming, returns websocket port to connect to
-- get connected trimble gnss receiver model, serial number, and firmware version
-- gnss correction service status
-- list available trimble catalyst positioning accuracy licenses
-- geospatial
-- navigation
 - gnss position stream initialization
+- get connected trimble gnss receiver model, serial number, and firmware version
+- list available catalyst positioning accuracy licenses
 - get receiver info
-- get corrections status
-- activate catalyst license
-- get trimble mobile manager system information including websocket ports
+- gps
+- navigation
+- construction
+- configure rtx, rtk, sbas, or ntrip corrections
+- activate a trimble catalyst on demand license for enhanced positioning accuracy
+- get tmm version and websocket port information
 - gnss receiver hardware details
+- activate catalyst on demand license for enhanced accuracy
+- positioning
+- current receiver status
+- geospatial
+- get trimble mobile manager system information including websocket ports
+- initiate real-time gnss position streaming
+- get receiver status
+- configure gnss correction source (rtx, rtk, sbas, or ntrip)
+- get receiver connection and signal status
+- gnss correction service status
+- get connected receiver model and firmware version
+- gnss
+- configure correction sources
 - catalyst accuracy licenses
 - surveying
-- get catalyst licenses
-- current receiver status
-- list available catalyst positioning accuracy licenses
-- configure corrections
-- get tmm version and websocket port information
-- configure rtx, rtk, sbas, or ntrip corrections
-- check active gnss correction service (rtx, rtk, sbas) and current accuracy
-- check current gnss receiver connection status and signal strength
-- configure correction sources
-- start position stream
-- activate catalyst on demand license for enhanced accuracy
-- trimble navigation
-- positioning
-- initiate real-time gnss position streaming
-- get receiver connection and signal status
-- activate a trimble catalyst on demand license for enhanced positioning accuracy
-- gps
-- gnss
+- start real-time gnss position streaming, returns websocket port to connect to
+- list available trimble catalyst positioning accuracy licenses
+- precision agriculture
 - tmm system information
-- get connected receiver model and firmware version
+- start position stream
+- get tmm info
+- get corrections status
+- get catalyst licenses
+- configure corrections
+- check active gnss correction service (rtx, rtk, sbas) and current accuracy
+- activate catalyst license
+- check current gnss receiver connection status and signal strength
+- trimble navigation
 slug: gnss-positioning
 source_filename: gnss-positioning.yaml
 source_heading: Capability Spec

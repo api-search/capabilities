@@ -249,133 +249,133 @@ personas: []
 provider_name: M3ter
 provider_slug: m3ter
 search_terms:
-- retrieve bill statement in csv format
 - createbalancetransactionschedule
-- retrieve line item
-- update balance
-- retrieve bill
-- finops
-- create billjob
-- update balancetransactionschedule
-- getbill
-- getbilljob
-- delete balance
-- update balancechargeschedule
-- create balance
-- delete counteradjustment
-- retrieve line item usage in json format
-- api
-- metering
-- previewbalancetransactionschedule
-- retrieve billjob
-- getbilllineitemjsonusage
-- getallbillsforaccount
-- getbilllineitem
-- list debit line items
-- previewscheduledcharge
-- retrieve billconfig
-- delete bill
-- postdebitlineitem
 - updatebalancetransactionschedule
-- listbilllineitems
-- getstatementjob
-- update debit line item
-- retrieve credit line item
-- list line items
-- getdebitlineitem
-- postcounteradjustment
-- create bill statement in csv format
-- lock bill
-- updatebalancechargeschedule
-- getlatestbill
-- preview scheduledbalancecharges
+- api
+- listdebitlineitems
 - list billjobs
+- retrieve counteradjustment
+- getbillcsvstatement
+- preview scheduledbalancecharges
+- update counteradjustment
+- putbalance
+- getcreditlineitem
+- update balance
+- get statementjob
+- cancelbilljob
+- create billjob
+- listbalancetransactions
+- listcounteradjustments
+- deletebalance
+- retrieve line item usage in json format
+- deletebalancechargeschedule
+- create charge
+- listbills
+- finops
+- create counteradjustment
 - deletedebitlineitem
 - approve bills in billing period
-- updatebillstatus
-- deletebalance
-- deletebalancetransactionschedule
-- putcreditlineitem
-- m3ter
-- delete balancetransactionschedule
-- getbalancetransactionschedule
-- retrieve counteradjustment
-- retrieve debit line item
-- list balances
-- postbalancetransaction
-- list balancetransactionschedule
-- create balance transaction
-- createbillcsvstatement
-- retrieve balancechargeschedule
+- list charges
+- list line items
 - listcharges
-- updatebillconfig
-- list transactions
-- deletebill
-- listbalancetransactions
-- approveallbillsinbillingperiod
-- usage-based billing
-- getbillconfig
+- postdebitlineitem
+- list balancetransactionschedule
 - listbalancetransactionschedule
-- retrieve bills for an account id
-- update bill status
-- putbalance
-- listbills
-- cancelbilljob
-- create debit line item
-- list counteradjustments
-- create batch statementjobs
-- listcounteradjustments
-- listbilljobs
-- create balancetransactionschedule
-- retrieve bill statement in json format
-- update counteradjustment
-- deletecounteradjustment
-- list credit line items
-- saas
-- delete debit line item
-- previewbill
-- update credit line item
-- createbilljob
-- pricing
 - listbalances
+- getstatementjob
+- delete credit line item
+- updatebalancechargeschedule
+- create balance
+- usage-based billing
+- putcreditlineitem
+- list debit line items
+- delete balancechargeschedule
+- retrieve billjob
+- retrieve credit line item
+- cancel statementjob
+- createbillcsvstatement
+- update balancetransactionschedule
+- getbilllineitem
+- update credit line item
+- create batch statementjobs
+- listcreditlineitems
+- getallbillsforaccount
+- delete debit line item
+- getbalancetransactionssummary
 - retrieve balance
-- deletebalancechargeschedule
+- metering
+- retrieve bill statement in csv format
+- createstatementjobbatch
+- getbilljob
+- create balancetransactionschedule
+- postbalance
+- m3ter
+- deletebalancetransactionschedule
+- postbalancetransaction
+- getbillconfig
+- list transactions
+- delete balance
+- getdebitlineitem
+- retrieve balancechargeschedule
+- get balance transactions summary
+- listbilljobs
+- update billconfig
+- list balances
+- updatebillconfig
+- putcounteradjustment
+- list counteradjustments
+- billing
+- update bill status
+- list credit line items
+- getbalancechargeschedule
+- create recalculation billjob
+- createcharge
+- getbalancetransactionschedule
+- saas
+- cancel billjob
+- previewbill
+- deletebill
+- approveallbillsinbillingperiod
+- update debit line item
+- retrieve debit line item
+- preview scheduledbalancetransactions
+- create bill statement in csv format
+- delete bill
+- previewscheduledcharge
 - cancelstatementjob
 - deletecreditlineitem
-- lockbill
-- cancel billjob
-- list charges
-- listcreditlineitems
-- update billconfig
-- putcounteradjustment
-- get statementjob
-- cancel statementjob
-- getcreditlineitem
-- recalculatebilljob
-- getbilljsonstatement
-- createcharge
+- create balance transaction
+- retrieve billconfig
 - preview bill
-- get balance transactions summary
-- billing
-- listdebitlineitems
-- getbalancechargeschedule
-- createstatementjobbatch
-- list bills
-- retrieve latest bill
-- listlineitems
 - retrieve balancetransactionschedule
+- retrieve bills for an account id
+- listlineitems
+- getlatestbill
+- postcounteradjustment
+- lock bill
+- delete counteradjustment
+- create debit line item
+- retrieve latest bill
+- retrieve bill
+- createbilljob
+- recalculatebilljob
+- update balancechargeschedule
+- getbilllineitemjsonusage
+- deletecounteradjustment
+- pricing
+- getbilljsonstatement
+- list bills
+- delete balancetransactionschedule
+- listbilllineitems
+- getbill
+- retrieve bill statement in json format
+- previewbalancetransactionschedule
+- updatebillstatus
 - getbalance
-- create recalculation billjob
-- delete balancechargeschedule
-- preview scheduledbalancetransactions
-- getbalancetransactionssummary
-- create charge
-- create counteradjustment
-- delete credit line item
-- postbalance
+- lockbill
 - putdebitlineitem
+- retrieve line item
 - getcounteradjustment
-- getbillcsvstatement
 slug: m3ter-capability
 source_filename: m3ter-capability.yaml
 source_heading: Capability Spec

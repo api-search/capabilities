@@ -53,64 +53,64 @@ personas: []
 provider_name: WHMCS
 provider_slug: whmcs
 search_terms:
-- retrieve detailed information for a specific client.
-- open a new support ticket.
-- get system stats
-- get client details
-- get client
-- single client account details.
-- get invoice
-- support ticket management.
-- sso token generation.
-- create client sso token
-- support tickets
-- single invoice details.
-- retrieve a paginated list of client accounts.
-- whmcs
-- check domain
-- validate client login credentials.
-- create sso token
 - client account management.
-- retrieve a list of support tickets.
-- invoice and billing management.
-- perform a whois lookup on a domain name to check availability and registration status.
-- retrieve a list of whmcs client accounts. use for customer lookup and account management workflows.
-- list clients
-- retrieve invoices with optional status and client filtering.
-- system statistics and monitoring.
-- retrieve whmcs support tickets, optionally filtered by client or status.
-- create an sso token to enable a client to log into the whmcs client area without a password.
 - list tickets
-- retrieve a list of orders with optional filtering.
-- order management.
-- retrieve a specific invoice by id.
-- retrieve whmcs system statistics and revenue metrics.
-- perform a whois lookup on a domain name.
-- create an sso token for client portal access.
-- add client
-- retrieve a list of whmcs orders, optionally filtered by client or status.
-- create a new client account in whmcs.
-- validate login
-- open a new support ticket in whmcs on behalf of a client.
-- retrieve detailed information for a specific whmcs client by id or email.
-- retrieve a specific whmcs invoice by its id.
-- support
-- check domain whois
-- client authentication.
-- retrieve whmcs invoices, optionally filtered by client or payment status.
-- validate a client's login credentials for authentication or sso workflows.
-- open ticket
-- client management
-- list orders
-- billing automation
-- domain management
-- retrieve whmcs system statistics including revenue metrics, active clients, and ticket counts.
-- validate client login
-- provisioning
-- list invoices
 - domain availability and whois lookup.
+- validate client login
+- support tickets
+- whmcs
+- order management.
+- retrieve a specific whmcs invoice by its id.
+- create an sso token to enable a client to log into the whmcs client area without a password.
+- check domain whois
+- retrieve whmcs invoices, optionally filtered by client or payment status.
+- support
+- retrieve whmcs support tickets, optionally filtered by client or status.
+- billing automation
+- retrieve a list of orders with optional filtering.
+- create sso token
+- system statistics and monitoring.
+- support ticket management.
+- retrieve detailed information for a specific client.
+- retrieve a list of support tickets.
+- create a new client account in whmcs.
+- invoice and billing management.
+- retrieve a list of whmcs orders, optionally filtered by client or status.
+- sso token generation.
+- perform a whois lookup on a domain name to check availability and registration status.
+- list orders
+- validate a client's login credentials for authentication or sso workflows.
+- create client sso token
+- provisioning
+- retrieve whmcs system statistics including revenue metrics, active clients, and ticket counts.
+- list clients
+- create an sso token for client portal access.
+- retrieve a list of whmcs client accounts. use for customer lookup and account management workflows.
+- add client
+- retrieve invoices with optional status and client filtering.
+- open a new support ticket.
+- retrieve a specific invoice by id.
+- get client
+- client authentication.
 - web hosting
+- get client details
+- retrieve detailed information for a specific whmcs client by id or email.
+- domain management
 - get stats
+- list invoices
+- perform a whois lookup on a domain name.
+- get invoice
+- check domain
+- validate login
+- open ticket
+- validate client login credentials.
+- single client account details.
+- client management
+- single invoice details.
+- retrieve whmcs system statistics and revenue metrics.
+- get system stats
+- open a new support ticket in whmcs on behalf of a client.
+- retrieve a paginated list of client accounts.
 slug: hosting-automation
 source_filename: hosting-automation.yaml
 source_heading: Capability Spec

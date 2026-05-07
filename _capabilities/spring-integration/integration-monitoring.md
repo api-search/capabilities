@@ -29,44 +29,44 @@ personas: []
 provider_name: Spring Integration
 provider_slug: spring-integration
 search_terms:
-- get performance metrics for a specific spring integration message handler
-- list all message handlers with handle counts and durations
-- stop a running spring integration inbound channel adapter to pause message ingestion
-- list message handlers
-- list all spring integration message handlers with handle counts and mean processing duration
-- integration
-- get flow graph
-- retrieve the complete spring integration message flow graph showing channels, handlers, and connections
-- java
-- stop inbound adapter
-- get channel
-- message handler performance metrics
-- individual channel statistics
-- monitoring
 - list all spring integration message channels with send counts, error counts, and performance statistics
-- inbound adapter lifecycle management
-- get handler metrics
-- enterprise integration
-- get detailed runtime statistics for a specific spring integration message channel by name
-- list handlers
-- list adapters
-- list message channels
-- get the complete integration flow graph
-- start inbound adapter
-- start a stopped spring integration inbound channel adapter to resume message ingestion
-- messaging
-- message channel statistics and monitoring
-- get detailed statistics for a specific channel
 - event-driven
+- get performance metrics for a specific spring integration message handler
+- inbound adapter lifecycle management
+- get channel
+- list message channels
 - list channels
-- list all message channels with send counts and performance stats
+- individual channel statistics
+- get detailed runtime statistics for a specific spring integration message channel by name
+- enterprise integration
 - amqp
+- stop inbound adapter
+- java
+- monitoring
+- message channel statistics and monitoring
+- get flow graph
+- get handler metrics
+- integration patterns
+- get detailed statistics for a specific channel
+- message handler performance metrics
+- integration
+- list all spring integration message handlers with handle counts and mean processing duration
+- start a stopped spring integration inbound channel adapter to resume message ingestion
+- stop a running spring integration inbound channel adapter to pause message ingestion
+- get channel statistics
+- list adapters
 - management
 - spring
-- integration patterns
-- get channel statistics
+- retrieve the complete spring integration message flow graph showing channels, handlers, and connections
+- list all message handlers with handle counts and durations
+- list all message channels with send counts and performance stats
 - list all inbound channel adapters and their running state
 - integration flow visualization
+- start inbound adapter
+- get the complete integration flow graph
+- messaging
+- list handlers
+- list message handlers
 slug: integration-monitoring
 source_filename: integration-monitoring.yaml
 source_heading: Capability Spec

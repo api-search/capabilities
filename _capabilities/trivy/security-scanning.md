@@ -17,24 +17,24 @@ personas: []
 provider_name: Trivy
 provider_slug: trivy
 search_terms:
-- vulnerability scanning
-- check if trivy security scanner server is running and healthy
 - devsecops
-- check if trivy server is running
-- trivy server and database version
-- get version
 - health check
-- get server and vulnerability database versions
-- get trivy server version and vulnerability database version
-- trivy get version
-- sbom
+- get version
+- vulnerability scanning
 - cloud security
 - containers
-- security
-- kubernetes
-- trivy health check
-- trivy server health status
 - open source
+- trivy server health status
+- sbom
+- check if trivy security scanner server is running and healthy
+- trivy health check
+- trivy get version
+- check if trivy server is running
+- trivy server and database version
+- security
+- get server and vulnerability database versions
+- get trivy server version and vulnerability database version
+- kubernetes
 slug: security-scanning
 source_filename: security-scanning.yaml
 source_heading: Capability Spec

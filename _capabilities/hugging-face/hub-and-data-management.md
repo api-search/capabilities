@@ -45,76 +45,76 @@ personas: []
 provider_name: Hugging Face
 provider_slug: hugging-face
 search_terms:
-- list and search spaces
-- get space
-- get detailed information about a specific space.
-- whoami
-- get detailed information about a specific model.
+- list and search spaces on the hub.
+- get dataset size
+- get dataset rows
+- datasets
+- models
 - list all available model tags grouped by type.
 - create a new model, dataset, or space repository on the hub.
-- list and search datasets on the hub.
-- get dataset statistics
-- get dataset rows
-- manage datasets on the hub
-- get dataset information
-- list all available dataset tags grouped by type.
-- list and search ml models on the hugging face hub.
-- list datasets
-- filter dataset rows using a condition.
-- get information about the authenticated user.
-- get model
-- get rows from a dataset
-- list model tags
-- hugging face
-- get model information at a specific revision or branch.
-- get dataset splits
-- get size information for a dataset.
-- check dataset validity
-- search rows in a dataset
-- get dataset parquet
-- list and search spaces on the hub.
-- get parquet file urls for a dataset.
-- list and search datasets
-- get dataset details
-- delete a repository from the hub.
-- list and search models
-- create a new repository
-- preview dataset rows
-- get dataset size
-- delete repo
-- get the first rows of a dataset split for preview.
-- get the list of splits for a dataset.
-- get model revision
-- get authenticated user info
-- search for rows matching a query in a dataset.
-- get croissant metadata for a dataset.
-- data management
-- create repositories
-- manage models on the hub
-- get croissant metadata
-- get model details
-- list spaces
-- manage spaces on the hub
-- update repo settings
-- models
-- search dataset rows
-- list models
-- list dataset tags
-- hub
-- filter dataset
-- datasets
-- user information
-- check if a dataset is valid and available on the hub.
-- get statistical information about a dataset split.
-- create repo
-- search dataset
-- get dataset
-- get detailed information about a specific dataset.
-- update settings for a repository.
-- get rows
-- get model information
 - get rows from a dataset split with pagination.
+- list dataset tags
+- manage spaces on the hub
+- search dataset
+- get dataset splits
+- get authenticated user info
+- list and search datasets on the hub.
+- get detailed information about a specific space.
+- update repo settings
+- get dataset details
+- list all available dataset tags grouped by type.
+- get dataset statistics
+- get rows
+- list and search models
+- get detailed information about a specific model.
+- get dataset
+- data management
+- get dataset information
+- manage datasets on the hub
+- preview dataset rows
+- search for rows matching a query in a dataset.
+- manage models on the hub
+- get space
+- filter dataset rows using a condition.
+- filter dataset
+- search dataset rows
+- create repo
+- whoami
+- list and search ml models on the hugging face hub.
+- hub
+- get information about the authenticated user.
+- get the list of splits for a dataset.
+- hugging face
+- user information
+- check dataset validity
+- get the first rows of a dataset split for preview.
 - search rows
+- get statistical information about a dataset split.
+- list models
+- get rows from a dataset
+- search rows in a dataset
+- get model information
+- get croissant metadata
+- get parquet file urls for a dataset.
+- create a new repository
+- get size information for a dataset.
+- get model revision
+- get model details
+- get detailed information about a specific dataset.
+- delete a repository from the hub.
+- update settings for a repository.
+- list model tags
+- list datasets
+- list and search spaces
+- create repositories
+- get dataset parquet
+- get model
+- list spaces
+- check if a dataset is valid and available on the hub.
+- get croissant metadata for a dataset.
+- get model information at a specific revision or branch.
+- delete repo
+- list and search datasets
 slug: hub-and-data-management
 source_filename: hub-and-data-management.yaml
 source_heading: Capability Spec

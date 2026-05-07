@@ -57,60 +57,60 @@ personas: []
 provider_name: Toro
 provider_slug: toro
 search_terms:
-- agronomics
 - get fleet equipment
-- get water usage report
-- equipment health reporting
-- get current irrigation system status
-- get equipment health report
-- get zone details
-- get a fleet equipment health summary report showing maintenance status
-- real-time irrigation system status
-- get equipment current location
-- list all sensors with latest readings
-- get detailed health information for a specific piece of equipment
-- list all golf course irrigation zones and their current state
-- get equipment location
-- get the current gps location of a specific piece of equipment
-- list all irrigation zones
-- get detailed information for a specific irrigation zone
-- individual equipment details
-- water usage reporting
-- start irrigation
-- individual irrigation zone
-- get a water usage summary report for a date range to track irrigation efficiency
-- stop irrigation
-- manually start irrigation for a specific zone with optional duration
-- stop active irrigation
-- get the current status of the golf course irrigation system
-- turf management
-- fleet management
-- equipment gps location
-- stop zone irrigation
-- golf course fleet equipment
-- equipment
-- golf
-- environmental and soil sensors
-- irrigation
-- historical sensor data
-- get irrigation status
-- irrigation zone management
-- landscaping
-- smart connected products
-- list all golf course fleet equipment with health and status data
-- start zone irrigation
-- list fleet equipment
-- list all environmental and soil moisture sensors with latest readings
-- list irrigation zones
-- list fleet equipment with health data
-- get sensor readings
-- stop active irrigation for a specific zone
-- get irrigation zone
-- start irrigation for a zone
-- get historical readings for a sensor over a specified time range
-- list sensors
-- get equipment details and health
 - get sensor historical readings
+- manually start irrigation for a specific zone with optional duration
+- stop irrigation
+- equipment gps location
+- landscaping
+- get equipment health report
+- irrigation
+- list all golf course irrigation zones and their current state
+- individual irrigation zone
+- stop active irrigation
+- get sensor readings
+- get current irrigation system status
+- start irrigation
+- list all irrigation zones
+- get detailed health information for a specific piece of equipment
+- start zone irrigation
+- historical sensor data
+- environmental and soil sensors
+- get detailed information for a specific irrigation zone
+- get equipment details and health
+- individual equipment details
+- get equipment current location
+- get the current gps location of a specific piece of equipment
+- list sensors
+- irrigation zone management
+- list irrigation zones
+- equipment
+- golf course fleet equipment
+- real-time irrigation system status
+- agronomics
+- golf
+- get historical readings for a sensor over a specified time range
+- equipment health reporting
+- get irrigation status
+- fleet management
+- list fleet equipment
+- get irrigation zone
+- stop zone irrigation
+- smart connected products
+- turf management
+- get the current status of the golf course irrigation system
+- list all environmental and soil moisture sensors with latest readings
+- list all sensors with latest readings
+- start irrigation for a zone
+- get a water usage summary report for a date range to track irrigation efficiency
+- list fleet equipment with health data
+- get equipment location
+- list all golf course fleet equipment with health and status data
+- water usage reporting
+- stop active irrigation for a specific zone
+- get zone details
+- get water usage report
+- get a fleet equipment health summary report showing maintenance status
 slug: golf-course-management
 source_filename: golf-course-management.yaml
 source_heading: Capability Spec

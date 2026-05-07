@@ -189,104 +189,104 @@ personas: []
 provider_name: RabbitMQ
 provider_slug: rabbitmq
 search_terms:
-- createexchange
-- get virtual host
-- list all exchanges
-- list all bindings
-- listvhosts
-- publish message to exchange
-- purgequeue
-- list virtual hosts
-- getclustername
-- getuserpermissions
-- message broker
 - event streaming
-- getoverview
-- set cluster name
-- export definitions
-- delete user
-- listqueues
-- setuserpermissions
-- api
-- list channels
-- get messages from queue
-- getuser
-- get policy
-- deletepolicy
-- health check - local alarms
-- publishmessage
-- listqueuesinvhost
-- deleteuser
-- rabbitmq
-- createuser
-- distributed systems
-- list all queues
-- listnodes
-- getdefinitions
-- getnode
-- listconnections
-- listexchanges
-- listchannels
-- deletequeue
-- getmessages
-- messaging
-- getvhost
-- delete policy
-- get cluster name
 - listbindingsbetween
-- get current user
-- close connection
-- get user permissions
-- listusers
-- get connection
-- postdefinitions
-- list queues in virtual host
 - create or update user
-- create virtual host
-- deletevhost
-- listpolicies
-- set user permissions
-- listexchangesinvhost
-- createvhost
-- createbinding
-- create or update policy
-- createqueue
-- amqp
-- list connections
-- listbindings
-- list exchanges in a virtual host
-- delete exchange
-- health check - alarms
-- list policies in vhost
-- list bindings between exchange and queue
-- whoami
-- delete user permissions
-- queue
-- import definitions
-- healthcheckalarms
-- createpolicy
-- deleteuserpermissions
-- setclustername
-- list nodes
-- delete virtual host
-- get exchange
 - create queue
-- get node details
-- deleteconnection
-- getqueue
+- distributed systems
+- listbindings
+- get policy
+- list channels
+- api
+- createvhost
+- amqp
+- list bindings between exchange and queue
+- list all exchanges
+- deletepolicy
+- listqueuesinvhost
+- rabbitmq
+- createexchange
 - getpolicy
-- getconnection
-- deleteexchange
-- get queue
-- healthchecklocalalarms
+- healthcheckalarms
+- purge queue
+- deleteuser
+- listexchanges
+- message broker
 - get cluster overview
 - getexchange
-- delete queue
-- purge queue
+- postdefinitions
+- list policies in vhost
+- createbinding
 - get user
-- create exchange
+- get connection
+- delete virtual host
+- messaging
+- getvhost
+- get node details
+- getqueue
+- listpolicies
+- set user permissions
+- publishmessage
+- create or update policy
+- list queues in virtual host
+- delete user
+- get virtual host
+- get user permissions
 - list users
+- getclustername
+- delete exchange
+- get cluster name
+- getconnection
+- createuser
+- import definitions
+- delete queue
+- get current user
+- getdefinitions
+- listvhosts
 - create binding
+- close connection
+- delete user permissions
+- list exchanges in a virtual host
+- queue
+- deletequeue
+- listnodes
+- listexchangesinvhost
+- healthchecklocalalarms
+- set cluster name
+- whoami
+- list all queues
+- create exchange
+- getnode
+- listusers
+- list nodes
+- create virtual host
+- listconnections
+- listqueues
+- deleteexchange
+- purgequeue
+- createqueue
+- deleteconnection
+- get exchange
+- list connections
+- health check - local alarms
+- deleteuserpermissions
+- health check - alarms
+- list virtual hosts
+- get messages from queue
+- setuserpermissions
+- delete policy
+- getuser
+- export definitions
+- publish message to exchange
+- list all bindings
+- getuserpermissions
+- deletevhost
+- createpolicy
+- getmessages
+- get queue
+- getoverview
+- listchannels
+- setclustername
 slug: rabbitmq-capability
 source_filename: rabbitmq-capability.yaml
 source_heading: Capability Spec

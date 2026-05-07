@@ -21,20 +21,20 @@ personas: []
 provider_name: Norfolk Southern
 provider_slug: norfolk-southern
 search_terms:
-- gettripplan
-- getgatereceipts
-- transportation
-- railroad
-- logistics
-- norfolk
-- southern
-- getshipmentstatus
-- shipping
-- api
 - get shipment status
-- get gate receipts
+- getgatereceipts
 - freight
+- gettripplan
+- logistics
+- southern
+- transportation
+- norfolk
+- shipping
+- getshipmentstatus
+- get gate receipts
+- api
 - get trip plan
+- railroad
 slug: norfolk-southern-capability
 source_filename: norfolk-southern-capability.yaml
 source_heading: Capability Spec

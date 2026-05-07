@@ -33,37 +33,37 @@ personas: []
 provider_name: AMC Entertainment Holdings
 provider_slug: amc-entertainment-holdings
 search_terms:
-- list the current amc now-playing movies.
-- amc theatres
-- list nearby showtimes
-- ticketing
-- get nearby amc showtimes
-- get movie
 - movies
+- get nearby amc showtimes
 - loyalty
-- search amc theatres
-- theatres
 - search theatres
-- search amc theatres by name, state, or city.
-- list now-playing movies.
-- showtimes
-- get amc theatre showtimes
-- list showtimes within proximity of a coordinate on a date.
-- locations
-- list theatre showtimes
-- find amc showtimes near a coordinate on a date.
-- movie discovery
-- search
-- list movies now playing
-- list coming-soon movies.
-- fortune 500
-- entertainment
-- search theatres by name/state/city.
-- get showtimes at a specific amc theatre, optionally filtered by movie.
-- get amc movie
-- get details for an amc movie by id or slug.
+- get movie
+- theatres
+- list nearby showtimes
 - concessions
+- list coming-soon movies.
+- movie discovery
+- get details for an amc movie by id or slug.
+- showtimes
+- get showtimes at a specific amc theatre, optionally filtered by movie.
+- list theatre showtimes
+- locations
+- list movies now playing
+- list now-playing movies.
+- search amc theatres
+- get amc theatre showtimes
 - list movies coming soon
+- entertainment
+- list the current amc now-playing movies.
+- search
+- amc theatres
+- search theatres by name/state/city.
+- search amc theatres by name, state, or city.
+- find amc showtimes near a coordinate on a date.
+- get amc movie
+- ticketing
+- list showtimes within proximity of a coordinate on a date.
+- fortune 500
 slug: movie-discovery
 source_filename: movie-discovery.yaml
 source_heading: Capability Spec

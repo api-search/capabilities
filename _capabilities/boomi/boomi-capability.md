@@ -61,44 +61,44 @@ personas: []
 provider_name: Boomi
 provider_slug: boomi
 search_terms:
-- data integration
-- boomi get a model
-- boomi list sources
-- boomi create a repository
-- listrepositories
-- boomi list golden records
-- boomi publish a model
-- createrepository
-- boomi create a model
+- integrations
 - boomi
-- getrepository
-- boomi create a source
-- boomi list repositories
-- deletemodel
-- getmodel
-- createsource
+- ai agents
+- automation
+- boomi delete a repository
+- api
+- createrepository
+- platform
 - b2b
+- listrepositories
 - edi
-- boomi list models
-- listmodels
 - deleterepository
 - listsources
-- integrations
-- publishmodel
-- boomi delete a repository
+- boomi list golden records
 - createmodel
-- api
-- ai agents
 - listquarantineentries
-- workflows
-- mft
-- management
-- platform
-- boomi delete a model
 - boomi list quarantine entries
-- listgoldenrecords
+- deletemodel
+- boomi list models
+- getmodel
 - boomi get a repository
-- automation
+- boomi publish a model
+- listgoldenrecords
+- listmodels
+- management
+- mft
+- boomi list repositories
+- boomi list sources
+- boomi create a model
+- boomi get a model
+- boomi delete a model
+- publishmodel
+- workflows
+- data integration
+- createsource
+- getrepository
+- boomi create a source
+- boomi create a repository
 slug: boomi-capability
 source_filename: boomi-capability.yaml
 source_heading: Capability Spec

@@ -17,15 +17,15 @@ personas: []
 provider_name: piscesCSM
 provider_slug: piscescsm
 search_terms:
-- drug discovery
-- submitprediction
+- retrieve prediction results
+- bioinformatics
 - getprediction
+- submitprediction
+- cancer
 - piscescsm
 - api
 - submit a drug-pair prediction job
-- retrieve prediction results
-- cancer
-- bioinformatics
+- drug discovery
 slug: piscescsm-capability
 source_filename: piscescsm-capability.yaml
 source_heading: Capability Spec

@@ -15,13 +15,13 @@ provider_slug: diamond-search
 search_terms:
 - trading
 - diamond
+- post getreport3
+- diamonds
 - pricing
+- search
 - diamond search retrieve report 3 data
 - api
 - lab grown
-- search
-- diamonds
-- post getreport3
 slug: diamond-search-capability
 source_filename: diamond-search-capability.yaml
 source_heading: Capability Spec

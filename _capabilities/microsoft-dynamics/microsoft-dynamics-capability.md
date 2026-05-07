@@ -105,60 +105,60 @@ personas: []
 provider_name: Microsoft Dynamics
 provider_slug: microsoft-dynamics
 search_terms:
-- microsoft dynamics list vendors
-- microsoft dynamics delete a customer
-- microsoft dynamics list sales invoices
-- listaccounts
-- microsoft dynamics create a sales order
-- microsoft dynamics list chart of accounts
-- dynamics
-- microsoft dynamics get a customer
+- createpurchaseorder
 - microsoft dynamics create an employee
-- microsoft dynamics list general ledger entries
-- listjournals
-- microsoft dynamics list purchase invoices
-- listitems
-- createsalesinvoice
-- listvendors
-- createpurchaseinvoice
-- listcustomers
-- microsoft dynamics list customers
-- microsoft dynamics create a purchase invoice
-- erp
-- microsoft dynamics create a customer
-- createsalesorder
-- createitem
-- getcustomer
+- microsoft dynamics list companies
 - microsoft dynamics list sales orders
-- createjournal
-- crm
-- api
-- microsoft dynamics update a customer
-- microsoft dynamics
-- listsalesorders
-- createcustomer
-- microsoft dynamics list items
-- listsalesinvoices
-- listpurchaseinvoices
-- listcompanies
-- microsoft dynamics create an item
-- updatecustomer
-- microsoft dynamics create a journal
-- createvendor
-- microsoft dynamics list purchase orders
-- deletecustomer
-- microsoft dynamics list journals
-- listemployees
-- createemployee
+- microsoft dynamics create a sales order
 - listgeneralledgerentries
+- microsoft dynamics
+- listitems
+- createpurchaseinvoice
+- getcustomer
+- listsalesinvoices
+- updatecustomer
+- listjournals
+- deletecustomer
+- api
+- microsoft dynamics list journals
+- microsoft dynamics create an item
+- listsalesorders
+- microsoft dynamics get a customer
+- dynamics
+- listcustomers
+- createemployee
+- microsoft dynamics create a journal
+- microsoft
+- crm
+- microsoft dynamics list sales invoices
+- microsoft dynamics list purchase orders
 - listpurchaseorders
 - microsoft dynamics create a purchase order
-- microsoft dynamics list companies
-- microsoft
-- microsoft dynamics create a vendor
-- createpurchaseorder
+- createsalesorder
+- microsoft dynamics list chart of accounts
+- listcompanies
+- createcustomer
+- microsoft dynamics create a customer
+- microsoft dynamics list general ledger entries
+- microsoft dynamics list items
+- microsoft dynamics update a customer
+- createvendor
 - microsoft dynamics list employees
+- createitem
+- microsoft dynamics list customers
+- microsoft dynamics create a vendor
+- listaccounts
+- microsoft dynamics delete a customer
+- createsalesinvoice
+- listemployees
+- erp
+- microsoft dynamics list vendors
+- createjournal
+- listvendors
+- listpurchaseinvoices
+- microsoft dynamics list purchase invoices
 - microsoft dynamics create a sales invoice
+- microsoft dynamics create a purchase invoice
 slug: microsoft-dynamics-capability
 source_filename: microsoft-dynamics-capability.yaml
 source_heading: Capability Spec

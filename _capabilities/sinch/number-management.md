@@ -21,29 +21,29 @@ personas: []
 provider_name: Sinch
 provider_slug: sinch
 search_terms:
-- numbers
-- rent a phone number matching the specified country and type requirements
-- list all phone numbers currently rented in the project
-- cpaas
-- search for available numbers by country and type
-- voice
-- compliance
+- list active numbers
 - search for available phone numbers by country code and type (local, toll-free, mobile)
+- brands
+- compliance
+- list all phone numbers currently rented in the project
 - sms
 - registration
-- brands
-- list active numbers
-- messaging
-- rent phone number
-- search for available phone numbers
-- phone numbers
-- list all active phone numbers
-- search available numbers
-- search phone numbers
-- provisioning
 - rent a phone number matching specified criteria
+- cpaas
+- provisioning
 - manage active phone numbers
+- search for available numbers by country and type
+- rent a phone number matching the specified country and type requirements
+- search for available phone numbers
 - verification
+- search available numbers
+- numbers
+- list all active phone numbers
+- voice
+- search phone numbers
+- rent phone number
+- messaging
+- phone numbers
 - communications
 slug: number-management
 source_filename: number-management.yaml

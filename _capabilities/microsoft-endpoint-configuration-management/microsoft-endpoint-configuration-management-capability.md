@@ -81,54 +81,54 @@ personas: []
 provider_name: Microsoft Endpoint Configuration Management
 provider_slug: microsoft-endpoint-configuration-management
 search_terms:
-- configuration management
-- microsoft endpoint configuration management list collections
-- endpoint
-- microsoft endpoint configuration management get a collection
-- microsoft endpoint configuration management list applications
-- microsoft endpoint configuration management list sites
-- microsoft endpoint configuration management list compliance baseline assignments
-- microsoft endpoint configuration management list systems
-- mobile device management
-- microsoft endpoint configuration management list packages
-- microsoft endpoint configuration management list scripts
-- configuration
-- software deployment
-- createapplication
-- device management
-- listtasksequences
-- microsoft endpoint configuration management create an application
-- listsystems
-- listdevicesv1
-- microsoft endpoint configuration management create a collection
-- getcollection
-- listcollectionsv1
-- listscripts
-- compliance
-- listpackages
-- getdevicev1
-- microsoft endpoint configuration management get a device (versioned route)
-- microsoft endpoint configuration management list application deployments
-- listsites
-- microsoft endpoint configuration management list task sequences
-- api
-- patch management
 - microsoft endpoint configuration management list software updates
-- listsoftwareupdates
-- getapplication
+- endpoint
+- listcollectionsv1
+- microsoft endpoint configuration management list applications
+- microsoft endpoint configuration management list task sequences
+- microsoft endpoint configuration management list packages
+- listscripts
 - microsoft endpoint configuration management list devices via wmi route
-- listdeployments
-- microsoft endpoint configuration management list collections (versioned route)
-- listdeviceswmi
-- management
+- api
+- endpoint management
+- mobile device management
 - createcollection
 - listcollections
-- microsoft endpoint configuration management list devices (versioned route)
-- microsoft endpoint configuration management get an application
-- microsoft
-- endpoint management
-- listapplications
+- configuration
+- listsites
+- listtasksequences
+- getdevicev1
+- compliance
+- getcollection
+- createapplication
 - listbaselineassignments
+- microsoft
+- microsoft endpoint configuration management create an application
+- listdevicesv1
+- listsystems
+- microsoft endpoint configuration management list scripts
+- microsoft endpoint configuration management list compliance baseline assignments
+- configuration management
+- management
+- getapplication
+- patch management
+- microsoft endpoint configuration management get an application
+- listsoftwareupdates
+- microsoft endpoint configuration management list collections
+- microsoft endpoint configuration management create a collection
+- microsoft endpoint configuration management list sites
+- listdeviceswmi
+- microsoft endpoint configuration management list application deployments
+- software deployment
+- microsoft endpoint configuration management list collections (versioned route)
+- listdeployments
+- microsoft endpoint configuration management get a collection
+- listpackages
+- microsoft endpoint configuration management list systems
+- listapplications
+- microsoft endpoint configuration management list devices (versioned route)
+- device management
+- microsoft endpoint configuration management get a device (versioned route)
 slug: microsoft-endpoint-configuration-management-capability
 source_filename: microsoft-endpoint-configuration-management-capability.yaml
 source_heading: Capability Spec

@@ -9,11 +9,11 @@ personas: []
 provider_name: Amazon Data Pipeline
 provider_slug: amazon-data-pipeline
 search_terms:
-- data pipeline
-- etl
-- workflows
 - data processing
+- etl
 - automation
+- workflows
+- data pipeline
 slug: etl-pipeline-operations
 source_filename: etl-pipeline-operations.yaml
 source_heading: Capability Spec

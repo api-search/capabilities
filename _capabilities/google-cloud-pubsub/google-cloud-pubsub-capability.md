@@ -61,40 +61,40 @@ personas: []
 provider_name: Google Cloud Pub/Sub
 provider_slug: google-cloud-pubsub
 search_terms:
-- deletesubscription
-- publishmessages
-- google cloud pub/sub create a topic
-- listschemas
-- google cloud pub/sub delete a subscription
-- google cloud pub/sub delete a topic
-- cloud
-- google cloud pub/sub get a topic
-- getsubscription
-- google
-- createsubscription
-- pub/sub
-- google cloud
-- google cloud pub/sub pull messages
-- gettopic
-- google cloud pub/sub publish messages
-- createschema
-- google cloud pub/sub create a schema
-- messaging
-- google cloud pub/sub acknowledge messages
-- api
-- google cloud pub/sub create a subscription
-- event-driven
-- google cloud pub/sub list schemas
-- listsubscriptions
-- google cloud pub/sub list subscriptions
-- listtopics
-- google cloud pub/sub list topics
-- google cloud pub/sub get a subscription
-- pullmessages
 - deletetopic
-- pubsub
-- acknowledgemessages
+- google cloud pub/sub delete a subscription
+- gettopic
 - createtopic
+- event-driven
+- api
+- createsubscription
+- listsubscriptions
+- google cloud pub/sub list schemas
+- google
+- pubsub
+- getsubscription
+- google cloud pub/sub publish messages
+- deletesubscription
+- acknowledgemessages
+- createschema
+- pullmessages
+- publishmessages
+- listschemas
+- google cloud pub/sub get a subscription
+- google cloud pub/sub delete a topic
+- google cloud pub/sub create a subscription
+- google cloud pub/sub create a schema
+- google cloud pub/sub pull messages
+- cloud
+- pub/sub
+- google cloud pub/sub list subscriptions
+- google cloud pub/sub get a topic
+- google cloud pub/sub create a topic
+- google cloud pub/sub acknowledge messages
+- google cloud pub/sub list topics
+- listtopics
+- google cloud
+- messaging
 slug: google-cloud-pubsub-capability
 source_filename: google-cloud-pubsub-capability.yaml
 source_heading: Capability Spec

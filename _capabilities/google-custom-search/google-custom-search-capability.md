@@ -17,17 +17,17 @@ personas: []
 provider_name: Google Custom Search
 provider_slug: google-custom-search
 search_terms:
-- web search
-- google
-- api
-- custom search
 - custom
-- search
-- image search
-- google custom search custom search site restricted
-- searchcustomsearch
-- searchsiterestrict
 - google custom search custom search
+- searchsiterestrict
+- searchcustomsearch
+- image search
+- search
+- google
+- web search
+- custom search
+- google custom search custom search site restricted
+- api
 slug: google-custom-search-capability
 source_filename: google-custom-search-capability.yaml
 source_heading: Capability Spec

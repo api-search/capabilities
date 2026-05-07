@@ -49,33 +49,33 @@ personas: []
 provider_name: Grafana Tempo
 provider_slug: grafana-tempo
 search_terms:
-- getsearchtagsv2
 - getmetricssummary
-- getsearchtagvaluesv2
-- ready
-- getbuildinfo
-- get values for a tag
-- getsearchtagvalues
-- gettracebyid
-- searchtraces
-- open source
-- get search tag names (v2)
-- get search tag names
-- search for traces
-- get build information
-- grafana
-- api
-- tempo
-- observability
-- echo
-- readiness check
-- get trace by id
-- getsearchtags
-- get metrics summary
-- echo endpoint
 - distributed tracing
-- microservices
+- getsearchtags
+- get search tag names
+- echo
+- api
+- open source
+- grafana
+- search for traces
+- echo endpoint
+- observability
+- searchtraces
+- getbuildinfo
+- get build information
+- get metrics summary
+- gettracebyid
+- getsearchtagvalues
 - get values for a tag (v2)
+- get values for a tag
+- ready
+- get trace by id
+- tempo
+- getsearchtagsv2
+- get search tag names (v2)
+- readiness check
+- getsearchtagvaluesv2
+- microservices
 slug: grafana-tempo-capability
 source_filename: grafana-tempo-capability.yaml
 source_heading: Capability Spec

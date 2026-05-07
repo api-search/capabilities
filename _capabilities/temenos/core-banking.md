@@ -61,60 +61,60 @@ personas: []
 provider_name: Temenos
 provider_slug: temenos
 search_terms:
-- list direct debits
-- get account details
-- create a standing order
-- list payment orders
-- single customer operations
-- get customer
-- list banking accounts for a customer
-- get current balances for a bank account
-- financial services
-- get account balances
-- create standing order
-- list banking customers
-- account transaction history
-- create a new customer
-- single account operations
-- payment order management
-- list standing orders
-- accounts
-- customer management
-- list transaction history for a bank account
-- list recurring standing orders
-- transactions
-- core banking
-- create a new banking account arrangement
-- get customer details
-- create a new banking customer
-- create a new account arrangement
-- account balance information
-- open banking
-- customer account management
-- recurring standing orders
-- wealth management
-- list account transactions
-- create customer
-- direct debit mandates
-- create a payment order
-- list customer accounts
-- payments
-- list customers
-- create account
-- create payment order
-- set up a new recurring standing order
-- cloud banking
-- customers
 - list direct debit mandates
-- create a new payment order (sepa, swift, domestic)
-- list accounts
-- get balances
-- digital banking
 - get account
-- list transactions
-- get details for a specific bank account
-- banking
+- transactions
+- create customer
+- payment order management
+- cloud banking
+- wealth management
+- get customer details
+- create a standing order
+- get account details
+- list banking accounts for a customer
+- list accounts
+- create a new banking customer
+- single account operations
+- list customer accounts
+- get current balances for a bank account
+- list recurring standing orders
+- account balance information
+- digital banking
+- get account balances
+- customers
+- list standing orders
 - fintech
+- list direct debits
+- create account
+- account transaction history
+- create a payment order
+- financial services
+- customer account management
+- list payment orders
+- create payment order
+- direct debit mandates
+- get customer
+- accounts
+- create standing order
+- single customer operations
+- list customers
+- list account transactions
+- create a new account arrangement
+- create a new customer
+- open banking
+- banking
+- payments
+- customer management
+- get details for a specific bank account
+- set up a new recurring standing order
+- list transaction history for a bank account
+- list transactions
+- create a new banking account arrangement
+- recurring standing orders
+- list banking customers
+- get balances
+- create a new payment order (sepa, swift, domestic)
+- core banking
 slug: core-banking
 source_filename: core-banking.yaml
 source_heading: Capability Spec

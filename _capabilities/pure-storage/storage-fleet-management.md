@@ -49,66 +49,66 @@ personas: []
 provider_name: Pure Storage
 provider_slug: pure-storage
 search_terms:
-- list sustainability metrics
-- list flasharray arrays.
-- list volumes
-- file storage
-- list flashblade s3 buckets.
-- cross-fleet telemetry from pure1.
-- storage
-- fa list protection groups
-- object storage
-- list file systems
-- list buckets
-- infrastructure
-- fa list volumes
-- list flasharray arrays
-- list and inspect flasharray, flashblade, and pure1-tracked arrays.
-- list flasharray volumes.
-- kubernetes storage
-- flasharray volume operations.
-- fa list arrays
-- list pure1 subscription information.
-- pure1 list subscriptions
-- list arrays known to pure1.
-- flasharray host operations.
-- fleet management
-- pure1 list arrays
-- block storage
-- pure1
-- list pure1 arrays
-- flashblade s3 bucket operations.
-- list pure1 fleet metrics catalog.
-- fb list arrays
-- flashblade file system operations.
 - pure1 sustainability and energy telemetry.
-- cloud storage
-- list flasharray protection groups for replication and snapshots.
-- data storage
-- list flasharray hosts.
-- enterprise storage
-- pure storage
-- list pure1 alerts across the fleet.
-- list flashblade arrays
-- list metrics
-- flashblade
-- list hosts
-- fb list file systems
-- pure1 list alerts
+- list file systems
 - flash storage
-- list flashblade arrays.
 - list pure1 sustainability metrics for arrays.
-- flasharray
-- fa list hosts
-- pure1 fleet-wide alert stream.
-- list alerts
-- storage administration
-- list sustainability metrics for arrays.
-- list flashblade file systems.
-- list pure1 fleet-wide alerts.
+- pure1 list alerts
+- list buckets
+- list flashblade arrays
+- flashblade s3 bucket operations.
+- enterprise storage
+- flashblade
 - fb list buckets
+- storage administration
+- list pure1 fleet-wide alerts.
+- pure storage
+- list flasharray arrays
+- cloud storage
+- list sustainability metrics for arrays.
+- pure1 fleet-wide alert stream.
+- list and inspect flasharray, flashblade, and pure1-tracked arrays.
+- flasharray host operations.
+- fb list arrays
+- list pure1 subscription information.
+- infrastructure
+- list arrays known to pure1.
+- fa list arrays
+- flasharray volume operations.
+- fa list protection groups
+- list pure1 fleet metrics catalog.
+- data storage
+- kubernetes storage
+- pure1 list arrays
+- fa list hosts
+- pure1
 - pure1 list metrics
 - pure1 list sustainability
+- list flashblade s3 buckets.
+- pure1 list subscriptions
+- object storage
+- file storage
+- list flasharray hosts.
+- list alerts
+- list hosts
+- cross-fleet telemetry from pure1.
+- fleet management
+- storage
+- list sustainability metrics
+- fb list file systems
+- list pure1 alerts across the fleet.
+- list metrics
+- list flasharray volumes.
+- flashblade file system operations.
+- list flasharray protection groups for replication and snapshots.
+- flasharray
+- list flashblade file systems.
+- list flasharray arrays.
+- fa list volumes
+- list flashblade arrays.
+- block storage
+- list volumes
+- list pure1 arrays
 slug: storage-fleet-management
 source_filename: storage-fleet-management.yaml
 source_heading: Capability Spec

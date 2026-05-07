@@ -45,31 +45,31 @@ personas: []
 provider_name: Prometheus
 provider_slug: prometheus
 search_terms:
-- getalerts
 - listsilences
 - prometheus list receivers
-- listreceivers
 - prometheus post alerts
+- getstatus
+- getalertgroups
+- api
+- deletesilence
+- monitoring
+- prometheus
+- prometheus get active alerts
 - prometheus create or update silence
+- observability
+- prometheus get alertmanager status
+- prometheus get silence by id
+- prometheus get alert groups
 - getsilence
 - metrics
-- prometheus get active alerts
-- alerting
+- getalerts
+- listreceivers
 - prometheus list silences
-- monitoring
-- prometheus get silence by id
-- prometheus get alertmanager status
-- prometheus
-- postalerts
-- time series
-- getstatus
-- api
-- observability
-- deletesilence
-- prometheus get alert groups
+- alerting
 - prometheus expire silence
+- time series
 - createsilence
-- getalertgroups
+- postalerts
 slug: prometheus-capability
 source_filename: prometheus-capability.yaml
 source_heading: Capability Spec

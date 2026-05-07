@@ -25,46 +25,46 @@ personas: []
 provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
-- submit pan event
-- fraud detection
-- account management
 - list bins
-- issue a new card
-- issuers
-- issue card
-- lookup bin
-- manage a payment account lifecycle
-- financial services
-- payment account management
-- card issuance and management
-- get account catalog
-- manage account
-- issue a new mastercard card
+- automatic billing updates
 - list available mastercard bins
-- card management
-- submit pan-related event for account level management
-- retrieve account catalog data
 - request updated card credentials
-- get payment account reference
-- validate account
-- credit cards
-- manage payment account
-- digital identity
-- query payment account reference to link tokens to accounts
-- open banking
-- look up bin information for a card
-- get billing updates
-- mastercard
-- look up bin information
-- manage a payment account
-- payments
-- get card details
+- fraud detection
+- issuers
+- account management
+- issue a new mastercard card
+- manage a payment account lifecycle
 - create a physical card fulfillment order
-- request updated card credentials for card-on-file
+- look up bin information for a card
+- lookup bin
+- manage account
 - validate account details
+- card management
+- get card details
 - create fulfillment order
 - bin lookup
-- automatic billing updates
+- validate account
+- get account catalog
+- financial services
+- credit cards
+- payment account management
+- request updated card credentials for card-on-file
+- submit pan-related event for account level management
+- issue card
+- get payment account reference
+- card issuance and management
+- get billing updates
+- retrieve account catalog data
+- issue a new card
+- manage payment account
+- open banking
+- query payment account reference to link tokens to accounts
+- submit pan event
+- payments
+- manage a payment account
+- look up bin information
+- digital identity
+- mastercard
 slug: card-and-account-management
 source_filename: card-and-account-management.yaml
 source_heading: Capability Spec

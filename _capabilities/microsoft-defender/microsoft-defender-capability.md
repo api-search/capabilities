@@ -49,29 +49,29 @@ personas: []
 provider_name: Microsoft Defender
 provider_slug: microsoft-defender
 search_terms:
-- updatealert
-- microsoft defender get vulnerability by id
-- getmachine
-- microsoft defender list all vulnerabilities
-- microsoft defender get machine by id
-- microsoft defender list machines
-- microsoft defender list vulnerabilities for a machine
-- microsoft defender update alert
 - microsoft defender list machines affected by a vulnerability
-- listvulnerabilities
-- defender
-- microsoft defender list alerts for a machine
+- getmachine
+- microsoft defender update alert
+- microsoft defender list vulnerabilities for a machine
+- getvulnerability
 - api
-- listmachinevulnerabilities
+- listvulnerabilitymachinereferences
+- listvulnerabilities
+- listalerts
+- getalert
+- microsoft
+- listmachinealerts
+- microsoft defender get alert by id
+- updatealert
+- microsoft defender list machines
+- microsoft defender list all vulnerabilities
 - microsoft defender list alerts
 - listmachines
-- microsoft defender get alert by id
-- listalerts
-- listvulnerabilitymachinereferences
-- getalert
-- listmachinealerts
-- microsoft
-- getvulnerability
+- microsoft defender get vulnerability by id
+- defender
+- listmachinevulnerabilities
+- microsoft defender list alerts for a machine
+- microsoft defender get machine by id
 slug: microsoft-defender-capability
 source_filename: microsoft-defender-capability.yaml
 source_heading: Capability Spec

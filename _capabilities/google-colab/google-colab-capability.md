@@ -41,32 +41,32 @@ personas: []
 provider_name: Google Colab
 provider_slug: google-colab
 search_terms:
-- google colab create a colab notebook
-- google colab update notebook metadata
-- colab
-- google colab delete a notebook
-- notebooks
-- listnotebooks
+- getnotebook
+- copynotebook
+- createnotebook
 - createpermission
+- api
 - google colab share a notebook
 - google colab list notebook permissions
-- jupyter
-- deletenotebook
-- google colab get notebook metadata
+- google colab create a colab notebook
 - google
 - updatenotebook
-- copynotebook
-- getnotebook
-- google cloud
-- google colab copy a notebook
-- machine learning
-- api
-- python
-- createnotebook
 - collaboration
+- machine learning
+- google colab copy a notebook
+- google colab update notebook metadata
 - data science
-- google colab list colab notebooks
+- python
+- notebooks
+- google colab get notebook metadata
+- deletenotebook
+- google colab delete a notebook
 - listpermissions
+- google cloud
+- jupyter
+- listnotebooks
+- colab
+- google colab list colab notebooks
 slug: google-colab-capability
 source_filename: google-colab-capability.yaml
 source_heading: Capability Spec

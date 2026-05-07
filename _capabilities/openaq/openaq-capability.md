@@ -249,115 +249,115 @@ personas: []
 provider_name: OpenAQ
 provider_slug: openaq
 search_terms:
-- get v1 locations by id v1 locations location id
-- sensor hourly measurements get v3 sensors sensor
-- sensor hourly measurements aggregate to dow get
-- sensor daily get v3 sensors sensors id days get
-- location latest get v3 locations locations id la
-- sensor hourly measurements aggregate to day get
-- openaq get a list of measurements
-- sensor hourly measurements aggregate to year get
-- parameters get v2 parameters get
-- data quality
-- openaq get manufacturers
-- openaq get a country by id
-- openaq get a parameter by id
+- cities getv1 v1 cities get
+- sensor measurements aggregated get hourly v3 sen
+- instruments get v3 licenses get
+- averages v2 get v2 averages get
+- countries by path v2 countries country id get
+- api
+- get v2 location by id v2 locations location id g
+- parameters get v3 parameters get
+- sensor yearly get v3 sensors sensors id years ge
+- sensor measurements get v3 sensors sensors id me
+- openaq get location by id
+- openaq get flags by sensor id
+- openaq
 - measurements get v1 v1 measurements get
+- sensor hourly measurements aggregate to day get
+- openaq get measurements aggregated to days by sensor id
+- openaq get a list of measurements
+- sensor hourly measurements aggregate to dow get
+- sensor hourly measurements aggregate to hod get
+- openaq get a manufacturer by id
+- sensor get v3 sensors sensors id get
+- country get v3 countries countries id get
+- sensor hourly measurements aggregate to year get
+- projects get v2 projects get
+- openaq get licenses
+- openaq get latest measurements
+- openaq get measurements aggregated from hour to month by sensor id
+- parameter get v3 parameters parameters id get
+- data quality
+- locationsv1 get v1 locations get
+- sensor hourly measurements aggregate to month ge
+- sensor hourly measurements aggregate to moy get
+- countries get v2 countries get
+- openaq get country by id
+- openaq get countries
+- measurements get v2 measurements get
+- openaq get an instrument by id
+- sensors get v3 locations locations id sensors ge
+- latest v1 get v1 latest get
+- locations get v3 locations get
+- provider get v3 providers providers id get
+- cities get v2 cities get
+- get v2 latest by id v2 latest location id get
+- openaq project by id
+- openaq get cities
+- license get v3 licenses licenses id get
+- openaq get measurements aggregated to day by sensor id
+- latest get v2 latest get
+- openaq get a location by id
+- openaq get a parameters
+- location get v3 locations locations id get
+- openaq get sensors by location id
+- openaq get instruments by manufacturer id
+- sensor daily get v3 sensors sensors id days get
+- openaq get manufacturers
+- sensor daily aggregate to year get v3 sensors se
+- get v1 locations by id v1 locations location id
+- openaq get instruments
+- openaq get a country by id
+- openaq get measurements aggregated from hour to year by sensor id
+- sensor daily aggregate to month get v3 sensors s
+- parameters get v2 parameters get
+- openaq get latest measurements by location id
+- parameters getv1 v1 parameters get
+- sensor flags get v3 sensors sensor id flags get
+- countries by path v1 countries country id get
+- locations get v2 locations get
+- sensor daily measurements aggregate to moy get v
+- openaq get measurements aggregated to year by sensor id
+- openaq get measurements aggregated to hour by sensor id
+- openaq get measurements aggregated from hour to day by sensor id
+- location flags get v3 locations locations id fla
+- owner get v3 owners owners id get
+- openaq get a owner by id
+- sensor daily measurements aggregate to dow get v
+- openaq get measurements aggregated to hours by sensor id
+- openaq get a provider by id
+- openaq get owners
+- countries getv1 v1 countries get
+- countries get v3 countries get
+- openaq get averaged values
+- openaq get parameters
+- openaq get measurements
+- openaq parameters latest get
+- location latest get v3 locations locations id la
+- openaq get measurements aggregated from day to year by sensor id
+- openaq get measurements by sensor id
+- manufacturer get v3 manufacturers manufacturers
+- instrument get v3 instruments instruments id get
+- openaq projects
 - openaq get a sensor by id
 - openaq get a location's latest measurements
-- sensor hourly measurements aggregate to month ge
-- openaq get a owner by id
-- openaq projects
-- api
-- openaq get a parameters
-- openaq get countries
-- get v1 latest by id v1 latest location id get
-- openaq get instruments
-- countries getv1 v1 countries get
-- openaq get averaged values
-- data
-- sensor daily measurements aggregate to moy get v
-- openaq get an instrument by id
-- openaq get location by id
-- get v2 latest by id v2 latest location id get
-- sensor flags get v3 sensors sensor id flags get
-- country get v3 countries countries id get
-- license get v3 licenses licenses id get
-- sensor measurements get v3 sensors sensors id me
-- sensor measurements aggregated get hourly v3 sen
-- sensors get v3 locations locations id sensors ge
-- countries get v2 countries get
-- latest v1 get v1 latest get
 - instruments get v3 instruments get
-- openaq get licenses
-- manufacturers get v3 manufacturers get
-- openaq get flags by sensor id
-- openaq get measurements aggregated to year by sensor id
-- openaq get latest measurements
-- openaq get flags by location id
-- parameters get v3 parameters get
-- averages v2 get v2 averages get
-- cities getv1 v1 cities get
-- openaq get measurements aggregated to day by sensor id
-- location flags get v3 locations locations id fla
-- openaq get measurements by sensor id
-- openaq get measurements aggregated from hour to day by sensor id
-- openaq
-- countries get v3 countries get
-- countries by path v2 countries country id get
-- locationsv1 get v1 locations get
-- provider get v3 providers providers id get
-- openaq get measurements aggregated from hour to day of week by sensor id
-- locations get v2 locations get
-- openaq get instruments by manufacturer id
-- location get v3 locations locations id get
-- openaq get providers
-- openaq get measurements aggregated from hour to month by sensor id
-- instruments get v3 licenses get
-- openaq get a location by id
-- openaq get measurements aggregated to hours by sensor id
-- locations get v3 locations get
-- openaq parameters latest get
-- projects get v2 projects get
-- sensor daily aggregate to month get v3 sensors s
-- openaq get a provider by id
-- openaq get cities
-- get instruments by manufacturer v3 manufacturers
-- countries by path v1 countries country id get
-- openaq get measurements aggregated from day to day of week by sensor id
-- openaq get owners
-- owners get v3 owners get
-- openaq get latest measurements by location id
-- openaq get sensors by location id
-- openaq get locations
-- sensor get v3 sensors sensors id get
-- providers get v3 providers get
-- sensor measurements aggregated get daily v3 sens
-- sensor yearly get v3 sensors sensors id years ge
-- cities get v2 cities get
-- openaq get parameters
-- openaq get measurements aggregated to hour by sensor id
-- openaq get measurements
-- parameters getv1 v1 parameters get
 - parameters latest get v3 parameters parameters i
-- openaq get a manufacturer by id
-- sensor hourly measurements aggregate to hod get
+- manufacturers get v3 manufacturers get
+- providers get v3 providers get
+- get instruments by manufacturer v3 manufacturers
+- openaq get measurements aggregated from day to day of week by sensor id
+- sensor measurements aggregated get daily v3 sens
 - projects get v2 projects project id get
-- measurements get v2 measurements get
-- owner get v3 owners owners id get
-- get v2 location by id v2 locations location id g
-- openaq get measurements aggregated from day to year by sensor id
-- sensor daily aggregate to year get v3 sensors se
-- openaq get measurements aggregated to days by sensor id
-- latest get v2 latest get
-- openaq get country by id
-- sensor daily measurements aggregate to dow get v
-- openaq project by id
-- parameter get v3 parameters parameters id get
-- openaq get measurements aggregated from hour to year by sensor id
-- sensor hourly measurements aggregate to moy get
-- instrument get v3 instruments instruments id get
-- manufacturer get v3 manufacturers manufacturers
+- openaq get locations
+- owners get v3 owners get
+- openaq get providers
+- data
+- openaq get measurements aggregated from hour to day of week by sensor id
+- sensor hourly measurements get v3 sensors sensor
+- openaq get a parameter by id
+- openaq get flags by location id
+- get v1 latest by id v1 latest location id get
 slug: openaq-capability
 source_filename: openaq-capability.yaml
 source_heading: Capability Spec

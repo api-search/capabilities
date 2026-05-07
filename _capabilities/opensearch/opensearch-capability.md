@@ -197,107 +197,107 @@ personas: []
 provider_name: OpenSearch
 provider_slug: opensearch
 search_terms:
-- list all roles
-- changepassword
-- getrolemapping
-- delete role mapping
-- get audit log configuration
-- analytics
-- getrole
-- patch role
-- createorreplacerole
-- create or replace a tenant
-- list all action groups
-- get ssl certificates loaded by the cluster
-- security
-- list all tenants
-- replacesecurityconfig
-- listnodesdn
-- api
-- observability
-- reloadhttpcerts
-- search
-- createorreplacerolemapping
-- patchauditconfig
-- opensearch
-- list all internal users
-- get node dn entry
-- replaceallowlist
-- getallowlist
-- patch internal user
-- create or replace node dn entry
-- patchrolemapping
-- getauditconfig
-- change current user password
-- listactiongroups
-- replaceauditconfig
-- deleterolemapping
-- deletetenant
-- patchtenant
-- securityhealth
-- getinternaluser
-- patchactiongroup
-- security plugin health
-- patch role mapping
-- reload transport-layer ssl certificates
-- listinternalusers
-- get action group
-- patch tenant
-- reload http-layer ssl certificates
-- open source
-- listroles
-- create or replace an action group
-- gettenant
-- deletenodesdn
-- listrolemappings
-- patchrole
-- get allowlist
-- get role mapping
-- get security configuration
-- replace security configuration
-- get current user account
-- patch action group
-- listtenants
-- deleterole
-- delete internal user
-- getnodesdn
-- delete action group
-- flush security cache
-- getactiongroup
-- list all role mappings
-- get tenant
-- patchsecurityconfig
-- patch security configuration
-- replace allowlist
-- create or replace an internal user
-- delete tenant
-- patchallowlist
-- patchinternaluser
-- get ssl handshake info for current request
-- get internal user
-- reloadtransportcerts
-- delete node dn entry
-- patch audit log configuration
-- get role
-- getsecurityconfig
-- flushsecuritycache
-- deleteinternaluser
-- authinfo
 - getaccount
-- createorreplacenodesdn
-- sslinfo
-- replace audit log configuration
-- getcertificates
-- patch allowlist
-- createorreplaceactiongroup
-- createorreplacetenant
-- list all node dn entries
-- create or replace a role mapping
+- patch action group
+- security plugin health
+- api
+- delete action group
+- reload http-layer ssl certificates
+- get internal user
 - delete role
+- gettenant
 - create or replace a role
+- getactiongroup
+- get ssl certificates loaded by the cluster
+- getrole
+- get audit log configuration
+- list all action groups
+- listinternalusers
+- create or replace a role mapping
+- createorreplaceactiongroup
+- getinternaluser
+- delete role mapping
+- get ssl handshake info for current request
+- flush security cache
+- deleteinternaluser
+- opensearch
+- patch allowlist
+- get security configuration
+- createorreplacerolemapping
+- getcertificates
+- create or replace an action group
+- list all role mappings
+- replace security configuration
+- patchallowlist
+- delete node dn entry
+- create or replace a tenant
+- change current user password
+- listnodesdn
+- deletetenant
+- deletenodesdn
+- get action group
+- create or replace node dn entry
+- list all roles
+- security
+- get role mapping
+- list all tenants
+- patchtenant
+- patch security configuration
+- delete tenant
+- get current user account
+- getauditconfig
+- listrolemappings
+- getrolemapping
+- replacesecurityconfig
+- replaceallowlist
+- deleterolemapping
+- get node dn entry
 - get authentication info for current request
-- createorreplaceinternaluser
+- getnodesdn
 - deleteactiongroup
+- changepassword
+- observability
+- replace allowlist
+- createorreplacenodesdn
+- authinfo
+- listtenants
+- listactiongroups
+- getallowlist
+- sslinfo
+- securityhealth
+- flushsecuritycache
+- createorreplaceinternaluser
+- delete internal user
+- search
+- patchauditconfig
+- patchrolemapping
+- analytics
+- list all node dn entries
+- reload transport-layer ssl certificates
+- replaceauditconfig
+- patch internal user
+- createorreplacetenant
+- get tenant
+- create or replace an internal user
+- get role
+- patch role
+- deleterole
+- patch tenant
+- patchrole
+- open source
+- reloadtransportcerts
+- get allowlist
+- patchsecurityconfig
+- replace audit log configuration
+- createorreplacerole
+- patch role mapping
+- getsecurityconfig
+- reloadhttpcerts
+- listroles
+- patchactiongroup
+- patch audit log configuration
+- list all internal users
+- patchinternaluser
 slug: opensearch-capability
 source_filename: opensearch-capability.yaml
 source_heading: Capability Spec

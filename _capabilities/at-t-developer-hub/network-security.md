@@ -22,46 +22,46 @@ personas: []
 provider_name: AT&T Developer Hub
 provider_slug: at-t-developer-hub
 search_terms:
+- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
 - Identity Developer
-- get date of most recent sim swap
-- fraud prevention
-- device status
-- sim swap get date
 - check sim swap
-- check if an at&t subscriber's sim card has been swapped recently to detect fraud
-- Security Developer
-- mobile or web developer building connectivity-aware applications
-- security
-- 5g
-- silently verify device phone number
-- sim swap date retrieval
-- phone number verification via network
-- silently verify that a mobile device is associated with a phone number using the at&t network
-- check if a sim card has been swapped recently
-- network-based fraud prevention and authentication using sim swap and number verification
-- edge computing
 - developer building fraud prevention and identity verification using network signals
 - connectivity
-- retrieve sim swap date
-- verify phone number
-- sim swap check
+- sim swap
+- mobile or web developer building connectivity-aware applications
 - get the exact date and time of the most recent sim swap for a phone number
+- authentication
+- verify phone number
+- edge computing
+- check if an at&t subscriber's sim card has been swapped recently to detect fraud
+- retrieve sim swap date
+- sim swap get date
 - network apis
 - telecommunications
 - network-based security signals for fraud detection and identity verification
-- camara
-- authentication
-- at&t
-- 5g network quality monitoring and on-demand qos enhancement
-- number verify
-- engineer managing iot device connectivity and optimizing 5g performance for industrial applications
-- IoT Engineer
-- sim swap fraud detection
-- App Developer
-- 5g connectivity monitoring and qos optimization using device status and quality on demand
-- mobile network-based authentication without otp
+- Security Developer
 - developer implementing passwordless or frictionless mobile authentication
-- sim swap
+- fraud prevention
+- camara
+- App Developer
+- sim swap fraud detection
+- IoT Engineer
+- phone number verification via network
+- 5g
+- sim swap check
+- at&t
+- check if a sim card has been swapped recently
+- network-based fraud prevention and authentication using sim swap and number verification
+- 5g connectivity monitoring and qos optimization using device status and quality on demand
+- sim swap date retrieval
+- silently verify device phone number
+- mobile network-based authentication without otp
+- number verify
+- 5g network quality monitoring and on-demand qos enhancement
+- security
+- device status
+- get date of most recent sim swap
+- silently verify that a mobile device is associated with a phone number using the at&t network
 slug: network-security
 source_filename: network-security.yaml
 source_heading: Capability Spec

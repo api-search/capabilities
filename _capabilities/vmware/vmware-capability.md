@@ -205,111 +205,111 @@ personas: []
 provider_name: VMware
 provider_slug: vmware
 search_terms:
-- vmware get current session information
-- vmware connect an esxi host
-- vmware list esxi hosts
-- vmware get datacenter details
-- vmware delete a datacenter
-- getvmmemory
-- poweroffvm
-- vmware add a network adapter to a vm
-- vmware create a tag
-- vmware get guest networking information
-- vmware delete a content library
-- resetvm
-- vmware update vm hardware configuration
-- suspendvm
-- disconnecthost
-- vmware list vm virtual disks
-- api
-- vmware create a datacenter
-- vmware get vm power state
-- listvms
-- vmware list folders
-- liststoragepolicies
-- getvmguestidentity
-- getvmpowerstate
-- vmware list datacenters
-- infrastructure
-- deletecontentlibrary
-- attachtag
-- vmware get cluster details
-- getdatastore
-- virtualization
-- listcontentlibraries
-- vmware terminate the current session
-- createdatacenter
-- container management
-- getvmguestnetworking
-- cloud computing
-- vmware list datastores
-- vmware get esxi host details
-- vmware get guest os identity
-- vmware attach a tag to an object
-- vmware suspend a virtual machine
-- vmware get vm memory configuration
-- vmware delete a virtual machine
-- listnetworks
-- vmware power off a virtual machine
-- listhosts
-- createvm
-- connecthost
-- vmware get virtual machine details
-- vmware create a content library
-- listclusters
-- vmware list clusters
-- vmware list networks
-- getvmcpu
-- vmware list vm network adapters
-- gethost
-- listresourcepools
-- updatevmcpu
-- vmware list storage policies
-- vmware update vm memory configuration
-- getdatacenter
-- vmware power on a virtual machine
-- vmware get content library details
-- vmware list tags
-- vmware reset a virtual machine
-- createcontentlibrary
-- vmware update vm cpu configuration
-- vmware add a virtual disk to a vm
-- vmware list virtual machines
 - createsession
-- getcontentlibrary
-- vmware
-- deletesession
-- getcluster
-- listdatastores
-- vmware disconnect an esxi host
-- listtags
-- listtagcategories
-- vmware get vm cpu configuration
-- vmware list tag categories
-- hybrid cloud
-- vmware create a new virtual machine
-- getsessioninfo
-- vmware get datastore details
-- createtagcategory
-- vmware list resource pools
-- listfolders
-- createvmdisk
-- deletedatacenter
-- getvm
-- vmware list content libraries
+- getvmmemory
+- vmware list esxi hosts
+- vmware list virtual machines
+- getvmcpu
+- api
+- vmware list vm network adapters
+- vmware list tags
 - poweronvm
-- listvmdisks
-- vmware create a new authentication session
-- updatevmmemory
-- createtag
-- listdatacenters
-- deletevm
-- vmware create a tag category
-- getvmhardware
-- listvmethernet
+- getsessioninfo
+- vmware get vm cpu configuration
+- getdatastore
+- vmware delete a virtual machine
+- vmware list resource pools
+- vmware get vm memory configuration
+- vmware power on a virtual machine
+- vmware add a network adapter to a vm
+- listresourcepools
+- vmware get virtual machine details
+- vmware delete a datacenter
 - updatevmhardware
+- deletecontentlibrary
+- getvmhardware
+- getdatacenter
+- listdatastores
+- createvm
+- listnetworks
+- vmware list datastores
+- vmware create a new authentication session
+- deletedatacenter
+- vmware get current session information
+- listhosts
+- createdatacenter
+- gethost
+- listfolders
+- getvmguestidentity
+- connecthost
+- virtualization
+- vmware get content library details
+- listtags
+- createcontentlibrary
+- vmware add a virtual disk to a vm
+- getcontentlibrary
+- createvmdisk
+- vmware get datastore details
+- vmware update vm cpu configuration
+- getvmguestnetworking
+- resetvm
+- updatevmcpu
+- vmware get guest networking information
+- updatevmmemory
+- poweroffvm
+- vmware suspend a virtual machine
+- listcontentlibraries
+- liststoragepolicies
+- vmware get esxi host details
+- vmware get datacenter details
+- vmware attach a tag to an object
+- createtagcategory
+- container management
+- cloud computing
+- infrastructure
+- listvms
+- disconnecthost
 - vmware get vm hardware configuration
+- listvmethernet
+- vmware list storage policies
+- vmware create a content library
+- vmware list content libraries
+- vmware get guest os identity
+- createtag
+- vmware delete a content library
+- hybrid cloud
+- vmware create a tag category
+- vmware reset a virtual machine
+- vmware list datacenters
+- vmware
+- vmware create a new virtual machine
+- getvm
+- listtagcategories
+- getcluster
+- vmware disconnect an esxi host
+- deletesession
+- getvmpowerstate
 - createvmethernet
+- vmware list folders
+- listvmdisks
+- vmware update vm memory configuration
+- deletevm
+- vmware terminate the current session
+- vmware get cluster details
+- vmware list tag categories
+- listclusters
+- attachtag
+- vmware connect an esxi host
+- vmware update vm hardware configuration
+- vmware list vm virtual disks
+- suspendvm
+- vmware create a tag
+- listdatacenters
+- vmware power off a virtual machine
+- vmware create a datacenter
+- vmware list clusters
+- vmware get vm power state
+- vmware list networks
 slug: vmware-capability
 source_filename: vmware-capability.yaml
 source_heading: Capability Spec

@@ -29,24 +29,24 @@ personas: []
 provider_name: Free Cocktail API
 provider_slug: free-cocktail-api
 search_terms:
-- cocktails
-- get a random cocktail
-- lookupbyid
-- list filter values
-- ingredients
+- free
 - searchcocktails
 - filter cocktails
-- listfilters
-- randomcocktail
-- api
-- lookup cocktail or ingredient by id
-- search cocktails or ingredients
-- filtercocktails
-- drinks
-- recipes
+- cocktails
 - beverages
+- list filter values
+- recipes
 - cocktail
-- free
+- drinks
+- ingredients
+- lookup cocktail or ingredient by id
+- get a random cocktail
+- api
+- randomcocktail
+- lookupbyid
+- listfilters
+- filtercocktails
+- search cocktails or ingredients
 slug: free-cocktail-api-capability
 source_filename: free-cocktail-api-capability.yaml
 source_heading: Capability Spec

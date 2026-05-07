@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- submit a billing-tagged blpapi request.
-- bloomberg
 - query tagged
-- billing
-- get response
-- api integration
+- blpapi
+- bloomberg
 - governance
 - spec-driven integration
+- submit a billing-tagged blpapi request.
 - ai
-- mcp
 - capabilities
-- blpapi
+- billing
+- api integration
+- get response
+- mcp
+- naftiko
 slug: blpapi-data-license-billing-tagged-capability
 source_filename: blpapi-data-license-billing-tagged-capability.yaml
 source_heading: Capability Spec

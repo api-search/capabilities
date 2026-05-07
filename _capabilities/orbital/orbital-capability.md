@@ -45,28 +45,28 @@ personas: []
 provider_name: Orbital
 provider_slug: orbital
 search_terms:
-- createconnection
-- orbital list schemas
+- listtypes
+- orbital get a data source connection
+- submittaxiqlquery
+- api
+- listcaches
 - gateways
 - orbital delete a data source connection
-- listschemas
-- submittaxiqlquery
-- listtypes
-- listconnections
-- orbital create a data source connection
-- orbital list registered types
-- orbital get a data source connection
-- deleteconnection
-- orbital
-- getconnection
-- api
-- orbital submit a taxiql query
-- listcaches
+- orbital list schemas
 - orbital list data source connections
-- orbital list cache configurations
-- data
+- orbital create a data source connection
+- orbital submit a taxiql query
 - orbital list connected services
 - listservices
+- listschemas
+- orbital
+- getconnection
+- orbital list cache configurations
+- data
+- listconnections
+- orbital list registered types
+- createconnection
+- deleteconnection
 slug: orbital-capability
 source_filename: orbital-capability.yaml
 source_heading: Capability Spec

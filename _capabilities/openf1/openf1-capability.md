@@ -61,39 +61,39 @@ personas: []
 provider_name: OpenF1
 provider_slug: openf1
 search_terms:
-- real-time
-- sports
-- list drivers for a session
-- list grand prix meetings
-- real-time intervals between drivers (race only)
-- getintervals
-- motorsport
-- list team radio recordings
-- telemetry
 - track weather conditions during a session
-- getweather
-- listdrivers
-- listteamradio
-- high-frequency car telemetry (rpm, throttle, brake, gear, speed, drs)
-- list pit-lane events
-- driver running order during a session
-- getlocation
-- getcardata
-- race control messages, flags, and incidents
-- list laps with sector and speed-trap times
-- list f1 sessions
-- openf1
-- api
-- listpitstops
-- formula 1
-- listsessions
 - liststints
-- listracecontrol
+- listsessions
+- motorsport
+- api
+- openf1
 - getposition
+- listteamradio
+- telemetry
+- listpitstops
 - listlaps
-- listmeetings
-- three-dimensional car location on track
+- getweather
 - list tyre stints with compound and age
+- high-frequency car telemetry (rpm, throttle, brake, gear, speed, drs)
+- list laps with sector and speed-trap times
+- real-time intervals between drivers (race only)
+- three-dimensional car location on track
+- list drivers for a session
+- getcardata
+- list grand prix meetings
+- list f1 sessions
+- getlocation
+- list pit-lane events
+- race control messages, flags, and incidents
+- formula 1
+- listracecontrol
+- listdrivers
+- list team radio recordings
+- sports
+- driver running order during a session
+- getintervals
+- real-time
+- listmeetings
 slug: openf1-capability
 source_filename: openf1-capability.yaml
 source_heading: Capability Spec

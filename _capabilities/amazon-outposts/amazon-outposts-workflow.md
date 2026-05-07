@@ -13,20 +13,20 @@ personas: []
 provider_name: Amazon Outposts
 provider_slug: amazon-outposts
 search_terms:
-- amazon outposts
 - list resources
-- list and manage openapi.yml resources
-- aws
-- core api workflow
-- list amazon outposts resources
-- on-premises
-- primary amazon outposts resources
-- list openapi.yml
-- infrastructure
-- Developer
-- developer using amazon outposts apis
+- amazon outposts
 - edge computing
+- aws
+- list openapi.yml
+- primary amazon outposts resources
 - hybrid cloud
+- developer using amazon outposts apis
+- on-premises
+- infrastructure
+- core api workflow
+- list and manage openapi.yml resources
+- list amazon outposts resources
+- Developer
 slug: amazon-outposts-workflow
 source_filename: amazon-outposts-workflow.yaml
 source_heading: Capability Spec

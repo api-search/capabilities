@@ -25,33 +25,33 @@ personas: []
 provider_name: Unleash
 provider_slug: unleash
 search_terms:
+- create token
+- feature flags
+- create a new api token for an unleash sdk or integration
+- users
+- unleash
+- list tokens
+- api token management
+- feature management
+- open source
+- list all users
+- api tokens
+- access control
+- create a new unleash user with email and role assignment
 - list all users in the unleash instance
 - developer tools
-- create api token
-- a/b testing
-- feature management
-- users
-- progressive delivery
-- create a new user
-- create user
-- api token management
-- list api tokens
-- list tokens
-- list all users
-- create a new unleash user with email and role assignment
-- open source
-- list all api tokens
-- create a new api token
-- unleash
-- api tokens
-- administration
-- create a new api token for an unleash sdk or integration
-- access control
-- feature flags
 - list users
-- create token
-- user management
+- administration
+- progressive delivery
+- list all api tokens
 - list all api tokens in the unleash instance
+- user management
+- a/b testing
+- create user
+- create a new user
+- list api tokens
+- create api token
+- create a new api token
 slug: access-management
 source_filename: access-management.yaml
 source_heading: Capability Spec

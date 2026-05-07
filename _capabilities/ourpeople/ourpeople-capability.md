@@ -33,23 +33,23 @@ personas: []
 provider_name: OurPeople
 provider_slug: ourpeople
 search_terms:
-- getbroadcast
-- get broadcast details
-- listdeliveryrecipients
-- listcontentrecipients
-- workforce
-- exchange client credentials for a token
-- refresh an access token
-- list delivery recipients
-- list content recipients
-- api
 - createtoken
+- exchange client credentials for a token
+- listdeliveryrecipients
+- list recent deliveries
+- get broadcast details
 - refreshtoken
 - ourpeople
-- list recent deliveries
-- frontline
-- communications
 - listdeliveries
+- getbroadcast
+- refresh an access token
+- api
+- frontline
+- list content recipients
+- listcontentrecipients
+- workforce
+- list delivery recipients
+- communications
 slug: ourpeople-capability
 source_filename: ourpeople-capability.yaml
 source_heading: Capability Spec

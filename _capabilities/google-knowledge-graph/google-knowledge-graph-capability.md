@@ -13,17 +13,17 @@ personas: []
 provider_name: Google Knowledge Graph Search
 provider_slug: google-knowledge-graph
 search_terms:
-- google knowledge graph search search entities
-- linked data
-- google
-- api
-- graph
-- entities
-- semantic search
-- knowledge
-- schema.org
-- searchentities
 - knowledge graph
+- schema.org
+- google
+- knowledge
+- entities
+- google knowledge graph search search entities
+- graph
+- searchentities
+- api
+- semantic search
+- linked data
 slug: google-knowledge-graph-capability
 source_filename: google-knowledge-graph-capability.yaml
 source_heading: Capability Spec

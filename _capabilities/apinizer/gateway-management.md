@@ -25,25 +25,25 @@ personas: []
 provider_name: Apinizer
 provider_slug: apinizer
 search_terms:
-- list all configured apinizer api gateways with their status and configuration
-- list policies
-- retrieve platform monitoring metrics
-- get metrics
-- api monitoring
+- list all security and traffic policies applied to a specific apinizer gateway
+- create gateway
+- list all api endpoints registered on a specific apinizer gateway
+- api management
+- policies
 - list api endpoints on a gateway
+- api gateway
+- retrieve monitoring metrics including request counts, latency, and error rates from apinizer
+- get metrics
+- list policies
 - list gateways
 - list all configured apinizer gateways
-- list all security and traffic policies applied to a specific apinizer gateway
-- api gateway
-- api management
-- list endpoints
 - create a new apinizer api gateway
-- create gateway
-- api security
-- retrieve monitoring metrics including request counts, latency, and error rates from apinizer
-- list all api endpoints registered on a specific apinizer gateway
-- policies
+- retrieve platform monitoring metrics
 - list policies applied to a gateway
+- api security
+- api monitoring
+- list endpoints
+- list all configured apinizer api gateways with their status and configuration
 slug: gateway-management
 source_filename: gateway-management.yaml
 source_heading: Capability Spec

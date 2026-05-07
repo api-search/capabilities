@@ -85,105 +85,105 @@ personas: []
 provider_name: Workday Recruiting
 provider_slug: workday-recruiting
 search_terms:
-- get recruiting agency
-- get details of a specific job application and its current stage
-- list pre-hire and applicant records
-- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
-- high-volume bulk applicant import for retail, hospitality, or seasonal hiring
-- hiring needs, evergreen requisitions, and position management.
-- individual candidate
-- refer a candidate
-- workday
-- hcm
-- get a recruiting agency
-- update a candidate
-- list candidate attachments
-- list candidate profiles with filters by name, email, or update date
-- recruiting agency
-- external agency relationships and candidate submissions.
-- recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
-- refer candidate
-- move a candidate to a different recruiting or disposition stage
-- update the candidate photo
-- update candidate
-- list job applications with filters by requisition, candidate, or stage
-- add a candidate attachment
-- update an existing candidate record
-- get job application
-- move candidate to a different stage
-- sourcer
-- compliance analyst
-- hiring manager
-- list candidates
-- create a new candidate record
-- list resumes, cover letters, and other attachments for a candidate
-- candidate-to-requisition links, stage progression, and offers.
 - list applicants
-- get a candidate's full profile and application history
-- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
-- human resources
-- submit a candidate referral from an existing worker
-- individual recruiting agency
-- get candidate photo
-- recruiting admin
-- assess candidate
-- builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
-- recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
-- eeo, ofccp, and veteran self-identification reference values.
-- import applicants
-- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
-- interviewer
-- get details of a specific recruiting agency
-- get the candidate photo
-- update candidate photo
-- submit agency candidate
+- list candidate attachments
+- list candidates
 - get a candidate's photo
-- get a job application
-- list recruiting agencies
-- create candidate
-- candidate profiles, attachments, photos, assessments, and referrals.
-- candidate referral
-- saas
-- pre-hire records and high-volume bulk applicant import.
-- external staffing partner that submits candidates against open requisitions through the agency portal.
-- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
-- job applications
-- drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
-- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
-- recruiter
-- interview scheduling and interviewer feedback collection.
-- initiate an employment offer for a job application
-- submit agency candidates
-- upload a resume, cover letter, or other attachment to a candidate
-- initiate an offer
-- pre-hire background screening and check packages.
-- candidate attachments
-- recruiting
-- list job applications
-- individual job application
-- initiate offer
-- recruiting configuration and reference data.
-- add candidate attachment
-- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
-- assess a candidate
-- submit a candidate assessment and optionally advance the application
-- bulk applicant import
-- get candidate
-- candidates
-- move candidate stage
-- import applicants in bulk
-- create a candidate
-- applicants
-- public publication of requisitions to internal and external career sites.
-- talent acquisition
-- candidate assessment
-- submit an agency candidate
-- submit a candidate from a recruiting agency for a job requisition
-- recruiting agencies
-- list recruiting agencies configured for external sourcing
-- get a candidate
-- candidate photo
+- candidate-to-requisition links, stage progression, and offers.
+- get the candidate photo
+- assess candidate
 - upload or replace a candidate's photo
+- create candidate
+- add candidate attachment
+- submit an agency candidate
+- candidate attachments
+- create a candidate
+- update an existing candidate record
+- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
+- individual candidate
+- submit agency candidate
+- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
+- individual recruiting agency
+- hiring manager
+- hiring needs, evergreen requisitions, and position management.
+- update candidate
+- refer a candidate
+- initiate an employment offer for a job application
+- recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
+- builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
+- get candidate photo
+- update candidate photo
+- workday
+- compliance analyst
+- recruiter
+- import applicants in bulk
+- submit a candidate referral from an existing worker
+- drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
+- refer candidate
+- recruiting
+- get details of a specific job application and its current stage
+- submit a candidate from a recruiting agency for a job requisition
+- eeo, ofccp, and veteran self-identification reference values.
+- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
+- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
+- list recruiting agencies configured for external sourcing
+- move candidate stage
+- get details of a specific recruiting agency
+- list candidate profiles with filters by name, email, or update date
+- pre-hire records and high-volume bulk applicant import.
+- interview scheduling and interviewer feedback collection.
+- add a candidate attachment
+- list job applications with filters by requisition, candidate, or stage
+- initiate offer
+- recruiting agency
+- saas
+- initiate an offer
+- external agency relationships and candidate submissions.
+- hcm
+- move candidate to a different stage
+- recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
+- update a candidate
+- high-volume bulk applicant import for retail, hospitality, or seasonal hiring
+- list job applications
+- get a candidate's full profile and application history
+- update the candidate photo
+- recruiting configuration and reference data.
+- individual job application
+- get a candidate
+- recruiting admin
+- job applications
+- get a job application
+- candidates
+- assess a candidate
+- upload a resume, cover letter, or other attachment to a candidate
+- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
+- list recruiting agencies
+- create a new candidate record
+- get a recruiting agency
+- list pre-hire and applicant records
+- recruiting agencies
+- bulk applicant import
+- pre-hire background screening and check packages.
+- candidate assessment
+- public publication of requisitions to internal and external career sites.
+- import applicants
+- talent acquisition
+- list resumes, cover letters, and other attachments for a candidate
+- interviewer
+- move a candidate to a different recruiting or disposition stage
+- submit agency candidates
+- candidate referral
+- submit a candidate assessment and optionally advance the application
+- get candidate
+- human resources
+- get job application
+- candidate photo
+- get recruiting agency
+- candidate profiles, attachments, photos, assessments, and referrals.
+- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
+- applicants
+- external staffing partner that submits candidates against open requisitions through the agency portal.
+- sourcer
 slug: candidate-pipeline
 source_filename: candidate-pipeline.yaml
 source_heading: Capability Spec

@@ -21,30 +21,30 @@ personas: []
 provider_name: Agricultural Marketing Service
 provider_slug: agricultural-marketing-service
 search_terms:
-- usda ams get report
 - getreport
-- government and academic researchers studying agricultural markets
-- fruits and vegetables
-- listoffices
-- marketing
-- dairy
-- usda ams list offices
-- researchers and analysts monitoring commodity prices and market trends
-- market news
+- agricultural commodity price reporting and market news
 - api
-- livestock
+- usda ams list offices
+- fruits and vegetables
+- dairy
 - service
-- traders using market news data for pricing and procurement decisions
+- agriculture
 - usda office and administrative data
 - tobacco
-- federal government
-- listreports
+- usda ams get report
+- livestock
 - farmers markets, food hubs, csas, and local food directories
-- agricultural
+- researchers and analysts monitoring commodity prices and market trends
 - cotton
-- agriculture
-- agricultural commodity price reporting and market news
+- listreports
+- market news
+- marketing
+- listoffices
 - usda ams list reports
+- government and academic researchers studying agricultural markets
+- federal government
+- agricultural
+- traders using market news data for pricing and procurement decisions
 slug: agricultural-marketing-service-capability
 source_filename: agricultural-marketing-service-capability.yaml
 source_heading: Capability Spec

@@ -46,31 +46,31 @@ provider_name: RealEstateAPI
 provider_slug: realestateapi
 search_terms:
 - valuation
-- prop-tech
-- geospatial
-- post v2 propertydetail
-- search properties
-- post v2 propertycomps
-- real estate
-- search involuntary liens
-- search mls active and historical listings
-- retrieve mls listing detail
-- post v2 propertysearch
-- post v2 mlssearch
-- realestateapi
-- property data
-- post v2 skiptrace
-- api
-- mls
-- skip trace an owner
-- retrieve comparable properties
-- post v2 propertyboundary
-- automated valuation
-- post v2 involuntaryliens
-- skip tracing
-- post v2 mlsdetail
 - get a detailed property record
+- post v2 propertycomps
+- retrieve comparable properties
 - retrieve a property's parcel boundary (geojson)
+- retrieve mls listing detail
+- api
+- search properties
+- post v2 mlssearch
+- search mls active and historical listings
+- skip trace an owner
+- geospatial
+- realestateapi
+- post v2 skiptrace
+- post v2 propertysearch
+- real estate
+- skip tracing
+- post v2 involuntaryliens
+- automated valuation
+- search involuntary liens
+- post v2 mlsdetail
+- mls
+- post v2 propertyboundary
+- property data
+- prop-tech
+- post v2 propertydetail
 - post v2 avm
 slug: realestateapi-capability
 source_filename: realestateapi-capability.yaml

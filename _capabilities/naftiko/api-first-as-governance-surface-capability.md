@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- lint a spec, evaluate capability-level rules, emit a governance record.
-- mcp
-- run governance gate on a spec change.
-- governance
-- api integration
-- spec-driven integration
-- ai
-- api-first
 - run governance gate
+- governance
+- spec-driven integration
+- api-first
+- lint a spec, evaluate capability-level rules, emit a governance record.
+- ai
 - capabilities
+- run governance gate on a spec change.
+- api integration
+- mcp
+- naftiko
 slug: api-first-as-governance-surface-capability
 source_filename: api-first-as-governance-surface-capability.yaml
 source_heading: Capability Spec

@@ -49,34 +49,34 @@ personas: []
 provider_name: Murex
 provider_slug: murex
 search_terms:
-- murex get market quotes
-- getfxratehistory
-- murex list currencies
-- financial services
-- listcurves
-- risk management
-- getquotehistory
 - listcalendars
-- murex get curve data
-- getvolatilitysurface
-- trading
+- enterprise software
+- murex list available curves
 - getfxrates
-- api
 - getquotes
-- murex list market calendars
-- murex get historical quotes
-- getcurve
-- listvolatilitysurfaces
-- murex get fx rate history
+- api
+- getquotehistory
 - murex
 - murex list volatility surfaces
-- murex list available curves
+- listcurves
+- murex list currencies
+- fintech
+- murex get fx rates
+- getfxratehistory
+- murex list market calendars
+- murex get fx rate history
+- financial services
+- murex get market quotes
+- trading
+- murex get curve data
+- getcurve
+- murex get volatility surface data
 - listcurrencies
 - capital markets
-- enterprise software
-- murex get volatility surface data
-- murex get fx rates
-- fintech
+- listvolatilitysurfaces
+- getvolatilitysurface
+- risk management
+- murex get historical quotes
 slug: murex-capability
 source_filename: murex-capability.yaml
 source_heading: Capability Spec

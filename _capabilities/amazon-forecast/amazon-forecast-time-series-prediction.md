@@ -9,12 +9,12 @@ personas: []
 provider_name: Amazon Forecast
 provider_slug: amazon-forecast
 search_terms:
-- time series
 - aws
-- predictive analytics
-- machine learning
 - demand planning
+- predictive analytics
 - forecasting
+- machine learning
+- time series
 slug: amazon-forecast-time-series-prediction
 source_filename: amazon-forecast-time-series-prediction.yaml
 source_heading: Capability Spec

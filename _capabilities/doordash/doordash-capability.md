@@ -57,32 +57,32 @@ personas: []
 provider_name: doordash
 provider_slug: doordash
 search_terms:
-- get business details
-- getstore
-- getbusiness
-- get delivery details
-- canceldelivery
-- create a delivery estimate
-- doordash
-- update a store
-- create a store
-- updatedelivery
-- createdelivery
 - create a business
-- create a delivery
-- list businesses
-- createstore
-- createbusiness
-- createdeliveryestimate
-- api
-- updatestore
-- update a business
-- update a delivery
-- listbusinesses
-- cancel a delivery
-- get store details
+- canceldelivery
 - getdelivery
+- get store details
+- list businesses
+- update a delivery
+- api
+- getbusiness
+- listbusinesses
+- update a business
+- doordash
+- get delivery details
+- createdelivery
+- createstore
+- create a store
 - updatebusiness
+- createbusiness
+- getstore
+- create a delivery estimate
+- get business details
+- cancel a delivery
+- createdeliveryestimate
+- create a delivery
+- updatestore
+- update a store
+- updatedelivery
 slug: doordash-capability
 source_filename: doordash-capability.yaml
 source_heading: Capability Spec

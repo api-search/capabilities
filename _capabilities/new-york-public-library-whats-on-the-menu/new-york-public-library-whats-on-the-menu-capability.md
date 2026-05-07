@@ -45,36 +45,36 @@ personas: []
 provider_name: New York Public Library What's On The Menu
 provider_slug: new-york-public-library-whats-on-the-menu
 search_terms:
-- get dishes search
-- library
-- get menus for a dish
-- get menus id dishes
-- get dish
 - menus
+- food
+- restaurants
+- new
+- list menus
+- get dishes
+- history
+- get menus id dishes
+- get menus for a dish
+- get dishes id menus
 - get dishes id
+- public
+- get menu pages
 - 'on'
 - search menus
-- restaurants
-- get dishes id menus
-- get menu
-- new
-- history
-- get menu pages
-- get menu dishes
 - libraries
-- york
-- get menus id pages
-- get dishes
-- get menus search
-- whats
-- food
-- public
-- get menus
-- get menus id
 - search dishes
+- library
+- get menu
+- get dish
+- whats
+- get menus id pages
+- get menu dishes
+- get dishes search
+- get menus search
+- get menus id
 - list dishes
-- list menus
+- get menus
 - open data
+- york
 slug: new-york-public-library-whats-on-the-menu-capability
 source_filename: new-york-public-library-whats-on-the-menu-capability.yaml
 source_heading: Capability Spec

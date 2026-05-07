@@ -13,24 +13,24 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- design system
 - list local variables (design tokens) defined in a figma file. requires enterprise plan.
-- list color, text, effect, and grid styles defined in a figma file.
-- list all published components in a figma file (name, key, description, containing_frame).
-- list components
-- get design system context
-- figma
-- list local variables
-- api integration
 - governance
-- capabilities
+- figma
 - spec-driven integration
-- ai
-- return components, component sets, styles, and local variables for a figma file as a single design-system snapshot.
-- mcp
+- get design system context
+- design system
+- list all published components in a figma file (name, key, description, containing_frame).
+- list color, text, effect, and grid styles defined in a figma file.
 - list styles
+- return components, component sets, styles, and local variables for a figma file as a single design-system snapshot.
+- list local variables
+- ai
+- api integration
+- list components
+- capabilities
+- mcp
 - fetch components, component sets, styles, and design tokens (local variables) for a figma file so an agent can ground ui suggestions against the real brand library.
+- naftiko
 slug: figma-design-system-context-capability
 source_filename: figma-design-system-context-capability.yaml
 source_heading: Capability Spec

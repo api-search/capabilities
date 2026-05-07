@@ -53,38 +53,38 @@ personas: []
 provider_name: Google Cloud Build
 provider_slug: google-cloud-build
 search_terms:
-- google cloud build cancel a build
-- google cloud build create a build trigger
-- devops
-- getbuild
-- google cloud build create a worker pool
-- google cloud build list build triggers
-- cloud
-- google cloud build get a build
-- google
-- build
-- google cloud build list worker pools
-- google cloud build create a build
+- createworkerpool
 - createbuild
-- deletetrigger
-- continuous integration
-- google cloud build update a build trigger
-- google cloud build list builds
+- devops
+- listtriggers
+- listbuilds
 - ci/cd
 - api
-- listtriggers
-- createtrigger
-- createworkerpool
+- google cloud build list builds
+- deletetrigger
 - container build
-- cancelbuild
-- google cloud build get a build trigger
-- updatetrigger
-- google cloud build delete a build trigger
-- listbuilds
-- build automation
-- continuous delivery
-- gettrigger
 - listworkerpools
+- continuous delivery
+- google
+- continuous integration
+- build automation
+- build
+- google cloud build delete a build trigger
+- google cloud build update a build trigger
+- google cloud build list build triggers
+- gettrigger
+- google cloud build get a build trigger
+- cancelbuild
+- cloud
+- createtrigger
+- google cloud build get a build
+- google cloud build create a build
+- google cloud build create a worker pool
+- getbuild
+- google cloud build create a build trigger
+- updatetrigger
+- google cloud build cancel a build
+- google cloud build list worker pools
 slug: google-cloud-build-capability
 source_filename: google-cloud-build-capability.yaml
 source_heading: Capability Spec

@@ -61,41 +61,41 @@ personas: []
 provider_name: Azure Logic Apps
 provider_slug: logic-apps
 search_terms:
-- listworkflowversions
-- list workflow triggers
-- deleteworkflow
-- integration
-- disableworkflow
-- run a workflow trigger
-- disable a workflow
-- logic
+- getworkflowrun
 - create or update a workflow
-- listworkflowtriggers
-- azure
-- runworkflowtrigger
-- enable a workflow
-- listworkflowruns
-- enterprise
-- listworkflowsbysubscription
 - list workflow runs
-- cancelworkflowrun
+- delete a workflow
+- disableworkflow
+- workflow automation
 - cancel a workflow run
-- get a workflow
+- listworkflowruns
+- api
+- deleteworkflow
+- get a workflow run
+- listworkflowversions
+- list workflow versions
+- enableworkflow
+- list workflow triggers
+- integration
+- microsoft
+- logic
+- list workflows by subscription
+- listworkflowtriggers
+- enable a workflow
+- getworkflow
+- listworkflowsbysubscription
 - apps
 - ipaas
-- api
-- workflow automation
-- createorupdateworkflow
-- list workflows by resource group
-- get a workflow run
-- getworkflow
-- list workflow versions
+- enterprise
 - listworkflowsbyresourcegroup
-- delete a workflow
-- getworkflowrun
-- microsoft
-- enableworkflow
-- list workflows by subscription
+- list workflows by resource group
+- get a workflow
+- azure
+- run a workflow trigger
+- disable a workflow
+- runworkflowtrigger
+- createorupdateworkflow
+- cancelworkflowrun
 slug: logic-apps-capability
 source_filename: logic-apps-capability.yaml
 source_heading: Capability Spec

@@ -33,45 +33,45 @@ personas: []
 provider_name: Varonis
 provider_slug: varonis
 search_terms:
+- soc
+- incident response
+- data security
 - get alerts
-- close alert
-- SOC Analyst
-- protecting enterprise data from unauthorized access, exfiltration, and misuse.
-- retrieve forensic events associated with a varonis alert for threat hunting and incident investigation.
-- update alert status
+- alert status management.
+- threat detection
 - close a varonis datalert alert with a resolution reason such as resolved, legitimate activity, or misconfiguration.
 - data analytics
-- update the status of a varonis datalert alert to open or under investigation, with optional investigation note.
-- alert status management.
 - update an alert status to open or under investigation.
-- add alert note
+- protecting enterprise data from unauthorized access, exfiltration, and misuse.
+- retrieve varonis datalert security alerts with filtering by threat model, severity, status, and time range.
+- compliance
+- retrieve security alerts with filtering by threat model, severity, status, and time range.
+- add an investigation note to a varonis datalert alert to document findings and remediation steps.
+- processes for detecting, investigating, and resolving security incidents.
 - investigation notes on alerts.
 - retrieve forensic events associated with an alert for investigation.
-- compliance
-- close an alert with a specified resolution reason.
-- cloud security
-- data governance
-- list threat models configured in varonis datalert.
 - list varonis datalert threat model definitions including category, severity, and mitre att&ck alignment.
-- security alerts from varonis datalert threat detection.
-- close a security alert with resolution reason.
-- threat model definitions used to generate alerts.
-- processes for detecting, investigating, and resolving security incidents.
-- forensic events associated with a security alert.
-- security operations
-- data security
+- cloud security
 - get threat models
-- threat detection
-- get alerted events
-- soc
-- retrieve security alerts with filtering by threat model, severity, status, and time range.
-- unified workflow for soc analysts to retrieve alerts, investigate events, manage alert lifecycle, and reference threat models.
-- security operations center analyst who monitors alerts, investigates incidents, and manages alert lifecycle.
-- add an investigation note to a varonis datalert alert to document findings and remediation steps.
-- incident response
 - add an investigation note to an alert.
-- retrieve varonis datalert security alerts with filtering by threat model, severity, status, and time range.
+- security alerts from varonis datalert threat detection.
+- threat model definitions used to generate alerts.
+- close alert
+- close an alert with a specified resolution reason.
+- close a security alert with resolution reason.
+- security operations
+- retrieve forensic events associated with a varonis alert for threat hunting and incident investigation.
+- list threat models configured in varonis datalert.
+- update the status of a varonis datalert alert to open or under investigation, with optional investigation note.
+- data governance
+- get alerted events
+- update alert status
+- security operations center analyst who monitors alerts, investigates incidents, and manages alert lifecycle.
+- unified workflow for soc analysts to retrieve alerts, investigate events, manage alert lifecycle, and reference threat models.
 - varonis
+- forensic events associated with a security alert.
+- SOC Analyst
+- add alert note
 slug: threat-detection-response
 source_filename: threat-detection-response.yaml
 source_heading: Capability Spec

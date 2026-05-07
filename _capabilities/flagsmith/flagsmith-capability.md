@@ -130,67 +130,67 @@ provider_name: flagsmith
 provider_slug: flagsmith
 search_terms:
 - delete a feature flag
-- create a segment
-- listorganisationusers
-- listfeaturestates
-- getenvironment
-- list environments
-- createsegment
-- listsegments
-- getsegment
-- deletesegment
-- listidentities
-- list features for a project
-- listenvironmentwebhooks
-- deleteproject
-- updateenvironment
-- flagsmith
-- create an environment webhook
-- listorganisationwebhooks
-- listfeatures
-- list identities for an environment
-- create a feature flag
-- update an environment
-- updateproject
 - create an organisation webhook
-- get a segment
-- create a project
-- list feature states for an environment
-- getproject
-- deletefeature
-- updatefeaturestate
-- getorganisation
-- get an environment
-- list segments for a project
-- get an identity
-- deleteidentity
-- update a segment
-- getfeature
-- api
-- getidentity
-- get a feature flag
-- listenvironments
-- delete a project
-- update a project
 - listorganisations
-- listprojects
-- list organisation users
+- getproject
+- get a feature flag
+- updatefeaturestate
+- deleteidentity
+- list environment webhooks
+- api
+- getorganisation
+- getenvironment
+- createsegment
+- get a segment
 - get an organisation
+- get an environment
+- create a project
+- get a project
+- listenvironmentwebhooks
+- createorganisationwebhook
+- get an identity
+- create an environment webhook
+- getidentity
+- updatesegment
+- createfeature
+- list environments
+- updateproject
+- update a feature flag
+- getsegment
 - updatefeature
 - list projects
-- list organisations
-- delete an identity
-- list environment webhooks
-- update a feature state
-- createorganisationwebhook
-- list organisation webhooks
-- update a feature flag
+- create a segment
+- flagsmith
+- listidentities
 - delete a segment
-- createfeature
-- updatesegment
+- list segments for a project
+- deletesegment
+- getfeature
+- deletefeature
+- list organisation webhooks
+- updateenvironment
+- deleteproject
+- list identities for an environment
+- update a project
 - createenvironmentwebhook
+- listenvironments
+- list feature states for an environment
+- listorganisationwebhooks
+- update a feature state
+- delete an identity
+- listorganisationusers
+- list organisation users
+- list organisations
+- listprojects
+- list features for a project
+- create a feature flag
+- listfeatures
+- update an environment
+- delete a project
+- update a segment
+- listsegments
+- listfeaturestates
 - createproject
-- get a project
 slug: flagsmith-capability
 source_filename: flagsmith-capability.yaml
 source_heading: Capability Spec

@@ -25,23 +25,23 @@ personas: []
 provider_name: Google Safe Browsing
 provider_slug: google-safe-browsing
 search_terms:
-- findthreatmatches
-- google safe browsing list threat lists
-- google safe browsing find full hashes
-- google safe browsing fetch threat list updates
-- malware
 - google safe browsing find threat matches
-- listthreatlists
-- threats
-- google
-- api
-- fetchthreatlistupdates
-- security
-- safe
-- safe browsing
-- findfullhashes
-- urls
 - browsing
+- google safe browsing fetch threat list updates
+- listthreatlists
+- findthreatmatches
+- safe
+- google
+- google safe browsing list threat lists
+- threats
+- google safe browsing find full hashes
+- fetchthreatlistupdates
+- safe browsing
+- api
+- security
+- urls
+- malware
+- findfullhashes
 slug: google-safe-browsing-capability
 source_filename: google-safe-browsing-capability.yaml
 source_heading: Capability Spec

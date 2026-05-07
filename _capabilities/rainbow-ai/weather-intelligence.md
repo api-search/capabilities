@@ -29,38 +29,38 @@ personas: []
 provider_name: Rainbow.AI
 provider_slug: rainbow-ai
 search_terms:
-- get real-time weather radar reflectivity data showing current precipitation intensity and type for a location.
-- mapping
-- get available tile timestamps
-- get weather map tile for a specific zoom and coordinate
-- get precipitation nowcast
-- get the list of available weather tile timestamps for building animated precipitation visualizations.
-- geospatial
-- available tile timestamps for animation
-- weather
-- nowcast
-- get nowcast
-- get a static precipitation map image for a geographic bounding box, useful for report generation or preview thumbnails.
-- tiles
-- precipitation
-- get current radar reflectivity data
-- get radar data
-- get map snapshot
-- forecasting
-- get weather map tile
-- get minute-by-minute precipitation forecast for any global location for the next 4 hours at 1 km resolution.
-- get precipitation forecast for the next 4 hours
-- get map tile
-- radar
-- xyz precipitation map tiles for visualization
-- minute-by-minute precipitation forecasts for any location
-- get timestamps for animated weather map
-- static precipitation map images for a bounding box
-- retrieve a precipitation map tile at a specific zoom level and xyz tile coordinates for embedding in map visualizations.
-- real-time radar observations
-- get available timestamps
 - get precipitation map snapshot
+- real-time radar observations
+- get radar data
+- tiles
 - get static precipitation map image
+- nowcast
+- available tile timestamps for animation
+- get nowcast
+- get precipitation forecast for the next 4 hours
+- get minute-by-minute precipitation forecast for any global location for the next 4 hours at 1 km resolution.
+- xyz precipitation map tiles for visualization
+- forecasting
+- precipitation
+- static precipitation map images for a bounding box
+- geospatial
+- mapping
+- get weather map tile for a specific zoom and coordinate
+- get a static precipitation map image for a geographic bounding box, useful for report generation or preview thumbnails.
+- get current radar reflectivity data
+- get real-time weather radar reflectivity data showing current precipitation intensity and type for a location.
+- retrieve a precipitation map tile at a specific zoom level and xyz tile coordinates for embedding in map visualizations.
+- get precipitation nowcast
+- get timestamps for animated weather map
+- radar
+- get weather map tile
+- get available timestamps
+- weather
+- get map snapshot
+- get the list of available weather tile timestamps for building animated precipitation visualizations.
+- minute-by-minute precipitation forecasts for any location
+- get available tile timestamps
+- get map tile
 slug: weather-intelligence
 source_filename: weather-intelligence.yaml
 source_heading: Capability Spec

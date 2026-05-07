@@ -33,59 +33,59 @@ personas: []
 provider_name: WooCommerce
 provider_slug: woocommerce
 search_terms:
-- product catalog management (admin).
-- browse catalog
-- woocommerce
-- list categories for nav
-- remove from cart
-- get product for display
-- complete store management combining rest api and store api
-- wordpress
-- submit checkout details and place a woocommerce order.
-- view current cart.
-- place order
-- checkout process.
-- list all products including drafts for admin/build-time rendering.
-- add a product to the shopper's cart during product browsing.
-- add item to cart
-- browse the public product catalog.
-- list all products including drafts.
-- Frontend Developer
-- Store Administrator
-- designing headless commerce architecture with woocommerce apis
-- submit checkout
-- view the current shopper's cart for display in the cart drawer/page.
-- submit checkout and place order.
-- cart
-- managing product catalog, orders, customers, and store configuration
-- browse the public woocommerce product catalog for storefront display.
-- processing orders, managing fulfillment, and reviewing sales analytics
-- Operations Manager
-- open source
-- ecommerce
-- add to cart
-- list product categories for building storefront navigation menus.
-- headless storefront capability with public store api and admin rest api
-- view cart
-- remove an item from the shopper's cart.
-- checkout
-- Headless Architect
-- list categories
-- list product categories.
-- headless
-- view current cart
-- frontend
-- public product catalog for the storefront.
-- browse products
-- orders
-- products
 - shopper cart management.
-- building custom storefronts using woocommerce as a headless backend
+- designing headless commerce architecture with woocommerce apis
 - add product to cart.
-- product categories for navigation.
+- product catalog management (admin).
+- building custom storefronts using woocommerce as a headless backend
+- browse products
+- cart
+- checkout
+- add to cart
+- orders
+- Operations Manager
+- Frontend Developer
+- ecommerce
+- view current cart
+- remove an item from the shopper's cart.
+- browse catalog
+- open source
+- list categories
 - list products admin
+- products
+- remove from cart
+- complete store management combining rest api and store api
 - get full product details for storefront product page rendering.
 - list all products admin
+- processing orders, managing fulfillment, and reviewing sales analytics
+- Store Administrator
+- list categories for nav
+- submit checkout
+- woocommerce
+- view the current shopper's cart for display in the cart drawer/page.
+- public product catalog for the storefront.
+- view current cart.
+- list all products including drafts for admin/build-time rendering.
+- get product for display
+- product categories for navigation.
+- Headless Architect
+- wordpress
+- checkout process.
+- submit checkout and place order.
+- add a product to the shopper's cart during product browsing.
+- add item to cart
+- list all products including drafts.
+- browse the public woocommerce product catalog for storefront display.
+- place order
+- managing product catalog, orders, customers, and store configuration
+- headless
+- list product categories.
+- view cart
+- frontend
+- headless storefront capability with public store api and admin rest api
+- submit checkout details and place a woocommerce order.
+- browse the public product catalog.
+- list product categories for building storefront navigation menus.
 slug: headless-commerce
 source_filename: headless-commerce.yaml
 source_heading: Capability Spec

@@ -65,45 +65,45 @@ personas: []
 provider_name: Google Cloud Monitoring
 provider_slug: google-cloud-monitoring
 search_terms:
-- updatealertpolicy
-- google cloud monitoring create notification channel
-- getalertpolicy
-- google cloud monitoring list uptime check configs
-- createuptimecheckconfig
 - deletealertpolicy
+- google cloud monitoring update alert policy
+- google cloud monitoring list metric descriptors
+- slo
+- createnotificationchannel
+- updatealertpolicy
+- api
+- listmetricdescriptors
+- google cloud monitoring create metric descriptor
+- createuptimecheckconfig
+- monitoring
+- listnotificationchannels
 - google cloud monitoring list groups
-- listtimeseries
-- uptime
+- getalertpolicy
+- google cloud monitoring create uptime check config
+- google
+- google cloud monitoring get alert policy
+- listgroups
+- createmetricdescriptor
+- google cloud monitoring list alert policies
+- dashboards
+- observability
+- google cloud monitoring create time series
+- google cloud monitoring delete alert policy
+- listalertpolicies
+- google cloud monitoring list notification channels
 - google cloud monitoring list time series
 - google cloud monitoring create alert policy
-- google cloud monitoring list notification channels
 - cloud
-- dashboards
+- google cloud monitoring create notification channel
+- listtimeseries
 - metrics
-- google
-- alerting
-- google cloud monitoring create uptime check config
-- monitoring
-- createmetricdescriptor
-- listnotificationchannels
-- google cloud monitoring create time series
-- listgroups
-- slo
-- google cloud monitoring delete alert policy
-- listmetricdescriptors
-- api
-- createnotificationchannel
-- observability
-- google cloud monitoring update alert policy
-- createtimeseries
-- google cloud monitoring create metric descriptor
-- listalertpolicies
-- google cloud monitoring list alert policies
-- google cloud monitoring get alert policy
-- createalertpolicy
-- google cloud monitoring list metric descriptors
-- google cloud
 - listuptimecheckconfigs
+- uptime
+- google cloud
+- createalertpolicy
+- alerting
+- createtimeseries
+- google cloud monitoring list uptime check configs
 slug: google-cloud-monitoring-capability
 source_filename: google-cloud-monitoring-capability.yaml
 source_heading: Capability Spec

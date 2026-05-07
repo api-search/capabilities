@@ -17,27 +17,27 @@ personas: []
 provider_name: Salad Transcription API
 provider_slug: salad-transcription-api
 search_terms:
-- video processing
-- captions
-- retrieve the full transcript, segments, and optional srt output.
-- salad
-- submit audio and video files for transcription.
-- retrieve transcription results for a completed job.
-- audio transcription
-- diarization
-- submit an audio or video file url to salad for speech-to-text transcription. supports 97 languages, speaker diarization, word-level timestamps, and srt output. returns a job id to retrieve results.
-- media processing
-- video transcription
-- transcription
-- get transcription result
-- submit a media url for transcription with language and output options.
-- get transcript
-- gpu
-- subtitles
-- transcribe audio video
-- retrieve the completed transcription for a job by id. returns segments, word timestamps, speaker labels, and optional srt caption content.
 - speech recognition
+- retrieve the completed transcription for a job by id. returns segments, word timestamps, speaker labels, and optional srt caption content.
+- get transcript
+- video processing
+- transcription
+- transcribe audio video
+- video transcription
+- retrieve the full transcript, segments, and optional srt output.
+- subtitles
+- submit an audio or video file url to salad for speech-to-text transcription. supports 97 languages, speaker diarization, word-level timestamps, and srt output. returns a job id to retrieve results.
+- salad
+- diarization
+- captions
+- submit audio and video files for transcription.
+- media processing
+- audio transcription
+- retrieve transcription results for a completed job.
+- submit a media url for transcription with language and output options.
 - transcribe media
+- gpu
+- get transcription result
 slug: speech-to-text
 source_filename: speech-to-text.yaml
 source_heading: Capability Spec

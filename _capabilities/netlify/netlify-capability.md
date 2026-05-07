@@ -249,137 +249,137 @@ personas: []
 provider_name: Netlify
 provider_slug: netlify
 search_terms:
-- get /sites/{site_id}/ssl
-- post /sites/{site_id}/builds
-- setenvvarvalue
-- delete /sites/{site_id}/deploys/{deploy_id}
-- get /sites/{site_id}/assets/{asset_id}
-- updatesitebuildhook
-- returns all environment variables for a site. this convenience method behaves the same as `getenvvars` but doesn't require an `account_id` as input.
-- getaccountbuildstatus
-- post /sites/{site_id}/assets
-- getenvvars
-- cloud
-- get /deploys/{deploy_id}
-- updateenvvar
-- updatesitedeploy
-- '**note:** environment variable keys and values have moved from `build_settings.env` and `repo.env` to a new endpoint. please use [createenvvars](#tag/environmentvariables/operation/createenvvars) to create environment variables for a site.'
-- delete /sites/{site_id}/forms/{form_id}
-- post /sites/{site_id}/deploys
-- edge computing
-- updatesite
-- delete /deploys/{deploy_id}
-- post /sites/{site_id}/build_hooks
-- get /sites/{site_id}/builds
-- listsitedeploys
-- get /sites/{site_id}/build_hooks
-- listsitebuilds
-- api
-- cancelsitedeploy
-- listsiteforms
-- post /builds/{build_id}/log
-- get /sites/{site_id}/assets/{asset_id}/public_signature
-- updatesitesnippet
-- showsitetlscertificate
-- configurednsforsite
-- web hosting
-- createenvvars
-- listsiteassets
-- get /sites/{site_id}/dns
-- updates an existing environment variable and all of its values. existing values will be replaced by values provided. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic
-- get /sites/{site_id}/functions
-- createsitebuildhook
-- restoresitedeploy
-- getsitebuildhook
-- get /{account_id}/builds/status
-- createsitesnippet
-- '**note:** environment variable keys and values have moved from `build_settings.env` and `repo.env` to a new endpoint. please use [getenvvars](#tag/environmentvariables/operation/getenvvars) to retrieve site environment variables.'
-- get /sites/{site_id}/snippets/{snippet_id}
-- '[beta] unlinks the repo from the site. this action will also: - delete associated deploy keys - delete outgoing webhooks for the repo - delete the site''s build hooks'
-- get /sites/{site_id}/build_hooks/{id}
-- delete /sites/{site_id}/build_hooks/{id}
-- getsiteassetinfo
-- delete /sites/{site_id}/assets/{asset_id}
-- deletesitedeploy
-- rollbacksitedeploy
-- put /sites/{site_id}/dns
-- serverless
-- getdnsforsite
-- delete /sites/{site_id}
-- provisionsitetlscertificate
-- deletesite
-- getenvvar
-- listsitedeployedbranches
-- cdn
-- returns an individual environment variable. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables experience</a>. migrate now w
-- serverless functions
-- createsitedeploy
-- createsite
-- getsitedeploy
-- searchsitefunctions
-- getsitebuild
-- get /builds/{build_id}
-- deleteenvvar
-- get /sites/{site_id}/deploys
-- deletesiteform
-- returns all environment variables for an account or site. an account corresponds to a team in the netlify ui. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experi
-- deleteenvvarvalue
-- static sites
-- deletesitebuildhook
-- updatesiteasset
-- getsitesnippet
-- post /sites/{site_id}/ssl
-- getsitefilebypathname
-- listsitefiles
-- creates new environment variables. granular scopes are available on pro plans and above. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic enviro
-- get /sites/{site_id}/deploys/{deploy_id}
-- post /sites/{site_id}/deploys/{deploy_id}/restore
-- purgecache
-- get /sites/{site_id}/snippets
-- continuous deployment
-- getsiteassetpublicsignature
-- listsitesnippets
-- post /deploys/{deploy_id}/cancel
-- updatesitemetadata
-- put /sites/{site_id}/snippets/{snippet_id}
-- put /sites/{site_id}/deploys/{deploy_id}
-- listsitesubmissions
-- get /sites/{site_id}/deployed-branches
-- deletesiteasset
-- put /sites/{site_id}/build_hooks/{id}
-- get /sites/{site_id}/metadata
 - deletes an environment variable. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables experience</a>. migrate now with the net
-- deletedeploy
-- createsitebuild
-- updates or creates a new value for an existing environment variable. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables expe
-- get /sites/{site_id}/submissions
-- put /sites/{site_id}/rollback
-- '**note:** environment variable keys and values have moved from `build_settings.env` and `repo.env` to a new endpoint. please use [updateenvvar](#tag/environmentvariables/operation/updateenvvar) to update a site''s environment variables.'
-- get /sites/{site_id}/files/{file_path}
-- deletes a specific environment variable value. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables experience</a>. migrate no
-- createsiteasset
-- purges cached content from netlify's cdn. supports purging by cache-tag.
-- websites
-- deletesitesnippet
-- jamstack
-- delete /sites/{site_id}/snippets/{snippet_id}
-- put /sites/{site_id}/metadata
-- get /sites/{site_id}/files
-- listsitebuildhooks
-- listsites
 - getdeploy
-- notifybuildstart
-- netlify
-- updatesitebuildlog
-- put /sites/{site_id}/assets/{asset_id}
-- get /sites/{site_id}/forms
-- getsiteenvvars
-- post /sites/{site_id}/snippets
-- getsite
+- updatesite
 - get /sites/{site_id}/assets
-- unlinksiterepo
-- post /builds/{build_id}/start
+- api
+- getsite
+- getsitedeploy
+- post /sites/{site_id}/build_hooks
+- deletesitesnippet
+- edge computing
+- listsitesubmissions
+- post /builds/{build_id}/log
+- websites
+- createsitedeploy
+- deletesiteform
+- listsitesnippets
+- '**note:** environment variable keys and values have moved from `build_settings.env` and `repo.env` to a new endpoint. please use [updateenvvar](#tag/environmentvariables/operation/updateenvvar) to update a site''s environment variables.'
+- get /sites/{site_id}/assets/{asset_id}/public_signature
+- post /sites/{site_id}/ssl
+- createsitebuild
+- deletesiteasset
+- put /sites/{site_id}/deploys/{deploy_id}
+- static sites
+- web hosting
+- delete /sites/{site_id}/snippets/{snippet_id}
+- updatesiteasset
+- createenvvars
+- post /sites/{site_id}/deploys
+- get /deploys/{deploy_id}
+- '**note:** environment variable keys and values have moved from `build_settings.env` and `repo.env` to a new endpoint. please use [getenvvars](#tag/environmentvariables/operation/getenvvars) to retrieve site environment variables.'
+- get /sites/{site_id}/deploys
+- post /deploys/{deploy_id}/cancel
+- purgecache
+- listsites
+- '**note:** environment variable keys and values have moved from `build_settings.env` and `repo.env` to a new endpoint. please use [createenvvars](#tag/environmentvariables/operation/createenvvars) to create environment variables for a site.'
+- get /sites/{site_id}/submissions
+- continuous deployment
+- get /sites/{site_id}/snippets/{snippet_id}
+- purges cached content from netlify's cdn. supports purging by cache-tag.
+- get /sites/{site_id}/snippets
+- get /sites/{site_id}/build_hooks
+- listsitedeploys
+- serverless
+- getsitefilebypathname
+- createsitesnippet
+- get /sites/{site_id}/builds
+- deleteenvvar
+- put /sites/{site_id}/rollback
+- cancelsitedeploy
+- getenvvars
+- delete /sites/{site_id}/assets/{asset_id}
+- listsiteforms
+- configurednsforsite
+- listsitedeployedbranches
+- cloud
+- get /sites/{site_id}/deployed-branches
+- updatesitebuildhook
+- returns an individual environment variable. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables experience</a>. migrate now w
+- updatesitedeploy
+- updatesitemetadata
+- getdnsforsite
+- listsitebuilds
+- listsitefiles
+- deletes a specific environment variable value. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables experience</a>. migrate no
+- get /sites/{site_id}/dns
+- delete /sites/{site_id}
+- getenvvar
+- put /sites/{site_id}/assets/{asset_id}
+- returns all environment variables for an account or site. an account corresponds to a team in the netlify ui. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experi
+- get /sites/{site_id}/forms
+- getsitebuildhook
+- getaccountbuildstatus
+- get /sites/{site_id}/assets/{asset_id}
+- post /sites/{site_id}/snippets
+- deletesite
+- updates an existing environment variable and all of its values. existing values will be replaced by values provided. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic
 - getsitemetadata
+- getsitebuild
+- getsiteenvvars
+- rollbacksitedeploy
+- updateenvvar
+- delete /sites/{site_id}/forms/{form_id}
+- put /sites/{site_id}/snippets/{snippet_id}
+- creates new environment variables. granular scopes are available on pro plans and above. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic enviro
+- put /sites/{site_id}/metadata
+- get /sites/{site_id}/build_hooks/{id}
+- get /sites/{site_id}/deploys/{deploy_id}
+- get /sites/{site_id}/files
+- serverless functions
+- createsitebuildhook
+- post /sites/{site_id}/builds
+- netlify
+- delete /sites/{site_id}/deploys/{deploy_id}
+- createsiteasset
+- post /sites/{site_id}/deploys/{deploy_id}/restore
+- setenvvarvalue
+- cdn
+- listsiteassets
+- getsitesnippet
+- restoresitedeploy
+- jamstack
+- get /builds/{build_id}
+- '[beta] unlinks the repo from the site. this action will also: - delete associated deploy keys - delete outgoing webhooks for the repo - delete the site''s build hooks'
+- post /builds/{build_id}/start
+- searchsitefunctions
+- notifybuildstart
+- deleteenvvarvalue
+- updates or creates a new value for an existing environment variable. to use this endpoint, your site must no longer be using the <a href="https://docs.netlify.com/environment-variables/classic-experience/">classic environment variables expe
+- get /sites/{site_id}/files/{file_path}
+- get /{account_id}/builds/status
+- get /sites/{site_id}/metadata
+- delete /sites/{site_id}/build_hooks/{id}
+- updatesitesnippet
+- createsite
+- put /sites/{site_id}/dns
+- deletesitebuildhook
+- get /sites/{site_id}/functions
+- updatesitebuildlog
+- post /sites/{site_id}/assets
+- getsiteassetpublicsignature
+- put /sites/{site_id}/build_hooks/{id}
+- listsitebuildhooks
+- deletesitedeploy
+- returns all environment variables for a site. this convenience method behaves the same as `getenvvars` but doesn't require an `account_id` as input.
+- delete /deploys/{deploy_id}
+- deletedeploy
+- getsiteassetinfo
+- showsitetlscertificate
+- provisionsitetlscertificate
+- unlinksiterepo
+- get /sites/{site_id}/ssl
 slug: netlify-capability
 source_filename: netlify-capability.yaml
 source_heading: Capability Spec

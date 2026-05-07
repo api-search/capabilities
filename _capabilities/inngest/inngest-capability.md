@@ -41,34 +41,34 @@ personas: []
 provider_name: Inngest
 provider_slug: inngest
 search_terms:
-- getrun
-- listevents
-- durable execution
-- cancelrun
-- listeventruns
-- listrunjobs
-- serverless
-- sendevents
-- list the jobs (steps) for a run
-- listfunctions
-- step functions
-- get an event by id
-- cron jobs
-- list runs triggered by an event
-- inngest
-- cancel a function run
-- list recent events
-- orchestration
-- api
-- ai agents
-- queues
-- background jobs
-- workflows
 - event-driven
-- list functions
-- getevent
-- send event(s) to inngest
+- cron jobs
+- ai agents
+- background jobs
 - get function run status
+- api
+- listrunjobs
+- getrun
+- step functions
+- send event(s) to inngest
+- sendevents
+- getevent
+- list the jobs (steps) for a run
+- orchestration
+- listfunctions
+- serverless
+- cancel a function run
+- listeventruns
+- get an event by id
+- inngest
+- durable execution
+- listevents
+- cancelrun
+- queues
+- workflows
+- list functions
+- list runs triggered by an event
+- list recent events
 slug: inngest-capability
 source_filename: inngest-capability.yaml
 source_heading: Capability Spec

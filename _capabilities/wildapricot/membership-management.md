@@ -49,60 +49,60 @@ personas: []
 provider_name: WildApricot
 provider_slug: wildapricot
 search_terms:
-- create event
-- list events
-- team member managing member recruitment, renewals, and engagement
-- Nonprofit Operations
-- nonprofit
-- create contact
-- get contact
-- invoice management
-- donation records
-- staff member managing day-to-day association operations
-- wildapricot
-- operations team automating financial and administrative workflows
-- Membership Coordinator
-- membership tiers and pricing
-- list all membership levels
-- create a new contact/member
-- list all contacts/members
-- list payments
-- member and contact management
-- list registrations
-- invoicing, payment processing, and donation management
-- get member
-- list membership levels
-- Association Administrator
-- list donation records for a wildapricot organization.
-- individual contact/member
-- event management
-- payment records
-- full membership lifecycle management including members, events, billing, and donations
-- event planning, registration management, and attendee tracking
-- membership management
-- list event registrations for a wildapricot organization to see who registered for which events.
-- list payment records for a wildapricot organization.
-- get a contact by id
-- create a new contact/member record in a wildapricot organization.
-- retrieve full details for a specific wildapricot member including membership status, level, and contact fields.
-- payments
 - list all events
-- member lifecycle from registration through renewal and lapse
-- list donations
-- retrieve all contacts/members for a wildapricot organization account.
-- email campaign drafting, scheduling, and delivery
-- associations
-- list outstanding and paid invoices for a wildapricot organization.
-- event registration management
-- list invoices
-- list contacts
-- create a new event
-- add member
-- list members
-- list all events for a wildapricot organization, including upcoming and past events.
+- Association Administrator
+- invoice management
+- event planning, registration management, and attendee tracking
+- list events
+- list membership levels
+- Membership Coordinator
+- get contact
+- operations team automating financial and administrative workflows
 - list event registrations
-- retrieve all membership levels with their pricing, renewal terms, and access privileges.
+- list donations
+- nonprofit
+- list all contacts/members
+- create a new event
+- create contact
+- membership tiers and pricing
+- retrieve all contacts/members for a wildapricot organization account.
+- member lifecycle from registration through renewal and lapse
+- list members
+- wildapricot
+- list outstanding and paid invoices for a wildapricot organization.
+- event management
+- list payment records for a wildapricot organization.
+- membership management
+- team member managing member recruitment, renewals, and engagement
+- member and contact management
+- list all events for a wildapricot organization, including upcoming and past events.
+- invoicing, payment processing, and donation management
+- add member
+- list registrations
 - events
+- list event registrations for a wildapricot organization to see who registered for which events.
+- individual contact/member
+- create event
+- list contacts
+- retrieve full details for a specific wildapricot member including membership status, level, and contact fields.
+- event registration management
+- payment records
+- create a new contact/member
+- donation records
+- Nonprofit Operations
+- get member
+- staff member managing day-to-day association operations
+- associations
+- retrieve all membership levels with their pricing, renewal terms, and access privileges.
+- email campaign drafting, scheduling, and delivery
+- payments
+- get a contact by id
+- list invoices
+- list all membership levels
+- full membership lifecycle management including members, events, billing, and donations
+- list donation records for a wildapricot organization.
+- list payments
+- create a new contact/member record in a wildapricot organization.
 slug: membership-management
 source_filename: membership-management.yaml
 source_heading: Capability Spec

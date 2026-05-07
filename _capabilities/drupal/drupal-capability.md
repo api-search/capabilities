@@ -69,38 +69,38 @@ personas: []
 provider_name: drupal
 provider_slug: drupal
 search_terms:
-- list basic page nodes
-- list taxonomy terms by vocabulary
-- deletenodearticle
-- list file entities
-- getfile
-- listfiles
-- get a file entity
-- listnodearticles
-- list article nodes
+- listnodepages
+- updatenodearticle
 - delete an article node
 - listtaxonomyterms
-- get a basic page node
-- api
-- update an article node
-- get an article node
-- updatenodearticle
-- gettaxonomyterm
-- deletefile
+- get a file entity
 - getnodepage
-- getuser
+- api
+- getfile
 - delete a file entity
-- list users
+- listnodearticles
+- getuser
+- deletenodearticle
 - get a user
-- get a taxonomy term
-- update a user
-- drupal
+- list users
+- get a basic page node
 - getnodearticle
-- listusers
-- createnodearticle
-- create an article node
+- get a taxonomy term
+- update an article node
 - updateuser
-- listnodepages
+- list file entities
+- deletefile
+- createnodearticle
+- list basic page nodes
+- listusers
+- list article nodes
+- drupal
+- update a user
+- list taxonomy terms by vocabulary
+- listfiles
+- gettaxonomyterm
+- get an article node
+- create an article node
 slug: drupal-capability
 source_filename: drupal-capability.yaml
 source_heading: Capability Spec

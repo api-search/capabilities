@@ -65,40 +65,40 @@ personas: []
 provider_name: Pandium
 provider_slug: pandium
 search_terms:
-- pandium update tenant metadata
-- pandium trigger a sync for a tenant
-- proxyconnectorcall
-- listtenants
-- listtenantruns
-- getintegration
-- pandium get tenant metadata
-- getintegrationrelease
-- pandium
-- pandium get a single release
-- triggertenantsync
-- pandium list runs for a tenant
-- createtenant
-- getrunbytriggerid
-- b2b
-- listintegrations
-- pandium list all tenants
 - integrations
-- pandium get a single integration
-- hubs
 - pandium get run status by trigger id
-- gettenant
-- api
-- pandium proxy a connector call
 - pandium create a tenant
-- pandium update a tenant
-- workflows
-- pandium list releases for an integration
-- pandium list all integrations
-- updatetenant
-- updatetenantmetadata
+- triggertenantsync
+- hubs
+- api
+- b2b
 - gettenantmetadata
-- pandium get a single tenant
+- createtenant
+- pandium
+- gettenant
+- proxyconnectorcall
+- pandium trigger a sync for a tenant
+- listintegrations
+- getintegrationrelease
+- pandium proxy a connector call
+- pandium get tenant metadata
+- pandium list all integrations
 - listintegrationreleases
+- listtenants
+- getintegration
+- pandium list all tenants
+- listtenantruns
+- pandium update tenant metadata
+- workflows
+- updatetenant
+- pandium list releases for an integration
+- pandium get a single integration
+- getrunbytriggerid
+- pandium get a single release
+- pandium get a single tenant
+- updatetenantmetadata
+- pandium update a tenant
+- pandium list runs for a tenant
 slug: pandium-capability
 source_filename: pandium-capability.yaml
 source_heading: Capability Spec

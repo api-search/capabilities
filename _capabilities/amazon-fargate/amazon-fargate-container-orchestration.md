@@ -50,70 +50,70 @@ personas: []
 provider_name: Amazon Fargate
 provider_slug: amazon-fargate
 search_terms:
-- Cloud Architect
-- scale or update a fargate service task count or definition
-- manage services
-- compute
-- register task definition
-- running workloads without managing infrastructure
-- get status and details of running tasks
-- list all ecs clusters for fargate workloads
-- DevOps Engineer
-- create a new ecs cluster
-- list tasks
-- devops
-- deregister task definition
 - stop task
-- get deployment status and health of fargate services
-- update service
-- launch a fargate task with specified cpu, memory, and networking
-- manage task definitions
-- describe task definition
-- deploy a persistent fargate service with load balancing and auto-scaling
-- serverless
-- delete a fargate cluster
-- list services
-- list task definitions
-- describe tasks
-- delete cluster
-- engineers building container platforms and infrastructure
-- get detailed cluster information
-- containers
-- amazon fargate
-- managing container lifecycle from definition to deployment
-- list all services running in a fargate cluster
-- get details of a task definition
-- list tasks in a cluster with status filtering
-- manage specific cluster
-- create service
-- manage ecs clusters
-- list all registered task definitions
-- get cluster details
-- ecs
-- create cluster
-- list all ecs clusters
-- run a task
-- manage task execution
-- describe clusters
-- Platform Engineer
-- delete a cluster
-- create a service
-- deregister a task definition revision
-- stop a running fargate task
-- create a new cluster
-- describe services
 - register a task definition
-- run task
-- full lifecycle management of serverless container workloads
-- deploying and scaling microservices architectures
+- devops
+- list services
+- containers
+- get cluster details
+- delete a fargate cluster
 - remove a fargate service from a cluster
-- architects designing serverless container solutions
-- register a task definition specifying container images, cpu, memory, and networking
-- delete service
-- list clusters
-- engineers deploying and operating containerized applications
+- list tasks in a cluster with status filtering
+- manage ecs clusters
+- DevOps Engineer
 - eks
+- managing container lifecycle from definition to deployment
+- deploying and scaling microservices architectures
+- full lifecycle management of serverless container workloads
+- describe task definition
+- scale or update a fargate service task count or definition
+- get details of a task definition
+- deregister task definition
+- get deployment status and health of fargate services
+- list all registered task definitions
+- Cloud Architect
+- manage task definitions
+- list tasks
+- architects designing serverless container solutions
+- delete cluster
+- delete a cluster
+- launch a fargate task with specified cpu, memory, and networking
+- list clusters
+- Platform Engineer
+- serverless
+- describe tasks
+- list task definitions
+- deregister a task definition revision
+- manage specific cluster
+- register a task definition specifying container images, cpu, memory, and networking
+- deploy a persistent fargate service with load balancing and auto-scaling
+- describe clusters
+- list all services running in a fargate cluster
+- ecs
+- manage services
+- update service
+- list all ecs clusters
+- create a service
+- engineers deploying and operating containerized applications
+- compute
+- run a task
+- describe services
+- get status and details of running tasks
+- get detailed cluster information
+- create cluster
+- running workloads without managing infrastructure
+- delete service
+- amazon fargate
+- create service
+- engineers building container platforms and infrastructure
+- run task
+- list all ecs clusters for fargate workloads
 - microservices
+- create a new cluster
+- create a new ecs cluster
+- stop a running fargate task
+- register task definition
+- manage task execution
 slug: amazon-fargate-container-orchestration
 source_filename: amazon-fargate-container-orchestration.yaml
 source_heading: Capability Spec

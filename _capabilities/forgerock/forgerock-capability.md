@@ -109,65 +109,65 @@ personas: []
 provider_name: ForgeRock
 provider_slug: forgerock
 search_terms:
-- forgerock
-- updateresourcetype
-- forgerock authenticate a user
-- forgerock oauth 2.0 token introspection
-- deleterealm
-- forgerock list scripts
-- oidcdiscovery
-- forgerock delete a resource type
-- forgerock oauth 2.0 authorization endpoint
-- forgerock list resource types
-- getrealm
-- forgerock get a realm
-- getresourcetype
-- listscripts
-- forgerock update a resource type
-- deleteresourcetype
 - listpolicies
-- getscript
-- oauth2authorize
-- oauth2tokeninfo
-- forgerock openid connect userinfo endpoint
-- identity management
-- forgerock openid connect discovery
-- listresourcetypes
-- oauth
-- forgerock list realms
-- querysessions
-- updatepolicy
-- forgerock delete a realm
-- getpolicy
-- identity governance
-- forgerock get a policy
-- forgerock query sessions
-- createpolicyorevaluate
-- sessionaction
-- forgerock update a policy
-- forgerock get a script
-- forgerock delete a policy
-- api
-- forgerock list authorization policies
 - oauth2token
-- authenticate
-- authorization
-- authentication
-- updaterealm
-- access management
-- listrealms
-- forgerock perform a session action
-- createrealm
+- updateresourcetype
+- listscripts
+- api
+- oauth2authorize
 - forgerock create a realm
-- createresourcetype
-- deletepolicy
+- updaterealm
+- identity management
+- deleteresourcetype
+- authentication
 - forgerock get a resource type
-- forgerock oauth 2.0 token endpoint
+- deletepolicy
 - oidcuserinfo
-- openid connect
+- forgerock openid connect discovery
+- getpolicy
+- updatepolicy
 - forgerock create a policy or evaluate policies
-- forgerock update a realm
+- forgerock list resource types
 - forgerock create a resource type
+- forgerock get a realm
+- forgerock update a realm
+- forgerock oauth 2.0 token introspection
+- identity governance
+- openid connect
+- createresourcetype
+- createpolicyorevaluate
+- oidcdiscovery
+- authenticate
+- forgerock openid connect userinfo endpoint
+- forgerock update a resource type
+- forgerock delete a resource type
+- forgerock delete a realm
+- sessionaction
+- forgerock oauth 2.0 authorization endpoint
+- forgerock
+- forgerock list authorization policies
+- forgerock get a policy
+- listrealms
+- forgerock get a script
+- authorization
+- deleterealm
+- getrealm
+- getresourcetype
+- access management
+- createrealm
+- forgerock list scripts
+- forgerock query sessions
+- forgerock oauth 2.0 token endpoint
+- forgerock update a policy
+- forgerock list realms
+- forgerock authenticate a user
+- forgerock perform a session action
+- querysessions
+- getscript
+- oauth
+- oauth2tokeninfo
+- forgerock delete a policy
+- listresourcetypes
 slug: forgerock-capability
 source_filename: forgerock-capability.yaml
 source_heading: Capability Spec

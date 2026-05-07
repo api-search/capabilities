@@ -29,24 +29,24 @@ personas: []
 provider_name: Google TensorFlow
 provider_slug: google-tensorflow
 search_terms:
+- google tensorflow regress
+- tensorflow
+- machine learning
+- google tensorflow classify
 - predict
 - getmodelstatus
-- open source
-- machine learning
-- model serving
-- google tensorflow regress
-- google
-- api
-- getmodelmetadata
-- tensorflow
-- google tensorflow classify
-- google tensorflow get model metadata
-- ai
-- google tensorflow get model status
-- regress
 - deep learning
+- regress
+- google tensorflow get model metadata
 - google tensorflow predict
+- model serving
+- google
+- open source
 - classify
+- ai
+- api
+- google tensorflow get model status
+- getmodelmetadata
 slug: google-tensorflow-capability
 source_filename: google-tensorflow-capability.yaml
 source_heading: Capability Spec

@@ -33,35 +33,35 @@ personas: []
 provider_name: Shopper Approved
 provider_slug: shopper-approved
 search_terms:
-- product-specific reviews for pdp display
-- submit a completed order to trigger a review collection email at a specified follow-up date
-- retrieve a specific customer review
-- get review
-- submit order
-- site review statistics for dashboards and reporting
-- update review
-- list product reviews across the catalog
+- ratings
 - list customer site reviews with optional date range filtering and page navigation
+- list product-level reviews for display on product detail pages
+- list product reviews
+- retrieve a specific customer review by its order id
+- list product reviews across the catalog
+- list customer reviews with date range and pagination
 - social proof
-- get overall site rating, review count, and star distribution
-- submit a completed order to trigger review request
+- reviews
+- get site stats
+- update a review's follow-up date or cancel the review request
+- site review statistics for dashboards and reporting
+- ecommerce
+- get review
+- submit a completed order to trigger a review collection email at a specified follow-up date
+- reschedule or cancel a review follow-up
+- order submission for review collection
 - customer site reviews for display and analysis
 - get overall site review statistics including average rating and count by star level
-- update a review's follow-up date or cancel the review request
 - customer feedback
-- ecommerce
-- list customer reviews with date range and pagination
-- individual review management
-- google seller ratings
 - list reviews
-- order submission for review collection
-- reschedule or cancel a review follow-up
-- retrieve a specific customer review by its order id
-- list product reviews
-- get site stats
-- reviews
-- ratings
-- list product-level reviews for display on product detail pages
+- retrieve a specific customer review
+- get overall site rating, review count, and star distribution
+- submit order
+- google seller ratings
+- product-specific reviews for pdp display
+- individual review management
+- update review
+- submit a completed order to trigger review request
 slug: review-management
 source_filename: review-management.yaml
 source_heading: Capability Spec

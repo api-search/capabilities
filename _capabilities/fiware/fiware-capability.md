@@ -145,81 +145,81 @@ personas: []
 provider_name: FIWARE
 provider_slug: fiware
 search_terms:
-- update existing entity attributes within an ngsi-ld system
-- addtemporalentityattrs
-- createentity
-- removes an existing entity attribute within an ngsi-ld system
-- linked data
-- retrievecsourcesubscriptionsbyid
-- updates a specific subscription within an ngsi-ld system
-- removeentitytemporalattr
-- querycsources
-- batch entity upsert
-- retrieve a set of context sources which matches a specific query from an ngsi-ld system
-- removes an specific context source registration within an ngsi-ld system
-- attribute instance deletion by instance id.
-- retrievecsource
-- retrieves a specific subscription from an ngsi-ld system
-- batchentitycreation
-- smart cities
-- creates a context source discovery subscription within an ngsi-ld system
-- batch entity update
-- batchentitydelete
-- removes a specific context source subscription from an ngsi-ld system
-- updatesubscription
-- createsubscription
-- retrieveentitybyid
-- updatecsourcesubscription
-- ngsi
-- creates a new subscription within an ngsi-ld system
-- standards
-- partialattrupdate
-- retrievesubscriptions
-- retrieve a set of entities which matches a specific query from an ngsi-ld system
-- context information
-- internet of things
-- removecsourcesubscription
-- query temporal evolution of entities from an ngsi-ld system
-- retrieves the context source discovery subscriptions available in an ngsi-ld system
-- retrieve the temporal representation of an specific entity from an ngsi-ld system. it's possible to specify the entity attributes to be retrieved by using query parameters
-- removeentitybyid
-- batch entity delete
 - create a new entity within an ngsi-ld system
-- api
-- appendentityattrs
-- removes a specific subscription from an ngsi-ld system
-- registercsource
-- removeentitytemporalbyid
-- removes the temporal representation of an entity from an ngsi-ld system
-- querytemporalentities
-- append new entity attributes to an existing entity within an ngsi-ld system
-- updateentityattrs
-- modifyentitytemporalattrinstance
-- batchentityupdate
-- createcsourcesubscription
-- add new attributes to an existing temporal entity within an ngsi-ld system
-- removeentitytemporalattrinstance
-- retrieves the subscriptions available in an ngsi-ld system
-- queryentities
-- retrievesubscriptionbyid
-- removecsource
-- retrieve an specific entity from an ngsi-ld system. it's possible to specify the entity attributes to be retrieved by using query parameters
-- retrievecsourcesubscriptions
-- createupdateentitytemporal
-- registers a new context source within an ngsi-ld system
-- retrieveentitytemporalbyid
-- devices
-- batchentityupsert
-- batch entity creation
-- retrieves a specific context source registration from an ngsi-ld system
-- removeentityattr
+- removecsourcesubscription
+- removeentitybyid
+- batch entity upsert
+- query temporal evolution of entities from an ngsi-ld system
 - create or update temporal representation of an entity within an ngsi-ld system
-- attribute from temporal representation of entity deletion
+- retrieves the context source discovery subscriptions available in an ngsi-ld system
+- removes the temporal representation of an entity from an ngsi-ld system
+- removeentitytemporalbyid
+- ngsi
+- api
 - removesubscription
+- updates a specific subscription within an ngsi-ld system
+- retrieveentitytemporalbyid
 - fiware
-- updates a specific context source discovery subscription within an ngsi-ld system
-- removes an specific entity from an ngsi-ld system
+- context information
+- append new entity attributes to an existing entity within an ngsi-ld system
+- createsubscription
+- attribute from temporal representation of entity deletion
+- standards
+- removes an existing entity attribute within an ngsi-ld system
+- removes an specific context source registration within an ngsi-ld system
+- batchentityupdate
+- retrievecsource
+- batch entity creation
+- updatesubscription
+- addtemporalentityattrs
 - allows modifying a specific attribute (property or relationship) instance, identified by its instanceid, of a temporal representation of an entity.
+- createupdateentitytemporal
+- internet of things
+- update existing entity attributes within an ngsi-ld system
+- removeentityattr
+- retrievesubscriptions
+- createcsourcesubscription
+- queryentities
+- retrievecsourcesubscriptionsbyid
+- batchentityupsert
+- retrieves a specific context source registration from an ngsi-ld system
+- retrieve a set of context sources which matches a specific query from an ngsi-ld system
+- creates a new subscription within an ngsi-ld system
+- retrievecsourcesubscriptions
+- batch entity delete
+- appendentityattrs
+- querytemporalentities
+- batchentitydelete
+- batch entity update
+- add new attributes to an existing temporal entity within an ngsi-ld system
+- removeentitytemporalattr
+- attribute instance deletion by instance id.
+- retrieves the subscriptions available in an ngsi-ld system
+- partialattrupdate
+- retrieve the temporal representation of an specific entity from an ngsi-ld system. it's possible to specify the entity attributes to be retrieved by using query parameters
+- devices
+- linked data
+- retrieveentitybyid
+- removes a specific context source subscription from an ngsi-ld system
+- registercsource
+- creates a context source discovery subscription within an ngsi-ld system
+- removecsource
+- removes a specific subscription from an ngsi-ld system
+- updates a specific context source discovery subscription within an ngsi-ld system
+- batchentitycreation
+- querycsources
+- retrievesubscriptionbyid
+- retrieve a set of entities which matches a specific query from an ngsi-ld system
+- retrieves a specific subscription from an ngsi-ld system
+- retrieve an specific entity from an ngsi-ld system. it's possible to specify the entity attributes to be retrieved by using query parameters
+- removes an specific entity from an ngsi-ld system
+- registers a new context source within an ngsi-ld system
+- modifyentitytemporalattrinstance
+- createentity
+- removeentitytemporalattrinstance
+- smart cities
+- updatecsourcesubscription
+- updateentityattrs
 slug: fiware-capability
 source_filename: fiware-capability.yaml
 source_heading: Capability Spec

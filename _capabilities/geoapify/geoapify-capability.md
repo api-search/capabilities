@@ -13,14 +13,14 @@ personas: []
 provider_name: Geoapify
 provider_slug: geoapify
 search_terms:
-- api
-- get geocode search
-- geospatial
-- geoapify
 - forward geocoding
-- maps
+- get geocode search
 - location
 - geocoding
+- maps
+- api
+- geospatial
+- geoapify
 slug: geoapify-capability
 source_filename: geoapify-capability.yaml
 source_heading: Capability Spec

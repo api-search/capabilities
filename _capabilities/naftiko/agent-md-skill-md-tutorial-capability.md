@@ -13,22 +13,22 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- get agent context
-- agents.md
-- get skill md
-- fetch a repo's agents.md.
-- api integration
-- tutorial
-- get agents md
-- fetch a skill.md for a named skill in a repo.
-- ai
-- governance
 - return agents.md and any skill.md files for a repo as combined agent prompt context.
-- mcp
+- governance
 - spec-driven integration
-- capabilities
+- get skill md
+- api integration
+- fetch a skill.md for a named skill in a repo.
+- get agent context
+- fetch a repo's agents.md.
 - skill
+- ai
+- capabilities
+- tutorial
+- agents.md
+- mcp
+- get agents md
+- naftiko
 slug: agent-md-skill-md-tutorial-capability
 source_filename: agent-md-skill-md-tutorial-capability.yaml
 source_heading: Capability Spec

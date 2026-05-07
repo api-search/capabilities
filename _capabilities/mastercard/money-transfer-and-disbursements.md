@@ -30,44 +30,44 @@ provider_name: Mastercard
 provider_slug: mastercard
 search_terms:
 - cross-border
-- verify account eligibility for mastercard send
-- fraud detection
-- get conversion rate
-- create a disbursement to send money to a recipient
-- create a funding transaction via mastercard send
-- create disbursement
-- mastercard send
-- create a person-to-person transfer
-- financial services
-- create a cross-border payment
-- disbursements
-- get currency conversion rate for cross-border transactions
-- process direct transaction
-- validate account details before transfer
-- disbursement transactions
 - get currency conversion rate
-- create funding
-- get account information for a send recipient
-- validate account
-- credit cards
-- process a direct service transaction
-- create p2p transfer
-- cross-border payment processing
-- funding transactions
-- digital identity
-- open banking
-- create a cross-border international payment
-- money transfer
-- get account info
-- mastercard
 - create a funding transaction
-- currency conversion rates
-- payments
-- create a disbursement
-- p2p transfers
-- verify send account
 - create cross border payment
+- get currency conversion rate for cross-border transactions
+- create a disbursement
+- process direct transaction
+- money transfer
+- fraud detection
+- disbursements
+- create disbursement
+- p2p transfers
 - create a person-to-person money transfer
+- get account info
+- verify account eligibility for mastercard send
+- funding transactions
+- create a cross-border international payment
+- mastercard send
+- validate account details before transfer
+- validate account
+- process a direct service transaction
+- get account information for a send recipient
+- financial services
+- create funding
+- create p2p transfer
+- credit cards
+- verify send account
+- create a person-to-person transfer
+- create a cross-border payment
+- cross-border payment processing
+- currency conversion rates
+- create a funding transaction via mastercard send
+- open banking
+- disbursement transactions
+- payments
+- get conversion rate
+- digital identity
+- mastercard
+- create a disbursement to send money to a recipient
 slug: money-transfer-and-disbursements
 source_filename: money-transfer-and-disbursements.yaml
 source_heading: Capability Spec

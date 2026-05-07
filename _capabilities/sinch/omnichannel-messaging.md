@@ -41,47 +41,47 @@ personas: []
 provider_name: Sinch
 provider_slug: sinch
 search_terms:
-- list sent and received messages
-- list messaging contacts
-- list messages
-- send sms messages in bulk
-- create contact
-- cpaas
-- conversation
-- send omnichannel message
-- list sent sms batches
-- get delivery report for an sms batch
-- list conversations
-- list conversation threads across channels
-- omnichannel
-- send a batch sms message to multiple recipients
-- voice
-- list received inbound sms messages
-- send omnichannel messages via conversation api
-- retrieve received sms messages
-- list sent sms batches with delivery status
-- sms
-- list sms batches
-- send sms
-- send a batch sms message to one or more phone numbers
-- create a new omnichannel contact
-- list inbound sms
-- messaging
-- whatsapp
-- send message
-- manage messaging contacts
-- send sms batch
-- list sent and received messages across all channels
-- create a new contact
-- manage conversation threads
-- get sms delivery report
-- list conversation threads
-- list contacts
-- send a message via whatsapp, rcs, facebook messenger, viber, or other channels
 - send a message via any supported channel
-- verification
-- communications
+- create a new omnichannel contact
+- create a new contact
+- list inbound sms
 - list inbound sms messages
+- send sms
+- list messaging contacts
+- list sent sms batches
+- get sms delivery report
+- list received inbound sms messages
+- list sent and received messages across all channels
+- send a batch sms message to one or more phone numbers
+- create contact
+- send omnichannel message
+- manage messaging contacts
+- send sms messages in bulk
+- get delivery report for an sms batch
+- sms
+- whatsapp
+- send a batch sms message to multiple recipients
+- cpaas
+- send message
+- list conversations
+- list sent sms batches with delivery status
+- send omnichannel messages via conversation api
+- conversation
+- list contacts
+- list messages
+- verification
+- send a message via whatsapp, rcs, facebook messenger, viber, or other channels
+- send sms batch
+- list conversation threads
+- voice
+- omnichannel
+- retrieve received sms messages
+- list sms batches
+- messaging
+- list sent and received messages
+- manage conversation threads
+- list conversation threads across channels
+- communications
 slug: omnichannel-messaging
 source_filename: omnichannel-messaging.yaml
 source_heading: Capability Spec

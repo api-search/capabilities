@@ -249,136 +249,136 @@ personas: []
 provider_name: Oracle Essbase
 provider_slug: oracle-essbase
 search_terms:
-- getencryptioninfo
-- getaboutessbaseinstance
-- oracle essbase execute job
-- changepassword
-- getapplicationprovisioningreport
-- executereportscript
-- oracle essbase update user
-- analytics
+- getformulafunctions
+- oracle essbase create script
+- oracle essbase copy database
+- oracle essbase create shadow application
 - multi-dimensional database
-- setcurrencysettings
-- oracle essbase set active alias
-- oracle essbase list sessions
-- getdatabase
-- listrootfolders
-- oracle essbase copy application
-- oracle essbase get mdx functions
-- login
-- oracle essbase list jobs
+- listscripts
 - api
-- planning
+- oracle essbase list root folders
+- startstopdatabase
+- copyapplication
 - oracle essbase get script
+- oracle essbase list groups
+- oracle essbase promote shadow application
+- oracle essbase decrypt application
+- oracle essbase get database
+- login
+- getgroup
+- deleteuser
+- listapplicationnames
+- deletescript
+- getapplicationtreeview
+- financial consolidation
+- renamedatabase
+- getmdxfunctions
+- oracle essbase create group
+- promoteshadowapplication
+- deletegroup
+- oracle essbase delete job record
+- oracle essbase get about essbase
+- oracle essbase get application provisioning report
+- oracle essbase execute job
+- creategroup
+- rerunjob
+- oracle essbase delete shadow application
+- oracle essbase list group members
+- oracle essbase get application tree view
+- getaboutessbaseinstance
+- oracle essbase encrypt application
+- oracle essbase get mdx functions
+- oracle essbase logout
 - olap
-- oracle essbase get application
+- listgroups
+- oracle essbase rename application
+- getapplication
+- getcurrencysettings
 - oracle essbase get formula functions
-- getjob
+- essbase
+- oracle essbase update user
+- oracle essbase get user
+- oracle essbase rerun job
+- createuser
+- oracle essbase list scripts
+- getscript
+- oracle essbase update group
+- getdatabase
+- oracle essbase change password
+- getcalculationfunctions
+- oracle essbase set currency settings
+- oracle essbase copy application
+- listsessions
+- oracle essbase delete script
 - oracle essbase delete group
-- getuser
+- oracle essbase set active alias
+- oracle essbase get currency settings
+- oracle essbase list jobs
+- oracle essbase start or stop application
+- copydatabase
+- business intelligence
+- deleteapplication
+- oracle essbase get active alias
+- oracle essbase list aliases
+- renameapplication
+- changepassword
+- planning
+- getaboutessbase
+- setactivealias
+- getencryptioninfo
+- oracle essbase create application and database
+- updatescript
+- encryptapplication
+- getactivealias
+- oracle essbase list applications
+- updateuser
+- oracle essbase delete user
+- deletejob
+- oracle essbase update script
 - listdatabases
 - logout
-- oracle essbase list applications
-- copydatabase
-- updatescript
-- getcurrencysettings
-- updateuser
-- deleteuser
-- creategroup
-- encryptapplication
-- oracle essbase set currency settings
-- createuser
-- oracle essbase get currency settings
-- oracle essbase start or stop database
-- oracle essbase login
-- oracle essbase get about essbase instance
-- oracle essbase get user
-- listscripts
-- oracle essbase get database
-- oracle essbase encrypt application
-- oracle essbase get group
-- oracle essbase create user
-- deletedatabase
-- renameapplication
-- listgroups
-- startstopdatabase
-- renamedatabase
-- oracle essbase rename database
-- oracle essbase delete script
-- oracle essbase promote shadow application
-- budgeting
-- listusers
-- getgroup
-- oracle essbase get calculation functions
-- updategroup
-- listapplications
-- oracle essbase rerun job
-- oracle essbase list application names
-- oracle essbase delete application
-- decryptapplication
-- deletescript
-- listjobs
-- rerunjob
-- promoteshadowapplication
-- createscript
-- oracle essbase create shadow application
-- oracle essbase update script
-- oracle essbase get application tree view
-- financial consolidation
-- getscript
-- oracle essbase list databases
-- listgroupmembers
-- oracle essbase create application and database
-- copyapplication
-- listapplicationnames
-- startstopapplication
-- oracle
-- deleteshadowapplication
-- oracle essbase delete session
-- setactivealias
-- deleteapplication
-- oracle essbase decrypt application
-- oracle essbase create script
-- listsessions
-- oracle essbase get job
-- oracle essbase delete job record
-- executejob
-- oracle essbase update group
-- oracle essbase list scripts
-- oracle essbase list aliases
-- oracle essbase delete shadow application
-- getformulafunctions
-- deletesession
-- oracle essbase list group members
-- listaliases
-- oracle essbase copy database
-- getmdxfunctions
-- deletegroup
-- oracle essbase get application provisioning report
-- createapplication
-- oracle essbase list groups
-- essbase
-- oracle essbase start or stop application
-- oracle essbase get encryption info
-- oracle essbase rename application
-- getcalculationfunctions
-- oracle essbase delete user
-- oracle essbase get active alias
-- getapplicationtreeview
 - oracle essbase execute report script
-- oracle essbase delete database
-- getapplication
-- oracle essbase create group
-- deletejob
-- business intelligence
-- oracle essbase get about essbase
-- getaboutessbase
-- oracle essbase list root folders
-- oracle essbase change password
-- oracle essbase list users
+- oracle essbase get about essbase instance
 - createshadowapplication
-- getactivealias
-- oracle essbase logout
+- listusers
+- oracle essbase delete session
+- oracle
+- oracle essbase rename database
+- getapplicationprovisioningreport
+- analytics
+- listrootfolders
+- oracle essbase login
+- startstopapplication
+- deletesession
+- oracle essbase get calculation functions
+- oracle essbase delete application
+- listjobs
+- deletedatabase
+- createapplication
+- executereportscript
+- getuser
+- oracle essbase list users
+- setcurrencysettings
+- listgroupmembers
+- listaliases
+- updategroup
+- deleteshadowapplication
+- oracle essbase list databases
+- oracle essbase list application names
+- oracle essbase get encryption info
+- oracle essbase delete database
+- getjob
+- budgeting
+- listapplications
+- createscript
+- oracle essbase start or stop database
+- oracle essbase create user
+- oracle essbase get application
+- oracle essbase get group
+- decryptapplication
+- executejob
+- oracle essbase list sessions
+- oracle essbase get job
 slug: oracle-essbase-capability
 source_filename: oracle-essbase-capability.yaml
 source_heading: Capability Spec

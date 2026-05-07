@@ -49,45 +49,45 @@ personas: []
 provider_name: Seismic
 provider_slug: seismic
 search_terms:
-- get a shareable url for a content item.
-- get content item
 - analytics
-- get a temporary shareable url.
-- list folders
-- delete content item
-- manage a specific content item.
-- get content analytics.
-- get details of a specific content item by id.
-- content management
-- list content folders in seismic.
-- delete a content item.
-- get a content item.
-- manage content items.
-- list content items in seismic, optionally filtered by folder or search query.
-- get top content
-- list content folders.
-- get content url
-- search content items.
-- list content items in seismic.
-- top performing content.
-- search content
-- get analytics on content usage, views, downloads, and engagement.
-- create a content folder.
-- get a temporary shareable url for a content item.
+- create content item
 - content usage analytics.
+- top performing content.
+- get analytics on content usage, views, downloads, and engagement.
+- list content folders.
+- create a content folder.
+- search for content items using full-text search and filters.
+- get a temporary shareable url for a content item.
+- delete content item
+- get content url
+- get content analytics.
+- sales enablement
+- list folders
+- get top-performing content ranked by views, downloads, shares, or engagement.
+- delete a content item.
+- search content
 - search content.
 - manage content folders.
-- list content items
-- search for content items using full-text search and filters.
-- seismic
-- sales enablement
-- documents
-- get content analytics
-- get top performing content.
-- get top-performing content ranked by views, downloads, shares, or engagement.
-- create folder
+- manage a specific content item.
 - upload and create a content item.
-- create content item
+- documents
+- get top performing content.
+- list content items in seismic, optionally filtered by folder or search query.
+- content management
+- seismic
+- manage content items.
+- get a content item.
+- get content item
+- get content analytics
+- search content items.
+- get top content
+- get a shareable url for a content item.
+- get a temporary shareable url.
+- list content folders in seismic.
+- list content items in seismic.
+- list content items
+- get details of a specific content item by id.
+- create folder
 slug: content-management
 source_filename: content-management.yaml
 source_heading: Capability Spec

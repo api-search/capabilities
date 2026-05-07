@@ -33,36 +33,36 @@ personas: []
 provider_name: Spacelift
 provider_slug: spacelift
 search_terms:
-- create a new infrastructure stack
-- list policies
-- list worker pools
-- infrastructure as code
-- infrastructure stacks managed by spacelift
-- list all shared contexts containing environment variables and files for stacks
-- trigger a new infrastructure deployment run on a spacelift stack
-- finops
 - devops
-- shared environment variable contexts
-- platform engineering
-- list contexts
-- list all worker pools and their current worker status
-- create a new infrastructure stack in spacelift connected to a source repository
-- worker pools for running infrastructure jobs
-- list all worker pools and their worker health status
-- list stacks
-- gitops
-- list all spacelift infrastructure stacks with their current state, repository, and deployment configuration
-- list all governance policies in the account
-- trigger a new deployment run on a stack
-- list all shared contexts available for stack attachment
-- governance policies (opa/rego)
-- infrastructure deployment runs
 - list all infrastructure stacks with state and configuration
 - create stack
+- list all spacelift infrastructure stacks with their current state, repository, and deployment configuration
 - create run
-- trigger run
-- terraform
+- infrastructure deployment runs
 - list all governance policies (opa/rego) enforcing infrastructure deployment rules
+- governance policies (opa/rego)
+- list all shared contexts available for stack attachment
+- shared environment variable contexts
+- create a new infrastructure stack in spacelift connected to a source repository
+- infrastructure stacks managed by spacelift
+- list contexts
+- create a new infrastructure stack
+- trigger run
+- list all governance policies in the account
+- worker pools for running infrastructure jobs
+- list policies
+- infrastructure as code
+- gitops
+- trigger a new infrastructure deployment run on a spacelift stack
+- list all shared contexts containing environment variables and files for stacks
+- list worker pools
+- trigger a new deployment run on a stack
+- list stacks
+- list all worker pools and their worker health status
+- terraform
+- list all worker pools and their current worker status
+- finops
+- platform engineering
 slug: infrastructure-orchestration
 source_filename: infrastructure-orchestration.yaml
 source_heading: Capability Spec

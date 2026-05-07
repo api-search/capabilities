@@ -22,18 +22,18 @@ provider_name: Prudential Financial
 provider_slug: prudential-financial
 search_terms:
 - financial
+- prudential
+- financial services
+- get accounts
+- getaccounts
+- annuities
+- getaccountbyid
+- get account by id
 - get retirement plans
 - insurance
-- get accounts
-- retirement
-- getaccounts
 - api
-- getaccountbyid
-- annuities
-- get account by id
-- prudential
+- retirement
 - getretirementplans
-- financial services
 slug: prudential-financial-capability
 source_filename: prudential-financial-capability.yaml
 source_heading: Capability Spec

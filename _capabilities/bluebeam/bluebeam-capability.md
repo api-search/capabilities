@@ -49,28 +49,28 @@ personas: []
 provider_name: bluebeam
 provider_slug: bluebeam
 search_terms:
-- invite user to session
-- finishsession
-- listsessiondocuments
+- createsession
+- listsessions
 - list session documents
-- getsession
+- api
+- uploadsessiondocument
+- get document markups
+- invite user to session
 - bluebeam
 - finish/close a session
-- list sessions
-- listsessionusers
-- updatesession
-- update session
-- list session users/attendees
-- api
-- getdocumentmarkups
-- listsessions
-- invitesessionuser
-- createsession
-- uploadsessiondocument
-- create a studio session
 - upload document to session
-- get document markups
+- finishsession
 - get session by id
+- update session
+- invitesessionuser
+- updatesession
+- listsessiondocuments
+- list session users/attendees
+- list sessions
+- create a studio session
+- getdocumentmarkups
+- getsession
+- listsessionusers
 slug: bluebeam-capability
 source_filename: bluebeam-capability.yaml
 source_heading: Capability Spec

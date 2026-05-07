@@ -105,59 +105,59 @@ personas: []
 provider_name: WordPress
 provider_slug: wordpress
 search_terms:
-- wordpress list posts
-- listplugins
-- listtags
-- deletepost
+- getpost
+- wordpress get media item
 - wordpress get user
-- wordpress
-- createcategory
-- wordpress list pages
-- createpost
-- wordpress list block types
-- wordpress create category
-- listmedia
-- createpage
-- updatepost
-- listcomments
-- listblocks
-- listpages
-- wordpress list plugins
-- listposts
-- wordpress create comment
-- wordpress get settings
-- wordpress list comments
-- listthemes
-- content management
 - listcategories
+- wordpress list comments
+- createcomment
+- listmedia
+- api
+- wordpress update post
+- updatepost
+- wordpress list media
+- wordpress create category
+- wordpress get page
+- wordpress list plugins
+- listblocks
+- listblocktypes
+- wordpress create page
+- getmedia
+- wordpress search content
+- listposttypes
+- open source
+- createpost
+- listcomments
+- getuser
+- listtags
+- listpages
+- wordpress create post
+- cms
+- wordpress get post
+- listthemes
+- createpage
+- getsettings
+- wordpress list pages
+- wordpress
+- wordpress list categories
+- listplugins
+- listposts
+- wordpress get settings
+- wordpress list themes
+- content management
+- getpage
+- wordpress list post types
+- listusers
+- wordpress delete post
+- wordpress list block types
+- wordpress list users
+- searchcontent
+- deletepost
+- wordpress create comment
 - wordpress list tags
 - wordpress list reusable blocks
-- getpage
-- wordpress list users
-- getmedia
-- open source
-- wordpress list post types
-- api
-- wordpress list categories
-- wordpress create post
-- wordpress get media item
-- wordpress get post
-- wordpress get page
-- searchcontent
-- getuser
-- cms
-- listblocktypes
-- getpost
-- getsettings
-- listusers
-- wordpress search content
-- wordpress create page
-- wordpress list themes
-- wordpress update post
-- listposttypes
-- createcomment
-- wordpress list media
-- wordpress delete post
+- createcategory
+- wordpress list posts
 slug: wordpress-capability
 source_filename: wordpress-capability.yaml
 source_heading: Capability Spec

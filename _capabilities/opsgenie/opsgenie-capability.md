@@ -13,15 +13,15 @@ personas: []
 provider_name: OpsGenie
 provider_slug: opsgenie
 search_terms:
-- on-call
 - opsgenie
-- alerts
-- api
-- get account info
 - monitoring
-- getaccount
 - operations
+- get account info
+- getaccount
+- alerts
 - incident management
+- on-call
+- api
 slug: opsgenie-capability
 source_filename: opsgenie-capability.yaml
 source_heading: Capability Spec

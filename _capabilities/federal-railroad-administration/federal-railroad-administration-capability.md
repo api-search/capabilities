@@ -29,24 +29,24 @@ personas: []
 provider_name: Federal Railroad Administration
 provider_slug: federal-railroad-administration
 search_terms:
-- safety
-- listcrossings
-- transportation
-- railroad
-- federal government
-- listinspections
-- retrieve fra inspection records
-- listincidents
-- retrieve highway-rail grade crossing inventory
 - retrieve railroad incident records
-- api
+- listinspections
+- transportation
 - listoperationaldata
-- retrieve railroad operational data
-- railroads
+- safety
+- retrieve highway-rail grade crossing inventory
 - federal
+- retrieve railroad operational data
 - retrieve railroad accident records
-- administration
+- listincidents
+- railroads
+- federal government
 - listaccidents
+- api
+- listcrossings
+- railroad
+- retrieve fra inspection records
+- administration
 slug: federal-railroad-administration-capability
 source_filename: federal-railroad-administration-capability.yaml
 source_heading: Capability Spec

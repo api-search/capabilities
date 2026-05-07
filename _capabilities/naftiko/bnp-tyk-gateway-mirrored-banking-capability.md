@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- tyk
-- bnp
-- gateway
-- create key
-- list mirrored apis
-- api integration
 - governance
 - spec-driven integration
+- list mirrored apis
+- gateway
+- tyk
 - ai
-- mcp
+- bnp
 - capabilities
+- api integration
+- create key
+- mcp
+- naftiko
 slug: bnp-tyk-gateway-mirrored-banking-capability
 source_filename: bnp-tyk-gateway-mirrored-banking-capability.yaml
 source_heading: Capability Spec

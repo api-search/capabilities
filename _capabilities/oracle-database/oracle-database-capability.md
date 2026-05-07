@@ -149,82 +149,82 @@ personas: []
 provider_name: Oracle Database
 provider_slug: oracle-database
 search_terms:
-- oracle database get a database
-- deletepluggabledatabase
-- oracle database launch a db system
-- oracle database get a pluggable database
-- listautonomousdatabasebackups
-- oracle database update an autonomous database
-- cloud
-- restartautonomousdatabase
-- getdbhome
-- oracle database delete an autonomous database
-- createautonomousdatabase
-- getdatabase
-- startautonomousdatabase
-- launchdbsystem
-- oracle database get a db system
-- oracle database terminate a db system
-- oracle database list database homes
+- deleteautonomousdatabase
 - api
-- oracle database delete a database
-- oracle database create a database
-- listdatabases
-- deletedbhome
-- createpluggabledatabase
-- listdbhomes
-- createbackup
-- updatepluggabledatabase
-- oracle database list databases
-- listdataguardassociations
-- deletedatabase
-- updatedbsystem
-- oracle database list db systems
-- database
-- oracle database restart an autonomous database
-- terminatedbsystem
-- oracle database update a database
-- oracle database list database backups
-- oracle database create an autonomous database backup
-- updatedatabase
-- oracle database start an autonomous database
 - getbackup
-- oracle database list autonomous databases
-- oracle database update a pluggable database
+- oracle database delete a pluggable database
+- listpluggabledatabases
+- oracle database get a database home
+- oracle database create a database
+- deletepluggabledatabase
+- getdbsystem
+- listdataguardassociations
+- oracle database list data guard associations
+- launchdbsystem
+- sql
 - getautonomousdatabase
 - oracle database stop an autonomous database
-- oracle database create a database home
-- oracle database get a database home
-- updateautonomousdatabase
-- oracle database get an autonomous database
-- listdbsystems
-- sql
-- oracle database delete a database home
-- oracle
-- createdatabase
-- oracle database update a db system
-- createdbhome
+- getdbhome
 - getpluggabledatabase
-- oracle database delete a database backup
-- oracle database generate database wallet
-- oracle database create a database backup
-- getdbsystem
-- oracle database list pluggable databases
-- stopautonomousdatabase
-- deleteautonomousdatabase
-- oracle database list autonomous database backups
+- oracle database list databases
+- oracle database create an autonomous database backup
+- oracle database list db systems
+- updatepluggabledatabase
 - oracle database create an autonomous database
-- rest api
-- oracle database list data guard associations
-- listpluggabledatabases
-- listautonomousdatabases
+- updateautonomousdatabase
+- updatedatabase
+- oracle database delete a database home
+- startautonomousdatabase
+- oracle database list pluggable databases
 - createautonomousdatabasebackup
-- oracle database get a database backup
+- oracle database generate database wallet
+- oracle database terminate a db system
+- oracle database delete a database backup
+- oracle database list autonomous databases
 - enterprise
+- listdbsystems
+- oracle database start an autonomous database
+- cloud
+- oracle database get a pluggable database
+- oracle database create a database backup
+- rest api
+- oracle database get a db system
+- getdatabase
+- createpluggabledatabase
+- oracle database launch a db system
+- restartautonomousdatabase
+- oracle database list database homes
+- oracle database create a database home
+- terminatedbsystem
 - listbackups
 - oracle database create a pluggable database
+- oracle database delete a database
+- oracle database list autonomous database backups
 - generateautonomousdatabasewallet
-- oracle database delete a pluggable database
+- database
+- updatedbsystem
+- listdatabases
+- oracle database update a database
+- listautonomousdatabases
+- oracle database get an autonomous database
+- oracle database update a pluggable database
+- oracle database get a database
+- oracle database get a database backup
+- createdbhome
+- oracle
+- oracle database restart an autonomous database
+- oracle database delete an autonomous database
+- listautonomousdatabasebackups
+- createdatabase
+- oracle database list database backups
+- deletedatabase
+- createbackup
+- stopautonomousdatabase
+- oracle database update a db system
+- listdbhomes
+- createautonomousdatabase
+- oracle database update an autonomous database
+- deletedbhome
 - deletebackup
 slug: oracle-database-capability
 source_filename: oracle-database-capability.yaml

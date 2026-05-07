@@ -37,44 +37,44 @@ personas: []
 provider_name: The Odds API
 provider_slug: the-odds-api
 search_terms:
-- odds comparison
-- upcoming events for a sport.
-- get historical betting odds at a specific timestamp for line movement analysis. available from june 2020 at 5-10 minute intervals.
-- get historical odds
-- sports
-- historical data
-- get sport scores
-- historical odds snapshots.
-- available sports with active event coverage.
-- get event odds
-- all markets for a specific event.
-- get sports
-- sports betting
-- get the complete list of teams or players in a sport for reference.
-- get all available betting markets for a specific event including player props, alternate lines, and period markets.
-- line movement
-- get historical odds at a specific timestamp.
-- get sport odds
-- list all available sports with their keys and descriptions.
-- get current odds from bookmakers for comparison.
-- get current betting odds for a sport from multiple bookmakers. specify regions (us, uk, au, eu) and markets (h2h=moneyline, spreads=handicap, totals=over-under, outrights=futures).
-- historical analysis
-- scores
-- live odds from multiple bookmakers.
-- get live and recent game scores for a sport. scores update approximately every 30 seconds. use daysfrom (1-3) to include recently completed games.
-- get upcoming event ids and metadata for a sport without consuming odds quota.
-- live scores
 - live and recent game scores.
-- odds
-- betting
-- get upcoming event ids for a sport.
-- list all available sports with their api keys. use this to discover which sports are available before requesting odds.
 - get sport participants
+- odds comparison
+- get live scores updated every 30 seconds.
+- get historical odds
+- list all available sports with their keys and descriptions.
+- get sports
+- available sports with active event coverage.
+- line movement
+- get sport events
+- get upcoming event ids for a sport.
+- get historical betting odds at a specific timestamp for line movement analysis. available from june 2020 at 5-10 minute intervals.
+- live odds from multiple bookmakers.
+- historical analysis
+- historical odds snapshots.
+- scores
+- get teams or players in a sport.
+- upcoming events for a sport.
 - get comprehensive odds for a single event.
 - teams and players in a sport.
-- get live scores updated every 30 seconds.
-- get teams or players in a sport.
-- get sport events
+- betting
+- get event odds
+- get live and recent game scores for a sport. scores update approximately every 30 seconds. use daysfrom (1-3) to include recently completed games.
+- all markets for a specific event.
+- get sport scores
+- historical data
+- get upcoming event ids and metadata for a sport without consuming odds quota.
+- list all available sports with their api keys. use this to discover which sports are available before requesting odds.
+- odds
+- sports
+- sports betting
+- get all available betting markets for a specific event including player props, alternate lines, and period markets.
+- live scores
+- get sport odds
+- get the complete list of teams or players in a sport for reference.
+- get current betting odds for a sport from multiple bookmakers. specify regions (us, uk, au, eu) and markets (h2h=moneyline, spreads=handicap, totals=over-under, outrights=futures).
+- get current odds from bookmakers for comparison.
+- get historical odds at a specific timestamp.
 slug: sports-betting-intelligence
 source_filename: sports-betting-intelligence.yaml
 source_heading: Capability Spec

@@ -33,25 +33,25 @@ personas: []
 provider_name: Jina AI
 provider_slug: jina-ai
 search_terms:
-- getbatchoutput
-- download batch job output
-- getbatchjob
-- cancel batch job
 - reranking
-- getbatcherrors
-- create embeddings
-- cancelbatchjob
-- retrieve batch job errors
-- createembeddings
-- embeddings
+- getbatchjob
 - ai
-- jina
-- machine learning
 - api
-- search
 - submitbatchembeddings
-- get batch job status
+- createembeddings
+- jina
+- cancelbatchjob
+- machine learning
+- retrieve batch job errors
+- download batch job output
 - submit batch embedding job
+- embeddings
+- getbatcherrors
+- getbatchoutput
+- get batch job status
+- create embeddings
+- search
+- cancel batch job
 slug: jina-ai-capability
 source_filename: jina-ai-capability.yaml
 source_heading: Capability Spec

@@ -13,12 +13,12 @@ personas: []
 provider_name: Fashion AI
 provider_slug: fashion-ai
 search_terms:
+- fashion
+- clothing
+- ai
+- api
 - editfashion
 - edit clothing in an image
-- api
-- fashion
-- ai
-- clothing
 slug: fashion-ai-capability
 source_filename: fashion-ai-capability.yaml
 source_heading: Capability Spec

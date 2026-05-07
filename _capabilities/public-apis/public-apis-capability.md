@@ -25,22 +25,22 @@ personas: []
 provider_name: Public APIs
 provider_slug: public-apis
 search_terms:
-- public
-- apis
 - health check
-- api
-- list entries
-- random entry
 - api discovery
-- api directory
-- listentries
-- getrandomentry
+- apis
+- open source
+- public
+- free apis
 - listcategories
 - list categories
-- free apis
-- open source
-- api aggregation
+- getrandomentry
+- list entries
+- random entry
 - gethealth
+- api aggregation
+- api
+- listentries
+- api directory
 slug: public-apis-capability
 source_filename: public-apis-capability.yaml
 source_heading: Capability Spec

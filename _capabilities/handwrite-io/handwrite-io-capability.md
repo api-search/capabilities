@@ -26,20 +26,20 @@ provider_name: Handwrite IO
 provider_slug: handwrite-io
 search_terms:
 - marketing
-- direct mail
 - gethandwritings
-- get handwritings
-- getorder
-- api
-- io
 - get an order
+- getorder
+- io
+- get handwritings
+- get stationery
+- direct mail
+- handwritten
+- send a letter
+- handwrite
+- sendletter
+- api
 - notes
 - getstationery
-- handwrite
-- handwritten
-- get stationery
-- send a letter
-- sendletter
 slug: handwrite-io-capability
 source_filename: handwrite-io-capability.yaml
 source_heading: Capability Spec

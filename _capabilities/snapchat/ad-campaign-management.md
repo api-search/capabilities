@@ -45,48 +45,48 @@ personas: []
 provider_name: Snapchat
 provider_slug: snapchat
 search_terms:
-- get campaign stats
-- manage advertising campaigns
-- create a campaign
-- send web conversion events to snapchat for campaign measurement via server-side capi
-- get performance statistics for a snapchat campaign
-- list audience segments
-- list organizations
-- list all audience segments
-- send app conversion events
-- campaigns
-- manage custom audience segments
-- marketing
-- campaign performance statistics
-- list all ad accounts for a given snapchat organization
-- manage individual ad units
-- list all accessible snapchat organizations
-- manage ad accounts
-- list all ads for an ad account
-- conversions
-- list all advertising campaigns for a snapchat ad account
-- snapchat
-- list campaigns
-- send web conversions
-- send web conversion events
-- send app conversions
 - list all organizations
-- messaging
-- list all custom audience segments for targeting in a snapchat ad account
-- send app conversion events to snapchat for campaign measurement via server-side capi
-- advertising
-- list ad accounts
-- list all ads for a snapchat ad account
-- get campaign statistics
-- ar
 - social media
-- create campaign
-- list ads
-- list all ad accounts for an organization
+- list all ad accounts for a given snapchat organization
+- manage advertising campaigns
 - list all campaigns for an ad account
-- augmented reality
+- create a campaign
+- snapchat
+- manage ad accounts
 - create a new snapchat advertising campaign
+- send web conversion events to snapchat for campaign measurement via server-side capi
+- list ad accounts
+- get campaign stats
+- list campaigns
+- list all accessible snapchat organizations
+- manage individual ad units
+- get campaign statistics
+- list all ad accounts for an organization
+- manage custom audience segments
+- campaign performance statistics
+- list all audience segments
+- ar
+- campaigns
+- list organizations
+- get performance statistics for a snapchat campaign
+- list all ads for a snapchat ad account
+- list all ads for an ad account
+- send app conversion events to snapchat for campaign measurement via server-side capi
+- list audience segments
+- marketing
+- list all custom audience segments for targeting in a snapchat ad account
+- create campaign
+- list all advertising campaigns for a snapchat ad account
+- send web conversions
+- list ads
+- augmented reality
+- send app conversions
+- send app conversion events
+- advertising
+- messaging
+- conversions
 - list all snapchat organizations accessible to the authenticated user
+- send web conversion events
 slug: ad-campaign-management
 source_filename: ad-campaign-management.yaml
 source_heading: Capability Spec

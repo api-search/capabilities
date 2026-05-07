@@ -41,31 +41,31 @@ personas: []
 provider_name: MeteoSource Air Quality Data API
 provider_slug: meteosource-air-quality-data-api
 search_terms:
-- find nearest place to coordinates
-- findplaces
-- weather
-- air
-- meteosource
-- findplacesbyprefix
-- gettimemachine
-- find places by prefix
-- findnearestplace
-- forecasting
 - getflexipointweather
-- air quality
-- getairquality
-- get point air quality forecast
+- get weather or pollution map
+- meteosource
 - get point weather forecast (flexi tier)
 - api
-- get point weather forecast (free tier)
+- findplaces
+- find nearest place to coordinates
 - get historical time machine data
-- find places by name or zip
-- getfreepointweather
 - quality
+- getfreepointweather
+- gettimemachine
+- getairquality
+- findnearestplace
+- forecasting
+- find places by name or zip
+- get point air quality forecast
+- air quality
+- find places by prefix
+- get point weather forecast (free tier)
+- air
 - data
-- environmental data
-- get weather or pollution map
+- weather
 - getmap
+- environmental data
+- findplacesbyprefix
 slug: meteosource-air-quality-data-api-capability
 source_filename: meteosource-air-quality-data-api-capability.yaml
 source_heading: Capability Spec

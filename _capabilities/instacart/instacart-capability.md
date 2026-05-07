@@ -17,12 +17,12 @@ personas: []
 provider_name: instacart
 provider_slug: instacart
 search_terms:
-- submitproducts
-- instacart
 - create or update items
-- create or update products
-- api
+- submitproducts
 - submititems
+- instacart
+- api
+- create or update products
 slug: instacart-capability
 source_filename: instacart-capability.yaml
 source_heading: Capability Spec

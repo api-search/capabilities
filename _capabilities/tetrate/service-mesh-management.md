@@ -57,59 +57,59 @@ personas: []
 provider_name: Tetrate
 provider_slug: tetrate
 search_terms:
-- register an openapi v3 spec as a managed api in tsb
-- list all workspaces within a tenant
-- create workspace
-- list all tsb organizations
-- register api
-- create a new tenant within a tsb organization
-- list organizations
-- service mesh
-- istio
-- devops
-- platform engineering
-- manage tsb workspaces
-- manage application apis
-- list all tenants within a tsb organization
-- envoy
-- list all applications in a tsb tenant
-- multi-cluster
-- onboard a new kubernetes cluster
-- list all workspaces in a tenant
-- get details of a specific tsb tenant
-- enterprise
-- tetrate
-- get organization
-- kubernetes
-- create a new tsb application linked to a workspace
-- create organization
-- create a new workspace with namespace selector
-- get tenant
-- list tenants
 - manage tsb applications
+- istio
+- list all tenants in an organization
+- list workspaces
+- devops
+- list all workspaces within a tenant
+- create organization
 - manage tsb organizations
 - manage tsb tenants
-- list workspaces
-- list all apis for an application
+- list all workspaces in a tenant
+- create a new application
+- multi-cluster
+- manage onboarded kubernetes clusters
+- get tenant
+- tetrate
+- create application
+- list all applications in a tsb tenant
+- service mesh
 - list all applications in a tenant
-- create a new workspace with namespace assignments
+- list all apis for an application
+- list all kubernetes clusters onboarded to tsb
+- create workspace
+- register api
+- onboard a new kubernetes cluster
+- list clusters
+- list all onboarded clusters
+- kubernetes
+- get details of a specific tsb organization
+- onboard cluster
+- list all tenants within a tsb organization
+- list all tsb organizations
+- list organizations
+- manage application apis
+- enterprise
+- register an openapi v3 spec as a managed api in tsb
 - list apis
+- list tenants
+- manage tsb workspaces
+- envoy
+- list applications
+- create a new tenant within a tsb organization
+- create a new workspace with namespace selector
+- get details of a specific tsb tenant
+- onboard a new kubernetes cluster to tsb management
+- create a new tsb organization
 - register an openapi spec as an api
 - list all apis registered to a tsb application
-- get details of a specific tsb organization
-- create a new tsb organization
-- list all tenants in an organization
-- create application
+- create a new tsb application linked to a workspace
 - create tenant
-- manage onboarded kubernetes clusters
-- list all kubernetes clusters onboarded to tsb
-- onboard a new kubernetes cluster to tsb management
-- list all onboarded clusters
-- list applications
-- list clusters
-- create a new application
-- onboard cluster
 - create a new tenant
+- get organization
+- create a new workspace with namespace assignments
+- platform engineering
 slug: service-mesh-management
 source_filename: service-mesh-management.yaml
 source_heading: Capability Spec

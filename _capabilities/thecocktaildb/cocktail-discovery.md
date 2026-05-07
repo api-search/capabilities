@@ -29,48 +29,48 @@ personas: []
 provider_name: TheCocktailDB
 provider_slug: thecocktaildb
 search_terms:
-- find cocktails that use a specific ingredient
-- filter by ingredient
-- food and beverage
-- drinks
-- filter cocktails by category (e.g. cocktail, shot, punch)
-- cocktails
-- get a random cocktail
-- search ingredients
-- filter by glass type
-- filter cocktails by attributes
-- list all drink categories
-- look up a cocktail by id
-- lookup cocktail
-- search for a cocktail ingredient by name
-- lookup cocktail by id
-- get random cocktail
-- recipes
-- browse all cocktails starting with a specific letter
-- filter by alcoholic status
-- filter cocktails by ingredient, category, glass, or alcoholic status
-- lookup ingredient by id
-- retrieve a random cocktail recipe
-- get details for a specific ingredient by its id
 - filter cocktails
-- filter cocktails by alcoholic or non-alcoholic status
+- browse all cocktails starting with a specific letter
+- lookup ingredient by id
+- drinks
 - list ingredients
-- list all available glass types
-- list all available drink categories
-- search and browse cocktails
-- list categories
-- search for cocktails by name
-- list all available ingredients in the database
-- search for cocktails by name (e.g. margarita, mojito)
-- search cocktails
-- get a completely random cocktail recipe for inspiration
-- filter by category
 - list glass types
-- browse cocktails by letter
+- list all available glass types
 - list drink categories
-- get full recipe details for a cocktail by its id
+- search for cocktails by name
+- filter by alcoholic status
+- browse cocktails by letter
+- list all drink categories
+- recipes
+- list categories
+- filter by category
+- list all available ingredients in the database
+- search ingredients
+- get details for a specific ingredient by its id
+- get a random cocktail
+- filter cocktails by attributes
+- get random cocktail
+- search for a cocktail ingredient by name
+- cocktails
+- lookup cocktail
+- filter cocktails by ingredient, category, glass, or alcoholic status
+- search cocktails
+- filter by glass type
+- look up a cocktail by id
+- filter cocktails by category (e.g. cocktail, shot, punch)
+- retrieve a random cocktail recipe
+- lookup cocktail by id
+- search and browse cocktails
+- list all available drink categories
+- find cocktails that use a specific ingredient
 - full cocktail recipe details
+- filter by ingredient
+- get full recipe details for a cocktail by its id
+- search for cocktails by name (e.g. margarita, mojito)
+- food and beverage
+- filter cocktails by alcoholic or non-alcoholic status
 - filter cocktails by glass type (e.g. cocktail glass, highball glass)
+- get a completely random cocktail recipe for inspiration
 slug: cocktail-discovery
 source_filename: cocktail-discovery.yaml
 source_heading: Capability Spec

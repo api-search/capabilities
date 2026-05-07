@@ -41,24 +41,24 @@ personas: []
 provider_name: fauna
 provider_slug: fauna
 search_terms:
+- commitstagedschema
+- commit staged schema
+- polleventfeed
 - abandon staged schema
+- getschemafiles
+- validateschemafiles
 - abandonstagedschema
+- execute an fql query
 - updateschemafiles
 - getstagedschemastatus
-- execute an fql query
-- get schema files
-- poll an event feed
-- api
-- commit staged schema
 - update schema files
-- commitstagedschema
 - executequery
-- validate schema files
-- polleventfeed
-- get staged schema status
-- getschemafiles
+- poll an event feed
 - fauna
-- validateschemafiles
+- validate schema files
+- api
+- get schema files
+- get staged schema status
 slug: fauna-capability
 source_filename: fauna-capability.yaml
 source_heading: Capability Spec

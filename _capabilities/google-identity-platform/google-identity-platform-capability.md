@@ -33,28 +33,28 @@ personas: []
 provider_name: Google Identity Platform
 provider_slug: google-identity-platform
 search_terms:
-- google identity platform sign in with identity provider
-- identity
-- signinwithidp
-- signup
-- signinwithpassword
-- deleteaccount
-- google
-- oauth
-- google identity platform send out-of-band code
+- google identity platform delete account
+- google identity platform sign in with email/password
 - sendoobcode
+- google identity platform sign in with identity provider
+- multi-tenancy
 - saml
 - api
-- google identity platform sign up with email/password
-- google identity platform get user account info
-- authentication
-- lookupaccount
-- google identity platform delete account
+- signinwithpassword
 - platform
+- authentication
+- google identity platform send out-of-band code
+- google
+- identity
 - openid connect
+- lookupaccount
+- google identity platform get user account info
+- deleteaccount
+- oauth
 - google cloud
-- google identity platform sign in with email/password
-- multi-tenancy
+- google identity platform sign up with email/password
+- signinwithidp
+- signup
 slug: google-identity-platform-capability
 source_filename: google-identity-platform-capability.yaml
 source_heading: Capability Spec

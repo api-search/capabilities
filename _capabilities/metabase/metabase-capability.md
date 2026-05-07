@@ -105,62 +105,62 @@ personas: []
 provider_name: Metabase
 provider_slug: metabase
 search_terms:
-- get database
-- post session
-- get database id
-- get a dashboard
-- post dataset
-- add a database connection
-- post user
-- get a collection
-- post database
-- delete session
 - analytics
-- update a dashboard
-- get search
-- get dashboard id
-- get a database
-- get permissions group
-- get collection
-- dashboards
-- delete dashboard id
-- get collection id
-- put dashboard id
-- get a card
-- sql
-- data visualization
-- open source
-- get user id
-- delete a session
-- execute an ad-hoc query
-- metabase
-- list saved questions (cards)
-- create a session
-- api
-- create a dashboard
-- get card id
-- execute a card's query
-- get setting
-- post dashboard
-- get dashboard
-- create a collection
-- create a user
-- list databases
-- archive a dashboard
-- get user
-- business intelligence
-- search metabase content
-- list users
-- get a user
-- list permission groups
-- list settings
-- list dashboards
-- get card
-- post card id query
-- post card
-- post collection
-- list collections
 - create a card
+- delete a session
+- get permissions group
+- get collection id
+- get search
+- api
+- get card
+- get a dashboard
+- update a dashboard
+- get user id
+- post collection
+- create a session
+- post card id query
+- open source
+- execute a card's query
+- list databases
+- get a collection
+- business intelligence
+- get a database
+- post session
+- post user
+- get database
+- get a user
+- sql
+- delete session
+- list users
+- dashboards
+- post dataset
+- archive a dashboard
+- list permission groups
+- post dashboard
+- metabase
+- list collections
+- get dashboard
+- list dashboards
+- list saved questions (cards)
+- get dashboard id
+- put dashboard id
+- get user
+- get a card
+- post card
+- delete dashboard id
+- search metabase content
+- create a user
+- get card id
+- post database
+- list settings
+- create a collection
+- execute an ad-hoc query
+- get setting
+- create a dashboard
+- get collection
+- add a database connection
+- data visualization
+- get database id
 slug: metabase-capability
 source_filename: metabase-capability.yaml
 source_heading: Capability Spec

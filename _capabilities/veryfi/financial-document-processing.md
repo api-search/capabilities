@@ -65,65 +65,65 @@ personas: []
 provider_name: Veryfi
 provider_slug: veryfi
 search_terms:
-- process receipts, invoices, and bills
-- list all bank statements
-- classify a document to determine its type before processing. optionally restrict to specific document types (receipt, invoice, bank_statement, w2, w9, check).
-- process a check
-- accounts payable
-- extract data from any document type using a named veryfi extraction blueprint. useful for contracts, custom forms, and non-standard documents.
-- delete a document
-- process a bank statement
-- extract structured data from a receipt or invoice. provide a publicly accessible url to the document. returns vendor details, line items, taxes, totals, and currency in 91 currencies and 38 languages.
-- process any document
-- get document
-- invoices
-- process document
-- list all previously processed receipts and invoices.
-- single bank statement operations
-- document processing
-- process bank statement
-- get details for a specific processed document by its numeric id.
-- process and retrieve checks
-- list documents
-- finance
-- list all previously processed bank statements.
-- veryfi
-- get a document
-- delete document
-- get bank statement
-- list all documents
-- list checks
-- process a document
-- process w2
-- list w2s
-- process w9
-- ai
-- list all w-2 forms
-- permanently delete a processed document and its extracted data.
-- get a bank statement
-- list bank statements
-- classify a document
-- single document operations
-- list all checks
-- process a w-9 form
-- receipts
-- tax forms
-- process receipt invoice
-- extract structured transaction data, account information, and balances from a bank statement pdf or image url.
 - extract routing number, account number, check number, payee, and amount from a check image url.
 - extract wages, tax withholdings, employer ein, and employee information from a w-2 tax form.
-- process check
-- process and retrieve bank statements
-- extract taxpayer name, tin, entity type, and certification details from a w-9 form.
-- process custom documents with blueprints
+- single document operations
+- process bank statement
 - process a w-2 form
-- checks
-- process and retrieve w-2 tax forms
-- process and retrieve w-9 tax forms
-- classify document
-- ocr
-- classify documents before processing
+- accounts payable
+- ai
+- invoices
+- extract structured transaction data, account information, and balances from a bank statement pdf or image url.
+- process w9
 - bank statements
+- ocr
+- get document
+- get bank statement
+- get a bank statement
+- classify a document to determine its type before processing. optionally restrict to specific document types (receipt, invoice, bank_statement, w2, w9, check).
+- finance
+- tax forms
+- list w2s
+- list all bank statements
+- receipts
+- process and retrieve bank statements
+- process a bank statement
+- list bank statements
+- process custom documents with blueprints
+- process receipts, invoices, and bills
+- process a w-9 form
+- classify a document
+- permanently delete a processed document and its extracted data.
+- single bank statement operations
+- list all checks
+- classify documents before processing
+- get a document
+- list checks
+- process w2
+- classify document
+- checks
+- process check
+- veryfi
+- get details for a specific processed document by its numeric id.
+- extract structured data from a receipt or invoice. provide a publicly accessible url to the document. returns vendor details, line items, taxes, totals, and currency in 91 currencies and 38 languages.
+- process any document
+- list all previously processed receipts and invoices.
+- process and retrieve checks
+- process receipt invoice
+- list documents
+- document processing
+- process a check
+- list all w-2 forms
+- list all previously processed bank statements.
+- delete a document
+- extract taxpayer name, tin, entity type, and certification details from a w-9 form.
+- extract data from any document type using a named veryfi extraction blueprint. useful for contracts, custom forms, and non-standard documents.
+- delete document
+- process document
+- process a document
+- process and retrieve w-2 tax forms
+- list all documents
+- process and retrieve w-9 tax forms
 slug: financial-document-processing
 source_filename: financial-document-processing.yaml
 source_heading: Capability Spec

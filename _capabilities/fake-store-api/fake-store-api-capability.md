@@ -97,57 +97,57 @@ personas: []
 provider_name: Fake Store API
 provider_slug: fake-store-api
 search_terms:
-- create a product
-- createuser
-- partially update a cart
-- store
-- getcart
-- delete a user
-- deleteproduct
-- list product categories
-- createproduct
-- listcarts
-- listcategories
-- replaceuser
-- replacecart
+- replace a user
+- updateproduct
 - deletecart
 - list carts
-- get a cart
-- partially update a user
-- replace a cart
-- listproducts
-- login
-- fake data
-- api
-- create a cart
-- get a product
-- partially update a product
-- listcartsbyuser
-- updatecart
-- createcart
-- create a user
-- synthetic data
-- fake
-- updateproduct
-- delete a product
-- list products in a category
-- getuser
-- list products
-- list users
+- listcategories
 - replaceproduct
-- delete a cart
-- get a user
-- replace a user
-- customers
-- getproduct
-- listproductsbycategory
-- listusers
+- createproduct
+- list products
+- list product categories
+- api
 - orders
+- partially update a product
+- replace a cart
+- delete a user
+- createcart
+- create a cart
+- partially update a cart
+- customers
+- getuser
+- listcartsbyuser
+- replacecart
+- get a user
+- login
 - products
-- replace a product
-- updateuser
 - deleteuser
 - list carts for a user
+- delete a product
+- deleteproduct
+- getproduct
+- list users
+- synthetic data
+- updateuser
+- listproducts
+- create a product
+- replace a product
+- get a cart
+- fake data
+- updatecart
+- list products in a category
+- get a product
+- delete a cart
+- createuser
+- create a user
+- getcart
+- listusers
+- replaceuser
+- partially update a user
+- listcarts
+- store
+- fake
+- listproductsbycategory
 slug: fake-store-api-capability
 source_filename: fake-store-api-capability.yaml
 source_heading: Capability Spec

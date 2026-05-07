@@ -37,32 +37,32 @@ personas: []
 provider_name: BFE
 provider_slug: bfe
 search_terms:
+- metrics, logging, and distributed tracing
+- bfe list reload entries
 - networking
-- getcommandline
+- bfe get command line
+- getmonitormetrics
+- api
 - bfe list monitor categories
-- dynamic configuration management and reload
+- open source
 - baidu
+- getcpuprofile
+- bfe reload configuration
+- bfe
+- getcommandline
+- listmonitorcategories
+- cncf
+- traffic management
+- dynamic configuration management and reload
 - bfe get monitor metrics
+- bfe get cpu profile
+- engineer managing bfe load balancer deployments and configuration
 - getpprofindex
 - bfe get pprof index
-- getcpuprofile
-- bfe list reload entries
-- bfe get cpu profile
-- listmonitorcategories
-- bfe reload configuration
-- open source
-- bfe
-- api
-- bfe get command line
 - load balancer
-- getmonitormetrics
 - listreloadentries
-- cncf
-- layer 7 load balancing and traffic routing
-- engineer managing bfe load balancer deployments and configuration
-- metrics, logging, and distributed tracing
-- traffic management
 - reloadconfiguration
+- layer 7 load balancing and traffic routing
 slug: bfe-capability
 source_filename: bfe-capability.yaml
 source_heading: Capability Spec

@@ -249,136 +249,136 @@ personas: []
 provider_name: London Stock Exchange Group
 provider_slug: london-stock-exchange-group
 search_terms:
-- archivecase
-- london stock exchange group retrieve content of single mediacheck news article.
-- reviewresults
-- london stock exchange group save and screen multiple cases.
-- london stock exchange group resolves a list of results.
-- savecase
-- market data
-- london stock exchange group get collection of results for a case by its casesystemid
-- attacharticles
-- stock
-- london stock exchange group get identity document location types data set definition.
-- london stock exchange group user activity monitoring. subsequent request.
-- london stock exchange group get map of country codes and country names
-- archivecases
-- getresolutiontoolkitforgroup
-- screen
-- london stock exchange group create a new case
-- getcasereference
+- retrieveprofilepepdetails
+- london stock exchange group retrieve case screening status and aggregated result for multiple cases.
+- searchcases
 - api
-- london stock exchange group disable ogs for a case.
-- partialupdatecase
-- getcasetemplateforgroup
-- updatecasesowner
-- london stock exchange group bulk update case links
-- london stock exchange group get all the top-level groups with their immediate descendants
-- scrollcasesummaries
-- london stock exchange group unassign a case.
-- detacharticles
-- london stock exchange group get the casetemplate for the given group
-- screencase
-- getmediachecksinglearticlemetadata
-- kyc
-- london stock exchange group maintain your watchlist data
-- london stock exchange group attach articles to a case.
-- assigncases
-- london stock exchange group assign the case to a user.
+- deletecases
 - london stock exchange group create or update a provider source
-- detacharticle
-- unassigncase
-- london stock exchange group retrieve article metadata by the article ids
-- screeningstatus
-- london stock exchange group get all the resolutiontoolkits for the given group
-- london stock exchange group fetch full case details
-- london stock exchange group get a record by its id
-- london stock exchange group get a filtered list of auditevents for a case by its casesystemid
-- saveandscreencases
+- london stock exchange group create a new case
+- london stock exchange group enable ogs for a case.
 - getresolutiontoolkitsforgroup
-- london stock exchange group retrieve all articles attached to the case.
-- london stock exchange group retrieves all search filters that are accessible to the user.
-- london stock exchange group bulk move cases between groups
-- disableongoingscreening
+- london stock exchange group perform synchronous screening for a new case
+- getmediacheckresultscontent
+- archivecases
+- exchange
+- scrollcasesummaries
+- london stock exchange group retrieves pep details by the given profile id
+- updateexistingcase
+- london stock exchange group request full or delta screening for an existing case.
+- updatearticlesrevieweddate
+- london stock exchange group get a filtered list of auditevents for a case by its casesystemid
+- getnationalities
+- london stock exchange group get map of nationality codes and nationality names
+- savewatchlist
+- get reference identitydocumentlocationtypes
+- unassigncase
+- enableongoingscreening
+- london stock exchange group mark all mediacheck news articles as reviewed for a case.
+- kyc
+- london stock exchange group unarchive a case
+- london stock exchange group attach articles to a case.
+- getgroups
+- london stock exchange group user activity monitoring. initial request.
+- getresolutiontoolkitforgroup
+- london stock exchange group bulk update case links
+- london stock exchange group get all the resolutiontoolkits for the given group
+- london stock exchange group get information about the public api.
+- london stock exchange group get a specified group including its immediate descendants
+- london stock exchange group retrieve article metadata by the article ids
+- london stock exchange group bulk update archive states
+- retrievecaseauditevent
+- linkcases
+- unarchive
+- london stock exchange group bulk update case assignments
+- london stock exchange group bulk delete cases
+- getcase
+- london stock exchange group search for cases based on specified criteria using filter or query parameters.
+- london stock exchange group get identity document location types data set definition.
+- london stock exchange group get the resolutiontoolkit for a specific provider type for the given group
+- london stock exchange group archive a case.
+- london stock exchange group detach articles from a case.
 - london stock exchange group get a profile by its id
-- getusers
+- getcaseauditeventsbycasesystemid
+- getresolutiontoolkitforgroupwithprovidertype
+- market data
 - getmediacheckarticlesmetadata
 - london stock exchange group retrieve mediacheck news articles content
-- london stock exchange group mark all mediacheck news articles as reviewed for a case.
-- getgroups
-- updatearticlesrevieweddate
-- getcase
-- getrecord
-- searchcases
-- stock exchange
-- london stock exchange group partial update an existing case by its casesystemid
-- london stock exchange group bulk update archive states
-- london stock exchange group retrieves pep details by the given profile id
-- createorupdateprovidersource
-- retrievearticles
-- toggleongoingscreeningbyprovidertypes
-- updateexistingcase
-- london stock exchange group get a specified group including its immediate descendants
-- london stock exchange group retrieve mediacheck results
-- retrievepepdetails
-- london stock exchange group get information about the public api.
-- savewatchlist
-- getmediacheckresultscontent
-- london stock exchange group delete a case
-- getsearchfilters
-- london stock exchange group bulk delete cases
-- get reference identitydocumentlocationtypes
-- getproviders
-- linkcases
+- detacharticle
+- london stock exchange group get map of country codes and country names
 - retrievecasesummaries
-- resolveresults
-- compliance
-- london stock exchange group bulk update case assignments
-- getnationalities
-- london stock exchange group detach articles from a case.
-- getsinglearticlemediacheckcontent
-- getapiinfo
-- london stock exchange group archive a case.
-- enableongoingscreening
-- getresults
-- london stock exchange group get the resolutiontoolkit for a specific provider type for the given group
-- london stock exchange group get map of nationality codes and nationality names
-- london stock exchange group perform synchronous screening for a new case
-- exchange
-- financial
-- getmediacheckdetails
-- getongoingscreeningupdates
-- london stock exchange group return the casereference (caseid, casesystemid) for a caseid
-- london stock exchange group search for cases based on specified criteria using filter or query parameters.
-- london stock exchange group get a list of active users in the client's account.
-- getcaseauditeventsbycasesystemid
-- getgroupbyid
-- london stock exchange group user activity monitoring. initial request.
-- london stock exchange group retrieves the audit event with the given 'auditeventid' belonging to the case identified by the given 'casesystemid'.
-- deletecase
-- london stock exchange group get ongoing screening updates.
-- london stock exchange group get a list of available providers and their sources.
-- group
-- london stock exchange group detach single article from a case.
-- london stock exchange group add a review remark to the specified result ids for the given case
-- retrievecaseauditevent
-- london stock exchange group update an existing case by its casesystemid
-- deletecases
-- retrieveprofilepepdetails
-- london
+- updatecasesowner
 - london stock exchange group retrieve article metadata by the article id
-- london stock exchange group enable ogs for a case.
-- getcountries
-- london stock exchange group bulk update ongoing screening states
-- london stock exchange group get the resolutiontoolkit for the given group.
-- assigncase
-- london stock exchange group retrieves pep details by the given record id
-- unarchive
-- london stock exchange group unarchive a case
-- london stock exchange group retrieve case screening status and aggregated result for multiple cases.
-- london stock exchange group request full or delta screening for an existing case.
-- getresolutiontoolkitforgroupwithprovidertype
+- london stock exchange group get a record by its id
+- getongoingscreeningupdates
+- london stock exchange group retrieve content of single mediacheck news article.
+- stock
+- london stock exchange group disable ogs for a case.
+- reviewresults
+- screeningstatus
+- group
+- london stock exchange group add a review remark to the specified result ids for the given case
+- disableongoingscreening
+- assigncases
+- london stock exchange group get a list of active users in the client's account.
+- london stock exchange group detach single article from a case.
+- getrecord
+- saveandscreencases
+- london stock exchange group get a list of available providers and their sources.
+- archivecase
+- london stock exchange group return the casereference (caseid, casesystemid) for a caseid
+- partialupdatecase
+- london stock exchange group fetch full case details
 - getprofile
+- london stock exchange group retrieves the audit event with the given 'auditeventid' belonging to the case identified by the given 'casesystemid'.
+- getresults
+- getgroupbyid
+- london stock exchange group user activity monitoring. subsequent request.
+- london stock exchange group maintain your watchlist data
+- getproviders
+- getcountries
+- london stock exchange group unassign a case.
+- london stock exchange group retrieve mediacheck results
+- createorupdateprovidersource
+- attacharticles
+- london stock exchange group partial update an existing case by its casesystemid
+- london stock exchange group get the casetemplate for the given group
+- london stock exchange group get all the top-level groups with their immediate descendants
+- stock exchange
+- london stock exchange group assign the case to a user.
+- london stock exchange group update an existing case by its casesystemid
+- getusers
+- screen
+- getsearchfilters
+- london stock exchange group delete a case
+- london stock exchange group get the resolutiontoolkit for the given group.
+- getcasetemplateforgroup
+- london stock exchange group retrieve all articles attached to the case.
+- deletecase
+- savecase
+- london stock exchange group retrieves pep details by the given record id
+- compliance
+- london stock exchange group save and screen multiple cases.
+- london stock exchange group retrieves all search filters that are accessible to the user.
+- london stock exchange group resolves a list of results.
+- getmediacheckdetails
+- london stock exchange group bulk update ongoing screening states
+- getsinglearticlemediacheckcontent
+- resolveresults
+- retrievepepdetails
+- getmediachecksinglearticlemetadata
+- assigncase
+- detacharticles
+- london stock exchange group get ongoing screening updates.
+- getapiinfo
+- london stock exchange group get collection of results for a case by its casesystemid
+- financial
+- toggleongoingscreeningbyprovidertypes
+- london
+- retrievearticles
+- london stock exchange group bulk move cases between groups
+- screencase
+- getcasereference
 slug: london-stock-exchange-group-capability
 source_filename: london-stock-exchange-group-capability.yaml
 source_heading: Capability Spec

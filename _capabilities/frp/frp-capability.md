@@ -81,48 +81,48 @@ personas: []
 provider_name: frp
 provider_slug: frp
 search_terms:
-- reverse proxy
-- putconfig
 - getvisitorconfig
-- get stored visitor
-- updatestorevisitor
-- getstoreproxy
-- deletestorevisitor
-- get current configuration
-- create stored proxy
-- updatestoreproxy
-- create stored visitor
-- reload configuration
-- get stored proxy
-- stop client
-- replace configuration
-- update stored visitor
-- open source
-- reloadconfig
-- get proxy status
-- getstatus
-- getproxyconfig
-- liststoreproxies
 - deletestoreproxy
-- api
-- get visitor configuration
-- list stored proxies
+- getstatus
+- updatestoreproxy
+- reloadconfig
+- update stored visitor
 - delete stored proxy
-- frp
-- liststorevisitors
-- tunneling
-- createstoreproxy
-- stopclient
-- health check
+- putconfig
+- api
+- getproxyconfig
+- get stored visitor
 - getstorevisitor
-- update stored proxy
-- delete stored visitor
-- createstorevisitor
-- nat traversal
-- list stored visitors
+- get visitor configuration
+- health check
+- frp
+- reverse proxy
 - getconfig
-- gethealthz
+- open source
+- reload configuration
+- liststorevisitors
+- createstoreproxy
+- get stored proxy
+- updatestorevisitor
+- nat traversal
+- create stored proxy
 - get proxy configuration
+- liststoreproxies
+- create stored visitor
+- list stored visitors
+- createstorevisitor
+- replace configuration
+- tunneling
+- get proxy status
+- deletestorevisitor
+- getstoreproxy
+- list stored proxies
+- gethealthz
+- get current configuration
+- stopclient
+- stop client
+- delete stored visitor
+- update stored proxy
 slug: frp-capability
 source_filename: frp-capability.yaml
 source_heading: Capability Spec

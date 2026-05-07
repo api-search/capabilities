@@ -9,23 +9,23 @@ personas: []
 provider_name: AppSumo
 provider_slug: appsumo
 search_terms:
-- marketplace
-- validate and activate appsumo licenses for newly onboarded customers
-- validates and retrieves details for an appsumo license key
-- appsumo customer activating a purchased license
+- validate license
 - configuring and managing the appsumo marketplace partnership
 - appsumo
-- validate license
-- developer integrating appsumo licensing into their product
-- checks the appsumo partner profile and integration configuration
 - saas
-- saas partners
-- check partner profile
-- activate customer license
-- managing license activation and status for appsumo purchases
-- software deals
-- licensing
+- marketplace
+- validates and retrieves details for an appsumo license key
+- checks the appsumo partner profile and integration configuration
+- developer integrating appsumo licensing into their product
+- validate and activate appsumo licenses for newly onboarded customers
+- appsumo customer activating a purchased license
 - activates an appsumo license for a newly onboarded customer
+- licensing
+- software deals
+- check partner profile
+- managing license activation and status for appsumo purchases
+- activate customer license
+- saas partners
 slug: license-management
 source_filename: license-management.yaml
 source_heading: Capability Spec

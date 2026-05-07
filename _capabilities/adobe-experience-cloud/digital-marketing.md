@@ -34,65 +34,65 @@ personas: []
 provider_name: Adobe Experience Cloud
 provider_slug: adobe-experience-cloud
 search_terms:
-- list offers
-- CDP Administrator
-- target list activities
-- ajo create offer
-- digital marketing
-- list customer journeys in adobe journey optimizer.
-- engineer managing data pipelines, schemas, and datasets in experience platform.
-- analytics
-- list analytics segments.
-- run an adobe analytics report.
-- list available metrics for an adobe analytics report suite.
-- adobe experience cloud
-- personalized offers.
-- list segments
-- target list audiences
-- list personalized offers in adobe journey optimizer.
-- analytics, a/b testing, and journey orchestration for digital marketers.
-- run an adobe analytics report with dimensions, metrics, and segments.
-- Data Engineer
-- administrator managing customer profiles, segments, and identity resolution.
-- run report
-- profile management, audience segmentation, and data ingestion.
-- target audiences.
-- list journey optimizer offers.
-- ajo list offers
-- list a/b test and personalization activities in adobe target.
 - ajo list journeys
-- list audiences
-- ajo list messages
-- list journey optimizer journeys.
-- list content offers in adobe target.
-- analytics list segments
-- marketing professional using analytics, personalization, and journey tools.
-- a/b testing and content personalization.
-- unified customer profiles and data management.
-- list target audiences.
-- Digital Marketer
-- technical marketer integrating experience cloud apis into marketing stack.
-- list journeys
-- customer journeys.
+- analytics
+- digital marketing
+- adobe experience cloud
+- list analytics segments.
+- list available metrics for an adobe analytics report suite.
 - list targeting audiences in adobe target.
-- a/b test and personalization activities.
-- analytics list metrics
-- list campaign messages in adobe journey optimizer.
-- Marketing Technologist
-- run analytics report
-- list audience segments in adobe analytics.
-- journey orchestration
-- analytics report execution.
-- list activities
-- audience segment management.
-- create a new personalized offer in adobe journey optimizer.
+- target list audiences
+- run an adobe analytics report.
 - digital analytics reporting and audience insights.
-- campaign management
-- customer experience
+- target list activities
+- Marketing Technologist
+- analytics, a/b testing, and journey orchestration for digital marketers.
+- analytics list metrics
+- personalized offers.
+- engineer managing data pipelines, schemas, and datasets in experience platform.
+- run analytics report
+- list audiences
+- audience segment management.
+- list journey optimizer journeys.
 - multi-channel customer journey management.
-- list target activities.
-- personalization
 - target list offers
+- list target activities.
+- list audience segments in adobe analytics.
+- customer experience
+- list journeys
+- administrator managing customer profiles, segments, and identity resolution.
+- list a/b test and personalization activities in adobe target.
+- personalization
+- journey orchestration
+- list target audiences.
+- campaign management
+- list content offers in adobe target.
+- run an adobe analytics report with dimensions, metrics, and segments.
+- marketing professional using analytics, personalization, and journey tools.
+- analytics list segments
+- list campaign messages in adobe journey optimizer.
+- list personalized offers in adobe journey optimizer.
+- target audiences.
+- ajo list offers
+- list customer journeys in adobe journey optimizer.
+- profile management, audience segmentation, and data ingestion.
+- list activities
+- ajo list messages
+- Digital Marketer
+- a/b test and personalization activities.
+- list segments
+- Data Engineer
+- unified customer profiles and data management.
+- list journey optimizer offers.
+- technical marketer integrating experience cloud apis into marketing stack.
+- a/b testing and content personalization.
+- customer journeys.
+- CDP Administrator
+- ajo create offer
+- list offers
+- create a new personalized offer in adobe journey optimizer.
+- analytics report execution.
+- run report
 slug: digital-marketing
 source_filename: digital-marketing.yaml
 source_heading: Capability Spec

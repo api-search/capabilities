@@ -13,27 +13,27 @@ personas: []
 provider_name: Bank of America
 provider_slug: bank-of-america
 search_terms:
+- getstatus
+- treasury
+- api
+- corporate treasury operations including account management, payments, and reporting
+- cashpro
 - executive responsible for corporate cash and liquidity management
-- corporate banking
-- get api status
-- analyst managing day-to-day treasury operations and reporting
-- payment initiation and tracking across 350+ payment types
+- Corporate Treasurer
+- america
 - bank
 - finance
-- ERP Integration
-- Corporate Treasurer
-- treasury
-- getstatus
-- cashpro
-- corporate cash management, balance reporting, and liquidity
-- api
-- of
-- payments
-- Treasury Analyst
 - system integration connecting erp/tms to bank of america cashpro apis
-- corporate treasury operations including account management, payments, and reporting
+- analyst managing day-to-day treasury operations and reporting
+- of
+- corporate cash management, balance reporting, and liquidity
+- corporate banking
+- payment initiation and tracking across 350+ payment types
 - banking
-- america
+- payments
+- get api status
+- Treasury Analyst
+- ERP Integration
 slug: bank-of-america-capability
 source_filename: bank-of-america-capability.yaml
 source_heading: Capability Spec

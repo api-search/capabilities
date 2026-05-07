@@ -41,44 +41,44 @@ personas: []
 provider_name: StackHawk
 provider_slug: stackhawk
 search_terms:
-- trigger a new dast scan
-- get finding details
-- list all security vulnerabilities discovered in a scan
-- list policies
+- list security scan policies configured for an organization
 - single security finding
-- check the current status of a running or completed scan
+- application security
 - get status of a running scan
-- list scans
+- trigger a new dast scan
 - scan status
-- get finding
-- vulnerability management
-- scans for an application
 - scan policies
-- managed applications
+- list findings
+- dast
+- devsecops
+- get scan
+- list scans
+- get perch scan status
 - list security scan history for an application environment
 - trigger a new dast security scan for an application via stackhawk perch
-- list security scan policies configured for an organization
-- scan details
-- application security
-- get scan
-- list all applications configured in stackhawk for security testing
-- list scan policies
-- list all security findings
-- security findings from a scan
-- dast
-- get detailed results for a specific security scan
-- get scan details
-- get full details for a specific security vulnerability finding
 - get scan status
-- devsecops
-- get perch scan status
-- list all scans for an application
-- list all applications
-- api security
-- list findings
-- list applications
-- security testing
 - trigger scan
+- get scan details
+- security findings from a scan
+- list all scans for an application
+- list scan policies
+- get full details for a specific security vulnerability finding
+- check the current status of a running or completed scan
+- managed applications
+- security testing
+- list policies
+- scans for an application
+- list applications
+- list all applications configured in stackhawk for security testing
+- api security
+- get detailed results for a specific security scan
+- get finding details
+- list all security vulnerabilities discovered in a scan
+- vulnerability management
+- list all security findings
+- list all applications
+- get finding
+- scan details
 slug: api-security-testing
 source_filename: api-security-testing.yaml
 source_heading: Capability Spec

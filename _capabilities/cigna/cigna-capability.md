@@ -21,23 +21,23 @@ personas: []
 provider_name: Cigna
 provider_slug: cigna
 search_terms:
+- retrieve the fhir capability statement
+- smart on fhir
 - provider directory
+- list drug formulary plans offered by cigna
+- cms interoperability
+- da vinci
+- getcapabilitystatement
+- searchformularyplan
+- searchmedicationknowledge
+- fhir
+- health insurance
+- healthcare
+- api
 - drug formulary
 - cigna
-- fhir
-- healthcare
-- da vinci
-- list drug formulary plans offered by cigna
-- api
 - patient access
-- getcapabilitystatement
 - search covered drugs and formulary tier, step therapy, and prior auth
-- health insurance
-- searchmedicationknowledge
-- smart on fhir
-- searchformularyplan
-- cms interoperability
-- retrieve the fhir capability statement
 slug: cigna-capability
 source_filename: cigna-capability.yaml
 source_heading: Capability Spec

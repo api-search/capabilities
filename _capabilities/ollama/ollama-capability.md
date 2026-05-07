@@ -61,37 +61,37 @@ personas: []
 provider_name: Ollama
 provider_slug: ollama
 search_terms:
-- get ollama version
-- generatechatcompletion
-- listrunningmodels
+- ollama create a model
 - ollama pull a model
-- ollama push a model
-- ollama list local models
+- models
+- api
 - showmodelinfo
 - pushmodel
-- pullmodel
-- large language models
-- ollama generate a completion
-- generateembeddings
-- deletemodel
-- ollama generate a chat completion
-- listmodels
-- artificial intelligence
-- generatecompletion
-- createmodel
-- ollama delete a model
-- api
-- getversion
-- ollama create a model
 - ollama copy a model
-- createblob
-- models
-- copymodel
-- ollama show model information
-- ollama create a blob
-- ollama list running models
-- ollama
 - ollama generate embeddings
+- ollama
+- generatechatcompletion
+- createmodel
+- artificial intelligence
+- deletemodel
+- ollama generate a completion
+- listmodels
+- ollama list running models
+- ollama generate a chat completion
+- ollama show model information
+- get ollama version
+- ollama list local models
+- large language models
+- ollama delete a model
+- ollama create a blob
+- listrunningmodels
+- ollama push a model
+- pullmodel
+- getversion
+- generatecompletion
+- copymodel
+- generateembeddings
+- createblob
 slug: ollama-capability
 source_filename: ollama-capability.yaml
 source_heading: Capability Spec

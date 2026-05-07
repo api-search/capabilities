@@ -25,38 +25,38 @@ personas: []
 provider_name: Salesforce Einstein
 provider_slug: salesforce-einstein
 search_terms:
-- sentiment analysis
-- language analyze sentiment
-- natural language processing
-- image recognition
-- salesforce einstein
-- vision list datasets
-- analyze the sentiment (positive/negative/neutral) of a text document.
-- sentiment analysis.
-- computer vision
-- detect intent in text.
-- classify an image using a trained einstein vision model.
-- classify an image using a trained model.
-- list all vision datasets.
-- analyze text sentiment.
-- intent detection.
-- list einstein vision image datasets for the account.
-- train a new einstein vision model on an image dataset.
-- detect the intent expressed in a text document for customer service routing.
-- vision train model
-- artificial intelligence
-- analyze sentiment
-- image classification predictions.
 - vision training datasets.
-- crm
-- machine learning
+- analyze sentiment
+- salesforce einstein
+- detect the intent expressed in a text document for customer service routing.
+- train a new einstein vision model on an image dataset.
 - language detect intent
+- list einstein vision image datasets for the account.
+- classify image
+- image classification predictions.
+- sentiment analysis
+- detect intent
+- list all vision datasets.
+- artificial intelligence
+- language analyze sentiment
+- intent detection.
+- crm
+- detect intent in text.
+- machine learning
+- analyze the sentiment (positive/negative/neutral) of a text document.
+- vision classify image
+- sentiment analysis.
+- classify an image using a trained einstein vision model.
+- computer vision
+- image recognition
+- classify an image using a trained model.
+- vision list datasets
+- natural language processing
+- vision train model
+- analyze text sentiment.
+- predictive analytics
 - list vision datasets
 - salesforce
-- detect intent
-- classify image
-- predictive analytics
-- vision classify image
 slug: ai-analytics
 source_filename: ai-analytics.yaml
 source_heading: Capability Spec

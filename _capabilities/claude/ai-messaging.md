@@ -42,55 +42,55 @@ personas: []
 provider_name: Claude
 provider_slug: claude
 search_terms:
-- anthropic
-- delete a batch.
-- list all message batches.
-- conversational ai
-- natural language processing
-- create a message.
-- model discovery.
-- list message batches.
-- count tokens in a message.
-- cancel message batch
-- list available claude models.
-- get model
-- large language models
 - delete a completed batch.
-- generative ai
-- individual batch management.
-- create batch
-- ai
 - token counting.
-- get batch
-- delete batch
-- batch management.
-- list available models.
-- artificial intelligence
-- chatbot
-- get message batch status and details.
-- delete message batch
-- messaging
-- model details.
-- machine learning
-- create a message batch.
-- send a message to claude and receive a response.
-- list message batches
-- count message tokens.
-- retrieve message batch results
+- list available claude models.
 - count tokens
-- list models
-- create a batch of message requests.
-- message operations.
-- cancel an in-progress batch.
-- get completed batch results.
-- count message tokens
-- retrieve message batch
-- create message batch
-- get batch status.
+- model discovery.
+- cancel message batch
+- ai
+- get message batch status and details.
+- create batch
 - get model metadata.
 - list batches
-- claude
+- get batch status.
+- create a batch of message requests.
+- retrieve message batch
+- conversational ai
+- create a message batch.
+- artificial intelligence
+- count message tokens
+- chatbot
 - create message
+- list available models.
+- get batch
+- machine learning
+- count tokens in a message.
+- delete a batch.
+- list message batches.
+- delete message batch
+- get completed batch results.
+- generative ai
+- message operations.
+- list models
+- create message batch
+- large language models
+- model details.
+- natural language processing
+- retrieve message batch results
+- cancel an in-progress batch.
+- create a message.
+- count message tokens.
+- list all message batches.
+- get model
+- messaging
+- batch management.
+- send a message to claude and receive a response.
+- delete batch
+- list message batches
+- individual batch management.
+- claude
+- anthropic
 slug: ai-messaging
 source_filename: ai-messaging.yaml
 source_heading: Capability Spec

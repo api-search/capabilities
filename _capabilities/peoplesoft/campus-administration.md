@@ -37,42 +37,42 @@ personas: []
 provider_name: PeopleSoft
 provider_slug: peoplesoft
 search_terms:
-- approve, deny, or push back a campus approval request.
-- list financial aid awards
-- supply chain management
-- individual student details
-- list pending approvals
-- peopletools platform services.
-- peoplesoft
-- process approval
-- admission applications
-- retrieve class schedule and enrollment data.
-- financial aid awards
-- retrieve details for a specific student.
-- campus solutions.
-- list students
-- financial and supply chain management.
-- individual approval operations
-- human capital management.
-- erp
-- financial management
-- campus approval requests
-- higher education
-- get student
-- crm
-- admissions
-- retrieve student records.
-- class schedule and enrollment data
-- retrieve financial aid award data.
-- retrieve pending campus approval requests.
-- list admission applications
-- hcm
-- retrieve admission applications.
-- financial aid
-- campus solutions
-- enterprise software
 - student records
+- retrieve details for a specific student.
+- enterprise software
+- admission applications
+- list pending approvals
+- admissions
+- approve, deny, or push back a campus approval request.
+- financial aid awards
+- retrieve pending campus approval requests.
+- get student
+- higher education
+- individual approval operations
+- hcm
+- retrieve student records.
+- list students
+- class schedule and enrollment data
+- list financial aid awards
+- crm
 - list classes
+- human capital management.
+- financial management
+- campus solutions.
+- campus approval requests
+- peoplesoft
+- individual student details
+- campus solutions
+- retrieve financial aid award data.
+- financial aid
+- retrieve admission applications.
+- financial and supply chain management.
+- erp
+- peopletools platform services.
+- supply chain management
+- process approval
+- list admission applications
+- retrieve class schedule and enrollment data.
 slug: campus-administration
 source_filename: campus-administration.yaml
 source_heading: Capability Spec

@@ -41,50 +41,50 @@ personas: []
 provider_name: Vertiv
 provider_slug: vertiv
 search_terms:
-- list all circuits
-- list active alarms
-- environmental monitoring
-- list racks
-- list datasets
-- it asset inventory
 - list all data sets
-- data center rack inventory and status
-- get device by id
-- list all it assets tracked in the dcim system including servers, network equipment, and other data center hardware.
-- list devices
-- list all top-level data set entity categories available in the environet system (group, location, rack, device, circuit, etc.)
-- dcim
-- sensors
-- ups
-- operations
-- list all active alarms across data center infrastructure. filter by severity (alarm, warning, info), alarm source device name, or site name.
-- single monitored device
-- list all sensor points
-- list all racks
 - list circuits
-- list all environmental sensor data points including temperature, humidity, airflow, door position, and leak detection sensors.
-- power management
-- list all devices
-- electrical circuit monitoring and power readings
-- data center
-- critical infrastructure
-- alarms
-- environmental sensor data points
-- all monitored dcim devices
-- list assets
-- list all electrical circuits with current (amps), voltage, and power (watts) readings.
-- get device
 - get detailed information about a specific monitored device by its id.
-- top-level data set entity catalog
-- vertiv
-- list all assets
-- active alarms across all data center infrastructure
-- infrastructure monitoring
-- list alarms
-- list sensors
-- asset management
+- operations
+- alarms
+- list active alarms
 - list all monitored dcim devices. filter by site name, group path, or status (normal, alarm, warning, down, maintenance, disabled).
+- get device
+- infrastructure monitoring
+- list all active alarms across data center infrastructure. filter by severity (alarm, warning, info), alarm source device name, or site name.
+- environmental sensor data points
+- asset management
+- list alarms
+- electrical circuit monitoring and power readings
+- vertiv
+- list sensors
+- ups
+- environmental monitoring
+- list all sensor points
+- critical infrastructure
+- list all environmental sensor data points including temperature, humidity, airflow, door position, and leak detection sensors.
+- sensors
+- list all electrical circuits with current (amps), voltage, and power (watts) readings.
+- list racks
+- list all racks
+- list all it assets tracked in the dcim system including servers, network equipment, and other data center hardware.
+- active alarms across all data center infrastructure
+- list all assets
+- data center
+- list devices
+- get device by id
+- top-level data set entity catalog
+- list all devices
+- list all top-level data set entity categories available in the environet system (group, location, rack, device, circuit, etc.)
+- single monitored device
+- data center rack inventory and status
+- list datasets
+- power management
+- all monitored dcim devices
+- dcim
 - list all monitored racks in the data center with status and capacity information.
+- list all circuits
+- list assets
+- it asset inventory
 slug: dcim-monitoring
 source_filename: dcim-monitoring.yaml
 source_heading: Capability Spec

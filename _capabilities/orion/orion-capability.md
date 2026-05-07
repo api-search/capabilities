@@ -117,71 +117,71 @@ personas: []
 provider_name: Orion Health
 provider_slug: orion
 search_terms:
-- orion health get server capability statement
-- orion health read an allergy intolerance by id
-- getdocumentreference
-- orion health read an observation by id
-- fhir
-- integration
-- createobservation
 - population health
-- getencounter
-- orion health read an encounter by id
-- orion health search for document references
-- getmedicationrequest
-- getprocedure
-- health it
-- hl7
-- orion health create a new patient
-- orion health read a condition by id
-- orion health get patient version history
-- searchimmunizations
-- updatepatient
-- orion health create a new observation
-- orion health search for immunizations
-- orion health search for procedures
-- orion health read a procedure by id
-- healthcare
-- searchmedicationrequests
-- searchcareplans
-- getcareplan
-- orion health read a document reference by id
-- searchpatients
-- orion health read a diagnostic report by id
-- hie
-- orion health search for medication requests
-- getcapabilitystatement
-- orion health search for allergy intolerances
-- orion health search for patients
-- searchallergyintolerances
-- searchdocumentreferences
-- orion health read a care plan by id
-- getobservation
-- getdiagnosticreport
-- orion health read an immunization by id
-- orion health search for care plans
-- getpatienthistory
-- orion
-- searchconditions
-- orion health search for diagnostic reports
-- api
-- orion health search for conditions
-- interoperability
-- searchprocedures
-- getpatient
-- createpatient
-- orion health update a patient
-- ehr
-- getcondition
-- orion health read a medication request by id
-- orion health search for observations
-- getimmunization
 - orion health search for encounters
+- searchmedicationrequests
 - getallergyintolerance
-- orion health read a patient by id
+- orion health read a care plan by id
+- getcapabilitystatement
+- updatepatient
+- orion health read a medication request by id
+- orion health read an immunization by id
+- ehr
+- orion health search for patients
 - searchdiagnosticreports
+- api
+- createpatient
+- orion health search for observations
+- orion health read a condition by id
+- orion health read an allergy intolerance by id
+- searchprocedures
 - searchobservations
+- orion health create a new observation
+- getdiagnosticreport
 - searchencounters
+- orion health read a diagnostic report by id
+- getdocumentreference
+- health it
+- fhir
+- orion health search for immunizations
+- interoperability
+- orion health search for procedures
+- searchpatients
+- integration
+- orion
+- searchdocumentreferences
+- getprocedure
+- searchcareplans
+- healthcare
+- orion health update a patient
+- orion health read an observation by id
+- getmedicationrequest
+- orion health search for allergy intolerances
+- orion health search for care plans
+- orion health read a patient by id
+- orion health read a document reference by id
+- orion health get patient version history
+- getobservation
+- getimmunization
+- orion health create a new patient
+- hl7
+- orion health search for document references
+- searchallergyintolerances
+- hie
+- orion health search for diagnostic reports
+- orion health read a procedure by id
+- orion health get server capability statement
+- getcondition
+- getpatienthistory
+- getpatient
+- searchconditions
+- orion health read an encounter by id
+- createobservation
+- orion health search for conditions
+- searchimmunizations
+- orion health search for medication requests
+- getcareplan
+- getencounter
 slug: orion-capability
 source_filename: orion-capability.yaml
 source_heading: Capability Spec

@@ -33,40 +33,40 @@ personas: []
 provider_name: Uniblock
 provider_slug: uniblock
 search_terms:
+- defi
+- get all nfts held by a wallet address on a blockchain network
+- get current market price for a token
+- get token name, symbol, decimals, and contract details
+- get transaction history
+- get transaction history for a wallet
+- token balances for a wallet
 - token metadata across blockchain networks
-- uniblock
-- web3
-- nft holdings for a wallet
-- get nft balances
+- nfts
 - look up token metadata (name, symbol, decimals, contract) on any supported blockchain
-- blockchain
+- get all token balances for a wallet address across a blockchain network
+- get nft balances
+- web3
+- get token balances
+- get transaction history for a wallet address
+- get all token balances for a wallet address
+- nft holdings for a wallet
+- transaction history
+- tokens
+- get all nfts held by a wallet address
+- get nft holdings
+- get nft metadata
+- nft token metadata
+- token market price
+- get market price
+- get metadata for a specific nft including image, attributes, and collection details
 - get token metadata
+- uniblock
+- get current market price for a token by contract address
 - market data
 - get token price
-- get all token balances for a wallet address
-- get all nfts held by a wallet address
-- get metadata for a specific nft including image, attributes, and collection details
-- get current market price for a token
-- nfts
-- get nft metadata
-- get nft holdings
-- get transaction history
-- get all nfts held by a wallet address on a blockchain network
-- nft token metadata
-- transaction history
 - get transactions
-- tokens
-- get current market price for a token by contract address
-- get token balances
 - get metadata for a specific nft
-- get market price
-- token market price
-- token balances for a wallet
-- get transaction history for a wallet
-- get all token balances for a wallet address across a blockchain network
-- get transaction history for a wallet address
-- defi
-- get token name, symbol, decimals, and contract details
+- blockchain
 slug: blockchain-data
 source_filename: blockchain-data.yaml
 source_heading: Capability Spec

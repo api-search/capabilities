@@ -18,34 +18,34 @@ personas: []
 provider_name: Aklivity
 provider_slug: aklivity
 search_terms:
-- produce an event to kafka
-- real-time
-- multi-protocol api gateway for kafka access
-- kafka proxy
-- consume events
-- builds rest apis backed by kafka topics using zilla
-- configures and manages zilla gateway deployments for kafka access
-- multi-protocol
-- iot
-- apache kafka
-- produce an event to a kafka topic via zilla http gateway
 - API Developer
-- consume events from kafka
-- produce kafka event
-- IoT Developer
-- kafka event production and consumption
-- produce event
-- consume events from a kafka topic via zilla http gateway
-- aklivity
-- apache kafka topic management and event streaming
 - event-driven
-- api gateway
-- expose kafka topics as rest apis and manage event-driven integrations
-- Platform Engineer
-- kafka
 - consume kafka events
 - event-driven application patterns with kafka as the backbone
+- produce an event to a kafka topic via zilla http gateway
+- kafka event production and consumption
+- produce event
+- Platform Engineer
+- configures and manages zilla gateway deployments for kafka access
+- consume events from kafka
+- api gateway
+- multi-protocol api gateway for kafka access
+- apache kafka
+- expose kafka topics as rest apis and manage event-driven integrations
+- iot
+- kafka proxy
+- produce kafka event
+- apache kafka topic management and event streaming
+- consume events
+- multi-protocol
+- produce an event to kafka
+- consume events from a kafka topic via zilla http gateway
 - connects iot devices via mqtt to kafka using zilla
+- aklivity
+- real-time
+- kafka
+- IoT Developer
+- builds rest apis backed by kafka topics using zilla
 slug: kafka-api-gateway
 source_filename: kafka-api-gateway.yaml
 source_heading: Capability Spec

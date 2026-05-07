@@ -49,64 +49,64 @@ personas: []
 provider_name: Unity
 provider_slug: unity
 search_terms:
-- list leaderboards
-- get currency balances
-- add player currency
-- player item inventory
-- virtual item purchases
-- get top leaderboard scores
-- get player rank
-- multiplayer
-- economy
-- save player progress
-- real-time 3d
-- player game save data
-- leaderboard score data
-- get all virtual currency balances for a player
-- get a player's current rank and score on a leaderboard
-- get player game save data
-- purchase a virtual item
-- submit a player's score to a leaderboard
-- get the top scores from a leaderboard
-- cloud gaming
-- list all game leaderboards
-- add virtual currency to a player's balance
-- get save data
-- game development
-- retrieve a player's saved game progress and state
 - remote config
-- submit score
-- get player score and rank
-- game operations
-- purchase item
-- player-specific leaderboard score
-- submit leaderboard score
-- submit player score to leaderboard
-- save player game progress and state to the cloud
-- add currency
-- save player game progress
-- player virtual currency balance management
-- list all leaderboards
-- get player currencies
-- deduct player currency
-- get all currency balances for a player
-- get player inventory
-- get player progress
-- get top scores
-- unity
-- game services
-- leaderboards
-- deduct virtual currency from a player's balance
-- save data
-- purchase an in-game item using virtual currency
-- live ops
-- add currency to player balance
-- get all items in a player's inventory
-- cloud save
-- game leaderboard management
-- purchase virtual item
-- get inventory
+- get player game save data
+- get all virtual currency balances for a player
 - get player item inventory
+- get a player's current rank and score on a leaderboard
+- cloud save
+- submit a player's score to a leaderboard
+- game development
+- purchase virtual item
+- get player inventory
+- live ops
+- player virtual currency balance management
+- list all game leaderboards
+- get all currency balances for a player
+- player game save data
+- save player game progress
+- get the top scores from a leaderboard
+- retrieve a player's saved game progress and state
+- get player progress
+- game leaderboard management
+- unity
+- purchase item
+- deduct virtual currency from a player's balance
+- game services
+- leaderboard score data
+- get currency balances
+- list all leaderboards
+- add currency to player balance
+- add virtual currency to a player's balance
+- get player currencies
+- get player score and rank
+- save player game progress and state to the cloud
+- get inventory
+- get top leaderboard scores
+- purchase an in-game item using virtual currency
+- submit leaderboard score
+- get save data
+- multiplayer
+- cloud gaming
+- get top scores
+- player-specific leaderboard score
+- leaderboards
+- purchase a virtual item
+- save data
+- player item inventory
+- deduct player currency
+- add currency
+- economy
+- get player rank
+- real-time 3d
+- submit player score to leaderboard
+- save player progress
+- game operations
+- submit score
+- add player currency
+- get all items in a player's inventory
+- virtual item purchases
+- list leaderboards
 slug: live-game-operations
 source_filename: live-game-operations.yaml
 source_heading: Capability Spec

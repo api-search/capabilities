@@ -97,58 +97,58 @@ personas: []
 provider_name: Bloomberg APIs
 provider_slug: bloomberg-apis
 search_terms:
-- request end-of-day historical data over a date range
-- search bloomberg fields with results grouped by category tree
-- customvwapsubscribe
-- subscribe to streaming custom vwap for an equity
-- full-text search bloomberg fields by mnemonic / description
-- request tick-by-tick history for a single security
-- subscribe to streaming market data for one or more securities
-- request an authorization token for a server api application (b-pipe)
-- market data
-- logonstatusrequest
-- securityentitlementsrequest
-- intradaybarrequest
 - analytics
-- request reference data for one or more securities
-- request data for a bloomberg equity screening (eqs) screen
-- securitylookuprequest
-- historicaldatarequest
-- pagedatasubscribe
-- apis
-- intradaytickrequest
-- request portfolio positions and member data
-- bloomberg
-- request a technical analysis study (historical, intraday, or real-time)
-- fieldinforequest
-- authorizationrequest
-- curvelookuprequest
-- get field metadata by id (mnemonic or alpha-numeric identifier)
-- subscribe to a bloomberg gpgx page
-- portfoliodatarequest
-- look up securities by free-text query
-- look up bloomberg yield curves
-- marketdatasubscribe
-- request intraday bar (ohlcv) history for a single security
-- get exchange entitlements for one or more securities
-- userentitlementsrequest
-- studyrequest
-- look up government securities
-- news
-- financial data
-- api
-- marketbarsubscribe
-- govtlookuprequest
-- fieldsearchrequest
-- categorizedfieldsearchrequest
-- referencedatarequest
-- terminal
 - check whether a uuid is logged into bloomberg anywhere at an ip
+- bloomberg
+- fieldinforequest
+- get field metadata by id (mnemonic or alpha-numeric identifier)
+- search bloomberg fields with results grouped by category tree
+- apis
+- list exchange entitlements for a bloomberg user
+- look up government securities
+- request data for a bloomberg equity screening (eqs) screen
+- subscribe to a bloomberg gpgx page
+- look up securities by free-text query
+- studyrequest
+- request reference data for one or more securities
+- request tick-by-tick history for a single security
+- request portfolio positions and member data
+- request a technical analysis study (historical, intraday, or real-time)
+- api
+- curvelookuprequest
+- terminal
+- securityentitlementsrequest
 - beqsrequest
+- get exchange entitlements for one or more securities
+- logonstatusrequest
+- fieldsearchrequest
+- referencedatarequest
+- request intraday bar (ohlcv) history for a single security
+- userentitlementsrequest
 - authorizationtokenrequest
+- authorizationrequest
+- financial data
+- pagedatasubscribe
+- request an authorization token for a server api application (b-pipe)
+- full-text search bloomberg fields by mnemonic / description
+- subscribe to streaming market data for one or more securities
 - subscribe to streaming intraday bar data
 - authorize a bloomberg user against an ip address (server api) or token (b-pipe)
-- list exchange entitlements for a bloomberg user
+- historicaldatarequest
+- look up bloomberg yield curves
+- intradaybarrequest
+- marketbarsubscribe
+- securitylookuprequest
+- portfoliodatarequest
+- subscribe to streaming custom vwap for an equity
+- marketdatasubscribe
+- customvwapsubscribe
+- govtlookuprequest
+- market data
+- categorizedfieldsearchrequest
+- intradaytickrequest
+- request end-of-day historical data over a date range
+- news
 slug: bloomberg-apis-capability
 source_filename: bloomberg-apis-capability.yaml
 source_heading: Capability Spec

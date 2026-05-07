@@ -37,27 +37,27 @@ personas: []
 provider_name: Chat
 provider_slug: chat
 search_terms:
-- real-time
-- listconversations
-- create a conversation
-- list conversations
-- getconversation
-- list participants
-- createconversation
-- listparticipants
-- conversations
-- messaging
 - list messages in a conversation
+- get a conversation
+- conversations
+- customer support
+- listparticipants
 - api
+- conversational ai
+- list conversations
+- create a conversation
+- sendmessage
+- list participants
+- chat
+- getconversation
+- add a participant
+- createconversation
 - addparticipant
 - listmessages
-- chat
-- customer support
 - send a message
-- get a conversation
-- sendmessage
-- conversational ai
-- add a participant
+- messaging
+- real-time
+- listconversations
 slug: chat-capability
 source_filename: chat-capability.yaml
 source_heading: Capability Spec

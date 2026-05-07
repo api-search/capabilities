@@ -61,43 +61,43 @@ personas: []
 provider_name: Application Research
 provider_slug: application-research
 search_terms:
-- listclaimresults
-- application dependencies
-- research
-- integration
-- createbundle
-- application research get installation status
-- listclaims
-- deletebundle
-- application research create a new bundle
-- application research create a new claim
-- application research get a claim result by id
-- application research delete a bundle
-- cloud native
-- defining platform-agnostic application workload requirements
-- updatebundle
-- listinstallations
-- application research list results for a claim
 - application research update an existing bundle
-- application research list all bundles
-- application research get a bundle by name
-- api
+- application research delete a bundle
 - createclaim
-- packaging and distributing application bundles
-- application
-- listbundles
-- application research execute a bundle action
 - application research list all installations
-- getbundle
-- getclaim
-- getinstallationstatus
-- application research list all claims
-- specifications
-- getclaimresult
+- api
 - workload specifications
 - declaring service dependencies (databases, caches, queues) needed by applications
+- cloud native
+- updatebundle
+- defining platform-agnostic application workload requirements
+- application research list all claims
+- createbundle
+- application research get a bundle by name
+- listbundles
+- application research get installation status
+- integration
+- specifications
+- research
+- application
+- deletebundle
+- packaging and distributing application bundles
+- application research list results for a claim
+- application research execute a bundle action
 - application research get a claim by id
+- application research create a new bundle
+- getclaim
+- application research get a claim result by id
+- listinstallations
+- listclaimresults
 - executebundleaction
+- getclaimresult
+- application research list all bundles
+- getinstallationstatus
+- application dependencies
+- application research create a new claim
+- listclaims
+- getbundle
 slug: application-research-capability
 source_filename: application-research-capability.yaml
 source_heading: Capability Spec

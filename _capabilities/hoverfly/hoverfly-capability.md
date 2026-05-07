@@ -177,94 +177,94 @@ personas: []
 provider_name: Hoverfly
 provider_slug: hoverfly
 search_terms:
-- list post-serve actions
-- clear journal
-- getcors
-- set pac file
 - setpac
-- listcsvdatasources
-- appendsimulation
-- get logs
-- getlogs
-- clear state
-- get version
-- getcache
-- getdiff
-- patchstate
-- api
-- getversion
-- listpostserveactions
-- clear diff reports
-- list journal indexes
-- get simulation
-- get usage metrics
-- list csv data sources
-- append simulation
 - clearcache
-- clearjournal
-- get cors settings
-- get simulation json schema
-- filter diff reports
-- deletepostserveaction
-- get journal
-- delete csv data source
-- clear cache
-- delete post-serve action
-- get middleware
-- shut down hoverfly
-- getpac
-- replace state
 - set mode
-- clearsimulation
+- get simulation
 - mocking
-- update middleware
-- replace simulation
-- getdestination
-- hoverfly
-- replacesimulation
-- create or update post-serve action
-- getupstreamproxy
-- getjournal
-- create journal index
-- clearstate
-- getmode
-- get mode
-- get state
-- upsertcsvdatasource
-- gethoverfly
-- get hoverfly configuration
-- testing
-- get cache
-- cleardiff
-- clear simulation
-- upsert csv data source
-- deletecsvdatasource
-- replacestate
-- shutdown
-- setmiddleware
-- delete pac file
-- deletejournalindex
-- getusage
-- filter journal
-- get diff reports
-- listjournalindexes
-- patch state
-- deletepac
-- getmiddleware
-- setdestination
+- api
 - get pac file
-- upsertpostserveaction
-- createjournalindex
-- getsimulation
-- get destination
-- delete journal index
-- filterdiff
-- setmode
-- filterjournal
-- getsimulationschema
-- getstate
-- get upstream proxy
+- delete post-serve action
+- update middleware
+- getdiff
+- create or update post-serve action
+- getcors
+- replace state
+- get cache
+- get logs
+- create journal index
+- get version
+- getversion
 - set destination
+- clear diff reports
+- get usage metrics
+- getupstreamproxy
+- clearsimulation
+- listcsvdatasources
+- filter journal
+- set pac file
+- list post-serve actions
+- getjournal
+- patch state
+- clear simulation
+- clear state
+- replacestate
+- get diff reports
+- upsert csv data source
+- shut down hoverfly
+- setmiddleware
+- deletecsvdatasource
+- get journal
+- replace simulation
+- get hoverfly configuration
+- filterdiff
+- getsimulationschema
+- list csv data sources
+- get state
+- getlogs
+- clearjournal
+- get destination
+- createjournalindex
+- delete pac file
+- clearstate
+- get cors settings
+- cleardiff
+- getstate
+- clear journal
+- delete journal index
+- hoverfly
+- getpac
+- upsertpostserveaction
+- getsimulation
+- get upstream proxy
+- getdestination
+- getusage
+- getmode
+- filter diff reports
+- delete csv data source
+- get simulation json schema
+- setdestination
+- append simulation
+- listjournalindexes
+- deletepostserveaction
+- appendsimulation
+- testing
+- clear cache
+- gethoverfly
+- replacesimulation
+- getcache
+- getmiddleware
+- shutdown
+- get middleware
+- upsertcsvdatasource
+- filterjournal
+- deletejournalindex
+- patchstate
+- listpostserveactions
+- deletepac
+- setmode
+- list journal indexes
+- get mode
 slug: hoverfly-capability
 source_filename: hoverfly-capability.yaml
 source_heading: Capability Spec

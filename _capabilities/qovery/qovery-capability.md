@@ -249,131 +249,131 @@ personas: []
 provider_name: Qovery
 provider_slug: qovery
 search_terms:
-- get organization billing status
-- qovery
+- developer experience
 - edit a cluster
-- remove an invited member
-- deleteinvitemember
-- editclusterkubeconfig
-- invite someone in the organization
-- listorganizationapitokens
-- createorganizationapitoken
-- editorganization
-- create aws credentials set
-- getclusteradvancedsettings
-- getclusterkubeconfig
-- getinstallationhelmvalues
-- addcreditcard
-- list directories from a git repository
-- cloud deployment
-- editgittoken
-- delete organization api token
-- get organization members
-- changeplan
-- getorganizationinvoice
-- listdirectoriesfromgitrepository
-- getroutingtable
-- api
-- get invited members
-- getmemberinvitation
-- organizationdownloadallinvoices
-- list organization available roles
-- editorganizationmemberrole
-- list projects
-- list cluster logs
-- getorganizationmembers
-- get invoice link
-- remove a member
-- listorganization
-- generatebillingusagereport
-- createproject
-- add credit code
-- add credit card
-- editroutingtable
-- creategittoken
-- postorganizationtransferownership
 - editcluster
-- getorganizationbillinginfo
-- getclustercurrentcost
-- listproject
-- getorganization
-- list organization clusters
-- get cluster kubeconfig
-- get cluster helm values for self managed installation
-- create a git token
-- postacceptinvitemember
-- deletemember
-- deletecreditcard
-- edit an organization
-- change organization plan
-- list user organizations
-- get organization invoice
-- deleteorganization
-- get organization billing info
-- listorganizationavailableroles
-- get member invitation
-- list organization api tokens
-- list organization credit cards
-- getorganizationgittoken
-- delete credit card
-- getgittokenassociatedservices
+- listorganization
+- editorganizationbillinginfo
 - addcreditcode
-- get routing table
-- getclusterstatus
-- deletecluster
+- api
 - listorganizationcreditcards
-- createawscredentials
-- edit a git token
-- edit cluster kubeconfig
-- getorganizationclusterstatus
-- download all invoices
-- getorganizationbillingstatus
-- listorganizationcluster
-- edit an organization member role
-- getorganizationbillingexternalid
+- delete a git token
+- list all clusters statuses
+- list organization api tokens
+- get advanced settings
+- list cluster logs
+- getinstallationhelmvalues
+- delete credit card
+- invite someone in the organization
+- get cluster current cost
+- create a cluster
+- getorganizationgittoken
+- editclusteradvancedsettings
+- deleteinvitemember
+- postorganizationtransferownership
+- getorganizationmembers
+- get member invitation
+- get organization git token associated services
+- getorganization
+- get routing table
+- edit advanced settings
+- change organization plan
 - create an organization api token
-- getorganizationinvoicepdf
-- listclusterlogs
+- create a project
+- edit an organization member role
+- edit routing table
 - list aws credentials
 - accept invite in the organization
-- transfer organization ownership to another user
-- editclusteradvancedsettings
-- listawscredentials
-- get cluster status
-- list total number of services and environments for each project of the organization
-- get organization git token associated services
-- postinvitemember
-- get cluster current cost
-- list organization git tokens
-- getorganizationcurrentcost
-- create an organization
-- editorganizationbillinginfo
-- edit organization billing info
-- developer experience
-- listorganizationgittokens
-- edit routing table
-- internal developer platform
-- get advanced settings
-- get organization by id
-- create a project
-- list all clusters statuses
-- deletegittoken
-- get organization current cost
-- list organization invoices
-- createcluster
-- listorganizationinvoice
-- deleteorganizationapitoken
-- getorganizationinvitedmembers
-- createorganization
+- list directories from a git repository
+- get organization invoice
+- list projects
+- remove an invited member
+- deletecreditcard
+- getroutingtable
+- list organization available roles
+- download all invoices
 - generate organization billing usage report
-- create a cluster
 - getorganizationprojectstats
-- delete an organization
-- get organization git token
-- edit advanced settings
-- delete a cluster
+- create aws credentials set
+- listorganizationgittokens
 - get organization billing external id
-- delete a git token
+- internal developer platform
+- creategittoken
+- getclusterstatus
+- getgittokenassociatedservices
+- add credit code
+- get organization current cost
+- deletemember
+- deletegittoken
+- get organization billing status
+- list organization clusters
+- getorganizationbillingexternalid
+- get cluster helm values for self managed installation
+- get invited members
+- getorganizationcurrentcost
+- delete an organization
+- cloud deployment
+- addcreditcard
+- organizationdownloadallinvoices
+- createorganization
+- delete organization api token
+- transfer organization ownership to another user
+- editclusterkubeconfig
+- listorganizationapitokens
+- createcluster
+- getorganizationclusterstatus
+- createawscredentials
+- create a git token
+- edit a git token
+- get invoice link
+- get organization members
+- listproject
+- delete a cluster
+- listawscredentials
+- create an organization
+- get cluster status
+- listorganizationavailableroles
+- listdirectoriesfromgitrepository
+- list user organizations
+- getorganizationinvitedmembers
+- changeplan
+- get organization billing info
+- getorganizationinvoicepdf
+- getorganizationbillinginfo
+- listorganizationcluster
+- list organization git tokens
+- listclusterlogs
+- deleteorganization
+- createproject
+- getmemberinvitation
+- deletecluster
+- generatebillingusagereport
+- add credit card
+- createorganizationapitoken
+- editorganization
+- getclustercurrentcost
+- editorganizationmemberrole
+- list organization invoices
+- listorganizationinvoice
+- get cluster kubeconfig
+- edit organization billing info
+- qovery
+- get organization git token
+- remove a member
+- postacceptinvitemember
+- edit an organization
+- edit cluster kubeconfig
+- editgittoken
+- list total number of services and environments for each project of the organization
+- getclusteradvancedsettings
+- editroutingtable
+- getclusterkubeconfig
+- postinvitemember
+- getorganizationinvoice
+- get organization by id
+- getorganizationbillingstatus
+- list organization credit cards
+- deleteorganizationapitoken
 slug: qovery-capability
 source_filename: qovery-capability.yaml
 source_heading: Capability Spec

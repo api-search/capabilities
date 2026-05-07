@@ -61,42 +61,42 @@ personas: []
 provider_name: Marvel
 provider_slug: marvel
 search_terms:
+- get series by id
+- get character by id
 - list events
-- listcharacters
-- listevents
 - getcomic
-- get creator by id
-- get comic by id
-- list creators
-- get story by id
-- getcharacter
-- listcreators
-- listseries
 - creators
-- stories
-- getcreator
-- getseries
-- list stories
+- list characters
+- listseries
+- getcharacter
 - api
-- listcharactercomics
-- list comics
-- get event by id
-- list comics for a character
-- liststories
-- media
 - comics
 - getstory
-- list series
-- entertainment
-- list characters
-- characters
-- series
-- get character by id
-- get series by id
 - getevent
-- events
-- marvel
+- stories
+- get event by id
+- list comics
+- listcharacters
 - listcomics
+- events
+- liststories
+- listcreators
+- get story by id
+- series
+- entertainment
+- get creator by id
+- list stories
+- marvel
+- media
+- listevents
+- getseries
+- list series
+- listcharactercomics
+- list comics for a character
+- get comic by id
+- getcreator
+- characters
+- list creators
 slug: marvel-capability
 source_filename: marvel-capability.yaml
 source_heading: Capability Spec

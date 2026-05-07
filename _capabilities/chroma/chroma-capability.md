@@ -93,69 +93,69 @@ personas: []
 provider_name: Chroma
 provider_slug: chroma
 search_terms:
-- query records in a collection
 - delete a database
-- updatecollection
-- search records in a collection
-- getrecords
-- multi-modal
-- vector database
-- get a collection
-- retrieval
-- delete a collection
-- update records in a collection
-- add records to a collection
-- check server heartbeat
-- get a database
-- serverless
-- create a tenant
-- getcollection
-- updaterecords
-- cloud
-- createtenant
-- typescript
-- get a tenant
-- embeddings
-- ai
-- getdatabase
-- deletecollection
-- deletedatabase
-- rag
-- hybrid search
-- open source
-- upsertrecords
-- sdk
-- get server version
-- llm
 - upsert records in a collection
-- apache 2.0
-- update a collection
-- machine learning
-- javascript
-- createdatabase
-- gettenant
-- api
-- getversion
-- get records from a collection
-- ai native
-- search
-- count records in a collection
+- update records in a collection
+- updaterecords
 - create a database
-- searchrecords
-- python
-- create a collection
-- list databases
+- createdatabase
+- create a tenant
+- ai
 - countrecords
-- listdatabases
-- createcollection
+- api
+- check server heartbeat
+- llm
 - delete records from a collection
-- queryrecords
-- addrecords
-- heartbeat
+- rag
+- createcollection
 - listcollections
+- searchrecords
+- hybrid search
+- createtenant
+- add records to a collection
+- open source
+- list databases
+- heartbeat
+- deletedatabase
+- getcollection
+- get a collection
+- get records from a collection
+- get a database
+- gettenant
+- updatecollection
 - deleterecords
-- list collections
+- machine learning
+- serverless
+- embeddings
+- get server version
+- python
 - chroma
+- get a tenant
+- list collections
+- addrecords
+- count records in a collection
+- query records in a collection
+- search records in a collection
+- vector database
+- cloud
+- typescript
+- listdatabases
+- getrecords
+- upsertrecords
+- queryrecords
+- delete a collection
+- retrieval
+- getversion
+- create a collection
+- search
+- javascript
+- deletecollection
+- getdatabase
+- multi-modal
+- update a collection
+- ai native
+- sdk
+- apache 2.0
 slug: chroma-capability
 source_filename: chroma-capability.yaml
 source_heading: Capability Spec

@@ -25,26 +25,26 @@ personas: []
 provider_name: Chase
 provider_slug: chase
 search_terms:
-- getconsent
-- loyalty
-- financial services
+- listconsents
 - revokeconsent
 - revoke a consent
-- listconsents
-- consent
-- credit cards
-- open banking
-- api
 - fdx
-- get a consent record
-- create a consent request
+- loyalty
+- api
 - rewards
+- create a consent request
+- getconsent
 - account aggregation
-- chase
+- financial services
+- credit cards
 - list consents
-- pay with points
+- open banking
 - banking
+- get a consent record
+- chase
 - createconsent
+- consent
+- pay with points
 slug: chase-capability
 source_filename: chase-capability.yaml
 source_heading: Capability Spec

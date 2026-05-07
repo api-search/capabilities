@@ -65,41 +65,41 @@ personas: []
 provider_name: Google Chat
 provider_slug: google-chat
 search_terms:
-- google chat delete space
-- google chat create space
-- google chat get space
-- google workspace
-- createmember
-- google chat list spaces
-- listmembers
-- google chat list custom emojis
-- listreactions
-- createcustomemoji
-- google chat create custom emoji
-- google
+- setupspace
 - google chat list reactions
 - deletespace
-- google chat create message
-- updatespace
-- messaging
-- api
-- setupspace
-- listcustomemojis
-- spaces
-- google chat create reaction
-- getspace
-- google chat setup space
-- google chat list messages
-- listspaces
-- createreaction
-- listmessages
-- chat
-- createmessage
 - google chat list members
-- google chat create member
+- api
+- google chat setup space
+- google chat delete space
+- listreactions
+- google
 - collaboration
-- createspace
+- listmembers
+- google chat create space
+- google chat create member
+- createreaction
+- google chat list spaces
+- getspace
 - google chat update space
+- google chat list custom emojis
+- chat
+- google chat create message
+- google chat get space
+- createmessage
+- spaces
+- createspace
+- updatespace
+- listspaces
+- createmember
+- google chat list messages
+- google workspace
+- google chat create custom emoji
+- listmessages
+- messaging
+- google chat create reaction
+- listcustomemojis
+- createcustomemoji
 slug: google-chat-capability
 source_filename: google-chat-capability.yaml
 source_heading: Capability Spec

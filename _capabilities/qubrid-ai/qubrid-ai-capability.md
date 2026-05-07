@@ -53,39 +53,39 @@ personas: []
 provider_name: Qubrid AI
 provider_slug: qubrid-ai
 search_terms:
-- terminate a compute instance
-- createsshkey
-- listtemplates
-- list available gpu types
-- deleteinstance
-- list ssh keys
-- large language models
-- serverless
-- inference
 - createinstance
-- startinstance
+- stop a compute instance
 - ai
-- add an ssh key
-- retrieve a compute instance
-- getinstance
-- cloud computing
-- artificial intelligence
-- create a compute instance
-- machine learning
 - api
 - remove an ssh key
-- start a compute instance
-- nvidia
-- stop a compute instance
-- listinstances
-- list available templates
-- listsshkeys
-- listgputypes
-- list compute instances
 - qubrid
+- deleteinstance
+- artificial intelligence
+- list available gpu types
+- list available templates
+- cloud computing
+- getinstance
+- list ssh keys
+- machine learning
+- serverless
+- nvidia
+- listsshkeys
+- start a compute instance
+- inference
+- listgputypes
 - stopinstance
-- gpu
+- terminate a compute instance
+- large language models
+- createsshkey
 - deletesshkey
+- list compute instances
+- listtemplates
+- retrieve a compute instance
+- create a compute instance
+- listinstances
+- gpu
+- startinstance
+- add an ssh key
 slug: qubrid-ai-capability
 source_filename: qubrid-ai-capability.yaml
 source_heading: Capability Spec

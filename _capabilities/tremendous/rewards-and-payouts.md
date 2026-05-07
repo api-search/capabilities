@@ -45,49 +45,49 @@ personas: []
 provider_name: Tremendous
 provider_slug: tremendous
 search_terms:
-- reward campaigns (branding and product selection)
-- employee incentives
-- reward orders for sending payouts
+- list funding sources
+- list webhook configurations for monitoring reward delivery notifications.
+- create order
 - list reward orders to track incentive program activity and payout history.
-- individual reward status
-- get the delivery status of an individual reward including whether it was delivered and redeemed.
-- invoices and billing
-- get the status and details of a specific reward order including all rewards and delivery status.
-- get order
-- payouts
-- get reward delivery status
-- get reward
-- list invoices for tracking payout program costs and billing history.
-- create webhook
-- available payout products catalog
-- order tracking and status
-- market research
+- create a reward order
+- list products
+- configure a webhook endpoint to receive real-time notifications when orders complete or rewards are delivered.
 - browse the catalog of available payout products (gift cards, prepaid cards, paypal, bank transfers, charity donations) filtered by country or currency.
-- get campaign details including available products, email branding, and messaging configuration.
+- browse available products
+- list reward campaigns to select branding and product catalogs for recipient-choice rewards.
+- send a reward or payout to a recipient. specify recipient email, amount, currency, and delivery method (email, link, or phone).
+- create webhook
+- global payouts
+- rewards
+- reward orders for sending payouts
+- list all reward orders
+- order tracking and status
+- get the status and details of a specific reward order including all rewards and delivery status.
+- market research
+- list available funding sources (balance, invoice, credit card) to use when creating orders.
 - get campaign
 - list campaigns
-- resend reward
-- resend a reward delivery email to a recipient who did not receive it.
-- list all reward orders
-- incentives
-- configure a webhook endpoint to receive real-time notifications when orders complete or rewards are delivered.
-- funding sources for paying orders
-- list reward campaigns to select branding and product catalogs for recipient-choice rewards.
-- create order
 - list orders
+- reward campaigns (branding and product selection)
+- list invoices for tracking payout program costs and billing history.
+- funding sources for paying orders
 - get order status and rewards
-- send a reward or payout to a recipient. specify recipient email, amount, currency, and delivery method (email, link, or phone).
-- browse available products
-- list products
-- rewards
-- create a reward order
-- list invoices
-- list webhook configurations for monitoring reward delivery notifications.
-- list available funding sources (balance, invoice, credit card) to use when creating orders.
+- get the delivery status of an individual reward including whether it was delivered and redeemed.
 - list webhooks
-- global payouts
+- individual reward status
+- get reward
+- available payout products catalog
 - resend reward delivery
-- list funding sources
+- payouts
+- employee incentives
+- get campaign details including available products, email branding, and messaging configuration.
+- invoices and billing
+- get reward delivery status
+- incentives
+- list invoices
+- resend a reward delivery email to a recipient who did not receive it.
+- get order
+- resend reward
 slug: rewards-and-payouts
 source_filename: rewards-and-payouts.yaml
 source_heading: Capability Spec

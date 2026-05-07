@@ -17,16 +17,16 @@ personas: []
 provider_name: FASHN AI
 provider_slug: fashn
 search_terms:
-- fashn
-- submit a new prediction job
-- runprediction
-- api
-- fashion
 - retrieve prediction status and output
+- submit a new prediction job
+- fashion
 - getpredictionstatus
-- ai
 - virtual try-on
 - clothing
+- ai
+- api
+- runprediction
+- fashn
 slug: fashn-capability
 source_filename: fashn-capability.yaml
 source_heading: Capability Spec

@@ -249,134 +249,134 @@ personas: []
 provider_name: GitBook
 provider_slug: gitbook
 search_terms:
-- updatesitespace
+- gitbook restore a deleted space
+- createspaceinorganization
+- addsitespace
+- gitbook get an openapi specification
+- gitbook remove a space from a docs site
+- searchorganizationcontent
+- movespace
+- gitbook remove an organization member
+- resolvecontenturl
+- gitbook
+- deletespace
+- api
+- updatepageinchangerequest
+- gitbook delete a docs site
+- gitbook get space content
+- listopenapispecs
+- documentation
+- getcollection
+- getspacecontent
+- listintegrations
+- gitbook search content in an organization
+- gitbook move a site space
+- gitbook list openapi specifications
 - gitbook request a review
 - gitbook remove a space user
-- transferspace
-- gitbook list spaces in an organization
-- gitbook list files in a space
-- sdks
-- gitbook list site spaces
-- addsitespace
-- content
-- listchangerequestreviewers
-- gitbook move a site space
-- gitbook update a space
-- deletespace
-- getuserbyid
-- listintegrations
-- listsitespaces
-- listspacesinorganization
-- gitbook list organization teams
-- createspaceinorganization
-- gitbook upload an openapi specification
-- api
-- updatespaceuser
-- gitbook transfer a space
-- gitbook update a page in a space
-- gitbook update a docs site
-- gitbook create a change request
-- gitbook get an integration
-- updateorganization
-- gitbook restore a deleted space
-- gitbook list space user permissions
-- removespaceuser
-- gitbook update space user permissions
-- getopenapispec
-- movesitespace
-- removeorganizationmember
-- restorespace
-- gitbook search content in an organization
-- gitbook duplicate a space
-- updatedocssite
-- getcollection
-- gitbook get the authenticated user
-- gitbook get a collection
-- getorganization
-- importcontenttospace
-- gitbook get a user by id
-- gitbook delete a collection
-- createchangerequest
-- listorganizationmembers
-- deletecollection
-- gitbook delete a docs site
-- gitbook update a change request
-- gitbook get an openapi specification
-- listspaceusers
-- gitbook update a page in a change request
-- gitbook remove an organization member
-- getspace
-- updatechangerequest
-- resolvecontenturl
-- gitbook create a space in an organization
-- listorganizationteams
-- gitbook update an organization member
-- createcollection
-- gitbook get a page in a space
-- gitbook ask a question to a site
-- gitbook list collections
-- listfilesinspace
-- gitbook remove a space from a docs site
-- gitbook create a docs site
-- gitbook list docs sites
-- searchorganizationcontent
-- gitbook list organization members
-- listchangerequests
-- gitbook list openapi specifications
-- gitbook update an organization
-- gitbook resolve a content url
-- listcollectionsinorganization
-- gitbook get change request content
-- mergechangerequest
-- gitbook update a site space
-- getspacecontent
-- gitbook get a docs site
-- documentation
-- integrations
-- gitbook get an organization member
-- getorganizationteam
-- asksiteai
-- removesitespace
-- listopenapispecs
-- gitbook
-- gitbook get space content
-- movespace
-- updatepageinspace
-- getchangerequestcontent
 - deletedocssite
-- gitbook delete a space
-- gitbook get a space
-- gitbook get a team
-- gitbook get an organization
-- getcurrentuser
-- getpageinchangerequest
+- gitbook get a docs site
 - getdocssite
-- gitbook list organizations
-- listdocssites
-- updatepageinchangerequest
-- getintegration
-- gitbook move a space
-- gitbook import content to a space
+- gitbook get an integration
+- restorespace
+- asksiteai
 - gitbook create a collection
-- gitbook get a page in a change request
-- gitbook add a space to a docs site
-- uploadopenapispec
-- updatespace
-- getchangerequest
+- gitbook update an organization member
+- getorganization
+- listcollectionsinorganization
+- integrations
+- gitbook list organization teams
+- gitbook ask a question to a site
+- gitbook update a page in a change request
+- listfilesinspace
+- importcontenttospace
+- gitbook get a space
 - listorganizations
+- removeorganizationmember
+- updatedocssite
+- updatespaceuser
+- getopenapispec
+- gitbook update a docs site
+- listchangerequestreviewers
+- gitbook update a change request
+- gitbook create a docs site
+- gitbook create a change request
+- gitbook delete a space
 - gitbook merge a change request
-- getorganizationmember
-- getpageinspace
-- gitbook list change request reviewers
-- platform
-- gitbook list integrations
-- createdocssite
+- gitbook list files in a space
+- getchangerequest
+- gitbook duplicate a space
 - duplicatespace
+- gitbook delete a collection
+- listspaceusers
 - gitbook get a change request
-- experience
+- gitbook list organization members
+- updatespace
+- getorganizationmember
+- sdks
+- gitbook update an organization
+- uploadopenapispec
+- mergechangerequest
+- movesitespace
+- gitbook transfer a space
+- gitbook list integrations
+- gitbook get change request content
+- platform
+- updateorganization
+- createcollection
+- removespaceuser
+- updatepageinspace
+- gitbook upload an openapi specification
+- gitbook get a team
+- updatechangerequest
+- content
+- listorganizationteams
+- gitbook move a space
+- getspace
+- gitbook list docs sites
 - updateorganizationmember
+- gitbook list space user permissions
+- listchangerequests
+- gitbook list organizations
+- getpageinspace
+- updatesitespace
+- gitbook get a page in a space
+- listdocssites
+- gitbook list change request reviewers
+- createchangerequest
+- listspacesinorganization
+- getcurrentuser
+- gitbook list collections
+- gitbook update a space
+- gitbook list spaces in an organization
+- getorganizationteam
+- listorganizationmembers
+- gitbook get a page in a change request
+- gitbook get a user by id
+- gitbook get a collection
+- transferspace
+- listsitespaces
 - gitbook list change requests
+- gitbook create a space in an organization
+- gitbook get the authenticated user
+- getchangerequestcontent
+- experience
+- gitbook update a site space
+- gitbook resolve a content url
+- getuserbyid
+- getintegration
+- gitbook add a space to a docs site
+- gitbook list site spaces
+- gitbook get an organization member
+- getpageinchangerequest
 - requestchangerequestreview
+- gitbook import content to a space
+- deletecollection
+- createdocssite
+- removesitespace
+- gitbook update space user permissions
+- gitbook update a page in a space
+- gitbook get an organization
 slug: gitbook-capability
 source_filename: gitbook-capability.yaml
 source_heading: Capability Spec

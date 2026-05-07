@@ -13,18 +13,18 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
+- translation
+- governance
 - openehr
 - fhir
-- translate openehr to fhir
-- translation
-- api integration
-- governance
-- spec-driven integration
 - get fhir observation
+- translate openehr to fhir
 - ai
-- mcp
 - capabilities
+- spec-driven integration
+- api integration
+- mcp
+- naftiko
 slug: halmstad-openehr-fhir-translation-capability
 source_filename: halmstad-openehr-fhir-translation-capability.yaml
 source_heading: Capability Spec

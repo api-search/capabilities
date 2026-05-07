@@ -37,48 +37,48 @@ personas: []
 provider_name: Stripe
 provider_slug: stripe
 search_terms:
-- reverse a completed stripe payout
-- cancel a pending stripe payout
-- get refund
-- create a refund
-- get payout
-- submit evidence for a stripe dispute to contest a chargeback
-- get details of a stripe dispute
-- list payouts
-- stripe
-- financial operations
-- financial services
-- payouts
-- retrieve a stripe payout by id
-- create a payout
-- dispute management
-- list refunds
-- update dispute
-- refund management
-- get a payout
-- list stripe disputes (chargebacks)
-- treasury
-- retrieve a stripe refund by id
-- list disputes
-- commerce
-- list stripe payouts to bank accounts
-- create payout
+- disputes
 - individual payout
+- submit evidence for a stripe dispute to contest a chargeback
+- update dispute
 - get dispute
+- payout management
+- treasury
+- refund management
+- list stripe disputes (chargebacks)
+- reverse payout
+- individual dispute
+- commerce
+- issue a refund on a stripe charge
+- create a refund
+- fintech
+- retrieve a stripe payout by id
+- financial operations
+- list stripe payouts to bank accounts
+- list disputes
+- retrieve a stripe refund by id
+- cancel payout
+- financial services
+- dispute management
+- get details of a stripe dispute
 - create refund
 - t1
-- refunds
-- create a stripe payout to a bank account
-- payout management
-- disputes
-- cancel payout
-- individual dispute
-- issue a refund on a stripe charge
-- reverse payout
-- payments
-- get a dispute
+- list payouts
+- create a payout
+- reverse a completed stripe payout
 - list stripe refunds
-- fintech
+- stripe
+- refunds
+- get a dispute
+- list refunds
+- get refund
+- payouts
+- payments
+- get a payout
+- create payout
+- get payout
+- cancel a pending stripe payout
+- create a stripe payout to a bank account
 slug: financial-operations
 source_filename: financial-operations.yaml
 source_heading: Capability Spec

@@ -45,33 +45,33 @@ personas: []
 provider_name: Finch
 provider_slug: finch
 search_terms:
-- workforce
+- hris
+- listdirectory
+- unified api
+- get individual records (pii)
+- api
 - getindividuals
 - list company benefits
-- listdirectory
-- getcompany
 - get employment records
-- unified api
+- finch
+- exchangeauthcode
+- list company payments (pay runs)
+- hr
+- getpaystatements
+- get connected company information
+- payroll
+- getemployment
 - create a finch connect session
 - employment
-- list company payments (pay runs)
-- getemployment
-- benefits
-- listbenefits
-- payroll
-- get pay statements for one or more payments
 - exchange authorization code for access token
-- api
+- benefits
+- workforce
 - createconnectsession
-- hris
-- finch
-- listpayments
-- getpaystatements
 - list employees in the company directory
-- get individual records (pii)
-- hr
-- exchangeauthcode
-- get connected company information
+- get pay statements for one or more payments
+- listbenefits
+- listpayments
+- getcompany
 slug: finch-capability
 source_filename: finch-capability.yaml
 source_heading: Capability Spec

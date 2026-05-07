@@ -17,19 +17,19 @@ personas: []
 provider_name: National Institutes of Health
 provider_slug: national-institutes-of-health
 search_terms:
-- federal government
-- national
-- search nih-funded projects
-- research
-- api
-- search publications associated with nih projects
 - institutes
-- searchprojects
-- of
-- searchpublications
-- publications
+- research
 - funding
 - health
+- of
+- searchprojects
+- publications
+- search publications associated with nih projects
+- federal government
+- api
+- search nih-funded projects
+- searchpublications
+- national
 slug: national-institutes-of-health-capability
 source_filename: national-institutes-of-health-capability.yaml
 source_heading: Capability Spec

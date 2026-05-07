@@ -61,65 +61,65 @@ personas: []
 provider_name: SafeLine
 provider_slug: safeline
 search_terms:
-- reverse proxy
-- list security policy groups with their rule counts
-- web application firewall
-- ssl certificate management
-- create a new api token for safeline management automation
-- get acl rule execution logs
-- create api token
-- list access control rules for blocking or allowing specific traffic patterns
-- security policy groups
-- protected website management
-- get report results
-- list acl rules
-- list all web applications protected by safeline waf with their configuration
-- create a new acl rule
-- system information
-- get node info
-- enable or disable waf protection for a specific website
-- create a security policy group
-- list api tokens
-- get safeline system node information including cpu, memory, and version
-- list ssl certificates
-- security
-- create a new acl rule to block or allow traffic based on ip, url, or headers
 - list ssl certificates configured in safeline
-- list acl whitelist
-- add to acl whitelist
-- get safeline node system information
-- add a new web application to safeline waf protection
 - acl rule execution logs
-- security reports
-- acl
-- open source
-- create acl rule
-- enable or disable website protection
-- get generated security reports showing attack statistics and traffic analysis
-- list whitelisted ip addresses
-- create policy group
-- list all websites protected by safeline waf
-- create website
-- waf
-- list websites
-- list traffic acl rules
-- list ip addresses and cidr blocks in the acl whitelist
-- create a new security policy group for organizing waf rules
 - add a new website to waf protection
-- acl whitelist management
-- api gateway
+- get acl rule execution logs
+- get node info
+- toggle website protection
+- create website
+- list security policy groups with their rule counts
+- system information
+- list security policy groups
+- add to acl whitelist
 - add an ip address or cidr block to the acl whitelist
-- proxy
+- waf
+- reverse proxy
+- list all websites protected by safeline waf
+- create a security policy group
 - list all ssl/tls certificates managed by safeline
+- open source
+- protected website management
+- list ssl certificates
+- create a new acl rule to block or allow traffic based on ip, url, or headers
+- list acl whitelist
+- security reports
+- enable or disable website protection
+- create a new api token for safeline management automation
+- list ip addresses and cidr blocks in the acl whitelist
+- list api tokens for programmatic access to safeline management
+- list policy groups
+- ssl certificate management
+- get logs of triggered acl rules showing blocked/allowed requests and source ips
+- api gateway
+- create policy group
+- get safeline system node information including cpu, memory, and version
+- web application firewall
+- security policy groups
+- list all web applications protected by safeline waf with their configuration
+- get report results
+- list traffic acl rules
+- list whitelisted ip addresses
+- get safeline node system information
+- add ip or cidr to whitelist
+- create a new acl rule
+- list access control rules for blocking or allowing specific traffic patterns
+- create acl rule
+- get acl execution logs
+- list websites
+- add a new web application to safeline waf protection
+- acl whitelist management
+- acl
+- create a new security policy group for organizing waf rules
+- list api tokens
+- list acl rules
+- get generated security reports showing attack statistics and traffic analysis
+- security
 - access control list rules
 - get security reports
-- get acl execution logs
-- list api tokens for programmatic access to safeline management
-- list security policy groups
-- toggle website protection
-- get logs of triggered acl rules showing blocked/allowed requests and source ips
-- list policy groups
-- add ip or cidr to whitelist
+- create api token
+- enable or disable waf protection for a specific website
+- proxy
 slug: waf-protection-management
 source_filename: waf-protection-management.yaml
 source_heading: Capability Spec

@@ -37,47 +37,47 @@ personas: []
 provider_name: Walk Score
 provider_slug: walk-score
 search_terms:
-- search transit stops
-- get walk score, transit score, and bike score for any address or coordinates. returns walkability, transit accessibility, and bikeability in one call.
-- get all routes and stops within one mile
-- list supported cities
-- get detailed transit score for a city location
-- get transit stops near a location
-- get details for a specific transit stop by id
-- urban planning
-- get transit route details and geometry
-- get transit score with route summary for a city location
-- search transit network
-- get walk score, transit score, and bike score for a location
-- list cities with transit score support
-- list transit cities
-- transit
-- get transit network within one mile
-- get transit score
-- get transit route
-- get transit network
-- real estate
-- get all transit routes and stops within one mile of a location
-- get transit stop details
-- transportation
-- get details for a transit route including stops and route geometry
-- get all cities supported by transit api
 - get transit route details
+- bikeability
+- get transit score with route summary for a city location
+- get transit stops near a location
+- get transit stop details
+- get details for a specific transit stop by id
+- get all transit routes and stops within one mile of a location
+- search transit stops
+- get all routes and stops within one mile
+- get all cities supported by transit api
+- get details for a transit route including stops and route geometry
+- get transit route details and geometry
+- get transit stop
+- get walk score
+- get a specific transit stop
+- get walk score, transit score, and bike score for any address or coordinates. returns walkability, transit accessibility, and bikeability in one call.
+- get walk score, transit score, and bike score for a location
+- get location scores
+- get the list of all cities supported by the walk score transit api
+- get detailed transit score for a city location
+- location intelligence
+- get transit score
+- get transit network
+- find public transit stops near any location with route details
+- list transit cities
 - get detailed transit score with route count summary for a city location
+- get a specific transit route
 - get all walkability scores for a location
+- transportation
+- get transit network within one mile
 - location
+- real estate
+- walk score
+- get transit route
 - walkability
 - find nearby transit stops
-- bikeability
-- get transit stop
-- get location scores
-- walk score
-- get the list of all cities supported by the walk score transit api
-- location intelligence
-- get walk score
-- find public transit stops near any location with route details
-- get a specific transit route
-- get a specific transit stop
+- list supported cities
+- transit
+- list cities with transit score support
+- search transit network
+- urban planning
 slug: location-intelligence
 source_filename: location-intelligence.yaml
 source_heading: Capability Spec

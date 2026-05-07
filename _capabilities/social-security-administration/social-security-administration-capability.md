@@ -13,19 +13,19 @@ personas: []
 provider_name: Social Security Administration
 provider_slug: social-security-administration
 search_terms:
-- federal government
-- social security
 - government api
-- disability benefits
-- api
-- security
 - social
-- query field offices
-- retirement benefits
-- oasdi
 - queryfieldoffices
-- administration
+- social security
+- query field offices
+- federal government
+- security
+- api
 - open data
+- disability benefits
+- oasdi
+- retirement benefits
+- administration
 slug: social-security-administration-capability
 source_filename: social-security-administration-capability.yaml
 source_heading: Capability Spec

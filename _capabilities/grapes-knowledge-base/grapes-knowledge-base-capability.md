@@ -41,31 +41,31 @@ personas: []
 provider_name: Grapes Knowledge Base
 provider_slug: grapes-knowledge-base
 search_terms:
-- export dataset
+- base
+- automation
 - post agents
-- get datasets
+- api
+- import dataset
+- data management
+- knowledge management
+- knowledge base
+- export dataset
+- get projects
+- list projects
+- create project
+- post projects
+- get projects projectid
+- knowledge
+- hateoas
+- create agent
+- grapes
+- get agents
+- get project
+- post datasets import
 - list datasets
 - list agents
-- knowledge management
-- post projects
+- get datasets
 - get datasets datasetid export
-- get projects projectid
-- hateoas
-- import dataset
-- create project
-- knowledge
-- get projects
-- base
-- data management
-- api
-- grapes
-- knowledge base
-- get project
-- list projects
-- post datasets import
-- get agents
-- create agent
-- automation
 slug: grapes-knowledge-base-capability
 source_filename: grapes-knowledge-base-capability.yaml
 source_heading: Capability Spec

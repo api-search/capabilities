@@ -33,49 +33,49 @@ personas: []
 provider_name: Teledyne Technologies
 provider_slug: teledyne-technologies
 search_terms:
-- get line profile temperature measurements.
-- read min, max, and average temperature statistics for a box region of interest on the flir camera.
-- defense
-- read line temperature profile
-- get spot measurement
-- capture thermal image
-- check the state of all configured temperature alarms on the flir camera.
-- get a specific camera alarm state.
-- test and measurement
-- read the current temperature at a specific spot measurement point on the flir camera.
-- check whether a specific temperature alarm is triggered on the flir camera.
-- line profile temperature measurements.
-- get current image
-- get alarm
-- check alarm
-- machine vision
-- industrial automation
-- capture a current thermal image from a flir automation camera. use imgformat=rjpeg for radiometric data.
-- read the temperature profile across a line region of interest for thermal gradient analysis.
-- predictive maintenance
 - aerospace
-- get box measurement
+- read box temperature stats
+- capture current thermal image in the specified format.
+- line profile temperature measurements.
+- capture thermal image
+- get alarm
+- get spot temperature measurement.
+- specific alarm state.
+- capture a current thermal image from a flir automation camera. use imgformat=rjpeg for radiometric data.
+- get spot measurement
+- read min, max, and average temperature statistics for a box region of interest on the flir camera.
+- current thermal camera image.
+- thermal imaging
 - process monitoring
-- get line measurement
-- digital imaging
-- fortune 500
-- read spot temperature
+- thermal monitoring
 - teledyne flir
 - get all camera alarm states.
-- thermal imaging
-- current thermal camera image.
-- read box temperature stats
 - spot temperature measurement.
-- camera alarm states.
-- thermal monitoring
+- get a specific camera alarm state.
 - get all alarms
-- instrumentation
-- specific alarm state.
 - get box roi temperature statistics.
-- capture current thermal image in the specified format.
-- get spot temperature measurement.
-- check all alarms
+- get line profile temperature measurements.
+- machine vision
+- check whether a specific temperature alarm is triggered on the flir camera.
+- instrumentation
+- check the state of all configured temperature alarms on the flir camera.
+- read the current temperature at a specific spot measurement point on the flir camera.
+- defense
+- test and measurement
+- predictive maintenance
 - box roi temperature statistics.
+- get line measurement
+- industrial automation
+- camera alarm states.
+- read line temperature profile
+- check alarm
+- get box measurement
+- read the temperature profile across a line region of interest for thermal gradient analysis.
+- digital imaging
+- read spot temperature
+- check all alarms
+- get current image
+- fortune 500
 slug: industrial-thermal-monitoring
 source_filename: industrial-thermal-monitoring.yaml
 source_heading: Capability Spec

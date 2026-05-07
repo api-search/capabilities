@@ -13,16 +13,16 @@ personas: []
 provider_name: Plausible
 provider_slug: plausible
 search_terms:
-- web analytics
-- gdpr
-- privacy
-- record a pageview or custom event
-- api
-- recordevent
 - analytics
-- plausible
-- open source
 - cookie-free
+- privacy
+- open source
+- gdpr
+- recordevent
+- web analytics
+- plausible
+- api
+- record a pageview or custom event
 slug: plausible-capability
 source_filename: plausible-capability.yaml
 source_heading: Capability Spec

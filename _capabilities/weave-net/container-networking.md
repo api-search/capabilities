@@ -45,55 +45,55 @@ personas: []
 provider_name: Weave Net
 provider_slug: weave-net
 search_terms:
-- networking
-- peer connection management
-- release all ip addresses allocated to a container
-- get the current status of the weave net daemon including peers and ipam state
-- register a dns name for a container in weavedns
-- get default subnet
-- dns
-- get status
-- get dns domain
-- get default ipam subnet
-- get the default subnet used for ipam allocation
 - devops
-- ip address allocations
-- ipam
-- lookup container ip
-- connect weave net to a remote peer node
-- allocate ip for a container
-- connect peer
-- allocate ip
-- connect to peer
-- allocate an ip address for a container on the weave network
+- networking
 - containers
-- deregister a container's dns name from weavedns
-- docker
+- deregister container dns
+- ipam
+- look up container ip
+- dns domain
+- release all ip addresses allocated to a container
+- deregister container dns name
+- lookup ip
 - daemon status
-- kubernetes
+- look up the ip address allocated to a container
+- allocate ip for a container
+- get daemon status
 - open source
 - get weave net daemon status
-- get the weavedns domain suffix for name resolution
-- default subnet information
-- release ips
-- look up container ip
-- connect to a remote peer
-- get daemon status
 - allocate container ip
-- cncf
-- dns domain
-- deregister dns
-- lookup ip
-- deregister container dns
+- peer connection management
+- get default ipam subnet
+- default subnet information
+- connect to peer
+- release ips
 - get weavedns domain
+- get status
+- kubernetes
+- connect weave net to a remote peer node
+- ip address allocations
+- allocate ip
+- get default subnet
+- get the current status of the weave net daemon including peers and ipam state
+- deregister a container's dns name from weavedns
 - release container ips
-- look up the ip address allocated to a container
-- register container dns
 - register dns
-- register container dns name
 - dns name registrations
-- deregister container dns name
+- cncf
+- connect to a remote peer
+- allocate an ip address for a container on the weave network
+- connect peer
+- lookup container ip
 - container ip allocation
+- deregister dns
+- get the default subnet used for ipam allocation
+- register container dns name
+- dns
+- register a dns name for a container in weavedns
+- register container dns
+- get the weavedns domain suffix for name resolution
+- docker
+- get dns domain
 slug: container-networking
 source_filename: container-networking.yaml
 source_heading: Capability Spec

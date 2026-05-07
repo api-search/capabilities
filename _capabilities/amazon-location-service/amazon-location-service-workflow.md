@@ -9,25 +9,25 @@ personas: []
 provider_name: Amazon Location Service
 provider_slug: amazon-location-service
 search_terms:
-- Administrator
-- aws
-- workflow
-- Developer
+- lists map resources in your aws account.
 - integrates api into applications
-- retrieves the map resource details.
-- map resources create map
+- geocoding
+- manages resources and configurations
+- Administrator
 - map resources describe map
 - routing
-- geofencing
-- manages resources and configurations
-- unified workflow for amazon location service resource management
-- maps
-- location
-- amazon location service
 - map resources list maps
+- unified workflow for amazon location service resource management
+- location
+- workflow
+- maps
+- amazon location service
+- Developer
+- retrieves the map resource details.
+- aws
 - creates a map resource in your aws account.
-- geocoding
-- lists map resources in your aws account.
+- map resources create map
+- geofencing
 slug: amazon-location-service-workflow
 source_filename: amazon-location-service-workflow.yaml
 source_heading: Capability Spec

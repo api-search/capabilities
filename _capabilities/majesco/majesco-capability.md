@@ -57,32 +57,32 @@ personas: []
 provider_name: majesco
 provider_slug: majesco
 search_terms:
-- list policies
-- createpolicy
-- cancelpolicy
-- listclaims
 - listpolicies
+- createclaim
+- list billing accounts
+- list claims
+- cancelpolicy
+- renewpolicy
+- update (endorse) a policy
+- api
+- getpolicy
+- updatepolicy
+- recordpayment
+- generate an insurance quote
+- get claim details
+- getclaim
+- get a policy by policy number
 - create a new policy
 - createquote
-- updatepolicy
-- list claims
-- getpolicy
-- list billing accounts
-- api
-- renewpolicy
-- cancel a policy
+- createpolicy
+- list policies
 - create a new claim
-- createclaim
-- listbillingaccounts
+- cancel a policy
 - majesco
-- renew a policy
-- getclaim
-- update (endorse) a policy
-- get claim details
-- generate an insurance quote
-- recordpayment
+- listbillingaccounts
 - record a payment
-- get a policy by policy number
+- listclaims
+- renew a policy
 slug: majesco-capability
 source_filename: majesco-capability.yaml
 source_heading: Capability Spec

@@ -61,62 +61,62 @@ personas: []
 provider_name: Swetrix
 provider_slug: swetrix
 search_terms:
-- error tracking
-- record revenue
-- record custom events
-- cookieless tracking
-- record a javascript error event for dashboard aggregation
-- query frontend performance metrics including dns, tls, ttfb, and page load times
-- custom events
-- traffic
 - analytics
-- list individual visitor sessions with device and page details
-- record custom event
-- record pageview
-- record error
-- list error events
 - create a new swetrix analytics project
-- real-time analytics
-- record a pageview event to swetrix analytics
-- get currently active visitors with device, browser, os, and country details
-- record error event
-- swetrix
-- project management
-- create project
-- list sessions
-- open source
-- record pageview events
-- query error statistics
-- web analytics
-- get currently active visitors
-- record a custom analytics event with optional metadata
-- list all swetrix analytics projects for the account
-- list javascript error groups with occurrence counts and affected sessions
-- get performance metrics
-- list errors
-- permanently delete a project and all associated analytics data
-- gdpr compliant
-- record javascript error events
-- get live visitors
 - query aggregated traffic data for a project by time bucket and period
 - manage analytics projects
+- custom events
+- record javascript error events
+- list errors
+- record pageview
+- get performance metrics
+- swetrix
+- web analytics
+- record pageview event
+- record a pageview event to swetrix analytics
+- list individual visitor sessions with device and page details
+- list error events
+- query error statistics
+- privacy
+- open source
+- gdpr compliant
+- get configuration and settings for a specific project
+- project management
+- analyze conversion rates across a sequence of pages in a funnel
+- error tracking
+- list projects
+- create project
 - delete project
+- query frontend performance metrics including dns, tls, ttfb, and page load times
+- list visitor sessions
+- permanently delete a project and all associated analytics data
+- real-time analytics
+- record a revenue transaction (sale, refund, subscription)
+- get currently active visitors
+- list javascript error groups with occurrence counts and affected sessions
+- record revenue
+- list sessions
+- record a custom analytics event with optional metadata
+- traffic
+- cookieless tracking
+- record pageview events
+- record custom events
+- single project operations
+- get currently active visitors with device, browser, os, and country details
+- get funnel analysis
+- get live visitors
 - query custom event analytics grouped by time for named events
 - get project
-- list projects
-- get configuration and settings for a specific project
-- get funnel analysis
+- record error event
 - query traffic analytics
-- record a revenue transaction (sale, refund, subscription)
-- record pageview event
-- get custom events
-- analyze conversion funnels
-- analyze conversion rates across a sequence of pages in a funnel
-- query performance metrics
-- privacy
 - get traffic log
-- list visitor sessions
-- single project operations
+- analyze conversion funnels
+- get custom events
+- record a javascript error event for dashboard aggregation
+- record custom event
+- query performance metrics
+- list all swetrix analytics projects for the account
+- record error
 slug: web-analytics
 source_filename: web-analytics.yaml
 source_heading: Capability Spec

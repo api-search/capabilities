@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- cross platform search
-- splunk
-- search datadog logs
-- mcp
 - observability
-- api integration
 - governance
 - spec-driven integration
-- query datadog metrics
-- ai
 - datadog
+- api integration
+- query datadog metrics
+- search datadog logs
+- splunk
+- ai
 - capabilities
+- cross platform search
+- mcp
+- naftiko
 - search splunk
 slug: datadog-splunk-observability-fabric-capability
 source_filename: datadog-splunk-observability-fabric-capability.yaml

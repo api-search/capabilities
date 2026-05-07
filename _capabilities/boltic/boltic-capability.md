@@ -93,56 +93,56 @@ personas: []
 provider_name: Boltic
 provider_slug: boltic
 search_terms:
-- boltic get a consumer by id
-- listplugins
-- boltic create a new plugin
-- gateways
-- boltic update a plugin
-- listroutes
-- createcertificate
-- updateroute
-- boltic list all services
-- datasync
-- nocode
-- boltic get a plugin by id
-- getroute
-- boltic delete a route
-- boltic list all plugins
-- boltic create a new route
-- boltic get a service by id
-- boltic list all certificates
-- createroute
-- createplugin
-- getservice
-- boltic create a new consumer
-- getplugin
-- deleteservice
-- deleteplugin
-- listcertificates
-- boltic upload a new certificate
-- updateplugin
-- boltic update a route
-- boltic delete a plugin
-- boltic delete a consumer
-- api
-- deleteconsumer
-- boltic list all routes
-- updateservice
-- boltic update a service
-- boltic list all consumers
-- boltic
-- workflows
-- getconsumer
-- boltic get a route by id
-- deleteroute
 - streaming
-- boltic create a new service
-- createconsumer
-- listconsumers
-- listservices
-- boltic delete a service
-- createservice
+- boltic list all consumers
+- boltic delete a consumer
+- boltic get a consumer by id
 - automation
+- getservice
+- listcertificates
+- api
+- boltic create a new route
+- gateways
+- deleteconsumer
+- getconsumer
+- createconsumer
+- boltic get a plugin by id
+- boltic get a route by id
+- createroute
+- datasync
+- createplugin
+- boltic update a service
+- updateservice
+- boltic delete a service
+- updateroute
+- boltic list all plugins
+- getplugin
+- boltic list all certificates
+- boltic
+- listconsumers
+- boltic upload a new certificate
+- boltic delete a route
+- deleteroute
+- boltic create a new consumer
+- nocode
+- boltic create a new plugin
+- updateplugin
+- getroute
+- boltic update a plugin
+- boltic get a service by id
+- boltic list all services
+- boltic list all routes
+- deleteplugin
+- workflows
+- createcertificate
+- boltic update a route
+- deleteservice
+- createservice
+- boltic delete a plugin
+- boltic create a new service
+- listplugins
+- listroutes
+- listservices
 slug: boltic-capability
 source_filename: boltic-capability.yaml
 source_heading: Capability Spec

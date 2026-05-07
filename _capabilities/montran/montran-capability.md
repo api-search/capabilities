@@ -57,41 +57,41 @@ personas: []
 provider_name: Montran
 provider_slug: montran
 search_terms:
-- montran list corporate payments
-- listbankaccounts
-- uploadpaymentfile
-- listbeneficiaries
-- market infrastructure
-- montran list bank accounts
-- montran create a beneficiary
-- montran create a corporate payment
-- financial services
-- montran get bank account details
-- montran approve a payment
 - montran list beneficiaries
-- getfilestatus
-- montran get file processing status
-- montran
-- central banking
+- listbeneficiaries
+- uploadpaymentfile
+- montran list corporate payments
+- montran list bank accounts
 - getcorporatepayment
 - montran reject a payment
-- montran get payment details
-- listaccounttransactions
-- swift
-- messaging
-- real-time payments
-- iso 20022
-- api
-- approvepayment
-- montran upload a payment file
-- createbeneficiary
-- payments
-- createcorporatepayment
-- listcorporatepayments
 - montran list account transactions
-- getbankaccount
-- banking
+- real-time payments
+- market infrastructure
+- api
+- swift
+- montran upload a payment file
+- montran approve a payment
 - rejectpayment
+- listbankaccounts
+- montran create a beneficiary
+- financial services
+- montran
+- listaccounttransactions
+- getfilestatus
+- montran create a corporate payment
+- getbankaccount
+- createbeneficiary
+- createcorporatepayment
+- montran get bank account details
+- banking
+- approvepayment
+- payments
+- listcorporatepayments
+- iso 20022
+- montran get file processing status
+- messaging
+- central banking
+- montran get payment details
 slug: montran-capability
 source_filename: montran-capability.yaml
 source_heading: Capability Spec

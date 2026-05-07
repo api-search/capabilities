@@ -29,23 +29,23 @@ personas: []
 provider_name: NVD
 provider_slug: nvd
 search_terms:
-- get cpe match criteria
-- get cve records
-- cve
-- getcvechangehistory
-- vulnerability
-- getcves
-- api
-- getcpes
 - getcpematch
-- getsources
-- security
 - cvss
-- nvd
+- get cpe (common platform enumeration) records
 - cpe
 - get cve change history
+- getcvechangehistory
+- getcves
+- get cve records
+- get cpe match criteria
+- getsources
+- vulnerability
 - get nvd data sources
-- get cpe (common platform enumeration) records
+- api
+- security
+- cve
+- getcpes
+- nvd
 slug: nvd-capability
 source_filename: nvd-capability.yaml
 source_heading: Capability Spec

@@ -33,26 +33,26 @@ personas: []
 provider_name: Metals.Dev
 provider_slug: metals-dev
 search_terms:
-- get authority metal price
-- getlatest
-- gold
-- precious metals
-- get spot metal price
-- getusage
-- silver
-- getmetalspot
-- getcurrencies
 - metals
-- get account usage
-- get latest rates
-- financial data
-- api
-- getmetalauthority
-- dev
-- get currency rates
-- gettimeseries
 - spot prices
+- api
+- get authority metal price
+- precious metals
 - get historical timeseries
+- get spot metal price
+- get latest rates
+- dev
+- financial data
+- get account usage
+- gold
+- getusage
+- getlatest
+- getmetalspot
+- gettimeseries
+- silver
+- getmetalauthority
+- getcurrencies
+- get currency rates
 slug: metals-dev-capability
 source_filename: metals-dev-capability.yaml
 source_heading: Capability Spec

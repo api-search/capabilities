@@ -25,33 +25,33 @@ personas: []
 provider_name: United States Fire Administration
 provider_slug: united-states-fire-administration
 search_terms:
-- discover available openfema datasets and their metadata
-- list fema fire disaster declarations with optional filters
-- disaster analysis
-- retrieve fema fire disaster declarations filtered by state, date, or other criteria
-- fema
-- list dataset fields
-- fire-type fema disaster declarations
-- get summarized disaster declarations showing which fema assistance programs were authorized
-- fire safety
-- list datasets
-- get field descriptions for a specific dataset
-- get field-level data dictionary for a dataset
-- list fire disasters
-- usfa
 - list openfema datasets
-- emergency management
-- public safety
-- get disaster program summaries
-- list all available openfema datasets
-- get fire disaster declarations
-- list all available datasets on the openfema platform with descriptions and last update times
-- federal government
-- list disaster summaries
-- get disaster declarations with authorized assistance programs
-- get dataset fields
-- get data dictionary and field descriptions for a specific openfema dataset
+- discover available openfema datasets and their metadata
 - summarized disaster declarations with program details
+- get field descriptions for a specific dataset
+- list fema fire disaster declarations with optional filters
+- emergency management
+- list all available openfema datasets
+- list all available datasets on the openfema platform with descriptions and last update times
+- list fire disasters
+- fema
+- fire safety
+- get dataset fields
+- get fire disaster declarations
+- list disaster summaries
+- get data dictionary and field descriptions for a specific openfema dataset
+- get disaster declarations with authorized assistance programs
+- usfa
+- retrieve fema fire disaster declarations filtered by state, date, or other criteria
+- list datasets
+- get summarized disaster declarations showing which fema assistance programs were authorized
+- get disaster program summaries
+- public safety
+- federal government
+- get field-level data dictionary for a dataset
+- list dataset fields
+- disaster analysis
+- fire-type fema disaster declarations
 slug: fire-incident-data
 source_filename: fire-incident-data.yaml
 source_heading: Capability Spec

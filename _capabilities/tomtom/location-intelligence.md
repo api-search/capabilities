@@ -41,53 +41,53 @@ personas: []
 provider_name: TomTom
 provider_slug: tomtom
 search_terms:
-- tomtom
-- search for nearby points of interest
-- get real-time traffic incidents
-- get real-time traffic incidents, accidents, and road closures for a geographic area
-- traffic
-- get traffic incidents
-- geocode address
-- geospatial
-- reverse geocode
-- navigation
-- calculate route between locations
-- get real-time traffic flow for a road segment
-- reverse geocoding
-- real-time traffic incidents
-- calculate route
-- routing
-- fuzzy search
-- address geocoding
-- convert address to coordinates
-- poi discovery
-- reverse geocode coordinates
-- calculate the geographic area reachable from a point within time or distance limits
-- get real-time traffic flow speed and travel time for a road segment near a location
-- transportation
-- convert coordinates to address
-- fuzzy search for addresses and points of interest
-- reachable area calculation
-- convert geographic coordinates to a human-readable street address
-- get traffic flow
-- search
-- find nearby pois
-- maps
-- search places
 - poi search
-- location
-- convert a street address to geographic coordinates (latitude/longitude)
-- location and poi search
-- geocode
-- calculate reachable range
-- location intelligence
-- search for addresses and points of interest by name or keyword
-- find points of interest (restaurants, gas stations, parking, etc.) near a location
-- route calculation
-- calculate area reachable within constraints
+- reverse geocode coordinates
 - geocoding
+- get real-time traffic incidents
+- fuzzy search
+- reachable area calculation
+- poi discovery
+- get real-time traffic flow for a road segment
+- convert address to coordinates
+- navigation
+- route calculation
+- geocode
+- geocode address
+- find nearby pois
+- calculate route between locations
+- location and poi search
 - calculate the optimal route between two or more locations with optional traffic and vehicle parameters
+- location intelligence
+- reverse geocoding
+- calculate route
+- geospatial
+- routing
+- calculate reachable range
+- tomtom
+- find points of interest (restaurants, gas stations, parking, etc.) near a location
 - real-time traffic flow
+- transportation
+- location
+- maps
+- traffic
+- get traffic flow
+- get real-time traffic flow speed and travel time for a road segment near a location
+- convert a street address to geographic coordinates (latitude/longitude)
+- search places
+- real-time traffic incidents
+- calculate area reachable within constraints
+- get traffic incidents
+- search for addresses and points of interest by name or keyword
+- reverse geocode
+- search
+- calculate the geographic area reachable from a point within time or distance limits
+- convert geographic coordinates to a human-readable street address
+- fuzzy search for addresses and points of interest
+- convert coordinates to address
+- search for nearby points of interest
+- address geocoding
+- get real-time traffic incidents, accidents, and road closures for a geographic area
 slug: location-intelligence
 source_filename: location-intelligence.yaml
 source_heading: Capability Spec

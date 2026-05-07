@@ -41,47 +41,47 @@ personas: []
 provider_name: Ramp
 provider_slug: ramp
 search_terms:
-- expense management
-- card statement records.
-- accounts payable
-- list bill pay records and their approval status.
-- retrieve a single ramp transaction by id. use to inspect a specific expense or resolve a dispute.
-- corporate cards
-- bill pay records and approval workflows.
-- list reimbursements
-- finance
-- list all bills.
-- accounting
-- list all users in the organization.
-- bill pay
-- ramp user accounts.
-- retrieve a single transaction by id.
-- list bills
-- get transaction
-- list card statements for period-end reconciliation.
-- spend management
 - list all departments.
-- list all card statements.
-- department records.
-- list all departments to understand organizational spend structure.
-- list all cards issued to users and departments.
-- list cards
-- list out-of-pocket reimbursement requests submitted by employees.
-- single transaction record.
-- out-of-pocket reimbursement requests.
-- list ramp card and bill transactions with optional date range filtering. use to analyze spending, reconcile expenses, or audit financial activity.
-- list users
-- card and bill transactions across the organization.
-- list all ramp users in the organization with their roles and department assignments.
-- list departments
-- list statements
-- ramp
-- list transactions with optional date range filters.
-- list transactions
-- physical and virtual corporate cards.
-- reimbursements
 - list all reimbursement requests.
+- corporate cards
+- retrieve a single transaction by id.
+- ramp user accounts.
+- list all card statements.
+- expense management
+- list cards
+- bill pay
+- accounting
+- single transaction record.
+- list card statements for period-end reconciliation.
+- reimbursements
+- ramp
+- accounts payable
+- list out-of-pocket reimbursement requests submitted by employees.
+- list all cards issued to users and departments.
+- card statement records.
+- list departments
+- retrieve a single ramp transaction by id. use to inspect a specific expense or resolve a dispute.
+- list all bills.
+- get transaction
+- list all departments to understand organizational spend structure.
+- finance
+- list all ramp users in the organization with their roles and department assignments.
+- list users
 - list all corporate cards issued in the organization, including spending limits and states.
+- spend management
+- physical and virtual corporate cards.
+- list bill pay records and their approval status.
+- list reimbursements
+- list statements
+- list bills
+- out-of-pocket reimbursement requests.
+- card and bill transactions across the organization.
+- list ramp card and bill transactions with optional date range filtering. use to analyze spending, reconcile expenses, or audit financial activity.
+- list all users in the organization.
+- list transactions
+- department records.
+- list transactions with optional date range filters.
+- bill pay records and approval workflows.
 slug: spend-management
 source_filename: spend-management.yaml
 source_heading: Capability Spec

@@ -37,22 +37,22 @@ personas: []
 provider_name: launchdarkly
 provider_slug: launchdarkly
 search_terms:
-- streamflagsonly
-- launchdarkly
+- streamclientsideeval
+- streamallflags
+- evaluate all flags for a context (get)
+- evaluateallflagsclientside
 - stream flag updates (server-side)
 - getlatestallflags
-- api
-- evaluate all flags for a context (get)
-- getrelayproxystatus
-- stream evaluated flags (client-side)
-- stream all flag data (server-side)
-- get relay proxy status
 - evaluate all flags for a client-side context (get)
-- streamclientsideeval
-- get latest all flags (php polling)
-- streamallflags
-- evaluateallflagsclientside
 - evaluateallflagsforcontext
+- streamflagsonly
+- getrelayproxystatus
+- api
+- get relay proxy status
+- get latest all flags (php polling)
+- stream evaluated flags (client-side)
+- launchdarkly
+- stream all flag data (server-side)
 slug: launchdarkly-capability
 source_filename: launchdarkly-capability.yaml
 source_heading: Capability Spec

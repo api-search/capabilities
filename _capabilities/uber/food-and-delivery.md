@@ -45,63 +45,63 @@ personas: []
 provider_name: Uber
 provider_slug: uber
 search_terms:
-- get a price quote for an on-demand delivery.
 - accept a pending uber eats order.
-- get the current status of a delivery order.
 - logistics
-- cancel an active delivery order.
-- uber eats
-- uber eats store listings.
-- get delivery
-- list pickup locations
-- list all business pickup locations.
-- quote direct delivery
-- individual uber direct delivery tracking and management.
-- get the current menu for an uber eats store.
-- get details for an uber eats order.
-- get order
-- accept eats order
-- list all uber eats stores for the partner account.
-- dispatch an uber courier for on-demand delivery.
-- get store
-- delivery
-- list stores
-- restaurants
-- deny a pending uber eats order with a reason.
-- rides
-- cancel an active uber direct delivery.
-- uber eats store menu management.
-- get store menu
-- transportation
-- list all stores for the authenticated uber eats partner.
-- dispatch an uber courier for an on-demand delivery.
-- track the real-time status of an uber direct delivery.
-- cancel delivery
-- food delivery
-- get eats store
-- uber direct
-- uber
-- cancel direct delivery
-- ride-sharing
-- deny eats order
-- uber direct delivery price quotes.
-- list eats stores
-- get the current menu for a store.
-- business pickup location management for uber direct.
-- get details for a specific uber eats restaurant store.
-- uber eats order management.
-- get a price quote for an uber direct on-demand delivery.
-- create direct delivery
-- individual uber eats store details.
-- taxis
-- uber direct delivery dispatch.
-- get details for a specific uber eats order.
-- get eats order
 - get delivery quote
-- get details for a specific uber eats store.
+- uber direct delivery dispatch.
+- list eats stores
+- get details for a specific uber eats order.
+- ride-sharing
+- restaurants
+- track the real-time status of an uber direct delivery.
+- delivery
+- get the current menu for a store.
+- taxis
+- get details for a specific uber eats restaurant store.
+- get a price quote for an uber direct on-demand delivery.
+- rides
+- food delivery
+- uber direct delivery price quotes.
+- get eats store
 - track direct delivery
+- get store
+- uber direct
+- get the current menu for an uber eats store.
+- get eats order
+- cancel direct delivery
+- list all business pickup locations.
+- create direct delivery
+- get the current status of a delivery order.
+- uber eats store listings.
+- uber eats
+- deny a pending uber eats order with a reason.
+- individual uber eats store details.
+- get delivery
+- accept eats order
+- transportation
+- list stores
+- uber eats store menu management.
+- cancel an active uber direct delivery.
+- cancel delivery
+- list all uber eats stores for the partner account.
+- quote direct delivery
 - list business pickup locations configured for uber direct.
+- business pickup location management for uber direct.
+- list all stores for the authenticated uber eats partner.
+- get details for a specific uber eats store.
+- dispatch an uber courier for an on-demand delivery.
 - create delivery
+- cancel an active delivery order.
+- individual uber direct delivery tracking and management.
+- list pickup locations
+- get details for an uber eats order.
+- deny eats order
+- get a price quote for an on-demand delivery.
+- uber eats order management.
+- dispatch an uber courier for on-demand delivery.
+- uber
+- get store menu
+- get order
 slug: food-and-delivery
 source_filename: food-and-delivery.yaml
 source_heading: Capability Spec

@@ -49,45 +49,45 @@ personas: []
 provider_name: Amazon DynamoDB
 provider_slug: amazon-dynamodb
 search_terms:
-- amazon dynamodb
-- createTable
-- aws
-- document store
-- amazon dynamodb list dynamodb tables
-- nosql database operations business domain for amazon dynamodb.
+- workflow capability for nosql database operations.
 - getItem
-- updateItem
-- delete item
-- amazon dynamodb delete an item from a table
-- serverless
-- updateTable
 - describe table
-- list tables
-- nosql
+- update item
+- document store
+- amazon dynamodb query items in a table or index
+- amazon dynamodb describe a dynamodb table
+- deleteItem
 - create table
-- delete table
-- listTables
 - query
 - put item
-- database
-- amazon dynamodb update a dynamodb table
-- amazon dynamodb describe a dynamodb table
-- deleteTable
-- amazon dynamodb query items in a table or index
-- describeTable
-- amazon dynamodb update an item in a table
-- update item
-- workflow capability for nosql database operations.
-- amazon dynamodb delete a dynamodb table
-- amazon dynamodb create a dynamodb table
-- amazon dynamodb put an item into a table
-- amazon dynamodb get an item from a table
-- update table
-- key-value
-- putItem
-- deleteItem
-- get item
+- updateTable
+- amazon dynamodb
 - engineers managing amazon dynamodb resources on aws.
+- createTable
+- listTables
+- key-value
+- amazon dynamodb update an item in a table
+- serverless
+- list tables
+- nosql database operations business domain for amazon dynamodb.
+- amazon dynamodb get an item from a table
+- amazon dynamodb list dynamodb tables
+- updateItem
+- amazon dynamodb update a dynamodb table
+- putItem
+- database
+- delete table
+- delete item
+- amazon dynamodb create a dynamodb table
+- update table
+- amazon dynamodb delete a dynamodb table
+- amazon dynamodb put an item into a table
+- amazon dynamodb delete an item from a table
+- deleteTable
+- aws
+- nosql
+- get item
+- describeTable
 slug: dynamodb-management
 source_filename: dynamodb-management.yaml
 source_heading: Capability Spec

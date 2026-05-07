@@ -33,41 +33,41 @@ personas: []
 provider_name: Refinitiv
 provider_slug: refinitiv
 search_terms:
-- kyc
-- delete a screening case.
-- due diligence
-- entity search via permid.
-- list screening groups
-- screening group configuration.
-- resolve and annotate a world-check screening match result with risk determination.
-- screen a company or individual against the world-check risk intelligence database for kyc and aml compliance.
-- search entities
-- create a case and screen against world-check.
-- refinitiv
-- tag text with financial entities.
-- entity screening cases.
-- tag content
-- get screening case details.
-- compliance
-- list available screening groups.
-- aml
-- resolve screening result
-- get screening case
-- screening
-- create and screen
-- delete case
-- case details.
 - screen entity
-- list available world-check screening groups and their configurations.
-- get case
-- retrieve the current status and results of a world-check screening case.
+- case details.
+- kyc
+- screening
+- list groups
+- tag text with financial entities.
 - extract and tag financial entities from document text using intelligent tagging.
 - world-check
-- tag document entities
+- refinitiv
 - search for organizations and instruments.
-- intelligent entity tagging.
-- list groups
+- tag document entities
+- compliance
+- delete a screening case.
+- create and screen
+- screening group configuration.
+- entity search via permid.
+- resolve and annotate a world-check screening match result with risk determination.
 - search for organizations and instruments using permid for pre-screening entity research.
+- resolve screening result
+- entity screening cases.
+- delete case
+- get case
+- aml
+- retrieve the current status and results of a world-check screening case.
+- list screening groups
+- due diligence
+- create a case and screen against world-check.
+- tag content
+- list available screening groups.
+- get screening case details.
+- get screening case
+- screen a company or individual against the world-check risk intelligence database for kyc and aml compliance.
+- intelligent entity tagging.
+- search entities
+- list available world-check screening groups and their configurations.
 slug: compliance-screening
 source_filename: compliance-screening.yaml
 source_heading: Capability Spec

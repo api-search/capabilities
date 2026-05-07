@@ -26,21 +26,21 @@ provider_name: Google Business Messages
 provider_slug: google-business-messages
 search_terms:
 - createsurvey
-- google business messages create event
-- createmessage
-- customer support
-- google business messages create survey
-- createevent
-- business communications
-- messaging
 - google business messages update message receipt
-- google
-- api
-- business
-- google business messages create message
-- updatereceipt
-- messages
+- business communications
 - conversations
+- google business messages create survey
+- customer support
+- google
+- google business messages create event
+- business
+- messaging
+- messages
+- google business messages create message
+- api
+- createevent
+- updatereceipt
+- createmessage
 slug: google-business-messages-capability
 source_filename: google-business-messages-capability.yaml
 source_heading: Capability Spec

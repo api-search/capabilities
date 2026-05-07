@@ -17,17 +17,17 @@ personas: []
 provider_name: North.Cloud
 provider_slug: north-cloud
 search_terms:
-- cloud cost management
+- north
+- updatecostunit
 - cost optimization
-- getcostunit
+- cost units
+- cloud cost management
+- retrieve cost unit
 - gcp
-- cloud
+- getcostunit
 - update cost unit data
 - api
-- updatecostunit
-- cost units
-- retrieve cost unit
-- north
+- cloud
 - finops
 slug: north-cloud-capability
 source_filename: north-cloud-capability.yaml

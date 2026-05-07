@@ -45,35 +45,35 @@ personas: []
 provider_name: Ciena
 provider_slug: ciena
 search_terms:
-- delete a network service
-- listalarms
-- gettopologynode
-- tm forum
-- list provisioned network services
-- getperformancemetrics
-- listtopologylinks
-- getservice
+- restconf
 - ciena
+- create a new network service
+- listtopologynodes
+- getperformancemetrics
+- list provisioned network services
+- getservice
+- get network service details
+- telecom
+- api
 - list network topology links
 - network management
-- deleteservice
-- sdn
+- listalarms
 - optical
-- api
-- get network service details
-- mef
-- list network topology nodes
-- listtopologynodes
-- netconf
-- create a new network service
-- network automation
+- delete a network service
 - retrieve network performance metrics
-- listservices
-- restconf
-- createservice
+- tm forum
 - get a specific network topology node
-- telecom
+- sdn
 - list network alarms
+- gettopologynode
+- list network topology nodes
+- listtopologylinks
+- netconf
+- deleteservice
+- createservice
+- mef
+- network automation
+- listservices
 slug: ciena-capability
 source_filename: ciena-capability.yaml
 source_heading: Capability Spec

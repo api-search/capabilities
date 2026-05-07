@@ -37,41 +37,41 @@ personas: []
 provider_name: Spanning
 provider_slug: spanning
 search_terms:
-- get backup status and license details for a specific user by email or user key
-- list all google workspace shared drives being backed up by spanning
 - list all data export jobs with their current status (pending, in_progress, completed, failed)
-- microsoft 365
-- google workspace
-- cloud backup
-- data export jobs for recovery or compliance
-- get the status and download url for a specific spanning export job
-- saas backup
-- get status and download url for an export job
-- data protection
 - google workspace shared drives under backup protection
-- initiate export
-- compliance
 - backup-licensed users across protected saas platforms
-- assign a spanning backup license to a user
-- list all shared drives being backed up by spanning
+- individual export job details
 - list all export jobs with current status
+- microsoft 365
+- get status and download url for an export job
+- cloud backup
+- saas backup
+- data export jobs for recovery or compliance
+- get export
+- remove a spanning backup license from a user
+- compliance
+- list shared drives
+- list exports
+- list all users in spanning backup with their license assignment status and last backup time
+- data protection
+- salesforce
+- list users
 - individual user backup status
 - get backup status for a specific user
-- list all users and their spanning backup license and status
-- list shared drives
-- individual export job details
-- get export
-- list exports
-- initiate a data export for a user account to enable recovery or compliance download
+- initiate a data export for a user account
+- list all google workspace shared drives being backed up by spanning
+- list all shared drives being backed up by spanning
+- initiate export
 - get user
-- remove a spanning backup license from a user
-- list all users in spanning backup with their license assignment status and last backup time
+- list all users and their spanning backup license and status
 - unassign user
-- list users
+- initiate a data export for a user account to enable recovery or compliance download
+- google workspace
+- assign a spanning backup license to a user
 - assign user
 - assign a spanning backup license to a user to enable their data protection
-- initiate a data export for a user account
-- salesforce
+- get backup status and license details for a specific user by email or user key
+- get the status and download url for a specific spanning export job
 slug: saas-data-protection
 source_filename: saas-data-protection.yaml
 source_heading: Capability Spec

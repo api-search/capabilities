@@ -17,14 +17,14 @@ personas: []
 provider_name: Plaid
 provider_slug: plaid
 search_terms:
-- accountsget
 - financial
 - plaid retrieve real-time balance data
-- plaid retrieve accounts
-- plaid
 - api
 - accountsbalanceget
 - bank accounts
+- accountsget
+- plaid retrieve accounts
+- plaid
 slug: plaid-capability
 source_filename: plaid-capability.yaml
 source_heading: Capability Spec

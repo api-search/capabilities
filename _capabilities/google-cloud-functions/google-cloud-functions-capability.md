@@ -45,31 +45,31 @@ personas: []
 provider_name: Google Cloud Functions
 provider_slug: google-cloud-functions
 search_terms:
-- google cloud functions create a function
-- google cloud functions get a function
-- google cloud functions update a function
-- serverless
-- deletefunction
-- cloud
-- google
-- listfunctions
-- google cloud functions list available locations
-- createfunction
-- google cloud functions list functions
-- google cloud functions list runtimes
-- google cloud functions delete a function
-- getfunction
-- functions
-- api
-- getoperation
 - listlocations
+- google cloud functions get a function
+- event-driven
+- google cloud functions list available locations
+- deletefunction
+- api
+- generateuploadurl
+- createfunction
+- getfunction
+- google
+- google cloud functions create a function
+- listfunctions
+- listruntimes
+- serverless
+- getoperation
+- google cloud functions list functions
+- cloud
 - updatefunction
 - google cloud functions get an operation
-- event-driven
-- listruntimes
-- generateuploadurl
-- google cloud
+- google cloud functions delete a function
+- google cloud functions list runtimes
 - google cloud functions generate upload url
+- google cloud functions update a function
+- google cloud
+- functions
 slug: google-cloud-functions-capability
 source_filename: google-cloud-functions-capability.yaml
 source_heading: Capability Spec

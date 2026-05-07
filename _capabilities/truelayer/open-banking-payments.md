@@ -57,55 +57,55 @@ personas: []
 provider_name: TrueLayer
 provider_slug: truelayer
 search_terms:
-- create a variable recurring payment (vrp) mandate. authorizes future payments within defined constraints (limits, frequency).
-- get merchant account
-- get payout status
-- uk banking
-- get payout
-- create an open banking bank-transfer payment via truelayer. supports pay-ins to merchant accounts and single payments to external accounts. requires amount in minor units (pence/cents).
-- data api
-- variable recurring payment mandates
-- financial services
-- payouts
-- payment lifecycle management
-- get merchant account and balance
-- revoke a vrp mandate
-- create a payout
-- merchant account management
-- list refunds for a payment
-- vrp
-- revoke an active vrp mandate
-- create a payout from merchant account to a user or external account
-- get merchant account details and current balance
-- get mandate details
-- list transactions for a merchant account with date filters
-- get the current status and details of a payment
-- get payment status
-- create a vrp mandate
-- create payout
-- create refund
-- open banking
-- refunds
-- eu banking
-- create a refund for a payment
-- get payment
-- list all truelayer merchant accounts with balances
 - create a new open banking payment
+- create mandate
+- get payout status
 - list payment refunds
 - truelayer
-- psd2
-- merchant accounts
-- payments
-- get mandate
-- merchant account payouts
-- list merchant account transactions
-- create mandate
-- initiate a refund for a completed payment
-- create payment
-- get vrp mandate status and details
-- list all refunds for a specific payment
+- create a payout from merchant account to a user or external account
+- merchant account management
 - revoke mandate
+- list merchant account transactions
+- revoke an active vrp mandate
+- get mandate details
+- create payment
+- create a vrp mandate
+- get payment
+- initiate a refund for a completed payment
+- variable recurring payment mandates
+- list all truelayer merchant accounts with balances
+- uk banking
+- list all refunds for a specific payment
+- financial services
+- eu banking
+- create refund
+- get mandate
+- create a payout
+- get merchant account and balance
+- get the current status and details of a payment
+- create a refund for a payment
+- get payment status
+- refunds
 - list merchant accounts
+- open banking
+- get merchant account
+- create an open banking bank-transfer payment via truelayer. supports pay-ins to merchant accounts and single payments to external accounts. requires amount in minor units (pence/cents).
+- get vrp mandate status and details
+- psd2
+- payouts
+- create a variable recurring payment (vrp) mandate. authorizes future payments within defined constraints (limits, frequency).
+- payments
+- revoke a vrp mandate
+- merchant accounts
+- data api
+- vrp
+- payment lifecycle management
+- create payout
+- get payout
+- merchant account payouts
+- list refunds for a payment
+- get merchant account details and current balance
+- list transactions for a merchant account with date filters
 slug: open-banking-payments
 source_filename: open-banking-payments.yaml
 source_heading: Capability Spec

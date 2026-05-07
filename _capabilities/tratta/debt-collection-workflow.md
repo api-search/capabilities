@@ -65,58 +65,58 @@ personas: []
 provider_name: Tratta
 provider_slug: tratta
 search_terms:
-- set up a payment plan for a debt account
-- process a one-time charge against a stored payment method
-- subscribe to payment plan and transaction events via webhook
-- create payment plan
-- create a debt account for a customer
-- create payment method
-- list customers in the collections portfolio
-- list payment transactions with date filtering
-- debt collection
-- store a new payment method
-- create webhook
-- list debt accounts in the portfolio
-- list active and historical payment plans
-- billing
-- transaction history and reporting
-- collections
 - transactions
-- process a charge against a payment method
-- add a new customer to the collections system
-- list all debt accounts
-- create a new customer record
-- list configured webhooks
-- generate a magic link for customer portal access
-- create a new debt account for a customer
-- debt account portfolio management
-- list payment plans
-- list payment transactions with optional date range filter
-- customer account management
-- webhook event subscriptions
-- create a payment plan for a debt account
-- create a webhook for payment events
-- secure customer portal sessions
-- list stored payment methods
-- payment plans
 - create customer
-- list customers in the organization
-- payments
-- create charge
-- create customer session
-- list customers
-- create debt account
-- stored payment methods
-- charge processing
-- generate a magic link for a customer to access their payment portal
-- list debt accounts
-- payment plan management and tracking
 - list charges
-- list transactions
+- list stored payment methods
+- create a webhook for payment events
+- create payment method
+- charge processing
+- create a debt account for a customer
+- generate a magic link for customer portal access
+- list debt accounts in the portfolio
+- list debt accounts
+- billing
+- create a payment plan for a debt account
+- create a new customer record
+- list payment transactions with optional date range filter
+- stored payment methods
+- store a new payment method
+- secure customer portal sessions
+- create webhook
+- list all debt accounts
+- payment plan management and tracking
+- fintech
+- create payment plan
+- process a one-time charge against a stored payment method
+- list active and historical payment plans
+- transaction history and reporting
+- create a new debt account for a customer
+- list payment transactions with date filtering
+- customer account management
+- process a charge against a payment method
+- create customer session
+- list customers in the organization
 - list payment methods
 - list webhooks
+- subscribe to payment plan and transaction events via webhook
+- list payment plans
+- webhook event subscriptions
+- list customers
+- payment plans
+- debt collection
+- create debt account
+- generate a magic link for a customer to access their payment portal
+- set up a payment plan for a debt account
+- list configured webhooks
+- payments
+- collections
+- create charge
 - list all payment plans
-- fintech
+- list transactions
+- add a new customer to the collections system
+- list customers in the collections portfolio
+- debt account portfolio management
 slug: debt-collection-workflow
 source_filename: debt-collection-workflow.yaml
 source_heading: Capability Spec

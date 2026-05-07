@@ -49,34 +49,34 @@ personas: []
 provider_name: Eventuate
 provider_slug: eventuate
 search_terms:
-- sagas
-- deletesubscription
-- acknowledge events
-- createentity
+- event-driven
+- getsubscriptionevents
 - getentity
-- create an entity
-- update an entity
-- event sourcing
-- getsubscription
+- api
 - createsubscription
 - acknowledgeevents
-- delete a subscription
-- getentityevents
-- gethealth
-- updateentity
-- get a subscription
-- api
-- eventuate
-- get an entity
-- get events from a subscription
-- event-driven
-- distributed data
-- get events for an entity
-- cqrs
-- getsubscriptionevents
-- health check
 - create an event subscription
+- health check
+- acknowledge events
+- event sourcing
+- getsubscription
+- deletesubscription
+- sagas
+- create an entity
+- cqrs
+- eventuate
+- gethealth
+- update an entity
+- get events for an entity
+- get an entity
+- get a subscription
+- delete a subscription
+- updateentity
+- getentityevents
+- distributed data
 - microservices
+- createentity
+- get events from a subscription
 slug: eventuate-capability
 source_filename: eventuate-capability.yaml
 source_heading: Capability Spec

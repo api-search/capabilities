@@ -28,60 +28,60 @@ personas:
 provider_name: Abstract API
 provider_slug: abstract-api
 search_terms:
-- check phone intelligence
-- validate phone number and retrieve carrier, line type, voip status, and risk score
-- fraud detection
-- security engineer
-- check phone risk
-- professional ensuring regulatory compliance for vat, banking, and financial reporting
 - check ip intelligence
-- detection and blocking of fraudulent users, transactions, and bot activity
-- data engineer
-- check email reputation and risk score
-- check phone number risk and validity
-- finance engineer
-- contacts
-- ip geolocation, company enrichment, and timezone data for user profile enrichment
-- image processing
-- iban validation
-- engineer building fraud detection and threat intelligence systems
-- compliance analyst
-- exchange rates
-- check ip risk
-- security
-- check ip intelligence and security flags
-- security professional responsible for detecting and blocking fraudulent users and transactions
-- phone validation
-- engineer building data pipelines and enrichment workflows
-- web scraping
-- avatars
-- exchange rates, vat validation, and iban validation for financial compliance
-- check phone intelligence and risk score
-- developer building user onboarding and personalization features
-- email reputation
-- email validation
-- check email address risk and reputation
-- vat validation
-- currency conversion, vat compliance, and banking validation for financial applications
-- abstract api
-- screenshots
-- currencies
-- product engineer
-- email reputation, phone intelligence, and ip intelligence for fraud prevention
-- ip geolocation
-- phone intelligence
-- ip intelligence
-- check email risk
-- automatic enrichment of user profiles with geographic, company, and temporal data
-- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
-- fraud analyst
-- timezones
-- company enrichment
-- check ip address risk signals
 - check email reputation
-- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- product engineer
+- image processing
+- fraud detection
+- ip geolocation, company enrichment, and timezone data for user profile enrichment
 - developer building payment, billing, and financial compliance systems
+- exchange rates, vat validation, and iban validation for financial compliance
+- developer building user onboarding and personalization features
+- email reputation, phone intelligence, and ip intelligence for fraud prevention
+- compliance analyst
+- check ip risk
+- phone validation
+- currency conversion, vat compliance, and banking validation for financial applications
+- screenshots
+- avatars
+- ip geolocation
+- email reputation
+- check ip address risk signals
+- ip intelligence
+- engineer building fraud detection and threat intelligence systems
+- check email address reputation, deliverability, and risk score to detect fraudulent or disposable emails
+- contacts
 - public holidays
+- email validation
+- check phone intelligence and risk score
+- abstract api
+- check phone number risk and validity
+- currencies
+- check phone risk
+- security professional responsible for detecting and blocking fraudulent users and transactions
+- phone intelligence
+- analyze ip address for vpn, proxy, tor, abuse, hosting, and security risk signals
+- professional ensuring regulatory compliance for vat, banking, and financial reporting
+- timezones
+- check email address risk and reputation
+- check email reputation and risk score
+- security engineer
+- detection and blocking of fraudulent users, transactions, and bot activity
+- exchange rates
+- check phone intelligence
+- automatic enrichment of user profiles with geographic, company, and temporal data
+- validate phone number and retrieve carrier, line type, voip status, and risk score
+- check email risk
+- check ip intelligence and security flags
+- iban validation
+- company enrichment
+- fraud analyst
+- finance engineer
+- web scraping
+- security
+- data engineer
+- vat validation
+- engineer building data pipelines and enrichment workflows
 slug: fraud-detection
 source_filename: fraud-detection.yaml
 source_heading: Capability Spec

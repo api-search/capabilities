@@ -13,17 +13,17 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- pitch
-- get pitch context
-- ai context
-- api integration
 - governance
-- spec-driven integration
+- pitch
+- ai context
+- get pitch context
 - ai
+- capabilities
+- spec-driven integration
+- api integration
 - podcast
 - mcp
-- capabilities
+- naftiko
 slug: compose-ai-context-podcast-pitch
 source_filename: compose-ai-context-podcast-pitch.yaml
 source_heading: Capability Spec

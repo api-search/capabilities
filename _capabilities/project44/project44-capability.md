@@ -45,32 +45,32 @@ personas: []
 provider_name: project44
 provider_slug: project44
 search_terms:
-- deletewebhooksubscription
 - logistics
+- listshipments
+- project44
 - getshipmentpositions
+- list tracked shipments
+- api
+- supply chain
+- get a shipment
+- freight
+- getshipment
+- deletewebhooksubscription
+- get shipment status updates
 - create webhook subscription
-- deleteshipment
+- createwebhooksubscription
+- stop tracking a shipment
+- transportation
+- createshipment
+- getshipmentstatusupdates
+- visibility
 - delete webhook subscription
 - tracking
-- createshipment
-- list tracked shipments
 - create a tracked shipment
-- visibility
-- get shipment position history
-- freight
 - list webhook subscriptions
-- getshipmentstatusupdates
-- supply chain
-- transportation
-- get shipment status updates
-- createwebhooksubscription
-- api
 - listwebhooksubscriptions
-- stop tracking a shipment
-- listshipments
-- getshipment
-- project44
-- get a shipment
+- deleteshipment
+- get shipment position history
 slug: project44-capability
 source_filename: project44-capability.yaml
 source_heading: Capability Spec

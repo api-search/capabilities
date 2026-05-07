@@ -41,53 +41,53 @@ personas: []
 provider_name: Unsplash
 provider_slug: unsplash
 search_terms:
-- photos
-- get random photo
-- photos by collection
+- editorial topics
 - browse editorial photos
-- list photos by a specific user
-- single photo operations
-- images
-- get photo
-- get a random photo with optional filters
-- list topics
-- get photo by id
-- get photos from a specific unsplash editorial topic (nature, architecture, travel, etc.)
-- creative
-- get collection photos
-- get all photos in a specific unsplash collection
+- photo search
 - get a photo by id
-- get a random unsplash photo, optionally filtered by query, orientation, or topic
-- unsplash
-- stock photography
-- photography
-- search photos by keyword
-- list editorial topics
-- search photos
-- get topic photos
-- open source
-- stock photos
-- search unsplash for high-quality photos matching a keyword or description
-- search unsplash for curated photo collections
+- photos
 - browse the unsplash editorial photo feed
+- search unsplash for curated photo collections
+- random photo
+- list photos
+- open source
+- photography
+- get all photos in a specific unsplash collection
+- creative
+- get photos from a specific unsplash editorial topic (nature, architecture, travel, etc.)
+- list photos by a specific user
+- stock photography
+- photos by user
+- unsplash
 - photos by topic
 - editorial photo feed
-- list photos
-- get user photos
-- search
-- media
-- list user photos
-- search collections
-- photos by user
-- get full details of an unsplash photo by its id
-- get photos uploaded by a specific unsplash photographer
-- editorial topics
+- get a random photo with optional filters
+- search photos
 - get photos for a topic
-- random photo
-- browse the unsplash editorial feed for curated high-quality photos
-- photo search
+- search unsplash for high-quality photos matching a keyword or description
+- list topics
+- get topic photos
+- list user photos
 - get photos by topic
+- get photo by id
+- single photo operations
 - get photos in a collection
+- browse the unsplash editorial feed for curated high-quality photos
+- search collections
+- media
+- images
+- stock photos
+- search photos by keyword
+- get a random unsplash photo, optionally filtered by query, orientation, or topic
+- get full details of an unsplash photo by its id
+- search
+- get photos uploaded by a specific unsplash photographer
+- get user photos
+- get photo
+- get collection photos
+- get random photo
+- photos by collection
+- list editorial topics
 slug: photo-discovery
 source_filename: photo-discovery.yaml
 source_heading: Capability Spec

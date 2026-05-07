@@ -25,39 +25,39 @@ personas: []
 provider_name: Telefónica
 provider_slug: telefonica
 search_terms:
-- kyc
-- get the phone number associated with the user's current device connection (for passwordless login).
-- kyc identity data matching.
-- sim swap fraud detection.
-- telefónica
-- open gateway
-- location services
-- mobile network
-- financial services
-- get the date of the most recent sim swap for detailed fraud investigation.
-- fraud prevention
-- verify that a user's phone number matches their device's sim card connection using telefónica carrier data.
-- check sim swap
-- verify a phone number matches the device's sim connection.
-- validate identity data against carrier records.
-- verify that a user's device is present within a specified geographic area using network data.
-- device location verification.
-- get sim swap date
-- match kyc
 - check for recent sim swap on a phone number.
 - phone number verification using carrier data.
-- match kyc identity
-- verify device is within a geographic area.
-- telecommunications
-- verify phone number
-- authentication
-- camara
+- device location verification.
+- kyc
+- get the phone number associated with the user's current device connection (for passwordless login).
+- check sim swap
 - identity verification
+- mobile network
 - validate user identity data (name, birthdate, address, email) against telefónica carrier records for kyc compliance.
-- verify device location
-- check if a sim swap fraud attempt occurred recently on a phone number.
+- get the date of the most recent sim swap for detailed fraud investigation.
+- authentication
+- verify phone number
 - get device phone number
+- location services
+- validate identity data against carrier records.
+- verify device location
+- get sim swap date
+- telecommunications
 - verify location
+- financial services
+- check if a sim swap fraud attempt occurred recently on a phone number.
+- fraud prevention
+- camara
+- match kyc identity
+- verify that a user's device is present within a specified geographic area using network data.
+- open gateway
+- telefónica
+- kyc identity data matching.
+- verify a phone number matches the device's sim connection.
+- verify that a user's phone number matches their device's sim card connection using telefónica carrier data.
+- verify device is within a geographic area.
+- sim swap fraud detection.
+- match kyc
 slug: fraud-prevention
 source_filename: fraud-prevention.yaml
 source_heading: Capability Spec

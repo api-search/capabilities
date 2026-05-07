@@ -17,23 +17,23 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- agent
-- receive an a2a message and dispatch it to the matching naftiko capability.
-- list bridged capabilities
+- a2a
 - list naftiko capabilities exposed through the a2a bridge.
-- send message
-- api integration
 - governance
 - spec-driven integration
-- a2a
-- invoke a naftiko capability through the a2a bridge with an a2a message payload.
-- ai
+- api integration
 - get agent card
-- mcp
-- capabilities
+- agent
 - invoke bridged capability
 - a2a agent card listing all naftiko capabilities as a2a-callable skills.
+- send message
+- receive an a2a message and dispatch it to the matching naftiko capability.
+- ai
+- list bridged capabilities
+- capabilities
+- invoke a naftiko capability through the a2a bridge with an a2a message payload.
+- mcp
+- naftiko
 slug: a2a-protocol-agent-bridge-capability
 source_filename: a2a-protocol-agent-bridge-capability.yaml
 source_heading: Capability Spec

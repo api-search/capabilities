@@ -29,24 +29,24 @@ personas: []
 provider_name: LanguageTool
 provider_slug: languagetool
 search_terms:
-- delete a word from a personal dictionary
-- list supported languages
-- grammar
-- languagetool
-- api
-- listwords
-- language
-- checktext
-- list personal dictionary words
-- deleteword
 - addword
-- proofreading
+- listwords
 - add a word to a personal dictionary
+- grammar
 - style check
+- text analysis
+- delete a word from a personal dictionary
+- proofreading
+- spell check
+- languagetool
 - listlanguages
 - check text for grammar and style issues
-- text analysis
-- spell check
+- list personal dictionary words
+- api
+- deleteword
+- language
+- checktext
+- list supported languages
 slug: languagetool-capability
 source_filename: languagetool-capability.yaml
 source_heading: Capability Spec

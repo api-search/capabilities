@@ -29,18 +29,18 @@ personas: []
 provider_name: Google Looker
 provider_slug: google-looker
 search_terms:
+- getalllooks
+- get all users
+- get all looks
 - get current user
 - getcurrentuser
-- login
-- get all users
-- looker
 - google
-- api
-- get all looks
 - run look
-- runlook
-- getalllooks
 - getallusers
+- runlook
+- looker
+- login
+- api
 slug: google-looker-capability
 source_filename: google-looker-capability.yaml
 source_heading: Capability Spec

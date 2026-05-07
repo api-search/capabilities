@@ -77,94 +77,94 @@ personas: []
 provider_name: Workday Recruiting
 provider_slug: workday-recruiting
 search_terms:
-- get details of a specific job requisition
-- post a job to career sites
-- evergreen requisitions
-- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
-- job postings
-- individual job requisition
-- freeze or unfreeze a job requisition to halt or resume hiring
-- hiring needs, evergreen requisitions, and position management.
-- workday
-- create a new evergreen requisition for ongoing hiring needs
-- list position management positions and their fill status
-- hcm
-- create a job requisition
-- list positions
-- recruiting agency
-- external agency relationships and candidate submissions.
-- edit an open job requisition
-- list job postings
-- close an evergreen requisition
-- recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
-- create and open a new position in the position management staffing model
-- close evergreen requisition
-- get details of a specific evergreen requisition
-- create evergreen requisition
-- list job requisitions
-- create a position
-- post a job to internal and external career sites
-- sourcer
 - close a job requisition
-- positions
-- compliance analyst
-- individual job posting
-- hiring manager
-- close an evergreen requisition with no pending events
-- list job requisitions with optional filters by status, organization, or update date
-- candidate-to-requisition links, stage progression, and offers.
-- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
-- human resources
-- recruiting admin
-- unpost a job from career sites
-- unpost job
-- get a job requisition
-- get evergreen requisition
-- update a job posting
-- remove a job posting from career sites
-- builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
-- recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
-- eeo, ofccp, and veteran self-identification reference values.
-- get an evergreen requisition
-- update an existing job posting (start/end dates)
-- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
-- interviewer
-- close job requisition
-- candidate profiles, attachments, photos, assessments, and referrals.
-- saas
-- get job requisition
-- create a new job requisition for an open position
-- freeze or unfreeze a job requisition
-- list job postings with optional filters by requisition or posting site
-- external staffing partner that submits candidates against open requisitions through the agency portal.
-- get job posting
-- create an evergreen requisition
-- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
-- pre-hire records and high-volume bulk applicant import.
-- drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
-- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
-- get details of a specific job posting
-- recruiter
-- interview scheduling and interviewer feedback collection.
-- list evergreen requisitions
-- individual evergreen requisition
-- pre-hire background screening and check packages.
-- recruiting
-- get a job posting
-- recruiting configuration and reference data.
-- create position
-- update job posting
-- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
 - close a job requisition that has no pending events
-- edit job requisition
-- manage job requisition freeze
-- public publication of requisitions to internal and external career sites.
-- list evergreen requisitions used for ongoing hiring needs
-- talent acquisition
-- edit a job requisition
-- create job requisition
-- job requisitions
+- candidate-to-requisition links, stage progression, and offers.
 - post job
+- remove a job posting from career sites
+- recruiter and sourcer workflow for managing candidates from sourcing through application progression, including profile management, assessments, referrals, stage moves, offers, bulk applicant import, and agency candidate submissions.
+- freeze or unfreeze a job requisition to halt or resume hiring
+- get details of a specific job requisition
+- edit job requisition
+- create a position
+- get details of a specific evergreen requisition
+- worker assigned to evaluate candidates — submits interview feedback with competency ratings and hiring recommendations.
+- create a new evergreen requisition for ongoing hiring needs
+- list job requisitions with optional filters by status, organization, or update date
+- list position management positions and their fill status
+- hiring manager
+- hiring needs, evergreen requisitions, and position management.
+- manage job requisition freeze
+- create a job requisition
+- create a new job requisition for an open position
+- job requisitions
+- get a job requisition
+- close job requisition
+- list evergreen requisitions
+- list job requisitions
+- positions
+- recruiter and hiring manager workflow for scheduling interviews, collecting interviewer feedback, and running pre-hire background screening.
+- builds candidate pipelines from external sourcing tools and job boards into workday requisitions.
+- post a job to internal and external career sites
+- unpost a job from career sites
+- get evergreen requisition
+- get job posting
+- workday
+- compliance analyst
+- recruiter
+- drives the day-to-day hiring process — manages requisitions, progresses candidates through stages, schedules interviews, and coordinates screening.
+- get job requisition
+- list evergreen requisitions used for ongoing hiring needs
+- update job posting
+- recruiting
+- individual evergreen requisition
+- eeo, ofccp, and veteran self-identification reference values.
+- create an evergreen requisition
+- owns hiring decisions for a team — opens and edits requisitions, reviews finalists, and approves offers.
+- configures recruiting reference data — career sites, questionnaires, and reference values used across the recruiting workflows.
+- create evergreen requisition
+- get a job posting
+- post a job to career sites
+- individual job posting
+- edit an open job requisition
+- pre-hire records and high-volume bulk applicant import.
+- interview scheduling and interviewer feedback collection.
+- edit a job requisition
+- freeze or unfreeze a job requisition
+- recruiting agency
+- saas
+- job postings
+- hcm
+- update a job posting
+- external agency relationships and candidate submissions.
+- recruiting administrator workflow for retrieving recruiting configuration and reference data — job posting sites, screening questionnaires, and veteran status values for eeo and ofccp compliance.
+- get an evergreen requisition
+- recruiting configuration and reference data.
+- recruiting admin
+- close an evergreen requisition
+- evergreen requisitions
+- close evergreen requisition
+- hiring manager and recruiter workflow for opening, modifying, freezing, and closing job requisitions and evergreen requisitions, creating positions, and posting jobs to career sites.
+- update an existing job posting (start/end dates)
+- pre-hire background screening and check packages.
+- close an evergreen requisition with no pending events
+- public publication of requisitions to internal and external career sites.
+- create job requisition
+- create position
+- talent acquisition
+- get details of a specific job posting
+- interviewer
+- create and open a new position in the position management staffing model
+- individual job requisition
+- unpost job
+- list job postings
+- human resources
+- candidate profiles, attachments, photos, assessments, and referrals.
+- pulls eeo, ofccp, and veteran self-identification reference data for regulatory reporting.
+- external staffing partner that submits candidates against open requisitions through the agency portal.
+- sourcer
+- list job postings with optional filters by requisition or posting site
+- list positions
 slug: requisition-management
 source_filename: requisition-management.yaml
 source_heading: Capability Spec

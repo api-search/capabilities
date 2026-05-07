@@ -102,86 +102,86 @@ personas: []
 provider_name: Microsoft Entra
 provider_slug: microsoft-entra
 search_terms:
-- create a new group.
-- remove a member from a group.
-- list group members
-- group membership management.
-- list group members.
-- get user details.
-- delete a user from the directory.
-- get application details.
-- list all groups in the directory.
-- security
-- delete user
-- delete a group.
-- get group details.
+- get application
 - delete service principal
-- update user
-- list groups
-- list service principals
-- add a member to a group.
-- update application properties.
-- individual service principal management.
-- update service principal properties.
-- create service principal
-- create a new service principal.
-- identity
-- service principal management.
-- delete group
-- add group member
-- azure ad
-- create user
-- user group membership.
-- get user properties by id.
-- delete application
-- list all groups.
-- authentication
-- access management
-- update group properties.
-- list applications
-- delete an application registration.
-- individual application management.
+- register a new application.
 - delete a service principal.
 - list all application registrations.
-- delete an application.
-- delete a user.
-- update user properties.
-- application registration management.
-- register a new application.
-- identity governance
-- list all users in microsoft entra directory.
-- update group
-- update service principal.
-- get service principal details.
-- list user memberships
-- update application
-- remove group member
-- list members of a group.
-- create application
-- get application
-- list user group memberships.
-- group management.
-- get service principal
-- microsoft
-- user account management.
-- create a new user.
-- microsoft entra
-- individual group management.
-- get group
-- list all users in the directory.
 - list groups and roles a user belongs to.
-- directory management
-- entra
-- network security
-- list all applications.
-- create a new user in the directory.
-- zero trust
-- individual user management.
-- get user
-- update service principal
-- list users
+- microsoft
+- get group
+- create service principal
+- update application
 - list all service principals.
+- create a new user in the directory.
+- application registration management.
+- individual application management.
+- get service principal
+- get user
+- group management.
+- create a new group.
+- individual group management.
+- delete group
+- microsoft entra
+- delete a group.
+- create a new user.
+- list groups
+- list all groups in the directory.
+- delete an application registration.
+- list user memberships
+- authentication
+- delete user
+- list members of a group.
+- list users
+- individual user management.
+- delete a user from the directory.
+- delete an application.
+- update group properties.
+- list all groups.
+- list applications
+- zero trust
+- get user details.
+- security
+- remove group member
+- get group details.
+- directory management
+- list user group memberships.
+- list group members
+- create application
+- list group members.
+- update application properties.
+- identity
+- list all applications.
+- azure ad
+- service principal management.
+- get user properties by id.
+- list all users in the directory.
+- access management
+- individual service principal management.
+- create a new service principal.
+- add group member
+- delete a user.
+- entra
+- update user properties.
+- update group
+- user account management.
 - create group
+- update service principal
+- update user
+- list all users in microsoft entra directory.
+- update service principal.
+- identity governance
+- list service principals
+- add a member to a group.
+- network security
+- user group membership.
+- remove a member from a group.
+- update service principal properties.
+- delete application
+- create user
+- group membership management.
+- get application details.
+- get service principal details.
 slug: identity-and-access
 source_filename: identity-and-access.yaml
 source_heading: Capability Spec

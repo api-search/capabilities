@@ -37,48 +37,48 @@ personas: []
 provider_name: SonarQube
 provider_slug: sonarqube
 search_terms:
-- search for all types of code issues with full filtering (severity, type, status, rule)
-- check if a project passes its quality gate — critical for ci/cd release decisions
-- find security analysis rules applicable to a language for policy review
-- get code quality metrics for a project
-- get quality gate status
-- search vulnerabilities
-- get component measures
-- analysis rule catalog
-- search for sonarqube projects to audit or monitor code quality
+- project inventory and analysis status
+- check quality gate
+- search analysis rules
+- devops
 - list all quality gate definitions with their metric conditions and thresholds
 - search rules
-- search projects
-- devops
-- get quality gate pass/fail status for a project
-- code quality
+- project quality gate results
+- search for all types of code issues with full filtering (severity, type, status, rule)
 - quality gate definitions
-- check quality gate
+- code quality
+- find code bugs in a project — reliability issues that cause incorrect runtime behavior
+- find security vulnerabilities in a project's code
+- get code quality metrics for a project
+- check if a project passes its quality gate — critical for ci/cd release decisions
+- analysis rule catalog
 - get system status
-- search projects by name or key
-- project inventory and analysis status
-- security
-- search analysis rules
-- sonarqube
-- search for bugs, vulnerabilities, and code smells
-- 'get code quality metrics for a project: coverage, bugs, vulnerabilities, code smells, duplications'
+- get quality gate pass/fail status for a project
+- get code metrics
+- search bugs
 - list quality gates
-- search security rules
+- 'get code quality metrics for a project: coverage, bugs, vulnerabilities, code smells, duplications'
+- search all analysis rules by language, type, severity, or keyword
 - search issues
+- server operational status
+- get quality gate status
+- search for sonarqube projects to audit or monitor code quality
+- list all quality gates
+- check sonarqube server status
+- search projects
 - technical debt
+- search security rules
 - static analysis
 - code metrics and measurements
-- get code metrics
-- find code bugs in a project — reliability issues that cause incorrect runtime behavior
+- search vulnerabilities
+- find security analysis rules applicable to a language for policy review
 - code quality and security issues
-- server operational status
-- list all quality gates
-- search bugs
-- find security vulnerabilities in a project's code
+- sonarqube
+- get component measures
 - check sonarqube server version and operational status
-- check sonarqube server status
-- search all analysis rules by language, type, severity, or keyword
-- project quality gate results
+- search projects by name or key
+- security
+- search for bugs, vulnerabilities, and code smells
 slug: code-quality-governance
 source_filename: code-quality-governance.yaml
 source_heading: Capability Spec

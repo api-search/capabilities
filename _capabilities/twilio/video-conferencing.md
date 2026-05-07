@@ -21,33 +21,33 @@ personas: []
 provider_name: Twilio
 provider_slug: twilio
 search_terms:
-- list twilio subaccounts for credential management
-- contact center
-- twilio
-- real time
+- video
+- list video rooms
+- create a new subaccount to isolate resources for a video application
 - conferencing
+- manage video rooms
+- list accounts
+- list twilio subaccounts for credential management
+- authentication
+- sms
+- collaboration
+- create a video room
+- create subaccount
+- t1
+- email
 - create room
 - iot
-- voice
-- create a video room
-- create a new subaccount to isolate resources for a video application
-- sms
-- phone
-- manage video rooms
-- messaging
-- t1
-- video
-- list rooms
-- authentication
-- list video rooms
-- create a new video room for real-time communication
-- email
-- list active and completed video rooms
-- list accounts
-- manage accounts for credential administration
-- create subaccount
+- real time
+- twilio
 - verification
-- collaboration
+- create a new video room for real-time communication
+- list rooms
+- manage accounts for credential administration
+- voice
+- phone
+- list active and completed video rooms
+- messaging
+- contact center
 - communications
 slug: video-conferencing
 source_filename: video-conferencing.yaml

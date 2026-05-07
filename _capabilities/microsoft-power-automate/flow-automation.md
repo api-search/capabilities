@@ -38,50 +38,50 @@ personas: []
 provider_name: Microsoft Power Automate
 provider_slug: microsoft-power-automate
 search_terms:
-- low-code
 - list flows
-- power platform
-- list connectors
-- integration
-- list environments
-- list all environments
-- turn off flow
-- environment management
-- workflow
-- create a new automation flow
-- flow management
-- creating, running, and managing automation flows
-- list available connectors in an environment
-- managing environments and available connectors
-- delete a flow
-- manage flows, environments, and connectors
-- Platform Administrator
-- flow lifecycle management
-- business process
-- create a flow
-- creates and manages automation flows
-- microsoft
-- list all power automate environments
-- get flow
+- automation
+- get flow details
+- delete flow
+- Automation Engineer
 - microsoft power automate
-- get details of a specific connector
-- get connector
-- connector management
+- business process
+- low-code
+- list all power automate environments
+- manage flows, environments, and connectors
+- list available connectors in an environment
+- flow management
+- managing environments and available connectors
+- start/activate a flow
+- create a flow
+- turn on flow
+- integration
+- microsoft
+- turn off flow
+- list environments
+- update flow
+- power platform
+- manages environments, connectors, and permissions
+- workflow
+- list connectors
+- stop/deactivate a flow
+- creates and manages automation flows
 - get details of a specific flow
 - update a flow
-- rpa
 - update a flow's properties
-- turn on flow
-- delete flow
-- manages environments, connectors, and permissions
-- Automation Engineer
+- Platform Administrator
+- rpa
+- flow lifecycle management
 - create flow
-- update flow
-- get flow details
+- create a new automation flow
+- get details of a specific connector
+- creating, running, and managing automation flows
 - list flows in an environment
-- stop/deactivate a flow
-- start/activate a flow
-- automation
+- environment management
+- connector management
+- delete a flow
+- get connector
+- get flow
+- list all environments
 slug: flow-automation
 source_filename: flow-automation.yaml
 source_heading: Capability Spec

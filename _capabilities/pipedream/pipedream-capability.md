@@ -53,32 +53,32 @@ personas: []
 provider_name: Pipedream
 provider_slug: pipedream
 search_terms:
-- deletesubscription
-- get the authenticated user
-- deletesource
-- get an event source
-- createsource
-- createsubscription
-- delete a subscription
-- list connected accounts for a project
-- list subscriptions
-- getsource
-- listsources
-- pipedream
-- get a workflow
+- create a connect token
+- list event sources for the authenticated user
 - create a subscription
 - api
-- getme
-- workflows
+- get the authenticated user
+- createsubscription
 - listsubscriptions
-- delete an event source
-- getworkflow
-- listconnectaccounts
-- createconnecttoken
-- list event sources for the authenticated user
 - create an event source
+- listconnectaccounts
+- getsource
+- listsources
+- createconnecttoken
+- delete an event source
+- getme
+- deletesubscription
+- pipedream
+- getworkflow
 - procode_api_composition
-- create a connect token
+- list subscriptions
+- get an event source
+- get a workflow
+- deletesource
+- list connected accounts for a project
+- delete a subscription
+- workflows
+- createsource
 slug: pipedream-capability
 source_filename: pipedream-capability.yaml
 source_heading: Capability Spec

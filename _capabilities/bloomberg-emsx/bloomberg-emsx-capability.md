@@ -85,51 +85,51 @@ personas: []
 provider_name: Bloomberg EMSX
 provider_slug: bloomberg-emsx
 search_terms:
+- bloomberg emsx list orders
+- bloomberg
+- bloomberg emsx get order details
 - listbrokers
 - bloomberg emsx list available order fields
-- bloomberg emsx list orders
-- emsx
-- bloomberg emsx modify an existing route
-- listroutes
-- bloomberg emsx get order details
-- bloomberg emsx list fills
-- financial services
-- modifyorder
-- getroute
 - bloomberg emsx list available route fields
-- bloomberg emsx get route details
-- listbrokerstrategies
-- bloomberg emsx list routes
-- bloomberg
-- getorder
-- bloomberg emsx get fill details
-- bloomberg emsx list available brokers
-- bloomberg emsx delete an order
-- createorder
-- listorderfields
-- listroutefields
-- trading
-- bloomberg emsx route multiple orders to a broker
-- listorders
-- api
-- bloomberg emsx create an order and route it simultaneously
-- bloomberg emsx modify an existing order
-- listfills
-- listteams
-- bloomberg emsx list broker strategies
-- deleteorder
-- execution management
-- bloomberg emsx create a manual fill
-- bloomberg emsx create a new order
-- cancelroute
-- getfill
-- bloomberg emsx list emsx teams
-- createmanualfill
-- createorderandroute
-- order management
 - grouprouteorders
-- bloomberg emsx cancel a route
+- bloomberg emsx modify an existing route
+- bloomberg emsx create a manual fill
 - modifyroute
+- getfill
+- bloomberg emsx route multiple orders to a broker
+- bloomberg emsx list fills
+- api
+- bloomberg emsx list available brokers
+- bloomberg emsx list emsx teams
+- listorderfields
+- order management
+- createorder
+- cancelroute
+- bloomberg emsx get fill details
+- bloomberg emsx list routes
+- bloomberg emsx cancel a route
+- getorder
+- createmanualfill
+- bloomberg emsx get route details
+- listorders
+- listfills
+- financial services
+- trading
+- bloomberg emsx delete an order
+- bloomberg emsx list broker strategies
+- bloomberg emsx modify an existing order
+- bloomberg emsx create a new order
+- modifyorder
+- emsx
+- getroute
+- listteams
+- listroutefields
+- deleteorder
+- bloomberg emsx create an order and route it simultaneously
+- execution management
+- listbrokerstrategies
+- listroutes
+- createorderandroute
 slug: bloomberg-emsx-capability
 source_filename: bloomberg-emsx-capability.yaml
 source_heading: Capability Spec

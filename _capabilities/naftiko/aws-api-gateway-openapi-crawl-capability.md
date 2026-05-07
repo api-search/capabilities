@@ -13,19 +13,19 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
+- governance
+- spec-driven integration
+- openapi
 - api gateway
 - aws
 - list rest apis
-- api integration
-- capabilities
-- governance
-- ai
-- spec-driven integration
-- mcp
 - export rest api
+- ai
 - list gateway specs
-- openapi
+- capabilities
+- api integration
+- mcp
+- naftiko
 slug: aws-api-gateway-openapi-crawl-capability
 source_filename: aws-api-gateway-openapi-crawl-capability.yaml
 source_heading: Capability Spec

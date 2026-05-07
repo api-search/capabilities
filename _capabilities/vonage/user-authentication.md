@@ -25,39 +25,39 @@ personas: []
 provider_name: Vonage
 provider_slug: vonage
 search_terms:
-- buy number
-- identity
-- list owned numbers
-- list owned virtual numbers.
-- voice
-- search for phone numbers available to purchase.
-- communication
-- security
-- manage virtual phone numbers.
-- send a verification code to a phone number.
-- vonage
+- verify a pin code entered by the user to complete 2fa.
 - purchase a virtual phone number for the account.
 - cancel verification
+- vonage
+- list owned virtual numbers.
+- authentication
+- check a verification code.
 - sms
-- messaging
-- request verification
-- check verification
+- communication
+- identity
+- telecommunications
+- search for available phone numbers to purchase in a country.
+- send a verification code to a phone number for 2fa.
 - cancel a pending verification request.
 - list all virtual phone numbers owned by the account.
-- telecommunications
 - verify a pin submitted by the user.
-- authentication
-- video conferencing
-- number management
-- search available numbers
-- send a verification code to a phone number for 2fa.
-- check a verification code.
+- manage virtual phone numbers.
+- list owned numbers
 - two-factor authentication
-- verify a pin code entered by the user to complete 2fa.
-- verification
-- search for available phone numbers to purchase in a country.
+- number management
 - manage phone verifications for 2fa.
+- verification
+- search available numbers
+- buy number
 - search available numbers.
+- video conferencing
+- check verification
+- voice
+- send a verification code to a phone number.
+- messaging
+- security
+- request verification
+- search for phone numbers available to purchase.
 slug: user-authentication
 source_filename: user-authentication.yaml
 source_heading: Capability Spec

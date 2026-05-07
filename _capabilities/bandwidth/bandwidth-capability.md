@@ -57,51 +57,51 @@ personas: []
 provider_name: Bandwidth
 provider_slug: bandwidth
 search_terms:
-- multi-factor authentication via voice or sms
-- updatelocation
-- engineer designing and operating telephony and messaging infrastructure
-- cpaas
-- updateendpoint
-- create a notification recipient
-- create an e911 location
-- list e911 locations
-- list e911 endpoints
-- list emergency notification recipients
-- outbound and inbound voice call management and recording
-- mfa
-- voice
-- Platform Administrator
-- get e911 location details
-- sms
-- getlocation
-- e911 endpoint registration and management
-- delete an e911 location
-- search, order, and manage telephone numbers
-- telephony
-- messaging
-- createlocation
-- update an e911 location
-- createnotificationrecipient
-- api
-- Communications Engineer
-- bandwidth
-- listlocations
-- update an e911 endpoint
-- unified voice, messaging, mfa, phone numbers, e911, and toll-free management
-- developer building communication-enabled web or mobile applications
 - createendpoint
-- create an e911 endpoint
-- get e911 endpoint details
-- deleteendpoint
-- delete an e911 endpoint
-- listnotificationrecipients
-- administrator managing bandwidth account, numbers, and compliance
-- sms and mms message delivery and media management
-- Application Developer
-- getendpoint
+- listlocations
+- list e911 endpoints
 - deletelocation
-- communications
+- create an e911 location
+- search, order, and manage telephone numbers
+- mfa
+- delete an e911 location
+- api
+- multi-factor authentication via voice or sms
+- administrator managing bandwidth account, numbers, and compliance
+- createlocation
+- outbound and inbound voice call management and recording
+- deleteendpoint
+- update an e911 location
+- Application Developer
+- bandwidth
+- telephony
 - listendpoints
+- list e911 locations
+- create a notification recipient
+- createnotificationrecipient
+- sms
+- cpaas
+- update an e911 endpoint
+- delete an e911 endpoint
+- getendpoint
+- get e911 location details
+- developer building communication-enabled web or mobile applications
+- list emergency notification recipients
+- getlocation
+- get e911 endpoint details
+- Platform Administrator
+- engineer designing and operating telephony and messaging infrastructure
+- unified voice, messaging, mfa, phone numbers, e911, and toll-free management
+- voice
+- create an e911 endpoint
+- sms and mms message delivery and media management
+- e911 endpoint registration and management
+- messaging
+- updatelocation
+- listnotificationrecipients
+- updateendpoint
+- Communications Engineer
+- communications
 slug: bandwidth-capability
 source_filename: bandwidth-capability.yaml
 source_heading: Capability Spec

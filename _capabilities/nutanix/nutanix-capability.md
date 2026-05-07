@@ -149,84 +149,84 @@ personas: []
 provider_name: Nutanix
 provider_slug: nutanix
 search_terms:
-- nutanix update a subnet
-- updatecategoryvalue
-- nutanix list clusters
-- nutanix get a host
-- getproject
-- getnetworksecurityrule
-- listwebhooks
-- api
-- createsubnet
-- deletesubnet
-- nutanix delete an image
-- nutanix create a virtual machine
-- createwebhook
-- nutanix delete a network security rule
-- cloud management
-- listimages
-- nutanix delete a virtual machine
-- nutanix create or update a category key
-- listvms
-- nutanix get an image
-- nutanix list projects
-- nutanix delete a category key
-- nutanix create a subnet
-- nutanix delete a category value
-- updatevm
-- infrastructure
-- listsubnets
-- nutanix list network security rules
-- virtualization
-- hyperconverged
-- kubernetes
-- getcategory
-- deletecategory
-- database
-- nutanix update a network security rule
-- nutanix get a cluster
 - nutanix get a project
-- listprojects
-- nutanix get a category key
-- nutanix list virtual machines
-- nutanix delete a webhook
-- nutanix get a virtual machine
-- nutanix list webhooks
-- listhosts
-- createvm
-- listclusters
-- nutanix get a subnet
-- nutanix get a webhook
-- gethost
-- nutanix delete a subnet
-- nutanix list hosts
-- nutanix create an image
-- listnetworksecurityrules
-- getwebhook
-- updatesubnet
-- nutanix create a network security rule
-- createnetworksecurityrule
-- getcluster
-- nutanix
-- nutanix create or update a category value
-- nutanix update a webhook
-- updatewebhook
-- nutanix get a network security rule
-- updatecategory
-- nutanix update a virtual machine
-- updatenetworksecurityrule
-- getsubnet
-- nutanix create a webhook
-- getvm
-- nutanix list images
-- deletecategoryvalue
-- getimage
-- deletewebhook
-- nutanix list subnets
-- deletenetworksecurityrule
-- deletevm
+- api
+- cloud management
 - createimage
+- nutanix update a network security rule
+- getsubnet
+- nutanix update a virtual machine
+- getnetworksecurityrule
+- updatecategoryvalue
 - deleteimage
+- nutanix create a network security rule
+- listimages
+- nutanix delete a subnet
+- createnetworksecurityrule
+- nutanix get a network security rule
+- nutanix get a subnet
+- deletecategory
+- updatenetworksecurityrule
+- nutanix get an image
+- createvm
+- deletenetworksecurityrule
+- listhosts
+- gethost
+- virtualization
+- nutanix delete a virtual machine
+- getimage
+- nutanix list webhooks
+- nutanix get a virtual machine
+- nutanix list network security rules
+- nutanix create an image
+- nutanix list virtual machines
+- nutanix list hosts
+- listsubnets
+- deletecategoryvalue
+- getproject
+- hyperconverged
+- updatevm
+- deletesubnet
+- updatesubnet
+- nutanix list subnets
+- nutanix create or update a category key
+- nutanix get a host
+- updatewebhook
+- nutanix update a subnet
+- infrastructure
+- listnetworksecurityrules
+- nutanix create a virtual machine
+- listvms
+- kubernetes
+- nutanix create a subnet
+- nutanix create or update a category value
+- nutanix delete a category value
+- database
+- nutanix delete a category key
+- nutanix list clusters
+- getvm
+- getwebhook
+- getcluster
+- getcategory
+- updatecategory
+- deletevm
+- nutanix get a category key
+- createwebhook
+- nutanix update a webhook
+- listclusters
+- nutanix get a cluster
+- nutanix get a webhook
+- createsubnet
+- nutanix create a webhook
+- nutanix delete an image
+- nutanix list images
+- nutanix list projects
+- nutanix delete a network security rule
+- listwebhooks
+- deletewebhook
+- listprojects
+- nutanix
+- nutanix delete a webhook
 slug: nutanix-capability
 source_filename: nutanix-capability.yaml
 source_heading: Capability Spec

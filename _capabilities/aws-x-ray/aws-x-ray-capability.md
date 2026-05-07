@@ -97,57 +97,57 @@ personas: []
 provider_name: AWS X-Ray
 provider_slug: aws-x-ray
 search_terms:
-- puttracesegments
-- creategroup
-- getsamplingrules
-- aws x-ray update a sampling rule
-- aws
-- aws x-ray get encryption configuration
-- tagresource
-- aws x-ray untag a resource
-- deletegroup
-- debugging
-- aws x-ray get insight details
-- deletesamplingrule
 - getencryptionconfig
-- gettimeseriesservicestatistics
-- aws x-ray create a sampling rule
-- aws x-ray get sampling targets
-- aws x-ray delete a sampling rule
-- aws x-ray delete a group
-- listtagsforresource
-- aws x-ray get the service graph
-- aws x-ray update a group
-- getsamplingtargets
-- aws x-ray get insight summaries
-- updatesamplingrule
 - aws x-ray tag a resource
-- aws x-ray upload trace segments
-- aws x-ray get all active groups
-- putencryptionconfig
-- aws x-ray get a list of traces by id
-- untagresource
-- getservicegraph
+- getsamplingtargets
+- listtagsforresource
+- aws x-ray untag a resource
+- distributed tracing
+- aws x-ray get all sampling rules
+- getinsight
+- creategroup
+- aws x-ray get encryption configuration
+- aws x-ray get insight details
 - api
 - getgroups
-- observability
 - aws x-ray get trace summaries
-- aws x-ray list tags for a resource
+- aws x-ray get the service graph
+- puttracesegments
 - aws x-ray create a group
-- batchgettraces
-- ray
-- getinsightsummaries
-- createsamplingrule
-- aws x-ray get all sampling rules
 - getgroup
-- getinsight
-- aws x-ray get time series service statistics
-- distributed tracing
-- gettracesummaries
-- microservices
+- getservicegraph
+- getsamplingrules
 - aws x-ray update encryption configuration
+- deletesamplingrule
+- batchgettraces
+- tagresource
+- createsamplingrule
+- observability
+- aws x-ray get a list of traces by id
 - updategroup
+- ray
+- aws x-ray upload trace segments
+- putencryptionconfig
+- updatesamplingrule
+- gettracesummaries
+- aws x-ray get insight summaries
+- aws x-ray list tags for a resource
+- debugging
+- untagresource
+- aws x-ray get all active groups
+- getinsightsummaries
+- aws
+- aws x-ray get time series service statistics
+- aws x-ray update a group
+- aws x-ray delete a group
+- aws x-ray get sampling targets
+- aws x-ray update a sampling rule
+- aws x-ray delete a sampling rule
+- microservices
+- aws x-ray create a sampling rule
+- gettimeseriesservicestatistics
 - aws x-ray get a group
+- deletegroup
 slug: aws-x-ray-capability
 source_filename: aws-x-ray-capability.yaml
 source_heading: Capability Spec

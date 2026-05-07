@@ -29,23 +29,23 @@ personas: []
 provider_name: ADP
 provider_slug: adp
 search_terms:
-- create payroll instruction
-- get payroll output details
-- list payroll outputs
-- workforce
-- get worker-level payroll outputs
-- api
-- hr
+- adp
+- list payroll instructions
 - listpayrollinstructions
 - hcm
-- listpayrolloutputs
 - getpayrolloutput
 - getpayrollworkeroutputs
-- list payroll instructions
+- get worker-level payroll outputs
 - createpayrollinstruction
-- benefits
+- list payroll outputs
+- get payroll output details
 - payroll
-- adp
+- workforce
+- hr
+- api
+- benefits
+- listpayrolloutputs
+- create payroll instruction
 slug: adp-capability
 source_filename: adp-capability.yaml
 source_heading: Capability Spec

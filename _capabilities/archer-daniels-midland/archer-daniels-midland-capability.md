@@ -25,30 +25,30 @@ personas: []
 provider_name: Archer Daniels Midland
 provider_slug: archer-daniels-midland
 search_terms:
-- nutrition
-- worldwide processing facilities and logistics network
-- procurement and supply chain managers sourcing agricultural inputs
-- agricultural commodity traders tracking prices and market trends
-- product developers sourcing food ingredients from adm
-- commodities
-- listcommodities
-- archer daniels midland list locations
-- daniels
-- supply chain
-- archer
-- listproducts
-- api
-- archer daniels midland list commodities
-- getcommodity
-- food processing
 - listlocations
-- grain and oilseed commodity pricing and market data
+- nutrition
+- procurement and supply chain managers sourcing agricultural inputs
+- product developers sourcing food ingredients from adm
+- api
 - archer daniels midland list products
-- processed food ingredient catalog and specifications
-- archer daniels midland get commodity
-- midland
-- agriculture
+- supply chain
+- getcommodity
 - fortune 100
+- agriculture
+- archer daniels midland list commodities
+- archer daniels midland list locations
+- archer
+- daniels
+- processed food ingredient catalog and specifications
+- food processing
+- listcommodities
+- listproducts
+- agricultural commodity traders tracking prices and market trends
+- commodities
+- midland
+- grain and oilseed commodity pricing and market data
+- worldwide processing facilities and logistics network
+- archer daniels midland get commodity
 slug: archer-daniels-midland-capability
 source_filename: archer-daniels-midland-capability.yaml
 source_heading: Capability Spec

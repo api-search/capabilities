@@ -41,55 +41,55 @@ personas: []
 provider_name: Terrain Discovery Environment API
 provider_slug: terrain-discovery-environment-api
 search_terms:
-- open science
-- list apps
-- browse available bioinformatics apps
-- get file stats
-- get size, permissions, and modification dates for an irods file or directory
-- search data store
-- list user's analysis jobs
-- user root directory
-- file metadata (avus)
-- get avu metadata for a path
-- list notifications
-- browse an irods directory in the cyverse data store
-- irods data store browsing
-- move files or directories to the user's irods trash
-- search filesystem
-- list directory
-- research computing
 - get root directory
-- user notifications
-- submit a new analysis job
-- get file metadata
-- search the cyverse irods data store for files and folders by name
 - share data
-- cloud computing
-- open source
-- move files
-- submit a new bioinformatics analysis job using a discovery environment application
-- irods
-- list the user's analysis job history in the discovery environment
-- list analyses
-- analysis job management
-- life sciences
+- user notifications
+- list notifications
+- get recent notifications about completed analyses and system events
+- list apps
 - search irods for files and directories
 - cyverse
+- browse available bioinformatics apps
+- get file metadata
+- get irods avu metadata triples for a file or directory
+- open science
+- submit a new bioinformatics analysis job using a discovery environment application
+- bioinformatics
+- research computing
+- open source
+- move files or directories to the user's irods trash
+- list directory
+- cloud computing
+- irods
+- analysis job management
+- search filesystem
+- get user's root irods directory
+- get avu metadata for a path
+- user root directory
+- browse an irods directory in the cyverse data store
+- data science
+- search the cyverse irods data store for files and folders by name
 - move files or directories to a new location in irods
-- list user notifications
-- delete files
-- filesystem
+- search data store
+- irods data store browsing
+- life sciences
+- submit analysis
+- get size, permissions, and modification dates for an irods file or directory
 - browse bioinformatics and data science apps in the discovery environment
+- filesystem
+- list user notifications
 - get the root directory structure for the cyverse user account
 - share irods data (files/folders) with other cyverse users
-- get user's root irods directory
-- get irods avu metadata triples for a file or directory
-- get recent notifications about completed analyses and system events
+- list user's analysis jobs
+- move files
+- file metadata (avus)
+- list analyses
 - application discovery
-- data science
+- list the user's analysis job history in the discovery environment
 - list directory contents in irods
-- bioinformatics
-- submit analysis
+- submit a new analysis job
+- delete files
+- get file stats
 slug: data-science-workflow
 source_filename: data-science-workflow.yaml
 source_heading: Capability Spec

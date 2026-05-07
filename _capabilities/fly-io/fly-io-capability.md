@@ -49,29 +49,29 @@ personas: []
 provider_name: fly-io
 provider_slug: fly-io
 search_terms:
-- updateextension
-- delete an extension resource
-- initiatesso
-- deleteextension
-- fly
 - provision an extension resource
-- provisionextension
-- io
-- receive a machine event webhook from fly.io
-- gettokeninfo
-- exchange authorization code for access token
-- api
-- oauthauthorize
-- initiate sso for an extension
-- oauthtoken
-- send a webhook to fly.io
-- oauth authorization endpoint
-- sendextensionwebhook
-- getextension
-- get extension resource details
-- get oauth token information
 - update an extension resource
+- oauthauthorize
+- get extension resource details
+- initiatesso
+- api
+- receive a machine event webhook from fly.io
+- send a webhook to fly.io
+- delete an extension resource
+- sendextensionwebhook
+- updateextension
 - receiveextensionevent
+- io
+- fly
+- get oauth token information
+- deleteextension
+- provisionextension
+- oauth authorization endpoint
+- getextension
+- exchange authorization code for access token
+- oauthtoken
+- initiate sso for an extension
+- gettokeninfo
 slug: fly-io-capability
 source_filename: fly-io-capability.yaml
 source_heading: Capability Spec

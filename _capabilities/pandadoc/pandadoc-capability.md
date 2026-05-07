@@ -181,99 +181,99 @@ personas: []
 provider_name: PandaDoc
 provider_slug: pandadoc
 search_terms:
-- create workspace
-- deletedocumentrecipient
-- list document folders
-- createdocument
-- create webhook subscription
-- create contact
-- getcurrentmember
-- list linked objects
-- getdocumentautoreminders
-- createdocumentfolder
-- updatecontact
-- senddocument
-- list document fields
-- list webhook events
-- get member
-- get document details
-- api
-- deletedocument
-- listdocumentfolders
-- update document recipient
-- get template details
-- listwebhookevents
 - updatedocumentfields
+- delete contact
+- update document fields
+- list document folders
 - updatedocumentrecipient
-- update contact
-- list forms
+- createcontact
+- api
+- list templates
+- deletewebhooksubscription
+- downloaddocument
+- createdocument
+- gettemplatedetails
+- createwebhooksubscription
+- getdocumentdetails
+- document automation
+- document generation
+- list documents
+- create document session
 - listapilogs
 - delete document
-- create document folder
-- adddocumentrecipient
-- createdocumentsession
-- listlinkedobjects
-- get webhook subscription
-- updatewebhooksubscription
-- listwebhooksubscriptions
-- update document fields
-- listforms
-- delete template
-- pandadoc
-- getdocumentstatus
-- listdocumentfields
-- create document
-- deletetemplate
-- getmember
-- deletewebhooksubscription
-- listworkspaces
-- webhooks
-- get contact
-- listtemplates
-- list documents
-- list templates
-- send document
-- create document session
-- add document recipient
-- getwebhookevent
-- download document attachment
-- list api logs
-- e-signature
-- getcontact
-- list webhook subscriptions
-- downloaddocument
-- getdocumentdetails
-- createcontact
-- createwebhooksubscription
-- downloaddocumentattachment
-- document management
-- list workspaces
-- getwebhooksubscription
-- listdocumentattachments
-- list contacts
-- delete document recipient
-- get document status
-- regenerate webhook shared key
-- listcontacts
-- delete webhook subscription
-- createworkspace
-- listmembers
 - get webhook event details
-- listdocuments
-- gettemplatedetails
 - updatewebhooksubscriptionsharedkey
-- get current member
-- list document recipients
-- document automation
-- list document attachments
+- get template details
+- deletetemplate
+- list document fields
+- get contact
 - update webhook subscription
-- document generation
-- download document
-- delete contact
-- listdocumentrecipients
+- create document
+- list linked objects
+- getdocumentstatus
 - get document auto-reminders
-- list members
+- send document
+- listmembers
+- create webhook subscription
+- listdocumentfolders
+- list contacts
+- listdocumentrecipients
+- download document
+- listtemplates
+- createworkspace
+- getcurrentmember
+- listwebhooksubscriptions
 - deletecontact
+- getwebhooksubscription
+- list workspaces
+- listcontacts
+- document management
+- listworkspaces
+- get webhook subscription
+- downloaddocumentattachment
+- getcontact
+- get document details
+- download document attachment
+- create workspace
+- add document recipient
+- regenerate webhook shared key
+- list forms
+- listdocuments
+- pandadoc
+- list document attachments
+- list webhook subscriptions
+- adddocumentrecipient
+- listdocumentfields
+- get current member
+- delete document recipient
+- listdocumentattachments
+- deletedocument
+- deletedocumentrecipient
+- getwebhookevent
+- create contact
+- list members
+- getmember
+- listforms
+- getdocumentautoreminders
+- update document recipient
+- updatecontact
+- updatewebhooksubscription
+- list api logs
+- list webhook events
+- delete template
+- createdocumentsession
+- webhooks
+- createdocumentfolder
+- get document status
+- delete webhook subscription
+- listlinkedobjects
+- get member
+- create document folder
+- senddocument
+- list document recipients
+- update contact
+- e-signature
+- listwebhookevents
 slug: pandadoc-capability
 source_filename: pandadoc-capability.yaml
 source_heading: Capability Spec

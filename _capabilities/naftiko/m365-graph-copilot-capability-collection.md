@@ -13,20 +13,20 @@ personas: []
 provider_name: Naftiko
 provider_slug: naftiko
 search_terms:
-- naftiko
-- get me
-- list events
-- microsoft 365
-- list messages
-- graph
-- api integration
 - governance
-- capabilities
-- spec-driven integration
-- ai
-- list drive items
-- mcp
 - list chats
+- spec-driven integration
+- list events
+- list messages
+- get me
+- microsoft 365
+- graph
+- ai
+- capabilities
+- list drive items
+- api integration
+- mcp
+- naftiko
 slug: m365-graph-copilot-capability-collection
 source_filename: m365-graph-copilot-capability-collection.yaml
 source_heading: Capability Spec

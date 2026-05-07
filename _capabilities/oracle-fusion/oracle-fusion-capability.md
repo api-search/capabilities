@@ -121,75 +121,75 @@ personas: []
 provider_name: Oracle Fusion Cloud Applications
 provider_slug: oracle-fusion
 search_terms:
-- getcommonlookup
-- oracle fusion cloud applications get an announcement
-- performtaskaction
-- oracle fusion cloud applications submit a scheduled process request
-- oracle fusion cloud applications get audit history
-- oracle fusion cloud applications create a lookup code
-- rest api
 - oracle fusion cloud applications create a person
-- oracle fusion cloud applications update a person
-- deleteperson
-- oracle fusion cloud applications update an announcement
-- epm
-- updateperson
+- oracle fusion cloud applications create a lookup code
 - createcommonlookup
-- getrole
-- oracle fusion cloud applications create an announcement
-- listpersons
-- createlookupcode
-- listfeatures
-- cx
-- updatecommonlookup
-- listannouncements
-- oracle fusion cloud applications list features
-- scm
-- oracle fusion cloud applications delete a common lookup
-- oracle fusion cloud applications delete a person
 - oracle fusion cloud applications update a role
-- cloud
-- deleteannouncement
-- listcommonlookups
 - oracle fusion cloud applications delete an announcement
-- updaterole
-- oracle fusion cloud applications get a workflow task
-- oracle fusion cloud applications perform a task action
-- getaudithistory
-- oracle fusion cloud applications get a scheduled process request
-- enterprise
-- oracle fusion cloud applications get a common lookup
-- oracle fusion cloud applications list workflow tasks
-- project management
-- submitscheduledrequest
-- erp
-- getannouncement
-- listscheduledrequests
-- listworkflowtasks
-- oracle
-- listroles
-- listlookupcodes
-- oracle fusion cloud applications list persons
-- fusion
-- oracle fusion cloud applications list lookup codes for a lookup type
+- epm
+- listannouncements
+- getcommonlookup
 - api
-- oracle fusion cloud applications list common lookups
-- getperson
-- deletecommonlookup
-- oracle fusion cloud applications list scheduled process requests
-- hcm
+- deleteperson
+- fusion
+- oracle fusion cloud applications create an announcement
+- updateperson
 - saas
-- oracle fusion cloud applications update a common lookup
-- getworkflowtask
-- getscheduledrequest
-- oracle fusion cloud applications get a person
-- updateannouncement
-- createperson
-- oracle fusion cloud applications list announcements
-- createannouncement
-- oracle fusion cloud applications create a common lookup
 - oracle fusion cloud applications get a role
+- oracle fusion cloud applications list scheduled process requests
+- updaterole
+- oracle fusion cloud applications list features
+- hcm
+- scm
+- oracle fusion cloud applications list common lookups
+- getaudithistory
+- project management
 - oracle fusion cloud applications list roles
+- listlookupcodes
+- createlookupcode
+- createannouncement
+- getannouncement
+- listpersons
+- createperson
+- getperson
+- oracle fusion cloud applications get a person
+- listcommonlookups
+- deleteannouncement
+- oracle fusion cloud applications delete a person
+- oracle fusion cloud applications update a common lookup
+- updatecommonlookup
+- oracle fusion cloud applications get an announcement
+- oracle fusion cloud applications update a person
+- getrole
+- oracle fusion cloud applications perform a task action
+- oracle fusion cloud applications get audit history
+- oracle fusion cloud applications delete a common lookup
+- oracle fusion cloud applications create a common lookup
+- updateannouncement
+- oracle fusion cloud applications list lookup codes for a lookup type
+- enterprise
+- getscheduledrequest
+- listworkflowtasks
+- oracle fusion cloud applications list workflow tasks
+- cloud
+- oracle fusion cloud applications get a scheduled process request
+- oracle fusion cloud applications list announcements
+- cx
+- getworkflowtask
+- oracle fusion cloud applications update an announcement
+- listroles
+- performtaskaction
+- erp
+- rest api
+- submitscheduledrequest
+- oracle fusion cloud applications list persons
+- oracle fusion cloud applications get a workflow task
+- listscheduledrequests
+- listfeatures
+- oracle
+- oracle fusion cloud applications submit a scheduled process request
+- deletecommonlookup
+- oracle fusion cloud applications get a common lookup
 slug: oracle-fusion-capability
 source_filename: oracle-fusion-capability.yaml
 source_heading: Capability Spec

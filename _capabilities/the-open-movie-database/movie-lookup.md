@@ -9,9 +9,9 @@ personas: []
 provider_name: The Open Movie Database
 provider_slug: the-open-movie-database
 search_terms:
-- television
-- imdb
 - movies
+- imdb
+- television
 - metadata
 - entertainment
 slug: movie-lookup

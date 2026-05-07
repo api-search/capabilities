@@ -61,39 +61,39 @@ personas: []
 provider_name: Kyverno
 provider_slug: kyverno
 search_terms:
-- kyverno get cluster-scoped result summary
-- listclusterscopedresults
 - policy management
-- kyverno list policy rules
-- kyverno get namespace-scoped result summary
+- governance
 - listpolicies
-- kyverno list cluster-scoped policy reports
-- getnamespacescopedsummary
-- security
-- listtargets
-- cloud native
-- listcategories
-- listnamespaces
-- kubernetes
-- kyverno list cluster-scoped policy results
-- listsources
-- listnamespacescopedresults
-- kyverno list notification targets
-- kyverno health check
-- api
-- kyverno list policies
-- kyverno list namespace-scoped policy results
-- kyverno
-- listpolicyreports
-- kyverno list namespaced policy reports
 - getclusterscopedsummary
+- kyverno list cluster-scoped policy results
+- listclusterpolicyreports
+- listcategories
 - listrules
 - kyverno list policy sources
-- governance
-- kyverno list policy categories
-- listclusterpolicyreports
+- api
+- kyverno get namespace-scoped result summary
+- kyverno
+- cloud native
+- listpolicyreports
+- kyverno list policy rules
+- listsources
+- listnamespacescopedresults
+- getnamespacescopedsummary
+- listtargets
+- listclusterscopedresults
+- kubernetes
 - kyverno list namespaces with policy reports
+- kyverno list policy categories
+- kyverno list namespaced policy reports
+- kyverno get cluster-scoped result summary
+- kyverno health check
+- kyverno list cluster-scoped policy reports
+- kyverno list notification targets
+- kyverno list namespace-scoped policy results
+- kyverno list policies
+- listnamespaces
 - gethealthz
+- security
 slug: kyverno-capability
 source_filename: kyverno-capability.yaml
 source_heading: Capability Spec

@@ -49,60 +49,60 @@ personas: []
 provider_name: Trustwell
 provider_slug: trustwell
 search_terms:
-- initiate a food product recall or withdrawal event (voluntary, mock, or regulatory).
-- get all standard and custom nutrient definitions from genesis foods.
-- nutrition
-- food formulation
-- query labels
-- quality management
-- list recall events.
-- list fsma 204-compliant traceability lot records for farm-to-fork supply chain tracking.
 - create quality incident.
-- get regulatory standards, nutrition claims, and labeling requirements by country and regulatory authority.
-- list supply chain suppliers.
-- get regulatory standards by country.
-- query food formulation data including nutrients and allergens.
-- compliance
-- recall events
-- query food formulation data including nutrient content, allergen declarations, and label information from genesis foods.
-- query foods
-- query nutrients
-- query regulations
-- quality incidents
-- generate and retrieve nutrition label images for us, canadian, eu, mexican, and australian regulatory formats.
-- food industry
-- get allergen definitions.
-- supply chain
-- create recall event.
-- add a new supplier to the foodlogiq supply chain network.
-- create a food quality incident report for a supplier or product safety issue.
-- regulatory standards
-- list suppliers
-- list food supply chain suppliers with status and compliance information.
-- list quality incidents
-- list traceability lot records.
-- allergen definitions
-- list recalls
-- food formulation queries
-- query allergens
-- list food recall and withdrawal events with status filtering.
-- list lots
-- fsma 204 traceability lots
-- recall management
-- list quality incidents.
-- food technology
-- food safety
-- supply chain suppliers
-- create quality incident
 - nutrient definitions
-- create recall
-- get all allergen definitions for allergen declaration and labeling compliance.
-- create supplier
-- list food quality incidents with severity and status filtering for quality monitoring.
-- nutrition labeling
+- allergen definitions
+- list fsma 204-compliant traceability lot records for farm-to-fork supply chain tracking.
+- nutrition
 - traceability
-- get nutrient definitions.
+- list suppliers
+- create a food quality incident report for a supplier or product safety issue.
+- create recall
+- get regulatory standards by country.
+- food safety
 - food labeling
+- get all standard and custom nutrient definitions from genesis foods.
+- create quality incident
+- initiate a food product recall or withdrawal event (voluntary, mock, or regulatory).
+- nutrition labeling
+- supply chain
+- get allergen definitions.
+- food formulation
+- compliance
+- list recalls
+- query food formulation data including nutrients and allergens.
+- list lots
+- quality management
+- query foods
+- food technology
+- recall events
+- list supply chain suppliers.
+- list traceability lot records.
+- create recall event.
+- food formulation queries
+- regulatory standards
+- supply chain suppliers
+- list quality incidents
+- create supplier
+- food industry
+- query regulations
+- get nutrient definitions.
+- quality incidents
+- fsma 204 traceability lots
+- query allergens
+- add a new supplier to the foodlogiq supply chain network.
+- query nutrients
+- get all allergen definitions for allergen declaration and labeling compliance.
+- generate and retrieve nutrition label images for us, canadian, eu, mexican, and australian regulatory formats.
+- list food quality incidents with severity and status filtering for quality monitoring.
+- list recall events.
+- query labels
+- list food supply chain suppliers with status and compliance information.
+- list food recall and withdrawal events with status filtering.
+- recall management
+- get regulatory standards, nutrition claims, and labeling requirements by country and regulatory authority.
+- query food formulation data including nutrient content, allergen declarations, and label information from genesis foods.
+- list quality incidents.
 slug: food-safety-management
 source_filename: food-safety-management.yaml
 source_heading: Capability Spec

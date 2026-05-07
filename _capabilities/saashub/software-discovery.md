@@ -17,23 +17,23 @@ personas: []
 provider_name: SaaSHub
 provider_slug: saashub
 search_terms:
-- get top 10 software alternatives for a product
-- software product alternatives
-- software discovery
-- competitive analysis
-- software product lookup
-- get product
 - get alternatives
-- look up detailed information about a software product on saashub including name, tagline, categories, pricing, and website url.
-- saas procurement
-- software catalog
+- software product alternatives
 - saas
+- competitive analysis
+- saashub
+- lookup software product
+- software catalog
+- get top 10 software alternatives for a product
+- get product
+- find software alternatives
+- look up detailed information about a software product on saashub including name, tagline, categories, pricing, and website url.
+- software product lookup
+- alternatives
 - find the top 10 software alternatives for a given product on saashub. useful for vendor replacement research, competitive analysis, and procurement decisions.
 - look up a software product on saashub by name
-- lookup software product
-- saashub
-- alternatives
-- find software alternatives
+- saas procurement
+- software discovery
 slug: software-discovery
 source_filename: software-discovery.yaml
 source_heading: Capability Spec

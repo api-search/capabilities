@@ -17,16 +17,16 @@ personas: []
 provider_name: Google Indexing
 provider_slug: google-indexing
 search_terms:
-- urls
-- google
-- api
-- google indexing get url notification metadata
-- crawling
 - seo
-- search
-- geturlnotificationmetadata
-- google indexing publish url notification
+- google indexing get url notification metadata
 - indexing
+- crawling
+- google indexing publish url notification
+- search
+- google
+- geturlnotificationmetadata
+- urls
+- api
 - publishurlnotification
 slug: google-indexing-capability
 source_filename: google-indexing-capability.yaml

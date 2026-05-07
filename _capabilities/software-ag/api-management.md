@@ -37,41 +37,41 @@ personas: []
 provider_name: Software AG
 provider_slug: software-ag
 search_terms:
-- publish an api to the webmethods developer portal for consumer discovery
-- list all consumer applications subscribed to a specific api
-- deactivate an api to remove it from consumer visibility
-- activate an api to expose it to api consumers
-- developer portal
-- webmethods
-- get api
-- publish an api to the webmethods developer portal
-- activate an api to make it available to consumers
-- create a new api from spec file or url
-- enterprise integration
-- publish api
-- api deactivation control
-- get a specific api definition
-- create api
-- create a new api in the api gateway from an openapi, swagger, raml, or wsdl spec
-- list all apis registered in the api gateway
-- api portal publishing
-- applications consuming the api
-- ipaas
-- deactivate api
-- get full details of a specific api including its openapi definition
-- software ag
-- list api applications
-- activate api
-- api gateway
-- api activation control
-- api management
-- list all applications consuming this api
-- list apis
-- list all apis registered in the webmethods api gateway with optional filtering
-- integration platform
-- manage apis in the webmethods api gateway
 - individual api management
+- list all consumer applications subscribed to a specific api
+- create a new api in the api gateway from an openapi, swagger, raml, or wsdl spec
+- api portal publishing
+- get full details of a specific api including its openapi definition
+- deactivate api
+- activate an api to expose it to api consumers
+- create api
+- enterprise integration
+- get api
+- software ag
+- api management
+- deactivate an api to remove it from consumer visibility
+- activate an api to make it available to consumers
+- publish an api to the webmethods developer portal
+- create a new api from spec file or url
+- list all apis registered in the webmethods api gateway with optional filtering
+- activate api
+- developer portal
+- integration platform
+- publish api
+- api gateway
+- list all apis registered in the api gateway
+- api deactivation control
+- ipaas
+- get a specific api definition
+- list all applications consuming this api
+- list api applications
+- publish an api to the webmethods developer portal for consumer discovery
+- manage apis in the webmethods api gateway
+- applications consuming the api
+- webmethods
+- list apis
 - deactivate an api to hide it from consumers
+- api activation control
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

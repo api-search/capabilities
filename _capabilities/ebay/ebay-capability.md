@@ -153,84 +153,84 @@ personas: []
 provider_name: eBay
 provider_slug: ebay
 search_terms:
-- getpaymentsprogramonboarding
-- getreturnpolicy
-- getfulfillmentpolicy
-- createreturnpolicy
-- this method opts the seller out of a seller program to which you have previously opted-in to. get a list of the seller programs you have opted-in to using the <b>getoptedinprograms</b> call.
-- getfulfillmentpolicies
-- this method retrieves the complete details of a fulfillment policy. supply the id of the policy you want to retrieve using the <b>fulfillmentpolicyid</b> path parameter.
-- getsubscription
-- deletesalestax
-- this method retrieves the custom policy specified by the <b>custom_policy_id</b> path parameter.<br><br><span class="tablenote"><b>note:</b> custom policies are no longer coupled with a specific ebay marketplace, so the <b>ebay-c-marketplac
-- this method updates an existing fulfillment policy. specify the policy you want to update using the <b>fulfillment_policy_id</b> path parameter. supply a complete policy payload with the updates you want to make; this call overwrites the ex
 - api
-- getfulfillmentpolicybyname
-- this method retrieves all the fulfillment policies configured for the marketplace you specify using the <code>marketplace_id</code> query parameter. <br><br><b>marketplaces and locales</b> <br><br>get the correct policies for a marketplace
-- ebay
 - updatepaymentpolicy
-- this method creates a new payment policy where the policy encapsulates seller's terms for order payments. <br><br>each policy targets a specific ebay marketplace and category group, and you can create multiple policies for each combination.
-- this method retrieves a seller's <i>shipping rate tables</i> for the country specified in the <b>country_code</b> query parameter. if you call this method without specifying a country code, the call returns all of the seller's shipping rate
-- this method retrieves the details of a specific payment policy. supply both the policy <code>name</code> and its associated <code>marketplace_id</code> in the request query parameters. <br><br><b>marketplaces and locales</b> <br><br>get the
-- this method retrieves a list of subscriptions associated with the seller account.
-- deletepaymentpolicy
-- getadvertisingeligibility
-- getoptedinprograms
-- getprivileges
-- getsalestaxes
-- marketplace
-- this method retrieves all the return policies configured for the marketplace you specify using the <code>marketplace_id</code> query parameter. <br><br><b>marketplaces and locales</b> <br><br>get the correct policies for a marketplace that
-- getkyc
-- this method retrieves the complete details of a payment policy. supply the id of the policy you want to retrieve using the <b>paymentpolicyid</b> path parameter.
-- this method deletes a return policy. supply the id of the policy you want to delete in the <b>returnpolicyid</b> path parameter.
-- createpaymentpolicy
-- updatereturnpolicy
-- this call retrieves the current sales-tax table entry for a specific tax jurisdiction. specify the jurisdiction to retrieve using the <b>countrycode</b> and <b>jurisdictionid</b> path parameters. all four response fields will be returned if
-- optintoprogram
-- createcustompolicy
-- this method deletes a payment policy. supply the id of the policy you want to delete in the <b>paymentpolicyid</b> path parameter.
+- updatecustompolicy
+- this method retrieves all the fulfillment policies configured for the marketplace you specify using the <code>marketplace_id</code> query parameter. <br><br><b>marketplaces and locales</b> <br><br>get the correct policies for a marketplace
+- this method updates an existing custom policy specified by the <b>custom_policy_id</b> path parameter. this method overwrites the policy's <b>name</b>, <b>label</b>, and <b>description</b> fields. therefore, the complete, current text of al
+- this method opts the seller in to an ebay seller program. refer to the <a href="/api-docs/sell/account/overview.html#opt-in" target="_blank">account api overview</a> for information about available ebay seller programs.<br><br><span class="
+- this method retrieves the details of a specific return policy. supply both the policy <code>name</code> and its associated <code>marketplace_id</code> in the request query parameters. <br><br><b>marketplaces and locales</b> <br><br>get the
+- optoutofprogram
 - updatefulfillmentpolicy
+- this method creates a new return policy where the policy encapsulates seller's terms for returning items. <br><br>each policy targets a specific marketplace, and you can create multiple policies for each marketplace. return policies are not
+- createpaymentpolicy
+- getfulfillmentpolicy
+- this call deletes a sales-tax table entry for a jurisdiction. specify the jurisdiction to delete using the <b>countrycode</b> and <b>jurisdictionid</b> path parameters.<br><br><span class="tablenote"><b>note:</b> sales-tax tables are only a
+- this method deletes a fulfillment policy. supply the id of the policy you want to delete in the <b>fulfillmentpolicyid</b> path parameter.
+- createcustompolicy
+- createreturnpolicy
+- getcustompolicies
+- this method retrieves the details for a specific fulfillment policy. in the request, supply both the policy <code>name</code> and its associated <code>marketplace_id</code> as query parameters. <br><br><b>marketplaces and locales</b> <br><b
+- deletesalestax
+- this method retrieves the list of custom policies specified by the <b>policy_types</b> query parameter.<br><br><span class="tablenote"><b>note:</b> custom policies are no longer coupled with a specific ebay marketplace, so the <b>ebay-c-mar
+- deletefulfillmentpolicy
+- this call retrieves the current sales-tax table entry for a specific tax jurisdiction. specify the jurisdiction to retrieve using the <b>countrycode</b> and <b>jurisdictionid</b> path parameters. all four response fields will be returned if
+- this method deletes a payment policy. supply the id of the policy you want to delete in the <b>paymentpolicyid</b> path parameter.
+- getprivileges
+- 'this method creates or updates a sales-tax table entry for a jurisdiction. specify the tax table entry you want to configure using the two path parameters: <b>countrycode</b> and <b>jurisdictionid</b>. <br><br>a tax table entry for a jurisd'
+- this method retrieves the complete details of a payment policy. supply the id of the policy you want to retrieve using the <b>paymentpolicyid</b> path parameter.
+- getsubscription
+- this method opts the seller out of a seller program to which you have previously opted-in to. get a list of the seller programs you have opted-in to using the <b>getoptedinprograms</b> call.
+- getcustompolicy
+- createorreplacesalestax
+- getkyc
+- marketplace
+- getsalestax
+- this method retrieves all the return policies configured for the marketplace you specify using the <code>marketplace_id</code> query parameter. <br><br><b>marketplaces and locales</b> <br><br>get the correct policies for a marketplace that
+- auctions
+- this method updates an existing return policy. specify the policy you want to update using the <b>return_policy_id</b> path parameter. supply a complete policy payload with the updates you want to make; this call overwrites the existing pol
+- getpaymentpolicy
+- getpaymentpolicies
+- updatereturnpolicy
+- this method creates a new payment policy where the policy encapsulates seller's terms for order payments. <br><br>each policy targets a specific ebay marketplace and category group, and you can create multiple policies for each combination.
+- use this call to retrieve all sales tax table entries that the seller has defined for a specific country. all four response fields will be returned for each tax jurisdiction that matches the search criteria. <br><br><span class="tablenote">
+- this method retrieves all the payment policies configured for the marketplace you specify using the <code>marketplace_id</code> query parameter. <br><br><b>marketplaces and locales</b> <br><br>get the correct policies for a marketplace that
+- this method retrieves a seller's <i>shipping rate tables</i> for the country specified in the <b>country_code</b> query parameter. if you call this method without specifying a country code, the call returns all of the seller's shipping rate
+- this method creates a new fulfillment policy where the policy encapsulates seller's terms for fulfilling item purchases. fulfillment policies include the shipment options that the seller offers to buyers. <br><br>each policy targets a speci
+- this method deletes a return policy. supply the id of the policy you want to delete in the <b>returnpolicyid</b> path parameter.
+- this method updates an existing payment policy. specify the policy you want to update using the <b>payment_policy_id</b> path parameter. supply a complete policy payload with the updates you want to make; this call overwrites the existing p
+- getfulfillmentpolicies
+- this method retrieves the custom policy specified by the <b>custom_policy_id</b> path parameter.<br><br><span class="tablenote"><b>note:</b> custom policies are no longer coupled with a specific ebay marketplace, so the <b>ebay-c-marketplac
+- getadvertisingeligibility
+- deletepaymentpolicy
+- getoptedinprograms
+- getfulfillmentpolicybyname
+- getpaymentsprogram
+- optintoprogram
+- createfulfillmentpolicy
+- this method retrieves the seller's current set of privileges, including whether or not the seller's ebay registration has been completed, as well as the details of their site-wide <b>sellinglimt</b> (the amount and quantity they can sell on
+- getsalestaxes
+- getpaymentpolicybyname
+- commerce
+- getratetables
+- getreturnpolicybyname
+- getreturnpolicy
+- this method allows developers to check the seller eligibility status for ebay advertising programs.
 - <span class="tablenote"><b>note:</b> this method is no longer applicable, as all seller accounts globally have been enabled for the new ebay payment and checkout flow.</span><br>this method retrieves a seller's onboarding status for a payme
 - 'this method creates a new custom policy in which a seller specifies their terms for complying with local governmental regulations. <br/><br/>two custom policy types are supported: <ul><li>product compliance (product_compliance)</li> <li>tak'
-- updatecustompolicy
-- 'this method creates or updates a sales-tax table entry for a jurisdiction. specify the tax table entry you want to configure using the two path parameters: <b>countrycode</b> and <b>jurisdictionid</b>. <br><br>a tax table entry for a jurisd'
-- this method gets a list of the seller programs that the seller has opted-in to.
-- this method retrieves the details of a specific return policy. supply both the policy <code>name</code> and its associated <code>marketplace_id</code> in the request query parameters. <br><br><b>marketplaces and locales</b> <br><br>get the
-- getratetables
-- this method creates a new fulfillment policy where the policy encapsulates seller's terms for fulfilling item purchases. fulfillment policies include the shipment options that the seller offers to buyers. <br><br>each policy targets a speci
-- commerce
-- getcustompolicy
-- this method updates an existing return policy. specify the policy you want to update using the <b>return_policy_id</b> path parameter. supply a complete policy payload with the updates you want to make; this call overwrites the existing pol
-- this method updates an existing custom policy specified by the <b>custom_policy_id</b> path parameter. this method overwrites the policy's <b>name</b>, <b>label</b>, and <b>description</b> fields. therefore, the complete, current text of al
-- this method updates an existing payment policy. specify the policy you want to update using the <b>payment_policy_id</b> path parameter. supply a complete policy payload with the updates you want to make; this call overwrites the existing p
-- this method deletes a fulfillment policy. supply the id of the policy you want to delete in the <b>fulfillmentpolicyid</b> path parameter.
-- <span class="tablenote"><b>note:</b> this method is no longer applicable, as all seller accounts globally have been enabled for the new ebay payment and checkout flow.</span><br>this method returns whether or not the user is opted-in to the
-- optoutofprogram
+- this method updates an existing fulfillment policy. specify the policy you want to update using the <b>fulfillment_policy_id</b> path parameter. supply a complete policy payload with the updates you want to make; this call overwrites the ex
+- this method retrieves the complete details of a fulfillment policy. supply the id of the policy you want to retrieve using the <b>fulfillmentpolicyid</b> path parameter.
+- getpaymentsprogramonboarding
 - products
-- getpaymentpolicybyname
 - getreturnpolicies
-- deletefulfillmentpolicy
-- auctions
-- this method allows developers to check the seller eligibility status for ebay advertising programs.
-- this method retrieves the list of custom policies specified by the <b>policy_types</b> query parameter.<br><br><span class="tablenote"><b>note:</b> custom policies are no longer coupled with a specific ebay marketplace, so the <b>ebay-c-mar
-- getpaymentpolicies
-- this method retrieves the details for a specific fulfillment policy. in the request, supply both the policy <code>name</code> and its associated <code>marketplace_id</code> as query parameters. <br><br><b>marketplaces and locales</b> <br><b
+- this method retrieves the details of a specific payment policy. supply both the policy <code>name</code> and its associated <code>marketplace_id</code> in the request query parameters. <br><br><b>marketplaces and locales</b> <br><br>get the
 - deletereturnpolicy
-- createorreplacesalestax
-- getsalestax
-- getpaymentsprogram
-- use this call to retrieve all sales tax table entries that the seller has defined for a specific country. all four response fields will be returned for each tax jurisdiction that matches the search criteria. <br><br><span class="tablenote">
-- this call deletes a sales-tax table entry for a jurisdiction. specify the jurisdiction to delete using the <b>countrycode</b> and <b>jurisdictionid</b> path parameters.<br><br><span class="tablenote"><b>note:</b> sales-tax tables are only a
+- ebay
+- <span class="tablenote"><b>note:</b> this method is no longer applicable, as all seller accounts globally have been enabled for the new ebay payment and checkout flow.</span><br>this method returns whether or not the user is opted-in to the
+- this method gets a list of the seller programs that the seller has opted-in to.
+- this method retrieves a list of subscriptions associated with the seller account.
 - <span class="tablenote"><b>note:</b>this method was originally created to see which onboarding requirements were still pending for sellers being onboarded for ebay managed payments, but now that all seller accounts are onboarded globally, t
-- this method opts the seller in to an ebay seller program. refer to the <a href="/api-docs/sell/account/overview.html#opt-in" target="_blank">account api overview</a> for information about available ebay seller programs.<br><br><span class="
-- this method retrieves the seller's current set of privileges, including whether or not the seller's ebay registration has been completed, as well as the details of their site-wide <b>sellinglimt</b> (the amount and quantity they can sell on
-- this method retrieves all the payment policies configured for the marketplace you specify using the <code>marketplace_id</code> query parameter. <br><br><b>marketplaces and locales</b> <br><br>get the correct policies for a marketplace that
-- getpaymentpolicy
 - this method retrieves the complete details of the return policy specified by the <b>returnpolicyid</b> path parameter.
-- this method creates a new return policy where the policy encapsulates seller's terms for returning items. <br><br>each policy targets a specific marketplace, and you can create multiple policies for each marketplace. return policies are not
-- createfulfillmentpolicy
-- getcustompolicies
-- getreturnpolicybyname
 slug: ebay-capability
 source_filename: ebay-capability.yaml
 source_heading: Capability Spec

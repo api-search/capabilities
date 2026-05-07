@@ -9,17 +9,17 @@ personas: []
 provider_name: Microsoft Azure API Management
 provider_slug: microsoft-azure-api-management
 search_terms:
-- gateway operations
-- api gateway
-- ai gateway
-- self-hosted gateway
-- monitoring
-- enterprise
 - microsoft azure
-- kubernetes
 - devops
+- monitoring
+- api gateway
 - api management
+- self-hosted gateway
 - diagnostics
+- enterprise
+- ai gateway
+- gateway operations
+- kubernetes
 slug: gateway-operations
 source_filename: gateway-operations.yaml
 source_heading: Capability Spec

@@ -57,40 +57,40 @@ personas: []
 provider_name: Google Cloud Talent Solution
 provider_slug: google-cloud-talent-solution
 search_terms:
-- google cloud talent solution get a tenant
-- updatejob
-- google cloud talent solution create a tenant
-- deletetenant
-- createcompany
-- listtenants
-- listjobs
-- searchjobs
-- solution
-- cloud
-- google
-- createtenant
-- google cloud talent solution update a job
+- google cloud talent solution list tenants
 - google cloud talent solution create a company
+- google cloud talent solution update a job
+- google cloud talent solution create a job
+- google cloud talent solution search jobs
 - google cloud talent solution list jobs
-- google cloud talent solution delete a job
-- machine learning
-- google cloud talent solution list companies
-- gettenant
 - api
 - talent
-- google cloud talent solution delete a tenant
-- search
-- google cloud talent solution list tenants
-- google cloud talent solution get a job
+- createtenant
+- google cloud talent solution get a tenant
+- listjobs
+- solution
+- google
+- updatejob
+- gettenant
+- google cloud talent solution list companies
+- machine learning
+- deletetenant
+- google cloud talent solution create a tenant
+- listcompanies
+- google cloud talent solution delete a job
+- recruitment
+- searchjobs
+- listtenants
+- cloud
 - deletejob
 - getjob
-- listcompanies
-- google cloud talent solution create a job
-- recruitment
-- google cloud talent solution search jobs
 - jobs
-- createjob
+- search
+- google cloud talent solution get a job
 - google cloud
+- google cloud talent solution delete a tenant
+- createjob
+- createcompany
 slug: google-cloud-talent-solution-capability
 source_filename: google-cloud-talent-solution-capability.yaml
 source_heading: Capability Spec

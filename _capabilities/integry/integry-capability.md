@@ -33,23 +33,23 @@ personas: []
 provider_name: Integry
 provider_slug: integry
 search_terms:
-- list apps
-- listapps
-- get function
-- getfunction
-- integration
-- api
-- native integrations
-- listfunctions
-- get app
-- call function
 - embedded ipaas
+- get app
 - predictfunctions
-- integry
-- list functions
-- predict functions
+- get function
 - callfunction
+- getfunction
+- predict functions
+- listapps
+- integry
+- list apps
+- list functions
+- integration
+- call function
+- api
+- listfunctions
 - getapp
+- native integrations
 slug: integry-capability
 source_filename: integry-capability.yaml
 source_heading: Capability Spec

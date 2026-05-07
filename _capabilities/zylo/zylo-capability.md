@@ -49,31 +49,31 @@ personas: []
 provider_name: Zylo
 provider_slug: zylo
 search_terms:
-- zylo get an application
-- zylo update an application
-- budgets
 - zylo get an import job
-- zylo create an import job
+- getexportjob
 - getimportjob
+- zylo update an application
+- zylo create an import job
+- api
+- listsubscriptions
 - zylo list import jobs
+- zylo list applications
+- createexportjob
 - getsubscription
 - saas management
+- spend
+- getapplication
+- zylo get an application
+- updateapplication
+- zylo
+- listimportjobs
+- createimportjob
+- listapplications
+- budgets
 - zylo get a subscription
+- zylo create an export job
 - zylo get an export job
 - zylo list subscriptions
-- spend
-- updateapplication
-- zylo create an export job
-- api
-- getapplication
-- zylo
-- createimportjob
-- listsubscriptions
-- listimportjobs
-- createexportjob
-- getexportjob
-- zylo list applications
-- listapplications
 slug: zylo-capability
 source_filename: zylo-capability.yaml
 source_heading: Capability Spec

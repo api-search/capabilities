@@ -53,31 +53,31 @@ personas: []
 provider_name: ptc-thingworx
 provider_slug: ptc-thingworx
 search_terms:
-- get a thing
-- thingworx
-- query property history
+- query event history
+- list things
+- getdatashape
+- getthingproperties
+- listthings
+- api
+- execute a thing service
+- ptc
 - geteventhistory
+- getthing
+- get a thing
+- listthingtemplates
+- get all thing properties
+- get a thing property
+- executeservice
+- thingworx
 - set a thing property
 - getthingproperty
-- getdatashape
-- get all thing properties
+- query property history
 - getthingevents
-- query event history
-- executeservice
-- get a thing property
-- getthingproperties
-- api
-- querypropertyhistory
-- ptc
-- listthings
-- list thing templates
-- list things
-- get a data shape
-- getthing
-- listthingtemplates
-- execute a thing service
-- list thing events
 - setthingproperty
+- list thing events
+- querypropertyhistory
+- list thing templates
+- get a data shape
 slug: ptc-thingworx-capability
 source_filename: ptc-thingworx-capability.yaml
 source_heading: Capability Spec

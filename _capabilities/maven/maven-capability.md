@@ -33,25 +33,25 @@ personas: []
 provider_name: Maven
 provider_slug: maven
 search_terms:
-- publishdeployment
-- download from a specific deployment
-- java
+- downloaddeploymentfile
 - artifacts
-- upload a deployment bundle
-- package management
-- downloadvalidatedfile
+- api
+- publishdeployment
 - dropdeployment
+- java
+- uploadbundle
+- maven
 - build tools
 - getdeploymentstatus
-- api
-- get deployment status
 - download from any validated deployment
+- get deployment status
 - repository
-- publish a deployment
-- downloaddeploymentfile
-- maven
-- uploadbundle
+- download from a specific deployment
+- upload a deployment bundle
 - drop a deployment
+- publish a deployment
+- package management
+- downloadvalidatedfile
 slug: maven-capability
 source_filename: maven-capability.yaml
 source_heading: Capability Spec

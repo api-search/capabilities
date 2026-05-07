@@ -45,59 +45,59 @@ personas: []
 provider_name: Refinitiv Eikon
 provider_slug: refinitiv-eikon
 search_terms:
-- extract data
-- tick history extractions.
-- tick history get job status
-- search datascope for instruments.
-- corporate actions
-- datascope extract data
-- on-demand data extractions.
-- search datascope select for financial instruments by ric, isin, cusip, or ticker.
-- datascope search instruments
-- search instruments
-- list extracted files
-- market data
 - analytics
-- execute a tick history extraction.
-- execute a datascope select on-demand extraction for pricing, corporate actions, or reference data.
-- list files from completed extractions.
-- execute an on-demand tick history extraction for time-and-sales or intraday bars.
-- extract tick history
-- datascope list extracted files
-- list all tick history extraction jobs and their current statuses.
-- cancel a running tick history extraction job.
-- data extraction
-- list files produced by completed datascope extractions.
-- tick history list jobs
-- tick history extract
-- execute a datascope select on-demand extraction.
-- individual tick extraction job.
-- tick history cancel job
-- list instrument lists
-- get tick extraction job status.
-- financial news
-- tick history
-- trading
-- get tick job status
-- create instrument list
-- cancel tick job
-- financial data
-- real-time data
-- quantitative analysis
 - instrument search.
-- datascope list instrument lists
-- datascope select
-- list tick extraction jobs.
-- refinitiv eikon
-- extracted data files.
-- tick extraction job monitoring.
-- list all instrument lists.
-- list tick jobs
-- list all saved instrument lists for datascope extractions.
-- create a new instrument list.
+- datascope list extracted files
+- list extracted files
 - get the current status and details of a specific tick history extraction job.
+- search datascope for instruments.
+- tick history list jobs
 - cancel a running tick extraction job.
+- get tick extraction job status.
+- extracted data files.
+- list files from completed extractions.
+- create a new instrument list.
+- search datascope select for financial instruments by ric, isin, cusip, or ticker.
+- quantitative analysis
+- refinitiv eikon
+- list instrument lists
+- list all saved instrument lists for datascope extractions.
+- data extraction
+- search instruments
+- create instrument list
+- financial data
+- execute an on-demand tick history extraction for time-and-sales or intraday bars.
+- extract data
+- trading
+- tick extraction job monitoring.
+- tick history extract
+- tick history extractions.
+- get tick job status
+- list tick extraction jobs.
+- tick history
+- individual tick extraction job.
 - instrument list management.
+- execute a datascope select on-demand extraction for pricing, corporate actions, or reference data.
+- execute a tick history extraction.
+- tick history get job status
+- datascope extract data
+- extract tick history
+- list tick jobs
+- on-demand data extractions.
+- financial news
+- real-time data
+- datascope select
+- datascope search instruments
+- market data
+- corporate actions
+- execute a datascope select on-demand extraction.
+- cancel tick job
+- list all tick history extraction jobs and their current statuses.
+- tick history cancel job
+- cancel a running tick history extraction job.
+- datascope list instrument lists
+- list files produced by completed datascope extractions.
+- list all instrument lists.
 slug: data-extraction
 source_filename: data-extraction.yaml
 source_heading: Capability Spec

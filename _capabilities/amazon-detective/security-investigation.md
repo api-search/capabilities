@@ -53,69 +53,69 @@ personas: []
 provider_name: Amazon Detective
 provider_slug: amazon-detective
 search_terms:
+- list data source packages in the behavior graph
+- security investigation
+- list member accounts contributing data to a behavior graph
+- soc
+- archive or reactivate an investigation
+- create graph
+- security investigation lifecycle management
+- get investigation
+- list all security investigations with filtering by severity, status, and state
+- get the organization behavior graph configuration including auto-enable settings
+- delete members
+- security operations center analyst using detective to investigate alerts and hunt threats
+- create members
+- invite aws accounts to contribute data to a behavior graph
+- list all investigations in a behavior graph
+- amazon detective
+- get the results, severity, and status of a security investigation
+- update datasource packages
+- end-to-end security investigation using machine learning and graph analysis
+- start a new investigation on an iam user or role
 - invite aws accounts to become member accounts
-- list datasource packages
+- list members
+- list all behavior graphs
+- data source package management
+- list organization admin accounts
+- initiate a detective investigation on a suspicious iam user or role
+- get indicators of compromise (ttps, flagged ips, impossible travel) from an investigation
+- managing the detective behavior graph and contributing member accounts
+- Security Engineer
+- list graphs
+- security engineer managing the detective behavior graph, member accounts, and data sources
+- enable additional data source packages like eks audit logs or ad audit logs
+- update investigation state
+- list all amazon detective behavior graphs
+- investigation
+- remove member accounts from a behavior graph
+- get members
+- get detailed membership information for specific accounts
+- end-to-end security investigation workflow for soc analysts
+- describe organization configuration
+- start investigation
+- list indicators
 - threat hunting
+- list data source packages and their ingest status in a behavior graph
+- get results and status of an investigation
+- behavior graph management for security investigation
+- forensics
+- multi-account security management via aws organizations integration
+- list datasource packages
+- list detective administrator accounts in the organization
 - aws
 - indicators of compromise from an investigation
-- SOC Analyst
-- multi-account security management via aws organizations integration
-- list data source packages in the behavior graph
-- forensics
-- list detective administrator accounts in the organization
 - list investigations
-- enable additional data source packages like eks audit logs or ad audit logs
-- list data source packages and their ingest status in a behavior graph
-- managing the detective behavior graph and contributing member accounts
-- investigation
-- create a new amazon detective behavior graph to begin security monitoring
-- member account management for the behavior graph
-- list member accounts contributing data to a behavior graph
-- security operations center analyst using detective to investigate alerts and hunt threats
-- security investigation
-- list all behavior graphs
-- delete members
-- get indicators of compromise from an investigation
-- get indicators of compromise (ttps, flagged ips, impossible travel) from an investigation
-- end-to-end security investigation workflow for soc analysts
-- security
-- remove member accounts from the behavior graph
-- data source package management
-- update datasource packages
-- initiate a detective investigation on a suspicious iam user or role
-- behavior graph management for security investigation
-- remove member accounts from a behavior graph
-- list all amazon detective behavior graphs
-- update investigation state
-- security investigation lifecycle management
-- start a new investigation on an iam user or role
-- individual investigation management
-- list member accounts contributing to the behavior graph
-- get results and status of an investigation
-- list graphs
-- create members
-- get detailed membership information for specific accounts
-- list all investigations in a behavior graph
-- end-to-end security investigation using machine learning and graph analysis
-- list all security investigations with filtering by severity, status, and state
-- create a new behavior graph
-- get investigation
-- list indicators
-- get members
-- get the results, severity, and status of a security investigation
-- list organization admin accounts
-- soc
-- get the organization behavior graph configuration including auto-enable settings
-- archive or reactivate an investigation
-- start investigation
-- invite aws accounts to contribute data to a behavior graph
 - archive a completed investigation or reactivate an archived one
-- describe organization configuration
-- security engineer managing the detective behavior graph, member accounts, and data sources
-- list members
-- amazon detective
-- create graph
-- Security Engineer
+- list member accounts contributing to the behavior graph
+- create a new behavior graph
+- create a new amazon detective behavior graph to begin security monitoring
+- SOC Analyst
+- remove member accounts from the behavior graph
+- security
+- get indicators of compromise from an investigation
+- member account management for the behavior graph
+- individual investigation management
 slug: security-investigation
 source_filename: security-investigation.yaml
 source_heading: Capability Spec

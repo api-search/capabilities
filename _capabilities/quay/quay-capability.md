@@ -73,45 +73,45 @@ personas: []
 provider_name: Quay
 provider_slug: quay
 search_terms:
-- createorgrobot
-- getmanifestsecurity
-- listrepos
-- create a robot account
-- changetag
-- red hat
-- container images
-- list repositories
+- get authenticated user
 - getrepo
-- requestrepobuild
-- delete a tag
-- changeuserpermissions
-- createrepo
-- listrepotags
-- getorganization
 - containers
-- deleterepo
-- get organization details
-- create a new repository
-- get manifest by digest
-- registry
-- getloggedinuser
-- get repository details
+- container images
+- getmanifestsecurity
+- delete repository
+- red hat
 - api
-- get vulnerability scan results for a manifest
-- create or update a team
-- listrepobuilds
 - getmanifest
-- updateorganizationteam
-- list builds for a repository
+- list repository tags
 - quay
 - deletetag
-- security scanning
-- request a new build
+- deleterepo
+- listrepotags
+- createrepo
+- registry
+- get vulnerability scan results for a manifest
+- changetag
+- list builds for a repository
+- listrepobuilds
 - create or update a tag
-- list repository tags
-- delete repository
+- get organization details
+- request a new build
+- requestrepobuild
+- create a new repository
+- security scanning
+- getloggedinuser
+- updateorganizationteam
+- create a robot account
+- create or update a team
+- get repository details
+- listrepos
+- createorgrobot
+- changeuserpermissions
+- get manifest by digest
+- list repositories
+- delete a tag
+- getorganization
 - set user repository permission
-- get authenticated user
 slug: quay-capability
 source_filename: quay-capability.yaml
 source_heading: Capability Spec

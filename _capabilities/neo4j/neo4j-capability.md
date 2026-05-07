@@ -69,44 +69,44 @@ personas: []
 provider_name: Neo4j
 provider_slug: neo4j
 search_terms:
-- get tenant details
-- graph database
-- get instance details
-- resumeinstance
-- listtenants
-- listsnapshots
-- deleteinstance
-- getaccesstoken
-- apis
-- createsnapshot
-- cloud
-- update an instance
-- restore a snapshot to a new instance
-- graphql
-- pauseinstance
-- createinstance
-- updateinstance
-- getinstance
-- list all tenants
-- resume a paused instance
-- restoresnapshot
 - neo4j
-- delete an instance
-- pause an instance
-- gettenant
-- api
-- drivers
-- obtain an oauth2 access token
-- overwrite an instance from a snapshot
-- list snapshots for an instance
-- listinstances
-- get snapshot details
-- getsnapshot
-- create a snapshot
+- resume a paused instance
+- updateinstance
+- restoresnapshot
+- apis
 - list all instances
+- overwrite an instance from a snapshot
+- createinstance
+- listsnapshots
+- api
+- obtain an oauth2 access token
+- drivers
+- pause an instance
+- list snapshots for an instance
+- deleteinstance
+- getsnapshot
+- graphql
+- gettenant
+- getinstance
+- get tenant details
+- listtenants
+- get snapshot details
+- update an instance
+- cloud
+- create a new instance
+- delete an instance
+- get instance details
+- graph database
 - overwriteinstance
 - cypher
-- create a new instance
+- getaccesstoken
+- restore a snapshot to a new instance
+- create a snapshot
+- listinstances
+- pauseinstance
+- createsnapshot
+- list all tenants
+- resumeinstance
 slug: neo4j-capability
 source_filename: neo4j-capability.yaml
 source_heading: Capability Spec

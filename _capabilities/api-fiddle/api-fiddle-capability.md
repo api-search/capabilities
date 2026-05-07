@@ -85,51 +85,51 @@ personas: []
 provider_name: API-Fiddle
 provider_slug: api-fiddle
 search_terms:
-- deletespecification
-- listworkspaces
-- api-fiddle create a specification
-- fiddle
-- getworkspace
-- api-fiddle create a project
-- createworkspace
+- removesharing
 - api-fiddle update a project
+- getproject
+- api-fiddle delete a specification
+- listworkspaces
+- updateworkspace
+- api
+- platform
+- api-fiddle get a specification
+- api-fiddle delete a project
+- openapi
+- api-fiddle update a specification
+- api-fiddle update a workspace
+- documentation
+- createspecification
+- api-fiddle share a project
+- collaboration
+- api-fiddle get a project
+- updateproject
+- api-fiddle get a workspace
+- api-fiddle remove sharing
+- api design
+- listsharing
+- api-fiddle list specifications
+- api-fiddle export a project
+- api-fiddle create a project
+- api-fiddle list sharing settings
+- api-fiddle list projects
+- listspecifications
+- api-fiddle create a specification
+- deletespecification
+- exportproject
 - deleteproject
 - api-fiddle delete a workspace
-- api-fiddle list projects
-- api-fiddle list sharing settings
-- api-fiddle update a specification
-- deleteworkspace
-- updatespecification
-- createspecification
-- api-fiddle delete a specification
-- updateproject
-- api-fiddle share a project
-- api-fiddle get a workspace
-- exportproject
+- createworkspace
 - getspecification
-- api-fiddle get a specification
-- getproject
-- api design
-- documentation
-- openapi
-- listsharing
-- api-fiddle list workspaces
-- api
-- api-fiddle create a workspace
-- listprojects
-- removesharing
-- api-fiddle export a project
-- api-fiddle get a project
-- listspecifications
-- platform
-- api-fiddle list specifications
-- api-fiddle remove sharing
 - shareproject
-- updateworkspace
-- api-fiddle delete a project
-- collaboration
+- api-fiddle list workspaces
+- fiddle
+- updatespecification
+- listprojects
+- getworkspace
+- deleteworkspace
+- api-fiddle create a workspace
 - createproject
-- api-fiddle update a workspace
 slug: api-fiddle-capability
 source_filename: api-fiddle-capability.yaml
 source_heading: Capability Spec

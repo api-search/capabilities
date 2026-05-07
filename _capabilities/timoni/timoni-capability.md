@@ -21,18 +21,18 @@ personas: []
 provider_name: Timoni
 provider_slug: timoni
 search_terms:
-- get module blob
-- getmoduleblob
-- api
-- timoni
-- getmodulemanifest
-- listmoduletags
-- containers
-- list module tags
-- kubernetes
-- package manager
 - get module manifest
+- package manager
+- containers
 - cue
+- kubernetes
+- list module tags
+- listmoduletags
+- api
+- getmoduleblob
+- getmodulemanifest
+- timoni
+- get module blob
 slug: timoni-capability
 source_filename: timoni-capability.yaml
 source_heading: Capability Spec

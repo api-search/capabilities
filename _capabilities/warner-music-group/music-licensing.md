@@ -29,38 +29,38 @@ personas: []
 provider_name: Warner Music Group
 provider_slug: warner-music-group
 search_terms:
-- get track details by isrc code
-- individual track details
-- search catalog
 - get artist profile and catalog information from the wmg roster
-- warner music group
+- search catalog
+- music licensing
+- streaming
+- submit a synchronization license request for use in film, tv, or advertising
+- licensing
 - publishing
-- submit a new music license request
-- license request management
-- get detailed information about a wmg recording using its isrc code
-- request license
-- search wmg catalog for recordings and compositions
+- sync licensing
+- get track details by isrc code
+- request sync license
 - artist profile data
+- get artist
+- search wmg catalog for recordings and compositions
+- get track by isrc
+- get detailed information about a wmg recording using its isrc code
+- music
 - get artist information and catalog summary
 - search the warner music group catalog for recordings and compositions by artist, title, or genre
-- music
-- music catalog discovery
-- list submitted music license requests and their approval status
-- get track
-- entertainment
-- submit a synchronization license request for use in film, tv, or advertising
-- sync licensing
-- list licenses
-- list license requests
-- get artist
-- streaming
-- get track by isrc
-- music licensing
 - catalog
+- list license requests
+- get track
+- individual track details
+- entertainment
 - search wmg catalog
-- request sync license
+- music catalog discovery
 - rights management
-- licensing
+- list submitted music license requests and their approval status
+- warner music group
+- submit a new music license request
+- request license
+- list licenses
+- license request management
 slug: music-licensing
 source_filename: music-licensing.yaml
 source_heading: Capability Spec

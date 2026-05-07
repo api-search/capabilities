@@ -57,57 +57,57 @@ personas: []
 provider_name: Sisense
 provider_slug: sisense
 search_terms:
-- get details for a specific user account
-- manage user groups
-- delete dashboard
-- delete an analytics dashboard
-- remove a user from the sisense platform
-- list user-accessible dashboards
-- get details for a specific dashboard including its configuration
-- create a new analytics dashboard in sisense
 - analytics
-- embedded analytics
-- list all dashboards
-- manage a specific dashboard
-- data models
-- delete a dashboard
-- create a new user
-- create user
-- create a user group
-- dashboards
-- list user groups configured for access control
-- list all dashboards across all users (admin access required)
-- get data security rules
-- create a new user group for organizing access control
-- create dashboard
-- list all users
-- list all elasticubes
-- list all users in the sisense platform
-- get dashboard details
-- create a new analytics dashboard
-- delete user
-- manage elasticube data models
-- list user groups
-- manage a specific user
-- list all elasticube data models in the sisense platform
-- manage analytics dashboards
-- data security
-- administration
-- get dashboard
-- list analytics dashboards accessible to the current user
-- create a new sisense user with specified role and group assignments
-- get row-level data security rules configured for an elasticube
-- get user
-- business intelligence
-- list elasticubes
-- list users
-- manage platform users
-- remove a user
-- get user details
-- list dashboards
-- list groups
 - create group
+- list user groups configured for access control
+- get dashboard details
+- manage platform users
+- data security
+- remove a user
+- list groups
+- create a new analytics dashboard in sisense
+- create a new user group for organizing access control
+- embedded analytics
+- delete an analytics dashboard
+- list elasticubes
+- list all elasticubes
+- delete dashboard
+- delete a dashboard
+- remove a user from the sisense platform
+- list all users
+- list user groups
+- list user-accessible dashboards
+- manage analytics dashboards
+- business intelligence
+- delete user
+- get user details
+- list all dashboards across all users (admin access required)
+- administration
+- list users
+- dashboards
+- get details for a specific dashboard including its configuration
+- data models
+- manage user groups
+- get row-level data security rules configured for an elasticube
+- create dashboard
+- manage a specific user
+- list analytics dashboards accessible to the current user
+- get details for a specific user account
+- get data security rules
+- get dashboard
+- list dashboards
 - list all dashboards (admin)
+- get user
+- list all users in the sisense platform
+- create a new sisense user with specified role and group assignments
+- manage a specific dashboard
+- create a new analytics dashboard
+- list all dashboards
+- create user
+- create a new user
+- create a user group
+- manage elasticube data models
+- list all elasticube data models in the sisense platform
 - admin dashboard access
 slug: analytics-administration
 source_filename: analytics-administration.yaml

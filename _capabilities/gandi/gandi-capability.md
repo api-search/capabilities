@@ -53,36 +53,36 @@ personas: []
 provider_name: Gandi
 provider_slug: gandi
 search_terms:
-- resend foa
-- delete domain
-- dns
-- domains
-- post domains
-- get check
-- gandi
-- check domain availability
-- get trademark claims
-- get changeowner domain
-- domain registrar
-- get domain
 - post changeowner domain foa
-- register domain
-- put domains domain authinfo
-- hosting
-- api
-- reset auth code
-- get domains domain claims
-- get ownership change status
-- patch domains domain autorenew
-- get domains
-- list domains
-- delete domains domain
-- email
 - get domains domain
 - initiate ownership change
-- certificates
+- patch domains domain autorenew
+- reset auth code
+- gandi
+- api
+- resend foa
+- domain registrar
+- list domains
+- get domains domain claims
+- put domains domain authinfo
+- post domains
 - update autorenew
 - post changeowner domain
+- delete domain
+- get domains
+- hosting
+- get changeowner domain
+- get domain
+- email
+- get trademark claims
+- get ownership change status
+- certificates
+- dns
+- get check
+- domains
+- check domain availability
+- delete domains domain
+- register domain
 slug: gandi-capability
 source_filename: gandi-capability.yaml
 source_heading: Capability Spec

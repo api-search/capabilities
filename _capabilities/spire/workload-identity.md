@@ -25,34 +25,34 @@ personas: []
 provider_name: SPIRE
 provider_slug: spire
 search_terms:
-- identity
-- spire component readiness probe.
-- get jwks
-- spire component liveness probe.
-- check if the spire component process is alive.
-- retrieve the oidc provider configuration document.
-- get openid configuration
-- check if the spire component is ready to serve identity requests.
-- security
-- get readiness
-- cloud native
-- check if the spire component process is alive and running.
-- check spire readiness
-- retrieve public keys used to verify jwt-svids.
-- check if the spire component is ready to serve requests.
-- openid connect discovery document from spire.
-- get liveness
-- zero trust
-- authentication
 - check spire liveness
-- retrieve the json web key set containing public keys for verifying jwt-svids issued by spire.
-- oidc
-- get oidc configuration
-- get jwt signing keys
-- retrieve the oidc discovery document describing spire's identity provider configuration for jwt-svid validation.
-- graduated
 - json web key set for jwt-svid verification.
+- get liveness
+- get openid configuration
+- get oidc configuration
+- retrieve public keys used to verify jwt-svids.
+- cloud native
+- oidc
+- authentication
 - health
+- check if the spire component process is alive.
+- graduated
+- identity
+- get jwt signing keys
+- get readiness
+- check if the spire component is ready to serve identity requests.
+- check if the spire component process is alive and running.
+- check if the spire component is ready to serve requests.
+- spire component liveness probe.
+- retrieve the oidc provider configuration document.
+- check spire readiness
+- zero trust
+- retrieve the oidc discovery document describing spire's identity provider configuration for jwt-svid validation.
+- get jwks
+- openid connect discovery document from spire.
+- security
+- spire component readiness probe.
+- retrieve the json web key set containing public keys for verifying jwt-svids issued by spire.
 slug: workload-identity
 source_filename: workload-identity.yaml
 source_heading: Capability Spec

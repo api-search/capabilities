@@ -61,74 +61,74 @@ personas: []
 provider_name: Zuplo
 provider_slug: zuplo
 search_terms:
-- manage api consumers
-- redeploy deployment
-- create a new api key bucket for grouping consumers
-- gateways
-- get tunnel details
-- list all api key buckets
-- issue a new api key to a consumer
-- delete an api consumer and all their keys
-- create tunnel
-- list buckets
-- create a tunnel
-- get deployment
-- delete an api key
 - delete deployment
-- delete a tunnel
 - manage api key buckets
-- deployments
-- list all tunnels connected to private backends
-- individual tunnel operations
-- query audit logs
-- get tunnel
-- create a new consumer
-- delete consumer
+- get deployment
+- delete api key
+- list buckets
+- create tunnel
+- list all api consumers within a bucket
 - api keys
-- create an api key bucket
-- manage api keys for consumers
-- list project deployments
-- list deployments
-- revoke and delete an api key
-- delete a zuplo deployment
-- query account audit logs for compliance and security review
-- roll consumer keys
+- create a new api key bucket for grouping consumers
+- ai gateway
+- platform
+- list all api key buckets
+- gateways
+- rotate the authentication token for a tunnel connection
+- api management
+- query audit logs
+- create a new consumer
+- audit log access for compliance
+- individual api key operations
+- list keys
+- create a tunnel
 - list consumers
+- get tunnel details
+- list all deployments for a project
+- get deployment details and status
+- query account audit logs for compliance and security review
 - create consumer
+- deployment management
+- create bucket
+- list deployments
+- delete an api key
+- delete a zuplo deployment
+- who am i
+- get tunnel
+- delete consumer
+- individual tunnel operations
+- delete a tunnel
 - create a new api key consumer in a bucket
 - list all api keys issued to a consumer
+- rotate all api keys for a consumer to new values
+- deployments
+- list project deployments
+- get tunnel details and connection status
+- create an api key bucket
+- rotate tunnel token
+- list consumers in a bucket
+- create a new tunnel for private backend connectivity
+- identify the current api key caller and account
+- delete tunnel
+- list api keys
+- revoke and delete an api key
+- get details for a specific api consumer
+- redeploy deployment
+- list all tunnels
 - issue a new api key
-- deployment management
+- list all tunnels connected to private backends
+- list tunnels
+- list all api key buckets in a zuplo account
+- issue a new api key to a consumer
+- list api keys for a consumer
+- delete an api consumer and all their keys
+- trigger a re-deployment of an existing deployment
+- manage tunnels to private backends
+- manage api consumers
+- roll consumer keys
 - get consumer
 - create api key
-- get details for a specific api consumer
-- delete api key
-- list api keys
-- list all api key buckets in a zuplo account
-- create a new tunnel for private backend connectivity
-- ai gateway
-- list all tunnels
-- list all deployments for a project
-- list api keys for a consumer
-- api management
-- manage tunnels to private backends
-- get tunnel details and connection status
-- platform
-- rotate tunnel token
-- trigger a re-deployment of an existing deployment
-- list consumers in a bucket
-- identify the current api key caller and account
-- list keys
-- individual api key operations
-- create bucket
-- list tunnels
-- delete tunnel
-- audit log access for compliance
-- rotate the authentication token for a tunnel connection
-- get deployment details and status
-- list all api consumers within a bucket
-- rotate all api keys for a consumer to new values
-- who am i
+- manage api keys for consumers
 slug: api-management
 source_filename: api-management.yaml
 source_heading: Capability Spec

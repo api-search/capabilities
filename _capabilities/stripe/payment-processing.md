@@ -53,57 +53,57 @@ personas: []
 provider_name: Stripe
 provider_slug: stripe
 search_terms:
-- list stripe payment intents with optional filters
-- confirm payment intent
-- payment refunds
-- cancel payment intent
-- retrieve a stripe payment intent by id
-- capture authorized funds for a stripe payment intent
-- capture authorized payment
-- create a refund
-- list stripe payment disputes (chargebacks)
-- create payment intent
-- fintech
-- stripe
-- financial services
-- retrieve details of a stripe checkout session
-- capture payment intent
-- individual payment intent
-- list refunds
-- e-commerce
-- update dispute
-- cancel an uncaptured stripe payment intent
-- confirm a payment intent
-- create checkout session
-- create a hosted checkout session
-- commerce
-- create a stripe hosted checkout page for payment collection
-- list payment intents
-- list disputes
-- get details of a specific stripe dispute
-- get dispute
-- create a new stripe payment intent for collecting payment
-- create a payment intent
-- update evidence for a stripe dispute to contest a chargeback
-- create refund
-- t1
-- refunds
-- get checkout session
 - disputes
+- cancel payment intent
+- retrieve details of a stripe checkout session
+- update dispute
+- get dispute
+- confirm payment intent
+- capture authorized funds for a stripe payment intent
 - checkout
-- get a payment intent
+- individual payment intent
 - individual dispute
-- payments
-- list checkout sessions
-- manage payment intents for custom payment flows
+- create a refund
+- fintech
+- create a stripe hosted checkout page for payment collection
+- get payment intent
+- list stripe payment intents with optional filters
+- get checkout session
+- payment refunds
+- list disputes
 - capture payment funds
 - confirm a stripe payment intent to execute the payment
-- get payment intent
-- get a dispute
+- financial services
+- get details of a specific stripe dispute
+- t1
+- e-commerce
+- create refund
+- create a payment intent
+- get a payment intent
 - payment disputes and chargebacks
 - list stripe refunds
-- hosted checkout sessions
+- stripe
+- list payment intents
+- capture payment intent
+- create a new stripe payment intent for collecting payment
+- list stripe payment disputes (chargebacks)
+- refunds
+- create checkout session
+- manage payment intents for custom payment flows
+- get a dispute
+- update evidence for a stripe dispute to contest a chargeback
+- retrieve a stripe payment intent by id
 - create a refund on a stripe charge or payment intent
+- create a hosted checkout session
+- list refunds
+- confirm a payment intent
+- list checkout sessions
+- cancel an uncaptured stripe payment intent
+- payments
+- capture authorized payment
+- hosted checkout sessions
+- create payment intent
+- commerce
 slug: payment-processing
 source_filename: payment-processing.yaml
 source_heading: Capability Spec

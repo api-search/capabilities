@@ -29,24 +29,24 @@ personas: []
 provider_name: Google Cloud Translation
 provider_slug: google-cloud-translation
 search_terms:
-- detectlanguage
-- language
-- machine learning
-- cloud
-- google
-- api
-- getsupportedlanguages
-- translation
-- google cloud translation get supported languages
-- listglossaries
-- google cloud translation translate text
 - translatetext
+- translation
+- google cloud translation translate text
+- localization
+- detectlanguage
+- google cloud translation create a glossary
+- machine learning
+- createglossary
+- google cloud translation list glossaries
+- getsupportedlanguages
+- google
+- google cloud translation get supported languages
 - google cloud translation detect language
 - google cloud
-- google cloud translation list glossaries
-- createglossary
-- google cloud translation create a glossary
-- localization
+- listglossaries
+- language
+- api
+- cloud
 slug: google-cloud-translation-capability
 source_filename: google-cloud-translation-capability.yaml
 source_heading: Capability Spec

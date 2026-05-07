@@ -105,62 +105,62 @@ personas: []
 provider_name: Knative
 provider_slug: knative
 search_terms:
+- listapiserversources
 - listbrokers
-- knative create a trigger
-- deletesubscription
-- createbroker
-- knative delete a subscription
-- knative list pingsources
-- knative create a broker
-- getchannel
-- createsinkbinding
-- listeventtypes
-- knative create a channel
-- knative list apiserversources
-- listpingsources
-- knative get a subscription
-- knative list eventtypes
-- serverless
-- listsinkbindings
-- getsubscription
-- listchannels
-- createsubscription
-- knative list triggers
-- knative get a broker
-- cloud native
-- deletechannel
-- kubernetes
-- createchannel
+- knative get a trigger
 - knative delete a channel
-- deletetrigger
-- deletebroker
-- knative
-- knative list sinkbindings
+- listtriggers
+- event-driven
+- getbroker
+- createeventtype
 - createpingsource
 - api
 - auto-scaling
-- knative create a pingsource
-- listtriggers
-- createtrigger
-- knative create a sinkbinding
-- event-driven
-- knative get a channel
-- knative get a trigger
+- createsubscription
 - listsubscriptions
+- cloud native
+- knative get a channel
+- knative create a broker
+- createbroker
+- deletetrigger
 - knative delete a trigger
-- knative list brokers
-- knative delete a broker
-- createeventtype
-- knative list channels
-- knative create an apiserversource
-- listapiserversources
-- getbroker
-- gettrigger
-- graduated
+- knative create a sinkbinding
 - createapiserversource
-- knative create a subscription
-- knative create an eventtype
+- knative
+- graduated
+- knative delete a subscription
+- knative create a trigger
+- knative create a channel
+- getsubscription
+- serverless
+- deletesubscription
+- kubernetes
 - knative list subscriptions
+- listpingsources
+- knative list pingsources
+- gettrigger
+- knative list sinkbindings
+- getchannel
+- knative create an apiserversource
+- knative delete a broker
+- knative list apiserversources
+- knative create a pingsource
+- listsinkbindings
+- knative list eventtypes
+- knative create an eventtype
+- createtrigger
+- knative list triggers
+- knative get a subscription
+- knative list brokers
+- listeventtypes
+- knative get a broker
+- deletebroker
+- knative create a subscription
+- knative list channels
+- createchannel
+- createsinkbinding
+- deletechannel
+- listchannels
 slug: knative-capability
 source_filename: knative-capability.yaml
 source_heading: Capability Spec

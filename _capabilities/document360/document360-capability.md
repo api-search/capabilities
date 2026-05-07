@@ -69,41 +69,41 @@ personas: []
 provider_name: Document360
 provider_slug: document360
 search_terms:
-- list drive files
-- listdrivefolders
 - create category
-- update category
-- createcategory
-- create article
-- list articles
 - listarticles
-- updatecategory
-- list teams
-- listprojectversions
-- listcategories
-- documentation
-- update article
-- get article
-- list drive folders
-- getcategory
-- deletecategory
-- delete category
-- saas
-- api
-- createarticle
-- delete article
-- knowledge base
-- list categories
-- document360
-- listteams
 - getarticle
-- deletearticle
-- get category
-- updatearticle
-- list users
+- update article
+- listcategories
+- get article
+- api
+- document360
+- getcategory
+- updatecategory
+- list drive folders
+- saas
 - list project versions
-- listdrivefiles
+- documentation
+- list teams
+- list categories
+- deletearticle
+- knowledge base
+- listprojectversions
+- createarticle
+- list users
+- update category
+- listdrivefolders
+- list articles
+- updatearticle
+- get category
+- create article
+- listteams
+- deletecategory
+- list drive files
+- delete category
 - listusers
+- delete article
+- createcategory
+- listdrivefiles
 slug: document360-capability
 source_filename: document360-capability.yaml
 source_heading: Capability Spec

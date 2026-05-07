@@ -45,59 +45,59 @@ personas: []
 provider_name: Trustpilot
 provider_slug: trustpilot
 search_terms:
-- business unit reviews
-- product reviews
-- get all business unit reviews
-- get details for a specific review.
-- get company trust profile including trustscore and review counts.
-- send email invitations
-- send review email invitations
-- get review
-- post a company reply to a review.
-- get available email invitation templates for review requests.
-- create a unique review invitation link.
-- get business unit reviews
-- get public reviews for a business with filtering by stars and language.
-- get latest reviews
-- latest reviews in a language
-- search for business units by name or domain.
-- invitations
-- get review tags
-- remove a company reply from a review.
-- get tags assigned to a review for categorization and filtering.
-- set review tags
-- get tags for a review.
-- review reply management
-- consumer reviews
-- create review invitation links
-- search for businesses on trustpilot to find their profile and trust score.
-- generate a unique review invitation link to share with customers.
-- review tag management
-- get business unit profile
-- individual review details
-- send review invitations to customers.
-- trust
-- business unit trust profile
-- search trustpilot business units
-- get the most recent reviews in a specific language.
-- get reviews
-- create invitation link
-- create review reply
-- retrieve all reviews for a business using cursor pagination for large review sets.
-- business profiles
-- get details of a specific trustpilot review including rating, text, and consumer info.
-- post a company reply to a customer review on trustpilot.
-- delete review reply
-- get invitation templates
-- get the trustscore, star rating distribution, and contact details for a business.
-- get the most recent reviews in a specific language across trustpilot.
-- customer experience
-- set tags on a review to categorize it by topic, campaign, or issue type.
-- reviews
 - ratings
+- post a company reply to a customer review on trustpilot.
+- send email invitations
+- generate a unique review invitation link to share with customers.
+- create review reply
+- consumer reviews
+- get latest reviews
+- send review email invitations
+- get tags assigned to a review for categorization and filtering.
+- invitations
+- reviews
+- create review invitation links
+- business unit trust profile
+- get review
+- business unit reviews
+- get public reviews for a business with filtering by stars and language.
+- create invitation link
+- search trustpilot business units
+- customer experience
+- get company trust profile including trustscore and review counts.
+- get tags for a review.
+- set tags on a review to categorize it by topic, campaign, or issue type.
+- get the most recent reviews in a specific language.
+- post a company reply to a review.
+- individual review details
+- search for businesses on trustpilot to find their profile and trust score.
+- delete review reply
+- send review invitations to customers.
+- get review tags
 - send email review invitations to customers after purchase or service delivery.
+- get all business unit reviews
+- get invitation templates
+- get business unit reviews
+- business profiles
 - get reviews for a business unit with star and language filtering.
+- review reply management
+- remove a company reply from a review.
+- retrieve all reviews for a business using cursor pagination for large review sets.
+- get available email invitation templates for review requests.
 - search business units
+- search for business units by name or domain.
+- create a unique review invitation link.
+- review tag management
+- get reviews
+- get the trustscore, star rating distribution, and contact details for a business.
+- get business unit profile
+- product reviews
+- set review tags
+- get details of a specific trustpilot review including rating, text, and consumer info.
+- get the most recent reviews in a specific language across trustpilot.
+- trust
+- get details for a specific review.
+- latest reviews in a language
 slug: review-management
 source_filename: review-management.yaml
 source_heading: Capability Spec

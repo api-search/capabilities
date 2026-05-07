@@ -249,131 +249,131 @@ personas: []
 provider_name: N8n
 provider_slug: n8n
 search_terms:
-- agents
-- unarchiveworkflow
-- getworkflowversion
-- upsertdatatablerows
-- deleteproject
-- update a variable
-- retry an execution
-- deactivateworkflow
-- insert rows into a data table
-- n8n
-- api
-- createworkflow
-- updatevariable
-- update tags on an execution
-- createusers
-- getuser
-- updatedatatable
-- deletecredential
-- insertdatatablerows
-- update tags of a workflow
-- retrieve an execution
-- delete a column from a data table
-- delete a workflow
-- listdatatablerows
-- retrieve variables
-- createproject
-- retrieve projects
-- deleteuser
-- activateworkflow
-- update a tag
-- stopexecutions
-- testcredential
-- updateproject
-- list all data tables
-- create a data table
-- deactivate a workflow
-- get user by id/email
-- generateaudit
-- getexecution
-- getusers
-- getdatatable
-- deleteexecution
-- updateworkflowtags
-- get a data table
-- archive a workflow
-- get project users
-- upsert rows in a data table
-- getprojects
-- addprojectusers
-- transfer a credential to another project
-- pull changes from the remote repository
-- stopexecution
-- retrieve all tags
-- add users to a project
-- show credential data schema
-- retrieves a workflow
-- updatetag
-- retryexecution
-- retrieve all executions
-- create a tag
-- create a variable
-- stop an execution
-- delete a tag
-- retrieve all workflows
-- deletevariable
-- delete a data table
-- createvariable
-- artificial intelligence
-- transferworkflow
-- delete a variable
-- integrations
-- retrieve all users
-- getcredentialschema
-- retrieves a specific version of a workflow
-- generate an audit
-- delete a project
-- activate a workflow
-- get workflow tags
-- create a credential
-- sourcecontrolpull
-- deletedatatable
-- update a workflow
-- getworkflow
-- deletedatatablecolumn
-- gettag
-- transfer a workflow to another project
-- stop multiple executions
-- createdatatable
-- delete an execution
-- list columns in a data table
-- createcredential
-- unarchive a workflow
-- deletetag
-- add a column to a data table
-- listdatatables
-- transfercredential
-- deleteworkflow
-- delete rows in a data table
-- create a workflow
-- list rows in a data table
-- test a credential
-- getexecutions
-- listdatatablecolumns
-- updatedatatablerows
-- delete credential by id
-- delete a user
-- retrieves a tag
-- update rows in a data table
-- change a user's global role
-- create a project
-- changeuserrole
-- getvariables
-- adddatatablecolumn
-- create multiple users
-- update a data table
-- getprojectusers
-- gettags
-- deletedatatablerows
-- createtag
-- update a project
-- getworkflows
-- archiveworkflow
 - updateexecutiontags
-- updateworkflow
+- archiveworkflow
+- update tags of a workflow
+- api
 - getworkflowtags
+- createworkflow
+- delete a user
+- getprojects
+- delete a data table
+- deletetag
+- getexecutions
+- retrieves a specific version of a workflow
+- deleteexecution
+- add users to a project
+- get user by id/email
+- deleteuser
+- createdatatable
+- retrieve all users
+- agents
+- retrieve variables
+- deleteproject
+- getexecution
+- getworkflowversion
+- addprojectusers
+- gettag
+- insert rows into a data table
+- listdatatablecolumns
+- create a variable
+- update a workflow
+- activateworkflow
+- deletedatatablerows
+- integrations
+- sourcecontrolpull
+- deletevariable
+- delete a workflow
+- stop an execution
+- adddatatablecolumn
+- listdatatablerows
+- create multiple users
+- gettags
+- insertdatatablerows
+- pull changes from the remote repository
+- get a data table
+- n8n
+- create a project
+- upsert rows in a data table
+- deletedatatable
+- list rows in a data table
+- updateworkflowtags
+- upsertdatatablerows
+- artificial intelligence
+- create a credential
+- updateproject
+- stopexecutions
+- list columns in a data table
+- update a variable
+- getworkflows
+- generate an audit
+- create a data table
+- list all data tables
+- createvariable
+- update a project
+- transferworkflow
+- stopexecution
+- transfer a workflow to another project
+- getcredentialschema
+- update a tag
+- update a data table
+- update tags on an execution
+- updatetag
+- create a tag
+- transfer a credential to another project
+- update rows in a data table
+- delete a tag
+- retrieve projects
+- retrieve all executions
+- retrieves a tag
+- delete a variable
+- listdatatables
+- activate a workflow
+- retrieves a workflow
+- deletedatatablecolumn
+- show credential data schema
+- change a user's global role
+- retrieve all workflows
+- delete a column from a data table
+- delete an execution
+- unarchiveworkflow
+- unarchive a workflow
+- getprojectusers
+- deactivateworkflow
+- createtag
+- stop multiple executions
+- testcredential
+- createusers
+- retryexecution
+- delete a project
+- createproject
+- archive a workflow
+- updatedatatable
+- generateaudit
+- retrieve all tags
+- add a column to a data table
+- getusers
+- updatedatatablerows
+- deleteworkflow
+- createcredential
+- updatevariable
+- delete rows in a data table
+- getvariables
+- updateworkflow
+- changeuserrole
+- getuser
+- getworkflow
+- create a workflow
+- get project users
+- retry an execution
+- deletecredential
+- delete credential by id
+- transfercredential
+- retrieve an execution
+- test a credential
+- get workflow tags
+- deactivate a workflow
+- getdatatable
 slug: n8n-capability
 source_filename: n8n-capability.yaml
 source_heading: Capability Spec

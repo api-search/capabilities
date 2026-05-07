@@ -30,22 +30,22 @@ provider_name: OpenCost
 provider_slug: opencost
 search_terms:
 - custom cost timeseries data
-- cloud cost management
+- query underlying cloud infrastructure asset costs
 - getcloudcost
-- getcustomcosttimeseries
-- getcustomcosttotal
-- query cloud provider billing data
-- api
+- cloud cost management
 - observability
 - query kubernetes workload cost allocations
-- finops
-- custom cost totals
-- opencost
-- getallocation
 - getassets
-- query underlying cloud infrastructure asset costs
+- getcustomcosttotal
+- finops
+- getallocation
+- getcustomcosttimeseries
 - kubernetes
+- custom cost totals
 - cncf
+- api
+- opencost
+- query cloud provider billing data
 slug: opencost-capability
 source_filename: opencost-capability.yaml
 source_heading: Capability Spec

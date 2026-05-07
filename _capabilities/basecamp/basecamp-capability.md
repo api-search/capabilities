@@ -249,142 +249,142 @@ personas: []
 provider_name: Basecamp
 provider_slug: basecamp
 search_terms:
-- developer integrating basecamp into custom workflows and tools
-- createdocument
-- get a campfire
-- updatemessage
-- update a template
-- update a schedule
-- deleteproject
-- listuploads
-- get a schedule
-- update a to-do list
-- Developer
-- getdocument
-- createprojectfromtemplate
-- createscheduleentry
 - listpingablepeople
-- gettemplate
-- gettodolist
-- delete a template
-- getscheduleentry
-- trashrecording
-- getproject
+- manager overseeing project progress, tasks, and team communication
+- api
+- list templates
+- update a to-do list
+- updatecomment
+- getcomment
+- get a project
+- list all people
+- rest
+- listpeople
+- createdocument
 - list to-dos
 - Team Member
-- create a comment
-- create a schedule entry
-- api
-- updateupload
-- update my profile
-- list projects
-- update a document
-- createmessage
-- updateprojectaccess
-- updatetodolist
 - create a message
-- createproject
-- update a to-do
-- create a document
-- list messages
-- team communication
-- get my profile
-- unarchive a recording
-- getcomment
-- get a to-do
-- completetodo
-- complete a to-do
-- updateproject
-- getschedule
-- listtodolists
-- listtodos
-- uncomplete a to-do
-- project management
-- get project construction status
-- updatetodo
-- listprojects
-- getmyprofile
-- basecamp
-- archive a recording
-- updatecomment
-- update an upload
-- update a schedule entry
-- get an upload
 - listcampfirelines
-- create a template
-- get a project
-- get a to-do list
-- manager overseeing project progress, tasks, and team communication
+- get a schedule entry
+- deleteproject
+- createtodolist
+- createcampfireline
+- listuploads
+- create project from template
+- updatemyprofile
+- get a to-do
+- list documents
+- list people on a project
+- uncompletetodo
+- update a template
+- update a schedule entry
+- update a comment
+- getprojectconstruction
 - deletetemplate
 - getmessage
-- updatedocument
-- get a person
-- list people on a project
-- getcampfire
-- listtemplates
-- reposition a to-do
-- listcomments
-- list documents
-- list templates
-- updatemyprofile
-- create a campfire line
-- get a document
-- createupload
-- update a comment
-- listpeople
-- list pingable people
-- archiverecording
-- uncompletetodo
-- get a comment
-- project creation and lifecycle management
-- getupload
-- saas
-- list campfires
-- delete a project
-- get a message
-- listscheduleentries
-- listmessages
-- listrecordings
-- list schedule entries
-- getprojectconstruction
-- listprojectpeople
-- list comments
-- unarchiverecording
-- list to-do lists
 - listcampfires
-- rest
-- get a schedule entry
-- list uploads
-- gettodo
-- update a message
+- completetodo
 - to-dos, messages, and team member management
-- listdocuments
-- create a project
-- repositiontodo
-- list campfire lines
-- full basecamp project lifecycle including todos, messages, scheduling, and team management
-- Project Manager
-- updatetemplate
-- createcampfireline
-- get a template
-- create an upload
-- getperson
-- createtodolist
-- updatescheduleentry
-- create project from template
-- createtemplate
-- individual contributor managing tasks and collaborating on projects
-- update a project
-- create a to-do
-- update project access
-- createtodo
-- trash a recording
-- list recordings
-- list all people
-- collaboration
-- create a to-do list
 - createcomment
+- list to-do lists
+- create a schedule entry
+- create a project
+- listrecordings
+- unarchive a recording
+- developer integrating basecamp into custom workflows and tools
+- collaboration
+- list recordings
+- updateproject
+- get an upload
+- getperson
+- create a to-do
+- list projects
+- repositiontodo
+- trash a recording
+- list schedule entries
+- list messages
+- get a document
+- updatetemplate
+- updatetodo
+- update a project
+- listtodolists
+- listtemplates
+- updatedocument
+- get a campfire
+- createscheduleentry
+- team communication
+- unarchiverecording
 - updateschedule
+- listprojectpeople
+- updatescheduleentry
+- individual contributor managing tasks and collaborating on projects
+- getproject
+- reposition a to-do
+- update a schedule
+- update a message
+- create a document
+- saas
+- createprojectfromtemplate
+- getmyprofile
+- create a comment
+- project management
+- list uploads
+- update a to-do
+- create a to-do list
+- listtodos
+- full basecamp project lifecycle including todos, messages, scheduling, and team management
+- project creation and lifecycle management
+- gettodo
+- delete a template
+- get a to-do list
+- createmessage
+- get a person
+- gettemplate
+- listdocuments
+- Project Manager
+- get a template
+- listmessages
+- getdocument
+- list campfire lines
+- update my profile
+- createtodo
+- delete a project
+- createproject
+- getcampfire
+- list campfires
+- basecamp
+- list pingable people
+- updatetodolist
+- archive a recording
+- getscheduleentry
+- updateprojectaccess
+- update a document
+- create an upload
+- update an upload
+- archiverecording
+- updatemessage
+- listcomments
+- complete a to-do
+- getschedule
+- get a message
+- list comments
+- uncomplete a to-do
+- get my profile
+- listscheduleentries
+- gettodolist
+- create a template
+- getupload
+- get project construction status
+- create a campfire line
+- createtemplate
+- trashrecording
+- get a schedule
+- updateupload
+- Developer
+- listprojects
+- createupload
+- get a comment
+- update project access
 slug: basecamp-capability
 source_filename: basecamp-capability.yaml
 source_heading: Capability Spec

@@ -41,31 +41,31 @@ personas: []
 provider_name: Google Anthos
 provider_slug: google-anthos
 search_terms:
-- listbaremetalclusters
-- google anthos delete a vmware cluster
-- service mesh
-- google anthos create a vmware cluster
-- hybrid cloud
-- google anthos create a vmware node pool
-- listvmwareclusters
-- createbaremetalcluster
-- google
-- anthos
-- deletevmwarecluster
-- listvmwarenodepools
-- kubernetes
-- google anthos get a vmware cluster
-- createvmwarenodepool
-- google anthos list vmware clusters
-- multi-cloud
-- google anthos list bare metal clusters
-- api
-- createvmwarecluster
-- google anthos list vmware node pools
-- on-premises
 - container platform
-- getvmwarecluster
+- listvmwarenodepools
+- on-premises
+- createbaremetalcluster
+- api
+- listvmwareclusters
+- deletevmwarecluster
+- service mesh
+- google anthos create a vmware node pool
+- google
+- createvmwarecluster
+- multi-cloud
+- google anthos get a vmware cluster
 - google anthos create a bare metal cluster
+- getvmwarecluster
+- kubernetes
+- google anthos delete a vmware cluster
+- createvmwarenodepool
+- google anthos create a vmware cluster
+- listbaremetalclusters
+- hybrid cloud
+- google anthos list vmware clusters
+- google anthos list vmware node pools
+- google anthos list bare metal clusters
+- anthos
 slug: google-anthos-capability
 source_filename: google-anthos-capability.yaml
 source_heading: Capability Spec

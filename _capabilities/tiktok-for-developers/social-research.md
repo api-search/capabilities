@@ -41,47 +41,47 @@ personas: []
 provider_name: TikTok for Developers
 provider_slug: tiktok-for-developers
 search_terms:
-- research
-- query research videos
-- get all comments on a tiktok video
-- tiktok
-- videos pinned by a user
-- list followers of a tiktok user
 - analytics
-- list videos pinned by a tiktok user
-- list user liked videos
-- get public tiktok account information by username for research
-- content
-- retrieve all comments on a tiktok video for sentiment analysis
-- query research user info
-- query tiktok public videos using boolean filters for research analysis
-- query tiktok videos with boolean filters
-- user following social graph
-- user follower social graph
-- list user followers
-- list user pinned videos
-- list video comments
-- query and analyze tiktok video data
-- list accounts a tiktok user follows for network mapping
-- advertising
-- videos liked by a user
+- social media
 - video
-- video comment data
+- videos liked by a user
 - authentication
-- list accounts a user follows
-- list videos reposted by a tiktok user for sharing behavior analysis
+- list user liked videos
 - research user profile data
+- list user reposted videos
+- list followers of a tiktok user for social network analysis
+- list videos liked by a tiktok user for engagement research
+- query research videos
+- query research user info
+- research
+- query tiktok videos with boolean filters
+- query and analyze tiktok video data
+- content
+- list accounts a tiktok user follows for network mapping
 - list videos liked by a user
 - get public user account information
-- social media
-- list videos pinned by a user
-- list user reposted videos
-- list videos reposted by a user
-- list user following
-- list videos liked by a tiktok user for engagement research
-- videos reposted by a user
+- list accounts a user follows
 - data science
-- list followers of a tiktok user for social network analysis
+- list videos pinned by a user
+- get public tiktok account information by username for research
+- retrieve all comments on a tiktok video for sentiment analysis
+- user following social graph
+- user follower social graph
+- videos pinned by a user
+- video comment data
+- list videos reposted by a tiktok user for sharing behavior analysis
+- list followers of a tiktok user
+- list user pinned videos
+- videos reposted by a user
+- list user followers
+- tiktok
+- list user following
+- query tiktok public videos using boolean filters for research analysis
+- list videos reposted by a user
+- list video comments
+- get all comments on a tiktok video
+- advertising
+- list videos pinned by a tiktok user
 slug: social-research
 source_filename: social-research.yaml
 source_heading: Capability Spec

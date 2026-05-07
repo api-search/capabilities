@@ -49,65 +49,65 @@ personas: []
 provider_name: Weaviate
 provider_slug: weaviate
 search_terms:
-- get cluster node information
-- vector search
-- check weaviate readiness
-- vector database
-- check if weaviate is ready
-- get an object by id
-- list objects stored in weaviate, optionally filtered by collection class
-- check if the weaviate instance is ready to accept requests
-- devops
-- get the current data schema including all collection classes
-- create a new object
-- cluster nodes
-- list objects in weaviate
-- batch create objects
-- delete weaviate object
-- graphql
-- schema
-- create a backup of weaviate data to a storage backend (s3, gcs, filesystem, azure)
-- create class
-- list weaviate objects
-- list backups
-- semantic search
-- ai
-- list objects
-- delete an object
-- kubernetes
-- get information about all nodes in the weaviate cluster
-- open source
-- execute graphql vector search query
-- batch import objects
-- schema management
-- graphql vector search
-- machine learning
-- list available backups on a storage backend
-- get weaviate object
-- get schema
 - execute a graphql vector similarity search query against weaviate
-- create a new vector object in weaviate with optional vector embedding
-- delete a weaviate object by uuid
-- get nodes
-- create weaviate object
-- get object
+- devops
+- graphql vector search
 - delete object
-- application health
-- create object
-- get cluster nodes
-- check readiness
-- create backup
-- create a new collection class in the weaviate schema
-- vector object management
-- individual object operations
-- retrieve a specific weaviate object by its uuid
 - batch object operations
+- batch create objects
+- list weaviate objects
+- ai
+- delete an object
+- check weaviate readiness
+- get object
+- semantic search
+- create a backup of weaviate data to a storage backend (s3, gcs, filesystem, azure)
+- get data schema
 - create a collection class
 - create collection class
+- create weaviate object
+- check if weaviate is ready
+- create a new collection class in the weaviate schema
+- cluster nodes
+- graphql
+- open source
+- get information about all nodes in the weaviate cluster
+- delete weaviate object
+- execute graphql vector search query
 - import multiple objects to weaviate in a single batch operation
 - graphql query
+- machine learning
+- kubernetes
+- individual object operations
+- get an object by id
+- get cluster node information
+- batch import objects
+- list available backups on a storage backend
+- create a new object
+- check readiness
+- list objects stored in weaviate, optionally filtered by collection class
+- vector search
+- get schema
 - objects
-- get data schema
+- vector database
+- list backups
+- get weaviate object
+- list objects in weaviate
+- schema management
+- vector object management
+- create class
+- get nodes
+- get the current data schema including all collection classes
+- delete a weaviate object by uuid
+- retrieve a specific weaviate object by its uuid
+- create a new vector object in weaviate with optional vector embedding
+- get cluster nodes
+- application health
+- list objects
+- check if the weaviate instance is ready to accept requests
+- create backup
+- schema
+- create object
 slug: vector-database
 source_filename: vector-database.yaml
 source_heading: Capability Spec

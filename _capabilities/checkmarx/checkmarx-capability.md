@@ -109,64 +109,64 @@ personas: []
 provider_name: Checkmarx
 provider_slug: checkmarx
 search_terms:
-- vulnerability scanning
-- checkmarx delete a project
-- getresult
-- checkmarx update a project
-- deleteproject
-- updateresult
-- checkmarx get project details
-- cancelscan
-- security testing
-- createapplication
-- getpreset
-- checkmarx list groups
-- updateproject
-- sast
-- checkmarx obtain access token
-- getproject
-- application security
-- checkmarx get scan details
-- checkmarx list scan results
-- updateapplication
-- checkmarx get project scan configuration
-- checkmarx list applications
-- createscan
-- checkmarx get results summary
-- listgroups
-- checkmarx update result state
-- updateprojectconfiguration
-- checkmarx update project scan configuration
-- checkmarx get preset details
-- api
-- authenticate
-- checkmarx list scan presets
-- checkmarx create a project
-- listscans
-- deleteapplication
-- checkmarx create a new scan
-- getapplication
-- listprojects
-- checkmarx list projects
-- checkmarx cancel a scan
-- getscan
-- listpresets
-- devsecops
-- checkmarx list scans
 - checkmarx create an application
+- updateprojectconfiguration
+- getproject
+- checkmarx list scan results
+- checkmarx get result details
+- application security
+- checkmarx get results summary
+- api
+- checkmarx get project details
+- getprojectconfiguration
+- devsecops
+- updateresult
+- checkmarx list scan presets
+- vulnerability scanning
+- getpreset
+- checkmarx create a project
+- checkmarx list sast queries
+- createapplication
+- deleteapplication
+- createscan
+- cancelscan
+- updateproject
+- checkmarx update project scan configuration
+- listgroups
+- listqueries
+- listpresets
+- checkmarx get preset details
+- checkmarx delete an application
+- security testing
+- authenticate
+- checkmarx obtain access token
+- getapplication
+- listresults
+- checkmarx create a new scan
+- getscan
+- checkmarx list applications
+- listscans
+- checkmarx list scans
+- checkmarx delete a project
+- deleteproject
+- checkmarx get scan details
+- getresult
+- checkmarx update result state
+- checkmarx get project scan configuration
 - getresultssummary
 - checkmarx
-- listqueries
-- checkmarx delete an application
-- listresults
-- checkmarx list sast queries
-- getprojectconfiguration
-- createproject
+- sast
 - code analysis
 - listapplications
-- checkmarx get application details
-- checkmarx get result details
 - checkmarx update an application
+- checkmarx update a project
+- checkmarx list groups
+- listprojects
+- updateapplication
+- checkmarx get application details
+- checkmarx cancel a scan
+- checkmarx list projects
+- createproject
 slug: checkmarx-capability
 source_filename: checkmarx-capability.yaml
 source_heading: Capability Spec
